@@ -1,0 +1,1872 @@
+[0] I don't tend to enjoy public attention
+[2] too much. During the Twitter era, I
+[4] couldn't say very much. Now, I want to
+[6] harness public attention towards the
+[9] future I want to build. Hey everyone,
+[10] it's Taj Jackson. I'm a partner at First
+[12] Round. For today's episode, I'm excited
+[14] to sit down with Parag Agrawal. He's the
+[17] founder and CEO of Parallel, an
+[19] infrastructure startup building a new
+[20] web for AI agents.
+[22] >> We believe that AIs will use the web a
+[25] thousand X, a million X, more than
+[27] humans ever have. I first met Parag when
+[29] we worked together back at Twitter,
+[31] where he spent over a decade rising from
+[33] engineer to CTO to CEO before selling
+[36] the company to Elon Musk.
+[38] >> I was entertaining some calls about
+[39] taking on jobs that might have, on
+[41] paper, felt like big jobs. I just
+[43] couldn't join a mission.
+[45] >> Now he's a founder building in the
+[46] post-ChatGPT era. In our conversation,
+[49] we dig into what he learned from scaling
+[50] Twitter and leading it through its most
+[52] dramatic chapter, as well as what he's
+[54] had to unlearn as he builds Parallel. We
+[57] also explore what is and isn't working
+[59] in production, where agents are headed,
+[61] and why he believes the next generation
+[63] of the web will look fundamentally
+[65] different.
+[65] >> Our customer is an AI. We are going to
+[67] design an API that is excruciatingly
+[70] slow. Let's dive in.
+[76] Parag, welcome to the show. Thanks for
+[77] having me. So we're going to dig into a
+[79] bunch of different topics today, but
+[81] just to make sure everyone has kind of
+[83] the starting context, could you start by
+[85] explaining at a high level what your new
+[87] company Parallel does? At Parallel, we
+[90] are obsessed with the open web. We
+[92] believe that AIs will use the web
+[96] a thousand X, a million X, more than
+[98] humans ever have.
+[100] Now, as a result,
+[102] the web will need to transform.
+[104] In order to drive that transformation,
+[106] we've been building the best
+[109] tools that AIs can use to access content
+[111] on the web.
+[112] In fact,
+[114] like the products we've shipped recently
+[116] are the only APIs that hit human and
+[121] even higher than human level performance
+[123] on a variety of deep research
+[125] benchmarks.
+[127] And that's been a key milestone that
+[129] we've been working towards, and we
+[130] finally hit it. You were at Twitter for
+[133] 11 years. Uh left in late 2022, and
+[136] there was just a little bit, you know,
+[137] publicity around that.
+[139] Um starting Parallel and raised your
+[141] seed round in 2024. And so the company
+[143] is still less than 18 months old, and
+[145] you've been pretty quietly building in
+[147] stealth up until now. Is that right?
+[149] That's right. And you know about our
+[151] seed round because you were with us
+[153] through that journey. Um
+[155] we've been building away. We've had
+[157] products out with customers, and we've
+[160] been working with some of the
+[162] forward-looking
+[164] customers, whether they are
+[167] private early-stage companies or
+[169] slightly more established companies. And
+[171] it's been amazing to work with a bunch
+[173] of customers who are ahead of the curve,
+[175] as we see them. And they've essentially
+[177] shaped
+[179] us and our product.
+[181] And that's why we've been quiet. But
+[183] now,
+[185] we think the product is there. You and I
+[187] actually met each other 10 years ago,
+[189] way back before that in 2014 at Twitter.
+[192] And one of the big projects that we took
+[194] on together was how to introduce ranking
+[197] into the home timeline at Twitter, which
+[199] which was hard.
+[200] Um but I bring that up because I think
+[201] it's so interesting to compare that to
+[204] what you were working on now. Because
+[206] you spent kind of a decade plus
+[209] being responsible for all of these big
+[212] at-scale technical decisions at Twitter,
+[214] dealing with all the constraints of of
+[216] 10-year-old infrastructure.
+[218] And then you got this opportunity to
+[219] start completely fresh in a you know, in
+[222] a post-ChatGPT world with a clean sheet
+[224] of paper. What was that transition like
+[227] for you? When you're working with a
+[230] established product with has
+[232] product-market fit, like Twitter,
+[234] versus zero to one journey,
+[236] I think every way of working to me feel
+[239] different. When you're working with a
+[241] team of 10 versus a team of 8,000, every
+[244] practice you have as a leader, in my
+[246] opinion, must be different.
+[248] When you're working
+[250] in 2019
+[253] at
+[254] Twitter with legacy infrastructure at
+[256] scale versus at a startup in 2025 with
+[260] 20 people,
+[262] all in person,
+[263] everything you get to do is different.
+[266] So in some sense, this startup is like a
+[268] journey in unlearning everything I might
+[271] have learned before. So what are some
+[272] what are some examples of that? Like if
+[274] you think of and it could be, you know,
+[275] the pre-AI versus the post-AI, it could
+[278] be just the size, the number of people.
+[280] It could be sort of like incremental
+[281] changes on an existing thing versus a
+[283] brand new thing. What are some of the
+[284] sort of like specific ways? I think
+[287] all of it, right? Like you think of
+[288] team.
+[290] Twitter was famously remote-friendly.
+[293] Parallel, we're all in person in one
+[295] office five days a week.
+[297] And I think you get to do that at small
+[299] scale. I think you must do that. At
+[301] least I must do that for who I am
+[304] for this moment, zero to one. If you
+[306] think of like pre-AI versus post-AI,
+[309] I actually think you have to think about
+[311] product very differently.
+[313] At Twitter, if you ask for my framework
+[315] or how to build product, it was like,
+[317] okay,
+[318] what do people need? What can be built?
+[321] You find something in the intersection.
+[322] You try to ship that.
+[323] Right? And you have to track technology
+[325] change at some rate in order to find
+[327] that constantly.
+[329] People need everything with AI.
+[331] So that's almost obvious.
+[334] And now you all you really have to zoom
+[335] into what works
+[339] and what can work
+[341] and where is it going? And you have to
+[343] look sort of a step ahead and build
+[346] towards that. And it's a very different
+[348] art. Like everything is now stochastic.
+[350] Like you build deterministic systems
+[352] earlier. And now you're really thinking
+[353] about like building and communicating
+[356] stochastic systems.
+[358] So it's very, very different in my mind
+[360] in terms of how you think about product.
+[361] And systems that are getting better so
+[363] quickly, like the leaps that are being
+[365] made every 6 months, 12 months, it is
+[368] amazing to me. But it's interesting when
+[370] it comes to product, like how do you
+[372] design the product in such a way to say,
+[374] okay, the models are where they are
+[375] right now, but in 6 months they're going
+[376] to be much different and better.
+[378] How does that influence the way you
+[379] think about like thinking ahead on
+[380] product? We've made two opinionated
+[383] stances when it relates to that.
+[385] One thing we did early on was we took
+[387] the counter approach of saying our
+[388] customer is an AI.
+[390] And one of the things that led us down
+[393] was we are going to design an API that
+[395] is excruciatingly slow. Humans have no
+[398] patience on the web, right? Like when we
+[400] were building Twitter, we thought of
+[401] like, okay, if you don't serve the
+[403] timeline within a second, you're going
+[405] to lose people. You can see it in your
+[407] numbers. You can see it in your metrics.
+[408] So you got to figure out how to do the
+[410] best thing possible in a second.
+[411] Performance is incredibly important when
+[413] the user is waiting, when the user is
+[414] sitting there waiting for the query. If
+[416] it's an agent doing something in the
+[419] background,
+[420] which could be running a workflow when
+[422] there's no human waiting for it,
+[424] or if it is someone trying to collect a
+[427] large number of data and fill it into a
+[428] database, and you're doing
+[430] 10,000 operations, a million operations,
+[433] the latency of each operation doesn't
+[435] matter. And
+[436] if you relax that constraint,
+[439] you get to do more. Now, today we all
+[441] call it deep research because that's
+[443] better branding than slow. In terms of
+[444] agents are our customers, we want to
+[446] leap towards automating end to end.
+[450] And so that helped us build differently.
+[452] And we took a leap of faith that it's
+[453] going to
+[454] happen even if the models that day
+[457] weren't good enough. We bet on models
+[459] getting better to support that. So on
+[462] top of all the things, you know, that
+[463] were that were happening at Twitter and
+[464] sort of setting the drama aside, you
+[466] went through some very big, what I would
+[468] call altitude shifts.
+[470] Um you know, the transition from CTO to
+[472] CEO. And I'm curious, just like what was
+[474] that like for you? And and what did you
+[476] learn from that experience that that may
+[478] have equipped you to be a better founder
+[480] in some ways? One of the things when I
+[482] was taking on the CEO role
+[486] was until then,
+[488] I really thought of my job
+[490] as being versatile to the needs of
+[494] the company.
+[495] And to shape myself
+[497] to be most effective, which doesn't mean
+[499] that you don't get to change the company
+[501] around you, but you don't get to shape
+[504] the company to you.
+[506] One of the big shifts I went through
+[508] taking on the CEO role was I decided
+[511] that
+[512] the most
+[514] productive way to operate would be to
+[516] shape the company around me. Take on the
+[519] founder role for the company because I
+[521] think there is no other way.
+[524] If you try to fit yourself to an
+[525] organization, a company, a plan that
+[527] exists, I don't think you do justice to
+[530] the role.
+[532] So when I stepped in, I was like, I'm
+[533] going to shape the company to what I
+[536] believe and who I am.
+[538] And that was a mindset I took on taking
+[541] that role.
+[542] And really, that manifested as me having
+[545] the
+[546] conviction in that moment to
+[548] change the company, to change how
+[550] Twitter did things. I was
+[551] there for a while. You must have done
+[553] that as the CTO as well, I'm assuming.
+[555] You had you had so much scope. I don't
+[557] think it's the same. I think it's very,
+[559] very different. Like I think I had a lot
+[561] of agency and a lot of influence.
+[565] But
+[566] I never Perhaps it was my feeling to not
+[569] embrace it to I can change anything
+[571] here. I tried. It was often frustrating.
+[574] Right? So one of the things I did as
+[576] soon as I took the role is I think we
+[578] changed the structure of the company. We
+[579] changed the leadership team
+[580] substantially within a month. I was
+[583] about to meaningfully change
+[585] how many people were at Twitter and what
+[586] our road map and priorities were.
+[589] Now, we didn't get
+[590] the chance to see it all through, but
+[592] really, I think it's really important.
+[594] It is different to embrace shaping
+[598] something to you versus shaping yourself
+[602] to something. How did it feel to have so
+[604] much public attention
+[607] trained on what was going on inside the
+[609] company? Like what what was that
+[610] experience like for you?
+[612] And is there anything that you kind of
+[613] took away from it?
+[614] I don't tend to enjoy public attention
+[617] too much, but I think it's a very
+[618] valuable thing. Like as a founder now, I
+[621] actually think to drive the impact I
+[623] want to drive, to shape the world the
+[625] way I want to shape it,
+[627] you have to use public attention
+[630] to
+[631] find the people who want to join you in
+[633] your mission,
+[634] to find customers, and to evangelize the
+[637] future
+[638] you want to live in to find partners.
+[639] So, in some sense like public attention
+[641] is really important. Now, what was
+[642] unfortunate about the public attention I
+[644] did receive during the the the Twitter
+[648] era
+[649] was that in that moment, I couldn't say
+[651] very much.
+[652] And in that moment, I was going through
+[655] what felt like a zero-sum game
+[658] rather than the current moment where it
+[659] feels like an extreme positive-sum game.
+[661] Now, I want to harness public attention
+[664] towards the future I want to build.
+[667] Um but I didn't get to do that then.
+[669] Yeah, I you know, cuz I was sort of
+[671] watching it from the outside at that
+[672] point and uh just knowing you and
+[674] working with you,
+[676] there was there was stuff being said
+[678] about you,
+[679] but but you had to remain pretty quiet.
+[682] I mean, is there anything that you that
+[683] you sort of want to say now? Lots, but I
+[686] think this One thing I'll say, I think
+[687] people assumed or might have assumed
+[690] that as an insider who's been at the
+[693] company for 10 years and takes on the
+[695] role of a CEO,
+[698] I was going to continue
+[700] going in the same direction.
+[703] The reality is that
+[705] my goal
+[706] was to make Twitter what I think it must
+[709] have been and what could have been.
+[712] And should have been.
+[713] And that required a massive
+[715] transformation
+[717] of the company, the people, the product.
+[721] And really like all of that was coming
+[723] together. Like one weird anecdote that's
+[726] I think out there but not understood
+[728] is that
+[729] the three days after we signed the deal
+[733] to sell the company,
+[735] which was a Monday,
+[737] Thursday was our earnings call.
+[739] And there was a whole plan
+[742] to
+[744] really
+[745] like trim the company down by about 20
+[747] 25%
+[749] going into that earnings call
+[751] because I think Twitter needed to change
+[753] and adapt
+[754] to the current moment and go from
+[758] being just a great product
+[761] to being a great product and a great
+[763] business.
+[764] You know, and that was the change I
+[765] think that was coming which would allow
+[767] you to innovate on product in a real
+[768] way.
+[769] Um I didn't get to see that through.
+[772] And I wish most people got that. You
+[774] didn't get the chance to do that. But
+[776] now that you've been sort of an observer
+[779] of of what's happened to Twitter, now X,
+[782] you know, over the last couple years,
+[783] what what what is your take? I think it
+[785] was I I was obsessed with this idea.
+[787] I was obsessed with what we used to call
+[789] internally Project Saturn at the time,
+[791] which is how do you take this whole
+[794] problem around
+[796] content moderation
+[798] and actually harness the power of
+[800] Twitter and the community and the users
+[804] to do it themselves. Now,
+[806] it's idealistic, but I think that's sort
+[809] of in the realm of possible. And I think
+[811] as we've seen the team continue to work
+[814] on like what we used to call Birdwatch
+[816] and now it's called Community Notes,
+[818] I think it's great. It's living up to
+[820] the top ideals of being transparent,
+[824] being open,
+[825] and sort of enabling people
+[827] to to contribute to Twitter in new
+[830] unique ways to make the entire
+[831] experience better. So, if you were to
+[833] think of like what happened well, like
+[835] it's something I really believed in. I'm
+[836] so glad continues to be something
+[839] uh where I think I believe now others
+[842] are even trying to replicate that.
+[845] Uh and that's sort of
+[847] I'm so glad that continues to happen.
+[849] It's so amazing. What was was there one
+[852] or two things that you kind of took away
+[854] from from the 11 years spent at Twitter?
+[856] I either as a leader or or just in terms
+[858] of the ethos of the company and of the
+[861] user base that you that you brought to
+[862] Parallel that came with you? I think the
+[865] core ethos at Twitter is like the the
+[868] why
+[869] like
+[870] for me was what the words we used to use
+[873] was public conversation.
+[875] But really what it was to me was
+[878] everyone can in a permissionless way
+[881] get access
+[882] to
+[884] everyone else in their thoughts and
+[886] their ideas, including
+[888] the best people
+[890] who are changing the world who you want
+[893] to connect with directly and to get to
+[895] them unfiltered and to build upon them
+[897] unfiltered.
+[899] So, instead of being in
+[902] closed, permissioned, invite-only,
+[905] limited access environments,
+[907] there's this massive democratization of
+[910] access to people. Like you could
+[911] literally DM anyone. It's still amazing.
+[913] And
+[914] I think that creates magic when it
+[917] works.
+[918] And it causes all kinds of problems that
+[921] need solving around like people
+[923] misbehaving, but I think it's worth
+[925] solving those problems because of all
+[927] the positive it creates.
+[929] Right? And I think that's the same ethos
+[930] we're taking at Parallel, which is like
+[932] I think we want the web to be open.
+[936] And we want it to be permissionless. And
+[938] we want it to be a free market.
+[940] And we want everyone to have access to
+[942] everything, including AIs. We want AIs
+[944] to have access to the entire web.
+[946] And that's the common thread that sort
+[948] of motivates Parallel, which pulls from
+[951] Twitter. I'm curious this you know, this
+[954] decision to do this. So, you you were
+[955] leading a 7,000-person
+[957] public company
+[959] and you decided There's a million things
+[961] you could have done after that. And you
+[963] decided I want to start at the very
+[964] beginning from zero as a founder of a
+[966] brand new thing. Like how did you decide
+[968] that that was the thing you wanted to
+[970] do? I was open-minded in the beginning,
+[973] but I think I was like just sitting
+[975] there writing a bunch of code,
+[977] having the time of my life, curious
+[980] about the world. It was so greenfield.
+[984] I was entertaining some calls about
+[986] taking on jobs that might have on paper
+[988] felt like big jobs.
+[991] But like I think like I I was I was at
+[992] Twitter long enough to have
+[994] drunk the Kool-Aid that I was serving
+[997] to believe in this notion of like
+[999] openness and direct connection and
+[1001] public information and public data.
+[1005] And to join a mission, like I just
+[1007] couldn't
+[1008] join a mission.
+[1010] And so, I think couple months in I knew
+[1013] that I would start something. I don't
+[1015] think you even know this story, but like
+[1016] I ran into Josh somewhere around that
+[1018] time. By then I was set on starting a
+[1020] company. I had no idea when and how to
+[1024] go about doing it.
+[1025] And Josh gave me this piece of advice
+[1027] that stuck with me. He's like just don't
+[1029] be in a rush. This is going to be 10
+[1032] plus years of your life.
+[1034] And just don't be in a rush. Don't jump
+[1037] on the first thing.
+[1037] >> As an engineer, as a founder, you you've
+[1040] developed these muscles on how to build
+[1042] and you were very good at building.
+[1045] But what you only do once or twice is
+[1048] pick. Is pick the thing to work on.
+[1050] And VCs want you know, one of the I
+[1052] think the luxuries that we have as VCs
+[1053] we get to we get to look at a lot of
+[1054] things and we get to pick many things
+[1056] and the the picking muscle gets
+[1058] developed. And when as a founder you
+[1061] choose the thing that you're going to
+[1062] work on, that that kind of sets the
+[1064] boundaries and constraints for you know,
+[1066] if the company's doing well, the next 10
+[1067] years of your life. And so, it's
+[1069] critical. It's it's a Let's talk about
+[1071] that. How did you this this idea that
+[1073] you picked I think is a phenomenally
+[1076] interesting expansive idea. How did this
+[1079] idea come to you? I was actually looking
+[1081] to do something in health care. I was
+[1083] hacking away agents for myself to
+[1085] research health care.
+[1088] I
+[1089] found myself over time spend more time
+[1094] on the future of the web and just
+[1096] obsessing about this idea in some
+[1098] abstract form,
+[1099] like almost living in this science
+[1100] fiction of
+[1103] oh, every decision we made at Twitter
+[1104] like we used to think about this service
+[1106] having a 100 millisecond SLA
+[1109] because we were thinking about an end
+[1110] customer on a mobile device that had
+[1112] about a second and this was in the
+[1113] stack.
+[1115] And I started really living in this
+[1116] notion of like all of that's going to
+[1118] change completely.
+[1120] All of the infrastructure that we built
+[1122] thought about,
+[1123] it's going to look completely different.
+[1126] Every business model we thought about is
+[1127] looking to look completely different.
+[1129] So, it really started as this science
+[1131] fiction of like the primary consumer on
+[1132] the web is now going to be an agent. If
+[1135] you change that one assumption,
+[1137] greenfield, what does this world look
+[1138] like? I would just obsessively think
+[1140] about this. And I didn't actually think
+[1142] I would start something in this space
+[1143] because it's just like science fiction.
+[1144] And I would just talk to people about
+[1146] it. And at some point it started
+[1149] becoming like, okay, so if this could
+[1151] happen,
+[1152] there's a good and a bad way it could
+[1154] happen. I want the good way. I have some
+[1156] views. What can I do?
+[1158] And it took me months of
+[1161] research, understanding, talking to
+[1163] people,
+[1164] exploring paths around this idea
+[1168] to gain conviction to one day being
+[1171] like, I'm going to do this. So, what
+[1173] help us just sort of understand that a
+[1175] little bit better. The the idea is is
+[1177] very interesting that the the web as we
+[1179] know it was designed for human users
+[1182] uh with links and navigation and pages
+[1185] and page loads and all that stuff. And
+[1186] if you're an AI, a lot of that stuff is
+[1188] is you know, it's not designed for you
+[1191] basically. You can consume data a lot
+[1192] faster. You don't need to see one page
+[1194] at a time, things like that. But how did
+[1195] you sort of give us a little bit more of
+[1198] that? Like what are the different
+[1199] assumptions that you make or patterns
+[1202] that you build for when you were
+[1203] building for an AI as the user instead
+[1206] of a human as the user? Humans, as I
+[1208] frame it, operate in a very narrow band.
+[1211] We
+[1213] have a second or two of patience. We
+[1216] under-specify what we're looking for. We
+[1219] will either implicitly click on an app
+[1220] and expect the app to figure out what we
+[1222] want and show it to us, like Twitter.
+[1225] Or we will type an incomplete set of
+[1227] keywords. Always click on a link to
+[1229] navigate our way to somewhere.
+[1231] And we'd hope for the best and we'd go
+[1232] on these random walks to get stuff done.
+[1234] We're also able to consume a few
+[1237] decisions like 10 click targets, two to
+[1239] three pages of content at a time.
+[1241] And most of the infrastructure on the
+[1244] web is just trying to figure out
+[1245] what we might be trying to do and guess
+[1248] and point us in the right direction.
+[1251] With AI, I think we get to
+[1253] invert a lot of this and actually that
+[1255] inversion is something they're starting
+[1256] to see.
+[1258] AIs can specify what they're trying to
+[1260] solve. In fact, like to
+[1262] to do emails, you kind of need to know
+[1264] what the end goal is to be able to
+[1266] evaluate. To train an RL system, you
+[1268] need to know what the end goal is and
+[1270] what the reward is. And so when you
+[1272] start doing that, you can start
+[1273] communicating that down.
+[1275] And that's a completely different
+[1277] interface for the underlying
+[1278] infrastructure. Like concretely,
+[1281] that you no longer have to guess what
+[1283] might this user be trying to do.
+[1286] You no longer stuck with producing a
+[1289] consistent format in your answer or a
+[1292] set quantity in your answer
+[1294] or
+[1296] a 1-second latency SLA on your answer.
+[1299] And sometimes you'll want things in 10
+[1301] minutes. And sometimes you'll want
+[1304] 100 documents. And sometimes you'll want
+[1306] like a one-word answer as an AI making a
+[1308] call to you. Right? And so the problem
+[1311] space really expands.
+[1314] Now, we within this expanded problem set
+[1316] made after a bunch of time with
+[1318] potential customers an opinionated set
+[1320] of narrow decisions around which small
+[1323] slice of this would matter first.
+[1326] Right? And that's sort of where we
+[1329] took this
+[1330] humans are different from AIs, they are
+[1332] different in all of these ways, the
+[1333] query language will expand. But now
+[1335] what's the most interesting slice of
+[1337] this that we should go attack?
+[1339] And we went after the slow end-to-end
+[1341] human automation, measurable,
+[1344] repetitive, eval-friendly work.
+[1347] >> So let's talk about a little of that.
+[1349] What are some of the initial kind of use
+[1351] cases, customers, scenarios where you
+[1353] felt like this this kind of architecture
+[1355] could be really powerful? So the first
+[1357] few use cases we went after were this
+[1360] notion of repetitive
+[1362] work you might outsource
+[1365] to a
+[1366] BPO or KPO out there. And that was an
+[1370] accidental discovery in some sense
+[1372] talking to some customers who were doing
+[1373] this and they're like, "Oh, if your
+[1374] system can outperform this, that would
+[1375] be cool." I was like, "Actually, we
+[1377] might be able to. Let's try."
+[1379] And so and then we realized that AI
+[1382] performance when you have repetitive,
+[1384] well-specified
+[1385] work improves.
+[1388] Human performance when you have to train
+[1390] 50 people to do repetitive work
+[1392] declines. These are people doing desk
+[1395] research or
+[1396] >> Yeah, desk research or some workflow on
+[1399] the public web, on
+[1401] insurance claims processing or
+[1403] underwriting or figuring out some data
+[1406] set based on something governments
+[1408] published on how much to tax what
+[1410] entity, how to be compliant with what.
+[1413] On pulling financial data out of the web
+[1415] to create pure data sets. All kinds of
+[1417] this work happens. We're obsessed with
+[1420] the web, but we wanted to add value. And
+[1424] we picked this as our first things that
+[1427] we would start working on and really
+[1429] pushing the limits of what's possible in
+[1431] a system on delivering quality. So we
+[1433] decided we would care only about
+[1435] accuracy and quality in our system. We
+[1437] would not care about latency.
+[1440] That decision, because this is the set
+[1442] we wanted to go play on first. I think
+[1445] it's really exciting. If I have the
+[1446] numbers correct, you now have more than
+[1447] 100 paying customers at Parallel. Tell
+[1451] us about some of the use cases. What are
+[1453] they using the APIs for? No, it's been
+[1456] really exciting to work with more and
+[1459] more customers and we really scaled the
+[1461] number of customers we've been sort of
+[1462] working with, both in terms of numbers,
+[1464] but also in terms of the breadth of use
+[1467] cases that we now serve. So
+[1469] on the one end we serve these extremely
+[1474] long-running, deep research use cases
+[1477] which would otherwise be done by a
+[1479] human. And on the other extreme, we
+[1480] might serve as a search tool that a
+[1484] coding agent might use and call it and
+[1486] get an answer within 3 seconds to look
+[1489] up documentation to figure out how to
+[1491] course correct when it might need the
+[1493] live web. So we have a breadth of usage.
+[1498] The other amazing thing to see as we've
+[1500] been building this is
+[1503] how it's been scaling. We now serve like
+[1507] millions and millions of requests a day
+[1510] and it's a cheaper cheapest request on
+[1514] our system
+[1515] cost under half a cent.
+[1518] And the most expensive request on our
+[1520] system today
+[1521] can cost
+[1523] $10.
+[1525] And it's amazing to see, like this is
+[1528] not something I could have imagined, the
+[1530] breadth of customers, the scale of use
+[1533] going into this year. And it's been sort
+[1536] of amazing to have all of that come
+[1538] together in this moment. It's
+[1540] interesting. You named a bunch of
+[1541] different use cases across all of your
+[1543] customers. Is there a, you know, an
+[1545] example or an anecdote that sticks out
+[1547] in your head about a customer that you
+[1549] worked with early on where where they
+[1550] really kind of pushed you and helped
+[1552] shape what Parallel would be? Yeah, I
+[1555] think in the early days when we were
+[1556] working on one of these insurance use
+[1558] cases,
+[1560] really the bar was
+[1562] we had a data set which was being
+[1565] generated as a result of human
+[1567] operations.
+[1568] And
+[1569] we got that data set. It was like ground
+[1571] truth. And the question was
+[1575] could an AI system, this last year,
+[1578] compete or drive productivity or
+[1580] entirely replace it?
+[1582] As we worked through it, like we were
+[1584] scoring low.
+[1585] And then we had to go dig into the data
+[1588] set. Turns out ground truth is never
+[1589] ground truth. Right? So one of the
+[1591] things we
+[1593] we sort of totally changed in our world
+[1595] view was ground truth is never ground
+[1597] truth. And that we actually have to do
+[1599] comparative
+[1601] analysis of quality.
+[1604] And really reframe every customer
+[1606] conversation we have
+[1607] around let's compare two alternatives.
+[1611] And we found creative ways of doing it.
+[1613] It's not complicated, right? Two ways of
+[1616] solving a problem. We'll agree in some
+[1618] cases and you don't need to look at
+[1619] them.
+[1620] Where they disagree, you take a small
+[1621] sample
+[1622] and you grade which one you prefer on
+[1625] that sample of five or 10. And then you
+[1626] know which way is better, roughly.
+[1629] And so we started
+[1631] from that one customer journey, we went
+[1633] through this bespoke process in the
+[1634] design partnership.
+[1636] But then we learned this very simple
+[1638] pattern
+[1639] that has really been something that has
+[1641] worked with, like the customers who are
+[1642] most most most selective on quality bar
+[1646] and are working on like this human
+[1648] operations and scaled human operations
+[1650] where they want to automate them. I'd
+[1652] love to hear maybe about some of these
+[1654] examples. One one of the customers that
+[1655] I know of, because they're also a First
+[1657] Round company, is Clay. Um and we we
+[1660] love it obviously when when companies
+[1662] are become customers of each other. Tell
+[1664] tell me about, you know, sort of their
+[1666] use case for Parallel and and what they
+[1668] were trying to do and what maybe there
+[1669] some of their alternatives would have
+[1670] been. You make it seem like a
+[1672] coincidence.
+[1673] Like you all connected us with Clay.
+[1676] That's one of the hugely valuable to
+[1679] discover
+[1681] people who are forward-looking, people
+[1683] who are truly innovating. Like they
+[1686] were one of the early people who worked
+[1688] on building benchmarks with us.
+[1690] They were ahead of the curve in bringing
+[1693] AI
+[1695] to a lot of people making it an amazing
+[1698] experience, a really powerful
+[1699] experience.
+[1701] And they took a bet on working with us
+[1704] very early on.
+[1705] And they built benchmarks with us,
+[1706] collaborated with us, pushed our
+[1707] technology and hopefully got some
+[1710] benefit in pushing their product
+[1711] forward. Now, as early partnerships are,
+[1715] I think it was really co-creation, I
+[1717] would say. But if you think about
+[1720] repetitive web research, give people
+[1723] extreme leverage
+[1725] in understanding every prospective
+[1727] customer or current customer, everything
+[1729] about them,
+[1731] prioritizing across them, and all kinds
+[1733] of things that people want to do at
+[1735] scale. We were able to partner with
+[1737] them.
+[1738] Try to push the limits of
+[1741] accuracy that you can achieve in doing
+[1742] this work, because it matters for their
+[1744] use cases.
+[1745] And in that sense, that was a really
+[1748] you know, great relationship,
+[1750] partnership, because if they really
+[1751] pushed us, being a demanding,
+[1753] sophisticated
+[1755] customer. So what what are the APIs that
+[1757] Parallel provides to them that they're
+[1759] that they're leveraging?
+[1760] >> Parallel are task API,
+[1763] which is just our
+[1765] API which allows you to get structured
+[1768] enrichments back.
+[1770] It allows you to specify a compute
+[1772] budget effectively.
+[1774] Um
+[1775] and we just produce answers. Now, they
+[1779] make a really
+[1781] AI-friendly API accessible to end
+[1784] customers. They were system on top which
+[1786] orchestrates on top of our API.
+[1789] In order for people to type
+[1792] small under specified prompts, but they
+[1794] have pattern matched across their
+[1795] customer base, and they know
+[1798] what it means in terms of the output
+[1801] someone might want. And they specify
+[1803] those queries down to our system. Their
+[1805] end users are basically writing stuff in
+[1807] in natural language. Clay has like an AI
+[1809] orchestrator kind of routing system. And
+[1811] an AI So, the AI is what's querying And
+[1813] the AI is querying us. Yeah. That's what
+[1815] I mean by forward-looking customers.
+[1817] Like, we wanted our customers to be in
+[1818] AI.
+[1819] And here we have an AI writing queries
+[1822] to our system. Our system is built for
+[1824] natural language.
+[1826] But
+[1827] humans, as I said earlier, under specify
+[1829] things. You can use AIs to help humans
+[1833] not under specify things and write query
+[1836] like So, we don't particularly optimize
+[1838] our APIs to be human-friendly.
+[1840] Because we expect our customers to be
+[1842] able to do that. So, they were basically
+[1844] saying these are the benchmarks we need
+[1845] you to hit. Or how did that that work?
+[1847] No, they were they had built
+[1850] real benchmark on the products they
+[1854] wanted their customers to have and
+[1856] accuracy they wanted to have.
+[1858] They've also built a lot of AI
+[1860] technologies
+[1861] that can actually solve for those
+[1863] benchmarks.
+[1864] But they were open-minded to working
+[1866] with us if by working together we could
+[1868] do
+[1869] better or we could provide options to
+[1871] their customers.
+[1873] Clay's all about providing many many
+[1875] different ways for people to do things.
+[1877] Um and we ended up being one of the
+[1880] options they're able to provide to their
+[1882] customers and customers use them in very
+[1883] creative ways.
+[1884] So, I mean, Clay sounds kind of like one
+[1887] of the perfect initial customers in
+[1889] terms of how forward-thinking they are,
+[1890] the amount of volume that they have.
+[1892] Like
+[1892] really having, you know, high demands on
+[1895] your system, which always I think is a
+[1896] great design partner to work with. Like,
+[1898] are they the ideal customer or who who
+[1899] is the ideal customer now that you're
+[1901] sort of going, you know, while you're
+[1903] looking to expand?
+[1905] I think now we have a very broad
+[1907] set of customers we serve.
+[1910] Um
+[1912] Clay is one of the ideal patterns
+[1915] in that
+[1916] scaled repetitive
+[1920] web data is really critical and accuracy
+[1923] matters.
+[1924] But on the other extreme we have some
+[1925] coding agents using some of our APIs,
+[1928] right? So, but there we show up
+[1930] maybe in 5% of prompts, right? So,
+[1934] when you need to look up some recent
+[1935] documentation, so it's an agent really
+[1937] calling a tool.
+[1939] Right? Instead of using our end-to-end
+[1941] task API, you'd use a search API as a
+[1944] tool.
+[1945] We have customers doing
+[1947] claims processing in insurance and
+[1950] running a workflow where there are still
+[1952] humans doing some QA on top.
+[1954] Some of the
+[1955] BPOs and KPOs we mentioned earlier, some
+[1957] of them are now our customers
+[1959] too. And so, we've sort of we're
+[1961] building a very horizontal product and
+[1963] we have
+[1965] a variety of different customers
+[1969] where their needs really converge
+[1972] to and the API that we're trying to
+[1974] design, we want it to be able to serve
+[1977] this very diverse set of customers that
+[1979] otherwise wouldn't fit a single ICP. For
+[1982] those customers, for the data that
+[1983] they're trying to gather and make
+[1985] available to their AIs, what like what
+[1986] are the alternatives? BPOs. Right? Like,
+[1989] let's get humans to create extremely
+[1991] high quality data sets.
+[1993] And
+[1994] we have a different We have value prop
+[1996] on that in that like we actually compete
+[1998] really on quality with them. In the
+[2001] other case, the alternative that we
+[2002] often encounter
+[2004] is
+[2005] some
+[2007] sort of build your own
+[2010] or use just plain open AI. They just
+[2013] recently shipped search. In both cases,
+[2016] our primary value prop
+[2018] is quality, quality, quality.
+[2020] And the secondary value prop is
+[2024] price performance. I think for us, the
+[2026] reason we care so much about price
+[2027] performance is this going back to the
+[2029] vision of like AIs
+[2031] should use the web a lot and create a
+[2033] lot of value.
+[2034] I think the only way you unlock new and
+[2036] new use cases
+[2038] is taking something that can be done and
+[2041] incentivizing people to do it at 100x
+[2043] the scale. And removing the friction
+[2044] around that basically by having extreme
+[2046] performance for low cost. That makes
+[2047] sense. So, this gets into a question
+[2049] actually that you know, I'm sure you
+[2050] thought of this as you were sort of like
+[2052] thinking about this idea is is just
+[2055] potential competition and how this
+[2057] market shapes up. Like, one way of
+[2059] thinking about this is like what do you
+[2061] think is the
+[2063] territory of the hyperscalers
+[2065] or the major labs versus what what is
+[2068] the opportunity that's available to a
+[2070] new startup when it comes to, you know,
+[2072] this kind of next generation of AI
+[2074] infra? I don't think too much about the
+[2076] competitive dynamics. Two reasons.
+[2078] One, I think we're going to live in the
+[2080] most positive sum
+[2083] future for the next several years.
+[2086] And so, there's just like
+[2088] if even if you can't fully articulate
+[2089] what it is, the opportunity set for
+[2092] people to mobilize
+[2094] and make an impact is extremely high.
+[2097] I think like hyperscalers
+[2100] can't move fast enough to capture the
+[2102] opportunity.
+[2103] Can't build fast enough. Right? The labs
+[2105] are amazing. They move really really
+[2108] fast.
+[2109] But they're also slow relative to how
+[2112] fast we can move. Right?
+[2114] And there are so many places to
+[2116] innovate. We see that from our customers
+[2119] every day.
+[2120] I don't think that is something to think
+[2123] about.
+[2125] You of course have to on a daily basis
+[2127] think about in the context of what
+[2128] choices your customers have.
+[2130] And why they must
+[2133] partner with you, collaborate with you,
+[2135] buy from you. And in that sense, we'd
+[2137] really think about it. But then that's a
+[2138] really product decision
+[2140] on like how do you differentiate your
+[2142] product and stay ahead of the curve. And
+[2144] we think about that obsessively. So, I
+[2146] know that you've been, you know, we said
+[2147] this before that you had kind of been in
+[2148] stealth for a while. You've been mostly
+[2149] heads down building, selling, building,
+[2152] selling. But now, you know, you're
+[2154] starting to make a little bit more noise
+[2155] with this launch.
+[2157] Um I believe you recently launched some
+[2159] self-serve options so that people could
+[2161] just come to Parallel and and find, you
+[2163] know, the things they want. What what
+[2164] advice would you have for other AI
+[2166] founders who are figuring out is there
+[2168] when do I launch? When do I open up the
+[2171] product more? How how did you think
+[2172] about that? One of the piece of advice I
+[2175] got that I was starting this company, I
+[2176] spoke with Patrick Collison at Stripe.
+[2178] On building an API business, he said
+[2180] like your first API design will be
+[2182] wrong. Just know that.
+[2183] I don't know if this is this was
+[2185] intended, but I took that really to mean
+[2187] that like
+[2188] keeping the customer set small and
+[2190] intimate
+[2191] so that when we find it's wrong and it's
+[2194] limiting what we would build,
+[2196] you want to be able to migrate to a next
+[2198] version of the API even if it's backward
+[2200] incompatible.
+[2201] Right? So, we really wanted to maintain
+[2203] that flexibility. So, we made a very
+[2206] intentional decision
+[2207] to limit the number of customers who
+[2210] would have an API while we didn't feel
+[2214] that we had thought through. We didn't
+[2216] want to like design the API in a lab,
+[2218] but we also didn't want to
+[2220] have an API that you're stuck supporting
+[2222] forever. So, we made that intentional
+[2224] choice. The other thing we did was we
+[2226] put a lot of
+[2227] almost like we were very selective in
+[2230] the customers. Like, we wanted to work
+[2232] with customers
+[2234] that we loved working with and that
+[2236] loved working with us. Right? Because
+[2238] like that's what drives you
+[2240] in terms of energy.
+[2242] Right? Another thing I wanted to ask you
+[2244] about briefly is fundraising. You know,
+[2247] we're seeing founders raise these really
+[2248] big rounds, but also building smaller
+[2250] teams, you know, than than years past.
+[2252] What advice maybe would you share with
+[2254] the founder of an AI company?
+[2256] Particularly, you know, every
+[2257] everything's moving so fast today these
+[2259] days. There's so so much flashiness.
+[2261] How did you think about fundraising and
+[2262] what's the maybe advice you give? Maybe
+[2265] two different dimensions. One, who to
+[2267] work with.
+[2268] And
+[2269] I had one very simple rubric.
+[2272] People
+[2274] it's for me just the people I would
+[2276] spend time with.
+[2278] And if they said something to me
+[2281] and I
+[2282] dramatically disagreed with them,
+[2286] will I feel sleepless that night to try
+[2289] to reconcile why?
+[2291] And people who I feel that way with,
+[2295] I want them around me.
+[2297] And I want the coalition we have
+[2300] with
+[2301] you know, that Khosla Ventures, with
+[2302] Chartlet and Dax, with you and Josh
+[2305] working with us from First Round Capital
+[2307] is it's kind of interesting. You all
+[2309] come at
+[2311] our company and our vision
+[2313] with slightly different lenses.
+[2315] And the advice I get from all of you is
+[2317] slightly different. I have
+[2320] respect for all of these people. I
+[2323] expect to build it myself and
+[2326] ignore advice
+[2327] a lot of the times
+[2329] because it's not right for me in that
+[2330] moment.
+[2332] But
+[2333] I think it's very material sometimes
+[2335] when you get a piece of advice and it
+[2336] changes how you think about something,
+[2339] where you go.
+[2341] And I think that's the real value I see
+[2344] in
+[2346] choice of investor. To me, building the
+[2348] company is binary. Either we are
+[2349] successful or we're not. There's just
+[2351] like nothing in the middle. Right? So, I
+[2353] ask myself the question
+[2356] I should raise the amount where I can
+[2359] argue up till that amount that
+[2362] I would reason for believing that my
+[2363] binary odds increase for some reason.
+[2366] And once I can't make that case, I
+[2368] shouldn't raise more than that.
+[2370] If you can raise an infinite amount. And
+[2373] we were fortunate in that like
+[2375] I
+[2376] got to raise
+[2378] what I thought was the point of based on
+[2381] my plans for the next few years. The
+[2383] point of diminishing returns on binary
+[2385] success.
+[2386] And in fact, like I don't even think
+[2387] it's diminishing. At some point there's
+[2388] negative returns. That's the
+[2390] decision-making framework we used and
+[2392] like I was like not There's no science.
+[2393] It's all intuition. It's like, okay, if
+[2395] we raised X million dollars versus Y
+[2397] million dollars
+[2399] Do I think there are scenarios I can
+[2402] imagine where
+[2403] we're way more likely to be successful?
+[2405] I can. Let's raise Y million dollars.
+[2407] What if it is Z million dollars? Can I
+[2409] imagine that? Not really. Let's just
+[2411] raise Y.
+[2412] And what about when it comes to team
+[2414] building? And I remember, you know, when
+[2417] the seed round happened, I think you
+[2418] already had five or six engineer really,
+[2420] really good engineers kind of lined up,
+[2423] you know, ready ready to go.
+[2425] When you are hiring engineers at
+[2426] Parallel now,
+[2428] just given how productive engineers can
+[2431] be in 2025,
+[2433] what do you look for that's maybe
+[2435] different than what you would have
+[2436] looked for, you know, five or six years
+[2438] ago?
+[2439] Of Of course, I got better I got to know
+[2440] and work with some amazing engineers.
+[2443] At the same time, there's like a bunch
+[2445] of
+[2446] extremely high potential
+[2449] amazing young engineers around.
+[2452] And I really wanted this company to
+[2456] bring in the best of both together. One
+[2458] of my hiring philosophies at Parallel
+[2460] really is
+[2462] that you want to maximize how much
+[2465] through hiring you can get alpha.
+[2467] What's the upside? So, you got to bet on
+[2469] potential, not been there, done that.
+[2472] Now, you can't put an entire team of 20
+[2474] people just betting on potential
+[2475] together
+[2477] and get stuff done.
+[2478] So,
+[2479] I hire a team, so it's not an individual
+[2482] choice, but everyone on the team is
+[2484] either there where we're taking risk
+[2486] betting on potential
+[2487] or we're hiring someone because they are
+[2490] particularly good
+[2492] at taking these extremely high potential
+[2495] people
+[2496] and channeling them towards a mission,
+[2498] giving them room to be creative and
+[2500] bring alpha
+[2501] while aligning them
+[2503] towards a singular outcome for your
+[2505] customers. The second thing that's
+[2507] really important if you embrace this
+[2508] sort of bet take risk on hiring
+[2511] is you have to be somewhat like the
+[2513] system only works if you're also embrace
+[2514] being decent at firing. I don't know how
+[2517] to be good at hiring where you don't
+[2519] make mistakes,
+[2520] especially when you're trying to bet on
+[2522] upside.
+[2524] And so, you have to learn and set the
+[2525] expectations and work in a world where
+[2527] you're good at firing.
+[2529] And I think if you put these together,
+[2531] you get to have a amazing
+[2534] high-performance
+[2536] team
+[2537] which
+[2538] can build fast and build for this
+[2541] current moment.
+[2542] And that's sort of the philosophy we've
+[2544] really embraced. It sounds like to me
+[2546] like you've got, you know, I don't know
+[2548] if it's half the folks who are very high
+[2550] potential, maybe earlier career, maybe a
+[2552] little more chaotic. You've got some
+[2554] very senior folks who are kind of like
+[2556] the steady hands who've seen a lot in in
+[2558] the field. But I think it's There's more
+[2560] more to it. It's not just about
+[2562] seniority. I think it's about
+[2565] people who are good
+[2568] at working with, bringing the best
+[2571] out of high alpha people and have a
+[2574] track record
+[2575] of having that, right? And those tend to
+[2577] be people I have seen do that well. Like
+[2579] more broadly, how do you see this kind
+[2581] of changing when it when it comes to org
+[2584] design, when it comes to the number of
+[2586] engineers you need to to build an
+[2588] incredible product? Where do you think
+[2590] we're going with all of this? There
+[2591] There are two forces that pull in you in
+[2593] different directions.
+[2595] Number one, you can def One, you don't
+[2597] need a lot of
+[2599] Like we don't have any hierarchy right
+[2601] now. We also don't have too many We
+[2603] don't talk about roles. We don't have
+[2606] teams. We don't have hierarchy. We're
+[2607] very
+[2608] chaotic. There's no sub teams within the
+[2610] 22 people. There are no formal sub
+[2612] teams. People work in small project
+[2614] groups,
+[2616] but those rotate. Now, of course, people
+[2618] take ownership of systems they've built,
+[2620] but there is a lot of fluidity. There's
+[2623] no formal team structures or managers or
+[2625] any such thing so far.
+[2627] So, that I think you get to do at this
+[2630] scale. I don't think it scales to double
+[2632] the size, but we get to do this for now.
+[2635] But actually the the force that pulls
+[2637] you towards sort of hiring more people
+[2640] is the possibilities are endless.
+[2642] The customer needs
+[2644] and the products you could build where
+[2647] there is demand for. Once you are
+[2649] working with some customers in some
+[2650] problem spaces,
+[2652] you see opportunity everywhere.
+[2654] Everything feels within reach.
+[2657] And so, that pulls you in the direction
+[2659] of having more people,
+[2662] right? So,
+[2663] that's why I don't know which way
+[2666] it will converge over time because but I
+[2668] do think that
+[2670] definitely you should expect more to be
+[2672] done by fewer people.
+[2675] Even if it's like There are obviously
+[2677] ways to work with AIs which are
+[2678] counterproductive, and I've done this
+[2680] personally a lot, right? But
+[2682] systematically, if you hire the right
+[2683] people and they have good judgment,
+[2685] we'll get the good out of AI. What's a
+[2687] counterproductive way of working with AI
+[2688] that you see?
+[2690] Oh, I personally have
+[2691] like I will Sometimes there are some
+[2693] things which I could personally engineer
+[2696] and I would do better.
+[2698] But if I truly embrace and start
+[2700] enjoying white boarding in our code
+[2701] bases,
+[2703] I might personally take longer. And it's
+[2705] poor and you have to It's like a learned
+[2707] skill in my opinion. Like you can really
+[2710] in aggregate waste time, productivity,
+[2712] distract others with like crazy code
+[2714] reviews or
+[2715] bugs that you're fixing downstream
+[2717] because you don't understand what you're
+[2719] doing.
+[2720] There are bad ways of working with AI.
+[2723] I think it's a learned skill to be
+[2725] productive with AI in a real production
+[2728] system. And I've personally I know my
+[2731] team sees this like white coded stuff
+[2734] without deep full understanding of what
+[2736] I was doing, and my team has had to
+[2738] clean up behind me.
+[2740] So, there are bad ways of working with
+[2741] it.
+[2742] But I do think by and large
+[2745] people figure out what are good ways,
+[2747] especially in teams.
+[2749] Uh
+[2750] there's a lot of
+[2752] code review learning or
+[2754] experiential learning and sharing that
+[2756] happens in setting up the code base to
+[2758] be more productive for AIs and
+[2759] understanding what works and what
+[2761] doesn't work from your experience and
+[2762] others' experiences
+[2764] that really gets you dialed into the
+[2766] right pattern. So, you do expect more
+[2768] productivity,
+[2769] and I think it will only increase from
+[2770] there. Is there anything intentional
+[2772] that you guys had to do to enable the
+[2774] code base to be maximally productive
+[2776] with the with the size of team and the
+[2778] amount of AI code gen that you're using?
+[2780] Very tactical things.
+[2782] Um
+[2782] I would say we have this massive crawler
+[2786] and index infrastructure, which is like
+[2788] a not like a standard small
+[2792] front-end code base or Python scripts,
+[2794] but this like large infrastructure
+[2796] project, right?
+[2799] Even like running tests on it takes a
+[2801] while.
+[2802] And so, we had to really hook up and
+[2803] give AI access to our CI to be able to
+[2806] trigger things like and do small things
+[2808] of that kind
+[2810] to make the code base
+[2811] friendlier
+[2813] for agents to use.
+[2815] Um
+[2816] I think we use it a lot for code review.
+[2820] And we've given extreme experimentation
+[2823] license to every engineer. We don't
+[2825] standardize how people do things.
+[2827] Like everyone gets to do their own and
+[2829] runs. Some people are more experimental
+[2831] than others,
+[2832] and they experiment with different ways
+[2834] of doing things. So,
+[2836] that's the approach we've taken. Like
+[2837] everything's going to change all the
+[2838] time. We want to
+[2840] be in explore-exploit mode constantly
+[2843] rather than like pick our lane and stick
+[2845] to it. Uh Where Where do you sort of net
+[2848] out in this debate around code gen? Cuz
+[2850] I think it's something that people have
+[2851] very different opinions on in terms of
+[2853] what is the role of the software
+[2855] engineer, you know, sort of in 2025.
+[2857] What does it look like in a couple
+[2858] years?
+[2859] I think
+[2860] a few things will continue to matter,
+[2861] right?
+[2863] What to build,
+[2864] not necessarily how to build it, and
+[2866] taste.
+[2867] Those things I think
+[2869] remain the role. I think good software
+[2871] engineers have always had that.
+[2873] And I think that will remain. The most
+[2875] opinionated stance on this topic that I
+[2877] have is actually that there is a Like I
+[2879] Our APIs are designed to be declarative.
+[2883] What I mean by declarative is talk about
+[2886] what you want the output to be,
+[2888] but don't tell me how.
+[2890] And I think increasingly that's the
+[2892] direction we will end up in. There will
+[2893] be a
+[2895] I think code we write today is the how.
+[2899] The conversations that we have with our
+[2904] AI agents and code agents
+[2907] are essentially trying to communicate
+[2910] through both a combination
+[2912] of feedback and don't do this and how.
+[2916] Actually agreeing on the what we're
+[2917] trying to do.
+[2919] But we're not yet agreeing on it or
+[2921] articulating it or storing it in a repo.
+[2924] Okay, so I mean, one of the things that
+[2925] we we really like to think about and
+[2927] talk about is companies that are putting
+[2929] AI into production
+[2931] today in in truly valuable ways. Cuz
+[2933] people I think make all kinds of
+[2935] predictions. Um
+[2937] And your customers, I think by
+[2939] definition are trying to push the limits
+[2941] of technology. So, you have this unique
+[2943] window into what these elite teams are
+[2945] are actually doing today in 2025. How
+[2948] are your customers using AI in ways that
+[2952] are working or doing something that's
+[2953] just really interesting that you think
+[2955] others could learn from? I think one of
+[2957] the very hard problems that
+[2960] we don't focus on, but our customers are
+[2962] exceptional at,
+[2964] is
+[2966] communicating
+[2967] to
+[2969] end humans
+[2971] how to collaborate and partner with AIs,
+[2973] expectation setting,
+[2975] creating an iteration playground
+[2978] for people to iterate with them.
+[2980] To communicate that the answers aren't
+[2983] always right.
+[2985] And do so in a way that makes sense to
+[2987] the customer. To communicate what's
+[2989] happening under the hoods as this agent
+[2992] is going out and doing work, right?
+[2995] I think some of the elite AI teams are
+[2998] really good at
+[3000] having opinionated ways of doing that in
+[3003] different modalities for different
+[3005] customers. That's a common thread we
+[3007] see.
+[3008] I think the other common thread we see
+[3010] with our customers, which is probably
+[3012] slightly different from the question
+[3013] you're asking, is
+[3015] they're operating in this extreme
+[3017] founder mode. What I mean by that is
+[3019] some of our customers are established
+[3021] companies.
+[3022] You know, BPO.
+[3024] The common thread across all of them
+[3025] that I can pin down
+[3027] is they're super forward-looking, taking
+[3029] risk on their own business,
+[3031] innovating and operating in founder
+[3033] mode.
+[3035] And it's kind of interesting to see,
+[3037] but I do think that is the
+[3039] to me, that's sort of how I
+[3042] look at
+[3043] where we will truly co-innovate together
+[3047] is that. On the flip side, what what
+[3051] mistakes do you see companies making
+[3054] when they try to put AI into production?
+[3056] Or what is failing? What is not working?
+[3058] I think we at Parallel
+[3061] fail to be great at helping everyone
+[3066] measure quality.
+[3068] I think eval is also just like a
+[3069] famously hard problem. You can build all
+[3071] kinds of general purpose evals or evals
+[3073] for your product, evals for a
+[3075] distribution of use cases,
+[3076] but each customer scenario is different.
+[3080] And the eval is actually constantly
+[3082] changing.
+[3083] And I think we haven't yet dialed in how
+[3089] we can help people understand quality,
+[3093] communicate it from us to our customers
+[3095] and from them to their customers when
+[3097] that is the case.
+[3099] And I think that is still a
+[3101] thing that there is a lot to innovate on
+[3104] in order to understand
+[3107] when AI works and when it doesn't work.
+[3110] And when to use it, when not to use it.
+[3112] And I think that's partly our burden
+[3115] to solve. And I don't think we have
+[3117] nailed that yet. Do you have ideas on on
+[3120] what that might look like? We want to
+[3123] automate in some sense an estimate
+[3125] outputs of evals. Like I think the
+[3127] estimation problem is easier than
+[3131] the the actual eval building problem.
+[3134] And so, I think we do do that some of
+[3137] that internally to identify cases where
+[3139] we didn't do a good job. We built
+[3141] aggression test internally.
+[3143] None of those things yet for us are
+[3145] working well enough that we can
+[3147] establish a customer contract around
+[3149] that. But we'd like to write.
+[3151] You want to be able to establish a
+[3153] customer contract around your quality,
+[3155] which is relevant to them and material
+[3157] for them. Yeah, it's true. It's not
+[3158] something that really
+[3160] there's a standard way of measuring.
+[3162] If you are a customer and you're you're
+[3165] you know, expecting some level of
+[3166] quality out of the AI that you're using.
+[3168] And I think if you unlock that, right?
+[3169] Like then you
+[3171] will
+[3172] actually access
+[3174] a large large amount of use cases and
+[3177] actual customers
+[3179] who might today be slightly skeptical,
+[3182] who might have been burnt
+[3184] by trying things that didn't work,
+[3186] who might want a higher quality SLA,
+[3191] but don't even know how to measure it or
+[3194] ask for it or know when it's there or
+[3196] not there. So,
+[3198] the word agent, I think, is one of the
+[3201] most overused words that I hear, at
+[3204] least.
+[3205] What are agents actually doing that is
+[3207] truly useful that that that you see kind
+[3210] of day-to-day? And and maybe what do you
+[3211] think that looks like 2 years from now?
+[3214] I used to joke that agents is code for
+[3217] something that is small.
+[3219] But really, I think that's now a much
+[3220] more
+[3221] clear definition of agents. So,
+[3223] I'm actually starting to embrace the
+[3225] term.
+[3226] I think it's when you allow the AI to
+[3228] have agency
+[3230] to
+[3232] make decisions around
+[3236] how it wants to solve a problem and have
+[3239] access to a collection of
+[3241] tools in order to that.
+[3243] And don't constrain it too much.
+[3245] And allow for many different paths to
+[3248] occur in order to
+[3249] achieve an end state.
+[3251] I think that's a reasonable definition
+[3253] of agent.
+[3254] I think the obvious thing is agent doing
+[3256] small contained coding projects work.
+[3259] And they don't always work,
+[3262] but they work a lot more than I thought
+[3265] they would 2 years ago.
+[3267] Um and so, I think that is the case that
+[3271] it works.
+[3272] I think agents
+[3273] like
+[3274] our agents, if I may, I think they work
+[3276] surprisingly well in many many use
+[3279] cases. And they're not too different in
+[3282] terms of sort of the reliability as you
+[3285] might expect relative to the coding
+[3286] agent. So, I think that sort of deep web
+[3289] research,
+[3290] doing work over the open web kind of use
+[3292] cases, I think they're working. What do
+[3295] you think
+[3296] the Parallel APIs do exceptionally well
+[3299] today?
+[3300] And then what are the things that you're
+[3301] thinking about that you where you want
+[3303] to
+[3304] invest in and improve and you know, the
+[3306] Parallel of 2026, 2027? Parallel APIs
+[3309] are really good at the highest quality
+[3312] web research.
+[3313] The second thing we do really well is
+[3317] really good attribution down
+[3319] to specific sources from which web
+[3322] research was done in a very fine-grained
+[3325] granular way.
+[3326] And that allows us to build a
+[3328] differentiator, which is
+[3330] confidence scoring for all of our output
+[3334] elements.
+[3335] So, our system is calibrated to know
+[3339] when we might have gotten some answers
+[3341] wrong.
+[3343] And I think that's been like a core
+[3345] thing for us. And it's a core need for a
+[3348] lot of our customers because they want
+[3351] to trust the AI.
+[3353] And
+[3354] we want to measure the performance of
+[3356] our AI. We want to figure out where to
+[3357] allocate more compute and retrieval
+[3359] money as we're doing research.
+[3362] And for all of these things,
+[3364] knowing when you're more likely to be
+[3366] wrong
+[3367] is really important. And we've spent a
+[3369] lot of time doing that.
+[3371] And but that also shows up as something
+[3373] that is a value prop for customers.
+[3375] So, continuing on the the agent thread,
+[3378] what what do you think kind of the
+[3379] modern agentic stack looks like? And and
+[3382] why are web tools such an essential part
+[3385] of that? If you think about, I think
+[3387] knowledge work is a overused. It's
+[3389] useful to think about. Like I think if
+[3391] you think about work and an agent either
+[3394] doing it for you or helping you be more
+[3396] productive, right?
+[3398] There is a expectation in the
+[3401] I believe every piece of software we
+[3403] use, whether or not it's an agent,
+[3406] must use some form of an advanced AI
+[3409] like an LLM or some multimodal version
+[3411] of it.
+[3412] And I think if you're doing that,
+[3414] it's almost silly to not have access to
+[3417] the web.
+[3418] And so, the expectation very soon for
+[3420] every piece of software we interact with
+[3423] is going to be that it has access to an
+[3425] LLM, has access to the web.
+[3428] If you now think about building,
+[3430] and that's why we want to be the web
+[3431] tool.
+[3432] But now if you zoom into the agents,
+[3434] right?
+[3435] You think of any agent inside a work
+[3439] environment, let's say, forgetting
+[3440] personal agents for a moment.
+[3442] It must have access
+[3444] to all kinds of internal tools and data
+[3448] in that enterprise.
+[3450] It must have access
+[3452] to the web.
+[3453] It perhaps must have access to, because
+[3456] they're so good at coding,
+[3457] to a sandbox where it can write and run
+[3460] code.
+[3461] Right? And you can come up with a few
+[3463] other tools it needs. But I think that's
+[3465] like those are the top three.
+[3467] Right? Access to the web, access to
+[3469] internal data, access to code sandbox.
+[3471] And then you can have a tool number
+[3472] four, you can have a tool number five,
+[3474] but
+[3475] and we're building the web tool.
+[3477] And when you think about agents
+[3478] interacting with the web at scale, what
+[3481] are some of the hard problems that most
+[3483] people haven't even realized yet?
+[3486] So many hard problems
+[3487] up and down the stack. So, one, there is
+[3490] a
+[3492] hard problem
+[3494] on data access.
+[3496] How do we incentivize a line
+[3499] the business model and the economics of
+[3502] this future web where there's agents,
+[3504] right? We only deal with open data.
+[3507] Uh and I think there is a existential
+[3509] risk on the web
+[3511] that the web might close up more and
+[3512] more
+[3513] unless we figure out and solve problems
+[3517] in a way that incentivizes
+[3519] this data to remain open.
+[3521] And it must be optimal for most people
+[3525] for putting their content, their ideas,
+[3527] their products, or whatever it is they
+[3528] publish on the web out there,
+[3531] that they should be able to add maximal
+[3533] value and actually sustain their
+[3536] businesses, goals, whatever they might
+[3538] be, economics.
+[3540] And it must
+[3541] be better for their goals to be open
+[3544] rather than paywalled or closed.
+[3547] And that
+[3548] it's not obvious
+[3550] that that will happen. That's why we
+[3552] want to show up and we want to pave the
+[3553] path for that being the way the web ends
+[3557] up,
+[3558] which is incentive to remain open
+[3560] through open markets rather than
+[3562] incentives to close up shop. You have
+[3565] all of this very valuable
+[3567] proprietary data that that
+[3569] understandably the producers of that
+[3571] data want to monetize in some way.
+[3574] Do you have an idea for sort of how this
+[3576] all gets sorted out in the coming years?
+[3578] I can talk about a few properties and
+[3580] reasons for believing.
+[3583] One property
+[3584] is I believe we will add so much value
+[3587] through AIs.
+[3588] Going back to the theme of positive sum.
+[3591] That there's going to be so much surplus
+[3593] that we have to embrace the world where
+[3594] we are able to share and drive
+[3597] collaboration. Instead of
+[3599] creating gates.
+[3601] So, when you have the pie getting larger
+[3604] you can actually figure out ways of
+[3605] getting people to collaborate. So, we
+[3607] have that moment today where everyone it
+[3610] is obvious that the pie can get large.
+[3613] And we need to take that mindset. That's
+[3614] one reason for believing.
+[3617] Um another property that's interesting
+[3619] is when you think about information.
+[3623] What ads did really well?
+[3625] Right? Both differential pricing at
+[3627] scale and efficiency. What does that
+[3629] mean?
+[3630] It means that most ad supported
+[3632] businesses.
+[3634] No matter how you look at it.
+[3636] Queries, users are widely accessible to
+[3639] everyone. Extremely subsidized
+[3642] and free like.
+[3644] But they make money from a small
+[3646] fraction of users.
+[3648] Which
+[3649] allows them to be accessible to a wide
+[3651] wide wide swath of users.
+[3654] Right? And they lose money on a large
+[3655] number of users, but that's how the
+[3656] business works.
+[3658] It's differential pricing at the end of
+[3659] the day.
+[3660] And I think we need to bring in that
+[3661] property
+[3663] into getting people publishing on the
+[3666] web.
+[3667] Very simple example. If you consume
+[3670] someone's content
+[3672] through some really expensive model and
+[3674] spend like $4 in GPU to get to some work
+[3678] done at first round.
+[3680] Versus my retired dad
+[3683] just reading the news through that.
+[3686] I'd like for you to subsidize
+[3690] that. So, you shouldn't have to pay the
+[3691] exact same for the same content. And if
+[3693] we build market mechanics which were
+[3695] open and allowed us to have the context.
+[3698] So, the same content being used by
+[3700] different people who have different sort
+[3702] of thresholds of valuing that content.
+[3704] >> Yeah, we need differential pricing and
+[3706] we need scalable market mechanics
+[3709] to figure this out.
+[3710] And we've done some
+[3713] part of the reason we do so much
+[3714] attribution down to sources is to be
+[3715] able to do that math.
+[3717] To be able to understand feasibility.
+[3719] We really want to create open solutions
+[3721] where
+[3723] everyone has incentive to remain open.
+[3726] And we'll all be beneficiaries of a web
+[3729] that is open for AIs to use it.
+[3731] Incredibly interesting idea. How do you
+[3732] How do you get started on something like
+[3734] this? Like is this something where where
+[3736] Parallel would go and find certain
+[3738] uh corpuses of data that you thought
+[3740] were super interesting and that but that
+[3741] were that you'd have to pay for
+[3743] as a way of starting to figure this out?
+[3745] Yes, but also like even when we didn't
+[3747] have to pay for it, we would like to
+[3749] incentivize people to proactively
+[3751] sharing it with us. And to recognize
+[3753] their contribution and pay for it. So,
+[3755] we want to truly go build this
+[3758] open marketplace and it will require us
+[3760] to
+[3761] find partners and find innovators, find
+[3764] people who will take
+[3766] some risk as we learn the math together
+[3769] uh and share in a vision of a future
+[3773] open web
+[3774] and are able to see it that way. And I
+[3776] think if we pull the right partners from
+[3778] the AI world and the web publishing side
+[3783] I think it's possible.
+[3784] So, Pradeep, let's uh maybe wrap up on a
+[3787] couple personal questions. What are some
+[3789] of the topics that you're going really
+[3791] deep on now personally and kind of
+[3794] geeking out on? I'm just geeking out on
+[3796] the web just all the time. Um but
+[3799] outside of this like I think I'm I think
+[3801] the future
+[3802] web index
+[3805] and how it will get built. So, I read a
+[3808] lot of research papers, talked to a lot
+[3810] of AI researchers.
+[3812] We'll build a research team and I think
+[3814] there is a very interesting set of
+[3816] things to be done there.
+[3818] That's the current geek out obsession.
+[3820] It's material to my company. What are
+[3821] some Are there some interesting papers
+[3823] that you've read or like interesting
+[3824] kind of new thoughts that you've had? My
+[3826] world view is currently shaped shaping
+[3829] into
+[3830] a convergence between recommendation
+[3832] systems and search systems and database
+[3835] systems.
+[3836] I think they're all going to start
+[3838] looking like the same thing.
+[3840] And what are the things that you're
+[3841] thinking about again personally
+[3844] in terms of leveling up as an incredible
+[3846] founder CEO? I have to say this thing at
+[3849] Twitter. I don't know if you ever heard
+[3850] it.
+[3851] That like I only want to do jobs that I
+[3853] wouldn't hire myself for.
+[3856] And I think it's like I do best when I'm
+[3858] slightly uncomfortable, insecure
+[3861] don't feel up to it.
+[3864] And that's part of why I wanted to be a
+[3866] founder because I
+[3868] it's it's it's the kind of job that
+[3869] makes you feel like
+[3871] Great thing is it like makes you feel
+[3872] that way.
+[3874] No matter where you are in the founding
+[3876] journey. Like you're constantly
+[3879] under qualified
+[3881] to be what
+[3883] your aspiration, ambition and company
+[3886] needs from you. Right? So, today if I
+[3888] have to think about like where I need to
+[3890] really level up
+[3892] it's in
+[3893] simplifying what we're doing.
+[3896] It's in communicating what we're doing.
+[3898] It's in
+[3899] expanding
+[3901] the coalition they're building towards
+[3904] the open web.
+[3906] Towards the set of customers. Like our
+[3908] coalition is our customers.
+[3910] And I think there is just so much to be
+[3912] done in doing that. Every day I feel
+[3915] like I got
+[3916] a third of what I wanted to get done
+[3918] despite like having so many AIs at my
+[3920] disposal. Well, Pradeep, thank you. This
+[3922] has been an incredibly interesting
+[3923] conversation. I enjoyed it immensely.
+[3925] So, thank you for being with us.

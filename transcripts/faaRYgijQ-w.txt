@@ -1,0 +1,1330 @@
+[14] Well, thanks so much for being
+[14] here today for Build Day.
+[17] Build Day's really all
+[17] about turning great ideas
+[21] into great products,
+[23] and so when we stepped back
+[23] and asked what that might mean,
+[26] we thought, well, no better
+[26] company to talk to than Vercel,
+[29] who's very much at the forefront
+[29] of making that possible,
+[32] and Guillermo, in particular,
+[34] who, of course, is the
+[34] genius behind Next.js
+[38] and Vercel in parallel.
+[40] So, lots of good conversation
+[40] to be had around open source-
+[43] Good to be here, thank you.
+[43] -And business.
+[44] I think earlier this year
+[45] you guys announced 200 million ARR
+[48] and a doubling of users year over year.
+[51] For those of you who are
+[51] reasoning about sort of scale
+[53] and what might be possible,
+[54] I heard 4.3 million downloads a week
+[58] of your AI SDK alone.
+[59] Yeah, it's hard to keep count of downloads
+[62] 'cause they're growing so fast.
+[64] Good problem to have.
+[65] But, yeah, the business has
+[65] been growing really fast,
+[67] and, as many others I think here,
+[70] it was born in the cloud
+[70] and it was born on Stripe.
+[74] Amazing, and, you know, I think
+[76] with many of today's startups,
+[77] rather than reasoning about
+[77] year-over-year growth,
+[79] we're increasingly reasoning
+[79] about month-over-month growth
+[81] or even week-over-week growth-
+[81] Day.
+[83] Day?
+[85] You could ship something today
+[86] that makes a huge difference.
+[88] Always elevating ambitions, amazing.
+[89] Well, thank you for being here.
+[90] I thought we could start maybe
+[90] a bit with your background.
+[93] Born in Buenos Aires,
+[93] taught yourself how to code?
+[96] True story?
+[97] That's right, yeah.
+[97] Curious about kind of your early journey
+[99] and what brought you to the US.
+[101] You know, there are a lot of parallels
+[102] between what I set out to do
+[102] with Vercel in my early days
+[106] because teaching myself to code
+[110] and speak English was
+[110] quite the challenge, but-
+[114] You taught yourself English?
+[115] English was not spoken at home?
+[116] The funny story, no.
+[118] In fact, my parents were
+[118] really interested in it
+[120] 'cause, in Argentina, like,
+[120] the country was always divided
+[123] between like capitalism and socialism.
+[126] And my parents were very much
+[126] like engineers themselves,
+[129] industrial and chemical engineers,
+[132] and they had a lot of admiration
+[132] for great engineering.
+[134] And they knew that the
+[134] cutting edge would be
+[137] in Silicon Valley in the United States,
+[139] but you needed to know
+[139] English in order to get there.
+[142] And so I was interested
+[142] in software engineering,
+[145] and I noticed that a lot
+[145] of the programming manuals,
+[148] documentation, readmes, were in English.
+[150] So I basically had a
+[150] bootstrapping process to do.
+[152] And I tell people these
+[152] days that, you know,
+[154] AI is sort of a before and after
+[156] because, if I go back in time
+[157] and I'm trying to teach
+[157] myself how to code,
+[159] I can do it in my native language,
+[161] and I can do it at every step.
+[162] I can just ask the LLM to teach me.
+[165] Like, literally, one of the
+[165] things with LLMs is like,
+[167] "Explain quantum mechanics like I'm five."
+[170] I could have done that.
+[171] I could have-
+[171] When you were five.
+[172] You could have done that
+[172] when you were five, yeah.
+[174] So I didn't have that.
+[175] The next best thing was the internet,
+[178] and the next, next best
+[178] thing was open source.
+[182] So, for me, one of the discontinuities
+[185] in my learning journey
+[185] was when I started getting
+[187] to know the open-source communities,
+[189] contributing to open source,
+[191] spending a lot of time connected
+[193] with strangers on the
+[193] internet, as one does,
+[195] and learning together.
+[196] And so I started contributing
+[196] to a lot of web frameworks.
+[200] One of the earliest was called MooTools.
+[203] It was a JavaScript library,
+[204] and that was actually very formative.
+[207] You know, if I think of my resume,
+[209] my resume was a bunch of
+[209] the open-source projects
+[211] that I contributed to.
+[213] And the web itself was
+[213] for me sort of the vehicle
+[216] that allowed me to
+[216] basically leave Argentina
+[219] and become a worldwide
+[219] figure in programming
+[222] because the instant that
+[222] I was able to use the web
+[225] to very quickly ship things,
+[228] fork something and put it out into URL,
+[231] now you have a worldwide audience, right?
+[234] These hyperlinks can travel at the speed
+[236] of, you know, thought pretty much.
+[238] So fast-forward to Vercel
+[238] and had the same inspiration.
+[242] If you wanna start a company,
+[243] if you wanna start a digital business,
+[244] if you wanna ship your next big idea,
+[247] I need to make it extremely easy.
+[249] I need to remove all of the friction.
+[251] And, funny enough when I
+[251] was here in Silicon Valley,
+[253] I had already sold my first
+[253] business to WordPress,
+[257] I noticed that, you know,
+[257] the cloud was all the rage.
+[261] I always encourage people to think
+[262] about platform shifts very closely.
+[265] Clearly now we have a
+[265] platform shift towards AI.
+[267] Like 10 years ago when I started Vercel,
+[269] the platform shift was towards the cloud.
+[272] I looked at the cloud, and it was so hard,
+[275] even though I had like 10 years
+[276] of engineering experience under my belt.
+[278] And so Vercel set out
+[278] to remove all friction,
+[281] from idea to global cloud application.
+[285] And so you're kind of
+[285] developing Next.js and Vercel,
+[289] one open source, one is
+[289] a business, in parallel.
+[292] I'm curious like hard
+[292] trade-offs along the way
+[295] when you had to make a
+[295] call, one versus the other.
+[297] Yeah, where there was no
+[297] trade-offs was in my vision.
+[301] I wanna make the web easy,
+[304] and so when I was thinking
+[304] about it from first principles,
+[307] something that you guys
+[307] love to do here at Stripe,
+[309] okay, I sat down, and I needed
+[309] two halves of this equation.
+[313] I needed the tooling, compilers,
+[316] programming language, runtime framework,
+[318] and then I needed the
+[318] cloud infrastructure.
+[321] And so interestingly enough,
+[322] I noticed an asymmetry in the market.
+[324] I noticed an unmet need
+[327] because most of the platform providers
+[330] were leaving the framework
+[330] side for you to figure out.
+[333] So AWS and Google Cloud and whatever,
+[335] like, here's a bunch of
+[335] like virtual machines
+[338] and clusters and networking solutions.
+[340] Right, you do the rest.
+[342] It's like the meme of
+[342] draw the rest of the owl.
+[344] They were like, "Here's some primitives.
+[346] You figure it out how to
+[346] build an application."
+[348] And so I looked at it
+[348] from first principles.
+[350] I was like, "Wow, that's strange,"
+[351] 'cause as I'm in the act of
+[351] drawing this proverbial owl,
+[356] I'm realizing I need tooling.
+[358] And so that's where the
+[358] idea of Next.js came from.
+[361] It's like, hey, I wanna
+[361] create an application
+[363] that is of the
+[363] sophistication, performance,
+[367] and flexibility of the
+[367] giants of the internet
+[371] 'cause I always caveat my
+[371] little storytelling with,
+[373] look, there were ways to publish
+[375] to the internet really easily.
+[377] You could have, you
+[377] know, go to Squarespace
+[380] or Wix or Tumblr.
+[382] Like, there were ways
+[382] to get something online,
+[385] but my aspiration was
+[385] that you would be born-
+[388] much like Stripe-like, your
+[388] business is born on Vercel.
+[391] It never graduates
+[393] because we give you infinite
+[393] scale and infinite power.
+[396] And so I solved the Next.js
+[396] side, made it open source,
+[399] and then I also needed to
+[399] solve the other equation
+[401] with half of the equation, which is,
+[403] all right, how do you host and scale this?
+[405] And I also set a really
+[405] high bar for myself.
+[407] I wanted to make it
+[407] universally performant.
+[410] I wanted to make it such that
+[410] without even being an expert
+[413] in optimization or infrastructure,
+[415] you could deploy something that scales
+[418] and performs excellently.
+[419] And so those were the two things.
+[420] One is more on the business side,
+[422] and the other one is sort of
+[422] our presentation to the world.
+[426] Our cover letter to the
+[426] world is start with Next.js
+[429] or any other open-source
+[429] frameworks that we contribute to.
+[431] I mean, awesome that they
+[431] were so hyper-complementary,
+[434] right, additive.
+[436] Were there hard trade-offs you made?
+[437] I mean, even in your own time-
+[437] Yes.
+[439] Like where you spent
+[439] your own time and energy?
+[441] Yeah, it's funny because
+[441] I had to overcome a few
+[445] bad, I guess, intuitions
+[445] in order to get there.
+[450] One intuition that I
+[450] had at the beginning is:
+[451] in order to create the world's best
+[454] and most successful startup, I
+[454] have to make everybody happy,
+[459] like every single person.
+[461] I feel like that's just a life lesson.
+[463] In order to be the best,
+[464] yeah, you don't have
+[464] to make everyone happy.
+[465] You have to be somewhat disagreeable.
+[466] Yeah, so who did you
+[466] agree to disagree with?
+[469] So, interesting,
+[470] and this is why like the
+[470] story like seems so simple now
+[472] that I tell it, it's like,
+[472] "Oh, wow, like, genius.
+[474] Of course, you created the framework
+[476] and the infrastructure."
+[477] In the beginning, the
+[477] infrastructure was so generic
+[479] that I was trying to appeal to everybody.
+[482] You liked Java.
+[483] It's like, "Oh, I can't let Emily down.
+[485] I'll do some Java over here.
+[486] Oh, and you like Next?
+[487] Oh, okay, I'll do some Next.
+[489] Oh, and you..."
+[489] And so I really was just beginning
+[491] to straddle myself like really thin.
+[494] And so the principle that
+[494] I've now extracted from this
+[497] that I'm very happy to
+[497] share with the world,
+[498] because it can save you some pain,
+[500] is your ambition for a
+[500] venture-backed business
+[503] that'll reach global scale
+[503] should be pretty much unbounded.
+[507] Like, we're here today.
+[508] We're gonna colonize Mars
+[508] someday, sometime in the future.
+[512] So that's the like long-term
+[512] aspiration and ambition.
+[516] But you also have to meet it with realism
+[518] because, if you're just
+[518] pure unmitigated ambition,
+[521] you're gonna be so up in the clouds-
+[524] not the actual cloud, but
+[524] the, like, metaphorical cloud-
+[527] that you're not gonna get anything done.
+[529] You might get into a situation
+[529] being jack of all trades,
+[531] master of none-extremely
+[531] dangerous situation to be in.
+[535] You might get into the situation
+[535] of what some call it like,
+[538] you know, having a
+[538] million mediocre customers
+[541] versus 1,000 customers
+[541] that really love you.
+[544] And so what was obvious in retrospect,
+[548] and we did end up doing is,
+[549] "Hey, we'll start by dominating a niche."
+[553] So the niche was-
+[554] which is funny because
+[554] I think a lot of things
+[556] that we believe are
+[556] niches turn out not to be-
+[560] 'cause we've had $250 million of revenue
+[562] from a niche, which is front end.
+[565] First chapter of Vercel was front end,
+[567] hosting the front-end side of
+[567] websites and web applications,
+[571] and then CDN and security services.
+[574] Our next step, which has come way later
+[576] than I would've expected,
+[576] is back-end: agents
+[580] and the AI cloud, and all those things.
+[582] In many ways, you have
+[582] to earn the privilege
+[584] to expand that product lineup
+[588] or that customer base
+[590] in order to get to the ultimate
+[590] ambition of your business.
+[592] Actually, we're seeing that
+[592] in a lot of the companies
+[594] that are being built now.
+[595] What feels like a niche with
+[595] like a global user base-
+[598] and especially sort of like
+[598] ability to reach markets
+[602] that are well beyond our
+[602] own-are not niches at all.
+[604] They're like very, very large markets.
+[606] Okay, but you had to make
+[606] hard trade-offs at the start.
+[608] 100%.
+[608] Had to shoot for the stars
+[609] and then decide like which
+[609] planet you were gonna land
+[611] on first.
+[611] 100%.
+[612] You talked about like, you
+[612] know, the new frontier is AI,
+[616] and we've talked a bunch about open source
+[618] versus closed source.
+[619] I'm curious in the context of AI
+[621] how you think about open-source models
+[623] versus proprietary models,
+[624] both in terms of like what
+[624] the industry is building,
+[627] but also in terms of like
+[628] how developers should adopt the two.
+[630] One of the things that I believe
+[632] is that once your business
+[632] reaches product market fit,
+[636] you can't get too satisfied, right?
+[638] Because the world will
+[638] expect you to do more.
+[641] Your customers will want you to do more.
+[643] You'll have the people
+[643] and funding to do more.
+[645] So you can, you know, expand
+[645] into other adjacencies.
+[649] And one of the rules
+[650] for when do I expand into my next chapter-
+[654] there's a bunch of rules
+[654] that I have or principles.
+[657] One is what I call brand permission,
+[660] meaning if Vercel
+[660] tomorrow launched a washer
+[663] and dryer product,
+[665] even if it's slick and
+[665] black and beautiful,
+[668] you'd be like, "That's a little strange.
+[670] I was expecting them to launch
+[671] maybe like an AI coding tool."
+[674] Like your brand doesn't
+[674] yet give you permission
+[676] to launch a washer-dryer.
+[677] And also you want to
+[677] expand into adjacencies
+[681] to your core competence.
+[682] So, if you do payments, you
+[682] can handle billing next.
+[686] Or, if you do payments,
+[686] you can handle fraud next
+[689] and things like that.
+[690] And so, for us, with our new chapter
+[692] of becoming the AI cloud,
+[694] what we realized is that
+[694] there is a lot of demand
+[697] for the same things
+[697] that we did in the past.
+[699] People want simple frameworks, tools,
+[702] and solutions for creating agents.
+[704] There's like a new
+[704] protagonist in this story.
+[708] I call it, first chapter
+[709] of the internet was about pages or pixels.
+[713] In fact, if you've used Next.js,
+[715] you know that the very
+[715] first thing we asked you
+[717] to do was create a pages directory
+[720] and toss your files in there.
+[722] It's like very much PHP-inspired.
+[724] The next chapter-
+[724] Pages and pixels
+[726] replaced by?
+[727] Agents.
+[728] And so agents might not even
+[728] have a face, so to speak,
+[732] intelligence that is sort of
+[732] permeating everything you do,
+[736] meeting you in every conversation,
+[738] in every platform integrated into Slack,
+[740] integrated into Zoom,
+[740] integrated into, you know,
+[744] parsing your documents while
+[744] you're doing other work.
+[747] And so this is a completely
+[747] different paradigm
+[749] of the type of software that
+[749] we've all been building.
+[752] And this is why it's exciting
+[752] to start a business today
+[755] because that feels to me
+[755] like a platform shift,
+[758] and what's interesting
+[758] about platform shifts
+[759] is that the old thing doesn't disappear.
+[763] So it's not that tomorrow
+[763] there'll be no pixels
+[766] or we'll get to a point
+[766] where there is no pixels.
+[768] Much like today, we still
+[768] have AM and FM radio,
+[772] so the older technology is still there,
+[774] and it'll have-
+[775] I think in the case of the web,
+[778] pages and URLs and
+[778] links are gonna continue
+[779] to have a ton of relevance.
+[781] But clearly there's a new type
+[782] of software people wanna build,
+[784] and there's a new opportunity then
+[785] to provide the
+[785] infrastructure and framework.
+[787] So just like there was
+[787] Next.js, we created the AI SDK.
+[791] You called out it has 4.2
+[791] million downloads a week.
+[794] I think it's actually
+[794] gonna surpass Next.js.
+[797] Next.js now feels old compared
+[797] to like this new hotness.
+[800] It's like my new love interest.
+[802] No, but they're complementary.
+[804] There's like a foundations cloud,
+[806] and there's an AI cloud
+[806] that you can build on top.
+[808] And so whenever you have an idea
+[810] for an agent or an assistant,
+[813] you will naturally gravitate
+[814] towards a platform that
+[814] speaks your language,
+[816] and that's what we're building now.
+[817] Yeah, so you guys are
+[817] really at the forefront
+[820] of helping developers build with AI.
+[822] We partnered with you
+[823] to make Stripe sandboxes
+[823] native inside Vercel.
+[826] And I'm curious sort of how you thought
+[828] about integrating payments
+[832] within your stack and why it
+[832] felt sort of worthwhile to you.
+[836] Yeah, maybe for some context,
+[838] my original ambition transcended Next
+[840] or Vercel or the cloud.
+[841] It was, okay, if I have a great idea,
+[845] how can I convert it into a
+[845] productive software entity
+[849] or business or whatever?
+[851] And so my tool or my inclination was,
+[855] look, JavaScript, I
+[855] mentioned when I was a kid,
+[858] I worked really hard to learn English,
+[861] but I also worked really
+[861] hard to learn JavaScript.
+[863] And what I really liked
+[863] about JavaScript was
+[868] it felt like the English of
+[868] the programming universe.
+[871] Of course, there's lots of languages.
+[873] Spanish is not too bad,
+[875] but English, if you just learn English,
+[877] think about how much you can accomplish.
+[878] It's awesome.
+[879] Same with JavaScript.
+[880] So JavaScript can run on the server side,
+[882] client side, edge, build time.
+[886] It can be used to
+[886] provision infrastructure.
+[888] And now our bet is it's
+[888] gonna be the main language
+[891] of orchestrating AI services,
+[891] making API calls to models,
+[895] creating agents and workflows, et cetera.
+[898] So that was the inclination,
+[898] is like, "enable the world, broadly."
+[901] Now, a little bit of a detour has been,
+[904] well, kind of like ironically, perhaps,
+[908] English is becoming the next
+[908] hot programming language.
+[912] So we created this tool v0
+[914] where it feels like a self-disruption.
+[919] JavaScript allowed us to
+[919] enable tens of millions
+[921] of people to create, but that's
+[921] still a very small number.
+[926] How many people can express ideas?
+[928] So I'll give you actually
+[928] an actual proxy that I use.
+[932] Slack and Teams have
+[932] approximately combined
+[935] half a billion monthly active users.
+[939] What do those people do
+[939] when they open Slack?
+[941] They, generally speaking,
+[941] talk about building software
+[945] or building some kind of business,
+[947] and they go back and forth.
+[948] "Hey, Emily, how much money
+[948] did we make yesterday?"
+[950] And she's like, "Well,
+[950] what do you mean by money?
+[952] Like, tell me exactly
+[952] what MRR metric you want."
+[954] It's like, "Okay, see you tomorrow."
+[956] But we go back and forth
+[958] in some conversation
+[958] around building a business.
+[962] Imagine if we could take those words
+[964] and actually more directly
+[964] and concretely build software.
+[968] That was the original idea of v0.
+[970] And so for us, it means that
+[970] we can take that pool of people
+[973] that are in the creator sort of category
+[977] from like 20 million to 500 million.
+[980] And so we recently integrated Stripe
+[982] because obviously what you learn
+[984] when people start building software
+[985] is that they wanna monetize it.
+[987] So we made an integration
+[987] such that every person
+[990] that puts a prompt into v0
+[992] or creates an application into Vercel
+[995] has a seamless integration with Stripe
+[998] where you don't even need
+[998] to set up the environment.
+[999] You just get this sandbox provisioned.
+[1002] And it even surprised me,
+[1004] but it quickly became our
+[1004] third-most popular integration
+[1008] in the entire platform.
+[1009] It should not be surprising
+[1010] because anytime you build something,
+[1012] you need that flywheel of:
+[1012] is this actually working,
+[1015] and do people want it?
+[1017] And the best thing you
+[1017] can do is sell that thing
+[1019] and get feedback from the market.
+[1020] So it's been amazing
+[1020] because I think, jointly,
+[1023] we're enabling not just the
+[1023] people that know how to code
+[1027] or are proficient in coding,
+[1028] but now the next generation of,
+[1030] whether you call them vibe coders or not,
+[1033] but it goes back to that original mission
+[1036] of enabling everyone to ship.
+[1037] Any sort of surprising businesses
+[1037] that you've seen spin up
+[1041] with sandboxes like
+[1041] that you didn't expect,
+[1043] you know, just from going through?
+[1044] Well, there's a lot of people
+[1047] that are building, like, ideas.
+[1050] They might have a main job,
+[1052] and then they're like
+[1052] building sort of their,
+[1053] like, startup, their dreams on the side.
+[1055] I feel like I've seen an
+[1055] amplification of this,
+[1059] where, you know, for me, when
+[1059] I was at my previous company,
+[1064] I was dreaming of the company
+[1064] I was gonna create next.
+[1066] But I think the barrier-
+[1068] But you weren't building it yet.
+[1069] The barrier felt too high.
+[1070] It was too hard.
+[1071] That's right. That's right.
+[1071] And so I think there are
+[1071] a lot of people now that,
+[1074] you know, one thing that's
+[1074] been really surprising
+[1076] is younger people.
+[1078] So obviously, I had this
+[1078] story-my personal story-of like,
+[1081] I had to learn quite a bit
+[1083] in order to actually become someone
+[1085] that could sell something online,
+[1087] just integrating all the services,
+[1088] programming languages, et cetera.
+[1090] I've been hearing from people
+[1091] that are professional
+[1091] engineers that tell me,
+[1092] "Look, my siblings, they're
+[1092] like 12, 13 years old,
+[1097] and they're already
+[1097] selling products online."
+[1099] So that's also been really surprising.
+[1101] The other one that's even
+[1101] more surprising, perhaps, is
+[1104] within enterprises,
+[1106] the same sort of inclinations are in play
+[1110] where people have ideas,
+[1112] but they don't have the
+[1112] resources to execute.
+[1115] And so giving them a tool
+[1117] that can enable fast prototyping...
+[1120] One that was maybe not related
+[1120] to payments specifically
+[1123] but was bewildering to me
+[1123] is we heard about a company
+[1126] that went from v0 to patent filed
+[1131] just through like
+[1131] prototyping, trying it out,
+[1134] going back and forth with customers,
+[1136] visualizing the idea, et cetera.
+[1138] Like, okay, this actually
+[1138] is a meaningful evolution
+[1141] of our business.
+[1142] Without a tool that allowed
+[1142] them to move this fast,
+[1145] they need to like get
+[1145] engineering resources.
+[1147] They need to do all these things.
+[1149] So there might be a
+[1149] renaissance of, you know,
+[1150] it seemed like the only way
+[1152] that a enterprise scale could innovate
+[1154] is by acquiring a startup
+[1156] or by some people leaving
+[1158] and starting a startup where
+[1158] like they were free to innovate
+[1162] and use tools and move really fast.
+[1164] I think there's a version of this
+[1165] that's gonna happen
+[1165] within existing companies,
+[1167] and it's been exciting
+[1167] to play a role there.
+[1169] I can't get out of my head this vision
+[1171] of like a five-year-old Guillermo,
+[1173] doesn't speak English
+[1173] yet, in Buenos Aires,
+[1176] sitting at a v0, you know, computer.
+[1179] What would you build?
+[1180] So it's happening already, right?
+[1182] So one thing I've been struck by
+[1184] is people send us like
+[1184] the really cool things
+[1188] they build with v0.
+[1189] They share the chats in
+[1189] our community, et cetera.
+[1192] And it's been amazing to see that a lot
+[1194] of these chats are not in English.
+[1196] Japanese, Spanish, Arabic,
+[1198] like, the LLMs just don't care.
+[1200] Is it as performant in non-English?
+[1202] So this is the other thing
+[1202] that's been shocking.
+[1204] So I've only had limited exposure,
+[1206] so I haven't done a rigorous analysis,
+[1208] but from my vibe-ometer,
+[1208] Spanish is amazing.
+[1212] So that young Guillermo maybe
+[1212] would not speak English today
+[1215] 'cause he continued-
+[1217] Wouldn't have needed to, yeah.
+[1218] building in Spanish.
+[1220] But the other thing that's fascinating
+[1223] is this is not a one-way door, right?
+[1227] A lot of people are starting with v0
+[1229] and they're becoming
+[1229] proficient engineers later.
+[1233] A lot of people ask me
+[1233] like, "Do you believe
+[1234] that this tool replaces
+[1234] the engineering role?"
+[1237] I don't think so, and I
+[1237] already have enough evidence
+[1240] from seeing people telling me, like,
+[1242] "I spent three months in v0.
+[1244] It opened my mind to the different kinds
+[1246] of special skills that
+[1246] it could develop later.
+[1249] And now I do this, and I connect to Git,
+[1251] and I use other tools.
+[1254] And I'm going towards that
+[1254] journey of proficiency."
+[1257] I don't think people should
+[1257] necessarily stop at prompting.
+[1260] In fact, this is how I
+[1260] quote, unquote, "code" today.
+[1263] Whenever I have an idea,
+[1265] it's actually way more practical
+[1265] for me to put it into v0
+[1268] and send a prototype to my team
+[1270] than try to express the
+[1270] same idea either in Slack
+[1274] or text messages or whatever.
+[1277] Or, you know, sometimes
+[1277] the friction to coding
+[1279] and creating an environment,
+[1279] it's just too high.
+[1283] And so I think these tools
+[1283] will continue to coexist
+[1285] in order to help people
+[1285] dream up really big things.
+[1288] Okay, so your own developer
+[1288] experience- Vercel's
+[1290] obviously known for an
+[1290] incredible developer experience.
+[1292] AI is changing what it
+[1292] means to be a developer.
+[1296] What do you think good
+[1296] developer experience
+[1298] is gonna look like a year out,
+[1300] two years out, three years out?
+[1301] Yeah, one thing that's definitely changed
+[1303] in how we operate
+[1303] internally is that we talk
+[1306] of the LLM as our customer.
+[1309] So it used to be that I designed
+[1309] Next.js only for people,
+[1313] and the persona that I
+[1313] would imagine in my head is,
+[1317] all right, there's this developer.
+[1318] Maybe they've had some exposure to PHP.
+[1321] Maybe they know some HTML.
+[1323] How can I relate to them?
+[1325] In fact, and I haven't
+[1325] shared this too broadly,
+[1328] but the very first version of Next.js
+[1331] looked a lot like a templating language
+[1333] 'cause I really badly wanted
+[1333] to merge the world of React,
+[1337] which seemed a little divorced
+[1339] from the mainstream of
+[1339] programming at the time,
+[1342] and I wanted to make it super relatable.
+[1344] I wanted to make it like MySpace codes.
+[1346] I wanted to make it like,
+[1346] "Oh, it just looks like HTML
+[1348] with some JavaScript logic on top."
+[1350] Or even Shopify Liquid looks
+[1350] a little bit like this.
+[1354] And so my customer was that developer.
+[1358] And, whenever I design something,
+[1360] I try to think of a very
+[1360] broad range of skillset.
+[1364] This has been sort of like a
+[1364] personal mantra that I have.
+[1367] I call it progressive
+[1367] disclosure of complexity,
+[1371] which is actually something
+[1371] that's really hard to do.
+[1374] How many years old is Stripe?
+[1376] I mean, it depends when you count from
+[1378] but like slightly over a decade.
+[1380] Okay, so in ten years,
+[1383] a company will add more
+[1383] and more complexity
+[1386] commensurate to the customers that come in
+[1389] and the deals that they make.
+[1390] So, if Stripe is supporting Shopify,
+[1393] the needs of Shopify are way more advanced
+[1396] than the needs of a one-person shop.
+[1398] So, how do you maintain the simplicity
+[1400] of the early days, when it was mostly used
+[1402] by one-person shops, ten years in?
+[1405] And so my personal rule
+[1405] is, one, it's possible.
+[1408] It requires a ton of work,
+[1410] but the rule is progressive disclosure
+[1412] of complexity or sophistication,
+[1414] meaning you still should present yourself
+[1416] where you meet the needs and complexity
+[1419] and experience of that customer
+[1422] that comes in through the door.
+[1423] And then over time, if needed,
+[1426] you reveal your more complex self.
+[1429] And so I think there's a
+[1429] version of that happening now
+[1431] where, in order for me to
+[1431] make a product that is good
+[1435] for one person or a one-person team
+[1438] or we now host two of the top 20 websites
+[1440] on the internet by traffic,
+[1442] I need to be very, very cognizant
+[1444] of how do I expose the
+[1444] complexity to the end user.
+[1447] But, again, that end user
+[1447] is no longer just a human.
+[1449] We think of the agent
+[1452] and how is the agent
+[1452] gonna reason through this.
+[1455] Little example from literally last night.
+[1457] One of our framework builders that works
+[1460] on what do we call agentic
+[1460] developer experience,
+[1463] he said, "Look, what happens
+[1465] when agents use Next.js
+[1469] is that they will boot up lots
+[1469] of dead servers and kill them
+[1474] and boot up lots of dead
+[1474] servers and kill them."
+[1476] And this is not a behavior
+[1476] that a human does.
+[1479] A human boots up one.
+[1481] They go to work to their
+[1481] tech center, that's it.
+[1482] And, in some ways, agents are better
+[1484] because they try lots of
+[1484] things really quickly,
+[1486] and if you give them rope,
+[1487] they'll do a lot of stuff in parallel.
+[1490] And so what we realized is that
+[1491] in one error message in Next.js,
+[1494] we had to include the process ID
+[1497] in order to give agent context
+[1497] of what process to kill
+[1502] in order to recover the port
+[1504] that the previous process was using.
+[1506] This tiny amount of information-
+[1508] hashtag and then
+[1508] identifier of the process-
+[1511] is enough to boost the developer
+[1511] experience, not for people,
+[1516] maybe actually marginally for people
+[1517] 'cause like what I would do
+[1517] if I was an engineer is like,
+[1519] oh, I would run PS and then grab my Next
+[1522] and then find the process and whatever.
+[1523] Like, not a huge difference
+[1525] for people can make a gigantic
+[1525] difference for agents.
+[1528] And so, as developer
+[1528] tools continue to advance,
+[1532] they will continue to cater
+[1532] to this LLM that calls tools
+[1536] and commands rather than people.
+[1538] The people will still be behind
+[1538] the agent instructing it.
+[1543] The other metaphor that
+[1543] I use is that, you know,
+[1546] instead of thinking of
+[1546] yourself as a junior engineer
+[1548] that joins a company,
+[1550] you're basically like a
+[1550] junior engineering manager
+[1553] that joins a company,
+[1553] and what you're managing
+[1553] is a fleet of agents.
+[1556] I like successively revealing complexity.
+[1558] I'm wondering if that works
+[1558] in personal life as well.
+[1560] Yeah, I meet you
+[1561] and we start talking about
+[1561] something basic, shared,
+[1565] and then we can end up talking
+[1565] about like colonizing Mars.
+[1568] Yeah, yeah, yeah.
+[1570] Let's talk about business models.
+[1572] Business models in the
+[1572] AI era are different,
+[1575] unique, complex.
+[1576] I'm curious how you've thought
+[1577] about Vercel's own monetization
+[1577] strategy, business model,
+[1581] and kind of what you're
+[1581] seeing in the market
+[1582] with all the businesses being built on v0.
+[1584] Yeah, when you engineer platforms,
+[1587] some of the early decisions that you make
+[1590] can be highly regrettable in the future.
+[1594] One of them is how you structure.
+[1596] I think a lot of people
+[1597] that have built products
+[1597] might relate to this,
+[1599] for example, how you
+[1599] structure users, teams,
+[1603] organizations, workspaces,
+[1603] roles, et cetera.
+[1607] You make some decisions,
+[1608] and then you wake up five years later,
+[1609] and you're like, "Oh, I wish
+[1609] I'd done it differently."
+[1612] And I think there's a version
+[1612] of this with pricing models.
+[1614] So if young, five-year-old Guillermo
+[1617] in Argentina was asking me today like,
+[1618] "What advice do you have
+[1619] for like how I should structure
+[1619] my pricing?" I would say-
+[1623] I feel like that's a question
+[1623] you might have asked.
+[1625] Yeah, totally,
+[1626] especially because I would
+[1626] be chatting with the LLM,
+[1627] and the LLM would be like,
+[1628] "Yeah, you have to think about this."
+[1629] But so, for a couple rules of thumb.
+[1632] So one is optimizing for
+[1632] high-iteration velocity,
+[1635] not just of your product,
+[1637] but your pricing and packaging
+[1637] and the way you bill.
+[1639] Like, it's gonna undergo constant change.
+[1642] Another one is optimizing
+[1642] for transparency.
+[1646] One of the big weapons that
+[1646] Vercel has today relative
+[1648] to old incumbents
+[1650] is that you can buy
+[1650] anything off the shelf,
+[1652] and then we transparently tell
+[1652] you how much it costs down
+[1655] to a very specific unit,
+[1656] request, data transfer unit, token of AI.
+[1660] And the world has very much
+[1660] evolved to this way of buying,
+[1664] where you have a session
+[1664] with an agent like v0,
+[1667] and then we tell you like,
+[1669] this part of the conversation
+[1671] literally costs you this many credits
+[1673] because you used up this
+[1673] much of intelligence.
+[1677] So, we very much live in a world
+[1677] where everything is on tap.
+[1682] Intelligence is on tap and power.
+[1685] I think of cloud computing as power.
+[1687] I almost think of what
+[1687] Vercel does as a utility.
+[1691] You want us to scale to
+[1691] infinite concurrency.
+[1694] So, for example, we host all
+[1694] of the prediction markets.
+[1697] We host Polymarket, Kalshi,
+[1700] and a bunch of the crypto ones.
+[1702] Today they're probably
+[1702] having a massive day.
+[1705] Why? Because everyone's hitting refresh
+[1706] on the New York election.
+[1708] I'll probably do it
+[1708] when I leave this room.
+[1710] Hey, I could see you're antsy.
+[1711] You wanna know what's happening.
+[1712] And so Vercel is
+[1712] basically letting you draw
+[1715] as much power as you need.
+[1717] And we do it in a way that
+[1717] they didn't need to call 'em
+[1720] and say, "Hey, there's
+[1720] an election coming up.
+[1721] Can you just give me a
+[1721] little bit more power, bro?"
+[1723] No, it's like on demand,
+[1725] and that means that we need to optimize
+[1726] for a system of enormous transparency,
+[1730] real-time accounting.
+[1732] So you can go to Vercel
+[1733] and-at any time, in real time-see,
+[1735] all right, how many requests,
+[1737] how many compute microseconds.
+[1740] Same for the build process.
+[1742] So, if you have 100
+[1742] engineers or one engineer,
+[1744] we can provision one build
+[1744] unit or 100 build units.
+[1748] Your team grows.
+[1750] You can draw more compute.
+[1751] The same is happening with tokens, right?
+[1754] There's some engineers at your company
+[1756] that will be having very long
+[1756] sessions with the agents.
+[1759] There's some that are
+[1759] gonna be more parallel.
+[1761] There's some people
+[1761] that, you know, frankly,
+[1764] as much as I am agent-pilled,
+[1766] I have some engineers working
+[1766] in some frontier domains
+[1769] where AI gives them no returns today,
+[1772] people working on very advanced compiler
+[1775] or cloud infrastructure
+[1775] that there's just not
+[1775] enough data or whatever.
+[1778] And so you need this very
+[1778] fluid model of accounting,
+[1782] billing, et cetera.
+[1783] And so what I would be thinking today
+[1787] when you think about your pricing model
+[1788] and how you monetize is-
+[1791] especially if there is
+[1791] an intelligence component
+[1792] or a power component-
+[1794] how do you do some of that
+[1794] real-time transparency
+[1797] back to your customer?
+[1799] But also, the SaaS models
+[1799] are still very relevant.
+[1802] There's a lot that is
+[1802] rightfully metered by seat
+[1806] or by project or by
+[1806] some other kind of unit.
+[1809] So, where Vercel exists today
+[1809] is kind of a hybrid world
+[1812] of this very much on demand
+[1814] and also for some things
+[1814] that are more related
+[1816] to collaboration, other
+[1816] aspects of building software,
+[1819] more traditional like you would pay
+[1821] for GitHub or Figma or others.
+[1823] And, of course, Stripe has
+[1823] evolved to meet this level
+[1826] of complexity.
+[1826] Yeah, we do.
+[1828] We see a lot of this hybrid
+[1828] billing model, right?
+[1830] You want the sweet, sweet ARR,
+[1832] but you also don't wanna
+[1832] charge the same amount
+[1833] to the person who's using, you know,
+[1835] in browser base like
+[1835] a couple hours a month
+[1836] as the person who's using
+[1836] thousands of hours a month.
+[1839] And, I'll tell you, sometimes
+[1839] entrepreneurs can get
+[1841] into a little bit of a cold-start problem
+[1843] because if you do everything on demand,
+[1845] then you might have 100,000 customers
+[1846] that pay you like 3 cents a month.
+[1849] And you have fixed platform costs.
+[1851] You have platform costs
+[1851] because you had to like get
+[1851] something up and running
+[1855] in order to just be online
+[1855] and serve your user base.
+[1858] And that's why I'm actually,
+[1861] number one, I'm a fan of
+[1861] extreme experimentation.
+[1863] I think no one really knows the answer
+[1865] to these hard problems,
+[1866] and so you have to get out
+[1866] there and try many things.
+[1868] But the other one is that I
+[1868] think I'm quite open-minded
+[1870] about like more of the hybrid ways,
+[1873] and obviously it's great that, you know,
+[1875] you have a lot of the
+[1875] infrastructure already built.
+[1877] So doing it for yourself
+[1877] I do not recommend.
+[1881] It's quite hard.
+[1882] I wanna jump back to
+[1882] something you said earlier
+[1883] about like the web
+[1883] today is built on pages.
+[1885] Pages aren't going anywhere,
+[1886] but there's kind of a
+[1886] new dominant interface
+[1888] that's popping up.
+[1889] We didn't really talk about...
+[1891] We talked a little bit about
+[1891] what that's gonna demand
+[1892] from the infrastructure layer.
+[1893] We didn't really talk about
+[1893] what that's gonna demand
+[1894] in terms of new protocols,
+[1896] and I'm curious sort of
+[1896] what's top of mind for you.
+[1898] Yeah, one thing I mentioned briefly is
+[1901] if the programming language
+[1901] of tomorrow is human,
+[1907] that means that you'll
+[1907] likely be integrated
+[1910] into a lot of the places
+[1911] where the conversations
+[1911] are already happening.
+[1913] So, if you and I are chatting on WhatsApp,
+[1916] then we might create a group
+[1919] with a bot that is there in WhatsApp,
+[1921] or if we're in Slack, same thing.
+[1924] So, the interface
+[1926] that has been the poster child
+[1929] of this first era of AI is conversation,
+[1932] in talking to these agents, in prompting,
+[1935] and I expect that to continue.
+[1937] What's also true is that a lot
+[1939] of these platforms already exist.
+[1942] So there's already ChatGPT.
+[1943] There's already Grok.
+[1945] There is already v0.
+[1947] There's already Cursor.
+[1948] And so paying attention to the protocols
+[1951] that allow you to meet
+[1951] customers where they are.
+[1953] Literally, this morning I
+[1953] was getting a really nice-
+[1956] I was telling you about it-
+[1957] pitch about a data AI company.
+[1960] And the founder's making the case
+[1962] that one of the key interfaces
+[1964] for his product is gonna be the MCP server
+[1966] because a lot of companies
+[1967] are building their own AI interfaces.
+[1970] I meet a lot of enterprises
+[1972] that have basically their
+[1972] own internal ChatGPTs.
+[1974] We have one at Vercel.
+[1976] You guys have one.
+[1977] Shopify has one.
+[1979] And so your product
+[1980] might not have a pixel interface, per se.
+[1983] You might just come to
+[1983] the company and say,
+[1984] "Hey, Stripe, if you connect
+[1984] to our MCP server over here,
+[1989] you're gonna get this value from us."
+[1991] So, I'm paying a lot of attention to MCP.
+[1995] We have a lot of customers in e-comm.
+[1997] Black Friday is gonna
+[1997] be a huge day for us,
+[1999] also for Stripe, of course.
+[2000] And a lot of the questions that I get are,
+[2002] "How do I survive and thrive
+[2005] in an age of agentic browsers?"
+[2007] Meaning, you know, the
+[2007] customers tells it like,
+[2011] "Get me this beautiful black sweater."
+[2013] It's a beautiful black sweater.
+[2014] Do you think agent commerce
+[2014] is overrated or underrated?
+[2017] I thought you were gonna ask
+[2017] me, "Where do you get it?"
+[2019] No, I don't need one, but it looks-
+[2020] I don't think agent commerce is overrated
+[2022] because I think, at least for myself,
+[2024] I always get the same things,
+[2025] the same black shirts 200 times a year,
+[2028] and so there is a kind
+[2028] of purchase that you make
+[2031] that is very predictable.
+[2034] Again, context is king, always has been,
+[2037] even more so now within in the age of AI.
+[2039] That little example that I gave you
+[2040] of like we improved the
+[2040] Next.js error message
+[2043] by five characters,
+[2045] and all of a sudden, like,
+[2045] the world works way better-
+[2048] the same is true for
+[2048] how you bring context.
+[2050] That's just a way of
+[2050] doing context engineering.
+[2052] The concept that we put into the agent
+[2053] determines the quality of the outcome.
+[2055] For commerce, I think if
+[2055] you have really good context
+[2058] in like what my preferences are
+[2058] and my history of purchases,
+[2062] there's a lot that you can automate.
+[2063] I expect it to play a role
+[2063] even in the world of pixels
+[2066] because what a lot of merchants-
+[2068] the dragon that they've been chasing
+[2070] and have never quite gotten to-
+[2072] is that you open favoriteshop.com,
+[2075] and it knows exactly what you want
+[2077] instead of a generic static page.
+[2079] This is literally why Vercel like...
+[2081] A lot of our business,
+[2081] why it's so successful,
+[2083] is we helped people not ship static pages
+[2086] and dynamically render and personalize.
+[2089] But I think a lot of these pages
+[2091] and interfaces are gonna be LLM-backed.
+[2093] So, imagine behind the
+[2093] scenes of producing a page,
+[2097] there's an LLM with a lot of context.
+[2100] And imagine that the tool
+[2100] calls that it can make
+[2103] is the orchestration
+[2103] of your UI components.
+[2106] So, all of a sudden when I
+[2106] go to, you know, keith.com,
+[2109] the LLM is producing the page.
+[2110] That's the mental model that I have.
+[2112] Now, some people are
+[2112] gonna go to keith.com.
+[2114] Some people are gonna go to chatgpt.com.
+[2117] And so you need both.
+[2118] You need the protocol to
+[2118] integrate it into big chat,
+[2122] and you also need to,
+[2122] yourself as a business
+[2124] but also the way that you
+[2124] should think about it,
+[2126] is empowering the businesses
+[2128] that also wanna maintain
+[2128] their own interfaces
+[2131] with the customer.
+[2132] And with this new customer that's the LLM,
+[2133] both at the same time?
+[2134] Yeah, the customer might be an LLM.
+[2136] The customer might be a traditional user.
+[2138] The way that I think about it
+[2138] is when I go to the airport,
+[2140] and I walk past my favorite store,
+[2143] I might still be inclined
+[2144] to have a human-centric experience.
+[2146] So I walk in and I explore,
+[2148] and ideally I would want
+[2148] that to be hyper-personalized
+[2150] and tailored to me.
+[2152] Another interface will
+[2152] be the agent browser,
+[2154] meaning I tell it like, "Get
+[2154] me my black sweater again,"
+[2156] and it just goes off and gets it.
+[2159] And then the other interface
+[2159] will just be purely the agent
+[2163] that you're not directly interfacing with
+[2165] but some other agent.
+[2167] So this is kind of the
+[2167] agent-to-agent model.
+[2169] There's an e-commerce agent over here,
+[2171] but I'm interfacing with some other agent
+[2173] that in order to fulfill its purpose,
+[2174] it needs to buy something.
+[2175] We did a little demo.
+[2176] I mean, this sounds like science fiction,
+[2177] but we did a little demo
+[2177] of this with Stripe,
+[2181] where imagine that you're coding,
+[2183] and you're talking to a coding agent,
+[2185] and you tell it, "Deploy."
+[2187] And the agent-you haven't made
+[2187] a deployment decision yet-
+[2190] the agent says, "Well,
+[2190] in order to deploy it,
+[2192] I'm gonna use Vercel
+[2192] 'cause it's the best."
+[2195] How does that agent successfully
+[2195] procure a Vercel account
+[2199] and pay for it, so that what it gives you
+[2202] is actually the outcome that you wanted?
+[2204] You wanted a live URL or
+[2204] you wanted a deployment,
+[2206] and it just fulfilled the
+[2206] commercial transaction
+[2210] as an implementation detail.
+[2211] Obviously, you will want oversight.
+[2214] You want your payment methods
+[2214] to be, you know, persisted.
+[2217] You want fraud prevention.
+[2219] You want all the good things of buying,
+[2221] but think of it as like my
+[2221] assistant is doing the purchase.
+[2223] I mean, there's disproportionate
+[2223] talk of agentic commerce
+[2227] in the B2C context,
+[2229] but I think the B2B is
+[2229] far under-discussed,
+[2232] and procurement could look
+[2232] very different a year from now.
+[2235] Amazing, that is all
+[2235] we have time for today,
+[2237] and a huge thank you to Guillermo
+[2237] for the insights shared.
+[2240] I know I'm walking away with a lot
+[2242] and hope you all are too.
+[2242] - Thank you all.

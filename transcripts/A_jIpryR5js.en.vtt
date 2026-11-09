@@ -1,0 +1,1388 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.720 --> 00:00:02.120
+Let's start with today what you're
+working on.
+
+00:00:02.130 --> 00:00:08.400 position:59%
+You are building interaction models at
+thinking machines, models that you say
+
+00:00:08.400 --> 00:00:12.810
+keep humans in the loop.
+What exactly does that mean?
+
+00:00:14.250 --> 00:00:18.700 position:63%
+We've been working for the past year and
+a half on the foundations of building a
+
+00:00:18.750 --> 00:00:24.150 position:58%
+frontier I love, and with a specific,
+um, focus that we have.
+
+00:00:24.150 --> 00:00:30.060 position:61%
+And the interaction models were a first
+look at our concentrated bet towards
+
+00:00:30.060 --> 00:00:35.070 position:63%
+human AI collaboration.
+Um, and, you know, the the reason why we
+
+00:00:35.070 --> 00:00:39.990 position:63%
+even started thinking machines is
+because we wanted to build a frontier AI
+
+00:00:39.990 --> 00:00:47.040 position:63%
+lab that's really focused on, um, really
+human AI collaboration piece.
+
+00:00:47.040 --> 00:00:51.450 position:56%
+And that means a lot of things.
+And there are specific research bets
+
+00:00:51.450 --> 00:00:56.370 position:61%
+they're going to that.
+But we wanted to showcase, um, our work
+
+00:00:56.400 --> 00:01:00.920 position:61%
+in one of the first bits through the
+interaction models, and the interaction
+
+00:01:00.920 --> 00:01:06.380 position:63%
+models are a new kind of model.
+If you consider the types of models that
+
+00:01:06.380 --> 00:01:09.590
+we work with today.
+They're very, um, turn based.
+
+00:01:10.040 --> 00:01:16.580 position:63%
+And so you talk, they talk, then they go
+off and think, um, once you've given
+
+00:01:16.580 --> 00:01:20.780 position:61%
+sort of, uh, prompts on what it is that
+you want to do, and while they're
+
+00:01:20.780 --> 00:01:25.550 position:63%
+thinking it's almost like they're deaf
+and blind, they cannot perceive anything
+
+00:01:25.550 --> 00:01:29.420
+else about what's going on.
+And then it's your turn.
+
+00:01:29.420 --> 00:01:33.920 position:58%
+And while you're talking, um, they
+really cannot perceive anything about
+
+00:01:33.920 --> 00:01:36.950
+how you're talking.
+It's not happening in real time.
+
+00:01:37.370 --> 00:01:42.710 position:59%
+And by contrast, our interactions with
+each other are very rich.
+
+00:01:42.800 --> 00:01:48.860 position:58%
+There is a lot of information in our
+interactions when we are silent, when
+
+00:01:48.860 --> 00:01:51.920 position:63%
+we're thinking, when we are interrupting
+one another.
+
+00:01:52.370 --> 00:01:57.370 position:58%
+And so interaction models are able to
+capture all of these neurons.
+
+00:01:57.370 --> 00:02:00.290
+So they're not term based.
+They're more like time based
+
+00:02:00.710 --> 00:02:06.440 position:61%
+interaction, where they're continuously
+taking in audio, text, video and
+
+00:02:06.440 --> 00:02:11.900
+continuously providing output.
+Now we cut this up in chunks of 200
+
+00:02:11.900 --> 00:02:16.090 position:58%
+milliseconds.
+And this enables you to actually, uh,
+
+00:02:16.130 --> 00:02:21.830 position:61%
+catch these things like interruptions
+and simultaneous speech, um, and really
+
+00:02:21.830 --> 00:02:28.070 position:63%
+create a rich, high bandwidth
+interaction between humans and machines,
+
+00:02:28.070 --> 00:02:35.720 position:59%
+which we think is critical to actually
+enable, um, agency and, uh, and, and
+
+00:02:35.720 --> 00:02:41.930 position:61%
+enabled people to be more in this loop.
+Um, as we advance AI further and
+
+00:02:41.930 --> 00:02:46.100
+further, you're basically trying to
+build an AGI lab from scratch.
+
+00:02:47.120 --> 00:02:52.910 position:63%
+You've got OpenAI, anthropic, Google
+meta, all with a significant head start,
+
+00:02:53.930 --> 00:02:57.020
+all of them racing to build smarter
+models.
+
+00:02:57.040 --> 00:02:59.680 position:61%
+What is the bet that you're making that
+they aren't?
+
+00:03:00.040 --> 00:03:02.140
+And what do you think they are
+underestimating?
+
+00:03:03.130 --> 00:03:08.830 position:61%
+So first of all, I think, um, advancing
+the frontier of AI is incredibly
+
+00:03:08.830 --> 00:03:09.730
+positive.
+Some.
+
+00:03:10.300 --> 00:03:16.330 position:63%
+And I think there is plenty of space for
+many different perspectives and ways of
+
+00:03:16.330 --> 00:03:20.620
+developing the technology.
+And I think, um, plurality is good.
+
+00:03:20.860 --> 00:03:25.990 position:63%
+Um, having a plurality of perspectives
+of ways of building technology different
+
+00:03:25.990 --> 00:03:30.910 position:61%
+products is great for the world.
+Now, this is a pretty hard thing to do.
+
+00:03:31.120 --> 00:03:34.810
+So, um, I think that's why we don't
+actually have many players.
+
+00:03:34.810 --> 00:03:37.570
+So I think the barrier to entry is
+incredibly high.
+
+00:03:38.020 --> 00:03:43.750 position:61%
+Um, but in terms of creating something,
+differentiate it, I do think there is
+
+00:03:43.750 --> 00:03:48.850 position:59%
+plenty of room.
+Um, I have always been very passionate
+
+00:03:48.850 --> 00:03:54.550 position:56%
+about advancing the frontier of AI
+systems, and I think that there is a
+
+00:03:54.550 --> 00:04:00.750 position:63%
+potential for so much transformation for
+civilization that comes from that.
+
+00:04:01.140 --> 00:04:07.410 position:63%
+But it's not a predestined outcome.
+The way that we go about building it and
+
+00:04:07.410 --> 00:04:15.630 position:61%
+deploying the systems really matters.
+And I think an area where there is very
+
+00:04:15.630 --> 00:04:22.320 position:61%
+little work that's been done so far is,
+um, bringing the machine intelligence
+
+00:04:22.320 --> 00:04:28.020 position:59%
+closer to where the knowledge is.
+And so what I mean by that is there is
+
+00:04:28.020 --> 00:04:33.600 position:61%
+one path of advancing frontier AI
+systems, which is, uh, very autonomous,
+
+00:04:33.600 --> 00:04:40.860 position:56%
+and it doesn't rely too much on the
+messiness of reality or the, um, the
+
+00:04:40.860 --> 00:04:47.040 position:63%
+experience that humans have day to day.
+And that's quite a fast way of advancing
+
+00:04:47.040 --> 00:04:51.660 position:63%
+AI systems very autonomously.
+Autonomy is definitely a part of it, and
+
+00:04:51.660 --> 00:04:55.140
+it's a very important part.
+But I think a missing part where we
+
+00:04:55.140 --> 00:05:01.410 position:58%
+haven't done much work is, um, really
+focusing on human intent or the
+
+00:05:01.410 --> 00:05:07.230
+messiness of interaction, enabling
+people more in building, um,
+
+00:05:07.470 --> 00:05:13.080 position:61%
+conceptually, building interior systems
+more like tools for thought.
+
+00:05:13.680 --> 00:05:17.790 position:59%
+Where,
+I mean, I think the, the most advanced
+
+00:05:17.790 --> 00:05:23.040 position:63%
+AI systems are the most incredible tools
+for thought that humanity can ever have.
+
+00:05:23.550 --> 00:05:30.750 position:63%
+And so how can this change the way that
+we think and where we're still thinking?
+
+00:05:30.930 --> 00:05:35.670 position:63%
+And, uh, but it's changing the nature of
+thought to what we're thinking about.
+
+00:05:36.300 --> 00:05:40.800 position:58%
+Um, and this part I don't think, is
+actually this part is familiar to us,
+
+00:05:41.250 --> 00:05:47.160 position:61%
+you know, um, since the beginning of
+time, like, technologies have, um, deep
+
+00:05:47.170 --> 00:05:52.620 position:61%
+technologies have changed what we think
+about, like, language writing, uh,
+
+00:05:52.620 --> 00:05:56.270
+numerals.
+Like, imagine if you had to do your
+
+00:05:56.270 --> 00:05:59.270
+multiplication with Roman numerals.
+So be miserable.
+
+00:06:00.050 --> 00:06:06.260 position:61%
+You know, we invented, uh, today's
+numerals, and this enabled a whole area
+
+00:06:06.260 --> 00:06:10.160 position:59%
+of mathematics.
+Like a child could can do mathematics.
+
+00:06:10.190 --> 00:06:15.200 position:58%
+Um, very quickly.
+And so it enabled these very tangible
+
+00:06:15.440 --> 00:06:20.150
+new ways of sorts.
+And I think this is the opportunity
+
+00:06:20.150 --> 00:06:28.100 position:61%
+ahead of us, this possibility to expand
+what we think about, um, and have new,
+
+00:06:28.100 --> 00:06:32.510 position:63%
+tangible things.
+So we think about and this requires, um,
+
+00:06:32.690 --> 00:06:38.810 position:58%
+but this requires a very intentional,
+uh, research work and product work in
+
+00:06:38.810 --> 00:06:42.410 position:56%
+this direction.
+When I interviewed you, it was early
+
+00:06:42.410 --> 00:06:45.380 position:56%
+2023.
+ChatGPT had just changed everything.
+
+00:06:45.380 --> 00:06:49.430 position:58%
+You were CTO of OpenAI.
+I see you folks I talked to, you said
+
+00:06:49.430 --> 00:06:55.900 position:63%
+you basically ran the place Say, um when
+you left of to and founded Thinking
+
+00:06:55.900 --> 00:06:59.110 position:58%
+Machines.
+Were you running towards something or
+
+00:06:59.110 --> 00:07:04.900
+away from something?
+Um, I most definitely was running
+
+00:07:05.230 --> 00:07:09.070 position:56%
+towards something once I figured out
+what the thing was.
+
+00:07:09.640 --> 00:07:15.640
+Um.
+But I had an incredible.
+
+00:07:15.970 --> 00:07:18.370 position:59%
+I mean, I had an incredible experience
+at OpenAI.
+
+00:07:18.370 --> 00:07:25.360 position:63%
+I was so incredibly lucky to work with
+some of the most dedicated and, uh, most
+
+00:07:25.360 --> 00:07:29.350 position:58%
+talented people in the world.
+And that's that's incredibly special.
+
+00:07:29.350 --> 00:07:32.560
+And, uh, I'm very grateful for that
+experience.
+
+00:07:32.950 --> 00:07:41.020 position:63%
+Um, and, you know, eventually I had my
+own view of, um, and very strong view of
+
+00:07:41.380 --> 00:07:45.190 position:61%
+how I think this technology ought to be
+developed.
+
+00:07:45.310 --> 00:07:51.330 position:58%
+And it's very rare to start something
+from scratch once you have, uh,
+
+00:07:51.930 --> 00:07:54.690 position:59%
+developed such a strong perspective on
+it.
+
+00:07:55.260 --> 00:07:58.070 position:58%
+And that's that's a rare privilege to
+have.
+
+00:07:58.080 --> 00:08:03.510
+And I think having a company like
+Thinking Machines gives us an
+
+00:08:03.510 --> 00:08:10.170 position:58%
+opportunity to focus on where we have
+the highest conviction and build and
+
+00:08:10.170 --> 00:08:13.230 position:58%
+orient the entire company around that
+conviction.
+
+00:08:13.380 --> 00:08:17.730 position:63%
+Mhm.
+Take me back to the board crisis of that
+
+00:08:17.730 --> 00:08:20.880 position:59%
+year later that year.
+You testified under oath that you were
+
+00:08:20.880 --> 00:08:24.180 position:61%
+worried when I was at catastrophic risk
+of falling apart.
+
+00:08:24.930 --> 00:08:27.210 position:59%
+You raised concerns about Sam Altman's
+leadership,
+
+00:08:28.770 --> 00:08:33.210 position:61%
+but in that moment you had to act.
+Looking back, do you think you got that
+
+00:08:33.210 --> 00:08:41.370 position:61%
+moment right?
+It was a very intense time, and it was,
+
+00:08:41.400 --> 00:08:47.400 position:58%
+uh, a very complex situation.
+And I'm sure many people have been in
+
+00:08:47.400 --> 00:08:52.740 position:63%
+situations that they fields impossible
+where you have to make really hard calls
+
+00:08:52.740 --> 00:08:56.640
+and very quickly.
+And I think there is a part of this
+
+00:08:56.640 --> 00:08:59.730
+complexity.
+There wasn't to the world.
+
+00:08:59.730 --> 00:09:04.860 position:61%
+It appeared that it happened overnight,
+but to me it was years of thinking
+
+00:09:04.860 --> 00:09:11.580 position:58%
+about, you know, the mission, the
+governance, how you build a team that
+
+00:09:11.820 --> 00:09:17.340 position:59%
+can build durable, transformational
+technologies with that responsibility.
+
+00:09:17.820 --> 00:09:23.220 position:63%
+Um, there was a lot of complexity to the
+organization that was there for years,
+
+00:09:23.220 --> 00:09:29.670 position:63%
+and we had thought about a lot, um, this
+particular thing that happened this
+
+00:09:29.670 --> 00:09:32.990
+acute moment.
+Uh, there was a lot of intensity,
+
+00:09:33.060 --> 00:09:37.470
+intensity to it in time.
+Uh, and, you know, when,
+
+00:09:38.550 --> 00:09:42.210 position:59%
+uh, the board asked me for feedback, I
+shared feedback.
+
+00:09:42.600 --> 00:09:48.350 position:63%
+And I stand by that.
+And when they made the decision, Uh, and
+
+00:09:48.350 --> 00:09:56.480 position:56%
+asked me to step up as interim CEO.
+I did that, and, um, when I realized
+
+00:09:56.480 --> 00:10:00.530
+that their decision was, like,
+potentially catastrophic for the
+
+00:10:00.530 --> 00:10:04.190
+company, uh, and things would
+potentially fall apart.
+
+00:10:04.820 --> 00:10:07.660
+Uh, I feel like I had to act very
+quickly.
+
+00:10:07.670 --> 00:10:11.810 position:59%
+And even though on the surface it just
+looked very chaotic, I think at each
+
+00:10:11.810 --> 00:10:15.110 position:59%
+point in time, I felt very clear about
+what I had to do.
+
+00:10:15.590 --> 00:10:20.390 position:63%
+Uh, because I the thing that I cared the
+most about was the mission, the
+
+00:10:20.390 --> 00:10:24.500 position:63%
+continuity of the mission and the people
+and the team.
+
+00:10:24.890 --> 00:10:28.760 position:61%
+And this is not like an abstract thing.
+It's real people that I work with for
+
+00:10:28.760 --> 00:10:31.010 position:59%
+many, many years and cared very deeply
+about.
+
+00:10:31.520 --> 00:10:36.770 position:58%
+Um, and all of this was about to, you
+know, potentially implode.
+
+00:10:36.970 --> 00:10:41.300 position:58%
+Um, so it was very clear to me what I
+had to do to create to, to provide
+
+00:10:41.300 --> 00:10:47.830 position:63%
+continuity, stability and help bring
+some back, restore that, get the team in
+
+00:10:47.830 --> 00:10:51.790
+place to then deliver.
+Um contributed four oh and oh one.
+
+00:10:51.850 --> 00:10:57.280 position:61%
+Um and so that was, that was I think it
+was that principal that made it very
+
+00:10:57.280 --> 00:11:00.130
+clear to me what I had to do in
+retrospect.
+
+00:11:00.220 --> 00:11:07.720 position:61%
+Um, I, I think that I would have paused
+more on understanding the
+
+00:11:08.740 --> 00:11:13.570 position:59%
+transition plan and, uh, like, of
+course, with the benefit of hindsight,
+
+00:11:13.570 --> 00:11:18.790 position:59%
+there was an, uh, any transition plan
+and there wasn't, uh, much thought put
+
+00:11:18.790 --> 00:11:24.250 position:58%
+into, uh, transparency, bringing, uh,
+the team along, providing the
+
+00:11:24.250 --> 00:11:27.250 position:58%
+continuity.
+And in retrospect, I would have had a
+
+00:11:27.250 --> 00:11:29.020
+post-mortem on that.
+Interesting.
+
+00:11:29.290 --> 00:11:33.100
+Helen Toner testified.
+Former OpenAI board member Mira was
+
+00:11:33.100 --> 00:11:36.400 position:63%
+waiting to see which way the wind would
+blow, and she didn't realize she was the
+
+00:11:36.400 --> 00:11:38.830 position:63%
+wind.
+What do you think would have happened if
+
+00:11:38.830 --> 00:11:44.030
+you didn't do what you did?
+I think quite likely.
+
+00:11:44.050 --> 00:11:51.040
+Open out of imploded.
+The case got thrown out on a
+
+00:11:51.040 --> 00:11:55.570 position:59%
+technicality.
+So the court never decided whether the
+
+00:11:55.570 --> 00:11:57.970
+leaders of OpenAI breached their
+mission.
+
+00:11:58.540 --> 00:12:02.260
+How much does the character of the
+people building the most powerful
+
+00:12:02.260 --> 00:12:04.990
+technology in the world?
+How much does that matter?
+
+00:12:05.530 --> 00:12:11.440 position:59%
+Whose hand is on the dial?
+I think the integrity character values
+
+00:12:11.440 --> 00:12:17.710 position:63%
+of the people matter a lot because there
+are a lot of decisions, micro decisions
+
+00:12:17.710 --> 00:12:21.640 position:63%
+you have to make every day, and you have
+to trust your team that they're making
+
+00:12:21.640 --> 00:12:25.840 position:56%
+the right calls.
+Um, and I do think there's plenty of
+
+00:12:25.840 --> 00:12:30.760 position:63%
+focus on that, and that's great.
+Um, where there is less focus is sort of
+
+00:12:30.760 --> 00:12:36.670 position:63%
+like the institutional design, decision
+making, transparency, um, increasing the
+
+00:12:36.670 --> 00:12:41.890 position:63%
+level of agency, uh, that people have to
+actually decide for themselves.
+
+00:12:42.130 --> 00:12:46.380 position:59%
+So it doesn't have to be like an
+authority that says, you know, this is
+
+00:12:46.380 --> 00:12:47.700
+safe.
+This is good.
+
+00:12:48.330 --> 00:12:51.930 position:56%
+Stamp of approval.
+But each person can sort of wait for
+
+00:12:51.930 --> 00:12:54.870
+themselves.
+Um, what works for them?
+
+00:12:55.230 --> 00:13:00.600 position:61%
+And I think the way that we're going
+about building AI systems today is just
+
+00:13:00.600 --> 00:13:04.950
+very concentrated.
+And it's part of the legacy way,
+
+00:13:04.950 --> 00:13:09.960 position:58%
+because, you know, we don't have real
+world data and experience.
+
+00:13:09.960 --> 00:13:15.450 position:56%
+We the only way to to advance AI was
+sort of in silo and in a vacuum.
+
+00:13:15.870 --> 00:13:20.550 position:59%
+Um, but I think, yeah, today is it's a
+different time to build where we can
+
+00:13:20.940 --> 00:13:25.740 position:59%
+actually learn a lot from the
+capabilities, tensions, limitations in
+
+00:13:25.740 --> 00:13:31.830 position:56%
+the real world and use that data and
+information to actually steer the
+
+00:13:31.830 --> 00:13:37.230 position:63%
+direction of research.
+And this enables people to actually, um,
+
+00:13:37.230 --> 00:13:40.830 position:63%
+think for themselves.
+Like often people will ask me about, you
+
+00:13:40.830 --> 00:13:47.090 position:61%
+know, uh Tragic beauty and how that the
+impact of all of that and of course,
+
+00:13:47.090 --> 00:13:50.060
+it's magnificent from a technology
+perspective.
+
+00:13:50.570 --> 00:13:56.300 position:63%
+But I think the most important aspect of
+or impact of change was bringing AI in
+
+00:13:56.300 --> 00:13:57.910
+the public consciousness.
+Mhm.
+
+00:13:58.460 --> 00:14:03.740 position:61%
+And people every, everyone kind of
+understanding what it is by interacting
+
+00:14:03.740 --> 00:14:08.990 position:61%
+with it versus being told what I can do
+and what the capabilities and
+
+00:14:08.990 --> 00:14:12.230 position:56%
+limitations are.
+What do you think the Am this moment
+
+00:14:12.230 --> 00:14:17.180 position:63%
+demands of a leader?
+And should we trust the leaders in power
+
+00:14:17.180 --> 00:14:18.590
+right now?
+Should we trust Sam?
+
+00:14:26.000 --> 00:14:34.130 position:63%
+I think that everyone should be everyone
+should have the tools and information to
+
+00:14:34.130 --> 00:14:37.130
+be able to make these decisions for
+themselves.
+
+00:14:37.550 --> 00:14:44.000 position:63%
+And ideally, like, you know, the
+structure of governance, uh, in decision
+
+00:14:44.000 --> 00:14:49.400 position:59%
+making should not hinge on one person.
+There should be checks and balances.
+
+00:14:49.790 --> 00:14:55.670 position:59%
+Um, I think it's very important who is
+working on the systems and, you know,
+
+00:14:55.670 --> 00:15:00.110
+the character of people.
+But, uh, I do think that the
+
+00:15:00.110 --> 00:15:05.090 position:59%
+conversation gets too wrapped up there
+and not enough thinking more broadly
+
+00:15:05.360 --> 00:15:09.110 position:58%
+about checks and balances and system,
+because even people that are well
+
+00:15:09.110 --> 00:15:14.270 position:61%
+intentioned, well intentioned, they can
+make mistakes and, uh, they can mis
+
+00:15:14.270 --> 00:15:18.340 position:59%
+estimate the, the, uh, consequences of
+making a call.
+
+00:15:18.350 --> 00:15:23.600 position:58%
+And so morality is not everything you
+have to think about actual, you know,
+
+00:15:23.900 --> 00:15:28.850 position:58%
+decision making structures and
+transparency and governance and these
+
+00:15:28.850 --> 00:15:34.160 position:61%
+are all complicated things.
+And to get as many people, um, involved
+
+00:15:34.160 --> 00:15:38.540 position:63%
+in these things as possible, you
+actually have to share the knowledge you
+
+00:15:38.540 --> 00:15:42.610 position:63%
+have to share, uh, tools.
+And this is part of the reason why we've
+
+00:15:42.610 --> 00:15:46.570 position:63%
+actually, um, taken a more open approach
+with our lab.
+
+00:15:46.870 --> 00:15:50.770 position:61%
+So that was my next question, which is,
+how is everything that you've learned
+
+00:15:50.950 --> 00:15:55.690 position:63%
+shaping what you're building thinking
+machines and how you're building and the
+
+00:15:55.690 --> 00:16:00.910
+culture that you want to create?
+Yeah, I think, um,
+
+00:16:02.350 --> 00:16:08.680 position:63%
+I have very high conviction that the way
+to continue building frontier AI systems
+
+00:16:09.070 --> 00:16:16.420 position:56%
+is to bring people along and to have
+humans in the loop.
+
+00:16:16.630 --> 00:16:19.420 position:58%
+Actually having humans in the loop
+doesn't quite describe it, because it
+
+00:16:19.420 --> 00:16:24.010 position:58%
+sounds like a checkpoint where we're
+signing off something and then you're
+
+00:16:24.010 --> 00:16:27.850 position:63%
+good to go.
+It's more like creating systems that are
+
+00:16:27.850 --> 00:16:33.640 position:63%
+not just like autonomously advancing and
+leaving civilization behind, but are
+
+00:16:33.640 --> 00:16:38.640 position:61%
+more like a tandem bike where you know,
+you have like, both.
+
+00:16:38.670 --> 00:16:44.190 position:63%
+Both people are peddling, uh, but, you
+know, when you're going up a hill, maybe
+
+00:16:44.940 --> 00:16:50.190 position:61%
+whoever is stronger is pedaling harder.
+But both hands are on the are on the
+
+00:16:50.190 --> 00:16:53.310
+wheel.
+And that's quite important because
+
+00:16:53.310 --> 00:16:55.680
+that's a different system.
+It's a system designed for
+
+00:16:55.680 --> 00:17:00.450 position:59%
+collaboration.
+Um, and, and that's, that's what we're
+
+00:17:00.720 --> 00:17:04.560 position:61%
+trying to build with thinking machines.
+And I think it's quite differentiated
+
+00:17:04.980 --> 00:17:12.839 position:59%
+and, um, uh, and, and I hope that it
+will increase the level of agency, um,
+
+00:17:13.020 --> 00:17:18.990 position:63%
+that people have and also it will help
+us steer the research direction towards,
+
+00:17:19.619 --> 00:17:23.940 position:63%
+uh, creating outputs that are more value
+aligned.
+
+00:17:24.180 --> 00:17:28.380
+And so you also get alignment as a
+result of this approach.
+
+00:17:28.830 --> 00:17:34.860 position:61%
+Um, in, in addition to usefulness, like
+actually creating technologies that are
+
+00:17:34.860 --> 00:17:38.880
+useful in the real world.
+you've hired a lot of top talent.
+
+00:17:39.420 --> 00:17:43.920
+These reports of nine figure deals.
+There have also been some, um, high
+
+00:17:43.920 --> 00:17:47.370
+profile departures.
+How would you describe the war for
+
+00:17:47.370 --> 00:17:49.200
+talent?
+How brutal is it?
+
+00:17:49.200 --> 00:17:51.840
+And what should we read into these
+exits?
+
+00:17:54.450 --> 00:17:59.360 position:63%
+It's definitely a big part of building a
+frontier.
+
+00:17:59.370 --> 00:18:04.560 position:61%
+I love, um, having the right people and
+that's, you know, people that have the
+
+00:18:04.560 --> 00:18:09.060 position:63%
+competence to do it but also are aligned
+with your overall mission and
+
+00:18:09.060 --> 00:18:10.980
+conviction, what you were trying to
+achieve.
+
+00:18:11.580 --> 00:18:17.700 position:59%
+Um, I yeah, I wouldn't call it a war
+because it might mean that the highest
+
+00:18:17.700 --> 00:18:21.840 position:61%
+bidder wins.
+Uh, and, and I think for the most part,
+
+00:18:21.840 --> 00:18:27.210 position:59%
+people that are working in this field
+are very, you know, uh, they genuinely
+
+00:18:27.210 --> 00:18:35.420 position:63%
+care about advancing the field.
+Now, it is an absolutely crazy time, And
+
+00:18:35.630 --> 00:18:40.790 position:56%
+a lot of it is unprecedented.
+It's incredibly intense to build the
+
+00:18:40.790 --> 00:18:44.660
+frontier.
+I lab from scratch during such
+
+00:18:45.050 --> 00:18:50.600 position:58%
+competitive times.
+Um, and so that leads to, you know, a
+
+00:18:50.600 --> 00:18:57.200
+lot of, um, uh, uncertainty and
+predictability, some, some of the
+
+00:18:57.200 --> 00:19:03.560 position:63%
+volatility that we've seen.
+Um, but yeah, I think when you're trying
+
+00:19:03.560 --> 00:19:09.230 position:58%
+to compress progress in such a short
+amount of time, things that happen in
+
+00:19:09.230 --> 00:19:13.460 position:58%
+other start ups, companies over the
+course of ten years, five years, both
+
+00:19:13.460 --> 00:19:18.950 position:63%
+good and bad, are going to happen in the
+course of a few months and in a course
+
+00:19:18.950 --> 00:19:22.250 position:58%
+of a year.
+And I think part of, um, part of what
+
+00:19:22.250 --> 00:19:28.820 position:63%
+we're seeing is contextualized in that's
+just compressing, uh, the, the amount of
+
+00:19:28.820 --> 00:19:31.340 position:58%
+progress that's happening.
+And whenever you have something good,
+
+00:19:31.340 --> 00:19:34.960
+something bad will come with it.
+And so you have to balance the two.
+
+00:19:34.960 --> 00:19:39.400 position:63%
+But people who for different reasons,
+you know, maybe uh, the, the, the, their
+
+00:19:39.400 --> 00:19:42.610 position:58%
+passion evolved for what they want to
+work on.
+
+00:19:43.000 --> 00:19:50.140 position:61%
+Um, I think the, the high numbers and
+the compensation numbers, they captured
+
+00:19:50.140 --> 00:19:52.930
+the imagination of people because
+obviously they're very big.
+
+00:19:53.410 --> 00:19:59.440 position:61%
+Um, but I do think that, you know, some
+of the most sought after people.
+
+00:19:59.980 --> 00:20:04.420 position:56%
+Uh, that's that's not that's not the
+main story.
+
+00:20:04.630 --> 00:20:08.620 position:56%
+And I think there is a lot, uh, that
+goes on here.
+
+00:20:08.620 --> 00:20:13.090
+And it is very intense to build a
+company from scratch, let alone a
+
+00:20:13.090 --> 00:20:17.860 position:63%
+frontier AI lab.
+Um, so this part of, you know, it's part
+
+00:20:17.860 --> 00:20:23.230 position:61%
+of the challenges and suffering of
+building the company and doing anything
+
+00:20:23.410 --> 00:20:24.610
+0 to 1.
+Mhm.
+
+00:20:25.120 --> 00:20:29.590
+Dara Ahmadi has predicted mass, you
+know, white collar job loss.
+
+00:20:29.620 --> 00:20:34.290 position:61%
+Sam though recently walked back some of
+his predictions about a, you know, damn
+
+00:20:34.300 --> 00:20:37.960 position:63%
+jobs apocalypse.
+Where do you think the industry is being
+
+00:20:37.960 --> 00:20:43.570 position:58%
+too pessimistic and too optimistic?
+What is mirror Marty's vision for the
+
+00:20:43.570 --> 00:20:47.980
+future?
+So, you know, predicting, um,
+
+00:20:49.450 --> 00:20:54.640 position:56%
+uh, sort of, uh, dystopia or utopia?
+Uh, to me feels,
+
+00:20:55.870 --> 00:21:00.400 position:61%
+uh, feels very, very simplified because
+the truth is, we actually have a lot of
+
+00:21:00.400 --> 00:21:04.840 position:59%
+agency in how we build this technology
+in the tool.
+
+00:21:04.850 --> 00:21:06.880 position:58%
+So we're building how we're deploying
+it.
+
+00:21:07.450 --> 00:21:12.030
+And and so it's not a predestined
+outcome.
+
+00:21:12.040 --> 00:21:16.810 position:59%
+There are certainly those risks we all
+understand, uh, the potential for
+
+00:21:16.810 --> 00:21:21.310
+greatness that comes with building
+frontier AI systems in this way.
+
+00:21:21.310 --> 00:21:24.850 position:58%
+We're working on them.
+Um, and I think there's been a lot of
+
+00:21:25.750 --> 00:21:28.900 position:59%
+talk around the uncertainty around the
+downsides.
+
+00:21:29.320 --> 00:21:35.640 position:61%
+And, uh, I, I agree with a lot of these
+risks, and perhaps where
+
+00:21:37.080 --> 00:21:41.880 position:59%
+I might disagree or take a different
+path, is that I think we have a lot of
+
+00:21:41.880 --> 00:21:48.960 position:59%
+agency like this period of time where,
+um, both humans and AI systems have
+
+00:21:48.960 --> 00:21:52.220
+their hands on the wheel and we can
+collaborate.
+
+00:21:52.230 --> 00:21:54.360
+It's very important time to get it
+right.
+
+00:21:54.900 --> 00:22:00.060
+And the more that we can reduce the
+discontinuity that comes from new
+
+00:22:00.060 --> 00:22:04.320
+capabilities and huge change in
+capabilities, the better.
+
+00:22:04.830 --> 00:22:10.050 position:63%
+Um, and and this is why we took this
+approach where thinking machines and why
+
+00:22:10.050 --> 00:22:13.980 position:63%
+the company exists.
+So you say the goal is to keep humans in
+
+00:22:13.980 --> 00:22:17.220 position:56%
+the loop, but is there ever a point
+where humans don't need to be in the
+
+00:22:17.220 --> 00:22:18.990
+loop?
+And then what happens?
+
+00:22:19.920 --> 00:22:24.660 position:63%
+It is it is possible.
+Um, it's it's more about aligning at the
+
+00:22:24.660 --> 00:22:27.810
+point.
+It's more about aligning intent and
+
+00:22:27.810 --> 00:22:33.830 position:59%
+aligning values.
+Uh, but if you, if you sort of reduce,
+
+00:22:34.130 --> 00:22:41.210 position:59%
+uh, progress to removing humans from
+this, uh, loop of development already,
+
+00:22:41.420 --> 00:22:48.620 position:63%
+now, then I see very little future
+possibilities that we can get this right
+
+00:22:48.620 --> 00:22:51.320 position:58%
+in the future when I systems are even
+more capable.
+
+00:22:51.680 --> 00:22:59.720 position:63%
+And so I think the more likely path and
+more durable path to, to advance AI in a
+
+00:22:59.720 --> 00:23:06.020 position:63%
+way that, um, enables and advances
+civilization is by keeping humans in the
+
+00:23:06.020 --> 00:23:11.630 position:59%
+loop, uh, for as long as we can and
+really making sure that this period is
+
+00:23:11.630 --> 00:23:13.700
+actually very meaningful.
+Mhm.
+
+00:23:14.150 --> 00:23:17.390 position:59%
+You've raised a lot of money.
+There's great expectations if anything
+
+00:23:17.390 --> 00:23:22.160 position:58%
+is clear from, you know, the last few
+months in, in AI news.
+
+00:23:22.370 --> 00:23:26.390 position:59%
+Uh, there are some
+you know, it's a cutthroat competition
+
+00:23:26.390 --> 00:23:28.990
+out there.
+Do you think you have that killer
+
+00:23:28.990 --> 00:23:34.150 position:63%
+instinct to take on OpenAI and anthropic
+and meta and Google and China and acts
+
+00:23:34.690 --> 00:23:37.960
+like
+it's it's a competitive world.
+
+00:23:38.230 --> 00:23:41.680 position:56%
+It is extremely competitive.
+And, uh, yeah, we did raise a lot of
+
+00:23:41.680 --> 00:23:42.940
+money.
+We're proud of that.
+
+00:23:42.940 --> 00:23:46.240
+But that's that's not any big
+accomplishment.
+
+00:23:46.270 --> 00:23:48.640 position:61%
+We didn't set out to break some sort of
+record.
+
+00:23:49.060 --> 00:23:54.400 position:59%
+Um, it's really what you do with that.
+And, uh, and, and it's we're not a
+
+00:23:54.400 --> 00:23:57.940 position:61%
+normal company.
+And so we do need a lot of capital, uh,
+
+00:23:57.940 --> 00:24:03.190 position:58%
+in order to build the infrastructure,
+the foundations of science and all
+
+00:24:03.190 --> 00:24:10.450 position:63%
+that's required to actually have a claim
+at, uh, building frontier AI systems
+
+00:24:10.540 --> 00:24:17.080 position:61%
+that are differentiated.
+Um, and so I think that part in itself,
+
+00:24:17.140 --> 00:24:21.610 position:61%
+um, is not unique.
+And, yeah, in terms of killer instinct,
+
+00:24:21.610 --> 00:24:27.240 position:61%
+I would say that's not really what
+motivates me, um, to, you know, uh, uh,
+
+00:24:27.250 --> 00:24:30.910 position:61%
+look, I think there's actually a lot of
+room we're building.
+
+00:24:31.600 --> 00:24:37.720 position:61%
+Uh, we're building a technology that
+has, you know, infinite, uh, potential.
+
+00:24:38.350 --> 00:24:44.290 position:61%
+And I think that is going to be hard to
+capture all of that potential.
+
+00:24:44.740 --> 00:24:51.210 position:63%
+And what motivates me is, um,
+really capturing part of that potential,
+
+00:24:51.220 --> 00:24:56.410 position:61%
+creating, uh, useful things in the
+world, bringing the technology into the
+
+00:24:56.410 --> 00:25:03.160 position:61%
+world in a way that's, uh, useful and
+increases human agency and advances our
+
+00:25:03.160 --> 00:25:09.280 position:63%
+civilization.
+I think, uh, you know, there is there is
+
+00:25:09.280 --> 00:25:12.480 position:61%
+healthy competition, and competition is
+good.
+
+00:25:12.490 --> 00:25:16.900 position:56%
+It actually, like, creates better
+products and better technologies for
+
+00:25:16.900 --> 00:25:19.540
+people.
+It raises the bar in many ways.
+
+00:25:19.900 --> 00:25:25.540 position:58%
+Um, and and, you know, I, I respect a
+lot of the companies that, that are
+
+00:25:25.540 --> 00:25:28.710
+doing this.
+Uh, but my my motivation is not
+
+00:25:28.710 --> 00:25:33.420 position:61%
+necessarily day to day.
+When I wake up in the morning, I am not
+
+00:25:33.420 --> 00:25:35.610
+thinking about how to kill the
+competitor.
+
+00:25:36.820 --> 00:25:44.010
+Uh, now that.
+Um, you said you plan to release a
+
+00:25:44.010 --> 00:25:47.250
+preview later this year.
+How far along are you?
+
+00:25:47.520 --> 00:25:51.190 position:63%
+What will we see with all of these other
+companies going public?
+
+00:25:51.210 --> 00:25:55.020 position:59%
+Do you think they'll be distracted and
+you have a little more room to run?
+
+00:25:56.070 --> 00:26:02.280
+Um, we're we're on our own path.
+Or, of course, the competition is
+
+00:26:02.280 --> 00:26:06.300 position:63%
+fierce, and we have to move quickly.
+But it's important to balance that with,
+
+00:26:06.690 --> 00:26:12.090 position:59%
+you know, durable, long term progress.
+I care a lot about, uh, the decisions
+
+00:26:12.090 --> 00:26:16.740 position:58%
+that we make today being good for our
+long term success.
+
+00:26:17.250 --> 00:26:24.710 position:61%
+Um, and, and that's something that, um,
+I really try to instill in the day to
+
+00:26:24.710 --> 00:26:27.080 position:61%
+day.
+There is a lot of details here with how
+
+00:26:27.080 --> 00:26:31.340 position:61%
+you build the team, how you build the
+infrastructure and really resisting the
+
+00:26:31.340 --> 00:26:37.370 position:56%
+short term pressures.
+Um, and in some cases you do have to
+
+00:26:37.370 --> 00:26:42.470 position:56%
+kind of embrace the pressure.
+But yeah, I would say for us this is
+
+00:26:42.470 --> 00:26:48.110 position:58%
+just a first step.
+Um, and in showcasing the interaction
+
+00:26:48.110 --> 00:26:53.060 position:63%
+models and making it more concrete, what
+it is that we think about and care
+
+00:26:53.060 --> 00:26:56.240 position:56%
+about.
+Um, and I expect the next few months
+
+00:26:56.240 --> 00:27:00.920 position:58%
+and, uh, to, to show increased
+capabilities for us to show increased
+
+00:27:00.920 --> 00:27:08.090 position:63%
+capabilities on the model side, um, more
+um, products in this direction and, uh,
+
+00:27:08.090 --> 00:27:12.140 position:59%
+and make it more obvious, like really
+letting the technology and the product
+
+00:27:12.170 --> 00:27:16.700 position:58%
+speak for themselves.
+So a thinking machine succeeds beyond
+
+00:27:16.700 --> 00:27:21.020 position:59%
+your wildest expectations.
+What exists in five years that doesn't
+
+00:27:21.020 --> 00:27:27.050 position:63%
+exist today?
+It is extremely difficult to predict the
+
+00:27:27.050 --> 00:27:31.040
+future.
+Uh, but I would say that the most
+
+00:27:31.040 --> 00:27:39.260 position:61%
+important thing would be, um, to create
+a future where regardless of how how
+
+00:27:39.260 --> 00:27:47.240 position:63%
+many of hours of work we do day to day
+or week to week, uh, we feel a sense of,
+
+00:27:47.660 --> 00:27:56.180 position:61%
+um, agency, a sense of dignity and, um,
+possibility about the future.
+
+00:27:56.690 --> 00:28:03.380 position:63%
+And I hope that will continue to advance
+the capabilities that will enable a lot
+
+00:28:03.380 --> 00:28:07.400 position:58%
+of progress.
+And we'll do it in this way that, um,
+
+00:28:07.850 --> 00:28:16.250 position:63%
+we'll keep we'll keep us hopeful and
+also with a sense of possibility that we
+
+00:28:16.250 --> 00:28:20.420 position:59%
+can drive about the future.
+Well, here's to less impossibility and
+
+00:28:20.420 --> 00:28:22.490
+more possibility.
+Thank you.
+

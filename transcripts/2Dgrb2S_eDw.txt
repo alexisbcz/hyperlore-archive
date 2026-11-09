@@ -1,0 +1,1282 @@
+[0] [Music]
+[9] this is Cupa go for June 6th 2023 keep
+[13] up to date with the important happenings
+[14] in the go community in 15 minutes per
+[17] week on the spot we're never taking up
+[19] more time I'm your host shad and I'm
+[22] your host Jonathan Hall and this show is
+[24] sponsored by coab a developer friendly
+[26] serverless platform that helps you
+[28] deploy your apps globally stick around
+[30] to the ad break to hear more about them
+[32] and even after the ad break for an
+[34] interview with their CEO Yan yeah good
+[37] interview thanks goab all right what's
+[39] up Jonathan right off the bat new go
+[41] releases out any moment now I keep
+[44] hitting the refresh button oh is that
+[46] why the call keeps
+[48] re by the time you read listen to this
+[51] almost certainly go
+[53] 1.2.5 and 1.1 19.10 will have been
+[56] released there are security releases we
+[58] don't know what's in them yet next week
+[60] we'll know so on the next episode we'll
+[62] tell you what's in those releases that
+[63] you already have in front of you by the
+[65] time you hear us speaking right now yeah
+[68] definitely really happy to keep seeing
+[70] these uh you know small patch security
+[74] releases um even though we're working on
+[77] 121 you know they're not bucketing them
+[79] into the next version they're still
+[80] maintaining the current ones you know
+[82] keeping the Project Life Cycle promise
+[84] which is super awesome thanks to the
+[87] researchers who found it yes let's talk
+[89] talk about proposals and boy do we have
+[91] a few we should do um so first one is go
+[95] templates I love go templates because I
+[97] use them in my Hugo site which is also a
+[99] good place to mention that we're going
+[101] to talk about the recent Hugo releases
+[103] which pissed me off but that's later so
+[107] uh templates added a feature that was in
+[109] my opinion severely missing I always had
+[111] to hack around around it which is elding
+[115] uh else with text template has a thing
+[119] where you can do if and else if and end
+[123] right and that's a really useful way to
+[126] simplify how if else chains look and
+[130] just do a ton of conditions around
+[133] templating with conditions like if I
+[136] want this to include that thing include
+[138] it else don't include it but there
+[141] wasn't any counterpart for wi which is
+[144] something I always use in my pipelines
+[146] because it helps me scope down the the
+[148] variables I'm using for templating mhm
+[151] this proposal which has been accepted
+[153] it's been on our backlog for a while and
+[155] we never got to talk about it which is
+[157] great because now it's accepted so we
+[159] can talk about it as accepted just adds
+[161] all these cases uh with a ton of you
+[164] know caveats and discussion around it
+[166] that's pretty interesting not not too
+[168] many comments but very deep comments and
+[171] yeah it was added to the proposals
+[174] meeting about 3 weeks ago got accepted
+[177] last week um so definitely go check it
+[179] out if you're using templating and if
+[181] you like me hacked your way around it
+[184] with really badl looking templates be
+[186] sure to add you know refactoring to your
+[189] uh backlog cuz the new templates are
+[192] going to look beautiful with this uh LS4
+[195] wi thing yeah I'm looking forward to it
+[198] also what other proposals do we have on
+[200] the table yeah next up we have a couple
+[203] that are not accepted yet but they're I
+[205] mean the first one is officially and
+[206] likely accept status and that is to add
+[208] a new rule to go vet to warn you when
+[213] you call time. sense in a defer
+[215] statement uh basically they discovered
+[217] hundreds of cases where this is being
+[219] done incorrectly and the thing is that
+[221] time. sense is depending on how you
+[223] invoke it but if you invoke it for
+[224] example in a fm. printf which is a
+[227] common use um to show how long it took
+[229] for the function to execute that time.
+[232] sense is actually called at the time the
+[234] defer is invoked not later when it's
+[237] executed so you're actually going to
+[239] outputting took zero seconds all the
+[241] time to to execute these statements so
+[243] it's just a very common anti- pattern
+[245] easy bug so the proposal is to add that
+[247] to the to go Vette so it'll warn you and
+[250] I'm I'm sure this will be accepted I
+[251] mean unless unless somebody comes
+[254] analysis right yeah unless somebody
+[257] comes up with some really surprising
+[258] reason that this would cause a problem
+[261] this will be accepted soon yeah I've
+[263] been uh shot in the foot but this a very
+[267] specific foot gun already yeah so happy
+[269] to see it in govette y and then next on
+[272] the list um another one new proposal I
+[274] expect it will also be accepted uh it
+[276] probably has a little more discussion
+[278] around it is the idea to add a generic
+[280] nullable type to the database SQL
+[282] package you may already be familiar with
+[285] I think they have null string and maybe
+[286] n bu and they have several of these but
+[288] the idea is to make now that we have
+[289] generics why not just create a single
+[291] one uh that can be null bracket T that
+[294] represents any nullable type so that's
+[296] the discussion um of course there's a
+[298] lot of nuance that goes on into
+[300] something like that which is probably
+[302] why it hasn't been done yet the the
+[304] thing that worries me the most is you
+[307] have the type specific things in in your
+[310] head you map them to the type specific
+[312] things in the database very few
+[315] databases actually support generic
+[317] columns right you define your table you
+[319] have a strong schema and end of the day
+[322] many times that's what you want
+[323] especially if you're using like POS or
+[325] relative you want the strong schema and
+[328] then translating it to generic and then
+[330] back I'm just worried that it's going to
+[331] make everything a bit less comfortable
+[334] less ergonomic to use um even though
+[337] it's going to be shorter it's going to
+[338] be less lines of code it's going to be
+[340] less uh characters but I'm afraid it's
+[342] going to make aesthetic analysis and
+[344] perhaps code review a bit more obscure
+[348] so like any generic proposal I'm I'm I'm
+[350] on the fence I'm not sure it will be
+[352] accepted and even if accepted I'm not
+[354] sure how many people are going to enjoy
+[356] using it yeah but if you have any
+[358] specific examples if if you use database
+[360] SQL or you know anything that uses that
+[362] like bun up trays or any other like SQL
+[367] uh omm thingy that's a database SQL
+[370] compliant go contribute to this
+[372] discussion I'm sure that you know your
+[375] specific example from your specific
+[376] company is interesting looks like
+[379] there's already quick implementation cuz
+[380] it's simple it's just generics and not a
+[382] bunch of uper votes so people are behind
+[385] this maybe I'm just an an old scared guy
+[388] who's scared of uh
+[390] of generics right everybody becomes one
+[393] eventually um well let me know when you
+[396] pass that uh
+[398] threshold all right let's talk about
+[400] some releases right yeah can I start
+[403] with my complaints okay tell me you
+[405] broke my template what last last week we
+[408] talked about Hugo and we poked some fun
+[410] that they released a bunch of uh patch
+[413] fixes like seven P patch fixes but even
+[417] the base change broke my template now
+[419] this is my fault because I was using the
+[421] site parameters incorrectly and it was
+[423] very easy to fix so uh no no harm no
+[427] foul but it it just really tickled My
+[429] Funny Bone that we talked about the
+[431] releases so much and then they broke my
+[434] side and then they released another like
+[437] minor version so
+[440] 0.113 is out uh right now um Hugo just
+[444] coming out with a whole bunch of
+[447] releases I think almost every week uh or
+[450] every two weeks recently the big new
+[453] feature this time is that you can now
+[454] run the Hugo server with https mode I
+[458] don't know who does that but I guess if
+[460] you ever wanted to run the Hugo server
+[461] in production now it could manage your
+[463] certificates for you so for me it's like
+[466] it's useful cuz I'm running my CTF like
+[469] a
+[470] challenge uh from Hugo like the levels
+[472] and some of the levels referred to the
+[474] site and when I'm developing locally I
+[476] have to like change the you know base
+[478] URL to HTTP instead of HTP just changing
+[481] the host right now I could do like Hugo
+[484] server trust which also I really like
+[486] that Command right it sounds nice hugos
+[489] server
+[490] trusts it's almost it has a marketing is
+[493] quality to it right hugos server you can
+[496] put your insurance with
+[499] us this episode sponsored by Hugo
+[501] Insurance yeah Hugo server will never
+[504] let you down if your Hugo server runs
+[507] for more than 4 hours your devops
+[510] guy uh no I'm just kidding uh but yeah
+[514] uh TLS support for Hugo server if that's
+[516] useful to it's obviously useful for
+[518] someone because they developed it if
+[520] that's useful for you update and then
+[522] make sure your site Works mhm what else
+[525] has been released earlier this week uh
+[527] SPF 13's Viper was updated with version
+[531] 1.16 I would just call this a grab bag
+[534] of bug fixes and uh nice quality of life
+[538] fixes I mean they updated to one go 120
+[540] in the build matrix it's not a big deal
+[543] um they added some logging changes um
+[546] nothing really exciting in my view that
+[549] just jumps out I I guess maybe the the
+[551] closest thing to there is they support
+[553] subpar inheritance and I don't know
+[555] exactly what that means I mean I can
+[557] figure out like if I think about it um I
+[559] don't think I've ever needed that
+[560] because I certainly haven't missed it
+[562] when I used Viper but yeah check it out
+[564] new version of Viper it's a very popular
+[566] package it's one of the like top 20 most
+[568] popular go package I think in the world
+[570] so I imagine a lot of people will be
+[571] updating this within the next few weeks
+[574] and talking about you know popular
+[576] packages goink C lint is also out um
+[580] which is great they added a bunch of
+[583] linters which is already like they added
+[585] one linter called zero log lint and some
+[589] tag Aline linter so two great linters
+[591] which I've added you know manually to my
+[594] some of my projects specifically zero
+[597] log lint is pretty funny Zer log is zero
+[600] allocation logger which a lot of
+[601] projects want to use because it's a fast
+[604] logging like logging framework I think
+[606] it's the fastest I'm careful with my
+[609] statement because in go it always seems
+[611] like someone can do it faster right but
+[613] it is fast and because it's zero
+[617] location and very very fast it doesn't
+[619] have a lot of guard rails that's like
+[621] the tradeoff if you're using something
+[622] like zap or or gokit loggers everything
+[626] can be checked at compile time and
+[627] everything is fine with zero log you can
+[631] sometimes forget to just log the thing
+[633] that you worked hard with you know you
+[635] did like info do whatever and in the end
+[638] you end up not logging the thing just
+[640] because you didn't call message or do
+[642] send or dispatch or whatever uh so this
+[645] linter catches that which I think is
+[648] really it's a great static analysis
+[650] guardrail around uh a really strong
+[653] trade-off like you don't want these
+[654] things as part of the library because
+[656] you want it to be super fast and with
+[658] zero allocation so you you can't check
+[659] it at compile time but you know go goang
+[663] C lint has become part of the pipeline
+[665] for almost any project so I think it's
+[668] it's a really good trade-off uh for the
+[671] fast uh you know fast logging you get uh
+[675] and also a bunch of uh dependency
+[677] bumping and and migrations and features
+[680] and and G mopolitan linter which
+[683] I'm okay I looked at that one for a
+[685] while I don't like I didn't use it so I
+[687] have a complaint it's my turn to
+[689] complain you complain about Hugo I
+[690] haven't complained about go lint 153 and
+[693] that is that they bumped the goep guard
+[696] to a new major version which broke my
+[698] entire lenting cap uh capabilities
+[700] suddenly every file was giving hundreds
+[702] of errors and it turns out it's not a
+[704] big deal but it turns out that the the
+[706] default configuration for goep guard has
+[708] completely changed and so you have to go
+[710] in and change your configuration format
+[712] for that um in my case I actually just
+[713] disabled it for the moment and I'll
+[715] reconfigure it later for the moment for
+[717] the moment this is where the you know
+[720] the narrator he did
+[724] not the moment lasted for eternity yeah
+[727] we we all have that one lter that got
+[729] away right it's like a Kevin Smith
+[732] movie Chasing
+[734] goolan starring Matt Damon anyways um it
+[738] broke it but it gave you so much more
+[740] benefit over the years so we'll forgive
+[742] it right yeah yeah was we like you uh go
+[745] ly Island uh and last on the release uh
+[748] like at least interesting releases for
+[750] this week um sorry every other project
+[753] is burn Sushi TL my favorite
+[756] configuration format by a country mile
+[759] it's my second favorite after
+[762] environment
+[765] variables yeah you you just went over
+[767] the line of oh I don't like new things
+[770] I'm an old yeah you went over the line
+[772] but I like toml and so yeah uh bur Sushi
+[775] toml version 1.3.0 and .1 were both
+[779] released uh this last week um the big
+[781] feature is they added support for toml
+[783] 1.1 which is the upcoming toml spec it
+[786] adds new capabilities um so you can
+[788] enable that with an environment variable
+[790] uh if you want to start experimenting
+[792] with a new toml spec um a big shout out
+[794] to my former colleague who was
+[795] apparently the maintainer of this
+[796] project uh Martin he's the one who
+[799] released this I didn't realize he was
+[800] doing this so big shout out to Martin if
+[801] you're listening thanks for your work on
+[803] burnt Sushi toml I appreciate it yeah
+[806] it's pretty cool uh release with a
+[808] pretty cool change log because when you
+[810] look at it it's like you can use Unicode
+[812] in bare Keys um with like weird A's and
+[816] weird e and that means I could use
+[818] Hebrew in my configuration uh documents
+[821] which for me Isn't a great feature uh
+[824] but when I teach many times I teach
+[827] people uh you know in Israel their
+[829] English is not their first language
+[830] sometimes their English is not that
+[832] great and very complicated you know
+[834] nested uh tables within configuration
+[837] are hard enough to you know mentally
+[840] hold in your head um and if you do it in
+[842] your second language is even harder so
+[845] now I can do it in Hebrew which is a
+[847] super cool feature for that tiny
+[849] specific use case um although I'd hate
+[852] to see configurations use anything other
+[855] than
+[855] asky you know things for keys in reality
+[858] like in production so these are all the
+[860] releases we found interesting this week
+[862] like every week we have a bunch of uh
+[865] ones we had to leave out and we also
+[867] have a bunch of commun Comm things that
+[869] we had to leave out but I had to mention
+[872] this one blog post from flow.com where
+[875] they talked about uh improving the
+[878] observability of and you know they
+[880] specifically talked about performance of
+[883] goang services and unlike some cases
+[885] where they talk about oh we had this
+[887] super specific thing happen to us and
+[889] this is the you know how we fixed it
+[892] they go really over all the three
+[894] pillars of of Zer ability logs metrics
+[897] traces profile
+[899] and how all of them can talk together so
+[902] you know how people are silver bullet
+[904] all you have to do is add traces and
+[906] turn on that this grafana dashboard or
+[908] this whatever and you're good you know
+[911] everything and that's never the case
+[913] right sometimes you need logging
+[915] sometimes you need metrics sometimes you
+[916] need traces and sometimes you need
+[918] profiles and what I found usually
+[920] happens in Project is that people sort
+[922] of develop these things separately even
+[924] if it's a part of a general push towards
+[928] observ ability right and they don't talk
+[930] to one another like there are separate
+[932] dashboards for each one and you have to
+[934] jump between you have like four tabs
+[936] open right um one for metrics one for
+[939] logs one for traces and one for slack
+[941] where you're like oh don't worry I'm
+[943] looking at it don't worry don't worry
+[944] sorry sorry and I really like this blog
+[948] post because they talk about how you can
+[949] connect all these uh pillars to one
+[952] another very concretely it's not like
+[954] high level whatever do screenshots
+[957] configurations uh everything you need uh
+[961] recommendations of tools and it's not
+[963] even that long a read so I really
+[965] recommend checking it out especially if
+[966] you're doing this push at your company
+[969] or your project right now and the
+[971] appendix is also pretty weird the
+[972] appendix has an AI driven blog post
+[975] editor note that was left I guess by
+[978] chat GPT or whatever they used I think
+[980] they used the Vinci model or whatever
+[982] where they say use AI to edit this your
+[985] blog post and here's the prompt we used
+[988] so if you're a technical writer or you
+[991] have some blog post or you have some
+[992] content or you have a newsletter like
+[994] people we've interviewed or you have uh
+[997] courses like people we've interviewed
+[999] maybe you can take this prompt um you
+[1001] know to edit your blog post and get them
+[1004] out faster interesting yeah yeah I I
+[1006] found I read it and it read really
+[1008] really well and then I read the appendex
+[1010] and I was like at least you're admitting
+[1012] it cuz everybody's running their content
+[1014] through AI right now it's not like
+[1015] anybody's not doing it but at least
+[1018] least they gave the note and they even
+[1019] gave the prompt which was super cool to
+[1021] see awesome well I think that wraps us
+[1023] up for the news 15 minutes on the dot
+[1026] plus our minus a really big
+[1029] dot yeah stick around for our great
+[1031] interview with gan from coab see
+[1035] [Music]
+[1040] you welcome to our ad break capao is
+[1044] partners with and sponsored by coab a
+[1047] developer friendly serverless platform
+[1049] to deploy apps globally no Ops servers
+[1053] or infrastructure management like we
+[1055] called it the last episode tinier devops
+[1059] yeah and you know I'm running a client
+[1061] project there uh everybody maybe lower
+[1064] your volumes if you're listening at the
+[1066] office it's a python workload I'm sorry
+[1069] I'm sorry I'm sorry uh but even for
+[1073] python even for this horrible framework
+[1076] it works really really fast I I
+[1078] specifically use it to you know host my
+[1080] API that has like a chat GPT thing
+[1083] behind it like a agent that I'm
+[1085] developing uh but it can be used for a
+[1087] bunch of stuff web applications event
+[1090] driven server list functions background
+[1092] workers and even cron jobs um and it's
+[1096] been built by some very interesting
+[1098] people like Yan who we talk to and
+[1101] you're going to hear the interview with
+[1103] him pretty soon how much are you paying
+[1105] for for your coab right now um nothing
+[1108] I'm using it for free uh since I'm still
+[1111] using just one workload it's just a POC
+[1114] but honestly I'd be happy to use it uh I
+[1116] showed it to the client I showed gave
+[1118] them the specs and they were like yeah
+[1120] I'm really happy to pay for it and you
+[1122] know if they don't have what you need
+[1124] right now you can go to the road map
+[1126] page and just upvote they're very public
+[1128] and you know user facing about it I just
+[1131] up voted a bunch of stuff that you're
+[1133] going to hear about in the interview
+[1134] sort of abused my power as the media to
+[1137] push my agenda uh and add a he admit it
+[1140] I Relish in
+[1142] it I really hope that you know one day a
+[1146] proposal is going to be as heard on Capa
+[1148] go uhuh we have to add uh you know well
+[1152] I don't want to give out my feature that
+[1153] I would add to go but that thing so
+[1156] anyways check out coab you can get a
+[1158] custom URL running in seconds it's
+[1160] really really easy uh especially if you
+[1163] have a simple go project in GitHub repo
+[1165] an overall great onboarding experience
+[1167] thanks for sponsoring this show what
+[1170] else should we talk about yeah speaking
+[1172] of you throwing your weight around I I
+[1173] understand you're starting a new job and
+[1175] we're going to switch our recording day
+[1177] yeah uh so I'm
+[1179] starting I'm working out man I'm trying
+[1183] I've just been back from a wedding it's
+[1184] not it's just uh it's you know
+[1187] appetizers fat you've been partying for
+[1188] a week you come back here like things
+[1190] are my way now
+[1192] yeah uh it's it's my way or the highway
+[1195] same as go path exactly so so uh yeah
+[1199] I'm starting a full-time job I'm super
+[1201] hyped about it we're probably going to
+[1202] talk about how I feel about it and how
+[1204] it impacts my view of go um in the
+[1208] upcoming episodes but the recording is
+[1211] going to move to the weekends cuz I'm
+[1213] working I'm fully committed I'm hyped I
+[1215] really want to crush this um so we're
+[1218] moving to Fridays that's me that means
+[1220] you're going to last next week without
+[1222] us until the end of the week we're going
+[1223] to miss a few days uh maybe the episode
+[1226] will be a bit longer just to make up for
+[1228] the few days we missed and starting next
+[1230] Friday we're going to try to do Fridays
+[1233] for the recording yep so hope that
+[1235] doesn't mess anybody up too much your
+[1237] Monday drive or whatever yeah yeah hope
+[1239] that doesn't mess up your Monday morning
+[1241] drive you can always wait till the next
+[1242] Monday to listen if you want to um the
+[1244] news will be three days old by that
+[1246] point but you know if that if that's
+[1247] what you need for your Monday warning
+[1248] then I understand yeah but it's it's
+[1250] only one business day right only one
+[1253] business day so it's it's fine and by
+[1255] the way apologies for this episode
+[1257] coming out late is is sh just mentioned
+[1258] he was at a wedding and that's why we
+[1260] didn't record yesterday and we forgot to
+[1262] announce that until after the episode
+[1264] was live so sorry about that but
+[1266] hopefully this this day and a half so
+[1268] delay won't cramp your sty too much
+[1270] shout out to the beautiful Gabriel and
+[1271] Romy who got married in a beautiful
+[1273] wedding in Rome wow I love you guys um
+[1277] lastly uh check out what I have
+[1280] here yay cup go cup of go yeah smells
+[1285] pretty good as well right now just cuz I
+[1287] uh it's uh with vanilla milk ooh I I
+[1292] like you said I'm throwing my weight
+[1294] around I'm adding more with this sugary
+[1296] drink uh but yeah go get your show swag
+[1299] we have some beautiful people uh with
+[1302] some beautiful selfies uh and Majestic
+[1305] beards uh showing up on our slack and
+[1308] sharing their their enjoyment of the
+[1310] cups nobody's died of like I don't know
+[1312] lead color poisoning yet so they seem to
+[1314] be safe yep I've been drinking out of
+[1316] them nonstop uh and you you can check
+[1318] them out at store. cupo go.d and you
+[1322] don't need a beard beards are cool but
+[1324] beardless people are also welcome to
+[1326] listen and send selfies that's perfectly
+[1328] acceptable we accept all uh any and all
+[1332] uh nullable tea hair types and uh and
+[1336] shape faces and whatever we're very
+[1338] opinionated about go and coffee but
+[1340] everything else is fair game so yeah
+[1342] also we'd love to hear uh if you have
+[1344] any feedback about the show uh you can
+[1347] find us on the cupo slack Channel cupo
+[1350] Kabab case on the go for slack you can
+[1351] email us at newsup ao. DAV or head over
+[1354] to CAG go.d on the web and you can find
+[1356] our details there um contact details
+[1359] social media profiles all those fun
+[1361] things we'd love to hear from you leave
+[1363] a review uh especially if you like the
+[1365] show but even if you don't you can leave
+[1367] a review on iTunes or wherever you
+[1368] listen to your podcast thanks a lot uh
+[1371] stick around CU we're gonna talk to Yan
+[1372] from Co the CEO talking to Big
+[1375] co-founder head honcho yeah he's the guy
+[1379] thanks a
+[1380] [Music]
+[1384] lot can I kick it off please wow I'm
+[1387] tired from that adbreak and I'm I'm I
+[1390] even have my coffee here and everything
+[1392] but I'm just I'm beat you know cuz
+[1394] deploying software is so hard and I do
+[1396] so much of it yeah I wish someone was
+[1399] here to help me deploy stuff super fast
+[1401] that would be great oh wait hi yeah hey
+[1404] hey guys I wonder how many times we can
+[1407] do gag before we need to find a
+[1409] different segue but hi Anan Welcome to
+[1412] our show everybody say hi to Yan don't
+[1415] actually cuz you're on a bus listening
+[1416] to a podcast and that'll be really
+[1418] awkward Yan how about you tell us about
+[1420] yourself yes thanks for for having me um
+[1423] I'm happy to be here today with you guys
+[1426] um I'm so I'm the co-founder and CEO of
+[1430] kab um and um we've been working on on
+[1434] this for a little while now we've
+[1436] started with this version of the
+[1437] platform two years
+[1439] ago um and um yeah we have a passion for
+[1443] um Cloud infrastructure I would say uh
+[1446] over and we've been in in a in the go
+[1448] space for a little while because like
+[1451] our previous company um was the main
+[1455] stack was in in Pyon but at some point
+[1458] in 2015 we started adding goaling in the
+[1461] mix um and um yeah and when we decided
+[1464] to go um to build c um the go to
+[1468] language was go so that's a bit of the
+[1472] story well to anyone who doesn't know
+[1475] coab is our partner the show's partner
+[1477] and sponsor uh but other than that the
+[1480] use go in the back end which hopefully
+[1483] we can dive deep even more uh I love to
+[1487] hear that you moved from python uh same
+[1489] like Dropbox did uh and uh secret same
+[1494] thing I'm hoping to do in my next
+[1496] gig but before that one thing I'd like
+[1500] to ask what is coib what does it mean
+[1503] what does it mean so I mean as a company
+[1505] we basically let people developers and
+[1508] businesses deploy applications um we um
+[1512] take a a repository uh and actually a
+[1516] lot of different languages and and since
+[1518] recently you can even have a doile in
+[1520] your repository and we will build the
+[1523] application and transform it into a
+[1525] container and run it on inside of micro
+[1528] VMS on top of servers so basically we
+[1531] take care of all the infrastructure
+[1532] management and the build process too so
+[1536] you can easily deploy your application
+[1538] without having to think about
+[1539] infrastructure and um yeah we have a
+[1541] bunch of of cool features like deploying
+[1543] across the world this kind of stuff um
+[1546] and um yeah that's a key thing we are
+[1549] doing I would say cool and what does the
+[1551] word quab actually mean that's a a fun
+[1555] story but uh it's actually uh so it
+[1558] doesn't mean much in fact in the sense
+[1561] that it's um we needed a a name to
+[1564] incorporate the company uh and so the
+[1567] thir last letters y EB are our first um
+[1573] name first letters uh it's Yan Edward
+[1576] and Bastian uh we rers and at some point
+[1580] Edward added into the mixico which
+[1583] landed into coab where Doom was
+[1585] available and um it was pretty conven
+[1588] so but yeah that's the story of how we
+[1590] figured out the name we wanted something
+[1592] short and it's so you already describe
+[1596] uh the high level what coab does um can
+[1599] you help uh plant it in my mind and our
+[1602] listeners Minds like it who are its main
+[1604] competitors or like is it a replacement
+[1606] for kubernetes is it a replacement for
+[1609] uh you know when would I use coab
+[1610] instead of something else so it's a f
+[1614] question um kubernetes so we basically
+[1617] looking to um we are believer that t is
+[1620] going to disappear in favor of higher
+[1622] level products uh that's a little bit of
+[1625] what we are advocating for um and um we
+[1629] tend to compete with like Legacy players
+[1631] like
+[1632] Heroku but um who didn't really adapt to
+[1635] the changes in the market so they didn't
+[1638] really add up everything you would
+[1640] expect today in terms of new kind of
+[1644] features like service Mees or this kind
+[1646] of of things um
+[1648] and in terms of performance you're not
+[1649] there either so we're competing with
+[1652] this Legacy players on one hand and on
+[1655] the other hand on the K side we're huge
+[1657] believer that basically K is going to be
+[1660] eaten by higher level features and even
+[1662] if it sticks uh it's going to be managed
+[1665] mostly by um service providers like this
+[1668] okay um so yeah we're trying to make
+[1672] sure that you don't need to mess with it
+[1674] and that you have something easier to
+[1675] use that's our value proposition I'm
+[1677] curious to hear if you don't mind if we
+[1679] could sort of take the covers off a
+[1681] little bit what does coab look like
+[1683] underneath since we're all software
+[1685] developers here are you able to talk
+[1686] about the architecture a little bit and
+[1688] how the system works yeah so basically
+[1692] we rely on a bunch of Open Source
+[1693] Technologies which are actually mostly
+[1696] written in go and that's one of the
+[1698] reason we actually went with go um
+[1700] because we rying on so right now we are
+[1702] using um on the orchestration side Nomad
+[1705] for to basically orchestrate customer
+[1708] workloads um so which is from if you're
+[1711] not familiar with it it's like an
+[1714] alternative kind of of ashik of
+[1716] kubernetes sorry made by ashic comp and
+[1719] the key asset from Nomad is that it's
+[1723] it's small Loosely coupled so you don't
+[1725] have a the ecosystem is you don't have
+[1728] to take everything which comes with
+[1730] kubernetes so you have more flexibility
+[1732] into assembling different Technologies
+[1734] so we use firecracker for the mic RMS uh
+[1738] which is an alternative KVM for virual
+[1742] machines but lighter so that you have
+[1744] faster boots containerd which is
+[1746] actually running the containers inside
+[1749] of the firecracker micro VMS and on the
+[1752] networking side we are using Kuma which
+[1754] is orchestrating Envoy proxies and SS
+[1758] for the network cool so a question
+[1761] between microv VMS and containers cuz
+[1763] you said first of all you said I'm
+[1766] hoping kubernetes will disappear spe and
+[1768] I don't know pretty much half our
+[1769] audience just threw their phones out the
+[1771] window cuz the their entire career rests
+[1774] upon uh configuring these yaml files but
+[1777] uh I'm there with you it's annoying but
+[1780] um when you choose containers your I
+[1784] guess security is between app right but
+[1786] I'm still sharing the same kernel from
+[1789] my understanding microv VMS offer even
+[1792] stronger isolation right because they're
+[1794] basically running uh their own virtual
+[1796] machine
+[1798] did you do it because of the quicker
+[1799] startup times or do you think security
+[1802] is something that your clients actually
+[1803] care about yeah I mean so you have a as
+[1807] you said you have a few different models
+[1810] uh in terms of customer workload
+[1811] isolation so you have this like before I
+[1816] would say like 5 years ago you probably
+[1818] had like the two classical models which
+[1820] are containers which are I mean internal
+[1823] virtualization with c groups um and um
+[1827] full-fledged virtual machines where KVM
+[1829] basically won the race if you look at
+[1832] bit before was then but it's kind
+[1834] OFA in favor of KVM and so when we
+[1837] started we had uh we are deploying
+[1839] containers because so when you deploy an
+[1842] application we built it into a container
+[1844] and we can also support basically
+[1846] running full containers so we had the
+[1848] two options we could use like c groups
+[1850] and more classical containers or we
+[1852] could use full VMS or and there is
+[1855] actually Alternatives we started
+[1856] actually with gvisor um if you're
+[1859] familiar with it which is an application
+[1861] Kel um and we shift it to fire cracker
+[1864] microv VMS because they are basically
+[1866] they increase like the isolation you
+[1868] have without like a a nit in term of
+[1872] performance so that's the cor story here
+[1875] we don't want to compromise on security
+[1877] uh because several customers are going
+[1879] to share the same physical machine and
+[1881] we are also trying to not compromise on
+[1883] performance so that's the best solution
+[1885] we' found now there cool how big is your
+[1889] team we're actually 17 people full time
+[1894] this St uh wow a micro team not just a
+[1897] micro VM that's impressive and we're
+[1900] actually even smaller in terms of
+[1902] engineering we're seven people in terms
+[1904] of injuring only full-time injuring um
+[1908] and uh so we have some because we were
+[1912] we are growing uh so uh we had some
+[1915] people on the other thing mention hiring
+[1918] side we have some full-time technical
+[1920] writers so um yeah I'm curious to hear
+[1924] if you don't mind um what gave you the
+[1926] idea to do this I mean you already
+[1928] mentioned Heroku and there's others have
+[1931] existed for a while you've talked a
+[1932] little bit about your unique um you know
+[1934] your unique positioning but what gave
+[1936] you the idea for this uh as as a Founder
+[1939] yeah where did the idea come from what
+[1940] was the driving force for starting a new
+[1942] uh new company rather than using
+[1944] existing service or or adopting cuberes
+[1946] or whatever so we have a a long story in
+[1951] um in Cloud infrastructure I would say
+[1954] um I mean I've started like uh building
+[1957] I started my career uh in um initially
+[1961] by building cloud service provider I
+[1963] built a first one which is called
+[1964] outscale which was um an alternative to
+[1966] AWS in
+[1969] 2011 then I built another one which is
+[1972] called scaleway which we spent six years
+[1974] building before starting cab uh and it's
+[1978] kill is actually like the second largest
+[1979] cloud service provider in France and
+[1981] yeah one of the top five in Europe so I
+[1985] think we have a it's fair to say that we
+[1987] have a a long history in there and we
+[1989] like this place uh so that's one thing
+[1992] um and um when we left so we didn't
+[1995] directly go in in with this ID um but um
+[2000] we were looking at actually um exploring
+[2004] our multicloud storage that was our
+[2005] first out and then and we basically
+[2008] looped back into simplifying um
+[2011] application deployment was just like
+[2013] it's what people were coming to us uh
+[2017] for um they were asking for this we had
+[2021] a service engine actually in first
+[2023] version of the product which was about
+[2025] like processing data and um but um
+[2028] people were coming with more classical
+[2031] workloads like API developments
+[2033] deployments sorry um and um yeah and we
+[2037] we moved to to this I would say because
+[2040] of the what the feedback we got and
+[2043] looking at the market there was no I
+[2045] mean yeah you have the main players and
+[2048] uh but there is no real solution which
+[2050] is compelling in terms of having a
+[2052] simple experience to deploy and also
+[2054] deploying globally I mean so one of the
+[2057] key thing today we have two locations
+[2059] live but the end game for us is to have
+[2061] 10
+[2062] locations uh shortly and then I grow to
+[2065] 25 so basically you click um a few check
+[2069] boxes or you do an API call with the
+[2072] right parameters and and your app is
+[2074] live in in 20 locations so that's the
+[2076] end game for
+[2077] us I'm currently my thing is deployed in
+[2080] Frankfurt uh which I guess is closes to
+[2083] where I'm at which is nice it responds
+[2085] fast but also we my C did Fast not just
+[2088] because your infrastructure is fast yeah
+[2090] I'm sure about it it's python so I'm not
+[2093] too happy about it but it's not my
+[2095] decision it's a client project um one
+[2097] thing I want to ask about is the road
+[2099] map so you have a ton of stuff set up
+[2102] already with a 7 person team which is
+[2105] just again super impressive but I see in
+[2107] the planned road map like stuff that's
+[2110] uh coming in the future very interesting
+[2112] requests resource usage suspending
+[2116] accounts a managed Pro like postgress
+[2119] instance which I I'm up voting because I
+[2121] really want it to happen um what feature
+[2125] do you want to actually prioritize
+[2127] you're the CEO so I guess maybe don't
+[2131] commit too much cuz if you say the
+[2132] team's going to actually do it but you
+[2134] know what's the magical feature that's
+[2136] lying at the bottom of the backlog
+[2137] you're never going to get to it but you
+[2139] really want it in so we're um heavy
+[2143] walking on on this question of of so
+[2145] manage manage P database right now um
+[2149] and because it's one of the key
+[2152] requirements you have when you deploy
+[2153] applications like um if you deploy a
+[2155] goaling a Pass App and you don't have
+[2158] any way to store your data it's kind of
+[2160] a pain so um yeah that's a key thing we
+[2163] are trying to push and but we have a lot
+[2165] of fun features related to that about
+[2168] like storing the data I mean to uh
+[2172] provide manage PR the key question is
+[2174] how do you uh what's happening behind
+[2177] the scene what is uh you have black
+[2180] storage how does your black storage work
+[2182] can you give that also to the users and
+[2185] do you support t TP connection direct
+[2188] TCP connections to the machines um so we
+[2190] have a lot of fun Tech stuff around that
+[2193] to do right now and um I mean we really
+[2197] want to deliver like the the next
+[2200] locations quickly over the summer um so
+[2203] yeah that's what we have in mind right
+[2204] now um that's top of the list I would
+[2206] say and then we have also collaboration
+[2209] features which are uh going to come uh
+[2211] sooner than later like preview
+[2213] environment so that if you uh uh want to
+[2216] you have several like environment for
+[2219] your new app uh development environment
+[2222] staging environments uh today you can
+[2225] easily do it you just create several
+[2227] apps on the platform but so that it's
+[2229] every time you create a branch you can
+[2231] have something which is mapped to this
+[2233] so that's what coming up next I would
+[2234] say what we have in mind and we have
+[2236] also a bunch of like stuff around
+[2238] experience we're trying to make sure
+[2240] that all the glitch uh you might have um
+[2244] smoothen so um we're not completely
+[2247] satisfied with the CLI for instance and
+[2249] we are trying to get it like it's
+[2251] working fine but we want to make it
+[2254] outstanding um so that's something which
+[2256] the team is U going to work on uh in U
+[2260] actually this month probably so so lots
+[2263] of stuff yeah I mean that's the top of
+[2265] the what you see me but uh a lot of
+[2270] stuff scenes I would like to talk about
+[2272] the price because I mean obviously we're
+[2274] we're hoping that some of our listeners
+[2276] will will want to use your service um
+[2278] and you have a free uh a free plan how
+[2281] free is that cuz you know that's that's
+[2283] always there's always a big as risk next
+[2285] to free talk about how free free is on
+[2287] your plan here yeah that's a a good
+[2290] question and that's a tough one because
+[2291] it's uh it's um in our industry it's a
+[2294] bit of a headache in a way because we
+[2296] love to give like a free plan and a free
+[2299] tier uh but um um we have an industry
+[2303] which is um attracting abusers and so
+[2307] that's another topic but that's a a
+[2309] whole Topic in itself uh to the point of
+[2311] your question we offer like right now we
+[2314] offer uh free tier which is like $5.5 of
+[2318] free credit every month so uh you can
+[2320] deploy two Nano services for free um
+[2324] which are forever running so and uh or
+[2327] our larger service if you want to Nano
+[2329] service so I'm just looking at your your
+[2331] table here it shows one CPU 256 Megs of
+[2334] RAM and 2.5 GB by SSD storage so you can
+[2338] run two of those for free forever is
+[2340] that is that right that's correct that's
+[2342] pretty impressive I could run my entire
+[2343] website on your service without ever
+[2344] paying a thing
+[2347] yeah I mean I think you can run a lot a
+[2350] lot of since and it can actually be
+[2351] Walkers or and it's not like cheap artor
+[2354] behind the scene it's like you have and
+[2357] real ssds and um um epic CPS which are
+[2361] more performance at what you get with a
+[2364] main cloud service provider so that's
+[2365] impressive and on the metrics side you
+[2368] talked a lot about the experience
+[2370] usually when I have a free thing I want
+[2373] to make sure that it's uh it stays free
+[2375] I don't get an accidental bill at the
+[2378] end of the month there a lot yeah for
+[2380] anyone who's used the I don't want to
+[2382] name names but a certain Logging company
+[2385] with a certain purple dog as the as
+[2388] their logo you know you you wake up at
+[2390] the beginning of the month and you're
+[2392] like what the hell is this there is a
+[2395] lot of metrics already like service
+[2397] level like how much CPU I've used how
+[2399] much memory I've used what's the
+[2401] response time what's the throughput
+[2403] which is already impressive it's using
+[2405] ebpf behind the scenes by the way how do
+[2407] you get all these numbers it's actually
+[2409] using Kuma and enoy so every time you
+[2412] you deploying um an application um the
+[2417] phase your application is going to go
+[2419] through is a build phase will will uh uh
+[2423] launch microv VMS to build your
+[2425] application and and build a container
+[2428] push it to a registry uh pull it for on
+[2431] your behalf and then we'll Spa a micro
+[2434] VM and your micro VM is going to have a
+[2437] side car which is an Android proxy and
+[2439] that's where we fetch the metric and
+[2441] actually um yeah the metric you get
+[2444] fetched at the load balancing layer by
+[2447] our on on the enoy Proxes cool and if I
+[2452] set up too many services and whatever it
+[2454] will tell me right oh you you're
+[2456] exceeding your free trial careful we we
+[2459] we just released like something uh with
+[2461] a good visualization on top so you have
+[2464] a at the top you have a green display
+[2467] which is telling you exactly where you
+[2469] stand uh if something uh um if you're
+[2473] exceeding your uh free tier or not and
+[2476] one thing that's on the road map and I
+[2478] also up voted I'm sorry I'm using this
+[2480] show to push all the
+[2482] features voted is the spending limits
+[2486] cuz my clients are like I'm really okay
+[2487] with you deploying on coab that's great
+[2490] um but please make sure that you don't
+[2493] exceed your own budget of whatever so I
+[2495] know that it's already in the road map
+[2497] so I I upvoted it here on air as well
+[2501] yeah yeah yeah I mean you're you're
+[2503] right it's a it's always a sensitive
+[2505] subject like uh uh with where you when
+[2508] you can easily scale I mean uh uh you
+[2513] can also have V surprises so um we are
+[2516] just we are fresh with the building so
+[2519] uh it's it's coming uh live um actually
+[2522] this month um so uh and we are also
+[2526] going to ATT expending limits um and I
+[2528] mean mostly notification iing first
+[2531] that's the first step to make sure that
+[2533] you are warned um if anything comes up
+[2537] um and we'll definitely dive into your
+[2539] uh also uh limits because key question
+[2543] is what does happen when you hit the
+[2545] limits do wanted to uh stop your
+[2547] infrastructure or what should happen
+[2551] that's actually John you probably had
+[2553] both uh already happened to you it
+[2555] depends on your SLO I think right if you
+[2559] provide a service to someone else and
+[2560] you're contract obligated for it to stay
+[2562] up then you want the spending limit to
+[2564] alert you but not take it down but for a
+[2567] personal website or a personal project
+[2569] or things where Thea is not so critical
+[2571] maybe you want it down maybe you want to
+[2573] put it I don't know how common it is for
+[2575] you J but when a client pays like 90
+[2578] days after the job is done oh yeah so
+[2581] maybe you can put a spending limited if
+[2583] they don't play the cloud build after 91
+[2585] days then it switches but that that's
+[2588] may I Sol that problem by pre-building
+[2590] for
+[2591] everything um cool one other thing I
+[2594] wanted to ask before we uh rush to close
+[2598] is you talked a lot about projects you
+[2600] use at coab right you mentioned Envoy
+[2603] Kuma um firecracker micro M and
+[2607] obviously you use a lot of go in the
+[2608] back end with some libraries and
+[2610] whatever A lot of it is free and open
+[2612] source software does your team
+[2614] contribute back to any interesting go
+[2617] libraries or maybe engage in
+[2620] discussions uh proposals whatever
+[2622] anything like that yeah so we are so if
+[2626] we go into what we are using we are
+[2628] actually using also a lot of gmpc behind
+[2630] the scene we have Micro Services built
+[2633] with um gmpc for the internet
+[2635] communication
+[2636] and we actually I mean the reason the
+[2639] interest for us to be in go and all
+[2641] these projects are actually I mean a
+[2643] bunch of this project are in go so n is
+[2646] in go Kuma is in go uh container D is in
+[2650] go um and so one of the advantages is
+[2653] that we can contribute back so for
+[2655] instance we have um uh we are making a
+[2657] lot of patches to Kuma uh because yeah
+[2660] we have we are hitting scaling limits um
+[2663] with our setup as a cloud service
+[2665] provider so we're trying to contribute
+[2667] back and we also have a small open
+[2669] source project which is like one where
+[2672] everyone is which everyone is using
+[2674] internally which is called um k
+[2677] reconciler um which is about like uh
+[2680] having building like roners with a
+[2683] control Loop uh pattern um to converge
+[2687] all states internally so it's available
+[2689] on GitHub and uh but we are not like
+[2691] advertising it much yet but uh it's uh
+[2694] it's heavily used in term for everything
+[2697] so one other thing I want to ask you on
+[2699] you're the CEO right and a co-founder
+[2701] that's correct do you still write code
+[2704] not a lot to be honest that's a tough
+[2706] one because so I mean I'm struggling to
+[2708] find time to uh to do it so if I write
+[2711] code every once a quter I'm happy um and
+[2715] every time I'm able to actually what I
+[2717] do the most is write technical posts um
+[2721] actually um or build try to build on top
+[2724] of the platform too um and I actually
+[2727] love doing that because I have a
+[2729] software engineering background um and
+[2731] system engineering background and
+[2732] networking background but uh in practice
+[2735] like yeah it get get worse over time uh
+[2739] in terms of time you have to you have
+[2741] available to spend on it and that's a
+[2743] that's a tough trade-off that I think a
+[2745] lot of our listeners are are dealing
+[2748] with right some of them are um staff
+[2751] Engineers some of them are team leaders
+[2753] or group leaders or trying to start a
+[2756] startup um and they maybe listening to
+[2759] this is their like Escapist way of
+[2762] thinking about coding a little bit yeah
+[2764] I mean and and it's I I need to be up to
+[2768] date uh because I mean Technologies are
+[2771] moving uh all the time and um yeah I
+[2774] mean you you deploy applications on the
+[2776] platform so um it's not like U our users
+[2780] are are non technical users um so I
+[2783] really need to understand how things are
+[2784] working um and what is the state of the
+[2787] art I would say um but um yeah it's more
+[2792] about looking at architecture more than
+[2795] WR writing purely cut I would say most
+[2796] of the time but I still enjoy opening my
+[2799] terminal and U and writing stuff when I
+[2802] can well luckily you know a good show to
+[2804] stay up to date huh yeah exactly great
+[2809] what's the best way to get started uh
+[2811] with coab where do people go to to start
+[2813] this process yeah I mean to so to get
+[2815] started with cab you just go to cab.com
+[2817] um and you click the sign up button and
+[2820] it's going to be pretty seamless well we
+[2824] and if you need any help where we there
+[2826] behind the scene we have um a community
+[2829] platform and a slack platform too
+[2831] actually where uh you can reach out to
+[2834] the team um if you have any specific
+[2836] questions um we're a small team but we
+[2838] are still uh super responsive um so I
+[2841] think that's where you would start great
+[2844] and if anyone wants to reach out to you
+[2846] um what's the best way to reach you
+[2849] directly I'm active on Twitter on
+[2851] LinkedIn so on Twitter it's uh Yan umore
+[2857] EU um so yeah that's how you can reach
+[2860] me great we'll have those links to the
+[2862] show Notes too well thanks Yan for
+[2864] coming on it's been a pleasure to talk
+[2866] to you and learn about coab it's great
+[2868] to have you as a uh and your company as
+[2869] a partner of the podcast too yeah man
+[2872] thanks yeah super excited too about it
+[2876] so one last thing Yan before we let you
+[2878] go we have the questions we ask all of
+[2880] our guests on the show uh first one is
+[2884] you're told that you have to remove a
+[2886] feature from go what would that feature
+[2888] be H that's a that's a tough one um I
+[2892] need to figure out
+[2894] [Laughter]
+[2897] something a feature to remov and go um
+[2901] trying to go over like was a complaint I
+[2904] heard uh um I don't know actually I mean
+[2908] so to be honest I don't hear so many
+[2911] complaints and that's a true story but
+[2914] it's so it's not a feature about go it's
+[2917] I heard a lot of complaints about like
+[2919] type conversion between like uh through
+[2921] our we have a a rest gmpc Gateway um
+[2926] where we're losing information kind of
+[2928] like uh of typing and where the error
+[2931] forwarding is not as good as it should
+[2934] be so I think it's where I get the I
+[2938] have the most complaint which are anyhow
+[2941] related to to uh to goldang um in our
+[2945] stack I would say in pure yeah so you
+[2949] would remove rest from the rest of the
+[2951] internet just everybody Ed grpc thinking
+[2955] about like uh uh using grpc web to uh
+[2959] because right now it's we're using
+[2960] arrest ipis to communicate between our
+[2963] control panel and uh um our um apis um
+[2969] so yeah one of the thing we are trying
+[2971] to we are looking into is moving this to
+[2974] gmpc web so that we don't have like type
+[2977] conversion and protocol conversion at
+[2979] this yeah I think I think that's a pain
+[2981] the the entire Community feels because
+[2983] recently we covered a proposal exactly
+[2985] about like improving the HTTP semantics
+[2988] and and making you know if you just use
+[2991] the standard Library net HTTP uh you can
+[2994] do a lot more retish stuff so it feels
+[2999] like it's not uh just something you and
+[3001] your team uh is feeling yeah uh and the
+[3004] flip side of that question if you could
+[3006] look at any other language or perhaps a
+[3008] library that you'd like to introduce
+[3009] into the St Library what would you like
+[3012] to get into go so one of the uh feedback
+[3018] we got is actually availability of
+[3021] higher level libraries I think the sense
+[3024] that and the way even we use on go L is
+[3028] U um it's pretty bare actually in a way
+[3032] uh we don't use so many libraries um and
+[3035] we don't you don't have something which
+[3037] is as ready to use as I don't know rails
+[3041] in Ruby or uh even Dango and we also
+[3044] have like we are also looking into more
+[3047] advanced um um libraries for distributed
+[3051] systems um so we've been looking a bit
+[3054] at temporal for instance s but um it's a
+[3057] space where we see some possible
+[3060] improvements uh in the future very
+[3064] good I like these more sort of meta
+[3066] answers not not focusing specifically on
+[3069] the core language features but the more
+[3071] more the ecosystem that's that's nice
+[3073] yeah I think that's the sort of view you
+[3076] can get when you manage a team instead
+[3077] of hacking away the terminal all day mhm
+[3081] Yeah we actually have like people who
+[3082] are uh huge Advocates of go but when I
+[3086] try to ask um about like what you would
+[3090] you change just a bit like yeah it's
+[3093] we're happy with itth so on the low
+[3096] level side of things um yeah we like it
+[3099] too we do doesn't stop me from
+[3102] complaining every now and again but I do
+[3103] like it uh well yeah thanks a lot for
+[3106] coming on the show and telling us about
+[3108] coab and about how you use go in the
+[3112] generally within coab uh if people want
+[3114] to reach out the the links are in the
+[3117] show notes so be sure to bombard on with
+[3120] all the questions and set up services
+[3124] exactly until uh $5 and up vote all the
+[3128] feature requests just to
+[3129] annoying um but a bit more seriously
+[3132] I've been using coab it's it works which
+[3135] is uh a lot more than I can say for many
+[3137] of the St Services I'm using today and
+[3139] it's Snappy so feel free to check it out
+[3141] and thanks a lot for the inside behind
+[3143] the scenes look it was super interesting
+[3146] thanks for me for sure
+[3152] man all right Yan is off the call uh I
+[3155] just want to mention for a CEO who wants
+[3157] to sell for his business how many times
+[3160] he told us I don't want to make this a
+[3162] salesy thing I just want your audience
+[3164] to be interested such a cool
+[3167] guy actually thinking about our audience
+[3170] not even his customers and trying to
+[3172] worry about what they want yeah um so
+[3175] that I don't know it was super cool
+[3177] interview thanks a lot for for coming on
+[3179] y you're really cool thanks a lot great
+[3181] great guy great platform uh and you're a
+[3184] great audience great accent right
+[3188] sophisticated I don't know if whenever
+[3190] people just today someone told me oh
+[3193] your English is great and I don't know
+[3194] if I should like lean in more heavy on
+[3197] my americanish accent or you know Go
+[3201] full on Israeli accent don't worry about
+[3204] it that'll be our next slack pole what
+[3206] accent should sha use for the next
+[3207] episode yeah I had a period in when I
+[3209] worked with Americans where I tried to
+[3211] pull off a semi British accent and I
+[3213] even use British English use grammarly
+[3216] to fix my English to British English
+[3218] just because someone told me it looks
+[3219] sophisticated all right anyway thanks
+[3222] you have a great accent and a great
+[3224] platform um and honestly the shout out
+[3227] to your team as well specifically uh
+[3231] Alice deer I hope I'm saying your name
+[3232] right uh just for connecting you know
+[3235] she just found us and made the
+[3238] connection and you know stayed on top of
+[3240] all of the emails and made all the
+[3241] bureaucracy work so shout out to you as
+[3244] wellis deer thanks a lot thanks until
+[3246] next week byebye
+[3249] everyone

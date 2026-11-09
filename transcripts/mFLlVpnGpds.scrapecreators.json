@@ -1,0 +1,4278 @@
+{
+ "success": true,
+ "credits_remaining": 5130,
+ "credits_charged": 1,
+ "type": "video",
+ "url": "https://www.youtube.com/watch?v=mFLlVpnGpds",
+ "transcript": [
+  {
+   "text": "Uh",
+   "startMs": "14640",
+   "endMs": "17840",
+   "startTimeText": "0:14"
+  },
+  {
+   "text": "good morning everyone. Thanks for being",
+   "startMs": "15400",
+   "endMs": "20960",
+   "startTimeText": "0:15"
+  },
+  {
+   "text": "here to the voice and vision session.",
+   "startMs": "17840",
+   "endMs": "23000",
+   "startTimeText": "0:17"
+  },
+  {
+   "text": "Uh so I'm Hervé Bredin, chief science",
+   "startMs": "20960",
+   "endMs": "25360",
+   "startTimeText": "0:20"
+  },
+  {
+   "text": "officer and co-founder at PyAnnote.",
+   "startMs": "23000",
+   "endMs": "27480",
+   "startTimeText": "0:23"
+  },
+  {
+   "text": "Uh so I'm going to talk to you today",
+   "startMs": "25360",
+   "endMs": "29160",
+   "startTimeText": "0:25"
+  },
+  {
+   "text": "about um",
+   "startMs": "27480",
+   "endMs": "30640",
+   "startTimeText": "0:27"
+  },
+  {
+   "text": "conversations, understanding",
+   "startMs": "29160",
+   "endMs": "32560",
+   "startTimeText": "0:29"
+  },
+  {
+   "text": "conversations, and",
+   "startMs": "30640",
+   "endMs": "34520",
+   "startTimeText": "0:30"
+  },
+  {
+   "text": "what you can do on top of",
+   "startMs": "32560",
+   "endMs": "37240",
+   "startTimeText": "0:32"
+  },
+  {
+   "text": "transcription.",
+   "startMs": "34520",
+   "endMs": "37240",
+   "startTimeText": "0:34"
+  },
+  {
+   "text": "Uh",
+   "startMs": "37360",
+   "endMs": "40480",
+   "startTimeText": "0:37"
+  },
+  {
+   "text": "so a quick word about myself. So I've",
+   "startMs": "38400",
+   "endMs": "43160",
+   "startTimeText": "0:38"
+  },
+  {
+   "text": "been an academic researcher all my life",
+   "startMs": "40480",
+   "endMs": "45760",
+   "startTimeText": "0:40"
+  },
+  {
+   "text": "until two years ago when I started this",
+   "startMs": "43160",
+   "endMs": "47080",
+   "startTimeText": "0:43"
+  },
+  {
+   "text": "company.",
+   "startMs": "45760",
+   "endMs": "48520",
+   "startTimeText": "0:45"
+  },
+  {
+   "text": "Oops, sorry.",
+   "startMs": "47080",
+   "endMs": "49200",
+   "startTimeText": "0:47"
+  },
+  {
+   "text": "Uh",
+   "startMs": "48520",
+   "endMs": "51080",
+   "startTimeText": "0:48"
+  },
+  {
+   "text": "what happened? Yeah.",
+   "startMs": "49200",
+   "endMs": "52000",
+   "startTimeText": "0:49"
+  },
+  {
+   "text": "Uh",
+   "startMs": "51080",
+   "endMs": "54760",
+   "startTimeText": "0:51"
+  },
+  {
+   "text": "so basically yeah, I worked on this",
+   "startMs": "52000",
+   "endMs": "56480",
+   "startTimeText": "0:52"
+  },
+  {
+   "text": "topic called speaker diarization which",
+   "startMs": "54760",
+   "endMs": "58760",
+   "startTimeText": "0:54"
+  },
+  {
+   "text": "I'll introduce a bit later for those of",
+   "startMs": "56480",
+   "endMs": "60800",
+   "startTimeText": "0:56"
+  },
+  {
+   "text": "you who don't know this word",
+   "startMs": "58760",
+   "endMs": "64239",
+   "startTimeText": "0:58"
+  },
+  {
+   "text": "word that is tricky for me to pronounce.",
+   "startMs": "60800",
+   "endMs": "65840",
+   "startTimeText": "1:00"
+  },
+  {
+   "text": "But basically over the years I built an",
+   "startMs": "64239",
+   "endMs": "68800",
+   "startTimeText": "1:04"
+  },
+  {
+   "text": "open source toolkit called PyAnnote",
+   "startMs": "65840",
+   "endMs": "70840",
+   "startTimeText": "1:05"
+  },
+  {
+   "text": "which focuses on speaker diarization and",
+   "startMs": "68800",
+   "endMs": "72480",
+   "startTimeText": "1:08"
+  },
+  {
+   "text": "that became quite popular over the years",
+   "startMs": "70840",
+   "endMs": "74480",
+   "startTimeText": "1:10"
+  },
+  {
+   "text": "in particular since",
+   "startMs": "72480",
+   "endMs": "75720",
+   "startTimeText": "1:12"
+  },
+  {
+   "text": "OpenAI",
+   "startMs": "74480",
+   "endMs": "78120",
+   "startTimeText": "1:14"
+  },
+  {
+   "text": "released the Whisper speech-to-text open",
+   "startMs": "75720",
+   "endMs": "80600",
+   "startTimeText": "1:15"
+  },
+  {
+   "text": "source models. Basically Whisper was",
+   "startMs": "78120",
+   "endMs": "83680",
+   "startTimeText": "1:18"
+  },
+  {
+   "text": "some kind of revolution in terms of STT,",
+   "startMs": "80600",
+   "endMs": "85440",
+   "startTimeText": "1:20"
+  },
+  {
+   "text": "the fact that it was free, that it was",
+   "startMs": "83680",
+   "endMs": "87760",
+   "startTimeText": "1:23"
+  },
+  {
+   "text": "very good, and but it didn't provided",
+   "startMs": "85440",
+   "endMs": "89480",
+   "startTimeText": "1:25"
+  },
+  {
+   "text": "the actual didn't provide the actual",
+   "startMs": "87760",
+   "endMs": "92120",
+   "startTimeText": "1:27"
+  },
+  {
+   "text": "names and tags of the speaker. So people",
+   "startMs": "89480",
+   "endMs": "94440",
+   "startTimeText": "1:29"
+  },
+  {
+   "text": "naturally turned to PyAnnote to combine",
+   "startMs": "92120",
+   "endMs": "96280",
+   "startTimeText": "1:32"
+  },
+  {
+   "text": "the two. And you can see that on the",
+   "startMs": "94440",
+   "endMs": "97920",
+   "startTimeText": "1:34"
+  },
+  {
+   "text": "inflection points on the GitHub star",
+   "startMs": "96280",
+   "endMs": "100640",
+   "startTimeText": "1:36"
+  },
+  {
+   "text": "history. And just a few words, I happen",
+   "startMs": "97920",
+   "endMs": "102640",
+   "startTimeText": "1:37"
+  },
+  {
+   "text": "to turn 45 uh",
+   "startMs": "100640",
+   "endMs": "105680",
+   "startTimeText": "1:40"
+  },
+  {
+   "text": "uh in just one week from now and we all",
+   "startMs": "102640",
+   "endMs": "108760",
+   "startTimeText": "1:42"
+  },
+  {
+   "text": "almost at 10K stars on the GitHub. So",
+   "startMs": "105680",
+   "endMs": "111800",
+   "startTimeText": "1:45"
+  },
+  {
+   "text": "please give me a birthday gift by just",
+   "startMs": "108760",
+   "endMs": "113360",
+   "startTimeText": "1:48"
+  },
+  {
+   "text": "going to the website and to the GitHub",
+   "startMs": "111800",
+   "endMs": "115160",
+   "startTimeText": "1:51"
+  },
+  {
+   "text": "website and add your star.",
+   "startMs": "113360",
+   "endMs": "117600",
+   "startTimeText": "1:53"
+  },
+  {
+   "text": "That will make my birthday.",
+   "startMs": "115160",
+   "endMs": "119360",
+   "startTimeText": "1:55"
+  },
+  {
+   "text": "Um,",
+   "startMs": "117600",
+   "endMs": "121440",
+   "startTimeText": "1:57"
+  },
+  {
+   "text": "so uh",
+   "startMs": "119360",
+   "endMs": "122960",
+   "startTimeText": "1:59"
+  },
+  {
+   "text": "let's go to the to the core of the",
+   "startMs": "121440",
+   "endMs": "124320",
+   "startTimeText": "2:01"
+  },
+  {
+   "text": "presentation. So you all know what",
+   "startMs": "122960",
+   "endMs": "126560",
+   "startTimeText": "2:02"
+  },
+  {
+   "text": "transcription or speech-to-text is.",
+   "startMs": "124320",
+   "endMs": "128080",
+   "startTimeText": "2:04"
+  },
+  {
+   "text": "Basically, that's answering the question",
+   "startMs": "126560",
+   "endMs": "129960",
+   "startTimeText": "2:06"
+  },
+  {
+   "text": "what was said from the recording or",
+   "startMs": "128080",
+   "endMs": "132520",
+   "startTimeText": "2:08"
+  },
+  {
+   "text": "streaming of a conversation.",
+   "startMs": "129960",
+   "endMs": "134400",
+   "startTimeText": "2:09"
+  },
+  {
+   "text": "Basically, you get from the audio and",
+   "startMs": "132520",
+   "endMs": "137080",
+   "startTimeText": "2:12"
+  },
+  {
+   "text": "you get a sequence of words",
+   "startMs": "134400",
+   "endMs": "139560",
+   "startTimeText": "2:14"
+  },
+  {
+   "text": "as output. That's for instance what",
+   "startMs": "137080",
+   "endMs": "142360",
+   "startTimeText": "2:17"
+  },
+  {
+   "text": "Whisper does. But",
+   "startMs": "139560",
+   "endMs": "144320",
+   "startTimeText": "2:19"
+  },
+  {
+   "text": "without the actual",
+   "startMs": "142360",
+   "endMs": "146440",
+   "startTimeText": "2:22"
+  },
+  {
+   "text": "names of the speaker, the usually the",
+   "startMs": "144320",
+   "endMs": "148080",
+   "startTimeText": "2:24"
+  },
+  {
+   "text": "conversations on the transcripts are not",
+   "startMs": "146440",
+   "endMs": "150720",
+   "startTimeText": "2:26"
+  },
+  {
+   "text": "really understandable. So the next step",
+   "startMs": "148080",
+   "endMs": "152040",
+   "startTimeText": "2:28"
+  },
+  {
+   "text": "after transcription is basically to",
+   "startMs": "150720",
+   "endMs": "153760",
+   "startTimeText": "2:30"
+  },
+  {
+   "text": "attribute",
+   "startMs": "152040",
+   "endMs": "156240",
+   "startTimeText": "2:32"
+  },
+  {
+   "text": "speaker tag to each of the words. So",
+   "startMs": "153760",
+   "endMs": "158080",
+   "startTimeText": "2:33"
+  },
+  {
+   "text": "that's I call that here speaker",
+   "startMs": "156240",
+   "endMs": "160080",
+   "startTimeText": "2:36"
+  },
+  {
+   "text": "attributed transcription. And so that",
+   "startMs": "158080",
+   "endMs": "162800",
+   "startTimeText": "2:38"
+  },
+  {
+   "text": "that answer the question who said what.",
+   "startMs": "160080",
+   "endMs": "165120",
+   "startTimeText": "2:40"
+  },
+  {
+   "text": "But for some application that's enough",
+   "startMs": "162800",
+   "endMs": "166680",
+   "startTimeText": "2:42"
+  },
+  {
+   "text": "like for instance",
+   "startMs": "165120",
+   "endMs": "169400",
+   "startTimeText": "2:45"
+  },
+  {
+   "text": "for maybe for meeting note takers to",
+   "startMs": "166680",
+   "endMs": "172040",
+   "startTimeText": "2:46"
+  },
+  {
+   "text": "make a summary of a of of a meeting that",
+   "startMs": "169400",
+   "endMs": "173520",
+   "startTimeText": "2:49"
+  },
+  {
+   "text": "might be enough to assign an action",
+   "startMs": "172040",
+   "endMs": "175200",
+   "startTimeText": "2:52"
+  },
+  {
+   "text": "point to the right people to to know",
+   "startMs": "173520",
+   "endMs": "176560",
+   "startTimeText": "2:53"
+  },
+  {
+   "text": "exactly that",
+   "startMs": "175200",
+   "endMs": "179480",
+   "startTimeText": "2:55"
+  },
+  {
+   "text": "Air V said that and John said said this",
+   "startMs": "176560",
+   "endMs": "182239",
+   "startTimeText": "2:56"
+  },
+  {
+   "text": "this other thing. But we to understand",
+   "startMs": "179480",
+   "endMs": "184720",
+   "startTimeText": "2:59"
+  },
+  {
+   "text": "the conversation a bit better,",
+   "startMs": "182239",
+   "endMs": "186519",
+   "startTimeText": "3:02"
+  },
+  {
+   "text": "we we might want",
+   "startMs": "184720",
+   "endMs": "190040",
+   "startTimeText": "3:04"
+  },
+  {
+   "text": "to go slightly better. Sorry, I forgot",
+   "startMs": "186519",
+   "endMs": "191959",
+   "startTimeText": "3:06"
+  },
+  {
+   "text": "about this slide. So basically there are",
+   "startMs": "190040",
+   "endMs": "194000",
+   "startTimeText": "3:10"
+  },
+  {
+   "text": "many cases where",
+   "startMs": "191959",
+   "endMs": "196360",
+   "startTimeText": "3:11"
+  },
+  {
+   "text": "knowing who said what is as important as",
+   "startMs": "194000",
+   "endMs": "198320",
+   "startTimeText": "3:14"
+  },
+  {
+   "text": "what was said actually. So I have here a",
+   "startMs": "196360",
+   "endMs": "201440",
+   "startTimeText": "3:16"
+  },
+  {
+   "text": "few examples like for instance video",
+   "startMs": "198320",
+   "endMs": "205080",
+   "startTimeText": "3:18"
+  },
+  {
+   "text": "dubbing, automatic video dubbing.",
+   "startMs": "201440",
+   "endMs": "205080",
+   "startTimeText": "3:21"
+  },
+  {
+   "text": "Knowing who said what is actually really",
+   "startMs": "205120",
+   "endMs": "210360",
+   "startTimeText": "3:25"
+  },
+  {
+   "text": "important to put the actual uh uh uh",
+   "startMs": "206880",
+   "endMs": "213040",
+   "startTimeText": "3:26"
+  },
+  {
+   "text": "good correct voice to the right speaker.",
+   "startMs": "210360",
+   "endMs": "214720",
+   "startTimeText": "3:30"
+  },
+  {
+   "text": "So if you want to automatically",
+   "startMs": "213040",
+   "endMs": "218280",
+   "startTimeText": "3:33"
+  },
+  {
+   "text": "translate a video from one language to",
+   "startMs": "214720",
+   "endMs": "219680",
+   "startTimeText": "3:34"
+  },
+  {
+   "text": "another, you want the voices to be",
+   "startMs": "218280",
+   "endMs": "222840",
+   "startTimeText": "3:38"
+  },
+  {
+   "text": "consistent as well. So for that you need",
+   "startMs": "219680",
+   "endMs": "224920",
+   "startTimeText": "3:39"
+  },
+  {
+   "text": "to know who's",
+   "startMs": "222840",
+   "endMs": "226959",
+   "startTimeText": "3:42"
+  },
+  {
+   "text": "who who spoke when. Same for meeting",
+   "startMs": "224920",
+   "endMs": "228560",
+   "startTimeText": "3:44"
+  },
+  {
+   "text": "note takers and there are other",
+   "startMs": "226959",
+   "endMs": "231280",
+   "startTimeText": "3:46"
+  },
+  {
+   "text": "applications like for instance podcast",
+   "startMs": "228560",
+   "endMs": "233040",
+   "startTimeText": "3:48"
+  },
+  {
+   "text": "what I call podcast intelligence like",
+   "startMs": "231280",
+   "endMs": "235120",
+   "startTimeText": "3:51"
+  },
+  {
+   "text": "being able to track a speaker across",
+   "startMs": "233040",
+   "endMs": "236560",
+   "startTimeText": "3:53"
+  },
+  {
+   "text": "different",
+   "startMs": "235120",
+   "endMs": "238800",
+   "startTimeText": "3:55"
+  },
+  {
+   "text": "episodes of a podcast or",
+   "startMs": "236560",
+   "endMs": "241200",
+   "startTimeText": "3:56"
+  },
+  {
+   "text": "across different podcasts finding the",
+   "startMs": "238800",
+   "endMs": "245200",
+   "startTimeText": "3:58"
+  },
+  {
+   "text": "same guest across multiple podcasts.",
+   "startMs": "241200",
+   "endMs": "245200",
+   "startTimeText": "4:01"
+  },
+  {
+   "text": "But yeah, so I was a bit",
+   "startMs": "245600",
+   "endMs": "248959",
+   "startTimeText": "4:05"
+  },
+  {
+   "text": "over",
+   "startMs": "247800",
+   "endMs": "250760",
+   "startTimeText": "4:07"
+  },
+  {
+   "text": "just before but",
+   "startMs": "248959",
+   "endMs": "252560",
+   "startTimeText": "4:08"
+  },
+  {
+   "text": "just knowing who said what is sometimes",
+   "startMs": "250760",
+   "endMs": "254240",
+   "startTimeText": "4:10"
+  },
+  {
+   "text": "not enough to really understand the",
+   "startMs": "252560",
+   "endMs": "255920",
+   "startTimeText": "4:12"
+  },
+  {
+   "text": "conversation the conversation how it",
+   "startMs": "254240",
+   "endMs": "259920",
+   "startTimeText": "4:14"
+  },
+  {
+   "text": "goes. So knowing who said what and when",
+   "startMs": "255920",
+   "endMs": "262000",
+   "startTimeText": "4:15"
+  },
+  {
+   "text": "actually brings even more information.",
+   "startMs": "259920",
+   "endMs": "264800",
+   "startTimeText": "4:19"
+  },
+  {
+   "text": "For instance in this example",
+   "startMs": "262000",
+   "endMs": "266720",
+   "startTimeText": "4:22"
+  },
+  {
+   "text": "without knowing exactly when each words",
+   "startMs": "264800",
+   "endMs": "269000",
+   "startTimeText": "4:24"
+  },
+  {
+   "text": "were pronounced you can't detect that",
+   "startMs": "266720",
+   "endMs": "271480",
+   "startTimeText": "4:26"
+  },
+  {
+   "text": "actually the black speaker interrupted",
+   "startMs": "269000",
+   "endMs": "273560",
+   "startTimeText": "4:29"
+  },
+  {
+   "text": "the green one. You can't really detect",
+   "startMs": "271480",
+   "endMs": "276280",
+   "startTimeText": "4:31"
+  },
+  {
+   "text": "that maybe this small back channel that",
+   "startMs": "273560",
+   "endMs": "280440",
+   "startTimeText": "4:33"
+  },
+  {
+   "text": "the green sorry the black speaker",
+   "startMs": "276280",
+   "endMs": "282320",
+   "startTimeText": "4:36"
+  },
+  {
+   "text": "does during the speech of the of the",
+   "startMs": "280440",
+   "endMs": "284240",
+   "startTimeText": "4:40"
+  },
+  {
+   "text": "green speaker if you miss it basically",
+   "startMs": "282320",
+   "endMs": "286280",
+   "startTimeText": "4:42"
+  },
+  {
+   "text": "you you don't really understand that",
+   "startMs": "284240",
+   "endMs": "287919",
+   "startTimeText": "4:44"
+  },
+  {
+   "text": "maybe the black speaker is actually",
+   "startMs": "286280",
+   "endMs": "290600",
+   "startTimeText": "4:46"
+  },
+  {
+   "text": "agreeing noting at what the green",
+   "startMs": "287919",
+   "endMs": "292840",
+   "startTimeText": "4:47"
+  },
+  {
+   "text": "speaker says. So knowing exactly when",
+   "startMs": "290600",
+   "endMs": "295880",
+   "startTimeText": "4:50"
+  },
+  {
+   "text": "this small word has been pronounced is",
+   "startMs": "292840",
+   "endMs": "298040",
+   "startTimeText": "4:52"
+  },
+  {
+   "text": "very important.",
+   "startMs": "295880",
+   "endMs": "299840",
+   "startTimeText": "4:55"
+  },
+  {
+   "text": "And same without precise timestamps you",
+   "startMs": "298040",
+   "endMs": "302080",
+   "startTimeText": "4:58"
+  },
+  {
+   "text": "can't really know whether I made a I",
+   "startMs": "299840",
+   "endMs": "304840",
+   "startTimeText": "4:59"
+  },
+  {
+   "text": "make a a pause in between two speech",
+   "startMs": "302080",
+   "endMs": "307440",
+   "startTimeText": "5:02"
+  },
+  {
+   "text": "turns which might convey additional",
+   "startMs": "304840",
+   "endMs": "310760",
+   "startTimeText": "5:04"
+  },
+  {
+   "text": "information about my state of mind my I",
+   "startMs": "307440",
+   "endMs": "312720",
+   "startTimeText": "5:07"
+  },
+  {
+   "text": "don't know the point that I'm trying to",
+   "startMs": "310760",
+   "endMs": "314840",
+   "startTimeText": "5:10"
+  },
+  {
+   "text": "to make in the conversation.",
+   "startMs": "312720",
+   "endMs": "316960",
+   "startTimeText": "5:12"
+  },
+  {
+   "text": "And we can go even a step further.",
+   "startMs": "314840",
+   "endMs": "318160",
+   "startTimeText": "5:14"
+  },
+  {
+   "text": "Like",
+   "startMs": "316960",
+   "endMs": "320040",
+   "startTimeText": "5:16"
+  },
+  {
+   "text": "we we might want to know who said what",
+   "startMs": "318160",
+   "endMs": "322960",
+   "startTimeText": "5:18"
+  },
+  {
+   "text": "and when and how they said it. Like I",
+   "startMs": "320040",
+   "endMs": "325360",
+   "startTimeText": "5:20"
+  },
+  {
+   "text": "have a few examples here if",
+   "startMs": "322960",
+   "endMs": "326800",
+   "startTimeText": "5:22"
+  },
+  {
+   "text": "some of you are laughing at some point",
+   "startMs": "325360",
+   "endMs": "328720",
+   "startTimeText": "5:25"
+  },
+  {
+   "text": "is it because I don't know I said",
+   "startMs": "326800",
+   "endMs": "330280",
+   "startTimeText": "5:26"
+  },
+  {
+   "text": "something stupid or I was actually",
+   "startMs": "328720",
+   "endMs": "331280",
+   "startTimeText": "5:28"
+  },
+  {
+   "text": "funny.",
+   "startMs": "330280",
+   "endMs": "333280",
+   "startTimeText": "5:30"
+  },
+  {
+   "text": "Same for coughing maybe there's",
+   "startMs": "331280",
+   "endMs": "334919",
+   "startTimeText": "5:31"
+  },
+  {
+   "text": "something in the conversation that makes",
+   "startMs": "333280",
+   "endMs": "337280",
+   "startTimeText": "5:33"
+  },
+  {
+   "text": "me uncomfortable and",
+   "startMs": "334919",
+   "endMs": "339520",
+   "startTimeText": "5:34"
+  },
+  {
+   "text": "I'm coughing for some reason to to hide",
+   "startMs": "337280",
+   "endMs": "341000",
+   "startTimeText": "5:37"
+  },
+  {
+   "text": "behind that.",
+   "startMs": "339520",
+   "endMs": "341960",
+   "startTimeText": "5:39"
+  },
+  {
+   "text": "And",
+   "startMs": "341000",
+   "endMs": "343840",
+   "startTimeText": "5:41"
+  },
+  {
+   "text": "yeah so I also mentioned stress",
+   "startMs": "341960",
+   "endMs": "346680",
+   "startTimeText": "5:41"
+  },
+  {
+   "text": "disfluency prosody",
+   "startMs": "343840",
+   "endMs": "349520",
+   "startTimeText": "5:43"
+  },
+  {
+   "text": "um fact that I uh stress on particular",
+   "startMs": "346680",
+   "endMs": "351440",
+   "startTimeText": "5:46"
+  },
+  {
+   "text": "words in a sentence might actually",
+   "startMs": "349520",
+   "endMs": "353080",
+   "startTimeText": "5:49"
+  },
+  {
+   "text": "change completely the meaning of the",
+   "startMs": "351440",
+   "endMs": "355680",
+   "startTimeText": "5:51"
+  },
+  {
+   "text": "sentence. Uh I have this example in mind",
+   "startMs": "353080",
+   "endMs": "356800",
+   "startTimeText": "5:53"
+  },
+  {
+   "text": "like",
+   "startMs": "355680",
+   "endMs": "358800",
+   "startTimeText": "5:55"
+  },
+  {
+   "text": "uh I don't know in the sentence the dog",
+   "startMs": "356800",
+   "endMs": "359360",
+   "startTimeText": "5:56"
+  },
+  {
+   "text": "uh",
+   "startMs": "358800",
+   "endMs": "361480",
+   "startTimeText": "5:58"
+  },
+  {
+   "text": "ate uh the cake.",
+   "startMs": "359360",
+   "endMs": "363760",
+   "startTimeText": "5:59"
+  },
+  {
+   "text": "If uh I don't know you're talking to a",
+   "startMs": "361480",
+   "endMs": "365880",
+   "startTimeText": "6:01"
+  },
+  {
+   "text": "child and the the child tells you the",
+   "startMs": "363760",
+   "endMs": "369480",
+   "startTimeText": "6:03"
+  },
+  {
+   "text": "dog ate the cake or the dog ate the cake",
+   "startMs": "365880",
+   "endMs": "371480",
+   "startTimeText": "6:05"
+  },
+  {
+   "text": "or the dog ate the cake uh the the",
+   "startMs": "369480",
+   "endMs": "373520",
+   "startTimeText": "6:09"
+  },
+  {
+   "text": "meaning might be slightly different. So",
+   "startMs": "371480",
+   "endMs": "375760",
+   "startTimeText": "6:11"
+  },
+  {
+   "text": "uh stressing particular words, uh being",
+   "startMs": "373520",
+   "endMs": "377760",
+   "startTimeText": "6:13"
+  },
+  {
+   "text": "able to have a a voice AI actually",
+   "startMs": "375760",
+   "endMs": "379840",
+   "startTimeText": "6:15"
+  },
+  {
+   "text": "understand the stress and and",
+   "startMs": "377760",
+   "endMs": "382160",
+   "startTimeText": "6:17"
+  },
+  {
+   "text": "these kind of of low-level details might",
+   "startMs": "379840",
+   "endMs": "383640",
+   "startTimeText": "6:19"
+  },
+  {
+   "text": "bring some more",
+   "startMs": "382160",
+   "endMs": "386160",
+   "startTimeText": "6:22"
+  },
+  {
+   "text": "uh information to the",
+   "startMs": "383640",
+   "endMs": "389440",
+   "startTimeText": "6:23"
+  },
+  {
+   "text": "to any downstream LLMs or or whatever",
+   "startMs": "386160",
+   "endMs": "391480",
+   "startTimeText": "6:26"
+  },
+  {
+   "text": "tools that you use after this first",
+   "startMs": "389440",
+   "endMs": "394760",
+   "startTimeText": "6:29"
+  },
+  {
+   "text": "enriched transcription step.",
+   "startMs": "391480",
+   "endMs": "394760",
+   "startTimeText": "6:31"
+  },
+  {
+   "text": "And if we take even a step a step back",
+   "startMs": "395080",
+   "endMs": "398800",
+   "startTimeText": "6:35"
+  },
+  {
+   "text": "uh",
+   "startMs": "398200",
+   "endMs": "403040",
+   "startTimeText": "6:38"
+  },
+  {
+   "text": "um knowing who's uh talking to who uh am",
+   "startMs": "398800",
+   "endMs": "405800",
+   "startTimeText": "6:38"
+  },
+  {
+   "text": "I uh here in this example and probably",
+   "startMs": "403040",
+   "endMs": "408120",
+   "startTimeText": "6:43"
+  },
+  {
+   "text": "can be seen as these uh gray speaker",
+   "startMs": "405800",
+   "endMs": "410280",
+   "startTimeText": "6:45"
+  },
+  {
+   "text": "addressing to all of you. But at some",
+   "startMs": "408120",
+   "endMs": "412960",
+   "startTimeText": "6:48"
+  },
+  {
+   "text": "point if uh at the end of this talk I uh",
+   "startMs": "410280",
+   "endMs": "415000",
+   "startTimeText": "6:50"
+  },
+  {
+   "text": "you do have questions then uh I will be",
+   "startMs": "412960",
+   "endMs": "416560",
+   "startTimeText": "6:52"
+  },
+  {
+   "text": "probably the the green one talking to",
+   "startMs": "415000",
+   "endMs": "417880",
+   "startTimeText": "6:55"
+  },
+  {
+   "text": "one particular person answering the",
+   "startMs": "416560",
+   "endMs": "419360",
+   "startTimeText": "6:56"
+  },
+  {
+   "text": "particular question. So knowing that,",
+   "startMs": "417880",
+   "endMs": "421120",
+   "startTimeText": "6:57"
+  },
+  {
+   "text": "having a higher-level view of the",
+   "startMs": "419360",
+   "endMs": "424560",
+   "startTimeText": "6:59"
+  },
+  {
+   "text": "conversation uh also opens up a",
+   "startMs": "421120",
+   "endMs": "425840",
+   "startTimeText": "7:01"
+  },
+  {
+   "text": "new bunch of",
+   "startMs": "424560",
+   "endMs": "428640",
+   "startTimeText": "7:04"
+  },
+  {
+   "text": "applications.",
+   "startMs": "425840",
+   "endMs": "428640",
+   "startTimeText": "7:05"
+  },
+  {
+   "text": "And all of this uh also happens in uh",
+   "startMs": "429520",
+   "endMs": "434720",
+   "startTimeText": "7:09"
+  },
+  {
+   "text": "acoustic environment that gives you",
+   "startMs": "432960",
+   "endMs": "437040",
+   "startTimeText": "7:12"
+  },
+  {
+   "text": "information about the context whether",
+   "startMs": "434720",
+   "endMs": "440240",
+   "startTimeText": "7:14"
+  },
+  {
+   "text": "it's in this quiet room uh for now",
+   "startMs": "437040",
+   "endMs": "443680",
+   "startTimeText": "7:17"
+  },
+  {
+   "text": "uh or if I'm in the street uh this bring",
+   "startMs": "440240",
+   "endMs": "445800",
+   "startTimeText": "7:20"
+  },
+  {
+   "text": "more context to to to the game and you",
+   "startMs": "443680",
+   "endMs": "448600",
+   "startTimeText": "7:23"
+  },
+  {
+   "text": "can actually uh take a better decision",
+   "startMs": "445800",
+   "endMs": "449440",
+   "startTimeText": "7:25"
+  },
+  {
+   "text": "about",
+   "startMs": "448600",
+   "endMs": "451000",
+   "startTimeText": "7:28"
+  },
+  {
+   "text": "what's going on, why a person is",
+   "startMs": "449440",
+   "endMs": "452200",
+   "startTimeText": "7:29"
+  },
+  {
+   "text": "actually saying what what they are",
+   "startMs": "451000",
+   "endMs": "454160",
+   "startTimeText": "7:31"
+  },
+  {
+   "text": "saying and and etc.",
+   "startMs": "452200",
+   "endMs": "456400",
+   "startTimeText": "7:32"
+  },
+  {
+   "text": "So all of this is basically the what we",
+   "startMs": "454160",
+   "endMs": "458000",
+   "startTimeText": "7:34"
+  },
+  {
+   "text": "are trying to work on at",
+   "startMs": "456400",
+   "endMs": "461040",
+   "startTimeText": "7:36"
+  },
+  {
+   "text": "PianoTel AI, but we uh uh, started with",
+   "startMs": "458000",
+   "endMs": "462080",
+   "startTimeText": "7:38"
+  },
+  {
+   "text": "a",
+   "startMs": "461040",
+   "endMs": "462960",
+   "startTimeText": "7:41"
+  },
+  {
+   "text": "uh uh,",
+   "startMs": "462080",
+   "endMs": "464640",
+   "startTimeText": "7:42"
+  },
+  {
+   "text": "smaller problem called a speaker",
+   "startMs": "462960",
+   "endMs": "466480",
+   "startTimeText": "7:42"
+  },
+  {
+   "text": "diarization and that's really what I",
+   "startMs": "464640",
+   "endMs": "470200",
+   "startTimeText": "7:44"
+  },
+  {
+   "text": "want to talk about, uh, today.",
+   "startMs": "466480",
+   "endMs": "472880",
+   "startTimeText": "7:46"
+  },
+  {
+   "text": "So, speaker diarization is the,",
+   "startMs": "470200",
+   "endMs": "476000",
+   "startTimeText": "7:50"
+  },
+  {
+   "text": "I, I, yeah, is is usually,",
+   "startMs": "472880",
+   "endMs": "477240",
+   "startTimeText": "7:52"
+  },
+  {
+   "text": "uh, what I what I wanted to say about",
+   "startMs": "476000",
+   "endMs": "479440",
+   "startTimeText": "7:56"
+  },
+  {
+   "text": "this slide is that, uh, who said what is",
+   "startMs": "477240",
+   "endMs": "481080",
+   "startTimeText": "7:57"
+  },
+  {
+   "text": "usually just as important as what was",
+   "startMs": "479440",
+   "endMs": "482960",
+   "startTimeText": "7:59"
+  },
+  {
+   "text": "said and you can tell by instance by",
+   "startMs": "481080",
+   "endMs": "485240",
+   "startTimeText": "8:01"
+  },
+  {
+   "text": "going through, uh, to the hugging face,",
+   "startMs": "482960",
+   "endMs": "485800",
+   "startTimeText": "8:02"
+  },
+  {
+   "text": "uh,",
+   "startMs": "485240",
+   "endMs": "488400",
+   "startTimeText": "8:05"
+  },
+  {
+   "text": "uh, model repository and filter,",
+   "startMs": "485800",
+   "endMs": "490880",
+   "startTimeText": "8:05"
+  },
+  {
+   "text": "um, all the models there uh,",
+   "startMs": "488400",
+   "endMs": "493040",
+   "startTimeText": "8:08"
+  },
+  {
+   "text": "with the ones that have the audio tag.",
+   "startMs": "490880",
+   "endMs": "495160",
+   "startTimeText": "8:10"
+  },
+  {
+   "text": "Uh, where's my mouse here? Here. So,",
+   "startMs": "493040",
+   "endMs": "496400",
+   "startTimeText": "8:13"
+  },
+  {
+   "text": "this is what I did and then you sort",
+   "startMs": "495160",
+   "endMs": "499120",
+   "startTimeText": "8:15"
+  },
+  {
+   "text": "them by, uh, by number of downloads.",
+   "startMs": "496400",
+   "endMs": "501680",
+   "startTimeText": "8:16"
+  },
+  {
+   "text": "And basically, uh, the among the the",
+   "startMs": "499120",
+   "endMs": "504720",
+   "startTimeText": "8:19"
+  },
+  {
+   "text": "top, uh, here seven models that, uh, are",
+   "startMs": "501680",
+   "endMs": "506760",
+   "startTimeText": "8:21"
+  },
+  {
+   "text": "at the top of this list, three of them,",
+   "startMs": "504720",
+   "endMs": "508600",
+   "startTimeText": "8:24"
+  },
+  {
+   "text": "the the first three are actually related",
+   "startMs": "506760",
+   "endMs": "510040",
+   "startTimeText": "8:26"
+  },
+  {
+   "text": "to speaker identity and speaker",
+   "startMs": "508600",
+   "endMs": "512200",
+   "startTimeText": "8:28"
+  },
+  {
+   "text": "diarization and the the the other ones",
+   "startMs": "510040",
+   "endMs": "514680",
+   "startTimeText": "8:30"
+  },
+  {
+   "text": "are STT. So, that's one way of showing",
+   "startMs": "512200",
+   "endMs": "516200",
+   "startTimeText": "8:32"
+  },
+  {
+   "text": "that, uh, speaker diarization is",
+   "startMs": "514680",
+   "endMs": "518039",
+   "startTimeText": "8:34"
+  },
+  {
+   "text": "actually quite, uh, quite important on",
+   "startMs": "516200",
+   "endMs": "521599",
+   "startTimeText": "8:36"
+  },
+  {
+   "text": "on in the community.",
+   "startMs": "518039",
+   "endMs": "521599",
+   "startTimeText": "8:38"
+  },
+  {
+   "text": "So, uh, going uh, into a bit more detail",
+   "startMs": "522400",
+   "endMs": "526640",
+   "startTimeText": "8:42"
+  },
+  {
+   "text": "about what speaker diarization is. So,",
+   "startMs": "525080",
+   "endMs": "528680",
+   "startTimeText": "8:45"
+  },
+  {
+   "text": "as I said, it's answering the question",
+   "startMs": "526640",
+   "endMs": "531200",
+   "startTimeText": "8:46"
+  },
+  {
+   "text": "who speaks when. So, starting from the",
+   "startMs": "528680",
+   "endMs": "533320",
+   "startTimeText": "8:48"
+  },
+  {
+   "text": "recording of a conversation,",
+   "startMs": "531200",
+   "endMs": "535800",
+   "startTimeText": "8:51"
+  },
+  {
+   "text": "uh, basically the first step that people",
+   "startMs": "533320",
+   "endMs": "538400",
+   "startTimeText": "8:53"
+  },
+  {
+   "text": "usually do is, uh, basic voice activity",
+   "startMs": "535800",
+   "endMs": "540680",
+   "startTimeText": "8:55"
+  },
+  {
+   "text": "detection. So, you basically tell",
+   "startMs": "538400",
+   "endMs": "542480",
+   "startTimeText": "8:58"
+  },
+  {
+   "text": "whether someone is speaking at at one",
+   "startMs": "540680",
+   "endMs": "544720",
+   "startTimeText": "9:00"
+  },
+  {
+   "text": "time or not. Anyone is speaking at one",
+   "startMs": "542480",
+   "endMs": "546440",
+   "startTimeText": "9:02"
+  },
+  {
+   "text": "time or not.",
+   "startMs": "544720",
+   "endMs": "548400",
+   "startTimeText": "9:04"
+  },
+  {
+   "text": "And then you can go a step further. Uh,",
+   "startMs": "546440",
+   "endMs": "550120",
+   "startTimeText": "9:06"
+  },
+  {
+   "text": "you can actually segment those speech",
+   "startMs": "548400",
+   "endMs": "554160",
+   "startTimeText": "9:08"
+  },
+  {
+   "text": "regions into smaller speech turns. Um,",
+   "startMs": "550120",
+   "endMs": "556120",
+   "startTimeText": "9:10"
+  },
+  {
+   "text": "so this is what I call segmentation and",
+   "startMs": "554160",
+   "endMs": "558080",
+   "startTimeText": "9:14"
+  },
+  {
+   "text": "it includes finding, uh, speaker change",
+   "startMs": "556120",
+   "endMs": "559760",
+   "startTimeText": "9:16"
+  },
+  {
+   "text": "points between, uh,",
+   "startMs": "558080",
+   "endMs": "561920",
+   "startTimeText": "9:18"
+  },
+  {
+   "text": "in into those longer in those long",
+   "startMs": "559760",
+   "endMs": "564040",
+   "startTimeText": "9:19"
+  },
+  {
+   "text": "speech regions, you might find, uh,",
+   "startMs": "561920",
+   "endMs": "566480",
+   "startTimeText": "9:21"
+  },
+  {
+   "text": "you know, a speaker change point and,",
+   "startMs": "564040",
+   "endMs": "568760",
+   "startTimeText": "9:24"
+  },
+  {
+   "text": "uh, also find regions where, uh, people",
+   "startMs": "566480",
+   "endMs": "570560",
+   "startTimeText": "9:26"
+  },
+  {
+   "text": "are actually interrupting each other",
+   "startMs": "568760",
+   "endMs": "572960",
+   "startTimeText": "9:28"
+  },
+  {
+   "text": "like, uh, in, uh, in the first example",
+   "startMs": "570560",
+   "endMs": "574120",
+   "startTimeText": "9:30"
+  },
+  {
+   "text": "here.",
+   "startMs": "572960",
+   "endMs": "575520",
+   "startTimeText": "9:32"
+  },
+  {
+   "text": "There's definitely here someone",
+   "startMs": "574120",
+   "endMs": "578040",
+   "startTimeText": "9:34"
+  },
+  {
+   "text": "interrupting, uh, someone else and it's",
+   "startMs": "575520",
+   "endMs": "579880",
+   "startTimeText": "9:35"
+  },
+  {
+   "text": "possibly hear some kind of back channel",
+   "startMs": "578040",
+   "endMs": "582040",
+   "startTimeText": "9:38"
+  },
+  {
+   "text": "where someone is actually",
+   "startMs": "579880",
+   "endMs": "585040",
+   "startTimeText": "9:39"
+  },
+  {
+   "text": "nodding or saying \"Mhm, okay.\" This kind",
+   "startMs": "582040",
+   "endMs": "587080",
+   "startTimeText": "9:42"
+  },
+  {
+   "text": "of stuff. And this is the kind of small",
+   "startMs": "585040",
+   "endMs": "588640",
+   "startTimeText": "9:45"
+  },
+  {
+   "text": "speech turn that",
+   "startMs": "587080",
+   "endMs": "589880",
+   "startTimeText": "9:47"
+  },
+  {
+   "text": "uh",
+   "startMs": "588640",
+   "endMs": "592480",
+   "startTimeText": "9:48"
+  },
+  {
+   "text": "you don't want to miss because sometimes",
+   "startMs": "589880",
+   "endMs": "594640",
+   "startTimeText": "9:49"
+  },
+  {
+   "text": "they actually convey the most important",
+   "startMs": "592480",
+   "endMs": "596560",
+   "startTimeText": "9:52"
+  },
+  {
+   "text": "information of the conversation. If it's",
+   "startMs": "594640",
+   "endMs": "599720",
+   "startTimeText": "9:54"
+  },
+  {
+   "text": "a small yes here uh and if you miss it",
+   "startMs": "596560",
+   "endMs": "600360",
+   "startTimeText": "9:56"
+  },
+  {
+   "text": "uh",
+   "startMs": "599720",
+   "endMs": "601520",
+   "startTimeText": "9:59"
+  },
+  {
+   "text": "then",
+   "startMs": "600360",
+   "endMs": "603640",
+   "startTimeText": "10:00"
+  },
+  {
+   "text": "you have no idea what's the the state of",
+   "startMs": "601520",
+   "endMs": "605240",
+   "startTimeText": "10:01"
+  },
+  {
+   "text": "mind of the speaker.",
+   "startMs": "603640",
+   "endMs": "606680",
+   "startTimeText": "10:03"
+  },
+  {
+   "text": "But that's not yet speaker diarization.",
+   "startMs": "605240",
+   "endMs": "608880",
+   "startTimeText": "10:05"
+  },
+  {
+   "text": "Speaker diarization goes all the way to",
+   "startMs": "606680",
+   "endMs": "612920",
+   "startTimeText": "10:06"
+  },
+  {
+   "text": "actually assigning a speaker identity to",
+   "startMs": "608880",
+   "endMs": "615880",
+   "startTimeText": "10:08"
+  },
+  {
+   "text": "each speech turn.",
+   "startMs": "612920",
+   "endMs": "617520",
+   "startTimeText": "10:12"
+  },
+  {
+   "text": "And",
+   "startMs": "615880",
+   "endMs": "619480",
+   "startTimeText": "10:15"
+  },
+  {
+   "text": "so here in this example, the the speaker",
+   "startMs": "617520",
+   "endMs": "621000",
+   "startTimeText": "10:17"
+  },
+  {
+   "text": "diarization system automatically",
+   "startMs": "619480",
+   "endMs": "622760",
+   "startTimeText": "10:19"
+  },
+  {
+   "text": "detected that there are two speakers,",
+   "startMs": "621000",
+   "endMs": "625560",
+   "startTimeText": "10:21"
+  },
+  {
+   "text": "the green one and the black one.",
+   "startMs": "622760",
+   "endMs": "626600",
+   "startTimeText": "10:22"
+  },
+  {
+   "text": "Um",
+   "startMs": "625560",
+   "endMs": "629040",
+   "startTimeText": "10:25"
+  },
+  {
+   "text": "but we usually don't have any prior",
+   "startMs": "626600",
+   "endMs": "631320",
+   "startTimeText": "10:26"
+  },
+  {
+   "text": "knowledge on the actual number of",
+   "startMs": "629040",
+   "endMs": "633240",
+   "startTimeText": "10:29"
+  },
+  {
+   "text": "speakers in the conversation.",
+   "startMs": "631320",
+   "endMs": "635720",
+   "startTimeText": "10:31"
+  },
+  {
+   "text": "You might have some kind of",
+   "startMs": "633240",
+   "endMs": "638080",
+   "startTimeText": "10:33"
+  },
+  {
+   "text": "guidance on I don't know if if you are",
+   "startMs": "635720",
+   "endMs": "640000",
+   "startTimeText": "10:35"
+  },
+  {
+   "text": "meeting a note taker for instance, you",
+   "startMs": "638080",
+   "endMs": "641920",
+   "startTimeText": "10:38"
+  },
+  {
+   "text": "you have the list of attendees.",
+   "startMs": "640000",
+   "endMs": "643400",
+   "startTimeText": "10:40"
+  },
+  {
+   "text": "So you might have an idea of the number",
+   "startMs": "641920",
+   "endMs": "645480",
+   "startTimeText": "10:41"
+  },
+  {
+   "text": "of people that were invited but that",
+   "startMs": "643400",
+   "endMs": "648920",
+   "startTimeText": "10:43"
+  },
+  {
+   "text": "doesn't mean that uh someone two people",
+   "startMs": "645480",
+   "endMs": "651720",
+   "startTimeText": "10:45"
+  },
+  {
+   "text": "joined from the same channel or or that",
+   "startMs": "648920",
+   "endMs": "653320",
+   "startTimeText": "10:48"
+  },
+  {
+   "text": "an attendee that was not invited",
+   "startMs": "651720",
+   "endMs": "656720",
+   "startTimeText": "10:51"
+  },
+  {
+   "text": "actually joining finally and uh so that",
+   "startMs": "653320",
+   "endMs": "659280",
+   "startTimeText": "10:53"
+  },
+  {
+   "text": "makes the problem uh kind of difficult",
+   "startMs": "656720",
+   "endMs": "660880",
+   "startTimeText": "10:56"
+  },
+  {
+   "text": "in the sense that we don't know in",
+   "startMs": "659280",
+   "endMs": "663240",
+   "startTimeText": "10:59"
+  },
+  {
+   "text": "advance the number of classes that we're",
+   "startMs": "660880",
+   "endMs": "666280",
+   "startTimeText": "11:00"
+  },
+  {
+   "text": "supposed to detect contrary to other",
+   "startMs": "663240",
+   "endMs": "667600",
+   "startTimeText": "11:03"
+  },
+  {
+   "text": "let's say classical machine learning",
+   "startMs": "666280",
+   "endMs": "668680",
+   "startTimeText": "11:06"
+  },
+  {
+   "text": "problems.",
+   "startMs": "667600",
+   "endMs": "671280",
+   "startTimeText": "11:07"
+  },
+  {
+   "text": "And also we don't know the identity of",
+   "startMs": "668680",
+   "endMs": "674240",
+   "startTimeText": "11:08"
+  },
+  {
+   "text": "the speaker that we're supposed to",
+   "startMs": "671280",
+   "endMs": "676600",
+   "startTimeText": "11:11"
+  },
+  {
+   "text": "diarize. In the sense that speaker",
+   "startMs": "674240",
+   "endMs": "679400",
+   "startTimeText": "11:14"
+  },
+  {
+   "text": "diarization does not really output",
+   "startMs": "676600",
+   "endMs": "681280",
+   "startTimeText": "11:16"
+  },
+  {
+   "text": "John, Hervé, and",
+   "startMs": "679400",
+   "endMs": "683160",
+   "startTimeText": "11:19"
+  },
+  {
+   "text": "and and Jack",
+   "startMs": "681280",
+   "endMs": "684720",
+   "startTimeText": "11:21"
+  },
+  {
+   "text": "but basically it's more like speaker",
+   "startMs": "683160",
+   "endMs": "686760",
+   "startTimeText": "11:23"
+  },
+  {
+   "text": "one, speaker two, speaker three and they",
+   "startMs": "684720",
+   "endMs": "689560",
+   "startTimeText": "11:24"
+  },
+  {
+   "text": "can be permuted and it's still correct.",
+   "startMs": "686760",
+   "endMs": "692320",
+   "startTimeText": "11:26"
+  },
+  {
+   "text": "For example, in this example if I just",
+   "startMs": "689560",
+   "endMs": "695000",
+   "startTimeText": "11:29"
+  },
+  {
+   "text": "change green into black and black into",
+   "startMs": "692320",
+   "endMs": "697440",
+   "startTimeText": "11:32"
+  },
+  {
+   "text": "green, the diarization is still exactly",
+   "startMs": "695000",
+   "endMs": "699160",
+   "startTimeText": "11:35"
+  },
+  {
+   "text": "the same from the point of view of the",
+   "startMs": "697440",
+   "endMs": "700640",
+   "startTimeText": "11:37"
+  },
+  {
+   "text": "evaluation metrics that I'm going to",
+   "startMs": "699160",
+   "endMs": "702280",
+   "startTimeText": "11:39"
+  },
+  {
+   "text": "talk about and uh",
+   "startMs": "700640",
+   "endMs": "703920",
+   "startTimeText": "11:40"
+  },
+  {
+   "text": "uh from the point of view of the actual",
+   "startMs": "702280",
+   "endMs": "706280",
+   "startTimeText": "11:42"
+  },
+  {
+   "text": "speaker diarization task.",
+   "startMs": "703920",
+   "endMs": "708920",
+   "startTimeText": "11:43"
+  },
+  {
+   "text": "So, that makes the uh this problem kind",
+   "startMs": "706280",
+   "endMs": "711320",
+   "startTimeText": "11:46"
+  },
+  {
+   "text": "of difficult and that's why even though",
+   "startMs": "708920",
+   "endMs": "713080",
+   "startTimeText": "11:48"
+  },
+  {
+   "text": "uh the community has been working on",
+   "startMs": "711320",
+   "endMs": "715400",
+   "startTimeText": "11:51"
+  },
+  {
+   "text": "this topic for a long time now, it's",
+   "startMs": "713080",
+   "endMs": "717480",
+   "startTimeText": "11:53"
+  },
+  {
+   "text": "still not solved. Uh there are other",
+   "startMs": "715400",
+   "endMs": "719280",
+   "startTimeText": "11:55"
+  },
+  {
+   "text": "reasons like the fact that we have to",
+   "startMs": "717480",
+   "endMs": "721240",
+   "startTimeText": "11:57"
+  },
+  {
+   "text": "detect overlapping speech to handle",
+   "startMs": "719280",
+   "endMs": "724120",
+   "startTimeText": "11:59"
+  },
+  {
+   "text": "overlapping speech, uh that we have to",
+   "startMs": "721240",
+   "endMs": "724920",
+   "startTimeText": "12:01"
+  },
+  {
+   "text": "uh",
+   "startMs": "724120",
+   "endMs": "726640",
+   "startTimeText": "12:04"
+  },
+  {
+   "text": "uh take into account very short speech",
+   "startMs": "724920",
+   "endMs": "728400",
+   "startTimeText": "12:04"
+  },
+  {
+   "text": "turns, that don't have to take into",
+   "startMs": "726640",
+   "endMs": "729400",
+   "startTimeText": "12:06"
+  },
+  {
+   "text": "account",
+   "startMs": "728400",
+   "endMs": "731280",
+   "startTimeText": "12:08"
+  },
+  {
+   "text": "imbalance between the speech time of",
+   "startMs": "729400",
+   "endMs": "732600",
+   "startTimeText": "12:09"
+  },
+  {
+   "text": "multiple speakers in the in the",
+   "startMs": "731280",
+   "endMs": "733960",
+   "startTimeText": "12:11"
+  },
+  {
+   "text": "conversation. All of that makes the",
+   "startMs": "732600",
+   "endMs": "736920",
+   "startTimeText": "12:12"
+  },
+  {
+   "text": "problem difficult. On top of the usual",
+   "startMs": "733960",
+   "endMs": "739200",
+   "startTimeText": "12:13"
+  },
+  {
+   "text": "acoustic conditions uh problems and",
+   "startMs": "736920",
+   "endMs": "741840",
+   "startTimeText": "12:16"
+  },
+  {
+   "text": "everything that any speech processing uh",
+   "startMs": "739200",
+   "endMs": "742840",
+   "startTimeText": "12:19"
+  },
+  {
+   "text": "um",
+   "startMs": "741840",
+   "endMs": "743440",
+   "startTimeText": "12:21"
+  },
+  {
+   "text": "uh",
+   "startMs": "742840",
+   "endMs": "746760",
+   "startTimeText": "12:22"
+  },
+  {
+   "text": "task have to deal with.",
+   "startMs": "743440",
+   "endMs": "746760",
+   "startTimeText": "12:23"
+  },
+  {
+   "text": "So, uh I'm going to switch to a demo to",
+   "startMs": "747200",
+   "endMs": "752160",
+   "startTimeText": "12:27"
+  },
+  {
+   "text": "to to show you a a bit more how the",
+   "startMs": "750080",
+   "endMs": "754720",
+   "startTimeText": "12:30"
+  },
+  {
+   "text": "diarization system are evaluated. Um",
+   "startMs": "752160",
+   "endMs": "756640",
+   "startTimeText": "12:32"
+  },
+  {
+   "text": "maybe when you you you stumble in into",
+   "startMs": "754720",
+   "endMs": "758880",
+   "startTimeText": "12:34"
+  },
+  {
+   "text": "benchmark, you you find this DER",
+   "startMs": "756640",
+   "endMs": "760400",
+   "startTimeText": "12:36"
+  },
+  {
+   "text": "acronym, which is a",
+   "startMs": "758880",
+   "endMs": "762480",
+   "startTimeText": "12:38"
+  },
+  {
+   "text": "stands for diarization error rate.",
+   "startMs": "760400",
+   "endMs": "765600",
+   "startTimeText": "12:40"
+  },
+  {
+   "text": "And uh so, hopefully um",
+   "startMs": "762480",
+   "endMs": "767120",
+   "startTimeText": "12:42"
+  },
+  {
+   "text": "this will work.",
+   "startMs": "765600",
+   "endMs": "769160",
+   "startTimeText": "12:45"
+  },
+  {
+   "text": "So, uh I have here",
+   "startMs": "767120",
+   "endMs": "769880",
+   "startTimeText": "12:47"
+  },
+  {
+   "text": "a",
+   "startMs": "769160",
+   "endMs": "772839",
+   "startTimeText": "12:49"
+  },
+  {
+   "text": "Python notebook uh that I've prepared",
+   "startMs": "769880",
+   "endMs": "775680",
+   "startTimeText": "12:49"
+  },
+  {
+   "text": "for for this talk. It's actually already",
+   "startMs": "772839",
+   "endMs": "777200",
+   "startTimeText": "12:52"
+  },
+  {
+   "text": "available on GitHub. I'll show you the",
+   "startMs": "775680",
+   "endMs": "778440",
+   "startTimeText": "12:55"
+  },
+  {
+   "text": "the QR code at the end of the",
+   "startMs": "777200",
+   "endMs": "780440",
+   "startTimeText": "12:57"
+  },
+  {
+   "text": "presentation, so you can play with it.",
+   "startMs": "778440",
+   "endMs": "782200",
+   "startTimeText": "12:58"
+  },
+  {
+   "text": "But, so in this example, I have a",
+   "startMs": "780440",
+   "endMs": "784200",
+   "startTimeText": "13:00"
+  },
+  {
+   "text": "conversation between two women talking",
+   "startMs": "782200",
+   "endMs": "785400",
+   "startTimeText": "13:02"
+  },
+  {
+   "text": "over the phone.",
+   "startMs": "784200",
+   "endMs": "786320",
+   "startTimeText": "13:04"
+  },
+  {
+   "text": ">> Hello.",
+   "startMs": "785400",
+   "endMs": "787000",
+   "startTimeText": "13:05"
+  },
+  {
+   "text": ">> Hello.",
+   "startMs": "786320",
+   "endMs": "788640",
+   "startTimeText": "13:06"
+  },
+  {
+   "text": ">> Oh, hello. I didn't know you were there.",
+   "startMs": "787000",
+   "endMs": "789839",
+   "startTimeText": "13:07"
+  },
+  {
+   "text": ">> Neither did I.",
+   "startMs": "788640",
+   "endMs": "791160",
+   "startTimeText": "13:08"
+  },
+  {
+   "text": ">> I thought, you know, I heard a beep.",
+   "startMs": "789839",
+   "endMs": "793040",
+   "startTimeText": "13:09"
+  },
+  {
+   "text": "This is Diane in New Jersey.",
+   "startMs": "791160",
+   "endMs": "795760",
+   "startTimeText": "13:11"
+  },
+  {
+   "text": ">> And I'm Sheila in Texas, originally from",
+   "startMs": "793040",
+   "endMs": "796720",
+   "startTimeText": "13:13"
+  },
+  {
+   "text": "Chicago.",
+   "startMs": "795760",
+   "endMs": "798760",
+   "startTimeText": "13:15"
+  },
+  {
+   "text": ">> Oh, I'm originally from Chicago, also.",
+   "startMs": "796720",
+   "endMs": "800880",
+   "startTimeText": "13:16"
+  },
+  {
+   "text": "I'm in New Jersey now, though.",
+   "startMs": "798760",
+   "endMs": "802080",
+   "startTimeText": "13:18"
+  },
+  {
+   "text": ">> Okay, so you you get the idea. A",
+   "startMs": "800880",
+   "endMs": "803720",
+   "startTimeText": "13:20"
+  },
+  {
+   "text": "30-seconds conversation between two",
+   "startMs": "802080",
+   "endMs": "805520",
+   "startTimeText": "13:22"
+  },
+  {
+   "text": "women. So, this is the expected output",
+   "startMs": "803720",
+   "endMs": "807240",
+   "startTimeText": "13:23"
+  },
+  {
+   "text": "of a perfect speaker attribute either",
+   "startMs": "805520",
+   "endMs": "808640",
+   "startTimeText": "13:25"
+  },
+  {
+   "text": "transcription. This was manually",
+   "startMs": "807240",
+   "endMs": "809720",
+   "startTimeText": "13:27"
+  },
+  {
+   "text": "labeled.",
+   "startMs": "808640",
+   "endMs": "810960",
+   "startTimeText": "13:28"
+  },
+  {
+   "text": "And now",
+   "startMs": "809720",
+   "endMs": "813120",
+   "startTimeText": "13:29"
+  },
+  {
+   "text": "what I'm going to to to do this here is",
+   "startMs": "810960",
+   "endMs": "815720",
+   "startTimeText": "13:30"
+  },
+  {
+   "text": "actually run piano open source community",
+   "startMs": "813120",
+   "endMs": "816880",
+   "startTimeText": "13:33"
+  },
+  {
+   "text": "one model",
+   "startMs": "815720",
+   "endMs": "818480",
+   "startTimeText": "13:35"
+  },
+  {
+   "text": "on this same file. So it's actually",
+   "startMs": "816880",
+   "endMs": "821040",
+   "startTimeText": "13:36"
+  },
+  {
+   "text": "running right now on my Mac. So that's",
+   "startMs": "818480",
+   "endMs": "824800",
+   "startTimeText": "13:38"
+  },
+  {
+   "text": "why here I'm using this MPS PyTorch",
+   "startMs": "821040",
+   "endMs": "827480",
+   "startTimeText": "13:41"
+  },
+  {
+   "text": "backend. So how it works is that you",
+   "startMs": "824800",
+   "endMs": "829640",
+   "startTimeText": "13:44"
+  },
+  {
+   "text": "first download the model from hugging",
+   "startMs": "827480",
+   "endMs": "830960",
+   "startTimeText": "13:47"
+  },
+  {
+   "text": "face with this",
+   "startMs": "829640",
+   "endMs": "833120",
+   "startTimeText": "13:49"
+  },
+  {
+   "text": "line of code and simply",
+   "startMs": "830960",
+   "endMs": "835680",
+   "startTimeText": "13:50"
+  },
+  {
+   "text": "apply it on on the audio file. So now",
+   "startMs": "833120",
+   "endMs": "837960",
+   "startTimeText": "13:53"
+  },
+  {
+   "text": "it's finished and there's the this",
+   "startMs": "835680",
+   "endMs": "841560",
+   "startTimeText": "13:55"
+  },
+  {
+   "text": "prediction variable that contains um",
+   "startMs": "837960",
+   "endMs": "842480",
+   "startTimeText": "13:57"
+  },
+  {
+   "text": "uh",
+   "startMs": "841560",
+   "endMs": "844400",
+   "startTimeText": "14:01"
+  },
+  {
+   "text": "sorry, I should have done that on the",
+   "startMs": "842480",
+   "endMs": "846200",
+   "startTimeText": "14:02"
+  },
+  {
+   "text": "other tab because this was the one that",
+   "startMs": "844400",
+   "endMs": "848040",
+   "startTimeText": "14:04"
+  },
+  {
+   "text": "was already processed. I wanted to do it",
+   "startMs": "846200",
+   "endMs": "850520",
+   "startTimeText": "14:06"
+  },
+  {
+   "text": "live. So let's do it live now. So it's",
+   "startMs": "848040",
+   "endMs": "852640",
+   "startTimeText": "14:08"
+  },
+  {
+   "text": "running. And so the the next step is to",
+   "startMs": "850520",
+   "endMs": "854920",
+   "startTimeText": "14:10"
+  },
+  {
+   "text": "actually visualize the errors that",
+   "startMs": "852640",
+   "endMs": "857200",
+   "startTimeText": "14:12"
+  },
+  {
+   "text": "this system made. So",
+   "startMs": "854920",
+   "endMs": "859640",
+   "startTimeText": "14:14"
+  },
+  {
+   "text": "at the top here you have the reference",
+   "startMs": "857200",
+   "endMs": "861440",
+   "startTimeText": "14:17"
+  },
+  {
+   "text": "annotation. So the expected output of",
+   "startMs": "859640",
+   "endMs": "863680",
+   "startTimeText": "14:19"
+  },
+  {
+   "text": "diarization and here is the output of",
+   "startMs": "861440",
+   "endMs": "865160",
+   "startTimeText": "14:21"
+  },
+  {
+   "text": "community one",
+   "startMs": "863680",
+   "endMs": "867760",
+   "startTimeText": "14:23"
+  },
+  {
+   "text": "uh speaker diarization uh pipeline",
+   "startMs": "865160",
+   "endMs": "870000",
+   "startTimeText": "14:25"
+  },
+  {
+   "text": "uh that is open source and free to use.",
+   "startMs": "867760",
+   "endMs": "871760",
+   "startTimeText": "14:27"
+  },
+  {
+   "text": "So it makes three kinds of mistake as I",
+   "startMs": "870000",
+   "endMs": "873880",
+   "startTimeText": "14:30"
+  },
+  {
+   "text": "was saying like a confusion here it got",
+   "startMs": "871760",
+   "endMs": "876839",
+   "startTimeText": "14:31"
+  },
+  {
+   "text": "the speaker wrong. Uh it can also make",
+   "startMs": "873880",
+   "endMs": "878960",
+   "startTimeText": "14:33"
+  },
+  {
+   "text": "uh false alarms. Uh so false alarm is",
+   "startMs": "876839",
+   "endMs": "880600",
+   "startTimeText": "14:36"
+  },
+  {
+   "text": "when it detects speech when there's",
+   "startMs": "878960",
+   "endMs": "883120",
+   "startTimeText": "14:38"
+  },
+  {
+   "text": "actually no speech in the ground truth.",
+   "startMs": "880600",
+   "endMs": "884760",
+   "startTimeText": "14:40"
+  },
+  {
+   "text": "And misdetection is the other way",
+   "startMs": "883120",
+   "endMs": "885800",
+   "startTimeText": "14:43"
+  },
+  {
+   "text": "around.",
+   "startMs": "884760",
+   "endMs": "888040",
+   "startTimeText": "14:44"
+  },
+  {
+   "text": "And misdetection can actually",
+   "startMs": "885800",
+   "endMs": "890160",
+   "startTimeText": "14:45"
+  },
+  {
+   "text": "uh happen for instance here during",
+   "startMs": "888040",
+   "endMs": "891960",
+   "startTimeText": "14:48"
+  },
+  {
+   "text": "overlapping speech when we actually",
+   "startMs": "890160",
+   "endMs": "893600",
+   "startTimeText": "14:50"
+  },
+  {
+   "text": "detect only one of the two speakers",
+   "startMs": "891960",
+   "endMs": "895760",
+   "startTimeText": "14:51"
+  },
+  {
+   "text": "here.",
+   "startMs": "893600",
+   "endMs": "897560",
+   "startTimeText": "14:53"
+  },
+  {
+   "text": "And then once we have these",
+   "startMs": "895760",
+   "endMs": "899600",
+   "startTimeText": "14:55"
+  },
+  {
+   "text": "basically errors of",
+   "startMs": "897560",
+   "endMs": "901120",
+   "startTimeText": "14:57"
+  },
+  {
+   "text": "false alarm, confusion, and and",
+   "startMs": "899600",
+   "endMs": "903640",
+   "startTimeText": "14:59"
+  },
+  {
+   "text": "misdetection we we can actually compute",
+   "startMs": "901120",
+   "endMs": "906120",
+   "startTimeText": "15:01"
+  },
+  {
+   "text": "the diarization error rate. Uh",
+   "startMs": "903640",
+   "endMs": "907560",
+   "startTimeText": "15:03"
+  },
+  {
+   "text": "so this is with this library called",
+   "startMs": "906120",
+   "endMs": "909760",
+   "startTimeText": "15:06"
+  },
+  {
+   "text": "PyAnnotate metrics. And basically it",
+   "startMs": "907560",
+   "endMs": "912720",
+   "startTimeText": "15:07"
+  },
+  {
+   "text": "gives us in this example 5% diarization",
+   "startMs": "909760",
+   "endMs": "915000",
+   "startTimeText": "15:09"
+  },
+  {
+   "text": "error rate which is basically the sum of",
+   "startMs": "912720",
+   "endMs": "917920",
+   "startTimeText": "15:12"
+  },
+  {
+   "text": "the confusion uh uh false alarm and",
+   "startMs": "915000",
+   "endMs": "920360",
+   "startTimeText": "15:15"
+  },
+  {
+   "text": "misdetection divided by the the total",
+   "startMs": "917920",
+   "endMs": "921920",
+   "startTimeText": "15:17"
+  },
+  {
+   "text": "duration of uh",
+   "startMs": "920360",
+   "endMs": "924080",
+   "startTimeText": "15:20"
+  },
+  {
+   "text": "of speech in in this",
+   "startMs": "921920",
+   "endMs": "925680",
+   "startTimeText": "15:21"
+  },
+  {
+   "text": "in this file.",
+   "startMs": "924080",
+   "endMs": "926960",
+   "startTimeText": "15:24"
+  },
+  {
+   "text": "And",
+   "startMs": "925680",
+   "endMs": "928120",
+   "startTimeText": "15:25"
+  },
+  {
+   "text": "so",
+   "startMs": "926960",
+   "endMs": "929560",
+   "startTimeText": "15:26"
+  },
+  {
+   "text": "we have this other model that I'm",
+   "startMs": "928120",
+   "endMs": "931800",
+   "startTimeText": "15:28"
+  },
+  {
+   "text": "currently running. Hopefully it work it",
+   "startMs": "929560",
+   "endMs": "934640",
+   "startTimeText": "15:29"
+  },
+  {
+   "text": "works. So it's running right now on our",
+   "startMs": "931800",
+   "endMs": "936080",
+   "startTimeText": "15:31"
+  },
+  {
+   "text": "cloud API.",
+   "startMs": "934640",
+   "endMs": "937920",
+   "startTimeText": "15:34"
+  },
+  {
+   "text": "Basically it's a",
+   "startMs": "936080",
+   "endMs": "939480",
+   "startTimeText": "15:36"
+  },
+  {
+   "text": "a better model that community one that",
+   "startMs": "937920",
+   "endMs": "941760",
+   "startTimeText": "15:37"
+  },
+  {
+   "text": "we call precision two that is a",
+   "startMs": "939480",
+   "endMs": "945640",
+   "startTimeText": "15:39"
+  },
+  {
+   "text": "running here. Hopefully it will work but",
+   "startMs": "941760",
+   "endMs": "948560",
+   "startTimeText": "15:41"
+  },
+  {
+   "text": "as for every demo it might fail. If no",
+   "startMs": "945640",
+   "endMs": "950680",
+   "startTimeText": "15:45"
+  },
+  {
+   "text": "it worked. And this is the kind of",
+   "startMs": "948560",
+   "endMs": "952480",
+   "startTimeText": "15:48"
+  },
+  {
+   "text": "output that you can get. So you see that",
+   "startMs": "950680",
+   "endMs": "956000",
+   "startTimeText": "15:50"
+  },
+  {
+   "text": "it got the speaker right here and makes",
+   "startMs": "952480",
+   "endMs": "958200",
+   "startTimeText": "15:52"
+  },
+  {
+   "text": "slightly less mistakes in terms of false",
+   "startMs": "956000",
+   "endMs": "959960",
+   "startTimeText": "15:56"
+  },
+  {
+   "text": "alarm and misdetection.",
+   "startMs": "958200",
+   "endMs": "961680",
+   "startTimeText": "15:58"
+  },
+  {
+   "text": "And overall in this example I think we",
+   "startMs": "959960",
+   "endMs": "967280",
+   "startTimeText": "15:59"
+  },
+  {
+   "text": "got a 3% diarization error rate here.",
+   "startMs": "961680",
+   "endMs": "967280",
+   "startTimeText": "16:01"
+  },
+  {
+   "text": "So let me switch back to the",
+   "startMs": "967320",
+   "endMs": "971520",
+   "startTimeText": "16:07"
+  },
+  {
+   "text": "to the presentation.",
+   "startMs": "969920",
+   "endMs": "974160",
+   "startTimeText": "16:09"
+  },
+  {
+   "text": "So this was about benchmarking speaker",
+   "startMs": "971520",
+   "endMs": "976200",
+   "startTimeText": "16:11"
+  },
+  {
+   "text": "diarization model and I'm often asked",
+   "startMs": "974160",
+   "endMs": "978080",
+   "startTimeText": "16:14"
+  },
+  {
+   "text": "how well does state of the art speaker",
+   "startMs": "976200",
+   "endMs": "980040",
+   "startTimeText": "16:16"
+  },
+  {
+   "text": "diarization works today. And it's a",
+   "startMs": "978080",
+   "endMs": "981520",
+   "startTimeText": "16:18"
+  },
+  {
+   "text": "difficult question to answer because",
+   "startMs": "980040",
+   "endMs": "982960",
+   "startTimeText": "16:20"
+  },
+  {
+   "text": "really depending on the use case it",
+   "startMs": "981520",
+   "endMs": "985680",
+   "startTimeText": "16:21"
+  },
+  {
+   "text": "might vary completely. For instance in",
+   "startMs": "982960",
+   "endMs": "988400",
+   "startTimeText": "16:22"
+  },
+  {
+   "text": "this example we have a here conversation",
+   "startMs": "985680",
+   "endMs": "990040",
+   "startTimeText": "16:25"
+  },
+  {
+   "text": "telephone speech like the one we just",
+   "startMs": "988400",
+   "endMs": "991440",
+   "startTimeText": "16:28"
+  },
+  {
+   "text": "listened to like two person over the",
+   "startMs": "990040",
+   "endMs": "993960",
+   "startTimeText": "16:30"
+  },
+  {
+   "text": "phone. And we we can go down to 8%",
+   "startMs": "991440",
+   "endMs": "995680",
+   "startTimeText": "16:31"
+  },
+  {
+   "text": "diarization error rate. The best system",
+   "startMs": "993960",
+   "endMs": "998680",
+   "startTimeText": "16:33"
+  },
+  {
+   "text": "does that. But if if you are not in a",
+   "startMs": "995680",
+   "endMs": "1000960",
+   "startTimeText": "16:35"
+  },
+  {
+   "text": "restaurant with many friends with lots",
+   "startMs": "998680",
+   "endMs": "1002520",
+   "startTimeText": "16:38"
+  },
+  {
+   "text": "of background noise",
+   "startMs": "1000960",
+   "endMs": "1005120",
+   "startTimeText": "16:40"
+  },
+  {
+   "text": "even the best system reaches like 41%",
+   "startMs": "1002520",
+   "endMs": "1007360",
+   "startTimeText": "16:42"
+  },
+  {
+   "text": "diarization error rate. So it's far from",
+   "startMs": "1005120",
+   "endMs": "1009160",
+   "startTimeText": "16:45"
+  },
+  {
+   "text": "being a solved problem",
+   "startMs": "1007360",
+   "endMs": "1012680",
+   "startTimeText": "16:47"
+  },
+  {
+   "text": "but we are working on that.",
+   "startMs": "1009160",
+   "endMs": "1012680",
+   "startTimeText": "16:49"
+  },
+  {
+   "text": "And",
+   "startMs": "1012880",
+   "endMs": "1016160",
+   "startTimeText": "16:52"
+  },
+  {
+   "text": "so once you have speaker diarization and",
+   "startMs": "1013880",
+   "endMs": "1018160",
+   "startTimeText": "16:53"
+  },
+  {
+   "text": "you have transcription shouldn't be that",
+   "startMs": "1016160",
+   "endMs": "1019960",
+   "startTimeText": "16:56"
+  },
+  {
+   "text": "hard to actually find the speaker",
+   "startMs": "1018160",
+   "endMs": "1021240",
+   "startTimeText": "16:58"
+  },
+  {
+   "text": "attributed transcription right? It's",
+   "startMs": "1019960",
+   "endMs": "1023440",
+   "startTimeText": "16:59"
+  },
+  {
+   "text": "just a matter of you know assigning a",
+   "startMs": "1021240",
+   "endMs": "1026000",
+   "startTimeText": "17:01"
+  },
+  {
+   "text": "word to a speaker speaker to a word.",
+   "startMs": "1023440",
+   "endMs": "1028480",
+   "startTimeText": "17:03"
+  },
+  {
+   "text": "But actually that's not that",
+   "startMs": "1026000",
+   "endMs": "1030480",
+   "startTimeText": "17:06"
+  },
+  {
+   "text": "easy. And I'll",
+   "startMs": "1028480",
+   "endMs": "1031760",
+   "startTimeText": "17:08"
+  },
+  {
+   "text": "there there are many reason why that's",
+   "startMs": "1030480",
+   "endMs": "1033880",
+   "startTimeText": "17:10"
+  },
+  {
+   "text": "not that easy. The first reason is that",
+   "startMs": "1031760",
+   "endMs": "1036760",
+   "startTimeText": "17:11"
+  },
+  {
+   "text": "most speech to text models are actually",
+   "startMs": "1033880",
+   "endMs": "1039480",
+   "startTimeText": "17:13"
+  },
+  {
+   "text": "trained on single speaker data. As soon",
+   "startMs": "1036760",
+   "endMs": "1041240",
+   "startTimeText": "17:16"
+  },
+  {
+   "text": "as you apply them on multi-speaker data",
+   "startMs": "1039480",
+   "endMs": "1042959",
+   "startTimeText": "17:19"
+  },
+  {
+   "text": "with overlap, with speaker change, with",
+   "startMs": "1041240",
+   "endMs": "1046400",
+   "startTimeText": "17:21"
+  },
+  {
+   "text": "all kind of mess, they completely",
+   "startMs": "1042959",
+   "endMs": "1048720",
+   "startTimeText": "17:22"
+  },
+  {
+   "text": "they fail miserably. So, for instance,",
+   "startMs": "1046400",
+   "endMs": "1049960",
+   "startTimeText": "17:26"
+  },
+  {
+   "text": "when you look at the open ASR",
+   "startMs": "1048720",
+   "endMs": "1051800",
+   "startTimeText": "17:28"
+  },
+  {
+   "text": "leaderboard from the Hugging Face, if we",
+   "startMs": "1049960",
+   "endMs": "1053360",
+   "startTimeText": "17:29"
+  },
+  {
+   "text": "look for instance at NVIDIA Parakeet",
+   "startMs": "1051800",
+   "endMs": "1055080",
+   "startTimeText": "17:31"
+  },
+  {
+   "text": "that we are using",
+   "startMs": "1053360",
+   "endMs": "1056720",
+   "startTimeText": "17:33"
+  },
+  {
+   "text": "that I will be using in the in the demo",
+   "startMs": "1055080",
+   "endMs": "1058560",
+   "startTimeText": "17:35"
+  },
+  {
+   "text": "right after that,",
+   "startMs": "1056720",
+   "endMs": "1061480",
+   "startTimeText": "17:36"
+  },
+  {
+   "text": "they report 11.4",
+   "startMs": "1058560",
+   "endMs": "1063840",
+   "startTimeText": "17:38"
+  },
+  {
+   "text": "% word error rate.",
+   "startMs": "1061480",
+   "endMs": "1065480",
+   "startTimeText": "17:41"
+  },
+  {
+   "text": "When we apply the very same model on the",
+   "startMs": "1063840",
+   "endMs": "1066680",
+   "startTimeText": "17:43"
+  },
+  {
+   "text": "same AMI",
+   "startMs": "1065480",
+   "endMs": "1069800",
+   "startTimeText": "17:45"
+  },
+  {
+   "text": "um on",
+   "startMs": "1066680",
+   "endMs": "1073240",
+   "startTimeText": "17:46"
+  },
+  {
+   "text": "on our side, we we get 26%. So, the",
+   "startMs": "1069800",
+   "endMs": "1075320",
+   "startTimeText": "17:49"
+  },
+  {
+   "text": "question is why is there a difference?",
+   "startMs": "1073240",
+   "endMs": "1077000",
+   "startTimeText": "17:53"
+  },
+  {
+   "text": "Actually, it's in the way that those",
+   "startMs": "1075320",
+   "endMs": "1079480",
+   "startTimeText": "17:55"
+  },
+  {
+   "text": "benchmarks are set up here on the uh",
+   "startMs": "1077000",
+   "endMs": "1081440",
+   "startTimeText": "17:57"
+  },
+  {
+   "text": "uh for for example, in this AMI data",
+   "startMs": "1079480",
+   "endMs": "1083160",
+   "startTimeText": "17:59"
+  },
+  {
+   "text": "set, that's",
+   "startMs": "1081440",
+   "endMs": "1084320",
+   "startTimeText": "18:01"
+  },
+  {
+   "text": "a meet",
+   "startMs": "1083160",
+   "endMs": "1087200",
+   "startTimeText": "18:03"
+  },
+  {
+   "text": "uh data sets with meetings uh between",
+   "startMs": "1084320",
+   "endMs": "1088760",
+   "startTimeText": "18:04"
+  },
+  {
+   "text": "four to five people, I think, in meeting",
+   "startMs": "1087200",
+   "endMs": "1089680",
+   "startTimeText": "18:07"
+  },
+  {
+   "text": "rooms.",
+   "startMs": "1088760",
+   "endMs": "1091720",
+   "startTimeText": "18:08"
+  },
+  {
+   "text": "And they are basically microphones like",
+   "startMs": "1089680",
+   "endMs": "1094320",
+   "startTimeText": "18:09"
+  },
+  {
+   "text": "the one I'm I'm having here, so headset",
+   "startMs": "1091720",
+   "endMs": "1096200",
+   "startTimeText": "18:11"
+  },
+  {
+   "text": "microphone, as well as one microphone in",
+   "startMs": "1094320",
+   "endMs": "1098040",
+   "startTimeText": "18:14"
+  },
+  {
+   "text": "the middle of the table.",
+   "startMs": "1096200",
+   "endMs": "1101040",
+   "startTimeText": "18:16"
+  },
+  {
+   "text": "And and those numbers here",
+   "startMs": "1098040",
+   "endMs": "1103120",
+   "startTimeText": "18:18"
+  },
+  {
+   "text": "uh on the open ASR leaderboard are based",
+   "startMs": "1101040",
+   "endMs": "1105360",
+   "startTimeText": "18:21"
+  },
+  {
+   "text": "on the headset microphone. Those numbers",
+   "startMs": "1103120",
+   "endMs": "1107400",
+   "startTimeText": "18:23"
+  },
+  {
+   "text": "here uh are based on the microphone that",
+   "startMs": "1105360",
+   "endMs": "1109760",
+   "startTimeText": "18:25"
+  },
+  {
+   "text": "is in the middle. And so, on one side",
+   "startMs": "1107400",
+   "endMs": "1111600",
+   "startTimeText": "18:27"
+  },
+  {
+   "text": "you have a single speaker speech, on the",
+   "startMs": "1109760",
+   "endMs": "1112960",
+   "startTimeText": "18:29"
+  },
+  {
+   "text": "other side you have multi-speaker and",
+   "startMs": "1111600",
+   "endMs": "1114960",
+   "startTimeText": "18:31"
+  },
+  {
+   "text": "even distant microphone speech. So,",
+   "startMs": "1112960",
+   "endMs": "1117360",
+   "startTimeText": "18:32"
+  },
+  {
+   "text": "that's why it degrades uh a lot. And so,",
+   "startMs": "1114960",
+   "endMs": "1119080",
+   "startTimeText": "18:34"
+  },
+  {
+   "text": "that that's that was my point of the of",
+   "startMs": "1117360",
+   "endMs": "1120280",
+   "startTimeText": "18:37"
+  },
+  {
+   "text": "this slide. So,",
+   "startMs": "1119080",
+   "endMs": "1121600",
+   "startTimeText": "18:39"
+  },
+  {
+   "text": "when doing speaker attributed",
+   "startMs": "1120280",
+   "endMs": "1124600",
+   "startTimeText": "18:40"
+  },
+  {
+   "text": "transcription, the um",
+   "startMs": "1121600",
+   "endMs": "1126880",
+   "startTimeText": "18:41"
+  },
+  {
+   "text": "the reason why it it might go wrong is",
+   "startMs": "1124600",
+   "endMs": "1128720",
+   "startTimeText": "18:44"
+  },
+  {
+   "text": "either because STT doesn't work great",
+   "startMs": "1126880",
+   "endMs": "1129640",
+   "startTimeText": "18:46"
+  },
+  {
+   "text": "and",
+   "startMs": "1128720",
+   "endMs": "1131760",
+   "startTimeText": "18:48"
+  },
+  {
+   "text": "uh it's usually the case that they don't",
+   "startMs": "1129640",
+   "endMs": "1134080",
+   "startTimeText": "18:49"
+  },
+  {
+   "text": "generalize uh very well to multi-speaker",
+   "startMs": "1131760",
+   "endMs": "1135560",
+   "startTimeText": "18:51"
+  },
+  {
+   "text": "recordings.",
+   "startMs": "1134080",
+   "endMs": "1137400",
+   "startTimeText": "18:54"
+  },
+  {
+   "text": "For, as I was saying, distant",
+   "startMs": "1135560",
+   "endMs": "1139560",
+   "startTimeText": "18:55"
+  },
+  {
+   "text": "microphone, uh speaker change,",
+   "startMs": "1137400",
+   "endMs": "1142120",
+   "startTimeText": "18:57"
+  },
+  {
+   "text": "crosstalk, interruptions, you name it.",
+   "startMs": "1139560",
+   "endMs": "1144000",
+   "startTimeText": "18:59"
+  },
+  {
+   "text": "Uh maybe code-switching as well when you",
+   "startMs": "1142120",
+   "endMs": "1145200",
+   "startTimeText": "19:02"
+  },
+  {
+   "text": "change language in the middle of a",
+   "startMs": "1144000",
+   "endMs": "1147120",
+   "startTimeText": "19:04"
+  },
+  {
+   "text": "sentence.",
+   "startMs": "1145200",
+   "endMs": "1149080",
+   "startTimeText": "19:05"
+  },
+  {
+   "text": "But also, it's it might uh be because of",
+   "startMs": "1147120",
+   "endMs": "1150800",
+   "startTimeText": "19:07"
+  },
+  {
+   "text": "the actual reconciliation between",
+   "startMs": "1149080",
+   "endMs": "1153920",
+   "startTimeText": "19:09"
+  },
+  {
+   "text": "diarization and STT timestamps.",
+   "startMs": "1150800",
+   "endMs": "1155800",
+   "startTimeText": "19:10"
+  },
+  {
+   "text": "Though it may sound uh uh",
+   "startMs": "1153920",
+   "endMs": "1157760",
+   "startTimeText": "19:13"
+  },
+  {
+   "text": "uh obvious how to do that as I was",
+   "startMs": "1155800",
+   "endMs": "1159880",
+   "startTimeText": "19:15"
+  },
+  {
+   "text": "saying, I will hopefully show in this",
+   "startMs": "1157760",
+   "endMs": "1162080",
+   "startTimeText": "19:17"
+  },
+  {
+   "text": "live demo once again that it's it's not",
+   "startMs": "1159880",
+   "endMs": "1164960",
+   "startTimeText": "19:19"
+  },
+  {
+   "text": "such a an easy problem.",
+   "startMs": "1162080",
+   "endMs": "1166280",
+   "startTimeText": "19:22"
+  },
+  {
+   "text": "Because",
+   "startMs": "1164960",
+   "endMs": "1168240",
+   "startTimeText": "19:24"
+  },
+  {
+   "text": "uh STT does not transcribe overlapping",
+   "startMs": "1166280",
+   "endMs": "1170880",
+   "startTimeText": "19:26"
+  },
+  {
+   "text": "speech well because",
+   "startMs": "1168240",
+   "endMs": "1173440",
+   "startTimeText": "19:28"
+  },
+  {
+   "text": "the timestamps disagree between STT and",
+   "startMs": "1170880",
+   "endMs": "1175880",
+   "startTimeText": "19:30"
+  },
+  {
+   "text": "diarization, and because sometimes",
+   "startMs": "1173440",
+   "endMs": "1177680",
+   "startTimeText": "19:33"
+  },
+  {
+   "text": "diarization will detect speech that the",
+   "startMs": "1175880",
+   "endMs": "1179320",
+   "startTimeText": "19:35"
+  },
+  {
+   "text": "transcription will not transcribe and",
+   "startMs": "1177680",
+   "endMs": "1182160",
+   "startTimeText": "19:37"
+  },
+  {
+   "text": "the other way around.",
+   "startMs": "1179320",
+   "endMs": "1182160",
+   "startTimeText": "19:39"
+  },
+  {
+   "text": "So, um",
+   "startMs": "1183120",
+   "endMs": "1186600",
+   "startTimeText": "19:43"
+  },
+  {
+   "text": "second part of the demo",
+   "startMs": "1184520",
+   "endMs": "1188960",
+   "startTimeText": "19:44"
+  },
+  {
+   "text": "about speaker attributed transcription.",
+   "startMs": "1186600",
+   "endMs": "1189960",
+   "startTimeText": "19:46"
+  },
+  {
+   "text": "So,",
+   "startMs": "1188960",
+   "endMs": "1192360",
+   "startTimeText": "19:48"
+  },
+  {
+   "text": "uh first I'm going to apply this",
+   "startMs": "1189960",
+   "endMs": "1194800",
+   "startTimeText": "19:49"
+  },
+  {
+   "text": "Parakeet model from Nvidia that does a",
+   "startMs": "1192360",
+   "endMs": "1196160",
+   "startTimeText": "19:52"
+  },
+  {
+   "text": "by the way a great job at the",
+   "startMs": "1194800",
+   "endMs": "1198280",
+   "startTimeText": "19:54"
+  },
+  {
+   "text": "transcribing uh",
+   "startMs": "1196160",
+   "endMs": "1200320",
+   "startTimeText": "19:56"
+  },
+  {
+   "text": "uh",
+   "startMs": "1198280",
+   "endMs": "1200320",
+   "startTimeText": "19:58"
+  },
+  {
+   "text": "this sample.",
+   "startMs": "1200640",
+   "endMs": "1203120",
+   "startTimeText": "20:00"
+  },
+  {
+   "text": "And so,",
+   "startMs": "1202080",
+   "endMs": "1204720",
+   "startTimeText": "20:02"
+  },
+  {
+   "text": "Parakeet gives us this kind of output.",
+   "startMs": "1203120",
+   "endMs": "1206960",
+   "startTimeText": "20:03"
+  },
+  {
+   "text": "So, we have this sequence of words and",
+   "startMs": "1204720",
+   "endMs": "1209800",
+   "startTimeText": "20:04"
+  },
+  {
+   "text": "for each word we actually have the",
+   "startMs": "1206960",
+   "endMs": "1211480",
+   "startTimeText": "20:06"
+  },
+  {
+   "text": "corresponding timestamps.",
+   "startMs": "1209800",
+   "endMs": "1213240",
+   "startTimeText": "20:09"
+  },
+  {
+   "text": "Okay? So,",
+   "startMs": "1211480",
+   "endMs": "1214440",
+   "startTimeText": "20:11"
+  },
+  {
+   "text": "I can play it quickly.",
+   "startMs": "1213240",
+   "endMs": "1216280",
+   "startTimeText": "20:13"
+  },
+  {
+   "text": ">> Hello. Oh, hello. I didn't know you were",
+   "startMs": "1214440",
+   "endMs": "1216800",
+   "startTimeText": "20:14"
+  },
+  {
+   "text": "there.",
+   "startMs": "1216280",
+   "endMs": "1217760",
+   "startTimeText": "20:16"
+  },
+  {
+   "text": ">> Neither did I.",
+   "startMs": "1216800",
+   "endMs": "1218960",
+   "startTimeText": "20:16"
+  },
+  {
+   "text": ">> Okay, then. I thought, you know, I heard",
+   "startMs": "1217760",
+   "endMs": "1221720",
+   "startTimeText": "20:17"
+  },
+  {
+   "text": "a beep. This is Diane in New Jersey. Um",
+   "startMs": "1218960",
+   "endMs": "1224680",
+   "startTimeText": "20:18"
+  },
+  {
+   "text": ">> Well, you get the idea. And then,",
+   "startMs": "1221720",
+   "endMs": "1225640",
+   "startTimeText": "20:21"
+  },
+  {
+   "text": "um",
+   "startMs": "1224680",
+   "endMs": "1228040",
+   "startTimeText": "20:24"
+  },
+  {
+   "text": "the question is um",
+   "startMs": "1225640",
+   "endMs": "1230280",
+   "startTimeText": "20:25"
+  },
+  {
+   "text": "now we have our best diarization. This",
+   "startMs": "1228040",
+   "endMs": "1232400",
+   "startTimeText": "20:28"
+  },
+  {
+   "text": "is Precision-2 output here. This is",
+   "startMs": "1230280",
+   "endMs": "1234240",
+   "startTimeText": "20:30"
+  },
+  {
+   "text": "Parakeet output here. And the question",
+   "startMs": "1232400",
+   "endMs": "1236640",
+   "startTimeText": "20:32"
+  },
+  {
+   "text": "is now we need to assign a speaker to",
+   "startMs": "1234240",
+   "endMs": "1239720",
+   "startTimeText": "20:34"
+  },
+  {
+   "text": "each word. So, let's do it step by step",
+   "startMs": "1236640",
+   "endMs": "1240840",
+   "startTimeText": "20:36"
+  },
+  {
+   "text": "for instance.",
+   "startMs": "1239720",
+   "endMs": "1242480",
+   "startTimeText": "20:39"
+  },
+  {
+   "text": "So, in this example,",
+   "startMs": "1240840",
+   "endMs": "1244120",
+   "startTimeText": "20:40"
+  },
+  {
+   "text": "even though the timestamps of the the",
+   "startMs": "1242480",
+   "endMs": "1245240",
+   "startTimeText": "20:42"
+  },
+  {
+   "text": "words",
+   "startMs": "1244120",
+   "endMs": "1247240",
+   "startTimeText": "20:44"
+  },
+  {
+   "text": "are a bit shifted",
+   "startMs": "1245240",
+   "endMs": "1249160",
+   "startTimeText": "20:45"
+  },
+  {
+   "text": "on the left here, it's obvious that it's",
+   "startMs": "1247240",
+   "endMs": "1251240",
+   "startTimeText": "20:47"
+  },
+  {
+   "text": "probably the yellow speaker who spoke",
+   "startMs": "1249160",
+   "endMs": "1253800",
+   "startTimeText": "20:49"
+  },
+  {
+   "text": "the the gray word.",
+   "startMs": "1251240",
+   "endMs": "1256680",
+   "startTimeText": "20:51"
+  },
+  {
+   "text": "But if you go just the third word. So,",
+   "startMs": "1253800",
+   "endMs": "1258080",
+   "startTimeText": "20:53"
+  },
+  {
+   "text": "now we have this.",
+   "startMs": "1256680",
+   "endMs": "1261760",
+   "startTimeText": "20:56"
+  },
+  {
+   "text": "So, we have this word the word O here",
+   "startMs": "1258080",
+   "endMs": "1263840",
+   "startTimeText": "20:58"
+  },
+  {
+   "text": "that is in between those two speech",
+   "startMs": "1261760",
+   "endMs": "1265240",
+   "startTimeText": "21:01"
+  },
+  {
+   "text": "turns according to diarization. Which",
+   "startMs": "1263840",
+   "endMs": "1267360",
+   "startTimeText": "21:03"
+  },
+  {
+   "text": "one do you assign it to?",
+   "startMs": "1265240",
+   "endMs": "1269720",
+   "startTimeText": "21:05"
+  },
+  {
+   "text": "Um so we we I I can listen to it.",
+   "startMs": "1267360",
+   "endMs": "1271320",
+   "startTimeText": "21:07"
+  },
+  {
+   "text": ">> hello.",
+   "startMs": "1269720",
+   "endMs": "1272560",
+   "startTimeText": "21:09"
+  },
+  {
+   "text": "Oh hello.",
+   "startMs": "1271320",
+   "endMs": "1274920",
+   "startTimeText": "21:11"
+  },
+  {
+   "text": ">> Why? It's It's not quite quite sure. And",
+   "startMs": "1272560",
+   "endMs": "1277840",
+   "startTimeText": "21:12"
+  },
+  {
+   "text": "there are many other uh position where",
+   "startMs": "1274920",
+   "endMs": "1279800",
+   "startTimeText": "21:14"
+  },
+  {
+   "text": "it happens here same. There's a word",
+   "startMs": "1277840",
+   "endMs": "1281920",
+   "startTimeText": "21:17"
+  },
+  {
+   "text": "here, okay, that apparently according to",
+   "startMs": "1279800",
+   "endMs": "1283000",
+   "startTimeText": "21:19"
+  },
+  {
+   "text": "diarization there are two speakers",
+   "startMs": "1281920",
+   "endMs": "1285400",
+   "startTimeText": "21:21"
+  },
+  {
+   "text": "speaking and only only one word from the",
+   "startMs": "1283000",
+   "endMs": "1287480",
+   "startTimeText": "21:23"
+  },
+  {
+   "text": "from the transcription. So that that's",
+   "startMs": "1285400",
+   "endMs": "1290000",
+   "startTimeText": "21:25"
+  },
+  {
+   "text": "why at the Pianoteq we came up with this",
+   "startMs": "1287480",
+   "endMs": "1290840",
+   "startTimeText": "21:27"
+  },
+  {
+   "text": "new",
+   "startMs": "1290000",
+   "endMs": "1293080",
+   "startTimeText": "21:30"
+  },
+  {
+   "text": "STT orchestration thing that basically",
+   "startMs": "1290840",
+   "endMs": "1295400",
+   "startTimeText": "21:30"
+  },
+  {
+   "text": "does its magic and and does the job for",
+   "startMs": "1293080",
+   "endMs": "1298440",
+   "startTimeText": "21:33"
+  },
+  {
+   "text": "you. So here I I just submitted to our",
+   "startMs": "1295400",
+   "endMs": "1300400",
+   "startTimeText": "21:35"
+  },
+  {
+   "text": "cloud API",
+   "startMs": "1298440",
+   "endMs": "1301960",
+   "startTimeText": "21:38"
+  },
+  {
+   "text": "um",
+   "startMs": "1300400",
+   "endMs": "1302680",
+   "startTimeText": "21:40"
+  },
+  {
+   "text": "a",
+   "startMs": "1301960",
+   "endMs": "1306120",
+   "startTimeText": "21:41"
+  },
+  {
+   "text": "a job to transcribe and and and use both",
+   "startMs": "1302680",
+   "endMs": "1308120",
+   "startTimeText": "21:42"
+  },
+  {
+   "text": "precision two diarization model and",
+   "startMs": "1306120",
+   "endMs": "1310600",
+   "startTimeText": "21:46"
+  },
+  {
+   "text": "Parakit transcription model and take",
+   "startMs": "1308120",
+   "endMs": "1312520",
+   "startTimeText": "21:48"
+  },
+  {
+   "text": "care of the what I call this",
+   "startMs": "1310600",
+   "endMs": "1314520",
+   "startTimeText": "21:50"
+  },
+  {
+   "text": "reconciliation between the two. And you",
+   "startMs": "1312520",
+   "endMs": "1316000",
+   "startTimeText": "21:52"
+  },
+  {
+   "text": "end up with this kind of",
+   "startMs": "1314520",
+   "endMs": "1317800",
+   "startTimeText": "21:54"
+  },
+  {
+   "text": "with this kind of output.",
+   "startMs": "1316000",
+   "endMs": "1318560",
+   "startTimeText": "21:56"
+  },
+  {
+   "text": "Uh",
+   "startMs": "1317800",
+   "endMs": "1321400",
+   "startTimeText": "21:57"
+  },
+  {
+   "text": "what's nice is that so now you it did",
+   "startMs": "1318560",
+   "endMs": "1323600",
+   "startTimeText": "21:58"
+  },
+  {
+   "text": "the the job for you, but in particular I",
+   "startMs": "1321400",
+   "endMs": "1326080",
+   "startTimeText": "22:01"
+  },
+  {
+   "text": "I like to go to this particular example",
+   "startMs": "1323600",
+   "endMs": "1327880",
+   "startTimeText": "22:03"
+  },
+  {
+   "text": "even where there was overlapping speech",
+   "startMs": "1326080",
+   "endMs": "1330240",
+   "startTimeText": "22:06"
+  },
+  {
+   "text": "before it actually managed to",
+   "startMs": "1327880",
+   "endMs": "1331880",
+   "startTimeText": "22:07"
+  },
+  {
+   "text": "uh interleave the the words from the two",
+   "startMs": "1330240",
+   "endMs": "1333360",
+   "startTimeText": "22:10"
+  },
+  {
+   "text": "speaker. Let me play the just this part",
+   "startMs": "1331880",
+   "endMs": "1336040",
+   "startTimeText": "22:11"
+  },
+  {
+   "text": "and focus on this area maybe.",
+   "startMs": "1333360",
+   "endMs": "1339560",
+   "startTimeText": "22:13"
+  },
+  {
+   "text": ">> in New Jersey. And I'm Sheila and tech.",
+   "startMs": "1336040",
+   "endMs": "1343080",
+   "startTimeText": "22:16"
+  },
+  {
+   "text": ">> And there's actually a end uh",
+   "startMs": "1339560",
+   "endMs": "1344280",
+   "startTimeText": "22:19"
+  },
+  {
+   "text": "that",
+   "startMs": "1343080",
+   "endMs": "1347920",
+   "startTimeText": "22:23"
+  },
+  {
+   "text": "this is the um here that is actually",
+   "startMs": "1344280",
+   "endMs": "1349800",
+   "startTimeText": "22:24"
+  },
+  {
+   "text": "uh the the",
+   "startMs": "1347920",
+   "endMs": "1352480",
+   "startTimeText": "22:27"
+  },
+  {
+   "text": "yellow lady actually has this um at the",
+   "startMs": "1349800",
+   "endMs": "1354200",
+   "startTimeText": "22:29"
+  },
+  {
+   "text": "end of the speech and",
+   "startMs": "1352480",
+   "endMs": "1355680",
+   "startTimeText": "22:32"
+  },
+  {
+   "text": "the the blue one actually interrupts",
+   "startMs": "1354200",
+   "endMs": "1357600",
+   "startTimeText": "22:34"
+  },
+  {
+   "text": "her.",
+   "startMs": "1355680",
+   "endMs": "1358720",
+   "startTimeText": "22:35"
+  },
+  {
+   "text": "But they they they're actually",
+   "startMs": "1357600",
+   "endMs": "1360040",
+   "startTimeText": "22:37"
+  },
+  {
+   "text": "overlapping and we managed to get them",
+   "startMs": "1358720",
+   "endMs": "1362360",
+   "startTimeText": "22:38"
+  },
+  {
+   "text": "right.",
+   "startMs": "1360040",
+   "endMs": "1362360",
+   "startTimeText": "22:40"
+  },
+  {
+   "text": "Um yeah, so this is the end of my talk.",
+   "startMs": "1362480",
+   "endMs": "1368320",
+   "startTimeText": "22:42"
+  },
+  {
+   "text": "I wanted to give you a",
+   "startMs": "1365960",
+   "endMs": "1370120",
+   "startTimeText": "22:45"
+  },
+  {
+   "text": "few minutes. I have two minutes left for",
+   "startMs": "1368320",
+   "endMs": "1371760",
+   "startTimeText": "22:48"
+  },
+  {
+   "text": "questions, but I just wanted to say that",
+   "startMs": "1370120",
+   "endMs": "1373000",
+   "startTimeText": "22:50"
+  },
+  {
+   "text": "this demo",
+   "startMs": "1371760",
+   "endMs": "1375280",
+   "startTimeText": "22:51"
+  },
+  {
+   "text": "that I did is already available on the",
+   "startMs": "1373000",
+   "endMs": "1377440",
+   "startTimeText": "22:53"
+  },
+  {
+   "text": "in the Pianoteq tutorials",
+   "startMs": "1375280",
+   "endMs": "1379680",
+   "startTimeText": "22:55"
+  },
+  {
+   "text": "GitHub repo. So in there you you'll be",
+   "startMs": "1377440",
+   "endMs": "1381440",
+   "startTimeText": "22:57"
+  },
+  {
+   "text": "able to to with Pianoteq open source",
+   "startMs": "1379680",
+   "endMs": "1383080",
+   "startTimeText": "22:59"
+  },
+  {
+   "text": "toolkit for diarization with piano",
+   "startMs": "1381440",
+   "endMs": "1385920",
+   "startTimeText": "23:01"
+  },
+  {
+   "text": "metrics for evaluation. Uh with i-piano",
+   "startMs": "1383080",
+   "endMs": "1387280",
+   "startTimeText": "23:03"
+  },
+  {
+   "text": "for this nice",
+   "startMs": "1385920",
+   "endMs": "1389840",
+   "startTimeText": "23:05"
+  },
+  {
+   "text": "visualization widget that we've",
+   "startMs": "1387280",
+   "endMs": "1392800",
+   "startTimeText": "23:07"
+  },
+  {
+   "text": "implemented. I stands for not iOS, iMac,",
+   "startMs": "1389840",
+   "endMs": "1395160",
+   "startTimeText": "23:09"
+  },
+  {
+   "text": "or whatever, but really for interactive.",
+   "startMs": "1392800",
+   "endMs": "1397520",
+   "startTimeText": "23:12"
+  },
+  {
+   "text": "And also the SDK to to play with our",
+   "startMs": "1395160",
+   "endMs": "1399000",
+   "startTimeText": "23:15"
+  },
+  {
+   "text": "premium models.",
+   "startMs": "1397520",
+   "endMs": "1401040",
+   "startTimeText": "23:17"
+  },
+  {
+   "text": "And I'll stop here and",
+   "startMs": "1399000",
+   "endMs": "1402680",
+   "startTimeText": "23:19"
+  },
+  {
+   "text": "happy to take",
+   "startMs": "1401040",
+   "endMs": "1404440",
+   "startTimeText": "23:21"
+  },
+  {
+   "text": "few questions. We have one more MINUTE",
+   "startMs": "1402680",
+   "endMs": "1406920",
+   "startTimeText": "23:22"
+  },
+  {
+   "text": "LEFT.",
+   "startMs": "1404440",
+   "endMs": "1406920",
+   "startTimeText": "23:24"
+  },
+  {
+   "text": "YES, PLEASE.",
+   "startMs": "1413440",
+   "endMs": "1417400",
+   "startTimeText": "23:33"
+  },
+  {
+   "text": ">> SO, WHAT'S THE TRICK",
+   "startMs": "1414960",
+   "endMs": "1420520",
+   "startTimeText": "23:34"
+  },
+  {
+   "text": "THAT you use to resolve the conflicts?",
+   "startMs": "1417400",
+   "endMs": "1420840",
+   "startTimeText": "23:37"
+  },
+  {
+   "text": ">> So,",
+   "startMs": "1420520",
+   "endMs": "1422240",
+   "startTimeText": "23:40"
+  },
+  {
+   "text": ">> Is it part of the model training or is",
+   "startMs": "1420840",
+   "endMs": "1424280",
+   "startTimeText": "23:40"
+  },
+  {
+   "text": "it some sort of like heuristics that you",
+   "startMs": "1422240",
+   "endMs": "1427400",
+   "startTimeText": "23:42"
+  },
+  {
+   "text": "have around to identify who to attribute",
+   "startMs": "1424280",
+   "endMs": "1428720",
+   "startTimeText": "23:44"
+  },
+  {
+   "text": "the word to?",
+   "startMs": "1427400",
+   "endMs": "1430280",
+   "startTimeText": "23:47"
+  },
+  {
+   "text": ">> Yeah, so the question is what's the",
+   "startMs": "1428720",
+   "endMs": "1432280",
+   "startTimeText": "23:48"
+  },
+  {
+   "text": "trick to actually solve this problem of",
+   "startMs": "1430280",
+   "endMs": "1434520",
+   "startTimeText": "23:50"
+  },
+  {
+   "text": "a reconciliation.",
+   "startMs": "1432280",
+   "endMs": "1436080",
+   "startTimeText": "23:52"
+  },
+  {
+   "text": "So, that's",
+   "startMs": "1434520",
+   "endMs": "1437960",
+   "startTimeText": "23:54"
+  },
+  {
+   "text": "proprietary trick, but what what I can",
+   "startMs": "1436080",
+   "endMs": "1439600",
+   "startTimeText": "23:56"
+  },
+  {
+   "text": "say is that we",
+   "startMs": "1437960",
+   "endMs": "1441120",
+   "startTimeText": "23:57"
+  },
+  {
+   "text": "there's already part of this trick that",
+   "startMs": "1439600",
+   "endMs": "1443000",
+   "startTimeText": "23:59"
+  },
+  {
+   "text": "is available in the community one model,",
+   "startMs": "1441120",
+   "endMs": "1445120",
+   "startTimeText": "24:01"
+  },
+  {
+   "text": "which we call exclusive diarization.",
+   "startMs": "1443000",
+   "endMs": "1446520",
+   "startTimeText": "24:03"
+  },
+  {
+   "text": "Basically,",
+   "startMs": "1445120",
+   "endMs": "1448240",
+   "startTimeText": "24:05"
+  },
+  {
+   "text": "what we do is that we find a way when",
+   "startMs": "1446520",
+   "endMs": "1450600",
+   "startTimeText": "24:06"
+  },
+  {
+   "text": "there is overlap to actually select the",
+   "startMs": "1448240",
+   "endMs": "1453160",
+   "startTimeText": "24:08"
+  },
+  {
+   "text": "most likely of the two speaker that will",
+   "startMs": "1450600",
+   "endMs": "1454800",
+   "startTimeText": "24:10"
+  },
+  {
+   "text": "be transcribed by the STT model. So,",
+   "startMs": "1453160",
+   "endMs": "1456560",
+   "startTimeText": "24:13"
+  },
+  {
+   "text": "that simplifies actually the",
+   "startMs": "1454800",
+   "endMs": "1458360",
+   "startTimeText": "24:14"
+  },
+  {
+   "text": "reconciliation between the two. So,",
+   "startMs": "1456560",
+   "endMs": "1460840",
+   "startTimeText": "24:16"
+  },
+  {
+   "text": "that's one major part of the",
+   "startMs": "1458360",
+   "endMs": "1461520",
+   "startTimeText": "24:18"
+  },
+  {
+   "text": "of the approach.",
+   "startMs": "1460840",
+   "endMs": "1464000",
+   "startTimeText": "24:20"
+  },
+  {
+   "text": ">> The model training is like a couple of",
+   "startMs": "1461520",
+   "endMs": "1465680",
+   "startTimeText": "24:21"
+  },
+  {
+   "text": "heuristics you have to",
+   "startMs": "1464000",
+   "endMs": "1467520",
+   "startTimeText": "24:24"
+  },
+  {
+   "text": ">> Yeah, so so the question is about I'm",
+   "startMs": "1465680",
+   "endMs": "1468800",
+   "startTimeText": "24:25"
+  },
+  {
+   "text": "repeating because I've been told I need",
+   "startMs": "1467520",
+   "endMs": "1470920",
+   "startTimeText": "24:27"
+  },
+  {
+   "text": "to repeat questions. Uh",
+   "startMs": "1468800",
+   "endMs": "1472400",
+   "startTimeText": "24:28"
+  },
+  {
+   "text": "so, it's not part of the model training",
+   "startMs": "1470920",
+   "endMs": "1474320",
+   "startTimeText": "24:30"
+  },
+  {
+   "text": "in the sense that we really plan to",
+   "startMs": "1472400",
+   "endMs": "1476440",
+   "startTimeText": "24:32"
+  },
+  {
+   "text": "support any kind of STT without having",
+   "startMs": "1474320",
+   "endMs": "1478840",
+   "startTimeText": "24:34"
+  },
+  {
+   "text": "to change the STT model itself. So,",
+   "startMs": "1476440",
+   "endMs": "1480160",
+   "startTimeText": "24:36"
+  },
+  {
+   "text": "really it's supposed to work with any",
+   "startMs": "1478840",
+   "endMs": "1482400",
+   "startTimeText": "24:38"
+  },
+  {
+   "text": "STT, even fine-tuned ones that you might",
+   "startMs": "1480160",
+   "endMs": "1484280",
+   "startTimeText": "24:40"
+  },
+  {
+   "text": "have internally for because you you",
+   "startMs": "1482400",
+   "endMs": "1486400",
+   "startTimeText": "24:42"
+  },
+  {
+   "text": "fine-tuned them for your particular use",
+   "startMs": "1484280",
+   "endMs": "1488840",
+   "startTimeText": "24:44"
+  },
+  {
+   "text": "case and nobody has it.",
+   "startMs": "1486400",
+   "endMs": "1492160",
+   "startTimeText": "24:46"
+  },
+  {
+   "text": "You can combine it like that.",
+   "startMs": "1488840",
+   "endMs": "1494880",
+   "startTimeText": "24:48"
+  },
+  {
+   "text": "I 18 seconds, so I guess we need to",
+   "startMs": "1492160",
+   "endMs": "1496200",
+   "startTimeText": "24:52"
+  },
+  {
+   "text": "stop. I'm sorry, maybe we can talk",
+   "startMs": "1494880",
+   "endMs": "1498000",
+   "startTimeText": "24:54"
+  },
+  {
+   "text": "offline, otherwise",
+   "startMs": "1496200",
+   "endMs": "1500640",
+   "startTimeText": "24:56"
+  },
+  {
+   "text": "they'll beat me, I guess.",
+   "startMs": "1498000",
+   "endMs": "1503760",
+   "startTimeText": "24:58"
+  },
+  {
+   "text": "Thank you very much. I'm sorry.",
+   "startMs": "1500640",
+   "endMs": "1503760",
+   "startTimeText": "25:00"
+  }
+ ],
+ "transcript_only_text": " Uh \n good  morning  everyone.  Thanks  for  being \n here  to  the  voice  and  vision  session. \n Uh  so  I'm  Hervé  Bredin,  chief  science \n officer  and  co-founder  at  PyAnnote. \n Uh  so  I'm  going  to  talk  to  you  today \n about  um \n conversations,  understanding \n conversations,  and \n what  you  can  do  on  top  of \n transcription. \n Uh \n so  a  quick  word  about  myself.  So  I've \n been  an  academic  researcher  all  my  life \n until  two  years  ago  when  I  started  this \n company. \n Oops,  sorry. \n Uh \n what  happened?  Yeah. \n Uh \n so  basically  yeah,  I  worked  on  this \n topic  called  speaker  diarization  which \n I'll  introduce  a  bit  later  for  those  of \n you  who  don't  know  this  word \n word  that  is  tricky  for  me  to  pronounce. \n But  basically  over  the  years  I  built  an \n open  source  toolkit  called  PyAnnote \n which  focuses  on  speaker  diarization  and \n that  became  quite  popular  over  the  years \n in  particular  since \n OpenAI \n released  the  Whisper  speech-to-text  open \n source  models.  Basically  Whisper  was \n some  kind  of  revolution  in  terms  of  STT, \n the  fact  that  it  was  free,  that  it  was \n very  good,  and  but  it  didn't  provided \n the  actual  didn't  provide  the  actual \n names  and  tags  of  the  speaker.  So  people \n naturally  turned  to  PyAnnote  to  combine \n the  two.  And  you  can  see  that  on  the \n inflection  points  on  the  GitHub  star \n history.  And  just  a  few  words,  I  happen \n to  turn  45  uh \n uh  in  just  one  week  from  now  and  we  all \n almost  at  10K  stars  on  the  GitHub.  So \n please  give  me  a  birthday  gift  by  just \n going  to  the  website  and  to  the  GitHub \n website  and  add  your  star. \n That  will  make  my  birthday. \n Um, \n so  uh \n let's  go  to  the  to  the  core  of  the \n presentation.  So  you  all  know  what \n transcription  or  speech-to-text  is. \n Basically,  that's  answering  the  question \n what  was  said  from  the  recording  or \n streaming  of  a  conversation. \n Basically,  you  get  from  the  audio  and \n you  get  a  sequence  of  words \n as  output.  That's  for  instance  what \n Whisper  does.  But \n without  the  actual \n names  of  the  speaker,  the  usually  the \n conversations  on  the  transcripts  are  not \n really  understandable.  So  the  next  step \n after  transcription  is  basically  to \n attribute \n speaker  tag  to  each  of  the  words.  So \n that's  I  call  that  here  speaker \n attributed  transcription.  And  so  that \n that  answer  the  question  who  said  what. \n But  for  some  application  that's  enough \n like  for  instance \n for  maybe  for  meeting  note  takers  to \n make  a  summary  of  a  of  of  a  meeting  that \n might  be  enough  to  assign  an  action \n point  to  the  right  people  to  to  know \n exactly  that \n Air  V  said  that  and  John  said  said  this \n this  other  thing.  But  we  to  understand \n the  conversation  a  bit  better, \n we  we  might  want \n to  go  slightly  better.  Sorry,  I  forgot \n about  this  slide.  So  basically  there  are \n many  cases  where \n knowing  who  said  what  is  as  important  as \n what  was  said  actually.  So  I  have  here  a \n few  examples  like  for  instance  video \n dubbing,  automatic  video  dubbing. \n Knowing  who  said  what  is  actually  really \n important  to  put  the  actual  uh  uh  uh \n good  correct  voice  to  the  right  speaker. \n So  if  you  want  to  automatically \n translate  a  video  from  one  language  to \n another,  you  want  the  voices  to  be \n consistent  as  well.  So  for  that  you  need \n to  know  who's \n who  who  spoke  when.  Same  for  meeting \n note  takers  and  there  are  other \n applications  like  for  instance  podcast \n what  I  call  podcast  intelligence  like \n being  able  to  track  a  speaker  across \n different \n episodes  of  a  podcast  or \n across  different  podcasts  finding  the \n same  guest  across  multiple  podcasts. \n But  yeah,  so  I  was  a  bit \n over \n just  before  but \n just  knowing  who  said  what  is  sometimes \n not  enough  to  really  understand  the \n conversation  the  conversation  how  it \n goes.  So  knowing  who  said  what  and  when \n actually  brings  even  more  information. \n For  instance  in  this  example \n without  knowing  exactly  when  each  words \n were  pronounced  you  can't  detect  that \n actually  the  black  speaker  interrupted \n the  green  one.  You  can't  really  detect \n that  maybe  this  small  back  channel  that \n the  green  sorry  the  black  speaker \n does  during  the  speech  of  the  of  the \n green  speaker  if  you  miss  it  basically \n you  you  don't  really  understand  that \n maybe  the  black  speaker  is  actually \n agreeing  noting  at  what  the  green \n speaker  says.  So  knowing  exactly  when \n this  small  word  has  been  pronounced  is \n very  important. \n And  same  without  precise  timestamps  you \n can't  really  know  whether  I  made  a  I \n make  a  a  pause  in  between  two  speech \n turns  which  might  convey  additional \n information  about  my  state  of  mind  my  I \n don't  know  the  point  that  I'm  trying  to \n to  make  in  the  conversation. \n And  we  can  go  even  a  step  further. \n Like \n we  we  might  want  to  know  who  said  what \n and  when  and  how  they  said  it.  Like  I \n have  a  few  examples  here  if \n some  of  you  are  laughing  at  some  point \n is  it  because  I  don't  know  I  said \n something  stupid  or  I  was  actually \n funny. \n Same  for  coughing  maybe  there's \n something  in  the  conversation  that  makes \n me  uncomfortable  and \n I'm  coughing  for  some  reason  to  to  hide \n behind  that. \n And \n yeah  so  I  also  mentioned  stress \n disfluency  prosody \n um  fact  that  I  uh  stress  on  particular \n words  in  a  sentence  might  actually \n change  completely  the  meaning  of  the \n sentence.  Uh  I  have  this  example  in  mind \n like \n uh  I  don't  know  in  the  sentence  the  dog \n uh \n ate  uh  the  cake. \n If  uh  I  don't  know  you're  talking  to  a \n child  and  the  the  child  tells  you  the \n dog  ate  the  cake  or  the  dog  ate  the  cake \n or  the  dog  ate  the  cake  uh  the  the \n meaning  might  be  slightly  different.  So \n uh  stressing  particular  words,  uh  being \n able  to  have  a  a  voice  AI  actually \n understand  the  stress  and  and \n these  kind  of  of  low-level  details  might \n bring  some  more \n uh  information  to  the \n to  any  downstream  LLMs  or  or  whatever \n tools  that  you  use  after  this  first \n enriched  transcription  step. \n And  if  we  take  even  a  step  a  step  back \n uh \n um  knowing  who's  uh  talking  to  who  uh  am \n I  uh  here  in  this  example  and  probably \n can  be  seen  as  these  uh  gray  speaker \n addressing  to  all  of  you.  But  at  some \n point  if  uh  at  the  end  of  this  talk  I  uh \n you  do  have  questions  then  uh  I  will  be \n probably  the  the  green  one  talking  to \n one  particular  person  answering  the \n particular  question.  So  knowing  that, \n having  a  higher-level  view  of  the \n conversation  uh  also  opens  up  a \n new  bunch  of \n applications. \n And  all  of  this  uh  also  happens  in  uh \n acoustic  environment  that  gives  you \n information  about  the  context  whether \n it's  in  this  quiet  room  uh  for  now \n uh  or  if  I'm  in  the  street  uh  this  bring \n more  context  to  to  to  the  game  and  you \n can  actually  uh  take  a  better  decision \n about \n what's  going  on,  why  a  person  is \n actually  saying  what  what  they  are \n saying  and  and  etc. \n So  all  of  this  is  basically  the  what  we \n are  trying  to  work  on  at \n PianoTel  AI,  but  we  uh  uh,  started  with \n a \n uh  uh, \n smaller  problem  called  a  speaker \n diarization  and  that's  really  what  I \n want  to  talk  about,  uh,  today. \n So,  speaker  diarization  is  the, \n I,  I,  yeah,  is  is  usually, \n uh,  what  I  what  I  wanted  to  say  about \n this  slide  is  that,  uh,  who  said  what  is \n usually  just  as  important  as  what  was \n said  and  you  can  tell  by  instance  by \n going  through,  uh,  to  the  hugging  face, \n uh, \n uh,  model  repository  and  filter, \n um,  all  the  models  there  uh, \n with  the  ones  that  have  the  audio  tag. \n Uh,  where's  my  mouse  here?  Here.  So, \n this  is  what  I  did  and  then  you  sort \n them  by,  uh,  by  number  of  downloads. \n And  basically,  uh,  the  among  the  the \n top,  uh,  here  seven  models  that,  uh,  are \n at  the  top  of  this  list,  three  of  them, \n the  the  first  three  are  actually  related \n to  speaker  identity  and  speaker \n diarization  and  the  the  the  other  ones \n are  STT.  So,  that's  one  way  of  showing \n that,  uh,  speaker  diarization  is \n actually  quite,  uh,  quite  important  on \n on  in  the  community. \n So,  uh,  going  uh,  into  a  bit  more  detail \n about  what  speaker  diarization  is.  So, \n as  I  said,  it's  answering  the  question \n who  speaks  when.  So,  starting  from  the \n recording  of  a  conversation, \n uh,  basically  the  first  step  that  people \n usually  do  is,  uh,  basic  voice  activity \n detection.  So,  you  basically  tell \n whether  someone  is  speaking  at  at  one \n time  or  not.  Anyone  is  speaking  at  one \n time  or  not. \n And  then  you  can  go  a  step  further.  Uh, \n you  can  actually  segment  those  speech \n regions  into  smaller  speech  turns.  Um, \n so  this  is  what  I  call  segmentation  and \n it  includes  finding,  uh,  speaker  change \n points  between,  uh, \n in  into  those  longer  in  those  long \n speech  regions,  you  might  find,  uh, \n you  know,  a  speaker  change  point  and, \n uh,  also  find  regions  where,  uh,  people \n are  actually  interrupting  each  other \n like,  uh,  in,  uh,  in  the  first  example \n here. \n There's  definitely  here  someone \n interrupting,  uh,  someone  else  and  it's \n possibly  hear  some  kind  of  back  channel \n where  someone  is  actually \n nodding  or  saying  \"Mhm,  okay.\"  This  kind \n of  stuff.  And  this  is  the  kind  of  small \n speech  turn  that \n uh \n you  don't  want  to  miss  because  sometimes \n they  actually  convey  the  most  important \n information  of  the  conversation.  If  it's \n a  small  yes  here  uh  and  if  you  miss  it \n uh \n then \n you  have  no  idea  what's  the  the  state  of \n mind  of  the  speaker. \n But  that's  not  yet  speaker  diarization. \n Speaker  diarization  goes  all  the  way  to \n actually  assigning  a  speaker  identity  to \n each  speech  turn. \n And \n so  here  in  this  example,  the  the  speaker \n diarization  system  automatically \n detected  that  there  are  two  speakers, \n the  green  one  and  the  black  one. \n Um \n but  we  usually  don't  have  any  prior \n knowledge  on  the  actual  number  of \n speakers  in  the  conversation. \n You  might  have  some  kind  of \n guidance  on  I  don't  know  if  if  you  are \n meeting  a  note  taker  for  instance,  you \n you  have  the  list  of  attendees. \n So  you  might  have  an  idea  of  the  number \n of  people  that  were  invited  but  that \n doesn't  mean  that  uh  someone  two  people \n joined  from  the  same  channel  or  or  that \n an  attendee  that  was  not  invited \n actually  joining  finally  and  uh  so  that \n makes  the  problem  uh  kind  of  difficult \n in  the  sense  that  we  don't  know  in \n advance  the  number  of  classes  that  we're \n supposed  to  detect  contrary  to  other \n let's  say  classical  machine  learning \n problems. \n And  also  we  don't  know  the  identity  of \n the  speaker  that  we're  supposed  to \n diarize.  In  the  sense  that  speaker \n diarization  does  not  really  output \n John,  Hervé,  and \n and  and  Jack \n but  basically  it's  more  like  speaker \n one,  speaker  two,  speaker  three  and  they \n can  be  permuted  and  it's  still  correct. \n For  example,  in  this  example  if  I  just \n change  green  into  black  and  black  into \n green,  the  diarization  is  still  exactly \n the  same  from  the  point  of  view  of  the \n evaluation  metrics  that  I'm  going  to \n talk  about  and  uh \n uh  from  the  point  of  view  of  the  actual \n speaker  diarization  task. \n So,  that  makes  the  uh  this  problem  kind \n of  difficult  and  that's  why  even  though \n uh  the  community  has  been  working  on \n this  topic  for  a  long  time  now,  it's \n still  not  solved.  Uh  there  are  other \n reasons  like  the  fact  that  we  have  to \n detect  overlapping  speech  to  handle \n overlapping  speech,  uh  that  we  have  to \n uh \n uh  take  into  account  very  short  speech \n turns,  that  don't  have  to  take  into \n account \n imbalance  between  the  speech  time  of \n multiple  speakers  in  the  in  the \n conversation.  All  of  that  makes  the \n problem  difficult.  On  top  of  the  usual \n acoustic  conditions  uh  problems  and \n everything  that  any  speech  processing  uh \n um \n uh \n task  have  to  deal  with. \n So,  uh  I'm  going  to  switch  to  a  demo  to \n to  to  show  you  a  a  bit  more  how  the \n diarization  system  are  evaluated.  Um \n maybe  when  you  you  you  stumble  in  into \n benchmark,  you  you  find  this  DER \n acronym,  which  is  a \n stands  for  diarization  error  rate. \n And  uh  so,  hopefully  um \n this  will  work. \n So,  uh  I  have  here \n a \n Python  notebook  uh  that  I've  prepared \n for  for  this  talk.  It's  actually  already \n available  on  GitHub.  I'll  show  you  the \n the  QR  code  at  the  end  of  the \n presentation,  so  you  can  play  with  it. \n But,  so  in  this  example,  I  have  a \n conversation  between  two  women  talking \n over  the  phone. \n >> Hello. \n >> Hello. \n >> Oh,  hello.  I  didn't  know  you  were  there. \n >> Neither  did  I. \n >> I  thought,  you  know,  I  heard  a  beep. \n This  is  Diane  in  New  Jersey. \n >> And  I'm  Sheila  in  Texas,  originally  from \n Chicago. \n >> Oh,  I'm  originally  from  Chicago,  also. \n I'm  in  New  Jersey  now,  though. \n >> Okay,  so  you  you  get  the  idea.  A \n 30-seconds  conversation  between  two \n women.  So,  this  is  the  expected  output \n of  a  perfect  speaker  attribute  either \n transcription.  This  was  manually \n labeled. \n And  now \n what  I'm  going  to  to  to  do  this  here  is \n actually  run  piano  open  source  community \n one  model \n on  this  same  file.  So  it's  actually \n running  right  now  on  my  Mac.  So  that's \n why  here  I'm  using  this  MPS  PyTorch \n backend.  So  how  it  works  is  that  you \n first  download  the  model  from  hugging \n face  with  this \n line  of  code  and  simply \n apply  it  on  on  the  audio  file.  So  now \n it's  finished  and  there's  the  this \n prediction  variable  that  contains  um \n uh \n sorry,  I  should  have  done  that  on  the \n other  tab  because  this  was  the  one  that \n was  already  processed.  I  wanted  to  do  it \n live.  So  let's  do  it  live  now.  So  it's \n running.  And  so  the  the  next  step  is  to \n actually  visualize  the  errors  that \n this  system  made.  So \n at  the  top  here  you  have  the  reference \n annotation.  So  the  expected  output  of \n diarization  and  here  is  the  output  of \n community  one \n uh  speaker  diarization  uh  pipeline \n uh  that  is  open  source  and  free  to  use. \n So  it  makes  three  kinds  of  mistake  as  I \n was  saying  like  a  confusion  here  it  got \n the  speaker  wrong.  Uh  it  can  also  make \n uh  false  alarms.  Uh  so  false  alarm  is \n when  it  detects  speech  when  there's \n actually  no  speech  in  the  ground  truth. \n And  misdetection  is  the  other  way \n around. \n And  misdetection  can  actually \n uh  happen  for  instance  here  during \n overlapping  speech  when  we  actually \n detect  only  one  of  the  two  speakers \n here. \n And  then  once  we  have  these \n basically  errors  of \n false  alarm,  confusion,  and  and \n misdetection  we  we  can  actually  compute \n the  diarization  error  rate.  Uh \n so  this  is  with  this  library  called \n PyAnnotate  metrics.  And  basically  it \n gives  us  in  this  example  5%  diarization \n error  rate  which  is  basically  the  sum  of \n the  confusion  uh  uh  false  alarm  and \n misdetection  divided  by  the  the  total \n duration  of  uh \n of  speech  in  in  this \n in  this  file. \n And \n so \n we  have  this  other  model  that  I'm \n currently  running.  Hopefully  it  work  it \n works.  So  it's  running  right  now  on  our \n cloud  API. \n Basically  it's  a \n a  better  model  that  community  one  that \n we  call  precision  two  that  is  a \n running  here.  Hopefully  it  will  work  but \n as  for  every  demo  it  might  fail.  If  no \n it  worked.  And  this  is  the  kind  of \n output  that  you  can  get.  So  you  see  that \n it  got  the  speaker  right  here  and  makes \n slightly  less  mistakes  in  terms  of  false \n alarm  and  misdetection. \n And  overall  in  this  example  I  think  we \n got  a  3%  diarization  error  rate  here. \n So  let  me  switch  back  to  the \n to  the  presentation. \n So  this  was  about  benchmarking  speaker \n diarization  model  and  I'm  often  asked \n how  well  does  state  of  the  art  speaker \n diarization  works  today.  And  it's  a \n difficult  question  to  answer  because \n really  depending  on  the  use  case  it \n might  vary  completely.  For  instance  in \n this  example  we  have  a  here  conversation \n telephone  speech  like  the  one  we  just \n listened  to  like  two  person  over  the \n phone.  And  we  we  can  go  down  to  8% \n diarization  error  rate.  The  best  system \n does  that.  But  if  if  you  are  not  in  a \n restaurant  with  many  friends  with  lots \n of  background  noise \n even  the  best  system  reaches  like  41% \n diarization  error  rate.  So  it's  far  from \n being  a  solved  problem \n but  we  are  working  on  that. \n And \n so  once  you  have  speaker  diarization  and \n you  have  transcription  shouldn't  be  that \n hard  to  actually  find  the  speaker \n attributed  transcription  right?  It's \n just  a  matter  of  you  know  assigning  a \n word  to  a  speaker  speaker  to  a  word. \n But  actually  that's  not  that \n easy.  And  I'll \n there  there  are  many  reason  why  that's \n not  that  easy.  The  first  reason  is  that \n most  speech  to  text  models  are  actually \n trained  on  single  speaker  data.  As  soon \n as  you  apply  them  on  multi-speaker  data \n with  overlap,  with  speaker  change,  with \n all  kind  of  mess,  they  completely \n they  fail  miserably.  So,  for  instance, \n when  you  look  at  the  open  ASR \n leaderboard  from  the  Hugging  Face,  if  we \n look  for  instance  at  NVIDIA  Parakeet \n that  we  are  using \n that  I  will  be  using  in  the  in  the  demo \n right  after  that, \n they  report  11.4 \n %  word  error  rate. \n When  we  apply  the  very  same  model  on  the \n same  AMI \n um  on \n on  our  side,  we  we  get  26%.  So,  the \n question  is  why  is  there  a  difference? \n Actually,  it's  in  the  way  that  those \n benchmarks  are  set  up  here  on  the  uh \n uh  for  for  example,  in  this  AMI  data \n set,  that's \n a  meet \n uh  data  sets  with  meetings  uh  between \n four  to  five  people,  I  think,  in  meeting \n rooms. \n And  they  are  basically  microphones  like \n the  one  I'm  I'm  having  here,  so  headset \n microphone,  as  well  as  one  microphone  in \n the  middle  of  the  table. \n And  and  those  numbers  here \n uh  on  the  open  ASR  leaderboard  are  based \n on  the  headset  microphone.  Those  numbers \n here  uh  are  based  on  the  microphone  that \n is  in  the  middle.  And  so,  on  one  side \n you  have  a  single  speaker  speech,  on  the \n other  side  you  have  multi-speaker  and \n even  distant  microphone  speech.  So, \n that's  why  it  degrades  uh  a  lot.  And  so, \n that  that's  that  was  my  point  of  the  of \n this  slide.  So, \n when  doing  speaker  attributed \n transcription,  the  um \n the  reason  why  it  it  might  go  wrong  is \n either  because  STT  doesn't  work  great \n and \n uh  it's  usually  the  case  that  they  don't \n generalize  uh  very  well  to  multi-speaker \n recordings. \n For,  as  I  was  saying,  distant \n microphone,  uh  speaker  change, \n crosstalk,  interruptions,  you  name  it. \n Uh  maybe  code-switching  as  well  when  you \n change  language  in  the  middle  of  a \n sentence. \n But  also,  it's  it  might  uh  be  because  of \n the  actual  reconciliation  between \n diarization  and  STT  timestamps. \n Though  it  may  sound  uh  uh \n uh  obvious  how  to  do  that  as  I  was \n saying,  I  will  hopefully  show  in  this \n live  demo  once  again  that  it's  it's  not \n such  a  an  easy  problem. \n Because \n uh  STT  does  not  transcribe  overlapping \n speech  well  because \n the  timestamps  disagree  between  STT  and \n diarization,  and  because  sometimes \n diarization  will  detect  speech  that  the \n transcription  will  not  transcribe  and \n the  other  way  around. \n So,  um \n second  part  of  the  demo \n about  speaker  attributed  transcription. \n So, \n uh  first  I'm  going  to  apply  this \n Parakeet  model  from  Nvidia  that  does  a \n by  the  way  a  great  job  at  the \n transcribing  uh \n uh \n this  sample. \n And  so, \n Parakeet  gives  us  this  kind  of  output. \n So,  we  have  this  sequence  of  words  and \n for  each  word  we  actually  have  the \n corresponding  timestamps. \n Okay?  So, \n I  can  play  it  quickly. \n >> Hello.  Oh,  hello.  I  didn't  know  you  were \n there. \n >> Neither  did  I. \n >> Okay,  then.  I  thought,  you  know,  I  heard \n a  beep.  This  is  Diane  in  New  Jersey.  Um \n >> Well,  you  get  the  idea.  And  then, \n um \n the  question  is  um \n now  we  have  our  best  diarization.  This \n is  Precision-2  output  here.  This  is \n Parakeet  output  here.  And  the  question \n is  now  we  need  to  assign  a  speaker  to \n each  word.  So,  let's  do  it  step  by  step \n for  instance. \n So,  in  this  example, \n even  though  the  timestamps  of  the  the \n words \n are  a  bit  shifted \n on  the  left  here,  it's  obvious  that  it's \n probably  the  yellow  speaker  who  spoke \n the  the  gray  word. \n But  if  you  go  just  the  third  word.  So, \n now  we  have  this. \n So,  we  have  this  word  the  word  O  here \n that  is  in  between  those  two  speech \n turns  according  to  diarization.  Which \n one  do  you  assign  it  to? \n Um  so  we  we  I  I  can  listen  to  it. \n >> hello. \n Oh  hello. \n >> Why?  It's  It's  not  quite  quite  sure.  And \n there  are  many  other  uh  position  where \n it  happens  here  same.  There's  a  word \n here,  okay,  that  apparently  according  to \n diarization  there  are  two  speakers \n speaking  and  only  only  one  word  from  the \n from  the  transcription.  So  that  that's \n why  at  the  Pianoteq  we  came  up  with  this \n new \n STT  orchestration  thing  that  basically \n does  its  magic  and  and  does  the  job  for \n you.  So  here  I  I  just  submitted  to  our \n cloud  API \n um \n a \n a  job  to  transcribe  and  and  and  use  both \n precision  two  diarization  model  and \n Parakit  transcription  model  and  take \n care  of  the  what  I  call  this \n reconciliation  between  the  two.  And  you \n end  up  with  this  kind  of \n with  this  kind  of  output. \n Uh \n what's  nice  is  that  so  now  you  it  did \n the  the  job  for  you,  but  in  particular  I \n I  like  to  go  to  this  particular  example \n even  where  there  was  overlapping  speech \n before  it  actually  managed  to \n uh  interleave  the  the  words  from  the  two \n speaker.  Let  me  play  the  just  this  part \n and  focus  on  this  area  maybe. \n >> in  New  Jersey.  And  I'm  Sheila  and  tech. \n >> And  there's  actually  a  end  uh \n that \n this  is  the  um  here  that  is  actually \n uh  the  the \n yellow  lady  actually  has  this  um  at  the \n end  of  the  speech  and \n the  the  blue  one  actually  interrupts \n her. \n But  they  they  they're  actually \n overlapping  and  we  managed  to  get  them \n right. \n Um  yeah,  so  this  is  the  end  of  my  talk. \n I  wanted  to  give  you  a \n few  minutes.  I  have  two  minutes  left  for \n questions,  but  I  just  wanted  to  say  that \n this  demo \n that  I  did  is  already  available  on  the \n in  the  Pianoteq  tutorials \n GitHub  repo.  So  in  there  you  you'll  be \n able  to  to  with  Pianoteq  open  source \n toolkit  for  diarization  with  piano \n metrics  for  evaluation.  Uh  with  i-piano \n for  this  nice \n visualization  widget  that  we've \n implemented.  I  stands  for  not  iOS,  iMac, \n or  whatever,  but  really  for  interactive. \n And  also  the  SDK  to  to  play  with  our \n premium  models. \n And  I'll  stop  here  and \n happy  to  take \n few  questions.  We  have  one  more  MINUTE \n LEFT. \n YES,  PLEASE. \n >> SO,  WHAT'S  THE  TRICK \n THAT  you  use  to  resolve  the  conflicts? \n >> So, \n >> Is  it  part  of  the  model  training  or  is \n it  some  sort  of  like  heuristics  that  you \n have  around  to  identify  who  to  attribute \n the  word  to? \n >> Yeah,  so  the  question  is  what's  the \n trick  to  actually  solve  this  problem  of \n a  reconciliation. \n So,  that's \n proprietary  trick,  but  what  what  I  can \n say  is  that  we \n there's  already  part  of  this  trick  that \n is  available  in  the  community  one  model, \n which  we  call  exclusive  diarization. \n Basically, \n what  we  do  is  that  we  find  a  way  when \n there  is  overlap  to  actually  select  the \n most  likely  of  the  two  speaker  that  will \n be  transcribed  by  the  STT  model.  So, \n that  simplifies  actually  the \n reconciliation  between  the  two.  So, \n that's  one  major  part  of  the \n of  the  approach. \n >> The  model  training  is  like  a  couple  of \n heuristics  you  have  to \n >> Yeah,  so  so  the  question  is  about  I'm \n repeating  because  I've  been  told  I  need \n to  repeat  questions.  Uh \n so,  it's  not  part  of  the  model  training \n in  the  sense  that  we  really  plan  to \n support  any  kind  of  STT  without  having \n to  change  the  STT  model  itself.  So, \n really  it's  supposed  to  work  with  any \n STT,  even  fine-tuned  ones  that  you  might \n have  internally  for  because  you  you \n fine-tuned  them  for  your  particular  use \n case  and  nobody  has  it. \n You  can  combine  it  like  that. \n I  18  seconds,  so  I  guess  we  need  to \n stop.  I'm  sorry,  maybe  we  can  talk \n offline,  otherwise \n they'll  beat  me,  I  guess. \n Thank  you  very  much.  I'm  sorry.",
+ "language": "English",
+ "videoId": "mFLlVpnGpds",
+ "captionTracks": [
+  {
+   "name": {
+    "simpleText": "English (auto-generated)"
+   },
+   "vssId": "a.en",
+   "languageCode": "en",
+   "kind": "asr",
+   "isTranslatable": true,
+   "trackName": ""
+  }
+ ]
+}

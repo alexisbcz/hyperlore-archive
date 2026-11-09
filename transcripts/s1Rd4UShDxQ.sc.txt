@@ -1,0 +1,901 @@
+[8] Today's speaker, we have Jan Koum.
+[10] Jan is the founder of WhatsApp.
+[12] Whatsapp as we mentioned in earlier
+[15] iteration of this is the startupthat did everything right.
+[18] After not getting, after tryingto get jobs at Facebook and not,
+[23] for either Jan or Brian,they put their heads down.
+[27] They figured out a productthat people really wanted.
+[29] And while everybody else inSilicon Valley was going to conferences,
+[33] doing PR,whatever else it is that people do,
+[35] other than making a productthat people really love.
+[38] WhatsApp just quietly builtthis thing that was used by,
+[41] how many people at the timeof the acquisition?
+[43] >> 450.
+[44] >> 450 million people for a consumer app,and more than a billion now, and
+[48] it was acquired by Facebooka couple of years ago.
+[51] And Jan can tell that story.
+[53] But that you very much forcoming to talk to us.
+[56] >> Sure, thanks for having me.
+[57] So when Sam asked me to come andspeak here, I think I made some smart-ass
+[62] comment how I'm going to speak about likepeople actually building a product and
+[67] not going to class or something like that.
+[69] But as Sam mentioned,we were just fortunate in a way
+[73] that we stumbled into somethingthat people really wanted.
+[78] And I'll explain ina second how we got there.
+[82] But the credit reallygoes to not necessarily
+[88] us having some brilliant idea.
+[92] I think the credit goes to also beingin the right time and the right place,
+[96] and building a product that people wanted.
+[98] And just realizing that people wanted it.
+[101] So just to kind of give the quickhistory of how we got where we got,
+[106] we actually, both me andmy co-founder Brian, we were Yahoo for
+[111] about, I was there for 9 years,he was there for 11 years.
+[116] And that time was actually really,really valuable for
+[121] us to learn how to scale back-end servers,what makes a good product,
+[127] what makes a bad product andkind of seeing the Yahoo as a company
+[132] get really successful andthen kind of, you know the story.
+[137] So we left in 2007 just coincidentally
+[140] we both left around the sametime within a month difference.
+[145] And we took some time off,we took about a year off.
+[148] So we left at 2007, we took all 2008 off.
+[153] He moved to New York with his girlfriend,I was just goofing off and
+[157] I really fell in love with my Nokia phone.
+[160] I had this candy bar,I think it was 6610 Nokia phone.
+[164] That I jailbroke, I installed a net monsoftware on it which showed you which
+[167] mobile cell you were connected to, andall this advanced things you could do with
+[171] a phone, that you couldn't dowhen you took it out of the box.
+[179] my birthday was coming up in February, and
+[182] I figure I'll get myself an earlybirthday present, I'll go buy an iPhone.
+[188] So I went to Apple Store,bought an iPhone and
+[192] right around the same time SDK came out,
+[195] I think there was no SDK wheniPhone first came out in 2007.
+[200] But I think they released it at Septemberof 2008 so I was like literally three,
+[205] four months after iPhone came out.
+[207] Sorry, after iOS SDK came out, I gotan iPhone and I started tinkering with it.
+[212] I was also really bored andI had a lot of free time.
+[214] So I'm like okay, well, let's installthis weird thing called Xcode,
+[218] luckily I had a Mac.
+[219] Let's install Xcode,let's figure out what can be done.
+[223] Let's build a simple app, andthen you kind of realize, holy ****.
+[227] It has full Internet connectivity andit can do full TCP/IP stack.
+[231] So it basically is a little computerthat can talk to your server.
+[236] So I'm like, okay, cool,what can we do with it?
+[240] So the first thing that we built,
+[241] which I don't know how many ofyou know the history of WhatsApp.
+[245] The first thing that we built wasactually this concept of a status.
+[248] And so the idea was if you ever used,and you all might be too young for this.
+[253] If you ever used something like AOL AIM orICQ or
+[256] IRC or any of these products,you have this concept of a status.
+[261] Like Yahoo Messenger has this away fromkeyboard or I'm busy or I'm in a meeting.
+[265] And so the first thing that you would dowhen you used those messengers is you
+[269] would like, the first message youwould send was, hey are you there?
+[272] That was like the first message you sentto start a conversation with somebody on
+[277] like ICQ orif you private messaged somebody on IRC.
+[280] Because people would be away and so theywould the status to kind of indicate like,
+[285] I'm not near a computer orI'm AFK or whatever.
+[288] And so the idea was like, well,let's take this concept of status and
+[293] just apply it to your phone.
+[294] So before people call you,they can check your status.
+[297] Maybe you're busy, maybe you're in ameeting, maybe you're traveling, whatever.
+[302] So if you don't pick up,it lets people know why you don't pick up.
+[305] And that was kind of likethe WhatsApp 1.0 application.
+[313] And what we built was, the app thathooked into your address book.
+[318] So the other thing that kind ofworked in our favor was there were
+[321] Address Book APIs on a mobile phone.
+[323] They didn't really exist on a desktop,right.
+[325] If you think about desktop likeWindows from 2000 to 2008-ish,
+[331] people never really put addressbooks on their desktops.
+[336] People always had addressbooks on their mobile phones.
+[339] And so even if the API existed,there was like nothing to query
+[343] because the address book databasewas empty on all these devices.
+[347] And so luckily,the one thing that Apple opened was
+[352] their address book APIs,which was great for us.
+[357] So what we did was, sorry, we basicallywent through the address book and
+[362] we could figure out if the contact in theaddress book was another WhatsApp user.
+[367] And that's basicallyhow the status worked.
+[369] We would take your phone number, andif it was an international phone number,
+[374] we would try to normalizeit to the plus format.
+[377] So your phone number would start,all the phone numbers in our system,
+[379] would start with a plus inthe full international format.
+[382] And we will be able to do that ifthe other person is a person on a WhatsApp
+[387] network, a user of our product.
+[390] And the idea was that,before you start a phone call, or
+[394] before you send a message, you would checkthe status of this person from WhatsApp.
+[400] And they would say, I'm available andyou would call them.
+[402] Right, so, that was WhatsApp 1.0,
+[405] it failed horribly,it was a disaster, it was depressing.
+[409] Nobody used it, people downloaded it,actually, surprisingly enough,
+[413] and I think people downloaded itbecause there were no apps at the time.
+[416] There were like maybe 1000 or
+[418] 2000 apps in the whole App Storebecause it just went live.
+[421] So we benefited from being early,but the idea wasn't so great.
+[426] So people would download andthey'd just like never use it.
+[429] People just called peoplelike they normally would.
+[432] It was really hard toreplace a native dialer, and
+[434] that's kind of what we wanted to do.
+[435] We wanted to replace a nativedialing application.
+[440] So we We struggled for
+[443] a little bit, we kept adding allthese weird features in retrospect.
+[447] Back then we thought theywere the best thing ever.
+[450] You could set your status to automaticallychange at a certain time of day.
+[453] If you knew you were always ina meeting from 2 to 4, you could
+[456] automatically configure it to always saythat you're in a meeting from 2 to 4.
+[459] So it kind of had that functionality.
+[462] And then something happened aroundthe summer of 2009, Apple introduced push
+[465] notifications so back then if youwanted the application to wake up,
+[470] the only way to wake up was the usertapping on the application item.
+[474] And there was no way to do anything in thebackground which in retrospect was really
+[477] back words because I do not know if anyof you know about Nokia Symbian phones.
+[482] Well, 60 blackberry had over capability.
+[485] Even before iPhone cameout to do auto start,
+[488] to do background multitasking,to do networking, to do all of the stuff.
+[492] And so IoS actually limited whatwe can do, so we're struggling.
+[497] And then Apple introduced Pushnotifications were like, hallelujah.
+[500] So we ended up,who came into Apple push notifications?
+[506] I think this was likearound the summer time.
+[509] Even before they were still in betabecause we have developer access.
+[512] And we noticed that people wereusing of this status as a way to
+[515] kind of communicate with each other.
+[517] They would change the status tosay like I'm going to a bar.
+[520] And like the change of statuswould like broadcast and
+[524] go to all the other people who usedWhatsApp in their address book.
+[528] And so around the summer of2009 we're like, interesting.
+[534] Maybe we should build messaging.
+[535] And then it all kind of clickedbecause I've always used SMS.
+[539] And if you remember on the old Nokiaphones, the SMS was not threaded.
+[544] So you would get a message,it would show up with a phone number.
+[546] And if you get anothermessage from that person,
+[548] it would show up as justanother entry in your list.
+[552] And then iOS came out and they introducedthreaded SMS, and everybody went wow.
+[557] So we said okay, well, we can dofull networking, we can do TCP/IP.
+[562] We can connect a phone, if your phone isa client, to a server on the back end.
+[567] We already had all this code to figureout if you're a WhatsApp user or not.
+[572] We could take your phone number parse it,figure out all the international prefixes.
+[578] We even figured out Argentina at somepoint, which was not an easy thing to do,
+[581] but we got there.
+[584] So, we got to a state where wecould actually send messaging,
+[588] have people send messages over WhatsApp.
+[591] And, if you look at our application today,you see all those features.
+[593] You see group chat.
+[594] You see ability to send media, to recordvoice messages, to do all the stuff.
+[599] We didn't have any of it.
+[600] We didn't have like, the only thingwe had was one on one messaging.
+[604] That's it.Just think how antiquated that is.
+[606] And that's what we launched with.
+[608] So, around September,I think it was Septemberish,
+[612] maybe late August early September is,a maybe when early October,
+[616] actually I don't remember is one ofthe launch messaging and it took off and
+[621] it was intuitive to us why ittook off because a semester is so
+[625] expensive back on those days right andespecially international semester.
+[630] So if you had two people who wereliving in two different countries,
+[633] how did they communicate?
+[636] Well, they could send each other SMS,which was expensive.
+[639] They could use Skype, butSkype mostly worked on a desktop, so
+[642] you had to like synchronize the time whenboth of you are in front of a computer,
+[646] and, you know, people usually are not.
+[648] Like, some of you have computers open,but if you get a Skype call now,
+[650] you're not going to answer it, right.
+[652] So, there was really no good way forpeople to like communicate in real time.
+[658] And so that's why SMS was so popularbecause your phone was always with you,
+[661] it was always in your pocket,
+[662] it was always no matter where youwant your had your phone with you.
+[665] So when you sent an SMS,you never said, hey are you there?
+[669] But you never did that.
+[669] You'd just send an SMS.
+[671] The only thing sometimes you could say is,hey, did you get my message.
+[674] Because SMS was so unreliable,especially internationally.
+[677] And so that was the otherproblem that we could solve by
+[680] building on top of TCP/IP is that wecould add reliability in our protocol.
+[684] So, we rolled out messaging.
+[686] We made it super reliable.
+[688] We added all these visual indicators.
+[690] We, if the message actually wassuccessfully delivered to our server.
+[693] You knew if it was successfully deliveredto the device that you were sending it to,
+[697] and it just took off.
+[699] And, when Sam talks about like,well, we kind of like When has down.
+[704] Or we didn't go to conferences and
+[705] when they didn't do a whole lot of otherstuff, it's just because we were lucky.
+[709] We stumbled into something thatpeople really, really had a need for.
+[712] Just think about as a mess,back in 2006, 2007.
+[715] Right?
+[716] There was no iMessage,nothing else worked on your phone.
+[721] SMS was expensive.
+[722] It was horrible limiting, you canonly send 160 characters at a time.
+[726] And if you sent a longer message,it would break it into multiple chunks.
+[729] And sometimes the chunk at the bottomwould arrive first, so you'd have to read
+[732] the message at the bottom andthen read the message on top after that.
+[737] Media was horribly expensive andit was not working well across platforms.
+[741] So if I sent a video recorded onNokia phone to Blackberry users,
+[744] it probably couldn't have watched it.
+[746] Or if you send a video recordingon Blackberry to iPhone probably
+[749] wouldn't work either.
+[750] So we had all these limitations that medswe're trying to address in our product and
+[756] obviously the biggest problem was cost,
+[758] meds was very expensive in Europe and inmany countries outside of North America.
+[763] And we just kept going.
+[765] So once we figured outthat there was a need for
+[767] it, we were like well, we better hire.
+[769] So we hired some of ourold friends from Yahoo,
+[773] who left Yahoo,some of our ex-Yahoo friends.
+[777] I hired a friend of mine who I actuallymet when I was working at Stanford
+[782] like when I was doing IT at graduateschool of business in like, 96 97-ish,
+[786] when I was in high school, so he came andhe helped work on the Blackberry client.
+[791] So our goal was like,we got to build all these features, but
+[794] we also gotta build all these platforms.
+[796] Because we started out with iPhone, butthe world back then was very different.
+[801] Nokia actually was majoritysmartphone platform back in the days.
+[806] Not in North America, but if you kindof looked at the rest of the world,
+[809] everybody was using Nokia smartphones andBlackberry.
+[812] And Android, I think didn't even exist.
+[814] It was just barely existed inthe end of 2009 and early 2010.
+[818] So we had to build for Nokia, and
+[820] we had to find people who couldactually build for Nokia Symbian S-60.
+[825] And we had to find those people in Europe,
+[827] because nobody in Silicon Valleyeven heard of Nokia.
+[830] So they went and found two reallygood engineers to help us build that.
+[834] Finally, a story about our Nokia client.
+[839] It's actually built using Python.
+[842] Not all our people know that actuallyNokia 60 has Python runtime.
+[845] So remember when Brian, my cofounder,started looking at Nokia.
+[850] Because we knew that we had to do Nokia,so he kind of went away for a week.
+[852] He comes back a week later.
+[854] He's like,you're not going to believe this.
+[857] You can use Python to build a client.
+[858] And I was like, no way.
+[859] Get out of here.He was like, no, no, no, no.
+[860] Seriously.You can run Python on this little tiny
+[863] phone.
+[864] I was like okay let's try anddo it and that's what we did.
+[867] The basic was the whole back end,the communications and
+[870] protocol was all in Python andthe UI was actually in C++.
+[873] So we started working onbuilding multiple platforms and
+[877] we started working on building features.
+[879] So we launched Blackberry,we launched Nokia 60.
+[883] We launched Android all withinthe two months of each other in 2010,
+[886] and then we started building features.
+[888] So, we had to build whatpeople asked us to build.
+[892] People wanted group chat.
+[893] Everybody's like, this is great.
+[895] I love your product.
+[896] I want to have a group conversationwith my family, or three friends,
+[900] or five co-workers, orten people in a study group.
+[903] And we're like, okay,well how do we build group chat?
+[907] Let's figure it out.
+[908] So we'll sit down and sketch the userexperience then figure out how to make
+[912] the back-end system work for group chat.
+[914] And then people wanted, obviouslyvery quickly we added multimedia.
+[919] And I think multimedia is whatreally took us to the next level.
+[922] Once we added ability to send a picture,which.
+[925] Today is like comical, how could you nothave the ability to send pictures through
+[929] a messaging product over your smartphone?
+[931] Back then you couldn't there wasnothing that worked really well.
+[934] What was cheaper was reliable.
+[937] So we added the abilityto send the picture,
+[938] we added the ability to send videos.
+[940] We at some point introduced voicemessages and then things just took off.
+[945] And so at that point it wasjust scaling the back end.
+[948] And this is where itkind of ties into what I
+[951] was talking about earlier where me andBrian worked at Yahoo.
+[955] Because we spent so much time there andbecause we were there in early days and
+[958] we sold the company scale, we had allthis experience to scale the back end.
+[963] And we had our own share of outages.
+[966] And our service wasn't 100% perfect butwe would make sure that we would
+[971] learn from an outage and make sure that wewould add the right monitoring in place.
+[975] And we would have capacity always forholidays like Christmas and
+[978] New Years where there's a traffic spike.
+[980] But having that experienceworking at Yahoo,
+[983] learning how to scalethe back-end systems.
+[986] Learning how to tweakthe operating systems, the kernels,
+[988] the networking stack.
+[989] The ethernet driver if you have to,it's all kind of tied together.
+[993] So our experience at Yahoo,our experience with difficult or
+[999] challenging SMS protocol that we all useas a consumer kind of all combined with
+[1005] this perfect timing that happened in 2009,2010 with smartphones coming online and
+[1009] people wanting to have thisability to communicate.
+[1012] And if you think about smartphone,
+[1014] the messaging is a killer app forthe smartphone.
+[1018] So we just basically stumbledinto this killer app.
+[1022] Because nothing else you do morewith a smartphone that communicate.
+[1025] Most of it is probably talking to yourfriends and family and your loved ones.
+[1029] I message on WhatsApp orSkype or anything else.
+[1034] Yes?They guy [INAUDIBLE]
+[1035] >> Would you do it again?
+[1037] >> Could you make anotherapp that takes off?
+[1039] >> A messaging app or just an app?
+[1041] >> Just any app?
+[1041] >> I could.
+[1043] I'm not sure you can.
+[1045] >> [LAUGH]>> I already did this once.
+[1048] I mean the chances of me beingsuccessful again are like zero.
+[1052] So the odds are on your side.
+[1054] So you should go and do something.
+[1057] So that's why we're able toactually spend all of our time
+[1062] heads down building a product becausewe had this amazing product market fit.
+[1067] We had this amazing productthat people wanted.
+[1070] They were like, give me, give me, give me,when we were all in and out Nokia S40
+[1073] which was just like a step below NokiaS60 Which was kind of a picture phone.
+[1079] People were emailing us, asking for,when is it going to be done,
+[1083] when is it going to be done,when is it going to be done?
+[1085] And so,there was a huge pent up demand for
+[1088] any platform before we would launch it.
+[1090] And so that why we didn't havea need to go to the conference and
+[1094] do a lot of PR or do anything like that.
+[1098] Because we had people who neededour product and we had like
+[1101] millions of people who were waiting for usto build a new feature or a new platform.
+[1104] And that's why we were able to justgo heads down and build a product.
+[1110] So that was kind of like some backgroundthat I wanted to give you on how we
+[1112] got started.
+[1113] We can do a q and a forthe next 15 to 20 minutes and yeah.
+[1119] >> The specific thing I want to hear mostabout is how you dealt with the launch of
+[1124] iMessage and Facebook Messenger andall the other messaging platforms.
+[1128] WhatsApp was clearly first, andthen the world got scary quickly.
+[1133] How did you think about that?
+[1136] [UNKNOWN>> So, how do we think about imessage and
+[1140] all these other platforms.
+[1142] So, with iMessage we,when did they launch?
+[1147] I think 2011 ish.
+[1149] Something like that.
+[1150] I think 2011 at the developer conference.
+[1154] So, the world in Silicon Valley isvery different from the world outside.
+[1159] So in Silicon Valley if you look around,90% of people have an iPhone.
+[1163] Not only do they have an iPhone,they have the latest, greatest iPhone.
+[1169] Outside of silicon valley,it's like 80 or 90% Android, right?
+[1174] So for us, having an iMessage launch wasjust like a small blip on the radar.
+[1180] >> [INAUDIBLE]>> So Facebook Messenger so
+[1186] I think Facebook for a very long timedidn't really have a good messaging story.
+[1190] I remember they bought this company calledBeluga which I think it was Beluga that
+[1195] was group messaging so they were kindof focused on group messaging at first.
+[1198] And then they shut it down andturn it into Facebook Messenger.
+[1202] But Facebook Messenger waspart of the Facebook app.
+[1204] It wasn't really a dedicatedapp back in the days.
+[1208] But ultimately, if you look ata Facebook Messenger, the graph that
+[1212] the Facebook Messenger is using is verydifferent from the graph on your phone.
+[1216] And if you think about people you add toyour address book and people on Facebook,
+[1222] there is going to be some overlap butthe most part is going to be different.
+[1227] So people who I add on Facebook areprobably not people I'm going to message
+[1230] with a lot.
+[1231] And people who I put in my address book,people who are probably
+[1235] a different graph in terms of likehow they are important to me and
+[1240] if I urge you into my, basically ifI exchange my number with somebody,
+[1245] it means that you give them the abilityto WhatsApp me, SMS me or call me.
+[1249] There are probably of people who are I'mfriend with in Facebook who called me,
+[1255] I will probably like, who is this, yeahwe met each other once and I added them.
+[1262] I'm probably not necessarilya typical example.
+[1265] I mean, I'm sure there are people who havedifferent grabs on different networks.
+[1269] I'm sure there are people whouse WhatsApp only for work and
+[1272] they only have their coworkers onthe WhatsApp, in their address book.
+[1277] And i'm sure that thereare people who only
+[1280] have certain set of theircontacts in one or the other.
+[1284] But I think overall this idea of likewell if I add you to my phone I give you
+[1288] permission to interrupt my life is whatmakes our network a little different.
+[1292] Because people have these connections
+[1296] that are stronger with people who theyhave in each other's address book.
+[1300] With Facebook,I have people I went to high school with,
+[1302] I have people I went to university with.
+[1304] And it's great that I can keep intouch with them on Facebook but
+[1307] I wouldn't want them to call me outof the blue at 7:00 pm it would be
+[1310] awkward because I haven'ttalked to them for years.
+[1313] So the graphs are differentin that sense so
+[1318] we always had kind of going back andgeneralizing it.
+[1321] We'll always have competitionfrom day one, there was actually
+[1325] a point in time where there was a newmessaging app popping up like every month.
+[1329] And every month there wasan article on Tech Crunch how this
+[1332] awesome new messaging app was going totake down all other messaging apps.
+[1336] And I don't know if they paidTech Crunch to write it or what.
+[1339] [LAUGH] And we would just read this andwe would go like, they have no users.
+[1342] How can you write thatstory in Tech Crunch.
+[1344] It just makes no sense.
+[1346] And obviously we didn't want to sayanything because we didn't want
+[1348] to draw attention to ourselves.
+[1349] But actually on purpose triedto stay under the radar.
+[1354] It was trying to see this fromthe sidelines, all this kind of like,
+[1358] dog and pony show thathappened with all these apps.
+[1361] I mean there was ping me, there wasmessage me, there was group me, there was
+[1366] skigs, there were like, hello, there werelike ten different messaging apps at some
+[1370] point, which kept getting all thispublicity and we were like good for you.
+[1374] Have all the publicity you want,we'll just stay under the radar and
+[1377] not have any attention drawn to us.
+[1380] So we'll always have competition be it bigguys like Imessage of Facebook messenger,
+[1384] be it little guys like kick.
+[1385] We always have competition.
+[1387] Even today we still have apps likeTelegram out there, and Line, and Cow.
+[1393] But we said that our destinyis really in our hands.
+[1396] We can't worry too much about competition.
+[1399] We have to worry about our product andour users.
+[1401] And if we spend a lot of timethinking about competition and
+[1404] looking at competition,we're going to fail, yeah?
+[1408] So trying to build on what you justtalked about, this social graph.
+[1411] I mean, I feel like this wholesocial graph is actually now
+[1416] changing like I mean,at least among me and my friends.
+[1421] I think I don't call people so much.
+[1423] I don't really send them SMS.
+[1426] I will probably at people mostly on thissocial media, like online, Facebook.
+[1430] I could add that or like chat appslike it's what said it more, but
+[1433] if you feel like thiswhole social graph and
+[1435] this social changing slowly because peoplecall less and people send SMS less.
+[1441] People like to do it more onthis social media platforms.
+[1445] Do you have a view on that and
+[1446] do you think there's anylike opportunity on that?
+[1451] Or do you think thisshift is even true or?
+[1454] >> I think, yeah, I think true,so the question was,
+[1459] how, so the world is changing,people call less, and
+[1463] now like people add the social networksall kind of merge into one now.
+[1471] Yeah, you're right,I think people call less these days, and
+[1473] people mostly message each other.
+[1477] I don't really know if we woulddo anything differently today,
+[1482] or even back then.
+[1484] I think for us, the focus has always beenon well, we want to provide a utility,
+[1489] we want to provide an application thatis purely, only about communication.
+[1494] So if you look at some otherapps like V-Chat or Line or
+[1498] Kakao because they do a lotof different things, right?
+[1500] You can like order taxes through V-Chatand you can follow people online,
+[1503] like Line has a whole feed concept.
+[1505] And we always wanted to build somethingthat is really, really efficient and
+[1509] utilitarian and also fast and reliable.
+[1513] I mean, not a lot of people can have thelatest and greatest smart phone, right?
+[1516] A lot of people have androidphones that are low end.
+[1519] A lot of people have, orused to have Blackberry phones
+[1522] that didn't have a lot of horse power anda lot of memory and a lot of CPU, so for
+[1525] us it was always about reliability andefficiency of the app and not trying to do
+[1529] all these different things that a lot ofdifferent social networks and apps do.
+[1533] Yeah?
+[1538] >> How do you think about Messenger rightnow, because now that Messenger integrated
+[1543] a lot of the features that's WhatsApp had,I am starting to use Messenger a lot more.
+[1547] And that definitely takes awayfrom the internal WhatsApp, so
+[1550] do you have internal competition?
+[1552] >> No, I think internal there is stilla lot of room for both apps to grow.
+[1558] I think messenger is really strongin countries like North America,
+[1560] like the United States for example.
+[1562] So I think they complimenteach other geographically.
+[1565] So I think if you look at countrieslike India, or Israel, or
+[1569] Hong Kong, or Germany, or Spain.
+[1573] WhatsApp has really strongfoothold in those countries and
+[1576] I think if you look atsomething like Australia or
+[1578] North America you're probably going tosee Messenger do really well.
+[1580] So a lot of it is also notnecessarily split by a graph, but
+[1584] also by the country you're in.
+[1586] Okay.
+[1588] >> I appreciate the humility that youcouldn't do it again with another app,
+[1592] but I'm sure people asked youall the time for help or advice.
+[1595] How do you determine if you're on idea or
+[1598] look at an applicationit can do really well?
+[1600] How do you think through that?
+[1604] >> It's very simple.
+[1604] The question is how do you determine ifan app has a potential or is a good idea?
+[1615] It has to solve a really basic problem andit has to do it in a really simple and
+[1619] efficient way.
+[1620] I mean going back to what we built,we in some ways solved a problem, right?
+[1626] People had a problem communicating whenthey were not in the same room, when they
+[1631] were in different cities, or in differentcountries, or in different time zones.
+[1634] And so,it's not that it wasn't impossible.
+[1639] It was just, it was hard, and
+[1640] it was expensive, andwe made it easier and cheaper.
+[1644] And when you offer somethingto people that is easier and
+[1649] the cheaper people of course, will use it.
+[1652] So I think it's the number one thing tolook at for me when I look at a product,
+[1657] does it solve a need and does it solvea need on a global scale, right?
+[1660] If you solve a need forpeople on Stanford campus,
+[1663] that's great, but can it scale toa billion or 2 billion people.
+[1666] So we need it for the only people only inSilicon Valley by providing them charges
+[1670] for their Teslas, great, how manypeople have Teslas in the world, right?
+[1674] It's gotta be a global, actually a lotof people have Teslas, I don't know.
+[1678] >> [LAUGH]>> But it's gotta be a global solution
+[1681] that applies to everybody inevery country potentially, right?
+[1685] And so, that was kind of like.
+[1687] >> [INAUDIBLE] Sorry to getwrong as instead Silicon Valley,
+[1691] everyone's got the iPhone 7S orwhatever we're on now.
+[1695] How did you build that into the culture ofthe company to think about your users all
+[1700] around the world?
+[1704] I don't know.
+[1706] We got lucky with the people we hired.
+[1708] And that was the other thing that I didn'tmention that I should've mentioned.
+[1712] We ended up with a reallyincredible team that we
+[1717] mostly hired out of our personal networkfrom ex-Yahoo and from friends of friends.
+[1724] I think ourselves hada really good understanding.
+[1727] I mean me and myself being an immigrantand growing up in other country and
+[1730] going to all these other countries,
+[1732] I understood that there was moreto smartphone than just iPhone.
+[1738] That was the thing everybody talkedabout and wrote about in 2008 and 2009.
+[1743] It's like for me, especially assomebody who really liked Nokia phones,
+[1747] before Nokia went out of business,I was like, We've got to build for Nokia,
+[1751] because they're great phones, and thereis like a billion smartphones out there.
+[1756] So I think, just me and my co-founder,having that perspective,
+[1762] probably just goes through the company,and people understood that.
+[1765] Hey, you don't want to just build foriPhones.
+[1768] You don't want to just build forthe latest and greatest.
+[1770] You have all these millions of phonesout there, billions of phones out there,
+[1775] that you've gotta build for because youwant those users to be using your product.
+[1778] And they also are asking us to do that.
+[1782] Yeah?>> Can you talk about the business side as
+[1784] far as incorporation,equity and raising money?
+[1788] A business side my favorite topic, sure.
+[1795] So we incorporated on my birthdayon February 24th of 2009.
+[1802] And the reason like the thinking thatwas going through, so let me back up.
+[1808] We were trying to submit an appinto the Apple Store and
+[1811] I didn't want to do it under my own name.
+[1813] I didn't want the app to sayyou Coon because I figured like
+[1817] who would want to submitan app made by some guy.
+[1819] So I figured we shouldprobably be more official,
+[1821] we should have a company,okay, so go to Google.
+[1825] How do you start a company,right, it's just step one.
+[1830] So I got a friend of mine,he was an insurance broker,
+[1836] so he had his own company and
+[1838] he was like 3 blocks away fromme in Santa Clara where I live.
+[1843] And so, I went to his office because Iused to buy insurance for my car and
+[1848] my house from him and so, I was like dudehow did you incorporate he is like it easy
+[1853] you take these articles on corporationit's like one page was like five things
+[1856] written and you go to San Franciscoto the State Building, the secretary
+[1862] of the state or whatever and you givethem $100 and they stamp and you're done.
+[1865] I'm like no way it can't be that easy,he said yeah, it's that easy,
+[1869] I'm like all right, so we had to submitan app and they wanted us to show.
+[1873] Like Apple Store actuallywanted us to send them a copy
+[1876] of the incorporation articles.
+[1878] So it was like, okay, easy.
+[1882] I have nothing to do that day,I'll drive to San Francisco, get lunch,
+[1885] go to his office, get a stamp,Get a letter great.
+[1889] Send it to Apple.
+[1890] They look at the letters,like yup, you're legit,
+[1892] you're a company, you can nowsubmit under the name WhatsApp.
+[1894] I'm like cool.
+[1895] Submitted an app under the name WhatsApp.
+[1897] So that was how we incorporated.
+[1899] In terms of, in terms of,it's easier than it sounds,
+[1904] like a struggle for me,because I've never done it.
+[1907] How did we think about money orthe whole funding thing.
+[1911] So we left Yahoo with some savings,
+[1918] because Yahoo did really well in late 90s,early 2000s.
+[1921] And so we had stock,we had options, we had our issues.
+[1926] And so I was actually ableto not only take a year off,
+[1930] obviously not do anything extravagant.
+[1932] But like live off my savings for a year.
+[1935] And then I had enough money to where
+[1937] while I was still tinkering around withan app and we didn't have exuberant costs.
+[1942] I actually remember like when we startedout I was using my buddy's server,
+[1946] this guy Chuck,who also used to work at Yahoo.
+[1950] He used to run Yahoo Sports.
+[1952] So I used to sit next to the Yahoosports teams, so we became friends.
+[1955] So I was like hey chuckcan I use your server?
+[1957] I don't want to pay 20$ a month fora server, he's like yeah sure.
+[1959] So like you know, saving $20 a monthon a server was a big deal for me.
+[1964] So we would run original on his server.
+[1966] And I remember at some pointlaunched messaging and
+[1969] I saw all this growth and he's likedude you got to get your own servers.
+[1971] I'm like no I don't want to pay formy own servers.
+[1974] No you got to get your own servers.
+[1975] You're taking up all this CPU andbandwidth.
+[1978] I'm like no no no I'm fine.
+[1980] So eventually he kickedme out of his server.
+[1984] And which was great because wewere switching from Linux to
+[1988] which would allow them tohave the experience at Yahoo.
+[1992] And so what we were able to actually,for a long time live off of our savings.
+[1997] And since we had all of this
+[2000] experience on run the companyefficiently when it comes to servers and
+[2003] backend and bandwidth and everything,there was not a lot of expense.
+[2006] The expense started whenwe had to go hire people,
+[2010] and the idea was that okay,we going to have to pay for
+[2015] bandwidths, we going to have to pay forBanbros, we going to have to pay for
+[2017] SMS verification because to sign up onWhatsApp you have to verify your number.
+[2022] And, we did a small angel round,
+[2027] I can't even remember,I think it was end of 2009.
+[2032] We did a small angel round, and
+[2034] then we basically kind of kept our companyrunning without losing too much money,
+[2039] because in the early days,iPhone app was actually paid.
+[2043] The people had to pay onedollar to download iPhone app.
+[2046] While everything else was free likeAndroid and Blackberry and Nokia.
+[2049] And so we had people paying foriPhone app and that kind of went to,
+[2055] it gave us the ability to pay for thebill, for electricity for bandwidth bills,
+[2060] for several bills and all that stuff.
+[2066] And I think probably around 2010, 2011.
+[2068] People started knocking on our door.
+[2070] We didn't even went out to look for money.
+[2073] Which is a great situation to be in.
+[2075] because if you are going to go raise,and you need money,
+[2078] you probably are not goingto get the terms you want.
+[2081] Which was, for us was,kind of worked in our favor because
+[2086] all these receipts startedcoming to us and they're like.
+[2090] Because they're doing great
+[2091] we want to partner with youwe want to give you money.
+[2093] And we're like eh we don't really need it.
+[2095] Which makes them wantto invest even more so
+[2100] we kind of did this dance where we're likeno no we don't really want your money.
+[2104] Come back in a few months and eventuallyafter all these conversations me and
+[2108] Brian sit down and we're like okay well.
+[2110] We just wasted their time and
+[2111] our time, should we just take funding orshould we not.
+[2114] And we decided we should because it's
+[2117] better to have money in your bankaccount for your business or not.
+[2121] And that's the words of wisdom that Igot from Jeff Who because Jeff was like
+[2126] if you can have money in your bank accountyou should have money in your bank account
+[2128] because you never know if you have to buy.
+[2130] In building or
+[2131] if your netted to buy some office spacebecause you started growing too quickly.
+[2134] And you don't want to negotiate andraise money when it's too late.
+[2137] Like, you want to do itwhen you don't need money.
+[2140] So listening to words ofwisdom of Jeff Ralston,
+[2143] we were like, okay, let's get somefunding and we partnered with Seguin and
+[2147] we got money fromSequoia Any other questions?
+[2152] Yeah?>> Could you sort of walk us through your
+[2155] internal psychology and confidenceover the trajectory of the company?
+[2159] At the beginning, did you identify thatthe market timing was pretty spot on, or
+[2164] were you just sort of followingwhat your users were saying to you?
+[2172] >> I think until we did messaging,when we doing that status feature,
+[2178] obviously it was rough because we hadno users, and nobody using our product.
+[2185] And so you're sitting there Inyour room building a product and
+[2190] thinking like well, nobody wants to buy.
+[2194] Why am I doing this?
+[2194] What is the meaning of life andall that stuff, right?
+[2196] And so you kind of like it's stuff.
+[2199] When you're building a product that peopledon't really want, you feel rejected.
+[2202] You feel like, why aren't you using it?
+[2204] It's great, I put all my energy in it.
+[2209] So once we added messaging,it was like 180 degrees difference.
+[2216] All of a sudden everybodywants our product.
+[2218] Everybody thinks it'sthe coolest thing ever.
+[2219] We get all these letters intoour own email, in-boxes.
+[2224] All these emails from peoplesaying how great your product is.
+[2227] I'm able to keep in touch with my fiance.
+[2229] I got married because of your product.
+[2231] Your product helped me save livesbecause the hikers were lost and
+[2235] the hikers were able to useWhatsApp share location to send.
+[2237] It's just night and day.
+[2239] When people want your product, and
+[2241] they love your product, the psychologyinside a company is just different.
+[2245] People would come to work, and they'd belike we're building the best thing ever.
+[2249] People loves the product.
+[2250] This is great.
+[2251] And so, we didn't really have to doa lot of selling even to the candidates.
+[2254] Like, people who came in to interviewwith us basically fell into two counts.
+[2260] People who live sole bubble and neverheard of WhatsApp and they'll be like,
+[2263] where would I work for WhatsApp?
+[2265] And people who kind of fell into like,well, there is a whole world out there
+[2268] bubble, and they were like, you guys havemillions of users, like my cousin in Spain
+[2271] or my friend in Germany was telling meabout your product and everybody uses it.
+[2275] Or people would say, I went to India orI went to Middle East and
+[2278] everybody uses your product.
+[2278] It's like amazing how comenobody heard about you?
+[2280] And they're like, well, that's on purpose.
+[2282] And so basically like these two typesof people would with intro and so
+[2286] obviously people who were had itlike the silicone valley bubble.
+[2289] They don't even want to come work for us.
+[2291] Which is not the end of the world becausethere were plenty of people who understood
+[2294] there was a whole big world out there.
+[2296] And they were happy to build product for
+[2298] hundreds of millions ofusers all over the world.
+[2303] Yeah.[INAUDIBLE]
+[2304] >> How was the fundraising experience
+[2309] [INAUDIBLE].
+[2312] Why did I partner with Sequoia?
+[2318] So we had a few companiesgive us term sheets.
+[2322] One of them even gaveus a blank term sheet.
+[2323] They're like,fill out the number you want.
+[2325] >> [LAUGH]>> And we're like, well, if they're that,
+[2329] that irresponsible withother people's money,
+[2334] we shouldn't do that,shouldn't be partnering with that.
+[2338] Sequoia is just an amazing brand, right?
+[2341] For me,living in Silicon Valley since 1992 and
+[2347] reading articles, and seeing news aboutall these companies that have gone public,
+[2352] like Netscape, and Sysco, and Google, and
+[2357] knowing that a lot of them were backedby Sequoia just made it not a very
+[2364] difficult decision to pick Sequoia Well,I also really like people who work there.
+[2369] A lot of it was just personal chemistry.
+[2372] A lot of it is the C company understandinghow much to be hands on or not.
+[2379] Like Sequoia was actually reallygreat about, they knew the numbers,
+[2383] they knew we were growing.
+[2385] They didn't meddle, right?
+[2386] They didn't need to come in andsay you guys are doing this wrong or
+[2389] doing that wrong,there was no need for that.
+[2392] And I think we had that understandingupfront, where they kind of made us
+[2396] a promise they were like,we're here to help you financially.
+[2401] We're not here to helpyou with management.
+[2403] We're not here to help you write code.
+[2404] We're not here to help you build features.
+[2406] We're here just to help you grow andto help you financially.
+[2409] And if you need any help outside of that,come knock on our door and
+[2412] we'll try to help.
+[2413] And they were really helpful with stuffwhen we asked, like recruiting or
+[2417] anything like that.
+[2418] They would sometimes meet withprospective candidates and
+[2420] tells them why they should join WhatsApp.
+[2422] So Sequoia was really great,it was a brand.
+[2426] And I remember, actually,when we have multiple term sheets.
+[2429] Me andBrian went to Jeff Roston's house and
+[2432] we were talking to him,it was late in the evening.
+[2435] We were trying to just getadvice on what we should do and
+[2437] he kind of looked at all them.
+[2438] And we talked throughall the different terms.
+[2440] And then he kind of said,once you're a Sequoia company,
+[2442] you 're a Sequoia company.
+[2443] It's that branding is really strong andit means a lot.
+[2448] >> I have an important one.
+[2450] >> Yes, what?
+[2451] >> [LAUGH].
+[2452] >> [INAUDIBLE] for you, but->> How did you get your first few thousand
+[2456] users back in the day and set the status?
+[2458] >> Well, how did we get ourfirst few thousand users?
+[2461] So, there was no apps back then.
+[2464] And iOS, well it wasn't iOS back then,it was iPhone OS.
+[2471] And the Apple Store hadthis category What's New.
+[2474] And the trick was to submita new app every few days, so
+[2479] you would always show upon top of What's New.
+[2483] And you would make a smallchange to the name.
+[2485] Because I think back in the old days,
+[2487] the name differencetriggered you as a new app.
+[2491] So it would basically have status and thenit would say status for your smartphone,
+[2496] or status for your calls, or status foryour iPhone, or updated status.
+[2500] We would basically tweak the name a littlebit with every new version we submit.
+[2505] Which always kept us almost alwaysat the top of the New category.
+[2509] And since there are no apps, people wouldgo to What's New category all the time
+[2513] to download, to try to downloadwhatever people would build.
+[2516] Because today you have thousands of apps,back days you had hundreds.
+[2521] And basically by gaming the systema little bit, we were able to.
+[2525] I think that loophole gotclosed really quickly, but
+[2528] luckily by that time wealready had messaging.
+[2531] Yeah?
+[2531] >> How did you scale up your company,I mean,
+[2534] how do you scale up WhatsAppinto different countries?
+[2539] >> How do we scale intodifferent countries?
+[2541] We didn't have to scale.
+[2543] Well, we did have to do a coupleof things, I take that back.
+[2546] So, there were two thingsthat we had to do.
+[2549] One, we had to build different platforms.
+[2551] Because there were some countrieswhere iPhones just didn't exist.
+[2553] And everybody was using either Nokia orBlackberry or a combination of two.
+[2558] The second thing that we starteddoing early on is focusing on
+[2561] localization, right?
+[2563] So again, this kind of goes back toSilicon Valley bubble where everybody in
+[2566] Silicon Valley speaks English.
+[2568] Therefore, the rest of the worldmust speak English, not quite.
+[2571] So, we focused early on localization.
+[2575] We actually hired people internally intothe company who were doing two things.
+[2580] They were customer supportrepresentatives, so
+[2582] they would help people with problems andwrite FAQs and help debug issues.
+[2585] But they were also all multilingual.
+[2588] So we'd hire somebody whowas perfect in Spanish, and
+[2590] we would hire somebody whowas perfect in German.
+[2591] And we'd hire somebody who isperfect in Portuguese, and
+[2594] we would hire somebody whowas perfect in Italian.
+[2596] We would hire somebody who was perfect inall these languages where our apps were
+[2600] starting to grow.
+[2601] So we could build a really good,localized experience.
+[2604] So when you download WhatsApp in Brazil,it's not in English, it's in Portuguese.
+[2609] And I think that is what helpedus grow in all these countries.
+[2612] Yeah.
+[2614] >> How did you convince your first fewemployees I know that they came from your
+[2618] personal network.
+[2619] But how did you convince them to join you?
+[2621] >> It wasn't hard,most of them were unemployed.
+[2625] >> [LAUGH]>> So let me see, so
+[2630] Brian joined, so Brian left Yahoo.
+[2634] And he, I think, didn't really doanything, I think he left in 98.
+[2638] So he didn't really do anything forten years.
+[2641] He was one of the early app engineers.
+[2642] >> [LAUGH]>> So that was one.
+[2645] Chris, my friend, who went up to Stanford.
+[2647] I think he was doing this startupthat wasn't really going anywhere,.
+[2651] And he was in LA, and
+[2652] he got married to this wonderful girlwho's parents are actually from here.
+[2657] So, I think for her it was an advantageto move here to be closer to her parents.
+[2661] So I'm like yeah, yeah, you guys shouldmove, you guys should move here,
+[2664] move back to northern California.
+[2666] So the combination of her wanting tomove to be closer to her parents and
+[2670] him not really doing anything not havinga full time job also contributed.
+[2676] This guy Eugene who was one of our earlyhires, he was working at a company,
+[2680] I actually knew him through my socialnetwork, we are still friends.
+[2685] And he would always complained howhe hated his job and how there were
+[2688] trying to **** him over by promisinghim stock options and never delivering.
+[2692] He hated it, so I'm like, well,here's a good opportunity.
+[2697] Let's see what else.
+[2700] We hired this guy Michael who was in NewYork, wasn't really doing anything also.
+[2705] So, he was a referral througha friend of mine from Yahoo.
+[2709] So there was this guy Michael Radmanwho I used to work with at Yahoo,
+[2712] who was working at a startup,and we would keep in touch.
+[2715] And at some point I was complaining to himhow hard it is to find good engineers that
+[2719] are smart and
+[2719] capable and can get **** done anddon't just sit there and theorize.
+[2723] And he was like, I know a guy,calls this guy Michael in New York.
+[2726] And so we randomly call this guyMichael in New York, and I'm like, hey,
+[2729] Michael, I got your namefrom other Michael.
+[2731] Do you want to come and interview?
+[2732] And I figured he would say no,I'm pretty happy in New York.
+[2734] But he wasn't really doing much,he was like, yeah, okay.
+[2737] So he came in and interviewed.
+[2738] And so we had, let's see.
+[2742] We had one of the guys,one of our engineers was in Russia,
+[2744] it was this guy Igor.
+[2747] He wasn't really doingmuch in Russia also,
+[2748] it's not like they haveSilicon Valley in Russia.
+[2750] >> [LAUGH]>> So
+[2751] we were like this band of outcastsin some way, the group of people who
+[2755] weren't really doing much who gottogether and built a product.
+[2760] But there were also people who wereworking full time who we actually had to
+[2764] try really hard to convince to join.
+[2766] One of the guys, Rick,who helped us a lot with the backend
+[2769] as we were scaling the backend,he was working at Yahoo.
+[2773] And so I think it took us six monthsof meetings and dinners with me and
+[2777] Brian trying to convince him.
+[2779] And we would meet him, andwe would do it in a very subtle way.
+[2781] Not like, come join us.
+[2783] We were like, we have all these users andwe have all this gear.
+[2787] And we knew he was really, reallytechnical and he loved solving problems.
+[2790] So we weren't saying come join us andwe'll give you lots of money or
+[2794] options or whatever.
+[2796] We were playing a different anglewhere we're saying, hi Rick,
+[2798] if you're watching this.
+[2799] We were like, hey Rick, we're having allthese technical problems, and we did.
+[2803] And we're like, we just don't know,there's this weird issue with FreeBSD 8
+[2807] where it computes forkernel resources with Erlang.
+[2810] And Erlang is trying torun on these 48 cores, and
+[2812] we don't know how there's somecontention in the kernel.
+[2815] If only we could figure it out,we just need some help.
+[2818] And we knew that he loved doingthis kind of stuff, right?
+[2821] So with him, we played a different angle.
+[2823] It took us a few months to convince him,but
+[2824] eventually he joined and he helped usfix a lot of bottlenecks in our system.
+[2827] So there were all different stories, butI think the bulk of the initial kind of
+[2833] core of people who joined, they were fromour professional and personal networks.
+[2839] >> We are out of time, unfortunately.
+[2840] >> Man,I can keep going as long as [INAUDIBLE].
+[2843] >> All right, if you got>> All right,
+[2846] we'll go to one more question.
+[2847] Thank you.
+[2848] >> Sir.
+[2849] >> I think what's happening, sir,role model will get off being focused.
+[2854] I want to understand your decision makingprocess when you get feedback from users.
+[2859] How you define its saidnoise to your product,
+[2863] how you define,it's a key feature we need to improve.
+[2867] And how you find out thatthe efficiency of communicating is
+[2872] a core feature you wanted focus on forso many years.
+[2876] >> How do we know what features tobuild and what features not to build?
+[2879] And you're absolutely right.
+[2881] Because in the early days, people wouldwrite in and say, we want usernames so
+[2884] we want PINs.
+[2885] Because people were so conditioned by allthese messaging apps that came before us
+[2889] that you need to have a username or PIN.
+[2891] So if you were using BBM orif you were using ICQ,
+[2894] you have some random PIN that youwould have to exchange with people.
+[2897] Or if you were using Skype or YahooMessenger, you had to have a username.
+[2901] And people didn't understandthat what we were building was
+[2903] this whole new idea of like youdon't need any other stuff.
+[2907] You just sign up with your number,
+[2909] and it's connected to your phone thathas the same phone number, and you go.
+[2912] And so in early days, a lot of feedbackwe took from users was useful.
+[2916] They're like, we want groups,we want multimedia, we want
+[2919] to have additional privacy controls,we want to turn off our last seen.
+[2923] Great, we built a lotof what people asked.
+[2925] But we also didn't build what people askedbecause we didn't think it was the right
+[2928] fit for our product.
+[2929] Having the fundamental belief and the gutfeeling that what you're doing is right,
+[2934] and having that vision of,it's just going to work.
+[2938] I'm going to build it using phone numbers.
+[2940] I'm not going to have usernames,
+[2941] I'm not going to have PINs becauseit makes product more complicated.
+[2944] It makes product harder to use,people forget their usernames and
+[2947] PINs and all that stuff.
+[2949] Having that belief in yourself,
+[2951] and knowing that what you're building isgoing to work is obviously also important.
+[2958] So that's kind of how wewould make decisions.
+[2963] >> Okay, you go, andthen we'll take that for the 1 PM class.
+[2967] >> Yeah?>> Yeah.
+[2968] What do you feel about security issue orfuture security issue of Messenger app?
+[2974] >> What do I feel about security issue orfuture security issue?
+[2976] For us, well, as you know werolled out into an encryption.
+[2981] And we weren't the first ones to do it,
+[2984] obviously there were apps beforeus that focused on security.
+[2988] But we were the first ones todo it on such a global scale for
+[2990] everybody seamlessly, right?
+[2992] I mean there was no other app today thathas more than a billion people that has
+[2996] end to end encryption enabled bydefault into everything you do,
+[2999] individual chats, group chats,and everything else.
+[3002] So, we didn't start out.
+[3005] Again, this kind of goes backto what we started with.
+[3008] It was just a pure one-on-one messaging,right?
+[3010] There was no group chat,there was no multimedia,
+[3012] there was no enter an encryption,there was no video callings,
+[3014] there was no voice phones,there was none of that.
+[3016] But over years, we made a commitment toour users that we were going to add all
+[3019] these features, and we were going to makethem work, and make them work really well.
+[3023] And so obviously, we feel strong isthat encryption is important and
+[3027] we feel strongly about Internetencryption which is why we added it and
+[3030] which is why we have itin our application today.
+[3034] >> Great, thank you so much.
+[3035] >> Thank you.>> [APPLAUSE]

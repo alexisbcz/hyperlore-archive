@@ -1,0 +1,3079 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.041 --> 00:00:01.042
+This is totally backwards
+
+00:00:01.042 --> 00:00:02.502
+from how you're supposed
+to do a startup, right?
+
+00:00:02.502 --> 00:00:03.878
+You're supposed to have a problem
+
+00:00:03.878 --> 00:00:05.714
+and we had no idea what the problem was.
+
+00:00:05.714 --> 00:00:07.799
+Is there a world where
+the AI becomes the manager
+
+00:00:07.799 --> 00:00:09.050
+and it, you know, gives you ideas
+
+00:00:09.050 --> 00:00:10.468
+and gives you some tasks to do?
+
+00:00:10.468 --> 00:00:12.554
+This was probably the hardest
+project that I've ever done,
+
+00:00:12.554 --> 00:00:13.805
+because it felt totally doomed, right?
+
+00:00:13.805 --> 00:00:16.057
+It's like, I know like every instinct,
+
+00:00:16.057 --> 00:00:17.559
+every builder instinct of mine.
+
+00:00:17.559 --> 00:00:18.393
+Did it actually feel doomed?
+
+00:00:18.393 --> 00:00:19.477
+Oh, I felt totally doomed.
+
+00:00:20.770 --> 00:00:22.605
+Greg in 2010 dropped out of MIT
+
+00:00:22.605 --> 00:00:24.315
+to become our first engineer
+
+00:00:24.315 --> 00:00:26.609
+and went on to become Stripe's CTO.
+
+00:00:26.609 --> 00:00:29.612
+In 2015 after he left,
+he co-founded OpenAI.
+
+00:00:29.612 --> 00:00:31.906
+OpenAI is really cooking at the moment
+
+00:00:31.906 --> 00:00:33.908
+and Greg is one of the most
+productive people I know.
+
+00:00:33.908 --> 00:00:34.743
+Cheers.
+
+00:00:37.746 --> 00:00:40.540
+Wow, you really have
+some old school photos.
+
+00:00:40.540 --> 00:00:42.834
+Some deep cut GDB trivia.
+
+00:00:42.834 --> 00:00:45.628
+So yeah. We figure we've
+gotta put people at ease,
+
+00:00:45.628 --> 00:00:47.005
+make people feel at home.
+
+00:00:47.005 --> 00:00:48.256
+Very nice. Thank you. Okay.
+
+00:00:48.256 --> 00:00:50.592
+Well, I just dive straight
+into all the questions I have,
+
+00:00:50.592 --> 00:00:51.676
+which is a lot.
+All right.
+
+00:00:51.676 --> 00:00:53.595
+If you were not working in AI,
+
+00:00:53.595 --> 00:00:55.263
+how could one have known that
+
+00:00:55.263 --> 00:00:56.723
+something was about to start working?
+
+00:00:56.723 --> 00:00:58.600
+People were telling you
+that AI was the future
+
+00:00:58.600 --> 00:01:01.352
+in the 1970s, in the 1980s, the 1990s.
+
+00:01:01.352 --> 00:01:02.979
+Then very quickly, in the late 2010s
+
+00:01:02.979 --> 00:01:04.105
+everything started happening.
+
+00:01:04.105 --> 00:01:07.067
+Well, I was someone who
+was not in the field
+
+00:01:07.067 --> 00:01:09.652
+and so, I remember very
+much what it was like.
+
+00:01:09.652 --> 00:01:13.448
+2013, 2014, it felt like
+every day on Hacker News
+
+00:01:13.448 --> 00:01:16.701
+there'd be a new "deep
+learning for X" article.
+
+00:01:16.701 --> 00:01:18.953
+And I remember being like,
+"What is deep learning?
+
+00:01:18.953 --> 00:01:21.956
+I knew, like, one person in the field,
+
+00:01:21.956 --> 00:01:24.250
+and I asked them to introduce me
+
+00:01:24.250 --> 00:01:25.543
+to more people in the field,
+
+00:01:25.543 --> 00:01:27.253
+and I just kept getting introduced
+
+00:01:27.253 --> 00:01:29.130
+to a bunch of my smartest
+friends from college.
+
+00:01:29.130 --> 00:01:32.175
+Now, if you actually look at
+the work that was being done...
+
+00:01:32.175 --> 00:01:34.177
+2012, basically,
+
+00:01:34.177 --> 00:01:35.637
+image recognition, for the first time,
+
+00:01:35.637 --> 00:01:36.805
+you could solve with the neural net
+
+00:01:36.805 --> 00:01:38.306
+much better than anything else.
+
+00:01:38.306 --> 00:01:39.891
+It just blew all these
+
+00:01:39.891 --> 00:01:41.935
+traditional computer vision
+approaches out of the water.
+
+00:01:41.935 --> 00:01:43.478
+It's like this like learned system
+
+00:01:43.478 --> 00:01:45.563
+is able to outperform 40
+years worth of, "Let's
+
+00:01:45.563 --> 00:01:47.023
+write down all the rules and try to
+
+00:01:47.023 --> 00:01:49.901
+handcraft the algorithm for the task."
+
+00:01:49.901 --> 00:01:52.529
+And it's very easy to then be like,
+
+00:01:52.529 --> 00:01:54.155
+"Okay. Well, this approach,
+
+00:01:54.155 --> 00:01:55.281
+sure it works for computer vision,
+
+00:01:55.281 --> 00:01:57.826
+but it's never gonna work
+for machine translation."
+
+00:01:57.826 --> 00:01:58.993
+In 2014,
+
+00:01:58.993 --> 00:02:00.203
+suddenly, you're getting great results
+
+00:02:00.203 --> 00:02:01.329
+in machine translation.
+
+00:02:01.329 --> 00:02:03.498
+I think that this pattern was applied
+
+00:02:03.498 --> 00:02:05.500
+in subfield after subfield.
+
+00:02:05.500 --> 00:02:07.544
+One thing I've been wondering about is
+
+00:02:07.544 --> 00:02:08.795
+so many different things
+
+00:02:08.795 --> 00:02:12.006
+are finally working at the same time.
+
+00:02:12.006 --> 00:02:14.717
+We have LLMs, which are obviously amazing,
+
+00:02:14.717 --> 00:02:16.803
+but then we also separately have
+
+00:02:16.803 --> 00:02:18.096
+image models really working.
+
+00:02:18.096 --> 00:02:20.557
+We also have text-to-speech
+and speech-to-text
+
+00:02:20.557 --> 00:02:21.933
+working way better than they were before.
+
+00:02:21.933 --> 00:02:24.185
+What's the common factor
+
+00:02:24.185 --> 00:02:26.896
+behind everything starting
+to work at the same time?
+
+00:02:26.896 --> 00:02:28.439
+Well, it's deep learning, right?
+
+00:02:28.439 --> 00:02:29.774
+I think deep learning is the core-
+
+00:02:29.774 --> 00:02:30.608
+We've have deep learning for a long time.
+
+00:02:30.608 --> 00:02:32.360
+Why didn't deep learning
+work in the 1980s?
+
+00:02:32.360 --> 00:02:34.445
+If you look at the number of orders
+
+00:02:34.445 --> 00:02:35.488
+of magnitude of compute that
+
+00:02:35.488 --> 00:02:38.533
+we've gone through from 1940 to today,
+
+00:02:38.533 --> 00:02:40.702
+I mean, it's just astounding.
+
+00:02:40.702 --> 00:02:43.329
+You think they're all
+explained by compute scale-ups
+
+00:02:43.329 --> 00:02:44.414
+applied to the right algorithms?
+
+00:02:44.414 --> 00:02:45.790
+Of course, the type of algorithm changes,
+
+00:02:45.790 --> 00:02:47.292
+and some of those results
+aren't even deep learning.
+
+00:02:47.292 --> 00:02:49.210
+But I think that fundamentally,
+it is about compute,
+
+00:02:49.210 --> 00:02:51.004
+and you need an algorithm that is scalable
+
+00:02:51.004 --> 00:02:52.505
+that can actually absorb that compute.
+
+00:02:52.505 --> 00:02:53.631
+Was OpenAI the first company
+
+00:02:53.631 --> 00:02:57.677
+to take the scaling
+hypothesis really seriously?
+
+00:02:57.677 --> 00:03:00.138
+I think that claiming the
+first is always difficult,
+
+00:03:00.138 --> 00:03:02.473
+but I think that is clear that we sort of
+
+00:03:02.473 --> 00:03:06.102
+succeeded much more wildly
+sooner than anyone else.
+
+00:03:06.102 --> 00:03:07.896
+I think that we had real conviction
+
+00:03:07.896 --> 00:03:09.814
+behind what we needed to do.
+
+00:03:09.814 --> 00:03:11.524
+Some people think that OpenAI
+
+00:03:11.524 --> 00:03:13.693
+set out to prove the scale hypothesis,
+
+00:03:13.693 --> 00:03:15.486
+whereas it was almost
+the other way around,
+
+00:03:15.486 --> 00:03:17.322
+that the scale hypothesis
+is what we observed
+
+00:03:17.322 --> 00:03:19.657
+as the thing that was working for us,
+
+00:03:19.657 --> 00:03:21.951
+and we really saw it for the first time,
+
+00:03:21.951 --> 00:03:23.995
+actually, during our Dota 2 project.
+
+00:03:23.995 --> 00:03:28.208
+We started out with 16 cores
+to train a little agent-
+
+00:03:28.208 --> 00:03:31.961
+on Jakub and Szymon who
+were leading the project
+
+00:03:31.961 --> 00:03:34.464
+from an ML perspective, on their desktop.
+
+00:03:34.464 --> 00:03:36.007
+Then, they scaled to 32 cores.
+
+00:03:36.007 --> 00:03:38.092
+It felt like every week
+I'd come back to the office
+
+00:03:38.092 --> 00:03:40.178
+and they'd scaled it by another 2x
+
+00:03:40.178 --> 00:03:41.346
+and we had 2x performance-
+
+00:03:41.346 --> 00:03:43.389
+just so clear, you just
+need to keep going.
+
+00:03:43.389 --> 00:03:44.807
+Where does this thing peter out?
+
+00:03:44.807 --> 00:03:45.850
+It just never did.
+
+00:03:45.850 --> 00:03:47.143
+Founders get too much credit,
+
+00:03:47.143 --> 00:03:49.395
+because you have an initial product
+
+00:03:49.395 --> 00:03:50.730
+that's a pretty reasonable idea
+
+00:03:50.730 --> 00:03:51.898
+Then you listen to the customers,
+
+00:03:51.898 --> 00:03:52.815
+and you follow what's working.
+
+00:03:52.815 --> 00:03:55.276
+So you were saying that was kind of OpenAI
+
+00:03:55.276 --> 00:03:56.527
+with the scaling hypothesis,
+
+00:03:56.527 --> 00:04:00.406
+where you started trying
+to make Dota AIs work
+
+00:04:00.406 --> 00:04:03.743
+and you noticed that adding
+more compute worked really well,
+
+00:04:03.743 --> 00:04:05.036
+and you said, "Where else
+
+00:04:05.036 --> 00:04:07.413
+will just throwing more
+compute at it yield benefits.
+
+00:04:07.413 --> 00:04:10.166
+I think that's to the first order correct.
+
+00:04:10.166 --> 00:04:13.002
+I think one thing that
+distinguishes OpenAI
+
+00:04:13.002 --> 00:04:15.630
+from the typical startup,
+
+00:04:15.630 --> 00:04:18.383
+is we did everything in reverse, right?
+
+00:04:18.383 --> 00:04:21.344
+It's like, you're supposed
+to have a problem to solve.
+
+00:04:21.344 --> 00:04:22.345
+No one cares about the technology.
+
+00:04:22.345 --> 00:04:23.471
+Form the entity upfront.
+
+00:04:23.471 --> 00:04:24.806
+Exactly, yes.
+
+00:04:24.806 --> 00:04:27.392
+And for us, we really
+chased the technology
+
+00:04:27.392 --> 00:04:30.603
+without any idea of how
+it would be applied.
+
+00:04:30.603 --> 00:04:33.439
+A lot of pursuing the technology
+
+00:04:33.439 --> 00:04:35.441
+really is you have to let reality hit you
+
+00:04:35.441 --> 00:04:36.526
+cold, hard in the face.
+
+00:04:36.526 --> 00:04:39.696
+There's just no other
+way to achieve results.
+
+00:04:39.696 --> 00:04:41.823
+You can't will it into existence.
+
+00:04:41.823 --> 00:04:43.241
+You can't convince people
+
+00:04:43.241 --> 00:04:44.075
+that this is the thing.
+
+00:04:44.075 --> 00:04:46.494
+It's like, you have to
+actually, make the system work.
+
+00:04:46.494 --> 00:04:48.162
+We have to just sort of figure out
+
+00:04:48.162 --> 00:04:50.206
+what is the right frontier,
+what are the problems,
+
+00:04:50.206 --> 00:04:52.333
+what are the things that
+are on the edge of working,
+
+00:04:52.333 --> 00:04:54.043
+and to really double down on those.
+
+00:04:54.043 --> 00:04:55.420
+What else do you take
+away from the Dota work?
+
+00:04:55.420 --> 00:04:57.547
+How else does it... Because you could
+
+00:04:57.547 --> 00:04:58.965
+have just started with LLMs
+
+00:04:58.965 --> 00:04:59.924
+and you know, we could have skipped
+
+00:04:59.924 --> 00:05:01.426
+that period in the wilderness,
+
+00:05:01.426 --> 00:05:02.760
+but it sounds like it
+was somewhat formative
+
+00:05:02.760 --> 00:05:04.095
+for the OpenAI organization.
+
+00:05:04.095 --> 00:05:06.597
+I think Dota had many lessons,
+
+00:05:06.597 --> 00:05:10.351
+one of which actually was
+a management lesson for me.
+
+00:05:10.351 --> 00:05:11.936
+I remember when we
+started out the project,
+
+00:05:11.936 --> 00:05:14.772
+I tried to set a list
+of milestones, right?
+
+00:05:14.772 --> 00:05:16.566
+It's like, "Okay, this date
+we're gonna beat this player.
+
+00:05:16.566 --> 00:05:19.027
+This date, we're gonna beat this player."
+
+00:05:19.027 --> 00:05:21.279
+That didn't work?
+It did not work at all.
+
+00:05:21.279 --> 00:05:23.573
+I remember our first milestone came and
+
+00:05:23.573 --> 00:05:25.533
+Went?
+Exactly.
+
+00:05:25.533 --> 00:05:27.160
+And so you realize that
+
+00:05:27.160 --> 00:05:29.078
+you cannot control the outcome, right?
+
+00:05:29.078 --> 00:05:31.164
+You cannot set outcome-based milestones.
+
+00:05:31.164 --> 00:05:33.458
+What you can do is you
+can control the inputs
+
+00:05:33.458 --> 00:05:35.585
+of we're gonna try these
+experiments by this date.
+
+00:05:35.585 --> 00:05:37.837
+We're going to implement
+this feature by this date.
+
+00:05:37.837 --> 00:05:39.505
+And that is what actually worked.
+
+00:05:39.505 --> 00:05:41.799
+And I remember it was one of those things
+
+00:05:41.799 --> 00:05:45.345
+that was just a story
+that I could not have
+
+00:05:45.345 --> 00:05:48.639
+written in any better,
+if we'd intended to.
+
+00:05:48.639 --> 00:05:52.352
+We beat our in-house best player
+
+00:05:52.352 --> 00:05:54.854
+and then we were playing as a semi-pro
+
+00:05:54.854 --> 00:05:56.939
+and he was just trouncing
+us, trouncing us.
+
+00:05:56.939 --> 00:05:58.900
+Then, suddenly we're
+starting to get pretty good.
+
+00:05:58.900 --> 00:06:01.110
+So we showed up at the international,
+
+00:06:01.110 --> 00:06:02.653
+this tournament blind.
+
+00:06:02.653 --> 00:06:04.906
+First day, we had three
+players that we played against.
+
+00:06:04.906 --> 00:06:08.368
+We went 3-0, 3-0, and then 2-1.
+
+00:06:08.368 --> 00:06:09.494
+We're like, "Oh no. We lost.
+
+00:06:09.494 --> 00:06:10.328
+What happened?"
+
+00:06:10.328 --> 00:06:12.413
+It turned out that this pro
+that we're playing against,
+
+00:06:12.413 --> 00:06:14.665
+he had used an item we'd
+never trained against.
+
+00:06:14.665 --> 00:06:15.583
+And we were like, "Oh no,
+
+00:06:15.583 --> 00:06:17.335
+we're totally going to be hosed."
+
+00:06:17.335 --> 00:06:18.378
+So, what do we do?
+
+00:06:18.378 --> 00:06:20.129
+Well, we just need to change the training.
+
+00:06:20.129 --> 00:06:22.965
+And so people stayed up
+all night to get this done.
+
+00:06:22.965 --> 00:06:25.843
+They added this extra item in there.
+
+00:06:25.843 --> 00:06:28.137
+4am, they finally get the job running.
+
+00:06:28.137 --> 00:06:28.971
+That Wednesday, we're supposed to play
+
+00:06:28.971 --> 00:06:30.598
+against the number two
+
+00:06:30.598 --> 00:06:32.183
+and the number one player in the world,
+
+00:06:32.183 --> 00:06:34.227
+and our semi-pro plays against it.
+
+00:06:34.227 --> 00:06:35.895
+He's like, "This bot is totally broken."
+
+00:06:35.895 --> 00:06:37.855
+And we're like, "Oh no,
+we like clearly had a bug.
+
+00:06:37.855 --> 00:06:39.190
+Something terrible has happened."
+
+00:06:39.190 --> 00:06:41.234
+He was like, "Look, it's
+taking all this damage
+
+00:06:41.234 --> 00:06:42.068
+it doesn't need to.
+
+00:06:42.068 --> 00:06:42.902
+I'm gonna go kill it."
+
+00:06:42.902 --> 00:06:44.320
+He goes to kill it, he loses.
+
+00:06:44.320 --> 00:06:45.905
+And he was like, "That was weird."
+
+00:06:45.905 --> 00:06:47.782
+He'd realized that what had happened was
+
+00:06:47.782 --> 00:06:49.700
+it had learned a baiting strategy.
+
+00:06:49.700 --> 00:06:51.327
+And then we realized,
+"Well, we have a super-bot,
+
+00:06:51.327 --> 00:06:53.204
+but it's so bad at the beginning,
+
+00:06:53.204 --> 00:06:54.789
+because it's trying to do the baiting.
+
+00:06:54.789 --> 00:06:57.250
+So, what if we just stitch the
+two bots we have together?"
+
+00:06:57.250 --> 00:06:59.794
+And then that bot was just undefeatable,
+
+00:06:59.794 --> 00:07:02.088
+and we played against this
+number one player and won.
+
+00:07:02.088 --> 00:07:03.881
+To me this is like the story of
+
+00:07:03.881 --> 00:07:05.091
+how deep learning works, right?
+
+00:07:05.091 --> 00:07:06.759
+Is it's like you kind of can't control
+
+00:07:06.759 --> 00:07:07.802
+where you're gonna go.
+
+00:07:07.802 --> 00:07:09.345
+You can control everything that goes in.
+
+00:07:09.345 --> 00:07:11.347
+You can put these metrics
+in these measurements
+
+00:07:11.347 --> 00:07:13.808
+and you can have sort of the evaluations.
+
+00:07:13.808 --> 00:07:15.935
+And being able to gauge where you're at
+
+00:07:15.935 --> 00:07:17.270
+is almost as important as being able
+
+00:07:17.270 --> 00:07:18.104
+to make the forward progress.
+
+00:07:18.104 --> 00:07:19.856
+But if you get all those elements right,
+
+00:07:19.856 --> 00:07:21.232
+then you can do true magic.
+
+00:07:21.232 --> 00:07:22.358
+You're also describing something
+
+00:07:22.358 --> 00:07:24.110
+that worked really well
+for an organization
+
+00:07:24.110 --> 00:07:26.320
+where it was motivating
+to stay up all night.
+
+00:07:26.320 --> 00:07:29.490
+If the prize was impossibly far away,
+
+00:07:29.490 --> 00:07:31.617
+it wouldn't have been as motivating.
+
+00:07:31.617 --> 00:07:33.828
+But the fact that there was
+a near-term reward function
+
+00:07:33.828 --> 00:07:35.538
+and you were able to
+show concrete progress...
+
+00:07:35.538 --> 00:07:36.372
+I think so.
+
+00:07:36.372 --> 00:07:38.040
+I think some of
+
+00:07:38.040 --> 00:07:40.585
+my favorite engineering stories
+have the same character.
+
+00:07:40.585 --> 00:07:42.253
+I remember you and I staying up all night
+
+00:07:42.253 --> 00:07:44.589
+to get our ISO 8583 integration.
+
+00:07:44.589 --> 00:07:45.673
+There's something about
+staying up all night
+
+00:07:45.673 --> 00:07:47.633
+for like critical projects that
+
+00:07:47.633 --> 00:07:48.468
+actually have
+
+00:07:48.468 --> 00:07:49.302
+important history in
+
+00:07:49.302 --> 00:07:50.136
+all startups.
+
+00:07:50.136 --> 00:07:52.597
+I'm glad to hear that tradition
+is alive and well at OpenAI.
+
+00:07:52.597 --> 00:07:57.310
+So, Dota has fallen, Chess
+has fallen, Go has fallen.
+
+00:07:58.186 --> 00:08:00.730
+We've passed the Turing test,
+
+00:08:00.730 --> 00:08:05.443
+I think by anyone's measure.
+
+00:08:05.443 --> 00:08:06.277
+People comment on
+
+00:08:06.277 --> 00:08:07.987
+how there was little fanfare when we did,
+
+00:08:07.987 --> 00:08:09.572
+but we seem to have
+pretty clearly done so.
+
+00:08:09.572 --> 00:08:11.616
+What's a good new Turing test?
+
+00:08:11.616 --> 00:08:13.034
+Well, I'll tell you two things.
+
+00:08:13.034 --> 00:08:14.285
+One, is that, if you look at
+
+00:08:14.285 --> 00:08:15.745
+the strict version of the Turing test,
+
+00:08:15.745 --> 00:08:17.455
+I would actually claim
+we haven't done it yet.
+
+00:08:17.455 --> 00:08:19.332
+No one's really gone that extra mile
+
+00:08:19.332 --> 00:08:20.958
+to say, "Can we actually have an AI
+
+00:08:20.958 --> 00:08:23.294
+that like is fully
+indistinguishable from a human?"
+
+00:08:23.294 --> 00:08:25.630
+It's not clear if it's
+even a good task, right?
+
+00:08:25.630 --> 00:08:27.840
+But I think that the right
+question to your point is like,
+
+00:08:27.840 --> 00:08:30.426
+well, what is the milestone
+
+00:08:30.426 --> 00:08:32.637
+that we should be chasing
+in terms of capability?
+
+00:08:32.637 --> 00:08:35.348
+I remember talking to one of
+our board members in 2018,
+
+00:08:35.348 --> 00:08:39.644
+and he said, you know,
+"Look, I get that you
+
+00:08:39.644 --> 00:08:41.354
+were all excited about near-term AGI,
+
+00:08:41.354 --> 00:08:44.023
+but it just doesn't feel
+like it's on track."
+
+00:08:44.023 --> 00:08:45.191
+I asked, "Well, what do you mean?"
+
+00:08:45.191 --> 00:08:47.235
+He said, "In a world with near-term AGI,
+
+00:08:47.235 --> 00:08:49.237
+you would expect massive economic value
+
+00:08:49.237 --> 00:08:52.657
+to be delivered by AI
+already, and where is it?"
+
+00:08:52.657 --> 00:08:55.117
+In 2018, I think that was
+a very fair criticism,
+
+00:08:55.117 --> 00:08:57.537
+and clearly, that's
+starting to change now.
+
+00:08:57.537 --> 00:08:59.038
+It feels like one thing that
+
+00:09:00.039 --> 00:09:03.251
+may really change the AI
+market is personalization.
+
+00:09:03.251 --> 00:09:07.838
+Up to quite recently, when
+you asked ChatGPT a question,
+
+00:09:07.838 --> 00:09:10.591
+it was like walking into
+a shop off the street.
+
+00:09:10.591 --> 00:09:11.425
+They've never met you before.
+
+00:09:11.425 --> 00:09:12.635
+They know nothing about you, whatever.
+
+00:09:12.635 --> 00:09:15.096
+That's obviously, not
+ideal for this, you know,
+
+00:09:15.096 --> 00:09:16.430
+close part of your digital life.
+
+00:09:16.430 --> 00:09:18.099
+I'm curious how you're
+thinking about personalization
+
+00:09:18.099 --> 00:09:19.225
+from a product point of view,
+
+00:09:19.225 --> 00:09:20.768
+because it feels to me like
+
+00:09:20.768 --> 00:09:24.647
+the most meaningful change
+since the chat interface.
+
+00:09:25.898 --> 00:09:26.774
+Two and a half years ago.
+
+00:09:26.774 --> 00:09:28.442
+Two and a half years ago.
+
+00:09:28.442 --> 00:09:29.860
+I mean, I think it's absolutely critical,
+
+00:09:29.860 --> 00:09:32.446
+and I think it is very rightly considered
+
+00:09:32.446 --> 00:09:33.906
+to be kind of a next frontier.
+
+00:09:33.906 --> 00:09:38.411
+I'm someone who always, when
+I just Google something,
+
+00:09:38.411 --> 00:09:40.454
+I go into Incognito Mode,
+
+00:09:40.454 --> 00:09:41.539
+because I don't even want my computer
+
+00:09:41.539 --> 00:09:42.915
+to remember that history.
+
+00:09:42.915 --> 00:09:45.668
+And I always used to go for
+temporary chats on ChatGPT.
+
+00:09:45.668 --> 00:09:47.378
+But now my usage has totally reversed.
+
+00:09:47.378 --> 00:09:49.505
+I want ChatGPT to remember everything.
+
+00:09:49.505 --> 00:09:51.215
+I want it to remember my interactions,
+
+00:09:51.215 --> 00:09:52.425
+because it's useful.
+
+00:09:52.425 --> 00:09:53.342
+Okay. So you guys figured out,
+
+00:09:53.342 --> 00:09:54.427
+from a product point of view
+
+00:09:54.427 --> 00:09:56.137
+how to make the memory
+actually work better.
+
+00:09:56.137 --> 00:09:58.306
+It's the product point of view,
+
+00:09:58.306 --> 00:10:00.099
+but also, really the
+research point of view.
+
+00:10:00.099 --> 00:10:01.767
+And I presume there's a flip
+flop between the product
+
+00:10:01.767 --> 00:10:03.519
+and research where,
+when you find something
+
+00:10:03.519 --> 00:10:05.396
+that's useful from a
+product point of view,
+
+00:10:05.396 --> 00:10:06.230
+then the product people say,
+
+00:10:06.230 --> 00:10:07.356
+"I'm just a product person,
+
+00:10:07.356 --> 00:10:09.275
+you researchers go
+actually make this good."
+
+00:10:09.275 --> 00:10:10.860
+Then that kind of kicks off more research.
+
+00:10:10.860 --> 00:10:11.694
+Is that how it works?
+
+00:10:11.694 --> 00:10:13.487
+To some extent
+
+00:10:13.487 --> 00:10:15.323
+that's a failure mode in our mind.
+
+00:10:15.323 --> 00:10:16.782
+I think that we really
+
+00:10:16.782 --> 00:10:18.284
+don't want to have that kind of silo.
+
+00:10:18.284 --> 00:10:19.869
+We really want to blur the lines
+
+00:10:19.869 --> 00:10:21.245
+and have people cross-collaborate.
+
+00:10:21.245 --> 00:10:22.747
+And so, it's avery different mindset from
+
+00:10:22.747 --> 00:10:24.206
+how you would traditionally
+build a product
+
+00:10:24.206 --> 00:10:26.083
+versus how you do research.
+
+00:10:26.083 --> 00:10:27.460
+Part of what had happened, actually,
+
+00:10:27.460 --> 00:10:29.086
+was that we had GPT-3,
+
+00:10:29.086 --> 00:10:31.297
+we knew we needed to build a product
+
+00:10:31.297 --> 00:10:33.215
+in order to be able to
+continue to raise funding,
+
+00:10:33.215 --> 00:10:35.301
+and we were like,
+
+00:10:35.301 --> 00:10:36.510
+"Well, what product do we build?
+
+00:10:36.510 --> 00:10:37.553
+And we wrote down a list of,
+
+00:10:37.553 --> 00:10:38.888
+like, 100 different products.
+
+00:10:38.888 --> 00:10:40.806
+We could do a medical
+thing. Then you're like,
+
+00:10:40.806 --> 00:10:43.601
+"Okay. Well, now we have
+to sell to hospitals.
+
+00:10:43.601 --> 00:10:44.769
+We're gonna have to hire doctors."
+
+00:10:44.769 --> 00:10:47.772
+You realize you give up
+on the G in AGI, right?
+
+00:10:47.772 --> 00:10:49.774
+You're gonna like go for a specific thing.
+
+00:10:49.774 --> 00:10:53.527
+Someone had the idea of saying,
+
+00:10:53.527 --> 00:10:56.405
+"Well, why don't we just make a API
+
+00:10:56.405 --> 00:10:58.074
+and let people figure it out?
+
+00:10:58.074 --> 00:10:58.908
+And, again,
+
+00:10:58.908 --> 00:10:59.825
+this is totally backwards
+
+00:10:59.825 --> 00:11:01.452
+from how you're supposed
+to do a startup, right?
+
+00:11:01.452 --> 00:11:03.204
+You're supposed to have a problem,
+
+00:11:03.204 --> 00:11:04.246
+and we had no idea what the problem was.
+
+00:11:04.246 --> 00:11:06.290
+Yeah, yeah, yeah, we're
+gonna back into the problem.
+
+00:11:06.290 --> 00:11:07.416
+And so this actually felt like this was
+
+00:11:07.416 --> 00:11:09.251
+probably the hardest
+project that I've ever done,
+
+00:11:09.251 --> 00:11:10.961
+because it felt totally doomed, right?
+
+00:11:10.961 --> 00:11:13.214
+It's like, I know like every instinct,
+
+00:11:13.214 --> 00:11:14.340
+every builder instinct of mine says-
+
+00:11:14.340 --> 00:11:15.299
+Did it actually feel doomed?
+
+00:11:15.299 --> 00:11:16.300
+Oh, it felt totally doomed.
+
+00:11:16.300 --> 00:11:19.095
+It wasn't just like
+open-ended or something?
+
+00:11:19.095 --> 00:11:19.929
+No, it felt doomed.
+
+00:11:19.929 --> 00:11:21.222
+But you were still doing it.
+
+00:11:21.222 --> 00:11:22.807
+Yeah. I mean, it's like, at some point,
+
+00:11:22.807 --> 00:11:25.810
+if you have... There was
+definitely no other path.
+
+00:11:25.810 --> 00:11:26.644
+There was no other path.
+
+00:11:26.644 --> 00:11:28.646
+It was the only shot we had.
+
+00:11:28.646 --> 00:11:30.690
+I remember someone also saying like,
+
+00:11:30.690 --> 00:11:33.192
+"I can't imagine anyone paying
+for samples from this model."
+
+00:11:33.192 --> 00:11:35.069
+And I was like, "You might be right."
+
+00:11:36.070 --> 00:11:37.446
+I'm still trying to imagine it myself.
+
+00:11:37.446 --> 00:11:39.657
+Yes. It was just not clear,
+
+00:11:39.657 --> 00:11:41.742
+were we above threshold
+or below threshold?
+
+00:11:41.742 --> 00:11:43.661
+We showed it to people,
+
+00:11:43.661 --> 00:11:44.829
+and people were interested.
+
+00:11:44.829 --> 00:11:46.539
+But that's very different
+from people being like,
+
+00:11:46.539 --> 00:11:48.416
+"I will build my company on top of this,"
+
+00:11:48.416 --> 00:11:51.585
+Yes. So, what was the first
+use case to get any traction?
+
+00:11:51.585 --> 00:11:52.420
+AI Dungeon.
+
+00:11:52.420 --> 00:11:54.255
+What was that again?
+
+00:11:54.255 --> 00:11:55.131
+There you go.
+
+00:11:56.132 --> 00:12:00.469
+AI Dungeon was a
+text-based adventure game.
+
+00:12:00.469 --> 00:12:01.887
+Oh sure, yeah, yeah, yeah, yeah.
+
+00:12:01.887 --> 00:12:04.140
+Okay. Bbut that was real revenue
+
+00:12:04.140 --> 00:12:05.558
+or that was non-zero revenue?
+
+00:12:05.558 --> 00:12:06.392
+It was enough.
+
+00:12:06.392 --> 00:12:07.935
+And, in fact, I believe
+
+00:12:07.935 --> 00:12:09.603
+they were our first paying user.
+
+00:12:09.603 --> 00:12:10.896
+And that gets you
+confused for, you're like,
+
+00:12:10.896 --> 00:12:13.607
+"Ah, clearly the future of
+OpenAI is gaming" you know?
+
+00:12:13.607 --> 00:12:14.984
+I know, back to our roots.
+
+00:12:14.984 --> 00:12:15.943
+Exactly.
+
+00:12:15.943 --> 00:12:18.487
+It's interesting too,
+
+00:12:18.487 --> 00:12:21.240
+because we had dreamed of
+all of these applications,
+
+00:12:21.240 --> 00:12:23.701
+like medicine and all these things,
+
+00:12:23.701 --> 00:12:25.536
+and you start with the gaming application.
+
+00:12:25.536 --> 00:12:28.205
+But we could see signs of
+life on so many other things.
+
+00:12:28.205 --> 00:12:30.249
+I think in many ways GPT-3 was like
+
+00:12:30.249 --> 00:12:32.209
+the world's best demo machine, right?
+
+00:12:32.209 --> 00:12:33.669
+When we released the API,
+
+00:12:33.669 --> 00:12:35.629
+people were coming with all
+these cool things you could do,
+
+00:12:35.629 --> 00:12:38.591
+but making them reliable was so hard.
+
+00:12:38.591 --> 00:12:41.427
+It really wasn't until the
+next generation of GPT-4,
+
+00:12:41.427 --> 00:12:43.512
+until we started to figure out
+how to do post training well
+
+00:12:43.512 --> 00:12:45.097
+that then you were actually able to build
+
+00:12:45.097 --> 00:12:47.016
+real businesses on top of these things.
+
+00:12:47.016 --> 00:12:48.768
+Bill Gates was saying recently that GPT-4
+
+00:12:48.768 --> 00:12:52.104
+was the best demo he'd
+ever seen since Xerox Park.
+
+00:12:52.104 --> 00:12:53.522
+You know this quote?
+Yes.
+
+00:12:53.522 --> 00:12:55.149
+He said it to me the night that he saw it.
+
+00:12:56.859 --> 00:13:00.029
+Yeah. That's high praise.
+
+00:13:00.988 --> 00:13:02.156
+I wanna touch the medicine thing,
+
+00:13:02.156 --> 00:13:02.990
+because you've mentioned it.
+
+00:13:02.990 --> 00:13:04.742
+Like you said
+
+00:13:04.742 --> 00:13:07.495
+your family has personal stories.
+
+00:13:07.495 --> 00:13:11.874
+You've talked about getting
+very valuable diagnostic help.
+
+00:13:11.874 --> 00:13:15.127
+We, ourselves, actually, it's
+much more minor in our family,
+
+00:13:15.127 --> 00:13:16.754
+but we managed to fix a cat
+
+00:13:16.754 --> 00:13:19.298
+thanks to debugging it with an LLM.
+
+00:13:19.298 --> 00:13:21.967
+I think that's an interesting example,
+
+00:13:21.967 --> 00:13:24.386
+because so many people that I know
+
+00:13:24.386 --> 00:13:26.889
+have had some kind of
+experience like this.
+
+00:13:26.889 --> 00:13:28.808
+Maybe it's because you actually
+
+00:13:28.808 --> 00:13:32.478
+don't get that much time from a doctor.
+
+00:13:32.478 --> 00:13:36.315
+Are there other examples like
+this medicine application
+
+00:13:36.315 --> 00:13:38.192
+where you're seeing a lot of success,
+
+00:13:39.151 --> 00:13:40.986
+that many people have similar stories,
+
+00:13:40.986 --> 00:13:42.822
+but we just hear less about?
+
+00:13:42.822 --> 00:13:45.199
+Yeah, I think it's a great question.
+
+00:13:45.199 --> 00:13:47.827
+And by the way, I think
+like medicine is an example
+
+00:13:47.827 --> 00:13:50.746
+of one where I kind of
+thought it was gonna be
+
+00:13:50.746 --> 00:13:51.872
+one of the last domains that
+
+00:13:51.872 --> 00:13:53.457
+we would successfully
+be able to add value in,
+
+00:13:53.457 --> 00:13:55.000
+but it turns out that the bar is so low,
+
+00:13:55.000 --> 00:13:56.210
+you just need to exceed WebMD.
+
+00:13:56.210 --> 00:13:59.338
+I think that we have seen
+
+00:13:59.338 --> 00:14:01.215
+other areas that are
+like a real common theme.
+
+00:14:01.215 --> 00:14:02.550
+One that's very interesting right now
+
+00:14:02.550 --> 00:14:03.509
+is the life coach,
+
+00:14:03.509 --> 00:14:05.594
+life advice kind of application,
+
+00:14:05.594 --> 00:14:06.887
+where you just talk your AI.
+
+00:14:06.887 --> 00:14:07.721
+That's actually really taking off.
+
+00:14:07.721 --> 00:14:08.305
+Yeah. It really is.
+
+00:14:08.305 --> 00:14:12.935
+Education is another area
+
+00:14:12.935 --> 00:14:15.855
+that just like clearly is
+really having an impact.
+
+00:14:15.855 --> 00:14:17.356
+There are studies coming out now
+
+00:14:17.356 --> 00:14:20.651
+that actually show that people
+are able to learn better
+
+00:14:20.651 --> 00:14:22.236
+through the use of these tools.
+
+00:14:22.236 --> 00:14:23.112
+That's to be expected, right?
+
+00:14:23.112 --> 00:14:25.906
+It is the Bloom 2 sigma
+effect in a product.
+
+00:14:25.906 --> 00:14:28.659
+Yes. And that, for example is like why,
+
+00:14:28.659 --> 00:14:31.537
+Sal Khan, started Khan Academy,
+
+00:14:31.537 --> 00:14:32.371
+to think about
+
+00:14:32.371 --> 00:14:34.206
+if you can give personalized
+tutoring to everyone.
+
+00:14:34.206 --> 00:14:35.249
+We showed him GPT-4. He's like,
+
+00:14:35.249 --> 00:14:36.208
+"This is the thing.
+
+00:14:36.208 --> 00:14:38.419
+We need to become a GPT-4 app."
+
+00:14:38.419 --> 00:14:39.879
+I think that there are
+
+00:14:39.879 --> 00:14:42.298
+these really amazing applications
+
+00:14:42.298 --> 00:14:45.259
+that are affecting everyone's daily lives.
+
+00:14:45.259 --> 00:14:46.844
+Obviously, programming is another one,
+
+00:14:46.844 --> 00:14:48.012
+that people are seeing
+
+00:14:48.012 --> 00:14:50.514
+all across the board in
+a professional context.
+
+00:14:50.514 --> 00:14:51.515
+We're heading to a world
+
+00:14:51.515 --> 00:14:53.309
+where, like,
+
+00:14:53.309 --> 00:14:56.228
+if you want to do productive work,
+
+00:14:56.228 --> 00:14:57.605
+and you don't have access to computer,
+
+00:14:57.605 --> 00:14:58.981
+you're going to be hampered.
+
+00:14:58.981 --> 00:15:01.025
+Similarly, not having access to AI,
+
+00:15:01.025 --> 00:15:02.484
+it's heading in the same direction.
+
+00:15:02.484 --> 00:15:04.862
+Speaking of not having access to AI,
+
+00:15:05.779 --> 00:15:10.075
+I will posit that these
+days, it feels like
+
+00:15:10.075 --> 00:15:14.997
+AI product development
+is mostly OS limited.
+
+00:15:14.997 --> 00:15:16.540
+Is that how you feel?
+
+00:15:16.540 --> 00:15:18.125
+Are we stuck at the moment?
+
+00:15:18.125 --> 00:15:20.336
+I do feel a little of stuckage,
+
+00:15:20.336 --> 00:15:23.964
+but not to worry, it was overcomeable.
+
+00:15:23.964 --> 00:15:25.674
+But yeah, I think it is true.
+
+00:15:25.674 --> 00:15:29.178
+Two years ago we released
+plug-ins in ChatGPT.
+
+00:15:29.178 --> 00:15:30.346
+Do you remember those?
+Yeah.
+
+00:15:30.346 --> 00:15:33.599
+That was trying to make it
+
+00:15:33.599 --> 00:15:36.936
+so anyone could write apps
+that then ChatGPT could access.
+
+00:15:36.936 --> 00:15:38.854
+The models were just not that good, right?
+
+00:15:38.854 --> 00:15:41.190
+That we limited to like
+three plug-ins at a time.
+
+00:15:41.190 --> 00:15:43.233
+You could have only so
+many functions and stuff.
+
+00:15:43.233 --> 00:15:45.152
+It just wasn't that reliable.
+
+00:15:45.152 --> 00:15:48.322
+Now we're in a world where MCP basically
+
+00:15:48.322 --> 00:15:49.323
+is really taking off
+
+00:15:49.323 --> 00:15:54.328
+and is a way to hook up
+your AI to different tools,
+
+00:15:54.954 --> 00:15:56.538
+and very much like kind of trying to take
+
+00:15:56.538 --> 00:15:59.416
+that same type of idea
+and really make it work.
+
+00:15:59.416 --> 00:16:01.543
+Now, the world that
+we're in is very similar,
+
+00:16:01.543 --> 00:16:03.462
+where there's certain
+interfaces we don't have.
+
+00:16:03.462 --> 00:16:07.549
+Being able to access your
+phone and all those APIs.
+
+00:16:07.549 --> 00:16:08.801
+There's a question of,
+
+00:16:08.801 --> 00:16:11.428
+is the model above threshold
+to actually use them or not?
+
+00:16:11.428 --> 00:16:13.764
+My observation has been that basically,
+
+00:16:13.764 --> 00:16:15.808
+I think that there is maybe
+a lag of, like, six months
+
+00:16:15.808 --> 00:16:18.602
+of different interfaces
+that are hard to access.
+
+00:16:18.602 --> 00:16:20.980
+But once we have a model
+that's good enough,
+
+00:16:20.980 --> 00:16:21.939
+we will find a way.
+
+00:16:21.939 --> 00:16:23.315
+People will find a way.
+
+00:16:23.315 --> 00:16:24.775
+I think that we're in a world
+
+00:16:24.775 --> 00:16:27.528
+where I have every
+expectation that we will get
+
+00:16:27.528 --> 00:16:28.946
+the future that has been promised.
+
+00:16:28.946 --> 00:16:30.489
+It's just gonna take some work.
+
+00:16:30.489 --> 00:16:31.699
+I feel like there are many moments
+
+00:16:31.699 --> 00:16:35.369
+where I'm using my phone,
+and I want a single button
+
+00:16:35.369 --> 00:16:37.705
+where it's just, like
+
+00:16:37.705 --> 00:16:39.832
+"ChatGPT what do you think of this?
+
+00:16:39.832 --> 00:16:41.500
+I need your comment. I
+need your fact check.
+
+00:16:41.500 --> 00:16:43.335
+I need your explanation."
+Something like that.
+
+00:16:43.335 --> 00:16:46.130
+You take a screenshot, and
+you like go into ChatGPT,
+
+00:16:46.130 --> 00:16:48.090
+you click "upload photo."
+
+00:16:48.090 --> 00:16:50.884
+It feels very 1993
+
+00:16:50.884 --> 00:16:53.012
+versus the button on my
+phone that just says,
+
+00:16:53.012 --> 00:16:54.805
+"Hey, ChatGPT, what do
+you think about this?"
+
+00:16:54.805 --> 00:16:57.641
+Obviously, you guys are not
+empowered to go build that.
+
+00:16:57.641 --> 00:16:58.934
+That's what I mean by it feels somehow
+
+00:16:58.934 --> 00:17:00.561
+like we're a little
+operating system limited.
+
+00:17:00.561 --> 00:17:01.895
+I definitely get it,
+
+00:17:01.895 --> 00:17:04.606
+but I'll say, I think that
+there are two dimensions.
+
+00:17:04.606 --> 00:17:06.025
+This is how I've been
+thinking about things
+
+00:17:06.025 --> 00:17:08.485
+since we released the API back in 2020.
+
+00:17:08.485 --> 00:17:10.779
+There's capability and convenience.
+
+00:17:11.989 --> 00:17:14.158
+What you're referring to
+is the convenience, right?
+
+00:17:14.158 --> 00:17:15.492
+It's like pretty inconvenient
+
+00:17:15.492 --> 00:17:17.369
+to do the screenshot and paste it.
+
+00:17:17.369 --> 00:17:20.664
+But the thing is, if the
+capability is good enough,
+
+00:17:20.664 --> 00:17:23.459
+you are willing to accept any
+sort of inconvenience, right?
+
+00:17:23.459 --> 00:17:26.545
+It's like if this, by
+taking the screenshot
+
+00:17:26.545 --> 00:17:27.588
+and showing it to ChatGPT,
+
+00:17:27.588 --> 00:17:29.298
+it could give you amazing insight,
+
+00:17:29.298 --> 00:17:30.716
+it could tell you like how to, you know,
+
+00:17:30.716 --> 00:17:32.176
+build Stripe in some way,
+
+00:17:32.176 --> 00:17:34.011
+and it takes you like a month to do it,
+
+00:17:34.011 --> 00:17:35.345
+you have to crawl the top of the mountain,
+
+00:17:35.345 --> 00:17:36.513
+you'll do it, right?
+
+00:17:36.513 --> 00:17:38.849
+The convenience will not stop you.
+
+00:17:38.849 --> 00:17:41.185
+And so the point that I'm
+trying to make is that
+
+00:17:41.185 --> 00:17:43.228
+if the capability is high enough,
+
+00:17:43.228 --> 00:17:45.355
+people will start doing a specific flow.
+
+00:17:45.355 --> 00:17:46.523
+They'll discover the use cases
+
+00:17:46.523 --> 00:17:47.816
+and the convenience will just catch up.
+
+00:17:47.816 --> 00:17:48.650
+In the convenience,
+
+00:17:48.650 --> 00:17:49.693
+there's so much pressure.
+
+00:17:49.693 --> 00:17:50.986
+There's pressure on
+the phone manufacturer.
+
+00:17:50.986 --> 00:17:52.905
+There's pressure on us.
+There's pressure on everyone
+
+00:17:52.905 --> 00:17:54.239
+in order to bring down the convenience.
+
+00:17:54.239 --> 00:17:55.699
+o, I just need to be patient,
+
+00:17:55.699 --> 00:17:56.742
+and it'll be great in three years time.
+
+00:17:56.742 --> 00:17:59.870
+Yes. And really lean in and use the AI.
+
+00:17:59.870 --> 00:18:02.706
+A criticism people like to levy of AI is,
+
+00:18:02.706 --> 00:18:04.500
+"Yeah, it's great and handy and all,
+
+00:18:04.500 --> 00:18:09.505
+but it hasn't come up with
+a single novel advance
+
+00:18:09.713 --> 00:18:12.299
+in mathematics or science."
+Have you?
+
+00:18:12.299 --> 00:18:13.258
+Well, you could have
+
+00:18:13.258 --> 00:18:15.219
+if you'd become a mathematician.
+
+00:18:15.219 --> 00:18:18.180
+But you know, but humanity has, you know,
+
+00:18:18.180 --> 00:18:19.556
+for keeping the scoreboard.
+
+00:18:20.557 --> 00:18:22.142
+What do you make of that criticism?
+
+00:18:22.142 --> 00:18:23.268
+Just wait.
+
+00:18:23.268 --> 00:18:27.439
+Okay, so you think like take
+
+00:18:27.439 --> 00:18:28.440
+one of the Millennium Prizes
+
+00:18:28.440 --> 00:18:29.691
+Do you think we plausibly will see that?
+
+00:18:29.691 --> 00:18:30.776
+I think for sure.
+
+00:18:30.776 --> 00:18:31.944
+I mean, there's no question.
+
+00:18:31.944 --> 00:18:33.737
+Two years, five years, 10 years?
+
+00:18:33.737 --> 00:18:34.655
+I think that is the question.
+
+00:18:34.655 --> 00:18:35.572
+It's just timing.
+
+00:18:35.572 --> 00:18:36.782
+That is my question.
+
+00:18:37.866 --> 00:18:39.451
+I mean, I would put two to five years
+
+00:18:39.451 --> 00:18:41.745
+as the right number.
+
+00:18:41.745 --> 00:18:44.748
+I think ultimately this comes back
+
+00:18:44.748 --> 00:18:45.916
+to the question of benchmarks, right?
+
+00:18:45.916 --> 00:18:48.836
+Actually being able to
+solve a millennium problem
+
+00:18:48.836 --> 00:18:50.212
+is pretty high bar.
+
+00:18:51.088 --> 00:18:52.381
+Yeah.
+
+00:18:52.381 --> 00:18:54.800
+And once you can do that,
+there's so many other things
+
+00:18:54.800 --> 00:18:56.510
+that will definitely be possible.
+
+00:18:56.510 --> 00:18:57.386
+And I think that we're starting
+
+00:18:57.386 --> 00:18:58.470
+to see the leading edges of this.
+
+00:18:58.470 --> 00:19:02.432
+And to me, if we look at
+our definition of AGI...
+
+00:19:02.432 --> 00:19:03.684
+We recently started talking
+
+00:19:03.684 --> 00:19:06.061
+about this framework of
+thinking about levels of AGI,
+
+00:19:06.061 --> 00:19:09.982
+starting from chatbots,
+to reasoners, to agents,
+
+00:19:09.982 --> 00:19:13.735
+to innovators, to
+organizations, Five levels.
+
+00:19:13.735 --> 00:19:16.405
+We're basically, somewhere
+in level three right now.
+
+00:19:16.405 --> 00:19:17.573
+Level four,
+
+00:19:17.573 --> 00:19:19.449
+this innovator, like,
+that's gonna be different.
+
+00:19:19.449 --> 00:19:20.951
+I recently posted some pictures
+
+00:19:20.951 --> 00:19:22.744
+of our visit to Abilene, Texas,
+
+00:19:22.744 --> 00:19:24.913
+where we're building these
+big data centers together
+
+00:19:24.913 --> 00:19:26.874
+with our partner, Oracle.
+
+00:19:26.874 --> 00:19:31.879
+Imagine taking that whole data center
+
+00:19:32.171 --> 00:19:34.590
+and just thinking hard
+about one problem, right?
+
+00:19:34.590 --> 00:19:35.883
+Imagine it just thinking about
+
+00:19:35.883 --> 00:19:37.593
+how to solve a Millennium Problem
+
+00:19:37.593 --> 00:19:39.386
+or how to cure a specific kind of cancer.
+
+00:19:39.386 --> 00:19:41.096
+Maybe it needs access to some apparatus.
+
+00:19:41.096 --> 00:19:42.806
+Maybe it needs access to robotic wet labs.
+
+00:19:42.806 --> 00:19:43.849
+Maybe it needs access
+
+00:19:43.849 --> 00:19:45.267
+to different tools in the world.
+
+00:19:45.267 --> 00:19:48.645
+But that level of computational power
+
+00:19:48.645 --> 00:19:50.856
+coupled with the ability to experiment
+
+00:19:50.856 --> 00:19:52.691
+and learn from your ideas,
+
+00:19:52.691 --> 00:19:55.569
+that is going to be something
+the world has never seen.
+
+00:19:55.569 --> 00:19:59.489
+So yet again, we just haven't
+put a respectable amount
+
+00:19:59.489 --> 00:20:01.200
+of compute on these problems
+
+00:20:01.200 --> 00:20:02.451
+compared to what we will be doing.
+
+00:20:02.451 --> 00:20:04.119
+Yeah, we're still on these
+tiny little computers.
+
+00:20:04.119 --> 00:20:05.579
+So, that actually gets to,
+
+00:20:06.872 --> 00:20:09.875
+in terms of these scaling laws,
+do they eventually run out
+
+00:20:09.875 --> 00:20:11.585
+because we just run out of compute?
+
+00:20:11.585 --> 00:20:13.712
+Or do we eventually get to the point
+
+00:20:13.712 --> 00:20:15.589
+where we're inventing new
+kinds of nuclear energy,
+
+00:20:15.589 --> 00:20:18.050
+and that is what unlocks the next level?
+
+00:20:18.050 --> 00:20:21.553
+A lot of energy that comes
+online now is for data centers,
+
+00:20:21.553 --> 00:20:25.140
+which was not true when you
+guys started training GPT-2.
+
+00:20:25.140 --> 00:20:28.936
+Isn't that the upcoming bottleneck?
+
+00:20:28.936 --> 00:20:30.687
+I mean it's as it should be, right?
+
+00:20:30.687 --> 00:20:33.649
+It really should be that it's energy
+
+00:20:33.649 --> 00:20:35.359
+manufactured into intelligence
+
+00:20:35.359 --> 00:20:36.485
+and that's your only bottleneck.
+
+00:20:36.485 --> 00:20:39.154
+But I'm saying that'll
+be like quite a plateau
+
+00:20:39.154 --> 00:20:41.281
+compared to the exponential growth
+
+00:20:41.281 --> 00:20:42.950
+we've seen over the past few years.
+
+00:20:44.284 --> 00:20:46.036
+Unless things really change in terms of
+
+00:20:46.036 --> 00:20:48.413
+permitting and plans for
+building everything like that.
+
+00:20:48.413 --> 00:20:50.249
+This is I think the core, right?
+
+00:20:50.249 --> 00:20:54.294
+If you look at every trend in this field,
+
+00:20:54.294 --> 00:20:55.379
+there are these exponentials,
+
+00:20:55.379 --> 00:20:57.881
+these S-curves that
+sum up to exponentials.
+
+00:20:57.881 --> 00:20:59.800
+Sure. But these exponentials
+were mostly existing
+
+00:20:59.800 --> 00:21:03.178
+in like tech, Silicon Valley space
+
+00:21:03.178 --> 00:21:05.430
+where it was pretty easy
+to have exponential growth.
+
+00:21:05.430 --> 00:21:08.475
+It's pretty hard in
+permitting and real estate
+
+00:21:08.475 --> 00:21:11.395
+and damming rivers and
+building nuclear power plants.
+
+00:21:11.395 --> 00:21:13.313
+It's harder to have
+exponential growth there.
+
+00:21:13.313 --> 00:21:15.065
+Well, let's see how fusion pans out.
+
+00:21:15.065 --> 00:21:16.984
+Yeah. Okay, but even fusion,
+
+00:21:16.984 --> 00:21:18.902
+most industry observers would say
+
+00:21:18.902 --> 00:21:20.070
+is still five years away.
+
+00:21:20.070 --> 00:21:20.904
+And so, where does the next five years
+
+00:21:20.904 --> 00:21:22.447
+of power growth come from?
+
+00:21:22.447 --> 00:21:24.992
+I think that it is very possible
+
+00:21:24.992 --> 00:21:27.119
+that we end up bottlenecked on energy,
+
+00:21:27.119 --> 00:21:28.745
+and that's actually, one
+reason that we've been spending
+
+00:21:28.745 --> 00:21:31.290
+a lot of time really trying
+to advocate for the fact
+
+00:21:31.290 --> 00:21:34.459
+that we just need far more power.
+
+00:21:34.459 --> 00:21:37.629
+My observation of the
+market is that ultimately,
+
+00:21:37.629 --> 00:21:39.715
+the capitalist markets do provide.
+
+00:21:39.715 --> 00:21:42.301
+I think there's this like
+absolute tsunami of demand
+
+00:21:42.301 --> 00:21:44.636
+that is coming our way,
+
+00:21:44.636 --> 00:21:48.223
+but I feel some confidence
+that, again, there's like,
+
+00:21:48.223 --> 00:21:49.474
+when there's enough pressure,
+
+00:21:49.474 --> 00:21:51.935
+when there's enough clarity
+of, this is the bottleneck...
+
+00:21:51.935 --> 00:21:54.062
+And it's not just for any company, right?
+
+00:21:54.062 --> 00:21:56.606
+It's really for national competitiveness.
+
+00:21:56.606 --> 00:21:57.649
+You look at other countries
+
+00:21:57.649 --> 00:22:00.152
+that are just building
+huge amounts of power,
+
+00:22:00.152 --> 00:22:01.987
+far more than we are.
+
+00:22:01.987 --> 00:22:04.531
+I think that actually for
+America to remain competitive,
+
+00:22:04.531 --> 00:22:06.074
+there's just no choice but to build it.
+
+00:22:06.074 --> 00:22:06.908
+We've got to figure out power.
+
+00:22:06.908 --> 00:22:08.785
+We do.
+Speaking of bottlenecks,
+
+00:22:08.785 --> 00:22:12.205
+everyone was talking about
+the data wall in 2023.
+
+00:22:12.205 --> 00:22:13.290
+I think this is an interesting thing,
+
+00:22:13.290 --> 00:22:15.792
+where no one is talking
+about the data wall anymore,
+
+00:22:15.792 --> 00:22:20.088
+and yet, it doesn't feel like
+AI progress has slowed down.
+
+00:22:20.088 --> 00:22:22.049
+Is it just test-time compute?
+
+00:22:22.049 --> 00:22:24.760
+Is it, like, people were
+wrong about the data wall
+
+00:22:24.760 --> 00:22:26.178
+and where it presented a bottleneck?
+
+00:22:26.178 --> 00:22:28.263
+Is there actually still a data wall,
+
+00:22:28.263 --> 00:22:29.514
+but it's two years away?
+
+00:22:29.514 --> 00:22:30.974
+It's basically, all of
+these things, right?
+
+00:22:30.974 --> 00:22:32.142
+It truly is.
+
+00:22:32.142 --> 00:22:34.269
+It's like, you keep changing the paradigm.
+
+00:22:34.269 --> 00:22:36.104
+That is the real core of
+
+00:22:36.104 --> 00:22:37.522
+the Kurzweil view of the world,
+
+00:22:37.522 --> 00:22:41.485
+is that, fine, this one way
+of doing things taps out.
+
+00:22:41.485 --> 00:22:43.445
+If you just look at that
+one way of doing things,
+
+00:22:43.445 --> 00:22:44.821
+you feel hopeless.
+
+00:22:44.821 --> 00:22:45.864
+You feel like this is it,
+
+00:22:45.864 --> 00:22:48.241
+but somehow you will find a new S-curve.
+
+00:22:48.241 --> 00:22:49.117
+And I think that's what's happened.
+
+00:22:49.117 --> 00:22:50.243
+For example, synthetic data,
+
+00:22:50.243 --> 00:22:51.620
+for example, reinforcement
+learning, right?
+
+00:22:51.620 --> 00:22:53.455
+If you think about the RL paradigm,
+
+00:22:53.455 --> 00:22:56.041
+fundamentally that's a data
+production mechanism, right?
+
+00:22:56.041 --> 00:22:57.584
+And it just that the AI
+
+00:22:57.584 --> 00:22:59.336
+happens to be training on its own data
+
+00:22:59.336 --> 00:23:00.754
+and then you learn it very rapidly,
+
+00:23:00.754 --> 00:23:02.464
+and then you learn on that.
+
+00:23:02.464 --> 00:23:05.217
+Each of these has taken us much further.
+
+00:23:05.217 --> 00:23:07.135
+I think there are lots
+of algorithmic ideas,
+
+00:23:07.135 --> 00:23:08.470
+lots of techniques, lots of ways
+
+00:23:08.470 --> 00:23:10.680
+of even using the existing data better.
+
+00:23:11.640 --> 00:23:15.435
+I think that fundamentally
+the S-curves continue,
+
+00:23:15.435 --> 00:23:18.397
+and if you zoom out, it all
+looks smooth and uninterrupted.
+
+00:23:19.356 --> 00:23:20.816
+So, it's kinda like chip miniaturization
+
+00:23:20.816 --> 00:23:22.859
+where each generation people are like,
+
+00:23:22.859 --> 00:23:23.902
+"Okay, well, that's the smallest
+
+00:23:23.902 --> 00:23:25.070
+you can possibly make a chip."
+
+00:23:25.070 --> 00:23:25.904
+Do you know what I mean?
+
+00:23:25.904 --> 00:23:27.531
+"That's it we're done
+with miniaturization,"
+
+00:23:27.531 --> 00:23:28.365
+and somehow we figure out a way.
+
+00:23:28.365 --> 00:23:30.117
+Yes. Now one difference with chips
+
+00:23:30.117 --> 00:23:30.992
+is at the end of the day,
+
+00:23:30.992 --> 00:23:33.120
+there is some limit.
+
+00:23:33.120 --> 00:23:35.163
+Right. But we've never
+been that close to that.
+
+00:23:35.163 --> 00:23:35.997
+Yes.
+
+00:23:37.124 --> 00:23:39.167
+Where does AI coding go?
+
+00:23:39.167 --> 00:23:44.172
+In particular, vibe coding
+is all the rage right now.
+
+00:23:44.631 --> 00:23:48.218
+It's kind of the term of 2025.
+
+00:23:48.218 --> 00:23:51.263
+It's sort of working.
+It's very impressive.
+
+00:23:51.263 --> 00:23:56.268
+No one is really fully
+letting AI software engineers
+
+00:23:56.518 --> 00:23:58.061
+run end-to-end in production.
+
+00:23:58.061 --> 00:23:58.895
+I'm just curious,
+
+00:23:58.895 --> 00:24:00.647
+what are your one to two-year predictions
+
+00:24:00.647 --> 00:24:02.315
+on what happens with AI coding?
+
+00:24:02.315 --> 00:24:04.109
+Well, my general observation is that
+
+00:24:04.109 --> 00:24:06.361
+once something kind of
+works in this field,
+
+00:24:06.361 --> 00:24:07.904
+the next gen is gonna be great.
+
+00:24:08.780 --> 00:24:10.782
+I think that's where we are
+right now for AI coding.
+
+00:24:10.782 --> 00:24:12.993
+I think what we're going to see
+
+00:24:12.993 --> 00:24:16.288
+is AIs taking more and
+more of the drudgery,
+
+00:24:16.288 --> 00:24:18.957
+more of this like pain, more of the parts
+
+00:24:18.957 --> 00:24:20.750
+that are not very fun for humans.
+
+00:24:20.750 --> 00:24:22.294
+Now, one thing that's
+very interesting is that
+
+00:24:22.294 --> 00:24:24.796
+I think that so far, the vibe coding
+
+00:24:24.796 --> 00:24:26.214
+has actually taken a lot of code
+
+00:24:26.214 --> 00:24:27.424
+that is actually quite fun
+
+00:24:27.424 --> 00:24:29.342
+and left behind the
+review and the deployment,
+
+00:24:29.342 --> 00:24:31.136
+these things that are not fun at all.
+
+00:24:31.136 --> 00:24:32.471
+I'm hopeful that we're actually
+
+00:24:32.471 --> 00:24:33.930
+gonna be able to make a lot of progress
+
+00:24:33.930 --> 00:24:35.849
+on these other areas as well,
+
+00:24:35.849 --> 00:24:37.809
+but fundamentally, we should really end up
+
+00:24:37.809 --> 00:24:39.478
+with a full AI coworker.
+
+00:24:39.478 --> 00:24:41.813
+And I think it really will be
+anything you want to create,
+
+00:24:41.813 --> 00:24:43.315
+you can be the manager,
+
+00:24:43.315 --> 00:24:44.149
+and you can have
+
+00:24:44.149 --> 00:24:45.984
+this team of software engineering agents.
+
+00:24:45.984 --> 00:24:47.736
+Now, the thing that I think will be
+
+00:24:47.736 --> 00:24:48.904
+very interesting to see is,
+
+00:24:48.904 --> 00:24:51.448
+is there a world where
+the AI becomes the manager
+
+00:24:51.448 --> 00:24:52.741
+and it gives you ideas,
+
+00:24:52.741 --> 00:24:54.159
+gives you some tasks to do?
+
+00:24:54.159 --> 00:24:55.327
+That's something that, again,
+
+00:24:55.327 --> 00:24:56.912
+it's just totally backwards
+
+00:24:56.912 --> 00:24:58.538
+in terms of how we think about it.
+
+00:24:58.538 --> 00:25:00.957
+But are there ways in
+which you can actually
+
+00:25:00.957 --> 00:25:04.127
+have outcomes for companies
+
+00:25:04.127 --> 00:25:05.295
+and actually have people whose jobs
+
+00:25:05.295 --> 00:25:06.463
+become much more meaningful
+
+00:25:06.463 --> 00:25:09.090
+because they have an AI who
+really deeply understands them
+
+00:25:09.090 --> 00:25:10.509
+in the same way that your
+
+00:25:10.509 --> 00:25:14.804
+AI doctor really deeply
+understands all of your needs.
+
+00:25:14.804 --> 00:25:16.139
+But isn't part of the common thread
+
+00:25:16.139 --> 00:25:17.265
+that we're talking about here,
+
+00:25:17.265 --> 00:25:20.852
+often places where AI tools underperform,
+
+00:25:20.852 --> 00:25:23.522
+it's because they're trying
+to do something generally,
+
+00:25:23.522 --> 00:25:25.941
+Like, voice recognition is not that good
+
+00:25:25.941 --> 00:25:27.651
+because it's trying to
+recognize all voices
+
+00:25:27.651 --> 00:25:28.985
+as opposed to trying to recognize
+
+00:25:28.985 --> 00:25:30.070
+my voice in particular.
+
+00:25:30.070 --> 00:25:33.031
+Similarly, with AI coding,
+they work well in places
+
+00:25:33.031 --> 00:25:36.451
+where you need no context at all
+
+00:25:36.451 --> 00:25:39.037
+and we're single-shotting an app based on
+
+00:25:39.037 --> 00:25:40.830
+publicly available libraries.
+
+00:25:40.830 --> 00:25:43.917
+In places where you have to understand
+
+00:25:43.917 --> 00:25:45.752
+a million-line code base,
+
+00:25:45.752 --> 00:25:50.173
+they haven't fully figured out
+how to do a good job of that.
+
+00:25:50.173 --> 00:25:51.633
+Is that a fair parallel
+
+00:25:51.633 --> 00:25:52.717
+to draw between all these challenges?
+
+00:25:52.717 --> 00:25:54.678
+Well, I think there are
+two things in there.
+
+00:25:54.678 --> 00:25:57.556
+One is that I think this
+is already changing, right?
+
+00:25:57.556 --> 00:25:59.015
+So if you look at something like Codex,
+
+00:25:59.015 --> 00:26:02.227
+it's actually great at
+operating in a big codebase.
+
+00:26:02.227 --> 00:26:04.813
+Like I ask it for where
+functionality is implemented
+
+00:26:04.813 --> 00:26:07.440
+and it's better than I am at finding it.
+
+00:26:07.440 --> 00:26:09.150
+Which is kind of a wild fact.
+
+00:26:09.150 --> 00:26:11.236
+It's super cool to see
+it like grepping around
+
+00:26:11.236 --> 00:26:14.155
+and just going and exploring.
+
+00:26:14.155 --> 00:26:15.240
+Actually, this is one thing
+
+00:26:15.240 --> 00:26:16.575
+that we really shot for with Codex,
+
+00:26:16.575 --> 00:26:19.286
+was to build a tool for software engineers
+
+00:26:19.286 --> 00:26:21.830
+who are not necessarily vibe coding.
+
+00:26:21.830 --> 00:26:23.498
+It's not about building
+a new app from scratch,
+
+00:26:23.498 --> 00:26:24.624
+which is a cool demo,
+
+00:26:24.624 --> 00:26:25.709
+But that's not actually
+
+00:26:25.709 --> 00:26:27.085
+how most software gets written.
+
+00:26:27.085 --> 00:26:29.462
+Actually, I think maybe the
+killer enterprise feature
+
+00:26:29.462 --> 00:26:30.630
+is refactors, right?
+
+00:26:30.630 --> 00:26:33.633
+It's like rewriting your
+COBOL app or changing-
+
+00:26:33.633 --> 00:26:37.804
+When Facebook did hip
+hop to do static PHP.
+
+00:26:37.804 --> 00:26:38.638
+If you think about it,
+
+00:26:38.638 --> 00:26:41.725
+the amount of deep, sophisticated thought
+
+00:26:41.725 --> 00:26:43.768
+that is required to accomplish a refactor
+
+00:26:43.768 --> 00:26:44.894
+is actually not that high.
+
+00:26:44.894 --> 00:26:46.313
+There's a lot of mechanical work
+
+00:26:46.313 --> 00:26:48.898
+that's just the sheer
+volume of it that's hard,
+
+00:26:48.898 --> 00:26:52.277
+That's an AI-shaped problem for sure.
+
+00:26:52.277 --> 00:26:55.447
+I think we're going to see
+a lot more productivity
+
+00:26:55.447 --> 00:26:58.533
+on all sorts of AI tasks as a result.
+
+00:26:58.533 --> 00:27:01.995
+Now, we are in a world where
+you said a second thing,
+
+00:27:01.995 --> 00:27:03.413
+which is maybe you need
+
+00:27:03.413 --> 00:27:04.706
+to narrow down more.
+
+00:27:04.706 --> 00:27:06.416
+I think that the way these models work
+
+00:27:06.416 --> 00:27:07.917
+is you actually do want one model
+
+00:27:07.917 --> 00:27:09.836
+that knows more and more things,
+
+00:27:09.836 --> 00:27:12.881
+and you want it to have
+some personalization to you,
+
+00:27:12.881 --> 00:27:14.424
+but the fact that is
+
+00:27:14.424 --> 00:27:15.967
+they have this one base model
+
+00:27:15.967 --> 00:27:17.552
+that kind of knows everything is actually
+
+00:27:17.552 --> 00:27:18.720
+a very useful starting point.
+
+00:27:18.720 --> 00:27:20.555
+So I do think that you're
+going to see a world
+
+00:27:20.555 --> 00:27:22.932
+where we'll have more and
+more capable base models
+
+00:27:22.932 --> 00:27:24.476
+and figuring out how you really connect it
+
+00:27:24.476 --> 00:27:25.310
+to all of your organization's code,
+
+00:27:25.310 --> 00:27:26.144
+and context, and history.
+
+00:27:28.396 --> 00:27:32.317
+How does OpenAI decide
+what products to do?
+
+00:27:32.317 --> 00:27:35.779
+I'm just curious how you think about
+
+00:27:35.779 --> 00:27:38.698
+when to develop specific
+products or when you think,
+
+00:27:38.698 --> 00:27:40.450
+"Oh, you contributed do that with ChatGPT,
+
+00:27:40.450 --> 00:27:41.534
+and that's good enough."
+
+00:27:41.534 --> 00:27:43.495
+Yeah. It's is a really
+tough question, right?
+
+00:27:43.495 --> 00:27:44.746
+It's something we really struggle with,
+
+00:27:44.746 --> 00:27:45.580
+and I think that over time
+
+00:27:46.539 --> 00:27:49.209
+when we first launched ChatGPT,
+
+00:27:49.209 --> 00:27:52.253
+we're left with this, "Well,
+we're an enterprise business,
+
+00:27:52.253 --> 00:27:53.797
+and we're a consumer business."
+
+00:27:53.797 --> 00:27:56.508
+And seems terrifying, as a startup.
+
+00:27:56.508 --> 00:28:00.762
+I remember talking to one of
+my board members who said,
+
+00:28:00.762 --> 00:28:01.846
+"It just feels like what you have
+
+00:28:01.846 --> 00:28:03.640
+is an unfocused strategy at first,
+
+00:28:03.640 --> 00:28:06.476
+because you're just doing
+all these different things."
+
+00:28:06.476 --> 00:28:07.769
+But if you think about it,
+
+00:28:07.769 --> 00:28:09.688
+maybe an analogies to
+a company like Disney
+
+00:28:09.688 --> 00:28:13.441
+where you make one core asset
+like Little Mermaid, right?
+
+00:28:13.441 --> 00:28:15.694
+Then, you productize it
+
+00:28:15.694 --> 00:28:16.986
+in all these different ways.
+
+00:28:16.986 --> 00:28:18.363
+You think about Little Mermaid the ride,
+
+00:28:18.363 --> 00:28:21.116
+the lunchbox, the T-shirt.
+
+00:28:21.116 --> 00:28:22.575
+I think that we have some element of that.
+
+00:28:22.575 --> 00:28:23.910
+We have a core model,
+
+00:28:23.910 --> 00:28:24.828
+and then we have a question of,
+
+00:28:24.828 --> 00:28:26.037
+"Well, what are the applications
+
+00:28:26.037 --> 00:28:29.249
+that this can add a lot of
+value to quickly, right?
+
+00:28:29.249 --> 00:28:31.167
+With like a small amount
+of additional work.
+
+00:28:31.167 --> 00:28:34.629
+So I think the question of
+what areas to go into are
+
+00:28:34.629 --> 00:28:36.881
+how far does it take us
+off the general path,
+
+00:28:37.716 --> 00:28:41.010
+the return on how important
+is this domain area,
+
+00:28:41.010 --> 00:28:43.555
+especially for achieving the bigger goal,
+
+00:28:43.555 --> 00:28:45.348
+how much synergy is there across it
+
+00:28:45.348 --> 00:28:46.975
+with respect to other things we work on?
+
+00:28:46.975 --> 00:28:49.352
+So coding is one where
+there's very clear synergy,
+
+00:28:49.352 --> 00:28:50.603
+very clear ROI.
+
+00:28:50.603 --> 00:28:52.439
+Because if we can speed ourselves up,
+
+00:28:52.439 --> 00:28:55.150
+that's something that
+accelerates everything.
+
+00:28:55.150 --> 00:28:58.236
+How is being from North
+Dakota, how has it shaped you?
+
+00:29:00.238 --> 00:29:01.781
+Look, North Dakota was an
+amazing place to grow up.
+
+00:29:01.781 --> 00:29:03.450
+Was it actually? Come on.
+
+00:29:04.492 --> 00:29:05.326
+I've been there.
+
+00:29:06.536 --> 00:29:07.495
+And it was great.
+
+00:29:08.538 --> 00:29:09.622
+Look, it was incredibly safe.
+
+00:29:09.622 --> 00:29:11.624
+Our doors didn't even have working locks.
+
+00:29:11.624 --> 00:29:13.668
+It was that kind of place.
+
+00:29:13.668 --> 00:29:15.211
+I had a lot of freedom academically.
+
+00:29:15.211 --> 00:29:17.797
+Sixth grade, my dad
+taught me some algebra.
+
+00:29:17.797 --> 00:29:19.257
+Seventh grade was the first time
+
+00:29:19.257 --> 00:29:20.759
+they split you into advanced math,
+
+00:29:20.759 --> 00:29:22.844
+so I was going to be taking pre-algebra.
+
+00:29:22.844 --> 00:29:25.722
+My mom took me to go see the teacher,
+
+00:29:25.722 --> 00:29:27.348
+and we asked, "Can you skip?"
+
+00:29:27.348 --> 00:29:29.601
+The teacher looked at
+us very condescendingly
+
+00:29:29.601 --> 00:29:31.770
+and said, "Every parent believes
+
+00:29:31.770 --> 00:29:33.855
+that their child is special.
+
+00:29:33.855 --> 00:29:35.231
+I can guarantee your son will be
+
+00:29:35.231 --> 00:29:36.733
+plenty challenged in my class."
+
+00:29:36.733 --> 00:29:39.152
+And so, after a month of
+me sitting in the back
+
+00:29:39.152 --> 00:29:40.653
+just playing games on my calculator
+
+00:29:40.653 --> 00:29:43.198
+and you know, she'd call me
+randomly to try to trip me up,
+
+00:29:43.198 --> 00:29:46.326
+and I just look at the
+board and be like, "2x."
+
+00:29:46.326 --> 00:29:47.952
+She said, "Okay, fair enough.
+
+00:29:47.952 --> 00:29:50.497
+Your son has nothing to
+learn in this class."
+
+00:29:50.497 --> 00:29:52.916
+So, they moved me into
+eighth grade algebra.
+
+00:29:52.916 --> 00:29:54.709
+But then eighth grade rolled around
+
+00:29:54.709 --> 00:29:57.420
+and I had no more math
+left in my middle school.
+
+00:29:57.420 --> 00:29:58.713
+That's right you went to college, right?
+
+00:29:58.713 --> 00:30:00.590
+Well, so I did, in high school
+
+00:30:00.590 --> 00:30:02.342
+start going to University of North Dakota,
+
+00:30:02.342 --> 00:30:04.135
+and took a bunch of classes there.
+
+00:30:04.135 --> 00:30:06.721
+But also, I was connected
+to a lot of people
+
+00:30:06.721 --> 00:30:09.182
+who were the top math kids in the country
+
+00:30:09.182 --> 00:30:11.476
+through things like math camp
+and the math competitions.
+
+00:30:11.476 --> 00:30:12.685
+So, you're saying the social scene
+
+00:30:12.685 --> 00:30:15.104
+was not too distracting in North Dakota?
+
+00:30:15.104 --> 00:30:16.564
+Not too distracting,
+
+00:30:16.564 --> 00:30:19.067
+but it was definitely fun.
+
+00:30:19.067 --> 00:30:20.318
+Last question, do you remember
+
+00:30:20.318 --> 00:30:25.114
+we were going to Camp YC in 2017
+
+00:30:25.114 --> 00:30:29.828
+and I asked you how far AGI was away
+
+00:30:29.828 --> 00:30:31.496
+and you said two or three years.
+
+00:30:32.497 --> 00:30:33.331
+Did I say that?
+
+00:30:33.331 --> 00:30:34.457
+You did.
+
+00:30:34.457 --> 00:30:35.750
+I don't see the recording.
+
+00:30:35.750 --> 00:30:39.504
+Well, I'm just trying to think
+
+00:30:39.504 --> 00:30:40.797
+was I right, were you right?
+
+00:30:40.797 --> 00:30:41.714
+How should we grade that?
+
+00:30:41.714 --> 00:30:43.925
+Because we didn't get AGI,
+
+00:30:43.925 --> 00:30:46.636
+but we didn't not get AGI either.
+
+00:30:46.636 --> 00:30:49.055
+I'm curious if you have any reflections
+
+00:30:49.055 --> 00:30:52.141
+from your own AGI prediction journey.
+
+00:30:53.142 --> 00:30:55.562
+I think that we are...
+
+00:30:55.562 --> 00:30:57.856
+I will say I think that AI is surprising.
+
+00:30:57.856 --> 00:31:01.025
+I think that that is like the
+single most consistent theme,
+
+00:31:01.025 --> 00:31:02.861
+is that the thing we were picturing,
+
+00:31:02.861 --> 00:31:03.987
+we got something different,
+
+00:31:03.987 --> 00:31:06.531
+but we got something better, more magical.
+
+00:31:06.531 --> 00:31:07.991
+Something that is more helpful.
+
+00:31:07.991 --> 00:31:10.618
+And so, I'm actually
+quite happy with that.
+
+00:31:10.618 --> 00:31:12.120
+Now, predicting where you go,
+
+00:31:12.120 --> 00:31:14.747
+it's again, it's really hard
+to manage the outputs here.
+
+00:31:14.747 --> 00:31:17.750
+One goal of OpenAI that we
+have successfully achieved,
+
+00:31:17.750 --> 00:31:21.170
+is every year to have at least one result
+
+00:31:21.170 --> 00:31:23.339
+that just feels like
+a step function better
+
+00:31:23.339 --> 00:31:24.966
+than anything before.
+
+00:31:24.966 --> 00:31:26.301
+You know when you see it kind of.
+
+00:31:26.301 --> 00:31:29.554
+You just have one really awesome
+AI feeling thing each year.
+
+00:31:29.554 --> 00:31:30.388
+That kind of thing.
+
+00:31:30.388 --> 00:31:31.681
+I like that.
+Yeah.
+
+00:31:31.681 --> 00:31:32.974
+That's a good way to tie it back,
+
+00:31:32.974 --> 00:31:36.060
+which is, you know, the way
+we grade that prediction
+
+00:31:36.060 --> 00:31:38.771
+is that you've stopped setting
+metrics based on outputs.
+
+00:31:38.771 --> 00:31:40.148
+Yeah, exactly, exactly.
+Yeah. Yeah.
+
+00:31:40.148 --> 00:31:42.483
+Yes. But it does feel
+we're getting really close
+
+00:31:42.483 --> 00:31:44.360
+to something pretty magical.
+
+00:31:44.360 --> 00:31:46.571
+I agree. Thank you.
+Thank you.
+

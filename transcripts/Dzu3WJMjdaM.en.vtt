@@ -1,0 +1,2204 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:01.804 --> 00:00:08.400
+Chris: We had presented to OpenAI, to a group&nbsp;
+of researchers. I remember I was presenting&nbsp;&nbsp;
+
+00:00:08.400 --> 00:00:15.200
+and half the audience was just looking at&nbsp;
+their laptops. I left that meeting feeling like&nbsp;&nbsp;
+
+00:00:15.760 --> 00:00:21.840
+no one cares. Then a week later,&nbsp;
+Woj calls us up and he says, "Hey,&nbsp;&nbsp;
+
+00:00:23.360 --> 00:00:28.080
+we got this problem on the robotics team.&nbsp;
+Come check this out. Can you help us out?"&nbsp;
+
+00:00:28.640 --> 00:00:32.400
+We go, look, and I remember going there with&nbsp;
+Shawn. Both Shawn and I are looking at it&nbsp;&nbsp;
+
+00:00:32.400 --> 00:00:37.520
+and we're excited, right? Because we can&nbsp;
+solve the problem. They're telling us they&nbsp;&nbsp;
+
+00:00:37.520 --> 00:00:41.360
+have a problem and they want us to fix it.
+Lukas: You're listening to Gradient Dissent,&nbsp;&nbsp;
+
+00:00:41.360 --> 00:00:45.680
+a show about machine learning in the&nbsp;
+real world. I'm your host, Lukas Biewald.&nbsp;
+
+00:00:46.640 --> 00:00:54.400
+This episode is a fun departure from our normal&nbsp;
+format, where I interview two people in the&nbsp;&nbsp;
+
+00:00:54.400 --> 00:01:00.560
+machine learning space about their work. But&nbsp;
+these two people happen to be my co-founders of&nbsp;&nbsp;
+
+00:01:00.560 --> 00:01:07.840
+Weights &amp; Biases. Shawn Lewis, our CTO, and&nbsp;
+Chris Van Pelt, our Corporate Vice-President.&nbsp;
+
+00:01:09.200 --> 00:01:14.880
+I talk to them about questions that have been&nbsp;
+stewing inside of me for years, like "Why&nbsp;&nbsp;
+
+00:01:14.880 --> 00:01:20.880
+did we start this company?" and "Where is it&nbsp;
+going?" Honestly, I was surprised and educated&nbsp;&nbsp;
+
+00:01:20.880 --> 00:01:26.560
+by their answers and I hope that you enjoy&nbsp;
+listening to this episode as much as I enjoyed&nbsp;&nbsp;
+
+00:01:26.560 --> 00:01:30.080
+asking them these hard questions.
+Lukas: All right. Here we go.&nbsp;&nbsp;
+
+00:01:31.440 --> 00:01:34.960
+Should we just jump right in?
+How did this company start? I&nbsp;&nbsp;
+
+00:01:34.960 --> 00:01:39.120
+ask this because it's the most common&nbsp;
+question I get asked if I go on any&nbsp;&nbsp;
+
+00:01:39.120 --> 00:01:43.200
+other podcast or with any candidate. Everyone&nbsp;
+wants to know how did you start the company.&nbsp;
+
+00:01:44.000 --> 00:01:49.040
+I was kind of realizing you two both have&nbsp;
+founding stories that's telling the same story,&nbsp;&nbsp;
+
+00:01:49.040 --> 00:01:57.840
+but it may have diverged in its evolution. I&nbsp;
+would be curious to hear you two's version of&nbsp;&nbsp;
+
+00:01:57.840 --> 00:02:02.160
+the story. Which of you wants to go first?
+Chris: Shawn, I think you should go first.&nbsp;
+
+00:02:02.160 --> 00:02:07.440
+Shawn: All right. When I started my career&nbsp;
+as a software engineer, I was at Google and I&nbsp;&nbsp;
+
+00:02:08.480 --> 00:02:14.320
+was in the platforms team at Google.&nbsp;
+I joined...this was back in 2006. I&nbsp;&nbsp;
+
+00:02:14.320 --> 00:02:18.480
+worked on all kinds of stuff in the platforms&nbsp;
+team. The platforms team was responsible for&nbsp;&nbsp;
+
+00:02:18.480 --> 00:02:22.880
+building the data centers and all the machines&nbsp;
+inside the data centers that Google uses.&nbsp;
+
+00:02:24.080 --> 00:02:28.720
+I wrote a lot of the software that ran in those&nbsp;
+environments. When you write tests like that,&nbsp;&nbsp;
+
+00:02:28.720 --> 00:02:35.200
+they generate a ton of data. At first, I was&nbsp;
+writing tests, but then I ended up with just&nbsp;&nbsp;
+
+00:02:35.200 --> 00:02:40.400
+all of this data. Really, where I ended up&nbsp;
+spending my time was on making tools and&nbsp;&nbsp;
+
+00:02:40.400 --> 00:02:47.040
+data pipelines that would help us understand that&nbsp;
+data. That's what I realized that I loved doing.&nbsp;
+
+00:02:47.920 --> 00:02:51.840
+I ended up writing all kinds of different tools&nbsp;
+and data pipelines — and the data's in all these&nbsp;&nbsp;
+
+00:02:51.840 --> 00:02:57.360
+different databases all over Google — and I merged&nbsp;
+it into once place, and defined the metrics that&nbsp;&nbsp;
+
+00:02:57.360 --> 00:03:02.160
+we used to understand hard drives. And then made&nbsp;
+these user-facing tools — and when I say user,&nbsp;&nbsp;
+
+00:03:02.160 --> 00:03:07.120
+I mean other people at Google — that they&nbsp;
+could use to dig in and understand this data.&nbsp;
+
+00:03:07.760 --> 00:03:12.240
+I worked on a lot of stuff like that at Google.&nbsp;
+It was super fun. Then I eventually left.&nbsp;
+
+00:03:12.240 --> 00:03:17.093
+Then I started this other company called Beep.&nbsp;
+We built hardware. We built a lot of things. This&nbsp;&nbsp;
+
+00:03:17.093 --> 00:03:20.960
+is kind of tangential to the story so I won't&nbsp;
+go into it, but we were also in Y Combinator.&nbsp;
+
+00:03:22.160 --> 00:03:28.240
+In that Y Combinator batch was actually Lukas's&nbsp;
+wife, Noga, who I'm not sure if folks know this,&nbsp;&nbsp;
+
+00:03:28.240 --> 00:03:32.640
+but she's the founder of a company called&nbsp;
+PicnicHealth. We were in a Y Combinator batch,&nbsp;&nbsp;
+
+00:03:32.640 --> 00:03:37.760
+we ended up sharing an office together in the&nbsp;
+Mission in San Francisco for a couple of years,&nbsp;&nbsp;
+
+00:03:37.760 --> 00:03:41.840
+and I got to know Lukas that way.
+We had a hardware component at Beep.&nbsp;&nbsp;
+
+00:03:41.840 --> 00:03:45.680
+We had this hardware lab. Lukas loves robots&nbsp;
+and he was kind of always tinkering in his&nbsp;&nbsp;
+
+00:03:45.680 --> 00:03:50.960
+garage building robots. He would come up to my&nbsp;
+hardware lab and poke his head through the door&nbsp;&nbsp;
+
+00:03:50.960 --> 00:03:56.960
+and go, "What are you guys doing in here? Also,&nbsp;
+my robot's broken," and we'd just start to get&nbsp;&nbsp;
+
+00:03:56.960 --> 00:04:01.040
+to know each other and work on the robot and help&nbsp;
+him fix it. So we became good friends that way.&nbsp;
+
+00:04:03.680 --> 00:04:07.040
+As Beep wound down — I don't&nbsp;
+know, I think that was 2016,&nbsp;&nbsp;
+
+00:04:08.240 --> 00:04:10.640
+I think, this is my version of&nbsp;
+the story — Chris and Lukas were&nbsp;&nbsp;
+
+00:04:11.520 --> 00:04:15.600
+starting to step out of Figure Eight around&nbsp;
+the same time. The circumstances were really&nbsp;&nbsp;
+
+00:04:15.600 --> 00:04:18.880
+good. Deep learning was starting to take&nbsp;
+off. We were all really excited about it.&nbsp;
+
+00:04:20.000 --> 00:04:25.760
+I had been thinking about these problems a lot. I&nbsp;
+loved the chance to work with Lukas and Chris, and&nbsp;&nbsp;
+
+00:04:26.640 --> 00:04:30.880
+we just started hanging out, and talking&nbsp;
+about it, and jumped on that opportunity,&nbsp;&nbsp;
+
+00:04:30.880 --> 00:04:34.160
+and started building the stuff that&nbsp;
+I needed to organize that data.&nbsp;
+
+00:04:34.160 --> 00:04:38.480
+It was an exciting time and it still is.
+Lukas: All right. Chris, I think you have&nbsp;&nbsp;
+
+00:04:38.480 --> 00:04:43.200
+a different version of the story. Let's hear it.
+Chris: All right. We got to go back. We got to go&nbsp;&nbsp;
+
+00:04:43.200 --> 00:04:51.600
+back to like 2006, like Shawn. Except in&nbsp;
+my 2006, I'm coming to San Francisco for&nbsp;&nbsp;
+
+00:04:51.600 --> 00:04:57.920
+the first time and it's to work at an exciting&nbsp;
+startup. I feel like I've made it. I've been&nbsp;&nbsp;
+
+00:04:58.880 --> 00:05:05.120
+doing web development and trying to advance my&nbsp;
+career and happened to be into Ruby on Rails,&nbsp;&nbsp;
+
+00:05:05.120 --> 00:05:12.560
+which was really hot and exciting at the time.
+There was this startup in San Francisco that was&nbsp;&nbsp;
+
+00:05:12.560 --> 00:05:20.720
+using Ruby on Rails and using machine learning to&nbsp;
+create a smarter, hopefully more relevant search&nbsp;&nbsp;
+
+00:05:20.720 --> 00:05:25.760
+engine. That startup was Powerset and I came up&nbsp;
+to San Francisco — it was like the beginning of&nbsp;&nbsp;
+
+00:05:25.760 --> 00:05:32.320
+2007 — and that's actually where I met Lukas.
+Lukas and I joined Powerset at roughly the&nbsp;&nbsp;
+
+00:05:32.320 --> 00:05:38.800
+same time. I was in the product team interfacing&nbsp;
+with a whole bunch of the other backend teams to&nbsp;&nbsp;
+
+00:05:38.800 --> 00:05:45.200
+try to create an interface to this exciting&nbsp;
+new tool. Fast forward about a year or so,&nbsp;&nbsp;
+
+00:05:45.200 --> 00:05:51.520
+and Luke and I decided, "Powerset has been fun,&nbsp;
+but I think it's time for us to give our own go&nbsp;&nbsp;
+
+00:05:51.520 --> 00:05:56.320
+at creating a Powerset or a startup."
+We set out to make crowdsourcing&nbsp;&nbsp;
+
+00:05:57.120 --> 00:06:01.920
+more accessible to the enterprise and people&nbsp;
+that wanted to do it to collect training data&nbsp;&nbsp;
+
+00:06:01.920 --> 00:06:08.240
+to train machine learning models. Way before&nbsp;
+machine learning was as cool as it is today.&nbsp;
+
+00:06:08.240 --> 00:06:15.360
+Yeah, fast forward about 10 years through&nbsp;
+creating a startup with Lukas, learning a lot&nbsp;&nbsp;
+
+00:06:15.360 --> 00:06:22.880
+along the way. At the time that we started&nbsp;
+Weights &amp; Biases, Luke and I's day-to-day&nbsp;&nbsp;
+
+00:06:22.880 --> 00:06:30.160
+responsibilities at the company were winding&nbsp;
+down. We were asking ourselves, "What is next?"&nbsp;
+
+00:06:30.160 --> 00:06:37.680
+I remember going to Lukas's workshop, where most&nbsp;
+of his podcasts are recorded and playing with&nbsp;&nbsp;
+
+00:06:37.680 --> 00:06:44.000
+robots. I was really into Lua for a little while&nbsp;
+there, thinking we could make a cool Lua toolkit&nbsp;&nbsp;
+
+00:06:44.880 --> 00:06:54.080
+for robots. But then it was really Lukas having an&nbsp;
+internship at OpenAI and actually building models&nbsp;&nbsp;
+
+00:06:55.520 --> 00:06:59.520
+with some of the world's most&nbsp;
+renowned machine learning researchers&nbsp;&nbsp;
+
+00:07:00.320 --> 00:07:07.280
+and needing tools to help him get his job done&nbsp;
+that was the initial itch that we were scratching.&nbsp;
+
+00:07:08.240 --> 00:07:12.880
+I love building tools. Luke's like, "Hey, I need&nbsp;
+a tool to help me build models at OpenAI." I said,&nbsp;&nbsp;
+
+00:07:12.880 --> 00:07:18.080
+"Great. Let me try to whip something up,"&nbsp;
+and just really poured myself into making&nbsp;&nbsp;
+
+00:07:18.080 --> 00:07:23.120
+a very early prototype. Then shortly&nbsp;
+thereafter, Shawn came into the picture,&nbsp;&nbsp;
+
+00:07:23.920 --> 00:07:29.360
+and I am forever grateful.
+Lukas: Awesome, man. I was getting some&nbsp;&nbsp;
+
+00:07:29.360 --> 00:07:34.560
+messages from Lavanya to pull you both back on&nbsp;
+the rails while you were talking, but I love the&nbsp;&nbsp;
+
+00:07:36.400 --> 00:07:41.600
+extended cut founding stories. I think mine is&nbsp;
+like a sentence or two. Sorry, Lavanya. Now she's&nbsp;&nbsp;
+
+00:07:41.600 --> 00:07:45.840
+texting me what the... But, no secrets here.
+Lukas: Actually, this is a good&nbsp;&nbsp;
+
+00:07:45.840 --> 00:07:49.760
+segue into another question for you.
+Shawn, you've been out on paternity leave.&nbsp;&nbsp;
+
+00:07:49.760 --> 00:07:53.680
+Chris, you've been talking to lots&nbsp;
+of customers independently from me.&nbsp;&nbsp;
+
+00:07:54.880 --> 00:08:00.000
+People keep asking me this, they're like, "What is&nbsp;
+the architecture of the Weights &amp; Biases server?"&nbsp;
+
+00:08:00.720 --> 00:08:06.960
+I try to describe it and I realize I honestly&nbsp;
+have no idea. I know there's MySQL involved&nbsp;&nbsp;
+
+00:08:06.960 --> 00:08:12.560
+and React. Can you give me the several&nbsp;
+sentence lay of the land? Say I'm an&nbsp;&nbsp;
+
+00:08:12.560 --> 00:08:16.000
+engineering candidate and I just want to know&nbsp;
+what are we using, how does it all fit together.&nbsp;
+
+00:08:16.000 --> 00:08:20.080
+Chris: Okay. All right.
+We got a single page React&nbsp;&nbsp;
+
+00:08:20.080 --> 00:08:25.520
+application that is our front end. It's just a lot&nbsp;
+of JavaScript. We load that up into the browser&nbsp;&nbsp;
+
+00:08:25.520 --> 00:08:30.880
+and then it makes requests against our GraphQL&nbsp;
+backend, which happens to be written in Golang.&nbsp;
+
+00:08:31.600 --> 00:08:38.080
+When a customer wants to run Weights &amp; Biases&nbsp;
+themselves, we actually deliver all of this — the&nbsp;&nbsp;
+
+00:08:38.080 --> 00:08:43.360
+single-page React app and the GraphQL backend API&nbsp;
+— in a single Docker container that they could run&nbsp;&nbsp;
+
+00:08:43.360 --> 00:08:50.640
+within their Kubernetes cluster or in a managed&nbsp;
+Terraform-based deployment that we support. Then&nbsp;&nbsp;
+
+00:08:50.640 --> 00:08:58.480
+the backend persistent stores are super simple.&nbsp;
+We've got MySQL and an S3-Compatible Object Store&nbsp;&nbsp;
+
+00:08:58.480 --> 00:09:04.080
+or Azure Blob storage or Google Cloud Storage.
+There's a little Redis in there, but customers&nbsp;&nbsp;
+
+00:09:04.080 --> 00:09:07.440
+generally don't have to worry about that.
+Shawn: It's nice because from early on,&nbsp;&nbsp;
+
+00:09:07.440 --> 00:09:12.960
+we knew that having the potential to go on-prem&nbsp;
+was really important for our customers because&nbsp;&nbsp;
+
+00:09:12.960 --> 00:09:17.360
+of data privacy concerns, because these&nbsp;
+datasets are so valuable and have all these&nbsp;&nbsp;
+
+00:09:17.920 --> 00:09:23.600
+other privacy concerns. We really just&nbsp;
+kept it simple to make that possible and,&nbsp;&nbsp;
+
+00:09:24.240 --> 00:09:30.240
+yeah, those were good early choices.
+Lukas: Shawn, you wrote a document at&nbsp;&nbsp;
+
+00:09:30.240 --> 00:09:36.720
+one point that was, "What it would take to be a&nbsp;
+billion-dollar business?" for Weights &amp; Biases.&nbsp;&nbsp;
+
+00:09:38.400 --> 00:09:43.040
+I thought maybe we could pull it up and&nbsp;
+compare it to what it actually took to&nbsp;&nbsp;
+
+00:09:43.040 --> 00:09:47.600
+be a billion-dollar market cap business.
+Looking at this document, how do you feel&nbsp;&nbsp;
+
+00:09:48.960 --> 00:09:52.800
+that things have played out? Has anything&nbsp;
+played out differently than you expected?&nbsp;
+
+00:09:53.840 --> 00:10:00.400
+Shawn: The core of the argument was, "We're&nbsp;
+not sure if we can build better products than&nbsp;&nbsp;
+
+00:10:00.400 --> 00:10:05.600
+everybody else in the space, but we can raise&nbsp;
+a lot of money." We know we can do that and we&nbsp;&nbsp;
+
+00:10:06.920 --> 00:10:12.720
+are well connected to lots of customers because of&nbsp;
+Lukas and Chris's background with Figure Eight. So&nbsp;&nbsp;
+
+00:10:12.720 --> 00:10:18.320
+it was very easy for us in the early days to&nbsp;
+go into a customer with very little to show.&nbsp;
+
+00:10:19.200 --> 00:10:24.240
+We had a demo of the early parts of the product&nbsp;
+and have good conversations. That's really what&nbsp;&nbsp;
+
+00:10:24.240 --> 00:10:28.880
+it takes to develop good products, is&nbsp;
+to actually interact with customers who&nbsp;&nbsp;
+
+00:10:28.880 --> 00:10:34.400
+look at the product and give you feedback on&nbsp;
+either a demo or by actually using the product.&nbsp;
+
+00:10:35.680 --> 00:10:44.800
+The argument was we should rapidly expand into&nbsp;
+the different parts of the ML pipeline in parallel&nbsp;&nbsp;
+
+00:10:45.360 --> 00:10:48.880
+and leverage those connections and the&nbsp;
+ability to raise money. We could build&nbsp;&nbsp;
+
+00:10:48.880 --> 00:10:52.720
+a team that could build products in each&nbsp;
+of these spaces. I would say we didn't&nbsp;&nbsp;
+
+00:10:52.720 --> 00:10:57.600
+quite do that. I think we still have this&nbsp;
+goal of expanding across the ML pipeline.&nbsp;
+
+00:10:58.720 --> 00:11:04.080
+This early theory that maybe we're not better,&nbsp;
+we may not be great at building products...I&nbsp;&nbsp;
+
+00:11:05.040 --> 00:11:09.760
+would say this is maybe not so humble of a&nbsp;
+statement, but I think we built something that&nbsp;&nbsp;
+
+00:11:09.760 --> 00:11:14.720
+users really love and we definitely did it by&nbsp;
+hiring great engineers and great product people&nbsp;&nbsp;
+
+00:11:14.720 --> 00:11:18.640
+and by talking to these customers a ton&nbsp;
+and spending lots and lots of time and just&nbsp;&nbsp;
+
+00:11:18.640 --> 00:11:22.880
+having this relentless customer focus.
+But I also think that somehow at core,&nbsp;&nbsp;
+
+00:11:22.880 --> 00:11:28.640
+there's this magic somewhere in what we're&nbsp;
+doing at W&amp;B and that we do understand the space&nbsp;&nbsp;
+
+00:11:28.640 --> 00:11:34.160
+and the customers and we turn that money and&nbsp;
+customer connection into great products. So&nbsp;&nbsp;
+
+00:11:34.960 --> 00:11:38.560
+back then, I was thinking, "Well, we have great&nbsp;
+products," and looking back now, I feel like we&nbsp;&nbsp;
+
+00:11:38.560 --> 00:11:43.360
+really do. That's really been a cool journey.
+Lukas: All right. I have a question for&nbsp;&nbsp;
+
+00:11:43.920 --> 00:11:49.680
+both of you I was wondering about. Was there&nbsp;
+a moment where you felt like the business was&nbsp;&nbsp;
+
+00:11:49.680 --> 00:11:54.000
+really working or the company was really working?&nbsp;
+Can you think of a time when you really suddenly&nbsp;&nbsp;
+
+00:11:55.120 --> 00:12:02.160
+felt like that or not? If so, what time was it?
+Chris: I think there's a couple times, but one&nbsp;&nbsp;
+
+00:12:02.160 --> 00:12:10.240
+that really stands out for me is driving down to&nbsp;
+Palo Alto or Mountain View or wherever we were&nbsp;&nbsp;
+
+00:12:10.240 --> 00:12:14.560
+meeting, and one of our first deals&nbsp;
+was with Toyota Research Institute.&nbsp;
+
+00:12:15.520 --> 00:12:19.440
+I remember sitting out. I had&nbsp;
+grabbed lunch with Ari, our&nbsp;&nbsp;
+
+00:12:20.480 --> 00:12:25.600
+first Account Executive. I grabbed lunch. We knew&nbsp;
+we were going to go into this meeting and present&nbsp;&nbsp;
+
+00:12:26.480 --> 00:12:31.920
+the number that we were going to sell&nbsp;
+our software for. I had this thought of,&nbsp;&nbsp;
+
+00:12:33.520 --> 00:12:40.240
+"This moment is really important."
+It's scary. When you're brand new, you don't have&nbsp;&nbsp;
+
+00:12:40.240 --> 00:12:44.000
+many other customers and you go and you say, "Hey,&nbsp;
+we want to charge this much for our software,"&nbsp;&nbsp;
+
+00:12:44.880 --> 00:12:52.560
+I felt like this is make-or-break. We went in. The&nbsp;
+meeting went really well and we ended up closing.&nbsp;&nbsp;
+
+00:12:52.560 --> 00:12:56.400
+TRI is one of our first customers,&nbsp;
+which is great. But after that, I mean,&nbsp;&nbsp;
+
+00:12:57.040 --> 00:13:03.200
+I wasn't like, "Okay, now we're set. Next week,&nbsp;
+we can get to a billion dollar valuation," but&nbsp;&nbsp;
+
+00:13:04.800 --> 00:13:11.120
+that first customer was really big.
+Shawn: Yeah, that was a big one. As a founder,&nbsp;&nbsp;
+
+00:13:11.120 --> 00:13:17.360
+or probably anybody at an early stage startup,&nbsp;
+you say, "Oh, if we can just do this one thing,&nbsp;&nbsp;
+
+00:13:17.360 --> 00:13:23.040
+then we'll be sure that we made it." Then the next&nbsp;
+week, you're back to work, and you have to grow&nbsp;&nbsp;
+
+00:13:23.040 --> 00:13:30.640
+some more, and you're always looking at the next&nbsp;
+thing. But that first customer was a great one.&nbsp;
+
+00:13:30.640 --> 00:13:36.640
+I think for me, what comes to mind is — I think&nbsp;
+this was maybe around the holidays two years&nbsp;&nbsp;
+
+00:13:36.640 --> 00:13:44.160
+ago — in the earlier stages, even up to, say,&nbsp;
+15, 20 people in the company, you kind of have a&nbsp;&nbsp;
+
+00:13:44.160 --> 00:13:49.360
+pretty good sense of everything that's happening.
+Every deal, I remember being a part of in some&nbsp;&nbsp;
+
+00:13:49.360 --> 00:13:54.080
+form. But there was a moment around the holidays&nbsp;
+a couple years ago where we have these Friday&nbsp;&nbsp;
+
+00:13:54.080 --> 00:13:58.640
+meetings where we get together and talk about&nbsp;
+how the week went. It's everybody at the company&nbsp;&nbsp;
+
+00:13:58.640 --> 00:14:03.120
+and somebody says something great that they did.
+In that particular meeting, I just remember&nbsp;&nbsp;
+
+00:14:03.120 --> 00:14:08.240
+there was somebody on the sales team who had made&nbsp;
+another sale to a customer I had never talked to.&nbsp;&nbsp;
+
+00:14:08.240 --> 00:14:12.400
+Somebody in the growth team that had found&nbsp;
+a new growth experiment to do and executed&nbsp;&nbsp;
+
+00:14:12.400 --> 00:14:17.040
+it and actually made numbers change. Somebody&nbsp;
+in the product team that had done something&nbsp;&nbsp;
+
+00:14:17.040 --> 00:14:20.880
+that I didn't even know they were doing.
+All of those things came together&nbsp;&nbsp;
+
+00:14:20.880 --> 00:14:24.240
+in one meeting for me. That's when&nbsp;
+I felt like, "Wow, this company is&nbsp;&nbsp;
+
+00:14:24.240 --> 00:14:30.720
+a lot more than...I can't wrap my arms around it&nbsp;
+and push everything forward anymore. There is all&nbsp;&nbsp;
+
+00:14:30.720 --> 00:14:39.280
+these great people around me that are doing that."
+That is an amazing feeling because from there,&nbsp;&nbsp;
+
+00:14:39.280 --> 00:14:44.320
+you add more and more great people and the&nbsp;
+company continues to go in a good direction.&nbsp;&nbsp;
+
+00:14:46.000 --> 00:14:48.520
+It's bigger than yourself.
+Lukas:&nbsp;&nbsp;
+
+00:14:49.760 --> 00:14:53.120
+Another question I had for both&nbsp;
+of you is, is there a favorite&nbsp;&nbsp;
+
+00:14:54.000 --> 00:14:59.360
+feature in the product that you feel really proud&nbsp;
+of or some way that the product works that you&nbsp;&nbsp;
+
+00:15:01.520 --> 00:15:03.920
+feel like is uniquely great?
+Chris: For me, it's got to be the&nbsp;&nbsp;
+
+00:15:03.920 --> 00:15:08.000
+command line interface. I think it's a very&nbsp;
+under-appreciated interface to our product.&nbsp;&nbsp;
+
+00:15:09.360 --> 00:15:15.760
+In the early days, I spent an obsessive amount&nbsp;
+of time on making a whole bunch of command line&nbsp;&nbsp;
+
+00:15:16.320 --> 00:15:20.480
+commands and making it work nicely in&nbsp;
+Unix. I was piping stuff at one point.&nbsp;&nbsp;
+
+00:15:22.480 --> 00:15:26.400
+I think we've since decided that's not the way&nbsp;
+most people want to interact with our product,&nbsp;&nbsp;
+
+00:15:26.400 --> 00:15:30.720
+but as a Unix nerd, that's&nbsp;
+my favorite part for sure.&nbsp;
+
+00:15:32.680 --> 00:15:41.120
+Shawn: Maybe something that people&nbsp;
+don't really see is, there is this&nbsp;&nbsp;
+
+00:15:41.120 --> 00:15:47.040
+layer in the frontend that we made. In W&amp;B, you've&nbsp;
+got all these different charts on the screen.&nbsp;&nbsp;
+
+00:15:47.680 --> 00:15:51.840
+The architecture of the frontend is that each&nbsp;
+chart can individually make its own network&nbsp;&nbsp;
+
+00:15:51.840 --> 00:15:56.240
+request to get the data that it needs to show.
+Those are actually heavy requests because there's&nbsp;&nbsp;
+
+00:15:56.240 --> 00:16:00.320
+millions of data points sometimes if you've&nbsp;
+logged a lot of data. So we built this cool&nbsp;&nbsp;
+
+00:16:00.320 --> 00:16:04.720
+layer in the frontend, it's like a middleware&nbsp;
+that watches all of the requests going out.&nbsp;&nbsp;
+
+00:16:05.520 --> 00:16:09.280
+It aggregates them all together so it has a little&nbsp;
+time delay. It says, "Give me all the requests&nbsp;&nbsp;
+
+00:16:09.280 --> 00:16:14.720
+that happened in the last hundred milliseconds."
+It does lots of cool handwritten optimizations&nbsp;&nbsp;
+
+00:16:14.720 --> 00:16:19.360
+to figure out how to merge certain kinds of&nbsp;
+queries together and get all the results at&nbsp;&nbsp;
+
+00:16:19.360 --> 00:16:23.280
+once in a single request and then give that&nbsp;
+back to the user. A lot of users, you have no&nbsp;&nbsp;
+
+00:16:23.280 --> 00:16:29.280
+idea that's going on, but when you're building&nbsp;
+UIs, you really want it to be snappy and fast.&nbsp;
+
+00:16:29.280 --> 00:16:33.040
+I hope that I'm not shooting myself in the&nbsp;
+foot. I'm sure somebody will have a story of&nbsp;&nbsp;
+
+00:16:33.040 --> 00:16:37.280
+Weights &amp; Biases not being snappy and fast. If&nbsp;
+you do, send it my way and we'll get it fixed.&nbsp;
+
+00:16:38.400 --> 00:16:42.720
+But there is this massive amount of engineering&nbsp;
+effort that went into that chunk of code&nbsp;&nbsp;
+
+00:16:42.720 --> 00:16:45.600
+to make sure that charts with&nbsp;
+millions of data points all on&nbsp;&nbsp;
+
+00:16:45.600 --> 00:16:51.280
+the screen at once can be updated really quickly.
+Lukas: Just so people don't think I'm only asking&nbsp;&nbsp;
+
+00:16:51.280 --> 00:16:55.680
+softball questions here, this is something that a&nbsp;
+couple of candidates have asked me about recently.&nbsp;&nbsp;
+
+00:16:55.680 --> 00:17:02.640
+Have there been product or engineering efforts&nbsp;
+that we would do a lot differently in hindsight?&nbsp;
+
+00:17:02.640 --> 00:17:06.960
+Chris: I mean, I've got one that&nbsp;
+isn't bad, so it's not fair.&nbsp;
+
+00:17:06.960 --> 00:17:13.440
+When we first started the company, I wrote the&nbsp;
+backend in Python. It was Python 2.0 because&nbsp;&nbsp;
+
+00:17:13.440 --> 00:17:19.120
+I wanted to use Google App Engine to start things&nbsp;
+up so I didn't have to do a bunch of DevOps stuff.&nbsp;&nbsp;
+
+00:17:20.800 --> 00:17:23.840
+That quickly stopped scaling, especially&nbsp;
+because we have a GraphQL backend where&nbsp;&nbsp;
+
+00:17:23.840 --> 00:17:28.880
+things need to happen in parallel.
+Our first engineer Tom actually&nbsp;&nbsp;
+
+00:17:30.080 --> 00:17:36.000
+rewrote that entire backend in GoLang. When you&nbsp;
+do a big rewrite like that...we already had TRI&nbsp;&nbsp;
+
+00:17:36.000 --> 00:17:41.120
+as a customer, OpenAI was a heavy user. We had&nbsp;
+to keep the site up while this was happening.&nbsp;&nbsp;
+
+00:17:41.840 --> 00:17:46.960
+Usually those kinds of exercises can&nbsp;
+go sideways. You can start to take&nbsp;&nbsp;
+
+00:17:46.960 --> 00:17:51.040
+way longer than you would have anticipated or&nbsp;
+the ultimate project wouldn't have worked out.&nbsp;
+
+00:17:51.040 --> 00:17:54.560
+That was an example where Tom actually&nbsp;
+got the project done ahead of time&nbsp;&nbsp;
+
+00:17:55.200 --> 00:18:01.200
+and we're still running pretty much the&nbsp;
+same backend code to scale up to the tens of&nbsp;&nbsp;
+
+00:18:01.200 --> 00:18:08.320
+thousands of users that we have every day now.
+It's not a decision I would go back and say,&nbsp;&nbsp;
+
+00:18:08.320 --> 00:18:14.000
+"Not do." Now that I had a good experience doing&nbsp;
+a rewrite, I certainly wouldn't say we always do&nbsp;&nbsp;
+
+00:18:14.000 --> 00:18:19.760
+a rewrite, but you don't hear it often, our choice&nbsp;
+to do the rewrite was definitely the right choice&nbsp;&nbsp;
+
+00:18:19.760 --> 00:18:22.480
+and it worked out really well.
+Lukas: What customer&nbsp;&nbsp;
+
+00:18:22.480 --> 00:18:28.480
+feedback has surprised you the most?
+Shawn: I have an example from early on when we&nbsp;&nbsp;
+
+00:18:28.480 --> 00:18:35.680
+started the company, which was...the very first&nbsp;
+version of Weights &amp; Biases was more of a command&nbsp;&nbsp;
+
+00:18:35.680 --> 00:18:42.240
+line tool around saving data. There was a little&nbsp;
+bit of UI. Chris had built this Python library&nbsp;&nbsp;
+
+00:18:42.240 --> 00:18:49.280
+and this UI. The UI was essentially, what it did&nbsp;
+was it let you log in and set up a place to store&nbsp;&nbsp;
+
+00:18:49.280 --> 00:18:53.040
+the data that the command line tool was saving.&nbsp;
+But it didn't do a whole lot more than that.&nbsp;
+
+00:18:54.160 --> 00:18:58.800
+I remember Chris added a feature that would&nbsp;
+just kind of...it also collected the outputs&nbsp;&nbsp;
+
+00:18:58.800 --> 00:19:05.360
+of your training runs, like the logs. Chris added&nbsp;
+a feature that would look for the specific Keras&nbsp;&nbsp;
+
+00:19:06.240 --> 00:19:09.840
+metrics that it printed over time and&nbsp;
+he just made a line chart of that.&nbsp;
+
+00:19:10.560 --> 00:19:14.080
+Of course, early on in the startup, what&nbsp;
+you do is you have a demo or a thing that&nbsp;&nbsp;
+
+00:19:14.080 --> 00:19:17.840
+works you go to customers and you show it&nbsp;
+to them. All the customers were like, "Yeah,&nbsp;&nbsp;
+
+00:19:17.840 --> 00:19:23.120
+command line tool. Okay, okay. But what's that&nbsp;
+chart?" They would really focus on that chart.&nbsp;
+
+00:19:23.120 --> 00:19:27.040
+The reason it was surprising to me is because&nbsp;
+these are programmers and data scientists and&nbsp;&nbsp;
+
+00:19:27.040 --> 00:19:33.840
+people who are really comfortable in Matplotlib&nbsp;
+and Jupyter notebooks. A thesis you might have is,&nbsp;&nbsp;
+
+00:19:33.840 --> 00:19:38.560
+well, data scientists don't need a tool to create&nbsp;
+a bunch of charts in their browser because their&nbsp;&nbsp;
+
+00:19:38.560 --> 00:19:42.320
+use cases are going to be so different and&nbsp;
+they're just comfortable doing it themselves.&nbsp;
+
+00:19:43.120 --> 00:19:46.320
+It was really a big surprise to me that&nbsp;
+that was the main thing people focused on.&nbsp;
+
+00:19:47.200 --> 00:19:52.240
+We saw that and we said, "Well, let's follow what&nbsp;
+users want," and we did that. We kept building&nbsp;&nbsp;
+
+00:19:52.240 --> 00:19:57.760
+the UI and making it better and better, and we&nbsp;
+were able now to have a generic UI that solves&nbsp;&nbsp;
+
+00:19:57.760 --> 00:20:00.960
+lots of different kinds of use cases.&nbsp;
+But it was surprising that that&nbsp;&nbsp;
+
+00:20:00.960 --> 00:20:04.480
+would be possible for this kind of user.
+Lukas: That's a good founding story right there.&nbsp;&nbsp;
+
+00:20:05.200 --> 00:20:11.440
+Chris, what about you?
+Chris: The most notable user feedback that is&nbsp;&nbsp;
+
+00:20:11.440 --> 00:20:19.280
+top of mind is an early user, Hamel at GitHub, was&nbsp;
+a heavy user of the tool. I remember one night,&nbsp;&nbsp;
+
+00:20:19.280 --> 00:20:25.280
+Hamel wrote in and said, "Hey, we really want&nbsp;
+to log HTML," and we were actually able to ship&nbsp;&nbsp;
+
+00:20:26.240 --> 00:20:33.680
+that feature in that same night,&nbsp;
+which was delighting to Hamel.&nbsp;
+
+00:20:33.680 --> 00:20:39.440
+But Hamel was also...he did not hold&nbsp;
+back in telling us where we were not&nbsp;&nbsp;
+
+00:20:40.320 --> 00:20:46.640
+being excellent in the UI and was very&nbsp;
+honest about some pretty serious issues&nbsp;&nbsp;
+
+00:20:46.640 --> 00:20:50.880
+with the system at the time. I remember it&nbsp;
+breaking my heart as a founder. Like here,&nbsp;&nbsp;
+
+00:20:50.880 --> 00:20:57.040
+I've got someone who is engaged and excited about&nbsp;
+us, but he's getting frustrated by using our tool.&nbsp;&nbsp;
+
+00:20:57.600 --> 00:21:06.640
+It's the worst possible thing I could imagine.
+The team really focused and did a lot of hard&nbsp;&nbsp;
+
+00:21:06.640 --> 00:21:14.320
+work to redesign and re-engineer a lot of the&nbsp;
+problem interfaces that Hamel was running into and&nbsp;&nbsp;
+
+00:21:14.320 --> 00:21:17.040
+ultimately I think it really&nbsp;
+helped us make a better product.&nbsp;
+
+00:21:17.600 --> 00:21:23.840
+Lukas: How do you think the last four and a&nbsp;
+half years of running this kind of hyper-growth&nbsp;&nbsp;
+
+00:21:23.840 --> 00:21:27.360
+startup has changed you as a person or&nbsp;
+changed your perspective on the world?&nbsp;
+
+00:21:27.360 --> 00:21:32.240
+Chris: I remember when we first started the&nbsp;
+company, after Luke and I had been working at&nbsp;&nbsp;
+
+00:21:32.240 --> 00:21:39.600
+CrowdFlower for 10-plus years. I was just so&nbsp;
+excited to have a blank canvas. It was like,&nbsp;&nbsp;
+
+00:21:39.600 --> 00:21:47.200
+"We can start fresh." There is nothing legacy&nbsp;
+we need to support. It's just green fields.&nbsp;
+
+00:21:48.400 --> 00:21:55.440
+I tend to think of the company stuff,&nbsp;
+the process and the management,&nbsp;&nbsp;
+
+00:21:55.440 --> 00:22:01.840
+and all of the things that you need to do to&nbsp;
+make a company work, historically that didn't&nbsp;&nbsp;
+
+00:22:02.480 --> 00:22:08.160
+interest me that much. I think something has&nbsp;
+changed, especially with this company. Now I&nbsp;&nbsp;
+
+00:22:08.160 --> 00:22:14.560
+find those things more interesting.
+Being able to step away from just&nbsp;&nbsp;
+
+00:22:14.560 --> 00:22:20.960
+hacking all the time and actually think about,&nbsp;
+"Okay, how do we build a culture and how do we&nbsp;&nbsp;
+
+00:22:21.520 --> 00:22:28.640
+mentor and work with the team to ultimately&nbsp;
+build a better product?" I think those problems&nbsp;&nbsp;
+
+00:22:28.640 --> 00:22:34.240
+are much more interesting for me this time around&nbsp;
+than they were when we were running CrowdFlower.&nbsp;
+
+00:22:35.120 --> 00:22:40.480
+Lukas: Another question I had is, what do you&nbsp;
+think has changed around us as we've been running&nbsp;&nbsp;
+
+00:22:41.760 --> 00:22:45.200
+this company? Do you feel like&nbsp;
+customers are different now?&nbsp;&nbsp;
+
+00:22:45.760 --> 00:22:53.760
+Do you feel like the industry is different at all?
+Shawn: We started the company a year or two within&nbsp;&nbsp;
+
+00:22:53.760 --> 00:23:00.640
+when deep learning was first...when AlexNet was&nbsp;
+first trained or when AlexNet actually showed&nbsp;&nbsp;
+
+00:23:00.640 --> 00:23:06.640
+real results. We really focused on deep learning.&nbsp;
+I mean, one of our first customers was OpenAI.&nbsp;&nbsp;
+
+00:23:06.640 --> 00:23:11.280
+That's well-known. They're still a great customer&nbsp;
+of ours and we spend a lot of time building things&nbsp;&nbsp;
+
+00:23:12.080 --> 00:23:19.440
+that were tailored to OpenAI use cases.
+When you start a company, it's good to&nbsp;&nbsp;
+
+00:23:19.440 --> 00:23:23.840
+make a bet on what you think a growing market&nbsp;
+will be because you don't want to go into...you&nbsp;&nbsp;
+
+00:23:23.840 --> 00:23:27.280
+can do this, but you don't necessarily&nbsp;
+want to go into a big established market&nbsp;&nbsp;
+
+00:23:27.280 --> 00:23:32.240
+and just fight with Google and Amazon. It's better&nbsp;
+to focus maybe on something that's smaller and&nbsp;&nbsp;
+
+00:23:32.240 --> 00:23:36.320
+they won't spend all their resources fighting&nbsp;
+you on, and then the market grows to the point&nbsp;&nbsp;
+
+00:23:37.120 --> 00:23:40.720
+along with you where all of a sudden,&nbsp;
+you're this billion-dollar company.&nbsp;
+
+00:23:42.960 --> 00:23:47.440
+You can't just do that. There's some amount&nbsp;
+of luck, for sure. We had very good timing in&nbsp;&nbsp;
+
+00:23:48.240 --> 00:23:53.920
+starting Weights &amp; Biases. That's a really cool&nbsp;
+feeling and it's really cool to ride that trend.&nbsp;
+
+00:23:54.800 --> 00:24:00.480
+In doing that, what we've seen is deep learning&nbsp;
+really took off. I mean, it's applied in every&nbsp;&nbsp;
+
+00:24:00.480 --> 00:24:06.720
+vertical now. Every company has at least a few&nbsp;
+people who are building deep learning models now.&nbsp;&nbsp;
+
+00:24:06.720 --> 00:24:10.240
+Those teams are constantly growing&nbsp;
+and we see that in the way that&nbsp;&nbsp;
+
+00:24:10.240 --> 00:24:16.560
+our contracts grow with our customers.
+We sort of bet that that would happen,&nbsp;&nbsp;
+
+00:24:16.560 --> 00:24:20.800
+but to see it actually happen and to be able to&nbsp;
+ride that trend, there is no way to really feel&nbsp;&nbsp;
+
+00:24:20.800 --> 00:24:24.560
+what exponential growth is until you're in the&nbsp;
+middle of it, and that's what it feels like.&nbsp;
+
+00:24:24.560 --> 00:24:33.760
+Chris: I remember one moment early in the company&nbsp;
+that stands out. We had presented to OpenAI, to a&nbsp;&nbsp;
+
+00:24:33.760 --> 00:24:39.680
+group of researchers. I remember I was presenting&nbsp;
+and half the audience was just looking at their&nbsp;&nbsp;
+
+00:24:39.680 --> 00:24:49.760
+laptops. I left that meeting feeling like no one&nbsp;
+cares. Then a week later, Woj calls us up and he&nbsp;&nbsp;
+
+00:24:49.760 --> 00:24:56.400
+says, "Hey, we got this problem on the robotics&nbsp;
+team. Come check this out. Can you help us out?"&nbsp;
+
+00:24:57.040 --> 00:25:00.480
+We go, look, and I remember going there&nbsp;
+with Shawn. Both Shawn and I are looking&nbsp;&nbsp;
+
+00:25:00.480 --> 00:25:05.760
+at it and we're excited, right? Because we&nbsp;
+can solve the problem. They're telling us&nbsp;&nbsp;
+
+00:25:05.760 --> 00:25:12.320
+they have a problem and they want us to fix it.
+After that, Shawn and I, we pulled an all-nighter&nbsp;&nbsp;
+
+00:25:13.440 --> 00:25:18.880
+just cranking out the interface that they&nbsp;
+wanted and got it to them within a couple days.&nbsp;&nbsp;
+
+00:25:20.080 --> 00:25:23.680
+I remember thinking, "How precious&nbsp;
+is this relationship with OpenAI,&nbsp;&nbsp;
+
+00:25:23.680 --> 00:25:29.440
+this institution that I really, really admire?"
+Also, that same feeling that Shawn described of&nbsp;&nbsp;
+
+00:25:29.440 --> 00:25:34.000
+some users saying, "Hey, I have this&nbsp;
+problem," and we had the power to go back&nbsp;&nbsp;
+
+00:25:34.000 --> 00:25:37.520
+and actually fix that problem for them.
+Lukas: Do you remember the afternoon&nbsp;&nbsp;
+
+00:25:37.520 --> 00:25:41.840
+when they turned on Weights &amp; Biases?
+Shawn: That was another all-nighter.&nbsp;
+
+00:25:41.840 --> 00:25:45.040
+Chris: Yeah, it turns out there was&nbsp;
+some performance problems with my&nbsp;&nbsp;
+
+00:25:45.040 --> 00:25:47.920
+Python backend if I'm recalling correctly.
+Shawn: Well, there were a couple things.&nbsp;&nbsp;
+
+00:25:49.840 --> 00:25:54.240
+We did not anticipate OpenAI's scale, because&nbsp;
+we're doing the thing that you do as a startup,&nbsp;&nbsp;
+
+00:25:54.240 --> 00:25:59.760
+which is you make an MVP. It doesn't really need&nbsp;
+to scale. But it turns out our very first customer&nbsp;&nbsp;
+
+00:25:59.760 --> 00:26:02.320
+was one of the largest-scale&nbsp;
+customers we could have.&nbsp;
+
+00:26:06.880 --> 00:26:11.840
+They were the first person who integrated Weights&nbsp;
+&amp; Biases into this library that they had that&nbsp;&nbsp;
+
+00:26:11.840 --> 00:26:15.520
+everybody on their robotics team was using&nbsp;
+to run training code. As soon as they&nbsp;&nbsp;
+
+00:26:15.520 --> 00:26:20.320
+committed that to production, they started&nbsp;
+sending us a ton of traffic. The site just&nbsp;&nbsp;
+
+00:26:20.320 --> 00:26:23.840
+immediately went down because it's&nbsp;
+this cobbled together startup website.&nbsp;
+
+00:26:24.560 --> 00:26:29.440
+Actually, the first problem was there&nbsp;
+was some API limit that we hit on Google&nbsp;&nbsp;
+
+00:26:29.440 --> 00:26:33.760
+because of the way we were making a specific&nbsp;
+request. Chris might remember what it was.&nbsp;&nbsp;
+
+00:26:34.800 --> 00:26:39.040
+There was no resolution. You can't just call&nbsp;
+Google and get them to immediately change a&nbsp;&nbsp;
+
+00:26:39.040 --> 00:26:43.200
+limit for you. You actually have to wait for a&nbsp;
+support case to go through for a number of hours.&nbsp;
+
+00:26:43.200 --> 00:26:48.160
+Of course, now, maybe we're a big enough customer&nbsp;
+of Google that we could have some influence,&nbsp;&nbsp;
+
+00:26:48.160 --> 00:26:51.360
+but back then, we were just this little startup&nbsp;
+and we can't go, "But it's our first customer."&nbsp;&nbsp;
+
+00:26:51.360 --> 00:26:57.520
+That doesn't really sway anyone over there.
+I don't remember how we worked around on that.&nbsp;&nbsp;
+
+00:26:57.520 --> 00:27:02.480
+Do you remember? Did we just wait?
+Chris: We had very smartly designed the&nbsp;&nbsp;
+
+00:27:04.160 --> 00:27:11.280
+Python library to back off when things&nbsp;
+started failing, so I think the quota&nbsp;&nbsp;
+
+00:27:11.280 --> 00:27:18.560
+resolution got resolved within the retry timeout.
+Shawn: That was one problem. Then later in that&nbsp;&nbsp;
+
+00:27:18.560 --> 00:27:22.000
+evening, of course, we're pumped because we&nbsp;
+have all this data coming, and it's OpenAI,&nbsp;&nbsp;
+
+00:27:22.000 --> 00:27:26.240
+and it's our first customer.
+Some other problem cropped up.&nbsp;
+
+00:27:26.240 --> 00:27:29.680
+Again, you might remember this, but&nbsp;
+it was something where Chris and I,&nbsp;&nbsp;
+
+00:27:29.680 --> 00:27:35.520
+we were up until 5:00 AM that night and Chris was&nbsp;
+live patching our app engine code. It was Google&nbsp;&nbsp;
+
+00:27:35.520 --> 00:27:40.800
+App Engine at the time, which is this Python&nbsp;
+auto-scaling platform that's not used as much now.&nbsp;
+
+00:27:42.320 --> 00:27:45.280
+I remember, yeah, we came up with a plan&nbsp;
+and we live patched the thing. I was like,&nbsp;&nbsp;
+
+00:27:45.840 --> 00:27:49.840
+"Is this going to work?" It did and the traffic&nbsp;
+started coming in clean and we could see all the&nbsp;&nbsp;
+
+00:27:49.840 --> 00:27:55.040
+data. We were so proud to have our first customer.
+Then, of course, the next morning, we went to talk&nbsp;&nbsp;
+
+00:27:55.040 --> 00:27:58.080
+to OpenAI and they didn't even notice&nbsp;
+the hiccup. They were like, "Oh, yeah,&nbsp;&nbsp;
+
+00:27:58.080 --> 00:28:03.760
+cool. Thanks." But, I mean, really, it was working&nbsp;
+when we went to have that conversation and they&nbsp;&nbsp;
+
+00:28:03.760 --> 00:28:07.680
+started looking at the sort of charts that&nbsp;
+we had and started giving us that feedback.&nbsp;&nbsp;
+
+00:28:07.680 --> 00:28:12.480
+That's when we got into the feedback cycle.
+It's important. In the early days, if you&nbsp;&nbsp;
+
+00:28:12.480 --> 00:28:18.000
+have any customer at all and they have a problem,&nbsp;
+stay up all night and solve their problem. Even&nbsp;&nbsp;
+
+00:28:18.000 --> 00:28:23.280
+if they don't notice it, it's worth it for you to&nbsp;
+start getting that great customer feedback loop.&nbsp;
+
+00:28:23.280 --> 00:28:26.560
+Lukas: What were your darkest&nbsp;
+moments, specifically?&nbsp;
+
+00:28:28.080 --> 00:28:34.080
+Chris: Early on when it was me&nbsp;
+and Ari, that was the sales team.&nbsp;&nbsp;
+
+00:28:37.280 --> 00:28:39.360
+This was before the pandemic, so we would fly&nbsp;&nbsp;
+
+00:28:41.280 --> 00:28:48.720
+wherever we needed to fly to. Some might&nbsp;
+think, "Oh, you get to fly to Toronto?&nbsp;&nbsp;
+
+00:28:49.360 --> 00:28:54.640
+That's got to be great." It's not great.
+You fly and then you go to some hotel and&nbsp;&nbsp;
+
+00:28:54.640 --> 00:29:00.000
+then you go to a meeting where you're just&nbsp;
+trying to get people to engage with you&nbsp;&nbsp;
+
+00:29:00.000 --> 00:29:05.360
+and learn about the product. There were a couple&nbsp;
+months there very early on where I felt like,&nbsp;&nbsp;
+
+00:29:06.880 --> 00:29:11.920
+"We can't charge enough for the product,&nbsp;
+people don't see it as being valuable enough."&nbsp;
+
+00:29:11.920 --> 00:29:18.080
+It can be very demoralizing, especially when&nbsp;
+you're out there on the front lines of sales&nbsp;&nbsp;
+
+00:29:18.800 --> 00:29:26.800
+and trying to educate and teach people about these&nbsp;
+concepts that are literally being created as we're&nbsp;&nbsp;
+
+00:29:26.800 --> 00:29:29.040
+iterating on the product.
+Shawn: I think&nbsp;&nbsp;
+
+00:29:31.120 --> 00:29:33.600
+a dark moment for me is — we&nbsp;
+already talked about this — but&nbsp;&nbsp;
+
+00:29:34.720 --> 00:29:39.120
+when we were first trying to sell to GitHub,&nbsp;
+we had this user, Hamel, who we talked about&nbsp;&nbsp;
+
+00:29:39.120 --> 00:29:45.760
+earlier. He gave us very direct feedback about&nbsp;
+how our product sucked. He was totally right.&nbsp;
+
+00:29:47.760 --> 00:29:54.160
+I love building this product and even now, it's&nbsp;
+hard. I'll take it personally for sure. Even&nbsp;&nbsp;
+
+00:29:54.160 --> 00:29:58.320
+though I know that some of the decisions are bad&nbsp;
+or there's lots of things that could be improved.&nbsp;&nbsp;
+
+00:29:58.320 --> 00:30:02.240
+When somebody calls it out, it definitely&nbsp;
+hurts. But we really want that feedback.&nbsp;
+
+00:30:03.360 --> 00:30:08.640
+I'm happy to go through that rollercoaster&nbsp;
+of emotions to make a better product.&nbsp;&nbsp;
+
+00:30:09.360 --> 00:30:13.280
+Really, that feedback led Weights&nbsp;
+&amp; Biases to the place it is today.&nbsp;
+
+00:30:15.920 --> 00:30:20.640
+You have to be willing to accept there is lots of&nbsp;
+bad things. We want to know what they are. We made&nbsp;&nbsp;
+
+00:30:20.640 --> 00:30:25.440
+those decisions. It's my fault. It's Chris' fault.&nbsp;
+It's probably Lukas' fault and Lavanya's fault to&nbsp;&nbsp;
+
+00:30:25.440 --> 00:30:33.120
+some extent. We can always improve stuff.
+You take those gut punches in stride and&nbsp;&nbsp;
+
+00:30:33.120 --> 00:30:35.520
+keep making it better.
+Lukas: I have this memory — I&nbsp;&nbsp;
+
+00:30:35.520 --> 00:30:41.440
+wonder if this is an accurate memory or you see&nbsp;
+it the same way — but I remember thinking of&nbsp;&nbsp;
+
+00:30:41.440 --> 00:30:47.360
+making experiment tracking and doing an offsite&nbsp;
+where we really built something super custom for&nbsp;&nbsp;
+
+00:30:48.080 --> 00:30:55.680
+TRI, and then going there and showing them a beta&nbsp;
+of the experiment tracking stuff that we built&nbsp;&nbsp;
+
+00:30:55.680 --> 00:31:00.720
+and having them basically tell us this&nbsp;
+isn't that interesting and that feeling bad.&nbsp;
+
+00:31:00.720 --> 00:31:05.120
+Then I have this memory of talking to you, Shawn,&nbsp;
+and I think you were like, "I don't think anyone&nbsp;&nbsp;
+
+00:31:05.120 --> 00:31:08.960
+will pay for experiment tracking." I was kind&nbsp;
+of thinking, "Yeah, you're probably right."&nbsp;&nbsp;
+
+00:31:08.960 --> 00:31:12.800
+Then I remember talking to you, I was like,&nbsp;
+"I just need to tell you that I need you to be&nbsp;&nbsp;
+
+00:31:12.800 --> 00:31:17.200
+more positive," which is so funny because I feel&nbsp;
+like actually you're almost always the optimist.&nbsp;
+
+00:31:18.480 --> 00:31:21.760
+I remember at least thinking to myself, "What&nbsp;
+I need to communicate is I just need you to&nbsp;&nbsp;
+
+00:31:21.760 --> 00:31:27.360
+be positive even if it's not rational to be&nbsp;
+positive here because I'm feeling a lot of doubt&nbsp;&nbsp;
+
+00:31:27.360 --> 00:31:30.400
+myself." Is that an accurate memory?
+Shawn: Yeah, yeah. I remember. I remember&nbsp;&nbsp;
+
+00:31:30.400 --> 00:31:35.360
+that. That was before we had that user, that&nbsp;
+first user who was actually using the thing,&nbsp;&nbsp;
+
+00:31:35.360 --> 00:31:39.280
+and we felt like they were getting value.
+We kept saying, "What if we build this&nbsp;&nbsp;
+
+00:31:39.280 --> 00:31:42.000
+other thing? Will that get us a user? What&nbsp;
+if we build this other thing?" We did that&nbsp;&nbsp;
+
+00:31:42.720 --> 00:31:49.280
+for a number of months. It was the early stages&nbsp;
+of the startup. That was disheartening because&nbsp;&nbsp;
+
+00:31:49.280 --> 00:31:53.520
+it's like, okay, if we could build this other&nbsp;
+feature tomorrow, but nobody's going to care.&nbsp;&nbsp;
+
+00:31:53.520 --> 00:31:57.680
+That was kind of the mindset I was getting&nbsp;
+into and you were rightfully calling me out on,&nbsp;&nbsp;
+
+00:31:58.240 --> 00:32:02.800
+well, this is the early stage of a startup, so&nbsp;
+let's make the next thing until we have that user.&nbsp;
+
+00:32:05.120 --> 00:32:10.000
+It was getting that first user who&nbsp;
+broke that off. From there, it was,&nbsp;&nbsp;
+
+00:32:11.280 --> 00:32:16.240
+"Hey, I just need this one little tweak. Great,&nbsp;
+we'll do it," and it was all positive. Maybe not&nbsp;&nbsp;
+
+00:32:16.240 --> 00:32:21.600
+all positive, but more positive from there.
+Chris: All right, Luke. If there are&nbsp;&nbsp;
+
+00:32:23.600 --> 00:32:26.800
+other entrepreneurs listening to the podcast&nbsp;&nbsp;
+
+00:32:27.760 --> 00:32:37.680
+and wanting to build a startup that achieves&nbsp;
+a billion-dollar valuation, what advice as a&nbsp;&nbsp;
+
+00:32:38.880 --> 00:32:41.680
+startup CEO would you give them?
+Lukas: I feel like the advice&nbsp;&nbsp;
+
+00:32:41.680 --> 00:32:46.560
+probably depends on who that person is. Let's&nbsp;
+picture someone. Who are you thinking of here?&nbsp;
+
+00:32:46.560 --> 00:32:51.520
+Chris: All right. It's someone that looks a&nbsp;
+little like us, right? They're programmers.&nbsp;&nbsp;
+
+00:32:52.400 --> 00:32:58.080
+They're interested in starting a company,&nbsp;
+but maybe don't have a ton of experience&nbsp;&nbsp;
+
+00:32:58.080 --> 00:33:01.760
+on the business side of things, but they're&nbsp;
+passionate about the product they're creating.&nbsp;
+
+00:33:03.013 --> 00:33:07.200
+Lukas: There's so much advice out there that I&nbsp;
+think is really good these days. I feel like when&nbsp;&nbsp;
+
+00:33:07.200 --> 00:33:12.400
+we were all starting our companies the first&nbsp;
+time, being an entrepreneur wasn't a thing.&nbsp;
+
+00:33:13.840 --> 00:33:17.440
+Y Combinator's put out so much good&nbsp;
+stuff that's really...you forget how not&nbsp;&nbsp;
+
+00:33:17.440 --> 00:33:21.200
+obvious it is to people that you need to make&nbsp;
+something that people want, right? You can't&nbsp;&nbsp;
+
+00:33:21.920 --> 00:33:26.560
+emphasize that enough, right?
+I feel like now people kind of know that,&nbsp;&nbsp;
+
+00:33:26.560 --> 00:33:32.000
+which is fantastic. It definitely wasn't obvious&nbsp;
+to everyone when we were starting or maybe as&nbsp;&nbsp;
+
+00:33:32.000 --> 00:33:36.640
+obvious to us as it should have been.
+I think the thing that people don't&nbsp;&nbsp;
+
+00:33:37.840 --> 00:33:41.680
+talk about as much as I think they should or the&nbsp;
+advice that I feel like I can uniquely offer,&nbsp;&nbsp;
+
+00:33:42.560 --> 00:33:49.200
+because it's worked so well for me, is to pick a&nbsp;
+customer that you really love spending time with.&nbsp;
+
+00:33:50.320 --> 00:33:56.480
+I feel like a lot of these ML startups especially,&nbsp;
+they totally start from a technology and what's&nbsp;&nbsp;
+
+00:33:56.480 --> 00:34:02.080
+interesting to do with it. That's a bad idea.&nbsp;
+Everyone kind of knows that's a bad idea. Then&nbsp;&nbsp;
+
+00:34:02.080 --> 00:34:09.520
+they work backwards from a use case that they find&nbsp;
+interesting and that's maybe...it's an okay idea.&nbsp;
+
+00:34:09.520 --> 00:34:15.840
+The thing that gets lost is that, at&nbsp;
+least for me, the thing I do as CEO,&nbsp;&nbsp;
+
+00:34:16.720 --> 00:34:21.040
+the thing I have to do all day long is spending&nbsp;
+time with customers, spending time empathizing&nbsp;&nbsp;
+
+00:34:21.040 --> 00:34:26.080
+with customers, thinking about customers and&nbsp;
+bringing the customer voice into the company.&nbsp;
+
+00:34:27.760 --> 00:34:34.400
+Given that that's, I think, maybe the most&nbsp;
+important job as CEO, you should pick a&nbsp;&nbsp;
+
+00:34:34.400 --> 00:34:37.680
+customer that you really like, right? Because&nbsp;
+you're going to spend so much time with them&nbsp;&nbsp;
+
+00:34:38.400 --> 00:34:45.600
+over the entire arc of your company. Having a&nbsp;
+specific idea of who that is and making sure&nbsp;&nbsp;
+
+00:34:45.600 --> 00:34:51.680
+you like them, I think, is a really key thing.
+I remember at CrowdFlower, we tried to sell&nbsp;&nbsp;
+
+00:34:51.680 --> 00:34:57.520
+into different types of customers and so I&nbsp;
+really felt this. I went to CMO conferences.&nbsp;&nbsp;
+
+00:34:58.240 --> 00:35:05.440
+I contrast that for myself going to NeurIPS and&nbsp;
+just really enjoying making small talk, enjoying&nbsp;&nbsp;
+
+00:35:05.440 --> 00:35:10.480
+all the details, the things that people say.
+I also believe it's very powerful for the&nbsp;&nbsp;
+
+00:35:10.480 --> 00:35:14.160
+world and good for the world, but I think&nbsp;
+even more than that, just on a day-to-day&nbsp;&nbsp;
+
+00:35:15.040 --> 00:35:19.920
+motivation...the impact will sustain you&nbsp;
+over the long-term, but over the short-term,&nbsp;&nbsp;
+
+00:35:21.600 --> 00:35:24.960
+I think I really appreciate that&nbsp;
+I'm working with a user base that I&nbsp;&nbsp;
+
+00:35:25.760 --> 00:35:30.720
+really care about and enjoy talking to.
+Shawn: Lavanya's in the chat here.&nbsp;&nbsp;
+
+00:35:31.600 --> 00:35:35.360
+We're taking questions from the audience.
+Lukas: What's the hope for Weights &amp; Biases&nbsp;&nbsp;
+
+00:35:35.360 --> 00:35:41.680
+in the next five years? I feel like&nbsp;
+almost it's like a jinx to say that&nbsp;&nbsp;
+
+00:35:41.680 --> 00:35:44.880
+question. I don't even know if I have a good&nbsp;
+answer. Maybe if you guys want to try first?&nbsp;
+
+00:35:44.880 --> 00:35:50.720
+Shawn: Of course, I take it from a product&nbsp;
+and tools standpoint. I hope that we can build&nbsp;&nbsp;
+
+00:35:51.440 --> 00:35:57.760
+interconnected tools across the ML pipeline&nbsp;
+that really work well together because they&nbsp;&nbsp;
+
+00:35:57.760 --> 00:36:04.080
+share these common underlying threads or&nbsp;
+infrastructural pieces or, dare I say, bones?&nbsp;&nbsp;
+
+00:36:05.040 --> 00:36:08.560
+Which is what I like to call them internally&nbsp;
+and everybody makes fun of me for.&nbsp;
+
+00:36:10.960 --> 00:36:14.320
+To me, it's really important that&nbsp;
+the data that you collect about your&nbsp;&nbsp;
+
+00:36:14.320 --> 00:36:17.920
+model in production can be used to inform&nbsp;
+decisions that you make back in the data&nbsp;&nbsp;
+
+00:36:17.920 --> 00:36:21.600
+collection process and the training process.
+There's so many parts of the ML pipeline,&nbsp;&nbsp;
+
+00:36:21.600 --> 00:36:26.000
+it's hard to build all this stuff. But&nbsp;
+if you think of the best companies,&nbsp;&nbsp;
+
+00:36:26.720 --> 00:36:30.480
+somebody like Google who's building ML, they've&nbsp;
+built all this. They've verticalized all of&nbsp;&nbsp;
+
+00:36:30.480 --> 00:36:34.400
+it internally and built it themselves.&nbsp;
+They've built tools out of other tools.&nbsp;
+
+00:36:36.400 --> 00:36:40.720
+I want to be able to make a platform like&nbsp;
+that outside of a giant company and give it&nbsp;&nbsp;
+
+00:36:41.360 --> 00:36:44.640
+to the rest of the world and use all the&nbsp;
+use cases that we encountered to make&nbsp;&nbsp;
+
+00:36:44.640 --> 00:36:48.880
+it better and better, and more general.
+Lukas: I think it'd be really satisfying&nbsp;&nbsp;
+
+00:36:51.040 --> 00:36:58.080
+if Weights &amp; Biases becomes a core part of&nbsp;
+every ML team's infrastructure and we're really&nbsp;&nbsp;
+
+00:36:58.080 --> 00:37:04.640
+known for making really high quality stuff,&nbsp;
+really useful stuff, really powerful stuff.&nbsp;
+
+00:37:05.600 --> 00:37:10.240
+I think we're on that trajectory, but I&nbsp;
+think ML is growing so much that that becomes&nbsp;&nbsp;
+
+00:37:11.520 --> 00:37:16.240
+every company when every company has an ML team,&nbsp;
+which it seems like we're headed to in the next&nbsp;&nbsp;
+
+00:37:16.960 --> 00:37:18.880
+five years. So I think that's the biggest thing.&nbsp;
+
+00:37:20.613 --> 00:37:26.880
+Shawn: If you imagine the company that is in&nbsp;
+that position, what does it look like internally,&nbsp;&nbsp;
+
+00:37:26.880 --> 00:37:29.840
+I think we have this today.
+But, I mean, there's folks&nbsp;&nbsp;
+
+00:37:29.840 --> 00:37:34.400
+building data tools and ML tools at lots of&nbsp;
+companies in the world and doing a great job.&nbsp;&nbsp;
+
+00:37:35.440 --> 00:37:39.920
+I want to get all those people in the same&nbsp;
+place. People who love building these tools.&nbsp;
+
+00:37:40.960 --> 00:37:44.400
+Maybe there's folks out there who work on these&nbsp;
+tools and don't really love it and want to switch&nbsp;&nbsp;
+
+00:37:44.400 --> 00:37:48.480
+to something else. That's great too. I mean, you&nbsp;
+should move through things in your career. But&nbsp;&nbsp;
+
+00:37:48.480 --> 00:37:52.560
+I would love to be surrounded by people who&nbsp;
+really love this problem and really love the&nbsp;&nbsp;
+
+00:37:52.560 --> 00:37:56.720
+people who work on this problem, these&nbsp;
+customers, just all together, all of us.&nbsp;
+
+00:37:57.360 --> 00:38:01.440
+Maybe not in an office in the modern&nbsp;
+world anymore, but distributed around&nbsp;&nbsp;
+
+00:38:01.440 --> 00:38:05.840
+working on these problems together and just&nbsp;
+building great stuff that users love so they&nbsp;&nbsp;
+
+00:38:05.840 --> 00:38:11.680
+can build ML models that make the world better.
+Lukas: Here on Gradient Dissent, since you guys&nbsp;&nbsp;
+
+00:38:11.680 --> 00:38:19.120
+are both mega fans, you know this, but for new&nbsp;
+listeners, we always end with two questions. The&nbsp;&nbsp;
+
+00:38:19.120 --> 00:38:26.800
+penultimate question is what is the most,&nbsp;
+or an underrated topic in machine learning?&nbsp;&nbsp;
+
+00:38:26.800 --> 00:38:32.160
+Something that you would love to work on&nbsp;
+if you weren't working on Weights &amp; Biases.&nbsp;
+
+00:38:32.160 --> 00:38:41.760
+Chris: l want to make a painting robot. But&nbsp;
+it uses an actual brush, okay? Not just a&nbsp;&nbsp;
+
+00:38:41.760 --> 00:38:49.200
+plotter or something. It's going to be very&nbsp;
+complicated. That's not the big world-changing&nbsp;&nbsp;
+
+00:38:51.040 --> 00:38:54.720
+answer maybe you were looking for, but&nbsp;
+that's what I would be really stoked to&nbsp;&nbsp;
+
+00:38:55.520 --> 00:38:58.320
+pour a year of my life into I think.
+Lukas: Like a paintbot?&nbsp;
+
+00:38:58.320 --> 00:39:01.200
+Chris: Yeah, a paintbot. That's right.
+Lukas: Cool, cool.&nbsp;
+
+00:39:01.200 --> 00:39:07.360
+Shawn: Underrated. Underrated topic. Maybe&nbsp;
+we should have started that robot company...&nbsp;
+
+00:39:09.680 --> 00:39:14.000
+This question's funny because we touch so&nbsp;
+many of the problems in machine learning at&nbsp;&nbsp;
+
+00:39:14.000 --> 00:39:18.640
+Weights &amp; Biases. Not all of them, but we're&nbsp;
+building tools that are used for all the&nbsp;&nbsp;
+
+00:39:18.640 --> 00:39:23.120
+verticals, so of course we're going to touch them.
+So maybe I'll say something that we're not&nbsp;&nbsp;
+
+00:39:23.120 --> 00:39:27.120
+explicitly doing, that I think is&nbsp;
+really important, and I feel like I&nbsp;&nbsp;
+
+00:39:27.120 --> 00:39:32.720
+am actually doing, which is...I think model&nbsp;
+understanding is critical in the future.&nbsp;
+
+00:39:33.600 --> 00:39:37.120
+Deep learning models are really tricky&nbsp;
+to understand. It's a research area.&nbsp;&nbsp;
+
+00:39:37.920 --> 00:39:41.840
+It's really dependent on what kind of model&nbsp;
+you're building, what techniques you might use&nbsp;&nbsp;
+
+00:39:41.840 --> 00:39:47.440
+to figure out "Why did my car make the decision&nbsp;
+that it did at a specific point in time?"&nbsp;
+
+00:39:48.800 --> 00:39:54.880
+I think as these models get more and more complex,&nbsp;
+it's more and more important. I want to understand&nbsp;&nbsp;
+
+00:39:54.880 --> 00:39:58.480
+the models. I want to understand the models for&nbsp;
+the world to be good and I want to understand&nbsp;&nbsp;
+
+00:39:58.480 --> 00:40:04.400
+the models because I think that gives us some&nbsp;
+understanding into the nature of intelligence&nbsp;&nbsp;
+
+00:40:04.400 --> 00:40:10.880
+and our own decision-making processes.
+We're not explicitly doing model understanding at&nbsp;&nbsp;
+
+00:40:10.880 --> 00:40:16.320
+Weights &amp; Biases, but we're trying to build tools,&nbsp;
+and we'll talk more about this over the next six&nbsp;&nbsp;
+
+00:40:16.320 --> 00:40:21.760
+months, I guess, that head in that direction.
+Lukas: I'm tempted to answer this question,&nbsp;&nbsp;
+
+00:40:21.760 --> 00:40:25.440
+but I feel like maybe it's better as a host&nbsp;
+if I remain mysterious in terms of what I&nbsp;&nbsp;
+
+00:40:25.440 --> 00:40:31.200
+think is the most underrated topic.
+I will say I love the company that&nbsp;&nbsp;
+
+00:40:32.000 --> 00:40:36.480
+we started and I would not change it. Obviously&nbsp;
+it was a really good choice to do it. But one&nbsp;&nbsp;
+
+00:40:36.480 --> 00:40:40.720
+thing that we kicked around in the early&nbsp;
+days... Well, we kicked around two ideas.&nbsp;
+
+00:40:40.720 --> 00:40:43.360
+One I think is a terrible idea,&nbsp;
+which is a painting drone,&nbsp;&nbsp;
+
+00:40:44.640 --> 00:40:49.440
+which I think would be fun, but probably just&nbsp;
+terrible idea. But still, it would be really fun.&nbsp;
+
+00:40:50.080 --> 00:40:54.640
+The second idea which I think I would still&nbsp;
+love to do it, and I think we thought we&nbsp;&nbsp;
+
+00:40:54.640 --> 00:40:58.480
+were the wrong team to do it, but actually I&nbsp;
+think we might have been a good team to do it,&nbsp;&nbsp;
+
+00:40:58.480 --> 00:41:02.960
+but the timing seems like it might have been&nbsp;
+bad, which is to build a better simulator to&nbsp;&nbsp;
+
+00:41:02.960 --> 00:41:08.560
+help robot companies simulate what they're&nbsp;
+doing and then deploy into the real world.&nbsp;
+
+00:41:08.560 --> 00:41:12.880
+I just think that that still kind of needs&nbsp;
+to exist. There's different takes on it,&nbsp;&nbsp;
+
+00:41:12.880 --> 00:41:16.960
+but it doesn't seem like it's been nailed&nbsp;
+at all, especially with the physical part of&nbsp;&nbsp;
+
+00:41:16.960 --> 00:41:24.640
+it. I also think that would be a really fun&nbsp;
+company to do, although a much slower ride.&nbsp;
+
+00:41:25.520 --> 00:41:28.960
+But my answer to the most underrated&nbsp;
+topic in ML is still a secret.&nbsp;
+
+00:41:28.960 --> 00:41:36.720
+Lukas: The final question is when you&nbsp;
+look at actually all of our customers&nbsp;&nbsp;
+
+00:41:36.720 --> 00:41:42.240
+trying to deploy models successfully, what&nbsp;
+do you think their biggest pain point is?&nbsp;
+
+00:41:42.240 --> 00:41:45.840
+We always ask guests this who are mostly&nbsp;
+at these companies trying to do it, but&nbsp;&nbsp;
+
+00:41:47.040 --> 00:41:50.800
+looking out at everyone —&nbsp;
+maybe we restrict this to&nbsp;&nbsp;
+
+00:41:50.800 --> 00:41:53.680
+people already using Weights &amp; Biases&nbsp;
+because to people not using somebody,&nbsp;&nbsp;
+
+00:41:53.680 --> 00:41:56.560
+obviously maybe that's their biggest problem&nbsp;
+— but the people that are already using us,&nbsp;&nbsp;
+
+00:41:56.560 --> 00:42:02.000
+what is the big thing that they run into?
+Shawn: I mean, there is a cop-out answer,&nbsp;&nbsp;
+
+00:42:02.000 --> 00:42:08.000
+which is it's probably hiring.
+Lukas: That might be accurate. Hiring? Yeah.&nbsp;
+
+00:42:09.760 --> 00:42:12.720
+At some point, we should collect some stats&nbsp;
+on what people say and maybe that will just&nbsp;&nbsp;
+
+00:42:13.920 --> 00:42:17.040
+answer it based on...at least, people we&nbsp;
+interview. But yeah, what are you guys seeing?&nbsp;
+
+00:42:17.040 --> 00:42:22.560
+Shawn: It really varies in our customers because&nbsp;
+somebody who is building a self-driving car,&nbsp;&nbsp;
+
+00:42:22.560 --> 00:42:28.400
+for example, is they're building 100 models in&nbsp;
+parallel and with no proof that self-driving cars&nbsp;&nbsp;
+
+00:42:28.400 --> 00:42:32.320
+could still actually exist and work on public&nbsp;
+streets. I guess, we're getting very close now.&nbsp;
+
+00:42:33.680 --> 00:42:38.080
+As opposed to somebody maybe who's got a&nbsp;
+bunch of financial data and needs to predict&nbsp;&nbsp;
+
+00:42:38.080 --> 00:42:43.360
+credit scores. In the credit score problem,&nbsp;
+you actually...model understanding, what I&nbsp;&nbsp;
+
+00:42:43.360 --> 00:42:46.800
+was just talking about, really, really important.&nbsp;
+You probably need to use something dumber than&nbsp;&nbsp;
+
+00:42:46.800 --> 00:42:51.760
+a deep learning model so that you can actually&nbsp;
+say why you made a particular credit prediction.&nbsp;
+
+00:42:52.560 --> 00:42:57.440
+Our customers are extremely varied.&nbsp;
+I hope we're solving a lot of the&nbsp;&nbsp;
+
+00:42:57.440 --> 00:43:01.840
+problems in the model creation side of things.&nbsp;
+I think that there is a really hard problem of&nbsp;&nbsp;
+
+00:43:01.840 --> 00:43:05.920
+figuring out what models are doing in production&nbsp;
+and then taking the data from production&nbsp;&nbsp;
+
+00:43:06.640 --> 00:43:09.520
+and integrating it back into&nbsp;
+the model training process.&nbsp;
+
+00:43:10.720 --> 00:43:15.760
+I hope that we get to work on that problem too,&nbsp;
+but I bet that a lot of our customers would&nbsp;&nbsp;
+
+00:43:15.760 --> 00:43:20.240
+express that they have challenges there.
+Chris: Yeah, I'll piggyback on Shawn's&nbsp;&nbsp;
+
+00:43:20.240 --> 00:43:30.320
+response and say specifically CI and&nbsp;
+CD, when it comes to these ML pipelines,&nbsp;&nbsp;
+
+00:43:31.040 --> 00:43:34.640
+just is nowhere close to what we have in&nbsp;
+the regular software development world.&nbsp;
+
+00:43:36.960 --> 00:43:42.640
+I know we have a lot of exciting things on our&nbsp;
+roadmap to help with automating all of these steps&nbsp;&nbsp;
+
+00:43:42.640 --> 00:43:48.640
+as a model moves through the pipeline and then&nbsp;
+comes back to get retrained and understanding how&nbsp;&nbsp;
+
+00:43:48.640 --> 00:43:55.920
+it's performing in production, but I personally&nbsp;
+look forward to the day that all of this can be&nbsp;&nbsp;
+
+00:43:56.720 --> 00:44:04.400
+automated in a way that doesn't involve people&nbsp;
+manually running shell scripts, which is often&nbsp;&nbsp;
+
+00:44:04.400 --> 00:44:09.680
+the case today and really unfortunate.
+Lukas: Awesome. Well, thanks so much, guys.&nbsp;&nbsp;
+
+00:44:09.680 --> 00:44:13.600
+It's been a real pleasure working with&nbsp;
+you and can't wait for many more years.&nbsp;
+
+00:44:13.600 --> 00:44:17.280
+Shawn: You guys too.
+Chris: Can't wait for more podcasts,&nbsp;&nbsp;
+
+00:44:17.280 --> 00:44:19.120
+Luke. You're a fantastic podcast host.
+Lukas: Yeah, we got to bring you back&nbsp;&nbsp;
+
+00:44:20.000 --> 00:44:24.560
+a year from now, see where we're at.
+Lukas: If you're enjoying these interviews and&nbsp;&nbsp;
+
+00:44:24.560 --> 00:44:29.920
+you want to learn more, please click on the link&nbsp;
+to the show notes in the description where you can&nbsp;&nbsp;
+
+00:44:29.920 --> 00:44:35.680
+find links to all the papers that are mentioned,&nbsp;
+supplemental material, and a transcription that we&nbsp;&nbsp;
+
+00:44:35.680 --> 00:44:39.200
+worked really hard to produce. So check it out.
+Lukas: I thought it'd be fun,&nbsp;&nbsp;
+
+00:44:40.960 --> 00:44:47.600
+since it's a friendly guest obviously, to&nbsp;
+add some zany new features to this podcast.&nbsp;
+
+00:44:47.600 --> 00:44:51.920
+I thought one section would be..I'm going to&nbsp;
+name a technology and then you got to immediately&nbsp;&nbsp;
+
+00:44:51.920 --> 00:44:57.840
+say underrated or overrated, and then if you&nbsp;
+disagree, we can fight it out. What do you think?&nbsp;
+
+00:44:57.840 --> 00:44:59.360
+Shawn: Let's go.
+Lukas: Are you&nbsp;&nbsp;
+
+00:44:59.360 --> 00:45:04.240
+ready? Okay. Reinforcement learning.
+Shawn: ls there a middle ground? Wait,&nbsp;&nbsp;
+
+00:45:04.240 --> 00:45:07.280
+is it only under or over?
+Lukas: Yeah, you got to decide.&nbsp;
+
+00:45:07.280 --> 00:45:13.200
+Shawn: I love reinforcement learning. Underrated.
+Chris: Yeah, I'll go with Shawn, underrated.&nbsp;
+
+00:45:13.200 --> 00:45:17.840
+Lukas: All right, all right. AutoML.
+Chris: Overrated.&nbsp;
+
+00:45:17.840 --> 00:45:22.800
+Shawn: Yeah.
+Chris: Come on, Shawn. It's bad for business.&nbsp;
+
+00:45:22.800 --> 00:45:27.200
+Shawn: Underrated.
+Lukas:&nbsp;&nbsp;
+
+00:45:27.200 --> 00:45:29.520
+I already forgot what you said,&nbsp;
+Chris. You think it's overrated?&nbsp;
+
+00:45:29.520 --> 00:45:32.480
+Chris: Yeah, yeah.
+Lukas: Wait, why?&nbsp;
+
+00:45:32.480 --> 00:45:36.880
+Chris: Because I think it's really&nbsp;
+important that the ML practitioner is&nbsp;&nbsp;
+
+00:45:37.440 --> 00:45:42.560
+using their own creative powers to make&nbsp;
+choices about how the model is architected.&nbsp;
+
+00:45:43.200 --> 00:45:48.560
+It's like automation everywhere&nbsp;
+else. I have mixed feelings about it.&nbsp;
+
+00:45:48.560 --> 00:45:53.840
+Lukas: Shawn, you want a quick rebuttal to that?
+Shawn: Yeah, I mean, I'm torn on this one.&nbsp;&nbsp;
+
+00:45:53.840 --> 00:45:57.120
+There is two good answers,&nbsp;
+but I do think...of course,&nbsp;&nbsp;
+
+00:45:58.000 --> 00:46:01.680
+the technology to train models should&nbsp;
+evolve over time and things should get&nbsp;&nbsp;
+
+00:46:01.680 --> 00:46:07.200
+smarter. For example, our Sweeps tool does&nbsp;
+help you find good parameters for a model.&nbsp;
+
+00:46:08.720 --> 00:46:14.080
+I think as a company, what we need to do&nbsp;
+is as those tools get better and better&nbsp;&nbsp;
+
+00:46:14.080 --> 00:46:17.520
+at automatically building models, there's&nbsp;
+all kinds of other problems around&nbsp;&nbsp;
+
+00:46:17.520 --> 00:46:22.000
+model building, like getting the right data in&nbsp;
+the first place, and we need to build those.&nbsp;
+
+00:46:23.280 --> 00:46:27.840
+This space is moving so quickly, and of course&nbsp;
+AutoML will probably continue to improve,&nbsp;&nbsp;
+
+00:46:28.640 --> 00:46:32.320
+but there's lots of other problems around&nbsp;
+it to be solved for the practitioners.&nbsp;
+
+00:46:32.320 --> 00:46:36.400
+Lukas: All right. Well, I think people&nbsp;
+should leave comments for which they found&nbsp;&nbsp;
+
+00:46:36.400 --> 00:46:40.000
+more convincing, but definitely bonus points for&nbsp;
+the Weights &amp; Biases plug in there. I like it.&nbsp;
+
+00:46:40.800 --> 00:46:45.120
+Okay, next one. The singularity.
+Chris: Underrated.&nbsp;
+
+00:46:45.120 --> 00:46:51.200
+Shawn: Yup. I'm with Chris. Underrated.
+Lukas: Whoa, whoa. Bold. All right. We'll move on.&nbsp;&nbsp;
+
+00:46:52.080 --> 00:46:55.840
+Okay, ready? Bigtable.
+Chris: Overrated.&nbsp;
+
+00:46:55.840 --> 00:47:00.400
+Shawn: I'll go with underrated. Sure.
+Lukas: Whoa, all right. Shawn, maybe you go first.&nbsp;
+
+00:47:01.680 --> 00:47:08.640
+Shawn: I think Bigtable...I was at Google when&nbsp;
+Bigtable was starting to be used. At the time,&nbsp;&nbsp;
+
+00:47:09.600 --> 00:47:14.960
+it's like 2006, Bigtable was really big&nbsp;
+inside of Google. It enabled all of the&nbsp;&nbsp;
+
+00:47:14.960 --> 00:47:18.400
+technology that we have. The search, and&nbsp;
+everything else that people were building, Gmail.&nbsp;&nbsp;
+
+00:47:19.360 --> 00:47:20.800
+It didn't exist elsewhere in the world.&nbsp;&nbsp;
+
+00:47:22.160 --> 00:47:26.560
+When I left Google, I saw the world starting&nbsp;
+to copy Bigtable and became things like NoSQL.&nbsp;
+
+00:47:27.920 --> 00:47:31.920
+It had a huge impact on the world. I&nbsp;
+think maybe today, raw Bigtable itself,&nbsp;&nbsp;
+
+00:47:31.920 --> 00:47:35.680
+maybe this is what Chris is probably&nbsp;
+alluding to, is a bit of a challenge.&nbsp;&nbsp;
+
+00:47:36.640 --> 00:47:41.760
+Maybe I'll let Chris take it from there.
+Chris: The reason I said it, because I remember&nbsp;&nbsp;
+
+00:47:41.760 --> 00:47:45.840
+a day early in the founding of this company, when&nbsp;
+we were trying to figure out where to store our&nbsp;&nbsp;
+
+00:47:45.840 --> 00:47:50.480
+metrics, and you were like, "Bigtable will solve&nbsp;
+all of our problems. It's perfect for this."&nbsp;
+
+00:47:51.520 --> 00:47:54.880
+It's kind of been a thorn in our side a&nbsp;
+little bit. I mean, it's done its job well,&nbsp;&nbsp;
+
+00:47:55.840 --> 00:48:00.240
+but you could ask a handful of engineers at&nbsp;
+Weights &amp; Biases and I bet you most of them&nbsp;&nbsp;
+
+00:48:00.240 --> 00:48:06.160
+would gripe about Bigtable. I think our use case&nbsp;
+is a little funky for the way we're using it.&nbsp;
+
+00:48:06.160 --> 00:48:10.160
+Shawn: Yeah. For large time series&nbsp;
+where you want to fetch a few million&nbsp;&nbsp;
+
+00:48:10.160 --> 00:48:14.640
+contiguous points at a time, especially in&nbsp;
+a shared Bigtable cluster that you get from&nbsp;&nbsp;
+
+00:48:14.640 --> 00:48:18.560
+Google, there's some challenges there.
+Lukas: Okay. Python.&nbsp;
+
+00:48:18.560 --> 00:48:21.520
+Shawn: Underrated.
+Chris: Yeah, underrated.&nbsp;
+
+00:48:21.520 --> 00:48:24.800
+Lukas: Okay. Jupyter.
+Shawn: Underrated.&nbsp;
+
+00:48:25.680 --> 00:48:28.861
+Chris: Underrated.
+Lukas: JupyterHub.&nbsp;
+
+00:48:28.861 --> 00:48:34.032
+Chris: Underrated.
+Shawn: Underrated. Great.&nbsp;
+
+00:48:34.032 --> 00:48:35.120
+Lukas: Kubeflow.
+Shawn: Underrated.&nbsp;
+
+00:48:35.120 --> 00:48:35.920
+Chris: Underrated.
+Lukas:&nbsp;&nbsp;
+
+00:48:35.920 --> 00:48:39.320
+All right. All right. SageMaker.
+Chris:&nbsp;&nbsp;
+
+00:48:42.160 --> 00:48:44.127
+Overrated.
+Shawn: Overrated.&nbsp;
+
+00:48:44.127 --> 00:48:48.400
+Lukas: Interesting. TensorFlow.
+Shawn: Underrated.&nbsp;
+
+00:48:48.400 --> 00:48:52.160
+Chris: Underrated.
+Lukas: Wow, you guys are super aligned.&nbsp;&nbsp;
+
+00:48:52.160 --> 00:48:54.720
+Hard to get some dissent here.
+Shawn:&nbsp;&nbsp;
+
+00:48:54.720 --> 00:48:59.360
+Yeah, we got to live up to your podcast name.
+Lukas: Yeah, yeah. I guess we'll get some other&nbsp;&nbsp;
+
+00:48:59.360 --> 00:49:02.435
+pairs to guess or maybe we could ask other ones&nbsp;
+the same questions and then see what they say.&nbsp;
+
+00:49:02.435 --> 00:49:04.560
+Shawn: I mean, do you differ&nbsp;
+from us in any of those, Luke?&nbsp;
+
+00:49:04.560 --> 00:49:08.320
+Lukas: I mean, some of these technologies,&nbsp;
+I'm even kind of hazy on what they are. Like&nbsp;&nbsp;
+
+00:49:08.320 --> 00:49:15.840
+I was thinking BigQuery, Bigtable. I was hoping I&nbsp;
+would learn what the difference is to be honest.
+

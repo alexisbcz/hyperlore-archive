@@ -1,0 +1,393 @@
+[0] _
+[0] Humans fundamentally will get morefreedom to be able to select what type of
+[4] problems do I want to try to solve forand I think that's a very exciting future.
+[24] We're so excited to haveyou here with us, Anton.
+[28] For those that don't know, Antonwas Sana's first ever employee.
+[34] And I remember our first interactionsand you were one of the most clever people I
+[40] had ever met.
+[42] But you also had a pretty interestingbackground and I'd love to start from there.
+[48] So maybe we could just go back to whereyou went to school and how that affected
+[53] how you think.
+[54] Sure. I've been obsessed byunderstanding how things work,
+[59] similarly to you I think a bit.
+[60] And that made me later go into physics,you know, and a lot of that curiosity,
+[66] understanding how things work.
+[67] I think it could have come from goingto the school where you don't learn so much.
+[71] They really want kids to not be burntout by the teaching, but rather be curious,
+[78] to want to learn.
+[79] And so then when I got intouniversity, I was like, wow,
+[82] here I can select more and more courses.
+[85] So I took way too many coursesin physics, computer science,
+[89] and then towards the end, AI and deeplearning started to become a thing.
+[95] And through that, youknow, that's how we met.
+[98] When we started the meeting, there werestarting to be like some glimpses of AI. It
+[105] was, you know, traditionally hadbeen more expert based systems.
+[108] Deep learning started towork in certain domains.
+[112] There was this sort of AlphaGo momentwith reinforcement learning starting to work.
+[117] But what were sort of your initial curiositiesaround AI? Like why did you so early
+[125] decide that would be sortof your life's work?
+[127] So before I went into university,which I think was very fun.
+[133] I know some projects, theyjust skip that completely.
+[136] But then I was thinking, shouldI go into something with neuroscience?
+[141] Like how does intelligence work?
+[143] So that's where the curiositystarted for me.
+[145] And I took some courses on top ofthe engineering courses in neuroscience.
+[149] And then very naturally, if you see thatthere is a sign that you might be able to
+[154] do what a human brain does, like themost interesting complex thing in the
+[159] universe, we artificially, that's obviouslya very attracting topic to think about
+[165] and to practice in as a researcher, whichis what we were doing a lot in the early
+[171] days of SANA, right, as well.
+[173] Modeling student learningwith neural networks.
+[176] And since then, for me, the other bigthing has always been how exciting it is to
+[184] build something, to take an idea thatyou want to create and make that become
+[188] reality. And I mean, that'swhat you've been doing, right?
+[191] And what everyone who's building a startupor just a software engineer building a
+[195] product is doing.
+[197] And then this is, of course, very connectedto starting Lovable three years ago,
+[202] which is fundamentally a new interfacewhere the 99% who has not been able to
+[208] create in this domain can take theirideas and solve business problems,
+[213] create entire new companies.
+[214] And that is growing really fast justbecause of what I thought was true before,
+[220] which is that every human is born tocreate and has a lot of creativity that we
+[226] want to enable them to getout into the real world.
+[229] And if you look at the history of Lovable,there was first there was GPT Engineer,
+[234] there was then also an early versionof Lovable where you were using a lot of sub-
+[238] agents and so on.
+[240] Could you talk through like from GPT Engineerto the initial version of Lovable to
+[245] where we're at today, how the architectureof the platform has shifted?
+[253] Yes. So when we had new AI models thatwere able to actually reason more generally,
+[260] it was obvious to me that this is goingto completely change a lot of things,
+[263] especially in software engineering,and it's going to happen quite fast.
+[266] And since most people didn't understandwhat I was talking about,
+[270] I wanted to prove a point.
+[271] And that's how I went on to create thisopen source project that is just you type
+[278] into your terminal, create me a snakegame, and then it creates all the code and
+[281] then it starts.
+[282] starts the game, right?
+[284] And that was just before I started thecompany, and I even wasn't sure if I would
+[289] be building in this domain ifI was starting a new company.
+[293] But the realization that made me do itis that just much less than 1% of the world
+[299] are developers, which all the AI developertooling companies were building for.
+[305] And instead, you should be focusing onwhat is the next interface that is not what
+[310] developers are used to.
+[312] And by doing that, you can just empowerso many more humans on this planet.
+[317] And that's what we're seeing now thata lot of founders and people in large
+[321] companies that have great domain expertise,they have drive and creativity in how
+[326] to solve new problems, they can useour product and just work with it as a
+[331] technical co-founder. And someone likeAlan, a friend of mine who is building
+[339] ShiftNext, he's building a company makinga million dollars in just five months.
+[344] And this is because he's an amazingindividual who was not able to code,
+[347] but now he's able to do that.
+[349] And during the one and ahalf years since we launched,
+[351] the product has of course changed a lot.
+[353] And it's driven by how we create thisplatform and the toolkit environment that an
+[359] agent operates in, and how we optimizeusing different large language models,
+[364] and of course, how those models are gettingbetter and better every single month
+[368] almost.
+[369] And I think one of our dreams hadalways been that we would create sort of
+[374] ubiquitous software andfind this magic moment.
+[376] And with Lovable, it feltlike you truly hit that.
+[381] And as you built such a system, one approachcould have been that you had a lot of
+[388] upfront data gathering, andthen you generated the app.
+[392] But the magic of Lovable was thatyou sort of generate an app instantly.
+[396] How do you think about that from auser experience perspective of generating
+[401] something very quick that the user canthen iterate on versus gathering a lot of
+[405] that Intel upfront?
+[408] So we went through many different iterationsbefore we launched the product, right?
+[412] And some of them were like, okay,asking what are the requirements?
+[417] And some of them were more like the agentgoing out on itself and proposing plans
+[421] and spawning sub-agents.
+[423] But what we realized is that if you wantto get the most intelligence out from the
+[427] human, you want them to as quicklyas possible have something to react to.
+[432] And then you trigger a lot of patternsin the human brain of like, no,
+[437] that's not at all what I'm thinking.
+[438] Or like, now I understand what I was actuallylooking for by just seeing the first
+[442] example. So making that timefrom putting in your idea,
+[448] even if it's not well articulated, andgetting something back is something you kind
+[452] of want to reduce.
+[453] And when we did that, this is where wesaw, okay, now the product is really good.
+[458] And we went on to launch it.
+[459] And since then, we've had 40 millionpeople building on the platform.
+[464] And the beauty of this is too that it'sthe return of the polymath in a sense.
+[469] You know, over the last decade,we've seen increased specialization.
+[472] Now, Lovable is empoweringpeople to be very polymatic.
+[477] They can do everything fromgenerate their app to launch it,
+[482] do the marketing campaign and so on.
+[485] What do you think this means in termsof what's really useful for skills?
+[491] Do you think people should just developexceptional taste and as a society will
+[497] just be bottlenecked by people witha lot of taste or will taste also get
+[503] commodified and somethingthat comes after that?
+[506] What do you think willbe useful to learn?
+[509] It's a very good question.
+[510] I think before the bottleneck was reallythis implementation execution that took a
+[515] lot of time. Now thatis being compressed.
+[518] And what we're seeing being the morevaluable thing is to understand what are the
+[523] needs and problems that are valuableto where we're solving where you should be
+[527] spending your time. And then some ofthis creative taste genius on how does the
+[533] solution to those problemsactually look like.
+[536] And I think both of these things are thingsthat you can learn by trying to create
+[542] solutions, both for more kind of likebusiness problems that have to be solved or
+[548] science problems and somethings out in the real world.
+[552] And of course, the problems that manycompanies and many of us care a lot about,
+[557] which is to create the right emotionsand positive emotions in users and humans
+[562] that interact with what we create.
+[564] And I think everyone should think a lotabout what is my unique ad on top of and
+[572] together in synergy with this very, verysophisticated systems here as we progress.
+[578] And we humans fundamentally will get morefreedom to be able to select what type of
+[583] problems do I want to try to solve.
+[584] For, and I think that'sa very exciting future,
+[587] and when you think aboutall other creator economies,
+[590] it's often been a powerlaw: you have one,
+[593] two percent creating all of thecontent that the rest consume.
+[598] Do you think software is different, orwill we see a scenario where everyone is
+[603] truly creating software, or willwe still have this sort of one,
+[606] two percent folks creating softwarebut just using these tools?
+[612] I think there are many possiblefuture scenarios here,
+[615] and one of the things that I want ourcompany to drive is to make it easier for us
+[622] humans to be more deliberate in how weconsume software and how we consume content,
+[627] rather than just doing what ourprimal drives make us feel like.
+[631] So I hear that there's a lot of peoplewho are addicted to technology in a way
+[637] that, if they reflect on it, they arenot very happy about the relationship with
+[641] technology, and our mission is toempower human self-actualization and,
+[647] specifically, creativity, and that meansthat if we get a chance to monetize,
+[654] just addictive behavior, whichis like human attention,
+[658] can be quite valuable to monetize.
+[659] I will actively avoid doing so and insteadmake sure that humans spend more time on
+[664] creativity, and I think one of the importantparts on that is that you will be more
+[670] creative if you have friends or familyor like a large part of a pool of users that
+[675] will be interested in consumingand trying out what you have built.
+[680] So I think that's an important ingredientin the future and I'm betting on that
+[684] that is going to be thecase in the future as well.
+[686] Yeah, that's really cool. What do youthink are the best historical analogies for
+[691] this? Like when you look back inhistory, something becoming abundant.
+[696] What sort of historical analogy do youthink can give us clues of how this is going
+[704] to play out?
+[704] I mean, it's an industrial revolution,but in terms of getting access to cognitive
+[709] labor, right, and it's inthe industrial revolution.
+[713] You got access to energy, which made itpossible to build a lot of new things that
+[717] were previously too expensive to build,and now the same thing is happening and
+[723] that is fundamentally going to makeall of us not work on this like existing
+[727] companies that need a lot of manpowerto keep these companies running,
+[730] but go out and be able to solve problemsthat were too expensive to solve before,
+[735] for they just need a longer time.
+[737] Does it really result in breakthroughson the technology or breakthroughs in terms
+[743] of how us humans organize ourselves toreally make some new type of organization-
+[750] maybe, say, the government organizationor similar- come together,
+[753] that fundamentally does something thatus humans thinks is a good thing to happen,
+[758] and there currently is a sort of sas-pocalypseongoing that you and I are sort of
+[764] on the two different sides of.
+[767] Yes, it's an exciting event I'dlove to hear your thoughts on.
+[773] You know, where do you actually see scenariosplay out of companies just completely
+[779] creating their own software soup to nuts,and in what areas do you think this is a
+[785] bit overblown?
+[786] Yeah, so we're seeing a lot of people-CEOs, CFOs and CIOs- who are looking at how
+[794] do we run this company on software, andthey want to be in control both of that.
+[802] There's no risk of security incidents.
+[804] They want to know exactly where thedata is and control of what code is being
+[808] running, and they want to make surethat they can evolve this software stack
+[814] quickly and easily and have that- thecontrol over the data so you can connect it
+[820] together with being able to evolve it.
+[822] That's fundamentally unlocking abottleneck for any business to run.
+[827] So that's the reason we're seeing.
+[830] There's a fun example of a realestate agency that's global.
+[834] They have dozens of countries,hundreds of websites and 80,
+[840] 000 real estate agents where their technologycycle is super slow to move around
+[844] and the VP of marketing that really understandslike you need to be able to open
+[850] new brands in new countries allthe time that he could use Lovable,
+[855] and they were able to re-platform thislegacy stack for hundreds of websites on to
+[861] something that was runningon Lovable and, as well,
+[864] replace the AI chatbots on the websites,saving $2 million and, more importantly,
+[869] going from a timeline of a year todays or a week to learn something new.
+[873] And we're seeing the same thing drivenby CIOs that are using internal tools that
+[880] are the data is not connected, and replacingthat with something that the actual
+[885] operator of that internal tool,who's the actual customer of it,
+[888] is a big part of developing it and whocan then continuously change it over time.
+[894] And that is a huge unlock right.
+[898] And I think there's this SaaS apocalypse.
+[902] It opens up a lot of opportunitiesfor many businesses, not just us,
+[906] who can be good at understanding.
+[908] Okay, what are the new capabilitiesthat open up here?
+[911] Fundamentally, buyers want data to beshared across all of their applications,
+[916] and if you can do that really well andyou can open up to solve new problems for
+[922] your customers, I think there's alot of opportunities for many different
+[927] businesses in this super exciting age.
+[929] And if you take this SaaS bucket, whatwould you be short and what would you be
+[935] long?
+[936] I would be long.
+[937] Companies where leadership is really leaningin and innovating and they're close to
+[942] their customers, which is fundamentallywhat I think is the most important value-
+[946] that the employees who work with me, thatthey put their customers first and really
+[951] understand their problems and try to findnew ways to solve them with less friction
+[955] and with more new capabilitiesthat did not exist before.
+[961] So I would look at the humans runningthose companies to decide what to go along
+[965] on, because everyone has to constantlydisrupt themselves and that will continue to
+[969] be the case.
+[971] So when you start looking at the typesof software that is going to be generated,
+[976] do you see every employee increasinglygenerating their own software?
+[982] Are companies going to build bespokesoftware for their companies?
+[986] Is it going to be more templatized?
+[988] So you have a certain set of taste makerscreating templates and you can adopt
+[992] their software.
+[994] How do you see that playing out?
+[996] I think we're going to see allthree of those things happening.
+[999] A lot of us humans who are creative,we like to adapt things around us.
+[1004] I want to decorate my house like this.
+[1007] I want my software and the technologypart of my life to work in a certain way and
+[1012] in many cases that createsa lot of value.
+[1016] If you're a business as well, if youhave a workflow that you're going through
+[1019] many, many times and youknow you can optimize it,
+[1022] you will do that and you will want tohave the perfect software for whatever you
+[1026] want to create. And in the end of theday, both for businesses and for individuals,
+[1033] the emotions that you feel when you interactwith your software is becoming more of
+[1038] the important thing now that it's becomingquite easy to make sure it's number one
+[1044] secure and number two has all thecapabilities that you want it to have.
+[1050] So we're going to see both of those andthen, in terms of things being templatized,
+[1057] it's definitely the case that if youwant to move fast- you're just starting a
+[1061] business.
+[1061] You don't want to code or recreatean entire software stack from scratch-
+[1066] absolutely not- but you will want to onceyou have something that is battle-tested,
+[1072] many other humans have kind of provedthat this is good, this is 100% secure,
+[1077] then you will want to do changes to it,and that's the mix that we're going to see,
+[1083] and it both depends on who the user is,exactly how this mix looks and what type of
+[1091] business or actually problems someonetries to solve there, and regardless,
+[1097] the biggest change we're seeing isthat if you do want to change something,
+[1100] you do want something custom.
+[1101] The time that it takes isjust rapidly compressing,
+[1104] both because of how much faster itis to align on what should we build,
+[1109] like what is the right typeof solution for your customers,
+[1111] by going back and forth with themin real time with different versions.
+[1115] And once you know whatyou're going to build,
+[1118] making that become reality and makingsure that it checks off all of your
+[1124] requirements in terms of complianceand security and functionality.
+[1128] So if you took over as a CIOof a Fortune 500 company tomorrow,
+[1133] how would you think about your AI strategyand how would you be implementing
+[1136] Lovable?
+[1136] There has never been a better time tobe a CIO right now in how much you can impact
+[1142] your organization. I think you shouldbe able to see every person at your company
+[1148] as someone who is contributing tocreating better IT technology systems.
+[1153] And that's because theycan finally build.
+[1157] And what you can do if you're using Lovableis that you can have control over what
+[1161] are people building, what are people connecting,which is a huge part of being able
+[1166] to build an AI native company.
+[1169] Now anyone can go to Lovable andsay, I want to connect to Sana,
+[1172] I want to connect to Workday or Iwant to connect to my data warehouse.
+[1176] And that opens up so much possibilityfor people doing their jobs more effectively.
+[1182] Humans having more context, which iswhat fundamentally humans also need to take
+[1188] better decisions and developyour business into do new things,
+[1193] serve your customers better.
+[1195] I just think you should get your handson this technology as a CIO and you should
+[1200] give access to your employees and runa hackathon with Lovable or do something
+[1205] together with both ofus at the same time.
+[1208] And what do you think the patternsof Lovable will look like?
+[1213] Do you think there will be one globalsuper genius agent or are you going to have a
+[1221] lot of individual agents fighting it out?
+[1223] Are you going to have a Johnny Ive agentfighting a Jeff Dean agent fighting a
+[1229] Demis Hassabis agent that are all sortof collaborating always on improving your
+[1235] software? Or will this sort of allconsolidate into one sort of giant agent?
+[1242] I mean, if you go and lookat the very technical parts,
+[1245] I could imagine that alreadynow in one large language model,
+[1251] there are multiple kind of personalitiesthat are battling it out in a mixture of
+[1256] agents framework.
+[1258] So there's definitely going to besome version of that over the long term.
+[1263] And then since things are very muchevolving and we have to experiment like we
+[1268] always have since like the beginningof life, things have been a big experiment.
+[1273] I do think it's going to continue tobe completely different agents and models
+[1278] battling it out or being used for differentparts of products like Lovable,
+[1285] which is what we're doing now.
+[1286] I think we have four different modelsused in production that are used in different
+[1292] cases when you're talkingto Lovable right now.
+[1294] Some of them we have trained them andmany others are coming from the leading labs.
+[1299] And when you look at the Lovableprompt, how do you iterate on that?
+[1306] Who is the sort of masterof the of the prompt?
+[1310] I remember seeing a picture of thesort of prompt printed out on the wall.
+[1315] Could you give a bit of color of like,how do you iterate on that prompt?
+[1318] Who owns it?
+[1319] What metrics are drivingany changes to it and so on?
+[1324] That's a fun question.
+[1325] First of all, it is not just oneprompt, which is a bit misleading.
+[1332] Yeah, I would hope so.
+[1333] It's many parts of what that goes intothe agent in different scenarios, you know,
+[1340] different parts actually goes intothe agent in different scenarios,
+[1342] which is a big part of whathas made our products so good.
+[1345] The people just feel a differencewhen they use it.
+[1349] It knows what to do, but it's also notover-prompted with too much information in
+[1354] one go, as we say.
+[1356] But the main decider of how the promptshould be changed is a human developer who's
+[1365] trying out the changes andhave this human feel for that.
+[1368] This is how we want itto talk to our users.
+[1371] And then at their disposal, thathuman, of course, is using data.
+[1375] And otherwise they can'tmake that decision.
+[1377] And looking at what changes fundamentallywhen you compare two versions of the
+[1385] prompt is what is themain source of that data.
+[1390] And when we say what changes, we're bothlooking at how many users are successful,
+[1396] how many users are frustratedif they get stuck somewhere,
+[1401] where they're trying to build somethingthat was harder to build than they thought
+[1404] that it takes many iterations.
+[1406] And then we're looking atactually more specific things,
+[1409] like if the user asks foradding login, how fast is it?
+[1417] How many tries doesthat take specifically?
+[1419] And that makes it possible to take thosedecisions faster with fewer examples,
+[1425] because you're zooming in onthis very, very specific thing.
+[1428] So yeah, the data flywheelis the biggest decider.
+[1433] But in the end, it's a human thatkind of takes everything into account,
+[1437] which us humans, I think, aremuch better than AI at doing.
+[1442] And how far away do you think we're fromthe limit of software engineering and what
+[1447] do you think are going to bethe bottlenecks along the way?
+[1451] So I think it's fundamentally twobig parts of software engineering.
+[1456] If you're building from scratch, ourproduct specifically makes it very fast to
+[1461] build almost anything and then beable to launch that and get users on the
+[1466] platform. Something that no one has solvedyet, and we're not that close either,
+[1472] is that when you have a product thathas a lot of users and it's a complicated
+[1476] product, then changing it is like changingthe engine of a car that's kind of
+[1483] running or changing parts of thatcar when the engine is running.
+[1487] And that's a harder problem and that'swhere proper software engineers need to
+[1493] think a lot about different trade-offsin terms of how do we minimize risks that
+[1498] anything goes wrong and look at thisfrom a very, very systematic approach.
+[1502] So the first one, Ithink we're very close.
+[1507] It's up to the humanoperator to use the AI
+[1511] in an efficient way and by just liketrying and then learning from exactly how to
+[1516] use, how to instruct theAI, it's more about that.
+[1519] For an existing complex product,I don't think we're so far either.
+[1524] You will, you kind of, dependingon what the system is exactly,
+[1529] you need to make sure that the AI hascontext on all the things that can go wrong
+[1534] as you're changing theengine of this running car.
+[1537] What do you think, what model breakthroughswould make the biggest difference?
+[1541] Would it be context length, just increasingthe intelligence of the models?
+[1548] What do you think would make the biggestdifference for the quality of the software
+[1551] it generates?
+[1552] I think the most stupid things we're seeingnow is that the model tries out doing a
+[1558] few things and then it kind ofgets stuck or just keeps looping,
+[1562] it doesn't take a step backand do a proper re-planning,
+[1566] re-assessing the situationof what it's trying to achieve.
+[1569] So I think more intelligence inthat dimension is the biggest unlock.
+[1574] And then coupled with that, thecontext engineering of like how,
+[1578] what can you even put into the modelor how does the model retrieve information
+[1582] from the outside world is the other importantenabler that has a synergy with the
+[1587] first.
+[1588] And back in the days, we always usedto do this end of year predictions where you
+[1594] would force us to put stuff into yourspreadsheet and then we would revisit them at
+[1601] the end of the year.
+[1602] What are your predictions for this year?
+[1605] I think I remember us betting onSANA Learn being very successful.
+[1610] Yeah.
+[1611] And there was...
+[1613] that was very right there.
+[1614] Exactly.
+[1615] So predictions for this year, I thinkfortunately we're going to have politicians
+[1620] starting to talk about AI for real, whichI've been surprised by that it hasn't
+[1625] happened as much yet.
+[1627] And I think it's a very,very important topic,
+[1629] especially on how diplomatic relationshipsshould have to be strengthened as we go
+[1636] through this as one speciesof humanity together.
+[1641] And talking about that, if we get thisright, we're going to live in a world of
+[1646] abundance where we should be able to alignour differences in value so that we have
+[1652] a world without wars and where we justcolonize the future light of the universe in
+[1659] a way that every human is happy about.
+[1662] And that's something I reallywant for politicians.
+[1664] I think they will startto talk about this year.
+[1667] So this last 18 months withLovable feels like a lifetime.
+[1673] What are some of your fondestmemories from the last year?
+[1679] I think it's been the most fun when youwork like shoulder to shoulder with other
+[1684] humans, my colleagues, and wesolve a hard problem together.
+[1688] So going through everything thatgoes into making a launch really good,
+[1692] or even solving a production incident,those have always been my fondest memories.

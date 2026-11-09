@@ -1,0 +1,1016 @@
+[47] Please welcome to the stage the CEO of Vercel&nbsp;
+[47] and creator of Next.js, Guillermo Rauch.
+[61] Hello, everybody, and welcome to Vercel&nbsp;
+[61] Ship. This is our first-ever in-person&nbsp;&nbsp;
+[67] Vercel user conference, which I love. I love&nbsp;
+[67] in person. Of course, we have Next.js Conf,&nbsp;&nbsp;
+[73] but that's specific to Next.js. Today, we get&nbsp;
+[73] to talk about all of our other investments,&nbsp;&nbsp;
+[80] the web as a whole, the big picture.
+[82] So, if you know anything about me, you know that&nbsp;
+[82] I've been betting on the web for basically my&nbsp;&nbsp;
+[90] entire life at this point. So, let me take&nbsp;
+[90] you back. Wow, what a reverse glow-up. So,&nbsp;&nbsp;
+[99] what's different? Well, for one, I had a&nbsp;
+[99] lot of hair, our logos looked different,&nbsp;&nbsp;
+[105] but also Vercel, Zeit at the time,&nbsp;
+[105] was just two things: Next Dev and Now&nbsp;&nbsp;
+[113] Deploy. Remember Now? Two commands focused&nbsp;
+[113] purely on utility for developers. First,&nbsp;&nbsp;
+[121] I was solving problems for myself as a developer.&nbsp;
+[121] I had been building a website for my startup, and&nbsp;&nbsp;
+[127] as you know, when you have a startup, you have to&nbsp;
+[127] launch fast, you have to begin iterating. And how&nbsp;&nbsp;
+[133] do you choose your tech stack for your startup?&nbsp;
+[133] Well, you go on Hacker News, you go on X, you&nbsp;&nbsp;
+[139] see what's trending, and you pick it. At the time,&nbsp;
+[139] React was trending, but guess what? For me, React&nbsp;&nbsp;
+[146] really made a huge difference. To me, that was&nbsp;
+[146] like a new beginning. I became a React builder.
+[151] Until today, as I'm trying to get this website&nbsp;
+[151] out into production to raise my seed round,&nbsp;&nbsp;
+[158] to launch my product, I realize that I'm spending&nbsp;
+[158] weeks just setting up all this stuff around React,&nbsp;&nbsp;
+[166] like Kubernetes, remember Kubernetes?&nbsp;
+[166] Bundlers, compilers, transpilers,&nbsp;&nbsp;
+[174] CSS-in-JS, remember CSS-in-JS?&nbsp;
+[174] That was last week though. Yeah,&nbsp;&nbsp;
+[180] so that's not how I wanted to spend my time. So&nbsp;
+[180] instead of spending weeks setting up all the stuff&nbsp;&nbsp;
+[186] to get that website out, I pivoted and I spent&nbsp;
+[186] eight years of my life building a cloud platform,&nbsp;&nbsp;
+[194] as one does, to ensure that no developer&nbsp;
+[194] had to deal with all that stuff ever again.
+[202] For me, this is deployment infrastructure&nbsp;
+[202] from the point of view of somebody that&nbsp;&nbsp;
+[205] really just wants to ship, and that's&nbsp;
+[205] why we call the conference Vercel Ship.&nbsp;&nbsp;
+[210] We wanted to focus on great user experiences.&nbsp;
+[210] Looking back, quite honestly, we were more&nbsp;&nbsp;
+[215] concerned with the design and how things&nbsp;
+[215] worked than the instance types of the multi-AZ,&nbsp;&nbsp;
+[223] high-availability, 3XL metal web-scale cluster.&nbsp;
+[223] So we just wanted to ship, and it turns out that&nbsp;&nbsp;
+[231] I wasn't alone. There are dozens of us. There&nbsp;
+[231] are so many great companies that have joined&nbsp;&nbsp;
+[239] us on this journey, and many of these are here&nbsp;
+[239] today, and you can get to meet their creators.
+[246] But really, there's a huge movement behind&nbsp;
+[246] this. It starts with open source and Vercel&nbsp;&nbsp;
+[253] just crossing 1 million active developers&nbsp;
+[253] with Next.js, as well as supporting over 35&nbsp;&nbsp;
+[261] other open-source front-end frameworks. And&nbsp;
+[261] when you deploy these frameworks on Vercel,&nbsp;&nbsp;
+[268] we're proud to share that we're close to&nbsp;
+[268] hitting 100 billion weekly requests served&nbsp;&nbsp;
+[274] through our managed infrastructure. And last&nbsp;
+[274] but not least, I'm proud to share that we've&nbsp;&nbsp;
+[280] just passed $100 million in annual revenue,&nbsp;
+[280] which is an important milestone for us because&nbsp;&nbsp;
+[287] it means that so many of you trust us to build&nbsp;
+[287] and be your partner in the future of the web.
+[296] Those two initial utilities we started with have&nbsp;
+[296] unlocked a whole category which we now call the&nbsp;&nbsp;
+[303] front-end cloud. The front-end cloud even has&nbsp;
+[303] a fancy marketing term—that's how you know it's&nbsp;&nbsp;
+[311] real. I do love the term because that's exactly&nbsp;
+[311] what this is. It's an entire cloud platform&nbsp;&nbsp;
+[318] designed for, optimized for, and built by the&nbsp;
+[318] front-end developers and teams that deeply care&nbsp;&nbsp;
+[325] about the user experience. Teams with billions of&nbsp;
+[325] users, as we saw, and you all out there with no&nbsp;&nbsp;
+[332] users yet. And honestly, for folks that appreciate&nbsp;
+[332] design engineering, that want to start with the&nbsp;&nbsp;
+[339] desired end state, a beautiful product that&nbsp;
+[339] works great, that is personalized, and then&nbsp;&nbsp;
+[344] work backward to composing backends and APIs and&nbsp;
+[344] all of that necessary backend infrastructure.
+[351] So we started with the idea that to build the&nbsp;
+[351] best possible cloud, we had to invest in the&nbsp;&nbsp;
+[357] best possible open-source tools and creators.&nbsp;
+[357] Open-source frameworks drive the two critical&nbsp;&nbsp;
+[366] pieces of our front-end cloud: the developer&nbsp;
+[366] experience platform and our managed infrastructure&nbsp;&nbsp;
+[372] platform. Together, they cover the entire software&nbsp;
+[372] development life cycle from idea to production.
+[382] The DX platform, as the name implies, is all&nbsp;
+[382] about shipping fast, having a great experience,&nbsp;&nbsp;
+[388] but also with the right direction.&nbsp;
+[388] These are tools that, crucially,&nbsp;&nbsp;
+[393] you can all implement incrementally into&nbsp;
+[393] your projects, no matter where you host,&nbsp;&nbsp;
+[399] in order to then build and ship great&nbsp;
+[399] experiences. But if you want to offload&nbsp;&nbsp;
+[405] all the hard parts of managing infrastructure and&nbsp;
+[405] offload that to us, we built the infrastructure in&nbsp;&nbsp;
+[413] tandem with those frameworks that I talked&nbsp;
+[413] about. So Vercel managed infrastructure is&nbsp;&nbsp;
+[417] just one push away for you and secure by&nbsp;
+[417] default, which is a huge theme for today.
+[424] Overall, the web is not static. It is changing&nbsp;
+[424] so fast, faster than ever, especially with now&nbsp;&nbsp;
+[432] AI tools and assistance whispering in our ear what&nbsp;
+[432] we have to build. Just a year ago, I was thinking&nbsp;&nbsp;
+[440] that I had to ship my NFT Bored Ape, and now I'm&nbsp;
+[440] shipping my GPT wrapper. Just let that sink in.&nbsp;&nbsp;
+[448] Think about how fast things are moving. So today,&nbsp;
+[448] we're inviting you to push the envelope and push&nbsp;&nbsp;
+[455] the future of the web with us. Our mantra is&nbsp;
+[455] "seeing is believing," and today I'm going&nbsp;&nbsp;
+[464] to show you, together with our team, real demos,&nbsp;
+[464] real UIs, and it really all starts with an idea.
+[473] So let's bring on Jared Palmer to talk about how&nbsp;
+[473] we're helping you get started with that idea.
+[480] Faster. One of the hardest parts of development&nbsp;
+[480] is that initial blank page. You have an idea,&nbsp;&nbsp;
+[504] but getting it from your head to the&nbsp;
+[504] screen can just feel daunting. Yeah,&nbsp;&nbsp;
+[508] there are templates and boilerplates, but I'm&nbsp;
+[508] talking about that fundamental moment—you want&nbsp;&nbsp;
+[514] to start with the UI. And that moment is&nbsp;
+[514] why we built v0. It's an AI-powered tool&nbsp;&nbsp;
+[521] that lets you generate React code from simple&nbsp;
+[521] text prompts and images. Since we launched v0,&nbsp;&nbsp;
+[528] the Vercel community has generated over&nbsp;
+[528] 3 million UIs. That's three million&nbsp;&nbsp;
+[534] times that developers have gone from&nbsp;
+[534] idea to code faster than ever before.&nbsp;&nbsp;
+[540] We've been listening to your feedback and we've&nbsp;
+[540] been working hard to make v0 even better. So&nbsp;&nbsp;
+[546] with that, let me bring up Lee Robinson, our&nbsp;
+[546] Head of DevRel, to show you what v0 can do.
+[553] All right, Lee, what do we want to build?
+[559] Well, I think since we're at Vercel Ship,&nbsp;
+[559] let's build a conference talk submission form.
+[568] Okay, anything else?
+[571] For Vercel Ship?
+[572] For Vercel Ship. Sound good?
+[575] Feels right, let's do it.
+[577] So what's happening here&nbsp;
+[577] while we're building this?
+[579] So v0 took that prompt and now it's&nbsp;
+[579] actually going to generate React&nbsp;&nbsp;
+[585] code using ShadCN UI and Tailwind CSS&nbsp;
+[585] just for you. After we get out of this&nbsp;&nbsp;
+[592] gigantic queue—there's a lot of demand&nbsp;
+[592] right now to be building UIs, I guess.
+[598] Yeah, and it gives us three different options,&nbsp;&nbsp;
+[601] and so we can choose one of&nbsp;
+[601] them. This one looks pretty good,&nbsp;&nbsp;
+[604] and if you popped open the code tab, you would&nbsp;
+[604] actually see the React code streaming in live.
+[609] Oh, nice. Pretty neat. So it looks like that&nbsp;
+[609] one's finished. That one looks pretty good.&nbsp;&nbsp;
+[615] I like it. So the idea is this is a great&nbsp;
+[615] starting point, but we can even do better.
+[619] Okay, so let's make this even spiffier.
+[621] Let's make it pop.
+[623] Yeah, make it pop. Maybe make it—you&nbsp;
+[623] know what's better than one column?
+[626] Yeah, two columns.
+[627] Two columns, let's go two columns.
+[629] And then let's put the form on the left side,&nbsp;&nbsp;
+[636] and on the right side let's put&nbsp;
+[636] conference information and testimonials.
+[648] Okay, let's do it. That sounds good.
+[650] Make it pop. Who knows what it's going to do?
+[651] Make it pop. Make it pop is pretty risky, but I&nbsp;
+[651] mean two columns is good. It's definitely better.
+[656] We'll do it live.
+[657] Yes, and it streams in the code, so I can always&nbsp;
+[657] go check out the code as it's coming in, as it's&nbsp;&nbsp;
+[662] working. There it is. Nice, streaming. We love&nbsp;
+[662] streaming. We've got some Flexbox going, we've got&nbsp;&nbsp;
+[669] the left side first, there's our form. Nice. Talk&nbsp;
+[669] title: Building the Future of the Web. Not bad.
+[677] Yeah, we're looking for speakers&nbsp;
+[677] to share their knowledge at Vercel&nbsp;&nbsp;
+[679] Ship. Submit your talk proposal&nbsp;
+[679] and knowledge. Love that for us.
+[683] Okay, and there comes the&nbsp;
+[683] conference information. Okay,&nbsp;&nbsp;
+[685] we've got an icon for the date, we've&nbsp;
+[685] got an icon for the location. It thinks&nbsp;&nbsp;
+[688] we're in San Francisco, but we're&nbsp;
+[688] not. We're not. We're in New York.
+[693] What do attendees say? Oh, we've got a little&nbsp;
+[693] "Vercel Ship is the premier conference."
+[700] Alright, well, look, this thing's pretty good,&nbsp;
+[700] but if you need that extra layer of precision,&nbsp;&nbsp;
+[706] you can actually just edit the code directly.&nbsp;
+[706] So let's see. Instead of Sarah Williams,&nbsp;&nbsp;
+[712] why don't we change that to Scarlett Johansson?
+[717] Or Sky, for short.
+[718] Or Sky, yeah, either one. We just press save&nbsp;
+[718] and go from there. The idea with v0 is just&nbsp;&nbsp;
+[724] as the name implies—this is your starting&nbsp;
+[724] point, that moment when you go from idea&nbsp;&nbsp;
+[728] to code. And to actually use this code, if&nbsp;
+[728] we go back for a second to the code tab,&nbsp;&nbsp;
+[732] after we preview around in different environments,&nbsp;
+[732] we could actually just copy it right there.
+[737] Nice, cool.
+[738] Or, if you're extremely lazy, you can just...
+[741] I am, actually.
+[742] Well, we love it. You can&nbsp;
+[742] just go to the CLI command,&nbsp;&nbsp;
+[744] pop that into a terminal in a Next.js project,&nbsp;
+[744] and it'll not only make a component with the&nbsp;&nbsp;
+[749] generated code but also install the ShadCN UI&nbsp;
+[749] dependencies you need to make it real nice.
+[755] Pretty sweet. Yeah, and it looks like we can check&nbsp;&nbsp;
+[758] out different screen sizes here&nbsp;
+[758] as well too and change the theme.
+[762] Oh, you know what? I'm a&nbsp;
+[762] Sif font fan, let's do that.
+[767] Yeah, or maybe we switch it up for this one.
+[769] Wow, it's great. Fancy.
+[770] Yes, fancy. Thank you, Lee.
+[772] Awesome, thank you.
+[780] We've been working hard to make v0 even faster,&nbsp;
+[780] more reliable, and more accessible. We've&nbsp;&nbsp;
+[785] significantly improved the speed and efficiency&nbsp;
+[785] of our underlying models so you can generate&nbsp;&nbsp;
+[789] code in just a matter of seconds. We've also&nbsp;
+[789] enhanced the reliability of the entire platform,&nbsp;&nbsp;
+[795] ensuring v0 is there when you need it.&nbsp;
+[795] v0 now also automatically tries to add&nbsp;&nbsp;
+[800] ARIA attributes to all of its generated&nbsp;
+[800] code, and while it's not perfect yet,&nbsp;&nbsp;
+[804] it does bring us one step closer to industry&nbsp;
+[804] standards for inclusive user interfaces.
+[811] You can try it today and visit vz.dev to get&nbsp;
+[811] started. So v0 lets you go from code to idea&nbsp;&nbsp;
+[821] in seconds. It's leveraging AI to help&nbsp;
+[821] jumpstart your next big thing. What about&nbsp;&nbsp;
+[826] building AI-native experiences yourselves?&nbsp;
+[826] Companies like OpenAI, Perplexity, Groq,&nbsp;&nbsp;
+[833] Pika, Leonardo, Sunno, and Hume have all&nbsp;
+[833] chosen Vercel as their front-end cloud,&nbsp;&nbsp;
+[839] and today you can too. And again, when&nbsp;
+[839] it comes to building these experiences,&nbsp;&nbsp;
+[850] Vercel is there to give you the tools that you&nbsp;
+[850] need, and that's where the Vercel AI SDK comes&nbsp;&nbsp;
+[854] in. It's a TypeScript framework that handles the&nbsp;
+[854] complexities of building AI-native applications&nbsp;&nbsp;
+[860] so you can focus on raising $7 trillion for&nbsp;
+[860] your seed round or just getting that internal&nbsp;&nbsp;
+[865] promotion. Instead of writing boilerplate code,&nbsp;
+[865] you could think of it like this: what Next.js&nbsp;&nbsp;
+[871] does for React, the AI SDK does for language&nbsp;
+[871] models. And companies like Zapier have already&nbsp;&nbsp;
+[877] adopted the AI SDK. They just launched their&nbsp;
+[877] new automation platform called Zapier Central,&nbsp;&nbsp;
+[882] which is built with Next.js, Vercel, and the&nbsp;
+[882] AI SDK. This app gives you an AI-based chat&nbsp;&nbsp;
+[888] workspace where you can automate bots and work&nbsp;
+[888] across over 6,000 apps through their platform.
+[897] The AI SDK is organized into two pillars. The AI&nbsp;
+[897] SDK core is the foundation upon which everything&nbsp;&nbsp;
+[903] else is built. It's a unified API for working&nbsp;
+[903] with language models from all major providers:&nbsp;&nbsp;
+[909] OpenAI, Mistral, Anthropic, Groq, the&nbsp;
+[909] Big G—you name it. And best of all,&nbsp;&nbsp;
+[915] you can even build your own. You can kind of think&nbsp;
+[915] of it like an ORM, but instead of for databases,&nbsp;&nbsp;
+[921] it's for language models. It abstracts&nbsp;
+[921] away all the quirks and nuances between&nbsp;&nbsp;
+[925] providers. With the AI SDK core, using an&nbsp;
+[925] LLM comes down to just two simple questions:&nbsp;&nbsp;
+[932] what kind of data do I want to generate—is it&nbsp;
+[932] going to be text or a structured object—and how&nbsp;&nbsp;
+[939] do I want it delivered? It's either going to be&nbsp;
+[939] all at once or bit by bit, streamed incrementally.&nbsp;&nbsp;
+[946] And then switching between providers is as easy as&nbsp;
+[946] changing just a single line of code. You want to&nbsp;&nbsp;
+[951] try out Mistral's latest model they launched last&nbsp;
+[951] night? No problem. Or check out GPT-4.0? Easy.
+[961] We all know that chatbots are all the rage, but&nbsp;
+[961] building a basic chat interface still actually&nbsp;&nbsp;
+[966] requires a decent amount of boilerplate. You've&nbsp;
+[966] got state management, streaming text, parsing,&nbsp;&nbsp;
+[970] lifecycle hooks. It's just a lot to do and&nbsp;
+[970] a lot to mess up. That's why we created the&nbsp;&nbsp;
+[976] AI SDK UI, our second pillar. With just three&nbsp;
+[976] framework-agnostic hooks—useChat, useCompletion,&nbsp;&nbsp;
+[984] and useAssistant—you can build a fully functional&nbsp;
+[984] streaming chatbot in just about 50 lines of code.&nbsp;&nbsp;
+[990] It's actually that simple. But we're not just&nbsp;
+[990] building text-based chatbots anymore. That's&nbsp;&nbsp;
+[997] so six months ago. With the AI SDK's React server&nbsp;
+[997] components APIs, you can actually go further. You&nbsp;&nbsp;
+[1004] can now go beyond just plain text and give&nbsp;
+[1004] chatbots rich, component-based interfaces&nbsp;&nbsp;
+[1010] with what we're calling generative UI. So whether&nbsp;
+[1010] you're using your existing components or new ones,&nbsp;&nbsp;
+[1018] or generating them on the fly like we just&nbsp;
+[1018] saw with v0, React server components and&nbsp;&nbsp;
+[1023] the AI SDK present the ideal architecture for&nbsp;
+[1023] streaming these next-gen user experiences.
+[1030] If this all sounds pretty wild, it's because&nbsp;
+[1030] it is. So let's take a look at a quick demo to&nbsp;&nbsp;
+[1035] show you what I mean. Here's a chatbot built with&nbsp;
+[1035] the AI SDK and Next.js. In addition to plain text&nbsp;&nbsp;
+[1049] responses like "What is love?" we'll just submit.&nbsp;
+[1049] It can actually do a lot more. For example, this&nbsp;&nbsp;
+[1062] chatbot is wired up to be a scheduling assistant,&nbsp;
+[1062] and instead of just responding with plain text,&nbsp;&nbsp;
+[1066] if I ask to, let's say, book a meeting with Lee&nbsp;
+[1066] at 2:00 p.m. today to talk about the movie "Her,"&nbsp;&nbsp;
+[1081] if I hit submit here, we're going to&nbsp;
+[1081] get a beautiful schedule component.&nbsp;&nbsp;
+[1086] It's going to be interactive, and I can&nbsp;
+[1086] confirm the meeting, lock in the details,&nbsp;&nbsp;
+[1092] and it's fully wired into the chat experience.&nbsp;
+[1092] And why don't we move the hackathon to the&nbsp;&nbsp;
+[1097] weekend? Because that's what we always do.&nbsp;
+[1097] What's awesome is I can have this interactive&nbsp;&nbsp;
+[1102] experience without leaving the conversation.&nbsp;
+[1102] It's truly, truly an AI-native experience.
+[1110] With the new streamUI method we built, all of&nbsp;
+[1110] this is part of the AI SDK, and it makes building&nbsp;&nbsp;
+[1116] these kinds of experiences with these streaming&nbsp;
+[1116] interfaces even easier. You can mix text, tools,&nbsp;&nbsp;
+[1123] and function calling with React server components&nbsp;
+[1123] to build AI-native experiences. And best of all,&nbsp;&nbsp;
+[1129] because of React server components, you can&nbsp;
+[1129] stream these UIs without the need for heavy&nbsp;&nbsp;
+[1133] client-side JavaScript unless it's necessary,&nbsp;
+[1133] which means your apps can be more interactive&nbsp;&nbsp;
+[1138] and responsive without sacrificing&nbsp;
+[1138] performance. The AI SDK is your toolkit&nbsp;&nbsp;
+[1146] for building enterprise-grade AI applications&nbsp;
+[1146] easier than ever before. It's available today,&nbsp;&nbsp;
+[1152] so check out the documentation&nbsp;
+[1152] at sdk.vercel.ai/docs/ and you&nbsp;&nbsp;
+[1158] can start exploring the possibilities and start&nbsp;
+[1158] creating. Or better yet, you can start iterating.
+[1165] To tell us more, here's Greta&nbsp;
+[1165] Workman, VP of Product Marketing.
+[1180] The front-end cloud is all about giving you&nbsp;
+[1180] the tools to prioritize your user experience,&nbsp;&nbsp;
+[1185] to focus on what makes your product great, and&nbsp;
+[1185] quickly iterate. I know we all love localhost,&nbsp;&nbsp;
+[1190] but you can't iterate on localhost alone—you&nbsp;
+[1190] need feedback. Putting out great products is&nbsp;&nbsp;
+[1194] a team sport, but historically, getting to a&nbsp;
+[1194] place where you can get useful feedback has&nbsp;&nbsp;
+[1200] been hard. Sure, you can send screenshots,&nbsp;
+[1200] you can try to simulate experiences or hack&nbsp;&nbsp;
+[1206] together separate infrastructure, complex&nbsp;
+[1206] staging pipelines like this person is doing,&nbsp;&nbsp;
+[1210] but it can be weeks of dev time. And at larger&nbsp;
+[1210] organizations, it can mean spending up to 30%&nbsp;&nbsp;
+[1215] of your infrastructure budget on just the&nbsp;
+[1215] dev, test, and staging environments alone.
+[1221] With Vercel, this isn't a separate step. Every&nbsp;
+[1221] change you commit gets built and deployed as a&nbsp;&nbsp;
+[1226] live URL, a standalone environment that&nbsp;
+[1226] you can share with your team. And today,&nbsp;&nbsp;
+[1231] this is available whether you're&nbsp;
+[1231] using GitHub, GitLab, Azure DevOps,&nbsp;&nbsp;
+[1235] or your own CI. This allows you to ship smaller&nbsp;
+[1235] and remove dependencies across teams or branches.&nbsp;&nbsp;
+[1241] And because this is live production-grade&nbsp;
+[1241] infrastructure, it's easier to test across&nbsp;&nbsp;
+[1245] browsers and try interactions, sharing with your&nbsp;
+[1245] team exactly how your users would experience it.&nbsp;&nbsp;
+[1251] This is consistently called out as one of our&nbsp;
+[1251] most impactful features of our DX platform.
+[1256] United Airlines has been working&nbsp;
+[1256] hand-in-hand with our partner,&nbsp;&nbsp;
+[1258] American Eagle.com, on their Gate of the&nbsp;
+[1258] Future initiatives with signage at airports&nbsp;&nbsp;
+[1263] around the world that will be served up&nbsp;
+[1263] by Vercel preview deployments. Comments&nbsp;&nbsp;
+[1267] have been a game-changer in making faster&nbsp;
+[1267] release cycles and team collaboration. But&nbsp;&nbsp;
+[1272] beyond automating your CI/CD and bringing&nbsp;
+[1272] more people into your development process,&nbsp;&nbsp;
+[1276] these preview deployments also come with their&nbsp;
+[1276] own set of developer tools, which give you&nbsp;&nbsp;
+[1280] more functionality to easily collaborate,&nbsp;
+[1280] debug, and QA wherever you're building.
+[1287] Let me show you what this is all about and how we&nbsp;
+[1287] use the toolbar at Vercel. Alright, so at Vercel,&nbsp;&nbsp;
+[1296] we are big on dogfooding. You've probably&nbsp;
+[1296] heard us talk about iterate to greatness,&nbsp;&nbsp;
+[1301] you heard G say, "Seeing is believing."&nbsp;
+[1301] To us, iterate to greatness means always&nbsp;&nbsp;
+[1308] be iterating. It means always be improving.&nbsp;
+[1308] It means using our own tools and features&nbsp;&nbsp;
+[1320] internally to make sure they’re as good as&nbsp;
+[1320] they can be before releasing them to you.
+[1334] Let's take a look at some&nbsp;
+[1334] of these features in action.
+[1336] This is the toolbar. You'll see we have, you can&nbsp;
+[1336] see your inbox, you can see who else is online,&nbsp;&nbsp;
+[1341] you can share this with your team. Let's take&nbsp;
+[1341] a look at some of these comments. Elina thinks&nbsp;&nbsp;
+[1348] we've got too many hyphens going on in this&nbsp;
+[1348] subhead. Respectfully, I'm going to say no,&nbsp;&nbsp;
+[1355] disagree. Here's one, okay, Dan thinks we've&nbsp;
+[1355] got some inconsistent text wrapping. Let me&nbsp;&nbsp;
+[1362] see what browser he's on. Okay, cool. Now if&nbsp;
+[1362] I wanted to, I could make a linear ticket for&nbsp;&nbsp;
+[1367] my design engineering team so they could&nbsp;
+[1367] turn this into a bug report and fix it.&nbsp;&nbsp;
+[1371] This also integrates with Jira or directly&nbsp;
+[1371] into Slack or other productivity tools.
+[1380] We've got some copy changes, I think, too. We&nbsp;
+[1380] use Vercel as the head to our headless CMS,&nbsp;&nbsp;
+[1387] which makes it really easy to integrate with&nbsp;
+[1387] CMSs directly and find the copy changes,&nbsp;&nbsp;
+[1392] find where that content lives in the&nbsp;
+[1392] CMS, and make quick changes. Here,&nbsp;&nbsp;
+[1397] I could just open this up in Contentful, make the&nbsp;
+[1397] change, and because of Vercel draft mode, you're&nbsp;&nbsp;
+[1402] able to see what that looks like before pushing&nbsp;
+[1402] live to production. This makes it a lot easier for&nbsp;&nbsp;
+[1406] me as a marketer to get in there, make changes&nbsp;
+[1406] without needing to involve our developer team.
+[1412] But we've also got a lot of extra dev tools&nbsp;
+[1412] in here that make it easier for debugging,&nbsp;&nbsp;
+[1417] making sure that you're always staying on&nbsp;
+[1417] top of web standards like accessibility and&nbsp;&nbsp;
+[1421] core web vitals. Here we can dig into any&nbsp;
+[1421] of the layout shifts that are happening on&nbsp;&nbsp;
+[1426] the page—no layout shifts, nice. Interaction&nbsp;
+[1426] timing, this is a new core web vital, INP,&nbsp;&nbsp;
+[1433] that Google launched recently. So&nbsp;
+[1433] you can see how your interactions&nbsp;&nbsp;
+[1436] on the site are working—looks like we're&nbsp;
+[1436] all green, awesome. Accessibility audit&nbsp;&nbsp;
+[1444] to make sure you're always keeping up with&nbsp;
+[1444] accessible standards and things like that.
+[1448] And then my favorite, the OG card.&nbsp;
+[1448] We're very big on OGs at Vercel,&nbsp;&nbsp;
+[1452] so we want to make sure that everything looks&nbsp;
+[1452] good before we ship to socials. The toolbar&nbsp;&nbsp;
+[1461] and previews are really helpful in iterating&nbsp;
+[1461] and making quick changes to the site, but how&nbsp;&nbsp;
+[1467] do you make sure that you're rolling things out&nbsp;
+[1467] correctly, that you're making the right changes?
+[1472] Show of hands, who here is using feature&nbsp;
+[1472] flags to roll out their products? Alright,&nbsp;&nbsp;
+[1477] cool, cool, cool. Who's just YOLOing&nbsp;
+[1477] builds out as they're ready? Yeah,&nbsp;&nbsp;
+[1481] okay, you're just force pushing to main when the&nbsp;
+[1481] vibes are right. Sick. Has anyone been scooped,&nbsp;&nbsp;
+[1486] by the way, by Jane Wong on Twitter?&nbsp;
+[1486] She tends to find some feature flags&nbsp;&nbsp;
+[1489] and scoops you. Don't worry, we've&nbsp;
+[1489] got you covered there soon too.
+[1494] No, but in all seriousness, we love flags&nbsp;
+[1494] for experimentation, for safe rollouts,&nbsp;&nbsp;
+[1498] and QA. They help us work across teams better.&nbsp;
+[1498] Whether you have millions of users or you haven't&nbsp;&nbsp;
+[1505] launched yet, feature flags are a way to not&nbsp;
+[1505] just de-risk the tech side of the house but also&nbsp;&nbsp;
+[1509] de-risk your roadmap to make sure you're building&nbsp;
+[1509] the right things, talking about them in the right&nbsp;&nbsp;
+[1514] ways. I, as a product marketer, everything I do&nbsp;
+[1514] centers around a feature flag. As we're building,&nbsp;&nbsp;
+[1519] I can be in the product and test out new features&nbsp;
+[1519] and functionality. I can work with beta customers&nbsp;&nbsp;
+[1524] to understand how they're using the feature&nbsp;
+[1524] and make sure the messaging is on point.
+[1529] In front of some of our larger e-commerce&nbsp;
+[1529] customers, using feature flags for experimentation&nbsp;&nbsp;
+[1533] or even just flipping on a promotion at the&nbsp;
+[1533] right time can mean tens of millions of dollars&nbsp;&nbsp;
+[1538] in improved conversion rates and revenue capture.&nbsp;
+[1538] But we see companies hesitate to work with flags&nbsp;&nbsp;
+[1544] for two reasons: our two favorite things to talk&nbsp;
+[1544] about, developer experience and user experience.&nbsp;&nbsp;
+[1550] Flags are a little hard to integrate, they&nbsp;
+[1550] can add complexity to the rollout process,&nbsp;&nbsp;
+[1554] and sometimes if you're doing things on the&nbsp;
+[1554] client side, it can degrade performance. So I&nbsp;&nbsp;
+[1559] want to talk about a few things that we're&nbsp;
+[1559] doing to help make flags adoption easier.
+[1564] A couple of months ago, you may have noticed&nbsp;
+[1564] a new addition to your Vercel toolbar,&nbsp;&nbsp;
+[1569] this little toggle here. This toggle&nbsp;
+[1569] allows you to bring the flags workflow&nbsp;&nbsp;
+[1573] into your dev and preview environments. It&nbsp;
+[1573] can integrate with any flags provider like&nbsp;&nbsp;
+[1578] Optimizely or LaunchDarkly or Split, and it&nbsp;
+[1578] gives you the ability for your team members&nbsp;&nbsp;
+[1583] to simulate the state of the flag right from&nbsp;
+[1583] the Vercel toolbar. So you as a developer,&nbsp;&nbsp;
+[1588] designer, QA engineer, CEO can experience&nbsp;
+[1588] these flows just as your user would. Since&nbsp;&nbsp;
+[1595] we rolled this out behind a flag, of course,&nbsp;
+[1595] to our beta users, companies like Perplexity&nbsp;&nbsp;
+[1601] and Leonardo AI have flipped the switch&nbsp;
+[1601] on their toolbars over 20,000 times.
+[1607] Who here knows Notion? Yeah, sick. We&nbsp;
+[1607] love Notion at Vercel. Notion is a simple,&nbsp;&nbsp;
+[1613] powerful workspace where millions of teams&nbsp;
+[1613] and individuals, including us, write,&nbsp;&nbsp;
+[1618] plan, collaborate, and create. They&nbsp;
+[1618] use feature flags to run experiments&nbsp;&nbsp;
+[1622] and control public rollouts of big launches.&nbsp;
+[1622] Here, they're using feature flags to roll out&nbsp;&nbsp;
+[1627] a new homepage design they've been working on&nbsp;
+[1627] and to test out some new messaging. So you can&nbsp;&nbsp;
+[1632] see they're going to simulate the flag so they&nbsp;
+[1632] can make changes, see changes, see how it looks&nbsp;&nbsp;
+[1638] for their users without having to go back to&nbsp;
+[1638] their flags provider and coordinate that swap.
+[1643] Since this override can be used anywhere the&nbsp;
+[1643] toolbar is present, you can simulate that&nbsp;&nbsp;
+[1647] user experience in your dev, test, preview, and&nbsp;
+[1647] production environments. You can also share those&nbsp;&nbsp;
+[1652] overrides with your collaborators so they can see&nbsp;
+[1652] exactly what you're working on as well. Today,&nbsp;&nbsp;
+[1657] we're integrating your flags workflow&nbsp;
+[1657] even deeper across our DX platform,&nbsp;&nbsp;
+[1661] starting with web analytics. Now you'll&nbsp;
+[1661] be able to break down your page views and&nbsp;&nbsp;
+[1665] custom events based on the feature flags&nbsp;
+[1665] that are active. Soon you'll be able to&nbsp;&nbsp;
+[1670] also see flags that are active in your logs&nbsp;
+[1670] and flags' related impacts on things like&nbsp;&nbsp;
+[1674] speed insights and core web vitals, no matter&nbsp;
+[1674] what framework or flag provider you're using.
+[1679] By the way, Notion, love the site, great use of&nbsp;
+[1679] color. That's helpful if you've already got flags&nbsp;&nbsp;
+[1685] up and running, but pulling those into your code&nbsp;
+[1685] and using them correctly can also be hard. Today,&nbsp;&nbsp;
+[1690] we're also making it more straightforward to pull&nbsp;
+[1690] feature flags into your Next.js app by giving you&nbsp;&nbsp;
+[1695] the framework to actually use those, the Flags&nbsp;
+[1695] SDK, to use those in your code and use them right&nbsp;&nbsp;
+[1701] without impacting user performance. With this&nbsp;
+[1701] package, we're making it easier to get initial&nbsp;&nbsp;
+[1706] loads without great layout shifts, and today it's&nbsp;
+[1706] available for Next.js and very soon for SvelteKit.
+[1714] So the DX platform helps you preview and&nbsp;
+[1714] ship quickly and safely, to iterate on your&nbsp;&nbsp;
+[1719] experience and keep going. We could stop there.&nbsp;
+[1719] That alone has helped our customers ship up to&nbsp;&nbsp;
+[1724] six times faster. But let's bring G back on to&nbsp;
+[1724] keep going and talk more about where we're going.
+[1740] Thank you, Greta. At Vercel, we believe that&nbsp;
+[1740] developer experience and user experience go&nbsp;&nbsp;
+[1744] hand in hand. They're not at odds. So we've built&nbsp;
+[1744] fast and secure infrastructure for building and&nbsp;&nbsp;
+[1750] deploying with your favorite front-end frameworks.&nbsp;
+[1750] Deep framework integration is central to what we&nbsp;&nbsp;
+[1756] do, and it's what ties together the DX platform,&nbsp;
+[1756] where you can iterate quickly with your team,&nbsp;&nbsp;
+[1761] and our managed infrastructure, where we&nbsp;
+[1761] can ship to billions around the globe.&nbsp;&nbsp;
+[1769] We call that merge, and you might have&nbsp;
+[1769] heard this a few times. It's really&nbsp;&nbsp;
+[1772] important. You might have heard the word&nbsp;
+[1772] "framework-defined infrastructure." It's&nbsp;&nbsp;
+[1778] that merge between DX and the framework and&nbsp;
+[1778] the outputs of optimal cloud architecture.
+[1786] The way that it works is that we analyze&nbsp;
+[1786] your code. We start with the application,&nbsp;&nbsp;
+[1791] and then we autonomously create and deploy&nbsp;
+[1791] infrastructure that's fast, scalable, reliable,&nbsp;&nbsp;
+[1799] and secure. It eliminates the need for manual&nbsp;
+[1799] configuration files and infrastructure code,&nbsp;&nbsp;
+[1806] and most importantly, it reduces the&nbsp;
+[1806] complexity and the chance of introducing&nbsp;&nbsp;
+[1811] human error into any kind of rollout,&nbsp;
+[1811] especially when you deploy to production.
+[1816] Now, please welcome to the stage Lee Rob,&nbsp;&nbsp;
+[1819] who's going to talk about innovations&nbsp;
+[1819] in infrastructure and Next.js.
+[1833] Hey, everyone. It's good to see you all here in&nbsp;
+[1833] New York and also online. I was just checking the&nbsp;&nbsp;
+[1838] chat. Somebody's already doing an AI count.&nbsp;
+[1838] I think we're at 18, so for the montage AI,&nbsp;&nbsp;
+[1845] there we can add it in later. I'm not going to&nbsp;
+[1845] talk too much about AI here. We'll save that for&nbsp;&nbsp;
+[1850] Jared. I'm going to talk about our infrastructure.&nbsp;
+[1850] We all love fast sites, both developers trying to&nbsp;&nbsp;
+[1855] build something that loads really quickly and&nbsp;
+[1855] customers who are trying to build that really&nbsp;&nbsp;
+[1859] snappy product experience. And on Vercel, we&nbsp;
+[1859] give all developers, even y'all on the free tier,&nbsp;&nbsp;
+[1864] the fastest possible experience out of the box.&nbsp;
+[1864] But everything's fast at "Hello World," right?&nbsp;&nbsp;
+[1869] We want to help you stay fast over time as your&nbsp;
+[1869] site grows and as you become more successful.
+[1875] So let's talk about some of the improvements&nbsp;
+[1875] we've been making to our function startup times&nbsp;&nbsp;
+[1880] as well as our global infrastructure to make this&nbsp;
+[1880] possible. Let's start with cold starts. While&nbsp;&nbsp;
+[1886] cold starts aren't really a problem for really&nbsp;
+[1886] large sites, they can be painful for smaller&nbsp;&nbsp;
+[1892] applications. So let's dig in and see how often&nbsp;
+[1892] this happens on the Vercel platform. Vercel serves&nbsp;&nbsp;
+[1899] about 100 billion requests per week, a decent&nbsp;
+[1899] amount, and a subset of these functions power&nbsp;&nbsp;
+[1907] your Next.js applications, your APIs for your&nbsp;
+[1907] Svelte pages, or your dynamic e-commerce stores&nbsp;&nbsp;
+[1913] built with Nu. Now of that subset, about 0.5% of&nbsp;
+[1913] those function invocations are cold starts. Now I&nbsp;&nbsp;
+[1924] know what you're thinking: "That's BS. I've felt&nbsp;
+[1924] that. I've had a site that starts up slowly. It&nbsp;&nbsp;
+[1929] was painful." And they do exist, especially&nbsp;
+[1929] for customers who have lower traffic sites.
+[1935] Now, while most functions are already warm, we&nbsp;
+[1935] want to help make this fast even when you have&nbsp;&nbsp;
+[1939] a function that starts up slow. And that's the&nbsp;
+[1939] difference between a good or great experience&nbsp;&nbsp;
+[1944] with your product. So what are we doing&nbsp;
+[1944] about it? Well, what we're going to talk&nbsp;&nbsp;
+[1952] about today are three different categories,&nbsp;
+[1952] but first, I want to toss out this poll to&nbsp;&nbsp;
+[1959] you all. If you could use this QR code or go to&nbsp;
+[1959] ship-vote.vercel.app here in New York or online,&nbsp;&nbsp;
+[1967] I'm curious to hear what you all think&nbsp;
+[1967] is the main reason for a cold start.&nbsp;&nbsp;
+[1974] We're going to have a couple of options&nbsp;
+[1974] here for you to check out. Is it Vercel&nbsp;&nbsp;
+[1978] infrastructure? Is it the framework runtime? Is it&nbsp;
+[1978] user code? Or my favorite, is it a skill issue? If&nbsp;&nbsp;
+[1989] you're talking about me, it probably is a skill&nbsp;
+[1989] issue, so I can see why that one might get more&nbsp;&nbsp;
+[1993] votes than others. So we'll let the votes tally&nbsp;
+[1993] in here a little bit. We've got people online,&nbsp;&nbsp;
+[1999] people here. It's a pretty close race. Let's see.&nbsp;
+[1999] Skill issue is going to win out, maybe? Okay. Oh,&nbsp;&nbsp;
+[2009] framework runtime takes the lead, the fastest&nbsp;
+[2009] horse in the race. Okay, we'll call it here.
+[2016] We've been digging in further on all of these&nbsp;
+[2016] options, and we want to talk about how we can&nbsp;&nbsp;
+[2023] improve this startup time across the&nbsp;
+[2023] infrastructure, the framework code,&nbsp;&nbsp;
+[2030] as well as user code. So all three of these make&nbsp;
+[2030] up a cold start, even though sometimes it's a&nbsp;&nbsp;
+[2038] skill issue for me as well too. So let's start&nbsp;
+[2038] with our infrastructure. Vercel functions now get&nbsp;&nbsp;
+[2044] proactively initialized. You can think about this&nbsp;
+[2044] kind of like how prefetching works in Next.js. So&nbsp;&nbsp;
+[2049] as a request to a function comes in, we're able to&nbsp;
+[2049] automatically start up that function ahead of time&nbsp;&nbsp;
+[2054] with no manual work required. You don't need to&nbsp;
+[2054] go in and tweak any knobs. It just keeps it fast.
+[2060] Now, let's say you do have a cold start,&nbsp;
+[2060] which does happen. How can we make that&nbsp;&nbsp;
+[2063] as fast as possible? Well, of&nbsp;
+[2063] course, as the kids are doing,&nbsp;&nbsp;
+[2067] we have to rewrite it in Rust. That's&nbsp;
+[2067] the solution—rewrite in Rust. Now,&nbsp;&nbsp;
+[2072] I know it's kind of a meme, but it actually has&nbsp;
+[2072] been extremely impactful for us. We recently&nbsp;&nbsp;
+[2076] announced our Rust-powered Vercel functions, and&nbsp;
+[2076] we've seen 80 milliseconds faster cold starts on&nbsp;&nbsp;
+[2082] average and 500 milliseconds faster cold starts&nbsp;
+[2082] in the largest applications. This is data coming&nbsp;&nbsp;
+[2087] from real Vercel customer traffic as well&nbsp;
+[2087] too. So that's our infrastructure. For the&nbsp;&nbsp;
+[2092] framework in Next.js, we've been working hard&nbsp;
+[2092] over the last year to minimize the framework&nbsp;&nbsp;
+[2097] runtime size when it gets bundled into a Vercel&nbsp;
+[2097] function and also we've tried to remove as many&nbsp;&nbsp;
+[2103] unused dependencies as possible because a&nbsp;
+[2103] smaller runtime means a faster startup time.
+[2109] So that's some framework changes, but let's get to&nbsp;
+[2109] the good stuff. Let's get to what we're doing for&nbsp;&nbsp;
+[2114] your code. Most of this cold start comes from&nbsp;
+[2114] the code that's provided into the function,&nbsp;&nbsp;
+[2120] and we think there's an opportunity&nbsp;
+[2120] here. What can we do here? Ideally,&nbsp;&nbsp;
+[2125] there was a way that we could just&nbsp;
+[2125] optimize this user code for you. Well,&nbsp;&nbsp;
+[2130] today we're excited to announce bytecode optimized&nbsp;
+[2130] Vercel functions, which we've been validating with&nbsp;&nbsp;
+[2136] select customers. We've seen up to 30% faster&nbsp;
+[2136] cold starts for larger applications from these&nbsp;&nbsp;
+[2143] bytecode optimized functions. This is huge because&nbsp;
+[2143] most of that cold start time is from the heaviest&nbsp;&nbsp;
+[2149] object in the world—my node_modules folder.&nbsp;
+[2149] It animated off the screen, there's so much.
+[2157] So let's talk a little bit about how this works,&nbsp;
+[2157] how this bytecode optimization works. A visitor&nbsp;&nbsp;
+[2161] comes into our site and invokes a function, and&nbsp;
+[2161] then the code, my source code, gets read and&nbsp;&nbsp;
+[2167] compiled down into that bytecode. Can you believe&nbsp;
+[2167] that at runtime it's parsing and compiling all&nbsp;&nbsp;
+[2172] of that code before just ultimately ending up in&nbsp;
+[2172] this? That's real bytecode. I mean, if it all ends&nbsp;&nbsp;
+[2178] up as bytecode, couldn't we just give the function&nbsp;
+[2178] bytecode directly? Just hand it over? Well, that's&nbsp;&nbsp;
+[2184] exactly what we can now do with Vercel functions.&nbsp;
+[2184] This is going to be rolling out to all customers&nbsp;&nbsp;
+[2188] in the coming weeks, and we're really excited to&nbsp;
+[2188] see these further improvements to cold starts.
+[2194] Now, what's better than running compute&nbsp;
+[2194] or having a cold start? No cold starts,&nbsp;&nbsp;
+[2198] if you don't have to run any compute at all.&nbsp;
+[2198] So let's talk about partial pre-rendering,&nbsp;&nbsp;
+[2202] which was a new experimental rendering&nbsp;
+[2202] model we introduced in Next.js 14. With PPR,&nbsp;&nbsp;
+[2209] you can optimize a significant portion&nbsp;
+[2209] of your page to be static, then you can&nbsp;&nbsp;
+[2213] leave holes for the dynamic content defined by&nbsp;
+[2213] your React suspense boundary. The static parts&nbsp;&nbsp;
+[2219] can get streamed to visitors instantly&nbsp;
+[2219] from the nearest Vercel region without&nbsp;&nbsp;
+[2223] blocking and waiting until the personalized&nbsp;
+[2223] components like the cart, my user profile,&nbsp;&nbsp;
+[2228] or that promotion that's going to allow me to get&nbsp;
+[2228] 40% off are able to then stream in on demand. So&nbsp;&nbsp;
+[2235] this not only means that cold starts are more&nbsp;
+[2235] rare and faster, but they also get to happen&nbsp;&nbsp;
+[2240] in parallel while you're running these static&nbsp;
+[2240] fetches and the dynamic content is streaming in.
+[2245] Now, we've been making improvements&nbsp;
+[2245] to PPR for many months now, and we're&nbsp;&nbsp;
+[2248] looking for your feedback as you experiment&nbsp;
+[2248] with it and try it out. To make this easier,&nbsp;&nbsp;
+[2253] you can now try out PPR on a single route&nbsp;
+[2253] versus opting in your entire application.&nbsp;&nbsp;
+[2259] That change is included today with&nbsp;
+[2259] the Next.js 15 release candidate.
+[2265] Woo! Yeah, I'm pumped about this one. It's&nbsp;
+[2265] jam-packed with features. First up, we have&nbsp;&nbsp;
+[2275] support for the React 19 release candidate just&nbsp;
+[2275] recently released. We have experimental support&nbsp;&nbsp;
+[2280] for the React compiler—very, very exciting,&nbsp;
+[2280] and I'm looking forward to using that in my own&nbsp;&nbsp;
+[2284] applications. Secondly here, something I've heard&nbsp;
+[2284] from many of you in the crowd, many of you online,&nbsp;&nbsp;
+[2290] hi Mom, please improve caching in the Next.js app&nbsp;
+[2290] router, and I'm really excited to share that we've&nbsp;&nbsp;
+[2296] changed the defaults for caching things like&nbsp;
+[2296] fetch and route handlers and the client router&nbsp;&nbsp;
+[2300] cache. All these things you know you want to opt&nbsp;
+[2300] into that behavior. So starting with Next.js 15,&nbsp;&nbsp;
+[2304] we've heard your feedback and made&nbsp;
+[2304] those changes, which is great. Yeah,&nbsp;&nbsp;
+[2309] caching improvements. As I mentioned, you can&nbsp;
+[2309] incrementally adopt partial pre-rendering. We&nbsp;&nbsp;
+[2316] also have a new design for Create Next App. Thank&nbsp;
+[2316] you, Evil Rabbit and YZ. And it also now allows&nbsp;&nbsp;
+[2322] you to opt into using TurboPack. TurboPack&nbsp;
+[2322] just hit 100% of tests passing for Next Dev,&nbsp;&nbsp;
+[2329] and we're really close, we're so close to&nbsp;
+[2329] marking it as stable. So we really want you&nbsp;&nbsp;
+[2333] to try this out on your new applications, see&nbsp;
+[2333] how things work, and give us some feedback.
+[2339] Alright, that's all for Next.js today. I'm&nbsp;
+[2339] going to welcome Ty to talk about security.&nbsp;&nbsp;
+[2352] Really appreciate that. Let's talk security, a&nbsp;
+[2352] foundational pillar of everything we build at&nbsp;&nbsp;
+[2357] Vercel and woven into our internal systems, our&nbsp;
+[2357] development processes, and the infrastructure we&nbsp;&nbsp;
+[2364] secure for you. As you saw, it's in our DNA.&nbsp;
+[2364] Our vision for Vercel security is simple:&nbsp;&nbsp;
+[2371] every website, every web application, we're going&nbsp;
+[2371] to try something new right now. Say this with me,&nbsp;&nbsp;
+[2378] "Secure by default." We believe protection&nbsp;
+[2378] against modern threats like DDoS attacks&nbsp;&nbsp;
+[2385] should be foundational. This vision&nbsp;
+[2385] guides product roadmaps as we strive&nbsp;&nbsp;
+[2390] to bring even greater visibility and control&nbsp;
+[2390] to teams of all sizes worldwide. At Vercel,&nbsp;&nbsp;
+[2398] we work hard to ensure our customers can have&nbsp;
+[2398] peace of mind knowing we're committed to industry&nbsp;&nbsp;
+[2403] standards and frameworks with our ISO 27001, our&nbsp;
+[2403] SOC 2 Type 2 certifications, and that they can&nbsp;&nbsp;
+[2409] trust that we're doing what we can to enable them&nbsp;
+[2409] to be successful with compliance and regulations:&nbsp;&nbsp;
+[2415] PCI DSS, HIPAA, GDPR, and the one over&nbsp;
+[2415] there that's still iterating to greatness.
+[2422] But let's look at Vercel security and the breadth&nbsp;
+[2422] of coverage it provides behind the scenes.&nbsp;&nbsp;
+[2428] As with all teams, it starts with&nbsp;
+[2428] people access security. Simply put,&nbsp;&nbsp;
+[2434] how can we ensure that the right people have&nbsp;
+[2434] the right access to do the right work all at&nbsp;&nbsp;
+[2440] the right time? You'll see this in action with&nbsp;
+[2440] deployment protection, where we can lock it down&nbsp;&nbsp;
+[2446] using password protection or Vercel authentication&nbsp;
+[2446] or perhaps restrict by trusted IPs. We also offer&nbsp;&nbsp;
+[2453] industry standards SAML with directory sync and&nbsp;
+[2453] role-based access control so even our largest&nbsp;&nbsp;
+[2461] enterprise customers can focus on iteration speed,&nbsp;
+[2461] not permissions management and user provisioning.
+[2469] Next, let's talk about infrastructure security.&nbsp;
+[2469] This represents our work to continuously harden&nbsp;&nbsp;
+[2476] our infrastructure against pervasive attacks.&nbsp;
+[2476] This includes our TLS infrastructure that helps&nbsp;&nbsp;
+[2481] automatically provision and renew those TLS&nbsp;
+[2481] certificates and secure compute, which creates&nbsp;&nbsp;
+[2486] a trusted perimeter around your application&nbsp;
+[2486] and its connected services. In this example,&nbsp;&nbsp;
+[2491] our customer Under Armour went ahead with&nbsp;
+[2491] their digital transformation to protect their&nbsp;&nbsp;
+[2498] Salesforce Commerce Cloud, instantly unlocking&nbsp;
+[2498] a secure path for composable architecture. And&nbsp;&nbsp;
+[2505] believe it or not, the Vercel firewall&nbsp;
+[2505] has been protecting your infrastructure&nbsp;&nbsp;
+[2510] for years with inbound attacks and managing and&nbsp;
+[2510] mitigating malicious attacks at layer 2 and 3,&nbsp;&nbsp;
+[2516] like SYN floods and DDoS attacks. But in&nbsp;
+[2516] reality, it's been operating behind the scenes,&nbsp;&nbsp;
+[2522] and by behind the scenes, it's been a black box.&nbsp;
+[2522] I got nothing on the screen. And well, that's why&nbsp;&nbsp;
+[2529] today we're introducing tools that bring greater&nbsp;
+[2529] visibility to attacks we're already stopping. Just&nbsp;&nbsp;
+[2536] this past two weeks alone, we have some really&nbsp;
+[2536] amazing stats, but one of the key things is we're&nbsp;&nbsp;
+[2543] targeted with SYN floods all the time. Now those&nbsp;
+[2543] malicious requests that are stopped by the Vercel&nbsp;&nbsp;
+[2548] firewall without you having to lift a finger&nbsp;
+[2548] will now be visible directly in your dashboard.
+[2554] We're bringing that visibility to all security&nbsp;
+[2554] events. Our North Star is complete automation.&nbsp;&nbsp;
+[2560] Say with me again, "Secure by default." While&nbsp;
+[2560] we can continue to do that with our investments&nbsp;&nbsp;
+[2566] into secure frameworks and infrastructure, you're&nbsp;
+[2566] the only one that understands your application,&nbsp;&nbsp;
+[2572] your audience, that are unique to&nbsp;
+[2572] your business needs. That brings me to&nbsp;&nbsp;
+[2577] particularly application security. We're moving&nbsp;
+[2577] beyond just automated platform layer 2 and 3&nbsp;&nbsp;
+[2586] security to empower you and your teams to&nbsp;
+[2586] customizable layer 7 protections. We want&nbsp;&nbsp;
+[2591] you to be able to control every single request.&nbsp;
+[2591] Every single request. So you can tailor measures&nbsp;&nbsp;
+[2599] that fit your security needs to your business.&nbsp;
+[2599] We're doing that with the latest enhancements&nbsp;&nbsp;
+[2603] to our Vercel firewall. I'm particularly excited&nbsp;
+[2603] to announce the Vercel Web Application Firewall.
+[2610] The WAF is Vercel-native, which of course&nbsp;
+[2610] means done the Vercel way. You get reliability,&nbsp;&nbsp;
+[2616] scalability, and of course first-party security&nbsp;
+[2616] without compromising on speed. The WAF includes&nbsp;&nbsp;
+[2623] a powerful custom rule engine that puts you in&nbsp;
+[2623] control and lets you decide how to handle your&nbsp;&nbsp;
+[2626] traffic: allow it, challenge it, block it, log it,&nbsp;
+[2626] based on characteristics like path, user agent,&nbsp;&nbsp;
+[2634] IP address, geolocation, maybe J4 fingerprints.&nbsp;
+[2634] We also offer managed rule sets that help you&nbsp;&nbsp;
+[2641] navigate and handle OWASP top 10 protection&nbsp;
+[2641] for those that want zero-config security. Your&nbsp;&nbsp;
+[2647] security teams now have direct control over the&nbsp;
+[2647] front-end deployments right from within Vercel.&nbsp;&nbsp;
+[2653] They can fine-tune incoming traffic, ensuring only&nbsp;
+[2653] legitimate traffic gets through. If an unexpected,&nbsp;&nbsp;
+[2660] undesired spike occurs, you, yes you, can leverage&nbsp;
+[2660] challenge mode to temporarily challenge all of&nbsp;&nbsp;
+[2665] those requests while you investigate, then&nbsp;
+[2665] simply create a custom rule. And today, we're&nbsp;&nbsp;
+[2671] also announcing rate limiting in beta, which means&nbsp;
+[2671] firewall-level request frequency enforcement. It's&nbsp;&nbsp;
+[2678] a mouthful. So you can control how even your&nbsp;
+[2678] legitimate users access your applications.
+[2684] The WAF leverages Vercel's inherent&nbsp;
+[2684] understanding of your app and the&nbsp;&nbsp;
+[2689] underlying optimal infrastructure&nbsp;
+[2689] that we take care of for you,&nbsp;&nbsp;
+[2692] giving this firewall unique insight&nbsp;
+[2692] into the context and even content&nbsp;&nbsp;
+[2697] of each request, which will help you achieve&nbsp;
+[2697] security gains that most security solutions simply&nbsp;&nbsp;
+[2705] can't match. These rules also get to leverage our&nbsp;
+[2705] work over the past eight years with our optimized&nbsp;&nbsp;
+[2713] data propagation pipelines. Now, with that&nbsp;
+[2713] same infrastructure that ensures instant domain&nbsp;&nbsp;
+[2718] assignments and 300-millisecond ISR replications,&nbsp;
+[2718] your firewall gets propagated in milliseconds.&nbsp;&nbsp;
+[2727] So they asked me to do a demo, but how do you&nbsp;
+[2727] really demo a firewall? And then I thought to&nbsp;&nbsp;
+[2733] myself, I'm a security guy. We've all&nbsp;
+[2733] experienced this 30-minute wait time&nbsp;&nbsp;
+[2738] of waiting for something to go out to the edge,&nbsp;
+[2738] the network, out into the world, and it's pretty&nbsp;&nbsp;
+[2743] painful. So seeing is believing. Let's get this&nbsp;
+[2743] in action. Lee, let's get you back up on stage.
+[2754] Alright, got a good tag team going again.&nbsp;
+[2754] Everyone still has access to the app,&nbsp;&nbsp;
+[2760] ship.vote.vercel.app or scan the QR&nbsp;
+[2760] code. When you went to the site at first,&nbsp;&nbsp;
+[2765] you may have noticed a "attack challenge mode,"&nbsp;
+[2765] but it could have occurred really quickly,&nbsp;&nbsp;
+[2770] and you didn't actually see it in action.&nbsp;
+[2770] So let's kick things up a notch. Lee,&nbsp;&nbsp;
+[2775] let's take a look at some of this traffic in the&nbsp;
+[2775] dashboard, shall we? Where's it all coming from?
+[2781] Well, it looks like we have a custom rule:&nbsp;&nbsp;
+[2783] "Hello NYC." Oh, interesting. Maybe&nbsp;
+[2783] we prepared in advance. What is that?&nbsp;&nbsp;
+[2788] Let's dig in here. We can see a bunch of different&nbsp;
+[2788] user agents, many of y'all here in the crowd&nbsp;&nbsp;
+[2793] logging in on your phones—iPhone or Androids.&nbsp;
+[2793] Interesting. Maybe we want to deny this traffic.
+[2798] I think we should. Why don't&nbsp;
+[2798] we just stop all of New York?
+[2801] Let's do it. Well, we have this rule "Hello&nbsp;
+[2801] NYC." It's logging. Let's change that to&nbsp;&nbsp;
+[2806] deny. We're going to review our changes, make&nbsp;
+[2806] sure everything's good. So let's publish that.
+[2811] Why don't we all refresh our phones?&nbsp;
+[2811] Is it updated already? Do we see it?&nbsp;&nbsp;
+[2816] Is that 300 milliseconds? It's updated.&nbsp;
+[2816] How about that? Long are the days of&nbsp;&nbsp;
+[2825] waiting 30 minutes. Now we can do it in&nbsp;
+[2825] milliseconds. Totally. So why don't we&nbsp;&nbsp;
+[2830] get rid of that rule and try something&nbsp;
+[2830] a little bit more interesting, Lee?
+[2833] Agreed. Let's throw that back. And let's&nbsp;
+[2833] go deeper into those user agents. I think&nbsp;&nbsp;
+[2838] that's an area where we've all struggled&nbsp;
+[2838] with getting legitimate traffic to our&nbsp;&nbsp;
+[2841] site. Let's look at something&nbsp;
+[2841] a little bit more interesting.
+[2844] Yeah, now you could imagine somewhere in&nbsp;
+[2844] here we might have some suspicious traffic,&nbsp;&nbsp;
+[2847] maybe specifically for y'all in the crowd&nbsp;
+[2847] if you try to run some scripts against this,&nbsp;&nbsp;
+[2851] maybe on your machine. We can dig in and&nbsp;
+[2851] view that and filter by user agents or&nbsp;&nbsp;
+[2855] countries or IP addresses. We have all this&nbsp;
+[2855] information we can dig into. So let's say,&nbsp;&nbsp;
+[2860] for example, someone in here was malicious, and&nbsp;
+[2860] we decide that we want to block that traffic.
+[2864] Let's block it. Let's do it.
+[2866] So if we go back to configure, you'll see I still&nbsp;
+[2866] have this one change pending from when I allowed&nbsp;&nbsp;
+[2871] all of the New York traffic back in. Everyone at&nbsp;
+[2871] home is just laughing at us like, "I can see the&nbsp;&nbsp;
+[2875] site." I'm going to make a new rule. We can call&nbsp;
+[2875] this my new rule, and maybe I want to, you know,&nbsp;&nbsp;
+[2881] make a request here based on the request path,&nbsp;
+[2881] maybe the user agent. I can look for some script,&nbsp;&nbsp;
+[2888] the query, cookies, IP address, region, city,&nbsp;
+[2888] state, or even unique fingerprints for that&nbsp;&nbsp;
+[2894] traffic. So we can go even further than user&nbsp;
+[2894] requests. But you know what? Maybe we'll do a&nbsp;&nbsp;
+[2899] user agent. And if anybody tries to do anything&nbsp;
+[2899] with Go HTTP clients, running those Go scripts,&nbsp;&nbsp;
+[2906] anything that contains any of that, we&nbsp;
+[2906] could then log it, we could block it,&nbsp;&nbsp;
+[2911] challenge it, or even bypass it. So this&nbsp;
+[2911] looks pretty good. I'll save this rule,&nbsp;&nbsp;
+[2916] and we can go back, publish these changes, and&nbsp;
+[2916] now I think New York should be back online.
+[2921] Are we back? Are we back? Are we&nbsp;
+[2921] so back? I think we're so back.
+[2925] We're so back.
+[2926] Alright, there we go. Awesome. Thank&nbsp;
+[2926] you so much. Thank you so much.
+[2939] You've seen it. Our mission is to make security&nbsp;
+[2939] more than just a defense against threats. We're&nbsp;&nbsp;
+[2944] committed to offering a platform where&nbsp;
+[2944] security is inherent, an integral part&nbsp;&nbsp;
+[2948] of your experience. Vercel security scales&nbsp;
+[2948] with the modern global web. It's designed&nbsp;&nbsp;
+[2954] to understand the applications it's securing so&nbsp;
+[2954] it never gets in the way of the user experience,&nbsp;&nbsp;
+[2958] and it gives you, yes, you, control of how you&nbsp;
+[2958] handle that traffic. As the web and the threats&nbsp;&nbsp;
+[2964] continue to evolve and AI workloads increase,&nbsp;
+[2964] the exponential impact of these attacks,&nbsp;&nbsp;
+[2970] Vercel security enhancements will not only secure&nbsp;
+[2970] your applications but also empower you to innovate&nbsp;&nbsp;
+[2976] and scale with confidence, knowing you don't need&nbsp;
+[2976] an additional service or CDN in front of Vercel.
+[2982] Thank you. With that...
+[3000] Got to love a successful live demo or a handful.&nbsp;
+[3000] Thank you, team. So we started Vercel with two&nbsp;&nbsp;
+[3008] simple commands: next dev and Vercel deploy. Eight&nbsp;
+[3008] years later, those commands have transformed into&nbsp;&nbsp;
+[3017] the front-end cloud, a platform that empowers you&nbsp;
+[3017] to ship, building great world-class applications.&nbsp;&nbsp;
+[3025] Today, the web is more powerful than ever.&nbsp;
+[3025] As AI is taking it to the next level,&nbsp;&nbsp;
+[3031] we're seeing major changes in how we create&nbsp;
+[3031] things and even how we understand the world&nbsp;&nbsp;
+[3037] around us. Remember two years ago, no ChatGPT,&nbsp;
+[3037] no Perplexity, no Claude, no Scarlett Johansson,&nbsp;&nbsp;
+[3048] no Midjourney, and now they're practically&nbsp;
+[3048] everywhere, extensions of our lives.
+[3054] But here's the thing. This isn't just&nbsp;
+[3054] about geeking out on new technology.&nbsp;&nbsp;
+[3059] It's truly about unlocking a whole new level&nbsp;
+[3059] of creativity for everybody. And all of the&nbsp;&nbsp;
+[3063] features we showed today were built to really&nbsp;
+[3063] empower you and to lower the barrier of entry&nbsp;&nbsp;
+[3070] to this technology. I really want you all to go&nbsp;
+[3070] out and build products and make people think,&nbsp;&nbsp;
+[3076] "Wow, how did this not exist before?"&nbsp;
+[3076] or "How is this so fast?" So the next&nbsp;&nbsp;
+[3082] generation of developers gets to bring ideas&nbsp;
+[3082] to the web a lot faster. They're unblocked,&nbsp;&nbsp;
+[3088] and with all these technologies, we can&nbsp;
+[3088] bring really meaningful changes to their&nbsp;&nbsp;
+[3092] lives. Everyone here is invited to build the&nbsp;
+[3092] future of the web with us. This is really all&nbsp;&nbsp;
+[3099] about why Vercel exists. This is why we invest&nbsp;
+[3099] so much into our developer experience—to empower&nbsp;&nbsp;
+[3106] developers. This is why we're bringing all this&nbsp;
+[3106] AI capability into the platform. It's really all&nbsp;&nbsp;
+[3113] about helping the web win. So let's transform&nbsp;
+[3113] the web together. Let's blow some minds. LFG.

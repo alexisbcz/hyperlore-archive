@@ -1,0 +1,1261 @@
+[0] I didn't build the startup for
+[2] investors. I just built what I thought
+[4] would be the best product for
+[6] developers. Welcome to Spotlight On, a
+[9] podcast about how companies are built
+[11] from the people doing the building. One
+[13] messy, exhilarating decision at a time.
+[16] Welcome to Spotlight On. I'm your
+[17] co-host Arun Matthew. And I'm Gonzalo
+[19] Moreira. We're here with our guest Paul
+[21] Copplestone, founder and CEO of
+[24] Supabase. Thank you for having me. Well,
+[26] thanks for being here. Means a lot to
+[28] us. Um let's start with what Supabase
+[32] is. Give us a quick overview. We'll go
+[34] into the story and the history both of
+[36] you and the company. But why don't you
+[38] tell us what what the company is all
+[39] about?
+[40] The simple way to explain it is a
+[41] backend as a service. Um our tagline is
+[45] build in a weekend, scale to millions.
+[47] So, we aim to provide developers
+[49] especially with all the tools that they
+[51] need to build the infrastructure
+[53] centered around Postgres actually.
+[56] Um Postgres being the world's most
+[59] popular database. Yeah, we very commonly
+[62] are known and kind of started our
+[64] journey as an open source Firebase
+[66] alternative. So, that's the other part
+[67] of Supabase that's really important.
+[69] We're open source. Everything we do is
+[71] open source and we've got a really
+[73] fantastic community around the open
+[75] source and we try to support them as
+[77] much as they support us. Let's start at
+[79] the beginning. Um Paul, tell us a little
+[81] bit about your upbringing and history
+[83] and what sort of led you to launch and
+[85] create Supabase. And this would include
+[87] a couple startups before that you
+[89] started before Supabase.
+[92] Yeah. Um well,
+[94] you can probably tell from my accent
+[95] that I'm not from the US. I'm from New
+[98] Zealand and I grew up there. New
+[100] Zealand's not a really tech-heavy
+[103] um country. There's a few breakouts. I
+[105] think Xero's the most famous. Yeah.
+[107] Um but yeah, to be honest, I didn't even
+[110] really know the concept of a startup
+[112] when I was growing up. Uh I don't know
+[113] when that concept even started in the
+[115] US, but for a long time I just thought
+[117] I'll build things and my father was an
+[119] entrepreneur
+[120] and is an entrepreneur. So, it's just
+[123] what I knew. I just knew that, you know,
+[125] you build things, build businesses and
+[128] started my tech journey more as a
+[129] contractor um helping people
+[132] um
+[132] and helping other businesses build the
+[134] infrastructure around. And my very first
+[137] professional job actually was building
+[139] with databases. It was very
+[141] database-centric.
+[142] And I could see how difficult they were
+[145] to use, but I kind of was fascinated by
+[147] them. So, I remember
+[149] one of the first things I did, it was,
+[152] yeah, probably 15 years ago now, was I
+[155] wanted to build a startup around
+[156] databases and I literally went and found
+[159] a millionaire in New Zealand and I
+[161] pitched them him this idea of building a
+[163] database startup. And uh I look back at
+[166] the email. It's basically what we're
+[168] building right now with Supabase, which
+[169] is kind of kind of cool. I would have
+[171] failed miserably. It would have been the
+[173] wrong time. I would have done it
+[174] differently, but obviously, you know, I
+[177] I completely forgotten until I um yeah,
+[181] someone was asking me these questions
+[182] about how I got started and I remembered
+[185] and I went back and saw the email.
+[187] That's funny. And so, um
+[190] when was a
+[191] What was the first company that you
+[192] started? Yeah, so this is my third
+[195] venture-backed um company. My first one
+[198] was a marketplace. Um it's very similar
+[202] to I think Thumbtack in the US. And we
+[204] took that model and we implemented it in
+[206] three countries in Southeast Asia. And
+[209] so, um I was the CTO of the business. I
+[212] um had met kind of a friend of a friend
+[214] who had done Groupon China. And so, he
+[217] was going to replicate that sort of
+[218] success in Southeast Asia. So, I
+[221] literally flew into Malaysia. We
+[222] started. We um built it in Thailand,
+[225] Malaysia, and Singapore. And um
+[227] yeah, we scaled it up. We raised money,
+[229] but it just wasn't the right market. And
+[232] also, super hard to build a three-sided
+[234] marketplace where we sit between two
+[237] different people. So,
+[238] yeah, I learned a lot. Um I learned a
+[241] lot from from scaling that up.
+[243] I learned a lot of what not to do to be
+[246] honest. The really classic what you
+[248] should not do, which is done by almost
+[251] everyone in their first one, is kind of
+[253] playing startup. Um you know, you
+[257] you'll see this very often when you go
+[258] to a startup meetup. One of the first
+[260] things people will ask is like, "How
+[262] many people in your team?" Or "How many
+[264] do you employ?"
+[265] And this is like a a classic trap. You
+[268] say it almost with pride, but actually,
+[271] you know, what we did was we took on the
+[272] funding. We put the posters up. We hired
+[275] like a lot of people on blitzscaling or
+[277] whatever, but we didn't really have
+[279] product market fit. And there's no point
+[281] blitzscaling until you've actually got,
+[283] you know, a really good product that
+[285] people want to pay for.
+[287] So, um we actually did the opposite. We
+[290] in Supabase now, we in the early days
+[293] really only hired when we had a
+[295] hair-on-fire problem that
+[298] um you know, we're completely
+[299] understaffed uh understaffed. And so,
+[302] we've got a problem that is getting
+[304] completely neglected. Then we'd hire
+[306] someone in. And it always felt like
+[308] we're a little bit behind on hiring, but
+[310] that's good because it keeps the the
+[311] density, the velocity up. Um when we
+[314] hired someone, they just had a ton of
+[315] work to do.
+[317] I think one thing that I did learn a lot
+[320] was actually from my co-founder. He was
+[321] very good at fundraising and this is
+[324] probably why we played startup. Um
+[326] you know, we we could fundraise quite
+[328] easily and we could use the cash to kind
+[330] of hijack this startup mentality and,
+[334] you know, we got the press and
+[335] everything.
+[337] But yeah, when I
+[338] I remember the first meetings that I had
+[340] with VCs and I was a shy Kiwi where, you
+[344] know, I didn't even want to promote
+[346] anything that I'd done in the past. And
+[348] it's very different the Kiwi mentality
+[351] to the US mentality.
+[353] So, um so yeah, I had that beat out of
+[356] me very quickly.
+[357] And uh yeah, so I I learned a lot from
+[360] from him. So, um that was nice. Um the
+[363] second one uh I went to Singapore and it
+[366] was kind of a similar one. If you know
+[367] Managed by Q, it's basically kind of
+[369] managing services and office management.
+[372] And it was something very similar to
+[374] that just for the Singapore audience.
+[376] And we had a kind of
+[378] uh regulatory moat that we could um use
+[381] in that one. So, it's still going and
+[382] it's doing very well actually. Most of
+[384] the tech that we use now at Supabase was
+[387] what I implemented in my in my second
+[389] startup. And so,
+[391] when 2020 came along, I uh reached out
+[394] to my co-founder and and said, "Hey,
+[395] this is what I'm going to build. Do you
+[397] want to do it?" And he said yes luckily
+[399] and here we are 5 years later. That's
+[401] great. It's a very non-traditional
+[403] background for a dev tools or
+[405] infrastructure type company. I mean,
+[407] most founders in this category have a
+[409] deeply technical background. They
+[411] typically don't start something that's a
+[412] consumer business or marketplace
+[414] business.
+[416] But what do you think about those
+[417] experiences sort of helped you in
+[419] launching something in this category?
+[421] I think the thing that actually between
+[424] the first and the second business, I
+[426] think I helped maybe five or 10 people
+[429] launch their businesses and I was just
+[432] there was not much tech talent. So, what
+[433] I became very good at was essentially
+[436] this kind of build in a weekend type
+[438] idea. And I wanted to find the highest
+[441] leverage tools that we could through
+[442] open source. You know, a lot of the time
+[445] developers think, "Oh, I'm going to
+[446] build this myself." The temptation is
+[448] always just to build, but not to get to
+[450] the finish line. And I was like that at
+[453] the start as well. And at some point
+[455] what clicked in my brain was like, "It
+[457] doesn't really matter what you start. It
+[458] matters what you finish." And so, I was
+[460] always focused on getting to the finish
+[462] line and trying to help these founders
+[464] launch something very quick so they
+[466] could iterate. So, I think that's the
+[469] thing. It didn't really matter what
+[470] industry I helped um
+[472] web3 companies launch during that time.
+[475] I um was trying to launch a AR/VR
+[479] startup during that time. Very deep tech
+[481] as well. I helped several companies
+[484] launch cuz I went through an accelerator
+[485] and after that a few of them need needed
+[488] help.
+[489] So, that was the thing. I just became
+[491] very good at finding how to get people
+[495] to market very fast. How did you settle
+[497] on Postgres that you were going to build
+[499] on Postgres? And when you think about
+[502] the core differentiators or what makes
+[504] Supabase truly unique in a world that's
+[507] littered with different products and
+[509] competing solutions, like how would you
+[511] define what makes you unique?
+[513] Yeah. So, the idea of Postgres was
+[518] pretty obvious to me because I consume
+[521] Hacker News so much. So, kind of before
+[524] my finger on the pulse is just going
+[525] through Show Hacker News, reading Hacker
+[527] News. And it wasn't at the time, 2019,
+[530] it wasn't the world's most popular
+[532] database. Now it is and I could see the
+[534] trajectory that it was on. It has some
+[537] very nice characteristics if you want to
+[538] build business around it. It's open
+[540] source. It's not owned by any particular
+[543] commercial entity. In fact, it cannot be
+[545] owned by any particular commercial
+[547] entity. So, that was good for us because
+[549] then we could build an offering and we'd
+[551] compete on experience, not on license or
+[553] anything like that. So, that was great.
+[556] The thing that makes us unique is
+[558] exactly that. We literally compete
+[560] inside our principles. We've had them
+[563] since day one, how we build our
+[564] platform. One of them is portability. We
+[567] think that, you know, if our platform is
+[570] not the best, then you should be able to
+[572] take your data and take it to any other
+[574] Postgres provider. And a lot of people
+[577] think that's nuts. Like, "Oh, where's
+[579] your moat? You can just download and and
+[580] reinstall." But I think that's
+[582] fantastic. The reason people choose us
+[585] is because we're competing all the time
+[587] for their their love essentially.
+[589] It expresses confidence. Yep. Yeah.
+[592] And we have had We've literally helped
+[594] people migrate away when we were not um,
+[597] satisfied satisfying what they needed.
+[599] So,
+[600] you know, we live by that principle.
+[603] Can you um,
+[605] that to investors is sort of a very
+[607] contrarian bet that you made early on,
+[609] right? Not many database companies start
+[612] with saying, "Hey, we're not going to
+[613] build our own engine. We're going to use
+[614] something else." Sure.
+[616] Can you talk about that decision and how
+[618] that felt at the time? Did it feel
+[619] contrary to you? Did it feel natural?
+[621] Well, the first thing is I didn't build
+[623] the startup for investors, you know? So,
+[626] I just built what I thought would be the
+[628] best product for developers. And I truly
+[631] thought Postgres is the tool. It's
+[633] extremely extensible.
+[635] Um, we've done a few unique things for
+[637] our platform. So, we don't just offer
+[639] Postgres. We offer these like
+[642] auto-generated data APIs. We've got a
+[644] storage service and off
+[646] uh, service. And these are all the
+[649] questions that I needed to answer at the
+[651] start was, you know, if you want to
+[654] launch a business very fast over a
+[656] weekend, build in a weekend, you it
+[659] turns out you don't just need a
+[660] database. You need a bunch of tools like
+[662] imagine you're going to build Instagram.
+[664] You want to log your users in. You want
+[666] to store those images and files and you
+[668] can't store them inside the database.
+[670] And maybe you want some an API to access
+[673] the database securely. So, we kind of
+[675] built this all these like day zero
+[677] products that you need around the
+[679] database, but really focused in on like
+[682] leveraging the database as much as you
+[683] could.
+[685] So, um, so when we compete against other
+[688] database providers, typically their
+[691] their model has been, "Oh, you know
+[693] what? I can build a more scalable
+[695] Postgres offering." Which to be honest,
+[698] sometimes they do and they do a very
+[699] good job, but that's not what the
+[701] developer needs when they're choosing a
+[703] database. What they need to do is get to
+[706] market very fast and they don't want to
+[708] think about, you know, whether it's
+[710] super scalable. They just want to think
+[712] whether it's super easy to use. So,
+[713] maybe on the on the product side,
+[716] would love to just hear
+[718] what have been the critical milestones
+[720] along the way. So, you talk about
+[722] um,
+[723] off as sort of when you're finding
+[725] product market fit, something which sort
+[727] of tipped the scales.
+[729] You do rolling launches now. You're
+[730] building at incredible velocity. What
+[732] are the tip the milestones that you
+[734] think are most important in Superbase's
+[735] history so far?
+[737] Yeah, we've been pretty fortunate in
+[738] that our road map's almost been defined
+[741] by us
+[742] for us by our community.
+[744] So, when we did our first launch on
+[747] Hacker News, it was like May 2020.
+[750] And it wasn't even us. Someone put us on
+[753] Hacker News and we got a lot of love
+[756] around the positioning actually, open
+[758] source Firebase alternative.
+[760] Um,
+[761] we got a lot of hate for that as well.
+[762] Funny enough, someone said, "Ah, their
+[764] positioning's terrible." As they do on
+[766] Hacker News. Turns out then it was the
+[768] best positioning we could have had.
+[771] But what we had was a database and a
+[774] data API, but no off. And they said,
+[776] "This is great, but we can't use it
+[778] until we've got off."
+[780] And so, what we did all throughout YC
+[782] was we just worked on off.
+[785] And I remember, can I swear in this
+[787] interview? Yeah.
+[788] you want. I remember like we'd turn up
+[790] every week and we'd meet Michael Seibel,
+[792] who's like the co-founder. And here it
+[795] is pretty I don't know if his reputation
+[797] outside of YC is this, but basically he
+[800] he you can go and meet Michael and he'll
+[802] he'll think you've got a good idea and
+[804] he'll tear it apart, but in a good way.
+[806] Like you go away thinking, "Ah, yeah,
+[807] this is not what matters. This is what
+[809] matters."
+[810] And basically we'd turn up every week
+[812] and
+[813] um, I'd say, "You know, we're building
+[814] off. Our users asked us to build off."
+[817] And after a while he's he said, "You
+[820] know, Paul,
+[822] for like 4 weeks you've been telling me
+[823] you're going to build off.
+[825] When the are you going to ship
+[826] off?" And so, so we just had to like
+[830] hammer it out and figure it out. And
+[832] about 3 weeks before demo day, um, we
+[835] shipped it and we put it on Hacker News
+[837] again and we said, "Hey, you guys asked
+[839] for off. Um, here it is. We've shipped
+[841] it and we've done it in this
+[843] Postgres-centric way, which no one kind
+[844] of believed that we would be able to
+[846] pull off."
+[847] And um, so sure enough, it went to the
+[850] top of Hacker News again and people
+[853] like the fact that you listen to what
+[855] they asked for and you deliver on
+[857] exactly what they asked for. And that's
+[859] been the cadence basically. Each time we
+[861] launch something, we see what they asked
+[863] for, the feedback. And then we've almost
+[865] got that 3-month
+[868] you know, road map ahead of us. And we
+[870] started building that into our company
+[872] philosophy. Launch weeks are a big thing
+[874] now, I know, across the industry, but
+[876] they started with us coming out of YC
+[879] and not having the demo day
+[881] looming in front of us. So, we wanted to
+[883] recreate that feeling. And so, we I know
+[886] for example, our next demo day is in our
+[889] next launch week is in 3 months from
+[891] now. And that's where we'll ship a lot
+[893] of the feedback that we got in this past
+[895] launch week.
+[896] We'll um,
+[898] dive into a little bit of product road
+[899] map and where you're headed. But can you
+[901] just give us a sense of
+[903] product philosophy?
+[905] How you think about where you're headed,
+[907] what you prioritize, what's on your road
+[909] map? Like just how you think about that.
+[911] And some of that I imagine is informed
+[913] by the community, which we just talked
+[914] about. But some of that is, you know,
+[917] how you think about where the world is
+[919] moving and this massive AI wave that
+[921] you're riding. And so, just take us
+[923] through our general philosophy around
+[924] product and then we'll dive into some of
+[926] the specifics around where you're
+[928] headed. Yeah, we've got a
+[931] it's hard to give one single philosophy
+[933] around product. Um, generally we just
+[935] see things through a Postgres lens.
+[937] That's I guess the overarching theme.
+[940] We do a lot of principles around our
+[942] product. So, we try to stick to um,
+[945] existing standards.
+[947] Um, we try to make sure everything's
+[949] portable, composable,
+[951] um, and integrated. So, a lot of the
+[953] time it's actually dual philosophy. So,
+[955] like um,
+[957] they might seem contradictory, but one
+[960] is that everything feels integrated.
+[964] Um, for example, when you come into
+[965] Superbase, it should feel like it's just
+[967] a single API and everything fits
+[969] together. But actually we have say five
+[972] different products, off and storage and
+[974] database. And you can use each one of
+[976] them as a standalone service and very
+[979] often people do. Um, they might just use
+[982] off in the database or they might just
+[983] use the database with existing
+[986] um, providers. It could be Drizzle or
+[988] Clerk or off zero or anything else. And
+[991] that's how we've designed it so that
+[992] it's very composable, almost like Lego.
+[995] And it's a bit hard to design the system
+[998] like this, but since we had it like that
+[1001] from day one, it's been very very good.
+[1004] So, what's happened is
+[1006] these AI builders came along.
+[1008] Um, the Bolts, the Lovable Bones, the V
+[1010] Zeros,
+[1011] uh, Cursors and everything. And what we
+[1013] found was actually they really enjoy the
+[1017] um, the single API feel of the platform.
+[1021] The reason why is because as soon as you
+[1023] have to stitch together many tools,
+[1025] um, then it becomes more difficult for
+[1027] the LLM to actually figure out the
+[1030] context between say three different
+[1032] platforms. But because we provide our
+[1034] own basically behind a single data API,
+[1037] it becomes very simple for for the LLM
+[1039] to scaffold out an entire back end.
+[1041] Versus maybe the enterprise customer,
+[1043] they actually might start only with
+[1045] Postgres and then they'll try out
+[1047] different services over time. So, what
+[1049] we're finding is yeah, this almost
+[1051] divide where both have proven equally
+[1055] important. And um, even more so like
+[1057] we're seeing attach rates for the AI
+[1059] builders
+[1061] for different products like real time
+[1063] that we've never seen for just
+[1065] developers building on our platform. You
+[1067] know, when we're talking about
+[1068] Superbase, we talked about sort of the
+[1070] business model and the product and sort
+[1071] of giving the company the right to get
+[1073] lucky and catch new waves of growth and
+[1075] all the rest. But how much
+[1077] how much would you say, you know, you
+[1079] you mentioned years ago you had this
+[1080] idea about some kind of database
+[1082] startup, which was different than
+[1083] Superbase, but some version of it,
+[1084] right?
+[1085] Yeah. How many of your product decisions
+[1086] have been deliberate and how much of
+[1088] your success would you say is strategic
+[1090] and deliberate versus
+[1092] we built something cool and we stumbled
+[1093] into a great wave and we've been really
+[1095] lucky. How do you think about that
+[1097] trade-off? Yeah. Well,
+[1099] the deliberate thing is like
+[1101] I said this to you guys, right? The
+[1103] question we always wanted to answer was
+[1105] like, if you want to build the next
+[1107] Oracle, how do you go about it? So, like
+[1109] that's the deliberate thinking in in our
+[1111] brain. Like we need to build towards
+[1113] that vision.
+[1115] And then like you can scope it right
+[1117] down to what's the next 3 months. What's
+[1119] what's the next 3 months? What's the
+[1121] next 3 months?
+[1122] So, the waves that came along um,
+[1125] were always just for example, we've seen
+[1128] like the web three, the NFT wave and
+[1131] like now the AI wave.
+[1133] Yeah, a bunch of different waves.
+[1135] Generally we just see them happening and
+[1137] they've got some direct 3-month
+[1139] um, requests.
+[1141] And it's not like you give up on this
+[1142] like long-term vision of building the
+[1144] next Oracle. It's just that you need to
+[1146] solve some some uh, decisions in the
+[1149] next 3 months
+[1151] that
+[1153] you know, won't conflict with that
+[1154] long-term goal. So, it's very easy. Like
+[1156] they'll ask us, MCP is the one at the
+[1159] moment. Yeah, that means that people can
+[1161] spin up more databases. Is that
+[1163] conflicting with uh, the Oracle goal?
+[1165] No, it just might displace some of our
+[1167] road map. It will take us a bit longer
+[1169] because we have to build this new thing.
+[1171] Versus maybe
+[1173] uh, one which is slightly more difficult
+[1176] is maybe the positioning and branding
+[1178] around um, Superbase matters. So, if we
+[1181] move completely towards like this world
+[1183] where
+[1184] people are building and they might not
+[1185] even know what a database is. Um, they
+[1188] could build, you know, many um, smaller
+[1190] tools. Will our brand become, you know,
+[1193] just for like non-developers? Can we
+[1196] actually reach the enterprise? These are
+[1198] much more deliberate things. We need to
+[1200] think strategically about the product,
+[1202] the packaging, how to position ourselves
+[1205] both for AI builders and for enterprise.
+[1208] And that's where I need to spend more
+[1210] brain cycles. Maybe let's talk a little
+[1212] bit about team. Um
+[1215] you started the business a month or two
+[1217] before COVID hit. Yeah.
+[1220] So, we we started January 2020.
+[1222] January 2020. So, you started in
+[1224] Singapore and then COVID hit.
+[1227] What happened? And take us through your
+[1229] philosophy around team building for the
+[1231] first couple years. And now you have
+[1233] employees in 25 or 30 countries. You're
+[1235] sort of a fully distributed team. Take
+[1238] us through your team building
+[1240] philosophy, how you sort of manage the
+[1242] team. And I know folks listening will
+[1244] probably have tactical questions around
+[1246] how you manage that team and all the
+[1248] growth that you've seen over the past
+[1249] few years. Yeah, it's a great question.
+[1252] So, yeah, just high-level now, we're in
+[1255] Superbase is over 100 people. We're in
+[1257] 30 different countries. So, very split.
+[1260] There are no There's no HQ. Um
+[1263] we have offices, but they're just
+[1265] WeWork's and only if people want to use
+[1267] them. So, that generally means no one
+[1270] uses WeWork, but we offer it in case.
+[1273] Um when we started, we started Yeah,
+[1277] actually Anton and myself met in
+[1279] Singapore and then we got into YC almost
+[1283] immediately in the first couple of
+[1284] months. So, the plan was to move, of
+[1286] course, through
+[1287] YC to move to SF.
+[1290] But, that's when COVID hit and we had to
+[1293] build It was the first fully remote YC
+[1295] batch. So, we ended up building it
+[1298] directly from Singapore under complete
+[1300] lockdown. And there were only a few of
+[1302] us and
+[1303] a lot of the people we recruited at the
+[1304] time were ex-employees from our previous
+[1307] startups or or companies that we knew.
+[1310] And so, um
+[1312] yeah, we already had this kind of bond
+[1314] with those type of employees. The next
+[1317] phase of employees were more the open
+[1319] source maintainers who really knew the
+[1321] product and they started coming in and
+[1324] we could see that they were contributing
+[1326] a lot to to the product itself. And so,
+[1329] turns out that the open source community
+[1332] is almost like, you know, they're very
+[1334] accustomed to doing an async type
+[1337] environment. You uh do pull requests,
+[1340] you um detail out your GitHub issues and
+[1343] you do everything fully remotely. Not
+[1345] only that, you know, they're used to
+[1347] working uh they're used to working for
+[1349] free. So, for us to offer them um
+[1352] payment to do this job, they're very
+[1354] excited to do it.
+[1356] So, um yeah, it evolved a lot, the
+[1359] company. Tactics-wise now, it's pretty
+[1361] interesting.
+[1363] We use generally Slack for um
+[1365] synchronous comms. Um
+[1367] we use um
+[1369] uh Google Meet for synchronous um like
+[1373] calendar um
+[1374] invites, meetings.
+[1376] Meetings, there's very few. We have one
+[1379] meeting per
+[1381] team per week and that's it. Um that was
+[1385] very strange for a lot of people
+[1386] joining, actually. We had a lot of
+[1388] people join at the start and they said
+[1390] um That'd be impossible for Rune. Rune
+[1391] loves a good meeting.
+[1392] Yeah, yeah, love Okay, yeah. And get as
+[1394] many people in as possible, please.
+[1396] Yeah. We actually had, you know, because
+[1398] at the time
+[1399] during COVID, everyone
+[1401] had worked remotely. And then um so,
+[1404] we'd ask people, "Oh, you know, have you
+[1405] worked remotely before?" And they said,
+[1407] "Yeah, yeah, yeah, I've done it." And
+[1408] then they get into Superbase and they're
+[1409] like, "Oh, uh you know, what I meant was
+[1412] like same time zone." Right. And what
+[1415] they didn't realize is you spend 95% of
+[1417] your time coding
+[1420] uh and then like 30 minutes a week you
+[1422] see people and that's it. So, yeah, we
+[1424] had built up this written culture that
+[1426] we really we became very good at weeding
+[1428] out the people who just didn't like that
+[1431] type of culture. So, the written culture
+[1433] is the most important thing of Superbase
+[1436] now and I don't dictate too much the
+[1439] the roadmap or anything. We hire very
+[1441] good people, a lot of ex-founders who
+[1444] just know what they're doing. Then it's
+[1446] really about getting alignment and
+[1448] consensus around the way that we might
+[1450] What we might ship, how we might ship
+[1452] it. So, we used Notion a lot at the
+[1456] start. Um and we do this thing an RFC,
+[1458] which is very common in open source. It
+[1460] means request for comments.
+[1462] And um even this evolved. So, what you
+[1465] do is say you put a problem, a solution,
+[1469] and then you put it out and you get some
+[1471] comments. What I found, which is natural
+[1474] for humans, is that when you do this,
+[1476] generally you come up with a solution in
+[1478] your brain and you formulate a problem.
+[1480] So, the RFC now is like problem, who are
+[1483] the customers asking for it, and then
+[1485] three solutions. Mhm. The three
+[1487] solutions are really good because, you
+[1489] know, generally you'll think of only the
+[1491] first one and you become very attached
+[1493] to that idea. And especially in an async
+[1495] environment, it could be a day or two
+[1497] before you uh receive any any comments.
+[1500] So, um having to put three um decouples
+[1504] the solution from your ego, essentially,
+[1506] and uh allows you to think a little bit
+[1509] outside the box. And so, yeah, that's
+[1510] how we do it still to this day. If
+[1512] someone's going to make a big change,
+[1514] they create an RFC with the problem,
+[1516] customers, and three solutions and then
+[1518] they put it out to the entire company
+[1521] where anyone can comment. And then at
+[1523] some point there'll be an approver,
+[1524] maybe me, and um
+[1527] we approve it and they start building
+[1528] whenever they want. Generally, you start
+[1530] looking at your core metrics. For us,
+[1532] weekly active databases is our weekly
+[1534] active projects is our our key metric.
+[1537] And it's very tempting to to automate
+[1540] that so that you just can see that
+[1543] anytime.
+[1544] But, YC says, "Uh don't automate it.
+[1546] Just write it down every week. Start a
+[1548] spreadsheet and manually input it." And
+[1550] so, still to this
+[1552] um to this day,
+[1554] every week on Slack, Ann starts a thread
+[1557] called Monday Metrics Madness. And it's
+[1559] the same spreadsheet that we had since
+[1561] YC, now with a million metrics.
+[1563] Mhm. And um the teams have to go and
+[1566] update manually their metrics, whatever
+[1568] they've decided are their key metrics.
+[1570] We guide them a little bit, but they've
+[1572] kind of decided. And then inside that
+[1574] thread, they essentially do a team
+[1576] stand-up and you can um follow all the
+[1578] replies and that's how we keep alignment
+[1581] across the teams. Hey, we shipped this.
+[1582] This is what we're working on. And then
+[1584] if anyone's got questions, they pop them
+[1586] off into the relevant team teams. And
+[1590] the rationale of manually inputting the
+[1592] metrics is that the team owns it or
+[1595] understands it more. More that they've
+[1597] got to have finger on the pulse, right?
+[1599] If it's automated, you're not going to
+[1601] look at it. And, you know, we've talked
+[1604] about this. One of the things that we're
+[1606] um doing is this weekly business review.
+[1609] Um it's kind of hijacking the weekly
+[1611] business review process where, you know,
+[1614] you should know off the top of your
+[1615] head. For example, the the Edge
+[1618] Functions team should know
+[1620] the number of projects that were
+[1622] launched last week and what percentage
+[1624] of those launched
+[1626] um started using Edge Functions. And
+[1629] they should have that number directly.
+[1632] And they do. They get really proud of
+[1633] like how many people are using their
+[1636] product. It like when they see it going
+[1638] up, then they dig into why that was and
+[1641] what changes they made. And that's the
+[1643] behavior you want to drive. Mhm. It's a
+[1646] super unique way of building, but I
+[1649] think it's very true to both the problem
+[1651] that you're solving and
+[1654] candidly finding the best talent
+[1656] anywhere in the world to work together.
+[1657] I mean, to get former founders that are
+[1660] used to having independence and freedom
+[1663] to sort of join forces and be part of
+[1665] the organization, I mean, I think you
+[1667] have to build it this way. But, today
+[1669] most of the business has been product
+[1671] and engineering, you know.
+[1673] How do you think about that going
+[1674] forward? And how you scale a system like
+[1676] this, particularly when you have to
+[1677] build out other parts of the
+[1679] organization that maybe are just a
+[1681] little bit lighter at this point. Yeah,
+[1683] to be honest, I think the system that
+[1685] we're built is the scalable solution
+[1687] that most companies need to find
+[1689] eventually, right? Like you can't be
+[1692] across everything as a founder. I
+[1694] literally just cannot. So, you know,
+[1696] we're building this distributed
+[1698] organization that eventually a a 2,000,
+[1702] 3,000 person company has to find their
+[1705] feet on.
+[1706] And we hire these ex-founders who have
+[1709] um you know, done that themselves. So,
+[1711] they know
+[1712] um they probably don't want to manage.
+[1713] They're reluctant managers, but they
+[1715] know that they have to do it and they've
+[1716] done it before. So, you know, I feel
+[1720] like we've kind of gotten ahead a lot on
+[1722] like what the next stages of the company
+[1724] are going to look like. Yeah.
+[1726] You You've You've referred to your
+[1728] talent acquisition model as Moneyball
+[1731] Yeah. for software. Can you Can you talk
+[1733] a little bit about that? Yeah, well, at
+[1734] the start Sorry, Moneyball, of course,
+[1736] is the movie where um
+[1738] they had very little money. So, they
+[1740] hired like
+[1741] uh um
+[1742] people in baseball with the best
+[1744] statistics.
+[1746] But, maybe we're super cheap. Um
+[1749] well,
+[1750] we didn't have a lot of money at the
+[1751] start. And so, uh we're a startup and
+[1754] we're going to have to go up against
+[1755] these like the AWS's of the world. How
+[1758] can we compete? Well, open source was
+[1760] one of the ways that we did that. And um
+[1763] we The other really
+[1765] good way of doing that is just not
+[1767] looking only in SF and New York for your
+[1770] talent, right? We hired from anywhere in
+[1773] the world. And not many companies were
+[1776] willing to do that. And so, um yeah, our
+[1780] company being distributed across 30
+[1782] countries is literally because we would
+[1784] scour the the earth to find the right
+[1786] person for the job that we actually
+[1789] needed and then it didn't matter where
+[1790] you are as long as you are willing to
+[1792] put your head down and do that job we
+[1795] would hire you and now our salaries are
+[1796] going up so it actually also has a
+[1799] really nice effect that generally like
+[1802] let's say we hire you in Peru there's no
+[1804] way a
+[1805] Peruvian company will compete with
+[1807] Superbase salaries so over time
+[1810] generally you have attrition
+[1813] maybe because like your best people
+[1815] people look at your company and they say
+[1818] our Superbase are good let's take their
+[1819] people well now they're not willing to
+[1822] take our people because they're based
+[1823] all around the world whereas if we had
+[1825] hired here in SF then of course they
+[1827] could just skip over to
+[1830] I don't know open AI or something like
+[1831] that where they'll get paid really well
+[1835] you know it's it's just worked out
+[1837] really well for us How do you um
+[1839] keep the cultural consistency as you
+[1841] scale like it's pretty remarkable how
+[1842] sturdy hard working independent the
+[1845] whole team is you've done so much with
+[1846] so little
+[1847] what are the what are the criteria how
+[1849] do you keep it consistent
+[1852] I guess there's always two ways of
+[1853] thinking of that is like you come up
+[1855] with the culture and then like you
+[1858] develop people into your culture I don't
+[1860] think that really works
+[1862] I think you have to realize the be very
+[1865] deliberate about the type of culture you
+[1866] want and then hire the people that fit
+[1869] that culture already um
+[1871] and you know I guess people think this
+[1875] controversial because they think oh then
+[1876] you've got no diversity which absolutely
+[1879] is not true we've got extreme diversity
+[1882] but the way of working is the thing
+[1884] that's important just being very
+[1887] focused on work intrinsically motivated
+[1889] low ego all of these characteristics it
+[1892] doesn't matter where you're which
+[1894] country you're from or anything like
+[1896] that or which gender you are or anything
+[1898] we just look for these characteristics
+[1900] within people and if they don't fit that
+[1903] that's the kind of final barrier
+[1905] then we just don't hire them Well part
+[1907] of what I think makes Superbase so
+[1908] special is just the community love
+[1911] around the product and the company and
+[1913] it's obviously something that you guys
+[1914] have been very intentional about and
+[1916] have cultivated but it's taken a life of
+[1918] its own you have meetups in 70 countries
+[1922] around the world 100 I'm I'm behind on
+[1925] it and the the feedback just online is
+[1928] extraordinary and so just take us
+[1930] through
+[1932] anything that you can share about the
+[1933] community in terms of metrics or size or
+[1935] engagement or what you pay attention to
+[1937] and then some of the tactical things
+[1939] that you do to foster that level of
+[1941] community that we just think is very
+[1944] special and extraordinary
+[1946] you can almost think of Superbase like
+[1949] concentric spheres of
+[1951] of a company essentially getting looser
+[1953] and looser all the way out into a
+[1955] community so we've got the core team
+[1957] that we hire then we've got even the
+[1959] contractors the maintainers and then the
+[1961] community and then the wider audience
+[1964] that's largely how we thought about it
+[1966] from the start so and people can move in
+[1968] and out of these concentric circles we
+[1971] quite often
+[1973] hire people directly from the community
+[1975] as contributor some of our first hires
+[1977] were just maintainers of tools that we
+[1980] needed they could be based in Peru or
+[1984] yeah Spain or something like that and we
+[1986] would hire them because we're fully
+[1987] distributed
+[1989] the community's been
+[1990] amazing honestly and that's
+[1993] to be honest our biggest mode is just
+[1995] how awesome our community is
+[1997] they can help they can contribute they
+[2001] find bugs they report them they give
+[2003] feedback they hold us to a certain
+[2006] standard so it's it's kind of awesome
+[2009] that we get access to all of these
+[2011] people in terms of numbers
+[2014] we don't really measure
+[2016] I mean I think we're in a top 100 repo
+[2020] on GitHub for example by stars
+[2022] we stopped caring a lot about those sort
+[2024] of metrics early on now we're more
+[2027] focused on yeah just making sure that
+[2030] the community itself are really
+[2032] benefiting and so we do things we don't
+[2035] publish them too much but if people are
+[2037] regularly maintaining we sponsor them
+[2040] we pay maintainers for for doing some of
+[2043] the periphery projects like
+[2046] maybe our client libraries of different
+[2048] languages that you know we haven't yet
+[2050] made official we can sponsor people to
+[2052] do all of that so yeah many many
+[2056] initiatives that we've got going on just
+[2058] to try and support the community
+[2060] On our side of the table we see a lot of
+[2062] companies that start off with this
+[2064] mission around focusing around the
+[2066] community and investing in the community
+[2068] and then
+[2070] they get bigger they get more mature
+[2073] some of them move up market and they
+[2074] lose a little bit of focus I think on
+[2076] the community if you look at Stripe I
+[2078] think they're one of maybe the only
+[2080] examples of a team that has scaled but
+[2082] also has sort of stayed true to their
+[2084] roots and focusing on the community and
+[2087] individual developers and getting
+[2088] started and so why do you think that's
+[2090] just been so hard and how do you
+[2093] maintain that focus of obviously
+[2095] building and scaling a commercial
+[2097] business over time which is important
+[2100] but also focusing on what made you
+[2102] special in the first place and that real
+[2104] community love and fervency
+[2107] yeah I mean it's nothing
+[2111] it's pretty obvious right so what
+[2113] typically happens is developer tools
+[2115] business starts scaling up with their
+[2118] community then they start getting bigger
+[2120] and bigger customers those big customers
+[2122] take a lot of the attention especially
+[2124] of the founders and then the founders
+[2127] lose sight of the community because they
+[2129] have to cater to the big customers
+[2133] then eventually you know they realize oh
+[2136] they look back over their shoulder and
+[2138] they think oh our sales are slowing down
+[2139] what can we do let's re-engage the
+[2141] community
+[2143] and at that point it's too late you lost
+[2145] it you lost it I mean you have to
+[2147] you have to keep your community that's
+[2150] the thing that I've seen happen time and
+[2152] time again I'm I'm old enough now to
+[2153] have seen so many great developer tools
+[2156] that I've loved slowly
+[2159] wane in terms of the the community love
+[2162] because I feel they lose the pulse of
+[2165] their own community
+[2167] so the only way to solve it really is to
+[2169] make sure that those people who are
+[2171] significant in the company the likes of
+[2173] Ant and myself
+[2174] continue to engage the community and we
+[2176] know that it's going to be in the long
+[2178] term our number one mode
+[2182] Can you speak to tactically sort of how
+[2184] that progressed like statically we know
+[2185] Superbase is what it is today and is
+[2187] doing remarkably well the community is
+[2188] huge but
+[2190] it's not as if you and Ant and Rory and
+[2192] the like are
+[2193] Fortune 100 CMOs or sort of scaled
+[2196] companies in this way
+[2198] describe the journey like how did it
+[2200] start what was the edge how do you
+[2201] tactically engage with the community
+[2203] today So from a tactics point of view
+[2205] it was very easy at the start because
+[2207] our name is Superbase which with an A
+[2209] and like that's unique so I just
+[2212] literally receive to my inbox every
+[2214] single mention of Superbase on the
+[2216] internet I use this one F5 bot which
+[2219] kind of does Reddit and it's very basic
+[2222] but
+[2222] You got to you got to tell us the origin
+[2224] of that of that name too I can
+[2227] It's great
+[2231] the basic origin was that we
+[2234] so I was trying to find a good database
+[2236] name and it was going to be like ultra
+[2238] base or like hyper base or some sort of
+[2241] base right I had to have base I couldn't
+[2243] find anything so Ant like super is s u p
+[2246] e r that was taken and so as a joke I
+[2250] just put s u p a base and it was a
+[2252] placeholder for Ant and myself to to
+[2254] exchange
+[2256] you know ideas and
+[2258] actually the real reason was because Ant
+[2260] and I like a lot of memes and the
+[2263] Superbase is a nickname Minaj song so we
+[2265] could make a lot of Minaj songs
+[2270] not very good luckily not a lot of
+[2272] techies know this song
+[2274] and that's pretty much it like when we
+[2276] hit we eventually got found and someone
+[2278] put us on Hacker News and it went to the
+[2279] top and at that stage we realized oh we
+[2282] can't actually change the name Yeah
+[2284] you're locked in so yeah it's like one
+[2286] of my
+[2287] one of my regrets but
+[2289] yeah now everything inside the company
+[2291] is like super something super troopers
+[2293] and all these names and it makes me
+[2295] cringe all the time but
+[2297] but we're stuck with it and I'm sure
+[2299] when we get to um
+[2301] to IPO maybe it'll be
+[2303] our ticker symbol can be super
+[2307] but technically speaking I mean just to
+[2308] find
+[2310] yeah like that mention of super was
+[2312] pretty pretty easy
+[2314] so
+[2315] to this day I still receive all those
+[2317] emails I mean there's too many for me to
+[2319] keep up with but I skim through and
+[2321] anything especially now critical
+[2322] feedback I'll jump in and I'll like
+[2325] search on Twitter when people mention us
+[2327] and I'll actually respond to people just
+[2329] yesterday someone said they pinged me
+[2334] and they said oh you know I'm missing
+[2335] this on the open source repo and I they
+[2340] wrote kiwi.com and so then I jumped into
+[2343] our slack said to the front end hey is
+[2345] this missing our front end person
+[2347] responded and then within the space of
+[2349] 12 hours we'd fixed this this issue it
+[2353] wasn't even a GitHub issue it just they
+[2354] just pinged me on Twitter At what point
+[2356] does a community come sort of self
+[2358] sustaining like versus
+[2360] you're bootstrapping responding to every
+[2362] request and then now you describe
+[2363] there's an older guy I think maybe in
+[2365] Arizona who's on Discord who's prolific
+[2367] so how does maybe share that anecdote
+[2369] how does that happen Yeah so the point
+[2372] that it becomes self sustaining is
+[2373] basically when you find someone like
+[2375] Gary Austin who's like our guy on
+[2379] Discord and he's I think he's like maybe
+[2382] in his 60s and maybe I I think he worked
+[2385] at IBM. I don't actually know all those
+[2387] details, but he worked at IBM for a
+[2388] while and kind of retired and he he was
+[2391] a bit bored, so he was just in our
+[2393] Discord uh answering all these
+[2395] questions. And now it's a bit of a meme
+[2397] like when he's offline, the community
+[2399] doesn't know what to do. And um so yeah,
+[2402] we were really lucky. And at one point
+[2404] we thought, "Oh, should we employ him?"
+[2406] But actually he's more valuable to us as
+[2408] a community member that we like keep a
+[2411] looser relationship. He's kind of like
+[2413] the bond between the the FlyBy community
+[2416] members and the internal team. And the
+[2418] way we work with him, we also have a
+[2421] contributor Slack where he sits in a
+[2423] single channel and then he kind of fits
+[2425] between our Slack and the Discord and
+[2428] GitHub.
+[2429] What do you do when the two are in
+[2430] conflict? Meaning what the community
+[2433] wants and is requesting for
+[2436] the might not be commercially a big
+[2439] thing for you to do, might not be what
+[2441] your upmarket customers are thinking. I
+[2443] mean, it all logically makes sense and I
+[2446] think there's a lot of overlap, but
+[2447] there are moments I imagine in the past
+[2449] and certainly going forward where the
+[2451] two are going to be in conflict.
+[2452] Yeah. How do you trade that off? We
+[2454] don't do it because, you know, it's um
+[2457] you know, we see it as a tactic or
+[2459] anything. I just, you know, we use open
+[2461] source tools. We benefit from open
+[2464] source tools. Postgres is like the core
+[2466] of our business. It's our way of giving
+[2468] back as much as we can. So, it's often
+[2471] not a like should we do it or not? It's
+[2473] usually to what level can we reasonably
+[2476] do it?
+[2478] Then the other one is like when it's a
+[2480] tricky
+[2482] um product. So, for example, um a really
+[2484] common ask is that um
+[2487] will we do hosting of websites? And I
+[2491] get it all the time and I just say no.
+[2493] And this one comes from that like
+[2495] there's a famous Steve Jobs uh quote
+[2498] where he's up on stage and he says,
+[2500] "Focus is about saying no."
+[2502] For us, if we want to build the world's
+[2504] biggest database company, there's no way
+[2507] we can do that while simultaneously
+[2509] trying to solve front-end hosting. And
+[2512] to be honest, there are already like
+[2514] Vercel is phenomenal. Why would we
+[2517] bother even trying to compete with them?
+[2520] We are focused on the database and if we
+[2522] continue to do that, our outcome will be
+[2524] that Oracle outcome rather than some
+[2526] like Heroku-like outcome, which is still
+[2529] reasonable, but we want to have we want
+[2532] to really solve database problems. Yeah.
+[2534] Luck and timing have so much to do with
+[2536] company success. And for you, you
+[2539] launched Supabase in 2020 well before
+[2541] the ChatGPT moment. But
+[2544] the AI wave is here and you guys have a
+[2547] product that's sort of meeting the
+[2548] moment. And so talk a little bit about
+[2551] how you view AI, these app build these
+[2554] AI app builders, the explosion of
+[2556] applications that we're seeing, and just
+[2559] how much of our focus is on that versus
+[2561] sort of the traditional enterprise
+[2563] database market that we were sort of
+[2565] built to serve as well.
+[2568] Yeah, I mean luck plays a huge amount
+[2573] within a startup. I mean, even going
+[2575] back to the early days, there's no
+[2577] absolutely no way we could have built
+[2580] the database company that we have
+[2582] without that kind of VC hype cycle at
+[2585] the start. It takes a lot of cash to
+[2586] build a database company. So, we got
+[2590] very fortunate with our timing and um
+[2593] yeah, it wouldn't be the business it is
+[2595] today without a lot of luck. Now we see
+[2598] this new the AI builders, the ChatGPT
+[2601] um explosion like you say. And it's this
+[2604] moment in time I feel that, you know, a
+[2607] lot of builders, new builders are
+[2609] pouring into the market. And I love it
+[2612] because they've got the same sort of
+[2613] energy that I did when I was learning to
+[2615] code, you know, they just see that
+[2617] they're producing something rather than
+[2619] consuming something, you know? And
+[2621] that's why we built this business. Like
+[2624] we like that people are building. So, a
+[2626] lot of our focus this year um and the
+[2629] reason why we bring more people on and
+[2631] more capital on board is to be able to
+[2633] service that grows. Our sign-up rate
+[2636] basically doubled overnight, which means
+[2638] support tickets doubled overnight, which
+[2640] means that, you know, traditionally your
+[2642] road map also gets delayed. So,
+[2645] our question this year has been how to
+[2647] service both and in particular my focus
+[2649] this year is how to make the experience
+[2651] for for builders phenomenal like we did
+[2654] for developers. And you know, eventually
+[2656] those builders will become the
+[2658] developers. Um they'll learn how to code
+[2660] for sure, I think. Maybe not to the
+[2662] level that a developer of 20 years has
+[2664] been doing, but uh I guarantee at some
+[2667] point they'll start dipping into it and
+[2668] that's that's awesome.
+[2670] Well, maybe as a last question,
+[2673] um how do you think your role and
+[2675] leadership style has evolved
+[2677] over the last 5 years?
+[2679] That's a great question. Technically,
+[2680] the role's changed from doing a lot of
+[2683] coding to doing no coding.
+[2686] Which uh which is a shame. Uh but of
+[2689] course, that's going to happen. Um
+[2691] and you can only hold onto that so long.
+[2694] Um so, these days I I start
+[2697] projects and uh I don't have enough time
+[2699] to finish them. So, that's actually I
+[2701] became a liability.
+[2704] And the truth is at when I started, I
+[2706] thought, "Oh, you know, I'm a pretty
+[2707] good programmer. You know, I I can do
+[2710] some some stuff." And then I hired all
+[2711] these people and I realized, "Oh, I'm
+[2713] nowhere near as good as this."
+[2715] The talent around the world is
+[2717] phenomenal.
+[2718] Um so, that's one thing.
+[2720] Um
+[2722] then yeah, I I guess so there's that
+[2724] shift in focus um
+[2726] and then you have to eventually become
+[2729] just more focused on developing the
+[2732] culture, the team,
+[2734] uh the people within the team. They're
+[2736] going to start managing people as well.
+[2739] So, making sure that they've got the
+[2740] right mindset around how to manage. And
+[2742] usually that's a bit foreign for people
+[2744] who haven't managed before. So, um
+[2747] essentially um my job is finding
+[2750] alignment across everyone. Um as you are
+[2754] growing, you you um
+[2756] lack alignment.
+[2759] Which is natural. How do you keep 100
+[2761] people pointed in the same direction?
+[2764] So, yeah, that's really my job and it
+[2766] will be my job for the next decade or
+[2768] so. Yeah.
+[2770] Well, Paul, thank you for doing this and
+[2772] sitting down with us. We're
+[2773] so excited about the journey that we're
+[2776] on together. And so, appreciate you
+[2778] spending some time with us. Thanks for
+[2779] having me.

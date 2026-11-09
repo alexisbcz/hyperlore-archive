@@ -1,0 +1,673 @@
+[0] Everything else is secondary to just
+[2] focusing on the customer like and
+[5] especially when they have issues. It's
+[7] like if a customer is saying, "Hey, I
+[10] don't know how to use this thing." Like,
+[12] drop the fundraising. Drop everything
+[15] else that's going on and just fix that
+[17] one thing.
+[19] Welcome to First Block, a Notion series
+[21] where founders from the world's leading
+[23] companies tell us what it's like to
+[25] navigate the many firsts of their
+[27] journey and what they learned from that
+[28] experience. Our guest today is Ant
+[30] Wilson, co-founder and CTO of Superbase.
+[34] Wow, what a night. What a day. First
+[37] Block in Singapore. First time. It's
+[40] fantastic. So, welcome to First Block,
+[42] the Notion series where we dig into real
+[45] unfiltered stories about startups. Today
+[47] I have an incredible guest Ant from
+[50] Superbase. I'm going to talk about all
+[51] the things that go into building amazing
+[53] startups and the journeys along the way.
+[55] So to kick it off, I'd like to go to the
+[57] beginning. I know you've had many roles
+[60] as founders and engineering leads in
+[62] different companies, but can you talk
+[63] through your career journey?
+[66] &gt;&gt; Yeah, sure. Um, so I always knew I
+[70] wanted to start my own company. I
+[72] obviously didn't know what it would be
+[73] in. I'm from Liverpool in the UK
+[75] originally. there's not a whole bunch of
+[77] startups in Liverpool, UK, um that like
+[82] are growing fast. So I like joined a few
+[85] companies, went back to uni to do a
+[87] masters in software engineering, looked
+[89] for some cool startups in London, um and
+[92] then started to try and start companies
+[95] of my own with uh varying levels of
+[98] success
+[100] for 10 years. Nothing worked.
+[103] Is it true that um being an
+[104] archaeologist was once on the cards?
+[106] &gt;&gt; Yeah. So, when I was like like a four
+[110] year old four-year-old kid and people in
+[113] the family ask you what you want to be,
+[115] I always wanted to be an archaeologist.
+[117] Um but if you're just some random kid in
+[121] Liverpool, no one makes you feel like
+[123] that's like a viable path. Everyone's
+[125] like, "Okay, but seriously, what you
+[127] want to do?" And it wasn't until later
+[129] in life um going to like university in
+[132] London and I had friends who were like
+[134] archaeologists and they would go on digs
+[136] in Egypt and I was like horrified
+[139] because I was like why did no one tell
+[141] me that this is like a realistic thing
+[144] you can be um and then you know that's
+[148] sort of in in a loosely related um way
+[152] to what gave me the confidence to then
+[156] be like you know what like I always
+[157] wanted to be a founder, like why not
+[160] just do it? Because clearly like there
+[162] are all these successful founders in the
+[164] world. They had to at some point just
+[166] take the plunge um and try and do it.
+[169] And that's kind of what led me to to
+[171] getting involved with starting
+[173] companies.
+[176] &gt;&gt; Talking about Suitbase, for those who
+[178] aren't familiar, imagine you're
+[179] describing Superbase to your
+[180] grandmother. How would you describe it?
+[183] Yeah. So, Superbase is um at its core,
+[186] it's a database um but it's more of a
+[189] backend as a service and we originally
+[192] positioned it as an open-source
+[195] alternative to Firebase. Um if anyone
+[197] has used Firebase from Google um the
+[200] main difference being Firebase is
+[202] obviously a no SQL or NoSQL database and
+[206] Superbase is a SQL a transactional
+[209] database. So, that's the main
+[210] difference. Um but you can just think of
+[213] it if you think of like Visel or Netlefi
+[217] as your front-end cloud, Superbase is
+[220] your backend cloud. So we have the
+[222] database, uh a authentication services,
+[226] uh file storage, real-time streams, um
+[229] and we really just try and take away all
+[232] of the pain of running that yourself.
+[235] &gt;&gt; Where did you and your co-founder meet?
+[237] Uh so we met in Singapore um about eight
+[241] years ago I think now. Yeah. So we both
+[244] came here for um an entrepreneurship
+[246] program called EF entrepreneur first. Um
+[250] and that was awesome because we got put
+[254] in a batch with 100 founders. Everyone's
+[258] at the exact same stage. Everyone's keen
+[260] to build something. Um, and it was the
+[263] it was just the exact right environment
+[266] for like shooting a lot of random ideas.
+[269] And we ended up um seven of us from this
+[271] program. Um, we the cheapest way to live
+[275] as a founder in Singapore, we this this
+[279] doesn't sound like it's true, but at the
+[281] time it definitely was. Um, the seven of
+[284] us pulled together and we rented a
+[286] penthouse in Orchard, which sounds super
+[290] expensive, but when you split it seven
+[291] ways, it was actually cheaper than the
+[294] alternatives at the time. Um, and we
+[296] just had this like awesome pad where we
+[299] had all these founders, all these
+[300] different businesses, all of their
+[302] friends, and it was just like constant
+[304] ideas like all weekend like everyone
+[308] would get together in the living room
+[309] and just share the most random ideas
+[312] they could think of. And that's where
+[313] Superbase sort of started.
+[315] &gt;&gt; And they like these environments, ideas,
+[318] entrepreneurs coming together. But what
+[320] traits did you and your co-founder have
+[322] that knew that we could work well
+[323] together?
+[325] We um we were both builders, so we um
+[329] both tech very technical backgrounds. Um
+[332] I'd say some appreciation for the
+[334] business side as well. Um and we could
+[337] just we found that we could just build
+[339] things like together very quickly. We
+[341] could go from idea to having something
+[343] in production very fast. Um and that's
+[345] why I think an all technical founding
+[348] team for something like Superbase is
+[351] just a real secret weapon. what was the
+[353] original problem you're looking to solve
+[355] with Superbase and how did you know that
+[357] that problem would click with
+[358] developers?
+[360] &gt;&gt; So, um it's the classic case of solving
+[362] your own problem. Um so, my co-founder
+[365] CoppP was using Firebase in his previous
+[368] startup and hit a bunch of scaling
+[371] limitations. Um and he knew he wanted to
+[375] use Postgress. So, Postgress is um the
+[378] world's most popular open source
+[379] database. It's transactional. it's SQL
+[382] based. Um, and so he started to build
+[385] the things that were missing that he
+[386] loved from Firebase on top of Postgress.
+[390] Um, and then when we thought of like,
+[392] oh, it's the open- source Firebase
+[394] alternative, it just felt like one of
+[397] those things that so obviously should
+[400] exist in the world. And every person we
+[404] told about it, it was the same thing.
+[406] It's like, oh yeah, that's a no-brainer,
+[408] you know, and and that it just went from
+[410] there. It just felt really like natural
+[413] and again if you're solving your own
+[415] problem you can feel that that you have
+[419] the solution right in hand and so it
+[421] just felt really fluid.
+[425] &gt;&gt; You mentioned before the open source
+[427] Firebase alternative. I know that was a
+[429] moment in time when you rebranded. Can
+[432] you talk us through the before and after
+[433] that rebranding and the impact that had
+[435] on the company? Yeah. So we originally
+[438] on our website it was like superbase
+[442] real time Postgress and nobody cared
+[446] like it didn't explain what it what it
+[448] is what it does who it's for. Um and
+[452] then one day we just thought well it's
+[455] the whole purpose was it's an open
+[456] source firebase alternative. So we
+[458] changed the tagline to this and it was
+[461] like day and night. It was the exact
+[463] same product that we were trying to get
+[465] traction for before, but all of a sudden
+[468] people started to show up. It got shared
+[470] on hacker news. It started getting all
+[472] these GitHub stars. And it really taught
+[474] me that lesson of like, yes, you need a
+[478] great product, but it's really about how
+[481] you talk about it. The messaging is just
+[484] extremely important for people to they
+[486] need to land on the website and within
+[489] three seconds know if it's for them or
+[492] not and and it really had that effect.
+[495] &gt;&gt; So it sound like it helped with speed to
+[497] understanding. Wow. We have a lot of
+[498] founders that watch this program. Um and
+[500] always interested in scrappy early days
+[502] from your YC experience. What are some
+[505] of the scrappy things that you did early
+[506] days that you feel still shape the
+[508] company today? Yeah, I mean
+[512] one thing is the first thing on
+[514] everyone's contract when they join
+[516] Superbase regardless of your role. So if
+[520] you're the CFO or you're an intern, the
+[523] first line is that you are frontline
+[525] support. Saying that to everyone who
+[527] joins is like listen you, this might not
+[530] be related to your function, but if you
+[532] see a customer on X or on Reddit like
+[536] that's having an issue, you need to get
+[538] in there and you need to fix it. And
+[540] maybe it's pulling people in, maybe
+[542] it's, you know, linking them to
+[543] documentation. Um, but those scrappy
+[546] little moments just stack up like day
+[549] after day, week after week. Um, and
+[551] that's rarely what brings the the well,
+[554] it brings the community vibe because
+[556] people see us in the community helping
+[557] people out and but that's ultimately
+[559] like what drives the success.
+[561] &gt;&gt; So like everyone is customer support.
+[566] You've been heavily involved in
+[567] marketing. I know that. Um, and one of
+[570] the huge successes has been the launch
+[572] weeks and also open source and memes
+[575] that have come out. Can you talk through
+[576] how you think about marketing to
+[579] &gt;&gt; Yeah, Mar. So, I am my title is the CTO,
+[583] but I'm also kind of like the CMO. Um,
+[586] which people joke actually means chief
+[588] meme officer. Um, and I feel like to to
+[593] market something like Superbase, you
+[595] need to be a developer. And the the
+[599] cornerstone of any good marketing
+[601] strategy, it's about like finding where
+[604] your users hang out. In our case, it's
+[607] online. And the other most important
+[609] thing is um timing. And so there's two
+[613] ways you can go um with trying to be top
+[617] of mind the moment that someone um like
+[622] someone's starting a new project. We
+[624] need to be top of mind at that exact
+[626] moment so that they choose to use
+[627] superbase. And there's two approaches.
+[629] One is to be like extremely targeted um
+[635] like a like a sniper like you wait for
+[637] the moment and then you catch them at
+[639] the exact moment. But it's very
+[640] difficult. The other way to do it is to
+[644] be ubiquitous and just be trying top of
+[647] mind for developers all the time. But
+[650] you can't do that by just screaming
+[653] superbase superbase databases like real
+[657] time blah blah blah because no one
+[659] cares. Um you need a wedge and a wedge
+[662] that works for us is uh meme marketing.
+[666] So you're bringing in like
+[668] entertainment. Um our YouTube channel is
+[671] very successful and we're not just on
+[674] YouTube talking about Superbase. We're
+[675] on there talking about other stuff that
+[678] developers care about. And then we'll
+[680] bring in the product and we'll bring in
+[682] the new product launches. Um, and it's
+[686] meant we've done a very good job of just
+[688] becoming like a well-known brand name
+[691] um, in the developer community and so
+[693] that's been working very well so far.
+[695] &gt;&gt; Sounds like you're living in the
+[696] community and getting a lot of feedback
+[698] from the community as well. Understand
+[699] that functions and GraphQL came from
+[702] community requests. How do you balance
+[705] shifting your road map to meet the cube
+[708] community versus continuing the road map
+[710] that you currently have?
+[712] &gt;&gt; I'd say it's it's
+[716] say it's 80% communitydriven and and
+[719] again like the first few years the road
+[723] map felt really simple because we
+[725] already looked at things like Firebase
+[728] and we knew what great looked like. So
+[731] we looked at what features they had,
+[732] what worked well for them and we were
+[734] just replacing like for like. Um the
+[738] more difficult thing is when people in
+[740] the community ask for things like uh
+[743] front-end hosting. They say you know
+[745] you've you host my back end why don't
+[747] you also host my front end? And for us
+[751] we always have seen ourselves as a
+[753] database company. So anything any
+[756] products that have like a great tie-in
+[758] story with the database we'll absolutely
+[760] go for. But something like front end
+[763] it's like well versel already do an
+[766] incredible job of that and we're not
+[768] going to beat Versel if we like throw
+[771] something together in a couple of
+[772] months. Um so that's kind of a guiding
+[776] uh principle for us is like we we see
+[779] ourselves in the data layer in the
+[781] database layer and anything outside is
+[783] we can say no to
+[787] [Music]
+[788] the open source community has played a
+[790] huge role in helping shape the product.
+[792] What about hiring? Has it impacted
+[794] hiring and talent? Yeah, and it's
+[797] essential for us actually because um
+[800] Superbase we are now 150 people give or
+[804] take in 37 countries. Um because we
+[809] started in Singapore and we always
+[811] wanted to have access to the best
+[813] talent, we just thought we're going to
+[815] hire remotely. Um but because we're in
+[819] all the time zones, um you need people
+[822] who are very good at asynchronous
+[824] working asynchronously
+[826] um in a written culture and people who
+[829] have open- source experience are just
+[832] fluent in this. So they never require
+[835] jumping on a quick call. They never
+[837] require standing meetings. They're just
+[840] like tell me what to do in a GitHub
+[842] issue and I'll go and build it. And so
+[844] these people have just been invaluable
+[847] in the in the growth of Superbase.
+[850] &gt;&gt; 150 people in 37 countries. But I want
+[852] to talk about fundraising quickly. I
+[854] understand you've raised 200 million at
+[856] a $2 billion valuation. Uh has your
+[859] pitch to investors changed from seed
+[862] round to where you are today?
+[864] &gt;&gt; We we try not to we try to just focus on
+[868] building a good business and hope they
+[870] come to us which which has happened. so
+[874] far. I don't know if it'll be the case
+[875] forever and we might have to learn at
+[877] some point how to how to pitch a slide
+[880] deck with our faces on it and all of
+[882] this. Um but um yeah, I mean and again
+[887] we care about finding investors who
+[890] believe in open source, believe in what
+[892] we're doing, um can see its impact on
+[895] developers,
+[897] um and if they don't understand those
+[899] things, then it's probably not a good
+[901] fit. So the strategy, build a great
+[902] product, win the market, and then go
+[906] from there.
+[907] &gt;&gt; Take it from there.
+[910] &gt;&gt; Larger enterprises and and building
+[912] trust and credibility as you go up
+[914] market. Love to hear about how you're
+[916] thinking about that process as you look
+[918] to bigger customers.
+[920] &gt;&gt; Yeah, I think um you know the most
+[923] important thing about building a company
+[925] like Superbase, we're a database
+[926] company. So from the very first week of
+[929] building the product, we were extremely
+[933] paranoid about security. Um we knew the
+[937] importance of building a a a super
+[940] robust like service. If you use
+[944] infrastructure and it's unstable, then
+[946] you're not going to hang hang around for
+[948] long. Um and now again being a global
+[951] product, um we know the importance of
+[954] performance. So, um, security,
+[957] stability, and performance are actually
+[958] the three most understated features of
+[962] of Superbase. We don't go on Twitter and
+[964] say, "Wow, we're so secure and wow,
+[965] we're so performant." But if you focus
+[968] on those things repeatedly over, we've
+[970] now been in the market for 5 and a half
+[972] years, week in week out. Um, that is the
+[976] thing that paves the path to confidence
+[978] in the platform and ultimately like
+[981] larger companies adopting you. Have you
+[983] noticed a different go to market motion
+[985] in getting into larger companies?
+[988] &gt;&gt; Yeah. Um, actually it's funny because
+[991] one thing that works really well is um
+[994] the meme marketing that I that I joked
+[996] about, people think that in order to
+[999] sell to a developer at IBM, you need to
+[1003] put on a suit because they're going to
+[1005] be wearing a suit and you need to, you
+[1007] know, go into the boardroom and have a
+[1008] conversation.
+[1009] These developers at larger companies are
+[1011] just like me. They just like most of
+[1014] them work from home. Um they enjoy going
+[1018] on Reddit and looking at memes. It's
+[1020] like the strategy is to get in with
+[1022] developers. Um and then they if they
+[1026] like it enough will introduce it to the
+[1028] to the to the companies. And obviously
+[1030] now um we are adding some more um
+[1034] definitely like technical sales support
+[1036] for people who come in and they have
+[1038] technical questions on day one. Um but
+[1041] the strategy isn't so dissimilar to
+[1044] selling to startups or selling to indie
+[1046] developers.
+[1047] &gt;&gt; I'm noticing a theme of authenticity,
+[1049] building a great product, and then if
+[1052] you do that, the rest can look after
+[1053] itself, whether it be fundraising or
+[1055] getting to customers.
+[1056] &gt;&gt; Definitely. just like everything else is
+[1059] secondary to just focusing on the
+[1061] customer like and especially when they
+[1064] have issues. It's like if a customer is
+[1066] saying, "Hey, I don't know how to use
+[1069] this thing." Like, drop the fundraising,
+[1072] drop everything else that's going on and
+[1074] just fix that one thing.
+[1079] So when you're focused on fixing that
+[1080] one thing, but you have 150 people in 37
+[1084] countries,
+[1086] how do you actually run the business?
+[1087] Let's start with culture. How do you
+[1089] build culture when you have such a
+[1091] globally distributed team?
+[1094] It's hard. It's hard because when
+[1097] everyone's fully remote, culture does
+[1099] not propagate itself.
+[1101] &gt;&gt; Um, and so you have to be explicit. You
+[1104] have to write down on paper the things
+[1107] that you stand for. And for us, how we
+[1110] did this is we just looked back at the
+[1113] first six months of the company and we
+[1115] were like, what was it that we did that
+[1118] worked and like why was it important and
+[1121] then we just codified a bunch of those
+[1123] things. Um rather than try and be like
+[1126] aspirational, here's who we want to be.
+[1128] It's like, well, what did we do that led
+[1130] to the initial success? And let's just
+[1132] repeatably do those things and make sure
+[1135] that everyone when they join the company
+[1138] is aware and and me and CPL meet with
+[1140] everyone when they join and I'm still a
+[1143] part of all the interview processes and
+[1145] we explain to people here's what it
+[1147] means to work at Superbase.
+[1149] &gt;&gt; What were those things that worked that
+[1150] you codified?
+[1152] The the first thing is if you require
+[1155] any amount of facetime to do your job,
+[1158] you're going to have a horrible time
+[1160] basically because we don't me and Coppel
+[1163] don't want to jump on a quick call like
+[1165] none of our leadership team do. Um so
+[1167] ability to work remotely is just is is
+[1171] very important. I think um like I spoke
+[1174] about being customer obsessed and fixing
+[1177] customer issues, do the same for other
+[1180] people in the team. So if you see
+[1182] someone who's blocked, unblock them as a
+[1185] priority. Um and if again, if you just
+[1189] do these small things like day in day
+[1191] out, it all just it it adds up. So the
+[1194] people who are most successful at
+[1195] Superbase are the people who take on
+[1197] responsibility without being asked. They
+[1200] see it, they see a process that needs
+[1202] fixing or creating and they just go and
+[1205] do it and they'll never we're never
+[1207] going to like tell them no no it's like
+[1210] yeah great thank you do more of this
+[1212] thing.
+[1213] &gt;&gt; So I understand the the culture piece
+[1215] and and the talent. What about shipping
+[1218] fast people around the world? How do you
+[1220] stay aligned and ship fast?
+[1223] &gt;&gt; Writing everything down is just super
+[1225] important. Um and and a benefit of
+[1228] having people around the world is it's
+[1231] like the work never stops. So someone
+[1233] goes offline, the next person comes
+[1235] online. Um most of the product teams at
+[1238] this point have people in every time
+[1239] zone. Um, so it rarely just like that's
+[1243] how we're able to just ship so quickly
+[1245] is there's just always someone online
+[1247] and even with the time zones um the
+[1250] weekends are kind of short because when
+[1253] Singapore Friday nights in Singapore, US
+[1256] is just coming online, they're going to
+[1257] do Singapore Saturday and likewise US
+[1261] Sunday is Singapore's Monday morning. So
+[1264] like we're gonna have um support for all
+[1267] the major features like 247 365
+[1271] um which is a something we didn't
+[1274] realize we were doing when we were
+[1276] building a globally remote team from the
+[1279] start but something that we got for free
+[1281] is when we were at 20 people we already
+[1284] had like global coverage and a lot of
+[1288] infrastructure companies that start in
+[1290] SF or in the US
+[1293] They don't appreciate that if you're a
+[1295] user in Singapore that you're going to
+[1298] have latency to if all of your data
+[1301] centers are in the US. But us building
+[1303] globally remote from day one, we just
+[1305] had that baked in from the start is that
+[1308] like super low latency for all the
+[1310] services regardless of where your
+[1312] customers are in the world.
+[1314] &gt;&gt; Wow. So I'd love to hear other things
+[1315] you've learned from your globally
+[1317] distributed team.
+[1319] &gt;&gt; Yeah. Another one is um people
+[1322] communicate in very different ways and
+[1325] it's another thing we have to be
+[1326] explicit about when people join the
+[1328] company is
+[1331] I'm British. I might not necessarily
+[1335] um
+[1336] say what I mean all the time and you
+[1339] have to do some some interpretation.
+[1342] Um, on the flip side, people from the
+[1345] Balkans are extremely direct and they're
+[1347] going to tell you exactly how they feel
+[1349] all the time. Um, and you need to be
+[1351] okay in both of those situations. H, and
+[1354] this can be jarring for people who've
+[1356] only ever worked in a a a singular
+[1359] culture. Um, so that is something which
+[1364] we've learned is actually quite
+[1365] important.
+[1370] would love to hear how AI is in your
+[1372] workflow today.
+[1374] &gt;&gt; Yeah. Um in in lots of different ways.
+[1377] One thing about Superbase is we're not
+[1380] prescriptive about the tools that people
+[1383] have to use in certain teams. And so we
+[1386] just asked the team I asked the
+[1388] developers like how much code is being
+[1391] written for you like in your day-to-day
+[1393] job by AI? And it's there's a lot of
+[1396] variation. There's um obviously the
+[1399] design engineers who are working a lot
+[1401] in Typescript, those guys are saying
+[1404] maybe 70% plus. Um the guys on the other
+[1409] end who write in Haskell um or Elixir,
+[1413] they are like I am not touching that
+[1416] that garbage. Um, but also if you're
+[1419] someone who writes Haskell code for a
+[1421] living, you do it because you like the
+[1424] art of writing functional programming.
+[1427] Um, and you don't want to hand that off
+[1430] to an AI necessarily. And so on the
+[1432] coding side, again, we let people do
+[1435] whatever they feel is most productive.
+[1437] Um, and that goes for other areas of
+[1440] productivity as well. If people want to
+[1442] use the notion AI, great. um if they
+[1445] prepare prefer to use a pen and paper to
+[1447] handw write their notes like fine we're
+[1449] not going to complain as long as you're
+[1451] doing a good job.
+[1452] &gt;&gt; Thank you for mentioning notion.
+[1453] &gt;&gt; Yeah.
+[1454] &gt;&gt; Any templates or systems your team have
+[1456] built in notion that you think other
+[1457] founders could steal?
+[1461] &gt;&gt; Yeah, we we were um and and still are
+[1464] like super heavy notion users. We
+[1466] probably used it in a lot of areas where
+[1469] we probably shouldn't have. So me and
+[1472] Coppel built all of our like hiring
+[1474] pipeline went into notion like you know
+[1477] basically just everything on in the
+[1479] first year of the company was going into
+[1481] notion and I still take my um interview
+[1484] notes in notion and then I get um
+[1486] scolded by the recruitment team that I
+[1490] need to put them into the proper system
+[1491] now. Um so everything starts there. When
+[1495] we hire someone, um, I encourage them to
+[1499] build the company you've always wanted
+[1500] to work at. But in order for people to
+[1504] do that, you need to basically grant
+[1506] edit access. And I don't know how long
+[1509] this is going to work for. It works at
+[1511] 150 people. Um, edit access to basically
+[1514] everything. All of the internal
+[1515] documentation. Um, people should be able
+[1518] to come in and suggest or make edits to.
+[1521] And it shouldn't just be the
+[1522] responsibility of someone over there in
+[1525] HR. Um, and notion is is great for that
+[1528] because everyone knows where the
+[1530] documents live. They can come in, they
+[1531] can make suggestions, they will make
+[1533] edits.
+[1534] &gt;&gt; It sounds like you're creating one
+[1535] company intelligence where everyone can
+[1537] contribute to it and build on and
+[1539] compound that knowledge over time. Is
+[1540] that a fair assessment?
+[1542] &gt;&gt; Yeah, totally. Totally. And and this is
+[1544] the whole like promise of AI, right? Um,
+[1548] I think when your when your data lives
+[1549] in like many different systems, you can
+[1552] have the best LLM, but if it doesn't
+[1554] have access to to data, then it's kind
+[1557] of pointless. Um, and so I would I would
+[1560] like to see us connect more of these
+[1563] services together as well actually. Um,
+[1565] so we can ask more intelligent questions
+[1567] across all of the systems. That would be
+[1569] cool.
+[1573] &gt;&gt; Uh, we finish every episode with two key
+[1575] questions. your founder advice mic drop
+[1578] moment. So my first question is if you
+[1580] could leave one building block of advice
+[1582] for another founder, what would that be?
+[1585] &gt;&gt; As you go through your careers, if you
+[1588] think at some point that you're going to
+[1590] want to start a company is actually the
+[1592] work starts now in building
+[1594] relationships with all of the kick-ass
+[1597] people that you work with and because
+[1599] they're going to be your later
+[1601] co-founders, your later teammates, your
+[1603] founding engineer. um that stuff doesn't
+[1606] happen overnight and trying to build it
+[1608] from scratch after you have product
+[1610] market fit is a real scramble. Um so my
+[1614] advice is to start doing the ground work
+[1616] now actually.
+[1617] &gt;&gt; Amazing advice. Relationships matter.
+[1620] Last question. If you had to rebuild
+[1622] Superbase from scratch today, what's the
+[1624] first block you'd start with?
+[1628] &gt;&gt; Um yeah, good question. I think um I
+[1634] would obviously try and just build
+[1635] Superbase again as it is today because I
+[1637] love it so much. Um but I think the
+[1640] thing is
+[1643] to throw away your like your
+[1645] preconceptions of what the product
+[1648] should be. Um, and focus on the customer
+[1652] feedback and get really good at trying
+[1656] to solicit honest feedback from people
+[1659] because everyone's going to tell you
+[1661] that your product is great and your
+[1662] company is great. Um, but it's a real
+[1664] skill to be able to try and like cut
+[1667] through that and get the tell me what is
+[1670] bad, tell me what I need to fix because
+[1672] that's the most important thing.
+[1674] &gt;&gt; And amazing conversation. Thank you for
+[1676] pulling back the curtains on Superbase.
+[1678] We learned everything from building
+[1680] community to raising big to scaling fast
+[1683] while maintaining trust with all
+[1684] community and customers. We really
+[1687] appreciate the conversations today. We
+[1688] all got so much out of it. So, thank you
+[1689] very much.
+[1690] &gt;&gt; Thanks for having me.

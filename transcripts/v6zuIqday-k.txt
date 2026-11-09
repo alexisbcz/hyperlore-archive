@@ -1,0 +1,208 @@
+[0] the react space is obviously as a whole
+[2] growing
+[3] really really fast we've been lucky to
+[7] you know really have been one of the
+[8] first frameworks that was strongly
+[10] opinionated in this idea of
+[13] frameworks should you know
+[16] give you all this basics like routing
+[20] built-in css built-in
+[23] data fetching built-in um another
+[26] interesting thing that we did that i
+[28] think has helped a lot is like
+[29] multiple pages built in you know like
+[32] funny enough like
+[33] the very own create react app which
+[37] kind of came out at the at about the
+[39] same time that we're
+[41] about to get nexjs out with the
+[44] substantial difference that we had
+[45] already been dog food in nextgs for a
+[47] year
+[48] by the time we we uh we put it out
+[51] um so even creator react up had this
+[53] idea like oh it's a single page
+[55] and that's it right and like we had this
+[58] need of like funny enough i always tell
+[60] the stories like
+[60] well we have this need of two pages
+[64] and and the example is we had our terms
+[67] of service
+[69] and literally this is how our startup
+[71] you know started
+[72] you know like we had three pages home
+[74] page uh enter your email to be notified
+[76] of
+[77] what we're going to be working on um and
+[79] then we had
+[80] the privacy policy and enter services
+[82] you know we're taking user data
+[84] uh we have to have it and even though
+[87] it's just an email right and um
+[88] yeah uh and i was like wow all this
+[92] information
+[93] all these static pages are now going
+[96] into the
+[96] bundle that webpack is outputting
+[100] and when create react up came out
+[102] imagine that you're working on a thing
+[103] right and like
+[104] you see the very authors of this
+[108] react component that is so uh you know
+[111] that's so important to you and to your
+[112] creation and you see
+[113] then put out a quote-unquote
+[117] competitor to your idea well you'd you'd
+[120] probably be
+[120] at the very least you know a little
+[123] shocked worried
+[125] always i wasted all this you know wasted
+[127] this entire year working on this
+[129] but for us was the opposite it was like
+[131] oh wow you know
+[132] they're putting it out and we actually
+[134] disagree strongly
+[135] on business and that and we thought we
+[138] already lived through this
+[139] uh we already tried to have you know
+[142] that bootstrapping mechanism
+[144] that it was featuring at the time oh we
+[146] already tried and discarded that and
+[148] and not because it's bad but like oh we
+[150] you know kept working on our product and
+[152] so on
+[153] and iterating with the framework and we
+[155] found that you know oh you can do more
+[157] and you can do more and you can do more
+[158] um so what we did is at that point i
+[161] told
+[162] one of my co-founders now yuki it's like
+[164] hey like
+[165] um let's just take this stuff that we've
+[168] been using internally
+[170] and and productize it and that's how
+[173] nexus was born and you know it was
+[175] featuring all these ideas that
+[177] really resonated with people that were
+[179] um
+[180] working on you know products that needed
+[182] these things to be built
+[184] in and like they didn't want to go
+[186] shopping
+[187] for options like they didn't want to
+[189] shop for a router they wanted to
+[191] shop for a css solution and so on and so
+[194] forth
+[195] yeah and uh yeah you know i think that's
+[198] kind of been our advantage
+[200] is we got obsessed with this idea of
+[202] like
+[203] react should power the entirety of the
+[206] product
+[206] and what we're creating um and
+[210] and we kind of like you know had a
+[212] little bit of head start and then
+[214] we had some strong opinions and it's
+[216] worked out really well so far
+[217] yeah yeah it's it's amazing that like
+[220] it's kind of funny that like it's really
+[221] funny that you
+[222] you launched right around the same time
+[224] as create react up um
+[226] like i remember because like so like to
+[228] me like one of the
+[230] the most amazing things about react when
+[232] it came out was that
+[233] you know it wasn't like one of these
+[235] frameworks that forced you
+[237] to totally do everything their way and
+[240] you can kind of pick and choose your
+[241] favorite technologies
+[243] for each thing but then
+[246] it's exactly like you're saying it's
+[247] it's the the
+[249] first like week to two weeks of any
+[252] project
+[252] is like picking your framework and
+[254] setting it up and reassembling the same
+[256] pieces over and over again
+[258] and also it fit and react to the time
+[260] fit the narrative of the time right like
+[263] facebook was also going through their
+[265] own incremental adoption of the
+[266] technology uh
+[268] you know i was sharing this with my team
+[270] the other day like it's
+[271] interesting to think that you know no
+[274] technology gets a free pass it always
+[276] has to be
+[277] evaluated you know marketed
+[280] presented uh pros and cons and at the
+[283] time
+[284] riad was going through that process
+[286] right like of course
+[287] it already had sufficient buy-in that
+[289] they were motivated
+[291] to open source it because you know they
+[293] have high standards and they wanted to
+[295] promote a tool that they liked
+[297] um but it was still going through that
+[300] process of like how far
+[302] can this react thing go you know and
+[305] i remember for me like a decisive moment
+[307] i was oh wow like
+[308] instagram.com which launched on web
+[312] is entirely powered by this thing you
+[313] know so like the trajectory was
+[317] react of course was a v in mvc at the
+[320] time
+[320] and it was powering very specific
+[322] components
+[324] and some were still you know for
+[325] facebook in the legacy stack and some
+[327] the new ones were creating as react
+[329] and it's going through that trajectory
+[331] but where we leapfrogged was
+[334] well yes that makes sense for that kind
+[338] of incremental adoption for facebook
+[340] and i'm sure also for incremental
+[341] adoption within you know
+[343] you had a wordpress website and you
+[344] wanted to add some cool uh
+[346] you know a reactive component like drop
+[349] react in
+[350] but then we're like looking ahead it's
+[351] like yeah but sure why don't you
+[353] start with the assumption of react from
+[355] the get-go and that's why
+[356] we're gonna start working on next and
+[358] and you know we our vision was
+[361] components are such an amazing primitive
+[364] and abstraction that you know it doesn't
+[368] matter what you're building you'll
+[369] probably want to build it with react
+[371] right like
+[371] i remember one of my kind of like
+[374] popular tweets at the time was like
+[376] it seems to me that we haven't gotten
+[379] heard about the end of react
+[382] nor even the beginning of react yet
+[384] because there's so many more places
+[387] where this component abstraction would
+[389] will make a lot of sense right and
+[391] and that kind of predated react vr
+[393] existing
+[394] inc which is a project for using great
+[396] from the command line like
+[398] there's so many places that you can put
+[399] it because fundamentally it was a leap
+[402] frog
+[402] in the programming model and that's what
+[405] i think makes it so strong because
+[408] the component is just you know how
+[410] people think
+[411] you know i i've also said you know react
+[413] is a lego for adults
+[415] and you know like it is good to think of
+[418] the
+[419] of the of the world that way you know we

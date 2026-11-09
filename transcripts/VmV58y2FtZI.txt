@@ -1,0 +1,888 @@
+[0] welcome to the show how you doing my man
+[2] great thanks for having me I've been
+[3] looking forward to this me too I think
+[5] everyone's looking forward to this that
+[7] there's drama on the timeline we need to
+[9] have a tvpn segment we really appreciate
+[11] you coming on uh can you uh can you just
+[14] give us like a breakdown of what's
+[16] happening in the world of versel right
+[18] now well yeah uh maybe to introduce
+[20] versel too for those that are that are
+[22] new to our company uh versel creates
+[25] Frameworks and infrastructure to deploy
+[27] great web applications uh we're super
+[30] invested in open source we created a
+[31] framework called nextjs y that powers a
+[35] lot of the internet and we're very proud
+[37] about it but we also have investments in
+[38] a bunch of other open source projects uh
+[41] I have a long history of being involved
+[43] in the JavaScript ecosystem typescript
+[44] ecosystem so if you're building a new
+[46] application uh versel and xch are are a
+[49] pretty good choice for people fantastic
+[52] and what's going on most
+[54] recently yeah I mean if you go on X
+[56] there's a lot going on um maybe the
+[58] thing that started a lot of this was we
+[61] got a ping from a security researcher
+[64] about a uh potential security
+[67] vulnerability on nextjs we get lots of
+[70] this uh operating at the scale that that
+[72] we're in we have millions of monthly
+[74] active developers on nextjs uh tens of
+[77] millions of applications deployed to the
+[78] versel platform and so we get we get a
+[80] lot of P but this one in particular was
+[82] interesting because it was a potential
+[84] off bypass which you know in the
+[86] security industry it's as bad of a bug
+[88] as you could imagine like bypassing
+[90] login sign up things like that um we
+[93] took a look at it uh we we uh process it
+[96] through the queue we remediated it and
+[99] then when we disclos it of the world uh
+[102] you know we we we could have done a lot
+[104] better in how we disclosed it so um we
+[107] we filed the cve in partnership with
+[109] GitHub uh which is the standard
+[111] mechanism for how you notify every
+[113] nextjs user on the planet whether they
+[115] use verell or not about this this
+[117] vulnerability but the awesome thing
+[119] about nextjs is that once you use nextjs
+[121] you're actually not just getting the
+[122] open source project nextjs you're
+[123] getting a huge ecosystem of of products
+[126] with it that you can use that integrate
+[128] really nicely into nexs there there are
+[131] a lot of off Partners a company like
+[133] clerk stack off better off Luchia in the
+[136] open source ecosystem is awesome
+[138] products and I think we should have
+[141] notified those people before that cve
+[143] went out so they could have had the
+[146] opportunity to like look at what the
+[148] impact would have been to their projects
+[149] and like that uh on the other hand we
+[152] did test internally like okay netlify
+[155] which is another deployment option for
+[156] nexts uh affected and again we could
+[160] have done a much better job at
+[161] partnering with companies like netlify
+[163] and Cloud flare who host nexas as well
+[166] um but it kind of became like a Twitter
+[167] thing you know that like
+[170] uh it got big and then Cloud got
+[173] involved I think you guys were just
+[174] talking about it before I joined and uh
+[177] yeah there's some Banger tweets being
+[179] exchanged here and there uh yeah you're
+[182] entertaining I'm I'm curious to get your
+[184] read on it you you've been in the game
+[186] for you know you founded socket uh back
+[189] in the day uh do you feel like the
+[191] environment now there's Le you know
+[194] there's still a lot of Internet to build
+[195] and there's still a lot of opportunity
+[197] but at the same time we have these sort
+[199] of scaled businesses like Cloud flare
+[201] and versell and things like that do you
+[203] feel like the environment today is like
+[205] more hostile or emotionally charged than
+[207] ever before because there's you know
+[209] people are there's now like sort of like
+[211] the Market's established in many ways
+[213] it's not maybe going quite as quickly as
+[215] it used to there's new opportunities but
+[217] it's yeah it's like it's it's starting
+[219] you know is is this sort of more zero
+[221] some environment making things a little
+[223] bit more charged
+[225] today I think not I do think that on X
+[228] people get really spicy I was very
+[230] shocked that the Sea of uh Cloud flare
+[233] came I mean he's he's a CE of a public
+[235] company and he came guns blazing uh even
+[239] putting out like some like cringeworthy
+[241] memes against forell which is a company
+[244] that is very developer loved uh we
+[247] invest not just in xjs but we power for
+[248] example the AISD K which is the most
+[251] popular way today in the JavaScript
+[252] ecosystem to add AI to your product it
+[254] has a million Downs a week it's provider
+[257] agnostic it's devel deployment platform
+[259] agnostic so to come after in in such a h
+[263] h aggressive way I was I was a little
+[265] taken back our style has always been if
+[268] you look at my ex feed
+[270] the thing that I love to do is highlight
+[273] great products if you create anything
+[276] great especially if you use an X I just
+[279] love to say like look at this really
+[280] cool thing yeah yeah I never talk about
+[283] competitors I never uh especially like
+[285] in in in a diminishing way sure but in
+[288] this in this case I had to reply because
+[291] because he's because he's saying um oh
+[294] if you want security come to Cloud flare
+[297] and the record shows that if you if you
+[300] want security protection com to Cloud
+[302] there's a very mixed bag there right
+[305] there's a mixed bag and like I had to
+[307] recover from the from the anal of cloud
+[309] flare I did bring up cloud cloud bleed
+[312] yeah which legitimately was one of the
+[314] worst things that has happened to the
+[315] internet you could I don't know if the
+[317] audience knows but you could Google and
+[319] literally find off tokens of different
+[323] companies like uber indexed by Google so
+[326] that was an or and by the way our bug
+[328] was bad I'm not here to say like oh like
+[330] whatever make excuses for middleware and
+[332] whatever our B was really bad but theirs
+[334] was catastrophic and you could and the
+[336] attack the impact of the bug was
+[339] Googling it's like accessible to
+[341] everyone the impact of our bug is
+[343] actually very you know nuanced and I'm
+[345] super thankful to the researcher because
+[347] it takes a lot of like thinking and
+[349] reverse engineering to arrive to these
+[351] conclusions um but yeah to your point I
+[354] think that it was uncalled for uh we've
+[356] tried to I think and we could get into
+[358] like the speculation of why he would do
+[360] such a thing we tried really hard to use
+[363] cloud flare we were a customer we tried
+[366] it out for a new compute product which
+[368] coincidentally was Edge middleware and
+[371] it didn't work out for a number of
+[372] reasons so maybe there was some soured
+[375] relationships there as well that you
+[377] know we we had a peie out of the of as a
+[380] customer we had to build our own uh but
+[382] I can only speculate uh let's let's get
+[385] into more of the positive and talk about
+[387] kind of the future and and what the
+[388] biggest opportunity ities you know that
+[390] you feel like versel has in this sort of
+[392] new probably the most ex you know most
+[395] exciting time of of my life uh John's
+[398] you know few decades older than me so I
+[400] I good buiness be the internet and AI it
+[403] really is but yeah let's talk about yeah
+[405] let's let's kind of ignore the drama for
+[407] a second and and i' love to talk about
+[409] uh the future everyone loves drama but
+[412] my message to all the vendors and
+[414] partners and people in the ecosystem
+[415] would be the pie is about to get as
+[419] large as we've ever seen in the history
+[421] of Technology versel doubled the number
+[424] of signups year over year mostly due to
+[427] the introduction of vzero which is our
+[429] coding
+[431] agent I don't think we've ever seen a
+[434] technological platform shift of this
+[436] Dimension where every piece of software
+[438] will be rebuilt and reimagined with
+[441] AI and the pie is about to get so big
+[445] that being paranoid about the size of
+[447] your
+[447] slice and taking cheap shots if you're a
+[451] security competitor to me does signal
+[453] shortsightedness on this AI
+[456] opportunity in fact um the asdk is
+[459] powering competitors to vzero so today
+[463] we uh one of our one of our partners
+[464] announced um new. email is like the
+[467] bzero for crafting email campaigns all
+[471] built on open source technology that
+[472] we've sort of taken from the zero and
+[475] given back to the world and so and I
+[477] also had a you should check it out I had
+[479] Banger ideas thread on X the other day
+[483] every single day I'm thinking here's a
+[484] bunch of ideas of amazing products that
+[486] you could create with AI that customers
+[489] are so willing to buy I just actually
+[491] interviewed uh we're at a company
+[494] offsite orbo and I interviewed one of
+[496] the greatest public company CEOs of our
+[499] times I can't disclose who and I asked
+[501] him what are your priorities for AI it's
+[503] like oh we're completely reimagining the
+[505] company across this three dimensions
+[507] with AI I want to buy AI for this for
+[509] this AI for this so to your point about
+[512] the positivity is there is room for
+[514] everybody uh uh there's all this amazing
+[517] open source technology that you can use
+[518] to create new products and new ideas I
+[521] also believe part of my optimism is that
+[524] in the beginning two years ago there was
+[527] maybe a belief that there was going to
+[528] be one gigantic Chad bot to rule them
+[530] all uh like a sci-fi movie you go to one
+[533] computer or he talks to the room hey
+[535] computer everything is computer or what
+[539] I believed at the time and we actually
+[541] this is why we started creeting a lot of
+[542] Open Source technology that there's
+[544] going to be expert AIS focused products
+[549] that cater to specific requirements and
+[551] that's actually what's ended up
+[552] happening right so on for sale we host
+[554] companies like open evidence which is
+[556] the chbt for medicine get gc. which is
+[560] like the chbt for
+[562] lawyers um amazing products for finance
+[564] like heia and so what's actually ended
+[566] up happening is that there is these
+[568] redistribution of wealth so to speak
+[570] that's happening with AI there's also I
+[572] call it sometimes the unbundling of
+[574] Google it's no mystery that a lot of
+[577] companies or a lot of consumers sorry
+[579] are not going to Google for certain
+[580] queries and they're going to specialist
+[582] products to answer like when I think
+[584] knowledge I might go to perplexity or I
+[586] might go to Gro and do a deep search
+[589] right so that unbundling of the one of
+[592] the largest companies and and
+[594] information technology services in the
+[596] world will create massive opportunities
+[598] for startups and companies of all sizes
+[600] so I really do think I share your
+[602] optimism and and positivity beyond the
+[604] drama uh that that happened one thing I
+[607] always think about with versel is just
+[608] like the focus on speed I feel like
+[611] that's almost like the core brand tenant
+[614] is just like I mean Jordy pullup ver.com
+[616] like so fast that's the whole brand and
+[620] I want to know uh what's the importance
+[622] of like speed in AI deployments I know
+[625] you're hosting AI but are you hosting AI
+[627] at the edge or kind of of delivering it
+[630] in like a like a CDN like how how does
+[632] that work and how does that what impact
+[633] does faster AI usage uh happen in like
+[637] the consumer experience there's a couple
+[640] things if you're running a business that
+[641] you should know right off the bat number
+[643] one a lot of traffic will shift towards
+[646] answer engines I reported recently that
+[649] we see uh 5% of our versel signups that
+[654] also happen to be some of the highest
+[655] intent signups coming from chbt m which
+[659] is up from being like 1% or less than 1%
+[661] 6 months ago and it's growing I didn't
+[664] share the growth metric but I'll share
+[665] it now for you guys since I like you 30
+[668] 30% um month over month wowow that's
+[672] insane so so so walk me through that
+[674] it's people going to chat GPT asking how
+[676] should I deploy this how what should I
+[678] build it's recommending xjs it's
+[680] recommending versel s had a really good
+[683] take and and also if you want to see a
+[684] fast website I'm very proud that we host
+[687] open.com s recently shared you might not
+[690] want to learn so much coding or only
+[692] coding you might just want to learn how
+[694] to use AI which one of the artifacts of
+[696] that and I love the Claude artifact name
+[699] I think was one of the most important
+[700] inventions as H has happened in AI in
+[703] recent years is that coding and writing
+[707] code is an output of what you ask the AI
+[709] so what's happening is people are asking
+[712] what is the best way to build a website
+[713] which is the best way to deploy I
+[715] actually posted so we have a little tool
+[717] a little playground you can check it out
+[718] is SDK k. ver. a and you play playground
+[722] you can ask a bunch of models what they
+[725] think about you and that will give you a
+[727] glimpse into how the AI are thinking but
+[730] not only how they're thinking how
+[732] they're directing the world's behavior
+[735] in choices I was very proud I Shar a
+[737] screenshot that I asked like four
+[740] Frontier models in parallel what's the
+[741] best way to deploy and they all said
+[744] verel and I actually constrained it to
+[746] like you can only you know classic thing
+[748] you can only do one thing or myself like
+[751] okay verell verel verel verell and so to
+[755] me that was I actually didn't know at
+[756] the time I was just like like messing
+[758] around in the weekend with the tool I
+[760] think that's the canary and the cold
+[762] mine of how you should be thinking about
+[764] AI sending traffic to different places
+[767] the consequence to our business is
+[770] number one SEO still matters sure so one
+[774] of our one of our customers for example
+[776] sponsor of this fantastic show uh ramp
+[779] let's go during The Business of Being
+[781] found yeah and so it's GNA be through
+[783] Google searches or it's going to be
+[785] through this agents and so the agents
+[788] are still performing a web search so you
+[791] still want to be in good terms so to
+[793] speak with the people that are like
+[795] retrieving and crawling the internet
+[797] right so that's one thing and versel
+[799] really helps companies with SEO that's
+[802] an interesting thing to think about yeah
+[803] sorry like it's interesting to think
+[805] about Google over time if nobody's
+[807] searching on Google they just every link
+[809] is paid for they sort of still have this
+[811] sort of like I has the train left the
+[814] station on SEO or is there still an
+[817] opportunity for new companies to kind of
+[820] bootstrap their way into AI
+[821] recommendations and I also want to hear
+[823] your second point Sorry for yeah cutting
+[825] you off no no it's it's totally fair so
+[827] I think what's still relevant is that
+[829] quality content facts Pro this agents
+[834] will be I actually like also elon's
+[836] truth seeking AI goal because it really
+[839] matters that you train a model that is
+[841] subjective and is post trained on Truth
+[845] seeking right during the pre-training
+[847] you throw a bunch of data at it during
+[849] post-training you like sort of like
+[850] Orient Its Behavior in this models this
+[853] is why I'm a big fan of open AI in the
+[856] sense of Open Source and also in giving
+[858] developers Choice the AISD lets you very
+[862] quickly swap models I think it's going
+[864] to be very important as a community as
+[866] I'm not talking about entrepreneurs or
+[867] business people I'm talking about about
+[869] as citizens of the internet we have to
+[872] be very Vigilant of the behavior of
+[875] models the decentralization of AI
+[879] something that veril deeply believes in
+[880] is and we have a we have a template you
+[882] can you can clone you can basically roll
+[885] your own chat GPD within two clicks and
+[887] we recently partnered with xai to power
+[889] the default model so you can go to chat.
+[891] a and you can basically clone and deploy
+[894] your own chat gbt in your own domain
+[896] name and so what would be great for
+[898] society is if we all invest in massively
+[900] decentralizing intelligence so that
+[903] we're not at the behest of like the
+[905] one truth Center or or Truth uh uh
+[909] company of the world sure sure yeah I
+[911] mean it's one kind of question that
+[914] comes to mind so you guys are powering
+[916] open.com and
+[917] open.com somewhat recently is like very
+[920] much reoriented around being a sort of
+[922] like you know search our answer engine
+[925] and open AI right now is being priced
+[928] like it's the next go go right at $300
+[930] billion plus like that is the next
+[932] Google you talked about yeah by the way
+[935] one comment on that has been super D of
+[936] mind I actually think that's a brilliant
+[938] design so I talked about how every piece
+[940] of software will be rethought and
+[943] rebuilt as an AI product what people
+[946] will expect is that when they go to your
+[948] product there's an interface like that
+[951] and I actually think that's really good
+[953] design because theyve Blended marketing
+[955] content which is what typically we think
+[957] of as a website I sometimes dismissively
+[959] called them e brochures yeah to remind
+[962] remind the team that we're not in this
+[963] world to take a magazine and Blaster it
+[966] on the internet yeah the whole point of
+[968] nexj and versel that we bet on 10 years
+[970] ago was a more Dynamic web a web that
+[973] powered products and so what's brilliant
+[975] about that design is that you're
+[977] immersed immediately into the product
+[979] experience and it's AI native and I
+[981] think that's just a sign of things to
+[983] come you're going to go to so many other
+[984] products I mentioned the email one but
+[986] and open evidence there so many of those
+[989] where the interface will be okay what do
+[992] you need what do you want when you go to
+[994] v.d the question that we ask is what do
+[996] you want to ship because we want you to
+[998] convert an idea into an application um
+[1002] talk but yeah talk about uh the line
+[1005] between uh developers and non-developers
+[1008] right it seems like it's sort of
+[1009] blurring today vel's entire brand has
+[1011] been around building building products
+[1014] for developers that is the core of the
+[1017] mission uh but is there a point in the
+[1020] future where uh and you have your coding
+[1022] agent now right there's there's this
+[1023] full sort of like stack is there a world
+[1025] in the future where you know you land on
+[1028] versell decom and somebody that's not a
+[1031] developer can just type in a prompt
+[1033] right because it seems like you know
+[1035] part of the drama if you extrapolate it
+[1037] out it's like there's you know real
+[1040] whoever becomes the aggregator for
+[1042] building new websites and apps will be
+[1044] incredibly valuable yeah that was going
+[1046] to be my third Point actually so the
+[1048] other opportunity for us is what we call
+[1050] agentic deployment infrastructure M so
+[1053] there's going to be all of these agents
+[1055] that create for every user on the planet
+[1058] and also to your question I think the
+[1060] The Tam of what a developer is is going
+[1063] to so m i mean we're already seeing it
+[1064] in the numbers I'm already seeing it in
+[1066] the customer interviews I was chatting
+[1067] with a lady yesterday on the xplatform
+[1070] the everything app she was reporting
+[1071] feedb the zero and I one point in the
+[1073] conversation he goes like by the way I
+[1074] want to be very clear I have no idea how
+[1076] to code I use B zero and I get stuck and
+[1080] I need some other like another another
+[1083] expert's opinion like go to another
+[1084] doctor I ask Rock and she brings it back
+[1087] and forth between the two products and
+[1089] she's creating the reason that she was
+[1090] giving me feedback is she was saying
+[1092] like the app has gotten so big what do
+[1094] you recommend and so people are like
+[1096] just having the the best time of their
+[1098] lives being able to create when they
+[1099] couldn't code before but going back to
+[1102] the agentic infrastructure think of it
+[1104] this way
+[1105] vzero is automatically calling out to
+[1109] for sell to create deployments to assign
+[1111] domain names in the future to even buy
+[1113] domains these might even just say hey I
+[1115] thought of a banger domain for your
+[1117] product what do you think uh and so we
+[1121] we're very excited to see the growth of
+[1124] this infra and and by the way that
+[1126] there's a defensibility to it that's
+[1127] really interesting especially for people
+[1128] that are working in infra that are that
+[1130] are listening to this call I I'm very
+[1133] convinced that VI coding will eat a lot
+[1136] of the world of creating front and the
+[1138] app applications mhm meaning this AIS
+[1143] are so good at writing react in tailwind
+[1146] and next ass it's actually shocking to
+[1149] me and I've been a front engineer I
+[1151] started front engineering when I was 11
+[1153] years old in Argentina and so I had my
+[1156] ego tied up to this thing of writing
+[1158] front and to I contributed a library
+[1160] called mood tools when I was 15 years
+[1162] old I was like uh like the kid that
+[1165] could do BR and uh and and now I'm ready
+[1168] like give up on part of my identity of
+[1171] like hey V zero is creating an
+[1174] opportunity for a lot more people to be
+[1175] like me and experience that Joy of
+[1177] creating frontends totally now what I'm
+[1179] not so sure about and you've seen all
+[1181] this uh conversations on X about
+[1184] security and Vibe you can Vibe code but
+[1187] it's hard to Vibe debug yeah I I believe
+[1190] that you don't want AI in your
+[1191] infrastructure just yet MH we operate in
+[1195] 20 regions worldwide we
+[1199] dozens of cities through our Pops in our
+[1201] CDN Network we have to maintain uptime
+[1205] for the world's most valuable properties
+[1209] from you know AI companies to
+[1211] cryptocurrency companies some uh
+[1215] presidential meme coins whatever you
+[1217] think of so much is going on on versel
+[1221] every second of op time everything that
+[1223] can happen to this platform is
+[1224] absolutely Mission critical it's life
+[1226] critical so many healthcare companies
+[1228] banking
+[1229] onell and so I don't want AI to
+[1232] necessarily be messing with the
+[1234] foundational sort of infra and software
+[1237] that needs to ensure that these things
+[1239] run perfectly the train runs on time on
+[1242] the other hand and this is why Kathy I
+[1245] think Point Vibe coding when you're
+[1247] exploring when you're creating when
+[1249] you're designing when you're crafting
+[1252] the
+[1252] interface that's where AI is completely
+[1255] dominating makes sense and now it's
+[1257] gaining full stack powers where you can
+[1260] integrate with that infrastructure so we
+[1262] recently partnered with companies like
+[1263] subase and neon and upstat that they
+[1267] also hire those Frac infra Engineers
+[1270] that you know they might be using some
+[1271] AI but you know hopefully uh for our
+[1274] partnership they're very careful and but
+[1277] and in the in that creator that new
+[1279] Creator is getting The Best of Both
+[1280] Worlds that you you Vibe code and you're
+[1283] working on Rock Solid foundations yeah
+[1285] that makes sense can you talk a little
+[1286] bit about uh value AC rule in AI I know
+[1290] that there's been this debate over the
+[1291] model layer or the application layer you
+[1293] could even abstract that and now people
+[1296] are just saying I either want to be the
+[1297] aggregator the chat GPT app that's
+[1300] installed on 100 million phones or I
+[1302] want to be an energy and get me get me
+[1304] shares in a nuclear company because I
+[1306] think everything else in the middle is
+[1307] going to be commoditized uh you don't
+[1310] have Hardware yet or or your own
+[1313] infrastructure uh does what you're
+[1316] seeing in AI change any of those
+[1317] decisions over time uh how are you
+[1320] thinking about just the different
+[1322] opportunities it seems like you're
+[1323] obviously going up Market to be more of
+[1325] a aggregator where you could come to
+[1328] develop apps but are you thinking about
+[1330] going down the stack further build
+[1332] training your own models developing your
+[1334] own chips or like what does the far
+[1335] future look like for
+[1337] versell I really believe that the best
+[1339] metaphor for AI is what happened with
+[1341] the cloud okay and mobile but it's going
+[1344] to be much bigger mhm and so if you look
+[1347] back at the cloud and we in this room
+[1349] have all studied it there wasn't a
+[1351] particular player category that had a
+[1354] lot of upside it was all over it was the
+[1356] foundational infrastructure and Hardware
+[1358] obviously and and we're very proud to
+[1360] partner with AWS to provide sort of that
+[1362] quote unquote Hardware layer to versel
+[1365] as a Global Network there was a lot of
+[1367] upside for developers that quickly
+[1370] changed their behavior so this is very
+[1372] important by the way when I noticed AWS
+[1376] I was very quick to this luckily for me
+[1378] I was very quick to dismiss the other
+[1381] DIY options that were available to me
+[1383] because I got so excited by the
+[1385] automation potential and there's merits
+[1387] to all solutions but being an early
+[1390] adopter and writing the right wave can
+[1392] be transformational to your career later
+[1394] on it happened with react react was open
+[1397] sourced by meta I believe is one of
+[1399] their greatest inventions and I was also
+[1403] quick to adopt and I noticed its
+[1405] potential as the engine for what later
+[1407] became nextjs
+[1409] and so I think my advice to people would
+[1410] be you know just adopt Ai and see where
+[1413] you can add value I think the
+[1415] application layer is extremely exciting
+[1417] because the interfaces to AI as I
+[1420] mentioned will decentralize and unbundle
+[1423] there's going to be a lot of upset for
+[1424] agentic infrastructure so companies that
+[1427] know how to work well with not just
+[1429] humans but agents and that's a very
+[1432] that's a remarkable shift right a lot of
+[1435] products have been so far created for
+[1437] Developers not for the agent you think
+[1440] of it as a representative of the
+[1442] developer you have to create products
+[1444] that are good for the representative of
+[1445] the developer how do you uh yeah yeah I
+[1449] was goingon to say how you know as a
+[1451] leader how do you work with your team uh
+[1455] you know the a lot of people the sort of
+[1457] like high level leadership advice is
+[1458] like the CEO helps the team Focus but
+[1461] then in the case of verel there's so
+[1463] many different areas of the business now
+[1465] and it seems like you're very focused on
+[1469] on serving your customers the developers
+[1471] and the sort of you know companies
+[1472] building on for sale but at the same
+[1474] time you have like all these different
+[1476] bets uh how how do you kind of like
+[1478] prioritize internally and it seems like
+[1481] you're okay with just doing things in
+[1482] the way that you know Facebook releases
+[1484] react you know they've benefited from it
+[1487] but they haven't nearly captured all the
+[1489] value from it and so it seems like
+[1490] you're okay with sort of you're very
+[1492] open to sort of releasing things and not
+[1495] it's less oriented around we need to you
+[1497] know capture 100% of the value that we
+[1499] create or yeah I think shortterm
+[1501] obsession over value capture is is not
+[1503] the right recipe to build a generational
+[1505] company and I'm obsessed with growing
+[1508] the the size of the pie my number one
+[1511] Allegiance is the web so when I was in
+[1515] Argentina I was able to and this I you
+[1518] know when you're a kid and you try lots
+[1519] of different programming
+[1521] languages the thing that blew my mind is
+[1523] the URL in fact if you look at the
+[1525] success of verel so far it really is
+[1527] about the success of of a euro is that I
+[1531] thought holy crap kubernetes is so hard
+[1534] CDN are so hard What If people could
+[1537] just deploy with one click or one press
+[1540] of a button and get back a URL of what
+[1543] they're working on that they can share
+[1545] with the world look at other companies
+[1547] have been massively successful like or
+[1549] products like Google Docs or figma
+[1552] they've essentially done that like a
+[1553] thing that didn't have a URL before now
+[1555] has a URL we're doing that for every
+[1557] appli on the planet so it's primarily an
+[1560] infrastructure
+[1562] business and then on the other hand we
+[1564] know that in order to cast the widest
+[1566] possible net and attract the widest
+[1568] biggest number of people open source is
+[1570] the only way it's
+[1572] non-negotiable and in addition to xjs
+[1575] like I mentioned we cre an xjs sorry xjs
+[1577] and AISD K in Turbo and we we acquired a
+[1582] bunch of companies like Shad ZN and and
+[1585] so the more we can you know cast this
+[1588] message out of the world of the web
+[1590] needs to win and also it needs to win
+[1593] because we have the best products I I
+[1595] you know I you can think of our
+[1597] competition as all these other prods in
+[1599] the developer ecosystem another
+[1600] reframing that is perhaps more
+[1602] interesting is think about
+[1603] Apple Apple is holding an entire world
+[1607] hostage yeah to a lot of arbitrary rules
+[1611] they make all the calls you know the web
+[1614] that I experienced when I was a kid was
+[1615] a web that is completely permissionless
+[1618] yeah which is also why I'm PR to pill
+[1619] then we could get into that and whatever
+[1621] but permissionless is actually the most
+[1623] important it's like freedom of speech is
+[1625] up here and then right up there is also
+[1628] permissionless which is also
+[1629] increasingly a form of speech is that
+[1632] you can get something into a URL without
+[1634] asking Tim Apple for permission and so
+[1637] that is the true enemy so to speak and I
+[1640] think my message to all these other
+[1641] comment to be like let's band together
+[1643] and make sure that you can publish
+[1645] without going through an Appo review
+[1646] process you can launch crypto companies
+[1649] without asking Apple what they think
+[1650] about crypto whatever you want you
+[1652] should be able to and in AI right like
+[1655] AI models need to decentralize and get
+[1657] into the hands of developers as quickly
+[1659] as possible so that we build
+[1661] defensibility against the sort of like
+[1664] monolithic AI systems I think I'm trying
+[1666] to think about like how 9,000 or
+[1668] whatever that is like or Sky I just I
+[1670] don't want to go to one interface bracel
+[1672] needs to decentralize and democratize
+[1675] URLs and interfaces to the world and by
+[1677] the way my other point was going to be
+[1679] I'll give credit to Apple they have a
+[1682] culture of quality and they've managed
+[1684] to permeate that culture of quality to
+[1687] that to their
+[1689] ecosystem and and I want that for the
+[1691] web as well I want to make sure I
+[1693] actually don't even have a particular
+[1695] force in the race we don't we not only
+[1697] support nextjs we support another 35
+[1699] Frameworks whatever framework allows me
+[1702] to go to a website like a blind tasting
+[1704] and be like oh this website is freaking
+[1706] great you should be able to work
+[1708] backwards to oh they use some technology
+[1710] supported by verel that's my that's my
+[1712] fitness function uh Curious did anybody
+[1715] ever uh come to your office with5
+[1718] billion do in cash and tell you to you
+[1720] ask you to train a foundation model and
+[1723] how did that conversation go because I'm
+[1724] I'm sure like you know in all the craze
+[1726] of the last couple years there could
+[1728] have been an opportunity to just like
+[1729] you know I'm sure there's a bunch of
+[1730] people that would have been happy to say
+[1732] hey you're really well positioned to
+[1734] build yeah when's the humanoid robot
+[1736] coming yeah not that to be very obsessed
+[1739] with the vzer data so I'll tell you I
+[1741] also haven't shared this before but so
+[1743] many companies have come and ask for
+[1745] because by the way like the interesting
+[1746] thing about bzero is and going back to
+[1749] the design mindset and quality mindset
+[1751] is we're trying to produce things we're
+[1752] proud of and and nested we're proud of
+[1755] our customers are proud of and users of
+[1757] the internet say okay now there's a
+[1759] better web I think we should all also
+[1761] band against AI slop like we shouldn't
+[1764] create a web that has this overly
+[1767] brushed texture images coming out of
+[1770] like like low quality models and
+[1771] whatever and so a huge inspiration for
+[1773] me was actually mid Journey mid Journey
+[1776] speaking of which is a nextjs user that
+[1778] self hosts nextjs extremely proud of
+[1780] that and they there's something about
+[1783] like the taste that gets embedded into
+[1785] this models so it's not just the data
+[1787] that you want it's also infusing your
+[1790] preferences and taste and it's almost
+[1793] like casting an opinion into the world
+[1795] like this is what I believe products
+[1797] should look like if by the way you also
+[1798] want and this is why the conversational
+[1800] interface is so fantastic you can still
+[1802] leave the customer to their own
+[1804] creativity so you can say you go to V
+[1806] and you say build me a product for
+[1808] travel like Wonder actually also verell
+[1811] customer go and then you're like thank
+[1812] you well I don't like it uh make it more
+[1817] yellow um you know and like the model
+[1820] will follow yeah so it's striking that
+[1822] balance between creativity and best
+[1824] practices for a better web uh I I have a
+[1827] question so like completely convinced on
+[1829] the strategy of uh bringing in new
+[1832] developers allowing even non
+[1834] non-technical folks to build and deploy
+[1837] websites but uh some of your companies
+[1840] some of your clients are absolutely
+[1841] massive and one of the critiques is like
+[1844] well you're abstracting this AWS
+[1845] infrastructure it can get kind of
+[1847] expensive what what are the
+[1849] conversations like on your side to keep
+[1852] a Nike or an Uber on versell long term
+[1855] and what how do you see those
+[1858] relationships going and how important it
+[1860] is it to not only enable someone to show
+[1862] up non-technical prompt build an app but
+[1865] then scale it into that one person one
+[1867] billion dollar company and they're
+[1869] saying yeah you know what I'm sticking
+[1870] with versel forever yeah yeah uh you're
+[1873] a question also contains the answer
+[1875] because you said you know verceles has
+[1876] been getting a lot bigger yeah and
+[1878] because we've been getting bigger which
+[1880] you know comes with this challenges like
+[1881] X drama and whatever but the ultimate
+[1884] privilege is the amount of incredible
+[1886] infrastructure optimization that we can
+[1888] do when you're starting a company a
+[1890] little company like you're not thinking
+[1892] about optimizing if you're thinking
+[1893] about optimizing you're probably not
+[1895] doing the you know we we have this motto
+[1897] that we introduce at next com that is a
+[1901] famous there's a famous essay in the
+[1903] software engineering industry of like
+[1905] you first make it work you then make it
+[1907] ride and then you make it fast and I
+[1910] would add a forth and then you make it
+[1911] cost efficient sure and actually from a
+[1914] computer science point of view fast and
+[1916] cost efficient actually almost come to
+[1918] together we've done so many
+[1919] optimizations of the infrastructure I
+[1920] think this year we've already announced
+[1923] eight price decreases or like last
+[1926] quarter and this year and we continue to
+[1929] announce price decreases because we're
+[1931] passing on the cost savings that we
+[1934] realize in our infrastructure at on all
+[1937] sides that's great the CDN is getting
+[1939] more efficient the compute we just
+[1941] announced fluid compute it's staggering
+[1944] what we've done in terms of uh compute
+[1946] efficiency some customers saw an
+[1948] improvement in efficiency of
+[1950] 85% wow so so what I would say to the
+[1953] '90s of the world the previous story of
+[1955] verel which is still fundamentally
+[1956] awesome is you won't have to worry so
+[1959] much about devops and platform
+[1961] engineering and on call and and those
+[1963] human costs which are
+[1966] ginormous and now you'll be fighting for
+[1968] like infr high quality infrastructure
+[1970] Engineers with all the AI companies as
+[1972] well so like the human cost is very real
+[1974] of doing something like for sale but
+[1976] then the scale cost of like versell
+[1979] actually gets more efficient the more I
+[1981] use it is awesome and we we're committed
+[1984] to continuing to sort of shared those uh
+[1987] infrastructure savings with our
+[1988] customers and by the way the inspiration
+[1989] here is AWS I think sure when I started
+[1991] using AWS it was quite expensive and
+[1993] then they just announced so many price
+[1995] decreases because and by the way that's
+[1997] kind of the dance we manage nexj for
+[2001] people you can also self-host and manage
+[2003] yourself and we're actually also
+[2005] partnering with companies that are even
+[2007] competitors over to help them manage
+[2008] nexts better when they want to create an
+[2010] offering like that and we know that
+[2012] there's work to do there but the nice
+[2014] dance is that if we if you let up and
+[2017] and let us manage your workload we will
+[2019] be able to optimize it to a level that
+[2021] is sort of
+[2022] unbelievable well it's noon we'll let
+[2025] you go I'm sure you have a bunch more to
+[2027] today great having you on uh please call
+[2029] back in when you have more news uh
+[2031] really fun conversation I love your show
+[2033] thank you so much for having me yeah
+[2034] thanks for com this is fantas see you on
+[2036] next see you on next

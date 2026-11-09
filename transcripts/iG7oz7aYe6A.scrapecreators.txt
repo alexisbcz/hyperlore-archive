@@ -1,0 +1,321 @@
+[6] [music]
+[11] [music]
+[13] >> Hey everyone.
+[15] My name is Martin de Gourcuff. I'm the
+[17] CTO and one of the co-founder of Hormat
+[20] and AI.
+[22] So for those who don't know us, we are
+[25] company that
+[27] design and manufacture
+[29] autonomous robotic systems for defense
+[32] application.
+[34] And today I'm going to talk a bit about
+[37] the future of defense and why it is
+[40] intertwined with uh
+[42] multi-robots, AI, and autonomy at scale.
+[47] All right. So let me start
+[50] the presentation
+[51] with
+[52] a little disclaimer. I usually make ugly
+[55] sides, but that's on purpose because
+[57] otherwise
+[59] nobody take you seriously as a CTO,
+[60] right?
+[62] First remark.
+[65] I think everyone here agrees that robots
+[67] have suddenly become ubiquitous in
+[70] recent conflict. So we have many
+[72] examples
+[74] for for that.
+[75] The one is the infamous
+[79] kamikaze FPV drone that we see a bit
+[82] everywhere in Ukraine and other
+[84] battlefields.
+[85] Another one is the Shahed 136 that is
+[89] widely used by the by Iran and under
+[92] another version by by Russia.
+[95] So this one can hit a target at 2,000
+[98] km.
+[100] And and we see more and more
+[104] naval drones. So this one is an example
+[106] of a jet ski that was repurposed by the
+[109] Ukrainian forces and that was found on
+[111] the Turkish shore
+[113] a few years ago.
+[115] This is an example of a rolling robot to
+[117] evacuate people on the battlefield. So,
+[120] again, this is deployed in Ukraine.
+[124] Now, the question is, how do we defend
+[126] ourselves against these new threats?
+[131] So, to answer that question, let me make
+[134] a second observation,
+[136] that is, against robots, humans stand no
+[139] chance.
+[140] And,
+[141] uh, the reasons are quite obvious. So,
+[144] first of all,
+[145] it's very easy to make the perception of
+[147] a robot much better than the one of a
+[149] human. So, you can make you can make it
+[153] easily multimodal. You can increase its
+[156] range, its precision, its field of view.
+[159] So, you can enhance it specially and
+[162] temporally.
+[163] And, same goes for action. Uh, it's
+[166] fairly easy to make a robot faster and
+[169] more more precise than a human.
+[171] And third, uh,
+[173] of course, robots only needs commands
+[176] and energy, and that's all. And they
+[178] their morale don't decrease over time.
+[182] So, I've picked a little, uh, simulation
+[184] that, uh,
+[186] I found on the, uh, Modern War Institute
+[189] GitHub. Uh, so, it's a it's an institute
+[192] in West Point. So, it's a Monte Carlo
+[194] simulation of the survival rates of a
+[197] group of vehicles, uh, on the left-hand
+[199] side under artillery shells, and on the
+[202] right-hand side under, uh, under attack
+[205] of drones.
+[206] And what you can see is that, um,
+[210] so, this, uh, survival rate is presented
+[213] as a function of the number of shells or
+[215] the number of drones, and as a function
+[218] also,
+[219] uh,
+[220] of the vehicle spacing, which is a
+[222] traditional method to mitigate the
+[225] artillery attacks. And so, what you can
+[227] see is that the survival rate is much
+[230] lower for, uh, attack drones than it is
+[233] for uh, artillery.
+[235] And that's because intrinsically
+[237] vehicles are
+[239] manually controlled systems that again
+[242] stand no chance against an attack of
+[244] robots.
+[245] So, this is just an example, of course.
+[248] Uh but I think everyone would agree that
+[251] this translates well to other cases.
+[255] Um so,
+[258] one answer to that problem is, of
+[260] course, other robots.
+[262] Uh on the left-hand side, you can see
+[265] VTOL drone that is being taken down by
+[267] the Argus, which is one of the
+[269] interceptors that we develop at Armatan.
+[272] So, this is a real footage. And on the
+[274] right-hand side, sorry for
+[277] it's a very bad screenshot, but it's a
+[280] Ukrainian
+[282] naval drone that is taking down a
+[284] Russian naval drone.
+[288] And it's one thing to bring robots to
+[291] counter robots, that's
+[292] another one to scale it. Just because
+[295] it's fairly easy to scale the attack of
+[298] robots. Um so, it has to be easy to
+[301] scale the defense as well. So, this is a
+[303] little chart
+[304] that tells you
+[306] the
+[307] daily UAV attacks on Ukraine.
+[311] And what you can see is that there
+[313] several days where the number of attacks
+[316] per day
+[317] goes up to several hundreds of
+[320] attacks.
+[321] So, unless you have something to counter
+[324] this scale,
+[325] uh it just doesn't work.
+[329] So, the issue is that as of today, we
+[333] have the current paradigm is that we
+[335] have one operator per per robot. So,
+[338] this is a very good example. This is a
+[340] Sting interceptor in Ukraine.
+[342] So, very efficient, but it is manually
+[344] controlled, which means you need one
+[346] operator to control it. So, this is on
+[348] the right-hand side an example of a
+[350] successful uh
+[352] landset uh
+[355] interception by the Sting.
+[358] Um
+[359] and we can clearly see the limit of that
+[362] model. So, let's say you need to defend
+[364] a border,
+[365] well, it it means that you need a
+[368] operator everywhere here 24/7
+[371] waiting for attacks to come. So,
+[374] obviously, that doesn't work.
+[376] So, this is why we need
+[378] uh autonomy, and this is precisely what
+[381] we were trying to do at Harmatan.
+[384] So, of course, the human is in the loop,
+[387] but the human is here to take the right
+[390] decision, and the rest of the complexity
+[392] of the mission is abstracted away.
+[395] So, this is a little promotional uh
+[397] video, but nonetheless, that show how
+[399] the things work.
+[401] So, we detect a threat.
+[404] Uh and if a human allows the engagement,
+[407] then the interception is fully
+[409] autonomous from the ground uh to the
+[412] interception. So, this one is a model
+[414] that does kinetic interception. For
+[417] bigger threats, we have also explosive
+[419] ones.
+[420] Uh and by the way, this is a
+[423] a [snorts] real interception footage.
+[428] And
+[430] um
+[431] as I mentioned, we also need to scale
+[433] this, and so that's why we try to make
+[436] our system to answer
+[439] threat that scales, and so we need
+[441] answers that scales as well. And so, in
+[443] the video that you're going to watch, uh
+[447] you'll see
+[448] uh
+[449] um an attack of several drones
+[452] that it's being countered by several
+[455] interceptors
+[456] by one operator.
+[463] >> [music]
+[469] [music]
+[479] [music]
+[485] [music]
+[489] >> Sorry for the dramatic music. It's a
+[491] promotional video, but these are real
+[493] interception. I think you get the idea.
+[496] Uh this allow
+[498] us to enter the paradigm where one
+[500] operator can control many robots.
+[503] Uh
+[504] and the human is still in the loop.
+[508] So, let's talk a bit about AI.
+[510] So,
+[512] we mentioned that autonomy is key here.
+[515] Uh and of course, AI is the key enabler
+[518] for
+[519] a robot autonomy, but also mission
+[521] autonomy. So, here let's talk a bit
+[523] about
+[524] robot autonomy. So,
+[526] it means that
+[527] uh
+[528] slowly but surely, you want to replace
+[530] the technological stack by um blocks
+[533] that contains AI and machine learning.
+[536] So, there are many examples of that. Uh
+[540] I mean the the the more classic ones are
+[542] everything that that is computer
+[544] computer vision, but you may also want
+[546] to replace the guidance stack, the
+[548] navigation stack, the control stack by
+[551] AI. So, this is an example where we
+[553] replace the guidance algorithm so that
+[556] design the interception trajectory.
+[559] Uh so, we replace the classical
+[561] algorithm with a reinforcement learning
+[563] algorithm. And so, basically, the drone
+[566] learns
+[567] uh to intercept the target using the
+[570] image that is produced by its onboard
+[573] camera.
+[575] Um [snorts]
+[576] I also mentioned that
+[578] uh AI is an enabler for
+[581] mission autonomy, which means
+[583] you can use you can leverage uh machine
+[586] learning to improve uh the
+[590] the mission planning of your multi-robot
+[592] system. So, this is
+[594] a little simulation
+[596] where you have object of interest that
+[598] are the little um
+[601] uh
+[602] white rectangles here. Some of them are
+[605] in the field, some of them are in the
+[606] forest. And you have a fleet of robots.
+[610] Some of them carries uh traditional
+[613] electro-optical cameras, so that's the
+[615] white dots. And the pink triangles are
+[618] drone carrying IR sensors.
+[621] And on the left-hand side, you have a
+[624] classical strategy where you try to
+[626] divide the space to search and allocate
+[629] it to your different drones. And on the
+[631] right-hand side, we use a learned belief
+[633] strategy where uh neural net learned
+[636] that usually the object of interest are
+[639] packed together, that they hide at the
+[641] edge of the forest,
+[643] and that
+[645] uh traditional cameras are much better
+[647] in the in wide-open areas, whereas
+[650] infrared uh drones are much better to
+[652] locate uh object of interest uh under
+[655] canopy.
+[657] So, and on the on the bottom part,
+[660] you'll see the graph of target found
+[664] versus time.
+[670] So, as you can see
+[672] uh on the left-hand side, you can see
+[674] this very traditional approach to
+[677] to searching for object of interest. On
+[680] the right-hand side, uh
+[682] the different drones are targeting
+[686] uh zones of interest that are that that
+[689] were read beforehand.
+[691] And what you can see is that for
+[692] instance, the little pink triangles are
+[695] searching for the edge of the forest
+[697] uh instead of wasting their time in the
+[700] in the wide open areas that are covered
+[703] by the
+[704] uh electro-optical drones. And so, what
+[707] you what we can see here is that of
+[709] course, the learn belief approach
+[712] outperform greatly the the classical
+[714] approach.
+[718] Um so, of course, autonomy in defense
+[721] systems brings a lot of ethical question
+[724] and
+[726] is scary for good reasons. In our case,
+[729] we also see it as a design opportunity
+[732] because
+[734] since our system are autonomous from um
+[738] the beginning to the end of the mission,
+[740] uh we can constrain their action space,
+[744] which means the robot we can define what
+[746] the robots can do or cannot do, and also
+[749] what the operator can or cannot do,
+[751] which wasn't the case uh
+[753] with a non-autonomous systems.
+[757] Another thing is that
+[758] everything that we develop are
+[761] mission-scoped. So, for instance, we
+[764] train our machine learning machine
+[765] learning model for one purpose. In the
+[768] case of interceptor drones, they are
+[770] trained to detect drones and nothing
+[772] else.
+[774] And third, we can uh embed and uh
+[777] hardcode the authorization chain into a
+[780] formal logic that is
+[783] uh later embedded in in the drone.
+[785] So, in the end, autonomy brings an
+[788] interesting opportunity of locking those
+[791] systems for the mission they were
+[793] designed for
+[794] and hence make them hard to repurpose.
+[799] So, thank you for your attention. Uh if
+[802] you want to know more or if you're
+[803] interested in
+[805] uh we are recruiting.
+[809] >> [music]
+[817] [music]
+[825] [music]

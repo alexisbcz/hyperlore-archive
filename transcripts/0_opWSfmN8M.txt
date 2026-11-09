@@ -1,0 +1,1640 @@
+[0] You don't have a choice. AI is going to
+[0] disrupt in the most aggressive violent
+[4] ways. If you're not in it, you're
+[4] about to get kicked out of all of it.
+[8] You have very successfully shifted late stage
+[8] SaaS business to an AI-first agent-based business.
+[15] Fin is our AI agent who will pass 100 million
+[15] ARR with Fin in less than three quarters.
+[20] Let's talk about how you
+[20] made this actually happen.
+[22] We were about to hit $0 net new ARR, which means
+[22] we would've been in negative growth territory.
+[28] So, ChatGPT launches. Was it just like this
+[28] is it, we got to go all in on this thing?
+[32] I said, we need to become a wartime company. If
+[32] we don't fight for this, we are dead. I jumped
+[39] hard on AI, but I also restarted the culture.
+[39] I rewrote the values designed to be a sharp
+[44] knife to cut out the parts of the company
+[44] that I just knew wouldn't be effective.
+[48] If you're trying to make the
+[48] shift and it's just not moving,
+[50] you may need to go hardcore founder mode.
+[52] The way that greatness is created is that you find
+[54] a CEO who's willing to make brave
+[54] hard decisions and own the results.
+[59] What percentage of the employees kind
+[59] of turned over during this period?
+[62] Ultimately like 40%.
+[64] You said there was a soft coup. Is
+[64] there more you could share about that?
+[69] Today my guest is Eoghan McCabe. This is the first
+[69] in a series of conversations that I'm having with
+[73] founders who have successfully transformed their
+[73] established SaaS or marketplace businesses into an
+[79] AI first company that is growing like crazy and
+[79] overtaking their decade plus old business. So,
+[84] many companies and product teams and founders
+[84] are trying to navigate this very tricky time
+[89] where every industry is being disrupted by AI,
+[89] and my goal here is to help you essentially
+[93] disrupt yourself before somebody else does. The
+[93] story of Intercom's transformation into Fin is
+[98] incredible. Their traditional business was valued
+[98] at billions of dollars, was making hundreds of
+[103] millions of dollars in ARR, but growth started
+[103] to plateau and was even about to go negative.
+[108] Six weeks after GPT-3.5 Came out, they had a
+[108] working prototype of what is now Fin and Eoghan
+[114] and the team decided to go all in on AI.
+[114] Today Fin is growing like crazy already
+[119] at eight digits in ARR and Intercom is on track
+[119] to be growing faster than every public software
+[124] company by next year. In our conversation,
+[124] Eoghan gets very real and honest about what
+[129] it takes to win right now. What do you have to do
+[129] to turn the ship around at Intercom in spite of a
+[134] lot of pushback and even a soft coup attempt,
+[134] what he believes people still don't understand
+[139] about what is happening in software and AI
+[139] and so much more. If you enjoy this podcast,
+[144] don't forget to subscribe and follow it in your
+[144] favorite podcasting app or YouTube. Also, if you
+[148] become an annual subscriber of my newsletter,
+[148] you get a year free of a bunch of incredible
+[153] products including Lovable, Replit, Bolt n8n,
+[153] Linear, Superhuman Descript, Whisper Flow,
+[158] Gamma Perplexity, Warp, Granola, Magic Patterns,
+[158] Raycast, [inaudible 00:02:42] and Mobbin. Check
+[162] it out at lennysnewsletter.com and click
+[162] bundle. With that, I bring you Eoghan McCabe.
+[168] This episode is brought to you by Great Question
+[168] the all-in-one UX research platform. Loved by
+[173] teams at Brex, Canva, Intuit and more. One of the
+[173] most common things I hear from PMs and founders
+[178] that I talked to is I know I should be speaking to
+[178] customers more, but I just don't have the time or
+[183] the tools. That's exactly the gap Great Question
+[183] fills. Great Question makes it easy for anyone
+[188] on your team, not just researchers, to recruit
+[188] participants, run interviews, send surveys, test
+[193] prototypes, and then share it all with powerful
+[193] video clips. It's everything you need to put your
+[198] customers at the center of your product decisions.
+[198] With a prompt as simple as why did users choose us
+[203] over competitors, Great question not only reveals
+[203] what your customers have already shared, but it
+[208] also makes it incredibly easy to ask them in the
+[208] moment for fresh insights from the right segment.
+[212] Picture this, your roadmap's clear, your team's
+[212] aligned, you're shipping with confidence and
+[217] you're building exactly what your customers need.
+[217] Head to greatquestion.com/lenny to get started.
+[224] This episode is brought to you by WorkOS. If
+[224] you're building a SaaS app, at some point your
+[229] customers will start asking for enterprise
+[229] features like SAML authentication and SCIM
+[235] provisioning. That's where WorkOS comes in, making
+[235] it fast and painless to add enterprise features
+[240] to your app. Their APIs are easy to understand so
+[240] that you can ship quickly and get back to building
+[245] other features. Today, hundreds of companies
+[245] are already powered by WorkOS, including ones
+[251] you probably know like Vercel, Webflow and Loom.
+[251] WorkOS also recently acquired Warrant, the fine
+[259] grain authorization service. Warrant's product
+[259] is based on a groundbreaking authorization system
+[264] called Zanzibar, which was originally designed
+[264] for Google to power Google Docs and YouTube.
+[270] This enables fast authorization checks at enormous
+[270] scale while maintaining a flexible model that can
+[275] be adapted to even the most complex use cases.
+[275] If you're currently looking to build role-based
+[281] access control or other enterprise features
+[281] like single sign-on, SCIM or user management,
+[287] you should consider WorkOS. It's a drop-in
+[287] replacement for Auth0 and supports up to 1 million
+[293] monthly active users for free. Check it out at
+[293] workos.com to learn more. That's workos.com.
+[302] Eoghan, thank you so much for being
+[302] here and welcome to the podcast.
+[309] Thank you. Great to be here.
+[310] You have done something quite extraordinary
+[310] with Intercom, something that a lot of founders
+[315] and product teams are trying to do, which
+[315] is to navigate this very scary disruption
+[320] that's happening as a result of AI to most
+[320] businesses. You have very successfully shifted,
+[327] as you described, a late-stage SaaS business to
+[327] an AI-first agent-based very successful business.
+[335] I want to use the time to extract as much
+[335] as I can out of your journey so that people
+[339] that are trying to navigate this and having a
+[339] hard time can have less pain, less suffering
+[344] and will hopefully get to something that works.
+[344] To give people a sense of just how well things
+[348] have gone. Can you share some stats about the
+[348] current state of the business, how it's going?
+[353] Currently across the business we benchmark
+[353] ourselves against all public software companies.
+[358] There's like 120 something B2B software companies.
+[358] We're like in the 15th percentile for ARR growth,
+[363] so we're up there. Fin, which is our AI
+[363] agent, which is the future of the business,
+[369] the thing that will disrupt the old
+[369] business. It's growing north of 300%.
+[375] It took off really fast like all these other
+[375] AI companies you hear of the first year,
+[379] it grew from one to 12 million ARR. We're now
+[379] in solid mid eight digit ARR growth there,
+[386] we'll pass 100 million ARR with Fin in
+[386] less than three quarters. And yeah, Fin,
+[393] we're in the customer experience category with
+[393] Fin, so it's one of these agents that helps do
+[397] all your customer work and they all started
+[397] with service and in that category we are the
+[403] biggest by customer count, biggest by revenue,
+[403] best by performance benchmarks. We win all our
+[409] head-to-heads and our direct competitor
+[409] bake-offs. We're rated number one on G2,
+[415] so I think we're doing pretty well. We're doing
+[415] far better than we imagined at this point.
+[420] Okay. This sounds like the dream for a lot
+[420] of founders, especially ones that are stuck
+[425] with their existing business that isn't going
+[425] very far. So, let's get to that. Let's talk
+[428] about the beginning of this journey. You had
+[428] a business that was working, people used it,
+[432] loved it, over 100 million ARR I believe.
+[432] Talk about just the state of the business at
+[438] the point roughly when you decided I really
+[438] need to make a big change and go AI first.
+[443] It was already in the hundreds of millions,
+[443] Intercom is 14 years and change now. Part of
+[450] the story is that in 2020 I had been sick for a
+[450] couple years. The background is I had mold toxins
+[456] and later I found out that I got a tick bite and
+[456] that messed me up. And so I left the CEO role in
+[462] 2020 and a lot of the mistakes I had been making
+[462] when I was sick got worse. We became what a lot
+[474] of late stage software companies are today,
+[474] which is a bit bloated. We lost some energy.
+[481] Our strategy was diluted and unfocused. We're
+[481] trying to do all the things for all the people.
+[486] We didn't know what problems we
+[486] were already solving and for who,
+[489] and the result was very slow revenue
+[489] growth in the low single digit percent
+[497] and I was away for two years unsatisfied where the
+[497] business was going. We had this post COVID sugar
+[506] rush, which a lot of big companies at that stage
+[506] did in 2021. Everyone's valuation and revenue was
+[514] through the roof and that hit a lot of problems in
+[514] a lot of these companies and we had five quarters
+[523] of success of sequential decline in our net new
+[523] ARR and we were about to hit $0 net new ARR which
+[534] means we would've in negative growth territory.
+[534] We never got there. I managed to stop it before
+[538] we got there, but we were falling each quarter
+[538] and I found that I, despite my wishes to go and
+[548] have new adventures, still had a lot of pride
+[548] for this damn thing and didn't want to see it.
+[555] And in a way that was so different from the way it
+[555] started, it started with so much hope and optimism
+[562] like so many companies do, and it was about to
+[562] fade away. So, that was when I felt like I need
+[566] to go back and I need to make a change. I went
+[566] back and one month later ChatGPT was announced,
+[573] so it would be really neat and tidy to be able
+[573] to say that the AI transformation came, I knew
+[581] I couldn't be on the sidelines, I had to save
+[581] this thing from the coming disruption. Actually,
+[587] I got whacked across the head by this AI
+[587] thing, but it also ended up being a gift.
+[594] So, ChatGPT launches, was it just like this is it,
+[598] we got to go all in on this thing? Was
+[598] it like, hmm, let's watch this thing?
+[602] How quickly was it clear that this is the
+[602] future, this isn't working what we're doing?
+[606] We and I were very lucky and that we had an
+[606] AI group already. We were in the customer
+[613] communication business, chiefly doing customer
+[613] service. We were building bots, but they were
+[618] rudimentary AI. We had a bunch of our own machine
+[618] learning that did Q&amp;A for customer service, but it
+[625] required a phenomenal amount of setup and was kind
+[625] of crappy. But we had a number of AI engineers in
+[631] the company already, and so when GPT 3.5 came out,
+[631] they said, this is different and it didn't take
+[638] long for people to start to imagine that this
+[638] is going to be pretty disruptive to service.
+[643] And it started where we imagined that this was
+[643] going to just wreck everyone selling seats,
+[650] everyone in the conventional SaaS game.
+[650] And we believed that was quite possible for
+[655] some couple years after that moment. But we were
+[655] only six weeks into the launch of GPT 3.5 when we
+[665] actually had a beta version of Fin. I got a text
+[665] from Des, my co-founder, a week or so after the
+[673] launch of GPT 3.5 and he said, "The AI team have
+[673] something interesting and they actually think we
+[680] could make a product out of this." And this was
+[680] long before there's now no doubt 100 service
+[686] agents. We had something very early working and
+[686] part of what we had to our advantage also was that
+[691] we had this giant base 300, sorry, 30,000 paying
+[691] customers, hundreds of thousands of active users,
+[700] millions of their users, billions of data points.
+[700] So, we had a lot to play with and so we jumped on
+[706] it. Now obviously it's fun to tell that once
+[706] again to the idea of this brave Maverick move,
+[716] and I won't discount the fact that we were brave,
+[716] but we were coming from a point of having nothing
+[721] to lose. So, we certainly are unique. I don't
+[721] know a single company of our size and age that has
+[730] pivoted this hard to AI and being as successful
+[730] as we have been, but we also previously were
+[737] screwed. We were in a really tough spot, so had
+[737] no choice. So, I'll take the kudos and credit,
+[741] but also have a lot of empathy for companies that
+[741] weren't as in as much trouble as we were, and
+[747] so try to thread the needle and sustain the old
+[747] business while adding to it with the new AI stuff.
+[754] Something I heard from someone that worked at
+[754] Intercom, correct me if this is not correct,
+[758] you've always been very anti-bot in the
+[758] customer support business because you
+[764] didn't like how impersonal it was. It just didn't
+[764] feel like the way you wanted to build a business,
+[767] and then now that's what you do.
+[767] Talk about just that transition.
+[770] Yeah, I know it's a fun and ironic twist. Our
+[770] mission from the early days was make internet
+[778] business personal. And when I came back and we
+[778] started to lean into AI, I started to wonder,
+[783] does that mission make any sense anymore?
+[783] Now, part of our lean into AI is that we had
+[788] no choice not only for the business, we needed
+[788] something new, but also we saw that this is the
+[793] future and you can't fight the future. You must
+[793] be part of it. And so okay, fuck, we're going
+[797] to be part of it. And ultimately, and it's very
+[797] easy to tell yourself these little stories. So,
+[806] I'm open to anyone telling me this is bullshit,
+[806] but when I interrogate myself, my soul and my
+[814] mind, I don't think it is, when I interrogate
+[814] my heart and my mind, I don't think it is.
+[823] But I'm now of the belief that providing a
+[823] customer with a highly engaged, instantly
+[834] available expert, consistent, fast, charismatic,
+[834] funny, friendly, personal agent available for
+[844] literally every single customer every minute of
+[844] the day around the clock is so much more personal
+[851] than making them wait 2, 3, 4 days for a crappy
+[851] canned response. And so that's the irony and
+[863] the magic and the wonder of AI, even if it does
+[863] make us ask some hard questions of ourselves and
+[872] think carefully about its impact on humanity, it
+[872] actually is superior at the things we describe as
+[884] personal and human, relative to humans themselves.
+[884] And so that's where I'm at today. Yeah, maybe
+[891] it's a bunch of fancy post rationalization,
+[891] but honestly that's really where I stand.
+[899] I think data has shown people often
+[899] prefer not to talk to humans just to
+[903] solve problems that can just be solved.
+[903] It's a lot of stress to try to figure
+[907] out how to talk to some support agent that
+[907] doesn't know anything about what's going on.
+[911] Yes, and the AI is just better. Look at
+[911] Waymo. So, Waymo doesn't crash. It has 3.5
+[920] times less crashes than humans. It doesn't bother
+[920] you or bug you. I like to chat with an Uber driver
+[928] as much as the next guy, but not always. It
+[928] doesn't have hygiene problems. It doesn't
+[933] take wrong turns. I mean it just doesn't
+[933] do all these things that really bug people.
+[939] And it's really interesting to see Uber now offer
+[939] women the option to call only female drivers,
+[950] and I guarantee the reason they're doing that is
+[950] because women love Waymo because they feel safer.
+[957] AI is so often superior and humans are going to
+[957] be far better at other things. I'm pro-human,
+[964] I love humans. I really want humans
+[964] in the mix for all things in the rest
+[970] of my life, but when it comes to practical,
+[970] productive, efficient, and effective value,
+[976] the glue in between the human parts of our
+[976] lives, I actually want AI and robotics.
+[981] Before we start talking about how you actually
+[981] made this transformation a success, one other
+[985] piece of history is just your pricing strategy
+[985] historically has been not liked by people.
+[991] For example, I once had a Twitter poll
+[991] or a survey on my newsletter just like
+[995] what products do you pay the most for of all
+[995] your SaaS products? And Intercom's by far the
+[999] most. I know people constantly complain about
+[999] just how unclear it was and how high it was,
+[1003] and now you guys are at the forefront of how to
+[1003] price AI products. So, we're going to get to that,
+[1008] but just talk about the lessons and what
+[1008] happened there with pricing back in the day.
+[1013] Yeah, so I want to just validate your survey
+[1013] data. Yes, people abhorred our pricing.
+[1020] It was a meme. There were actual funny popular
+[1020] viral memes on Twitter that were making fun of
+[1028] our pricing. Part of the problem, if not all of
+[1028] the problem, well, there's two problems. One was
+[1036] our strategy, super unfocused. As you said, we're
+[1036] trying to do all the things for all the people,
+[1041] and when you're trying to do all
+[1041] the things for all the people,
+[1045] your efforts to capture all that different types
+[1045] of value are going to necessitate pretty complex
+[1054] pricing. If you're like customer service
+[1054] and you're selling seats and you're doing
+[1059] outbound messaging and you need to charge for
+[1059] messages and you're doing like SD or Messenger
+[1063] on a website and you need to charge for leads,
+[1063] already that's just metrics in every direction.
+[1069] And then if you're trying to sell to many
+[1069] different sizes of customers, you need tiers
+[1074] and gates and it just became a behemoth. So,
+[1074] part of the problem was the unfocused strategy,
+[1081] and then the other part of the problem was an
+[1081] unwillingness to frankly make bold decisions,
+[1088] say no, pick a lane and actually take pain
+[1088] in the short term for the long term. We
+[1094] rolled out this new pricing, and this is even
+[1094] before the Fin pricing you're talking about.
+[1098] When I came back and I said, "Yes, we're going to
+[1098] lose a lot of revenue here." I can't remember how
+[1104] much we wrote down, but we actually have already
+[1104] given away something like $50 million in ARR.
+[1112] We've reduced the prices for a lot of customers
+[1112] just to give them way simpler pricing because
+[1118] surprise, surprise, when people feel like
+[1118] they have far simpler, more predictable,
+[1123] fairer pricing, they'll stick around longer and
+[1123] it creates so much more ease in the company and
+[1132] promotes a healthier relationship with the
+[1132] customer too. When our people saw that we
+[1137] were screwing customers effectively in every
+[1137] direction, it starts to erode the idea that
+[1144] we care about our customers and then they
+[1144] make other customer-unfriendly decisions.
+[1148] And so one of the values I promoted when I came
+[1148] back was that we would be customer-obsessed,
+[1151] and so we had to kill our old pricing
+[1151] and give away a lot of revenue. So,
+[1156] that was the spirit behind the changes. But we can
+[1156] talk about the Fin pricing if you want to also.
+[1162] Let's save that because that's a really
+[1162] important topic that I think people need
+[1166] to hear. Let's talk about the shift and how you
+[1166] made this actually happen. You make it sound like,
+[1172] oh, not fully, but it's oh, we have to
+[1172] do, it wasn't working anyway. There's
+[1177] no risk to go all in on this AI thing.
+[1177] You're making $150 million a year ARR,
+[1181] you're worth at least a billion dollars
+[1181] at that point as a business. Yeah.
+[1185] I mean multiple billions.
+[1186] Multiple billions.
+[1186] We were making more money than that, so we
+[1186] were like multiple hundreds of millions.
+[1190] Yeah, okay. Very difficult to actually
+[1190] do even if things don't feel like they're
+[1195] growing anymore. So, first of all, just
+[1195] what was the moment, if there was one,
+[1198] of just like, okay, the six-week experiment
+[1198] of someone building a Fin internally,
+[1203] was that being like, this is it, or was there
+[1203] another moment of like, let's go all in on this?
+[1207] It was the combination of the company being older,
+[1207] us all, me and the founders being impatient like,
+[1216] are we going to make something out of
+[1216] this? We went through a time when the
+[1220] company was worth a lot. We're private
+[1220] so we don't have a daily mark to market,
+[1225] but all the other public software companies
+[1225] dropped 80%, 85, 90%. We saw our revenue growth
+[1233] crater. We were used to nice double digits. We
+[1233] were in low single digits. And so part of it was,
+[1242] let's do something here. Another part of it was my
+[1242] own anger and dissatisfaction with how the company
+[1250] was being run and the mistakes that I made myself.
+[1250] I made a lot of compromises as a lot of founders
+[1256] and founding CEOs do to placate employees or do
+[1256] it out fear to bring investors along, following
+[1269] advice in the industry and best practices.
+[1269] You betray your intuition in little bits and
+[1277] pieces over the years when the bright spark
+[1277] of your original idea turns into this big,
+[1284] unstoppable, scary corporate beast and a little
+[1284] bit of you dies every single time you go and
+[1291] betray yourself in that way. If you could pick
+[1291] in your mind three or four tech darlings from 10
+[1300] years ago when you meet the CEO and talk to them
+[1300] privately, very few of them feel outstanding about
+[1307] the state of their culture and the decisions that
+[1307] they make and the way in which they have to work.
+[1312] All of them have betrayed themselves in little
+[1312] ways, and I had left the business, I was super
+[1319] sick, I was burned out frankly from the revenue
+[1319] even having started to slow down before I left.
+[1325] I had been attacked unfairly in the press, just
+[1325] all of me was just fed up and I decided to take
+[1333] a very authoritarian, top-down, aggressive
+[1333] founder-first approach to all the things,
+[1341] and I found that deeply cathartic and that was
+[1341] the thing that led to me in part. The other was
+[1351] just good old-fashioned logic and the other was
+[1351] desperation saying, we're doing the AI thing,
+[1357] the AI thing, exciting and sexy. We need some
+[1357] new energy thing here. The new AI thing makes
+[1364] sense. And also just my intuition says, go
+[1364] for it. And so when people tell these stories,
+[1372] they rewrite history in their minds for
+[1372] the stories to be elegant and also so
+[1379] that they support their own self-aggrandized
+[1379] narratives about their brilliance. Actually,
+[1384] it's a big messy cocktail of things. And anyway,
+[1384] that's my attempt at explaining the cocktail.
+[1390] I saw a stat that when you first launched,
+[1390] when you first had this kind of prototype,
+[1395] you were losing money on every transaction
+[1395] that you're charging like a dollar,
+[1399] it cost you $120, something like that.
+[1403] That's right. 120 cents. Yeah, yeah.
+[1404] 120 cents. Okay. So, there's
+[1404] a lot of vision here if this
+[1409] is going to get to a place where this
+[1409] actually will be great and affordable.
+[1413] It's really funny. We charge 99 cents to resolve
+[1413] tickets, customer problems, and we have a higher
+[1422] resolution rate than anyone else, and we are proud
+[1422] of that and we obsess over that. It is the metric
+[1428] by which these agents are assessed, and we wanted
+[1428] our revenue to be 100% aligned with the value that
+[1438] they attained because we had all this scar tissue
+[1438] from pricing prior that felt unfair to customers.
+[1444] So, we said, what's the most fair that we can
+[1444] possibly find? Now, when we did all our research,
+[1449] we found that many SaaS businesses were spending
+[1449] between 20 and $30 per ticket resolved. We
+[1456] were spending 22. Now, consumer businesses,
+[1456] maybe they go down to $5. We were thinking,
+[1466] can we charge $10? That seems fair. It's half
+[1466] price. Can we charge $5? Can we even charge
+[1472] two and a half dollars? But early on we started to
+[1472] sense that people just wouldn't value the digital
+[1480] work as much as the human work, even though
+[1480] the digital work is better, more consistent,
+[1486] always available, makes the customer far happier.
+[1486] And so we actually started to lean into a price
+[1492] that we thought would be was the nexus between us
+[1492] earning the most and it being the most palatable.
+[1500] We basically said that if someone is not prepared
+[1500] to pay 99 cent for us to rapidly and elegantly
+[1509] perfectly and excellently solve their customer's
+[1509] problem, we need to wrap this up. We don't have a
+[1515] business here. So, that was where the 99 cent came
+[1515] from. I always believe that that pricing should
+[1523] come from value and not from costs. The cost is
+[1523] our problem. We just had this sense and intuition
+[1528] early on that this thing will get cheaper and it
+[1528] got a lot cheaper. The margin moves around, but we
+[1536] make a margin that makes this more than worth our
+[1536] while, and we know our customers get an excellent
+[1543] deal and are able to deliver to their customers
+[1543] a level of service that they never could before.
+[1550] It's a very clear pitch. We just had
+[1550] Madhavan the podcast and the pricing expert,
+[1556] and he has this phrase, beautifully simple
+[1556] pricing is where you want to get to. Also,
+[1560] he's a huge fan of outcome-based pricing,
+[1560] which is what you're describing here,
+[1563] where you pay for an outcome. So, you guys are
+[1563] in the magic quadrant of his pricing advice.
+[1567] Yes, thank God our pricing wars are over.
+[1570] Finally.
+[1571] Yeah.
+[1572] Okay, so going back to how you
+[1572] actually did this thing. So,
+[1575] basically you described what many people think of
+[1575] now as founder mode, just top down, as you said,
+[1581] the third area, and just here's what we're
+[1581] doing. We're not going to sit around waiting
+[1584] for you to give me ideas. What did you
+[1584] do? What did that look like internally?
+[1591] There was a couple of things. One was we
+[1591] were burning a lot of money, so I cut a
+[1596] lot of costs aggressively. Canned a bunch of
+[1596] different projects. We had this big glorious
+[1601] office we were about to fit out and I'm like,
+[1601] we're about to hit negative growth territory,
+[1607] stop it. And a lot of companies were really
+[1607] stuck in the prior world where they just
+[1613] were used to being super successful, rich and
+[1613] wealthy and spent like drunken sailors. So,
+[1617] I stopped all of that, got really frugal in
+[1617] ways I never thought I would. I still haven't
+[1623] touched the interior design of this office. I'm
+[1623] in here, even though I call it the hotel Marriott,
+[1627] I'm sick of it. Anyway, that was one. Another
+[1627] was picked a lane. Strategically we were all
+[1635] over the place and I said, "We're doing service."
+[1635] Zendesk had been acquired a couple years prior.
+[1640] They were strategically, energetically, culturally
+[1640] dead. They were upsetting customers in the
+[1645] market. There's an opportunity there. We're
+[1645] doing service, forget all the other stuff,
+[1648] even though there was a lot of people in the
+[1648] company saying, well, shit, we still have $80
+[1654] million of ARR that we're getting from the other
+[1654] thing and we're really good at that, and there's
+[1660] a big opportunity. There's other companies in this
+[1660] space worth billions. It was the type of decision
+[1665] that where I had to practice the professional
+[1665] CEO approach, which is, "Hey folks, what do you
+[1672] all think? Let's take everyone's input. Let's
+[1672] put it all down on a spreadsheet." Everyone
+[1676] had color beside all of the different options that
+[1676] we may take. Let's make a group decision. I said,
+[1683] "Sorry, this is what we're doing." So,
+[1683] I was very dictatorial in that respect.
+[1687] We had no one making decisions, so somebody
+[1687] needed to, even if I had some qualms about
+[1692] the decisions myself, I couldn't predict
+[1692] the future, but someone had to make a call.
+[1696] Obviously as soon as AI came around, I jumped
+[1696] hard on AI and announced that we were going to
+[1701] spend nearly $100 million of our own cash
+[1701] on that. We allocated a lot of capital,
+[1705] but I also restarted the culture. We had just a
+[1705] very comfortable culture as a lot of companies
+[1709] did. There was a lot of focus on social issues
+[1709] and a lot of complaining and dissatisfaction,
+[1715] and I rewrote the values designed to be a sharp
+[1715] knife to cut out the parts of the company that
+[1721] I just knew wouldn't be effective. So,
+[1721] I said that people must be resilient,
+[1726] that we had very high standards, that we'd work
+[1726] incredibly hard, that shareholder value was the
+[1732] most important thing that we'd optimize for. A
+[1732] lot of things that were controversial for this
+[1736] prior crowd. And then I designed these quarterly
+[1736] performance processes where not only would you get
+[1742] a mark or a grade for your performance against
+[1742] your goals that quarter, but you'd also get a
+[1748] score for your behavior against the values.
+[1748] And I hard coded a formula myself, and so I
+[1754] took it out of the manager's hands to say, if
+[1754] people got below a certain mark, respectfully
+[1759] and lovingly, we would say, thank you for your
+[1759] service. We're going to go forward without you.
+[1763] And so you do that just a small number of quarters
+[1763] and you can start to shape an organization that's
+[1769] design and the image of the values you want to
+[1769] create. And obviously there was a lot of pain,
+[1773] a lot of satisfaction. There was attempts at
+[1773] soft coup, there was letters sent to the board,
+[1778] people really unhappy, but on the other side
+[1778] of it, the people left were the most incredible
+[1791] entrepreneurial, brave, inspiring, happy
+[1791] individuals you could possibly imagine. And
+[1797] then you hire in their image. We ran an anonymous
+[1797] employee survey, I think 15 or 16 months after I
+[1807] started aggressively working through the org and
+[1807] rebuilding the org and rebuilding the culture,
+[1811] and we had a 98 to 99% approval of
+[1811] management, leadership and new strategy.
+[1819] And this is coming from me having the lowest
+[1819] Glassdoor rating for a CEO I had ever seen when
+[1826] I came back. So, I just want to explain that being
+[1826] that deliberate about your culture and upsetting a
+[1835] lot of people is the path through which you can
+[1835] create a culture where people are super happy,
+[1841] super engaged, super aligned, and now we have
+[1841] just this highly performant organization. Yes,
+[1848] we're messy in many ways. So, that was a big
+[1848] part of it too. So, it was kind of strategically
+[1853] picking a lane. Remaking how we go to market,
+[1853] the pricing was a really, really big piece that
+[1859] had a big effect. Betting on AI and then culture.
+[1859] And I kind of buried the AI thing because frankly
+[1868] none of this would matter if we didn't bet on AI.
+[1868] So, the story could all be summed up by saying,
+[1874] when you ask what did I do, it was that
+[1874] we built Fin and that changed everything.
+[1879] You said that this was very unpopular. I imagine
+[1881] many people were not happy with all
+[1881] the change and how top-down this was,
+[1885] you said there was a soft coup. Is there more you
+[1885] could share about that? I never heard that story.
+[1889] When you make that degree of change and you
+[1889] tell people that they're in control like we
+[1897] did in the previous generation of late-stage
+[1897] businesses, there's going to be some friction
+[1902] when you change the rules. And it's my strong
+[1902] belief that great employees and great companies
+[1909] want and are constructed out of a very clear and
+[1909] strong hierarchy where it is the responsibility
+[1917] of the CEO to make brave and hard decisions
+[1917] unilaterally, yes, using their experts as inputs
+[1925] and be responsible for the outcome. If I make
+[1925] decisions that propel the company in the way that
+[1932] thankfully my decisions have, I get rewards and
+[1932] kudos and I get to go back to the board and say,
+[1938] I want a bigger grant. If I don't, I get
+[1938] fired and I should get fired. If my big,
+[1944] brave, unilateral decisions put us in the toilet,
+[1944] then I have to take responsibility for that also.
+[1950] So, that's how in my humble opinion, it should
+[1950] work. And I, for one, don't know of a great
+[1956] company that doesn't work that way. You'll see
+[1956] from time to time, I did this a couple of years
+[1961] ago, people will construct these indexes of the
+[1961] performance of companies that are founder led,
+[1966] and of course this is a self-serving statement,
+[1966] but it's also true. And surprise, surprise,
+[1972] the founder led companies perform substantially
+[1972] better because they have the moral authority and
+[1978] the willingness to take the risks that the
+[1978] professional CEOs don't have the remit for.
+[1983] The professional CEOs are typically told, don't
+[1983] mess things up, and the founders are bored if
+[1988] they're not taking the risk of messing things up
+[1988] from time to time. And so that's in my opinion,
+[1994] what creates greatness and great innovation.
+[1994] But like I said, there will be friction
+[1999] changing a company that's configured for
+[1999] democracy and committee decisions and soft
+[2006] and gentle interactions and communication
+[2006] to be properly founder led and top down.
+[2012] So, a big lesson here is if you're trying
+[2012] to make the shift and it's just not moving,
+[2016] there's a lot of resistance. You may need to go
+[2016] hardcore founder mode and make some significant
+[2021] change. What percentage of the employees
+[2021] kind of turned over during this period?
+[2026] Could be something ultimately like 40%. So,
+[2026] it was a big, big turnover over some couple
+[2033] number of years. Often the culture is set by a
+[2033] very small number of people, so it only took a
+[2039] quarter to really start to change the tenor of
+[2039] the conversations that were happening, but to
+[2048] bring in the people that were that new level of
+[2048] ambition and wanted to work as hard as the rest
+[2054] of us and work in a mature and engaged in excited
+[2054] way, that took a little longer time. There's such
+[2064] a thing as product market fit. There's a thing as
+[2064] founder market fit, there's a thing as founder,
+[2071] product market fit. That's how you're doing it
+[2071] right, but there's also such a thing as employee,
+[2076] founder, product market fit. You have to have the
+[2076] right employees for the type of business you're
+[2080] creating, and there are companies that want
+[2080] the need to be more stable and they're going
+[2086] to want the need to hire more stable individuals.
+[2086] There's going to be companies that want to do the
+[2090] highly collaborative, more democratic thing. I
+[2090] wouldn't invest in them, but there's companies
+[2096] that want to do it. If you're an employee that
+[2096] enjoys that, there are a lot of positions out
+[2100] there. There are big companies like Google that
+[2100] do that. There are startups that hire the crazy,
+[2108] young, wild, messy, early startup people, and
+[2108] that's great for them and the company too. So,
+[2115] it's really all about having the right individuals
+[2115] and when you create that, not only do you create
+[2121] great success, but you just create a lot more
+[2121] happiness and balance and harmony. Ultimately,
+[2126] the employees who wanted a more gentle democratic
+[2126] environment, they're not going to be happy in a
+[2131] company like Intercom or Coinbase or any of
+[2131] these strong organizations. They'll be more
+[2137] happy somewhere else. So, even if it requires
+[2137] a little bit of a loving push out the door,
+[2144] I know that you're actually doing them
+[2144] a favor in the medium to long run.
+[2148] I was going to say that a lot of these people
+[2148] will be happier working in a different company.
+[2152] Absolutely. Who wants to go to war every
+[2152] day with your organization and in Slack?
+[2158] That's just not fun. That's not good
+[2158] for the nervous system or the soul.
+[2162] Yeah, so this whole period sounds very
+[2162] stressful for you. Did you ever regret
+[2167] coming back and just like, what the hell did
+[2167] I get myself into? What am I doing to myself?
+[2172] I never regretted coming back, but I have
+[2172] many moments where I don't enjoy the job. I
+[2182] didn't regret coming back because it was deeply
+[2182] cathartic for me. When a founder runs away from
+[2188] their business, it is the ultimate betrayal of
+[2188] their heart and the dream that they have. Now,
+[2197] it's okay to wrap things up and quit, but when you
+[2197] kind of run away, like I kind of had to because I
+[2203] was sick and burned out and kind of disenchanted,
+[2203] I don't know, it didn't feel good. So, especially
+[2210] when I had done that, having betrayed in a
+[2210] million or a thousand small ways, my intuition,
+[2216] there was something I needed to exercise. So, it
+[2216] has been deeply meaningful in that respect. And
+[2222] then of course, I'm fortunate that it worked out.
+[2222] I get to be on the second most popular podcast in
+[2227] tech. I get to pat myself on the back in front
+[2227] of all these people. Who wouldn't want that?
+[2233] That said, the reality is that for particularly
+[2233] people like me who like the adventure and the
+[2245] high agency being unilateral, day-to-day
+[2245] movement where you're trying to make big,
+[2254] wild, bold decisions, the reality is that if
+[2254] you're successful, most of your days will not
+[2262] be that. It'll be reviewing the bonus policy for
+[2262] next year and reviewing the comp proposal for your
+[2273] execs for the next year. It will be showing up
+[2273] for accountability meetings and stepping through
+[2281] the status of different work streams. It'll
+[2281] be rushing from meeting to meeting, having 8,
+[2286] 9, 10 meetings a day. I don't happen to believe
+[2286] that that's a great way to live your life. It'll
+[2292] be trying to get to all the emails you need
+[2292] to get to such that all those people aren't
+[2296] offended and hurt and trying to communicate in
+[2296] the ways with your staff and your team that is
+[2305] empathetic and thoughtful and keeps in mind that
+[2305] they may be having as shit a day as you are.
+[2313] You're giving me an opportunity to paint
+[2313] story of this maverick led adventure that
+[2320] you might imagine in a comic. I'm for some reason
+[2320] picturing TinTin sail the seas, this swashbuckling
+[2330] adventure. It's not. It's corporate life kind
+[2330] of sucks particularly for people like me. So,
+[2336] I have many of those days, and so the only reason
+[2336] I'm still around is that I have a broader mission
+[2342] that makes it worthwhile for now, but that's why
+[2342] you see so many of our best founders get to a
+[2349] point where they're like, okay, I've had enough
+[2349] corporate fun. So, that's the most authentic
+[2355] answer I could give you. No regrets coming
+[2355] back, but plenty of pain on a day-to-day basis.
+[2362] Today's episode is brought to you by DX, the
+[2362] developer intelligence platform designed by
+[2367] leading researchers. To thrive in the AI
+[2367] era organizations need to adapt quickly,
+[2372] but many organization leaders struggle to answer
+[2372] pressing questions like which tools are working,
+[2377] how are they being used, what's actually driving
+[2377] value? DX provides the data and insights that
+[2383] leaders need to navigate this shift. With
+[2383] DX, companies like Dropbox, Booking.com,
+[2388] Adyen and Intercom get a deep understanding of
+[2388] how AI is providing value to their developers
+[2393] and what impact AI is having on engineering
+[2393] productivity. To learn more, visit DX's website
+[2399] at getdx.com/lenny, that's getdx.com/lenny.
+[2399] One of the interesting things about this
+[2408] space of agents, there's all this talk,
+[2408] agents are taking over. It's the future
+[2410] of software. SaaS is going to be replaced with
+[2410] agents. CX is a classic. It just feels like,
+[2416] I imagine looking forward, it was not obvious.
+[2416] Now looking back, it's like obviously this is an
+[2421] amazing place for agents to take over work,
+[2421] but there's always this talk of agents will
+[2425] do everything and all the SaaS software is going
+[2425] to be replaced by agents. Do you have a sense of
+[2429] just how far this disruption will go outside of CX
+[2429] because it's already happening in your businesses?
+[2435] The first thing I'll say is that CX is deceptively
+[2435] large given it's hidden behind just two words,
+[2446] two letters. Customer experience really
+[2446] is service success, sales and marketing,
+[2451] in my opinion. It's all engagement with all
+[2451] customers. It's the biggest part by headcount
+[2460] of any business. Any consumer business and any
+[2460] B2B business the biggest organizations are sales,
+[2472] service, success. So, I'll talk about things other
+[2472] than CX in a moment, but I want to emphasize that
+[2479] CX is the majority of business operations.
+[2479] Of course, it'll go beyond CX. Any function
+[2491] that requires a lot repetitive operational
+[2491] mechanical work will be automated, whether
+[2497] it's chasing or collecting or issuing invoices,
+[2497] it could be onboarding or offboarding employees.
+[2507] There are so many repetitive jobs in an
+[2507] organization that it'll start to replace.
+[2513] One of the interesting questions is how much
+[2513] will be generic operations bots, how much will
+[2521] be expert agents? There are expert agents for
+[2521] law and contract review. There will probably
+[2529] be expert agents for accounting, but you'll need
+[2529] the glue in between all of these agents too. But
+[2537] future organizations will be agents everywhere.
+[2537] I've spent quite a bit of time thinking about
+[2544] what does it all look like in the future, and
+[2544] I imagine it as a medley of humans and agents,
+[2553] and I don't think it's obviously going to be
+[2553] humans on the top and the agents all in the IC
+[2562] roles. I think that'll be more of a complex mix
+[2562] where you're going to have people that are like
+[2571] managers and leaders, but they'll be in IC roles,
+[2571] working with agents to configure them for success
+[2580] and monitor and manage their progress, kind of add
+[2580] that oversight and cover for edge cases. And so I
+[2590] think we're going to be surprised in which the way
+[2590] that these organizations go, they'll definitely
+[2594] be smaller, they'll be flatter because of that.
+[2594] I won't be surprised if there are agents at the
+[2600] highest level too. I mean, I've been thinking
+[2600] about how, and we do have a great human chief
+[2604] of staff here, but imagine a future human chief
+[2604] of staff that understands your priorities and
+[2611] actually talks to you and does a check in each
+[2611] day and reaches out to different people and ask
+[2616] for updates and helps organize your priorities
+[2616] and helps you remember who you need to keep
+[2622] accountable. Clearly there's an opportunity for
+[2622] that. And so you can imagine agents in specific
+[2628] roles like customer service in operational roles
+[2628] being glue and in being kind of like co-pilot or
+[2637] assistant roles like that, which I mentioned.
+[2637] But what I think that all brings is just epic
+[2644] levels of efficiency. It's going to be super
+[2644] deflationary. There'll be a lot more competition.
+[2653] AI itself is insanely competitive right now.
+[2653] It's so intense in a way that was never before
+[2661] that's going to come to all industries when so
+[2661] much of their inner workings becomes automated.
+[2668] And ultimately I think it's going to be great
+[2668] for the consumer. They'll have more options,
+[2672] cheaper options, and I can't but
+[2672] see that be great for the economy,
+[2677] a lot of economic lubricant as it were, and a lot
+[2677] of new movement and activity. And if we were to
+[2684] really go off the reservation, but I'll stop
+[2684] here, that means that we need more humans too.
+[2689] We need population growth to show up for this
+[2689] big growth economically. And yeah, I just see
+[2697] the future as just a beautiful collaboration
+[2697] between humans and agents in every direction.
+[2702] I love the optimism. Someone described
+[2702] this once as a society ... What is it?
+[2707] Agentic society where it's us
+[2707] and agents living together.
+[2711] Right.
+[2712] This begs the question around just jobs. We had
+[2712] Marc Benioff on the podcast. He's all agent force,
+[2718] agent force, agent force, and asked him just
+[2718] like, what jobs do you think are going away?
+[2722] He's just like, "CX, going away, gone. Sales not
+[2722] going away. We need sales people." Just what's
+[2728] your sense? I know it's like touchy subject.
+[2728] No one ever wants to say jobs are going away,
+[2731] but just what's your sense of where
+[2731] jobs might be disappearing more, most?
+[2734] Yeah. Well, I don't find it to be particularly
+[2734] touchy because jobs have always gone away
+[2739] and technology has done a really good job at
+[2739] stealing jobs that we're repetitive, demeaning,
+[2747] dangerous. We have less people losing limbs and
+[2747] dangerous factories or dying and suffocating down
+[2753] mines because of the technology that we now have
+[2753] available to us. People breaking their backs on
+[2759] farms or just doing things that's highly demeaning
+[2759] to the great, beautiful creative potential of each
+[2768] human individual life. So, I won't apologize for
+[2768] competing with or competing for shit work because
+[2778] all the while technology has done that in the
+[2778] past, population has increased. GDP has increased,
+[2785] longevity, crime rates have diminished in the
+[2785] western world, the world that has enjoyed the
+[2791] most technology. So, we have no good reason to not
+[2791] believe that that won't continue. Even while there
+[2798] is difficulty and there has been in the past,
+[2798] no doubt, people who were gainfully employed
+[2804] in dangerous work in mines had to find new work.
+[2804] And so I don't take that for granted, but I think
+[2812] that this is part of the long arc of humanity
+[2812] flourishing and getting healthier and happier.
+[2820] What are the types of work that will go away? It's
+[2820] all the demeaning, crappy stuff, and that exists
+[2825] in digital businesses. You ask a human to sit at
+[2825] a keyboard answering the same question day in,
+[2838] day out, and you get to a point where you don't
+[2838] even ask them to answer the question manually. You
+[2846] ask them to click the button that brings up the
+[2846] macro. Like what a horrible use of a human life.
+[2854] I've met thousands of people that have worked at
+[2854] Intercom, a broad range of talents. People who
+[2859] they might not describe themselves as particularly
+[2859] high IQ. Maybe they were suited at that point in
+[2865] their life for this highly repetitive work. You
+[2865] talk to them for two or three minutes, you'll see
+[2870] the bright spark of a beautiful human that if they
+[2870] got to do the right thing, they would light up and
+[2877] bring so much happiness and joy to the world.
+[2877] And so that's the mission we're all on. I'm not
+[2883] pollyannaish here, like I said, and I'm
+[2883] suggesting that there won't be friction,
+[2888] but for the most part, we're doing good. And
+[2888] to get specific, they will be CX roles and
+[2895] a lot of basic repetitive roles. There
+[2895] is a lot of repetitive stuff in sales,
+[2899] and so you'll do more sales with less people.
+[2899] There are SD or roles qualifying basic questions.
+[2906] You're not going to need as many people in sales
+[2906] organizations. So, I'm a little misaligned with
+[2910] Marc in that respect. But what he's getting at
+[2910] is that what sales people bring to the table is
+[2918] human connection and trust, and that is not about
+[2918] to go away anytime soon. And thank God for that.
+[2926] I had Ben Mann, the co-founder of Anthropic on
+[2926] the podcast recently, and he said that he's like,
+[2932] "Even my job is probably going to go at some
+[2932] point." He was like, "Lenny, your job is going
+[2936] to be replaced by AI at some point." That was
+[2936] pretty compelling. Did not expect him to say that.
+[2943] Yeah, I don't know. It will in many ways.
+[2943] We're going to have agents in AI to aggregate
+[2950] content and create content, but humans,
+[2950] as much as when it comes to productivity,
+[2958] value, efficiency, efficiency is not
+[2958] the number one thing that we value.
+[2966] If efficiency was the number one thing we value,
+[2966] I'd always buy the cheapest clothes, furniture,
+[2973] computers, even paper for my printer. But I think
+[2973] humans value things like beauty and human stories
+[2983] and human heart and connection. And not only
+[2983] will they still want those and they'll still
+[2991] want a Lenny that has his own story and his own
+[2991] take and opinions and is a little imperfect,
+[3000] but they'll pay more for it. The abundance
+[3000] of AI is going to make automated things worth
+[3010] zero. Just like the value of cheap content
+[3010] on YouTube. Why do people subscribe to some
+[3020] channels and pay more? Why do people pay to rent
+[3020] movies? Because some things have more quality,
+[3027] more beauty, more craft, more art, more humanity.
+[3027] So, I think there'll always be a place for that.
+[3033] Phew. All right. I've got a
+[3033] couple more years at least.
+[3037] Before I move on to a different topic. Just
+[3037] kind of reflecting back on this shift to Fin
+[3043] and the success that you've had, are there any
+[3043] other just lessons that we haven't touched on
+[3048] that you think might be helpful for folks
+[3048] that are trying to go through this journey?
+[3052] I think it's ultimately that you don't have
+[3052] a choice. My co-founder Des is writing a
+[3058] book at the moment, and that's core to
+[3058] the idea here. You don't have a choice.
+[3067] The story of the technology industry or digital
+[3067] technology is really short and it's punctuated
+[3073] by a small number of things, microprocessors,
+[3073] personal computers, the internet, maybe mobile.
+[3080] Now there's AI. I think AI is bigger than all
+[3080] these things. And all of these things disrupted
+[3087] essentially all categories. So, not only is
+[3087] this likely to disrupt all the categories,
+[3092] it's going to disrupt it in the most aggressive
+[3092] violent ways. And if you're not in it,
+[3099] you're about to get kicked out of all of it. And
+[3099] so my strongest advice is roll your sleeves up,
+[3106] figure out what's going to disrupt you, have
+[3106] fun with it. You need to bring in actual talent.
+[3114] We and I will be nothing if we didn't
+[3114] have actual AI scientists and leaders.
+[3119] It's the only way we can be successful here.
+[3119] We have an incredible person who by the time
+[3126] this is out will have received a promotion to
+[3126] chief AI officer. I keep announcing all these
+[3131] things and that's great confidence to you.
+[3131] Fergal Reid, and he's just one of the very
+[3137] best in AI applications, and we happened
+[3137] to be working with him for many years.
+[3142] So, part of it is finding the talent and part of
+[3142] it is bringing in the young talent too. AI is kind
+[3148] of a young man's game, and I'm young, but I'm not
+[3148] as young as a lot of the kids building AI. And so
+[3155] learning to empower and enable them and learn from
+[3155] them too is a really big deal. And unfortunately,
+[3162] part of what you learn from them is the only way
+[3162] you're going to win right now is if you work your
+[3167] ass off, because all these little AI companies
+[3167] run by kids in their twenties are literally
+[3174] working 12 hours a day, literally 365 days a year.
+[3174] No joke, all of them. And that's not a fun idea
+[3185] for many of us, especially those who've grown
+[3185] up. Some people in our generation have kids or
+[3191] a lot of them do. There's comfort and stability
+[3191] in your life. You don't want to work like that,
+[3196] but if you want in, that's part of the price
+[3196] and that's how so many of these young new AI
+[3205] are going to win because very few of the previous
+[3205] generation companies are willing to make all of
+[3210] those changes and go all the way in. And so my
+[3210] actual advice, which is not that helpful, is that
+[3218] if founders of previous generation companies are
+[3218] themselves not willing to roll up their sleeves
+[3224] and get into it and work as hard as the kids,
+[3224] hire a kid. You can be a chairperson like I was,
+[3232] have a lot of fun. You can mentor the kid, hire
+[3232] a kid because you're in the wrong job, buddy.
+[3238] I love how pragmatic this advice is and what's
+[3238] interesting as you talk about 12 hours a day
+[3242] every day, it's like we're trying to
+[3242] get close to what agents are doing,
+[3246] which is half, that's basically 50% of agents.
+[3248] But that's not just a poetic cute thing to
+[3248] say, that comes from something very real,
+[3257] which is these younger companies know how
+[3257] to use AI in ways that the older companies
+[3263] don't. The younger companies are vibe coding
+[3263] and using AI for their creative work and for
+[3270] their job descriptions. I guarantee you go to
+[3270] companies of our generation and even we have
+[3276] had to push people, you go to companies of our
+[3276] generation, most people in most organizations,
+[3282] particularly non-technical organizations, they're
+[3282] not using any AI. Maybe they're starting to use
+[3288] ChatGPT to write a job description, but
+[3288] they're not doing it by default. And so
+[3295] that's more than a joke. You're competing
+[3295] with young companies that are in part AI.
+[3302] This reminds me, I did an interview with the
+[3302] Perplexity founders. It was, I just checked,
+[3307] April 2024, so just over a year ago. And they
+[3307] were saying that the way they operated, and this
+[3312] sounded it's so crazy at the time, is anytime they
+[3312] had a question for anyone else on the team, they
+[3317] first asked ChatGPT about it, and then they go ask
+[3317] the person as like, that is insane. And now this
+[3323] is just obvious. That's what we all do now.
+[3323] Just like, hey, I'm just going to talk voice.
+[3328] It's a prime example. They're doing many
+[3328] such things. When I say 365 days a year,
+[3335] they're the company I think of because they're
+[3335] doing exactly that. All these young companies are
+[3340] doing wild, weird and ridiculous things that
+[3340] people you are in my age kind of chuckle at,
+[3347] but it's business as usual for them. So,
+[3347] there's just a big mind shift, cultural shift,
+[3353] and there's a culture clash of the previous
+[3353] generation versus the new generation. And the
+[3360] sooner you kind of wrap your head around that, the
+[3360] sooner you can start to unstake yourself, I think.
+[3364] And just to build on that, the sounds crazy
+[3364] to work this hard, it sounds very stressful,
+[3371] not fun. Why would I do this? This sucks.
+[3371] But at the same time, this is, as you said,
+[3375] such an unusual rare opportunity.
+[3375] There's so much opportunity. There's
+[3380] so much wealth being created. There's so many
+[3380] businesses being created. This is the time,
+[3383] if you were to ever work really
+[3383] hard, this is a good time to do it.
+[3386] I think so. I don't actually generally promote
+[3386] working that hard. I try to not fetishize it.
+[3395] I actually think a life well-lived includes
+[3395] taking slow walks in nature where you're not
+[3402] thinking about ARR growth or hiring your chief
+[3402] revenue officer, not going to eight meetings a
+[3409] day. Maybe you should go to no meetings a
+[3409] day, certainly not working 12 hours a day.
+[3414] I don't actually promote that in general
+[3414] as a thing one should do with their life.
+[3422] I'm simply saying that if you want to compete
+[3422] and enjoy success in this age, which means
+[3432] you need to be doing AI, that is the price.
+[3432] So, you either decide to pay the price or get out.
+[3441] Don't half-ass it. You see all these companies
+[3441] saying, we do AI and they've just sprinkle a
+[3446] little bit of crappy AI and they've got the same
+[3446] cultures. It won't work. The one thing I will say,
+[3453] the one little asterisk to my first point is
+[3453] that all great people and great things have
+[3459] been achieved through hard work. And so I'm
+[3459] speaking out of both sides of my mouth here,
+[3467] to younger people to let them know that every way
+[3467] of living is valid, but people who have achieved
+[3474] things have always worked hard and they find a way
+[3474] to enjoy it too. And particularly in 2025 in AI.
+[3481] I want to follow this thread. I was going
+[3481] to ask you this earlier, but I didn't,
+[3483] and I want to see if this takes us somewhere
+[3483] interesting, just watching you speak and talk.
+[3488] You're very self-reflective, very centered.
+[3488] You have these really good breaths you take
+[3495] when you think about something. I met you a
+[3495] long time ago, randomly at a party when you
+[3499] were just starting Intercom. I don't think you
+[3499] were like that. During this kind of two-year
+[3504] period was there kind a transformation that
+[3504] you went through to kind of become this?
+[3508] Absolutely. Yeah. There's a couple things.
+[3508] First, I mean, there's three things that
+[3511] come to mind. Working in a startup for 14
+[3511] years has a certain way of kicking you in
+[3520] the head many times a day that either kills you
+[3520] or makes you far stronger. So, that's one piece.
+[3529] There's no elegance to that point, but I think
+[3529] we can all intuit that that level of experience
+[3535] teaches you something, you grow up very fast.
+[3535] Point two is I did a lot of therapy. I found
+[3544] this amazing guy 12 years ago. He started a
+[3544] couple of his own tech companies and talked
+[3549] in public. He only coached and was a therapist
+[3549] to CEOs. He's now kind of in a later stage of
+[3555] his career. But this amazing guy, his name is
+[3555] Yosi Amram, amazing guy. I just landed on my
+[3562] feet. I just didn't know who I was dealing with.
+[3562] But one of the greatest minds and teachers of the
+[3573] last, I don't know, many decades, people don't
+[3573] even know him, but he's taught and worked with
+[3578] many CEOs and he just helped me get to know me and
+[3578] take time for myself. And people like to hate on
+[3588] therapy right now. I think a lot of therapy sucks
+[3588] and a lot of therapists are not good. And they
+[3595] fear that actually therapy will lobotomize them
+[3595] and turn them into thumb sucking, navel-gazing,
+[3606] soft, irrelevant losers that won't have that
+[3606] edge anymore. And the interesting thing about
+[3615] 12 years of weekly therapy and spiritual work
+[3615] is that it takes your edges off, but they're
+[3624] all edges that are super counterproductive.
+[3624] All the edges that made you an asshole,
+[3628] got you triggered, miscommunicated or fought
+[3628] back when you were insecure, they take all
+[3636] the edges away then help you see yourself and
+[3636] love yourself so much more for who you are.
+[3642] Be completely unafraid to acknowledge the
+[3642] things you're not good at, but own the things
+[3646] you are. And in understanding yourself, you
+[3646] understand others better and can communicate
+[3652] in a substantially more connected and authentic
+[3652] way. Great, great therapy and it has to be great,
+[3660] is a recipe for brilliant leadership in my
+[3660] opinion. And then the third part is two years
+[3670] away where I ran away, where I was sick, revenue
+[3670] growth wasn't doing so hot. I unsuccessfully tried
+[3677] to defend myself from a bunch of fake bullshit
+[3677] in the newspapers. I mean I was beat up. And
+[3684] in a moment like that, your ego, any sense
+[3684] you have of your greatness is eviscerated.
+[3693] And that's painful. It can be so painful that many
+[3693] people don't come back from it, and I credit the
+[3701] 10 years at that point, or nine years of therapy
+[3701] I did at that point, plus the support of this
+[3705] therapist, the coach that I had, to surviving it.
+[3705] But if you can survive it, what you end up with
+[3711] on the other side is all of those insecure, a lot
+[3711] of the insecurities and all that ego bullshit that
+[3718] made you super ineffective, jealous, or triggered
+[3718] for all sorts of different reasons, it's gone. And
+[3726] your image that you are this perfect, brilliant
+[3726] leader that all successful founders form when they
+[3732] are successful had to die. And the reason that's
+[3732] so good is that that's so limiting. When you have
+[3739] this ego identity of yourself about how fucking
+[3739] amazing you are, then any moment that challenges
+[3748] that is super scary. Anyone who questions it is
+[3748] offensive. And so I credit wherever I am today and
+[3756] I have decades of learning still to go to those
+[3756] three components. And I feel super fortunate to
+[3763] have had all of them, even though the last one
+[3763] sucked, I can finally say, wow, it really helped.
+[3771] Thank you for sharing all that. I'm glad I
+[3771] went there. I want to show you something that
+[3776] I randomly have in my office, my wife
+[3776] just got me that I think you're going
+[3779] to love. It's a piece of art that I think
+[3779] will resonate with [inaudible 01:03:02].
+[3782] Yeah. What am I looking at here? So, it's a hand?
+[3784] It's a hand with a snap and then let
+[3784] me see if you can see what it says.
+[3788] I can't see what it says.
+[3790] It says ego death now.
+[3792] Right. Look at this. Good. Exactly.
+[3795] There it is.
+[3796] May all our egos peacefully become smaller
+[3796] and leave this mortal coil. The reality is
+[3803] none of our egos ever die. And even great ...
+[3803] Ram Dass is this great spiritual teacher who
+[3811] died a few years ago and someone asked him
+[3811] on his deathbed something like, "How did
+[3818] you get over your bullshit or your ego?" And he
+[3818] said, "I never did. Just the edges got smoothed
+[3825] away." And this is a guy who had 70 years of the
+[3825] deepest, wildest spiritual work, he acknowledged,
+[3834] no, still my same self. So, the ego is still
+[3834] there and we actually need to acknowledge
+[3839] it and love it. And when you acknowledge
+[3839] it, then it's not a surprise when you're
+[3844] like a little jealous and you're like, huh, I'm
+[3844] jealous. That's funny. Okay. And it's all good.
+[3849] Reminds me Daniel Kahneman who wrote all these
+[3849] books about biases that we have and here's all
+[3853] the ways we're flawed. If people ask him, "Have
+[3853] you learned to live more rationally?" He's like,
+[3858] "Not at all." Knowing all these things
+[3858] about how we're flawed in the way we
+[3861] think all these biases doesn't
+[3861] actually, I can't use it in life.
+[3864] We're human. We should let ourselves be human.
+[3864] I think it's beautiful. We're logic systems,
+[3870] but we're also heart systems and body systems
+[3870] and soul systems. So, all of it is good.
+[3875] Okay, I want to go in a completely different
+[3875] direction. The last thing I want to talk about,
+[3878] I needed to mention this. I don't know if you've
+[3878] seen this, but I've been doing research on which
+[3883] companies produce the best product leaders. And
+[3883] I've been doing this by looking at which alumni
+[3888] of companies go on to become CPOs at the highest
+[3888] rate, get promoted the most at their next job,
+[3894] become the first product manager at a future
+[3894] startup, start their own companies. Intercom
+[3900] is coming number one across this research
+[3900] next to Palantir and Stripe, Revolut.
+[3906] So, the question this begs is, what are you
+[3906] guys doing that produces such great product
+[3910] leaders? There's the hiring piece and then
+[3910] there's what they do at Intercom piece. So,
+[3915] what do you think is creating these sort of
+[3915] really big successes from your alumni group?
+[3920] Yeah, I don't have a really succinct answer
+[3920] unfortunately. I can say in the abstract,
+[3926] our culture is a very producty culture. So,
+[3926] myself and Des, there was four founders and
+[3934] me and Des Traynor drove a lot, like all the
+[3934] strategy. We're product guys. I was a software
+[3942] designer. I studied computer science, so I'm
+[3942] technical, but never did it professionally. So,
+[3948] the first part is that just product innovation,
+[3948] design just was just core to our culture and
+[3954] people always picked up on that. So, I think good
+[3954] people wanted to work here and we were good at
+[3960] finding good people. The other part was
+[3960] that because we had this sprawling strategy,
+[3967] we had all these products that we needed a complex
+[3967] structure for it and that included lots of PMs and
+[3976] PM groups that we gave a lot of autonomy to. And
+[3976] so the product of our big messy strategy was that
+[3984] we had PMs that got to act like mini CEOs.
+[3984] And so I think that they got to learn the
+[3991] broader skill sets beyond designing wireframes
+[3991] and interviewing some customers. They really own
+[3996] it like a mini CEO to some degree. I think there's
+[3996] one other thing which is part to our approach was
+[4004] this deeply first principles thinking methodology
+[4004] almost to a fault, although I don't think it's a
+[4013] fault. I and we would create frameworks for
+[4013] everything. It's like, okay, we want to do
+[4020] these events. Who are the events for? What is the
+[4020] ultimate goal of the event? What's the mechanism
+[4027] by which events work? What are other mechanisms
+[4027] that can achieve that same goal? How do we define
+[4034] success for an event like that? How does the user
+[4034] or the attendee define value? What other things
+[4042] do those people find valuable? We create these
+[4042] complex systems to try and approach everything,
+[4050] but the net effect was we'd have really joined
+[4050] up considered strategy and it's everywhere.
+[4056] Like Paul Adams, our chief product officer,
+[4056] I didn't even plan to show this. He made this
+[4061] book recently, The AI Age and the Transformation
+[4061] of Customer Service and it's a bunch of frameworks
+[4067] for how to think about AI, et cetera. So, it's
+[4067] part of what we do. And so we would hire people
+[4074] who are good at that, but we teach that. That's
+[4074] teachable and not everyone does that. And so the
+[4079] conversations that Des and I would have, we still
+[4079] love being on whiteboards. Our very first office,
+[4084] our own office in Dublin, it was a tiny office.
+[4084] One wall was four, five computers, the other wall
+[4096] was just all whiteboards. We loved that we had a
+[4096] whiteboard wall. In our next office we had a room,
+[4101] square room and all walls were whiteboards.
+[4101] So, we just love to draw diagrams so you can teach
+[4107] all that stuff. So, yeah, it's just all that good
+[4107] energy product, product energy, first principles,
+[4113] the people we chose. And on the founders
+[4113] side, I was talking to Des about this morning,
+[4119] why have so many Intercom people gone on to be
+[4119] founders? I think it's because we hired founder
+[4126] types and my pitch to people was always come
+[4126] to Intercom, figure out how great companies are
+[4131] built and build it with us and then go on to
+[4131] start your own. I would say that often at all
+[4136] hands. But the irony is that the people we hired
+[4136] back then, the founder types were probably not
+[4143] great employees. They were better founders. I'm
+[4143] not a good employee. And so it'll be interesting
+[4149] to see if this current cohort, we'll get
+[4149] many founders out of this current cohort,
+[4154] but will they convert as well as they did before?
+[4154] Because we're now hiring people who want to be
+[4159] part of something bigger. They're more mature and
+[4159] grown up, more stable and consistent. They're part
+[4165] of, they have a certain expertise and a certain
+[4165] lane they want to work in. And maybe they're not
+[4170] the crazy types that went on to start companies,
+[4170] but it's wild. I did see some of that research
+[4175] by you, particularly the one where you show the
+[4175] companies ranked by the number of founders that
+[4181] they have. And I'm like, what is happening?
+[4181] I was as surprised that we were that high
+[4187] as you were because there are many other great
+[4187] companies on that list. So, surprised and proud.
+[4193] I love when people say, I don't really
+[4193] have a clear answer. And then you have
+[4197] exactly a clear answer and it resonates a lot
+[4197] with other companies on this list that I've
+[4205] had on of what the themes are, and I'll just
+[4205] reflect back a few of them. One is complexity.
+[4210] That comes up a lot. And interestingly,
+[4210] most of the other companies in the list,
+[4213] I'll read them real quick. Intercom,
+[4213] Palantir, Revolut, N26, Dropbox, Chime,
+[4217] Stripe, and then Coinbase and Notion is down
+[4217] there. So many are FinTech. Almost all are
+[4222] FinTech. And the complexity there is really
+[4222] high. So, there's a really interesting trend
+[4228] there. Just complexity. Ownership is another one
+[4228] that comes up a lot. Many CEOs, GMs kind of roles,
+[4234] first principles thinking and just going to the
+[4234] bare metal comes up a lot in these conversations.
+[4238] Yes.
+[4239] And then hiring senior
+[4239] people, hiring founder types.
+[4242] Yes. Like Stripe did a lot
+[4242] of that. I think Stripe did
+[4244] a lot of first principle stuff and founder types.
+[4248] The other thing, we didn't even talk about this,
+[4248] but you guys invented RICE. You guys popularize
+[4253] jobs to be done. Like speaking of frameworks, you
+[4253] guys are a wealth of frameworks that we all use.
+[4258] Drowning and frameworks, yeah.
+[4260] Drowning slash changing the way everyone
+[4260] builds product in a really positive way. Okay,
+[4266] is there anything else that you wanted to touch on
+[4268] or leave listeners with before we get
+[4268] to a very exciting lightning round?
+[4273] When someone like me comes on a podcast like this,
+[4273] they always have an ulterior motive and that's
+[4280] healthy and good. It's part of the transaction.
+[4280] Some of it is to enjoy feeling like an expert.
+[4288] But my ulterior motive today is to make sure that
+[4288] people understand that Intercom is a fundamentally
+[4296] different type of late stage company. We are a
+[4296] large old startup. Every single way in which we
+[4303] work is as a startup and are competing with and
+[4303] crushing the actual startup competition in our
+[4313] agent categories. And the reason that that's
+[4313] important for people to know is just like I
+[4317] said earlier, that the handicap that good but late
+[4317] stage companies have is that their late stage and
+[4325] people don't mentally put them in the same box.
+[4325] They just don't imagine these older companies.
+[4333] If I told you that IBM had made the
+[4333] most wildly innovative coding assistant,
+[4343] you'd find it hard to believe, most people
+[4343] would. It's maybe so interesting such that it
+[4348] would stick in your mind, you need to go look at
+[4348] it. But by default people aren't going to look at
+[4352] IBM. And so I want people to take a new look
+[4352] at Intercom because it's a brand new company
+[4358] and our mission is to help every single type
+[4358] of business deliver impeccable, incredible,
+[4368] beautiful personal service to every
+[4368] single one of their users and people,
+[4373] many thousands of people are using Fin for that
+[4373] today. So, go check out Fin please, fin.ai.
+[4379] And I don't know if you mentioned this
+[4379] at the beginning, but let's mention that
+[4383] you predict that you'll be the fastest
+[4383] growing company across if you were to
+[4388] look at all public software companies next year.
+[4390] So, two years ago we were in the low single
+[4390] digits growth rate. We doubled our growth
+[4397] rate and last year we were in the low double
+[4397] digits. This year we're in the 15th percentile
+[4403] of all public software companies. So, you take
+[4403] the 120 something public software companies,
+[4408] we're in the 15th percentile. So, we're getting
+[4408] up there fast and if we sustain this trajectory,
+[4414] and it's obviously dangerous to put
+[4414] these types of things out publicly,
+[4418] but I'll tell you, I look at the charts
+[4418] and it's hard not to imagine where this
+[4422] goes. I think we're going to find ourselves
+[4422] being the fastest growing out of all,
+[4427] relative to all public software companies.
+[4427] So, let's see. But that's the level of shock,
+[4432] surprise and transformation that has actually
+[4432] happened here all because of Fin. So, check in
+[4438] with me in a year and maybe I'll be embarrassed
+[4438] or maybe I'll be feeling like a genius.
+[4443] Or underselling it. This just
+[4443] reflects back on exactly how I
+[4446] started our conversation. You've
+[4446] done something extraordinary at
+[4448] Intercom. I'm really happy that we're
+[4448] here and we're sharing this story.
+[4451] Thank you.
+[4452] With that, we've reached our
+[4452] very exciting lightning round.
+[4455] I've got five questions for you. Are you ready?
+[4456] Please. Ready.
+[4457] What are two or three books that you find
+[4457] yourself recommending most to other people?
+[4461] So, I found I lost the habit of reading
+[4461] as I started to get more and more stressed
+[4467] with my startup. And so I would listen to
+[4467] audiobooks here and there, but the most recent
+[4471] book I read is a book called Nuclear War: A
+[4471] Scenario, and it's a very much a nonfiction
+[4481] and scared the shit out of me. So, if you like
+[4481] nightmares, it'll be beautiful bedtime reading.
+[4486] Excellent.
+[4488] What's a recent movie or TV
+[4488] show you've really enjoyed?
+[4490] I love movies. I want TV to be better, but I very
+[4490] rarely find TV to be great. The first and last TV
+[4499] show I loved was True Detective one that was just
+[4499] incredible. But the last movie I watched was 28
+[4508] Years Later, and that's by Danny Boyle. I was born
+[4508] in the eighties, grew up as a kid in the nineties,
+[4515] and so grew up with Trainspotting. It was 28 Days
+[4515] Later. Then he made a movie called Sunshine. So,
+[4525] 28 Years Later is a type of movie that's just
+[4525] not made anymore. It's the most nineties movie
+[4531] made since the nineties. It's like very
+[4531] rock and roll and also deeply touching. So,
+[4539] I was really surprised by that. I bet I would
+[4539] love to know that younger generations that are
+[4544] watching this, what they may think, they
+[4544] may hate it, but I love 28 Years Later.
+[4549] So, this is the same person that made 28 Days
+[4549] Later, then 29 years later [inaudible 01:15:51].
+[4553] Yeah, Danny Boyle.
+[4553] Wow. Okay. Very cool. I didn't know about
+[4553] that. Do you have a favorite product you've
+[4557] recently discovered that you really love? Could
+[4557] be a gadget, could be an app, could be clothes.
+[4562] I very rarely like products, I'm such a
+[4562] perfectionist that it has to be really simple
+[4570] with very little moving parts, like a bowl, to
+[4570] actually be like, good. I've started to get more
+[4579] into coffee. I've been buying products by Fellow.
+[4579] They're remarkably good for consumer products,
+[4585] different, it's on a different level. So,
+[4585] there's some sort of level of taste and craft
+[4591] happening there that I don't see in basically
+[4591] any other consumer hardware type products. And
+[4596] of all things, I'd bought a Porsche 911 recently
+[4596] and that is a beautiful product. The interiors
+[4604] are exquisite and there's still a bunch of shit
+[4604] that is going to annoy you. And so it's far from
+[4610] perfect. So, yeah, perfectionism is sometimes
+[4610] a gift if you're in the business of creating
+[4618] products, but also quite the curse. You're
+[4618] never happy, including with the Porsche 911.
+[4622] I think that's the third time someone
+[4622] recommended a car. Someone recommended,
+[4625] I think Boz at Facebook recommended a fancy
+[4625] Mercedes, and then someone once suggested a
+[4630] Rivian, so now we got Porsche on the list. I
+[4630] always thought maybe one day I'll give someone
+[4634] all the prizes, all the products people have
+[4634] ever mentioned in this. And those are getting,
+[4639] Porsche might be a little high. Okay, two
+[4639] more questions. Do you have a favorite life
+[4643] motto that you find yourself repeating, coming
+[4643] back to in work or life sharing with friends?
+[4650] It's trite. It's not sophisticated and
+[4650] it's more of a concept than a phrase,
+[4655] but it's something around the idea that life is
+[4655] short. I'm just so aware that time ticks by and
+[4662] we all live on autopilot. So much of what we
+[4662] do is inspired by either our insecurities or
+[4670] things that other people we look up to or
+[4670] envy do. Very rarely making contact with
+[4676] what we really want and following our hearts
+[4676] and our heads. And we just kind of get stuck
+[4684] in these lanes and just live out our days. And
+[4684] certainly when you get 41 now, you get to 41
+[4692] and thankfully still very young, anyone in their
+[4692] forties, congrats, should feel good about that.
+[4698] But I know if you're in your twenties or thirties,
+[4698] 40 feels old. But when you're in your forties,
+[4705] my experience is that the weeks and the
+[4705] months and then the years go by. It's not
+[4710] a big deal. I'm back at Intercom two and
+[4710] a half years now to any of these kids in
+[4715] AI in their twenties. If they don't get
+[4715] something done or achieved by next month,
+[4721] they'll be so disappointed themselves
+[4721] and so impatient. And in some ways,
+[4726] at least when it comes to productivity, they're
+[4726] better at getting more out of the time. But I'm
+[4731] now trying to get more life out of the time
+[4731] too. So, just, if there is a motto, it's like
+[4738] life is short or memento mori, we're all on the
+[4738] way out. So, make the use of what you've got.
+[4745] Fun fact, I built an app once called Savorable
+[4745] that helped you savor the moment, it was called
+[4750] Savorable and it sent you a text every few hours,
+[4750] I don't know, maybe once a day with a little
+[4756] reminder of way to savor the moment. And one of
+[4756] the texts was just like, remember, you will die.
+[4761] Yeah. And the problem is that even that
+[4761] idea, we forget it instantly. And if you
+[4770] start getting text every day, you'll
+[4770] ignore the text. Try to fault. We just
+[4775] don't want to acknowledge that reality on
+[4775] a day-to-day basis. Maybe that's important.
+[4779] Yeah, maybe for the best.
+[4782] Okay, Final question. Speaking of apps, I was
+[4782] doing research on you in preparation for this
+[4786] and I didn't realize you built Quitter
+[4786] back in the day. I love Quitter. I found
+[4791] it so fun. It basically told you anytime
+[4791] someone unfollowed you on Twitter. So,
+[4796] the question just what happened to that app?
+[4798] I think we eventually sold it for 14K.
+[4803] Wow, that's cool.
+[4806] On one of these, I think there's a website called
+[4806] Flipper where you could sell websites. It really
+[4810] blew up. It was like a little experiment, kind of
+[4810] a social experiment. It was the first time that I
+[4818] had this feeling that there's no reason someone
+[4818] wouldn't want to use this. Obviously people
+[4827] are going to want to use this. And it was really
+[4827] instructive for me because it taught me that that
+[4832] feeling is possible. You meet so many founders,
+[4832] young founders particularly, and they don't have
+[4838] a sense within themselves about the value of the
+[4838] stuff they're building. Will this be good? Let's
+[4843] get customer feedback. And it is possible
+[4843] to build things that you deeply know makes
+[4848] sense. And that's why my formula for building
+[4848] things was to always build things for myself.
+[4854] And that was what Quitter was like. Followers
+[4854] go up, followers go down. At that point in time,
+[4858] people had 100 followers or 200 followers, and
+[4858] you'd want to know who's not my friend anymore.
+[4864] Oh man, I love that that was your
+[4864] bar that led you to the success
+[4869] later if it's as good as Quitter
+[4869] in terms of product market fit.
+[4872] I mean, it had the best fit ever. About everyone
+[4872] on Twitter tried to sign up for it and it broke.
+[4881] Well, I loved it. Eoghan, thank you
+[4881] so much for doing this. I love just
+[4885] how real and open you are about everything
+[4885] and just how much insight you have to share.
+[4890] I also just love the vibe. I feel like I
+[4890] just am more centered just watching you-
+[4894] Oh, thank you.
+[4894] ... speak. Two Final questions.
+[4894] Where can folks check out Fin,
+[4898] follow you if they want to follow up on anything?
+[4898] And then how can listeners be useful to you?
+[4902] Check out Fin, fin.ai. If they want to follow me.
+[4902] I'm E-O-G-H-A-N on Twitter, so it's Irish spelling
+[4912] of Owen. But if they want to be helpful to me, I'd
+[4912] love them to try Fin. I'd love them to have their
+[4920] friends that run any kind of customer operations,
+[4920] try it too. This AI thing is noisy. There's so
+[4928] much hype, but it's also really real. And the
+[4928] weird thing about Fin, even relative to the coding
+[4936] apps, the coding apps are blowing up, and yet
+[4936] there's a lot of people experimenting and kicking
+[4941] tires. You can't kick tires with Fin. We only
+[4941] deliver value when you expose it to your customers
+[4948] and it closes tickets and makes them happy. And so
+[4948] AI is really, really happening. And so if you know
+[4954] anyone out there that has customers, they should
+[4954] be using Fin. It's the smartest, cheapest, easiest
+[4961] way to dramatically enhance their business. So,
+[4961] if they do that, they'll be helping me sincerely.
+[4966] I'm sold. Eoghan, thank
+[4966] you so much for being here.
+[4970] Thank you, sir. Pretty fun.
+[4971] This was amazing.
+[4972] Yeah, thank you.
+[4973] Bye everyone. Thank you so much for listening. If
+[4973] you found this valuable, you can subscribe to the
+[4978] show on Apple Podcasts, Spotify, or your favorite
+[4978] podcast app. Also, please consider giving us a
+[4984] rating or leaving a review as that really helps
+[4984] other listeners find the podcast. You can find
+[4990] all past episodes or learn more about the show at
+[4990] lennyspodcast.com. See you in the next episode.

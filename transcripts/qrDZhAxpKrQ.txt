@@ -1,0 +1,2978 @@
+[5] - Okay so this is class number 11.
+[7] I think this is the
+[7] midpoint, very exciting.
+[9] So we're talking about scaling from
+[11] scaling to village.
+[13] And we're very lucky to
+[13] have Patrick Collison,
+[15] who I think you'll all
+[15] find super interesting
+[17] and super thoughtful, so
+[17] just let's welcome Patrick.
+[20] (applause)
+[23] - Thank you.
+[25] - So thanks for coming.
+[27] - Thanks for having me.
+[27] - He walked in with a book made of paper,
+[29] which is always very exciting.
+[30] (Patrick laughs)
+[31] So can you just tell the story
+[33] about starting Stripe,
+[33] tell the founding story?
+[36] - Yeah, sure.
+[38] So, and by the way,
+[38] apologies if, you know,
+[42] suggesting this be off the record,
+[43] suggest that there'll be all these
+[45] sort of salacious details or something.
+[46] - Not a problem.
+[47] - But mostly just I think it's much better
+[49] in these to be able to just sort of
+[50] directly sort of share everything
+[51] and not have this sort of process
+[53] where in the back of your mind
+[54] trying to run the filter
+[56] on what makes sense
+[56] for public consumption.
+[57] Because a lot of this stuff is sort of,
+[59] this is not like a company
+[59] that started ten years ago,
+[61] this is kind of happening
+[61] kind of week-to-week
+[62] and month-to-month.
+[64] But the general story of Stripe
+[66] is, well, I'm always a
+[66] bit sort of skeptical
+[68] of kind of founding mythology
+[68] sort of around companies
+[70] in that I'm pretty sure they
+[70] get sort of heavily edited
+[72] kind of post-facto.
+[74] For Stripe at least, it's
+[74] really not that dramatic
+[79] in the sense that John, my
+[79] co-founder and brother and I
+[83] were in school together.
+[85] We were both on the East Coast,
+[86] and we'd started building
+[86] these iPhone apps together,
+[91] and we were basically sort of
+[93] paying our college tuition out of
+[94] sort of the revenue coming
+[94] from these iPhone apps,
+[96] and so we'd kind of gotten into the habit
+[98] of just working on various side projects,
+[100] and we kind of had realized that sort of
+[104] it was surprisingly easy to make money
+[106] out of iPhone apps, right?
+[107] (Professor laughs)
+[108] And part of the reason it was so easy
+[109] was because it was so
+[109] easy to charge for things.
+[111] And then we were kind of wondering,
+[112] "Hmm, you know, despite building sort of
+[114] "all these things for
+[114] the past couple years,
+[115] "why do we never charge
+[115] for anything online?"
+[116] And we realized, well,
+[116] it's such a pain in the ass
+[118] to sort of accept
+[118] payments on the Internet.
+[119] You have to sort of hop
+[119] through all these hoops
+[121] and basically get a mortgage.
+[123] - Right.
+[123] - Or so it felt kind
+[123] of, in order to sort of
+[125] literally receive dollars
+[125] from users of your software.
+[128] And so I remember using, I'm
+[128] not sure if anyone else here
+[132] has used this, but there's
+[132] a thing called Slicehost,
+[134] which was kind of the
+[134] first really good sort of
+[137] virtualized hosting provider.
+[139] I mean EC2 was maybe around the same time,
+[141] but EC2 required all this like crazy
+[142] Java online hackery.
+[144] It wasn't as easy to use as it is now.
+[146] Slicehost was really straightforward.
+[148] You could click like create server,
+[149] you know, select here the next distro,
+[151] and sort of 30 seconds later,
+[152] there's a root password emailed to you.
+[154] And it was sort of really transformative,
+[156] because now getting just your own server
+[157] was just super straightforward,
+[158] and it meant that I kind of really lowered
+[161] the activation energy and a better entry
+[163] for sort of going and building something.
+[164] And we wondered basically why there wasn't
+[166] Slicehost for payments.
+[167] And so I actually remember
+[167] it was in October 2009,
+[171] John and I were walking
+[171] back from dinner together,
+[173] and we'd been sort of
+[173] battering around this idea
+[175] for a while, Slicehost for payments.
+[177] And I remember him commenting to me
+[180] that, "Eh, you know, we
+[180] should just build a prototype,
+[182] (Professor laughs)
+[183] "it probably won't be that hard." (laughs)
+[184] - [Professor] That's a simple question
+[185] leading to 20 years' work.
+[186] - Right, well so I was gonna,
+[188] so Avi Bryant who works at Stripe
+[190] calls Stripe the world's
+[190] biggest ever yak shave.
+[194] And so maybe in another five years
+[195] we'll get back to building side projects.
+[196] - Do you guys know what that?
+[198] Can you explain what yak shaving is?
+[199] - Oh, wait, god, kids these days.
+[203] So, you know, yak shave is sort of
+[204] when you're sort of building something
+[206] or working on some problem,
+[208] and you realize that kind of some other
+[209] obstruction is going to be inelegant
+[211] or you should have some other thing,
+[212] and so you start going, fixing that,
+[213] and you realize, well,
+[213] really in order to fix that,
+[215] this thing has to be this
+[215] other way and whatever,
+[216] and so you kind of get seven layers down,
+[219] you kind of forget where you even started,
+[220] because the stack has gotten so deep.
+[222] There's actually a great
+[222] XKCD comic about yak shaves.
+[225] I think he's like surrounded
+[225] by sharks or something,
+[227] he started to try to fix his tv.
+[229] I don't know, anyway.
+[230] If you search XKCD yak
+[230] shave, it illustrates
+[232] the concept effectively.
+[233] - It's a bike shedding,
+[235] but it's a different, slightly different.
+[237] - Right.
+[237] Right, right.
+[238] And I think there's an original parable
+[239] about sort of shaving the yak,
+[240] and you have to buy
+[240] scissors and whatever else.
+[242] But anyway, so we just had
+[242] to build the prototype,
+[246] and we launched kind of
+[246] the first version of this
+[250] in January of 2010 to just
+[250] like a couple of friends.
+[253] It was kind of built with
+[253] sort of duct tape and wire,
+[257] sort of really the sort
+[257] of foundations upon which
+[260] it was built were sort of fairly flimsy,
+[262] but it was enough to
+[262] kind of just get a sense
+[264] for the basic product experience,
+[265] sort of what it would be like.
+[266] You kind of instantly
+[266] start charging credit cards
+[268] just with a kind of a crawl command.
+[270] Stripe wasn't called Stripe back then.
+[272] It was called /dev/payments
+[274] because we, you can tell we were
+[277] great binding experts.
+[278] But we sort of wondered
+[278] what it would be like
+[282] to have sort of payments API.
+[283] It was kind of straightforward
+[284] as just the interface to a node
+[286] and sort of the device file system,
+[288] you know, you devmouse
+[288] or devaudio or whatever.
+[292] And we launched that
+[292] prototype in January 2010,
+[296] and it just sort of took
+[296] off by word of mouth.
+[298] It wasn't even launched publicly,
+[300] but we kind of had this
+[300] ever-accumulating wait list
+[302] through kind of people
+[302] telling their friends
+[305] about it or whatever.
+[306] And like this was kind of
+[306] really surprising to us,
+[307] because I mean again, it's like an API
+[309] for charging credit cards.
+[310] Like it's not a social network,
+[311] and so the fact that people
+[311] were talking about it
+[313] and telling others about it
+[314] was kind of quite surprising to us.
+[315] And so then that summer we decided to go
+[317] and work on it for the summer
+[318] as a sort of bootstrap internship.
+[321] And we basically been on leave since then.
+[323] - (laughs)
+[325] I'm sure you'll go back soon.
+[326] - That's what my mom
+[326] often tries to ensure.
+[331] Yeah, so you'd gone through
+[331] starting a company before.
+[335] you and your brother.
+[336] - Right.
+[337] - Shoppa. Shuppa? Shoopa?
+[338] - (laughs) Right.
+[339] So Shuppa's the actual.
+[340] - Another excellent branding.
+[341] - Yeah. Right. (laughs)
+[343] So we'll actually get this
+[343] how we found the name Stripe.
+[346] It was actually literally randomly chosen.
+[347] But anyway, so we previously started
+[351] this other kind of company together which,
+[353] it was basically predicated on the notion
+[356] that sort there was surprising liquidity
+[359] in sort of used items
+[360] that sort of part of what,
+[361] when you buy something new,
+[363] kind of part of the service
+[363] that a store provides
+[366] is kind of to solve
+[366] the information problem
+[367] of like where can I get a thing, right?
+[370] And so you can kind of
+[370] think of the Internet
+[373] as a coordinating force in some way
+[374] and sort of how can you
+[374] expose all this sort of
+[378] latent presence of all this stuff
+[381] in a more effective way.
+[383] And it didn't really work as we thought.
+[386] So we went back to school.
+[389] (laughs)
+[389] - Well but you kind of teamed up with,
+[391] that's when you got involved
+[391] in YC the first time,
+[393] is that right?
+[394] - Yeah, it's a kind of complicated story
+[396] and sort of involved merging
+[396] with another company,
+[398] and then that company got acquired,
+[399] and so it was actually like a really good
+[401] learning experience.
+[401] It was kind of when we
+[401] raised our first investment
+[403] and hired our first people,
+[405] and sort of just got a sense for
+[406] kind of how a startup worked.
+[407] - I guess I was taking
+[407] the long way around,
+[409] I should've asked directly, which is
+[411] you said you created this payments API
+[413] and then people just
+[413] started talking about it.
+[415] I guess my question was
+[415] going to be what people,
+[417] and how did they find out?
+[419] So I guess what I was implying
+[420] that you built on top of a community
+[422] - I see, I see.
+[423] - was in some part connected to YC.
+[425] - So that's very true.
+[426] So I'd been involved in
+[426] sort of Lisp programming
+[431] for a real long time,
+[433] and I presume folks here know about Lisp,
+[437] and its state of morbidity,
+[440] so it's a pretty small community.
+[442] And through that I got to know Paul Graham
+[444] who of course was working on YC
+[446] and kind of this other
+[446] company we'd started
+[448] had gone through YC, and so yeah,
+[451] as a result, when we went and
+[451] we built this payments API
+[454] for developers, incredibly
+[454] straightforward to get started,
+[457] we actually, a lot of
+[457] our friends were thinking
+[460] about starting companies
+[460] or had started companies
+[462] or things like that,
+[462] sort of we had some sense
+[464] for that community in general,
+[466] and that was actually quite powerful,
+[468] because exactly to your point,
+[470] there were sort of people
+[470] you just go and show it to
+[472] and get some feedback
+[472] from, and you kind of knew
+[474] who was on the cusp of
+[474] need to start charging
+[476] for their software, who
+[476] was running out of money,
+[478] they might need some revenue
+[478] or whatever the case might be.
+[480] And so I think that for the
+[480] first maybe 20 or 30 users
+[483] or thereabouts, they were
+[483] almost all YC companies
+[488] or friends of people who
+[488] we knew had gone through YC
+[491] and things like that.
+[492] - Yep, so that's one of my rules of thumb
+[494] is try to put yourself around people
+[495] who are doing interesting things.
+[497] And then when you find interesting things,
+[498] they start talking about them,
+[499] that's a pretty good signal.
+[501] - I think that's very true, yeah.
+[502] - And so I remember, it
+[502] must have been summer
+[505] of 2010 or 2011 when
+[505] people would start talking
+[507] about you guys, about
+[507] /dev/payments around here,
+[511] and I guess you had come
+[511] and done the YC class
+[513] in 2010 here?
+[514] Is that what you did?
+[515] - Yeah, Stripe never actually
+[515] formally went through YC.
+[518] YC invested.
+[519] - Is that true?
+[520] I didn't know that.
+[520] - But it kind of never went
+[520] through the program itself.
+[522] - Huh, that's interesting.
+[523] That's news to me.
+[524] So okay, so we're gonna go
+[524] into Stripe in a second.
+[528] Can you tell us what it's
+[528] like to start a company
+[530] with your brother?
+[531] - Yeah.
+[532] - I guess you don't know anything else.
+[533] - I was gonna say, right.
+[534] So the kind of trite answer I often give
+[539] is that it's kind of good
+[539] because we have a chance
+[543] to really get good at
+[543] resolving our differences
+[546] from a pretty early stage.
+[547] We've sort of 20 years of kind of fighting
+[551] in various ways behind us.
+[554] And even though that's kind
+[554] of facetious in some way,
+[559] I do think that's the common
+[559] case for like the really
+[561] highbrow startup is for
+[561] the co-founder kind of set
+[568] to break apart, like it
+[568] generally doesn't persist.
+[570] And so you look at most companies, right?
+[572] And sort of there's some
+[572] schism or disagreement
+[575] or whatever that kind of
+[575] proves insurmountable.
+[578] And I think that sort of
+[578] having a really strong
+[582] kind of foundational relationship there,
+[584] you know, a philial
+[584] relationship is I guess
+[587] one version of that, but even if not that,
+[588] I think the case is for
+[588] sort of you know the person
+[591] for upwards of a decade,
+[591] that those in general
+[594] seem to fare much better.
+[596] And so in that sense, I
+[596] think it's been basically
+[598] really helpful where we
+[598] kind of have the kind
+[600] of relationship where there's kind of no
+[601] difficulty in telling the other person
+[603] that you're really
+[603] screwing this up, right?
+[605] or this is like completely broken
+[606] or whatever the case might be,
+[608] because it's a given that
+[608] those sort of situations
+[610] are going to arise.
+[611] The question's only how do you,
+[613] how effectively can you react to them.
+[615] - We'll come back to that as we
+[616] talk about growing in a little bit.
+[618] - Okay.
+[618] - How you bring other
+[618] management into that.
+[620] I guess my observation would
+[620] be a lot of founders split,
+[624] but the really successful
+[624] companies, it doesn't happen.
+[626] So Larry and Serge, Jerry and Dave,
+[628] you know Reid and Allen were together,
+[631] so many, many, many persist.
+[634] - That's true, that's true.
+[635] And those cases I think, or at
+[635] least last I went through it,
+[640] I went through kind of 20 companies,
+[641] and it seemed that there
+[641] was a fairly striking
+[643] kind of inverse correlation between
+[645] duration that they'd known
+[645] each other beforehand
+[649] and the subsequent outcome.
+[651] - Yeah, I think that's right.
+[652] And we'll hear from Nirav on Thursday
+[654] about his relationship with Sarah Leary
+[656] that's a decades-long
+[656] relationship as well.
+[659] Which actually brings up another point,
+[660] which is you read a ton of history.
+[661] So Patrick's a very, there are few
+[663] interesting people I follow on Twitter,
+[665] and Patrick's one of them,
+[666] and he'll be embarrassed that I said that,
+[668] but the most recent thing he tweeted out
+[670] is history about York's park,
+[672] which everybody should look at the history
+[673] York's Park, because holy smokes,
+[674] a lot of stuff came out of that place,
+[676] but why do you, you spend more time
+[678] reading history of everything, really,
+[681] than almost anybody I follow on Twitter.
+[683] Why do you do that?
+[683] - It's just, it's a way to cheat.
+[685] Everyone else ignores all
+[685] the good ideas from history,
+[688] and so you can just be much smarter
+[689] by just, you know, you
+[689] could just try to think
+[692] all these incredibly original thoughts
+[694] by sort of sitting down
+[694] and staring at the wall
+[695] for days on end, or you can sort of cheat
+[697] by just, you know, I mean they
+[697] are, in fact, written down
+[700] in books that you can just read.
+[701] And again, I can mean that
+[701] a little bit facetiously,
+[704] but I think that Allen Kay has this quote
+[706] about computer science, where he calls it
+[708] sort of pop culture, but
+[708] by sort of switching means
+[712] that sort of for most kind of communities
+[715] or sort of again, subcultures
+[715] or whatever the case might be,
+[719] sort of there's a progression, right?
+[721] Things build upon what came before,
+[724] whereas in computer science
+[724] and so much of technology,
+[726] it sort of is just like brownie in motion
+[728] through the problem space,
+[730] and sort of with no
+[730] account given to kind of
+[733] what's come previously.
+[736] And I think that sort of we
+[736] as an industry do ourselves
+[739] an enormous disservice by being so blind
+[742] and kind of blithely ignorant to it,
+[744] and right from sort of Engelbart doing
+[750] sort of the first demo,
+[750] I mean we've all kind of
+[751] heard of Engelbart as inventing the mouse
+[754] whereas sort of in
+[754] actuality what he invented
+[756] was so much more than that.
+[757] He basically invented ether pad
+[759] or like the first kind of realtime
+[760] collaborative word processor.
+[762] He had like video conferencing integrated
+[765] with the word processor.
+[766] You could annotate and
+[766] hyperlink documents together
+[768] in realtime, like he
+[768] basically had a better system
+[770] than Hangouts, as far as I'm concerned,
+[772] that he demoed in I
+[772] guess it was '68 or '67.
+[775] - [Professor] '67.
+[775] - '67, yeah.
+[777] And then if you look at
+[777] sort of what came out
+[778] of Park or I mean so much
+[778] of this kind of early work
+[781] that I think frankly
+[781] it's better than so much
+[783] of what we ended up with now.
+[784] That's not to say there hasn't
+[784] been sort of a lot of value
+[786] in kind of what's ensued.
+[788] I mean, we've solved all kinds of sort of
+[790] deployment problems and
+[790] technological problems
+[791] and scaling problems and so forth,
+[793] but in terms of sort of the core ideas
+[794] behind so much of it, I think that sort of
+[796] in some ways, there was
+[796] much better thinking
+[797] among some of the kind of, the creators.
+[800] And kind of in a substantial
+[800] way, I think that
+[802] like the kind of, the line of thinking
+[804] around sort of the early conception
+[807] of so much of this kind
+[807] of software technology
+[810] was about kind of empowerment of humans
+[813] and the kind of phrases
+[813] that were battered around
+[814] were things like
+[814] "intelligence augmentation"
+[818] and "intelligence amplification,"
+[820] "augmenting human
+[820] intellect," things like that.
+[822] So this is kind of the original
+[822] bicycle-for-the-mind idea,
+[826] which I think is sort of
+[826] incredibly potent, right?
+[829] Kind of how can we leverage this software
+[830] to make us more effective at sort of
+[832] whatever it is we might be doing?
+[834] And then I think that sort of so much of
+[836] kind of what's happened with the Internet
+[838] or kind of the modern technology industry
+[840] as we know it is either
+[840] sort of a very kind of
+[842] basic sort of functionality
+[845] around sort of utilities, right?
+[847] So it's not about sort of
+[847] high-level intellectual functions
+[849] as about just, I mean not
+[849] that it's not valuable,
+[852] but like how do I get a car come to here?
+[854] I'm really delighted
+[854] that that service exists,
+[856] but it's not sort of part of
+[856] that original line of thinking.
+[860] Or it's about basically entertainment.
+[862] It's about sort of the Internet
+[863] as sort of a more interactive
+[863] version of television,
+[865] which also has some
+[865] merit, I mean it's not,
+[868] entertainment has merit,
+[868] but I think there's been
+[871] a significant loss of that,
+[871] and I think that people,
+[873] I mean this is kind of
+[873] a longer conversation,
+[875] but basically to answer your question,
+[876] I think this is kind of
+[876] a systematic undervaluing
+[879] of tools and sort of undervaluing
+[882] and lack of appreciation
+[882] for the kind of impact
+[884] that that can have, because it's harder
+[886] to perceive and when you
+[886] do something directly,
+[890] you can see what it is,
+[890] whereas when you're enabling
+[893] something, you have to kind
+[893] of make that additional leap
+[895] and the way we often phrase it for Stripe
+[897] is that most technology
+[897] companies are building cars,
+[899] whereas Stripe is building roads,
+[902] that kind of distinction.
+[904] - I promise I'm going to get to scaling.
+[905] I just want to spend a
+[905] little more time on this.
+[907] A lot of things really
+[907] spoke to me on that,
+[909] so me and Doug Engelbart,
+[912] so Doug came in, did you
+[912] meet him before he died?
+[913] - Sadly no.
+[914] We had Alan Kay stop by and
+[914] speak at Stripe recently,
+[917] but I never met Doug.
+[918] - So AlanI want to talk
+[918] about a second too,
+[919] so Doug came to visit at Apple,
+[921] so Doug was at Juris Park,
+[922] and I remember he came in,
+[923] and we showed him demoes in probably 1999.
+[926] He's like, "Finally, somebody did this
+[928] "that I said 30 years ago."
+[929] And that happened like
+[929] five times during our demo.
+[932] Like, "Okay, fine."
+[933] But I think a lot of what happened
+[935] was it was a quieter
+[935] time, it was less noisy,
+[937] and so more people were thinking harder.
+[940] And so I think that
+[940] resulted in better quality
+[942] of thought overall about
+[942] what was happening,
+[943] and it's just shocking
+[943] to me that so many things
+[945] happened in the '60s and '70s and '80s
+[947] that are echoing now.
+[948] And even Alan Kay, like his other quote
+[951] was that point of view
+[951] is worth 80 IQ points,
+[953] which, what a brilliant quote.
+[955] It's like try to figure
+[955] out the right problem.
+[957] And if you look at it from the right
+[958] point of view, you win, right?
+[959] - Yeah, and I think it's really easy
+[961] to have this kind of
+[961] in a historical sense,
+[964] this rose-tinted view of history,
+[968] and I think there is kind of occasionally
+[971] kind of fascio way in which people say
+[973] x or y has been done previously,
+[976] and there's nothing
+[976] interesting being done today
+[978] and so forth, and I
+[978] think that that sort of
+[980] that misses the fact that so much
+[982] of sort of the details really matter
+[986] in software, right?
+[987] And that you can be
+[987] sort of 90% correct but
+[989] - [Professor] Completely wrong.
+[990] - That's like being merely
+[990] 90% alive, right? (laughs)
+[992] And that sort of you don't get a whole lot
+[996] of partial credit, but
+[996] yeah, I wasn't around,
+[1000] but I'm very curious why it was
+[1004] that why this perspective did differ.
+[1009] And I suspect part of it
+[1009] was that it was quieter,
+[1012] I don't know, maybe there was less
+[1014] Facebook and Twitter and Tech Crunch
+[1016] and all the rest, yeah, which maybe
+[1018] speaks to my own way discredit,
+[1020] but I think also part of it
+[1020] is just kind of the ambition,
+[1021] honestly, in the sense that, like,
+[1025] there's a great book that
+[1025] I recommend you all read
+[1029] called the Dream Machine
+[1029] by Mitchell Waldrop,
+[1031] which I think is certainly
+[1031] at least the best history
+[1033] that I know of about
+[1033] sort of the early days
+[1036] of sort of technology
+[1036] and the international
+[1038] kind of the computer revolution.
+[1040] And one thing that it sort of makes clear
+[1041] is how it kind of, it wasn't at least,
+[1045] kind of the book's
+[1045] argument and thesis goes,
+[1047] it wasn't inevitable that
+[1047] sort of so many of these
+[1050] things happened or so many
+[1050] of these kind of ideas
+[1052] were perculating, it was
+[1052] sort of particular people
+[1054] who had particular ambitions,
+[1056] folks like Licklider
+[1056] sort of originally of MIT
+[1059] who kind of funded a lot of the work
+[1060] that sort of led to the Internet,
+[1062] and sort of I guess his
+[1062] intellectual descendents
+[1064] like Engelbart and Kay and so forth.
+[1067] And I guess the optimistic view would be
+[1070] that sort of a lot of that ambition about
+[1073] sort of the power that
+[1073] software can have on society
+[1075] sort of can, in fact, be reclaimed
+[1078] or at least that we're not sort of
+[1079] gonna necessarily fall victim
+[1080] to the noise that surrounds us today.
+[1084] - [Professor] The Twitters, yeah.
+[1085] That's why I'm spending a
+[1085] little bit extra time on this.
+[1087] - I'm actually, I should just say like
+[1089] I think Twitter is a tremendous
+[1091] sort of force.
+[1092] - Oh, me too.
+[1093] I kind of live on it,
+[1094] so it's like I make fun of it,
+[1094] and I'm a little bit
+[1094] self-conscious about it.
+[1096] But then the other thing I was gonna say
+[1097] is that my models of computing
+[1099] are Alan Kay's the Dynabook
+[1101] which was essentially describes
+[1102] Apple and client computing
+[1104] and Xerox PARC, Ubicomp,
+[1106] which essentially describes
+[1106] terminals and Google.
+[1109] And these are still
+[1109] the two dominant models
+[1110] of computing today, 50 years later.
+[1113] And so when I look at client or server,
+[1114] it's essentially Xerox and Xerox.
+[1118] - Yep.
+[1118] - Actually that's kind of it.
+[1120] Okay.
+[1120] So I was gonna ask you
+[1120] what a philobiblist is
+[1123] but I'm gonna wait till the end,
+[1125] because I'm excited about that.
+[1125] He had a word in his
+[1125] eight-word Twitter bio
+[1128] that I had to look up, but I like it now.
+[1130] So let's talk about Stripe.
+[1132] So how big is Stripe now today?
+[1135] I think it's around 330 people.
+[1137] - 330, and it's.
+[1138] - As one metric at least.
+[1140] - [Professor] And it's five years old?
+[1142] - Yeah, it's actually getting a bit hard,
+[1144] because do you count from
+[1144] basically that dinner
+[1145] when sort of John misled me
+[1147] or from when we first
+[1147] launched it or whatever.
+[1150] But generally what I sort of count from
+[1152] is when we launched publicly,
+[1154] because we had fewer than
+[1154] 100 users at that point,
+[1158] and we launched publicly to the world
+[1160] September 30, 2011,
+[1162] and so we just celebrated our
+[1162] fourth birthday post-launch,
+[1164] and so we we're kind of
+[1164] effectively on the order
+[1167] of five years from when we
+[1167] really worked on it full time,
+[1170] and then four years since public launch.
+[1171] - Okay, so you're 330 people now.
+[1173] A year ago, were you half that size?
+[1175] - Yeah.
+[1176] Probably this time a year
+[1176] ago, maybe 160, 70 people.
+[1179] - Yeah, so about doubling every year now.
+[1180] Yeah what was it that Derek Schmidt said?
+[1182] Doubling every year is possible,
+[1184] quadrupling every year is really hard?
+[1186] - Certainly we could not
+[1186] quadruple every year.
+[1188] - Yep.
+[1189] So talk about how you're organized.
+[1193] - This might turn into an evening class,
+[1196] but well on what dimension?
+[1201] Just in general how the company works or?
+[1202] - Well, yeah, how you run.
+[1203] Like do you have vice presidents?
+[1205] - That's easy.
+[1206] - Do you have managers?
+[1207] Does everybody do whatever they want
+[1209] like a holacracy?
+[1210] What happens at Stripe?
+[1213] So the like the how
+[1213] we're run bit I suppose
+[1215] is that we're wildly
+[1215] conventionally organized.
+[1217] And that there's always such a temptation
+[1220] sort of when you're starting out
+[1221] to go and sort of reconceive
+[1221] the nature of humanity
+[1226] and how people can
+[1226] collaborate and coordinate
+[1229] and so forth, and that
+[1229] basically you should really
+[1233] kind of try to discourage
+[1233] that inner voice,
+[1236] and I think it sort of
+[1236] comes from a good place
+[1238] where you want to kind of reconceive
+[1239] all of these things, right?
+[1241] But there's two problems with that.
+[1244] The first is that you kind of think about
+[1249] what risks you're taking in the business
+[1250] and sort of empirically the
+[1250] standard means of organization
+[1253] are sufficiently effective
+[1253] to create the Googles
+[1256] and the Facebooks and the Intels
+[1256] and so forth of the world,
+[1258] and so I mean even if,
+[1258] just posit that sort of
+[1261] you're actually capable of
+[1261] conceiving a more effective way
+[1263] of having tens, hundreds,
+[1263] thousands people working together,
+[1267] whether you actually need that
+[1267] to achieve your actual goals,
+[1270] and the second one is that
+[1270] probably all of the problems
+[1273] with any alternative
+[1273] that you could conceive
+[1275] are things that you haven't been exposed
+[1276] to today, you just don't
+[1276] have the life experience
+[1278] to sort of anticipate.
+[1280] And so basically whatever you think
+[1282] you should probably do instead,
+[1282] you're almost certainly wrong.
+[1284] - So let's stay on that for a second.
+[1286] - Okay.
+[1286] - That's an unusual thing
+[1287] for a Silicon Valley person to say.
+[1288] - Don't innovate, yeah.
+[1289] - Maybe old people know
+[1289] what they're doing,
+[1291] because they've done it before
+[1292] or they've lived through it.
+[1293] Can you break that apart a little bit?
+[1295] - Yeah.
+[1295] - As an old person, I'm excited about
+[1297] this line of questioning.
+[1298] - (laughs)
+[1299] I think that, well, technology
+[1299] changes a lot, right?
+[1308] And so I think the right
+[1308] answer is a function
+[1313] of the current technological
+[1313] equilibrium, right?
+[1315] And so if an old person thinks
+[1316] that such-and-such is a bad
+[1316] idea or something like that,
+[1318] I mean there's an
+[1318] excellent chance that now
+[1320] some period of time later,
+[1320] they're wrong, right?
+[1322] Because a dependent
+[1322] variable has changed, right?
+[1325] But people aren't changing a whole lot.
+[1327] And so instead of whatever
+[1327] the optimal system was
+[1329] kind of some period of time previously
+[1330] is I think your default prior should be
+[1335] still probably a pretty good idea.
+[1337] I caveat that with
+[1338] I think if you look at the
+[1338] history of Silicon Valley,
+[1340] things are in fact changing,
+[1342] even though people themselves
+[1342] aren't changing that much,
+[1343] because I guess just the environment,
+[1345] people's expectations and
+[1345] so forth are changing,
+[1348] and secondly I think that a
+[1348] discount factor on how well
+[1352] we do things is that
+[1352] people do copy too much
+[1355] kind of this memetic force at play.
+[1357] My favorite example of
+[1357] this is kind of standard
+[1360] Silicon Valley interviews.
+[1362] I can't remember his name, Google's HR.
+[1366] - [Professor] Laszlo Bock.
+[1367] - Laszlo Bock, right,
+[1368] wrote this great article
+[1368] for the New York Times
+[1370] where, as I recall, he sort of admitted
+[1373] they'd observed almost no correlation
+[1375] between GPA and indeed Google
+[1378] sort of interviews themselves and sort of
+[1380] the subsequent performance
+[1380] at Google, right?
+[1382] And that certainly was the case for GPA,
+[1383] I can't remember if it's
+[1383] the case for the interviews,
+[1384] but and sort of like
+[1384] essentially every company
+[1389] does the same sort of
+[1389] algorithm-style interviews
+[1390] and coding on a white board and so forth
+[1392] and essentially everyone, at
+[1392] least everyone I've talked to
+[1395] kind of knows that it
+[1395] doesn't really work, right?
+[1397] - [Professor] Yes, it doesn't work.
+[1398] - And yet nothing changes.
+[1399] And it just seems so insane, right?
+[1401] And as far as I can tell,
+[1401] you want to be successful,
+[1406] you look at what the
+[1406] successful company does,
+[1408] they do algorithms and
+[1408] interviews on the white board
+[1409] and so forth, and so despite
+[1409] the fact that most technology
+[1413] companies are not about writing
+[1413] algorithms on white boards,
+[1416] that you sort of want to
+[1416] translate and bring across
+[1419] what it is that they do,
+[1420] it's just surprisingly
+[1420] robust and resilient,
+[1423] and so we don't do that, we
+[1423] just try to think about, well,
+[1425] what it is that people at
+[1425] Stripe are actually doing
+[1426] day-to-day, I mean they're
+[1426] writing code on laptops,
+[1428] and so our interviews are largely,
+[1430] we've wrote a Quora answer about this,
+[1431] but it's largely writing
+[1431] code on your laptop
+[1433] in the environment you're familiar with
+[1434] and experienced with and so forth.
+[1436] And it works really well,
+[1436] and then when people join,
+[1438] they're generally pretty good
+[1439] at writing good code on laptops,
+[1440] and there's this, again, discount factor
+[1445] where I think people just,
+[1445] there's too much inertia
+[1448] in the existing ideas.
+[1450] But having said that, in
+[1450] terms of just the organization
+[1451] of a large group of people,
+[1453] default is to trust the mechanism.
+[1455] - Yeah actually it's a lot of technology
+[1456] which is core processes that run a lot,
+[1459] it's really worth figuring
+[1459] out first principles,
+[1462] and for you that's recruiting.
+[1464] - Yep.
+[1464] - But invention is really hard,
+[1467] because it means kind of dealing
+[1469] with unintended consequences.
+[1470] There's a lot of things that happen
+[1471] when you do things differently
+[1471] than anybody's done it.
+[1473] - Right.
+[1474] - There's no maps, there's no guidance.
+[1475] - I think there's also kind of a question
+[1478] for the cost benefit, right?
+[1479] In the sense that like
+[1479] if you can be sort of
+[1483] somewhat better even
+[1483] epsilon better on recruiting
+[1485] sort of maybe that
+[1485] actually matters, right?
+[1488] Whereas for a significant fraction
+[1492] of the things that have
+[1492] to happen in a company,
+[1494] you can fail if you screw them up,
+[1496] but they're not going to be the things
+[1498] that sort of create outside
+[1498] success by themselves,
+[1502] and for those again it's just probably,
+[1504] even if you posit that you're right,
+[1506] that you can do them better
+[1508] than all of your kind of
+[1508] mistaken predecessors,
+[1510] is it really worth
+[1510] spending your time there?
+[1512] Because fundamentally,
+[1513] that's the most constrained resource.
+[1515] - Right, yep, okay.
+[1516] So you talked about
+[1516] your laptop interviews.
+[1518] You guys have a reputation
+[1518] that you well-deserve
+[1520] for being excellent at hiring
+[1522] very, very, very good developers.
+[1525] How long did it take before you started
+[1527] doing laptop interviews?
+[1528] And has it changed now
+[1528] that you're 300 people?
+[1531] - Yeah, so I think, well,
+[1531] it's always so hard to know
+[1538] for anything was good or bad at Stripe.
+[1540] One, it's hard to know
+[1540] whether it is actually
+[1541] good or bad or whether
+[1541] that's just perception.
+[1544] I mean in the case of
+[1544] hiring I actually think
+[1545] we lucked out.
+[1546] You're never sort of entirely sure.
+[1550] But then secondly, how much was kind of,
+[1554] you can never kind of piece apart
+[1555] the attribution of all the
+[1555] different factors, right?
+[1558] And so for example one thing
+[1558] I think we benefitted from
+[1559] was the fact that Stripe
+[1559] builds software and tools
+[1561] for developers, for engineers,
+[1563] and so I think there's
+[1563] kind of more of an affinity
+[1565] than, I mean, for some randomly
+[1565] selected other product,
+[1569] how much did that factor
+[1569] matter, I don't know, right?
+[1571] Potentially, all of it
+[1571] can be attributed to that.
+[1573] And in fact the different ways
+[1573] in which we did interviews
+[1576] is completely inconsequential,
+[1577] I don't quite think that's true.
+[1578] I think probably the biggest thing,
+[1580] aside from how we interview folks,
+[1583] that we did differently is just being okay
+[1587] taking a really long time to hire people
+[1589] in that, kind of the received wisdom is
+[1592] work really hard to hire the best people,
+[1594] and you're like, "Gee, thanks, I was going
+[1596] "to do the opposite, but
+[1596] now that you've said that,
+[1597] "I'll work really hard
+[1597] to hire the best people."
+[1599] And so I guess the question is sort of
+[1600] to what lengths should you go
+[1602] and kind of what does that
+[1602] actually mean in practice.
+[1604] And in practice it means being okay
+[1607] waiting a really long time to hire people
+[1610] and having to be painfully
+[1610] persistent in doing so.
+[1614] And so it took us, let me think,
+[1618] took us a year, well it took me six months
+[1622] to hire the first two people, so.
+[1625] - That's the same story
+[1625] that Sam Altman told about
+[1626] about Airbnb I think,
+[1626] took maybe nine months.
+[1629] - So a person per quarter
+[1629] even though we had
+[1630] this kind of network already
+[1630] and knew all these people,
+[1632] we managed like one every three months.
+[1634] And then in I think the
+[1634] six months after that,
+[1638] we maybe hired another
+[1638] three or four people
+[1641] kind of on that order.
+[1643] We had week-long trials with them,
+[1647] we had some of them kind of network out,
+[1648] in many cases, they sort
+[1648] of thought they didn't
+[1653] want to join, and so it was kind of like
+[1654] this three-month life
+[1654] conversation about it,
+[1657] - [Professor] (laughs)
+[1657] - I mean therapy session of sort of
+[1659] what the best thing for these
+[1659] people to be doing would be.
+[1661] And this is I think what you find
+[1663] when you're trying to
+[1663] hire the best people,
+[1664] because you can kind of go either sort of
+[1665] you can filter first by kind
+[1665] of, by expressed interest
+[1672] or something, and then you can sort of
+[1674] secondarily filter for okay,
+[1674] and which ones are good,
+[1676] or you can first look for the good ones,
+[1677] and then try to sort of convert
+[1677] them to expressed interest.
+[1681] And I think that the latter
+[1681] is the more effective way
+[1682] to go about it, but then that means
+[1684] you have to sort of turn
+[1684] this aircraft carrier,
+[1686] where I mean if you just
+[1686] think kind of ex-ante about
+[1688] - The aircraft carrier's the candidate
+[1689] you want to go get.
+[1690] - Exactly, right, yes.
+[1693] Bit of a tortured metaphor,
+[1694] but you just think about the
+[1694] smartest people you know,
+[1696] and you want to get them
+[1696] to work in your thing,
+[1698] I mean chances are, as
+[1698] far as people you know,
+[1700] - Are working already.
+[1700] - Yeah, they have pretty good paths
+[1702] ahead of them, right?
+[1703] - Yep.
+[1704] - And to sort of consistently
+[1704] try to rotate these
+[1705] just takes a real long time.
+[1708] And so there are multiple
+[1708] people at Stripe now today
+[1711] who took us several years to hire,
+[1714] like, I can think off the top of my head
+[1718] of five people who took
+[1718] three plus years to hire.
+[1722] - Yep.
+[1723] - And the idea is sort of
+[1723] that when you're so early
+[1725] in the company's history
+[1725] that you should be
+[1727] kind of investing in people for whom
+[1730] it might take that length of time to hire.
+[1731] - [Professor] It seems
+[1731] a little crazy, yeah.
+[1733] - It seems kind of crazy, right?
+[1734] So I think maybe apart from sort of
+[1735] interviewing people sensibly,
+[1736] I think the big thing that
+[1736] people have to keep in mind
+[1740] in sort of early stage company recruiting
+[1742] is just you have to be way more persistent
+[1743] and be okay with it taking way longer
+[1745] than any sane or reasonable person
+[1747] could think it should take.
+[1749] - Yep and that's what Drew
+[1749] Houston says about Aditya,
+[1751] he says they tried to
+[1751] get Aditya and Ruchi,
+[1753] Aditya runs engineering, for over a year.
+[1755] They had to acquire his
+[1755] company to get him to do it.
+[1758] - You know, I was reminded, I'm
+[1758] involved in a search company
+[1759] in Palo Alto, and it's
+[1759] about two years old,
+[1761] but the painful, the vicious cycle
+[1764] is that you're going so
+[1764] slowly when it's the first
+[1767] two or three people, and you're like,
+[1769] "Holy smokes, if we could just
+[1769] get another set of hands,"
+[1772] but you don't want to do it,
+[1773] but we talk a lot in this
+[1773] class about compound interest
+[1776] and the value of compounding interest,
+[1777] like if you get just one great person,
+[1779] that makes it marginally easier
+[1780] to get the next great person.
+[1782] - So I think it's that dynamic in spades,
+[1784] and then secondly I
+[1784] think, kind of another way
+[1786] to think about it, maybe
+[1786] makes the importance of it
+[1788] and potency kind of clearer,
+[1790] is that you have to imagine the light cone
+[1792] or kind of the tree of all of the people
+[1795] that this person will hire,
+[1797] and so rather than just thinking about it
+[1798] as kind of do I want this person or not,
+[1800] it's like, "Do I want this person
+[1802] "and the 50 people who
+[1802] I think they will hire?"
+[1804] Because even if they don't
+[1804] literally hire 50 people,
+[1806] they will be kind of so influential
+[1808] in determining the self-selection
+[1808] of those 50 people,
+[1812] and so you're really
+[1812] picking this giant branch
+[1817] of a potential future organization.
+[1819] - Yep, and then there's something where
+[1820] you get to a critical mass and ultimately
+[1822] you get a new chunk where they all believe
+[1825] that it might not be crazy
+[1825] to go work for this startup.
+[1828] - Yes.
+[1829] In our case, it took a long time.
+[1830] - A couple years' struggle.
+[1831] - Right.
+[1832] And that kind of also
+[1832] gets into sort of networks
+[1834] and so forth where sometimes you,
+[1837] these things can kind
+[1837] of compound more rapidly
+[1841] because they're not completely
+[1841] independent variables.
+[1844] So it sounds like you had the sense
+[1849] that you had product market
+[1849] fit at the very beginning.
+[1852] - You did this thing, and
+[1852] people started talking about it.
+[1854] Is that true?
+[1858] - Yes and no.
+[1860] So yes in the sense that
+[1860] from the very beginning,
+[1863] sort of shockingly, this
+[1863] idea of, I mean, again,
+[1865] it really doesn't sound promising I think
+[1867] certainly a lot of people we talked to
+[1870] didn't think so, sort of a credit card API
+[1873] that was really simple to use over cURL
+[1875] and you could set up instantly,
+[1876] you're not immediately like,
+[1878] "All right, let me invest."
+[1880] - And indeed, most people weren't.
+[1881] But that in fact turned out
+[1881] to be a pretty good idea
+[1884] and it ended up playing into
+[1884] all these kind of larger
+[1887] secular trends and like the rise of mobile
+[1890] and the shift from
+[1890] advertising-based business models
+[1892] to transaction-based business models
+[1894] and things like that.
+[1895] - You know that wasn't that much
+[1897] was really associated with mobile.
+[1899] - No, but I think it was just kind of
+[1901] there was actually, it
+[1901] was kind of a period
+[1903] of high turnover in the industry,
+[1905] and so kind of more things were getting
+[1906] rebuilt from scratch and so forth, right?
+[1908] - Yep.
+[1908] - And then, and also product disappearance
+[1910] was becoming more important.
+[1911] - Sure.
+[1912] - And so just bouncing
+[1912] people to some other website
+[1914] to pay was just not viable.
+[1917] - And so there was kind of that.
+[1919] But then I think kind of the second aspect
+[1922] which kind of, in which
+[1922] the product market fit
+[1925] wasn't quite there from the outset
+[1926] is in sort of the additional
+[1926] stuff that happens
+[1929] kind of on top, in that for example,
+[1931] one of the most successful
+[1931] things we've launched
+[1933] is the thing called Connect,
+[1934] which basically enables people to sort of
+[1937] to pay other people with Stripe,
+[1939] is kind of the verbacial
+[1939] way to describe it.
+[1941] And so you think about all
+[1941] these new marketplaces, right?
+[1944] And so Instacart and
+[1944] Postmates and Doordash
+[1945] and Ship and so forth, right?
+[1948] Are you an investor in Ship?
+[1949] - No.
+[1950] - Okay, sorry.
+[1950] Somebody thought you were.
+[1951] - But I use them all.
+[1952] - Okay, yeah, great.
+[1954] Lift, Uber, Airbnb and so forth, right?
+[1955] And so tons of these companies,
+[1957] in fact I think the vast majority
+[1958] are built on Stripe, right?
+[1960] But that requires this
+[1960] additional set of APIs
+[1962] that we call Connect in order to do so
+[1964] and to sort of coordinate
+[1964] all these payments
+[1966] and keep track of them
+[1966] and sort of help them
+[1967] handle the tax issues
+[1967] and the whole ensemble
+[1972] of factors.
+[1975] And so there are a lot of additional APIs
+[1979] we ended up building on top of this really
+[1980] basic transaction processing part.
+[1982] But I think people don't quite,
+[1984] or it's difficult to understand, right?
+[1986] Because it's kind of like AWS
+[1987] in that people kind of know, well,
+[1989] they do kind of the EC2
+[1989] thing and the S3 thing
+[1992] and there's a bunch of other things
+[1993] and kind of actually in the details
+[1995] building infrastructure.
+[1996] It's pretty hard to keep
+[1996] track of all the other things,
+[1998] and I think Stripe has a similar dynamic
+[2001] where that initial
+[2001] component was a very good
+[2003] product market fit to
+[2004] but in order to actually get here,
+[2005] a huge amount of additional work
+[2006] that had to happen and
+[2006] invention that had to happen
+[2009] that's just basically hard to understand
+[2011] without a lot of context.
+[2012] I think that's something
+[2012] that for better or worse,
+[2015] Stripe has faced for its history,
+[2017] where people kind, well
+[2017] because it's kind of hard
+[2021] to assess from the outside unless you know
+[2023] a lot about the domain,
+[2025] kind of the bad part of that
+[2027] is people just kind of don't get
+[2029] what Stripe does or why it matters
+[2030] or in what way it
+[2030] manifests the consequence,
+[2032] and the good part is competitors also
+[2035] don't really get it, right?
+[2036] And so Stripe got to this point
+[2039] sort of pretty easily, and
+[2039] so it kind of cuts both ways.
+[2044] - That brings up a lot
+[2044] of different questions.
+[2048] So one of the things I heard in there
+[2050] is that there are successive
+[2050] product market fits.
+[2052] - Yep.
+[2053] - Like your different signs,
+[2053] they don't all come together,
+[2056] sometimes are spread out,
+[2058] sometimes you have to get
+[2059] product market fit in one place
+[2061] - to let you build to
+[2061] realize you don't have it
+[2063] in another place.
+[2064] - Right, yes.
+[2064] - Does that sound right?
+[2065] - I think that's exactly right.
+[2067] - And then so fast-forward to 2015.
+[2071] What scale are you at today?
+[2073] Like how do you talk about scale
+[2074] when you're talking to the public?
+[2076] - We've, well this gets
+[2076] to sort of another issue
+[2079] of sort of to what degree
+[2079] you should be forthcoming
+[2080] about your business metrics.
+[2081] - Right.
+[2082] - And we've always been in the school
+[2083] of not being.
+[2084] - Yeah, okay.
+[2085] - And so I think the
+[2085] current public things we say
+[2089] are we handle billions of dollars a year
+[2091] for, we actually recently started saying
+[2094] hundreds of thousands of businesses.
+[2096] - Okay.
+[2098] - And that's kind of about it.
+[2099] But I mean it's become the default thing
+[2105] that technology companies use
+[2107] when they want to move money
+[2107] around on the Internet.
+[2109] - Well that's a somewhat broader thing
+[2111] than saying you have hundreds of thousands
+[2112] and billions, so saying you're the default
+[2115] is a good thing to say, it's
+[2115] the thing you want to say.
+[2119] Sorry, I'm trying to
+[2119] back out to a different
+[2126] set of questions.
+[2127] So talked about scale.
+[2129] Let's talk about, oh,
+[2129] you talked about Connect.
+[2130] I was reading one interview
+[2132] where basically somebody said,
+[2134] "Well, look, don't we have PayPal?"
+[2135] It was in PayPal fine.
+[2137] - You said, "Well, PayPal's
+[2137] not really what we do.
+[2139] "PayPal's for person-to-person transfer,
+[2141] "party-to-party transfer."
+[2142] That's kind of what you describe
+[2143] when you were talking
+[2143] about to Connect to me.
+[2145] - Yeah, right, and this is a great example
+[2147] where kind of at a high
+[2147] level you're like oh.
+[2149] - But BNC doesn't understand
+[2149] at all what you're doing,
+[2151] so we'll ask you to
+[2151] explain in small words.
+[2152] - I'm not sure which interview this was,
+[2155] but where it really gets down to details.
+[2156] And so kind of the critical difference is
+[2159] are you building software
+[2161] that sort of coordinates these,
+[2163] this kind of network of
+[2163] money flowing, right?
+[2165] I mean like what Lift needs
+[2165] or what Instacart needs
+[2169] is very different to the experience of
+[2170] "Oh, I'm gonna pay my friend."
+[2171] - Right.
+[2172] - With Lift, it's I mean
+[2172] you're gonna mechanically
+[2174] sort of coordinating this payment
+[2176] between the rider and the driver
+[2179] and that like Lift is
+[2179] mediating that payment,
+[2182] and then sort of all these
+[2182] additional considerations
+[2183] around it for like "What happens
+[2183] if it has to get refunded?"
+[2186] Or like "Actually the
+[2186] amount can be different,
+[2187] "because you can give a tip to the driver,
+[2189] "and maybe it'll get charged back later,
+[2190] "and it has to work in
+[2190] different countries,"
+[2191] and so in practice,
+[2191] completely kind of different
+[2194] problems face us.
+[2195] I mean I guess the problem we face
+[2196] of person-to-person payments
+[2197] is how do I do really
+[2197] frictionless onboarding
+[2199] and honestly how do I have people
+[2200] not forget about it,
+[2201] because people don't actually practice
+[2202] paying their friends all
+[2202] that often but whatever.
+[2204] - [Professor] (laughs)
+[2205] - There's like super
+[2205] different problem spaces,
+[2206] but on a high level, you're right,
+[2207] both involve money going
+[2207] from one person to another,
+[2208] and so that really being kind of,
+[2210] basically without kind
+[2210] of talking to the people
+[2212] building the app sort
+[2212] of hearing their issues
+[2214] directly firsthand, they do kind of sound
+[2216] superficially similar.
+[2217] - And so I guess then you would say
+[2219] your product suite now is a really
+[2221] straightforward authentic expression
+[2222] of your original thing,
+[2222] which was people make apps,
+[2225] and they'd like to get paid for them,
+[2228] paid by their customers and sometimes
+[2231] pay their suppliers out, is that?
+[2232] - Yeah, no, I think
+[2232] that's basically right.
+[2234] So the way we kind of
+[2234] came to think about it
+[2235] was kind of two dimensions
+[2235] or maybe three to it.
+[2243] So the reason we decided
+[2243] to drop out of school
+[2246] or maybe go and leave.
+[2248] - (laughs)
+[2249] - was because we realized
+[2249] that just in general
+[2251] the market as a whole was actually tiny,
+[2253] and so you kind of hear transactions
+[2254] on the Internet, you know,
+[2254] that's kind of been done
+[2257] or something, right?
+[2258] But you need to just look at it
+[2259] from a high-level standpoint,
+[2261] and you sort of look at the total figures,
+[2264] and about, certainly
+[2264] at the time, 2% of all
+[2267] consumer spending was happening
+[2269] through the Internet, right?
+[2270] And so kind of as a total industry
+[2272] commerce on the Internet,
+[2273] was kind of 2% of the starting block
+[2276] so whatever happened to date
+[2277] was incredibly early in
+[2277] terms of the ultimate curve
+[2281] of what's coming.
+[2283] The second one was just kind of
+[2285] more directly looking at
+[2286] sort of the global aspect
+[2287] where the smart phone is kind of how
+[2288] the Internet is reaching
+[2288] the rest of the world
+[2291] and again we were really early
+[2293] in that process happening,
+[2294] and so there were all
+[2294] these incredibly promising
+[2296] niche end markets and
+[2296] China, India, Indonesia,
+[2299] Brazil, et cetera, right?
+[2302] And then the third one kind
+[2302] of to your Connect point
+[2304] was that businesses were building these
+[2306] increasingly just complicated
+[2306] transaction-oriented services,
+[2310] and I mean Connect is a good example,
+[2311] but Crowd Funding is another, right?
+[2313] They were sort of Kick
+[2313] Starter does not monetize
+[2315] or facilitate advertising.
+[2316] They facilitate just this completely new
+[2319] kind of transaction, right?
+[2320] And so realizing this was increasingly
+[2322] at the core, not just
+[2322] partially, but at the core
+[2326] of what the next generation
+[2326] of companies were doing,
+[2328] like if you think about it, Airbnb, Uber,
+[2330] Kick Starter, Instacart, Lift,
+[2332] - [Professor] Everybody interesting.
+[2333] - Yeah, they're kind of these new kind of
+[2337] real world economic relationships
+[2338] where it's an integral part,
+[2341] and so the belief was that,
+[2341] well, there's gonna be
+[2342] a lot of those and sort of the use casers
+[2345] are going to get richer
+[2345] and more complex over time,
+[2347] and there needs to be
+[2347] a completely integrated
+[2349] set of tools and APIs to
+[2349] facilitate the whole thing.
+[2352] - Okay so I'm gonna ask
+[2352] a bunch of questions
+[2353] about engineering and staff
+[2353] and product definition
+[2356] and organization, but you guys get bored
+[2358] if you don't ask questions.
+[2359] Do people have questions at this point?
+[2362] Or should we keep going?
+[2366] - [Voiceover] How did
+[2366] you go about setting up
+[2368] the sort of back-end relationships
+[2370] with the credit card
+[2370] processors and all that
+[2373] when you were really small?
+[2374] - Right.
+[2375] Good question.
+[2376] This was one of the hardest parts.
+[2378] In the beginning, we sort of worked with,
+[2384] this part might be partly off the record,
+[2386] but in the beginning we worked with,
+[2388] there was a guy I met at a party,
+[2389] and his friend ran a payments company.
+[2394] It was like a tiny little operation based
+[2397] out of the Midwest,
+[2398] and they agreed to let
+[2398] us build a prototype
+[2400] on top of their thing and just didn't ask
+[2402] too many questions.
+[2404] And so when you instantly
+[2404] create your Stripe account,
+[2406] John and I got an email,
+[2406] and we'd go and like
+[2409] fill out the paperwork and
+[2409] submit it to this company,
+[2410] and instantly set up your Stripe account.
+[2413] - [Professor] For real?
+[2414] You put manually?
+[2414] - Manually.
+[2415] - [Professor] Wow.
+[2416] How many did you do it like that?
+[2418] - Dozens.
+[2419] - [Professor] (laughs)
+[2420] - And actually that worked really well,
+[2422] because the salient point was
+[2423] they didn't have to do it,
+[2423] the user didn't have to do it,
+[2425] and we were fine doing it for them,
+[2426] and actually, it's a separate
+[2426] line of conversation,
+[2428] but there were a lot of things
+[2429] where we just sort of
+[2429] manually did it ourselves
+[2431] for a very long time.
+[2434] And then we went and
+[2434] we met with Wells Fargo
+[2439] and sort of described what
+[2439] we were doing to them,
+[2441] and we'd gotten instruction
+[2441] through somebody and so forth
+[2443] and they unequivocally said that they had
+[2446] no interest in working with us,
+[2448] and so it was like hmm.
+[2450] And then, it was getting
+[2450] increasingly frustrating,
+[2455] because it was growing,
+[2456] and we were having to fill out
+[2457] more and more of these forms, right?
+[2459] But we sort of had no
+[2459] route to something better.
+[2464] And so we asked one of our early investors
+[2467] for advice on this.
+[2468] It was a guy called Geoff Ralston.
+[2470] So Geoff had been a CEO of Lala,
+[2472] which was kind of like an
+[2472] early version of Spotify,
+[2474] and they were one of
+[2474] the first kind of legit,
+[2476] legal music services,
+[2478] and they'd gotten deals done
+[2480] with all the record lables,
+[2481] and so we kind of thought who do we know
+[2483] to get a deal done with a bank?
+[2484] Well Geoff got a deal done
+[2484] with the record labels,
+[2486] - [Professor] (laughs)
+[2487] - I mean, you can deal
+[2488] you can deal with anyone.
+[2489] And so we went to Geoff
+[2490] and we basically said, you know, "help."
+[2494] And he's like, "Oh, I
+[2494] didn't actually do all these
+[2498] "deals with the record labels."
+[2500] It was actually one of Lala's
+[2500] co-founders, Billy Alvarado.
+[2505] And so he pointed us to Billy,
+[2509] and so John and I met with Billy,
+[2512] and he had actually,
+[2512] Apple had bought Lala,
+[2516] and Billy had just left,
+[2516] and I think, I don't know,
+[2519] maybe Billy was bored, and so he's like,
+[2521] "All right, I'll help you
+[2521] kids out a little bit."
+[2524] And so he actually ended up joining Stripe
+[2528] as maybe the fifth or sixth person.
+[2530] And we were like, he wasn't an
+[2530] engineer, and so at the time,
+[2533] - [Professor] You had a BD guy
+[2534] as your fifth or sixth person.
+[2535] - Yeah, yeah, and so, and
+[2535] we were really torn over it,
+[2537] because it was like.
+[2538] - [Professor] That's super
+[2538] surprising for a company
+[2539] that's so engineering.
+[2540] - No, no, no, and we were like,
+[2541] "He doesn't write code, I mean,
+[2543] "should we hire a person
+[2543] who doesn't write code?"
+[2544] - [Professor] What does he do?
+[2545] (laughs)
+[2546] - What does one even do
+[2546] that's not writing code?
+[2548] And so we were sort of sharing this
+[2550] kind of inner anguish with Geoff,
+[2553] and Geoff, to his credit,
+[2553] was commendably patient,
+[2558] and was like, "Patrick,
+[2558] one, stop being an idiot."
+[2563] I don't think he said idiot,
+[2563] he said something stronger,
+[2565] but for the sake of the record,
+[2566] I'll say he called me an idiot.
+[2567] And he's like, "You
+[2567] should just hire Billy."
+[2569] And I remember he promised me
+[2571] that if it didn't work out,
+[2573] he would go back and retroactively
+[2575] pay Billy's salary, so he was like,
+[2577] "So there's no downside for you."
+[2579] And at the time, we didn't have
+[2580] a whole lot of money, and so that's.
+[2582] - [Professor] So that mattered.
+[2583] - Yeah, absolutely.
+[2584] And so then we hired Billy,
+[2586] and Billy is still at Stripe
+[2586] and is one of the most
+[2590] important people at the company.
+[2592] - [Professor] How did you?
+[2592] - No actually, just a second,
+[2592] and to finish the story,
+[2594] so then basically Billy
+[2594] went and solved Wells.
+[2597] And so it, I mean,
+[2597] there's a whole separate
+[2599] line of conversation to be had about
+[2600] how to do business development effectively
+[2602] and we were really bad
+[2602] at it in the beginning.
+[2606] I think it's actually a
+[2606] very interesting question,
+[2607] how should a startup
+[2607] partner with other entities,
+[2610] and obviously that's a
+[2610] pretty important part
+[2611] of what Stripe has to do.
+[2614] And Billy sort of taught
+[2614] us a hell of a lot,
+[2616] but about two months after Billy joined,
+[2619] we had the requisite
+[2619] relationship with Wells Fargo.
+[2622] - Wow.
+[2623] I was gonna ask, how do you even
+[2624] evaluate how he's doing?
+[2626] Because he's such a different background
+[2628] situation than you.
+[2629] - Right.
+[2630] - I guess he just did magic things
+[2631] like bring Wells Fargo in so he's probably
+[2633] good enough, yeah?
+[2633] - Yeah, we're kind of at the point where
+[2635] there were fairly discreet things
+[2636] that had to happen or not.
+[2638] And so in that sense, it
+[2638] was fairly assessable,
+[2641] but there were also a
+[2641] bunch of other things
+[2644] where (laughs) he knew, I
+[2644] mean he'd basically been
+[2647] through a real startup before in Lala
+[2649] and so for example, I remember him asking
+[2651] pretty early on how we do payroll,
+[2654] and we're like occasionally we multiply
+[2657] the agreed salary by length of time
+[2660] since people were last paid
+[2660] and give them that money.
+[2663] - [Professor] (laughs)
+[2664] - And he's like, "What about deductions
+[2666] "and tax and all these things?"
+[2668] And we're like, umm.
+[2670] - [Professor] Really?
+[2671] - Yeah.
+[2672] - [Professor] Wow.
+[2673] Awesome.
+[2674] - (laughs)
+[2674] And so there's all sorts of cleanup
+[2676] that Billy helped us through.
+[2677] - [Professor] It's good to
+[2677] have people who clean up.
+[2682] - Okay so I think I know this question.
+[2684] So I think you guys had such a clear
+[2687] product value proposition, I was gonna ask
+[2689] about how you decided
+[2689] what things new to do.
+[2694] - Right.
+[2694] - So I think I have a guess
+[2694] now, listening to you talk,
+[2696] but can you talk about it for a second?
+[2698] So I think this is a pretty hard question
+[2699] when you're building a consumer product
+[2700] because consumers don't really
+[2700] know what they want, right?
+[2702] I mean in that this is sort
+[2702] of the challenge for Facebook
+[2705] where it's, you're dealing with all these
+[2707] mercurial teenagers,
+[2707] and the greatest minds
+[2710] of our generation are staring intently
+[2712] at all this data trying to figure out
+[2713] what do the millennials want,
+[2715] but that's very difficult.
+[2718] To be clear, to their credit, they've done
+[2719] a fantastic job of keeping abreast of it
+[2721] with all the acquisitions and so forth.
+[2723] But it's hard.
+[2724] You can't just figure
+[2724] it out through analysis.
+[2727] - [Professor] Right.
+[2728] - Or these people haven't
+[2728] figured out how to yet.
+[2731] Whereas when you're
+[2731] building for developers,
+[2735] you can just cheat again,
+[2737] you can just ask them, right?
+[2738] And in fact even if you don't ask them,
+[2740] - [Professor] They'll
+[2740] probably tell you anyway.
+[2742] - they're frequently relatively vocal
+[2743] in their preferences and desires.
+[2745] And so I mean,
+[2748] - But that's a little glib right there.
+[2750] - I was gonna say, right?
+[2751] Because you prioritize
+[2751] and which ones, right.
+[2753] And so we pay a lot of attention
+[2756] to who we judge to be the
+[2756] ones with good judgment.
+[2760] And you also have to fit the whole thing
+[2762] into a long-term perspective
+[2762] of how these pieces
+[2764] fit together, and how the
+[2764] product ought to evolve
+[2766] and so forth.
+[2767] One of the, I remember
+[2767] Mark Zuckerberg commenting
+[2772] at one point, I think this
+[2772] is kind of good advice,
+[2776] that this is, in general,
+[2776] I think kind of the value
+[2780] over-mythologizes kind of
+[2780] the role of the founder
+[2783] and the criticality of
+[2783] that person and so forth,
+[2785] but he commented that it's very important
+[2787] for the CEO to be sort
+[2787] of integratively involved
+[2789] in a lot of the micro product decisions,
+[2792] because what's optimal to do
+[2794] on a one-year time horizon is often
+[2797] quite divergent from what's optimal to do
+[2798] in a five-year time horizon,
+[2800] and it's just difficult for anyone
+[2801] other than the CEO and
+[2801] especially the CEO founder
+[2803] to have this long time horizon
+[2806] kind of in their optimization function.
+[2808] - [Professor] Yep.
+[2808] - And so I think there's a
+[2808] fairly important aspect there.
+[2812] But yeah, for us it's I
+[2812] would say 70% listening
+[2816] to the people who we think are
+[2817] either have really good judgment
+[2818] or are themselves likely
+[2818] to become really big,
+[2820] because kind of just in and of itself.
+[2823] - [Professor] Ip facto.
+[2824] - Exactly.
+[2824] And then maybe the other 30%
+[2828] sort of doing things we
+[2828] think ought to be big
+[2831] but for some reason we're
+[2831] not being asked for.
+[2833] And a good example of this is we
+[2836] built this integration with Alipay.
+[2838] Alipay is kind of like
+[2838] the PayPal of China.
+[2839] So many of these things in
+[2839] China have this kind of.
+[2843] - [Professor] They're pretty big.
+[2844] - Exactly, kind of eye-watering scale.
+[2846] - [Professor] Growing pretty fast.
+[2847] It's gonna be bigger tomorrow.
+[2848] - And we'd have all these conversations
+[2849] with businesses where we're like
+[2850] and we have this Alipay integration
+[2851] so sort of everyone in
+[2851] China can now buy from you,
+[2854] and the businesses would say,
+[2856] "Well, I don't know if
+[2856] that's relevant to us.
+[2857] "We don't actually sell
+[2857] that much in China."
+[2859] And we're like, "Let's just think through
+[2860] "the logic of that statement."
+[2862] - Yeah.
+[2863] - And why it might be that people in China
+[2865] aren't buying from you.
+[2867] And then they'd often be
+[2867] like, "Ahh, good point."
+[2870] And add Alipay and so
+[2870] things could go well.
+[2874] But 70% I would say being led
+[2877] by the smart companies and developers.
+[2880] - Right.
+[2881] And then how do you,
+[2882] well two different questions.
+[2884] So how's Bitcoin related
+[2884] to something like that?
+[2887] So Bitcoin looks like developers
+[2889] get very excited about it.
+[2890] Do you guys get excited about it?
+[2891] How do you think about big clientele?
+[2893] All developers say, "Oh
+[2893] my gosh, let's do this."
+[2896] - Doesn't feel like a
+[2896] thing that's huge yet.
+[2899] - Yep.
+[2902] Definitely not huge yet.
+[2903] I think that you have to be somewhat okay
+[2906] with making, I guess multiple people have
+[2910] kind of made the statement
+[2912] that you can't judge
+[2912] decisions by their outcomes,
+[2916] and at first blush, that sounds
+[2916] like a strange statement,
+[2920] but I think kind of what
+[2920] it gets at is this idea
+[2922] that you have to judge
+[2922] decisions by their EV
+[2924] rather than by the particular outcome
+[2925] that in fact resulted.
+[2927] - [Professor] Right.
+[2928] EV, expected value.
+[2929] - Sorry, yeah.
+[2930] And so even, I mean certainly at the time
+[2934] and even now, it's not completely clear
+[2935] sort of what happens to Bitcoin,
+[2937] but I think that even if the probability
+[2939] is relatively low, sort of
+[2939] the potential significance
+[2942] of some success outcome is large enough
+[2943] that it's probably worth
+[2943] keeping abreast of it.
+[2947] And also I guess we felt
+[2947] some just general affinity
+[2950] to that community.
+[2951] I mean I don't personally nor I guess
+[2953] does Stripe subscribe to these
+[2953] sort of crypto anarchists
+[2956] sort of let's liberate
+[2956] ourself from the tyranny
+[2960] of our monetary oppressors
+[2960] kind of school of Bitcoin.
+[2962] - [Professor] (laughs)
+[2963] It's bigger than it sounds like.
+[2965] It's bigger than you think.
+[2968] - (laughs) I just realized recently
+[2970] that probably that the
+[2970] original PayPal client
+[2972] firm Satoshi, it's
+[2972] probably the first paper
+[2974] that sort of you know both the paper
+[2976] and political science and then CS.
+[2977] - [Professor] It's a beautiful,
+[2978] everyone should read at least,
+[2980] it's seven pages long, it's beautiful.
+[2981] - Right, right.
+[2983] - [Professor] And like
+[2983] slightly insane but beautiful.
+[2985] - Yeah, yeah.
+[2987] - [Professor] Insane in a good way mostly.
+[2989] - Yeah I mean whatever the first block
+[2990] has the New York Times
+[2992] from the financial crisis and so forth.
+[2994] Anyway, it's definitely
+[2994] a strong political agenda
+[2995] but I think the kind of the
+[2995] distributed systems aspect
+[2999] and honestly the idea of sort of
+[3002] a decentralized infrastructure
+[3002] that sort of can be
+[3003] a system and a ledger and so forth
+[3005] very sort of so much of the substraight,
+[3007] I mean, that's kind of a cool idea, right?
+[3008] - [Professor] It's beautiful, yep.
+[3009] - So we wanted to do a
+[3009] bit to help move it along.
+[3013] - [Professor] Okay, so who
+[3013] runs product at Stripe?
+[3016] - So, well we have a bunch of different
+[3021] product engineering teams,
+[3024] and some of those teams
+[3024] have product managers
+[3026] on them, not all of them do.
+[3029] They are, without actually
+[3029] counting maybe five or six
+[3031] of those teams, and not all of them
+[3034] are kind of formally
+[3034] broken up and so forth.
+[3036] And then there is a
+[3036] single engineering manager
+[3037] who manages all of the
+[3037] managers on those teams,
+[3041] and then I manage.
+[3043] - [Professor] The product managers
+[3044] reporting to an engineering manager.
+[3045] - So the product managers report
+[3046] to the single manager for
+[3046] each of the product teams,
+[3049] and that person manages
+[3049] the product manager.
+[3051] - Cross-functional management.
+[3053] It's a management management engineers
+[3054] and product.
+[3055] - Okay so the problem is that
+[3057] I guess there's product managers
+[3060] and this is like product
+[3060] in the engineering
+[3062] sense of the product, but
+[3062] just the simplification,
+[3064] oversimplification is that
+[3064] there are these products
+[3067] with teams associated with them,
+[3068] there's a single manager who manages
+[3070] all of the product, and
+[3070] then I manage that manager.
+[3073] And so kind of who runs product at Stripe?
+[3075] I mean it sort of depends on the product,
+[3076] because the team does first and foremost
+[3079] and then I guess also that manager
+[3080] and then ends up with me.
+[3082] - Yeah I guess the reason I asked
+[3083] is because you just noted
+[3083] how important it was
+[3085] to have a CEO and founder in the details
+[3087] - Right, yep.
+[3088] - in a lot of things,
+[3088] and that tends to create
+[3091] a structural instability for what
+[3093] you usually call VP of product,
+[3095] that's a brutal role,
+[3097] - Right.
+[3097] - because you're either in a company where
+[3099] the CEO founder is micromanaging product
+[3102] or you're in a company where
+[3103] they totally empower you to run product,
+[3105] - and then you have the message
+[3106] of the CEO doesn't care about the product.
+[3108] - And so it's a hard place to be.
+[3110] And so I mean the I guess
+[3110] part of what you're getting at
+[3114] is a lot of companies sort
+[3114] of there's this separation
+[3117] between, say, the engineering kind of org
+[3120] and the product management function.
+[3122] - And then sort of the VP product,
+[3124] the person overseeing this
+[3124] product management function
+[3126] if the CEO is really closely involved,
+[3128] that becomes of a pretty thin
+[3130] or at least difficult role, right?
+[3131] - [Professor] Mostly use spreadsheets.
+[3132] - Well I've never seen
+[3132] one, but okay, yeah.
+[3135] Whereas in our case, we don't
+[3137] have a separate product org,
+[3138] - [Professor] Right.
+[3139] - and so I mean this engineering manager,
+[3140] I mean there's a vast amount in that job
+[3143] even sort of leaving particular
+[3143] product decisions aside,
+[3145] because it's all the questions around
+[3146] how do we staff them and build them
+[3149] and execute them and operate them
+[3150] and all these kinds of questions,
+[3152] and so she is sort of fairly involved
+[3154] in the actual product decisions, as am I,
+[3158] but I think it avoids the
+[3158] kind of VP product issue,
+[3159] because even if there
+[3159] was zero product decision
+[3162] in the role, which there isn't,
+[3163] but even if there was zero,
+[3164] there's still a huge amount
+[3164] in all the other parts.
+[3166] - [Professor] Making things work, yeah.
+[3168] - Exactly.
+[3169] That's intersting.
+[3169] I wonder if that will, I wonder
+[3169] how long that will scale.
+[3171] It's a little bit unusual
+[3171] not to have them separate out
+[3174] some eventually, you get
+[3174] to some product scale.
+[3176] - Yeah, well, again, I think part of this
+[3178] comes to the fact, the way
+[3178] in which Stripe is different.
+[3180] We're building, not
+[3180] solely, but in large part
+[3184] for other engineers.
+[3185] - Right.
+[3186] - And so I think engineers
+[3186] can have excellent instincts
+[3187] for sort of what the
+[3187] right product to build is.
+[3189] - Yeah, yeah.
+[3189] - Whereas when you're trying to kind of
+[3191] empathize or put yourself in the shoes
+[3192] of some completely different kind of user,
+[3194] then perhaps kind of the impetus
+[3196] for a separate product org is greater.
+[3198] - Interesting.
+[3199] So you've done product exemption,
+[3202] and you've done new things,
+[3203] you did Connect, some other things.
+[3204] Have you launched products
+[3204] that you've killed?
+[3208] - I guess this is an availability bias
+[3210] in the ones that
+[3210] immediately come to mind but
+[3218] I don't,
+[3218] we haven't launched,
+[3218] well actually (laughs)
+[3222] part of what I think what's so difficult
+[3225] and feels so tragic when
+[3225] you're in the throes of it
+[3230] of sort of a fast-growing startup
+[3231] is that product innovation slows down.
+[3235] And you're like why would that be?
+[3237] I mean you guys launched with ten people,
+[3240] now we're 330 people, how
+[3240] could it possibly slow down?
+[3243] - [Professor] Right.
+[3243] - And I remember observing this
+[3245] even before I was kind of in it myself
+[3246] where for Airbnb and DropBox,
+[3249] and these other companies,
+[3250] it felt to me as a user that basically
+[3253] the product innovation slowed down.
+[3254] - [Professor] It stopped.
+[3255] - And I guess what happens is this kind of
+[3258] there's so much investment
+[3258] that's required.
+[3260] So one there's sort of investment required
+[3261] just to keep up with the growth, right?
+[3263] And so I mean the ten people who built
+[3265] kind of the original Stripe,
+[3267] they weren't capable of
+[3267] operating current Stripe.
+[3269] Operating current Stripe requires
+[3271] sort of all these resources, right?
+[3273] - [Professor] Yep.
+[3274] - But then additionally,
+[3274] you have to sort of,
+[3275] I mean because you're
+[3275] looking to do more things
+[3277] and both iteration of what already exists
+[3279] and build new things and so forth
+[3280] until you're learning to
+[3280] sort of walk and chew gum
+[3283] and juggle and tap dance
+[3283] and all these things
+[3284] kind of in parallel.
+[3286] And that requires hiring a lot of people.
+[3288] And then you have to
+[3288] train all those people
+[3291] and just kind of how the company works
+[3292] and the product works and all the rest,
+[3293] then they kind of have to all have learned
+[3295] in this emerging process of
+[3295] how to coordinate together,
+[3296] then actually relearn that several times
+[3298] because it sort of constantly shifting,
+[3299] there's this sort of dynamic equilibrium
+[3301] beneath them whatever,
+[3302] and so the net effect is that the product
+[3304] actually advances surprisingly slowly.
+[3306] I think the flip side of it is that
+[3308] when you come out of
+[3308] this if you do it well,
+[3311] then it's like stand back, right?
+[3313] Where it can be so fast,
+[3315] and I think Facebook is
+[3315] actually a good example
+[3317] of a company that sort
+[3317] of went through the slow
+[3319] and then really sped up.
+[3320] - [Professor] Yep.
+[3321] - But sort of the
+[3322] - [Professor] The mobile
+[3322] years, early mobile years
+[3324] were pretty hard.
+[3325] - Exactly but the rate
+[3325] of product improvement
+[3327] actually has been surprising shape.
+[3331] - And so and also you can measure
+[3333] in different axis in terms of
+[3334] sort of sustaining and improvement
+[3335] versus kind of new axes
+[3336] and orthotic improvement and so forth.
+[3339] And anyway, all of which to say
+[3341] we haven't launched all that many
+[3343] kind of discreetly new things,
+[3345] things you could conceivably
+[3345] then kill, I mean
+[3347] we've built little features
+[3347] and things like that
+[3349] that haven't worked out super well.
+[3351] We've tried experiments and
+[3351] so forth that haven't worked,
+[3353] but nothing kind of epochly kind of new.
+[3356] Although part of that also gets to I thnk
+[3358] how we build products,
+[3360] which is we, we're pretty, I mean, again,
+[3362] because we work with developers,
+[3364] and because they'll give
+[3364] you pretty good feedback,
+[3366] we often run ideas by them,
+[3368] we'll build a little beta,
+[3369] we'll test with them and so forth,
+[3371] then if they don't like it
+[3372] or if they don't think it's a good idea,
+[3373] then we'll kind of just
+[3373] stop working on it, right?
+[3374] And so by the time
+[3374] something gets to launch,
+[3376] it's generally gone through
+[3376] quite a bit of validation.
+[3378] The things that have been
+[3378] really launched launched,
+[3382] - [Professor] Pretty useful.
+[3383] - Exactly, yeah.
+[3384] - [Professor] Okay, so
+[3384] a couple more things.
+[3385] Oh, sure.
+[3386] - [Voiceover] Can you talk about any
+[3388] early acquisition offers you may have had?
+[3391] So we've always been pretty explicit
+[3394] like in the press and
+[3394] any meetings we've had
+[3397] and so forth that we're just
+[3397] not that interested in it,
+[3400] and so you can't be somewhat successful
+[3404] or well, to have been successful,
+[3407] sort of for any kind of thing,
+[3409] it's kind of hard for that to happen
+[3411] without all these potential acquirers
+[3412] just kind of I think sniffing around
+[3415] is kind of the right term.
+[3416] They don't necessarily
+[3416] have that much interest,
+[3417] but they're kind of interested.
+[3419] And also one tends to think of sort of
+[3422] potential acquirers or
+[3422] other companies in general
+[3424] as monolithic entities,
+[3425] and now coming back to the BD point,
+[3428] I think one of the critical realizations
+[3430] is that companies are composed
+[3431] of sort of a pretty diverse
+[3431] array of individuals,
+[3433] and you're not talking to a company,
+[3434] you're talking to a person.
+[3436] And you need to kind of
+[3436] really piece that apart.
+[3440] And so anyway, we never
+[3440] had any serious discussions
+[3442] with any acquirer in
+[3442] the history of Stripe,
+[3444] and we were sort of pretty quick
+[3445] to close off any kind of
+[3445] sniffing conversations,
+[3447] just because it wasn't
+[3447] what we were out to do.
+[3450] Actually there was one place where
+[3451] our prior company had
+[3451] kind of gone through this
+[3454] sort of talent acquisition,
+[3455] but we'd gone through
+[3455] an acquisition process,
+[3458] and I think that was kind of helpful
+[3460] in showing us kind of
+[3460] what that looked like,
+[3462] and it enabled us I think to be much
+[3464] I think clearer ourselves in terms
+[3466] of what we wanted.
+[3467] - Like once you've been
+[3467] through the acquisition process
+[3468] for a sort of okay company,
+[3471] it really encourages you
+[3471] to notice what's special,
+[3473] what's working in the place you're at,
+[3476] because it never quite
+[3476] works out the way you want,
+[3477] and it also just highlights like
+[3479] it's unusual for companies to be
+[3481] as special as Stripe or as special
+[3482] as other things, and when
+[3482] you find something like that,
+[3484] you really have it working,
+[3485] you really want to hold onto it.
+[3487] May I ask you a technology question?
+[3488] So I would view, I think you look around
+[3491] and say, well Stripe's
+[3491] probably the most modern
+[3493] payment stock today.
+[3495] So how do you, but you're also growing
+[3497] your customer base.
+[3498] Your customers don't necessarily want
+[3500] the most modern payment site,
+[3501] they want the one that's stable
+[3502] and the one that works,
+[3503] doesn't change all the time.
+[3504] And so how are you gonna think about
+[3505] technology change going forward?
+[3508] - (laughs) I think that
+[3508] is a great question.
+[3510] And it's something we're mindful of
+[3514] from the beginning in developing Stripe
+[3517] that you sort of have to
+[3517] build all these things
+[3518] and sort of invest in different ways
+[3522] to enable you to kind of innovate
+[3525] sort of without being problematic
+[3529] on that kind of other reliability axis.
+[3531] - Yep.
+[3532] - And so for example, we have this
+[3532] kind of really complicated
+[3532] versioning system
+[3534] for the Stripe API where sort of
+[3536] there are all these different sort of
+[3537] translation layers composed
+[3539] sort of help turn one API version
+[3541] into the prior one.
+[3543] - Wow.
+[3544] - So basically people can
+[3544] be on almost any version
+[3546] that we've had over the
+[3546] last couple of years,
+[3549] and everything works just fine.
+[3551] We recently went and depricated
+[3553] a Stripe API version from like 2010.
+[3555] That was kind of like a big deal for us,
+[3557] and we looked through and we're like
+[3559] three people still using it,
+[3561] so we're like, "All right, we
+[3561] can reach out to these people
+[3563] "and tell them we're no
+[3563] longer going to support it,"
+[3565] but sort of as a default matter,
+[3567] but see anything we ever released
+[3568] we're gonna sort of commit
+[3568] to keeping it to work,
+[3570] and that kind of required like.
+[3572] - [Professor] That's easy
+[3572] to say and fairly hard to do
+[3575] over a long term.
+[3575] - Well, exactly, it's been hard to do that
+[3576] and also enable you to sort of change
+[3578] lots of things, right?
+[3578] And that's kind of where this translation
+[3580] there kind of comes in,
+[3581] and so that's kind of an example
+[3582] of the kind of thing you have to do
+[3583] in order to enable that.
+[3584] But for us, it's a constant process
+[3586] of sort of of revisiting that, right?
+[3590] Because I mean you can
+[3590] have these two axes again
+[3593] of reliability and, I
+[3593] hate to say innovation,
+[3598] but innovation, and to, you're
+[3598] trying to expand them both,
+[3604] because you atually want to
+[3604] get more reliable over time,
+[3606] obviously, right?
+[3607] And also kind of the difficulty in being
+[3609] reliable over time just
+[3609] because more stuff increases,
+[3611] and you also want to be
+[3611] doing more things over time,
+[3613] and so I think I have a pretty good sense
+[3616] for where the right
+[3616] tradeoffs kind of being
+[3618] kind of a year ago but sort
+[3618] of in the current state today,
+[3622] it's something we're
+[3622] literally, and I was having
+[3624] this discussion last night
+[3624] with a group of people.
+[3627] And I will say that the general thing,
+[3630] and I think this is a
+[3630] testament to the engineers,
+[3632] I think Stripe is just
+[3632] one of the most reliable
+[3634] infrastructure providers
+[3634] just period, right,
+[3637] in that the total availability record
+[3643] for the APIs as a whole
+[3643] has been remarkably solid.
+[3648] And I don't know, I guess,
+[3648] I know I can write code
+[3651] and so this is no credit to me.
+[3652] - (laughs)
+[3653] - I don't know, I'm sort of impressed
+[3655] from a slight distance.
+[3657] - Okay so, I'll ask a
+[3657] couple management questions,
+[3658] and then we'll open it up.
+[3660] So you said 330 people,
+[3662] so well the dumb bar number's
+[3662] well in the rearview mirror,
+[3666] 150 people is over a year ago probably.
+[3669] So what do you do differently now,
+[3671] I mean you hired Claire as COO right?
+[3674] - That's right
+[3675] - What else do you do differently now
+[3678] than you would've done a year ago?
+[3679] And how do you think about this stage?
+[3681] - Yep
+[3682] - From a managing the company standpoint?
+[3685] - I think the big change,
+[3685] I'm sure other speakers
+[3692] have said this or well actually first
+[3694] I should preface everything I say here by
+[3696] I mean I guess it's, I
+[3696] feel like I'm sort of
+[3699] a bad person to be speaking on this stuff,
+[3700] because you have had or will have
+[3703] all these other speakers who
+[3704] have actually solved all these issues,
+[3706] and so you should
+[3706] discount everything I say
+[3709] with the fact that this is somebody
+[3711] who's currently trying
+[3711] to figure it all out
+[3713] and probably at least 50% optimistically
+[3716] of what I say is mistaken.
+[3718] But (laughs) at least I can.
+[3721] - [Professor] No comment.
+[3722] Pay close attention to
+[3722] what Patrick says though.
+[3725] - At least I can give you some bad ideas,
+[3727] you can kind of benchmark others against,
+[3729] but the big change, and the
+[3729] most stricking thing for me
+[3733] and maybe this partially
+[3733] comes from my personality,
+[3737] where I am kind of introverted,
+[3739] is the need for just formal
+[3739] explicit communication
+[3744] broadcast communication.
+[3746] And it feels sort of, I don't know,
+[3751] I mean it's unnatural, right?
+[3753] And nobody wakes up in the morning
+[3754] and sets out
+[3756] - [Professor] Speaks in bullet points.
+[3757] - Yeah, exactly, right?
+[3759] - [Professor] Three
+[3759] priorities for this morning.
+[3760] - Thought I'd give an
+[3760] update on our Q5 strategy,
+[3762] and so there's sort of a lot of that
+[3766] that just you have to
+[3766] learn to be okay with,
+[3768] and I think part of the
+[3768] way to rationalize it
+[3770] is that a startup itself is
+[3770] not a natural environment.
+[3773] So you're absolutely correct
+[3774] that sort of your natural instincts
+[3776] are going to, I mean, the optimal things
+[3779] for you to do are going
+[3779] to differ from what
+[3780] feels natural, because a
+[3780] startup itself is not natural
+[3782] the social groups that you're part of,
+[3784] that you participate in,
+[3784] they don't generally grow
+[3787] at 50% or 100% per year
+[3789] and kind of a different set of behaviors
+[3792] are required to enable that,
+[3794] and so that's kind of the primary one.
+[3797] And then
+[3799] - Let me have this again.
+[3800] So half the people at Stripe
+[3801] weren't there 12 months ago.
+[3804] Half.
+[3804] - Yeah, no, it blows my mind too.
+[3806] - So half the people, whatever your last
+[3807] annual offsite was or whatever it does
+[3809] didn't hear anything Patrick said
+[3811] in the dec he wrote a year ago.
+[3814] - Right and every discussion we had
+[3816] and debate and tortured sort of
+[3820] questioning and so forth,
+[3822] like they weren't there for that,
+[3823] and we might have spent months on this
+[3825] and sort of a new person comes and like
+[3827] "oh, I don't think we
+[3827] should be doing that,
+[3829] "we should be doing this," right?
+[3830] And of course they do have
+[3831] the very best of intent, and in fact
+[3833] a large part of that is what's good
+[3836] about hiring new people
+[3836] is they sort of help
+[3838] - [Professor] They reopen some things.
+[3839] - Exactly, they reopen things,
+[3839] they have a better sense
+[3839] for how to do things,
+[3841] they bring you perspective,
+[3841] sort of all that stuff, right?
+[3843] But they also just don't have the context,
+[3845] and so it's this very dogged
+[3845] sort of balancing act.
+[3849] - This is a profound realization
+[3851] that almost every good CEO goes through,
+[3853] which is they realize that their job
+[3855] is to communicate that you're running
+[3857] on a tighter loop inside your head
+[3860] than anywhere else, so
+[3860] you're learning all the time,
+[3861] all the time, all the
+[3861] time, and the organization
+[3864] one layer, two layers,
+[3864] three layers away from you
+[3866] can't absorb that change,
+[3868] and you can't communicate
+[3868] all of what you're thinking
+[3870] all the time, and so it's
+[3870] all about consistency,
+[3872] alignment, and so almost
+[3872] everybody I talk to
+[3875] values alignment the longer it goes.
+[3878] - Sure, yeah, and also again I think
+[3880] there's sort of a delicate
+[3880] sort of superposition of things
+[3884] - [Professor] Sure.
+[3885] - required there where on the one end,
+[3886] yes, you want alignment,
+[3887] on the other hand, you have to consider
+[3889] the company as sort of overly rigid
+[3891] or prescriptive or whatever.
+[3895] That's going to be problematic.
+[3896] That's the kind of thing that makes people
+[3898] want to quit companies,
+[3898] because their particular perspective
+[3900] or the thing that they want to do
+[3902] is divergent from this calcified edifice
+[3905] that is the company, right?
+[3907] And so it's sort of how do you have
+[3908] the right amount of
+[3908] structure and flexibility
+[3912] and all those things.
+[3913] - Yep, my two cents are you're trying
+[3914] to teach people how to
+[3914] think in the right ways,
+[3916] and you're trying to teach people,
+[3917] you're trying to create a condition
+[3919] so that they would make roughly
+[3920] the same decision whether
+[3920] you're in the room or not.
+[3924] - Yeah, well.
+[3924] - That's a little, even
+[3924] that's a little stringent.
+[3926] - And caveat with I'm
+[3926] definitely not the right person
+[3931] or the optimal person to be making
+[3932] all kinds of decisions.
+[3933] In fact I'm the optimal
+[3933] person to be making
+[3934] a decreasing fraction of decisions, right?
+[3937] And so it's not precisely to do
+[3939] what I would do were I in a room,
+[3940] but I don't know, some
+[3940] version of like, well, yeah.
+[3946] - [Professor] The Stripe.
+[3947] - Yeah, there is sort of in
+[3947] the multi-dimensional space
+[3953] of philosophies and kind of perspectives,
+[3958] there's kind of a Stripe blob basically.
+[3961] - [Professor] Right.
+[3962] - And sort of I maybe am closer
+[3964] to its center of mass than others
+[3965] because I've been around longer
+[3966] and have a bit more influence,
+[3967] but it is distinct, and it's shifting,
+[3968] and it ought to shift
+[3968] and that sort of thing.
+[3970] - That's not what you expected him to say.
+[3971] Multi-dimensional philosophical space
+[3973] where Stripe blobs.
+[3975] - The Stripe blob, right.
+[3976] I think it really has a ring to it.
+[3978] - [Professor] It's gonna go far.
+[3979] - Well a corolary of that in terms of just
+[3981] the kind of the explicitness required,
+[3982] I think the kind of more general version
+[3984] of it is that just you
+[3984] should generally shift
+[3987] from speaking to writing.
+[3990] - Oh, you think that?
+[3992] - Yes.
+[3994] - Why?
+[3995] - Or rather, it's not that
+[3995] you should necessarily
+[3997] speak less, you should
+[3997] probably still speak, right?
+[4001] But or at least I think so,
+[4001] I don't know if anyone else
+[4004] thinks so, but that you
+[4004] need to add writing, right?
+[4010] Because speaking can
+[4010] kind of only happen once
+[4013] and generally not to everyone
+[4015] or it probably becomes super boring
+[4016] if it's to everyone, right?
+[4017] It's this giant production.
+[4019] Whereas writing persists
+[4019] through time, right?
+[4024] And can be revisited and
+[4024] can be updated and so forth
+[4028] and also has a helpful, at
+[4028] least in the good cases,
+[4031] sort of rigidity and clarity to it.
+[4033] And so one of my favorite
+[4033] things I realized
+[4038] or just ones that have
+[4038] the biggest impact on me
+[4041] over the last maybe two years
+[4043] was I think this paper from I think it was
+[4047] Bruno Latour, and he was talking about
+[4049] the scientific revolution, right,
+[4052] and the invention of writing,
+[4055] and we've all heard that sort of
+[4057] that writing and the inventing
+[4057] of the printing press
+[4059] was sort of critical in enabling it,
+[4061] basically Gutenburg, scientific
+[4061] revolution, job done,
+[4066] and his argument that he
+[4066] goes that it was actually
+[4068] more complicated or nuanced than that
+[4071] where it's not that sort of
+[4071] writing or the printing press
+[4074] sort of per se enabled more distribution
+[4075] which automatically led to more ideas,
+[4076] because people still
+[4076] talked a lot previously,
+[4080] and people had a pretty good sense
+[4082] for the total space of ideas,
+[4083] and so simplistically the printing press
+[4087] could come along,
+[4088] it doesn't substantially change things,
+[4089] but the additional property
+[4092] beyond just kind of dissemination
+[4093] that it added was concreteness
+[4097] and kind of rigidity.
+[4098] And so when you're hearing something
+[4100] from a friend of a friend of a friend
+[4101] recounting something
+[4101] that happened a year ago,
+[4104] God knows how much it's
+[4104] shifted and changed.
+[4107] And because it's not really rigid,
+[4109] it's this just, again, amorphous blob.
+[4112] It's hard to disagree with it,
+[4114] because who knows exactly what they said,
+[4116] and so it's hard to weed out
+[4117] and reject the bad ideas,
+[4117] whereas when it's writing,
+[4120] you can point to paragraph
+[4120] three, sentence two,
+[4123] this is wrong, it does
+[4123] not match my data, right?
+[4125] It's actually that aspect
+[4125] that was so critical.
+[4127] So anyway, going back to
+[4127] sort of the writing version,
+[4130] I think that it's just,
+[4130] it's much more clear,
+[4133] and it can be wrong, and it can be updated
+[4136] in a way that I think is really helpful.
+[4138] - That is super interesting.
+[4140] I could talk about that a lot.
+[4141] I feel like the way you communicate
+[4143] really shows through in
+[4143] your product a lot of times.
+[4146] Like we communicate in Bugs and
+[4148] Bugzilla and Mozilla, and it created very,
+[4150] well anyway, a lot of
+[4150] artifacts get created.
+[4154] So let's do questions.
+[4156] You had a question?
+[4157] - [Voiceover] Sort of related
+[4159] but you could also make the argument
+[4160] that interpretation really
+[4160] just as open to change.
+[4163] It's not actually permanent.
+[4164] (inaudible)
+[4167] - What?
+[4168] - [Voiceover] The point that writing is
+[4169] really always open to reinterpretation
+[4171] so it's the same as (inaudible)
+[4172] the fact that its (inaudible)
+[4177] is what makes it so misunderstood.
+[4179] - So the question is just that writing is,
+[4181] like Latour, the guy that
+[4181] Patrick quoted, would've said
+[4186] that writing is always
+[4186] rife for reinterpretation,
+[4188] but I think Patrick's making the point
+[4189] that it's just simply more rigid
+[4190] than just spoken.
+[4191] - Sure, right, right.
+[4193] - It's on a spectrum, right?
+[4194] - Yes.
+[4197] That sounds like it might be.
+[4199] Next version of the class,
+[4201] I guess we can read the
+[4201] Latour, deep, deep dive.
+[4205] - Couple philosophical blob questions.
+[4206] Yeah.
+[4207] - Yeah, you mentioned that
+[4207] you picked the name Stripe
+[4208] just by random.
+[4210] Can you talk about that?
+[4211] - Yeah, so this is also
+[4211] an embarrassing story.
+[4216] It's kind of a helpful
+[4216] exercise in humility,
+[4220] because to just remind you of
+[4226] just how mistaken your past self could be
+[4228] or wrong.
+[4230] So anyway /dev/payments,
+[4233] we thought was a super awesome cool name,
+[4236] the world didn't quite agree,
+[4238] and when we went to incorporate
+[4239] with Delaware, we duly filled out
+[4244] /dev/payments on the paperwork.
+[4245] It was rejected because,
+[4245] we had actually checked,
+[4248] can you have a slash in
+[4248] the name, and you can,
+[4249] but you can't have a leading slash,
+[4251] and so but of course being
+[4251] determined entrepreneurs,
+[4255] we overcame that, and we incorporated it
+[4257] as S-L-A-S-H D-E-V S-L-A-S-H.
+[4260] It was really bad.
+[4261] And then we'd get mail where it was like
+[4263] S-L-A-S-H slash character D-E-V, S, yeah.
+[4267] There were many problems with this name.
+[4269] - (laughs)
+[4270] - And then you'd have to go
+[4273] and have a meeting with a bank,
+[4274] and they're like all right,
+[4274] and now, the last question,
+[4276] it's kind of like, "Oh,
+[4276] what's the company called?"
+[4278] And basically everything fell to pieces.
+[4279] (laughter)
+[4281] So we, you wonder why we
+[4281] couldn't work with Wells,
+[4283] but we kind of eventually came to realize
+[4287] that we needed to change the name,
+[4288] and we just couldn't come up
+[4288] with a good name, you know?
+[4291] I guess many people
+[4291] have been through this.
+[4293] And it basically resorted to us,
+[4295] we have all these books in the office,
+[4297] and just like opening books
+[4297] and being like, you know,
+[4301] actually one of them was a
+[4301] motorcycle repair manual,
+[4302] because John was riding motorcycles,
+[4304] and so we were like "Carburetor, hmm,
+[4305] "no, probably too hard to spell,"
+[4307] and so you'd flip another few pages,
+[4309] and just like, "Wheel,
+[4309] no that's a bit generic."
+[4311] (laughter)
+[4312] And so we literally reduced to picking
+[4314] random words late at night,
+[4316] and then one of the folks at Stripe
+[4318] had the bright of idea of
+[4320] well why don't we just assemble
+[4321] like a big list of words and email
+[4323] all of the owners of the dot com domains,
+[4325] just kind of see if the words
+[4326] are actually available
+[4326] to just kind of reduce
+[4328] our search space a little bit,
+[4330] and so we assembled a list
+[4331] of like 100 words that all seemed like
+[4332] generally cromulent words
+[4334] and just emailed all the owners,
+[4338] and only 10% of them responded,
+[4339] and of those 10%, most of them wanted
+[4342] millions of dollars to have a right.
+[4344] And so we assembled a
+[4344] partial list that way,
+[4346] and then we also just kind of continued
+[4348] our own creative process
+[4350] which we already established was awesome,
+[4352] and so we came up with memorable names
+[4354] like Pay Demon.
+[4358] And so um.
+[4358] - [Professor] With an A, undoubtedly.
+[4360] - We bought both versions, yeah,
+[4361] we still own both versions actually.
+[4364] And you can do a who is on paydemon.com?
+[4367] And so we thought it
+[4367] was like super clever,
+[4370] because we could have this awesome mascot,
+[4372] although maybe BSD confusion issues,
+[4375] and yeah, well, it was great.
+[4379] Oh and we also had, we really liked
+[4381] the idea of building things,
+[4383] and so the act of creation and so forth,
+[4385] and so we were kind of
+[4385] enamored with Pay Forge,
+[4390] this kind of blacksmith idea,
+[4393] and then of course a friend pointed out
+[4394] the other connotations.
+[4396] (laughter)
+[4397] Like ah, good point.
+[4398] And so we were really struggling,
+[4401] and so we, anyway, the owner of stripe.com
+[4405] generously responded to us
+[4407] and had an offer that was at least
+[4411] within our plausible budgetary range,
+[4413] but we couldn't decide
+[4415] between Pay Demon and Stripe.
+[4419] I swear I'm not making this up.
+[4422] And this is the part where
+[4422] kind of the humility comes in,
+[4424] it's like "Jesus Christ!"
+[4425] So we decided that if we could not
+[4428] settle on a name by I think
+[4428] it was December 20, 2011,
+[4432] we would just like, was
+[4432] it, no 2010, December 2010,
+[4438] we would just default to Stripe.
+[4441] And we couldn't think of
+[4441] a more compelling name
+[4444] by December 20, and so Stripe it became.
+[4448] And then we sort of, the
+[4448] second part of the story
+[4451] is we, I mean we hadn't
+[4451] launched at this time, right?
+[4455] But we had sort of a
+[4455] handful of beta users,
+[4458] and we kind of, we were
+[4458] going through the name,
+[4460] the rename checklist, right?
+[4461] And so you had to like
+[4462] buy new SSL certs and
+[4462] move all the servers,
+[4464] and rejex gsub over the code base
+[4467] and all this stuff, right?
+[4468] Redo the images, like a lot
+[4468] of stuff to change a name,
+[4472] and somehow we neglected
+[4472] one of like tell the users,
+[4476] and so all these people,
+[4476] I mean all these people
+[4478] being like ten of them,
+[4478] but all these people
+[4480] went to log in to their
+[4480] /dev/payment accounts
+[4482] one morning and were redirected to Stripe,
+[4484] so we got a few emails like,
+[4485] "Am I being phished?" or whatever,
+[4487] but we reassured them, and that was that.
+[4490] And actually the very last kind of detail
+[4493] in that story is I was reading
+[4494] The Little Kingdom by Mike Moore,
+[4496] it's this kind of history of Apple,
+[4497] and apparently Apple went through
+[4498] sort of a similar thing
+[4499] where they couldn't think of a good name,
+[4500] and so they set out
+[4500] sort of a same time-out
+[4502] we haven't found a better name
+[4503] by such and such a date, screw it, Apple.
+[4506] And so we subsequently
+[4506] learned of some precedent.
+[4510] - One more question.
+[4512] Yep so here.
+[4514] - [Voiceover] Can you
+[4514] talk about your transition
+[4516] from a developer, someone who's technical,
+[4518] someone who's worked on
+[4518] the product, to a manager?
+[4521] - Yes.
+[4523] So it still pains me
+[4523] a little bit honestly,
+[4526] in that I really miss coding,
+[4528] and so I know, I often get this question
+[4530] of do I miss it or not
+[4532] and what does that feel like
+[4533] and just the short
+[4533] answer is yes, I miss it.
+[4543] I guess so many things then to say about
+[4545] the ensuing transition
+[4545] to both being a leader
+[4548] and a manager and so forth.
+[4550] And some level it reduces to I guess
+[4552] kind of how do you run a company
+[4553] and a lot of things to be said there.
+[4558] I think just one thing I'll sort of flag
+[4561] is that in general, I think sort of
+[4566] the industry, both kind of overbiases
+[4570] towards founders, but also towards CEOs
+[4574] in that I guess we all sort of have this
+[4578] kind of narrative bias or something
+[4580] where we want to associate
+[4580] kind of abstract concepts
+[4586] like a company with particular people,
+[4588] and so kind of like I am
+[4588] the shelling point of Stripe
+[4591] in being the CEO,
+[4593] but the degree to which
+[4593] I am sort of sitting here
+[4598] representing Stripe, I
+[4598] am sort of in general
+[4599] in aggregate sort of
+[4599] vastly over-represented
+[4601] relative to everyone else.
+[4604] And so I guess to kind
+[4604] of follow that thought,
+[4609] I think that sort of it's not so much
+[4610] my transition to management or whatever,
+[4612] it's kind of a lot of people at Stripe
+[4614] sort of collectively transitioning
+[4615] to running an organization
+[4617] in sort of a pretty large skeleton there.
+[4620] Actually one of the sort of
+[4622] the very clarifying realizations for me
+[4625] was Ali Roghani comment that basically
+[4627] the CEO's job can be reduced
+[4629] to just three things or possibly four
+[4633] and that everything that's not
+[4634] one of those three or
+[4634] again it's actually four,
+[4637] is out of scope, and that
+[4637] the three that he identified
+[4641] were the strategy and kind of ideally
+[4644] if the strategy is right,
+[4644] that doesn't require
+[4647] much well-thought time
+[4648] because you just keep
+[4648] doing the same thing.
+[4652] And secondly the culture,
+[4652] because there's no
+[4653] other person who can do it.
+[4656] Or there's no person who can do it to
+[4657] the same degree, right,
+[4660] who encompasses the same model authority.
+[4663] And then the third one being
+[4667] sort of selecting the senior
+[4667] management of the company,
+[4671] because, again, no one else can do that,
+[4674] and those people will ideally be sort of
+[4676] the main experts who
+[4676] know far more than you
+[4679] and are much more effective
+[4680] in sort of particular areas,
+[4681] but you have to hire, select them,
+[4684] ensure that they're effective,
+[4684] everything else, right?
+[4686] And so in his kind of
+[4686] ontology, like that's it.
+[4689] That's the job.
+[4690] - [Professor] That's pretty close.
+[4693] - It's easy if you get it right.
+[4695] It's obviously incredibly hard,
+[4696] I mean how can you fix a broken culture
+[4698] or how does one sort of in the abstract
+[4700] come up with a good strategy,
+[4701] I mean the really hard sort of
+[4702] when they're not working,
+[4704] but when they're working,
+[4704] it can go pretty smoothly.
+[4707] And then the fourth one which he described
+[4710] as being optional, is the product, right,
+[4713] basically the CEO can
+[4713] be the head of product.
+[4716] And maybe even that varies
+[4718] depending on the company,
+[4719] that the CEO can also be involved
+[4721] with sort of one specific function, right?
+[4723] And maybe it's some company's CEO
+[4726] is also the head of sales.
+[4727] I think that's probably sort of
+[4728] a little bit kind of simplistic
+[4729] and kind of reductionist and so forth,
+[4731] although maybe I'm just trying
+[4732] to make myself feel better or something,
+[4734] but sort of that was one of the most
+[4738] helpfully clarifying things
+[4739] that I kind of heard
+[4739] about that transition.
+[4741] - Okay, I think we're done for the day.
+[4743] I mean maybe Patrick can stay
+[4744] for a couple minutes,
+[4745] but we should let him go too.
+[4747] So anyway, thanks for class,
+[4748] and we'll see you all on Thursday.
+[4749] - Okay, thanks for having me.
+[4750] (applause)

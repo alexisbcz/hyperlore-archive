@@ -1,0 +1,2636 @@
+[0] Le pari de Dust, c'est de penser qu'il y
+[1] a énormément de potentiel à faire
+[3] circuler l'information mieux entre les
+[5] ingénieurs et les sales. Est-ce que Dust
+[7] a encore une chance de devenir un des
+[8] grands de de l'IA en commençant en ?
+[10] Les outils verticalisés sont beaucoup
+[11] plus faciles à vendre. Vendre à une
+[13] équipe de sales un outil qui va
+[14] automatiser ou accélérer une partie du
+[17] processus de sales.
+[17] Et en Vici, je me rappelle que c'était
+[19] l'entreprise dont tout le monde parle,
+[20] il y avait même des articles de vous
+[21] autour de seed le plus hot de Paris.
+[24] Le contexte a énormément d'importance.
+[26] Je pense que le pari qu'on fait, c'est
+[27] que construire son propre LLM
+[28] aujourd'hui, ce n'est pas une bonne idée
+[30] quand on n'est pas un labo fondamental.
+[32] Et d'ailleurs Stan dira toujours "You
+[34] know GPUs before PMF".
+[36] La partie gratuite disait des trucs
+[37] super sympa.
+[38] Dust doit être une plateforme
+[39] intéressante.
+[40] Dust dans 5 ans fera une grosse partie
+[41] de son revenu euh
+[43] Dans 2 ?
+[43] Dans 2 ans. C'est la question que tous
+[45] les Vici à qui j'ai parlé ces 2 ans
+[46] m'ont posé.
+[47] Ouais, pas de secret.
+[50] Et ben bonjour à tous et bienvenue pour
+[51] ce 3e épisode de Founder Frequency. Donc
+[54] aujourd'hui, j'ai le plaisir de recevoir
+[57] Gabriel Hubert qui est le CEO et
+[59] co-fondateur de la startup Dust. Euh
+[63] donc en quelques mots, Dust pour ceux
+[64] qui ne connaissent pas, c'est
+[66] une des startups qui ont énormément de
+[68] momentum avec tout ce qui se passe en
+[70] France et puis dans le monde en ce
+[72] moment sur sur l'IA et en plus plus
+[74] particulièrement sur sur l'IA
+[75] générative. Alors Stan, tu vas nous en
+[78] dire plus mais Dust a été créé en
+[80] quelques chiffres il y a 2 ans. Euh vous
+[83] comptez
+[84] une vingtaine de une vingtaine de
+[85] salariés. Vous avez levé deux tours de
+[88] table qui ont été menés par par Sequoia.
+[90] Euh dont notamment le premier que je
+[93] pense on pourrait qualifier de tour de
+[95] seed le plus hot de de Paris. Euh et en
+[99] Vici, je me rappelle que c'était
+[103] avant que la levée de la levée de fonds
+[104] soit soit faite. C'était assez dingue.
+[107] Donc je sais pas comment vous l'avez
+[108] vécu peut-être sur cet épisode de
+[109] l'intérieur.
+[110] En fait, c'était c'était ? C'était
+[111] quelques semaines après la sortie de
+[113] chat GPT début 2023.
+[115] Et euh et toi et ton co-fondateur,
+[118] vous décidez de vous lancer là-dedans,
+[119] vous êtes peut-être une des premières
+[120] start-up de l'IA générative qui va lever
+[121] en en France avec des profils de
+[124] fondateurs
+[124] Ouais, Stan avait quitté Open AI à la
+[126] fin de l'été et il travaillait sur des
+[129] prototypes sur le la zone de problème
+[131] qui était comment est-ce qu'on fait pour
+[133] faire le pont entre ces modèles qui sont
+[135] très puissants mais dont tout le monde
+[137] va pas réussir à comprendre comment s'en
+[139] servir et les cas d'usage concrets.
+[141] Et la première version de Dust c'était
+[143] une plateforme vraiment tournée vers les
+[145] développeurs qui permet d'or- qui
+[146] permettait d'orchestrer des applications
+[148] LLM.
+[149] Et tout ça c'était un peu chinois pour
+[150] moi il y a 2 ans mais l'idée c'est de
+[152] pouvoir avoir des blocs qui sont des
+[154] LLM, des blocs de code, des blocs
+[155] arbitraires pour une exécution de
+[157] workflow assez complexe.
+[159] Et il a décidé de faire assez
+[160] publiquement et donc il communiquait pas
+[162] mal sur Twitter ce qu'il faisait au fur
+[164] et à mesure et je pense que ça a créé un
+[165] peu d'intérêt. De l'intérieur, on a pas
+[167] forcément vu grand-chose, je pense que
+[168] l'article des Echos qui était
+[170] intéressant et
+[171] la partie gratuite disait des trucs
+[173] super sympas, la partie payante
+[175] disait des trucs un peu moins sympas
+[176] mais du coup comme la plupart de mes
+[177] amis payaient pas pour les Echos, ils
+[178] étaient ah super article dans les Echos.
+[180] Est-ce que ça disait quoi la partie
+[181] gratuite de la partie ?
+[182] La la partie gratuite c'était que les
+[183] gens parlaient un peu de nous et la
+[184] partie payante c'était qu'il y avait
+[185] certaines personnes qui disaient qu'on
+[187] avait snobé
+[189] des des investisseurs,
+[190] rien snobé mais c'était il y avait juste
+[192] beaucoup d'emails dans le dans l'inbox
+[194] de Stan et il avait décidé de on avait
+[196] décidé d'aller assez vite.
+[197] Trop bien. On aura on aura l'occasion
+[199] d'en reparler mais
+[200] peut-être du coup pour reprendre les
+[201] choses dans l'ordre, pour commencer
+[202] Gabriel, est-ce que tu peux te ?
+[205] Oui, bien sûr. Je m'appelle Gabriel,
+[207] j'ai 40 ans, je suis euh
+[209] bientôt papa pour la première fois, ça
+[211] va arriver dans 10 jours donc ça c'est
+[213] un peu le truc qui m'occupe le plus en
+[214] ce moment
+[216] et je travaille à Dust depuis 2 ans, on
+[218] a monté la boîte ou on a incorporé la
+[219] boîte en février 2023. Avant ça, j'étais
+[222] Chief Product Officer chez Alan et avant
+[224] ça j'ai travaillé chez Stripe pendant 5
+[226] ans. J'avais rejoint Stripe avec Stan,
+[228] mon associé d'aujourd'hui, via
+[229] l'acquisition de notre start-up qui
+[231] s'appelait Totems en 2014, fin 2014.
+[235] Voilà, donc carrière assez
+[238] tech, parcours avant en France, études
+[241] d'ingénieur et puis après j'ai fini mes
+[243] études à Stanford
+[244] hum
+[245] en
+[246] en même temps que Stan en fait.
+[248] Et donc tu finis tes études et tu
+[250] décides de monter directement avec Stan
+[252] ?
+[253] Pas de tout de suite hum et Totem c'est
+[255] le dernier nom du 3e pivot de la boîte.
+[258] OK.
+[259] Non on a tous les deux un peu travaillé
+[261] un peu un peu moins d'un an hum avant de
+[263] se dire que ça valait quand même le coup
+[264] d'essayer quelque chose et puis on a
+[266] démarré je dirais en 2010 2000 fin 2010.
+[269] Hum on a on est tombé amoureux d'une
+[272] technologie, on savait pas comment la
+[273] vendre, après on s'est dit qu'on pouvait
+[274] la vendre, on savait pas comment la
+[275] distribuer, après on s'est dit qu'on
+[276] pouvait la distribuer, on savait pas
+[277] comment la marketer, on a fait plein de
+[278] bêtises
+[279] et à la fin on a trouvé un marché sur
+[281] l'analyse à grande échelle de données de
+[284] photos générées par des utilisateurs
+[287] avec user generated content à l'époque.
+[290] A l'époque Instagram avait 80000 ou
+[292] 100000 utilisateurs. C'était le tout
+[293] début. Ouais, c'était le début de cette
+[294] vague-là et on permettait à des
+[296] annonceurs ou à des agences ou à des
+[298] analystes de récupérer de la donnée sur
+[299] qui prenait des photos de quoi où dans
+[301] le monde et à quel moment, voilà.
+[303] Et donc vous aviez de la technologie qui
+[304] permettait de comprendre typiquement ce
+[306] qu'il y avait dans une photo pour être
+[307] capable de d'exploiter au mieux cette
+[309] donnée pour des annonceurs ?
+[311] Non.
+[312] Non, c'était pas ça.
+[312] Mais je pense qu'il y a une petite leçon
+[314] qu'on a pu réappliquer à Dust aussi,
+[316] c'est que à l'époque
+[319] la vision machine c'était cher, c'était
+[322] lent et c'était pas forcément toujours
+[324] parfait mais les applications qui
+[327] généraient ces photos étaient un peu
+[328] nouvelles et par rapport au contenu
+[329] qu'on retrouvait sur Internet, il y
+[330] avait énormément de métadonnées qu'on
+[332] pouvait exploiter, qu'on pouvait au
+[333] préalable pas exploiter. Donc nous on
+[335] s'appuyait surtout sur les métadonnées
+[337] hum quand est-ce que la photo avait été
+[338] prise, avec quel appareil, à quel
+[340] moment, où dans le monde, quels étaient
+[341] les commentaires, quels étaient les
+[342] commentaires en dessous du commentaire
+[344] initial.
+[345] Et c'est ces données-là qu'on utilisait
+[346] pour recouper et comprendre un peu ce
+[347] qu'il y avait pu être partagé.
+[349] Et voilà.
+[350] Et vous vendiez ça du coup à des à des
+[352] Bon, on a vendu à un peu tout le monde.
+[354] Yoko Ono a fait un projet où elle
+[356] voulait récupérer des sourires du monde
+[357] entier pour les afficher sur Times
+[359] Square. Donc on a travaillé avec Yoko
+[361] Ono, on a travaillé avec beaucoup
+[362] d'annonceurs en fait qui essayaient de
+[363] comprendre euh ce que les gens disaient
+[366] de leurs produits en ligne. Et c'était
+[368] le tout début du marketing
+[370] d'influenceur. Et la la le produit Totem
+[373] c'était en fait une plateforme de
+[375] d'analyse de d'audience et d'engagement
+[377] qui permettait de faire un peu le money
+[379] ball de l'influenceur marketing. Donc au
+[382] lieu de trouver les influenceurs les
+[383] plus connus qui allaient demander des
+[384] prix exorbitants, on pouvait recréer une
+[386] audience avec des caractéristiques
+[387] arbitraires et à des prix plus
+[390] compétitifs. Voilà.
+[393] Et donc vous vendiez pas ça vous vendiez
+[394] ça en en en ? En c'était un SAS ou un ?
+[398] En abonnement qui permettait d'avoir
+[399] énormément de données sur tout ce qui
+[400] était généré sur Instagram.
+[401] Exactement et les autres plateformes
+[403] mais surtout Instagram en fait qui a
+[405] décollé à ce moment-là quoi. Et il y
+[406] avait des noms qu'on a oubliés
+[407] maintenant et PicPlease, Mobli, voilà
+[408] plein d'applis qui étaient aussi à la
+[410] mode qui essayaient de se battre pour ce
+[411] créneau-là qu'Instagram a dominé.
+[413] Et et et donc du coup le le donc vous
+[415] êtes il y a une acquisition qui
+[416] intervient auprès de de Stripe. Au
+[417] moment de l'acquisition, vous en êtes où
+[419] dans l'histoire de ? Vous êtes ? Vous
+[422] avez vous êtes à quel
+[423] une grosse dizaine.
+[424] Euh on avait déménagé Stan et moi aux
+[427] États-Unis au début au printemps 2014.
+[430] Et je pense qu'on était un peu en
+[432] recherche de ce qu'on allait faire pour
+[433] la suite. On avait levé un tour de seed,
+[434] on avait pas encore levé la série A. On
+[436] comprenait que le modèle de SAS pour de
+[438] l'influenceur marketing avait du du
+[440] potentiel mais on était tous les deux un
+[442] peu tombés dedans par hasard en suivant
+[444] les chevaux de laine de la technologie
+[445] qui nous intéressaient. Sans
+[447] nécessairement avoir une grande vision
+[449] ou une passion pour le sujet. Donc au
+[451] moment de se poser la question de lever
+[452] des fonds supplémentaires, ce qu'on
+[453] était en train de faire on était en
+[455] discussion euh à San Francisco. Euh je
+[458] pense qu'on a tous les deux pour pour
+[460] raisons différentes un peu exprimé le
+[461] fait que c'était pas nécessairement ce
+[462] qu'on voulait ou ce qu'on ce qu'on se
+[463] voyait faire pendant les 10 ans à venir.
+[465] Et on a reçu une offre d'acquisition de
+[468] Pinterest pour créer les buyable pins,
+[472] donc les pubs sur Pinterest, puisque
+[473] évidemment la technologie était assez
+[475] adaptable. Et finalement on a été
+[477] demandé des conseils aux fondateurs de
+[479] Stripe qu'on connaissait sur ce qu'il
+[481] fallait qu'on fasse de ça et ils nous
+[483] ont dit "Mais si vous êtes en train de
+[484] vous poser la question d'arrêter
+[485] l'aventure, pourquoi est-ce que vous ne
+[486] rejoignez pas ?" Voilà.
+[487] Et alors c'était quoi la logique pour
+[488] Stripe d'acquérir
+[490] une entreprise
+[491] Ouais, c'était un peu l'époque des des
+[492] acquire hire, donc c'était la logique de
+[495] garder une équipe assez qui se faisait
+[498] confiance et qui avançait assez vite
+[500] pour pouvoir l'intégrer dans le produit.
+[501] Donc le produit en lui-même n'a pas été
+[503] utilisé par Stripe.
+[504] D'accord, OK. Et l'acquisition
+[506] je peux te demander combien quel était
+[507] le le ? C'était public ?
+[509] C'était pas public, c'était
+[511] c'était un peu plus que le dernier tour,
+[513] donc c'était pas forcément énorme, mais
+[514] c'était en action Stripe.
+[516] D'accord.
+[517] Et
+[518] et avec du coup l'idée que l'équipe de
+[520] 10 principalement d'ingés que vous étiez
+[523] puisse aller travailler chez Stripe,
+[524] garder la même équipe, la même structure
+[525] pour aller travailler sur des produits
+[528] d'imaging d'analytics pour pour Stripe.
+[530] Ouais, c'était ça le deal et en gros
+[532] c'était un moment un peu tendu où il
+[534] fallait négocier un deal avec des
+[536] conditions
+[537] de
+[539] d'accepter enfin que que l'équipe soit
+[540] acceptée sans nécessairement que tout le
+[541] monde puisse être interviewé parce qu'il
+[542] y en avait qui étaient en France.
+[544] Et finalement en fait l'équipe, à part
+[546] Sacha et moi, a décidé de prendre le
+[550] cash et de créer pas mal de enfin de
+[552] faire pas mal d'autres projets assez
+[554] intéressants depuis quoi. Il y en a qui
+[555] sont
+[556] Il y en a qui ont monté Dynamo,
+[558] le concurrent de SoulCycle en France.
+[560] Il y en a qui ont rejoint BlaBlaCar en
+[562] PM, The Fork en ingénieur.
+[566] Il y en a un qui a rejoint une toute
+[567] petite start-up qui faisait de la
+[569] messagerie via IA pour les adolescents
+[572] qui s'appelait Hugging Face et qui est
+[573] devenu un des leaders d'infrastructure
+[574] de Hugging Face.
+[575] Énorme.
+[576] Donc donc petite diaspora de Totems
+[579] a eu la chance de pouvoir rester dans la
+[580] tech.
+[581] Trop bien. Et euh
+[583] hmm
+[583] et donc euh Stripe, finalement, ensuite
+[587] tu vas y passer euh plusieurs années. Tu
+[589] vas rester aux ?
+[590] Ouais. Ouais ouais, on a commencé, on a
+[592] fini à San Francisco. Donc quand on est
+[593] arrivés dans l'équipe, c'était un peu
+[594] plus de 100 personnes.
+[595] Donc plutôt un bon plan en fait d'avoir
+[597] récupéré des actions Stripe à l'époque,
+[599] j'imagine, vu le vu la trajectoire qu'a
+[601] eu Stripe après, c'était peut-être un
+[602] meilleur deal que que de recevoir du
+[604] cash.
+[605] Euh hmm
+[606] on verra quand on verra quand Stripe
+[608] sera public.
+[609] C'est toujours pas liquide, ouais, c'est
+[610] toujours pas liquide, effectivement.
+[611] pas euh totalement liquide, mais
+[613] euh une une expérience incroyable,
+[614] ouais.
+[615] Et donc vous avez toujours vous avez
+[616] toujours vos actions Stripe ou vous avez
+[617] pu quand même en Enfin, il y avait un
+[618] peu de secondaire possible
+[620] Il y a eu des Il y a eu des Il y a eu
+[621] des opportunités de secondaire au fur et
+[623] à mesure, ouais. C'était intéressant
+[624] d'ailleurs parce que je pense que Stripe
+[625] était en train de d'écrire le playbook
+[626] de la façon dont on fait du secondaire
+[628] quand on décide de rester privé plus
+[629] longtemps.
+[629] Ouais.
+[630] Et c'est un certain nombre de normes ou
+[632] de ouais qui ont été appris euh ou enfin
+[634] reprises de pied, ouais.
+[636] Ouais, mais il y a une vraie question,
+[636] est-ce que Stripe va se coter
+[638] publiquement un jour, ? Quel est quel
+[640] est ? Parce que j'ai écouté un podcast
+[641] du fondateur de Odoo, qui lui qui est un
+[643] Belge, que tu connais peut-être, qui est
+[644] un gros ERP, et qui lui du coup veut
+[647] racheter des chères, mais ne veut jamais
+[649] euh ne veut jamais se coter, il veut
+[650] toujours avoir le le contrôle. Et en
+[651] fait
+[652] comme il y a de plus en plus de de
+[654] liquidité avec avec des tours de plus
+[656] enfin tu peux tu peux rester de plus en
+[657] plus tard privé. C'est une vraie
+[659] question sur ce sujet.
+[661] Et c'est une question intéressante parce
+[663] que la façon dont Stripe décide de se
+[664] comporter aura une influence sur la
+[666] manière dont les personnes qui
+[667] rejoignent des startups valorisent le
+[670] les stocks qu'on peut leur donner.
+[671] C'est évidemment le
+[673] la tension, c'est que ça peut avoir un
+[675] énorme avantage pour l'entreprise de
+[676] rester privé, beaucoup plus de
+[677] flexibilité, beaucoup plus d'agilité,
+[680] mais ça donne aussi beaucoup de contrôle
+[681] à ceux qui contrôlent le pacte
+[683] d'actionnaires sur le prix de vente et
+[685] de rachat des actions.
+[687] Euh et ça euh
+[688] Ça a été un sujet pour Stripe ou ? Ils
+[689] l'ont Ils ont Ils l'ont toujours plutôt
+[691] bien fait euh
+[692] Ouais, je pense qu'ils ils ont fait des
+[694] choses bien et puis ils ont fait aussi
+[695] des choses dans l'intérêt de Stripe.
+[696] Donc
+[697] c'est en tant que ancien employé de
+[700] Stripe, je crée finalement assez peu de
+[703] valeur pour Stripe au jour le jour. Je
+[704] suis client de Stripe aujourd'hui pour
+[705] les paiements mais
+[707] les les intérêts sont pas toujours
+[709] alignés quand on est plus dans
+[711] l'entreprise et quand on en est encore
+[714] un employé. Enfin il y a plein de
+[715] complexités et c'est nuancé. Ça peut
+[717] être ça peut vraiment dépendre des cas,
+[720] des phases, des marchés
+[722] et des contraintes que les individus ont
+[723] quoi. Moi je pense que c'est plutôt une
+[724] entreprise dont
+[727] je loue l'éthique à tous les niveaux.
+[730] Donc je pense que ce qui a pu être bien
+[732] fait a été relativement bien fait. Il y
+[734] a toujours des contraintes et il y a
+[735] assez peu de boîtes qui ont le destin de
+[736] Stripe d'avoir une valeur en marché
+[739] privé aussi importante.
+[742] Ce qui a créé des tensions énormes. Les
+[743] premiers employés avaient des des
+[745] montants d'actions
+[747] qui étaient qui étaient conséquents.
+[749] Et donc pas 100 % liquide quoi mais
+[751] effectivement
+[752] Pas 100 % liquide mais liquide quand les
+[754] fondateurs veulent que ce soit liquide.
+[756] Très clair. Donc ensuite tu rejoins
+[759] Alan. Donc en fait tu fais finalement
+[761] euh
+[762] Totem puis Stripe Alan les deux pendant
+[765] des périodes de finalement assez
+[766] longues. Stripe et Alan ça a un peu
+[769] c'est en commun d'être deux entreprises
+[772] assez iconiques à leur échelle avec des
+[775] cultures assez fortes. Stripe ça a
+[777] toujours été loué pour être la solution
+[779] de paiement
+[780] euh tu vois la mieux la mieux outillée
+[783] pour les développeurs avec une
+[784] documentation fantastique. Enfin ça a
+[786] toujours été toujours eu cette
+[787] réputation. Alan à l'échelle française
+[789] c'est
+[790] une startup qui aussi a beaucoup
+[792] communiqué sur le pas de réunion
+[796] full transparence notamment sur les
+[798] grilles de salaire, la progression.
+[800] Enfin qui a été très intentionnelle dans
+[801] énormément de choses.
+[803] Qu'est-ce que à travers ces deux
+[804] expériences peut-être, qu'est-ce que tu
+[806] retiens de de positif sur chacune de ces
+[808] deux boîtes
+[810] et qui
+[811] peut-être te nourrissent dans la
+[813] construction de de Dost quand on est
+[815] encore à ses ?
+[818] Je pense que le faire une entreprise, la
+[822] faire grandir, la faire croître et puis
+[824] la garder dans la course dans la durée,
+[827] c'est très difficile et au fond, je
+[830] deviens de plus en plus convaincu qu'il
+[831] faut une super équipe. Et donc en fait,
+[833] une entreprise, ça doit être une machine
+[835] à attirer et à retenir des personnes qui
+[837] sont géniales, motivées, enthousiastes,
+[841] collaboratives, intelligentes,
+[843] con peu d'ego. Et ça, je pense que c'est
+[845] des points qui étaient
+[846] assez
+[848] communs entre Stripe et Alan.
+[850] Et pour les attirer ces personnes-là, il
+[852] faut leur donner une plateforme qui soit
+[854] attirante. Donc qu'est-ce que ces
+[856] personnes-là elles ? Elles recherchent
+[858] de la transparence pour comprendre ce
+[859] qui se passe dans la boîte dans laquelle
+[860] elles bossent, de l'autonomie pour
+[862] pouvoir prendre des décisions et avancer
+[863] vite sans être bloqué par de la
+[864] hiérarchie, de la paperasse ou de la
+[866] bureaucratie. Et
+[868] finalement,
+[870] l'impression, la conviction que
+[872] l'entreprise va pouvoir croître à la
+[874] vitesse de leur propre croissance et
+[876] leur donner des nouvelles opportunités.
+[878] Et ce côté vraiment non linéaire dans
+[880] les opportunités que j'ai pu avoir chez
+[882] Stripe est très rare et extrêmement
+[885] précieux. Ça, je pense que c'est un un
+[886] truc
+[888] que on mesure pas forcément en début de
+[889] carrière quand on regarde les
+[890] opportunités devant soi.
+[892] Mais
+[893] un de mes profs en université à Stanford
+[896] me disait toujours "Dans le monde du
+[897] travail, il y a des rôles dans lesquels
+[899] on on acquiert 2 ans d'expérience en 5
+[901] ans et d'autres dans lesquels on
+[902] acquiert 5 ans d'expérience en 2 ans et
+[903] c'est important quand tu t'assois de
+[904] comprendre dans quel dans quel siège tu
+[906] étais." Parce que c'est soit l'un soit
+[907] l'autre, c'est jamais au milieu.
+[909] Et je pense que j'ai eu la chance de
+[910] travailler dans les entreprises qui
+[911] étaient plutôt
+[912] dans la deuxième catégorie.
+[914] Et donc si je repense, c'est beaucoup de
+[916] si je comprends bien,
+[917] cette capacité donc de progresser très
+[919] vite, donc ça veut dire assez peu de
+[921] hiérarchie, beaucoup d'autonomie donnée
+[923] à à chaque employé ou peut-être une
+[925] culture de la de la méritocratie.
+[926] C'est-à-dire que si tu performes, peu
+[928] importe ton âge, peu importe ton
+[931] expérience, tu peux finalement
+[933] accéder à des postes extrêmement
+[935] impactants pour l'entreprise.
+[938] Chez Stripe
+[939] dans mon équipe, il y a quelqu'un qui a
+[940] fêté ses 21 ans après 3 ans de de de de
+[945] carrière chez Stripe alors que j'y étais
+[948] et qui a euh à la fin de de de sa
+[951] période de chez Stripe mené une des plus
+[954] grosses équipes en charge du business de
+[956] de cartes qui était qui était évidemment
+[957] très stratégique.
+[959] Euh qui est maintenant devenu un
+[960] investisseur avec je pense un peu plus
+[962] d'un milliard sous management et qui a
+[964] 31 ans.
+[965] Donc ces carrières un peu non linéaires,
+[967] elles étaient offertes ouais aux
+[968] personnes qui
+[968] fou ça me rappelle aussi euh
+[970] donc le mon précédent fonds Balderton,
+[971] on avait investi dans Revolut et Alan
+[974] Cheng qui était qui est arrivé chez
+[975] Revolut à 24 25 ans avec un mail euh
+[980] cold à Nikolay en disant "Je suis
+[982] motivé, j'ai je sors de mon bachelor" et
+[985] qui a une trajectoire où en fait quand
+[987] il est parti à 28 ans au bout de 4 ans
+[989] ou 5 ans chez Revolut, il c'était le
+[991] numéro 3 ou 4 et Revolut était déjà à
+[993] l'époque une organisation de je sais pas
+[996] plusieurs centaines voire plus de 1000
+[998] 1000 personnes quoi.
+[998] Ouais ouais ouais.
+[999] On
+[1001] Je pense qu'il faut rester assez on a
+[1002] toujours tendance à à surestimer
+[1004] l'impact qu'on a soit dans les outcomes
+[1007] qui nous sont offerts mais
+[1009] euh on on est souvent euh une petite
+[1012] chose sur des grandes vagues et si on a
+[1014] la chance de surfer les bonnes vagues,
+[1016] c'est incroyable et ça a beaucoup plus
+[1017] d'impact. Donc je pense que au niveau
+[1018] macro, la vague de technologie qui qui
+[1021] domine depuis une vingtaine d'années est
+[1023] hyper importante et au sein de cette
+[1024] vague et des entreprises qui s'en
+[1025] sortent mieux. Donc voilà, ça ça donne
+[1027] des opportunités
+[1029] assez démultipliées aux personnes qui
+[1030] ont qui ont la chance de faire partie de
+[1031] ces équipes-là.
+[1033] Donc voilà, donc ça je pense que c'était
+[1033] en commun entre entre Stripe et Alan et
+[1035] clairement un truc que je recherche
+[1036] quoi. Je suis obsédé par l'idée de me
+[1037] dire que Dust doit être une plateforme
+[1039] intéressante pour les gens qui sont les
+[1041] meilleures personnes à recruter et à
+[1043] garder dans l'équipe.
+[1045] Et euh et oui, en général la hiérarchie
+[1048] trop tôt ou la bureaucratie sans trop
+[1050] d'explications ou les gens qu'on
+[1051] récompense parce que ils prennent le
+[1053] travail d'autres et ils le présentent en
+[1055] leur nom, enfin c'est c'est des choses
+[1056] qui attirent pas les personnes smart
+[1058] quoi.
+[1058] Et alors peut-être question un peu plus
+[1060] compliquée après avoir travaillé chez
+[1062] Stripe et Alan, quels sont peut-être des
+[1065] points de culture ou autres que le
+[1067] contraire tu ne veux pas reproduire chez
+[1069] chez Dust, des points faibles, aucune
+[1072] organisation n'est parfaite mais
+[1074] voilà, des choses que tu veux enfin en
+[1075] tout cas des peut-être des leçons que tu
+[1076] as apprises sur ces organisations euh
+[1080] Je pense que je je pense que la culture
+[1082] qu'on connaît de Stripe est le reflet
+[1085] plus de la culture des 10 premiers
+[1087] employés que des fondateurs.
+[1089] Et donc il y a localement, par endroit,
+[1092] une petite dissonance cognitive entre ce
+[1094] qu'on pense de Stripe et la façon dont
+[1096] Patrick et John euh travaillent.
+[1100] Euh et je dirais que
+[1102] Patrick et John sont assez confortables
+[1104] avec beaucoup de nuances et beaucoup
+[1105] d'exceptions aux règles qu'on fait.
+[1107] Euh et donc ça c'est intéressant, c'est
+[1110] de se dire finalement est-ce que les
+[1112] fondateurs sont capables de représenter
+[1114] exactement la culture de ? Euh
+[1118] quand il y a un delta entre les deux,
+[1120] pour quelle raison est-ce que c'est ?
+[1121] Est-ce que c'est parce qu'en fait la
+[1122] culture était le résultat ou des efforts
+[1125] d'autres personnes qui sont peut-être
+[1126] plus ? Enfin comment est-ce que la
+[1126] culture est ?
+[1127] Ce que tu dis c'est que du coup dans les
+[1128] 10 premières personnes qui ont été
+[1130] embauchées par Patrick et John, il y
+[1132] avait euh des personnalités fortes et
+[1134] exceptionnelles qui ont fait de Stripe
+[1135] ce que c'était.
+[1136] Dara et Greg qui ont implémenté la
+[1139] culture de euh notes pour toutes les
+[1142] réunions, pas de meeting, communication
+[1144] asynchrone, transparence des emails,
+[1146] tout ça c'est c'est c'est plus le fruit
+[1147] de de de ouais d'exploration,
+[1150] d'expérimentation de
+[1151] les fondateurs étaient peut-être moins
+[1152] intentionnels sur ces sujets-là.
+[1154] Je pense qu'ils étaient très
+[1155] intentionnels, ça
+[1156] Patrick et Jean-Charles sont très
+[1157] intentionnels mais pas forcément sur les
+[1159] aspects qu'on a mis en avant à certaines
+[1161] périodes.
+[1162] Euh et après
+[1164] Et ça mais ça c'était un point négatif
+[1166] parce que pouvait y avoir des fois des
+[1167] petites différences entre ce que
+[1169] eux-mêmes faisaient et leurs actions et
+[1170] finalement ce que
+[1173] Dara
+[1174] a pu
+[1176] Ouais, je pense que c'est c'est c'est
+[1178] toujours plus simple quand tout est
+[1179] cohérent.
+[1180] Et quand il y a des incohérences, il
+[1181] faut les expliquer. Alors je pense que
+[1182] la vie est compliquée et que des
+[1183] incohérences on va supporter mais euh
+[1185] mais voilà, ça ça pouvait être quelque
+[1186] chose qui surprenait parfois et qui
+[1188] surprenait quand on arrivait dans des
+[1190] situations de décisions complexes qui
+[1192] étaient pas forcément communiquées de
+[1193] façon aussi transparente.
+[1195] Une entreprise qui grandit vite, elle
+[1196] est perpétuellement en train de se poser
+[1198] la question de son organisation, du
+[1199] système nerveux qui lui permet de
+[1201] prendre des décisions rapides et euh et
+[1203] ces ces phases-là qui sont continues, il
+[1207] y a pas de on va régler l'organigramme
+[1208] une bonne fois pour toutes et on en
+[1209] parlera plus. C'est c'est tous les 6
+[1211] mois on change d'organigramme. Euh c'est
+[1213] un problème qui demande pas mal de
+[1215] doigté, pas mal de nuances et je dans
+[1217] lequel je pense que c'est compliqué
+[1218] parfois d'opérer quand on raconte pas
+[1220] tout à tout le monde ou alors qu'on a
+[1221] dit qu'on racontait tout à tout le
+[1222] monde. Mais je pense que c'est difficile
+[1224] de faire mieux hein, je c'est ça aussi
+[1225] qui
+[1226] Et chez Alan euh moi je fais moi j'ai
+[1228] démarré chez Alan en mars 2020. Donc
+[1230] j'ai commencé au début du Covid.
+[1231] Et Alan il y avait pas du coup ces
+[1232] sujets, c'est-à-dire que euh
+[1234] Jean-Charles et euh je
+[1236] Je pense que Jean-Charles a une
+[1236] réflexion absolument parfaite de la
+[1238] culture d'Alan.
+[1240] Je pense que Charles aussi d'ailleurs a
+[1241] peut-être 99 % et je pense que ouais
+[1246] les principes érigés étaient respectés à
+[1247] 100 % et c'était lead by example et
+[1250] finalement euh
+[1252] Ouais. Je pense pas qu'on puisse les
+[1253] prendre en défaut sur sur grand-chose
+[1255] Euh et d'ailleurs à à ce point que je
+[1258] pense que parfois ça me ça me paraissait
+[1260] être euh puriste. Euh et donc je dirais
+[1263] que parfois euh la nuance elle peut être
+[1265] utile quoi. Elle peut être utile et elle
+[1267] peut être efficace quand elle permet à
+[1269] des personnes qui voient les choses
+[1270] différemment ou qui approchent les
+[1272] problèmes différemment de se de se
+[1274] sentir confortable.
+[1275] Euh
+[1276] Donc voilà, ça c'est c'est deux ces deux
+[1278] aspects moi je un un aspect différent
+[1281] aujourd'hui entre Allan et et Dust par
+[1284] exemple, c'est que Dust tout le monde
+[1285] vient au bureau tous les jours.
+[1287] C'est important pour nous, c'est quelque
+[1288] chose que les gens qui viennent à Dust
+[1290] recherchent, donc c'est assez explicite.
+[1292] Et on n'est pas du tout en train de
+[1293] chercher à
+[1294] développeurs compris euh qui sont
+[1296] souvent les plus
+[1296] Ça nous ça nous ça nous ralentit dans
+[1298] notre recrutement, mais euh ça nous
+[1300] permet aussi d'aller très très vite
+[1301] quand il faut changer d'avis sur quelque
+[1302] chose en milieu d'après-midi euh d'un
+[1305] bout à l'autre du bureau. Donc c'est un
+[1306] choix et en effet, c'est quelque chose
+[1308] qui est marquant, qui est fort, qui est
+[1309] clivant, qui est
+[1311] qui plaît pas à tout le monde, euh mais
+[1312] c'est un choix qu'on a fait assez
+[1314] consciemment avec Stan parce qu'on
+[1315] pensait que c'était nécessaire pour les
+[1317] décisions qu'on avait à prendre sur les
+[1318] premières années de la boîte.
+[1319] Trop bien.
+[1320] Bon, parlons maintenant un peu de un peu
+[1322] de Dust et un peu des débuts. Donc tu le
+[1323] racontais un peu en introduction du
+[1325] podcast. Donc ton ton co-fondateur Stan
+[1328] euh travaille chez chez Open AI, il
+[1330] quitte Open AI à l'été euh 22, donc
+[1332] quelques 3 mois avant la sortie en
+[1334] novembre 22 de de chat GPT. Euh il
+[1337] construit en public, donc ça attire ça
+[1339] attire beaucoup beaucoup d'intérêt.
+[1341] C'est comment euh comment vous décidez
+[1342] de vous réassocier ? Euh et comment vous
+[1346] en venez à cette idée euh
+[1349] qui est du coup à changer parce qu'à la
+[1350] base euh je me souviens qu'on met on
+[1351] vous mettait beaucoup en
+[1353] en compétition par rapport à la
+[1355] compétition parce que vous étiez encore
+[1356] un projet naissant, mais on vous
+[1356] comparait à un projet
+[1358] LangChain qui lui est un peu resté euh
+[1360] est resté le même depuis le début.
+[1362] Enfin, raconte-nous un peu la genèse et
+[1363] euh votre association et comment vous en
+[1365] venez à
+[1366] à mais à Dust.
+[1369] Je pense qu'avec Stan on a on a toujours
+[1370] continué à discuter. On a toujours aimé
+[1372] discuter euh de d'idées, de ouais
+[1375] d'idées de boîte. Ça a commencé quand on
+[1377] était en coloc pendant nos années
+[1378] d'université en Californie. Ça a
+[1380] continué
+[1381] après Totems quand on quand on était à
+[1384] Stripe, ça a continué pendant qu'on
+[1385] était chacun de notre côté
+[1388] chez Alan ou chez Open AI. Et
+[1391] et d'ailleurs l'histoire qui se répète
+[1393] c'est que Stan a toujours pris la
+[1394] décision en premier de faire le pas, de
+[1397] sauter dans l'inconnu et de se mettre à
+[1398] construire. C'était arrivé en 2010 quand
+[1401] il m'avait dit "Ouais, je pense qu'il
+[1402] faudrait qu'on monte une boîte." On
+[1402] s'était dit "OK, on fait ça dans 6
+[1404] mois." Et puis il m'avait rappelé 2
+[1405] semaines plus tard en disant "Bon, moi
+[1405] j'ai démissionné donc toi tu
+[1406] démissionnes quand tu veux mais je
+[1407] commence à construire."
+[1410] Et c'est d'ailleurs à l'époque il a
+[1412] commencé à construire des morceaux
+[1413] d'infra qu'on a finalement
+[1415] enrichi de morceaux business. Euh
+[1418] c'est une chance d'avoir une relation de
+[1419] confiance avec quelqu'un qui complète
+[1422] bien le tableau. Ça je pense que c'est
+[1423] le constat numéro 1 qu'on avait fait
+[1425] avec Stan. On a pris le temps de se
+[1427] poser la question de savoir si on
+[1428] voulait remonter une boîte ensemble et
+[1430] je suis vraiment reconnaissant du temps
+[1432] posé un peu conscient qu'on a pris avec
+[1435] une ou deux après-midi vraiment à se
+[1437] reposer toutes les questions. Qu'est-ce
+[1438] qu'on avait bien ? Qu'est-ce qu'on avait
+[1439] mal ? Est-ce qu'il y a pas un syndrome
+[1441] de Stockholm sur le fait de remonter une
+[1442] boîte ensemble alors qu'en fait c'était
+[1443] trop ? Qu'est-ce qu'on voudrait faire ?
+[1446] Comment est-ce qu'on se dira si les
+[1447] choses vont pas bien ou vont pas comme
+[1448] on le souhaite dans les années qui ?
+[1452] Et ça ça a beaucoup euh je pense que ça
+[1455] nous sert évidemment aujourd'hui et je
+[1456] pense que ça nous servira dans les dans
+[1457] les années les décennies à venir mais
+[1459] c'était c'était un moment assez riche
+[1461] parce que c'était pas la même énergie
+[1463] que quand on a monté la boîte la
+[1464] première fois où c'était vraiment euh
+[1465] Moi ma boîte ça va pas assez vite. Moi
+[1467] ma boîte ça va pas assez vite. Et les
+[1468] trucs super qui se passent sur le mobile
+[1470] Plus de sagesse tu dirais du coup dans
+[1472] la réflexion
+[1473] Je sais pas si on en est là mais en tout
+[1474] cas euh ouais le le le la réalisation
+[1477] qu'il y a un coup d'opportunité, qu'on
+[1478] va pas en remonter 40 des boîtes, que le
+[1480] temps passe, qu'on a pas tout à fait les
+[1482] mêmes contraintes personnelles qu'on
+[1484] avait quand on avait euh euh pas la
+[1487] trentaine. Euh et puis aussi le le fait
+[1490] de se dire que si on le faisait on avait
+[1492] vraiment envie de construire quelque
+[1493] chose de de grand enfin d'assez
+[1495] ambitieux. Donc que ça allait être dans
+[1496] la durée et qu'il allait falloir courir
+[1498] ce marathon au rythme d'un sprint mais
+[1500] qu'il fallait fallait s'y préparer quoi.
+[1502] Donc je pense que de s'équiper et
+[1503] pouvoir se dire qu'on se faisait
+[1504] vraiment confiance, c'était important.
+[1507] Et donc l'association euh je sais pas si
+[1508] je je sais pas exactement comment c'est
+[1510] mais je
+[1510] Et là vous êtes co-CEO ou
+[1512] ou tu es CEO et vous avez chacun vos
+[1514] domaines en fait de euh
+[1516] Ouais, dans les articles dans les dans
+[1518] les articles, il est président et je
+[1519] suis directeur général. Donc je crois
+[1521] que d'ailleurs CEO c'est peut-être un
+[1522] peu une usurpation de de titre. Dans les
+[1524] faits pour le langage un peu start-up je
+[1527] suis CEO, il est CTO.
+[1529] Dans le concret il y a beaucoup de
+[1531] décisions qu'on prend ensemble, beaucoup
+[1532] de décisions où on se fait confiance et
+[1533] qu'on pourrait prendre l'un ou l'autre
+[1535] et euh nos domaines d'expertise
+[1537] respectifs hein pour Stan c'est
+[1538] évidemment la technique, l'ingénierie,
+[1540] la compréhension des modèles sur
+[1542] lesquels Dust se base mais aussi euh de
+[1544] l'infrastructure qui permet de la rendre
+[1545] utile.
+[1546] Et là où on se retrouve beaucoup c'est
+[1548] sur les sujets produits. Qu'est-ce qui
+[1549] va euh faire la voiture de demain versus
+[1552] le cheval rapide de ? Pourquoi est-ce
+[1553] qu'il faudrait construire comme ça et
+[1554] pas comme ?
+[1556] Voilà et moi je pense que j'apporte bah
+[1557] mon expérience au contact d'utilisateurs
+[1559] qui sont
+[1560] parfois euh
+[1561] des agents pas autonomes parce qu'ils
+[1563] sont membres d'une organisation. Donc
+[1565] qu'est-ce que ça leur apporte comme
+[1566] contrainte dans la façon dont ils
+[1567] décident d'utiliser une solution ou une
+[1568] autre, de se sentir libre ou contraint
+[1570] dans la manière de l'utiliser.
+[1572] Et on se parle bien, je pense qu'on
+[1574] communique assez bien et qu'on
+[1576] les choses dont on parle on arrive à se
+[1578] comprendre vite et les choses dont on
+[1579] parle pas on se fait beaucoup confiance.
+[1580] Donc ça fait beaucoup gagner de temps.
+[1582] Et Stan avait commencé à travailler seul
+[1585] puis après avec quelques personnes qu'on
+[1586] connaissait tous les deux. Je pense que
+[1588] ça ça m'a un peu titillé et et puis au
+[1591] fond on a eu une discussion à la fin
+[1592] 2022
+[1594] la conclusion était bon ça serait ça
+[1595] serait trop bête de de laisser passer
+[1596] cette opportunité.
+[1598] Est-ce qu'à un moment vous vous êtes
+[1598] posé la question de monter euh
+[1601] un modèle ? Parce que
+[1603] à l'époque et d'ailleurs est-ce que les
+[1605] est-ce que c'est marrant parce que les
+[1606] fondateurs de la Nute étaient euh ont
+[1609] été aussi à à de la création de Mistral
+[1612] euh finalement. Euh vous vous êtes avant
+[1615] la création de Mistral, Stan était chez
+[1618] Open AI. Est-ce que vous vous êtes posé
+[1620] la question euh de monter le le modèle
+[1623] fondamental euh IA français euh et
+[1626] Mistral avant l'heure ou vous vous êtes
+[1627] dit directement dit euh euh finalement
+[1630] euh il y a déjà des géants qui sont là,
+[1632] nous on va se on va se concentrer sur
+[1634] autre chose et on va le faire ?
+[1636] Euh on a jamais voulu monter de modèle
+[1638] fondamental. On a beaucoup discuté avec
+[1641] Guillaume Timothée et Arthur avant qu'il
+[1642] monte Mistral et avant que nous on monte
+[1644] Dust.
+[1645] Euh et on voulait monter un produit et
+[1647] eux un modèle à l'époque. Euh et c'était
+[1651] pour une des raisons simples que Stan a
+[1654] toujours exprimé clairement quoi, c'est
+[1655] que les modèles c'est un business, euh
+[1659] le produit c'est un autre business, une
+[1661] autre série de problèmes et euh le le
+[1663] modèle le plus performant
+[1665] qui n'est pas accompagné d'un produit
+[1666] qui permet de l'utiliser dans un monde
+[1668] complexe, il est pas utile quoi. Donc
+[1670] c'était un
+[1672] l'espace de problème de la couche
+[1673] produit qui allait vivre entre les
+[1674] utilisateurs et les modèles nous
+[1675] paraissait vraiment fascinant. C'est ça
+[1677] a toujours été euh et d'ailleurs Stan
+[1679] euh dira toujours c'est euh "No GPUs
+[1681] before PMF" quoi. On fera pas
+[1683] d'entraînement de modèle avant d'avoir
+[1685] parfaitement compris exactement où était
+[1688] la valeur du modèle et où était
+[1689] l'optimisation qu'on pouvait faire en
+[1691] créant le nôtre ou en post-entraînant le
+[1692] nôtre ou je sais pas quoi. Voilà. Et
+[1694] mais c'est aussi une zone d'intérêt
+[1696] hein, c'est que je pense que c'est pour
+[1697] nous plus intéressant d'avoir du
+[1698] feedback tous les jours d'utilisateurs
+[1700] qui sont contents ou qui sont pas
+[1701] contents plutôt que ces phases de
+[1702] recherche, de déploiement, cette course
+[1705] hyper impressionnante mais aussi un peu
+[1707] frénétique que se mènent les grands
+[1708] labos dont Mistral et les autres.
+[1710] Et alors vous vous lancez lancez Dust et
+[1713] euh et dis-moi si je me trompe mais au
+[1715] début le personnage sur lequel vous vous
+[1717] concentrez c'est plutôt euh un
+[1719] développeur et vous êtes plutôt avec
+[1722] l'idée de développer tout un écosystème
+[1725] d'outils qui vont permettre à des
+[1727] développeurs de euh d'exploiter au mieux
+[1730] tout pouvoir de de ces modèles
+[1731] fondationnels que ce soit ceux par Open
+[1733] AI et autres. Alors qu'aujourd'hui Dust,
+[1735] vous êtes beaucoup plus sur des personas
+[1737] business, à essayer de comprendre
+[1739] des métiers et de voir comment vous
+[1741] pouvez les améliorer et améliorer leur
+[1743] productivité avec de des des modèles
+[1746] fondationnels. Comment cette réflexion
+[1747] elle a elle a ? Est-ce que tu peux nous
+[1750] Le début de notre collaboration et le
+[1752] début du travail de Stan avant que je le
+[1754] rejoigne, c'était de l'expérimentation.
+[1756] D'ailleurs la la la plateforme
+[1759] pour développeurs s'appelle XP0 et
+[1761] ensuite on a travaillé sur une extension
+[1763] Chrome qui permettait de d'utiliser un
+[1766] modèle fondationnel dans le contexte des
+[1768] tables qu'on visitait, c'était XP1. Et
+[1771] on a ensuite passé du temps sur XP2 qui
+[1774] était le fait de se dire que dans les
+[1775] entreprises, le contexte interne de
+[1778] l'entreprise avait pas du tout été
+[1779] présenté au modèle pour l'entraînement,
+[1781] changeait tout le temps, était
+[1782] absolument critique dans la génération
+[1785] de réponses de qualité et que c'était à
+[1788] cette interface là qu'il fallait sans
+[1789] doute se concentrer. Donc on s'est
+[1791] arrêté à XP2 et pour l'instant on est
+[1792] encore sur XP2 mais Dust tel qu'on le
+[1794] connaît aujourd'hui, c'est simplement
+[1796] voilà, on a on a essayé de on a essayé
+[1798] de tester beaucoup de choses très
+[1799] rapidement.
+[1800] La vision qui était assez claire assez
+[1803] vite, c'était bah justement que dans le
+[1805] monde de l'entreprise, il y a beaucoup
+[1807] de contraintes qui font qu'on peut pas
+[1809] piloter
+[1810] ChatGPT comme une appli qu'un
+[1812] utilisateur lambda utilise et il y a
+[1814] beaucoup d'opportunités si on utilise le
+[1816] contexte de l'entreprise à bon escient.
+[1818] Et ça ça nous paraissait un problème
+[1819] compliqué et donc comme c'était un
+[1820] problème compliqué, c'était un problème
+[1821] qui valait le coup d'être résolu parce
+[1824] que si on propose à une entreprise un
+[1826] système opératoire qui permet à tous les
+[1828] membres de l'équipe d'avoir le bon
+[1829] contexte pour prendre les bonnes
+[1830] décisions, s'accélérer sur le travail et
+[1832] les tâches répétitives et finalement
+[1834] pouvoir se concentrer sur ce qui est un
+[1835] peu plus rigolo ou inspirant ou utile ou
+[1838] créatif,
+[1840] tout le monde achète. Après il y a plus
+[1841] qu'à le construire. C'est compliqué de
+[1842] le construire, mais en tout cas, si
+[1844] jamais on peut le promettre, tout le
+[1844] monde l'achète. Donc, c'était
+[1846] pour nous assez clair que c'était ça
+[1848] qu'on voulait faire et on s'est pas posé
+[1849] beaucoup la question depuis.
+[1851] Dans le détail, quel type d'entreprise,
+[1853] quel type de système d'exploitation,
+[1854] tout ça, c'est des questions sur
+[1855] lesquelles on continue de d'évoluer,
+[1856] mais le la vision de rendre l'interface
+[1859] homme-machine dans le monde de
+[1861] l'entreprise plus efficace, euh plus
+[1864] utile, euh plus plus inspirante, enfin
+[1867] vraiment euh plus
+[1868] plus facile à manipuler et plus pratique
+[1871] pour les humains qui vont continuer à
+[1872] avoir du boulot, parce que ça c'est
+[1873] notre conviction, euh bah c'était c'est
+[1876] c'est c'est ça la c'est ça la mission.
+[1878] Alors donc, Dust aujourd'hui, c'est euh
+[1880] si je résume, comment vous exploitez au
+[1882] mieux euh les capacités de ces modèles
+[1886] fondationnels et vous y liez du coup
+[1889] toute la donnée interne, tout le
+[1890] contexte de l'entreprise pour faire en
+[1891] sorte que chaque personne au sein de
+[1893] l'entreprise soit capable de tirer euh
+[1896] le mieux de ces euh de ces de ces
+[1898] modèles-là. Est-ce que tu peux nous
+[1900] donner peut-être les euh top deux ou
+[1903] trois euh cas d'usage euh où aujourd'hui
+[1906] Dust est utilisé et où euh concrètement
+[1908] euh une personne va pouvoir euh
+[1911] améliorer sa productivité ou euh
+[1913] automatiser une grosse partie de son ?
+[1915] C'est la question que tous les VC à qui
+[1916] j'ai parlé ces deux ans m'ont posé.
+[1918] Ouais, pas de secret, ouais.
+[1919] Et en fait, euh j'y réponds un peu à
+[1921] l'envers parce que je pense justement
+[1923] que le pari de construire une plateforme
+[1925] horizontale, il est inspiré et nourri de
+[1929] la conviction que la dispersion des cas
+[1931] d'usage va être assez forte.
+[1933] Euh alors, oui, il y a des cas d'usage
+[1935] prépondérants. On peut en parler soit en
+[1937] fonctionnel, soit en départemental. Les
+[1939] fonctions qui sont beaucoup utilisées,
+[1940] c'est la recherche dans des documents
+[1942] existants euh et la génération de
+[1944] réponses qui prennent ce contexte, ce
+[1945] qu'on appelle retrieval augmented
+[1947] generation, le rag. Euh la génération de
+[1949] requêtes SQL sur la base de langage
+[1951] naturel pour faire de l'analyse de
+[1953] données et dire où en sont mes clients,
+[1954] comment est-ce qu'on a gagné en chiffre
+[1955] d'affaires sur le mois dernier, donc ça
+[1957] c'est un cas d'usage fonctionnel qu'on
+[1958] retrouve beaucoup. Euh la prise en enfin
+[1962] l'analyse de grands volumes de
+[1963] transcript de call pour des équipes de
+[1966] vente pour voir s'il y a pas des choses
+[1968] qu'on fait bien, des choses qu'on fait
+[1969] pas bien, des choses qu'on pourrait
+[1970] comprendre pour le produit pour
+[1971] améliorer en interne. Voilà, ça c'est
+[1973] fonctionnellement l'extraction de
+[1974] données de sources non structurées pour
+[1976] en sortir des données structurées.
+[1978] Et alors dans ce cas-là, le Dust est
+[1980] capable d'aller lire, on va dire du
+[1982] contenu texte de Notion, de PDF, mais
+[1985] quand comme tu le disais, l'exemple des
+[1987] des revenus, c'est que Dust est aussi
+[1988] capable d'aller euh
+[1990] requêter ou alors euh lire de la donnée
+[1993] euh peut-être dans des euh outils euh de
+[1996] comme PennyLane ou des outils de de
+[1998] revenus management pour comprendre des
+[2000] chiffres en fait.
+[2002] Euh ou ou plus généralement dans des
+[2003] bases de données, quoi. Dans des des
+[2005] sources de données structurées où la la
+[2007] manière de prendre la donnée, c'est pas
+[2009] de faire de la recherche sémantique et
+[2011] dire est-ce qu'il y a des mots qui
+[2012] ressemblent à chiffre d'affaires dans ce
+[2013] document et si jamais oui, dans ce
+[2015] cas-là, donne-moi qui est à côté, mais
+[2016] plutôt dire OK, je veux dans la colonne
+[2018] chiffre d'affaires la valeur pour le
+[2020] mois de avril 2025. Euh ça c'est la
+[2023] façon dont on requête des bases de
+[2024] données structurées, mais tout le monde
+[2025] sait pas requêter des bases de données
+[2027] structurées. Et d'ailleurs, la plupart
+[2029] des personnes dans les entreprises ne
+[2030] savent pas le faire, donc elles se
+[2031] retrouvent bloquées
+[2032] euh quand elles ont besoin du chiffre.
+[2034] Et ça c'est une source d'efficacité, de
+[2036] productivité extrêmement concrète qui
+[2038] est utilisée euh chez 100 % de nos
+[2040] clients, par exemple.
+[2041] Donc par exemple, là le ce cas-là, c'est
+[2043] euh permettre à n'importe quelle
+[2045] personne dans l'entreprise d'aller
+[2046] requêter de la donnée euh revenus sans
+[2049] être forcément être capable de d'écrire
+[2050] des SQL du SQL, par exemple.
+[2052] Exactement. Mais euh pas données
+[2053] revenus, données utilisation produit.
+[2055] Tiens, j'ai un call avec mon client,
+[2056] est-ce que tu peux me faire un rapport
+[2058] sur la façon dont il a utilisé notre
+[2059] produit sur les 3 derniers ? Est-ce que
+[2060] tu peux me suggérer les features dont il
+[2062] pourrait se servir étant donné la
+[2063] l'industrie dont il fait partie et la
+[2064] manière dont les autres clients dans
+[2066] cette industrie se servent de notre
+[2067] produit.
+[2068] Euh voilà, les les les des
+[2070] un peu euh classiques de
+[2074] de requête de données quantitatives.
+[2076] Mais ça peut aussi être faire des
+[2077] calculs sur ces données. Donc extrapole
+[2079] sur notre performance des 3 derniers
+[2081] mois, la manière dont tu penses que le
+[2082] chiffre d'affaires évoluera si jamais
+[2084] la croissance mensuelle reste la même.
+[2086] Il y a une partie d'extraction de
+[2087] données et puis ensuite une partie de
+[2088] calcul formel. Donc c'est des choses
+[2090] qu'on peut orchestrer avec Dust.
+[2092] Et alors d'un point de vue stratégique,
+[2094] comment tu parce que donc il y a il y a
+[2096] des Dust vous arrivez vous vous arrivez
+[2099] votre proposition de valeur auprès d'une
+[2100] entreprise, c'est de dire
+[2102] on se connecte à toutes vos données
+[2103] internes et on va vous permettre
+[2105] d'exploiter au mieux l'IA générative
+[2107] pour améliorer votre fonctionnement
+[2109] interne. Tu as des entreprises qui vont
+[2111] être plus verticalisées qui vont
+[2114] typiquement
+[2116] utiliser des LLM pour les avocats en
+[2119] interne
+[2121] de plus en plus d'outils dans la sales
+[2122] tech eux vont permettre d'enrichir par
+[2124] exemple le CRM automatiquement ou
+[2126] d'analyser script de call. Comment tu
+[2128] vois ce monde évoluer entre
+[2131] des solutions horizontales comme Dust,
+[2133] comme
+[2134] il y a il y a il y a Writer par exemple
+[2136] aux US dont on beaucoup parlé ou Glean
+[2138] dans la qui j'imagine est
+[2140] et aussi un de vos concurrents mais
+[2141] entre des outils horizontaux comme ça et
+[2143] des outils
+[2144] verticaux, est-ce que finalement
+[2146] les deux
+[2148] types de play vont pouvoir ? Est-ce que
+[2151] tu penses qu'à la fin en fait une
+[2152] entreprise elle voudra il y aura de la
+[2154] valeur à avoir un seul outil Dust
+[2157] horizontaux parce que tu auras accès à
+[2159] l'exhaustivité de la donnée que tu veux
+[2160] pas qu'en fait ton entreprise
+[2162] tes employés jouent avec des dizaines
+[2164] d'outils. Enfin comment tu veux voir ce
+[2165] ce marché ? Ouais.
+[2168] Hum
+[2170] C'est des hypothèses hein. Donc on se
+[2171] remet en question tous les mois au moins
+[2173] pour voir si c'est des hypothèses qui
+[2174] sont invalidées mais la façon dont on
+[2176] voit les choses, c'est que les outils
+[2178] verticalisés sont beaucoup plus faciles
+[2180] à vendre.
+[2181] Vendre à une équipe de sales un outil
+[2184] qui va automatiser ou accélérer une
+[2186] partie du processus de sales, c'est un
+[2188] problème bien identifié, une solution
+[2190] qui est facile à évaluer et euh un
+[2192] produit euh qui est facile à mettre en
+[2194] place.
+[2195] C'est des solutions qui existent pour
+[2197] qui celles qui utilisent des LLM
+[2198] existent depuis assez peu et euh font
+[2200] euh des chiffres d'affaires mirobolants
+[2203] en très peu de temps. Enfin, on pense à
+[2205] à des boîtes qui ont qui sont passées de
+[2206] 0 à 50 millions d'ARR rapidement.
+[2209] Je pense qu'il faut toujours se rappeler
+[2210] que quand c'est facile à créer, c'est
+[2212] facile à créer pour tout le monde et que
+[2214] quand on automatise une partie très
+[2215] précise d'un processus d'une entreprise,
+[2218] on est aussi plus facile à comparer par
+[2220] rapport à un autre acteur.
+[2221] Donc nous chez Stripe, quand on faisait
+[2223] euh euh quand on proposait euh enfin
+[2226] quand on essayait de gagner des gros
+[2227] clients, on était souvent mis en
+[2228] concurrence avec d'autres systèmes de
+[2230] paiement et il y avait un peu de manière
+[2232] transactionnelle euh jamais de promesse
+[2234] de nous donner l'intégralité de leurs
+[2235] paiements. Ils nous disaient "Bon, on
+[2236] vous donnera 30 % puis si vous performez
+[2238] bien, on vous donnera 35 puis on vous
+[2239] dira ce semaine après semaine, on vous
+[2240] donnera ce qui ce qui est ce qui est ce
+[2241] qui est ce qui a bien marché."
+[2243] Donc je pense que la compétition à moyen
+[2245] terme sur les solutions verticalisées,
+[2246] elle va être assez intéressante mais je
+[2248] vois pas je vois pas comment ça finit
+[2249] par engendrer des prix assez agressifs
+[2251] puisque finalement une entreprise va
+[2252] pouvoir toujours dire "Bah attendez, moi
+[2253] vous me le proposez à 10000, je vois que
+[2254] le voisin il le fait à 9000, moi je peux
+[2255] les comparer, elles sont à peu près
+[2256] équivalentes, qu'est-ce que vous ?"
+[2258] Ça, c'est par rapport aux solutions
+[2259] verticalisées.
+[2261] Et euh
+[2263] et pour l'instant, j'ai l'impression que
+[2265] on n'a pas encore invalidé cette
+[2266] hypothèse. Alors c'est vrai qu'on vend
+[2268] peut-être moins vite mais je pense que
+[2269] quand on est implémenté dans une
+[2271] entreprise, on est intégré de façon plus
+[2273] profonde dans l'intégralité des flux qui
+[2275] sont justement pas silotés entre les
+[2277] différentes divisions.
+[2285] ingénieurs et les sales.
+[2286] Euh vendre un outil qui améliore la vie
+[2288] des ingénieurs à un sales, ça ne marche
+[2290] pas. Mais utiliser les call transcripts
+[2294] de sales pour dire à un ingénieur
+[2296] "Tiens, le produit dont les sales ont
+[2297] parlé cette semaine a l'air de quand
+[2299] même être vachement mentionné alors que
+[2300] nous on l'a pas priorisé, ça serait
+[2301] peut-être intéressant de regarder. Ça
+[2302] c'est hyper utile.
+[2304] Donc on a une contradiction entre le
+[2305] modèle de distribution et le modèle de
+[2307] valeur. On serait pas capable de
+[2308] distribuer ce produit-là verticalement,
+[2310] mais on sait qu'il a énormément de
+[2311] valeur. Voilà, donc
+[2313] l'autre promesse c'est c'est aussi que
+[2314] se dire que le contexte a énormément
+[2316] d'importance. Vraiment comprendre à un
+[2318] moment donné ce que fait l'entreprise,
+[2319] en quoi elle croit, quelles sont ses
+[2321] priorités, qu'est-ce qu'on a changé dans
+[2322] les 3 derniers jours, euh comment est-ce
+[2325] qu'on veut opérer dans tel ou tel
+[2326] marché, bah c'est c'est compliqué à
+[2328] construire en ayant accès que à la
+[2330] source de données d'une verticale, d'une
+[2332] fonction, de l'équipe légale, de
+[2333] l'équipe sales et cetera. Donc ça c'est
+[2334] l'autre pari, c'est de se dire que c'est
+[2335] un peu compliqué d'avoir accès à ce
+[2337] contexte qui finalement est la source
+[2341] primaire de de de productivité,
+[2343] d'efficacité, de valeur si elle est bien
+[2346] diffusée dans dans les agents. Voilà,
+[2348] donc dans les solutions produits.
+[2350] Et voilà, et ça c'est c'est et ensuite
+[2352] je pense que quand on est un acheteur,
+[2354] et ben aujourd'hui on est un acheteur,
+[2356] on est submergé d'offres verticalisées.
+[2358] À chaque fois les offres disent "Il faut
+[2359] qu'on se connecte à vos sources de
+[2360] données." Donc à chaque fois il faut
+[2361] ajouter un sous-processeur, il faut
+[2362] mettre à jour ses contrats avec ses
+[2363] clients clés parce qu'on a promis de
+[2364] mettre à jour ses clients quand il y
+[2366] avait un nouveau sous-processeur. Donc
+[2367] d'un point de vue sécurité, on se pose
+[2369] quand même la question de savoir à
+[2370] combien de sous-processeurs on veut
+[2371] donner sa donnée et comment est-ce qu'on
+[2372] distribue ou on mitige ce risque.
+[2375] D'un point de vue financier, les
+[2377] solutions verticalisées, elles utilisent
+[2378] des composants qui sont les mêmes. Donc
+[2380] un humain qui travaille dans
+[2381] l'entreprise, qui veut faire
+[2384] de la productivité dans Notion et puis
+[2386] ensuite de la productivité pour un cause
+[2387] le call de sales et puis ensuite de la
+[2389] productivité dans Slack, et ben en fait
+[2391] c'est la même technologie qui va être
+[2392] utilisée. Donc est-ce que ça vaut
+[2393] vraiment le coup de payer trois ? Donc
+[2395] le CFO, je pense qu'il a des questions à
+[2397] se poser. Et après en terme
+[2398] d'utilisation dans le temps,
+[2400] d'engagement et d'adoption, le COO ou la
+[2403] COO va se dire "Maintenant je vais faire
+[2404] combien de training, à combien de
+[2405] personnes, sur combien de produits pour
+[2407] arriver à ce que tout le monde sache se
+[2408] servir des outils qui vont nous
+[2409] accélérer dans tous les ?"
+[2410] Donc ça c'est un peu le 3e pari, c'est
+[2411] le pari de la stabilité d'une interface
+[2413] qui par rapport à l'acheteur dit "Bah on
+[2415] peut continuer à construire dans le
+[2416] temps sur une plateforme dont
+[2418] l'extensibilité va progresser, hein, ça
+[2420] c'est c'est notre travail, mais euh pour
+[2422] arriver à couvrir nos bases et explorer
+[2424] les nouveaux cas d'usage les nouveaux
+[2425] cas d'usage qui seront peut-être propres
+[2426] à notre entreprise et qu'aucune solution
+[2428] verticale n'ira n'ira couvrir.
+[2430] Voilà. C'est plus dur de faire une
+[2431] plateforme, mais quand on réussit, c'est
+[2433] souvent une position euh euh
+[2436] confortable.
+[2437] Sur le long terme, donc clairement. Et
+[2438] euh et donc aujourd'hui, c'est qui un
+[2440] peu vos ? C'est tout type ? Est-ce que
+[2442] j'ai vu que vous aviez beaucoup de
+[2444] de euh de scale-up, enfin de grosses
+[2446] entreprises, mais vous avez annoncé par
+[2447] exemple Doctolib, je crois, c'est que ce
+[2450] cette semaine en en client. C'est
+[2452] beaucoup d'entreprises de la tech ou
+[2453] vous avez aussi des entreprises euh plus
+[2457] Le profil de client idéal pour nous,
+[2459] c'est c'est trois choses. La première,
+[2460] c'est que les dirigeants sont assez
+[2462] convaincus de la révolution qui est en
+[2464] cours et ont très envie de déployer
+[2467] rapidement des solutions qui permettent
+[2468] à leurs équipes d'en profiter. Ça, c'est
+[2469] la condition numéro 1. La condition
+[2471] numéro 2, c'est qu'ils aient des outils
+[2473] pour lesquels on est en fit. Donc on a
+[2474] plutôt construit des connecteurs avec
+[2476] des outils qui sont utilisés par des
+[2477] scale-up que par des cabinets d'avocats
+[2480] traditionnels à ce jour. On continue à
+[2481] progresser, mais ça c'est c'est c'est
+[2483] différent. Et ensuite, une question de
+[2484] taille d'équipe. Je pense que on est
+[2486] plus attirant pour des entreprises dont
+[2489] les équipes sont déjà à une certaine
+[2490] taille où le le problème du chaos
+[2492] d'information en interne, de divisions
+[2493] qui se parlent pas, de priorités qui
+[2496] sont pas discutées au bon endroit est
+[2497] très concret. Donc ça c'est
+[2498] immédiatement applicable. Et où des
+[2501] entreprises qui grandissent très vite et
+[2502] qui ont besoin de se remettre en
+[2503] question tout le temps et qui disent OK,
+[2505] on est on n'est pas là pour on n'est pas
+[2506] là pour essayer de de de réduire la
+[2508] taille des effectifs, on est là pour
+[2509] essayer de d'embaucher différemment à
+[2511] l'avenir avec cette technologie en tête.
+[2513] Aujourd'hui, c'est plutôt des
+[2514] entreprises qui sont tech forward, donc
+[2516] Doctolib, Mirakl,
+[2519] Alan, Pennylane, Qonto.
+[2521] Et comment tu sens la maturité peut-être
+[2522] des d'entreprises comme les grandes
+[2525] banques, les assurances, les gros ? Ces
+[2529] entreprises-là, tu penses que euh
+[2532] aujourd'hui, vous avez commencé avec des
+[2534] entreprises tech parce qu'elles avaient
+[2535] naturellement beaucoup plus d'appétence
+[2537] de volonté à tester donc c'est allé
+[2539] extrêmement vite avec elles.
+[2541] Mais que ces banques, ces ces
+[2542] assurances, tu comptes les adresser ? Tu
+[2544] penses qu'il y a encore un peu de temps
+[2545] avant qu'elles elles prennent ? J'ai
+[2547] l'impression qu'elles sont aussi
+[2548] conscientes ces entreprises que l'IA va
+[2550] arriver, va bousculer leur
+[2552] leur leur manière de travailler. Je
+[2553] crois que c'est c'est la Société
+[2554] Générale ou une grande banque française
+[2555] qui a annoncé un lab
+[2557] il y a cette semaine encore. Comment tu
+[2559] vois le Enfin tu discutes avec elles
+[2561] Où est-ce que vous en ?
+[2562] Ouais ouais. Euh
+[2565] Euh je sais pas quelle banque a annoncé
+[2566] un lab mais je repense au truc de
+[2568] Clémenceau quand on enterre une
+[2569] proposition, on crée un comité. Euh ah
+[2572] alors les grandes entreprises, elles
+[2574] sont très conscientes du problème. Je
+[2575] pense que sur le la première
+[2576] proposition, les dirigeants sont
+[2578] convaincus que ça va avoir de l'impact
+[2580] check.
+[2581] Sur les outils, il y a pas mal de
+[2583] différences et en particulier c'est des
+[2584] entreprises qui ont mûri dans le temps
+[2586] avec des systèmes d'information qui sont
+[2587] très souvent très silotés et parfois
+[2589] vieil enfin souvent vieillissant.
+[2591] Ça ça crée des contraintes sur la
+[2593] vitesse et
+[2595] la qualité de la circulation
+[2596] d'information qu'on peut qu'on peut
+[2598] obtenir vite.
+[2599] Et donc je pense qu'en général c'est des
+[2600] c'est des sociétés qui vont regarder des
+[2602] des des scénarios d'automatisation
+[2603] plutôt que des scénarios d'augmentation
+[2604] parce que l'augmentation c'est un peu
+[2605] plus difficile à définir et en général
+[2607] c'est c'est un peu moins formalisé. Je
+[2609] fais des généralités mais
+[2611] mais nous ce qui nous obsède, c'est
+[2613] l'adoption, c'est le fait que le produit
+[2614] soit utilisé, qu'on puisse progresser
+[2615] avec nos utilisateurs. Donc entre deux
+[2617] clients, je préfère largement le plus
+[2618] petit qui déploie demain au plus gros
+[2620] qui déploie dans 6 mois. Et je pense que
+[2622] les hésitations de certains grands
+[2624] groupes contraintes par de la
+[2625] réglementation, une position publique,
+[2627] des systèmes de décision en interne font
+[2629] qu'on on on ne travaille aujourd'hui pas
+[2631] encore avec des entreprises du du CAC
+[2632] 40.
+[2633] À l'avenir, on adorerait le faire mais
+[2635] je pense que ça sera à condition qu'on
+[2636] puisse leur proposer notre solution, que
+[2638] cette solution soit comprise comme ayant
+[2639] de la valeur et qu'on soit pas
+[2641] transformé en société de services
+[2642] déguisée. Ce qui est à mon avis est le
+[2644] problème des entreprises dans l'IA qui
+[2646] vont parler à des grands groupes
+[2646] aujourd'hui qui veulent pas lâcher ce
+[2648] ces sources de de revenus parce qu'elles
+[2649] sont extrêmement attirantes mais qui du
+[2651] coup sont obligés de faire énormément de
+[2653] compromis avec leur vision produit
+[2654] initiale. Donc soit elles-mêmes, soit
+[2656] avec des boîtes de services
+[2657] entreprises comme Dataiku ou par exemple
+[2660] ou
+[2660] Alors je je connais pas le Je pense que
+[2663] Dataiku parle à des plus grosses
+[2664] entreprises donc je pense qu'il y a une
+[2664] partie de leur de leur business qui est
+[2666] qui est aussi dans dans dans dans le
+[2667] service mais mais je pense aujourd'hui à
+[2669] à Mistral.
+[2670] Mistral déploie auprès d'entreprises du
+[2672] CAC 40 mais il y a aucune entreprise du
+[2673] CAC 40 qui adopte Mistral tel quel.
+[2675] C'est c'est pas un câble Mistral qu'on
+[2676] branche
+[2677] C'est sûr qu'il y a beaucoup de services
+[2678] qui font la transition entre les
+[2679] Ouais et et et
+[2681] et dans certains cas ça va être
+[2682] intéressant pour Mistral de travailler
+[2683] avec ces entreprises main dans la main
+[2684] pour co-construire des solutions qui
+[2686] sont peut-être uniques et hyper
+[2687] adaptées.
+[2688] Nous on est plutôt sur encore une fois
+[2690] là on est pas sur les scénarios de où
+[2692] l'IA va être mise dans le produit de
+[2694] l'entreprise. On est plutôt sur la
+[2695] plateforme qui va permettre à tous les
+[2696] employés de mieux travailler ensemble
+[2697] donc
+[2698] on apprend des clients qui utilisent
+[2700] déjà le produit, on peut fournir les
+[2702] l'expertise qu'on a ressorti de cet
+[2704] apprentissage au client N+1 et c'est ça
+[2707] que les gens achètent quand ils achètent
+[2708] Dust en fait. C'est la promesse de
+[2709] contre enfin de de bénéficier d'un
+[2711] produit qui s'est quand même déjà
+[2712] beaucoup nourri euh de dizaines, de
+[2714] centaines de milliers d'utilisateurs qui
+[2716] ont tapé dans tous les coins et qui nous
+[2717] ont fait pas mal de feedback sur ce
+[2719] qu'on pouvait améliorer depuis 2 ans.
+[2721] Alors Dust vous l'avez donc vous êtes
+[2722] tous les deux Stan et toi basés en
+[2724] France. Euh on en parlait juste avant
+[2726] l'interview,
+[2727] vous avez vous avez déjà une petite
+[2728] équipe euh aux US. Euh est-ce qu'on a
+[2732] une chance euh dans l'IA euh en ayant
+[2736] commencé euh en ? Est-ce que est-ce que
+[2738] Dust a encore une chance de devenir un
+[2739] des grands de de l'IA en commençant en ?
+[2742] Non Maxime, Dust est foutu.
+[2745] D'ailleurs c'est pour ça que je suis
+[2746] venu sur ce podcast pour en parler.
+[2748] ouais c'est une question complexe donc
+[2750] il faut à mon avis la la découper.
+[2751] Qu'est-ce qu'on veut dire par ?
+[2753] Euh qu'est-ce qu'on veut dire par en
+[2754] France ?
+[2757] créer un labo euh comme Mistral de rang
+[2761] mondial en France, c'est euh plus dur
+[2764] que de le créer aux États-Unis, c'est
+[2766] pas impossible, c'est parfois même
+[2768] favorisé parce que si on est un champion
+[2770] français, on peut bénéficier d'effets de
+[2771] bord, enfin des
+[2773] en étant mis en avant comme le champion
+[2774] français, c'est d'un intérêt stratégique
+[2776] pour les pays qui ne sont pas les
+[2777] États-Unis ou la Chine de bénéficier de
+[2779] solutions qui sont souveraines, donc ça
+[2780] ça peut être intéressant. Pour les
+[2782] autres, c'est pour les autres labos,
+[2784] hein, c'est ça sera ou ça restera
+[2786] peut-être compliqué, donc on verra
+[2786] comment les autres labos continuent de
+[2789] progresser. Mais c'est pas des
+[2790] entreprises qui se voient nécessairement
+[2791] comme des entreprises françaises. Donc
+[2792] après, c'est la question, c'est où
+[2793] est-ce qu'elles ?
+[2794] Hmm.
+[2794] Et euh là où elles font leur R&amp;D,
+[2797] finalement, c'est peut-être secondaire.
+[2799] Je pense à PhotoRoom, c'est une
+[2800] entreprise qui a toute sa R&amp;D en France,
+[2802] la majorité de son chiffre d'affaires
+[2803] est pas générée en France. Donc c'est
+[2805] fondamentalement une entreprise d'IA,
+[2807] elle fait de l'édition photo avec de
+[2809] l'IA pour permettre à
+[2810] des entreprises comme elle et des
+[2811] particuliers de d'améliorer les photos
+[2814] et les processus liés aux photos qu'ils
+[2816] ont
+[2816] au quotidien.
+[2818] Voilà, est-ce qu'elle est en ? Je sais
+[2819] pas, c'est ça dépend comment on regarde,
+[2822] Il y a beaucoup d'entreprises
+[2823] européennes qui ont développé
+[2825] commercialement euh enfin qui se sont
+[2827] développées très vite aux États-Unis et
+[2828] qui ont gardé une grosse partie de leur
+[2829] R&amp;D en France.
+[2831] C'est pas perçu comme un désavantage
+[2832] d'avoir sa R&amp;D
+[2833] de Dataiku, qui est quand même un succès
+[2835] Exactement.
+[2836] extraordinaire.
+[2836] Je pense que Dataiku c'est un exemple,
+[2838] Datadog c'est un exemple et et on peut
+[2840] et on peut en citer plein d'autres sur
+[2842] la
+[2843] la scène de l'IA Summit
+[2845] Alors est-ce que peut-être tournons
+[2846] autrement, est-ce que tu sens que
+[2847] aujourd'hui sur les deals, je sais pas
+[2849] si vous avez déjà des clients aux US,
+[2851] Oui.
+[2851] le marché US euh est plus compétitif
+[2855] aujourd'hui qu'en ? Parce que j'imagine
+[2857] qu'en France aujourd'hui,
+[2859] je vois pas de concurrent à Dust, je
+[2860] pense que vous avez un un boulevard, aux
+[2863] US, il y a il y a il y a il y a quelques
+[2864] noms qui sont présents.
+[2866] Euh j'ai l'impression, et dis-moi si je
+[2868] me trompe, que pour devenir un des
+[2870] géants mondiaux sur votre secteur, qui
+[2872] est du coup la GenAI enfin
+[2875] positionnement horizontal et mettre ces
+[2877] technologies d'IA dans les mains de tous
+[2879] les employés de boîte, il va falloir
+[2881] enfin Dust dans 5 ans fera une grosse
+[2884] partie de son revenu
+[2886] aux US
+[2886] 10 ans.
+[2887] Je pense.
+[2888] Et donc plus de compétition
+[2890] Ouais enfin plus de compétition mais
+[2892] c'est mais aussi plus de facilité à
+[2893] l'achat, les budgets sont toutes
+[2895] proportions gardées plus élevés, les
+[2896] gens achètent plutôt plus vite, les à
+[2899] taille d'entreprise égale, les gens
+[2900] achètent de façon plus autonome donc les
+[2902] processus de d'achat sont parfois
+[2904] simplifiés et accélérés.
+[2906] Il y a une plus grande volonté
+[2907] d'exploration, je pense. C'est à la fois
+[2909] un avantage et un un inconvénient parce
+[2910] qu'on a parfois un peu le chaos, on
+[2912] parle à une scale-up de 5000 personnes
+[2914] aux États-Unis,
+[2915] les fondateurs sont incapables de dire
+[2917] combien il y a de produits
+[2919] IA en pilote ou achetés, ouais.
+[2922] Mais ce qui est intéressant, c'est que
+[2924] ceux qui gagneront seront ceux qui
+[2925] prouveront la valeur. Je pense que c'est
+[2927] très très vite les gens vont revenir à
+[2929] du ROI, c'est des acheteurs assez
+[2930] sophistiqués, assez intransigeants et et
+[2932] sans pitié quand ça marche pas. C'est à
+[2935] la fois un nouveau marché
+[2937] pour le pour le le développement
+[2939] commercial et pour le produit
+[2939] d'ailleurs. C'est ça qui est
+[2940] intéressant, c'est que je pense que les
+[2941] États-Unis achètent différemment et ils
+[2943] achètent des choses différentes. Donc ça
+[2945] ça sera une question pour Dust. Comment
+[2947] présenter la plateforme pour qu'elle
+[2949] réponde facilement aux questions que se
+[2951] posent les décideurs dans ces
+[2952] entreprises-là.
+[2953] Donc oui évidemment on mettra énormément
+[2955] de l'accent sur il y a pas il y a pas de
+[2957] succès
+[2959] pour Dust au à la hauteur de l'ambition
+[2962] qu'on a placée sans sans succès aux
+[2963] États-Unis.
+[2964] Là vous avez déjà des premiers clients
+[2966] aux US il me semble.
+[2967] avec des entreprises comme Watershed par
+[2969] exemple donc qui est dans le
+[2972] la lutte contre le changement climatique
+[2973] en permettant aux entreprises de
+[2974] comprendre exactement d'où viennent
+[2975] leurs émissions carbone et qui
+[2977] accompagne ouais
+[2979] du Fortune 100, enfin je parle des parmi
+[2981] les les plus grosses entreprises au
+[2982] monde. On travaille aussi avec Front
+[2985] alors qui est une entreprise basée aux
+[2987] États-Unis mais avec
+[2988] une histoire partagée avec la France. On
+[2991] travaille aussi avec Clay, c'est
+[2992] intéressant parce que tu tu parlais de
+[2993] petites entreprises verticalisées. Clay
+[2995] c'est une entreprise qui utilise l'IA
+[2998] pour vendre un un écosystème, enfin en
+[3001] tout cas un cockpit de sales enablement
+[3003] à des entreprises et pour leur sales
+[3005] enablement, ils utilisent Dust en
+[3006] interne.
+[3007] C'est une entreprise dont le produit
+[3008] fait de l'IA verticalisée pour les sales
+[3010] et qui ont besoin d'une plateforme
+[3011] horizontale en interne comme Dust.
+[3013] Bah oui, parce que leurs problèmes sont
+[3014] exactement ceux des clients qu'on essaie
+[3015] de servir. C'est une entreprise qui
+[3016] grandit très vite, qui a beaucoup de
+[3017] succès, qui a compris où était sa valeur
+[3019] dans le marché, qui se concentre sur ses
+[3021] compétences clés et qui délaisse le
+[3023] reste parce que c'est pas son job de
+[3025] construire un énième Clay GPT en interne
+[3028] comme on a vu trop d'entreprises le
+[3029] faire parce que trois ingénieurs se
+[3030] battent depuis euh la sortie de chat GPT
+[3033] euh pour en avoir la paternité en
+[3035] interne, quoi. C'est-à-dire on il y a il
+[3037] y a une rationalisation euh chez ces
+[3040] clients-là de ce qui est à construire et
+[3041] de ce qui est à acheter.
+[3044] Très clair. Et et aux US
+[3046] face à qui vous êtes enfin si tu
+[3049] aujourd'hui face à qui vous êtes en
+[3050] concurrence et c'est qui tes principaux
+[3052] concurrents, tu penses Est-ce que c'est
+[3055] euh alors plus tard si tu vas sur le
+[3057] segment plus gros corporate, c'est euh
+[3059] Microsoft
+[3061] euh bon après Microsoft, ils font tout
+[3062] mais qui qui distribuent leur propre qui
+[3066] intègrent les LLM d'OpenAI et qui euh et
+[3069] qui distribuent leurs propres copilotes.
+[3071] Est-ce que c'est des entreprises Moi
+[3073] dans les deux entreprises qui font un
+[3074] peu parler d'elles, tu as Glean et tu as
+[3075] Writer. Est-ce que tu les considères
+[3077] comme un C'est quoi un peu l'écosystème
+[3079] dans lequel tu te situes
+[3080] aux ?
+[3080] Ouais, je pense que
+[3083] tout est nuancé parce que on est tous
+[3085] obsédés de produit, donc que les gens
+[3086] vont dire "Mais ça a l'air d'être la
+[3087] même chose." et les fondateurs vont dire
+[3088] "Mais ça n'a rien à voir." Donc euh je
+[3089] je
+[3090] Glean pour moi c'est un produit de
+[3092] recherche documentaire en entreprise qui
+[3094] a très bien pris le virage de l'IA.
+[3096] C'est une entreprise qui existe depuis
+[3097] 6-7 ans.
+[3098] ils étaient là depuis très longtemps.
+[3099] Ouais. Et qui a décollé parce que le
+[3102] problème de l'accès aux informations en
+[3105] interne a mûri. Il y a beaucoup de
+[3107] fondateurs de boîtes de recherche
+[3108] documentaire en interne qui n'ont pas
+[3109] marché qui se tapent la tête contre les
+[3112] murs pour comprendre pourquoi ça a
+[3113] marché pour eux.
+[3113] chez Balder à l'époque où j'étais chez
+[3114] Balder on disait c'est un secteur qui ne
+[3116] marchera jamais parce que trop compliqué
+[3119] d'accéder à toute l'information et les
+[3120] enjeux de sécurité, j'imagine, les
+[3121] enjeux de
+[3122] Ouais, c'est une équipe extrêmement
+[3123] forte qui avait résolu ce problème en
+[3125] interne à Google donc ils ont tout à
+[3126] fait les compétences pour le faire.
+[3128] Euh,
+[3129] je Aujourd'hui je pense que Glean parle
+[3131] peut-être à des clients plus gros que
+[3133] nous.
+[3134] Euh, quand on leur demande comment ils
+[3135] se servent de Glean, ils nous disent bah
+[3136] c'est pour faire de la recherche
+[3137] documentaire en interne. Quand on leur
+[3138] demande s'ils utilisent la partie
+[3140] générative de Glean, c'est moins
+[3142] courant.
+[3143] on leur demande s'ils utilisent Glean
+[3144] pour créer ou orchestrer des flottes
+[3146] d'agents qui vont permettre d'augmenter
+[3148] le travail dans des conditions un peu
+[3150] cross-fonctionnelles, là il y a pas
+[3151] grand monde qui répond oui. Donc je
+[3153] pense que c'est un produit différent.
+[3154] C'est un produit qui marche très bien,
+[3155] c'est un produit qui a une équipe très
+[3156] grosse et qui peut toujours décider de
+[3157] faire demain exactement la même chose
+[3158] que Dust hein, mais ça c'est ce qu'on
+[3159] disait toujours de Google il y a 10 ans.
+[3161] Mais pour moi c'est un produit
+[3162] fondamentalement différent. Writer c'est
+[3164] un produit qui a démarré en vendant euh
+[3166] des services surtout aux équipes
+[3168] marketing à des très très très gros
+[3169] clients. Donc qui parlent de L'Oréal
+[3172] comme un gros succès client. Le la
+[3174] pénétration de Writer au sein des
+[3177] équipes euh des entreprises dans
+[3179] lesquelles euh est distribuée est plutôt
+[3181] plus faible.
+[3181] Nous on est dans des entreprises, on est
+[3183] parfois utilisés par 80 % des employés
+[3185] tous les jours.
+[3187] Donc c'est plus proche d'un système de
+[3189] messagerie interne euh que d'un
+[3192] système pour des fonctions précises ou
+[3194] pour des équipes précises.
+[3195] Et en plus eux j'avais l'impression
+[3196] qu'ils mettaient beaucoup en avant
+[3197] d'avoir développé leur propre modèle
+[3199] aussi. Là où vous le positionnement dans
+[3201] Dust c'est de dire on fait la partie
+[3203] produit mais la partie modèle on prendra
+[3205] le meilleur de ce qui existe sur le
+[3206] marché. Vous intégrez aujourd'hui à tous
+[3208] les modèles euh du marché que ce soit
+[3210] Deep Seek, le Mistral ou
+[3212] Euh, ouais ouais, Anthropic, Open AI,
+[3214] Gemini, les modèles qui marchent quoi,
+[3216] les modèles dont on a du feedback
+[3218] positif dans le marché que nos clients
+[3220] nous demandent d'intégrer. On n'a pas
+[3221] d'opposition religieuse à ajouter un
+[3223] modèle, c'est juste que on en ajoutera
+[3224] pas 200 juste pour en ajouter 200, on
+[3226] ajoute ce que les que nos utilisateurs
+[3228] veulent.
+[3229] Euh et en effet, je pense que le pari
+[3231] qu'on fait c'est que
+[3232] construire son propre LM aujourd'hui, ça
+[3234] n'est pas une bonne idée quand on n'est
+[3235] pas un labo fondamental.
+[3238] Voilà.
+[3238] Euh et que la différenciation des
+[3241] modèles pour la plupart des cas d'usage,
+[3243] pour la plupart des utilisateurs, ne
+[3245] sera pas évidente.
+[3247] Voilà, si c'est si si jamais je
+[3249] fournissais une machine, je je
+[3251] m'embêterais pas à fabriquer mon
+[3252] électricité aussi en disant "Regardez,
+[3254] c'est ma machine avec mon électricité,
+[3255] elle est parfaite à 50 hertz, 220 volts
+[3257] parce que j'ai l'impression que
+[3258] l'acheteur me dirait "OK, comme beaucoup
+[3261] d'électricité dans le monde, ?"
+[3263] Et ça, c'est notre vision. Et c'est pas
+[3264] dit, hein, on peut peut-être se tromper.
+[3266] Mais je pense que pour des raisons
+[3268] technologiques et
+[3270] de de contraintes de marché, c'est assez
+[3273] évident qu'on va dans on va dans une
+[3274] direction où certains modèles très
+[3276] puissants seront utilisés pour des
+[3277] tâches très complexes, certains modèles
+[3279] moins puissants seront utilisés pour des
+[3280] tâches moins complexes. Dans le monde de
+[3281] l'entreprise, il y a beaucoup de gens
+[3282] qui passent beaucoup de temps à faire
+[3283] des tâches pas très complexes. Et donc,
+[3285] à complexité égale, les équipes de ces
+[3287] entreprises vont devoir baisser le
+[3289] profil de risque de de ces solutions et
+[3291] donc vont chercher à utiliser leurs
+[3292] propres modèles, utiliser des modèles
+[3293] embarqués sur le téléphone ou sur
+[3295] l'ordinateur de l'employé quand il
+[3296] manipule des données sensibles, et
+[3297] cetera et cetera. Donc on est plus dans
+[3299] une situation où on va avoir besoin
+[3300] d'accéder au meilleur modèle ou au
+[3302] modèle le plus adapté pour un cas et où
+[3303] il faut une couche de routage entre le
+[3305] bah les modèles et l'utilisateur. Ce qui
+[3307] est un peu finalement l'histoire de
+[3308] Stripe, hein, c'est aussi fournir une
+[3310] couche compréhensible aux utilisateurs
+[3311] qui fasse abstraction de la complexité
+[3313] de ce que sont les paiements au niveau
+[3315] mondial.
+[3316] Donc là là, ce qu'on voit, enfin, il y a
+[3318] beaucoup d'experts en IA qui disent que
+[3320] donc sur le on a grosso modo
+[3324] on commence à avoir épuisé tout le
+[3326] training data set du contenu sur
+[3330] internet, que
+[3332] l'innovation qu'on voit sur les modèles
+[3334] sortis par OpenAI, elle vient plutôt de
+[3336] ce qu'on appelle
+[3338] le test time compute, c'est donc
+[3341] c'est-à-dire qu'en fait tu vas utiliser
+[3342] plus de puissance de calcul au moment de
+[3346] l'inférence pour faire agir des agents
+[3348] entre eux plutôt qu'avoir un modèle
+[3351] surpuissant qui est hyper intelligent.
+[3353] Et donc cette tendance-là, elle comme tu
+[3355] le disais, elle amène à avoir plus de
+[3357] modèles spécialisés. Euh est-ce que ça
+[3359] veut dire aussi qu'un acteur comme Dust
+[3361] va pouvoir être amené peut-être sur pour
+[3363] un client très précis qui va avoir son
+[3365] use case à
+[3368] aller vers de l'entraînement de modèles
+[3370] ou ça pas du ?
+[3372] Euh quand tu parles d'entraînement, tu
+[3374] parles de post-training, de fine-tuning
+[3375] dans le
+[3376] de on parle de human reinforcement
+[3379] learning, ce genre de ce genre de choses
+[3380] ou pour le moment c'est pas du tout
+[3381] d'actualité, vous êtes vraiment sur ?
+[3383] Je pense qu'il y a eu pendant pendant
+[3384] quelques années, il y a eu pas mal de
+[3385] temps perdu sur l'idée de fine-tuner à
+[3389] tout prix ces modèles. Je pense que
+[3390] beaucoup d'entreprises qui l'ont fait
+[3391] avaient pas compris que
+[3393] la génération suivante de modèles allait
+[3395] de toute façon dominer en performance un
+[3397] modèle fine-tuné euh
+[3399] qui qu'ils avaient construit.
+[3401] Donc c'était clairement pas une super
+[3402] bonne stratégie pour les pour les années
+[3404] passées sur beaucoup de scénarios.
+[3406] Euh sur certaines tâches extrêmement
+[3408] précises où l'automatisation est le but
+[3410] et où il y a énormément de contenu euh
+[3413] idiosyncratique interne et l'entreprise
+[3414] que sur laquelle l'entreprise peut
+[3415] entraîner, il y a il y a théoriquement
+[3416] des cas où ça a du sens d'entraîner ou
+[3418] de fine-tuner et je pense que le
+[3419] fine-tuning et on en entendait un peu
+[3421] plus parler euh à la fin de l'année
+[3423] dernière. Est-ce que ça va devenir une
+[3424] année
+[3425] euh où le post-training fine-tuning va
+[3428] avoir plus de valeur parce qu'on va
+[3429] avoir des gains en ?
+[3431] C'est possible. Mais dans un scénario
+[3433] d'agents, faut quand même se rappeler
+[3434] qu'il y a plein de points où ça peut ne
+[3437] pas bien se passer qui n'ont rien à voir
+[3438] avec le modèle quoi. Quand je pose une
+[3439] question à un agent et que je lui
+[3441] demande de faire une tâche, est-ce que
+[3443] j'ai pris le bon ? Est-ce que j'ai posé
+[3445] la bonne ? Est-ce que j'ai accès aux
+[3446] sources documentaires qu'on m'a dit que
+[3448] je pouvais utiliser pour ce ? Est-ce que
+[3450] c'est le modèle qui s'est ? Est-ce que
+[3452] le modèle était juste mal configuré en ?
+[3454] Et ça, cette équation de Drake de la
+[3456] performance d'un agent, elle est
+[3458] complexe à comprendre et c'est pas dit
+[3460] que dans la plupart des cas, ça soit la
+[3462] faute du modèle. Donc, je pense que je
+[3463] regarderai ça de façon un peu
+[3464] circonspecte.
+[3465] Mais on sera toujours à l'écoute de nos
+[3466] utilisateurs qui nous disent "On a
+[3468] besoin de plus de performance ici et on
+[3469] pense que le post-training c'est la
+[3470] solution." La structure de Dust
+[3472] permettrait évidemment de de brancher un
+[3475] modèle spécifique qui tourne sur une
+[3477] instance dédiée pour un cas précis.
+[3480] C'est vrai que pour le moment, c'est pas
+[3481] encore c'est pas le cas forcément parce
+[3482] qu'en fait la modèle après modèle, les
+[3485] incréments de performance étaient tels
+[3486] que
+[3487] ça ne faisait pas encore sens, entre
+[3488] guillemets, de de prendre un modèle
+[3490] d'usage pour lesquels Dust est
+[3491] principalement utilisé.
+[3492] Encore une fois, je pense qu'il y a des
+[3494] cas à très très très très haut volume
+[3496] euh où on pouvait faire des gains euh en
+[3499] pouillème de pourcentage qui valaient le
+[3501] coup euh et où ça ça avait totalement du
+[3503] sens de le faire.
+[3504] D'ailleurs, je pense que Mistral le fait
+[3506] avec certains de ses clients sur des cas
+[3507] où ça a du sens. Il le ferait pas si ça
+[3508] n'avait pas de sens. Et ce qui est
+[3510] intéressant, c'est que depuis janvier,
+[3512] on entend euh moins parler de
+[3513] fine-tuning parce qu'on entend parler de
+[3515] reasoning et donc maintenant, on rentre
+[3517] dans un paradigme où on se rend compte
+[3518] que des modèles avec des capacités de
+[3520] raisonnement euh plus approfondies, euh
+[3523] bah ça pose de nouvelles questions. Ça
+[3525] pose la question de la latence. Est-ce
+[3527] que je vais rester 10 minutes à regarder
+[3528] un petit truc qui tourne sur mon ordi en
+[3530] disant qu'il faut attendre la ? Ça pose
+[3532] la question de l'autonomie. Est-ce que
+[3533] l'agent va réussir à faire des ? Est-ce
+[3535] que j'ai envie qu'il fasse des ? Est-ce
+[3536] que j'ai envie d'être consulté avant
+[3537] qu'il fasse des ? Toutes ces
+[3538] questions-là, c'est des questions de
+[3539] produit, c'est pas des questions de
+[3540] modèle. C'est des questions qui sont
+[3542] finalement liées à au contrôle que les
+[3545] humains veulent avoir dans l'exécution
+[3546] des tâches qui euh dont ils sont
+[3548] responsables dans une entreprise. Donc,
+[3549] ça c'est intéressant pour nous parce que
+[3550] je pense que ça ouvre une phase où
+[3552] l'année de l'accélération en 2024, bon,
+[3555] bah peut-être que c'est l'année de
+[3556] l'orchestration en 2025. Et l'idée que
+[3557] maintenant, on va devoir vraiment
+[3558] raisonner euh en équipe à se dire "OK,
+[3561] on a une flotte d'agents à notre
+[3562] disposition. Qu'est-ce qu'ils sont en
+[3563] train de ? Comment est-ce qu'on les ?
+[3565] Qu'est-ce qu'on leur fait faire ?
+[3566] Comment est-ce qu'on fait le point avec
+[3567] ? À quelle heure est-ce qu'on se revoit
+[3569] et tout ? Voilà. Donc ça c'est des c'est
+[3571] c'est clairement une des tendances assez
+[3572] importantes et intéressantes en ce
+[3573] moment.
+[3575] Et Dust d'ailleurs, vous gérez donc les
+[3577] les les LLM, les modèles appliqués au
+[3578] texte. Vous utilisez des modèles sur de
+[3581] la vidéo, sur de ? Est-ce que c'est
+[3584] quelque chose qui est sur votre ?
+[3586] Euh alors on utilise pas encore de
+[3588] modèles de traitement de vidéo, mais on
+[3590] a des clients qui le font en amont de
+[3593] l'inclusion de la donnée qui en résulte
+[3594] dans le contexte de Dust. Nous pour nous
+[3596] encore Dust, l'idée c'est est-ce que la
+[3597] donnée est en contexte, est-ce qu'on
+[3598] peut y ? Euh l'audio c'est une très
+[3601] c'est une bonne question. Je pense que
+[3602] l'audio est est ça a beaucoup de
+[3604] possibilités. Pour moi, c'est une
+[3605] solution très riche parce que elle est
+[3606] assez naturelle et est très facile. Pour
+[3608] les gens occupés, généralement les
+[3609] dirigeants, euh c'est une façon simple
+[3612] de déléguer des tâches. C'est depuis
+[3613] très longtemps on le faisait avec un
+[3614] dictaphone avant et et et de donc je
+[3617] pense que c'est une interface hyper
+[3618] intéressante. C'est en fait aussi une
+[3619] interface qui permet d'augmenter la
+[3621] performance des agents parce que en
+[3623] général quand on parle, on on se répète,
+[3625] on dit plein de choses, on donne
+[3626] beaucoup de contexte, on donne beaucoup
+[3628] de tokens et donc en fait on peut
+[3629] augmenter la qualité euh de du du du
+[3632] workflow. Euh donc ça je pense que c'est
+[3634] c'est un truc qu'on qu'on regarde
+[3635] aujourd'hui Dust, vous
+[3637] est-ce qu'aujourd'hui sur tous les Zoom,
+[3638] les calls, vous avez accès à cette
+[3640] donnée-là ou alors vous vous intégrez à
+[3641] des solutions euh qui font le la
+[3643] retranscription de ces de ces ?
+[3646] on reçoit euh tout tous les transcripts
+[3648] de toutes les solutions auxquelles nos
+[3649] clients décident de nous connecter.
+[3652] Donc nous on on voit un transcript et on
+[3654] voit euh des des liens qui permettent de
+[3656] renvoyer au moment de la vidéo quand
+[3658] c'est quand quand c'est intégré comme
+[3659] ça, ouais.
+[3661] Voilà, on est une semaine après euh le
+[3662] AI Summit
+[3664] qui a réuni tout le gratin mondial de la
+[3666] tech, des politiques
+[3667] euh en France. Mistral qui a beaucoup
+[3670] été beaucoup été mis en avant parce
+[3672] qu'ils ont sorti euh
+[3674] leur leur modèle B2C, enfin leur produit
+[3676] B2C euh le chat à ce moment-là.
+[3678] Euh qu'est-ce que tu en retires toi de
+[3681] cette de cette semaine-là ?
+[3684] Qu'est-ce que est-ce que ce que ça peut
+[3685] avoir ça a eu un impact sur DS est-ce
+[3686] que ça en aura ?
+[3689] Bah euh
+[3690] Moi moi je trouve que c'est positif. Moi
+[3691] je trouve que c'est c'est c'est c'est
+[3693] c'est clair que la France a une carte à
+[3694] jouer euh dans euh dans cette révolution
+[3697] technologique. On est bien placé. Alors
+[3699] on est peut-être moins bien placé que
+[3700] les US ou la Chine mais on est plutôt
+[3702] mieux placé que pas mal de d'autres
+[3704] acteurs mondiaux et donc autant en
+[3705] profiter.
+[3706] Et pour moi c'était une belle façon de
+[3709] repasser ce message-là qu'on a on a des
+[3711] choix à faire au niveau politique au
+[3713] niveau national qui guideront notre
+[3715] capacité à participer à cette course
+[3718] cette course technologique.
+[3719] Si tu étais politique, qu'est-ce que tu
+[3720] changerais aujourd'hui pour pour que la
+[3723] France euh rattrape son retard sur les
+[3726] les ?
+[3727] Il y a pas énormément de choses
+[3729] qui sont pas déjà en train d'être faites
+[3731] que que je ferais. C'est juste que
+[3732] parfois il faut du temps.
+[3734] Euh mais euh euh les meilleurs modèles
+[3737] aujourd'hui le paradigme c'est que c'est
+[3738] les meilleurs chercheurs qui ont accès
+[3741] euh enfin ou qui créent les meilleurs
+[3742] algorithmes sur le plus grand nombre de
+[3744] puces.
+[3745] On n'a pas d'entreprise française qui
+[3746] permet de construire de bout en bout des
+[3747] puces. Donc l'idée c'est que soit enfin
+[3750] à horizon 20 ans on arrivera pas à le
+[3751] faire donc on va être obligé de les
+[3752] acheter. Mais on peut les faire tourner
+[3754] en France parce qu'on a de l'électricité
+[3755] décarbonée qui est assez pilotable. Donc
+[3757] ça c'est un ça c'est un atout.
+[3758] Euh et donc maximiser l'utilisation de
+[3761] cette énergie bas carbone pilotable pour
+[3764] euh la mettre à disposition de centres
+[3765] de données qui vont ensuite permettre à
+[3767] des chercheurs en France ou à des
+[3768] entreprises en France d'entrer en scène
+[3770] ou de de faire de la référence ça me
+[3771] paraît intéressant.
+[3774] Au niveau européen, je pense qu'il faut
+[3775] c'est c'est c'est intéressant euh qu'on
+[3778] fasse le point sur les rapports de
+[3780] collaboration ou et ou de force entre
+[3782] les différentes puissances parce que on
+[3784] n'a pas tous les mêmes atouts dans cette
+[3785] course. Donc est-ce qu'on fait tous pour
+[3787] un pour ? Est-ce qu'on fait pas ?
+[3788] Comment est-ce qu'on en ? Qu'est-ce
+[3790] qu'on en retire sinon on est plutôt bien
+[3792] placé et qu'on emmène les ? Ça c'est les
+[3794] ça c'est C'est moi les les gros défis
+[3795] mais je suis pas je suis pas pessimiste.
+[3798] Alors, qu'est-ce que tu qu'est-ce que tu
+[3799] penses de Ah il y a alors il y a deux
+[3802] trois semaines Deep Sick a sorti euh a
+[3804] sorti euh enfin a un peu émergé à la
+[3807] enfin ils existaient depuis longtemps,
+[3807] mais disons que ils ont ils ont fait les
+[3810] gros titres parce que ils ont notamment
+[3812] annoncé enfin ils dans les benchmarks
+[3814] face aux modèles de
+[3816] d'Open AI, ils arrivaient à euh à être
+[3819] en part sur différents benchmarks en en
+[3822] ayant
+[3823] paraît-il dépensé euh uniquement 6
+[3825] millions sur
+[3826] sur sur le training de leur de leur
+[3828] modèle.
+[3829] Euh une semaine après juste pendant le
+[3831] AI Summit, le chat euh euh que j'ai pu
+[3834] tester et qui semble quand même assez
+[3836] performant sur la couche fondationnelle,
+[3838] comment tu vois fondationnelle, comment
+[3839] tu vois le le marché le marché ? Est-ce
+[3843] que tu penses que euh tout est joué et
+[3846] qu'en fait euh euh Open AI a trop ?
+[3849] Est-ce que tu penses que c'est l'open
+[3850] source euh qui va gagner euh avec Deep
+[3853] Sick euh avec ? Comment tu ? Est-ce que
+[3856] du coup euh c'est une course un peu à
+[3858] l'échalote avec énormément d'entreprises
+[3861] qui investissent massivement et
+[3864] tout va finir par se commoditiser euh et
+[3866] que et que deux trois acteurs vont
+[3868] empocher une grosse partie euh euh de la
+[3871] mise
+[3872] avec comme aujourd'hui on a on utilise
+[3874] trois ou quatre principaux cloud
+[3875] providers, comment tu vois les les
+[3876] choses se ?
+[3879] Sur le paradigme de modèle actuel, euh
+[3884] plus gros, c'est mieux en gros. Donc les
+[3886] plus gros ont plutôt plus d'avantages et
+[3888] c'est compliqué de commencer quand on
+[3890] est petit.
+[3890] Mais il est pas dit que le paradigme
+[3893] actuel suffise euh à euh prétendre le
+[3896] progrès qu'on attend des dizaines
+[3897] d'années à venir, quoi.
+[3899] Donc je pense que la course elle est pas
+[3901] finie puisque il y a encore la
+[3902] possibilité de trouver des manières plus
+[3904] efficaces d'utiliser euh des puces en
+[3906] silicium pour faire des calculs
+[3908] complexes qui permettent de fournir de
+[3910] l'intelligence euh à tout le monde et
+[3914] donc la la recherche fondamentale et les
+[3916] labos de recherche, le classement
+[3918] d'aujourd'hui est vraiment pas forcément
+[3920] le classement de demain. D'un point de
+[3921] vue économique
+[3922] j'ai l'impression que les labos qui sont
+[3924] nés de cette révolution et et qui ont
+[3927] pris une longueur d'avance ont en effet
+[3929] cet avantage de marque et ce
+[3931] positionnement. Mais si jamais euh la
+[3934] commoditisation des modèles pour
+[3935] lesquels euh ils sont connus et est
+[3938] avérée, comment est-ce qu'ils vont se
+[3939] soutenir commercialement par rapport à
+[3941] des entreprises qu'on les rend plus ? Je
+[3943] pense à Google qui à mon avis a des
+[3945] modèles extrêmement performants et les
+[3946] rend plus solides, quoi.
+[3947] Mais avec DeepSeek, est-ce que tu penses
+[3948] que l'argent reste quand même un facteur
+[3950] parce que DeepSeek Je pense que c'est
+[3951] une simplification de dire que c'est 6
+[3952] millions pour entraîner DeepSeek.
+[3954] Je sais pas d'ailleurs si qui que ce
+[3956] soit sait exactement combien ça a coûté
+[3957] pour entraîner DeepSeek et il me semble
+[3959] quand même que c'est euh c'est plutôt
+[3962] euh l'analogie, c'est plutôt de dire une
+[3963] fois qu'on a compris comment vraiment
+[3965] tout faire et tout s'entraîner, le le la
+[3967] dernière phase d'entraînement euh elle
+[3970] coûte euh 6 millions, quoi. La la
+[3971] Et du coup, dans un monde où les talents
+[3973] peuvent aller d'une entreprise à
+[3974] l'autre, on l'a vu, il y a plein
+[3975] d'anciens employés de Google qui ont
+[3976] monté
+[3976] pour moi comme parallèle, c'est que je
+[3977] pense qu'il faut voir la concentration
+[3979] des talents en recherche et en recherche
+[3982] appliquée, euh ça se rapproche plus de
+[3985] de la Formule 1 que du SaaS classique,
+[3988] Et que on a tous vu Drive to Survive sur
+[3991] Netflix et quand deux pilotes passent
+[3994] d'une écurie à une autre, eh ben tout
+[3995] d'un coup la course se change, quoi. Et
+[3996] donc en fait, je pense qu'il faut pas
+[3998] trop se conforter sur le ou les
+[4001] classements actuels. Et après, sur la
+[4003] performance des modèles pour les cas
+[4004] d'utilisation qui seront les plus utiles
+[4006] à l'avenir, ben
+[4008] il y a pas beaucoup de différence entre
+[4009] des modèles qui sont déjà open source et
+[4011] des modèles de pointe pour se demander
+[4013] ce qu'on peut faire avec ce qu'il y a
+[4014] dans le frigo en 20 minutes, hein, ça
+[4016] c'est ça c'est c'est bâché. Sur les
+[4018] sujets de pointe, la recherche
+[4019] scientifique, la découverte de nouvelles
+[4021] molécules, la création de progrès
+[4023] scientifique formel, donc prouvé où le
+[4025] l'hallucination n'est pas un risque et
+[4027] où on peut dire j'appuie sur le bouton,
+[4028] je fais revoir le papier dans Nature et
+[4031] ça passe.
+[4032] Là, il y a encore beaucoup beaucoup
+[4034] beaucoup d'avantages au premier labo, au
+[4035] plus gros labo et à ceux qui ont les
+[4037] puissances de calcul les plus élevées
+[4038] puisqu'on est encore dans ce paradigme
+[4039] où plus de puissance de calcul donne de
+[4040] meilleurs résultats quoi.
+[4042] Mais je pense que ça ça représentera euh
+[4044] pas euh les modèles qu'utiliseront la
+[4047] plupart des gens pour les cas de tous
+[4048] les jours nécessairement.
+[4051] Trop bien. Alors Dust, tu communiques un
+[4053] peu euh
+[4054] sur tes chiffres, tu vous communiquiez
+[4056] sur 1 million d'ARR, il me semble, l'été
+[4058] dernier. Là, vous en êtes vous en êtes ?
+[4061] Et vous en serez où à la fin de ? Ouais.
+[4063] Si tu devais te mouiller, vas-y.
+[4065] Bah, on on grandit pas mal. Euh on a on
+[4069] a bien terminé l'année. On est plutôt
+[4071] euh Enfin, l'idée c'est quand quand
+[4072] est-ce qu'on arrivera à cinq fois plus
+[4074] que ça quoi.
+[4075] Et quand est-ce qu'on arrivera à 10 fois
+[4076] plus que ? Dans dans à assez court
+[4078] terme. Je pense que c'est important pour
+[4080] nous
+[4081] de je
+[4083] Arriver de zéro à un, les gens disent
+[4084] que c'est quand même assez c'est facile
+[4086] euh ou en tout cas que ça prouve rien.
+[4087] Arriver de un à 10, c'est d'ailleurs une
+[4089] stat intéressante que nos investisseurs
+[4091] ont partagé avec nous. Je pense que un
+[4092] des facteurs relativement
+[4095] déterminants ou indicateurs de
+[4097] performance de grandes boîtes, c'est pas
+[4099] le temps qu'ils ont mis à faire zéro à
+[4100] un, c'est plutôt le temps qu'ils ont
+[4101] fait qu'ils ont mis à faire un à 10.
+[4104] Après, je pense que certains équilibres
+[4106] sont un peu bousculés avec la façon dont
+[4108] on voit des Lovable ou des Cursor passer
+[4111] de zéro à 50 ou zéro à 100 assez
+[4114] C'est compliqué de savoir où ça va
+[4115] s'établir tout ça parce que je pense que
+[4116] si on arrive à générer ça très très
+[4118] vite, les petits copains arrivent à
+[4119] générer ça très très vite quoi.
+[4121] Donc le la stickiness de de ce chiffre
+[4122] d'affaires, je je sais pas encore ce
+[4124] qu'on a prouvé ou ce qu'on est encore en
+[4125] train de découvrir. Mais ouais ouais non
+[4127] euh mais ce qui m'intéresse le plus,
+[4129] c'est le nombre d'utilisateurs actifs.
+[4130] Je pense que voilà, de passer nous on
+[4131] est plutôt de l'ordre de grandeur de
+[4132] 10000 utilisateurs actifs quotidiens. Et
+[4135] euh et c'est ça qu'on voit augmenter à
+[4138] la fois chez les clients existants et
+[4139] avec l'arrivée de nouveaux clients. Euh
+[4141] ça c'est ça c'est ça c'est super. Et je
+[4143] pense que la profondeur des cas d'usage
+[4145] qui déploie sur Dust est aussi vraiment
+[4147] un signe hyper encourageant. On a des
+[4150] utilisateurs pas forcément techniques ou
+[4151] qui connaissaient rien l'année dernière
+[4153] qui utilisent Dust pour faire des choses
+[4154] qui sont vraiment
+[4156] impressionnantes. Enfin, on a on a on a
+[4158] on a organisé euh
+[4160] des rencontres entre les builders de de
+[4162] notre communauté et ils se partagent des
+[4164] trucs où moi parfois je suis je suis
+[4165] assez content.
+[4166] à créer un écosystème finalement en fait
+[4168] y a un écosystème qui est ouais en
+[4169] Le personnel
+[4170] Mais mais mais ouais, il y a évidemment
+[4171] un écosystème de gens qui sont
+[4172] intéressés par cette techno, qui ont
+[4174] envie de se former, qui ont le la chance
+[4175] d'être dans une entreprise qui leur a
+[4176] fourni une plateforme pour découvrir et
+[4179] améliorer leur quotidien. Et ça c'est
+[4181] c'est une richesse pour nous, c'est
+[4182] vraiment une chance.
+[4182] C'est aussi une chance de construire un
+[4184] produit qu'on utilise tous les jours en
+[4186] interne et dont l'utilisation nous
+[4187] permet directement d'améliorer le
+[4189] produit. Parce qu'il y a pas beaucoup de
+[4190] produits qui peuvent fournir ça aux
+[4192] personnes qui rejoignent une équipe
+[4193] Parce que on est tous en train
+[4194] d'utiliser Dust toute la journée. Donc
+[4196] il y a pas beaucoup de bugs qui passent
+[4197] longtemps sans être repérés.
+[4200] Bon, on arrive bientôt à la fin de de ce
+[4202] podcast. Je te propose un petit exercice
+[4204] fun pour finir. Euh, je te pose des
+[4207] questions et puis tu me réponds euh euh
+[4210] avec ce qui te passe par la tête.
+[4212] Est-ce que tu es ?
+[4214] Alors, tu peux dîner avec la personne de
+[4215] ton choix, vivante ou décédée, qui
+[4217] est-ce que tu ?
+[4218] Euh Gertrude Bell.
+[4221] D'accord, c'est ?
+[4222] Ouais, c'est une femme exploratrice du
+[4225] Moyen-Orient de la fin du 19e siècle qui
+[4228] à mon avis devait être extrêmement
+[4229] extrêmement intéressante. Enfin, voilà,
+[4231] après avoir lu sa biographie, je me dis
+[4232] que ça serait
+[4233] qu'est-ce qu'elle a fait de C'est quoi
+[4234] ses deux trois
+[4235] Ouais,
+[4236] collaboration avec les puissances
+[4238] locales, participation directe ou
+[4240] indirecte à la manière dont la
+[4241] colonisation se se déployait à ce
+[4243] moment-là, espionnage. Mais tout ça avec
+[4246] un côté Lawrence d'Arabie assez classe,
+[4249] bien éduquée, avec beaucoup de culture
+[4252] qui est qui est fou. Voilà.
+[4255] Donc non, pas Elon Musk.
+[4257] Quel est le meilleur conseil business
+[4259] qu'on t'ait ?
+[4261] Je pense que celui de comprendre si on
+[4262] est dans au niveau perso, si on est dans
+[4264] un siège où on a 2 ans d'expérience en 5
+[4267] ans ou 5 ans d'expérience en 2 ans.
+[4268] Celui-là, il m'a pas mal marqué. Euh
+[4270] alors pour un et pour le conseil
+[4271] business
+[4273] le plus important, c'est c'est de pas se
+[4274] mentir quoi. Il y a pas de meilleur
+[4275] conseil que build something people want.
+[4278] Et tous les mots sont importants et il
+[4280] faut pas se mentir. Il faut pas passer
+[4281] une journée à se mentir. Donc mais si on
+[4283] le si on le construit et que les gens le
+[4285] veulent vraiment et qu'ils se mentent
+[4286] pas quand ils achètent, ça marche.
+[4289] Aujourd'hui, euh pour combien est-ce que
+[4291] tu vends ?
+[4293] Ah euh aujourd'hui, c'est pas une
+[4294] question. Il y a vraiment c'est pas
+[4295] c'est pas par hubris hein. Je pense
+[4297] qu'évidemment euh euh 1000 milliards de
+[4300] dollars ça permettrait de régler
+[4302] beaucoup de problèmes au niveau
+[4303] international, mais c'est vraiment pas
+[4305] la question qui nous passe par la tête.
+[4306] C'est quand pour revenir à la façon dont
+[4309] euh euh cette année, moi on a monté
+[4310] Dust, euh on
+[4313] on l'a monté pour justement pas se poser
+[4314] la question à ce moment-là. Euh donc
+[4316] j'ai j'ai j'ai pas de chiffre parce que
+[4318] je pense que c'est j'ai j'ai pas pensé.
+[4321] Faut pas être naïf hein. 1000 milliards,
+[4322] je dis oui, voilà. Mais euh
+[4324] mais il y a beaucoup de chiffres
+[4325] même 1000 milliards, mais
+[4326] a beaucoup de chiffres très très hauts
+[4328] auxquels je dirais non euh parce que
+[4330] aujourd'hui, il y a trop de choses
+[4331] intéressantes à faire. Et puis quand toi
+[4332] tu dois reconnaître aussi mais des des
+[4334] fondateurs qui vendent de leur
+[4335] entreprise, et ils ils font quoi après
+[4337] en ? Ils
+[4339] vont
+[4339] Ils vont en remonter une autre toi et
+[4340] moi.
+[4340] Ouais ou alors ils remontent la même
+[4342] boîte 5 ans plus tard ou 3 ans plus
+[4343] tard, enfin euh on a une chance
+[4345] incroyable avec le produit qu'on a
+[4347] construit et les premiers utilisateurs
+[4348] qui nous font confiance, on va pas
+[4349] casser ça quoi.
+[4351] Bon et si tu dois choisir si Dust doit
+[4353] si tu dois choisir ton acquéreur entre
+[4355] Databricks, OpenAI ou ?
+[4364] Euh Databricks c'est intéressant. Si
+[4366] c'est forcément un des ?
+[4369] Et pourquoi ?
+[4371] Bah je pense que Databricks euh enfin en
+[4373] tout cas, ce que je trouve intéressant
+[4375] dans le produit Databricks, c'est que
+[4376] c'est une couche qui a Ils ont réussi à
+[4377] expliquer une couche d'interface entre
+[4380] la donnée d'une entreprise et ce que les
+[4381] utilisateurs doivent en faire. C'est un
+[4382] produit d'une autre époque, mais
+[4384] Mais voilà. Bah, après, euh ouais, je
+[4386] sais pas parce qu'aujourd'hui
+[4387] aujourd'hui, hein, OpenAI, euh
+[4390] compliqué.
+[4391] Ouais, c'est très cher déjà OpenAI.
+[4394] Ton meilleur souvenir avec ?
+[4396] Euh, mon meilleur souvenir avec Dust,
+[4401] Pff, ouais, c'est très jeune Dust, donc
+[4402] il y en a il y en a plein, mais ils sont
+[4403] ils sont tous peut-être un peu
+[4405] anecdotiques, mais ouais, le
+[4406] déménagement dans nos nouveaux bureaux,
+[4407] c'était vraiment une une première étape.
+[4409] Euh, l'acceptation de l'offre d'embauche
+[4412] de notre première employée, c'est c'est
+[4414] c'est un moment fou, quoi, parce que je
+[4415] pense que avec Stan, on se connaissait
+[4417] assez bien, donc le entre le moment où
+[4418] on a décidé de bosser ensemble et le
+[4420] moment où on a quelqu'un dans la pièce
+[4422] euh qui n'est pas nous, euh c'était
+[4424] assez flou, mais je pense que c'est
+[4425] devenu très réel quand on avait une
+[4426] troisième personne dans la salle et
+[4427] qu'on s'est dit "OK, on a réussi à
+[4427] convaincre quelqu'un, maintenant il faut
+[4428] vraiment y aller."
+[4430] Ton souvenir le plus douloureux avec ?
+[4432] J'ai pas encore eu de souvenir
+[4434] douloureux, ça a été plutôt fair weather
+[4436] sailing pour l'instant. Euh il y a des
+[4439] personnes à qui on a demandé de nous
+[4441] rejoindre qui nous ont pas rejoint. Euh,
+[4442] si, je pense que c'est peut-être ça le
+[4444] souvenir le plus douloureux, en fait.
+[4445] Une personne
+[4446] euh à qui on euh tout tout tout tout
+[4447] début de Dust, à qui on a demandé de
+[4449] nous rejoindre qui qui nous a pas
+[4450] rejoint et peut-être
+[4450] nous dire qui c'est ou tu le gardes pour
+[4452] Je préfère que c'est c'est pas moi,
+[4454] c'est pas à moi nécessairement de de de
+[4456] de de le dire, mais en tout cas, cette
+[4457] personne-là aurait apporté énormément à
+[4459] Dust. Je sais pas si on l'a
+[4460] En co-founder ou en en
+[4462] founder, je sais pas comment on aurait
+[4464] formulisé formulé le truc. Et ouais,
+[4466] c'est c'est on aurait Ça aurait été un
+[4468] monde cool avec cette personne à bord.
+[4470] Bon, une question dont le dont le dont
+[4471] le dont le timing est
+[4474] est euh est intéressant vu ce que tu
+[4476] nous as dit un peu plus tôt, mais
+[4477] comment on concilie vie perso et vie pro
+[4478] euh quand on est CEO d'une startup dans
+[4480] l'IA qui va à toute ?
+[4482] Est-ce qu'il faut les Enfin, est-ce
+[4484] qu'il faut les ? Déjà, on les concilie
+[4486] par construction.
+[4487] Non, mais
+[4490] Je pense qu'on apprend pas mal de choses
+[4491] sur le déséquilibre en ce moment, dans
+[4493] la nutrition, dans l'exercice.
+[4496] On n'a pas été conçu pour manger quatre
+[4498] fois par jour à heure fixe. On a plutôt
+[4499] été conçu pour manger euh euh tout ce
+[4502] qu'on pouvait quand on trouvait euh des
+[4503] trucs dans la forêt et puis ensuite
+[4504] attendre la prochaine la prochaine euh
+[4507] le prochain champ de myrtilles. Euh et
+[4509] le déséquilibre est pas nécessairement
+[4510] pour moi euh une mauvaise chose, donc le
+[4512] plus important, c'est d'être
+[4514] honnête avec soi-même et avec ce qu'on
+[4516] aime et euh d'être conscient, quoi. Donc
+[4519] conscient euh d'arriver à prendre le si
+[4521] le signal que ça va ou ça va pas et
+[4523] honnête
+[4524] dans l'analyse qu'on en fait.
+[4526] Je pense que concilier au 150-50, c'est
+[4529] c'est pas le c'est pas le débat.
+[4531] Aujourd'hui, il y a des priorités. Dans
+[4533] une semaine, si euh enfin je j'ai une
+[4535] fille qui naît, j'aurai d'autres
+[4537] priorités et ça sera très déséquilibré
+[4539] dans l'autre sens et je le vois plus
+[4541] comme ça.
+[4542] C'est quoi ton hobby euh
+[4544] favori en dehors de ?
+[4546] Moi, je fais un peu de photo de façon
+[4547] très très amateur et j'aime bien lire.
+[4551] Notamment des bouquins d'aventure
+[4553] d'exploration. Tu citais
+[4556] c'est fou. Le le le
+[4557] la période des grands empires euh
+[4560] 19e siècle, il y a enfin moi on s'est
+[4563] assez mal traités dans l'histoire et je
+[4565] me replonge pas mal dans ces sujets-là
+[4567] euh et ça m'a toujours intéressé de voir
+[4568] comment des civilisations évoluent,
+[4569] meurent. Pas forcément l'Empire romain,
+[4571] mais
+[4571] mais toutes les autres dont on parle
+[4572] pas. Ouais, ouais ouais. Et de se rendre
+[4575] compte que ça se répète quand même
+[4576] souvent, quoi.
+[4577] En tout cas, ça rime.
+[4579] Trop bien. Et peut-être un livre de
+[4580] chevet que tu nous ?
+[4583] Moi, le livre que je trouve hyper
+[4585] intéressant, euh c'est John Boyd, the
+[4587] Fighter Pilot Who Changed the Art of
+[4589] War.
+[4590] Euh c'est la biographie d'un monsieur
+[4592] qui s'appelle John Boyd euh qui a euh
+[4595] raté la guerre de Corée de très peu en
+[4597] pilote de chasse et qui s'ennuyait du
+[4599] coup sur la base, donc a réécrit le
+[4601] manuel de formation des pilotes de
+[4602] chasse et qui a ensuite dédié sa
+[4604] carrière à changer les systèmes dont il
+[4606] comprenait pas pourquoi ils étaient
+[4607] conçus comme ils étaient conçus et qui a
+[4611] à lui tout seul ou avec une toute petite
+[4613] équipe de personnes qui l'ont suivi
+[4615] était à l'origine du F15, du F16, du
+[4618] A10, du char Bradley, des choses que le
+[4620] Pentagone aurait jamais réussi à sortir
+[4622] parce que il il allait complètement au
+[4625] travers de la hiérarchie, recrutait des
+[4626] gens dans la cantine en leur demandant
+[4628] est-ce que tu veux faire quelque chose
+[4629] ou être quelqu'un et quand les gens lui
+[4631] répondaient faire quelque chose, il les
+[4632] recrutait dans sa petite équipe secrète
+[4633] et il se passait des mémos au sein du
+[4635] Pentagone pour arriver à torpiller les
+[4637] projets d'égos des généraux ou alors au
+[4639] contraire accélérer les projets qui
+[4640] avaient beaucoup de sens.
+[4641] C'est fascinant parce que
+[4643] je pense que ça permet de montrer que la
+[4645] la vélocité même dans les grosses
+[4646] organisations, on peut la trouver. Mais
+[4647] il faut être prêt à à quoi ouais à à
+[4650] choquer le système quoi.
+[4651] Excellent.
+[4653] Ben écoute, merci beaucoup Gabriel
+[4654] d'avoir passé cette heure avec avec
+[4656] Ouais, merci Maxime.
+[4657] Salut.

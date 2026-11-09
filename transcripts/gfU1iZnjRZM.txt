@@ -1,0 +1,655 @@
+[0] [Music]
+[1] [Applause]
+[7] good morning and Welcome to our fourth
+[10] annual nexs conf it's so great to see
+[13] you all here today Francisco and online
+[18] joining us from all over the world with
+[22] watch parties going on right now in
+[25] London Sydney Barcelona just all over
+[30] it's so great to be here with you all
+[32] today I started building nextjs seven
+[35] years ago because I wanted to build a
+[38] blazing fast website but I didn't want
+[41] to deal with all the frustrating tooling
+[43] and setup and infrastructure around it
+[46] and it's been incredible to see it grow
+[48] till today to the tune of
+[53] 850,000
+[54] monthly active
+[57] [Music]
+[58] Developers
+[63] we're thank you we're thankful for to
+[64] you all because this is these are the
+[66] folks that are building the web and
+[68] pushing all your incredible deployments
+[70] every single day so thank you and by the
+[73] way that's the population of the city
+[74] that we're in right now San Francisco or
+[77] even 24 full Miami FC stadiums to see
+[82] the goat Messi not Cristiano
+[87] play so the community continues to build
+[90] some of the most incredible websites on
+[92] internet Powers
+[95] nike.com notion.so
+[97] And even that bot that you might have
+[100] talked to recently chat
+[102] gbd in fact the chat Bots and the AI
+[106] think about nextjs how would chbd
+[109] describe it let's see an open source
+[113] react front and development web
+[114] framework no
+[116] hallucinations it's awesome server sight
+[118] rendering just for a sanity check let's
+[121] ask Claude by
+[124] anthropic popular react framework
+[126] awesome thank you Claude well it seems
+[127] like the AI are in alignment good to go
+[131] so to me nexts is not just about making
+[133] Fast sites it's about making sites that
+[136] are
+[136] personal experiences that are delivered
+[139] just in time to every visitor and
+[141] remember their
+[143] preferences what they've been doing
+[145] their card State their logged in state
+[148] just a better web that's unique to each
+[151] individual so we wanted this keynote
+[153] itself to be custom so we built an app
+[156] of course with nextjs app router you can
+[159] head to next sh SL vote I'm going to do
+[162] that myself as
+[165] well and so to make this keynote
+[168] personalized we're going to let you vote
+[169] on what I'm going to talk about next no
+[173] pressure head to next vote and let's see
+[176] what the results are showing so
+[178] far
+[180] seems like all
+[184] right it's going to be a close it's
+[186] going to be a close battle between
+[188] next4 and
+[190] performance this is
+[192] fantastic all right let's get some more
+[195] people
+[198] in it's getting really close all right
+[201] I'll do all of them at
+[204] once concurrently with
+[207] suspense in concurrent mode
+[210] all right let's just go with NEX S14 it
+[212] seems like the clear winner so
+[214] far so the foundation of NEX sh14 is of
+[218] course the app router and it has three
+[221] main pillars number one we built this
+[225] app router on the basis of flexibility
+[227] for the developer we wanted to give you
+[229] all these apis like layouts and Nest
+[232] layouts and the new metadata
+[234] API of course app riter had to be
+[237] powerful the most powerful thing is this
+[239] data fetching system with caching and
+[242] invalidation built in and last but not
+[245] least we're all here for fast so of
+[248] course app router is faster and the key
+[251] thing here is a New Foundation built on
+[253] streaming and HTTP and web
+[257] fundamentals so most importantly one of
+[259] the key tenants of the app router is
+[261] that you can adopt it incrementally
+[263] alongside the pages router even one page
+[266] at a
+[267] time now when we look at the public data
+[270] how far we've come since that initial
+[272] beta it's been incredible that in the
+[274] top 1 million websites on the internet
+[276] we see tremendous growth in app router
+[279] adoption this is folks using and
+[281] deploying react server components to
+[284] production we're very very thankful for
+[287] everybody that's given us feedback and
+[289] battle tested it and put it in front of
+[292] amazing experiences in front of amazing
+[294] users so thank
+[296] you you've entrusted us to build this
+[299] this app router to the maximum level of
+[302] quality possible so today I'm happy to
+[304] announce nexj S14 and guess what nexj
+[309] S14 comes with no new
+[318] apis I know in fact not only does it
+[321] have no new apis we have a surprise
+[324] that'll help you forget about some apis
+[327] that you didn't ever want to learn so
+[329] we'll see towards the end of the
+[331] presentation so over the past year we've
+[334] completely overhauled our documentation
+[336] of course if framework wouldn't be great
+[339] without incredible documentation so we
+[341] have new API reference
+[343] docs we updated the design of the next
+[346] documentation shout out to our design
+[348] team and we improved search so of course
+[352] you want to go to next.org dos and find
+[354] things
+[356] quickly but we more feedback about
+[359] education we heard feedback from the
+[361] community and it turns out you wanted
+[364] more docs more education
+[366] more to uh to help you learn and now I'm
+[371] happy to announce that we've overhauled
+[374] and introduced a brand new nexj s.org
+[377] learn which not only teaches you all the
+[380] new fundamentals of
+[382] nextjs it extends into areas like
+[386] authentication databases everything you
+[388] need to ship a production grade full
+[391] stack nexj application I'm really
+[394] excited because ever since we launched
+[396] the initial next.org learn I know that
+[399] it's educated millions of developers
+[401] that have gone on to create amazing
+[403] things some of the which we highlighted
+[405] earlier so I'm just really excited to
+[407] see what you all are going to build
+[408] after you go through next.org
+[411] learn and in the context of that
+[414] education the things that I hear about
+[417] what you love about nextjs is that that
+[420] ultimately it's opinionated it gave you
+[423] this zero configuration
+[425] Foundation but nexts sits on top of
+[428] react react is that powerful engine that
+[432] is there behind the
+[433] scenes and one of my favorite features
+[436] of react itself is its ability to
+[439] compose into reusable components whether
+[443] it's the UI or whether it's the
+[445] interactivity in the form of
+[448] hooks however
+[450] up until recently this composability
+[452] this uh ability to put things into
+[454] components was limited to just the
+[457] client's side and it hadn't gone yet
+[460] into the
+[462] server so nextjs had an answer for that
+[466] because we use the server more over the
+[469] years we added Hooks and apis that sat
+[472] on top of react itself like get server
+[475] side
+[476] props but we knew that the react team
+[479] had also been experimenting with new
+[480] apis to answer some of these
+[484] challenges those apis include suspense
+[487] and react server components and of
+[489] course as a framework that builds on top
+[492] of react our duty was to expose these
+[494] apis to you and help you explore them
+[497] and experiment with
+[498] them so to do so we needed to do three
+[501] things number one we buil a new router
+[505] that tries to set up itself on top of
+[507] these react foundations
+[510] number two we created a new data
+[512] fetching system that is tightly
+[514] integrated into that router and handles
+[517] things like not just data fetching but
+[519] also caching and
+[521] invalidation and last but not least an
+[524] architecture that is built on
+[527] streaming so that you can fetch data and
+[530] make it available to users without
+[532] blocking
+[533] experiences that Vision materialized
+[536] into the app router that we have today
+[539] for example with server components I can
+[542] grab data and use it directly in
+[544] components that are reusable throughout
+[546] my application the components themselves
+[548] are fetching the data and this is not
+[551] just data coming from my database this
+[553] is any data coming from anywhere in the
+[556] cloud and these data fetching components
+[558] can be shared on
+[561] npm and this power combined with server
+[564] actions means that you can also mutate
+[566] your data alongside react components and
+[569] even invalidated when it's cached it's
+[573] as easy as calling that function it's
+[576] just a JavaScript function in this case
+[578] called action of course this also works
+[581] with
+[582] forms so just like react server
+[584] components these actions can be shared
+[587] and exported to the community through
+[590] npm with nexj S14 server actions are now
+[598] stable
+[601] I'm excited because this was the missing
+[603] piece of the puzzle this makes the
+[605] architecture complete it means that you
+[608] can fetch data and of course you can
+[610] mutate it in a very natural programming
+[613] model of course tightly integrated into
+[616] nextjs so selfishly the best part is
+[620] that you just write a lot less code so
+[623] we have actions on the right hand side
+[624] here the biggest thing is that you're
+[626] not creating all these ad hoc apis in
+[628] order register mutations you don't have
+[631] to mess with all this like client side
+[634] hooks for data fetching you don't have
+[636] to think about two ways of dealing with
+[638] data no disc to use effect but it could
+[642] get messy at time so just having all of
+[645] my data taken care of by the framework
+[647] is pretty
+[648] awesome and while it's still early we're
+[651] seeing incredible results from our
+[653] community so this luxury brand Jennifer
+[656] fer went from a monolithic e-commerce
+[659] experience and went headless with app
+[662] router on versell and xjs and the
+[665] results that we've gotten are pretty
+[667] freaking incredible so not only does it
+[669] load fast which I love but every measure
+[673] of the performance profile of their page
+[676] has improved and this is translated into
+[679] World results for their customers it
+[682] means that customers are happier they
+[684] transact fter and of course Jennifer
+[687] Fischer wherever you are you're happier
+[691] beautiful
+[693] earrings so all of this would not have
+[696] been possible without the amazing
+[698] individuals in the react core team that
+[700] have been incredible Partners to make
+[702] all of this technology possible and all
+[704] of this glorious results possible so
+[706] huge shout out to the react core team
+[710] that have been working on this
+[710] foundational technology for so many
+[717] years
+[720] second the companies that uh basically
+[723] worked with us along the way in in
+[725] betting on Rea components so many of you
+[728] are here today I want to give a shout
+[730] out to clerk superbase Shopify payload
+[733] sanity OCTA and so many other companies
+[736] that are collaborating on bringing their
+[739] data into Rea server
+[742] components this companies they're not
+[745] just uh helping create examples and
+[747] templates and documentation they're
+[749] becoming part of this emergent data
+[751] ecosystem their SD their sdks can now be
+[754] encapsulated as components that are
+[756] easily sharable and they will hide away
+[759] a lot of the complexity that we never
+[760] want to deal with as developers when
+[762] integrating data and other headless
+[764] systems so I'm really excited of this
+[766] immersing data ecosystem around Rea
+[769] server components and it'll open up
+[771] incredible opportunities to many many
+[773] companies in the
+[775] ecosystem third the team the CHR Aurora
+[779] team have been crucial Partners to every
+[782] framework in the ecosystem providing
+[784] guidance and patches and amazing
+[786] feedback to make the entire web better
+[789] many of you at the Chrome Ora team are
+[791] here today so thank you and I look
+[793] forward to hanging out with you as well
+[796] and thank you for your contributions not
+[798] just to this release but over the years
+[800] in the course of
+[804] nexas our individuals in our community
+[807] I'm me incredibly indebted to you all so
+[809] of course this uh this slide is not
+[812] comprehensive there's so many folks but
+[814] I really want to give a shout out to all
+[816] the Educators our community members who
+[819] answer questions take time out of their
+[820] day uh The Helpful friends who give us
+[823] feedback it's been uh yeah let's let's
+[826] give it up for our community it's been
+[827] uh it's been
+[833] incredible thank you all so last but not
+[837] least I want to give a shout shout out
+[839] to The
+[840] Visionaries the Risk
+[843] Takers the ones who dared to go deeper
+[847] you know who I'm talking
+[849] about PHP they had it right all along
+[852] more server simpler programming model
+[855] the OG serverless you deserve your
+[865] accolades love you PHP
+[872] but Jokes Aside folks outside of the
+[874] JavaScript ecosystem have also been
+[876] giving us incredible feedback about how
+[879] to leverage more of the stack maybe go
+[881] back to some of the fundamentals of the
+[883] web and just overall make the the
+[886] internet faster and better so thank you
+[889] all thank you
+[891] [Applause]
+[897] HDMX now now let's talk about
+[899] performance which was that it was almost
+[901] beating nextjs 14 out there so our goal
+[905] with nextjs as far as performance goes
+[908] is we always wanted to abstract away all
+[911] of the complexity to get to a great
+[913] developer experience the core idea of
+[916] NEX is that just run one command you
+[919] don't have to worry about assembling and
+[921] configuring all of the
+[923] tools and since we last spoke we made
+[926] incredible strides in improving the
+[928] compiler infrastructure in a way where
+[931] you really didn't have to do anything
+[933] else other than upgrade the framework to
+[935] the latest version so we shipped a 22%
+[938] faster initial compile that is booting
+[941] up the dev server and getting to that
+[943] first page in a 29% faster code updates
+[948] that's keys on the on on the keyboard
+[951] pressing save and seeing them on the
+[953] screen and it turns out that after
+[955] shipping this we went back to the
+[957] drawing board and we we ask ourselves
+[959] and ask the team what should we work on
+[962] next the results will shock you it's
+[966] performance still
+[969] performance which is music to my ear
+[971] we're super
+[972] aligned and the the key question here
+[975] was how we know that we you want
+[977] performance how can we deliver this
+[980] performance updates to you as fast as
+[983] possible and you know that last xjsc we
+[987] talked about rewriting our entire nexj
+[991] CLI and bundler technology in
+[994] Rust so rust is it's been an awesome
+[998] investment but it's t it's taken a while
+[1000] to give you all those performance
+[1001] improvements so my question was should
+[1004] we rewrite in a new programming language
+[1006] should we rewrite in Zig should we what
+[1008] do we do to get you this improvements
+[1010] fast to you and I'm here to announce
+[1013] that we're still betting on Rust and we
+[1016] will deliver incrementally and fast so
+[1018] I'm going to tell you how we're going to
+[1019] do that so we're sticking with rust but
+[1023] we're refocusing our effort primarily in
+[1025] the nextjs compiler we want to see the
+[1028] nexts compiler succeed with this new
+[1030] infrastructure and give you the
+[1032] improvements to performances
+[1034] incrementally as
+[1036] possible and we want to see that in
+[1038] small large applications we want to see
+[1041] that in the pages router and we want to
+[1042] see it in the app
+[1044] router and the three things that we're
+[1046] going to be monitoring very very closely
+[1047] to decide whether our investments are
+[1049] paying off are number one a fast Dev
+[1053] server number two fast code updates from
+[1057] save to
+[1058] screen and number three fast production
+[1061] builds so this is running next build
+[1063] especially when you go to production so
+[1066] how do we do this how do we give you all
+[1068] of this what's our how do we track our
+[1071] progress how do we measure that we're on
+[1073] track this I regret to announce is not
+[1077] my GitHub contract distribution
+[1079] chart it's actually suffered quite a bit
+[1081] in the last couple
+[1083] years this is how we're tracking the
+[1085] reliability of a rust based compiler so
+[1089] this represents running the entire test
+[1092] Suite of nexj as that we've accumulated
+[1096] over seven years with every bug fix
+[1099] every reproduction every race condition
+[1102] you can keep track of it at rbo yet.com
+[1104] and all these beautiful blue squares
+[1107] represent
+[1110] 90% of Test passing with
+[1113] rust so it's been incredible to make
+[1116] this huge strides in reliability so
+[1119] let's talk about some of the performance
+[1121] improvements that this is going to
+[1123] unlock number one we're seeing 53%
+[1128] faster initial compile with the most
+[1130] recent introduction of Turbo pack and up
+[1134] to
+[1135] 94% faster code updates
+[1139] again these apply to both routers the
+[1141] pages router and the app
+[1144] router to recap we're refocusing a r
+[1147] powered compiler effort we're delivering
+[1149] to the tune of over 5,000 passing tests
+[1152] already in the most recent release
+[1154] everything is faster all around and the
+[1156] mo the thing I'm most excited about is
+[1158] this is the new Baseline of performance
+[1161] to give you a sense of this when you run
+[1163] next Dev D- turbo we're running
+[1166] everything cold no no persistent file
+[1169] system caching yet and it already really
+[1172] really really beats the previous
+[1174] compiler infrastructure it's just way
+[1175] faster so this is the new Baseline we're
+[1177] going to keep getting faster in the
+[1179] future and you can keep track of our
+[1180] progress on are we turbo yet.com
+[1185] so now the moment we've all been waiting
+[1188] for simplifying
+[1191] nextjs all want to deliver fast websites
+[1195] Dynamic websites and we all want simp
+[1198] Simplicity when it comes down to the
+[1200] programming model so before I go into
+[1203] how we can deliver on this Simplicity
+[1205] and as promised with no new
+[1207] apis I'll talk about how I measure a
+[1210] fast
+[1212] website number one I want to see a fast
+[1214] initial visual so this is opening my
+[1217] phone go to a page and I want to see it
+[1220] instantaneously even though it might not
+[1222] be complete because there's parts of
+[1224] that site that are Dynamic and
+[1226] personalized just for me
+[1228] so I also care about a fast Dynamic
+[1231] visual this is when for example the
+[1233] state of my card streams in or my
+[1236] recently viewed items on an e-commerce
+[1238] site stream
+[1240] in and most importantly in terms of
+[1243] Simplicity I want a great developer
+[1246] experience so through this lens through
+[1249] this criteria let's very quickly revisit
+[1252] the history of nexj until now and the
+[1254] rendering strategies that we've shipped
+[1257] you it all started back in the day Young
+[1260] rou G with traditional server site
+[1264] rendering so this is the common SSR that
+[1268] you remember from backend Centric
+[1270] Technologies what happens here is I have
+[1272] a visitor potentially far away from a
+[1275] server that visitor is waiting until the
+[1278] request lands on that server that server
+[1280] starts quaring that database and what
+[1283] we're seeing is it took a while to get
+[1284] to the initial Visual and the dynamic
+[1287] visual from that point on happened
+[1288] fairly fast let's see how we would rate
+[1292] this fast initial visual I would rate it
+[1296] sadness why because well we saw those
+[1298] four white screens it's just you're not
+[1300] getting anything especially if you're
+[1302] far away from the server fast Dynamic
+[1304] visual I went to our design team we
+[1306] settled on slightly smiling emoji
+[1310] face and the the ex was actually great I
+[1313] hear a lot of your feedback that the
+[1315] beginning of next CH was really simple
+[1316] it was just get s props throw throw some
+[1319] no. JS code in there you're done so DX
+[1323] was the inspo for what we're going to
+[1325] see
+[1326] today the next step is the community
+[1328] gave us feedback that some of their
+[1330] Pages some of their workloads were fully
+[1334] static so we added static side
+[1336] generation capabilities and nextjs
+[1338] became a hybrid framework it could do
+[1340] both on an entry point basis so let's
+[1343] look at a static page here that actually
+[1346] turns out later on I have to personalize
+[1349] so what happens is I give you the
+[1351] initial visual nearly immediately and
+[1354] then to actually get to the final state
+[1357] of personalized data that's where it
+[1359] gets tricky right I have to download
+[1361] lots of JS I have to fetch the data I
+[1364] have to render there could be waterfalls
+[1367] so as you could imagine fast initial
+[1369] visual is lovely we rated fast dnamic
+[1374] deadly and the DX was okay but keep in
+[1377] mind that in this model you were
+[1379] juggling two ways of fetching data for
+[1381] example get static props and all the
+[1384] hooks on the react side to fetch data on
+[1386] the client so not fully
+[1389] satisfying let's now look at the
+[1391] bleeding edge what do we have today we
+[1394] have streaming absolutely incredible
+[1396] technology we have things like the edge
+[1398] runtime we have the ability to put the
+[1400] compute right next to the
+[1401] visitor so the initial visual gets
+[1405] better Dynamic also gets better but it
+[1408] really depends on how you configure it
+[1409] all it really depends on whether the
+[1411] data is close to the compute or not um
+[1414] it depends a lot on what ecosystem of
+[1417] packages you're using it's kind of like
+[1420] not fully satisfying on every Dimension
+[1424] the initial visual could have been as
+[1425] fast as the static for example the
+[1427] dynamic visual could therefore have
+[1429] happened faster especially when you're
+[1431] juggling your computer being far away
+[1433] from your data in waterfalls and the DX
+[1437] well don't get me started on the DX
+[1439] because now I have to figure out
+[1441] runtimes figure out regions figure out
+[1444] what packages work what packages don't
+[1446] work so if I do all of this the
+[1449] situation was good but again we're in
+[1451] the quest to simplify
+[1454] nextjs so this is this is where we're
+[1457] want to end up we're want to end up in a
+[1458] fast initial visual fast Dynamic Visual
+[1461] and great DX and I'm happy to announce
+[1464] today that we're introducing a
+[1466] technology in preview to to make this
+[1468] possible and it's called partial
+[1472] pre-rendering partial pre-rendering is a
+[1474] technology that gets activated at buil
+[1477] time and it works into the nextjs
+[1481] compiler so what happens is this when
+[1484] you build your nexj project we will
+[1487] extract a static shell for each entry
+[1490] point of your application including all
+[1493] of your Dynamic
+[1495] pages in this phase next J can exract
+[1499] all the static parts and pre-render them
+[1502] so for example here I'm pre-rendering
+[1504] the logo of of the page the
+[1508] navigation and very interestingly I'm
+[1510] also able to pre-render the fallbacks of
+[1513] the dynamic Slots of the page so notice
+[1517] here I have this Banner that I'm
+[1519] reserving for a promotion that is
+[1521] tailored to each visitor and of course I
+[1523] have my cart and my profile picture so
+[1526] those are the personalized parts
+[1528] what nexs can do is it can give you this
+[1530] shell immediately and then stream in the
+[1534] dynamic
+[1535] Parts if we look at it from the lens of
+[1538] the experiment that we run earlier we
+[1540] can see now I can get my initial visual
+[1543] as fast as static and then the server
+[1547] starts streaming and there are no
+[1549] waterfalls most importantly this is
+[1552] really easy and I didn't have to learn
+[1554] or adopt any new apis it's a win win win
+[1560] we all
+[1564] win so having accomplished this and
+[1567] again this technology is in preview
+[1569] you're going to be able to test it
+[1570] really soon you're going to be able to
+[1573] ship this dream of what we call Dynamic
+[1576] at the speed of static not having to
+[1579] worry about run times nor
+[1582] regions so let's recap what we covered
+[1584] today during the
+[1586] keynote with refocused effort on the
+[1589] nextjs compiler we're seeing an amazing
+[1592] new Baseline of performance while also
+[1595] doubling down on correctness and
+[1597] reliability with over 5,000 tests
+[1600] passing which amount to over 90% of our
+[1603] test
+[1605] suite number two we have this incredible
+[1608] new nextjs learned course that not only
+[1611] teaches the fundamentals of nextjs and
+[1614] the app rouer but it extends into dat
+[1617] databases and O and everything you need
+[1619] to build a production ready
+[1622] app server actions are now stable which
+[1625] means that you can mutate data with the
+[1628] native react data model so this was the
+[1631] the missing piece of the entire
+[1633] architecture so we're really happy to
+[1635] make it
+[1637] stable and last but not least with
+[1639] partial pre-rendering we're delivering
+[1641] on the dream of dynamic at the speed of
+[1643] static without having to learn any new
+[1646] apis
+[1649] you can upgrade to NEX
+[1650] js14 today or head to NEX j.org
+[1655] 14 to learn about all these great
+[1666] improvements and of course we're not
+[1668] done yet there's more from nexts coming
+[1671] in the future first we've heard your
+[1674] feedback about how caching in nexts has
+[1677] gotten really powerful and really
+[1679] flexible but you want to see
+[1681] simplifications there too and we hear
+[1683] you the power of Turbo pack and our rust
+[1686] based compiler will not just be for
+[1688] development mode and it's also coming to
+[1691] production builds I'm really excited
+[1693] about how much faster production builds
+[1695] we get and how much work we can reuse
+[1697] that has gone into the efforts in the
+[1699] compiler so far and most importantly a
+[1703] production grade framework requires
+[1706] incredible observability deep Insight
+[1710] that goes into every part of the life
+[1712] cycle of an nextjs
+[1715] application now let's get into the rest
+[1718] of NEX ESC you're going to hear uh from
+[1722] our community you're going to hear from
+[1723] our technology Partners visit their
+[1725] booths here in SF you're going to hear
+[1728] about all of the success of our
+[1729] customers so thank you so much and enjoy
+[1732] the
+[1736] conference
+[1738] [Music]
+[1740] he

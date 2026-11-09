@@ -1,0 +1,1229 @@
+[1] hello it's Daniel Bryant here before we
+[2] start today's podcast I wanted to tell
+[4] you about cucon London 2024 our Flagship
+[7] conference that takes place in the heart
+[8] of London next April 8th to 10th learn
+[11] about senior practitioners experiences
+[13] and explore their points of view on
+[14] emerging Trends and best practices
+[16] across topics like software
+[17] architectures generative AI platform
+[20] engineering observability and the secure
+[22] software supply chain discover what your
+[23] peers have learned explore the
+[25] techniques they are using and learn
+[26] about the pitfalls to avoid I'll be
+[28] there hosting the platform engineering
+[30] track learn more at cucon london.com I
+[32] hope to see you
+[36] there hello and welcome to the infoq
+[39] podcast I'm Daniel brand and today I had
+[41] the pleasure of chatting with Solomon
+[42] hikes co-creator of the dagger project
+[44] and of course the original Docker
+[45] project we touched on all things
+[47] continuous integration and continuous
+[48] delivery and covered everything from why
+[50] there is currently a need for new
+[51] abstractions for building software all
+[53] the way through to the impact of
+[54] Licensing such tooling and donating or
+[57] not such projects to foundations like
+[59] cncf and the cdf2 I've been following
+[62] along with the dagger project for quite
+[63] some time and experimented with the
+[64] latest quick start just before chatting
+[66] to Solomon I could see the connections
+[67] with existing Tech such stalker files
+[69] and Bill packs and it was fun to be def
+[71] finding application Bill steps using a
+[72] node-based fluent API however the
+[75] conversation helped me join the dots for
+[76] the bigger picture of where Modern build
+[78] tooling like dagger fits in and how the
+[80] ecosystem could develop to support a set
+[82] of reusable build modules and components
+[85] so welcome to the infoq podcast Solomon
+[87] I'm sure many of our listeners will know
+[88] you from the doc Cloud days and of
+[89] course kickstarting the docker and
+[91] container revolutions but for those
+[92] folks that haven't bumped into you could
+[94] you introduce yourself to the listeners
+[95] please sure hi everyone I'm Solomon I'm
+[98] the co-founder of startup called dagger
+[100] and before that I was the co-founder of
+[103] Docker and I'm an undercover French I
+[106] sound very American but I grew up in
+[107] France and so now I live in San
+[109] Francisco and having a great time
+[111] working on UT Tech and learning from
+[113] this great devops Community fantastic
+[115] fantastic there's so much Innovation
+[116] going on in this space at the moment
+[118] right so we're definitely going to dive
+[119] more into that so
+[120] and I love to dive more into dagger in
+[121] particular but I wanted to set up the
+[123] context for the listeners like what's
+[125] the problem space you're working in I
+[127] know it's like sort of cicd scoped but
+[130] yeah what's the actual problem space
+[131] you're working in and why now to spin up
+[133] a tool a company around this space yeah
+[136] well there's a personal answer and I
+[138] think an industry answer the personal
+[140] answer is that I spent 10 years of my
+[142] life on Docker and then I took a break
+[145] because I was tired and then we kind of
+[148] brought the band back together
+[150] and wanted to build more things so we
+[152] just set you know set sail again and
+[154] went out there and talked to people
+[155] about their problems and honed in on the
+[158] pain to try and help fix it like it and
+[161] discovered that a lot of the pain was
+[163] still related to application delivery
+[165] you know build test deploy and so we can
+[168] help with that so we just sort of took
+[170] our experience and skills and transposed
+[173] them into today's problems because some
+[175] things are the same 10 years later some
+[177] things have changed yeah and yeah I
+[179] guess I went from personal to Industry
+[181] answer you know it feels like a
+[183] continuation of what we started of what
+[186] we set out to do you know I started on
+[188] this whole container thing in 20072 2008
+[190] yeah well and it is just one Big Arc and
+[193] the arc is it should be easy to ship
+[196] your code into a live application in the
+[198] cloud but it just isn't yeah you know
+[200] and we're still kind of trying to climb
+[203] that mountain together as an industry
+[205] and for us personally that started with
+[206] trying to build a path you know platform
+[208] of service that was hope and then we
+[211] discovered collectively that that had
+[213] flaws Y and then we pivoted to a much
+[216] more modular model where the first step
+[219] was let's build this foundational
+[221] ecosystem around containers we need that
+[223] yeah and then we just spent five years
+[225] doing that and now I think we get to
+[228] build the next layer on top of that you
+[230] know and sort of bring back the best of
+[233] the original ideas of P yeah yeah and of
+[236] this new thriving modular container
+[240] ecosystem fantastic so we're still
+[242] trying to solve delivery of applications
+[244] to the cloud you know yeah yeah I think
+[246] we may actually solve it I mean it's
+[248] actually it's been so long I think
+[249] people are used to the problems being
+[251] not solved and the experience being
+[253] overall not great yeah you know we just
+[255] got used to the duct tape yeah but there
+[257] are people like us and many others that
+[258] are still you know solving it making it
+[261] better yeah we got to do it you know
+[263] there's too much duct tape fantastic but
+[265] if I was chatting to Adam Jacob from
+[266] system initiative a few weeks ago had
+[268] him on the podcast and he was like if
+[269] you look at the 10-year Gap we've
+[271] actually got the same process but
+[273] different tools right and I wonder if
+[275] you got any thoughts on that as in
+[276] granted you're building a new tool and
+[277] so is he to be fair as well but do you
+[279] think we're going to need to
+[280] fundamentally change the way we approach
+[282] the delivery of software to make these
+[284] big changes I think it's been a
+[286] continuous change ever since this whole
+[289] devops and Cloud thing started so I
+[291] think now we're steeped in it and so we
+[293] forget how much things have changed
+[295] already yeah speaking for example for
+[297] one little area of this huge stack right
+[300] Docker and containers I mean the concept
+[303] of a Docker file of building a container
+[306] around the application that was
+[308] completely new and weird when we came up
+[311] with it and we ourselves were like wow
+[312] this is an interesting hack let's see if
+[314] it goes anywhere it was very unnatural
+[317] and we had to explain it a lot and
+[319] defend it and now I talked to new grads
+[322] you know who are starting their Journey
+[323] now and it's just said they don't even
+[325] know how it was before yeah makes sense
+[327] you know so I think each year as new
+[329] people enter the industry and we
+[331] Oldtimer kind of learn and adapt as much
+[333] as we can everything kind of shifts I
+[335] just think that there's a lot more of
+[337] that coming so dagger is pitched on the
+[340] website as cicd as code that runs
+[342] anywhere now I like that pitch it was a
+[344] nice sort of marketing pitch but could
+[345] you break it down for the engineers in
+[347] the room right for the folks that want
+[348] to be using this developers operators
+[350] platform Engineers what does that
+[352] actually mean right now our main
+[354] audience is the devops engineer the
+[355] platform engineer you know the person
+[357] whose job is to make make the developers
+[360] on the team more productive yeah and
+[363] over time we think dagger will become
+[365] more and more accessible to the point
+[367] where developers can use it directly but
+[369] right now at this time that's not really
+[372] the case unless you're a very devops
+[374] minded developer interesting Y and the
+[376] problem we solve for that designated
+[378] devops person whoever they may be is
+[381] that the experience of creating and
+[384] maintaining these pipelines that ship
+[386] the application is just a pain yeah you
+[388] know and the reason it's a pain is it's
+[389] made of duct tape and the duct tape
+[391] involves a lot of shell scripts and yaml
+[395] yeah and you know the duct tape
+[397] straddles these two worlds of the
+[398] development environment where you have
+[400] to build and test and sometimes deploy
+[403] from the dev environment directly pre
+[405] push and then there's CI post push Y
+[409] where typically pushing and you get
+[411] commit will trigger actions you know
+[413] things will happen tests will run etc
+[416] etc and that's what I call the pipelines
+[418] the delivery pip
+[421] comp and as the team the grows the
+[424] complexity grows exponentially and
+[428] someone has to Wrangle these and keep
+[429] them working and improve them and keep
+[431] up with the application development for
+[433] example if the application team adds a
+[435] new component new database new framework
+[438] new anything new AI tool yeah right yeah
+[441] someone has to add those into the
+[443] pipeline otherwise it's like saying oh
+[446] we have this new feature in the car that
+[448] we're building but it's only available
+[450] in the Prototype therefore it's done
+[452] well no it's not done you got to
+[453] manufacture the thing so someone's going
+[455] to have to incorporate that into the
+[457] manufacturing of the software so this is
+[459] really it's a software Factory problem
+[462] and it's just that as things scale and
+[464] the applications become bigger and they
+[466] move faster and the stakes are just
+[469] generally higher yeah yeah these
+[470] factories have to go from Little
+[473] artisanal workshops which let's face it
+[476] that's the reality of 90% of software
+[478] shops to an actual Factory and that
+[482] transition is just painful so we're
+[484] proposing a way to do that that is not
+[487] ridiculously over engineered and
+[489] actually solves specific problems and so
+[491] the specific problems we're focusing on
+[493] are a number one something we call push
+[495] and prey you know I'm changing the
+[498] pipeline I'm adding something to the CI
+[499] pipeline how do I know it works well I
+[502] got to commit it I got to push it I got
+[504] to wait for the CI server to pick it up
+[506] and then I get a red thing that says oh
+[508] you forgot a space you know and then I
+[510] have to do it again and so you have
+[512] these 40 G commits please work okay this
+[514] time I think I got it you know and so if
+[517] you think of these pipelines as software
+[519] you know it's like a specific kind of
+[521] software that ships your application
+[523] then that's just a terrible development
+[525] experience for that software so we're
+[528] telling that designated devous person
+[530] your pipeline should be code it should
+[532] be software you know we call pipeline is
+[534] code for example and so here is a
+[536] reasonable tool to do that you know an
+[538] engine that will run it Loc loc Al or in
+[540] CI it'll run it the same on both so you
+[543] can actually develop locally and when it
+[544] works locally you can run it in your CI
+[547] and there's a reasonable chance it'll
+[548] work the same and it's not locked into
+[551] this proprietary Black Box you know
+[554] because that's another problem devops
+[555] people have there's different CI
+[557] platforms and they all have a different
+[559] proprietary yaml language and so if God
+[562] forbid you have to migrate from one to
+[565] another or maybe you work in a larger
+[568] organization and you Ed a company now
+[570] you have to deal with two it's okay to
+[572] have two different infrastructure
+[574] Services you know two compute providers
+[576] that's fine but two completely different
+[578] platforms to express the logic of your
+[580] pipelines that's really damaging because
+[583] now you can't compose different
+[586] pipelines together into a bigger
+[588] pipeline you know you have silos forming
+[590] so anyway there's a whole list of
+[592] problems some small and subtle other you
+[595] know very painful and obvious that we
+[597] think can be solved in a major way by
+[601] changing how you think about the
+[602] pipeline from a collection of shell
+[604] scripts and yaml to proper codes that
+[607] you can develop properly so that's the
+[609] core Focus for us I like it so I think
+[612] definitely myself and might s of wear my
+[613] Jenkins hat back in the day right I
+[614] recognized the pain of some of the
+[616] things you mentioned there I'm sure many
+[617] of our listeners s are coming from that
+[618] era of the Jenkins and the Run deck and
+[620] as you said it's moved through like
+[621] different tools now so totally makes
+[622] sense you mentioned a bunch of things
+[624] there could we break down the components
+[626] within dagger cuz I've know this dagger
+[628] engine I played around a little bit with
+[629] that and then there's dagger cloud and
+[630] there's dagger sdks could we sort of
+[632] walk through what all those things are
+[634] and what they do when I'd use them yeah
+[635] absolutely so there's really two big
+[637] Parts there's an open source engine call
+[640] the dagger engine and that comes with
+[642] there's a core engine really a core
+[644] component and then there's a command
+[645] line tool that lets you interact with it
+[648] and then there are sdks as you mentioned
+[650] that let you program it because the
+[651] whole point of this engine is to run
+[654] your pipeline logic written in your code
+[656] and the sdks are really important
+[658] because they're available for major
+[660] programming languages that are familiar
+[663] to teams already python go JavaScript
+[666] typescript there experimental sdks being
+[669] contributed now by the dagger community
+[671] so there's a Java I was going to ask
+[673] about that in a minute actually
+[674] interesting interesting yeah yeah Java
+[677] rust leir wow Elixir interesting yeah
+[681] and they're experimental but they do
+[682] work and the whole stack is really neat
+[684] there the sdks are generated from a
+[686] common ah API reference so the engine
+[690] has in fact a graphql API that makes
+[693] sense Y and that's really just the
+[694] kernel you know think of it as like the
+[696] operating system for your pipelines Y
+[698] and you can have it run all these
+[700] operations that are based on containers
+[703] and then these sdks are just generated
+[706] bindings in the language of your choice
+[708] to do that yeah makes sense so it's
+[710] relatively easy to create new SDK and
+[713] it'll become easier so anyway that's the
+[715] engine all of that we just call it the
+[717] engine you know yep and then on the
+[718] other side there's dagger Cloud which is
+[720] an optional collection of services that
+[724] are run in a centralized Way by us and
+[726] that are designed to remove obstacles to
+[729] adopting the dagger engine in production
+[732] y so what happens is you start your
+[734] journey with dagger you know designated
+[736] devops person hears about dagger and
+[738] they realize oh this could help me solve
+[740] these problems that I have you know
+[742] pipeline's too slow push and prey etc
+[744] etc yeah so let me go and try it out on
+[747] my laptop so they developed their first
+[749] pipeline they will go through the quick
+[750] start like you did yep and then
+[752] eventually you get to something that you
+[754] like that's useful and now you want to
+[756] get your team to use it and so part of
+[758] that is getting them to use it in their
+[759] Dev environment locally yep but at some
+[762] point you need it to run in your CI yeah
+[764] you can retrofit it in your existing
+[766] workflow yeah makes sense because we
+[768] don't replace your existing CI we don't
+[770] replace Circle CI gra of actions yeah we
+[772] give you something to run on top of it
+[774] right that's the beauty of it and so
+[775] when you do that and you start running
+[777] this in production on your CI it works
+[780] really easily but operationally you
+[782] realize okay there's some things I need
+[784] now to hook this up to upgrade my CI
+[786] stack to doriz it Y and one of them is
+[788] caching and the other is visualization
+[791] of the pipeline makes sense yep yeah and
+[793] so I can go into those but we just add
+[795] these Solutions and then you subscribe
+[797] to our service and then you connect it
+[799] to your engine but it's a bring your own
+[801] Engine Solution you know we don't run
+[803] the pipelines for you oh interesting you
+[804] run them anywhere you want that's an
+[806] important part of it because there's so
+[808] many ways to run a CI pipeline already
+[810] so many compute providers we think
+[812] really cic compute infrastructure should
+[815] converge with General compute
+[818] infrastructure the fact that it's so
+[820] siloed and you know bundled together you
+[823] know a lot of these CI platforms they
+[824] bundle proprietary software yeah for you
+[827] know configuring your pipelines and
+[828] proprietary Hardware we run your
+[830] pipeline yeah and lately there's been
+[833] you know so much pressure that now
+[835] reluctantly some of these providers are
+[837] adding a way to self host MH you know
+[840] but it's still sort of a weird special
+[843] category of compute we think it should
+[845] just be regular compute so we really are
+[847] unbundling CI as a category and
+[850] splitting it into a pure software layer
+[854] yep and infrastructure and we're clearly
+[856] on the software side and I think
+[858] everyone in this market is going to have
+[860] to choose okay what is their focus are
+[862] they the best compute provider the best
+[865] possible machines to run your pipelines
+[867] Y and there's a new generation of
+[868] providers
+[869] out there focusing on that or are you
+[872] the best software platform for it and
+[873] you know that's what we're going for
+[875] yeah makes sense makes sense and just to
+[877] like sort of double down to make sure
+[878] it's super clear for the listeners
+[879] because I think a lot of folks are used
+[880] to using things like Jenkins and you
+[882] mentioned GitHub actions and they are
+[883] sort of very different but very similar
+[884] in terms of their goals and like
+[886] something I heard from you there and I
+[887] also was lucky enough to watch the talk
+[889] at cucon SF where the presenter Connor
+[891] also mentioned this as well the
+[893] migration path is quite nice as well
+[895] right you don't have to rip out
+[897] everything in one go you can to your
+[899] point if I'm using Jenkins I can
+[900] literally call your binary right I could
+[902] call dagger dot or dagger whatever yes
+[905] and then gradually migrate things over
+[907] because I'm always super cautious of the
+[908] Big Bang right absolutely Big Bangs
+[910] generally result in Big Bangs which is
+[911] not a good look so like a migration path
+[913] I think would be super interesting to
+[914] listen this as well you're right that is
+[916] a very important part of how dagger
+[919] works and we were very deliberate about
+[921] it you can adopt dagger incrementally
+[924] nice by retrofitting it into the stack
+[927] you have you know that includes the C
+[929] platform you have but also the build
+[930] tools you have the dev environment you
+[932] have it's really designed for minimal
+[935] friction Y and by the way so is Docker
+[937] in a different way two things are true
+[940] at the same time we want it to be
+[942] incredibly easy and seamless to start
+[945] using dagger and you can do it in a very
+[947] small way typically what happens what
+[949] we're seeing is 90% of your CI is fine
+[952] yeah and then 10% is a complete dumpster
+[954] fire yeah yeah I makes sense it's slow
+[958] it's costing tons of money yeah there's
+[960] an urgent change to it that's needed but
+[962] no one knows how the person who built it
+[965] just went nuts and then left the company
+[967] yeah you know it's written in a language
+[969] no one understands it could be any
+[971] reason yep and so typically what happens
+[973] is you use dagger as a fire extinguisher
+[976] you know you daggered that 10% y you
+[979] replace that mess into 40 lines of
+[983] perfectly clean python or go or
+[986] typescript and then like you said you
+[987] just remove 400 lines of shell and yaml
+[992] yeah right and then you replace them
+[993] with two lines in your existing
+[995] configuration that say run dagger with
+[997] this thing gotcha and so it's very
+[1000] incremental then hopefully that really
+[1002] helps and you get the hang of it your
+[1004] Dev team grows familiar with dagger and
+[1007] what happens is over time you know
+[1008] there's no big bang rep platforming like
+[1010] you said those always fail yeah yeah so
+[1012] developers aren't forced to use the new
+[1014] thing oh God what is it this time you
+[1016] know yeah but it's just like oh you know
+[1018] Serendipity sets in oh this is the
+[1021] pipeline now oh I know this this is
+[1023] python I know this oh I need it I see
+[1025] this is very straightforward it's going
+[1027] to run my bill tool at this version in
+[1029] this container with my source code
+[1030] mounted here okay but now I want to use
+[1032] this flag let me go open a PL request
+[1034] and and all of a sudden this big black
+[1037] box that is the CI pipeline that is
+[1040] usually a bottleneck because only the
+[1043] designated devops person understands how
+[1045] it works and they're always overworked
+[1047] now all of a sudden you're starting to
+[1048] sprad the work around and before you
+[1050] know it all these big principles of
+[1052] platform engineering and digital
+[1054] transformation that everyone's talking
+[1056] about but they're hard to implement
+[1059] because they're implemented via a big
+[1060] bangry platform that fails like we said
+[1063] all of a sudden no one has to talk about
+[1064] it just kind of very gradually happening
+[1066] that's our Focus I like it I like it Sol
+[1069] there something called interest there as
+[1070] well you mentioned like everything is
+[1071] built or done within a container and I'm
+[1073] thinking in part of the migration I
+[1075] might already have dock files right or I
+[1077] might already have Bill packs but
+[1078] personally I love the cncf bill pack
+[1079] projects coming back from like Heroku
+[1081] days I still like long for my bill pack
+[1083] right can I migrate from then and
+[1086] perhaps even what is the relationship
+[1087] between say the dagger SDK and things
+[1090] like the docker file and a bill pack the
+[1092] goal of dagger is to integrate all the
+[1094] pieces into a pipeline and so if you
+[1097] have a Docker file the goal is that you
+[1099] can integrate a Docker build with that
+[1101] Docker file into the pipeline if you
+[1104] have a bill pack step the goal is that
+[1106] we can integrate that into the pipeline
+[1109] and so modularity and the ability to
+[1112] customize is really I mean that's the
+[1114] killer feature yeah nice it is an
+[1116] integration tool pipelines are about
+[1118] integration yep totally and whoever can
+[1120] integrate more things better in a more
+[1122] robust way you know wins yep and so we
+[1125] think of it as replacing maybe you can
+[1128] say replacing duct tape with Lego
+[1130] interesting it's still modular yeah it's
+[1133] still all about changing and customizing
+[1135] but it's robust yeah gotcha it's and it
+[1139] could scale better so that's really the
+[1141] core of it and yeah there's specific I
+[1143] could give specific examples around Bill
+[1146] packs specifically or Docker files but
+[1148] like Docker file that one's easy because
+[1150] of the tech we're using yeah right you
+[1152] know we're building on Tech that was
+[1153] made in Docker buil kit among others
+[1156] yeah cool this team basically started
+[1159] and was involved in back at Docker so
+[1161] we're very familiar with it we know
+[1163] where the good parts are we get native
+[1165] compatibility with Docker files so
+[1167] that's just it's a native call and the
+[1169] dagger engine API you just say Docker
+[1171] file over there give me a container and
+[1173] you're actually using the same
+[1175] implementation as Docker builds it's not
+[1178] like these red hat
+[1179] re-implementations where they try to get
+[1181] as close as possible but it's hard being
+[1183] compatible yeah yeah so do file is
+[1185] really solid compatibility and then
+[1187] build packs and all these custom tools
+[1191] there's a whole community of dagger
+[1192] knuts we call them very nice yep that
+[1195] are basically packaging them up into
+[1198] reusable modules oh interesting yeah
+[1200] I've heard about this yeah Agent M
+[1202] tweeted about this yeah yeah right yeah
+[1204] so it's a feature that's in development
+[1205] it's actually in there in the latest
+[1207] release but it's hidden because we're
+[1208] not quite finished but it has cross
+[1211] language reusable modules oh very
+[1213] interesting cross language so someone
+[1215] can say I know build packs I know the
+[1217] cncf build packs tool I'm going to
+[1218] package it into a set of functions that
+[1222] are completely encapsulated you know
+[1224] they're running on containers so they'll
+[1226] run the same way anywhere and they have
+[1229] an actual API with types in types out
+[1233] and there's a build function that takes
+[1234] a directory as inputs yeah yeah and it
+[1236] produces a container as output you know
+[1239] these are fundamental types in the
+[1241] diager API and then you write them in
+[1243] whatever language go python really under
+[1245] the hood it's going to orchestrate
+[1247] running the right buildpack tool and the
+[1249] right container with all the you know
+[1251] inputs and outputs hooked up and so it
+[1253] wraps all this container Machinery into
+[1255] an API nice and that API can be called
+[1258] from any other dagger pipeline across
+[1261] languages so you can write yours in
+[1263] node.js yeah yeah that module can be
+[1265] written in Python and they can call each
+[1266] other so that's sort of the missing
+[1268] piece for all this to make sense because
+[1270] then it unlocks an actual software
+[1271] ecosystem yeah where all these bits of
+[1274] devops knowledge can actually be
+[1277] implemented once properly and then
+[1279] reused you know which is so obvious for
+[1282] an application development ecosystem
+[1284] yeah but in devops you know that's not
+[1286] how things work you read a blog post
+[1287] that talks about another blog posts
+[1289] about how someone did it once and then
+[1291] you find a piece of a Helm chart in a
+[1293] Docker file and then you copy paste some
+[1295] parts then you you start over again you
+[1297] know and everyone's just Reinventing the
+[1299] wheel again and again so that's the
+[1301] reward of all this stuff we talked about
+[1303] doing it all in code with a clean
+[1305] Foundation making it legol like
+[1307] eventually the reward is I get to reuse
+[1310] the work of other people in the devops
+[1312] community yeah that's awesome and I'm
+[1314] not sure if like this is related but it
+[1315] sounds almost wasm like right so I'm
+[1317] going to the wasm talk the moment I'm
+[1319] reading the WM blogs and they're all
+[1320] same it's the same promise right I can
+[1322] write and go and rust and we can do
+[1323] eventually cross function calling happy
+[1325] days and I mean are you doing any of
+[1328] that under the hood or is this just more
+[1329] case of you're running in containers so
+[1330] the language doesn't really matter well
+[1332] so the short answer is we're doing it
+[1334] all in containers we don't use web
+[1336] assembly cool I'm very familiar with
+[1338] what you're talking about in fact back
+[1340] at Docker around 2016 or so you know
+[1344] things were already taking off and for a
+[1347] short while we mistakenly at Docker
+[1350] thought okay smooth selling from here on
+[1352] the core platform let's start thinking
+[1354] about the future the next layer and so a
+[1357] lot of the stuff we're doing now 2016 17
+[1360] is when I shifted my focus towards
+[1362] trying to build an ad Docker you know
+[1364] really let's make all this a platform
+[1366] let's make all this programmable and at
+[1368] the time web assembly was an obvious
+[1370] choice I remember your Tweet and I him
+[1372] know you said it the famous tweet right
+[1373] if was was available yeah of course of
+[1375] course right yeah yeah so that tweet was
+[1377] sort of like the only output from these
+[1379] so we actually set out to build a web
+[1381] assembly team in 2016 and make a big
+[1383] investment there and it ended up just
+[1385] not shipping anything because turns out
+[1387] we were not done the core work on
+[1389] containers so it was I think we set out
+[1391] to try and do too much so it turns out
+[1393] it wasn't docker's role to do that but
+[1396] at the time we did look at web assembly
+[1398] as the vehicle for almost the Trojan
+[1400] Horse yeah interesting and the thinking
+[1402] at the time was everyone's got a Docker
+[1404] CLI and everyone thinks it as just a
+[1406] regular client y but what if that client
+[1409] could be scripted programmed even and
+[1413] you just kind of sneak a little bit of
+[1415] programming in this tool and over time
+[1418] people learn to use it for more and more
+[1420] powerful things and before they know it
+[1422] they're scripting their whole deployment
+[1425] yeah right and boom a new platform
+[1427] appears you know so that was the vehicle
+[1429] that seemed to make sense at the time
+[1431] and then you definitely needed something
+[1433] lightweight enough yeah to embed in a
+[1435] Docker CLI so something like web
+[1437] assembly or Lua were the only two
+[1439] options yeah yeah so yeah that was very
+[1441] exciting to me now I think we're just in
+[1443] a different place where for our purposes
+[1445] you know making application delivery
+[1447] pipelines programmable containers
+[1449] themselves are so ubiquitous yeah and
+[1452] the ecosystem is so amazing and the
+[1455] problems in pipelines today are so
+[1457] terrible and basic yeah it's not rocket
+[1460] science it's just that there's a missing
+[1462] standard and a missing upgrade to the
+[1464] state-ofthe-art web assembly is just too
+[1467] much interesting interesting you can
+[1469] solve most of the problem with just good
+[1471] old containers y but you just got to get
+[1474] people to adopt an API and make all this
+[1477] duct tape into code yeah yeah and
+[1480] containers are actually good enough at
+[1482] least for now yeah that's fantastic I
+[1485] love your thinking points right that
+[1486] that's really helpful so just s of wrap
+[1487] up at least that part for the listeners
+[1489] there'll be a future where you have some
+[1491] maybe kind of marketplace or library or
+[1492] portal or something where I can go and
+[1494] pull in all my different modules yes and
+[1496] then really I am only writing a little
+[1498] bit of glue code and to your point when
+[1500] I was playing around with the node SDK I
+[1501] was like oh it's just like promises and
+[1503] really obvious like it's all fluent apis
+[1505] right I'm just chaining stuff together
+[1506] yeah so the idea was like I kind of
+[1508] Wonder at the time I was like oh I'm
+[1509] gonna have to be writing a bit of code
+[1510] here but the future could be the fact
+[1512] that I get a module and then I only do
+[1514] the code that's necessary to join all
+[1516] together exactly yeah very cool and it's
+[1519] to be clear this is a feature that's
+[1520] going to layer on top of what's already
+[1522] there so it doesn't change the apis it
+[1525] makes it much more accessible because
+[1527] like you said instead of having to write
+[1529] a complete software project on your own
+[1531] in order to leverage dagger which is
+[1533] very powerful but it sets a higher bar
+[1535] you know it means in practice today most
+[1537] of the successful deployments of dagger
+[1539] are in medium to large devops teams but
+[1543] everybody needs this not just medium to
+[1544] large teams we just need to make it a
+[1546] little more accessible and so the way to
+[1548] make it accessible is okay 99% of what I
+[1551] need is already in a module there's a
+[1553] high quality easy to consume Marketplace
+[1557] you know we call it the dagger verion
+[1558] you go and search and you find the
+[1560] module you want and then depending on
+[1562] what you need you can either write a
+[1564] little bit of your own module make it
+[1566] you know 10 lines 20 lines 30 lines of
+[1568] code just little functions not a huge
+[1571] project and then you just call these
+[1573] powerful existing affirmatives or
+[1575] another thing you can do is sometimes
+[1577] the module actually has exactly what you
+[1579] need it's like a Swiss army knife and
+[1582] really all you need is you want to call
+[1583] that function in that module from the
+[1585] command line from a shell script
+[1587] directly you even needs to write
+[1589] additional codes we're also adding that
+[1591] feature so you know a lot of bigger
+[1594] shops have what they call the paved
+[1595] roads you know yeah golden paths yeah
+[1597] yeah yeah 80% of the work you just use
+[1600] this template yeah I like that and then
+[1602] you know for the remaining 20% you can
+[1603] go and customize so the way everyone
+[1605] implements these 80% right now is boiler
+[1608] plate you know a generator that just
+[1610] blah you know DP something on your repo
+[1612] and then you kind of modify it from
+[1613] there but Pas actually had a better
+[1616] model there where you just provided your
+[1619] code and then the platform took care of
+[1622] building it the right way setting up the
+[1624] load balancer the right way all of that
+[1626] stuff so that can be a module you know
+[1628] so part of the dagger Community that's
+[1630] emerging from this dagger verse project
+[1632] are higher level modules that are
+[1634] basically a paved Road in a module so
+[1636] because it's Lego and these things stack
+[1639] really well on top of each other the
+[1640] reward is you just like code it's not
+[1642] shocking to use a go library that calls
+[1644] another go library that goes you know it
+[1646] works so you can have a module that you
+[1648] call from the command line and it's you
+[1650] know Simple app and you look at the
+[1652] function Doc and it says okay you need
+[1654] to give it a source code directory an
+[1656] API key for you know the first sell
+[1658] account or whatever a name for an app
+[1661] and a host name you know whatever and
+[1663] then you just provide these from the
+[1665] command line boom boom and then it's
+[1667] there you go it's deployed they useful
+[1669] for you know ephemeral staging
+[1670] deployments you know all these complex
+[1672] motions that are usually Out Of Reach
+[1674] for most teams you know you barely have
+[1677] cicd at all if you want UND demand
+[1679] environments for anyone forget it you
+[1681] know you can't do that in a custom way
+[1683] but now it's just a module so the goal
+[1685] is to make this really accessible to
+[1687] everyone you know you need any sort of
+[1689] devops automation it should be one
+[1692] command line away yeah I love it so I
+[1694] didn't quite get the full bigger picture
+[1696] there I'd kind of gone up a couple
+[1697] layers of distraction I think from the
+[1698] quick start but I like your vision of
+[1699] like the golden path because everyone
+[1701] pretty much I'm Jack to at the moment is
+[1703] striving towards that right and people
+[1705] are like what is the abstraction is it
+[1706] copy paste yaml which I've got a feeling
+[1709] it's not to your point like with palumi
+[1711] for example and terraform seeing the
+[1713] values of libraries and modules and even
+[1715] those kind of abstractions was really
+[1717] powerful so I like what you're pitching
+[1718] it's um it's almost world domination in
+[1720] the CI space right well we'll start with
+[1723] CI yeah there you go I like it I like it
+[1726] one thing I did really come through is
+[1728] the the strength of the community
+[1729] something actually when I checked Adam
+[1731] Jacob he said the same thing you've got
+[1733] to get this critical mass and it sounds
+[1734] like you're doing very well with that
+[1735] with the daggers and the dagger love the
+[1737] brand in there
+[1738] I'm guessing like to build this critical
+[1740] mass you know and to touch maybe the
+[1741] third rail for a second you've got to
+[1743] think about licensing right you've got
+[1745] to think about Community you know it's a
+[1747] Hot Topic at the moment maybe a
+[1748] controversial topic but would you think
+[1750] about donating dagger to a foundation
+[1752] like cncf like the continuous delivery
+[1754] Foundation what do you think about the
+[1756] licensing model here because there's a
+[1757] quite a lot of play for folks to want to
+[1759] invest in the community right yeah yeah
+[1761] yeah so yeah there's two really
+[1763] important things here first Community is
+[1766] everything for something like dagger and
+[1767] so you know we are a startup we have
+[1769] investors you know we have a team that
+[1771] is hoping to have joined a successful
+[1774] business so we have a strategy for
+[1776] growing and succeeding and we that
+[1778] strategy we call community-led growth
+[1780] that's the actual name of our strategy
+[1781] so the whole point is to create a
+[1786] thriving fast growing community in the
+[1789] devop space yeah and the community is
+[1790] about people people who are excited
+[1793] about you know a shared objective
+[1796] they're excited about learning from each
+[1797] other helping each other and it's
+[1799] building around a brand and a product
+[1801] but it's bigger than the brand and the
+[1803] product you know yes totally it's a
+[1805] group of people that just love building
+[1807] things together and it's really hard to
+[1809] get right yeah and it takes a lot of
+[1810] effort and dedication because you have
+[1812] to take a leap of faith that it will pay
+[1814] off later yeah and that's basically
+[1816] we've made a decision to go all in on
+[1819] that fantastic and so now it's starting
+[1820] to pay off and it took several years
+[1822] yeah but now yeah like we said we have
+[1824] the dagger knuts we have a Discord
+[1826] server that is like the beating heart of
+[1828] our community and it's just a lot of fun
+[1830] you know our team hangs out there all
+[1834] day long we don't actually have a
+[1835] separate private server oh oh
+[1838] interesting it's the same Discord server
+[1840] with private channels yeah and so we're
+[1842] literally in there all the time yeah
+[1844] cool so that's the first part of the
+[1845] answer Community super important yeah
+[1848] yeah and it's got to be authentic you
+[1849] know yeah has to be right has to be you
+[1851] have to actually believe it the founders
+[1853] have to be involved so me and my
+[1854] co-founders samon and Dre we're always
+[1856] interacting with the community and I
+[1858] think we've succeeded in creating a
+[1859] culture where everyone in the team it's
+[1862] 25 of us yep actually cares deeply so
+[1864] you'll see if you go on Discord which I
+[1866] hope you will do and I must join
+[1868] afterwards yeah totally totally yes yeah
+[1870] yeah let's say you come in and ask a
+[1871] question you know a basic question
+[1873] because you're getting started hey I saw
+[1874] your Tweet you know FYI I had a missing
+[1878] JavaScript dependency yeah yeah and I
+[1880] didn't see it right away and standard
+[1881] output you know let's say you come in
+[1882] and ask about that you may get an answer
+[1885] from one of the core Engineers who's
+[1888] doing their magic in the core doing
+[1889] something impossibly hard they're not
+[1891] out there you know in an ivory Tower
+[1893] saying oh I'm not going to go talk to
+[1894] users you know everyone's there just
+[1896] having a good time so that's really
+[1898] valuable and precious love it yeah and
+[1900] we're going to protect it at all costs
+[1901] and we think it'll lead to World
+[1903] Domination nice yeah because that's what
+[1905] you need to create a new standard yeah
+[1908] totally and just change how people work
+[1910] so that's the first part the second part
+[1911] the cncf thing to me that's completely
+[1913] different yep makes sense that's not a
+[1915] community y to me that's an ecosystem
+[1917] mhm yep it's an interconnected network
+[1920] of projects and companies like ours that
+[1923] will sometimes compete sometimes
+[1925] collaborate but in the end that's our
+[1927] area of the industry we're solving a
+[1928] problem in Tech together Y and
+[1931] institutions like cncf and these
+[1933] foundations and even the Norms of Open
+[1935] Source development The Rules of
+[1937] Engagement that's usually
+[1940] valuable and in my opinion you don't
+[1942] want to mess with that yep you want to
+[1943] you know be a good citizen yeah but I
+[1946] think of it differently as Community
+[1947] because
+[1948] collaborating properly as a good citizen
+[1951] with your competitors yeah and future
+[1954] Partners you know collaborating in the
+[1956] in creating technical standards whatever
+[1959] Open Standards yeah I love that kind of
+[1960] thing yeah yeah yeah deciding if you
+[1962] want your license to be OSI compliant or
+[1965] not yes all important decisions but I
+[1968] think of them as different from
+[1969] Community because the people you
+[1971] interact there they don't really care
+[1972] about dagger right yeah it's not a bad
+[1974] thing no no I'm with you yeah yeah it's
+[1976] just it's different so so Community
+[1978] versus ecosystem is how we think about
+[1980] it and there's a connection of course
+[1982] but to answer your question we will
+[1983] never donate dagger to the cncf oh
+[1987] that's a bold obvious great statement so
+[1989] I was curious and we're comfortable
+[1991] explaining why it can be open source and
+[1994] have a real Community y that is
+[1996] undeniably there and true and also say
+[1999] this is our community built on our
+[2001] product and it's open source so you can
+[2003] Fork it Y and go and build a competitor
+[2006] and by the way good luck to you because
+[2008] this is going to move fast you know if
+[2010] we do a good job yeah right that's part
+[2011] of the game you know in the open source
+[2013] ecosystem so we're not going to mess
+[2014] with that we don't have any plans for
+[2016] you know weird licenses or anything like
+[2018] that in fact yeah yeah Adam and I are
+[2020] very aligned on the Playbook there on
+[2023] how to connect open source and business
+[2026] and it's basically the red hat Playbook
+[2028] which is Extreme openness on copyright
+[2030] in other words the codes the software
+[2033] which is really your license MH and
+[2036] extreme control over your trademark and
+[2038] how it's used ah nice and because that's
+[2040] your brand that's your identity yeah
+[2042] that's not free for use you know and
+[2044] that's something by the way we did not
+[2046] do well at Docker we were naive about it
+[2048] ah the whole Mobi project and things
+[2050] like that well Mobi was an attempt at
+[2052] fixing it yeah but it came too late it
+[2054] was too little too late but you know
+[2056] basically we did not protect the docker
+[2058] brand enough we allowed makes sense too
+[2061] many participants in the broader
+[2063] ecosystem to do whatever they wanted
+[2065] with it we didn't feel great about it
+[2067] but we didn't realize how strategic it
+[2069] was to be decisive and clear you know
+[2071] yeah ironically we were too worried
+[2073] about everyone loving us so we were
+[2076] afraid to make clear statements about
+[2079] what is okay what is not okay you know
+[2080] what is our position we just wanted
+[2082] everyone to love us you know yeah yeah
+[2084] it's understandable yeah and so as a
+[2086] result the opposite happened everyone
+[2087] got increasingly frustrated because
+[2090] everyone projects their Ambitions their
+[2092] hopes their dreams and then they're not
+[2094] all compatible so someone's going to be
+[2096] disappointed yeah and then that led to
+[2098] some drama at the time I think mostly
+[2100] forgotten now but yeah the lesson for us
+[2101] is be clear be straightforward just say
+[2103] what you're going to do and then do it
+[2105] yep and if someone's going to disagree
+[2107] with it it's better if they hear it
+[2108] early yeah I hear on that totally so
+[2111] we're saying the engine is open source
+[2112] it's real open source you can Fork it
+[2114] you know it's there no plan to change it
+[2116] I can't guarantee that if we get bought
+[2118] the next owner will change that I mean
+[2121] there's no good mechanism for that today
+[2124] yeah I'm with you yeah but we've set up
+[2126] our business model so that we need to
+[2128] change the license to succeed because
+[2129] we're selling this cloud service yeah
+[2131] that's why you're making money yeah on
+[2132] the side yeah yeah and the trademark you
+[2134] know you can't mess with that you can't
+[2136] redistribute dagger in any modified way
+[2139] and call it dagger we're not going to
+[2141] let that happen yeah yeah and we won't
+[2143] do it to a foundation because it's not a
+[2144] neutral piece of technology it's a
+[2146] complete platform oh I was kind of
+[2148] curious where the connection was there
+[2149] in terms of like not the donation but
+[2150] then like you say you want to be super
+[2152] clear on like you own this bit and then
+[2154] the rest of it sort of like open source
+[2155] in the community and yeah yeah I think
+[2156] foundations are great for lowlevel
+[2158] components and Technical standards
+[2161] interesting point yeah where product
+[2163] opinion and subjective design and user
+[2167] experience are not important interesting
+[2170] way to look at it yeah yeah yeah and
+[2171] that was really a lot of the
+[2172] misunderstandings I think in Docker you
+[2175] know I've always been very forceful and
+[2177] cared a lot about user experience oh
+[2179] yeah it came through in the product for
+[2181] sure in Docker yeah yeah and you know
+[2182] when things align then the results are
+[2185] great you know that's kind of our secret
+[2186] us that's how we achieve things that
+[2188] others don't yeah but it does require
+[2191] focus and ownership so we can say no to
+[2193] things yeah yes you know it's a big part
+[2196] of good design is you have 10 good ideas
+[2198] you know there's 100 bad ideas but then
+[2200] there's 10 awesome ideas and you can
+[2202] only do one because if you do all 10 the
+[2204] results going to be bad so that's
+[2206] painful and tedious that's part of the
+[2209] work Y and that's it's hard and it's
+[2211] hard even if you're in full control but
+[2213] if you come in and let your competitors
+[2215] or Partners or just random participants
+[2217] dictates what your user experience will
+[2219] be yeah interesting it's not going to be
+[2221] a good user experience and so that's why
+[2224] anything that requires that kind of
+[2226] product minded Focus product Excellence
+[2229] yeah design Excellence it cannot be
+[2231] donated to a foundation because it won't
+[2232] be a good product you know but over time
+[2235] you can spin out well scoped low-level
+[2238] components like build kit with Docker as
+[2241] an sample kind of analogy yeah well
+[2243] actually bilit was not spun out into a
+[2244] foundation but yeah it was at least spun
+[2246] out into a separate repo so yeah it is a
+[2248] good example but yeah that actually
+[2249] there's an open question that we're
+[2251] interested in flipping the tables here
+[2253] as a participant in docker's bilit
+[2257] ecosystem you know we want bilit to
+[2259] succeed but we want bilit to be open and
+[2262] neutral right okay and so it would be a
+[2265] logical conclusion for bilit to be
+[2267] donated to foundation so that Docker can
+[2270] build their product on it yeah we can
+[2272] build our product on it and there are
+[2274] others you know there's a good dozen I
+[2276] see a lot yeah us bitto uses B kit Depot
+[2280] uses Bill kit you know there's a lot of
+[2282] really interesting things being built on
+[2284] bkit so that's a great candidate
+[2286] actually for a neutral component but
+[2287] it's not fully realized but you know the
+[2289] canonical example would be run C oci
+[2292] container D is a great example you know
+[2295] container D is I think the perfect
+[2297] example you know and it's a very
+[2299] successful y implementation of taking
+[2302] something that was nested deep into a
+[2305] product and we Docker decided to spin
+[2308] that out no one forced us but people
+[2310] asked for it and we realize okay this is
+[2312] a good idea we will be able to share the
+[2315] burden of developing this low-level
+[2317] component it will be more reliable Etc
+[2319] and we still get to control our user
+[2322] experience you know so everybody's happy
+[2324] yeah yeah yeah dagger at the moment just
+[2326] isn't large enough to have its own
+[2328] components inside of it except bukit you
+[2330] know we're building on top of fantastic
+[2333] that super like clear definition I've
+[2335] never really heard about the product in
+[2336] the ux aspect of it in that way before
+[2338] and that totally makes sense and I'm
+[2339] like my bad I did think buildkit was
+[2341] already in the foundation I see like I
+[2343] bump into it so much but I do take your
+[2345] point about those low-level components
+[2346] being perfect candidates right for
+[2348] extraction yeah yeah bilit is in the
+[2350] Mobi project and the Mobi project was
+[2353] our attempt at Docker to open up more
+[2358] yeah and I think in the end cncf ended
+[2361] up being the right vehicle for it yeah
+[2364] you know because as open as Mobi was it
+[2367] was still Docker projects only yeah
+[2370] right so if you take the analogy of red
+[2371] hat Mobi would have been our Fedora yes
+[2374] yep it's open it's Community Based
+[2376] there's a lot more room for building
+[2378] your own products on it but it's still
+[2380] the docker stack yeah with a bunch of
+[2382] Docker opinions in it yes and so most of
+[2385] the projects in there we ended up
+[2387] spinning out into cncf instead yeah I'm
+[2389] not sure why bu it actually is not there
+[2391] yet I think it just got cut in the I
+[2392] don't know everyone's busy right
+[2394] everyone's busy doing
+[2396] stuff again one of my things I I see it
+[2398] so much in many projects I chat I'm very
+[2401] I just assume it was cncf right yeah
+[2403] we're talking about it with them I mean
+[2405] I've shared with Docker that I think
+[2407] it's something that is in docker's
+[2409] interest to do because yeah interesting
+[2411] bilit is a really powerful ecosystem in
+[2414] the making but you know it does require
+[2416] some nurturing Y and you know a 25
+[2419] people startup yeah can only nurture so
+[2421] much Docker now is much more successful
+[2424] in a larger company and you know tonis
+[2426] the Creator bkit works there so yeah I
+[2428] think we'll see some gradual steps
+[2430] towards it I know Justin Cormac is
+[2432] keenly aware of this and he's got a on
+[2434] this plate you know fantastic I'm
+[2437] conscious of your time really appreciate
+[2438] the Insight you provided today just as a
+[2439] sort of wrapping up point is there
+[2441] anything you want to share with the
+[2442] listeners or particularly around the
+[2443] future directions I think I know we've
+[2444] covered that pretty nicely to be honest
+[2446] but anything you want to leave the
+[2447] listeners with would be much appreciated
+[2449] yeah I think it's interesting because
+[2451] sometimes I talk to people about devops
+[2453] and application delivery and cicd all
+[2456] those Wars that have been around for
+[2457] quite some time now yep and there's
+[2460] sometimes an assumption that it's a solv
+[2462] problem it's this thing that's there
+[2464] that's not really moving and sometimes
+[2466] it gets in the way it's just how it is
+[2469] and you know let's just kind of focus on
+[2472] more exciting things in the future but I
+[2473] think what people don't realize is that
+[2476] you can't ship the future without fixing
+[2480] the factory that's going to build it and
+[2482] get it out there and so you can't really
+[2485] as much as everyone would love to just
+[2488] forget about Jenkins and yaml and shell
+[2490] scripts and just step into a bright
+[2493] future that's completely ready for us
+[2495] yeah pipelines are just a reality of
+[2497] life and it's going to get fixed you
+[2500] know and when you look at something like
+[2502] Ai and all those amazing capabilities
+[2504] that are coming up now yeah we're in
+[2506] that really early days of discovering
+[2509] these capabilities right yeah prototypes
+[2512] Labs a few products here and there but
+[2515] 99% of AI products products that will
+[2518] exist are not shipped yet yeah Point
+[2520] second y you know it's really Universe
+[2522] of experimentation and tinkering yeah
+[2525] all of those products will need to
+[2527] somehow be shipped and built and tested
+[2531] and monitored so devops is here to stay
+[2534] and it's about to go through the massive
+[2537] transformation and I think this
+[2538] excitement around AI will be the
+[2540] Catalyst for it it's the excuse that we
+[2542] devops and Cloud people now have to go
+[2545] get our respect of management to finally
+[2549] invest in upgrading the factory good
+[2553] yeah yeah and so I think that there is
+[2555] an incredible interdependency and
+[2557] there's an opportunity for the AI
+[2559] community and the devops community to
+[2561] really help each other achieve their
+[2563] goals yeah and I think it's just going
+[2565] to energize both parts of the industry
+[2567] so I think we're about to enter a really
+[2569] exciting phase I'm here for it fantastic
+[2571] as a long-term Jenkins Survivor Jenkins
+[2574] Survivor and that way too many anal in
+[2575] the kubernetes world I'm sold Solomon so
+[2578] I like what you and several folks in the
+[2579] community are doing with this sort of
+[2581] bringing it all together I think it
+[2582] totally makes sense to me fantastic it's
+[2583] been amazing chatting to you thank you
+[2585] so much for your time today my pleasure
+[2586] thanks so much for having me
+[2593] [Music]

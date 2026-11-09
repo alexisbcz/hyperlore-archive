@@ -1,0 +1,511 @@
+[10] I'm gonna talk about
+[11] socket. um it's a open source project
+[15] for enabling web socket and making real-
+[18] time applications easy to make um on
+[22] every browser and every mobile device
+[24] that we can make it work on um so my
+[28] name is guer morou um I'm the CTO and
+[31] co-founder of an education startup in
+[33] San Francisco uh we have a big
+[37] commitment to open source um and I spent
+[40] part of my time developing this
+[43] technology um I've been heavily involved
+[46] with no JS um since it appeared I
+[49] originally developed a standalone
+[51] websocket server uh that of course would
+[54] only work with websocket clients and
+[56] then I saw the opportunity of making
+[59] websocket work on more than just Cutting
+[62] Edge
+[63] browsers um I'm also a core Ms developer
+[67] I've been uh working on client side
+[70] JavaScript for a while and um those are
+[74] my if you want to reach out um or Fork
+[78] any of my projects you can go to GitHub
+[80] or U follow me on Twitter or find me on
+[83] free
+[84] node um so socket IO is actually two
+[88] projects uh there is a so iio client
+[91] that of course runs on the browser um it
+[93] uses feature detection to decide um what
+[98] how to establish a real-time
+[100] communication to the server depending on
+[102] the uh user agent
+[103] capabilities and uh an officially
+[106] supported socket AO node web server um
+[111] there are some projects that are trying
+[113] to make socket IO um work also on other
+[116] Stacks such as air Lang um
+[121] python uh with tornado Twisted even
+[124] Google go um so you can go to the sucket
+[128] AO website to learn more about those um
+[132] so the client side API looks I don't
+[134] know if you guys are familiar with web
+[135] socket but I'm going to go um into it
+[138] later um the API that you instantiate
+[141] from the client looks pretty much like
+[144] websocket um it does it does more than
+[147] websocket which is NE for creating real
+[151] world real real time applications um the
+[154] premise is that it works in every
+[156] browser so you're not concerned about
+[159] compatibility is um it's lightweight
+[162] it's only 10 kilobytes um when
+[165] compressed um I'm going to talk a little
+[168] bit about about the realtime web and
+[171] what I mean when I talk about realtime
+[173] web
+[174] applications um there when you when we
+[178] talk about realtime web applications
+[180] there are many terms that come to mind
+[182] and that have been popularized over the
+[184] years um such as the beay protocol
+[188] Comet um this this premise of server
+[193] push server sending data to the client
+[196] which is reversing the request response
+[198] model um now there's
+[201] websocket um and all other um protocols
+[207] like
+[208] xmpp um so what is
+[212] which um I'm going to start
+[215] by describing a really simple realtime
+[220] application um a
+[223] Twitter client that fetches no JS tweets
+[226] as they are pushed by twitterers uh and
+[231] you might wish to display the tweets on
+[232] your website so the first approach that
+[235] would come to mind for most people is
+[238] just making ages require plus every 5
+[240] Seconds right so you could use set
+[243] interval and with a light uh jQuery call
+[248] um you can get data from the server to
+[251] the client um in pseudo real
+[255] time um of course the problem is that
+[258] you're only getting data five seconds at
+[260] a time and whatever happens in the
+[262] middle you're not showing instantly or
+[264] you're not showing to the user as
+[266] frequently as he could wish um
+[270] so the next approach that would come to
+[272] mind was would be making an asex call
+[275] and that asks the server is there any
+[278] data are there any tweets for me and uh
+[282] if there is show them if there's not
+[284] initiate another as
+[286] request um but that approach has two
+[289] major flaws one is that um taking into
+[294] consideration the HTTP latency and
+[295] download time the best case scenario for
+[298] that is that it might take take 500
+[300] milliseconds between Asia's requests um
+[304] where the client is basically
+[306] disconnected and another problem is that
+[308] we're increasing Network traffic but the
+[310] server might not have any tweets for us
+[312] might not have any data so we're
+[316] basically asking the server a lot
+[317] generating a lot of calls for and we're
+[320] not sure if there is going to be data
+[322] there so the uh the first solution to
+[325] this problem is called long
+[326] polling it it's not actual server push
+[329] but it does a pretty good job for most
+[331] of the use cases
+[333] because what it does is it opens the
+[336] connection and if there's no data for us
+[338] it keeps it open for a number of seconds
+[340] like 20 seconds it effectively decreases
+[343] latency and network traffic and another
+[347] advantage of this approach is that it
+[348] pretty much works on every browser um if
+[351] you're using jQuery to make the call or
+[353] and any other JavaScript framework um
+[356] you're you're enabling your application
+[358] to make a real time call without um any
+[362] overhead or
+[364] incompatibilities um of course it also
+[366] has weaknesses if there is a lot of data
+[369] for us then the long polling Loop will
+[372] be will be effectively closing and
+[375] opening connections all the time so
+[377] we're back at our second approach which
+[379] was calling the hes create another hes
+[382] call when uh when one finished so again
+[385] we're hitting uh latency and network
+[388] traffic problems
+[390] so um the solution that makes the most
+[393] sense would be keeping the connection
+[395] open um and there are transports there
+[398] are solutions for this uh two pretty
+[401] common ones
+[403] are opening a KN frame and not closing
+[406] it and get a script tags that are
+[408] executed when there's data um and
+[411] another one uh a little bit less known
+[414] but supported by Firefox is the uh
+[417] multi-art xmx replace cont content type
+[420] essentially it's a normal uh XML HD
+[423] request object that is created by
+[424] passing the multi-part flag and um it
+[428] sends us messages with boundaries so the
+[430] server has to say okay here's a message
+[433] the boundary um some um some delimeter
+[438] message and the connection is open and
+[441] we're getting data all the time um the
+[444] hidden ey frame also
+[446] has implementation differences we have
+[449] to make sure we send the connection keep
+[451] alive header uh transfer and coding
+[454] chunked uh those are HTTP headers that
+[456] we have to send and as an user
+[459] experience problem what happens when you
+[462] just open an i frame that is injected
+[464] into a Dom is that many browsers
+[466] browsers are going to show the progress
+[469] bar as if the page never loaded so the
+[472] user will be met
+[474] with a progress bar that is like he's
+[478] not sure what's going on really um there
+[481] is a solution for this which is
+[483] implemented by socket io on neur
+[484] Explorer uh discovered and popularized
+[487] by the uh Gmail team when they created
+[489] Gmail chat uh which is hiding this
+[492] iframe injecting it into a pseudo
+[494] document which is an ActiveX HTML file
+[498] component uh that effectively hides the
+[501] uh Spinners and progress bars so these
+[504] are two transport that transports that
+[506] we can leverage to make realtime
+[508] communication possible of course for
+[511] certain browsers and the server has to
+[514] behave differently depending on which
+[516] transport is used so the these
+[519] techniques are there um they vary by
+[522] user agent um they're only for incoming
+[525] data so when you open that iframe and
+[527] you need to send data to a server in
+[529] order to have bir directional
+[531] communication you still have to use
+[532] regular Ajax
+[536] um so the solution by the uh web
+[539] standards people is called websocket so
+[542] you shouldn't be uh needing to struggle
+[545] with all these limitations we need a
+[548] protocol that enables B directional
+[550] communication out of the box with a
+[552] simple
+[553] API um if you guys read the spec it's
+[557] it's this is the basic description um
+[561] and simplicity is one of the core goals
+[563] of this
+[564] protocol um the way that it works uh at
+[568] an HTP level is that it upgrades the
+[570] connection um HTTP 1.1 supports this
+[573] upgrade header that basically says at
+[576] this point uh we're not doing a normal
+[578] HTTP communication we're upgrading it to
+[581] a new protocol uh in this case the
+[583] websocket protocol
+[585] um again the server has to behave react
+[589] to this response um by doing several
+[592] things um during the handshake process
+[596] um draft 76 the new draft after of webs
+[600] get introduced a security mechanism um
+[603] it has a fairly unique framing system
+[606] framing system um it does UDF a for the
+[609] encoding no binary support and of course
+[612] it's only supported by cut Cutting Edge
+[615] browsers and it's still ongoing constant
+[618] changes is pretty much a work in
+[621] progress um but again one of the
+[623] advantages is that web socket is really
+[625] simple
+[627] um basically we declare uh we connect to
+[631] the server with the Ws schema uh and we
+[634] have three event handlers actually for
+[637] there is on error um when that notifies
+[640] us when the connection is open when a
+[643] message is received and when the
+[644] connection is gracefully
+[646] closed
+[648] um
+[650] so considering the state of web socket
+[653] today let's think about cross browser
+[656] support um when we do HX today like I
+[659] described earlier we we're used to using
+[662] some abstraction of XML HTTP request
+[667] which also gives us compatibility for
+[670] example with I6 uh by leveraging the U
+[673] ActiveX object that uh Microsoft created
+[677] back in the day um this AP these kind of
+[680] apis make it simpler to achieve the goal
+[683] of making an asynchronous um request to
+[686] the server and they also add new
+[688] features in the case of jQuery we also
+[690] we now have support for timeouts um
+[694] caching filters depending on uh the
+[698] content type of the
+[700] response um and again the the entire
+[703] goal is that we're making ax simpler to
+[706] use uh and Soo has a really similar goal
+[710] so we're abstracting away all these
+[713] transports um it's not just uh web
+[716] socket uh we can also use flash if
+[719] available um we can use long polling we
+[722] can use uh multi-art HX ey frames and it
+[725] all depends on what user agent is trying
+[728] to connect to a
+[729] server um so far uh s has been tested on
+[735] I
+[736] 5.5 um with different transports like
+[739] flash and HTML file um Safari 3 Chrome
+[744] Opera and mobile
+[746] devices um it again adds a new Fe
+[748] features so for example um with when you
+[752] open a web socket connection the the
+[754] close event will only be fired if the
+[757] connection is closed appropriately if if
+[760] the server dies or the client internet
+[762] connection is has issues that Clos event
+[765] will never fire so even though the API
+[768] is simple we still have limitations when
+[771] we really need to create a a functional
+[773] real world app uh real time
+[776] application
+[777] um we were trying to do what uh all
+[781] these Frameworks did for Ajax we're
+[783] trying to do for realtime
+[786] communication
+[788] um so so far the uh the project has been
+[792] successfully deployed to production in
+[793] many cases um if you guys follow the
+[796] node knockout competition um many people
+[799] have created realtime games and other
+[802] kinds of realtime applications with it
+[804] and uh there is a lot of community
+[807] interest on GitHub
+[811] um but one thing to keep in mind is that
+[814] scko is just a building block uh suo is
+[817] prodal agnostic sucket AO you can send
+[820] Json and on the client side interpret it
+[823] and do something or you can connect and
+[826] implement the IRC protocol for example
+[828] and you can create an IRC client uh and
+[832] speak the IRC idioms um again so AO is
+[836] just uh a building block
+[840] um creating real-time applications is
+[843] not trivial um there's many different
+[846] protocols and many different ways to do
+[848] it um and a game is significant
+[852] significantly different from making
+[855] certain things in your regular web
+[856] application real
+[859] time um
+[861] so uh I created this project that
+[865] leverages socket IO called No stream um
+[868] the goal of no stream is being the
+[871] protocol for the most common use cases
+[874] for your web
+[876] applications um as an
+[880] example
+[882] um I created a really
+[886] simple to-do list
+[889] application um on node.js
+[899] so again this is a regular uh web
+[902] application that interfaces with a
+[904] database and displays uh the to list
+[907] items that you have to complete and it
+[909] allows you to add uh new items every
+[912] time we add
+[914] something the page is refreshed and we
+[918] can
+[920] edit right
+[923] so even though this is a really simple
+[925] application it still has many flaws for
+[928] the user
+[929] um the first one is that what happens
+[931] when you open two tabs of two instances
+[934] of your application and you decide to
+[936] delete an item all of a sudden this page
+[939] has two items this page has three um it
+[943] ends up hurting the user experience in
+[945] this particular case but what happens if
+[948] more than one person are trying to use
+[950] this um this
+[952] application so I'm going to quickly
+[957] show what the code looks like to create
+[961] this application for those not familiar
+[963] with node.js
+[964] um I'm
+[968] defining a model um I'm using the
+[971] express web framework to Define to
+[973] Define some routes um like edit add
+[978] delete and I call the database and I
+[980] remove the items add the items
+[982] respectively and then what I send to to
+[984] the client is a
+[986] redirect um and this is this is what
+[989] we're trying to change with no stream
+[992] so I'm going to show you what the
+[994] realtime version of this to-do list
+[997] looks
+[1001] like this uh in this case we're
+[1004] attaching socket AO to the web server
+[1012] um so and it has two new features first
+[1016] we're displaying who is editing
+[1019] and now we're making all the
+[1022] interactions that I described through
+[1023] the routes we're making them real time
+[1026] so what happens when I open a new
+[1030] tab is that all of a sudden they're all
+[1033] the same and we can take it to a new
+[1036] level and we can try out different
+[1038] browsers it's interesting to to see that
+[1042] Safari 5 of course is connecting to
+[1044] socket IO through web socket because
+[1046] it's it's the best transport that socket
+[1047] IO can find what happens when I go to a
+[1051] Firefox is that it's going to use
+[1054] multiart um like I described this
+[1057] process is complete transparent to the
+[1059] developer and um and again it we are in
+[1063] effectively
+[1064] enabling real-time collaboration across
+[1067] users if I close one tab the counter
+[1070] will stop will change
+[1073] now the real interesting part about no
+[1075] stream is that we're all the these
+[1078] features have been created by only doing
+[1080] two things one is firing events when
+[1083] certain actions happen which it's a
+[1086] great fit for no. JS of course um and
+[1089] the other thing is that I'm only using
+[1091] I'm only telling the template
+[1096] language what things to
+[1098] update so this is what a template
+[1101] language looks like this is similar to
+[1103] haml it's called Jade um this is the uh
+[1106] page for our old to do application the
+[1110] traditional one um I get the items I go
+[1113] through them and I show a piece of
+[1115] template now in the real time
+[1131] version all I do is declare a part of
+[1134] the template as real time I tell it this
+[1136] piece of this piece of template is real
+[1139] time and it it will repaint whenever the
+[1142] connections event is fire and the
+[1144] variable will be called
+[1147] connections say
+[1151] again oh oh I'm
+[1160] sorry
+[1165] oh uh not quite
+[1173] any
+[1175] suggestions
+[1177] lazy oh lazy is
+[1181] good no pun intended again um I simply
+[1185] replace that for each loop with this
+[1187] realtime filter and I'm indicating it
+[1189] that it'll append new items when the new
+[1191] event is fired it'll repaint when edit
+[1194] is fired and it will remove when the
+[1196] remove event is fired and all I have to
+[1199] do from my application is fire those
+[1201] events so instead of redirecting the
+[1203] user I'm just sending a 200 response and
+[1206] emitting this event so what happens is
+[1208] that the user the um you as a developer
+[1211] are simply making an HX call that
+[1214] triggers that event and through the
+[1216] realtime socket we fire the uh we fire
+[1219] the changes so not only has the uh need
+[1223] effect of of making your application
+[1225] real time it also has
+[1228] um it also makes the client side code
+[1230] simpler because we're no longer making
+[1233] an aous request that returns some HTML
+[1236] and then we decide to inject it
+[1237] somewhere it all happens transparently
+[1240] um uh from the client side point of view
+[1246] um so uh that's no stream
+[1250] um again um it uses sag as a building
+[1254] block to enable it to work on every
+[1256] browser including mobile devices
+[1262] um
+[1265] and you can find this particular example
+[1269] um
+[1271] oops at my um GitHub page uh jayc to do
+[1277] demo um that's it thank
+[1287] you any
+[1310] questions so um yeah those the
+[1314] differences between transports including
+[1316] the ones related Rel to message length
+[1319] are taken care of by socket AO so you
+[1323] when you're leveraging it you're not
+[1324] concerned at all with um with how the
+[1328] the limit the inherent limitation
+[1330] limitations of the
+[1333] transport so socket a has a very thin uh
+[1338] protocol that is of course hidden from
+[1340] the user which is required for example
+[1342] for long polling so in Long polling the
+[1345] client is opening and closing
+[1346] connections but the server might want to
+[1348] send messages during that disconnection
+[1351] period so we need a protocol that says
+[1354] okay this long polling client has a
+[1356] session ID and we'll buffer messages
+[1358] from for him on the server side and when
+[1360] he reconnects we're saying that protocol
+[1364] is saying okay you have 10 messages so
+[1366] you have to fire 10 message events and
+[1369] uh each the transport also takes care of
+[1371] saying okay the message length is this
+[1374] and if it if if the client can check
+[1377] okay is in entire message here otherwise
+[1379] it'll wait for more
+[1385] data um correct I'm gonna open source it
+[1389] right
+[1395] aways
+[1398] Ser
+[1401] support no stream is entirely based on
+[1405] uh node.js Technologies so right now it
+[1407] works with a specific template language
+[1410] um created for um node um but it
+[1414] wouldn't be too difficult to make it
+[1415] work with more and
+[1418] um um again the server side part of
+[1421] socket AO
+[1423] itself the protocol is documented and it
+[1426] can be implemented on any back end and
+[1428] again the uh client side part of no
+[1431] stream can also be leveraged for any um
+[1434] implementation that speaks the no stream
+[1437] uh product
+[1450] yeah so um connect is a framework that
+[1454] is geared towards request response
+[1457] Cycles so making it um making Sako
+[1463] middleware in that regard would be
+[1464] extremely difficult and we would have to
+[1467] actually change how connect middleware
+[1470] is defined but uh what I'm working on is
+[1474] a session connect and the ability for
+[1478] easy identification of so AO clients to
+[1482] the session of your website so if
+[1484] connect if you're leveraging the session
+[1486] component in Connect uh you probably
+[1488] have some like database data Associated
+[1492] to that session because the user might
+[1494] be logged in and making that easy to
+[1496] retrieve from socket AO is certainly one
+[1498] of my goals but also make it compatible
+[1501] with any other um session mechanisms
+[1504] that you might be using not just connect
+[1507] and um the session
+[1511] middleware
+[1516] yep
+[1520] no correct yeah and you Sak would would
+[1524] totally support that
+[1526] y
+[1530] all right thank
+[1533] you

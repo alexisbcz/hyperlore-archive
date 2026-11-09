@@ -1,0 +1,2300 @@
+[0] Hey, there's a new type of unit of value
+[3] that's being streamed across the
+[5] internet called a token. And over the
+[9] next 10 years, the entire internet value
+[12] chain was going to have to deal with the
+[13] fact that like the more valuable tokens
+[16] got, the more bad actors were going to
+[19] go to try to get their hands on those
+[21] tokens. And anytime you scale something
+[24] and the payload gets more and more
+[26] valuable, more bad things people try to
+[29] get access to that value. Online
+[32] payments, you know, is started roughly
+[34] in the 80s and '9s, right? And grew to
+[37] over a trillion dollars over the next 10
+[39] years, and we needed to build entirely
+[41] new payment solutions to deal with
+[42] online fraud. um where we are today is
+[45] roughly there on tokens, but over the
+[49] next even five years, we're expecting
+[51] the token economy to get to like roughly
+[54] $5 trillion. And over the next 10 years,
+[55] I'd be shocked if we went to 10 trillion
+[58] of token flow. We we blocked 10x as much
+[63] dollar volume last month as the month
+[65] before, and the types of token fraud are
+[69] diversifying quite a bit.
+[72] Before we get into today's episode, I
+[74] just have a small message for listeners.
+[76] Thank you. We would not be able to bring
+[78] you the AI engineering, science, and
+[80] entertainment content that you so
+[81] clearly want if you didn't choose to
+[83] also click in and tune into our content.
+[85] We've been approached by sponsors on an
+[87] almost daily basis. But fortunately,
+[89] enough of you actually subscribe to us
+[91] to keep all this sustainable without
+[93] ads, and we want to keep it that way.
+[95] But I just have one favor to ask all of
+[97] you. The single most powerful,
+[100] completely free thing you can do is to
+[101] click that subscribe button. It's the
+[103] only thing I'll ever ask of you, and it
+[105] means absolutely everything to me and my
+[108] team that works so hard to bring the
+[110] Inspace to you each and every week. If
+[111] you do it, I promise you, we'll never
+[114] stop working to make the show even
+[116] better. Now, let's get into it.
+[120] >> Okay, we are here in Anj's house, which
+[124] is where all great startups in San
+[125] Francisco start.
+[126] >> Howdy.
+[127] U and congrats on cursor mist. Uh I
+[131] don't god knows what else. You got so
+[133] much stuff going on.
+[135] >> There's there's a lot going on. Well,
+[136] open router is probably the most has
+[138] been the most I would say one I'm
+[141] excited about recently.
+[142] >> Yeah. And we have Alex uh first time on
+[144] the pod, but uh you've been a a few
+[146] times. I appreciate every time you shown
+[148] up uh for the community. Congrats. I
+[150] just like what a journey. When I was
+[152] looking back at your past posts, one of
+[154] the earliest principles that I saw you
+[156] write as a sort of product person is pub
+[158] sub as a product principle. And I wanted
+[161] to you to maybe explain how you think
+[163] about what should exist in the in the
+[166] world.
+[167] >> Yeah. The the pub sub piece which was
+[169] early 2023. I didn't think about it
+[171] until we we we talked like 10 minutes
+[173] ago is about how there there is like a
+[177] way of thinking about products as an
+[179] intersection between subscribing to data
+[181] and publishing data and marketplaces are
+[185] an easy easy example of this. You have
+[188] suppliers that are publishing some kind
+[190] of product to a skew. And the skew is
+[195] kind of like a pub subtopic that a
+[197] consumer is subscribing to and just
+[200] going to like consume whenever they
+[201] want. And humans consume in a very like
+[204] discreet ad hoc way. It's not very
+[207] scalable. You know, all their attention
+[209] is on the topic when they're buying the
+[212] thing and their attention is nowhere
+[214] else when that happens.
+[215] um agents and and consumers of inference
+[220] don't act like that. They're consuming
+[222] continuously and they're changing the
+[224] SKUs that they consume from all the
+[226] time. So open router is sort of like a
+[228] blend between a you know a normal API
+[231] experience and a marketplace where we
+[233] create model slug. We have the auto
+[235] router. We have all kinds of like
+[238] product SKs that you can subscribe to
+[240] and and then you can like continuously
+[242] add like uh derive value and make
+[245] decisions based on those uh those
+[248] consumers.
+[249] >> Yeah, this is something that was more
+[252] consensus now but not consensus when you
+[254] guys started which was that there is
+[256] such a demand for swapping models and
+[259] changing things out and uh that people
+[261] would not use use the native SDKs. I
+[263] guess uh for each of you, what was your
+[265] sort of realization moment that this
+[267] would this would be it? I you've you've
+[268] given a talk at EIE about alpaka as like
+[271] one of your inspiring moments?
+[273] >> Alpaca I can like rehash the alpaca
+[275] moment for a sec. Like the very
+[278] beginning at the end of 2022, OpenAI was
+[281] the only game in town. There was like
+[282] OpenAI Coher um and then a a smattering
+[287] of of like early attempts at openweight
+[291] models. Um, when Llama came out in
+[294] January of 2023, it was like, "Wow,
+[296] really exciting. This is really big. It
+[298] outperforms GPT3 on one or two
+[301] benchmarks." Uh, but you can't chat with
+[303] it. It wasn't like an it wasn't actually
+[305] an engaging model. But it seemed like
+[307] someone just needed to fix a couple
+[309] things and do some RHF on it to get it
+[311] all the way there. And Alpaca was the
+[314] first model that I saw that did that. It
+[318] only took $600 to do. A team at Stanford
+[322] generated a bunch of synthetic data,
+[324] fine-tuned llama, and made alpaca 7
+[327] billion parameter model or was it maybe
+[329] it was 13 billion parameters and it was
+[332] so good like I was just like on an
+[334] airplane using it. I I you know in many
+[337] cases I like you could not discern a
+[339] chat GPT versus an alpaca result and I
+[343] figured if if it was this easy to make a
+[345] model um one we have a whole new way of
+[349] monetizing data for the first time um
+[352] you can just like take really valuable
+[354] data and turn it into a service in $600
+[357] uh and that cost will probably go down
+[359] over time. When you say so sorry uh when
+[362] you say monetizing your data as uh what
+[364] eventually will become an FCP endpoint
+[366] or or as a training data for a model.
+[369] >> Yeah. Training data for a model like an
+[371] abstract way of saying like hey I have
+[372] this data
+[373] >> compress it into a model
+[374] >> like it makes sense for me in my product
+[377] but like I could repackage it in the
+[380] form of a model and sell it. And so it's
+[383] just a whole new business model for the
+[385] economy. It also of course provides like
+[389] you know a way of following what
+[393] frontier labs are doing but in a way
+[396] that like a single developer or a small
+[399] team of developers can roll on their
+[401] own. And so that whenever you have an
+[404] example of that like a breakout app
+[406] that's doing really well and then some
+[409] kind of framework for imitating it with
+[412] your in your own flavor. You have an
+[414] immediate ecosystem of like like an an
+[417] immediate ecosystem like should arise
+[419] because there's just a huge gap between
+[422] the like decisions that the single
+[424] company is making and all of the
+[426] variations in those decisions that like
+[428] a wider ecosystem can can create
+[430] themselves. And so then you know you
+[432] need a marketplace to like discover all
+[434] of those uh services and all of those
+[437] products. There wasn't any place on the
+[440] internet that like was like a home base
+[442] for LLMs in terms of seeing how much
+[443] they were being used and seeing who was
+[446] using them and why.
+[447] >> The closest would be Hugging Face.
+[448] >> Hugging Face was the closest.
+[449] >> They just started hub like a few years
+[450] ago before before that.
+[452] >> Yeah. And Hugging Face also didn't have
+[454] the close source models.
+[455] >> Yeah.
+[456] >> Um and they didn't uh you couldn't use
+[458] the models at the time. Um and there
+[461] wasn't data about who was using that.
+[463] There there there are like a bunch of
+[464] differences between open router and
+[466] hugging face and those differences felt
+[469] really critical to me especially when I
+[472] was just trying to learn about LLMs and
+[474] like why people are choosing like these
+[478] different little ones that are emerging
+[480] over time.
+[481] >> Got it. And then an no stranger to
+[484] wanting more model diversity uh at the
+[486] time uh you know you're a couple years
+[488] into your anthropic journey which we
+[489] covered in a previous podcast as well.
+[491] What was your introduction to Alex?
+[494] >> Well, the introduction was I think 13
+[496] years before that. Oh.
+[498] >> Um, but the open router handshake
+[499] actually happened right over there if
+[500] you remember. Yeah.
+[501] >> Um, which was Alex and I uh met I I
+[506] believe it's sophomores now if I
+[507] remember correct review
+[510] >> um meeting for the first time.
+[511] >> I think so. Yeah.
+[512] >> Yeah. So Stanford Review was the
+[514] libertarian newspaper on campus at
+[516] Stamford that Peter Teal had started
+[517] back in the day. And uh forever for
+[520] whatever reason I you know Alex and I
+[522] both showed up to one of the meetings
+[525] and I remember um the editor-inchief was
+[528] a mutual friend of ours. Lisa was really
+[531] a really great editor-in chief. You know
+[532] part of part part of an editor-in
+[534] chief's job is to assign
+[535] responsibilities to people and make sure
+[536] the work gets done. Um, and I I I may be
+[540] misremembering the details, but I I
+[542] remember wanting to it was kind of
+[544] surprising to me that at the time there
+[545] was no dedicated technology section in
+[548] the newspaper.
+[549] >> Um, you know,
+[550] >> because it's political, right?
+[554] >> Yes. Yeah. States and things.
+[556] >> Yeah. But it it to take us back in time,
+[558] you may remember this, but um there was
+[561] there was this technology uh kind of
+[564] legislation that was being debated
+[565] called uh the net neutrality act. And
+[568] net neutrality is like inherently this
+[570] political concept, right? It's it's
+[572] about the regulation of internet
+[574] broadband access. And so there was a
+[576] community of us who are kind of
+[578] technologists but also debating the
+[581] politics of the technology. And I
+[582] thought the review would be a great
+[583] place for to like write about that. And
+[585] I was working on I think a net
+[586] neutrality article and I remember
+[588] proposing well maybe you should start a
+[590] technology kind of section and Alex was
+[592] one of the only people who said yes that
+[594] would be cool and said I I forget
+[597] whether we ended up writing stuff
+[598] together but that's when we first met um
+[601] was 2011 or 12 I forget which year it
+[605] was. It was one of those.
+[606] >> Um it was at Old Union if I remember
+[609] correctly. That's where we used to meet.
+[611] But, you know, along the way, Alex and I
+[613] have had a chance to to to hang out
+[615] often. And probably the the the time
+[618] when we had the most professional
+[620] overlap was when I was running the
+[623] platform of Discord. Um, and it had
+[625] become this explosive kind of platform
+[628] for crypto.
+[630] >> Yeah.
+[631] >> And NFDs in the middle of the pandemic,
+[633] >> which also, by the way, you were in
+[634] charge of safety and security as well,
+[636] right? I was the head of platform which
+[637] meant all of the crypto DAO and NFD
+[641] launch security debugging fell on me and
+[645] >> the fishing the the the social
+[647] engineering attacks like a ton of DOS
+[649] that we were getting hit by um around
+[651] the time I started teaching security at
+[654] Stanford CS53 and Alex was in the at
+[657] openc at the time and I was trying to
+[659] figure out how we we could defend
+[661] against all these attacks that we were
+[663] like and at at peak I forget if you
+[665] remember how much NFT volume was running
+[667] through
+[668] >> discord but it was like a meaningful
+[669] amount of like se it's like several
+[670] billion dollars in NFT volume of GMV so
+[673] to speak running through the platform
+[674] and it was all coming from openc it was
+[676] these like buy sell trade
+[678] >> I mean the server the D and D is discord
+[681] >> yes
+[683] and so that's when I think we had hung
+[684] out professionally but a year after that
+[687] openai gave Discord early access to GPT
+[691] >> sorry GPD3 no it was GP3.5 actually yeah
+[693] GPD 3 which is the RL version of GPD3
+[696] and that's around the time we we made a
+[698] Discord bot with um OpenAI for internal
+[701] deployment and that's when I I realized
+[704] we would need like since I since I was
+[706] part of the deployment team what was the
+[708] use case there were two that were and
+[711] there there's actually a post now called
+[713] Discord is your place for AI with
+[715] friends that somebody sent me recently
+[716] that I wrote um and published in 2023
+[719] but there were two use cases one was
+[722] Clyde which was that in like a first
+[726] party friend inside of Discord that
+[728] could help you set up your Discord
+[730] server and talk to you about onboarding
+[732] and get your friends to hang out more.
+[734] Um, and then there was content
+[736] moderation and one of the realizations
+[740] we had with content moderation was the
+[742] it would refuse to moderate like it
+[744] would just refuse our prompts because
+[746] the RL the post training was we were
+[748] very early in the post- training era and
+[751] it would just our prompts would trigger
+[753] it. uh it's like guardrails. And we told
+[756] OpenAI, hey guys, we need access to the
+[758] weights because if we're going to be
+[759] doing content moderation at scale, we
+[760] had 250 million monthly active users. We
+[763] need more reliability that the model
+[764] will do what we need it to. And they
+[766] said, well, sorry guys, that's not how
+[767] this works. We're a closed source
+[769] company. And so that was my first
+[771] realization that we needed open models
+[773] and the enterprises would need more
+[775] control o over capabilities and then
+[778] ultimately would need some kind of
+[779] control plane or management system to
+[781] orchestrate these open models. But there
+[783] weren't no good there were no good open
+[785] alternatives until maybe 6 months later
+[788] when Llama came out and 6 months after
+[791] that I led the series A into Mistral
+[792] which was started by Giam and the Llama
+[794] team and I that around that time is when
+[797] I remember hearing about Alex launching
+[800] open router and going these worlds are
+[804] going to collide and I don't know when
+[805] it'll make sense to team up but Alex was
+[808] so early and could see I think he was
+[810] totally right about this ecosystem
+[811] starting with Llama uh that then needed
+[814] like a an easy layer to to manage for
+[816] especially for I was approaching it from
+[818] the enterprise perspective because I'd
+[819] been that like the as the VP of platform
+[821] at discord it was my job to ensure that
+[824] when we deployed models to like 250
+[826] million users they did what we wanted
+[829] them to and that was very hard um cuz if
+[831] you outsourced it to the labs and they
+[834] controlled the the guardrails and their
+[836] guardrails or their safety policies
+[839] forbid the model from responding to your
+[841] prompts that was quite catast
+[842] catastrophic.
+[843] >> Yeah. But well, you know, a moderation
+[844] is a thing that they want to support and
+[846] obviously beyond that they would work
+[848] open would work with you uh you know
+[851] presumably to give you a moderation
+[852] endpoint which they offer for free.
+[854] >> It was an interesting use case um that
+[856] they so they did give us a moderation
+[858] endpoint. However, as you guys know,
+[860] every Discord server is like a mini
+[862] deployment of itself. And so the use
+[864] case was instead of having human
+[866] moderators that have to interpret the
+[868] norms of the community, you just give
+[870] the they often like every you know
+[872] subreddit discord servers public ones
+[875] have their own rules that the user the
+[879] randomly space discord in yeah
+[880] >> and then humans used to read those norms
+[884] and then enforce it every day manually
+[887] like observing each message in these
+[889] communities and these communities are
+[890] like millions of users. So we had a
+[892] 5,000 plus person team globally in the
+[894] on the Discord content moderation team.
+[896] These are outsourced contractors who had
+[897] a really tough job. And so the idea was
+[899] instead if you could give the norms of
+[902] that server to the LLM, then the LLM
+[905] would do custom moderation for that
+[907] server. It's almost like a like in
+[909] context moderation for that server. And
+[912] many of those servers norms just
+[915] violated OpenAI's rules. And so that it
+[918] it was like we had our own custom eval.
+[919] So we used to like each server had its
+[921] own custom eval but this at the time
+[923] OpenAI's eval so primitive in our
+[926] thinking about how to deploy these LMS
+[928] that often the um the post training
+[931] prompts were super heavy-handed. It said
+[933] oh anything about Harry Potter anything
+[936] that has trademarked content you know
+[938] don't refuse. And it was a if it was a
+[940] fan Harry Potter fan community this is a
+[943] real use case that had a content
+[944] moderation the LM would just refuse.
+[946] >> Yeah. And that was just not precise
+[949] enough.
+[949] >> Another one that that we heard was like
+[952] if someone was trying to write like a
+[954] detective story and there's one chapter
+[957] with a lot of violence, like maybe
+[958] someone like kills someone, the LMS
+[961] would just refuse to like help with that
+[963] part of the story.
+[965] >> Yeah.
+[965] >> And then they like the user would be
+[967] like, "Okay, this this is not like
+[969] structurally inherent to LLM. There must
+[971] be like some choice out there so that I
+[973] can like switch to another model." um
+[976] when I'm getting like a refusal or a bad
+[979] result from the the main one that I have
+[981] and and that like tension also drove me
+[985] for a marketplace.
+[986] >> Yeah, I think that is well accepted now.
+[989] What was it like back then when you were
+[991] raising or you know starting this? Um
+[993] did people get it? Um you know what was
+[996] the some of the struggles? Basically I
+[997] like I like getting stories out of him
+[999] about how other VCs don't get it.
+[1002] So like anything anything you want to
+[1003] you want to uh talk about now you know
+[1005] now that let's let's call it the you
+[1007] know that the early journey of open
+[1008] router is done right you can obviously
+[1009] talk about some of the early days stuff.
+[1012] >> Uh well I was going to say that like the
+[1014] the biggest objection we got is is big
+[1018] model win which is all the value
+[1022] >> scaling loss. Yeah, scaling laws um and
+[1026] natural network effects are just going
+[1027] to kind of acrue to one company which
+[1030] will be like it'll be a Google style
+[1032] monopoly just like how Google won the
+[1034] search market um by a large large margin
+[1039] um and you'll just be fighting for it
+[1040] scraps at the end basically. That was
+[1042] probably the biggest objection we got
+[1045] and it is interesting that Google won
+[1047] the the the search engine race with such
+[1050] a huge margin. Um, you know, I think
+[1053] like had there been more interesting
+[1056] benchmarks or had like search engines
+[1058] been, you know, a bit, you know, have
+[1060] people like seen them a little bit more
+[1062] like LLMs where they're services that
+[1064] you can build companies on top of. That
+[1066] might not have been the case. Um, but
+[1068] LLMs don't merely have a user interface.
+[1070] They're also like ways of building
+[1072] entirely new businesses. And you know a
+[1075] Google level monopoly would be like the
+[1078] Dutch East India company times you know
+[1080] quadrillion in magnitude cuz the whole
+[1083] economy ends up like depending on the
+[1085] one monopoly as well. So it didn't seem
+[1088] like you know a like would be a really
+[1091] crazy outcome if that happened. And it's
+[1094] also less likely because the the
+[1096] economics of like creating good
+[1098] competitors are are much like much more
+[1101] decentralizable. Everything Alex said is
+[1103] true and I came at it from a completely
+[1107] different perspective which is
+[1108] >> yes this is why we're here. Um the
+[1111] scaling laws were never like in my mind
+[1113] were always a feature not a bug for why
+[1115] open router would be very valuable
+[1116] because I was one of the first investors
+[1118] in entropic and it was obvious to me
+[1120] that other researchers in our friends
+[1122] group and I went to grad school for
+[1124] machine learning and I just had a lot of
+[1126] friends in the ML community who it was a
+[1129] very obvious to us that the bitter
+[1130] lesson holds and so I was like oh like
+[1132] fantastic now we have at least two pro
+[1135] proof points that compute scaling works.
+[1137] It was open AI and anthropic. Um, and by
+[1140] the time I think we decided to team up
+[1142] on open router, I had already invested
+[1144] in Mistral and Blackforce Labs and Luma.
+[1147] So there was multiple model companies
+[1149] and teams that I was uh working with.
+[1151] >> But you did other modalities whereas
+[1153] this is different modalities.
+[1156] >> Exactly. And it was so obvious to me
+[1157] that an ecosystem of different kinds of
+[1160] models were being created. um and that
+[1162] this whole do narrative of like only one
+[1166] company will dominate like Google was um
+[1169] well like may be true but one I don't
+[1171] believe that but two there was so much
+[1174] extraordinary innovation happening
+[1175] across several different research teams
+[1177] but the shared problem I was noticing
+[1179] across all of them was often you know
+[1182] the research teams were fantastic at
+[1184] figuring out how to reason about new
+[1185] capabilities they think in terms of
+[1187] capabilities but never like are not
+[1189] developer mindset oriented like what
+[1191] happens s after the training is done and
+[1193] the checkpoint comes out like you'd be
+[1195] shocked how how like similar the early
+[1197] pre-training teams at OpenAI uh sorry
+[1199] Anthropic BFL Mistral uh were in in in
+[1204] their like default approach to taking
+[1207] their research out of the you know lab
+[1209] and kind of scaling their impact which
+[1211] was often oh the checkpoint is done put
+[1213] it out as an API done and then there'd
+[1216] be crickets um in in the case of claude
+[1219] the first cloud checkpoint And it was
+[1221] actually done a year before they
+[1223] released it internally. And then Chachi
+[1225] PT came out and we decided, okay, yes,
+[1227] it's a good idea to to release a cloud
+[1230] version externally. And they had no
+[1232] plan, like no no no plan for how to get
+[1234] developers to actually try it out. And
+[1236] so if you go to the Claude one blog
+[1239] post, you'll notice they like three kind
+[1241] of developer examples for users of the
+[1244] API. and one is a discord bot and the
+[1246] second is Vivian my wife's startup
+[1247] called Junior Learning because and then
+[1249] there was like notion um because these
+[1251] are all friends of like the entropic
+[1252] team because that's how like last minute
+[1255] the planning was around hey once the
+[1257] model's done training how do you get it
+[1258] out to the world there was no
+[1260] distribution platform that understood
+[1261] what developers needed all the the key
+[1264] management provisioning like simple like
+[1267] you know endpoint management versioning
+[1268] control like all these things that the
+[1271] scientists and researchers go I mean
+[1272] that's plumbing I don't detail, right?
+[1274] And instead, Alex came at it from that
+[1276] perspective. And so, you know, it was so
+[1278] obvious to me that like every single lab
+[1280] I was funding would would spend like
+[1283] literally sometimes billions of dollars
+[1285] into training and then a checkpoint
+[1287] would be done and there'd be crickets
+[1289] like doing early access cuz they're
+[1290] like, "Oh, that's right." Like it's hard
+[1293] to use a checkpoint to make anything.
+[1295] You actually need a whole bunch of
+[1296] plumbing around it to make it usable by
+[1298] a developer. And so by the time I think
+[1301] we it was so obvious to me that a
+[1302] distribution platform like open router
+[1304] was critical to have in the ecosystem.
+[1306] If we wanted there to be competition to
+[1308] Google like unless you know with Google
+[1310] Deepind is done training a new
+[1312] checkpoint and then they push a button
+[1314] and it gets blasted out across all their
+[1316] surfaces from Google Docs to you know
+[1319] >> everywhere even if I don't
+[1320] >> everywhere you want to know about like
+[1321] on Android like like overnight they can
+[1323] deploy a new checkpoint to like a
+[1325] billion devices right and that invisible
+[1328] infra advantage distribution advantage
+[1330] most people don't realize but until open
+[1331] router showed up it you had to think
+[1333] about all of that yourself as a model
+[1335] lab And it was very daunting, you know,
+[1336] at Anthropic, I think it took more more
+[1339] than 12 months to get to our first 10
+[1340] million in revenue. And in contrast with
+[1343] with Black Force Labs, I remember the
+[1346] early days, you you guys had a
+[1348] conversation with the BFL team and uh it
+[1352] it was so simple for open to say, "Oh,
+[1355] no problem. Like the day you launch, we
+[1357] can send a million developers to you."
+[1359] You know, that that was crazy. That was
+[1361] like a step function change in in like
+[1363] power.
+[1364] >> Is that a real number? million.
+[1365] >> I I I think today it's like million. How
+[1368] many developers are on open router
+[1369] today? We over 10 but over 10 million
+[1373] but um but like it's it's hard to I
+[1377] don't know how to we do a lot of like
+[1379] you know account dduping work but you
+[1381] know no one
+[1382] >> if you could get a thousand developers
+[1384] just to put in context if you get a
+[1385] thousand developers to actually try the
+[1387] model on day one after you release it
+[1390] and just like do inference and give you
+[1392] feedback that's a thousand more
+[1394] developers than they knew how to get to
+[1395] on their own. Well, you know, BSL had a
+[1398] reputation. Yes,
+[1399] >> they had one with stable diffusion.
+[1400] >> Yeah.
+[1401] >> And with Mistral, uh I don't know if you
+[1403] guys remember, but the first checkpoint
+[1405] they they released was like torrents. It
+[1408] was like torrent weights.
+[1409] >> Yeah. They just put up a magnet link.
+[1410] >> Yeah. There was no API
+[1412] >> cuz they didn't they weren't in for
+[1413] people, you know, like, okay, download
+[1416] these weights and you guys go.
+[1417] >> He has a story on his side. Yeah.
+[1419] >> Yeah. I I mean in addition to the like
+[1422] building a really good developer
+[1423] experience around it, the marketing that
+[1425] we do uh like for different models is
+[1429] totally different and perceived totally
+[1431] differently from the marketing that a
+[1433] model lab does for itself.
+[1434] >> Yes. We are like a, you know, neutral
+[1437] layer looking at this market like it's a
+[1439] big dark room with all the corners
+[1442] completely obscure to users and users
+[1444] were walking into the room and like
+[1446] feeling around and trying to figure out
+[1448] what objects to grab off the tables and
+[1450] like build into uh their companies. It's
+[1454] an insane way of working. Like models
+[1457] are not products where you can just
+[1459] enumerate all their features onto a web
+[1461] page. They're all black boxes, including
+[1464] the openweight ones. So, you need to
+[1466] like shine lights on all corners of this
+[1469] room um so that people can see what
+[1471] makes this model good. And you need the
+[1473] company shining that light to be a
+[1476] neutral third party, which is what we
+[1478] specialized in. So the like it's in
+[1482] addition to developer experience there's
+[1483] also like a very important like
+[1485] marketing and product packaging
+[1487] component and a way of like um routing
+[1491] and and discovering models becomes like
+[1495] critical to your go to market as a
+[1496] provider or a model lab or a server tool
+[1500] and more in the future
+[1501] >> and and this value to your earlier point
+[1503] about how many VCs like you know just
+[1506] don't one of my biggest frustrations is
+[1509] venture capitalists many of them like
+[1511] just don't have any operating experience
+[1512] in the field you know so unlike a
+[1515] traditional investor who's just maybe
+[1516] come up through the ranks as like a
+[1519] associate working on financial modeling
+[1521] or maybe hasn't been a real operator in
+[1523] the field for like more than 10 years
+[1525] which is a big part of the industry now
+[1526] I had just arrived at A16Z like a year
+[1529] after running the platform and so I knew
+[1532] what the challenges were of like
+[1534] building a real developer experience and
+[1537] actually like being able to create a
+[1539] working piece of software with with a
+[1541] model and there were a few I won't name
+[1544] names but there were investors who were
+[1546] looking at open router um and you know
+[1550] felt at the time like when I would
+[1552] compare notes with people that it was
+[1553] just I quote just a marketplace
+[1556] >> yeah just a thin layer just a proxy just
+[1559] >> a wrapper or whatever on other people's
+[1560] APIs and I was like you have no idea how
+[1563] strategic the value that open router has
+[1566] created by being able to orchestrate
+[1568] even three APIs in production. The
+[1571] amount of both engineering work and
+[1574] community design that goes into getting
+[1576] that actually live and running in
+[1577] production at the scale the open order
+[1579] team had started just doesn't happen by
+[1581] default. You know, and that was one of
+[1582] the things that stood out to me about
+[1584] Alex from the earliest days, like he
+[1586] just understood like these from a
+[1588] systems perspective, like how do you get
+[1590] these flywheels going? Like that stood
+[1592] out to me with OpenC when we were
+[1593] working together on the NFD integration
+[1596] at Discord. Like Alex had a level of
+[1598] community like systems thinking around
+[1599] how you get these flywheels going that
+[1602] most scientists and machine learning
+[1604] people just don't think think of. Like
+[1607] we often think in terms of pre-training,
+[1608] mid-raining, post- training,
+[1610] >> it's a linear stage. It's this linear
+[1611] pipeline. There's no loop.
+[1612] >> Yeah. It wasn't until much later that
+[1614] the modern context feedback loop cycle
+[1616] really got standardized in the industry.
+[1617] But at the time, if you remember,
+[1619] machine learning was like
+[1620] >> like mostly we did a lot of ML like when
+[1622] I was in grad school on a laptop. So you
+[1624] just like download a data set, ran some
+[1627] ablations, and you looked at the loss
+[1629] curves and you're like great, I made AI.
+[1631] And the idea that you have to like
+[1633] deploy those capabilities, collect
+[1635] feedback trajectories, then like put
+[1638] those into a continuous loop came much
+[1640] much much later. And it was very
+[1641] counterintuitive to the science like the
+[1643] traditional AI mindset. I do remember
+[1645] during the investment phase for um open
+[1649] router. I just didn't try and re-educate
+[1653] a bunch of other VCs on why it was not
+[1656] just a marketplace. I was like, you know
+[1657] what? I'm just going to invest
+[1659] >> and I'm going to like take the
+[1660] opportunity to partner with Alex and if
+[1662] not no other VCs get it that's totally
+[1665] fine cuz at the time it was not obvious
+[1667] I think to several other investors that
+[1669] like open router was not more than just
+[1670] a rapper around APIs and that infuriated
+[1672] me and I was like you know I don't have
+[1673] time to debate you I'm just we're going
+[1675] to we're going to invest and then I
+[1677] think like a month later Matt Murphy
+[1679] marked it up by 10x like our I think I
+[1682] forget what the exact post money was and
+[1683] so on but you know to his credit Menlo
+[1686] Ventures realized
+[1687] Okay, there's actually much more
+[1689] strategic value here as well. Maybe you
+[1690] didn't hear all these conversations
+[1691] behind the scenes. Um, but that that
+[1693] frustrated me a lot. You know, there's a
+[1695] lot of this like opining about rappers.
+[1697] Um, and if you're like, oh, an app is
+[1699] just a rapper on no model then like and
+[1703] you open router is like this rapper on
+[1705] top of other APIs. This is the most
+[1707] stupid reductive framework. So, it's
+[1709] clearly somebody who has no experience
+[1711] deploying.
+[1712] >> It's the thing you you dismiss other
+[1714] things with like you're everyone's a
+[1715] rapper on everything, right? Like and
+[1716] there's there's some point some some
+[1717] rappers have value.
+[1718] >> I mean investors are rappers and LPS
+[1720] right like venture capitalist. So I mean
+[1721] yeah it's all rappers down all down to
+[1723] bare metal I guess and
+[1725] >> when I started the whole engineer I
+[1728] guess the coining uh in 2023 like that
+[1730] was the number one push back is that
+[1732] this is no value. You should actually
+[1733] just train models right
+[1734] >> uh and yeah I mean obviously this is
+[1736] like you guys are one of testaments to
+[1738] the fact that like you can actually
+[1740] build very valuable rappers but also
+[1742] very valuable model companies. It's so
+[1744] um hard to be like the the day a model
+[1749] launches, the fact that you have an open
+[1751] router um endpoint for that model
+[1755] frequently at the top of hackernews on
+[1756] day one. People don't realize the amount
+[1759] of work that goes into accomplishing
+[1761] that. An open router used like that
+[1762] would happen over and over again and I
+[1765] remember going people have no idea how
+[1766] hard that is. you know that's not
+[1769] >> yeah we've covered some of the inference
+[1770] engineering that goes behind uh some of
+[1772] the with base 10 and all those
+[1774] >> well today you have you know all those
+[1776] like cool code name things and people
+[1777] guess what oxy alpha is and all those
+[1779] things but like I I I guess one of the
+[1781] things that you're teasing is how do you
+[1783] get that initial flywheel going right
+[1785] because today you have your scale and
+[1787] your reputation all these things so
+[1788] obviously you get you drive immense
+[1790] distribution but when you're early on
+[1792] when it's most
+[1793] >> the bootstrap yeah how what is the
+[1794] bootstrap like
+[1796] >> I mean to bring it back to early Discord
+[1799] days. I think we like initially
+[1800] connected with this is an open C story
+[1803] technically, but we initially connected
+[1806] when you were at Discord and we talked
+[1809] about like Axi the Axi Infinity server.
+[1811] >> Yes. Yes.
+[1812] >> This server was like the biggest server
+[1814] at the time at Discord.
+[1816] >> That's right.
+[1816] >> And you were kind of like constantly
+[1819] bumping up the limit.
+[1820] >> The limits on the server for those who
+[1822] don't know like like 10% of Philippines
+[1825] was actually I was on that server.
+[1827] That's
+[1828] >> it was like a meaningful contrib
+[1831] like crypto game. But
+[1832] >> there's like a Pokemon breeding thing
+[1834] >> similar. Yeah. There was battling, there
+[1836] was breeding and and then there was like
+[1840] a marketplace for trading,
+[1841] >> play to earn as well.
+[1843] >> Yeah. Play to earn. And like the
+[1845] graphics were really cute and fun and
+[1847] you kind of like you you you know you
+[1849] get kind of emotional about your axi
+[1851] that you make. So to like start a
+[1853] community like that uh which we had to
+[1856] do many times at OpenC with basically
+[1858] every early project for us to create a
+[1862] marketplace for it. We need to make sure
+[1864] that the like the community actually
+[1866] wants it. And it it's kind of like
+[1868] building something that people want and
+[1870] going and telling them about it. Like
+[1872] you can do that on a one-on-one basis,
+[1874] but it's way higher leverage to do that
+[1876] in a community where everyone can talk
+[1879] to you at the same time. So we we spent
+[1881] a lot of time like building things that
+[1883] the community really wanted. We did the
+[1885] same thing for open router and you know
+[1888] like the AXI community was one of like a
+[1890] zillion communities we did that with and
+[1893] an like saw us doing it and cuz you
+[1896] could just see people sharing open C
+[1898] links constantly in that discord. Like
+[1900] users sharing links is a really clear
+[1902] clear indicator that like something
+[1904] important is going on. So we spent you
+[1907] know a lot of time like first figuring
+[1911] out what the gap is in the technology
+[1914] that people care about like what was the
+[1916] actual problem that needs to be solved.
+[1918] You know in early LLM days it was you
+[1923] know open AI refusing to finish the the
+[1927] prompt or like to like complete the
+[1929] task. It was also you know inability to
+[1932] customize models. Um, and so there are
+[1935] communities that like are just
+[1937] completely blocked on that issue and
+[1940] those are the communities that are most
+[1941] useful to sort of learn about and and
+[1944] dive into and explore.
+[1945] >> Something that really struck me at that
+[1947] time you as as I was just hearing your
+[1949] talk, I remember noting how you may not
+[1952] remember this, but we were we had these
+[1954] like working uh Zoom calls that we're
+[1956] doing a sprint around for like this
+[1958] OpenC integration with Discord. Um, and
+[1963] you know, we we'd get it would it was
+[1964] myself, my engineering team, I think you
+[1966] were there. And I remember, you know,
+[1969] um, Alex in the middle of one of those
+[1971] calls just like there was like silence,
+[1974] uh, you know, we were we all like, "Oh,
+[1976] yeah, this totally makes sense. Let's do
+[1977] this." And then there's some like
+[1978] everybody aligned and Alex was like,
+[1981] "No, this makes no sense to me." And
+[1984] everyone's like, I remember going,
+[1985] "What? What?" Like that it works. like
+[1987] you click on a link and this then it
+[1989] bounces you out to like open C and he
+[1992] was like it's not a good user
+[1993] experience. Yeah, we should not do this.
+[1996] And I remember going, you know, he was
+[1998] the only one person out of all of us to
+[2001] actually raise his hand and go, yes, it
+[2003] made sense from a technical
+[2005] implementation perspective, like we were
+[2007] bouncing the user out into the into
+[2008] OpenC. And so it kind of checked the box
+[2010] of the product manager requirements on
+[2013] both sides. But Alex went one step
+[2016] further and was like, you know what
+[2018] would be better, guys, if we just
+[2019] embedded the experience right here
+[2020] inside of Discord. So the link opened up
+[2022] as an embedded iframe and you can just
+[2023] check out right there. And not one
+[2026] person on the call, like seven of us who
+[2027] had met like, you know, week after week.
+[2030] >> And it's the guy who doesn't work for
+[2031] Discord.
+[2031] >> And it's the guy who doesn't work for
+[2032] Discord.
+[2033] >> Like technically you benefit if they
+[2035] bounce.
+[2035] >> Exactly. And that was like adversarial
+[2038] to keep the user inside of Discord would
+[2040] be adversarial to OpenC. And yet Alex
+[2042] put that user experience first. And I
+[2044] was like, that's special.
+[2045] >> Wow.
+[2046] >> Cuz it's very hard to have somebody
+[2047] who's technical like Alex and
+[2049] understands the developer flow, but also
+[2051] understands the best user experience and
+[2052] wants to prioritize that. And that's two
+[2054] sides of the fly. that you can get
+[2055] spinning like is often hard to stop and
+[2058] you just reminded me like that one was
+[2060] one of those moments where I go I went I
+[2062] realized I got to be better at user
+[2063] experience cuz I should have been the
+[2064] one who came up with that and I didn't
+[2066] and I learned from you and um I think
+[2069] that went into one of our case studies
+[2070] for the PM training program at this I
+[2073] don't know if it's there because
+[2076] >> you need an Alex conclusion
+[2078] >> yeah yeah you need an Alex and and this
+[2080] is why I'm not you know nobody should be
+[2082] surprised why Stripe decided like they
+[2083] had to buy open router because it's a
+[2086] really rare combination of people who
+[2089] understand the machine learning
+[2090] community, the developer experience and
+[2092] the end user experience and putting all
+[2094] that together has resulted in this
+[2096] extraordinary scale that very few other
+[2098] marketplaces have been able to achieve
+[2100] over the last you know 5 years.
+[2101] >> Yeah. Well, we should talk about the
+[2103] other reasons for acquisitions uh which
+[2105] you've written about. Uh I want to sort
+[2106] of proceed somewhat chronologically as
+[2108] well. So that there there is a point
+[2110] that you know one of the questions that
+[2113] uh Dave from HFZ sent in was when did
+[2115] you know it start really started to work
+[2117] and you brought up Mix Draw I don't know
+[2119] if you want to bring up that.
+[2120] >> Oh yeah
+[2121] >> which obviously you overlap with so
+[2124] >> yeah thee was I don't know when I mean
+[2127] the there's no like one moment where I
+[2130] was like oh this is you know officially
+[2133] starting to work. It was like moment
+[2135] increasing like really super early on.
+[2137] >> Oh yeah. Well, yeah. So, before open
+[2139] router, I wanted to like explore a bring
+[2142] your own model experiment and um
+[2145] >> anyone familiar with crypto is like you
+[2147] know phantom and all these things.
+[2148] >> Yeah. Yeah. So, it felt like doing a
+[2150] meta mask analogy for AI would be
+[2154] >> kind of a fun way of exploring that. And
+[2157] at the time there were no AI apps. There
+[2160] were probably as many AI apps that were
+[2163] like hitting AI via like hitting an LLM
+[2166] via an API call as there were like games
+[2170] just doing it in JavaScript. You
+[2173] basically like there there was a there
+[2174] was a moment in time where it could have
+[2178] been the case that web apps call LLM
+[2181] through the browser like through some
+[2183] kind of desktop managed app that is
+[2187] controlled by the user. Um, and of
+[2189] course there are like I think many
+[2190] reasons that that did not happen, but
+[2193] back when the when the days were that
+[2195] primordial. I built a a a Chrome
+[2198] extension called window AI and
+[2201] >> with plasma which I had come across
+[2204] early on and I was like who's going to
+[2205] actually use this? You did
+[2207] >> plasma had a couple like I think Phantom
+[2210] was using it. Um, there were some other
+[2212] like like real companies basically
+[2215] >> react for Chrome extension. It compiles
+[2217] to all these kind of like Nex.js for
+[2220] >> and yeah built window AI on top of it.
+[2223] The creator of plasmo like started
+[2226] contributing code to window AI and uh in
+[2229] GitHub and that turned out to be Lewis
+[2232] Vichy who is the co-founder open router.
+[2235] >> That's you have told me this is how you
+[2236] met Lewis. Yes. Okay. So, um, that that
+[2240] allowed users to kind of like configure
+[2242] which model they wanted to use for a web
+[2243] page in their browser and then like the
+[2246] the app would just call out to that
+[2248] model when it needed to do things. You
+[2249] know, not the right form factor for
+[2251] LLMs, but you know, it's like fun
+[2253] experiment. you learn a lot and like I
+[2256] you know open sourced it and uh and you
+[2259] know the main learning is like okay this
+[2261] has to be an API and it has to look a
+[2264] little bit like there has to be more of
+[2266] a developer experience here and more of
+[2269] a discovery experience as well like I
+[2271] don't know where to use these models and
+[2273] a little Chrome extension is not going
+[2275] to help me discover it's not enough real
+[2276] estate I need more space I need visuals
+[2279] I need graphs I need you know examples I
+[2282] need images I need to like I need to be
+[2285] able to like explore both as a human and
+[2287] as an agent. So that's kind of how how
+[2289] open Rider came to be.
+[2291] >> You know, a meta point that
+[2293] >> I think is underappreciated, but Alex is
+[2296] reminding me is that we were quite lucky
+[2298] that we were so we were like adjacent to
+[2301] the crypto community in those days
+[2303] because in hindsight, crypto ended up
+[2305] being kind of like a dress rehearsal for
+[2307] generative models, right? If you if you
+[2310] think about the the AXI experience, uh
+[2314] you know, Alex is totally right. There
+[2315] were not that many AI apps at the time.
+[2317] And while I was dealing, you know, my
+[2318] job was to be the head of platform at
+[2320] Discord, which meant to be a general
+[2321] purpose place for communities and
+[2323] friends to create uh for developers to
+[2326] create apps and bots and you know, other
+[2329] services that could be deployed across
+[2331] Discord. And while 80% of the attention
+[2333] of the time was being spent on crypto
+[2335] because that's where all the NFT volume
+[2336] was, there was like 20% of my time of my
+[2338] time I was spending with a friend u who
+[2342] would get hotbot with me and ask me for
+[2343] we would play Magic the Gathering on
+[2345] weekends. Um and he was working on a
+[2346] little Discord bot that could take a
+[2348] text input and turn it into an image and
+[2351] it was called Midjourney.
+[2352] >> You know, was that David?
+[2353] >> That was David Holtz. He was a good
+[2354] friend and David and I have both been
+[2356] sort of failed ARV VR founders, you
+[2357] know, in the last before that. And um I
+[2361] remember this you midjourney was one of
+[2364] the fastest growing communities we had
+[2366] after axi infinity started to peter off
+[2369] and many of the the like the
+[2372] abstractions and the infrastructure
+[2373] decisions we made to scale Axi happened
+[2375] just in time because you know Axi did
+[2377] this and then fell off a cliff and then
+[2379] as Midjourney was taking out we like
+[2381] explicitly decided to help David make
+[2383] the server the midjourney server as the
+[2385] primary place for interaction with the
+[2387] with the model because it was very hard
+[2390] for people to understand how to use the
+[2392] model if they couldn't see other people
+[2394] using it and copy them. And so the
+[2396] single player Midjourney web app on its
+[2398] own like majour.com had like terrible
+[2401] retention cuz people would show up
+[2403] they'd see this empty field. It's kind
+[2404] of like Dolly 2 um and they would type
+[2406] in like cat or dog and it was like
+[2409] paralyzing for them to have this blank
+[2410] canvas that they had to fill because
+[2411] they never used an AI model before. but
+[2413] instead in a discord server you could
+[2415] see other people using it and riff off
+[2417] of their prompts and the engagement was
+[2418] off the charts and so scaling you know
+[2420] midjourney from zero to like 10 million
+[2422] monthly activives was a much smoother
+[2424] approach post Axi infinity and so
+[2427] >> don't forget the best of four pictures
+[2429] any
+[2430] which is the feedback loop the RHF
+[2432] feedback loop um which by the way
+[2434] separately like Tom Brown David and I
+[2436] used to play Magic the Gathering on
+[2437] weekends and so like it was one group of
+[2439] friends would hang out like these
+[2440] concepts were all being discussed all
+[2442] the time But you know there was I I I
+[2446] think there were few of us who bridged
+[2447] both the crypto worlds and the AI worlds
+[2450] and compared to crypto where it was the
+[2451] question was always what's the use case
+[2454] you know for this technology there was
+[2455] never any need to ask that for yeah cuz
+[2457] there use case was so visceral it was
+[2459] like I can create now anything my I can
+[2462] imagine I can write novels I can code
+[2465] and the infrastructure that those of us
+[2467] who believed in the distributed systems
+[2469] like value of crypto like the censorship
+[2471] resistance part found this use case that
+[2473] was explosive and I think between
+[2475] midjourney you know claude was a discord
+[2478] bot pre-launch you know that we were
+[2480] using internally as an LLM um 11 labs
+[2483] had a TTS model that we had on discord
+[2485] as well like discord became this petri
+[2487] dish for like early apps to innovate and
+[2490] I don't think it's a coincidence that
+[2491] they found a home there before open
+[2493] router gave the world like a public home
+[2497] store or like a um you know storefront
+[2500] discord was this like almost kind of
+[2502] petri dish storefront that was kind had
+[2505] kind of like piggybacked on the infra
+[2507] we'd built for the for crypto
+[2508] communities and then I think Alex was
+[2510] one of the first people to realize wait
+[2511] a minute like these apps need their own
+[2514] home um on the internet and then open
+[2516] router to me was a continuation of that
+[2518] of that community's needs and of course
+[2520] there was the crazy distribution that
+[2522] you enabled for a lot of these
+[2524] developers
+[2525] >> so so then my question is how come you
+[2527] were my perception is open router is not
+[2528] that discordcentric right you have a
+[2530] discord
+[2531] Yeah.
+[2532] >> And you use it to engage your community,
+[2533] but it's not like midjourney where like
+[2535] no that is like the primary way people
+[2537] experience open router.
+[2538] >> Yeah. Midjourney like it really helps to
+[2542] see visually really quickly how people
+[2544] are using the model and how to prompt it
+[2547] >> and I think that is partly why the
+[2549] server was so critical. It's like it is
+[2552] the user experience. It actually adds a
+[2554] ton.
+[2554] >> Yes. Um, and you can go the whole mile
+[2557] with just like prompting via midjourney
+[2560] like the via the the midjourney discord
+[2562] server, getting your images and then
+[2564] sharing them and having fun for open
+[2566] router for LLMs like you need a lot of
+[2569] user experience around LM to make them
+[2571] like really usable and yeah the like
+[2575] seeing the examples of other people is
+[2577] also not as useful because it's a lot of
+[2579] stuff to read. It takes a long long
+[2580] time. um you need like codebased
+[2583] integration not not possible to do in a
+[2585] discord server you need um or tech it's
+[2588] possible I shouldn't say that it's just
+[2590] not a great you great developer
+[2592] experience um you need like comp you
+[2595] need governance for at the point where
+[2596] you got codebase integration now you
+[2598] need governance for managing the LLMs
+[2600] that have access to it the data policies
+[2602] which teams all that stuff needs a lot
+[2605] more than than a Discord server can
+[2607] provide so it's just like
+[2608] >> it's not the right
+[2609] >> well in addition you're not wrong but
+[2612] also there's the very important
+[2613] distinction that you know midjourney was
+[2616] an enduser application
+[2617] >> right
+[2618] >> and you know that's why discord which
+[2621] just has 250 million monthly end
+[2623] consumers you know made it made sense
+[2626] for discord to to kind to be ao host for
+[2631] that application experience what I I
+[2633] knew was going to happen soon after
+[2635] midjourney found explosive product
+[2636] market fit because we I think when
+[2638] midjourney launched from launch 100
+[2641] million revenue run rate was less than
+[2643] eight months and shortly thereafter
+[2645] stable diffusion launched and you know
+[2647] all of us used to hang out in the
+[2649] discord server it was the um
+[2651] >> the stability discord
+[2652] >> uh it was the lion
+[2654] >> yeah lionage
+[2655] community that stable diffusion and so
+[2658] when stable diffusion came out I
+[2659] realized
+[2660] >> oh now other people can build their own
+[2663] midjourney
+[2665] >> because until then mjourney did not have
+[2667] an API so they were a full stack company
+[2669] right they were training their own
+[2670] models and they were deploying them as
+[2672] an application. But if you want to build
+[2673] your own mid journey, there was no API
+[2675] of that quality. Um and I think Dolly 2
+[2678] was still quite primitive like
+[2679] midjourney actually had great quality
+[2680] and then when stable diffusion came out
+[2682] suddenly there was this new person who
+[2684] could there was new this new capability
+[2685] in the world which is a developer could
+[2687] create their own midjourney and that I
+[2690] think created the the need for something
+[2691] like open router because then you need
+[2692] an API to if you were if you had the
+[2694] kind of creativity of David Holes and
+[2696] you had stable diffusion as the model
+[2698] and you wanted to put these things
+[2699] together how could you do that without
+[2702] having to figure out how to host the
+[2703] weights and what open router uh the
+[2706] shape of open router enabled is is that
+[2709] right when you have open models
+[2711] alternatives to closed sort of
+[2713] applications open router's value in the
+[2715] world becomes extraordinary because now
+[2716] any developer can just show up and
+[2718] >> model did you just say the shape of open
+[2721] router
+[2721] >> oh no you
+[2724] this the real I I'm misaligned now I've
+[2727] been overtrained
+[2730] I've been using cloud way too much
+[2731] haven't I claudish is what people say
+[2733] >> claudish oh god I got untrained myself
+[2735] Okay. And I just want to cap off the
+[2737] mistral side. Uh my my my TLDDR is there
+[2740] was a mixture price war is what they
+[2741] called it, right? Like uh roundabout
+[2742] Europe was 2023 or four. They launched
+[2747] uh the MR 8 by 8 by7B uh and like the
+[2750] price went down like 80%. To me that's
+[2752] very positive because it's like the
+[2754] first like real competition to to host
+[2757] Mistral. Is there more?
+[2759] >> Yeah, that was I'm like trying to
+[2762] remember it. all the things that
+[2763] happened it like we saw that model come
+[2766] out
+[2767] >> and immediately saw people say that it
+[2770] was the best model in the world like
+[2774] this was to my knowledge the first time
+[2776] an open weights model was called that in
+[2779] real seriousness
+[2780] >> it's hype right is it you know
+[2783] >> it was it was hype it was hype it was
+[2785] also like hype from AI influencers at
+[2788] the time and there were many examples
+[2791] where it was like outperforming GPT4.
+[2795] So people really wanted to try it out
+[2798] and see is this going to be true for me
+[2800] too and if so at what price? And uh the
+[2804] the like inference landscape was really
+[2807] messy. Yes,
+[2808] >> we cleaned it up. Um the it allowed like
+[2811] providers to compete on price so we
+[2813] could give users the best price in one
+[2815] spot. And so it was I think the first
+[2818] clear example of like a provider
+[2821] marketplace working in a way that adds
+[2824] value to developers.
+[2826] >> Sean, you may not remember this, but I I
+[2828] think we met for the first time a few
+[2830] days after Mixtra came out at Nurups at
+[2833] a lunchon.
+[2833] >> Yeah, that's where I also met BFL as
+[2835] well. Yeah.
+[2836] >> And Gom was there. I was at Nurups at
+[2837] that time.
+[2838] >> You were there too. And um G we had just
+[2840] announced the Mistral investment and I
+[2842] remember Giam was over there and I
+[2844] remember turning to Guiam and asking him
+[2847] like is it is all like how are you
+[2849] feeling after the launch of Mixrol in 7B
+[2852] and you know him in his typical French
+[2854] fashion was like I mean it's a it's an
+[2856] okay model it's not that good and I was
+[2858] like it was so you know in contrast but
+[2860] I I remember him also saying that part
+[2863] of the reason he felt a lot of people
+[2866] thought that it was better than GPT4
+[2868] before was because of the speed. You
+[2869] know, they it was an MOE model that they
+[2871] had like absolutely kind of figured out
+[2874] how to make super efficient. It was on
+[2875] the period frontier and and this is an
+[2877] important thing with LLM, right?
+[2879] Sometimes when they're faster, you think
+[2880] they're smarter. Um even though like if
+[2883] you did end of, you know, these common
+[2886] like eval do tries and I don't actually
+[2891] remember. I think we should go back and
+[2892] figure out what the data says, but I
+[2895] wouldn't be surprised if it turns out on
+[2896] an end of seven attempts, GPT4 was
+[2899] smarter on EVLs, but the perception of
+[2901] on on like or correctness would be
+[2904] smarter or more accurate, but you know,
+[2906] people like from a human preference
+[2909] perspective felt that it was faster
+[2912] because it was smarter because it's so
+[2913] fast.
+[2914] >> Um,
+[2914] >> and actually most queries do not take
+[2916] that level.
+[2917] >> Don't take that, right? This is the
+[2918] start of humans as router which then
+[2920] eventually becomes open router as router
+[2923] of like the auto you know what I mean
+[2925] like because humans are the routing
+[2926] mechanism like I will ask the fast model
+[2928] first and then if like oh not good
+[2929] enough I'm going to upgrade manually
+[2931] >> but then he's going to auto it
+[2932] >> I didn't I hadn't thought of it that way
+[2933] but that that I mean that makes sense
+[2935] >> which then there's there's a lot more
+[2936] techniques like fusion fusion is a thing
+[2938] that we should talk about before I move
+[2940] on to those things I just want to close
+[2942] off the sort of early early years uh one
+[2944] thing that I observe which you are also
+[2946] an investor in arena Right.
+[2948] >> And we talked about midjourney having
+[2950] that that feedback loop of ABCD and
+[2952] choosing that very being being very
+[2954] important. And you understand the
+[2956] flywheel. So how come you didn't build
+[2958] arena and how come Arena didn't build
+[2960] open router?
+[2961] >> Well, Arena started before open router,
+[2964] right?
+[2965] >> They had they had the school project and
+[2967] then they became a
+[2969] >> Marina. Yeah. So, but and I know you had
+[2971] some Arena experiences like the the
+[2973] heads up comparison type things, but you
+[2975] never really went as hard as Arena did
+[2977] >> and doing heads up experiences
+[2979] >> and and LMS actually did have a router
+[2981] project based on Alam Marina ELOS uh
+[2984] which they never commercialized.
+[2986] >> It's hard to do a company that does both
+[2988] because one company is taking data and
+[2991] selling it and the other company really
+[2994] can't by default. So you know I think
+[2997] there there is like a branding reason
+[3001] that there are two companies here. Um
+[3004] like when you set up open router there's
+[3007] no training or no prompts like aside
+[3010] from what your provider policies set
+[3012] like open like open router can't see
+[3014] your prompts or completions. If you want
+[3016] to see that as an org, you have to opt
+[3018] into it and enable it. And so we're like
+[3021] pretty conservative and careful about
+[3023] data policy and security and privacy.
+[3027] And Elm Marina is like their business
+[3029] model is is like oriented around the
+[3031] labs and and
+[3031] >> because they give it for free, right?
+[3033] You don't give it for free, they give it
+[3034] for free.
+[3035] >> Yeah. But I mean, we do give some we
+[3037] like have free endpoints too, but like
+[3039] those free endpoints, I think we're not
+[3041] collecting any of the prompts. We're not
+[3042] like monetizing the data unless you you
+[3044] know opt into it for some reason. Th
+[3046] this this comparison I mean you're not
+[3047] the first person to ask me this and Alex
+[3049] knows this but I you know I was the the
+[3052] inter like the founder like first C CEO
+[3055] of Arena for the first 5 months when we
+[3057] were helping Anastasia and Whan kind of
+[3059] spin out of Berkeley and uh I did invest
+[3062] in that before um open router but it was
+[3066] it was very strange to me the
+[3068] comparisons that outside you know folks
+[3070] would make between the two projects
+[3071] because the missions were completely
+[3073] different. the founding entity for
+[3074] Arena, we called it the AI reliability
+[3077] institute because it was it was actually
+[3078] there as an eval service like the data
+[3081] so to speak that they they were
+[3083] originally um kind of offering the labs
+[3086] was how do you make the evaluation of
+[3090] models more reliable than kind of like
+[3092] the state-of-the-art at the time which
+[3094] is like really just finger in the wind.
+[3096] Um that that's kind of what Anastasio
+[3098] and and Whan's PhD work was as as
+[3100] scientists at Berkeley was on
+[3102] statistical methodologies for sort of uh
+[3105] correcting you know eval estimates um
+[3108] based on like intrinsic biases and how
+[3110] you collected the data
+[3112] >> um and style control style control and
+[3114] stuff like that and which is very much
+[3115] like a hey how if if you're a scientist
+[3118] and you're trying to kind of um the
+[3120] highest expectation customer for Arena
+[3123] was always like a a post-training and uh
+[3126] like a a researcher at a lab. Whereas
+[3128] the highest expectation customer from
+[3131] from my perspective that that Alex like
+[3134] really understood and and was the
+[3136] mission was to serve was was like a
+[3139] developer, right? Who then takes the
+[3141] result of the research and then produces
+[3142] an application that's deployed to the
+[3144] world. It's actually a completely
+[3145] different problem and person that these
+[3148] two teams were focused on. And so from
+[3150] the outside in actually I don't know if
+[3151] you remember this but I have a distinct
+[3153] memory of a few weeks before we did the
+[3156] term sheet uh together for open router
+[3158] I'd given you a call because we were
+[3161] trying to get a pool's data set together
+[3163] from open router and from arena to uh
+[3166] create like an open- source repository
+[3168] of prompts.
+[3169] >> I mean these projects were so kind of
+[3171] different in their goals that it was
+[3173] totally normal to me to be like oh yeah
+[3175] let's call Alex and see if you'd want to
+[3176] team up on on pooling data cuz they're
+[3178] so different. we need we we actually
+[3180] don't have that kind of data at all. We
+[3182] like we didn't have API prompts. We we
+[3184] didn't have like what developers want to
+[3186] do with the models which is very
+[3187] different from what researchers inside a
+[3190] model lab want to do before releasing
+[3192] the model.
+[3193] >> Yeah.
+[3193] >> Does does that make sense? And so to
+[3196] this day I I think you see that this
+[3198] difference even though at a 30,000 foot
+[3200] level you could I guess you could kind
+[3202] of conclude that arena and open router
+[3205] are adjacent but uh the road maps the
+[3208] missions and so on at the time at least
+[3210] were like in very different sort of
+[3213] directions.
+[3214] >> The ideal customer I get I I totally get
+[3216] that as a founder I want to own
+[3218] everything right. So like this is
+[3220] clearly the adjacency then I'm like I'm
+[3222] going to explore that. uh own everything
+[3224] meaning like you don't know what to do
+[3226] yet so you want to like make sure you
+[3229] catch PM I think what he say you you
+[3232] want to own the entire infrastructure
+[3233] space and so you'd kind of expand to
+[3235] whatever demand
+[3237] >> yeah I I think that's that's hard you
+[3239] know in reality because serving multiple
+[3242] customers is is
+[3243] >> clearly you know this is the only one of
+[3245] focus right
+[3246] >> yeah I I still think even in the age of
+[3248] AI like focus is is underrated and
+[3252] critical
+[3253] Not just because you end up with a
+[3254] better product by focusing your humans
+[3256] on it, but also because the world knows
+[3259] what your focus is.
+[3261] >> The world can map like, oh, I have this
+[3263] issue. Which brand out there is going to
+[3265] help me with that issue? This is the
+[3267] brand that's known for that focus. So
+[3270] like if I want real attention on this
+[3272] issue, like this really matters to me, I
+[3274] should go with the brand that cares the
+[3276] most about it. to underscore Alex's
+[3278] point about how important focus is. In
+[3280] the early days of Anthropic, it it was
+[3282] not easy to like people think that the
+[3286] early days of Anthropic were like super
+[3287] easy because they were on the GPT3 guys
+[3288] who left. But it was actually very
+[3290] competitive. The company was starting
+[3293] $10 billion behind OpenAI,
+[3295] >> right? And so to get to the frontier
+[3297] like the big question was what what do
+[3299] we want to be known for? What's the
+[3300] mission? And the mission was AGI pair
+[3302] programming. And so to the um exclusion
+[3305] of all kinds of other things that were
+[3307] really shiny at the time like image
+[3309] models and video models that were
+[3310] getting lots of you know momentum the
+[3313] anthropic team was like we just got to
+[3315] focus on coding like that is the core
+[3317] capability that we're focused and today
+[3318] you can see the results right it's a
+[3319] trillion dollar company within 5 years
+[3321] and that focus I think like the high the
+[3324] focus on who your highest expectation
+[3326] customer is and how you exceed their
+[3327] expectation because exceeding anyone's
+[3328] expectations is hard and doing it for
+[3330] multiple like customers is so even more
+[3333] difficult um is part of the reason why
+[3335] opener succeeded and entropic as well.
+[3337] >> Was the focus on coding that early
+[3339] though or did it come later? Literally
+[3340] from day one it was AI pair programming
+[3343] is responsibly commercialize an AI pair
+[3346] programmer was the seed memo. That was
+[3349] when I invested. Right. We we actually
+[3350] kind like refine that memo a lot. Well,
+[3352] you got to ask Dario and Tom for
+[3354] permission on that. Um but it's an
+[3355] extraordinary piece of writing that they
+[3357] had put together and AI you know
+[3359] commercializing responsibly
+[3361] commercializing AI pair program was the
+[3363] mission you know from day one. And I
+[3365] would say there was maybe like a couple
+[3367] moments in the company's history where
+[3369] like they did experiments to kind of see
+[3371] if like little detours made sense like a
+[3373] general chatbot like Cloudi when chat
+[3375] GPT was really taking off but at the end
+[3377] of the day especially once um they got
+[3381] their significant pre-training computer
+[3383] online I think like the all the main
+[3385] evals at the company for example have
+[3387] always been coding evals long horizon
+[3389] agentic programming I mean from day one
+[3391] that was always
+[3392] >> when like flawed instant came out and
+[3394] Claude 2 came out. Yes,
+[3396] >> I remember the marketing mostly being
+[3398] focused on pros like this model
+[3401] >> write better and
+[3403] >> long context
+[3404] >> long context um
+[3406] >> this directly affected me cuz I told
+[3408] something on that
+[3409] >> what did you make
+[3409] >> uh small developer which was my Devon
+[3412] before
+[3412] >> oh yeah small
+[3414] >> yes uh and uh you know so I think like
+[3417] there's there's all that really like
+[3418] good like focus is another thing that is
+[3420] a question that people do want to ask uh
+[3422] you know you could have built any any
+[3423] other things like and obviously open
+[3425] roto was working working working uh were
+[3427] there other ideas that you wanted to
+[3429] pursue that you turned down you know
+[3431] just the paths roads not taken
+[3433] >> we made a couple prototypes for things
+[3435] that we didn't launch one was a
+[3438] fine-tuning model as a service
+[3441] >> lot of that open pipe and all those
+[3443] things
+[3443] >> but it was it it kind of was in a very
+[3445] consumerry form factor where you would
+[3447] give us a YouTube video or two or three
+[3450] we would then extract all the
+[3453] transcripts from it and try to fine-tune
+[3455] model to talk like the person in the
+[3457] YouTube video or the people in the in
+[3459] the videos that you sent. So like a
+[3461] really really easy way of creating a
+[3462] fine-tuned model based on like some kind
+[3465] of videos that you like.
+[3466] >> That would be so useful.
+[3469] >> We we we made it too. It was like
+[3472] >> I it was and nobody used it. was we
+[3475] didn't actually like test it with that
+[3476] many people because the model
+[3478] marketplace was our main our main focus
+[3481] and it and it was like growing and we're
+[3483] building more conviction in it over
+[3485] time.
+[3486] >> Um
+[3487] >> just just as a creator I've been pitched
+[3490] many like uh you I have 500 hours of
+[3493] recorded voice of myself
+[3495] >> make a thing of you charge access to it.
+[3498] Uh works for only fans doesn't work for
+[3500] for us as regular people. I think this
+[3503] is mostly uh it's just a glorified rag
+[3506] bot whether it's in the weights or it's
+[3507] outside the weights doesn't really
+[3508] matter. You're just doing rag on the
+[3510] videos and people ultimately always just
+[3511] want to find the source video uh that
+[3513] directly answers it.
+[3514] >> My use case was mostly to practice with
+[3517] from with myself cuz I often like to see
+[3519] what like the way I practice for a job
+[3521] interview or if I'm hiring a candidate
+[3523] or public speaking or whatever is I I
+[3524] wish there was like a good mini me
+[3526] >> that I could like critique cuz it's kind
+[3528] of hard to pull yourself out. I would
+[3529] never get I would never offer it to
+[3531] other people service like pick your top
+[3533] five mentors that then talk to them
+[3534] instead of talk
+[3535] >> that would be cool too. Yeah,
+[3536] >> that was that's
+[3538] a replica
+[3539] >> and that was the use case we were aiming
+[3540] at.
+[3540] >> I see.
+[3541] >> It's like you want to create an
+[3543] experience
+[3544] >> like AI Steve Jobs and
+[3545] >> AI AI Steve Jobs was the the initial use
+[3548] case
+[3549] >> that's a even though it's not allowed
+[3551] >> that's a that's a common prototype. you
+[3553] know talking about adjacencies
+[3554] fine-tuning as a service as part of the
+[3556] router service is something that I would
+[3558] typically think about as well right like
+[3560] like why don't you do that because if
+[3561] people are running already their
+[3562] inference through you store everything
+[3563] log everything uh fine tune to a smaller
+[3565] model that is cheaper faster all these
+[3567] things that that's within your control
+[3568] right uh you didn't do that but like
+[3570] other people would have pitched that in
+[3572] the general state of of infra startup
+[3575] >> I think you were just maybe a little bit
+[3576] early because today that's an
+[3578] extraordinarily fast growing segment
+[3579] like you know from astral where they do
+[3581] a lot of enterprise deployments I mean
+[3583] it's often fine tuning is you know
+[3584] custom models for ASML or whatever often
+[3586] >> but not as a router they're just like I
+[3588] come to you because I like your ML
+[3590] models I want custom model right it is
+[3592] not I want uh to run all my openi
+[3595] prompts uh get store all my results and
+[3597] then just move off of openi right
+[3599] they're not doing that
+[3599] >> uh as a as as like a way to export off
+[3602] of dependency on a on a frontier lab I
+[3604] have not seen that yet which
+[3606] >> which was your kind of
+[3607] >> decision to do I mean we we decided
+[3610] really we like leaned into our focus and
+[3613] figured that like there are like we just
+[3616] saw the ecosystem develop over time. All
+[3618] these inference providers that that do
+[3620] want to help companies do that. Um be
+[3623] like like it makes sense for us to
+[3625] partner with them and to like give users
+[3627] lots of choice and to like you know
+[3629] figure out what makes them um what gives
+[3632] them competitive advantages. It's it's a
+[3635] whole new business basically and there's
+[3637] there's value in being a neutral
+[3639] marketplace that just kind of like works
+[3640] with those companies. Um
+[3643] >> could you share a little bit um to to
+[3645] Sean's point like how you prioritized
+[3647] what what are some ways you prioritize
+[3649] features cuz you've always done it so
+[3651] elegantly. I never you know it just
+[3653] happens and you make all the right
+[3654] decisions that always have product
+[3655] market fit from the outside looking in.
+[3657] consistently you seem to have
+[3658] prioritized you know a lot of hit
+[3660] features that worked and maybe I have a
+[3662] sample set bias or whatever but Sean
+[3664] >> can list what you think hit features
+[3666] worked well like
+[3667] >> oh the leaderboards like
+[3668] >> leaderboard okay
+[3668] >> yeah you know like from day one
+[3672] >> the feedback
+[3672] >> charting B okay
+[3673] >> but like he had like plugins uh you know
+[3675] he had like uh and I think there was a
+[3678] whole thing I want to get into about
+[3679] like completions versus
+[3680] >> yes
+[3680] >> check completions versus completions and
+[3682] then also uh let's call it like the the
+[3684] rise of the reasoning models and how you
+[3686] deal with
+[3687] multimodality all those all those things
+[3689] by
+[3691] huge one
+[3691] >> there's one like I think it was in early
+[3696] 2024
+[3698] very early 2024 we thought it might be
+[3701] interesting to fuse the results of
+[3703] multiple models together
+[3705] >> and we launched a prototype called mom
+[3708] mixture of models that let you like pick
+[3712] a couple models we'd pick them for you
+[3714] and then it would fuse the results
+[3716] together at the end and it would show
+[3718] you all the intermediate results in this
+[3720] like big conbon board looking product.
+[3723] What does the fusion at the end? Another
+[3725] model.
+[3725] >> Another model. The the smart the
+[3727] smartest of of the three of the set.
+[3730] >> So, this is like a council idea.
+[3731] >> It was a model. It was like a very early
+[3733] LLM council.
+[3734] >> This is a multi- aent swarm as as like
+[3736] they would call it at one of the
+[3737] frontier labs uh in the early days, you
+[3740] know.
+[3740] >> Yeah. Like some of those ideas are like
+[3742] going the right direction, but the
+[3744] devil's in the details. There's a lot of
+[3746] like product refinement needed to make
+[3748] them really work. um they take your
+[3750] focus away from right you know whatever
+[3753] else you have going on and there's a lot
+[3755] of like community building and learning
+[3757] that you need to do and the technology
+[3759] might be too early so there like all
+[3761] kinds of reasons they might go wrong and
+[3763] in our case the technology was a little
+[3765] too early in other words the fused
+[3767] result was a little bit worse sometimes
+[3771] the same as the best model that was
+[3774] being used to fuse because the best
+[3776] model was so far ahead of options two
+[3779] and three at the time. You know, over
+[3782] time, the top three or four LLMs have
+[3786] gotten closer together. Still neurode
+[3788] divergent, but like all capable of
+[3790] inserting like pretty interesting ideas.
+[3792] Like RL has basically like expanded the
+[3795] surface area of creativity for machine
+[3797] learning researchers within each lab and
+[3800] so they can, you know, diversify the
+[3802] reasoning power of different models more
+[3804] effectively. At least that's my my
+[3806] theory for why
+[3808] >> uh Fusion is it like works better than
+[3810] it used to early 2024.
+[3812] >> And um so the technology was a little
+[3814] bit too primitive. The form factor was
+[3817] was not right and and so we would have
+[3819] had to go through a couple more
+[3820] iterations. And so we decided to just
+[3822] delete all the code. And uh then years
+[3826] later, middle of 2026
+[3829] um or early 2026, we're like let's bring
+[3831] it back. like the research is looking
+[3833] kind of promising for fusion. The models
+[3836] now have like two, three, four top
+[3840] frontier models that are all really good
+[3842] and like like I'm I'm frequently trying
+[3844] to like consult multiple models to get
+[3846] the best results like and then I you
+[3848] know I ran a little personal experiment
+[3850] where I was like I'm going to like do a
+[3853] an architecture plan for a code change.
+[3857] I'm going to give it to all the models.
+[3859] I'm going to fuse the result and I'm
+[3860] going to ask all the models if the fused
+[3862] result is better than the individual
+[3864] result each model came up with. And they
+[3866] all said yes that the fused result was
+[3869] better. And this happened a couple times
+[3870] and I was like okay spot check pretty
+[3873] good. We should like benchmark this and
+[3876] that's how we built fusion.
+[3878] >> Yeah. And it came on your fable. So you
+[3880] were like this is fable level.
+[3881] >> Yeah. Yeah. Let's start leading up to to
+[3884] this year which we haven't got to gone
+[3886] to this year. you know can you mark out
+[3888] the main milestones in the journey? I I
+[3890] think um it seems like your your promise
+[3894] uh was you know routing you decided the
+[3896] business model very early you take you
+[3897] take a cut
+[3898] >> and like you know what are the major
+[3900] milestones that uh inflect the growth
+[3903] right like you're you're growing like 9%
+[3904] week on week now is that's the official
+[3906] number
+[3907] >> in terms of token volume I think that
+[3910] sounds about right yeah
+[3911] >> yeah so just like can you can you mark
+[3913] out like the the sort of brief history
+[3914] of of open router up to up to you know
+[3916] the acquisition let's let's call it we
+[3918] we're we're just we're just talking
+[3920] about uh you know people are uh have you
+[3923] have sort of your your birth moment with
+[3925] um the misreal stuff where where people
+[3927] are really competing you have your state
+[3928] of AI thing where where it's very cute
+[3930] you have 100 trillion tokens haha uh
+[3933] because now you're doing 10 a week
+[3935] >> uh you know um
+[3937] >> we're doing 10 a day
+[3939] >> 10 a day now
+[3940] >> yeah more
+[3941] >> so so yeah you do this in 10 days like
+[3943] what are the major points there you know
+[3944] I just want to like there's a smooth
+[3946] curve but like you you you feel the
+[3948] infections
+[3949] A lot of this is is kind of oriented
+[3951] around model launches. Um, we had, you
+[3954] know, a huge focus on pros all the way
+[3959] up through May of 2024.
+[3964] Um, because coding was just not there
+[3966] and no apps were able to build much on
+[3968] top of it. So, um, you know, a diversity
+[3972] in models but not a not a wide diversity
+[3975] and not a wide diversity in use cases.
+[3977] Dream Tavern was one of our top apps at
+[3980] the time. The creator of Dream Tavern
+[3982] Dream Tavern now runs product at
+[3983] Cognition Devon. Um the then we in in
+[3989] the middle of 2024 we saw Claude Sonnet
+[3993] 3.5 that came out incredible leap
+[3996] forward in coding. Um and we saw the
+[3999] dynamics of like apps building on top of
+[4000] us change. um we saw a huge surge in
+[4004] volume in like users uh using open
+[4008] router and and this is when I think
+[4011] people started to look at the like money
+[4013] that they were spending and and get a
+[4015] little bit like whoa what's going on I
+[4017] might need to like think about like more
+[4018] costefficient but equivalent models and
+[4021] shortly after that I I think it was
+[4023] after Sonic 35 mix uh mixtrol 8x7B came
+[4027] out and everyone was like what this is
+[4029] the model like the open weights
+[4031] community delivered and so it was really
+[4033] good timing from the strong.
+[4035] >> Basically all of an cos are just helping
+[4037] you out.
+[4039] >> It takes an ecosystem to grow an open
+[4041] router, you know.
+[4042] >> Yeah, that was the Yeah, it was it like
+[4044] it was the this early ecosystem. It was
+[4047] like a a swing action where like model
+[4051] labs would come up with some sort of
+[4053] front tier innovation like usage would
+[4056] surge then users you know look at their
+[4058] invoices 30 days later and like whoa
+[4060] what's going on here and then open
+[4063] weight models would deliver like a like
+[4066] cost effective options to 3 months
+[4068] later. We saw that happen several times.
+[4071] Uh,
+[4072] >> one thing one thing you also did with
+[4073] the coding agents was that you broke out
+[4075] which are the top coding agents and they
+[4077] love that they love that leaderboard.
+[4079] The the client versus the ru code versus
+[4081] the what have you.
+[4082] >> Yeah. Yeah. Like Klein was like the top
+[4084] of our leaderboard at the time. We we
+[4089] then at the end of and I'll skip forward
+[4092] a little bit. the end of 2025, there
+[4094] were quite a few coding apps on the
+[4096] leaderboard, but they were all IDs or or
+[4100] you know, terminal based agents. And at
+[4104] the end of 2025, we saw Open Claw
+[4106] appear. And openclaw was like
+[4108] particularly interesting because one it
+[4111] was like a a new form factor that like
+[4114] brought in a new type of user not just a
+[4116] developer but like a a productivity or
+[4119] sort of a like an internet creator
+[4123] came to AI for the first time. And it
+[4127] also had an interesting architecture
+[4130] where it was like calling your chosen
+[4132] model for these heartbeats to see if it
+[4134] was still alive in addition to actually
+[4136] using the model for real tasks. And the
+[4138] heartbeats are like they're kind of you
+[4140] don't want to pay a lot for a heartbeat.
+[4143] So, um the the auto router that we
+[4146] provided was really really useful to
+[4148] this like wide range of users all of a
+[4150] sudden and um and so we just saw it
+[4153] rocket exponentially and then we saw you
+[4156] know like open claw just blow up and a
+[4159] couple other um apps lean into that new
+[4162] paradigm and do something similar. Um,
+[4165] Hermes came out and really leaned into
+[4168] things like the auto router and built
+[4170] like a really good community and leaned
+[4173] into like like basically skill
+[4176] management and making it really easy and
+[4178] effective for people to like like set
+[4180] their memory in the agent and and build
+[4182] really good skills
+[4183] >> which another thing you never did memory
+[4185] skills sandboxes all these like adjacent
+[4188] things you could have done
+[4189] >> could have but like it's I think like
+[4192] >> it's hard to bet
+[4193] >> they're also very there are things that
+[4196] developer that really matter for like
+[4198] the developer use cases that were coming
+[4200] out at the time like developers wanted
+[4201] to architect those things
+[4203] >> those were kind of critical to building
+[4205] a good user experience. It's really it
+[4206] was like hard it's been hard for
+[4208] companies to find abstractions that work
+[4210] for all developers on the memory layer.
+[4213] It is it is you know there are some um
+[4216] like Mastra has done a pretty good job
+[4218] for example but uh but like developers
+[4221] have like lots of varied preferences for
+[4223] them and then we saw you know our the
+[4227] way our our leaderboard has has changed
+[4230] over time is kind of like a movie of how
+[4233] the AI space has changed over time. If
+[4235] you just sort of like go to the wayback
+[4236] machine and look at the the the rankings
+[4239] leaderboard and the app's leaderboard
+[4241] over time, it sort of shows you like
+[4243] what's happened in AI over the last
+[4244] couple of years.
+[4246] >> To me, the coming of age moment was uh
+[4248] Andre Karpathi was like, I no longer
+[4249] read local llama cuz like I just go to
+[4251] open routers leaderboard
+[4254] >> which I remember that I think he
+[4256] probably like said like sorry guys like
+[4258] I'm going to send a bunch of traffic to
+[4259] you.
+[4261] So I also want to bring it into the
+[4263] Stripe uh thing. Uh how does that kind
+[4265] of conversation start?
+[4267] >> We had this longstanding relationship
+[4270] with Stripe though from you know like
+[4273] many different projects that we had
+[4276] worked on with them. We invest you know
+[4278] a lot of effort in countering abuse um
+[4282] >> token fraud
+[4282] >> and token fraud.
+[4283] >> Can you give some numbers just to so
+[4285] people understand?
+[4287] >> I think I like I I posted about this. We
+[4290] we blocked 10x as much dollar volume
+[4294] last month as the month before. And the
+[4298] types of token fraud are diversifying
+[4300] quite a bit. You know, there are like
+[4302] fraudsters going after typical stolen
+[4305] credit cards, but they're also, you
+[4307] know, people trying to resell traffic
+[4310] against the terms of service. There's
+[4312] like hacked accounts. There's people who
+[4314] just lose act, you know, like their
+[4316] their whole company is compromised and
+[4317] they don't even realize it. Um, and we
+[4320] help them like regain control and detect
+[4322] it. There's there are accounts that are
+[4326] like reselling inference on the side.
+[4327] There's there are accounts that are
+[4331] dealing with, you know, like an
+[4333] accidental runaway agent and and they
+[4336] don't realize it. Not not a hack, but
+[4338] it's something that blows up and um and
+[4341] the company doesn't want it. And so our
+[4342] trust and safety team like works a lot
+[4346] on all of these like categories of
+[4348] problems and and helps block it and
+[4352] detect it. And so we've built these, you
+[4354] know, we have models around them. We
+[4356] have we worked closely with Stripe for a
+[4358] while on this. And I think it's going to
+[4361] become a huge problem in the ecosystem.
+[4363] Like we're already seeing a lot of
+[4365] companies start to see these fraudsters
+[4369] like spread and look for other ways
+[4372] other you know other than open router to
+[4375] other fraud vectors. And if you're
+[4379] making a gateway or or selling like
+[4380] generalized inference you are a target
+[4383] for fraud. If you're selling very
+[4385] discreet like intelligence products,
+[4388] intelligence products that are like
+[4390] doing something pretty specific but not
+[4391] like you know just reselling inference
+[4394] with some added capability, then you're
+[4396] way less likely to get these fraudsters.
+[4398] So it I think we'll see companies also
+[4400] move away from just reselling inference
+[4403] with some sort of like added capability
+[4406] and move towards sort of like discrete
+[4409] tasks and charging for those tasks and
+[4412] charging for those enhancements and
+[4413] letting people bring their own inference
+[4415] like in a third party way.
+[4417] >> Whoa. Okay. And yeah, obviously you
+[4420] would power that. Uh but you people pay
+[4423] uh for outcomes
+[4424] >> or per task? I think people will pay um
+[4428] you know I think like the the the data
+[4431] dog pricing page is a is a good look at
+[4434] like the future to come. It's like
+[4436] companies like infrastructure companies
+[4438] will like charge for different types of
+[4442] events that they're providing and
+[4444] there'll be lots of like continuous
+[4446] pricing models that look like that. And
+[4448] of course there will be like if you go
+[4449] down uh towards consumer apps you know
+[4453] simpler pricing more subscriptions
+[4456] um you know fewer events to worry about
+[4460] um and ones that like are not focused on
+[4463] just adding a markup on top of inference
+[4466] not just because fraud is hard but
+[4468] >> but also because the pressure from the
+[4472] labs and from inf like good inference
+[4475] providers to like do a commit and then
+[4479] bring your inference elsewhere is going
+[4481] to be very high.
+[4482] >> Any comments? uh two one you know I I
+[4485] think Alex has done a very eloquent job
+[4487] of describing something you know
+[4489] counterintuitively I knew would be a
+[4491] thing at scale like four years ago
+[4493] because of discord and the particular
+[4495] experience that taught me this was um
+[4497] you know as we started scaling
+[4499] midjourney you know the one of the
+[4501] primary ways that we used to give away
+[4504] or like get people to try midjourney
+[4506] early on to get to their first 10
+[4507] generations cuz you know 10 generations
+[4509] of 10 images generated was roughly the
+[4512] magic moment activation point we found
+[4514] like once you done 10 you were like this
+[4516] is extraordinary um but for that we so
+[4518] we had a free trial with midjourney and
+[4521] one day I woke up cuz they had a
+[4523] platform and had to monitor I had all
+[4524] these dashboards um you know I had like
+[4526] three missed calls from David and it
+[4529] turns out like they had there had been
+[4530] this flood of new users overnight and
+[4534] and we were like this is great and he
+[4536] was like no actually we shut down the
+[4537] free trial and I was like why is that um
+[4539] and he said I want to look at the
+[4540] geoloccation IP addresses And basically
+[4543] somebody in China had started to resell
+[4545] midjourney free you know subscriptions
+[4547] with the free trial as a way to like
+[4549] basically you know it was fraud abuse
+[4551] right and
+[4552] >> even for a specialized model like mid
+[4554] journey
+[4554] >> yeah and that was an actually an
+[4555] application so this idea that I I think
+[4558] the big picture realization I had back
+[4560] then was hey there's a new type of unit
+[4563] of value that's being streamed across
+[4566] the internet called a token and over the
+[4570] next 10 years the entire internet value
+[4573] chain was going to have to deal with the
+[4575] fact that like the more valuable tokens
+[4577] got, the more bad actors were going to
+[4581] go to try to get their hands on those
+[4582] tokens. And anytime you scale something
+[4586] and the payload gets more and more
+[4587] valuable, more bad things people try to
+[4590] get access to that value. And and so it,
+[4593] you know, it was very obvious to me back
+[4595] then. And so look to this day I don't
+[4597] think there's a free turn like I don't
+[4599] think majour's ever actually turned on
+[4600] the free trial since then because it was
+[4603] really not an easy problem to solve in
+[4605] terms of trust and safety. That's why I
+[4608] try started teaching the class security
+[4609] at scale at Stanford like this like one
+[4611] of the that and the anthropic learnings
+[4613] to me it was clear that the need for
+[4615] security at scale was going to be
+[4616] enormous a few years from then cuz if
+[4618] you just do the math right think about
+[4620] like if where you know online payments
+[4625] you know is started roughly in the 80s
+[4627] and 90s right and grew to over a
+[4630] trillion dollars over the next 10 years
+[4631] and we needed to build entirely new
+[4633] payment solutions to deal with online
+[4634] fraud. um where we are today is roughly
+[4638] there on tokens but over the next even
+[4642] five years we're expecting the token
+[4644] economy to get to like roughly $5
+[4646] trillion and over the next 10 years I'd
+[4648] be shocked if we went to 10 trillion of
+[4650] token flow and so if we were starting to
+[4652] see such aggressive abuse and fraud at
+[4656] subscale mid journey remember mid
+[4657] journey at this point was like less than
+[4658] 300 million revenue run rate a year I I
+[4662] just realized we were going to need like
+[4664] entirely new like systems to deal with
+[4668] the fraud that was going to happen for
+[4669] trying to get into the token flow. So um
+[4672] my I I you know when I I forget the
+[4674] board meeting it was when you brought up
+[4675] that you know Stripe wanted to to
+[4677] partner up and it made so much sense to
+[4679] me cuz Stripe Radar when I was a cliner
+[4681] 10 years ago we invested in Stripe and
+[4682] the whole pitch that you know Patrick
+[4684] and John communicated so eloquently was
+[4686] like hey unlike traditional payment
+[4688] tools like Brainree that do a 7-day
+[4691] verification like KYC and email to get
+[4694] get the fraud out of the way we actually
+[4696] just bite the fraud cost up front as a
+[4698] customer acquisition cost and give tell
+[4700] a developer or like just use five lines
+[4701] of code and we'll start accepting your
+[4703] payments in 5 minutes and what'll happen
+[4705] is over time we'll collect all this data
+[4707] on the developers. Cloudflare model
+[4709] >> is the Cloudflare model, right? And and
+[4711] they did. 5 years later, they launched
+[4712] Stripe Radar and Stripe really today is
+[4714] a security company. That's the real
+[4716] people think it's a payments company.
+[4717] No, the reason there's lots of other
+[4719] payments providers today that give you
+[4720] like cheaper payments transmission, but
+[4722] the reason stripe keeps, you know, being
+[4724] the dominant one here in Auden and
+[4726] Europe is because they have
+[4727] extraordinary fraud detection that
+[4728] they've built, you know, with over the
+[4730] years.
+[4730] >> The same story with Elon and Max Lechin
+[4732] and
+[4733] >> and a firm. Yeah.
+[4735] You know, I think the story shows up
+[4737] over and over again where every time you
+[4738] have value streamed across the world in
+[4741] large amounts, you need new protection
+[4742] and security infrastructure to fight to
+[4744] to keep the bad guys out and allow the
+[4746] good people to like have their
+[4747] transactions happen really fast. And so
+[4749] I think you know the this is why the
+[4752] from my perspective like the stripe and
+[4754] open router story is a security story
+[4756] for the internet ecosystem for the
+[4758] frontier AI ecosystem. without a
+[4759] partnership like that, it becomes very
+[4761] hard to defend the quality of experience
+[4763] and the speed and all the good stuff
+[4765] without letting the bad guys get in the
+[4767] way. Um, the second is that, you know,
+[4769] there's this underappreciated thing
+[4772] about like the fact that you need to
+[4775] like these all the bad things that that
+[4777] Alex described as being perpetuated by
+[4780] humans right now is going to be
+[4782] perpetuated by AI agents over the next
+[4783] 10 years,
+[4785] >> right? So, think about the like
+[4786] recursive scale we're about to see of
+[4788] bad actors. It's not just bad human
+[4790] beings. It's it's all the bad agents
+[4792] that are going to be attacking the token
+[4794] flow. And and there's it it's very hard
+[4797] if you're a researcher and or an AI lab
+[4800] to reason about that problem because the
+[4802] only data you have is how agents you're
+[4805] training are going rogue. But that's
+[4808] just a fraction of all the bad behavior
+[4809] on the internet that we're going to see.
+[4810] And so what you need is is defenders,
+[4812] new sheriffs in town, which cowboy hats,
+[4815] um that can can see all the bad behavior
+[4818] from AI agents across the ecosystem,
+[4820] from different model labs and different
+[4822] post-trained deployments and different
+[4824] developers and take all of that data and
+[4826] say we're going to build a shield for
+[4827] the entire token economy. Because
+[4829] without that, you know, the amount of
+[4830] fraud we're going to see of this 10
+[4832] trillion dollar in GMV and global GDP
+[4834] growth is like a huge percentage of
+[4836] that, I think, is going to be fraud,
+[4839] abuse, and we might never get there if
+[4841] people just don't trust tokens, right?
+[4843] Um, and I don't think this
+[4844] infrastructure exists. So, you have your
+[4845] work cut out for you with at Stripe, but
+[4847] I don't think people have realized the
+[4849] scale at which agents agent agentic
+[4851] fraud like bad behavior perpetuated by
+[4853] AI agents is about to hit us like a
+[4855] tsunami.
+[4856] >> Yeah. Uh I mean there's a lot to dig
+[4858] into there. Uh I want to give you the
+[4859] last word. We do have to wrap. Um um
+[4861] what can people expect from open router
+[4864] and stripe?
+[4864] >> I mean I think this is a really good way
+[4867] for us to accelerate go to market and um
+[4870] to go up market more quickly. It's also,
+[4873] you know, as an eloquently described,
+[4876] this is there's a really clear better
+[4878] together story here when it comes to
+[4880] improving trust and safety and making it
+[4883] really easy to like accept tokens and
+[4886] let people bring their own inference to
+[4888] your app and to help developers just
+[4890] like build on top of inference. Uh,
+[4893] going forward, we have a really strong
+[4897] brand with Open Router and we're keeping
+[4900] the brand. So like open router like as a
+[4903] as a product and the road map and the
+[4905] name and the brand like you know is
+[4908] staying the same and so what like you
+[4909] should expect you know in this next 6
+[4913] months is that most things will be like
+[4914] what we would have done had we been
+[4916] independent except everything will be
+[4918] moving faster and that that's kind of
+[4920] like our you know near-term goal longer
+[4924] term hopefully I can comment on it soon
+[4927] but I can't now. Okay. Well, uh, we'll
+[4930] hopefully do a follow-up at some point.
+[4932] Uh, but thank you for being so generous
+[4933] with your time and, uh, congrats on the
+[4934] partnership. I mean, this is one of the
+[4936] most beautiful bromances I've seen in a
+[4940] >> just starting
+[4940] >> starting from Stanford to here.
+[4943] >> Lots more to do. Lots of sheriff
+[4945] policing to do of the
+[4947] >> of the town the token economy. We need
+[4950] new we need new sheriffs for sure.
+[4951] >> Yeah. Awesome. Thank you.
+[4953] >> Thank you.

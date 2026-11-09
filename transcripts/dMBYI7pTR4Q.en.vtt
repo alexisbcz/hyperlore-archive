@@ -1,0 +1,973 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:24.480 --> 00:00:29.760
+Welcome to Next.js Conf! Today we're&nbsp;
+celebrating our fifth anniversary in a big way,&nbsp;&nbsp;
+
+00:00:29.760 --> 00:00:36.400
+by introducing our most revolutionary Next.js
+version yet: Next.js 12. Our mission at Vercel&nbsp;&nbsp;
+
+00:00:36.400 --> 00:00:40.720
+is to make the Web. Faster. And that&nbsp;
+starts with building an SDK for the Web&nbsp;&nbsp;
+
+00:00:40.720 --> 00:00:45.840
+that is a joy for developers to use, lowers&nbsp;
+the barrier of contribution for everyone,&nbsp;&nbsp;
+
+00:00:45.840 --> 00:00:50.640
+no matter how skilled, and most importantly&nbsp;
+delivers a great experience for end users.&nbsp;&nbsp;
+
+00:00:51.760 --> 00:00:56.400
+We choose to build on the Web because we love&nbsp;
+open platforms and we believe in developer&nbsp;&nbsp;
+
+00:00:56.400 --> 00:01:02.880
+freedom. Next.js is the result of an open&nbsp;
+collaboration with more than 1800 contributors,&nbsp;&nbsp;
+
+00:01:02.880 --> 00:01:07.600
+thousands of companies and partners like&nbsp;
+Google Chrome and the React team at Facebook.&nbsp;&nbsp;
+
+00:01:08.400 --> 00:01:13.760
+We're building the open source web SDK that pulls&nbsp;
+together the lessons of the giants of the Web&nbsp;&nbsp;
+
+00:01:13.760 --> 00:01:20.160
+and is completely free to use as websites and&nbsp;
+web applications get larger and more ambitious,&nbsp;&nbsp;
+
+00:01:20.160 --> 00:01:25.840
+making the Web faster calls for an SDK&nbsp;
+that has all the necessary tools built in.&nbsp;&nbsp;
+
+00:01:27.040 --> 00:01:32.640
+Web performance is like an iceberg of complexity.&nbsp;
+At the top we might be tempted to pick a single&nbsp;&nbsp;
+
+00:01:32.640 --> 00:01:37.120
+metric as our silver bullet, like bundle&nbsp;
+size or time to first byte from our CDN.&nbsp;&nbsp;
+
+00:01:38.000 --> 00:01:45.120
+In reality, as projects progress we inevitably&nbsp;
+discover significant challenges below, like fonts,&nbsp;&nbsp;
+
+00:01:45.120 --> 00:01:52.240
+images, chat widgets, YouTube embeds, and many&nbsp;
+other third-party scripts. To tackle this, Next.js&nbsp;&nbsp;
+
+00:01:52.240 --> 00:01:58.720
+follows two main strategies. First, great defaults&nbsp;
+for production that are applied automatically&nbsp;&nbsp;
+
+00:01:58.720 --> 00:02:03.920
+such as optimizing JS bundles and inlining
+the critical CSS of the fonts you're using.&nbsp;&nbsp;
+
+00:02:05.040 --> 00:02:09.680
+Second, building on the powerful React&nbsp;
+abstractions, we give you drop-in replacements&nbsp;&nbsp;
+
+00:02:09.680 --> 00:02:15.440
+for common needs that you can implement to get&nbsp;
+better performance. For snappy navigation with&nbsp;&nbsp;
+
+00:02:15.440 --> 00:02:20.640
+the benefits of a single-page application, Next.js&nbsp;
+took the "a" tag and gave you the link component.&nbsp;&nbsp;
+
+00:02:21.440 --> 00:02:25.680
+With automatic prefetching combined with&nbsp;
+pre-rendering, Next.js gives you the best&nbsp;&nbsp;
+
+00:02:25.680 --> 00:02:32.800
+of both worlds: great seo and instant client-side&nbsp;
+transitions. For image tags, we gave you the image&nbsp;&nbsp;
+
+00:02:32.800 --> 00:02:38.640
+component. Just as easy to use plus automatic&nbsp;
+resizing for different viewports, non-blocking&nbsp;&nbsp;
+
+00:02:38.640 --> 00:02:43.680
+rendering, and beautiful transitions from a&nbsp;
+blurred image into its final optimized state.&nbsp;&nbsp;
+
+00:02:44.960 --> 00:02:49.600
+For script tags, we gave you the script&nbsp;
+component with easy to use strategies to prevent&nbsp;&nbsp;
+
+00:02:49.600 --> 00:02:53.440
+third-party scripts from getting in the&nbsp;
+way of critical interactions on your page,&nbsp;&nbsp;
+
+00:02:54.080 --> 00:03:00.160
+like signing up for your service or buying an item&nbsp;
+on your store. We recognize that try to memorize&nbsp;&nbsp;
+
+00:03:00.160 --> 00:03:06.720
+all of these best practices is unproductive, so&nbsp;
+last June at the Special Edition of Next.js Conf&nbsp;&nbsp;
+
+00:03:06.720 --> 00:03:13.760
+we shipped built-in conformance. With conformance,&nbsp;
+if you forget to use any of these tools, Next.js&nbsp;&nbsp;
+
+00:03:13.760 --> 00:03:20.960
+will remind you and help you and your team ship&nbsp;
+better applications. Great production defaults and&nbsp;&nbsp;
+
+00:03:20.960 --> 00:03:26.480
+great built-in components, plus the conformance&nbsp;
+to reinforce them, has delivered in a great way.
+
+00:03:29.440 --> 00:03:34.240
+We took a look at all Next.js websites around&nbsp;
+the Web and the results have been astounding!&nbsp;&nbsp;
+
+00:03:34.960 --> 00:03:41.680
+So far in 2021 we've seen core with vitals all&nbsp;
+around improve by over 100 percent from data&nbsp;&nbsp;
+
+00:03:41.680 --> 00:03:49.440
+collected from real world users. This includes&nbsp;
+FID, which measures interaction delay, LCP,&nbsp;&nbsp;
+
+00:03:49.440 --> 00:03:56.160
+which measures how fast the most critical content&nbsp;
+of a page loads, and CLS which measures layout&nbsp;&nbsp;
+
+00:03:56.160 --> 00:04:02.800
+stability, or how smooth a page load is. This kind&nbsp;
+of performance is not just delightful for your&nbsp;&nbsp;
+
+00:04:02.800 --> 00:04:10.000
+end users, but also good for your business. For&nbsp;
+e-commerce better vitals mean better conversions.&nbsp;&nbsp;
+
+00:04:10.880 --> 00:04:17.280
+One of our customers, Ace &amp; Tate, improved
+sales by 16 percent, just by going headless&nbsp;&nbsp;
+
+00:04:17.280 --> 00:04:24.560
+and implementing a Next.js frontend on Vercel.&nbsp;
+In terms of SEO, Google now boosts your rankings&nbsp;&nbsp;
+
+00:04:24.560 --> 00:04:28.560
+and features your business more prominently&nbsp;
+as your core web vitals improve.&nbsp;&nbsp;
+
+00:04:29.680 --> 00:04:34.560
+This data shows Next.js is not just making&nbsp;
+your developers more productive, but improving&nbsp;&nbsp;
+
+00:04:34.560 --> 00:04:40.240
+businesses all around the internet, without&nbsp;
+imposing developer and users constraints like AMP.&nbsp;&nbsp;
+
+00:04:40.880 --> 00:04:46.640
+Let's talk about developer experience. One of the&nbsp;
+core principles of Next.js is to bring your code&nbsp;&nbsp;
+
+00:04:46.640 --> 00:04:53.120
+base into the future while minimizing breaking&nbsp;
+changes. Next.js 12 is the most significant&nbsp;&nbsp;
+
+00:04:53.120 --> 00:04:58.240
+step forward in developer experience since we&nbsp;
+started and is completely backwards compatible.&nbsp;&nbsp;
+
+00:04:59.120 --> 00:05:03.840
+Let's take a sneak peek at what Lee will show&nbsp;
+us in the session "The Developer Experience of&nbsp;&nbsp;
+
+00:05:03.840 --> 00:05:10.480
+the Future". We want to help bring development&nbsp;
+teams into the future, which is why next.js now&nbsp;&nbsp;
+
+00:05:10.480 --> 00:05:17.920
+supports ES Modules, built in. ES Modules bring an&nbsp;
+official standardized module system to javascript.&nbsp;&nbsp;
+
+00:05:17.920 --> 00:05:23.600
+They're supported by all major browsers as&nbsp;
+well as Node.js. This standard pushes the&nbsp;&nbsp;
+
+00:05:23.600 --> 00:05:30.320
+Web ecosystem forward by enabling smaller package&nbsp;
+sizes and ultimately a better end-user experience.&nbsp;&nbsp;
+
+00:05:30.320 --> 00:05:37.360
+Next.js now has experimental support for URL
+imports. URL imports allow you to use any package&nbsp;&nbsp;
+
+00:05:37.360 --> 00:05:44.640
+directly through a url no installation or build&nbsp;
+step required. Any CDN that serves ES Modules will&nbsp;&nbsp;
+
+00:05:44.640 --> 00:05:51.440
+work, as well as low-code and design tools of the&nbsp;
+future. To demonstrate URL imports, let's look at&nbsp;&nbsp;
+
+00:05:51.440 --> 00:05:56.640
+Framer on the right and our new card component,&nbsp;
+complete with hover states assets and more.&nbsp;&nbsp;
+
+00:05:57.280 --> 00:06:03.120
+Now normally you'd have to work between designers&nbsp;
+and developers to translate this design into code.&nbsp;&nbsp;
+
+00:06:03.120 --> 00:06:09.760
+Instead let's use this card component directly in&nbsp;
+our Next.js application. If we click handshake on&nbsp;&nbsp;
+
+00:06:09.760 --> 00:06:15.040
+the right we can see the URL import for this&nbsp;
+component. Let's click copy, go back to our&nbsp;&nbsp;
+
+00:06:15.040 --> 00:06:21.280
+browser, and on the left inside of our code&nbsp;
+let's import that component. Then we can use&nbsp;&nbsp;
+
+00:06:21.280 --> 00:06:27.520
+this card inside of our JSX, and if we hit save,&nbsp;
+we'll see it show up immediately in the browser&nbsp;&nbsp;
+
+00:06:27.520 --> 00:06:33.680
+complete with hover states. Now URL imports are&nbsp;
+just react components, which means that we can use&nbsp;&nbsp;
+
+00:06:33.680 --> 00:06:39.440
+variants inside a Framer to change the variation&nbsp;
+of the card we're showing through React props.&nbsp;&nbsp;
+
+00:06:40.880 --> 00:06:46.800
+With ES Module support Next.js can ship smaller&nbsp;
+bundles to users. And your developer experience&nbsp;&nbsp;
+
+00:06:46.800 --> 00:06:52.080
+gets even better with our introduction of&nbsp;
+URL imports, enabling new kinds of seamless&nbsp;&nbsp;
+
+00:06:52.080 --> 00:06:58.240
+integrations into no-code and design tools like&nbsp;
+Framer. Last June we talked about building a new&nbsp;&nbsp;
+
+00:06:58.240 --> 00:07:03.440
+engine for a Next.js that enables us to render&nbsp;
+changes in a matter of milliseconds after typing.&nbsp;&nbsp;
+
+00:07:04.560 --> 00:07:10.400
+Let's take a look at how Next.js 12 is enabling&nbsp;
+faster dev and builds with zero code changes.&nbsp;&nbsp;
+
+00:07:11.600 --> 00:07:17.920
+Today we're bringing Next.js to the future with&nbsp;
+a brand new Rust compiler that takes advantage&nbsp;&nbsp;
+
+00:07:17.920 --> 00:07:25.280
+of native infrastructure. Our Rust compiler is&nbsp;
+built with SWC, an open platform for the next&nbsp;&nbsp;
+
+00:07:25.280 --> 00:07:31.520
+generation of fast tooling. Let's take a look at a&nbsp;
+demo of the new Rust compiler for Next.js and see&nbsp;&nbsp;
+
+00:07:31.520 --> 00:07:37.760
+how it improves both your local and production&nbsp;
+environments. We'll be using the repository for&nbsp;&nbsp;
+
+00:07:37.760 --> 00:07:43.600
+vercel.com a massive Next.js application&nbsp;
+with thousands of pages and components.&nbsp;&nbsp;
+
+00:07:43.600 --> 00:07:50.160
+On the left we have a version running Next.js 10.2
+which was released about five months ago. On the&nbsp;&nbsp;
+
+00:07:50.160 --> 00:07:55.600
+right we have a version running Next.js&nbsp;
+12, using the brand new Rust compiler.&nbsp;&nbsp;
+
+00:07:55.600 --> 00:08:01.440
+Let's run `next build` to compile and bundle&nbsp;
+our code for production and compare the results.&nbsp;&nbsp;
+
+00:08:10.000 --> 00:08:13.040
+As you can see the right side&nbsp;
+finished in about two minutes.&nbsp;&nbsp;
+
+00:08:13.040 --> 00:08:14.640
+Let's fast forward the build on the left.
+
+00:08:18.400 --> 00:08:24.400
+Okay, now it's done, With our new Rust compiler and&nbsp;
+performance improvements, we were able to reduce&nbsp;&nbsp;
+
+00:08:24.400 --> 00:08:30.160
+the build time for vercel.com by almost 50 percent.&nbsp;
+These improvements to my production environment&nbsp;&nbsp;
+
+00:08:30.160 --> 00:08:36.400
+help me ship code faster. Next let's talk about&nbsp;
+improvements to our local environment Let's make&nbsp;&nbsp;
+
+00:08:36.400 --> 00:08:41.760
+some changes to the analytics page locally using&nbsp;
+the version of our code base running Next.js 12.&nbsp;&nbsp;
+
+00:08:42.480 --> 00:08:47.920
+Let's change the button text to say Next.js 12, and&nbsp;
+if we look at our terminal output in the bottom&nbsp;&nbsp;
+
+00:08:47.920 --> 00:08:54.800
+left, after saving the output of each fast refresh&nbsp;
+is shown in the console. You'll notice that edits&nbsp;&nbsp;
+
+00:08:54.800 --> 00:09:02.436
+appear almost instantly around 100 milliseconds.&nbsp;
+That saves me a ton of time.
+
+00:09:02.436 --> 00:09:03.440
+We put the new Next.js 12&nbsp;&nbsp;
+
+00:09:03.440 --> 00:09:08.720
+Rust-based compiler to the test with some of&nbsp;
+the largest Next.js projects in the world today.&nbsp;&nbsp;
+
+00:09:09.360 --> 00:09:15.440
+The results were unbelievable: three times faster&nbsp;
+fast refresh, and five times faster production&nbsp;&nbsp;
+
+00:09:15.440 --> 00:09:21.920
+builds. As impressive as that sounds, especially&nbsp;
+considering that it requires zero code updates,&nbsp;&nbsp;
+
+00:09:21.920 --> 00:09:27.120
+this is just the beginning of how much we can get&nbsp;
+out of our investment into our new Rust compiler&nbsp;&nbsp;
+
+00:09:27.120 --> 00:09:32.880
+infrastructure. Check out the full presentation&nbsp;
+of "The Developer Experience of the Future"&nbsp;&nbsp;
+
+00:09:32.880 --> 00:09:39.680
+after this to learn more about ES Modules, URL
+imports, and our new Rust compiler for faster DX.&nbsp;&nbsp;
+
+00:09:40.320 --> 00:09:44.880
+Making things faster for those who have already&nbsp;
+configured a full development environment is great;&nbsp;&nbsp;
+
+00:09:45.600 --> 00:09:49.200
+however, whether you're new to&nbsp;
+development or just short on time,&nbsp;&nbsp;
+
+00:09:49.760 --> 00:09:55.920
+figuring out all the tooling to install can be&nbsp;
+discouraging. Last June we showed you a preview&nbsp;&nbsp;
+
+00:09:55.920 --> 00:10:01.200
+of Next.js Live, our instant development and&nbsp;
+real-time collaboration experience for Next.js.&nbsp;&nbsp;
+
+00:10:02.480 --> 00:10:07.280
+Thanks to innovations like ES Modules and&nbsp;
+WebAssembly, which our new compiler infrastructure&nbsp;&nbsp;
+
+00:10:07.280 --> 00:10:14.080
+optimizes for, Next.js Live runs natively inside&nbsp;
+the web browser. It boots up instantly and anyone&nbsp;&nbsp;
+
+00:10:14.080 --> 00:10:19.760
+with a link can collaborate. Let's take a quick&nbsp;
+look at how Next.js Live is evolving with Becca.&nbsp;&nbsp;
+
+00:10:21.040 --> 00:10:27.600
+Next.js Live makes development, ideation, and design&nbsp;
+happen in the browser in real time. Rather than&nbsp;&nbsp;
+
+00:10:27.600 --> 00:10:34.800
+waiting on a build process you can instantly open&nbsp;
+a live URL for your entire team to collaborate on.&nbsp;&nbsp;
+
+00:10:34.800 --> 00:10:39.760
+When Monogram wanted to collaborate more quickly&nbsp;
+with their clients they joined the Next.js&nbsp;&nbsp;
+
+00:10:39.760 --> 00:10:47.200
+Live private beta. Monogram is an agency that&nbsp;
+builds incredible sites with Next.js on Vercel.&nbsp;&nbsp;
+
+00:10:47.200 --> 00:10:52.800
+One of their clients is MacStadium, one of&nbsp;
+the largest cloud providers for Mac hardware.&nbsp;&nbsp;
+
+00:10:52.800 --> 00:10:59.120
+Both the Monogram and MacStadium teams have&nbsp;
+worked with us to improve Next.js Live and shape&nbsp;&nbsp;
+
+00:10:59.120 --> 00:11:05.440
+the future of collaboration. We've made it even&nbsp;
+easier to open Next.js Live from any website or&nbsp;&nbsp;
+
+00:11:05.440 --> 00:11:11.520
+branch you're working on. I can add `_live`
+to the URL which maps to my git branch.&nbsp;&nbsp;
+
+00:11:12.400 --> 00:11:20.000
+After I securely authenticate, I'm in - without any&nbsp;
+installations or extensions! You'll notice my Live&nbsp;&nbsp;
+
+00:11:20.000 --> 00:11:26.640
+toolbar at the bottom of the page. This enables&nbsp;
+me to chat, annotate, and, most importantly, edit any&nbsp;&nbsp;
+
+00:11:26.640 --> 00:11:34.160
+content. Let's have Bel join to review this page&nbsp;
+and give me feedback on the design. There she is.&nbsp;&nbsp;
+
+00:11:34.160 --> 00:11:38.160
+As you can see her avatar appeared in&nbsp;
+the toolbar and her cursor position&nbsp;&nbsp;
+
+00:11:38.160 --> 00:11:43.200
+updates in real time. Looks like she's&nbsp;
+commented that we should change the CTA
+
+00:11:43.200 --> 00:11:48.960
+to "get started now". Let's try making these&nbsp;
+changes live and see her instant reaction.
+
+00:11:51.520 --> 00:11:57.440
+Looks like she likes these changes, awesome let's&nbsp;
+ship it! If I click the commit button in the top&nbsp;&nbsp;
+
+00:11:57.440 --> 00:12:02.240
+right of the editor, I can instantly commit&nbsp;
+my changes to the current branch on GitHub.&nbsp;&nbsp;
+
+00:12:04.160 --> 00:12:08.240
+Live is helping engineers be more&nbsp;
+productive, but also brings designers,&nbsp;&nbsp;
+
+00:12:08.240 --> 00:12:12.320
+product managers, copywriters, and&nbsp;
+many others closer to the frontend.&nbsp;&nbsp;
+
+00:12:13.280 --> 00:12:17.760
+Check out Becca and Bel's session "Workflow&nbsp;
+and Collaboration with Next.js and Vercel"&nbsp;&nbsp;
+
+00:12:17.760 --> 00:12:24.000
+after this to find out how to get into our&nbsp;
+expanded early access program, or visit vercel.com/live.&nbsp;&nbsp;
+
+00:12:24.960 --> 00:12:31.680
+A great workflow is essential for delivering great&nbsp;
+results, especially as teams get larger. Next.js 12&nbsp;&nbsp;
+
+00:12:31.680 --> 00:12:37.120
+and Next.js Live are helping us iterate faster,&nbsp;
+but ensuring great performance along the way&nbsp;&nbsp;
+
+00:12:37.120 --> 00:12:44.240
+is crucial. Last October we introduced Next.js&nbsp;
+Analytics to help you monitor your web vitals from&nbsp;&nbsp;
+
+00:12:44.240 --> 00:12:50.800
+the perspective of end users and real production&nbsp;
+traffic. It's seen amazing adoption and has since&nbsp;&nbsp;
+
+00:12:50.800 --> 00:12:57.360
+processed over seven billion data points. Bel will&nbsp;
+show us how we're extending the Vercel workflow to&nbsp;&nbsp;
+
+00:12:57.360 --> 00:13:03.523
+ensure performance and correctness right after you&nbsp;
+push, before it gets to your visitors.
+
+00:13:03.564 --> 00:13:05.358
+Inside GitHub, you'll notice that
+
+00:13:05.399 --> 00:13:08.880
+Vercel GitHub integration&nbsp;
+automatically recognizes that I pushed a commit&nbsp;&nbsp;
+
+00:13:08.880 --> 00:13:14.640
+and creates a preview deployment. This immutable&nbsp;
+URL is a snapshot in time. This is different from&nbsp;&nbsp;
+
+00:13:14.640 --> 00:13:20.240
+Next.js Live, where multiple updates can be made&nbsp;
+to the same URL. So how do we know that this change&nbsp;&nbsp;
+
+00:13:20.240 --> 00:13:25.520
+proposed will have a positive or negative impact&nbsp;
+on our site? Instead of making changes based on&nbsp;&nbsp;
+
+00:13:25.520 --> 00:13:30.960
+intuition, we want to know before merging going to&nbsp;
+production that our core web vitals are healthy.&nbsp;&nbsp;
+
+00:13:31.760 --> 00:13:38.080
+With Vercel Checks, we can run automated tests for&nbsp;
+performance and reliability on every pull request.&nbsp;&nbsp;
+
+00:13:38.080 --> 00:13:43.440
+Vercel Checks are deeply integrated into your&nbsp;
+existing deployment workflow. Teams can configure&nbsp;&nbsp;
+
+00:13:43.440 --> 00:13:49.440
+their projects to block merging unless specific&nbsp;
+performance budgets or tests pass. To demonstrate&nbsp;&nbsp;
+
+00:13:49.440 --> 00:13:54.960
+this, let's add the Checkly integration into our&nbsp;
+project inside the integrations marketplace. Let's&nbsp;&nbsp;
+
+00:13:54.960 --> 00:14:02.480
+find the Checkly integration. Then we can grant&nbsp;
+the integration access to our project. Let's add&nbsp;&nbsp;
+
+00:14:02.480 --> 00:14:08.640
+the integration to all our projects on our team.&nbsp;
+Our Checkly integration opens our new window.&nbsp;&nbsp;
+
+00:14:09.920 --> 00:14:15.840
+Finally we select the projects we want to set&nbsp;
+up automatic checks for, and that said we can now&nbsp;&nbsp;
+
+00:14:15.840 --> 00:14:21.040
+start pushing commits. Looking at the deployment&nbsp;
+on Vercel, our automated performance checks&nbsp;&nbsp;
+
+00:14:21.040 --> 00:14:25.600
+started automatically and reported the&nbsp;
+results were finished. These checks are&nbsp;&nbsp;
+
+00:14:25.600 --> 00:14:30.000
+testing the actual preview deployment. If your&nbsp;
+application was not functioning for any reason,&nbsp;&nbsp;
+
+00:14:30.000 --> 00:14:35.680
+including runtime errors, our checks will fail.&nbsp;
+Great! Our checks passed and we're good to merge!&nbsp;&nbsp;
+
+00:14:36.880 --> 00:14:42.640
+With Checks you ensure correctness and web vitals&nbsp;
+performance right after you build, preventing&nbsp;&nbsp;
+
+00:14:42.640 --> 00:14:48.960
+mistakes and bad performance from making their way&nbsp;
+into production. Check out Becca and Bel's session:&nbsp;&nbsp;
+
+00:14:48.960 --> 00:14:55.040
+"Workflow and Collaboration with Next.js and Vercel"&nbsp;
+after this to learn more or visit vercel.com/checks.&nbsp;&nbsp;
+
+00:14:55.600 --> 00:15:02.000
+Next.js 12 is making developing, building,&nbsp;collaborating, 
+and shipping faster and more&nbsp;&nbsp;reliable.
+
+00:15:02.000 --> 00:15:07.920
+This story, however, wouldn't be complete&nbsp;
+without making your websites more dynamic&nbsp;,&nbsp;
+
+00:15:07.920 --> 00:15:14.720
+personalized, and performant for your users. As&nbsp;
+Next.js pioneered support for serverless deployments&nbsp;&nbsp;
+
+00:15:14.720 --> 00:15:20.560
+it gained tremendous scalability and all but&nbsp;
+eliminated the operational burden from developers.&nbsp;&nbsp;
+
+00:15:22.000 --> 00:15:28.960
+A common abstraction when self-hosting Next.js&nbsp;
+is middleware. Popular projects like express.js&nbsp;&nbsp;
+
+00:15:28.960 --> 00:15:34.640
+empower developers to share and use common&nbsp;
+pieces of business logic that are repeatable&nbsp;&nbsp;
+
+00:15:34.640 --> 00:15:41.440
+for every request. Now let's hear from Suzanne and Lee's session about the future of middleware&nbsp;&nbsp;
+
+00:15:41.440 --> 00:15:50.080
+and serverless in Next.js. Today we're introducing&nbsp;
+middleware in Next.js and Edge Functions on Vercel.&nbsp;&nbsp;
+
+00:15:51.280 --> 00:15:57.520
+Middleware enables you to use code over&nbsp;
+configuration. This gives you full flexibility&nbsp;&nbsp;
+
+00:15:57.520 --> 00:16:03.920
+in Next.js because you can run code before a&nbsp;
+request is completed. Bbased on the user's incoming&nbsp;&nbsp;
+
+00:16:03.920 --> 00:16:11.520
+request you can modify the response by rewriting,&nbsp;
+redirecting, adding headers, or even streaming html.&nbsp;&nbsp;
+
+00:16:12.160 --> 00:16:18.640
+This works out of the box using `next start` or&nbsp;
+deployed as an edge function on Vercel. Edge&nbsp;&nbsp;
+
+00:16:18.640 --> 00:16:24.640
+functions let you run code close to your users.&nbsp;
+They use  a strict runtime that supports standard&nbsp;&nbsp;
+
+00:16:24.640 --> 00:16:30.640
+web APIs like `fetch`. Middleware can be used for&nbsp;
+anything that shares logic for a set of pages:&nbsp;&nbsp;
+
+00:16:31.360 --> 00:16:40.720
+authentication, bot protection, redirect handling,&nbsp;
+unsupported browsers, feature flags, A/B tests, server&nbsp;&nbsp;
+
+00:16:40.720 --> 00:16:48.080
+side analytics, logging, and more. When self-hosted,&nbsp;
+middleware works out of the box by conforming&nbsp;&nbsp;
+
+00:16:48.080 --> 00:16:54.400
+to the standard `next build` output. Any hosting&nbsp;
+provider can be configured to support middleware&nbsp;&nbsp;
+
+00:16:54.400 --> 00:17:01.040
+at the edge, and Vercel supports this new runtime&nbsp;
+for all users today. Let's look at our base case:&nbsp;&nbsp;
+
+00:17:01.680 --> 00:17:09.760
+a static commerce item with no personalization.&nbsp;
+This page loads quickly, and if I open up my VPN&nbsp;&nbsp;
+
+00:17:09.760 --> 00:17:13.680
+and change to another region across&nbsp;
+the world, it still loads fast.&nbsp;&nbsp;
+
+00:17:14.560 --> 00:17:21.680
+This is because our static assets like HTML, CSS, 
+and JavaScript are cached at every edge on Vercel.
+
+00:17:23.760 --> 00:17:28.160
+Now let's try the same thing with a&nbsp;
+dynamic internationalized commerce page.&nbsp;&nbsp;
+
+00:17:29.440 --> 00:17:33.600
+Based on the user's location it offers&nbsp;
+a discount on the price of the mug.&nbsp;&nbsp;
+
+00:17:35.440 --> 00:17:40.640
+This still felt really fast because our logic for&nbsp;
+determining the user's location and returning the&nbsp;&nbsp;
+
+00:17:40.640 --> 00:17:48.000
+discounted price is deployed in US East.&nbsp;
+If we switch back to Japan you'll notice&nbsp;&nbsp;
+
+00:17:48.000 --> 00:17:54.640
+it's significantly slower. Why is that? While&nbsp;
+our static example was cached and immediate&nbsp;&nbsp;
+
+00:17:55.200 --> 00:18:01.840
+our dynamic personalized example had to query data&nbsp;
+from our origin server in a single region: US East.&nbsp;&nbsp;
+
+00:18:02.640 --> 00:18:08.080
+Due to cost or complexity teams often don't set&nbsp;
+up a multi-region deployment for their data layer.&nbsp;&nbsp;
+
+00:18:08.640 --> 00:18:16.080
+This puts speed and personalization at odds. We can&nbsp;
+make content static to solve speed, or we can make&nbsp;&nbsp;
+
+00:18:16.080 --> 00:18:23.200
+content dynamic to solve personalization. Using&nbsp;
+middleware deployed as an edge function to Vercel,&nbsp;&nbsp;
+
+00:18:23.200 --> 00:18:29.920
+we can have dynamic at the speed of static! Let's&nbsp;
+take a look at the code. We can define a middleware&nbsp;&nbsp;
+
+00:18:29.920 --> 00:18:35.840
+using underscore middleware inside the pages&nbsp;
+folder. Since this middleware is underneath the&nbsp;&nbsp;
+
+00:18:35.840 --> 00:18:43.520
+slash edge folder, it will run before all requests&nbsp;
+to slash edge. This function looks at a user's&nbsp;&nbsp;
+
+00:18:43.520 --> 00:18:51.520
+location and then rewrites the request to slash&nbsp;
+edge slash their country code. Let's try it out.&nbsp;&nbsp;
+
+00:18:52.960 --> 00:19:01.120
+After I turn on the VPN, we can navigate to slash&nbsp;
+edge in Japan. It's instant but notice the URL&nbsp;&nbsp;
+
+00:19:01.120 --> 00:19:09.040
+didn't change. Under the hood, our middleware is&nbsp;
+rewriting this request to slash edge slash jp, which has&nbsp;&nbsp;
+
+00:19:09.040 --> 00:19:15.120
+been cached at the edge giving us high performance&nbsp;
+personalization with no delay or layout shift.&nbsp;&nbsp;
+
+00:19:16.480 --> 00:19:22.080
+Edge functions are a new primitive we're pioneering&nbsp;
+to remove the remaining trade-offs with serverless.&nbsp;&nbsp;
+
+00:19:22.720 --> 00:19:29.360
+They boot up instantly, no more code boots,&nbsp;
+deploy globally, and support streaming. In&nbsp;&nbsp;
+
+00:19:29.360 --> 00:19:35.360
+essence, edge functions give you both the dynamic&nbsp;
+power of code and the speed guarantees of static.&nbsp;&nbsp;
+
+00:19:36.880 --> 00:19:42.800
+There's one more thing. The power of the edge&nbsp;
+doesn't stop at middleware, and it's not just&nbsp;&nbsp;
+
+00:19:42.800 --> 00:19:49.120
+for routing. Let's hear from Lee about how the&nbsp;
+future of React is coming directly to the edge.&nbsp;&nbsp;
+
+00:19:50.240 --> 00:19:58.240
+At React Conf 2017, Guillermo showed Next.js to&nbsp;
+the world with a Hacker News clone. This demo&nbsp;&nbsp;
+
+00:19:58.240 --> 00:20:04.960
+showed the ability to server-side render React&nbsp;
+applications with zero configuration. I'm excited&nbsp;&nbsp;
+
+00:20:04.960 --> 00:20:11.040
+to share we've rebuilt that demo to use React&nbsp;
+Server Components! React Server Components allow&nbsp;&nbsp;
+
+00:20:11.040 --> 00:20:18.080
+us to render everything, including the components&nbsp;
+themselves, on the server. This is fundamentally&nbsp;&nbsp;
+
+00:20:18.080 --> 00:20:23.440
+different from server-side rendering where&nbsp;
+you're pre-generating HTML on the server.&nbsp;&nbsp;
+
+00:20:23.440 --> 00:20:29.600
+With server components, there's zero client-side&nbsp;
+JavaScript needed, making page rendering much&nbsp;&nbsp;
+
+00:20:29.600 --> 00:20:35.760
+faster. This improves the user experience of your&nbsp;
+application pairing the best parts of server&nbsp;&nbsp;
+
+00:20:35.760 --> 00:20:41.760
+rendering with client-side interactivity. We've&nbsp;
+been working with the react team at Facebook to&nbsp;&nbsp;
+
+00:20:41.760 --> 00:20:49.600
+prepare Next.js for React 18, server-side streaming,&nbsp;
+and react server components. Let's take a look at&nbsp;&nbsp;
+
+00:20:49.600 --> 00:20:54.720
+the updated Hacker News clone. On the left I have&nbsp;
+the client side rendered version of our Hacker&nbsp;&nbsp;
+
+00:20:54.720 --> 00:21:00.400
+News clone. On the right I have the React Server&nbsp;
+Components version. I'll use a chrome extension to&nbsp;&nbsp;
+
+00:21:00.400 --> 00:21:06.960
+reload both tabs at the same time. On fast network&nbsp;
+speeds you'll notice they load about the same&nbsp;&nbsp;
+
+00:21:07.600 --> 00:21:14.400
+but not all our users have the same device and&nbsp;
+internet speeds as developers. Let's simulate a&nbsp;&nbsp;
+
+00:21:14.400 --> 00:21:19.760
+throttle network speed and compare the results&nbsp;
+again. If we reload both examples you'll notice&nbsp;&nbsp;
+
+00:21:19.760 --> 00:21:25.600
+that the server components version renders&nbsp;
+instantly. This is because we moved computation&nbsp;&nbsp;
+
+00:21:25.600 --> 00:21:31.840
+from the user's device to the server whether&nbsp;
+it's my local dev server or the edge. What if&nbsp;&nbsp;
+
+00:21:31.840 --> 00:21:38.400
+the API itself is slow and not the user's device?&nbsp;
+If we look at a completely server rendered example&nbsp;&nbsp;
+
+00:21:38.400 --> 00:21:44.080
+you'll notice we see a browser loading spinner and&nbsp;
+a blank white page while we wait for results from&nbsp;&nbsp;
+
+00:21:44.080 --> 00:21:51.280
+the server. It's either all your HTML or nothing.&nbsp;
+With server components, you can stream HTML from an&nbsp;&nbsp;
+
+00:21:51.280 --> 00:21:58.080
+edge function immediately and progressively show&nbsp;
+updates as your data comes in. Next.js now enables&nbsp;&nbsp;
+
+00:21:58.080 --> 00:22:06.480
+you to do data fetching at the component level all&nbsp;
+expressed as JSX using React Server Components we&nbsp;&nbsp;
+
+00:22:06.480 --> 00:22:12.880
+can simplify things. Special functions like get&nbsp;
+static props and get server-side props are no longer&nbsp;&nbsp;
+
+00:22:12.880 --> 00:22:19.520
+needed and this future aligns with the React&nbsp;
+hooks model of co-locating your data fetching&nbsp;&nbsp;
+
+00:22:19.520 --> 00:22:27.600
+with your components. You can rename any Next.js&nbsp;
+page to server.js to use a server component.&nbsp;&nbsp;
+
+00:22:27.600 --> 00:22:34.080
+Then you can also use client components which&nbsp;
+hydrate and become interactive allowing you to add&nbsp;&nbsp;
+
+00:22:34.080 --> 00:22:40.400
+client-side functionality like upvotes. React&nbsp;
+Server Components are ready to try today under an&nbsp;&nbsp;
+
+00:22:40.400 --> 00:22:47.760
+experimental flag inside Next js. This removes the&nbsp;
+choice of static or dynamic and improves your core&nbsp;&nbsp;
+
+00:22:47.760 --> 00:22:54.720
+web vitals by serving minimal or no javascript&nbsp;
+to your users. Server components give developers&nbsp;&nbsp;
+
+00:22:54.720 --> 00:23:01.520
+a new choice on where components render: either&nbsp;
+the client or the server. This enables the future&nbsp;&nbsp;
+
+00:23:01.520 --> 00:23:07.360
+of Next.js to give us one more thing. What if we&nbsp;
+could have all the benefits of Incremental Static&nbsp;&nbsp;
+
+00:23:07.360 --> 00:23:14.320
+Regeneration at the per component level? This would&nbsp;
+remove the choice of all or nothing page caching&nbsp;&nbsp;
+
+00:23:14.320 --> 00:23:21.040
+and enable granular caching at the component level.&nbsp;
+We're exploring a data component which works like&nbsp;&nbsp;
+
+00:23:21.040 --> 00:23:27.920
+a React suspense boundary. This allows you to&nbsp;
+add properties like fallback, revalidate, and even&nbsp;&nbsp;
+
+00:23:27.920 --> 00:23:34.400
+surrogate keys, defining your caching semantics&nbsp;
+at the component level. So if we revisit our&nbsp;&nbsp;
+
+00:23:34.400 --> 00:23:41.440
+slow server-rendered example from before and use&nbsp;
+the data component we can instantly see a static&nbsp;&nbsp;
+
+00:23:41.440 --> 00:23:50.000
+cache result of our data even if the API is slow.&nbsp;
+Then we can use the revalidate prop to clear our&nbsp;&nbsp;
+
+00:23:50.000 --> 00:23:56.400
+cache and fetch new data similar to the model that&nbsp;
+we've established with ISR. React Server Components&nbsp;&nbsp;
+
+00:23:56.400 --> 00:24:02.480
+and granular component caching are made possible&nbsp;
+by innovations like edge functions that support&nbsp;&nbsp;
+
+00:24:02.480 --> 00:24:08.024
+streaming eliminate cold boots and deploy globally&nbsp;
+by default.
+
+00:24:08.024 --> 00:24:10.024
+We think the future is at the Edge.&nbsp;&nbsp;
+
+00:24:11.200 --> 00:24:16.560
+We want every developer to enjoy access to the&nbsp;
+best possible infrastructure for their projects.&nbsp;&nbsp;
+
+00:24:17.520 --> 00:24:24.400
+Today we're making edge functions available&nbsp;
+to all Vercel users. Get started for free&nbsp;&nbsp;
+
+00:24:24.400 --> 00:24:32.240
+on vercel.com/edge. Next.js 12 is our biggest&nbsp;
+release ever because it reimagines the core&nbsp;&nbsp;
+
+00:24:32.240 --> 00:24:39.440
+infrastructure of how the Web is built. With ES&nbsp;
+Modules and our new Rust compiler we're creating&nbsp;&nbsp;
+
+00:24:39.440 --> 00:24:46.160
+the foundations for fast development tooling&nbsp;
+all across the board: on your machine, your CI,&nbsp;&nbsp;
+
+00:24:46.160 --> 00:24:52.560
+and even the web browser. Next.js Live is&nbsp;
+reimagining collaboration and lowering&nbsp;&nbsp;
+
+00:24:52.560 --> 00:24:57.120
+the better entry to frontend development&nbsp;
+especially with its new git integration.&nbsp;&nbsp;
+
+00:24:58.080 --> 00:25:02.400
+Go to vercel.com/live to join&nbsp;
+our expanded early access program.&nbsp;&nbsp;
+
+00:25:03.680 --> 00:25:09.360
+With edge functions we're giving you the power&nbsp;
+of dynamic with the speed you expect from static.&nbsp;&nbsp;
+
+00:25:10.400 --> 00:25:16.080
+Middleware gives you back the flexibility you had&nbsp;
+with servers while allowing you to push code to&nbsp;&nbsp;
+
+00:25:16.080 --> 00:25:23.520
+the edge of the network. For examples on how to&nbsp;
+deploy Next.js to the edge visit vercel.com/edge.&nbsp;&nbsp;
+
+00:25:24.320 --> 00:25:31.760
+What's more Next.js 12 brings us the future of&nbsp;
+React with React Server Components, you'll combine&nbsp;&nbsp;
+
+00:25:31.760 --> 00:25:37.760
+static and dynamic data fetching, rendering&nbsp;
+your pages at the edge close to your visitors.&nbsp;&nbsp;
+
+00:25:39.360 --> 00:25:48.000
+Go to nextjs.org/12 to upgrade or run `npx&nbsp;
+create-next-app` to start. Now it's time to&nbsp;&nbsp;
+
+00:25:48.000 --> 00:25:53.840
+be inspired. If you're a beginner, we have&nbsp;
+presentations on learning React and Next.js.
+
+00:25:54.640 --> 00:26:00.720
+If you're migrating to Next.js, you'll hear expert&nbsp;
+advice from people who have been where you are now&nbsp;&nbsp;
+
+00:26:01.520 --> 00:26:03.920
+and for long-time Community members,&nbsp;&nbsp;
+
+00:26:03.920 --> 00:26:08.160
+we have presentations that will equip you&nbsp;
+with today's latest tools and techniques.
+
+00:26:08.960 --> 00:26:12.008
+Let's make the Web. Faster.
+

@@ -1,0 +1,1574 @@
+[0] how to just minimize like as as brutally
+[2] as possible as quickly as possible
+[4] minimize those feedback loops so that
+[5] people can iterate and kind of get to
+[7] the the thing that they really truly
+[8] genuinely want to build
+[13] hey team sid here and this is devops
+[15] deployed the show where i take a look at
+[17] devops and cloud infrastructure in the
+[18] wild each week i interview industry
+[20] experts about their experience building
+[21] software systems and the teams behind
+[23] them today i'm joined by jake cooper
+[25] jake is the founder and ceo of railway a
+[28] cloud platform as a service designed to
+[30] let people focus on building their
+[31] products instead of wrangling
+[33] infrastructure
+[34] word on the street is that he also has a
+[36] pet bearded dragon named irwin jake
+[38] welcome to the show
+[41] hey thanks thanks for having me um all
+[43] of that is true um i do have a dragon
+[45] his name is irwin um he's very very
+[48] great he's like perfect pet you could
+[49] ask for he's a great reading buddy you
+[50] just basically kind of like post him up
+[52] and then he's there um and yeah we do
+[54] help people just like wrangle um okay
+[57] yeah the heck out of their
+[59] infrastructure um so yeah um that's
+[62] that's me i'm just excited to be on the
+[64] the show just kind of like jam on
+[65] infrastructure stuff and just
+[67] generally it's friday right so it's uh
+[69] it's a good time anyways
+[72] it is indeed and so for anyone who's not
+[74] familiar with your company railway can
+[76] you just give a brief overview uh of
+[78] what it is and how it helps people in
+[80] the the software space
+[82] yeah um so railway is the cloud that
+[84] kind of like helps you get stuff done
+[86] right and so so generally like most
+[87] people's uh association when they think
+[89] of cloud is like the aws is the gcps the
+[91] kind of etc of the world where you go in
+[93] and you're kind of like clicking around
+[95] these menus you have to write you know
+[96] potential like cloud cloud formation or
+[98] terraform scripts or anything like that
+[100] they're generally like quite heavyweight
+[101] um and they're like a very very powerful
+[103] saber wielded by professionals um and so
+[106] there's just this growing gap of like
+[108] engineers entering the scene and just a
+[109] lack of people who have all of the
+[111] infrastructure knowledge required to
+[112] kind of navigate aws and gcp um and so
+[116] what we've done is we've made it
+[117] insanely easy to use any of these cloud
+[119] platforms right so instead of setting up
+[121] like vpcs for postgres and cloud
+[123] formation or terraform scripts and cut
+[125] everything required to actually go and
+[126] run these things um we have a series of
+[129] kind of best practices um that we've
+[130] distilled into these these cookbooks
+[132] where you can simply just go to kind of
+[133] dev dot new and then you just write in
+[135] into existence whatever you would like
+[137] right so you just start writing postgres
+[138] right um and that would hook into kind
+[140] of a universal memo that we have for how
+[142] we would roll out a postgres sentence
+[144] right and after that um that instance is
+[146] up and running as quick as as you can
+[147] kind of get it um and you can go and
+[149] make modifications etc so the idea here
+[152] is that we can take all of the config
+[153] and kind of like push it post haste so
+[155] you can get something on running really
+[156] really extremely quickly um as well as
+[159] kind of like dive into the config when
+[160] you you really need it's a constant
+[162] battle between kind of like convention
+[163] versus configuration and our solution is
+[165] that you know your configuration is
+[167] actually our
+[168] convention interesting interesting and
+[172] a lot of people are probably familiar
+[173] with other
+[175] platform as a service
+[177] offerings maybe heroku or app engine
+[180] can you just to provide a frame of
+[182] reference maybe compare and contrast
+[184] what railway provides and how you
+[186] approach things to some of those other
+[187] services that people may be familiar
+[189] with
+[191] totally um and so a lot of people are
+[193] familiar with the kind of like heroku's
+[195] the renders the cloud runs the kind of
+[196] etc of the the world then and we'd like
+[198] to like mention that these things are
+[200] kind of like single dimension right um
+[202] and the dimension they operate in is
+[204] actually just kind of the production
+[205] dimension right um and so they're
+[207] they're kind of like existing there and
+[209] you know once you get your application
+[210] up and running you know it's up and
+[211] running right um but they generally
+[213] don't offer you tools for kind of like
+[214] evolving your application over time
+[216] right um and so railway aims to um
+[219] actually make it really really easy for
+[221] you to evolve your infrastructure over
+[222] time and so in that sense you know
+[224] people look at our platform initially
+[225] and say like how is this different from
+[226] roku how is this different than render
+[228] how is this different than anything else
+[229] when in reality we compete like i like
+[231] to say that we compete with um not these
+[233] cloud providers but actually the closer
+[235] to kind of terraform with intellisense
+[237] on top of it right and so you can
+[239] essentially espouse these changes we'll
+[240] kind of distill them and then we can
+[241] move them through your application
+[242] lifecycle so it's a lifecycle management
+[244] engine versus a standard kind of like
+[245] cloud production environment
+[248] got it that makes a lot of sense and
+[250] later on in the interview we'll talk a
+[252] bit about what's going on behind the
+[253] scenes
+[255] and how you actually do that but first
+[256] let's talk about
+[257] some of the different elements of that
+[260] experience so as you're helping users
+[262] deploy this infrastructure and manage
+[263] this infrastructure there's a number of
+[265] different phases of the life cycle
+[267] whether it's developing or deploying or
+[269] monitoring and diagnosing any issues you
+[270] might have uh can you talk us through
+[272] those different pieces and how they all
+[273] fit together
+[275] yeah totally um and so we we think of uh
+[278] development as kind of like three
+[279] concrete steps um and it's it's cyclic
+[282] right um and so you touch on them and
+[283] when we talk about them a lot in our
+[285] kind of documentation or content or
+[286] anything like that we've got the develop
+[287] step which is kind of like you're
+[289] iterating you're starting you maybe you
+[290] pick a starter and you're like cool i'm
+[292] going to build an xjs app with prisma
+[294] and a couple other things gonna tie
+[295] those in um there's the deploy stage
+[297] which is like how do you get your
+[298] application from your local instance to
+[301] to the cloud and then there's the
+[302] diagnose stage which is monitoring
+[304] alerting metrics kind of crash
+[305] notifications right um and these again
+[307] they're super cyclic right so as you
+[309] roll changes out you'll see you know
+[310] some sort of crash notification some
+[312] sort of memory leak some sort of
+[313] anything like that um and then we can
+[315] actually help you evolve that
+[316] application over time by providing
+[317] feedback and saying oh here's the error
+[319] that actually crashed your application
+[320] um we can actually restart it but you
+[322] know we're notifying you of this error
+[324] and you can kind of evolve your
+[325] application over time and make that loop
+[326] as quick as possible and that's what we
+[328] tend to focus on a lot at railways like
+[330] how to just minimize like as as brutally
+[333] as possible as quickly as possible
+[334] minimize those feedback loops so that
+[336] people can iterate and kind of get to
+[337] the
+[338] thing that they really truly genuinely
+[339] want to build and i'd be interested in
+[342] hearing
+[343] the origin story of railway what what
+[345] led you to the point of creating it's
+[347] about a year and a half or two years old
+[349] now at this point
+[350] yeah um so we launched last january um
+[353] so it's it's just over about like 13 14
+[356] months and kind of like in production we
+[358] were working on it uh
+[359] probably about four three or four months
+[361] before that right so let's let's just
+[362] call it two months or something
+[364] um i think it's actually pretty close to
+[366] exactly 18 months um but yeah uh before
+[368] that um i was you know constantly
+[370] hacking on side projects i was working
+[372] on a bunch of other stuff i was actually
+[374] at uber um and i was just like you know
+[377] i i was fiddling on a few things and i
+[378] used to work on this platform called
+[379] jump which um i'm just like a big fan of
+[382] like micro mobility in in general and
+[383] like getting cars off the road and like
+[385] um you know i could i could talk on and
+[387] on about like city planning and kind of
+[388] those things so the thing is like
+[390] they're like really important to me um i
+[392] just generally you know think about
+[393] emissions and in the environment a lot
+[395] right so i was working on this this
+[396] platform and i really really liked it um
+[398] and then it kind of got to the point
+[400] where uber wasn't you know they were
+[402] going generally in a different direction
+[403] and and so what happened is that that
+[405] division ended up getting shut down
+[406] right um and i i personally you know i'm
+[409] i don't own a car i've never owned a car
+[411] um i have a motorcycle and a boosted
+[413] board and those are the ways that i kind
+[414] of like get around in general um and so
+[416] i didn't see myself generally kind of
+[418] like gravitating to continue to want to
+[420] work there so i basically said what am i
+[423] going to do next right um and i was
+[424] ideating on a couple of things i was
+[426] fiddling around um and there's all these
+[428] really really great tools um for
+[429] building front-end applications um like
+[432] you know there's versailles right which
+[433] is just like it's pure magic all of what
+[435] they do is pure magic um and so like i'm
+[438] looking at these things and i'm like
+[439] cool like you know it's this glaring
+[441] hole like that where how do i spin up a
+[443] database like where where can i get a
+[444] database right um and now when you know
+[447] you talk about this there's like things
+[448] that are popping up like super bass et
+[449] cetera but this was kind of like the
+[450] inception the you know early 2020s etc
+[453] right when these a lot of these things
+[455] kind of popped out um
+[456] and so i was just hacking a bunch of
+[458] stuff and i ended up like spinning up
+[459] this this vm um and writing this like
+[461] crappy bash script and i used to post
+[463] this endpoint every single time that i
+[464] wanted kind of a postgres database and
+[466] it would just thunk out a url and i
+[468] would just go and use that right and so
+[470] i was ideating on a few different things
+[472] and then you were just installing
+[473] multiple instances onto this vm
+[476] one vm or whatever yeah
+[478] i was honestly just like spinning up
+[479] multiple containers right yeah and then
+[480] it's just like you know this is like oh
+[482] cool it's on a port it's on a port
+[483] here's the port like go and do the thing
+[484] right um and so i was like doing that
+[486] right and i was like okay cool like you
+[487] know this will be great for like hacking
+[488] and stuff like that it's not really like
+[489] you know tenable but that's okay because
+[491] it's all just hacking stuff um and then
+[493] um i just kept iterating on that and i
+[495] was like i need redis i need etc so i
+[497] kind of extended this thing and then
+[498] people started using it and then i was
+[499] like i do want to go work on this um and
+[502] i went to a variety of different people
+[503] like i went to you know people like
+[504] github people like for sale people at
+[506] you know varieties of different places
+[508] like you guys must be building these
+[509] things right like you must be building
+[510] this kind of like all-in-one dev tool
+[512] that like this kind of just generally
+[513] trends towards um and to my surprise
+[515] they weren't um but a lot of these
+[517] people were like this seems really
+[518] really cool and we can see it working so
+[520] by the end of this i had a lot of no's
+[521] from like you can have a job but like a
+[523] lot of yeses from i'd write you an angel
+[525] check right
+[527] um so then we were like all right cool
+[529] like you know let's go do this um and so
+[530] we you know
+[531] we started building up from there um and
+[533] we shortly after recruited our
+[536] first engineer who's just like
+[537] phenomenal and every single person we
+[539] brought on after that has just been like
+[540] phenomenal the fact that you were just
+[542] kind of scratching your own itch and
+[544] then
+[545] realizing that it seemed like a more
+[548] broadly applicable solution uh is is a
+[551] pretty neat way to get started i think
+[554] yeah and we we continue that like to
+[556] this day everything we do is inside of
+[558] discord our community our
+[560] our like enterprise support is inside of
+[562] discord our team stuff is inside of
+[564] discord um and so anytime there's an
+[566] issue with the user or a company or
+[567] anything like that it's very simple to
+[568] actually just like riff on it in the
+[569] team chat be like oh here like this this
+[572] thing is actually totally problematic
+[573] for some people right and it's a really
+[574] good way to just like aggregate things
+[576] across time um and so like we do a lot
+[578] of scratching our own our own kind of
+[580] itches um you know we dog food all of
+[581] our stuff we use railway to kind of
+[583] build railway um and so yeah
+[586] cool and uh clearly
+[589] it is well suited for
+[591] like
+[592] end-tier long-lived web apps that's like
+[594] the canonical example right are there
+[596] other workloads
+[597] that
+[599] you have seen customers use railway for
+[601] or are there any things that customers
+[603] have done with the platform that really
+[604] surprise you uh they took it and just
+[606] kind of ran in a direction you didn't
+[608] expect
+[610] yeah i am i'm constantly just like
+[612] surprised right um and so like our
+[614] original version of railway was like
+[615] this really really simple kind of like
+[617] okay well you've got a bunch of plugins
+[619] you can add redis you can have my sql
+[620] you can have whatever and then you can
+[621] actually just deploy some arbitrary code
+[623] right um and you can deploy like one of
+[624] them and we're just going to do like
+[625] blue rings deploys you can deploy apis
+[627] et cetera and then people are like hey i
+[629] need like i need like worker cues i need
+[631] like celery stuff i need like you know i
+[633] want to deploy like temporal on this
+[635] thing right and we're like oh man like
+[637] this really doesn't work because like we
+[638] were having people like uh spin multiple
+[640] projects and then like interface them
+[642] and there was like no shared like
+[644] networking or like whatever so it just
+[646] like ended up being a little chaotic um
+[648] and then so we just like spent a really
+[650] really long time trying to think about
+[651] like how you would actually just make it
+[652] really really simple to deploy like a
+[654] service mesh but also keep the level of
+[656] simplicity that you had from for prior
+[657] applications right um and so we released
+[660] that um probably about a month ago um
+[663] and it's been really really awesome
+[664] people have just picked it up like we
+[665] had a company um reach out for you know
+[667] there's those companies that do kind of
+[668] like um
+[670] on like it's like in your own cloud
+[672] deployment kind of deal um and they're
+[674] like you know they're using aws and this
+[676] and then they kind of like reach out and
+[677] they're like hey like we'd like to like
+[678] migrate off of this because you know we
+[680] just like we have people that are on the
+[682] team who aren't infrastructure engineers
+[683] and they're pulling away from the
+[684] infrastructure here because they need to
+[685] pay out aws um and i was like oh that's
+[687] cool like i'll schedule some time for
+[688] tomorrow i can help you on board and my
+[690] usual thing is like when we do
+[691] onboarding i like sit down with a
+[692] company and i like try and basically
+[694] build their infrastructure with them
+[695] over the 30-minute period um and by the
+[697] time i had answered the emails like i
+[698] went back and checked their like teams
+[700] thing and they had already moved over
+[701] like a bunch of their production
+[702] infrastructure they were using like
+[704] custom icons that we just rolled out so
+[706] i'm just like constantly surprised by
+[707] the amount of stuff that people are like
+[708] kind of like pushing on here and then
+[709] they keep asking for stuff so it's
+[711] really great feedback loop in terms of
+[713] um product stuff and i feel like you
+[715] know sometimes we're cheating because we
+[716] just get really really good feedback
+[717] from these people and they're like and
+[718] we're like oh yeah we should go build
+[720] that right
+[721] right and who who are your core
+[723] customers in terms of
+[725] are there any particular industries
+[726] you've seen a lot of views from or size
+[728] of a company uh i'm sure it varies quite
+[731] a bit but are there any uh insights from
+[734] that you've drawn from the the set of
+[735] customers that you have
+[738] yeah um and so um there's a lot of like
+[741] a lot of
+[742] different a lot of different use cases
+[744] obviously um but we see a lot of is kind
+[746] of like this green field like early
+[748] stage startups like whether they're yc
+[750] companies whether they're kind of like
+[751] indie hackers whether they're kind of
+[752] like you know just teams that really
+[754] really want to move really extremely
+[755] quickly on a lot of this stuff um and
+[757] that can be anywhere from like pre-seed
+[759] to like series b c-ish startups right um
+[762] that's kind of our sweet spot right
+[763] right we've got all these engineers um
+[765] they really want to operationalize them
+[766] they don't want to sacrifice anybody the
+[768] aws gods um and so they just kind of
+[770] like need something that will like get
+[772] them up and running really really
+[773] quickly um and so we've seen a lot of
+[775] really really great greenfield stuff
+[776] there um as we kind of like move up
+[778] market here um we're targeting more kind
+[780] of we call brownfield um so internal
+[783] tools um connecting you with your your
+[785] infrastructure automatically so that
+[786] people can just like pull in from
+[788] varieties of data sources but still ship
+[789] extremely quickly using kind of like our
+[792] control plane right
+[795] yeah that makes sense
+[796] and then
+[797] uh
+[798] in addition to the the types of
+[801] companies you also have a unique
+[802] audience in that your customer base are
+[805] are very technical uh and generally are
+[807] software engineers
+[809] what can you say about the uniqueness of
+[811] really targeting a technical audience
+[814] like that as your primary user uh
+[816] relative to maybe other companies that
+[818] have a more broad
+[820] consumer appeal
+[823] yeah um and again this is one way that i
+[825] feel like we're cheating because
+[827] developers are like one of the most
+[829] vocal people like i've ever encountered
+[831] like they they are not shy to just like
+[833] tell you like why your product stinks
+[835] why like these things are right so we
+[836] get a lot of this like feedback from
+[838] these people and they're they are um as
+[840] devoted on on both ends of the scale
+[843] right so they will tell you like what
+[844] they really like absolutely hate and
+[846] then they'll tell you like what they
+[847] absolutely love right so you get a lot
+[848] of like really strong signal from these
+[850] people right which i think is really
+[851] awesome and like you know as we build to
+[853] the you know product that we want um you
+[855] know and we're getting more kind of like
+[856] dashboard hours more people involved
+[858] more kind of like interest etc um it
+[860] really helps to like have these
+[861] developers who are extremely bought in
+[863] and like very very interested right like
+[864] our discord community is growing every
+[866] day it's like almost up to like 3 000
+[868] people that we've got inside of there
+[869] where they're kind of like helping each
+[870] other out they're being like oh cool
+[872] like i'm running into this issue with
+[874] the build packs and they're like oh yeah
+[875] actually that's over here and stuff like
+[877] that right um
+[879] so it's just really awesome to have
+[880] people who like really care about their
+[882] product and and they will tell you when
+[883] things are broken right um like we have
+[886] automated integration tests that run in
+[888] prod every single five minutes um and
+[890] sometimes we'll push a change and then
+[891] one of the users will basically be like
+[893] hey this is this is messed up and you're
+[894] like wow you literally just
+[896] are like you know random like second
+[898] order integration tests like off the
+[900] block right um so yeah it's it's pretty
+[902] funny they're very very awesome users um
+[905] so i i couldn't imagine building for
+[906] another set of people
+[908] yeah that's got to be rewarding to get
+[909] that
+[911] immediate feedback from the end users
+[913] and be able to incorporate that into the
+[915] product
+[915] i'd love to shift gears a little bit and
+[918] peel back the curtain
+[919] um
+[920] on railway and and talk a bit about
+[923] what's going on behind the scenes to
+[925] make all this happen so you've you've
+[927] really distilled down this development
+[929] and deployment experience to streamline
+[932] it for the end user and so now let's
+[934] chat through kind of what it takes to to
+[936] make that happen so can we just start by
+[938] maybe giving a high level overview of
+[941] what your infrastructure stack looks
+[943] like
+[945] probably a smorgasbord of tools and
+[949] systems but we can start there and then
+[950] maybe dive into some some more specifics
+[953] uh once we lay that out
+[955] yeah
+[956] totally um and like i'll start on like
+[959] the most kind of like front end side and
+[961] we can move our way through the
+[962] infrastructure stuff which i think will
+[963] spend the majority of our kind of time
+[965] on this um but on the front we have kind
+[967] of like a typescript react code base
+[968] that we just um serve um and we've got
+[971] an automated kind of generated graphql
+[972] client um that hooks in with uh i think
+[975] it's graphql nexus which allows us to do
+[978] like deny by default really really
+[979] awesome fully typed kind of like end to
+[982] end into our back end um api design
+[984] everything is kind of like uh onion
+[986] routed so we have like handlers
+[987] controllers gateways inside of that and
+[989] that typescript service is essentially
+[991] like our our edge router for for the
+[993] dashboard right um and then anytime we
+[995] need to actually access any of the
+[996] internal infrastructure like the the
+[997] orchestrator um like the container
+[1000] provisioning engine the routing engine
+[1002] um the proxy kind of any of those things
+[1004] those are all grpc go microservices um
+[1006] and so those are just kind of generated
+[1007] um and they land on our infrastructure
+[1009] uh via a combination of terraform and
+[1012] ansible um and then uh temporal actually
+[1015] manages the container lifecycle
+[1016] management engine um and so it will call
+[1018] out to these varying different
+[1019] microservices um and you essentially
+[1021] just write workflows um and temporal is
+[1023] just phenomenal software it's just it's
+[1025] awesome it powers like
+[1027] a lot of stuff at uber i'm gonna say
+[1028] most and it's probably apps but it
+[1030] powers a lot of stuff um at that company
+[1032] and it's just like very very
+[1034] just great to just like work with um and
+[1037] so yes it manages like our container
+[1038] lifecycle engine so what happens when a
+[1040] user kind of like goes to dev.new and
+[1042] hits postgres
+[1043] we take that that kind of desired state
+[1045] and then we go and um create a workflow
+[1047] which actually goes into the
+[1048] infrastructure and projects that desired
+[1050] state and figures out where to actually
+[1051] land this container um and based on a
+[1053] variety of kind of uh factors whether
+[1055] it's like stateful whether it's um
+[1058] you know has like scaling uh metrics in
+[1060] the past that we can use to discern like
+[1062] how we're going to auto scale this thing
+[1063] um those get pushed uh through the
+[1066] router and figured out where to land
+[1067] onto this like mesh of what we call
+[1069] stackers which are basically just go
+[1070] binaries that have access to um
+[1072] virtualization hardware or
+[1073] virtualizations offer like uh container
+[1075] d or um you know we're looking at like
+[1077] firecrackers stuff like that but
+[1078] basically the ability to kind of do like
+[1080] container life cycle management on a
+[1082] singular host right um
+[1084] yeah so that covers most like the the
+[1086] kind of broad strokes of that and i'm
+[1087] happy to like dive into anything that
+[1088] you might find interesting intriguing
+[1090] etc yeah i think i think that helps
+[1092] quite a bit um and yeah i think the the
+[1094] piece that i am most interested in is
+[1097] the the back half of that sort of what
+[1100] happens when a user goes on to
+[1103] as you were saying the the dev dot is it
+[1105] dev dot new
+[1108] dev.new
+[1109] and is rolling out some deployment for
+[1112] the first time it sounds like
+[1114] that sequence of events creates a
+[1117] declarative state of some set of
+[1119] containers whether that's their
+[1121] application plus some set of other
+[1124] peripheral services postgres et cetera
+[1127] and then
+[1128] yep that is
+[1130] you you use temporal to actually go off
+[1133] and provision all that
+[1137] yep yeah so it is
+[1139] it's like well i was gonna say it's
+[1140] exactly that but it's like mostly that
+[1142] because it's not as declarative as we
+[1143] would like it right um and so cube and a
+[1145] lot of other kind of orchestrators they
+[1147] offer this really really awesome you
+[1148] know thing where you're just like super
+[1149] declarative and it kind of goes right um
+[1151] and we've kind of you know built an
+[1152] orchestrator uh from scratch to actually
+[1154] manage a lot of the like stateful
+[1155] workloads and deal with a lot of the the
+[1157] kind of issues surrounding that um and
+[1159] so it's a very very imperative process
+[1161] that we're moving towards a more kind of
+[1162] declarative um
+[1164] cycle for um but again like temporal
+[1167] does manage that that life cycle so any
+[1168] time that those things are are spun up
+[1170] or crashed or need to be reseeded or
+[1172] anything like that those are things that
+[1173] we we go and do through the orchestrator
+[1175] build on it yeah i haven't worked with
+[1176] temporal directly so i'm i'm less
+[1178] familiar there
+[1179] but from your description i think i have
+[1181] a relatively clear picture of what's
+[1183] going on
+[1186] yeah cool and then in terms of
+[1188] uh this is all transparent to the end
+[1190] user but presumably you are not managing
+[1193] your own data centers
+[1195] this is all getting deployed onto a
+[1197] public cloud or
+[1198] is that an incorrect assumption
+[1202] no um so so what we do is we actually
+[1205] deploy it onto um for simplicity um just
+[1208] like uh vms on on top of gcp um and so
+[1212] uh we we basically target um
+[1215] like we make it so that it's it's
+[1216] targetable for for quote unquote bare
+[1218] metal right and so we don't use any sort
+[1220] of like baseline google primitives or
+[1222] anything like that we just we just have
+[1224] this kind of like single cloud just for
+[1226] simplicity in terms of managing this
+[1227] infrastructure but it does run on top of
+[1229] these kind of machines and we actually
+[1231] do the the orchestration
+[1233] containerization etc all in kind of like
+[1235] code that we roll out um on on our level
+[1237] right so we don't hook into like uh
+[1239] cloud run or any of these these
+[1240] underlying primitives because they are
+[1242] slightly different across clouds um and
+[1245] our long-term vision is actually to kind
+[1247] of provide this single pane of glass
+[1249] that allows you to find your
+[1250] infrastructure and expropriate it to
+[1252] kind of any sort of like location right
+[1254] so our ideal is to actually be able to
+[1255] move all of these uh things like cross
+[1257] cloud cross whatever if you have kind of
+[1259] data centers that you are going and
+[1261] wanting to run like our goal is to build
+[1263] the the uh consumer grade software that
+[1265] will allow you to run on commodities
+[1267] based hardware um with the level of
+[1270] liability and kind of like
+[1271] sophistication you would get on kind of
+[1272] like the spending many many many many
+[1275] millions of dollars to like spin up your
+[1277] own your own infrastructure right um and
+[1279] in that sense we can actually bring a
+[1280] lot more powerful or a lot more power
+[1282] back to these companies um versus like
+[1284] aws and gcp just charging an arm and leg
+[1285] because you have just massive vendor
+[1287] lock yeah and i think that
+[1288] leads me to my next question
+[1290] and
+[1292] i i may know the answer but i'll ask it
+[1293] anyways
+[1294] are you spinning up a new vm for each
+[1298] customer and then manage orchestrating
+[1300] within the context of that vm or is
+[1302] there some concept of multi-tenancy
+[1304] within those vms that you're managing
+[1309] yeah so there is a concept of
+[1311] multi-tenancy within those vms and so
+[1313] you're landing uh
+[1315] different workloads on top of these vms
+[1316] depending on this kind of constraint
+[1318] function that we have on top of it um
+[1321] and so
+[1323] uh
+[1324] as a customer do all of my
+[1327] corresponding workloads end up within
+[1330] within one of these systems or is is the
+[1333] system set up such that it doesn't
+[1334] really matter and the orchestrator can
+[1336] place them wherever there's space and
+[1338] then the the networking is all set up
+[1340] accordingly yes
+[1343] yeah right um so that's exactly it right
+[1345] like um it's designed so that you can
+[1347] land it on any sort of piece of hardware
+[1349] um and so our idea here and what we use
+[1351] internally is just this go binary that
+[1352] we call a stacker um and that lands and
+[1354] it it hooks in with the the routing
+[1356] engine um as well as temporal and
+[1358] basically says like i i exist on this
+[1360] kind of plane of existence here's how i
+[1362] can potentially be reached um i have
+[1364] compute i have memory i have storage um
+[1366] and i have virtualization hardware and
+[1368] it just emits these stats back to the
+[1370] cluster and and it kind of you know
+[1372] basically creates this vector that we
+[1374] use when we do the routing and
+[1375] provisioning and it says like where
+[1376] should i be landing these right um and
+[1378] we can actually just arbitrarily extend
+[1380] this to you know just add another kind
+[1382] of uh property to this vector and say
+[1384] like oh actually like if we're landing
+[1386] stuff for like quote-unquote on-prem um
+[1388] it actually needs to land on this series
+[1390] of vms using this key parent right um
+[1392] and so that's how we extend it is in a
+[1394] way that it's supposed to be completely
+[1396] vm completely like cloud completely
+[1397] whatever agnostic so long as you have
+[1400] this binary that you can kind of run on
+[1402] on this hardware um and access has
+[1404] access to sufficient virtualization to
+[1406] provide this level of security that we
+[1407] require um
+[1409] then you can just like let it happen
+[1412] the initial decision to
+[1414] go with temporal plus this custom
+[1417] orchestrator on top of it
+[1419] versus something like kubernetes can you
+[1421] talk me through that decision process
+[1424] and the motivations for going this route
+[1426] yeah totally um so there's a there's a
+[1428] couple different things but mostly it
+[1429] comes down to like scaling stateful
+[1431] workloads um and so that's the big kind
+[1433] of like problem with a lot of these
+[1434] things right so let's say you see the
+[1435] database with four gigs of ram um and
+[1437] since all of our things are like single
+[1439] tenant isolated instances for security
+[1440] reasons um we need to be able to
+[1443] actually dynamically scale these
+[1445] instances up and down right um and if
+[1447] you want to do that on cube you're going
+[1448] to have to potentially reseat this
+[1449] workload and if it's a stateful service
+[1451] that you can't actually guarantee you
+[1452] know like
+[1454] the ability to clone this data around
+[1455] and you know shard it effectively um
+[1457] then you're hosed and you actually give
+[1458] the customer kind of downtime which is
+[1460] why people are just generally like don't
+[1461] run
+[1462] cube on like or don't run databases on
+[1464] top of cube right um and so what we did
+[1466] is we we built this orchestrator to
+[1467] allow us to actually grow these kind of
+[1469] stateful workloads um more elastically
+[1471] on top of the vms right so they can
+[1473] actually take precedence over any sort
+[1475] of stateless workloads right and we use
+[1476] the kind of stateless workloads to kind
+[1478] of like pad these things right so you
+[1479] can think of it a lot like you know if
+[1481] you had a jar with a big rock in it and
+[1483] then you get a bunch of sand in it right
+[1484] like that's kind of like what we're
+[1485] working on right at the vm orchestration
+[1487] level um
+[1488] cube's got a lot of great stuff that's
+[1490] kind of coming down the pipe there's
+[1491] ways to do virtual cubelets there's ways
+[1492] to like specify your own scheduler um i
+[1495] have like
+[1496] i would say like a solid understanding
+[1499] of it but i'm definitely not kind of
+[1500] like a
+[1501] very extremely seasoned infrastructure
+[1504] person right um and so we brought in a
+[1505] couple of lovely people who are like
+[1506] working on the the orchestration stuff
+[1508] that that i've built um as well as
+[1510] having a look at potentially what it
+[1511] looks like moving forward right but our
+[1513] be all and all kind of goal is actually
+[1515] to make it so that you know this is just
+[1517] completely a cloud agnostic works for
+[1519] kind of like stateful as an extension of
+[1521] stateless workloads um and just makes it
+[1523] really really trivial just kind of land
+[1525] these things anywhere
+[1528] yeah i think that that point you bring
+[1530] up about
+[1531] uh
+[1532] the difference between stateful and
+[1533] stateless workloads and the fact that
+[1536] many examples or use cases uh
+[1540] gloss over that difference and just
+[1541] start using stateless web apps and
+[1543] everything works magically out of the
+[1545] box um but actually
+[1548] under the hood it can be much more
+[1549] challenging once you bring in the the
+[1551] concept of needing to store and move and
+[1553] back up data that needs to persist uh
+[1555] across across restarts across months
+[1558] across years yeah right um so it's i
+[1560] think that's really really really really
+[1560] really really it's a slow kind of battle
+[1562] of like teasing out a lot of these
+[1563] things and and making sure that we can
+[1564] like give people the level of like
+[1567] you know reliability and and fault
+[1569] tolerance and stuff like that that we
+[1570] like genuinely would want of like an
+[1572] industry standard orchestrator but there
+[1573] is a lot of kind of like stuff that
+[1575] we've built from scratch right and so
+[1576] this is kind of the situation that we
+[1578] are we are in right now where we're
+[1579] building out a lot of these things and
+[1580] we're also having a look at potentially
+[1582] how we would move to a more standard
+[1584] orchestrator but like i said with this
+[1585] is kind of like a inflammation
+[1587] implementation detail whatever kind of
+[1588] guarantees the experience that we want
+[1590] um it's awesome right um and then the
+[1592] other thing is is uh in terms of like
+[1594] speed and placing these workloads um if
+[1596] you go to dev.new and you kind of go
+[1597] command k um
+[1599] that all happens in real time right and
+[1601] and for us the real time uh like element
+[1604] is really really important and any sort
+[1605] of like
+[1606] time dilation you have in between like
+[1608] modifying these instances and actually
+[1610] like seeding those workloads um it
+[1612] really matters because you're operating
+[1614] like you basically have to kind of
+[1616] you have to kind of create a game server
+[1617] if you were to do it the other way
+[1618] versus if you can do it all in real time
+[1620] then you can actually operate on that
+[1621] data with like just slight like you know
+[1624] uh crgt style like rollout rollback like
+[1626] rejecting of the updates right um so
+[1631] yeah and i think i saw on your site that
+[1633] you support both
+[1634] container based workloads via docker
+[1637] file or
+[1638] uh build packs
+[1640] uh
+[1641] are there any interesting challenges
+[1643] there in supporting both of those my god
+[1645] yes um
+[1647] um so the build packs are um
+[1650] they're they're a great
+[1652] they're a great effort in doing
+[1654] something that is extremely complicated
+[1655] which is essentially trying to distill
+[1657] magic right um and so when you do
+[1659] package json detection you do all of
+[1660] these things um it is like there's an
+[1662] amount of kind of like implicit overhead
+[1664] that each one of these changes has um
+[1666] and so it compounds really heavily so
+[1667] what happens is that the build packs end
+[1669] up you know they end up breaking
+[1671] sometime right so we have to pin some of
+[1673] these and we have to manage them we have
+[1674] to like you know backfill for specific
+[1676] use cases right like you know um people
+[1678] are like oh how do i add rust how do i
+[1680] add whatever right and our default
+[1681] answer is like oh write a docker file
+[1683] but like
+[1684] you know at the end of the day we're
+[1685] trying to make this approachable as as
+[1687] kind of
+[1688] for everybody right um and a docker file
+[1690] like unfortunately isn't the most
+[1692] approachable way to do this um and so
+[1694] we've like
+[1695] noodle on a bunch of things um we've
+[1697] like talked with the people over at fly
+[1698] i o we've both kind of like been
+[1699] experimenting with like some
+[1701] knicks-based stuff i know the replit
+[1702] people are also experimenting with
+[1703] knicks-based stuff um the challenge
+[1706] isn't really in kind of like um doing
+[1708] the actual orchestration with this
+[1709] because everything just goes to like an
+[1710] oci compliant image um the challenge is
+[1712] more actually like how do you give
+[1713] people a really really good reproducible
+[1715] experience that like is fast right um
+[1717] and i know like you know
+[1719] pretty much everybody in this industry
+[1720] seems to be working on this stuff right
+[1722] for sales working on monorepo caching
+[1724] they just picked up turbo repo um like
+[1726] the caching is like such a mana thing
+[1728] and i think nick's os really has an
+[1730] opportunity to actually make this like
+[1731] phenomenal right um and i suspect that a
+[1734] lot of people are going to actually move
+[1735] over right and just define a lot of your
+[1737] your stuff as uh kind of like a knicks
+[1739] config and then distill it to an oci
+[1741] compliant image and then go and
+[1742] orchestrate that
+[1745] you're building a platform that others
+[1747] are building
+[1749] their
+[1750] products and companies on top of and so
+[1752] with that comes expectations of uptime
+[1755] and slas and high reliability
+[1758] are there any interesting stories you
+[1760] can share
+[1761] over this time you've been operating uh
+[1764] railway around
+[1766] dealing with that and managing
+[1768] expectations and fighting fires i'm sure
+[1770] they've come up along the way um that
+[1773] you're that you're able to share
+[1775] yeah i mean there's just like there's a
+[1777] lot of kind of operational overhead that
+[1779] comes in running a cloud um first with
+[1781] like seven people right and at the end
+[1783] of the day we're like an extremely small
+[1784] team running like extremely lean um and
+[1787] we support like 40 000 users we've got
+[1789] like
+[1790] 600 and something paying customers and
+[1792] like you know
+[1793] 40 kind of full-on teams like shipping
+[1796] daily et cetera and they're working
+[1797] across like anywhere from like a five
+[1799] person to a 20-plus person team right um
+[1801] and so there is that level of like
+[1803] you know you you have to have things
+[1805] that work and you have to have
+[1806] redundancy in place and you have to have
+[1808] all of these things that work right and
+[1809] so it's it's honestly like you know if
+[1812] we need things that are you know our
+[1813] serving layer needs to be kind of
+[1814] bulletproof there needs to be replicas
+[1816] kind of everywhere there right but um
+[1818] beyond those things that are kind of
+[1819] like um
+[1821] like standard that you would kind of
+[1822] just generally think about there's
+[1823] there's constantly things that are just
+[1824] like
+[1826] out like they're out scaling the
+[1828] implementations that that we have um and
+[1830] generally stuff that i've kind of like
+[1832] built and like pulled people more people
+[1833] in so we've had to rebuild like we've
+[1835] had to rebuild the the routing layer
+[1837] we've had to rebuild like the logging
+[1839] layer we've had to rebuild um the the
+[1842] kind of like we're in the process of
+[1844] like rebuilding the stacking layer
+[1845] potentially look at the orchestration
+[1846] it's just this constant battle of like
+[1849] how can you build tooling that you
+[1850] really think is going to like carry for
+[1852] a year get that into place as quickly as
+[1854] as possible without causing any sort of
+[1856] outage make sure that you you know like
+[1857] do zero downtime rollout for any sort of
+[1859] your migration stuff um so i can't
+[1861] really pick like a specific thing
+[1863] because it is genuinely like
+[1865] every month or something like that it's
+[1867] like well like you know it's we're
+[1869] seeing a little bit of sagging in terms
+[1870] of like on voice time to live and then
+[1872] we're like working with the envoy people
+[1874] and we're like oh like actually like you
+[1876] know there's this weird nuance with like
+[1877] stats that's actually causing like our
+[1879] our deployments to like spike and
+[1881] internal back pressure and envoy and so
+[1882] it's it's genuinely one of the like
+[1884] coolest um spaces ever because like i
+[1887] can't think of any sort of problems that
+[1888] i'd want to work on that aren't in this
+[1890] right like there's compute problems
+[1891] there's network problems there's routing
+[1892] problems there's orchestration problems
+[1894] there's build and deploy problems
+[1896] there's like compiler level adjacent
+[1898] problems for like dependency management
+[1900] um there's like dag management for like
+[1902] how you're gonna do like blue green
+[1903] rollouts across like your service mesh
+[1905] um and so it's just like one of the the
+[1907] coolest most fun things that i could
+[1909] think to work on um and i just like i'm
+[1911] going to be spending the next like
+[1912] decade of my life here um and i i
+[1915] suspect that you know i won't stretch
+[1917] the surface on a lot of these things but
+[1919] that's just kind of how it goes down so
+[1922] yeah i think that that story of
+[1925] building it to support your current
+[1928] workloads plus maybe
+[1930] maybe the next 10x but definitely not
+[1932] scaling to 100x or else you'd you'd
+[1935] probably be wasting time and uh money
+[1937] trying to prematurely optimize for those
+[1940] cases so i think that approach of kind
+[1941] of dancing from what is the current
+[1944] bottleneck and alleviating that
+[1946] bottleneck to
+[1947] allow you to keep going and keep scaling
+[1949] uh certainly sounds like the right
+[1951] approach yeah it's a similar story to
+[1953] what i've seen working with other
+[1955] startups yeah and and
+[1957] i think a lot of organizations they
+[1958] approach this from an engineering
+[1960] problem um but i think it's really like
+[1961] an opera operationalizing
+[1964] ops problem if that makes sense um and
+[1966] so we do a lot of things like we do
+[1967] admin based rollouts we have this thing
+[1969] called priority boarding which is like a
+[1970] feature flagging engine built on top of
+[1972] discord so we can say like we're rolling
+[1974] this out if you want access to this
+[1975] feature we'll add this role inside of
+[1977] discord that will get propagated to our
+[1979] internal like um feature flagging engine
+[1981] and then those will kind of go into your
+[1982] accounts right and so we can pull in a
+[1984] lot of telemetry right and i know we're
+[1985] going to talk about it in a bit but
+[1987] there's a lot of things you can do from
+[1988] like a life cycle of a feature beyond
+[1991] actually kind of like designing and
+[1992] shipping the feature that really play
+[1994] extremely well into this right and how
+[1995] you decide like which features to keep
+[1997] how you decide which features to roll
+[1998] out how you decide success criteria and
+[2000] reliability criteria and and kind of all
+[2002] of those things right so it's it's much
+[2004] beyond engineering but it's like
+[2006] really really fun so
+[2009] i think that's a perfect segue into the
+[2011] next section of the discussion around
+[2015] the team at railway and operational
+[2017] aspects you mentioned there's seven of
+[2019] you currently
+[2020] um so there's probably not too much
+[2023] structure within that but what's the
+[2024] breakdown
+[2025] pretty much everyone technical are there
+[2026] some non-technical folks is there
+[2028] management and ic levels uh etc how is
+[2032] it laid out
+[2033] yeah um so the org chart is kind of fun
+[2035] because it's like completely inverted if
+[2037] that makes sense um and so we just kind
+[2039] of have like the people who are shipping
+[2041] things and then the overflow of the
+[2042] stuff that they can't ship like just
+[2044] generally falls on me and then i go and
+[2045] like take that and then go to still like
+[2048] a hiring pipeline for it right um and so
+[2050] as it stands right now we're seven
+[2051] people uh six engineers one product
+[2054] designer he used to be in like
+[2055] mechanical engineering design so he used
+[2057] to design boxes so he's like you know
+[2059] right right kind of there with us um so
+[2060] it's a very very kind of like technical
+[2062] um uh focused kind of crew um and we're
+[2066] we're slowly kind of like bringing in
+[2067] more people um we have our first
+[2068] marketing hire that will start in a in a
+[2070] couple of weeks she's gonna really help
+[2071] us with um a lot of our kind of
+[2074] uh language and branding and you know
+[2076] she was like you have a lot of really
+[2077] great stuff here but you're not doing a
+[2079] great job operationalizing a lot of it
+[2080] and i was like
+[2082] that's why we're having this
+[2082] conversation it's awesome um right and
+[2085] so there's not really any sort of like
+[2086] um
+[2087] management overhead i do personal
+[2089] one-on-ones with the team um it's mainly
+[2091] to like feel supported and see how i can
+[2093] actually like backfill those roles there
+[2095] um yeah so there's um
+[2098] there's basically just kind of like a
+[2099] what do you need like sent like
+[2101] delegated et cetera how is that going to
+[2102] work and i just kind of provide this
+[2104] like
+[2105] soft layer of like
+[2106] management and kind of like you know
+[2108] that right and and as it scales we will
+[2110] uh
+[2111] ideally have to add some sort of layer
+[2113] but i think we're really really like
+[2116] focused on a lot of like optimization
+[2118] processes like i think that the best
+[2120] thing that you can do when you're a
+[2121] small team is like really figure out
+[2122] like where your kind of like big hires
+[2124] need to be and then really just like
+[2126] automate every single thing else right
+[2128] yeah and you published an article
+[2131] uh
+[2132] called how we work that kind of outlines
+[2134] a number of your principles around how
+[2138] how the team at railway works focused on
+[2141] minimization of meetings doing
+[2144] uh avoiding stand-ups and doing what
+[2147] you're calling daily wraps instead can
+[2149] you walk me through some of the key
+[2150] elements of
+[2151] that work
+[2153] uh work process at railway and how you
+[2156] think about that
+[2157] yeah um so i
+[2159] i've been doing remote work since uh
+[2162] maybe 2015. i used to work at like
+[2164] wolfram when i was in college um and
+[2167] they had this like really really great
+[2168] culture of like async most things very
+[2170] few meetings like getting stuff done and
+[2172] just like being very very open and
+[2174] honest and kind of just like emitting
+[2176] the things that you're doing out into
+[2177] the world because everybody across
+[2178] worked across time zones like there were
+[2179] periods in which i worked like
+[2181] from my college town vancouver island
+[2183] there were periods where i was working
+[2184] out of like amsterdam and italy and
+[2185] stuff like that and and the process
+[2187] didn't really like generally change on a
+[2188] lot of those things um and then i moved
+[2190] to a couple like more centralized
+[2191] companies with like more standupy kind
+[2193] of things and i generally just like
+[2196] i always felt that there was this kind
+[2197] of period where people would slog into
+[2199] the office and they would all kind of
+[2200] like show up for stand up and people
+[2202] wouldn't be so super awake and then
+[2203] you'd want to like respond to something
+[2204] but there wasn't essentially like enough
+[2206] oxygen in the room to basically
+[2208] necessitate a really good conversation
+[2210] about this right um
+[2212] and so when we started the company it
+[2213] was basically like you know it was
+[2215] coveted times right so there was
+[2216] basically no reason to like actually go
+[2219] and have an office there was no reason
+[2220] like be in person um our founding
+[2222] engineer was out of london um and so we
+[2224] just basically kind of like came to this
+[2225] conclusion of a lot of things that like
+[2227] really help us out right um and so we
+[2229] don't do it a kind of like daily
+[2230] stand-up what we do as a daily wrap
+[2232] which is basically like every 24-hour
+[2234] cadence you add like what you worked on
+[2236] either
+[2236] like the prior day or the following day
+[2238] depending on like where you kind of like
+[2240] fit in in that loop um and then we also
+[2243] do like one
+[2245] like we do two synchronous meetings a
+[2246] week a monday kickoff and a friday wrap
+[2248] and that's generally just to like jam on
+[2249] things and like you know kick off the
+[2251] week and kind of like close out the week
+[2252] and like provide a little danube period
+[2254] for like shipping stuff on fridays um we
+[2257] do a lot of like hyper optimized stuff
+[2260] inside of discord like i mentioned our
+[2261] community is in there we have like
+[2262] bought offs for any of like the
+[2264] community members to basically flag us
+[2266] with layers of like escalation being
+[2267] like oh i can't actually help this
+[2268] person with this probably need a team
+[2270] member for that um we have incident
+[2272] management inside of discord so you can
+[2273] do like exclamation mark incident and it
+[2275] will go to like the discord emission
+[2277] channel and propagate to anybody who
+[2278] subscribed to this as well as like
+[2280] updates on our in status um
+[2283] we have engineering design review like
+[2285] cues where you can basically say like
+[2287] review this thing and it's it's inside
+[2288] of notion you go and you have a look at
+[2290] it comments move it through kind of the
+[2291] life cycle management um you know we
+[2293] have we have hiring cues now inside
+[2295] inside of uh discord which are like
+[2297] managed um and we're optimizing that um
+[2299] so very very much on that kind of like
+[2301] async as much as possible um automate as
+[2304] much as possible and see like how see
+[2306] how much leverage you can add to your
+[2307] team right um and i've chatted with a
+[2309] few kind of ex founders and a few things
+[2310] that they kind of harped on is like it
+[2313] would have been really nice if we did
+[2314] this is that when they hit their kind of
+[2316] like scale stride and then people were
+[2317] pushing them to hire they really wish
+[2319] they had put some sort of like sys like
+[2321] brutalist systematization in place like
+[2324] if you're going to hire sales engineers
+[2325] you should start or you should you're
+[2326] going to hire sales people you should
+[2328] hire a sales person and an engineer to
+[2330] go and automate all of the stuff that
+[2331] kind of like falls in their tailwind
+[2332] right and figure out how that actually
+[2334] scales and make it super tenable to like
+[2336] have engineering and sales work together
+[2338] and engineering and marketing work
+[2339] together right um and i think we're just
+[2341] like a very engineering first com
+[2343] company sometimes to a fault um and like
+[2345] these are just things that we we have
+[2347] done that i think just like
+[2349] allowed us to scale to like this many
+[2350] users with like this few people on like
+[2352] an infrastructure platform with like
+[2354] i don't say like
+[2355] like amazing high availability it's not
+[2357] on amazon yet but it's it's like people
+[2359] are people are generally like quite
+[2361] satisfied with this and the response
+[2362] rates and and kind of like making sure
+[2363] that their stuff is like in good hands
+[2365] so
+[2367] yeah i mean the the number of things
+[2368] that you have shipped with a team of
+[2370] seven uh is pretty incredible like
+[2373] there's i think 40 plus different
+[2375] starter app like repos that you can use
+[2378] to put together different stacks and
+[2380] just like
+[2381] i don't know there's just a lot of a lot
+[2382] of things there so it's impressive what
+[2384] you all have built uh in the last year
+[2386] and a half and like
+[2388] cards on the table like we we want to
+[2389] lean the community a lot we want to be
+[2390] like the community cloud we want to
+[2392] allow people to actually extend this
+[2393] thing in a way that's like really really
+[2394] awesome and possible because like you
+[2396] know you look at amazon um and they
+[2398] basically just like they go after these
+[2400] these products and they spin out these
+[2402] verticals and they spin out these
+[2403] managed services and they scale them
+[2404] right and they have this army of people
+[2405] and money that they can throw at it
+[2407] right um and our goal is essentially to
+[2409] take the people who are actually doing
+[2411] all that work the open source
+[2412] maintainers and long term we would love
+[2414] to create a kind of like closed
+[2415] ecosystem to allow them to monetize a
+[2417] lot of their open source work right so
+[2418] authoring onto the platform having these
+[2420] companies consume this we can do their
+[2422] dependency management and then we can
+[2424] actually do attestation to say oh you're
+[2425] running this software from these people
+[2427] you're paying us five thousand dollars a
+[2429] month so like go and do this we go and
+[2431] kick back twenty five hundred dollars
+[2432] with that right and then that allows it
+[2433] to actually put the power into the hands
+[2435] of like the people who are building
+[2436] these things right so you know when you
+[2438] say that we've got like 40 plus starters
+[2439] like i think we've shipped maybe like
+[2442] eight ten of them or something like that
+[2443] a lot of them are just kind of from the
+[2444] community and and you can slap a button
+[2446] on any repo and it just kind of gets
+[2447] picked up so
+[2450] yeah i think i think that's an
+[2451] interesting
+[2452] approach of like democratizing
+[2455] the monetization of open source or like
+[2458] giving more agency to open source
+[2460] projects to monetize directly um that i
+[2464] don't know that other that really exists
+[2467] currently with any any cloud providers
+[2469] so that's that's an interesting model
+[2473] um i also saw some
+[2475] [Music]
+[2476] some documentation around how you
+[2478] approach
+[2479] engineering requirement docs can you
+[2481] talk a little bit about what those are
+[2483] and
+[2484] when they are appropriate and when they
+[2486] are not in terms of writing them for a
+[2489] new feature that may or may not make it
+[2491] into the railway platform
+[2493] yeah um and so this is probably like i i
+[2497] know i talked a lot about
+[2498] systematization and stuff like that but
+[2500] it's not a like check all these boxes
+[2502] kind of deal it's like we put up these
+[2504] tools so that there there's something
+[2505] you can reach for as you move through
+[2507] the life cycle of something that you're
+[2508] shipping right and so you can think of
+[2510] it a lot like a conveyor belt right like
+[2511] you can just like start moving things
+[2513] through this thing right and maybe
+[2514] you'll like stack a couple of things on
+[2515] an erd right and somebody can have a
+[2516] look at it right maybe somebody won't
+[2518] necessarily be able to have a look at it
+[2519] by the time it goes out the door because
+[2521] like they were just kind of like
+[2522] genuinely working on it right um there
+[2524] are obviously things that are more
+[2525] critical where you're like hey listen i
+[2526] really just kind of need to stop the the
+[2528] train here and and like um sorry no pun
+[2531] intended um but like go and kind of like
+[2533] move that through there right um but you
+[2535] can think of it as conveyor belts right
+[2536] so they're just kind of like constructs
+[2537] you can attach stuff onto right and so
+[2539] at the start of it it's kind of just
+[2540] like a discord message that says like
+[2542] hey it'd be really cool if we had this
+[2543] feature right like whether it's from a
+[2544] user whether it's from us whether it's
+[2545] something something like that right just
+[2546] like someone to get this thrift kind of
+[2548] going right um and then it potentially
+[2550] comes into an erd which just basically
+[2551] has some background maybe they kind of
+[2552] link to the thread inside of discord um
+[2555] you know requirements etc um and these
+[2557] are not long right like they're they're
+[2559] maybe like one or two viewports worth of
+[2561] like implementation unless they're kind
+[2562] of like large like proxy orchestrator
+[2565] kind of like all of those things that
+[2566] are constantly evolving um
+[2568] and so you just kind of like spew out
+[2570] those things that you want and then you
+[2571] start working and kind of moving this
+[2572] through the pipeline right um and then
+[2574] there's plenty of section like periods
+[2576] kind of evolve that application right
+[2578] like if it doesn't necessarily fit the
+[2579] exact design document you can just go
+[2581] back and update the design document
+[2583] right like there's no kind of like
+[2585] watermarks for a lot of these things
+[2586] they're basically just like guidelines
+[2587] for the tools that you can reach for
+[2588] when you kind of like want to go and do
+[2590] those things right and so sometimes
+[2591] you'll get an erd with like so little
+[2593] content that you're like yeah we
+[2595] probably could have not but like it's
+[2596] better safe than sorry so let's continue
+[2598] through there right or you'll get a a pr
+[2600] that's like oh this could have been an
+[2601] erd but like you know it's up to the the
+[2603] person right so at railway it's like a
+[2605] really high agency environment where
+[2606] it's like you know you generally kind of
+[2608] set the the things that you're you you
+[2610] need to like be successful and rope the
+[2612] people in that you need to be successful
+[2614] right a lot of it is ad hoc a lot of it
+[2615] async a lot of is like you know up to
+[2617] your best judgment right um and so
+[2619] there's enough kind of agency there that
+[2621] you can kind of just like move through
+[2622] the entire pipe from
+[2623] the ideation all the way to kind of like
+[2625] the ship finished product that ends up
+[2626] in our change log every week
+[2629] got it yeah i think i think that
+[2631] approach makes a lot of sense
+[2632] um and like
+[2634] yeah i've seen cases where teams add too
+[2637] much formality around design docs or
+[2639] engineering docs
+[2640] and then others that don't use them
+[2642] enough and so i think it's always trying
+[2643] to find that sweet spot where you're
+[2646] getting the value from them without
+[2647] overburdening the process and sounds
+[2649] like that is the balance that you're
+[2651] trying to strike there
+[2652] a hundred percent i i'm very very like
+[2655] big advocate of like looser than
+[2657] necessary abstractions even it's just as
+[2659] like kind of a an effort to kind of like
+[2660] go and rope in a little bit more because
+[2662] a tight abstraction basically like it's
+[2664] it invites you to like actually
+[2666] circumvent it right and and that
+[2667] basically means that you've picked the
+[2668] wrong abstraction right so it's better
+[2670] to like draw a looser abstraction around
+[2671] it and then actually like rope it in if
+[2673] you need to over time versus like trying
+[2675] to define like strong pillars for a lot
+[2677] of these things right and we'll see how
+[2679] far that carries us because obviously
+[2680] we're an early stage startup and
+[2681] obviously at some point there will
+[2682] become like
+[2683] process that that needs to get done but
+[2685] i think that generally it suits us
+[2687] extremely well at this stage
+[2689] yeah i've i've worked with teams as
+[2691] small as yours and uh much much larger
+[2695] so i worked at lockheed martin at the
+[2697] beginning of my career so we're 100 000
+[2699] plus people and then i've worked on
+[2700] startups that are just a handful of
+[2702] people and so it is interesting the sort
+[2703] of the natural breaking points where
+[2706] you
+[2707] as you grow the team obviously the
+[2708] number of potential connections between
+[2710] any two individuals uh explodes and so
+[2714] figuring out where where those natural
+[2716] inflection points are and how to handle
+[2718] them i'm sure
+[2720] will be an interesting challenge over
+[2721] the next uh the next couple years for
+[2723] you
+[2725] 100
+[2727] cool well as we wrap up are there any uh
+[2729] sort of
+[2730] nuggets of advice that you would distill
+[2732] from your
+[2733] your last 18 months building railway and
+[2737] operating railway
+[2739] working with customers as they deploy
+[2742] applications on top of your
+[2744] infrastructure that you can share with
+[2746] others who maybe are trying to
+[2748] build out the devops function or cloud
+[2751] infrastructure systems within their
+[2753] companies
+[2755] yeah um it always has to be easier than
+[2757] you think it does like it it doesn't
+[2759] matter what the level of experience is
+[2761] unless it is a purely a button and
+[2763] ideally just like something that you
+[2765] could hook into somebody's brain to read
+[2766] their mind like that's that's the level
+[2768] of kind of simplicity that you should
+[2769] strive for right if there's if there is
+[2771] any sort of activation energy required
+[2773] in terms of like you know yaml file make
+[2776] a commit like any sort of these things
+[2778] like i often think in terms of like
+[2779] thermodynamics any any function you add
+[2781] to this thing is a lossy function you
+[2783] will lose some amount of of entropy as
+[2785] it goes through this pipe and it is
+[2787] usually a lot more than you think it is
+[2789] um so that that would be it it's like
+[2791] keep it super simple and and move move
+[2793] fast right um you know move deliberately
+[2795] but you know be safe and obviously
+[2797] that's kind of like a counter example
+[2799] but um you know just just do the thing
+[2801] if it can be done really really quickly
+[2802] and you want to get feedback on it just
+[2804] like ship it
+[2806] awesome with that i think we'll we'll
+[2808] wrap it up thanks so much jake for
+[2809] coming on uh if people are interested in
+[2812] railway where where should we send
+[2815] uh go straight to dev.new and start
+[2817] typing into that command box whatever
+[2819] you want to you know kind of deploy
+[2820] whether it's something from your github
+[2821] whether it's a database whether it's
+[2823] redis instance whether it's it's
+[2824] anything in between um you just go there
+[2827] and then kind of espouse into existence
+[2829] right um i'm always available kind of my
+[2831] dm's are open at justjake on twitter um
+[2833] i'm inside the discord i'm jake at
+[2835] railway.app you can just message me
+[2837] anytime um and i'll kind of be around
+[2840] i'm happy to help anybody through
+[2841] through any of that
+[2843] perfect yeah thanks so much great
+[2845] discussion
+[2847] thanks
+[2850] [Music]

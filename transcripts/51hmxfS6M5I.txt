@@ -1,0 +1,1800 @@
+[3] We're live.
+[4] &gt;&gt; [laughter]
+[5] &gt;&gt; Hi Anant. Welcome to Adventure with
+[6] Grace.
+[8] &gt;&gt; Great to Great to be here.
+[10] &gt;&gt; Um so, you guys are on our Smart AI 100
+[13] list. So, almost every week I feel like
+[15] I'm seeing all the listers raising the
+[17] next rounds and next rounds and then you
+[19] guys are obviously doing amazing. And uh
+[22] to start with the show, like before we
+[23] dive into everything Post Anant,
+[25] um I'll give a quick shoutout to our
+[27] amazing sponsor. This episode is brought
+[30] to you by Nabiax, the automate cloud for
+[32] AI innovators. Nabiax provides AI
+[34] infrastructure you can count on,
+[36] combining reliability and speed with
+[38] flexibility and engineering support
+[40] unmatched by hyperscalers. AI leaders
+[43] like Meta, Shopify, and Hixville already
+[45] partner with Nabiax to run their AI
+[46] workloads. Plus, venture-backed startup
+[49] can save up to 150k on compute costs
+[51] when they apply for access. Visit
+[53] nabiax.com or nabiax.com/startup to
+[55] learn more. Okay, I want to start with
+[58] um
+[60] Obviously, I have like so many questions
+[61] about Anant cuz like you guys have
+[63] clients like OpenAI and all these like
+[65] kind of like frontier labs that you have
+[67] worked with. Maybe we could start from
+[68] your background. So, like the last job
+[70] you took before starting Anant, I
+[72] believe was at Meta Reality Labs / like
+[76] ML for like Meta. So, maybe we could
+[78] talk about like what were some core
+[79] lessons that you learned early on in
+[81] your career that kind of like shaped you
+[83] into who you are today. Also, uh you
+[85] have started companies before. So, like
+[87] maybe we could talk about that as well.
+[89] &gt;&gt; Yeah, absolutely. So, part of this I
+[91] helped to lead a lot of the early
+[93] efforts around things like causal
+[94] inference and interpretability uh at
+[97] Meta in what ultimately became the GenAI
+[99] team um
+[101] especially after a lot of reorgs
+[103] happened from there.
+[104] Uh and what was really interesting at
+[106] the time was that uh of course Meta had
+[109] been investing in conversational AI and
+[111] and NLP for a very long time. Back
+[113] dating back to 2013 when uh Facebook M
+[117] first came out, one of the first uh
+[119] consumer
+[120] products for
+[122] anything related to NLP. And
+[125] so
+[127] it was a really interesting time to
+[130] generally work on a lot of foundational
+[132] stuff. And I remember at the time there
+[135] were of course a lot of there was a lot
+[136] of internal work happening around
+[138] language models that were being trained
+[140] even back in 2018-2019.
+[142] And so I remember at the time
+[144] some folks in our team had trained the
+[146] largest model at the time internally
+[147] which was an 800 million parameter size
+[149] model. And it was really big news and
+[152] obviously today we're we're in the
+[153] trillions and so things have
+[155] scaled extremely quickly.
+[158] But at that point in time a lot of the
+[159] things I was really excited about was
+[162] how do we actually better understand,
+[164] measure, and really interpret how AI
+[166] actually works. And how do we apply that
+[169] to initially things like black box
+[171] models, neural networks, and then
+[173] eventually to generalized
+[177] models like for example LLMs.
+[180] And so
+[182] A lot of a lot of what I've always been
+[184] extremely excited about is how do we
+[186] bring both the applied and the research
+[188] world together to be able to solve some
+[190] of the most important problems in our
+[192] generation. Of course we're in a
+[194] extremely unique moment in time. And so
+[197] I've been
+[198] really grateful about everything that
+[199] we've been able to do and also of course
+[201] how the how the world has changed in
+[202] such a short amount of time.
+[204] &gt;&gt; For sure.
+[206] I want to start with I feel like
+[207] Post-Era is working on a very important
+[209] problem which is kind of like solving
+[211] the hallucination
+[213] problem for um
+[215] companies. Maybe we could talk about
+[216] like the product itself. Like you know
+[218] how do you kind of came across this like
+[221] specific problem and maybe what we could
+[224] talk about like the different like
+[226] evolution from
+[228] the different I guess like era of the
+[231] company as well.
+[233] &gt;&gt; Yeah, so funny enough when we first got
+[236] started we actually debated
+[239] my co-founder actually debated whether
+[240] or not we should use the word evaluation
+[242] in our messaging because it was a
+[244] research term and
+[246] literally no one knew what it meant and
+[247] so and this was
+[249] this was
+[251] roughly 2 and 1/2 years ago and in 2023
+[253] and and at the time evaluation just
+[256] meant
+[257] we want to be able to
+[259] benchmark new models that are being
+[261] released and so it was very much an
+[264] activity that researchers ran inside of
+[266] large labs but it was not something that
+[268] anyone else even really knew
+[270] what to do or what that actually meant.
+[272] And then in 2024 a lot of things changed
+[274] where
+[275] a lot of teams
+[277] across enterprises, across AI native
+[279] companies, AI engineers
+[281] were actually starting to build new
+[282] practices around running evals and it
+[285] started to become
+[286] a much bigger topic because everyone
+[289] wanted to figure out how to make AI work
+[291] for them. And everyone was blocked by
+[295] things like you mentioned
+[296] hallucinations,
+[298] other kinds of errors and issues that
+[300] just continue to compound especially as
+[302] companies actually put products into
+[304] production and so
+[306] so a lot of what we thought about is
+[310] how do we actually take a very rigorous
+[311] approach to how evaluation should
+[313] actually be done and how do we apply
+[315] this to
+[317] the most
+[318] significant that the generational
+[320] products of our time
+[321] whether it's
+[323] new AI products developed by fundamental
+[325] financial model companies or new large
+[328] scale use cases developed by
+[331] other kinds of enterprises that are that
+[333] are deploying products that they've
+[336] never developed before in their entire
+[337] history to
+[339] millions of people around the world and
+[341] and so I'd say that
+[343] in that time frame since we got started
+[344] as a company a lot of things were
+[345] evolved and so
+[347] since we got started, we had produced a
+[349] lot of the most influential and earliest
+[351] research around AI evaluation. So, for
+[353] example, we had created the very first
+[355] LLM benchmark for any kind of enterprise
+[357] use case in general, which was called
+[359] Finance Bench at the time.
+[361] &gt;&gt; Mhm.
+[361] &gt;&gt; Uh
+[361] and um
+[363] in addition to that, we had produced
+[364] some of the first research around LLM as
+[366] a judge, including the first um agent as
+[369] a judge called Percival, the first
+[371] multimodal LLM as a judge. And so, a lot
+[373] of things we've become known for things
+[374] like LLM judges uh since we started as a
+[376] company. And then we also open-sourced
+[378] some of the very first models for
+[380] evaluation as well.
+[381] And so, what's interesting is that
+[383] um a lot of things have evolved uh over
+[385] the past year where
+[387] um hallucinations um are still really
+[389] important, and of course, solving for
+[391] that is uh still a really big priority,
+[393] but it's really in the context of
+[394] liability. And so, uh there's this
+[397] analogy that we often talk about, which
+[398] is uh
+[400] um how do we how do we get agents to
+[402] actually operate like Waymos on the
+[404] road? Uh they're actually very similar
+[406] problems when you think about it. Uh
+[407] Waymos are uh for the physical world, of
+[409] course, uh and um
+[412] uh everyone that's that's working on
+[413] self-driving cares about getting to the
+[415] five nines of reliability. And in the
+[417] same way, we want to make sure we want
+[420] to we want to be able to uh to build a
+[422] world where agents can actually run
+[423] autonomously over very long periods of
+[425] time.
+[426] Uh and in order to do that, uh
+[429] we want to make sure that they can
+[430] operate at basically the five nines of
+[432] reliability. Uh because the challenge
+[434] with um agents, especially multi-step
+[436] workflows, is uh
+[438] uh errors can actually compound. And so,
+[441] the moment that an agent makes a
+[442] mistake, then it's very likely that the
+[443] step after that um is a mistake, and it
+[446] only compounds from there. And so, um
+[449] so, we think that uh that being able to
+[451] build for the five nines of reliability
+[453] is an extremely ambitious, but an
+[454] extremely um important problem to be
+[457] solved in order to
+[459] uh actually uh
+[460] uh have agents that can operate as
+[462] autonomously as as Waymo's do. And so
+[464] that's exactly why we've applied Evals
+[466] to things like simulation research and
+[469] infrastructure that actually helps
+[470] companies that are developing models, uh
+[473] whether they're training for tier models
+[474] or fine-tuning open-source models
+[476] actually be able to to do that. And so a
+[479] lot of the a lot of the newest AI
+[481] products you might have seen, especially
+[483] from some of the largest foundation
+[483] model companies, um have been in in
+[486] large part driven by some of the core
+[488] foundational infrastructure and data
+[490] that we've actually developed in order
+[492] to make a lot of those kinds of things
+[493] possible. And so we think that there's
+[495] going to be hundreds of more moments
+[498] like that and hundreds of more
+[499] generational AI products like that in
+[500] just the next year alone. So uh we're
+[503] really thrilled to be uh a big
+[505] contributor to making that possible.
+[506] &gt;&gt; Mhm. Um I uh I guess like one of the my
+[510] question is like since like I felt like
+[511] after you published the papers, um
+[514] obviously there like LMSA Judge and
+[516] other
+[517] uh I guess like um papers about agent
+[520] systems. So maybe we could talk about
+[521] like how do you develop a product around
+[524] these researches and uh what kind of
+[527] solution do people want? So let's say
+[529] like a funder like I guess I got um top
+[532] like research labs like uh
+[534] uh why is a problem like so difficult to
+[536] be solved by internally since like
+[538] everyone is like we're living in like a
+[541] builder culture bubble. It's like a
+[543] valley. Everyone's like building
+[544] everything.
+[546] &gt;&gt; Yeah, so I'd say um
+[548] uh I might take us back to uh when a lot
+[550] of the let's say the the the recent boom
+[554] really started back in 2023, where I
+[556] think of it as like the first phase of
+[557] LM training, which was pre-training. And
+[560] we were able to scale up data on the
+[562] transformer architecture extremely well
+[564] and really do that very quickly because
+[566] we could because we had a lot of data
+[567] available on the internet. Uh and of
+[570] course Wikipedia was an amazing source
+[572] for that. And um and so um Um, in order
+[575] to uh be able to train that model, we
+[577] had to of course collect basically all
+[579] of the public all of publicly available
+[580] information. And there's roughly 25
+[582] trillion tokens on the internet. Uh and
+[585] so um in large part we've pretty much
+[587] exhausted most of that most of that
+[589] information, which is why we're starting
+[591] to see diminishing returns in
+[592] pre-training. And so over the past year,
+[594] maybe let's say 9 or 10 months or so,
+[597] uh I think about it as the the second
+[599] phase of of training, which is of course
+[601] post-training. Uh but how do you
+[602] actually now develop new forms of data
+[606] that can actually push us forward that
+[608] don't exist easily on the internet. So
+[609] it's not something that you can actually
+[610] scrape
+[611] um in a very simple way. And so what we
+[614] start to see is that uh in order for us
+[616] to be able to
+[618] um improve agents or improve models um
+[621] across lots of different kinds of
+[622] domains and model capabilities,
+[624] uh we have to now produce net new data
+[626] that hasn't existed before. And um the
+[628] reason why that's the case is typically
+[630] when we want to be able to improve a
+[631] model, we're we're trying to improve it
+[632] for something that it hasn't been able
+[634] to do yet. And so we're actually
+[635] building for the n plus 1 model
+[637] capability. And so in order to do that
+[639] we actually have to simulate. We have to
+[641] actually create new forms of
+[643] information, new forms of data that
+[645] actually have never happened in the real
+[646] world. And we want to be able to
+[648] upsample scenarios that also don't
+[649] happen often in the real world. And so
+[652] um that's exactly why because of a very
+[653] challenging problem where uh in many
+[655] ways you actually have to build the
+[656] groundwork to actually enable the the n
+[659] plus 1 model capability now. Um and
+[662] that's exactly how we see the frontier
+[664] evolving.
+[665] And in addition to that, what makes us a
+[666] really challenging problem is
+[668] uh
+[669] uh when we want to be able to solve uh
+[671] problems like agents that can run
+[673] autonomously for a very long period of
+[674] time, uh it's very difficult to be able
+[677] to understand all the different kinds of
+[679] scenarios, edge cases that might
+[681] actually happen.
+[683] Uh
+[684] especially given that for example, if
+[686] you have an agent that's trading on the
+[687] financial markets over the course of a
+[689] year and holds a portfolio of equities
+[691] and fixed income, um it could run into
+[693] all kinds of different scenarios and
+[695] edge cases uh that never happened
+[697] before. And so
+[699] um in order to make sure that an agent
+[700] doesn't immediately fail on those kinds
+[702] of on on specific steps, uh we think
+[705] that uh being able to develop eval based
+[707] simulations is an extremely important
+[709] part of of being able to make that
+[711] possible.
+[713] &gt;&gt; And and and and then the final thing I'd
+[714] add is that
+[716] uh especially anytime you're training a
+[718] model, you always want to have uh out of
+[720] distribution data that can actually
+[721] complement the in distribution data
+[723] necessary to get the best training
+[724] results. And so
+[726] uh making sure that the out of
+[727] distribution data that you have is
+[729] really high quality um is a really
+[731] important problem to be solved and and
+[733] that will always be the case even if you
+[735] have you know, the best developer traces
+[737] in the world like, you know, Anthropic
+[738] or OpenAI might.
+[740] &gt;&gt; Mhm. Um I feel like there's um there's I
+[744] I feel like Evals is becoming like one
+[746] of the most um
+[748] not like Evals but like I guess like
+[750] generally just like helping um
+[753] yeah, I guess like Evals and then like
+[754] observability related things are
+[756] becoming like mhm very popular these
+[759] days. Like there's um a few other
+[761] companies that are doing this such as
+[762] like uh BrainTrust or um
+[765] uh some other companies. Like maybe we
+[767] could talk about like when you're
+[768] thinking about the competitive
+[769] landscape, like how do you um see like
+[773] the mold long term with uh your product?
+[777] &gt;&gt; Yeah, absolutely. So uh in large part a
+[779] lot of what we see happening uh like you
+[782] said, Evals are more important than
+[783] ever. Uh and um and and and largely
+[786] that's just the process of actually
+[788] doing Evals uh which is um how do you
+[791] actually ultimately understand
+[794] uh how your product actually performs,
+[795] what do you actually need to do to
+[797] improve it in um in the best way for
+[800] your own customers. And um how do you
+[803] actually use what you learn as a very
+[805] powerful feedback loop to enable the
+[807] next generation of that product or the
+[809] next generation of of the model that you
+[812] might be developing. And and so we
+[814] actually think that in many ways a
+[815] couple of things have have changed. One
+[818] is
+[820] there's this trend from static
+[821] evaluation to dynamic evaluation. And so
+[824] a couple years ago we were very focused
+[825] on being able to use
+[829] things like static evaluation data sets
+[830] to be able to measure performance. And
+[831] now we want to be able to have things
+[834] like simulated worlds that can actually
+[835] measure how agents perform in a much
+[838] much more dynamic setting. And so that's
+[840] of course resulted in a shift around
+[843] what the surface area of an eval product
+[845] actually needs to look like in terms of
+[846] the competitive landscape.
+[848] The second thing that I think is really
+[849] interesting and really important is
+[851] evals are in my opinion not just about
+[854] performance measurement anymore, but
+[855] it's also about closing the feedback
+[856] loop. It's actually about how do you
+[858] leverage evals to help you train the
+[860] next generation of your own product or
+[862] model. And of course that's also been in
+[865] many ways the result of a lot of the
+[869] expansion of things like RL in the past
+[871] year and
+[873] the increase
+[874] of of of usage of compute and of course
+[876] inference getting cheaper and and all
+[878] kinds of things. And I expect that
+[880] that's going to be a trend that
+[881] continues to happen where people look to
+[883] evals and then understand how can I use
+[885] evals to actually improve
+[887] &gt;&gt; [snorts]
+[887] &gt;&gt; to to ultimately help me with
+[890] the next training run that I do whether
+[891] it's fine-tuning my open-source model or
+[894] even to help me generally speaking steer
+[896] toward AGI. And so there's some of the
+[898] things that we start to see happen
+[901] that I'm going to that I think we're
+[902] going to start to see happen in a very
+[903] short amount of time.
+[905] &gt;&gt; And the final thing I would say and this
+[907] is a bit more of like a a contrarian
+[909] take in terms of like the broadly
+[911] speaking the eval product landscape
+[915] evals are one of those things that are
+[917] really custom and very specific to what
+[919] you're doing and what you care about.
+[921] And especially if you are an AI
+[924] engineering team, uh you may have a very
+[926] specific use case and very specific
+[927] customers. And so, um you largely want
+[931] to have an easy way to be able to manage
+[933] your own evals, but it's largely going
+[935] to be pretty specific to your own setup
+[936] and what you how you want to visualize
+[938] it. And so, we've actually started to
+[940] see a lot of companies try to
+[942] uh write code a lot of their own
+[944] internal evaluation tools because it
+[946] helps them um
+[948] be able to move a lot faster and of
+[950] course they get to speak the same
+[951] language internally. And they don't have
+[953] to rely on an external vendor to be able
+[955] to build features around UX. And so,
+[957] from a product perspective, uh we don't
+[959] spend as much time bringing a UX product
+[962] uh to our customers, but rather we work
+[965] on the the core value prop that we have
+[968] around bringing um extremely valuable
+[971] evals and simulations to uh the kinds of
+[974] things that you're actually doing. And
+[976] so, we we kind of are really focused on
+[978] on where the meat actually is as opposed
+[980] to um trying to sell you a SaaS product
+[984] on day one that is something that you
+[985] could potentially just write code
+[987] internally.
+[988] &gt;&gt; Mm. Uh can we uh can you elaborate a
+[991] little bit on the last part which is
+[993] like um like you mentioned like a key
+[995] term is like valuable eval simulations.
+[998] So, um like maybe [clears throat] we
+[999] could talk about the simulations. So,
+[1001] like how is it uh how are you guys like
+[1003] kind of testing um
+[1006] things
+[1008] uh for
+[1009] uh I guess like before they're like
+[1011] launching to the real real like uh
+[1013] world.
+[1016] &gt;&gt; Yeah, your question is um how are how
+[1018] are we like what kinds of things do
+[1019] customers um test or how do they
+[1022] actually
+[1022] &gt;&gt; Yeah, I guess like how do they actually
+[1024] use the product and then like for
+[1025] simulation like what um if you could
+[1028] like give us like some like kind of like
+[1030] primary use cases of like maybe um just
+[1033] like customers by their side at Frontier
+[1035] Labs or um just like any other person
+[1037] who's using it.
+[1039] &gt;&gt; Yeah, definitely. So,
+[1041] so for example, when we're thinking
+[1043] about an example like
+[1047] let's say that you want to be able to
+[1049] simulate how a
+[1052] let's say you want to simulate a coding
+[1054] agent that can actually operate like
+[1058] like a full-stack engineer, but it's
+[1060] someone that is not just writing code
+[1061] inside of an IDE, but it's someone who
+[1063] actually opens up GitHub on the
+[1066] on the internet and then actually is
+[1068] able to look at all the different PRs,
+[1070] leave comments,
+[1072] merge PRs, review them,
+[1074] and
+[1075] operate across all the different kinds
+[1077] of tools and services that actually
+[1079] matter.
+[1081] Um then that means that you have to be
+[1082] able to simulate how agents can
+[1084] actually, for example, operate over lots
+[1087] of different kinds of applications, but
+[1088] also agents that can actually write code
+[1090] and write code correctly and test them
+[1092] as well. Um and then also be able to
+[1095] potentially
+[1097] uh uh
+[1098] communicate with other agents.
+[1099] Especially as a as multi-agent systems
+[1101] can communicate with other agents that
+[1103] can do similar kinds of things. And
+[1105] perhaps you can think of this as like a
+[1106] simulated software team where maybe you
+[1108] have
+[1109] one agent that is a
+[1111] full-stack engineer, another agent who's
+[1113] a product manager, another agent who's a
+[1114] designer. Um and and all of them are
+[1118] working in tandem to be able to develop
+[1120] something new. Um but you can imagine
+[1122] perhaps maybe suddenly there's some kind
+[1123] of issue that that happens. There's a
+[1125] sub some kind of outage and that
+[1128] engineer has to stop working on
+[1130] something,
+[1132] gets interrupted, and actually has to go
+[1133] solve that outage problem. Um and so
+[1135] those are the kinds of things that can
+[1137] actually happen in the real world. And
+[1139] so when we develop a lot of these kinds
+[1140] of simulations, there's a few different
+[1142] components that come along with it. So
+[1143] one is of course um the most important
+[1146] part, which is the scenarios or the
+[1148] tasks for the agent itself. And these
+[1149] are actually what the evals actually are
+[1151] in this case. So, these are the the
+[1153] different kinds of scenarios that we
+[1155] want to be able to understand how the
+[1157] agent might actually perform.
+[1159] And then the second part is the
+[1162] the the machinery that actually makes
+[1164] this entire
+[1166] simulation product possible. And so that
+[1168] could be the entire world that the the
+[1171] agent actually sees. So, let's say we
+[1173] take this example of the software team.
+[1175] This could be
+[1176] the the the set of code bases that the
+[1180] agent is operating over. It could be the
+[1182] website, GitHub in this case, along with
+[1185] all the let's say exist the existing
+[1187] state of things, whether that's all the
+[1189] PRs that people have pushed and the
+[1191] GitHub teams and the organizations that
+[1193] are involved and and all kinds of things
+[1195] just to like be able to set up the kind
+[1197] of thing that an agent or a set of
+[1198] agents might actually see.
+[1201] those are all the things that kind of go
+[1202] into a simulation product. And over
+[1204] time, you may want to produce a lot more
+[1206] evals, especially tasks, so that you can
+[1208] understand especially as models get
+[1211] better or agents actually
+[1214] continue to to to solve these problems
+[1216] more easily or is it more difficult for
+[1217] them?
+[1219] So, that's an example of a of a use case
+[1222] of a simulation product. And what's
+[1224] interesting is that when we first got
+[1227] when we first started thinking about
+[1228] coding agents, it was really just how do
+[1230] agents perform on SweepBench? Can they
+[1232] just put up PRs that can fix front-end
+[1234] features? And so it's very specific to
+[1237] just writing code. And then over time,
+[1239] of course, we've now the problem has
+[1241] become more and more complex and it's
+[1243] become more and more long horizon. We're
+[1244] now it's just it's not just can it write
+[1246] code and not just front-end, but it's
+[1249] can it write other kinds of code? Can it
+[1250] work across different applications? Can
+[1253] it actually also operate on the browser
+[1255] at the same time that it can write code?
+[1257] So, the the service area of the problem
+[1259] has only increased over time. And we
+[1261] expect that this is going to continue to
+[1263] be more and more challenging. And so
+[1265] today, for example, at at Petronas,
+[1267] we're developing a lot of different
+[1268] kinds of Evals where um agents are
+[1271] actually solving problems that take 10
+[1273] hours for a human to be able to review
+[1275] and to to actually perform. Um and so
+[1278] it's already becoming pretty long
+[1279] horizon. I expect that it's only going
+[1281] to become more and more realistic and
+[1283] more and more similar to what a real uh
+[1286] uh human developer actually does.
+[1289] &gt;&gt; Mhm. Uh
+[1290] I want to start with I guess like one of
+[1292] the uh thing is like I think you guys
+[1294] started with like uh some of your
+[1296] clients are in banking, right? So like
+[1298] uh maybe we could talk about like
+[1299] selling to different type of clients. So
+[1301] um uh since like you know you guys have
+[1303] like raised like from some of the top
+[1305] tier VCs like uh you know Lightspeed,
+[1308] Notable and like maybe we could talk
+[1309] about like um from the financial metrics
+[1312] perspective like what kind of the
+[1314] metrics do you
+[1315] uh are you kind of like focusing on? So
+[1318] some are obviously I think the obvious
+[1320] ones are like the ARR, MRR, all that
+[1322] kind of stuff. But um since like I feel
+[1324] like because of you guys are starting as
+[1327] like a research-heavy company, uh maybe
+[1330] we could talk about like the um gross
+[1332] trajectory of the company like how do
+[1334] you first like encounter the first
+[1336] customer to how do you kind of think
+[1338] about like scaling to maybe one day if
+[1341] the company IPO, it will be like right
+[1343] now Benchmark is like a $300 AR. How do
+[1346] you think about like getting um from
+[1348] like the first product to different like
+[1350] iteration or like services to achieve
+[1352] that kind of like um
+[1354] benchmark.
+[1357] &gt;&gt; Yeah, uh definitely. So I'd say that
+[1359] when we first got started, uh a lot of
+[1361] it was really just understanding
+[1363] uh understanding the market and
+[1365] understanding what kinds of inflection
+[1366] points would actually happen over time.
+[1369] And then be able to build a picture and
+[1370] a map toward how we would uh
+[1373] both build our product in terms of our
+[1375] own map and bring it to market as fast
+[1377] as we can. And um and so
+[1380] at Patronus, we take a very systematic
+[1382] approach to what we do around
+[1384] go-to-market. And so everything that we
+[1386] do internally we
+[1389] think very critically and even
+[1391] scientifically in terms of how we want
+[1394] solve the most important problems and of
+[1396] course against what kind of time frame
+[1398] do we think about. And so and so in that
+[1401] time frame we've grown very quickly in
+[1403] the last couple years since we started
+[1404] as a company and
+[1406] in 2025 we grew 15x in revenue and we're
+[1409] continuing to hit really milestones
+[1411] especially as we continue to grow
+[1412] throughout the course of this year.
+[1414] And so today we're roughly close to 60
+[1417] people in size and we're
+[1420] What's interesting about what we do is
+[1423] we are very research-centric and so
+[1428] in many ways a lot of what we do is
+[1430] actually we try to quantify the risk
+[1432] that we take with some of the research
+[1434] that we do because we run a lot of
+[1436] experiments
+[1437] and we run a lot of ablations to really
+[1440] understand what works best and what
+[1441] doesn't. And then based on that based on
+[1444] let's say the expected value or the
+[1446] expected return of certain experiments
+[1448] we run we then
+[1450] make a bet on
+[1452] how this is going to
+[1454] help us scale our go-to-market
+[1456] accordingly. And so
+[1458] one of the core values at Petroni's that
+[1460] we talk about is
+[1461] intellectual flexibility which is
+[1465] how we talk about how it's extremely
+[1466] important for us to continue to be able
+[1468] to reinvent and to rethink exactly what
+[1470] we do and to continue to be on the
+[1472] cutting edge of
+[1474] what actually can improve models and AI
+[1478] products systematically and also in the
+[1480] long run. And so a lot of what I think
+[1483] about is
+[1484] both of course a lot of the bets that we
+[1488] that we that we take in the short term
+[1489] to help us achieve certain revenue
+[1492] milestones and growth milestones
+[1494] but also about uh long-term bets that we
+[1497] make, um which uh may have a greater
+[1500] risk attached to it, but also
+[1502] potentially greater return in terms of
+[1503] what we do. And it's very much kind of
+[1505] ingrained to how we think about the ways
+[1507] in which we invest across the company.
+[1510] Uh I uh since like, you know, some of
+[1512] the um company that you guys have worked
+[1514] with are like, you know, Anduril or
+[1516] Etsy, those are like the public ones.
+[1518] So, I'm just like naming ones on the
+[1520] website. So, like uh or like Pearson.
+[1523] These are kind of like um so, I guess
+[1524] maybe when uh when you're thinking about
+[1527] the go-to-market strategy, um is there
+[1529] like a particular type of company that
+[1531] you feel like Patronus is like more
+[1534] going to make more impact than others?
+[1536] And um thinking about like when you were
+[1539] um doing like the pricing, um so
+[1542] obviously there was like, I think the
+[1544] first like $5 free, and then I think
+[1547] it's like $1 per like 1,000 token or
+[1549] something like that. So, like not 1,000
+[1551] token, but like 1,000 um
+[1553] test. So, maybe we could talk about
+[1555] like, you know, from the go-to-market
+[1558] perspective, how do you um think about
+[1560] like which particular sector to kind of
+[1562] like go after uh first to like, you
+[1565] know, how do you kind of like price your
+[1567] product uh across different industries?
+[1571] &gt;&gt; Yeah, so uh
+[1573] so, generally speaking, um evals are
+[1575] important to every kind of AI
+[1577] engineering team and um every research
+[1579] team that is developing models. And uh
+[1582] and so, um in terms of like
+[1584] conceptually, it's important to
+[1585] everyone. But, what we've seen um at
+[1587] Patronus in the past several months is
+[1589] that there's been a ton of demand from
+[1591] companies who are
+[1593] um really interested in being able to
+[1595] apply this to um things like
+[1597] post-training, where they're seeing
+[1598] extremely good results. And so, if you
+[1600] see, for example, the the the shift from
+[1603] GPT-5.4 to GPT-5.5, there were um a lot
+[1607] of really surprising results in even
+[1608] just that one particular uh release uh
+[1611] or release report. And of course, that's
+[1613] the case for for many that we've seen,
+[1615] but in particular if you look at some of
+[1616] the agent benchmark results, um, within
+[1618] that and of course some of the recent
+[1619] club releases too, um, a lot of models
+[1621] are extreme are are moving extremely
+[1623] fast on climbing some of these agent
+[1625] benchmarks. And it's happened because
+[1627] of, um, how, uh,
+[1630] uh, how extremely well some of these
+[1631] evals are designed and developed and
+[1633] scaled to use in, um, in different kinds
+[1637] of post training. And so in that time
+[1639] frame in the last, uh, several months,
+[1642] there's been a lot of demand from a lot
+[1644] of the different kinds of research teams
+[1645] that are training for tier models or
+[1647] generally speaking, uh, training, uh,
+[1650] uh, or fine-tuning new open source
+[1651] models and they've seen, um, extremely
+[1653] good results, but I still I'd say that
+[1655] we're still at the very beginning of the
+[1657] exponential curve. There's still a very,
+[1658] very long right tail of domains and
+[1661] model capabilities where this is going
+[1662] to be extremely important. And we've
+[1664] pretty much barely scratched the surface
+[1666] on what's actually possible in terms of
+[1669] how much room to run there is with
+[1671] scaling post training. And that's just
+[1672] post training alone. And so I expect
+[1675] that that's going to continue to be a
+[1675] very important part of our go-to-market,
+[1678] especially because, uh, we're seeing
+[1680] that now in the past year a lot of
+[1681] financial model companies are, uh,
+[1683] spending a ton more time on the, uh, on
+[1685] the application layer side. And of
+[1687] course they're also now directly working
+[1688] with, um, all kinds of different, uh,
+[1691] service companies that are, uh, that are
+[1693] directly,
+[1694] um, engaging with enterprises. And so we
+[1698] expect that it's going to continue to be
+[1699] the case and that financial model
+[1700] companies will, uh, indeed develop, um,
+[1704] and move very quickly to, um, support
+[1706] those that are, uh, actually servicing
+[1708] applications.
+[1709] &gt;&gt; Um, uh, I want to address some of the
+[1712] audience questions. Uh,
+[1714] hi Daniel. Hi, uh, Anurag is asking how
+[1717] well Post-training AI prevent recursive
+[1720] data,
+[1721] uh, contam- contamination when, uh,
+[1724] autonomous agents use their own run time
+[1727] execution outputs to continuously
+[1729] retrain and simulate uh
+[1733] environments.
+[1736] &gt;&gt; Yeah. So, uh so I'd say that the uh
+[1741] the the recursive data contamination
+[1743] problem is definitely a very important
+[1744] problem that we solve, especially if we
+[1746] want to be able to solve for things like
+[1748] recursive self-improvement. Um and I
+[1750] actually think that recursive
+[1751] self-improvement is uh
+[1753] still a topic that people have not
+[1755] really talked about much yet, but I
+[1757] actually think it's going to uh get a
+[1758] ton of attention this year.
+[1760] Um and of course, um
+[1762] uh Carl Pothier just joined Anthropic
+[1764] earlier this week. On the pre-training
+[1766] side, um
+[1769] it seems like he's going to be focusing
+[1770] on recursive self-improvement. And so,
+[1772] um I expect that being able to solve for
+[1774] some of the data contamination problems
+[1776] are always going to be um extremely
+[1778] difficult. Uh but at the same time, I
+[1780] actually think that the problem is going
+[1782] to become easier and easier over time,
+[1785] especially because we can provide more
+[1787] effective oversight with a lot more
+[1789] agents in the loop as well as humans in
+[1791] the loop. And so, the more that we can
+[1793] actually uh systematize uh
+[1796] the approach that we take with uh
+[1798] uh the ways in which we approach
+[1800] automated uh
+[1802] QA and infrastructure with agents and
+[1804] humans in the loop, uh it'll be a much
+[1806] faster way for us to be able to enable
+[1808] things like or to to prevent things like
+[1811] recursive data contamination from
+[1812] actually happening.
+[1813] I actually personally think that um
+[1817] the broadly speaking the synthetic data
+[1819] space will be a thousand X larger than
+[1823] the human data space because um humans
+[1826] are bottlenecked by attention and
+[1829] bottlenecked by bandwidth, but um
+[1832] agents and synthetic data bottlenecked
+[1834] by uh inference. Uh and so, um and so,
+[1839] uh even though there might be some
+[1841] challenges like contamination with uh
+[1844] with with approaches like these. I
+[1846] actually think that this is going to be
+[1848] um exactly the direction that um the
+[1850] world is going to head in the long run.
+[1852] Um and uh and we're going to figure out
+[1855] ways to to solve these problems over
+[1857] &gt;&gt; Mhm. Um what uh so since you mentioned
+[1860] about synthetic data, I want to ask
+[1862] about like so this weekend actually I
+[1865] went to like basically I went to a party
+[1867] last weekend and then I met this person
+[1869] who is building the synthetic um
+[1872] like not synthetic but like I guess like
+[1874] the agent city. So like essentially or
+[1877] not agent city but I feel like it's more
+[1879] of I feel like it's
+[1882] come down to what it is. It's kind of
+[1883] like synthetic data to help you do
+[1886] research. So for example, if you're
+[1888] Pepsi is like should you launch like a
+[1889] strawberry Coke versus like, you know, a
+[1892] banana Coke. Like So and then they will
+[1894] like basically apply to like the agent
+[1896] society to uh they're doing a lot of
+[1898] like agent garners as well. Also like
+[1900] for example, uh the founder was saying
+[1902] that like agents are actually there's
+[1904] politics between agents. And then they
+[1907] are going to lie to each other, yada
+[1908] yada. So that that's like I'm like why
+[1911] are agents lying to each other? But um
+[1913] so basically he was saying that like
+[1914] that's what's going to happen. I guess
+[1916] like coming back to the synthetic data
+[1918] part. So um
+[1920] essentially the the real life I asked
+[1922] him like what's the real life use case
+[1924] and for like these, you know, agent
+[1926] city. And like he was saying it's like
+[1928] So for example, the big company are
+[1930] doing all these testing, right? Like
+[1932] doing, you know, should we do this
+[1933] version or that version um of like, you
+[1937] know, a customer product or like
+[1938] anything anything else. So like um how
+[1941] basically leveraging synthetic data you
+[1943] can get like the all output a lot
+[1945] cheaper than like, you know, doing like
+[1948] actual human research. But I feel like
+[1949] isn't like what is the um what would you
+[1952] say like would be the best way to
+[1954] actually leverage is data because I
+[1956] personally feel like
+[1958] it's kind of
+[1960] like it's very difficult to like
+[1963] evaluate
+[1965] like what is a piece of data that's like
+[1966] useful or not because there's so much
+[1967] context towards it and like maybe if you
+[1970] could like share a little bit more about
+[1972] like this synthetic data part as well.
+[1975] &gt;&gt; Yeah, so I [clears throat] expect that
+[1977] over time um synthetic data synthetic
+[1979] data will be the primary form of data
+[1981] that we actually create, but of course
+[1983] synthetic data will then be validated by
+[1985] experts and generally with a lot of
+[1988] human QA involved. Uh and so I think
+[1991] that that's a much
+[1992] better and a and a and a much more
+[1994] effective approach over time because
+[1997] uh creating synthetic
+[1999] creating data by hand of course is very
+[2001] expensive and in many ways a very
+[2003] difficult to scale. And so it's it's
+[2005] much faster to be able to use agents to
+[2007] be able to
+[2009] uh create all the data first and then to
+[2011] run a lot of the quality checks with
+[2012] other agents and then uh for the very
+[2014] last mile you bring in humans who are
+[2017] experts to actually review and validate
+[2019] the data. And so um that's how I expect
+[2022] that the that the right way to do this
+[2024] should be uh in the long run.
+[2026] Um
+[2027] another another hot take that I have is
+[2029] I don't uh I don't really agree with the
+[2031] thesis that you need a billion people in
+[2034] the human economy to be able to um help
+[2037] us to improve AI um or to unlock the
+[2039] next frontier. Um I think there's been
+[2042] this, you know, constant kind of
+[2043] conversation around you know, we need to
+[2045] build the human economy uh to be able to
+[2048] um you know, develop the right kind of
+[2049] data that can then improve um
+[2052] uh AI or help us to get to the next
+[2054] frontier. Um but I actually
+[2056] fundamentally disagree with that thesis
+[2057] because
+[2059] AI already outperforms humans today. And
+[2062] so if you take the average human from
+[2064] the normal distribution, that person
+[2066] already underperforms AI. And so it
+[2068] doesn't make any intuitive sense to me
+[2070] why we would have um someone from the
+[2073] average
+[2075] ultimately be able to
+[2077] help
+[2078] push push the
+[2081] push the bar forward especially when
+[2083] they already outperform AI. That's like
+[2086] you know the analogy is that's like you
+[2087] have a thousand people compete against a
+[2090] grandmaster in chess and then you expect
+[2091] a thousand people to beat them just
+[2092] because you have a lot of people. And so
+[2095] and so
+[2096] generally speaking that's those are some
+[2098] of the reasons why I think synthetic
+[2100] data itself will be a much more
+[2102] practical and longer term solution but
+[2105] of course humans are always the gold
+[2106] standard so there will be humans in the
+[2108] loop but most of the time and effort and
+[2112] investment will likely go into synthetic
+[2113] data.
+[2115] What what do you think about like
+[2119] the best
+[2120] I guess like when you're create how is
+[2122] synthetic data created? Isn't that like
+[2125] just like based off like human data or
+[2128] based off like human behavior that's
+[2129] like not really tracked by like a survey
+[2131] or something?
+[2133] &gt;&gt; Yeah so the synthetic data
+[2136] largely speaking could be could be
+[2138] different kinds of things. It could be
+[2140] that you are scaling existing human data
+[2143] or generating new data or new variations
+[2146] of data across existing human data or it
+[2148] could be net new creations of some sort
+[2152] that come directly from agents
+[2155] and that could be just you know what it
+[2157] might something that it might have
+[2158] picked up in pre-training in some way.
+[2161] And
+[2164] and then in addition to that
+[2165] any kind of like combination
+[2168] or some kind of
+[2170] combinatorial approach to how we
+[2171] actually create data
+[2173] is also ultimately what synthetic data
+[2175] can actually look like.
+[2177] In the case of like things like
+[2179] simulations for example
+[2181] a lot of this
+[2182] involves
+[2184] generally a mix of
+[2187] of everything. And so, of course,
+[2189] making sure that you actually develop
+[2191] simulations that are ecologically valid,
+[2193] aka representative of the real world,
+[2196] is extremely important because you want
+[2198] to be able to make sure that agents can
+[2200] actually solve problems, ultimately
+[2201] solve problems in the real world. And
+[2203] so, we do have to have insights and we
+[2206] do have to to do discovery on what
+[2207] actually happens in the real world. But
+[2209] then from there, we can actually produce
+[2211] scenarios
+[2212] and ideally understand and measure
+[2215] what the sim-to-real gap from there
+[2216] looks like.
+[2218] &gt;&gt; Uh I want to maybe we can dive into the
+[2221] next question from the audience. David
+[2223] is asking like you spoke about
+[2227] autonomous agents at lines. How does
+[2229] Pistronics intend to evaluate the
+[2231] multi-run scenario in terms of decision
+[2234] robustness and
+[2236] autonomous agent must execute key
+[2239] decision that can significantly impact
+[2240] clients.
+[2242] Additionally, how would we know why they
+[2245] fail and how they behave under external
+[2249] pressure?
+[2252] &gt;&gt; Yeah, so in the case of specifically
+[2255] multi-turn scenarios,
+[2257] there's actually
+[2259] a lot of really good literature on this
+[2261] over time and actually
+[2263] my co-founder Rebecca had worked on some
+[2264] of the first papers around
+[2268] generally speaking
+[2270] dialogue and how conversational
+[2272] assistants actually perform in terms of
+[2274] evaluation.
+[2277] and so in more recent times, especially
+[2278] in the context of agents, there are
+[2280] benchmarks like TauBench and TauTwoBench
+[2282] which came from Sierra
+[2284] over the last couple years
+[2286] which are are good structured or good
+[2289] frameworks for how to be able to
+[2291] actually simulate a conversational
+[2293] assistant.
+[2295] And um
+[2296] and so in these kinds of settings,
+[2298] what we might want to do is we you want
+[2300] to be able to mock a user and mock an LM
+[2304] agent and you have a conversation
+[2307] between them or some kind of transcript
+[2308] between them. And typically, let's say,
+[2311] you know, the most kind of classic
+[2312] example of multi-turn dialogue is is
+[2314] customer service. And so,
+[2316] um perhaps you're talking about um
+[2320] uh someone uh who wants to uh change
+[2324] their flight and they're talking to
+[2326] American Airlines customer service and
+[2328] they want to get some kind of task done
+[2330] because maybe they can't make their
+[2331] current flight. And so, um
+[2334] how you might then evaluate this kind of
+[2336] dialogue is you want to see um at the
+[2338] very end of this conversation, did the
+[2341] uh was the action successful or was the
+[2343] outcome successful? So, did the flight
+[2345] actually get changed? Is the user
+[2347] actually happy that um and satisfied
+[2349] that the outcome actually happened? And
+[2351] so, if we were to model this in a
+[2352] reinforcement learning setting, if that
+[2354] happens at the very end, then that's a
+[2356] positive reward. And if it doesn't, then
+[2358] it's a negative reward. And how we might
+[2359] actually check for this is we might
+[2361] actually run some kind of um we might
+[2363] have a verifier on on a database. And
+[2366] so, if the database
+[2368] basically um uh if we run database check
+[2371] and it tells you that yes, the flight
+[2373] has been changed, then then we know that
+[2375] that is uh that that is what has
+[2377] actually happened. And so, that's like a
+[2379] very specific example on on how you'd
+[2382] actually evaluate multi-turn settings.
+[2384] And then you can actually develop these
+[2385] kinds of simulations at scale with
+[2387] hundreds, thousands of different
+[2388] scenarios and you can actually then um
+[2391] do oral training, post-training on on
+[2394] models to then improve them in customer
+[2396] service scenarios like these. And of
+[2397] course, um the more uh and and the the
+[2401] more diverse and uh the more high
+[2402] quality these scenarios actually are,
+[2404] the more realistic these scenarios
+[2405] actually are,
+[2406] uh the more likely that the models you
+[2407] train on them will ultimately perform
+[2410] better as a customer service agent in
+[2412] the domain that you care about. And so,
+[2415] so I'd say that those are the best kinds
+[2416] of ways for you to actually have control
+[2418] over performance is to ultimately run
+[2422] eval and then
+[2423] ultimately train train on it from there.
+[2426] But having a we think that having a very
+[2428] scientific approach
+[2430] and a very rigorous approach on these
+[2431] problems is the ultimately the best way
+[2433] to
+[2434] ensure that you don't have all kinds of
+[2437] different compounding failures
+[2438] especially as you think about how do you
+[2440] make agents run autonomously over long
+[2441] periods of time.
+[2443] &gt;&gt; Do you want to get if I saw customer
+[2445] demo or
+[2448] &gt;&gt; I don't have one that is not that is
+[2451] publicly available right now
+[2453] unfortunately.
+[2454] &gt;&gt; I was like wait because I feel like
+[2456] there this is like so interesting to see
+[2459] how like
+[2460] basically
+[2462] different type of companies like
+[2464] applying to
+[2468] I guess like I guess like applying
+[2469] Pastrana's into their different kind of
+[2472] like scenarios and I guess how do you
+[2474] think about um
+[2477] from like the hiring perspective like
+[2479] since you guys have like a 60 people
+[2481] team
+[2482] how [clears throat] many of the people
+[2484] are like actually doing the research or
+[2486] like the foundational groundwork and
+[2487] then how many people are actually
+[2489] productizing
+[2491] the company to like you know to produce
+[2494] like the product that like people would
+[2496] want to buy. Do you have like FTEs or
+[2499] how do you think about the
+[2501] just like actually
+[2502] building successful team?
+[2506] &gt;&gt; Yeah.
+[2507] So it's roughly half and half today so
+[2509] roughly 20 to 25 people on the research
+[2512] team and 20 to 25 people on the
+[2515] engineering team and then the remainder
+[2517] are folks across
+[2519] operations recruiting product design a
+[2522] lot of other categories as well. And
+[2527] generally speaking we're an applied
+[2528] research lab and so everything that we
+[2530] do ultimately we intend to bring into
+[2532] the hands of customers. And so, we we
+[2535] typically focus on on the research team
+[2537] we typically focus on developing novel
+[2538] approaches, models,
+[2540] um and other kinds of uh methods that
+[2543] ultimately help us build
+[2545] uh much higher quality products that we
+[2547] bring to customers. And so, any kind of
+[2549] fundamental research work that we do
+[2551] ultimately uh in one way or another
+[2553] lands in the hands of customers. Um so,
+[2556] uh when we think about the the kind of
+[2558] people that we hire, we think about
+[2559] folks who are uh
+[2562] uh who are
+[2563] are in are in love with the problem. Uh
+[2565] that's really one of the first things we
+[2567] look at. And one of the only things we
+[2569] look at is do they really really really
+[2571] love the problem that they're focused
+[2573] on? Uh which means, you know, are they
+[2576] are they thinking about the problem
+[2578] while they eat? Are they thinking about
+[2579] the problem while they, you know, pray
+[2580] before they go to sleep and the moment
+[2581] they wake up? And we've seen that the
+[2583] best researchers um and the ones that
+[2585] are really really excited about
+[2587] everything that we do around e-health
+[2588] simulations are the ones who are who are
+[2590] like that. And so, so fundamentally as a
+[2593] company we've never we've never had
+[2596] things like 996 because we just prefer
+[2597] to hire people who are in absolute love
+[2600] with the problem they solve. And, you
+[2602] know, they naturally bring extreme
+[2604] amount of energy and an extreme amount
+[2606] of ambition
+[2607] uh to to solving it. And so, um I
+[2610] personally think that um hiring the
+[2612] right people solves 90% of the problems.
+[2615] And you can pretty much tell in the
+[2617] first 2 weeks after someone joins
+[2619] whether they were the right hire or not.
+[2620] And so, uh we we think about hiring and
+[2623] recruiting
+[2624] um really really rigorously.
+[2626] Um and and and and that that's one of
+[2629] the things that we think about in terms
+[2630] of how we actually build products as
+[2631] well.
+[2632] &gt;&gt; Um uh can we talk about the um research
+[2635] people and the product people? Like how
+[2637] do they kind of like work together since
+[2639] like I feel like researchers are like
+[2641] whenever I think about researchers, I
+[2642] feel like they're just literally sitting
+[2644] there writing a paper. But um what is uh
+[2647] so like when you are actually like
+[2648] applying the researchers into it since
+[2650] like you mentioned like you guys are
+[2652] applied research labs. Um so um
+[2655] like do do the researchers like kind of
+[2657] creating solution in different domains?
+[2660] So for example, banking or like, you
+[2661] know, I guess like it's the it's kind of
+[2663] like consumer.
+[2664] Um they are kind of like um in different
+[2667] parts or like in subsector domains to
+[2669] like kind of like develop the solution
+[2671] for that or like what uh how do you kind
+[2673] of like leverage researchers at uh at
+[2675] work at a startup?
+[2678] &gt;&gt; Yeah. Uh so largely speaking, there are
+[2680] different domains that folks are focused
+[2682] on. Um and that could be across um
+[2685] certain areas like knowledge work
+[2687] related areas like you mentioned, you
+[2688] know, finance uh or other areas like
+[2691] computer use or coding and and things
+[2693] like that. Um we've also worked on
+[2695] research and published research uh
+[2697] around things like multi-turn dialogue.
+[2699] Um and and so and so there are different
+[2702] categories that ultimately folks focus
+[2704] on. Uh but largely speaking, uh we are
+[2707] uh the best post-training data and evals
+[2709] team in the world. And so for example,
+[2712] um the head of post-training from
+[2713] Inflection AI is joining us next week.
+[2715] We have post-training leads from Meta
+[2717] Superintelligence that are working on
+[2719] solving these kinds of problems,
+[2720] especially around scaling simulations
+[2722] and evals through digital world
+[2723] modeling, for example, which we have um
+[2725] a lot coming out shortly in the future
+[2728] among other things.
+[2730] Uh we have uh folks who came from Amazon
+[2732] AGI that were working on on
+[2734] post-training uh foundation models like
+[2736] Nova and others who have just been
+[2738] generally speaking uh living and
+[2740] breathing evals. So some folks who have
+[2742] developed some of the most well-known
+[2743] evals and benchmarks over the last
+[2745] couple years are involved with us um
+[2748] either directly full-time or uh work
+[2750] with us in different kinds of research
+[2752] fellowship ways. Um and so um so there's
+[2755] a lot of things um that we we look for
+[2757] um in terms of some of the people that
+[2760] um ultimately end up joining the team.
+[2762] Um and in terms of the collaboration,
+[2764] it's a really tight collaboration
+[2766] between research and engineering.
+[2768] Typically, we
+[2770] we we look for people who are not solely
+[2773] interested in just working on
+[2774] fundamental research where they just
+[2776] focus on writing papers, but rather
+[2778] they're really interested in solving
+[2781] problems that we focus on and they would
+[2783] love to have the byproduct of publishing
+[2785] papers
+[2788] over time and making a real contribution
+[2790] to the community. So,
+[2792] so I always say that we never we never
+[2795] publish research for the sake of
+[2796] publishing research, but rather
+[2799] we do it
+[2800] as we find and discover
+[2803] and work on new problems
+[2805] and we we do that in order to give back
+[2808] to the community.
+[2811] Can we I guess like I I wonder since you
+[2814] mentioned about like let's say you guys
+[2815] work with people like Inflection AI and
+[2817] all these top like AI labs. Like who is
+[2820] the right ICP for the for initial
+[2823] conversation or like the people who are
+[2825] actually being a sponsor from these
+[2827] companies? Is that like the
+[2830] CTO, CIO, or like head of AI, or like,
+[2833] you know,
+[2834] how does the kind of like sales journey
+[2836] kind of goes into since like
+[2839] are you guys like going to I think like
+[2842] because of like when I was like
+[2843] listening to, you know, the fake podcast
+[2845] I made for myself for this
+[2846] is like, you know, at the beginning you
+[2848] guys were like offering like the $5
+[2850] coupon for people to like, you know,
+[2852] premium in, but like I think now it's
+[2855] probably like when you were talking to a
+[2856] bigger organization like Inflection AI
+[2859] or Meta, like it's
+[2860] probably the sales cycle is like a very
+[2862] different.
+[2863] How do you think about like the
+[2866] go-to-market status quo to
+[2868] demonstrate the companies' like
+[2871] usefulness at the very beginning or like
+[2874] just like reflecting on
+[2876] whether it's like how much revenue that
+[2878] you have saved for people or how much
+[2879] revenue you help to generate. How do you
+[2881] kind of like create these uh
+[2884] like case studies for like people to
+[2887] actually make making sure that they feel
+[2888] like this is making sense.
+[2891] &gt;&gt; Yeah, definitely. So, I'd say So, for
+[2894] like for inflection and and meta and
+[2895] others, these were actually folks who
+[2896] joined our team. So, post-training leads
+[2898] from from these companies
+[2900] who joined our research team. But, we do
+[2902] work with
+[2904] foundation model companies as well from
+[2906] a customer perspective. And typically
+[2908] the go-to-market
+[2910] is really around
+[2912] really just
+[2913] putting really really good work out
+[2914] there.
+[2916] I think that a lot of the foundation
+[2917] model companies we work with, they
+[2918] already knew who we were for for several
+[2920] years. And of course, we came from there
+[2921] as well.
+[2922] And they
+[2924] all of them have used benchmarks like
+[2926] finance bench and some of the most
+[2927] internal popular benchmarks for
+[2929] enterprise use cases like that.
+[2931] And and so, we've got a lot of inbound
+[2934] generally for things that are
+[2937] going to move model performance forward.
+[2939] And they've seen a lot of the research
+[2941] work that we've published and the
+[2943] workshops we've organized at different
+[2944] conferences. And so, the go-to-market is
+[2947] pretty different especially with
+[2948] researchers and research teams
+[2951] in that setting. And then with
+[2952] enterprise, it's typically been
+[2954] tops-down where we work with
+[2957] CTOs, engineering leaders, heads of AI,
+[2960] and others that are actually
+[2961] productionizing agents across the
+[2963] company.
+[2964] And and so, typically you've seen that
+[2966] these are
+[2968] one of two things. They're either
+[2970] completely new teams that did not exist
+[2971] in the company you know, 2 years ago.
+[2973] And it's a new initiative that
+[2976] that a lot of companies are are rolling
+[2977] forward. Or it's some kind of existing
+[2981] more like traditional ML team. And that
+[2983] team is now working on new projects
+[2985] around
+[2986] productionizing agents
+[2988] using LLMs internally. And so, those are
+[2990] the two different types of profiles of
+[2992] teams that we've seen on the enterprise
+[2993] side.
+[2994] &gt;&gt; Um
+[2995] what since like you know all these like
+[2997] top AI researchers are joining your
+[2999] company, how do you think about like the
+[3001] um attracting the right talent? So
+[3003] obviously there is like a lot of people
+[3005] just doing a lot of like research paper
+[3007] reading and that was I went to like MCP
+[3009] nights. So like like what does um what
+[3012] does the recruiting kind of process look
+[3014] like for you to like get the top
+[3015] researchers to join the team?
+[3018] &gt;&gt; Yeah, I'd say that in the same way that
+[3020] it's easier to um
+[3023] to to close the second customer after
+[3025] the first one. Um in the same way with
+[3027] hiring I think that once you have the
+[3029] first amazing person who's joined you
+[3031] then it becomes easier from there. And
+[3034] so in more recent times it's just become
+[3037] a scenario where you know folks will
+[3039] look at others in the team who've also
+[3040] joined pretty recently kind of similar
+[3042] to them or maybe they see them in a
+[3043] similar way and they think like hey this
+[3045] is like this is potentially a really
+[3047] great environment for me to join.
+[3049] &gt;&gt; Um and um
+[3051] what I typically focus on especially
+[3052] once we've once we've been talking about
+[3055] offers um with with candidates is
+[3058] um if we've made an offer to you then we
+[3060] think you're incredibly special and
+[3062] that's exactly why you should join us
+[3064] because you're the perhaps one of the
+[3065] very very few people in the entire world
+[3068] who are unique enough to be able to
+[3070] solve the problems that we actually
+[3071] solve. And so I think that
+[3074] I think that creating a really amazing
+[3076] environment and amazing culture is
+[3077] something that I think is extremely
+[3079] underrated.
+[3080] &gt;&gt; Uh and um that's something that I think
+[3082] a lot about and and so I think giving
+[3085] people the ability to have the right
+[3087] kind of scope, ownership,
+[3088] responsibility, but also just um feeling
+[3091] really special um is is is one way in
+[3094] which I think a lot about how we attract
+[3095] talent.
+[3097] Uh so how do you get the first person
+[3099] though since you mentioned first person
+[3101] is very important? I guess maybe like we
+[3103] could also talk about like how you meet
+[3104] your co-founder or slash uh the CTO as
+[3108] &gt;&gt; Yeah. Uh well, I'd say um Rebecca's also
+[3111] incredibly unique, which is why we're
+[3113] also working together. Uh and uh Rebecca
+[3116] and I actually go back to we both were
+[3119] uh at Meta and we worked on different
+[3121] kinds of applied and research problems
+[3122] across AI.
+[3124] &gt;&gt; Uh and
+[3125] &gt;&gt; Oh, another question for you since you
+[3126] mentioned about Meta since like I feel
+[3128] like and there's so many cool
+[3129] researchers working at Meta. Like how do
+[3132] you find out like who wants to join a
+[3134] startup? So even like with your
+[3135] co-founder I mean if you guys work
+[3137] together obviously you kind of like have
+[3138] a a lot more like closer relationship,
+[3140] but um I feel like at the bigger
+[3142] researcher labs uh research labs like
+[3145] it's kind of hard to tell what's going
+[3147] on as like you know when you're thinking
+[3148] about like Anthropic or Meta everybody's
+[3150] like the member of technical staff. Like
+[3152] how do you know what is happening like
+[3155] with like who wants to leave or anything
+[3157] unless you work there. Even you work
+[3158] there it's like hard to tell who is a
+[3160] good founder versus like who is just
+[3162] like amazing kind of like person that's
+[3165] like doing research. And uh sorry, I
+[3169] have another question before I like I
+[3171] let you talk is like another question
+[3173] should I say I was thinking like you
+[3175] know for example like and like Andrej
+[3177] Karpathy join
+[3179] Anthropic and that's like now the first
+[3182] person who's like a CEO. Like I saw the
+[3183] other day I saw um
+[3186] uh my friend like Henry from like a
+[3188] super.com is like and a member of
+[3190] technical staff at Anthropic now and
+[3192] like Anthropic obviously is like taking
+[3193] all of these like kind of like superstar
+[3196] CEOs everybody becoming a I don't know
+[3198] if they're IC at Anthropic, but how is
+[3201] this happening? Like um I understand the
+[3203] fact of like you probably want to work
+[3205] with like the tier one just like smart
+[3207] people all together, but like um to make
+[3210] someone abandon their own baby slash the
+[3213] company that they have built for many
+[3215] many years um to join like a bigger
+[3218] company it's kind of insane. So please
+[3221] like enlighten me on your take on these
+[3223] kind of like social phenomenon.
+[3225] &gt;&gt; Yeah, absolutely. Well, I actually think
+[3227] that I know that a lot of people have
+[3229] been talking about this recently um with
+[3232] um former CTOs joining Anthropic, you
+[3234] know, to join as member of technical
+[3235] staff.
+[3236] Um I actually don't think it's that uh I
+[3239] actually don't think it's that
+[3240] surprising uh because
+[3244] you know, in the last like 10-15 years,
+[3246] Meta and Google actually did the exact
+[3247] same thing. Where, for example, if you
+[3249] were to join um internally, uh there
+[3253] were no there were no titles. As in, you
+[3255] know, there wouldn't be a difference
+[3256] between
+[3258] um your profile wouldn't say, you know,
+[3260] senior or staff or things like that. It
+[3261] would just say product manager, right?
+[3263] Or software engineer.
+[3265] Um and so, um
+[3267] people used to talk about like, "Oh, I
+[3268] came from X company and this was my
+[3270] title. And now I'm coming here and it
+[3272] looks like, you know, my title there's
+[3274] no title." But in reality, you know,
+[3276] within the company there are there are
+[3277] still different levels. So, it's not the
+[3279] case that everyone every member of
+[3281] technical staff is the exact same level.
+[3283] There are different levels.
+[3284] Uh but they want to be able to
+[3287] make it feel that, you know,
+[3289] uh they want to they want to create this
+[3291] culture that it
+[3292] that isn't like very centered around
+[3294] hierarchy, which I think is great in
+[3296] order to foster collaboration, actually.
+[3299] with that said, there are different
+[3300] levels. So, even though, you know,
+[3301] there's a CTO that joined member of
+[3303] technical staff, my my bet would be that
+[3305] that person is a very highly leveled
+[3308] member of technical staff. Um
+[3310] and it's something that I've seen other
+[3311] companies like Meta and Google have have
+[3313] had the same practice for a long time.
+[3315] &gt;&gt; Mm. Uh so, what like what drove them to
+[3318] like go in there?
+[3320] Is that because of like training models
+[3322] like so expensive and then everyone's
+[3323] like, "Oh, let's just go into somewhere
+[3325] big and then that's like covered by the
+[3328] universe or
+[3330] &gt;&gt; Yeah, well, I'd say that um I think I
+[3332] think a company like Anthropic is um
+[3334] such a unique company in our lifetime
+[3336] because um
+[3337] ultimately, you know, they're one of
+[3339] very few companies that are actually
+[3340] defining what AI looks like for
+[3342] humanity.
+[3344] And I think they've done an amazing job
+[3346] being able to attract people to say like
+[3347] hey, we're one of
+[3349] you would be in the same room as the
+[3350] people that are actually defining this
+[3352] for not just everyone in the world
+[3354] today, but for many generations to come.
+[3357] I'd say that that is that is a really
+[3358] great environment to be in many ways and
+[3361] and it's a lot of what we think about as
+[3363] well. And you know, the kinds of
+[3364] customers that we work with, too.
+[3366] &gt;&gt; Um can we talk about Oh yeah, sorry. I
+[3368] I'll let you finish the story with your
+[3370] co-founder.
+[3372] &gt;&gt; Yeah, well, so my co-founder and I
+[3374] actually first met
+[3376] uh 10 years ago and it was actually when
+[3379] we were in undergrad. And after that we
+[3381] actually ended up
+[3382] joining Meta as well across different
+[3384] areas of applied um ML and research
+[3387] across AI. And we worked on a lot of the
+[3390] earliest problems around things like
+[3392] experimentation, causal inference,
+[3395] fairness in NLP. And a lot of what we
+[3397] thought about was how do we apply this
+[3399] settings you know, far outside of the
+[3402] bounds of models being trained within
+[3404] Meta. And that's what ultimately got us
+[3406] started.
+[3407] And a lot of what we think about is
+[3411] the the kind of rigor and and scientific
+[3413] approaches that we take. Um
+[3417] in order to solve the problems that we
+[3418] that we solve. And it's been an amazing
+[3420] journey ever since we got started.
+[3422] &gt;&gt; Mhm. Uh I guess like since like when you
+[3425] guys are building the team, like okay,
+[3428] this will be my last question before the
+[3429] one minute fire round. Which is like I
+[3431] think one of the things is like
+[3433] you know, all these like founders are
+[3435] doing the research or night or like
+[3436] research poker night. Like all these
+[3438] kind of stuff like or like research
+[3440] paper reading. Like are those actually
+[3443] the effective way to get the researchers
+[3446] who you want to hire to build a product?
+[3447] Because my assumption is like if you go
+[3449] to like NeurIPS or something and then
+[3452] these people are like writing research.
+[3453] And if I were Google and then hiring
+[3455] them and then, you know, I have
+[3457] unlimited resources, I I think I can I
+[3460] would be able to handle it. But like, if
+[3461] I were like working at a startup, like
+[3463] how do you even like afford to have like
+[3467] to just like have a research team? And
+[3468] then, what would be the ROI or like what
+[3470] would be like the kind of like um
+[3473] production level of like outcome that
+[3476] you should be chasing when you are like
+[3478] kind of like Or like basically, what is
+[3480] the researcher's like KPI at um a
+[3483] startup?
+[3485] &gt;&gt; Yeah, that's a great question. Um I
+[3487] actually think that building a research
+[3488] lab is uh extremely
+[3491] uh I think it'll be an extremely
+[3492] important skill set in the long run
+[3493] because when so much of software is
+[3495] becoming automated, a lot of the a lot
+[3498] of the alpha that people can develop in
+[3500] the long run will be what kinds of
+[3502] experiments can you run? And if it's
+[3503] successful, what is the ROI? So, I think
+[3505] that's a great question. Um a lot of
+[3507] what we think about is pretty specific
+[3508] to some of the problems that we solve.
+[3510] And so, sometimes there are
+[3511] um metrics internally around how we
+[3513] approach the quality of what we develop.
+[3516] And um for example, you know, if we
+[3518] let's say train a new model like a a new
+[3520] diffusion world model, uh
+[3523] how do you know, does it outperform
+[3525] another uh let's say LM? And you know,
+[3529] to what extent? And what does it
+[3530] actually look like? And what are the
+[3532] things that we learn from that? Um in
+[3534] addition to that, we also look at like
+[3535] the pace of like how how we how we
+[3538] publish research and also the the pace
+[3540] of how we solve different kinds of
+[3541] problems.
+[3542] Um but oftentimes with research, it's
+[3544] also zero to one where, you know, for a
+[3546] long time you may have no results and
+[3548] suddenly you have something incredible.
+[3549] And so, in that in that way, it's
+[3551] sometimes very difficult to actually
+[3553] measure the ROI itself.
+[3557] and so yeah, so I'd say for the first
+[3559] question in terms of attracting
+[3560] research, um I've seen that uh you know,
+[3563] having research reading nights can
+[3565] definitely be a good way to build a
+[3567] community, but I think a really good way
+[3568] to build credibility is actually to
+[3571] actually work on really important
+[3573] research problems and then to actually
+[3575] publish it
+[3576] and to be able to bring that to
+[3577] conferences and to socialize it and to
+[3580] do that
+[3582] you know across the problems that you're
+[3584] most excited about
+[3585] and I'd say that that is one way to
+[3587] really get started
+[3590] and so you know to kind of get into the
+[3591] circuit of what researchers actually
+[3593] think.
+[3594] What kinds of you know
+[3596] why would they actually join a startup
+[3598] and how they make a decision and
+[3599] emotional decision around something like
+[3601] that I think is
+[3602] the best way to approach that problem
+[3604] and so I think the best way to to really
+[3606] solve these kinds of things is to really
+[3607] just take the perspective of what a
+[3609] researcher actually cares about
+[3611] and then
+[3613] and then from there be able to you know
+[3616] put forth the right kind of credibility
+[3617] for yourself and for your company that
+[3619] can position yourself you know in a way
+[3621] that can actually attract the kind of
+[3625] I want to be mindful of time maybe we
+[3627] wrap with a one and five round.
+[3630] &gt;&gt; What's your favorite book?
+[3633] &gt;&gt; My favorite book
+[3636] I think the stranger is pretty often.
+[3638] &gt;&gt; Okay.
+[3640] I'm glad that you're a reader you'd be
+[3642] surprised how many people don't read.
+[3644] &gt;&gt; I think my most recent
+[3646] one is gentleman in Moscow.
+[3648] &gt;&gt; Who would you invite to your dinner
+[3651] party?
+[3653] &gt;&gt; I would invite
+[3657] I'd invite Mahatma Gandhi.
+[3659] &gt;&gt; Who made the biggest impact in your
+[3661] career?
+[3664] &gt;&gt; Michael Callahan who's one of our who
+[3666] was our first angel investor.
+[3668] &gt;&gt; Wait how do you find that person or how
+[3671] do you how do you guys know each other?
+[3673] &gt;&gt; He he's been a long time mentor of mine
+[3676] even from before Petroneus and um
+[3680] he uh,
+[3681] he's he was the first investor in
+[3682] DataDog, is on their board, and
+[3684] um, had had been someone who had helped
+[3686] me with, you know, with all kinds of
+[3687] things, including a lot of things that
+[3689] we were figuring out across Petal as
+[3691] &gt;&gt; Love that. Uh, where can we find you
+[3693] outside of work?
+[3695] &gt;&gt; You can find me, uh, playing a lot of
+[3698] different kinds of instruments, uh,
+[3699] playing tennis,
+[3701] uh, reading, um,
+[3704] and, uh, yeah.
+[3706] &gt;&gt; I love it. Um, by the way, uh, thank you
+[3708] all the audience who joined Hiten Shah
+[3710] and then I know we're out of time but
+[3711] thank you so much. Thank you so much.
+[3713] Okay, uh, Anand for coming to the show
+[3715] today.
+[3716] &gt;&gt; Yeah, thank you so much for having me.
+[3717] This was amazing.
+[3719] &gt;&gt; Okay, let me quickly end stream. One
+[3720] sec, it's about to end.

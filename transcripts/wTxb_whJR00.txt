@@ -1,0 +1,1639 @@
+[0] Agents will use the web thousandx more
+[1] than humans. Hence, new tech is needed
+[3] and new business models are needed.
+[5] >> How does the world of agents change web
+[7] search in terms of the technology
+[9] required? Power is the founder of
+[11] parallel, changing the future of how
+[13] agents do web search efficiently. This
+[15] is an incredible discussion on the
+[17] future of aantic search, the future of
+[19] income and wealth inequality, and so
+[21] much more. Parag rarely does shows, and
+[24] so it was very special to sit down in
+[25] person with him in London.
+[26] >> Ads don't work with agents in their
+[28] current form. Some people actually want
+[29] to do bad things and the models
+[30] alignment is not adversary proof and I
+[33] think those are the things we must worry
+[34] about more. I think it's the
+[36] responsibility of people building models
+[37] to ensure that you really do the work to
+[41] minimize that harm that comes from what
+[43] you've built. And I think so far I think
+[45] some of these should be considered
+[46] embarrassments because I think they
+[48] demonstrate two things.
+[56] >> [music]
+[63] >> Parag, I'm so excited for this, dude. I
+[65] I spoke to Vinod. I spoke to Andrew
+[68] Reed. I spoke to Todd Jackson. Dude, I
+[71] stalked the [ __ ] out of you. So, thank
+[72] you for joining me.
+[73] >> Thanks for having me and thanks for
+[74] making all the calls.
+[76] >> Not at all. Um I would love to start
+[78] with for anyone that doesn't know how
+[80] would you describe parallel in 60
+[83] seconds.
+[84] >> Parallel is the Google for agents. So
+[89] agents need to search the web to do
+[91] anything they do for you. Whether it's a
+[92] personal agent or an agent built for
+[94] work. Um just like humans need to go on
+[97] a browser search Google often times
+[100] during work or for whatever you're doing
+[102] in life, your agent needs to do the
+[103] same. Um, turns out agents are different
+[106] from humans and the way you build web
+[108] search for agents is different and so
+[111] parallel is about building the
+[113] technology
+[114] for agents to search the web and then
+[116] the business models to make that
+[118] sustainable.
+[120] >> Was that the original insight that you
+[122] had?
+[123] Yeah, literally the first
+[127] genesis of the company was us
+[131] like the statement that agents will use
+[133] the web thousandx more than humans like
+[135] I wrote that down at some point. Hence
+[138] new tech is needed and new business
+[140] models are needed. Um thousandx gives
+[144] you a sense of scale.
+[146] uh it changes how you think about
+[150] building the tech underneath because
+[151] like no tech built for a certain scale
+[153] survives three orders of magnitude. Um
+[157] and then when you need new business
+[158] models alongside new technology a
+[161] problem becomes really interesting.
+[163] >> How does the world of agents change web
+[166] search in terms of the technology
+[167] required?
+[168] >> There are many many layers to the answer
+[170] but let's start at the first thing we
+[172] mentioned which is scale. Right? Now if
+[175] you think about let's say agents
+[177] actually do end up searching the web
+[178] a,000x more. If we spend the amount of
+[182] compute we currently spend as per web
+[186] search that's too much compute for web
+[188] search. So you now need to make it way
+[191] more efficient by perhaps [snorts] we I
+[195] think 10 to 100x for it to make sense.
+[198] >> Yeah.
+[199] >> If you're doing a thousand eggs. Yeah.
+[201] >> Exactly. like you um the second thing is
+[205] agents expand like humans operate in a
+[208] very narrow zone. So if you think about
+[211] how we use web search
+[214] we type keyword queries which are short
+[216] and underspecified.
+[218] We wait for about half to 1 second. If
+[221] web search takes more than that we're
+[222] impatient.
+[224] Um, and then we get 10 blue links and
+[227] then we random walk across them and a
+[229] collection of searches to get what we're
+[231] doing doing. Agents are not like that.
+[235] Agents are going to um perhaps tell you
+[238] exactly what they're looking for, not
+[240] like three keywords, but like a full
+[242] sentence like this is what I'm trying to
+[244] do. Agents [snorts]
+[246] will either be super impatient, like
+[248] imagine a voice agent. The agent will be
+[250] like, I need an answer like now 100
+[253] millconds. I can't wait 500 millconds
+[255] because the human is waiting on me and
+[257] they're going to wait 500 millconds. So
+[259] I need web search to do it in 100 or
+[262] there going to be a background agent
+[263] who's like I don't care just give me the
+[265] best answer possible. Right?
+[267] [clears throat]
+[267] And so the variance of what you can do
+[270] within web changes completely. In fact
+[273] the one thing that is the least
+[274] interesting is what we've built for
+[276] humans. Right? You either have too much
+[278] time or too little time. Almost never
+[280] the same amount.
+[282] um the output is not the same. So the
+[285] input is different. The time you have is
+[286] different. The output is different. The
+[288] output is in blue links. The output is
+[290] tokens or files on a file system
+[293] depending on the type of agent.
+[295] And so now all of a sudden you say okay
+[297] now the problems inputs are different,
+[298] outputs are different and constraints
+[299] are different and you get to spend very
+[301] different amounts of compute on it.
+[304] Right? So imagine someone
+[307] running an agent built with a Luna model
+[310] and then imagine someone running an
+[312] agent built with a fable model.
+[315] Um they're very different models.
+[320] How you want to optimize signal to noise
+[323] and tokens for each of them is so
+[326] different in terms of what you do in the
+[328] web search stack.
+[329] >> So what do you mean optimize signal for
+[331] noise? So think of it this way. Let's
+[333] say you took web search which was
+[337] cheap and fast and low compute. Uh one
+[342] way of conceptualizing the web search
+[344] problem is you start with like a
+[346] trillion documents that are on the web
+[347] some few trillion. Given any search I
+[350] now need to narrow it down to a thousand
+[353] tokens that your model's context window
+[356] should see. So the problem is going from
+[358] a trillion URLs with let's call it a few
+[362] thousand tokens each down to a thousand
+[364] total tokens. So how do we do it in
+[366] website? We first say okay we're going
+[367] to do retrieval. So for most documents
+[369] I'm going to spend zero compute. For
+[371] small number of documents I'm going to
+[374] spend minuscule amounts of compute to
+[376] figure out which 10,000 to look at. Once
+[379] I get these 10,000 I'm going to spend a
+[381] little bit more compute for each of
+[382] these 10,000 documents to narrow it down
+[384] to 1,000 documents.
+[385] >> Mhm. And I'm going to keep doing this
+[387] with bigger and bigger models and
+[390] rankers with more and more features
+[392] until I can narrow it down to a thousand
+[394] tokens for your model. Right? So you're
+[397] essentially allocating compute to web
+[400] search in order to save compute on the
+[406] model. That's roughly what's going on
+[408] here. Um so if you want to save compute
+[412] for the model, the question is how much
+[414] compute should you allocate? So if your
+[415] Luna model is really cheap,
+[418] you don't want to do too much computing
+[420] web search because it's okay to leak a
+[423] little bit more information into Luna's
+[426] context because it's cheap
+[429] into Fable. You want to do the work
+[433] before you waste Fable's time because
+[434] that's going to be expensive in time and
+[436] money for you if web search gives you
+[439] worse answers because you cheaper out on
+[442] web search. Can I ask how do you deal
+[444] with the ambiguity of what agents want?
+[447] And what I mean by that is, you know,
+[450] for different things, an agent might
+[452] want different things and for different
+[454] people and an agent might want different
+[456] things. You know, I may really care
+[458] about accuracy and not at all about
+[461] latency or cost. I may really care about
+[463] latency, but not at all about accuracy.
+[467] you allow the agent to specify that in
+[471] the API signature. So our product is an
+[474] API
+[475] which either the programmer can
+[478] configure based on their application or
+[480] can leave it to the agent. Our API even
+[484] has a parameter which is like what's the
+[485] model calling me and if you know the
+[488] model we can do things differently. Now
+[491] you don't have to tell us but if you
+[492] tell us you might get better results. Um
+[496] you can we ship just like you know you
+[499] can use like a model you can use a small
+[501] model or a big model and you can use it
+[503] with like low thinking or medium
+[504] thinking or high thinking.
+[506] We have productized our search system
+[509] into a few different
+[512] modes each optimized for a certain class
+[517] of use case. For example we have a
+[519] really really fast API the fastest in
+[521] the market. Um it's fast and cheap
+[524] because with low latency budget there's
+[527] only so much compute you can do.
+[529] >> Um and it's built for voice agents. So
+[532] your voice agent must be all knowing
+[537] without telling you guys I'm searching
+[540] the web. Hold on while I come back with
+[542] the answer. Like that's a silly
+[544] experience for a voice agent, right? But
+[545] it should just like magically
+[546] immediately respond. And so you now need
+[549] to do web search which is like rapid
+[551] right on the other hand you can take a
+[555] fable model and the thing is going to
+[557] think for 20 seconds and then generate
+[560] for it you can spend 5 seconds on web
+[562] search
+[563] >> to make sure it does instead of five web
+[567] searches only two. So you end to end in
+[570] the agent you save time and cost and so
+[573] that's a different processor on our
+[575] system it's called advanced. So you use
+[578] turbo if you're building a voice agent
+[579] you use advanced if you're like really
+[581] expensive background agent
+[582] >> and so the primary use case today in
+[585] terms of customer base is engineering
+[587] and coding for you
+[588] >> it's pretty broad I would say the
+[590] primary use cases the common theme is
+[592] knowledge work so coding is a category
+[596] of knowledge work so are AI lawyers so
+[599] are productivity applications so are AI
+[602] insurance underwriters so are scientists
+[604] I'm trying to understand how much of the
+[606] mother load Is engineering is it 80%.
+[610] >> No.
+[611] The the thing about engineering is
+[615] coding is a large chunk of inference
+[619] in the market right now.
+[622] Coding invokes I would say web search in
+[625] 5% of prompts.
+[627] >> Wo.
+[627] >> Right. So it's not every prompt invoking
+[630] web search when you're writing code
+[631] because most of them rely on your
+[635] internal context and your internal data
+[636] and your codebase. So the model is
+[639] spending time reading your internal code
+[642] and not on the web.
+[644] >> Law is not going to be much more is it?
+[645] >> Law is very web searchoriented.
+[648] >> Really? I thought it'd be internal data
+[649] driven.
+[649] >> There is internal data but there is case
+[652] law. There is facts. There's facts about
+[654] companies, facts about people. and you
+[656] have to go exclude information. So you
+[658] have to be very comprehensive in law to
+[661] say I want to be confident that despite
+[664] a lot of effort you can't find this
+[666] right insurance underwriting has the
+[668] same flavor right so there's sales is
+[672] very web search heavy um AI science is
+[675] very web search heavy
+[678] um so on a relative basis inference goes
+[681] more in compute but when you think of
+[683] web search all of these others start
+[685] popping too
+[687] >> how does the rise I was wooing before
+[689] about muse and instinct. If there's
+[691] anything that needs web search, it's
+[693] personal assistance. It's great. How
+[696] does that Yeah, it's great. This is
+[698] like, woo, this is the greatest thing
+[700] for my business. How does that change
+[702] your business? You know, I think in our
+[704] business, right, anytime
+[707] agents
+[709] start becoming more useful for more use
+[711] cases because models either get better
+[714] or cheaper.
+[716] It's great for us, right? because we bet
+[718] that agents will be the consumers for
+[720] the web and we're we've been building
+[722] tech for agents. So [snorts] when agents
+[724] do more, it's great for our business. So
+[726] we want
+[728] models to keep getting better and
+[730] cheaper so that agents do more and more
+[734] and more. And if that happens, it's
+[738] great for
+[740] our business. Totally get that. Can I
+[743] ask if models get smarter, don't the
+[746] agents beneath them do fewer searches
+[750] and then it's worse for your business?
+[752] >> I don't think so. If you think of
+[755] models, there is the trend around models
+[758] being smarter and then models
+[762] having more memorized and parametric
+[764] memory. Like those are two slightly
+[767] different dimensions. And if you think
+[769] of the
+[772] today by and large I would say models
+[775] have good recall in from parametric
+[778] memory on let's call them head facts.
+[782] It's like for somebody famous everything
+[785] about them Wikipedia it can memorize. So
+[787] it'll tell you who the president was in
+[791] a certain year right because a model can
+[793] memorize those things. The model
+[795] couldn't tell you what year I graduated
+[798] from college.
+[800] >> Really?
+[800] >> Maybe for me it can, but it it can't
+[803] tell you for for somebody who works at
+[805] parallel.
+[806] >> Do you know things? So if I if I
+[807] actually I mean if I
+[808] >> even if it was in the pre-training data
+[810] >> seriously
+[810] >> because it's lossy compression. So what
+[812] a model's parametric memory is doing.
+[814] It's lossily compressing two understand
+[818] patterns in the world and so it can't
+[821] memorize every fact in pre-training
+[823] data. So one, not every fact is in
+[824] pre-training data. Two, it can't for
+[827] even stuff that's in pre-training data.
+[828] The model's actually trying to find
+[830] patterns
+[831] rather than memorize them. And so and
+[834] then further as you make models
+[837] efficient, [laughter]
+[838] which is you make them smaller and
+[840] smaller while keeping the performance by
+[843] dilling them or whatever, you lose more
+[846] of the parametric memory while you try
+[848] to keep the reasoning. Do you think we
+[850] will see models become smaller and
+[852] smaller and every company have their own
+[855] model with their own data and the
+[856] fireworks theory of you know own your
+[859] own intelligence being true? So there
+[862] are two questions in there. So one I
+[863] think we're going to see two things.
+[864] We're going to see the biggest or the
+[866] frontier models be bigger and bigger
+[869] over time. We are also going to see
+[873] smaller and smaller models being able to
+[875] reach
+[877] any fixed level of performance. So if
+[880] you say okay I want Opus 48 level of
+[883] performance. Okay and that's good enough
+[885] for my use case every 6 months a much
+[888] smaller model will be able to deliver
+[890] that to you. So you're going to see this
+[892] the useful range of sizes of models will
+[896] be way way way different. What does it
+[899] mean if the frontier get bigger and
+[901] bigger? What are the ramifications of
+[903] that?
+[904] >> They are better. So all of the
+[906] ramifications you imagine. So the reason
+[909] the frontier will get bigger and bigger
+[913] is
+[914] ultimately the gap between what
+[919] the value
+[921] for certain use cases incremental
+[923] quality can provide you
+[926] can be so high in certain use cases
+[929] which can be so valuable
+[932] that it's worth paying for. So if you
+[933] can [clears throat] build it,
+[935] there will be use cases for it. As long
+[938] as by making it bigger,
+[941] you can make it better. It appears there
+[944] is no
+[947] end to the scaling law that we can
+[949] perceive so far. And again, I'm
+[953] conflating bigger with like models are
+[954] getting bigger, but they're also able to
+[956] think longer. So you're just able to
+[958] throw more compute at the same problem.
+[961] Um, and that will keep happening. I
+[965] think we'll be able to throw more and
+[967] more computer at the same problem and
+[969] make the answer be marginally better
+[971] over time.
+[972] And so, we're going to just spend a lot
+[975] of money on extremely large models
+[977] solving really hard problems. Do you
+[980] agree with the consensus for you that
+[982] you'll have 90% of token activity go
+[984] through open models but 90% of dollars
+[988] go through frontier models? I don't know
+[991] enough to have a view there.
+[995] I don't have a view on that. I do think
+[998] I don't think it'll be 90% on either of
+[1000] those two actually.
+[1001] >> Really?
+[1002] >> Yeah.
+[1002] >> Why? So if you believe my claim that a
+[1007] useful model and a [snorts] the frontier
+[1011] model will be 100x,000x off in price
+[1016] from each other. So it the small model
+[1018] is still useful. It is hard to know
+[1022] which use cases over time will get
+[1024] optimized to which scale of model in
+[1026] between. And I think there is a there's
+[1029] a real path dependency
+[1032] in terms of where open models end up.
+[1035] I do think if we had strong confidence
+[1039] that an American
+[1042] built open model
+[1044] was going to be
+[1047] state-of-the-art as far as open models
+[1050] went, I would have more confidence in
+[1052] saying that
+[1054] they'll be pretty good. Do you have
+[1056] confidence in American Open models? I
+[1059] want them to exist. So far, it's not
+[1063] clear what's going to happen, but like
+[1067] I'm hoping that there will be a great
+[1071] series of American Open models and
+[1072] perhaps even competition to have the
+[1074] best American open model. So, I think
+[1076] what you need is actually not just one
+[1078] person motivated to build an American
+[1080] open model. You need two people
+[1082] competing against each other to build
+[1084] the best American open model.
+[1086] >> Do you think there's value in the model
+[1088] rooting layer, routing layer as
+[1090] Americans call it? Some people think
+[1092] immense value, some think
+[1094] commoditization.
+[1096] Again, there's path dependency that so
+[1098] today there is real value. Today there's
+[1100] real value because
+[1103] so when we say routing we talk about two
+[1106] different dimensions which model and
+[1109] which GPU running that model via which
+[1111] vendor. when you're in a world where
+[1115] the demand supply is very weird and
+[1120] um people are like hunting for GPUs and
+[1123] people need capacity to serve their
+[1125] customers and people all of these are
+[1128] like like us like relatively early stage
+[1131] startups growing really rapidly
+[1134] um sometimes beyond what your forecasts
+[1137] or predictions say and then all of a
+[1139] sudden you're looking for capacity Um,
+[1142] and so you want to be able to get it
+[1145] where you can. And so that creates real
+[1149] value in having some of these routers as
+[1152] login. They can solve these two problems
+[1154] saying give me flexibility. If I need to
+[1158] get a different source of tokens and
+[1162] push comes to shove, if there's no
+[1164] tokens on this model in the SLA, I want
+[1166] I'll switch models as well. So in this
+[1169] moment, it's really valuable.
+[1171] Now I don't know what happens to overall
+[1176] demand supply on GPUs and tokens
+[1180] but if it remains this way the routing
+[1182] layer is really valuable.
+[1185] What do you think is not so valuable
+[1186] today that will be incredibly valuable
+[1188] in 3 to 5 years time? Perhaps data.
+[1195] Um when I say data I think it is I think
+[1198] today we don't know how to pay for
+[1201] unique valuable insight or data.
+[1205] Um because we live in a
+[1209] as intelligence is
+[1212] cheaper.
+[1214] You're going to want to build upon
+[1218] either data or insight that comes from
+[1220] somewhere else with your unique data.
+[1224] Right? So what like if you think of like
+[1225] an abstract notion that okay I have
+[1228] intelligence here I own some data you
+[1231] own some data and there's some data in
+[1232] the public domain
+[1235] if we can pull together your insights
+[1237] and my insights and all of this data in
+[1239] the public domain
+[1241] and intelligence on top we can create
+[1243] something bigger than what you could
+[1245] have done by yourself what I could have
+[1246] done by myself.
+[1247] >> Mhm. So now how do you transact
+[1252] to create this sort of hole that is
+[1254] bigger than the sum of what you could
+[1256] have done yourself and what I could have
+[1257] done or what open data was good at
+[1259] >> and so that transaction feels like a
+[1260] data transaction to me or an insight
+[1262] transaction to me and so we don't yet
+[1265] know
+[1267] how to transact that way so we fall down
+[1270] to okay all I can do is use my data and
+[1274] use open data and I let's see what I can
+[1277] do with
+[1278] But if we figured out better ways of
+[1282] pricing
+[1284] data and
+[1288] good things will happen, but it's not
+[1290] something that's yet a market. But what
+[1293] I'm talking about is data transactions
+[1297] at inference time. So it's not
+[1298] necessarily training time. We are
+[1301] building knowledge.
+[1302] Um and let's let's take an example of
+[1306] today's world for example. Um let's say
+[1310] in your job since I'm sitting with a VC
+[1313] you probably have access to a pitchbook
+[1316] or like a product like that to to
+[1318] collect data. Um, and so you
+[1322] you get grounded in
+[1325] knowledge of what's happening and
+[1327] [snorts] you get to use that data to
+[1328] figure out how to make decisions in
+[1330] addition to all the the notes you have
+[1334] and deal memos you've written perhaps
+[1336] over the years or insights you've had
+[1338] about like how to choose founders. And
+[1340] you're essentially composing insights
+[1343] from your personal lived experience,
+[1344] your notes, public data to make
+[1347] decisions.
+[1349] Now you pay Pitchbook by the seat, but
+[1354] now you're running a bunch of agents and
+[1356] your agents can perhaps
+[1359] not access everything you can on
+[1361] Pitchbook or you're doing like sort of
+[1363] this to get a browser perhaps against
+[1366] terms of service to send a agent via
+[1370] browser to pitchbook using your O
+[1372] credentials [laughter] and it's
+[1375] inefficient. It's clunky, right? But
+[1377] clearly their data is valuable and
+[1380] clearly your agent should have
+[1382] convenient access to it. So if we figure
+[1385] out how valuable pitchbook data is for
+[1388] your agents to make your decisions
+[1390] because clearly
+[1392] you're investing a large hundreds of
+[1395] millions of dollars. So clearly you
+[1400] presume that you make a great return on
+[1402] that. So this data is truly valuable if
+[1406] you depend on it today. So you should be
+[1408] able to figure out how to compensate
+[1410] pitchbook for the data even when agents
+[1412] use it which is not by the seat. If we
+[1415] figure that out, it'll be a huge market
+[1419] and agents will be better off. If we
+[1422] don't figure it out, you're going to be
+[1423] in this weird cat and mouse game of
+[1426] pitchbook being like, "No, I want to
+[1428] sell you a seat. I'm going to shut it
+[1429] off." and your agent is stuck without
+[1435] the data and then like you're involved
+[1437] in like pulling data.
+[1438] >> I think every big company has the choice
+[1440] today of do we let agents in or do we
+[1442] keep them out and Amazon has said I'm
+[1445] sorry in most recent times Muse you will
+[1447] not be let into our garden. Shopify has
+[1450] said uh come in baby Xedia said come in.
+[1454] How does this play out? I think
+[1456] eventually
+[1458] everyone have to let them in. The
+[1460] question is on what terms. So how do you
+[1461] align incentives for everyone? And
+[1464] people are going to have to play their
+[1467] strategy games on how they win in this
+[1470] new world. Literally the customer is
+[1472] changing in front of our eyes, right?
+[1474] Like the customer used to be a human.
+[1476] You're building products for humans.
+[1478] Now you're building products for agents
+[1481] or you're building agents. And so now
+[1483] you have to figure out what your place
+[1485] in this new reality
+[1488] will be. Uh and I don't know if there's
+[1490] a right or wrong answer here. It also
+[1492] depends on sort of how much market power
+[1493] you have. Right. So let's say you are an
+[1496] individual.
+[1497] >> Do you think Amazon were right to say no
+[1499] to me?
+[1500] >> I don't depends on what they do next
+[1502] with it. Right. Like so it's like
+[1506] if it turns out that they have
+[1507] sufficient
+[1508] market power to
+[1512] have Muse or other agents connect to
+[1514] them differently perhaps
+[1518] over time or ship their own agent and
+[1521] drive crazy adoption let's say they have
+[1523] that capability
+[1525] then I guess they were right right on
+[1527] the other hand once they've made this
+[1530] we're not now anyone else's agent
+[1533] and they can not ship an agent that
+[1536] consumers use and they won't allow
+[1538] anyone else's agent to use them. And a
+[1542] lot of the transaction economy starts
+[1543] moving off of moving off to agents which
+[1547] are all big ifs by the way then it would
+[1550] be a bad move. Now I am betting on
+[1553] agents. I am I have mixed feelings
+[1556] around agents and what fraction of
+[1562] uh e-commerce transactions they do like
+[1564] it's unclear right like is I do you
+[1566] think it's unclear I think it's
+[1568] unwaveringly clear maybe I'm uh super
+[1571] early on the adoption curve and I I buy
+[1574] everything through instinct now I I I
+[1577] mean other than holidays I am and a home
+[1580] >> I'm literally just everything through
+[1582] instinct
+[1582] >> so so me too but I also know a lot of
+[1585] people who like to buy things themselves
+[1587] and like listen we want to delegate to
+[1589] agents things which we see as chores and
+[1594] uninteresting
+[1596] and not delegate to agents things that
+[1598] give us joy or pleasure or
+[1602] or make us have fun doing those things
+[1605] and I don't like I I know people who
+[1612] don't want to delegate shopping they
+[1613] want to delegate a lot of things in
+[1614] their life they don't want to delegate
+[1616] shopping and so I don't know that's why
+[1619] I don't know the distribution of these
+[1620] people and how behavior changes but it
+[1622] might be people give away a lot of other
+[1623] chores and then spend a lot of time
+[1625] shopping.
+[1625] >> One thing that does worry me is actually
+[1627] the dissolution of the advertising
+[1629] industry in the wake of agents if I have
+[1632] you know if I order my delivery and my
+[1634] Uber Door Dash for our dear American
+[1636] counterparts uh through uh instinct that
+[1640] Uber banner that's now advertising
+[1642] something becomes worthless. Amazon,
+[1645] their advertising business is bigger
+[1647] than their ecom business now. Of course,
+[1650] they're shutting it off because if
+[1651] agents the primary customer, your ads
+[1654] business goes to next to nothing.
+[1656] Correct? And this is not just uh you're
+[1658] talking about this in the e-commerce
+[1660] land, right? But if this is the problem
+[1662] with everyone, if you think about like
+[1664] so this is what I meant early on when I
+[1666] said like the business models have to
+[1667] change. Ads don't work with agents in
+[1669] their current form. So, forgetting
+[1672] e-commerce for a second. If you think of
+[1673] you're in the content business, let's
+[1675] say you have a page which is ad
+[1676] supported. It's public information on
+[1678] the web. Ad supported page. People show
+[1680] up, you show them ads, you make money,
+[1682] great content. Um, agents show up, no
+[1686] one sees ads, you make no money. Um,
+[1689] which is why we like to pay people. So,
+[1693] we're effectively building an AdSense
+[1695] for agents showing up to read your
+[1697] content. So, we like to pay content
+[1699] owners
+[1701] uh
+[1702] a variable amount of money every time an
+[1704] agent derives benefit from reading their
+[1707] information, which is a variable amount
+[1710] of money is what a visitor to your
+[1713] website will pay you based on a click
+[1716] probability or a value probability on
+[1718] ads. Why do you do that?
+[1721] To incentive align content owners.
+[1722] Otherwise, what's going to happen?
+[1724] Everyone's going to block agents.
+[1727] So you you need to find a replacement to
+[1729] the ads business model.
+[1731] >> I get you. But if you have to assume
+[1733] that you're going to be
+[1735] like 100% of the market then because if
+[1738] you're 30 40% of the market and you're
+[1740] like oh don't worry we'll pay you. And
+[1742] New York Times is still like well thanks
+[1744] Parag but 60% of my traffic is still
+[1747] unpaid so I'm just going to block all of
+[1749] you. No, but I think they're going to
+[1751] block them and not my They're going to
+[1752] give me a data feed if I in What does
+[1756] incentive alignment mean? It means the
+[1758] New York Times believes that I pay them
+[1762] a competitive
+[1764] market price or the right price or an
+[1766] attractive price or a fair price.
+[1769] If I do that,
+[1771] they should give me their content. And
+[1775] if somebody else doesn't give them that
+[1777] and if they have the technical levers or
+[1780] legal levers, they shouldn't give it to
+[1782] them. Do you think this business is a
+[1784] little bit like music with streaming,
+[1786] which is like the business just becomes
+[1788] candidly much worse for the creators and
+[1790] it still provides them money and
+[1792] significant money, but they have to get
+[1795] a little bit more creative with
+[1796] alternative streams, touring,
+[1798] merchandise, alternative business. Is it
+[1801] the same where your core goes down and
+[1803] you have to get more creative?
+[1805] I don't know, but I don't think so. I
+[1807] think there's one fundamental thing that
+[1810] is different here.
+[1812] I think agents using the web a,000x
+[1816] more, like that, thousandx is really
+[1818] different. Now all of a sudden, the
+[1822] amount of utility added
+[1826] goes up if these agents are presumed to
+[1829] be doing something useful.
+[1832] And so this is not just a change in the
+[1836] share of value that people transact
+[1839] over. This is a
+[1842] large growing pie. And when that
+[1845] happens, it is actually possible to
+[1846] transition business models. Of course,
+[1849] don't get me wrong, there are going to
+[1850] be winners and losers, right? Like some
+[1854] pieces of content will become very
+[1856] valuable. some pieces of content will
+[1859] get more commoditized and people are
+[1862] going to have to adapt to a new customer
+[1864] to a new market dynamic to a new kind of
+[1866] monetization engine. But the overall
+[1869] market size I think has the potential to
+[1873] increase
+[1875] um unlike in music where it took a while
+[1878] for it to grow back. I think my
+[1879] understanding is now the industry's
+[1881] grown back up and exceeded its previous
+[1885] peaks in a material way. But there was a
+[1887] moment where it was smaller. In this
+[1890] case, that might be a very compressed
+[1891] period given how fast these things are
+[1894] growing. Can I ask you, everyone
+[1897] questions the sustainability of margin
+[1900] structures in this business. How do you
+[1903] think about that as a business today?
+[1905] Today we're in the infrastructure
+[1907] business.
+[1908] Um, and we have
+[1912] a real technical lead in terms of being
+[1915] able to do things at very high quality,
+[1918] very cheap. So, if you think of the tech
+[1920] we're building, right? Like what are we
+[1921] doing? We like to give the highest
+[1924] quality answer.
+[1926] Make it fast, make it cheap. Spend the
+[1928] least amount of compute doing it. Like
+[1929] we obsess about only these three things,
+[1932] right? Quality, cost, latency. Turns out
+[1936] if you do that relative to a stack built
+[1939] for humans over the last 20 years,
+[1942] you can do things at the same quality
+[1944] for 120th 150th of the compute.
+[1949] And so
+[1951] a lot of margins come down to
+[1955] market structure on competition over
+[1957] time
+[1959] rather than
+[1961] any other factor. And [clears throat]
+[1964] in our industry, the market is large.
+[1968] We're too early to know what future
+[1971] competition and market structure looks
+[1973] like. Um,
+[1976] but the margin
+[1978] change
+[1980] due to content owners is not something I
+[1983] worry about. And let me tell you why.
+[1985] The entire premise of us paying content
+[1987] owners is driving incentive alignment.
+[1990] So, we like to pay content owners
+[1994] the marginal contribution
+[1997] that they added to an agent doing work.
+[2000] What does that mean? Let's assume that
+[2003] there's an agent trying to get something
+[2004] done and you're going to spend a dollar
+[2007] on that agent to get this thing done.
+[2009] Now, if you spent a dollar in 10
+[2012] seconds, because we have a larger model
+[2015] available or ways of spending compute,
+[2017] you could have gotten a slightly better
+[2018] answer. If you'd spend 90 cents, you
+[2020] would have gotten a slightly worse
+[2021] answer. If you're running good agents
+[2023] like they're on this PTO curve. So now
+[2026] imagine I took out one content owner
+[2029] their data from the web index and I
+[2033] still spent the dollar. But let's say
+[2035] after taking them out, the quality of
+[2038] the result was the same as the 90 c
+[2041] agent with their content.
+[2044] So why wouldn't we go and take this 10
+[2046] cents of marginal contribution they had
+[2049] as a content owner and pay out a decent
+[2053] chunk of it to the person who brought
+[2055] that data
+[2057] yeah so that's how we do our math that's
+[2060] how we have trained our models which
+[2062] tell us how much to pay for what content
+[2065] to eat and so to produce if I was going
+[2068] to offer an equivalently good product to
+[2070] my customer I'd rather pay content owner
+[2073] ers then spend on inference because I'm
+[2075] spending the same amount.
+[2076] >> So they're all big numbers
+[2079] but then it actually comes back to
+[2080] revenue at a certain point like
+[2083] companies are scaling faster than ever
+[2085] revenue wise.
+[2087] Is it a business where your revenue is
+[2090] able to scale as fast as others? It
+[2092] scales.
+[2094] One mental model of our business is we
+[2098] are an adjacency
+[2101] to inference
+[2104] or knowledge work or personal agents. So
+[2107] take out GPUs going into media
+[2110] generation or training. So take training
+[2112] away, take media generation away for a
+[2114] moment.
+[2116] Look at all of the GPUs, whether it's
+[2119] small models, open models, proprietary
+[2120] models, forget all of that.
+[2123] Every bit of inference across all models
+[2126] going into running agents.
+[2130] I think somewhere between
+[2132] 5 to 20% of
+[2135] that spend that goes into GPU will need
+[2137] to go into some sort of a web search
+[2139] stack.
+[2141] Now
+[2143] if you look at like how many data
+[2145] centers we're going to build and how
+[2146] much power we will generate and how many
+[2148] GPUs we'll build and the scale of this
+[2150] build out and at what rate that's
+[2152] growing
+[2153] um this is a very material market and if
+[2157] inference grows
+[2161] 3x 5x 7x year on year
+[2165] we grow
+[2167] alongside it in the same rate if we is
+[2170] holding our share constant. If we're
+[2173] growing share, we're growing even
+[2176] faster.
+[2177] >> So like a fireworks scales to 2 billion
+[2179] in revenue in 4 years. Is that like a
+[2181] I'm I'm brain. Is that like a similar
+[2183] revenue trajectory that you can follow?
+[2185] >> Yeah. But I think when fireworks is 2
+[2187] billion in revenue, the inference market
+[2190] revenue is 200
+[2193] or more, maybe 300, right? And so our
+[2197] market potential based on my 5 to 20%
+[2201] math is
+[2203] whatever call it 10 to 50 15 to 60
+[2205] whatever and what fraction of that can
+[2208] we capture that dictates how fast our
+[2210] revenue can grow like today I think we
+[2213] grow alongside infants or more so if you
+[2216] think of it like a 20 billion there
+[2218] let's just take that kind of middle yeah
+[2220] if you assume a 33%
+[2224] that which would be a lot of a market
+[2226] actually comes down to it that would be
+[2228] you know whatever that is 6 whatever it
+[2231] is 66 6 to7 billion give or take. Yeah,
+[2235] that that's amazing.
+[2238] But before you told me it was a hundred
+[2240] billion business plus that doesn't get
+[2243] you to 100
+[2244] >> in valuation. It does. We we were
+[2246] discussing valuations earlier not.
+[2247] >> Yeah. Yeah. But this
+[2249] >> 6 billion growing at the rate of
+[2250] inference gets you to 100 billion
+[2253] business easy. But that's in the next
+[2255] few years.
+[2257] >> And and you think that's possible in
+[2258] terms of that revenue scaling that fast?
+[2261] Yeah, I think in the next few years it
+[2264] is.
+[2265] >> You think 2030 we're going to sit here?
+[2268] You think you can be there? I'll get a
+[2270] tattoo for parallel if you can.
+[2272] >> I think it's possible. I think we're
+[2274] going to have to execute well and a
+[2276] couple of chips have to fall our way.
+[2278] >> What would be the reason why you don't?
+[2282] But let's map out the h we have to get
+[2284] gnarly about these problems.
+[2286] So, so one one reason would be that we
+[2290] see a
+[2292] agent don't work like there is like a
+[2294] tail risk that agents don't deliver on
+[2296] the profits and we overshoot as a
+[2298] society which is extraneous to us. Yeah.
+[2302] Um if agents work and deliver value and
+[2306] we spend all the money on GPUs that we
+[2308] plan to right now um then the main
+[2312] question is did we execute
+[2313] [clears throat] well enough to have a
+[2316] the 33% share that you bet on right and
+[2322] that comes down to in my mind did we
+[2325] build the best tech did we partner with
+[2329] all of the content providers to
+[2332] have their content available because
+[2334] without it um it's not very useful if
+[2337] you can't rely on it. And did we go earn
+[2342] the trust of the customers
+[2345] that end up having a decent chunk of
+[2349] that inference in 4 years from today?
+[2352] And there again there's like large cone
+[2354] of uncertainty, right? Like the I'd say
+[2356] there's a 5x uncertainty in fireworks
+[2360] share at that point. If open models
+[2363] crush it like fireworks will have a huge
+[2367] bif and fireworks model all of them will
+[2369] have a huge chunk of revenue. So did we
+[2373] end up
+[2376] selling alongside them? Did we find all
+[2378] the customers which are spending money
+[2379] on them to spend money on our web search
+[2382] by making it the best web search in the
+[2383] world?
+[2384] >> What about commoditization? If you have
+[2388] a read of semi analysis
+[2390] um where they did the benchmarking and
+[2394] then like you were like number one.
+[2396] Woohoo. And then like a week later you
+[2398] weren't number one. Sad. Uh and there
+[2401] were like three or four providers within
+[2403] very close proximity. You're like, "Oh,
+[2406] well, if it's commoditized and I take a,
+[2410] you know, second layer of thought to
+[2412] that, we'll see a race to the bottom on
+[2414] price and then actually the available re
+[2417] No, why why am I going down the wrong
+[2419] pathway here?"
+[2420] >> No, the one there should be a raise to
+[2423] the bottom on price to get to the,000x
+[2426] scale. I think the pricing on web search
+[2427] today is just off. Let me give you a
+[2430] simple
+[2431] >> You think customers pay you too much?
+[2433] >> Not pay off too much. I think people the
+[2435] market is mispriced. Let me tell you
+[2437] why. Let's say you used a Luna model
+[2442] with OpenAI's built-in web search today
+[2445] or with anyone's web search, forgetting
+[2448] ours,
+[2450] and you ran any kind of deep research.
+[2452] Let's say you you built a uh instinct
+[2454] using a Luna class model and at some
+[2456] point a Luna class model will be able to
+[2457] do 60 70 80% of your personal agent and
+[2462] it'll do a lot of searches. In that
+[2465] moment you'll be spending 80 to 90% of
+[2468] your dollars on web search
+[2472] and 10% on the model. Seems entirely
+[2476] silly. I was working off a 5 to 20%
+[2479] assumption earlier. So I think at that
+[2482] point web search have to drop prices by
+[2484] one order of magnitude or more
+[2488] because
+[2490] in the in my compute allocation dance
+[2492] that I was doing earlier
+[2494] you need to spend less compute on web
+[2496] search than you spend on the model
+[2498] itself that's consuming its results.
+[2500] It's my hierarchy of how you do search.
+[2505] And so people have
+[2508] built web search the wrong way so far.
+[2513] Web search in the market is
+[2515] it doesn't matter for an opus.
+[2518] For an opus you win on quality and not
+[2520] on price because web search is such a
+[2523] minuscule portion of your like in fact
+[2526] you should spend even more on web
+[2527] search. So we're going to ship even more
+[2529] expensive web search for bigger and
+[2532] bigger models over time. And at the same
+[2534] time, we'll ship really cheap web search
+[2536] for the cheap models. But my rough
+[2539] intuition is that in an end toend agent
+[2541] doing a bunch of web work,
+[2542] [clears throat] you spend more on the
+[2543] agent than on web search
+[2545] for all agents. And so the market today
+[2549] on web search is totally off in pricing.
+[2553] Like why are you paying $10 for you know
+[2556] where the $10 for a,000 searches roughly
+[2558] comes from? Historically, Google's ads
+[2562] CPMs, which is like how well does web
+[2564] search with humans monetize,
+[2567] >> it's higher than that. And so people
+[2570] built technology to the point of like,
+[2573] oh, now if I spend a few dollars for
+[2576] a,000 searches and I make 30 to 50 or
+[2578] whatever, depending on the market and
+[2579] depending on who I am, it doesn't
+[2581] matter. We are in the right zone in
+[2583] terms of cogs of infra. And so I don't
+[2586] need to optimize it. Now I'm telling you
+[2588] that I can do it 50x cheaper while
+[2591] keeping the quality.
+[2593] And now there's a bunch of traffic of
+[2595] Luna class models where it's silly to
+[2598] monetize that way. And so I do want to
+[2602] race to the bottom. I want the best
+[2604] technology to win. And that's the only
+[2606] way you push web search to a,000x. But
+[2609] right now we're not in a world where
+[2612] like there's much differentiation.
+[2614] Correct. Sorry, I'm really dumb, which
+[2616] is why I'm a podcaster first, not a not
+[2619] a founder. Like when you look at the
+[2621] benchmarks, they present a quite clear
+[2624] view of everyone being similarly
+[2626] capable. Is that wrong?
+[2628] >> I think so. So one, I think these are
+[2629] all public benchmarks.
+[2632] >> Yeah. Which are all weirdly saturated
+[2636] for example, right? Like I think I would
+[2638] not spend a moment looking at browse
+[2641] comp because half the models have
+[2642] memorized it. like models even memorize
+[2645] you don't even like it's so you're not
+[2646] really learning very much. So I think
+[2649] that's a lot of public benchmarks I
+[2652] don't give too much merit to but more
+[2654] importantly
+[2656] our web search costs $1 for a,000 for
+[2659] producing that quality while almost
+[2662] every other web search in the market
+[2663] available to you right now will cost you
+[2666] 7 or 10 or 14.
+[2669] So you we're delivering this at like
+[2671] one10enth of the price. What will that
+[2673] be in 3 years? I think there is another
+[2677] another 10x possible
+[2680] is extraordinary. So you're going to pay
+[2681] 10 cents.
+[2683] >> Yeah, because but you'll do it more than
+[2685] 10x as much cuz I think like Jean's
+[2687] paradox is like you know this concept
+[2690] obviously very well but like instinct
+[2694] I do so much more than 100x.
+[2698] >> Yeah. Do you want to hear something I do
+[2700] on Instinct, which is absolutely
+[2701] bizarre? Every single country in Europe
+[2703] has a company register that you have to
+[2705] register your new company with. I have
+[2708] an automatic alerting system built for
+[2710] every single company registered that has
+[2712] an under 25year-old founder who went to
+[2714] a top university through instinct.
+[2717] >> Amazing. Do you do you know how much
+[2720] that requires
+[2722] >> for them to do? But now you you're on to
+[2727] exactly what I think the future of the
+[2732] web is. Today if you think of web and
+[2734] web search we all think of it like what
+[2736] is web search? An agent gives human or
+[2739] agent gives a search engine a query it
+[2741] gets results. So you're pulling
+[2743] information out of the web.
+[2745] I think where this what's next for the
+[2748] use case you highlighted is if you have
+[2750] an always on agent that's working on
+[2752] your behalf.
+[2754] It's kind of silly for interesting to
+[2756] wake up every 6 hours and go do bunch of
+[2760] searching and bunch of inference to
+[2762] figure out if to if you need to get
+[2765] pinged about the the the under 25
+[2768] founder that popped up somewhere. Um you
+[2771] know what's a better way of doing this?
+[2774] I am sitting here crawling all of the
+[2776] web all day, every day at scale.
+[2780] I'm allocating compute every time I find
+[2783] a change in the web. Every time
+[2784] something new happens, if I know that
+[2788] Harry wants to know when this happens, I
+[2792] can do it at 100 to 1,000 the compute
+[2797] that Instinct probably uses today to
+[2800] solve that problem for you.
+[2801] >> Sorry. And how is that? because they
+[2803] would be constantly monitoring in real
+[2805] time across all these
+[2806] >> our crawl would be so we have a product
+[2808] it's called the monitor API
+[2811] what does this API do it's think of it
+[2813] as Google alerts
+[2814] >> except smart [laughter]
+[2817] um with in the world of LLMs um so you
+[2822] you you tell it your query which is when
+[2825] a founder under 25 pops up anywhere give
+[2828] me a call now one way of doing this is
+[2832] What
+[2833] the default implementation is run an
+[2835] agent which is somewhat smart to go
+[2838] search the web. Did did someone pop up
+[2840] and remember who previously existed
+[2844] see if anyone new popped up and then if
+[2846] you find a delta send it out. So now
+[2849] every 6 hours you're spending some
+[2851] money. Now what we can do is flip it
+[2855] into an event triggered system. We are
+[2857] crawling the web all the time. So now
+[2859] every time we see a change in the web,
+[2862] we can try to spend very little compute
+[2864] on it to know
+[2867] should you get a call or does this
+[2869] trigger a more expensive compute just
+[2872] like I described earlier. Now
+[2876] we are able to do this way way way way
+[2879] cheaper if you push the context instead
+[2881] of the search system only finding out
+[2883] every 6 hours a new query popped up. it
+[2887] having long lived context in the search
+[2888] system. What you can do is
+[2892] spend most of the time the world doesn't
+[2895] change. A new founder does not pop up
+[2897] every hour or every 6 hours. So we don't
+[2900] need to spend compute every 6 hours. We
+[2902] only need to spend compute every 5 days
+[2906] and perhaps we have one false positive
+[2908] and then 4 days later we spend more
+[2912] compute and at that time that's a real
+[2914] person that you should know about and
+[2915] then you get a notification
+[2918] on average every 9 days or whatever but
+[2920] you didn't burn a lot of compute every 6
+[2923] hours
+[2925] to miss out. Does that make sense?
+[2926] >> It totally makes sense. So you save 10
+[2929] 15x compute to still get the same
+[2932] answer.
+[2933] >> And so how does that change the
+[2935] interaction? So then instinct would then
+[2938] partner with you. They'll just call an
+[2940] API, right? They'll instinct whoever's
+[2942] building a longunning persistent agent
+[2944] and I run a lot of longrunning
+[2946] persistent agents for myself. The way
+[2948] your agent or way instinct is probably
+[2952] occasionally event driven on email.
+[2956] It can be even driven on the web,
+[2960] right? Like
+[2962] take a step back. Um, let's say we're
+[2965] all like super we're living in this sort
+[2967] of a society run by agents, companies,
+[2971] humans, they all have agents. They're
+[2972] all doing stuff all the time.
+[2976] what
+[2978] your agents if there's something that is
+[2980] useful which is worth spending money on
+[2983] that you want done that they can today
+[2987] do today they will do it so what are
+[2989] they going to do tomorrow
+[2993] they're going to wait for
+[2995] some external
+[2998] event to occur like you get an email and
+[3000] then agent has new work
+[3003] you some other agent finishes some
+[3006] compute. So now this agent has more work
+[3010] or something in the world changes that
+[3012] makes your agent want to do more work
+[3014] like so those the things that will
+[3016] happen tomorrow or you have an idea
+[3017] which makes the agent do work. totally
+[3020] get that you said.
+[3021] >> So the web event stream is the web going
+[3024] from pull to push
+[3028] and
+[3029] I'm super excited about that because as
+[3032] you have more and more persistent agents
+[3035] you're going to see incentives to move
+[3038] people to move queries
+[3042] into push on search rather than pull on
+[3044] search. Can I ask you one that's really
+[3047] important, which is like agent guard
+[3049] rails, and they're goal oriented beings.
+[3052] You say, "I want this." They're going to
+[3053] find it. You know what? I want the
+[3055] plates class at 9:00 a.m. It hacks into
+[3058] their system, cancels poor Sally's, and
+[3061] gives me hers because it was sold out.
+[3064] It did what I asked it to do.
+[3066] How do we think about the
+[3069] guard rails placed on agents? Yeah, open
+[3071] AI. This morning it was revealed hacked
+[3074] into an Australian healthcare
+[3076] organization. It's a pretty complex
+[3079] topic. [laughter]
+[3081] So agents are extremely
+[3085] capable. These models are extremely
+[3086] capable. Now my understanding of most we
+[3091] have to think of models as being
+[3093] [snorts]
+[3095] during RL
+[3098] versus a final model that you and I can
+[3101] use and the risk vectors there are
+[3103] different during a lot of the I don't
+[3106] know about the one this morning the
+[3109] previous ones reported were
+[3112] pre fully aligned models during RL
+[3117] which did most of the hacking. And so
+[3121] what that means is at least there's
+[3124] clear evidence that there are fewer
+[3126] incidents so far of models
+[3129] post alignment
+[3133] causing these incidents.
+[3135] So
+[3137] alignment is a totally unsolved problem
+[3140] but the alignment work being done by
+[3142] people is somewhat effective.
+[3146] Now post now. So we definitely I think
+[3149] that this is like to me some of the
+[3151] problems around
+[3153] agent during RL hacking people is a
+[3159] is a solvable problem because this is
+[3163] not about how powerful are the models.
+[3165] It is about how careful were we while
+[3169] creating the environment where we would
+[3171] do RL. Now the real thing is okay we do
+[3174] alignment on an model we ship it some
+[3177] models are really well aligned some
+[3179] models are less well aligned and now you
+[3181] have
+[3183] everyone being able to use these models
+[3187] and some of them can accidentally
+[3191] take these powerful things and do bad
+[3193] things you want some of them actually
+[3195] some people actually want to do bad
+[3196] things
+[3197] >> and the model's alignment is not
+[3199] adversary proof and I think those of the
+[3201] things I think we must
+[3204] worry about more.
+[3205] >> Do you worry about the age of cyber that
+[3207] we're moving into? You know, we're
+[3209] seeing hacks almost be promoted as a
+[3211] badge of honor in some respects. We're
+[3214] seeing I mean these are our most
+[3215] vulnerable systems. If you don't think
+[3218] you know what Lazarus group in North
+[3221] Korea, Moldaven Mafia, Russians are
+[3225] leveraging swarms of rogue agents.
+[3228] You're [ __ ] high.
+[3232] It's a really powerful thing. So I think
+[3234] we do need to secure things. I but I
+[3239] think there's one thing that we are
+[3241] missing almost.
+[3244] I think it's the responsibility of
+[3246] people building models
+[3248] uh to ensure
+[3252] that
+[3255] you really do the work to minimize that
+[3260] harm that comes from what you've built.
+[3263] And I think it's with these agents, it's
+[3267] very hard for stoastic systems to be
+[3270] 100% sure it won't happen. And that's
+[3272] why you're not going to get anyone
+[3273] saying so. Um, but I do think it's their
+[3279] responsibility and the the labs m take
+[3283] ownership and do the best. And I think
+[3285] so far they have we live in this weird
+[3288] world where
+[3292] as you said right like some of these
+[3293] hacks are considered badges of honor
+[3295] which
+[3296] I think some of these should be
+[3299] considered embarrassments because I
+[3301] think they demonstrate two things
+[3304] simultaneously. Yes, these models are
+[3306] powerful. Two, we did not guardrail them
+[3310] enough and [laughter]
+[3312] we often when we wear them as badge of
+[3314] honor, we miss the second part of the
+[3315] conversation saying like, okay, you
+[3317] could literally have done these four
+[3319] additional things and then even this
+[3322] powerful model wouldn't have been able
+[3324] to do this. But while there are like I'm
+[3328] actually really glad that there is at
+[3330] least some degree of transparency with
+[3331] like these detailed retros. Uh but I
+[3335] don't think that gets the attention of
+[3338] the world today. Like the attention is
+[3339] oh models are so powerful that they hack
+[3341] the world. No models are so powerful
+[3342] they hack the world because we didn't
+[3345] take proportionate amount of counter
+[3347] measures to contain them. [snorts] And
+[3349] because we told a message that we're
+[3351] going to replace jobs. They're so
+[3353] powerful. They're so powerful. They're
+[3354] so powerful.
+[3356] does happen.
+[3356] >> I actually worry about that more. I
+[3358] worry about AI us being right on
+[3363] AI being a really useful technology that
+[3366] it being a despite all the risks it
+[3368] being net positive in a really material
+[3372] way to society
+[3374] and despite that
+[3378] I think we
+[3381] won't
+[3383] diffuse it the right way we won't use it
+[3385] the right way we will remain too
+[3388] concentrated and we will
+[3392] make the next few years really really
+[3394] rough as things change around us. what
+[3397] would look like over time as things have
+[3401] changed like like the world is very
+[3403] different now than even like 20 years
+[3405] ago right but it'll be really different
+[3408] in 10 years from now and I don't know
+[3412] how fast
+[3414] we can [clears throat] adapt or change
+[3416] and I think if the technology moves
+[3418] faster than our ability to adapt
+[3421] it's going to be rough in some way
+[3424] what's your spooky aspiration
+[3426] Well, what do you believe today will
+[3429] come true that people think is
+[3431] absolutely nuts? You know, before it was
+[3433] like you'd never put your credit card
+[3435] online. Do you remember that? Nuts. Oh,
+[3438] or even better, Parag, you'd never find
+[3439] the love of your life online. Are you
+[3441] stupid?
+[3443] >> Now, both.
+[3444] >> Yeah. And I think so I think
+[3446] [clears throat] you and I live in a
+[3448] bubble, right?
+[3448] >> Yeah. Um,
+[3451] we you're using instinct to make
+[3454] purchases for you
+[3457] and you're in the 0.01 percentile of
+[3460] humanity
+[3462] that is comfortable. You ask someone
+[3465] else like that, oh, there's this agent
+[3467] that looks smart
+[3469] and you want to give it like a full-on
+[3472] ability to go spend your money.
+[3475] I think today people will have the same
+[3477] reaction as like oh you don't put your
+[3479] credit cards online. You don't give your
+[3480] credit card to an agent. You don't give
+[3482] your login and passwords to agents. Like
+[3483] I think that's where the world is today.
+[3485] So I think for the large large majority
+[3488] the world I think that's going to change
+[3489] in 3 months though when Meta Pay comes
+[3491] out and it allows Muse to have siloed
+[3494] accounts that you can draw from.
+[3495] >> So kind of like top accounts for kids.
+[3498] >> I think you're talking about the
+[3500] technology being there. I think it takes
+[3503] longer for social acceptance to be
+[3505] there.
+[3507] I think if you go to a nonbubble
+[3511] conversation of people today,
+[3514] when do you get to a majority of people
+[3517] saying that I trust the agent enough to
+[3521] have it have access to my bank accounts
+[3525] and spend money on my behalf, send
+[3528] emails on my behalf, read my emails.
+[3531] I think that's not happening in 3
+[3532] months. Do you not worry about the the
+[3535] wealth
+[3537] dispersion increasing? You're in the
+[3540] middle of the valley.
+[3542] You've you you've seen it firsthand. So,
+[3544] I don't know what I I do think there
+[3546] should be some disparity in wealth, but
+[3550] I don't know
+[3552] what's too much. And my fear is we're
+[3554] trending towards too much. There should
+[3556] be disparity in wealth is my worldview.
+[3558] >> Sure. You're a capitalist.
+[3561] I don't know when it's too much, but I
+[3563] do think there are real forces that will
+[3566] push us to fix things like uh I I think
+[3570] that part will work hopefully without
+[3574] crazy things happening. We're seeing
+[3576] more and more of the gains seemingly be
+[3579] made by vertical ownership like Meta,
+[3582] they have compute, they have chips, they
+[3585] now own the application layer. It's the
+[3588] world one where vertical ownership is
+[3590] the mother lode strategy and with the
+[3593] greatest of respect open router on the
+[3596] routing layer you and another layer kind
+[3599] of either get eaten or small providers I
+[3604] think there is merit in
+[3608] there's always merit in vertical
+[3609] integration the counter force here is
+[3612] there is
+[3614] so much things and technology are
+[3617] changing being so fast that if someone
+[3620] decides that my only play is vertical
+[3622] integration and I don't play nice with
+[3624] anyone else.
+[3626] I think it's the same example as the the
+[3629] Amazon example. If you get too stuck on
+[3631] I will only play for vertical
+[3632] integration, you might box yourself out.
+[3636] And so
+[3638] I think the people who
+[3643] build the best stuff and can figure out
+[3645] how to sell it will have a place and in
+[3648] different markets like for example right
+[3650] like I believe in vertical integration
+[3652] too because I vertically integrate
+[3655] everything from the call all the way to
+[3656] the API layer but I have decided that to
+[3660] reach the wide
+[3663] population of agents searching the web I
+[3666] stopped up at the API layer because
+[3669] going further precludes me from using my
+[3672] technology to be super horizontal and so
+[3676] we're making a technical bet just like
+[3678] these models are really good across many
+[3680] disciplines. The same model is good for
+[3682] lots of different things. Search problem
+[3684] underneath is the same for all kinds of
+[3686] information seeking needs.
+[3689] And if our bet is right,
+[3692] uh, even verticalized players, they
+[3695] might verticalize models and they might
+[3698] verticalize hardware. They might use our
+[3699] web search. One of the providers that's
+[3701] going full stack is is Elon.
+[3706] I I am fascinated. The world has a
+[3708] perception of him from social media,
+[3710] from everything. You've seen him behind
+[3713] the scenes. What did you see that maybe
+[3716] the world doesn't know about him?
+[3718] I have lots of disagreements with him.
+[3721] Uh and
+[3724] but I'll share what I think is
+[3727] for founders here what is I think
+[3730] the thing you can admire about him.
+[3733] The urgency and the ability to compress
+[3736] time and I think having unreasonable
+[3740] expectations of people is mostly a good
+[3743] thing
+[3746] because most people
+[3750] don't
+[3752] understand what they're capable of and
+[3754] kind of implicitly
+[3757] sandbag themselves and implicitly set
+[3760] lower expectations of themselves than
+[3761] they're capable of.
+[3763] So when simultaneously
+[3767] inspired
+[3769] and pushed with urgency,
+[3773] people can do more than they thought.
+[3776] And I think he
+[3778] can sometimes extract that from people.
+[3783] And when that works, it's powerful. What
+[3785] do you think of the Twitter product and
+[3787] direction today?
+[3788] >> Listen, I always liked what we called
+[3790] birdwatch.
+[3792] uh which is now community notes
+[3794] rebranded. Uh
+[3795] >> and I think that's a
+[3798] >> that's a good idea and it
+[3800] >> I'm I'm glad people keep people have
+[3802] continued working on it. Launched up
+[3804] good people.
+[3805] >> Um right, we're going to do a quick fire
+[3807] round. Okay,
+[3808] >> let's go.
+[3808] >> Would you invest in Instinct 10 billion?
+[3811] >> I don't invest.
+[3812] >> You don't invest period? I don't invest
+[3815] because
+[3817] my wife is a VC and we have a compliance
+[3821] process that is more trouble than it's
+[3823] worth. Wow, that's costly
+[3826] >> with the credit spies. No, it's it's a
+[3829] decision. Listen, like I if I invested,
+[3831] I would invest based on meeting a
+[3832] founder for 30 minutes. I think we have
+[3834] enough exposure to the venture
+[3835] ecosystem. [laughter]
+[3837] I have no reason for believing I'm a
+[3839] better investor than [clears throat]
+[3841] I have some perhaps network advantages
+[3843] and I run into a lot of great founders
+[3845] all the time. Many of them are my
+[3846] customers. Venard Kosler. Yeah. One of
+[3849] your first ambassadors on your board.
+[3852] Biggest lesson from working with Venard.
+[3854] technical intuition,
+[3858] centering a lot of what you do towards a
+[3860] longer term
+[3863] technical aspiration
+[3865] and
+[3868] as soon as you solve one problem trying
+[3871] to place bets on the next two or three
+[3875] preempting
+[3878] technical
+[3880] bets. What have you changed your mind on
+[3882] most in the last 12 months?
+[3884] >> Perhaps the I started with a very pure
+[3888] technical and product focus like the
+[3891] only thing that matters is building the
+[3892] best technology and the best product.
+[3894] Nothing else matters.
+[3896] And now I see
+[3900] week on week
+[3902] value of having highly competent
+[3905] sales
+[3907] and being good at
+[3910] marketing.
+[3912] And I yeah, I think I discounted
+[3918] those things. And it's not that I
+[3921] thought they weren't valuable, but I
+[3923] didn't fully appreciate the
+[3928] the weak on week visceral delta you
+[3932] could perceive by being good at those
+[3934] things. It's
+[3935] >> like a naive like person thing to say,
+[3937] but it's true. You feel that way and you
+[3939] get it right. Plexity ox, which one's a
+[3942] bigger threat? I don't think perplexity
+[3944] is in our business. Perplexity is
+[3949] perhaps more of a vertically integrated
+[3953] product
+[3955] which competes with a
+[3958] I know instinct or a clock pot or a clot
+[3961] go work and all those. So I don't think
+[3965] of them as a in our search necessarily.
+[3969] >> Yeah. Yeah, like web search is like web
+[3971] search to perplexity is like web search
+[3973] to a lab.
+[3976] >> So XA
+[3977] >> Yeah, XA is straight up in our business.
+[3979] Yeah.
+[3980] >> Single best VC meeting you've ever had?
+[3982] >> Josh and Todd. When Josh and Todd made
+[3985] the decision to invest,
+[3988] they flew out to spend time with me.
+[3992] That is the like it is like that is the
+[3995] single best meeting.
+[3996] >> Final one for you. When you look forward
+[3999] to the next 10 years, what are you most
+[4002] excited for? Chaos.
+[4005] Uh, by that I mean change. I think in
+[4008] the next 10 years a lot is going to
+[4010] change. And I think there are people who
+[4014] can build things
+[4018] to have in a world that's going to
+[4020] change fast
+[4022] make a material dent on where it ends
+[4025] up.
+[4026] So I feel that me my company is in a
+[4030] place where we have a role to play in
+[4035] that. What happens to the open web?
+[4038] What happens to content owners?
+[4042] Uh if we get things right,
+[4045] we will get to a better place. And so
+[4048] that [clears throat] possibility
+[4052] is exciting that it can be uh like true
+[4057] obsession and even if that day-to-day is
+[4059] hard and
+[4061] it's things don't work for some amount
+[4063] of time and it's totally worth it if you
+[4067] can see that you like bend reality in
+[4072] some
+[4073] way that you care about. Final one.
+[4077] What belief do you have that sitting
+[4078] around your San Franciscan dinner table,
+[4081] your friends would go, "What power? I
+[4085] don't agree with that one, dude. Not
+[4087] that one." Again, it depends on which
+[4090] dinner table because the the variance in
+[4092] the world is increasing. I don't think
+[4094] people buy this notion that there'll be
+[4096] this heent which are always running all
+[4098] the time for all of us. I think it's
+[4101] going to happen, but most people don't
+[4104] agree with that yet.
+[4107] You and I are in a bubble, but like even
+[4109] a San Francisco dinner table isn't
+[4111] always
+[4113] in full agreement there. All right,
+[4115] listen. As I said, I stalked the [ __ ]
+[4116] out of you. Um, I've so enjoyed this
+[4118] discussion. Thank you so much for
+[4120] putting up with my meandering and you
+[4123] this was fun.

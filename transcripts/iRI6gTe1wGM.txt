@@ -1,0 +1,1731 @@
+[0] Parallel Web Systems closing a $100
+[2] million series B funding round last
+[4] month valuing that AI startup at $2
+[6] billion.
+[7] >> You were at Twitter for 11 years. You
+[8] were CTO, then you became CEO.
+[10] >> I was also an engineer before that.
+[12] We're building a collection of APIs that
+[15] agents use to [music] search and access
+[17] the web.
+[18] >> Parallel is a almost 3-year-old company
+[21] now. I was the lunatic walking around 3
+[23] years ago telling people agents will use
+[26] the web 1,000 x more than humans ever
+[28] have. Most people didn't believe me at
+[30] the time. I was wrong.
+[31] >> Why?
+[31] >> 1,000 x more than my deck literally
+[33] contained a section which is like, are
+[35] we too early? Turns out we were not too
+[37] early. We're building a parallel web for
+[38] agents. We can transform the web even if
+[41] you don't publish your website to be
+[43] agent friendly. We'll do that for you.
+[45] >> In such a competitive career in every
+[48] stage, how do you not break from the
+[50] pressure?
+[51] >> What pressure?
+[51] >> You don't feel pressure?
+[52] >> No.
+[57] >> [music]
+[63] >> Prague, welcome to Sourcegraph.
+[66] >> Thank you for having me.
+[67] >> Well, we're in Index's office in San
+[69] Francisco. It is gorgeous here. They're
+[70] one of your investors. I'm not sure if
+[72] you've ever gotten asked this question
+[74] before, but what have you gotten done
+[76] this week?
+[78] >> I'll tell you what I got done today.
+[79] >> Okay.
+[80] >> We just shipped a really exciting
+[82] integration with BrowserBase.
+[85] We now power search in BrowserBase. And
+[88] if you think about every AI agent that
+[91] people use,
+[92] what are they doing? They're looking at
+[94] your internal information. They're
+[96] looking at web information. They're
+[97] searching a bunch a bunch more than us.
+[100] Then they're going into a browser
+[102] logging in and doing something buying
+[104] something writing something.
+[106] Um so, that's what we got done today.
+[108] >> Congratulations.
+[110] Uh we were talking a lot before this and
+[112] we're having a really great discussion.
+[114] Every interview I've had recently is
+[117] some sort of explosive growth of agents
+[120] and it's going to be really fun to
+[121] unpack all of that because from your
+[123] point you were talking about read and
+[125] versus write, what you're doing versus
+[126] browser base. So, I guess to start,
+[129] let's talk about that. Parallel, what is
+[131] parallel? How is it different? How is it
+[133] evolved? And how are you learning as
+[136] things are just changing so fast?
+[138] >> Yeah, um Parallel is a three almost
+[142] three-year-old company now.
+[143] Um I was the lunatic walking around 3
+[147] years ago telling people agents will use
+[149] the web 1,000 x more than humans ever
+[152] have.
+[153] And there were no agents.
+[155] Agents didn't work. Most people didn't
+[158] believe me at the time. Fortunately,
+[160] some did including Index. And at the
+[163] time it felt like the science fiction
+[165] hypothesis that there will be a lot of
+[166] agents at work and in our personal
+[168] lives.
+[169] And that they'll be doing like web
+[171] searches for some reason. I believed it
+[173] because I had obsessed with it for a lot
+[175] long time. But today
+[177] if you look at like what's happened in
+[179] the last 3 years,
+[180] like
+[182] I was wrong, but on the other side
+[185] >> Why?
+[186] >> 1,000 x is too low.
+[188] I think at the time I thought 1,000 x
+[190] was like the crazy number to make up.
+[192] >> Okay.
+[193] >> about, right? And at the time I was like
+[196] my deck literally contained a section
+[198] which is like, are we too early? Turns
+[201] out we were not too early. Turns out
+[203] today if you force me 1,000 x is too low
+[206] a number.
+[207] Uh
+[208] if you just look at
+[209] just some high-level math, right? A
+[211] person, an average person does like
+[214] order of 10 or less Google searches a
+[216] day.
+[218] I was checking how many I do.
+[220] Several thousand now. My agents, the
+[222] ones I track.
+[223] >> Wow.
+[223] >> Several thousand per day.
+[225] The all the agents that I use today.
+[227] So, I am now sitting at a roughly a
+[229] 1,000 x, a little bit less than 1,000
+[232] personally.
+[233] Most of the world is not.
+[237] Most of the world will
+[239] in due time. Might take us a few years.
+[241] but 1,000 is a low number.
+[244] >> But, is that efficient? Do you think
+[247] that'll crawl back at a certain point
+[250] cuz they'll just get smarter and know
+[252] where to go?
+[253] >> Yes, but it is efficient because the
+[256] other part of the story is that you got
+[258] a You can't build old school search in
+[260] 2000 x of this. You think about like,
+[262] okay, all the infrastructure that
+[265] a Google might have built to serve
+[268] whatever
+[269] of 10 billion searches a day. Like, the
+[272] best guess I have is 10 billion a day is
+[275] what Google will do. They have a lot of
+[277] infrastructure to pull that off.
+[279] I don't think we get to build 1,000 x
+[282] that infrastructure
+[283] to do 1,000 x the searches, right? So,
+[286] part of what we do is build extremely
+[290] efficient and optimized search, which
+[292] again benefits from models getting
+[294] better
+[295] for us to be able to distill
+[298] intelligence, ranking into smaller and
+[301] smaller
+[302] models for us to be able to use
+[306] GPUs as the underpinning of
+[310] search indexes. Historically, search was
+[312] done on
+[313] CPUs.
+[314] Memory is CPU bound.
+[316] Uh
+[317] now, you get to architect and
+[320] re-architect search
+[322] for a price performance band
+[325] that the world never needed
+[328] until today.
+[328] >> Of one of the things we were talking
+[330] about before, I recently interviewed G
+[333] from Vercel. And this is, you know,
+[336] maybe this is in parallel, but AI agents
+[339] for coding have reached 60% of traffic
+[343] on their indices, what they see.
+[346] You had a hot take.
+[347] >> Generally, on the web, the statistic
+[349] being shared these days in the last few
+[351] months is that agent traffic is
+[353] exceeding human traffic on the web.
+[356] That's roughly the characterization.
+[358] Now, there are two
+[360] things to remember. An agent for roughly
+[362] doing the same work that a human does.
+[366] Will likely do a lot more searches
+[368] because it can
+[370] and a human is time constrained.
+[373] An agent isn't really. It's more
+[376] and right now they're not even that
+[377] dollar constrained because people are
+[379] willing to spend on frontier.
+[381] A human read on the web or a human
+[383] search on the web to create
+[385] equal length value.
+[389] It takes way more agent traffic. A lot
+[392] of agent traffic is also people crawling
+[394] for pre-training and people
+[396] Like when you look at like
+[398] if you're a website owner and you're
+[399] looking at
+[400] automated activity versus human
+[402] activity.
+[403] Automated activity is ripping.
+[406] But
+[407] my best estimation right now of where we
+[410] are is agents are using the web
+[413] 10 to 20% of humans. Which is to say if
+[416] my 1000x number is right
+[419] we have from here at least 5000x
+[423] or 10000x growth left.
+[426] Which is another way of saying
+[428] we are very early with agents. I think
+[431] in like in the Bay Area in Silicon
+[433] Valley we're all living in a little bit
+[434] of a bubble.
+[435] >> Yeah.
+[435] >> I think most people's agents aren't
+[437] doing the number of searches my agents
+[439] are doing.
+[440] Uh but they will.
+[441] >> So Muse just came out with Jolly and I
+[445] really like Jolly the character from
+[447] Muse.
+[448] Um
+[448] we see dots coming out for Open AI.
+[452] We've been seeing a lot of these agents
+[454] pop up for individuals, for consumers.
+[457] That growth is faster than any growth
+[461] ever seen. Like
+[463] >> Yeah.
+[464] >> even ChatGPT. I think maybe possibly.
+[466] We'll see. But how do you expect that
+[471] to grow and
+[473] I guess
+[475] where does the retention stay?
+[477] >> Two things. One, I have to make a note.
+[480] We should call out interesting, too.
+[482] >> Yes, I almost forgot.
+[483] >> I [laughter] am The reason is listen,
+[485] I'm on the rebel alliance here.
+[487] >> Okay.
+[487] >> Which is that are all these big people
+[489] >> Yeah. and then there are us
+[492] startup founders who are running at
+[495] solving really hard problems and pushing
+[497] the frontier of what's possible and
+[499] innovating.
+[501] So
+[503] we should talk about Instinct.
+[504] >> Yeah.
+[505] >> They are
+[506] going to
+[508] amazing product. So yes, the category is
+[511] amazing. It's interesting. I think it's
+[513] growing really fast. I don't have any
+[515] insider information around
+[517] retention.
+[520] I am as you can imagine it's a
+[523] professional hazard that I use every one
+[526] of these agents.
+[527] >> Yeah.
+[528] >> And I try to deeply understand what they
+[533] can and cannot do and what problems we
+[535] can solve for them.
+[537] We'll get into this category and how it
+[538] changes our product strategy later. But
+[540] I think that my expectation is that
+[543] these agents
+[545] retention will be
+[547] good.
+[548] And it'll be good because
+[551] for the first time
+[553] the product
+[555] onboarding feels
+[558] natural. Like not someone designing like
+[560] a bunch of UX click targets and flows to
+[565] get you to
+[567] understand the product.
+[569] The product is natural. All of these
+[572] products are somewhat natural.
+[574] And the question is can they deliver
+[576] [clears throat] on the promise created
+[578] by the UX? The UX is you can text this
+[581] thing.
+[581] >> Mhm.
+[582] >> I can do anything.
+[583] >> Yeah.
+[583] >> That's the UX. It's not complicated.
+[584] >> Yeah.
+[585] >> Now retention is entirely a function of
+[588] can it actually deliver on this very
+[590] simple
+[592] high-level
+[593] promise
+[594] often enough to become a part of your
+[596] life.
+[598] Now it's going to happen
+[600] like a lot of other products struggle
+[602] with the onboarding UX
+[604] barrier to entry.
+[606] >> Mhm.
+[606] >> But this new generation of products just
+[608] that just not a thing.
+[610] And so I am feeling that retention will
+[613] get solved here.
+[614] >> Is that where you think Open Claw maybe
+[618] hit a wall? Like because that was really
+[621] the first.
+[622] >> No, I think Open Claw was right
+[625] in all of the ways.
+[627] Um yeah, I think once someone got
+[630] it's just not for the masses, right?
+[632] It's just like
+[633] most people don't have the ability
+[637] to set it up and then to keep up the
+[639] change. I think the other factor we
+[641] discount, it's not just a one-time
+[644] cost to set something up.
+[647] Things are changing so fast
+[650] that you have to adapt
+[653] your instantiation of it alongside that
+[656] change.
+[657] And you have to adapt your use of it
+[659] alongside new capabilities.
+[661] So part of it might have been that the
+[663] setup time because of the flexibility
+[665] and you controlling it was
+[668] far too much.
+[669] Part of it is also that
+[672] it was perhaps a little too early.
+[676] Right? Because in the beginning not
+[679] there was like one model which was
+[680] really good, like the Opus model.
+[682] >> Mhm.
+[682] >> And then as soon as you move to other
+[684] models, it wasn't as great
+[686] in the very beginning when people
+[688] started using Open Claw late last year.
+[690] And so you had to adopt alongside it.
+[692] But today
+[694] as evidenced by Instinct and Muse
+[697] >> Yeah.
+[699] >> you kind of don't have to know or think
+[701] about it and
+[703] the product will change underneath, but
+[705] as the customer of it
+[707] you don't need to know what changed in
+[709] the last month.
+[711] You're
+[712] like oblivious
+[713] to the capability improving underneath.
+[715] >> I can't discount that this was really
+[717] like just invented. So how did you You
+[721] mentioned this at the start of the
+[722] interview, but like
+[724] you've been obsessed with this for a
+[725] while.
+[726] >> Yes.
+[727] >> So what does that mean and how?
+[729] >> So I think I got obsessed with it about
+[731] almost three and a half years ago,
+[733] I was the I don't know if people
+[735] remember. There was like this moment of
+[737] this baby AGI and AutoGPT. Speaking of
+[742] oftentimes developers in the open-source
+[744] world being ahead of everything else.
+[747] >> Mhm.
+[747] >> People were building with like I don't
+[749] know what is the model of the day,
+[750] GPT-3.5, whatever. Like old models that
+[752] weren't
+[753] like relative to today, they were like
+[755] really bad models relative to today. And
+[757] people were trying all these things, and
+[759] I was trying all of these things to try
+[760] and make things work.
+[762] Um
+[763] and
+[764] they didn't work.
+[766] But, if you believed
+[769] you spent any time with the labs back
+[770] then,
+[772] you
+[773] internalized
+[774] how models will scale and how models
+[777] will improve.
+[778] Like in some sense today,
+[780] it feels like everything changes every
+[782] month.
+[783] In some sense
+[783] >> know if it's every month. It might be
+[784] every week.
+[785] >> But, [laughter] if you look at it in a
+[786] different way, almost nothing that is
+[788] happening is diverging from what you
+[793] could have predicted in a straight line
+[795] >> Mhm.
+[795] >> 3 years ago.
+[796] >> Yeah.
+[796] >> Models will keep getting
+[798] bigger
+[800] and better.
+[802] They will run for longer. Holding
+[803] capability constant, models will get
+[806] way, way, way smaller and cheaper.
+[810] And people will be able to productize
+[812] around them
+[813] to disrupt
+[815] every category of work that can be done
+[817] on a computer.
+[818] These were very simple things
+[820] that
+[822] we believed and said
+[824] 3 years ago.
+[826] And we have only seen evidence
+[829] week on week and month on month
+[831] supporting
+[832] these very few simple things.
+[834] >> Yeah.
+[834] >> And almost everything follows. So, now
+[836] you can say, "Yeah, I didn't have I I
+[838] didn't predict that like the big
+[840] category would be coding agents first,
+[841] right?
+[842] I didn't predict the CLI form factor,
+[845] right?
+[846] Those were all
+[848] bits of information and news
+[850] to me along the way.
+[852] >> Yeah.
+[852] >> But, the macro thesis of agents are
+[855] going to get more capable. You're going
+[856] to do a bunch of inference.
+[858] And for all the inference you do, you're
+[860] going to have to do web search along it.
+[862] I've now been on the record everywhere
+[863] saying that like the one invariant I
+[865] believe is
+[868] we will use a lot of GPUs for model
+[871] inference for agents, whether they be at
+[875] work
+[876] or consumer agents.
+[878] And for every 10 GPUs the world spends
+[881] on model inference, we'll spend one to
+[883] two
+[884] on web search.
+[885] >> Mhm.
+[886] >> That's the business I'm in.
+[887] >> So, are you aggregating GPUs? You've
+[889] raised 230 million reported and
+[892] announced. I don't know.
+[894] But is are you aggregating GPUs?
+[896] >> Yeah, we are
+[899] not I wouldn't use the word aggregating.
+[901] Mhm. We are
+[903] buying which renting
+[905] GPUs
+[907] uh
+[907] to build the scale of search traffic
+[910] that we are seeing and expecting.
+[913] Uh and
+[914] as I said, we grow alongside inference.
+[916] So, inference is growing, so we have to
+[918] do a proportionate amount.
+[920] I don't know if it's like already a I
+[923] don't think it's a core competency of
+[924] us. Like we have been in
+[926] multiple mad GPU scrambles
+[930] >> Yeah.
+[930] >> in the last 3 months
+[932] to be like, "Oh we need GPUs. We
+[935] don't have GPUs. Can someone figure it
+[937] out?" And like you're making a bunch of
+[938] calls and like
+[939] >> Who are you calling?
+[940] >> Sorry?
+[940] >> Who are you calling?
+[941] >> Everyone.
+[942] >> [laughter]
+[942] >> Like
+[943] everyone. Like every hyperscaler, every
+[948] neo cloud.
+[949] >> What's like the typical response back
+[951] because this comes up in pretty much
+[952] every conversation now. It's like, how
+[954] do you get I guess the allocation of
+[956] GPUs?
+[958] >> No, I think it's like I think the
+[960] at least for us, I think it's true for
+[962] many people.
+[964] It's like, okay, which GPU is it?
+[966] >> Mhm.
+[968] >> Physically where is it? Sometimes we
+[969] need GPUs within
+[971] 5 milliseconds of where our large web
+[974] index is sitting.
+[975] >> Okay.
+[976] >> Other GPUs which sometimes more
+[977] flexible. Like there were multiple GPU
+[979] workloads. It's not just like, "Okay, do
+[981] you have GPUs for me?" It's like, "Do
+[983] you have the right GPU in the right
+[986] scale
+[987] in the right physical location
+[990] for me available
+[993] at the right time?"
+[995] And that is what makes the problem
+[998] much harder.
+[1000] Uh
+[1001] I think so far we have managed to solve
+[1004] every problem we've encountered. We've
+[1006] not had to turn away a customer because
+[1007] I didn't have GPU.
+[1009] >> Right.
+[1009] >> But we've had a bunch of
+[1012] GPU acquisition fire drills.
+[1015] >> [snorts]
+[1016] >> I mean, that's a really interesting line
+[1018] to go down. It's like, "What is the
+[1019] sourcing process like for GPUs?" Like,
+[1022] "What are the main questions that you're
+[1023] asking? What do you need?"
+[1025] >> Yeah, so I think you mostly So, I think
+[1028] different workloads are different.
+[1030] But for the bulk of our workload, it's
+[1031] like, "How many GPUs? Which types are
+[1034] you open to?
+[1036] When do you need them? And where must
+[1038] they be?" So, it's like there's too much
+[1041] more to it. I think for certain large
+[1042] training clusters, there's a little bit
+[1044] more to it.
+[1044] >> Mhm.
+[1045] >> Uh and then for us, like, "Are you
+[1046] willing to
+[1048] commit enough duration to that physical
+[1051] thing?"
+[1052] Um
+[1053] Yeah, but that that's it's not
+[1055] complicated. The reality is that the
+[1058] I wouldn't say the market is entirely
+[1060] efficient right now. Like a lot of it is
+[1062] on iMessage.
+[1063] >> Really? [laughter]
+[1063] >> Yeah.
+[1064] So,
+[1065] So, yeah, but it works.
+[1067] The market works.
+[1069] >> Well, that's crazy. So, you're doing
+[1071] deals on iMessage for GPUs?
+[1073] >> Not exactly. You're feeling out
+[1075] availability on iMessage. And then like
+[1077] the
+[1078] the finance person then calls the
+[1080] finance person, and the paperwork gets
+[1081] done.
+[1082] >> Oh my god.
+[1083] >> This episode is brought to you by Brex,
+[1086] my favorite. You become what you spend
+[1088] on, and I refuse to spend my time on
+[1090] work that shouldn't exist. Expense
+[1092] reports, receipt chasing, and manual
+[1095] closes.
+[1096] The companies building what's next from
+[1098] Vercel, OpenAI, Anthropic, Grinola, and
+[1102] Deepgram. All made the same call. They
+[1104] all run on Brex. Brex is the intelligent
+[1107] finance platform that combines cards,
+[1109] expenses, and banking into a single
+[1112] stack with intelligent finance built in.
+[1115] AI agents that handle expenses
+[1117] automatically, enforce policy before
+[1119] spend happens, and close your books in
+[1122] minutes. That's why Sourcery runs on
+[1124] Brex, so I can spend time on building
+[1126] and not busy work. It's time to get Brex
+[1129] AF. Learn more at brex.com/sourcery.
+[1134] That's b r e u r c e r y.
+[1140] Bye.
+[1141] >> From handshake to signature faster.
+[1143] Harvey, the AI platform built for legal
+[1145] work, is trusted by 80% of the Am Law
+[1148] 100 and over 20% of the Fortune 500.
+[1151] Learn more today at harvey.ai.
+[1154] That's harvey.ai.
+[1158] >> AI needs more than chips. It needs
+[1159] power, land, and infrastructure. Zone
+[1162] develops next generation data center
+[1164] campuses, partnering with AI companies,
+[1167] site developers, and technology leaders
+[1169] to bring compute online faster and at
+[1172] scale. Zone is building the foundation
+[1175] of the AI frontier. Visit
+[1176] zonefrontier.com
+[1178] to learn more. That's zonefrontier.com
+[1182] to learn more. I want to go back to the
+[1185] topic of scale cuz we were chatting
+[1188] about historical scale and what that
+[1190] used to look like and what you would
+[1192] expect. So, you were at Twitter for 11
+[1195] years. You were CTO, then you became
+[1197] CEO.
+[1197] >> I was also an engineer before that.
+[1199] >> You were also an engineer before that.
+[1200] You've done the whole thing. Um
+[1203] you also have a PhD. I've done all this
+[1204] research. But, I want to talk about
+[1207] that. So, like can you set expectations
+[1209] now? Like what would scale meaningfully
+[1212] look like today if like back then it was
+[1215] a triple triple double double, now it's
+[1216] like what do you have to achieve?
+[1218] >> I don't know how somebody else could do
+[1220] it. For our business, turns out the
+[1222] answer is relatively easy.
+[1223] >> Mhm.
+[1225] >> As I've said, like we just
+[1227] build alongside inference.
+[1230] So, if you think about
+[1232] inference growing year on year,
+[1235] to us that is the anchor.
+[1237] Like our right goal is to grow
+[1240] faster than inference for agents for
+[1243] knowledge work or consumer agents grow.
+[1246] So, if we grow alongside or faster,
+[1250] I'm feeling pretty good.
+[1251] Right? And that's to us the benchmark.
+[1253] Now,
+[1255] what is the right inference benchmark?
+[1257] That's a question
+[1259] I don't know long-term the answer to.
+[1262] But I think in the short-term it's
+[1264] clear that
+[1266] GPUs that are coming online this year or
+[1268] next year
+[1270] are going to do inference.
+[1273] And
+[1274] so then they're going to do search
+[1275] alongside it. So, the short-term there
+[1277] is very clear, but our benchmark is just
+[1280] growth of inference.
+[1281] >> So, what is that number?
+[1282] >> I think like the easiest approximation
+[1284] is 10x. You have to think about like a
+[1286] 10x goal as the very simple round number
+[1290] if you think about
+[1291] today. Like if you'd asked me last year,
+[1293] I would have probably said a lower
+[1295] number.
+[1295] >> Mhm.
+[1296] >> But
+[1298] the pattern here is even when I have
+[1301] thought I was being provocative in
+[1302] making up a high number,
+[1304] I have
+[1305] somehow managed to underestimate.
+[1308] So, now I can I feel like I can go to
+[1311] 10x. Feel a little bit uneasy that it
+[1312] feels crazy to grow 10x for too many
+[1314] years.
+[1315] You know, how long can that happen?
+[1318] Maybe I'm wrong again.
+[1319] >> I'm curious because
+[1321] you get to see so many different market
+[1325] insights from internally, externally,
+[1328] all around.
+[1329] What are what are some surprises that
+[1332] you've come across and what are the
+[1333] signals you're looking for?
+[1335] >> So, I think it might be useful to
+[1337] tell people about the kinds of customers
+[1339] we end up working with.
+[1340] >> Okay.
+[1341] >> All of our insights, or at least my
+[1342] insights, come from working with people
+[1345] doing really, really interesting and
+[1347] unique things.
+[1348] We started working in the beginning with
+[1350] all of the people pushing the limits of
+[1352] building agents. So, some for customers
+[1354] like Harvey, Notion, they were some of
+[1357] the early people building agents for
+[1359] doing real work where the quality bar
+[1362] for that work was quite high.
+[1365] And everyone in the adoption chain was
+[1367] like, "Oh, can we trust this agent to do
+[1370] our work?"
+[1371] That was the question being asked.
+[1373] Um and we by working with like a really
+[1377] demanding
+[1379] customers or
+[1382] customers who had really demanding
+[1383] customers in turn,
+[1385] we ended up really pushing our system's
+[1388] capabilities on the quality dimension.
+[1391] Right?
+[1392] The next phase, I would say, is like
+[1395] voice agents are
+[1398] starting to work.
+[1401] And
+[1403] the interesting thing there is initially
+[1404] there was some acceptance for your voice
+[1407] agent pausing a little bit unnaturally
+[1411] or
+[1413] being like,
+[1414] "Let me look that up and come back to
+[1416] you." Like that was acceptable for like
+[1419] a 3-month period, I think.
+[1421] And then very quickly today, if that
+[1423] happens to you,
+[1425] at least the people who've interacted
+[1426] with multiple voice agents,
+[1428] you'll be like, "That is ridiculous.
+[1429] Like that's a really bad product."
+[1432] And so now you're seeing all these voice
+[1433] agents which are like super natural,
+[1437] but also super fast. So, what does that
+[1439] mean for web search? Now you got to be
+[1441] able to search the web in like 150 or
+[1443] 200 milliseconds. Like human web search
+[1445] was like a
+[1446] sub-second product, like 600, 700
+[1448] millisecond product roughly end-to-end.
+[1450] Because we don't notice it getting any
+[1452] faster, right?
+[1454] For a voice agent,
+[1455] that latency constraint on web search is
+[1458] unacceptable.
+[1459] So, now you have to push yourself on the
+[1460] quality dimension, on the cost
+[1462] dimension, and the latency dimension.
+[1464] And you got to crush all three.
+[1466] And that's been something like we get
+[1469] pushed by
+[1470] sort of the frontier customer who is
+[1472] like
+[1473] listen, the product experience that
+[1476] we can build today
+[1478] is going to be unacceptable
+[1480] very, very quickly.
+[1482] So, what does every underlying infra
+[1484] piece need to solve
+[1486] >> Right.
+[1486] >> in order to create the
+[1489] market expectation
+[1491] which changes so fast. Right? Like I
+[1494] think
+[1495] I don't know.
+[1497] Going back to web search, one of my
+[1500] you should some at some point try, even
+[1502] with the new model
+[1504] turning off web search
+[1506] in ChatGPT once.
+[1507] >> Okay.
+[1508] >> I think we all used ChatGPT for the
+[1511] first, I want to say eight months, maybe
+[1513] nine.
+[1514] It did not have web search and we were
+[1516] just talking to a model.
+[1517] Try to do that today.
+[1520] And see what happens.
+[1521] My bet is
+[1524] one, 90% of things you ask it will
+[1527] disappoint you.
+[1529] Number two
+[1531] you will feel like a caveman
+[1533] >> [laughter]
+[1533] >> like a caveman
+[1534] using that product. So, it's only three
+[1537] years, but three and a half, four years
+[1539] ago now.
+[1540] But our implicit expectations of
+[1545] a product that looks the same
+[1547] have changed so dramatically.
+[1550] And that
+[1552] is what sort of mind-boggling to me. And
+[1554] I think that is essentially what drives
+[1556] all technical progress.
+[1558] >> Yeah.
+[1558] >> Is because it becomes stable stakes.
+[1561] >> Right.
+[1562] And now they might be getting
+[1563] subconscious, you know, they might have
+[1566] some consciousness to them and start
+[1568] judging us
+[1569] and attacking us.
+[1572] >> [laughter]
+[1572] >> I I actually
+[1573] >> Mhm.
+[1574] >> I don't know. I'm more
+[1576] of an optimist on this.
+[1577] >> Okay.
+[1578] >> I think they will actually get
+[1579] proactive. So, they will know us.
+[1582] They will know
+[1584] our explicit and implicit needs
+[1587] and they will try to proactively do
+[1589] work. That's the phase, the next phase.
+[1591] I think you're trying to you're starting
+[1593] to see glimmers of proactivity
+[1595] in Instinct and Muse and Dot.
+[1599] Glimmers.
+[1600] I think they're still more reactive than
+[1603] proactive. They're always on,
+[1606] but they're not
+[1607] really proactive.
+[1609] I think the next era they will be hyper
+[1612] proactive,
+[1613] which I'm really excited about.
+[1616] >> I guess
+[1617] uh to peel back because this is
+[1620] a brand new economy and layer of the
+[1623] internet and what could I don't know,
+[1625] the internet might not exist anymore.
+[1627] Maybe we'll just use agents. This is
+[1629] what people are saying. What are those
+[1631] components of the underlying
+[1633] infrastructure? You're one of them. What
+[1635] are like what makes up that base?
+[1637] >> The two ways to talk about this, I think
+[1639] before going to the internet, let's
+[1640] first talk about the
+[1643] the underlying infra components for
+[1645] building an agent.
+[1646] You need a model, which is inference.
+[1648] You need perhaps a sandbox.
+[1652] I think you need web search
+[1654] like we provide.
+[1656] You need an action space, which includes
+[1658] a browser
+[1659] and a few other API hooks.
+[1662] And you need access to a bunch of
+[1664] connectors to access your personal data
+[1665] or your company's data.
+[1668] You build these together and you can
+[1669] build an agent. And then the rest of it
+[1671] is the all of the same stuff we've
+[1673] always had, which is observability,
+[1677] feedback loops, security.
+[1680] And then you have a cloud for agents,
+[1683] right? Now, you go into the the web
+[1686] piece of the infra layer.
+[1689] You now need to do
+[1691] web search, but also you need to figure
+[1692] out to your point around the internet
+[1696] shutting down. I do think the primary
+[1698] consumer of the internet is going to be
+[1699] an agent,
+[1700] which means the internet will get
+[1702] re-architected.
+[1704] The first thing that's happening is
+[1706] agents are reading the web, which is
+[1708] what we
+[1709] What we haven't figured out is, okay,
+[1711] what's is new business model?
+[1713] Like previously, if you put your content
+[1715] out there on the web,
+[1717] you were either building a subscription
+[1721] business, which is like you put some
+[1722] content out there, a bunch of users
+[1724] come, some fraction of them
+[1726] subscribe for a monthly subscription
+[1729] to a newspaper. Other internet
+[1731] businesses were monetized by saying,
+[1733] "I'm going to put ads
+[1735] and I will get paid based on human
+[1737] visitors
+[1739] seeing ads." Other business models were
+[1741] like either affiliate business models,
+[1742] so you drive a transaction of some sort.
+[1746] All of these business models have
+[1747] fundamentally relied on
+[1750] us random walking the web as humans,
+[1754] opening pages,
+[1756] and
+[1757] taking the next action after the next
+[1759] action on it, some of which are
+[1761] monetizable actions for these
+[1763] participants.
+[1765] If agents are doing this,
+[1769] the buying action still remains.
+[1772] Every other action breaks.
+[1775] So, you can't monetize attention
+[1776] anymore.
+[1778] So, ads business model, per seat
+[1780] subscription business models, these
+[1781] things are
+[1783] not
+[1784] durable.
+[1786] So, what replaces it?
+[1788] That's part of what gets me
+[1791] super, super excited about building
+[1792] parallel. Because like I think solving
+[1794] just technology problems, I think is far
+[1796] less interesting than solving a
+[1798] technology and a business model problem.
+[1802] So, we have a highly opinionated point
+[1805] of view on how we keep the web open,
+[1808] on how we incentive align
+[1811] content owners
+[1813] with the AI
+[1815] app or AI agent, so that a content owner
+[1819] isn't sitting there saying, "I'm going
+[1820] to block all AI agents because I don't
+[1822] know how to
+[1823] how that becomes business for me."
+[1825] >> Right.
+[1825] >> Right?
+[1826] So, we need to solve this problem for
+[1827] people, which is like, "Okay, give me an
+[1829] incentive to make my content available
+[1832] to AI agents." What is that?
+[1835] We built a system which
+[1838] runs a model, not surprising,
+[1841] to compute
+[1842] how much to pay
+[1844] each content owner every time an agent
+[1847] reads their content.
+[1849] And we've been now doing a bunch of
+[1851] partnership with content owners. And the
+[1854] bet we're making is that
+[1856] we'll be able to keep the web open as a
+[1858] result of our version of we can call it
+[1861] AdSense, which is easy auto differential
+[1864] pricing actually provides content owner
+[1867] value for high-quality content.
+[1868] >> That's a really good point. Um
+[1871] I was interviewing USV, Union Square
+[1874] Ventures, not too long ago.
+[1876] And Fred Wilson was talking about how
+[1880] Google, the traditional business there,
+[1882] is being cannibalized by AI, LLMs,
+[1885] agents. It just is. And so Gemini is
+[1888] like the Hail Mary to pull it in. And
+[1890] they're emphasizing that and they're
+[1892] taking advantage of that.
+[1894] I'm curious to go deeper into this
+[1896] monetization standpoint. Um
+[1899] in another interview I did at Browser
+[1901] Base with John Collison of Stripe,
+[1904] >> Mhm.
+[1904] >> he
+[1905] posed the question, do we need bot
+[1907] detection anymore? There's obviously
+[1909] good bots, there's bad bots, but if
+[1910] everything all the traffic becomes
+[1913] essentially bots, these agents,
+[1915] like what is the point?
+[1917] >> Yeah. No, so I think
+[1920] today
+[1921] there's a lot of people doing a lot of
+[1923] bot detection. The word bot detection, I
+[1925] think, is a few different things.
+[1928] It is
+[1930] crawlers.
+[1932] It is actual agents working on behalf of
+[1937] a human or a business.
+[1939] It is um malicious bots,
+[1943] uh which
+[1945] are trying to do harm.
+[1948] So, I think we have to use that word now
+[1950] a little bit more carefully than we have
+[1952] in the past
+[1953] because
+[1954] historically people have mostly had
+[1956] negative connotations with that word in
+[1958] that like it's not serving anyone.
+[1960] >> Yeah.
+[1961] >> Today there's a category which is
+[1962] actually
+[1964] highly useful for
+[1966] you or for me. Like I would like my
+[1969] agents
+[1970] to inherit
+[1972] privileges I have. So I think we should
+[1974] be careful. I do think there is like a
+[1976] the bot detection market is
+[1978] doing well right now.
+[1981] And doing well right now because we
+[1982] haven't figured out how to do incentive
+[1984] alignment.
+[1985] >> Mhm.
+[1985] >> And there's a separate kind of incentive
+[1987] alignment needed, let's call it on the
+[1989] action side.
+[1990] So earlier I spoke about the incentive
+[1992] alignment needed on the content side,
+[1993] which is like how why do I let you read
+[1995] my content? The other side is what
+[1997] happens if I let your agent buy on my
+[2001] store?
+[2002] And you're starting to see divergent
+[2003] strategies there. I'm of the belief that
+[2006] we need to figure out how to solve
+[2007] problems so that all agents, not just
+[2010] the ones built by large lab,
+[2012] can both access all
+[2014] content and take all actions
+[2017] that
+[2018] their owner
+[2020] is allowed to.
+[2022] Right?
+[2023] Um but we're not there right now.
+[2025] >> One of the biggest topics behind growth
+[2027] is cybersecurity and active threats.
+[2033] How do you I know you said you're an
+[2035] optimist,
+[2036] but realistically like how do you see
+[2039] the biggest concerns around this?
+[2040] >> No, I think
+[2043] cybersecurity risks are real.
+[2046] Um
+[2048] I think agents help both defenders and
+[2053] attackers.
+[2054] Problem always is that So the people who
+[2059] rush ahead to adopt agents for defending
+[2064] themselves,
+[2065] I think
+[2068] will be fine
+[2069] because attackers like to find the
+[2071] weakest link.
+[2073] And there will always be a weakest link.
+[2076] Um
+[2077] So
+[2078] broadly that's what I think. Now, the
+[2081] security risk for something highly
+[2083] sensitive like the model weights of a
+[2086] frontier model are a whole different
+[2089] >> Mhm.
+[2090] >> [laughter]
+[2090] >> conversation.
+[2091] >> Yeah.
+[2091] >> But, by and large
+[2093] my intuition is that
+[2095] we will use coding agents aggressively
+[2099] to secure.
+[2100] But, along the way
+[2102] there's going to be a cyber event
+[2105] every few weeks of consequence
+[2109] which will drive action and urgency
+[2113] in
+[2114] getting ahead on defense.
+[2117] Yeah, we're going to spend a bunch of
+[2118] influence on both attack and defense.
+[2120] >> Do you see any of this analogous to your
+[2124] time at Twitter on consumer internet?
+[2126] Obviously, that's a huge one of the
+[2127] largest social media platforms, and so
+[2131] >> Yeah.
+[2131] >> that creates a lot of vulnerabilities.
+[2133] >> No, all of the
+[2135] there are obvious
+[2137] parallels, right? Uh
+[2140] not to just keep calling out my
+[2141] company's name again and again. Uh um
+[2144] So,
+[2145] Twitter, right? Like, there was a real
+[2147] incentive to attack, whether it were
+[2149] crypto spams.
+[2151] >> Yeah.
+[2151] >> Those were popular for a period, right?
+[2153] Um or whether it was
+[2156] some state-sponsored influence campaign.
+[2159] >> Mhm.
+[2159] >> Uh which we used to disclose a lot
+[2161] publicly. Those things always happened.
+[2163] It required real energy, focus to
+[2167] control.
+[2168] It is
+[2170] the thing most people don't understand
+[2172] is
+[2174] it is almost impossible to take it to
+[2175] zero.
+[2178] You have to contain it because it is a
+[2181] a knife fight, and the tactics change.
+[2183] Anytime you control some vectors,
+[2185] another new vector will emerge, and then
+[2187] you will control that.
+[2189] Um the other thing people don't
+[2190] understand is
+[2192] most of the bad stuff
+[2194] is stuff that doesn't
+[2197] show up on the surface.
+[2199] So, if you saw a account and thought
+[2202] this is a bot
+[2204] it's harmless.
+[2205] Because you could see that's a bot.
+[2208] So the real problem is going to be
+[2210] in the margins when
+[2212] we lose our ability to differentiate.
+[2214] >> Yeah.
+[2215] >> Either as people
+[2217] or as the technical people building
+[2219] these systems, when you can't
+[2221] differentiate
+[2222] a human from a bot or a agent.
+[2226] That's when you're like, "Okay, now I
+[2228] don't know
+[2229] what I'm up against."
+[2232] Um and I think that is very similar
+[2235] today
+[2236] uh that we used to deal with back then.
+[2239] >> Do you think bots should
+[2241] address themselves?
+[2242] >> I have two contradictory
+[2244] feelings about this.
+[2247] I do think
+[2249] good bots should
+[2252] declare themselves so that others can
+[2255] recognize them as good bots and treat
+[2257] them differently from bots that might be
+[2260] adversarial. And then we keep using the
+[2262] word bots. I would like to use the word
+[2264] agent.
+[2264] >> Okay, well.
+[2265] Right. [laughter]
+[2265] >> Because
+[2266] I really think bot has a more negative
+[2268] connotation, while an agent is a more
+[2271] appropriate word. I think agents are
+[2273] perhaps the good bots.
+[2276] Mostly. Um
+[2278] >> Yeah.
+[2278] >> The So yeah, I think
+[2281] they should declare themselves. I know
+[2283] there's like a bunch of protocols now
+[2285] being done around declaring identity or
+[2288] uh
+[2289] the world at large. The
+[2290] The core challenge is there, why or the
+[2293] other side is like
+[2296] There's a conceptual
+[2298] question. Should your agent
+[2300] have the same access as you?
+[2303] Should it inherit your access?
+[2306] Or
+[2308] should it have only a part of your
+[2309] access?
+[2310] Now I would really It would be so much
+[2313] better
+[2314] if we could figure out a way
+[2317] to get rid of the
+[2318] bad bots.
+[2321] But living in a world where we could
+[2323] enable our agents to have the access we
+[2326] have and grant that privilege.
+[2329] Today it's strange, right? Like I can't
+[2332] get my Instinct or Muse to have the
+[2334] access I have
+[2337] on many websites because they got
+[2339] blocked there.
+[2340] And they will get even more blocked if
+[2343] they started declaring themselves.
+[2344] >> Yeah. [snorts]
+[2345] >> And that is why I think we're in this
+[2346] moment of transition where these
+[2348] products have these rough edges
+[2350] partly because we haven't done incentive
+[2352] alignment.
+[2354] But if we started just declaring them
+[2356] everywhere, and they started declaring
+[2358] themselves everywhere. Like we don't
+[2359] participate in that space, but if
+[2360] started doing that,
+[2363] a bunch of people today because we
+[2364] haven't done the work to do business
+[2366] model alignment, are going to start
+[2368] blocking us.
+[2369] >> Yeah.
+[2369] >> And so these products then will look
+[2371] worse and be less useful.
+[2374] And that sucks.
+[2375] So to me the existential problem is how
+[2377] do we drive alignment between agents and
+[2381] everything on the web?
+[2382] >> Do you think everyone will need
+[2384] alignment and safety on their team? Is
+[2386] that the next higher class?
+[2388] >> Yeah. I think how do you not deal with
+[2389] the problem, right? Like we if you think
+[2391] about us,
+[2393] we are the web layer.
+[2394] The web is the
+[2396] is a dangerous place. Like anyone can
+[2398] post anything malicious anywhere, right?
+[2401] A lot of that content will flow into an
+[2404] agent's context.
+[2406] And so
+[2407] you can do injection attacks. Now, to
+[2410] the credit of model builders in the last
+[2412] 2 years,
+[2414] models have made very real
+[2417] strides on
+[2419] not being very vulnerable.
+[2422] But I think this whole will whole world
+[2423] will rely on defense in many many
+[2426] layers.
+[2427] So almost every layer has to obsess
+[2429] about this problem.
+[2430] >> Mhm.
+[2431] >> And you can't say, "Oh, models will
+[2432] solve it." We have to really focus on it
+[2435] to solve it at our layer before we get
+[2437] into the models. Then models have to
+[2438] really focus on it.
+[2440] Then the app builders who are building
+[2441] with models and with us have to really
+[2443] focus on it at their layer.
+[2445] So
+[2445] we have to deal with adversaries at
+[2447] every layer.
+[2449] And that is actually what gives you true
+[2452] defense and still the occasional thing
+[2454] will leak out.
+[2455] >> How good is AI at real professional
+[2457] work? Merkle's AI Productivity Index or
+[2459] Apex tracks [music] it with every major
+[2461] frontier model release. Built with
+[2463] partners like Harvey and Cognition, see
+[2465] where the frontier actually stands
+[2466] [music] at merkor.com/apex.
+[2469] Today's episode is sponsored by VCX by
+[2472] Fundrise. The public ticker for private
+[2475] tech. Allowing investors of all sizes to
+[2478] invest in venture capital. Learn more at
+[2481] getvcx.com.
+[2483] >> Public is a multi-asset investing
+[2485] platform where you can automate your
+[2486] investing with AI agents. Create your
+[2489] own custom agent with a simple prompt.
+[2491] Agents can monitor markets, execute
+[2494] trading strategies, and manage your cash
+[2496] across stocks, bonds, options, crypto,
+[2499] and more.
+[2500] Want to buy at market close and sell the
+[2502] next day's open? Just tell your agent.
+[2504] Automate your investing at public.com.
+[2508] >> Founders scale faster on Deel. Set up
+[2510] payroll for any country in minutes, hire
+[2513] anyone anywhere, get visas handled fast,
+[2515] and get back to building. Visit
+[2517] deel.com/sorcery.
+[2520] That's d e e l.com/sorcery.
+[2524] >> How did you recruit for your team,
+[2526] especially as this is moving so fast?
+[2528] So, you're you've global offices now.
+[2531] >> Yes. Um
+[2532] >> How big is the team and how how have you
+[2534] like recruited? What are the main roles?
+[2536] >> The team is about 120 people now.
+[2539] >> Mhm.
+[2539] >> I think we started the year close to 30.
+[2542] So, this has been a year of explosive
+[2545] growth.
+[2547] A lot of that growth
+[2549] has been because we had no
+[2552] GTM
+[2554] at the beginning of the year.
+[2555] >> Mhm.
+[2556] >> We were pure tech play.
+[2559] Now, the last 3 months, 6 months, we've
+[2562] built a pretty sizable GTM team. And
+[2565] that's been done because
+[2567] we're seeing all of these, almost every
+[2570] business
+[2571] that buys influence needs to buy web
+[2573] search.
+[2574] So, we're finding really large
+[2578] like whatever the top 100, 500 companies
+[2581] in the world
+[2582] starting to really
+[2585] spend on tokens and starting to really
+[2586] buy us alongside those tokens to make
+[2588] them more effective.
+[2589] >> Mhm.
+[2590] >> So, a lot of our growth is the sales
+[2593] team, which has been growing
+[2594] >> know to buy you alongside the tokens?
+[2598] >> They run into problems. So, one of the
+[2600] common things people run into is people
+[2602] start using a model.
+[2605] That model perhaps
+[2607] bundles itself with a web search.
+[2610] >> Okay.
+[2611] >> And they start building an application
+[2612] with that.
+[2614] Now, sometimes it's not good enough and
+[2616] the team realizes that it's the web
+[2618] search component which is causing it
+[2620] despite the model being great.
+[2621] It's causing it not to be capable enough
+[2624] to solve the problem they're solving.
+[2626] Which is
+[2627] perhaps how we started first working
+[2628] with some of the
+[2630] AI legal, AI finance, AI science
+[2633] kind of customers.
+[2634] >> Right.
+[2636] >> The second point at which they really
+[2638] need us is they decide to use multiple
+[2641] models.
+[2642] So, we're like, "Okay, we want to switch
+[2643] across multiple proprietary models on a
+[2646] dime. Or we want to start adopting uh
+[2649] open weight models."
+[2651] And at that point
+[2653] having the highest quality web search
+[2655] which works with every model
+[2658] actually enables model independence
+[2661] for you to have flexibility
+[2664] to to build your application. So, that's
+[2666] the second reason people buy us.
+[2669] The third reason is when people have
+[2670] really scaled use cases and now start
+[2674] optimizing for
+[2676] measuring ROI, optimizing for end-to-end
+[2678] costs.
+[2679] Because our search is so high signal
+[2682] >> Right.
+[2683] >> and token efficient
+[2685] the models do half the number of
+[2686] searches, use a far fewer tokens
+[2689] and they're actually cheaper, faster.
+[2691] That's the third reason people buy us,
+[2693] which is like,
+[2694] "I'm spending too much on tokens.
+[2696] It works. It's useful.
+[2698] Can you help us be more efficient?
+[2701] >> So, it's not just routing. You also help
+[2704] with token optimization.
+[2705] >> a lot for a lot of categories of
+[2706] knowledge work where a lot of work
+[2708] happens on the web,
+[2709] we help a lot in token efficiency.
+[2712] >> Wow.
+[2713] So, when we talked to Geo Verus Cell, we
+[2716] were talking about the shift of GTM. It
+[2718] was SEO, then it was GEO, and now it's
+[2721] AEO. So,
+[2723] >> [laughter]
+[2724] >> I think GEO and AEO are the same.
+[2726] >> A little bit, but not really. Cuz
+[2728] there's agents now
+[2729] >> are more than chat. GEO was like chat.
+[2731] >> Exactly. So, it's like Verus Cell has
+[2734] optimized itself for the agents coming
+[2736] to its websites so that agents can read
+[2738] the website and know exactly what
+[2740] products they offer, how they can use
+[2742] it. And so, because of that, Verus Cell
+[2744] is like one of the top
+[2746] uh uses for building out your products
+[2749] and that kind of coding and all that
+[2751] environment.
+[2751] >> No, I think that
+[2753] it's interesting you bring that up. 3
+[2755] years ago, when we put up our first
+[2756] website up, when we were still kind of
+[2759] didn't say anything. We were in stealth.
+[2761] Uh we had a machine version.
+[2763] And till this date, if you go to our
+[2765] website, you'll see like the human
+[2766] version.
+[2767] And then there's a toggle to transition
+[2769] into the machine version.
+[2770] >> Really?
+[2771] >> We've had it
+[2773] as far as I know, we were the first
+[2774] website to take on this metaphor because
+[2776] we're building a parallel web for
+[2777] agents.
+[2778] >> Yeah.
+[2779] >> And so, we have always carried this
+[2781] metaphor which now
+[2783] the world is coming around to.
+[2785] And it's like a cute thing to do. The
+[2787] truth is,
+[2789] the presentation layer almost doesn't
+[2791] matter because
+[2792] we can
+[2794] we can transform the web
+[2796] even if you don't publish your website
+[2798] to be agent friendly.
+[2800] We'll do that for you. Like we can
+[2803] we can understand what the human version
+[2804] is and how to help it become agent
+[2807] friendly.
+[2807] >> Oh, wow.
+[2808] >> Um we don't do AEO or GEO, but I think
+[2811] your your website will become consumable
+[2813] by agents with us.
+[2814] >> Mhm.
+[2815] >> But I do think like we, for example,
+[2817] even think of our onboarding
+[2820] and our documentation and
+[2824] every part of the developer or customer
+[2826] journey
+[2828] with the primary assumption
+[2830] that it's a human with a coding agent or
+[2833] developer with a coding agent rather
+[2835] than
+[2836] a developer.
+[2838] And so, you'll see a bunch of on our
+[2840] website, you'll see like
+[2842] put this prompt into your agent, and
+[2844] then it'll exactly know how to use
+[2846] parallel to solve whatever problem
+[2847] you're trying to solve.
+[2848] Uh
+[2849] like one like just like you just need
+[2851] the human needs to just authorize
+[2854] / add a credit card /
+[2857] accept terms.
+[2859] And the rest of it the agent can drip.
+[2861] So, really rethinking how you design
+[2863] every experience to the agent first is
+[2866] I think pretty fundamental.
+[2868] Uh Vercel, like I know is very agent
+[2872] built.
+[2873] So, people who live that world have a
+[2875] advantage.
+[2876] >> We have like probably like 10 or 15
+[2878] minutes left. Uh
+[2880] but, I'm curious
+[2881] I mean, you're doing a lot of press.
+[2883] Like you're out there. You're used to
+[2885] getting asked a bunch of questions. Like
+[2887] what are the questions you want to get
+[2889] asked?
+[2890] >> I spend a fair amount of
+[2892] time
+[2894] thinking about
+[2896] today
+[2897] proactive agents
+[2899] and always-on agents.
+[2901] How that changes the compute world
+[2905] and how that
+[2907] changes the web.
+[2909] So, the question I think
+[2912] there to me is
+[2914] And we've now built a bunch of systems
+[2916] which some people are starting to use
+[2919] around this notion of a proactive web.
+[2922] Or
+[2923] I've been out there saying the web will
+[2925] go from pull to push.
+[2927] So far,
+[2928] your primary as humans, our primary way
+[2931] of searching the web was just us going
+[2933] and searching on Google.
+[2935] For the rare few, you used Google
+[2937] Alerts. Frankly, work.
+[2941] Uh people tried to build like what
+[2942] Google Now and a bunch of these things
+[2944] which would send you notification.
+[2945] Nothing really worked on the web in
+[2947] terms of being proactive.
+[2949] I think with agents and the cost of
+[2951] intelligence going down, it is going to
+[2953] work.
+[2954] And so now if you imagine an instant
+[2956] real news
+[2958] implicitly understanding your world and
+[2960] your life
+[2962] and being able to
+[2964] set up essentially really really high
+[2967] signal, high precision, high recall
+[2970] alerts on everything that changes on the
+[2972] entire web
+[2973] to know when your agent needs to act on
+[2976] something on your behalf. So, something
+[2979] changes in the world or something might
+[2980] be happening.
+[2983] What do you need to do as a result or
+[2985] does that change your plan or does that
+[2986] change your actions?
+[2988] How we allocate compute
+[2991] in that world is a problem I'm currently
+[2994] obsessed with. Because the web is really
+[2996] large, right? Like there's a trillion
+[2997] pages out there. A bunch of them are
+[2999] changes changing every day. Most of it
+[3001] is junk.
+[3003] No matter how cheap you make compute, we
+[3005] have not enough compute to compute
+[3008] everything.
+[3009] So now we need to be really smart at
+[3012] prioritizing our compute over everything
+[3015] that is changing on the web.
+[3018] So that more compute
+[3020] can be spent on things which are
+[3023] actually actionable rather than junk
+[3025] changes.
+[3028] The rate of change of the web is also
+[3029] going to dramatically increase, right?
+[3032] You're starting to see that. Like people
+[3033] are publishing with agents. Like you can
+[3034] like the AI SEO businesses like churning
+[3038] out agent generated
+[3041] >> Yeah.
+[3041] >> content on the web, which just means the
+[3044] rate of change on the web is increasing.
+[3046] Which means the job of a search engine
+[3049] is to pull the signal from the noise
+[3053] as potentially more noise gets created.
+[3057] >> How do you think about data centers in
+[3060] space?
+[3061] >> I wish I knew more about it.
+[3064] >> Mhm.
+[3065] >> I I
+[3065] I hope they work.
+[3066] >> Have you gone down any of these rabbit
+[3068] holes in this compute?
+[3070] >> I haven't. I haven't gone down the data
+[3072] centers in space rabbit hole.
+[3075] I do think we need
+[3077] compute.
+[3077] >> Yeah.
+[3078] >> I have gone down a little bit of the
+[3080] how sovereign
+[3082] will participate in
+[3084] the data center.
+[3086] >> Mhm.
+[3086] >> And that is fascinating to me about how
+[3088] that'll play out.
+[3090] >> One of our partners is Brex, and they're
+[3092] all about performance and spending
+[3094] smarter and moving faster. I take this
+[3096] topic in a personal way. So, I do think
+[3100] performance is a matter of who you spend
+[3102] your time around. Some people say it's
+[3104] your closest five people. Some people
+[3106] think it's like your mentor, people who
+[3108] inspire you.
+[3110] For your career, tremendous career, very
+[3112] interesting. I'm so curious, who is that
+[3115] person or those people for you?
+[3117] >> My wife is Her name is Vinita.
+[3120] Uh
+[3121] I was an engineer at Twitter
+[3126] when
+[3128] we got to know each other.
+[3130] So, if you think of the part of my
+[3132] career where I've done well that people
+[3134] know about,
+[3137] it's
+[3139] mostly her.
+[3140] Uh she is
+[3143] a superwoman. She's hyper-ambitious.
+[3146] And
+[3148] I was ambitious,
+[3150] but I think she has driven my ambition
+[3153] even
+[3155] higher.
+[3156] Like, I have always aspired to be the
+[3160] top X in the world at anything I do.
+[3163] That's like the only way. Like, I was
+[3164] driven to do that for math. I was driven
+[3166] to do that for physics. I was driven to
+[3167] do that for
+[3169] computer science research.
+[3170] Uh and I think I got there for all of
+[3173] those. But, I don't think I
+[3176] would have thought I was capable of this
+[3179] until
+[3180] she pushed me.
+[3182] And then I was like, yeah, I I think if
+[3184] you care enough about something, I think
+[3186] you can go become top
+[3189] 10 in the world at anything. Now, the
+[3191] top one is a whole different field.
+[3195] Uh but I think like for me it's like the
+[3197] the standard setter is my wife. She is a
+[3201] she's a
+[3203] physician. She practices still. She's an
+[3206] investor at Andreessen Horowitz. She's
+[3209] done a She's done a startup.
+[3212] Uh she does healthcare. She does
+[3214] biotech. Uh she works
+[3218] really hard
+[3220] and is an amazing
+[3224] mom and wife.
+[3226] >> That's amazing. So, you guys have a nice
+[3227] little competitive dynamic.
+[3229] >> Yes. Yes. Yes. I think I am
+[3233] privileged that when I go to a lot of
+[3235] things like
+[3236] people use me to access her.
+[3238] >> Really?
+[3239] >> Oh, all the time.
+[3240] >> [laughter]
+[3240] >> Like people will come to me to figure
+[3242] out about how to get me to forward an
+[3244] email to her.
+[3245] >> Oh my gosh. That's amazing. Well, that's
+[3247] a really great call out. I wasn't
+[3250] expecting that. Why do you think partner
+[3252] selection or who you choose as a partner
+[3255] is so important?
+[3256] >> Um I think probably the most important
+[3258] decision
+[3259] in life.
+[3262] And like you As you said, right? Like
+[3265] you
+[3267] your peer group like I was fortunate
+[3269] growing up to have like a really crazy
+[3271] weird outlier of a peer group, right?
+[3273] Like all of my friends were
+[3276] essentially kids of nuclear scientists
+[3279] in India.
+[3280] And everyone was like, "Okay, I'm going
+[3281] to be the
+[3283] best at whatever we try to be."
+[3286] And so there was like this
+[3289] ambition {slash} competitive
+[3293] expectation all around. And so if you
+[3295] surround yourself and then I went to
+[3297] college and my college was the most
+[3298] competitive. And I went to grad school,
+[3300] that's the most competitive. So, you
+[3302] surround yourself in that and like you
+[3304] kind of surprise yourself
+[3306] by being around high expectations. So,
+[3309] you when you like this is what now
+[3311] everyone's talking about, right? Like
+[3312] you build a team if you have high talent
+[3313] density.
+[3314] It's a superpower.
+[3315] >> Mhm.
+[3316] >> If
+[3317] you don't hire outliers,
+[3321] you don't get outliers. If you hire only
+[3322] outliers, you get only outliers.
+[3325] There's a lot of self-selection that
+[3326] happens.
+[3327] Uh I've been fortunate to go through
+[3329] that journey and been like I got started
+[3331] in life with that kind of uh
+[3334] peer group.
+[3335] And then you kind of won't ever let
+[3337] yourself not be in that peer group. And
+[3340] that percolates into
+[3342] like your partner selection.
+[3343] >> Yeah.
+[3344] >> Which then further drives things. So,
+[3346] it's like kind of a self-fulfilling
+[3348] prophecy of sorts.
+[3350] >> In such a competitive career
+[3353] in every stage, how do you not break
+[3356] from the pressure?
+[3358] >> What pressure?
+[3359] >> You don't feel pressure?
+[3360] >> No.
+[3361] >> No?
+[3363] Why?
+[3365] >> Why would I?
+[3367] >> A lot of people do.
+[3368] >> Yeah, I think it's kind of a made-up
+[3370] thing, right?
+[3374] I really believe that. Like I think I
+[3377] uh uh
+[3377] through the Twitter acquisition,
+[3380] I used to track my sleep score.
+[3383] >> Really?
+[3384] >> And I was sleeping
+[3387] fine. I think if you know
+[3389] what you must do,
+[3392] you do it.
+[3395] You can
+[3396] you don't have to feel pressure. Like
+[3397] like the
+[3398] the world can come at you.
+[3400] But if you know what you're capable of
+[3403] and you have a slightly long-term view,
+[3406] like everything is a week or a month.
+[3409] Uh so, you don't have to feel pressure.
+[3410] You have to perform every day, which is
+[3412] a completely different thing.
+[3414] So, now the core question you have to
+[3415] ask is
+[3416] there are moments where you must feel
+[3418] pressure to perform. So, I really like
+[3422] feeling
+[3423] insecure is my word.
+[3425] >> Really?
+[3425] >> Which is I have
+[3427] I've always told people that I only want
+[3431] jobs which I wouldn't hire myself for.
+[3435] So, I want somehow to feel that
+[3438] someone's thrown me into a
+[3441] challenge
+[3443] that on paper I'm not supposed to be
+[3445] able to accomplish.
+[3446] One, that drives you to be slightly
+[3449] humble.
+[3450] Two,
+[3452] it makes you a little bit paranoid. It
+[3454] makes you want to learn things, it makes
+[3455] you curious, and it makes you work
+[3457] really hard. And it makes you seek help.
+[3461] If you feel secure in what you're doing,
+[3464] it doesn't drive any of the most
+[3466] important behaviors in my experience.
+[3469] So, pressure is a different world
+[3473] because it suggests that you are trying
+[3475] to meet somebody else's expectations
+[3479] instead of your own.
+[3481] And I think internal expectations
+[3486] are way, way, way better drivers of
+[3488] success
+[3490] than external ones.
+[3492] And at least for me,
+[3494] I would say, other than my wife, my
+[3496] expectations have always been higher
+[3498] than the
+[3500] world's expectations of of me.
+[3503] Even from like true believers, like who
+[3505] believed in me.
+[3506] >> What a fascinating
+[3509] turn. I did not expect that. This is
+[3512] like we I will say, thank you so much
+[3516] for such a fantastic conversation. Um
+[3519] it was really awesome to learn more
+[3521] about Parallel and then your personal
+[3523] life, too. If only we started with this.
+[3525] >> [laughter]
+[3525] >> Your your philosophy and like how you
+[3527] think about things is really
+[3528] interesting.
+[3528] >> Yeah, that was that's fun.
+[3529] >> Yeah. Well, thank you so much, Prag.
+[3532] >> Amazing.
+[3532] >> Cool. Hey, it's Molly. If you enjoy our
+[3535] interviews, check out our newsletter,
+[3536] sourcery.vc,
+[3538] where we deliver a once-a-week top deals
+[3540] and tech headlines email, [music]
+[3542] and also go deeper on our podcast
+[3543] interviews. Subscribe to Sourcery today,
+[3546] and don't forget to subscribe to the
+[3548] podcast on YouTube, Spotify, [music]
+[3550] Apple, or wherever you listen. Link in
+[3552] description to sign up.

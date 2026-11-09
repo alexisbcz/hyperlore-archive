@@ -1,0 +1,658 @@
+[38] Bonjour et bienvenue sur Que du Web, le podcast portépar IBOU. Sylvain, un petit mot sur IBOU. Oui,
+[43] IBOU, moteur de recherche conversationnelsouverain. Sur Que du Web, on aime recevoir
+[48] des personnalités qui ont marqué ou quivont marquer le web. Et aujourd'hui,
+[52] on a beaucoup de chance parce qu'on reçoit un despiliers du web des années 2000, Benjamin Bejbaum,
+[57] cofondateur de Dailymotion. Salut Benjamin. Salut.Salut. Salut les gars. Avant de te recevoir,
+[62] j'ai bien sûr fait mes petites recherches etla première question c'est quelle est la vraie
+[67] histoire de Dailymotion ? Ce que j'ai trouvéun voyage à Manhattan, une histoire de neige,
+[71] est-ce que tu peux nous donner la vraie version? Parce que tout ce qu'on trouve sur le web et
+[74] Wikipédia, parfois il y a une différence.C'est quoi la vraie origine ? Deux origines,
+[78] il y a une origine tech où j'aimais bienenfin j'avais une boîte web, d'hébergement
+[81] et j'aimais bien faire plein de petits projets,j'aimais bien coder. Comment quand on est codeur,
+[84] on aime bien chercher les eaux arrangées hein. Etdonc ça c'est une des pattes de l'histoire. Et
+[89] l'autre patte, c'est que j'étais parti à New Yorkpour la première fois en février 2005 avec deux
+[93] potes et que moment où on s'est décalé parce queeux sont parti faire du shopping et moi
+[98] le soir je suis plutôt sorti, je suis rentré tard,je me suis levé en décalage et je suis sorti,
+[103] j'avais un appareil photo numérique qui prenaitdes films. À l'époque, les appareils photo
+[106] numériques prenaient des films. D'ailleurs,ils en prennent depuis le début des années
+[109] 2000, mais peu de gens les utilisaient. Mêmeles Nokia prenaient quelques petits films. Moi,
+[113] j'adorais les sortir au format 3GP et cetera. Etdonc cet appareil photo prenait des films et
+[117] je sors décalé de ma nuit de voilà defête et il neigeit dans New York et je prends des films
+[123] et pas mal de films. J'ai des musiques un peu dansla tête et je rentre de New York. J'avais adoré ce
+[128] voyage. C'était première fois que j'avais jamaisété à New York. C'est assez dingue la première
+[130] fois. Et je dis je vais faire un montage. Je faismon premier montage avec Sony Vegas et je mets une
+[136] musique. C'était une reprise des Korgis par Beck,"Everybody's Got to Learn Sometime". Voilà. Et je
+[141] la colle sur ces images de neige, je mets letruc à l'envers, j'ai l'impression d'être Scorsese,
+[145] je fais "Wou, c'est génial, c'est beau et tout.""Je suis trop content." C'était mon premier
+[148] montage. Et je me dis "Il faut j'avais envie de lemontrer." Évidemment, quand on fait un truc comme
+[151] ça, on veut le montrer et j'utilisais beaucoup,je faisais beaucoup de photos numériques. Donc,
+[155] je mettais tout sur Flickr à l'époque etpuis j'étais hébergeur, donc je savais faire.
+[158] Mais je me suis dit bon et je me dis, jepréfère avoir une plateforme pour faire ça. Je
+[162] peux me faire mon truc de vidéo et cetera.J'aurais pu le faire en QuickTime. Je dis non,
+[165] il doit y avoir une plateforme où je fais publierune vidéo et puis je cherche non. En fait,
+[168] bon finalement si je cherche si il y a Vimeo maisVimeo il faut acheter QuickTime Pro pour encoder
+[174] sa vidéo. Donc il faut dépenser 30 balles, lirela FAQ, cliquer là, cliquer là, cliquer format
+[179] machin et cetera, attendre que ça mouline sur sonordi pour produire son format et ensuite le mettre
+[183] sur Vimeo. Ben je me dis mais il manque un trucles gars, il faut faire l'encodage côté serveur,
+[186] faut pas le faire côté client. Et donc je monteça en PHP, je code un truc, c'était pas compliqué
+[191] hein, c'était pas du tout, c'était pas du rocketscience. C'était inscription, un bouton uploader
+[195] une vidéo, un peu d'espace de stockage sur lesserveurs. J'avais tout. J'avais les serveurs,
+[197] je faisais les sites toute la journée. Doncvoilà et j'ai acheté un logiciel d'encodage
+[201] qui s'appelait ProCoder. Je l'ai mis sur le PC dela graphiste. Donc je monte mon site. C'était pas
+[206] Dailymotion, je me souviens plus quelURL j'avais utilisé à l'époque. On poussait
+[210] la vidéo sur le serveur et elle revenait en FTP aubureau. Revenait au bureau, le PC de la graphiste
+[214] se mettait à freezer. Elle disait "Mon PC ilfonctionne pas, je laisse laisse, touche pas."
+[218] ça encodait et ça repartait sur le serveur et doncc'était uniforme sur serveur. Ça veut dire qu'il
+[222] y avait une hétérogénéité des formats en entrée.Vous pouvez entrer n'importe quel format vidéo
+[226] mais ça uniformisait le format lecture. Donc c'esttous la même résolution et ce qui faisait que le
+[230] site était acceptable, était potable au grandpublic parce que c'était uniforme. Voilà short,
+[235] je me trompe pas, c'était shorttv.net ouun domaine que j'avais acheté d'ailleurs,
+[238] ça m'a valu pas mal d'embrouilles avec un copainparce que sur un projet complètement différent
+[243] qui voulait faire des envois. Alors complètementdifférent. Oui, c'est des envois de casser de
+[245] vidéo pour faire des concours de film. Il faisaitde la pub et cetera alors que nous c'est pas du tout
+[248] des concours de film, c'était de l'hébergementde vidéos. C'est pas le même concept et enfin et
+[253] donc j'ai réutilisé ce domaine au début et puisfinalement comme on s'est embrouillé, on l'a changé.
+[258] On a changé, on a pris Dailymotion. Comment onpasse du PC de la graphiste à Dailymotion ?
+[263] bah en fait c'est le il y avait unserveur à page PHP qui était sur les Non,
+[268] je veux dire d'un point de vue business. Alorsc'était au début c'était une plateforme de bric et
+[274] de broc, c'était pour mettre mes vidéos quoi.Au début j'ai pas du tout pensé à un business
+[277] quand j'ai commencé à bidouiller le truc quoi. Jedis bah il manque un truc pour mettre des vidéos.
+[280] J'avais envie de publier la vidéo. Je mets mesvidéos, je mets aussi les anciennes et j'envoie
+[283] aux jurelles et aux potes. Je dis regardez j'aimis une vidéo. Mes potes sont intéressés par ce
+[287] que je fais ou par moi. Ils regardent mes vidéos.Certains d'entre eux faisaient des soirées
+[292] et ils faisaient des vidéos pour ces soirées quimontraient ou qui voilà. Et il y en a un ou deux
+[296] qui ont cliqué sur upload vidéo, qui ont mis lavidéo de la soirée qui s'appelait la don Sleep,
+[300] je crois et donc qui ont vu quand on voit savidéo en ligne, c'était la première fois pour
+[304] pour certains pour moi, c'était la premièrefois que je la voyais dans le cadre d'un
+[306] site. On voyait des vidéos en ligne mais dansle cadre d'un site avec un player et cetera,
+[310] ça faisait partie des premières fois et ben onprend l'URL, on la met dans le mail et on l'envoie
+[313] à 15 personnes. C'est ça qui s'est passé quoi.Globalement et au bout de 5 6 jours,
+[319] je commence à être un peu excité. Ouais, çase sentait quoi. Et j'habitais dans le 19e,
+[323] mes bureaux étaient dans le 18. Je bossais la nuit, jerevenais au bureau, je regardais tous les jours,
+[327] je me connectais sur ma console, je regardais mesnouveaux inscrits, puis je voyais les nouveaux et
+[331] j'ai commencé à avoir des gens que je connaissaispas. J'ai commencé à avoir de plus en plus d'email
+[335] que je connaissais pas et je dis ou là là il y aun truc là, il a un truc qui est en train de se
+[338] créer, qui est en train de se passer. Et donc j'aiété voir, je bossais à l'époque avec Olivier
+[342] Poitrey qui est un killer absolu, voilà de techet qui bosse aujourd'hui chez Netflix et je lui
+[347] ai dit "Regarde ce que j'ai fait, regarde ça çamonte et fais-le bien avec moi quoi." Il a dit,
+[352] il a réfléchi la nuit, il m'a dit "OK" et après onbossait chez lui à Oberkampf, on a bossé des nuits
+[356] et des nuits, il a repris tout mon code et il l'asolidifié. Grâce à ses compétences, il en a fait,
+[360] on est passé d'un service de bricet de broc à un truc solide quoi qui a pu gérer
+[364] la montée en charge et 2 ans plus tard, on était65e sur Alexa, je crois. Ouais. Ouais. Ouais. Ça
+[369] va très vite. Et alors c'est assez drôle. Alorsje sais pas si les gens le savent ou
+[375] pas mais YouTube est né la même année. Alors selonles histoires, c'est un mois ou 2 mois avant ou un
+[381] mois ou 2 mois après, peu importe. Moi ce que jesais c'est que quand j'ai cherché partage vidéo,
+[385] j'ai pas trouvé YouTube. Et la première fois quemoi j'ai eu vent de YouTube, c'est septembre 2005,
+[390] j'ai le mail de mon graphiste, c'est Malerme [?: nom de famille du graphiste] quibosse au Canada aujourd'hui qui me dit "Regarde
+[393] ces [ __ ] ils ont pompé notre baseline." Eteffectivement à l'époque, c'était une époque
+[398] où il y avait beaucoup ce truc de trois verbes,tu sais, pour définir ta baseline marketing là et
+[402] il y avait Odeo [?: la boîte de podcast = Odeo ?] qui faisait du podcast et c'étaitlisten sync, create. Et moi j'ai dit bah tiens, on
+[407] va faire watch. Donc nous c'était Dailymotion avecdans le petit logo le format de tape là de bande
+[412] passante tu sais entre les deux hautc'est ça entre les deux haut il y avait le
+[416] comme le format de la bande tu sais du tape c'estnotre graphiste qui avait fait ça et watcher
+[420] publish donc à partir d'avril c'est ça qui est enligne. Et quand je vois YouTube septembre 2005,
+[426] mon val peut-être que YouTube a regardé, peut-êtrepas. Comment tu expliques que cette année-là quand
+[433] même, il y a deux initiatives les bonnesidées sont dans l'air du temps. Je veux dire,
+[437] il y a une conjonction de facteurs quifont que c'est possible, tu vois. Bah les LLM
+[441] aujourd'hui permettent plein de choses qui étaientpas possible avant. Le haut débit qui
+[445] est arrivé chez tout le monde fait que tabande passante d'upload, elle commençait à bon
+[448] alors à l'époque c'était asymétrique mais quandmême tu avais plus de tuyau d'upload qu'en
+[453] RTC. Si tu es sur un modèle RTC, uploader une vidéo,tu vas pas le faire. Tu vas essayer une fois puis
+[457] tu vas arrêter. Là à partir du moment où tu asle câble, à l'époque c'était le câble la DSL,
+[461] ta vidéo, elle va mettre 15 minutes, 20 minutesà seer, ça va, c'est acceptable. Et aussi les
+[464] capacités de prendre des vidéos. Comme tout lemonde commençait à avoir dans sa poche quelque
+[469] chose qui pouvait prendre des vidéos, hein.Tout le monde commençait à savoir comment le
+[472] mettre sur son ordi. Les premiers Nokia lesvidéos, moi je les mettais sur mon ordi, le câble,
+[476] il fallait le commander. Voilà. Enfin bon,c'était une galère. C'est un truc dont nos jeunes
+[480] ils regardent là en ce moment, ils peuventpas se rendre compte de ça. Ah ouais, c'est
+[484] clair. Et donc conjonction de les bonnes idéessont derrière du temps. Il y a je pense qu'il y
+[488] a plein de gens qui les ont eu en même temps. Moij'ai eu la chance d'avoir à l'époque, j'avais la
+[492] boîte d'hébergement, je savais coder. J'aimaisbien prendre des vidéos. Bon, on a les trois
+[499] c'est bien. Tout à fait. D'autresquestions sur le sujet Dailymotion des
+[505] débuts ? Ah ouais, j'en ai pas mal he dans entête. J'en ai écrit pour ceux qui voient pas
+[509] la table mais j'en ai en plus beaucoup en tête.Non, il y a forcément une qui me vient en tête
+[513] parce que vous étiez hébergeur, donc vous aviezl'habitude de faire héberger les sites web
+[517] ou bon là avec Dailymotion le débutdes vidéos, l'encodage en ligne, c'était bah
+[523] nouveau parce que vous êtes précurseur dessus.Est-ce que la boîte d'hébergement à la base,
+[527] elle était elle est pas faitemais dimensionnée pour ça ? C'est pas du tout
+[531] dimensionné pour ça. C'est la boîte d'hébergement, je mesouviens j'ai ça a commencé en 2000. J'ai commencé
+[535] Iguane, j'ai commandé un serveur aux États-Unisà VA Linux 2U et puis j'ai potassé mes Aurélis [?]
+[539] pour apprendre comment installer le serveur demail. C'est le mail, postfix, c'est la page
+[542] et cetera et je reçois le serveur et j'ai unpote qui avait une demi-baie chez
+[547] Claranet. Claranet c'est un hébergeur qui est enface de l'Élysée en sous-sol. Je viens, j'ai passé
+[551] beaucoup de nuits là-bas avec le KVM, l'écranbranché sur l'ordi et les climatiseurs.
+[556] Et donc il me laisse mettre ma machine dedans.Donc j'avais ma machine depuis juin 2000,
+[560] j'ai au moins une machine hébergée quelque partquoi dans un data center. Au début hébergeur
+[564] mutualisé donc tous les clients sur une seulemachine tout le monde sur le même démon à page
+[569] et cetera et progressivement on commence à choperdes clients qui ont besoin de grosses ressources
+[574] notamment un site qui s'appelait Easy Rencontre,Julien Laavanchi [?: nom du client] je me souviens très bien et
+[578] qui toujours les mêmes domaines hein toujours dansces domaines là qui avait des gros besoins et
+[583] donc on commence à lui installer serveurs dédiésil nous fait confiance et ça a bien marché donc
+[586] on commence à avoir plusieurs machines et ensuitebeaucoup d'autres clients notamment qui est qui
+[590] est aussi à Paris très talentueux AlexandreBracher [?: nom du client] et on stack les serveurs. Donc on a
+[595] plusieurs serveurs mais en sortie mon tuyau, ildevait pas dépasser 100 MB. Je crois que j'étais
+[600] sur un lien 10 mégabit. Je crois que je suis passésur un lien 100 Mbit et encore je suis même pas
+[603] sûr en 2004. Et au début de Dailymotion, je vais voirClaranet, je vais voir les gars, je dis "Écoutez,
+[608] je pense que le trafic va monter. Est-ce que vouspouvez mettre un lien gigabit sur ma baie s'il
+[611] vous plaît ?" On va réfléchir réfléchir mec il setu vois dis "Mais les gars, vous êtes hébergeur est-ce
+[618] que vous pouvez pas mettre un lien à gigabit?" Bah non, on va pas y arriver. Bon, d'accord.
+[622] Donc on s'est cassé à Aubervilliers chezje me souviens plus Redbus non Telecity je me
+[629] souviens plus. Je crois que c'est pas ces noms-là,c'était un autre mais c'était un autre avant. TeleCity [?: confirmé ?]
+[633] peut-être. Ouais, je crois que c'est ça.Voilà. Plus gros hébergeur là avec des gros
+[638] brins. Là, on colle le gigabit et puis à la fin,on devait avoir je sais plus combien on avait 15
+[642] Go ou je sais plus combien. Bon après, il ya eu beaucoup de peering, beaucoup de CDN surtout
+[647] qu'on avait plus besoin de grosse bandepassante parce que c'était proxysé. Il y
+[650] avait des proxy un peu partout. Voilà. Mais non,Iguane Studio était pas du tout ça. D'ailleurs,
+[655] le fait d'avoir Dailymotion comme client a permisà Iguane de grossir très fort, notamment avec
+[659] les accords de peering. Peering, ça veut dire quemoi je suis j'héberge mon serveur Dailymotion.
+[664] À chaque fois qu'un client se connecte à monserveur, je dois payer. On paye le transit IP.
+[668] Et au bout d'un moment, s'il y a 2000 clientsde chez Orange qui viennent tous les jours
+[673] chez Dailymotion, plutôt que de passer par des gens quinous vendent à tous les deux le trafic IP, ben on
+[677] va s'appeler avec Orange, on va se dire "Bon lesgars, on va se mettre un tuyau en direct, c'est ça
+[680] le peering." Et plus un hébergeur, il est d'accordde peering, donc plus il a de tuyaux, plus
+[684] son réseau est qualitatif. Ouais. Et à cetteépoque là, ça se monnayait quand on avait vu de
+[688] Free. Tout le monde était content. Ouais.Et je me souviens que Neuf a voulu nous faire
+[693] payer le peering. Un jour, ils ont bloqué, ils ontdit ils nous ont envoyé une facture, on dit "Bah,
+[698] maintenant, il va falloir payer pour atteindrealors que ça s'était jamais fait." Et donc nous, on
+[702] a mis un banner, un wall sur le truc, on a coupél'accès à tous les clients de Neuf. On a dit
+[706] Neuf veut nous faire payer machin dans 10 minutes,ils nous appelaient, ils avaient retiré
+[709] ils avaient enfin oublié l'idée denous faire payer. Hm. Ah bah c'est un malentendu.
+[715] C'est un malentendu. Exactement. Bien sûr,ils ont mal compris. C'est quelqu'un qui a envoyé
+[718] un mail. J'ai encore une question notammentliée à la partie hébergement que tu as évoqué
+[723] tout à l'heure. Même si tu avais une based'hébergeur à l'origine je pense que tu
+[729] t'attendais pas à ce que le fait d'offrirce service gratuitement
+[736] et à tout le monde allait autant permettre ledéveloppement de la boîte. En fait, est-ce
+[742] que la partie hébergement elle s'est multipliéeenfin, est-ce que tu peux nous donner un ordre,
+[746] une échelle de scalabilité des serveurs? Est-ce que tu es passé de deux serveurs,
+[751] trois serveurs, quatre serveurs, 10 serveurs ? Jecrois qu'on avait à l'époque où je suis parti en
+[755] 2008 où je suis parti avec les investisseurs, ondevait avoir une dizaine de baies sans compter
+[761] les filers. Alors que moi quand j'ai pris mataille en 2005 Iguane avait une demi-baie qui était
+[768] pas pleine. Voilà demi-baie donc il devait y avoirje sais pas une centaine de machines plus une
+[772] centaine de machines et puis surtout il y avaitça s'est spécialisé tu sais comme l'être
+[776] humain qui au début savait tout faire coudre seschaussures chasser et cetera quand une fois que tu
+[780] mets les murs de la cité chacun se spécialise.Toi, tu vas faire la cordonnerie, toi tu vas
+[783] faire la chasse, toi machin. Les machinespareil, au début chaque machine fait
+[786] tout. La première machine faisait tout et puisquand on commence à décliner plusieurs machines,
+[790] on spécialise les machines. Donc il y a lesmachines qui s'occupaient du stockage,
+[793] les machines de DB, les filers, on avait les BladeDell, tu sais, c'est des grandes, c'est des trucs
+[798] très larges comme des valises dans lesquellestu viens enficher, ça c'est pour du CPU,
+[801] c'est pour les encodeurs. Les encodeurs, tu as surtoutbesoin de CPU. Donc on en fichait des lames,
+[805] hein. C'était pas Il y a pas mal de perspectivesavec ce qu'on fait. Faut aussi du GPU. Du GPU et
+[811] du CPU. D'ailleurs, on fait les deux mais Ouais,ça se spécialise, comme toutes les
+[815] espèces vivantes. Au début c'est général et puis ça se Mais est-ce que
+[819] vous aviez une idée du move même sociétal ?Ah, pas du tout, pas du tout. Non, non. Pour
+[828] moi c'était de la vidéo et c'était de faire de lamoi je pensais surtout à de la jolie vidéo.
+[833] Bon après c'est vrai que moi aussi dans mes vidéosil y avait des vidéos qui avaient [Nico ?] qui
+[836] était juste du témoignage complètement inutile.Je m'en suis rendu compte après on en trouve encore on
+[841] trouve encore beaucoup mais ce qui étaitparticulier c'était que autant les Américains,
+[846] ils avaient l'habitude de se montrer, de se mettreface à une caméra et de parler. En France,
+[849] c'était beaucoup plus mal vu. Donc nous, c'étaitpas ça au début hein. C'était vraiment des vidéos
+[854] pour parler de quelque chose d'une fête, raconterune histoire, faire un montage et cetera. Mais il
+[858] y a pas beaucoup de selfies. Même le mot selfie,il est venu après. Et cette habitude aujourd'hui
+[862] de se mettre soi-même face à une caméra tout seul,se filmer et de parler. À l'époque c'était pardon
+[867] hein, c'est les comportements ont changémais à l'époque on voulait pas faire ça.
+[871] On se sentait ridicule. Voilà. Et là le shiftil est énorme. Là c'est plus tout le
+[876] cas. Voilà. Maintenant il a plein de trucs àdire. Les gens hésitent pas très bien hein,
+[879] c'est il y a plein de gens qui ont des trucsgéniaux à raconter ou trucs marrants ou géniaux,
+[883] ils le font sans problème. Puis faut pas oublierhein, c'est pas Dailymotion qui est dans ce cas-là,
+[887] mais YouTube c'est maintenant devenu le plusgros site au monde. C'est la moitié plus de la
+[891] moitié de revenu de Google et cetera. Le modèlede la vidéo comme ça, c'est le modèle.
+[897] moi j'ai des questions justement parce queje viens de parler de YouTube un peu de je
+[901] je veux dire de l'adversité qu'on peut trouverquand on fait une boîte comme Dailymotion et
+[905] qu'on est dans l'écosystème international qu'ona maintenant. YouTube c'est la même idée. Voilà
+[911] mais c'est pas tout à fait le même destin. Voilà.Et pourquoi ? Bon, il y a plein de raisons. Il
+[917] y a plein de raisons. Bon, ils ont été meilleurs,on peut, tu vois, on peut déjà commencer par dire
+[921] "Oui, ils ont été meilleurs, ils ontété plus loin, ils ont peut-être plus
+[926] vite choisi ce qui était important et réglé lesproblèmes importants sans trop se disperser. Mais
+[931] on a été pionniers déjà sur le service entant que tel, hein, parce que je pense que eux
+[935] en avril à mon avis n'étaient pas en ligne. Et ona été les premiers sur la stratégie de contenu,
+[939] c'est-à-dire à établir des liens avec les gensqui faisaient des bonnes vidéos, à les repérer."
+[943] Donc il y avait quelqu'un au bureau, [ __ ] c'estmon pote Marc qui est venu, je lui dis "Écoute
+[946] tiens prends cette chaise regarde toutesles vidéos, il y en avait 1000 à l'époque et tu
+[949] prends un Excel et tu notes les mecs qui font desvidéos sympas mecs qui font pas des trucs inutiles
+[954] quoi." Et ensuite tu les appelles un par un. Onenfin je dis "Tu non, c'est lui, on s'est mis en
+[959] centre d'accord sur quelle était la strate et ila participé à la création de cette strate
+[963] et donc il les a appelés un par un et il a commencéà nouer les relations avec eux et là c'est plus un
+[968] métier de label. Voilà, se dire bah tiens, taprochaine vidéo, on la veut, on va la mettre sur
+[972] la home, quand est-ce que tu la sors ? Et ceteraet cetera. Ça, on l'a fait. YouTube jusqu'en 2009,
+[976] ils mettaient pas un neurone là-dedans. En 2009,ils ont réimplémenté complètement cette stratégie.
+[981] Voilà. Et autre chose, bah déjà aux États-Unismarché beaucoup plus grand, 350 millions,
+[988] j'espère que je me trompe pas. Plus d'habitudeavec la vidéo, donc déjà ça va plus vite. Ensuite
+[993] quand même, ça peut aider. Les deux venaient de chezPayPal, ils avaient déjà levé beaucoup de fonds.
+[997] Il y en a un qui était quand même beau-fils, jecrois, de quelqu'un qui était au board de Google.
+[1001] Donc bon, c'est pas pour voilà. Ouais, c'est despetites choses qui aident. Ça, on voit que souvent
+[1006] ça aide dans d'autres boîtes. Voilà, souvent çapeut aider. Que dire déjà ça ? Et puis
+[1011] nous, c'est vrai que YouTube se rapprochantde Google, Google c'est la techno froide. C'est
+[1017] dire c'était justement pas de rapport avec lesayants droit, mais un truc qui fonctionne très bien,
+[1020] un logiciel très simple à lire et qui fonctionnetrès bien. Pour moi, la métaphore que j'utilise
+[1023] souvent quand je parle à mes élèves d'interfaceou enfin des gens, c'est la page d'accueil Google,
+[1027] c'est fond blanc, champ de recherche, boutonsearch. Voilà, c'est le produit, il est caché,
+[1030] c'est très clair. C'est ce qui est restéYouTube pendant longtemps. Nous, on s'est
+[1034] diversifié, on est sorti un peu de juste ça, dubouton upload puisqu'il y avait la programmation
+[1039] de la page d'accueil et puis surtout à partirde 2007 2008, ça commence à être un peu le feu
+[1044] au niveau juridique. Donc, on a mis en placeplein de partenariats avec des fournisseurs
+[1049] de contenu et cetera. Et je crois qu'on s'est unpeu paumé. Je crois qu'en terme d'interface et
+[1054] de voilà, on a oublié un peu de faire le ménage.Par exemple, il y avait plein de plots qui foiraient.
+[1059] Ça c'était des silent killers tu sais. Et au boutd'un moment, je parlais avec Olivier, on se disait
+[1064] "Ah oui, il y a quand même plein de trucs quifoirent. On sait pas combien de trafic on a perdu
+[1067] à cause de ça, mais je pense qu'il aurait fallu."Moi, je pense que c'était à refaire, je serais
+[1070] plus simple, un produit beaucoup plus simple àcomprendre, qui reste simple à comprendre pendant
+[1074] longtemps et qui est parfait au niveau technique,au niveau rapidité et cetera. Et puis aussi le
+[1078] autre raison, on avait fait une version anglaisemais c'est moi qui avais traduit. Bon, alors je
+[1082] parle anglais mais l'Américain, il le sent quoi ?il voit que c'est pas voilà pas comme à la maison
+[1087] quoi. Et puis YouTube, ils font partie de la WestCoast quand on part de San Francisco quand
+[1091] on commence parce que ça a beau être internet çapasse par les tuyaux, il y a quand même un truc
+[1095] géographique et un cercle de proches qui va passersur un autre cercle de proches et cetera, un type
+[1099] de contenu quand on parle de San Francisco, bahça a peut-être un peu plus d'impact que quand on
+[1103] parle de Paris 18e. C'était comme ça à l'époque,je pensais en vidéo. Bon après la French Touch [?: French Tech ?],
+[1107] est venue contredire un peu tout ça etplein de Français qui ont fait des trucs super.
+[1111] Tout à fait. Mais on voit que l'adversitéreste c'est complexe. Oui, bien sûr. Toujours
+[1118] le fait finalement dans les explications que tudonnes, il y a pas tellement le fait que Google
+[1123] qui a acheté ça aide. Bien sûr que ça aide mais jeveux dire à partir de 2008, il commençait déjà
+[1128] à être assez bon. Mais évidemment que ça aide lasituation de enfin ils étaient proches de
+[1132] quelqu'un du board et nous quand on a été les voir,on avait rendez-vous avec eux début 2008
+[1136] je crois. Je crois que c'est là qu'ils ont annoncéle rachat. Le rachat 2 milliards dont 1 milliard
+[1140] en escrow pour le procès MTV [?: ou Viacom ?]. Et en faitl'info du rachat est arrivée 3 jours avant qu'on
+[1146] prenne l'avion et on est parti avec quelqu'unle head of Google Europe, on prenait l'avion.
+[1150] Je me souviens c'était la première fois que jemontais en 747 dans la business. On était à
+[1153] San Francisco. On a rencontré les deux gars, lesdeux gars de YouTube. Et comment il s'appelle le
+[1158] patron de Google de l'époque ? Je sais plus son nom.Eric Schmidt. Eric Schmidt. Exactement. Dans la
+[1161] salle bonjour. Il y avait que desPrius sur le parking. Parking Google 100 % Prius.
+[1167] Rien d'autre. 100 % Prius. Et donc on a découvertSan Francisco et Olivier a dit "Bonjour,
+[1171] il venait de racheter YouTube." Donc c'était pliéquoi. On a été voir les Focs, on a mangé un burger,
+[1174] on est rentré quoi. Et il devait y avoir unecertaine haine pendant le trajet de se dire
+[1181] "Non non pas du tout parce que non, il y apas de haine. Notre histoire elle continuait,
+[1184] ils étaient pas encore beaucoup plus forts quenous hein. Et puis on avait notre histoire,
+[1188] la boîte elle cartonnait quoi." Ouais. Oui. Oui,parce que les gens c'est on a tendance à oublier
+[1193] mais c'était un méga carton en fait. Un mégacarton. Mais c'était un méga carton. On
+[1197] aurait pu être les investisseurs etles actionnaires auraient pu être plus riches si on
+[1203] avait vendu plus tôt. Moi, je saisque les VC en fait pensaient au milliard dès le
+[1208] début hein. Dès le début ils pensaient au milliard.Bon moi j'ai fait bon ok alors qu'en fait si on
+[1214] avait accepté les offres de vente avant çaserait mieux passé pour tout le monde. Mais ça on
+[1220] peut pas revenir en arrière. Voilà ceci n'est pas un conseil en investissement.
+[1225] Un de mes associés qui m'a dit "You never go brokegoing too soon to the bank. Tu fais jamais faillite
+[1230] en allant trop tôt à la banque." Bah oui,c'est sûr, tu vois c'est bon. Oui,
+[1233] tu vas peut-être gagner moins mais au moinstu encaisses quoi. Ouais. Ouais. Mais
+[1236] ça aurait pas changé enfin tu vois quelquepart ça aurait pas changé la destinée pour le
+[1240] produit ? Non. Bah oui et non. Peut-être que plusde fondateurs seraient restés. Je sais pas c'est pas
+[1245] sûr. Là c'est vite devenu trop gros. Et en faitil a fallu pour aller vers ce milliard
+[1251] je veux dire les investisseurs ont forcé. Je veux pasdire ça, ça fait un peu lâche, mais disons que les
+[1254] investisseurs étaient très vite majoritaires parcequ'on gagnait pas d'argent. Au bout de 2 ans, on
+[1257] coûtait 500000 € par mois, on faisait pas rentrerun copec. Donc évidemment, il faut aller frapper à
+[1261] la porte des investisseurs dire donne-moi encore,donne-moi encore et donc ils devenaient de plus en
+[1265] plus puissants au board évidemment. Donc nous onje veux pas dire qu'on obéissait mais on était
+[1269] quand même la moitié du codir avait été embauchéen direct par les investisseurs. C'est pas moi qui
+[1273] les avais embauchés. Donc ça faisait c'est un peudur à gérer et surtout pour pouvoir vendre le
+[1278] milliard et pour pouvoir faire joli quand on allaitdans les réunions pour se vendre, tu vois quand on
+[1282] va voir TF1, qu'on va voir MySpace et cetera, ilfallait montrer une Dream Team. Donc vous pouvez
+[1288] pas montrer que Olivier et moi donc les BC ont diton va prendre des gens du ministère de la culture,
+[1292] des gens de chez TF1, des gens de chez MTV pourfaire une tu vois mais ces gens là c'est compliqué
+[1296] tu vois dans une boîte web de tu vois que tontemps de cerveau ça devient gérer ton board gérer
+[1301] ton codir et cetera et puis partir sur des sujetstrès bon alors les VC diront que ça nous a sauvé
+[1306] sinon on serait passé à la trappe avec les procès.Peut-être peut-être que c'est grâce à ça aussi
+[1311] qu'on a pas été trop, tu vois, moi je pense qu'onaurait dû rester une boîte web, beaucoup plus web,
+[1316] rester que des gens du web pendant au moins3 ans. C'est ce que Google a permis à YouTube
+[1322] de faire. Google les a protégés de cette folie làet je pense que les mecs ont été beaucoup plus
+[1327] efficaces en partie grâce à ça. Est-ce quec'est pas un retard, j'ai envie de dire de
+[1331] la France en terme de gestion ? Oui. Oui.Complètement. Tradition de mentalité. Mentalité,
+[1338] centralisation, puissance. Oui. Oui. Complètementde vouloir afficher, vouloir montrer,
+[1342] respecter. Ouais. Parce que ça de nos jours, çase passerait plus comme ça en fait. Mais c'est
+[1347] beaucoup plus adapté. De façon ce qui vientaux États-Unis, ça met en général 5 10 ans pour
+[1350] venir en France et puis ça va. Les mentalitéss'adaptent. Mentalité s'adapte. Oui. Hm hm. Et ça,
+[1357] puisqu'on parle de l'État, est-ce que vous aviezbeaucoup de problèmes avec tout ce qui est
+[1360] droit, droit d'auteur et cetera ? Bah beaucoup.Oui. Oui. Ouais. C'était les plus gros
+[1364] problèmes. Hm. Il y a plein de problèmes maisbeaucoup de problèmes mais c'était un problème oui
+[1370] qui faisait un peu peur. Qui faisaitun peu peur parce qu'on était quand même la tête
+[1374] sur on sentait le froid de la lame souvent quoi.Mais bon on s'en est sortis grâce à on a eu des
+[1380] avocats très talentueux une dame Marina Gérard [?: nom de l'avocate] quinous a aidés à mettre en place qui venait de Chef [?]
+[1384] qui nous a aidés à mettre en place avec des avocatstrès talentueux une stratégie de mi-hébergeur
+[1390] mi-éditeur. Donc à l'époque il y avait soit onétait hébergeur, on était responsable de rien,
+[1395] soit éditeur on est responsable de tout. Et ilfaut et ce qu'on se disait c'est que si on fait du
+[1399] screening a priori de chaque vidéo, on devientéditeur. Donc c'était compliqué pour nous parce
+[1403] que si on fait pas de screening, il y a des vidéosde terrorisme d'incitation raciale qui arrivent
+[1407] et donc là c'est le pénal. Et si onen fait, on devient éditeur. Donc on était un peu
+[1411] qu'est-ce qu'on fait quoi ? Et donc on a réussià mettre en place une stratégie, c'était les
+[1415] deux. la page d'accueil éditeur, rôle d'éditeuraccepté le reste hébergeur avec un bouton
+[1420] dénoncer cette vidéo. S'il y a de la haine racialeet cetera, les trucs qu'il faut pas voir, il faut
+[1424] vous dénoncer la vidéo ou si vous êtes ayantdroit vous pouvez dénoncer la vidéo avec après
+[1428] l'automatisation du retrait des vidéos copyrightées,pardon pour ce mot avec la bande son, tu sais,
+[1434] on écoutait la bande son, c'est ce que faitYouTube maintenant. C'est comme ça qu'il détecte
+[1437] qu'une vidéo est protégée par des droits. Alorsavant, enfin aujourd'hui plutôt, il y a l'IA qui
+[1441] aide à faire ce qui peut aider YouTube à faire ça.Du temps de Dailymotion, c'était quoi ? C'était
+[1445] des humains qui non, c'était un logiciel quis'appelait, je me souviens plus, je me souviens
+[1449] du commercial qui vendait ce logiciel. Une technoqui permettait mais c'est la même techno qui
+[1453] permet à Shazam de reconnaître des morceaux etcetera. Tu sais c'est tu as une base de données
+[1457] de contenu. Chaque ayant droit va mettre tousses contenus dans cette base de données, l'audio
+[1460] principalement et ensuite nous à chaque fois qu'onreçoit une vidéo, elle est matchée par rapport
+[1463] à cette base. Et si ça matche, ça veut dire quec'est un contenu protégé. Et c'était payant,
+[1467] j'imagine. Forcément. Ah oui, nous on payait lelogiciel. Ouais. Ouais. logiciel payant et du coup
+[1471] on pouvait takedown automatique ou enfin bonil y avait plein de tu disais tout à l'heure
+[1475] excuse-moi j'enchaîne j'en ai tellement pleindans ma tête c'est mon c'est
+[1479] mon époque he de Dailymotion donc c'est un moteur tues jeune toi oui très mais j'en ai perdu ma
+[1485] question ah bah voilà fais le malin non tu disaistout à l'heure que à un moment vous aviez pas
+[1491] atteint la rentabilité les postes qui étaientle plus de dépenses alors si tu as envie d'en
+[1495] parler ah bah hosting hosting et il y a pas c'estles salariés le hosting. Mais nous le hosting
+[1501] c'était quand même costaud hein. C'était je pensele tuyau il coûtait 300000 vite coûté 300000 par
+[1505] mois ou un truc comme ça tu vois. C'était pasen fait internet sur 500000 de frais c'est ce que
+[1510] tu disais. Je sais plus les chiffres précis maisça chiffre une centaine de milliers tu vois derrière
+[1513] le payroll parce qu'évidemment quand ils ont ditmaintenant il faut que tu prennes que des grosses
+[1516] têtes tu vois et payer des gens payés entre100 et 200 à l'époque c'était beaucoup
+[1522] toujours beaucoup aujourd'hui mais donc ouienfin les RH ça coûtait cher aussi et
+[1527] internet a pas juste petite notion technique maisinternet a pas été fait pour diffuser en broadcast
+[1532] le même contenu à 10000 personnes. Internet a étéfait pour faire du one to one c'est comme ça
+[1536] que le protocole est pensé. Enfin bon, il y a dubroadcast dans le protocole mais bon en tout
+[1541] cas nous à chaque fois que quelqu'un si vous faitesde la télé une fois que vous avez payé l'antenne
+[1545] qu'il y ait 10000 personnes ou 100 millions depersonnes qui regardent ça coûte le même prix
+[1548] et l'antenne on paye pas pour l'antennequand elle capte ça coûte rien internet chaque
+[1553] personne ça coûte voilà et dans les postes dedépenses parce que pendant un temps voilà les
+[1559] personnes qui diffusaient chez vous notamment onpeut citer quelques uns parce qu'on les connaît
+[1562] bien mais Korben, Journal du Geek, Cyprien et ceteraqui avaient des grosses chaînes chez vous et gagnaient
+[1567] pas mal d'argent. C'était un gros poste de dépensechez vous la rémunération des créateurs de
+[1571] contenu. Je pense que je me souviensje crois que j'étais parti quand ça a commencé.
+[1577] Je crois que j'étais parti quand ça a commencé maisj'ai envie de dire c'était pas un assez
+[1580] gros poste de dépense parce que si ça avait étéun assez gros poste de dépense peut-être qu'ils
+[1583] seraient restés voilà je pense que YouTube leur a faitdes offres plus intéressantes. Ouais c'est sûr.
+[1587] Oui c'est sûr. Oui. C'est ce qui se passe à chaquefois d'ailleurs hein pour chaque réseau social
+[1591] hein. TikTok rémunérait très très bien jusqu'àil y a un an et là on voit qu'ils ont coupé les
+[1594] vannes et donc les gens repartent un peu. À unmoment donné il faut gagner un peu d'argent.
+[1598] Ouais ouais ouais. Il y a pas mal de trucsautour de la souveraineté. Moi donc toujours c'est
+[1603] ma marotte vu ce qu'on fait chez IBOU. Je vais yarriver. Je vais arriver à poser des questions
+[1607] sur la souveraineté quand même. Dailymotionest resté français au fur et à mesure des
+[1613] années par volonté, par choix, par effetd'aubaine, par Moi, je vais te dire, je suis parti
+[1619] en 2008 et j'étais jusqu'au board jusqu'en 2012.Tout ce qui s'est passé après est complètement
+[1624] hors de mon voilà, hors de mon pouvoir, dema volonté et de mon même de mon regard,
+[1628] je veux dire, au bout d'un moment, ça m'a un peudésintéressé. Oui, je me souviens de comment
+[1633] il s'appelle ce ministre avec la marinière là.Montebourg. Montebourg. Ouais. Dit non, je veux pas
+[1637] le laisser partir aux États-Unis. Il m'a faitmarrer quand même parce que l'État est au board de
+[1642] Dailymotion depuis 2007 2008 par l'intermédiaire duFSI pour souvent investissement je crois
+[1648] et donc l'État était au board. Donc toutes cesdiscussions les débuts des discussions avec Yahoo,
+[1653] je me souviens plus en quelle année c'est arrivé,il était évidemment au courant puisqu'ils étaient
+[1656] au board. Mais il a choisi le dernier momentpour dire non, on va pas faire ça et cetera.
+[1661] Donc évidemment que le coup de com étaitquand même bien calculé avec la marinière,
+[1665] le machin. Oui, OK, super. Oui, j'entends qu'ona pas envie que ça parte aux États-Unis surtout
+[1670] peut-être qu'on a pas envie que ça parte chezYahoo parce que bon, je sais pas ce qu'ils font
+[1673] avec ce qu'ils achètent mais ça a pas l'air nonplus dingue. Histoire de montrer que ça ou raison
+[1678] l'histoire raison. Et donc voilà, enfinje suis content que ce soit resté en France. OK.
+[1686] En même temps, j'ai trouvé la manœuvre un peudiscutable, quoi. Voilà. OK. Dailymotion,
+[1691] ça a été vraiment l'essence du championfrançais dans l'attaque. Faut le dire
+[1696] quand même. Faut le dire à ceux qui en ont pasconscience parce qu'ils sont trop jeunes pour
+[1699] ça. On parle beaucoup de ça en ce moment.Il y a Mistral qui est le nouveau champion
+[1704] et cetera. Tu penses qu'on peut vraiment réussiren étant un champion français ? Il y a des
+[1710] histoires françaises qui sont parties auxÉtats-Unis et qui ont cartonné. Est-ce qu'il
+[1715] y a des histoires françaises qui peuvent rester enFrance et cartonner ? Oui, certainement et
+[1720] enfin rien n'indique le contraire.Après c'est plus compliqué parce qu'il y
+[1724] a moins d'argent, le marché est moins grand.ça fait déjà de bonnes raisons. Voilà. Ouais.
+[1730] Est-ce que l'écosystème français peutgarder un fondateur aux manettes dans une boîte
+[1736] qui devient le champion par exemple ? Moi je mepose vraiment la question. Si elle est rentable,
+[1740] oui. Si elle est rentable, oui. Si elle est pasrentable, c'est plus compliqué. oui, une boîte
+[1747] qui perd de l'argent si la France peut plusouvrir les vannes. Bon ça, je pense que c'est
+[1751] par après, je pense que c'est par États-Unis. Ouioui oui oui oui. Sauf que les capitaux sont plus
+[1756] nombreux. Il y a plus d'argent. Il ya plus de prise de risque, plus
+[1760] de concurrence entre les investisseurs. L'effetFOMO c'est l'effet que qu'on
+[1764] joue quand on vend un appartement. C'est l'effetqu'on joue quand on lève des fonds. C'est
+[1767] le FOMO. c'est de dire au type attends si tudécides pas maintenant il y a l'autre qui est là
+[1771] sur une valo de 10 millions qui va signerdonc tu rentres ou sinon ça marche mieux quand
+[1775] il y a une concurrence des investisseurs. Ouais.Est-ce qu'on est en train de dire il y a que les
+[1779] boîtes pas rentables qui survivent parce qu'ellesvont lever aux US ou en tout cas tant qu'elle est
+[1785] pas rentable, elle peut lever sur une promesse.Dès qu'elle est rentable, si elle est un tout
+[1789] petit peu rentable, elle peut plus trop lever surune promesse. Elle dit bon ben je fais tant de non
+[1793] tant tant qu'on est il y a un débutd'histoire où on n'est pas dans la rentabilité,
+[1796] où on parle pas de rentabilité avec Dailymotion, on apas parlé de rentabilité pendant 2 ans et puis
+[1800] personne voulait en entendre parler. Vous savezque c'était pas ça l'histoire au début quoi.
+[1803] Évidemment qu'on parlait de publicité mais c'étaitpas ça le Mais dès qu'on commence à rentrer,
+[1807] qu'on commence à activer le revenu et qu'oncommence à faire rentrer les premiers euros,
+[1810] bah l'histoire elle se précise un peu plus. Doncà la fois oui, on commence à faire rentrer de
+[1814] l'argent donc c'est bien, c'est peut-être plusviable mais à la fois on voit que ça fait pas
+[1817] rentrer beaucoup. Et surtout sur notre marché quiest limité. Exactement. Ouais. Ouais. Ce
+[1823] qui est dommage c'est qu'on est tout le temps entrain de parler des US alors qu'on est quand
+[1826] même un continent européen qui pourrait avoirdes capitaux. C'est plusieurs pays. C'est pas un seul
+[1830] pays. Oui. Voilà. Ça c'est qu'il faudraitqu'on sache faire de ce côté-là plutôt que laisser
+[1834] partir vers un plus grand marché. Je pense quec'est ça les États-Unis, c'est juste un
+[1838] plus grand marché et peut-être une culture de laprise de risque aussi peut-être un peu différente.
+[1842] Ouais, si peut-être peut-être. J'avoue que j'aipas Oui, peut-être peut-être qu'ils sont un peu
+[1845] plus efficaces. Non, tu es pas d'accord avec ça? Si si non mais je réfléchis à nos propres
+[1851] investisseurs et cetera parce que nous aussi ona des investisseurs même si on est petite boîte
+[1855] mais c'est vrai que dans nos investisseurs il y ena un qui est plus à même de prendre des risques.
+[1858] Les autres c'est un peu moins le cas par exempleje pense. Oui ça dépend les institutionnels versus
+[1862] les personnes privées et cetera. Mais bon brefparlons de l'après Dailymotion. Donc il y a
+[1869] un après donc à un moment donné tu as quittéDailymotion. Quand on a été créateur d'une
+[1876] boîte comme ça qui est un champion de la tech envue bah qu'est-ce qu'on fait après ? D'abord
+[1881] je te pose la question. Nous on sait ce que tuas fait mais qu'est-ce que tu as fait ? Il me
+[1884] fallait un an pour atterrir. Il faut atterrir unpeu parce qu'il y a 2 ans où c'est la folie quoi.
+[1887] C'est la folie des sollicitations, des appels,des machins, on sait plus donner de la tête, il faut
+[1891] se rayer et puis dès qu'on sort, il y a un momentoù bam, ça s'arrête quoi globalement. Mais moi,
+[1896] je pense avoir su garder la tête froide.J'ai pas été habiter dans des enfin bon,
+[1901] je suis resté dans ma coloc de clients cours, jesuis resté assez calme quoi. Globalement de
+[1905] ce côté-là, je suis resté assez serein. Doncj'étais content de faire un break et je
+[1908] pense que j'en ai pas souffert. Doncj'ai fait un an de pause et après j'ai repris
+[1913] deux activités. J'ai monté une menuiserie parceque j'avais envie de me dégourdir les mains. Je
+[1918] me sentais vraiment complètement abrutide je savais rien faire avec mes mains quoi.
+[1922] Je savais rien construire. Je comprenais pas commentelle tient la table, la chaise et cetera. Ça m'a
+[1925] donc j'ai commencé à acheter les outils et on amonté une boîte de meuble. Ça a fonctionné.
+[1928] Après l'histoire a évolué et àcôté de ça, je voulais monter un truc un peu
+[1933] plus spirituel mais j'ai monté ArtDB qui est unebase de données d'art, art database voilà où c'est un
+[1939] espèce de plateforme où toutes les photos qu'onprend d'art dans la rue dans les musées de
+[1944] [Gib ?] les choses qu'on apprend plutôt qu'elles senoient et qu'elles se perdent dans notre piscine
+[1948] de photos un outil qui incitait àles ranger avec en tapant une petite phrase pour
+[1952] dire ce qu'on a appris ce que ça nous a apprisquoi et de le pousser publiquement et ouais donc
+[1956] ça fait une base de données personnelle et lasomme de ces bases sociales fait une grande [base] [?]
+[1964] et puis surtout au lieu j'en parlais avecGuillaume à table au lieu de faire ce que j'aime
+[1968] faire ce que j'ai l'habitude de faire moi, c'estde me mettre un peu dans le noir à l'atelier
+[1972] à la cave et de sculpter mon truc moi-même etde tiens de regarder de ce côté-là, de ce côté-là,
+[1976] de refaire ça, c'est ce que je fais quandon code, on fait ça, hein. C'est ce qu'on fait,
+[1979] on peut tout réessayer et cetera. Bah làArtDB, j'avais levé de l'argent et donc je suis
+[1984] passé par une boîte pour faire ça. Donc au lieude coder, j'ai fait des specs, j'ai filé à la
+[1988] boîte et puis j'ai attendu et j'ai pas du tout étécapable de gérer ce cycle d'attente un mois,
+[1993] 2 mois pour que ça revienne. Il faut queje retouche là et cetera. Je sais pas si je
+[1996] dis ce serait différent maintenant. Voilà. Alors,exactement. Donc maintenant, on est retourné et ça
+[2001] empêche de dormir un peu. C'est qu'effectivementles LLM, ils permettent de ressortir des tiroirs.
+[2005] On ouvre les tiroirs, on fait tiens ce projet eten l'air en face de soi, on a 50 projets. C'est un
+[2011] peu dur à gérer, ça empêche un peu de dormir.Mais oui, effectivement. Et donc exclusivité,
+[2015] il y en a que tu vas reprendre, tu vas nousfaire une annonce. Ouais, en fait
+[2020] j'ai toujours dans cette tête cette marotte dela grosse base de données. Mais bon, on en parle
+[2026] en ligne. Le mec d'Anthropic, je me souviens plusson nom, a sorti ce truc qui permet de faire un
+[2032] graphe à partir de ces automatique un knowledge graphautomatique à partir de ses documents personnels
+[2036] et cetera et qui permet ensuite de parler avec unebase de données de savoir. Je suis un peu dans ce truc
+[2040] là. J'aime bien ce truc là moi. Et tu as été outu es encore prof chez Albert School ? Alors j'ai
+[2047] Ouais. Après ces deux affaires-là, bah l'affairede bois qui continue toujours parce qu'on a fini
+[2052] par acheter un atelier à La Courneuve. Ona mis les machines en commun. Maintenant,
+[2056] c'est un cowork d'artisans. Alors, j'aiplus les mains dedans tous les jours, mais voilà,
+[2059] je participe à ça. Je continueà faire J'ai jamais arrêté de faire du
+[2063] dev pour mes clients. Toujours eu un client oudeux en dev parce que j'aime bien coder. Voilà.
+[2068] Et j'ai un pote qui m'a appelé en 2016 quim'a dit "Je quitte mon poste de prof de Python
+[2072] à Sciences Po ils sont pas contents parce queje les quitte un peu. Je les ai short,
+[2075] je les ai pas prévenus assez tôt. Est-ce que tuveux prendre ma place ?" Je dis "Bon d'accord,
+[2080] j'avais envie d'essayer." Et je me souviensdu premier avant le premier jour d'avoir
+[2084] vraiment je m'étais mis la rate au court-bouillonquoi. J'étais complètement stressé, paniqué.
+[2088] Je pense que je suis rentré en coursavec la petite goutte de sueur alors que j'avais
+[2092] pris l'avion, j'avais été aux États-Unis, ilavait des millions vraiment me parler devant
+[2095] des je me souviens du truc à l'association despatrons français comment ça s'appelle déjà MEDEF
+[2100] avec Sarkozy qui était là de parler enfin bonvraiment quand j'avais mon projet j'étais animé
+[2105] par mon projet le projet avancé j'avais pas deproblème à parler là c'était un peu plus j'étais
+[2109] un peu plus à poil parce que c'est oui alors lesujet était là c'était l'introduction à Python
+[2113] ça me passionne mais en même temps c'est un peuplus je me suis j'ai beaucoup plus stressé là que
+[2118] pour la levée de fonds et en fait ça s'est bienpassé. J'ai adoré ça, j'ai bien aimé reformuler,
+[2125] transmettre, toujours rentrer chez soi, améliorerle cours tiens cette partie c'était foireux,
+[2129] cet exemple il est pas bon, trouver le bon exempleet tout. J'ai bien aimé le process et alors c'est
+[2132] assez drôle, tu m'en voudras peut-être après eninterview d'avoir de dire ce que je vais dire,
+[2137] mais en faisant mes recherches, tu étais pas nonplus un élève très he. Alors est-ce
+[2143] que tu estimes que tu fais un bon prof maintenant? au moins le prof que tu aurais aimé être. Enfin,
+[2147] je pense que quand j'étais élève, dès quej'avais un bon prof, j'avais un très bon
+[2150] rapport. J'ai identifié automatiquementdans toute ma scolarité, je m'en souviens, tous
+[2154] les Mais on sent quand quelqu'un a envie de voustransmettre quelque chose et qu'il est impliqué,
+[2158] qu'il a, pardonnez-moi l'expression, ses couillessur la table et ça se sent tout de suite. Je me
+[2162] souviens de prof d'histoire, de prof dans tous lesdomaines, même dans des matières qui me plaisaient
+[2165] pas. Si on sent que le prof est impliqué, qu'ila envie, bah tout de suite ça. Voilà, c'est comme
+[2169] un DJ quand vous allez écouter de la musique,si le mec il est là, qui met juste ses disques qui
+[2172] bouge pas. Quand un mec qui met de la musiqueet qu'il bouge et qu'on sent qu'il vit le truc,
+[2176] bah ça donne envie quoi. Même si on aime pas tropla musique. Même si on aime pas trop la musique,
+[2179] ça donne envie. Il y a un truc quiest transmis quoi. Et donc dans les cours,
+[2182] c'est pareil. Et oui, j'étais un élève,j'ai pu quand je m'ennuyais ou machin,
+[2187] j'ai pu faire des bêtises, me faire virer. Je mesuis fait virer de la fac, je me suis fait virer des prépas.
+[2191] Voilà. C'est toi qui balances. On a tout listé maison savait pas le dire. Et quand on est prof,
+[2199] oui, c'est ennuyeux d'avoir des élèvesqui perturbent la classe, mais je pense que
+[2203] si on fait son taf et que on va chercher tout lemonde et qu'on laisse personne derrière et cetera,
+[2206] normalement la classe, elle tient. Voilà.Ouais. Ouais. J'ai été un seigneur les prépas,
+[2211] je me souviens avoir eu du mal quand même une foisà tenir la classe. Ah ouais. Non mais c'est Non,
+[2215] non, mais parfois de toute façon tu astes profs, tu as une solution, tu dis bah dehors.
+[2219] Ben c'est ce qui s'est passé. Oui oui je m'ensouviens encore une qui sort son téléphone ça
+[2223] sonne elle décroche je lui dis mais je lui dismais on est en cours il fait bah attendez c'est
+[2227] rien juste machin mais non c'est pas rien c'estun cours vous êtes là pour apprendre et moi je
+[2232] suis là pour transmettre il y a pas de téléphonedans la classe dehors c'est Ouais les étudiants que
+[2239] tu as là c'est ceux qui font les plateformes dedemain c'est sûr c'est comme ça que ça se
+[2245] passera quelle erreur faut qu'ils évitent alorsdéjà les étudiants que j'ai là pour l'instant j'en
+[2251] ai plus. J'ai arrêté, j'ai fait une pausesur l'enseignement. J'ai
+[2254] j'étais jusqu'à 12h par semaine l'année dernière,c'était beaucoup hein. Mais j'étais très content,
+[2258] je bosse Albert School, ça se passe très bien.Mais déjà Albert c'est une école business et
+[2262] data. Quand on est en école d'ingé, les gensqui rentrent en école d'ingé qu'on fait [Mathieu Pasp ?] [?]
+[2266] souvent ils se passionnent plus vite pour latech pour l'objet technique. Donc ils ont
+[2270] pas de problème. Ils ont moins besoind'être convaincus du bien fondé de cette classe,
+[2275] ce cours et cetera. Pourquoi apprendre ceque c'est qu'Unix ? Pourquoi utiliser le
+[2279] terminal ? C'est blanc sur noir, c'estennuyeux. Pourquoi ? Et cetera. En général,
+[2283] ça va. Quand dans une école business et data,c'est différent. Il y a des gens qui sont plus
+[2287] business qui se disent "Bah, je vais faire la dataparce que ça va me servir mais qui sont pas
+[2290] forcément passionnés." Donc déjà, moi j'avais untravail de il fallait les convaincre. En général,
+[2295] j'y arrivais, je me débrouillais, je medébrouillais pas mal avec ça. Bon, j'ai quand même
+[2298] quelques réfractaires qui pouvaient être des genstrès sympas avec qui j'étais content d'aller boire
+[2301] des coups dehors mais qui avaient rien à faire dans uneclasse d'élèves. Et là-dessus est arrivé
+[2306] le LLM. Donc déjà, il y avait cette complexitéd'essayer d'apprendre aux gens à apprendre,
+[2313] enfin de faire comprendre que c'était intéressantet transmettre la passion et l'envie de voilà
+[2318] accepter la difficulté, accepter de faire unexercice, se casser un peu les dents parce que
+[2321] c'est dur, bah c'est parce que c'est dur et que tucherches que ça va rentrer dans ta tête et que les
+[2325] chemins vont se faire. Et là-dessus arrive le LLM.Le LLM il rajoute une couche de complexité pour le
+[2329] prof parce qu'il y en a plein qui se disent "Maispourquoi est-ce que je vais apprendre ça ? Et puis
+[2332] c'est une chose quand c'est ChatGPT 4 3 je saisplus quoi. Quand c'est 5, c'est encore autre
+[2336] chose. Quand il y a 4 5 qui arrive,plus ça monte et plus l'élève il se dit "Mais
+[2341] qu'est-ce que je fous là quoi ? Pourquoi je Doncil y en a une petite partie qui va quand même
+[2345] comprendre que enfin comprendre c'est pas quecomprendre parce qu'il faut comprendre que c'est
+[2349] important et comprendre qu'il y a encore besoinde gens qui vont dompter le truc parce qu'ils
+[2352] vont avoir une vision large et qui vont pouvoirêtre meilleurs que quelqu'un qui a pas de formation
+[2357] technique. Et puis il y en a d'autres qui vont sedire de façon j'ai pas envie c'est trop dur
+[2362] ce que j'ai à gagner en apprenant moi-même enmettant ça dans ma tête est faible. Je préfère
+[2368] pas perdre ce temps-là d'apprentissage. Jevais utiliser le LLM toute ma vie pour faire de
+[2371] la tech. Et quelque part, je peux pas leur diremais si il faut que tu apprennes. C'est
+[2377] de plus en plus dur de tenir ce discours, tu voishein. De les convaincre du bien fondé de
+[2382] s'emmerder à apprendre le terminal et cetera.C'est compliqué. Voilà parce qu'il y en a
+[2387] plein pour qui n'en auront pas besoin. Pleinqui n'ont pas besoin qui font des trucs très bien
+[2391] sans voilà. Moi aujourd'hui, je pense qu'encoreles gens qui sont dans la tech depuis
+[2395] longtemps ont encore un avantage par rapport auxnouveaux ou à ceux qui ne savent pas ce qui
+[2400] se passe et qui utilisent du LLM sans savoir,c'est que quand on a fait de la tech depuis
+[2404] longtemps, qu'on a une vision large, on va êtrecapable de mieux le guider, de mieux voir quand
+[2407] il fait de l'over engineering, il fait beaucoupd'over engineering ou beaucoup de il en
+[2410] fait souvent de voir les petits trucs où il seplante et cetera. Pour arriver à ce niveau-là,
+[2416] il faut beaucoup de temps et les gens prennent demoins en moins le temps. Donc
+[2420] en fait, c'est la disparition des experts aussi.Mais bon, c'est un autre sujet, c'est que le LLM,
+[2424] il prend la place des juniors et donc il y aplus la rampe pour devenir expert, elle est plus
+[2427] là. Pareil, elle tombe. Donc peut-être quedans 30 ans, il y aura plus aucun expert en tech.
+[2433] C'est édifiant parce qu'en fait là, donclà, c'est le troisième épisode du podcast et c'est
+[2436] le seul point, je pense, sur lequel toutes lespersonnes qui sont passées sont d'accord. Ouais,
+[2440] c'est ce point justement de la problématiquedes juniors qui ne vont pas se former,
+[2443] donc de la disparition à long terme desC'est terrible. C'est terrible. Alors bon,
+[2447] on verra. Après, il y a plein de gens qui ontdit "C'est terrible quand l'imprimante elle est
+[2449] arrivée, quand les métiers sont arrivés, quandmachin bon oui. OK, c'est terrible pour ceux de
+[2454] l'époque pour ceux qui arrivent derrière, ils ontpas connu avant." Oui. Pas connu avant. Mais bon,
+[2458] je veux dire l'humanité a survécu. Oui oui oui,est-ce qu'on est plus malin, moins malin, plus
+[2463] capable, moins capable ? Je sais pas. On verradifférent. Moi je veux dire comme si on vexe
+[2468] personne en plus. Tout le monde est content. Toutà fait. Très bien. Ben moi, je fais toujours
+[2474] référence à Albert School. Donc comme tu l'asdit, c'est business et data. On le voit avec l'IA,
+[2480] la data est toujours plus importante. Donc ontombe dans un monde où ça devient un actif. Toi,
+[2488] tu as eu un petit côté artistique, tu l'as dittout à l'heure aussi, manuel. Quel regard tu as
+[2492] sur cet avenir qui ne compte que sur la data ?peut-être qu'il y a une chance pour l'homme de
+[2499] se dé peut-être qu'il y aura made by human,tu vois, des labels faits par l'homme, faits par
+[2503] l'humain et qu'on va de plus en plus chercherce fait par l'humain et que peut-être qu'une
+[2510] fois que ça va rentrer dans les esprits ce fait àun moment d'être capable de dire non, je mets de
+[2513] côté la tech, je veux passer 1 heure 2h sans tech,tu vois avec de l'humain ou du direct, de
+[2520] quelque chose qui sort d'un cerveau et qui a étévocalisé peut-être, mais peut-être pas, on verra.
+[2524] comme pour les gens qui veulent pas du prêtà porter mais des chaussures faites main et
+[2529] cetera quoi. Par exemple. Ouais, complètement.Complètement comme pour les gens qui veulent une
+[2532] table d'artisan, pas une table d'IKEA. Bon, chezmoi il y a pratiquement tout IKEA mais comme chez
+[2536] beaucoup de gens alors que tu as un atelier alorsque tu voilà. Bravo. En fait, c'est le temps.
+[2541] C'est le temps et c'est vrai que c'est cherde faire une belle table. Bah au début, on se dit
+[2543] on va faire une table, c'est facile, mais unetable c'est compliqué hein. Le plus dur c'est la
+[2546] chaise parce que la chaise elle doit être légère,solide déjà légère, solide, pas trop chère, pas trop
+[2551] compliquée à fabriquer. C'est compliqué hein.Et jolie. Voilà. OK, mais on n'est pas loin de la
+[2557] fin en fait. On n'est pas loin de la fin. Ouais.peut-être pour reboucler sur la vidéo d'abord.
+[2564] il y a en fait beaucoup de choses qui ontété inventées à la création de Dailymotion. Oui,
+[2569] des choses vraiment beaucoup de choses qui sontmaintenant celles que tout le monde utilise sur
+[2573] la manière de voir la vidéo, de la parcourir,de la mettre en ligne et cetera. Tout ça, c'est de
+[2578] ta faute en fait. Alors, c'est de ta faute, notammentl'autoplay parce que c'était le truc qui était un
+[2583] peu critiqué hein. Tu vois le lancement de Dailymotion,tu arrivais sur une page, tu scrollais, bam,
+[2586] d'un coup la vidéo se lançait. Aujourd'hui, moije voulais pas dire le mot. Voilà. Moi, il y avait
+[2589] pas d'autoplay sur la page d'accueil. Ah, sur lapage d'accueil. Et quand on uploade une Ah quand
+[2594] on uploade sur Oui, quand on uploade après vous aviez rajoutél'option pour l'enlever parce que je me souviens
+[2598] de débats interminables vraiment c'était génial.Si tu es sur la page de la si c'est la page de
+[2603] la vidéo, l'autoplay me dérange pas. Si c'est surune page où il y a plein de choses dont une vidéo,
+[2607] tu veux pas l'autoplay. Comment toi tu vois les 10prochaines années sur la vidéo sur internet ? Le
+[2612] gros problème c'est que le va finir parsynthétique. À
+[2618] force de bouffer du contenu synthétique au boutd'un moment ça tient plus quoi. Aujourd'hui
+[2623] on fait encore à peu près la différence de moinsen moins. J'ai un pote qui fait des pubs là. Il a
+[2627] fait une pub pour un client je peux pas parler.Il a fait c'est la première fois qu'il faisait
+[2631] tout synthétique 100 % synthétique. Voilà pourun gros client, une grosse pub qui normalement
+[2636] aurait nécessité un gros budget d'agence.Il a tout fait 100 % synthétique et c'est parfait.
+[2640] Donc je pense que ça va de la mêmemanière que Google est en train d'être saturé
+[2645] de contenu synthétique et que ça peutles tuer hein parce qu'ils ont pas encore
+[2648] trouvé la solution. Et ben si la même chosearrive dans la vidéo qu'est-ce qui va se
+[2652] passer au bout d'un moment ça pourra plus être possiblequoi. Peut-être possible qu'est-ce qui quand tout
+[2656] même les films qu'on connaît vont être repris,remâchés remixés on voit que même déjà les
+[2660] humains le faisaient parce que la licence StarWars, ils ont fait du remix nul de truc d'avant
+[2665] en prenant les mêmes scènes. Merci. En reprenantles mêmes scènes et en faisant je regarde ça mais
+[2669] je dis mais pourquoi quoi ? Ça sert à quoi ? Etsi le contenu sur internet devient ça, mais quel
+[2673] enfer ? Mais tu crois en un futur où toutesces vidéos sont générées même par les gens vraiment
+[2679] à demeure que pour eux en fait, il y aura mêmeplus de plateforme ? Je sais pas, moi j'ai un pote
+[2683] qui m'a parlé d'un truc, un concept qui m'a tusais, à la fin d'un film souvent tu es triste,
+[2687] ça s'arrête hein. Il m'a dit "Mais demain ça vacontinuer." J'imagine bah ouais [ __ ] tu imagines
+[2692] ça s'arrête, tu passes un mode, tu as un bouton surton Plex sur ton truc, continuer avec toi ce que
+[2696] tu aimes, tu vois ? et les acteurs ils restent,le générique, le rideau il se relève, tu vois,
+[2700] le film il continue que pour toi, tu vois avec tonhumour, ton machin mais en fait tu finis c'est la
+[2706] bulle de filtre quoi. Tu finis par être enferméque toi avec ce qui te fait rire et cetera. C'est
+[2710] pour moi c'est le si ça va vers ça, c'est lerabougrissement de l'humanité, tu vois. C'est
+[2714] alors j'espère qu'on va se enfin j'espèreje suis sûr qu'on va se relever, qu'on va
+[2718] trouver d'autres manières de créer, de consommeret cetera. Et puis ça va peut-être
+[2721] être la solution au problème en fait. toute cettesurenchère synthétique et cetera qui va saturer
+[2725] complètement, ça va peut-être être la solutionau problème parce que ça va s'auto-imploser,
+[2730] tu vois. Il restera plus que les trucs humainset sympas, tu vois. C'est on l'espère mais oui,
+[2735] je suis moyennement confiant. Ouais.Ouais. Parce qu'on voit que même les podcasts,
+[2741] bon nous on vient de se lancer donc on aune forte traction mais en réalité j'ai vu des
+[2745] études qui disent qu'aux US c'est plutôt en trainde se calmer. Les gens veulent plus regarder
+[2749] des épisodes de 1h 2h. On parlait tout à l'heurede durée de 7h. Ouais. Attention span qui est
+[2752] diminué. Ouais. Ouais. Donc c'est Oui. Oui. Toutce qui déroule une réflexion sur un terme
+[2759] trop long en fait c'est difficile pour les gens.Tu vois ça a commencé tu vois le
+[2763] cinéma les années 1910 les plans qui durent unedemi-heure séquence la durée moyenne des plans
+[2769] elle a réduit. Tu as des articles avec Twitteret cetera. Bah oui tout ça sera réduit quoi.
+[2773] L'économie de Netflix et Amazon Prime n'est pashein parce que les scénarios sont faits à chaque
+[2778] fois pour relancer l'attention. Donc ils remettentdes éléments du scénario à chaque fois en tout
+[2783] début d'épisode pour te relancer et cetera. Doncc'est vrai que le marché de l'attention c'est le
+[2787] nouvel ordre du web. Non, je veux direles films contemplatifs ça marche plus du tout
+[2790] en fait. Moi la clé c'est de couper les écransà un moment quoi. Couper les écrans régulièrement
+[2793] souvent lire tu vois lire accepter. C'est drôlepour un mec qui a inventé la vidéo en ligne.
+[2798] je pas inventer la vidéo en ligne mais non moij'adore couper hein. J'adore couper. Alors,
+[2801] c'est dur de couper maintenant parce que depuisque les agents sont sur son ordi et qu'on peut
+[2806] avec l'application Codex, l'application ClaudeCode ou GPT se reconnecter avec son agent qui
+[2811] tourne sur son serveur ou son machin, c'estl'enfer parce que dès qu'il y a une minute de
+[2816] trou dans le train, je bosse tout letemps en fait. J'ai pris le train pour venir ici,
+[2819] je suis sur deux clients, je bosse tout le temps.Ça délire et puis ça délivre en permanence.
+[2823] Alors c'est grisant, c'est waouh, c'est eten même temps c'est épuisant quoi. Après c'est
+[2828] amusant parce que les parents arrivent à imposeraux enfants de mettre le téléphone dans la pièce
+[2832] d'à côté et nous on arrive pas en fait du tout.Alors ouais, j'ai une famille, ils
+[2837] ont mis une boîte à l'entrée, ils mettent tous leurtéléphone dedans quand ils rentrent. Mais je pense
+[2840] c'est pas mal en fait. Il y a que ça qui peut noussauver quoi. sinon on arrive pas à dormir,
+[2844] on arrive plus après on arrive pas à separler entre personnes. Ouais. Ouais. Et c'est
+[2847] vrai qu'on vit un monde où quand tu es passionné,c'est devenu compliqué de faire une pause.
+[2852] Bah oui, bien sûr. Et compliqué de faire une pauseparce qu'on c'est grisant de pouvoir atteindre une
+[2856] telle vélocité, de réaliser, on est au téléphoneavec le client, le téléphone à l'oreille,
+[2860] il me dit "J'ai besoin de ça, machin." Pendantqu'il me parle, je tape le prompt avant que la 10
+[2863] minutes après, avant que la conversation se termine,je lui envoie le lien avec son interface, elle est
+[2866] codée. Donc c'est dingue. Et en plus,je rajoute un truc, c'est que moi je me dis que
+[2871] potentiellement dans 2 3 ans, peut-être nous toushe en tant que podcasters, on est tous
+[2875] remplacés. Peut-être que moi, si demain l'agent,il est intégré dans le PC de tout le monde et
+[2881] de tout le monde et qu'il observe les process detout le monde en proposant des interfaces,
+[2885] il dit au chef d'entreprise tiens, je vois quetu fais ça tout le temps. Tu veux pas que je
+[2887] te fasse ça, tu veux pas que je te fasse ça ? Bambam bam bam. Moi, je sers plus à rien. Donc en
+[2892] tant que il y a aussi ce stress de se dire ilfaut que je pète du service maintenant parce que
+[2896] peut-être que dans 2 3 ans tout ça est terminé.Oui, mais ça c'est à ce moment-là plus personne
+[2900] ne sert à rien l'année d'après. Ouais, mais alorsbon, c'est vrai que si ça bouffe tous les métiers,
+[2905] il y aura plus beaucoup d'argent pour payer lesservices quoi. Bah si, moi j'ai une toute dernière
+[2909] question de fin, c'est est-ce que tu connaisencore des gens chez Dailymotion qui peuvent faire
+[2913] apparaître ma page Que du Web sur la plateforme ?Parce que c'est devenu compliqué. Il y a plus personne
+[2917] chez Bon, j'enverrai un mail alors. Benjamin,on a fini. Ouais. Ouais. Merci beaucoup. Merci à
+[2924] toi. Merci à vous. Super bien de te recevoir.Ouais, merci. Très sympa. Merci beaucoup.

@@ -1,0 +1,985 @@
+[0] [Music]
+[0] cicd is a terrible pain teams have
+[3] basically stopped expecting from their
+[5] CISD tooling to actually continuously
+[9] integrate and deliver their product
+[11] they've sort of given up on setting that
+[13] expectation that everyone building your
+[16] product can actually integrate all of
+[18] their work in one place and then deliver
+[21] it all as a whole and then do that
+[23] continuously
+[25] you are listening to the kublist podcast
+[28] a show interviewing project maintainers
+[29] for open source projects with a focus on
+[31] cncf Sandbox incubating and graduated
+[34] projects hi I'm Mark Campbell together
+[36] with Benji Degroot we publish the kublus
+[38] newsletter dedicated to kubernetes and
+[40] the cncf ecosystem I'm the founder and
+[42] CTO at replicated where we enable
+[44] software vendors such as hashicorp
+[46] puppet harness and many others to
+[47] operationalize and scale the
+[49] distribution of their modern on-prem
+[51] software check us out at replicated.com
+[53] Benji is the co-founder and CEO at
+[55] Shipyard where they enable teams of all
+[57] sizes to build test and deploy faster
+[60] and more reliably via their ephemeral
+[62] environment management platform get
+[64] started with ephemeral environments at
+[65] shipyard.build the kublas podcast is
+[68] brought to you by heavy bit the leading
+[70] investor in develop prefer startups for
+[72] more information visit heavybit.com if
+[75] you're interested in being a guest on
+[76] the show or you would like to suggest a
+[78] project find us on Twitter at read
+[80] kubelist finally sign up for the
+[82] cubeless newsletter and read previous
+[84] issues at kubelist.com hi again so we're
+[87] back with the second part of the series
+[88] with Solomon hikes last time we talked
+[91] about Docker and today we're going to go
+[92] on and talk about dagger so someone
+[94] spent a lot of time building dagger to
+[96] solve some of the challenges many of us
+[97] have had with CI this is definitely a
+[99] cool new product and hearing why and how
+[101] it was built was a great story enjoy
+[104] [Applause]
+[106] now you've got this thing called dagger
+[108] and honestly it's really cool
+[111] um and I'd love you to just tell us
+[112] quickly like what is dagger what's the
+[115] elevator on dagger and then let's just
+[117] talk a little bit about maybe where it
+[119] came from
+[120] um where you guys are at and where
+[122] you're planning on going and then maybe
+[124] a little bit of community talking
+[125] because I know it's an open source
+[126] project as well sure so uh dagger is my
+[130] my new startup I started it with two
+[133] close friends were the earliest
+[135] employees of Docker and even dot Cloud
+[139] before that so we went through the pivot
+[140] together and everything uh Sam Alba ran
+[143] engineering basically and Andrea bozardi
+[146] was the very first engineer and wrote
+[149] the first line of code in the docker
+[151] repo you know among many other things he
+[153] was laid on Swarm and
+[155] anyway so we we got back together and
+[157] built a team around
+[158] solving more problems in this General
+[161] space in it and we we started by just
+[165] starting over as beginners we just went
+[167] out there and spoke to as many software
+[169] teams as we could about their problems
+[170] to make sure we didn't make any
+[172] assumptions because 10 years is a long
+[174] time you know some things remain the
+[175] same others change so what we learned
+[179] is that CI CD is a terrible pain
+[183] and teams have basically stopped
+[186] expecting from their cicd tooling to
+[189] actually continuously integrate and
+[191] deliver their product
+[201] their work in one place
+[203] and then deliver it all as a whole
+[206] and then do that continuously literally
+[210] the words continuously integrate and
+[213] deliver
+[214] it's not happening in practice you've
+[216] got pockets of it and pockets of the
+[219] team but as soon as you have more than
+[221] one team shipping one
+[224] cohesive
+[225] component you know so let's say as soon
+[227] as you you're large enough that front
+[229] and team back in team you know maybe the
+[232] AI Team Mobile whatever you've got these
+[234] these silos now and inside that Silo
+[237] everything's great you got native
+[239] tooling you're developing super fast
+[241] you're collaborating super fast
+[244] but now you want to run integration
+[246] tests you wanna
+[248] deploy staging environment you want to
+[250] go to production
+[251] you want to do a bunch of things that
+[253] involve not just your Silo but the other
+[255] silos so you want to integrate and then
+[257] things break down
+[259] it's slow
+[260] hard to test
+[262] hard to collaborate on
+[264] and so it's just a source a constant
+[265] source of problems
+[267] and so dagger uh aims to solve that
+[270] by instead of throwing everything away
+[272] and starting from scratch with a new
+[274] buzzword you just start from this the
+[277] cicd you have and improve it
+[281] so it can actually integrate everything
+[282] and the way you do that is you meet
+[284] developers where they are so
+[286] you drop this engine though called
+[288] dagger on top of your existing CI
+[290] platform and then
+[292] you write code for it you express your
+[295] pipeline logic in code
+[297] and then you can run those pipelines
+[299] on the developer's laptop and on your CI
+[302] Runner so that gives you a few things
+[305] developers can actually run the full
+[307] Suite of cicd pipelines early as part of
+[310] the development process they don't need
+[312] to run all the pipelines all the time
+[315] but you have the shift left process
+[317] where okay you're participating in the
+[319] integration process early
+[321] so things like getting an end-to-end
+[325] environment from different pieces and
+[327] then aiming your tests out in an
+[329] automated way becomes Easy by the way
+[331] I'm going to plug CBR here if you're
+[333] using Shipyard you can plug your
+[334] Shipyard environment as part of that
+[336] overall pipeline right the point is
+[338] there's a lot of tools out there
+[341] and all of them need to be plugged into
+[343] your CI CD
+[345] pipelines together that's the whole
+[347] point of the eye for integration you're
+[349] supposed to integrate everything
+[351] and if you can't actually integrate
+[352] everything from other teams continuously
+[354] then it's not cicd it's broken right
+[356] well thank you for plugging Shipyard by
+[359] the way I will send you the check that I
+[361] promised you at a later date and time
+[364] but so that makes a whole lot of sense
+[366] and I will say and I think Mark can talk
+[368] to this even better than I can yeah
+[370] continuous is a little bit
+[372] more of a promise than a reality is kind
+[375] of the way I would put it and I think
+[376] everyone aspires to it but it's tough
+[379] and so that really makes a whole lot of
+[381] sense um that that's the problem that
+[383] you wanted to tackle so when did you
+[385] guys start like when so you started
+[387] talking I mean this part is really
+[388] interesting for our listeners because so
+[390] you you went out you you kind of had the
+[392] team you had this awesome core team you
+[394] went out you talked to a bunch of folks
+[396] what was the impetus of saying I want to
+[398] go raise some money I want to start a
+[399] company I want to start this open source
+[401] project how did you decide that it was
+[402] going to be open source yeah I know that
+[405] you guys have made a few changes a
+[406] little bit there based on cue and all
+[409] this other stuff just talk to us a
+[410] little bit about that origin yeah
+[412] so in our case I don't know how well
+[415] this applies to a first start but
+[417] coming out of a first one that was let's
+[419] say very tense you know 10 years of my
+[421] life lots of ups and downs
+[423] serious burnout at the end the way we
+[427] got the band back together
+[428] was actually by talking not about a
+[430] specific problem we wanted to solve but
+[433] about how we wanted to feel going to
+[436] work every morning you know the team
+[438] culture the work environment the values
+[441] you know okay what are we going to do
+[442] with our life
+[443] and how do we build a team that's
+[446] awesome and can find the perfect problem
+[450] to solve in the market and then crush
+[452] the perfect solution and then keep
+[454] executing and scaling and the whole time
+[457] you're happy you're there
+[459] because it turns out what I learned the
+[461] first time is if you worry about the
+[463] last part uh you're happier there
+[466] at the end actually you're never going
+[468] to get it because it's too late once
+[470] you're scaling and everything's set the
+[471] culture is set you know the Team
+[473] Dynamics are step if you want to
+[475] optimize for
+[476] a group of people that just awesome at
+[479] what they do and they move as one and
+[481] they're happy they're there they love
+[482] working with each other
+[484] and they have shared sets of values and
+[486] a common culture you got to start with
+[488] that so that was kind of our approach
+[490] actually
+[491] and so I think we were successful I mean
+[493] it's 22 of us now you know still early
+[495] but what happened is we built the team
+[498] culture we wanted and then over time we
+[501] built the team we wanted and along the
+[503] way we've we've started this process of
+[505] discovery you look for problems to solve
+[509] and those things that kind of Co
+[511] co-evolved the culture and the problem
+[514] and then from there the product so
+[517] that's the first thing
+[518] the second thing is well you know pretty
+[520] quickly this discovery process pulled us
+[522] in the direction of you know what I was
+[524] talking about before deploying your app
+[525] integrating your app so just ticd
+[527] problems because it was just so obvious
+[529] that the cicd is just a terrible
+[531] experience for every team above
+[534] 10 people universally has banned cicd or
+[536] just you know CC they've learned to live
+[538] with and so then the process was
+[542] I think two years of constant
+[544] prototyping and iteration
+[546] I think we shipped 60 prototypes and the
+[550] first 30 was just the three of us and
+[553] then the next 30 there was always an
+[554] audience always someone that external
+[556] that we showed it to then eventually we
+[559] got to an alpha product
+[560] in 2020.
+[562] and then another Alpha product you know
+[564] every three to six months
+[566] continuously iterating and changing
+[568] things until we launched a year ago so
+[570] you know March 2022 that's when we
+[573] launched openly
+[575] and that was open source but in 2021 we
+[578] actually spent a whole year
+[580] iterating on and shipping and even
+[582] charging money for a proprietary Cloud
+[585] product no open source that was 2021 and
+[589] then we learned that that was never
+[591] going to scale in our case
+[593] and in our case we needed an open source
+[596] engine
+[597] and so we we backtracked and sort of we
+[600] basically open sourced half of the
+[602] product
+[603] as an open source engine
+[604] the one that made sense has an open
+[607] source engine and the other half
+[609] is an optional cloud service that we're
+[612] shipping now actually so we we started
+[614] onboarding our first customers on that
+[615] and we haven't launched it publicly yet
+[617] but that's the other half of dagger so
+[620] daggers exists today is a hybrid product
+[623] it's an open source engine plus the
+[626] proprietary cloud service
+[628] but it took many iterations to get there
+[630] I think that that story is like it's
+[632] super important you know by the way kind
+[634] of off on a tangent for a second this
+[636] you know you often see like The Hacker
+[638] News it's like you know here's this new
+[640] project dagger and you're like okay
+[641] great I understand this but there's two
+[643] years of prototyping and experimentation
+[645] and validation with customers that led
+[647] up to that like really simple articulate
+[650] Message In Like A Polished Alpha product
+[652] it like there's always all of that work
+[654] that leads up to that That You Don't See
+[655] totally and we still got it wrong
+[657] because we had to relaunch six months
+[659] later
+[660] Benji as you mentioned you alluded to
+[662] that you know even after all of that
+[665] You could argue maybe we launched too
+[667] late we should have just gone to a
+[669] broader launch sooner I would actually
+[671] argue that you should definitely do that
+[673] but either way whether you're iterating
+[675] in the open or you know in a partially
+[677] closed community what you said is
+[679] exactly right like there's just endless
+[681] endless iteration and you you never get
+[684] it right on the first try and and anyone
+[687] that seems to be getting it perfectly
+[689] right in the first right that's just an
+[690] illusion that just means they're good at
+[691] marketing you know that's such an
+[694] understatement it's hilarious
+[696] okay so let's just get a little
+[698] pragmatic for a second because I am a
+[700] let's say that I am a loyal cubeless
+[703] listener hello loyal cubeless listeners
+[705] okay and um I want to kick the tires on
+[708] dagger I am currently using Argo or I'm
+[711] using Circle or I'm using GitHub actions
+[713] what's a good place for me to start like
+[715] what's a good cool little side project
+[718] um obviously I'm gonna go check out
+[719] dagger.io but like give me just a little
+[722] pragmatic like how I can kick the tires
+[724] is to see the power of this thing sure
+[727] yeah so the first thing is if you're a
+[730] small team of devs and you're shipping
+[732] like an early version of your product
+[734] and you don't spend a lot of time doing
+[736] devops or cicd work like you've set it
+[738] up and you kind of forgot about it
+[739] you're just shipping like crazy so
+[741] relatively small early teams
+[743] you probably don't need dagger right now
+[746] I mean it feel free to play around with
+[747] it because it's cool but the main Target
+[750] today is a slightly larger team
+[753] that you know they've been shipping for
+[755] a while now they're starting to grow
+[756] maybe they just got their first
+[758] full-time devops hire or or someone from
+[760] the dev team just has to spend
+[763] half of their time or more with you know
+[765] on tooling and Automation and and CI CD
+[768] and and you know you start needing to
+[769] retool and and that starts being a
+[771] bottleneck you know it's slowing you
+[773] down in a bunch of ways and that's where
+[775] dagger can really help so there's a
+[777] there's got to be some sort of pain
+[778] related to cicd and typically the pain
+[782] it can take a few forms one way that it
+[785] manifests itself is someone is spending
+[788] way too much time
+[789] changing yaml files for their CI maybe
+[792] it's Circle CI maybe it's good of
+[793] actions maybe it's gitlab it doesn't
+[795] matter originskins file and then they're
+[797] they think they got it right but they're
+[799] not sure so they're going to commit
+[800] they're going to push and then they're
+[801] going to wait and then they're going to
+[803] wait and then they get an error oh I
+[805] forgot a tab and then they're doing it
+[807] again so were you back to the Stone Age
+[809] of software development because it's
+[812] software your pipeline is software you
+[814] so you should it's 2023 you deserve to
+[818] be able to run the damn pipeline locally
+[819] like in a second and know if you made a
+[821] typo before you commit it that's like
+[824] the very Basics so that's a pain point
+[827] that you know that that's usually how
+[829] you get started with dagger like you're
+[831] fed up with that and you hear a dagger
+[832] can help you just show up so I'm using
+[835] well it's not name it let's say Jenkins
+[837] because that's open source and that's
+[838] not going after any company but yeah
+[840] it's it's all all those are equally bad
+[843] in that sense sure no comment on any of
+[846] those things um but yeah exactly but but
+[848] they're hosted is really what it comes
+[850] down to and they're remote oh and so
+[852] their issue is is that if you want to
+[854] make a change it's a real relatively
+[857] long cycle like maybe a few minutes
+[858] which isn't that long but relative to
+[861] you developing code for example that
+[863] starts to add up if you have a bad
+[865] letter or if you have a your yaml file
+[867] as an extra space or a trailing whatever
+[869] that stuff starts to add up and you
+[871] don't actually get that feedback so
+[873] totally it brings this like instant
+[876] feedback loop locally for my CI so I
+[879] know when I'm I'm messing up a
+[881] configuration file or something rather
+[882] than having to wait five minutes for it
+[884] to run and grab a coffee exactly so yeah
+[886] and so what happens is uh it's still
+[888] paralyzing that basically you you do it
+[891] as little as possible
+[893] and as a result you don't fully Leverage
+[895] The Power of these pipelines because the
+[897] The Continuous word I would argue it's
+[899] super important because as a software
+[901] team you want to go fast you know you
+[902] want to ship improvements to your
+[903] product fast you want to adapt the
+[905] changes in the market or in requirements
+[908] fast and so
+[911] you can develop the feature or the new
+[913] thing whatever it is and you can have
+[915] all the cloud infrastructure in the
+[916] world ready but until you have a
+[918] pipeline that can continuously you know
+[920] take the next the next change and
+[922] automate the process of taking it live
+[923] all the way to production with all the
+[926] steps in between you're not done
+[927] basically and so I mean the example we
+[930] use these days in our sales conversation
+[931] that comes up a lot is the AI feature oh
+[933] my God we've got to add AI to the
+[935] product Oh we have the devs have the
+[937] Prototype but look we have this agent
+[938] that does blah blah blah but okay so now
+[941] that's like saying oh we have a
+[942] prototype of the new car
+[944] but you know you're not done when you
+[946] have the Prototype you're done when
+[948] you've shipped the cars to customers and
+[950] that's a manufacturing problem so you
+[951] need the pipeline in the middle and so
+[953] what what's happening now is
+[955] the experience of iterating and
+[957] improving and testing those pipelines is
+[958] so bad
+[960] that everyone's settling for very basic
+[962] pipelines and you know just you're
+[964] staying as far away from it as you can
+[965] no one's having fun innovating on their
+[969] cic pipeline it's it's a chore you know
+[971] so it's a competitive Advantage if you
+[974] can overcome that and actually make the
+[976] process of improving your Pipelines
+[978] as fun and productive as the process of
+[981] shipping the rest of the code because
+[983] then you're going to ship those features
+[985] faster you're going to get a few more
+[987] tests in there you're just going to get
+[988] something out there faster more reliably
+[991] you know it's just it becomes a
+[992] competitive Advantage so that's the
+[994] barrier we're trying to break down we're
+[996] trying to make those delivery pipelines
+[998] whether it's builds tests deployment and
+[1002] you know all those custom workflows it
+[1005] should be code you know and the team so
+[1007] you should be able to run it locally and
+[1008] the second thing is the developers using
+[1011] those pipelines should be able to
+[1013] understand them and customize them and
+[1016] sometimes create their own and they
+[1018] should be able to reuse each other's
+[1020] pipelines even though they use different
+[1023] tools and different languages you know
+[1025] so you want the front-end team if the
+[1028] front-end team says I need a staging
+[1030] environment right now you know and so
+[1031] they're they have their own thing
+[1033] they're using whatever Verso and lfi
+[1035] they have their own thing
+[1036] its own build on everything it's a bunch
+[1039] of npm scripts but then they need now
+[1041] they need to do end-to-end script so
+[1042] they also need to stand up a back-end
+[1045] environment and then they need to run
+[1046] the back end test suite and they don't
+[1048] know how that works
+[1049] there should be a standardized way to do
+[1051] that you know maybe the back in teams
+[1052] using Shipyard I'm just taking that
+[1053] example randomly okay but how do they
+[1056] trigger that secret deployment how do
+[1058] they what's the test tool like they
+[1060] don't they don't know so
+[1062] anyway you need collaboration across
+[1064] cross-development teams you need local
+[1066] execution you need
+[1068] proper testing and you need all that to
+[1070] be in languages that these Dev teams
+[1072] understand so they can participate
+[1074] right and so dagger actually is in
+[1078] multiple languages is that right
+[1080] yeah exactly so there's a python SDK
+[1083] there's a node.js SDK so JavaScript
+[1086] typescript there's a go SDK
+[1088] and then all this is based on a graphql
+[1091] API
+[1092] so really any language that supports
+[1094] graphql you can you can write what we
+[1096] call a controller so you write 10 20
+[1098] maybe 50 lines of code for an elaborate
+[1101] project that basically tells the dagger
+[1104] API here is how to run my pipelines you
+[1106] know and then those pipelines will run
+[1108] locally in development and then I'll
+[1110] also run on top of your CI Runner you
+[1113] know on top of circle Ci or on top of
+[1114] gate of actions Etc
+[1116] and they're the same so it's kind of
+[1118] just extending the whole concept of
+[1120] portable again this is the theme between
+[1123] not to not to simplify but the theme
+[1125] between Docker and Dagger besides the D
+[1128] is uh it's portability yeah portability
+[1131] yeah portability of code and now
+[1133] portability of pipelines really totally
+[1135] and and by the way it's all built on
+[1137] containers so part of this is
+[1139] we got containers now and it turns out
+[1142] you can't standardize every application
+[1145] in the world on a single architecture
+[1149] because there's too many different kinds
+[1150] of applications out there and sure a lot
+[1152] of them use containers but all of them
+[1155] will never use containers and those who
+[1157] use containers will not all use
+[1158] containers in the same way there's just
+[1160] there's going to be fragmentation
+[1161] because it's just you know the
+[1163] application space is too vast but all of
+[1167] those applications you know so I can't
+[1169] tell a software team what their stack
+[1171] will look like in five years
+[1173] but I can tell them what their pipelines
+[1176] should look like because that's going to
+[1178] remain the same
+[1179] you know everyone's pipelines should be
+[1181] running in containers all the time with
+[1184] no exception there's no good reason not
+[1186] to do it because a pipeline running in
+[1188] containers can ship any sort of
+[1190] application whether or not it runs in
+[1192] containers you see what I mean so we're
+[1194] focusing on containerizing the pipeline
+[1196] instead of containerizing the app and if
+[1199] you happen to containerize the app
+[1200] that's great it's a great fit but you
+[1202] don't have to there's zero opinion on
+[1204] how your application should run or where
+[1207] it should run the only opinion is you
+[1209] need a pipeline to ship it and
+[1212] you knew those five lines around
+[1213] containers for portability and then you
+[1215] did an API on top of that to express the
+[1219] so Solomon I want to go back at the
+[1221] beginning you talked about one of the
+[1224] the things that just was really good at
+[1226] Docker was the community
+[1228] um open source building this community
+[1229] really focusing on that and getting that
+[1231] that traction like can you talk a little
+[1233] bit about how you're focusing on
+[1234] community at dagger now yeah so we're
+[1237] we're spending a lot of time on it so
+[1239] Community you know we're doing what you
+[1241] would call community-led growth so right
+[1244] now if you're
+[1246] successfully using dagger
+[1248] the chances are very high almost 100
+[1251] that you started out in the open source
+[1254] community and you spent some time there
+[1256] and you interacted you asked questions
+[1258] you helped other users and gradually you
+[1260] kind of you followed a journey to being
+[1262] more successful
+[1263] so that's very similar
+[1265] to what we learned at docker you know I
+[1267] think the Market's more sophisticated
+[1270] you know it's it's more people are Savvy
+[1273] in doing that so it's expected you know
+[1275] so we do all the expected things and we
+[1277] spend a lot of time being nice and
+[1279] helpful and encouraging sort of that
+[1281] engagement you know building things
+[1283] together
+[1284] the big difference for us that we've
+[1286] discovered is that Docker was a pretty
+[1288] single player tool so that you know you
+[1291] can adopt Docker on your own very
+[1292] quickly and then yeah later you'll pull
+[1295] people in but you don't really need
+[1297] anyone else to use Docker in your team
+[1300] to be happily using Docker at least for
+[1302] the first phase you know dagger is
+[1304] different because if you notice how I
+[1306] pitched it earlier it's really about a
+[1308] team solving
+[1310] a problem together that's fundamentally
+[1312] a collaboration problem we're here to
+[1314] integrate everybody's work in one place
+[1316] and like I said if you're just one team
+[1319] you know doing everything with
+[1320] developing the same thing with the same
+[1321] tools all day long you don't actually
+[1323] need
+[1324] anything but the most basic CI and so
+[1328] that has affected our community and how
+[1330] you know the Dynamics of it because the
+[1332] people who show up sure they're asking
+[1334] questions like how does it work and I
+[1336] have this problem of course oh what
+[1338] other what cool things have other people
+[1340] built and here's a cool thing I built
+[1341] but also there's a lot of conversations
+[1343] around how do I help my team get on
+[1347] board with this you know oh you know how
+[1349] do I help this part of my team was using
+[1351] this language how do I convince my boss
+[1354] how do I convince the infrastructure
+[1356] team or are people saying oh I heard
+[1358] this is someone's trying to make me use
+[1359] this dagger thing you know convince me
+[1361] you know so it's it's interesting that
+[1363] the multiplayer aspect of it changes the
+[1365] the community Dynamics
+[1367] but I mean the fundamentals remain the
+[1369] same the best thing you can do in the
+[1370] community is provide ammo and get out of
+[1372] the way so we have this bi-weekly
+[1374] Community call where dagger users show
+[1378] up and they they they show something
+[1380] cool that they built or they give a
+[1382] presentation about how they they got
+[1384] their team to use dagger and that's way
+[1387] better and more fun than a dagger
+[1390] employee is saying here is what what we
+[1392] should do you know so everyone loves it
+[1394] we learn a lot
+[1396] and then we share all that on YouTube so
+[1397] it's great marketing content so
+[1400] If the product is a good fit for it I
+[1402] mean it's just it's a lot of fun also
+[1403] because you're you're building the thing
+[1405] all together you know you're hanging out
+[1407] on Discord all day with your with your
+[1410] users and you're happy to be there they
+[1412] give you feedback I mean it's it's more
+[1413] fun that way I think yeah that's really
+[1415] cool giving giving customers it's like
+[1417] that platform to really you know get up
+[1419] there and talk about what they're what
+[1420] they're building on top of what you're
+[1421] building and you learn from it they get
+[1422] an opportunity to share that's that's
+[1424] awesome yeah and there's lots of little
+[1426] things you can do for example one thing
+[1428] we do so of course we're so we're a
+[1430] remote team uh just kind of happened
+[1432] because we started doing covid and so
+[1434] we're on Discord
+[1435] and our community is also in Discord
+[1437] at Docker we were in slack and then we
+[1440] had a community slack but they were
+[1441] separate this time it's the same Discord
+[1445] so they're just a private area where the
+[1446] team hangs out and then right there just
+[1448] a few channels above there's where we
+[1451] hang out with the community so you're
+[1452] just in those rooms and just switching
+[1454] back and forth all day it's a completely
+[1456] integrated experience and a lot of times
+[1458] we'll start a conversation in the
+[1460] private side and we'll say oh wait wait
+[1461] let's just discuss this on the open side
+[1462] and we we start over on the other side
+[1464] so it's very seamless and it seems like
+[1466] a little thing but actually those little
+[1469] things they have an impact in how you
+[1471] structure your everyday there's lots of
+[1473] little subtle things like that no I get
+[1475] that I mean we have you know like we
+[1477] have a private slack but then like we
+[1479] have projects that we've contributed to
+[1480] the cncf and you know there's a there's
+[1482] a public slack there and you're often
+[1484] even that disconnect of leaving one
+[1487] slack like account and going to a
+[1488] different one conversations end up not
+[1491] intentionally in in private but like
+[1493] they're there and you're like oh there's
+[1494] a lot of like effort to move it out so
+[1496] that's that's actually a cool side
+[1497] effect too you get it
+[1500] so what about road map Solomon what's
+[1503] next what's kind of the big let's call
+[1505] the next six months to a year for dagger
+[1507] do you have that worked out or are you
+[1508] still kind of iterating you think to
+[1510] figure that out yeah I mean both we have
+[1512] a plan and a direction and we also
+[1516] iterate like crazy I think we just
+[1519] reached a milestone where we actually
+[1520] have paying customers now so that's new
+[1523] because of course the open source engine
+[1525] that you see
+[1526] on our website and our repo that's
+[1528] that's free of course and and we'll
+[1530] never charge for that uh so that we
+[1532] gotta search for something so one thing
+[1534] we did differently from Dockers were
+[1535] we're starting the work much earlier to
+[1538] build a full you know a fully formed
+[1541] product and business because until
+[1544] you've done that you can't guarantee to
+[1546] your community that you'll be around the
+[1548] you know for the long run and so you're
+[1551] putting that community at risk of either
+[1554] ending up unsupported
+[1557] or you know being a battlefield for
+[1560] fragmentation and drama later so it's
+[1563] better to just figure it out early what
+[1565] the model is and then you explain what
+[1567] it is and then people can say I'm in or
+[1568] I'm out so we've been doing the work you
+[1571] know the front since the beginning of
+[1572] the year we decided okay we're gonna
+[1573] just
+[1574] sell something and you know talk to our
+[1577] most our power users who are successful
+[1579] using dagger today and you know in
+[1581] production with their team and figure
+[1584] out what's missing and how we can solve
+[1587] these problems in a natural way
+[1589] um and charge money for it so we did
+[1591] that and we closed our first customer so
+[1592] it's still very early but that forced us
+[1595] to ship a lot of product
+[1597] and also learn a lot you know just
+[1600] listen a lot to what important problems
+[1602] do we solve that are valuable enough
+[1604] that someone will pay us for it and so
+[1606] we've learned a lot and so the next step
+[1608] is to take what we shipped and what we
+[1611] learned that is right now hidden at the
+[1613] bottom of our funnel you know with a
+[1615] relatively small number of teams that
+[1616] we're helping
+[1618] and package that into a story that that
+[1621] for the whole market so that probably
+[1623] means a more clear explanation on the
+[1626] website of what dagger is and also of
+[1627] course launching the full product
+[1629] including the part you can charge for so
+[1631] that's that's the next six months uh
+[1633] because right now if you go to our
+[1635] website I mean the reality is
+[1637] it's going to resonate very strongly
+[1639] with say one percent of the devops
+[1642] community
+[1644] you know they'll see things like your
+[1645] pipelines or code and yeah they run in
+[1647] containers oh my God that's exactly what
+[1649] I was looking for because it will solve
+[1650] these problems XYZ but we don't exactly
+[1652] spell it out what problems we solve for
+[1655] you right now actually I think the pitch
+[1657] I gave earlier which is a little rambly
+[1658] but still it's better than what we say
+[1661] on the website and the reason for that
+[1663] is the website we shipped six months ago
+[1664] the latest version and what I explained
+[1667] today that's what our customers are
+[1669] telling us today you know so they
+[1671] actually know why dagger is valuable
+[1674] better than anyone
+[1675] and so we got to go and tell that story
+[1677] better to everyone else so that it's not
+[1679] just the the one percent of the devops
+[1683] community that can get it and and get
+[1686] started but the other 99 of the devops
+[1689] community also
+[1691] because everyone has this problem I I
+[1693] think that it's interesting just in
+[1695] general the way that you approach stuff
+[1696] and it's just clear to me that you've
+[1697] learned so many lessons over the course
+[1699] of your career and the way that you're
+[1701] approaching building dagger uh and the
+[1703] lessons you learn from from prior
+[1704] companies obviously uh so I think that's
+[1706] really interesting and and a good lesson
+[1708] that we're learning every day I think
+[1710] all of us are probably is just you know
+[1712] it's not how you think about it or you
+[1714] talk about it it's how your customers
+[1715] think and talk about it yeah totally I
+[1718] have one technical question for you what
+[1721] about caching yeah caching is a huge
+[1723] premise I mean the thing is when you say
+[1725] oh your pipelines should be code
+[1727] okay that makes sense you know it'd be
+[1730] cool if I could the dev team could you
+[1733] know understand what's going on and
+[1734] write their own Etc but
+[1736] what API will that code Target if the
+[1740] API is just you know the underlying
+[1742] operating system like your your reading
+[1744] files and you're executing commands um
+[1746] on your Linux machine or Mac machine or
+[1748] whatever then actually the result will
+[1751] be terrible because you'll have
+[1752] something very slow and and the apis are
+[1755] just not a good fit for CSD pipelines so
+[1758] you need an API and that's that's
+[1760] specialized
+[1762] and specifically that's what most of the
+[1765] two years of iterating was just figuring
+[1767] out the right design for that and the
+[1769] right design we think is it should be a
+[1771] dag so the dagger API that's why it's
+[1774] called dagger it's basically an API for
+[1776] describing a dag so a dag is a sort of
+[1778] graph and each node in the graph is a
+[1780] very simple operation
+[1782] and then the lines you know the the
+[1784] edges between the the the the nodes of
+[1786] that that graph are data flowing from
+[1789] one node to the next and so one node one
+[1791] operation might be execute this command
+[1793] in this container or pull this Docker
+[1795] image or pull this git repo or modify
+[1797] this file and so these are actually
+[1799] those are building blocks and from those
+[1801] building blocks it turns out you can
+[1802] build any cicd pipeline if you have a
+[1805] good composition model an abstraction
+[1806] model and so
+[1809] that's when the caching comes in one one
+[1811] beauty of that model is that if you do
+[1813] it right if you engineer it correctly
+[1815] each node you know all its inputs and
+[1818] all its outputs because those are the
+[1819] arrows right and then you just compute
+[1823] um digest each input and then from there
+[1825] you and you record that and uh you do
+[1828] that for the same thing for the output
+[1829] so you basically have a full map of
+[1830] everything that happens every time you
+[1833] run data through that that data you're
+[1835] basically you know picture an assembly
+[1837] line in a factory or you know a supply
+[1839] chain and you're just each run you're
+[1841] recording what happens
+[1842] and then that's a really powerful
+[1844] picture to have because you're basically
+[1846] you're looking at you have a like an
+[1848] x-ray view of your actual software
+[1850] supply chain so dagger will once you're
+[1854] running your pipelines on dagger dagger
+[1856] will show you back what your supply
+[1859] chain actually is
+[1861] and along the way if you cache it so if
+[1863] if it finds a specific node if you ask
+[1866] for specific node to process a certain
+[1868] set of inputs like run this container
+[1870] from this image with this command this
+[1873] blah blah blah then it'll if it's done
+[1875] it before it'll just fast forward and
+[1878] give you the result from last time so
+[1879] that's exactly by the way how Docker
+[1881] build works
+[1882] because dagger is building the same Tech
+[1885] under the hood that Docker build is
+[1887] built on you know it's called build kit
+[1888] and it does a lot of that magic you know
+[1890] so when you Docker build you have a
+[1892] whole dag of what to do
+[1894] you know we basically decided that is so
+[1896] powerful you can do way more than bill
+[1898] without you can do any sort of cacd
+[1901] pipeline build test deploy and all these
+[1903] opportunity workflows all of that stuff
+[1905] should be in a dag and all of it should
+[1907] be cached by default so the result of
+[1910] that is a lot of times when you switch
+[1911] over from your old school yaml shell
+[1913] scripts monstrosity sorry artisanal
+[1916] script to uh dagger and just a caching
+[1920] you get a massive boost in in the
+[1923] runtime it just runs faster like twice
+[1926] as fast sometimes 10 times faster it's
+[1928] really crazy uh and that and that's we
+[1931] just we get a lot of the credit for that
+[1932] but this is really we're forcing you
+[1934] into a model that's just way more
+[1935] efficient and then we we cache it we
+[1937] catch the hell out of it by default so
+[1940] it's like switching from manually
+[1942] optimizing your assembly code to
+[1945] switching to a higher level language and
+[1947] the compiler does all the optimizations
+[1949] for you that's it's that kind of switch
+[1950] right so build kit is the compiler in in
+[1953] this particular analogy exactly yeah
+[1955] Bill Clinton and you know over we're
+[1957] wrapping Bill kits over time we're
+[1958] adding pieces here and there and we're
+[1960] uh we used to support vanilla Bill kit
+[1963] now it's we ship our own locked in build
+[1965] kit but yeah that's it's really 90 of
+[1968] the magic under the hood is bilkit so
+[1970] layers layers is really what we got
+[1972] layers it's layers yeah you got lots of
+[1974] layers yeah but Bill kit I think is the
+[1976] most one of those most
+[1978] under estimated
+[1981] open source project in the in in this
+[1983] space right now just so powerful and you
+[1986] can think of dagger as an effort to
+[1988] really leverage Bill kit to its full
+[1992] potential so Solomon is there anything
+[1995] else that that we haven't talked about
+[1996] that you want to share one thing I do
+[1998] want to say I guess is that if anyone
+[2001] out there is interested in the topic of
+[2004] cicd and specifically feels like
+[2008] we should look at it with fresh eyes
+[2011] cxtd could be a boring
+[2014] thing for many but some of us think
+[2018] it doesn't have to be boring you know
+[2020] there's a lot of cool work to be done
+[2021] and so if anyone out there wants to geek
+[2024] out with fellow cicd Geeks Who want to
+[2028] demand more you know we're just it's
+[2030] always fun to to talk and exchange ideas
+[2033] so so that's that's the most fun part
+[2035] for me so just you know find me reach
+[2038] out and I'd love to talk yeah if you go
+[2040] to dagger.io you can get that button
+[2043] right to the Discord server and
+[2045] apparently you can harass Solomon all
+[2047] day long on that on that Discord all the
+[2049] alarm so go find him all right cool well
+[2052] thank you so much for coming on I mean I
+[2055] thought that this was a really great
+[2057] conversation and I learned I learned a
+[2059] lot didn't expect to learn as much as I
+[2061] did but really learned a whole lot and
+[2064] uh really appreciate you coming on so
+[2066] thank you so much Solomon hikes of
+[2068] Docker and Dagger Fame thank you and uh
+[2071] we'll talk to you soon thanks guys
+[2073] thanks for having me it was really fun
+[2075] that's all we have time for today if
+[2078] this show or if you would like to
+[2080] suggest the topic head over to
+[2081] kublust.com I'm Mark Campbell CTO at
+[2084] replicated where we enable Cloud native
+[2085] software vendors to operationalize and
+[2087] scale the distribution of their modern
+[2089] on-prem applications to their largest
+[2091] Enterprise customers check us out at
+[2093] replicated.com my co-host is Benji
+[2095] Degroot CEO at Shipyard where they
+[2097] enable isolated ephemeral environments
+[2099] on every code change for companies of
+[2101] all sizes check them out at
+[2103] shipyard.build the show is brought to
+[2105] you by heavy bit the leading investor in
+[2107] developer for startups for more
+[2108] information visit heavybit.com and
+[2111] finally don't forget to sign up for the
+[2112] kublist Weekly Newsletter and read
+[2114] previous issues at kublist.com

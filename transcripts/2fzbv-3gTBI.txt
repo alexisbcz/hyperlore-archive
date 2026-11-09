@@ -1,0 +1,2877 @@
+[0] There's only two modes. It's hard
+[2] problems doing hard things. We want to
+[4] make it as cheap as possible in both
+[5] time and money. Saving you a ton of time
+[7] to go and spin up these things and then
+[8] only paying for what you actually use
+[10] when you're going and doing that. We
+[12] want you to spend as little time as
+[13] possible on the kind of configuration,
+[15] drudge work, etc. So that you can
+[17] actually go and build the thing you
+[18] actually wanted to go and do, right?
+[20] Like people don't start a business to go
+[22] and learn about Anible or Kubernetes or
+[23] any of this this other thing. But
+[25] current generation of software, if you
+[26] want to start a business that'll
+[27] actually kind of like scale for you, you
+[29] do have to go and learn these things,
+[30] right? Unless you use, you know, the
+[32] tools that we were building so that you
+[33] can actually spend all of the time
+[35] working on the actual problem that you
+[37] started your business to solve. Welcome
+[38] to the peel. I'm your host, Turner
+[40] Novak, founder of Banana Capital.
+[42] Today's guest is Jake Cooper, founder of
+[44] Railway.
+[45] &gt;&gt; We make all of that stuff that you would
+[46] need to potentially retain somebody to
+[49] go and manage those things. You can just
+[50] do it yourself.
+[51] &gt;&gt; Jake has grown Railway to figures in
+[52] revenue. And our conversation gets into
+[54] how they solve the hardest problems in
+[56] dev tools and the importance of back-end
+[58] infrastructure in AI native software. In
+[60] the age of AI, there's a very very
+[63] material risk of being out executed by
+[65] your competitors because they are moving
+[66] so quickly. Railway has made a bunch of
+[68] creative and bold product bets like
+[70] enabling users to create templates,
+[72] earning a revenue share when other
+[73] people use them, and building their own
+[75] data centers and cloud service. We want
+[77] to be as quick as possible and racking
+[80] allows us to move even closer to that
+[82] kind of like metal. We talked about how
+[84] Railway fully ramps new hires in 4
+[86] weeks.
+[86] &gt;&gt; Nobody joins a startup to be told what
+[89] to do. They join a startup to work on
+[91] hard problems using Discord instead of
+[93] Slack. What hyperrowth companies get
+[95] wrong on or design. It's really really
+[97] important to have operators be also
+[99] managers and why you shouldn't always
+[101] work on the weekend. Horsepower gets you
+[104] a lot of the way. But at a certain
+[106] point, you need to refine your
+[108] technique. And if you are working all
+[110] the time, you don't really have a space
+[112] to figure out where you've essentially
+[113] lost time. A quick thank you to Angelo
+[115] at Railway and Erica at Redpoint for
+[117] helping brainstorm topics for Jake. A
+[119] reminder, I publish new episodes of The
+[120] Peel every week exploring the world's
+[122] greatest startup stories just like this
+[124] one. Before we talk to Jake, we have to
+[127] talk about RAM. If you're running a
+[129] finance team, you know how much time
+[130] gets wasted on expense management.
+[132] Chasing receipts, categorizing
+[134] transactions, waiting for expense
+[136] reports, it adds up quickly. RAMP
+[138] handles all of this automatically. RAMP
+[141] is a corporate card and expense
+[142] management platform that over 40,000
+[144] companies like Shopify, CBRE, and Stripe
+[147] are using to streamline their financial
+[149] operations. But here's what makes their
+[151] corporate card different. Every
+[153] transaction gets automatically
+[154] categorized and matched receipts. No
+[156] more wondering what that $47 charge was
+[159] for 3 weeks later. You can set spending
+[161] controls, get real-time alerts, and even
+[163] block certain merchant categories. It's
+[165] like having a finance team member
+[167] embedded in every purchase. That's
+[169] pretty cool. The platform also
+[171] integrates with your accounting system
+[172] in ERP, so everything flows through
+[174] without manual data entry. It's like
+[176] having a finance team member embedded in
+[178] every purchase. The platform integrates
+[180] with your accounting system in ERP, so
+[181] everything flows through without any
+[183] manual data entry. That's pretty cool.
+[186] Whether you're issuing cars to a few
+[187] employees or managing spend across
+[188] departments, RAMP gives you visibility
+[190] and control without the paperwork. Stop
+[193] chasing receipts. Check out
+[194] ramp.com/theel.
+[197] Get $250 and see what a corporate card
+[200] can actually do for you. Time is money.
+[202] Save both with ramp.
+[206] Jake, welcome to the show.
+[207] &gt;&gt; Thanks for having me.
+[208] &gt;&gt; Yeah, thanks for coming. I think this
+[209] will be fun. really quick for people who
+[212] don't know I've heard railway described
+[213] as solving the hardest problem in dev
+[216] tools what what is that actually and
+[218] then what is what is railway yeah so I
+[221] think it's like the intersection of a
+[223] lot of hard problems and so that's what
+[224] makes it quite difficult so we are
+[227] really easy to use cloud platform you
+[229] kind of just go to devot or railway.com
+[231] you start almost like kind of skewing
+[233] out the things that you want you saying
+[234] give me Postgress deploy my GitHub
+[236] repository uh give me a starter Python
+[238] app you know start writing some code
+[240] etc. and we as the underlying kind of
+[242] infrastructure cloud provider will
+[244] automatically go in and kind of
+[245] provision those resources for you. So we
+[247] solve a lot of really really hard
+[248] problems in terms of delivering user
+[250] experience to users. When people think
+[252] about like cloud infrastructure, they
+[253] think of like servers and like
+[256] Kubernetes and like you know YAML and
+[259] all these other like complicated kind of
+[260] things and we try and abstract a lot of
+[262] those things into really really easy to
+[264] use infrastructure by starting on a lot
+[266] of the user experience stuff and ending
+[268] all the way at building our own data
+[269] centers to power a lot of that
+[270] experience. So there's a lot of hard
+[271] problems in between whether they're user
+[273] experience problems, infrastructure
+[275] problems,
+[276] configuration management problems,
+[278] versioning, deployment, rollouts, kind
+[280] of stuff like that, live infrastructure.
+[283] &gt;&gt; So pre- railway, what was I doing to do
+[285] all this stuff? Like what did the world
+[287] kind of look like?
+[288] &gt;&gt; Yeah. So a lot of it runs on things like
+[290] Terraform. So you'll go and basically
+[293] write your infrastructure as code and
+[296] then you'll be able to to kind of like
+[298] roll it out and apply it, right? which
+[299] requires you to know every knob, bell,
+[301] whistle, config, etc. So, you'll pull in
+[304] kind of a definition. You'll go and set
+[305] the properties you want to go in and do.
+[307] Usually, you end up doing this actually
+[308] after you've kind of explored some of
+[310] the really really complicated cloud dash
+[313] dashboards that Google or Amazon or
+[314] whatever have. You have to figure out
+[316] how to like version your config. when
+[317] you work on teams and go and like roll
+[319] out these kind of um services um there's
+[323] a little bit of of kind of like
+[325] knowledge or stuff you have to kind of
+[328] like know as you're going to roll them
+[329] out. So like how do you do things like
+[331] blue green deployments which is you know
+[333] I will cut I will spin up a a new
+[335] version of the service I'll let it kind
+[336] of like warm up and then I will like
+[338] seamlessly cut the traffic so that
+[340] whenever you deploy new versions of your
+[341] code the thing doesn't go down right so
+[343] those are things that you have to kind
+[344] of know the underlying bells stops
+[346] whistles etc up and for us the
+[348] alternative is you just give us your
+[350] GitHub repository we will go and roll it
+[351] out for you and then we will go and
+[353] automatically manage things like that
+[354] and slowly expose all of the those non-
+[357] spellsells and whistles instead of you
+[358] having to kind of like swallow the whole
+[359] thing at once, you know.
+[360] &gt;&gt; So, for someone who's maybe confused
+[362] with a lot of the technical terminology
+[364] that you just said, the the idea is that
+[366] you make it super simple to do a lot of
+[368] these more complicated, disperate, se
+[370] traditionally separate and harder to
+[372] kind of orchestrate all together
+[374] infrastructure things and you kind of
+[375] tie it into one easy to use platform.
+[377] Yep. Exactly right. We make all of that
+[379] stuff that you would need to potentially
+[380] retain somebody to go and manage those
+[382] things, you can just do it yourself by
+[384] saying, "Hey, I've just I've got this
+[386] thing that I had working locally on my
+[388] machine. I wrote a little web server. It
+[390] returns, you know, my gym sessions or my
+[393] to-do list or anything else like that.
+[394] I'm going to go and deploy it, right?
+[396] And you can deploy databases. You can
+[398] deploy functions. You can deploy pretty
+[400] much anything, right? And we make it
+[401] trivial to not just deploy simple stuff,
+[405] but everything under the hood so that
+[406] you can scale to infinity.
+[408] &gt;&gt; Why do you call it railway?
+[409] &gt;&gt; Uh there's a couple like different
+[411] reasons for that. I really like the kind
+[413] of like infrastructure almost like
+[414] monopoly utilities thing because railway
+[416] is a basically a utilities company for
+[418] the modern web. We want to make it so
+[420] that you can spin up everything super
+[422] trivially. You just only pay for what
+[424] you use and it's just a thing that kind
+[427] of like slides into the background,
+[428] right? It doesn't need to be crazy or
+[431] insane or anything else like that. It
+[433] just kind of works, right? And so trains
+[435] are really really solid from an
+[436] infrastructure perspective. Really easy
+[437] to like get around, etc. And so yeah,
+[440] that was a good one. But there's also,
+[442] you know, kind of a nod to like Ruby on
+[444] Rails or um anything else like that in
+[446] there. So there's a couple like things
+[448] interesting. I didn't even think of that
+[449] one. That makes sense. And you said you
+[451] think about cheaper to use. So what's
+[453] the value prop? Is it that you're saving
+[454] me time? Is it you I'm cutting costs by
+[457] using railway? Like why would I use it?
+[459] Yeah. So we want to make it as cheap as
+[461] possible in both time and money, right?
+[463] So saving you a ton of time to go and
+[464] spin up these things and then only
+[466] paying for what you actually use when
+[468] you're going and doing that, right? We
+[469] want you to spend as little time as
+[470] possible on the kind of configuration
+[473] drudge work etc. so that you can
+[474] actually go out and build the thing you
+[476] actually wanted to go and do right like
+[477] we won't start a business to go and
+[479] learn about Ansible or Kubernetes or any
+[480] of this this other thing but current
+[482] generation of software if you want to
+[484] start a business that'll actually kind
+[485] of like scale for you have to go and
+[486] learn these things right unless you use
+[488] you know the tools that we were building
+[490] so that you can actually spend all of
+[491] the time working on the actual problem
+[493] that you started your business to solve.
+[495] So when you were starting this well with
+[496] kind of order of operations like what do
+[499] you start with? Because I I think when I
+[501] think like all the things you kind of do
+[502] are sort of separate companies and
+[504] separate products. So you sort of have
+[506] to build all those different things like
+[508] how did you get this initially off the
+[510] ground was like certain things you
+[512] started with like what was kind of the
+[513] process of doing that? Yeah. So uh I
+[516] started with the thing that I thought
+[517] would be the hardest if that makes
+[519] sense. Um cuz I was like cool if we can
+[521] actually solve this then we have a
+[523] really really good shot at solving all
+[524] of the other stuff. Um turns out I was
+[526] really dumb and a lot of hard things. Uh
+[527] so what I thought was hard was actually
+[529] you know it was it's still hard easiest
+[531] thing.
+[531] &gt;&gt; Yeah. Well it wasn't the easiest right
+[532] but it was definitely somewhere in in
+[534] the middle. Maybe in the like you know
+[535] 75 percentile but
+[536] &gt;&gt; so if you go back would you do a
+[538] different thing first?
+[539] &gt;&gt; I don't think so. I'm I'm a big you know
+[540] big believer in the butterfly effect. I
+[542] think things are going well so I
+[543] wouldn't mess up anything in general. So
+[545] we were kind of the thing that I started
+[546] with was like databases right? And so
+[548] databases are actually pretty hard like
+[549] stable storage ends up being actually
+[551] quite difficult on the you know almost
+[553] like iceberg of like complicated
+[555] infrastructure things right because you
+[557] know people have data in their databases
+[559] and if you lose the data in your
+[560] database then you have a terrible time
+[562] or whatever right so I started with that
+[564] um because I was trying to spin up a
+[565] bunch of different side projects and
+[567] every single time I was like oh I want a
+[568] new side project or something like that
+[570] um I'd have to like wait essentially and
+[572] like go and spin up something in the AWS
+[573] dashboard and then configure you know
+[575] like any sort of like firewall rules or
+[577] anything else like to like get this
+[578] working. So I was like, "Oh man, there's
+[579] got to be a better way, right?" So I
+[580] started with like a really crappy script
+[582] uh that just ran on a box. I could call
+[584] the endpoint and it would spin up a
+[585] database. Um and then I just kept using
+[588] that and then as I was kind of iterating
+[589] through different ideas for like stuff I
+[591] wanted to work on, I just kept expanding
+[593] this kind of like script and people were
+[594] like, "Oh, this is super cool." Like you
+[595] know, I can kind of spin up like not
+[597] just Postgress. I was like, "Yeah, sure.
+[598] Why not?" Right? And so then they
+[600] started using it and then I was like,
+[602] "Okay, well like you know, I'll just
+[603] like launch it on Twitter or whatever
+[604] and like people can use it." So pushed
+[606] it out and then people thought it was
+[607] super cool. Um and then um I like
+[609] basically asked I was like okay well
+[610] like if I'm I want to work on this thing
+[612] this is like where I think that I'm
+[614] going to go in general who's working on
+[616] this right so I went around to a lot of
+[618] different people you know I went around
+[619] to like Jason Warner who was the CTO of
+[621] like GitHub at the time and I was
+[622] looking on poolside I was like hey Jason
+[624] you know like were y'all working on this
+[626] and he's like yeah like you know some
+[628] things got moved around as we like you
+[629] know absorbed into you know from GitHub
+[631] to Microsoft this is super cool like we
+[633] don't we're not actually actively
+[634] working on this I think it's awesome you
+[637] Do you want to take an angel check?
+[638] Right. And so I went around to a bunch
+[640] of different people and at the end of it
+[641] I had like no job offers but like a
+[643] bunch of commits for an angel check. So
+[645] I was like okay like let's let's see
+[646] where this goes. So you were actually
+[647] trying to get a job sort of in this
+[649] process.
+[649] &gt;&gt; Yeah. So I wanted to work on this thing,
+[650] right? I was like okay well like I know
+[651] I'll start a company at some point in
+[653] general but just tell me where I can
+[655] work on the cool problem and we'll just
+[656] work on the cool problem. So
+[657] &gt;&gt; you wanted to join a company and build
+[658] this.
+[659] &gt;&gt; Well I just wanted to build this. I
+[661] didn't I didn't really care. Right. In
+[662] general I was like okay this seems good.
+[664] Seems like a thing that you know is
+[665] pretty evident. people are gonna want
+[666] it, etc. Somebody must be building this,
+[669] right? Um, and then, you know, went
+[670] around, couldn't find anybody who's like
+[672] actually working on it from the angle
+[673] that I wanted to. So, I was just like,
+[675] okay, well, like, let's just run with it
+[677] because you kind of think like should if
+[679] it's all these different features that
+[681] sort of already exist all these
+[682] different places, like shouldn't someone
+[684] have started to expand what they did and
+[686] start to kind of do the real like your
+[688] thesis of like someone else should do
+[689] this? Did you know why it didn't already
+[691] exist? I think it was like kind of a
+[694] good enough thing if that makes sense,
+[695] right? Like this has all the things you
+[698] need like in aggregate, right? Like it's
+[699] it is the everything store, right? And I
+[701] don't think people were building
+[703] software at the rate that they are right
+[704] now. And I think especially with the AI
+[706] stuff, it's accelerated a lot of those
+[707] things. And so we're seeing like massive
+[709] massive uptick in terms of people who
+[711] are using and starting to use on
+[713] railway. Like we we've like 5x our top
+[714] of funnel in the last like six months.
+[716] So like tons and tons of people are
+[718] signing up because the rate of iteration
+[720] of software is growing so quickly and
+[722] now those old primitives like really
+[724] aren't keeping up right if somebody
+[725] wants to kind of like vibe code a um you
+[728] know some sort of thing and then they
+[730] slam into anible Kubernetes etc. they're
+[733] just going to be like, "What do I do?"
+[734] Right? Like there's I don't know if
+[736] you've seen it, but like there's people
+[737] on the like some subreddit being like,
+[740] "Hey, like how do I not lose my like
+[741] progress for like the last six months,
+[743] you know? Like cursor just erase it."
+[744] And it's like, "Oh my god, these people
+[745] like they don't know Git." Like they
+[747] just they don't know Git or like
+[748] versioning or any of these underlying
+[749] things, right? So there's this whole
+[750] kind of oasis or like ocean of people
+[752] that are like coming to go and build
+[754] software whether they are people who are
+[756] trying who are already software
+[758] engineers moving a lot quicker or new
+[759] software engineers trying to build
+[761] something and they're always looking for
+[763] like something something way quicker
+[764] right because the iteration loop has
+[766] gotten so much so much tighter with a
+[768] lot of the like AI tooling right so if
+[770] you're like a backend pro you're like
+[773] the gil foil in Silicon Valley like you
+[775] might see like real like I don't need
+[776] that like I can guild all this
+[777] &gt;&gt; y
+[778] &gt;&gt; but that's probably like a pretty small
+[779] percentage of people like the average
+[780] person starting a company like I mean I
+[783] feel like most people are not backend
+[785] experts.
+[785] &gt;&gt; Yeah. Yeah. Yeah. So the long tale of
+[788] like people who would not be suited for
+[792] railway is like diminishing by the day
+[793] basically because we can deploy anything
+[795] now right. uh actually anything asterisk
+[797] we can't deploy GPU infrastructure just
+[799] yet but like that is kind of like
+[802] dwindling right and so too is the market
+[805] growing of people who are just saying I
+[807] just want to move a lot quicker right
+[808] and so our as our capability kind of
+[810] gets significantly better and better and
+[811] better and those people wanting to
+[812] deploy faster and faster and faster
+[813] we're reaching this kind of inflection
+[815] point where most people are actually
+[817] almost capitulating out of that like
+[819] older mechanism of like building
+[821] software and moving into the realm of
+[823] the thing that we've built right so
+[825] That's super cool because I think for a
+[827] long while we're building a thing and
+[829] you know we we go and like pitch it to
+[830] like VCs and they'd be like well like
+[832] you know what problem is it solving?
+[833] It's like well software infrastructure
+[835] sucks right and you're like yeah but
+[837] like you know tell me more about this
+[838] thing right and now it's people want to
+[840] move significantly quicker and in the
+[842] age of AI there's almost like a very
+[845] very material risk of like being out
+[846] executed by your competitors because
+[848] they are moving so quickly and if you
+[849] don't have the tooling or infrastructure
+[851] to move at that pace you're going to get
+[852] left behind right so now we're we're in
+[854] kind of a more interesting spot where
+[856] it's like oh people are moving because
+[858] it is simultaneously cheaper and faster
+[860] to use the tools that we've built
+[862] &gt;&gt; and it's it seems like probably at first
+[864] it would getting a big customer like a
+[867] bigger enterprise or mid-market business
+[869] to switch over made hard like it was
+[870] just like you kind of got to get
+[871] somebody starting the company to start
+[873] building on it but then is it now it's
+[875] like a little you're seeing people
+[876] actually switch and and bring their
+[878] whole like rearchitect their entire
+[880] system on top of railway.
+[882] &gt;&gt; Yeah. Yeah. So the nice thing is is that
+[883] we support all existing open source
+[885] primitives, right? And so you can
+[886] actually just go and import things from
+[888] existing infrastructure you have right
+[889] you have docker files that's fine you
+[891] have your codebase we can go and
+[892] automatically go in and detect these
+[893] things etc. We can import just various
+[896] different kind of configuration files to
+[898] kind of automatically import you right
+[899] so you don't have to do too much of that
+[901] in general. So bigger companies then the
+[904] the benefit actually in this is that
+[906] nobody wholesale cuts their
+[907] infrastructure. They just like they
+[909] don't do it which what does that mean?
+[911] Like nobody's just going to basically
+[913] show up and and say well I spend $2
+[915] million a month on AWS and I want to
+[917] move all of it over here next week,
+[919] right? They just don't do it. So it's
+[921] just like let's just try let's just dig
+[923] in and set this up for like one team use
+[925] this wall. somebody the the way that it
+[927] usually happens is somebody either hears
+[929] about us or already starts bringing it
+[931] inside the organization for some sort of
+[933] like either tiger team project or thing
+[935] that they were like you know wanting to
+[936] sp internally and so they ran into
+[938] essentially this like platform team edge
+[940] of like this team potentially internally
+[942] that you know manages all of the this
+[945] tooling they've exposed them in various
+[947] different ways that ends up being
+[949] cumbersome and that's through no fault
+[950] of the platform tooling that's like
+[952] actually the under the underlying
+[953] infrastructure like the the
+[955] infrastructure that they are trying to
+[956] abstract is very very difficult and in
+[959] my opinion is like almost
+[960] unobstructable. Like it is it is at its
+[962] most baseline form the least complicated
+[965] you could make that infrastructure. So
+[967] any attempt to kind of move it around
+[969] actually just ends up pushing the
+[970] complexity around, right? So these teams
+[972] who would end up otherwise spinning up
+[974] up things on on that infrastructure
+[976] can't, right? So they're looking for a
+[977] new way to kind of move things around.
+[979] So they'll spin up something on railway
+[980] just to kind of start it and then go
+[981] from there, right? And so that's what
+[983] usually happens. somebody spins it up,
+[985] it grows inside a little bit in the
+[987] organization and then at some point, you
+[989] know, the opsac antibodies of the
+[990] organization basically say like, oh,
+[992] what is this tool? It's not like on an
+[993] approved list or anything else like
+[994] that. But that gets us into a sales
+[997] conversation with the other the the
+[998] people at the company because there's
+[999] already things running on it because it
+[1001] was so easy to go and spin up anything
+[1002] on it. Right.
+[1003] &gt;&gt; So then back going back to when you were
+[1005] first kind of going through this process
+[1006] of like it's sort of a side project kind
+[1009] of became a company. you I I mean you
+[1011] got a lot of really impressive people to
+[1013] kind of invest early on. Did they invest
+[1015] before you had a fully baked product and
+[1018] vision and like customer signed up or
+[1019] was it like kind of like kind of
+[1021] parallel path that how did that kind of
+[1022] play out? Um so yeah it was they
+[1026] definitely invested like the demo I gave
+[1028] them was one Postgress instance with a
+[1030] shared user. So if anybody actually just
+[1033] got into it and like ran anything on it,
+[1034] they could just nuke the entire
+[1035] database. So it was like really really
+[1037] poorly fleshed out in in general. So it
+[1039] was like just the inklings just like a
+[1042] bit of that like almost aha moment of oh
+[1044] I can do this thing and here's how I do
+[1046] it in the future and that was kind of
+[1047] the demo that we we we went forward
+[1049] with. Um and as for how we found them I
+[1052] think it was like X or stuff like that.
+[1054] I was just like doing the build in
+[1056] public thing sharing etc. And then and
+[1058] then I said, "Oh, if I were to actually
+[1060] go in and raise money uh for this thing,
+[1062] who who should I like talk to in
+[1064] general?" Right.
+[1065] &gt;&gt; So, was your approach like, "Hey,
+[1067] Turner, I'm raising money like please
+[1069] invest." What was your approach?
+[1071] &gt;&gt; It it was more like I am building this
+[1073] interesting thing. Here's this
+[1075] interesting thing. Who would be
+[1077] interested in giving money me money to
+[1079] me to build this interesting thing?
+[1081] Right? And then I had a bunch of people
+[1082] like, you know, Tom Preston Warner who's
+[1084] really really lovely. He like raised his
+[1086] hand in the comment. I was like, "Oh, we
+[1087] should just chat." Right? Like, "Oh my
+[1088] god, I love I love Twitter or X or
+[1090] whatever." Right? It's just like this
+[1091] bridge that like brings a a ton of
+[1093] people together, right? So, it was it
+[1096] was a lot of that honestly of people
+[1097] just kind of putting up their hand or me
+[1098] seeking them out from that like job
+[1100] offer perspective of like, you know,
+[1102] those two things and then at the end,
+[1103] you know, we had a half a million
+[1106] dollars worth of angel commits. Um, and
+[1107] then it kind of just all came together
+[1109] in that and then started doing it.
+[1111] &gt;&gt; So, would you recommend approaching him
+[1112] more like that? is a when you're getting
+[1114] that first round we need million bucks
+[1116] whatever the number is to get off the
+[1117] ground like less of a hey I need money
+[1121] like you're talking to people in the
+[1122] context of like I'm fundraising please
+[1125] invest treat it more of like a kind of
+[1127] looking for advice looking for how to
+[1130] unlock maybe meeting new people like you
+[1132] approach it more that way do like that's
+[1134] generally the approach that you took it
+[1135] seems like
+[1136] &gt;&gt; yeah so I think this is this is a
+[1138] philosophy that I have just generally
+[1139] it's almost like you should delay delay
+[1141] delay and then just go all right? Like
+[1143] it's it's almost you want to wait until
+[1145] you're really really confident and then
+[1147] you know you just be really really
+[1149] confident and almost like turn on a
+[1150] dime, right? Um so like as an example
+[1152] like wasn't super into any of the AI
+[1155] kind of like stuff as early as basically
+[1157] like this I think January basically is
+[1159] when I started kind of just really like
+[1161] digging into it and then I like saw it.
+[1162] I was like, "Oh, this is like really
+[1164] really cool and it will work and I see
+[1166] the way that it'll work and I see the
+[1167] way this is going to break in in general
+[1168] for a lot of stuff, but at least it's
+[1170] it's like solid enough ground to like
+[1171] build bases on, right?" So, in the same
+[1173] vein, I think that you should continue
+[1175] to work on your project and make sure
+[1177] that it's kind of like going to be
+[1179] something that you're actually going to
+[1181] want to spend like worst case scenario,
+[1184] three to five years on, you know, best
+[1186] case scenario like 10 to 15 years on or
+[1188] whatever, right? Because that's that's
+[1189] how long it is, right? Like it's it's a
+[1190] long journey to be able to like go in
+[1192] and build something etc. Right? And once
+[1194] you raise money like you're you're
+[1195] essentially committing to run that
+[1196] gambit, right? You are committing to
+[1198] &gt;&gt; deploy the capital, run after the
+[1201] strategy, go and build the team, etc.
+[1203] Raise more capital, increase the team,
+[1205] increase the team, right? It's it's once
+[1206] you step on the treadmill, you you are
+[1208] on the treadmill, right? Um and you
+[1209] should you should know that you're going
+[1210] to continue to go and do that. And
+[1212] that's when your kind of like marathon
+[1213] starts in general, right? And there I
+[1215] think a lot of candidly just like angels
+[1217] out there who are like they're I know
+[1219] there's that whole meme of like VCs want
+[1220] to be helpful, right? Angels I think
+[1222] genuinely like they some of them feel
+[1224] like they got lucky with a lot of their
+[1226] hard work and you know obviously they
+[1228] threw in a lot of hard work to it but
+[1229] they now have you know money in spades
+[1231] that they want to actually like go and
+[1232] almost like pay it forward right so
+[1235] they're potentially looking to like say
+[1237] okay there's you know these these people
+[1238] who are really really hungry just as I
+[1240] was etc ready to like go on the journey
+[1242] how can I potentially go in and help
+[1243] them right and we we've had you know the
+[1245] the fortune of working with those those
+[1247] people who you know just want to pay it
+[1248] forward right so that's awesome
+[1250] &gt;&gt; and you mentioned mentioned you were
+[1252] sort of resisting AI like you're like
+[1254] you know I don't know but then it was
+[1256] suddenly like a flip switch so what's
+[1259] been going since JBT launch what's been
+[1261] your evolution of thought process on
+[1265] everything AI
+[1266] &gt;&gt; yeah so my evolution of thought process
+[1268] was like that's just funny because my
+[1270] roommate's been at open air for like the
+[1271] last seven years so I'm sitting here
+[1273] being like it's it's cool man or
+[1276] whatever right and then he's like
+[1277] &gt;&gt; nonprofit like come on right we go to
+[1280] the sa like every months. Yeah. Like
+[1282] how's it working? Okay, cool. Right. I
+[1284] wonder when that thing will like calm
+[1285] down or whatever. Um and then at some
+[1287] point it was basically just like oh I
+[1290] started using it for a bunch of
+[1291] different things. I think you know I
+[1293] think I honestly was probably holding it
+[1294] wrong if that makes sense, right? Like
+[1296] you were you were not using it
+[1298] appropriately or you like didn't know
+[1299] how to take it. Okay.
+[1301] &gt;&gt; Didn't know. You're one of those people
+[1302] when we see those threads like 99% of
+[1304] people are using chatpt wrong.
+[1305] &gt;&gt; Yes.
+[1306] &gt;&gt; You remember those? This was like a long
+[1307] time ago. So you didn't read those
+[1308] threads obviously.
+[1309] &gt;&gt; Oh, dude. if if I'd be so powerful if I
+[1312] could read if I could read anything, you
+[1313] know, like it's just I miss things like
+[1315] that, right? So, yeah, it was one of
+[1318] those things where I think
+[1319] simultaneously it crossed two bridges in
+[1321] my mind. It got sufficiently good where
+[1323] I could outsource small pieces of
+[1326] pieces of work or anything else like
+[1327] that. And I got a good enough flow on it
+[1329] where, and this is still my flow to this
+[1331] day, um which is I ask it to do
+[1334] something. I'm very very concrete about
+[1336] it. Um I already know how to solve the
+[1338] problem. I don't ask AI to do that that
+[1340] like I don't know how to go in and do. I
+[1342] only ask it to do things that I already
+[1343] know how to go in and do so that I can
+[1345] gut check it etc. Right? So for me it
+[1348] was a lot of like I tried to ask it to
+[1349] like solve things and like various
+[1351] different levels of success and I would
+[1353] also just end up with like a ton of
+[1355] stuff right so a lot of the interesting
+[1358] stuff that's happening right now in my
+[1360] mind is actually you know people talk a
+[1361] lot about the green field stuff right
+[1363] like I can go from nothing to to-do list
+[1365] app or whatever right I actually find
+[1367] that like not that interesting because I
+[1369] actually want to set up the initial
+[1370] scaffolding because I want to know how
+[1372] it works in general and then I want to
+[1373] ask AI to fill out something way quicker
+[1375] than I would right so like is a very
+[1377] reductive example. I would be like
+[1379] parallelize this for loop right for me.
+[1381] Like this is blocking like I need you to
+[1383] actually just like parallelize this. I
+[1384] already know how that's going to work in
+[1386] general, right? But I can save a ton of
+[1387] time of just like how do I like write
+[1388] the the keystrokes or whatever, right?
+[1390] And so I've been using it to like
+[1391] various degrees on that where I'm just
+[1392] like okay you know I'm going to write
+[1395] down you know an RFC on how to do this
+[1397] database migration. We're going to move
+[1399] sessions from Postgress to Reddus. this
+[1401] is how it's going to work, right? And
+[1402] then I just hand it to Claude or cursor
+[1405] or whatever and I say, "Do the first
+[1406] step. That's our first pull request.
+[1408] Come back to me, etc." Very, very
+[1410] deliberate, right? So, it's almost that
+[1411] like outsourcing to to a junior engineer
+[1414] that is is a bit more concrete kind of
+[1416] type person, right? So, you just said
+[1417] junior engineer. I feel like before it
+[1419] was like I was searching to an intern or
+[1421] like a shitty intern. Yes. But I feel
+[1423] like that's kind of how I initially went
+[1425] all these people explaining what they're
+[1427] using the key for and I would try it and
+[1429] I would be like it's kind of like when
+[1431] you like the intern that you kind of
+[1433] hope doesn't get a return offer and like
+[1435] leaves and like they aren't very good.
+[1438] It's like that's kind of my was my
+[1439] relationship where it was like it wasn't
+[1441] a good product but you could see that it
+[1444] was getting better. And I feel like
+[1445] probably to your point within the past
+[1447] six months, nine months in for the
+[1449] things I kind of use for I'm like that
+[1450] was actually pretty good. Like it's
+[1452] actually usable like this is interesting
+[1454] in like a work product. I think like
+[1456] it's always been like better Google like
+[1458] that's always kind of been there and
+[1459] like it worked for that or whatever.
+[1461] Yeah. I feel like in the last probably
+[1463] probably like since very early this
+[1464] year, late last year I've noticed the
+[1465] same thing where it's like you can
+[1467] actually rely on it. Yep. It's good.
+[1469] It's like it's it's like a bionicle arm
+[1472] that once in a while just malfunctions.
+[1474] But it malfunctions in ways where you
+[1475] can be like, "Oh, okay. Like stop. Like
+[1477] just don't don't do that." Right? So the
+[1478] way that I've taken to it is basically
+[1479] saying,
+[1480] &gt;&gt; "Can you one or twoshot this task?" And
+[1483] if you fall off the rails too quickly,
+[1484] I'm just going to bail and just like do
+[1486] this myself.
+[1487] &gt;&gt; I do that too, too.
+[1488] &gt;&gt; Right. And so like that's the utility
+[1489] that I actually found like really really
+[1490] good for it because it's like it's
+[1492] almost a separation of concerns, right?
+[1494] like when I try and like work with it to
+[1496] solve a hard Brahma. It's like me and
+[1498] Claude are sharing one brain cell and
+[1499] it's like really not a great time and
+[1501] we're both like you know right so
+[1503] &gt;&gt; like you're trying to figure it out
+[1504] together.
+[1504] &gt;&gt; Yeah, we're trying to figure it out
+[1505] together. blind people like wandering
+[1507] through the dark around just like okay
+[1509] right and so that I haven't found like
+[1511] you know great success on but you know
+[1513] separation of concerns the like you know
+[1514] splitting of the like I think it's benal
+[1516] mind of of again where you basically say
+[1519] do this for me okay I'll do that for you
+[1521] right like that is actually kind of you
+[1523] know worked quite well so
+[1525] &gt;&gt; yeah so I know you're really big on
+[1526] automating things and like just getting
+[1528] leverage and and and automate like it do
+[1530] you use AI for that are there like other
+[1532] ways to automate things like how could
+[1534] how should somebody think about trying
+[1536] to do that, getting more leverage from
+[1537] automation.
+[1538] &gt;&gt; One thing that I say often is grit,
+[1540] process, repeat. So don't try and
+[1542] automate things right off the bat,
+[1544] right? There's that like very famous
+[1545] XKCD which is like you automate like a
+[1547] very small task that happens very
+[1549] infrequently but it takes you an entire
+[1551] week to go in and do. It's like well
+[1552] that's a waste of time, right? Like
+[1553] you're just you're not going to get the
+[1554] return on investment there, right? So
+[1556] when we talk about leverage, I'm looking
+[1558] for opportunities that I can put in a
+[1561] bit and get a lot out of it, right? And
+[1564] so running that calculus on every single
+[1566] thing that you can actually go in and do
+[1568] that helps us kind of like quantify
+[1570] leverage, right? So I think there's a
+[1572] lot of different spots. And I think like
+[1573] you know the reason people really really
+[1575] like AI is because you put in a little
+[1578] and you get out a lot, right? And so
+[1580] this is kind of your equation regardless
+[1581] of whether you're using AI to go and do
+[1583] this thing, right? Like put in a little,
+[1584] get a lot, right? Have there been any
+[1586] examples where like personally or
+[1589] internally that you guys have gotten the
+[1590] most leverage?
+[1593] &gt;&gt; One that I reach for often and people
+[1595] are like, "Oh, you did this. This is
+[1596] nuts."
+[1597] &gt;&gt; Is we built our own support tooling.
+[1600] Yeah. There's a there's like a there's a
+[1602] couple startups that do that.
+[1603] &gt;&gt; There are a couple startups that do
+[1604] that.
+[1604] &gt;&gt; There's also when you look at like the
+[1605] whole meme of like they're going to AI
+[1607] is going to replace all software. That's
+[1609] a common example like we built our own
+[1611] support system.
+[1612] &gt;&gt; Yes. Exactly. Right. So, we've built our
+[1613] own support system and it's awesome. Uh,
+[1615] I was using it the other day and like
+[1617] it's it's a bit of a like a mess
+[1620] internally this last quarter because
+[1622] we've been like pushing a ton on like
+[1624] growth and like also like turning off a
+[1626] bunch of our like Google Cloud machines
+[1627] to move to our own like bare metal
+[1629] infrastructure. So, it's been like a
+[1630] total zoo from just like people have
+[1632] questions, you know, stuff like that,
+[1634] right? And we built this system that's
+[1636] like I feel like I'm like basically
+[1637] playing Starcraft like like it's like
+[1640] high APM like gaming where I'm just like
+[1641] in there just like support system
+[1643] &gt;&gt; in the support system and it's genuinely
+[1645] it's like it's a deeply wonderful
+[1646] experience where you're just like
+[1647] tearing through this thing right and
+[1649] you're just like it's this I've got like
+[1651] macros for like common questions I've
+[1653] got like a little AI prompt on the side
+[1655] that like gives me context on like the
+[1656] thread and all of this is like stuff
+[1658] that we've built internally right and so
+[1660] like this is a thing where you know we
+[1661] have a million users we have three
+[1664] support people right and we all rotate
+[1667] like kind of like throughout the queue
+[1668] but we build a system so that we can
+[1669] actually go and operate and like figure
+[1671] about how quickly can we get back to
+[1673] these users with the level of quality
+[1675] that that we really really need, right?
+[1676] Because for a time we were actually like
+[1678] really really bad at support. Like we
+[1680] like people would give us tickets and it
+[1681] would take like five or six days to like
+[1683] respond on some of these. It was it was
+[1685] awful, right? And we looked at this
+[1686] thing we're like damn this is horrible,
+[1688] you know, totally understand where
+[1689] customers are coming from, etc. I was
+[1690] like, how do we get to 24-hour SLA on
+[1693] everything, right? And then like lower
+[1695] than 24 hours on like enterprise and
+[1697] anything else like that, right? So we
+[1698] built all the tooling around that,
+[1700] right? Some of that is AI. Some of that
+[1702] is like building these things ourselves.
+[1703] Some of it is like, you know, just doing
+[1705] like solving hard problems of like
+[1707] design and engineering so that you can
+[1708] actually gain all the context you need
+[1710] because railway is interesting because
+[1711] since you can deploy anything, people
+[1713] ask a lot of questions about a lot of
+[1715] disperate things, right? And so trying
+[1717] to figure out ways that you can kind of
+[1718] like pull together knowledge or like
+[1720] start putting people together in the
+[1721] community, right? Like we can't answer
+[1722] every single Python question, right?
+[1724] Like we just it's just untenable, right?
+[1726] Okay, so how do we give these people
+[1727] like topics or you know we have these
+[1728] things called bounties in the community
+[1730] now where it's like oh cool if you're
+[1732] having like throughput issues on Python
+[1734] or anything else like that we can
+[1736] actually go and kick it to kind of like
+[1738] a queue of people in the community who
+[1740] are going around and solving these these
+[1741] bounty questions they get paid every
+[1743] single time they go and solve any of
+[1744] these problems and we also go and push
+[1746] those people together so it's like oh
+[1747] that person is like an expert on Python
+[1749] right so the Python the Python questions
+[1751] are actually getting routed specifically
+[1752] that person and they can go and help and
+[1754] solve those things right So is there
+[1756] like a internal forum or something
+[1758] somewhere or Okay.
+[1759] &gt;&gt; Yep. We're like maybe maybe a contrarian
+[1761] take that we have is like forums
+[1763] unfortunately like have have come the
+[1764] way of the dinosaur and everything's
+[1765] been kind of like pulled into like
+[1766] Discord communities. So there's not a
+[1768] ton of stuff that's indexed, right? So
+[1769] we've actually went out and built a ton
+[1771] of tooling around like indexing these
+[1773] threads, routing users together, pulling
+[1776] any telemetry and information from
+[1778] actually any of the railway projects to
+[1780] say, oh this person is deploying Python
+[1781] and they've recently kind of done these
+[1783] things, etc. These are all hints of like
+[1785] how we could actually potentially solve
+[1786] the problem for them. Do
+[1787] &gt;&gt; you build like a lot of custom stuff it
+[1789] sounds like? But it's it's not core to
+[1792] the actual railway product like how how
+[1796] have you rationalized let's build this
+[1798] cool interesting unique thing versus
+[1801] let's just buy one of the the AI
+[1803] customer support like is there forum
+[1804] software out there like how did how did
+[1806] you decide on what to do there? So I
+[1808] guess for us it was
+[1811] what are like other people bad at
+[1813] almost. That's like an arm for us
+[1815] basically, right? And so
+[1816] &gt;&gt; so what are your competitors bad at?
+[1819] &gt;&gt; I wouldn't say competitors necessarily,
+[1820] but almost like what is the industry as
+[1822] a whole bad at, right? Like software
+[1823] infrastructure as an industry, right?
+[1824] Like bad at customer support.
+[1826] &gt;&gt; I don't think they're very good at
+[1826] customer support. I don't think they're
+[1828] very good at, you know, developer
+[1830] experience, etc. So ease of use, all
+[1832] those other things. Um, and I don't
+[1834] think they're good at speed, right? So
+[1836] we've chosen to invest really really
+[1838] deeply in all three of those and have
+[1839] them all kind of like essentially feed
+[1841] into each other. Right? So our customer
+[1843] support experience is a product
+[1844] experience that we design. We work in it
+[1846] in house. Our designers work on it and
+[1848] our engineers work on it. Everybody
+[1849] works on it because it's part of the
+[1850] product, right? So that's kind of tied
+[1852] in there and it's fast, right? Like you
+[1853] should be impressed with the level of
+[1855] support that you get and you should be
+[1856] impressed with the product. And now we
+[1857] routinely have people being what is this
+[1859] piece of software? Like how did you get
+[1860] like is this open source? And we're like
+[1861] no we built this sorry. Would you ever
+[1864] open source it or sell it?
+[1866] &gt;&gt; Well, what we'd like to do at some point
+[1867] is actually bring more, you know, we're
+[1870] having conversations with companies to
+[1871] bring them onto the the platform as like
+[1873] almost a discussion space because you
+[1875] see a lot of these things where people
+[1876] are like, how do I get the voice of my
+[1877] community? How do I go and do all of
+[1878] this other stuff, right? What we can do
+[1880] because we have all of the telemetry, we
+[1883] can figure out, let's say you publish a
+[1885] new version of your software, you go and
+[1887] send it to the community, now you have
+[1889] issues, etc. we can take all the stack
+[1891] traces and anonymize them and go and
+[1892] send them back to you and and say, "Hey,
+[1893] listen. On this version of of Reddus or
+[1896] on this version of whatever, you
+[1897] introduced a bug on this line. You
+[1898] should go and fix it." And it's now
+[1900] affecting these 10,000 people. Here's a
+[1902] here's a funnel right to these 10,000
+[1904] people if you want to talk with them and
+[1905] figure out like actually how to like
+[1906] solve reproduce, etc. these things,
+[1907] right? So, those are things that like I
+[1909] don't know if we would actually like
+[1910] sell the software outright, but we want
+[1911] to basically make sure that it's a not
+[1914] just a kind of like cost center, but
+[1915] actually like a revenue generation
+[1916] center. Um, and it is because we we do
+[1920] an open source kickback program. So if
+[1921] you host anything on Railway and you go
+[1923] and build a template for it, you get 25%
+[1925] of any of the revenue that you go and
+[1927] that that people get when they that or
+[1929] that we get when people go and deploy
+[1931] that piece of software.
+[1932] &gt;&gt; Oh, interesting. So it's almost like the
+[1933] notion template type strategy for
+[1935] infrastructure.
+[1936] &gt;&gt; Yeah. Right. Yeah. Or the Figma plugins
+[1937] or or anything else like that.
+[1939] &gt;&gt; Yeah. Interesting. Okay. Uh, and then
+[1941] like so we talked about like super like
+[1943] complex complicated product. you started
+[1945] with just databases. Like how did you
+[1946] think about expanding over time? Like
+[1948] any key product decisions that you feel
+[1950] like you've made. It's a lot of the same
+[1952] thing that I mentioned previously, which
+[1953] is like no, no, no, yes, let's do
+[1957] it. Right? So listen, listening to the
+[1958] users, not necessarily saying we're
+[1960] going to ship everything, right? Because
+[1961] we don't want to make like software
+[1962] nachos. We want to make like actually a
+[1964] really really solid product. That's
+[1966] &gt;&gt; software nacho.
+[1966] &gt;&gt; Well, it's like everything in the sun.
+[1968] You're just adding everything to it,
+[1969] right? Um it's it's from like the bear,
+[1971] right? Like when there's a there's a
+[1972] chef that's basically the restaurant
+[1973] show.
+[1974] &gt;&gt; Yeah. Right. where it's like he's
+[1975] working a fine dining thing and you know
+[1976] the chef is basically like you made
+[1978] nachos right this is like not a fine
+[1979] dining experience right so we want to
+[1981] make something that's a very very like
+[1983] you know like like concrete and
+[1986] deliberate and you know it is this thing
+[1988] right so that's that's kind of what we
+[1991] want to go and and do from that
+[1992] perspective was there a point when you
+[1994] felt like things were really starting to
+[1995] work like customer like there's like
+[1997] almost like a tipping point in business
+[1999] modeling employment call like finding
+[2000] PMF was like a certain thing where it's
+[2002] like holy that I think railway is
+[2005] like a thing like this is going to be
+[2006] like a pretty big like it's it's really
+[2008] working.
+[2009] &gt;&gt; Yeah. I I would say honestly it's in
+[2010] like the last six months where it's it's
+[2012] like you know we had a conversation with
+[2014] the team where I was basically like the
+[2016] oil rig is set up like there we can we
+[2019] can run this this thing straight upward
+[2022] right we just make it faster for people
+[2024] to build and deploy software. We make
+[2025] the experience better. We go and push
+[2027] towards this vision that we have of a
+[2029] unified new way to kind of like build
+[2031] software. this can definitely work,
+[2033] right? And we're seeing it now. We're
+[2035] seeing it with the the inflection point
+[2036] of so many new people kind of like
+[2039] coming onto the platform and trying to
+[2041] build and deploy something, right? And
+[2042] running to ed edges of the platform that
+[2044] we're like, "Oh man, I guess we got to
+[2046] fix that, you know, right?" But it's
+[2048] it's just so many like new people just
+[2050] doing this, right? Where it's it's
+[2051] starting to, you know, really kind of
+[2054] like take off in my mind, right? Um so
+[2056] it's still like it's the closest to
+[2058] product market fit I've ever felt. Uh,
+[2061] so but it only keeps getting crazier,
+[2064] right? So I'd say it's like it just
+[2065] keeps going. One thing you mentioned,
+[2068] you built your own data centers.
+[2070] &gt;&gt; Yes.
+[2071] &gt;&gt; This is a railway metal t-shirt. It's
+[2073] like metal that spells railway.
+[2075] &gt;&gt; Yeah.
+[2075] &gt;&gt; Okay.
+[2076] &gt;&gt; So
+[2078] maybe that's the answer to this
+[2079] question. Maybe it's like one of a
+[2080] couple answers to this question, but
+[2081] what do you feel have been some of the
+[2082] more bold product decisions that you've
+[2084] made over the past couple years? I would
+[2087] say metal is really like one of them.
+[2089] Making one-click infrastructure and
+[2091] templates is another one that like is
+[2092] paying off. We have like people in the
+[2094] community making like six figures off of
+[2095] these templates, right? So they're like
+[2097] actually getting like
+[2098] &gt;&gt; Okay. So So what is this like a backend
+[2100] template? Like if I want to do this I'm
+[2102] saying like holy I can make six
+[2103] figures a year
+[2104] &gt;&gt; making templates. Like what am I making?
+[2107] &gt;&gt; Yeah. So you know it's software that
+[2109] people want to go in and deploy. Right.
+[2111] So whether
+[2112] &gt;&gt; it's like a system design
+[2113] &gt;&gt; kind of. Yeah. Right. So if you're
+[2114] saying hey you know I want to start a a
+[2116] software project and you know I write
+[2118] Python and I want Stripe and you know
+[2120] it's kind of like these boiler
+[2121] boilerplate things that people have like
+[2123] gone and built right um or it could be
+[2125] like packaged versions of software that
+[2127] requires a little bit of kind of like
+[2129] almost
+[2131] like DevOps handholding to go in and
+[2132] spin up and scale. So like we provide
+[2134] the tooling for it. You kind of consume
+[2136] this package in a way that you are none
+[2138] the wiser of how it should scale and
+[2140] then the person kind of like maintaining
+[2142] it actually goes and figures out how
+[2144] this thing should scale over time,
+[2145] right? Like like so like you know
+[2147] self-hosted click host or like naden or
+[2149] like plausible or any of those other
+[2151] things, right? And so it can start with
+[2153] some community version of the the thing
+[2155] being hosted and then it can kind of
+[2156] move towards like a first-party version
+[2158] of you know Reddus or ClickHose or
+[2161] whatever like hosting their their
+[2163] self-hosted distribution on railway
+[2165] right so if I'm using someone's template
+[2168] and they make a change to the template
+[2171] does it change my infrastructure setup
+[2174] &gt;&gt; no so you get a you get you get a
+[2176] notification that there's a new version
+[2177] of it right and so you can go and
+[2178] consume that right you can go and read
+[2180] about the changes you can go and all of
+[2181] those things in there, right?
+[2189] &gt;&gt; 25% faster on, you know, workloads for
+[2191] like asynchronous rights or something
+[2192] like that, right? And then you're
+[2193] saying, "Oh, okay, cool. I've had those
+[2194] issues in general, right?" So instead of
+[2196] this being a thing where, you know,
+[2198] GitHub is like through no fault of their
+[2200] own like a series of broken pointers,
+[2202] you're basically saying, "Okay, well,
+[2204] how do I go and get the new version of
+[2205] that software? How do I go and update?
+[2206] Is it like a Helm chart? Is it like
+[2207] something else like is a new Docker
+[2208] version or something? figure out where
+[2210] they host a change log or anything else
+[2212] like that. It's like we put all those
+[2213] things together so you can kind of like
+[2214] riffle through this like version of
+[2215] software and then get the latest version
+[2217] of it and then also pin it so that you
+[2219] know you go and downstream push of a
+[2221] version of this and then now it breaks
+[2222] everybody's apps or anything else like
+[2223] that you know
+[2224] &gt;&gt; like versioning control for our
+[2225] infrastructure sort of
+[2227] &gt;&gt; and so this is the point to the earlier
+[2228] problem of like we're solving a lot of
+[2229] problems of like how do you not just
+[2231] like deploy your software but like how
+[2233] do you evolve it over time right like
+[2235] how do you iterate on it in a safe way
+[2236] right like actually at large companies
+[2240] most of the software outages is not at
+[2242] part of like a software error like you
+[2244] shipped a bug or anything like those big
+[2245] outages that happened like Facebook
+[2247] Cloudflare like whatever that's a config
+[2249] based outage like it's actually a
+[2250] property that they were trying to go
+[2252] roll out when they were upgrading system
+[2253] &gt;&gt; and just something got up during
+[2255] the
+[2256] &gt;&gt; got messed up right because you know
+[2258] &gt;&gt; the the peak under the hood and like how
+[2260] the sausage is made is essentially you
+[2261] know there's a version of a piece of
+[2262] software and then there's an engineer
+[2264] whose job is it to like version and
+[2267] update that piece of software right and
+[2269] how that happens can range from one
+[2271] click, really easy to like consume to
+[2273] I'm doing basically like open heart
+[2275] surgery on this like piece of software
+[2276] to get it from like version N to version
+[2278] N plus one and we automate the entire
+[2281] life cycle of that.
+[2282] &gt;&gt; Interesting. And then you also built
+[2284] your own data centers.
+[2285] &gt;&gt; Yeah.
+[2286] &gt;&gt; What was the thinking on that? Like do
+[2288] you do you have a cloud service that
+[2291] you're offering to people like can you
+[2292] just kind of explain this whole concept?
+[2294] Yeah. So the thinking behind it is that
+[2299] we can actually do a lot of really
+[2300] really cool stuff and
+[2303] build a better experience because we
+[2305] have our own hardware, right? Like we
+[2307] are moving from the realm of
+[2310] milliseconds down to like microsconds,
+[2313] right? That's like some sort of
+[2315] experience that we can actually make
+[2316] better. It's it's a portion that we can
+[2318] make faster, right? like we can we can
+[2320] push the edge of that experience because
+[2322] we're not actually beholden to you know
+[2325] operating through the the primitives
+[2326] that the cloud providers offer which you
+[2328] know they're solid but at a certain
+[2329] point those things end up falling
+[2331] falling flat from both ability to drive
+[2333] the experience and also you know kind of
+[2335] outcomes that that you'll have at scale
+[2337] right so
+[2339] &gt;&gt; so people deploying on the railway cloud
+[2341] now yeah so it's essentially like a
+[2343] cloud that that you can go in and deploy
+[2345] on right so yeah the the reason to and
+[2348] do that is to drag the product
+[2350] experience forward, right? And do things
+[2352] that other people possibly can't.
+[2354] &gt;&gt; So what's an example of something that
+[2356] they wouldn't be able to do?
+[2358] &gt;&gt; Well, so like on AWS or GCP or anything
+[2362] else like that, we can spin up
+[2363] workloads,
+[2365] you know, it'll take like a few seconds
+[2366] or anything else like that. Like we can
+[2368] get into millisecond like deploy times
+[2370] now, right? because we have a lot of our
+[2372] own infrastructure and it may be
+[2373] possible to like go in and push those
+[2374] things out and he ends a lot done a lot
+[2376] of like really really cool work on just
+[2377] like spinning stuff up but it ends up
+[2379] being on the realm of like a secondish
+[2381] right and for something to be
+[2382] imperceptible from a user's experience
+[2384] perspective you're looking to try and be
+[2385] in the like 100 millisecond range right
+[2387] so we want to be as quick as possible
+[2390] and racking our own services allows us
+[2392] to move even closer to that kind of like
+[2394] metal of of moving really really quickly
+[2397] it also allows us to offer a
+[2399] significantly reduced price to our users
+[2402] because we are running our own
+[2403] infrastructure and because we've built
+[2404] our own orchestrator and because we've
+[2406] done essentially all of the hard work of
+[2409] you know going doing these peering
+[2411] relationships. So we pay for network at
+[2413] a metered rate instead of like a per
+[2416] gigabyte rate. Um so that allows us to
+[2418] drop that price significantly which is
+[2420] super cool in a lot of the AI workloads
+[2422] because they're pretty data intensive.
+[2425] &gt;&gt; Yeah, that's fair. And you you wrote a
+[2428] post a couple years ago. It was called I
+[2430] think it was called the inward draw of
+[2432] capitalism. Did I say that right?
+[2434] &gt;&gt; Yeah. Yeah. Yeah. That's a deep cut.
+[2436] &gt;&gt; Is this sort of related to this concept?
+[2439] &gt;&gt; Sort of in the sense that I think
+[2441] there's only two modes. Hard problems
+[2444] doing hard things.
+[2445] &gt;&gt; Or are they not related?
+[2446] &gt;&gt; No. So they're they're like related like
+[2448] at the edge basically, right? So the the
+[2449] the point of that post was that it's
+[2452] easier to make basically like money with
+[2454] money than it is to make progress with
+[2456] money, right? And we've moved because we
+[2459] moved out the gold standard to actually
+[2461] a system where we're like moving money
+[2463] around, right? And that results
+[2464] essentially in people, you know, doing
+[2466] jobs like being a day trader or, you
+[2469] know, a banker or like a Twitch team or
+[2473] right, like moving those things. And
+[2474] there's nothing wrong with that in
+[2475] general. It's just that we've made a lot
+[2478] of the kind of like exterior a lot more
+[2481] difficult to do, right? And so if I want
+[2483] to go and get a loan and like build, you
+[2486] know, uh build a factory or anything
+[2488] else like this, this is before ACNZ and
+[2490] the whole like Yeah, it's easy now. Just
+[2492] just raise 50 million from ACCZ and
+[2494] build a couple factories.
+[2495] &gt;&gt; Yeah. Right. So maybe maybe I was like
+[2497] ahead of something or whatever.
+[2499] &gt;&gt; But like if you want to go and do that,
+[2501] you have to go through like regulatory
+[2503] burden. You have to like find
+[2505] construction workers. You have to like
+[2507] go you have to go and do all of these
+[2508] other things, right? There's a lot
+[2509] easier ways to make money, right? But
+[2512] that whole point was that we're losing a
+[2514] lot of the like actual like fringes of
+[2516] of society that allow us to kind of like
+[2518] push towards progress and like actually
+[2520] building things, right? And so another
+[2522] reason and like you know we're not here
+[2524] using investor money to like fulfill
+[2526] this like you know philosophical like
+[2528] burden or whatever, right? But we
+[2530] believe that there is a strong arb in
+[2533] terms of doing complicated or difficult
+[2535] things that are almost becoming like a
+[2536] lost art, right? Like if you think of
+[2538] the people who are like racking and and
+[2539] building data centers, right? you have
+[2541] like three people GCP, Azure,
+[2543] right? Like those are the kinds of big
+[2544] people that kind of come to mind, right?
+[2545] And so over time you're getting less and
+[2548] less and less of these people who these
+[2549] are the skills and you know you can
+[2551] extend that to kernel knowledge, right?
+[2553] Like you have you know people who are
+[2555] working on the like Linux kernel
+[2557] maintainer list, right? Like you know
+[2559] they're having difficulties getting
+[2561] maintainers to like have like have this
+[2563] knowledge and and work on this thing.
+[2565] There's a core part of like literally
+[2567] everything that we run on every piece of
+[2569] software. It's every single thing,
+[2571] right? And and that thing is such
+[2574] esoteric knowledge and they're having
+[2575] issues pulling in maintainers and people
+[2578] who are going to like go in and push
+[2579] this thing forward, right? Like it's
+[2581] it's like it's crazy that that knowledge
+[2583] is kind of like getting more sparse over
+[2585] time, right?
+[2587] &gt;&gt; Like so you've made some of the a lot of
+[2588] like pretty bold batch. Are there any
+[2590] other big ones that you've made? And
+[2591] maybe any that
+[2594] didn't go well or didn't work or any
+[2598] where you got a lot of push back from
+[2600] investors or people on the team. They're
+[2602] like, "Jake, this isn't going to work.
+[2604] Don't do this."
+[2606] &gt;&gt; What are some bad ideas uh that we had
+[2608] that we did? I mean, we spent a we spent
+[2610] like a million dollars on a domain,
+[2611] which I think is actually good where it
+[2614] works well.
+[2614] &gt;&gt; Just the railway.comway.com domain,
+[2616] right?
+[2617] &gt;&gt; Who owned that before? some guy in the
+[2620] flyover state uh you know so I think it
+[2622] was it was funny I like looked at his
+[2623] LinkedIn um and like he was working at
+[2626] some sort of company for a while and
+[2628] then I think he recently retired so I
+[2629] don't know if they're correlated or
+[2630] whatever
+[2632] &gt;&gt; you do you this guy's retiring
+[2635] &gt;&gt; yeah who knows or is godfind or
+[2637] something um so that was good the metal
+[2640] data centers was solid
+[2642] we've done a lot of like experimental
+[2644] stuff in terms of like how do you build
+[2646] out an organization internally
+[2648] We talk about a leverage a lot and so
+[2652] you knowve I've tried to build out a
+[2654] pretty deliberate management stack
+[2655] internally of like how do we stay lean
+[2657] but also like have some level of like
+[2659] hierarchy so that decisions can get made
+[2661] there can be deer eyes there can be
+[2662] stakeholders you know all of those other
+[2664] things that you need at a company while
+[2665] also simultaneously avoiding a lot of
+[2667] the bloat that comes with you know
+[2669] growing really really quickly or or
+[2670] anything else like that. So we've done a
+[2672] little bit organizational kind of like
+[2674] operating, right? Like the or is still
+[2676] mostly flat and we have 28 people,
+[2678] right? So I essentially have like 25
+[2680] people reporting, right? And so that's,
+[2682] you know, probably a bad idea over time.
+[2685] And so we're kind of like lowering the
+[2687] the kind of like managerial burden on
+[2689] that as we kind of like flush it out.
+[2690] But it also makes, you know, it's really
+[2693] really important to have operators be
+[2695] also managers, right? Like the worst
+[2697] thing that could happen is you you hire
+[2698] a career manager who can't execute on
+[2700] the the task at hand, hits the fan,
+[2703] they can't actually kind of like step in
+[2704] or anything else like that to to aid or
+[2706] or help and it makes the organization
+[2708] feel very very fragile or or helpless
+[2710] over time, right? And also from talking
+[2712] with a lot of people like I was at Uber,
+[2714] you know, post Travis, post, you know,
+[2716] anything.
+[2718] A lot of the experiences that I have
+[2719] from chatting with people, they were
+[2720] saying like, "Oh yeah, we like grew
+[2722] really really quickly." Like there was a
+[2723] year where I think they forex headcount
+[2725] or something like that. It was insane,
+[2726] right? And so the cultural shear that
+[2728] actually happened over that that period
+[2730] of time was kind of nuts, right? When
+[2732] you're like, "Yeah, it wasn't like the
+[2733] same company." I was like, "Yeah, like
+[2735] kind of no because you know 80% of
+[2738] the people after one year are new,
+[2739] right?" And so when you think about that
+[2740] from like a cultural perspective, it's
+[2741] like how could they possibly understand
+[2743] the modus operenda of that company,
+[2745] right? So yeah, I think that that that
+[2747] we've tried to innovate a little bit on
+[2748] the organizational structure to try and
+[2751] grow, you know, our our gold standard is
+[2752] we want to grow 5x year-over-year, one
+[2754] and a halfx headcount.
+[2757] &gt;&gt; Oh, grow the business revenue 5x.
+[2759] &gt;&gt; Yeah. Metrics in general, right?
+[2762] &gt;&gt; Metrics. Yeah. So like
+[2763] &gt;&gt; acquisition, top funnel, margins, you
+[2765] know, stuff like that, right?
+[2767] &gt;&gt; You said you grew 5x in the last six
+[2769] months or something, right? I think you
+[2770] you slipped that out earlier. So you
+[2772] guys are ahead of plan.
+[2774] &gt;&gt; Yeah. Well, so ahead on that one and
+[2776] then you know revenue is in a really
+[2777] really solid spot. We'll have doubled
+[2778] since the start of the year which is
+[2779] great. So we're we're things are going
+[2783] uh I would say quite well.
+[2784] &gt;&gt; Nice. What's like current state of the
+[2786] business you're like allowed or open to
+[2788] sharing publicly with people. We're like
+[2790] in the tens of mill from like a revenue
+[2794] perspective.
+[2794] &gt;&gt; So somewhere between 10 and 99.
+[2796] &gt;&gt; Yeah. Basically.
+[2797] &gt;&gt; Yep. So you know like wide range,
+[2800] &gt;&gt; right? Uh, so that and then we're like
+[2802] 28 people staying super lean. Um, we've
+[2805] raised some money. The last announced
+[2807] round that we did was like a series A in
+[2809] like 22 or something, but we raised an
+[2811] uncap safe about a year ago.
+[2814] &gt;&gt; Oh, interesting. What was the thinking
+[2815] on doing that? We didn't want to take
+[2817] any more money, but people wanted to
+[2818] deploy capital. So was like, well, the
+[2821] only way we're going to do it is on an
+[2822] uncapped safe and they're like, all
+[2823] right, sure. Wow. That's how do you
+[2826] think about that as a founder then? like
+[2827] do you think I should probably try to
+[2830] convert this for them at some point or
+[2832] is it like
+[2832] &gt;&gt; it's it's an investor we really really
+[2834] like working with so we will definitely
+[2836] be converting it at you know like
+[2839] like not agree just you know like we we
+[2841] really like working together in general
+[2843] right so our philosophy is like they
+[2844] wanted to put in more capital um and we
+[2846] really really like working with them
+[2848] right so this allows us to kind of like
+[2849] continue to push the business into like
+[2851] a really really awesome spot as we
+[2852] continue to look for a potential
+[2854] excellent you know additional board
+[2856] partner for for that, you know.
+[2858] &gt;&gt; Yeah. I think there's an interesting
+[2859] thing too about not getting your
+[2862] valuation too extended from a standpoint
+[2864] of also recruiting. Like you let's say
+[2866] the business is valued on paper at 50
+[2869] million and 500 million, right? I have
+[2872] no idea how close any of this is to like
+[2873] the actual numbers, but like if you're
+[2875] trying to recruit someone and you say,
+[2876] "Hey, you're getting your your options
+[2879] or your RSUs at 500 million versus 50,
+[2883] you've taken out 10x upside from them."
+[2886] and the interest in joining like the
+[2887] opportunity that they get from joining.
+[2889] &gt;&gt; So, you know, you want to balance that.
+[2890] You don't want to like dilute yourself
+[2891] too much. You want to, you know, maybe
+[2895] make existing investors feel like
+[2897] they're making money. And so, like
+[2898] there's like that balance of like not
+[2900] getting too far ahead.
+[2902] &gt;&gt; Yeah. 100%. Right. You also want to be
+[2904] able to like repric equity at some point
+[2906] to show it's like, oh, it's not just
+[2907] like mystery money or whatever, right?
+[2909] &gt;&gt; It's not like there is there valuation
+[2911] or monopoly money.
+[2912] &gt;&gt; Exactly. Right. And so there's actually
+[2913] a whole kind of like mechanics
+[2915] surrounding this and like what is the
+[2916] optimal, right? Like even from like a
+[2918] employee stock option pool, when you
+[2919] grow it, when you not grow it, you know,
+[2921] like when you raise money, when you not
+[2922] raise money, all those other things,
+[2923] right? So yeah. So that's where we're at
+[2926] right now. and and talking to people
+[2928] just kind of before we did this, a
+[2930] couple people said you have a philosophy
+[2934] around just hiring really opinionated
+[2937] talented people and maybe like not
+[2939] specifically telling them what to do but
+[2941] just kind of like unleashing them and
+[2944] like just seeing what happens and like
+[2946] trying to trying to guide it I guess. I
+[2948] don't know if I'm explaining this right
+[2949] but yeah so what's what's the philosophy
+[2951] there? The philosophy is that nobody
+[2954] joins a startup to be told what to do.
+[2957] They join a startup to work on hard
+[2959] problems and to go in and push
+[2960] theirelves to like execute on hard
+[2962] problems. So from that kind of like
+[2965] standpoint, we're really looking for
+[2967] people who are like hyper autonomous,
+[2968] right? So we try and say, hey, we'll
+[2972] give you kind of like a structured
+[2973] onboarding. It's like eight, six weeks
+[2976] of like here's how we're going to ramp
+[2977] you from having zero context about how
+[2979] the business works or or anything else
+[2981] like that. I mean maybe not zero because
+[2982] you have some of it from external or
+[2984] whatever but like our operating
+[2985] procedure we've written a little bit
+[2986] about it but it's like very very
+[2987] different when you like come and join
+[2988] the organization right so from nothing
+[2991] to I want you to do things that are like
+[2995] very very important for the business
+[2996] right like go in and start and figure
+[2998] out how are we going to do networking go
+[3001] in and figure out you know maybe data
+[3003] center procurement go in and like how
+[3005] can we rapidly rapidly rapidly get you
+[3007] to a point where you are building real
+[3008] things that you are really truly
+[3010] interested in because I believe that
+[3012] we're going to, you know, get the best
+[3014] out of people when they're really,
+[3015] really interested in building something,
+[3017] right? So, I try to ask them, what thing
+[3020] are you interested in? How can we set
+[3021] you up for that immediately? Right? And
+[3024] we're going to go and ladder your
+[3025] onboarding experience to get you to that
+[3027] point where you were going and making
+[3028] decisions, right? And so, this can be
+[3030] actually very uncomfortable for some
+[3032] people who have like operated a company
+[3034] where, you know, they have a manager and
+[3036] the manager like tells them what to go
+[3037] in and do, right? And so we've kind of
+[3039] like structured the process where you
+[3041] have two weeks of tasks, you know,
+[3042] really straightforward stuff of like go
+[3044] and make this change in the codebase.
+[3045] This thing is evidently broken. You
+[3047] know, here's sort of where it is, right?
+[3048] And we do two weeks of problems, which
+[3050] is we have this problem. You know, how
+[3052] are you going to go in and solve it,
+[3054] right? You'll have to put together like
+[3055] a little document. It's called an RFC.
+[3057] You just basically say, here's the
+[3059] problem. Here's requirements for the
+[3060] problem. Here's my suggested solution.
+[3062] Here's some other stuff that I' I've
+[3063] got. And then the team will kind of like
+[3065] rally around and say okay like maybe
+[3066] this this or these things and then you
+[3069] know they'll move through that and then
+[3070] the last two weeks is what we call
+[3071] opportunities which is what do you think
+[3074] the company needs right so within one
+[3076] month right we've basically stopped
+[3077] telling you what to go in and do
+[3078] &gt;&gt; this is your six month onboarding
+[3079] process yeah six week onboarding process
+[3083] it's specific task for the first two
+[3085] it's problem like figure out how to
+[3088] solve this problem
+[3088] &gt;&gt; here's a problem that the problem is
+[3090] evident and we've written it down and we
+[3091] need you to solve it there's varieties
+[3093] of different ways you could solve it as
+[3094] like a solution, etc., right? It would
+[3096] just be like we need to grow or like we
+[3098] need to set up a data center or we need
+[3100] like it's just like yeah things like
+[3102] things like our observability, you know,
+[3104] product sucks like what like how do we
+[3106] fix how do we fix it, right? Like these
+[3108] things, right? And so they're nebulous,
+[3110] right? Because that's what you want
+[3111] early stages. You want people who are
+[3112] going to basically take these like
+[3113] nebulous things and convert them to like
+[3115] tractable outcomes, right? And that's
+[3117] like what we're aiming to like not like
+[3119] test for but like ladder you up and
+[3121] basically say hey here's how you should
+[3123] be thinking about a lot of these things
+[3124] like we are trying to move the business
+[3126] forward in either solving immediate
+[3128] problems or identifying opportunities
+[3130] that are going to allow us to grow
+[3132] really really rapidly over time. Right?
+[3134] So getting you to that point of like
+[3136] making those decisions and like
+[3138] identifying them and making mistakes and
+[3141] all those other things is like something
+[3142] that we like try and teach people in
+[3144] general so that they can operate
+[3145] completely autonomously, right? Because
+[3147] otherwise it's just a company is a
+[3149] series of you know executives arranging
+[3152] from like managers to like board people
+[3153] like telling people what problems to
+[3156] like like things to do right and again I
+[3159] think the most awesome people that's not
+[3161] really how they want to like live their
+[3162] life in general. They don't want to just
+[3164] like be told exactly what to go in and
+[3165] do. They actually want to go in and
+[3167] unleash themselves on where could I have
+[3170] the most impact, right? Like people are
+[3172] looking for like impact in general,
+[3174] right? So we can kind of almost be a
+[3176] conduit for that and saying, "Okay,
+[3178] here's how you can actually ladder up to
+[3180] having really really awesome impact on
+[3181] the organization, shipping all the stuff
+[3183] that you've ever wanted to go building
+[3185] out the the thing, whether it's like
+[3186] your sales process or your go to market
+[3188] or product or design or anything else
+[3191] like that. It is a blank canvas for you
+[3193] to go in and push forward.
+[3195] &gt;&gt; So it's like more help like making an
+[3197] environment where people solve problems
+[3200] versus complete tasks.
+[3201] &gt;&gt; Yes. Yep. Exactly. Right. And so it's
+[3204] part of the whole like operating
+[3205] autonomously thing, right? And that's
+[3206] the thing that we really really try and
+[3208] hammer hammer home because you know
+[3209] we're again trying to innovate on some
+[3211] of the org structures of of basically
+[3213] saying like how do you keep a company
+[3214] lean, right? Um, and if you have people
+[3216] that you're consistently like being
+[3218] like, "Hey, you know, how's that TPS
+[3221] report?" or whatever, right? Like you
+[3222] just you need managers and people to
+[3224] like close these loops and then the
+[3225] people are kind of like pulling away
+[3227] because it's not that interesting or
+[3228] anything else like that. Like part of
+[3229] the reason to start railway is like it
+[3230] is a ocean of interesting problems,
+[3233] right, to other businesses, but there's
+[3235] some there's some businesses that are
+[3236] actually like deeply boring, right? And
+[3240] I would far rather work on those
+[3241] interesting problems as an engineer or
+[3244] you know in my you know spare time is
+[3246] like trying to design things or anything
+[3248] else like that like those are the the
+[3249] things that like will keep my brain
+[3250] occupied. And so that's the space that
+[3252] we want to kind of like cultivate for
+[3253] people to come along and say oh that's
+[3255] really really cool I'd love to solve
+[3256] this thing or build this or do this
+[3259] thing right whether it's networking
+[3260] product
+[3262] go to market anything support stuff like
+[3264] that. So, how would you gauge like
+[3266] something's a worthwhile problem to
+[3268] solve? Like when when you're going
+[3269] through this like like we just want to
+[3271] solve this problem but not that problem
+[3272] like how do you figure out what's the
+[3276] intensity or severity or like mission
+[3278] criticalness and crucial to solve of a
+[3281] problem
+[3281] &gt;&gt; versus not. So we have a planning
+[3283] process and we're switching essentially
+[3285] we we went from projects previously
+[3288] where we just like put up a bunch of
+[3290] projects and we're like okay roughly
+[3291] these will like solve these problems and
+[3292] we can go execute on them shoot problems
+[3294] right and as part of that planning
+[3295] process what we do is we have we have
+[3296] essentially like co-signers right so
+[3298] you'll you'll see a problem or you'll
+[3300] see a project previously and you'll go
+[3302] ahead and you'll put your name down
+[3303] beside it right and then we will
+[3305] essentially stack rank and prioritize
+[3306] all of these things and we will go
+[3308] together and for that one week that
+[3310] we're actually going to go and plan
+[3311] we're going to get consensus on which
+[3313] problems are really really important,
+[3314] what's the stack rank of these problems,
+[3316] who like who roughly might be a good fit
+[3318] to like go and solve these things and
+[3321] you know how many do we think we can
+[3323] actually accomplish, right? And that
+[3324] kind of just like provides a list from
+[3326] like tip to tail. Let's start on these
+[3328] things. Let's go down the list and like
+[3329] just essentially see how far we can get
+[3331] on those problems, right? So you kind of
+[3332] have like a product road map. It's like
+[3335] a problem road map kind of, right? But
+[3337] it's also it's also kind of like fueled
+[3338] by hey we want to go in and and do these
+[3341] things from a product perspective right
+[3342] so if this is the vision I I issue this
+[3344] thing what I call like internally called
+[3346] guidance which is you know it's like
+[3348] public company usually issue guidance
+[3349] especially on financials and whatever
+[3350] right but I issue it from like a product
+[3352] perspective of like this is what we want
+[3354] to go in and build right and so if we
+[3356] have this expected state that we want to
+[3358] go in and get to and we have our current
+[3359] state like the problem is is that this
+[3362] doesn't deploy fast enough or you
+[3364] know all those other kind of like
+[3365] problems that are along ong with it,
+[3367] right? And so you can almost like
+[3368] quantify those like either problems or
+[3369] opportunities as like we want to be here
+[3371] and we're here and so for us to be here,
+[3373] we have to solve these problems, right?
+[3375] Do you feel like there's anything that
+[3377] people miss there like or just generally
+[3379] in culture setting like a lot of
+[3380] founders or startups get wrong? I mean
+[3383] my hot take is like I don't think you
+[3385] set your own culture. I think at best
+[3388] you as a founder get to steer it and you
+[3390] get to clarify it, right? So you
+[3393] essentially say, you know, you're gonna
+[3395] hire some people and at some point
+[3397] you're going to look up and you're going
+[3398] to realize that the people that you've
+[3400] hired mostly all actually have the same
+[3402] roughish kind of like core, right? And
+[3405] that's kind of your culture, right? And
+[3406] if you can figure out how to like write
+[3408] down what those things are that make you
+[3411] you and that make people, you know, like
+[3413] people who work at railway like really
+[3414] really successful or like enjoy the work
+[3416] that they go and do, etc. Like that
+[3418] thing is your culture, right? And you as
+[3421] the founder are kind of like the steward
+[3423] for your own culture, right? And so it's
+[3424] your job to identify it. It's your job
+[3426] to like be really really clear about it.
+[3428] It's your job to like whenever you go
+[3430] and chat with candidates to say, "Hey,
+[3432] this is what we are." And the entire
+[3434] subset of everything else is a thing
+[3436] that we are not, right? It's really
+[3437] really important to to quantify what you
+[3439] are and what you aren't. Right? So that
+[3441] people have a really really good shot.
+[3442] And I think this is a thing that I
+[3443] messed up really really early was that I
+[3445] wasn't as clear or deliberate about
+[3447] these things about like what made us us
+[3450] right candidates right and as a result
+[3452] we hired people and we had to let them
+[3453] go at some point right and it was you
+[3455] know through no fault of their own it
+[3456] was we were not clear about this is this
+[3459] is our culture and this is how we
+[3460] operate and all these other things and
+[3462] so as a result I've like continued to
+[3464] issue blog post after blog post of like
+[3466] here's how we work here's how we think
+[3468] about problems here's how we operate
+[3470] right like you know jumping on a podcast
+[3471] talking about how we're trying to like
+[3472] innovate and build on the or structure
+[3474] to say if you believe in these things
+[3476] and the same things that that we believe
+[3478] that like infrastructure is stuck in
+[3481] like stone ages and you know you can
+[3483] build beautiful design for for this and
+[3485] and you know this lost art of of kernel
+[3488] and data center and all these other
+[3490] things and you know organizations should
+[3492] be filled with people who solve problems
+[3493] and identify opportunities instead of
+[3495] like receive tasks then like you may you
+[3498] know you may be a fit for railway
+[3501] come on down. Small plug.
+[3503] &gt;&gt; You You got to do that kind of like work
+[3504] to quantify what that culture is, right?
+[3506] And so for us, it's like we have four
+[3509] things. We have honorable, accelerating,
+[3511] reliable, and direct. Say those again.
+[3514] Honorable, accelerating, reliable, and
+[3517] direct. Spells hard. And it helps you
+[3519] solve hard problems, right? And so
+[3521] whenever you're trying to decide, do I
+[3522] ship this thing today or do I ship this
+[3523] thing tomorrow? You should be
+[3524] accelerating. Do I tell this person this
+[3526] feedback? I should be direct, right? Do
+[3528] I do I show up for this this thing? Am I
+[3531] am I present? Am I putting myself in a
+[3533] situation where I'm, you know, on on
+[3535] call, but actually I've just like left
+[3537] my laptop at the at home. I'd rather be
+[3539] reliable, right? And then Honor does a
+[3541] lot of like nebulous capturing of like,
+[3543] well, what is honorable, right? Like try
+[3544] and figure it out generally, right? So
+[3547] that's kind of a cool cool Did you come
+[3549] up with it or like was it like a team
+[3550] effort of like let's figure out some
+[3551] kind of like, you know, fortune cookie
+[3553] type like you know acronym thing? So I I
+[3556] came up with it because I think most
+[3558] values are and people go and
+[3561] they put them up there and it's like
+[3563] what do these things mean? Right? Like
+[3564] at at most companies it's like you ask
+[3566] ask any employee the values, right? And
+[3568] integrity some like that, right?
+[3570] It's like it's like transparency or
+[3572] anything like and sure maybe those are
+[3573] like good things, right? But I really
+[3574] really wanted the values to have like
+[3576] deep value for people to like help them
+[3578] navigate those things, right? Like
+[3582] I don't know if it's a value or if it's
+[3583] a concept or like whatever, but like
+[3585] Uber has this thing of like called toe
+[3586] stepping, right? It was it was like
+[3588] basically like you know
+[3589] &gt;&gt; Yeah. Right.
+[3589] &gt;&gt; Like stepping on someone's toes.
+[3591] &gt;&gt; Yeah. Right. And it it was like a value
+[3592] that they had, right? They were like,
+[3593] you know, right?
+[3594] &gt;&gt; Do or don't do it.
+[3595] &gt;&gt; Do it. Do it.
+[3596] &gt;&gt; Do the toe stepping thing, right? What
+[3598] the Like that doesn't that's kind
+[3599] of rude.
+[3599] &gt;&gt; It's a bad value. It's like etc. But
+[3601] then I realized that like values
+[3604] &gt;&gt; for lots of people are actually almost
+[3606] like a lens through which you can
+[3607] navigate the culture a bit, right? And
+[3608] so you can think about it, right? And so
+[3610] if you think about Facebook's most like
+[3611] famous kind of value of like move fast
+[3613] and break things.
+[3614] &gt;&gt; Yeah.
+[3614] &gt;&gt; It admonished anybody of any sort of
+[3617] almost like wrath that would they would
+[3620] incur because they had broken something
+[3621] because they could point to the culture
+[3623] and they could say but we move fast and
+[3625] we break things. That's what that's what
+[3626] makes us Facebook, right? Like and so if
+[3628] you have this kind of like shared
+[3630] tendency that you can kind of all rally
+[3632] around, you can say, well, you know, so
+[3634] and so wasn't a fit because they weren't
+[3636] moving fast and they weren't breaking
+[3637] things, right? And then you layer that
+[3638] with multiple values tends there over
+[3640] time. And then you kind of figure out
+[3642] what what is you, right? Like what makes
+[3644] you you as part of like the company and
+[3646] like the people that you you kind of
+[3647] bring on and the people that you attract
+[3648] and all those other things, right? And
+[3650] so you're almost like cooking this like
+[3651] cultural concentrate, you know?
+[3653] &gt;&gt; So how would you intentionally set that
+[3655] up? Because it sound like you you messed
+[3657] it up a little bit or you didn't quite
+[3659] stick it and land it in the beginning.
+[3660] Yeah. Um, and it sounds like maybe most
+[3662] people see it as just like a, you know,
+[3664] where our values like, you know,
+[3666] transparency, integrity, maybe it's like
+[3668] like how do you how do you get like the
+[3670] thing that actually is tangible and
+[3672] moves a needle and then like not make
+[3674] the same mistake you did?
+[3675] &gt;&gt; No, man. I I wish I wish I could tell
+[3677] you other than like you just have to
+[3680] like trial and error almost, right? and
+[3682] be be really really aware of
+[3686] like what what do you want to I don't
+[3688] know
+[3689] &gt;&gt; give people as a value
+[3691] &gt;&gt; right seems like values is like the
+[3692] things that's like acceptable that the
+[3694] company leans into as being its thing
+[3697] okay
+[3698] &gt;&gt; it's like it's a compass for like how
+[3700] are you going to like operate as a
+[3701] company right
+[3703] &gt;&gt; that's the way that I've looked at
+[3704] values in general
+[3705] &gt;&gt; but again I think it's it's one of those
+[3707] things where you don't really set it you
+[3711] hire some amount of people and at some
+[3713] point you realize that like that's your
+[3714] shared common kind of like denominator,
+[3716] you know.
+[3717] &gt;&gt; Yeah.
+[3718] &gt;&gt; Angelo on your team mentioned that you
+[3722] kind of like wrote your way or tweeted
+[3725] your way into being a founder. Like what
+[3727] is what does that mean?
+[3729] &gt;&gt; Yeah. So I I think it's a lot of that
+[3731] kind of build in public kind of type
+[3734] thing, right? Where of like I'm writing,
+[3736] you know, blog posts about like, you
+[3737] know, the the inward draw of capitalism
+[3739] or whatever, right? just like putting
+[3741] out things and feelers and all of those
+[3744] other things. You're almost like was it
+[3746] I think it's nal or whatever that's like
+[3747] you got to create the surface area for
+[3749] luck or whatever to like
+[3750] &gt;&gt; it sounds like a naval quote.
+[3751] &gt;&gt; Yeah. Right. Or something like that.
+[3752] Right. So it was a lot of basically just
+[3754] how do I put myself in in the arena to
+[3758] like go in and try and like catch some
+[3759] of this this luck in general. Right. And
+[3761] for me it was more just like a I think
+[3763] that anything that stands has to stand
+[3767] to public scrutiny or it doesn't stand
+[3768] at all. Right. And so if you put
+[3770] yourself in that arena and you start
+[3771] going and putting those things out
+[3772] there, you're going to figure out really
+[3774] really quickly like whether you are
+[3775] correct or not on a lot of these things
+[3777] because in a public forum like
+[3779] especially on the internet or whatever,
+[3780] people are not shy to call call you out
+[3782] on a lot of this stuff, right? So
+[3783] &gt;&gt; an anonymous account has nothing to
+[3784] lose. It's like you're an idiot.
+[3786] &gt;&gt; Some person with an anime avatar and
+[3787] six, you know, followers can ruin your
+[3789] entire week, you know, like it just
+[3791] Yeah.
+[3792] &gt;&gt; And so you wrote a post in it was May of
+[3794] 2021. It I think you actually referred
+[3796] to it earlier. It was called How We
+[3798] Work. I think it was like how we work at
+[3799] Railway. It was just how we work.
+[3800] &gt;&gt; Yep.
+[3801] &gt;&gt; What was the post? What was like the
+[3803] general kind of framing and and how do
+[3806] you work at Railway?
+[3807] &gt;&gt; Yeah. So, this was this is like the
+[3809] first version of that blog post of like,
+[3811] oh, oh no, like you know, we we messed
+[3813] up hiring and we had to like let go of
+[3814] somebody and like we need to figure out
+[3816] a way to like not do that because like
+[3818] you know these are real people's lives
+[3820] of course, right? Like so you don't want
+[3822] to do that, right? So I wrote a bo a
+[3824] post called like how we work. We're a
+[3826] remote company, so we work with people,
+[3828] you know, like Dubai, Japan, Spain,
+[3833] Thailand, Montreal, you know,
+[3835] &gt;&gt; every time zone, every time zone is hit,
+[3837] Australia, right? Like so we have to
+[3840] work in a different way and this is kind
+[3841] of like part of the we're innovating a
+[3844] little bit on the orc structure because
+[3845] I think that that's really really
+[3847] interesting. One of our investors
+[3848] pointed out he's like not really a lot
+[3850] of like big remote companies, you know,
+[3852] right? Maybe GitLab is the biggest
+[3854] &gt;&gt; GitLab is kind of the the like one
+[3856] exception in in general to like that
+[3858] rule,
+[3859] &gt;&gt; but generally there isn't, right?
+[3861] &gt;&gt; And we had a conversation about why that
+[3862] that is in general, right? And there's a
+[3864] few kind of nuggets of basically like
+[3866] standard org structure doesn't work as
+[3867] well from that perspective.
+[3869] &gt;&gt; You're saying like the management like
+[3871] MBA type org structure thinking,
+[3873] &gt;&gt; right? And and the the like short reason
+[3876] for this is actually like if somebody
+[3880] tells you something that you don't like
+[3881] in an office or whatever, you still have
+[3883] to kind of show up to the office
+[3885] generally, right? Like you have to kind
+[3886] of work
+[3888] etc. Right? You continue have to like
+[3890] show up to this job, right? If some if
+[3892] like if you're doing things that like
+[3894] people don't like in general as a remote
+[3896] work employee, what do you do? You close
+[3899] the laptop. You go outside,
+[3901] right? you just like basically you can
+[3902] you can quiet quit or you can whatever,
+[3904] right? And so essentially from an org
+[3905] design perspective, you have to design
+[3907] an org which is interesting enough for
+[3909] people to say, "Oh yeah, like actually
+[3910] the reason I'm signing on, the reason
+[3912] I'm doing like all of these things is
+[3913] actually because I'm really really
+[3914] really interested in the work." Right?
+[3916] And so you had to kind of change a few
+[3918] of the like structurings in that, right?
+[3920] But the how we work blog post is the
+[3923] first pass, the very elementary kind of
+[3926] like stuff of like this is how we work
+[3928] differently than most companies to
+[3930] combat that problem to make sure that
+[3932] people can kind of like continue to ship
+[3933] a lot of the things that they want to go
+[3935] to attract talent that can work on
+[3937] really really hard problems to make sure
+[3938] that we like don't have to get into that
+[3940] situation of like hey you have that TPS
+[3942] report in general and the person says
+[3943] yeah like great and then close the
+[3946] laptop and like you know goes right so
+[3948] &gt;&gt; anything you talk a little about like
+[3950] how you've changed like like cadence,
+[3953] team design or structure related to how
+[3956] you work? Are there anything else?
+[3958] Anything else you probably want to say
+[3959] related to to how you work you haven't
+[3962] kind of hit on yet that kind of makes
+[3964] the the structure of the team and the
+[3966] company a little bit unique?
+[3967] &gt;&gt; Um there's a bunch of different things,
+[3969] but I would recommend just like in the
+[3970] interest of time like have a look at
+[3971] those like four blog posts that that we
+[3973] have in terms of how we work.
+[3975] &gt;&gt; Okay. I'll um we'll throw a link in the
+[3977] description of the show. We'll get all
+[3978] the links
+[3979] &gt;&gt; and throw them down there for people.
+[3981] &gt;&gt; And you it feels like my general
+[3983] takeaway was minimize meta work and
+[3987] maximize real work. I think that seemed
+[3989] to be like succinctly that's kind of
+[3991] what you're trying to do like a
+[3994] productivity like get stuff done. Yep.
+[3996] &gt;&gt; And and specifically in a remote
+[3999] setting, you you could create a lot of
+[4002] meta like you can always create a lot of
+[4004] meta work like work to get work done and
+[4006] you're like trying to remove as much of
+[4007] this like the work that isn't actually
+[4010] real work and it's like adjacent work.
+[4012] You try to to minimize how often that
+[4014] happens.
+[4014] &gt;&gt; Yeah, we try and we try and do that,
+[4015] right? So we like do meetings on like
+[4017] Mondays and Fridays, right? Because
+[4018] meetings are the number one kind of like
+[4020] you know contributor to a lot of that
+[4022] meta work, right? It's like it's like oh
+[4023] how do we solve this problem? It's like,
+[4024] well, let's like let's let's have a
+[4025] meeting about this problem. It's like,
+[4026] you don't solve the problem at the
+[4028] meeting. Even if you have a meeting, you
+[4029] solve the problem. You don't actually
+[4030] solve the problem at the meeting because
+[4032] you didn't ratify that decision by
+[4033] pulling it out like out somewhere where
+[4035] everybody could like have a look at it
+[4037] and it would stand to scrutiny, etc.
+[4038] Like I don't know why, you know, I I
+[4040] assume, you know, Jeff Bezos has, you
+[4043] know, memos because it's it concretifies
+[4045] those things. Is that whole thing about
+[4046] like clean memo like messy meeting or
+[4047] whatever, right? But you really really
+[4049] need to be concrete in the writing so
+[4050] that again it stands to scrutiny, right?
+[4052] There's that whole point of like
+[4053] PowerPoint like allows you to kind of
+[4054] like smear logic through the thing. If
+[4056] you write it, if you write it, you ha it
+[4058] has to stand to scrutiny, right? And so,
+[4060] you know, we try and minimize the amount
+[4062] of like metal work and it's like, okay,
+[4064] put it together, identify the problem,
+[4066] identify the requirements, be very very
+[4068] clear about it. Okay, cool. That's
+[4070] awesome, right? Let's go and let's move
+[4071] on that thing, right? And it sounds like
+[4074] a lot of work, but like once you get
+[4075] actually like reasonably good at the
+[4077] muscle, you can crank out these like
+[4078] RFC's in like five minutes to do a
+[4080] really really complicated thing, right?
+[4082] like yeah I wrote one I don't know this
+[4084] week about like some sort of you know
+[4087] like database hardware offloading that
+[4089] we're going to go in and do to make like
+[4091] provisioning databases like way quicker
+[4093] and like actually like database latency
+[4094] for rights right put it out in like five
+[4097] minutes had some comments on it people
+[4098] were like what about this thing etc I
+[4100] got alignment I covered a like somebody
+[4102] else pointed out a thing that I
+[4103] completely missed I was like oh crap
+[4105] like let's go and fix that and then I
+[4107] was like cool way to the races right all
+[4109] that happened guy in London you know
+[4110] just I saw it random was like boom okay
+[4112] cool and then I've like worked on it and
+[4114] I'm going to go home after this podcast
+[4116] I'm going to go and finish it up you and
+[4119] is this all happening on Discord you
+[4120] guys run a company on Discord
+[4122] &gt;&gt; which is not what you normally hear
+[4124] &gt;&gt; no most people like running on Slack and
+[4126] the reason we run it on Discord is drop
+[4129] in communication right so remote
+[4131] companies don't have that like office
+[4133] culture like serendipity etc which is
+[4135] like actually deeply valuable like you
+[4137] want to actually be close to your your
+[4138] co-workers in general and so yes you can
+[4140] spin up like a huddle in Slack, but like
+[4142] Discord has this really really cool
+[4144] feature where you can see everybody kind
+[4146] of like in the kind of meeting rooms
+[4148] right at the top, right?
+[4149] &gt;&gt; Yeah, that's true. There's like there's
+[4151] different like audio jacks or I guess
+[4153] video. You can like see who's in them.
+[4155] &gt;&gt; You can see it's it's like the the
+[4156] Michael Bloomberg glass door meeting
+[4158] room policy for the internet of things
+[4160] or or whatever. Not the internet of
+[4161] things, but like the internet or
+[4163] whatever. Um so that's kind of why we we
+[4165] do that in general and it's worked. work
+[4167] quite well for a lot of things and then
+[4169] there's like some things that we have to
+[4170] like build Slack bridge extensions for.
+[4172] &gt;&gt; Yo, is there any like, you know, I mean,
+[4174] Discord is made for gaming, not running
+[4177] a business organization.
+[4178] &gt;&gt; It's funny. We're like trying to make
+[4179] like a really concrete like, you know,
+[4181] decision of the company and then you get
+[4182] like a Fortnite ad at the bottom of it.
+[4184] You're like,
+[4186] &gt;&gt; "Okay, it's awesome." Do you uh do you
+[4188] wish that more people more like founders
+[4191] and organizations talk publicly about
+[4193] how they do kind of team and structure
+[4196] things? Yeah, 100%. I think
+[4200] how you construct a company's org
+[4202] structure is like one hasn't been
+[4205] changed in a while and two actually is
+[4207] like one of the number one complaints
+[4209] that I hear from employees who have gone
+[4211] through like hyperrowth periods, right?
+[4213] I I have friends at various different
+[4214] companies where they're like, "Man, we
+[4216] like we grew really fast and like our
+[4218] management stack really sucks." Like we
+[4220] are not setting up our managers for
+[4221] success. We are not setting up people to
+[4224] kind of like scale into these roles.
+[4226] Like there's no quant like like almost
+[4228] like JD like what does a manager do,
+[4230] right? It's like, you know, how do you
+[4232] give these people really really awesome
+[4233] tools to be able to innovate on this
+[4235] thing that is like very very standard
+[4237] MBA kind of etc business stuff. So I
+[4239] would love if people like wrote on on a
+[4241] lot of these things. I don't think a lot
+[4243] of people are doing that in in general.
+[4246] Not even just like the writing thing. I
+[4247] don't even think they're just like
+[4248] innovating on it. It's like a standard
+[4249] kind of like a manager's path, which
+[4251] there's nothing wrong with that, right?
+[4252] Like having a a like that's probably the
+[4255] closest like rubric concrete manager
+[4257] manager kind of operationalizing.
+[4260] But I I think that there is ARB in
+[4263] changing a few things there, right?
+[4265] Especially when you run a remote team
+[4267] and I can run one-on- ones at weird
+[4269] different hours, right? Uh, I can go out
+[4271] in the middle of the day, have a run, go
+[4274] have, you know, lunch or something like
+[4276] that, brunch with a friend or something,
+[4278] and then come back and and kind of like
+[4280] have a meeting at, I don't know, 8:00 or
+[4283] 11 or something.
+[4284] &gt;&gt; Mhm. What do you when you talk about do
+[4286] you see the issues with these hyperrowth
+[4288] startups that don't do or designer team
+[4290] design correctly? What's what's like the
+[4292] mistake that seems to be made?
+[4295] It just seems like a
+[4298] almost just like a a lack of of concrete
+[4302] like operationalizing of like what do
+[4304] managers do at those companies, right?
+[4306] Like what what is a manager supposed to
+[4307] be responsible for? How can they you
+[4309] know encourage the excess of their
+[4311] employees? Like just a very very
+[4314] concrete example like do they or do they
+[4315] not write code, right? Like that's a
+[4317] thing that like is is like some some
+[4319] companies like have management stacks
+[4321] where they just they simply don't even
+[4322] write that and it's like a completely
+[4324] different experience across across
+[4325] different culture or different different
+[4327] teams on that culture, right? And so you
+[4329] have this like almost shearing or
+[4331] different ways of operating which
+[4334] there's not like a really a standard on
+[4336] that right other than like industry
+[4338] standard etc. What's like the most
+[4340] interesting uh operating procedure
+[4343] policy that you've seen even if you
+[4344] don't use it at railway but it's like
+[4346] the thing that pops the most is like
+[4348] that's a very opinionated way of doing
+[4350] something. I mean the one that that I
+[4352] like is the like clean memo messy
+[4354] meeting or or one from like Amazon. That
+[4356] one kind of just like makes sense. We
+[4358] try and like write memos generally for
+[4360] meetings but it doesn't happen every
+[4362] single time obviously.
+[4365] What other things are really really
+[4366] solid operating procedure? I like a lot
+[4369] of the Netflix stuff. If you've read the
+[4372] like no rules rules book, there's a lot
+[4374] of like really really solid stuff uh in
+[4376] there. I
+[4376] &gt;&gt; don't think I have. What's what's an
+[4378] example from that?
+[4379] &gt;&gt; Well, a lot of it is is kind of on just
+[4381] like giving people as much, you know,
+[4384] slack or or whatever as possible. Like a
+[4386] ton of different freedom, right? Like
+[4387] there's an example from that that book
+[4388] where it's like, well, who approves
+[4390] approves my marketing expenses? And it's
+[4392] like you you don't you have a credit
+[4395] card and you go run the marketing
+[4397] expenses and if you need to write a PO
+[4398] for any of these things like go and do
+[4400] it, right? And they're like well what's
+[4401] the like budget? What's all these other
+[4403] things, right? And it's like make good
+[4405] decisions that are in the good or the
+[4407] interest of the the company and go in
+[4408] and execute on those decisions
+[4411] and and you know if it's great that's
+[4412] awesome and if it's bad like tell us why
+[4414] it was bad, right? And it's like a lot
+[4415] of kind of like freedom stuff like that.
+[4417] you know,
+[4417] &gt;&gt; interesting. You feel it's maybe too
+[4419] much like a daycare versus like a
+[4421] science experiment.
+[4422] &gt;&gt; Your words, not mine.
+[4425] &gt;&gt; Okay. Yeah. Well, that's fair. I'm I'm
+[4427] happy to take the the brunt on that one.
+[4430] So, the I mean, when it comes to having
+[4432] a remote team, lots of different time
+[4434] zones, lots of people doing different
+[4436] things, different procedures or
+[4438] different uh uh work modes, different
+[4441] like cultures around the world. One
+[4442] thing I know you have a really strong
+[4444] opinion on is not working on the
+[4446] weekends. So, why do you think that?
+[4448] &gt;&gt; Yeah. So, uh I got lambasted on Twitter
+[4451] the other the other day for this one
+[4452] where I said I forget what the actual
+[4454] quote was. I think it was um you know my
+[4457] hot take is that you should uh not be
+[4459] working weekends and if you end up
+[4461] working weekends uh you suck at
+[4463] planning, right? And so I personally try
+[4467] to both champion the idea that you
+[4469] should be on when you're on and you
+[4472] should be off when you're on
+[4474] &gt;&gt; when you're off.
+[4474] &gt;&gt; When you're off when you're off. Yeah.
+[4476] Sorry. You know, and the reason for this
+[4478] is horsepower gets you a lot of the way,
+[4483] but at a certain point you need to
+[4484] refine your technique, right? And if you
+[4486] figure out that you were working all the
+[4488] time, you don't really have a space to
+[4490] kind of like decompress, figure out
+[4492] where you kind of like lost essentially
+[4494] lost time. If you think about it in
+[4496] terms of like almost like a slowable
+[4497] scheme, right? Like I had this deadline
+[4499] and I was ahead of it. Why was I ahead
+[4501] of it, right? What decisions did I make
+[4503] actually allowed me to kind of like move
+[4504] really really quickly there? Or I had
+[4506] this deadline and I was behind it. Why?
+[4508] For what reason was I behind? Where
+[4510] could I have like bought back those
+[4512] seconds essentially? Right? And if you
+[4514] are like always absolutely rip it and
+[4516] grip it and gunning it. It's all these
+[4518] things and your default motive operandi
+[4521] is to simply double down and continue to
+[4523] work weekends. You're not going to be
+[4524] able to identify those areas in which
+[4526] you can actually get you know outsized
+[4529] value returns on simply changing one
+[4531] small aspect of how you are operating so
+[4534] that you can get get faster and faster
+[4536] and faster. Right? it it's kind of like,
+[4540] you know,
+[4542] performance athletes or anything else
+[4543] like that. They'll push themselves a ton
+[4545] um and then they'll give themselves a
+[4546] little bit of space to kind of like
+[4547] cycle out, right? So,
+[4550] &gt;&gt; so it's so it's not like you you don't
+[4552] work and you like close your laptop on
+[4555] Friday at 5:00 p.m. and you open it back
+[4556] up at 9:00 a.m. on Monday.
+[4558] &gt;&gt; No, no, no, no. Right. Like it's it's if
+[4560] I do my job perfectly correctly 100% of
+[4562] the time, which I never ever do because
+[4564] I'm human or whatever, right? I will not
+[4566] work any weekends and I will not get
+[4568] paged when I'm on vacation. That doesn't
+[4570] happen. I worked the last like six
+[4572] weekends, right? Like getting like a
+[4574] bunch of these things. But as a result
+[4575] of working those last six weekends, I've
+[4578] kind of like put things into a spot
+[4579] where I can say this is the reason I've
+[4582] been working the last six weekends,
+[4584] right? This class of work, we probably
+[4586] actually didn't even need to like go it
+[4587] it down and do. we were just doing it
+[4589] because you know either or planning or
+[4592] uh you know we reactionary or anything
+[4595] else like that. So I can go back through
+[4597] there and kind of audit my time and say
+[4599] where could we buy back 20% of our
+[4601] cycles? Where could we go in and do
+[4602] that? Right? And then we go and write it
+[4604] down, right? And creating that space to
+[4605] be able to go and do that almost like
+[4607] time audit, decompression, etc. is
+[4610] really really key for figuring out ways
+[4611] that you can actually go really really
+[4613] quickly again, right? It's like the you
+[4614] know, you build the race car, you run
+[4617] the race car, you figure out where it
+[4618] rattles, you bring it into the pit lane,
+[4620] and then you go and you tune it again,
+[4621] and then you run the race car. So, it's
+[4623] almost you you almost like try to be a
+[4625] weekend warrior. Like you live for the
+[4627] weekend because you you make your week
+[4629] so efficient and so good that you can
+[4632] take the weekend off even if you don't
+[4634] actually necessarily get to do that a
+[4636] lot. But that's what you strive for.
+[4638] That's Yeah, that's exactly the goal,
+[4640] right? Um and because like my brain will
+[4642] naturally just like get pulled back
+[4643] towards work anyways, right? But it's
+[4644] it's different kinds of work, right?
+[4646] It's it's work that's not like doing,
+[4648] right? It's work that's like thinking,
+[4650] right? So, I pull myself away from the
+[4652] keyboard. I go maybe I'll take my
+[4653] journal. I'll take I'll go to the park
+[4655] or the sauna or something like that.
+[4656] It's still thinking about work, but it's
+[4658] almost like the technique of like, how
+[4660] could I have improved on this thing? How
+[4662] could I have whatever, right? So, that's
+[4664] kind of why I think that like you should
+[4666] delineate these like concrete lines,
+[4668] right? To say, okay, I'm going to go
+[4670] hard on all like Monday to Friday, I'm
+[4672] going to go hard, right? Like I'm
+[4673] probably working until like, you know,
+[4675] 11, 12, sometimes 1:00 a.m., right? And
+[4677] then I'm up at like 8 a.m., right? going
+[4680] to go hard during the week and then
+[4682] buzzer stops weekend etc. If I have
+[4686] stuff that I have to do because I'm
+[4687] getting pulled in maybe I'm you know on
+[4689] call or anything else like that
+[4690] obviously I have to go in and do it
+[4691] right but I should strive to basically
+[4693] try and disconnect as much as possible
+[4694] and figure out why I'm getting pulled
+[4696] back into these things where I lost time
+[4698] or anything else like that so that I can
+[4699] improve myself over time. Do you feel
+[4702] like sort of like the culture of Silicon
+[4705] Valley has seeped into that being a
+[4708] necessary thing like you must work
+[4710] weekends? Maybe not Silicon Valley, just
+[4712] like business in general.
+[4715] &gt;&gt; I think like
+[4717] &gt;&gt; so I think marketing is like truly
+[4719] underrated. It's like it's a skill that
+[4721] if you're really really good at
+[4723] marketing, you can up almost
+[4724] everything else, right? And so I think
+[4726] that marketing has only even gotten more
+[4728] and more important, right? And so
+[4730] there's a lot of almost like
+[4733] like almost gratuitous like grind
+[4734] culture of like I'm just going to like
+[4736] grind a ton on this stuff and you know
+[4738] because you're putting out that content
+[4740] like those are things that people are
+[4741] generally seeing. They're amping it etc.
+[4743] Right? So I think it's changed a little
+[4744] bit in terms of people are doing things
+[4747] for
+[4749] almost like visual optics reasons in in
+[4752] some ways versus what can we do that's
+[4755] actually like highly impactful or or
+[4757] stuff like that. Right. So I think that
+[4758] that's kind of more where it's it's kind
+[4760] of like gravitated towards and as a
+[4762] result you know you see a lot of like
+[4764] really just like absolute grind culture
+[4766] or you know really flashy kind of like
+[4769] you know things that you're like what is
+[4771] like what is this right like what what
+[4772] product are you actually selling what
+[4774] thing are you actually solving you know
+[4777] stuff like that right so one one actual
+[4779] question I probably should we probably
+[4780] should talk this a long time ago but
+[4782] Erica at Redpoint was like a make sure
+[4784] you ask this so you probably could have
+[4786] taken a really big concentrated bet on
+[4789] AI models
+[4790] &gt;&gt; at some point and I I mean I don't think
+[4792] you have what's what was the thinking on
+[4794] that?
+[4795] &gt;&gt; So I I'm a big fan of Jim Collins. I
+[4798] don't know if you've ever read it.
+[4799] &gt;&gt; Yeah. Good to Great. Great by Choice.
+[4802] What was the other one?
+[4802] &gt;&gt; Yep.
+[4803] &gt;&gt; I don't know.
+[4804] &gt;&gt; The one I think of mostly is good to
+[4805] Great, right? And it it has this
+[4807] principle in it called the hedgehog
+[4808] principle. Um and so it's essentially
+[4809] like what is the surface area of things
+[4811] that you can be like basically top three
+[4813] in the world I think it is. And if you
+[4815] can't do that and you can't operate on
+[4817] those things, like probably shouldn't
+[4819] move into that adjacency zone just yet,
+[4821] right? And so there's a shitload of
+[4824] competition in terms of like doing, you
+[4826] know, the the model hosting, etc.,
+[4828] right? And so from this point, right,
+[4830] like I don't think that we can be, you
+[4833] know, we could if we invested all of our
+[4834] eggs in that basket, but I don't think
+[4836] we can be top, you know, three to five
+[4837] in the world while also doing all the
+[4840] things that we want to go in and do. So
+[4841] it's almost a concerted effort to say
+[4843] that's really really cool but we have to
+[4845] say no to this at this this time right
+[4847] we have to exercise a lot of focus to
+[4849] basically say like we're going to
+[4850] execute on the things that we are really
+[4852] really set up for can really really do
+[4854] excellently well let's go and push on
+[4857] those and then once we get to the point
+[4858] where we are dominating those things in
+[4861] that field what can we expand to right
+[4863] and then figure out okay cool you know
+[4865] when we can do compute and data centers
+[4868] and you know orchestration and and
+[4871] everything else like that so well that
+[4873] we are literally top in the world,
+[4874] right? And we're pushing towards that as
+[4876] of right now, I think, in a really good
+[4877] spot. Maybe we can do that for GPUs,
+[4880] right? And maybe we can slice and dice
+[4881] GPUs and maybe we can give you time
+[4882] share on a kind of like basis of, oh,
+[4884] cool. I really wanted just like just
+[4886] this slice of of a GPU for this period
+[4888] of time, right? And that may or may not
+[4890] be a thing that we'll do in the future,
+[4892] you know,
+[4892] &gt;&gt; this is like maybe like a road mapap
+[4894] sneak peek, but maybe not.
+[4896] &gt;&gt; Maybe maybe maybe not, right? It's like
+[4898] at at like at some point that will
+[4901] probably be a thing that like is worth
+[4902] doing, right?
+[4903] &gt;&gt; Okay, that's fair.
+[4904] &gt;&gt; This is not like a one drop like next
+[4906] week we're doing GPUs or something else
+[4908] like that, you know?
+[4908] &gt;&gt; Yeah. Yeah. Yeah. So, you mentioned Good
+[4912] to Great by Jim Collins. Do you have any
+[4914] just like favorite historical businesses
+[4917] or CEOs or founders that you've kind of
+[4919] gotten a lot of inspiration from? It
+[4921] could be recent,
+[4923] ancient times, you know, anything that
+[4926] you've anyone you've really drawn a lot
+[4927] of inspiration from.
+[4928] &gt;&gt; Um, I don't really have like
+[4932] like founders or or whatever. It's not
+[4934] like, you know, like Steve Jobs is
+[4936] great, you know, it's like a good person
+[4938] to look up for for a variety of reasons.
+[4939] For some other reasons, not so great.
+[4941] It's kind of like rude or whatever. I
+[4943] don't necessarily have like a specific
+[4945] person where I'm like, "Oh my god, this
+[4946] is like my idol or whatever." I like
+[4947] take various different things from from
+[4949] people and try and like personify them,
+[4951] right? One example is like not even
+[4954] really a founder. There's this YouTube
+[4956] video of Jonah Hill talking about why
+[4958] Marty Scorsesei is like such an
+[4960] excellent director. I I swear I'm going
+[4963] somewhere with this and he's talking
+[4965] about it and he's basically saying like
+[4967] imagine yourself doing you know as an
+[4970] experienced chess player with a infinite
+[4972] amount of time, right? and you make a
+[4974] move and you know you keep going or
+[4976] whatever, right? They are really really
+[4978] good because given a super super small
+[4981] subset of time, they're going to make a
+[4983] better move quicker, right? And so those
+[4985] are kind of things that I like go in and
+[4987] say I'm like, okay, why is that person
+[4988] excellent? Why are they truly truly good
+[4990] at their craft and what makes them so?
+[4993] And is there a way that I can go and
+[4994] take that kind of like skill and get
+[4995] really really good at? Right? So I try
+[4997] and make decisions like really really
+[4999] quickly and intelligently now because I
+[5001] believe that like that is one part of
+[5003] like being excellent, right? So that's
+[5004] just kind of one example, but I I take
+[5006] pieces from from various different
+[5008] things where I I kind of see them, you
+[5009] know. Do
+[5010] &gt;&gt; you try to find like what who who or
+[5012] what is really good at specific things
+[5014] and seeing what you can learn from them?
+[5016] &gt;&gt; Yep.
+[5017] &gt;&gt; Anything recent you've learned from
+[5019] that?
+[5020] The one that kind of comes to mind is
+[5022] like it's like Mark Zuckerberg and it's
+[5024] not really like a thing but like I think
+[5026] Mark has like really really really good
+[5028] patience and really really good
+[5030] identification of like things that are
+[5032] important right and so they are very
+[5034] happy to go in and work on a hard
+[5037] problem like VR because they know like
+[5039] they're going to shell a ton of money
+[5040] into that thing because they know at
+[5042] some point VR is going to be really
+[5044] really really important right so they
+[5046] have the patience to go and wait out for
+[5048] like a ton a ton of time so that they
+[5050] can potentially be first in this market
+[5053] and just kind of like way around, right?
+[5054] So, that's kind of like one example of a
+[5056] thing that I've been like I don't know
+[5057] if I learned it recently, but I I I
+[5059] developed a deep kind of like
+[5060] appreciation for how good I believe that
+[5063] they are at this thing, right? Is like
+[5065] waiting for the right time and then
+[5066] acting and then being in a really really
+[5068] good spot, you know?
+[5070] Yeah, it makes sense with kind of
+[5071] thinking about maybe the railway product
+[5073] road map way way you you like rolled
+[5075] things out, way you've thought about
+[5077] what you offer, where you compete. Just
+[5078] be really really deliberate about that
+[5080] stuff. Wait for users to really tell you
+[5082] exactly what they want out of something,
+[5084] right? Because if if somebody says like,
+[5085] "Oh, I want this specific integration."
+[5087] And you're like, "All right, well, tell
+[5088] me why or like what what problem or
+[5089] anything else like that." It's a bit
+[5091] falls a bit flat, right? But then when a
+[5092] user like begs you for like, "Oh my god,
+[5094] I need better observability. I can't
+[5095] like tell any of this like I don't want
+[5097] to use, you know, this specific thing
+[5098] anymore, right? like we these are all
+[5099] the problems I need to solve, right? I
+[5100] need to be able to be notified when, you
+[5102] know, my apps crash or I need to be able
+[5104] to like know when like latency spikes or
+[5106] anything else like that. Like you're
+[5107] starting to get really really concrete
+[5109] information because you've said no to
+[5111] this person a long like and these people
+[5113] in in your for a long while, you're
+[5114] accumulating a lot of this information
+[5116] so that when you actually go and and the
+[5119] time is right to go and act on that, you
+[5121] have a litany of of feedback that you
+[5123] can actually go in and be like, "Okay,
+[5125] cool. Like these are all the things that
+[5126] we should go and execute on. these are
+[5128] what problems, these are the things that
+[5130] we're going to like actually try and
+[5131] really push the envelope on. Right? Your
+[5132] your plan is really really concrete
+[5134] instead of this almost like frenetic
+[5135] like reactionary thing of like, oh, they
+[5138] want this, so I'm going to go and build
+[5139] this thing. Right? I feel like that's a
+[5142] good sort of way to end it with the way
+[5145] like it's almost like the whole railway
+[5149] uh like the experiment of building this
+[5151] company has been like a very intentional
+[5154] way for the right moments to do things.
+[5156] Even thinking about like how you've
+[5157] incorporated certain products and
+[5158] features just like like make sure you
+[5160] take a feedback and know when you're
+[5162] acting like you act from position of
+[5163] strength almost. Yeah.
+[5165] &gt;&gt; Well, this has been a lot of fun. Thanks
+[5166] for having me. This is excellent. This
+[5167] is a ton of fun.
+[5168] &gt;&gt; Where can if somebody's like, "Man, this
+[5170] Jake guys like he seems like it seems
+[5171] like a sharp guy. We mentioned your
+[5173] tweet. So, what's we can we find you on
+[5175] Twitter?"
+[5175] &gt;&gt; Yeah, you can find me on Twitter or X or
+[5177] whatever you want to call it nowadays.
+[5178] It's just Jake. So, JU S and then Jake,
+[5182] you know, you can follow me to varying
+[5185] levels of, I don't know, interest or
+[5186] whatever.
+[5187] &gt;&gt; I'm sorry. I'm sorry. Or you're welcome,
+[5189] you know, depending on how you read the
+[5190] tweets or whatever. So, yeah.
+[5191] &gt;&gt; And then do do you write on Substack
+[5193] still? I didn't actually look at the
+[5194] dates on your post.
+[5195] &gt;&gt; I haven't written in a while. It's
+[5197] mostly kind of like, you know, actually
+[5199] I might have written something a little
+[5200] while ago. It's very kind of
+[5202] inconsistent. It's whenever the the kind
+[5204] of like need strikes like get something
+[5206] out there in general, right? You
+[5208] mentioned the domain. your
+[5209] million-dollar domain. Railway.com is
+[5211] where you can find
+[5212] &gt;&gt; find us at railway.com.
+[5213] &gt;&gt; Cool.
+[5214] &gt;&gt; Well, yeah, we'll throw links to a bunch
+[5215] of stuff we talked about in the
+[5216] description and people can dig in a
+[5219] little bit more if they want to. This is
+[5221] been a lot of fun. Thanks for doing it.
+[5222] &gt;&gt; Cheers. Thanks for having me
+[5224] &gt;&gt; and thank you for listening and thanks
+[5226] to RAMP for supporting this episode.
+[5228] Upgrade your corporate card and get $250
+[5231] at ramp.com/theel.
+[5233] If you missed it, check out last week's
+[5234] episode with Matt Mullenwag at Automatic
+[5236] on how WordPress grew to power over 43%
+[5239] of all websites on the internet and the
+[5241] week before that with Grant Lee on how
+[5243] Gamma grew to over 50 million in ARR
+[5246] with only 30 employees. Tune in next
+[5249] week for Garrett Lord, the founder of
+[5251] Handshake, whose college recruiting
+[5252] platform has emerged as a leader filling
+[5254] the massive opportunity in the AI data
+[5256] labeling space. If you like this
+[5258] conversation, please comment, like,
+[5260] subscribe, and name your next AI model
+[5262] after me. And if you don't want to miss
+[5264] a future episode, subscribe to my
+[5266] newsletter, The Split, linked in the
+[5268] description to get each episode plus a
+[5269] transcript emailed directly to your
+[5271] inbox every week. Thanks again for
+[5274] listening. See you next time.
+[5277] [Music]

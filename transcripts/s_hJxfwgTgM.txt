@@ -1,0 +1,1205 @@
+[3] Hey Ryan, welcome to the first episode
+[6] of the Token Economy podcast. Welcome.
+[8] &gt;&gt; Hey SH, thanks for having me.
+[10] &gt;&gt; Yeah, totally. Let's get right into it.
+[12] So, why don't we just get started with
+[14] you? Why don't you introduce yourself
+[16] and Valve's AI and what you all are up
+[18] to for people who don't know you?
+[19] &gt;&gt; Yeah. Uh, great. So, I'm Ryan. I'm one
+[22] of the two co-founders of Val AI and uh
+[24] we benchmark language models on real
+[26] world tasks. So you've probably seen
+[27] conventional benchmarks on seeing
+[29] whether models can answer grade school
+[30] math questions. We're trying to see how
+[32] well they can support lawyers or doctors
+[34] or people in finance. Uh we're 12 people
+[37] today based in San Francisco and working
+[38] with all the major foundation model
+[38] labs.
+[41] &gt;&gt; Very interesting. So before before we go
+[43] into valves and how you came up with the
+[45] idea and the million things that are
+[47] happening in the AI world, let's take it
+[49] all the way back like where do you grow
+[52] up? What was what was Ryan like as a
+[52] child?
+[55] &gt;&gt; Yeah. Uh yeah, well I grew up in the
+[57] Seattle area. It was like just outside
+[60] of the the sphere of Microsoft uh in
+[63] Redmond and uh yeah, I mean I think I
+[65] had a fantastic childhood to be honest.
+[67] Um my my parents grew up in a pretty
+[69] intense household and so they kind of
+[71] negated that for me and uh honestly
+[73] wanted me to just play sports and have a
+[75] good time and weren't weren't uh super
+[77] overbearing which I'm pretty thankful
+[79] for. Um, I think there was a part of me
+[80] that, [clears throat] you know, wanted
+[82] to do more than what what I had around
+[85] me. And so I was eager to do uh more in
+[87] school and pretty much more in
+[88] everything that I that I was spending
+[91] time in. Uh, and uh, one one component
+[92] of my high school experience I think was
+[95] predefining is I was surprised to learn
+[97] how uh, many people in the US didn't
+[98] believe in climate change like something
+[101] that seems so fundamental.
+[103] Uh and so I my my belief at the time was
+[105] that if more people just believe just uh
+[107] you know had a sense of the scientific
+[108] process that they would understand
+[111] climate change and so I took a summer to
+[113] build a a video game to teach kids about
+[114] climate change and that was surprisingly
+[116] effective. So uh went across the state
+[118] and and basically taught kids through
+[120] this like sim cities type type game. Um
+[123] and uh I think that's probably one of
+[124] the main reasons I got into Stanford and
+[126] they they saw something that I was
+[128] taking a real problem and trying to
+[130] trying to solve it. Um but yeah then
+[131] through college I was mostly interested
+[133] in in doing a PhD. So I did research
+[135] with with Andrew Wing and and Chelsea
+[137] Finn and Michael Copenderfer and that
+[139] was sort of the plan. So published a
+[141] bunch of papers and including one in
+[143] nature, one in patterns. Um but I also
+[145] had the chance to work at Microsoft for
+[146] a few summers, work at Palanteer, work
+[148] at a few startups. So had a smattering
+[150] of other experiences that that informed
+[151] what I was going to think about doing
+[151] postgrad.
+[156] &gt;&gt; Cool. So talk to talk to me a little bit
+[158] about what that experience in working at
+[160] and Andrew Inglab was like and how did
+[162] you how did you really even end up
+[164] getting into AI?
+[165] &gt;&gt; Yeah, I would say by the way that
+[167] experience of joining Andrew Inglab was
+[170] uh was pretty random. I um had spent the
+[171] previous summer working at Microsoft and
+[173] BERT had just come out. So people who
+[175] don't know BERT, this was a pretty big
+[176] breakthrough showing that like
+[177] [clears throat] a single algorithmic
+[179] development would result in
+[180] state-of-the-art performance across a
+[182] wide breath of tasks people had been
+[184] trying to optimize for individually. Uh
+[186] and so I didn't know much about um AI
+[189] models or NLP, but I took Chris
+[191] Manning's 224 class, watched it on
+[193] YouTube. Uh and uh and through that was
+[195] encountered a data set called the
+[196] Stanford questionans answering data set
+[198] or squad. Yeah. And so I came to
+[200] Stanford very excited and emailed the
+[203] lead author of that that paper prukar
+[205] saying, "Oh, I saw what you you've done
+[207] in the squad and would love to get lunch
+[209] with you." And so we had lunch and uh I
+[211] guess he saw something in in my approach
+[213] to to the paper what I was working on
+[216] that he said I I could join his lab. So
+[218] that was my entryway to the AI for
+[219] healthcare research lab. And I would say
+[222] initially I was very low ego working on
+[224] very simple tasks. Everyone was older,
+[226] smarter, more experienced than me. So
+[228] was just doing a lot of data cleaning
+[230] and processing and stuff like that. But
+[231] it was good exposure to join those
+[233] reading group sessions and do research
+[235] for the first time and of course get to
+[239] interact with a legend like like Andrew.
+[241] &gt;&gt; That makes a lot of sense. So Val feels
+[244] like a pretty non- consensus idea. How
+[247] do you come up come across benchmarking
+[249] first and then just the the idea for
+[249] val?
+[254] &gt;&gt; Yeah. Yeah. Uh well I mean non-conensus
+[256] uh is I think maybe another way of
+[258] saying that it's uh contrarian. So I
+[260] would consider that a compliment. Um
+[262] contrarian and right would you know I
+[263] would hope to be the case.
+[265] &gt;&gt; I mean we we I took a very naive
+[267] approach to company starting after we
+[268] graduated. So it was a friend of mine
+[270] Lynx and I we we knew that there was
+[272] alpha everywhere and so we decided to
+[274] put PhD plans on pause. Langston was
+[276] going to go work at HRT. We wanted to
+[277] see if we could come up with an idea
+[279] where we were differentiated to try and
+[281] address. And so we took a like I said
+[283] very naive path of looking at the
+[284] research papers I had published and
+[286] seeing if any of them could turn into a
+[287] company. And you know thought process
+[289] was this this worked for Google uh maybe
+[291] we could give it a shot as well. Um, and
+[292] so [clears throat] it was actually the
+[294] second paper that we were playing around
+[296] with where I'd built a a new evaluation
+[298] metric in a healthcare context and we
+[300] noticed the existing benchmarks people
+[301] were reporting in these these model
+[303] cards uh they were they were really
+[305] inadequate compared to where we thought
+[306] the models were going to be used. Right?
+[308] It's actually not very important to see
+[309] can they solve grade school math
+[311] problems or these esoteric PhD problems
+[313] in this very abstract concept of
+[314] intelligence if they don't have the
+[316] practical intelligence of helping
+[318] lawyers helping doctors people who uh
+[319] actually are looking to adopt the models
+[321] for their day-to-day work. So um yeah,
+[323] that was the kind of genesis. So we we
+[325] saw this delta and wanted to build
+[326] benchmarks. I'd say frankly didn't know
+[327] what the business model was going to
+[329] look like, but we we've surprised even
+[331] ourselves there last year.
+[334] &gt;&gt; And you started you started Val right
+[337] out of college. Clearly you were you
+[338] were doing AI research and you had a
+[340] bunch of these ideas, but what actually
+[342] gave you the confidence as like somebody
+[343] who was right out of school to actually
+[344] start a company? Because I feel like you
+[346] talked to so many stu so many students
+[348] in the valley and kind of across the
+[350] nation, I'm sure. And a lot of the
+[351] question always is how do you get enough
+[354] conviction to to take that jump?
+[355] &gt;&gt; I mean I think it was just hubris to be
+[360] honest like uh I to also I think uh a
+[361] certain level of arrogance like I think
+[362] I've been humbled through this through
+[365] this uh journey so far but I came out of
+[367] uh undergrad having worked at Palunteer
+[368] where there's some of the best engineers
+[370] in the world and uh you know feeling
+[372] that I could solve any technical problem
+[374] that came my way. uh some of the work I
+[376] did at Palanteer went on to be uh you
+[378] know deployed in a a pretty significant
+[380] context and uh actually recently found
+[382] out that a little oneweek project that I
+[384] worked on is is is getting patented. So
+[385] they they took it to the limit. It was
+[387] just a side idea that I had and so it
+[390] gave me the impression that
+[391] um I could always sort of go back to
+[394] Palunteer. uh what what I encountered
+[395] when I was meeting with some of the
+[396] senior leadership while I was there is
+[399] that those people in in my shoes
+[401] wouldn't join Palanteer or their risk
+[404] profile didn't show that they would uh
+[405] and instead they would go on to start
+[408] Palunteer. So, you know, if if something
+[410] like ChachiBT, a real Black Swan event
+[411] was happening and there's some there's
+[413] something new that we could take
+[414] advantage of, why not just give
+[417] ourselves the opportunity to try um and
+[419] uh I'd say definitely lost a lot of
+[420] brain cells along the way and been been
+[422] learning. Um but but a decision I don't
+[424] regret in retrospect
+[426] &gt;&gt; and and and you talked about how you
+[427] surprised yourself with the business
+[429] model too as like you really wanted to
+[432] build benchmarks. I guess how do you
+[434] think about Val as a company? Do you
+[435] think yourself as a benchmarking
+[437] company? Do you think yourself is more
+[439] of an infrastructure company? Like how
+[441] how do you even position yourself across
+[443] the stack? Because it feels like there
+[446] are so many different ways in in in
+[447] which you could take this.
+[449] &gt;&gt; Yeah. I mean, I think benchmarks and
+[450] evals are pretty well understood as a
+[453] mechanism to drive model improvement.
+[454] Like if you don't know how well your
+[455] model's performing, what do what do you
+[457] improve on? Um and if you have the
+[459] signal, you can actually drive model
+[460] performance and train them in a certain
+[462] way. But but actually I think where we
+[464] have a lot of value is in evaluations as
+[466] a go to market notion. Um you have you
+[467] have sellers of people who are investing
+[469] billions of dollars to build models but
+[471] struggling to really convince people of
+[473] the net new value of these models and
+[474] then you have buyers on the other side
+[476] who have a lot of top down mandate to
+[479] adopt AI but paradoxically not a lot of
+[480] technical acumen to actually figure out
+[482] which models or products they should be
+[484] using. Um and so we can I think we're in
+[485] a pretty unique place where we can
+[487] bridge that gap. We can help facilitate
+[490] transactions of AI because we are you
+[491] know newly exposing the quality of
+[493] models and tools that are on the market.
+[496] So who ends up even being the customer?
+[498] So does the customer end up being
+[500] frontier model labs or does it end up
+[502] being kind of the core customer which is
+[504] which is any of these enterprises?
+[505] &gt;&gt; I mean I think in the limit it's it's
+[507] probably people on both sides. Uh and
+[509] you see this model in other industries
+[511] as well where market intermediaries are
+[513] able to capture value on both sides.
+[514] Today we have found that foundation
+[516] model labs are you know moving very
+[519] quickly and uh and and are initially the
+[521] lion share of our revenue. Um but but I
+[522] don't think that's going to be the case
+[523] long term.
+[526] Yeah, that makes sense. I guess
+[529] zooming out a little bit, it feels like
+[531] evals and benchmarks were really driving
+[534] so much of the model improvement and
+[536] really dollars and efforts that all the
+[538] large labs were putting were putting
+[540] their minds to. And I guess in the value
+[542] it was called benchmaxing which is you
+[543] basically take a benchmark and you take
+[545] it to the limit of like can you can you
+[548] come out saying hey like
+[550] whatever claust is is is better than all
+[552] of these others on on this benchmark.
+[554] But now of course like it feels like
+[556] we're we're we're shifting away from
+[558] just benchmaxing to real world
+[560] applications. I guess as somebody who's
+[562] kind of at the epicenter of this of
+[564] benchmarking but along with that also
+[566] what does the real world applicability
+[568] look like? How do you think things have
+[569] evolved in terms of where people are
+[571] spending their time and dollars at these
+[573] frontier model labs? Yeah, I mean I
+[575] think the reality is that in most of
+[578] research history in in LP
+[580] the investment in generation and
+[582] evaluation systems have has been coupled
+[584] and it's gone hand in hand. one has led
+[586] to the improvement in the other like for
+[588] instance you you start with reax
+[589] checkers but then once you want to do
+[591] machine translation between between say
+[593] English and French then you need a new
+[595] metric something like blue to measure
+[596] that and then you want to do more
+[597] complex question answering you use b
+[599] score and then now we have more complex
+[601] things like lm as judge and so I think
+[603] on the whole what you've seen is that
+[604] the level of investment in foundation
+[606] model labs on the generation systems has
+[608] has led to uh a pace of development that
+[611] has not been kept up by academia on
+[613] evaluation systems and so there's a big
+[615] room for us to actually invest in
+[617] techniques for evaluation and data sets
+[619] and actual benchmarks uh that go into
+[620] measuring the capability of these
+[622] generation systems and so I think labs
+[623] internally have done a lot of work in
+[625] this and that's what's driven
+[627] improvements but it means that they have
+[629] firstparty results which don't mean a
+[631] lot of don't make a lot of value for for
+[633] the for the landscape at large and we
+[635] can actually um do something in a
+[636] neutral third party way to communicate
+[638] whether these models are good or bad.
+[640] &gt;&gt; Yeah. and and and how do you think about
+[641] kind of productizing so much of this
+[643] intelligence because it feels like the
+[645] amount of intelligence we've created is
+[648] is is is is is really massive. But then
+[650] if you go talk to real enterprises, the
+[652] amount of AI products that they're
+[654] actually using is still I mean some
+[656] people are not even using chat GPD. I
+[657] guess like how do you actually end up
+[659] measuring the real world impact that
+[661] these enterprises are enterprises are
+[663] having and what are you seeing in terms
+[665] of changes from the labs to actually
+[667] maximize maximize more of the returns
+[670] from I guess maximize more of the impact
+[671] that the that the intelligence is
+[671] creating.
+[673] &gt;&gt; Yeah, I mean that that is a really
+[676] tricky part of this whole equation.
+[678] little a little anecdote, but I met with
+[681] uh director of AI at one of the very
+[683] large banks and we I was trying to ask
+[685] him, are you using ROGO? Are you using
+[686] Kabia? Like which which of these tools
+[688] are you using? And he says, oh, I have
+[690] someone that's trying those things, but
+[692] uh actually I'm much more excited. We we
+[694] just managed to deploy C-pilot across
+[697] our whole bank. Uh it only took me 18
+[699] months uh to get this done. And so he's
+[701] quite, you know, pretty proud of that.
+[703] Uh but but I think the lesson being that
+[705] a lot in a lot of these enterprises um
+[706] they will go to the bundled solution as
+[708] opposed to some new product experience
+[710] that they're being pitched on and you
+[712] know that may change maybe we just have
+[714] to give the market more time but I think
+[716] there is there's something to a behavior
+[717] or a product experience that people are
+[719] already familiar with which has AI
+[722] bundled into it. Um and I think also at
+[723] the end of the day what will drive a lot
+[726] of adoption is client demand or
+[727] efficiency demand to keep up with the
+[729] market. like you see this I think in
+[732] legal where um there is there's mandate
+[735] from the clients to be an AI law firm to
+[737] be using AI wherever possible so that
+[738] the dollars spent are spent in the most
+[740] efficient way um and so I think once you
+[743] bend you know take take a current a turn
+[745] in that direction uh there's a lot more
+[747] of an internal impetus to use and adopt
+[747] AI
+[750] &gt;&gt; yeah and and and as somebody who who
+[751] thinks about kind of these verticals you
+[752] were mentioning you built this
+[754] healthcare eval benchmark and then kind
+[756] of a bunch of different other verticals
+[757] which I'm sure you're targeting how do
+[760] you Think about kind of the application
+[761] layer companies which are of course
+[763] taking the mo taking the base model and
+[765] then kind of building something on top
+[767] of it versus the base model versus of
+[769] course the frontier model companies and
+[770] I feel like finance is a great example
+[773] here because it's clear that almost
+[775] almost every frontier lab cares about
+[776] finance and cares about coding. I I
+[778] guess those are two verticals we can
+[779] take and but then of course there are
+[781] these rapper companies or you can call
+[782] them rapper you can call them companies
+[785] building on top of these models. How do
+[788] you think about the competition between
+[789] them? And do you think and why do you
+[791] think some of the application layer
+[792] companies like the cursors of the world
+[794] and the Harveys of the world have been
+[796] able to break out even break out from
+[798] these frontier labs?
+[800] &gt;&gt; Yeah, it's an excellent question. I
+[802] think one which a lot of companies will
+[803] have to reckon with especially over the
+[805] next year but but I I think Kurser is a
+[807] little bit of a different type of
+[809] company in the application layer and and
+[811] just to draw it out I think it's because
+[812] they have their own model and they've
+[814] reached the point where they can largely
+[816] be independent of foundation model labs
+[818] hypothetically if labs cut off their
+[820] access to to their models I think Kerso
+[822] would still be a very valuable company
+[824] and they've established a large user
+[825] base and data flywheel so they can
+[827] continue to make this model better and
+[828] so I think if that's a sign for what's
+[830] to come there's a little bit of a race
+[833] for seeing if foundation model labs can
+[835] build an intuitive enough product
+[838] interface that has the distribution
+[840] um before or after application layer
+[842] companies who have already earned the
+[843] right to exist with a large customer
+[845] base can get into their own foundation
+[847] model labs and effectively sever the tie
+[850] between them and the labs. Um and I
+[852] think in the places where
+[853] you know the financial model labs are
+[855] actually able to build that product
+[857] interface first it it's very unclear
+[859] what the lasting power will be of the
+[861] application layer companies and I would
+[862] actually just expect in the long term
+[864] there are not going to be that many
+[866] companies who have uh frontier
+[867] intelligence in the domains that they're
+[869] selling into like I think it's actually
+[871] going to be but I would expect fewer
+[873] than than there are today. uh you know
+[874] we we've been wrong I've been wrong
+[875] about that in the past and there's
+[877] actually way more foundation model labs
+[878] and application layer companies today
+[880] than than there ever have been but but I
+[882] I just think in in the long term the
+[883] cost to build these systems will be so
+[885] prohibitive and the groups that already
+[887] have distribution will be the ones that
+[888] can build a data mode around their
+[888] application
+[891] &gt;&gt; yeah and you mentioned a bunch of the
+[892] fact that you've been wrong about the
+[894] fact that like there will be less labs
+[895] and I think that is certainly true I
+[897] think at at at some point people are
+[898] even expecting a consolidation of the
+[900] lab versus what we've seen is actually
+[902] the exact opposite which is we've seen
+[905] more Neolabs and the new those Neolabs
+[907] have have consistently raised increasing
+[909] amounts of dollars.
+[911] &gt;&gt; I mean maybe I'll actually ask this of
+[913] you Shia. So I mean I I predicted that
+[916] uh over 2025 we would see fewer
+[918] financial model labs and fewer models
+[919] and the thought process was that it's
+[921] very capital intensive to start a new
+[923] lab. Uh and so yeah, you're right. If
+[924] anything, we'd see consolidation, but
+[926] also more than that, models were getting
+[927] strictly better. Like there's almost
+[929] like semiconductors where they're
+[930] getting more efficient, meaning more
+[933] intelligent, cheaper, faster, more
+[935] capable. Um and I was wrong on both
+[937] counts. Uh I think I didn't anticipate
+[939] how much VCs were willing to underwrite
+[941] uh new labs and you know this incredible
+[942] talent that was being concentrated in
+[944] these these new places. Um, and I didn't
+[946] anticipate reasoning models where you
+[948] could actually have a trade-off between
+[951] uh latency, cost, and capability
+[953] quality. Um, which has now led to a I
+[955] think compounding set of options.
+[957] Obviously, very good for us. A lot of
+[959] things we we we're testing keep us keep
+[961] us up late. But I'm curious if you think
+[962] this trend is going to continue whether
+[964] investors will continue to be able to
+[965] underwrite new foundational model labs
+[966] being built.
+[968] &gt;&gt; No, totally. And I think it's an
+[970] interesting question and one that I
+[972] think pretty actively about. I think
+[973] there are there are a couple of
+[974] different kinds of neolabs, right? Like
+[977] one I think is there are some vertical
+[980] domains which are so strictly expert
+[982] driven that you're going to have to
+[984] train your own model in order to do so.
+[987] And the argument there is the fact that
+[989] none of the large labs are going to be
+[991] because this is so specialized are going
+[994] to focus on this. But you need to own
+[996] the weights of the model in order to
+[997] truly build something that is
+[1000] intelligent enough to produce high ROI.
+[1001] And I think there it makes a lot of
+[1003] sense. Uh and the other place I think it
+[1005] makes makes sense to have a large lab is
+[1006] there is also going to be this
+[1009] productization of
+[1012] large intell of these base models. But
+[1014] along with that
+[1016] there is a fair a fair amount of
+[1018] technical work to be done to actually
+[1020] deploy them in some of these domains and
+[1021] even deploy them in the enterprise
+[1024] really. And I I I think there is this
+[1026] misnomer around if you if you call
+[1028] yourself a lab, you're strictly going to
+[1029] be doing research. And I think some of
+[1032] these labs are very are very FTEd driven
+[1033] where they have this forward deployed
+[1035] engineering motion where they literally
+[1037] take so much of the intelligence they'll
+[1039] take the open source models and they
+[1040] they'll do a lot of the RL technical
+[1042] work in and around it in order to build
+[1044] something that is very custommade and I
+[1045] think there's a fair amount of potential
+[1047] there. So I think like yet to be seen
+[1049] what the success of some of these new
+[1051] neolabs looks like. What I will say is
+[1054] that the dollars are getting very large
+[1056] and the valuations are getting very
+[1058] high. And the question always ends up
+[1060] being how big of an outcome as an
+[1062] investor do you need to underwrite in
+[1063] order to invest in any of these? And
+[1065] like if you raise at a couple billion
+[1066] dollars, you have to underwrite a pretty
+[1069] massive outcome. And I think what makes
+[1072] these bats riskier is the fact that
+[1074] so many of these end up being research
+[1077] bets. And I think investors are
+[1077] certainly
+[1081] more hesitant to take research risk at
+[1084] at very high valuations versus take more
+[1086] execution risk. And yet yet to be seen
+[1088] how some of these things pan out. I
+[1090] think one of the things that I'm pretty
+[1092] excited about is the applications of AI
+[1094] and science and math and really like in
+[1097] in breakthroughs that will happen. And I
+[1099] I believe some some of this stuff is
+[1100] probably in the near term. And if that
+[1102] is true, then
+[1104] there are probably pretty massive
+[1107] companies to be built. But I I I assume
+[1109] that there is a certain slice of
+[1110] investors who are willing to take that
+[1113] risk and the majority are probably for
+[1116] large dollars at high valuations are
+[1119] still probably a little hesitant.
+[1121] &gt;&gt; Okay. Yeah. I mean, I guess I will say I
+[1123] I'm glad that people are continuing to
+[1126] make these high variance bets. Um, you
+[1128] know, I was, uh, quoted in this New York
+[1130] Times piece, uh, I guess taking the
+[1132] counterpoint to Yan Lun's rationale
+[1135] behind starting a new company. Uh, and,
+[1137] uh, you know, never a good idea to be a
+[1140] vocal critic of a godfather of AI, but
+[1141] I, you know, I was trying to make a
+[1143] more, uh, defensive point that LM
+[1145] actually are very capable and, and I
+[1146] think there's a well understood process
+[1148] by which we can make them more capable.
+[1150] So much so that we, we probably don't
+[1152] need, um, these high variance bets for
+[1154] for them to have tangible value. But I
+[1156] am glad like as a counterpoint I am glad
+[1159] that people are uh giving giving uh you
+[1161] know Yanukun and Ilia lots of money to
+[1164] try experiments because um I mean I
+[1165] think it's quite unique about I think
+[1167] the American capital structure system
+[1170] that um we can actually uh take big
+[1171] risks and potentially see big rewards as
+[1175] a result. No, totally that I agree and I
+[1177] think and I think
+[1180] if the promise of AI and and if the
+[1182] returns on AI are as big as the promise,
+[1184] then there is a pretty good chance that
+[1186] many and even if a small handful of
+[1188] these bets end up paying off, the fact
+[1190] that the the amount of impact in the
+[1193] world could be could be pretty massive.
+[1195] One of the things that that that is kind
+[1196] of the top of mind for so many for so
+[1199] many founders of the valley is um
+[1200] reinforcement learning and the impacts
+[1202] of reinforcement learning on making some
+[1205] of these models smarter and
+[1207] as somebody who is benchmarking many of
+[1209] these many of these more verticalized
+[1211] solutions. What are your thoughts on
+[1213] reinforcement learning as a technique?
+[1216] How people are utilizing it today?
+[1218] &gt;&gt; Yeah, I I mean I think reinforcement
+[1221] learning is everywhere. I think maybe a
+[1223] more precise question that I see is do
+[1225] we think that improvements will happen
+[1227] from reinforcement learning happening at
+[1230] foundation model labs or uh you know in
+[1232] some more specific capacity on open
+[1233] source models that are going to be
+[1235] deployed because like make no mistake
+[1236] there is uh reinforcement learning
+[1238] happening in pushing teams at every
+[1239] foundation model lab and they have a
+[1241] pretty close relationship with uh the
+[1243] big customers that are using them right
+[1245] and so if they find failure modes um
+[1247] they they will improve the underlying
+[1250] model and usually that has uh crossover
+[1251] effects and to other users and
+[1254] applications that uh will take advantage
+[1256] of that. So I I think like there's
+[1259] probably just two worldviews that are
+[1261] that that feel uh on on extreme ends of
+[1263] the spectrum, but you have these sort of
+[1265] god models uh which continue to be used
+[1267] and adopted in in very disperate ways
+[1269] that continue to see tight feedback
+[1270] loops with researchers at the labs and
+[1272] get better. And then maybe you have the
+[1273] more specific intelligence view of the
+[1276] world where maybe labs will slow down or
+[1277] they they won't actually care as much
+[1280] about some of these use cases or they'll
+[1282] have to prioritize actually improvements
+[1283] in one area will come at the cost of
+[1285] others. Uh and so for those reasons you
+[1288] would expect more specific intelligence
+[1290] models you know all applied compute or
+[1291] thinking machines and play folks like
+[1295] that. Um I mean I think fortunate for us
+[1296] our job is important in either
+[1297] situation. I think so long as there's
+[1300] not a single god intelligence that use
+[1302] everywhere all the time is there's no
+[1304] optimization process that has to happen
+[1305] uh you know there'll be interesting
+[1307] things for us to test and evaluate um
+[1308] but I think they are pretty different
+[1310] views of the world and you know the
+[1312] diplomatic view is or as you might say
+[1314] the procedural view that that I'll put
+[1316] forth is uh is that it'll be a mix of
+[1318] both and that you know there will be
+[1320] some domains which don't get as much
+[1322] appreciation from labs and specific
+[1324] intelligence is is uh I think the only
+[1326] path to have perform high performance
+[1328] tools. Um, and then others I think where
+[1330] your your cost or latency constrained
+[1332] and then again uh having some smaller
+[1334] open source model are all fine-tuned to
+[1337] to be applied is is a necessity.
+[1340] &gt;&gt; Yeah. And you talked to a bunch of these
+[1341] enterprises as a part of the go to
+[1343] market motion for for some of the
+[1345] customers that you have. How do you what
+[1349] has been the what percent of the
+[1350] enterprises or just what is your sense
+[1351] in terms of how many of them are
+[1354] actually using open source models versus
+[1356] closed source models and what do you
+[1357] think and and do you think that shift is
+[1359] is going to happen in the near term or
+[1360] do you think that's that's much further
+[1362] away and people are much more focused on
+[1365] intelligence versus the the the actual
+[1366] cost because of course the open source
+[1368] model lag the closed source ones. Yeah,
+[1370] I mean I think it is quite different
+[1372] between between verticals, but I'd say
+[1374] just as a sweeping statement, I think
+[1376] people would be surprised to see how
+[1378] little open source adoption there is
+[1380] happening in some of the verticals like
+[1383] legal, finance, healthcare. Um it's
+[1386] potentially because the sales teams in
+[1388] the the closed source labs are just so
+[1390] good at pounding all the doors and
+[1391] getting their models in and there's now
+[1393] a lot of consumer trust that's been
+[1395] built up by by using these tools over
+[1398] time. Um but I I think there are some
+[1401] cases where
+[1403] sorry part it's a too many late nights
+[1406] in in startup world uh starting to get
+[1408] on me but um yeah I think particularly
+[1410] in like the banking field and in places
+[1413] where they have been so uh intent on
+[1416] keeping uh onrem compute and and and
+[1418] running models locally um where where
+[1420] there's still need for open source
+[1422] models. I think there's also a little
+[1423] bit of an unfortunate paradox right now
+[1425] where the best open source models are
+[1428] actually all Chinese models. Last week
+[1430] we had Kimmy 2.5 come out is actually
+[1431] better than closed source models in some
+[1434] in some use cases. And so I think
+[1436] there's a lot of enterprise uncertainty
+[1437] as to whether or not we can actually
+[1440] trust those models to be used in places
+[1443] where we don't know exactly uh to what
+[1445] values they've they've been postrained.
+[1447] &gt;&gt; And what do you think makes some of the
+[1449] some of the labs better than the others?
+[1450] Because like you mentioned like most of
+[1452] the open source models are Chinese
+[1454] versus the closed source models which
+[1456] are at the frontier are of course are of
+[1458] course American but then even amongst
+[1460] the closed source models there are a
+[1461] handful of companies that are spending a
+[1463] lot more money on training than than the
+[1465] others versus and I think great example
+[1467] is probably Anthropic with coding which
+[1470] is anthropic has clearly been far more
+[1472] efficient than openai and some of the
+[1474] other labs. Why do you think that is?
+[1475] And what do you think differentiates
+[1478] Anthropics approach from OpenAI and even
+[1481] and and the approach of the Chinese open
+[1482] source models? And what what do you
+[1484] think makes makes them makes any of them
+[1487] better at some of these at at model
+[1487] training?
+[1490] &gt;&gt; Yeah, I mean I think it's uh I'm also
+[1493] going to try and uh not say anything too
+[1495] sensitive about our our like interaction
+[1497] to the labs and but I think if you if
+[1499] you look at the even external messaging
+[1501] of the labs, it's it's pretty different,
+[1503] right? in the in the way they position
+[1505] themselves and their priorities. And so
+[1506] I think you could probably take cues
+[1508] from that to figure out why does certain
+[1510] labs spend time on certain problems over
+[1512] others. Um and so if you just look at
+[1514] the words Daario is saying and the focus
+[1516] that he's laid out for the company, I
+[1517] think he's very clear and like it's not
+[1519] it's not it's not dubious for people
+[1520] within the company what they're
+[1521] prioritizing and what they should be
+[1523] working on at any given time. Um where
+[1525] whereas I think some of the other labs
+[1528] there's inherent confusion as to what
+[1530] the biggest priority is and like what
+[1531] they're okay being second place in and
+[1533] what they're not. Uh and these things
+[1536] may change very very very quickly. Um so
+[1538] you know I I I think that probably lends
+[1540] itself to an efficiency of the team that
+[1542] you you see borne out in the in the
+[1544] performance of models. Um, I think
+[1546] what's going on in China is also just
+[1548] can be categorically different. Like
+[1550] you, you know, we talked a lot about
+[1552] research and new labs getting formed in
+[1554] America, but I think the most
+[1555] interesting papers I've seen are coming
+[1558] out of China. Um, so if research is a
+[1560] function of papers published, um,
+[1561] there's there's a lot of good research
+[1564] happening in China. Um and and so I
+[1567] think there are people who are often
+[1568] resource constrained just in the number
+[1570] of GPUs that they have and it it forces
+[1572] them to make new innovations at kernel
+[1575] optimizations or an underlying arch arch
+[1577] architecture um which which I think
+[1579] amount to more interesting models that
+[1580] are produced.
+[1582] &gt;&gt; Yeah. And you bring up the point of
+[1584] compute which is which is of course very
+[1585] interesting because it feels like we're
+[1588] in the I mean we we we most definitely
+[1590] are in the biggest infrastructure bu
+[1593] build out of our lifetimes.
+[1595] Clearly with opens commitments they have
+[1597] showcased that compute is the big
+[1597] bottleneck.
+[1601] How do you think about compute and
+[1604] efficiency and what are your views on
+[1605] how much infrastructure and compute
+[1607] we're going to need over the next 5
+[1609] years and if there are going to be any
+[1611] efficiency gains?
+[1613] &gt;&gt; Yeah, I mean I think h this is really uh
+[1615] tough to reconcile. I mean, I think the
+[1618] other part is we've had a engineer who
+[1620] at the start of the year came to work
+[1623] with a Mac Mini and uh and very proudly
+[1624] said that he was but was by the end of
+[1626] the year going to automate his job uh
+[1629] with a with a Mac Mini. Um and so, you
+[1631] know, it's it's not going very well uh
+[1633] unfortunately still have to hire
+[1635] engineers and uh they can't automate
+[1638] themselves out of a job. Um but and
+[1640] actually the other interesting thing is
+[1642] he's recently switched from using
+[1645] locally running models to uh um to to
+[1646] actually just using codecs and cloud
+[1648] code and stuff like that. So, you know,
+[1649] I was going to basically say if the
+[1650] [clears throat] future of the world is
+[1652] everyone can have their own Mac Mini
+[1653] that's automating their work, then
+[1655] there's not that much compute needed,
+[1656] right? We could we could probably make
+[1658] enough Mac minis for everyone to have
+[1660] that level of compute on their desk.
+[1661] But, but I think if you if you think
+[1663] that we're going to have this continued
+[1665] dependency on codec cloud code, these uh
+[1667] basically data centers continuing to
+[1669] run, then just to serve inference, not
+[1670] even talking about training, we're going
+[1674] to need so much more compute, right? Um,
+[1676] and I think then if you if you view
+[1677] scaling laws and see that actually we
+[1678] want to keep seeing intelligence
+[1681] improvement by uh scaling the amount of
+[1682] training we can do, then yeah, I think
+[1685] we're going to see continued investment
+[1687] and and demand for any kind of compute
+[1689] that people can get their hands on.
+[1690] &gt;&gt; Yeah. And and I want to keep digging
+[1692] deeper into this infrastructure topic,
+[1694] but as a side note, cloud code has
+[1697] clearly taken off completely. Why do you
+[1699] think that is? because it it felt like
+[1701] six months ago cursor it was cursor
+[1703] cursor was the only thing that we could
+[1705] talk about and then and then of course
+[1707] cloud code has really picked up and now
+[1710] openai has showcased immense amount of
+[1713] focus on codecs what do you think is
+[1716] making cloud code just break out a
+[1717] breakout success
+[1719] &gt;&gt; yeah I think there's a lot of basic
+[1721] answers you could give around capability
+[1723] of the tool I think developers talked a
+[1725] lot about the level of abstraction like
+[1727] the the intuitive design to it And
+[1728] there's probably something about the
+[1730] post training team sitting right next to
+[1731] the people building the product. They
+[1733] can exchange uh prompts and instructions
+[1735] to build a effective tool. Actually, I
+[1737] think the answer I give is a little bit
+[1739] different. I think what they they've
+[1741] done very well is captured par in
+[1742] parallel ways a technical and
+[1745] nontechnical audience. So, you know, 6
+[1747] months, nine months ago, there was uh
+[1749] vibe coding tools like lovable and bolt
+[1751] and then there were developer focused
+[1753] tools like like cursor and wind surf and
+[1755] things like that. And I think cloud code
+[1756] has somehow managed to do both. Like
+[1759] engineers love this tool. It's a CLI. Uh
+[1761] and and the best engineers only working
+[1763] in the CLI and so they understand the
+[1765] interface very well. Um but then
+[1767] nontechnical users have a pretty
+[1769] friendly experience of effectively
+[1770] coding for the first time. And so I've
+[1772] had friends come to me and say, "Oh, I
+[1774] built this uh myself, you know, myself
+[1776] with with Claude." And so that's a new
+[1778] experience that they can have for the
+[1780] first time through this this chatbot
+[1781] type thing that they're starting to be
+[1783] familiar with. Um and so I think that
+[1786] has lent itself to a much larger larger
+[1788] audience of people who've uh bought felt
+[1790] bought in and felt love for the product.
+[1792] &gt;&gt; Yeah. And and and one of the things I've
+[1794] been thinking a lot about is like do you
+[1797] think this is like in in so many
+[1800] unexpected ways do you think AI enables
+[1802] so many more people to be entrepreneurs
+[1805] and founders people who before this were
+[1807] using uh I don't know Wix or one of
+[1809] these website builders in order to start
+[1812] their own consulting firms or or or or
+[1814] any of these small businesses. Do you do
+[1816] you think this could be the moment where
+[1818] the renaissance of um new crop of
+[1821] founders restarts?
+[1824] &gt;&gt; I mean that's a very optimistic take. Uh
+[1825] um so yeah maybe you want to get behind
+[1827] I mean you're seeing that with moldbook
+[1829] and stuff like that right? There's this
+[1832] uh a spur of open source projects which
+[1834] are getting a lot more attention and uh
+[1836] uh anyone can really contribute to. Um I
+[1839] I think the the potential pessimistic
+[1841] take would be though that it it takes
+[1843] you know more capital and uh resources
+[1845] than ever to do something really
+[1848] impactful. Um and so potentially like
+[1853] like for instance um if you have uh a
+[1854] more cynical take would be if you have a
+[1857] person they can actually uh address
+[1859] their legal issues themselves. They they
+[1861] can call language model and uh
+[1862] potentially resolve legal disputes
+[1864] without hiring hiring a lawyer or
+[1866] something super expensive. Um, but you
+[1868] could also potentially have a lawyer
+[1870] who's able to pay for a much more
+[1873] expensive AI model or like a a higher
+[1874] reasoning model that is able to just win
+[1877] more negotiations, win more disputes uh
+[1879] and and kind of overpower the the
+[1880] plebeian models that everyone else is
+[1882] using. And so I think it's like it's
+[1885] still pretty unclear to me whether uh AI
+[1887] is this tool which will empower a large
+[1889] base of people to be more productive, be
+[1891] more capable and advance in in the
+[1893] socioeconomic system or it's it's
+[1895] something which will on net just benefit
+[1897] people who are already you know wealthy
+[1899] well positioned to kind of further the
+[1901] position that they already have.
+[1903] &gt;&gt; Yeah. Yeah. And and and on the topic of
+[1905] AI agents and it it feels like
+[1908] everything is becoming a
+[1911] one, how do you think about evaluations
+[1913] for AI agents because that that that
+[1915] ends up being somewhat different from
+[1917] what the from what it looked like just
+[1919] 12 months before of how people are
+[1921] consuming AI and and how do you think
+[1923] the data flywheel that you've talked
+[1925] about for some of these frontier models
+[1926] and how they're making the models
+[1928] better, how do how does that fit into
+[1931] the entire picture? Yeah, I think about
+[1933] a year ago this was a very open question
+[1935] what Asian valuations look like. I think
+[1937] now there's a bunch of different working
+[1940] hypotheses and I'll I'll share ours. Um
+[1942] but uh so and so the way we view it at
+[1943] Val is really we're doing outcome based
+[1946] evaluation with some cost function. So
+[1948] you can view the agent as some system
+[1951] which can call tools uh take a bunch of
+[1952] turns and then finally make a submission
+[1955] or reach state of the world and we first
+[1956] order care about whether that state of
+[1958] the world is correct and accurate. Um
+[1960] and then you know conditioned on that
+[1963] what is the uh lowest cost or latency
+[1964] that we can see in reaching that
+[1967] outcome. And so those in that kind of
+[1969] prao plot you you care really about
+[1972] what's on the on the prao curve. Um and
+[1973] then I think once you have that you can
+[1976] dig into more of the actual trace uh and
+[1978] figure out what the model did along the
+[1980] way to arrive at that outcome mostly as
+[1982] an error mode analysis or a way to debug
+[1984] what what's going wrong. And so there's
+[1985] there's actually a great tool out there
+[1989] by Translucent which lets you basically
+[1990] dump a bunch of these traces into
+[1992] another language model and figure out
+[1994] what went wrong or or what worked, what
+[1995] was the behavior of the model itself.
+[1997] And so I think that is sort of the
+[1999] approach people are taking to building
+[2000] benchmarks, evaluating and then
+[2003] iterating um on on a lot of these uh
+[2006] agent workflows. The other question was
+[2010] &gt;&gt; on on the data flywheel and like and how
+[2012] big of an impact or I guess what what is
+[2014] what is so unique about some of the data
+[2015] that that uh some of the labs are
+[2017] collecting and how that that translates
+[2020] into these AI agents becoming better.
+[2022] &gt;&gt; Yeah, I guess you you're really incented
+[2023] to see as much of the real world problem
+[2026] as possible to to iterate. Like if you
+[2029] can see this uh this roll out and see oh
+[2030] it's making five web search tools that
+[2033] it could have actually just made two. um
+[2034] then that's that's kind of the reward
+[2036] signal that you want to make the the
+[2038] model as efficient as possible. Uh or or
+[2040] or in the other case where it's just not
+[2042] producing anything of substance, you can
+[2045] use expert traces or uh um you know kind
+[2047] of like the guidance of someone who
+[2048] successfully completed the task to
+[2050] inform the model how it how it should
+[2050] behave.
+[2052] &gt;&gt; Yeah. And it feels like I mean like of
+[2054] course like chat GPU was created by
+[2056] scraping the entire web and now we're
+[2058] going down this rabbit hole of what you
+[2059] were mentioning which is take these
+[2061] experts and basically and basically get
+[2063] these expert traces
+[2065] which is not very costefficient then
+[2067] there the question ends up being of
+[2069] synthetic data and like is there is
+[2071] there a path for models to actually end
+[2073] up using synthetic data or do you think
+[2075] do you think it it all ends up or or I
+[2077] guess I guess in the short term the
+[2079] focus is going to be on expert traces
+[2080] and along with that just on distribution
+[2083] which is if you can get your product in
+[2084] the hands of lots of customers, you can
+[2085] collect lots more data and then make
+[2088] your model a lot smarter.
+[2089] &gt;&gt; Yeah. By the way, just to clarify, I
+[2091] don't think CHBT was trained on the
+[2093] whole internet, right? Like even Chad
+[2096] GBT as we know it today had pre-training
+[2097] and training on the internet as one
+[2099] portion of it, but has also had
+[2100] significant breakthroughs in
+[2103] post-raining and and that RHF process to
+[2104] to build a chatbot we can actually
+[2107] interact with. Um so so like that I
+[2110] think not not to be underrated in what
+[2111] what that process entails as well. I
+[2113] guess your question is like where do we
+[2114] see continued improvement from here and
+[2116] do we have to take take new approaches
+[2117] to get there? You know I actually think
+[2119] what's most exciting right now is data
+[2121] efficient approaches. Uh, and so I think
+[2123] this is becoming a lot more common.
+[2124] Actually, you could, you know, talk to
+[2127] our friends at Flappy Flappy Airplanes
+[2128] about this. Um, because I think this is
+[2130] what they're looking at. But seeing what
+[2132] if you could train equivalently good
+[2135] models with much much less data. And
+[2137] that would be very interesting because
+[2139] for a model to learn new skills, it
+[2140] would similarly need not need it
+[2142] wouldn't need that many examples to be
+[2144] able to reach expert level. So, you
+[2146] know, potentially you're a banker or,
+[2148] you know, you're trying to uh upload
+[2151] this podcast and edit it. um but but
+[2152] don't want to have to give thousands of
+[2154] examples. You just show one successful
+[2155] example and then it should figure out
+[2158] how to do it. So I think there's
+[2159] exciting and actually you look at some
+[2160] of the deepseek papers, this is what
+[2162] they're uh they're kind of able to show
+[2165] show as well. I think if you're if
+[2166] you're looking for novel research
+[2168] directions, it probably in data
+[2169] efficiency where where we can see big
+[2169] breakthroughs.
+[2173] &gt;&gt; That makes a lot of sense. Uh I have two
+[2175] more questions for you. one is uh where
+[2177] which is the question where where all of
+[2179] this started which is uh how do you
+[2181] define AGI because as as an evals
+[2183] company uh I'm sure lots of people ask
+[2186] you which is the definition of AGI feels
+[2190] like uh it it changes everybody has
+[2192] their own definition how how does Val
+[2194] and you define AGI and do you think
+[2195] we're close
+[2197] &gt;&gt; yeah well if you're watching this and
+[2198] interviewing for valves this is a
+[2200] question I ask of every every candidate
+[2203] so I've heard lots of lots of responses
+[2207] is um yeah I mean I think to me AGI is
+[2209] is like pretty poorly defined and so I'
+[2211] I've written a bit of a blog post where
+[2213] I think if you look at the constituent
+[2215] parts you should view AGI as an index
+[2217] not as a binary and so we should speak
+[2219] in in in the form of this model
+[2220] expresses a greater degree of
+[2223] intelligence on greater uh spread of
+[2225] tasks and make it more general or you
+[2226] could say selectively it's it's more
+[2228] intelligent for a subset of tasks but it
+[2230] doesn't exhibit as much generality but
+[2232] to say this is AGI is akin to saying
+[2234] this child has height, right? It's
+[2236] height is a continuous me measurement.
+[2238] And so I think what's actually far more
+[2239] interesting for me to measure is
+[2241] something which a lot of people have
+[2242] talked about, Nick Boston in particular,
+[2245] is human level machine intelligence. Um
+[2247] when is it that that a machine is
+[2249] capable of reaching par with humans and
+[2251] I think that's really valuable because
+[2252] then you can see automation or
+[2255] efficiency gain thanks to using AI. And
+[2257] and I suspect that a lot of the economy
+[2259] today probably we have HLMI. It's mostly
+[2261] an adoption challenge for why we haven't
+[2264] seen um the the ROI in the you know the
+[2266] investment in foundation model labs. Um
+[2268] &gt;&gt; and do you include the and do you
+[2269] include the physical aspect because like
+[2271] so much of the economy is construction
+[2272] and and real world tasks.
+[2272] &gt;&gt; Definitely.
+[2275] &gt;&gt; Yeah. I I would I would consider the
+[2277] physical world as well I think but you
+[2279] know like we we do have Whimo type
+[2281] systems like I think you truck driving
+[2282] is one of the most popular jobs in
+[2284] America and probably could be automated
+[2286] within the next couple of years. So very
+[2288] very soon. I think a necessary part of
+[2290] the definition also with HLMI is that it
+[2292] changes and so it's possible that the
+[2294] work that people are doing in the next
+[2297] two years will change and so where we
+[2298] see the you know automation in the
+[2300] economy and and need to see models
+[2302] continue to improve will change as well.
+[2305] &gt;&gt; Yeah, makes sense. Last question which
+[2309] is uh and this is I I guess I'm going to
+[2311] ask this for every to every guest which
+[2313] is so what's your wild prediction for
+[2314] the year?
+[2317] &gt;&gt; Oh that's a good one. Yeah. Uh well okay
+[2319] so we this is kind of topical. We just
+[2320] released a benchmark last week called
+[2322] proof bench. Um where we're seeing
+[2325] whether models can uh solve these really
+[2327] challenging graduate level math proofs.
+[2329] Uh and it's the first time we're we're
+[2330] really able to assess the proving
+[2332] process as opposed to just the final
+[2333] answer because we're using a language
+[2336] called lean which is verifiable. Um and
+[2338] what we see is that currently the
+[2339] state-of-the-art foundation model is
+[2342] getting about 36%. There's a tool by a
+[2344] company called Aristotle uh which the
+[2346] tool is called Harmonic and it's uh or
+[2348] actually sorry flip that it's it's
+[2350] Aristotle by Harmonic uh and it's
+[2352] getting around 70%. So um I I'm pretty
+[2354] optimistic seeing these results. I I
+[2355] think by the end of the year uh we
+[2357] should expect to see some breakthrough
+[2359] in in math. Uh that's either coming from
+[2361] FIA model lab or or one of these math
+[2363] research groups like Harmonic or maybe
+[2363] Axiom.
+[2367] &gt;&gt; Awesome Ryan, this was so much fun. We
+[2368] should totally do this again. Thank you
+[2370] so much for coming on. Thanks for having
+[2373] me, Sh. This is fun. Feels like a
+[2375] continuation of a regular Tuesday night.

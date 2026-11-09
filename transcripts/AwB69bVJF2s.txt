@@ -1,0 +1,2529 @@
+[0] [Applause]
+[0] [Music]
+[8] this week on the change law we're joined
+[9] by Solomon hikes Solomon was the
+[12] original creator of Docker and now he's
+[14] back with his next big thing called
+[16] Dagger by the way we are users of dagger
+[19] we use it in production so check out our
+[21] code base if you want to see how it
+[22] works on today's show Solomon takes us
+[25] back to the docker days what it was like
+[27] to be on that 10year Journey
+[30] his transition from Docker to his next
+[33] big thing dagger he also shares his path
+[35] to get to today with dagger this
+[38] community-led growth model they're
+[39] running their extreme focus on open
+[42] source and community of course we talk
+[45] about how dagger works and we also bring
+[47] in Kelsey high tower to help us explain
+[49] things a massive thank you to our
+[51] friends and our partners at fastly and
+[54] fly this podcast got you fast because
+[57] fastly is super fast all all over the
+[60] world check them out at fastly.com and
+[63] our good friends at fly help us put our
+[65] app and our database globally close to
+[68] our users and they'll help you too with
+[70] no Ops check them out at
+[85] fly.io well I'm here with Richard moot
+[87] the API design lead for all of square
+[90] and we're talking about the graphql API
+[92] that is now in open Alpha looking for
+[95] feedback so Richard what's the story
+[96] with this API so we've announced this at
+[99] unboxed last year and we've been just
+[102] incrementally adding parts to our graph
+[105] API it's been a big ask from developers
+[108] within our community because it makes
+[110] using squares platform so much easier
+[113] for a particular things um you're no
+[115] longer having to like say call like
+[116] three or four different apis to like
+[118] pull together you know a bunch of
+[120] different data and so we've just been
+[122] trying to learn more and more like how
+[123] developers are are planning and using
+[125] this and making sure that we get this
+[127] right before we actually transition to
+[129] the next phase in its release so you
+[132] have the orders API out there the
+[134] catalog API the customers API the
+[137] merchants API the payments API the
+[140] refunds API and the inventory API out
+[143] there and you also have the graphql
+[146] Explorer out there tell me what what are
+[147] you expecting from developers what
+[149] feedback you want what are your
+[150] expectations I think our expectations is
+[153] to find out all the different ways that
+[155] you're using it and that we can make it
+[157] better for you I mean right now you know
+[159] we've we've gotten really good feedback
+[161] we have I mean as soon as I announced
+[164] the update to our docs that we recently
+[166] did the very first question that I got
+[167] on Twitter from someone was like when is
+[169] this going out of Alpha and so like
+[171] we're really happy to see that but we
+[173] also are still wanting to hear from
+[175] developers like you know you're you're
+[177] implenting this you're trying to build
+[178] something what is causing you angst like
+[181] what is why are you is it issues with
+[183] like constraints around query depths or
+[186] a number of queries is it fast enough
+[188] for you are you trying to use it in a
+[190] particular mobile app electron app or
+[193] something and like you know what what
+[194] issues are you kind of coming across and
+[197] like what how can we make it better and
+[199] I would definitely say that like um
+[200] anything that you come across when you
+[202] come and you try it out whether it's in
+[203] the graph kill Explorer in your command
+[205] line in your app we want you to reach
+[207] out to us on our Slack forums those
+[211] would be great you can also tweet at us
+[213] I I will definitely be keeping an eye on
+[215] that um but I will probably still always
+[216] say like hey like the forums are a great
+[218] resource cuz we have a lot of questions
+[220] that are already asked there and we
+[222] really just want to like funnel all that
+[223] feedback to the team so that we can get
+[226] this into there um in time to to make
+[229] this ready for the next phase very cool
+[232] okay so if you want to check this AP out
+[233] yourself go to developer. squareup.com
+[236] again developer. squareup.com
+[239] it is an open Alpha they're looking for
+[241] feedback hit them up on slack head to
+[243] the forums whatever works for you once
+[280] how many gamechanging ideas can one
+[281] person actually have do you know that
+[284] number is it 2 is it 4 is it 8 where
+[287] should we begin I don't know I I I have
+[290] no idea I ask myself that question a lot
+[293] you know yeah but yeah I don't know no
+[296] idea you think you got another one on
+[297] your hands here I mean this is your
+[299] second half oh yeah yeah totally so at
+[301] least two right there's well I feel like
+[304] you know actually I feel like
+[306] groundbreaking ideas you can have a lot
+[309] of the question is what can you do with
+[311] it you know how much impact can you have
+[313] with that idea like is the is the world
+[314] ready for more than one of your ideas
+[318] however groundbreaking you think they
+[319] are yeah you know so I got ideas there's
+[322] no problem there what to do with it
+[324] we'll see we'll see the last time we
+[327] talked to you at length was in your
+[330] Docker days I believe right like it I
+[331] mean well you've been on ship it you've
+[333] shared some of your dagger story there
+[336] we're going to act as if some of that
+[338] didn't happen not all of it so
+[339] definitely go listen that we'll link it
+[340] up in the show notes but Jared and I
+[342] want to spin our own version of that
+[344] here and here you know the story arc
+[346] essentially from changing the way devops
+[349] works with Docker to now attempting to
+[351] do it again or a version of it again
+[353] with dagger I mean how do you feel about
+[355] doer these days what's your what's your
+[357] stance on it are you still rooting for
+[358] him where you at Docker oh yeah totally
+[360] yeah rooting for Docker all the way I
+[362] mean you know there was a period of time
+[364] where I think everyone was worried that
+[366] it might not make it as a company uh I
+[368] was I mean I and of course I left but
+[371] now I mean it's doing well again and uh
+[374] I think for the right reasons like it's
+[376] now finally Docker is finally focusing
+[378] on the stuff that matters and now you
+[381] know kind of rebuilding from there which
+[382] is exactly MH what what they should be
+[385] doing have you ever share why you left
+[387] or versions of why you left or the
+[389] public version of why you left well yeah
+[391] there's a public ver I WR a blog post
+[393] mhm it's not that different from the
+[395] private version I mean it's complicated
+[396] but the short version that goes I think
+[399] closest to the heart of the matter is I
+[401] was very tired and it it was 10 years in
+[404] for me and a lot happened in those 10
+[406] years I went through a lot you know
+[408] personally and professionally and um
+[411] yeah you know whatever there was I'm
+[412] sure something happened a sequence of
+[414] events happened that were the last straw
+[416] at that particular time but really it
+[418] was just I was just tired ready to take
+[421] a break you know yeah well can you speak
+[424] to the struggle of that like the 10year
+[426] journey and just the the gamechanging
+[428] like I said how many gamechanging ideas
+[430] can one person actually have that's
+[432] actually a line from Silicon Valley
+[434] which I love which I did not catch but
+[436] it's true you know and so that was a
+[438] gamechanging idea Doner very much
+[440] changed pretty much everything for
+[442] deploying applications you know it's
+[444] it's the way you know and it still is
+[447] the way despite the company you know
+[449] struggles and now non- struggle from a
+[451] technology standpoint product Market fit
+[454] immediately with developers right for
+[456] sure and then only since then it's just
+[458] only been iterations on you know better
+[461] developer experience you know Etc CPU
+[465] changes across different development
+[467] environments all that good stuff but uh
+[469] can you speak to the struggle of like
+[471] that 10e Journey yeah well you know it's
+[474] funny because I I mean I started out
+[475] just a complete Outsider it's hard to
+[478] hard to Des described as how much of an
+[480] outsider I was I mean I graduated from
+[483] you know programming School engineering
+[485] school in France in 2006 and I was
+[488] obsessed with these kinds of things I
+[489] mean I was already on a track to
+[491] Containers you know I think 2007 is when
+[493] I started really messing with actual
+[495] container Tech and patching the kernel
+[497] and just kind of getting excited about
+[499] the possibilities in my young naive way
+[502] you know not not knowing that it was
+[504] impossible therefore doing it you know
+[506] that kind of thing but it was just
+[507] really that was the beginning of the
+[509] Sprint that little did I know would last
+[511] 10 years non-stop you know first 5 years
+[514] of just crossing the desert like
+[515] obsession with containers and the
+[518] possibilities and the ramifications and
+[520] literally nobody cares no one cared you
+[522] know that and then immediately like you
+[524] said like something changed and Everyone
+[526] Cared too much almost and then it was
+[528] another 5 years of just keeping up with
+[530] that I mean the the Common Thread was
+[532] just obsessive focus on that Tech that I
+[535] you know just had a gut feeling was
+[537] important but couldn't articulate
+[538] exactly why or how because part of it
+[541] because it was very new but also part of
+[542] it again such an outsider both me and
+[545] the founding team that I worked with
+[547] that we didn't have the tools to even
+[549] express in what way exactly it was
+[552] different or uh exciting you know for us
+[554] it was just all new all unknown we
+[556] didn't know which parts were new for
+[558] everyone and which parts were new only
+[560] to us because we were noobs you know it
+[562] was all just a big blur that came out of
+[564] Doc Cloud didn't it I'm trying to get my
+[566] my ancient history back out again so
+[568] when you said you know great ideas
+[570] wasn't like I thought maybe you were
+[571] talking about app.net wasn't app.net ADN
+[573] was that a thing is that a do Cloud
+[575] thing or am I no that app.net was not me
+[577] okay Cloud was me app.net was Dalton
+[580] calwell yeah D yeah exactly yeah yeah
+[582] he's now I believe a partner at YC or
+[585] yes in fact he was our partner for the
+[587] YC batch in 2019 that dagger went
+[589] through yeah okay so why am I
+[591] associating those two things together
+[592] just the dot maybe I thought that was
+[594] like all one big dot yeah well the the
+[597] dot and Dot cloud well that name was
+[599] inspired by net you know the general
+[602] aspiration was and that cloud you
+[604] basically was the the name of the
+[606] company before we were named a Docker
+[608] and you know we went through a bunch of
+[609] different products but basic it was all
+[611] Container stuff but the aspiration
+[613] behind the name the potential wasn net
+[616] at the time for me it symbolized sort of
+[619] you know a
+[620] successful New Standard you know a new
+[623] layer in the stack that abstracted away
+[625] something that it was useful to abstract
+[627] away in the case of dnet it was like all
+[629] these different architectures I guess
+[631] you know you just you wrote your code
+[633] out of net apis and then your thing
+[635] could just you know was floating on this
+[638] portable platform you know it was
+[639] abstracted away from the messy details
+[642] you know and it was a new more powerful
+[645] programming model y y y so in my mind
+[648] with containers there was the potential
+[649] to do the same thing but for the cloud
+[651] you know like abstract away all the
+[653] messiness insert a new layer that
+[656] actually helps you know a real
+[659] abstraction layer not a terrible one
+[661] which is hard you know it's rare that
+[663] there's a lot of terrible abstraction
+[665] layers every once in a while there's a
+[667] useful one and it felt like okay
+[668] containers could be that you know and
+[671] that's really the core of when people
+[673] say containers already existed before
+[675] Docker blah blah blah right yeah so
+[677] that's the thing that did not exist no
+[678] one was thinking of them as a an
+[680] additional layer it was a spectrum of
+[682] virtualization you had the the
+[684] heavyweight VMS and then you had the
+[685] lightweight VMS but everyone thought of
+[687] them as you choose one you know it's a
+[689] trade-off but it's still like a machine
+[692] virtualized versus admins and then the
+[695] application people do things on top and
+[697] that's it and now we can't imagine the
+[698] world otherwise right I couldn't imagine
+[700] running an application on a desperate
+[702] version of Linux pick your drro and have
+[704] multiple applications run at the same
+[706] time and and trying to manage those two
+[708] two environments simultaneously it's
+[710] just like why would you do that you know
+[712] you don't have to obviously like and and
+[714] for a while there we did right we would
+[716] actually literally either have a VM and
+[719] then Place her application on that like
+[720] a virtualized machine you know and have
+[723] different machines with different IP
+[724] addresses and then work them together
+[726] you still have networking but then you
+[727] have it at the docker layer a shared
+[729] mesh Network and you can even do that in
+[731] Docker compose and create networks it's
+[733] like you know that's how it should have
+[735] been so thank you for those five long
+[738] hard years and the Really the 10-year
+[741] Journey because I mean if you didn't
+[743] have that Curiosity and you weren't
+[744] willing to chase it we wouldn't have
+[746] Docker today so thank you well I I
+[749] appreciate it I feel like these good
+[751] ideas they're when they're ripe you know
+[753] someone would have figured it out in in
+[754] a different way you know we were we were
+[756] getting there we were really close in
+[758] fact you know what the the core Docker
+[761] Community when that I think one of the
+[763] Sparks when we open sourced it and we
+[765] started shopping this idea of open
+[767] sourcing it you know because that's what
+[768] the pivot was do Cloud was basically a
+[770] heroa competitor it was same container
+[773] Tech but bundled it to this big
+[774] monolithic platform that he had to sign
+[776] up for and we had customers but you know
+[779] there was a lot of Hoops to jump through
+[781] and then we started talking to a few
+[784] hardcore container people people who got
+[787] it you know they were already developing
+[789] their own container based thing so that
+[791] was kind of a really tight-knit group of
+[793] people people worked at Heroku and other
+[795] places started showing them this
+[797] prototype of just spinning out the core
+[800] container Tech in a way that you could
+[801] use it yourself and build stuff for
+[803] yourself and that core community that
+[806] was it was all people who were following
+[808] some sort of a parallel track you know
+[810] so for sure let's say I'm not there you
+[812] know uh you know dot the do Cloud crew
+[815] is not there then one of them would have
+[816] figured it out but what happened is we
+[818] figured it out together anyway because
+[819] they joined the docker community and
+[821] they we built Docker together some of
+[823] them actually shut down their own kind
+[826] of early prototypes of something that
+[828] looked kind of similar others were
+[830] thinking about it but never got around
+[832] to it and then there was the repo you
+[834] know oh I'm going to go Join This Crew
+[836] so it was like a mly crew of Open Source
+[838] people yeah and that started that was
+[840] really when it started becoming an
+[842] emerging standard right cuz you have the
+[844] whole point of Docker is that you got to
+[846] standardize it you got to get everyone
+[848] to agree to use it otherwise it's
+[850] pointless it could be technically
+[852] brilliant it doesn't matter so the
+[854] getting a lot of people to adopt it is
+[856] part of the design process and so when
+[858] those first what 20
+[860] people have joined that repo and that
+[863] little IRC Channel at the time you know
+[865] that was really that was the key feature
+[867] that was missing I think I mean of the
+[869] key features mhm there's a phenomenon I
+[871] think it's called Uh multiple Discovery
+[874] I think or simultaneous invention right
+[876] and you're kind of speaking to it not
+[878] not necessarily what happened in your
+[879] case but you're saying like somebody
+[880] else probably would have discovered this
+[882] you know it was definitely you could
+[883] tell it was in the air you could tell it
+[885] was bubbling yeah it's kind of a cool
+[887] thing where like independent groups at
+[889] the same sort of General time are all
+[891] kind of in the same thought space and
+[893] tend to land on either side of a
+[896] discovery uh somewhat close to each
+[897] other so yes we may have had something
+[900] like Docker had you not done what you
+[902] did but nonetheless you did what you did
+[903] and now it's here and we're all much
+[905] better off for it right so that's why we
+[906] say thank you he just took all that
+[907] credit right back Solan geez I just gave
+[911] you all this credit he's like just
+[912] taking it right back no no I'll I'll
+[913] take the credit but it's it's it's
+[915] really it's an interesting topic because
+[917] it's tied to why Docker actually
+[918] succeeded we right we identify that and
+[921] capture it too you know that okay
+[922] there's a community the word Community
+[924] is really important forer and what you
+[927] just said that phenomenon that led to
+[929] the kernel of a community basically
+[931] right and isn't that kind of like liting
+[933] in a bottle to a certain extent I mean I
+[935] guess you're you're you're discovering
+[937] if that's true or not now with dagger
+[938] because you kind of want to do the same
+[940] thing at least with the community again
+[942] you want to do that again but in a
+[943] different area and is it can you just
+[946] repeat can you put it on repeat like you
+[947] can your favorite song that's something
+[949] I think about a lot and we talk about a
+[951] lot with my co-founders right who by the
+[953] way were part of the founding team you
+[955] know they were they were the earliest
+[956] employees
+[957] atcloud and Liv through the pivot two
+[960] Docker with me and then you know so we
+[962] shared quite a bit of that Journey yeah
+[964] so we talk about that a lot you know a
+[966] lot of time together I mean all things
+[967] being equal would we love to go through
+[970] the same magical moment where the whole
+[972] world decides our thing is the thing
+[974] yeah who wouldn't but do we want to
+[976] build you know if you're building a new
+[978] thing do you want to make that a
+[981] condition of your success no right you
+[984] can't rely on it so you don't want it to
+[985] be a condition can't rely on it yeah uh
+[988] I mean there's a whole topic I mean I'm
+[989] happy to go into it but our process a
+[991] dagger of sort of managing that and
+[994] setting expectations and just finding
+[996] our own path but also not discarding all
+[998] these useful lessons from you know just
+[1001] the most defining professional
+[1002] experience of our lifetime you know it
+[1005] just kind of defined us professionally
+[1007] there's so much to learn so you want to
+[1009] mind that but you also want to forge
+[1011] your own path so there actually we've
+[1013] started out going in a very different
+[1015] direction and now we're actually ironic
+[1018] getting pulled into a community Le path
+[1022] more and more it's just you know at some
+[1024] point you know when someone like when
+[1026] you hear a real story and you know the
+[1028] joke would be well if you pitch that as
+[1031] a script it would just you know it would
+[1032] never fly but you know if that's what
+[1034] happened you know you can't argue with
+[1036] reality this is kind of the same thing
+[1038] where it feels like with dagger we're
+[1040] increasingly getting pulled into a path
+[1041] to basically finish what we started with
+[1044] Docker you know and it's almost too on
+[1047] the nose but it's just literally through
+[1050] years of incremental user Discovery and
+[1053] just spending time with users and
+[1054] shipping things and just working on the
+[1056] product and just itera we just kind of
+[1058] get pulled into that so what exactly is
+[1061] dagger can you explain can you give us
+[1063] the 30,000 foot view of of dagger and
+[1066] what it is today or how it began where
+[1068] have you want to begin well I'll start
+[1070] with just a big problem that we're
+[1071] seeing and that we think we can
+[1073] contribute at least to solving um
+[1076] basically I mean a lot of things changed
+[1078] in the Cloud landscape let's say you
+[1080] know lots of great developer tools lots
+[1081] of great infrastructure but what has not
+[1083] changed that much is how terrible the
+[1086] delivery process in between is so you've
+[1089] got great developer tools you're
+[1090] shipping great code it's right there and
+[1092] then you got this really scalable Cloud
+[1094] infrastructure ready to you know run
+[1097] anything but in between the pipelines
+[1101] are just still the same mess of shell
+[1103] scripts and yaml and and just a million
+[1107] like you know a million AR isal scripts
+[1110] and those things break they waste the
+[1112] team's time that's just kind of the
+[1115] problem we got pulled into because
+[1117] whatever else we pitched and showed and
+[1119] demoed you know people like oh that's
+[1121] great that's great yeah yeah um can you
+[1122] help me with this my deployment can you
+[1124] help me with my build and test and
+[1126] deployment pipelines and like there's
+[1128] just a long list of terrible terrible
+[1130] things about them and it's Universal too
+[1133] small teams fast growing teams
+[1135] Enterprises it's just terrible so
+[1137] generally speaking we've been focused on
+[1139] solving that uh and then we have a
+[1141] specific opinion on what needs to be
+[1144] done to solve it but the big picture is
+[1146] you know delivery of applications of the
+[1149] cloud if you zoom out and you remember
+[1151] what it was supposed to be you realize
+[1153] we've been sort of settling for
+[1155] something that's not that something
+[1156] that's really quite bad and we shouldn't
+[1159] so so what are the things that you are
+[1160] running from at Docker that you're now
+[1162] kind of running towards I guess through
+[1165] you've talked about it but what like if
+[1166] you can get specific on those things
+[1168] what is it well one was open
+[1170] source okay uh and the other was what I
+[1173] would call community-led growth where
+[1176] you focus on growing a community of
+[1178] people that share a common Bond a common
+[1181] excitement for you know a vision a cause
+[1183] a movement and only then do you plug
+[1186] products adoption and growth into that
+[1189] from the point of view of a business
+[1190] right and I mean everyone says yeah we
+[1192] have a community and yeah Community is
+[1193] important but to actually say the top of
+[1196] my funnel like the you know for my
+[1198] funnel to grow as a business people
+[1200] using my my product people paying for it
+[1202] people buying more of it over time for
+[1205] that to
+[1206] require that individuals on their spare
+[1209] time are going to wear your swag and log
+[1213] into your Discord and write a blog post
+[1216] on their personal time about how great
+[1217] you are and just like annoy the hell out
+[1220] of all their friends talking about you
+[1222] know how great your your thing is and
+[1225] not just the product just whatever the
+[1227] idea is behind it I mean that's kind of
+[1229] a big bet to make right and we're now
+[1233] doing both of these things we're
+[1234] shipping a product that's not 100% open
+[1236] source it's two parts but the engine is
+[1238] open source and you can go I mean you
+[1241] can do a lot there's a whole community
+[1243] of people second part built around
+[1246] contributing to it running it
+[1248] programming it runting code on top of it
+[1250] and um yeah so we're now 100% Community
+[1253] Le and the core engine in our product is
+[1257] open source so the the opposite of what
+[1259] we were hoping to do the first thing we
+[1261] shipped was completely closed source and
+[1263] it was just just another SAS product
+[1267] that told you why you should use it and
+[1270] you could sign up and you know if you
+[1272] liked it use it more blah blah blah
+[1274] turns out I guess I don't know that's
+[1275] just we're not meant to build like a a
+[1279] normal product with a normal funnel yeah
+[1283] I kind of wish we were cuz it's it
+[1284] sounds simpler but I just I don't know
+[1286] it just never seems to happen so
+[1288] there's so much um so many more
+[1290] variables in this direction right like
+[1293] if you if you could just go make a good
+[1295] product be proprietary and you have
+[1297] value and say Here's my price for this
+[1299] value and you know you use the software
+[1301] and you you scale your user base or and
+[1303] you get the value said that's somewhat
+[1304] the easy button with this path there's
+[1306] so many more variables because you can
+[1308] go down roads Community wise have an
+[1310] amazing time but like you said at the
+[1312] end it may not be that valuable of a
+[1315] thing you may chase the wrong Rabbit
+[1317] Hole so to speak yeah exactly which is
+[1319] exactly why we didn't start there right
+[1321] you know and yet we're being pulled into
+[1323] it you know over years I mean we want we
+[1325] started working on this four years ago
+[1327] now and you know at the beginning it was
+[1329] just tinkering prototyping we were in no
+[1331] rush but I mean we've been working quite
+[1334] seriously on it for several years do you
+[1336] have investors we do how do they feel
+[1339] about this change in Direction because
+[1341] this is a pretty big this is drastically
+[1342] different than proprietary SAS to this
+[1345] Direction I mean if I gave you money at
+[1347] the proprietary SAS stage I might not be
+[1348] like hm do I still yeah do I still like
+[1351] that decision no it hasn't been an issue
+[1353] because um well we raised a seed round
+[1356] and then we raised a series a okay and
+[1358] our seed round we raised I mean 100% on
+[1362] hey it's the docker teams next thing
+[1365] right you know I mean I would invest in
+[1367] that you know as a as a I mean you
+[1369] there's a premium for experienced teams
+[1371] with their track record of success and
+[1373] the earlier stage it is the the more
+[1375] important that is because everything's
+[1376] unknown anyway right so that's never
+[1378] been an issue I mean the new wave VC
+[1380] team just to name them and you know we
+[1382] have a bunch of really cool Angel
+[1383] Investors they're just you know you're
+[1386] the team we want to fund go you know and
+[1388] then Erica Brasa at Red Point LED our
+[1391] series a and she's also awesome and had
+[1394] she invested before we switched to open
+[1397] source I'm confident she would have said
+[1398] the same thing but she didn't have to
+[1400] because we launched our open source
+[1403] thing and raised our series 8 pretty
+[1404] much at the same time so we had already
+[1406] made that switch you know gotcha yeah so
+[1409] she was on board with that from day one
+[1411] M what was the poll then so you try to
+[1413] resist it you obviously I mean open
+[1416] source was lightning in a or community
+[1418] at least Docker Community was lightning
+[1419] in a bottle open source made you know
+[1422] product ising Docker and stuff more
+[1424] difficult Etc you said I'm going to
+[1426] start a new thing different direction
+[1428] close Source SAS and yet here we are you
+[1432] said you've kind of just been pulled
+[1433] that way you just kind of end up that
+[1435] way was there like clear indicators was
+[1438] your community like you know where
+[1440] people banging down your door open
+[1441] source it or was just like an internal
+[1443] your team just had to let it free what
+[1445] were the indicators that made you change
+[1447] your mind I think it's fundamentally a
+[1449] design problem you know we just spend
+[1452] enough time focused on the problem we
+[1454] want to solve which again is application
+[1456] delivery is terrible and then we really
+[1458] just spent enough time focused on why
+[1461] and how to fix it like what's the
+[1462] fundamental thing that has to change how
+[1464] come no one's fixed it I mean how many
+[1466] hundreds of St startups and big Tech
+[1469] products are there that aspire to
+[1472] improve application delivery there's so
+[1474] many and many of them are awesome you
+[1476] know and I'm casting a really wide net
+[1479] here you know but Heroku remains awesome
+[1483] all the hash the hashy Corp tools all
+[1485] these CI platforms you know what I mean
+[1487] there's a lot of tools and so what's
+[1490] like why is it still terrible and so we
+[1492] kind of just zoom honed in on that
+[1495] problem and looked for okay what's the
+[1496] fundamental thing that still not solved
+[1499] and that we can solve and I and and we
+[1501] got an answer and from that answer then
+[1504] everything else flows you know okay
+[1507] what's the required solution how do you
+[1508] design it what components does it need
+[1510] and just to summarize the reason it's
+[1513] terrible is because it's fragmented
+[1515] because there's no unified platform
+[1518] underlying it where you can actually
+[1520] connect all the pieces there's no such
+[1523] thing right so you basically need I mean
+[1524] we call it the devops operating system
+[1526] internally I mean there's a million
+[1527] slide decks okay that have this
+[1529] aspiration it's easy to say oh we're
+[1530] going to roll all that stuff up and
+[1533] we're just going to unify it under one
+[1534] platform of course it one's going to
+[1535] everyone thinks they're going to do that
+[1537] but you two know I'm sure just how many
+[1539] have actually tried and they've all
+[1541] failed right because they're doing it
+[1543] wrong and we're so smart we're going to
+[1544] do it better I mean that's you know of
+[1546] course I'm going to say that but I think
+[1548] it boils down to even with Cloud we
+[1550] tried also the P that's what Pas was
+[1553] about you know the platform that you
+[1555] just run all the stuff on and it failed
+[1557] because it just became one more frag you
+[1560] know one more Silo in uh in the notion
+[1562] of silos I think really the core of the
+[1565] problem is you got to think of it as a
+[1567] as a software problem you know think of
+[1569] your whole software supply chain as a
+[1573] really complicated application you know
+[1575] it's it's a factory that ships your
+[1578] stuff that's made of coded someone's
+[1580] going to run it and improve it and
+[1582] that's a programming problem so if if
+[1584] you want to be a platform you got to be
+[1586] an operating system that's the only real
+[1588] platform there is something you can
+[1589] actually write code for Windows is a
+[1592] platform iOS is a platform Heroku is not
+[1595] a platform and neither was do Cloud
+[1598] because you can't write code for it so
+[1599] you need to be able to program all of
+[1602] that so from there uh that means you
+[1604] need some sort of an API that can
+[1606] somehow cover that breadth of
+[1607] functionality right all these pipelines
+[1610] and from there you need sdks developer
+[1613] resources you need developer communities
+[1615] you need an ecosystem of code for your
+[1617] plat platform and the means to exchange
+[1619] them you basically need a whole like
+[1621] it's an operating system play you know
+[1623] those are really hard and back to the
+[1626] your question if this is really an
+[1628] operating system play we're trying to
+[1630] take the whole software supply chain all
+[1632] of it and somehow make it programmable
+[1634] and and give you the OS to program it
+[1636] and run it which is an ambitious thing
+[1638] to do the key to an operating system
+[1641] success is the number of developers
+[1643] writing original code for it you know
+[1646] that's the only thing that matters so
+[1647] you need an ecosystem of code and in
+[1649] there there's code that could do amazing
+[1651] things that no one else has because it
+[1654] only works on your platform right and
+[1656] then you have a then you have possibly a
+[1658] hit on your hands you know but so how do
+[1660] you bootstrap that well you you got to
+[1662] do a lot of things right like a it's got
+[1664] to actually work and do the thing better
+[1667] than everyone else etc etc but also none
+[1670] of that matters if you don't have that
+[1671] developer ecosystem early adopters need
+[1674] to love it right right so we just kind
+[1676] of reached the conclusion that in this
+[1677] day and age for this audience of a
+[1680] developer Community because we want to
+[1682] take basically what you would call to
+[1683] the devops community and turn them into
+[1686] an actual developer Community you know
+[1688] instead of scripting and half scripting
+[1690] half administrating half configuring I
+[1693] guess those are three halves but you
+[1694] know these these tools all of a sudden
+[1696] we want them to be programmers I'm I'm
+[1699] programming my supply chain here you
+[1700] know that's the journey we want to take
+[1703] the devops community on but we can't do
+[1705] that if the thing you're programming
+[1707] doesn't have an open source the sdks the
+[1710] engine the you all that's got to be open
+[1712] source it's just not possible otherwise
+[1714] not for us maybe for GitHub it's
+[1716] possible to try you know hey here's
+[1718] GitHub actions they can build a
+[1720] developer Community around GitHub
+[1721] actions because they're huge you know
+[1723] cloud formation is another example it's
+[1725] kind of programmable I would put in that
+[1727] bucket you know so sure there's a
+[1729] there's a developer ecosystem around
+[1731] cloud formation but even in that scale
+[1734] you notice that in spite of cloud
+[1736] formation being quite quite powerful and
+[1738] now you have all these layers the cdks
+[1740] and all of that it's really I feel like
+[1742] you can tell that the fact that it's
+[1743] fundamentally proprietary Silo is
+[1746] limiting the growth potential of the
+[1749] developer ecosystem behind it it's a
+[1751] massive product you know massive but it
+[1754] will I think you can you can build a
+[1756] developer community in that space that's
+[1758] orders of magnitude larger but it's got
+[1761] to be not tied to the proprietary Silo
+[1764] on that way so so that led us to open
+[1766] source and from there we as we quickly
+[1768] realized if you're doing your job well
+[1771] building and supporting an open-source
+[1774] platform and you want an ecosystem of
+[1777] software well then between your platform
+[1780] and that ecosystem of of software for it
+[1783] you need a community of developers or
+[1786] just pumped right to write code for it
+[1788] and hence the community play like so one
+[1790] thing led to another basically gotcha so
+[1792] it comes down to the design very long
+[1793] answer yeah I followed though I think it
+[1796] was good yeah very good good a lot of
+[1798] nuance in there yeah but it was design
+[1800] driven it was because of the problem
+[1802] you're trying to solve informed the
+[1803] design which is like an operating system
+[1805] which has to be a platform which has to
+[1807] be open source or where you're not going
+[1808] to get Buy in and you're not going to
+[1810] get the software that runs on it or runs
+[1812] against it or is programmed for it and
+[1814] so you were kind of barking up the wrong
+[1816] tree you had a solution to the wrong
+[1818] problem now you've identified the
+[1819] problem and you feel at least you have a
+[1821] strategy which turns out is the exact
+[1823] similar strategy of the last great idea
+[1826] because Docker really started out trying
+[1829] to solve the exact same problem right
+[1831] you know so this is like your second at
+[1833] bat then yeah I think so I'm now I'm I'm
+[1836] now at peace with that uh how long take
+[1839] you to get there I tried really hard to
+[1841] prove that that's not I was what I was
+[1843] doing okay but you know if if why I
+[1846] don't know well well first of all I mean
+[1848] who it took a long time to figure out if
+[1851] what the problems were that were left to
+[1853] solve I didn't leave Docker assuming it
+[1855] had failed to solve the problem right I
+[1858] left Docker assuming I was really tired
+[1860] I wanted to take a break you know and
+[1863] then later I caught up with Sam and
+[1865] Andrea my co-founders you know and we
+[1867] got excited about doing something
+[1869] together and that was the focus just
+[1872] getting back building something together
+[1874] you know being out there talking to
+[1875] people about their problems and so you
+[1877] just you set out the sell with a new
+[1879] ship you know we didn't start with the
+[1881] destination we started with you know the
+[1882] ship and the crew let's go let's go
+[1884] sailing and let's figure out where we go
+[1885] you know so that that that it's a
+[1887] process you got to right go through the
+[1889] emotions and over time you figure it
+[1898] out this episode is brought to you by
+[1901] passbolt it is time for a new password
+[1904] manager this time Security First open
+[1907] source and with radical privacy passbolt
+[1910] is trusted by 15,000 worldwide companies
+[1914] universities startups and many others
+[1916] you could use it on Prem for total
+[1918] control or use their cloud service what
+[1920] makes passbolt different the tldr is
+[1923] more security and better collaboration
+[1925] they are radically secure they believe
+[1927] that any honest discussion about
+[1929] password managers must be heavily
+[1931] focused on security and while most
+[1933] passport managers Focus primarily on
+[1935] individuals passport goes a step further
+[1938] developing a platform that meets the
+[1939] needs of organizations as well as teams
+[1942] and privacy is in its DNA their
+[1944] headquarters in the EU specific
+[1947] spefically in Luxembourg privacy is not
+[1949] only a top priority it is required by
+[1951] the law check them out at passport.com
+[1954] again passport.com
+[1979] I guess to a certain degree you have to
+[1981] kind of admit that you failed the first
+[1982] time around too right like you don't
+[1983] take a second swing if you hit the home
+[1985] run the first time now maybe personally
+[1987] financially you hit the home run but
+[1988] like in terms of solving the problem you
+[1990] know second at bat means I I struck out
+[1993] to a c or you know maybe I hit a blooper
+[1994] to left field they caught it yeah I
+[1996] think while there's two things there me
+[1998] personally I mean there's definitely a
+[1999] lot of things I would do differently and
+[2000] I think Docker as a company I'm so happy
+[2003] that it gets a second chance yeah and
+[2005] this is a real second chance I mean I've
+[2006] seen MERS Docker is a really successful
+[2008] business now so now it's you know up to
+[2011] them to keep going but I'm really glad
+[2014] because boy was that a missed
+[2015] opportunity I mean I think I think
+[2018] Docker at least was a new red hat or
+[2019] VMware and that's pretty big already and
+[2021] I say at least because I think it could
+[2023] have been more but you know we kind of
+[2026] we made a bunch of very avoidable
+[2027] mistakes and I won't go into that but so
+[2029] there's a sense of failure for sure and
+[2031] trying to learn from them and then you
+[2033] know do better the next time me
+[2035] personally sure uh separately I think I
+[2037] do think in terms of the opportunity for
+[2040] dagger those two things are separate in
+[2041] my mind I think Docker was widely
+[2044] successful in adding a layer of
+[2047] standardizing something and creating out
+[2049] of ther a whole ecosystem that's
+[2052] building tons of amazing things on top
+[2055] of that standard MH and now because
+[2058] Docker and the whole ecosystem around it
+[2060] including of course the communities
+[2062] universe but it goes Way Beyond
+[2064] communities in my mind there's just a
+[2066] it's so massive now all these
+[2069] opportunities appear to solve the next
+[2073] stage of the problem that's kind how I
+[2074] think about it and and Dagger is
+[2076] entirely built on containers so it's
+[2079] 100% impossible that dagger would exist
+[2082] if Docker didn't PVE the way first so
+[2084] really for me it's like finishing what
+[2086] we started you know yeah yeah yeah so
+[2089] but would would Docker in an alternate
+[2091] universe where Docker just just crushes
+[2094] it as a company the first time and just
+[2096] grabs the opportunity and just like this
+[2098] just does an amazing job executing after
+[2103] the standard takes off right would it be
+[2105] Docker doing this I mean
+[2107] maybe right sometimes I'm like maybe
+[2109] Docker should be doing some of what I'm
+[2110] doing I don't know but they're busy with
+[2112] other things so so to to fit my baseball
+[2114] analogy then it's not like you struck
+[2116] out it's like you hit a double and
+[2117] you're coming back up to bat now you're
+[2119] going to knock yourself home you know
+[2120] like you get a second at bat but it's
+[2121] not like you're out the first guy he's
+[2123] on second base he had a great run he
+[2125] he's a building block towards scoring a
+[2127] run and now it's time to score the Run
+[2128] yeah I think that's right we love
+[2129] baseball around here by the way yeah I'm
+[2131] a fan always trying to hit uh home runs
+[2133] base it's all about the base hits get on
+[2135] base that's right that's key lots of
+[2136] singles add up you mentioned GitHub
+[2139] actions earlier is GitHub actions is it
+[2142] a competitor to dagger is do they work
+[2146] to I mean because I know that we are
+[2147] using dagger because our friend Gart and
+[2150] our president Sr and the the host of
+[2152] shipet and on AR kaisen he's a dagger
+[2154] guy he works for you Solomon and he's
+[2157] very excited about that and he has us
+[2158] running dagger I've peaked at it I know
+[2160] it does some things but we're also using
+[2162] GitHub actions and I'm like I think a
+[2165] lot of us try to understand when you're
+[2167] creating something new like what can I
+[2169] proxy it to that I do understand is
+[2171] GitHub actions a good proxy for dagger
+[2173] or are they two different things
+[2174] entirely they are different things but
+[2176] they are related so we they're
+[2178] complimentary okay and you're not the
+[2180] only one who was not 100% sure I mean
+[2182] that's it was similar with containers in
+[2184] the early days you know it was it was so
+[2186] new that you kind of there was sort of a
+[2188] problem of it it doesn't fit neatly in
+[2190] any specific box so most of the time
+[2195] when I'm you know advocating for dagger
+[2197] in whatever way explaining pitching
+[2200] whatever I'm usually spending more time
+[2202] on the category and where at fing the
+[2205] and whether it's better than x y or Z
+[2207] sure so get up actions plus dagger is a
+[2209] very common combination and the best way
+[2211] to summarize what we do just stepping
+[2213] back uh is we basically give you way to
+[2217] standardize all your pipelines and
+[2219] connect them all into a dag and have
+[2222] that dag be the new layer at which you
+[2226] do a whole lot of important things that
+[2228] have to do with delivering the
+[2229] application you know like orchestrating
+[2232] Imaging your builds and your tests and
+[2234] your deployments and all the other
+[2236] workflows that are involved that usually
+[2239] happen across several different
+[2241] environments the developers local
+[2243] environments the ml teams local
+[2245] environments the CI environment the
+[2248] production environment those
+[2250] environments are like silos and the
+[2252] problem is that your dag really needs to
+[2255] connect all of them because they're
+[2256] dependencies right step back demystify
+[2258] dag dag 101 just for the uninitiated
+[2261] yeah a dag is a data structure really
+[2263] it's a graph of interconnected nodes
+[2267] where data Flows In One Direction so the
+[2269] the best analogy is a factory you know
+[2271] like picture the workstations and the
+[2274] conveyor belts of the factory you know
+[2276] that structures turns out a dag is a
+[2277] great way to model lots of things it's a
+[2279] great way to model the layout of a
+[2281] factory it's also a great way to model
+[2282] the layout of basically your software
+[2284] Factory and zooming out the whole supply
+[2288] chain interconnecting your factories
+[2289] between them you know so it's it's just
+[2291] a construct it's way to model but turns
+[2294] out as a really powerful one and so
+[2296] dagger basically we use it as a verb
+[2298] actually you take an environment say
+[2299] your your Dev environment where the
+[2301] these pipelines run where you automate
+[2303] these tasks and you dagger eyesee it
+[2305] then you take your CI Environ
+[2307] and you dagger eyesee it and you
+[2308] basically what you do is you you package
+[2310] all the pieces up into containers and
+[2313] then you interconnect those containers
+[2315] into a deck so you you describe how
+[2318] they're related which container sends
+[2320] data to what container and you end up
+[2322] with a full model of you know all the
+[2325] possible paths through running a build
+[2329] deploying you know so that you look at
+[2330] that and you can see oh I see what are
+[2333] possible things to do in this
+[2334] environment oh I can build these I can
+[2336] build these three different artifacts
+[2338] and I can run these four different kinds
+[2339] of test Suites and I can deploy to these
+[2342] two different things and each of those
+[2345] steps are you know they can be
+[2347] configured in this way or that way and
+[2349] and here's the flow of data between all
+[2351] of them and all of that now is can be
+[2355] run on top of a bunch of containers
+[2357] which means it's portable which means
+[2359] now you can unify those environments so
+[2361] in very practical terms what we Sol the
+[2364] problem that we solve is things are
+[2366] happening differently in CI and in Dev
+[2368] and it's just a pain in the butt and now
+[2370] we give you way to actually converge
+[2372] those environments so it's the same
+[2374] thing so any test Suite or useful
+[2378] automation that's usually locked in
+[2381] prison in CI now devs can use much
+[2384] earlier in the process they can shift it
+[2385] left you know so that means they can
+[2389] make sure it works more thoroughly
+[2390] before committing and pushing it you
+[2392] know so we make pre push capabilities
+[2396] richer
+[2396] mhm uh and vice versa you know which is
+[2399] kind of reduce trift okay so this is
+[2402] where you need a community because the
+[2403] the whole thing is I realized this is
+[2405] the opposite of a neat product pitch
+[2407] that you can just put in a landing page
+[2409] and say yeah click buy it this is not
+[2411] something you can just in 10 seconds
+[2412] decide oh this is what I want I'm going
+[2414] to buy it so you need a community of
+[2416] people like geart who at some point
+[2418] they've ran into the problem and they
+[2421] figure it out on their own okay this is
+[2422] really in the weeds but this is exactly
+[2425] what I was going to do any way so let me
+[2427] go ahead and try it out and also let me
+[2430] go and join the Discord because this is
+[2432] something I'm passionate about and I
+[2435] want to just hang out with other people
+[2436] who are also and maybe I can help them
+[2438] we can help each other so that's that's
+[2440] what leads you down the path to
+[2442] community Leed because it is a niche
+[2444] problem that we solve you know for a
+[2447] pretty Niche audience of people devops
+[2449] Engineers oh and all this runs on GitHub
+[2451] actions right it's compatible with so
+[2453] the con like GitHub actions would like
+[2455] trigger dagger to do its thing right
+[2457] exactly yeah cuz what yeah because right
+[2459] now your CI environments what versions
+[2462] of what tools to run in what sequence
+[2464] all that it's configured in a in it's
+[2467] trapped in a GI up action specific
+[2469] proprietary configuration right and so
+[2472] we basically when you dagger IE that
+[2474] environment you free it from that prison
+[2477] it's now declared in a completely
+[2478] portable way right it's declared as code
+[2481] so you can script it and do whatever you
+[2482] want with it and getb action is still
+[2485] there but its job is now to run
+[2487] pipelines in that portable environment
+[2489] so you basically shrink you go from a
+[2491] 500 line yaml file gradually you eat
+[2495] away at it or all at once you're a call
+[2497] right but eventually you end up ideally
+[2499] with a 10line AML that says run dagger
+[2501] you know I'm caricaturing a little bit
+[2503] but that's the idea it's effectively
+[2505] like a post commit hook kind of a thing
+[2507] where it's just like okay you know when
+[2509] it when I push to this Branch go ahead
+[2511] and tell dagger to do its thing and it
+[2513] becomes this just like trigger
+[2515] functionality at the end end of the day
+[2517] okay so it's really that it's running on
+[2518] containers so it can run anywhere which
+[2520] people like and it's also scriptable
+[2522] like there's an API so all the behavior
+[2524] is expressed in code in the language of
+[2527] your choice we have a bunch of sdks
+[2529] that's the other big draw you know you
+[2531] can replace all that yaml that becomes
+[2534] pseudo code over time which that's
+[2535] another New Direction as well because
+[2537] when we first adopted a dagger we were
+[2538] 0.1 adopters around here yeah when we
+[2541] first adopted dagger it was Q it was
+[2543] configuration something language what
+[2545] was Q called what it stands for yeah
+[2547] it's an acronym it's a configuration
+[2548] language it's like better than yaml cuz
+[2550] it's typed or something so people like
+[2551] it but it's a yaml esque configuration
+[2555] thing and now it's not now it's like uh
+[2558] have at it you can write goang you can
+[2560] write typescript yeah that's exactly
+[2562] right so we launched a year ago well a
+[2564] little bit over a year ago and you had
+[2566] this dag engine you know so that an
+[2568] engine that enables what I describe you
+[2570] know you can dagger eyesee your
+[2571] environment package it up in containers
+[2574] describe the layout between the
+[2575] containers and then it's scriptable uh
+[2577] and portable Etc great but you have to
+[2580] write all that new code that those
+[2582] scripts in this obscure new
+[2584] configuration language that's like HCL
+[2587] or like a a much better yaml I mean
+[2590] that's the Q Community will hate me for
+[2591] saying that but you know it's it's in
+[2593] that category of languages it's
+[2594] declarative you know it's just a very
+[2596] powerful declarative language it's a
+[2598] Next Generation configuration language
+[2601] and honestly it's awesome it's very
+[2602] powerful the the only problem is that
+[2604] nobody I mean it's new and people
+[2608] generally don't love new learning a new
+[2610] language is just a high barrier of Entry
+[2613] specifically in the context of these
+[2615] pipelines and and the environments where
+[2618] the pipelines run if our pitch is
+[2620] basically hey get rid of all that
+[2623] terrible yamal that only works in one
+[2625] place now it's scriptable and it's
+[2627] containers and it's scriptable and then
+[2629] we add oh and it's scriptable with this
+[2631] other thing that's kind of like yaml
+[2632] except it's newer and you don't know it
+[2634] right you know it's kind of a ba switch
+[2636] is so that's the feedback we got kind
+[2638] side gr you know and people wanted it so
+[2641] bad I mean we had a pretty massive core
+[2643] of people run through it and use it join
+[2646] the Discord ask questions we had a solid
+[2648] six months process here where a lot of
+[2650] people flocked to this prodct when we
+[2652] launched it and then just very slowly we
+[2654] re we realized not all not at once but
+[2657] eventually we realized they're all going
+[2659] to leave and some of them would stay for
+[2662] months and just keep trying but they
+[2664] would just hit one little it was just
+[2666] Death By A Thousand Cuts and we didn't
+[2668] realize it but we we kind of got dragged
+[2670] into a tarpet that would just slow us
+[2673] down more and more you know we were kind
+[2675] of getting dragged down by the by the
+[2677] all this friction and some of it was
+[2679] just how we used Q some of it was you
+[2682] know just some fundamental issues with
+[2684] Cub because it's new like memory leaks
+[2686] Etc it got better but basically it
+[2689] doesn't matter it could be perfect the
+[2690] problem was that it was different So
+[2692] eventually we figured out a way to
+[2695] script our engine
+[2696] with a language that was not declarative
+[2699] even though the way the engine works the
+[2702] API for it is fundamentally declarative
+[2704] because you're describing a graph so you
+[2707] can't like it's a 3D construct right you
+[2709] can't go through a sequence of things to
+[2711] do it's not a Tut list the way I mean
+[2714] that's what imperative languages are
+[2715] right they're toal lists for the
+[2717] computer and you just you're missing a
+[2720] dimension so that's kind of that's why
+[2722] we went to Q in the first place how do
+[2724] you express this three-dimensional
+[2727] construct without a specialized language
+[2729] so we found a way and so we eventually
+[2730] shipped all these sdks yeah so now
+[2733] there's python go JavaScript typescript
+[2736] you know you can you can create your own
+[2737] SDK there's a bunch of new sdks that are
+[2740] experimental that the community is
+[2742] developing uh rusts
+[2744] air.net so that really unblocked a bunch
+[2747] of things for us app.net also runs on
+[2749] app.net just I got to go Delon on
+[2752] it trying to work that back in there
+[2754] somewhere yeah so that's cool I mean we
+[2756] ours is our stuff is written in go um
+[2759] but we're an Elixir app so it' be cool
+[2761] to be able to unify you know on a
+[2764] language like that does that mean so I
+[2766] mean obviously those languages are
+[2767] altering complete but are they like
+[2769] generate they're not generating the Q
+[2771] Lang they're generating something else
+[2772] at the end no but we consider that we
+[2774] explore that path but Q Lang doesn't
+[2776] like being generated basically it's
+[2778] really designed to be the thing that you
+[2779] write and it generates everything else
+[2781] gotch and so it just felt like we were
+[2783] trying to use Q for something it was
+[2785] just not designed for okay and So
+[2786] eventually we we stumble on graphql and
+[2790] so the the dagger engine has an API okay
+[2793] that API is a graph ql API it turns out
+[2795] it's a perfect match for describing a
+[2797] graph a dag you know yeah and then on
+[2799] top of that we got bindings for these
+[2801] different languages and they're actually
+[2802] generated from the graphql schema so
+[2804] when we ship a new feature on the API
+[2806] boom all the sdks get regenerated and
+[2808] you get native support in them it's
+[2809] pretty neat and of course the pipeline
+[2811] to do that isn't is a dagger pipeline of
+[2814] it has to be yeah yeah yeah very cool
+[2817] well I'm not sure if you heard it or not
+[2818] Solomon but we had Kelsey high tower on
+[2821] change Logan friends a couple weeks back
+[2823] and we asked him about some things that
+[2824] are going on did you hear him describe
+[2825] dagger yeah I I I did and I remembered
+[2828] exactly the conversation we had uh that
+[2831] conference uh well no the conversation
+[2833] oh the one that yeah yeah cuz you guys
+[2835] spoke at vmw conference yes well the way
+[2837] you described was very gracious you know
+[2839] I I I basic you know I was there showing
+[2842] this demo and like a little stage on the
+[2845] side and um and you know he was very
+[2847] gracious and came and and saw the demo
+[2849] and then we talked about it afterwards
+[2851] and I mean you know Kelsey and I go way
+[2853] back yeah summarized as this like
+[2855] Customs robotic arm that's like part of
+[2857] your factory right that's a good analogy
+[2859] yeah yeah do you think that's uh
+[2861] accurate was there any like did he miss
+[2863] the point on any aspects of it no I mean
+[2865] the only aspect that well I think it's
+[2868] part also the timing I mean we started
+[2869] out being very focused on the deployment
+[2872] use case you know the last Mile right
+[2875] and over over time we got pulled more
+[2876] and more towards the CI side you know
+[2879] build test ultimately it's all in the D
+[2881] I mean ultimately you know we're going
+[2883] to dagger IE all of it but there's
+[2886] definitely sequence I mean there's some
+[2887] pipelines are better fit for dagger
+[2889] today and it's really build test deploy
+[2892] and the deploy usually is we just hand
+[2894] off to a specialized deployment tool
+[2896] like we hand off to cube cuddle or cube
+[2899] CTL or we we hand off to you know the
+[2903] netlify clients to upload the netlify or
+[2906] an AWS Lambda tooling to just send send
+[2909] the thing up there you see what I mean
+[2910] so it's kind of like a handoff uh so for
+[2912] us that's just one note of the dag so
+[2915] really the integration of all these
+[2917] different parts is really where where
+[2918] dagger shines but that's I mean that
+[2920] that fits perfectly in the the factory
+[2924] analogy and swappable robots that Kelsey
+[2927] used I I love that I love that analy and
+[2930] I mean I talked about factories before I
+[2932] just it's a useful tool to kind of
+[2935] simplify what we're working on you know
+[2938] okay what problem big picture what
+[2940] problem are we solving here if Docker
+[2943] solved the shipping problem you know you
+[2945] need a standardized box to ship things
+[2947] around we're solving the manufacturing
+[2949] problem you know how do you standardize
+[2953] how the things are assembled and the
+[2955] interdependencies between all the
+[2957] different steps of doing that you know
+[2960] within the organization but also between
+[2962] organizations you know there's your
+[2964] factory how it's organized and then
+[2966] there's the factories Upstream from you
+[2968] and what they ship to you Etc so that's
+[2971] kind of the factory problem of software
+[2973] and that's what we're tackling yeah I
+[2975] think that's a good metaphor yeah I
+[2976] think so too it's it's not quite the
+[2977] containers like a like the boat that we
+[2980] all see you know we we assimilate Docker
+[2983] to be this I don't even what you call
+[2985] those container boats if they're oh yeah
+[2987] the yeah cargo ship I don't know what
+[2988] you call it yeah that's the I mean
+[2990] that's the foundational analogy right
+[2992] the shipping container but standardizing
+[2994] boxes to me makes slightly more sense
+[2996] because I'd probably like anybody get a
+[2998] lot of shipments to my home from Amazon
+[3001] to the like and so you know any given
+[3004] week I'm like Side Story here just
+[3007] tearing down boxes to recycle
+[3008] essentially I mean it's just a massive
+[3010] amount if you order a lot of and I just
+[3011] moved into a new home so we're buying
+[3013] things and getting things and whatever
+[3015] and like obviously tearing down boxes we
+[3017] had things stuck in but you know you
+[3019] think about the size of the box and this
+[3020] is something I think FedEx and UPS and
+[3023] other large scale shippers obsess over
+[3025] like if we could just have a standard
+[3027] box we can we can be more efficient in
+[3029] how we actually transport things to and
+[3031] fro maybe even standardized prices cuz
+[3034] the size doesn't change but the weight
+[3036] might and as long as we're under a
+[3037] certain amount and the size of the Box
+[3040] stays the same you have predictability
+[3042] in the model and so deliverability
+[3045] moving those things moving what was
+[3047] manufactured in the Box you know gets a
+[3050] lot more easier so the the analogy I
+[3052] think is really better in that case than
+[3054] just simply this large scale cargo
+[3057] that we don't really see too often you
+[3059] know I think it's a better analogy well
+[3060] you know actually the the weakness uh
+[3063] the limitations of the sh the the
+[3065] physical shipping container story The
+[3068] Well the the limitations of the standard
+[3071] which is what you just talked about like
+[3072] not everything in not every box in the
+[3075] world is a shipping container cuz that's
+[3077] pretty big so it's just it's like the
+[3079] backbone of the world's Freight industry
+[3082] is built on it but right I don't get
+[3084] shipping containers uh delivered at home
+[3086] and so that's but you know what's crazy
+[3088] is that's what happened with the
+[3090] software containers too I mean the oci
+[3092] spec which standardizes the docker
+[3095] format a lot of applications get
+[3097] packaged up in Docker containers and
+[3100] deployed as such in kuties or whatever
+[3102] but not all of them and it will never be
+[3104] all of them because there's just too
+[3106] much variety and scale in the kinds of
+[3110] compute that's out there and the kinds
+[3111] of software that's out there you know
+[3113] and so there's a limitation to how much
+[3115] you can standardize the actual box you
+[3118] know the actual shipping of goods in the
+[3120] world and it's the exact same thing with
+[3121] software I think and I'm going to go
+[3123] into slightly unexplored territory here
+[3126] because this is so this might turn out
+[3128] to be a confusing point but I feel like
+[3130] we're tune in in 3 months or six months
+[3133] and maybe you see a really well packaged
+[3134] version of this story on our website I
+[3136] hope but if you look at the you know the
+[3138] manufacturing problem here the the
+[3140] software supply chain I think if you're
+[3143] pushing anything container based on the
+[3145] application platform if you're Red Hat
+[3147] pushing open shift okay if you're any
+[3149] kuties vendor pushing kuties for
+[3152] everything then you're you're pushing a
+[3154] vision that that ultimately needs the
+[3156] shipping container to be the only
+[3158] standard for shipping things around we
+[3160] believe that's never going to happen not
+[3162] because we don't like it we just don't
+[3163] think it's physically possible for that
+[3165] to happen you know so as soon as you're
+[3168] saying everything I'm building it's
+[3170] Docker containers only and kuties only
+[3173] at the application Level you're right
+[3175] there and then never going to be a
+[3177] standard beyond what this you know your
+[3179] new thing it's never going to be a
+[3180] standard for how you organize your your
+[3183] supply chain okay because it's you're
+[3185] going to have blind spots so how do you
+[3186] sol that because you still need to stand
+[3188] to standardize the supply chain on
+[3189] something I think you can stand you can
+[3192] you can standardize how you ship the
+[3194] factory itself to the edge okay you the
+[3197] problem is we're stuck in this analogy
+[3200] of the software Factory okay when you
+[3201] think Factory manufacturing what are you
+[3203] picturing you're picturing a big
+[3206] centralized thing yeah you know all the
+[3208] cars are built here and then you ship
+[3210] the cars to everybody so there's only
+[3213] one Factory here there's not there's not
+[3215] a lot and then shipping is the bulk does
+[3218] the bulk of the work after that you ship
+[3219] the car to wherever I think in software
+[3221] the in fact the correct model is flipped
+[3224] where I mean it's software you can just
+[3227] ship a factory to everybody and they get
+[3230] their own custom you know it's like they
+[3232] like Star Trek you know the the food
+[3234] synthesizer right you don't they don't
+[3236] ship all that food to the to the
+[3238] spaceship just the synthesiz they ship
+[3240] the Ultimate machine that knows how to
+[3241] like manufacture the food you need right
+[3243] there and everybody gets one I'm sure
+[3245] you know in their homes or whatever
+[3246] that's kind of I mean that's the
+[3249] software can do that you know so you're
+[3251] basically teleporting what you need over
+[3253] and and the beauty of it is that you can
+[3255] standardize because that factory it's
+[3258] okay if it gets shipped in a in a big
+[3260] bulky shipping container cuz you only
+[3261] need it once you know so the question is
+[3264] how does it work
+[3265] you know how does it link up with the
+[3266] other factories and how does it get the
+[3268] intelligence to know like how does um
+[3271] how does the food synthesizer in the
+[3273] Star Trek ship gets its software updates
+[3275] like does someone say oh I have a new
+[3277] recipe right and you know is there a
+[3279] community of uh Star Trek chefs that
+[3281] share the software for the recipes I
+[3283] mean that's basically that's what we're
+[3284] trying to do for dagger you know it's
+[3285] hard problem to solve yeah how does it
+[3287] get where does it get its katchup and
+[3288] how does the ketchup enter in I told you
+[3290] it was going to be a little outside the
+[3292] beaten path but uh it's there's it feels
+[3294] like there's something important there
+[3296] around just how how that supply chain
+[3298] you know how that that how that software
+[3300] is uh assembled manufactured you know
+[3303] right ship the whole Factory but you
+[3305] have to standardize how the factory
+[3306] Works basically yeah everybody gets a
+[3308] factory it's like decentralized you know
+[3310] like 3D printing is kind of like a hint
+[3311] at that you know oh I can make it myself
+[3314] you know that whole controversy around I
+[3316] guess 3D printed guns as an example like
+[3318] it's it has profound implications
+[3321] because you make a bunch of assumptions
+[3323] starting from the fact that it's really
+[3325] hard and centralized to manufacture
+[3326] things and it all it all goes through
+[3328] shipping shipping is the most important
+[3330] thing right but if everyone's got their
+[3331] little Factory that's nothing gets
+[3333] shipped except the
+[3335] factory well the parts the factory gets
+[3338] there and then all the filament to make
+[3339] the things well yeah yeah you know so I
+[3342] mean that's kind of like the the
+[3344] software pieces yeah yeah actually
+[3346] you're right a lot gets shipped but it
+[3348] doesn't have to be standardized how it
+[3350] gets shipped you know so cuz U you're
+[3352] kind of encapsulating the intelligence
+[3354] of how it gets there there and I I'm
+[3355] going to try and bring this back into
+[3356] more concrete terms here but like the
+[3358] big problem we deal with is your typical
+[3360] team has a lot of different build tools
+[3363] they have a lot of different package
+[3364] managers they have a lot of different um
+[3367] deployment targets you know front end
+[3370] teams back and you know the containers
+[3372] get deployed to container things but
+[3373] there's there's the JavaScript world
+[3374] there's the mlops world so artifacts of
+[3377] all kinds and AP deployment apis of all
+[3380] kinds Packaging Systems of all kinds at
+[3383] some point when you deal you have to
+[3385] integrate it all it's pointless to say
+[3387] okay step one everybody across all these
+[3390] ecosystems everyone change how you ship
+[3393] your artifacts you have to all adopt
+[3395] this one standard for how your artifacts
+[3396] are shipped and do me a favor all these
+[3400] Cloud providers just use this one API
+[3403] that everyone uses for how you de it's
+[3405] like the open stack problem right let's
+[3406] convince everyone to adopt to stands on
+[3409] how they ship things around and then we
+[3411] can integrate but we're taking the
+[3413] approach that that's never going to Happ
+[3414] happen so if instead you just let each
+[3417] end point just whatever do whatever the
+[3419] hell they want in the back end and we
+[3421] just worry about standardizing how they
+[3423] fit together in this Factory
+[3424] locally you basically have the
+[3427] customized arm I think this is where
+[3428] Kelsey's argu where his statement was
+[3430] like exactly that's exactly is I'm
+[3432] paraphrasing it's a customized robotic
+[3434] arm in my factory what you're saying is
+[3436] you want to be able to give everybody
+[3438] the ability to have their own customized
+[3439] Factory not just the arm itself but
+[3441] literally the entire Factory and no
+[3443] matter where your artifacts come from
+[3444] you you can you can put it together at
+[3447] end point at Edge wherever you need to
+[3448] put it at exactly it's well it's really
+[3450] about which part is customizable
+[3452] infinitely and which part is
+[3454] standardized strictly and it's really
+[3456] about where do you draw that line of
+[3457] where the standard should be and with
+[3460] this robotic arm analogy this this
+[3462] Factory analogy we're just moving the
+[3465] standardization point at a different
+[3467] place because it's still at the end it's
+[3468] a standard dagger Factory yeah it's just
+[3471] that each robot in it to use Kel's I
+[3473] should just use Kel's anal anies to
+[3475] start with I mean always just use
+[3477] Kelsey's analogies that's what I've
+[3478] learned in my
+[3481] life cicd is kind of like when you go
+[3484] get Jenkins or any of the kind of
+[3486] prepackage solutions that are out there
+[3488] it's almost like buying or using someone
+[3490] else's Factory right they tell you these
+[3492] are the only cars we can build at this
+[3493] Factory we're fitted for these things so
+[3496] if you're going to build something it
+[3497] has to be within these parameters and we
+[3499] can build a million of them for you but
+[3501] these are the parameters that's all you
+[3502] get dagger feels like the ability to
+[3506] create custom robotic arms like when you
+[3508] go look at a Tesla Factory you can't
+[3511] make a F-150 in a Tesla Factory you can
+[3514] only make the cars that Tesla makes in
+[3516] that factory and so dagger is kind of
+[3518] like this idea of whatever complex step
+[3521] you have it could be deploying something
+[3524] to a server I think what dagger gives
+[3526] you is the ability to create that custom
+[3529] robot for that one step would you use
+[3531] dagger to run the bill command no it's
+[3534] Overkill you could put it in there but
+[3537] that's like kind of a solve problem so
+[3539] just use your standard conveyor belt to
+[3541] get the base of the car to this arm but
+[3544] that arm is going to be really
+[3546] customized right you want it to work a
+[3548] certain way and so I think what dagger
+[3550] gives people to do is if you look at
+[3551] your whole Factory let's say you're
+[3553] using Jenkins you still could use dagger
+[3556] as part of the in Loop so hey Jenkins
+[3558] you do the checkout from GitHub you do
+[3560] the build you do the packaging but when
+[3563] it comes to like deploying to kubernetes
+[3565] across six regions and the low balancer
+[3567] updating Cloud flare and busting the
+[3569] cash on something like um Alami I ain't
+[3573] trying to articulate that in a bunch of
+[3575] bash scripts also don't want anyone else
+[3577] trying to do that five times throughout
+[3578] the organization so what we're going to
+[3580] do is we're going to use dagger to build
+[3582] this custom robot give it an API and
+[3585] then dagger as a atomic unit when I look
+[3588] at my Jenkins pipeline this fifth step
+[3591] is dagger get rid of the 25 bash grips
+[3594] throw the dagger robot in for dealing
+[3596] with kubernetes throw the dagger robot
+[3598] in there for dealing with Amazon Lambda
+[3600] and so I think if dagger is going to be
+[3602] successful just like what they did with
+[3604] like Docker images and like having those
+[3606] kind of be ready to go units I don't
+[3608] know if they really thought about it
+[3610] this way but this is how I express that
+[3611] I thought about it you got to think
+[3613] about dagger as these customized units
+[3615] of robots and if they're sharable so if
+[3618] I come to a company say hey what is the
+[3619] best way to deploy the ads Lambda IM low
+[3623] balancer the whole 9 and do rolling
+[3626] updates oh man that can be challenging
+[3629] so dagger already kind of give you some
+[3631] if then do this kind of Primitives out
+[3633] of the box it gives you enough uh
+[3635] feedback loop so that you can integrate
+[3636] with a Jenkins like a higher reporting
+[3638] tool something that has a UI that can
+[3641] decide when things go and when things
+[3642] don't go so man if I could just reuse
+[3645] those in an organization to say yo to me
+[3648] dagger is a Last Mile technology that
+[3650] allows people to do all that
+[3652] customization that bash is not equipped
+[3654] for for that's the way I think dagger
+[3656] will add value to the world and tools
+[3658] like
+[3661] it let me try and connect those two
+[3663] analogies because I was talking about
+[3665] shipping versus manufacturing and where
+[3666] you standardize right and Kelsey is
+[3670] describing the robotic arm in the
+[3671] factory and we the factory analogy is
+[3673] perfect because it's about manufacturing
+[3675] software where shipping comes in is
+[3677] maybe that robotic arm if it if it's
+[3679] really customizable any way I want it
+[3682] that means maybe that robotic arm you
+[3683] know maybe it's soering okay so it needs
+[3686] supplies to soer right where do these
+[3689] supplies come from maybe that arm has an
+[3692] incredible Tech and it could just you
+[3694] hook up a cable and it's connected to
+[3696] this worldwide network of uh you know
+[3698] that that just brings this the you know
+[3700] the required material straight to the
+[3702] arm we don't have to standardize how to
+[3705] package up that particular material to
+[3707] get into the robotic arm it just does
+[3709] whatever it wants in the back end the
+[3711] important thing is I can always connect
+[3713] it to the standardized conveyor belt and
+[3716] you know it's going to fit and the the
+[3718] the operator will have a standardized
+[3721] display somewhere just you know that's
+[3723] red or green to say it works or not so
+[3725] the the front ends to the team operating
+[3727] it has to be standardized at some level
+[3729] but how it does this thing including
+[3731] shipping artifacts around to the outside
+[3734] world and from how it gets its
+[3737] credentials you know how it communicates
+[3739] over the network none of that needs to
+[3741] be standardized by us okay I think I
+[3744] follow let's simplify let's get back to
+[3746] Brass tax as which is a saying that I
+[3749] down I'm not sure what it means let's
+[3750] get down to Brass tax I think that's
+[3752] where we pay each other money or
+[3753] something but let's not do that part
+[3756] Let's Get Back to Basics like let's
+[3757] imagine me a developer with an
+[3759] application let's pick a a a pretty
+[3762] typical let's go uh like a 12 Factor web
+[3766] app right I've got a front end I've got
+[3768] a serers side API I've got a database
+[3773] and I want to BU bundle that up into a
+[3775] factory and ship that factory somewhere
+[3777] with dagger but all I have right now is
+[3780] a repo with the code in it and some sort
+[3783] of command I can run that executes that
+[3784] code what do I do from there dagger
+[3787] dagger eyes that
+[3789] sucker well the starting point of dagger
+[3792] is there's you always have something
+[3794] okay and then you can dagger ISE that
+[3796] something so oh I thought I had
+[3798] something well you have something that's
+[3799] what I'm saying okay okay thank you
+[3801] you're not stting you're never starting
+[3802] from zero right I have an app it runs
+[3804] like if you run this command my Apple
+[3806] compile and it'll run yeah on my machine
+[3809] and so you're saying it's not live
+[3810] anywhere yet no it's on my computer I
+[3812] have it on a repo maybe it's on GitHub
+[3814] in a private repo so okay what happens
+[3817] at that point is someone maybe you or
+[3818] someone else needs to make a bunch of
+[3820] decisions and how that application is
+[3822] going to be delivered right like maybe
+[3825] you're going to say well this is a
+[3826] really simple app so we're just going to
+[3827] go for her Heroku for now or one of the
+[3829] 10,000 Heroku competitors now right and
+[3832] that's it that's basically it it's never
+[3833] really completely it that's maybe but
+[3836] maybe that's what I would do I would do
+[3838] that that's 90% of it right and they 10%
+[3842] maybe there's a there's going to be a
+[3843] make file an npm scripts if it's a
+[3846] Javascript app or a rake right file if
+[3849] it's Ruby so there's a little bit of
+[3850] scripting and automation you know so
+[3852] that's that's basically your version one
+[3854] of your very own software Factory you
+[3857] know you got those pipelines hooked up
+[3858] they're very simple they only run on
+[3860] your local machine and then they hand
+[3862] off to they upload a bunch of things to
+[3865] Heroku but basically as soon as you
+[3867] start working on that app and shipping
+[3869] more versions and if it's a real app you
+[3871] know yeah it is it's not frozen in time
+[3873] then really quickly as you add more code
+[3876] and more features you're also going to
+[3877] start adding more pipelines your factor
+[3879] is going to evolve alongside the product
+[3882] exactly like a real physical product by
+[3884] the way you know manufacturing it's it's
+[3887] always in deeply embedded in the product
+[3890] design right there I mean there's
+[3891] there's a reason it's called industrial
+[3892] design right great you you got a
+[3894] prototype how are we going to ship this
+[3895] thing you know let's talk about the
+[3897] factory uh layout you know like let's
+[3900] talk about suppliers ET so same thing
+[3902] there you know instead it's scare heart
+[3903] telling you okay let's talk about you
+[3905] know scanning your container images
+[3907] let's talk about using python for this
+[3910] API component now so let's talk about
+[3913] python packages and you know you just
+[3916] your factory just grows and growth just
+[3917] how it is and eventually you reach a
+[3920] point where you say this Factory is out
+[3922] of
+[3923] control W oh I've definitely said that
+[3926] and I need to go from you know an
+[3928] artisanal Workshop that is honestly
+[3932] getting a little messy and I need to
+[3934] industrialize this make this an actual
+[3936] Factory because you know it's time we've
+[3938] reached that threshold of scale or
+[3942] complexity or business requirements you
+[3945] know like okay now there's a customer
+[3946] they depend on something happens and
+[3948] someone will say usually a devops person
+[3952] like geart will say
+[3954] as your designated devops person I am
+[3956] telling you it's time to industrialize
+[3959] and that's where dagger comes in okay
+[3961] that's where you dagger eyes so I'm not
+[3962] picking up dagger right away I'm picking
+[3964] up dagger eventually I think today
+[3967] that's true we're trying to make dagger
+[3970] more and more
+[3971] approachable and more and more of a an
+[3974] obvious no-brainer decision from day one
+[3977] like what would you not start there as
+[3979] of today that's not the case I'm hoping
+[3981] that in 6 months it'll be different by
+[3983] the way the same thing happened with
+[3985] Docker yeah it was a long journey
+[3987] swimming Upstream making Docker
+[3990] gradually more and more accessible to
+[3992] developers on Day One MH and we got
+[3995] there eventually so we I think the same
+[3996] thing will happen eventually you'll say
+[3998] well you know might as well just start
+[4000] here it's all easy and everything you
+[4002] have this ready to go sample Factory you
+[4004] know right so in 6 months I might tell
+[4006] you well Jered the way you get started
+[4009] is you install D the dagger CLI right
+[4011] you select one of the 10,000 ready to
+[4014] use environments you you know you said
+[4016] rubyan rails P so search for that you'll
+[4019] find it type one command boom you know
+[4022] you're in business that's that's the
+[4024] answer in sixth that's more what I was
+[4025] expecting you to say this time so now I
+[4028] fair enough no fair enough it's just
+[4030] where it is is that what you're working
+[4032] on then this CLI and this magic behind
+[4034] the scenes because I mean you said six
+[4035] months oh yeah yeah there's a specific
+[4037] project that's happened that's not very
+[4038] far away yeah when I when I have no idea
+[4040] when it's going to happen I say 12
+[4041] months when when when internally we're
+[4044] like this is totally going to be ready
+[4045] next month I say 6 months okay cool
+[4047] that's good so it's in motion is the
+[4049] point it's in motion not trying to hold
+[4051] you to a line but just you know it's in
+[4052] motion this is something you're doing no
+[4053] no it's in motion we're at the phase
+[4055] where we're deeply uncomfortable showing
+[4058] demos because it's so rough and early
+[4060] but we do it anyway so actually we have
+[4061] we showed we showed a rough prototype to
+[4065] our community at last week's Community
+[4067] call so it's on our YouTube channel you
+[4069] can find it but you know this is like an
+[4071] it's inside baseball still at this point
+[4073] like if you're not hanging Hing on our
+[4074] Discord and kind of in the know you're
+[4076] going to see it and be like okay this is
+[4077] a science project but that's how we
+[4080] start everything so but yeah things are
+[4082] definitely in motion cool so who's your
+[4084] ideal Community member today somebody
+[4086] who's in devops already maybe they're
+[4088] running bunch of systems yeah I think
+[4091] someone who either is or aspires to be
+[4094] what I would call a platform engineer I
+[4096] feel like that's becoming a like a
+[4098] controversial term but someone who's the
+[4100] devops person and uses code to automate
+[4105] what they're doing or aspires to use
+[4107] code to automate what they're doing as
+[4109] opposed to purely clicking and writing a
+[4111] bunch of yaml there's an evolution in
+[4113] the role where at some point it becomes
+[4116] a real engineering function that's part
+[4118] of industrializing this whole thing and
+[4121] anyone who's either doing that today and
+[4123] looking for better tools or aspir us to
+[4125] do it and isn't sure where to start
+[4127] should join our Discord today and
+[4130] immediately see how people doing it
+[4132] every day talk what they're doing
+[4134] and they're kind of converging around
+[4135] the dagger Community you an interesting
+[4137] place to be for sure Dagger knuts by the
+[4140] way we call them dagger knuts dagger
+[4141] knuts dag dagger knuts like astronauts
+[4143] dagaut okay that's better than dagger
+[4145] dos yeah dagger knuts is good I think
+[4147] that's a cool place to be because I can
+[4149] tell I mean especially as this mirrors
+[4152] now to a certain extent the docker story
+[4155] this is the time to be involved you know
+[4158] and if this thing is going to take off
+[4161] like a rocket ship you know be part of
+[4163] it early community members there's just
+[4165] so much opportunity and so much like you
+[4167] can contribute to that right because
+[4169] it's easy contributors time maybe you
+[4171] can speak to a little bit to the
+[4172] contribution maybe policy or ecosystem
+[4175] because it's difficult you said you're
+[4176] like 100% Community growth
+[4179] Le I'm sure as a product owner that's
+[4183] challenging because like you have ideas
+[4185] they have ideas do they always Jive like
+[4188] if I hop into the community like how
+[4189] does it work you know it's actually that
+[4192] part is not really a problem today I
+[4193] mean it there's always tension you know
+[4195] yeah between the the power users and the
+[4198] people building the product and so
+[4199] that's healthy and open source just
+[4201] means there's a more tangible way to
+[4203] resolve the tension because the power
+[4204] user can open the pl request this is
+[4206] exactly what I mean you know the
+[4208] difference with I think what you're
+[4210] picturing of like your typical cncf
+[4212] project let's say where Community is
+[4215] very different I would call that
+[4217] actually an ecosystem okay what's the
+[4219] distinction well the distinction for me
+[4221] is that our community is defined by a
+[4225] shared vision and a shared excitement
+[4227] about specifically the dagro brand and
+[4230] the product behind it and using it so
+[4232] it's all power users or aspiring power
+[4235] users it's not a bunch of different
+[4238] companies that have different interests
+[4241] different motivations maybe are
+[4243] competitors but happen to collaborate on
+[4246] a well-defined piece of tech that does
+[4248] not meet my definition of community
+[4250] where you know I'm saying other people
+[4252] can do what they want but yeah what we
+[4253] call Our Community is different right
+[4255] right uh with Docker we learned that the
+[4257] hard way because a lot of people said
+[4259] the community talking about our
+[4261] community so we allowed others to Define
+[4263] what our community was and wasn't and
+[4266] usually was in the shape of competitors
+[4268] who were not excited about about Our
+[4270] Brands didn't have a shared Vision with
+[4271] us we're not particularly rooting for
+[4274] our success as a company we're not using
+[4276] our product but they would they did want
+[4278] to collaborate on a shared piece of tech
+[4280] which is completely legitimate but that
+[4283] an ecosystem eventually we spun out some
+[4286] separate open source projects and
+[4287] donated them to cncf so that you know
+[4290] that ecosystem had a place to go and so
+[4292] if you're you know there's container D
+[4294] there's run C the oci spec Etc is that a
+[4297] community yeah sure maybe but the docker
+[4299] Community really the core of it which we
+[4301] realize are Docker users you know mostly
+[4304] they're developers and developers people
+[4306] less so infrastructure folk I think the
+[4309] infrastructure Community either actively
+[4312] hated or just generally
+[4315] resisted adoption of Docker for good
+[4318] reasons because it was kind of designed
+[4320] to kind of bypass them and it was not
+[4322] designed you know primarily for them and
+[4325] it's something new and unstable and
+[4327] who's going to be on the hook to fix it
+[4328] you know at for the morning of course
+[4330] it's not going to be the developer right
+[4331] so uh what I mean is we realized over
+[4334] time that the docker Community is a
+[4336] community of developers and so over time
+[4339] was just kind of in fact that the
+[4340] tension was internally was that they
+[4343] would it was hard to kind of reconcile
+[4345] everyone at Docker that that was true
+[4348] and there were just a lot of possible
+[4350] paths to take anyway in our case when we
+[4353] have tension with the community it's
+[4355] users saying this is broken you know
+[4358] could you fix it or could you prioritize
+[4359] things or oh or we bike shed a lot on
+[4362] the design of the next API thing but we
+[4364] kind of turn it into positive thing like
+[4366] we have this private joke that you know
+[4368] bike shedding is healthy you know you
+[4369] the bike shed once a day and it's it's
+[4371] all done in good spirits so it's a lot
+[4373] of fun fun uh there's really no room for
+[4377] like like let's say red ad decided oh
+[4378] dagger is awesome I'm going to build
+[4380] open Shift 4 on it you know uh and I'm
+[4383] going to say I'm going to support you
+[4384] know the dag I'm going to be the dagger
+[4386] corporate sponsor well there's no place
+[4388] really to do that you know it's just not
+[4390] the right place to do it so the other
+[4392] half of this is that we've tried to
+[4395] design the commercial parts of this
+[4397] product into the overall experience
+[4398] early so that it's well it's clear to
+[4401] everybody what's open source and what's
+[4403] not what's free to use and what's not
+[4406] and it's sort of organic as opposed to
+[4408] later becomes a a source of stress and
+[4410] confusion we're trying really hard to do
+[4413] that early would you describe it as open
+[4415] core honestly I don't know because I'm
+[4417] not I don't understand what the
+[4418] boundaries of open core are but I guess
+[4421] roughly yes I would say yes I mean the
+[4423] engine is open source the sdks are open
+[4426] source the CLI is open source so you
+[4428] have everything you need to go and run
+[4430] the develop and run these Pipelines you
+[4433] know you can dagger eyesee to your
+[4435] heart's content 100% open source what
+[4438] happens is then when you run these
+[4440] pipelines in a CI environment usually
+[4443] you know it's a a bunch of machines you
+[4446] know in a data center somewhere then you
+[4448] need a control plane because you have a
+[4449] bunch of engines running pipe ples in
+[4451] parallels you need to coordinate you
+[4452] need to monitor them they need to share
+[4455] cach caching is a huge part of what
+[4458] makes dagger great because everything's
+[4460] cach by default it's a property of the
+[4462] dag so everything becomes way faster
+[4464] very quickly compared to Old School
+[4466] pipelines but the there's a a data
+[4469] sharing element so you need to
+[4470] coordinate that the the distribution of
+[4472] the cach data and then you know you just
+[4474] want a place to see what's going on
+[4476] visualize on the web interface your dag
+[4479] and then troubleshoot collaborate you
+[4481] know things like that so all that is in
+[4483] this commercial product that we're
+[4484] building we started rolling it out in
+[4486] Early Access but it's not launched yet
+[4489] but it's a pretty natural line basically
+[4491] it's purely the product that design
+[4493] driven for any given feature uh we just
+[4496] ask what's the best user experience
+[4498] where does it make sense to put there
+[4500] should it be in an individual engine
+[4502] running on an individual machine or
+[4503] should it be a globally shared cloud
+[4507] service like literally how does it work
+[4508] better and whatever the answer is that's
+[4510] where it goes and that's it you know so
+[4514] there's really so far fingers crossed
+[4517] it's pretty aligned and I think yeah
+[4519] we'll see where it goes from there you
+[4521] know the test will be one day will be
+[4522] big enough that a big company will come
+[4524] in and say I want to sell my own dagger
+[4527] control plane and here's a poll request
+[4530] to add you know a plug-in support so
+[4532] everyone can swap out their control plan
+[4534] and you better merge it or I'm going to
+[4535] blog about you and say you're mean I'm
+[4537] going to say thank you for your pull
+[4538] request but it's denied you know and
+[4541] you're free to Fork but you CH call it
+[4543] something else you know so we have a
+[4545] very open copyright stance you know it's
+[4548] like a very open license a real open
+[4550] source license but we have a very strict
+[4553] trademark policy with by the way that's
+[4556] the red hat model right so dagger the
+[4559] open source project has to use dagger
+[4562] the service uh no it works without it
+[4564] it's optional it's optional in
+[4566] production like in a production CI setup
+[4568] it it'll be faster it well it probably
+[4571] will not meet your criteria for
+[4573] production deployment without it but
+[4575] you're free to build your own control
+[4577] plane and maybe one day you'll be able
+[4578] to buy an alternative control plane from
+[4580] someone else I mean there's no such
+[4582] thing on the market right nowz were too
+[4583] small but you could do that right but we
+[4585] will always be at an advantage because
+[4589] right if the dagger brand and platform
+[4591] is where you're here that brand and that
+[4594] platform identity will remain ours MH
+[4596] you know so that's more of a hashy cour
+[4598] model in that sense yeah but you said
+[4600] that you wouldn't accept the pull
+[4601] request for a Plugin or something that
+[4603] allowed you to plug in a different
+[4604] control plane yeah I mean would make it
+[4606] technically possible but you like for
+[4608] examp it's very simple there's a there's
+[4610] a dagger login command where you can log
+[4612] into dagger cloud there's not going to
+[4613] be a dagger login dash dash you know
+[4616] alternate provider I mean not that today
+[4618] there would be anywhere that you could
+[4620] do that because no one offers that but
+[4623] uh yeah we don't plan on offering like
+[4625] an allowing that and that PR would be on
+[4627] the port that would be on the open
+[4629] source right that pull request would be
+[4630] on the open source and be denied the CLI
+[4632] is open source yeah that would be denied
+[4634] yeah I I don't have a problem denying
+[4636] that you know the reality is our
+[4638] community if our community cares enough
+[4641] then we'll have to like really get to
+[4643] the bottom of why you know is and then
+[4646] take it from there you know it should
+[4648] not be impossible to buy a competing
+[4650] product but um you're in here building
+[4654] on a brand and a community that we spend
+[4656] money and time and energy uh building I
+[4659] mean the community exists because we're
+[4660] doing a good job people love what we're
+[4662] doing and you get to come in and play on
+[4664] a Level Playing Field no go build your
+[4666] own Community I think that's fair you
+[4668] know or hey guess what we have a new
+[4669] Marketplace offering if we don't create
+[4672] Fair exciting opportunities for other
+[4674] companies to make money in our platform
+[4677] then we're screwing up the opportunity
+[4679] right we have to kind of as the value of
+[4681] the platform increases we have to offer
+[4684] opportunities for the ecosystem around
+[4686] us to to share in that value or or Worse
+[4689] we're going to miss on the opportunity
+[4691] by the way that's something that Docker
+[4692] did not do well but part of the reasons
+[4694] Docker didn't do it well is because we
+[4696] didn't have enough carrots but also not
+[4698] enough sticks like a lot of the
+[4699] potential partners are like oh great no
+[4701] thank you I don't need the partner going
+[4703] to take this brand thank you you know so
+[4705] no you don't get to you don't get to do
+[4706] that what's the percentage of uh
+[4708] production environments or deploys that
+[4711] would be greatly benefited by having
+[4713] your paid for control plane well it
+[4716] depends on what you call production but
+[4718] today the the the path is really you
+[4720] start using dagger on developers laptops
+[4722] and then once you're comfortable and
+[4724] there's a team that really loves it you
+[4727] start running it on your CI platform so
+[4729] get of actions G laab CI uh Circle C I
+[4733] your genkins cluster Etc and so that's
+[4736] that's what I would call production here
+[4738] um and so in that in that CI enironment
+[4741] I would say 100% like 100% of those
+[4743] deployments need dagger Cloud today are
+[4745] we uh using this control plane jar do
+[4747] you know much about if we're using the
+[4748] control plan he's talking about we're
+[4750] not so we're able to do what we do
+[4752] without and we use get up actions how
+[4754] are we doing it tell us how we're doing
+[4755] it all yeah how are we getting around
+[4757] your your control points element just to
+[4758] be I mean there's lots of way if you're
+[4760] like a dagger knut and you're familiar
+[4764] with the platform there are many ways to
+[4766] make it work without this you know so
+[4768] the way for example the way gear Art's
+[4770] doing it is it's running on one
+[4772] dedicated machine and so you don't need
+[4775] to distribute cash data arounds because
+[4778] it fits in one machine it's all in local
+[4780] storage and he's set it up that way and
+[4782] it's and anyone can do that so you know
+[4785] I'm just I'm painting with very broad
+[4787] Strokes here every step of the way what
+[4789] I described there's a there's a million
+[4791] ways for the community to you know make
+[4793] it work for their use case you know
+[4796] we're talking about businesses coming in
+[4798] and saying okay I want to rely this to
+[4801] industrialize my meet my pipelines let's
+[4804] talk about slas let's talk about budget
+[4806] let's talk about uh you know lockin you
+[4809] know let's let's talk about a a
+[4811] commercial partnership yeah and that's
+[4813] where these things really matter you
+[4814] know I mean yeah that's where they
+[4817] matter I think our questions are more
+[4818] like parameters or more like boundaries
+[4821] what's the boundary of you know come be
+[4823] part of the community as you described
+[4825] it give you all feedback be you know
+[4828] excited about where you're going you
+[4830] know have that shared Vision you know
+[4833] how can they you know freely adopt all
+[4836] the ideas you're doing and at what point
+[4838] do they have to convert to a any sort of
+[4841] paid scenario to leverage and use the
+[4843] tool is all we're trying to map out yeah
+[4845] what that boundary is it's purely yeah
+[4847] when you need to run it at scale and you
+[4849] need this control plane running
+[4850] alongside it right and that's the
+[4852] boundary of our commercial offering so
+[4854] that you know for example we don't we
+[4855] don't have an hosted version of our
+[4857] engine that is somehow better we we
+[4859] don't sell compute at all uh we don't
+[4861] have an Enterprise version of the engine
+[4863] or add-ons to the engine that make it
+[4866] better none of that you know so all that
+[4869] is open in the truest possible sense so
+[4872] it's it it is very open I've been
+[4873] focusing on what's been on my mind was
+[4875] you know where we insert ourselves sure
+[4877] and making sure that's solid right but I
+[4880] mean dayto day I'm sure 99% of the of
+[4883] dagger knuts even today are not aware of
+[4885] any paid offering because it's not on
+[4887] our website you know we we it's starting
+[4890] to come up more now because what happens
+[4892] is people come back on Discord after a
+[4893] few months and they say hey so I love
+[4895] the Agger I'm doing this and this and
+[4896] now we're going to CI and I just
+[4898] realized when I run in a CI it works but
+[4901] my cash is always empty or it's it's
+[4904] frequently empty because the machines
+[4905] are ephemeral so the local cash goes
+[4908] away hey I'm just wondering if there are
+[4910] solutions to that and we say yes there
+[4911] are hacks here and a commercial product
+[4914] we're building that will solve exactly
+[4915] that would you like to talk about it and
+[4918] it's it all happens very naturally well
+[4920] that's a a downfall I suppose of the
+[4922] early Docker model to go back to Docker
+[4925] was it was Enterprise it was sales
+[4928] salesperson driven it was very much the
+[4932] not Bottoms Up it was top down and you I
+[4935] think that they realized where to
+[4936] capture the value was to actually create
+[4938] value for individual developers and then
+[4940] charge proceed essentially and so you
+[4943] are learning this lesson I suppose early
+[4945] that your value really is the ability to
+[4947] you know talk to those who want to scale
+[4950] or operating at scale and charge them
+[4952] for a great control plane right you
+[4954] don't need that at a smaller scale and
+[4956] that's fine because you want dagger the
+[4959] idea of dags dagger not you want this to
+[4961] be a standard across all developer
+[4964] environments and it begins on the devs
+[4965] machine where what a better place to to
+[4967] begin rather than somewhere else but the
+[4969] moment you need to do some sophisticated
+[4971] a CI get a back actions Etc well now
+[4974] you're a different kind of customer and
+[4975] you have different kind of concerns and
+[4976] you probably have different kind of
+[4978] pockets with willingness to separate
+[4981] yourself from your money for value and I
+[4983] I'll be honest that the the exact
+[4984] interface there that that transition
+[4987] we're still sweating the details
+[4988] literally that's the other topic on my
+[4990] agenda today where're we're figuring out
+[4993] the pricing and the packaging of it you
+[4994] know like one topic that comes up a lot
+[4996] is it's good for monetization that a
+[4999] path to production requires your
+[5001] commercial product but it's also so it
+[5002] can be bad also because it can be a
+[5004] source of friction if your commercial
+[5007] product doesn't have the the
+[5008] capabilities that a particular team
+[5010] needs or if it's not even launched like
+[5012] ours then you have the the dependency
+[5015] can hurt adoption of the open source
+[5017] thing like oh I was going to use dagger
+[5019] but to take a concrete example our
+[5021] control plan you know it orchestrates
+[5024] the the caching operations so the flow
+[5025] of data between the engines and back and
+[5027] forth to a storage bucket so that the
+[5030] right cach data is at the right place of
+[5032] the perfect time you know and so right
+[5034] now that happens in S3 mhm so that means
+[5038] if you're running your CI on Azure or
+[5042] Google Cloud for example then there's a
+[5045] lot of data moves back and forth and
+[5046] that has latency but more importantly it
+[5048] costs money so architecturally it's not
+[5051] ideal so we're rushing to add support
+[5054] for storage buckets and those other
+[5056] clouds it's not a massive project but
+[5058] it's not done yet meanwhile we have
+[5059] people saying hey I'm ready I'm in
+[5061] Google Cloud let's go want this control
+[5063] plan they like wait wait you know so
+[5065] this is where you know maybe it would be
+[5067] better at this particular time for the
+[5069] for the health of the platform if there
+[5071] was a ready if it was possible to go to
+[5074] production without buying dagger Cloud
+[5076] because there is no dagger Cloud to buy
+[5078] at any price right now that does this
+[5080] you know so there's this we're trying to
+[5081] figure this out and also then the price
+[5084] you know what if you pay 100 bucks a
+[5086] month for your CI in other words not a
+[5088] lot and you want to use dagger on it
+[5090] what if our first plan is at 500 bucks a
+[5092] month so you're paying five times more
+[5094] for your control plane you know of your
+[5096] dagger rise environment than for the
+[5098] than the compute that actually runs it
+[5101] that doesn't compute so probably we
+[5102] would need a cheaper plan but then how
+[5104] cheap do we make it you know how much of
+[5105] this should be a commodity
+[5107] infrastructure it feels like the more of
+[5109] a critical dependency it is on a
+[5112] commercial thing the more responsibility
+[5114] we have to make it easy to use for
+[5117] smaller teams at a lower price and also
+[5119] to be more reliable cuz it's going to
+[5122] have to be it's going to be everywhere
+[5124] so it better work properly and and not
+[5126] be priced uh ridiculously at least not
+[5129] at the entry level you know so that's
+[5130] the stuff we're figuring out now yeah
+[5133] Community Le growth Community Le growth
+[5135] once you get to a certain scale yep you
+[5137] can pay them you're not sure how much to
+[5139] charge yet interesting
+[5142] times yeah I love this though remember
+[5144] six months ago we were dealing with
+[5146] people trying to learn q and failing and
+[5151] now we're dealing with people who who
+[5153] want to buy something from us and and
+[5155] we're figuring out how and that's it's
+[5159] I'm I'm appreciating that that that
+[5160] change yeah that's a much better problem
+[5162] to solve for sure well Solomon thanks so
+[5165] much for coming on the show and thanks
+[5167] so much for think I mean thinking out
+[5169] loud with us even I can tell like this
+[5171] stuff is like you're actively mulling a
+[5173] few things of metaphors you're working
+[5174] on the metaphors oh yeah work in
+[5175] progress It's a work in progress I think
+[5177] you know things take a while to
+[5179] formulate and I'm now starting to
+[5182] understand understand dagger much better
+[5184] I think that uh that will be one of your
+[5186] challenges will be education as things
+[5188] go forward of course the website
+[5190] currently says cicd as code that runs
+[5194] anywhere not a bad starting place but
+[5196] there's definitely way more to dagger
+[5198] story so exciting times man definitely
+[5201] interested than it kind of feels like um
+[5204] you you came over and visited uh my
+[5206] mental workshop for an hour here you
+[5209] definitely workshopped a couple of
+[5210] things which hey we're here here for
+[5212] that we love to think things through
+[5214] together it's fun and stimulating by the
+[5217] way this is how our Discord feels every
+[5219] day that this is basically what we're
+[5221] doing with with our dagger nuts all the
+[5223] time you know we like we have all these
+[5225] discussions openly and it's really fun I
+[5228] really enjoy it yeah that's cool I'm
+[5231] looking since you're talking about uh
+[5233] Jared we sort of like
+[5235] ideating the value proposition how it's
+[5238] described on the homepage the only
+[5240] positions open are in engineering
+[5242] seems like maybe content production or
+[5245] things like that I mean could be you
+[5247] know the educational front you know of
+[5249] things which is all content really I
+[5251] agree yeah actually that page is out of
+[5253] date because we've been pursuing
+[5255] directly uh some people on the on the
+[5258] marketing side we actually have a a VP
+[5260] marketing as of last week
+[5262] congratulations and so that's very
+[5264] exciting we're also hiring we're going
+[5265] to start hiring for a head of content
+[5268] marketing on top of that for the reasons
+[5270] you explain and the other we use is a
+[5272] lot of the people on our team who are
+[5276] Engineers or have engineer in their
+[5277] title also we're a um Dev relations or
+[5280] advocacy hat you know and there's all
+[5283] sorts of interesting variations you can
+[5285] have combinations I mean Kyle who's our
+[5287] Solutions engineer he's out there
+[5288] supporting production users and now
+[5291] customers you know pre-sales posts sales
+[5293] he's also doing a lot of I mean he wrote
+[5295] a lot of blog posts guides produce a
+[5298] bunch of
+[5299] videos because it turns out if you have
+[5302] operational experience supporting
+[5303] customers at scale you can come back if
+[5305] you're the right kind of person you can
+[5307] come back and package that into a story
+[5308] right I mean Kelsey is like the ultimate
+[5310] example of that right yeah vicam who's
+[5312] our who came in as our Tech writer is
+[5315] increasingly active on the engineering
+[5317] side also so it's kind of a you know
+[5319] there's a lot of these interesting
+[5320] hybrid roles in early stage teams that I
+[5322] think are really fun and also really
+[5324] hard to hire for because they don't fit
+[5326] one neat label you know but um so it's
+[5330] we share the burden of helping
+[5332] supporting educating but yeah it's
+[5335] there's a lot work a lot of work
+[5337] remaining yeah yeah well the number one
+[5340] question they have there is what the
+[5341] heck is this thing tell me what that
+[5343] thing is and I think you know part of
+[5344] this workshopping we did was you know
+[5346] finding the right analogy how to
+[5348] describe that analogy and like even when
+[5350] you talked about the boxes and the you
+[5351] know standardized boxes like that
+[5353] started to make more sense to me you
+[5355] know and how it was a factory and what's
+[5357] inside the box is what dagger made
+[5360] essentially I mean that all began to
+[5362] piece together for me that's half the
+[5363] battle when you're starting to innovate
+[5365] on the edge like you are you you cannot
+[5367] describe what it is because it's not
+[5369] quite defined yet you know you know we
+[5370] just passed a milestone I was just
+[5372] writing our investor update and that you
+[5374] know we count the number of um pieces of
+[5377] content that were WR created you know
+[5379] blog poster videos basically about
+[5381] dagger and for the first time our
+[5384] community of dagger knuts produced more
+[5386] than we did wow and I think that
+[5388] basically that basically sums up uh our
+[5391] strategy for this we're going to get
+[5393] better at telling the story but it's
+[5394] just such a complicated and nuanced
+[5397] story that our website will never
+[5399] capture the full story it's got to get
+[5402] better just to be clear but we're very
+[5405] dependent on our community taking that
+[5408] story and packaging it in their own
+[5409] words for their own audience and then
+[5412] going out there and put and and telling
+[5413] it MH and that's that's been the number
+[5416] one way we've grown and seen new users
+[5419] come in is through these early dagger
+[5423] they go out there and they make the
+[5424] story their own and then more dagger
+[5426] nuts show up you know uh and then so
+[5428] we're we're trying to enable them as
+[5430] much as possible to fill the gaps in our
+[5432] own storytelling cuz they at least they
+[5434] got it so let them tell it maybe better
+[5436] than us you know or more tailored to
+[5438] Their audience yeah are you proud of
+[5441] your dogs like should we send folks to
+[5443] some like the quick start guide and your
+[5444] dogs is that a good spot to send folks
+[5446] to yeah I mean dagger. and then follow
+[5448] the signs you know but yeah the the one
+[5451] thing I would say is
+[5452] if this is a topic that interests you in
+[5454] general then I recommend joining the
+[5457] community joining the Discord and saying
+[5459] high and hanging out independently of
+[5462] whether you have a use case for dagger
+[5464] right now because that's really there's
+[5466] just you mentioned it before but there's
+[5469] an ongoing change right now in this
+[5472] whole devops landscape how applications
+[5474] should deliver it's huge it's bigger
+[5476] even than dagger uh and so if you're
+[5478] even remotely interested in where that's
+[5480] going come hang out you know know we get
+[5482] to ask you questions about your
+[5484] experience of that and and vice versa
+[5487] you know very cool we'll get you back on
+[5489] in 6 months or maybe a year see what's
+[5491] changed maybe Everything's changed maybe
+[5493] nothing's changed maybe uh I hope
+[5495] something's changed yeah ah something I
+[5498] think if few lines keep going up that
+[5499] would be nice up to the right until next
+[5502] time saln thank you I look forward to it
+[5504] thank you
+[5507] guys so I want some predictions what's
+[5510] going to happen in 6 months we're going
+[5511] to get Sol him back here in 6 months
+[5513] where do you think dagger will be what
+[5515] do you think is going to change between
+[5516] now and then should we even have him
+[5518] back on in 6 months let us know in the
+[5520] comments on slack on Twitter pick your
+[5523] flavor we'll go where you go up next in
+[5526] the feed is chams like friends I talked
+[5528] to my good friend my new friend techno
+[5532] Tim all about H lab we cover procs mocks
+[5535] networking UniFi lots of UniFi low
+[5539] powerered servers being power efficient
+[5543] the mobile home lab that Tim built and
+[5545] The Business of YouTube make sure you
+[5547] check it out thanks again to our friends
+[5550] at fastly fly and also typ sense and of
+[5555] course those beats from the beat Master
+[5556] himself break massive cylinder those
+[5559] beats are banging but that's it the
+[5561] show's done we will see you on
+[5570] Monday
+[5600] w
+[5612] k

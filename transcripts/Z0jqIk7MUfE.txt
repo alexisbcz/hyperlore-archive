@@ -1,0 +1,648 @@
+[0] all right welcome Jonathan Ross founder
+[3] and CEO of grock grq I'm very excited to
+[7] talk to you today uh I interviewed two
+[10] of your amazing Engineers Andrew Lang
+[12] eigor rovski uh VP of compiler software
+[16] and Chief Architect and fellow but now
+[17] we get to talk to the man himself
+[19] Jonathan Ross thank you welcome very
+[21] happy for you to be here hello thanks
+[23] for having me uh great to be on your
+[25] show so I have a handful of questions
+[28] some of them span technical some of of
+[30] them go into the business side so really
+[32] excited to hear your take on some of
+[34] them but first coming from a Founder
+[37] myself I want to know a little bit about
+[39] the founding story of grock previously
+[42] you were uh at Google you basically
+[45] invented the TPU the tensor Processing
+[48] Unit at Google which is their custom
+[49] silicon running a lot of their software
+[52] why did you decide to leave what did you
+[54] think that you could do outside of
+[56] Google that you couldn't do inside of
+[58] Google and how was that decision uh come
+[60] to well I love my time at Google it was
+[62] amazing and uh got to build the the
+[66] Google TPU which was the chip that
+[68] powers all the AI there and learned a
+[70] lot and then I was in Google X and the
+[72] rapid eal team which is the team that
+[74] comes up with the next things to do and
+[77] I I kept referring to the the TPU effort
+[80] as a startup within Google and I didn't
+[83] quite realize at the time how how
+[86] constraining it is to be in a large
+[87] company and this is relevant right now
+[89] and today because so many people are
+[91] wondering whether or not they should go
+[92] and start their own
+[94] startups and it it's hard to make that
+[97] decision well the the thing that really
+[101] cinched it for me was when I realized in
+[104] order for me to do something inside it
+[107] it was it was sort of like VC I had to
+[110] get someone to fund it but inside I had
+[114] to get a whole bunch of people to say
+[116] yes and it was an and across all of them
+[118] whereas leaving it was an ore and there
+[120] were more people there were thousands of
+[122] VCS and any one of them could fund it so
+[125] I could be more ambitious I could be
+[126] more bold than trying to fit in sort of
+[129] the eye of the the corporate needle so
+[131] if you're thinking about whether or not
+[132] you want to start something yourself the
+[135] question is do you feel
+[137] constrained and if you do you're
+[140] probably better off going and doing your
+[142] own startup did you have the idea for
+[144] the grock architecture at Google and you
+[146] couldn't get the green light and that's
+[147] why you decided to leave or was there
+[149] some other reason no actually in fact I
+[151] didn't even know I was going to do a
+[153] chip when I was leaving cuz I'd been
+[154] doing so many other things um and uh for
+[157] a while I actually set a record for the
+[159] the best image classification model um
+[162] so I was doing machine learning but I
+[163] was also doing like bio I was doing uh
+[166] mechanical engineering all sorts of
+[167] other things around the time that I left
+[170] what happened was the TPU paper got
+[173] published and all the VCS wanted to talk
+[175] about was an AI chip and one of them
+[177] asked me what would you do differently
+[179] and I'm like I'm like well I'd make the
+[181] software much easier to use cuz it was
+[183] almost impossible he's like I'll fund
+[184] that and I'm like okay and so that was
+[187] about it and so we spent about I would
+[190] say uh the first six months working on
+[193] just the the compiler before we ever
+[196] started designing the chip and that's
+[197] what gave us a very unique Advantage
+[199] okay let's let's continue talking about
+[201] the chip now grock is known for the
+[203] inference speed I mean it's insane we're
+[205] talking 5 six 7 plus 100 tokens per
+[208] second and
+[210] I've read that the grock chips
+[213] themselves while incredibly fast have
+[215] kind of a low memory per chip which
+[217] means it requires you to if you're a
+[220] business and you're acquiring you know
+[223] grock Hardware to run your own inference
+[226] you have to buy a bunch of them and
+[227] they're not inexpensive so how how
+[229] should companies think about that and
+[232] what was the decision to make the memory
+[235] lower why why was that decision made and
+[237] then yeah how how should businesses
+[238] thinking about running their own
+[240] inference on their own Hardware think
+[241] about buying grock Hardware that's a
+[243] great question and you can't build
+[245] something different without doing some
+[247] things that are a little bit
+[249] counterintuitive and this may have been
+[251] quite a bit counterintuitive because we
+[253] still get questions this today we
+[254] actually have people I I kid you not who
+[258] um will use our our website gro.com with
+[261] a que and they'll use the models and
+[263] it'll be fast and they're like this
+[265] can't possibly work and I'm like but but
+[267] you just used it and you used it on a
+[269] big model model and it work right so
+[271] where is this sort of intuition leading
+[273] people in the wrong way well the
+[275] assumption is if you run on a smaller
+[278] number of chips that's better and the
+[281] question is why I mean no one's going
+[284] like in Invidia is trying to go to a
+[286] larger number of chips their latest
+[287] thing is 576 chips right and they keep
+[290] trying to go larger and larger which is
+[292] interesting because we we currently run
+[294] well we were running on 576 we're now at
+[296] 792 so we're already ahead of where
+[298] Blackwell is going to be now why is this
+[301] advantageous why would we design for
+[302] more chips rather than fewer chips it's
+[305] not about the number of chips it's about
+[307] the efficiency and being able to avoid
+[308] memory so think about it this way if
+[311] you're building a car and someone says
+[313] we're going to build a car in a factory
+[315] your first thought isn't that's going to
+[316] make the car more expensive yes it's
+[318] going to cost a lot of money for the
+[319] factory but each car that comes out is
+[322] going to be less expensive why because
+[324] instead of doing it in your backyard and
+[325] figuring it all there's just like an
+[326] assembly line right the problem with an
+[329] assembly line you need a lot of space
+[331] and in particular uh if you were to
+[334] think of it as you need about a million
+[336] square feet well if you only have
+[338] 100,000 square ft of assembly line space
+[342] then what you're going to have to do is
+[343] you're going to have to set up the first
+[344] one10 of the assembly line run a bunch
+[346] of cars through Park them in a parking
+[348] lot tear it down set up the next 1110th
+[351] run them through again you're just going
+[352] to have to keep doing that over and over
+[354] again that's why gpus are so slow at
+[357] producing the tokens they're reading
+[360] that config or the memory the parameters
+[363] from um external memory and it's like
+[366] sipping through a martini straw whereas
+[368] we just have a large system and
+[369] everything just shoots through now why
+[371] we're so inexpensive when we do that is
+[373] because you're only on those segment of
+[376] chips for a very short period of time
+[378] just like you're only on a portion of
+[379] the assembly line for a very small
+[381] portion of the time but we get better
+[382] use of the chips but if you're a company
+[385] and you're thinking about acquiring
+[386] grock chips it it is a massive
+[388] investment how like when would a company
+[391] just use your cloud provider like your
+[393] inference provider versus going and and
+[396] actually acquiring their own ships how
+[397] should they think about it do they need
+[399] like a certain level of technical
+[400] ability to to set it up to maintain it
+[403] I'm sure you give help but H how should
+[405] companies think about going Cloud versus
+[408] acquiring their own uh Hardware first of
+[410] all everyone should start with grock
+[412] Cloud H you just go to console. grwi
+[415] qq.com
+[416] and uh you can immediately start using
+[419] us
+[420] we've we've actually launched that about
+[422] 4 weeks ago and we now have 70,000
+[424] developers and I think something like 17
+[427] 18,000 API Keys have already been
+[429] generated so that's how many apps and
+[430] it's really easy to use doesn't cost you
+[432] anything to get started you just use our
+[434] API like you would open AI we're
+[436] compatible with that and most of the
+[438] applications that have been built with
+[439] us have been built that way if you get
+[441] to a point where you do that and you're
+[443] like wow this is amazing and I have an
+[445] enormous amount of scale right I'm doing
+[448] millions of to tokens per second then we
+[451] can talk about deploying hardware for
+[452] you on Prem but right now we just handle
+[455] it for you you don't have to worry about
+[456] it and so sort of like I want my
+[458] specialized car to come out of the the
+[460] you know assembly line you don't need to
+[462] buy the assembly line you just use our
+[464] API and we'll get you your car super
+[465] fast you know I've seen a lot of
+[467] companies pop up where they're buying a
+[470] bunch of Nvidia cards and essentially
+[472] kind of leasing them out is that a
+[474] potential business model for grock
+[476] Hardware as well we're not going to be
+[478] renting individual chips uh what we will
+[481] do is at some point we will allow people
+[483] to upload their own models and we will
+[485] handle running that ourselves and one of
+[487] the reasons is because of the way that
+[489] our Hardware works because of how
+[491] automated everything is you don't have
+[493] to manually manage all of the hardware
+[496] like you do with gpus and so it's easy
+[499] for us to sort of time division
+[500] Multiplex or get better use of the
+[502] hardware and astounding fact is roughly
+[506] 25% um of gpus are utilized it's
+[509] actually I've heard that it's actually
+[511] lower than that but that's where people
+[512] are trying to get to so 75% of GPU time
+[516] is just wasted think about how much
+[518] power think about how much these are
+[520] incredibly expensive yeah it's kind of
+[521] like automobiles right they they sit
+[523] unused 90% of the time and I think like
+[527] Elon mus talks about uh autonomous
+[529] driving how that'll vastly increase the
+[531] utility of each vehicle how do you think
+[533] about getting more utility out of each
+[535] card then so you've absolutely nailed it
+[537] if anything you should think of grock as
+[539] the lifter Uber of um of generative AI
+[544] where you just make a request and we
+[546] satisfy it and we get really good
+[548] utilization of that Hardware but our
+[550] Hardware also is less expensive it uses
+[552] about onet of the power so it's better
+[554] for um uh the ecosystem and all that and
+[557] so it's just advantages all around but
+[560] the one disadvantage is you've got to
+[561] start with a big chunk just like you
+[563] start with a big Factory and we just
+[565] handle that for you you just use us as a
+[567] service okay you you touched on energy
+[570] briefly I want to continue on that let's
+[571] let's think about the future a little
+[573] bit what does the industry look like in
+[574] in five and or 10 years and I I've been
+[578] reading a lot about Sam Altman saying
+[580] compute is the currency of the future
+[582] what are the biggest bottlenecks that
+[583] you see in five and 10 years is it
+[585] electricity is it silicon what is it and
+[589] and um yeah how how do you see the
+[590] future as as kind of the leading mind
+[593] and a leader of of a silicon company so
+[595] he's absolutely right that compute is
+[597] going to be the limiter we often refer
+[599] to compute as the new oil and the reason
+[603] is think think about it this way we were
+[604] in an information age where you would
+[607] make copies of data with High Fidelity
+[610] and you distribute it that's what the
+[611] internet was that's what mobile was but
+[614] that's also what the printing press was
+[616] they're effectively the same type of
+[617] Technology just at a different scale and
+[620] even though it was the same type of
+[621] Technology at a different scale even
+[622] that was hard for our intuitions to
+[624] adapt to but generative AI is not an
+[627] Information Age Technology because
+[630] you're not making copies of something
+[631] you're making something new in the
+[632] moment and the difference is when you're
+[634] making something new in in the moment
+[636] you need compute to do that it's not
+[637] about retrieving something from a hard
+[639] drive doing a little bit of compute and
+[640] sending it out you are creating it in
+[643] response to a particular question and
+[645] what we often see is people will train a
+[647] model and then they'll go mission
+[649] accomplished we've succeeded now we're
+[651] going to put it into production and then
+[653] all of a sudden they realize they're
+[655] going to have to spend 10 to 20x to
+[658] deploy it and so you spend your money
+[661] when you're training the models you make
+[662] your money when you're actually doing
+[663] inference so so okay um I I I want to
+[667] continue on this topic for a second if
+[668] if you were to give advice to other
+[670] entrepreneurs somebody who wants to
+[672] start a startup in the AI space they
+[675] have basically four areas that they
+[677] could potentially choose they have the
+[679] Silicon which you know that's where
+[681] you're working and Gro um they have the
+[684] application layer they have the
+[685] infrastructure layer and then they have
+[686] the model layer where where do you think
+[687] the most value is going to be extracted
+[690] in 5 10 years cuz it it certainly does
+[693] seem like models are becoming
+[695] commoditized very quickly well this this
+[697] was part of the calculus as I mentioned
+[699] I actually had a record setting
+[701] classification model but I realized
+[703] because everything was being given away
+[705] for free on that part of the layer it
+[707] was going to be really hard to monetize
+[708] and build a business it's much easier to
+[710] do it at the picks and shovels level
+[712] where you're selling physical atoms or
+[714] building physical things the problem is
+[718] the era for that's it's kind of over if
+[721] you wanted to start building chips today
+[723] you're you're not going to get to the
+[724] scale I mean there were there probably
+[725] over 100 startups that were funded to
+[728] build AI chips and what people don't
+[730] realize is they tend to build a feature
+[734] rather than a product it's like we've
+[735] got this one advantage but then you've
+[737] got this entire ecosystem of software
+[740] and everything else that you have to
+[741] build it that's just too hard the next
+[743] place is more in the infrastructure
+[745] space where you're you're doing some of
+[747] the drudgery you know the famous bezos's
+[749] quote do what um makes your beer taste
+[751] better not other stuff like AWS was
+[754] created um to to just handle a lot of
+[757] that drudgery and if you focus on the
+[759] drudgery you have a little bit less
+[761] competition uh you know it's not the
+[763] sexiest thing in the world and there are
+[765] opportunities to build pretty big
+[767] businesses there that are lasting again
+[770] it's not a great time to start those
+[772] because even now there's a lot of but
+[775] you have a chance there unlike with the
+[776] chips where the lead times are are
+[778] really WR the ability to be successful
+[783] in creating an actual generative AI
+[786] model company or or this um it's harder
+[789] to make the prediction of what's going
+[790] to be successful it's sort of like when
+[791] the printing press first came around it
+[793] was much easier to predict that whoever
+[795] was making paper was going to do well
+[797] but there were some pretty uh successful
+[799] newspapers so I think in terms of your
+[803] expected value it could be higher if you
+[806] are working on uh the actual AI self Dem
+[809] models and so on but your your variance
+[811] is also going to be higher your ability
+[813] to predict whether or not you're going
+[814] to be successful is higher so really
+[816] just do do the thing you know you you
+[818] don't really get to pick um because you
+[821] you you know an area and just do that
+[823] and it's going to be great have fun so
+[826] like one one area that I'm particularly
+[828] interested in that I think is going to
+[830] generate a lot of value in the future is
+[832] Agents I'm extremely bullish on agents
+[834] and I I want to get your thoughts but my
+[836] my question to you is grock's inference
+[839] speed in in my mind the Pinnacle of the
+[842] use case for that inference speed is
+[844] Agents powering agents to work together
+[846] because those agents I know a lot of
+[848] people think like humans can only read
+[850] at you know whatever X tokens per second
+[853] certainly much lower than 6 700 tokens
+[856] per second what are your thoughts on
+[857] agents what are your thoughts on the
+[860] best use cases the the the unlocks that
+[863] GRS inference speeds allow for so first
+[865] of all when we were trying to aim for a
+[867] 100 tokens a second most people
+[869] internally were saying why would anyone
+[872] ever need that that's faster than I can
+[874] read right and what I want you to do is
+[876] I want you to if you're old enough to do
+[878] this I want you to recall back to the
+[880] sound of a dialup modem because even
+[882] dialup was faster than you could read
+[885] but gosh were you excited when you got
+[887] Broadband why because human beings don't
+[890] like to read like this as something is
+[892] being printed out like an old teletype
+[894] machine eyes scan a page really quickly
+[897] and figure out almost instantly whether
+[898] or not not they've got what they want
+[900] what we're seeing as people use our our
+[903] chat site is that um people will type a
+[906] question and before they could ever
+[908] possibly read it they ask a follow on
+[910] because they can tell it wasn't exactly
+[912] what they wanted or it was but they
+[914] wanted to sort of zoom in on a
+[916] particular part of it like you know when
+[918] there's a bunch of bullet points it's
+[919] like oh tell me more about number four
+[922] and then they just keep going coding
+[924] it's the same thing you can tell that
+[926] there's an issue and so that speed is
+[928] really important and if you think about
+[929] it Google after they originally did page
+[932] rank spent almost all their time trying
+[933] to improve the latency and they
+[936] discovered imperceptible changes in
+[938] latency like literally you would show A
+[941] and B and the human being couldn't tell
+[943] you whether or not A or B was faster
+[945] when a was faster they used it more when
+[947] B was faster they used it more even
+[949] though they couldn't tell you which one
+[951] was faster so speed matters dramatically
+[955] just to put a number on that 100
+[956] milliseconds Improvement in latency is
+[959] 8% conversion rate increase on uh
+[962] desktop on mobile it's in the 30% so
+[965] people have no what what are your
+[967] favorite use cases that that inference
+[969] speed
+[970] unlocks well first of all um just to
+[973] give you some numbers we we just took
+[975] normal open source models put them on
+[977] our website and uh we went in one week
+[981] going from 8,000 new users to 400,000 we
+[984] have no chat history we have nothing
+[986] right and then in our console our
+[987] developer console in less than about I
+[990] think 30 days we got to 70,000
+[994] developers and uh 17,000 18,000 API Keys
+[1000] all with the same models everyone else
+[1001] has because of the speed why so there
+[1004] are applications that you can do that
+[1005] you can't do elsewhere interactive
+[1008] speech uh but we've also seen some
+[1010] really wild things like infinite
+[1012] Wikipedia where it generates articles
+[1014] and if you click the link it immediately
+[1016] generates the next page and you can just
+[1018] keep going forever oh that's cool but
+[1020] about every 30 minutes someone posts a
+[1023] new application built on um grock on on
+[1027] um Twitter or something and it's just
+[1030] amazing seeing all the creativity
+[1032] everything from search to Speech but
+[1034] also these weird things like infinite
+[1036] Wikipedia okay um so okay let's switch
+[1040] topics for a second let's say I am a
+[1041] model builder um whether you know open
+[1045] AI or or uh mistol or an open source
+[1049] company are there particular techniques
+[1052] that I I should use to optimize for
+[1056] grock hardware and then also how does a
+[1058] new model get chosen to be on your cloud
+[1061] provider well great question the first
+[1064] thing is there's an interesting paper
+[1065] called the hardware Lottery which
+[1068] effectively says that whether or not
+[1070] you're you pick the right model depends
+[1072] on the hardware and since everyone has
+[1075] been developing for um gpus and in
+[1077] particular Nvidia gpus use it's really
+[1080] hard to pull ahead because people
+[1081] optimize for that and so the fact that
+[1084] we've been able to get a 5 to 10x
+[1086] performance advantage over um Nvidia
+[1089] gpus it's a very rare thing that's
+[1090] probably not going to happen again and
+[1092] now we have people coming to us asking
+[1094] how do we optimize for your Hardware
+[1095] well the first thing is we have an
+[1096] automated compiler so you don't have to
+[1098] do much work like it it just works but
+[1101] there are some things that you can do to
+[1103] optimize for us in particular
+[1106] architectures that take advantage of low
+[1109] latency so for example a lot of uh model
+[1112] architectures that have been dismissed
+[1114] like rnns and lstms because you need a
+[1116] really tight low latency Loop actually
+[1118] work really well on our Hardware so you
+[1120] can now start to explore some of these
+[1122] other options but more simply um you
+[1125] know we have the ability to do quantize
+[1128] numerics which by the way we're still
+[1130] doing fp16 multiplies and getting that
+[1132] speed um and so if you take advantage of
+[1135] our ability to quantize if you take
+[1137] advantage of
+[1139] uh some of the the particular dimensions
+[1141] of the hardware are faster interconnect
+[1143] than is available with gpus you can get
+[1145] some huge advantages and we've walked
+[1147] through that with some potential um
+[1150] model providers and then lastly we're
+[1153] focused on making the best of the best
+[1155] models available on grock uh we're not
+[1158] um hugging face we don't have 500,000
+[1161] different models anything that we run is
+[1163] going to be one of the more interesting
+[1165] models and we consider that part of our
+[1167] role to to to make some to to have a an
+[1171] opinion on what is good okay so Jonathan
+[1174] for the last question I really want to
+[1176] think about what the future looks like
+[1178] there are a lot of people who are really
+[1181] afraid of AI you know whether it's going
+[1183] to take their job whether it's going to
+[1185] become sentient and and really have kind
+[1187] of a Terminator outcome um I I'm I'm
+[1191] pretty positive about it but I also
+[1193] understand the fear I want to know like
+[1194] what are you most hopeful about and then
+[1196] of course what are you most fearful
+[1198] about being on the inside of and seeing
+[1201] it all from the you know the eye of the
+[1203] tornado that's a great question I I
+[1205] think the the main thing on the hopeful
+[1208] side is I think it's going to bring
+[1210] subtlety and Nuance to human discourse
+[1212] right now most of the problems that we
+[1214] have as people are when we oversimplify
+[1217] things but think about all the arguments
+[1220] you've ever had in your life and the
+[1222] ones that have been resolved are
+[1223] typically the ones where you have an
+[1225] Insight of oh that's what you mean or or
+[1227] now I get it from your point of view
+[1229] and we've been fed a steady diet of TV
+[1231] which is all about drama a steady diet
+[1234] of social media which is all about
+[1236] engagement and sort of working your
+[1238] Primal um emotions in a very simple way
+[1242] I think with generative AI with that
+[1244] extra intelligence uh and capability
+[1247] you're going to ask questions and rather
+[1249] than sort of your more basal instincts I
+[1252] think it's going to provoke curiosity
+[1254] and it's going to uh open up subtlety
+[1257] and nuance and I I think think children
+[1259] growing up sort of the Gen gen
+[1261] generative age children will will grow
+[1265] up with much more curiosity and and a
+[1269] desire to view situations with more
+[1271] subtlety and nuance and will get along
+[1273] better just because they'll have that
+[1275] that experience on the fear side I've
+[1278] been asked this a lot should we be
+[1279] afraid and there's a really good lesson
+[1282] from history here which was centuries
+[1284] ago Galileo invented the telescope and
+[1287] he got in a lot of trouble for that he
+[1289] got in a lot of trouble because when he
+[1291] pointed up at the sky all of a sudden we
+[1294] realized that the Universe was bigger
+[1297] than we thought it made us feel really
+[1299] small as people and as we got used to
+[1303] this idea that the Universe was big much
+[1306] bigger than we were we started to
+[1307] realize how beautiful it was and and how
+[1310] much there is out there to explore and I
+[1312] think the same is true of generative Ai
+[1315] and large language models the large
+[1317] language model is the telescope for the
+[1319] mind in the sense of it's shown us just
+[1321] how vast and how large and how capable
+[1325] intelligence is it's just getting
+[1327] started and as we improve we're going to
+[1329] start seeing further and further out and
+[1333] my hope is that we're going to start
+[1335] looking at the vastness of intelligence
+[1338] as a beautiful thing rather than as a
+[1340] threat and we're just going to have to
+[1341] come to terms with where we are in the
+[1344] universe and you mentioned gen gen right
+[1347] so the new generation ation that is
+[1349] going to get a lot if not most of their
+[1351] information from generative models very
+[1354] similar to kind of traditional media
+[1358] social media somebody is ultimately
+[1360] controlling that algorithm and and that
+[1362] algorithm is going to change how people
+[1364] think about everything what are your
+[1366] thoughts on on the control of the actual
+[1369] algorithm of the weights and and bias
+[1372] that the models might have in them so
+[1374] grock's mission is to preserve human
+[1375] agents in the AI and the way to do that
+[1379] is to make sure that we continue to make
+[1382] decisions the concern is not so much
+[1385] that AI is going to take over it's that
+[1388] it's going to be convenient to give all
+[1390] of our decisions over it starts off with
+[1394] uh I want some milk the AI goes and
+[1396] orders some milk and it shows up at your
+[1398] home to I'm thirsty and it says well you
+[1400] should drink some milk to uh milk's kind
+[1403] of expensive okay vote for this
+[1405] politician because they're going to
+[1406] reduce the cost of milk right you just
+[1408] give up more and more control over
+[1411] time because we're going to be very
+[1413] selective about the models that we run
+[1415] what we're going to do is we're going to
+[1417] make sure that the models are the ones
+[1418] that don't make decisions for you but
+[1422] help you map out and understand and make
+[1424] your own decisions and it's going to be
+[1426] a constant challenge we're going to
+[1427] constantly learn how we do that but
+[1430] rather than making the decisions it's
+[1432] about um opening up the aperture for
+[1435] people to see what is in front of them
+[1438] so they can make their own decisions
+[1439] yeah that that's certainly going to be a
+[1441] challenge um you know curating models
+[1444] curating information essentially but a
+[1446] big and important challenge nonetheless
+[1448] so Jonathan thank you so so much for
+[1450] joining me today thank you for your
+[1452] amazing insights really appreciate your
+[1454] time and uh thanks again Jonathan CEO of
+[1457] Gro well thanks for having me and uh
+[1460] it's great to be here thanks

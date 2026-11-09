@@ -1,0 +1,1186 @@
+[34] Please welcome to the stage Vercel
+[37] founder and CEO Guillermo Rauch.
+[43] &gt;&gt; Good morning.
+[46] Good morning everybody. Thank you. GM
+[50] and welcome back.
+[52] Hello. Today we're having the sixth
+[55] annual Next.js Conf. I'm pumped to spend
+[59] a day with everyone here in this room.
+[62] And a special shout-out to the thousands
+[65] of people watching around the world,
+[67] especially our watch parties in London
+[70] and Berlin. Thank you for spending your
+[72] time with us today.
+[74] Last year
+[75] when we met, we're a year and a half
+[78] into this app router era of Next.js.
+[82] And at that time, our framework was
+[84] being downloaded 7 million times per
+[88] week.
+[89] And over the course of building the app
+[91] router, we made a lot of bets. We'll be
+[94] talking a lot about bets today. When it
+[96] first launched, it had the earliest
+[98] mainstream implementation
+[101] of React Server Components.
+[103] It also supported nested layouts.
+[106] It used the file system as the API for
+[109] its routing features.
+[110] And it kicked off the development of
+[113] Turbopack to ensure that this new
+[116] server-first
+[118] would scale to apps of all sizes.
+[122] Today, Next.js is being downloaded 13
+[125] million times per week. Nearly double.
+[128] Thank you.
+[131] Nearly double the adoption in just one
+[133] year, especially with AI math, right?
+[136] That tells us that many of our bets are
+[139] paying off, and we're so grateful to the
+[142] community who has helped us get the app
+[144] router to where it is today. Thank you
+[147] so much.
+[149] But, how we're writing software has
+[151] changed.
+[152] When we started the app router,
+[154] GPT-3 had just come out.
+[157] ChatGPT or chat didn't exist.
+[161] GitHub Copilot was in beta.
+[163] In a very short amount of time,
+[165] we've gone from writing code by hand
+[168] to getting suggestions
+[170] to having models write code
+[173] to now having agents that author, test,
+[177] execute, and ship entire features.
+[181] And what we've seen with these LLMs is
+[183] that they really push us in terms of the
+[186] design of our own APIs.
+[189] An LLM's context window is even shorter
+[192] than a human's attention span.
+[193] So, if we make an API that's confusing
+[196] for anyone in this room,
+[198] the LLMs stand no chance.
+[201] The easier we make the developer
+[203] experience for humans, the better we
+[206] make it for agents.
+[208] So,
+[209] with all of this in mind, let's take a
+[212] closer look at our bets and see which
+[215] ones paid off and which ones we're
+[217] revisiting.
+[218] So, the first one we're really happy
+[219] with, I'm really happy with,
+[222] is React Server Components.
+[225] When we decided to go all in on RSCs,
+[229] we're investing in a novel, unproven
+[232] architecture.
+[234] Fast forward to today and we're seeing
+[236] RSCs gain adoption in popular ecosystem
+[239] projects like Vit,
+[241] React Router, Redwood SDK, Waku, Parcel,
+[245] and more.
+[247] And other projects like TanStack
+[248] TanStack Start are actively working on
+[251] an integration.
+[253] What's more, even outside of React,
+[256] projects like Svelte are bringing more
+[258] and more of the rendering to the server
+[260] side. The server is so back.
+[264] So, this is quite remarkable of a
+[265] development. RSCs provide an idiomatic
+[268] way for all React apps to fetch data and
+[272] compose server-side and client-side
+[274] logic together regardless of the
+[276] framework that you choose.
+[278] So, we're excited to see all of these
+[280] innovations
+[281] continue to come to the React ecosystem
+[284] and the adoption continuing to spread.
+[287] Server actions, server actions are
+[289] another feature that we're seeing pay
+[291] off.
+[292] They let you handle API requests
+[294] directly inside of React.
+[296] And between React Server Components and
+[298] Server Actions, Next.js now has support
+[300] for first-class idiomatic APIs for both
+[304] data reads
+[305] and writes,
+[307] which is something that we never had
+[308] with the pages router as much as I loved
+[310] it.
+[312] We're also seeing success with our new
+[314] routing architecture.
+[315] Layouts persist across navigations. This
+[319] is kind of like the dream of React,
+[320] right? Avoiding unnecessary renders
+[323] across navs,
+[324] maintaining ephemeral state during RSC
+[327] updates.
+[329] The router also supported advanced
+[331] routing patterns with parallel and
+[333] intercepting routes.
+[335] And our file system conventions allow
+[337] every screens UI, data, and logic to
+[341] live together.
+[343] So, these features have enabled a new
+[344] level of scale
+[346] for the most ambitious applications.
+[349] Finally,
+[350] one of our biggest bets has been
+[352] Turbopack.
+[354] I remember when I first saw a demo of
+[357] Turbopack and it was performing fast
+[359] refresh in single-digit milliseconds.
+[363] I was like, "Holy cow."
+[365] But we asked ourselves in that meeting,
+[366] "Is this worth it? Because a human under
+[369] 100 milliseconds is still kind of the
+[371] same, right?"
+[372] But for an agent loop, every millisecond
+[376] counts.
+[378] Turbopack now drives more than half of
+[381] all Next.js 15 development sessions with
+[384] over half a million developers using it
+[387] every week. It's astonishing.
+[390] And after releasing it as a stable as a
+[392] stable for development last year, our
+[394] ambition for this year was to enable it
+[396] by default for all new apps.
+[400] So,
+[401] our first milestone was to ensure that
+[404] all of Next.js built time features
+[407] continue to work.
+[409] This meant getting the existing suite of
+[411] 8,266
+[414] tests to pass. It's an incredible
+[416] accomplishment.
+[417] But we then proved it in production.
+[419] Our own internal sites adopted Turbopack
+[421] for builds,
+[422] giving us the confidence that it was
+[424] ready for everyone.
+[426] And today,
+[427] I'm thrilled to share that Turbopack is
+[431] the default for all apps on Next.js 16.
+[442] And we're not deprecating Webpack
+[444] anytime soon. We are shipping both. We
+[447] care a lot about backwards compatibility
+[449] and we're setting up Next.js to be
+[451] incredibly fast for the majority of our
+[454] users.
+[456] So,
+[457] I speaking of Webpack, when compared to
+[460] we've seen up to seven times faster
+[465] production builds.
+[467] Up to 3.2 times faster initial load
+[472] times in development.
+[475] And
+[476] believe it or not
+[478] astonishingly
+[479] up to 70 times faster HMR updates in
+[484] Next.js 16.
+[486] If you take a look at these numbers,
+[488] you'll see that Turbopack is especially
+[491] good at updates.
+[493] Once it's warmed up, it can track tasks
+[496] at a granular level
+[498] and avoid redoing unnecessary work.
+[502] But in reality, if you stop your dev
+[504] server, all that work gets kind of
+[507] thrown away.
+[509] And if you start a new dev session, you
+[511] have to start over from scratch.
+[513] So, we've been iterating on this problem
+[515] all year.
+[517] And today, I'm excited to announce
+[520] that a file system caching for
+[522] development is now in beta.
+[525] It extends the in-memory task tracking
+[528] of Turbopack to full server restarts by
+[531] leveraging the file system. The good old
+[534] reliable awesome file system.
+[537] And this is going to be particularly
+[539] awesome for the largest projects in the
+[541] ecosystem.
+[543] I have one more teaser.
+[546] We're already working on bringing this
+[548] amazing innovation to your production
+[551] builds, so you can develop
+[553] and deploy
+[555] faster than ever.
+[557] So,
+[558] the investments that we've made in our
+[559] new bundler are really paying off.
+[562] But we live now in a world of agents
+[565] that can continuously open pull requests
+[567] and create preview builds.
+[570] And for this world Turbopack is going to
+[572] pay off a thousand times over.
+[576] Speaking of agents
+[578] another bet we're making is on the
+[579] importance of keeping models up-to-date
+[583] with the latest best practices in
+[584] Next.js.
+[586] That means understanding features like
+[587] server components,
+[589] server actions, even features that we're
+[591] announcing today.
+[594] Who likes when Claude tells you, "You're
+[596] absolutely right." and it uses an old
+[598] API, right? So, to support that,
+[601] we're open-sourcing
+[603] Next.js
+[606] Next.js is a public benchmark that
+[608] tracks how well the latest models in
+[611] coding agents can build with Next.js.
+[616] This is an investment into the
+[617] ecosystem.
+[618] The better AI gets at Next.js,
+[622] the better everyone's developer
+[623] experience will become.
+[625] So, if you're in the AI space, we'd love
+[628] to collaborate.
+[629] But now,
+[630] let's talk about the bets that haven't
+[632] paid off.
+[633] There's one big one that we've been
+[635] iterating for the past 2 years. Any
+[637] guesses?
+[640] Yeah, that's right. Caching. Our
+[643] favorite word as computer scientists.
+[646] We try to make things static by default.
+[648] This is kind of the background of it.
+[651] And our efforts to marry the static
+[653] rendering capabilities of Next.js with
+[655] the app router's nested layouts resulted
+[658] in kind of confusing APIs and
+[660] unpredictable behavior.
+[662] So,
+[663] let's take a step back and take a look
+[665] at the bets we've made with the app
+[667] router. Little bit of a bet review, our
+[669] portfolio.
+[671] So, here they are: server components,
+[673] server actions, file system, Turbo Pack,
+[677] and caching.
+[679] So, if we squint our eyes and focus on
+[681] the ones that paid off,
+[683] what do they have in common?
+[685] Any guesses?
+[688] A little bit of a tough one. Composition
+[690] and co-location.
+[691] Our best features really embrace these
+[693] qualities, right? So, you have this
+[696] ability to reason locally.
+[698] Server components, for instance,
+[700] they let you fetch data in every
+[702] component.
+[703] Whereas get server-side props or old
+[705] API, it was restricted to your page
+[707] module.
+[710] And our caching APIs kind of went
+[711] global. So, fetch cache no store,
+[715] export const dynamic force static, it
+[718] gives me a little bit of PTSD. So, these
+[720] APIs introduce implicit coupling and
+[723] unpredictable behavior.
+[726] And nobody likes spooky action at a
+[728] distance. That's kind of how those APIs
+[730] behaved.
+[732] So, this really all comes back to
+[733] React's core value prop, right?
+[737] Composition.
+[739] We've seen time and time again how well
+[741] this principle has served React. Both in
+[743] the longevity of the first-party APIs,
+[747] but also in how rich the ecosystem has
+[750] become.
+[751] And today, this idea of betting on
+[754] composition and avoiding spooky action
+[757] is even more important.
+[759] Because it's not only better for humans,
+[761] it's essential for our friends, the
+[763] LLMs.
+[765] So,
+[766] let's kind of evaluate how or think
+[768] about how well LLMs can work with React
+[771] code that uses Tailwind, right? Works
+[774] great. That uses shadcn, raise your hand
+[776] shadcn.
+[778] He's not here. Or even React pages
+[781] in a Next app that have both server and
+[783] client logic in one file, you get to
+[785] understand everything right there and
+[787] then.
+[788] So, composition wins over separation of
+[791] technology every single time.
+[794] But caching spans lots of technology and
+[798] lots of stacks. CDNs, in-memory stores
+[801] like Redis, browser headers like
+[804] cache control, CDN cache control, TTL,
+[807] vary.
+[808] It's been hard to figure out how to
+[810] compose all of these things together,
+[813] which is why caching kind of always felt
+[815] like it was separate from React. It's
+[817] this thing you have to worry about
+[820] rather than another Lego brick that
+[822] stacks up perfectly.
+[825] But RSCs, if you think about it, they
+[827] brought concerns right into the
+[829] component boundary. They brought
+[830] server-side rendering, for example, into
+[831] the component boundary. They brought API
+[833] routes into the component boundary.
+[836] And with use cache, we're bringing
+[838] caching into the component boundary. So,
+[841] I'm very excited to now invite Sam
+[844] up here to tell us all about the future
+[847] of caching.
+[848] Give it up.
+[857] &gt;&gt; Morning, everybody. Uh my name's Sam,
+[860] and I'm super excited to be telling you
+[862] about everything the Next.js team's been
+[863] working on today.
+[865] Uh now, it's kind of funny that I'm up
+[867] here because
+[869] uh even though I've been plenty involved
+[871] with the Next community over the years,
+[873] I only just joined the team a few months
+[875] ago.
+[876] And one of the first things I asked my
+[878] new teammates was
+[881] why does clicking around the app router
+[882] feel so slow?
+[884] I mean, sometimes you click a link and
+[886] it's fast, usually if it's a static
+[889] page. But sometimes you click a link to
+[891] a dynamic page, and you see zero
+[894] feedback, and then eventually a new page
+[897] comes in.
+[898] It's almost become a meme at this point.
+[902] Don't get me wrong. Uh I love the DX of
+[905] the app router, and I think server
+[907] components were a great addition to
+[909] React. Especially for just fetching data
+[912] and rendering it on a page, the DX is
+[914] really hard to beat.
+[916] But I just didn't understand why using
+[918] RSCs meant we had to give up on the
+[920] snappy client navigations that we're so
+[922] used to in our React apps.
+[924] I mean, isn't that one of the reasons we
+[926] love React? Is the ability to run code
+[928] right in the browser?
+[930] Why couldn't we just use RSCs for the
+[933] initial page render and use good old
+[935] client-side React for everything else?
+[939] Now, eventually I got my answer and to
+[941] be honest, it was pretty fascinating and
+[944] that's something I want to share with
+[945] you today.
+[946] But first, I want to set the stage. I
+[948] want us to understand the problems of
+[950] the app router was actually trying to
+[952] solve when it was first created in 2023.
+[957] So, what did other React frameworks look
+[959] like in 2023?
+[961] Well, most of them looked like uh
+[964] similar to each other because they
+[965] followed the broader web ecosystem.
+[969] If we go back, the earliest front-end
+[972] frameworks
+[973] bundled all of our code on the server
+[975] and then they send it to the browser.
+[977] And the browser was then responsible for
+[980] rendering, data fetching, and routing.
+[983] Kind of like an iOS app.
+[986] Um
+[987] except the web is not iOS.
+[989] People want to be able to open up
+[990] articles and links to tweets instantly,
+[993] which is exactly why in 2012, Twitter's
+[996] engineering team shared in this post
+[998] that they cut their initial load times
+[1000] by 80% by moving a lot of their
+[1002] client-side rendering back to the
+[1003] server.
+[1005] They also split up their code into
+[1007] smaller bundles so that they could lazy
+[1008] load them as needed.
+[1011] So, we started seeing features like
+[1014] server-side rendering and dynamic
+[1016] imports making their way into our
+[1018] frameworks. Things like get initial
+[1020] props.
+[1022] Uh but the story doesn't stop there.
+[1024] In 2017, Netflix shared that they had
+[1027] removed all client-side React from their
+[1029] landing page.
+[1032] Uh by pushing even more rendering and
+[1034] data fetching to the server and letting
+[1036] pre-rendered HTML do the heavy lifting,
+[1039] they saw a 50% improvement in the
+[1041] performance of this page.
+[1044] So, again, we saw the trend continue.
+[1046] More APIs doing more work earlier on the
+[1049] server, kind of like get static props.
+[1054] Now, what about those snappy SPA
+[1056] navigations that we all love so much?
+[1059] Uh so, what about this routing layer
+[1061] here? Um
+[1062] it turns out that teams that relied
+[1065] exclusively on client-side code for
+[1067] their routing concerns also ran into
+[1069] performance ceilings.
+[1071] In 2018, the engineers at Square wrote
+[1073] about using a new Ember feature called
+[1075] engines to break up their dashboard into
+[1078] sections that could be lazy loaded. And
+[1080] it's funny cuz at that time I was
+[1081] working on Ember 2, and I remember
+[1084] LinkedIn doing the exact same thing.
+[1086] They adopted this feature, Ember
+[1088] engines, because the sheer amount of
+[1089] URLs on their site was causing
+[1092] performance problems just by loading the
+[1094] entire client manifest, the route
+[1096] manifest, into the browser. And as one
+[1099] more example, recently Remix added a fog
+[1101] of war feature to help with this exact
+[1104] same problem over at Shopify.
+[1106] So,
+[1107] uh I make all these points to say that
+[1110] uh after a decade of of experience
+[1113] building with these rich front ends and
+[1116] the development of the entire framework
+[1117] ecosystem,
+[1119] this was kind of the state of the art.
+[1121] We had uh these hybrid frameworks that
+[1124] were primarily client-first SPAs,
+[1128] but they kept adding server-side
+[1130] features that you could opt into when
+[1132] you inevitably hit the limitations of
+[1135] the client.
+[1138] And this brings us to RSCs and the app
+[1140] router.
+[1142] The goal of the app router is to solve
+[1144] these problems at a foundational level.
+[1147] And we knew from experience that the
+[1149] client-centric approach was a dead end.
+[1152] That's why the app router defaults to
+[1155] rendering, data fetching, and routing on
+[1158] the server with server components.
+[1160] We wanted to bake all these hard-won
+[1162] lessons from the community directly into
+[1164] the framework so that you and your team
+[1166] never hit these performance ceilings and
+[1168] feel like you've outgrown Next.
+[1171] But here's the thing, I like snappy
+[1173] client navs. And I like opening my
+[1176] iPhone and seeing pre-rendered screens
+[1178] sitting there waiting for me.
+[1181] So, shouldn't we have this option
+[1183] to pre-render certain screens or
+[1185] pre-fetch upcoming client navigations so
+[1187] we can provide the best user experience?
+[1190] I think we should, and not
+[1192] coincidentally so does the rest of the
+[1193] team because that's exactly what they've
+[1195] been working on and what I'm excited to
+[1197] share with you today.
+[1198] It's a new feature that unlocks partial
+[1200] pre-rendering, which we started working
+[1202] on about 2 years ago. And we're calling
+[1205] it cached components.
+[1207] It lets you pre-render and pre-fetch
+[1209] your UI bringing instant navigations to
+[1212] the app router.
+[1213] So, let's see what it looks like to work
+[1216] with Next.js when cached components are
+[1218] enabled.
+[1220] Now, if you're like me, you're happy
+[1221] it's fall because football is on. So, uh
+[1224] let's make a little fan site here for
+[1226] college football. It's going to have
+[1228] real-time scores up top. It's going to
+[1230] have the current standings of the teams.
+[1231] It'll have some news stories um and so
+[1234] on. So,
+[1235] we're going to start with a simple
+[1236] layout for now.
+[1238] And we'll just get started by rendering
+[1242] the header. And this is just a static
+[1243] list of links.
+[1245] So, that's looking good so far.
+[1248] Now, let's create a module for the home
+[1249] page. So, we'll create our page.
+[1253] And this is going to be the standings.
+[1254] So, we'll add an H2 for the standings
+[1256] label.
+[1257] And then let's go ahead and add a panel.
+[1260] And uh this is coming along.
+[1263] And now we actually want to fetch the
+[1264] data for the the
+[1265] So, we're going to add a a fetch call
+[1267] here to our server component.
+[1269] So, let's go ahead and add fetch.
+[1273] We'll fetch from the API and we'll
+[1275] iterate over
+[1277] and render the teams inside of our
+[1279] panel.
+[1281] Now, when we save this and reload the
+[1283] page,
+[1284] we're actually going to see an error.
+[1287] It says,
+[1288] "Uncached data was accessed outside of
+[1290] suspense.
+[1292] This delays the page from rendering."
+[1295] And it specifically calls out our fetch
+[1297] call here as the culprit.
+[1300] So, remember when we talked about slow
+[1303] navigations at the beginning of the
+[1304] talk?
+[1306] Well, Next is telling us here that
+[1308] because our new fetch calls are outside
+[1311] of any suspense boundary, they've made
+[1313] our home page a blocking route.
+[1316] This means that if we were to load it,
+[1318] we'd have to wait
+[1320] for all the data before we see any
+[1322] content from the server.
+[1325] Um but if we go back to what we just had
+[1327] before we added the fetch call,
+[1330] we just saw everything on the page that
+[1332] didn't depend on those fetches at all.
+[1334] All this UI could have been rendered by
+[1336] the browser uh before the fetch calls
+[1339] even finished. In fact, before they
+[1341] started, the browser could have already
+[1343] started the work it needed to do to
+[1345] render this page like fetching the
+[1347] static JavaScript bundles and the style
+[1349] sheets from the server ahead of time.
+[1352] So,
+[1354] let's go back and we're going to fix
+[1356] this error by unblocking our route.
+[1359] And what we're going to do is we're
+[1361] going to move the data fetching code
+[1362] into a new component. We'll call it the
+[1364] standings table.
+[1366] And
+[1367] let's go ahead and render it in our
+[1368] tree.
+[1369] And now we'll use suspense to unblock
+[1371] it.
+[1373] Suspense provides a fallback. Usually
+[1375] you you provide your own, but for now,
+[1376] let's just use a null fallback.
+[1378] So, uh if we save and reload the page,
+[1382] the error goes away and we see our
+[1384] static content again. And now once our
+[1387] fetch calls complete, the data streams
+[1390] in.
+[1392] Pretty cool, right?
+[1393] Um
+[1396] This is pretty amazing. At first glance,
+[1399] it might look familiar. I mean,
+[1401] haven't we all seen skeleton screens
+[1403] before? And
+[1405] lots of frameworks have APIs for
+[1407] deferring data fetching so that, you
+[1409] know, our whole page isn't blocked by
+[1410] the slowest fetch. So, how is this any
+[1413] different?
+[1415] Well, there's something special about
+[1416] the skeleton screen.
+[1418] It's static HTML.
+[1421] That's what that error was all about.
+[1423] Next is guaranteeing that this route can
+[1425] be pre-rendered into static HTML. And if
+[1428] you've worked on Next before, you know
+[1430] that if you can make a route static,
+[1432] it's usually pretty good. It usually
+[1433] ends up in an extremely fast user
+[1435] experience,
+[1436] uh which is great. Except today when you
+[1439] make a route static in Next,
+[1442] you can't fetch anything dynamic during
+[1444] the initial request at all.
+[1446] So, it's an all or nothing decision,
+[1448] right? If you pre-render a route today,
+[1450] you have to pre-render the whole thing.
+[1453] But pretty much every page has something
+[1455] dynamic. So, inevitably you're going to
+[1458] add some client-side data fetching
+[1459] logic,
+[1461] um some new library that's going to
+[1463] complete way after the initial request
+[1465] has already come back. It's going to
+[1466] start waterfalling back and forth
+[1468] between the client and the server. You
+[1470] have to set up API endpoints. You're
+[1471] probably going to bring a library in to
+[1472] make the API endpoints type safe.
+[1476] But here, we didn't have to do any of
+[1478] that.
+[1480] This page isn't dynamic or static. It's
+[1483] both.
+[1484] In other words, it's partially
+[1486] pre-rendered.
+[1488] And partial pre-rendering is the one
+[1490] mode of rendering for all routes when
+[1492] cached components are enabled.
+[1494] No more choosing between static or
+[1496] dynamic. Every route is partially
+[1498] pre-rendered. And that error that we saw
+[1500] earlier ensures that every new route you
+[1503] add produces some static content that
+[1506] Next can extract and serve up for a fast
+[1508] initial load.
+[1510] Even if that static content is just some
+[1511] light fallback UI
+[1513] and most of the page's content is
+[1515] dynamic, it gets the browser to start
+[1517] booting the app instantly and it doesn't
+[1519] slow down the dynamic data at all thanks
+[1522] to React's use of server-side streaming.
+[1526] Okay, let's go back to our app.
+[1528] And uh let's go to the games link up
+[1529] here in the header, which is currently
+[1531] 404ing.
+[1532] So, we'll build out this page. Let's
+[1534] create a new file,
+[1536] a new page module,
+[1538] and we'll fetch the current games and
+[1540] we'll render it the schedule, and then
+[1542] and then all of the games that are
+[1543] currently playing. And if we save this,
+[1545] again we'll see an error. That's an old
+[1547] version of the error because we just
+[1548] released Next 16 last night. Um but uh
+[1552] it says the same thing as before, so
+[1554] let's let's do the same thing and
+[1555] unblock our route. We're going to
+[1557] extract the dynamic part into a new
+[1559] component
+[1560] and we'll render it up here in our page.
+[1565] And then we'll wrap it inside of
+[1567] suspense. And this time we'll add some
+[1569] light fallback UI. So, if we save this
+[1573] and take a look, we see our new
+[1575] beautiful skeleton screen.
+[1576] And uh then once the fetch calls finish,
+[1581] the data streams in.
+[1582] Easy peasy, right?
+[1584] This is what it's like to work with Next
+[1586] under cache components. It's truly
+[1588] dynamic by default.
+[1591] So, there's no more implicit caching. We
+[1593] didn't need to add force dynamic to our
+[1595] page or cache no-store to our fetch
+[1597] calls.
+[1598] As long as we're inside a suspense
+[1600] boundary, we can fetch data without any
+[1602] surprises.
+[1603] And those suspense boundaries ensure
+[1606] that every page in our app can serve its
+[1608] static content instantly and prepare the
+[1610] browser for the dynamic content as early
+[1613] as possible.
+[1615] Now,
+[1616] all this seems great to me.
+[1618] Um
+[1619] caching in the app router is always
+[1621] seems confusing.
+[1623] You know, there's all these conventions
+[1624] you have to know about. There's like
+[1626] nine different config options. So, I do
+[1629] like this new explicit approach.
+[1633] But, where are my snappy navs? I want my
+[1635] snappy client navs back.
+[1638] Well, let me show you something.
+[1641] If we reload the games page and then
+[1644] click the link to go home, watch what
+[1646] happens.
+[1649] We see an instant render of the static
+[1651] pre-rendered home page followed by
+[1653] dynamic data.
+[1655] Let's try it from the other direction.
+[1657] Oh, sorry. So, that's where the dynamic
+[1659] data comes in.
+[1661] Now, let's try it from this direction.
+[1662] Let's imagine we just refreshed on here
+[1664] and we want to go back to the games
+[1666] page.
+[1667] So, we'll see as soon as we click, we
+[1669] get an instant nav to the pre-rendered
+[1671] page and then the content fills in.
+[1675] So, how does this work?
+[1678] Well, the answer is pre-fetching.
+[1681] Thanks to partial pre-rendering, links
+[1684] will pre-fetch the static content for
+[1686] the upcoming route by default.
+[1688] And this makes total sense, right? We
+[1690] just saw how the new programming model
+[1692] ensures that each route has some static
+[1694] content, so we know that it's both cheap
+[1697] to fetch and that it won't become stale
+[1700] by the time the user actually clicks the
+[1702] link.
+[1703] So, the link tag can just pre-fetch it
+[1705] in advance
+[1706] and uh we can have a snappy client nav,
+[1709] an instant client nav that even though
+[1712] the server was involved originally, by
+[1714] the time we click the nav, it's as if
+[1716] you were in the client doing a
+[1717] client-side navigation.
+[1720] This is awesome. We're able to make use
+[1722] of the browser to get those snappy navs
+[1724] without doing any extra work.
+[1726] We don't have to move any of our data
+[1727] fetching code to the client. We don't
+[1729] need to fork our page component based on
+[1731] whether it's the initial render or a
+[1733] client-side navigation. And we didn't
+[1735] need to create any special loading.tsx
+[1737] file. All we had to do was use suspense
+[1740] and RSCs like normal. And Next gave us
+[1742] instant client-side navs for free.
+[1746] So, at this point you might be wondering
+[1749] why is this called cached components?
+[1752] Uh what the heck does any of this have
+[1754] to do with caching? And why haven't I
+[1756] seen this new use cache directive yet?
+[1760] Well, if you think about our site so
+[1762] far,
+[1764] what is it that actually let us prefetch
+[1766] the static content for each one of these
+[1768] pages ahead of time? It's the fact that
+[1770] we know that this static content can't
+[1772] be stale. That's what let us prefetch
+[1774] it.
+[1775] It's not like the games page that has
+[1778] real-time data, right? Uh it updates
+[1781] every few seconds.
+[1782] This static content can't change because
+[1785] it's based on the code we wrote in our
+[1786] application. It can't change unless we
+[1787] change the code and redeploy the app.
+[1790] So, this static pre-rendered content is
+[1794] effectively cached content, right?
+[1798] Wouldn't it be cool if we could cache
+[1799] more of our content?
+[1801] Let's try.
+[1803] If we come back to our home page,
+[1806] well, the standings here only change
+[1808] once a week. In case you don't watch
+[1809] football, they only play once a week.
+[1811] So, the only time that they can change
+[1812] is basically once a week. Seems like a
+[1814] good candidate to pre-render ahead of
+[1816] time so that we don't have to fetch and
+[1818] render uh the standings every time a new
+[1820] person visits the site, right? We can we
+[1823] can cache it and save some work and make
+[1825] the site a lot faster. So, instead of
+[1828] keeping them dynamic, let's remove the
+[1830] suspense boundary
+[1832] and we'll cache this entire route by
+[1835] adding use cache to the top of the page.
+[1840] If we save and reload, let's see what
+[1841] the behavior is now.
+[1845] Look at that. No partial page, just all
+[1848] the final content available immediately.
+[1851] Let's try navigation from the games
+[1852] page. So, we'll load the games page,
+[1855] which still has a loading screen,
+[1857] and then we'll go ahead and click on the
+[1860] home page.
+[1861] Boom.
+[1863] Instant nav to the fully pre-rendered
+[1865] page.
+[1866] So, if you think about it, it turns out
+[1869] that we've been working with cached
+[1870] content this whole time.
+[1872] It just starts out as the code in our
+[1874] code base, but with use cache, we can
+[1876] choose to make more and more of our UI
+[1879] cached content. And once we tell Next
+[1881] what's cacheable, it can pre-render it,
+[1884] so it can be included in that fast
+[1885] initial load, as well as those snappy
+[1888] pre-fetched client navs. Pretty awesome,
+[1890] right?
+[1891] Importantly, we haven't had to make any
+[1893] all-or-nothing decisions here on a
+[1895] route-by-route basis.
+[1897] If we were to come up to our root layout
+[1899] and say we wanted to add a live score
+[1901] strip of the scripts up of the scores up
+[1903] top, um but we'll keep them dynamic, you
+[1906] know, so that you can see the latest
+[1907] scores. So, we'll wrap it in suspense.
+[1909] Now, if we look at the behavior,
+[1912] we'll see that our standings are still
+[1914] pre-rendered, and then the scores stream
+[1916] in.
+[1918] And uh same with the home page. If we
+[1920] come back to the home page, let's say we
+[1922] want to add some news stories below the
+[1924] standings table. So,
+[1926] we'll write a new component for our news
+[1929] stories that has a fetch,
+[1931] and we'll add it to our tree. We'll put
+[1932] it inside suspense, so we have something
+[1934] to pre-render for that part of the UI.
+[1936] But now, let's see what happens when we
+[1937] reload the page. Oh,
+[1940] that was important. Let me go back.
+[1942] So, uh we're going to wrap it in
+[1943] suspense, so it's dynamic.
+[1946] But we still want to cache the standings
+[1948] table.
+[1950] So, what we do is we move use cache down
+[1952] our component tree, right? And this is
+[1955] uh the composition point that Guillermo
+[1957] was talking about. Uh, we don't have to
+[1959] make these all or nothing decisions. It
+[1961] works within the component boundary and
+[1963] because we don't want everything on the
+[1965] home page to be cached, we can move it
+[1967] down. And now, if we look at what
+[1970] happens when we render the page, let's
+[1972] take a look. We'll save it.
+[1976] And
+[1977] this is our shell. This is our instant
+[1979] static page, pre-rendered content, which
+[1981] still includes the standings. And once
+[1983] the data finishes, both the scores in
+[1986] the layout and the news stories in the
+[1988] home page stream in.
+[1991] Pretty cool, right?
+[1993] Pretty cool.
+[1996] Uh, so, we've added more dynamic content
+[1999] without sacrificing the fast initial
+[2001] load or instant client nav to this page.
+[2005] Um,
+[2007] there's so much more I want to talk to
+[2008] you about, but
+[2010] I wanted to focus on this today.
+[2012] Uh,
+[2013] and we've seen how use cache lets us
+[2017] partially pre-render our pages into
+[2019] static HTML, right? That's kind of what
+[2021] we focused on today.
+[2023] And, uh, we have APIs for regenerating
+[2026] that HTML on demand or after a period of
+[2029] time, similar to how ISR works, uh, in
+[2032] the current next.
+[2034] But, one thing I just want to leave you
+[2036] with is that use cache is not just an
+[2039] update to our static rendering API. It's
+[2041] not just a replacement for get static
+[2043] props.
+[2044] Um,
+[2045] or a better way to avoid all those crazy
+[2047] caching APIs.
+[2049] Because, after all, most of us work on
+[2052] dynamic websites, personalized websites.
+[2055] And dynamic personalized websites need
+[2058] information from the request, right?
+[2060] Like dynamic params, search params,
+[2063] cookies and headers. And that data is
+[2065] never available when we're generating
+[2067] static HTML.
+[2070] But, what if we wanted to prefetch pages
+[2073] that depend on those things once users
+[2076] are clicking around our app?
+[2078] What's the answer there?
+[2080] Well, the answer is still use cache.
+[2082] So, we're working on APIs that leverage
+[2085] the same caching semantics that use
+[2087] cache and cache life have given us to
+[2090] make it so that your users can click
+[2092] around to fully prefetch pages even in
+[2095] highly dynamic personalized apps. And
+[2098] this is what I found so fascinating when
+[2101] joining the team.
+[2103] Just because the app router is server
+[2105] first, doesn't mean we have to give up
+[2107] on the kinds of interactions that made
+[2110] us all fall in love with React in the
+[2111] first place.
+[2112] And prefetching is a powerful example of
+[2115] how but there are many, many more.
+[2119] And now that we have an architecture
+[2122] that avoids the performance cliffs of
+[2124] the past,
+[2125] we know that this new model can take us
+[2127] further than the old one ever could.
+[2130] So,
+[2131] that's cache components.
+[2133] They let you pre-render and prefetch
+[2134] your UI for instant navigations in the
+[2136] app router.
+[2138] And we just saw what they felt like to
+[2140] use.
+[2141] Now, I'm going to turn it over to Jimmy
+[2142] to show you how they behave once they're
+[2144] deployed.
+[2157] &gt;&gt; Hi.
+[2159] I'm Jimmy and leading the Next.js and
+[2161] Turbo Pack teams.
+[2163] So, like Guillermo said earlier, React
+[2165] really nails composition.
+[2167] With just a few well-designed
+[2169] primitives, React allows you to build
+[2171] beautiful and functional UIs.
+[2174] With Next.js, we're really trying to
+[2176] extend the same philosophy and apply it
+[2178] to your entire apps.
+[2180] But, what does that really mean?
+[2183] Well,
+[2184] one example of that was static
+[2185] generation.
+[2186] That was a game-changer.
+[2188] We realized that we could pre-compute
+[2189] some pages ahead of time
+[2191] and serve them instantly.
+[2194] That was composition over time.
+[2196] We made apps faster by just doing a
+[2198] little bit more work at build time.
+[2201] Something funny happened along the way.
+[2204] We made those instant responses so
+[2205] attractive that even when the page
+[2207] needed dynamic data,
+[2209] people were willing to wait for a static
+[2210] page and just fetch data from the
+[2212] browser.
+[2213] I don't blame them.
+[2215] Like Sam said, everybody loves those
+[2217] snappy and instant navigations.
+[2220] But, in doing so, they introduced hidden
+[2223] latencies to their apps.
+[2225] Since we're now fetching from the
+[2227] browser,
+[2228] every request introduces a new round
+[2230] trip to your database.
+[2232] And while might might be acceptable for
+[2234] one request, when multiple have of those
+[2236] have to happen sequentially,
+[2239] that latency stacks up,
+[2240] resulting in much longer loading times
+[2242] overall.
+[2244] So, we knew one way to optimize these
+[2246] latencies was to be closer to the
+[2247] database via a server.
+[2250] But,
+[2251] we still had the problem of the server
+[2252] not being able to respond up until we
+[2254] finished rendering.
+[2256] So, we went back to the drawing board,
+[2258] and we bet on server components and
+[2260] streaming.
+[2262] Next.js was now able to show pieces of
+[2263] the UI as they became ready
+[2265] without being blocked on the slowest
+[2266] part of the page anymore.
+[2269] But,
+[2270] it still didn't feel as instant as a
+[2272] static page.
+[2274] However, we realized we had all the
+[2276] pieces we needed to come up with
+[2277] something new.
+[2280] Something you might have noticed is how
+[2281] binary the choices were.
+[2283] Pages were either fast and stale,
+[2286] or they're fresh but slow.
+[2289] Turns out,
+[2291] the answer was always more composition.
+[2293] And as Sam showed you,
+[2295] our answer to that was partial
+[2296] pre-rendering and cache components.
+[2299] With a model that allows you to compose
+[2300] both static and dynamic content down to
+[2303] the component level.
+[2304] So, it allows you to get the best of
+[2306] both worlds.
+[2307] A fast initial UI and optimized data
+[2309] fetching from the server.
+[2311] It's a huge unlock.
+[2313] I believe this is going to be a big
+[2314] evolution for how you write your Next.js
+[2316] apps.
+[2318] And everything Sam demonstrated earlier
+[2319] just works, whether you're running
+[2321] Next.js on a $5 Hetzner VPS or your
+[2324] cloud platform.
+[2325] Partial pre-rendering
+[2327] works just as intended.
+[2329] But,
+[2331] let's see how the cache components model
+[2332] can also help when deploying Next.js on
+[2334] a globally distributed platform.
+[2337] See?
+[2338] If your user is in a different region
+[2340] from your server and data,
+[2342] there's still going to be some latency
+[2343] involved.
+[2344] Next.js can do a lot of things, but we
+[2346] can't make light move faster yet.
+[2349] But,
+[2350] as we as as we know from the history of
+[2352] the web, the quickest way of serving
+[2354] content for is doing it from a CDN close
+[2356] to your user, right?
+[2357] We do it every day for images, fonts,
+[2359] CSS, JavaScript.
+[2362] Well,
+[2363] because our programming model allows us
+[2364] to extract the initial UI for a page,
+[2367] a platform like Vercel can supercharge
+[2369] Next.js rendering and serve the same UI
+[2371] right from your CDN.
+[2373] And we can also stream in the content
+[2375] from your original server.
+[2378] Cache components not only tells Next.js
+[2380] how to compose rendering over time,
+[2382] it also lets you compose it over space.
+[2386] So, regardless of where your users are
+[2388] on the planet,
+[2390] we now brought latency down to a
+[2392] theoretical minimum.
+[2395] That's the kind of innovation that's at
+[2396] the core of our work at Vercel.
+[2399] We want to build a web framework that
+[2400] works for everyone,
+[2402] but also we want to push the boundary of
+[2404] what's possible on a modern
+[2405] infrastructure.
+[2407] So,
+[2408] you might be wondering, does Next.js
+[2410] come with a tutorial on how to do this?
+[2413] Well, not really.
+[2415] We're so focused on building the effort
+[2416] to we didn't spend as much time sharing
+[2418] that philosophy as clearly as we should
+[2420] have.
+[2422] And we heard it loud and clear.
+[2425] Even though lock-in was never our
+[2427] intention, a lot of people claimed it
+[2428] was by design.
+[2430] But
+[2431] Next.js has always been open source, and
+[2434] it still drives everything the team
+[2435] does.
+[2437] So, it's not just about having our
+[2439] embarrassing PRs in public.
+[2441] It's about building a framework that can
+[2442] be used and supported by everyone to the
+[2445] best of their abilities.
+[2448] A rising tide lifts all boats. And the
+[2450] ideas we're pushing with Next.js
+[2452] are meant to scale beyond Vercel, even
+[2454] beyond Next.js.
+[2457] So,
+[2458] I want you to have the best possible
+[2459] experience with Next.js, regardless of
+[2461] your platform choices.
+[2463] So, we've been building something new.
+[2467] The Build Deployment Adapters API. It's
+[2469] a clear and explicit contract between
+[2471] Next.js and the platform that runs it.
+[2474] We're sharing all the primitives that we
+[2475] use to deploy Next.js at scale.
+[2478] And it's all there in a stable and
+[2479] versioned and documented API.
+[2482] That information was already present
+[2483] when running next build, right?
+[2485] But, there wasn't really any guide on
+[2487] how to enhance Next.js the same way
+[2489] Vercel does.
+[2491] So, this API is meant to be a framework
+[2493] for deploying Next.js to its full
+[2494] capacities.
+[2496] We want to provide you with a clear
+[2498] spec, fewer surprises,
+[2500] and hopefully a stronger foundation to
+[2503] invest on.
+[2505] Another piece of the puzzle is Well,
+[2508] once you build your adapters, how do you
+[2509] verify that they actually work as
+[2510] intended?
+[2512] Well,
+[2513] we're also sharing the same test suite
+[2515] that we use to validate all Next.js
+[2516] features on Vercel.
+[2518] And our goal is to create transparency
+[2520] for users,
+[2521] so that when they adopt a new platform,
+[2523] they can verify that Next.js works well.
+[2527] And also, this also helps us identify
+[2530] which area of the ecosystem we can
+[2532] better help on.
+[2535] We didn't do this alone.
+[2537] Earlier this year, we created a working
+[2539] group with contributors from AWS,
+[2541] Cloudflare, Firebase, Netlify,
+[2545] and OpenNext.
+[2548] We gathered the pain points they had
+[2549] when hosting Next.js, and from there we
+[2551] crafted an RFC, and refined the design
+[2553] together.
+[2555] And so, what I've announced today
+[2557] is a result of that collaboration.
+[2560] Next.js 13 deployment adapters ship in
+[2563] alpha.
+[2564] And we want your feedback as we migrate
+[2566] the ecosystem gradually.
+[2568] We're also using the same API on Vercel,
+[2570] where we have our own adapter.
+[2572] We want to play fair,
+[2574] and with the same rules we're imposing
+[2575] to our partners.
+[2578] Our goal is to use this as the
+[2579] foundation for a more collaborative
+[2581] Next.js.
+[2583] One where the ecosystem benefits from
+[2584] all the work we continue to do at
+[2586] Vercel.
+[2587] And so, to everyone in our working
+[2588] group,
+[2590] thank you for your time,
+[2591] for your feedback, and all the
+[2593] engineering hours you've invested into
+[2595] making this possible.
+[2597] If you're a platform provider who wants
+[2599] to better support Next.js,
+[2600] we'd love to work with you.
+[2604] So, today we talked about three
+[2606] long-term bets for Next.js.
+[2609] Turbopack, which was our bet on
+[2610] incrementality and a better developer
+[2612] experience.
+[2614] Cache components, our bet on a
+[2616] programming model that unlocks new
+[2618] levels of performance with composition.
+[2622] And the deployment adapters API, which
+[2624] was our bet on an open Next.js, and one
+[2627] that scales beyond Vercel.
+[2630] These ideas have been in motion for
+[2631] years,
+[2632] and they're finally here.
+[2635] Next.js 13 is available today,
+[2637] with Turbopack as a default,
+[2639] cache components as an opt-in,
+[2641] and we'll be sharing guides, examples,
+[2643] and migration paths to help you make the
+[2645] most of them.
+[2647] I'm incredibly proud of the work that
+[2649] team has done for this release.
+[2651] And I'm extremely excited to see what
+[2652] you will build next.
+[2655] Thank you.

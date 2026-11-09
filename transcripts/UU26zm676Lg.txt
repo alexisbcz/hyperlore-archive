@@ -1,0 +1,1096 @@
+[0] [Music]
+[5] Hi listeners, welcome back to No Priors.
+[7] Today Allad and I are here with Edwin
+[9] Chen, the founder and CEO of Surge, the
+[11] bootstrapped human data startup that
+[13] surpassed a billion in revenue last year
+[15] and serves top tier clients like Google,
+[17] OpenAI, and Anthropic. We talk about
+[20] what highquality human data means, the
+[23] role of humans as models become
+[24] superhuman, benchmark hacking, why he
+[27] believes in a diversity of frontier
+[28] models, the scale meta not M&amp;A deal, and
+[32] why there's no ceiling on environment
+[33] quality for RL or the simulated worlds
+[35] that labs want to train agents in.
+[37] Edwin, thanks for joining us.
+[38] &gt;&gt; Great. Great seeing you guys today.
+[40] &gt;&gt; Serge has been really under the radar
+[42] until just about now. So um can you give
+[45] us a little bit of uh color on sort of
+[48] scale of the company and what the
+[49] original founding thesis was?
+[51] &gt;&gt; So we hit over a billion written revenue
+[54] last year. We are kind of like the
+[57] biggest human data player in the space
+[59] and we're about 100 a little over 100
+[61] people. And our original thesis was we
+[65] just really believed in the power of
+[67] human data to advance AI and we just had
+[70] this really big focus from the start of
+[71] making sure that we we had the highest
+[73] quality data possible.
+[74] &gt;&gt; Can you give people context for how long
+[76] you've been around, how you got going,
+[77] etc. I think again you all have
+[79] accomplished an enormous amount in a
+[81] short period of time and I think you
+[82] know you've been very quiet about some
+[84] of the things you've been doing. So it
+[85] be great to just get a little bit of
+[86] history and you know when you started,
+[88] how you got started and how long you've
+[89] been around. Uh yeah, so we've been
+[92] around for five years. I think we just
+[94] hit our 5year anniversary. So we started
+[96] in 2020. So before that, so I can give
+[99] some of the context. So before that, I
+[100] used to work at Google, Facebook, and
+[101] Twitter. And one of the like basically
+[104] the reason we started Surge was I just
+[106] used to work on ML at a bunch of these
+[108] big companies. And just the problem I
+[109] kept running into over and over again
+[110] was that it really was impossible
+[112] getting the data that we needed to train
+[113] our models. So it was just this big
+[114] blocker that we faced over and over
+[116] again. And there was just like so much
+[118] more that we wanted to do like even just
+[121] the basic things that we wanted to do.
+[122] We struggled so hard to get the data. It
+[124] was really just the the big blocker. But
+[126] then simultaneously there were all these
+[127] more futuristic things that we wanted to
+[129] build. Like if we thought of the next
+[130] generation AI systems if we could barely
+[132] get the data that we needed at the time
+[134] to solve like just building a simple
+[136] analysis classifier. We if we could
+[138] barely do that then like how would we
+[140] ever advance advance beyond that? So
+[142] that that really was the the biggest
+[144] problem. I can go into more of that, but
+[146] that that that was what we faced.
+[147] &gt;&gt; And then you guys are also known for
+[149] having bootstrapped the company versus
+[151] raising a lot of external venture money
+[152] or things like that. Do you want to talk
+[154] about that choice in terms of going
+[155] profitable early and then scaling off of
+[157] that?
+[157] &gt;&gt; In terms of why we didn't raise so big
+[160] part of it was obviously just that we
+[161] didn't need a money. I think we were
+[162] very very lucky to be profitable from
+[164] from the start. So we didn't need a
+[166] money. It always felt weird to give up
+[167] control and like one of the things I've
+[170] always hated about Silicon Valley is
+[171] that you see so many people raising for
+[173] the sake of racing. Like I think one of
+[175] the things that I often see is that a
+[177] lot of founders that I know they don't
+[179] they don't have some big dream of
+[180] building a product that solves some idea
+[182] that they really believe in. Like if you
+[184] talk to a bunch of YC founders or
+[186] whoever it is, like what what is their
+[188] goal? It really is to tell all their
+[189] friends that they raised $10 million and
+[191] to show their parents they got a
+[192] headline on Techrunch. Like that is
+[193] their goal. Like I I think of like my
+[195] friends at Google, they they often tell
+[197] me, "Oh yeah, I you know, I've been at
+[198] Google or Facebook for 10 years and I
+[200] want to start a company." I'm like,
+[201] "Okay, so what problem do you want to
+[202] solve?" And they don't know. They're
+[204] like, "Yeah, I just want to start
+[205] something new. I'm bored." And it's
+[207] weird because they can like pay their
+[208] own salaries for a couple months. Again,
+[210] they've been at Google and Facebook for
+[211] 10 years. They're not just like fresh
+[212] out of school. They they can pay their
+[213] own salaries, but the first thing they
+[214] think about is just going out and
+[215] raising money. And I've always thought
+[218] it weird because they like might try
+[220] talking to some users and they might try
+[221] building an MVP, but they kind of just
+[223] do it in this throwaway manner where the
+[224] only reason they do it is to check off a
+[226] box on a startup accelerate application
+[228] and then they'll just pay right around
+[229] these random product ideas and they
+[230] happen to get a little bit of traction
+[232] so that the VC DMs them. And so they
+[234] spend all their time tweeting and they
+[235] go to these VC dinners and it's all just
+[237] so that they can show the world that
+[238] they raised a big amount of money. And
+[240] so I think raising immediately always
+[241] felt silly to me like everybody's
+[243] default is to just immediately raise.
+[244] But if you were to think about it from
+[245] first principles, like if you didn't
+[246] know how Silicon Valley worked, if you
+[248] didn't know that raising was a thing,
+[250] like why why would you do that? Like
+[251] what is money really going to solve for
+[253] 90% of these startups where the founders
+[255] are lucky to have some savings? I really
+[256] really think that your first instinct
+[258] should be to go out and build whatever
+[259] you're dreaming of. And sure, if you
+[261] ever run into financial problems, then
+[262] sure, think about raising money then,
+[263] but don't waste all this effort and time
+[265] up front when you don't even know what
+[266] you do with it.
+[267] &gt;&gt; Yeah, it's funny. I feel like I'm one of
+[268] the few investors that actually tries to
+[269] talk people out of fundraising often,
+[271] &gt;&gt; right? Like I actually had a
+[273] conversation today where the founder was
+[274] talking about doing a raise and I'm like
+[275] why you know you don't have to you can
+[278] maintain control etc. And then the flip
+[279] side of it is I would actually argue
+[280] outside of Silicon Valley too few people
+[282] raise venture capital when the money can
+[284] actually help them scale. And so I feel
+[285] like in Silicon Valley there's too much
+[287] and outside of Silicon Valley there's
+[288] too little. So it's this interesting you
+[290] know spread of uh different models that
+[292] sort of stick. Edwin, what would you um
+[294] what would you say to founders who uh
+[297] feel like there's some external
+[300] validation necessary to uh especially
+[303] like a hire a team or scale their team?
+[306] This is a very like common complaint or
+[308] rationale for going and raising more
+[310] capital.
+[311] &gt;&gt; I think about it in a couple ways. So I
+[313] guess it depends on what you mean by
+[314] external validation. Like in my mind
+[316] again like I often think about things
+[318] from a p perspective of are you trying
+[321] to build a startup that's actually going
+[323] to change the world like do you have
+[324] this big thing that you're dreaming of
+[326] and if you have this big thing that
+[327] you're dreaming of you
+[330] like why do you care? Maybe the way to
+[331] to think about it is in in Sarah's
+[333] context like if you haven't say you're a
+[334] YC founder, you haven't been at Google,
+[336] you haven't been at Meta, you haven't
+[337] been at Twitter, you don't have this
+[339] network of engineers, you're a complete
+[340] unknown, you haven't worked with very
+[342] many people, you're straight out of
+[343] school,
+[343] &gt;&gt; how do you then attract that talent? And
+[345] to your point, you can tell a story of
+[347] how you're going to build things or what
+[348] you're going to do or but it is a harder
+[351] um obstacle to basically convince others
+[353] to join you or for others to come on
+[354] board or to have money to pay them if
+[356] you haven't if you don't have long work
+[358] history. So I think maybe that's the
+[359] point Sarah is making. Uh yeah. So I
+[360] mean I think I would differentiate
+[362] between maybe two two things like one is
+[364] do you need the money? So first of all
+[366] like there's a difference between people
+[367] who are yeah like literally fresh out of
+[369] school or maybe you know never gone to
+[370] school for first place and so maybe they
+[372] don't have any savings and so they
+[373] literally need some money in order in
+[375] order to live and then there's others
+[376] who okay like let's assume that you
+[378] don't necessarily need money because
+[380] again you've been working at Google or
+[381] Facebook for 10 years like or you know 5
+[383] years whatever it is you have some
+[384] savings. So I would say one of the
+[385] questions is again like it kind of the
+[387] the path kind of differs depending on
+[389] depending on those those two those two
+[390] choices or those two um scenarios but I
+[393] think one of the questions is well do
+[395] you really need to go out and hire all
+[397] these people? Like one of the things I
+[398] often see again like I'm curious what
+[400] you guys see but one of the things I
+[401] often see is founders will tell me like
+[403] uh okay so I'm trying I'm trying to
+[405] think about the first few hires I'm
+[407] going to make and they're like yeah I'm
+[408] going to hire a PM. I'm going to hire a
+[410] data scientist. Yeah, these are one of
+[412] my first five to 10 hires. I'm like
+[413] what? Like this is just wild to me. Like
+[415] I would never hire data scientists one
+[417] of the first few people in a company.
+[418] And and I say this because I used to be
+[420] a data scientist. Like data scientists
+[421] are great when you want to optimize your
+[423] product by 2% or 5%. But that's
+[425] definitely not what you want to be doing
+[426] when you start a company. You you're
+[427] trying to swing for 10x or 100x changes,
+[430] not worrying and nitpicking about small
+[432] percentage points that are just noise
+[433] anyways. And to someone like product
+[435] managers, like product managers are
+[436] great when your company gets big enough,
+[438] but at the beginning you you should be
+[440] thinking about yourself about what
+[441] product you want to build. And your
+[442] engineer should be hands-on. they should
+[443] be having great ideas as well. And so
+[445] product management is kind of this weird
+[447] conception that big companies have when
+[448] your engineers don't have time to be in
+[450] the weeds on the on the details and
+[451] drive things themselves. It's not a role
+[453] that you come up with before.
+[454] &gt;&gt; So I guess um with the initial surge
+[456] team, it sounds like you had sort of a
+[458] small initial tight engineering team.
+[460] You guys started building product. You
+[462] were bootstrapping off of revenue. You
+[463] know, at this point you're at over a
+[464] billion dollars in revenue, which is
+[466] amazing. Um, how do you think about the
+[468] future of how you want to shape the
+[470] organization, how big you want to get,
+[472] the different products you're you're
+[473] launching and introducing? Like what
+[475] what do you view sort of the future of
+[476] Surge and how that's all going to
+[477] evolve?
+[478] &gt;&gt; Before we do that, can you just explain
+[480] like what the at whatever level of
+[482] detail makes sense here? Like what the
+[484] billion dollars of revenue is? Maybe
+[486] like how product supports the company,
+[488] who your data, who your humans are,
+[491] because I think there's just very little
+[492] visibility into into all of that. So in
+[495] terms of what our product is, I mean at
+[496] the end of the day our product is our
+[497] data. Um like we literally deliver data
+[500] to companies and that is what they use
+[502] to train and evaluate their models. So
+[504] imagine you know when you're one of
+[505] those these frontier labs and you want
+[507] to improve your model uh your model's
+[509] coding abilities. What we will do on our
+[511] end is we will gather a lot of coding
+[513] data. And so this coding data may come
+[514] in different forms and maybe SFT data.
+[517] We are literally writing out coding
+[518] solutions or maybe unit tests like these
+[521] are the tests that a good uh that a good
+[523] piece of code must pass.
+[524] Maybe it's preference data where it's
+[526] okay like here are two pieces of code or
+[527] here are two coding explanations which
+[529] one's better or these might be like
+[531] verifiers like okay um here's a web app
+[534] that I created I want to make sure that
+[536] in the top right hand of the screen
+[538] there's like a there's a login button or
+[540] I want to make sure that when you click
+[541] this button something else happens like
+[542] there's a bunch of different forms that
+[544] this data may take but at the end of the
+[545] day what we're doing is we're delivering
+[547] data that'll basically help the models
+[548] improve on these capabilities very very
+[551] related to that is this notion of
+[552] evaluating the models like you also want
+[554] to know yeah is this good coding model
+[556] uh is it better than this other one what
+[558] are the errors in which this model is
+[559] weak and this this model is worse like
+[561] what insights can we get from that and
+[563] so in addition to the data often times
+[564] we're delivering insights to our
+[566] customers we're delivering loss patterns
+[568] we're delivering failure modes so there
+[569] may be a lot of other things um like
+[571] related to the data but at the end it's
+[573] like this this universe of uh of like
+[575] applications or this like just universe
+[577] around the data that we deliver and that
+[578] that is our product
+[580] &gt;&gt; yeah and maybe going back to all's
+[582] question um uh maybe like product isn't
+[585] actually the right word here, but what's
+[586] what's like repeatable about the company
+[588] or what are like core capabilities that
+[590] you guys have that you would say your
+[591] competitors you know um fail to meet the
+[594] mark?
+[594] &gt;&gt; The way we think about a company is that
+[597] and the way we differentiate from others
+[599] is that a lot of other companies in this
+[601] space they are essentially just body
+[602] shops. What they are delivering is not
+[604] data. They are literally just delivering
+[605] warm bodies to um to uh to companies.
+[609] And so what that means is like at the
+[611] end of the day they don't have any
+[612] technology and one of our fundamental
+[615] beliefs is that again quality is the
+[617] most important thing at the end of the
+[618] day like is this high quality data is
+[620] this a good coding solution is this a
+[621] good unit test is this mathematical
+[623] problem solved correctly is this a great
+[625] poem and basically a lot of companies in
+[628] this space like just just as of like of
+[631] how things have worked out historically
+[632] it's that like historically a lot of
+[634] companies they uh uh they've treated
+[637] quality and data as commodity like one
+[639] of the ways We often think about it is
+[640] imagine you were trying to draw a
+[641] bounding box around a car. Like Sarah,
+[645] you and I, we're probably going to draw
+[646] the same bounding box. Like ask
+[647] Hemingway and ask a second grader. Well,
+[650] at the end of the day, we're all going
+[651] to draw the same bounding box. There's
+[652] not much difference that we can do. So,
+[654] there's a very very low ceiling on the
+[657] bar of quality, but then take something
+[658] like writing poetry. Well, I I suck at
+[660] writing poetry. Hemingway is definitely
+[662] going to write a much better poem than I
+[663] am. Or imagine a I don't know, a VC
+[665] pitch deck. you're going to write a much
+[666] better you're going to create a much
+[668] better pitch deck than I will. And so
+[669] there's almost an unlimited ceiling in
+[671] this Genai world on the type of quality
+[673] that you can that you can build. And so
+[676] the way we think of our product is like
+[677] we have a platform. We have actual
+[680] technology that we're using to measure
+[681] the quality that or workers or
+[683] annotators are generating. If you don't
+[685] have that technology, if you don't have
+[686] any way of measuring it, is the
+[687] measurement through human evaluation? Is
+[690] it through modelbased evaluation? And
+[691] I'm a little bit curious like how you
+[692] create that feedback loop since to some
+[695] extent it's a little bit this question
+[696] of how do you have enough evaluators to
+[697] evaluate the output relative to the
+[699] people generating the output or do you
+[700] use models or how how do you approach it
+[702] like I think one analogy that we often
+[704] make is think about something like
+[706] Google search or think about something
+[707] like YouTube like you have you know
+[709] millions of search results you have
+[711] millions of web pages you have millions
+[712] of videos how do you evaluate the
+[714] qualities of these videos like is this a
+[716] high quality like is this a high quality
+[717] web page is it informative or is it
+[719] really spammy like in the way you do
+[721] this is like you just need I mean you
+[723] gather so many signals you gather like
+[725] page dependent signals you gather like
+[727] user dependent signals you gather
+[728] activity based signals and all these
+[730] feed into you know a giant ML at the end
+[732] of the day and so in the same way we we
+[734] gather all these signals about our
+[735] annotators about the work that they're
+[737] performing about like their activity on
+[738] the site and we just feed it into um a
+[740] lot of these different uh like we
+[741] basically have an ML team in TR that
+[743] builds a lot of these algorithms to
+[744] measure all of this
+[745] &gt;&gt; what is changing or breaking as you are
+[749] like scaling increasingly sophisticated
+[752] like annotations, right? Like if you
+[755] know model quality baseline is going up
+[757] um every couple of months, then the
+[760] expectation is it like exceeds you know
+[762] what might have been um a random human
+[764] at some point as you said like can draw
+[766] a bounding box into all of these
+[768] different fields um where uh you know we
+[772] we have modeled better than the 90th
+[774] percentile at some point.
+[775] &gt;&gt; So this is actually something that we do
+[776] a lot of internal research on ourselves
+[778] as well. So there's basically this field
+[780] of uh AI alignment called scalable
+[782] oversight which is basically this
+[784] question of how do you how do you like
+[786] have models and humans working together
+[788] hand in hand to produce data that is
+[791] better than either one of them can
+[792] achieve on their own and so even like
+[794] even today something like writing an SAT
+[797] story from scratch even today like sure
+[799] a couple years ago we might have written
+[800] that story completely from scratch
+[801] ourselves today it's just like not very
+[803] efficient right like you might start
+[804] with a story that a model model created
+[806] and then you would edit it you might
+[808] edit did it in a very substantial way.
+[809] Like maybe just the core of it is very
+[811] vanilla, very generic, but there's just
+[813] so much like kind of like croft that is
+[815] just inefficient for a human to do and
+[817] doesn't really benefit from like the
+[818] human creativity and human ingenuity
+[820] that we're trying to add into the
+[821] response. And so you can just start with
+[822] like this barebones uh structure that
+[824] you're basically just layering on top
+[825] of. And so again, like there's like more
+[827] sophisticated ways of thinking about
+[828] scalable oversight, but just this
+[829] question of how do you build the right
+[830] interfaces, how do you build the right
+[832] tools, how do you just combine people
+[834] with with with AI in the right ways to
+[837] like make them u make them more
+[838] efficient. Um is something that we build
+[840] a build a lot of technology for.
+[842] &gt;&gt; A lot of the discussion in terms of what
+[846] human data the labs want has moved to um
+[850] RL environments and reward models in you
+[853] know recent months. um what is hard
+[855] about this or you know what are you guys
+[857] working on here?
+[858] &gt;&gt; So we do a lot of work building our
+[859] environments and I think one of the
+[860] things that people really underestimate
+[862] is how it is how complicated it is that
+[864] you can't just synthetically generate it
+[866] like for example you think you need a
+[868] lot of tools because
+[870] these are massive environments that
+[872] people want. Can you give an example of
+[874] like just to make it more real
+[875] &gt;&gt; like imagine
+[877] you are a salesperson
+[880] and when you are a salesperson you need
+[883] to be interacting with Salesforce you
+[885] need to be getting leads through Gmail
+[886] you're going to be talking to customers
+[888] in Slack you're going to be creating
+[890] Excel sheets tracking your leads you're
+[892] going to be uh I don't know writing
+[893] Google Docs and making PowerPoint
+[895] presentations to present things to
+[896] customers and so you want the basically
+[898] these are very rich environments that
+[899] are literally simulating your entire
+[901] world as a salesperson
+[903] just like imagine like your entire
+[905] world. So everything in the future is
+[908] not on your desktop as well. Maybe you
+[910] have a calendar
+[913] to a meeting to meet a customer and then
+[914] you want to simulate a car accident
+[916] happening and you're getting notified of
+[918] that. So you need to like leave a little
+[920] bit earlier. Like all these things are
+[921] things that we actually want to model in
+[923] these very very rich RO environments.
+[925] And so the question is how do you
+[926] generate all the data that goes into
+[928] this? like, okay, you're going to need
+[929] to generate like thousands
+[932] of Slack messages, hundreds of emails.
+[934] You need to make sure that these are all
+[935] consistent with each other. You need to
+[937] make sure that like going back to like
+[939] my core example, you need to make sure
+[940] that time is evolving in these
+[941] environments and like certain like
+[942] external events happen. Like how do you
+[944] do all of this? And then um like in a
+[946] way that's actually kind of like
+[948] interesting and creative but also
+[950] realistic and not like in congruent with
+[953] each other. uh like there's just like a
+[955] lot of thought that needs to go into
+[956] these environments um to to make sure
+[958] that they're again like rich creative
+[959] environments that the models can learn
+[961] interesting things from and so uh yeah
+[964] you basically need like a lot of tools
+[965] and balance sophistication for for great
+[968] use.
+[968] &gt;&gt; Is there any intuition for like how real
+[971] or how complex is enough or is it just
+[973] like you know there's a there's no
+[976] ceiling on the um realism that is useful
+[980] here or the complexity of environment
+[981] that is useful here. I think there's no
+[983] ceiling like at the end of the day you
+[985] just want as as like much diversity and
+[988] richness as you can get because the more
+[990] richness that you have yeah the more the
+[992] models can learn from like the longer
+[993] the time horizons the more that the
+[994] models can learn on and improve on. So I
+[996] think there's almost almost an unlimited
+[998] ceiling here. If you were to make a five
+[1000] or 10 year bet on like what scales most
+[1003] in terms of demand from people training
+[1006] AI models and and types of data, is it
+[1008] RL environments or is it traces on types
+[1011] of like expert reasoning or or what
+[1013] other areas do you think there's going
+[1015] to be a really large demand for? I mean
+[1017] I think it will be all of the above like
+[1019] I don't think our environments alone
+[1020] will suffice just because I mean it
+[1022] depends on how you think but there are
+[1023] our environments but oftentimes these
+[1025] are very very rich trajectories are very
+[1026] very long and so it's almost like
+[1029] inconceivable that a single reward um I
+[1032] mean I think even today we often think
+[1033] about things in terms of multiple
+[1034] rewards not just a single reward but a
+[1036] thing like a single reward just may not
+[1038] be like rich enough to capture um all
+[1041] the all the work that goes into like the
+[1043] model solving some like very very
+[1045] complicated goal Um so I think it'll
+[1047] probably be a combination of of all
+[1049] those.
+[1050] &gt;&gt; If you assume eventually um some form of
+[1053] superhuman performance across different
+[1055] model types relative to human experts,
+[1058] how do you think about the role of
+[1059] humans relative to data and data
+[1062] generation versus synthetic data or
+[1064] other approaches like at what point does
+[1066] human input sort of run out as a as a
+[1068] useful um point of either feedback or
+[1071] data data generation?
+[1072] &gt;&gt; So I think human feedback will never run
+[1074] out and that's for a couple reasons. So
+[1076] I mean even if I think about the
+[1077] landscape today I think people often
+[1080] overestimate the role of synthetic data
+[1082] like I personally I think synthetic data
+[1083] actually is very very useful like we use
+[1085] it um like a ton ourselves in order to
+[1087] supplement what the humans do like again
+[1088] like like I said earlier there's like a
+[1090] lot of croft that simply isn't worth a
+[1092] human's time but what we often find is
+[1095] that like for example a lot of times
+[1097] where customers will come to us and
+[1098] they'll be like yeah for this past 6
+[1099] months I've been experimenting with with
+[1101] synthetic data I've gathered 10 to 20
+[1103] million pieces of synthetic data
+[1105] Actually, we finally realized that 99%
+[1107] of it just wasn't useful. And so, we're
+[1109] trying to find right now, we're trying
+[1110] to curate the 5% that is useful, but we
+[1113] are literally going to throw out 9
+[1114] million of it. And often times, you'll
+[1116] find out that yeah, like actually a
+[1118] thousand even a thousand pieces of high
+[1119] quality human data, highly cured, really
+[1121] really high quality human data is
+[1123] actually more valuable than those 10
+[1124] mill than those 10 million points. So,
+[1126] that is one thing I'll say. Another
+[1127] thing I'll say is that it's almost like
+[1129] sometimes you need an external signal to
+[1132] the models. like the models just think
+[1134] so differently from humans that you
+[1138] always need to make sure that they're
+[1139] kind of aligned with the actual
+[1141] objectives that you want. Let me give
+[1143] two examples. So one example is that
+[1145] it's kind of funny if sometimes if you
+[1146] try so one of the frontier models let me
+[1149] just say that one of them if you go use
+[1151] the frontier model it's like one of the
+[1153] top models or one of the models
+[1154] everybody think is one of the top if you
+[1156] go use it today like maybe 10% of the
+[1157] time when I use it will just output
+[1159] random Hindi characters and random
+[1161] Russian characters into one of my
+[1162] responses so I be like tell me about
+[1164] Donald Trump tell me about Barack Obama
+[1166] and just like in the middle of it will
+[1167] just output Hindi and Russian it's like
+[1169] what is this and the model just isn't
+[1172] like self-consistent enough to be aware
+[1174] of this. It's almost like you need a
+[1176] like an external human to tell the model
+[1178] that yeah this is wrong. One of the
+[1180] things I think is a giant plague on AI
+[1182] is almsus alam marina and I'll skip the
+[1185] details for now but I think right now
+[1187] people will often
+[1189] it's like if you train your model on the
+[1191] wrong objectives so like the the mental
+[1193] model that you should have of LMS marina
+[1195] is that
+[1197] people are writing prompts they'll get
+[1199] two responses and they'll spend like 5
+[1202] 10 seconds looking their responses and
+[1204] they'll just pick whichever one looks
+[1205] better to them. So they're not
+[1207] evaluating whether or not the model
+[1208] hallucinated. They're not evaluating the
+[1209] factual accuracy and whether it followed
+[1211] any instructions. They're literally just
+[1212] vibing with the model and like, okay,
+[1214] yeah, like this one seemed better
+[1215] because it had a bunch of formatting. It
+[1217] had a bunch of emojis. It just looks
+[1219] more impressive. And people will train
+[1222] on like basically an elements of
+[1223] subjective and they won't realize all
+[1225] the consequences of it. And again, like
+[1227] the model itself doesn't doesn't like
+[1228] know what its objective is. It's like
+[1230] you almost need like an external like
+[1232] quality signal in order to tell it what
+[1234] the right objective should be. And if
+[1235] you don't have that, then the model will
+[1237] just go in all these crazy directions.
+[1239] Again, like you may you may have seen
+[1240] some of the results with like the with
+[1241] law before, but just go in all these
+[1242] crazy directions that um kind of kind of
+[1245] mean you need these external external
+[1247] validators.
+[1247] &gt;&gt; This also happens actually when you do
+[1249] different forms of like protein
+[1250] evolution or things like that where you
+[1253] select a protein against a catalytic
+[1255] function or something else and you just
+[1256] kind of randomize it and have like a
+[1257] giant library of them and you end up
+[1259] with the same thing where you have these
+[1261] really weird activities that you didn't
+[1262] anticipate actually happening. And so I
+[1264] sometimes think of model training as
+[1266] almost this odd evolutionary landscape
+[1268] that you're effectively evolving and
+[1269] selecting against and you're kind of
+[1270] shaping the model into that local maxima
+[1273] or something. And so it's kind of this
+[1274] really interesting output of anything
+[1276] where you're effectively evolving
+[1278] against a feedback uh signal and
+[1280] depending what that fe feedback signal
+[1282] is, you just end up with these odd
+[1283] results. So it's interesting to see how
+[1285] it kind of transfers across domains.
+[1287] these you know course uh as you said
+[1290] 5-second reaction academic benchmarks or
+[1294] even non-academic industrial benchmarks
+[1296] are uh easily hacked or like not the
+[1300] right gauge of performance against any
+[1302] given task. They are very popular. What
+[1305] is the alternative um for somebody who's
+[1307] trying to like choose the right model or
+[1309] understand model capability? So the
+[1312] alternative that I think all the
+[1314] frontier labs view as a gold standards
+[1316] is basically human evaluation. So again
+[1318] proper human evaluation where you're
+[1320] actually taking the time to look at the
+[1321] response. You're going to fact check it.
+[1323] You're going to see whether or not it
+[1324] followed all the instructions. You have
+[1325] good pace so you know whether or not the
+[1327] the model has good writing quality. Like
+[1328] this concept of like doing all that and
+[1330] spending all of time to do that as
+[1331] opposed to just vibing for 5 seconds I
+[1334] think actually is really really
+[1335] important because if you don't do this
+[1337] you basically you're basically just
+[1338] training your models on the analog of
+[1339] clickbait. Um, so I think it actually is
+[1342] really really important for model
+[1343] progress.
+[1343] &gt;&gt; If it's not LMIS, like how should people
+[1347] um actually evaluate model capability
+[1350] for any given task?
+[1351] &gt;&gt; What all differential labs find is that
+[1353] human evals really are the gold
+[1355] standard? Like you really need to take a
+[1356] lot of time to fact check these
+[1358] responses to verify the following
+[1360] instructions. You need people with good
+[1362] taste to evaluate the writing quality uh
+[1364] and so on and so on. And if you don't do
+[1366] this, you're basically training your
+[1367] models on the analy clickbait. And so I
+[1369] think I think that really really harms
+[1370] model progress.
+[1371] &gt;&gt; Is there work that surge is doing in
+[1373] this domain of like trying to
+[1376] standardize human eval or make it more
+[1378] transparent to end consumers of the API
+[1380] or even users?
+[1381] &gt;&gt; So internally we do a lot of work
+[1384] actually today with working with all the
+[1385] frontier labs to help them understand
+[1387] our models. So again we're constantly
+[1388] evaluating them. Um we're constantly
+[1391] surfacing loss areas for them to improve
+[1393] on and so on and so on. And so right now
+[1395] a lot of this is internal but one of the
+[1397] things we actually want to do is sort of
+[1399] external forms of this as well where
+[1401] we're helping educate people on yeah
+[1402] like these are the different
+[1403] capabilities of all these models here
+[1405] these models are better at coding here
+[1406] these models are better at instruction
+[1408] following here these models are actually
+[1410] hallucinating a lot so you trust trust
+[1411] them as much so we we actually do want
+[1413] to start a lot of external work to to
+[1415] help educate the the broader landscape
+[1416] on this.
+[1416] &gt;&gt; If we can zoom out and talk just about
+[1418] the um the larger like competitive
+[1421] landscape and what happens with frontier
+[1422] models over time. What does a meta scale
+[1425] deal mean for you guys or what do you
+[1427] make of it?
+[1428] &gt;&gt; So, I think it's kind of interesting in
+[1429] that. So, we were already the number one
+[1430] player in the space. It's been
+[1432] beneficial because yeah, there were
+[1433] still some legacy teams using scale like
+[1436] they just didn't know about us because
+[1437] we were still pretty under the radar. I
+[1438] think it's been beneficial because one
+[1441] of the things that we've always believed
+[1444] sometimes when you use these lowquality
+[1446] data solutions, people kind of get
+[1448] burned on human data and so they had
+[1451] this negative experience and so then
+[1452] they don't want to use human data again.
+[1454] And so to try these other methods that
+[1456] are honestly just a lot slower and don't
+[1459] come with the right objectives and so I
+[1461] think it just harms model progress
+[1463] overall. And so like just like the more
+[1465] and more we can get all these frontier
+[1467] labs using high quality data I think it
+[1468] actually really really is beneficial for
+[1470] an industry as a whole. So I I am like I
+[1473] I think overall it was a like a good
+[1475] thing to happen.
+[1475] &gt;&gt; If you were to um make a bet that an
+[1479] underdog catches up to open athropic and
+[1481] deep mind who would it be? So, I would
+[1483] bet on XAI. I think they're just very
+[1486] hungry and missionoriented in a way that
+[1488] gives them a lot of really unique
+[1489] advantages.
+[1490] &gt;&gt; I guess maybe another um sort of broader
+[1493] question is do you think there's three
+[1496] competitive frontier models, 10
+[1498] competitive frontier models uh a couple
+[1500] years from now? And is any of those open
+[1502] source?
+[1503] &gt;&gt; Yeah. So, I actually see more and more
+[1504] frontier models opening up over time
+[1506] because I actually don't think that the
+[1508] models will be commodities. Like I think
+[1510] one of the things that we've I mean I
+[1511] think one of the things that has
+[1512] actually been surprising the past couple
+[1514] of years is that you actually see all of
+[1516] their models have their own focuses that
+[1518] give them unique strengths. Like for
+[1520] example I think obviously been really
+[1522] really amazing at coding and enterprise
+[1523] and open has this big consumer focus
+[1525] because of chat activityd like I
+[1527] actually really love it. It's models
+[1528] personality and then grock you know just
+[1531] has a different set of things that's
+[1532] willing to say and to build. And so it's
+[1535] almost like every company has it's
+[1538] almost like a different set of
+[1540] principles that they care about. Like
+[1541] they're like some will just never do one
+[1544] thing. Others are totally willing to do
+[1546] it. Others just have different like
+[1548] models will just have so many different
+[1549] facets to their personality, so many
+[1551] different facets to the type of skills
+[1554] that they will be good at. And sure,
+[1556] like eventually AGI will maybe encompass
+[1558] this this all, but in the meantime, you
+[1560] just kind of need to focus. Like there's
+[1561] only so many focuses that you can have
+[1562] as a company. And so I think that just
+[1564] will lead to uh like different strengths
+[1566] for all the model providers. So I mean I
+[1568] think today you know we already see like
+[1569] a lot of people including me we will
+[1571] switch between all the different uh
+[1573] models just depending on what we're
+[1574] doing. And so in the future I think that
+[1576] will um just happen even more as as
+[1578] people are just using more and more
+[1579] models for or using models for different
+[1582] aspects of their lives like both their
+[1584] personal and their in their like
+[1585] professional lives. Going back to
+[1586] something Elad mentioned, like where
+[1589] should we expect to see like a surge
+[1591] investing over time? Like what do you
+[1592] think you guys will do a few years from
+[1594] now that you don't do today?
+[1595] &gt;&gt; Again, I think I'm really excited about
+[1597] this more kind of like public research
+[1600] push that we're we're starting to have
+[1602] like I think it is really interesting in
+[1604] that a lot of the like for obvious
+[1607] reasons a lot of the frontier labs
+[1608] they're just not publishing anymore. And
+[1610] as a result of that, I think it's almost
+[1614] like the the industry has fallen into
+[1617] kind of a trap that I worry about. So
+[1619] like maybe to dig into some of some of
+[1621] the things I said earlier um with some
+[1624] of the negative incentives of the
+[1625] industry and some of the kind of
+[1627] concerning trends that that that we've
+[1629] seen. So like going back to LMS, one of
+[1631] the things that we'll see is like a lot
+[1632] of researchers, they'll tell us that
+[1633] their VPs make them focus on increasing
+[1636] their rake on LM LMS. And so I've had
+[1639] researchers explicitly tell me that
+[1640] they're okay with making their models
+[1642] worse at factuality, worse at following
+[1644] instructions as long as it improves
+[1646] their ranking because their leadership
+[1647] just wants to see these metrics go up.
+[1649] And again, that is like something that
+[1650] literally literally happens because the
+[1652] people ranking these things analysis.
+[1654] They don't care whether the models are
+[1656] good at following. They don't care
+[1657] whether the models are um are emitting
+[1660] like factual responses. They what they
+[1662] care about is okay, did this model emit
+[1665] a lot of emojis? Did it emit a lot of
+[1667] bold words? Did it have really long
+[1669] responses? Because that's just going to
+[1670] look more impressive to them. Like one
+[1672] of the things that we found is that the
+[1673] easiest way to improve your rank on Elm
+[1674] Marina is literally to make your make
+[1676] your model response longer. And so what
+[1679] happens is like there are a lot of
+[1681] companies who are trying to improve
+[1682] their leaderboard rank. So they'll see
+[1683] progress for 6 months because all
+[1684] they're doing is unwillingly making
+[1686] their model responses longer and adding
+[1687] more emojis
+[1689] and they don't realize that all they're
+[1690] doing is training their models to
+[1692] produce better clickbait. and they might
+[1694] finally realize six months or a year
+[1695] later like again you may have seen some
+[1697] of these things in industry but it
+[1698] basically means that they spent the past
+[1699] six months making zero progress and in a
+[1702] similar way I think you know besides LMS
+[1704] you have all these academic benchmarks
+[1706] and they're completely diverse in the
+[1707] real world like a lot of teams are
+[1708] focused on improving these SAT style
+[1710] scores instead of real world progress
+[1711] like like I'll give an example there's a
+[1713] benchmark benchmark called if eval and
+[1716] if you look at if eval so it stands for
+[1717] instruction following eval if you look
+[1719] at if eval like some of the instructions
+[1721] it's trying to check whe our models can
+[1722] do It's like, "Hey, can you uh write an
+[1725] essay about Abraham Lincoln?" And every
+[1727] time you uh like mention the word
+[1729] Abraham Lincoln, make sure that five of
+[1731] the letters are capitalized and all the
+[1732] other letters are uncalized. It's like
+[1734] what is this? And sometimes we'll get
+[1737] customers telling us like yeah like we
+[1738] really really need to improve our like
+[1739] our score on on if val and what this
+[1743] means is again like you have all these
+[1745] companies or all these researchers who
+[1747] instead of focused on real world
+[1749] progress they're just like optimizing
+[1751] for these silly SAT style benchmarks.
+[1753] And so one of the things that we we
+[1754] really want to do is just think about
+[1756] ways to educate the industry think about
+[1759] ways of publishing on our own just like
+[1761] think about ways of steering the
+[1762] industry into like hopefully a better
+[1763] direction. And so I think that's just
+[1765] one one big thing that we're we're
+[1766] really excited about and could be could
+[1768] be really big in the next five years.
+[1769] &gt;&gt; Okay. Yeah. I mean, so Sarah brought up
+[1770] earlier um how everybody kind of wants
+[1772] high quality data.
+[1774] What does that mean? How do you think
+[1775] about that? How do you generate it? Can
+[1777] you tell us a little bit more about your
+[1778] thoughts on that?
+[1778] &gt;&gt; So let's let's say you wanted to train a
+[1780] model to write an eight line poem about
+[1782] the moon. And so the way most companies
+[1784] think about it is well let's just hire a
+[1786] bunch of people from Craigslist or
+[1787] through some recruiting agency and let's
+[1789] ask them to write poems. And then the
+[1790] way they think about quality is well is
+[1793] this a poem? Is it eight lines? Does it
+[1795] contain the word moon? If so, like,
+[1797] okay, yeah, I hit these three check
+[1798] boxes. So, yeah, sure, this is a great
+[1800] poem because it follows all these
+[1801] instructions. But if you think about it,
+[1803] like the reality is you get these
+[1805] terrible poems. Like, sure, it's eight
+[1806] lines that has the word moon, but they
+[1808] feel like they're written by kids from
+[1809] high school. And so, other companies be
+[1811] like, okay, sure, these people on
+[1813] Craigslist don't have any poetry
+[1814] experience. So, I'm going to do instead
+[1816] is hire a bunch of people with PhDs in
+[1817] English literature. But this is also
+[1819] terrible. Like, a lot of PhDs, they are
+[1821] actually not good writers or poets. Like
+[1823] if you think like think of Hemingway or
+[1824] Emily Dickinson, they definitely didn't
+[1826] have a PhD. I don't think they even
+[1827] completed college. And like one of the
+[1829] things I will say is like yeah, I I went
+[1831] to MIT. I think Eli you went you went
+[1832] there too. And a lot of people I knew
+[1833] from MIT who graduate with a CS degree,
+[1835] they're terrible coders. And so we think
+[1838] about quality completely differently.
+[1839] Like what we want isn't poetry that
+[1841] checks some boxes and like okay yeah
+[1842] check the street boxes and uses some
+[1844] complicated language. We want the type
+[1846] of poetry that Nobel Prize laurates
+[1848] would write. So what you want is like
+[1850] okay we want to recognize that poetry is
+[1852] actually really subjective and rich like
+[1854] maybe one poem it's a haik coup about
+[1855] moonlight on water and there's another
+[1858] poem that's like it has a lot of
+[1860] internal rhyme meter and another one
+[1862] that I don't know focus on the emotions
+[1863] behind the moon rising at night and so
+[1866] you actually want to capture that
+[1867] there's thousands of ways to write a
+[1868] poem about the moon there isn't a single
+[1870] correct way and each one gives you all
+[1871] these different insights into language
+[1873] and imagery and poetry and if you think
+[1875] about it's not just poetry it's like
+[1877] math there's a thousand ways probably to
+[1878] to prove the pythagorian theorem. And so
+[1880] I think the the difference is that when
+[1881] you think about quality the wrong way,
+[1883] you kind of get commodity data that
+[1886] optimizes for things like inner radar
+[1888] agreement and again checking boxes off
+[1889] of some list. But one of the things that
+[1891] we try to teach all of our customers is
+[1893] that high quality data actually really
+[1894] embraces human intelligence creativity.
+[1897] And when you train the models on this
+[1898] like richer data, they don't just learn
+[1900] to follow instructions. They really
+[1901] learn all these deeper patterns about
+[1903] all the stuff that makes language in the
+[1905] world really compelling and meaningful.
+[1906] And so I think a lot of companies they
+[1908] just throw humans at the problem and
+[1909] they think that you can get good data
+[1911] that way. But I think you really need to
+[1912] think about quality from first
+[1913] principles and what it means and you
+[1915] need a lot of technology to identify
+[1917] yeah that these are amazing programs and
+[1918] these are creative math problems and
+[1920] these are games and web apps that are
+[1922] beautiful and fun to play and these ones
+[1923] are terrible to use. So I think you you
+[1925] really need to build a lot of technology
+[1926] and think about quality in the right
+[1928] way. Otherwise you're basically just
+[1929] like scaling up mediocrity.
+[1931] &gt;&gt; That sounds very domain specific. So do
+[1934] you like in every domain are you
+[1935] building a lens of what quality looks
+[1937] like along with your partners?
+[1939] &gt;&gt; Yeah, I mean I think we have kind of
+[1941] like holistic quality principles but
+[1943] then often times there are differences
+[1944] per domain. So it's like a combination
+[1946] of both.
+[1946] &gt;&gt; I think we got all the uh core topics.
+[1949] Nice work on podcast number two Edwin
+[1952] and thanks for doing this. Congrats on
+[1953] all the progress with the business.
+[1955] &gt;&gt; Yeah. No, thanks so much for joining us.
+[1956] &gt;&gt; Yeah, it was great great meeting you
+[1957] guys.
+[1959] &gt;&gt; Find us on Twitter at no prior pod.
+[1962] Subscribe to our YouTube channel if you
+[1964] want to see our faces. Follow the show
+[1966] on Apple Podcasts, Spotify, or wherever
+[1968] you listen. That way, you get a new
+[1969] episode every week. And sign up for
+[1971] emails or find transcripts for every
+[1973] episode at no-bers.com.

@@ -1,0 +1,1798 @@
+[0] so you go from essentially having just
+[2] an application to an application with
+[4] all its dependencies spun up that can be
+[5] reproduced pretty much anywhere without
+[7] any sort of conflict that you you define
+[8] yourself right and so that's kind of the
+[10] magic moment and that's what we're
+[11] working towards like right now
+[18] [Music]
+[23] hello welcome to the devtools fm podcast
+[25] this is a podcast about developer tools
+[27] and the people who make them i'm andrew
+[28] and this is my co-host justin
+[30] [Music]
+[32] hey everyone our guest today is jake
+[34] cooper jake is the founder of
+[36] railway.app jake really excited to have
+[39] you on before we dig in and start
+[41] talking about railway would you like to
+[43] tell our listeners a little bit more
+[44] about yourself yeah sure my name is jake
+[46] been an engineer for almost 10 years now
+[49] just like started writing out c plus
+[51] plus hobby kind of hack scripts for
+[53] random fps video games and then some
+[55] sort of tf2 backpack scrapers when i was
+[57] like maybe 13 or 14. and so i evolved
+[60] rapidly over the time there and went
+[62] from visual basic you know started
+[64] writing jquery and then i worked at
+[66] wolfram briefly while i was in college
+[68] worked remotely did a very very brief
+[70] stint in finance in new york moved there
+[72] with i was out within five months
+[74] realized that it was not my vibe and
+[75] then i worked very like
+[78] like probably for about 18 months on the
+[80] jump bikes and scooters at uber had a
+[82] friend who was a part of the acquiring
+[84] team over there and was like we have
+[85] this really crappy ruby on rails app and
+[86] it needs to like go to like a nice like
+[88] distributed systems like go micro
+[90] service mesh and i was like cool that
+[91] sounds wonderful i had done a nice chunk
+[93] of that for a bunch of distributed
+[95] systems projects in college and always
+[96] found them like really really
+[97] interesting so i went out there with a
+[98] team of people and kind of scaled that
+[100] whole thing out started building the
+[101] provider integration platforms you
+[103] started integrating with like scooter
+[104] companies and bike companies and lime
+[106] and like i flew to paris to do all that
+[108] stuff and then uber shelved the whole
+[110] thing and sold it to lime and then
+[111] canned a bunch of us and so i asked to
+[113] be fired because i was like i'm done
+[115] with this and so i walked away from that
+[117] and then yeah so so that took us to
+[119] railway and then i just started fiddling
+[120] on a bunch of stuff and just constantly
+[122] needed
+[123] some sort of piece of infrastructure
+[125] that i thought would be easier and it's
+[126] a little bit of background really is a
+[127] platform that we've created just over a
+[129] year ago now that makes it really really
+[131] easy to even use infrastructure so we
+[133] give you a canvas where you can just
+[134] espouse into existence whatever you
+[136] would like right when you say i want
+[137] postgres i want to deploy this
+[139] application i want whatever and we will
+[140] go figure out how to make it live and
+[142] running for you so yeah that's a bit
+[143] about me and a bit about railway so
+[146] the idea for railway really came from
+[147] this like previous experience of of
+[150] building apps and like not wanting to
+[152] think so much about infrastructure
+[153] especially if you're distributed systems
+[155] sort of apps
+[156] yeah yeah exactly it came from from this
+[159] experience of not wanting to have to
+[160] deal with it and so of course what we
+[162] did was we like built our entire persona
+[164] around it and probably we'll spend the
+[165] next 10 years of our lives dealing with
+[167] it so
+[168] i guess we kind of just like flipped the
+[170] filthy version there but we realized it
+[171] was like way too hard for everybody um
+[173] even the people who were kind of like
+[174] already doing it right and when i was
+[176] like you know after i left uber i was
+[178] like i just need like i seen the post
+[180] crescent since i just need something
+[181] like just you know and it was basically
+[183] like this
+[184] this end point that i hit that would
+[185] just like spin up a container and then
+[187] give me a postgres instance on a port
+[189] and i would be away to my races and i
+[190] could go and build my application
+[192] yeah this is this is a really
+[194] interesting topic for me i've seen this
+[195] throughout
+[197] jobs that i've had in the industry where
+[200] infrastructure generally becomes a role
+[202] of like or like everybody's
+[204] responsibility it's like you have like a
+[206] a an infrastructure team or a platform
+[209] team and they own it it's like all small
+[211] and neat and they're like oh wait we
+[213] have too much work now we want everybody
+[214] to be able to do this and now
+[216] everybody's like editing kubernetes yaml
+[219] and trying to figure out like how to
+[220] stitch all this stuff together and it
+[222] gets pretty gnarly so
+[224] how is
+[225] railry's railway's approach different
+[228] you said you know you have a canvas and
+[229] you can like sort of make stuff but like
+[231] what does it look like in your
+[232] day-to-day
+[234] yeah so so our day-to-day is like
+[236] figuring out how people can not interact
+[238] with these interfaces as frequently as
+[240] possible right like we don't want people
+[242] to deal with cube ammo we don't want you
+[243] to deal with engine x config we don't
+[245] want you to deal with any of this stuff
+[247] right like what we want you to do is be
+[248] able to focus on your application layer
+[250] and us to be able to infer via kind of
+[253] just like magic detection whatever your
+[255] kind of dependencies are where this
+[257] thing should kind of land like what it's
+[258] kind of resources constraints should be
+[260] right and we should be able to have like
+[261] a best guess approximation on like
+[263] yeah this thing this thing is reasonably
+[265] live right like instead of having this
+[266] kind of like mount of yaml where you
+[267] have to define everything up front we
+[268] really try and take like that amount of
+[271] yaml and make it post haste right like
+[273] so the ideal inst like in modern devops
+[275] is you have this this wall of yaml that
+[277] you have to get right off the first bat
+[278] and you play basically like yammel
+[280] battleship where you slide this ammo
+[281] under the door and then it gets slid
+[283] back and says
+[284] random mesoterra care and you're like
+[286] right and for us we basically just
+[288] wanted to like go and push that back and
+[289] basically be like all right cool just
+[290] change it whenever you kind of want
+[291] we'll modify these configs for you and
+[293] then we will kind of like redeploy this
+[294] thing as needed you know
+[296] so as a user of railway are you using it
+[299] mostly through
+[301] the gui of like railways because you do
+[303] have this like visual canvas experience
+[305] where you can like see your sort of like
+[306] services together in the canvas or is it
+[309] through
+[311] also through configuration or is it a
+[312] bit of both depending on what your needs
+[314] are yeah so we have the canvas obviously
+[316] and then we also have the command line
+[318] which allows you to run all this stuff
+[319] locally right so it would take your
+[320] entire project config and it would allow
+[321] you to kind of like hook into either any
+[324] instance that already exists inside of
+[325] the cloud or fork and instance and run
+[326] everything you need locally right so you
+[328] could do railway shell or railway run
+[329] and then would drop you into kind of
+[330] like an active instance inside of your
+[332] application layer code that you might
+[334] just have you know it's you can get gets
+[335] pulled down it gets built it gets
+[337] automatically detected with the exact
+[338] same config that you would have remotely
+[340] right and all of that config is is like
+[342] it's not stored in a repository it's not
+[344] stored in anything like that we just
+[345] keep track of the infrastructures code
+[347] for all of the underlying principles and
+[349] this is super neat because it basically
+[350] means you can kind of like solve the n
+[352] plus one problem where you would have
+[353] like a monorepo as well as like another
+[355] dependency that you want to add right
+[357] and so if you if this is kind of like
+[358] your current org status or case where
+[360] you're like oh cool i want to integrate
+[361] this external dependency you kind of
+[363] have to like take this dependency from
+[365] its repository and like shoehorn it into
+[367] your monorepo and then you essentially
+[369] like break this dependency kind of like
+[371] link and with railway we can just like
+[372] keep track of all of these pointers as
+[374] just kind of like distributed pointers
+[375] as to where they exist when everybody
+[377] kind of authors onto this thing we can
+[379] hook into that kind of like deployment
+[380] lifecycle management engine
+[384] so how does like is there any comparable
+[386] services to railway for our viewers that
+[388] are listeners that might not be as
+[390] infrastructure heavy is it kind of like
+[391] heroku or render
+[393] yeah so it's it is like we're heavily
+[396] inspired by heroku like that's one of
+[398] the first tools that a lot of us use to
+[399] like just go and get something up and
+[400] running and so for
+[401] like on it on the surface it's very very
+[404] similar to rogue right like if you want
+[405] to get something up and running whether
+[407] it's a database whether it's an
+[408] application or anything like that we
+[409] will help you get it up and running
+[410] right and that is kind of generally our
+[412] pitch for for companies and teams who
+[413] want to move extremely quickly right but
+[415] the long tail of this problem is
+[416] actually
+[417] it's really on that kind of like
+[418] dependency life cycle management right
+[420] and so like as we kind of grow our aim
+[422] is actually for us not to be competitive
+[424] with roku it's actually to be
+[425] competitive with terraform right and so
+[427] you essentially can keep this desired
+[429] state that you currently have and then
+[430] or this this current state you currently
+[432] have and then desired desired state and
+[434] as you kind of like use the dashboard as
+[436] this compiler you will essentially
+[438] espouse into existence that config and
+[439] we will go and reconcile the state
+[441] underneath for you right so on the
+[442] surface it looks a lot like competing
+[443] with roku but the idea long term is the
+[445] dependency management kind of terraform
+[447] layer which like
+[448] i don't think fundamentally exists for
+[451] for kind of most things and so it's kind
+[453] of like a really interesting place to be
+[454] because you're kind of pitching this
+[456] thing that like people know is like
+[457] really interesting and like and and it
+[459] will help you kind of on your
+[461] development journey but your current
+[463] best approximation is most of these
+[464] tools like render and heroku where it's
+[466] like okay cool we'll just figure out
+[468] production right like that's that's what
+[469] would kind of get up and running your
+[471] development environment that's totally
+[472] up to you and then like you know we you
+[474] know if you want a flask app go find a
+[475] flask app from like github right we see
+[477] railway is kind of this universal memo
+[478] where you can just like yank things from
+[479] it and anytime anybody is deployed or
+[481] built something you should be able to
+[483] yank that as a dependency that you can
+[484] start using right and also keep track of
+[486] that dependency right so you don't need
+[487] to like clone or fork or any like pull
+[489] down this stuff and then you've kind of
+[490] like lost this pointer in the world and
+[492] you lose that dependency like we should
+[493] build attract that and we should be able
+[495] to like push all of those
+[496] like downstream changes right and they
+[498] should echo and kind of ripple out in
+[499] the same way that you would have like
+[501] you know packages you can have like
+[502] packages as infrastructure
+[505] interesting so this gets into your your
+[506] sort of like one of your catch rages is
+[508] like infrastructure as legos it's like
+[510] trying to get these pre-packaged pieces
+[513] and then compose them into something
+[514] right what i mean what might that like
+[518] can we
+[519] get a little bit more of a concrete
+[520] example of like how you might use that
+[521] maybe with a flask app or something it's
+[523] like how does it simplify building app
+[525] yeah sure and so like
+[527] let's say you have a an api server and
+[530] like a database right and so those are
+[532] basically what we call atoms right and
+[534] so those are like the core most like low
+[536] level building block that you would want
+[537] to build right and so you would say i
+[538] want a postgres instance and i want to
+[540] deploy this like flask app somewhere
+[542] right and then if some like you had
+[543] built something that somebody wanted to
+[545] depend on right like the evolution of
+[546] this ends up being something like post
+[547] hog right so you you add like redis on
+[549] top of it you add this other thing you
+[551] start authoring it to the community
+[552] right and people start to depend on it
+[554] and they're like how do i deploy this
+[555] on-prem how do i go and manage this
+[556] right like since railway understands how
+[558] to deploy postgres and how to deploy
+[560] redis and how to deploy docker files you
+[562] can essentially build up these like
+[563] legos that can now be composed together
+[565] right and if you say cool i want a
+[566] version of post hog then we can say
+[568] let's get you the latest version of post
+[569] hog that ever ran we'll go grab that as
+[571] a dependency and as post hog authors new
+[574] things and says we're going to move to
+[575] postgres 14 right or we're going to like
+[578] okay we're going to swap radius out with
+[579] like memcache d or like some others or
+[581] not or like not mykashy i just pushed
+[583] ncd and memcached together long day but
+[585] anyway
+[587] they swap it out with another memcache
+[588] you can actually keep track of these
+[589] dependency over time and if people will
+[591] create the like backfills required for
+[593] any of these things you can fork into a
+[594] parallel environment backflip backfill
+[596] everything and then go evolve this over
+[598] time right and in that sense it keeps
+[600] track of this dependency so that you
+[601] don't necessarily need these kind of
+[602] devops people in the loop that say
+[604] they're like oh there's like breaking
+[605] changes here or oh cool like what are
+[607] the kind of ramifications on any of
+[609] these like downstream dependencies in
+[611] the same way that you get those package
+[612] dependencies you can now get those
+[613] infrastructure dependencies right so
+[615] long as you have the the input required
+[617] and you push it through that application
+[618] and it deploys successfully you have
+[620] that dependency that's really cool so
+[623] was there ever like as you're building
+[625] this i mean it sounds
+[627] it sounds like an incredibly complicated
+[629] thing to achieve especially if you're
+[631] talking about like
+[634] sort of figuring out
+[636] easy infrastructure migrations
+[638] that's not an easy thing to do that's
+[640] not a trivial thing to do by any means
+[642] so
+[644] are there like any features of railway
+[646] that you'd say that you're most proud of
+[648] or maybe
+[649] something that's just given you like a
+[651] real aha moment or giving your users
+[654] like a real like ah this is like this is
+[656] it you know yeah so i would say that
+[658] there's like a couple of things here and
+[660] they tie into each other right so the
+[661] canvas is neat because like most people
+[663] when they think about like service
+[664] dependencies or anything like that they
+[666] think of this kind of like
+[667] brick of yaml and anything like that and
+[669] this allows you to kind of just like
+[671] espouse it into existence and say okay
+[673] cool this now exists here right and so
+[674] that's kind of a nice aha moment because
+[676] you can worry about the networking you
+[677] can worry about any of this other stuff
+[678] later right but the really cool thing
+[680] that i'm super excited about that we
+[682] didn't get to chat about kind of last
+[683] time in our initial first chat was this
+[684] thing called nix packs and so we're
+[687] essentially using nicks to rebuild the
+[689] heroku build packs which if you're not
+[691] familiar with this i mean you're in the
+[692] audience the heroku buildbacks are kind
+[694] of this like magic amalgam of bash
+[696] scripts that say like go get these
+[697] dependencies if you have this this thing
+[700] here right and so we are essentially
+[702] rebuilding this and we're gonna move
+[704] this out of beta because it's doing
+[706] super well on the platform on next
+[707] monday and it basically is this kind of
+[709] like rust engine that goes and it
+[711] analyzes application dependencies to
+[713] bootstrap the dependencies required to
+[715] create a container so that your
+[717] application will run in it right and so
+[718] this is a really fun aha moment because
+[720] the magic of heroku is that you just
+[722] kind of give it your code and it like
+[723] runs right and so we tried to figure out
+[725] a way that we could actually build this
+[726] in it as a composable thing where we
+[728] could start adding things like provider
+[730] caching right so if you look at a lot of
+[731] really cool tools that kind of kind of
+[732] came out recently like you like a turbo
+[734] repo you know basil is obviously an
+[736] older tool with a lot more config but
+[738] like a lot of these things kind of
+[739] define ways to like do caching right and
+[741] if we can define this as general thing
+[743] like
+[744] we're gonna give you a magic pocket
+[746] drive in space that actually shows up
+[748] you put your node modules in it and then
+[750] when you go and rebuild this again you
+[751] have those node modules again right and
+[753] so now we can essentially define ways to
+[754] go and grab those dependencies and say
+[756] if you are building a django app you
+[758] actually need these two dependencies
+[760] right but if you're building a django
+[762] app with postgres you actually need gcc
+[763] so we're gonna go fetch that as well
+[765] right and we can read that as your
+[766] requirements.json and since it's all
+[768] like
+[769] we've got like these libraries for just
+[771] like building with us like it's really
+[773] easy for us to like go and add those
+[775] logic and add those providers and then
+[776] add any of those things and essentially
+[778] just map over these and grab all of this
+[779] amalgam of dependencies right which
+[782] allows us to automatically bootstrap the
+[783] container which allows us to kind of
+[784] carry that magic forward and do a lot of
+[786] really really neat stuff with it and
+[788] then that actually extends on like
+[789] platform levels where you say
+[791] okay cool you have a django application
+[793] but this this environment doesn't have
+[795] postgres right can i go and bootstrap a
+[797] postgres environment generate all the
+[799] keys required based off like
+[801] a kind of like generator encoded
+[803] environment variable that says like
+[805] either go fetch this environment
+[806] variable or this is how you would
+[808] generate a postgres kind of like
+[810] database go go kind of like grab that
+[812] memo and then pipe it in and then spin
+[814] up that postgres database so you go from
+[816] essentially having just an application
+[818] to an application with all its
+[819] dependencies spun up that can be
+[820] reproduced pretty much anywhere without
+[822] any sort of conflict that you you define
+[824] yourself right and so that's kind of the
+[826] magic moment and that's what we're
+[827] working towards like right now
+[829] yeah that's that seems like magic just
+[831] like analyze the code know what to do
+[833] without any config like fire
+[835] infrastructure guy right
+[838] and so and it's obviously not that right
+[840] it's a long tale of like girl grab these
+[843] dependencies but you know for people who
+[845] come
+[846] to the the programming realm or people
+[847] who are not familiar with devops or
+[849] people like anybody who has just like
+[850] not kind of gone through what i call is
+[852] like the devops trough of sorrow of
+[854] learning cube learning docker learning
+[855] all of these other things so that you
+[856] can deploy your kind of like node app
+[858] it's really awesome because like
+[859] basically they don't have to deal with
+[860] that until they want to kind of eject
+[862] and go and be like okay actually how
+[863] does this actually work under the hood
+[864] right or how do i extend this so that
+[866] it's you know we had somebody in the
+[868] community where they were like hey i
+[870] imported the canvas package but it needs
+[871] like some webgl stuff and then they just
+[874] like made a pr interior and was like if
+[875] i did if i import this package go grab
+[878] the webgl stuff right and then it just
+[880] worked right and that you can create
+[882] this kind of like
+[883] whirlwind kind of network tailwind where
+[885] people are just adding these things and
+[886] you can grab this like massive
+[888] dependency graph so it'll be super
+[889] interesting and it's definitely a long
+[891] tail thing but yeah
+[893] yeah these platforms are really
+[894] fascinating is is there i mean
+[897] are you really really relying a lot on
+[900] like context-specific
+[902] understanding of dependencies so for
+[905] example understanding a gem file or a
+[908] package.json or you know whatever other
+[911] you know your requirements start your
+[913] requirements file on a python project
+[915] like whatever you may be to be able to
+[917] like pull in these dependencies
+[919] you see i heard you say nyx pack which
+[921] nick's sounding like the like
+[923] linux distro that's like very modular
+[926] and like you know sort of like breaks
+[928] things down i mean is it using some sort
+[930] of magic under the hood to figure out
+[932] like what the dependencies are or is it
+[933] like very programmatic and like we're
+[935] going to look at your project and sort
+[937] of figure things out yeah it's it's very
+[939] programmatic of like looking at the
+[940] project and basically being like if you
+[942] have you know django then we need to go
+[944] check at like your django
+[947] apps like setting.pi to see like where
+[950] the like what the engine is for your for
+[952] your thing and if it's postgres then we
+[954] can go and grab this right but you can
+[955] encode that logic since like everything
+[957] is just like
+[958] you either need the package or you don't
+[959] right and so if you just end up with
+[960] dupes you can just flatten and compress
+[962] and you're still fetching those packages
+[963] right and since it's next everything is
+[965] like casual and reproducible right so
+[967] you're fetching these things and so if
+[968] the build cache is basically hot or
+[970] somebody's fetched this before it's
+[971] really really fast to end up rebuilding
+[973] these things right and once we throw in
+[974] those provider caching things like
+[976] people can write into their providers
+[977] when they're going and doing like you
+[979] know a yarn provider or an npm provider
+[981] or a pnp and provider and they can reuse
+[983] sections of this code because it's not
+[985] like a bash script like the old heroku
+[987] kind of build packs it's like okay cool
+[988] like i actually wrote a function for
+[990] like going fetching and and grabbing
+[992] everything and putting it into node
+[994] modules right like that's like one
+[995] single call that you can just reuse
+[996] across like npnpm npm yarn anything like
+[999] that right so you can get this like
+[1000] really programmatic kind of like
+[1001] tailwind that you just like you get with
+[1003] code right so it's super sweet
+[1006] yeah that's awesome like as a front-end
+[1007] developer anytime i've had to go
+[1009] anywhere near a docker file or a bash
+[1011] script i'm just like oh god like this
+[1013] isn't what i do i need something to help
+[1015] me so having having a tool that can do
+[1017] it automatically just seems like like
+[1019] the obvious next step
+[1022] yeah right and it's it's as obvious as
+[1024] it is difficult
+[1026] you know so yeah but i'm cautiously
+[1028] optimistic because i think that we're
+[1029] we're really on a good base here so
+[1032] uh when we were talking initially we had
+[1034] a we had a a call before we did the
+[1037] podcast but one of the things that we
+[1039] talked about and one of the things that
+[1040] i think is very true is that as an
+[1042] industry we've come to understand that
+[1045] like infrastructure needs to be more
+[1047] reliable more programmatic reproducible
+[1050] reproducibility is like really important
+[1052] and a lot of the tools that we have
+[1054] these days are
+[1055] complicated i mean like if anybody has
+[1058] ever dealt with kubernetes like you know
+[1060] it's it's it's a challenge it's a lot to
+[1062] learn it's non-trivial uh kubernetes is
+[1065] an amazing project and it does a lot of
+[1066] things but there's a lot of
+[1068] conversations that happens in teams it's
+[1069] like do we actually need kubernetes do
+[1071] we need the things that this provides
+[1074] and it's a real question that people
+[1076] have to hit because
+[1078] just the learning curve and complexity
+[1079] so i'm excited for tools like railway
+[1081] that are like
+[1082] giving teams alternatives to be able to
+[1085] do that it's like i want to be able to
+[1086] spin up an app quickly i want to be
+[1088] reliable i want things to work together
+[1090] really well like be able to add new
+[1092] infrastructure have different types of
+[1093] environments and not have to worry about
+[1095] like i don't know a coupe config because
+[1098] yeah right and like
+[1101] everybody says like cube is very very
+[1102] difficult than it is and it's very
+[1104] unapproachable and people don't like it
+[1105] but then when you get into like the
+[1107] whole kind of other realm of like chef
+[1108] and ansible and public then making sure
+[1110] that all these things are item potent
+[1111] and reproducible and kind of all of
+[1112] these things and and you are running on
+[1115] like your production host infrastructure
+[1116] right and so like any change that you
+[1118] you're kind of doing there is like very
+[1120] like
+[1121] it it feels like we should have better
+[1123] tooling right and cube is kind of that
+[1125] that one next step but unfortunately
+[1127] it's just still not as accessible
+[1128] because like like you said andrew like
+[1130] anytime you pull open a docker config is
+[1132] somebody who mostly like writes react
+[1134] stuff it's like what what the am i doing
+[1136] with this right like it's it's a lot you
+[1139] have to understand the file system you
+[1140] have to understand fetching dependencies
+[1142] you have to understand like if you want
+[1143] to make a docker build that doesn't take
+[1145] like eight minutes to run you have to
+[1146] understand like how to build like layers
+[1148] out of these things right it's it's
+[1150] frankly a lot to ask for for a lot of
+[1152] people and i think we just need better
+[1153] tools on all these things so
+[1155] so does railway like also make it easy
+[1157] to like like you said like fork things
+[1159] so if i want to have like
+[1160] multiple different m's it's like just as
+[1162] just a click of a button and it handles
+[1164] the whole infrastructure for me
+[1166] yeah yeah so we do that right out of the
+[1168] gate right and so we can actually even
+[1169] allow you to define for config overrides
+[1171] and i keep calling them this and and our
+[1173] product designer is like has a really
+[1175] good name for it that i just keep
+[1176] forgetting but essentially it's whenever
+[1177] you fork an environment you can take uh
+[1180] m's like environment variables and then
+[1182] basically say like this is a staging
+[1184] environment right like pipe in the
+[1185] staging environment pipe in the staging
+[1187] stripe key like override these things
+[1188] right and it makes it super trivial so
+[1190] like whenever you want to fork any of
+[1191] these things it goes and it has a look
+[1192] at the fork overrides anytime it kind of
+[1194] like crosses that window it moves all of
+[1196] it like will override those m's and then
+[1198] you just start using it right if those
+[1200] m's don't necessarily exist like there's
+[1201] a it's like hey i need a database url
+[1203] right we're spinning that up right
+[1204] because we already know that there's a
+[1205] postgres instance right so we do all of
+[1207] that right and it's super nice because
+[1209] you get a full copy and clone of your
+[1210] infrastructure you just like run your
+[1212] initial kind of like migrate scripts and
+[1214] then your kind of databases if you have
+[1216] sql databases they're kind of up and
+[1218] running and then you can just do
+[1219] whatever right and then the idea here is
+[1221] like potentially over time we can allow
+[1222] you to kind of maybe cherry pick some
+[1224] data from production or something like
+[1225] that but that's that's a little while's
+[1227] out it's kind of like on the data
+[1228] migration stuff we talked about earlier
+[1229] when you're going for those dependencies
+[1230] it's very very hairy but hey wouldn't it
+[1233] be nice you know yeah for sure uh
+[1237] does
+[1238] i guess semi-related so does railway
+[1241] handle auto scaling like based on
+[1243] traffic on usage is that a is that
+[1245] something that you can configure yeah so
+[1247] our idea here is that you don't have to
+[1249] tweak as many kind of like knobs at all
+[1252] right and this is obviously kind of a
+[1253] north star here so there's gonna be
+[1255] knobs that you generally need to tweak
+[1256] and we're in the process of exposing
+[1258] them so we we handle auto scaling up to
+[1259] a point right and so we can vertically
+[1261] scale up these instances and we can
+[1262] start like locking these clusters and
+[1264] doing stuff like that but there comes a
+[1265] point at which like you know there's
+[1267] only so much you can fit on on kind of a
+[1268] specific box right and so we have
+[1270] basically like lines that say like hey
+[1272] listen you're gonna you're gonna run
+[1273] into something here right there's this
+[1275] is kind of the the end of the auto
+[1277] scaling right and so that's kind of what
+[1279] we do right is is allow you to kind of
+[1281] spin up these things and give you kind
+[1282] of like a best fit auto scaling and then
+[1284] ideally you'll get kind of alerts as
+[1285] you're kind of like approaching that and
+[1287] ideally saying like hey listen
+[1289] in four days your database is going to
+[1291] run out of memory you know you may want
+[1292] to like have a look at this you know and
+[1294] we're in the process of building a lot
+[1295] more kind of like intelligent alerting
+[1297] on top of that right so that's kind of
+[1298] how the auto scaling works right now and
+[1300] then the future
+[1301] will allow you to kind of like define
+[1302] how many replicas you want how many
+[1304] whatevers like where you want to run
+[1305] this thing kind of things like that and
+[1306] then as you kind of add more config we
+[1308] can do more things right but with just
+[1310] kind of the baseline amount of stuff
+[1311] where we can do a best fit as we do kind
+[1313] of currently
+[1316] yeah that's awesome
+[1319] platform maturity here is is is kind of
+[1321] key you know just like shipping
+[1323] something early often shipping something
+[1324] around infrastructure is really hard
+[1326] generally
+[1327] because you're not using like kubernetes
+[1330] or something under the hood you've got a
+[1331] lot of like custom code here that you're
+[1333] like
+[1335] hooking up to make all this plumbing
+[1337] work yeah
+[1339] i mean speaking of custom code i mean
+[1343] we've said it a few times
+[1344] infrastructure's really really hard and
+[1346] this is this is such an interesting
+[1348] area of the industry to get into so
+[1350] given your experience now what's the
+[1352] hardest
+[1353] technical problem that you've had to
+[1355] solve at railway
+[1357] well i can tell you about one that we're
+[1358] talking about today and it's it's what
+[1360] happens when you run out of ipv force
+[1362] and so essentially we we model the
+[1363] entire network across everything and we
+[1365] allocate you know an internal ipv4 for
+[1367] all of these things right and and once
+[1369] you get into like dependencies that
+[1371] spawn other dependencies and like those
+[1373] subnets you need to you need to allocate
+[1375] those things or you need to like create
+[1376] subnets for them right so just even the
+[1378] network management and the topology
+[1379] there like it's really really hard to
+[1381] layout in a way that's like okay cool
+[1382] can you give somebody like true tenant
+[1384] isolation here and handle a lot of that
+[1386] stuff a lot of the stuff we do is like
+[1389] it's hard in terms of engineering
+[1391] because like you know we're handling a
+[1392] decent scale at a decent rate at a
+[1394] decent clip and you're doing a lot of
+[1395] that stuff but a lot of it is like very
+[1397] forsightful in terms of like okay we
+[1400] gotta read a bunch of papers because
+[1401] like people don't do this this stuff
+[1404] right like a lot of the stuff that we're
+[1405] doing is like you know you you kind of
+[1407] even just run out of papers and you're
+[1408] like you're like oh like we're
+[1410] really in the like in the deep here
+[1412] right and so like the technical problems
+[1414] end up being more kind of like
+[1416] how can you
+[1417] take the tools that you currently have
+[1419] to to kind of like best fit onto the
+[1420] experience that you really want and kind
+[1422] of like track a lot of the really cool
+[1424] stuff coming right like there's a lot of
+[1425] really cool stuff coming down the pipe
+[1427] from like the evp perspective that like
+[1429] we will be able to use right and there's
+[1430] a lot of cool stuff coming down the pipe
+[1432] for like kubernetes with like you know
+[1434] like the virtual cubelet stuff that
+[1435] recently came out ipv4 v6 multiplexing
+[1438] stuff like that right and so we're
+[1439] constantly on this edge of like trying
+[1441] to like walk this line and be like okay
+[1444] like you know if it's going to take us
+[1445] this long to go and do this like can we
+[1447] can we line it up with this timeline is
+[1449] that timeline going to shift and so
+[1450] there's a lot of really like hard
+[1451] problems in there but a lot of it is
+[1453] like really just like playing with the
+[1454] tools that you you kind of have right
+[1456] and you're like i have this this hand of
+[1458] cards like how do i play it this time
+[1459] right how do i make sure that we get the
+[1460] like v0 out that will work for all of
+[1462] these things and how do we make sure we
+[1463] plan that like when we do the view one
+[1465] we're gonna be able to like backfill for
+[1467] all of this stuff right and so it just
+[1468] becomes this like
+[1470] massive like matrix that you're
+[1471] constantly trying to like navigate
+[1474] yeah it's it sounds like you're truly on
+[1476] like the bleeding edge of this tech
+[1477] you're doing you can tell you're doing
+[1479] something new when there's no more
+[1480] papers to read about it yeah
+[1482] exactly right you're like oh man okay
+[1485] all right
+[1486] yeah you know it's a hard problem when
+[1487] you have to start reaching for papers to
+[1489] begin with it's like oh wait look is
+[1491] there research to this and then once
+[1493] you're like run out of research you're
+[1494] like oh well huh yeah
+[1496] it's right or else yeah yeah and then
+[1498] you catch yourself emailing people in
+[1500] the borg or the tupperware paper and
+[1502] you're like hey
+[1503] i know you you alluded to this random
+[1505] thing that like we think is really
+[1506] important that you did not cover at all
+[1508] you know do you have any thoughts here
+[1510] and sometimes they respond and sometimes
+[1511] they don't respond you know so
+[1513] yep
+[1514] yeah that's awesome so
+[1516] so let's let's step back and think about
+[1520] future future land so you've
+[1523] been working on
+[1524] railway for a while and you get it to
+[1526] the point where you want it it's just
+[1528] like sort of met the vision that you
+[1530] have for it what does it look like what
+[1533] does it do
+[1534] it is runs anywhere
+[1537] just in time dependency just in time
+[1539] compute for software it makes everything
+[1541] so much easier ideally you just wave a
+[1544] wand and you say i want this and those
+[1546] dependencies are reconciled all the way
+[1547] down the tree when new updates are
+[1549] pushed all of those
+[1551] things and pointers actually go and push
+[1553] into a queue that you can go and manage
+[1554] yourself or you know ideally even
+[1556] they're kind of automatically applied or
+[1558] even more ideally there's a switch that
+[1559] says like try and automatically apply
+[1560] these or let me know if i need to do
+[1562] anything basically software is 100 times
+[1564] easier to build right you're not you're
+[1565] not cons like
+[1567] you are constantly in a state of flow
+[1568] because the application doesn't require
+[1570] you actually to page out to go and
+[1573] grab some sort of documentation or
+[1575] figure out why the key is wrong for your
+[1577] your gamel config or figure out
+[1579] something here right and just as a
+[1580] result of like if we can build that
+[1582] engine we think that we can make
+[1584] software developers like a hundred times
+[1586] more efficient right and this is why
+[1587] like you know venture people are like
+[1589] why would you work on this problem and
+[1590] my answer is why would you work on any
+[1592] other problem right like if you could
+[1594] build this thing this like weird engine
+[1596] thing that we are currently building and
+[1598] seems to go reasonably well so far you
+[1600] can go build all the stuff you want to
+[1601] build later faster right and if you can
+[1603] build this magic thing you can just do
+[1606] that right and so that's that's kind of
+[1607] what it looks like for us is that you
+[1609] don't need to deal with dependency you
+[1610] don't need to deal with config you don't
+[1611] need to deal with how these things land
+[1613] you don't need to deal with docker files
+[1614] you don't need to understand how like
+[1616] the linux file system is structured to
+[1618] deploy your react app
+[1620] that's awesome so it like everybody
+[1623] agrees that it's a hard problem do you
+[1625] like have any problems in it that you're
+[1626] kind of like just putting off you're
+[1628] like oh we can we can solve that one
+[1629] later and it's like the the barrier to
+[1631] this big vision
+[1633] yeah it's well so the ip problem that i
+[1635] sort of just like talked about like we
+[1637] calculate that that's going to be a
+[1639] problem in
+[1640] six years right and so it's it's like
+[1642] one of those things here you're like
+[1644] which problems can i put off which fires
+[1646] are currently unput offable how do we
+[1648] need to like change these things so that
+[1650] we can like make sure that these things
+[1651] work right and so i don't know if you
+[1653] know the gif of like
+[1654] like i think it's from wallace and
+[1656] gromit of like the guy putting down the
+[1657] train tracks all the time or whatever
+[1659] that's just us constantly right like and
+[1661] so you know whether it's like how do you
+[1662] scale the logger so that it's durable
+[1664] and like fault tolerant and like works
+[1666] across all of these instances and the
+[1667] users can tail logs like in real time
+[1669] right like
+[1670] our initial kind of like implementation
+[1672] we're like okay we'll use bigquery it's
+[1674] like well bigquery actually is not like
+[1676] in real time so we can't actually use
+[1677] that right so we had to like build this
+[1679] whole engine kind of around this thing
+[1681] right and so a lot of these problems
+[1682] like they always just tie back to like
+[1684] what is the product experience that you
+[1685] want out of this stuff right and i think
+[1687] that's why we're like uniquely
+[1688] positioned or like people feel like the
+[1690] thing is kind of magic is because like
+[1692] we really approach it from like a
+[1693] product perspective and it's like how do
+[1694] we make sure that like the product is
+[1696] there from from the user experience
+[1698] right and then work backwards to like
+[1699] build the infrastructure that kind of is
+[1700] required for that
+[1702] so as a first-time founder or what i
+[1704] assume is a first-time founder was it
+[1706] hard to get railway off the ground did
+[1708] did you immediately go for the venture
+[1710] capital route or did you try to
+[1712] bootstrap for a while like what was your
+[1713] strategy around this so i
+[1716] like
+[1717] this one's tough because like i was
+[1719] basically like you can't really
+[1720] bootstrap this because
+[1721] amazon is gonna murder you with capital
+[1724] and so it was basically one of those
+[1725] things where it was like it's kind of
+[1727] really the only the you can only really
+[1729] do this by the venture road if that
+[1731] makes sense right and i only sort of
+[1732] came to this realization maybe
+[1734] six to nine months in i was like oh we
+[1736] could raise an angel round we could like
+[1738] do that and we could like you know try
+[1739] and figure out a way to like monetize
+[1741] this right out of the gate but we ended
+[1742] up kind of just like leaning to the
+[1743] venture side and like i really do
+[1746] genuinely just believe that like you
+[1747] just it wouldn't be a business that you
+[1749] could build bootstrapped because it does
+[1751] require like capital investment tech
+[1753] investment like working with users like
+[1755] building the dx like
+[1757] messing something up and then realizing
+[1758] that you just had like built a
+[1759] fundamental mistake that you know how to
+[1761] backfill like a bunch of those things
+[1762] right and that's the only way you can do
+[1764] it especially if you didn't want to
+[1766] spend like
+[1767] you know
+[1768] hundreds of years working on this
+[1770] problem right like you could do it over
+[1772] time anything like that in theory in a
+[1773] vacuum right but like you know i'm
+[1775] only got like what 25 to like 35 years
+[1779] of like good work engineering kind of
+[1781] deal all right and so that's kind of
+[1782] like the best fit for that in terms of
+[1784] like getting it off off the ground i
+[1786] didn't want to build this thing and i i
+[1788] tell this to people often and they're
+[1790] like but you are building the thing and
+[1791] i'm like yes it's funny how that
+[1792] happened i went to everybody smart who i
+[1795] knew at big companies and i was like you
+[1797] guys must be building an easy way to
+[1799] like spin up databases and kind of like
+[1801] do infrastructure and
+[1803] all of this stuff right i won't like
+[1804] name any sort of like names or anything
+[1806] like that but most of them were just
+[1807] like no we have like no interest in
+[1810] doing a lot of this stuff right but what
+[1811] they did say was like this sounds really
+[1813] cool could we write you like a small
+[1814] angel check or whatever right and so i
+[1815] chatted with like a bunch of people and
+[1817] at the end of this i had like a bunch of
+[1819] no's for like can you have a job offer
+[1820] but like a bunch of angel checks and i
+[1822] was like okay like let's just see see
+[1824] where it goes on a lot of this stuff
+[1826] right and so i think i just like
+[1827] fundamentally was extremely lucky on a
+[1829] lot of these things right i just yeah
+[1831] it's that's just kind of how it went
+[1832] down
+[1834] i think we we started like
+[1837] probably at the best time you could ever
+[1838] start for a dev tools company for sale
+[1840] was just like absolutely
+[1843] ripping on a lot of this stuff github
+[1844] had just been acquired basically and so
+[1847] i think there was a lot of like luck and
+[1849] timing that kind of went into it you
+[1851] know
+[1852] and i still think there is to this day
+[1854] right like i keep saying that like
+[1856] we're probably building this too early
+[1857] but it's also probably going to take
+[1858] longer than we'd like so we'll probably
+[1860] be on time and that's that's kind of the
+[1862] current state yeah yeah that definitely
+[1864] feels right you know it's interesting i
+[1866] think a lot of i think we take this for
+[1868] granted there are like some companies
+[1870] that i know of like so so spotify has
+[1872] this thing called backstage which is
+[1874] their like internal like application
+[1876] development platform and they've spent
+[1878] you know a lot of
+[1879] engineering resources on that they have
+[1881] this semi-open source project for it but
+[1883] it's like you know it's work right but
+[1885] even for them it's like
+[1887] here's our like happy path this is the
+[1889] things that we really really are good at
+[1891] deploying and this is like what you get
+[1893] and sort of outside of this you're on
+[1895] your own and a lot of companies are like
+[1896] that it's like we're we're really good
+[1898] at like deploying rails apps we'll
+[1900] deploy your rails at you want to build
+[1901] something else deploy it yourself and
+[1903] then
+[1904] i think there's this this whole
+[1905] ecosystem of like startups they're like
+[1907] all right crap vercell's not really
+[1908] working for us because we're we we need
+[1911] something that's more than serverless
+[1913] and there's like render
+[1914] and heroku like heroku's not the
+[1918] the golden tool it used to be and render
+[1921] is great and there's like other these
+[1922] like other things but
+[1924] there's just a lot of stuff out there
+[1926] and you're just like really wanting to
+[1927] build your app build your product so
+[1929] it's like i i do think it's like a
+[1930] really good time where there's like not
+[1932] a clear
+[1933] like this is this is the tool to go to
+[1935] in this space yeah
+[1937] i think like if you look at any of the
+[1939] like stuff that gets shared by like vcs
+[1941] about like what the market looks like
+[1943] you have like
+[1944] 400 tools that exist all in the same
+[1946] space that are kind of just like they do
+[1948] like there's like monitoring analytics
+[1950] and like deployment plane and like all
+[1951] of this other stuff right and i really
+[1953] like the like philosophy that like the
+[1955] tail skill people have and avery talked
+[1957] about in their most recent blog post is
+[1959] like most people don't need that level
+[1961] of config right and if they do you can
+[1963] go build it later right and so what's
+[1964] kind of like the thinnest line that you
+[1965] can draw to like
+[1966] get to that that scale that you're like
+[1968] okay cool this this will work for like
+[1970] you know this specific set of users
+[1972] right like railway right now works
+[1973] really really well for like
+[1975] indie hackers to like series c series d
+[1977] startups and like probably for internal
+[1980] tools that like fortune 500 and like the
+[1982] the ubers and doordash of the world like
+[1983] that's that's that's a sweet spot right
+[1985] and over time we'll like build out a lot
+[1986] of those things but like i think there's
+[1988] a lot of tool fatigue that kind of
+[1989] generally goes around and like there's a
+[1990] lot of like wonderful tools for a lot of
+[1992] these things and you can you can also
+[1993] just add them to your application but
+[1994] like what if you had like a really
+[1996] really good experience kind of just add
+[1997] a box on this and you could go and put
+[1999] on whatever else you wanted right and
+[2001] aws as it stands not that and docker as
+[2003] it stands
+[2004] god bless the technical stuff in there
+[2007] the user experience is not that
+[2009] yeah
+[2010] just trying to read the amazon's docs oh
+[2012] my god
+[2013] it's it's i pull hair out every time
+[2016] with with all the stuff you've built
+[2018] you're relying on
+[2019] on a lot of open source stuff have you
+[2020] guys contributed any open source
+[2022] libraries like or is it all secret sauce
+[2025] at this point so the nix pack stuff is
+[2026] all open source right and so anybody can
+[2028] go in and add a provider anybody can go
+[2030] in and add any sort of base level
+[2031] dependencies anybody can add anything to
+[2033] like the rust build manager that kind of
+[2034] exists there a couple other things we
+[2036] originally like started to do our own
+[2038] build packs but that's what kind of like
+[2040] plopped out the next pack stuff so we
+[2041] were hosting that for a while it was
+[2043] like an extension of like the piquito
+[2044] build packs we've open sourced this og
+[2046] generator which is kind of like allows
+[2048] you to build like dynamic ogs i think
+[2050] it's actually like
+[2052] forked but added on top of like
+[2053] something of versailles built we have
+[2055] this thing called dev icons which is
+[2056] basically like if you go to just dev
+[2058] icons slash dev icons that related apps
+[2060] slash whatever the query is it'll come
+[2062] up with like whatever the icon is so if
+[2064] you just like put go or anything like
+[2066] that you just get the icon and so this
+[2068] is super useful for just like going and
+[2069] getting like you know nice pngs and nice
+[2071] svgs and like anything like that and so
+[2073] over time i'd like to open source a lot
+[2075] more of this stuff so yeah that's cool
+[2079] so uh
+[2080] you you from what i've read on your blog
+[2082] and through this company have an intense
+[2085] interest in automation what parts of
+[2087] software development other than what
+[2089] you've been working on or even in the
+[2091] wider world do you think are right for
+[2092] innovation that just haven't been
+[2094] automated yet
+[2096] i don't know if it's haven't been
+[2097] automated yet but there is something
+[2100] between
+[2101] versailles and squarespace there's
+[2103] something absolutely ginormous between
+[2105] versailles and squarespace that i don't
+[2107] think anybody has hit on yet and i think
+[2108] it a lot looks a lot like being able to
+[2110] define your own component kit and like
+[2112] go and like put it into a nice little
+[2114] kind of amalgam and start layering these
+[2116] things together right and i think the
+[2117] ecommerce stuff that that shopify is
+[2119] doing in kind of this area is like
+[2120] probably one of the closest things that
+[2122] i've generally seen but i think that
+[2123] that space is like you know there was
+[2126] kind of a whole like push towards that
+[2128] in like the the early 2010s and i think
+[2130] it's gonna like make a resurgence
+[2132] because like
+[2133] i don't think like that there's
+[2134] enough
+[2135] coverage if that makes sense in terms of
+[2138] other automations i'm a big like home
+[2141] automation person and so i have like
+[2143] smart blinds and like lights and other
+[2146] stuff i have an aid sleep that i like
+[2148] absolutely adore i think one of the like
+[2150] really really cool things that i don't
+[2152] think will come soon but you're seeing
+[2154] like sort of inklings of it is like
+[2156] biometric feedback loops so if you look
+[2157] at things like aura if you like look at
+[2159] things like eight sleep if you look at
+[2160] things like levels where you just like
+[2162] pin it like cgm or anything like that
+[2164] i wanna be able to pull like all that
+[2165] data from my body because i wanna
+[2167] basically know like
+[2168] if i have given it too much caffeine or
+[2170] not enough water or anything like that
+[2172] right and so that's that's the
+[2173] automation i think a lot about right
+[2175] like this magic thing that can kind of
+[2177] just speak to your lizard brain and be
+[2178] like hey listen
+[2179] you need to work out now because like
+[2181] that's gonna bring your levels in line
+[2182] right and so for those things like
+[2184] that's where i'm really really excited
+[2185] about and i suspect they might take long
+[2187] enough that
+[2189] we can get railway off the ground and
+[2190] working super well maybe we could use it
+[2191] to like go build some of those things
+[2193] but it might also be you know yeah it
+[2195] might take us a little while
+[2196] yeah yeah both those spaces are pretty
+[2198] cool right now like the the website
+[2200] builder space we've had lots of people
+[2203] on that that are hitting that niche
+[2205] right now builder io is an interesting
+[2207] one to me because like they they are in
+[2209] this kind of the same vein of like let's
+[2211] just build a bunch of crazy tech and and
+[2213] see if it works we had steve swell uh
+[2215] their ceo on a few episodes ago it was a
+[2218] good talk uh yeah yeah and then with the
+[2220] biometric stuff oh my god like if i
+[2222] could have a device that tells me my
+[2225] calories in calories out oh my god it
+[2227] would just it would work it would be
+[2228] great and so yeah i'm excited about that
+[2231] tools for like security and like network
+[2233] automation where like you know i really
+[2235] like tail scale i really like wire guard
+[2236] in general and i think it's like
+[2238] fantastic tools where you like can't
+[2239] shoot yourself in the foot right so
+[2241] those like a dependency and supply chain
+[2242] management things i think like one just
+[2244] like raised it absolute bajillion
+[2246] dollars i think it's like chain guard or
+[2248] something like we've got managing all of
+[2250] that stuff and supply chain attacks and
+[2251] and any of those things is super cool
+[2253] too because there's a lot of effort that
+[2254] goes into it and there's also a lot of
+[2256] entropy in that space right because like
+[2258] you know
+[2259] what what does an exceptional security
+[2261] person look like there's such a spread
+[2263] on that like like i have met like we
+[2265] have one of our investors who's like one
+[2266] of the best security people like i've
+[2268] i've ever met hands down i would say
+[2270] probably in the world and the amount of
+[2271] expertise they have is just bananas
+[2273] right it's just like
+[2274] understands like all of the low-level
+[2276] like linux stuff like far beyond like is
+[2278] so far ahead on a lot of this stuff and
+[2280] so if you can automate a lot of this and
+[2281] make it basically bulletproof by default
+[2283] that's insane right and it might not be
+[2285] like conventional kind of automation but
+[2286] i think it's just automation in terms of
+[2288] like
+[2288] otherwise you'd have to have a daemon
+[2290] that kind of does all of these things
+[2291] you know
+[2292] or some sort of person or whatever
+[2294] yeah definitely in the same same vein of
+[2296] things i don't want to do as a front-end
+[2298] developer security and infrastructure
+[2300] that
+[2302] yeah and they're
+[2304] both critical yeah yeah they're both
+[2306] critical and yeah
+[2308] yeah
+[2309] that and like privacy concerns like uh
+[2312] there's so much yeah yeah yeah
+[2316] i've been looking through the starter
+[2318] projects that railway has like hey what
+[2321] is this i've never heard of this thing
+[2322] before
+[2324] yeah there's some cool stuff there
+[2325] especially when you like start giving
+[2326] the community the autonomy to just like
+[2328] start publishing because they just
+[2330] add a railway button to it and it just
+[2331] gets like pulled in and you're like what
+[2333] is this and you're like oh this is
+[2335] really cool like who did this right yeah
+[2338] yeah so that's neat yeah that's one of
+[2340] the the
+[2341] i love that bit of dx from heroku where
+[2344] it's just like here's a button and you
+[2345] read me click it and things go like
+[2347] that's such a great thing to copy
+[2349] yep yep and yeah we definitely can't
+[2351] take credit for it but we're really
+[2352] excited about like expanding on it right
+[2354] and pulling in all those things and
+[2356] having them in one place where you can
+[2357] just like have a marketplace that kind
+[2358] of just like manages all those
+[2359] dependencies for you it's all open
+[2360] source right and our ideal over time is
+[2362] actually we can monetize this for people
+[2364] right and so when people pay us to go
+[2366] and run these things we can kick back
+[2368] money and we already do for you know a
+[2369] few a few repositories where people have
+[2371] kind of like developed a little bit of a
+[2373] kind of like
+[2375] running water tread kind of thing you
+[2376] know traffic traffic's the word i'm
+[2378] looking for it's a long day that's
+[2379] that's super cool so like sass without
+[2382] like having to care about it too much
+[2384] yeah exactly right it's just like you
+[2386] know passive sass if that makes sense
+[2388] right and then ideally if you can build
+[2390] these things and you can start
+[2391] monetizing them like people could maybe
+[2393] like leave their jobs in in a way that
+[2395] doesn't actually have to you know force
+[2397] them to like go the venture back route
+[2399] right and i think venture like
+[2401] is really awesome and i think it gets
+[2403] like relatively bad rap because i think
+[2405] like the ability to unlock those
+[2406] entrepreneurs to go like swing at those
+[2408] really really hard problems it's like
+[2410] cannot be like
+[2412] understated overstated as like how
+[2414] important it is to like go and do those
+[2415] things i just like i am
+[2417] beyond lucky that that people let us
+[2419] like go and do all of the that we
+[2420] do that said if we can enable people to
+[2422] like go and bootstrap and like go and
+[2423] scale from like their weekend job like
+[2425] getting a really nice like deployment
+[2427] plane sharing this with people going and
+[2429] monetizing this and spinning this up
+[2430] without actually having to like go and
+[2432] take a lot of this risk go and learn a
+[2434] lot of the like financial
+[2436] instrumentation that comes with like
+[2438] figuring out what what kind of the terms
+[2440] on your term sheet are especially as we
+[2441] go into like less favorable terms you're
+[2443] gonna have to figure out what
+[2444] liquidation preference is you're gonna
+[2445] have to figure out what ratchets are
+[2447] you're gonna have to figure out what all
+[2448] these things are right and then it comes
+[2450] with like the having to do like all of
+[2452] the stuff to run a business right like
+[2453] the reason we started this company is so
+[2455] that i could work on like really really
+[2456] cool eng problems and now we're at a
+[2458] point where i'm just recruiting people
+[2459] to go work on the really cool engine
+[2460] problems that i wanted to work on and
+[2462] i'm like ah you know and and not that
+[2464] there's anything wrong with that it's
+[2465] really really cool to just like get
+[2466] people who are like awesome to like go
+[2468] and do that but for the people who are
+[2469] technologists at heart and just like
+[2471] want to like work you know like just
+[2473] like the amount of effort that they want
+[2475] to do i grew up reading tim ferriss's
+[2477] the four hour work week and so i'm a big
+[2478] fan of of a lot of that stuff it's just
+[2480] like you know having both options there
+[2482] is really really key let's move into
+[2483] tips
+[2484] so
+[2485] i i i sort of put actual as a pick for a
+[2488] few reasons one so actual is a budgeting
+[2492] app it's by james longster i think i got
+[2495] that right it's actually open source now
+[2497] he's stopped maintaining the prod the
+[2499] project it was a sort of a solo dev
+[2501] thing i've had my eye on this project
+[2503] for a while
+[2505] because hey he's written a lot of good
+[2507] technical content on it he's got some
+[2508] blog posts up it's local first he
+[2510] actually wrote this library called
+[2512] absurd sql which is this sql lite
+[2516] binding and web assembly that runs in
+[2518] the browser that like uses indexeddb as
+[2522] it's you know it's storage engine so
+[2524] it's like this really really awesome
+[2526] project there's a lot of interesting
+[2527] tech here the the user experience is
+[2529] pretty good and now it's open source so
+[2532] if you are really interested in learning
+[2534] how to
+[2536] build a
+[2538] local first app this is a great great
+[2541] model and definitely highly recommend
+[2543] you check it out the code is really
+[2544] really interesting but yeah it it just
+[2547] kind of cool and very fortuitous that it
+[2549] open-sourced i don't know yeah awesome
+[2551] opportunity to learn that's super sweet
+[2553] i'm i'm like very bullish on the local
+[2555] for first step unfortunately it's very
+[2556] hard to build there's a couple of things
+[2558] like i think it's called replicash
+[2559] or something like that yeah yeah super
+[2562] super cool partner with replicas several
+[2564] times yeah yeah yeah so i think it's
+[2566] it's awesome right it's just really hard
+[2568] to pull off like i know that the the
+[2569] linear guys spend a really long time
+[2571] building their engine out to go and
+[2573] power a lot of their experience and it
+[2574] shows obviously it's like world-class
+[2575] software but it's still
+[2577] you need the chops to write world-class
+[2579] offer i haven't seen a library that
+[2580] basically just gives a issue off the
+[2582] shelf for for kind of like free
+[2584] yeah so there's like replicash and
+[2586] there's another company called live
+[2588] blocks so there's more and more that are
+[2590] coming into this multiplayer space where
+[2593] if you like don't want to focus on this
+[2596] i really like elixir live view
+[2598] as a as a potential way to do that it's
+[2600] just like from a technology perspective
+[2602] it's a really interesting model
+[2604] um but yeah so there's a lot of services
+[2607] out here to sort of start layering these
+[2609] things into your app that's the thing
+[2610] that you want to do but if you want to
+[2612] learn how crdts work you want to try to
+[2614] go the real technical route and build it
+[2615] yourself look at actual source code it's
+[2617] good yeah cool that's sweet i didn't
+[2619] even realize there was like an open
+[2621] source implementation that you gotta
+[2622] look at so i have to go dig into that
+[2624] i'm going off the rails here a little
+[2626] bit but
+[2627] there's a also a really really good
+[2629] paper i
+[2631] the the team behind the muse app well it
+[2633] was their their yes they can switch
+[2635] people yeah
+[2637] their blog is just like
+[2639] pour overable like read it read it and
+[2641] entertain
+[2642] yeah
+[2644] they've got a really good like real time
+[2646] article like post on like studying crdts
+[2649] and understanding how like multi-user
+[2651] text editing works and they also have a
+[2653] library a crdt library that's written in
+[2657] javascript or whatever that's really
+[2658] good and i don't remember what that is
+[2660] off the top of my head but i'll put it
+[2661] on the
+[2662] i'll put it in show notes yeah the the i
+[2665] think it's project can be or something
+[2666] like that it's it's about like creating
+[2668] lenses for all of your data so that it's
+[2670] constantly like portable and and
+[2672] reconcilable is super super neat yeah
+[2675] okay my first tool tip is a framework i
+[2678] just found yesterday called plasmo what
+[2681] plasmo is is like it's next.js for
+[2684] browser extensions if you've ever
+[2685] created a browser extension before oh
+[2687] thank god
+[2689] there's lots of different files and lots
+[2691] of different configs and lots of weird
+[2693] knowledge that you have to know how to
+[2694] make it like just right the approach of
+[2697] next js for browser extensions has me
+[2699] really excited because like next js made
+[2701] it like very simple to spin up a react
+[2704] app and have it nice
+[2706] and and tidy hopefully plasmo can do the
+[2709] same with browser extension development
+[2711] because that is a slot
+[2714] yes
+[2716] absolutely hmm i'm gonna figure star
+[2719] that right now
+[2719] [Music]
+[2721] okay cool so this
+[2723] seems to be a way more polished version
+[2726] of something i tried to do
+[2728] really poorly a few years ago and it was
+[2730] basically just like why can't i use my
+[2732] like design system in react native and
+[2735] on the web and it turns out there's a
+[2736] lot of problems with it so i'm glad that
+[2738] they did it because i went down the
+[2739] rabbit hole for like a couple of
+[2740] weekends and then i just like
+[2743] just quit so the people at expo as well
+[2745] as the people at tamagui shout out to
+[2747] y'all doing really really really really
+[2749] hard stuff so it's it's super super neat
+[2751] to see on a lot of these things i think
+[2752] we just like need better tools for like
+[2754] cross-platform development in in all of
+[2756] these kind of categories
+[2759] i too tried to do this and found it
+[2762] challenging yeah yeah
+[2765] it's not something that you would expect
+[2766] you're like oh yeah i can make a
+[2767] monorepo we got two react things like
+[2769] why can't i render one react in another
+[2771] react and yeah not possible
+[2774] but it it's very interesting i wonder
+[2776] how it works under the hood
+[2779] yeah i have not had the time to kind of
+[2780] like dig into it but it does seem like
+[2782] the level of sorcery and the level of
+[2783] kind of like
+[2785] product slash dx that you'd want out of
+[2787] this so like pretty interesting it's
+[2789] really nice yeah you got to do a lot to
+[2791] make it like nice for both platforms
+[2795] yes
+[2796] absolutely
+[2798] that's really cool especially if you
+[2799] have types
+[2800] yeah
+[2804] okay
+[2805] so
+[2806] next one we're gonna do
+[2809] i don't know how to say it
+[2810] sqfmi
+[2813] oh yeah
+[2814] well you don't have to to mention the
+[2817] brand there is this
+[2819] i think it's open source watch it's an
+[2822] e-ink e-paper watch whatever it's
+[2825] pretty cheap actually
+[2828] uh you can they have like uh case design
+[2831] so you can 3d print your own case i was
+[2833] a huge fan of the pebble when the
+[2834] pebbles around i loved the pebble watch
+[2836] it was an eating watch and it was super
+[2838] great one of my favorite pieces of
+[2840] hardware
+[2841] unfortunately they went out of business
+[2843] or they got acquired and basically shut
+[2844] down by fitbit i think but
+[2847] this watch i've had my eye on for a
+[2848] little while so it is all open source
+[2851] you can write your own watch faces for
+[2853] it uh it's it's relatively simplistic in
+[2856] that the watch face is like the whole
+[2859] watch right like so the software running
+[2860] for the watch face is like everything
+[2862] but anyway i'm i'm
+[2864] really tempted to to buy one uh it's
+[2867] it's like i said it's relatively cheap i
+[2869] think it's i'm pretty sure it's under
+[2870] 100 bucks i don't remember the price off
+[2873] the top of my head
+[2874] yeah this is one geeky looking watch
+[2877] it looks like a circuit board strapped
+[2878] to your wrist
+[2880] yeah yeah
+[2882] you can definitely do cases and stuff
+[2884] too yeah like you know to customize it
+[2886] i'd be we're gonna get shocked or
+[2887] something yeah is that just me like
+[2890] like how enslaved is that
+[2892] what looks like to me metal pieces i
+[2894] don't know
+[2895] yeah
+[2898] that's 60 bucks
+[2900] yeah makes you question whether you're
+[2901] gonna get shocked or not you know it's
+[2902] 60 bucks
+[2903] [Laughter]
+[2905] nah it's cool i love i love stuff like
+[2907] this yeah i mean it's got bluetooth it's
+[2909] got wi-fi it's got a vibration motor on
+[2912] it all your buttons like
+[2915] you know got an accelerometer you can
+[2917] track your steps i mean it it's kind of
+[2920] cool like i don't know like the thing i
+[2921] want for my smartwatch is not for it to
+[2923] tell me the time and like
+[2926] it seems like it probably doesn't do
+[2927] much past that well you have to write it
+[2930] that's the trick if it's something you
+[2932] feel like hacking this is good for you
+[2933] if it's not just stick with your
+[2935] consumer chair yeah
+[2937] okay so my last tool tip of the week is
+[2941] lion web components what lion is is it's
+[2944] basically reach slash radix but for web
+[2947] components i wanted to build this out a
+[2949] while ago but i don't use web components
+[2951] so it didn't really make sense for for
+[2953] me to do that but like i just love
+[2954] seeing projects like this that make it
+[2956] easier and easier to create accessible
+[2958] experiences and that that that type of
+[2961] development can come to web components
+[2963] too is awesome i haven't looked at the
+[2964] code too much but they have a bunch of
+[2966] stuff that could get you started and
+[2968] yeah that's that's it
+[2971] very nice i like how the this is it the
+[2974] rock from lion king is that that i think
+[2976] that is what that is
+[2978] there you go that's what it is um
+[2982] cool all right i'm gonna go with the
+[2985] graphql nexus and tr pc stuff and this
+[2987] is kind of like
+[2988] more on the like building apis that like
+[2991] don't suck to use and so these are
+[2993] really really awesome tools that allow
+[2994] you to essentially like
+[2996] get types in all of your apis right and
+[2998] so the way that railway kind of works
+[3000] for our api stuff is we actually have
+[3002] these graphql clients that generate they
+[3004] hook in with prisma graphql nexus and i
+[3007] think there's another tool in there that
+[3008] allows you basically you define like the
+[3010] permissions as like middleware it's
+[3012] great you get types end-to-end
+[3013] everything is generated and then the
+[3015] resolvers can go and call kind of like
+[3017] those like grpc microservices if you
+[3018] want right and it's really really
+[3020] amazing it's like deny by default on all
+[3022] of this stuff but if you want to expose
+[3023] like model properties it's super easy to
+[3026] like hook in any of these things you
+[3027] just do like t dot model dot name of
+[3030] field and it will just like pass the
+[3032] types straight to the front end like
+[3034] allow you to access that property of the
+[3035] model but by default it will only give
+[3037] you kind of like the uuid or whatever
+[3039] you're kind of exposing there right so i
+[3041] think this is just like phenomenal these
+[3042] are tools that i really really like from
+[3044] just like doing stuff faster right like
+[3046] we've all like tried to debug like a
+[3047] rest endpoint and spent 30 minutes and
+[3049] then realizing that your just
+[3050] didn't serialize to json correctly and
+[3052] then you like go and just like take a
+[3054] walk around the park tools like this
+[3055] make it so that you just don't have to
+[3057] do that and that's always great in my
+[3059] books you know
+[3060] yeah
+[3061] and then the other one you shared trpc
+[3063] that's that's a good one too we had the
+[3065] the guy who runs the project on a while
+[3067] back
+[3068] we had the creator on two episodes ago
+[3070] right oh yeah and we had the creator on
+[3072] two episodes two episodes ago
+[3074] yeah yeah yeah it's it's super cool i
+[3077] was like having a look at it and i was
+[3079] like no we could integrate it here but
+[3080] like i am not really doing much coding
+[3082] anymore unfortunately so i'm just going
+[3084] to let the people do do whatever they
+[3086] want to do in there and not just like
+[3087] pop in and be like oh hey should we
+[3089] rebuild our api layer you know
+[3091] you got to create work as a ceo and
+[3093] that's a great way to do
+[3094] it the work creates itself so i'm just
+[3097] you know sitting there being like
+[3099] i want more people to like go back fill
+[3101] the work when i'm not creating work you
+[3102] know me and justin are out of tool tips
+[3104] but you got one more left
+[3105] and we talked about it a lot
+[3107] we talked about a little bit uh and they
+[3109] i think they changed their their slogan
+[3111] recently because of like a tweet or
+[3112] something i feel like that occurred but
+[3114] maybe it was a fever dream anyway tail
+[3116] skill maybe i should get paid for this
+[3117] tail skill is like a really easy to use
+[3118] vpn and like you wouldn't get excited
+[3120] about it except it's like really really
+[3122] cool for underlying tech and it's like
+[3123] it is frustratingly simple you literally
+[3125] just curl a binder onto a box
+[3127] and you log in i'm sorry i don't know if
+[3128] i can swear on this but you can leave it
+[3130] out yeah you curl around that box and
+[3131] then it just works you just log in and
+[3133] then it it does all the network stuff
+[3134] and it's it's bonkers it's like there's
+[3136] no other way to describe it other than
+[3138] it's blockers it's like all secured by
+[3140] default you can't possibly like mess
+[3142] these things up and then you can go and
+[3143] define acls later for for access control
+[3145] it's
+[3146] it is frustratingly simple they've done
+[3147] a just a phenomenal job in building this
+[3149] thing so it's super cool if you haven't
+[3150] checked you checked it out go check it
+[3152] out they have a really generous free
+[3153] tier and then you can go bring it to
+[3154] your company and that's how their
+[3156] business model works and apparently it's
+[3157] going super well because they just
+[3158] raised a whole load of money yeah
+[3160] yeah they're super good
+[3162] i like that there's an oxide call out on
+[3164] their site
+[3164] there is i feel included
+[3168] andrew i actually did have one tool to
+[3170] it it was the first one on there you
+[3172] shared that
+[3174] you shared that we can re-share it if
+[3176] you want but we did notice it
+[3179] he shared it previously on a previous
+[3180] episode yeah i'm actually bad about this
+[3182] about forgetting just like bringing in
+[3184] the back i think it's really cool i
+[3185] haven't it's fine dived into it uh it
+[3188] does it work you should definitely look
+[3189] at it like i feel like it's super cool
+[3192] i'm gonna have to try and like get it
+[3193] working at some point but it's like very
+[3194] very neat it's like that kind of like
+[3195] cool yeah it's very very nice definitely
+[3196] check it out it's a fun project
+[3199] cool that wraps it up for the episode
+[3201] thanks come for coming on jake this this
+[3204] conversation was way out of my
+[3205] wheelhouse but it was fun to talk about
+[3207] it regardless
+[3209] yeah and that's that's the ideal is we
+[3210] can make all the out of the wheelhouse
+[3212] stuff really easy and then you don't
+[3213] have to deal with it and then you can be
+[3214] like yeah not my wheelhouse not my
+[3216] problem you know beautiful yeah yeah
+[3219] yeah you don't have to understand it to
+[3220] be excited about it i'm excited well
+[3223] thank you so much for having me this is
+[3224] wonderful um yeah well that's it for
+[3226] this week's episode of devtools fm be
+[3228] sure to follow us on youtube and
+[3229] wherever you consume your podcasts
+[3231] thanks for listening
+[3234] [Music]
+[3252] you

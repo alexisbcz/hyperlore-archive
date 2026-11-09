@@ -1,0 +1,1903 @@
+[0] [Music]
+[62] [Music]
+[108] [Music]
+[154] [Music]
+[212] [Music]
+[221] [Music]
+[263] [Music]
+[269] [Music]
+[295] [Music]
+[374] [Music]
+[420] [Music]
+[466] [Music]
+[524] [Music]
+[533] [Music]
+[575] [Music]
+[581] [Music]
+[608] [Music]
+[681] all right hello everyone so my name is
+[685] melody I'm the producer here at hack
+[687] Club and we are super excited to have
+[689] you joining us for today's AMA with
+[691] guillermo rauch so in a few short
+[694] minutes we're gonna be kicking things
+[695] off first but first I wanted to tell you
+[697] about Guillermo
+[699] so he is one of the most prolific names
+[701] in JavaScript today so you may not know
+[704] Guillermo by name but he has both some
+[706] of the most popular JavaScript tours and
+[709] library that you probably use over the
+[710] past decade so here's a quick look um
+[714] general has is the person who created
+[717] socket IO which is a JavaScript library
+[720] the powers you know like real-time
+[722] communication and messaging across the
+[725] internet so for example you know a lot
+[726] of chat apps have been built over stuck
+[728] at i/o so there's an example of a chat
+[730] app I found an internet so let's just
+[733] enter my name and I'm gonna enter some
+[735] random name and let's see here so hello
+[741] hi it's me yay so what talked about you
+[750] is is basically like a JavaScript
+[753] library that allows for real-time
+[755] communication and you know in if you've
+[758] never built anything with socket IO
+[759] chances are you pretty much probably use
+[762] something that something built with
+[765] socket IO so another cool thing that
+[768] Guillermo has worked on is Mongoose and
+[772] we're not talking about the mongoose
+[775] bicycle company although they do make
+[778] good bicycles we're talking about digit
+[784] to do of course a javascript a really
+[787] popular no GS library that allows you to
+[790] connect to MongoDB databases so you know
+[794] that's super cool he's also the person
+[797] behind slack in which is a tool that
+[799] allows you to create like public slack
+[802] invite links but what he's working on
+[804] right now is first so herself
+[809] which is a which is basically a clap
+[813] form for deploying web applications to
+[816] the internet which is pretty cool and
+[818] this company is working on some pretty
+[821] cool stuff so I do know that you know
+[825] he's working on he's also working on his
+[827] company behind this really cool
+[829] JavaScript framework welcome vote on top
+[831] of react called next GS and I personally
+[834] use next touch yes myself and it makes
+[836] like using react super easy so yeah so
+[840] that's basically a quick overview of
+[842] giro and what he's been working on
+[845] lately so so yeah that's my super quick
+[849] overview of the cool stuff Guillermo is
+[851] working on um so yeah so let me tell you
+[854] a little bit of how the string will work
+[855] so in about a few short minutes we're
+[858] gonna kick off our AMA our friend
+[860] Lachlan will be hosting Guillermo for an
+[863] ask me anything chat with our hack Club
+[865] students afterwards we're gonna be
+[868] announcing a new program for for the
+[872] community biota community called samurai
+[874] making so if your high school students
+[876] prefer your check stick around after the
+[878] stream and check it out and then
+[879] afterwards we're gonna be showcasing
+[881] some of the super cool projects our
+[882] community has been working on lately so
+[885] check out our ship showcase and all
+[889] right so it looks like we're about ready
+[891] to get started but first can we get some
+[893] a couple claps in a chat really quickly
+[899] all right wonderful so feel free to you
+[903] know share this link to your friends and
+[905] be sure to sit back relax and enjoy the
+[907] AMA so
+[910] oh sorry
+[920] yep we first started this am a series
+[923] about six weeks ago because we wanted to
+[925] create a place in hack Club or folks who
+[928] are stuck at home kind of interesting
+[929] conversations that people that they
+[930] really look up to you and like yourself
+[932] so we're still grateful to have you join
+[934] us today
+[934] I'm gonna lock Boone who's gonna be
+[936] running this call um but but thanks
+[938] again for being here thank you for
+[940] having it thanks too much fact um so
+[945] yeah first I just want to thank
+[947] everybody who is here who joined all the
+[950] hack globe students who joined and
+[952] everybody who's watching the livestream
+[953] my name is Lachlan Campbell I'm at
+[956] Lachlan JC I'm 18 and I met had the head
+[959] of storytelling here at a club it is
+[962] honestly such an honor to have Guillermo
+[965] here today I have looked up to him for
+[967] years and so to be able to host this
+[969] conversation is just pretty remarkable
+[973] um so karamo yeah I guess I'll let you
+[979] kind of introduce yourself but I we're
+[982] gonna spend the first like ten minutes
+[985] of this just having a conversation the
+[987] two of us and then we'll open it up to
+[989] questions from everybody you're awesome
+[991] yeah thanks for having me everybody it's
+[995] especially nice to have this opportunity
+[997] amid the current virus crisis and kind
+[1000] of be able to test out this new way of
+[1002] connecting with people online and live
+[1004] streaming so I'm really excited yeah so
+[1008] my background is in engineering I've
+[1011] always been a contributor to the open
+[1015] source community
+[1016] I started way back in the day getting
+[1021] busy with PHP development that started
+[1024] contributing to open source to some
+[1026] early PHP projects before that kind of
+[1030] my door to the software development
+[1034] world was very much open source as well
+[1037] with Linux
+[1039] I always attribute Linux to being one of
+[1041] the things that kind of launched me into
+[1043] this world
+[1044] of open-source and contributing to
+[1046] projects and learning how to use
+[1048] computers quite deeply
+[1051] we had a Windows machine at home but I
+[1052] would get really busy with try to
+[1054] compile my own Linux kernels and the
+[1058] Linux from a scratch project and so on
+[1060] but one of the things that kind of
+[1062] define my career early on was I noticed
+[1065] that with all the open-source things
+[1066] that I was doing the web was this
+[1069] fascinating medium for me and I noticed
+[1072] that the web was becoming more dynamic I
+[1076] started doing some odd jobs online I was
+[1078] starting to gravitate very strongly with
+[1080] not so much that I PHP as a back-end
+[1082] language would also what PHP could do
+[1085] when you would combine it with
+[1087] JavaScript running on the client side
+[1089] and the web kind of becoming alive and
+[1093] starting to do lots of fascinating
+[1094] things like real-time communication so I
+[1097] started contributing to a project called
+[1098] mootools it was one of the biggest
+[1101] javascript libraries at the time
+[1104] competitor to jQuery and sometimes
+[1107] mootools ended up being quite remarkable
+[1109] because it was kind of the framework of
+[1112] choice of a lot of quite influential
+[1114] projects notably it inspired a lot of
+[1118] the early investments into JavaScript at
+[1121] Facebook but also projects like Joomla
+[1124] and lots of other open source CMS's
+[1127] we're starting to take Muto's as a
+[1128] dependency and what's remarkable about
+[1131] this Astoria thinking I was looking back
+[1132] is that I think I became an open an
+[1135] official open source contributor to this
+[1136] project when I was 15 or 16 that was
+[1140] kind of like the opportunity for me to
+[1143] rise to more notoriety online and I'd
+[1146] say Who I am and put my face on about
+[1148] pages of this projects and then my
+[1151] career kind of started with this
+[1153] interest deep interest in making things
+[1156] very dynamic interactive animated one of
+[1160] my big early contributions was a thing
+[1164] that went viral all over the internet
+[1166] before reddit was kind of dominant in
+[1169] the social media file link sharing space
+[1173] digg.com was a big thing and getting to
+[1177] the front
+[1178] of digg.com was so remarkable at a time
+[1183] that people would call it a dig effect
+[1185] you would get so much traffic to
+[1187] whatever would make it to dig calm and
+[1189] they made it to dig come several times
+[1191] one important thing that I contributed
+[1193] there was a mootools plugin for creating
+[1198] animations for menus that looked like
+[1200] flash so kind of always working on like
+[1204] this
+[1205] super dynamic JavaScript interactive
+[1207] things and that led me to then later on
+[1210] focus a lot on real-time communication a
+[1213] friend of mine credits me with like my
+[1215] obsession with real-time was so big even
+[1218] when we were working on mood tools that
+[1220] I created the plug-in ecosystem for mood
+[1222] tools and I created a category called
+[1224] real-time communication and he had only
+[1227] one entry I think or two but I was
+[1230] obsessed with that nascent category so
+[1233] much so that I discovered that some
+[1237] people were starting to create this idea
+[1238] that later became WebSocket to add the
+[1241] capability for websites to become
+[1243] real-time and enable applications and
+[1245] things like zoom or Google dogs or
+[1249] anything that today is all about
+[1251] collaborating in real-time with your
+[1253] peers or your friends the web was not
+[1255] capable of doing that at the time so I
+[1257] created this foundational project called
+[1259] socket IO that kind of served to give
+[1264] people the ability to do real time
+[1266] before all the infrastructure pieces
+[1269] were even there in web browsers it's
+[1273] crazy how many hacks he could actually
+[1275] use to do real time back in the day like
+[1277] everything from hiding an iframe in a
+[1279] page and things like that
+[1281] and it was always about also observing
+[1284] what other companies were doing and this
+[1286] is a property of the web that I think we
+[1289] could all appreciate which is the
+[1292] ability to reverse engineer and very
+[1294] quickly understand how things that other
+[1297] people create work so I spent a lot of
+[1300] that time kind of as a teenager but
+[1304] later on in my early career trying to
+[1306] reverse engineer how everything worked
+[1308] and I was obsessed with a project at a
+[1311] time called
+[1312] email chat so Gmail when they first
+[1314] launched was just email obviously just
+[1317] freaking awesome but it was very much a
+[1320] pioneer in this category of they were
+[1322] pushing the web browser to the absolute
+[1326] limits of what it could do it was more
+[1329] real time it could store things on the
+[1331] client-side
+[1332] it had autocomplete you had all this
+[1335] awesome features that today we take for
+[1337] granted on websites but GMO is a super
+[1340] pioneer and yeah spent a lot of my early
+[1343] days kind of putting putting things in
+[1348] like kind of reverse engineering them
+[1350] and like putting them back in place in
+[1352] doing so frigging third-party websites
+[1354] is kind of a big thing for me in the
+[1356] early days so mootools then socket IO
+[1359] then I kind of in some ways was like
+[1363] super curious about how far we could
+[1365] take JavaScript and in my early interest
+[1368] in in PHP kind of moved into JavaScript
+[1372] like quite decisively and I became an
+[1375] early contributor to node J us and I run
+[1379] the same time I was also starting my
+[1380] first company and we became sort of the
+[1382] first production user of nodejs and we
+[1384] became a very important contributor to
+[1386] that project so much so that we took
+[1390] Express J as a very popular project
+[1392] since it was like 0.1 version and we you
+[1395] know contributed it all the way to like
+[1398] Larry could actually be used by lots and
+[1400] lots of people today and yeah so this my
+[1404] my passion then became creating the best
+[1407] possible developer tools and kind of try
+[1409] to give everybody the gift of being able
+[1412] to express their creativity online I
+[1415] started a company called verse cell and
+[1417] a new framework called nagaihas for
+[1420] making this idea of publishing to the
+[1422] web really really easy and really simple
+[1425] and really scalable as well kind of one
+[1427] of one of my dreams early on was and
+[1429] it's starting to become real is what
+[1432] what if we can give so much power to the
+[1434] front in developer to the engineer that
+[1435] they can publish a thing that can you
+[1438] know take over the entire world I was
+[1440] watching the AMA with Chris Cox and that
+[1444] with hack Club and
+[1446] things that stands out about Facebook is
+[1447] how much power they gave to their
+[1450] engineers how much power they gave to
+[1452] their contributors how much power they
+[1453] give to young people and you know one of
+[1456] the early motives was like move fast and
+[1459] break things and I think you know they
+[1461] kind of then later transformed into move
+[1463] fast with stable infra and they think
+[1466] this idea of moving fast at scale giving
+[1469] the individual the power to put things
+[1472] online making those things to scale
+[1474] enrich millions of people has sort of
+[1476] become the kind of focus of my career so
+[1479] far and and that's how I met Lachlan
+[1481] actually I was presenting about Nick Jes
+[1486] at react conf and he kind of has this
+[1489] endless curiosity and like reached out
+[1491] of me and like we've been chatting on it
+[1493] for a long time so I think I'm also very
+[1496] grateful to have an interviewer like
+[1498] this amazing thank you so much yeah I
+[1504] mean I think I mean most hack clubbers
+[1506] here are like 14 to 18 and so like
+[1509] you're talking about like contributing
+[1511] to mootools at 16 and stuff like it
+[1512] feels like a lot of people in our
+[1514] community are kind of at that stage
+[1515] right now and so yeah I think first I
+[1521] want to really kind of dig into your
+[1523] your early days because I think a lot of
+[1525] people here are very familiar with
+[1527] we're selling your work and I mean I've
+[1529] we used for sell at hat club and next
+[1532] day I use every day and um and so um I
+[1536] guess I want to kind of start just like
+[1538] in your early days so what was your life
+[1540] like growing up I know you were in
+[1542] Buenos Aires I'm like do you remember
+[1544] the first time you used a computer yeah
+[1547] yeah so for context just because I don't
+[1551] want to assume that everyone knows about
+[1552] when Osiris
+[1553] yeah grew up in Argentina I grew up in
+[1558] the outskirts of Buenos Aires
+[1559] so when Osiris is kind of this duality
+[1562] of it's a city which is pretty famous
+[1564] but it's actually a massive province as
+[1566] well it's kind of like New York State
+[1568] and New York City and all that I think
+[1570] about it and we all think about New York
+[1572] City to the dismay I'm sure of everyone
+[1575] in Buffalo or other places but that's
+[1578] kind of where's
+[1579] everyone thinks of the city is tiny a
+[1582] federal district kind of like Mexico but
+[1585] I lived in the outskirts and obviously
+[1588] in the early days of when the internet
+[1591] was nascent we didn't have much access
+[1594] right we had to go by you know some of
+[1599] the early things that would be imported
+[1601] into the country by kind of pioneers of
+[1605] the internet that would typically come
+[1608] to the US or pay attention to you as
+[1611] media I've read the US newspapers and
+[1613] then once in a while would get lucky and
+[1615] like there would be some of someone that
+[1616] would you know sort of say like we need
+[1618] this in Argentina and we'll give people
+[1620] early access so our first access to
+[1624] computers was we bought a desktop
+[1627] machine that had I believe it was
+[1630] Windows 95 probably even earlier we
+[1633] might have even experimented with with
+[1635] earlier earlier versions of Windows and
+[1638] and because everything in Argentina is
+[1640] kind of delayed by a few years I think
+[1641] it's really in 1997 and we got you know
+[1645] that's the first time we had access to
+[1647] Windows 95 and things like that but one
+[1652] of the things that caught me and caught
+[1653] my attention early on was obviously
+[1654] video games and the process of what kind
+[1660] of one of the early obsessions that I
+[1661] developed was the process of acquiring
+[1664] them installing them and just like sort
+[1667] of like hoarding them and like that
+[1668] whole process of interacting with the
+[1670] operating system and video games not too
+[1672] unlike what I do these days with steam
+[1673] we're like I shop for games I install
+[1676] forget to play them but yeah that was
+[1679] kind of like the big thing was like the
+[1680] computer as he devised that was enabling
+[1683] this sort of like endless entertainment
+[1685] and the ability just like deploy new
+[1688] software onto it is kind of one of the
+[1690] early things that I I got really
+[1693] interested in and my dad was also he was
+[1696] by training an industrial engineer but
+[1699] he was kind of obsessed with like living
+[1702] behind his widow he would start at
+[1704] school not not too unlike what I ended
+[1707] up doing myself only that I didn't go to
+[1708] college I didn't finish high school but
+[1712] his thing was like I feel
+[1713] whatever I was taught at college is
+[1715] already outdated so he was always kind
+[1717] of like looking for the next thing
+[1719] so always thinking like an engineer but
+[1721] always kind of a little bit of like
+[1723] what's the next thing you know you know
+[1725] like this is not advice that I would
+[1727] just give everybody in the world but I
+[1728] do feel pretty strongly that by the time
+[1730] that something gets institutionalized
+[1731] into a course it's probably gonna be
+[1734] outdated at that point and like you're
+[1736] not really at the cutting edge so that's
+[1737] how he felt about like computers the
+[1740] internet networks feel like the future
+[1743] and everything that I've been doing kind
+[1746] of is a path so that's why we're really
+[1748] lucky that even though we kind of lived
+[1750] in the middle of nowhere it's hard to
+[1751] explain now but like one of the images
+[1754] that I always give people is like it was
+[1756] very frequent that like people would
+[1758] like we had horses on the road and we
+[1762] had cars on the road and this is not
+[1763] even that long ago the people that were
+[1765] on the horse were just like you know
+[1767] people that were either begging or
+[1770] collecting carnivore or whatever like
+[1771] you said it was kind of like a weird
+[1773] place to grow up in in the sense of like
+[1776] he was kind of like an emerging city he
+[1779] was having signs of progress but at the
+[1781] same times like lots of poverty lots of
+[1784] violence and things like that I don't
+[1785] want to paint a picture that it's like
+[1787] you know this slums in City of God parts
+[1790] of it were but it was it was it was part
+[1793] of it were really nasty parts of it were
+[1794] like really lovely like small
+[1797] communities small town and things like
+[1799] that but we always had to be really
+[1800] careful with any access that we would
+[1803] have to technology because if other
+[1805] neighbors would hear like you never know
+[1807] if you're gonna get robbed and things
+[1808] like that
+[1809] that I was gonna kind of weird but like
+[1812] I was we were lucky that you know we
+[1814] pushed through all those kind of
+[1817] boundaries of fear were thinking that we
+[1821] couldn't access those things and we try
+[1823] to get technology into our house early
+[1825] on and the the thing that I always think
+[1829] pretty strongly that kind of defines
+[1831] this early this early days was that this
+[1834] kind of like constant upgrading of our
+[1836] software and looking for what the next
+[1838] thing was and we and that's why I was
+[1841] saying they're like us making the
+[1843] transition from Windows to Linux and
+[1847] and just kind of like working so hard to
+[1850] make Linux work which is an operating
+[1852] system that you know a lot of people
+[1854] joke today and I'm sure there's a lot of
+[1855] high clubbers that are trying to use
+[1857] Linux for the desktop and I you say try
+[1860] because you know it is always riddled
+[1862] and fraud with challenge yeah Linux gang
+[1865] it is challenging like the drivers
+[1868] onward or like so imagine that we're
+[1870] talking like 98 or 97 and I was trying
+[1873] to install Red Hat
+[1875] Red Hat was a distribution today like
+[1877] everyone knows what Red Hat because it's
+[1879] big for enterprise and servers at a time
+[1882] red has a strategy was good at consumer
+[1885] which is kind of like you hear a lot
+[1886] about this in startups like lots of
+[1889] people try it first itself to consumer
+[1891] didn't realize actually this technology
+[1892] is better sell to companies that was Red
+[1894] Hat so we got the big early boxes of Red
+[1900] Hat CDs and and just the process of try
+[1904] to make Linux work out of my home like
+[1906] we had this running joke at the house
+[1908] and like I broke the computer again at
+[1911] home because I made it boot only to
+[1916] Linux sometimes I would negotiate with
+[1919] my mom no I promise I'm gonna make it I
+[1921] discovered a single grub and I'm gonna
+[1923] make it book I'm gonna give you the
+[1925] option to make it boot to both and
+[1928] things like that so it was a lot of fun
+[1930] just growing up constantly breaking
+[1932] things before the interview I was
+[1934] thinking like what is one of those that
+[1936] finding moments that I remember fondly
+[1937] at home he was literally breaking stuff
+[1940] all the time like my brother also
+[1943] developed kind of a reputation for
+[1944] breaking the hardware because we would
+[1946] try to like take components out of the
+[1948] computer and then put them back in and I
+[1950] don't get the voltage wrong we just
+[1952] forget to plug in a fan or whatever like
+[1954] we went through so many computers so I
+[1957] also like looking back I'm really
+[1959] grateful that our parents were so kind
+[1962] of understanding of that process of just
+[1965] like trial and error which frankly in
+[1968] the early days was so it was probably
+[1970] like 99% error and occasionally some
+[1973] success but yeah like you know like we
+[1976] frankly like we use computers in a very
+[1978] weird way like I think most hours were
+[1980] just like
+[1981] embrace Microsoft Word and I would just
+[1983] a spend my time joy like I did install
+[1985] it and it sold OpenOffice and and just
+[1987] hack hack around it and compile it from
+[1990] source so those were the early days yeah
+[1993] awesome yeah I mean I I super elated
+[1997] that like I feel really privileged to
+[1999] have grown up where I did but um
+[2002] especially like the like having having
+[2007] access to the Internet on my own just
+[2009] like totally transformed like what I
+[2011] feel with my life that like I was able
+[2013] to like now I have Twitter and
+[2015] everything and like I could like be
+[2017] someone in the world even if I didn't
+[2019] know anybody else who was was coding and
+[2021] also that was a big that was a big leap
+[2023] for us to write late yeah going from the
+[2026] world of you have to get dumps of
+[2028] software in a cd-rom and insert it into
+[2031] the computer to go to dial-up 56 you
+[2036] know kate kbps connection and like just
+[2039] it's really slow but getting information
+[2041] and connecting to the world and then the
+[2044] next big leap was getting dsl which gave
+[2048] us 256 kbps and like we're one of the
+[2051] earliest you know homes in our little
+[2054] neighborhood that even had that
+[2056] technology but that is the thing that
+[2058] started connecting me to the world and
+[2060] and I start enjoying this IRC servers
+[2062] where I started getting in touch with
+[2065] people usually older people that were
+[2069] that had the same interests that I did
+[2071] so one funny story that I have is that I
+[2074] was going through one of my cycles of
+[2076] really trying hard to make Linux work
+[2079] and installing the drivers for making
+[2083] the modem work and making our DSL
+[2085] connection work and this was kind of
+[2087] like one of the biggest obsessions that
+[2089] I had was I had I had secured a cd-rom
+[2093] from a magazine that a very likely found
+[2096] that had this software called
+[2098] R P P P Bo and that you had to compile
+[2103] from scratch the complexity there was
+[2105] you also had to recompile the kernel to
+[2107] get the right kernel modular work so
+[2109] that your network device work in st.
+[2112] stuff really and just meet
+[2114] I was starting to hit a wall of late I
+[2116] cannot do this and then they joined that
+[2119] IRC channel and this guy his name was
+[2121] Diego he was already working for a
+[2123] company like I think was even like an
+[2125] international company and he took the
+[2128] time this is stranger to the time out of
+[2129] his day to call me because now at this
+[2132] point like I had a reboot into Windows
+[2134] you know windows had internet go into
+[2137] Linux and this random guy offered to
+[2140] call me at my house and helped me
+[2143] through the process so I kind of early
+[2146] on and I took a Latin leap of faith
+[2148] because obviously the advice though is
+[2149] don't talk to strangers but I took a
+[2153] leap of faith it was like this can't you
+[2155] ended up helping me and and gave me lots
+[2157] of amazing information so for me
+[2160] community was so important I became
+[2163] friends with all these weird stranger
+[2166] nicknames online like one of my friends
+[2168] his name was net roots I'll never know
+[2171] who net root was but that was my friend
+[2173] and we were like on the Linux channel
+[2175] and like learning together and it was it
+[2177] was a really fun time yeah super connect
+[2179] to that I like there were so many times
+[2181] when I like screen share with some
+[2183] developers just like oh cool
+[2193] so I'm jumping ahead a little bit you
+[2196] mentioned dropping out of high school
+[2199] and you know that's a that's a very
+[2204] relevant topic here not very many people
+[2210] do but you know a lot of our community
+[2212] like things about that like not really
+[2217] like supporting supporting their dreams
+[2220] so for you like do you remember the day
+[2223] that like he decided to drop out and
+[2225] what that was like
+[2225] like what was yeah for context I created
+[2230] my high school with a lot of my success
+[2232] because here's a weird thing I quit it
+[2236] it's kind of I mean I'm not gonna make a
+[2238] comparison here like dogtooth I would
+[2240] Steve Jobs but he talks a lot about like
+[2241] he dropped out of his specific classes
+[2243] and he wanted to learn our typography it
+[2245] was very similar to me like I loved my
+[2247] high school because
+[2248] first of all I made a gigantic effort to
+[2250] get in so it was a it was a high school
+[2252] that he had to take an entry exam and I
+[2255] was kind of obsessed with being in the
+[2257] top position of the entrance and like
+[2258] getting the most points and it was four
+[2260] subjects math language history geography
+[2266] and then each exam gives you 50 points
+[2269] and then this was supplemental to
+[2272] elementary school so you already had to
+[2274] get started with training for these
+[2276] exams later on I learned that I think
+[2278] there is a similar dynamic in the US
+[2282] with regard to the SAT where like people
+[2284] are thinking way ahead of time and so on
+[2285] so we knew that we wanted to do that my
+[2290] parents too like my dad specifically it
+[2292] was like whoa that sounds awesome like
+[2294] people that go to that school like learn
+[2296] lots of things that you're never going
+[2298] to learn at any other school and this is
+[2300] cool section of public school which is
+[2301] also really awesome like you had like
+[2303] really work hard to get in but in any
+[2307] was called an experimental school so
+[2309] what they would do is they would give
+[2311] high school students access to
+[2313] college-level professors and subjects as
+[2318] well as exams so that school really
+[2322] opened my mind to lots and lots of
+[2324] things that a still used every day
+[2326] because they taught us everything from
+[2328] like chemistry physics accounting
+[2331] mathematics calculus like early on and I
+[2337] loved it in the first year I loved it I
+[2339] was so I studied really hard I got into
+[2343] the school into in one of the first
+[2346] positions but then when I was in I was
+[2348] continuing my mo I'm gonna I'm gonna try
+[2351] to get every point right and that
+[2353] literally lasted two quarters or or less
+[2358] because then I discovered a new system
+[2362] of points little quite clearly I
+[2364] discovered that I could work online and
+[2367] make money and or you know contribute
+[2370] open source projects and so on
+[2372] so like it had this they crazy to
+[2374] competing systems I cannot be the best
+[2376] student that gets the most points
+[2379] because actually once he got in it was
+[2381] pretty friggin hard so the intercom was
+[2383] hard but like after you get in there was
+[2386] no like free right either so what I
+[2388] started doing was like I was I was
+[2391] paying attention alot in class and was
+[2392] trying to like get good enough grades in
+[2394] the exams without having to study at
+[2397] home because all my time at home was for
+[2400] working with my crazy clients in the
+[2402] Netherlands and all this class I started
+[2404] getting for like you know development
+[2407] and and doing freelance work and also
+[2409] like the economy energy it was kind of
+[2411] like collapsing at the same time so I'm
+[2414] starting to make money for my family so
+[2416] I had all this competing sort of
+[2417] problems and obviously the story goes
+[2421] they obviously work tag and work and
+[2424] open source one so much so that I didn't
+[2426] even get the degree but what I want to
+[2429] say too is that sometimes here it is the
+[2431] stories of like oh X high school dropout
+[2433] or college dropout anything sometimes
+[2435] like not enough credit is given to like
+[2438] lots of amazing things that you can
+[2441] learn that I don't know that you would
+[2442] necessarily learn on your own but yeah I
+[2445] like to go more concretely your question
+[2447] of like the specific time that I dropped
+[2449] out muchos was a defining moment for me
+[2453] like this lever was starting to get used
+[2454] by loss of important companies and that
+[2457] hadn't happened a lot with me before I
+[2460] had written a pretty cool plugin for an
+[2462] ORM in PHP but I had never had this
+[2465] scenario where like companies are
+[2467] reaching out of me to try to hire me
+[2468] Facebook try to hire me when I was 17
+[2470] and but one company did hire me that
+[2475] kind of chance was a company in
+[2478] Switzerland I started and that was kind
+[2481] of where like I kind of like forgot
+[2484] about the rest of the world it's like
+[2485] not only because it was kind of my
+[2487] ticket out of Argentina I didn't think
+[2488] of it that way I was like this is my
+[2490] ticket into like a whole set of amazing
+[2494] new experiences and I was like seeing
+[2496] everybody like I literally told my mom
+[2499] one day mom I'm going to Switzerland in
+[2502] two weeks you have to sign here because
+[2503] I was under 18 diamond so props to my
+[2508] mom that she's always tuned in with all
+[2510] this crazy ideas cuz she was like
+[2512] alright I get it you know like it's
+[2515] it's not crazy stuff in on its own it's
+[2519] like actually you're going there a
+[2520] company is using your project they are
+[2523] needing to hire people that are experts
+[2526] in this framework and you're one of the
+[2528] contributors if I were so you're an
+[2529] expert and that was kind of the moment
+[2531] where I was like oh so high school and
+[2533] they're sort of skipping exams and yeah
+[2536] it just that's really even I probably
+[2539] never even looked back from them for
+[2540] them yeah yeah the yeah I totally
+[2545] understand that feeling I remember when
+[2547] I was was in tenth grade I got a
+[2549] scholarship to go to react Kampf in San
+[2554] Francisco and that's actually where
+[2555] where we first bragged and it was it was
+[2559] my first time going to the west coast
+[2561] and I went to San Francisco with my dad
+[2563] and like going to a tech conference and
+[2566] it was just like it was so kind of
+[2568] validating of like that anybody like
+[2570] cared about anything that I did and also
+[2573] just like really eye-opening of like
+[2575] seeing what the tech world looked like
+[2577] and everything I had a very similar
+[2579] experience like like Richard Stallman
+[2582] the creator of canoe and the creator of
+[2584] Emacs
+[2585] which I didn't love I love the I was a
+[2588] speaking in Argentina and he's a super
+[2590] controversial figure and he's even
+[2592] become more controversial in recent days
+[2594] but like when he when that happened was
+[2596] like a big deal for Argentina like oh
+[2598] wow the this this guy like is coming to
+[2601] give a talk here I'd had that same
+[2603] experience I went with my dad to the
+[2607] conference and I got to meet some of the
+[2608] people that had already been chatting
+[2610] with I was a very very validating
+[2612] experience so you know that kind of
+[2613] taking it into the real world it's very
+[2616] very important you know you have to also
+[2618] take that leap of faith outside of just
+[2621] you know being a nickname online yeah
+[2625] amazing so I'm gonna start opening up to
+[2629] two other questions so when we're gonna
+[2633] Rishi up first but when you just give
+[2636] your name and where your hot club is and
+[2639] so take it away Rishi after Guillermo
+[2643] I'm Rishi as Lucknow he said I'm 14
+[2646] years old and I run a hot club butter
+[2648] grams in in Canada
+[2649] so I have a hypothetical for you you've
+[2652] had an enormous impact on the open
+[2654] source community throughout the years
+[2655] pioneering some of the biggest software
+[2657] projects in the world and making them
+[2659] open from the very start it's no doubt
+[2661] changed the world over the education
+[2663] system in America and Canada is
+[2665] incredibly competitive with people
+[2667] competing for the best marks and exams
+[2668] or the most amount of extracurriculars
+[2670] and putting each other down to gain a
+[2673] small advantage and if you're a shot
+[2675] back into the early 20th century to the
+[2677] beginnings of this education system and
+[2679] you're given full access and full power
+[2682] right what is one thing that you would
+[2684] change to make it a little bit more open
+[2687] for for people and why would you do it
+[2689] but more importantly how would you do it
+[2691] remember you're still you but you don't
+[2693] have any of the tools of the 21st
+[2695] century yeah that's that's a fascinating
+[2698] question because as I mentioned earlier
+[2700] I've always been in between these two
+[2703] worlds right like as I mentioned for me
+[2706] getting into that school and I had to
+[2710] work so hard to get those grades and
+[2713] learning those skills and I was so proud
+[2715] of it too because I remember taking the
+[2717] SAT online just as a comparison point
+[2721] and it was doing so well with it even
+[2724] though it's very young so I've been
+[2726] always been conflicted by this truth
+[2728] realities of like well I also started
+[2731] working online when I was 13 and
+[2734] contributing to like important companies
+[2736] I had clients that were you know early
+[2739] ecommerce like big e-commerce website so
+[2742] I was like contributing to their PHP
+[2744] code bases so one of the things that I
+[2746] would say is that we need a lot more
+[2749] understanding about the individual and
+[2751] what is that that what is the path that
+[2755] is optimal for the individual like if
+[2759] you think about the tools that we use
+[2760] today which are just like age and
+[2762] location and a lottery system for what
+[2765] school you go to in the early days it
+[2767] seems to me that we're not really
+[2769] getting the most out of each person I
+[2771] very much like one of kind of naval
+[2774] ravikant sayings around you know no one
+[2777] is gonna be better in the entire world
+[2780] that being you and there is a specific
+[2783] set of skills and talents that you have
+[2787] that nobody else has and I'm very very
+[2789] convinced of that
+[2790] and when I've hired for my company I've
+[2794] know I've seen that firsthand there's so
+[2796] many incredible people that I found
+[2798] online they have all these incredible
+[2800] skills it's an interest that you know I
+[2803] don't feel close ever attaining right
+[2806] and that's a beautiful thing
+[2807] so I would find the ways that the
+[2810] education system could recognize and
+[2813] give that freedom to each individual's
+[2816] expression and search while providing a
+[2820] structure around fundamental things that
+[2823] are shared in all of this endeavors so
+[2826] an example would be for me it was very
+[2828] important to have a competition this was
+[2831] probably for my personality right I was
+[2834] involved in the Math Olympiad of my
+[2836] school since I was you know like maybe
+[2841] like seven years old and competition and
+[2844] how I'm doing in comparison to myself
+[2847] and others
+[2849] that was very important for me I mean I
+[2851] wrote a blog post recently called an ode
+[2854] to go to code golf because I think
+[2856] there's all these really cool little
+[2858] competitions that you can partake in
+[2860] that are fun and get you into that
+[2864] mindset just doing better than you were
+[2867] doing before so I did a competition like
+[2869] that early on so Math Olympiad was one
+[2873] there was a pact becoming a hacker
+[2876] competition this was amazing for me like
+[2878] I discovered this website where you
+[2882] started being the lowest-ranked I don't
+[2886] know soldier and it's like fake military
+[2888] and you had to hack your way
+[2889] each lesson was a hacking challenge and
+[2893] I kind of became obsessed with this
+[2894] hacking systems and you made it up to
+[2898] like general general master super
+[2900] general right and the first step was so
+[2905] simple use a view source and it was an
+[2909] HTML comment that took you to the next
+[2911] step and you could do it in like five
+[2912] seconds level 16 was you had a risk
+[2916] you had to download a binary that would
+[2919] only run in Linux so if you had Windows
+[2921] like good luck and then you had to
+[2924] disassemble it to find the password to
+[2928] crack that if you run the binary would
+[2930] ask you for a password and then you had
+[2932] to like submit the password this idea of
+[2936] giving people ladders of games and
+[2940] challenges not unlike you know like
+[2942] modern games or like World of Warcraft
+[2945] you want to be like level 70 whatever
+[2947] we're lacking enough of those games in
+[2950] general I think even like I'm talking
+[2952] about like even startups and tech
+[2954] companies like I'd love to see people
+[2956] get better at their jobs through games
+[2959] so that's that's one of the things that
+[2961] I would do is like try to invigorate
+[2963] that that sense of fun
+[2965] combined with competition and by the way
+[2968] it's something that was critical for me
+[2969] growing up it's like I spent a lot of
+[2970] time gaming like I wrote about this
+[2973] recently just like I would have periods
+[2975] of intense like career progression
+[2978] followed by internal intense
+[2980] counter-strike progression and there
+[2983] will be like night and day like three
+[2984] months of like awesome I'm becoming the
+[2987] best hacker in the universe to three
+[2989] months of like all I'm doing is like you
+[2992] know loading new maps into
+[2994] counter-strike servers and playing with
+[2996] my friends all day long so yeah like I'd
+[2999] love to see how education systems can
+[3001] like adapt to this reality of like
+[3003] people don't want this boring structure
+[3006] give people like the freedom to create
+[3008] and experiment and play yeah umm do we
+[3014] only twenty five minutes less left so um
+[3016] you could keep the answers a little
+[3018] shorter that we can gets me sure oh yes
+[3023] hi my name is Harrison and I lead a hot
+[3026] club in Agoura Hills California
+[3028] so a lot of us were wondering about the
+[3032] rebrand for myself what encouraged you
+[3036] to rebrand it from site to myself so
+[3040] there were some logistic issues that
+[3042] kind of forced us to rename but I always
+[3046] tell people that there were we think of
+[3048] our company as kind of designers
+[3050] action of you know to reuse Steve's kind
+[3054] of metaphor liberal arts and engineering
+[3058] you've all probably seen how much
+[3059] attention and and care we put into the
+[3061] design of our tools so we also see this
+[3065] intersection awesome intersection
+[3067] between designers and developers verse
+[3069] cell simplifies our product line up
+[3072] quite significantly so we had Zayed
+[3075] inside now now and to me the fact that
+[3079] now you just have Nexus and verse L as a
+[3081] platform it promotes that simplification
+[3085] that is so important to us and if you
+[3087] really think about the development of
+[3089] any product it's all about removing that
+[3092] kind of complexity and and that's what
+[3096] takes a lot of the hard work for us is
+[3098] finding that simplicity so the rebrand
+[3101] accomplished that another really
+[3102] important value for us and really
+[3105] building a companies or building a
+[3107] country it's all about that it's about a
+[3109] strong set of values one of the
+[3112] important values for is reliability and
+[3114] the name is just more reliable so that
+[3116] was another extra bonus that we got out
+[3118] of that situation that really frankly
+[3120] happens once in a lifetime of a company
+[3122] but the fact that the name you hear it
+[3124] in any situation and you can write it
+[3126] more easily and you can interpret it
+[3128] more easily and it works across every
+[3129] language in every country was a very
+[3133] important value for us because we want
+[3135] to play that reliability to everything
+[3136] so in short it was an opportunity that
+[3139] came up we grabbed it and we're very
+[3142] happy with with what it's done for us
+[3145] awesome great question by the way thank
+[3148] you um do you be doing a good nice
+[3151] awesome high gear mo my name is JT I'm a
+[3156] 14 year old I'm an eighth grader in
+[3158] Colorado excuse me and so I'm running a
+[3163] hat coat by school I was wondering how
+[3166] you build communities with your projects
+[3168] because it's so cool seeing open-source
+[3172] projects kind of create by a small
+[3174] amount of people or like one person and
+[3176] they just grow into thousands of
+[3178] contributors and just so many people are
+[3182] relying on these tools every day
+[3184] and I was wondering how you imagined
+[3185] support such a large community yeah I'm
+[3188] going back to values communities one of
+[3191] our guiding values the foundational
+[3193] value for us we started the company
+[3195] thinking first and foremost about our
+[3197] community so like everything that he
+[3199] would start we think about that first
+[3201] how do we get that community engaged the
+[3204] very first thing we did when we put our
+[3207] website up was let's get people into our
+[3211] chat room let's get people connected to
+[3213] us let's start organizing meetups and
+[3216] conferences and ways to get in touch
+[3219] with with people I honestly think that
+[3222] that's the again like values allowed you
+[3227] values kind of are preserved through
+[3231] iterations of products and technology
+[3234] we're creating a company that will be
+[3237] around for decades to come
+[3239] right so the community being together
+[3244] with us at every step of that iteration
+[3246] it's kind of what allows us to retain
+[3249] that that momentum and that evolution
+[3252] throughout time so more technically
+[3256] speaking you know we try to make
+[3259] everything we can make open source open
+[3260] source this is sending a Matt Mullenweg
+[3262] who bought my previous company would
+[3265] always say we open source everything
+[3267] except for a passwords I love that I
+[3270] think my refinement of that is I open
+[3273] source everything that we always say our
+[3278] pastures but we open source everything
+[3280] that will allow people to make the
+[3284] product and platform their own and
+[3286] sometimes we don't know but sort of
+[3288] things that it would allow you to run
+[3290] the platform because we don't think that
+[3291] that's something you would even want to
+[3292] do so we want to be careful with like
+[3295] that we have such a big megaphone
+[3297] nowadays and like we have the opposite
+[3299] problem of a lot of people that are
+[3300] creating try to get a community of the
+[3302] ground our community is so large that we
+[3304] have to be mindful of our signal being
+[3308] very clear right like even I have to be
+[3311] careful nowadays of like every tweet has
+[3313] to be very carefully worded so it is not
+[3315] open to misinterpretation because
+[3317] someone thinks oh
+[3318] I have to change my Co to be that or
+[3319] that so that in that's the other good
+[3323] points like being super mindful about
+[3324] your interactions with the community
+[3326] everyone is listening and we're all
+[3328] super connected so yeah make that your
+[3331] ovalle and you you you build a great
+[3333] community awesome thank you amazing
+[3338] Brandon next hi I lead a club at Horry
+[3343] Valley High School and I direct DB hacks
+[3345] so my question for you was in our
+[3348] society nowadays we're very much more
+[3351] tech oriented you have a lot more kids
+[3352] going to STEM fields and you know we are
+[3355] trying to push kids extra curricular ly
+[3357] into stem more but do you think that
+[3360] given our societal structure
+[3362] re-equipping kids to properly push
+[3364] through these kind of fields not with
+[3366] knowledge but with like actual sort of
+[3369] like personality and such yeah I think
+[3374] the the drive towards system is a really
+[3377] awesome thing in a sense I one thing I
+[3381] get a little bit concerned about is one
+[3386] of the things that made me really
+[3387] successful in particular has been my own
+[3390] obsession and interest in the art of
+[3394] this problem space I never got into it
+[3398] because of society's pressure right I
+[3400] got into it not because of positive
+[3402] economics in fact I didn't even
+[3405] understand at the time that like Bill
+[3407] Gates is the richest man in the world
+[3408] because like you can replicate the
+[3411] software so cheaply you build it was and
+[3414] you reach everybody in the world so it's
+[3416] a you know I I think efforts like clever
+[3421] absolutely critical to guiding society
+[3425] towards the right place and in terms of
+[3427] like making people become legitimately
+[3434] interested in this topics right and
+[3436] exposing them to the right people and
+[3439] right role models so yeah I think I
+[3443] think societies probably now
+[3445] overcorrecting a little bit like we have
+[3447] too many parking schools that are
+[3449] promising people are gonna learn
+[3451] everything
+[3452] computer science and engineering in 30
+[3454] days and get a job that's high pay
+[3455] you've probably heard this so I'm still
+[3459] navigating this myself I don't know what
+[3460] the best strategy for it is this but but
+[3463] I feel like things like these are still
+[3465] very much in a state of flux I'm also a
+[3468] couple questions from our track
+[3470] so a tabs or spaces or and be our first
+[3474] name in Linux
+[3475] so demson space is a great one because
+[3478] the right answer which is tabs it's not
+[3481] what gets used in practice and I had a
+[3483] call with Google this morning where were
+[3485] they contribute an XJS and so funny that
+[3488] I get this question because like I used
+[3490] that metaphor today to explain to them
+[3493] well look we all know that theoretically
+[3495] the right solution for this problem is
+[3497] this but I know that that's not what
+[3500] people are gonna want or do so let's
+[3504] find a ways to eventually try to get to
+[3507] that ideal place but be realistic about
+[3509] what is the momentum so going back to a
+[3511] previous question of community being
+[3513] super in touch with that like momentum
+[3518] of that community is really what it
+[3521] enables amazing engineering as well
+[3522] because notice that there's this gap
+[3524] between theory and practice in a lot of
+[3526] cases you succeed by tuning in to what
+[3530] the in this case developer customer
+[3531] would ever actually want to do so I'm
+[3534] gonna say you know like I use spaces
+[3536] begrudgingly in a world that you know
+[3539] should be using
+[3540] [Laughter]
+[3542] wow that is yeah and Arch Linux versus
+[3554] Debian Linux say again Arch Linux versus
+[3559] Debian Linux odv and all the way like
+[3562] Debian was like the thing that like I
+[3565] was like before Arch was it was a
+[3567] distribution that all the cool kids were
+[3569] doing that was more like I'm gonna make
+[3573] everything custom dbn was there and for
+[3576] me was huge like Red Hat had a novel
+[3580] installer because they were in this
+[3582] direction like that subway nose that was
+[3583] all graphics they would boot
+[3585] 2x11 for lunisolar and vivian was like
+[3588] this beautiful like in curses
+[3591] just like terminal graphics and that
+[3595] really made me fall in love with the
+[3596] terminal so d being all the way apt this
+[3600] is still like pretty grim much the most
+[3602] successful package manager that I know
+[3604] of in terms of security
+[3606] practicality just pretty all-around
+[3609] awesome but I truly respect the arch
+[3612] philosophy again ii was big when debian
+[3616] was also taking off because they had
+[3618] this also system of like compiling from
+[3621] scratch and optimizing for architecture
+[3623] and so on so you know if I were went
+[3627] back in time to when I was a teenager I
+[3629] would be the arch linux teenager today
+[3630] actually realistically but you know baby
+[3633] and all the way in my heart amazing um
+[3636] so if you want to ask a question you can
+[3638] just raise your hand on Zoom the oh okay
+[3642] yeah so I'm Thea I'm sixteen I run a hat
+[3645] club in Boston and I've worked for a
+[3647] club for the past year and a half so I
+[3650] have a question about kind of how next
+[3652] chance came about so you talk a lot
+[3654] about like PHP and how like PHP was so
+[3656] fundamental because like if you made a
+[3658] file and you put it in a directory and
+[3660] then you went to like it's there it's
+[3663] all done right yeah
+[3665] done so like like at which point I I
+[3669] assumed there was like some time when
+[3670] you gotten to react like after you got
+[3672] to react at which point were you like
+[3674] like like this needs to exist in
+[3676] the react world yeah great great
+[3677] question this is a great question
+[3680] because it really is one of the defining
+[3683] moments for our company and it was one
+[3685] of the defining moments for where to
+[3689] where we started seeing lots of success
+[3691] in the industry and where where were
+[3693] that signals that we had to double down
+[3695] on that it was it was very simple I had
+[3697] to create the website for per cell or
+[3699] site at the time and I had to create
+[3703] three pages want to introduce your email
+[3706] privacy policy Terms of Service and I
+[3709] knew that reoccurs the programming model
+[3711] of the future like I had become
+[3714] convinced myself through laws of
+[3716] research and experimentation and yet
+[3719] creating three pages was the biggest
+[3722] pain in the butt ever I was I couldn't
+[3724] believe this gap and by the way this is
+[3726] really like if you want a tip for like
+[3730] successful invention at scale it would
+[3733] be this when you find those gaps of like
+[3737] oh my god how how come the technology is
+[3740] so great if this basic thing is
+[3744] unattainable right it was practically a
+[3746] tailor with like I had a configure web
+[3748] ahead and download this and that just to
+[3749] put three pages online and that was kind
+[3753] of defining for the entire company
+[3755] because I you know I explain to people
+[3757] our plan for today is like it's pages as
+[3760] a service it's just publish spacious
+[3761] next to where your customers are at
+[3763] scale and and yeah like that you know
+[3768] and this is why I like simplicity is
+[3770] very hard as well like retaining that
+[3772] level of simplicity is always a
+[3774] challenge it's also easy to say oh like
+[3777] PHP
+[3778] let's just be like PHP was easy at a
+[3780] time let's make it that easy but making
+[3783] it easy and also making it simple and
+[3785] making it work well when he gets you
+[3788] know tested with like the largest
+[3790] websites of the world that was a
+[3792] challenge for us like a lot of thinking
+[3794] went into can you be both easy and
+[3798] simple and simple it's actually the the
+[3801] property that he most likely want I
+[3803] would even argue that a lot of the
+[3806] things that I've created that are grade
+[3808] and got a lot of stars on github and
+[3810] whatever were easy but they weren't
+[3813] simple robust scalable systems so
+[3816] combining the two is like we're like the
+[3818] magic happens thank you so much yeah I
+[3821] actually like I I got scared away from
+[3823] react until like I discovered how to use
+[3825] like next yes with functional components
+[3827] and now like nice it's great anyway
+[3830] thank you thank you
+[3831] amazing yeah I understand what
+[3834] experience like I also used react in the
+[3835] early days and configuring Babolat web
+[3838] pack and stuff say to play my everything
+[3842] upgrading it was just like oh my god and
+[3844] i've been using next since the very
+[3846] first version and like now it's still
+[3848] powering
+[3848] I clubs websites so amazing
+[3853] Sam Europe next my name is Sam I that
+[3858] hot club leader in Singapore I'm 15
+[3860] my question is to schools like about
+[3863] since STEM education
+[3865] we'd like humanities and the arts how do
+[3868] you think we can apply that principles
+[3870] we learn in the humanities and the arts
+[3872] to stem great question so it builds very
+[3879] well in some of the earlier question
+[3881] about community I think scalable
+[3887] respectful community management is
+[3890] absolutely essential I'll give you a
+[3892] very practical example of this at as
+[3896] soon as I really suck at a oh I got
+[3898] trolled on reddit like pretty hard and
+[3901] it was the most silly troll in the
+[3904] history of trolls and
+[3908] I could have reacted in a number of ways
+[3911] to that a I could have engaged the troll
+[3914] I immediately noticed that like the
+[3917] troll was just strolling for the sake of
+[3918] trolling not on technical basis so I
+[3921] kind of ruled that out I could have
+[3924] given up on humanity was a very valid
+[3927] option like this guy was or or a girl
+[3929] who ever was just wanting to destroy the
+[3933] Commons because this is an open-source
+[3935] project right and all right you know I
+[3938] could have stopped doing what I doing
+[3941] and like not try to build a community or
+[3942] like not try to like push forward the
+[3944] project and so on and I think you know
+[3948] kind of understanding that sociological
+[3952] side of things psychological side of
+[3955] things one of the partners that under
+[3957] Sahara which talks a lot about like a
+[3959] CEO skill being managing your own
+[3962] psychology and not because like I think
+[3965] people should strive to do that but it's
+[3966] one of the challenges that comes up it's
+[3969] like you're you're you have to manage
+[3971] yourself and in your psychology so so
+[3974] many of the skills that have gone into
+[3977] making this thing successful are not at
+[3980] all technical they're all about you know
+[3984] building community being socially
+[3987] skillful and what I mean by that
+[3989] practically is again like we've we've
+[3992] learned really well how to engage with
+[3994] critics for example how to engage with
+[3996] people and be tagged that people are
+[3998] just out there to try to like troll or
+[4000] whatever how to respond to that with
+[4003] positivity positivity on the art side
+[4006] how to apply a great design to
+[4008] everything we do on the communication
+[4011] side how do you use fewer words right
+[4013] like a lot of technical blog posts are
+[4016] like jurors you're a juror sugar
+[4019] gibberish like you know like effective
+[4022] communication is just one of the most
+[4024] powerful tools you can I see this a lot
+[4027] with like the AWS blog a lot of the the
+[4031] writers there they're dealing with
+[4032] incredibly complicated technical things
+[4034] but they make such an effort to bring it
+[4037] down to reality you know so I would say
+[4039] you know I would pay and this
+[4042] so I can't possibly dismiss traditional
+[4045] schooling and so on because I it's very
+[4047] hard to pick up a lot of these things on
+[4049] your own I was very lucky to like take a
+[4051] lot of psychology classes in high school
+[4053] again going also back to that other
+[4055] great question about like changing the
+[4056] education system and I think a lot of
+[4059] tech levers are gonna relate is I love
+[4062] the idea of just exposing younger people
+[4064] to very difficult concepts so like throw
+[4068] them into the woods see what happens I
+[4071] expose them to like advanced everything
+[4074] no advanced it sounds like overwhelming
+[4076] and since they want but kids are not
+[4079] necessarily how to put it like children
+[4083] there are just adults in development
+[4086] that can given the right tools learn any
+[4091] skill and understand any any hard
+[4093] concept so that's your question we can
+[4096] apply the art sociology psychology and
+[4098] so on it's just be great yeah okay thank
+[4101] you Sam we have six minutes left and we
+[4104] have three questions to fit into that so
+[4107] up first melody let's hit them all hey
+[4114] everyone so I'm melody I started one of
+[4116] the very first hat clubs in America
+[4118] right here in Philadelphia Jeremy I
+[4120] notice that you have the Sprinter train
+[4122] in your background and I actually rode
+[4124] the Sprinter train to visit a hat Club
+[4128] yeah so I am like looking over twitch
+[4132] and one of the questions in the chat is
+[4134] what do you think are some cool new
+[4136] technologies in the near future we
+[4138] should be watching oh that's a great
+[4141] question it actually anticipates a blog
+[4143] post that I want to write I'm gonna
+[4146] answer with two things and answers with
+[4148] what system do I use to identify the
+[4151] best technologies and then what
+[4153] technologies I'm also I've identified so
+[4155] far so the system that I use goes
+[4157] related the question that Theo asked
+[4160] about next is I identified react as a
+[4162] great technology and I better identify
+[4164] the gap so one thing that I noticed a
+[4168] lot about the world my blog was gonna be
+[4170] kind of like identify useful primitives
+[4174] so I think the best
+[4176] oh geez already exist they're widely
+[4178] used there already for you too therefore
+[4181] you grab and there's this gap of them
+[4184] being utilized because they're only
+[4186] being presented as recipe form another
+[4190] good example is I use postman it's a lot
+[4192] and I get all my food delivered from you
+[4195] know this amazing real-time menu to my
+[4197] door and I'm not a person that cooks a
+[4200] lot and I love the idea of it I've
+[4202] always thought I'm gonna cook a lot no
+[4204] in practice I just got my food delivered
+[4206] and I think of like primitive great
+[4209] primitives as like the ingredients of a
+[4211] great recipe and I think maybe it's just
+[4214] me but I think most people prefer to go
+[4217] to the in-n-out drive-through and get a
+[4218] great Matt majestic burger I love it now
+[4221] just random tangent I rather than try to
+[4224] make it make their own barely at home so
+[4227] this how I identify great technology so
+[4229] find those primitives that have not been
+[4232] turned into this delightful presentation
+[4236] and you can bridge that gap in that
+[4239] process or find it the delightful
+[4242] presentation for the technology you
+[4244] evolved the technology itself
+[4245] so we've now made amazing contributions
+[4248] to react even though we're using it as a
+[4251] primitive of our system but now because
+[4253] we expose you to this huge world of data
+[4255] we've now been able to tell the react
+[4258] team hey let's improve X Y & Z here's
+[4260] the patch is this here's that it's worth
+[4262] you there on this so that's the system
+[4264] then practically speaking technologies
+[4266] that I'm excited about I'm excited about
+[4270] typescript a lot I'm excited about
+[4275] improving performance of infrastructure
+[4279] systems with go rust webassembly I'm
+[4285] excited about creating new languages I'm
+[4287] gonna throw this out for head clubbers I
+[4289] think developers some of these are
+[4291] typing a little bit too much and my
+[4294] spider-sense is tingling that I lived
+[4298] through this with Jade way back in the
+[4300] day where Hamill in the Ruby community I
+[4302] think there is a lot of room for
+[4304] experimenting with people typing less
+[4309] whether that's with cool ideas stuff or
+[4312] Auto completing imports and components
+[4314] and also just like I think this is kind
+[4317] of an axiom of our human condition we're
+[4320] all hominids that get tired by typing a
+[4323] lot tired by reading a lot by you know
+[4327] coordinating a lot with people I think
+[4329] you're never gonna beat making things
+[4332] really brief and so I'd love to explore
+[4336] things in that direction
+[4338] yeah I'm gonna be I'm gonna be sharing
+[4340] more of these ideas on Twitter because I
+[4342] love answering this question I can't
+[4344] think of more nomination mm-hmm thank
+[4346] you amazing
+[4348] okay we have two minutes two questions
+[4349] so cat I'm cat I'm a hot club alum and a
+[4355] currently attending college in Boston I
+[4357] absolutely love your idea of approaching
+[4360] things and thinking about the primitives
+[4361] I'm especially excited to see URLs as
+[4364] primitives for a collaboration so my
+[4366] question is I think he might have a few
+[4370] weeks ago on Twitter that tools like
+[4371] notion and roam are much closer to
+[4374] accomplishing googles mission of
+[4375] organizing the world's information than
+[4377] Google ever has been and I was wondering
+[4379] if you could just elaborate on some of
+[4380] your thoughts on oh wow that that is a
+[4382] great question thank you Wow okay
+[4386] because you know that's the nature of
+[4388] Twitter you'd like drop this box then
+[4390] you never elaborate okay so here's the
+[4394] thing the world has lots infinite amount
+[4399] of information some of which can be
+[4400] captured by search engines some of which
+[4403] will never be captured by senator
+[4404] engines like the constants of your slack
+[4406] because of your notion your personal
+[4408] notes and so on and so forth I'm a big
+[4412] big big fan in reducing latency not in
+[4416] the individual primitives but in the
+[4418] combination of primitives and they think
+[4419] what Rome and Ocean are doing is they're
+[4423] reducing the latency to information
+[4425] capture so capture as opposed to search
+[4430] right like you go to Google with they
+[4433] capture your intent for search
+[4435] immediately but they're not capturing
+[4437] your input of data so when you think
+[4439] about like going around the world and
+[4440] very sympathetic to snapchats awesome
+[4443] with the glasses and like trying to snap
+[4446] things that happen in reality just super
+[4449] quickly I love that I love reducing the
+[4451] information capture latency and also
+[4455] that's one trend like let's make it so
+[4458] that like you know I can input a quick
+[4461] idea a dream even like this happens to
+[4463] me when I dream and I want to capture my
+[4464] drink really quickly so this tools are
+[4468] now becoming the first stop to that
+[4471] information capture process I don't go
+[4473] to like I don't know Google notes Google
+[4475] keep or whatever like and no one is
+[4477] really so that's one part and the other
+[4479] part is privacy and organizing the
+[4482] world's information cannot just have one
+[4485] big like pipe of public search
+[4488] associated with it it's like you only
+[4490] have a hammer for every type of nail
+[4492] right or or however that saying goes so
+[4496] my point being there Google has over
+[4498] optimize on public information now the
+[4501] world a is naturally very private or a
+[4504] very small circles of friends and so on
+[4506] or very small circles of collaborators I
+[4508] got your company so let's optimize for
+[4511] that too right like let's make searching
+[4513] your past searching your ideas capturing
+[4516] your ideas really quick and relating
+[4518] those ideas so Rome it's interesting
+[4521] things right because I Sergey and Larry
+[4524] were all about the you know information
+[4528] links of public information but who's
+[4531] building the links of private
+[4532] information so that's super interesting
+[4534] as well I mean there's just so much
+[4536] innovation to do in that space that you
+[4538] mentioned the URL is a primitive for
+[4540] collaboration I think very much the
+[4542] direction that we need to go and and
+[4544] explore this a lot more thank you
+[4549] amazing ok and then we have one last
+[4551] question so what are some nice so bad
+[4560] one by the way sorry headed ok thank you
+[4562] so for like someone who I grew up in
+[4568] South America and also moved to the
+[4571] United States and one still go down to
+[4576] the tech industry well that's that's a
+[4579] big one
+[4579] let me think really quick I like the
+[4583] idea of in general the place that you
+[4587] decide to move has to be based on you
+[4594] having a great overlap of values I say
+[4598] this a lot also with like the best way
+[4599] to hire for a company or the best way to
+[4602] apply for a company is that like
+[4604] symmetry of values that makes your new
+[4607] home feel like home and for me
+[4611] particularly was very easy because I
+[4613] loved that some of the values not not
+[4616] once I would perceive at least from my
+[4619] home in South America around innovation
+[4622] competition is striving for doing the
+[4627] best that you can some of those things I
+[4629] really loved about the u.s. resonated
+[4632] with me way more than the values that it
+[4633] had that I saw were being upheld in
+[4637] Argentina so that I think it's that will
+[4641] and identification that is really what
+[4645] enables the that translation rather than
+[4649] the logistics of it like oh I need to
+[4652] approach my visa process like this or
+[4654] that may be supposed to pour on it was
+[4656] really broken for me it's broken for the
+[4658] founder of zoom he had to apply six
+[4660] times but I think it that identification
+[4663] with what he were he wanted to develop
+[4666] himself and what he had to contribute
+[4668] can overcome any gap of that nature and
+[4673] that goes for any place that he would
+[4674] want to move right like I think I have a
+[4677] friend of mine that is from Brazil and
+[4679] he really identifies with the culture of
+[4681] Finland
+[4682] yeah I'm from Earth right and I talked
+[4685] to him and I was like how can you
+[4687] possibly like family and this coal and
+[4689] it's like this thing and you know but
+[4691] that's what he identified with so that
+[4693] was my that's my point is that you're
+[4695] gonna find a distance also the best way
+[4697] to approach the best place for you to
+[4700] work at is it's you making that
+[4705] demonstration of that compatibility that
+[4707] will come
+[4707] tell people to hire you right thank you
+[4711] very much
+[4712] awesome okay and so then to close this
+[4715] out Zak's founder a club is their final
+[4717] question yeah so it's actually kind of
+[4720] piggybacking off of Adrian um one thing
+[4723] I've been thinking a lot about recently
+[4725] is how do we keep America to be the
+[4727] place for most of the world's smartest
+[4728] people want to do their life's work and
+[4730] it's old it's it's notable that that you
+[4733] you moved across the world from Buenos
+[4736] Press to San Francisco and a lot of
+[4739] people try to do the same thing and they
+[4740] run up against many barriers so my
+[4743] question to you is if you ran a major
+[4744] city in America whether it's San
+[4746] Francisco or New York City or Chicago or
+[4748] something in that class and you could
+[4750] basically do whatever you wanted with
+[4752] the city change house change housing
+[4754] policy do whatever you want what would
+[4756] you do to build the best city for people
+[4758] to do their best work that's a great
+[4761] question because I have given this a lot
+[4763] of thought one of the things that I
+[4765] would do is I would make the process for
+[4769] incorporating new people into the system
+[4771] very very transparent and clear and
+[4774] efficient even if that means that you
+[4776] turn down a lot of people because it's a
+[4778] reality of the numbers of you know the
+[4781] asymmetry between number of applicants
+[4782] and so on but what gives people I think
+[4785] a lot of unnecessary anxiety is just
+[4787] like dragging the process and like it
+[4790] feels like a battle against bureaucracy
+[4792] and so on as I mentioned even in
+[4794] Argentina like I loved competing for a
+[4797] spot like I went to that school knowing
+[4801] that I wanted to compete with this first
+[4802] spot I think that's essential in a lot
+[4805] of systems what's what's tragic is when
+[4809] there is some frantic competition for
+[4812] some applicants and then other
+[4814] applicants have find loopholes into
+[4816] systems whether political or you know
+[4819] just cheating the system in different
+[4821] ways so I think I look at this very much
+[4824] like technology systems that we build
+[4826] with the knowledge that you know we're
+[4829] dealing with people and we're dealing
+[4831] with people's dreams and with people's
+[4832] livelihoods so it's definitely always
+[4834] gonna be a very very difficult subject
+[4837] to manage but I think we can make just
+[4839] very basic improvements with
+[4841] technology to transparency of the
+[4844] systems I don't want to throw in the
+[4845] blockchain word but I'm gonna throw in
+[4847] the blockchain we're like the reality
+[4849] this is right yeah like this is an open
+[4852] system and it should be America should
+[4854] be an open place for everybody and then
+[4856] that kind of system requires lots
+[4858] transparency and a thing we need to like
+[4861] eventually gravitate a were stuff like
+[4863] and yeah it's a it's an excellent
+[4868] question I think when it comes down to
+[4869] like where I see San Francisco today as
+[4871] well I think it's really challenging its
+[4875] I think I politically had the way that
+[4879] is being managed and the weight like the
+[4881] gaps of disparity and like rich and poor
+[4884] homeless and our homeless the taxation
+[4888] says there's so much that's wrong and
+[4890] that that needs fixing but I think to
+[4893] your point the most important value that
+[4894] it needs to be preserved is that people
+[4897] from all places in the world can
+[4899] identify with the value system can feel
+[4902] like they can be a part of it and then
+[4904] giving them the tools to make that
+[4905] possible thank you very much amazing
+[4910] well I first thank you so much um
+[4914] Guillermo for coming here and spending
+[4917] your time with us that was amazing and
+[4919] just like such an honor to have you
+[4922] for our final send-off I think we we
+[4926] should do a traditional hat club outro
+[4929] so everybody put your hands in and then
+[4932] we're gonna do it three two one and then
+[4934] we're gonna shout hack okay okay that
+[4945] was incredible thank you all right wow
+[4956] that was super cool like finally talked
+[4963] what y'all think I think that was my
+[4965] favorite AMA honestly yeah I love the
+[4973] questions as usual yeah I really like
+[4977] the like the that I go question about
+[4981] facing the school system that was that
+[4983] was especially good god I am a structure
+[4986] down yeah you guys I love this format I
+[4993] I loved like not feeling like we have to
+[4997] like just quickly jump between questions
+[4999] because there are a hundred people who
+[5001] want to ask questions you just like
+[5003] listen to him talk and it and he has so
+[5007] many great things to say like he had by
+[5009] far the best answer to the tabs versus
+[5012] phases question honey am i guess right
+[5016] answer is neither yeah cool um it sounds
+[5023] like I'm going to hand things off to
+[5024] melody alright wonderful so thank you
+[5032] all for tuning in
+[5033] coming this AMA I believe my outro
+[5038] instead of like staying on stream is
+[5039] actually gonna my outro is gonna play on
+[5040] straight live on stream instead of the
+[5042] zoom call but I just wanted you off
+[5048] alright so thank you all so much for
+[5051] tuning into our live stream today so in
+[5053] a few short moments we're gonna be
+[5055] showcasing some of our really cool
+[5056] projects that our students have built
+[5058] but first I wanted to tell you a little
+[5060] more about hack Club so hack Club is a
+[5062] 501c3 nonprofit and we rely on people
+[5067] like you to bring coding to high
+[5069] schoolers around the world so by
+[5071] contributing today at hack Club comm /
+[5074] donate you can help empower the next
+[5076] generation and bring our programs to
+[5078] even more high schoolers now as of right
+[5082] now we currently do not have any future
+[5084] AMAs scheduled but we have some exciting
+[5086] some more exciting game events in the
+[5089] pipeline so if you're in student hearing
+[5091] more about a future am a stream or
+[5094] events follow us on Twitter at
+[5096] hat club feel free to follow us on
+[5098] Twitter as well
+[5099] recordings of this ama will be up on our
+[5102] YouTube channel at hacked @ AF / YouTube
+[5104] and if you're a high school there we
+[5106] have a community full of other high
+[5108] schoolers in terms of interested in
+[5110] coding waiting for you so just if your
+[5113] high school or check out Hackl calm and
+[5115] join our community where you know you
+[5117] get to hang out with people like you so
+[5119] and if your high schooler or one of our
+[5122] community members Sam is working on a
+[5124] program that you might be interested in
+[5126] called Summer of Code Sam take it away
+[5131] if you don't already know my name Sam
+[5134] and on the Hot Club leader in Singapore
+[5135] this summer me Roshan and Neil all hat
+[5139] Club leaders running a song program
+[5142] called soul of Macon and I'd like to
+[5144] introduce it to you today the Goldstone
+[5146] making is delayed to get some awesome
+[5148] project experience with the assistance
+[5150] of your very own personal mentor it's a
+[5152] six-week program and where you go from
+[5154] the idea to a complete project and we're
+[5157] open to anything even remotely related
+[5159] to technology and stem every participant
+[5162] in their own industry expert mentor to
+[5165] support them every step of the way
+[5166] you'll be paired with a mentor who share
+[5169] similar interests you so if you want to
+[5171] make a video game that's awesome you'll
+[5173] be paired with someone who's experienced
+[5174] in game design you'll have weekly get
+[5176] your millions of your mentor as well as
+[5178] being able to message your mentor
+[5179] throughout the week if you don't already
+[5182] have it you'll be able to redeem the
+[5183] hack pack and whilst we can't make any
+[5186] promises if you need something else to
+[5188] make your project possible let us know
+[5190] in your application and we'll do our
+[5191] best to get it for you once your project
+[5195] is complete we'll promote it to the rest
+[5196] of the world as well supporting you with
+[5198] your own marketing efforts to get the
+[5200] word out about the amazing things you
+[5201] built
+[5202] we'd really love to have you join us and
+[5205] we're excited to see what you make so
+[5206] apply now and submit your idea before me
+[5209] if they first it's completely free and
+[5211] we're trying to accept as many people as
+[5213] possible so thank you everyone enjoy the
+[5216] rest of the string and we can't wait to
+[5217] see what do you make this summer thank
+[5220] you
+[5225] thank you so much Sam so again if you're
+[5227] interested in our summer our making
+[5229] program check out summer dot hat Club
+[5231] com next up we're gonna be sharing some
+[5235] real super cool products our students
+[5237] have built so sit back relax and enjoy
+[5240] Shep showcase
+[5244] [Music]
+[5262] the
+[5264] [Music]
+[5319] [Music]
+[5321] but it's deeply cellphone
+[5336] [Music]
+[5355] you
+[5356] [Music]
+[5384] I had club my name is Ruth Aguadilla and
+[5394] I'll be presenting Kovac 19 by the
+[5397] numbers aka and email updater is to
+[5400] provide people in my area
+[5401] clovie 19 statistics so that they'll be
+[5404] updated a few facts about me is that I
+[5407] live in Long Island New York and I'm
+[5410] from Africa and I really like machine
+[5413] learning and coding obviously I hope you
+[5416] enjoy my video bye
+[5421] Sokol 5:19 by-the-numbers starts with my
+[5425] google form that I created basically to
+[5428] collect data from users who would like
+[5430] to receive email updates we are
+[5433] currently trying to expand to SMS
+[5435] updates which is why I have that on the
+[5437] forum but right now we're only doing
+[5439] email updates so it provides information
+[5444] on cases recoveries hospitalizations and
+[5447] a bunch of other information such as
+[5449] that and in the forum you basically
+[5451] provide you information like I said name
+[5453] age just for just demographic
+[5457] information just for me to understand
+[5459] and you obviously provide your email and
+[5462] notifications if you would like then to
+[5467] show you the back end of what I do
+[5469] it's basically Python code that sends
+[5473] web scraped data from Wikipedia and
+[5477] other covert 19 tracking websites and
+[5480] puts all that data into an email and I
+[5484] basically put all that data I scraped
+[5486] into a nice clean HTML file so that when
+[5490] I send it it looks like a nice table I
+[5493] also made it pink just because I mean
+[5495] that's one to make it look cute
+[5498] so as I'm scrolling down I basically
+[5501] have a bunch of more Python code and as
+[5504] I said before it sends the email so once
+[5507] it sends the email it should look a bit
+[5509] like this
+[5510] as I typing and I will click
+[5518] and voila it looks like that I wanted to
+[5522] have it in table form so it looked more
+[5524] concise and showed the data in a very
+[5528] fun way I didn't want to look depressing
+[5535] ten years ago I was in quarantine for a
+[5538] month due to a rare disease during that
+[5540] time receiving cards from friends and
+[5543] family meant the world because it showed
+[5545] that I wasn't alone learning that
+[5548] thousands of patients and health care
+[5550] workers are experiencing isolation on
+[5552] the frontlines inspired me to create
+[5555] notes for support how it works is you
+[5558] first go to notes for support org and
+[5560] then you can choose to send a message to
+[5562] a patient or a healthcare worker next
+[5567] you send in a note of encouragement
+[5570] choose a hospital location and click
+[5573] send I then read through every single
+[5577] message and get them categorized by text
+[5580] link and location the notes are then
+[5584] printed out and sent across 30 hospitals
+[5587] in 12 states the hospitals then receive
+[5592] the notes and distribute them among
+[5595] patients and staff so far we have set
+[5599] notes to over 2,000 individual patients
+[5603] and health care workers I've gotten
+[5607] several responses from hospitals saying
+[5609] that these notes are invaluable to their
+[5612] patients and staff and that their is so
+[5615] deeply touching and encourages them to
+[5617] fight on in the midst of this difficult
+[5620] time after every shipment and response I
+[5624] post them on the blog for our note
+[5626] writers to see their tangible impact on
+[5629] the lives of thousands being a part of
+[5632] hat club and learning by creating has
+[5635] been a fundamental step stone to this
+[5637] project I can't wait to see the many
+[5640] more lives we will transform thank you
+[5646] this is Food Bank support a web
+[5648] application that connect
+[5649] those in need with food pick up
+[5651] locations a user begins by entering
+[5654] their location let's say I'm in El Paso
+[5656] Texas this opens up an interactive map
+[5661] with the nearest food bank locations or
+[5664] food pickup locations there's
+[5667] information such as the distance from
+[5671] the inputted address the address of the
+[5675] location itself and when provided
+[5680] there's also breakfast times lunch times
+[5683] and also contact information I started
+[5687] making this during the kovat Global
+[5690] hackathon after learning that many are
+[5691] struggling to get food because of the
+[5693] crisis especially students who depend on
+[5696] schools for their meals normally food
+[5699] banks published the data themselves but
+[5701] due to Kovan timings have changed and
+[5703] sinking all the information is a
+[5704] nightmare during the hackathon I also
+[5708] met some talented developers who joined
+[5710] the team and worked on data collection
+[5712] up to date we've collected tens of
+[5715] thousands of records all the data you
+[5720] see on the website here was collected
+[5722] through web scraping and volunteer input
+[5725] and we have since partnered with
+[5727] national organizations like no Kid
+[5729] Hungry and Hunger Free America to
+[5732] exchange this data going forward I hope
+[5734] to keep it as up-to-date as possible
+[5736] we're working on automating the web
+[5739] scraping so that it can provide
+[5740] real-time updates of any of the
+[5742] information changes I hope that this
+[5744] tool can help people find the food they
+[5747] need alright so that concludes our live
+[5754] stream today thank you all so much for
+[5756] tuning in remember to follow us on
+[5758] Twitter and twitch and we'll see you
+[5761] again soon
+[5770] [Music]
+[5813] [Music]
+[5818] [Music]
+[5845] [Music]
+[5923] [Music]
+[5970] [Music]

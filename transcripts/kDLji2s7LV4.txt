@@ -1,0 +1,1239 @@
+[0] [music]
+[5] Today I'm here with Max and Rahul from
+[6] Gum Loop. Um, thanks for coming back to
+[9] IC.
+[9] >> Thank you for having us.
+[10] >> I'm really excited for this
+[10] conversation. You guys are one of the
+[12] most successful yet kind of unknown
+[15] companies uh from Win24. Tell us what
+[17] Gum Gumloop is.
+[18] >> Gumloop's the agent builder that a lot
+[20] of companies like Shopify and Gusto and
+[22] Instacart uh use so that everyone can
+[24] build agents and share them across the
+[26] business while it can manage and control
+[28] that data. So kind of like the holy
+[30] grail of agents like this is what
+[31] everyone is talking about what they want
+[32] to actually actually build like this is
+[34] probably one of the more common
+[35] applications I guess we get from Twice
+[37] today but you actually built it and
+[38] you're deployed in like many of the
+[40] biggest companies.
+[41] >> Yeah it's definitely a crowded space
+[42] because it it feels like obvious that
+[44] someone has to solve this problem.
+[46] There's definitely a bunch of players
+[47] that are doing a good job but we're just
+[48] trying to
+[49] >> be one of the leaders be the Yeah. And
+[52] you applied to IC for uh winter 24 uh
+[55] you called agent hub at the time
+[57] >> and then I switched to gum loop.
+[59] >> Yeah.
+[60] >> Um what was this product when you
+[62] applied?
+[63] >> Yeah, it is ironic that we called
+[64] ourselves agent hub back then because
+[65] now we are an agent hub uh but there was
+[68] a bunch of everyone thought we were a
+[69] real estate agent company because agents
+[71] weren't common uh right
+[73] >> back in the like back then
+[74] >> but we were a workflow automation
+[76] platform. So same mission of like
+[78] automating tasks but the models weren't
+[80] good enough back then. So we just made a
+[81] visual builder and people could define
+[83] their their workflow step by step and
+[85] then we added agents and that was kind
+[86] of like the hockey stick moment where
+[88] like anyone could build it on the
+[89] platform and usage kind of skyrocketed
+[91] but um same mission since the beginning.
+[93] >> How does gumlook work like how would you
+[95] actually use it?
+[96] >> Yeah. So basically you can go onto the
+[98] platform and then create an agent um and
+[101] add
+[102] >> how do you create it?
+[102] >> You create an agent in the onboarding
+[104] but you can also just like click the
+[105] create agent button and then you're
+[106] presented with like um the kind of
+[108] standard like chat interface. Then you
+[110] have like a set of connectors that you
+[111] can kind of like pick and choose all the
+[112] apps that you work with. Um you can
+[114] start talking to the agent right away to
+[116] get work done or you can add the agent
+[118] to your Slack workspace, Microsoft
+[119] Teams, uh wherever you work, we kind of
+[121] bring the agents to you.
+[122] >> What's the most like what's some good
+[124] examples of common agents that people
+[126] make once they have the your UI?
+[127] >> They tend to be like um team specific.
+[129] So the we the sales team at pretty much
+[132] all of our customers for example will
+[133] have like a sales agent that's connected
+[135] to like their call recording software,
+[137] their CRM, a bunch of enrichment tools,
+[139] web search tools, and it has a bunch of
+[141] skills for like how they like to do
+[143] business and how they want to manage
+[145] like opportunities and analyze calls and
+[147] uh it it becomes like a co-orker for the
+[150] sales team that the sales team uses and
+[152] relies on. So they're pinging it in
+[153] Slack every day. They're CCing it on
+[154] email threads. They're having it set up
+[156] next steps, clean, dduplicate accounts,
+[158] like all of the tedious work that a
+[160] salesperson would be doing. They built
+[161] an agent to do that for them and it's
+[163] it's like their little co-pilot.
+[164] >> Does it replace the software tools that
+[167] they currently using or is it kind of
+[168] interacting with them? Like how does it
+[170] work with say Salesforce or something
+[171] like that?
+[171] >> Yeah, we like to be the connector
+[173] between all of your tools. Uh so
+[174] sometimes it actually does replace like
+[176] vertical SAS you might have procured for
+[178] a lot of our customers. They're like
+[179] canceling contracts to just use an agent
+[180] instead. But often times we're like the
+[182] the gum we like to say between your data
+[184] different data connectors. So you're
+[186] using all the tools that you love but
+[187] you're bringing them into one place and
+[189] giving it to like this this like alien
+[192] like little co-pilot that can just do
+[194] stuff for you in the background.
+[195] >> A lot of companies are developing
+[196] internal tooling. Their own engineering
+[198] teams are building agents and we kind of
+[200] fit right into that ecosystem as well.
+[202] Like we provide a pretty robust SDK and
+[204] API. So pretty much anything you can do
+[205] through the UI in Gum Loop you can do
+[207] via API or SDK and we have like hundreds
+[209] of integrations exposed via MCP servers.
+[211] And so a lot of our customers are
+[213] building internal tooling and
+[215] infrastructure using Gum Loop as a base
+[217] layer for their AI.
+[218] >> And it seemed like you were one of those
+[219] companies where basically you had this
+[220] idea before models were good and once
+[222] model got good this just like this
+[225] product got like infinitely better.
+[227] >> Is that what happened? Yeah, I think
+[228] that was definitely one of the
+[229] strategies at first which was like the
+[231] models were not good enough to make
+[233] agents work and so we kind of met the
+[235] models where they were and that's why we
+[237] started with this workflow builder and
+[238] kind of like minimized the use of AI and
+[240] just had it in the key area that it
+[243] needed to be used for like a giant
+[244] workflow. Everything else was standard
+[246] infrastructure that made things actually
+[248] reliable and economical at a point where
+[250] the models weren't good enough. But now
+[251] models are good enough to automate tasks
+[253] completely end to end. So you don't
+[254] really need this workflow manually built
+[256] out. the agent can just do it by itself.
+[258] >> Who were the first users? What were they
+[260] building?
+[261] >> There was like an initial wave of like
+[263] PLG growth. So like individuals, indie
+[265] hackers, people like just having really
+[267] tedious tasks before AI could really
+[269] automate anything.
+[269] >> Solo like solo.
+[270] >> Yeah, exactly. Like I think during our
+[272] YC interview, the people the use case we
+[274] quoted was someone transcribing their
+[276] Dungeons and Dragons session. Uh that
+[278] was like innovative at the time. The
+[280] fact that they could talk for two hours
+[281] and then have a transcript and talk like
+[283] send it around to their the attendees.
+[285] They were using a gum loop workflow for
+[286] that. But then little use cases like
+[288] that. And then all of a sudden we had
+[289] business users like I remember this
+[292] Australian health tech company was using
+[294] us to automate a lot of their research
+[296] just by like pulling from the web and
+[298] like regulating that data and putting it
+[299] in certain places. And then we realized
+[301] like the enterprise customers are
+[303] willing to pay a lot more. Their
+[304] problems are a lot more serious. Um and
+[307] like the value we provide them is just
+[309] so much deeper.
+[310] >> How did that realization come about?
+[312] slowly over time it I think we always
+[315] wanted to be the PLG tool that like your
+[317] your mom would use and like that your
+[319] coworker would be using but we just saw
+[321] like when you were giving the pitch to
+[322] different people like the people who
+[323] have a thousand employees and they need
+[325] like a layer to help them all automate
+[327] and they deeply need security and
+[328] observability and access control and all
+[331] of like the boring stuff behind
+[332] automation like they start their
+[333] eyebrows raised higher than like the uh
+[335] >> but I'm assuming you didn't get to that
+[337] pitch right away there was some some
+[338] step function to get there what that
+[340] what was that like
+[341] >> I think I took
+[342] 1100 customer calls the first year. Uh I
+[345] was like top.1% of cal.com users
+[347] >> and uh it was iterative like every call
+[350] you'd kind of hone in on what is getting
+[351] someone excited what makes them nod
+[353] their head and it all trends towards
+[355] like what we've built now which is the
+[356] enterprise platform
+[358] >> and when the product wasn't good back
+[359] then we really had to be super involved
+[362] with customers and help them to get
+[363] something into a working state right so
+[365] we were like very familiar with their
+[366] use cases and what exactly what they
+[368] were they were doing and a lot of these
+[369] solopreneurs or like these consulting
+[371] type people it was just really hard to
+[373] make things work for for them and even
+[375] when we did make things work for them,
+[376] it wasn't generating that much value.
+[379] But when we saw, you know, like this
+[380] Australian health tech firm, when we
+[382] made their use case work and we s saw
+[384] how much money it was like making them
+[385] and saving them, we were like, okay,
+[387] this is like obviously the natural
+[388] direction of things, but I don't think
+[390] it was super clear at the beginning.
+[391] >> Instacart was your first real
+[393] enterprise. How did that happen?
+[395] We had one power user there who was like
+[398] obsessed with gum loop and uh started
+[400] bringing us he brought us into a slack
+[402] channel and then he was kind of like
+[403] selling the tool for us internally like
+[406] starting all these threads because he
+[407] was the one teaching everyone at
+[408] Instacart how to like use AI tools and
+[410] how to automate tasks. I think he was he
+[411] was using every tool in the market to
+[413] like show people how to be more
+[414] efficient because he saw the light of
+[415] like what AI was capable of before most
+[417] people. Um, and then we ended up hiring
+[419] him as one of our first employees and he
+[421] helped us like understand what
+[422] enterprise sales means and how to talk
+[424] to a procurement team and how to price
+[426] and
+[426] >> what a champion was.
+[428] >> Exactly. What how to identify a champion
+[429] and and then that led to our next logo
+[431] and next logo and then um people at
+[433] these big companies go to other
+[434] companies and if they love your tool
+[435] enough they'll bring it with them. So we
+[437] just had this like natural growth uh
+[438] that happened in the early days.
+[440] >> Were you the best product? Were you like
+[442] the just first product? like how how did
+[443] you grab like have a foot foothold in in
+[447] big tech companies that other companies
+[448] don't have? How did that happen?
+[449] >> I think for the workflow automation
+[451] builder, we genuinely were the best
+[452] product. We're by far the easiest
+[454] product to use and we our product
+[455] allowed you to do things that you
+[456] couldn't do on other platforms and a um
+[458] some of the people Aaron who's our head
+[460] of community and education uh he's
+[462] taught a bunch of these no code tools
+[464] and the one thing that he always said to
+[465] us was um the reason that Gum Loop is so
+[468] capable is cuz you guys did not know
+[471] what any other product in your space did
+[473] or looked like and we kind of built
+[475] things from like first principles and so
+[477] the way our thing worked was just a
+[479] little different than anything else and
+[480] it made it so much more powerful and we
+[482] realized quickly why other tools don't
+[484] work that way because it's actually
+[486] really hard. The problems that we were
+[488] solving were really hard.
+[489] >> Yeah. Tell us about these things. So,
+[490] so, so when you sell to a big
+[492] enterprise, there are things that they
+[494] require that small companies don't. Like
+[496] for someone who's like watching this and
+[498] want to sell to enterprise, what are
+[499] those things specifically?
+[500] >> Yeah, I think stuff like role-based
+[502] access control, SKIM, SAML, um,
+[505] [clears throat] audit logging, all that
+[506] type of stuff is like um,
+[508] >> why do big companies ask for that?
+[510] There's just so much at stake when
+[512] you're a large company. Like you're a
+[513] publicly traded establishment that has
+[515] like sensitive data and all these
+[517] requirements and like restrictions with
+[518] what you can do. Uh so you need to make
+[520] sure that if you're going to give 10,000
+[521] people at your company a tool, they're
+[523] only able to do the things you want them
+[524] to be able to do. And certain users, it
+[526] gets infinitely detailed like how
+[528] they're like this these 500 users need
+[530] to be able to do these 10 things. These
+[531] users are actually an outsource team
+[533] that shouldn't have access to any data.
+[534] We need them to have restrictions on
+[536] their accounts. We need to use our own
+[537] API keys. We need to host it in our own
+[538] cloud. We need to have audit logging for
+[540] every tool. We need to have APIs to get
+[542] that into our data lake. Like it never
+[544] ends. Uh but that's like the value we
+[546] have to create before the end user can
+[548] have that wonderful moment of like, oh,
+[549] I connected data and it just worked.
+[551] Like there's so much depth before they
+[553] can use it.
+[553] >> Yeah, it can be frustrating sometimes
+[555] because they want to disable so much
+[556] functionality that we worked so hard to
+[558] build. But uh yeah, I guess that's what
+[560] it takes. And then when they warm up to
+[561] us, we just enable more and more things.
+[563] >> How did you figure out what all these
+[564] things are and how to h what they need?
+[567] because like you can't show up and be
+[568] like, "Oh, we don't have these things.
+[570] Let's go build them." I'm assuming yeah,
+[571] you have to figure out how long
+[572] >> there's a it's just conversations with
+[574] customers, like hundreds of
+[575] conversations and um you get a sense
+[577] after building for a while of like the
+[579] direction like what feels directionally
+[581] correct when they're asking for a
+[582] feature and what you should just ignore.
+[584] Most of the time like everything that
+[585] our big companies are asking for is
+[587] something other big companies would want
+[588] at some point. So, we build it. Uh, and
+[590] I think like the level of care you have
+[592] and the speed at which you respond to
+[594] their like the amount you feel like a
+[596] partner to them and the speed that you
+[597] ship what they want it really makes a
+[599] difference.
+[599] >> One of the things I've noticed with
+[601] companies and I remember we had these
+[602] conversations early on is if you have a
+[604] tool that you can do anything people
+[606] don't really know where to start.
+[607] >> Yeah.
+[607] >> How have you solved that today and what
+[609] are the most common thing that people
+[611] use your tool to do?
+[612] >> Yeah, that's a good question. So, I
+[613] remember when we met you for the first
+[615] time, when you saw the product, the
+[616] first thing that you said was like, "You
+[618] guys need templates, like pre-built use
+[620] cases to show people what to do." And
+[622] and then we came back the next week with
+[624] like three different templates. And then
+[625] you were basically like, "Guys, that's
+[627] not what I meant. You need like a
+[628] hundred of these things." And so, we
+[629] built this like really large template
+[631] gallery. We kind of do similar stuff
+[633] like that today in which we have like
+[634] use case pages with like pre-built
+[636] agents and that kind of shows gives
+[637] people an idea. Case studies help. We do
+[639] workshops with companies and we're like
+[642] tell us if you could wave a magic wand
+[643] like what would you automate? We get
+[644] like 20 hands raised and then we'll help
+[646] them all automate their own things and
+[647] then that sparks more ideas.
+[648] >> You handhold companies through the
+[650] onboarding process to kind of build out
+[651] the initial
+[652] >> sometimes they like come to us with like
+[653] 10 ideas and they're like I already did
+[654] five. These are five more. I need like
+[656] these features shipped before I can do
+[657] that. And we're like okay consider it
+[658] done. Um but sometimes it requires like
+[660] fully inspiring a team.
+[662] >> Let's go back to like earlier prior to
+[664] doing YC how do you guys meet and decide
+[666] to start coming together? There was an
+[668] AI conference going on in Vancouver and
+[670] I was presenting what I was working on
+[671] at the time which was like a
+[672] personalized AI tutor for students and
+[674] Max was presenting an early version of
+[676] Gum Loop and uh what he was building
+[678] sounded really cool. It sounded really
+[679] promising. I thought it had real
+[680] potential to work and so I basically
+[682] like asked him like if he needs a
+[684] co-founder. Well actually he said
+[686] there's a couple caveats to this story.
+[688] There's one the conference is a very
+[690] generous term. It was like 30 people in
+[691] a room uh just like talking about AI
+[693] before like right when the GPT API came
+[695] out. Basically, my co-founder had quit
+[697] that morning. The guy I was working
+[699] with, who I met on YC, co-founder
+[700] matching.
+[701] >> And he was like, "This idea won't work.
+[703] I need someone more senior." Like this
+[704] whole laundry list of reasons. I believe
+[705] the no, but not the why. I learned that
+[707] after working with YC. But I went to
+[709] this meetup to take my mind off things
+[711] cuz I was so like distraught and I'm
+[712] like, I'm screwed. Basically, there's a
+[713] bunch of other things that happened in
+[714] the background that made me more screwed
+[716] at the time.
+[717] >> Rahul was demoing with his co-founder.
+[719] Uh, and that person ended up joining as
+[721] our founding engineer like a year later.
+[723] But um the whole video of us interacting
+[725] for the first time is captured on my
+[727] Twitter. I was like, "My co-founder quit
+[728] this morning. I'm looking for another
+[729] one." And then the next person to speak
+[730] is Rahul asking about GPT functions.
+[732] Yeah. Which had just come out that day
+[733] and he's like, "Have you considered
+[734] those?" And I'm like, "No, I don't even
+[735] know what that is."
+[736] >> But it was very serendipitous. And then
+[738] we got drinks the next day and he came
+[740] with like his laptop that was duct taped
+[742] together
+[742] >> [laughter]
+[742] >> uh with like a Google doc of like 50
+[745] questions because the product was open
+[746] source at the time. So he read all the
+[747] code before AI could just answer
+[749] questions about like a codebase. and he
+[750] had like very detailed questions about
+[752] the framework that I had built. So I was
+[753] like this guy's pretty serious. And then
+[755] we worked in the co-working space
+[756] together for like a month.
+[757] >> And you were both in Vancouver.
+[759] >> Yeah. In Canada.
+[760] >> And then from there to applying to YC.
+[763] >> Yeah. I think we always wanted to apply
+[764] YC. Max knew way more about it. He had
+[766] applied to YC three times in the past. I
+[769] had never applied to YC, but we knew
+[771] what YC was. And so
+[773] >> I'd applied with very different ideas
+[775] previously. And I'm actually thankful in
+[776] hindsight I didn't get in because it
+[778] would have put me down the wrong path
+[779] like working on ideas that weren't the
+[781] right fit.
+[782] >> Uh but yeah, this was my fourth time
+[783] applying. And um we worked in a
+[786] co-working space like for 12 hours a day
+[788] every day for a month and a half I think
+[790] until we applied to YC.
+[791] >> And at that point we had like people who
+[792] love the product a very small number of
+[794] people who love the product but like
+[795] they got value out of it
+[796] >> and we got lucky and interviewed
+[799] >> and how I see we we've released
+[801] something called uh quota master
+[803] recently is open source. We've built our
+[804] internal company brand at YC.
+[807] >> I am like this is the biggest software
+[808] tool we ever launched at YC internally.
+[810] Like I use it all the time
+[811] >> and I'm assuming that your customers are
+[813] kind of like this it might be the
+[814] biggest thing that they ever seen
+[815] internally in terms of productivity.
+[817] However, it takes just like hard to get
+[819] people to start using things. I'm I
+[821] imagine that you also built up this
+[824] knowledge and how to basically make a
+[826] company AI native that others don't
+[829] have. And this is sort of like at the
+[830] top of the list of every management team
+[832] right now is like how do I get my
+[833] company to be become AI and talk about
+[835] that like like
+[837] >> this is like the holy grail again in
+[838] like the trans transition or trans
+[840] transformation of AI.
+[841] >> I think um that was the first chapter
+[843] like we definitely built up a lot of
+[844] expertise around making a company AI
+[846] native and use AI for as much as you can
+[847] and then there's the second chapter that
+[849] comes immediately after that where
+[850] you're like okay they're using it for
+[851] too much and we need to like actually
+[852] govern and moderate and make sure it's
+[854] being used in a productive way. So we've
+[855] been we've gone through I think we've
+[857] built expertise in both but tricks for
+[859] making your company AI native bringing
+[860] agents to where they're already doing
+[862] work has been the biggest unlock for us.
+[863] So like if you have to go to yet another
+[865] platform and use the AI system there
+[868] there's friction there. But if you bring
+[869] it to like the the platform they're
+[871] already spending eight hours their day
+[872] in you they'll natively adopt the tool.
+[874] I think bringing it to a place where you
+[876] can see other people use agents and see
+[878] how they use agents. I think like that's
+[879] one of the things that Gum Loop does
+[881] really well compared to a lot of other
+[882] agent platforms is like this aspect of
+[884] collaboration aspect of like sharing
+[885] agents, multiple people talking to the
+[887] same agent, that kind of multiplayer
+[889] portion of it. And being able to see how
+[891] your co-orker who does literally the
+[892] exact same job as you interacts with an
+[894] agent in a public Slack channel
+[896] naturally lends yourself to using agents
+[899] in that way basically.
+[900] >> Got it. Can you talk about how you use
+[901] Gumloop internally at Gum Loop?
+[902] >> Yeah, I think everyone on every team
+[904] uses it for everything. The first like
+[907] breakthrough agent that changed the way
+[908] we work was this one we call Heimdoll
+[910] which is connected to every single data
+[912] source at the company.
+[913] >> Um and it has a Slack channel that was
+[915] just ask Heimdoll originally but now
+[917] it's like in every single channel across
+[918] the entire company and you can ask it
+[921] anything like get me all the users that
+[923] signed up yesterday morning that are in
+[924] this time zone that have this role and
+[927] uh aren't in this certain ca it'll like
+[930] work for 20 minutes and get you that
+[931] answer. we don't need like a data analy
+[934] analysis or analyst
+[935] >> analyst
+[936] >> um we just have like Heimdoll answering
+[938] every customer related question and then
+[940] that spawned a bunch of ideas like the
+[942] sales team went off in their direction
+[943] and they have sales loop which automates
+[945] everything in the sales process so they
+[946] can just focus on talking to customers
+[948] our customer success team has uh success
+[951] loop which like the health score of
+[953] every single customer is like diligently
+[955] tracked they get notifications if
+[957] anything's ever going wrong if any usage
+[958] is skyrocketing or dipping like
+[960] everything that they were spending their
+[961] time monitoring is handled for them.
+[963] >> Yeah.
+[963] >> Our education lead, we have cohorts
+[965] every two weeks where like he teaches
+[966] hundreds of people how to build agents.
+[968] The entire process is automated from
+[969] like people signing up, the follow-ups,
+[971] the uh even the editing of the videos
+[973] when they demo on Fridays and show their
+[975] agents fully automated so that the clips
+[977] get sent to those customers and they can
+[978] share it around their companies.
+[979] >> Throughout this process, was there a
+[981] moment when you felt we have PMF, this
+[983] is work working like like was there
+[984] something like very visceral that you
+[986] remember or was this more gradual? I
+[989] think there's been a bunch of moments
+[990] like that, but I remember the first one
+[992] uh felt like our first conscious thought
+[994] about whether this is something that
+[995] people actually want was when they were
+[997] using our initial workflow builder early
+[999] early days and it was awful but they
+[1001] were using it anyways,
+[1002] >> right?
+[1003] >> And we're like we're actually I've built
+[1004] a lot of bad software before that no one
+[1006] used and for some reason people were
+[1007] like spending five hours of their
+[1008] afternoon like building a workflow on
+[1010] our platform and we're like oh this is
+[1012] actually so painful for people that
+[1013] they're going to they're willing to put
+[1014] up with how bad this is. And um I think
+[1018] that feeling of like wow people are
+[1019] really investing their time has hit us
+[1021] every couple months. But I don't know if
+[1023] you have anything else.
+[1024] >> Yeah, I think like when we realized that
+[1026] certain users were spending like eight
+[1028] hours a day, 10 hours a day using Gum
+[1030] Loop building stuff like automating
+[1032] their entire jobs or like the job of
+[1034] their entire team. That was I think big.
+[1037] It was when we realized like yeah our
+[1039] users are spending way way more hours
+[1041] than we are in gum loop you know
+[1043] building stuff and like some of them
+[1044] know how to use the platform better than
+[1046] you know we do in some ways. I think
+[1048] that for me one of the big moments was
+[1049] like the first day we launched that
+[1051] Shopify because it was kind of like um
+[1054] we basically just like went out to like
+[1056] 4,000 people on the same day.
+[1057] >> I think it was 8,000 people.
+[1058] >> 8,000 people on the same day.
+[1060] >> They just got access in one day. just
+[1062] seeing people kind of like pick up and
+[1065] like use the tool and like play around.
+[1067] It was like it was a super cool moment
+[1069] and people were just like figuring
+[1070] things out and like we didn't have to I
+[1072] think before then it was a lot of like
+[1074] sitting down with customers and like
+[1075] building stuff out out for them and like
+[1077] a lot of handholding but then yeah I
+[1079] don't know people just started building
+[1081] stuff on their own which was cool.
+[1082] >> Yeah.
+[1082] >> How did you get Shopify? I I I remember
+[1084] Toby writing the AI native sort of like
+[1086] sort of like his manifesto almost. Uh it
+[1089] sounds like could not be a better
+[1090] customer than them. How how did you get
+[1092] >> It was actually that was the one of the
+[1093] word of mouth customers where like
+[1094] someone from Instacart had influence at
+[1096] Shopify and just put it on their radar
+[1097] and then they evaluated the tool. I
+[1099] think they um like rolled out a bunch of
+[1101] tools the same week like different
+[1102] automation tools and they just saw
+[1104] what's stuck.
+[1105] >> Um and then they ended up investing in
+[1106] Gum Loop after because they they really
+[1108] liked
+[1109] >> the roll out. Um and they've been a
+[1110] great partner since.
+[1111] >> Got it. What percent of employees of
+[1113] these companies are using Gum Loop on
+[1114] like a daily weekly basis?
+[1116] >> It varies a ton by company. Sometimes
+[1118] it's like extremely concentrated usage
+[1119] with one team, like everyone using
+[1121] agents to automate this one function.
+[1122] Sometimes it's like wall-to-wall
+[1123] deployments with like light usage on
+[1125] some teams and deep usage on others.
+[1127] Sometimes people are using Gum Loop, but
+[1128] they don't even realize it. Like they're
+[1131] getting all these reports and stuff so
+[1132] that they can do their job better or
+[1133] like the prep for a customer call or
+[1135] something, but it's it's all gum loop in
+[1136] the background. So there's like it's uh
+[1139] completely different patterns at every
+[1140] company. But for the most part, it's uh
+[1142] everyone has access. So like we never
+[1144] charge per seat. I never want someone to
+[1145] like second guess whether they should be
+[1147] using this tool or not. It's just usage
+[1149] based. Um so whoever wants to start
+[1151] automating can just turn to Gum Loop and
+[1153] figure it out.
+[1153] >> That's not how you get started though.
+[1155] When did you switch to usage based
+[1156] pricing compared? Initially it was seat
+[1158] based.
+[1158] >> Yeah, we had a limit on the team plan
+[1160] for seats.
+[1160] >> How did pricing develop over the years?
+[1162] >> Yeah, I think when we first started we
+[1164] had uh a $20 a month plan and a $40 a
+[1166] month plan and that's what we went into
+[1168] YC with. And uh I guess we picked those
+[1170] numbers cuz like chat GBT had something
+[1171] similar and that was kind of like all we
+[1173] knew is like products that what we like
+[1174] to use were in that price range. But
+[1176] then we quickly realized that our
+[1177] pricing was way too low and that the
+[1180] value that we were providing business
+[1181] customers especially was far far greater
+[1183] than the amount what we were charging.
+[1184] So we basically like doubled our pricing
+[1186] three times during the batch but kept on
+[1187] those same plans. And at first we just
+[1189] included a set amount of usage but then
+[1192] we started a credit based system but now
+[1194] our recent pricing model is even
+[1197] completely different than what we had
+[1198] before.
+[1198] >> Yeah, it's still credits but it's very
+[1200] transparent. Uh so we sell tokens at
+[1202] cost, we sell the compute at cost and
+[1204] the APIs at cost and then we charge an
+[1205] orchestration fee on top of it. Very
+[1207] similar to open router. It just feels
+[1208] like if you're going to be in this build
+[1210] versus buy debate to be considered a
+[1212] tool that is in like the build camp.
+[1213] Like when people say they're going to
+[1214] build something internally, they're
+[1215] going to use Burcell and they're going
+[1217] to use Cloudflare and they're going to
+[1218] use like these pieces of infrastructure
+[1219] that help people build. Yeah.
+[1221] >> But the pricing being transparent is
+[1223] such an important part of being in that
+[1225] group. Uh and we want to like most of
+[1227] our customers are deploying it in their
+[1228] own cloud. It feels like internal
+[1229] infrastructure and it could be part of
+[1230] that build camp. But if you have opaque
+[1233] pricing that'll never happen like you'll
+[1234] always be the enemy.
+[1235] >> So we we changed our pricing recently to
+[1237] just be like very clear about where
+[1239] where GMO's value is and what our margin
+[1241] is. And it's totally agnostic then like
+[1243] if somebody wants to use claude or has
+[1244] an agreement with open AI or wants to
+[1246] route everything through their brain
+[1247] trust or their an uh Amazon bedrock
+[1250] proxy or something like that they can
+[1251] totally do that just using gum loop as
+[1253] well.
+[1253] >> What's an investor meeting like for you
+[1255] today like like is it just a demo like
+[1257] maybe like the CDNA
+[1258] >> I I I learned pretty quickly that with a
+[1260] tool like ours showing the value with a
+[1263] demo is 100 times more impactful than
+[1264] just like talking about what we do. Like
+[1266] even in this discussion now people are
+[1267] probably rolling their eyes when we're
+[1269] like yeah we automate work and it's so
+[1270] amazing. They're like, "Yeah, everyone
+[1271] does." But like if you see it working,
+[1273] you you start to believe it. So now I I
+[1275] exclusively just open the product and
+[1277] show people that what it can do or give
+[1279] them access so that they can start using
+[1280] it. That speaks way louder than like a
+[1282] pitch deck.
+[1283] >> You raised three rounds of funding uh
+[1285] well after see first round and then uh
+[1287] Nexus and then benchmark. You talk a
+[1289] little about how they all came came
+[1291] around and sort of like what you've
+[1293] learned about fundraising. the first
+[1295] round with first round was uh the most
+[1298] like that's the only time we actually
+[1300] fundraised.
+[1300] >> Yeah.
+[1301] >> Um we did the whole process like what YC
+[1303] helps you get set up to do like a week
+[1305] of meetings and talking to every VC.
+[1307] >> Extremely tiring. Uh and I think they
+[1309] were the best possible firm we could
+[1311] have went with like they've been amazing
+[1312] partners. It's very similar to like
+[1315] dating I guess or I don't know what
+[1317] analogy to use but building the company
+[1320] and gaining traction is the most
+[1322] important thing you can do. It's not
+[1323] about like tricking an investor to think
+[1325] that your company's cool or having a
+[1326] better pitch deck than someone else.
+[1327] Yeah. Like they will always follow your
+[1330] company and try to invest if you're
+[1331] showing that you're changing the way
+[1332] people work or like having some impact
+[1334] in the market. So our other two rounds
+[1336] were preempted.
+[1337] >> Um we didn't raise, we didn't make a
+[1338] deck. We we just uh kept building and I
+[1342] think the fact that we didn't need the
+[1343] money and we're going to succeed
+[1344] regardless is what makes someone want to
+[1345] invest.
+[1346] >> What's the experience of being a
+[1347] Canadian founder moving to San
+[1348] Francisco? I I remember there was like
+[1350] some tweet storm about about this or
+[1352] like advice to Canadian founders who
+[1354] either want to stay in Canada or people
+[1355] might want to move here like what's
+[1357] >> what comes to mind.
+[1358] >> You can absolutely stay in Canada like
+[1360] there's no we have an office in Canada.
+[1362] We employ a ton of Canadians. I think
+[1364] we're going to be going back to Canada
+[1365] at some point. Um so I don't think it's
+[1367] you must move to SF like a lot of people
+[1369] say.
+[1369] >> I think our approach was like we had
+[1371] every odd stacked against us. We still
+[1373] do and like we want to succeed by any
+[1375] means necessary. So, if there was a half
+[1377] a percent better chance that we might
+[1379] meet a customer or someone we want to
+[1381] hire in San Francisco because they
+[1382] happen to be down the street, like
+[1383] Instacart is was like a block away from
+[1385] our initial office. Yeah,
+[1386] >> we were going to do that. But I I think
+[1388] you can 100% stay in Canada and build
+[1390] like a generational company there.
+[1392] There's a lot of great Canadians who are
+[1393] comfortable and happy and they don't
+[1395] want to leave the country. Um, you can
+[1396] hire them and you have a kind of a an
+[1398] advantage in that market for hiring.
+[1399] >> What are the best hubs or strongest like
+[1401] either most ambitious or best
+[1403] engineering talent right now?
+[1404] >> It's just where more people are. Yeah.
+[1406] Vancouver and Toronto I think in Canada.
+[1408] Um
+[1408] >> Montreal too.
+[1409] >> Montreal as well. Yeah. [laughter]
+[1412] >> How big is the company right now?
+[1413] >> Between 45 and 50. Yeah.
+[1415] >> So like it's interesting because there's
+[1416] like the sort of people were like I'm
+[1419] trying to keep the team small. You've
+[1420] been trying to do that but it's going
+[1421] really well. So it seems like still you
+[1424] are small for the traction that you have
+[1426] but still now this like a big company.
+[1428] >> Yeah. Our initial plan was we were going
+[1430] to be a 10 person billion dollar
+[1431] company. That's what I put out on
+[1432] Twitter because we raised our series A
+[1433] when it was Rahul and I and two interns.
+[1435] So, we thought like I think we're a
+[1436] little cocky and thought that we can
+[1438] just keep it super lean.
+[1440] >> But then we discovered enterprise sales
+[1442] and [laughter] just like how much
+[1444] support a large company needs. Yeah. Um
+[1447] >> it it became obvious like the more
+[1449] people we have the better. So, we're
+[1450] still trying to stay super lean. And uh
+[1452] the the I like to refer to this
+[1455] multiplier where like I I'll ask a
+[1456] customer who's onboarding like how big
+[1457] do you think our team is? And they're
+[1458] like 250 people, 300 people. And I'm
+[1461] like, "No, we're only 50 or 30." The
+[1463] multiplier of like how big they think we
+[1465] are to how big we really are is kind of
+[1466] what I'm optimizing for now. Um, less so
+[1468] like the actual objective headcount
+[1470] because I think we're hamstringing
+[1471] ourselves a little bit by being like
+[1472] only 10 people. The 11th person adds a
+[1474] ton of value.
+[1476] >> What constrains success for the company
+[1477] right now? Is it like models are still
+[1479] like not perfect the way they need to be
+[1481] or like like what what will be
+[1484] additional unlocks in the future? Do you
+[1486] think
+[1486] >> people don't know about us? That's uh
+[1488] one big thing. Sometimes like our I have
+[1490] calls with customers almost every single
+[1491] day where they're like inbound or they
+[1493] heard about us through a friend and then
+[1495] I actually show them the tool and
+[1496] they're kind of shocked at how much it
+[1497] can do.
+[1498] >> Um we're trying to fix that so that more
+[1500] people know we exist and how much work
+[1502] we can automate.
+[1503] >> That's one problem. The other one is we
+[1505] just don't have enough people as ironic
+[1506] as that sounds based on like the small
+[1508] team thing. There's like a hundred
+[1510] things that our customers are asking us
+[1511] for that we could be building right now
+[1512] but we're very thoughtful I think about
+[1515] who we hire and whether they're a good
+[1516] fit for the company. So it just we've
+[1518] been hiring more slowly than the average
+[1520] company, but we we're hiring engineers,
+[1522] designers, AEES, customer success.
+[1524] >> If I was someone who's like never used
+[1526] anything like this and you're like I'm
+[1528] I'm AI curious and I work for a big
+[1530] enterprise, what's the vision that you
+[1532] would sell me on or vision that you
+[1533] would describe to me of like this is how
+[1535] you could run your company differently?
+[1537] Like is is there like a a way to
+[1539] summarize h how how a company like your
+[1541] customers are compared to the ones that
+[1544] are not? I think the the main e like
+[1547] thesis is like the people who understand
+[1549] the tasks should be the ones automating
+[1550] them. Um, and the anti pattern we've
+[1552] seen over the last couple years is like
+[1553] you might have a a marketing ops team
+[1555] that has like something extremely
+[1557] tedious and cumbersome that's you're
+[1559] losing tons of revenue by not doing.
+[1560] they're going to hire people if to solve
+[1562] it or they're going to like write a spec
+[1563] doc of the problem they want solved with
+[1565] an agent or AI and they're going to give
+[1566] that to an engineering team or they're
+[1568] gonna give that to a consultant who's
+[1569] going to charge them a crazy amount of
+[1570] money and they're going to go through
+[1572] this loop of like not quite right
+[1573] feedback meetings and you'll get
+[1575] something halfbaked.
+[1576] >> I think like the people who really
+[1577] deeply understand a task should be the
+[1579] ones like just transferring what they
+[1581] understand into an agent to automate it.
+[1583] And the hard part is like the the
+[1584] biggest blocker is the a tool that they
+[1586] can understand. Now we're at the point
+[1587] that anyone can build an agent that's
+[1588] relatively solved. And then the meta
+[1590] problem behind it is like do they have
+[1591] access to the right data, the
+[1593] permissions, like has it let them do
+[1595] this sort of thing. So we're secretly
+[1596] like catering to IT teams with all the
+[1598] features we build first is if they give
+[1600] the green light then anyone can automate
+[1601] like hundreds of hours of work and scale
+[1603] their output.
+[1604] >> Um but I think it being on board and
+[1607] that comes from leadership like a a
+[1608] company like Shopify is so AI native
+[1610] that they're going to clear the way to
+[1611] make sure this is possible. Whereas like
+[1613] a large health tech company in Europe,
+[1615] they're going to have more rigidity IT
+[1617] team saying no to everything and you
+[1618] have to like work through that to get
+[1619] the unlock of automation.
+[1620] >> A lot of people that are pitching AI
+[1623] tools for companies are basically saying
+[1624] this tool will sort of like automate
+[1626] this work and therefore be fewer people.
+[1628] It sounds like you actually are
+[1629] describing something that's complete
+[1630] opposite where everyone basically
+[1631] instantly have like more people and do
+[1633] more. Talk about that.
+[1634] >> Yeah, I think part of it is like this
+[1636] future world in which everybody is a
+[1638] manager and we're kind of all overseeing
+[1640] agents and like having agents do work
+[1641] for us. I think, you know, that seems to
+[1643] be what we're trending towards. And so
+[1645] the way that we see it is like you don't
+[1646] necessarily need less people, but the
+[1648] people that you have can do a lot lot
+[1650] more. And we see that within our
+[1652] engineering organization at Gum Loop as
+[1654] well. Like we have eight core engineers
+[1657] that are working on the product that
+[1658] includes myself and everyone's able to
+[1660] do the work of like five people
+[1661] basically using agents. Yeah.
+[1663] >> What's the hardest challenges that you
+[1665] guys are facing right now? So someone
+[1666] who's thinking about joining at Gum Loop
+[1668] um what would they work on? Yeah, I
+[1670] think it's a lot of the stuff that the
+[1672] labs are dealing with as well and the
+[1673] biggest challenges the labs are facing
+[1675] at the application layer, which is like
+[1677] how do you get the most out of the
+[1678] agents and the models in their current
+[1680] form and how do you get them to do real
+[1681] work? How do you get them to do like
+[1682] long running tasks that take, you know,
+[1684] multiple hours? Uh how do you get them
+[1686] to like use computers and like browsers
+[1688] and efficiently and stuff like that? I
+[1689] think a lot of the appeal at working at
+[1691] a company like Gum Loop is that you're
+[1693] really at the frontier and pushing the
+[1695] limits of what's possible to do with AI
+[1697] and the current models. Um, and I think
+[1698] that's really exciting for people,
+[1700] especially people that are at a more
+[1701] kind of traditional company.
+[1703] >> There's uh, every feature that people
+[1706] think we should build and that we start
+[1707] building comes with like a hundred
+[1709] features underneath them that are
+[1710] secretly the hard part. Like, yeah,
+[1712] browser automation is something we're
+[1714] working on. Uh, but then okay, if people
+[1716] can automate with the browsers with
+[1718] agents in the cloud and on their local
+[1719] desktop, how does it make sure that
+[1721] they're not going to certain websites or
+[1723] that it's not doing anything nefarious
+[1725] or that they're able to watch back uh a
+[1727] session recording? And then they'll ask
+[1728] like, how do I watch back 5,000 session
+[1730] recordings and understand what agents
+[1731] are doing in aggregate? How do I make
+[1733] sure it's efficient from a cost
+[1734] perspective? Like everything that comes
+[1735] with those features is the hard part.
+[1737] Um, so we have to think of like the
+[1738] whole picture when we're deploying it in
+[1740] a in a company, but there's so many
+[1742] little edges to every feature that we
+[1744] need great engineers to work on.
+[1745] >> What's the dynamic with the labs? Cuz
+[1747] you you mentioned in the past that your
+[1748] customers already have relationship with
+[1749] the labs and um like some of them have
+[1753] competing products. I'm assuming
+[1754] co-workers in this in this world as
+[1755] well.
+[1755] >> Totally. Yeah, there's a ton of
+[1757] competition. I think we exist in like
+[1758] this sweet spot in between the labs
+[1760] where um we're kind of like the
+[1762] Switzerland between the labs and you can
+[1763] use your inference from wherever and
+[1765] that becomes quite appealing to like an
+[1766] IT leader or any leader at a company
+[1768] when you're like I can build agents
+[1770] across the business without being locked
+[1772] into one of these vendors. When a better
+[1773] model comes out next week on Twitter and
+[1775] everyone's going crazy over it, I can
+[1777] oneclick switch to that inference
+[1778] provider. And then when those companies
+[1780] try to approach us with like an 8 figure
+[1781] contract and we're all using their
+[1783] solution and we can't go anywhere, we
+[1785] actually have the ability to walk now to
+[1786] a different inference provider. And the
+[1788] idea that like you own your agents like
+[1789] the agentic sovereignty by you deploy it
+[1791] in your cloud, you own the database
+[1792] where the traces are stored, you own the
+[1794] full integration stack like you're
+[1796] owning your agentic future becomes quite
+[1798] enticing especially as yeah I think like
+[1800] the the model layer will get
+[1801] commoditized and the labs will need to
+[1803] generate revenue in other places and
+[1804] they're going to go after their
+[1805] customers businesses. Uh we've already
+[1807] seen that with a few of our customers
+[1808] who have like the labs came up with
+[1809] direct competitors against them and
+[1811] they're they're kind of like burned by
+[1812] that experience. Most companies will
+[1814] probably face that in the future. So
+[1815] owning your agents is quite important.
+[1816] >> Do your customers need frontier models?
+[1819] >> Yeah, I think so.
+[1820] >> For many of their tasks,
+[1821] >> there's a they need the choice for sure
+[1824] because some things are so complex like
+[1825] you're informing the CEO about a growth
+[1828] function that is like going to be in the
+[1830] board deck next week. you it would be
+[1832] better to use a the most qualified model
+[1833] you possibly can, but then you're
+[1835] running a support use case 80,000 times
+[1837] an hour like using the cheapest model in
+[1839] the market will actually make a
+[1840] difference in your
+[1841] >> your revenue. Yeah, and I think like
+[1842] that's a key thing like you kind of do
+[1844] want the choice because not all use
+[1845] cases need frontier intelligence uh even
+[1847] of our customers and so giving people
+[1849] the option to switch down and switch up
+[1851] and I think having that control at the
+[1853] organizational level. So like admins and
+[1855] people who are in the know can like
+[1857] force people to use certain models or
+[1859] force certain teams and certain use
+[1860] cases to use certain models because if
+[1862] given the choice probably every
+[1864] individual employee is just going to use
+[1865] like Frontier Intelligence cuz like
+[1867] there's no limit and like who cares,
+[1869] right? But like if you give the people
+[1871] that actually know what they're doing
+[1873] the ability to kind of enforce different
+[1875] things um that we find that works out
+[1876] better for everyone like everyone has a
+[1878] better experience. It's it's cheaper and
+[1880] faster for the end user and then you
+[1881] know for for the company it's also more
+[1883] efficient.
+[1883] >> Um typically there's one buyer for for
+[1885] each product category one product but it
+[1888] sounds like in this case could be still
+[1890] a bit bottom up where someone actually
+[1891] discovers this like how does it bubble
+[1893] up to the decision maker?
+[1895] >> It's like a riddle every time. Uh it's
+[1897] different. We're definitely forming more
+[1899] of a pattern, but the person that
+[1900] bubbles up to and the person that gets
+[1902] most excited is normally like an IT
+[1903] leader leader like the person
+[1904] responsible with the AI rollout and
+[1906] security of the fact that everyone's
+[1908] using 80 different tools and the data is
+[1909] going everywhere and they need to kind
+[1910] of wrangle all of that. Yeah.
+[1912] >> Um they tend to be the person we were
+[1913] most excited to meet because their eyes
+[1914] kind of light up when they see our
+[1916] feature set. Yeah.
+[1917] >> And then they're the ones unblocking uh
+[1918] the sales team to do sales related use
+[1920] cases and the customer success team to
+[1922] do their use cases because they're
+[1923] giving them access to all of like the
+[1924] internal data. But yeah, it tends to
+[1926] bubble up to them and and sometimes it
+[1928] starts with like an individual who found
+[1929] us on Twitter or saw our post on
+[1931] LinkedIn and then they showed it to
+[1932] their manager, they showed it to their
+[1933] manager, we gave them a pilot, they
+[1935] showed they generated like 3x more
+[1937] revenue with a small sales team, for
+[1938] example, in a week than they did la like
+[1940] the three months prior.
+[1942] >> Can you give a pilot to them without
+[1944] getting to the decision maker?
+[1945] >> We have to talk to it to get the pilot
+[1946] working, right?
+[1947] >> Uh that that's like the hard part. Yeah,
+[1949] it's something we're learning and
+[1950] figuring out over time still, but it's
+[1952] not super helpful to have a pilot uh and
+[1954] then they can't connect any of their
+[1955] tools. So, like we kind of made
+[1957] >> that mistake in the past.
+[1958] >> Yeah,
+[1958] >> the number of connections that you have
+[1960] access to is directly correlate to how
+[1962] good your experience is using product.
+[1963] >> How important was it for you guys to do
+[1965] and move to San Francisco?
+[1966] >> I think it was pretty critical.
+[1968] >> Yeah, [laughter] we were uh it gave us
+[1970] like instant validation I think to to
+[1973] >> internal validation or external
+[1974] validation. maybe a little bit of
+[1975] internal validation, but mainly external
+[1977] validation that like people would take
+[1979] our call. You know, before that we were
+[1980] just two guys with laptops being like,
+[1982] "Yeah, we're automating work and no one
+[1984] cared." Um, but it gave us like a jump
+[1986] start to just start building momentum
+[1987] and then a lot of guidance for how to
+[1989] like harness that momentum into
+[1990] something bigger.
+[1991] >> Uh, so it definitely was like a before
+[1992] and after moment for us.
+[1994] >> You've always seemed to me very
+[1996] self-motivated.
+[1997] >> Uh, tell us more about that. Tell me
+[1999] more about that.
+[2000] >> I think it's like a fear of mediocrity.
+[2002] I'm just like terrified that I'll look
+[2003] back in 30 years and realize like I
+[2005] wasted an opportunity. Um, which
+[2007] >> I don't know where that comes from, but
+[2008] what motivates you?
+[2009] >> Yeah, I think like when I was working at
+[2011] Amazon, uh, you know, out of university,
+[2013] my like goal was to get a job at a big
+[2014] tech company, and I was like, "Oh man,
+[2016] if I do this, like I'm going to be set
+[2017] for life." And so like I went and did
+[2018] that. And within like a week, I was
+[2020] like, "I cannot do this for the rest of
+[2021] my life. Like there's no way I can work
+[2022] here." Because it was just like the
+[2024] things were just moving so slowly. And I
+[2026] felt like what we shipped with a team
+[2028] and 10 people, I could do with like my
+[2030] buddy on a weekend. you know what I
+[2031] mean? And so like I had to be in an
+[2033] environment that we were working at a
+[2034] fast pace and just like shipping things,
+[2036] you know, quickly. Um and uh that's
+[2038] that's what kind of motivated me. Yeah.
+[2041] >> Awesome. Thank you so much for coming
+[2042] and speak to us. This is a really good
+[2045] conversation.
+[2045] >> Thank you. Appreciate it. Thanks.
+[2049] [music]
+[2054] >> [music]

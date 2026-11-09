@@ -1,0 +1,944 @@
+0 I think the thing that keeps you
+1 grounded is just absolutely knowing that
+3 money will not solve your problems. And
+5 that's a good thing for for startups as
+7 well, like early stage startups. Like we
+10 should not exist if AWS are so good.
+13 They've got way more cash than us, but
+14 we've been able to for many different
+16 reasons.
+20 >> For this next session, I'm welcoming uh
+23 Paul Copplestone. Is that the right
+24 pronunciation? Yep.
+26 >> Okay, awesome.
+27 >> Who is the co-founder and CEO of
+28 Supabase.
+29 Uh
+30 Supabase began in 2020
+33 as an open source tool uh to deliver
+36 Postgres, right? Like help people host
+39 Postgres online. Uh
+41 today, it's one of the fastest-growing
+44 dev tool companies in the world, if not
+46 the biggest.
+48 Maybe well, you're not going to uh
+50 say no. Okay.
+52 Uh they just became a decacorn just a
+54 few years after founding, which is
+56 insane.
+57 Uh please welcome Paul Copplestone.
+59 Great to have you with us. Uh I really
+61 love dev tools, as you know. And so it's
+63 kind of like having the chance to uh ask
+65 you questions is always great. Um
+68 but before building uh Supabase, I mean,
+71 you started with like was that your
+73 third startup?
+74 >> Yeah, that's right. Um
+77 so like my the short history getting to
+80 where we are today
+80 >> Sure. Let's go for it.
+81 >> is
+82 uh well, going right back, my father's
+84 an entrepreneur, and so it's kind of in
+86 my blood, and I've only really done
+88 >> Where are you from?
+89 >> Uh I'm from New Zealand. Yeah,
+90 originally.
+91 >> Not in Europe, that's the only one.
+92 >> Yeah, yeah, yeah.
+93 >> Just living in Europe right now.
+94 >> I right now I spend most of my time here
+96 in Europe, so my French is not so great,
+99 unfortunately, but I'm practicing. So
+102 yeah, literally the other side of the
+103 world I grew up, and then my father was
+106 an entrepreneur, so I very much felt
+109 like a natural thing to me. Then I did
+111 one job in a corporate uh consultancy,
+114 and
+114 >> You loved it.
+115 >> and I absolutely hated it. And uh since
+118 then I've only done kind of startups or
+120 entrepreneurship. So I yeah, this now
+124 officially is my third venture backed
+127 startup where I've taken VC funding, but
+130 I've actually done quite a few in the
+132 meantime.
+133 >> What happened to VC's money for the
+135 first two?
+136 >> Just blew it on uh
+140 Yeah, having great parties. No, I think
+142 like
+143 the I don't know is this the recorder? I
+145 was going to say something much more
+147 vulgar, but uh
+149 No,
+150 we I mean
+152 I think it's the number one reason why
+155 startups fail is they run out of money,
+157 isn't it?
+158 >> Not really.
+159 >> No, is it?
+160 >> Well, actually look at the numbers.
+161 >> Yeah, where were was the numbers?
+162 >> Uh sorry, founders giving up.
+164 >> Uh okay, okay.
+165 >> Drama, not finding product market fit.
+168 And we have so many companies, I mean
+170 I'm speaking about the YC companies on
+172 the data on YC companies.
+173 >> Yeah.
+174 >> Um people usually close their companies
+176 they still have a lot of money.
+178 >> Okay, okay.
+179 >> So no, maybe your case is different.
+182 >> Yeah, well, I mean
+184 I guess we didn't run out of money, but
+186 eventually if you are persistent enough
+188 and you can't find product market fit
+190 the inevitable end cases that you run
+193 out of money. So the first startup I was
+195 the CTO rather than the CEO. We didn't
+197 really find a product market fit and I
+199 left after a couple of years because the
+201 way that I wanted to take the business
+204 was different from how my CEO wanted to
+207 take the business. So much as you say
+209 that's reason number one. Yeah.
+211 Reason startup number two was very
+213 different. In fact, I had said to my
+215 co-founder
+218 the co-founder now, I said to him, I'm
+220 going to do a dev tools company and he
+222 said to me, well, just give me two
+224 years. You be the CTO, help me launch
+227 this business cuz we had worked together
+229 before and I said that's fine. I'll be
+231 incubating Supabase."
+234 And then I helped them launch the
+235 business and when it felt like the right
+237 time, then I actually launched out of
+238 it. So, I still that company is still
+240 going and is profitable.
+242 But um it wasn't, you know, for me. It
+245 was never going to be my the thing that
+247 I work the rest of my life on.
+249 Whereas now Supabase is is very
+251 different.
+252 >> I didn't realize that. So, when you
+253 launched Supabase in 2020, you were
+256 actual you'd been working on that for 2
+258 years as a side project?
+260 >> Not like I wasn't sure. I knew I wanted
+262 to do a dev tools company, but I wasn't
+264 sure exactly how it would function. So,
+268 um and I also knew I wanted to do a
+269 database company. But the sequence of
+272 events was um basically I was using um
+276 Postgres, which is what we use now. Um
+279 I'm not sure how technical the audience
+280 so I'll just keep it kind of high level,
+282 I guess. Pretty technical, okay. So, uh
+284 Postgres and Firebase and I was using
+286 both of these tools in my previous
+288 company and then when we um hit some
+292 scaling limits on the Firebase side, I
+294 decided to migrate it across to Postgres
+297 and I wrote an open source tool. I open
+299 sourced it, put it on Hacker News. And
+303 um then it started getting some traction
+305 in the open source. But there was only
+306 maybe 3 or 4 months before I launched
+309 Supabase. So, it just felt the right
+311 time to build the database startup that
+313 I wanted to build. And so, um
+316 I was trying to figure out how to do it
+318 and that was just kind of the impetus.
+320 >> Why you Postgres? And Postgres was
+321 already already what? 30 years old or
+323 something?
+324 >> Yeah, Postgres was
+326 Postgres well, in its earlier forms it's
+328 about 40 years old. But um there's a few
+330 things that I saw. Um
+333 I definitely knew I wanted to do an open
+335 source company. Uh I knew I wanted to do
+337 a database company. I used to consume
+340 Hacker News all the time. So, for the
+342 developer segment, I kind of knew what
+345 was up and coming.
+346 >> How many people here know what Hacker
+348 News is?
+349 Okay, a majority.
+351 >> Yeah, I I probably read it like three
+353 times a day and uh show Hacker News, I
+355 monitor them. So, you kind of get this
+357 sixth sense of what is trending and I
+360 could see that Postgres was trending. It
+362 wasn't the most popular database at the
+364 time, but um now it is. So, it was a
+366 good bet. And the other thing that I
+368 really liked about it is if you are
+370 going to build a database company, you
+372 have to have a good reputation because
+374 to build a database is incredibly
+375 difficult. But um Postgres kind of had
+379 that reputation built into it and it had
+381 another thing that was really important.
+383 When you think about um which database
+386 will win over the next 50 years, it's a
+389 little bit like game theory where
+391 I will wager that Postgres will continue
+395 to be the dominant player because no one
+397 owns Postgres, which means that everyone
+400 contributes to Postgres.
+402 Then all the hyperscalers have to have
+404 the best Postgres offering because it's
+407 the most popular and therefore Postgres
+409 continues to to improve. So, it's this
+411 flywheel effect that comes in and I
+414 really liked that dynamic behind it and
+416 we tried to lean into it to to win that
+418 space.
+419 >> Firebase was not Postgres back to write
+420 down.
+421 >> No, Firebase was more I think it started
+423 on and then eventually moved off.
+425 Yeah.
+425 >> And in the way you were started because
+427 you started open source too. I remember
+428 seeing you as like kind of the open
+430 source Firebase.
+431 >> Yeah, we we did some positioning. So,
+433 after I wrote that real-time engine
+435 uh and put it on Hacker News, I thought
+438 that was the thing. Uh everyone thought
+440 real-time was cool on top of Postgres.
+441 So, I wrote real-time Postgres and it
+444 actually didn't really take off and then
+446 we switched the tagline to open source
+448 Firebase alternative. And then from that
+451 point on it really took off.
+453 >> So, this was your early marketing.
+455 Um why open source? What made you decide
+457 to be open source?
+458 >> Yeah, I think this one's more just
+459 philosophically. I like open source. I
+462 like that community. I like building
+465 communities. And so,
+467 you know, a lot of people will think of
+468 them perhaps as a tactic or a strategy,
+471 but in this case, there wasn't much of a
+473 discussion. Both my co-founder and I
+475 like open source.
+476 >> So, you just like did it so you wanted
+477 to do it.
+478 >> Yeah.
+478 >> Um were you thinking about monetization
+481 from the get-go or
+483 >> Yes. Yes, we were. Although, it took us
+485 about a year and a half to start earning
+488 our first dollar, but we knew that
+490 databases were super interesting because
+492 they're incredibly difficult to get a
+495 motor to break into that market. But
+497 once you do, then they grow. They grow
+499 naturally. You You founders, if you
+502 start a business and your business is
+503 growing well, you go to sleep and your
+505 business continues to grow. The thing
+507 underneath that is a database. So, you
+510 know, we like that model.
+511 >> So, you saw a lot of expansion of usage
+514 from small startup would start using you
+516 because you were easy and then would go
+518 with you
+520 and become good customers.
+521 >> Yeah, and our initial customer base,
+522 this is why we applied for YC, was
+525 high-growth startups. And so, the ideal
+527 ICP was someone who was venture-backed
+529 and was likely to grow fast who happens
+531 to be a Y Combinator company.
+533 >> How many YC companies are using you?
+534 >> So, we get about 60 over 60% of every
+537 batch will use Superbase.
+539 >> Oh, okay. Including yours?
+541 >> We Yeah, we use Superbase to build
+542 Superbase as well.
+543 >> No, but I mean including your batch.
+546 >> Uh include Uh no, our batch was um
+548 >> [laughter]
+549 >> No one No one trusted us at the start. I
+552 think there was zero uh Well, there was
+553 one company.
+555 >> But uh like a lot of companies trusted
+556 us during our batch.
+557 >> Did they?
+558 >> Yeah. Yeah. Yeah. Like I think
+559 >> They're better than us. We're not very
+560 trustworthy people, naturally, so.
+563 >> Well, your batch was remote, too. I
+564 didn't tell.
+565 >> Yes. Yes, that's the other thing. We
+566 couldn't really network with anyone, so
+568 we were just going straight out to the
+569 internet.
+570 >> That's awesome. Um I mean, open source
+573 when uh when we're I discovered what you
+575 were doing there, I was actually
+576 impressed because you are fully open
+578 source open source like 100% open
+580 source. There is no like enterprise
+582 version that you charge for.
+585 >> Yeah, so there's different
+586 >> a risky choice?
+587 >> Yeah, there's a few models that you can
+588 run if you run open source, which is
+590 like a a license where you might put
+592 some of it behind uh flag and you're
+594 going to pay or enterprises have to
+596 reach out. For our model, we give
+598 everything away. You can use it
+599 completely free. The only thing that's
+601 not available is like how to host a
+604 million databases. Mainly because that
+607 code is just ridiculous spaghetti. Like
+609 you can't actually really push it out in
+611 an easy way. So
+613 >> So that code is not
+614 >> That code is not available. It's like
+616 lumped in with billing logic. It'd be a
+618 security nightmare for us to put it out.
+620 >> And what uh prevents any kind of like
+622 big cloud provider to actually host
+625 Firebase themselves and resell it?
+627 >> Well,
+628 >> They've tried.
+629 >> They've tried.
+630 >> [laughter]
+631 >> Yeah, I mean, of course like um
+633 you know, you'll see examples where they
+635 might take Redis or Elastic Search or
+638 something like this.
+639 >> they did that risk before or like like
+640 >> Exactly. And then they'll host that and
+643 they'll actually make more revenue from
+646 that than the companies that created
+648 them.
+648 For Supabase, in some ways we did the
+652 opposite because they host Postgres
+654 databases and we just started
+655 counter-positioning against RDS and um
+659 and Aurora. And so, you know, they
+661 already had these offerings. What are
+663 they going to take? And then the other
+665 thing is it's Supabase is actually a
+667 stack of tools all working well
+669 together. For them to do this, it's not
+671 the same as hosting a Redis instance.
+674 It's actually incredibly difficult to
+676 manage all these different tools
+678 together.
+679 >> And how about direction of the community
+681 today then?
+682 Uh I remember you you said that you
+684 always have people complaining that you
+686 are not what? Open source enough or
+688 helping them enough?
+690 >> Yeah. Yeah, yeah, yeah. But that's
+691 always going to be the case, right? I
+693 mean, you always find customers and
+695 they're always the ones that
+697 um are loudest.
+698 Are the customers like it can be open
+700 source community members and you might
+702 not be open source enough or you haven't
+704 released enough
+705 um or it could be that your pricing like
+708 your customers your pricing's too
+709 expensive. Um there's always going to be
+712 that crowd. You can you can't please
+714 everyone. That's just
+715 >> ignore them.
+716 >> Yeah. Or well, listen to them ideally
+718 because if um but you have to still make
+720 a judgment on whether it makes sense
+722 what they're asking or not.
+724 >> So uh nobody wanted to use you to win
+726 your badge. How long did that take you
+728 to win the trust of developers?
+731 >> Um
+731 >> And you are like Firebase was still in
+733 the equation, right? People were still
+735 using Firebase.
+736 >> Yes. Yes, they were. I think people
+738 loved the idea of Supabase from the
+741 start and so they really loved the
+743 positioning Postgres open source. And
+746 they knew they also loved Firebase cuz
+749 Firebase is legitimately a good tool. It
+751 just lacks Postgres and open source. So
+754 the idea that you could have the same
+755 experience but with these two elements
+758 was very appealing. Then all they needed
+761 was the trust that we could host these
+763 sites. So as we started building up more
+766 and more credibility with larger
+768 startups um building with us then maybe
+771 yeah, as I said, we started monetizing
+773 in the first year. But really it was
+775 kind of still slow. I think the first
+777 year we exited with revenue in the order
+780 of a million ARR or something like that
+783 and then like the next year seven and a
+785 half. So it was slow going but then it
+789 just took
+789 >> Well, I think a lot of people would love
+791 to have like go from one to seven in a
+793 year.
+793 >> That's true. That's true. Yeah.
+794 >> That's slow going compared to today.
+796 >> Well, today people go to a hundred
+798 million in a month. So
+800 >> Well, not that many.
+802 So yeah, uh let's be careful about what
+804 you read in the press because on you
+806 only read about the crazy outliers.
+808 Most companies don't go from zero to 100
+810 in a in a year.
+812 >> Yeah, that's also true.
+813 >> I've always been impressed by
+815 the community behind Superbase and like
+817 how you got them to follow you like
+820 the developer experience created. Like
+822 how do you think about these things?
+824 >> Yeah, well, when it comes to community,
+827 we don't worry too much about getting
+829 them to follow us, but we do care about
+831 that second part, developer experience.
+833 And how do you get a good developer
+835 experience? There's a couple of
+836 elements. First, you need to know what
+838 developers want, so you need to listen
+839 to them. And so much like the YC motto,
+843 just like figure out what your customers
+844 want. And for us, that is the community.
+847 We'll just poll the community all the
+848 time finding out what they want,
+850 listening, seeing where they are. And
+852 your community will ideally live
+854 anywhere. So we're on Reddit, we're on
+856 Twitter, we're on Hacker News, wherever
+859 we need to be to find the the
+861 developers.
+862 And then for us, we really thought hard
+865 about developer experience at the start.
+867 The key thing that we measured, I
+869 remember right at the start, was time to
+871 value. So a
+873 a customer I remember I actually timed
+876 how long it took to launch an RDS
+878 instance on AWS and then connect it to
+881 and then insert a row. And it was
+883 something like 8 and 1/2 minutes. And we
+885 decided, well, we have to get that at
+887 least under a minute for us to get time
+890 to value. And then we just started
+891 tracking that as soon as fast as we can.
+894 And
+894 >> these days it's 5 seconds or so.
+896 >> now. Okay. And how long is RDS today?
+900 >> Probably still 8 and 1/2 minutes, yeah.
+902 >> Did you actually communicate on that?
+904 Was that part of the
+905 >> No, we didn't say it out loud. It just
+907 kind of innately becomes a part of the
+909 experience of the developer. They don't
+911 want to
+912 like when you want time to value, you
+914 want these days it would be an agent,
+916 right? Imagine you just kick off an
+918 agent and you say, "I'll build me an
+919 application." If you come back after
+922 these days you can walk away from your
+923 computer, but if you come back after a
+925 minute and it hasn't solved the problem
+927 and you need to re-prompt it, that's
+929 actually a loss of value. So, what we
+931 want to be able to do is really one
+932 shot. That So, it's no longer a time
+934 element. It's the ability to get you to
+937 your result as fast as not just as fast
+939 as possible, but with as little input as
+942 possible.
+944 >> Uh
+945 let's speak about that. Like AI uh shift
+948 here. It feels like everything we've
+950 discussed so far is kind of the first
+951 life of the company and now you have
+953 like a second life that was kind of
+955 triggered by all of these AI use cases.
+957 Is that what Is that right? Uh
+960 so uh
+961 it's kind of like you became the default
+963 back end of pretty much every AI
+965 application started with uh the lovable
+967 of the world, right?
+969 >> Yeah, we in 20 In the December 24, we
+974 saw we're getting DDoS'd by uh a bunch
+976 of companies which were launching all
+978 these applications,
+980 databases, and um the two main ones were
+982 Bolt and Lovable. And um
+985 and now like fast forward to today,
+988 compounding Claude code and Codex,
+991 I think it's now that we can measure 60%
+994 of databases get launched by an agent,
+996 but more likely it's like 90% and it's
+999 in the millions every every month.
+1002 >> When did you realize that uh
+1004 these AI use cases were actually a big
+1007 thing versus like uh
+1009 like what you thought you would do?
+1010 >> Well, we don't. This is kind of the
+1012 thing where you look back and you think,
+1014 "Oh, it's super clear. Of course, um we
+1016 should do this." But, when we went back,
+1018 we looked, for example, at Lovable when
+1020 we tried it and the apps that it was
+1023 building back then cuz it was just
+1024 getting started were were not that great
+1026 and we thought, "Oh, you know, do we
+1027 >> Have great customers.
+1029 >> No Well,
+1030 >> I know. Eventually probably, but like
+1031 >> Yeah, exactly.
+1034 And we have this thesis, you know, you
+1036 can launch these
+1037 but will they grow? And the will they
+1039 grow is kind of the thing that we care
+1041 about.
+1042 So, um there was a lot of debate
+1045 internally, oh, you know, do we even
+1046 want to support this this use case? Or
+1048 or as well, people were saying, do we
+1050 want to build our own lovable so that we
+1053 have access to the distribution? But now
+1056 it became very clear our product that we
+1058 built was Superbase for platforms, and a
+1061 lot of companies, I think it's over 50
+1063 companies built on top of this product
+1066 where they can launch millions of
+1067 databases.
+1068 >> So, the Superbase for platform is a
+1070 product created because of the success
+1073 with lovable and Bolt.
+1074 >> Exactly. We we kept iterating, it was
+1076 pretty close to where we were, and we
+1078 kept iterating on it, and then we
+1080 realized, oh, this is a good product.
+1081 Like we will launch it for everyone to
+1084 get started. And the other thing that
+1086 made it quite easy is that if you squint
+1088 your eyes a little bit, this is what
+1090 enterprise customers want, especially
+1092 innovation labs. They want the ability
+1094 now to launch many databases in their
+1097 own company, and have the ability to see
+1100 which ones are unsafe, uh security on
+1103 top of them, shut them down if they're
+1105 growing too fast, or you know, manage
+1107 them. So,
+1108 we could see that we can merge these
+1110 road maps somehow.
+1111 >> All right. So, from the lovable of the
+1114 world that have like millions and
+1115 millions of instances, then you also
+1117 have like the enterprises who wants to
+1119 manage fewer number but bigger
+1122 databases.
+1122 >> Yes, exactly. They and it could be in
+1125 the millions. I I don't know if you guys
+1127 all saw the Snap specs,
+1129 um
+1131 where meming the internet that the back
+1133 end for them is Superbase as well. So,
+1134 we knew and larger enterprise customers
+1137 were were wanting these things as well.
+1139 >> That's cool. And uh I mean uh
+1142 that was kind of like the vibe coding
+1145 era. It feels like things shifted again
+1147 last year.
+1149 >> Yeah, so then Christmas,
+1151 um we came back from Christmas and
+1153 everything was going up into the right
+1155 again
+1156 and accelerating, which is crazy cuz I
+1158 think by that stage we're at maybe 6.5
+1162 million developers and today we're at
+1164 10. So, we've already layered on what 4
+1166 million
+1167 >> Remember last year you were on stage in
+1169 Paris.
+1170 >> Yeah.
+1170 >> Your numbers were insane.
+1172 >> But yeah.
+1173 >> But it was nothing compared to today.
+1174 >> To today, yeah.
+1175 >> How much like like since last year more
+1176 like 10x?
+1178 More than that?
+1179 >> Yeah, probably something like that.
+1181 Which is insane off the base. I think
+1183 that's the crazy thing. Like AI kind of
+1185 shifted what normally happens is you
+1187 might pile in
+1189 because we don't we don't spend money on
+1191 marketing. Like I I tell people if I
+1193 could give a free database, I'd rather
+1194 give that to developers than, you know,
+1197 spending on marketing. But usually what
+1199 you do is at our size you'll pour some
+1201 money into marketing, which means that
+1203 the intent of the users plummets a
+1205 little bit. So, you start seeing your
+1207 conversion rates go down or your
+1209 activation rates go down. But actually
+1211 what we saw was basically every chart
+1213 started going up into the right. So, the
+1215 number of users was accelerating while
+1218 conversion was going up and activation
+1219 was going up. Just everything was going
+1221 up.
+1221 >> It was cloud code.
+1223 >> Cuz of cloud code.
+1224 >> So, people started to build like to
+1226 pretty much build more and build bigger
+1229 applications that they would do on with
+1231 pipe coding simply.
+1232 >> Bigger, more successfully, they could
+1234 get to a product sooner. They were
+1236 building more products.
+1238 Yeah, it was incredible.
+1239 >> Like in the first you make more money
+1241 from more usage, I guess.
+1242 >> Yeah, it's all usage based.
+1244 >> That's incredible.
+1245 What does that mean for like we're
+1246 speaking of developer experience? Uh
+1249 what does that mean for you for your
+1251 developer experience that agents have
+1253 become the majority of your actual
+1255 users?
+1256 >> Yeah, there's a part of it where we went
+1259 through Actually, we went through kind
+1261 of three phases. At the start, um
+1264 we built a dashboard and the dashboard
+1266 even had like click around to add things
+1270 to your database because there was a
+1271 discovery mechanism.
+1273 Then when the LLMs came out, we
+1277 kept the dashboard but we stripped out a
+1279 lot of the panels and it just became
+1281 code SQL editor and chat interface.
+1286 Now of course when agents don't give a
+1288 about any of those two things, they
+1290 just care about CLIs and MZPs. But what
+1293 we try to do in terms of developer
+1295 experiences get this unified experience
+1297 and where things are naturally going to
+1299 go is ideally the entire experience that
+1301 you would have in your dashboard, you
+1303 would also have in your code. So for
+1306 example, a representation of your
+1308 database in code in declarative schemas.
+1311 Basically it becomes infrastructure as
+1313 code inside the Superbase folder. And
+1316 then what spills out the other side of
+1319 when you've got it in code, it has to be
+1321 in Git. What spills out of that is when
+1323 it's in Git, you have branching, so many
+1326 environments. So basically the entire
+1329 Superbase stack has to be branchable.
+1331 And this is basically where we're
+1333 heading now where the agent has to be
+1336 very good at spinning up an entire
+1337 database from a user intent but then
+1340 also
+1341 managing it and developing on top of it
+1343 as it gets more complex.
+1345 >> Uh
+1346 we're in 2026. If you were to start
+1348 today, I'm thinking about all these
+1350 founders who may be thinking about
+1352 building dev tools.
+1353 How differently would you do that?
+1355 Because you would target agents from the
+1357 get-go, right?
+1359 >> Oh yeah, for sure. For sure.
+1360 >> Any ideas of what people should try?
+1363 >> Like what ideas?
+1364 >> What not not ideas what you should
+1366 build, but any ideas how they should
+1369 what they should do to make sure agents
+1371 will find them and use them.
+1373 >> Oh yeah, that's a tough one.
+1375 Um
+1377 I don't know, but when it becomes
+1380 a
+1381 race of like oh, um let's assume that
+1384 agents will only choose three.
+1387 And that's it. That means, okay,
+1389 there'll be three winners, no one else,
+1390 maybe three of you win.
+1392 All the rest of you are competing on
+1394 some other thing. So, what is that some
+1396 other thing? Probably exactly the same
+1398 as what has been in the past, right? So,
+1400 you should still be doing things to make
+1401 the agent extremely easy to build with
+1404 you, but like becoming the default for
+1407 them is just going to be one of those
+1408 rare rare occurrences, and you'll have
+1411 to have a lot of luck. I don't like
+1412 betting on luck. You just do the things
+1414 that you have to do in order to get word
+1417 of mouth, uh in order to um make it very
+1420 easy for the experience, and then you
+1422 just pray that you end up being one of
+1424 those defaults.
+1426 >> Right. Being open source probably helped
+1428 a lot for you.
+1429 >> Open source, for sure. For us, uh I
+1431 mean, we have a community, uh we have a
+1433 lot of Reddit comments, we have a GitHub
+1436 community, all the comments there. The
+1438 LLM slurped up a lot of
+1440 >> Yeah. What's that mean for, I don't
+1441 know, like, from now on, like,
+1443 developers don't even need to know about
+1445 you?
+1446 >> No, they don't, yeah.
+1447 >> They use you without even knowing who
+1448 you are.
+1449 >> No, no, but
+1451 you know, I think we talked about this
+1453 once, like, there is this
+1456 kind of idea that then eventually, if
+1458 that's the case,
+1460 um only AWS wins, and we might as well
+1462 all pack it up and go home and like just
+1465 admit defeat, but you don't really know,
+1467 so you're just going to be in the arena
+1469 kind of fighting it out. And and you
+1471 know, maybe it ends up completely
+1472 different from from our hypothesis that
+1474 there's only one default winner. And I
+1477 imagine that
+1478 you know, people won't choose Supabase
+1480 in the future because they just like our
+1482 vibes, and they'll say, well, I prefer
+1484 to choose Supabase over AWS. And maybe
+1488 if AWS can get their experience as good
+1491 as ours, we won't have much
+1493 of an advantage except for the vibes.
+1496 >> Perhaps it is.
+1498 Um
+1498 All right, let's shift back to uh
+1501 fund raising. So, I mean
+1503 you had the crazy uh couple of years.
+1507 Your is like I was looking at the
+1508 numbers like three incredible rounds,
+1510 one more incredible than the last one
+1512 uh each one. And then the the the round
+1515 you just raised like 500 million at over
+1517 10 billion valuation. Uh how do you
+1520 continue
+1521 uh
+1522 I actually running the company when all
+1524 of that happens to you?
+1525 Like how do you do with the
+1527 make sense of your life and uh and what
+1530 you should do?
+1531 >> Uh um like personally?
+1534 >> Yeah, personally and then probably as a
+1535 as a as a as a team.
+1538 >> Uh okay, yeah.
+1540 Well, the money shouldn't change how you
+1542 operate, in my opinion. Like the you you
+1545 have jobs to be done and the money is in
+1547 service of the job to be done.
+1550 And if you are thinking, "Oh, now we've
+1551 got this money, let's do something
+1553 else." then you're probably not going
+1555 about it the right way, so
+1557 >> What what keeps you grounded?
+1560 >> Um go to Buddhist monasteries.
+1562 >> [laughter]
+1563 >> I
+1565 as a as a company, I think the founders
+1569 have to have
+1571 um you can't get caught up on money
+1574 won't make you succeed, basically. And
+1576 the founders have to really know that
+1578 and there are some ways that it can help
+1580 you succeed temporarily, but at the end
+1583 of the day, if you want to build kind of
+1584 a generational company, then you have to
+1586 do a bunch of things correctly and so
+1589 I think the thing that keeps you
+1591 grounded is just absolutely knowing that
+1593 money will not solve your problems. And
+1595 that's a good thing for for startups as
+1597 well, like
+1598 early stage startups, cuz it means like
+1600 let's say you want to compete with
+1602 Superbase,
+1603 it means that we are limited not by the
+1606 amount of cash that we have in the bank.
+1608 You can compete with us on many other
+1610 vectors in the same way that we can get
+1613 to where we are. By by all rights, AWS
+1617 should never have been able like we
+1619 should not exist if AWS are so good.
+1622 They've got way more cash than us, but
+1623 we've been able to for many different
+1625 reasons. So, the cash is really just in
+1627 service of all those things that would
+1629 allow us to win even if we didn't have
+1632 the cash.
+1633 >> How about the relationship with your
+1634 investors?
+1636 Does that gives them more power or less
+1638 power?
+1640 >> Giving them ca-
+1640 >> No, like growing like you did.
+1643 >> Ah,
+1644 um
+1644 >> You feel like some
+1646 pressure, even stronger pressure, or
+1648 raised expectations?
+1650 >> Yeah, the the more success Well, we had
+1652 this funny dynamic, actually. So,
+1654 normally when you start off in a you you
+1658 raise your initial seed round from a
+1660 seed investor, we had a bit of a funny
+1662 dynamic in that a hedge fund invested in
+1664 our
+1665 >> Right.
+1665 >> Koto. Hedge fund, in case you don't
+1667 know,
+1668 >> Oh, that was when they were investing
+1669 anywhere.
+1669 >> Yeah, exactly. So, these are these guys
+1672 have got like 70 billion under under
+1674 management. So, at the start they're
+1676 like, "Oh, here's 6 million. Like we
+1678 don't care about you." And then as we
+1680 started getting more successful and it
+1682 looks like we might go to the public
+1684 markets, then suddenly they're very
+1685 interested in us. So, that's a bit of a
+1687 different dynamic from what most seed
+1690 investors, as you become more
+1691 successful, the seed investors become
+1693 less interested because they've made
+1695 their return. But the the last investors
+1698 that you had are very interested in your
+1701 how much you'll return for them.
+1704 >> Okay.
+1704 >> A interesting dynamic. Um
+1707 So, you started in New Zealand I mean,
+1708 you are from New Zealand. You actually
+1710 started from Singapore.
+1711 >> Yes, I'm playing from Singapore.
+1713 >> And build the teams that distributed You
+1715 are all remote. How many countries?
+1717 >> We have people in over 60 countries.
+1721 >> Okay. How many people?
+1722 >> 360.
+1723 >> Okay, so like only like a few people a
+1725 handful of people per country.
+1727 >> Yes, exactly. Yeah, completely no
+1730 offices, so it's all online. Yeah.
+1732 >> How do you build a company like that
+1733 way?
+1735 >> Um
+1735 >> Do it again?
+1736 >> Sorry?
+1737 >> Would you do it that way or is that the
+1737 only way you know?
+1738 >> I would absolutely do it again. Um
+1741 >> That's That's why you can travel to
+1742 Paris and like
+1742 >> Yeah, yeah, yeah, exactly. Be based
+1744 here.
+1745 I think um
+1746 you can't half-ass it for starters. Like
+1748 you can't do the hybrid model where
+1750 you've got to have some people
+1751 distributed, some people in an office.
+1754 For us, we do everything written online.
+1758 The reason why I'd do it again now is
+1760 because
+1761 especially with AI, um we're starting to
+1763 kind of use AI in our business and it
+1766 turns out that everything that has ever
+1767 happened at Superbase has been written
+1769 down on Slack and Notion. And everything
+1772 every decision that is happening is
+1774 happening written down. And so for us to
+1777 say to an agent, "Hey, what was that
+1779 decision that we made 6 years ago?" Uh
+1782 we can actually prompt it and it'll find
+1784 it in Slack
+1785 >> even though it was right at the start.
+1786 >> So most people have agents who know
+1788 everything for the last 6 months.
+1790 >> Yeah.
+1790 >> They know everything from the last 6
+1791 years.
+1792 >> From the start. So if I want to build
+1794 the fundamental principles of how we
+1796 operate in Superbase, the agents can do
+1798 it.
+1799 >> Uh we're nearly out of time. Okay, last
+1800 question.
+1802 Uh
+1803 is there any bet
+1805 uh that you are thinking about now that
+1808 uh you would
+1809 that would drive what uh the company's
+1811 going to do in the next 5 10 years?
+1814 >> For Superbase?
+1815 Yeah, I think um and this one might be
+1817 interesting for for you as well. A lot
+1820 of the time the agents uh thinking right
+1823 now like in the build stage, so
+1825 prompting, "Hey, I need an application.
+1828 Uh can you build it for me?" But there
+1830 isn't a lot of emphasis and the much
+1832 harder thing is like how can I continue
+1834 to operate this once it's built. So a
+1837 database is really one of these
+1839 problems. So for us it'll would
+1841 self-driving databases, how to operate
+1844 the database so that you don't have to
+1845 wake up at night and see oh my database
+1848 is down or it's insecure or all these
+1850 patches come and all these things should
+1852 be self driving essentially. So,
+1855 I think this is also interesting for
+1856 many people because what you see is a
+1858 lot of these startups launching now that
+1861 are very easy to replicate because
+1863 they're in the boom stage. It's much
+1865 harder. You want to focus on hard
+1866 problems, right? And the operate stage
+1868 is one of those harder areas to to
+1871 actually launch in.
+1872 >> Excellent. Thank you, Paul. Big round of
+1874 applause for Paul.
+1876 >> [applause]

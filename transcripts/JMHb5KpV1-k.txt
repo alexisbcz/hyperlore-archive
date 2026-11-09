@@ -1,0 +1,1783 @@
+[0] we're obsessed with that customer
+[1] experience. We call ourselves the
+[3] front-end cloud because we propose that
+[6] teams start building front-end first.
+[8] Start with the customer, start with what
+[10] you want to deliver, start with how fast
+[12] it is, how dynamic it is, and then work
+[14] backwards into the technology.
+[21] Hello. Welcome to the DevTools.fm
+[23] podcast. This is a podcast about
+[24] developer tools and the people who make
+[26] them. I'm Andrew and this is my co-host
+[27] Justin. Hey everyone. Uh we're really
+[30] excited to have Guillermo Rauch on with
+[32] us today. Guillermo, uh you
+[35] either directly or indirectly have
+[37] really impacted a lot of the work that
+[39] Andrew and I have done over the years,
+[42] you know, be it your early development
+[44] work working on things like Socket.IO or
+[46] obviously now the work that Vercel
+[48] enables. The web page for our podcast is
+[51] hosted on Vercel and sponsored by
+[52] Vercel, which we appreciate. Um so we're
+[55] really excited to have you on. Uh before
+[57] we dive into the questions, would you
+[59] like to tell our audience a little bit
+[60] more about yourself? Hey folks, I'm
+[62] Guillermo and the founder and CEO of
+[64] Vercel and the creator of Next.js and
+[66] I'm really happy to be here because I
+[67] love dev tools and what Vercel does is
+[71] provide developers with the best
+[72] possible dev tools to build the fastest
+[75] and most personalized web experiences on
+[77] the internet. Cool. So uh you Before
+[80] Vercel, you had a a long life as an
+[82] open-source person. Uh you'd had a lot
+[84] of really cool projects. You were the
+[87] creator of Socket.IO.
+[90] I was visiting the MuTools page and I
+[91] saw your old picture with Yeah. With
+[94] with your emo haircut. Fun to see. Uh So
+[97] from those days Yes. I was 16. Oh wow.
+[102] Yeah, so from those days, how did how
+[104] did those tools and ideas shape where
+[106] you went with your career and where
+[107] Vercel is at today? It's funny you
+[109] mentioned Socket.IO because a lot of
+[111] people still get surprised that I
+[112] created Socket.IO. Just like holy
+[114] the Vercel CEO created Socket.IO. And it
+[118] is surprising to me even in that like I
+[120] didn't start a company for Socket.IO.
+[121] Like that thing became so popular. I got
+[124] lucky in that I I think I hit really
+[126] good timing with a open-source solution
+[128] for building real-time web applications.
+[131] Real-time everything has sort of been
+[133] the calling of my career. If you think
+[135] about what we do today at Vercel is
+[137] really making everything real-time like
+[139] make the deployment process feel
+[141] real-time. Iterating really quickly on
+[142] projects. Socket.IO was amazing because
+[146] I was able to give the world a solution
+[148] for something that everybody wanted,
+[150] which was creating these real-time
+[152] applications that are like chat-like,
+[153] interactive, etc.
+[155] And they couldn't do it at the time
+[156] because web browser support was so
+[158] lacking.
+[159] So I kind of filled a very interesting
+[162] niche of you want to build the future.
+[164] Web browsers don't support yet, so you
+[165] need a developer experience that bridges
+[168] the gap. So I learned a lot from that
+[169] project and one of the big takeaways was
+[172] when I introduced Socket.IO,
+[174] the hello world example was seven lines
+[177] of code
+[178] and I kept code-golfing it to just make
+[181] the thing really easy to understand. So
+[183] you could create a chat app or the
+[185] back-end for a chat app in like seven
+[187] lines of code. And people still love it
+[189] for that reason. It's just so ergonomic.
+[191] The developer experience is so great.
+[193] And MooTools was very similar, too. So
+[196] if you think about jQuery and why
+[197] projects like that became so popular,
+[199] kind of the same pattern, right? Like
+[201] the browser lacks some APIs or they're
+[204] super clunky.
+[205] What what if we created a developer
+[207] experience on top of that and
+[209] distributed as a library? So
+[212] yeah, those were the a huge inspiration
+[214] for me as I as I thought about creating
+[216] Next.js and starting Vercel. Uh you
+[218] know, make saving saving developers'
+[220] lives saving developers' time in in
+[223] their lives, I think is is one of the
+[225] most important things we can do for just
+[227] like overall productivity, quality of
+[229] life, creating better products,
+[232] unleashing them into the world. But also
+[234] I think the other thing that I couldn't
+[235] do with Socket.IO at the time was
+[237] can I create an infras- infrastructure
+[239] business on top that not only makes it
+[243] easy to create things, but then for
+[245] businesses, it gives them some ROI. It
+[248] gives them a return on investment. Like
+[251] if I buy this thing, if I give my
+[252] developer this tool, it makes my
+[255] business better in a measurable way. So
+[257] besides those projects, besides like
+[259] MooTools and Socket.IO, when you're
+[261] thinking up to sort of like the lead-up
+[263] of Zeit
+[266] and then Vercel, like what was the sort
+[269] of like pivotal projects in that
+[270] journey? One huge pivotal moment for me
+[274] was realizing that we had React in open
+[278] source. It was uh
+[280] I call it sometimes like the discovery
+[282] of like a fundamental physics for
+[286] developers because before React, it was
+[288] really hard to collaborate and share
+[291] units of work. We'll call them
+[292] components for the sake of this
+[294] conversation. And when I sat down to
+[297] actually create something with React,
+[300] that's when using investment terms like
+[302] I saw alpha.
+[303] Cuz you have React, it's amazing in
+[305] theory,
+[307] but you want to put it to use and the
+[310] meme at the time was you needed take a
+[313] get a PhD and you've seen those funny
+[317] photos of like a huge blackboard that is
+[319] like a hundred times the size of of the
+[321] person writing on it and there's all
+[323] these equations. Like creating a project
+[325] with React felt like that. And going
+[328] back to what I was good at, right? Like
+[330] with things like Socket.IO and MooTools,
+[333] I'm good at creating a developer
+[335] experience on top of systems that are
+[339] very hard to get it started with. That
+[341] would be the kind of the and
+[342] democratizing those systems.
+[344] So another metaphor I give people is
+[347] React was like the discovery of a new
+[350] awesome kind of engine,
+[352] right? Like the steam engine or uh Tesla
+[356] electric engine. But what most people
+[359] want is to get from point A to point B
+[361] with a car. And so Next.js sort of
+[363] filled the need of like here's your car.
+[366] It's going to get you places.
+[368] It has an engine and some people are
+[370] like huge fans. Like they get into the
+[373] weeds. They pop up the frunk and they
+[376] look at like, okay, what's in here? Um
+[378] most people don't really care as as it
+[381] turns out, especially as you go into
+[382] like higher and higher levels of the
+[384] kinds of companies that we talk to
+[386] today.
+[387] The reality is that they don't care that
+[389] much about like each knob and each gear
+[391] and each piece that went into
+[392] constructing that engine.
+[394] But more and more so, people are
+[395] becoming aware that they need to make
+[396] their developers productive
+[398] and that hiring software developers is
+[400] how they're going to actualize their
+[401] businesses,
+[402] especially for the largest companies in
+[403] the world. And so we kind of I was able
+[406] to create a technology that kind of
+[408] satisfied both needs and uh yeah, turned
+[411] out pretty well. But I mean embedded in
+[412] a huge way to Meta open-sourcing React
+[416] and uh Google open-sourcing a bunch of
+[419] other cool things like Kubernetes. We
+[421] can talk get into the infra side of
+[422] things if you want. Uh but yeah,
+[424] building on open source was a was a huge
+[426] part of what makes us successful. Yeah,
+[428] I I can see that theme of making a
+[430] complicated tool simple with like the
+[432] first product I knew from Zeit. Uh now
+[435] you just run now at your CLI and you get
+[438] something pushed to the cloud. So since
+[441] those days, uh the company's changed a
+[443] lot. It's got a different name, uh a few
+[445] different products. Like the first thing
+[447] I actually associate associated you guys
+[449] with was a terminal of all things.
+[451] That's awesome. I was just tuning my
+[453] terminal yesterday and I was like
+[455] terminals are freaking awesome and
+[457] that's why we started that project, but
+[458] it was a total side quest. We'd like to
+[460] thank our sponsor for the week,
+[462] CodeCrafters. CodeCrafters makes
+[464] programming challenges for experienced
+[465] software engineers. If you're looking
+[467] for a weekend project that takes you to
+[469] the edge of your programming abilities,
+[470] you got to check them out.
+[472] Uh I've I've worked through a few of
+[474] their challenges now. I've done the
+[476] build your own Reddits, which was a fun
+[478] introduction. I leveled up to do the
+[480] build your own Git, which was a much
+[482] larger challenge. One of the cool things
+[484] about CodeCrafters is not only are you
+[486] learning to do some programming language
+[490] better and learn about some modern tool,
+[493] you're also learning how to like sift
+[495] through their code, sift through their
+[496] docs, learn about their protocols, and
+[499] really get to the bones of how these
+[500] services actually work.
+[502] I haven't started it yet, but my next
+[504] challenge for the last leg of this
+[507] sponsorship is to try to build my own
+[509] SQLite. On the podcast, we've had lots
+[511] of companies and products come on that
+[513] are built around SQLite and all the cool
+[516] things that it enables. So I think it
+[518] would be pretty cool to get to learn how
+[519] it actually works.
+[520] If you ask me, learning like this is way
+[522] better than grinding on some LeetCode.
+[524] You actually get to build real skills
+[526] and have fun while doing it. Besides the
+[527] content, even user experience is
+[529] targeted towards experienced software
+[530] developers. For example, instead of
+[532] trying to tie you into a custom
+[534] in-browser experience to edit code,
+[537] CodeCrafters lets you use your IDE and
+[538] your terminal. So you work as you
+[540] normally would, push up to CodeCrafters,
+[543] they run the tests, and they tell you if
+[544] you pass. If you ask me, it's pretty
+[546] cool. To try out CodeCrafters for
+[547] yourself, visit
+[548] codecrafters.io/devtools-fm.
+[551] There you'll get a 40% discount and
+[554] you'll be helping out the podcast a
+[555] little bit, too. That's not the only way
+[557] to help out the podcast. You can become
+[558] a paid member.
+[560] If you become a paid member, you get
+[561] access to our episodes a little bit
+[563] early and you never have to hear any of
+[564] these ads again.
+[566] If you want to sponsor DevTools.fm, head
+[568] over to devtools.fm/sponsor
+[570] to apply.
+[571] And with that, let's get back to the
+[572] episode. So how would you explain the
+[574] company Vercel to someone who doesn't
+[576] know anything about it right now? Yeah,
+[578] I think every business today is becoming
+[581] a digital business. That's like what we
+[583] all agree upon, right? And becoming a
+[586] digital business is actually really,
+[587] really hard.
+[588] Even though there's things like the
+[590] cloud and AWS and like all this amazing
+[593] open-source knowledge, doing something
+[596] at the level of the giants of the web,
+[599] like Amazon, Google, Meta, is extremely
+[603] hard. But that's today's battlefield. If
+[606] you're a, you know, competitor of
+[608] Amazon, like how do you get started in
+[610] this world? Like deploying a massive
+[613] storefront at planet scale that's really
+[614] fast and personalized and ever
+[617] improving. So we wanted to democratize
+[619] the tools and infrastructure for
+[621] businesses of all sizes to be able to
+[623] get to that level of proficiency and
+[626] excellence. So Vercel is a platform for
+[629] folks that have very ambitious ideas. If
+[631] you want point-and-click, drag-and-drop,
+[633] and build a website for a restaurant,
+[636] Vercel may not be the perfect fit.
+[638] But if you're thinking about doing
+[639] something ambitious on the internet, and
+[641] when I talk about ambition, for example,
+[643] Next.js, our open-source framework,
+[645] powers ChatGPT. And it powers like,
+[648] actually, a lot of the generative AI
+[650] companies and
+[652] a lot of the best storefronts in the
+[653] world, and Nike.com,
+[656] and I'm really happy that we've been
+[658] able to kind of find a good balance
+[660] between ease of use, but also there's
+[662] basically that's this infinite ceiling
+[665] of how big you can get and how big you
+[667] can build with our technology. How has
+[669] the vision of the company sort of
+[671] changed over time? So what was it like
+[674] when you like started? Did you have kind
+[676] of an inclination of where you wanted to
+[678] land or like how's that evolved? Yeah,
+[681] it's it's a really good question because
+[683] vision for the technology wise, it
+[686] actually hasn't changed that much. I
+[687] sometimes go back, one of our the cool
+[690] properties of Vercel is that you can
+[692] time travel to everything that you've
+[694] deployed going years back. So I went
+[698] back to like our earliest landing pages,
+[700] and I clicked, let's see the deployment
+[702] for this landing page.
+[703] And every time I read that stuff, I'm
+[705] like almost like impressing myself,
+[707] because I'm like, wow, you were spot-on.
+[710] Like I think um for now, the product
+[712] that you called, Andrew, we called it at
+[715] the time real-time global deployments.
+[718] Was it one of the first taglines.
+[720] And and it really hasn't changed that
+[722] much. Like one of the things that we do
+[723] really well today is that we allow these
+[725] large merchants or huge companies like
+[729] launch globally, which is really hard.
+[731] But it was very feature-based
+[733] at the time. I think this is probably
+[735] the most growth that I've experienced
+[737] personally as a leader of this company
+[740] being able to actualize the messaging
+[742] and make it resonate with more kinds of
+[745] buyers, other kinds of developers, other
+[748] kinds of architects, engineers,
+[751] decision-makers.
+[752] So I think that's the biggest thing is
+[753] like the vision never changed from a
+[755] technology standpoint.
+[757] We wanted to unleash this really fast
+[759] tooling, this really great developer
+[761] experience onto the world, uh take all
+[763] the pain away from creating and a
+[765] scaling infrastructure.
+[767] But today, I give you sort of the
+[771] ambition of creating the best products
+[775] when I talk about what we do for you.
+[777] And then we can get into the how. And I
+[779] think that's a really healthy thing as a
+[781] company grows because we change and
+[783] adapt our tools. Today is Next.js, but
+[786] for example, we also added through an
+[789] acquisition, we acquired a company
+[791] called Turbo. Uh Turbo Repo is a way of
+[795] orchestrating large mono repos of code
+[798] for really, really large builds. And we
+[801] didn't start with that. And it didn't
+[803] quite fit that tagline of like global
+[805] deployments. In some ways, Turbo comes
+[808] before the application framework,
+[812] but it is in the same vein of like,
+[813] here's tools that the giants of the
+[815] internet use, like companies like
+[817] Google. I think Google has the largest
+[818] mono repo in the world, like billions of
+[821] lines of code. And I wanted to
+[823] democratize that technology.
+[825] Now, that technology again is a point
+[827] solution in the service of you create
+[829] amazing experiences on the internet,
+[831] amazing products for your customers. I
+[833] think when I as I keep reflecting on
+[835] like what truly makes us different as a
+[837] company and and as a group of people on
+[840] a DNA level is that we're obsessed with
+[843] that customer experience. We call
+[845] ourselves the front-end cloud because we
+[847] propose that teams start building
+[850] front-end first. Start with the
+[851] customer, start with what you want to
+[853] deliver, start with how fast it is, how
+[855] dynamic it is, and then work backwards
+[857] into the technology. Yeah, through that
+[859] lens, it makes a lot of the things that
+[861] you guys have done recently make a lot
+[863] of sense. So like one joke you might see
+[865] about Vercel on Twitter is that they
+[867] just wrap services, but that is exactly
+[869] what you're saying is that we want to
+[871] wrap these services so that we've
+[873] democratized them and make them easy to
+[875] deploy for anybody cuz like on Vercel, I
+[878] want to run on the edge, I just export a
+[879] variable. Oh, I want to have a Postgres
+[882] database, key-value store, oh, right
+[884] there, right off the shelf. Yeah, that's
+[886] a that's a really good point. That's
+[887] exactly how we architect. So first is
+[890] what do you need to solve? What
+[891] experience do you want to deliver?
+[893] And then we work backwards into the how.
+[896] And we abstract out the how from you so
+[899] that you don't have to worry about it.
+[900] So you we you hire us to do that that
+[902] sort of legwork, um and you judge us
+[905] based on the experience. And by the way,
+[906] the more we build out, the more I
+[909] realize that we have to double down on
+[910] this idea.
+[912] Because the things that actually grow
+[913] fastest that we put into the market and
+[915] are most successful
+[917] start that way. And then as they mature,
+[920] as they get more usage, we can optimize
+[922] them based on actual customer feedback.
+[925] So every day I tell myself, keep
+[928] building new things like we built this
+[930] entire company, even though now our
+[932] infrastructure is like has 7 years worth
+[935] of work. If I'm building something new,
+[938] I start with like, all right, developer
+[940] experience, customer experience, then
+[943] work backwards and iterate in public.
+[946] Yeah, I mean that's such a powerful
+[947] concept, and I think that
+[949] um one of the things
+[951] you I mean, Vercel has become a big
+[954] topic in the industry, and there's a lot
+[956] of people that talk about it. I mean, to
+[957] your to your credit. One of the things
+[959] that you don't hear is that, oh, it's a
+[962] bad experience. Like that's not
+[964] something you hear. Like the there are
+[965] things that people will always complain
+[967] about about anything, but like the
+[968] experience is not something that
+[970] anybody,
+[971] you know, has anything to say about. So
+[972] I think that that like what you'll have
+[976] accomplished with the sort of just
+[978] onboarding experience, the ease of
+[980] development, the DX, and everything is
+[982] really powerful.
+[983] I want to transition and and ask you a
+[985] little bit of a different question. So
+[986] so you said you're you're like front-end
+[989] first. You're you're like focusing on
+[990] that first customer experience and
+[992] working backwards, and that makes a lot
+[994] of sense, especially considering some of
+[996] your hiring decisions. So one of the
+[998] things that, you know, folks on Twitter
+[1000] have talked about kind of early on is
+[1002] you've hired a lot of people who work on
+[1004] these core frameworks. So you have Rich
+[1006] Harris on staff who works on Svelte. Uh
+[1010] you have Sebastian on React. So what is
+[1013] your thinking around the the hires in
+[1017] that area and like the framework levels?
+[1019] Yeah, one of the key things for us is
+[1021] that even though we've seen tremendous
+[1023] success with Next.js, when I think 20
+[1027] years into the future, I think about,
+[1030] you know, we'll be building the best
+[1032] tools for the job,
+[1034] whatever it takes. So as I mentioned
+[1036] earlier, it's about creating the best
+[1038] developer experience for the things that
+[1040] they need at the given time, and we've
+[1042] always been a multi-framework,
+[1043] multi-runtime company.
+[1045] In many ways, and this is an
+[1047] oversimplification, but if you've never
+[1048] heard of Vercel, the using the famous Y
+[1052] Combinator X for Y explanation, we're
+[1054] like AWS for the front-end, right? And
+[1058] that means that you have to be if you if
+[1061] you have that kind of aspiration, you
+[1063] have to be very versatile. You have to
+[1065] be very open-minded about what
+[1066] solutions, what languages, what
+[1068] technologies you support. So Svelte is a
+[1071] really, really example of a completely
+[1072] different take.
+[1074] It's not React. It's different syntax.
+[1078] It's maybe you can call it like signals
+[1080] versus
+[1081] uh re-rendering or effects or whatever.
+[1084] And we want to have that point of view
+[1086] inside the company
+[1088] so that we can build the infrastructure
+[1090] that this framework is connected in a
+[1093] very versatile way. So the
+[1095] infrastructure has to be very flexible
+[1097] to serve the needs of us wide of a range
+[1100] of possible
+[1101] of people that want to build this way.
+[1104] So notice that we call it front-end, we
+[1106] do a lot of back-end things, which is
+[1108] sometimes like
+[1109] uh maybe throws people for a for a loop.
+[1111] But the the thing is that when you build
+[1114] with Svelte, when you build with React,
+[1116] when you build with Next.js, when you
+[1117] build with Nuxt, you're building the
+[1120] customer-facing part of the experience,
+[1122] and that's where we want that
+[1123] flexibility.
+[1124] And then we want to build infrastructure
+[1126] that perfectly serves the needs of both
+[1128] the end users. So of course, when you go
+[1130] to like Under Armour.com, it has to be
+[1132] really fast, but also we see the
+[1135] community of framework creators as our
+[1138] customers as well. So we support like 40
+[1141] frameworks, I believe, out of the box.
+[1144] So by getting the inputs of Sebastian
+[1147] and getting the inputs of Rich, we're
+[1149] building the best possible platform. So
+[1152] recently, you guys have been working
+[1155] towards a pretty big goal of React
+[1157] Server Components. I've read on Twitter
+[1159] that like basically, you guys are the
+[1163] people who invested in it, and it's why
+[1165] it's really even a thing. So as a
+[1167] company, why did you guys think that RSC
+[1169] was the right bet to make? Yeah, it's a
+[1171] great question because I created
+[1173] Next.js, and I had a lot of influence
+[1176] over the design of the pages router.
+[1179] So to replace that is like killing your
+[1183] baby.
+[1184] You know, like I love my baby pages
+[1186] router, and I I honestly do. Like we've
+[1189] done incredible things with with it. If
+[1191] you think about all the companies that
+[1193] we've served, one of the things that
+[1195] used to be really hard for
+[1198] I think for the internet in general, but
+[1201] for for Vercel was
+[1203] the customer built something, they
+[1205] launch it, and it needs to scale to like
+[1208] unknown
+[1209] amounts of traffic, and it has to be
+[1211] very efficient. With Pages Router, we
+[1213] did more than just create a developer
+[1215] experience. We created a framework that
+[1217] had these novel integrations into cloud
+[1220] infrastructure, like ISR,
+[1222] that allowed people to scale to the tune
+[1224] of like we went from like zero to tens
+[1227] of billions of requests per week as a
+[1229] platform. And a lot of that IO to the
+[1232] fact that we created great integrations
+[1234] between Next.js and the cloud.
+[1236] So, it's more than just you get good
+[1238] feedback when you develop locally.
+[1240] When you deploy,
+[1241] you're orchestrating this global
+[1244] footprint of services and caching
+[1246] systems and and functions and serverless
+[1249] and other things. So, the framework
+[1252] worked really well, but it had a lot of
+[1254] really important limitations as I saw us
+[1257] going from that initial customer base to
+[1260] even more demanding software
+[1263] applications. So, particularly one of
+[1265] the things that we did well with Next.js
+[1267] Pages Router is that we gave you a model
+[1269] for what we would call like hybrid
+[1271] static and dynamic pages. So, the
+[1274] workload could be
+[1276] backed by a headless CMS, for example,
+[1278] or some e-commerce API.
+[1280] And then when we render,
+[1282] we can push that page to the edge, and
+[1284] then when the content change changes, we
+[1286] can regenerate it at uh runtime.
+[1289] That was very important in our
+[1290] competition at the time with Gatsby.
+[1292] Gatsby was fully static generated,
+[1294] worked really well if you had 100 pages,
+[1297] went over that, and all of a sudden like
+[1300] it just doesn't scale.
+[1301] But even our framework for the most
+[1304] demanding applications and most dynamic,
+[1306] most personalized applications in the
+[1308] world was also too static.
+[1311] And what it resulted in was
+[1313] you had to use a lot of client-side
+[1315] JavaScript in order to actually deliver
+[1317] on
+[1319] things like AB testing, feature flags,
+[1322] advanced personalization.
+[1324] Think of even what merchants are doing
+[1326] today. Like you go to Amazon, and then
+[1329] AI summarizes all the user reviews. So,
+[1332] that level of dynamism required us to
+[1335] basically forego a lot of the
+[1337] assumptions that we put into the
+[1338] framework. For example,
+[1340] the entire page gets hydrated. Every
+[1342] single component has to get hydrated all
+[1345] at once.
+[1346] Uh the fact that data fetching happens
+[1349] all in one function, and you have to
+[1351] decide if the page is entirely static or
+[1354] entirely server rendered. So, we needed
+[1356] something that actually kind of did what
+[1358] Next did in that competition with
+[1360] Gatsby, but again, al- although this
+[1362] time in competition with ourselves. In
+[1364] some ways, I think what's really
+[1366] interesting is that the biggest
+[1367] competitor of App Router is Pages
+[1369] Router. And it's weird because it's
+[1370] coming from the same vendor. But it's
+[1372] actually solving for all the pain points
+[1374] that we experienced with it. And
+[1375] sometimes I think what happens is that
+[1377] folks are not yet at that level. They
+[1379] haven't really seen the problems that
+[1381] the framework creates down the down the
+[1383] road. So, it might be like, "Oh, maybe
+[1385] I'm just okay with Pages Router." And
+[1387] that's totally okay with it because we
+[1388] still support it. But some of the things
+[1390] that we experienced ourselves at Vercel
+[1393] with the limitations of Pages Router are
+[1394] actually what's directly influencing the
+[1398] adoption of React Server Components. So,
+[1400] one of them one of them that comes to
+[1401] mind is um
+[1404] our our marketing website is built with
+[1406] Next.js, and our cloud console is built
+[1410] with Next.js. When we want to do things
+[1412] like experimenting on a small portion of
+[1414] the page, Next.js Pages Router makes you
+[1417] almost go back to the thing that Next.js
+[1419] was trying to get rid of, which is you
+[1421] go back to like Create React App in a
+[1423] fully client client-rendered
+[1425] application. What we saw is that, you
+[1427] know, that has a tremendously negative
+[1430] impact in your Core Web Vitals. It
+[1432] actually makes engineers, and this goes
+[1434] even into like why Vercel exists, it
+[1437] makes engineers more fearful about
+[1439] experimenting with new ideas.
+[1441] One of the things that makes Vercel
+[1442] really special is just how experimental
+[1444] we are and how many things we try before
+[1447] we put into the hands of customers. We
+[1449] have hundreds of flags at any given time
+[1452] that inform different new experiences
+[1454] that could be launched or could be
+[1456] killed. So, we we found that the
+[1459] previous version of our framework was
+[1460] kind of inhibiting that fearless
+[1463] evolution, fearless dynamism of the
+[1465] experience, and we needed something
+[1467] better. I think React Server Components
+[1469] is amazing because it's the first time
+[1470] that I've seen a comprehensive solution
+[1472] to that problem. And it's exciting for
+[1474] the open-source community because, going
+[1477] back to that idea of like Google, Meta,
+[1479] Amazon, they have internal versions of
+[1481] this. Amazon, for example, is very
+[1483] famous for they stream
+[1486] the experience. Like I I I always like
+[1488] showing people like if you zoom out and
+[1490] you go to the product detail page of
+[1492] Amazon, you can see it coming to you in
+[1495] chunks. And what's fascinating is that
+[1497] to the end user, almost feels like a
+[1499] static page. That's how fast it is. They
+[1502] think it's cached. So, that's kind of
+[1504] what I I am my ambition for the for App
+[1507] Router and React Server Components is.
+[1509] It's so fast that you think it's the
+[1512] entire page was already computed for
+[1514] you, and it's in some cache somewhere.
+[1516] In reality, it's being assembled and
+[1518] streamed on demand for you. And the
+[1521] content is exactly what you like,
+[1523] uh if you're a logged-in visitor, what
+[1525] you've seen recently, your
+[1527] recommendations, what you left in the
+[1529] cart, things like that. And those are
+[1531] the things that again
+[1533] really move the needle
+[1535] for the kinds of people that are
+[1536] building these sophisticated sites. So,
+[1539] now that y'all have I mean, you've been
+[1541] working on the sort of React Server
+[1543] Component integration, especially into
+[1544] Next, for a long time. Uh what are some
+[1547] exciting examples that you've seen of
+[1549] it? Yeah, so the very first company that
+[1552] comes to mind is walmart.com.
+[1555] Uh they refactored from Pages Router App
+[1558] Router,
+[1559] and
+[1560] they were one of the earliest adopters
+[1562] of the framework. So, they had not yet
+[1565] um they basically like took a chance on
+[1567] it even when like I believe it wasn't
+[1569] even stable yet. And what they told us
+[1571] is like it kind of blew my mind. Like
+[1573] doing like tens of millions of dollars
+[1575] in revenue
+[1576] through this faster version of their
+[1578] storefront with a tiny team. In fact,
+[1581] the the fact that a startup could build
+[1585] something
+[1586] so complex, so dynamic, and put it out
+[1590] and just start receiving all this
+[1592] revenue kind of blew my mind.
+[1594] It was kind of that idea of like, can I
+[1596] give the infrastructure to people of
+[1598] what rivals amazon.com, but democratize
+[1601] it for the rest of the world? So, it was
+[1603] it was um it was amazing to see uh early
+[1605] on.
+[1606] Another thing that's
+[1607] really exciting is our most successful
+[1611] customers
+[1612] have already migrated to App Router or
+[1614] in the process of migrating to App
+[1615] Router. And this is with us again giving
+[1618] you all of the options. You can stay
+[1620] where you are, you can adopt App Router,
+[1623] but typically as people mature their
+[1625] applications, they start hitting the
+[1627] limitations of Pages Router
+[1629] and
+[1630] uh want to embrace uh React Server
+[1632] Components. Another thing that comes up
+[1634] a lot is it used to be impossible
+[1638] to sort of maintain the stability of
+[1641] your caches as you make releases. So,
+[1644] um let's say that I'm caching some
+[1646] content comes from a CMS, and in the old
+[1648] world with ISR, I would push it,
+[1651] Vercel would cache it, I roll a new
+[1654] version of my site, all my caches are
+[1656] gone.
+[1657] So, one of the very exciting things that
+[1659] React Server Components solved for us is
+[1661] this idea of decoupling the cache of the
+[1664] content and the backends from the actual
+[1667] page rendering. And and of course, today
+[1669] you can still cache the entire page if
+[1671] you want, but the fact that we have this
+[1673] sort of like several layers after the
+[1677] page begins rendering
+[1678] is making it such that deploying doesn't
+[1681] take away from sort of what you've been
+[1683] building up until that time. So, it
+[1686] means better stability for your backend.
+[1689] It means deploying more fearlessly
+[1691] because you're not sort of hurting the
+[1693] existing experience.
+[1695] Um generally speaking, it's been
+[1696] exciting to see how everybody's adopting
+[1698] it for new projects as well.
+[1700] figma.com, for example, just migrated
+[1702] from, interestingly enough, Gatsby into
+[1705] the Next.js App Router. So, it's always
+[1706] awesome to see To me, something I've
+[1709] I've always
+[1710] felt really proud of is
+[1712] the companies that I respect, the tools
+[1714] that I use, the the folks that I want to
+[1716] work with
+[1717] choosing our tools, right? And so,
+[1720] Stripe launched their um Black Friday
+[1722] experience on the Next.js App Router.
+[1725] figma.com, a lot of awesome websites are
+[1727] adopting it, and uh and we continuously
+[1730] improve it. Yeah, the the App Router is
+[1732] really interesting. It just allows you
+[1733] to craft your code in such a different
+[1735] way. Like the thing that one of the
+[1736] tweets from you that made it click for
+[1738] me was somebody was like, "What's the
+[1740] equivalent of like get static props for
+[1742] for this?" And he's like, "That you're
+[1743] just like that's it. That's that's the
+[1745] whole thing. You can use that but at any
+[1747] point in the tree now." And I think
+[1748] that's just so simple and really unlocks
+[1750] a lot of cool things. And you know
+[1752] what's funny? That was the
+[1754] that was the top feature request for so
+[1756] many years. So, something that's been
+[1758] great about React evolving in this way
+[1761] is that
+[1762] we would get all these feature requests,
+[1764] and we literally could do nothing about
+[1766] them. So, when we launched get static
+[1768] props and get server-side props, people
+[1770] would say, "Awesome. I want exactly
+[1773] that. You nailed it, but please give it
+[1776] to me on the component level." And I was
+[1778] like, "Well, there's almost no way I can
+[1780] do this." Layouts is another great
+[1782] example of we've been People have been
+[1784] asking for layouts for so many years,
+[1787] and
+[1788] we didn't do it for so many years
+[1790] because we couldn't find a way that it
+[1792] would be sustainably implemented.
+[1795] We knew what was coming ahead for React.
+[1798] We knew that, for example,
+[1799] suspense-based data fetching was coming.
+[1802] So, we we had to be very careful in how
+[1805] added to React
+[1807] so that we wouldn't get in the way of
+[1809] its development. Get initial props, get
+[1812] server-side props, and get server-side
+[1813] props were awesome innovations because
+[1815] they sat they sat outside of React. You
+[1818] were like, "Okay, React, like now you
+[1820] take over."
+[1822] And in that way, Next.js they just
+[1823] router was a very collaborative player.
+[1826] So, we route with Next.js, we do the
+[1829] initial data fetching with Next.js, and
+[1831] then we hand it off to React.
+[1833] What's happening today is that it's
+[1836] React itself that I need to fetch the
+[1838] data.
+[1839] In order to create those very dynamic
+[1841] streamed experiences,
+[1844] React has say, "Okay, now I have to
+[1846] fetch some data." Or, if it's not avail-
+[1848] available, I have to give you the
+[1849] skeleton. So, I flash and I stream the
+[1852] fallback. And now I continue down the
+[1854] tree, "Oh, I need some more data. Maybe
+[1856] I can fetch it from the cache.
+[1858] Maybe I render, I stream it to the to
+[1860] the end user." So,
+[1862] um
+[1863] in a nutshell, it's been amazing to see
+[1866] that React is taking more of the burden
+[1868] of what we needed and in many ways
+[1871] couldn't implement. And now Next.js can
+[1873] sort of be it's it realizes full vision.
+[1877] Yeah, in practice it kind of just makes
+[1879] the whole API melt away. It's like, I
+[1881] don't I'm not really caring about like
+[1882] using Next.js APIs to get my data. I
+[1885] don't really have to make API routes
+[1887] that just that's just part of my app and
+[1888] it all just kind of fits together. Yeah,
+[1890] I remember a a conversation I had with
+[1892] uh Seb at one point and I was like,
+[1895] "It's almost like you didn't realize
+[1897] that creating an API
+[1899] and creating a React front end
+[1902] were almost like two products." So, if
+[1904] you think about Think about what what
+[1906] comes to mind when you think world-class
+[1907] API? You think, well, like Stripe and
+[1910] their awesome documentation and how they
+[1913] authorize API calls and how they manage
+[1916] rate limits and observability. That's
+[1919] actually how you create a world-class
+[1920] API product. And then, you create a
+[1923] product experience for an end user. What
+[1925] Next.js almost asks you to do is to
+[1927] partake in the journey of creating two
+[1929] products even when your intention was to
+[1931] create one.
+[1933] So, most people need to create just some
+[1936] application on the web. If we ask them
+[1938] to create an API, we're now asking them
+[1940] to create another application. And that
+[1943] comes with security implications. They
+[1945] have to like think about how to secure
+[1947] the API endpoint, which will get exposed
+[1949] to the entire internet, how to document
+[1952] it, open API specs, and so on and so
+[1955] forth. And then they need to worry about
+[1956] implementing their product. So, to your
+[1958] point, it feels like the present is just
+[1961] very streamlined. Yeah, I felt this
+[1964] really strongly in my time at Oxide is
+[1966] like thinking about the API as like the
+[1968] entry point of the product was like a
+[1970] really strong motivator. And it is, like
+[1973] it's a very different mindset when
+[1974] you're crafting a big API. And we kind
+[1976] of see, and I like Next.js has really
+[1979] helped drive this is like we see like
+[1982] originally is like, "Oh, yeah, we'll
+[1984] either
+[1985] server-side render the whole page, you
+[1987] know, really old-school style, or, you
+[1989] know, we'll break it apart and we'll do
+[1990] a spa and API." And then it like kind of
+[1992] got a little bit closer. It's like,
+[1993] "Okay, now we're building back ends for
+[1995] front ends."
+[1996] And the model like scaled really well
+[1999] cuz people realized it's like they were
+[2001] just building APIs because it was like
+[2003] the thing to do. It's like, "Oh, yeah,
+[2004] we need an API for our service." And
+[2006] then the APIs were bad because they just
+[2009] built it for their UI or whatever. They
+[2011] were the only people consuming their
+[2012] API.
+[2013] So, it is nice
+[2015] That That's actually one of the biggest
+[2017] pain points at Vercel that we felt is
+[2019] when we had to create very bespoke APIs
+[2023] just to make one front end experience
+[2025] better.
+[2026] And we talk about this all the time.
+[2028] We're like, "If I were to start this
+[2029] company over again, I would just start
+[2031] it with the app router."
+[2033] I would, you know, talk to my data layer
+[2036] in the most streamlined way possible
+[2039] because really what you're looking for
+[2041] in the early days is product-market fit.
+[2043] You're not looking to create a API and
+[2046] then this front end and then this SPA,
+[2048] and the customer doesn't care.
+[2050] So, you need to get to market really
+[2051] fast, and that's what I'm excited about
+[2053] with this. To your point, it's almost
+[2055] like a return to the old way of
+[2057] building,
+[2058] but we're bringing the future into it.
+[2061] So, it feels a lot like Ruby on Rails in
+[2063] some ways, which is how Shopify built
+[2067] into this magnificent business, and
+[2069] GitHub built itself into a magnificent
+[2072] business, and so many other examples.
+[2074] And yet, it addresses a lot of their
+[2075] shortcomings, right? Like when I
+[2077] navigate GitHub,
+[2079] they retain no client state.
+[2081] Everything is this terrible link thing.
+[2083] They need more streaming, clearly,
+[2086] because sometimes it takes 10 seconds to
+[2087] go from page to page, whereas it could
+[2089] be very incremental.
+[2091] It doesn't feel like a spa. It doesn't
+[2093] feel like instantaneous, like that
+[2094] feeling of a single-page application
+[2096] that is already downloaded. On the other
+[2098] hand, you'll talk to those engineers and
+[2101] they'll tell you
+[2103] that's the most productive they felt in
+[2104] their entire career. Uh they call it a
+[2106] monolith. I reject the premise that you
+[2109] need a monolith. I think what what
+[2110] people really want is a
+[2112] monolithic way of building. I don't
+[2115] think they care that it's deployed into
+[2118] a 64-core
+[2120] bare-metal 4XL instance in AWS or like
+[2124] it's an actual monolith, right? Like a
+[2125] mainframe, like an SAP app or whatever.
+[2130] But the experience of building has to
+[2132] approach a monolith. It has to approach
+[2135] a monolith in the in the data fetching
+[2137] code. Like when I show people the code
+[2139] of React Server Components that looks
+[2140] like PHP, they're like, "Holy crap."
+[2143] Um like, "Yes, thank you, but also why
+[2146] are we returning to 20 years ago?" And
+[2148] that's when we need to explain, "No, no,
+[2149] no, but we're bringing the future into
+[2151] it." Um and and yeah, so
+[2154] I I
+[2155] Some people get frustrated about the
+[2156] pendulum swings,
+[2158] but I've never seen the industry fully
+[2160] pendulum swing.
+[2162] It's not like we're building exactly
+[2164] what we're building with PHP, right? We
+[2166] have this rich client-side model now. We
+[2168] have interactivity. We have optimistic
+[2171] states. We have an entire ecosystem of
+[2174] client-side libraries and components,
+[2176] etc.
+[2177] But we did have to reclaim
+[2180] those benefits of the I think the HH
+[2182] called it the majestic monolith. I think
+[2185] monolithic DX is what people ultimately
+[2188] want.
+[2189] And I'm very happy to sort of be
+[2192] contributing to delivering that to
+[2193] people. So, you you mentioned earlier
+[2196] that like the way you guys build for
+[2198] Vercel is you set out with like a
+[2200] product vision, start at zero, and see
+[2202] if the platform can support you. Uh
+[2205] recently you guys have been
+[2206] experimenting with AI a lot and
+[2208] releasing a lot of like new AI features
+[2211] and libraries. So, like what's your
+[2213] vision for Vercel in the AI category,
+[2216] and what do you guys plan to provide
+[2217] developers? Yeah, in two words, our
+[2219] vision is what we call generative UI.
+[2222] We believe that there is a before and
+[2226] after with these LLMs in their ability
+[2229] to generate code on behalf of users.
+[2232] And these LLMs are actually particularly
+[2234] amazing
+[2236] at generating Tailwind,
+[2238] JSX, HTML, those kinds of things.
+[2242] So, we created V0, which you can think
+[2244] of it as a generative UI design tool.
+[2247] You go in and you paste a screenshot or
+[2249] you talk to it, and you generate UI.
+[2252] This is a This is designed and conceived
+[2255] such that you save like 90% of your
+[2258] time.
+[2259] I don't believe, and there's a lot of
+[2261] chatter on Twitter about this, that like
+[2263] we're going to replace software
+[2264] engineers. But I think we're going to
+[2266] massively augment them with generative
+[2269] UI. And as we were creating this, we
+[2273] completely dogfooded Vercel.
+[2275] V0, and if you want to check it out,
+[2277] it's v0.dev, uses React Server
+[2279] Components for streaming.
+[2281] So, as you as we generate a UI, we give
+[2284] it to the client. Very important because
+[2286] AIs are pretty slow,
+[2288] especially when you have to do a lot of
+[2289] pipelines in very complex products. So,
+[2291] you have to be able to render stuff as
+[2294] it becomes available.
+[2295] The is really interesting and why React
+[2297] Server Components got created is as the
+[2300] name implies, the server
+[2303] could have tens of thousands, millions
+[2306] of possibilities of components.
+[2308] In the conversation I talked about, you
+[2310] can have feature flags, you can have
+[2312] variants of components.
+[2315] And the client doesn't need to download
+[2317] a bundle that contains every single one
+[2319] of them.
+[2320] For example, the client doesn't need to
+[2321] download components in languages that
+[2323] it's not interested in speaking, right?
+[2326] So, with React Server Components, we're
+[2328] able to actually create a product that
+[2330] not only can fetch from lots of
+[2331] different components, can even generate
+[2333] them on demand. So, we dogfooded React
+[2335] Server Components,
+[2337] Vercel KV, Vercel Postgres. This is an
+[2340] example of how we build our platform
+[2342] itself. We build products on it as
+[2345] first-class citizens.
+[2347] From day one, pure Vercel.
+[2350] And along the way, one of the things
+[2351] that really stood out to people was this
+[2353] ability to the LLM respond with
+[2356] something,
+[2357] and we can stream it to the client. And
+[2360] this stream is not just text like
+[2362] ChatGPT does, or markdown.
+[2365] We could stream any kind of visual and
+[2367] interactive representation.
+[2370] So, recently we open-sourced sort of the
+[2372] backing technology of V0
+[2374] uh into what we call the AI SDK.
+[2378] So, the AI SDK allows you to create your
+[2379] own generative UI experiences. Imagine
+[2382] you're Robinhood and you're creating a
+[2384] stock trading AI assistant and you want
+[2387] to say, "What is the price
+[2390] of Apple?" An old school sort of old
+[2394] school from a year ago, an old school
+[2396] chat AI app would just say, "The stock
+[2399] of Apple
+[2400] is Well, first of all, they would tell
+[2402] you the stock of Apple is, I don't know,
+[2404] because I'm an LLM and then blah blah
+[2406] blah. The AI has most recently gained
+[2409] this amazing capability called function
+[2411] calling.
+[2412] Now the AI can respond with like, "Let
+[2414] me call a function to get the price of
+[2416] Apple."
+[2417] The thing that Vercel has open-sourced
+[2418] now into the AI SDK and has given the
+[2420] world is the ability to not just call a
+[2422] function,
+[2424] but call a component. So, we can grab
+[2427] the price of Apple, we can use React
+[2428] Server Components, we can inline the
+[2430] data fetching, so we can say, "Go and
+[2432] fetch uh the stock price from some stock
+[2435] API."
+[2437] In the meantime, we can stream a
+[2438] skeleton or the suspense suspense
+[2440] fallback, so we can give our the
+[2442] customer really nice user experience,
+[2444] and then we give them the chart of the
+[2447] price of the stock over time. So, we're
+[2449] basically democratizing all the
+[2451] infrastructure for you to go and build
+[2452] your own generative UI experiences. And
+[2455] I think this is going to have a profound
+[2456] effect into assistants that people build
+[2459] into their existing applications,
+[2461] um support experiences. A company called
+[2465] Klarna recently talked about and it went
+[2467] viral on the internet about say saving
+[2469] $40 million by automating by automating
+[2472] all these repetitive questions that
+[2473] we're getting from customers.
+[2475] And the other thing that I'm really
+[2477] excited about is that
+[2479] I talked earlier about how unless you're
+[2482] Apple, Google, Meta, reinventing
+[2484] yourself online has been really
+[2486] difficult. Think about, I don't know,
+[2489] PG&amp;E, a company in the US that uh you
+[2492] know, has a website, but they don't have
+[2495] as many engineers as Meta does, and
+[2497] they're trying their best and like all
+[2498] of their world cuz cuz kind of cuz kind
+[2501] of become online first overnight. Or
+[2504] think about banks that used to work with
+[2506] like
+[2507] branches and people walking in to now
+[2510] they're again like digital-first
+[2511] companies. It's very possible that these
+[2514] companies will never get to the point
+[2515] where they built something as good as
+[2517] instagram.com. And they'll just leapfrog
+[2520] creating some of that more than more of
+[2523] that traditional software with forms and
+[2525] lots of clicks and navigations, etc.
+[2528] And they just ship AI experiences. So,
+[2531] I'm really excited about what generative
+[2533] UI can do for the folks that are kind of
+[2535] struggling on the internet. Uh uh
+[2538] another example I always think about is
+[2539] that mobile has been a knot that has
+[2542] been particularly tough to crack
+[2545] for most companies. There's like 10 or
+[2548] 20 native apps that we all use, and then
+[2551] there's a long tail of companies that
+[2552] wish they had an app. But getting the
+[2555] Swift developers, the Android
+[2557] developers, the React developers,
+[2560] and and shipping on three platforms is
+[2562] really difficult. But if you can ship a
+[2565] AI experience, because I open pgne.com
+[2568] and I'm like,
+[2570] "I don't know why my bill is $300.
+[2572] Please help me."
+[2573] Or my my electricity just got cut off. I
+[2576] didn't get a notification. Please help
+[2578] me.
+[2578] So, I think there's going to be a very
+[2580] long tail of user interactions that
+[2583] people are not going to solve with
+[2585] traditional software UI experiences.
+[2587] They're just going to leapfrog to AI.
+[2589] And hopefully this technology can help
+[2591] people get there. Currently, the SDK
+[2594] like only streams components you define
+[2597] though, right? So, it's not like a full
+[2598] V0 like, "Oh, I asked it for weather and
+[2601] then it generated a full weather
+[2603] component for me with all the data
+[2604] fetching and yeah." That you didn't even
+[2606] know you had. That that's kind of by
+[2608] design, by the way, because there's risk
+[2611] with like AI just creating like Imagine
+[2614] that you're
+[2615] Nike and we stream Adidas by mistake,
+[2618] right? So, even the brand experience has
+[2621] to be carefully curated, but I do think
+[2623] that's next, right? Like I believe we
+[2626] can tame these AIs enough that they can
+[2630] create completely novel results,
+[2635] because ultimately what matters to you
+[2636] the most is the data. Right? Like the
+[2639] data has to be accurate and accurately
+[2641] represented. The other thing that you
+[2643] want to infuse is your brand aesthetics
+[2646] and identity.
+[2648] The way to think about that is that
+[2649] that's almost like the system prompt.
+[2651] Your colors, who you are,
+[2654] your values, like I I don't know, like
+[2657] at Vercel we like minimalist, dark
+[2660] things, right? Like that's kind of like
+[2661] my system prompt. I do think we're going
+[2664] to get to the point where V0
+[2667] and some of its
+[2668] fully rampant generative uh capabilities
+[2673] can also be safely embedded into the AI
+[2676] SDK. In the meantime, what people can do
+[2679] is sort of work on like permutations and
+[2683] or base components, and then give some
+[2685] more freedom to the AI to call into
+[2687] them.
+[2688] And that uh a good example here would be
+[2690] a comparison table. You have a more more
+[2693] of a generic component, and you can
+[2695] invite the AI to use it.
+[2698] So, instead of just rendering text, the
+[2700] AI can say, "Well, now I can use a
+[2702] component here." Another way to think
+[2704] about it is you could produce diagrams
+[2708] on the fly,
+[2709] where the SVG is completely generated by
+[2713] chaining two AIs together. You have the
+[2715] function call first generate the React
+[2717] component, to which it passes the
+[2719] properties, and the properties are
+[2721] dreamt up by the AI, and then the other
+[2724] component uses another AI position
+[2726] another model.
+[2727] So, this model kind of lets you do
+[2729] ensemble of AIs, which is another thing
+[2731] we discovered in the production of AI
+[2733] for
+[2735] for V0.
+[2736] Most AI products at scale today,
+[2739] like little known fact, perhaps, are
+[2742] ensembling models together.
+[2745] So, if I go to ChatGPT, I don't know if
+[2746] ChatGPT does this, but I know that a lot
+[2748] of ChatGPT-like products do,
+[2750] and I say
+[2751] um I paste an image and I say,
+[2755] "Get me the strings." There's an
+[2757] optimization that you can do by routing
+[2759] that to a model that's good at that
+[2761] task. Translation is another example.
+[2764] Translate X to Y. Maybe I don't need the
+[2767] full power of the most powerful model
+[2770] that's out there, so I can route it to a
+[2773] more inexpensive model. So, what's
+[2776] really cool about React Server
+[2777] Components is that in a way they're also
+[2780] a great orchestrator of asyncrony. And
+[2783] these AI flows are very hard to actually
+[2787] write code for,
+[2789] because sometimes they have to, for
+[2790] example, plan 10 steps and execute them
+[2793] in sequence.
+[2795] Or they need to call three AIs in a row
+[2798] in order to produce a result while
+[2800] they're giving the customer feedback.
+[2802] So, the AI SDK is not just generating
+[2804] UI, it's also letting you orchestrate
+[2807] these more complex flows of data. It's a
+[2809] really It's a really compelling use
+[2811] case, and I mean, I think the demos are
+[2813] fantastic and V0 is is great. Want to go
+[2817] back to something that you said
+[2818] previously is that, you know, you think
+[2821] that the iteration of AI that we have,
+[2824] this is going to be really augmenting
+[2826] people. It's going to be making
+[2827] engineers be able to do more than
+[2829] they've been able to do before, and
+[2831] you're talking about like companies
+[2832] being able to sort of leapfrog these
+[2834] kind of awkwardly under-engineered apps
+[2837] that are insufficient for their users
+[2838] into something a little bit more
+[2840] tailored.
+[2841] Um
+[2842] the advancements of LLMs, especially
+[2844] recently, has been pretty fast uh
+[2847] relative or it seems really fast, and
+[2849] then we've gained a lot of capabilities.
+[2851] What do you like Where do you see this
+[2854] going the next, you know, 3 to 5 years?
+[2856] How do you see it projecting? I mean, is
+[2858] it going to be
+[2859] augmenting faster or is it like going to
+[2861] radically change how we interface with
+[2862] things? Like what is it going to What do
+[2864] you think that future looks like?
+[2866] I think it's going to I think it's going
+[2867] to continue to has our productivity at a
+[2869] rate that we haven't really seen
+[2872] with let's call them like traditional
+[2874] developer tools, right? So, an example
+[2877] is
+[2878] if you want to make developers more
+[2880] productive with just Next.js,
+[2883] your options are somewhat limited,
+[2885] right? You can improve the development
+[2887] experience,
+[2889] you can make the HMR faster,
+[2891] you can make builds faster. We're doing
+[2893] all of those. We're rewriting the entire
+[2895] compiler into Rust. For the dev mode,
+[2898] experience is almost complete.
+[2900] But what's next after that? What what
+[2903] what do you do when you've written the
+[2904] it into Rust? You write it into like
+[2907] faster Rust? Like, you know, like you're
+[2909] you're kind of like out of options for
+[2911] like traditional developer experience
+[2913] methods. Um one thing is particularly
+[2916] interesting to me is that what do we
+[2918] need to be really good at is translating
+[2922] user intent
+[2923] into working software.
+[2925] That's what Copilot is already starting
+[2927] to show what's possible there.
+[2930] Because sometimes you just write a
+[2932] comment, and then it suggests a
+[2934] completion. That is not a typical
+[2937] developer tool in the sense of like
+[2940] there's no algorithm that anybody wrote.
+[2944] The the the way that it's optimized is
+[2946] not by, you know, making those
+[2947] algorithms faster, etc., etc.
+[2951] And the productivity gains are just
+[2953] massive, right? From from incorporating
+[2955] these kinds of tools.
+[2957] So, I think for a while we're going to
+[2958] see that this two work streams are going
+[2961] to be done concurrently.
+[2964] We're going to continue to improve the
+[2965] performance of build tools. We're going
+[2966] to continue to improve the performance
+[2968] of runtimes. But we're going to hit
+[2970] diminishing returns. All of the alpha in
+[2972] developer experience will be in getting
+[2975] closer to the actual intent of the of
+[2979] the developer designer.
+[2980] So, we almost have to start earlier.
+[2983] Maybe I don't even use Next.js yet. I
+[2985] just have an idea for an app and I can
+[2987] draw it. So, I remember there was this
+[2989] funny tweet that said like with with AIs
+[2992] and LLMs, it's almost like the return of
+[2995] the idea guy in the prominence, right?
+[2998] Cuz the the meme in Silicon Valley was
+[3000] like, there's always some person that
+[3003] wants to start a company
+[3004] and they don't bring much. They just
+[3007] have ideas. And then they have to find
+[3009] the technical co-founder and the techni-
+[3012] and the design co-founder and whatever.
+[3014] I want to make more and more
+[3018] uh
+[3018] that vision possible, not of a person
+[3021] that has not worked on their skills,
+[3024] but yes to having more and more ambition
+[3027] into what you can do full stack. I want
+[3030] to build that entire product from idea
+[3032] to global delivery on Vercel.
+[3035] And perhaps I don't I'm not an expert in
+[3037] Tailwind.
+[3038] Perhaps I don't know
+[3040] what the right UX is for this data
+[3043] schema that I have. Or honestly, there's
+[3046] so much friction in doing that that I
+[3048] perhaps would have not built the
+[3049] product. I find this with myself all the
+[3051] time with V0. People sometimes ask me,
+[3053] how come you post all this random stuff
+[3055] you build
+[3057] on Twitter? Like, when do you have time?
+[3059] And part of that is like I have been
+[3062] doing this for 20 years, so I I've
+[3065] become decent at like trying and
+[3067] deploying things. Obviously, I'm
+[3069] dogfooding the product. I have some
+[3071] unfair advantages that if I ever get
+[3073] stuck, I not only can ask ChatGPT, but I
+[3076] can ask all these awesome colleagues
+[3078] that I have.
+[3079] But in reality, a lot of it is AI.
+[3082] Uh
+[3082] I think four out of the last five
+[3084] products that I built, all of the UI has
+[3087] been built with V0.
+[3088] And for me is that removing that
+[3090] writer's block. There is a writer block
+[3093] that happens with creating products and
+[3096] creating new user interfaces that is
+[3098] tremendous. And uh you you all can
+[3101] probably relate to this experience. I
+[3102] want to self-own for a second.
+[3104] I run create Next.js app.
+[3106] It shows me that page and says, "Welcome
+[3108] to Next.js whatever."
+[3110] And then I delete all of it cuz I don't
+[3112] want it. Sorry, Next.js. Like, I don't
+[3114] want any of your links. I don't want
+[3116] your logo, etc.
+[3118] And and and now what do I have? I have a
+[3120] blank page.
+[3122] And it has Tailwind in there, which is
+[3123] awesome.
+[3124] But what do I Okay, I have to put
+[3126] something in there. And that's where I
+[3127] think
+[3129] V0 and and and all these tools are just
+[3131] going to be amazing because
+[3134] they're going to make us a lot more
+[3135] ambitious with starting new things,
+[3137] keeping new things, etc.
+[3140] You ask, "What are the capabilities that
+[3141] are coming to market that I think are
+[3143] going to take us to the next level?"
+[3146] Okay, so
+[3147] what what if I already have built the
+[3149] application? What if my application is
+[3151] millions of lines of code long? What if
+[3153] it's legacy? What if it's not Next.js
+[3156] app router yet? Do I not get to play
+[3158] with all these toys? And I think the
+[3160] answer is all of the recent advancements
+[3162] like large context windows are going to
+[3164] make it possible to reason over much
+[3167] more
+[3168] code essentially.
+[3170] So, they're going to do wonders for
+[3171] things like migrating from pages router
+[3173] to app router.
+[3174] We actually have done experiments
+[3176] internally with this where
+[3179] in order to migrate our own workload
+[3180] from pages router to app router, we used
+[3182] AI for large large chunks of it. We're
+[3185] going to be able to create and this is
+[3187] this is coming soon for V0. We're going
+[3189] to be able to create code in the style
+[3192] of what you already prefer and what you
+[3194] already have.
+[3196] And then it's going to be huge because
+[3198] yes, it's cute to use V0 for something
+[3200] that's new,
+[3201] but what if I already have a design
+[3203] system?
+[3204] And what if like not everyone can ship
+[3206] minimalist shat CN looking code, right?
+[3209] Like, what if
+[3210] I have to respect the brand identity of
+[3212] my company? So, I still see all of that
+[3215] fundamentally like the
+[3218] all the stuff that's boring, clunky,
+[3220] uncreative,
+[3221] it's going to get done by AIs 100%. I
+[3224] sometimes think that it's useful to
+[3226] think of a lot of what we do as
+[3228] translation.
+[3230] When someone gives you a Figma,
+[3232] you're actually translating that into
+[3235] Tailwind.
+[3236] When you move from pages router to app
+[3238] router, you're translating that. There's
+[3240] more of a cognitive overhead sometimes
+[3242] cuz like the conceptual model changes,
+[3246] but if I go with the translation route,
+[3250] I can at least give you the initial
+[3251] draft. The robot will say, "All right,
+[3255] you're I I did all the legwork for the
+[3257] first part of the migration. Now, you
+[3259] use your intelligence to determine
+[3262] oh, we're going to use client-side
+[3263] rendering client components over here.
+[3265] We're going to use server components
+[3266] over here." And like, I think the human
+[3268] will be sort of the editor in that
+[3270] process that continues to refine the
+[3273] code that the AI generates.
+[3276] Uh I totally agree. Like, uh I I love to
+[3279] liken my job to being a plumber. Uh
+[3281] I see AI is just a really good wrench.
+[3284] Like, we we invented a really good
+[3285] wrench that's really going to help a lot
+[3286] of plumbers and help more people become
+[3289] plumbers that weren't them before.
+[3291] Absolutely. I I love my job as a
+[3293] plumber, too.
+[3295] Well, let's talk about a different
+[3296] aspect of your job. Uh so, uh
+[3299] something that I can't help but notice
+[3301] is I see your name a lot on funding
+[3304] announcements for a bunch of different
+[3306] companies. So, it seems like you've been
+[3308] Yeah, yeah.
+[3309] It's like a meme now. I'm attached to so
+[3311] many memes. There's Vercel memes.
+[3313] There's funding announcement memes.
+[3315] Yeah, for sure. You seem to be
+[3318] writing a lot of angel checks. And I I
+[3320] was curious about specifically
+[3324] like, what do you look for
+[3326] when you're wanting to invest in a
+[3328] company?
+[3329] The easy answer is I'm always looking
+[3332] for extraordinarily talented people
+[3335] um that have dedicated their life
+[3337] to the pursuit of
+[3339] sometimes specific thing that might be
+[3341] overlooked by others.
+[3343] One of my first angel checks was to a
+[3345] company called Auth0.
+[3347] And the founders were unreasonably
+[3351] dedicated to authorization and
+[3353] authentication. Like, just let that sink
+[3356] in. Imagine convincing someone that's
+[3358] not in tech that that's a an interesting
+[3360] thing to pursue every single waking hour
+[3362] of your life to.
+[3364] We're going to make login really great.
+[3366] Like,
+[3367] and yeah, so it's like
+[3370] it's still part of like what I've always
+[3371] loved about Silicon Valley and why I fit
+[3373] in so well here, which is like just
+[3375] power to the nerds. Like, you want to
+[3377] nerd out for 10 years on auth?
+[3381] And it turns out that auth
+[3383] is going to power the, you know, it's
+[3385] going to be the
+[3386] digital entry point into every
+[3388] experience that matters on the internet.
+[3390] So, you're also looking for that TAM,
+[3392] right? Going back to like plumbers in
+[3394] the real world is like, you're a um
+[3397] locksmith. You're installing
+[3400] uh you know, uh keys and and and locks
+[3403] into the world, into physical doors.
+[3406] But now in the digital realm, you can
+[3408] create an engine that does that with
+[3410] just three clicks. Oh, and it turns out
+[3412] that instead of there being billions of
+[3414] doors, there's going to be like
+[3415] trillions of doors. So, you need that
+[3418] kind of like ridiculously sized market.
+[3421] You also need some kind of like
+[3424] controversial hypothesis, I think. The
+[3427] very first thing that I thought about
+[3429] Auth0 was, "Wait a second.
+[3432] You're a two-person company
+[3434] and everybody in the world's going to
+[3436] trust you with their auth?" Like, it
+[3438] almost made no sense.
+[3440] So, you you need things that make almost
+[3442] no sense. Uh whether Sam Altman like
+[3445] rolls into your room and says like, "I'm
+[3447] going to invent AGI." Like, sure, Sam.
+[3449] Go away. No, you need something
+[3452] and perhaps he doesn't quite get to like
+[3454] AGI as like science fiction or like that
+[3456] takes way too long,
+[3458] but he can deliver along the spectrum of
+[3460] that sort of controversial statement.
+[3464] Same goes I think for uh same was true
+[3466] for Auth0. So, the technical sort of
+[3469] underpinnings and the unreasonable
+[3471] pursuit of that
+[3472] uh
+[3473] you know, niche you can call it, but it
+[3476] turns out it's not a niche. I think Paul
+[3478] Graham has become really good at this
+[3479] where like
+[3480] you have to simultaneously appreciate it
+[3482] as a niche and then believe that that
+[3484] niche will grow to become
+[3485] a huge part of the global economy.
+[3488] Classic example here is Shopify starts
+[3489] with um the founder saying, "I want to
+[3492] sell a snowboard."
+[3493] And there's no easy way to like with two
+[3495] clicks sell a snowboard.
+[3497] And then he went to knock on the doors
+[3499] of like lots of VCs and they said,
+[3501] "Well, but I don't know if there's going
+[3503] to be that many people that need a small
+[3506] shop online."
+[3508] Turns out there were a lot.
+[3510] Uh and so, that's why it has to be sort
+[3512] of that duality of like
+[3515] seems small because otherwise there's no
+[3518] alpha and everybody's in it. And then
+[3520] grows to be unreasonably big and obvious
+[3524] in retrospect. Bitcoin is actually
+[3526] another great example. When I first
+[3527] bought Bitcoin, I thought of it as my a
+[3531] classic angel check. It's like, "Oh,
+[3533] I'll just put $20,000 into this thing.
+[3536] People say it's weird and like, nobody
+[3539] will want it, but there is a chance and
+[3542] it seems like a niche that could get
+[3544] pretty big."
+[3545] And saying is exactly like that sort of
+[3548] investment thesis. Yeah, we we just had
+[3550] Danny Grant on from Jamstack and she
+[3552] asked us, "How would you invest $100,000
+[3556] into super early stage founders?" And
+[3559] she said basically the same thing is
+[3561] that
+[3562] a person that is just wildly obsessed
+[3565] with a problem
+[3566] is a great start and then you expanded
+[3568] upon it saying it's also an unreasonable
+[3571] goal. So, unreasonable goal paired with
+[3573] like unreasonable drive to solve it. You
+[3576] know, over the over the last couple it
+[3578] seems like to be accelerating now. Like
+[3580] over the last couple quarters
+[3582] I've been getting a lot of feedback from
+[3584] people that passed on Vercel early on
+[3586] and they're now coming to me saying why,
+[3588] which I really appreciate. And most of
+[3591] the times is something along these lines
+[3593] of like it just seemed so unreasonable.
+[3596] Like the things you were saying. And I
+[3598] didn't know I didn't even hear myself.
+[3600] Cuz like I'm embarrassed. Like the over
+[3602] aggrandized things that I was probably
+[3604] pitching at the time. Like oh, we're
+[3606] going to take over the entire cloud.
+[3607] We're going to be the next AWS. And I
+[3609] was like, dude, you were some guy with a
+[3612] Shiba Inu in San Francisco. Like with a
+[3615] dog and you'd built nothing other than
+[3617] some open source project. So, there was
+[3619] a bit of that in our story as well and
+[3621] just like the sheer size of the ambition
+[3624] was pretty crazy. Like I I think the the
+[3627] thing that um has also become a meme
+[3629] that I really appreciate is a lot of
+[3631] people like myself have gotten into this
+[3634] because we under estimating how
+[3636] difficult it was going to be. Because if
+[3638] you could show me a quick video like a
+[3641] trailer
+[3642] when I started Vercel of the next 7
+[3644] years and some of the lows and like late
+[3647] nights and pagers and whatever I was
+[3650] like, huh?
+[3651] Is it going to is it going to take all
+[3652] of that? Like holy Like let me let
+[3655] me let me get back to you. You know? So,
+[3657] you kind of start with like
+[3659] this unreasonable goal and also a little
+[3662] bit of and like this is like this
+[3664] spoiler alert. Like it's going to be
+[3667] so much harder and crazier than you
+[3670] believe. And you have to be signed up
+[3673] you have to sign up for that, I think.
+[3674] They So, you need someone that
+[3676] has the grit.
+[3678] Um some people call it grind set now.
+[3681] Like and and that's because again,
+[3685] they're just so obsessed. Danny is
+[3687] right. They're so obsessed with making
+[3689] that true.
+[3690] And invested in some version of their
+[3693] ego into it as well. Like I'm going to
+[3695] die before this succeeds. That was my
+[3698] thing. Like I'm going to make this work
+[3700] at all costs. What was kind of my
+[3701] thinking. That's awesome. So, we've
+[3703] covered the the your answer I think to
+[3705] this question a little bit throughout
+[3707] the episode, but we like to ask it cuz
+[3708] it's a great way to sum up everything.
+[3710] So, what do you think the future of
+[3712] front end looks like and
+[3714] what do you think the next wave of apps
+[3715] will be centered around? What will they
+[3716] look like? Yeah, I think things are
+[3718] going to get a lot easier.
+[3721] We hear a lot of the community feedback
+[3722] about the next JS operator and not only
+[3725] because of AI, but I think it's exciting
+[3727] that AI will fuel this.
+[3730] It's going to get a lot easier to write
+[3732] applications. A glimpse of this future
+[3735] is that kind of joke we made about like
+[3738] we reinvented PHP. Right? We're we're
+[3740] all getting Lambos. We're like, oh, you
+[3742] just write some simple looking code that
+[3745] just queries a database and then the UI
+[3748] happens. I think we're going to deliver
+[3750] on that dream pretty soon here. It's
+[3753] already started and we're going to
+[3754] double down on that direction of just
+[3756] like making it unreasonably easy.
+[3758] But I think what was missing from that
+[3760] old approach is unreasonably fast,
+[3764] interactive, personalized, generative.
+[3767] I think generative UI will play a huge
+[3769] role into the future of software. It's
+[3771] going to get a lot easier for people to
+[3772] reach more users.
+[3775] Um I kind of talked about how difficult
+[3776] it is to meet every user every device
+[3779] today. Right? Like you have to develop
+[3780] an a mobile app, an iOS app, an Android
+[3783] app, a web app, the
+[3784] API. I think we're going to go back a
+[3787] little bit almost to like that dream of
+[3788] the semantic web. Like write once,
+[3791] deploy everywhere and like what really
+[3793] matters the semantics, the data, the
+[3796] content, the idea. Because the rest is
+[3799] just automated by the computers.
+[3801] We're seeing a lot of interest in like
+[3803] the development of agents, right? And
+[3806] folks deployed to Vercel in order to
+[3807] protect against agents and like a lot of
+[3810] folks are are paranoid over like how
+[3811] they're
+[3812] in the age of AI their content is just
+[3814] being scraped, misused, etc. But also
+[3817] the reality is that with agents we can
+[3819] make any system interoperable even
+[3822] without you explicitly programming its
+[3824] interoperability. We kind of talked
+[3826] about why like it was too effortful to
+[3828] create an API route and then create your
+[3831] front end. What if all you are is front
+[3834] end? Because you're all you care about
+[3836] is the customer experience. The
+[3838] interoperability between systems can be
+[3840] automated. Everything will be an API in
+[3842] some in some senses. So, I think
+[3845] empowering the future with AI,
+[3847] empowering developers with AI, and also
+[3849] helping companies become AI companies
+[3851] especially when they're struggling to
+[3853] deliver in today's software challenging
+[3855] challenges in in in the the world of
+[3858] today
+[3859] is part of our mission now and we're
+[3861] excited to deliver on it. I'm excited to
+[3862] see you accomplish the goal. It's a it's
+[3864] a big goal you guys got, but it it
+[3866] definitely speaks to the unreasonable
+[3868] goals.
+[3869] We'll we'll get there. So, that's it.
+[3871] All we have for questions. Thanks for
+[3873] coming on. This was
+[3875] a great episode. Me and Justin have been
+[3877] waiting for this one for a while and it
+[3878] was an amazing chance to get to talk to
+[3880] you. Thank you so much. I really had fun
+[3882] with it. Yeah, thanks so much,
+[3883] Guillermo. You're I mean, we're big fans
+[3886] of the work that Vercel has done and
+[3888] continues to do. So, yeah, wish you all
+[3890] the best of luck and excited to see what
+[3891] comes next.

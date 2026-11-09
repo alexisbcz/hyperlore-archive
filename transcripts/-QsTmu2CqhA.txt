@@ -1,0 +1,919 @@
+[0] One of our users yesterday submitted feedback.
+[2] (instrumental music)
+[2] They were saying, "v0 is like a super genius five-year-old PhD with ADHD." I'm not going
+[9] to oversell this. It knows everything about everything, but it has these sparks of brilliance.
+[14] How do you think things are going to change for product managers, for product teams?
+[18] People could be more full stack. Imagine a designer that can ship a fully baked product,
+[23] a product manager that can prototype and ship to production. We shouldn't
+[26] put limits on ourselves and what we can build, and what we can ship,
+[30] and what we can dream about making possible on these web surfaces.
+[34] A lot of people are wondering, "What happens to engineers? Should I learn how to code?"
+[37] A lot of the programming jobs to be done that used to be specializations,
+[41] I think, are going away, in a way. They're translation tasks,
+[44] but knowing how things work under the hood is going to be very important for you because
+[48] you're going to be able to influence the model and make it follow your intention a lot better.
+[52] We hear this word taste all the time, in terms of building taste,
+[55] people are always like, "How the hell do I do that?"
+[57] Taste, sometimes I think we think of as this inaccessible thing that,
+[62] "Oh, that person was born with taste." I see it as a skill that it can develop. I
+[67] think is extremely important to try lots of products. We have one of our internal
+[72] operating principles as increasing exposure hours. Try to quantify how much time you expose
+[79] yourself to watching how people use your products and you'll develop that muscle.
+[85] Where do you think the biggest change is going to happen?
+[86] We need to stop talking about AI at some point. I just see a future where
+[90] AI becomes synonymous with software. We build software and we use software to build software.
+[98] Today my guest is Guillermo Rauch. Guillermo is the founder and CEO of Vercel, which, amongst
+[103] other things, makes a product called v0, which has become one of the most popular AI website building
+[109] tools in the world. He's also a legendary engineer and contributor to open source. He's created some
+[114] of those popular JavaScript frameworks in the world like Next.js and Socket.IO. He's both a
+[119] builder and is building a product that's going to change the way we all build products in the
+[123] future. This episode is incredible. If you want to really understand how product development is
+[127] going to change with the rise of AI and what skills you should be focusing on right now,
+[131] I highly recommend you keep listening.If you enjoy this podcast, don't
+[135] forget to subscribe and follow it in your favorite podcasting app or YouTube. Also,
+[139] if you become a yearly subscriber of my newsletter, you get a year free of Linear,
+[143] Notion, Superhuman, Perplexity Pro, and Granola. Check it out at lennysnewsletter.com.
+[150] With that, I bring you Guillermo Rauch.This episode is brought to you by WorkOS.
+[157] If you're building a SaaS app, at some point your customers will start asking for enterprise
+[161] features like SAML authentication and SCIM provisioning. That's where WorkOS comes in, making
+[167] it fast and painless to add enterprise features to your app. Their APIs are easy to understand so
+[173] that you can ship quickly and get back to building other features. Today, hundreds of companies are
+[178] already by WorkOS, including ones you probably know like Vercel, Webflow and Loom. WorkoOs also
+[186] recently acquired Warrant, the fine-grained authorization service Warrant's product is
+[191] based on a groundbreaking authorization system called Zanzibar, which was originally designed
+[197] for Google to power Google Docs and YouTube. This enables fast authorization checks at enormous
+[203] scale while maintaining a flexible model that can be adapted to even the most complex use cases. If
+[208] you're currently looking to build role-based access control or other enterprise features
+[213] like single sign-on, SCIM, or user management, you should consider WorkOS. It's a drop-in replacement
+[219] for Auth0 and supports up to one million monthly active users for free. Check it out
+[225] at WorkOS.com to learn more. That's workos.com.This episode is brought to you by Vanta. When it
+[235] comes to ensuring your company has top-notch security practices, things get complicated
+[240] fast. Now you can assess risk, secure the trust of your customers, and automate compliance for SOC 2,
+[247] ISO 27001, HIPAA, and more with a single platform, Vanta. Vanta's market-leading trust management
+[255] platform helps you continuously monitor compliance alongside reporting and tracking risk. Plus,
+[261] you can save hours by completing security questionnaires with Vanta AI. Join thousands
+[267] of global companies that use Vanta to automate evidence collection, unify risk management,
+[272] and streamline security reviews. Get $1,000 off Vanta when you go to vanta.com/lenny. That's
+[280] V-A-N-T-A.com/lenny. Guillermo, thank you so much for being here. Welcome to the podcast.
+[290] Thanks for having me. Longtime listener,
+[292] first time, I guess participating in the podcast, and love being here.
+[296] Oh, I appreciate that. Okay, I know you saw this, I did this survey recently where I
+[300] asked my readers, "What tools do you use most in your day-to-day work as a product builder,
+[304] as or product manager?" And in the category of engineering tools, v0 came in right below Cursor
+[311] and GitHub for people's most used AI building tools. So clearly people love what you're doing.
+[318] Yeah, we're very happy to see that. And for us, we're at the very beginning of the journey in some
+[323] ways, because v0 is a relatively new tool, but for Vercel, our company has been around for a while.
+[329] The way that I explain to people is, "Anytime you're using the internet, if there's a website
+[334] or web application that's really fast, innovative, hopefully it's running on our platform." We're
+[339] out there. We are running a lot of websites at scale. If you watched the Super Bowl recently,
+[344] three different companies were promoting digital products that were built and delivered on Vercel.
+[349] So not only can you deploy your ideas and build them on Vercel, they can scale
+[355] to huge volumes of traffic and huge audiences.So a lot of people know us because of a framework
+[361] called Next.js. It's an open source framework based on the React technology, open source by
+[368] Meta, and it powers some of the most innovative products on the internet. So when you use Claude,
+[373] or Grok, or Midjourney, you're using Next.js. You're using Vercel's technologies. So with v0,
+[381] what we're trying to do is, and it's funny, because you put us rightfully, I think,
+[385] in the building or development category in that survey, but what we're trying to do with v0 is
+[391] help more people participate in building software, increase the total addressable market of people
+[398] that are actually shipping things, shipping real products. And at the same time, just
+[404] like you would with ChatGPT, we want v0 to be just extremely, extremely easy, and the outputs that it
+[412] generates, make them as refined and realistic as possible. The things that you created with
+[417] v0 hopefully live up to that standard set by some of the best and largest websites on the internet.
+[424] I was going to ask you how v0 came out of Vercel, and my theory was it was like you guys are sitting
+[429] around being like, "How do we get more people building websites?" And it's like, "Okay,
+[432] let's just help them do it really easily." It's like TAM expansion for Vercel. Is that?
+[437] Yeah.
+[438] Or it-
+[438] In some ways what I've been doing for not only 10 years that I've been almost working on Vercel,
+[445] but maybe my entire life because my strength as a developer is kind of meta. It's been to
+[451] create developer tools. So I've created a bunch of open source frameworks that are really popular. So
+[457] Next.js is one, but before that in a previous life, I created another tool called Socket.IO,
+[463] which is a real-time communication mechanism that powers, for example, every time you use Notion,
+[468] I think you interviewed Ivan, when Notion is to broadcast messages in
+[473] real time to other collaborators, they use a real-time engine that I built for Socket.IO.
+[479] So the reason that startups and companies have used my products in the past is because I took
+[485] something that was very difficult to do, but very compelling. It was with real-time in the past.
+[492] It's building cutting-edge applications on the web with Next.js. And I try to make it as easy as
+[498] possible. But you still needed to know development skills. For us and the opportunity was if there
+[504] is maybe five million React developers, which is the the library engine that we use, and there's
+[511] maybe 20 million JavaScript developers, how many product builders are people with aspirations of
+[517] building products exist? My back of the napkin, minimum calculation is a hundred million.
+[525] And I'll tell you, it's funny where I get that number from. Slack has about a hundred million
+[531] monthly active users. And what you do on Slack is you go in IT and you talk to people. A lot
+[538] of those people are building digital products. And they talk to one another about what they
+[542] would want to see in the world. They talk to customers through shared channels. I
+[547] love that feature. We talk to a lot of the Vercel customers and they tell us, like,
+[550] "I want to build this, I want to see that. I want this feature, I want that thing."
+[553] So the opportunity with v0 was, it's not that you're going to stop talking to other people,
+[558] but what if you could yap into the computer and see something happen, build a prototype, build
+[564] your first version of a product, build a demo, build a full stack product, build it and ship it?
+[570] And so the inspiration for it was very natural to the mission of Vercel. But concretely, the
+[576] genesis, the story was when ChatGPT came out, we noticed that it was very good at writing the code
+[584] that our tools used. So ChatGPT, right out of the bat, was good at JavaScript, was good at Tailwind,
+[592] which is a CSS styling technology, was good at Next.js, and again, the power of open source. Our
+[598] tools were already in the training data of the internet. And so that long-term bet and vision
+[603] in open source really paid off. So because the models were so good at writing this kind of code,
+[608] the idea for v0 came naturally from, "What if we could build a ChatGPT for building web products?"
+[614] Speaking of that, I didn't actually know. So I had Bolt's CEO on the podcast and he talked about how
+[619] Claude kind of unlocked what they're doing and do you guys sit on ChatGPT and OpenAI's stuff?
+[625] We started out on OpenAI. And we've always used a combination of models. It's funny,
+[629] right now on Twitter there's thread with a million views
+[633] of people trying to reverse engineer the prompt and the models they used.
+[636] I saw that on Reddit. Yeah.
+[636] And they're all finding that there is all these kinds of different models that are specialists
+[641] in different tasks. And there's a pipeline of models where a model could hand off work to
+[646] another model. And so OpenAI, Gemini, Claude, but we predate Anthropic because I'll give
+[653] credit to ChatGPT that the utility of it was so general purpose, but from the very first release,
+[661] it was very good. In fact, by the way, if I'm not mistaken, the first prototype of v0 might
+[666] have even predated ChatGPT, or at the very least I think we were running on GPT 3.5. So
+[672] we've always had this vision of unlocking more power for the web through LLMs, and there's a
+[680] lot of very interesting technical details of why, by the way, LMs happen to be so good at the task
+[687] of web design and web development that we could get into. But it was the perfect timing for us.
+[694] I want to come back to that. That's actually a really good question. But let me ask a couple
+[697] other questions here. In terms of v0, what's the scale at this point? We hear all these
+[701] numbers about all the folks in the space. What can you share about what's happening with v0?
+[705] I can share that it's growing exponentially, and that over 1.3 million users have interacted
+[712] with v0 so far. We had our largest day ever yesterday and today, again, we're one of the
+[719] largest customers of most of cloud providers at this point. We're hitting the limits of every GPU,
+[726] LLM infrastructure out there in the planet. And the most exciting thing for me is what
+[733] I'm seeing people build with v0. So we launched a feature about a month ago, maybe even less than a
+[739] month ago, called v0 Community. It already has 20,000 submissions. I am sure people in your
+[746] audience have used Figma, one of the things that I love about Figma is Figma files, that I can go
+[752] and grab a starting point for something. It could be a logo, could be a menu, and you can
+[760] start with something that someone has already contributed, like that spirit of open source.
+[764] And so in less than a month, I think we've done over 20,000 community submissions. So we've
+[770] learned so much about building AI products with this and we continue to open source and share our
+[775] best practices. But one of the things that I've definitely learned is prompting it seems like
+[781] the easiest interface in the world because it's just an input and you put text in it. But there's
+[788] a little bit of a writer's block sometimes. So one of my favorite things that I've seen,
+[793] and I'm even looking at the home page right now, and you can see a random assortment of community
+[797] submissions. And they have 1,200 forks, and 1,500 forks, and 6,000 forks, and this is every time
+[806] people saying like, "Oh, instead of starting from scratch, I'll start from this application
+[809] that someone else has built and I'm going to prompt it to modify it and make it my own."
+[814] So the community submissions are people building apps on v0 and sharing what they built?
+[819] Correct.
+[819] You can look at the code and fork it?
+[821] It is becoming like a compounding investment. People share something, someone else grabs it,
+[826] makes it better. Maybe you used it at that point. In many ways, I see this as the next evolution of
+[832] GitHub, whereas GitHub, it was a marvel for software development because I don't know
+[841] if you remember this, but the initial, little tagline underneath the GitHub logo was social
+[846] coding. And it had this democratization effect of building software. But you still needed to
+[854] know how to code. And so what we're after is social product building in many ways,
+[860] everybody should be able to cook and share what they're building.
+[865] I hadn't thought of it this way, but I love that it connects so much to your open source roots,
+[869] where people are building on v0, and then sharing what they're building and then
+[871] people can build off those things. It's kind like an open source AI building experience.
+[876] It's fascinating, right? In many ways, if you think about the Git commit,
+[880] the Git commit is super interesting. If you watch how an engineer works,
+[884] they look at a problem, they spend a lot of time in their code editor, and at the end they say,
+[889] "I think I got it. I think I've fixed it." And then they produce a Git commit. They summarize
+[898] their intent and what they try to do after they've done the work. v0 inverts that. The Git commit is
+[909] you go into the chat and say, "Please change the color of this button. And when I click it, save
+[919] this form to a database." And so you're starting with the intent and the output is the code.
+[926] And as a side effect, we can also produce a Git commit for you. That feature's not online yet, but
+[930] it's coming in the next couple of days. Spoiler alert for the group. And so I like this idea of
+[936] we can create this super set of all software building with this platform. And that is true
+[943] to my initial intention with Vercel. Our mission is to enable the world to build and ship the best
+[947] products. And so enabling that for the largest possible group of people is very exciting to me.
+[954] So let's go to this question of just the elephant in the room for a lot of
+[958] people seeing these things happening, product builders that have been doing things a certain
+[963] way for a long time with apps like this coming around, whether you could just type a thing in,
+[968] and build it for you, and it's beautiful. How do you think things are going to change for
+[973] product managers, for product teams? Where do you think the biggest change is going
+[977] to happen? How do you think product will be built in the next few years?
+[979] The most profound one that I alluded to is that conversations between product builders
+[987] and their customers will be mediated by these zero links, these artifacts.
+[998] I think when Claude came up with the name artifacts, I found it phenomenal, because
+[1003] we're all in this world, especially in this group of people, we're here to build awesome things and
+[1010] share them with the world. Steve Jobs said this awesome speech about, "It's like our form of
+[1016] giving back to the world is to try and do the best possible job we can and share it with the world."
+[1024] And so the idea that when we talk, we would not have the power to make those ideas a reality,
+[1037] it seems like an L to me. I would love to see people constantly live in the product,
+[1044] be in the design, spend time tuning and trying out new ideas. And that's what the ideal work of
+[1052] the future should look like, and less about again, that abstraction, that being removed
+[1060] from the product or even sometimes I can feel powerless to not be able to change something.
+[1067] This happens a lot when departments collaborate within an organization. Marketing wants design
+[1074] to do something, marketing wants engineering, engineering needs a design. It cuts always. One
+[1081] of the things that people got excited about that we published on the Vercel blog was about design
+[1085] engineering, because a lot of the people that we were noticing were being very successful at
+[1091] Vercel were people that had both the design and engineering skills. And that was actually another
+[1098] huge motivator and inspiration for v0, because we realized that people could be more full stack. We
+[1105] shouldn't put limits on ourselves, and what we can build, and what we can ship, and what we can dream
+[1113] about making possible on these web surfaces.And so you could imagine removing all those
+[1120] limitations, a designer that can ship a fully-baked product, a product manager
+[1125] that can prototype and shift to production. A lot of people that use v0 are back-end engineers that
+[1131] never had the ability to, they could ship an API, they could build a great low-level infrastructure
+[1138] system, but to actually bring their end-to-end vision to life, v0's completing that for them.
+[1147] Let me follow the thread on engineers. A lot of people are wondering, "Do we need engineers in
+[1153] the future? What happens to engineers? Should I learn how to code?" Your long-time engineer
+[1157] thoughts for folks that are trying to decide the career for themselves?
+[1161] Yeah, I think knowing how things work is the most important skill in the world. I foresee
+[1167] a lot of people becoming incredibly impactful in building and shipping amazing products,
+[1172] and building gigantic companies, and everything you could imagine, where a single person can do
+[1180] the job of a hundred different people in a hundred different specializations. Take the example of
+[1189] one skill set that's really important to build a front-end product is you need to know how to use
+[1196] CSS or Tailwind to style it. And once upon a time, I would hire people that were truly specialists in
+[1206] this task, the task of there's a Figma design or there is some kind of sketch, and translating that
+[1215] into reality because they knew really well how to manipulate layouts, layout code, box model code,
+[1224] we call it, and borders, paddings, margins, flex box, all these technologies for styling.
+[1232] And notice, I actually use the word translation very intentionally,
+[1237] because the origin of the LLM or the transform architecture at least, goes as far back as the
+[1247] architecture for systems like Google Translate. They were generative LLM techniques, basically.
+[1257] That's how they cross that chasm of, remember when translating tools were horrible and then
+[1262] one day the problem was just solved? And I look at a lot of the programming jobs to be done that
+[1272] used to be specializations, that I think are going away, in a way, or the tasks to be done,
+[1279] they're translation tasks. We were translating from a screenshot, or intent, or a design into
+[1288] a React, and Tailwind, and CSS implementation.And right now, v0 is incredibly good at doing
+[1296] that. It's so good that every time we put a new generation of the model out,
+[1302] I run this test of converting my own website and try to generate it with v0. Last time I did it,
+[1309] it had taken me like 10 prompts to replicate it. Keep in mind I'm an expert front-end engineer
+[1316] that's been in the arena since I'm like 10 years old and I'm 35 now. And so I do that test because
+[1324] it's almost like a test of self-imposed humility of, like, "I remember exactly how long it took me
+[1330] to build my website with Next.js, the framework that I created, and ship it." And so with the
+[1335] last model, it took me maybe 10, 15 prompts? With the most recent model, it took me two prompts.
+[1342] And so that translation from the design intent into working implementation,
+[1348] another anecdote that I like to share with people is the model, because v0 tries to embed all of the
+[1354] best practices of the web, the model output more accessible code than what I wrote. It
+[1362] follows the accessibility guidelines that the web standards consortiums put out better than I did,
+[1372] because it just knows everything. And so those tasks where you can almost model it
+[1377] to a translation task, definitely going away. But knowing how things work under the hood,
+[1382] notice all the ... I'm using specific tokens in this conversation. I'm saying, "CSS," I'm saying,
+[1389] "Layout." I'm naming styles. Knowing those tokens is going to be very important for you because
+[1396] you're going to be able to influence the model and make it follow your intention a lot better.
+[1402] And so the TLDR would be knowing how things work, the symbolic systems,
+[1409] and that will mean that you have to probably go into each subject with less depth.
+[1415] I have engineers at Vercel that know every single CSS property by heart. They know when they became
+[1421] available in a certain web browser, they've been tracking this specification. It's almost
+[1427] like you're an encyclopedia of knowledge of each CSS property. You probably won't need that in the
+[1433] future, and probably that's good, because you'll free up your mind for more ambitious things.
+[1440] No, that's fascinating. So what I'm hearing is a skill that will continue
+[1444] to be valuable in the future, but I want to push on this a little bit,
+[1448] no matter how far AI gets, is understanding conceptually how software works, end-to-end-
+[1454] Yes. Absolutely.
+[1454] ... systems, databases, CSS is a thing. So I don't know if you have kids, whether you have
+[1460] kids or not, just say they were trying to decide, "What should I learn to be, to thrive in this
+[1466] future?" Well, how would you summarize it? How far? Should they get into software engineering?
+[1471] Great question, because I have five kids, and I've already enrolled them in this school of G, myself,
+[1479] in the sense that I'm already guiding them towards the things I think are going to be very useful to
+[1482] them. So understanding how things work needs, I think the ability to understand the fundamental
+[1491] logic behind things, incredibly valuable. So I push them really hard on math. "If you don't know
+[1497] math really well, you're out of my house." Just kidding. But it's a fundamental skill that I want
+[1503] them to know. Eloquence. I joke sometimes. Have you heard a meme of word cells versus-
+[1513] Yeah- [inaudible 00:25:13]
+[1513] ... shape rotators?
+[1514] Yeah.
+[1515] So a shape rotator is someone that only has a math brain.
+[1520] You could argue the kings and queens of Silicon Valley have been the shape rotators, because
+[1525] those have been the jobs that have historically commanded the most status, respect, net worth,
+[1530] whatever. And then there's the word cells, which is communicating, more of the liberal arts.
+[1537] There's also the funny and awesome slide of Apple saying that they're at the intersection of liberal
+[1543] arts and technology. I've always had immense amounts of respect for both sides of the brain,
+[1549] so to speak. But I think developing great eloquence, and knowing and memorizing those
+[1554] tokens that I talked about, knowing how to refer to things in that global mental map
+[1561] of symbolic systems will be highly valuable. And we have some tools to help people prompt better,
+[1568] but prompt enhancement and embellishment cannot replace thinking and cannot replace your own
+[1575] creativity that you want to infuse into the world.So one of the things that v0 does is it tries and
+[1581] it succeeds, I think, at creating very nice designs out of the box. We try to infuse what
+[1589] we've learned about what do people think is typically good web design? We've influenced
+[1595] the model in that direction. But still we also don't want the whole internet to look the same
+[1600] way. So your ability to steer the model with your words into those references, into those
+[1607] inspirations, is going to be very important.I actually have an amazing anecdote. We hosted
+[1611] a design demo night at the Vercel HQ in San Francisco last night. And we were showing off how
+[1620] Vercel uses v0 to build v0 and to build Vercel. And one of our designers showed this amazing
+[1628] animation that he built, actually two amazing animations that he built. And in one of them it
+[1635] was this amazing triangle that had an animation that I didn't think was possible to make, in that
+[1642] it was all built with v0. And he used the word turbulence to describe the effect that he wanted.
+[1650] So I just want to call out that to people because the difference between knowing that word and not
+[1655] knowing it is getting that style into that beautiful triangle that he created that was
+[1661] interactive, and it's probably going to end up in some landing page soon that you're going to
+[1664] visit on vercel.com. And so developing eloquence and your linguistic ability I think is going to
+[1672] be very important. So I love my kids to know that. And I think that idea of sharing things,
+[1682] and putting yourself out there, and broadcasting to the world, so another thing that I do is I
+[1687] take my kids to hackathons, which just went to an awesome hackathon at University of San Francisco,
+[1694] USF. It was called the BLOOM Hackathon. And I took two of my kids and I wanted them to
+[1699] watch how people presented their ideas and we had a lot of fun. We also ate waffles and
+[1706] grilled sandwiches, which is a bonus.So presenting and putting yourself out
+[1711] there. I mentioned in the beginning of the podcast when we were chatting, I've learned so much from
+[1717] you and your guests because you put out all these awesome little posts on X in these videos and
+[1723] these snippets of your interviews. And so the ability to present what you've built and put
+[1729] yourself out there, incredibly important skill in the future. Especially in a world where the
+[1735] marginal cost of producing software and new things are going down, you need to build an audience,
+[1741] you need to know how to talk to people, you need to build your own signature brand and style. And
+[1748] so maybe they're a little too young for that one, but I guess taking them into hackathons
+[1753] probably back, is influencing their neural networks or pre-training data for the future.
+[1759] I love it. They're going to tell their friends, "My dad took me to a hackathon." "What's that?"
+[1765] So are you encouraging to learn to code? Because it's interesting you mentioned-
+[1769] Yes.
+[1769] ... math, eloquence, presenting, and then, okay, so also learn to code.
+[1772] Yeah, I think again, learning how to prompt, learning how to code. With v0,
+[1777] we show you the code when we build things. So if you can build that mapping of maybe
+[1784] not learning how to code necessarily as an abstraction, if you do have a knack for it,
+[1792] I'm a big believer also that my five kids have super diverse personalities and inclinations,
+[1801] and I don't want to be pushing for something that they wouldn't want to do or whatever.
+[1806] And so learning to code in the abstract might be good for some people, but it may not be the
+[1811] fun thing to do for other people. And so what I would recommend is try to understand how things
+[1820] work. So if you prompt v0 or any other tool and it generates some code, try to build an understanding
+[1826] of what that does at a high level. It's like actually maybe an extension even of eloquence.
+[1832] One of the bets that I made early on with Vercel that really paid off is Vercel, maybe as
+[1839] a metaphor is like AWS in easy mode for a lot of people. We have a very large user base of people
+[1847] that would have otherwise not have been able to configure all of the ins and outs of the cloud,
+[1853] but do want the scale, flexibility, speed, et cetera. They want to create very high quality
+[1858] products and services. So I like to give the Super Bowl example because one of our customers, Ramp,
+[1863] had a 43X increase in traffic when their ad went live. The engineer that worked on
+[1872] that only needed to learn Next.js. Then they pushed their code to Vercel and now
+[1877] they can reach an audience of a hundred million people without a blip, a hundred percent uptime.
+[1884] That superpower comes from, we made it as easy as possible to get started, and the language that we
+[1893] choose is actually very relevant in this story. JavaScript, in my mind, has always been almost
+[1898] like the English of programming languages. It's a language that, if you learn it, you reach billions
+[1904] of devices. So it's not a coincidence that when you ask ChatGPT, or Anthropic, or Gemini
+[1913] to build you web app, it uses these tools. It uses JavaScript, it uses React. It's become the
+[1920] lingua franca of building products on the web. So I would say to my kids, "Look, if you do want
+[1928] to go deeper into programming, start learning there." You can reach huge numbers of people.
+[1933] If you have a passion, I would say there's going to be a fundamental engineering skill that's going
+[1940] to be useful for decades or centuries to come, which is creating foundational infrastructure.
+[1946] Think about LLMs in terms of, they're like Oracles that can go and write software for you,
+[1954] but there's a limit to how much software they can write. There's context windows, there is time and
+[1961] computational constraints. So it's very hard for an agent today to go and say, "I'm going
+[1967] to write a cloud from scratch. I'm going to write all the foundational services. I'm going to write
+[1972] the framework from scratch. I'm going to write the compiler." No, the LM is orchestrating those
+[1977] tools and infrastructure. It's not writing the compiler from scratch. Otherwise, you get into
+[1982] the Newton thing, in order to create an Apple, you have to create the entire underlying universe. No,
+[1988] the elements are interoperating with the universe as it exists. And so the engineers that learn
+[1994] foundational infrastructure are probably going to be extremely empowered still, for years to come.
+[2003] There's a world where you could argue ChatGPT will build the next version
+[2006] of ChatGPT. What I'm hearing from you is that's a long ways away, if ever.
+[2010] Absolutely. This is why the common, the running joke is
+[2014] that all of these companies have, you go to their careers page. It's like-
+[2019] Engineers.
+[2019] ... "Engineer, engineer, engineer." The counterpoint of that is that at Vercel had,
+[2026] we have 150 engineers that can write code and 600 total headcount. Now we have 600 engineers.
+[2036] Some of the best things that I've seen created with v0 have not come from our engineering team.
+[2041] They've come from the marketing team, they've come from the sales team, they've come from the product
+[2047] management team. The product management team is fascinating, because now they're actually building
+[2051] the product. So last night I saw how we've specced out in v0, think of it as like a live PRD,
+[2059] we've specced out how the new functionality for deploying a v0 to Vercel is going to work.
+[2066] The amount of detail that was contained in that v0, I mean, we're all just saying,
+[2073] "Well, just ship it. There's nothing else to discuss." It was animated,
+[2077] it was interactive. We were demonstrating the error state, the success state,
+[2082] the slow stream state. So it really empowers product builders not only with technical skills,
+[2091] I think that does a disservice to the tool. It empowers them to explore and augment their
+[2097] thinking with a lot of things that perhaps they wouldn't have considered otherwise,
+[2101] a lot of states of the product they wouldn't have considered otherwise.
+[2105] The name v0 implies the product is for prototypes for the first attempt at stuff.
+[2111] And that's definitely where all these tools are finding product market fit prototypes,
+[2116] PMs showing a thing working versus just design. Do you expect v0 and other tools to get to
+[2121] a place where you can build salesforce.com and scale it to billions of dollars? Do you-
+[2126] Absolutely.
+[2126] You do? Okay.
+[2127] We already have an enterprise customer of v0 that only works with v0. All of their products,
+[2136] all of their features, all of their client communications are v0 native.
+[2141] Two days ago, I just heard anecdotally on X, someone tells me, "My brother just sold his
+[2147] first website to a client completely built in v0." Yesterday at an investor conference, an investor
+[2154] walks up to me and says, "Two of my friends just got engaged on v0." I was like, "Okay, v0
+[2160] is a dating app now." So the engagement website, the proposal, the wedding, it's all v0 native.
+[2167] So because we've integrated v0, the Vercel infrastructure, we can do that whole story that I
+[2175] just told you of like, "I have a website to build and I can get it in front of a hundred million
+[2180] people." We can enable that for everybody now. And so the end-to-end full stack, v0 native,
+[2188] and built on this awesome fluid serverless infrastructure that scales to billions of people,
+[2194] all just from prompts, or screenshots, or just copying and pasting your PRDs into the tool.
+[2202] Let's help people be successful with v0. And then let's also do a demo. But before we get there,
+[2206] let me ask you this. Imagine you could magically sit next to someone who's about to use v0 for the
+[2212] first time and whisper a tip in their ear to be successful with v0. What would a couple tips be?
+[2219] Number one is you can be as ambitious as you want in terms of what you ask the tool.
+[2227] If you can steer the tool towards some kind of inspiration that you have, you're always going
+[2233] to get better results. If you don't have ideas on what to build or what to prompt,
+[2240] I would recommend using the v0 community so that you can find something to fork to
+[2245] get started. I would say in some ways, if you have technical skills, this one is interesting,
+[2253] have some suspension of disbelief. It humbled me, I was saying about accessibility. So be
+[2261] open-minded about whether the tool actually knows some things that you might not know,
+[2265] and so focus more on the product description, focus more on what do you want the end user to
+[2271] experience? What do you want the product to do? And try to be open-minded about how well the tool
+[2279] can implement it. Those would be my main wants.You also have to have a sense of iteration,
+[2288] I guess. Think of it this way, if you were working with a design firm or an agency that you've hired,
+[2297] you will go back and forth and say, "Try something else." If you were coaching an
+[2302] engineer that's getting stuck in something, you would say, "Try something else." It's
+[2308] amazing how many times I've gotten unstuck in v0 by just saying, "Just try something else."
+[2315] Just saying that as the prompt, not even giving direct-
+[2317] Just saying that. I mean, the chat is like-
+[2319] Wow.
+[2320] "v0, we need to have ... " It's like, "Yeah." Like you have a one-on-one performance review
+[2324] with a tool. "Hey, way to talk, try something else. What you're doing so far is not working.
+[2330] And it's amazing." One fitness function that I'm keeping in my head is I really want to find the
+[2339] thing that it cannot build with v0. So as part of the v0 community, I have my own profile. We'll
+[2345] share the link with people. You can see six or seven things that I've built that I consider
+[2350] to be pretty impressive. So for example, I was flying from Tokyo to San Francisco. The
+[2359] internet was horrible. What I like to do during flights is I like to monitor our own flight while
+[2366] I'm on the flight. So I open Flightradar or whatever, and I was extremely bored as well.
+[2372] And I noticed that Flightradar, I don't know which one it was, Flightradar, there's like
+[2376] four or five of them. They were very bloated. They had ads. They were not what I wanted the flight
+[2383] radar to look like. So I built my own during the flight with the worst internet connection
+[2388] that you could imagine in the world, integrated into a flight data API called Edge Aviation.
+[2395] So this is what I told v0, "You're going to build the best flight radar on the planet." I wasn't
+[2404] prescriptive at how, so it used a tool called Mapbox and a JavaScript library
+[2411] called Leaflet. I didn't tell him that, or her, I don't know, v0, what it is. And subsequently,
+[2421] once we cooked on the design, which looks, I would say beautiful, I then got more ambitious
+[2427] and I said, "All right, let's make it real now."And by the way, that's actually how I would work.
+[2432] So it's how I like to work. I like to work experience first, and that's also how Vercel
+[2438] was built. "Let's start with the front end. Let's start with the planes on the screen." And by the
+[2443] way, there's a lot of subtleties, here. For example, there's so many flights going on at
+[2449] any given time that there's just too many. So I had to work with v0 on improving performance.
+[2456] And once again, I wasn't prescriptive. I just said, "We have a lot of flights, chief. Let's- "
+[2462] Did you say, "Chief?"
+[2463] Yeah, I do say that a lot. And this is, I think when I shared it on X, it blew a lot of engineers'
+[2470] minds, because it created a canvas-based, canvas is the sort of underlying rendering surface that
+[2478] very sophisticated products use like Figma. And it created this awesome overlay on top
+[2484] of the map that can render tens of thousands of flights at any given time. And then I told it,
+[2490] "Let's make it a full stack application. Okay, plug into the flights' API." So that's an example
+[2496] of we cooked and there was no limit. And so I'm always in the lookout. The service that I'm
+[2503] providing to the v0 community is I'm part of the team that is really trying to break this and say,
+[2509] "Can it not build something?" And even when it does build it, we're very obsessed
+[2514] with quality and performance. It has to be real. That's our commitment to our users.
+[2521] And how much did this cost, how much time does this take to make something like this?
+[2526] So the flight radar example or v0?
+[2528] Yeah, the flight radar example specifically just like very-
+[2530] I mean, that one probably took less than two hours-
+[2533] Less than two hours?
+[2533] ... with the worst internet.
+[2535] Yeah, what-
+[2535] Sorry, Japan Airlines, I love you, but you give me a hard time.
+[2538] And what did that cost? Like 10 bucks? What would you estimate?
+[2544] I mean, I pay for the $20 v0 subscription.
+[2546] 20 bucks, okay, for a month. So it's like a month, but you used it for two hours, 20 bucks.
+[2551] Yeah.
+[2551] If you had engineers building this,
+[2552] how much do you think that would cost? How long do you think that would take?
+[2556] I mean, weeks, easily. Easily.
+[2560] And that's like tens of thousands of dollars.
+[2562] Maybe the most cracked engineer at Vercel could knock it out in ... without using any AI,
+[2568] could knock it out in a couple days. But then what about the design? What about me? Because
+[2574] I'm the bottleneck, not the engineer. And this is what's amazing about this collaboration
+[2579] because I'm providing the product guidance. I'm saying, "Draw a dashed line between the ... " And
+[2586] by the way, v0 just blew my mind so hard. I said, "Draw a dashed line between the two destination
+[2593] airports." And v0 said, "Well, I have to account for the spherical, or what is it,
+[2601] it's a pseudosphere, for the curvature of the earth." It's like, "Okay, v0, super genius,
+[2609] whatever." And so that's what I mentioned about how you can go back and forth. It's like a
+[2615] product copilot, it's like an all-knowing being.One of our users yesterday submitted feedback to
+[2623] the tool and it was positive feedback. They were very happy, what they were saying, "v0 is a super
+[2629] genius five-year old PhD with ADHD." So you still have to, I'm not going to oversell this like,
+[2640] "It knows everything about everything. It gives everything perfect," of course. But
+[2645] it has these sparks of brilliance. Really, truly, I think, I've been
+[2649] a big believer that AGI undersells what we are collectively building because we already have,
+[2658] all of this sparks of super intelligence. I don't believe that v0 is an AGI if it knows
+[2666] everything about how to draw a dashed line according to the curvature of the earth and
+[2671] this high-performance map of airplanes. That's just superhuman. And yeah, it's a joy to use.
+[2680] (instrumental music)
+[2680] Today's episode is brought to you by LinkedIn ads. One of the hardest and also most important parts
+[2686] of B2B marketing is reaching the right people. I'm constantly getting ads for products that I
+[2691] will never buy. And I almost feel sorry for the money that these companies are spending, pitching
+[2696] me on their spend management software or some kind of cybersecurity solution that my one-man
+[2701] business just does not need. When you're ready to reach the right professionals use LinkedIn ads.
+[2707] LinkedIn has grown to a network of over one billion professionals, including 130 million
+[2712] decision makers. And that's where it stands apart from other ad platforms. You can target your ad
+[2717] buyers by job title, industry, company, role, seniority, skills, even company revenue, all
+[2724] the professionals that you need to reach in one place. Stop wasting budget on the wrong audience
+[2729] and start targeting the right professionals only on LinkedIn ads. LinkedIn will even give you $100
+[2735] credit on your next campaign so that you can try it for yourself. Just go to linkedin.com/podlenny,
+[2741] that's linkedin.com/podlenny. Terms and conditions apply only on LinkedIn ads.
+[2748] As you talk, it's interesting, the way I'm thinking about this now,
+[2750] there's almost like three core skills in building apps with AI. There's figuring out what to build,
+[2757] there's making it look good, like design, and then there's getting it unstuck.
+[2762] Yeah,
+[2763] And it's interesting how these are going to move.
+[2767] And coaching.
+[2767] Coaching it. Yeah. Or just like, "Oh,
+[2769] here's the database error. I don't know. It's not figuring it out."
+[2772] Yeah.
+[2774] I guess does that resonate? I've never thought about [inaudible 00:46:16] before.
+[2776] Oh, absolutely. In fact, I'll tell you a little bit of a story of something. So even going way
+[2783] back in time, Next.js builds on React. React was this UI component library that Facebook created,
+[2789] actually with very similar goals. They had so many cracked engineers, and they had to
+[2795] help them collaborate on an enormous product surface. So they invented or at least pioneered,
+[2800] I would say the concept of this component as a unit of reusability, as a building block,
+[2806] as a Lego brick of how you build software. It's no coincidence that LLMs love to work
+[2812] with React components, by the way. And one of the things that always has stood out to me about that
+[2819] model is it basically enables people to scale in how they work together. And one of the key
+[2830] design principles that they embedded into this thing, is they called it escape hatch.
+[2837] The API, when when React doesn't perfectly model your problem with its component system,
+[2843] they give you escape hatch. They say, "Okay, engineer. You are on your own now. There's
+[2850] no guardrails." And in fact, one of these escape hatches is called dangerously set
+[2857] inner HTML. They want the developer to know uncharted territory. But they did give people
+[2864] the API. That is a profound systems design engineering principle. And throughout my life,
+[2871] I've always thought about escape hatches.One amazing escape hatch that v0 has is
+[2877] that you're looking at the code that we're generating with Next.js. You can edit it,
+[2884] you can even have other experts look at it. One thing that one of our demos last night came from
+[2891] this awesome company, Lumalabs. They're creating one of the most amazing video models in the world,
+[2898] and they use v0 and Vercel extensively to build their application, their websites,
+[2902] et cetera. And the design engineer was talking about how he was on a v0 that
+[2910] had 120 or so iterations. So he was knee-deep into the latent space. He was in the matrix.
+[2919] And at one point he got stuck. But you know what he did? He copied and pasted the code
+[2924] that we generated and he gave it to ChatGPT o1 and ChatGPT o1 thought about the solution.
+[2931] Honestly, I'd never even thought about this myself. I was so blown away. And it does speak to,
+[2938] I love that your third point of, "You need to learn a skill of how to get unstuck." It's like
+[2942] a profound life lesson. It's just more a generic life advice you need to get. Facebook actually
+[2948] had a principle, "Don't get blocked. Seek to get unblocked, seek help from other people."
+[2954] What's fascinating is that you can seek help from other AIs to get unstuck. And those escape hatches
+[2962] of actually understanding and seeing the code underneath, and even being able to say, "Okay,
+[2970] now let's use Git. Let's turn this into more of a hybrid project, not just prompts, but also
+[2979] traditional software engineering." The fact that that door is open to you is extremely valuable.
+[2984] Let's actually make the super concrete and show people what
+[2986] this actually looks like in v0. So pull up, we'll share screen,
+[2990] and then we'll do a little live demo. We'll keep it brief. I find people are like, "Okay,
+[2994] I get it." But we'll make it fun and brief at the same time. There it is. I see it.
+[2999] Beautiful. Okay.
+[3000] How can I help you ship?
+[3002] Yeah, of course. We're all about shipping. Okay, so as I mentioned, you write in English, you yap
+[3009] into the tool. I'll say for a demo, let's create a contact sales form in the style of ... By the way,
+[3021] I had a typo. I don't care. Let's get it. It's Elf Supreme, the clothing company for an online store.
+[3030] Now, I mentioned that sometimes people get blocked, there is a writer paralysis at this
+[3036] step. So we added enhanced prompt. So now you're tapping into the latent space of the model,
+[3045] which has a random component to it.And by the way, this is still not a
+[3050] substitute. It doesn't contradict what I said earlier, knowing the meaningful tokens, knowing
+[3058] what the right style is, and what it's called, and whatever is still highly valuable. So the
+[3065] first thing you're going to notice is that as the model thinks, you can introspect its thinking. So
+[3071] we added this recently. It's been mostly inspired actually by the Deepseek revolution. I would say.
+[3077] So the fact that when you tell it, "Develop a contact sales form," what is it going to do?
+[3083] We talked about escape hatches. Okay, it's going to use shadcn/ui, it's going to use Tailwind CSS,
+[3088] it's going to use React. And this is your opportunity that if v0 is not doing exactly what
+[3094] you wanted, this is your opportunity to actually go and correct, or influence, or give feedback and
+[3101] so on. So you're going to notice it spits out a bunch of files, and it gives me the thing that I
+[3108] wanted. I'm going to zoom out a little bit, here. A couple of things that stand out here that again,
+[3115] as an experienced engineer, I can point out. The underlying component system that it uses is
+[3121] the same component system that the best tools on the planet are built with. This is called
+[3126] shadcn. If you go to grok.com today, they're using shadcn to build their UI. They're using
+[3132] Next.js. You're getting that caliber of code.The other thing that it did is people on social
+[3137] media talk about this a lot. When you use a global shared component system with the world,
+[3142] you don't want everything to look the same. So the fact that he was able to apply the style
+[3146] and he kind of knew what supreme looked like was kind of cool. But now I'm going to say, "Actually,
+[3152] because I am building a financial institution, make it more serious, make it in the style of
+[3162] let's say Charles Schwab. Change typefaces.' So this is the iteration process of like,
+[3171] "I'm going to go and give feedback to the model. I'm going to make it try different things."
+[3176] So once that initial generation was already created, now the model is actually acting
+[3182] more as an editor. It's going and making tweaks to what's already been built.
+[3188] And this actually scales to very large projects. You could have started with
+[3191] something much bigger. So in the meantime, I'm going to show you what Lumalabs created with v0,
+[3196] which is absolutely phenomenal. I learned about this last night. It already has 2,000 forks. I was
+[3201] telling you about the power of our community. So by the way, you can just click community here on
+[3207] the v0 sidebar. I'm going to fork it, because they generously shared it with the world. Notice all
+[3215] the incredible animations here? By the way, they shipped this to hire and attract talent to their
+[3222] company. I recommend them, by the way, you should, if you want to be a brand designer, take them into
+[3226] consideration. Notice that it's an interactive, everything is AI generated, they used their own AI
+[3232] image generation tool to create these beautiful frames. These are all AI generated as well.
+[3239] Wow.
+[3240] And it's interactive. So there is the autoplaying functionality. This is actually a complex layout
+[3248] in animation system that they built entirely in v0. I was telling you that at one point they
+[3252] even got some advice from O-Wan, so shout out to OpenAI. I'm going to say, "Make it sepia style
+[3261] colors." So this is an example of like, "Okay, I forked something. I already have a starting
+[3267] point." My bank grade contact form is ready. In the meantime, another fun thing to do is you
+[3276] can start with a screenshot. So I'll use another Next.js user as an example, which is fortune.com.
+[3285] Shout out to them. They built a slick website.But let's say that I'm actually wanting to break
+[3290] into the news business, so I'm just going to paste a screenshot. I could have also
+[3296] attached the Figma file. And I'm going to have, v0 already knows, v0 can answer questions as well
+[3303] about the engineering design product world. So I can ask v0, "What is a newsletter? Explain with
+[3312] a diagram. Use Lenny as an example." So v0 is also a knowledge seeking tool. But we do strongly like,
+[3324] "Steer the tool to create things." So if I paste a screenshot, as you can see, it's cooking on
+[3330] creating a hopefully awesome news website. I specifically asked, because I think it's funny,
+[3338] to explain a newsletter with a diagram, so v0 can create again, explanations, content,
+[3347] knowledge. The creator is Lenny, you were a former Airbnb product lead. I guess I should-
+[3354] It's all- [inaudible 00:55:55]
+[3354] ... have used some examples from Airbnb, by the way. But let's look at here-
+[3358] It's all good.
+[3358] ... what it created with Fortune.
+[3362] Wow.
+[3363] So notice that, I'm just noticing now the cyber should have been on the center.
+[3371] I'm going to zoom out a little bit. Let's use the refinement tool to center this. I call this,
+[3382] by the way, one of the hardest problems in computer science is actually centering things.
+[3386] With CSS.
+[3388] That's right, centering a div. And in fact, look at it. It was a div. So notice that I
+[3393] did a precise inline prompt? And the difference between v0 and a lot of other tools is that yes,
+[3402] you do have the code and code is very important, but I call it code last rather
+[3406] than code first. You're living in the product. So center that. Another website that I love
+[3414] also built with Next.js is Semaphore. So I really like their sepia style.
+[3422] So I'm going to say, "Apply this style instead, including- "
+[3429] So you're sharing a screen. So you used a screenshot to design, to build a site,
+[3433] and now you're using a different screenshot to tell it, "Make it look like this."
+[3436] Yes.
+[3437] Very cool.
+[3438] And so the idea is that v0 can Grok different aspects of what it needs to build. It can be
+[3445] functional aspects, it can be layout aspects. And one of the things that's also very important to
+[3451] know is we influence the model. So a lot of the things that you would have had to prompt
+[3456] you might get for free. One that's important to call out is responsiveness. So as an example,
+[3463] if I notice that if I do this, it's going to make it work quite well on mobile, it's
+[3471] going to give me that hamburger menu. I can now tell it like, "Apply that style to everything."
+[3480] In the meantime, I'll show you, this is actually to me very, very impressive. And I don't know why
+[3488] today I'm so fixated on the theme of sepia. But notice that not only did it change the background,
+[3493] I hope people can notice this. It applied it to the checkboxes and it applied a CSS.
+[3500] I'm assuming this is a CSS filter. Yeah, it applied a CSS filter. Just for the sake of it,
+[3506] because I'm a nerd, I'm going to look at it. But yes, it applied a CSS filter. Confession time,
+[3515] I actually didn't know that there was a sepia function in the filter property
+[3519] of CSS. There were many ways to accomplish this. You could have also written the images
+[3523] or the videos to a canvas, and apply all kinds of algorithms, and whatever.
+[3528] I like that it did more elegantly than you would have.
+[3531] Yeah, exactly. So that's why you can't be too opinionated with the tool.
+[3536] So another cool thing is I do like showing screenshots, but I do want to remind
+[3543] people that the idea is not to clone other people's websites, necessarily. Right? It's-
+[3549] It's just a cool demo. It's a simple way to show off what it can do.
+[3552] Exactly.
+[3552] Yeah.
+[3552] Take screenshots of your own things. Take screenshots of your art boards,
+[3556] take screenshots of things that people post in Slack, and also don't hesitate add functionality.
+[3562] Incredible. Thank you for doing the demo. I'm just trying to
+[3565] imagine having an engineer I'm working with, asking them to do these things,
+[3567] and not only just how annoying that would be, like, "Make it sepia."
+[3571] Yeah.
+[3572] But just how much time it would take from, "Okay,
+[3574] do this thing, copy fortune.com." It'd be like days, weeks. Here, it's just-
+[3579] Months.
+[3579] ... check it out here. Months.
+[3580] If ever.
+[3582] Yeah.
+[3582] Maybe it never ships.
+[3584] That's right. Well, something that I noticed that I loved at the beginning when you were
+[3588] doing the prompting and that prompt improvement feature is it basically is best practices
+[3593] to make it look good and look better. Which I think is one of the more interesting,
+[3598] I don't know, levers to working with AI is it just has best practices to help you build things
+[3603] that are beautiful and also feels like there's this opportunity of just helping you figure out
+[3609] if what you're building is at all a good idea. "What is the problem you're trying to solve?" It
+[3614] feels like there's a PM1 pager step that should exist. Like, "How do you know this is a problem?
+[3621] What have users told you? How many people have told you this?" Things like that.
+[3624] Yeah. There's something to be said about the fact that over time we're more and more peeking into
+[3631] the mind of the AI. That in itself is becoming a killer feature. So the Deepseek stream, the
+[3640] thinking tokens moment was a very big moment for our industry, I think. Because OpenAI did have the
+[3647] technology, but they decided that for competitive reasons, which, it's a reasonable think to think,
+[3654] no pun intended, they were going to withhold it. And also it wasn't clear that there was going to
+[3658] be product end user and product utility. But when Deepseek hit, it was very obvious that people
+[3665] really liked the idea of understanding how the AI thinks and influencing where it should go. We've
+[3672] gotten actually amazing feedback and bug reports where people actually specifically point out,
+[3678] "Look, this is where the AI went wrong. Please fix it." So the more people we get on this product,
+[3684] the more thumbs up, thumbs down, the more user feedback we get.
+[3689] And by the way, I'll tell you for people out there building products, my number one guidance or piece
+[3695] of advice I would give to any startup founder was, "Create a lot of opportunities for people
+[3703] to give you feedback inside the product." I drew inspiration from Stripe. And this was
+[3709] amazing for the early days of Vercel, there was a feedback button with a very slick inline form,
+[3715] with four emojis that would allow you to decide how you were feeling about the feature,
+[3720] the product at that very moment. And that would go straight into Slack. And we were
+[3725] building day in and day out, just streaming users' thoughts right into our consciousness.
+[3732] And maybe we would get, I don't know, tens, hundreds a day, especially the early days,
+[3739] maybe a couple a day and whatever. When you're building AI products, it's a constant stream
+[3746] of user feedback. So for people that are thinking about not building AI products,
+[3753] it's going to be hard to compete with something that has such a tight feedback loop with users.
+[3760] The whole idea is to capture users' feedback so the next iteration of the model, the prompt,
+[3766] the fine-tuning, the examples, the rag is better. And one of the things that Vercel has done as a
+[3775] result of this insight is we've open-sourced a lot of what makes v0 work. So let's say that
+[3782] you wanted to create the v0 for doctors as an example. You can go to vercel.com/templates,
+[3790] and you can clone a ChatGPT template that basically follows all of the best practices
+[3797] in the world for really high-performance, awesome UIs, and now you can go out and build your own AI
+[3802] products. We've also open-sourced the AISDK, which is the foundational plumbing of v0. It allows you
+[3811] to connect any model and generate UI from its responses, not just output text, but actually
+[3818] generate UI. So maybe because I love showing stuff, I'll just really quickly show you this.
+[3825] Okay, cool.
+[3825] Because I'm excited about it.
+[3826] Let's do it.
+[3827] So if you go to chat.vercel@ai super quick, you're going to see this is the open-source
+[3832] ChatGPT demo that we've built. You can ask questions like old-school LLM. But also,
+[3842] you can ask, let's actually finish this, let's ask, "What is the weather in San Francisco?"
+[3848] We call this generative UI. It's responding not with just plain text, it's creating components
+[3855] as a result. Last but not least, and this is a v0 style opportunity, let's ask it to help me
+[3861] write an essay about Silicon Valley. It's going to create a canvas or artifacts style experience,
+[3869] and everything is generative, but also users can edit, refine, et cetera, et cetera, et cetera.
+[3876] This actually reminds me of something I've been thinking about. There's all
+[3879] these startups that are building vertical AI tools. This is a little bit of a tangent,
+[3883] and there's always this AI stuff for lawyers, AI stuff for doctors, nurses, and the pitch
+[3889] there is that these are going to be founders that know a lot about the specific problem in this-
+[3894] Totally.
+[3894] ... useless market, and so they'll build the tools that are very specific to them.
+[3898] Yeah, I'm absolutely convinced that expert AI tools are the future. There's an amazing product
+[3905] being built on Vercel called chatprd.com. It's the v0 for writing PRDs and it's going to get
+[3912] a v0 integration soon so that you can write your PRD with AI and then you can create it with AI.
+[3918] That's just an example of a vertical that you can go after. There's also OpenEvidence. It's
+[3925] like the ChatGPT for doctors, actually. There is an amazing startup building x-ray AI tooling.
+[3934] So the ideas I think are infinite, and what I've seen from users of AI at Vercel, for example,
+[3940] our legal team loves this tool called Get GC.AI. They could in theory go to ChatGPT
+[3947] to ask legal questions, but someone out there decided, "I'm going to build the best legal
+[3952] AI tool in the world." It's going to be up to date. I'm going to obsess about this problem."
+[3957] The CEO herself is a lawyer, so it's going to be hard to compete with that, I think.
+[3963] But here's what I'm thinking. This is almost the opposite and I'm curious to get your take,
+[3967] but let's not spend too much time on this, because this is a complete change in-
+[3970] No, I love it.
+[3971] So you showed me the weather widget that you just built, basically it's like a little mini
+[3976] app that the AI built as you're talking to it. Is there a world where when AI, when AGI is far
+[3982] enough and approaching super intelligence? Can it just build you a Harvey, for example,
+[3987] in real time? "Here's the best experience for a lawyer. Here we go. We got it for you."
+[3991] Totally, totally. I believe that eventually, yes, but humans will always want to have some
+[3996] guardrails. The reality is that Get GC is taking a double job. One is making the
+[4004] best tools for lawyers possible, but also putting their weight behind it, saying,
+[4010] "We've actually used this and we believe that this is what the future should look like."
+[4015] There is a sense of direction and opinion about things and I think left to its own devices, AI,
+[4025] I don't know, this is the double-edged like prompt embellishment. AI doesn't always know
+[4031] exactly what we want or what we need. It's still very much a copilot, a partner, an assistant.
+[4038] It's not really running our lives, and I don't know that we even would want that, ultimately.
+[4043] Okay, I'm going to go in a whole different direction, which is taste. We hear this word
+[4047] taste all the time. It feels like a thing that people are always suggesting. This will continue
+[4051] to be an important skill, to know what is good, basically to know what people are likely to find
+[4056] valuable and good. And I know clearly you have great taste. You're building incredibly
+[4062] beautiful products, v0's clearly, it's like the most beautiful by default builder out there,
+[4068] as we've seen. So in terms of building taste, people are always like, "How the hell do I do
+[4072] that? I have great taste. I know I do. I don't need to." How have you built taste?
+[4078] How do you think you build taste and any advice for folks that are trying to improve their taste?
+[4083] Yes, I think it's extremely important to try lots of products. You need to get yourself out
+[4089] there. I think it's very important to go back to that, get into the world, ship things. Don't be
+[4099] hesitant of self-promotion in a way. So being very honest with yourself, building something,
+[4106] getting it out there, see how people react. Go back to the drawing board. I think it's about
+[4111] exposure. At Vercel we have one of our internal operating principles as increasing exposure
+[4118] hours. Try to quantify how much time you expose yourself to watching how people use your products,
+[4129] even to watch how people use other products, and you'll develop that muscle. Taste,
+[4136] sometimes I think we think of as this inaccessible thing that, "Oh, that person was born with taste."
+[4144] I see it as a skill that it can develop.And again, the AI will help you a lot here
+[4150] because we try and capture some of the universal principles of it. But there's also trends in the
+[4158] world. I'm not a super couture guy, but you can see that every year Paris Fashion Week has a
+[4169] theme to it and there is some innovations, there have some breakthroughs, whatever. And so trying
+[4174] to stay at the frontier or even try and define the frontier as well is certainly very exciting.
+[4181] I love how doable this is,
+[4183] increasing your exposure hours. Basically what I'm hearing is, "Use the best apps."
+[4190] Yes.
+[4190] There's a feedback cycle component to it. Just like, "Show people the thing."
+[4194] And understand these nuances. Right?
+[4196] Mm-hmm.
+[4196] So I actually recently created, I published it to my community, [inaudible 01:10:01] v0.
+[4201] I created a ChatGPT style interface inspired by Grok. And I captured a few things that Grok does
+[4207] that are just so smart. So on mobile web, when you press enter on their input, they default to
+[4215] creating a new line. Because they know that the way that people are used to submitting
+[4220] things on mobile is not by hitting enter, like we would do on a desktop computer. You can tap
+[4226] the little icon and your message goes out. On desktop, they inverted it. When you press enter,
+[4233] you're expected to submit. And I think if you got a new line, I think a lot of people would get
+[4237] frustrated that most people don't know that they can press command, enter to submit and whatever,
+[4241] and it slows everything down. And you can basically prompt for those things.
+[4248] But you have to pay attention to the details and you have to decide what you want to see in the
+[4254] world. And sometimes that means either defining best practices, or seeking the best practices,
+[4260] and learning from others. Another aspect of exposure hours is that you tend to overrate
+[4267] how well your products work. It's very important to give your product to another person and watch
+[4273] them interact with it, expose yourself to the pain of reality. And the more you submerge yourself in
+[4282] the real deal, nitty-gritty of what happens when people use your interfaces and whatnot,
+[4288] I think you you'll come out stronger, more grounded, hopefully more humbled.
+[4294] We don't like pain, though, and I like that this is a push, "Create some more pain in your life.
+[4299] Show people the thing you're building." Do you have a heuristic or number of how many exposure
+[4304] hours per week, per month you want your team to have or is it just more is always better?
+[4308] Yeah, I'm more is always better. I mean, because the inertia is to get inside your head, and the
+[4314] inertia is to think that you know everything, and assume that everything is going good, and,
+[4319] "There are no errors. Of course it's fast. It worked on my machine." I think it's always a
+[4326] push for more. I do sometimes little things like I asked my team to color my calendar. So I say I
+[4334] have to have a certain amount of one-on-ones with my team represented on my calendar,
+[4342] kind of like meetings so that I can sync with people and see how the company's doing.
+[4346] Then I want to have customer meetings. And during those customer meetings I push myself
+[4352] to use the products. In fact, with our enterprise customers, something that I do is I try to forget
+[4358] how things are built, what feature of [inaudible 01:12:41] or Vercel they use and whatever.
+[4362] I just frequently use their products. And I want the product to be great, that's
+[4367] all. And then I could try to work backwards.So a form of exposure hours for me is seeing
+[4372] what kind of success our customers are having in the real world. But again, it's just heuristic.
+[4380] Maybe one third of my meetings this week where customer meetings I tried and watched them
+[4385] do. Another really quick one is we invite people frequently to demo how they use the product live,
+[4392] sometimes to the executive team, sometimes to the whole company. And we always inevitably
+[4399] discover something interesting from the customer about maybe there is something that they're in
+[4405] pain about that we didn't know about, or maybe something was not as intuitive as we thought.
+[4411] And I find with these sorts of things, when you do them, when you talk to customers,
+[4414] you have them show how they use the product. You always like,
+[4417] "Why have I not done this more often? What am I thinking?" It's just so mind-blowing usually.
+[4423] Yes.
+[4424] I want to talk about limitations of v0 at this point. So what should people know about just what
+[4430] v0 can't do? If you have an existing code base, can you plug it in and start doing stuff? Or is
+[4436] that coming? What else should people know? Just like, "Okay, it's not going to do this yet. But- "
+[4439] Yeah, you can import code bases through zip files and Git is coming very soon. It can do full stack
+[4446] development, it can connect to APIs. In the next couple of days, maybe even before this podcast is
+[4451] out, we'll have these very tight integrations so that if you need a database, or if you need
+[4457] an AI model, or if the AI decides it needs that, it'll just seamlessly install it from the Vercel
+[4463] marketplace. And the Vercel marketplace has already curated some of the best infrastructure
+[4468] products in the world to store data, to search data, et cetera. So it's going to make the product
+[4476] even more powerful. I'll say again, I did that exercise, and I do that exercise every day of
+[4482] I have a wild idea and try to see if it can come to life. It's very powerful so far. AIs
+[4489] are still very much a work in progress. They can make mistakes. We have it as a little disclaimer
+[4495] underneath the input. You will find errors, our fitness function. And we've seen such a strong
+[4502] correlation between user love and retention.v0's actually their retentive product compared to
+[4508] other AI products that I've built in the past, or little demos that we've done, or whatever. People
+[4514] subscribe and use it every single day, and are very, if they notice a bug, they're very, very
+[4522] jittery about it because they're depending on it day in and day out. But I'll say errors are still
+[4527] possible. Every once in a while you might get a runtime error or whatever, but a lot of the
+[4533] technology that we've added is so that v0 is very agentic. It has a lot of agency in how to act. So
+[4542] you're going to see very frequently that if it runs into errors, v0 tries to solve them itself.
+[4550] And then last I will say, when products get really big, AI today is just not as good at
+[4559] dealing with massive code bases. But going back to that idea of the React component,
+[4566] because we break down things into files and components, we tend to do quite well in that
+[4572] dimension. In fact, one thing that Next.js was known for is that in order to start a project,
+[4582] you just create a file, and Next.js will route to that page. If anyone is familiar with PHP,
+[4589] it's like how PHP worked. And so it's so good that LLMs are good at working with files now, because
+[4596] it fits very naturally into our world. And if you can scope down when things get really big, if you
+[4601] can give it a smaller task, to work on a specific component or a specific file, you decrease that
+[4607] likelihood of the LLM not being able to reason over very, very, very long context windows.
+[4614] I want to go back to design. We talked about how v0 is really good at just great design
+[4620] by default. To lean into that more, if someone wants to improve the design of their product,
+[4626] most people are not designers, they don't really know how to make it look good. They don't know
+[4629] what to ask for. Any just tips and best practices for making their app even better, look even nicer?
+[4635] Yeah, it was really interesting. The other day I met with a CIO of a large bank who,
+[4641] on the side does a lot of coding, or tries out new technologies and whatnot. And I showed him
+[4646] v0. And he immediately became a v0 addict. He texts me every day with feedback. He moved two
+[4654] websites of his own from another website builder type provider to v0 and Vercel,
+[4661] deployed them, gave them a domain name, they're live in production. And then he said, "Look,
+[4665] I have this challenge. I have this music festival that I organize with a couple of friends and this
+[4672] is what the designer gave us." And he had this brochure. It looked very much like a
+[4678] print style design. And so he gave that to v0 and the first result, he was dinging me
+[4686] for it. He's like, "Look, this doesn't look good."And then, because I have experience with the tool,
+[4690] I said, "Why don't I just give it the feedback?" Literally you were asking me yesterday, earlier,
+[4697] some of the things that I've learned with the product or the best practice,
+[4700] what would I recommend if it were sitting next to someone? Not only,
+[4705] you should not hesitate to give the AI feedback, it's so interesting, dude. Sometimes people will
+[4712] press a feedback button to tell us what they wanted v0 to do, and literally all we had to do,
+[4719] in many cases is just, "Can you just tell v0 that?" And so he sent me this message saying,
+[4725] "Yeah, I just don't like the design." And I gave him back a prompt that I would've given. I don't
+[4731] know what I said specifically, but it's like, "Make it more jazzy, make it more, make it pop."
+[4738] And so trying, and again, it goes back to try to draw inspiration from variety that the AI already
+[4746] knows about. So in a couple of prompts, we ended up something that was in his mind, better than the
+[4753] original print design of that brochure, that concert lineup. And at that time, and again,
+[4760] I'm even learning about what v0 is capable of and the best ways to use it. But with design, I think
+[4768] unleashing its creativity, and seeing things, and playing with it is definitely super helpful.
+[4775] So one thing I'm hearing here is just tell it, "Make this look better." Or, "I don't like- "
+[4780] "Make it pop."
+[4780] "Make it pop."
+[4782] You can, totally. And if you can use tokens that are relevant, so,
+[4789] "Neobrutalist, minimalist, newspaper-like, vintage, make it look like a telegram." You
+[4798] can try and reach for things that maybe would not naturally come to
+[4804] mind and you'll be surprised about how well it can transfer those ideas into reality.
+[4809] Incredible. Too easy. Maybe to close out our conversation,
+[4814] we'll see where this topic goes. I had this tweet that I loved, that I super resonate with,
+[4819] "The secrets of product quality is blood, sweat, and tears." I completely agree. I think that's
+[4825] why I think my newsletter's been successful. I spend so much time on every newsletter post,
+[4829] more than I think anyone spends on a newsletter post, like 10, 20,
+[4832] 30 hours. And that's why I think it works. Is there anything more behind that tweet,
+[4837] anything you've learned in just the importance of working hard, I guess to great, great stuff?
+[4842] Yeah, I mentioned exposure hours is a good example of like, "Look,
+[4845] it can be painful. It can be painful to see your baby break in front of everyone and noticing all
+[4854] the ... " The other thing is that a great product is made up of a thousand little
+[4858] details and so you're never really done. There's a humility that comes from the process also of
+[4865] why the best product builders will say nine nos for every yes. Because when you say yes,
+[4872] it's like adopting a puppy. A feature is like adopting a puppy. It grows into a beast
+[4878] that you have to take care of, and it's very demanding and loving. But also it's a lot, and
+[4886] poops everywhere. So you have to have a creative restraint. And while you also have to have a give,
+[4894] you have to withhold, sometimes with the respect of the real world complexity that emerges.
+[4902] A little thing that I kind of obsess about. I'll give kudos to the Midjourney team. I really
+[4908] love how Midjourney works on mobile web. I don't know if they have an app yet, like a native app,
+[4913] but their mobile website is phenomenal. And to get it to be that good, by the way, it's possible.
+[4918] It's actually possible to make great things on mobile web. But it needs that sense of love,
+[4927] and restraint, and obsession, and testing a lot, and using your own products a lot. Dogfooding is
+[4936] a great mechanism, obviously. So we use the heck out of Vercel and v0 to make Vercel and v0, and
+[4944] hopefully that helps us do better. But there is a lot of blood, sweat, and tears in the process.
+[4950] Yeah. You can tell how much you use the product. It comes through in everything
+[4954] you say. Let me actually ask about this. You talked about how you said you have 600 engineers?
+[4959] No, 600 people, total and a hundred-
+[4961] 600 people total?
+[4961] ... 150.
+[4963] How is AI changing the way they work? Is there anything there? Because I feel
+[4966] like you guys are the cutting edge of how products are built. What's
+[4971] happening? Is it just everyone's on Cursor and v0 to build stuff?
+[4975] Yeah. Yes, but actually it's more profound. I think it's the, everybody can ship, it's the,
+[4982] we build with AI principles in mind. I actually give a shout-out to the Lumalabs engineer who
+[4989] said, "Well, I'll use AI for everything. I'll use AI also to generate the images for the website."
+[4996] And I'm seeing, for example, our designers that are working on our next conference generate all of
+[5004] the animations with video models. I'm looking at, our marketing team are creating demos of how the
+[5014] infrastructure works with v0 that are better than any static diagram or landing page that I've ever
+[5023] seen. One of my most viral xeets or X posts is something that one of our designers created, which
+[5031] explains how our compute infrastructure works with an interactive demo. And until he created that,
+[5038] by the way he designed, it and created, and we shipped it all in the tool, first of all,
+[5044] it wasn't part of his day-to-day job to do that.v0 is making you such a powerful generalist that
+[5053] you can step out of your comfort zone of like, "Well, my job was to do only this." You can just
+[5058] create. We have a ritual every Friday, we had it this morning, called Demo Fridays. And so
+[5064] it's very important to create the space for people to step out of that comfort zone and
+[5069] use AI. So us giving permission to people to build and ship things is part of that cultural
+[5078] backdrop that makes these things possible.We had a demo today as part of the Demo Friday
+[5084] of our VP of sales engineering also creating an amazing tool that he's going to use to help
+[5091] prospects understand Vercel with v0. So I've heard from DevOps and infrastructure engineers
+[5097] how much they use tools like Cursor to work on the low levels of the Vercel infrastructure.
+[5104] So I think very quickly we're seeing AI being embedded everywhere. I just heard a product
+[5109] request from a customer that was saying, "Okay, Vercel, you sell domain names. Let me come up with
+[5114] new domain ideas with AI." So I just see a future where AI becomes synonymous with software. I do
+[5122] look forward to it because we need to stop talking about AI at some point. I foresee,
+[5127] it's probably not going to happen, but it is useful to remind people that AI equals software
+[5133] now, and we are a software company. We build software, and we use software to build software.
+[5140] And AI is just a part of that.
+[5142] Yeah.
+[5143] Guillermo, what a beautiful way to end it. Is there anything else you wanted
+[5147] to mention? Anything else that you want to leave listeners with before I let you go?
+[5153] I'll leave you with my vision of the future, which is we have this billboard in San Francisco,
+[5160] which is, "Everybody Can Cook." It is also part of the Ratatouille film, one of my favorite movies.
+[5169] I look forward to a future where everybody can get their ideas out there. If you can dream it,
+[5175] you can ship it. And also that when you use products and when you see the creations of
+[5180] other people and the things that they put out into the world, that we are collectively making
+[5185] the world better. So anything you experience hopefully gets faster, higher quality,
+[5193] fewer bugs as we go along. And I think we're all contributing to that. And I look forward to
+[5199] that and I look forward to everyone's feedback on how Vercel can play a part in that future.
+[5204] So to build on that, where can folks find you online?
+[5207] Should they just go to vercel.com, visit v0.com?
+[5210] Yeah. And go to v0.dev-
+[5212] .dev.
+[5212] ... to get started. I did mention if you want to build your own v0,
+[5218] this is more advanced, but check out our templates on vercel.com/templates. And
+[5225] also I'm BrouchG on X, so you can DM me or tweet at me at any time.
+[5231] Amazing. Guillermo, thank you so much for being here.
+[5233] Thank you, Lenny. It was so fun.
+[5235] Bye, everyone.
+[5239] (instrumental music)
+[5239] Thank you so much for listening. If you found this valuable, you can subscribe to the show
+[5243] on Apple Podcasts, Spotify, or your favorite podcast app. Also, please consider giving us a
+[5248] rating or leaving a review as that really helps other listeners find the podcast. You can find
+[5254] all past episodes or learn more about the show at lennyspodcasts.com. See you in the next episode.

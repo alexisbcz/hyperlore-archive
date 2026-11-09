@@ -1,0 +1,1041 @@
+[0] [Music]
+[0] welcome back to the show i'm b dougie
+[1] and you're about to learn the secret
+[2] sauce
+[17] yeah so koppel welcome so much to uh san
+[19] francisco have you been to san francisco
+[21] yet uh i've been twice um but both quite
+[24] short trips so was it during super base
+[27] times or previously yeah one time with
+[29] uh super so one as a tourist and then
+[31] okay one as um sort of super base to do
+[34] some some uh fundraising yeah for one
+[37] week only um and then now this one's
+[41] more like this sort of stuff which is
+[42] obviously a lot more fun excellent yeah
+[44] so i i'm happy you're here because uh i
+[47] mean i live here so but you have a very
+[49] interesting story which is super bass
+[51] but i want to actually cover like the
+[53] origin story of super bass so super bass
+[55] actually do you want to explain what
+[56] super bass is before we even get even to
+[57] there sure yeah so we superbase is an
+[60] open source firebase alternative we're
+[62] building the features of firebase but
+[64] we're using existing open source tools
+[66] wherever possible and
+[68] really what we are is kind of a postgres
+[70] as a service company we do a lot of
+[72] stuff around postgres you sign up you
+[74] get a form postgres database and then we
+[76] provide these tools that make postgres
+[78] incredibly easy to use automatic apis
+[81] real-time functionality auth storage
+[85] and now edge functions so uh yeah that's
+[87] the core of it really providing this um
+[90] developer platform that's incredibly
+[92] easy to use for for back end
+[94] excellent yeah cool so
+[96] i'm a big firebase fan you actually were
+[98] on my podcast jamstack radio if anybody
+[100] hasn't heard of it uh google it uh we
+[102] learn a bit about the story but like
+[104] we're i think two years later at this
+[106] point yeah so uh can we like why
+[110] firebase open source alternative like
+[112] how did you get to that point where you
+[113] wanted to to build that yeah so
+[115] um we were using firebase in my previous
+[118] company um i had a startup quite
+[120] different not a dev tools company but um
+[122] our stack was basically yeah postgres
+[125] and then we were using firebase for one
+[126] part of it it was a messaging part
+[128] which firebase is incredibly good at but
+[131] we had a scaling issue around um yeah
+[134] just the number of receipts we were
+[136] getting out of the database so i had to
+[138] migrate it into the postgres database
+[140] that we had and in that process of
+[142] course
+[144] postgres does not have real-time
+[146] functionality
+[147] so i ended up
+[149] yeah went through a few iterations but i
+[151] wrote a real-time engine using elixir
+[153] and i open source that
+[155] around the end of 2019 and i started
+[157] getting traction and that was kind of
+[159] the impetus for
+[160] for starting super bass i knew i wanted
+[163] to do a dev tools company but that was
+[164] kind of the thing that lit the flame and
+[167] uh yeah kick started it all what was so
+[170] that was that called super bass at that
+[171] point no what was it called that it was
+[173] just called the the engine was just
+[176] called real time real time yeah because
+[178] you know i'm a big fan of just naming
+[180] things for exactly what they do so
+[183] it's better than like pink pink purple
+[185] pookie pants yeah trying to figure out
+[187] what what about you
+[188] well you know and developers never know
+[190] uh i think it's one thing they're not
+[192] very good at just saying what it is
+[194] first so
+[195] i always try to name things exactly okay
+[198] so where is real time now did that get
+[199] embedded into what super base is today
+[201] yeah we just created a new org um it was
+[204] under my personal account and we just
+[206] shifted it in there and now we pack
+[208] everything under super bass okay
+[210] excellent so super bass
+[212] so when did you officially say okay we
+[214] need to org we're going to make this a
+[216] real thing yeah so end of 2019 that's
+[219] when it started getting traction and i
+[221] thought ah now's the time to do super
+[222] bass i'd kind of been planning to do
+[224] this database company for a while and i
+[226] approached my co-founder and pitched him
+[228] on the idea i think i pitched him the
+[230] idea of actually like an app uh
+[233] like a um app store for postgres or
+[236] something like that where it had a bunch
+[238] of functionality i mean that would be
+[239] useful yeah exactly well and it's
+[241] essentially what we've done yeah um with
+[243] you have the super base plugins with
+[245] super bass we've got extensions and
+[246] everything that we built for postgres so
+[248] it's it's kind of like that but the
+[250] positioning for the firebase alternative
+[253] well we started building that
+[255] um i convinced him to join he he also
+[258] had a startup and he
+[260] left that to
+[261] work on superbass with me and you know
+[263] we're talking to a lot of people and
+[265] finding out what they um what they like
+[268] and what they use and everyone loved
+[270] postgres and everyone used firebase
+[272] and so we discovered well the reason why
+[275] is because it's just so easy to use
+[276] firebase is great yeah the developer
+[278] experience was like so i used firebase i
+[280] was a i want to be ios developer i
+[284] learned swift and objective c then swift
+[286] and then react native eventually but
+[288] uh firebase was like my what core was it
+[292] core data i think is like the out of the
+[294] box data solution for xcode and
+[297] objective-c or whatever
+[299] but firebase made it's so easy because
+[300] it like the developer experience of
+[302] knowing okay i just want to filter on
+[304] this this table exactly let me do that
+[306] yeah and that's that's what i could do
+[308] and i think with super bass like uh
+[311] which i mentioned already but like i'm
+[313] building a super bass project powered
+[315] for open source yeah literally this
+[317] channel which is hot open sauce.pizza
+[320] and i just had like a sort of like a
+[322] dream of hey what if i can just search
+[324] for projects that people are interested
+[325] in contributing to
+[327] where i'm going to store this super base
+[329] it's easy i can just ship it so i will
+[331] get into more detail details how this
+[333] works but
+[334] i'm just injecting or actually inserting
+[337] a bunch of repos in there and updating
+[339] the data like on a cron job okay now and
+[342] then
+[343] uh postgresql job or uh no i'm actually
+[345] using github actions okay to do that um
+[348] i could use a postgresql honestly i need
+[350] to move off actions because like we're
+[351] going to hit
+[352] this is the only project i could
+[353] actually even hit action limits okay
+[356] yeah and it's because what we're doing
+[357] is we're essentially scraping
+[359] some parts of github and trying to make
+[361] it useful for folks to find projects but
+[363] yeah we're going to have to eventually
+[365] migrate off of actions but for now
+[367] we're using that uh we'll get a little
+[369] more sophisticated later sure but i
+[372] loved how easy i i basically spent a
+[374] couple streams because everything i did
+[376] to build this project was live streaming
+[379] okay yeah so like learning learning
+[381] super bass and learning all this stuff
+[382] was like live on air cool and it was
+[385] extremely approachable oh cool cool cool
+[387] so it's really built in in public yeah
+[389] for sure it's all open source built
+[390] public you can follow follow all the
+[392] pathway but sorry we diverged
+[395] we were talking about firebase in the
+[396] developer experience yeah so at that
+[398] point you know we thought well that's
+[401] really the goal we just want to make
+[402] postgres as easy to use as firebase and
+[405] so we actually just adopted that
+[407] positioning the open source firebase
+[408] alternative that day someone posted us
+[411] on hack news and it went kind of crazy
+[414] um we went from like eight databases to
+[417] 800 overnight we had a hosted platform
+[419] from day one so you can sign up and
+[421] typically open source projects start
+[424] with just the self-hosting and then go
+[426] platform but we decided would go
+[428] straight in
+[429] and uh yeah since then it's just been
+[432] building out five days to their credit
+[434] is like a huge suite of tools and uh
+[436] it's a lot to build so um we're just
+[438] always playing catch up so
+[440] you convince ant who's your your
+[442] co-founder to leave his previous startup
+[445] to join you yeah um how are you
+[447] connected to the amp before yeah so um
+[450] we both moved to singapore at the same
+[452] time actually and we um did this program
+[455] called entrepreneur first which is quite
+[457] cool uh started in the uk and they've
+[459] got
+[460] accelerators all around the world and
+[462] what they do is they just throw like 100
+[464] people in a room together um the idea is
+[467] that you form a startup in that room but
+[469] it's quite deep tech so like people
+[471] doing quantum computing i was working on
+[473] the metaverse this like 2017 i think
+[476] okay and uh like augmented reality all
+[478] sorts of weird stuff um he started a
+[481] crypto company back then um
+[484] and then i ended up dropping out and
+[486] doing another um startup with someone i
+[488] knew and
+[490] we so we didn't work together there but
+[492] we ended up living together uh in this
+[494] like hacker house of like five people
+[496] doing different startups
+[498] and uh after a couple of years of
+[501] building um my next startup i i
+[503] thought well now's the time who's the
+[505] best techie i know and he is so
+[508] so i i literally had to like i sat him
+[510] down pitched him had a dick and
+[513] told him you know what we're going to
+[514] build and he
+[516] yeah kindly agreed that that is awesome
+[518] i mean to get someone as talented as
+[520] aunt and and to also convince him to say
+[523] yes to yeah to your startup over his
+[525] startup yeah well the way i convinced
+[527] him i was i knew what he really wanted
+[528] he he had applied five times to get into
+[531] y combinator yeah so i just pitched him
+[533] on the idea that we're going to assemble
+[534] this team that they could not say no to
+[537] y combinator and he said all right yeah
+[539] i'll agree
+[540] that is amazing yeah i was also declined
+[543] from yeah well it's hard to get into
+[545] yeah i think i think i didn't realize
+[547] how hard it was to get into and luckily
+[550] luckily we did yeah did you apply to y
+[552] combinator previously uh no no i hadn't
+[555] applied before um
+[557] i just didn't think my business is
+[559] suited previously uh yeah y combinator
+[561] but this one clearly did its developer
+[563] tools and you know it's it's yeah
+[566] it's a y combinator company
+[568] cool yeah so
+[570] uh so you got into y combinator you
+[572] started super bass and you always like
+[575] i've heard stories of folks get in the y
+[576] combinator but then they pivot so have
+[579] you always had the same idea from day
+[581] one it sort of powered through yeah
+[583] actually so before we even got into yc
+[586] um like we updated the tagline on our um
+[590] on our homepage to the open source
+[591] firebase alternative put backed by yc
+[594] and that day someone put it on um hack
+[597] news and it went like straight to the
+[598] top and usually you wait and you do like
+[601] a launch hacking news and um the guy
+[603] danji
+[605] or dang
+[606] who moderators just said well this is
+[609] now your launch how can you use so you
+[611] just change the the thing to say launch
+[614] hack and use
+[615] and
+[616] so
+[617] it was very popular and everyone said
+[619] what they wanted developers are very
+[621] clear what they what they want so um we
+[624] knew that we had sort of hit um the
+[626] right positioning and we knew what we
+[628] had to build to um like reach more
+[632] customers yeah so we didn't have to
+[634] pivot at all we just needed to build
+[635] extra things that they asked for yeah
+[637] that's i mean that's a great position to
+[639] be in uh to be able to say like okay we
+[641] have
+[642] an active customer base or i don't know
+[644] if you're in charging at that point
+[645] because i know it was a while before he
+[646] even had even pricing which i even i
+[649] feel like now
+[651] i am underpaying what i'm using you for
+[653] so so i guess i wanted to ask you went
+[656] to yc but you did it all remotely from
+[659] singapore yeah that was so the company
+[662] started january 2020 and that's
+[665] i think march 2020 is when um covert
+[668] really started kicking off in singapore
+[670] at least
+[671] and um so
+[673] that was the first ever summer 20 was
+[675] the first yc fully remote batch and we
+[678] had to do it from singapore like during
+[680] strict lockdowns so we're just dialing
+[682] in and doing a lot of midnight phone
+[684] calls because the time zone is so
+[686] shocking from singapore to the us
+[689] but uh it was good because it meant that
+[691] we
+[692] could focus just on building which is
+[694] really what we should have been doing
+[695] yeah yeah i mean it's a great time
+[697] because i remember that time i actually
+[699] honestly that's when i got serious on
+[701] open source okay whereas during lockdown
+[703] that's when i started cleaning up code i
+[704] had this login functionality before you
+[706] could not log into the product
+[708] so i remember that time when i was
+[709] actually shipping side project stuff but
+[710] to work on my company my full-time
+[714] business like that is amazing time to
+[716] get started yeah so wait were you you
+[718] were all of you were in singapore and
+[720] then at that point yeah well there
+[721] weren't many of us so when we sort of
+[723] got in there were three and probably by
+[725] the end of yc we had maybe six or seven
+[728] people and um they're all
+[731] yeah we're fully distributed the company
+[733] and you know like during yc they say
+[736] don't hire but we had so much to build
+[738] that we knew techies from our previous
+[740] companies that we could bring in and
+[742] additional ones like for example we use
+[744] a tool called postgrest which is with a
+[747] t and it auto generates an api on top of
+[750] your postgres database and luckily i had
+[752] been in touch with the um maintainer of
+[755] that and
+[756] i reached out to him just to say hey
+[758] we're nyc and we're using this just to
+[760] let you know i try to make sure we give
+[762] props to
+[764] any tool that we're using and he said
+[766] well i'm looking for a job and he was in
+[768] peru so
+[770] because we're fully remote and
+[772] distributed we say well just work full
+[774] time owner and we'll pay pay you to do
+[776] that so um that was kind of the start of
+[778] like us thinking well we can find these
+[780] great developers everywhere and why not
+[783] just make the whole company like this
+[785] fully distributed as much as you can
+[787] yeah and speaking of finding great
+[788] developers
+[789] super base majority of the product is
+[791] open sourced and i've been open-sourced
+[793] in day one so like did you
+[795] what was the what was the reason for
+[797] being open source
+[799] yeah well i think mainly and to myself
+[802] first of all are philosophically aligned
+[804] to
+[805] everything being collaborative and open
+[807] source and and sharing that's so that's
+[810] number one um
+[812] and you know it's just a better world if
+[814] we're improving existing technology
+[816] rather than always coming up with new
+[818] ways of doing things and which have
+[820] already been solved in the past so
+[821] that's part of the like postgres story
+[824] post rest each of these tools are
+[826] already great why build yet another one
+[829] of these
+[830] um so that's there's one reason i mean
+[832] there's many of the other reasons which
+[834] everyone speaks to of course it's great
+[836] for developers there's no lock-in you
+[839] can self-host only the additional really
+[842] neat features but to be honest the core
+[844] of it is just because we like that
+[846] version of the world better than better
+[848] than a proprietary one but are you not
+[850] concerned about like competitive
+[852] advantage or edge or anything like that
+[855] not really i mean there's parts of super
+[858] bass that we expect people will take
+[860] like uh and super bass is kind of a
+[863] suite of tools right so it's kind of
+[865] like well which part of super bass are
+[867] they going to take maybe some of our
+[869] extensions we've got a graphql extension
+[871] which i i know a lot of people are
+[873] interested in
+[874] but um otherwise like we're using tools
+[877] which are already open source and yeah
+[880] like postgres i mean we kind of owe it
+[882] to postgres to keep everything open
+[884] source because we're leveraging postgres
+[886] itself yeah so
+[888] it's a give and take yeah yeah yeah it's
+[890] it's beneficial because then i mean it
+[892] probably is easier you mentioned is
+[894] you're gonna be able to hire during yc
+[896] but
+[897] just finding people to work on super
+[899] base you could just look directly in
+[901] like the open source repo right yeah
+[902] like our hiring strategy is basically
+[905] especially at the start we were just
+[907] getting people contributing and then
+[908] they were becoming too good to ignore
+[910] and we just said well do you want to do
+[912] that full time yeah so that was great um
+[915] that's just yet another benefit of open
+[917] source and people who um we hire now we
+[921] look at their open source contributions
+[922] what they've been doing are they
+[924] philosophically aligned in the same way
+[926] and motivated by the same things so
+[928] yeah i mean there's so many benefits to
+[930] open source yeah and how do you what
+[932] like what's your step for even
+[934] discovering like how do you even notice
+[936] someone's like hey you keep showing up
+[937] in my pr's
+[939] and we keep merging you um
+[942] you just noticed them i guess like i
+[944] heard there's a tool coming up that uh
+[946] we can yeah so i mean
+[949] open sauce like we're we're building a
+[950] platform so like the thing that's still
+[951] a work in progress it's what we've been
+[954] provided from get sense and like i even
+[956] pointed out mild tomato
+[958] as someone who's like sticking out as
+[960] like a sore thumb of like oh this
+[962] person's doing a lot of good work
+[963] uh or it could be a bad word who knows
+[965] but like obviously there's somebody you
+[966] should probably talk to yeah and you'd
+[968] mention well there's johnny so he works
+[971] in super bass i expect him to be a
+[973] little bit higher actually
+[975] i'll have a word to johnny after this
+[976] okay yeah well we definitely don't want
+[977] to we don't want to basically crack it
+[979] but there's plenty of people inside that
+[981] you know i
+[982] yeah and this is
+[983] this is for the super bass the uh
+[985] flagship repo too as well so like we're
+[987] not even breaking down because i know
+[988] johnny from the ui
+[990] uh repo and had a quick conversation
+[993] with him through email just because
+[994] we're going to be leveraging the super
+[995] base ui this uh spoiler cool um yeah
+[998] it's a lot of solve problems in there
+[1000] yeah and
+[1002] i guess what i'm getting at is like
+[1003] there's a really good indicator of like
+[1005] there's some folks who are making
+[1006] contributions uh and then even it looks
+[1009] like you're leveraging get start and
+[1011] they're doing a good job of um making
+[1013] contributions as well
+[1015] but like isaiah
+[1016] has got five pr's in the last month like
+[1018] is that an employee as well no he he
+[1021] so this one he's a 15 year old kid in
+[1025] the us and he just started contributing
+[1027] and uh
+[1028] while he was at school he just started
+[1031] like really contributing and then we
+[1033] said well we'll give you an internship
+[1035] if you want we'll pay you for this and
+[1037] so that's like we just noticed him and
+[1039] made him an offer yeah that's amazing
+[1042] because like so we just had the cto of
+[1044] fig uh come through and do one of these
+[1046] interviews with us and he had mentioned
+[1047] that he at 15 was working for foursquare
+[1050] oh really okay cool and um
+[1053] so it's like almost like a sort of
+[1054] inverse similar situation but
+[1057] also a very common thing i hear a lot of
+[1059] like 15 16 year olds who
+[1061] have some free time and want to get down
+[1063] and dirty in some code bases with a
+[1066] bunch of adults and it's a good way to
+[1067] get your your i guess your feet wet in
+[1070] the industry definitely yeah not
+[1071] required by any means but
+[1073] i think having access to this type of
+[1075] information that's what we're trying to
+[1076] work on with open source yeah and that i
+[1078] mean that's the nice thing about
+[1080] open source in general like we didn't
+[1082] know that it was 15 right we just look
+[1084] at the quality of his code and that's
+[1085] good and you can be whatever you want
+[1088] and contributing it really does not
+[1090] matter your your work speaks for itself
+[1092] so that's kind of cool as well yeah
+[1095] that's amazing yeah so i mean hopefully
+[1097] we can be beneficial to you in the
+[1098] future as we can highlight even folks
+[1101] who contributed to some of the
+[1103] extraneous uh outside projects as well
+[1106] one thing that also intrigued me to
+[1108] manage the superfast is the suite of
+[1109] tools
+[1110] so like do you off the top of your head
+[1112] like what is what does that make up yep
+[1114] um really there's like
+[1116] first of all you start at the bottom as
+[1118] postgres and everything we do kind of
+[1120] centers around postgres and then like
+[1123] there are
+[1124] when you think about the main things
+[1126] that you need when you're starting a
+[1128] business uh auth um so we've got an all
+[1131] server which you mentioned go through um
+[1133] then there's an api so we've got
+[1136] postgrest which auto generates apis and
+[1139] when you think about apis we've kind of
+[1140] got three a restful api a
+[1144] graphql api and a real-time api
+[1146] then we've got storage for storing large
+[1149] files images videos things like that and
+[1151] then we've got um
+[1153] one final thing now which is edge
+[1155] functions
+[1156] and all of these things work together
+[1158] and they're very nicely integrated with
+[1160] the database row level security
+[1162] we leverage postgres as much as we can
+[1165] okay yeah that's i mean that's a good
+[1166] suite of tools and it's funny because
+[1168] like i've i've been
+[1170] growing the open source product around
+[1172] those tools like ed function is thing
+[1174] that we've been waiting for
+[1176] because like that's one of the things
+[1177] that we're still using actions for is
+[1178] because i always wanted to like
+[1180] do some transformations of the data
+[1181] we're just ingesting and like
+[1183] so the one thing we have is we have
+[1184] voting
+[1185] uh and specifically like when you
+[1187] calculate the votes for the day
+[1189] like we we want to base essentially
+[1191] build the product hunt for open source
+[1192] projects okay cool and uh we can't do
+[1194] that until we can just like run the cron
+[1198] okay and basically say okay this is the
+[1199] votes for today here are the votes for
+[1200] the week here's who is worth celebrating
+[1203] and then like generate the newsletter
+[1204] yeah so like that's that's the road map
+[1206] for this one product okay cool and uh we
+[1209] can now do that all in super bass nice
+[1211] which is amazing now
+[1213] i could do it now because i'm i'm now
+[1215] working full-time on open source but
+[1217] i just didn't have time to uh to build
+[1219] it myself live on stream so yeah look
+[1221] out for it by the time this video comes
+[1222] up maybe we'll have we've advanced to
+[1224] the point where now people can leverage
+[1226] this on a on a weekly daily basis
+[1228] i know i didn't mean to just be like oh
+[1230] wow we're using super bases well
+[1232] commercial i like it you can promote
+[1234] super bass as much as you can
+[1236] like this is actually very convenient
+[1237] because you can talk about the features
+[1239] related to yeah
+[1241] this is why i'm super happy to have you
+[1243] here in the bay area and in san
+[1244] francisco to chat with you in person for
+[1246] the first time because we've actually
+[1248] chatted a couple times
+[1249] and it was funny because i think we
+[1251] chatted on the open actually i don't
+[1253] think we chatted you talked with mish uh
+[1255] from github yeah exactly uh on open
+[1257] source friday to talk about super bass
+[1260] i don't even think you were in yc at
+[1261] that point
+[1262] uh
+[1263] or you might have just got you just
+[1265] gotten the weight yeah exactly and then
+[1266] we chatted i think on the heavy bit
+[1268] yeah i had you on the podcast like maybe
+[1270] six or seven months later yeah exactly
+[1272] uh because i think you had then
+[1274] announced your your seed fund or
+[1276] something like probably yeah yeah the
+[1278] timeline like it's
+[1280] it's funny because it seems so quick
+[1281] probably super fast for you well yeah it
+[1284] seems well it's been what just over two
+[1286] years since we started two and a half
+[1288] years maybe but uh yeah a lot happened
+[1290] yeah and congratulations on the series b
+[1292] that was announced uh probably a couple
+[1294] weeks ago yep yeah exactly we just
+[1296] raised uh
+[1297] 80 million dollars from from felicis was
+[1300] the lead investor and then we had kotu
+[1302] join as well who have been great
+[1303] investors yeah yeah yeah i see them a
+[1306] lot yeah really yeah it's not it's funny
+[1308] because uh you had mentioned um uh in
+[1310] passing in like another conversation
+[1312] never heard of the vc firm but now i'm
+[1313] seeing them in quite a few other
+[1315] open source and dev tools yeah as well
+[1318] it's pretty cool actually because they
+[1320] not to promote them too much but i i
+[1322] mean they deserve it because like
+[1323] they're a big hedge fund and um
+[1325] i'd never heard of them but after yc we
+[1328] thought oh let's just raise money from
+[1331] um from angels developer angels you
+[1333] would know yeah so we reached out to a
+[1335] bunch of developer angels and
+[1338] people who understood what we're trying
+[1339] to build and we just planned to raise
+[1341] money from from
+[1343] just angels no vcs yeah and then they
+[1345] came in and just kind of gave us
+[1348] an offer we couldn't refuse and they
+[1349] said well we still want you to take the
+[1351] money from the angels so we'll leave
+[1353] plenty of room for them if you want yeah
+[1354] and so that was cool we just had like uh
+[1357] these
+[1358] this big hedge fund give us some some
+[1359] money and a bunch of angels and yeah
+[1362] from there yeah it kind of accelerated
+[1363] it they did our series a so i didn't
+[1365] really need to do too much work for it
+[1367] wow and then uh yeah it sounds like you
+[1368] just kind of got the right place the
+[1370] right time singapore yc remote
+[1373] um but also like
+[1375] you you mentioned i'm an angel of super
+[1377] bass so i got into that round uh which i
+[1379] appreciated like i got introduced by i
+[1381] think a few people in that round yeah so
+[1384] i think uh sean swix i call him sean but
+[1387] everybody knows him by swix yeah um
+[1389] ihani yeah and then there was a third
+[1391] person who all three of them
+[1393] reached out to me was like hey you
+[1394] should talk to koppel and i was like
+[1395] actually i already talked to him yeah
+[1398] like he was on my podcast yeah so then i
+[1400] reached out i was like oh hey you're
+[1401] doing around like let me join
+[1403] it had to be my first angel investment
+[1406] but it was also the first time i heard
+[1407] of folks leveraging devrel
+[1409] um as like an angel a pool of angel
+[1412] investors and i see i've seen the trend
+[1414] pick up oh really oh wow yeah i've seen
+[1416] more because i get a lot of people
+[1418] reaching out to me cool uh i don't say
+[1419] yes to everything so but if it's good
+[1421] let me know yeah uh but i i think it's
+[1424] genius because in devrel
+[1427] we i get github when i was devry github
+[1430] i don't talk about github all the time
+[1431] when i'm doing devrel yeah because at
+[1433] the end of the day it's it's enough is
+[1435] enough yeah like you already know the
+[1436] features and the product you know my
+[1438] content but i get an opportunity to talk
+[1440] about super bass because soup base is on
+[1441] github so my tactic for devrel at github
+[1444] has always been let's just talk about
+[1446] the stuff they're using like if you're
+[1447] using actions or if you're using this or
+[1449] discussions i can talk about that yeah
+[1451] it makes it so much easier yeah exactly
+[1452] and like for me to angel into like yes
+[1455] there's a conflict of interest but at
+[1456] github i'm not actually selling anything
+[1459] it's all free open source customers so
+[1461] anyway
+[1462] i think it's i appreciate it i mean it
+[1464] really it wasn't so much the tactic that
+[1467] we wanted them to necessarily the angels
+[1470] to promote us but like
+[1472] i actually have a bit of a
+[1474] i'm not a huge fan of vcs they typically
+[1476] like push you in the wrong direction
+[1478] whereas like angels are just way more
+[1480] chill
+[1481] so that was kind of what they're
+[1483] invested in you yeah and they're gonna
+[1484] get how slow maybe like open source
+[1487] projects take a long time database
+[1489] projects take even even longer so they
+[1491] kind of get that more than vcs with
+[1494] their five-year life cycle so yeah so um
+[1497] that was really the reason but it turned
+[1499] out to be yeah great because we can we
+[1501] did some nice blog posts about the
+[1503] angels and why they invested and what
+[1505] was important and it turned out to be a
+[1507] great tactic as well yeah it and speak
+[1509] the tactic in blog posts
+[1512] who's running your twitter account well
+[1513] right now yeah it's mostly ant and okay
+[1516] and is the main king
+[1518] he apparently is because i i actually
+[1520] end devrel circles yeah i point to the
+[1522] super bass twitter
+[1524] all the time yeah okay so i'm glad that
+[1526] i know who it is because i've had
+[1528] assumptions but i was all wrong like i
+[1530] didn't know it was ant it was driving
+[1532] the meme the meme king yeah yeah he's
+[1534] great and uh yeah it's one that's very
+[1537] hard to replicate it's hard to hire
+[1538] someone who gets the gets the exact
+[1541] developer mindset slash meme funniness
+[1544] what's okay what's not so
+[1545] um yeah and he's been going quite hard
+[1549] at the moment on the memes so uh i think
+[1551] every time you know he kind of takes it
+[1553] over we just said engagement go through
+[1555] the roof i mean but there's like they're
+[1557] i'm trying to find a good one recent but
+[1560] they're like they're they're good enough
+[1562] that like even github's picking them up
+[1564] so i think there was there was one uh
+[1566] the guy the kid who was streaming and
+[1569] had like the flamethrower yeah yeah yeah
+[1571] the twitch streamer yeah yeah yeah and
+[1573] like it was like a perfect meme yeah and
+[1575] like even github like i was like well to
+[1578] be honest i went to the github slack and
+[1580] i was like hey we need to read it we're
+[1582] tweeting
+[1582] we saw a few people and we've got uh
+[1585] actually like every time we meet our
+[1587] investors we send them a meme first and
+[1589] then we go through the monthly updates
+[1591] of that but yeah um so like it's really
+[1594] just part of our culture and yeah we see
+[1597] plenty of people stealing them but
+[1598] that's that's great i mean we also take
+[1600] memes from other people that's how
+[1602] twitter should be yeah i mean it's it's
+[1604] genius and i think the even like uh you
+[1607] mentioned before i think we have
+[1608] recorded like super bass around 35 folks
+[1610] like you've been able to sort of keep
+[1612] that culture intact but also
+[1614] keep it remote and friendly because you
+[1616] don't have a centralized location no
+[1619] are you i imagine you're you're
+[1620] centralized in delaware probably yeah so
+[1622] our company set up um in delaware
+[1625] officially um and we have an entity in
+[1627] singapore but we're fully distributed so
+[1630] um 35 across 17 countries i think it is
+[1633] at the moment yep yeah and then so how
+[1636] do you make decisions in the open source
+[1638] side um like what products and things to
+[1641] do yeah i mean you have a road map yeah
+[1643] and but you also have folks who are
+[1644] contributing okay yeah so how do you
+[1646] make sure
+[1647] like do you just let folks contribute
+[1648] where they feel like they want to
+[1649] contribute or do you try to nudge people
+[1651] in the right direction yeah well what
+[1652] you'll find mostly with these larger
+[1654] projects is that the contributors will
+[1656] come in and they'll do the easy things
+[1658] so um we try to give a few layups so to
+[1661] speak on what they can contribute i love
+[1663] basketball yeah okay
+[1665] well by the time that this comes out we
+[1667] should actually do a prediction who do
+[1669] you think is going to win
+[1670] uh i was saying warriors and five but
+[1673] this is what game six so warriors and
+[1675] seven okay no no warriors in six okay we
+[1678] should do a bet on it i'll take the
+[1679] counter position by the time that this
+[1681] comes out we should uh we'll pay up so
+[1683] ten dollars on on the celtics return to
+[1686] a familiar place they're on top of the
+[1688] nba world
+[1690] the fourth title in eight years
+[1692] the dubs dynasty is still very much
+[1695] alive
+[1696] yeah ten dollars all right do you take
+[1698] cash app yeah
+[1700] um yeah but basically so the
+[1702] contributors yeah they come in usually
+[1704] and do the small things like client
+[1706] libraries and things we try to make sure
+[1707] that we um leave space for for
+[1709] contributors and um the larger ones will
+[1712] employ maintainers so they have their
+[1713] own uh road maps but then otherwise like
+[1716] the bigger features is largely up to us
+[1718] like we don't have to really say no to
+[1720] too many things okay sometimes we we
+[1722] have to like put a hold on some things
+[1725] like um
+[1726] at the moment there's interesting
+[1727] contributing web3 logins to to go
+[1730] through um which will be very cool but
+[1732] um the eip the spec is not formalized
+[1735] yet so it might introduce some security
+[1737] concerns uh yeah so on occasion we have
+[1740] to say no or not yet um yeah but it
+[1742] hasn't been too much of an issue okay
+[1745] cool and then can you explain the super
+[1747] squad because i discovered what the
+[1748] super squad was a couple months ago yup
+[1750] so what is that yeah well largely we saw
+[1753] these people coming in and contributing
+[1755] a lot and we thought um well we want to
+[1758] pay them if we can so we have a squad of
+[1760] people that
+[1762] that can either be paid or unpaid it
+[1765] doesn't matter we just try to like um
+[1767] bring them in
+[1768] make them kind of a bit more part of the
+[1770] family they can see the roadmap a little
+[1773] bit more we'll have events and hangouts
+[1776] if they're really contributing and
+[1777] maintaining we'll also sponsor them for
+[1779] that um through open collective and that
+[1782] one's tricky because like actually
+[1784] a lot of the time we'll pay people and
+[1786] then they lose interest yeah
+[1787] contributing you know honestly i've seen
+[1789] the same thing throughout open source
+[1790] where i
+[1791] folks at their first contribution is a
+[1793] paid
+[1794] issue
+[1795] it's usually the last contribution uh
+[1797] but if they come through and they're
+[1798] like they've shown interest and ask
+[1800] questions and i'm like hey i've got a
+[1801] bigger problem
+[1803] then they end up sticking around they're
+[1805] like oh yeah i'll solve bigger problems
+[1806] with you yeah yeah it's it's an
+[1808] interesting one because yeah i get the
+[1810] mindset like you don't want to if you're
+[1813] contributing in your spare time you
+[1814] don't want it to be a job you kind of
+[1816] want to do it for fun so um
+[1819] like then if you're going to pay them
+[1820] you've got to pay them enough that it is
+[1822] a like kind of their job and it's going
+[1824] to be replaced and so it like it just
+[1826] puts incentives kind of out so you know
+[1829] it's a it's a very hard one to actually
+[1831] strike the balance for open source
+[1833] contributors but for the most part
+[1835] everyone loves swag everyone loves
+[1836] stickers we try to make sure that we
+[1838] give them give back in some way uh for
+[1841] the amount that they're giving us yeah
+[1843] or you could pay them in memes yeah yeah
+[1845] that too and just um
+[1847] and if nothing else like people enjoy
+[1849] contributing they'll like post on
+[1851] twitter and we'll promote them that
+[1853] they're doing that they can put it on
+[1854] their cv we see people applying to
+[1857] superbase like saying with prs that say
+[1859] hey i did this thing for you exactly and
+[1861] they've got it in their cv which they're
+[1863] probably sending to other companies that
+[1864] they're an open source contributor to
+[1866] superbase which i think is cool that's
+[1868] what people should do yeah there's a
+[1870] there's a github repo which is the uh
+[1871] the resume
+[1872] uh where it will generate a resume of
+[1874] your contributions
+[1876] um that is it was created years ago i
+[1878] don't think it's actually still being
+[1879] maintained uh actually one of the ideas
+[1881] we have for open source is to be able to
+[1882] export
+[1883] your resume and be like hey
+[1885] job please yeah we we really take that
+[1889] as one of the leading indicators when we
+[1891] employ people we look through their
+[1893] history and what contributions they've
+[1895] done which organizations they're like
+[1897] involved in so i think it's it's cool
+[1900] yeah i mean
+[1901] it's almost like there should be a tool
+[1902] yeah to be able to make this a lot
+[1904] easier yeah and i can't wait until this
+[1906] fall when we could actually share more
+[1909] of this definitely definitely for sure
+[1910] yeah so i mean this is a
+[1912] great conversation i don't want to wind
+[1913] this down right away yet because we
+[1915] didn't even touch on your your launch
+[1917] weeks
+[1918] and the things that you've been doing so
+[1919] like when was the last launch week it
+[1921] was probably
+[1922] like a month or two yeah end of march in
+[1924] the market okay so a couple months ago
+[1926] yeah so what's the what's like the uh
+[1929] the thought process through that because
+[1930] like they seems very consistent and they
+[1932] always have usually like pretty hefty
+[1935] features like yeah yeah people have been
+[1937] waiting for they show up in the launch
+[1938] weeks yeah so basically you know what
+[1941] normally happens is you ship ship ship
+[1943] and then no one takes time to market
+[1945] what they ship to tell people what
+[1947] they've shipped so
+[1948] we basically take this philosophy that
+[1950] we do the ship and shout sort of
+[1952] strategy so um at some point you've got
+[1954] to put down like your coding brain and
+[1956] pick up your marketing brain and just um
+[1959] say hey here's what you asked for
+[1961] and here's how you can now use it and
+[1964] that's what we do with the whole company
+[1965] so we at the end of um
+[1968] at the end of yc we had this um like
+[1971] thing where we launched our auth which
+[1973] everyone was asking for and when we did
+[1975] that we saw like a lot more people
+[1977] interested in super bass and so we kept
+[1980] we decided well that's obviously a
+[1982] winning strategy you ask for something
+[1983] we ship it we tell you about it why
+[1985] don't we do that and then it so happened
+[1988] that we were just shipping so much that
+[1990] we had too much to say in one
+[1992] one day that we decided well why don't
+[1995] we just make it a whole week yeah and so
+[1997] we started doing these launch weeks i
+[1999] think we did three in 2021 we've done
+[2001] one so far this year and we try to ship
+[2004] one thing every single day and usually
+[2006] on the friday there might be like a few
+[2008] things shipped or a few things
+[2010] we're just going to chuck them all in
+[2012] and a couple of times it coincides with
+[2014] maybe like halloween or april fools
+[2017] someone do some jokes as well and of
+[2019] course a bunch of memes yeah it's
+[2021] awesome because like i i don't know if
+[2022] it was last time or the one time before
+[2024] but the graphql got shipped that was
+[2026] something i was waiting for because open
+[2027] sauce were heavy on the graphql uh
+[2029] honestly we're not using a graphql yet
+[2031] but we did do a rewrite and we'll
+[2033] probably introduce that soon cool um
+[2036] but i i appreciate it because like i
+[2037] don't have time to like check out
+[2039] release notes yep
+[2040] or even like blog posts but like when i
+[2042] know it's a launch week i know i'm just
+[2044] gonna turn notifications on for the
+[2045] twitter channel
+[2046] and uh just like get notified when
+[2048] things are or shipping so lifehack if
+[2050] you wanna be a part of the next launch
+[2052] week turn on the uh the um notifications
+[2054] on twitter yeah uh but you also even
+[2056] coincide like hackathons around the
+[2058] launch weeks yeah we do hackathons and
+[2060] usually the first day is um reserved for
+[2062] promoting other communities within uh
+[2065] the sort of super base ecosystem so it
+[2067] can be either the tools like we might
+[2069] try to promote postgres or postgrest
+[2072] and we'll you know talk about the um
+[2075] things people are building maybe like
+[2077] open source and yeah we'll um really try
+[2080] to it's one thing that's unique about
+[2082] super base we're kind of a community of
+[2084] communities and so we try to make sure
+[2086] that we put the spotlight on others as
+[2088] well love it and usually that's our
+[2090] monday and then from then on all right
+[2091] we'll see you the next hack week yeah
+[2093] definitely yeah i mean we're about to
+[2095] i'm so excited to be in a position to be
+[2097] able to like play with tools like this
+[2099] and like keep up to date with things and
+[2101] ship some cool features and i'm super
+[2104] appreciative you've taken time out of
+[2105] your your busy week
+[2107] meeting with investors and community
+[2108] members and customers um but with that
+[2111] said folks check out superbase if you
+[2113] haven't it's open source alternative to
+[2116] firebase uh it's an awesome product i'm
+[2118] not only a
+[2120] card holding member i'm also an investor
+[2122] and a super fan as well which i don't
+[2124] know if that's already something you
+[2125] already call it is now that's great
+[2127] thank you very much and thanks for
+[2129] having me on the podcast and thanks for
+[2131] using superfood alright well you heard
+[2132] it first and stay saucy everyone

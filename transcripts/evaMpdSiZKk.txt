@@ -1,0 +1,851 @@
+[0] today I'm talking about nextjs which I
+[3] hope many of you are already familiar
+[5] with it but if not uh it's a simple
+[8] framework for several rendered universal
+[10] applications with react the main idea is
+[14] very similar to what Tom was talking
+[16] about with create react app there is a
+[19] an opportunity to make starting with
+[21] react develop development much easier
+[24] but at the same time there's an
+[26] opportunity to make it really really
+[28] simple by taking advantage of the fact
+[31] that react is a very Universal Paradigm
+[34] as it is for any kind of UI related work
+[38] so before I go on with the talk and all
+[41] these ideas and features I'm going to
+[43] Define some of the things that I want to
+[45] talk about today so by Universal I mean
+[47] that it works everywhere so we can
+[49] decide to do some work ahead of time on
+[51] the server stream it to the client the
+[53] client can pick up and do more work um
+[56] on both ends you can share code views
+[58] Etc react is Cool Tech I he uh it's easy
+[63] and this one is actually so to speak
+[66] easy to uh come up with because next
+[70] makes starting a project one command so
+[72] it's kind of indisputably e easy but the
+[76] more interesting claim that I'm going to
+[79] try to prove today is is it actually
+[81] simple so some of the ideas that I refer
+[84] to when I talk about simple are for
+[85] example well-defined boundaries of the
+[87] project what is it exactly that it does
+[89] does and where are the limits of what it
+[91] does and where does user land start and
+[94] where do other community projects
+[97] begin uh does it actually support
+[99] emergent behavior and by by this I mean
+[102] can it um take other uh simple pieces to
+[106] create more complex and more interesting
+[109] projects and
+[110] applications and does it behave
+[112] predictably and consistently so a lot of
+[114] the ideas that next uh takes for example
+[117] for how it performs navigation are
+[119] actually taken from the browser a lot of
+[121] what it's trying to do is merging the
+[123] world of how the web used to work with
+[126] all the new exciting possibilities that
+[129] heavy and fat clients come with and by
+[132] predictably and consistently I also mean
+[134] that it takes you only a little time to
+[136] learn and you probably can go through
+[139] the entire rhym me in maybe like 10 20
+[142] minutes so we take the Simplicity of
+[145] react we make it easy to use so that we
+[148] can amplify its reach so ideally
+[150] everyone can create any sort of UI
+[152] application with this and it all started
+[155] with a paradox for me because I spent a
+[157] lot of time probably like many of you
+[159] here on Hacker News the Paradox
+[162] is how does a website with so many
+[164] trolls stick around today no just
+[167] kidding the the Paradox
+[169] is how come we're all debating like all
+[172] this like awesome uh futuristic UI
+[175] paradigms and like State Management
+[176] tools on our websites largely hasn't
+[179] been changed since
+[180] 2007 probably way back it's really
+[183] awesome 1990s Tech no JavaScript no
+[186] single page application no framework
+[187] rewrite every month or every day and the
+[191] answer is actually because in my opinion
+[192] it works really well it loads fast the
+[197] server uh from what I've read has an
+[198] inmemory cache of all the stories that
+[200] you know the data set is not that big um
+[203] they produce some templates that start
+[205] rendering right away it's you know it's
+[206] as good as it gets actually building
+[209] hacker prob easy and simple for it has
+[211] remained this way for a very long time
+[213] unchanged it's survived without having
+[215] to do much and still performs its duties
+[218] relatively well so I wanted my solution
+[222] to this problem uh that is creating
+[224] universal applications to be able to uh
+[227] straddle across this really powerful
+[230] client-oriented application but also
+[232] serve the needs of simpler apps like
+[236] that so you could create a documentation
+[239] website or you could create a really
+[240] powerful real time chat
+[243] application and the uh invariant is I
+[247] obviously want react and I obviously
+[248] want
+[250] JavaScript so the um first thing I set
+[253] out to do was clone Hacker News pixel by
+[256] pixel so I created this thing called
+[258] Next News which as you can see looks
+[261] pretty much pixel by pixel like Hacker
+[264] News and the Paradox also you could
+[266] answer oh if um you know you do do
+[269] everything in react if you're such a big
+[272] fan name three
+[274] albums so why is uh think um written
+[278] keynote and so last night I said okay
+[281] I'm actually going to write this in next
+[282] as well because I can show some
+[284] interesting features as well even when
+[286] creating a uh deck so for example I
+[289] actually embedded another next
+[291] application inside this next application
+[293] so we went through um some really
+[296] interesting challenges to make sure it's
+[298] to the extent that it's possible with
+[299] the web these components are some are
+[302] fractal another interesting thing that
+[304] we did was the ability for example to
+[307] take different paths uh if you come from
+[309] the server or the client so for example
+[311] that animation that you see if you
+[313] perform a full refresh of the
+[317] application we we're not going to
+[319] trigger it again so you saw there was no
+[321] flickering at all whatsoever so we're
+[323] taking a slight detours from the server
+[325] path and the client path so this is one
+[327] of the strengths of next that I'll go
+[329] more deeply into later so it's not jokes
+[333] out cats out of the bag it's a Ser
+[335] rendered application with Dynamic
+[337] routing so something interesting as well
+[340] is I wanted to show uh what the code of
+[342] an entry point uh which is a top level
+[344] component within next looked like so
+[346] what I did was I extended uh our Babel
+[349] configuration which you can do in
+[351] package adjacent and I included a plugin
+[353] that allows me to include the source of
+[355] the component inside the component so
+[357] here what we're looking at is a
+[360] definition of a top level component uh
+[362] uh for next so you can see that it
+[364] simply exports a in this case a
+[366] stateless function we can go more deeply
+[369] into this subject later on at Zite we
+[371] we're moving into pure component exports
+[374] uh more uh frequently so the top level
+[377] component is the slide which is a high
+[378] order component that sets up the
+[380] keyboard interaction um later on we can
+[382] add for example swipe gestures and so on
+[384] and each page defines the entire
+[386] universe of the application this is an
+[388] interesting concept because
+[390] each page uh doesn't have there's no
+[393] idea of like a global layout for example
+[395] and in the case of Hacker News actually
+[397] we have some examples where that
+[399] actually ended up being really powerful
+[400] to the extent that we wanted to clone
+[402] Hacker News because for example they
+[403] have a very interesting login page that
+[405] has no layout whatsoever but it's cool
+[408] because it kind of challenges us to not
+[410] uh for example impose a global Behavior
+[413] into
+[414] applications so uh moving forward NEX
+[417] has been uh in use at Zite for long time
+[420] has actually gone through many
+[420] iterations so at zide our goal is to
+[423] make deployment really easy to use and
+[425] really scalable so one command or two at
+[428] most maybe three but uh so for example
+[431] this deck itself is hosted on now every
+[434] time you deploy you get a new uh
+[436] application immediately you can start
+[438] streaming it so there are a lot of
+[440] really cool things that you can do on
+[441] the web as far as analyzing your
+[443] deployments so we make use of react
+[445] extensively uh for that and we've
+[447] learned quite a bit about our own
+[448] framework so this is what our site uh
+[451] our site looks like uh and once again I
+[453] embedded it uh somewhat partially if you
+[456] right click the logo uh you can access
+[459] our logos which is kind of cool and I'm
+[460] going to talk about how we preload
+[462] things dynamically to uh pull that off
+[466] so all in all I'm going to share some
+[467] principles patterns challenges and the
+[470] future Direction some of which are
+[471] influenced by the very work that's being
+[473] done on react fiber today so the main
+[477] principle is that we start off with
+[479] multiple entry points so we have this
+[482] idea that there's there's a lot of uh
+[485] use and there's a lot of benefits to
+[487] minimal convention is if you really
+[489] think about it you already have minimal
+[491] convention with node.js it makes you
+[494] create a package ad Json file and npm
+[496] makes you define uh dependencies list
+[498] and an npm start project sort of guides
+[501] you for how do I get started using this
+[503] thing so our minimal convention is based
+[506] on two things sophisticated applications
+[509] always have multiple entry points there
+[511] is no going around that many many
+[513] applications have you know different
+[515] routes different views different ways
+[518] that the user can enter and approach the
+[520] the data number two loading more code
+[523] than necessary is actually bad for many
+[526] different reasons initialization time
+[528] and download time being two and this is
+[531] actually widely applicable it's a
+[532] generalizable thing while this give
+[535] loads I'll entertain you with the
+[537] example of even command line
+[539] applications so command line
+[541] applications bear with the uh speed of
+[544] downloading this
+[545] GIF um if not uh carefully code split
+[550] you can see how for example the Run code
+[552] path of npm is adding actually 500
+[554] milliseconds to your application uh this
+[557] is actually a recent factoy that I
+[559] learned from uh V recently but it's
+[563] really interesting to me because you can
+[564] see how code splitting the different
+[566] entry points of your CLI can be really
+[568] useful so so that if you're running uh
+[571] your program version you're actually not
+[574] loading the code for you know anything
+[577] else so each sub commmand in that
+[579] context is a different entry point code
+[580] splitting fixes what I call the SBA or
+[583] single page application syndrome which
+[584] is you download the code for changing
+[587] your password when you're going to see a
+[589] photo profile or a selfie or something
+[591] like that so the convention in xjs
+[594] simply put is you start off with a Pages
+[597] directory and that's where your entry
+[599] points or top level components
+[602] live and this is what it looks like in
+[604] finder so you have your Pages directory
+[607] and that's your files so what's what's
+[608] interesting about the hack experiment is
+[610] because it was before the fancy routing
+[613] era uh I was able to actually map it
+[615] completely with a file system and using
+[617] query strings which is you know not bad
+[620] um and the thing that is interesting
+[622] about is that there's an emergent uh
+[624] nice little convention that I've seen
+[627] most people in the community follow
+[629] which is is you know you put your entry
+[630] points in Pages typically those are the
+[632] ones that trigger data fetching or
+[634] they're the organizers of the different
+[636] layouts of your application so your
+[638] different shells for example and then
+[641] you have components that are the
+[643] building blocks of the UI and then you
+[645] know Li probably has to do with like
+[646] data fetching and data
+[648] transformation there are two interesting
+[650] things for teams in particular two
+[652] different two interesting consequences
+[653] of this organization one is the work
+[656] that is done in a subtree of a different
+[658] entry point doesn't impact the subt tree
+[661] of another entry point so if someone is
+[664] you know uh adding a lot of bloat to a
+[666] particular end point of the application
+[668] it doesn't really impact the performance
+[669] of your endpoint that's really nice when
+[671] you know collaborating or scaling an
+[674] organization secondly this uh uh
+[677] emerging distinction between what a top
+[679] level component does and what the lower
+[682] level components do leads to a really
+[684] awesome uh component Gallery uh sort of
+[689] out of the box that you get so what I
+[691] call it is a sketch up in the browser
+[694] and this is me loading our component
+[696] Library so as you can see everything
+[698] that our Engineers do lives here and we
+[700] can sort of demonstrate it with
+[701] different uh configurations of data so
+[705] for example this user toggle component
+[709] admits only 16 characters but if you use
+[711] the SF font 16 WS are actually really
+[714] wide so you know like you really want to
+[716] test these things uh or you cannot sleep
+[718] at night
+[720] so top level components are the
+[722] organizing components and optionally
+[724] they can define a get initial props hook
+[727] that gets the initial props of that
+[729] component this is useful in the context
+[731] of pre-populating data that comes with
+[734] that when you first load that
+[737] component you can decide how much or how
+[739] little the page to render to the extent
+[741] that a getal props will be with us
+[743] forever is still up to debate I think
+[745] there even with the ability to down the
+[748] uh
+[749] lazily and or asynchronously fetched
+[752] data I think there some interesting use
+[753] cases there um but there are two things
+[756] that you want to keep in mind when
+[758] deciding how much of the data you want
+[760] to serve with that initial download and
+[762] I frame it as two different questions so
+[764] one is what is the critical data or what
+[767] is the critical information the user is
+[769] after in that particular entry point so
+[772] in next news if you go to SL news it's
+[775] news so what do we do for that case is
+[777] you know we render a list now how many
+[780] items you want to pre-render kind of
+[781] depends on what your expectations are of
+[783] the viewport or how much in a premature
+[786] optimization mood you're in that very
+[788] day but you know there's no harm in this
+[791] case in doing it and we've I I've
+[792] benchmarked this example quite a bit and
+[794] you know they not not no substantial
+[796] throughput differences between you know
+[798] 5 10 20
+[800] stories uh then you know we have the
+[802] item endpoint which receives an ID and
+[805] uh just to take a slight departure from
+[807] the original I decided to show off how
+[808] you can sort of Branch see in this case
+[811] Firebase takes a while so we show a
+[813] loading um message so depending on the
+[817] speed of the server that's the second
+[819] interesting uh deciding factor depending
+[822] on the speed of the server you might
+[823] want to pre-render or not because that
+[825] gives you the flexibility to like I said
+[828] display a shell perhaps uh do something
+[830] to like entertain the user like a mini
+[833] game perhaps Pac-Man with some sort of
+[835] Konami Code so uh as another example I
+[838] was setting out to clone Instagram
+[841] called nexr very creative and I I went
+[845] to this Explorer page and I think this
+[847] is a great use case of not wanting to
+[848] preload the data because you know
+[850] there's a computational cost to like
+[853] saying who should who you should
+[856] discover um and the option here is what
+[860] do we want to show do we want to show
+[862] the browser
+[863] UA uh uh sorry the UA UI so uh perhaps
+[868] some sort of like loading bar or do you
+[870] want to sort of take over and load your
+[871] own shell and and and do your own thing
+[874] so pre-rendering uh as soon as possible
+[877] is probably a better idea in some cases
+[878] just because you give the user uh just
+[881] something to uh say entertained and in a
+[884] lot of applications you can actually
+[886] have a cache that's prepopulated that's
+[889] on the client so there's a there's a
+[892] nice hybrid opportunity here which is
+[895] reconciliation upon hydrate uh upon um
+[898] the client loading rehydrating that uh
+[902] initial data set that you were
+[903] interested in and then uh diffing it so
+[906] maybe you already knew of some
+[908] recommendations and then on the
+[910] background what you do is you know you
+[911] load more recommendations and then you
+[914] invalidate them uh prefetching is
+[916] another really awesome pattern that
+[918] comes with this so every link uh high
+[921] order component uh link is what we use
+[924] to switch between these entry points um
+[927] and has a prefetch attribute and that's
+[929] all it takes to perform prefetching link
+[932] exists for a very very specific reason
+[935] if NEX already does server rendering why
+[937] do we need to supplant these entry
+[938] points without doing a full refresh and
+[941] the answer is we don't want to lose
+[943] client state in a lot of cases so a a
+[946] critical example for us is
+[948] authentication we want to load the user
+[950] once on the server side because the
+[952] server then can decide what sort of path
+[956] the user will follow will the user go
+[958] through a mark marketing website or will
+[960] the user have its you know notifications
+[962] prepopulated or will the user continue a
+[965] path of you know oh you're in the
+[968] dashboard or whatever so you don't you
+[970] want to load the user once then you can
+[971] keep it in global State you don't
+[973] refetch you and synchronize upon change
+[976] so this is a a gif where on the left
+[979] hand side I'm going to switch between
+[981] Pages uh should have transcoded to MP4
+[985] so and when I switch I we're not
+[988] fetching the the user again so that
+[990] transition is immediate I mean the
+[992] entire top level component is being
+[994] replaced but it's actually getting the
+[996] user from its Global store so that's a
+[999] very neat uh pattern and then we are
+[1002] actually able to synchronize it so if we
+[1003] log out on the left hand side we're able
+[1006] to transform the state of where the
+[1008] other user is on the right hand side and
+[1010] even though they are diverging in where
+[1011] they are in the
+[1013] layouts they both uh are logged out
+[1015] which is pretty awesome so with
+[1017] prefetching combined with sever side
+[1019] rendering we achiev this uh Nirvana so
+[1022] to speak of you know it behaves like a
+[1025] single PL applic application in that it
+[1027] can maintain Global State client state
+[1029] it can be very quick um most of the time
+[1033] and it also has the performance of a
+[1035] website from the 90s uh which is awesome
+[1038] um another interesting pattern is what
+[1041] we call route masking so in the
+[1044] beginning I mentioned you know by
+[1046] default we take each page and we expose
+[1048] it as a server route so if you define
+[1050] the page a and you go to a we render
+[1053] that top level component however and
+[1056] this is where things get really
+[1057] interesting the server can say well
+[1060] actually you're not going to that top
+[1061] level component you're going somewhere
+[1062] else so we imp poost as a design design
+[1066] constraint on ourselves that the client
+[1068] at any given time should not know the
+[1070] entire rout map of the application we
+[1073] shouldn't have to keep in memory or
+[1075] download every single like possibility
+[1077] of routing it's instead it can always be
+[1079] a negotiation between server and
+[1081] client so in the case of Instagram for
+[1083] example they have SLP sensor of U ID
+[1086] what do we do is we take that URL we
+[1088] Parts it and we translate it into a top
+[1091] level component that receives a query so
+[1094] this is this is kind of neat because on
+[1096] the base level it be it becomes a basic
+[1098] URL it's a resource that re receives
+[1101] that receives a query just sort of like
+[1103] how again the internet was sort of
+[1105] designed to work but then what happens
+[1108] when you're on the client side and you
+[1109] want to say okay that particular URL has
+[1112] to display differently provided that we
+[1114] maintain that constraint that we don't
+[1116] know exactly what every uh route should
+[1119] look like so we can basically uh come up
+[1122] with components imagine here I could
+[1125] have a link photo component that sort of
+[1127] abstracts this out and I pass it a uid
+[1129] and it figures out the rest but then I
+[1131] can incorporate this components as I
+[1133] need and I'm sort of completing the
+[1135] route map on
+[1137] theand so I have an example of this uh
+[1140] with next gram but I'm quering a gif an
+[1144] animated gif Gallery so I don't know if
+[1146] our internet connection will allow
+[1148] it we'll
+[1152] see if not I'm going to have to
+[1161] jump we can check the timeline
+[1175] all right it's not too bad so what we
+[1177] have here is a uh Instagram thingy that
+[1181] queries a bunch of animated gifts so
+[1184] this is what I call this is what I refer
+[1186] to by R mask and let me exit full screen
+[1190] here so what we have here is uh
+[1193] Instagram actually does this they push
+[1196] uh an entry into their stack that refers
+[1199] to a photo but when you actually go to
+[1203] that photo as a permal link it looks
+[1205] completely different so what we have
+[1207] here is we have two different top level
+[1208] components that are answering a certain
+[1211] URL so even if I refresh here you're
+[1215] going to see that it sort of Mer merges
+[1216] into and the server resolves it to the
+[1218] other one so this is cool because you
+[1221] can see how you have the
+[1223] flexibility of doing routing the way any
+[1227] way you want with any sort of URL
+[1229] pattern you want um no limitations there
+[1233] so each uh of these attributes that I
+[1235] described have their imperative
+[1237] counterparts this is cool because I I
+[1239] mentioned earlier that when you right
+[1241] click our logo on our website we show
+[1243] the logos page so that's not a direct
+[1246] link to the logo page it's something
+[1247] that happens on Hover so what we do is
+[1249] when you hover the Lo the logo in case
+[1252] you ever right click it we prefetch your
+[1254] on demand so that's why we have this uh
+[1257] uh basically correspondence between the
+[1260] tags and the imperative apis the ne the
+[1263] other neat thing that we discovered is
+[1265] well it was a need in the beginning but
+[1266] then it became neat is to pull off hot
+[1269] module replacement in a very very large
+[1271] code
+[1272] base uh building on top of weback we had
+[1274] hid some limitations with regards to how
+[1276] many components were being watched and
+[1278] rebuilt upon every change so as as a
+[1282] project kept growing in terms of number
+[1283] of components and size the situation
+[1286] became really bad especially if you were
+[1287] editing a component that was depending
+[1288] on by a bunch of other Pages Etc so what
+[1292] we do now is since we already started
+[1294] with that minimal Convention of
+[1296] separating your uh routes or top level
+[1299] components if you're rendering a a top
+[1301] level component in one or many tabs we
+[1304] only watch and rebuild those so that's
+[1306] yielded an amazing um iteration
+[1309] Improvement for us uh it went from being
+[1311] super annoying and not really liking hot
+[1313] module replacement to now it's pretty
+[1316] good okay the other really interesting
+[1318] thing that this lazy loading model comes
+[1321] with is what happens to the build as
+[1324] time goes by and by that I refer to what
+[1326] happens when people are deploying
+[1328] constantly and altering the builds in
+[1330] many uh significant ways so uh the
+[1334] question is if uh everything is changing
+[1337] and you're loading components laely how
+[1339] do we deal with that so we deal with
+[1341] that with content addressable uh build
+[1343] artifacts so when you're you know
+[1345] requesting a SL a or actually requesting
+[1348] a hash of what a
+[1350] represents and there is an interesting
+[1353] uh conflict resolution step that happens
+[1355] with this what happens if you try to
+[1358] retrieve it and the server has moved on
+[1360] from that build and it doesn't make
+[1363] sense even in the context of the
+[1365] overarching document anymore so when
+[1368] there is a mismatch we can actually
+[1369] perform we invoke a hook in case you
+[1372] want to uh Save State somehow or uh do
+[1375] an error notification or do some
+[1377] measurements but otherwise we perform by
+[1380] default a fall page transition which is
+[1382] a nice fallback compared to the
+[1384] alternative of you know in some cases
+[1387] doing nothing and some cases uh
+[1389] rendering an error that is not really
+[1391] actionable by the
+[1392] user uh the other really interesting
+[1394] thing that we decided was to not go with
+[1397] a specific uh pattern for uh fetching
+[1400] data so U if you want you can keep a
+[1404] global store and the server s side you
+[1405] can await dispatching an action to
+[1407] populate it and then serve it to the
+[1409] client then take over so this is an
+[1411] example of using uh react Redux with one
+[1414] of our top level components something
+[1417] that's awesome is our community has uh
+[1420] submitted a ton of examples to a repo so
+[1422] if you go to the examples repo you'll
+[1425] see uh examples of Redux mobx refn I
+[1430] don't know what it is what it
+[1431] is uh Apollo I know what that is and
+[1434] that um so these are constantly being
+[1437] updated and improved so it's really
+[1438] really awesome to see uh specifically
+[1441] some of these I think the Apollo one
+[1443] recently got updated to do this idea of
+[1446] hydrating when um when the client loads
+[1449] and reconcilia in the data set Etc it's
+[1451] pretty cool uh the other thing we wanted
+[1454] to uh maintain agnosticism agnosticism
+[1456] over was how you style your stuff so the
+[1460] easiest and most exportable way in the
+[1463] react World bar Nan is inline Styles so
+[1465] of course you can do that you just use
+[1467] inline styles beautiful the problem is
+[1470] and uh I have a personal Vendetta with
+[1472] inline Styles uh I'm coming out um it's
+[1476] only strong subset of CSS right so no
+[1479] surprises there so no media queries no
+[1481] animations no fun declarations no harvor
+[1483] States noo elements uh for now I think
+[1487] some of these could be added but I think
+[1490] those are just symptoms I think the main
+[1491] issue is that CSS is co-evolving a lot
+[1495] of people are currently making
+[1496] extensions and improvements to the
+[1497] language and so on and so I think it's
+[1499] an an opportunity that we should
+[1500] definitely keep open so if CSS continues
+[1503] to evolve we should find ways to
+[1505] incorporate it so the solution that we
+[1508] came up with was style uh jsx so what it
+[1512] does is it isolates the styles to a
+[1514] component the thing that is not neat
+[1516] about CSS is that the defaults of how
+[1518] people use it is it is you style the
+[1521] entire world paragraph it's every
+[1523] paragraph and then you have to be like a
+[1525] human compiler where like you prefix and
+[1527] you come up with your own schemes for
+[1529] not affecting the work of others so what
+[1531] we're trying to do with style jsx is you
+[1533] give us something like this and we scope
+[1536] it to that component statically
+[1538] limitations if you use react. create
+[1540] element we're not able to for now I mean
+[1543] we could go through the trouble but
+[1544] we're not adding the necessary
+[1547] attributes and otherwise it's just CSS
+[1550] maintains the specificity and the full
+[1553] power CSS is enabled for your component
+[1556] and of course it's not a offw as a
+[1558] default but um you can turn it off
+[1561] somewhat for now but then we're going to
+[1563] add it as an option to the Babel preset
+[1565] so you can really turn it off um and
+[1568] what it really fixes is a global CSS
+[1570] injection
+[1571] problem so out of the box Sal jsx uh D
+[1575] dupes which means if you have a thousand
+[1577] components that use a a style tag we
+[1580] only embed one in the page it detaches
+[1583] which means if your page is gone or your
+[1585] components are gone no linger in style
+[1587] tag
+[1588] and it Ser renders out of the box so
+[1591] your style tags are collocated with the
+[1593] first appearance of the component which
+[1596] makes that pattern of you want to
+[1598] pre-render and you you you don't want to
+[1600] pre-render stuff that is not styled work
+[1602] really well so this has been by far the
+[1605] most controversial um thing in in the
+[1608] world I think because we've received so
+[1610] many examples some of which they cannot
+[1613] even tell apart from one another um so
+[1617] basic CSS is how
+[1618] uh the framework does it by default and
+[1621] then you have a lot of interesting
+[1623] options with all different tradeoffs uh
+[1626] the last three or sorry the global style
+[1629] sheet and scope style sheets are the
+[1630] answer to you know I have existing
+[1633] Global or big stylesheets with SAS and
+[1636] stuff like that that's one of our top
+[1638] support issues is how do I bring in a
+[1641] huge stylesheet into the project and
+[1644] what we're trying to tell users is well
+[1648] try to think of embedding collocating
+[1650] your styles with the component that
+[1651] you're using inste so instead of
+[1653] bringing bootstrap.css you sort of bring
+[1656] bootstrap button and it contains the
+[1658] bootstrap Styles so this is uh um
+[1661] definitely something that the community
+[1663] is uh going in a lot of different
+[1665] directions and it's going to be
+[1666] interesting to see where that goes
+[1668] Babble extensions um are really
+[1670] interesting as I showed earlier we have
+[1672] some for meta programming uh you can uh
+[1675] use the next Babel preset and then uh
+[1678] just extended so you edit your package
+[1679] Json file I came up with this example uh
+[1682] which I'm particularly really interested
+[1684] in uh which is by uh at
+[1687] 3.1 spelled out uh you can include a
+[1691] markdown uh
+[1693] pre-processor but the really awesome
+[1695] thing about this is that he's giving us
+[1697] an API to bind the markdown pieces to
+[1701] actual components so we don't go back to
+[1704] the you know mess of global tags and
+[1706] styles so this is really awesome aome I
+[1708] haven't experimented enough with it yet
+[1710] but I'm really excited uh and there are
+[1712] three other examples in there for Babble
+[1714] stuff so flow for uh stripping
+[1717] annotations and castom babble configs
+[1719] and one for replacing process. env.
+[1723] whatever with or any expression with
+[1726] something compiled ahead of
+[1728] time um one of the last things I want to
+[1730] talk about is server extensions so this
+[1732] example which maybe the text is not big
+[1735] enough but um let's see if my layout is
+[1738] zoom
+[1740] friendly you can see how I initialize
+[1742] Express and then I use express for Route
+[1746] matching so the bottom line is you can
+[1748] sort of use anything that you want on
+[1750] the server you can even boot up the
+[1751] entire stack uh including the Watcher
+[1755] and webpack and everything
+[1756] programmatically very cool shout out to
+[1758] webpack for having an awesome uh
+[1761] API so um another cool thing about the
+[1765] server part is you can do some really
+[1768] interesting caching at that
+[1770] level and this uh and this is a crucial
+[1774] technique for now for improving SSR
+[1776] performance uh in re in the react World
+[1779] another one is you can use alternative
+[1782] renderers so we have another example of
+[1785] using Inferno and using module
+[1788] Alias and the webpack Alias as well and
+[1791] with all the Alias magic happens and
+[1794] it's uh quite a bit faster for uh
+[1796] certain workloads but our benchmarks are
+[1798] lacking so far so I I can't outright say
+[1801] you know switch to Inferno but we can
+[1803] say hire The Inferno guy and let's make
+[1806] react
+[1808] better so um with react fiber streaming
+[1811] is possible and this is obviously really
+[1814] exciting because in terms of throughput
+[1816] we're not we can inter or leave a lot of
+[1817] work um especially with for example
+[1820] lazily fetched um components or data
+[1823] sets and we already have quite a few
+[1826] also examples for doing different stuff
+[1828] on the on the back end with different
+[1829] server
+[1831] Frameworks so uh I'll quickly go over
+[1834] some of the uh exciting new directions
+[1836] for what we're doing so import support
+[1839] is somewhat already in but um we haven't
+[1842] really tested some of the uh failure
+[1844] scenarios so for example what happens if
+[1847] you're importing Dynamic components sub
+[1849] tree and again there's been a deployment
+[1852] and there is a mismatch and what you
+[1854] wanted is the previous version of
+[1856] dynamic component that corresp responded
+[1858] with the build of your top level
+[1859] component and so on so how do we match
+[1861] this stuff at scale so that developers
+[1863] can just push push push and really not
+[1865] worry about this stuff so one of the
+[1867] things we're going to try out is uh
+[1869] because all our uh bundles are content
+[1872] addressable we can we use cache control
+[1875] immutable which means a a cidian in
+[1877] front can cash forever so as we continue
+[1880] to roll out even in the middle of a roll
+[1882] out of our back end of next um if
+[1886] clients are requesting bundles at the
+[1887] Server doesn't even know about anymore
+[1889] they're going to be answered by the CDN
+[1891] so as long as the apis are compatible
+[1894] for how you fetch the data which is
+[1895] another story um you should have a no
+[1899] worry path for continuous development
+[1902] and iteration of your codebase and
+[1904] perhaps the most interesting to me is
+[1906] lacally loading components Based on data
+[1908] so an example um that we're putting
+[1911] together is imagine a messenger where
+[1914] you have different message types and you
+[1916] want to server render the markup the
+[1918] according to the data needs of that um
+[1921] particular thread and then you want the
+[1923] client to pick up where that left off
+[1925] reconciliate by fetching the specific uh
+[1928] bundles um that were used there and
+[1933] resume the work and if new messages come
+[1935] lazy load those messages as
+[1937] well um the other really cool thing is
+[1941] um for development mode which we Contin
+[1944] we're continuously iterating on
+[1946] improving its performance
+[1948] we can make it a lot more Lightweight by
+[1950] trying to avoid as much work as possible
+[1954] that the brows or node are already doing
+[1956] so uh there's an interesting um
+[1959] situation right now which is node 7 is
+[1961] already really good and they're keeping
+[1963] very up to- date with all the latest
+[1965] developments and they have Harmony flags
+[1967] for a lot of new features and on the
+[1969] other hand you have Chrome and Chrome
+[1970] Canary so we're trying to think you know
+[1972] what if we can make you know hotcore
+[1975] reloading near real time so think about
+[1978] uh saving or even as you type and seeing
+[1981] those changes on your browser so right
+[1983] now we're quite a ways away from that um
+[1986] and I blame solar map generation just
+[1988] kidding but there's a lot of really uh
+[1991] um uh nit peeky things that we can take
+[1994] out there finally by using link uh
+[1997] preload we can take all our prefetching
+[2000] off of the main thread we haven't found
+[2002] this to be an issue yet and we prefetch
+[2004] really aggressively um but it really I
+[2008] think depends on each uh codebase you
+[2010] can also use a a manual API to sort of
+[2012] create your own queue and set up
+[2014] priorities for prefetching you have a
+[2016] lot of stuff to do um and those those
+[2018] are the main three things I forgot to
+[2020] mention here we also uh are working on a
+[2022] different tool called Next export that
+[2024] would allow you to Define what do you
+[2026] want the shape of your static files to
+[2028] look like and whether you want to
+[2030] pre-populate data or not and you can
+[2032] create a completely static HTML based
+[2035] build of your
+[2036] project uh I want to thank uh all these
+[2039] amazing uh contributors and co-creators
+[2041] of the framework for all their help and
+[2044] keeping the examples updated and um
+[2046] figuring out the breaking changes and
+[2048] all that stuff so uh I also want to
+[2050] announce that we're tagging the current
+[2052] Master as 2.0 and uh we're looking
+[2055] forward to everyone using it thank you
+[2057] [Applause]

@@ -1,0 +1,268 @@
+[0] so uh Paul Graham has talked about used
+[3] you guys as this example as of you know
+[5] really attacking very very difficult
+[7] problems and people that he he he uses
+[9] comparison of how many like recipe
+[12] websites he's gotten you know how many
+[14] pitches he's gotten over the years first
+[16] is no one ever pitched this idea so and
+[18] because it was so big it was you you're
+[20] solving such a huge problem um where did
+[23] you even start I mean where where does
+[24] something like that even begin
+[26] um so so we didn't really know uh where
+[30] start uh and like I definitely wouldn't
+[32] pretend that we did uh and I mean I
+[34] would have started by like crying you
+[36] know in the fetal position or something
+[37] I mean it's like you know did you it's
+[40] just you and your brother right so so
+[42] basically we faked it um so what we did
+[45] was um we decided to go on holiday and
+[49] just like go hack somewhere uh and maybe
+[52] I don't know how to pronounce his name
+[54] um but this is Guy uh mat and I'm going
+[58] to totally um
+[60] like mess he may be here so yeah I'm
+[62] going totally mess up his surname but
+[63] it's something like Sadowski or chowski
+[65] or something like that I apologize match
+[67] if you ever see this uh his website is
+[69] ids.com
+[70] and uh and he's a really good writer and
+[74] he um he wrote this these the series of
+[77] blog posts about Buenos arees uh and how
+[79] it's like the best place ever to go and
+[81] hack because it's really cheap and
+[83] everything's open really late and
+[84] there's like Wi-Fi everywhere and the
+[86] climate's really nice and everything and
+[87] so John and I were facing this winter in
+[89] Cambridge Massachusetts uh which is
+[91] which is definitely not like that in in
+[92] basically any respect uh and so we
+[94] decided to go to Buenos arees and just
+[96] um like hack all day in cafes on trying
+[98] to build a prototype here and so we did
+[100] that and it turns out to be basically
+[102] exactly as described and so if ever like
+[104] you just want to go and like work on
+[105] something sort of single-mindedly for a
+[106] month I cannot recommend uh putting IR
+[109] more highly we spent like $10 a day and
+[111] the weather was gorgeous and like
+[113] bizarrely all of the cafes have Wi-Fi
+[115] for no reason that I can discern like
+[116] much more than as the extent here um all
+[119] the restaurant open really late uh in
+[121] that we were turned away from
+[122] restaurants at like 9:00 in the evening
+[124] because it was too early um all the bars
+[127] are open until like 5 a.m. people only
+[128] start going to bars at 2 a.m. and nobody
+[130] gets up before midday and so basically
+[131] it's like an entire city on a hacker
+[133] schedule
+[135] uh uh and and we were like the worst
+[139] tourists ever in that I still have not
+[140] seen like a single sight or anything IR
+[142] we just like got up went to a cafe and
+[144] like hacked all day um and at the end of
+[147] that we had the first prototype of
+[148] stripe um after a month after yeah after
+[152] a month or I guess we we like the first
+[153] we the first production user actually
+[155] about a week after going to bonares um
+[157] and what we did was we just like uh
+[159] called up a friend who worked at a
+[160] Payment Processing Company and said you
+[161] know is it okay if we just kind of send
+[162] a couple of accounts your way and uh and
+[165] we sort of built sort of this really
+[167] nice uh kind of you know the this nice
+[169] API and sort of you know interface for
+[171] setting up accounts or whatever and then
+[173] you know when you sort of click to
+[175] create account or whatever rather than
+[177] uh you know an account actually being
+[178] created is sort of in the financial
+[180] infrastructure you know however they
+[181] worked we had no idea we just like went
+[183] and called our friend um which you know
+[185] scaled to at least a couple of users uh
+[188] and so we um and you set it up all
+[190] manually behind the scenes was totally
+[192] manual um and uh and I mean you know at
+[197] this point uh like we had you know
+[199] literally two users and both of them
+[201] were like good friends of ours uh and
+[205] and so Paul buite has this great story
+[207] about um about building Gmail uh or like
+[210] he kind of repurposed um the Google
+[212] Groups code which predates Gmail uh to
+[214] build a Gmail and so uh like he built
+[217] the first working prototype in an
+[218] afternoon and you know it just uh it
+[220] loaded all of his email into like the
+[222] Google Groups interface and he could
+[223] kind of browse in the Google group's
+[224] interface and he like showed his friends
+[225] and they are like clicking through us
+[227] and they're like oh this is great you
+[228] know but it would be really awesome if
+[229] instead of viewing you know your email I
+[231] could view mine
+[233] uh and and it was this like very kind of
+[235] direct uh user request from development
+[238] um and it was sort of similar to this
+[239] stripe in that we sort of like built the
+[241] API that allowed you to charge credit
+[242] cards and so you know went on on user
+[244] requests from there and so Ross bu was
+[247] actually the very first user of stripe
+[249] um uh he was at a company called Tui
+[251] North at the time uh and uh and he's
+[254] like you know this this API is great you
+[256] know but what would be really awesome is
+[258] if you know you actually transfer the
+[259] money into my bank account after I you
+[260] know charge credit cards right Fair
+[263] um uh and and just you know similar
+[266] requests like this um and so so what I
+[269] did actually it it didn't actually it
+[271] didn't go anywhere cuz I thought you're
+[272] were setting this up on the back end for
+[273] him or no yeah I I I can't remember it's
+[276] all fuzzy MTH at this point but but but
+[278] it was very
+[280] um was very much driven by basically you
+[283] know what things they bugged us to build
+[285] sure and so we launched this prototype
+[288] and and again I I sort of you know it
+[291] the you're not back from Argentina or
+[293] yeah so by the time we say got back from
+[295] Argentina at the end of January um sort
+[296] of the the product existed and it
+[298] actually existed in sort of fairly close
+[300] formed what stripe is today like just
+[301] this this really simple notion that you
+[303] can you can go to a website like by
+[305] filling it in a really minimal amount of
+[307] information you can start accepting
+[308] credit cards immediately on the internet
+[311] and the like the the the fundamental
+[313] idea is that it should be possible to
+[315] launch a website and accept the payment
+[317] s within like 30 minutes and you know
+[319] before stripe was um you know this
+[322] multi-day five seven business days
+[325] something right uh and I mean that
+[328] that's when sort of it got hard right
+[329] because kind of figuring out what the
+[331] sort of software side of Stripes should
+[333] looked like I mean you can kind of
+[334] imagine it but then like how do you
+[335] possibly reconcile all of that with like
+[337] the financial infrastructure and
+[338] Merchant accounts and gateways and laws
+[340] and PCI and like and they're just like
+[341] the words we knew um and uh and so we
+[345] went back to school and we sort of
+[346] finished the next semester and we
+[348] decided to to work on it um uh out in
+[351] paloalto over the next summer and I
+[353] guess that's when we that that's when we
+[354] started working full-time on stripe I
+[355] guess about a year and a half ago so you
+[357] grew 1 to a th just based on where of
+[359] mouth how have you grown you know has it
+[362] been the same have you guys it's it's
+[364] all been word of mouth so far or I mean
+[365] Word of Mouth are like people writing
+[366] about us on blogs or like the thing that
+[369] we really like and um and you know is
+[374] really kind of meaningful for us when it
+[375] happens is sort of when people just like
+[377] write about their experience of
+[378] integrating stripe uh because uh I mean
+[381] that that's like that's the goal we just
+[383] want to make it super simple U for
+[385] people to to build a business on the web
+[388] uh and like that is the thing we kind of
+[389] always asking ourselves like how could
+[391] we make it easier for somebody to start
+[392] building a business on the internet uh
+[395] and and yeah we we we've done no
+[397] marketing so far um or or actually we we
+[400] started like running some limited ads
+[402] and like stack Overflow and stuff like a
+[404] week ago but up to that it was it was
+[406] all either um word of mouth or stuff
+[409] that our users wrote about stripe um and
+[412] again I think that's a we we sort of
+[414] intentionally held off marketing for a
+[415] long time because again it's s that
+[417] forcing function again like if I use
+[419] aren't talking about stripe well I mean
+[421] then we should make stripe more awesome
+[422] like until they do uh and I think that
+[424] sort of like marketing and like sales
+[426] teams and all that kind of stuff they
+[428] can be sort of really useful kind of
+[430] accelerance uh when you when you're
+[432] really confident that you have the
+[433] product right but I think that uh it's
+[435] it's I think that um I came across this
+[439] this quote I think it was yesterday from
+[441] um from Eugene Cher about like how even
+[444] turkeys can uh can fly in a high wind um
+[448] and I think there's kind of something
+[449] like that for for startups um for like
+[452] you know with enough sales and marketing
+[453] you can make even like a really crappy
+[455] product successful uh and so I think
+[457] we're sort of by not doing any marketing
+[459] for a long time it's you know making
+[460] sure that we're like not this like half
+[462] less slandering Turkey
+[464] um uh and so I mean now we I guess we've
+[468] some nice um at least suggestive
+[470] evidence that you know people like the
+[472] product and stuff and so you know now
+[474] now we're much more okay with sort of
+[476] like I guess there's two sides to it
+[477] like on the one hand you want to make
+[478] sure you're not a turkey
+[479] um but then when you're like okay I'm
+[481] not a turkey uh the other trap I think
+[483] that you can fall into is I think a lot
+[485] of um Engineers I mean I see this tra
+[488] myself um kind of have this sort of um I
+[492] don't know like this copsis or kind of
+[494] this uh this kind of self-centeredness
+[497] or something where like I'm going to
+[498] build my beautiful code you know over
+[501] here in the corner and like I'll wait
+[502] for the world to discover me and I'm
+[504] just going to focus on all these
+[505] technical problems um was I think you
+[507] you really have to go and like engage
+[509] with the world and like talk to people
+[510] and like tell them about what you're
+[511] doing and why it's meaningful and
+[512] everything and and yeah you don't want
+[514] to do that sort of or like there is some
+[516] value I think in holding off doing that
+[518] initially or just like not kind of
+[519] pushing it too hard because it's it's
+[522] really nice to sort of to to to wait
+[524] till it get to the point where people
+[525] will actually sort of discover you but
+[527] once you've got to that point and like
+[528] you think that you actually have the
+[529] thing then I think you should go and
+[530] tell the world and like really bring it
+[532] to people um and so I think that you
+[534] know over the the coming years we we'll
+[536] we'll try to do that more but um but
+[539] there some value in holding off a l

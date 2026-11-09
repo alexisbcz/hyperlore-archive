@@ -1,0 +1,3088 @@
+[0] core tech. Docker was the core tech
+[2] behind cloud and they found it so useful
+[5] themselves they said well what if we
+[7] open sourced the core engine of docloud
+[10] to the rest of the world just just as is
+[12] versus wrapping a platform as a service
+[14] around it and so that's what led to
+[17] docker um it was rewritten in go because
+[19] I think it was it was actually Ruby on
+[21] rails before or python before it was
+[23] rewritten in in go and open source in
+[26] 2013 and it was just very very early it
+[29] was very exciting because we could see
+[30] the downloads of the Docker engine just
+[32] going through the roof and we we could
+[34] see that that we were really on to
+[36] something. Um but we were still figuring
+[38] out like okay great that we're having
+[40] all this open source adoption but we
+[42] need to create a business around this
+[44] downstream. Um we started um ideulating
+[47] and eventually June 2014 launched
+[49] DockerHub. So kind of a a a
+[52] complimentary service to the core Docker
+[54] engine itself. Um and so it was a very
+[57] exciting time to to figure out okay what
+[59] is the complete suite of things that we
+[60] can build into this platform for
+[62] developer experience and then what is
+[64] the commercial aspects of it that
+[66] downstream from the open source we want
+[69] to set up to monetize and grow a you
+[70] know grow a sustainable commercial
+[72] business from there rest of the company
+[74] so much so that they changed the name
+[77] within six months they changed the name
+[78] in the autumn of 2013 from docloud to
+[81] docker and set about selling off the paz
+[84] business. Um, and on top of that
+[86] momentum raised a series A from Greylock
+[89] in in January 2014. So it the the
+[92] takeoff of the open source project that
+[95] it was really solving a very critical
+[97] problem um was contributing back into
+[100] open source because I remember like you
+[101] know when we were doing conductor at
+[102] Netflix um companies like Tesla, GitHub
+[106] like you know Swiggy there's a ton of
+[107] these companies JP Morgan they all
+[108] started to come in and contribute and
+[110] all being done in the open it was
+[112] development or building in the open on
+[113] on GitHub and so you could see the
+[115] GitHub participants and contributors
+[117] jumping in. You could see the stars
+[118] going up. Um, you could see just the
+[122] word of mouth like the team was tiny.
+[124] There there was very little there. I
+[125] think we had one one marketer at the
+[127] time, digital marketer and and he was
+[130] fantastic at creating kind of technical
+[132] demos and examples, but the word of
+[134] mouth is just off the charts. Um, and
+[137] this and you know layer layered on top
+[139] of the very disruptive change of a
+[141] devestature and recapitalization layer
+[143] on COVID which came three months after
+[145] after the pivot of the company. Right.
+[146] So, so lot of external pressures on the
+[149] company and the employees and and I give
+[152] the team so much credit for for powering
+[155] through that. But, but to your question,
+[157] yeah, we we reset the values of the
+[158] company. We stood back and talked with
+[160] the employees because, you know, a lot
+[161] of lot of pain when you go through a
+[162] devestature and you wipe out everyone's
+[164] stock and you reset. Um, and we we
+[167] talked about what values we wanted to
+[169] embrace. We we changed the name from
+[170] values to virtues. Um, we we made it
+[173] really clear that we were going to focus
+[174] on developers. And so instead of um
+[176] customer obsession, which was the first
+[178] draft of of that virtue, we we tightened
+[180] it to developer obsession, right? And
+[182] just made it really clear that this is
+[184] going to be the the the northstar of the
+[186] of the business. Anything any feature or
+[190] capability that was directly developer
+[192] facing that the vast majority cared
+[194] about um that would continue to be open
+[196] source. And this would this is a
+[198] conversation with Scott Johnston. Scott
+[201] was most recently the CEO of Docker, one
+[204] of the most important and beloved tools
+[206] in modern software development. He
+[208] joined Docker early as a VP of product,
+[210] later became chief operating officer,
+[213] and then led the company as CEO through
+[215] one of its most critical transitions.
+[218] During his time as CEO, he's helped
+[220] significantly grow Docker's revenue and
+[222] expand its reach within the global
+[224] developer community.
+[226] He's helped reshape Docker into the
+[229] developer focused platform it is today.
+[231] Loud and used by millions around the
+[232] world. Scott, it's a real joy to have
+[235] you here. Welcome to the podcast. Thanks
+[238] J. I'm glad to be here. Thanks for the
+[239] invite.
+[241] All right, Scott. So, let's uh you know
+[243] with Docker, let's start off with a very
+[245] very basic question. Um you know talk to
+[248] our audience about like what are
+[249] containers?
+[252] Sure. Uh containers are isolated runtime
+[255] environments that are built on what's
+[258] called a copy and write file system such
+[260] that they're portable. And what that
+[262] means from a developer experience
+[263] standpoint is that you can uh build and
+[266] run a container locally and without
+[268] changes deploy that container to a VM in
+[272] the data center to a cloud node and it
+[275] just works. And so standing back, it was
+[278] designed uh by Solvin Hikes, the founder
+[280] of Docker, to eliminate the works on my
+[283] machine type fingerpointing that once
+[285] you define the container, define the
+[286] environment and build it and run it,
+[288] it'll run the same way without changes
+[290] anywhere. So we we we short our
+[292] shorthand for that was build, share, and
+[294] run any application anywhere without
+[296] having to change anything. Got it. And
+[299] and and uh how did this word the the
+[302] container term get coined? like uh my
+[304] belief is that this came from the
+[305] shipping industry, the logistics world.
+[306] Uh you you have some ideas on that and
+[309] why did the analogy came from the you
+[311] know come from the shipping industry.
+[314] Sure. Sure. And we can we can delve into
+[315] the container technology which goes all
+[317] the way back to you know BSD days right
+[320] with Bill Joy. But um the the the
+[323] near-term or the the medium-term history
+[325] was um there there's a very famous book
+[329] called the box which talks about how the
+[333] shipping containers that you just
+[334] described that we see on ships and
+[335] planes and cranes how um before that was
+[339] standardized in the late 50s early 60s
+[342] the cost of shipping in a logistics um
+[346] sense for the total cost of product um
+[349] constituted like 30 30% % of the overall
+[352] cost of the product. And that's because
+[354] moving products around at the time uh
+[356] was very manual, right? And you'd have
+[359] like bananas sitting next to anvils,
+[361] sitting next to cars, sitting next to
+[363] oil containers. And so getting things on
+[366] and off ships and on and off trains and
+[368] on and off planes was just very very
+[369] manual and very very um fragile, if you
+[371] will. And so the the the the
+[374] standardized shipping container came
+[376] along in the 60s and completely
+[378] revolutionized logistics uh global
+[380] supply chain logistics. And as a result,
+[383] you could pack everything into the
+[384] container and then because the standard
+[385] interfaces on the container, you could
+[387] pick it up off the ship, put it on the
+[389] train, ship it across the country, put
+[391] it on a truck, ship it to the port, all
+[393] without having to open the container.
+[395] and the cost of um as a percent of the
+[399] cost of the goods shipping dropped from
+[401] 30 35% down to 3%. So it's a 10x
+[404] improvement in the cost of logistics as
+[407] a percent of overall product value. And
+[409] in a very real sense um that analogy
+[412] works for software containers as well.
+[414] Moving uh and Solomon framed this very
+[416] well when he revealed the the Docker um
+[419] open source project at Pyon in March
+[423] 2013. Um and he defined it very simply
+[425] like shipping code to the server was
+[428] hard back then. And it's because it's
+[431] not just the code but it's the
+[432] dependencies. It's the different
+[433] versions on the different layers in the
+[435] stack and the the Docker container uh
+[439] simplifies all that. And once you put
+[442] all the dependencies, all the different
+[444] uh libraries needed for an application
+[445] inside that container and and then and
+[448] build it and it's an now it's immutable
+[451] um shipping code shipping apps to to the
+[453] server became a lot easier and it
+[455] reduced it reduced the friction of of
+[458] shipping code to the server. And so the
+[461] analogies with the global shipping
+[463] container the in the physical world um
+[464] are actually quite apt and we found work
+[467] very well in in explaining to the world
+[468] in 2013 2014 what is this thing called a
+[472] software container and and so around the
+[475] time when uh Docker first came about
+[477] like you know I think you know I think
+[479] there were there was stuff before that
+[481] but I think uh you know the start of
+[482] Docker like 2013 like before that the
+[485] cloud came about like you know you know
+[487] AWS had this thing called AMIs where
+[489] images used to be burned front end,
+[491] right? And then you could restart that.
+[493] There was also the concept of uh you
+[495] know VMs that came out like in the
+[496] VMware era, right? Like uh but but those
+[499] are also a little bit clunkier, slower
+[501] to start, you know, not the easiest uh
+[504] method to do when you know when people
+[506] think about software development. But
+[508] but this thing about containers has
+[509] always been there and you you touched a
+[511] little bit about like the BST days, but
+[512] uh even going back into the I think the
+[515] what 70s 80s in Unix there was this
+[518] thing called change route, right? like
+[520] true it's not containers but like you
+[522] know you could you could you could think
+[523] about hey let let me isolate this thing
+[525] into a process separate file system it
+[526] was a primitive container of sorts right
+[529] I think that there was jails in I think
+[531] it was free right like u and then uh uh
+[536] when did this uh you know what were the
+[538] troubles of like you know the very early
+[539] primitive containers thing then as it
+[541] moved towards like you know VMs um and
+[544] then eventually move towards more
+[546] towards containers what what kind of
+[547] challenges uh you know did containers
+[549] solve and uh every subsequent solution
+[551] that came after like you know how did it
+[553] help move to kind of new ground right
+[556] well and you you described it well June
+[558] that was a progression and if I had to
+[561] kind of point to two two trends of that
+[562] progression one is um the the previous
+[567] milestones in container technology
+[569] development were all very infrastructure
+[571] centric right and you referred to you
+[573] know BSD jails uh BSD at Chirut and then
+[576] along came Solaris jails right Um but it
+[579] was all very much geared towards um
+[582] infrastructure and that kind of leads to
+[584] the second point which is we had a lot
+[586] of the primitives for containerization
+[589] for Linux um in the Linux kernel um
+[593] namespaces croups right those are kind
+[595] of the fundamental primitives around
+[597] which container Linux containers are
+[599] built um and and yet because they're so
+[603] difficult to use only PhDs and Linux
+[606] kernel engineering were were able to
+[607] take advantage of that and So again, so
+[610] much credit to Solomon and the founding
+[611] team. What they realized is that okay,
+[613] the primitives are there, but let's take
+[615] those primitives and bring it together
+[618] with uh developer friendly syntax. So
+[620] gitl like syntax on the command line,
+[622] and let's couple that then with uh copy
+[625] and write file system to make it to make
+[628] the image immutable uh and thus portable
+[631] across all these different Linux
+[632] environments. And so it was that
+[634] combination of powerful primitives
+[636] basically abstracted away combined with
+[639] copy and write file system to make the
+[640] image immutable and then a a user
+[643] interface that was um aligned towards
+[645] developers very familiar to developers
+[647] like you know such as the git command.
+[648] the Docker push, Docker pull that was
+[650] all very intentional is really what made
+[654] uh if you will the democratization or
+[655] the ease of accessibility of of Linux
+[657] container technology um accessible to
+[660] tens of millions of developers and
+[661] really what caused you know the Docker
+[663] Docker standard to take off in 2013
+[666] and the shift I think right before
+[669] containers in the form that Docker came
+[671] out with right before that there were
+[673] VMs right like um and and uh you could
+[676] you could still have a machine and you
+[677] could launch a VM there. But uh you know
+[680] uh that was kind kind of separate and
+[682] isolated and it had you know access to
+[684] its own kind of virtualized CPU and
+[686] virtualized memory and then I believe
+[688] that was um still hard to integrate you
+[691] know day-to-day software development uh
+[693] with with what you would see there in in
+[695] VMs, right? That's right. It was big,
+[697] right? It was heavy, right? And um and
+[700] it was the from an interface standpoint
+[702] or user experience standpoint, it was
+[703] very much geared towards ops and
+[704] infrastructure, right? And so the the
+[707] container image only contains the
+[709] application and its dependencies. It
+[710] does not contain any of the OS and the
+[712] OS libraries and all the the subsequent
+[714] kind of OS dependencies. And so it's a
+[716] lot lighter weight. It it's only the
+[719] container the single the single
+[721] dependency of the container is having a
+[722] Linux kernel, right? So it made
+[724] containers very very portable. Um and so
+[727] the combination of lighter weight, more
+[729] portable and again focused on
+[732] applications, focused on developers
+[734] versus infrastructure is really what
+[736] enabled the the ecosystem, the
+[738] cloudnative ecosystem that we know
+[739] today. Got it. And and uh uh right
+[743] around like uh 2013 uh when Solomon went
+[747] and uh you know announced uh in I think
+[749] it was Pyon 2013 as you as you mentioned
+[752] earlier. Um
+[754] what was the catalyst for the world of
+[756] containers and and for you know the
+[758] reason for Docker to just take off at
+[760] that time like you know something was
+[761] right about that point in time was it uh
+[763] was it the cloud was it the whole
+[766] explosion of micros service development
+[768] um uh was it this whole distributed
+[771] architecture uh you know if Docker had
+[774] come like you know 10 15 years before
+[776] its time like it probably wouldn't have
+[778] been successful generally container
+[780] technology but I think the timing was
+[781] just right but what were are kind of the
+[783] critical components and uh you know if
+[785] you take that snapshot in time uh in the
+[787] software development industry what are
+[788] the things you think that like
+[789] contributed to that like you know uh
+[792] heavy popularity especially around 2013
+[794] right sure well then let's riff on this
+[796] together because I know you were you
+[797] were in the industry at the time and you
+[799] were at one of the one of the
+[800] foundational companies that was in this
+[802] conversation but I think there's there's
+[804] multiple elements right one was um we
+[807] had been through by that point by 2013
+[809] 2014 we had been through call about six,
+[813] seven years of cloud, right? So cloud
+[814] came out in 2007, mumble and with the
+[817] with the rise of AWS and and so the the
+[820] the I'll say the leading edge of the
+[822] industry, we're starting to get
+[823] comfortable with cloud resources. Um and
+[826] and and the industry was learning that
+[828] like uh cloud gave you opportunities to
+[831] create applications that had different
+[832] properties than standard call it
+[834] standard applications or three- tiered
+[836] apps. And you referenced this a little
+[837] earlier like big old VMs, right, that
+[838] you just kind of plunk in the data
+[840] center. That's a very different
+[841] application architecture than what what
+[843] the cloud was enabling in terms of um
+[845] horizontal scaling on demand scale to
+[847] zero that sort of thing. So I think that
+[849] was one big factor is that that that the
+[851] industry was realizing there is more to
+[852] be taken advantage of cloud
+[853] infrastructure with a potentially
+[855] different approach to applications. I
+[857] think adjacent to that or overlapping
+[859] with that was um the rise of Heroku and
+[861] the the ecosystem around that that was
+[864] uh talking about 12 factor apps and that
+[866] was very much speaking to the
+[868] opportunity to take more advantage of
+[870] this cloud infrastructure that had been
+[871] ascended over the previous six seven
+[873] years and and that led to you already
+[875] referenced it which is um 12 actor apps
+[878] was almost synonymous with the rise of
+[880] microservices at the time and um
+[882] containers didn't exist but the thought
+[884] of like okay we have these these big
+[886] application
+[887] um opportunities, but boy, when it's all
+[889] bound up in a monolith, it's very
+[891] difficult for teams to move quickly,
+[892] have full ownership, and and ship and
+[895] ship as frequently as they they had the
+[898] aspiration and honestly their customers
+[900] were demanding. And so I think all three
+[902] factors together, the the rise of the
+[904] cloud and then the the insight that we
+[906] could take more advantage of it, which
+[908] is intersecting or overlapping with 12
+[910] factor applications, which is relevant
+[911] to the rise of microservices and that
+[913] was just very very hot. That was a hot
+[915] you remember this, right? you were you
+[916] were at Netflix at the time like that
+[917] was a hot conversation in the industry.
+[920] I was at Puppet at the time so I could
+[921] see this happening above and around
+[923] Puppet as well. And then um and yet it
+[927] was still difficult to ship quickly
+[928] because the unit of manufacturer if you
+[930] will for software was still anyone's
+[934] anyone's decision on on the best day.
+[936] There's no standard unit of delivery, no
+[938] standard unit of manufacturer. And then
+[940] along come Solomon and Docker and says,
+[943] "Hey, the standard unit is the
+[945] container. This is what we can ship um
+[948] from the developer laptop throughout
+[950] CI/CD into production." And then we
+[953] know, you know, Kubernetes and the
+[954] orchestrators came along and we talked
+[955] about how we can scale that
+[956] horizontally. And so uh that I kind of
+[959] jumped to the the endgame but like I
+[961] think those three factors really made
+[963] the conversation right the timing right
+[964] exactly as you asked the question frame
+[966] the question the timing right for a
+[969] technology like docker to come along and
+[970] really standardize the unit of delivery
+[972] standardized the unit of manufacturer
+[974] for software. Yeah. And I think like uh
+[976] when I was in Netflix uh during those
+[977] times like and I remember like uh we
+[979] were doing stuff around computer vision
+[981] and we you know used to use OpenCV
+[984] libraries for example encoding teams
+[986] used to use ffmpeg and and uh Netflix
+[989] was primarily a Java shop at that point
+[991] right and and then you had to use these
+[993] other toolings which was written in C
+[995] C++ and uh when you're running running a
+[998] piece of code somewhere right in the
+[999] cloud like you know you had to make sure
+[1001] that wherever it's running like it had
+[1003] all of these things embedded into that
+[1004] at runtime, right? I think Netflix had
+[1007] its own tooling inside. I think they
+[1009] called it Titus, right? Like uh Docker,
+[1011] I think it came roughly around the same
+[1012] time, but I think in in Netflix it it uh
+[1016] that you know they continue to use
+[1018] Titus, but I think the the the need for
+[1020] containers was pretty obvious at that
+[1022] point, right? And and there was a need
+[1025] there was a need to standardize, right?
+[1026] You had all these tools. You had all
+[1027] this neat this insight that wow, we
+[1029] could be taking more advantage of cloud
+[1031] infrastructure, but it was still very
+[1033] frictionful to move code through the
+[1036] different stages of the SDLC. Yeah,
+[1038] that's true. And then what was Solomon
+[1041] Height's role like you know especially
+[1042] around the open-source momentum that
+[1044] Docker got and which literally led to
+[1047] the early success of Docker, right? Like
+[1049] uh developers around the world started
+[1050] to use it. But uh tell me a little bit
+[1052] about his role uh and how was it like
+[1054] working at Solomon in the early days.
+[1056] Sure. So, so this is well documented,
+[1058] but um uh Solomon and and Docker were
+[1064] originally part of a a platform as a
+[1066] service company Paz um called Cloud and
+[1070] at the time um there was uh Heroku and
+[1073] Engineard andcloud and they were all
+[1076] competing in the in the platform as a
+[1077] service market, you know, starting in
+[1080] the the the late as and into the 10ens.
+[1083] Um and around 2013
+[1087] um Docloud decided that okay this has
+[1090] been this is okay but Heroku was kind of
+[1092] ahead and docloud was looking for um
+[1096] alternative opportunities and so the
+[1097] core technology of docloud the core
+[1099] value proposition of docloud versus
+[1101] heroku and engineard was um it could
+[1103] handle uh multiple languages right if
+[1106] you remember at the time kind of heroku
+[1108] and cloud um sorry Heroku and engineard
+[1111] were very much rubies on rails um type
+[1113] type um platforms, right? They were they
+[1115] were call it uniquely uh focused on Ruby
+[1118] on Rails and and uh Solomon and Docloud
+[1121] were like okay Ruby on Rails but also
+[1123] these other languages and so that was
+[1125] the core value proposition the core tech
+[1127] Docker was the core tech behind cloud
+[1130] and they found it so useful themselves
+[1132] they said well what if we open sourced
+[1135] the core engine of docloud to the rest
+[1137] of the world just just as is versus
+[1139] wrapping a platform as a service around
+[1141] it and so that's what led to docker
+[1144] Um, it was rewritten in Go because I
+[1146] think it was it was actually Ruby on
+[1148] Rails before or Python before. It was
+[1150] rewritten in in Go and open source in
+[1152] 2013. Um, and lo and behold, it really
+[1157] did solve a real problem, right?
+[1158] Shipping code to the server is hard. It
+[1160] shipping code to the server should not
+[1162] be language specific or tied to a
+[1163] specific language or tied to a specific
+[1165] library or tied to a specific
+[1166] infrastructure stack. And so that um
+[1170] language agnosticism, if you will, um is
+[1172] really what that that plus the ease of
+[1175] use and the the developer accessibility
+[1176] and things we've already talked about is
+[1178] really what kind of lit a spark and and
+[1180] to your point in the right environment
+[1182] with the right conversations kind of
+[1184] going on at a macro level or market
+[1185] level at the time um is what really
+[1187] caused it to take off. So I joined um in
+[1190] February 2014. So it was Salman Ben Gold
+[1193] of CEO at the time and um myself to to
+[1196] lead product and then about you know 18
+[1198] 19 open source engineers and it was just
+[1200] very very early. It was very exciting
+[1202] because we could see the downloads of
+[1203] the Docker engine just going through the
+[1205] roof and we we could see that that we
+[1207] were really on to something. Um but we
+[1210] were still figuring out like okay great
+[1212] that we're having all this open source
+[1213] adoption but we need to create a
+[1215] business around this downstream.
+[1218] um we started um ideulating and
+[1220] eventually June 2014 launched DockerHub.
+[1222] So kind of a a a a complimentary service
+[1225] to the core Docker engine itself. Um and
+[1229] so it was a very exciting time to to
+[1230] figure out okay what is the complete
+[1232] suite of things that we can build into
+[1233] this platform for developer experience
+[1235] and then what is the commercial aspects
+[1238] of it that downstream from the open
+[1240] source we want to set up to monetize and
+[1242] grow a you know grow a sustainable
+[1244] commercial business from there. Yeah. Um
+[1246] so very exciting days for sure. And then
+[1250] uh you mentioned about cloud and you
+[1252] know was the pivot obvious at that time
+[1254] like you know and what do you think like
+[1256] solvent got absolutely right that uh
+[1258] others missed?
+[1260] Well, so this is um this was slightly
+[1263] before my time because I again I joined
+[1264] in February 2014, but um as as I got to
+[1268] know the company and and speaking with
+[1270] Solomon and Ben, um it was pretty
+[1273] apparent that once Docker was open
+[1274] sourced in March 2013, the downloads and
+[1276] the takeoff was was was very apparent to
+[1279] the to the rest of the company. So much
+[1281] so that they changed the name within 6
+[1284] months. They changed the name in the
+[1285] autumn of 2013 from docloud to Docker
+[1288] and set about selling off the paz
+[1303] problem um was was pretty apparent to
+[1306] them and to the rest of the market that
+[1308] was watching all this. And that's I mean
+[1310] that's how I discovered it. I was still
+[1311] at Puppet and I had a a handful of
+[1314] accounts that were my Canary accounts,
+[1316] meaning early adopters that I kind of
+[1317] stayed close to. And within 3 months of
+[1320] Docker's open source in March 2013,
+[1323] um Docker started showing up in these
+[1325] Puppet Canary accounts. And I was like,
+[1327] oo, what's that about? And so I got my
+[1328] hands on it and started digging. It's
+[1330] like, oo, this is going to this is going
+[1332] to change things. Um because puppet at
+[1334] the time was was kind of very adjacent
+[1336] and trying to solve the problem but from
+[1338] a very different perspective. Puppet was
+[1340] kind of outside in trying to use
+[1342] automation of configuration management
+[1344] to standardize environments across
+[1345] servers between development and
+[1347] production between development staging
+[1349] production. Um and Docker just made that
+[1353] 20 times easier, right? like just the
+[1355] the the effort you needed to do to
+[1357] create standardized environments using
+[1358] Docker versus the puppet and learn
+[1360] Puppet language and set up the puppet
+[1361] server all that like it was night and
+[1363] day in terms of friction. Yeah. Um and
+[1366] so maybe coming back to your second
+[1368] question like um I think Solomon just
+[1371] Solomon and the core team just nailed um
+[1373] the developer experience. They nailed
+[1376] the portability of applications across
+[1379] any Linux environment and they nailed um
+[1384] creating enough surface area for
+[1386] ecosystem partners to join in the the up
+[1389] the uptick or the upswell or the
+[1391] creation of this market because it
+[1392] really created a market right it created
+[1394] the cloudnative market and what I mean
+[1396] by that latter point is there are places
+[1398] for the storage providers to play there
+[1399] are places for the networking providers
+[1401] to play um there's places places for
+[1404] observability providers to play. And so
+[1406] around this core runtime, there's plenty
+[1409] of opportunities for the ecosystem to
+[1411] hook in. And when you have ecosystem
+[1413] kind of hooked in, it kind of it kind of
+[1415] creates this market and pulls the whole
+[1417] pull pulls pulls the whole industry
+[1419] forward. And of course, Docker was right
+[1420] in the middle of that. Yeah. And then uh
+[1422] while you know the just the format of
+[1424] the Docker file itself early on, right,
+[1426] like it enabled doing basic shell script
+[1428] so you could use tools like appget or
+[1431] yum to pull in all the dependencies. you
+[1433] could do all kinds of stuff with like
+[1435] basic shell commands. So it also just
+[1436] opened up and you know made it also
+[1438] highly customizable right like u y uh
+[1441] and and uh
+[1443] what and I think that also led to the
+[1445] popularity there right because not only
+[1448] was was this kind of easy to use but you
+[1450] know you could customize it in a way
+[1451] that you wanted to right uh and that
+[1453] power of the developers I think also
+[1455] made it really popular but but are there
+[1457] you talked a little bit about like you
+[1458] know downloads going up and uh you know
+[1461] talk a little bit about puppet and stuff
+[1463] like you know were there other signals
+[1464] that I know this was kind of really
+[1466] early signs of product market fit,
+[1467] right? Like were there any other
+[1469] specific signals, metrics? Uh I don't
+[1471] know if Docker was on GitHub at that
+[1473] point in time or uh Yeah, it was it was
+[1475] on Git I mean it was an open source
+[1477] project. So it was um all being done in
+[1479] the open. It was development or building
+[1480] in the open on on GitHub and so you
+[1482] could see the GitHub participants and
+[1484] contributors jumping in. You could see
+[1485] the stars going up. Um you could see
+[1489] just the word of mouth like the team was
+[1491] tiny there. There was very little there.
+[1492] I think we had one one marketer at the
+[1495] time, digital marketer, and and he was
+[1505] the the product had built in, of course,
+[1508] a certain verality, meaning um once you
+[1510] built once a developer built a container
+[1512] and pushed it to Docker Hub, they could
+[1514] send a link to a buddy and say, "Hey,
+[1515] check this thing out. I just I just
+[1517] pushed this this server or this
+[1519] application to to Docker Hub." And of
+[1522] course their friend to to take advantage
+[1524] of that had to download the Docker
+[1525] engine in order to pull that image and
+[1527] and run it, right? And so in that sense
+[1531] the the the the product had had a
+[1533] verality built into it that was just
+[1535] very natural for for developers. And
+[1537] then uh there was also adoption by some
+[1539] big companies back then, right? I think
+[1541] Spotify, eBay if I can remember
+[1542] correctly, right? like what are there
+[1544] other big companies that came into play
+[1545] and also started contributing back in
+[1549] know when we were doing conductor
+[1558] you know at that time we never thought
+[1560] about like you know starting a company
+[1561] about this later on but uh those were
+[1562] all great signals saying that hey people
+[1564] are seeing advantage like you know the
+[1566] value in this developers are seeing
+[1567] value in this there were things that
+[1569] were not working that great but people
+[1571] still wanted to use it and they wanted
+[1572] more of it right? You know you know you
+[1574] know requests for features would come in
+[1576] there would be organic pull requesting
+[1578] you know requesting coming in but were
+[1580] there other like how was the early
+[1581] adoption from enterprise companies?
+[1583] Yeah. Well, so the as you as you know
+[1586] right as you live through like the the
+[1587] tech sector is always the early adop or
+[1589] the early adopters most early adopters
+[1590] come from the tech sector and so th
+[1592] those same tech sector companies that
+[1594] were in the microservices conversation
+[1597] they were the first ones to kind of jump
+[1599] on Docker and you've already referenced
+[1600] them and you know Netflix was in there
+[1602] and so um I I if if if a company was
+[1606] part of microservices discussion at the
+[1608] time 2013 2014 seemed very natural for
+[1611] them to lean in and try Docker and and
+[1613] start then contributing back to the
+[1615] project. Um, in addition, there's plenty
+[1618] of ecosystem partners around that were
+[1621] also very aware of the microservices
+[1623] conversation and trying to contribute
+[1624] and so they jumped on as well. And so,
+[1626] uh, you know, Red Hat jumped on early
+[1628] and and contributed to the project. Uh,
+[1630] Microsoft jumped on early and
+[1631] contributed to the project. Um, even
+[1633] even IBM came along in in 2014 2015 and
+[1637] wanted to take containers to uh to their
+[1640] mainframe business. Right? So, so there
+[1642] was both a lot of validation from the
+[1644] early adopters in the market, early
+[1646] adopter and customers. Um, and then of
+[1648] course kind of uh vendors and partners
+[1650] in the ecosystem also contributing and
+[1652] jumping on and and uh as the users start
+[1656] to become popular, right? You also to
+[1658] kind of enhance and you know improve the
+[1660] product, you also need to understand the
+[1662] ideal customer profile, right? So, what
+[1664] was it? What what was it? Was it devs
+[1666] like was it you know you know startups,
+[1667] large companies? Was it mostly on devops
+[1669] side? Um and then talk to me a little
+[1672] bit about like the whole dev centric
+[1673] culture of like you know docker
+[1675] adoption.
+[1677] Yeah. So as you know as markets mature
+[1679] the the ICP evolves as well right but
+[1682] but in the early days it was very much
+[1684] um tech sector companies and then the
+[1686] development organization within those
+[1688] tech sector companies. Um now as the
+[1690] market matured and we're getting into
+[1692] the the late teens here you know 2015
+[1695] 2016 so second half of the teens I
+[1697] guess. um it became clear that that what
+[1701] we now call platform engineering teams
+[1703] that back in the day DevOps teams um
+[1705] could see the value in creating a
+[1707] containerization platform for their
+[1709] internal developers and and of course
+[1712] production, right? And so it became it
+[1714] became the because containers became the
+[1716] unit of shipping code became very
+[1719] natural for the DevOps teams to adopt
+[1721] containerization platforms and have a
+[1724] set of services and support for their
+[1726] developers that then led right through
+[1728] the SDLC into what became kind of
+[1730] Kubernetes production deployments on the
+[1732] on the back end. And so the ICP evolved
+[1734] over time. Started with developers, grew
+[1736] eventually into into DevOps. Um and um
+[1741] it became really important I think for
+[1742] the entire industry to realize the the
+[1744] balance between both of those as the
+[1746] market matured that you you had to
+[1748] continue to make it e easy to use and
+[1750] approachable for developers while making
+[1752] it robust for DevOps on all the kind of
+[1754] classic enterprise illities, right? So
+[1756] security, reliability, scalability, um
+[1759] auditability, manageability and and so
+[1762] um as we developed the the feature set
+[1764] over those years um we had to add on to
+[1767] the very developercentric features that
+[1769] the company started with. And and did
+[1771] you have any data on like you know how
+[1773] the early people early set of adopters
+[1775] were using this where they were using
+[1777] this anything that surprised you for
+[1778] example
+[1780] uh you know percentage of people using
+[1781] it in a local development environment on
+[1784] your laptops in your desktops to move
+[1785] and from there and moving to production
+[1787] in the cloud like u do you have some
+[1788] early data insights on that? Yeah. So
+[1791] the the pattern in the early days was
+[1793] kind of classic um you know server side
+[1796] applications or three- tier
+[1797] applications, right? So your your your
+[1799] LAMPstack was a a a classic early
+[1801] example and we we had a a very exciting
+[1804] partnership with Microsoft on the net
+[1806] side that um was a two-tier application
+[1808] for kind of net ASP.NET applications. So
+[1811] that was kind of the classic starting
+[1812] point. Um and and yes, I mean the the
+[1816] the natural workflow was from
+[1818] development into into CI into into
+[1822] deployment into production. Um but
+[1825] because it's open source and because
+[1826] developers are incredibly creative, we
+[1828] never ceased being surprised by the
+[1831] creative ways in which developers would
+[1833] take the technology and go places that
+[1834] we we didn't we didn't envision. So, as
+[1837] an example, um, with the rise of IoT and
+[1840] and putting applications on the edge, we
+[1844] saw requests for for Docker to show up
+[1846] and set top boxes, consumer set top
+[1848] boxes, requests for Docker to get this
+[1850] um, manage elevators that are going the
+[1853] elevator automation going up and down
+[1854] commercial and residential buildings um
+[1857] to manage um, manufacturing uh, tools on
+[1860] a manufacturing line like and things
+[1863] that um, yeah devices and end use cases,
+[1866] end user use cases that 2013, 2014
+[1869] hadn't even imagined, right? But it
+[1870] shows you again the creativity of
+[1872] developers and when you make something
+[1874] that really hits this this again this
+[1877] need of lowering friction of delivering
+[1879] value, right? Lowering friction of
+[1880] shipping apps and as apps start to live
+[1883] in more places than just the data center
+[1885] in the cloud, then Docker became a very
+[1887] natural piece of that that application
+[1889] delivery infrastructure. if it was a
+[1891] refrigerator, mobile phone, we have it
+[1894] we have Docker um installed on on
+[1897] military aircraft like it's it's it's
+[1899] everywhere because it just again lowers
+[1900] this friction of delivering application
+[1902] value and that makes the ability to
+[1905] frequently update that value just so
+[1907] much easier. Yeah, I think we saw a
+[1909] similar thing in you know the the open
+[1911] source conductor when we looked at like
+[1912] users like you know nuclear reactors
+[1915] like you know IoT devices like you know
+[1917] you just never know where people are
+[1918] going to be and I think like recently we
+[1920] also discovered one more thing like you
+[1922] know college applications for um you
+[1924] know UC colleges right like you know the
+[1926] whole system is built on like you know
+[1928] you you never have thought like you know
+[1930] early days like you know that this would
+[1931] explode like the way that
+[1934] yeah and it's you know it's it's uh
+[1937] creative, it's fun and you know frankly
+[1939] it's it's humbling right when you see
+[1941] just the the range of of um applications
+[1944] and use cases and um you know a real
+[1947] privilege to be part of that really
+[1949] really transforming the way in which
+[1951] software software is developed for any
+[1952] application deployed deployed anywhere.
+[1955] Um I'll give you one more example of
+[1957] what we just were completely surprised
+[1959] by. So um
+[1962] this is a little bit of story but I'll
+[1963] I'll keep it brief. Um, as we all know,
+[1965] um, there's asteroids in their own belt
+[1968] zooming around the solar system and
+[1969] every once in a while there's there's
+[1970] rings of asteroids and and some of them
+[1972] some of the asteroids kind of come close
+[1973] to Earth. And it turns out there's this
+[1975] whole NASA group that's responsible for
+[1977] basically doing um scenarios and
+[1979] simulation of like, okay, what happens
+[1981] if one of these asteroids comes too
+[1982] close and figuring out what the
+[1983] remediations will be. Well, we
+[1985] discovered that this NASA group was
+[1987] actually using Docker to simulate and
+[1990] create a test environments of um one of
+[1993] their one of their remediations which
+[1995] was fly a missile into the asteroid and
+[1999] knock it off course from Earth. And if
+[2002] this sounds familiar, there's a movie
+[2003] about this called Armageddon starring
+[2005] Noah Northern and Bruce Willis. And so,
+[2008] you know, we we we do tongue and cheek,
+[2010] but it is it is um there's some truth to
+[2013] it, which is, you know, not only does
+[2014] Zacher help you with your servers, but
+[2015] Docker is helping save the world from
+[2017] ast from asteroid impact. So, just a fun
+[2020] story and there's there's lots of things
+[2021] like that just surprised us and
+[2023] delighted us and humbled us as the as
+[2025] the as the market evolved and matured. I
+[2028] think that's the power of really like
+[2029] open source software, you know, giving
+[2030] into the hands of the the of the of the
+[2032] 100% and then making it like, you know,
+[2035] customizable and and a platform.
+[2036] solution that people can build like
+[2038] wonderful magical things on the top of
+[2039] that right 100% you're absolutely right
+[2042] absolutely right so moving forward right
+[2044] like you know tell us a little bit about
+[2045] like uh there was talk docker swarm
+[2048] there was docker enterprise kubernetes
+[2051] came around the same time I I I don't
+[2053] remember the exact timelines on what
+[2055] happened when uh but was this in
+[2056] response to kubernetes or kubernetes was
+[2058] in response to this like tell us a
+[2060] little bit about the swarm versus the
+[2061] kubernetes story and the whole docker
+[2063] enterprise in in general sure Sure. So,
+[2067] you know, a little more than a year in,
+[2069] so kind of 2014, we could see that just
+[2073] the number of containers being created
+[2076] needed some layer on top in order to
+[2080] orchestrate. Um, because they were being
+[2082] created not just on a single node, but
+[2084] for any sort of 24/7 app that needs
+[2088] failover, right? You need multiple nodes
+[2089] or whether it's for failover or for
+[2091] performance or both. And so um the
+[2095] single Docker engine was very much a
+[2096] single node technology.
+[2098] Um and so the industry again a year into
+[2102] a year into the democratization if you
+[2104] will of containers. So you know from
+[2106] March 2013 was already buzzing about
+[2108] like okay how do we how do we think
+[2110] about managing this at scale and so um
+[2113] Kubernetes actually was announced at the
+[2115] very first Docker Con. It was announced
+[2116] in in um in June 2014.
+[2120] Um, and Eric Brewer from Google, right,
+[2122] though he was the he was head of of the
+[2124] Kubernetes team at the time, announced
+[2126] Kubernetes on stage at Docker Con. And
+[2128] we simultaneously announced on stage a
+[2130] Docker Swarm. So they're actually
+[2132] announced at the same time geared
+[2134] towards solving um similar challenges
+[2136] just from a very very different um they
+[2138] came at it from a very very different
+[2140] angle. Um, Kubernetes as as it's well
+[2143] known and history's written um came out
+[2145] of Google's deep experience with
+[2147] managing
+[2149] you know tens of thousands of servers
+[2150] per data center across multiple data
+[2152] centers using what's called the the
+[2153] board technology
+[2155] and um so thus it's very very kind of at
+[2158] scale very horizontal very much a
+[2160] systems or an ops uh comes at it from a
+[2163] very systems opscentric point of view um
+[2166] swarm comes at it from a very much a
+[2167] developer centric point of view and thus
+[2170] the primitives and the the way in which
+[2172] the the mental model evolved was very
+[2174] much how a developer thinks about
+[2175] deploying an application. So they were
+[2177] solving a similar problem just from very
+[2178] different viewpoints. Um and you know
+[2182] therein lies there lies the beauty of
+[2183] competition. So is the layer above the
+[2185] container runtime Kubernetes and swarm
+[2187] and um what we saw happen and a lot of
+[2192] credit to the Kubernetes team is they
+[2193] created a number of interfaces for their
+[2196] community to plug in. So interfaces for
+[2198] authentication and for storage and for
+[2200] networking. Um and they also um did a
+[2205] fantastic job of encapsulating kind of
+[2208] the concerns of operators and that you
+[2211] know the the coupl file is the famous
+[2213] kind of center point for this
+[2214] conversation right which has over 330
+[2216] knobs bells and whistles. Um and swarm
+[2219] swarm did not have that. Swarm was a
+[2220] simpler product geared towards uh
+[2222] developer developers needs. Um and I
+[2226] would say that combined with you know
+[2228] frankly Google's brand at running things
+[2230] at scale and managing complex
+[2232] infrastructure at scale um really helped
+[2235] that ecosystem take off you know so much
+[2237] so that in 2017 we said you know what we
+[2240] we at Docker said you know what um let's
+[2243] support Kubernetes as well and so we
+[2245] embedded not only swarm but embedded
+[2247] Kubernetes into the Docker enterprise
+[2249] product so that our communities which
+[2251] was now clearly not just developers but
+[2253] developers and devops that the DevOps
+[2255] engineers could choose kind of which
+[2257] orchestrator to use um in deploying
+[2259] applications to production. And so to
+[2262] this day, yeah, sorry, I'll just I'll
+[2264] wrap with like to this day um Kubernetes
+[2267] obviously is is the market leader uh and
+[2269] we have Kubernetes in Docker Desktop
+[2271] today, right? So developers can have a
+[2273] uh a production-like experience locally.
+[2276] Um but then swarm continues to be an
+[2277] upstream open source project that
+[2279] continues to be supported and there's a
+[2280] there's a subset of the market that
+[2282] continues to use that and deploy it at
+[2283] that scale and then uh going back to the
+[2286] the Kubernetes really took off at that
+[2288] time right like and then probably the
+[2289] Google backing has also something to do
+[2291] with that but any learnings from that
+[2293] period like you know if you had to go
+[2295] back and do swam all over again like
+[2297] would you do it any differently?
+[2300] I mean armchair quarterbacks is easy
+[2302] right? um and looking through the lens
+[2304] of of gosh more than 10 10 years or
+[2307] almost 10 years at this time. Um I think
+[2311] it it's really important to
+[2316] ensure that all the different players in
+[2318] the ecosystem have a role and have a
+[2320] clear role to play and I think
+[2322] Kubernetes did a wonderful job of that
+[2324] with their special interest groups with
+[2326] their the interfaces they created for
+[2328] those sigs and uh much like like Docker
+[2331] was carried forward in the early days by
+[2333] the ecosystem creating that allowed the
+[2335] ecosystem around orchestration around
+[2337] Kubernetes to carry it forward as well.
+[2340] And so there there was more we probably
+[2343] could have done at Docker around that as
+[2345] well. Um second is the developer persona
+[2349] was obviously critical is obviously
+[2351] critical in this layer in the stack and
+[2353] will continue to be. Um uh was there
+[2356] more there that we could have done for
+[2357] the DevOps or ops personas? I think the
+[2360] answer there is probably yes as well.
+[2363] And then you know this is probably
+[2364] counterintuitive but you know you
+[2366] mentioned about this this you know
+[2368] hundreds of knobs available in in in
+[2369] Kubernetes right sometimes also like you
+[2372] know making it like super hard to use
+[2373] but also gives a flexibility to do a lot
+[2375] of stuff and I think around the time
+[2376] there were every single day there would
+[2379] be a startup that would spawn up like
+[2380] you know was doing something around
+[2381] Kubernetes right like u and then I don't
+[2384] know if it was the difficulty of uh you
+[2387] know getting your head through
+[2389] Kubernetes had something to do with that
+[2391] but Um uh it definitely also you know
+[2394] had had product market fit and uh you
+[2396] know just uh just took off and I think
+[2398] like pretty much every cloud provider
+[2400] also today provides native kind of
+[2402] solutions around those. Right. Right.
+[2405] Right. There there was also containerd
+[2407] that was originally part of docker right
+[2409] and u I think it was spun out um into
+[2414] another open source project and went
+[2415] under Linux foundation or CNCF or one of
+[2417] that like what led to that decision like
+[2419] why why was it spun out like that's
+[2421] right so so very much um so so the
+[2425] industry standing way back right so
+[2426] industry um meaning both vendors as well
+[2430] as customers
+[2431] um want to continue to get the benefit
+[2434] of containers containerization container
+[2436] the benefit of dockerization without
+[2438] feeling that they're going to get locked
+[2439] into a particular vendor or particular
+[2441] infrastructure right and so Kubernetes
+[2442] that was one of Kubernetes benefits as
+[2444] well even though it was created at
+[2445] Google it was given to the CNCF and thus
+[2447] had a had a vendor neutral governance
+[2449] structure around it um Docker while it
+[2453] was Apache v2 Docker engine while Apache
+[2455] v2 was still under the governance of
+[2457] Docker and so our our solve for that was
+[2461] to spin out containerd which was the
+[2463] core runtime engine and it's it's
+[2466] actually the piece that Kubernetes
+[2467] deploys to, right? Um and to this day,
+[2470] the Docker engine is built around the
+[2473] containerd subsystem, but that subsystem
+[2475] was given to the Linux foundation um a a
+[2479] peer group to CNCF called the Open
+[2480] Container Initiative, OCI. And so what
+[2484] that allowed was like, ah okay, now you
+[2486] know the industry kind of took a took a
+[2488] a breath and said, okay, great. So now
+[2490] we have Kubernetes and containerd.
+[2492] Kubernetes deploys to containerd. Docker
+[2495] engine is downstream from containerd and
+[2497] embeds it as part of the docker engine
+[2499] runtime. All of which is Apache v2 and
+[2501] then docker desktop is further
+[2503] downstream from that which then packages
+[2504] it all up into a developerf facing
+[2506] desktop product for Mac and for for
+[2508] Windows and even for Linux. And so um
+[2512] long-winded answer but it was an answer
+[2514] to like okay a Docker engine right now
+[2517] is under the governance of Docker Inc.
+[2519] Let's make sure the core engine is under
+[2522] a neutral governance so that the
+[2524] industry continues to support that
+[2526] standard runtimes, that standard
+[2528] protocol, that standard image format
+[2530] because what we didn't want staying even
+[2532] further back and and Jude, you know, you
+[2534] and I have been around, we know we've
+[2536] seen this movie before. We didn't want
+[2538] the industry to bulcanize or fragment,
+[2540] right? We saw this happen with the with
+[2542] the um with the Unix industry back in
+[2545] the day, right? So nothing that written
+[2547] to Solaris would run on AAX, would run
+[2549] on H pucks or anything else, right? And
+[2551] then unfortunately the Linux market had
+[2554] the same bulcanization or fragmentation,
+[2556] right? So nothing that's written for Red
+[2557] Hat will run on Ubuntu canonical will
+[2560] run on Sousay. And so we we, you know,
+[2562] we said, okay, third time's a charm.
+[2563] Like we have an opportunity in the
+[2564] container industry to have a homogeneous
+[2567] standard and runtime and wire protocol
+[2570] and image format such that we don't have
+[2572] this fragmentation that would certainly
+[2575] frustrate users and then create a lot of
+[2577] mess for vendors to have to support
+[2579] multiple different stacks and and and
+[2581] and fragments. And so by standardizing
+[2585] and putting Kubernetes under open
+[2587] governance and then by standardizing
+[2588] containerd and all the formats around
+[2590] the image and the wire protocol and the
+[2592] runtime that allowed this industry to
+[2595] this day by the way remain homogeneous
+[2597] such that the same container image
+[2599] that's written on docker desktop can run
+[2601] on Red Hat Open Shift can run on Amazon
+[2605] AWS a you know uh EKS can run on Azure
+[2609] AKS right all unchanged and you you
+[2612] can't say that about the previous
+[2613] generations of of application tech
+[2615] stacks
+[2617] making that shift happen right
+[2619] containerd going off spinning off its
+[2621] own project did you did you see kind of
+[2623] the hockey stick growth uh you know
+[2626] GitHub stars and all of the open source
+[2627] metrics that you see with containerd
+[2628] just like you saw with docker yeah it's
+[2630] a super popular project I mean they kind
+[2632] of they kind of go together right
+[2634] because docker again is dependent on
+[2636] containerd um and so you've got
+[2639] containerd but bio I think it's
+[2642] important to to be um clear though
+[2644] containerd is a is a subcomponent
+[2647] meaning by itself it's not necessarily
+[2649] developerf facing right it it's an
+[2651] APIdriven engine that is driven by
+[2654] kubernetes or any other orchestrator for
+[2655] that matter but it's it's used by all
+[2658] the major cloud providers right as their
+[2661] container engine whether they're
+[2662] deploying to kubernetes or something
+[2663] else and then like I said for for
+[2665] developer facing products like docker
+[2667] desktop it's also the engine um in
+[2670] docker desktop as well so it's an it's
+[2671] an embedded component
+[2672] Um and so we saw a lot of uptake from
+[2674] vendors in the ecosystem wanting to have
+[2677] a standardized uh component to deploy
+[2680] and run container images to and and
+[2683] right around that time like you know
+[2684] Docker Enterprises also sold off to
+[2686] Morantis like you know what was the
+[2688] business reason behind it like you know
+[2690] and and also at that point in time like
+[2693] you know what were the different revenue
+[2694] streams streams that you had in the
+[2696] company right like uh were there support
+[2698] models there were large companies
+[2699] already using it uh there's docker
+[2700] enterprise like talk to us a little bit
+[2703] about like you know revenue streams
+[2705] coming in where did the revenue come in
+[2707] why did you decide to sell it off to
+[2708] Mirantis right yeah so this is in this
+[2711] is 2019 right so in 2019 we we stood
+[2713] back and looked at the business and the
+[2716] the the not just the primary but the
+[2718] only source of revenue 99% of the
+[2721] revenue was from Docker enterprise
+[2724] and uh you know it was an okay business
+[2727] but we we stood back and said are we
+[2729] really getting the full potential of
+[2732] Docker, the brand, the technology and
+[2734] the developer love because the developer
+[2736] developer love was there but it was not
+[2739] um we did not wrap a business around it.
+[2741] We continued kind of open source, we had
+[2742] hub and we had you know free docker
+[2744] desktop at the time and so the the
+[2747] decision really came down to if we sell
+[2750] off the enterprise what we call the
+[2752] enterprise business and and it was
+[2753] really kind of an opscentric product if
+[2755] we sell off Docker Enterprise and all
+[2757] the pieces around that the customers the
+[2759] tech unfortunately some of the some of
+[2761] the team members um would we be able to
+[2764] stand back and restart the business and
+[2766] develop um not just more on the
+[2769] developer side but develop a commercial
+[2771] business around that because we had kind
+[2772] of a split brain. We had a lot of
+[2774] developer love and excitement but the
+[2775] monetization was happening over here
+[2777] with ops and infrastructure and it made
+[2780] for just a very difficult company to to
+[2782] operate and scale and so that was that
+[2784] was the driver of the decision was to
+[2785] like let's just focus on developers and
+[2787] to do so we need to unfortunately kind
+[2790] of carve out this this business and and
+[2792] hand it off to someone else. Got it.
+[2794] Then were you Docker as a company? Was
+[2796] it making money a lot of money from
+[2798] Docker Enterprise at that point? Because
+[2799] eventually Mirant is you know did did
+[2802] make a good amount of revenue right like
+[2803] uh uh so in in hindsight there there
+[2806] could have been also you know separate
+[2808] teams being spun out. Yes. But I think
+[2809] it looks like you want to keep the focus
+[2811] on on developer adoption at that point
+[2813] more than anything else. That's correct.
+[2816] And and we wanted to focus on developers
+[2818] because that's where the brand was
+[2819] strong and that's where the the bottoms
+[2821] up adoption was strong. And so we we
+[2822] envisioned we could also make a very
+[2824] very efficient go to market which which
+[2825] we did. Um but also uh Morantis did a
+[2829] fantastic job with the with the ops
+[2831] center product also because Marantis had
+[2833] a a great um foundation on which to do
+[2836] so. Meaning if you recall what they had
+[2838] at the time they were um they started as
+[2840] an OpenStack services provider and they
+[2842] evolved into an OpenStack product
+[2844] company. And so they had um this
+[2847] installed base of of ops relationships
+[2851] built on OpenStack that they were then
+[2853] able to come in and sell Docker
+[2855] Enterprise on top of and and to your
+[2857] point and to their credit they did a
+[2859] fantastic fantastic job with that. And
+[2862] at that point in time there was a this
+[2863] was a big reset in Docker right like uh
+[2865] and there was a you know big on the on
+[2868] the developers. um had the ICP changed
+[2871] from the early days in Docker and uh
+[2873] when at that point in time when the
+[2875] reset was happening like you know what
+[2877] was the direction that you set in the
+[2878] company like you know what kind of
+[2879] developers to focus on talk to us a
+[2881] little bit about like hey there's a big
+[2882] strategy shift like how do you get the
+[2884] company together
+[2886] yeah so it was it was a big shift
+[2887] because um at the time of you know we
+[2891] call it the we called it the split
+[2892] internally but um basically the the
+[2894] vestature of the the Docker enterprise
+[2896] business that business u the ICP and the
+[2899] value proposition was all very
+[2900] opentcentric. So Docker enterprise was
+[2902] sold to DevOps and ops. It was sold to
+[2905] um heads of infrastructure was honestly
+[2906] sold to big big companies. Um and we
+[2911] pivoted almost 180 degrees to uh a small
+[2914] developer team. ICP was developers and
+[2917] his or her manager um tools for just the
+[2921] inner loop of development and and some
+[2923] of the outer loop. And so while the core
+[2926] tech remained consistent, meaning the
+[2928] core open source tech, Docker Hub,
+[2931] Docker Desktop, um the way in which we
+[2934] packaged and priced and built a business
+[2935] around the tech was completely different
+[2937] from the previous Docker enterprise
+[2938] business that we split off in 2019. And
+[2941] so it did require kind of a complete
+[2942] rewiring of the company in terms of
+[2944] like, okay, who's the customer? What's
+[2946] their needs? What's their pain? Um how
+[2948] can we address that pain? How are we
+[2949] doing that? How are we addressing that
+[2951] pain better than anyone else in the
+[2952] market?
+[2953] Okay, given that um developers uh uh
+[2957] want to try things for free with no
+[2958] economic friction, great. Okay, on top
+[2960] of that, how do you then build a
+[2961] commercial business that's downstream
+[2963] from that? All of that had to be
+[2965] rethought. So, we we were fortunate that
+[2966] we had the brand, we had the developer
+[2968] love, we had some fantastic teammates
+[2970] that stuck around that that or that
+[2972] stayed with us that we didn't
+[2973] unfortunately have to sell off with with
+[2975] the rest of the business. And so, we had
+[2976] good core assets with which to start,
+[2978] but we had to redo the entire company
+[2980] from the top to bottom.
+[2983] Did did the ICP of the developer the
+[2985] kind of developer used it did that
+[2987] change from like you know back in the
+[2988] 2013 days um anything that you had to
+[2991] fundamentally change because you know
+[2993] early on it is also developer le like
+[2994] you know now you're going double downing
+[2996] on that like because in between there
+[2997] was a whole docker enterprise like but
+[2999] but when you made that shift what
+[3001] changed in those five six years right
+[3002] like from a developer how developers use
+[3004] and created you know applications and
+[3006] all of those right sure sure and and
+[3008] it's a it's a fair it's a fair question
+[3010] it's one it's an insightful one because
+[3011] in 2013 2014 you're dealing with the the
+[3015] early edge the early adopters in the
+[3017] market right and so you know command
+[3018] line focused Linux developers right very
+[3022] very much hardcore and by by 2019
+[3026] um the market had expanded so quickly
+[3027] and Docker was kind of known so well
+[3030] beyond just the early adopter markets
+[3032] that we had to make it much more
+[3034] addressable and accessible to a wider
+[3036] range of developers and so that meant um
+[3039] some of the sharp edges of Docker
+[3040] Desktop smoothed off. It meant uh more
+[3042] guey support for some uh categories or
+[3046] cohorts of developers. Um it meant more
+[3048] um documentation um to help folks get
+[3051] started in in kind of the the on-ramps
+[3053] and the the the kind of uh use cases for
+[3056] Docker as a developer tool. And so a lot
+[3058] went into just lowering um lowering the
+[3062] barriers of adoption and just making it
+[3064] much easier to use on a day-to-day basis
+[3066] for again a market that was six years
+[3069] six years on and had attracted you know
+[3072] not millions of not just millions of
+[3073] developers but tens of millions of
+[3074] developers by that point in time. And
+[3077] during this you know reboot or you know
+[3080] split as he called it right like um uh
+[3083] was there a morale challenge in the
+[3084] company? How do you keep the teams
+[3085] motivated like uh and then you know from
+[3088] a operations p perspective and a
+[3090] cultural research and a community trust
+[3092] perspective right like what are the
+[3093] things that change in the company and
+[3094] just how you operate at the company like
+[3096] you know did you change values within
+[3098] the company the hiring philosophy like
+[3100] in the focus areas like you know and
+[3102] that's you know there's all this
+[3103] technical things and what to focus on
+[3105] but also keeping the you know employees
+[3107] in the company motivated and then
+[3109] figuring out like you know what kind of
+[3111] people to kind of bring into the company
+[3113] and what kind of culture reset needed,
+[3115] right? Like it's it's a very very
+[3116] difficult thing to do, right? Like but
+[3118] talk to a little bit talk to us a little
+[3119] bit about like how did you navigate
+[3120] that? What are some insights that you
+[3122] like you know share us some insights
+[3123] that uh on those times? Sure. Sure. And
+[3126] it's it's a deep question and and and we
+[3129] could talk a lot about this and you know
+[3131] layer layered on top of the very
+[3132] disruptive change of a devestature and
+[3135] recapitalization layer on COVID which
+[3136] came three months after after the pivot
+[3139] of the company. Right. So, so lot of
+[3141] external pressures on the company and
+[3142] the employees and and I give the team so
+[3145] much credit for for powering through
+[3148] that. But, but to your question, yeah,
+[3150] we we reset the values of the company.
+[3152] We stood back and talked with the
+[3153] employees because you know, a lot of lot
+[3154] of pain when you go through and you wipe
+[3156] out everyone's stock and you reset. Um,
+[3160] and we we talked about what values we
+[3162] wanted to embrace. We we changed the
+[3163] name from values to virtues. Um, we we
+[3165] made it really clear that we were going
+[3167] to focus on developers. And so instead
+[3169] of um customer obsession, which was the
+[3171] first draft of of that virtue, we we
+[3173] tightened it to developer obsession,
+[3175] right? Just made it really clear that
+[3176] this is going to be the the the
+[3178] northstar of the of the business. Um and
+[3181] then to another part of your question,
+[3183] um there were some employees who just
+[3184] were frankly disappointed. Um recall
+[3187] that in 2019 at the time, Docker um had
+[3190] raised several rounds of financing and
+[3192] was looking like a later stage mature
+[3193] company at a at a valuation that that
+[3197] reflected that. And so many of the
+[3198] employees I joined in the prior year or
+[3200] two expected the company to be either
+[3203] purchased or go public and when you
+[3205] recap and all of a sudden it's a series
+[3207] A company with very very different
+[3209] riskreward profile that that can be
+[3212] unsettling to a lot of employees and and
+[3214] some opted out and no no judgment at
+[3216] all. They they thought they were joining
+[3217] a series C series D company all of a
+[3219] sudden they find themselves in a series
+[3220] A company. Um that that can be really
+[3223] frustrating. And so what we did just
+[3226] from a day-to-day basis is we were hyper
+[3228] transparent with the financials. We were
+[3229] hyper transparent with with the progress
+[3231] of the business um with the the new
+[3233] roadmap that we were developing and uh
+[3237] just made it clear that like um this is
+[3239] where we're going. Uh we think it's
+[3240] exciting. We think developers are a
+[3242] fantastic opportunity to build a
+[3244] business around. And um if you're with
+[3246] us, fantastic. God bless. And if you're
+[3248] not, no harm, no foul. And if you want
+[3250] to leave, um, thank you for your service
+[3253] and best of luck in your in your next
+[3254] endeavors. But it was a tough it was a
+[3256] tough first year, Jude. It was a very
+[3259] tough first year. And you talked about
+[3261] Northstar metrics, right? Like and you
+[3263] you talked a little bit about u it was
+[3265] customer obsession before and now it was
+[3267] more like the developer experience. So
+[3269] from a specific Northstar metric, what
+[3272] was it before and after the reset?
+[3275] Well, so before because we were focused
+[3277] on uh ops and big enterprise customers,
+[3281] it was very much focused on kind of
+[3283] enterprise customer deployments um and
+[3286] uh the the financials around that. You
+[3288] can look at ARR and net net dollar
+[3290] retention and things like that. With
+[3291] with the the pivot and refocusing on
+[3294] developers, we started just earlier
+[3295] upstream with um uh active users, right?
+[3299] So Dow Mau wow or Dowo wow ma. So daily
+[3302] active, weekly active, monthly active
+[3305] became a a a very uh focused area of
+[3309] ours. And then you can you can you can
+[3310] pull those apart further, right? And see
+[3312] what your onboarding rates are and your
+[3313] your your retention rates are. And then
+[3315] of course downstream from that uh you of
+[3317] course have to account for and attract
+[3320] uh and drive ARR and drive net dollar
+[3322] retention. But we knew that if we didn't
+[3324] get developer love right on the front
+[3326] end of that, then the downstream metrics
+[3328] um wouldn't show up positively either.
+[3330] So and Amazon does a nice job of talking
+[3332] about input metrics and output metrics.
+[3335] And so we shifted the company to focus
+[3337] more on input metrics to make sure we
+[3339] were making developers happy that they
+[3340] were being productive that they were
+[3341] delighted to use the product believing
+[3344] strongly that we and we understood our
+[3346] model says that we got that right then
+[3347] the output metrics of AR and the dollar
+[3349] retention would follow.
+[3352] Uh and then uh what about the
+[3354] relationship with uh you know with the
+[3356] open source community u you know there
+[3358] was the whole talker desktop that you
+[3361] eventually wanted to monetize right like
+[3363] uh but with developer adoption you want
+[3365] to focus a lot more on open source
+[3366] developer facing features um what was
+[3369] what were your kind of some of your
+[3370] principles on things that you put into
+[3372] the product like you know what stays
+[3375] goes back into open source and then what
+[3377] stays in enterprise right like that
+[3378] doesn't go back into open source right
+[3380] right Um, so we we we we spent a lot of
+[3384] time talking about this internally and
+[3386] to to this day it it continues to be a
+[3388] very very rich topic of conversation but
+[3390] but this to simplify it we we we drew
+[3393] broad lines like this as a starting
+[3395] point. Let me emphasize this was not
+[3396] like holy rit right but it was like okay
+[3399] let's assume this framework but before
+[3401] we make any decisions let's go validate
+[3403] this and if we have to move the line
+[3405] we'll we'll do so. And so the the
+[3407] framework became anything any feature or
+[3417] source and this was the Docker Clyde the
+[3419] Docker engine runtime the Docker image
+[3421] format right and we can go through all
+[3423] those things that a developer touches
+[3425] and addresses day-to-day
+[3428] uh and and works on day-to-day and then
+[3431] for the second category was there's a
+[3434] set of uh capabilities and features that
+[3436] large companies need in order to adopt
+[3438] technologies that we found most
+[3440] developers don't care about or care very
+[3442] little about and this was things like
+[3443] single sign on SSO role bakes access
+[3446] control um control plane technologies
+[3448] for audibility and manageability of
+[3450] thousands of desktops at scale like
+[3452] there's a lot of capabilities in in that
+[3454] bucket that most developers because it
+[3457] doesn't impact their dayto-day and it's
+[3459] not developerf facing features and
+[3461] functionality that they don't care about
+[3463] and so as a starting point we're like
+[3465] hey is Is this a developer facing
+[3466] feature capability? Yes, no. Um if if
+[3470] not then we think it stays closed
+[3472] source. Okay, let's go check that before
+[3473] we kind of pull the trigger. That was in
+[3475] general the algorithm too. But again, we
+[3477] we didn't use it blindly. we we vetted
+[3479] this and just use that as a starting
+[3481] point for those conversations and then
+[3483] building up the engineering or also from
+[3485] that point right like the kind of people
+[3486] that you hired like uh you know I'm sure
+[3489] there was some some changes that were
+[3492] probably made say hey here is the
+[3493] profile of the people that we need to
+[3494] hire from now on given the given the big
+[3496] shift uh in in uh in how Docker is going
+[3499] to evolve like you know you know
+[3501] primarily on focusing on developer
+[3502] experience right like and also community
+[3504] re-engagement developer relations uh
+[3506] what was the big shift uh you know up
+[3508] that point and you know how kind of
+[3510] because getting the right kind of people
+[3512] into the company at the right time is
+[3514] also important but what are some of the
+[3515] big things that change there and that
+[3517] that u uh you know eventually you
+[3519] thought like you know work daily was a
+[3521] really good decision at that point in
+[3522] time. Yeah. Yeah. Well, one of them one
+[3524] of you you hinted at already which is um
+[3527] they they they had to be excited about
+[3529] developers, right? they had to be
+[3530] excited about solving problems for
+[3532] developers or improving the developer
+[3534] experience. Um that they could see that
+[3537] that containers were just becoming a
+[3540] part of the fabric of the end to end
+[3541] SDLC. Um and in doing so that gave us a
+[3544] rich opportunity to build additional
+[3546] capabilities um in and around in and
+[3548] around that environment. So that was
+[3550] kind of that was kind of point one.
+[3552] Point two, uh, which we haven't talked
+[3554] about yet, but with the the onslaught of
+[3557] COVID, um, we were a 60/40 hybrid
+[3560] company, meaning 60% in the office, 40%
+[3562] out of the office before CO. When CO
+[3564] hit, of course, everyone went home and
+[3567] if you all recall 2020, we didn't know
+[3569] how long CO was going to last. And we
+[3571] were then at that point, by that point,
+[3573] we were an early stage series A startup
+[3576] with not a lot of cash in the bank. So,
+[3578] we sold off all our offices. So, so we
+[3581] kind of burnt the boats and went all in
+[3582] on the remote first. And so that became
+[3585] a second really important hiring
+[3586] criteria was that um are you excited by
+[3589] and value the flexibility and can work
+[3592] well and effectively with colleagues in
+[3594] a remote first environment. So those
+[3596] were two and then of course you know
+[3597] more details from there too J but like
+[3599] like are you excited about um solving
+[3601] problems for developers and delighting
+[3602] developers wasn't just developer
+[3604] satisfaction but like delighting
+[3605] developers and two is um are you excited
+[3608] by and can work effectively in a remote
+[3610] first environment I mean uh you know at
+[3613] that time obviously you know remote was
+[3615] the only way to go given given the state
+[3617] of things during covid um uh you know
+[3620] early days I remember during the covid
+[3622] times like you know people just had
+[3624] nothing to do there was lockdown down
+[3625] and uh you know and you know as
+[3627] developers you you would see like uh
+[3629] every metric in the company going up
+[3631] there were more check-ins there were
+[3632] more PRs there's more code getting stuff
+[3634] sh stuff stuff was getting shipped
+[3636] faster and then you move forward uh you
+[3639] know a few months later you know
+[3640] restrictions kind of slowly went down
+[3642] and people had more things to do and
+[3644] then productivity slowly started to dip
+[3647] again right and uh and now you see a lot
+[3649] of companies getting trying to get
+[3650] people back into the office uh what were
+[3652] some of the things that you saw in in in
+[3654] Docker
+[3655] uh you know similar trends like talk to
+[3657] us a little bit about that. Sure. I mean
+[3660] we we actually saw a really interesting
+[3663] thing two one of which won't be
+[3665] surprising or maybe maybe neither
+[3667] surprising but one is the 60/40 model
+[3669] before co before we went all in on
+[3671] remote first um didn't really make
+[3675] everyone happy and in fact the 40%
+[3677] really were unhappy because they were
+[3679] not getting the water cooler talk. they
+[3680] weren't getting the subtleties of
+[3682] leaning over the shoulder of their
+[3683] colleagues. And so they always felt like
+[3685] second class citizens, right? Cuz they
+[3686] were zooming in when you had a
+[3687] whiteboard and everyone else jumping
+[3689] around and and having a, you know, it
+[3691] seemingly a very engaged conversation.
+[3692] They always felt like they were looking
+[3693] in from the outside. So when when we
+[3695] went to remote first for everyone, even
+[3698] the playing field, we actually saw
+[3700] satisfaction go up across the board cuz
+[3702] like everyone's on the same playing
+[3703] field and that led to better meeting
+[3705] hygiene, that led to notes being taken,
+[3707] agendas being sent out. um everyone was
+[3710] from the same playing field. So so you
+[3712] didn't have this class of different
+[3714] class of employees. Everyone was a
+[3716] single class. So everyone got everyone
+[3717] was happier actually. Second thing is
+[3720] which you could have seemed kind of
+[3722] forward-looking but in the hurly burly
+[3724] of of co we didn't fully appreciate is
+[3727] um we were able to hire fantastic talent
+[3730] from anywhere from around the world and
+[3732] we had folks who had been using Docker
+[3733] forever that they just loved the product
+[3735] and it was like their dream to work at a
+[3737] company with a product that they loved
+[3739] but they were nowhere near um San
+[3741] Francisco Bay area or they were nowhere
+[3743] near our European hubs such they never
+[3745] even bothered to apply but now that we
+[3747] are hiring remote they applied and we
+[3749] just we found this fantastic fantastic
+[3751] talent. And then third, again probably
+[3753] no surprise is employees ability to
+[3756] manage their work life balance to take
+[3758] their kids to school but then come back
+[3760] and log in and and um and and you know
+[3764] knock out that poll request or have a
+[3766] have a a huddle with their colleagues
+[3768] like that flexibility really really
+[3770] really really um improve employee sat.
+[3772] So uh we actually found the remote first
+[3775] really really worked really really well
+[3776] for us. Now, now as backdrop, maybe one
+[3779] more comment just to set context, Docker
+[3781] had hired a lot of its early team
+[3784] members and continue to hire uh
+[3786] particularly on the technical side out
+[3787] of the open source community and as
+[3788] you're as you know Jew from open source
+[3791] like open source is kind of distributed
+[3792] first anyway because you have people who
+[3794] are interested in a project contributing
+[3795] to that project from around the world.
+[3797] So that that DNA of operating in a
+[3799] remote model it's kind of was kind of
+[3801] built in particularly to the engineering
+[3803] team from from the get-go. So going
+[3805] allin remote first wasn't as big a leap
+[3807] from say a company that didn't come from
+[3809] open source roots and didn't have as
+[3810] many open source contributors in the
+[3812] company itself. And during that phase
+[3814] like you know getting a lot of remote
+[3816] developers like you know um and from all
+[3818] parts of the world uh did did it affect
+[3822] the kind of road map the kind of
+[3823] contributions that were coming in um was
+[3826] that on a positive or on a negative side
+[3828] um because you know culture you know is
+[3831] also sometimes uh you know local right
+[3834] like and if you look at barrier
+[3835] developers they're all talking to each
+[3837] other they're you know at conferences
+[3838] and they're you know living and
+[3840] breathing the same thing and then you go
+[3841] to another part of the world people just
+[3843] think differently. Did that change the
+[3845] way the the whole open source u kind of
+[3848] road map uh was molded after that?
+[3851] I don't I don't think so because um from
+[3853] the beginning even before the split in
+[3856] 2019
+[3857] um we had like I said before we had a
+[3860] 60/40 split right so we had
+[3861] representation of engineers um in Europe
+[3864] right in France in the UK um in in Asia
+[3869] um as well as North America um including
+[3871] the the Bay Area um so so when we when
+[3876] we went all in on developers in 2019 and
+[3879] then in 2020 When we went remote first,
+[3882] we didn't see that that um disrupt that
+[3885] much disruption in call it the type or
+[3889] the taste of the features and the the
+[3891] velocity of the features from the
+[3892] different different developer
+[3893] communities we had in the company. Got
+[3896] it. And then at that point in time like
+[3898] there was this big focus on you know
+[3900] developer experience, developer adoption
+[3902] but at some point like you also needed
+[3904] to know that hey how would you
+[3906] eventually monetize that like know
+[3908] docker desktop was one thing that came
+[3909] out of that. What were the other things
+[3911] that came like you know obviously you
+[3912] know think about containers it is you
+[3914] know running pieces of code you think
+[3916] about like you know running containers
+[3918] like cloud compute versus you know
+[3920] docker desktop like what what were the
+[3922] options on the table and then eventually
+[3924] why was docker desktop as one of the big
+[3926] things that you want to monetize
+[3928] right so it it it's all of the all what
+[3931] I'm going to share next stays true to
+[3934] the north star of developer obsession
+[3936] right so that virtue stayed true and
+[3938] what we what we realized was that we
+[3942] could expand the the surface area that
+[3946] that we provided to developers beyond
+[3948] just the the command line, beyond just
+[3949] docker engine and docker desktop. And so
+[3951] the products that we provided over the
+[3953] years um were additional developerf
+[3957] facing products that were adjacent to
+[3958] the desktop functionality. So what's an
+[3960] example of that? So um we launched a
+[3962] product obviously docker hub already
+[3963] existed right? So you had a marketplace
+[3966] for um containerized applications that
+[3969] complemented the desktop experience and
+[3971] so that was existed and there's ways in
+[3973] which we could monetize the the call the
+[3976] most aggressive consumers of that. Um we
+[3978] put in at some point uh not at some
+[3980] point we put in at the at the tail end
+[3982] of 2020 um uh rate rate rate limits
+[3986] because we had some users who were
+[3987] hammering hub you know million pulls a
+[3989] day right and it's like okay wait a
+[3991] minute like that's that's not a
+[3992] developer motion right there that's some
+[3994] bot that's hammering or some CI that's
+[3996] hammering hub um but we left the but
+[3999] that monetization of like less than.1%
+[4002] of hub traffic um subsidized the rest of
+[4005] hub for everyone else right so so
+[4007] continue to remain and free for the
+[4008] individual developer or the small
+[4009] developer team. But that's an example of
+[4012] a complimentary service, the DockerHub
+[4014] service that complement a desktop. But
+[4015] over the years then you saw um for
+[4017] example uh helping developers make sure
+[4020] that they were building container images
+[4022] with uh libraries and layers that were
+[4025] not compromised with security
+[4026] vulnerabilities. And so that led to
+[4028] what's called Docker Scout, which
+[4029] enabled developers to understand, okay,
+[4031] is this library um susceptible to a to
+[4035] an exploit to an attack? Um and and we
+[4038] put that right in the you know right in
+[4040] the the the plugins to Visual Studio
+[4042] Code. So it was right in the command
+[4043] line even before the image was built
+[4044] they could inspect the package and
+[4046] understand if if it presented a
+[4047] vulnerability. We launched a product
+[4049] called Docker BuildCloud which um for
+[4051] developers that were using underpowered
+[4053] laptops allowed them to accelerate the
+[4055] builds in the cloud um and if they were
+[4058] part of a team environment to cache the
+[4060] layers in the cloud such that the team
+[4061] benefited from using a cloud-based
+[4063] building environment. and and and to
+[4065] then to your your observation, we also
+[4067] monetize desktop. And so the observation
+[4069] there was that there were large
+[4071] organizations that were getting a lot of
+[4073] benefit from desktop building
+[4074] applications that were running their
+[4076] businesses um that uh would be very
+[4079] willing to pay a reasonable price for
+[4081] that local desktop experience. And so we
+[4084] set a threshold like hey if you're above
+[4085] this number of employees and this much
+[4087] revenue um and and and you're using
+[4090] docker desktop do build applications
+[4092] that are running your business meaning
+[4093] like demos fine you know sales sales
+[4096] presentations fine education training
+[4098] fine but if you're using it to build
+[4100] apps that are production that are in
+[4101] production running your business then uh
+[4104] you need to pay and so that was really
+[4107] geared towards um not changing the user
+[4110] persona. the user persona was still the
+[4112] developer but it was the managers and
+[4114] there's manager manager managers who
+[4116] were sponsoring desktop use docker
+[4118] desktop use across the organization um
+[4121] that we asked for budget to basically
+[4123] continue funding the investment in
+[4125] features and capabilities to make the
+[4126] product more and more call it enterprise
+[4128] ready and enterprise serviceable at
+[4130] scale and uh around that time also there
+[4133] was licensing changes that happened to
+[4135] desktop right like uh what was the kind
+[4137] of licensing before that after that like
+[4139] was there a lot of backlash how was that
+[4140] managed I I don't think the backlash
+[4142] lasted long but at that point in time
+[4144] there there wasn't I think the popular
+[4145] plant is still sold which which was
+[4147] evidence that developers still loved
+[4148] this right but talk to us a little bit
+[4150] about like how do you think about
+[4151] licensing changes um and and also you
+[4154] know I believe this was a perceived
+[4156] model licensing like what are the
+[4157] options on the table again at that point
+[4158] in time um and and how do you navigate
+[4161] that phase yeah yeah so um what folks
+[4166] what many don't know is that while
+[4167] docker desktop embeds many open source
+[4169] components
+[4170] Docker Desktop itself as an overall
+[4172] product never was open source. It was
+[4174] all as a commercial product. Now it was
+[4176] all as a commercial product available
+[4177] for free. And so getting to your
+[4179] question, the change in license um
+[4182] wasn't a change from open source to
+[4184] commercial. It was commercial and it was
+[4186] a change um from free for everyone to
+[4190] free for a subset of the market and
+[4191] above those thresholds that I mentioned
+[4193] earlier above a certain revenue limit
+[4195] and above a certain employee limit. um
+[4197] if you're using Docker Desktop to create
+[4199] commercial applications then you had to
+[4201] pay on a per se basis and so yeah to
+[4204] your point whenever there's a change in
+[4208] free to pay for so free for everyone to
+[4211] free for many but not for everyone um I
+[4215] should say it's still free for most I
+[4217] should say that really clearly like
+[4218] still most of docker desktop usage today
+[4221] like 80 90 some% of docker desktop usage
+[4223] is for free okay um but but that 10 20%
+[4227] if you're inside the organization,
+[4229] you're like, "Oh, wait a minute. Now I
+[4230] have to pay for this." And we were very
+[4231] very cognizant of that. And so we priced
+[4233] it um very economically so that it would
+[4237] be like a couple lattes a month sort of
+[4240] thing. It's like a latte a month. And so
+[4242] most managers looking at the price are
+[4243] like, "Boy, I get so much productivity.
+[4245] I get so much velocity from my
+[4247] developers using uh Docker Desktop
+[4250] locally. Is it worth a cup of coffee a
+[4253] month?" Like absolutely. So there was
+[4255] push back. Um, and I'd say the noise
+[4257] lasted for a monthish plus minus, but
+[4261] within a couple months things had calmed
+[4263] down. Man, the managers were always calm
+[4265] about it. It was more kind of the the
+[4266] developers who felt like there's there
+[4268] had been a bait and switch um uh that
+[4271] were frustrated. But look, we went out
+[4273] of our way to explain like this allowed
+[4275] us to invest in the product. It allows
+[4277] us to invest in the open source. And on
+[4279] a regular basis, at least a quarterly
+[4281] basis, we would be doing community all
+[4283] hands and standups to show that this
+[4286] modernization of desktop was leading to
+[4288] more developer value at a faster clip.
+[4290] We were able to hire more engineers um
+[4293] and and really increase the feature
+[4294] velocity not just for commercial
+[4296] features but for open-source and free
+[4298] features as well. And then how big is
+[4300] the uh addressable market for the Docker
+[4303] user base? Because I think like um uh
+[4305] GitHub pro probably is that uh one
+[4308] product that pretty much captures uh you
+[4310] know every single developer out there,
+[4312] right? I'm I'm sure there's people you
+[4313] know and especially with with the
+[4314] popularity of open source. I think back
+[4316] in the day they also announced I think
+[4318] it was probably around the 2020ish time
+[4320] like hey they hit 100 million uh users
+[4322] on GitHub. um recent uh GitHub universe
+[4326] they also put the goal towards going
+[4328] towards a billion developers but that's
+[4331] that's developers that uh ever have
+[4334] written any piece of code it could be
+[4336] starting from early elementary school
+[4338] kids to you know non-professional
+[4340] developers but but uh your docker user
+[4343] base itself right what is that
+[4345] addressable market and how much of that
+[4347] was already captured when the when the
+[4349] split happened and then how much of that
+[4351] uh is captured at this point in
+[4354] Yeah. Yeah. So, lots of lots of
+[4356] questions in there. So, um
+[4359] uh the overall developer market as you
+[4362] said, let's call it kind of back-end
+[4363] developers, right? Because that's
+[4364] Docker's traditional use case, although
+[4365] it is used by by many other developer
+[4367] cohorts. The classic kind of back-end
+[4369] developer and you already kind of
+[4371] qualified out some of the other code
+[4373] that's being committed on GitHub. Um is
+[4376] is on the order of 30ome million uh
+[4379] developers worldwide. Um and that is
+[4382] growing very very aggressively like you
+[4385] know seven to to nine percent
+[4387] year-over-year um it's one of the
+[4389] fastest growing careers and with AIS
+[4392] which I know we're going to talk about
+[4393] it's you know it's growing even faster
+[4394] now um but that was going to grow to 45
+[4396] million developers by the end of the
+[4398] decade right so that's the ramp pretty
+[4399] good ramp right from 30 some million to
+[4401] 45 million um Docker uh when we did the
+[4405] split it was um right around 10 million
+[4408] or so um developers
+[4410] And I know recently this year uh we
+[4414] crossed over 26 million uh devel
+[4416] registered registered developers with
+[4418] us. And so we captured a good chunk of
+[4421] that call it backend server side server
+[4423] side developer market which again is a
+[4425] subset of what we believe the overall
+[4427] developer opportunity is. And then when
+[4429] you're getting you know capture a
+[4431] significant piece of that uh you know
+[4434] addressable market obviously you want to
+[4436] get them to you know use more and more
+[4438] right and then so in the pipeline like
+[4440] you know what where are the big things
+[4442] saying hey are the new product lines
+[4443] that you're thinking about are the new
+[4444] features saying hey yes we captured a
+[4446] huge amount uh you know of that
+[4448] developer market already but you know
+[4450] let's let's add more value added stuff
+[4452] that they can you know developers can
+[4453] get more value out of that right like u
+[4456] first piece I think you already captured
+[4457] like you
+[4459] what are the new things that that that
+[4460] were on the horizon when when in the
+[4462] last few years for example right right
+[4464] so we've already talked about kind of
+[4466] additional stages of the SDLC right so
+[4468] additional services around the inner
+[4469] loop as well as the outer loop and we we
+[4471] talked about docker scout for for
+[4473] security uh docker buildcloud um and um
+[4478] additional capabilities in docker
+[4479] desktop to kind of help help stand up
+[4482] new use cases and new services um not to
+[4485] jump on the meme in the moment and I
+[4486] know we're going to talk about this
+[4488] soon. But um clearly in the last 24
+[4492] months um helping developers be
+[4494] successful with AI in two in two
+[4496] different vectors. One be successful um
+[4500] building AI applications. So
+[4502] applications that are taking advantage
+[4503] of LLMs, but then also AI under the
+[4506] covers how does it help developers to be
+[4507] more productive? And so Docker's been
+[4509] investing in in both of those for the
+[4511] last 24 months. Um, and you're seeing a
+[4514] lot of that in the last in the last uh
+[4516] in the last six months or so come to
+[4518] market. Uh, things like uh MC MC MCP
+[4521] support native in Docker Desktop as well
+[4523] as Docker Hub. Um, you're seeing it come
+[4525] to light in agent agents that are
+[4528] embedded uh throughout the product line,
+[4529] whether it's the command line, desktop,
+[4531] on the on the website, web properties to
+[4533] help developers uh discover containers,
+[4536] um, use uh, Docker most effectively to
+[4539] help them create with simple language
+[4541] uh, Docker files that have all the best
+[4543] practices built in in terms of layering,
+[4545] best practices around security, smart
+[4547] default in in the Docker file. Same
+[4549] thing with with Docker compos files. So
+[4551] um I guess that's both a that's both a
+[4554] breath and depth answer right so build
+[4556] out additional buildout of services
+[4558] around the SDLC inner and outer loops
+[4561] and then within those services
+[4562] particularly investments in AI to help
+[4564] developers and frankly democratize
+[4567] docker to make it easier for developers
+[4569] who might not be Linux gurus right who
+[4571] might not know the command line who
+[4572] might not want or might not know bash
+[4574] and thus understand docker files um so
+[4577] thoroughly uh help them take advantage
+[4579] of the product and all power of the
+[4580] product as well. Again, come 2021, Chad
+[4585] ZBD comes along, right? And uh you know,
+[4589] it just changes the way people think
+[4590] about software, right? You know, early
+[4593] kind of use cases if you see it was like
+[4594] mostly conversational stuff, right? Like
+[4596] and even those those kind of
+[4598] conversational bots like you know it was
+[4600] night and day difference between what
+[4602] was there before and what was the world
+[4603] after Chad GB came about. Um however
+[4606] like you know I think in the early days
+[4608] still a lot of hallucinations and that
+[4610] does not completely gone away and um and
+[4613] you you know developers try to use this
+[4615] and you know you know instead of going
+[4616] and while while you're doing development
+[4618] like you know right before the chat jv
+[4620] days it was like hey I need to know how
+[4622] to use this library you go and you know
+[4624] go to stack overflow and you know find
+[4625] out examples and use them and now you
+[4628] had this uh interface via chat GBD which
+[4631] would essentially behind the scenes was
+[4633] going and figuring out like you know
+[4635] everything and then presenting you a
+[4636] piece of code that you can go and start
+[4638] and build and start and execute but the
+[4640] hallucinations made it harder and harder
+[4642] to do that like uh but the way people
+[4645] and I think cursor has come and changed
+[4647] a little bit of that right like u not
+[4650] it's not trying to say give it a it is
+[4652] trying to think of a way you know mold
+[4654] you into using it just like a developer
+[4657] would like because as a developer you
+[4658] would never write a piece of code and
+[4660] just ship it right you would you you
+[4661] write a piece of code you test it
+[4663] locally you would give peer-to-p peer
+[4665] developers they would code review it
+[4666] back and forth and eventually it would
+[4668] get into a state where okay now I can
+[4669] ship this right and and um that's also
+[4672] fundamentally changing the way
+[4674] developers are trying to build test and
+[4676] ship code and then right and then and
+[4680] what's the role how do you see this like
+[4682] this big shift happening it's still very
+[4684] early days right like um uh tell me tell
+[4686] me a little bit about like how you think
+[4688] uh things are going to change and and
+[4690] how's this also affected uh you know
+[4693] more recent uh way people have been
+[4695] using containers a docker as well. Sure.
+[4698] Sure. So, so maybe maybe to start
+[4701] there's there's two two things that I
+[4702] think are pretty exciting right now. One
+[4704] is um you're seeing the industry and and
+[4707] developers themselves realize that that
+[4710] uh AI genai is more than just code
+[4712] completion, right? That there's more
+[4714] things that Genai can do to help
+[4716] developers um honestly beyond just the
+[4719] IDE as well, right? Beyond just the text
+[4721] editor. um uh there's tests to write,
+[4723] there's tests to validate, there's
+[4724] observability to to instrument your your
+[4727] application, um there's CI and build to
+[4731] debug, right? And and Agentic uh AI and
+[4735] and and Genaii is showing that it can be
+[4737] useful in those in those um activities
+[4741] that are outside just writing code on
+[4743] the command line. And so I think um I
+[4746] think the the world's the world's
+[4748] perspective and and developers
+[4749] perspectives is expanding quickly in
+[4751] terms of what this technology is capable
+[4753] of. Second is which I think is also very
+[4755] exciting and it's it's a little bit
+[4757] related is that we are not we're in the
+[4759] midst of um creating interfaces around
+[4762] the AI not just for humans but we're
+[4765] creating interfaces for agents right for
+[4767] automation because with the ability to
+[4771] spin up you know tens hundreds of agents
+[4774] per developer per human developer all of
+[4777] a sudden it's like okay well what are
+[4778] the interfaces that those agents need in
+[4780] order to be successful. So in some
+[4782] sense, you know, we talked about
+[4783] developer obsession as Docker's
+[4786] Northstar from 2019. Um, developer now
+[4789] includes that developer obsession now
+[4791] includes not just the human developer,
+[4793] but the agentic developer as well. And
+[4795] what does that persona, what does that
+[4797] agent persona need in terms of
+[4798] interfaces, support, tooling,
+[4800] documentation, right? Go on down the
+[4802] list. Treat them like a first class user
+[4805] and customer, but that's very different
+[4807] from a human developer, right? I think I
+[4810] think that is um that's a really really
+[4812] exciting exciting evolution of our of
+[4815] our industry and so we're look I I'm a
+[4818] you me all us deep in this we're techno
+[4820] optimist right so I think this is a
+[4822] fantastic fantastic time for our
+[4824] industry and and the fears about
+[4826] replacing developers or developer jobs
+[4828] going away I think it's unfounded I
+[4830] think there will be a transitional
+[4832] period as there always is with these
+[4833] technology shifts but if you look over
+[4835] industry shifts over the history of of
+[4838] you know hundreds hundreds of years of
+[4840] of of change. Every time there's one of
+[4843] these industry shifts, um it expands the
+[4846] market. It expands the the the demand
+[4848] for the value that that market creates.
+[4851] While yes, having short-term transition
+[4853] periods that are that are not pleasant,
+[4855] that can be painful. So, I think we're I
+[4857] think we're in a great time of market
+[4858] and I think the Genai wave um it feels
+[4861] unlike any other wave that you and I
+[4862] have been participants in the past and
+[4864] and that's really that's really
+[4865] exciting. Yeah, this is probably one of
+[4867] the biggest shifts in how people think
+[4869] about uh you know building code,
+[4871] building software.
+[4873] I think after the cloud I think this big
+[4875] the you know cloud came out when AWS
+[4877] came out with this thing right. I think
+[4878] this is a a big big shift in and I think
+[4881] that's also changed the way
+[4884] uh how today's developers who come and
+[4886] start doing coding first time that they
+[4888] even think about writing code right like
+[4889] u so you know I think I started uh
+[4893] professionally started with C right and
+[4896] uh even when you're you could see you
+[4898] know assembly blocks of uh code you know
+[4901] within C codes right like uh and then
+[4902] you still had to understand a little bit
+[4904] of what was going on there right and um
+[4906] as a as a good programmer you were you
+[4909] were expected to understand every single
+[4910] piece of line that was actually written
+[4912] there like you know and as a good
+[4913] programmer u you know you write
+[4916] something and run it at least once to
+[4918] the debugger right like u that's kind of
+[4920] changed right now right when people
+[4921] think like this whole thing about life
+[4923] coding you you you have an idea and you
+[4926] want to get it to production you go and
+[4928] run this thing you get a piece of code
+[4931] most likely no one's you know running
+[4933] these things through debuggers right
+[4934] like hey I think this works let me give
+[4936] it a few inputs few outputs it works And
+[4938] then you hit production happy path is
+[4940] great and when then things go wrong
+[4942] eventually they will the whole debugging
+[4944] scenario because this is pieces of code
+[4946] that
+[4948] yes they they actually check this piece
+[4950] of code in but they haven't really
+[4951] written it from scratch and you know
+[4952] intuitively figuring out hey what is
+[4954] this thing doing u how do you how do you
+[4957] kind of see that coming along you know
+[4958] on one side you want more adoption more
+[4960] people to use it's going to change the
+[4962] way people do things but uh uh and and
+[4965] then but understanding what you actually
+[4966] did right like tell me a little bit
+[4968] about your your thoughts on this. Yeah,
+[4970] 100% 100% and and um and look it it's
+[4974] first off to state the audience that's
+[4975] super early days, right? Like vibe
+[4977] coding as a term was coined in February.
+[4979] So what three three four months ago,
+[4981] right? So so let's just all acknowledge
+[4983] that like 3 4 months is is a brief
+[4986] period of time in the history of our
+[4987] industry. But but and it's and it's
+[4989] moving quickly, right? Um and and let's
+[4991] call out the good let's call out the
+[4992] good things first, right? um that it
+[4996] does make you know tools like bolt and
+[4997] and cursor winds they like it makes it
+[4999] much more accessible to a wider range of
+[5001] developers or maybe even folks who have
+[5003] not traditionally considered themselves
+[5004] developers right and and you can spin up
+[5007] prototypes and things that people can
+[5008] react to really really quickly and
+[5010] that's exciting that just help that
+[5011] helps increase the velocity of ideiation
+[5014] the velocity of feedback on a thing
+[5017] right um and and you've already you've
+[5019] already said this like and if if left
+[5022] unchecked ju just pushing that through
+[5025] this SDLC into production. It's not
+[5027] going to end well for anyone, right? And
+[5028] so we're already seeing this this
+[5031] realization of like, oh, great great for
+[5032] prototype, great to bring many more
+[5034] personas that weren't classic developers
+[5036] along, right? Um versus, you know,
+[5039] writing documents and waterfall and PRDS
+[5041] and design docs and all. It's like, no,
+[5042] no, let's get in and build a prototype.
+[5044] um we're learning that like oh okay well
+[5046] maybe uh before we kind of go further
+[5049] once we have the prototype let's start
+[5051] um going back to the agent and saying
+[5053] hey uh I want to see this with this type
+[5056] of this type of architectural design
+[5058] principles and um please write unit
+[5061] tests and uh integration tests and and
+[5063] end tests for me for this thing right so
+[5066] so um we are going to see a a evolution
+[5070] I'll say of the current vibe coding
+[5072] moment that doesn't take away from the
+[5075] velocity and the democratization of
+[5077] participation from all these
+[5078] non-developer personas which which is
+[5079] very exciting and and and okay, we need
+[5082] another layer or another um another uh
+[5087] cycle or round in the conversation that
+[5090] asks the agent to okay, let's let's do
+[5092] our diligence and make sure that we're
+[5094] not going to put something in production
+[5095] that's going to result in in a lot of
+[5097] pain for a lot of people. So it's early
+[5099] and and I but I think it's it's going in
+[5101] the right direction and yes part of
+[5103] learning is failure and learning from
+[5104] those failures and and and and failing
+[5106] forward and then see uh at least for me
+[5109] right like part of what uh excited me as
+[5112] a developer was the the passion that you
+[5114] got around developing and because see
+[5117] end of the day like you know I I feel
+[5119] like you know software development
+[5120] coding is still an art like and when you
+[5121] do something and when you see that work
+[5124] you get excited about it like and uh
+[5125] nothing better right but but But but
+[5128] because you have put long hours into it
+[5130] and um now AI has obviously made made it
+[5134] easier. you have an idea in mind and you
+[5136] can take it to production very very
+[5137] quickly or or you can can see you know
+[5139] the the piece of code that whether you
+[5141] write by hand or you partially wrote by
+[5143] hand um and what AI generated like you
+[5146] know seeing it in in in live in
+[5148] production uh or in action is is
+[5150] definitely very very uh pleasing to uh
+[5153] to have right but all of this has been
+[5155] trained you know AI hasn't gotten good
+[5158] because there's like millions of lines
+[5160] of uh uh billions of lines of source
+[5162] code billions of files on GitHub that
+[5164] was available that you know you know
+[5167] chat GBD could train on but now there is
+[5170] less and less of that happening right
+[5172] like uh because people the the amount of
+[5174] new fresh code the way people think
+[5177] about writing code and I I'll give you
+[5178] example right if you if you remember
+[5180] like the whole MIT hackmom stuff right
+[5182] like uh the need of the day was
+[5185] extremely low memory uh footprints and
+[5188] then lot of coding that goes in kind of
+[5191] bit mangling like you um all of that
+[5194] stuff which people don't do that today
+[5196] right like after the C early Java days
+[5198] like you know I I don't I don't even
+[5199] know like you know if rust has like
+[5201] stuff around doing bit managing right um
+[5203] now when there was an equivalent for
+[5205] pearl right remember the pearl like make
+[5207] the most efficient single line of pearl
+[5210] I remember those days where it's like
+[5211] okay this thing that no one else can
+[5213] read but it can do everything right
+[5214] exactly so excuse me right but but uh um
+[5218] the the style of things that people uh
+[5222] you
+[5223] write code also changed, right? But now
+[5225] there's less and less of that, right?
+[5226] like uh and and which means that is AI
+[5229] yes AI can learn from itself and do but
+[5231] but without like this human input on new
+[5234] types of ways to do do things right like
+[5236] do you think like we we'll we'll hit a
+[5238] roadblock and you know any ideas on like
+[5240] you know how we can encourage people to
+[5241] still write code and then use uh and
+[5244] bring in the more of the creativity
+[5245] right like uh and that's where AI is
+[5247] also going to get better because you
+[5249] know in a sense AI is only as good as
+[5251] like you know the the input from humans
+[5253] that it gets right like yes you can do
+[5255] all the data and all of those thinks
+[5256] that those arguments are there but tell
+[5258] me a little bit about your thoughts on
+[5259] that. Yeah. Yeah. No, I think I think
+[5262] you're catching you're asking the
+[5264] question which is which is really an
+[5265] industry question right right at the
+[5267] moment that that is is being where it's
+[5269] being asked across the industry which is
+[5270] I I'll I'll say like where does the the
+[5273] craft of development show up in these
+[5274] tools and how does it show up in a way
+[5276] that that um enables those with who are
+[5279] experienced software developers insert
+[5280] kind of their instinct and their
+[5282] knowledge and their craftsmanship. And
+[5284] then the the flip side of that is if
+[5286] you're a young developer getting
+[5287] started, how do you develop that? If the
+[5290] boilerplate kind of run rate code is now
+[5293] being automated away because I think the
+[5294] on-ramp for juniors is an open question
+[5296] for our industry right now that look you
+[5299] and I both started when we both started
+[5301] we were not tasked with the most
+[5302] creative most difficult thing right when
+[5303] we started as developers I was I was
+[5305] writing tests for Sun back in the day
+[5307] right like it was it was very much the
+[5309] things that the senior developers did
+[5310] not want to do and now that is stuff
+[5312] that the AI is doing. So, what is the
+[5313] on-ramp for juniors? I think is a is a
+[5315] is a really good question and a
+[5317] foundational one. Um
+[5320] um but I I will say going maybe going
+[5322] back to the vibe coding example, a
+[5323] senior dev with experience
+[5326] and and knowing what's going on behind
+[5328] the scenes can give guard rails,
+[5332] guidance, instructions that I I would
+[5335] assert still benefits from their craft.
+[5337] Now, I'm a little bit over my skis at
+[5338] this point. I'm enjoying these tools
+[5339] like nobody's business, but I have not
+[5340] written production code in a couple
+[5342] decades, right? So, so I'm I'm a little
+[5344] over my ski in terms of talking about
+[5345] inserting craft today, particularly for
+[5347] front-end frameworks, which are just
+[5348] which are just um bedazzling.
+[5351] H how does that show up today in terms
+[5353] of what additional input and context a
+[5357] senior dev provides? I think that's the
+[5358] crux of your question. I think we don't
+[5360] have an answer to that as an industry
+[5362] just yet. Um I'll say without that it it
+[5365] devolves because as X actually you said
+[5367] this is trained on it's statistically
+[5370] right it's chain it's it's trained on
+[5371] average code right it's it's the it's
+[5374] the it's the it's the bell curve or the
+[5376] normal distribution of code that's all
+[5377] been written in public repos across
+[5379] GitHub and and whatever else and and no
+[5381] one wants to produce products that are
+[5384] average right no you no no startup and
+[5387] and no no commercial business wants to
+[5388] produce an average product and so that's
+[5390] where I think senior devs in particular
+[5392] have a role to play in like okay okay
+[5394] okay the the common run rate stuff you
+[5397] know the boiler play stuff fine but
+[5399] there's an opportunity to add craft on
+[5401] top of that with the help of of agents
+[5403] and and AI um that'll differentiate and
+[5406] make a a product stand out and that gets
+[5410] to craft that gets to intuition that
+[5412] gets to understanding developer
+[5414] experience that gets to understanding
+[5416] the problem that you're solving really
+[5417] really well and understanding the the
+[5419] human you're solving it for really
+[5421] really well um which I would like to
+[5424] think most developers are going to
+[5425] embrace that and say wow those are
+[5426] exciting things that I want to those are
+[5428] exciting muscles that I want to develop
+[5429] as well so I don't have an answer for
+[5431] you J is more what my what I'm observing
+[5433] and where I think we as an industry need
+[5435] to spend more and more time discussing
+[5438] and vetting and experimenting frankly to
+[5440] see how we ensure senior developer craft
+[5443] can still show up and differentiate
+[5444] these products that the bots are helping
+[5446] us create and then what role do you
+[5448] think like containers would play uh in
+[5450] this whole kind new world of
+[5452] development, right? And u um and then
+[5455] it's it's fast changing the the way
+[5456] people think about writing code, right?
+[5458] Like and and what will be the role of
+[5460] containers moving forward, right? And uh
+[5462] uh what are the things like you know
+[5464] that that you already saw Docker that
+[5465] you already started doing with with the
+[5467] advent of AI and then you know what are
+[5469] the what are the big things on the
+[5470] horizon that that uh that containers can
+[5472] still do? Yeah. Yeah. Well, look, I mean
+[5475] containers are the deployment unit of of
+[5478] choice, right? um they're the the
+[5481] manufacturing unit as we as we talked
+[5482] about earlier and so they're not going
+[5484] away. Um what's what's changing is how
+[5486] are those containers formed, you know,
+[5487] was before it was like most humans
+[5489] typing the code that then gets built
+[5491] into a container. Now it's humans and
+[5492] bots building the code that gets
+[5494] deployed into containers. And so um it's
+[5496] more about the the how than the and the
+[5498] change of the fundamental
+[5499] infrastructure. And if you look at all
+[5500] the AI applications that are being
+[5502] deployed today, they're all being
+[5503] deployed in containers. Um, now what's
+[5506] exciting from an infrastructure
+[5507] standpoint is that there's a lot of work
+[5508] going on with our infrastructure
+[5510] partners, with Docker's infrastructure
+[5511] partners to ensure those containers can
+[5513] take advantage of the the hardware
+[5516] that's in these servers and in the
+[5517] laptop. So, hey, is there a GPU in
+[5519] there? Docker Desktop does this today.
+[5520] Is there a GPU in there? Oh, fantastic.
+[5522] Then, if I've got an LLM sitting up here
+[5524] that could benefit from GPU
+[5525] acceleration, let me plum into that
+[5527] infrastructure and dial in that GPU. So,
+[5529] you have faster LLM experience for the
+[5531] developer locally. And you can envision
+[5532] that happening across all hardware
+[5535] hardware infrastructure at the developer
+[5537] layer. U this goes back to my my
+[5539] previous comment about interfaces that
+[5541] are evolving not just for human
+[5542] developers but for agentic developers,
+[5544] agent developers as well. Um a way in
+[5547] which you make containerizing your
+[5549] applications um easy for bots to
+[5552] approach. So bots can easily kind of
+[5554] build build code in containers um
+[5557] without having to go down to the depths
+[5560] of of croups and namespaces I think is
+[5562] is really critical and and what you're
+[5564] seeing a lot of the industry do is is
+[5566] put uh APIs in front of
+[5568] containerization. And so specifically
+[5570] there's a company called test containers
+[5572] uh built by a company called atomic jar
+[5573] that docker acquired a year or so year
+[5575] and a half or so ago and um atomic jar
+[5578] test containers provides um Java and 13
+[5581] other language interfaces that allow a
+[5583] developer to drive the standup creation
+[5587] of unit tests run those tests tear it
+[5589] down all through kind of programmatic
+[5591] interfaces. And so that's an example of
+[5593] like okay take those programming
+[5595] interfaces surface those to agents and
+[5597] now agents can use container
+[5599] infrastructure to create the unit tests
+[5601] write the tests run the tests look at
+[5604] the test results tear it down um and you
+[5606] know rinse and repeat and so I think
+[5609] it's it's um it's about making the
+[5613] interfaces that humans have been
+[5615] comfortable with with containers making
+[5616] those interfaces uh apparent and um
+[5619] obvious for agents to consume is where
+[5622] you see a lot of the development work
+[5623] going and MCP is an early example of
+[5625] this, right? So MCP
+[5627] um is now you can containerize MPC MCP
+[5631] servers, make them discoverable by the
+[5633] agents up on hub or wherever else you
+[5635] might have MCP servers and then fire
+[5636] those up locally without having to set
+[5638] up a bunch of infrastructure for every
+[5640] server you stand up. If you can run
+[5642] containers, you can run any MCP server
+[5645] that's containerized in that
+[5646] environment. And so those are examples
+[5648] where you're seeing containers kind of
+[5649] play a major role in the in the agentic
+[5651] AI revolution that we're going through
+[5653] right now.
+[5655] It's a a world where AI agents are
+[5658] writing code, assisting developers in
+[5660] writing code, managing infra. if you
+[5662] were to start Docker all over again like
+[5664] you know how we build it differently or
+[5666] you know I don't know if you have after
+[5668] the whole kind of AI revolution came
+[5671] about like uh you know did you go back
+[5673] to like first principles thinking and
+[5674] saying that hey uh we are doing it as a
+[5677] company right now but you know next few
+[5679] years things are going to change and
+[5680] then what were you know has there been
+[5683] such an exercise and can you give us
+[5685] some insights about into that?
+[5687] Yeah. Well, obviously um obviously uh
+[5690] there's company there's company internal
+[5692] and and external, so I can't speak too
+[5694] much in depth, but um but the the the
+[5698] more one can make um the interfaces to
+[5702] every layer of the containerized stack
+[5704] programmatic, the more you make it
+[5706] accessible to the AI. Um that's kind of
+[5708] point one. Point two is um
+[5712] to to your observation earlier the the
+[5715] public code bases have resulted in at
+[5717] least for the for the big foundational
+[5719] models have resulted in kind of this
+[5720] bell curve normal distribution of
+[5722] average code. Um we recognized that
+[5725] early on and in the AI work that we've
+[5728] been doing. We've been fine-tuning uh
+[5730] Docker's been fine-tuning with its own
+[5732] internal data sets and understandings of
+[5735] how Docker works and what the error
+[5737] messages mean, what they lead back to.
+[5739] And so as a result, you're seeing in the
+[5741] in the docker agentic experience much
+[5744] much um a higher quality low low
+[5747] hallucination to use your word before
+[5750] low hallucination results when it comes
+[5751] to docker files and compose files and
+[5754] you know how to set up uh a successful
+[5756] stack using docker and so I think you
+[5759] know first principles would take you
+[5760] back to um just get the the basic
+[5763] interfaces right and and and um docker
+[5767] is a beneficiary of like 11 12 years of
+[5770] user data that user data can be used to
+[5773] create or to inform um these models to
+[5777] provide a much richer experience for
+[5779] developers than the than the run rate
+[5782] offtheshelf models. Yeah, that that's
+[5784] that's right. And then um the um where
+[5787] do you see the vision of Docker going
+[5790] from here? Right. Is it more of a
+[5791] platform like GitHub kind of a model, a
+[5794] utility like npm kind of a model or kind
+[5796] of hybrid of the two? Right.
+[5798] based on the last few years the
+[5799] direction like you know what what's been
+[5801] the organic fit that you've seen with
+[5802] with the with the way Docker has been
+[5804] shaping. Yeah. Yeah. It's it's going to
+[5807] be more of a of a a combination of the
+[5811] two. And the reason I say that is that
+[5812] um the the agents today know that
+[5815] DockerHub is a rich source of
+[5817] components, right? Right. So if an agent
+[5818] is out helping a developer build a a
+[5820] 12-factor app or microservices app um
+[5824] and and the stat from even before agent
+[5826] agents showed up before AI showed up is
+[5828] like 90 some% of any application is
+[5831] based on open source libraries and the
+[5833] unique code that any commercial
+[5835] organization adds is just about 10% of
+[5838] the app. Okay. So if 90% of your app
+[5840] stack is built based on open source
+[5841] components anyway, those open source
+[5843] components are being distributed through
+[5844] DockerHub. Um
+[5847] content plays a huge role in this world
+[5848] that we're going forward. And so um how
+[5851] to ensure that agents are using trusted
+[5853] images that they're using images that
+[5855] haven't been tampered with as they go
+[5856] from publisher to hub, from hub to the
+[5858] consumer. like there's a rich surface
+[5861] area of content infrastructure um that
+[5864] has been evolved and will continue to
+[5866] evolve to make sure agents are pulling
+[5868] the right package at the right time in
+[5870] the in the right part of the cycle. So
+[5872] that's one. The second is um uh more
+[5876] more on the on the GitHub side in terms
+[5878] of the the different stages of the SDLC.
+[5880] The SDLC is going to change, right? We
+[5881] see this happening in in real time. Um
+[5884] just an obvious statement, right? If if
+[5886] the bottleneck to shipping an app
+[5888] formally was the rate at which a
+[5890] developer could type into their IDE, I'm
+[5892] I'm simplifying, right? But like if if
+[5894] if uh the IDE was the place where the
+[5897] developer sat and most of the time in
+[5898] the ID they're typing code like that
+[5900] bottleneck is gone, right? that
+[5902] bottleneck is gone because now you've
+[5904] got code code generation, code
+[5906] completion, you have agents and so the
+[5908] SDLC and the developer within that SDLC
+[5910] that that world changes um to where the
+[5913] developer is much more thinking about
+[5916] the target outcomes of the apps um how
+[5918] they're going to architect it the things
+[5920] they need to build into it to make sure
+[5921] that it's a quality app when it goes to
+[5922] production for our per for our thread
+[5924] earlier. And so within that the workload
+[5927] will continue to be the container. And
+[5929] so okay if that's the case then as this
+[5933] SDLC evolves those different stages are
+[5935] going to be stages that are involve
+[5937] manipulating updating uh inspecting and
+[5941] creating containers. And so I you know I
+[5944] I shared earlier some of the the Docker
+[5946] uh additional products that we had built
+[5948] around desktop. those are going to
+[5949] evolve in uh in tandem or uh along with
+[5954] the workflows that we're seeing today
+[5955] evolve with Gen AI to continue to
+[5957] provide developers who are no longer
+[5959] sitting in their IDE for most their day
+[5962] uh with experiences that help them that
+[5964] help them build containerized
+[5965] applications. So anyway, long-winded
+[5968] answer but it's a combination of of both
+[5970] that you shared.
+[5973] what the role like you know I see know
+[5974] the world could go towards you know yes
+[5976] with the eye making it easy to write
+[5978] code it could be a world of serverless
+[5980] in the future um and and and containers
+[5983] are a neat way of packaging stuff right
+[5985] but you know going in that kind of
+[5988] pattern like you could see that hey I
+[5991] know what my container should look like
+[5992] I know what things to you know pull in
+[5994] but you know can you even run this for
+[5995] me right like u you know same same angle
+[5997] of like hey you know you you want to you
+[6000] know use AI to you know make it simple
+[6002] to write code like you know make it easy
+[6003] to for simple you know for people to
+[6005] simp make it simple to run code as well
+[6007] right like uh were there any any any
+[6009] fundamental changes in in in docker
+[6011] saying to moving towards cloud compute
+[6013] or you know primarily staying in the
+[6015] container management kind of area
+[6018] again can't can't reveal kind of
+[6020] internal stuff but but let's just for
+[6022] for a second think about what the agents
+[6024] are doing the agents aren't just um or
+[6027] what what you want agents to do in this
+[6029] evolved or evolving SDLC See, right?
+[6032] Agents aren't just um generating and
+[6034] suggesting additional code or generating
+[6036] code. They are exploring multiple paths
+[6039] of code and should changes be made to
+[6041] that code, what those changes imply in
+[6044] the dependencies throughout the rest of
+[6045] the codebase. They're doing that all in
+[6047] parallel to the developer. Right? So you
+[6048] have 10, 100, whatever agents in
+[6050] parallel running these paths, these
+[6052] branches in parallel.
+[6054] They don't want to stop there, right?
+[6055] They want to actually build and run the
+[6058] code and see if see what the effects are
+[6060] of these different paths they're making.
+[6061] Well, if you're building and running
+[6062] code, you want to build and run code in
+[6064] a safe manner and also in a manner that
+[6067] parallels the environment the developer
+[6069] is building because you don't want works
+[6070] on my machine fingerpointing between
+[6072] agents and agents and agents to the
+[6074] developer. And so those, you know,
+[6076] running isolated environments is going
+[6078] to be really important at scale that are
+[6081] reflective of the developer environment
+[6082] and are not conflicting. um and also
+[6085] contain any particular malicious
+[6087] libraries or malicious attacks. Um that
+[6090] is a very rich environment which we
+[6091] don't have today, right? And so you can
+[6093] imagine you can imagine that being a
+[6095] rich source of innovation throughout the
+[6097] industry that that any developer team
+[6099] and even an individual developer is
+[6100] going to want. They're going to want to
+[6101] have the power to fire up a thousand
+[6104] agents and explore all these paths in
+[6105] parallel and with you know preemptive or
+[6107] predictive um predictive branching
+[6110] um uh to to get the most out of their
+[6113] their agentic helpers that are around
+[6115] them and that's pretty exciting. It is.
+[6118] It is. And it's uh you know and the
+[6120] world is also fast changing you know you
+[6121] mentioned hey the whole white coding
+[6123] thing just came a few months back right
+[6124] but uh 6 months later what's going to
+[6126] come like you know what what these
+[6128] models are going to be you know capable
+[6129] of like you know quantum computing comes
+[6131] into the picture like you know things
+[6133] things are going to change very very
+[6134] rapidly right I think it's probably the
+[6136] most exciting time to be in the industry
+[6139] at this point. Oh, yeah. It's I mean,
+[6142] disruption can be a little
+[6143] nerve-wracking, right? But disruption
+[6145] leads to opportunity. And um I it's I I
+[6148] I'm with you, too. I think it's like the
+[6149] best time to be building in our careers.
+[6152] And you know, this is you know, this is
+[6153] someone who's seen like three or four or
+[6155] five different back transitions in my
+[6158] career. And yet, this is one of the most
+[6160] exciting and and back to a little bit
+[6162] about your kind of personal leadership
+[6164] style, right? like uh you you stepped
+[6165] into the CEO role when around the time
+[6168] uh it was a very very difficult phase
+[6170] for the company uh you were also a
+[6172] first-time CEO right like u you you had
+[6174] you had been the chief operating officer
+[6176] before so you you probably been there
+[6178] along with with with the leadership team
+[6180] but how was the pressure like you you
+[6182] mentioned earlier that it was a very
+[6183] difficult phase in the company right uh
+[6185] how was the pressure like you know u and
+[6187] you know not just managing the team but
+[6189] the managing the board there's a open
+[6191] source community like you know uh talk
+[6194] to me a a little bit about the pressure
+[6195] like some if you have some great
+[6197] examples some great stories to share
+[6199] during those times you know it'll be
+[6200] it'll be good learnings for for for
+[6202] people uh who are who are first- time
+[6204] CEOs for example
+[6206] Sure sure um you know at the end of the
+[6210] day this is a team sport right and the
+[6212] CEO's job is to pull together the team
+[6214] and lead through ups and downs um and so
+[6218] I'll just give you an example uh when we
+[6221] announced this the split as we called it
+[6222] in 2019 team. Um the press lit up and
+[6226] declared Docker is dead. Docker's never
+[6228] going to recover. Got trumped on by
+[6230] Kubernetes years ago. Uh splitting the
+[6233] company apart is a mistake. All all
+[6235] this. And if you go back in Google in
+[6237] time and look at the headlines from
+[6238] November 2019, December 2019, like
+[6240] everyone declared us dead. And so it it
+[6243] takes a great deal of of I'll say calm
+[6246] and and take a lot of deep breathing to
+[6248] stand back and and help one's team. um
+[6254] understand that that no, we actually see
+[6256] a huge opportunity here and here's why.
+[6259] Like you should ignore the headlines,
+[6260] right? Because the headlines and you
+[6261] know their their I'm sure their their
+[6263] partners and significant others were
+[6265] telling them like are you crazy? Like
+[6266] get out of there. And so what that
+[6268] required is is myself and my leadership
+[6270] team really looking at each other and
+[6272] and saying like let's let's band
+[6274] together. We're here because we believe.
+[6276] Let's band together and let's just
+[6278] really communicate authentically
+[6280] authentically. authentically kind of
+[6282] mistakes we made in the past. um where
+[6285] we missed some market turns and and and
+[6289] on top of that authentically why we're
+[6291] excited to be here and and why this is a
+[6293] huge opportunity and everyone's role who
+[6296] was still at the company at the time um
+[6298] everyone's role in making that
+[6299] opportunity real and I think by spending
+[6302] a lot of time first off with each other
+[6305] as a leadership team and then with the
+[6306] rest of the employees there that was a
+[6309] big part of um help helping everyone and
+[6312] as a as individuals and as the company
+[6314] take a breath with all this negativity
+[6316] hitting them from the outside and say
+[6318] like no like we can do this. We have a
+[6320] great brand. We have developers that
+[6322] love the product. We have additional
+[6325] adoption and consumption metrics that
+[6326] are going up into the right without us
+[6327] doing anything. So now it's our job to
+[6330] like focus on that, unlock um that
+[6332] potential that's there. And in doing so,
+[6335] we're going to make this a great
+[6336] company, a great business, and then
+[6337] every day come back to that. Every day
+[6340] come back and show progress. every day
+[6342] when you make mistakes, come back and
+[6343] acknowledge those mistakes. And I think
+[6346] that was a big part um of of helping us
+[6349] lead through the first year. Another one
+[6350] of our virtues maybe to underscore this
+[6351] point was um humble confidence. Meaning
+[6356] that um everyone has something to to
+[6359] learn, everyone has something to teach,
+[6361] everyone has something to contribute,
+[6363] everyone has something to be um to be
+[6365] gained by that contribution. And by by
+[6368] acknowledging that that everyone can
+[6371] approach this new opportunity with
+[6372] humble confidence, confidence in what
+[6373] we've built, confidence in where we're
+[6375] going, but humility to like acknowledge
+[6377] that we can be wrong, to to listen to
+[6379] the market, to listen to developers, to
+[6381] listen to each other, um was part of
+[6384] that balance that very importantly in
+[6386] that first year uh in bringing everyone
+[6388] through and emerging, you know, emerged
+[6390] from the first year beating our numbers,
+[6392] beating our numbers across user
+[6393] adoption, beating our numbers from a
+[6394] revenue standpoint, and really giving
+[6396] people of confidence like oh okay this
+[6398] this this is working yeah yeah I want to
+[6400] I want to I want to stay and and keep
+[6401] contributing
+[6403] and then um you know you you you
+[6405] mentioned it you took around a year for
+[6407] it to kind of go over that phase right
+[6409] like but at some point you know that hey
+[6412] you the worst is over right like uh you
+[6414] know it's only up from here um you're
+[6417] you're building on something that uh you
+[6419] helped the company transition outside of
+[6421] the revenue numbers and developer
+[6423] downloads what were kind of some
+[6424] intrinsic signals from within the
+[6426] company because end of the day, you
+[6427] know, a company is only as good as the
+[6430] as the employees in the in the company,
+[6432] right? Like what were some signals that
+[6433] you picked up from internally from
+[6434] within the company and say like, "Hey,
+[6436] this is the new rocker, right?" Yeah.
+[6438] Yeah. And well, I I'll back up a second,
+[6440] but I'll say at least
+[6444] my stance was only the paranoid survive.
+[6446] And so we never we never
+[6449] shifted to a gear of like, oh, we got
+[6451] this like, yeah, like this isn't, you
+[6453] know, our our dominance is inevitable.
+[6455] We never we never allowed that mindset
+[6457] to creep in. Um I I firmly believe like
+[6460] the minute you think you got this and
+[6462] you know everything like you're dead,
+[6463] right? And so we we try to stay hungry,
+[6466] stay uh again humble confidence, stay
+[6469] focused on the customer, stay listening
+[6471] to the market, um stay paranoid, health,
+[6473] you know, healthy paranoid about
+[6475] potential competitors or alternatives.
+[6476] So just to correct a little bit like we
+[6478] never we never kind of crossed over and
+[6479] like ah we got this we're done. Um but
+[6482] maybe to give you an example of of how
+[6484] we saw the culture evolving positively
+[6487] such such that we're we were confident
+[6488] the culture was going in the right
+[6490] direction. Again, you're never done with
+[6491] culture is um we had a number of folks
+[6494] depart that first year, but then we
+[6496] started seeing folks come back. We
+[6498] called them boomerangs and and folks who
+[6500] would leave um uh and then we'd come
+[6503] back 6 months, nine months and they say,
+[6505] "Wow, you know, culture that we have
+[6506] here at Docker is really special. the
+[6508] humble confidence, the developer
+[6509] obsession. And I wasn't finding that in
+[6511] the place that I left. And so seeing the
+[6514] the boomerangs, and it wasn't just, you
+[6515] know, it wasn't just one or two, it was
+[6516] like the 10 10 plus tens of plus
+[6519] boomerangs um came back uh g was a
+[6523] signal for us that uh we were on the
+[6525] right track and we needed to continue to
+[6526] evolve the culture in the direction we
+[6528] were going.
+[6530] Well, and what what's next for you right
+[6531] now? Like uh you know, you talked about,
+[6534] hey, this is this never a great time to
+[6535] build then right now, right? plan.
+[6537] What's next for you? What what are you
+[6538] thinking about? Yeah. Well, so I'm going
+[6540] to speak out of both sides of my mouth.
+[6542] It's never been a better time to build.
+[6543] I still agree with that. And after 11
+[6546] years of Docker, five as CEO, uh I need
+[6549] to spend time with my family. So, I've
+[6550] committed my family to to take some time
+[6552] off. I have been taking some time off.
+[6554] And uh uh my kids are teenagers and
+[6557] spending more time with them and because
+[6558] they've only known 11 years of Docker
+[6560] when when dad wasn't around that much,
+[6562] unfortunately. Um, so I'm making up
+[6564] trying to make up for some lost time uh,
+[6566] which is a lot of fun and and uh, when
+[6569] they're at school, I've been going deep
+[6571] in AI um, during most my days. And uh,
+[6574] boy, it's it's so much fun. There's been
+[6576] so much going on these last couple years
+[6578] um, in terms of moving the
+[6580] state-of-the-art forward and and not
+[6583] just for the industry overall, but in
+[6584] particular for developers. Um, and then
+[6586] I've also been giving back to my
+[6588] community in the afternoons, which has
+[6589] felt really good just to stand back and
+[6591] realize just how incredibly fortunate we
+[6593] are to be in such an exciting industry
+[6595] at this time in our careers, uh, at this
+[6597] time in our lives. And so, um, yeah, I I
+[6600] am itching to get back, but, uh, I am
+[6602] I'm going to, uh, finish taking a breath
+[6604] first before I get back to it. Cool. Um,
+[6608] thanks Scott. That was that was
+[6610] wonderful, exciting conversation. Thanks
+[6612] for, uh, being at the show, sharing your
+[6614] experiences. Um and you know at some
+[6617] point in time when you are you know
+[6618] ready for something else may you know
+[6619] that's probably a story for another day.
+[6621] You know we'll probably have you happy
+[6623] to have you back on the show again.
+[6626] Thanks J. I really enjoyed the
+[6627] conversation. Thanks so much for the
+[6628] invitation. Cool. Thanks Scott.

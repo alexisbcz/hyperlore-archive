@@ -1,0 +1,476 @@
+[2] oh
+[13] hey today we are going to spend um half
+[16] an hour together probably like 25
+[19] minutes on the presentation and then
+[21] we'll have five uh minutes available for
+[23] questions um if I match the timing I I
+[27] intend to um as discussed before we'll
+[31] be speaking about infrastructure Edge
+[33] and connectivity and basically what it
+[35] takes to build and operate a global
+[37] service provider which is what we are
+[38] doing uh at KB um so let's get
+[43] started um basically I am Yan uh I spent
+[49] the last uh 12 years building cloud
+[52] service providers um I built first in
+[56] 2011 a company I was part of a company
+[59] called outscale building AWS like
+[62] Services uh in France uh in 2013 I
+[66] started building
+[67] scaleway uh and since 2021 I'm building
+[71] a company called coab where we are
+[73] basically providing a sess platform um
+[78] and basically if you look in the future
+[80] at this paace I will probably be still
+[82] be building cloud service provider in in
+[86] 2030
+[87] um so will that into the subject um so
+[92] let's get started by exploring what is
+[95] actually uh doing coep doing um what we
+[99] are doing is we basically allow
+[101] developers to deploy full stack
+[102] application in minutes uh and what we
+[105] mean by that um is that we simplify
+[108] application deployment so we are
+[111] building a platform where the aim is
+[113] basically to let every
+[116] developer uh deploy application without
+[119] having having to learn any specific
+[121] skill sets in terms of cloud provider so
+[123] you don't need to learn something new
+[125] compared to what you you already know uh
+[128] you can easily deploy with containers or
+[131] native code um and we will take care of
+[134] the continuous deployment part
+[137] um we abstract infrastructure management
+[140] so that you don't have to deal with that
+[143] we basically also take care of residency
+[145] and
+[146] scalability and um we also work on
+[151] improving performance by simplifying
+[153] Global deployment uh we'll dive into
+[155] this later and lastly uh we make sure
+[159] that you basically have sustainable
+[160] engineering and Cloud infrastructure
+[162] costs uh which is a key topic uh if you
+[167] look at your uh usual Cloud
+[169] infrastructure
+[171] builds um maybe uh who in the audience
+[176] right now has a software engineering
+[178] background
+[180] okay do some people in the audience have
+[183] a platform engineering background or S
+[187] background fewer so all right um let's
+[193] continue so basically the platform what
+[195] we we uh let you do is we let you deploy
+[198] web applications apis
+[201] microservices background workers and
+[203] also manage databases and this can be um
+[206] anything uh we're really uh agnostic
+[210] in terms of Technology you are deploying
+[212] um so you can deploy from a simple
+[215] Docker file or also with a GitHub
+[217] repository which we will build for you
+[221] um if you look at what it looks like
+[225] concretely uh we basically build the
+[228] application for you we run it and we
+[230] scale it for you uh this is uh how it
+[234] looks as a user so if you use our CLI we
+[237] also provide uh apis and um um other
+[242] automation tools like terraform and
+[244] pulumi but if you use our CLI um it's
+[247] three commands to deploy an application
+[249] so you just R install cab uh you init
+[251] the application uh you uh which is going
+[255] to deploy it you select your regions in
+[257] this case it's deploying in frankf Fort
+[259] and Washington and then your application
+[261] is going to be live uh and with
+[263] basically a a domain which is
+[266] automatically set up um and the traffic
+[268] which is automatically rooted to your
+[271] application um now let's dive into the
+[274] subjects so if you look at the the title
+[277] of the talk um you have two key words um
+[282] in in this talk which are Global and
+[285] servess um and I want to dive into why
+[288] it matters uh before explaining how it
+[290] works exactly and how we build the
+[293] platform um so the the subject of
+[297] deploying globally is the in essence uh
+[301] what we're basically fighting against is
+[303] that data only moves at the speed of
+[305] light so it's just like it's a fact uh
+[309] the reason why uh it matters to deploy
+[312] multiple locations is because uh Z trans
+[316] your latency is going to be bound by
+[318] this fact and by the capacity of um
+[321] Network infrastructure to process your
+[323] data um and what we're trying to improve
+[326] when we deploy in multiple location is
+[329] basically is the performance and the key
+[331] challenge we are usually facing is uh
+[335] there are two key challenges one is
+[336] regulation and and the second one is
+[338] data
+[339] locality uh so if you look at gdpr for
+[342] instance it requires you to process data
+[344] in the uh in specific locations
+[347] depending on your agreements and data
+[350] locality is a question of where are your
+[352] databases
+[354] located um but the thing is like Anyway
+[358] if you want to deploy across m mle
+[359] locations uh it's going to be tricky
+[362] because you need to synchronize your
+[363] deployment across all of the location
+[365] where you want your Cod to be running
+[367] you need to take care of networking so
+[369] you need to uh be able to provide a
+[372] global networking layer and also take
+[374] care of security and you need need to
+[377] take care of this key subject of data
+[379] locality um and so the other key topic
+[384] uh is uh saves um and I want to clarify
+[389] one misconception when we speak about
+[392] servess we are not necessarily speaking
+[394] about
+[395] functions um because so sess has been
+[399] popularized as a world by AWS with
+[402] Lambda but it's actually way more than
+[405] this um we um today sess is used to for
+[411] containers function and databases to uh
+[414] and it doesn't require a full rewrite of
+[417] applications um and we're it's not an
+[420] invention of of of us it's just like the
+[422] way the industry has evolved in the last
+[424] five years SES can apply to any kind of
+[429] deployment um and we believe it's a key
+[433] thing because um our fundamental belief
+[436] is that serves will supersede PR
+[438] infrastructure Technologies so you if
+[441] you look at the last 20 years there has
+[443] been a shift uh from 20 years ago people
+[447] were deploying on premise and every 5
+[449] years approximatively there has been a
+[451] change in how application were deployed
+[454] um so we move to Virtual machines and uh
+[457] a came with ec2 uh with uh which became
+[462] IIs uh and then came and what we're
+[466] saying is that basically the next AB
+[468] abstraction layer is sess and we are not
+[471] the only one saying this um because if
+[474] you look at what the cloud native
+[477] Computing Foundation says itself they
+[479] are saying that kubernetes is becoming
+[482] is going under the hood and that it's
+[484] going to become a like Linux that it's
+[486] probably going to disappear in FA favor
+[489] of higher level of abstraction and
+[492] that's what we are basically
+[495] building now let's dive into actually
+[499] how it works um and how we build
+[504] it so this is what is h is abstracted by
+[508] our platform um what we are providing is
+[511] an abstraction to to all of this
+[514] functionalities so we abstract cloud
+[516] service
+[516] providers um we have we pick different
+[520] uh players uh and mix them up to provide
+[523] the best experience we abstract
+[526] orchestration so that you don't have to
+[527] mess with kubernetes or another
+[529] orchestration engine we also take care
+[532] of building the app so we take care of
+[534] continuous deployments we provide
+[537] monitoring as part of the platform we
+[539] deploy globally we take care of storage
+[541] and we also provide a networking layer
+[544] which is a service mesh so it's I'd say
+[547] if you are not familiar with um service
+[551] mesh it's higher level um by the way is
+[555] any are you familiar with what is a
+[557] service
+[559] mesh who knows what is a service
+[562] mesh huh
+[565] interesting uh so basically service
+[570] service it but
+[574] it's so it makes it simple for to talk
+[578] together um
+[584] and private networks uh because they
+[588] provide to use for
+[591] developers uh now so let's look at
+[595] exactly how this work um we when we
+[599] built a platform we have reement the
+[602] first one was to have fast builds and
+[605] execution so basically want to have
+[607] something where people don't constantly
+[610] wait the platform a common problem um
+[613] you have with provider that they are
+[616] sometimes slower than on your own laptop
+[618] which is kind of a a pain um we want
+[622] people to be able to easily deploy
+[624] globally we need as a cloud service
+[626] provider to take care of multi and SEC
+[632] and scale the T of
+[637] thousand um so to to match this
+[641] requirements we had to choose the right
+[643] technology um we have four key
+[647] abstraction
+[648] layers on top of so first one is um
+[655] Cloud um basically going building on top
+[659] of um let's say Lambda or something like
+[665] this this is
+[669] actually if you look at for
+[676] instance um the second possible
+[679] abstraction layer is which is also a
+[682] common Choice the thir option is
+[686] composable software and the first uh
+[689] solution is racking our own
+[694] servers different kind of
+[697] experience we
+[700] went
+[702] de Primitives because we would own
+[707] capacity uh own feature sets because
+[710] basically when they bu their own
+[712] products they think take decision uh to
+[716] go into where they want um we
+[721] started we hit some
+[725] limitation and actually also in
+[727] including theology we wanted and so we
+[731] ended up building our own
+[734] software to provide this
+[738] experience and rcking our infrastructure
+[741] is something we might need to do at some
+[744] point but basically we don't need to do
+[746] it because there are several in right
+[749] now maret um so it would take aot time
+[754] in a global setup so
+[759] we're
+[761] um so
+[764] basically Stacks this is so
+[768] we inside
+[771] of
+[773] servers if you at
+[776] the SL you see what what we use on
+[779] thetion side so
+[782] we we use firecracker as a vation engine
+[787] we
+[789] Deploy on top of own servers which are
+[792] provided
+[794] providers ovh scale or
+[798] IBM
+[802] provides and layer we
+[807] actually on which is the doing the of
+[812] our Network and which is doing
+[816] the which is actually doing traffic uh
+[821] routing so if you look
+[825] at this is the simpi so on the left we
+[830] have control plane which is basically
+[833] our own software uh which is
+[836] transmitting orders to uh to Nomad for
+[839] orchestration and on the right you have
+[841] um the data plane which is where
+[843] customer workloads are running uh so we
+[847] um run containers inside of microv VMS
+[851] which are running on top of
+[854] hypervisors uh on top of our
+[857] servers and so yeah uh we relying on
+[862] corest for the
+[863] hypervisor and that's um the story here
+[868] um if you look at uh in deep uh deep
+[873] more deeply on why we picked the
+[875] solutions um Nomad is our is our warlo
+[879] AR castration engine uh the reason we
+[882] picked it was because it's easily
+[884] extendable it's simple to use uh and it
+[887] actually provide multi- region
+[889] capabilities out of the box um and it
+[892] has a pretty small footprint and it's
+[894] easily scalable and this is in
+[896] comparison to mostly which was the the
+[900] solution we had before uh which is
+[902] really hard hard to extend if you don't
+[905] want to fight with a global Community
+[907] which is um controlled by the
+[912] cncf
+[913] um
+[916] the second key technology is firecracker
+[920] so um if you're not familiar with
+[922] virtualization it's actually U um um
+[927] virtualization engine uh so it's a
+[930] lightweight virtual machine Monitor and
+[933] it relies on Canal Primitives which is
+[936] lenus KVM to manage microv VMS it was
+[939] built by AWS originally and open source
+[941] by AWS um and the key reason why the
+[945] abil it is to provide Fast book for auto
+[948] scaling um so it's not doing cration at
+[952] all and it helps secure and isolates
+[955] container workloads
+[957] basically uh
+[959] um the third key technology is Kuma
+[962] which is actually providing all the
+[965] networking layer so it's um dealing with
+[969] all the security between the services so
+[972] it makes it so that when you have two
+[974] different Services which are talking
+[976] together on our platform it's going to
+[978] be fully encrypted it provides automatic
+[981] DNS provisioning and Native layer 7 load
+[983] balancing and it's completely
+[985] transparent to developers which makes it
+[987] so that if you deploy two Services
+[989] across two region of the world um you
+[992] can just make a simple HTTP request and
+[995] it's going to be fully encrypted you
+[997] have nothing to deal
+[999] with um so that's and that's basically
+[1002] how it looks uh in terms of connectivity
+[1005] when
+[1006] you when you look at our platform so for
+[1009] each micr VM you have a side car which
+[1012] is a nvoy proxy which is actually going
+[1015] to encrypt the traffic when it's when
+[1018] you want to talking to another service
+[1020] and that's actually the essence of
+[1021] service mesh uh that's actually what it
+[1024] brings and from there you can add
+[1027] features on top so you can add for
+[1029] instance uh policies on your traffic or
+[1032] retries um and that's what a service
+[1035] mesh
+[1037] brings um so we have six car locations
+[1042] um we just recently announced four in of
+[1045] them in in preview and we have 250 Edge
+[1049] locations
+[1050] um and basically so I'm briefly going to
+[1056] show you how this works in term of
+[1058] connectivity and what happens when you
+[1061] reach a service which is HED on our
+[1064] platform um there is a key thing a key
+[1068] Point here um if when you look at
+[1070] deploying in multiple locations to
+[1071] improve performance you can deploy
+[1073] anywhere or everywhere uh it solve two
+[1076] different set of problems uh the common
+[1079] thing is to deploy anywhere so you can
+[1081] deploy in any location individually
+[1083] that's what actually AWS is providing
+[1085] for instance you can decide to deploy in
+[1088] Ireland or in the US or in Asia but they
+[1092] are not going to solve the global layer
+[1094] and how the traffic is rooted to all of
+[1096] your location
+[1097] simultaneously um and the other
+[1101] classical solution is to deploy
+[1102] everywhere so uh in this case it's going
+[1105] to deploy in all locations
+[1107] simultaneously so several sess players
+[1110] are doing this but then you lose control
+[1112] on the compliance part so if you need to
+[1115] specifically deploy in one single region
+[1118] for compliance or only in the EU you
+[1120] will not have control over this and it
+[1123] can actually also be damaging to for
+[1127] performance depending on where your
+[1128] database is located so we provide the
+[1131] capacity to do
+[1133] both um
+[1137] and this is this is basically how it
+[1139] looks like so um I'm going to briefly
+[1142] show you how we can deploy a service
+[1144] across six location and three
+[1146] continents um so here what you are
+[1149] supposed to uh to to to see uh is
+[1153] basically our control panel you can um
+[1156] select an example app uh in this case
+[1159] we'll click on um go and we'll deploy a
+[1163] go goang example app
+[1167] um and
+[1169] uh basically it's going to go quite fast
+[1171] um we are just selecting six locations
+[1174] uh we click deploy it's going to build
+[1176] the goang app from the GitHub repository
+[1179] uh and deploy it across the six
+[1182] locations um and it's approxim it takes
+[1185] appro approximatively
+[1188] um four minutes uh to deploy in six
+[1191] locations um right now so this is quite
+[1196] fast we're trying to make it even faster
+[1198] what you have on top left is actually a
+[1200] public URL which is Provisions so you
+[1202] have a um your TLS traffic which is
+[1205] going to be uh
+[1207] completely um you have actually a TLS
+[1209] certificate sorry which is going to be
+[1211] provisioned for you you don't have to do
+[1213] anything you have a domain which is
+[1214] provisioned and you also have a private
+[1216] Network which you see on the the right
+[1218] of the screen which is provision
+[1221] automatically um so you can actually try
+[1224] it out uh on on this address so if you
+[1228] go to infobit dasan co. app you'll be
+[1233] able to hit one of the app I deployed
+[1236] this morning um and you'll see the
+[1239] latency you have toward our Edge Network
+[1242] and toward the Corr location so this was
+[1246] done this morning so the edge location
+[1248] we get here from Zar is uh Vienna and uh
+[1252] the core location is Frankfurt and you
+[1254] might actually have funny result
+[1256] depending on your provider because
+[1258] um part of the traffic routing is
+[1261] controlled by the ISP and it's not a
+[1263] question about uh what is the shortest
+[1265] pass it's more a question about what is
+[1268] the cheapest pass which is not
+[1270] necessarily the shortest pass but this
+[1272] is another subject about purely
+[1273] connectivity and how the the peering
+[1276] agreement work um but basically here we
+[1280] on our wireless network I had like 40
+[1282] milliseconds to the edge Network and 80
+[1285] millisecond to the
+[1287] application uh and this is what's
+[1290] happening when you hit such an app um
+[1294] you uh if when you hit uh when you type
+[1298] infobit do yanco das y. co. apppp uh we
+[1304] are going to resolve the domain name to
+[1308] an aned uh IP which is actually
+[1312] announced by several locations so
+[1314] depending on where you are in the world
+[1315] you'll get the same IP but you'll will
+[1318] not eat the same Edge location so if you
+[1320] use the exact same URL in from New York
+[1323] or using a VPN you're going to land in
+[1326] the edge location in New
+[1328] York and basically this layer provides
+[1331] acceleration so it's um going to
+[1333] terminate the TLs uh connection uh it's
+[1335] going to also provide an HTTP 3 uh layer
+[1339] which is multiplexing connection and is
+[1342] faster and it's also Pro going to
+[1344] provide content
+[1346] caching uh
+[1349] the next step is then to reach our car
+[1353] locations where you container or is
+[1356] actually running so
+[1359] um and uh it's actually going to root
+[1363] the traffic to the nearest car location
+[1365] which is going to figure out if there is
+[1367] actually a container running or not um
+[1370] and then it's going to uh um sve the
+[1375] request and that's it for me today uh so
+[1380] I'm happy to take any questions there
+[1381] might be so if you want to try it out
+[1383] it's available on
+[1384] app.com uh we're happy to give $100 of
+[1388] credit to get you started and you can uh
+[1390] follow us on on on Twitter or anywhere
+[1394] uh if you scan the QR code it's just
+[1396] sending to our blog uh which is actually
+[1398] covering how we build the platform um so
+[1402] yeah that's
+[1406] it

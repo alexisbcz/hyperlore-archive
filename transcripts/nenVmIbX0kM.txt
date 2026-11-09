@@ -1,0 +1,790 @@
+[0] [music]
+[8] >> One quick word from our sponsor Triton
+[10] One. If you're building on Solana, your
+[12] app is only as fast and as reliable as
+[15] the infrastructure underneath it. At
+[17] Triton, we built the open-source read
+[19] layer for Solana ourselves. The
+[22] streaming engine that pushes data the
+[24] moment it hits the chain, the
+[25] transaction pipeline that lands your
+[27] trades when everyone else is timing out.
+[29] All of it running on bare metal in over
+[31] 20 data centers worldwide. Served by the
+[33] team that wrote it. We power some of the
+[35] biggest names on Solana, but with pay as
+[37] you go, anyone can start. Sign up, get
+[39] an endpoint, pay only for what you use.
+[41] Head to triton.one. Serious
+[44] infrastructure for serious builders.
+[45] I've worked with Triton for years at
+[47] this point. They've been around since
+[49] the very beginning of Solana. They've
+[50] contributed open-source software that's
+[52] the core of the infrastructure of Solana
+[54] that makes everything work since day
+[55] one. I couldn't recommend working with a
+[57] better team. triton.one is your answer
+[59] for infrastructure on Solana.
+[65] Everybody, welcome to The Index. I'm
+[66] your host Alex Cahaya, and today I'm
+[69] joined by Yahya. Is that how I say your
+[71] first name?
+[72] >> Uh yes, Yahya.
+[74] >> Yahya?
+[75] >> Yahya.
+[75] >> Yahya Bakour? [clears throat]
+[77] Did I get that?
+[78] >> Yes.
+[78] >> Yahya Yahya Bakour, founder of
+[81] context.dev,
+[83] a web context API that turns any website
+[86] into clean, structured, real-time data
+[90] for AI agents and software products.
+[92] Backed by Y Combinator, Yahya is
+[95] building the infrastructure that lets AI
+[97] agents and developer teams pull
+[100] accurate, fresh web data from brand
+[103] assets to full site crawls through a
+[105] single API. And they're already powering
+[107] projects like Mintsify and daily.dev, as
+[111] well as Klarna. Super cool to have you
+[113] on the show. I really appreciate your
+[114] time. Thanks for being here.
+[116] >> Thank you for having
+[117] >> So, before we get into more about what
+[119] Context stuff is, tell me your story.
+[121] Like what What is the reason you get out
+[124] of bed in the morning to do this?
+[126] >> Honestly, it's a ton of fun and it's
+[127] quite fulfilling. Like I think I've done
+[129] quite a I don't know. I've done quite a
+[131] bit so far in my life where I did like
+[133] different companies, bootstrapped
+[136] companies, took a bunch of jobs, and
+[139] this is by far the most fulfilling thing
+[141] I've ever worked on. So, it's just it's
+[143] very fun to build a data product if you
+[145] if you're that type of person. And then
+[146] it's very fun to see what people build
+[148] on top of your product. So, like we have
+[150] 400 customers right now. They constantly
+[152] post about their building. They mention
+[154] how they're using us, whether we're
+[156] powering like a small feature
+[158] or a core part of the product. I think
+[159] it's just fun.
+[161] >> 400 customers, that's that's huge. How
+[162] long have you guys been in business?
+[164] >> A year and a half, but we doubled last
+[166] month. So, that is uh
+[167] >> That's amazing. That's amazing.
+[169] >> Yeah.
+[170] >> That's incredible cuz I remember when
+[172] when, you know, Joe introduced us,
+[175] you weren't there yet, number one. You
+[177] didn't have 400 customers. And And two,
+[180] you just literally like hired your first
+[183] team members. Um because like you've
+[186] been basically built up to that first
+[188] I'm I'm I'm venturing to guess the first
+[190] 200 by yourself.
+[191] Almost.
+[192] >> Yeah, the first 200 were an absolute
+[193] grind. I think literally the first
+[195] customer took a month. And then the
+[197] first 10 took like 3 months. But with
+[200] most product-led companies, they you
+[202] tend to see this curve where,
+[204] you know, it just takes a while to build
+[205] some sort of critical mass. And then
+[207] once you hit it, you just go go like
+[209] crazy because you kind of become a
+[210] default option or at least part of the
+[212] conversation or part of every
+[214] conversation. So, I don't even think
+[215] we're there yet. I think there's still
+[216] like quite a bit more to go. Like Resend
+[219] is a very good example of like I think
+[221] they grew in, you know, it took them 2
+[223] years to get to 9,000 subscribers and
+[225] then 1 year afterwards get to like
+[226] 90,000, which was insane.
+[228] >> Wow. Yeah.
+[229] >> Yeah.
+[229] >> Just huge huge growth. I I'm curious,
+[233] what has this discovery process felt
+[235] like for you as a founder? Because
+[238] you went from one customer to 10, right?
+[240] And that that zero to one to 10 part I
+[242] find is always like the hardest battle
+[244] to find the signs of product market fit.
+[247] Like, am I even getting this right, you
+[248] know? Are we getting any Are we even
+[250] directionally going in the right
+[251] direction with what we're trying to
+[252] build? How How has that looked for you
+[255] and felt? And is it all like data or
+[256] some of it intuition? Like,
+[259] walk me through what that
+[260] >> That is for you. And at the beginning
+[261] there's no data. It's like pure noise.
+[263] And, you know, I was actually working on
+[265] multiple projects at the time. So, it
+[267] was just this one of them. The problem
+[269] is all of them kind of got stuck in like
+[271] the 1K per month range, which sounds
+[273] great. Like, there is something there,
+[275] but you need to pick what to double down
+[276] on cuz you can't just work on a bunch of
+[277] things at once.
+[279] So, this was the only project where I'd
+[282] have like these massive companies
+[283] signing up and then getting like pretty
+[285] pissed at how bad the data quality is.
+[288] They'd reach out to me and they'd send
+[289] me like these angry emails. And I was
+[290] like, wait, like, why did this person
+[292] care so much or care enough to write
+[294] this long email? That means there's
+[295] probably something here. So, I guess
+[297] that was the signal that was like, okay,
+[299] I should probably focus on this. I
+[301] killed the rest of the projects and then
+[302] just focused on this one.
+[303] >> Oh, that's interesting. So, the first
+[304] signal was just people were pissed it
+[306] didn't work. They like got They got
+[308] bought in on the
+[309] the value prop and then it didn't
+[312] deliver and they were mad. How did you
+[314] handle that? Like, how did you fix it?
+[317] >> I mean, that you just make one person
+[318] happy at a time cuz people ask for
+[320] different things. So, I just picked the
+[321] one customer or one user at the time who
+[324] was just the most pissed. And it's like,
+[326] okay, so if I add these things, you'll
+[328] be happy with it. It's like, yes. And
+[330] then I actually added them and they
+[331] ended up paying. And you used to You
+[333] kind of have to force the first 10 like
+[335] that.
+[335] >> And did you Did you keep it Was it From
+[338] a barrier to entry standpoint, was it
+[339] like free to sign up? There wasn't
+[340] really like any any paywall in the
+[342] beginning or how did you think through
+[344] that in the beginning?
+[345] >> I've experimented with a lot. Like, we
+[347] tried paywalling the beginning and it
+[348] does work. The problem is that then you
+[350] have much higher churn cuz you're kind
+[352] of misleading people.
+[354] Cuz they don't really know what they're
+[355] about to pay for, right? So like you
+[357] might have some insane churn because
+[359] someone who thought they were getting
+[360] like a marketing tool to generate assets
+[363] doesn't realize it's actually an API. So
+[365] that was like a problem. Um I found that
+[367] just doing a
+[369] free free trial or like free credits at
+[372] the beginning, like a certain amount of
+[373] credits when they run out you subscribe
+[375] and then get the
+[376] constant renewals, that works best cuz
+[378] then people know exactly what they're
+[380] buying, churn is super low, and they'll
+[382] give you feedback on why they didn't buy
+[384] cuz they actually tried it out. So you
+[385] kind of get that feedback loop, which
+[386] you wouldn't if you paywall at the
+[387] beginning.
+[388] >> So what is a thesis behind context.dev?
+[390] Like just taking a step back cuz we kind
+[392] of jumped right back into how you got
+[393] from zero to where you are right now. I
+[395] mainly cuz I just was blown away that
+[397] you have 400 customers and it's been
+[398] like a month since we first talked.
+[400] That's nuts. So congratulations.
+[402] >> Thank you. We were at 200 a month ago.
+[404] So it's not it's only a double, not like
+[406] uh
+[406] >> Yeah, but still that's a lot. That is a
+[408] big inflection point. I mean, when you
+[410] think about product market fit and what
+[412] that looks like on a chart, it looks
+[413] like that. You know, like you're you're
+[415] starting to get there. But yeah, like
+[417] what is the problem you're solving?
+[419] What's the thesis behind what you're
+[420] building?
+[421] >> So the problem Okay, everyone's building
+[424] agentic products now and they're
+[425] building agents and agents are out on
+[427] the in the world. They're going to need
+[429] data to do anything useful. It's the
+[430] same thing with products in general,
+[432] even pre-AI. A product that was super
+[434] useful was the one that gave you
+[436] normally connect to the internet in some
+[437] form and pull data. What we're building
+[439] is the infrastructure for
+[442] agentic products or agents in general.
+[444] So if you need any type of data from the
+[446] internet, you would use us first. Let's
+[448] say you need to set up like monitors on
+[451] the internet, you'd use us for that. Or
+[452] you want to do like some massive crawl,
+[454] you'd use us for that. So that's kind of
+[456] the direction we're heading is we're
+[457] infrastructure for web data.
+[459] >> Yeah, let's stick into that a little bit
+[460] because you know, when I use like Cloud
+[462] Code or something, you know, it can
+[464] access the internet.
+[465] >> Oh, yeah.
+[465] >> And and find stuff, but why does it need
+[468] Why should I use context? Is it not just
+[470] like my Cloud Code session is some other
+[472] use case? What's the primary use case?
+[474] >> Code session is you using it locally,
+[476] right? So, you could just use your local
+[478] browser to scrape like whatever info you
+[480] want. The problem is it's going to take
+[482] time and you don't have any scale. It's
+[484] kind of the same thesis of why sandboxes
+[486] exist. You know, I have a machine. Why
+[488] do I need the ability to send up a
+[490] thousand sandboxes? It's so you can get
+[492] that sort of scale. So,
+[494] if you wanted to scrape 100,000 URLs to
+[496] aggregate data, structure it, and then
+[498] compare it against each other, if you
+[499] use your local machine, it's going to
+[501] take, I don't know, 12 hours, maybe a
+[504] day, maybe 2 days depending on how it's
+[505] going to navigate those websites,
+[507] extract the data, etc. With us, it takes
+[509] like minutes, which is kind of the value
+[511] prop. And then if you actually want to
+[513] deploy it into the world and charge
+[515] people for it and build products around
+[517] it, then you definitely need a service
+[519] like that cuz you can't just have Cloud
+[521] Code running on your box to handle, you
+[523] know, 10,000 concurrent customers.
+[525] >> Give Give me an example of how some of
+[526] these customers are using it it to if
+[529] you can give me like a case study,
+[530] that'd be kind of helpful.
+[531] >> Yeah, yeah, for sure.
+[532] So, the most common use case at the very
+[534] beginning of the company was like
+[536] personalizing onboarding for people. So,
+[537] it's like the moment you log in, the
+[539] more information that these products or
+[541] companies have about you upon your sign
+[545] up because you have a corporate email,
+[546] the higher your conversion rate for
+[548] onboarding is. And then what the more
+[549] magical product just looks and feels.
+[551] So, that was like an easy use case.
+[552] Afterwards, we started populating
+[555] A lot of people use us to populate
+[556] context on customers over time. So,
+[559] let's say you maintain a knowledge base
+[560] on your customer so your agents actually
+[562] have access to what that customer does,
+[564] but then they update their website. They
+[566] add a new product. They add a new
+[567] service. They update their pricing. Um
+[569] you don't have that to have the customer
+[571] remember to go in and notify you that
+[573] that happened. So, you can just detect
+[574] it because it's on the internet. And uh
+[577] pull that data in. Let's say you wanted
+[579] to go uh you wanted to build an agent
+[581] that could really easily pull the
+[584] pricing tiers off any website. There's
+[587] websites in hundreds of different
+[588] languages. They put their pricing on
+[589] different pages. The data might a little
+[591] be fragmented across pages. So, how do
+[592] you do that efficiently? You can give us
+[595] a schema and we would pull it we would
+[597] structure the data for you. So, you
+[598] effectively turn any website into an
+[600] API. Um these are all use cases that
+[602] people actually use us for right now.
+[604] >> That's super interesting. I'm thinking
+[606] of a side project I've been working on.
+[607] I I recorded some content about it just
+[609] yesterday. I've been playing around with
+[611] ChatGPT's voice control for Codex, which
+[614] has been awesome. Like I can just walk
+[616] around my room and talk to it and it
+[618] just does stuff, you know, and I I
+[619] loaded up the desktop app with a bunch
+[622] of skills that we built at our company
+[624] to make like an agent team run
+[625] efficiently and and get good results.
+[627] And then I just set it off on this
+[628] project, which was building an agentic
+[631] workflow for sourcing and analyzing and
+[635] underwriting multi-family real estate
+[638] investments, like a whole pipeline,
+[639] because I'm building out my portfolio.
+[641] And I used it as like an excuse to demo
+[644] how voice works and I did like a video
+[646] on it. It'll come out soon, you'll see
+[647] it. But what it what what I'm thinking
+[648] about is I you know, I've got these APIs
+[650] that I'm paying for
+[652] that
+[654] pipe the data in about like a specific
+[656] area. And I think there's a bunch of
+[658] publicly available data that I could
+[660] probably use Context for to get better
+[662] enrichment on those properties. And so,
+[665] basically I would give Context
+[668] the structure of the schema of how I
+[670] want it formatted for for my for my
+[672] workflow and then it and then I would
+[674] just ping the API and it would go get it
+[675] from whatever sites I pointed at.
+[677] >> Exactly. And we handle all of the heavy
+[678] lifting of like figuring out how to
+[680] navigate what pages
+[682] to hit, how to pull the data. Uh
+[684] It It's very interesting product to
+[686] build because whenever we It's It's hard
+[688] to talk about use cases because you're
+[690] building infrastructure. So, it's the
+[691] same thing as like what do you use
+[692] sandboxes for? What do you use EC2 for?
+[695] It kind of can be used across a lot of
+[696] industries. So, that's exactly what
+[698] we're seeing with our customers. Like
+[700] very random use cases that are very high
+[703] value in these companies where they're
+[705] just happy that they have infra to do
+[708] it.
+[708] >> What's interesting to me because it's
+[711] very much like Google, right? Like
+[713] you're indexing sites, data on sites.
+[716] And you know, Google obviously had like
+[718] a search algorithm that ranks the
+[719] results to get you like the most
+[720] relevant result when you do a query. But
+[722] context.dev is like that but for the
+[724] identity gauge and for giving agents
+[726] context to do jobs for us. I mean, am I
+[729] making the right connection here? Am I
+[731] totally off? But that's kind of what it
+[732] feels like.
+[733] >> The idea is eventually we would build
+[734] our own index. Right now, it's just
+[735] really good infrastructure on demand
+[738] that kind of scales up. We do it all on
+[740] the spot to get you the freshest data.
+[741] But yes, eventually we will need to
+[743] build our own index. So, that's kind of
+[744] the the next version of this.
+[746] >> Yeah, so you'll have to index the whole
+[747] internet. Basically.
+[748] >> Yeah, I mean, you don't need the whole
+[749] internet. I think a lot There's already
+[751] a few players in the space and there's
+[753] like seven total. And you definitely
+[755] don't need the whole internet. You just
+[756] need a some small subset. And the
+[759] internet in terms of just text is a lot
+[761] less data than you'd expect. It's
+[763] measured in hundreds of terabytes rather
+[764] than like some extreme number. So, it's
+[766] not like unfathomable.
+[768] >> And it really is just text. That's it.
+[770] It's just text-based. It's very
+[771] interesting too though because I I think
+[774] you know, I was just having a
+[775] conversation with a friend about this
+[776] this morning.
+[777] There was this big lawsuit that came out
+[779] that got settled with between Anthropic
+[781] and all these authors, okay? And what it
+[783] came out was that Anthropic
+[786] downloaded a bunch of literary works
+[790] from a pirated website that like was all
+[792] these without paying for it, right? So,
+[794] they
+[795] And then they trained their model the
+[798] Claude on it. And lawyers like filed a
+[801] tort, you know, litigation and won. And
+[804] they settled for like 1.5 billion. Each
+[806] author only got like three grand. Like
+[808] the guy who spearheaded it, the
+[810] author that spearheaded it, literally
+[812] like spent three years on this and only
+[814] got like 3K.
+[815] >> [snorts]
+[816] >> But he felt good about the fact that he
+[817] kind of stood up for their them them.
+[820] What the court ruled was
+[822] the the part of that that caused the
+[824] settlement to have to happen, the thing
+[825] the rule that they broke was pirating
+[827] it. If they had just paid like who knows
+[830] how much it would have been, but it
+[831] would probably have been less than 1.5
+[832] billion dollars. If they just paid for
+[835] the books and scanned them and then
+[837] trained the model, that was totally fair
+[839] use because of copyright law. You know,
+[841] I think there's a big conversation
+[842] around scraping the web and using it for
+[844] training data and who does it belong to
+[846] and you know, and how does that work?
+[847] But it it would seems kind of obvious to
+[849] me that if your system is like superior
+[851] at getting that data, not only can you
+[853] feed it to agents so they have the
+[854] latest context, but you can also use it
+[856] for training models.
+[857] >> You definitely can. Right now we're I
+[859] mean the main use case we're focused on
+[860] is like infra for products cuz
+[863] it kind of narrows down your customer
+[864] base a little bit because you you can go
+[866] extremely wide with this without even
+[868] much effort at all, right? Like
+[869] everybody needs data from the internet
+[871] in some way, shape or form. On the whole
+[873] like scraping litigation stuff, yes,
+[875] that is like a big concern whenever
+[877] you're building an index of the web is
+[878] like the authority or
+[881] the type of the website that you're
+[882] pulling the information from matters a
+[883] lot. And then if it's like let's say
+[885] you're you accidentally scrape like a a
+[887] social network that is not not like one
+[890] of the famous ones like
+[892] a lesser known one. So you don't realize
+[894] it's a social network. And then somebody
+[896] posts a comment with like a book that
+[898] is, you know, not supposed to be there.
+[901] Um you have to be very careful about how
+[902] to pull that. So that's why we're kind
+[904] of doing that as the next step rather
+[905] than doing it uh from the start. But it
+[908] is something I've thought about a lot.
+[909] >> What's something that's has surprised
+[911] you in the last say like 90 days
+[913] building this like that sort of caught
+[915] you by surprise sp-
+[917] anything?
+[917] >> Yeah, I think
+[919] a lot of typical advice around building
+[921] companies is usually, you know, focus on
+[923] one thing, go all in, uh make those
+[925] people really happy, maybe expand one
+[927] step at a time. Like a lot of
+[929] traditional advice has just been wrong,
+[931] I guess, is the best way to put it. Like
+[933] whenever we ship something new, the
+[934] customer base just seems to absorb it
+[936] faster than I can ship it. Like quite
+[938] literally, I will
+[939] We don't even have that many customers,
+[941] right? And it's API product, so they're
+[942] not supposed to be on dashboard every
+[944] day. But like we shipped this new
+[946] feature, and then before I announced it,
+[948] like within 20 minutes, somebody had
+[949] already created We shipped monders, and
+[951] somebody had already created like 500
+[953] almost immediately. And it's a very
+[954] interesting experience when you ship
+[956] something new that you're worried like
+[958] whether it meshes with the product or
+[960] not, and then suddenly you're just your
+[962] customer base just absorbs it right
+[963] away. Um that was unexpected.
+[966] >> How many people on the team, and are you
+[967] guys using agents to build the product?
+[970] >> Uh four people. Yes, we're using agents
+[971] very heavily, especially on like
+[973] research loops and eval loops to see,
+[975] okay, how can we improve performance?
+[977] Cuz what Now that we have we do about 30
+[980] million requests a month right now.
+[982] >> Wow.
+[982] >> So you can always take a like a sliver
+[983] of prod traffic and rerun it locally to
+[985] see or rerun it with agents type of
+[987] sandbox to see, can you improve
+[989] performance in some way? Like what
+[990] happened during this period? Um this is
+[992] stuff that would have taken engineers
+[994] like weeks back in the day. Like one
+[995] engineer would have taken weeks to do
+[997] set performance improvement. Now we can
+[999] do it in like an hour, which is great.
+[1000] So you can have agents looking at
+[1002] metrics. They see whenever, okay, at
+[1005] this time of day for this customer,
+[1006] there was like a spike in latency or a
+[1008] spike in CPU usage that would have
+[1010] toppled over the box or something else.
+[1013] You take that sliver of traffic, rerun
+[1015] it locally as long as there wasn't ZDR
+[1016] or anything on it, and actually
+[1019] improve the performance, and then ship a
+[1020] fix out like that. It's great. I think
+[1022] one thing that's very worrisome is
+[1024] because we have so much volume, we just
+[1026] can't go down.
+[1027] >> Yeah. You know, you you guys are never
+[1029] sleeping.
+[1030] >> Yeah. Yeah. So you
+[1031] >> [laughter]
+[1031] >> you just
+[1032] >> You're on pager duty.
+[1034] >> Yeah, you need to like have a very good
+[1035] test set up. You need to do a lot more
+[1038] testing than we used to, especially
+[1040] automated testing, but yeah, pros and
+[1043] cons.
+[1043] >> So, you're hiring for DevOps?
+[1046] >> Our DevOps is our agents. But no, we
+[1047] have four people now, including me,
+[1050] and then just split roles. But yes,
+[1052] DevOps
+[1053] >> Well, that's pretty cool though that
+[1054] you're using your agents basically as
+[1056] your DevOps monitoring system and
+[1058] improvement, right? And I'm curious to
+[1060] learn So, these loops, like what does
+[1061] that actually mean? What does that
+[1063] You've got a agent loop running. What
+[1065] does that mean?
+[1067] >> So, let's say um there's this wonderful
+[1069] tool called Axiom, axiom.co. I do not
+[1073] know how they make money because it's
+[1074] it's insane. You can ingest like a
+[1075] thousand gigabytes of logs per month for
+[1078] 25 bucks a month. It's insane. I
+[1079] recommend everybody watching this just
+[1081] plug in them um instead of New Relic or
+[1083] or Datadog.
+[1084] But uh we send all of our logs there,
+[1087] and then we set up these custom monitors
+[1088] via the MCP. Uh we just say, "Hey, you
+[1091] know, like imagine how you used to set
+[1093] up monitoring on your products." You'd
+[1094] go, you'd find like a line of code,
+[1096] you'd be like, "I want to monitor this.
+[1098] I want to monitor that." Now, you just
+[1099] tell your agent to set it up and create
+[1100] a monitors on the web, and you go ahead
+[1103] and keep track of like CPU usage or RAM
+[1105] or latency or like data quality if
+[1108] suddenly you have a spike of of what
+[1110] looks like bad data. And then you just
+[1112] take whatever traffic happened during
+[1114] that time, all the requests, all the
+[1115] responses, you load them in locally, and
+[1118] then you just tell your agent, "Hey,
+[1119] figure out how to improve this." Or you
+[1121] give it some type of specific goal. It
+[1122] really depends on what went wrong during
+[1124] that time or what degraded during that
+[1126] time. You give it a goal, and you just
+[1128] let it run for a while. And I mean, you
+[1130] do have to steer it sometimes cuz it'll
+[1132] go on like weird paths that may not be
+[1134] useful, but uh that normally means your
+[1137] setup is lacking context in some way,
+[1139] shape, or form.
+[1141] >> That's really interesting. That feels
+[1142] like a whole business in and of itself
+[1144] to me. When I hear you say it, I'm like,
+[1145] "Other people will want this."
+[1147] >> [laughter]
+[1147] >> Yeah.
+[1148] >> It's uh I mean, there are businesses I I
+[1150] I know of a few that are trying to do
+[1151] this. The AI SRE, you know? So, that
+[1154] that's basically the loop they're doing.
+[1157] >> Very cool. But, you guys just hacked it
+[1159] together yourselves
+[1160] using Glide code or something like that.
+[1163] >> Yeah. Yeah, pretty much.
+[1165] >> So, I mean, as a lean as a team of four
+[1166] people, like what are the agentic
+[1168] systems other than that? Are there any
+[1169] other things you're doing to kind of get
+[1171] hit the scale and like support all those
+[1173] 400 customers? You know, you that's a
+[1174] lot.
+[1175] >> So, emails I handle we handle customer
+[1178] support ourselves. Like, we have an AI
+[1180] chat bot on the website. It's primarily
+[1181] just there because we get like people
+[1183] asking questions in other languages now,
+[1185] and it's just too slow to respond.
+[1187] Especially if they're asking like, "Do
+[1189] you have an API for this?" You know, if
+[1191] I were to do it myself, I'd have to go
+[1192] copy the message, translate it, and come
+[1195] back, translate it back. Um so, we have
+[1197] like these AI support agents, but we
+[1199] usually step in if it's not resolved
+[1201] within uh three question turns.
+[1204] And then, on the customer side, I think
+[1207] that's about it. We have agents running
+[1209] for different things, but
+[1211] we try to only automate something after
+[1213] it's proven to work like manually.
+[1215] >> Given where you're at, you just hit this
+[1216] inflection point,
+[1218] what's next? Like, what are you what are
+[1220] you prioritizing? And how are you coming
+[1222] up with those priorities?
+[1223] >> So, there's a lot we can do, which is
+[1226] both a blessing and a curse, right?
+[1227] There's like infinite directions we can
+[1229] take this cuz it's still very young. And
+[1231] we've kind of proven that it if we ship
+[1235] not as I mean, there's a point where
+[1236] you've just shipped too much stuff, but
+[1238] everything we're shipping is kind of
+[1239] correlated, it's all infra, we're
+[1241] packaging it in a really good way, and
+[1243] customers are absorbing it, and really
+[1245] enjoying it, right? They're getting a
+[1246] lot of value out of it. Um so, once you
+[1249] as a business establish those facts that
+[1251] your customers will enjoy you shipping
+[1254] more stuff to a certain degree, um and
+[1256] you can go in different directions, and
+[1257] also customers will be happy with that,
+[1259] you can go in even more directions. So,
+[1261] for us, right now it's just about making
+[1263] sure we're doing the right next thing,
+[1265] which we're about to add more company
+[1267] data. We're about to add like certain
+[1268] amounts of people data. And you can also
+[1271] blow up the scope there. So, trying to
+[1273] keep it
+[1274] focused on, "Hey, you can use this as
+[1276] infrastructure for your products."
+[1278] >> And I'm curious, you know, you're in
+[1280] you're in Y Combinator. Are you still
+[1282] in? Is the Is that cohort still
+[1283] happening? And
+[1285] what's that been [clears throat] like?
+[1286] >> It is It is definitely still happening.
+[1288] And it's been an experience, man. It
+[1290] It's a lot of fun, like
+[1293] and and very tiring at the same time,
+[1295] right? Cuz you're just working all the
+[1296] time.
+[1298] You're setting these outlandish and and
+[1300] just crazy goals every 2 weeks. And
+[1303] the the crazier part is you actually get
+[1305] close, right? Like a lot of people don't
+[1306] hit the goals, but the fact that you
+[1308] even set such an outlandish goal and
+[1310] you're kind of going full sprint towards
+[1312] it means you get way further than you
+[1313] would have without it. Um it's fun.
+[1316] Yeah, it's going well.
+[1317] >> Are you seeing any other like AI
+[1318] companies or agentic companies that
+[1320] you're excited about in the cohort or or
+[1322] elsewhere? Like what are you getting any
+[1324] getting any alpha?
+[1325] >> I don't think I can say, but yes, there
+[1327] are some people that are absolutely
+[1328] killing it. And they're also extremely
+[1330] cool people, too. Um cuz we kind of
+[1332] started the batch together, all of us.
+[1334] We're like, "This is going to be fun."
+[1336] And then you go through it. It is fun.
+[1337] It's just super tiring. It's much much
+[1339] more tiring than you expected, right? Um
+[1341] for some people, you know, their entire
+[1343] business is sales-led, so they're just
+[1344] traveling every 2 days across the
+[1346] country. Uh for me, my business is
+[1348] product-led, so I don't need to do that.
+[1350] I still need to take calls all the time,
+[1352] but I don't have to actually do as much
+[1354] traveling.
+[1355] >> Well, that's good.
+[1356] Um and as far as, you know, what it took
+[1358] you to get here, what you know, I think
+[1360] you you were at Amazon before this and
+[1362] Sunrun?
+[1363] >> Yeah.
+[1363] >> What are some of the lessons you learned
+[1364] there that have kind of helped inform
+[1366] your strategy today and like help you
+[1368] get to this far with with this company?
+[1370] >> Amazon was great to see what proper
+[1372] engineering looks like. Like, you know,
+[1373] a lot of people have different gripes
+[1374] with Amazon's engineering culture, but
+[1377] it it is legit, right? Like you you do
+[1379] learn how to be a good engineer there.
+[1381] You do learn how to do things at sort of
+[1382] gigantic scale. Um you need to forget
+[1385] some of that when you're building a
+[1386] startup because it's just not relevant,
+[1388] but it does help with building a product
+[1390] that's already doing, you know, 30
+[1391] million requests a month and that's
+[1393] growing much faster. So it helps to make
+[1395] sure we don't go down on the engineering
+[1397] front. Uh Sunrun was just a lot of fun.
+[1400] Like it was a solar company, but we were
+[1401] this AI team inside. We're building
+[1403] products non-stop that would drive like
+[1405] a ton of revenue for the company. And um
+[1408] it was in a field that sort of benefited
+[1411] from data, but also it
+[1413] I don't know. It was just a very
+[1414] interesting time there. Um it really
+[1417] helped me figure out like how big
+[1419] companies work uh when you're kind of
+[1421] near budget this but I guess I guess
+[1424] budget decision makers is a good way to
+[1426] put it. Um so it helped with that side
+[1428] of things. But yeah, I guess this is
+[1430] next. And then I did StockAlarm at some
+[1432] point, which was uh my first startup. So
+[1435] that was fun.
+[1436] >> Very cool. So we're going towards the
+[1437] top of the show. I always ask this at
+[1438] the end, but what have I not asked you
+[1440] that I should have asked or that you
+[1441] wanted to talk about?
+[1443] >> I think you covered it all. I don't
+[1444] know. I Nothing comes to mind.
+[1447] >> Awesome. Well, look, I really appreciate
+[1448] you coming on the show. Super exciting
+[1450] to
+[1451] hear all the progress you've made,
+[1452] especially since the last time we we
+[1454] talked and congrats on the big jump in
+[1456] 200 customers. And I hope that I hope
+[1457] that growth continues for you, man.
+[1459] That's really exciting.
+[1460] >> Thank you. Yeah, let's uh let's see what
+[1462] next month looks like.
+[1463] >> [music]
+[1473] [music]

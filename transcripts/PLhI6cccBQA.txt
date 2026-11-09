@@ -1,0 +1,746 @@
+[0] eo at getlab today we're going to talk
+[2] about pricing for open source
+[4] i'm joined by paul from superbase paul
+[7] you want to introduce yourself and the
+[8] company real quick
+[10] yeah sure thanks ed my name is paul i'm
+[12] the ceo and co-founder of
+[15] superbase and superbase is an open
+[17] source firebase
+[18] alternative we're building the features
+[19] of firebase but we use open source
+[22] products so we try to use existing open
+[24] source products wherever possible
+[25] actually
+[26] and if they don't exist or we don't
+[28] think they're enterprise ready then
+[30] we'll
+[30] develop an open source them ourselves
+[34] awesome cool i'm a big postgres fan so
+[37] cool to see this
+[38] uh you prepped some questions maybe uh
+[40] launch off you want to ask the first
+[42] question
+[42] yeah sure sure so yeah i prepped a lot
+[45] of questions on uh pricing as uh
+[48] most people who have worked in open
+[49] source no monetization is
+[51] quite tough so i'd love to maybe start
+[54] with a brief history of
+[57] get labs pricing some of the things that
+[58] you tried
+[60] some of the things that worked and
+[61] didn't work
+[63] yeah first thing we tried
+[66] was donations dmitry called it ice cream
+[69] money because it
+[71] and netted him seven dollars each month
+[74] and
+[74] that was enough to buy ice cream for him
+[76] and his partner
+[78] we managed to increase it to a thousand
+[80] dollars which is pretty awesome
+[82] i think if you're really popular um
+[87] you can get to paying for one or two
+[89] people
+[90] it's not enough to kind of take on a
+[93] complete
+[94] company or something like that so we
+[98] uh support
+[103] i see a lot of open source companies
+[105] doing that
+[106] and we saw completely rational behaviors
+[108] on part of our customers
+[110] as in when they start with gitlab they
+[112] would use support when they needed help
+[113] they
+[114] would get support but after a year they
+[116] stopped the support contract because
+[118] they weren't using it anymore
+[120] and there's kind of a perverse incentive
+[124] where every time someone has a question
+[125] you're like hey should i update the docs
+[127] or should i just
+[128] have everyone run into this and come ask
+[130] me us for support
+[131] and so it's it's not the right incentive
+[135] and it's not high enough margin
+[138] we tried paid development uh where we
+[142] said look if you want extra features in
+[143] gitlab you'll pay for it
+[145] but there was a bit of a bystander
+[147] effect when multiple people asked for
+[149] the same feature we informed them like
+[151] hey you only have to pay half
+[153] instead of being very excited that they
+[154] only had to pay half they both
+[156] like stopped responding as you know well
+[158] now the other company will pay for it
+[161] also it got categorized by the
+[163] purchasing department as
+[165] paid development they're like pay
+[167] development
+[168] we got people that do software
+[169] development for us we actually got a
+[171] super good deal for a provider
+[173] and they do all our software development
+[175] so there you are
+[176] you fought you were finally going to
+[178] make some money and it's that you got a
+[179] bunch
+[180] of java programmers trying to work on a
+[182] ruby code base and
+[183] it would have you're not getting paid
+[185] for your effort and actually it would
+[186] have been less time to just do it
+[188] yourself in the first place so
+[190] it didn't work at all so we settled on
+[194] asking money for proprietary features
+[196] it's a great model it works yes
+[199] there's a lot to how that works but it
+[201] was superior to
+[202] what we tried before oh yeah very nice
+[205] funnily enough we've been
+[207] only monetizing through donations so far
+[210] because we're in alpha we didn't feel as
+[213] good enough to to monetize and start
+[215] charging our customers so we just put a
+[217] get you know sponsors um
+[221] link up and so um our main sponsor is a
+[224] vc
+[225] actually who obviously won the publicity
+[228] but uh yeah we we feel the pain and
+[232] of gathering up sponsorship um
+[236] yeah so now you've settled on this sort
+[238] of buyer-based pricing model
+[240] um i'd love to yeah
+[243] hear some of the pros and cons or more
+[246] how you came about it and how you think
+[248] about
+[248] maybe setting up the buckets of
+[250] different pricing or you can actually
+[252] explain it
+[253] how what it is and how it works first
+[255] and maybe then some strategies of how
+[257] you came up with it
+[259] yeah it's like okay we
+[262] we're going to charge for some features
+[264] how do you how do you bucket the
+[265] features across your
+[267] have free features or open source
+[269] features and then the paid ones but why
+[271] do people pay more
+[272] and one thing we looked at like we bet
+[275] that bigger companies pay more
+[277] so we're gonna price like that
+[281] um but then some smaller companies came
+[283] and said look
+[284] we need the features that you have in
+[286] the bigger company subscription
+[288] however we're not a big company and you
+[290] say that you only charge a lot to big
+[292] companies
+[292] so you've bucketed the features wrong
+[296] i'm like uh-huh it kind of makes sense
+[299] we understand you need those advanced
+[300] features and yes we say we only charge
+[302] big companies so
+[304] that was a big dilemma and actually
+[307] since gitlab is a pretty comprehensive
+[309] solution
+[310] some of smaller companies tended to be
+[312] on the forefront
+[313] of adoption and needed even like more
+[315] features and some of the bigger
+[317] companies that weren't this far along
+[319] so that didn't work then we also tried
+[322] like
+[323] well it's about the sophistication have
+[325] we learned like oh these small companies
+[327] are very far
+[328] along in the process so
+[331] um the more advanced you are devops wise
+[336] the more you're going to pay
+[339] that didn't quite work because there
+[341] were some companies that
+[343] had to undergo like digital
+[344] transformation they were super excited
+[346] about gitlab
+[346] who revolutionized their business and
+[349] then
+[350] we would be steering them to our lowest
+[352] tier because like
+[354] just getting started with devops great
+[356] take our lowest tier
+[357] well these were the customers that the
+[359] willingness to pay was extremely high
+[362] so it didn't match kind of the the
+[364] willingness to pay
+[366] that didn't work out and then we settled
+[370] on like
+[370] hey it really depends on who reaches out
+[373] to us
+[374] we're talking with executives they're
+[377] fine with
+[378] paying more per user like they see this
+[380] strategic value
+[381] if we're talking with a manager who had
+[384] like has to explain it to the
+[385] engineering director
+[387] like they have a hard time getting
+[389] approval so
+[390] basically like not just willingness to
+[393] buy but
+[394] ability to buy it so much so
+[397] and they have very different demands
+[400] like the manager just wants
+[402] some approvals a director maybe wants
+[404] stability
+[405] executive ones like enterprise-wide
+[408] planning and security initiatives
+[410] so we're like hey this this is it
+[412] depends on who the buyers who are we
+[414] talking with
+[416] we can kind of guess which features they
+[418] like we can
+[420] price them accordingly um yeah that's
+[423] quite interesting as well because they
+[424] probably come
+[425] in on different channels i imagine so
+[428] developers come in
+[429] sort of bottom up see your website and
+[431] we'll buy or start using directly from
+[433] the website whereas
+[435] you might have the well
+[438] other managers and above are they
+[440] actually coming and looking at the
+[442] website or
+[442] how do they actually land into gitlab
+[446] yeah there's a bit of a distinction
+[450] but it's not as clear as you'd think we
+[452] have
+[454] people buying our top tier just off the
+[457] website
+[458] people we never spoke to and we have
+[460] some people with
+[461] a lot of like sales interaction and
+[463] handling and a lot of procurement
+[465] processes
+[466] who end up buying her lowest tier so
+[470] kind of the channel has not been a very
+[472] good predictor
+[474] okay uh interesting yeah so uh
+[478] probably one of the most complex parts i
+[481] guess of
+[482] coming up with the buckets um
+[485] so i would think of um open source kind
+[489] of like
+[489] two different things you've either got
+[491] very heavy infrastructure
+[493] type products maybe you know your hadoop
+[497] and you literally need to re-engineer
+[499] everything and then all the way up to
+[501] a product maybe even it's on the
+[502] spectrum
+[504] a product where you can just install
+[506] maybe quite
+[507] quite simply just a single installation
+[510] um
+[511] you can get started yourself you
+[512] wouldn't need too much engineering
+[515] around it i i actually think there are
+[518] elements of
+[520] gitlab for example your
+[523] your the runners the
+[526] the continuous integration runners which
+[529] are more
+[529] like infrastructure you're paying for a
+[532] lot of heavy infrastructure to go on
+[533] there
+[534] um how do you think about pricing
+[536] between you know the heavy
+[538] infrastructure stuff and
+[539] and the um and the you know
+[542] more product he just features yeah
+[545] that's interesting i don't have an
+[546] opinion about that
+[548] however i do have an opinion on what you
+[551] say like there's a clear
+[552] difference between the two and i've
+[554] articulated that in the context of how
+[556] likely are you to experience
+[558] fork and commoditize basically aws
+[561] taking your open source code base and
+[563] adding some of your
+[565] paid features to it we make the
+[567] distinction between
+[568] application software so that be things
+[571] like gitlab
+[572] infrastructure software things like
+[574] mongodb
+[576] and we think look at the interface
+[578] application software has a
+[579] user interface the infrastructure
+[581] software has an api
+[583] and in the context of working and
+[585] commoditization like
+[587] an interface it's much harder to
+[589] replicate
+[590] you think of it in this form of compute
+[592] usage application software drives
+[595] less compute although we have ci and
+[599] things like that but
+[600] like a mongodb is just infrastructure
+[602] drives the compute it's much closer to
+[604] the metal
+[605] and hyper clouds want to drive compute
+[608] so they're more likely to fork and
+[610] commoditize infrastructure
+[612] deployment gitlab.com salesforce their
+[614] multi-tenant
+[616] infrastructure software is always signal
+[618] tenant always
+[619] employed in a vpc with your cluster
+[623] so that fits more with the hyperclocks
+[625] things like rds like one deployment per
+[628] customer
+[629] feature richness application software
+[631] has more features harder to replicate
+[634] and also ecosystem activity mongodb
+[638] ceo for example said look we open source
+[641] is great for marketing but we have very
+[643] few contributions to the
+[645] engine it's just very hard for people to
+[647] contribute there
+[649] so i see that distinction
+[652] um i don't have an opinion on how it
+[655] relates to pricing
+[657] i think on average the infrastructure
+[660] people end up selling to the rt
+[661] department
+[663] and the itt department historically has
+[665] a bigger budget
+[666] the devops people don't have the budget
+[668] i keep people to control the budget
+[670] they have no problem paying for big
+[673] databases
+[674] so you're that's great people to sell to
+[677] you see that
+[677] for example on the success of companies
+[679] like hashicorp with their
+[681] fault product they sell to rt
+[682] departments and i
+[684] i that they have a much higher asp
+[686] average sales price
+[687] than killer i guess though
+[691] i mean that's very particular to
+[694] the cloud vendors i i just wonder so
+[697] let's take a pure application
+[699] um i have seen for example century a
+[702] great product
+[703] um i've seen i've seen people
+[707] um literally take everything that they
+[710] did
+[710] even the website included and um
+[713] and then just swap the logo for
+[716] something new so
+[717] in that case it's easy not so much for a
+[720] cloud provider maybe they'll be scared
+[721] of the
+[722] legalities of doing such a thing but
+[724] it's perfectly fine for
+[725] an application to be especially if it's
+[728] mit or
+[729] apache2 to be sort of just cloned
+[732] and then spun up and you create say a
+[734] hosted
+[735] provider around it and start charging
+[738] people around that so
+[740] i guess in that case applications might
+[743] be quite simple to
+[745] to um yeah copy but also
+[749] you know start start making money off of
+[751] an application versus infrastructure
+[754] uh an individual can it's very hard for
+[757] an individual to come in and
+[758] clone a full infrastructure project it
+[760] can only really be done
+[762] by the cloud providers which was what we
+[765] saw was sort of
+[766] red as elastic i think i think there's
+[769] something else at play here too
+[771] namely there were no proprietary
+[774] features
+[774] in century so it wasn't fork and
+[777] commoditized
+[778] it wasn't even fork it was just you
+[779] could just take the copays there were no
+[782] there were no proprietary features to
+[783] commoditize i think that's a big
+[785] difference
+[786] so i'm working on the assumptions that
+[788] there's that's open court
+[790] that there's some oversource and some
+[792] proprietary features and and
+[794] it applies to that yes so i saw on your
+[798] open source is not equal to
+[802] open source business or something
+[803] something similar to this yeah we
+[805] so gitlab has an open source um
+[809] contains open source code but we
+[810] consider ourselves an open core company
+[813] because if we call ourselves open source
+[815] the people on hacker news complain that
+[816] we
+[817] ship proprietary code and they're
+[818] totally right
+[820] yeah yeah and and that's critical to
+[824] building a business i think so i think
+[826] in order to have a fast growing startup
+[828] you need at least
+[829] 60 margins and i don't think you'll get
+[833] with support now there's counter
+[835] examples
+[836] famously red hat but it's been hard for
+[839] people to replicate that
+[840] and i think cloud cloudera is now
+[843] getting there
+[844] but it's it's been a struggle to get
+[848] yeah yeah i tend to agree i mean the
+[851] earliest stages of course of the
+[853] business
+[853] are the most critical as well so you
+[856] need every advantage that you can take
+[858] to grow the business so
+[860] open core seems to be the winning
+[862] strategy at this stage
+[865] um so yeah
+[869] i thought as well maybe we could talk
+[872] more as well on
+[873] not just the um pricing but also
+[876] the sales and and how it works maybe
+[879] uh so i've watched a few few talks on on
+[883] sales and they'll talk largely around
+[885] maybe
+[886] pairing up a solution architect with
+[888] your um
+[890] with your sales team uh if it's required
+[892] maybe more
+[893] application might require maybe one
+[895] solution architect
+[896] to say 10 um sales people
+[900] whereas when you get down to
+[901] infrastructure you need sort of more
+[903] one-to-one
+[903] mapping a solution architect is on
+[905] everything we have i think
+[907] three two three sales people to one
+[910] solution architect okay
+[912] okay and then how do you how do you um
+[915] do sales is a lot of outbound or do you
+[917] um get enough inbound from your website
+[920] and it's largely just
+[921] sort of faster the combination in the
+[923] beginning was more inbound
+[924] and as you grow bigger the inbound is
+[927] not enough
+[928] so you start having more and outbound
+[931] to um and and that's now i think that
+[934] the
+[935] well outbound to people calling but also
+[937] like advertising
+[939] partnerships uh seo content
+[943] only something to drive to drive traffic
+[947] marketing marketing leads yeah sure
+[951] for the outbound of your sales team
+[954] was there a change in the sales team or
+[956] was there
+[957] um a shift from
+[960] they had to change their strategy from
+[963] well i've heard the term farmers to
+[965] hunters
+[966] um yeah yeah i think i think
+[969] over time it evolved so you start off
+[971] with not
+[972] having any activities just a contact
+[973] form on the website and that's enough
+[975] and over time you do more and more
+[979] you become more and more proactive yeah
+[982] and then do they feed into um the sales
+[985] people do they feed into
+[987] the pricing and do they give good
+[990] discussions on what to build
+[992] uh new features that are being requested
+[996] yeah for sure both on a detailed level
+[999] where they place
+[1001] all our features are open their issues
+[1004] on our issue tracker
+[1005] and they place salesforce links with a
+[1007] link to the customer
+[1008] in that so we can see like who's
+[1010] interested in the feature
+[1012] without disclosing the customer name and
+[1015] then on a higher level
+[1016] there's a list that sales keeps like
+[1019] these are the top 10 things we need and
+[1021] they discuss that with
+[1022] a product that we need that our
+[1025] customers need
+[1027] okay okay that's very good
+[1030] um so i guess then on the buyer-based
+[1032] pricing
+[1034] are there is there sort of a next
+[1037] iteration are there still some things
+[1038] which are
+[1040] not going well that need to be improved
+[1043] you know for a new startup um who's
+[1046] thinking about pricing and they're
+[1047] going to say um you know use this
+[1050] strategy what should they be thinking
+[1052] about and
+[1054] you know what improvements could they
+[1055] make on your model
+[1058] yeah i think what we have done is we
+[1060] priced very
+[1062] low we started with two dollars per user
+[1064] per month and we doubled that to four
+[1067] dollars
+[1068] but that is at least very little margin
+[1072] after all of our cost so if i had to do
+[1075] it again i wouldn't
+[1076] would have introduced that so it's low
+[1081] okay that's nice and then in terms of
+[1083] the number of buckets and
+[1084] um would it grow
+[1088] is it good to start with i think you've
+[1089] got four different
+[1091] sort of buyer profiles how did you come
+[1093] up with that and
+[1094] and how would you recommend a startup
+[1096] comes up with it
+[1097] yeah well we had to so don't do what i
+[1101] i introduced the two dollar thing and
+[1103] then everyone is
+[1104] like it's way too low and we couldn't
+[1106] make it we doubled it and everyone was
+[1108] like okay that's okay but never do that
+[1109] again
+[1111] and then i pitched the vc and i said
+[1114] look we're gonna make a thousand dollars
+[1116] per user
+[1117] per year and that was 25 times what i
+[1121] was charting at the time
+[1122] so i pitched them no one in the room
+[1124] believed me
+[1126] but i still thought okay we're gonna no
+[1128] one told me luckily that's sometimes
+[1129] great if people don't tell you
+[1131] so i thought okay i gotta get to the
+[1133] thousand dollars
+[1135] that's pretty steep let's do it in two
+[1139] steps two steps of 5x kind of neatly
+[1142] divides down
+[1144] so uh that's what we did we introduced
+[1147] the higher tier
+[1148] five times as much and then a higher
+[1149] tier five times as much and we're not
+[1151] charging
+[1152] eleven hundred dollars and some people
+[1155] in the room came back like said you
+[1156] pitched that
+[1157] i didn't i never thought people would
+[1159] pay that much so
+[1161] but luckily it's not the same product
+[1163] that i picked at the time that was just
+[1165] version control we now do the
+[1167] complete devops life cycle but um
+[1171] i think the common mistake that founders
+[1173] make is pricing too low
+[1174] i've heard that from a ton of founders
+[1176] i've never heard pricing too high
+[1178] people will just leave and you can drop
+[1181] lower your prices so
+[1182] it's it's much easier to resolve
+[1186] i guess then throw yourself back to the
+[1188] start
+[1189] you know five years you didn't have that
+[1191] feature set
+[1192] and maybe you couldn't have got the 99 a
+[1195] month
+[1196] type profile how do you how do you
+[1199] get there is it a matter of just rolling
+[1202] out new pricing
+[1203] as you roll out new features for sure
+[1205] for sure there's
+[1206] they're so effective that you add more
+[1208] value
+[1210] um what we've done when we introduced
+[1212] our top tier
+[1214] we waited until half of like first we
+[1216] had the lowest year
+[1217] then when half of our revenue had
+[1219] transferred to the middle tier we
+[1220] introduced the top tier
+[1222] what we did in the beginning was hey new
+[1224] tier
+[1225] there's no features basically in it
+[1227] because we have to add that every month
+[1229] and it's just new so you're going to get
+[1231] a great discount you're going to get it
+[1233] for almost the same price as the middle
+[1236] um and then after that action ended
+[1239] um a quarter long or half a year long we
+[1242] said okay
+[1243] we're just going to do big discounts in
+[1245] case
+[1246] it makes sense and it's tricky because
+[1249] you have to treat people equally and
+[1251] so you gotta i think we manage that well
+[1255] um but you can solve some of it with
+[1259] uh discounting and then over time that
+[1261] discount
+[1262] gets is reduced as as the value
+[1265] accumulates
+[1266] in that tier okay okay
+[1269] got it and then do you ever shift around
+[1272] um once you've got the bucket set up do
+[1275] you move
+[1276] around items within the buckets it
+[1278] features from one bucket to another
+[1280] so far like moving features up
+[1283] is obviously it's very concerning for
+[1285] customers so we try to not do that we do
+[1288] regularly move features down
+[1290] and kind of error on the side of okay
+[1292] rather have it in too high of a bucket
+[1293] because we can always move it down if
+[1295] you move it up
+[1296] um it's very upsetting to people um
+[1299] and for the open source there we never
+[1301] move something out of open source like
+[1303] if it's open open source we'll never
+[1304] make it close source
+[1306] afterwards yeah got it i think uh i
+[1308] chatted to the founders of calm the api
+[1310] gateway
+[1311] they said that uh yeah they use a very
+[1313] similar strategy so
+[1314] they start with sort of well most of the
+[1316] time it'll be say an enterprise plugin
+[1319] which then might um become popular
+[1322] enough and then they'll put it into open
+[1323] source so i think
+[1324] starting restrictive and making it open
+[1326] is always the
+[1328] seems to be the way to go yep i was
+[1331] saying that
+[1332] um cloudera had low gross margins
+[1336] and i'm looking at their quarterly
+[1337] filing and
+[1339] their gross margin is over 75 percent so
+[1342] that's no longer
+[1344] true so good for them yeah okay
+[1347] that's very nice okay that's great
+[1351] i mean that's yeah really everything
+[1354] that i
+[1355] wanted to know about pricing how you
+[1357] tackle it and um
+[1359] yeah it's it's pretty pretty useful
+[1362] stuff
+[1362] oh i remember cloudera was the one that
+[1365] did do
+[1367] um that did do proprietary features so
+[1369] maybe maybe
+[1370] it makes my point they acquired one of
+[1373] their competitors
+[1374] that was i promised all code open source
+[1378] and that that was hard to make money on
+[1380] so that's me
+[1381] okay i think what the lesson is there
+[1385] and what some companies do is they try
+[1387] to price
+[1388] for the convenient distribution so like
+[1390] all of our code is open source however
+[1392] if you want a binary and if you want
+[1394] easy updates then you have to pay us
+[1397] yeah i think that's tricky i think that
+[1399] opens the door
+[1400] to someone else just saying okay well
+[1402] i'll compile
+[1403] open source and send updates um and i
+[1406] think also you're missing a big benefit
+[1408] because ease of installation is very
+[1410] important so
+[1411] by not offering the binary like you kind
+[1414] of miss out on the marketing aspect of
+[1416] open source
+[1418] yeah okay and i guess though for
+[1422] uh they're specific to application type
+[1424] products where
+[1426] it's easy to install maybe
+[1427] infrastructure a little bit
+[1429] infrastructure too like wants to compile
+[1432] from source
+[1433] rather had like a dev
+[1436] server sure uh yeah a single
+[1438] installation
+[1440] yeah we've got a funny situation where
+[1445] so super bass is actually made up of
+[1447] five different open source tools now
+[1449] um with postgres on the bottom uh and
+[1452] then we
+[1453] use calm for our api gateway we use
+[1455] postgresql
+[1457] which is uh yeah that's at some point
+[1458] it's called postgres
+[1460] we actually hired the maintainer of that
+[1462] we use go through
+[1463] netlifes go through we use a real-time
+[1465] server that we
+[1466] produce ourselves on our alexa server
+[1469] the only problem is that
+[1470] each one of them sort of scales
+[1471] independently each one can be installed
+[1473] on its own
+[1474] but super base as a package is actually
+[1477] all of these things and we try to make
+[1480] we're just taking
+[1481] existing communities trying to to
+[1483] support them
+[1484] so we're in this situation where it's
+[1487] not so easy to install a single
+[1490] item um you can't just run
+[1493] super base on the server while you can
+[1495] and and we're working towards that
+[1497] but you probably don't get the better
+[1499] benefits of everything scaling
+[1501] independently
+[1504] so is it easy to install super base on
+[1507] the single server
+[1508] it's it's easy to install each
+[1510] individual component and we make them
+[1512] even easier so for example postgres
+[1515] wasn't on the digital ocean marketplace
+[1518] and we were the first to actually put it
+[1520] onto the market
+[1521] i i'd suggest that you have a look at
+[1523] our omnibus
+[1524] project it's uh based and it's been a
+[1527] great way to kind of
+[1529] install kind of multiple software
+[1530] packages that together
+[1532] form one service and i think it's a big
+[1535] part of the distribution that gitlab has
+[1538] gotten and the traction that we have
+[1539] gotten
+[1540] where it's very simple to just install
+[1542] it
+[1543] and so that's a single server
+[1547] uh installation isn't it yeah or
+[1550] multi-server but also single server yes
+[1552] and i think the majority of
+[1553] installations start out as a single
+[1555] server
+[1556] oh very nice okay cool and then thanks
+[1560] thanks thanks for the call thanks sid
+[1564] appreciate it you too nice to see you

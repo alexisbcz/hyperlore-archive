@@ -1,0 +1,1002 @@
+[7] I'm going to be using my iPad for notes.
+[9] I promise I'm not on Yik Yak most of the time.
+[13] So I'm a huge nerd for start-up history.
+[16] I spent a fairly considerable fraction of my leisure time over the
+[20] past year reading histories of Oracle and Microsoft and Facebook.
+[26] It was really exciting.
+[29] But there is this phenomenon where if you're interested
+[32] in start-ups or if you're thinking in start - if
+[34] you're thinking of starting a company,
+[36] you don't quite get the full picture,
+[39] because companies want to put the best face forward.
+[43] They want to whitewash things a little bit.
+[46] And so, you would end - you don't end up seeing the really interesting
+[50] detail and the uncertainty from the early days of a company.
+[54] And so what I'm going to try to do over the course of talking to you
+[58] today is give you a little bit of insight into that uncertainty,
+[63] into what it's like in the early days.
+[66] And if I don't do a good job with that,
+[69] in this part I will be going in to questions maybe half
+[72] an hour in and you can ask the tricky questions.
+[75] So maybe we should start off with what is Stripe.
+[80] And this is not maybe as easy a question as it sounds.
+[86] So one answer is that Stripe is a really
+[91] easy way to accept payments online.
+[93] This is why we started it back in 2009 when
+[97] we had been developing Web products,
+[99] we had been developing apps.
+[101] The two options you really had if you wanted to turn your product into
+[105] a business were - one, you could send your user's offsite to PayPal,
+[110] that experience kind of sucked.
+[112] Or two, you could sign up for a merchant account and
+[115] go through the weeks of work and building out your
+[117] own payments infrastructure that that entailed.
+[120] Neither option is really good.
+[121] And so, one way to look at Stripe is that,
+[126] a better way that came along to accept payments.
+[130] But if you zoom out a little bit you can look at it
+[134] as a platform for running your online business.
+[137] So we've seen thanks to the Internet an
+[140] explosion of not just new businesses, but new kinds of businesses,
+[144] new business models. You look at software that previously
+[148] was sold on a license basis is now delivered via
+[151] the cloud as Software-as-a-Service.
+[153] It's all subscription services or you see that services
+[157] that were previously kind of off-line delivered on an ad hoc
+[162] basis are being delivered by market places that can
+[165] help with discovery and liquidity and trust and safety.
+[169] I'm talking about Airbnb for travel or Lyft and
+[173] Uber in the transport segment and it goes,
+[176] into every vertical like home cleaning or errands.
+[181] And so as all these new business models emerge,
+[186] to actually to run the business, if you are a subscription business,
+[190] to keep track of how much everyone is paying you and
+[192] actually bill them or if you're a marketplace,
+[194] to run the pretty complex operations and move all the money around in
+[198] a variety of different companies to make that happen this was hugely
+[202] challenging for people and they were all building it themselves.
+[205] And so what Stripe really does is gives them a platform so that they
+[209] can use Stripe for all that and not have to build it themselves.
+[212] So maybe that's another definition.
+[214] But if you zoom out even further,
+[217] maybe Stripe is just better economic infrastructure for the Internet.
+[222] Thanks to the way the Internet has emerged.
+[225] We have this global system that lets anyone share information,
+[231] but money definitely doesn't work that way.
+[234] In the U.S
+[235] we have credit cards and we think of them
+[237] as pretty global, but they are not.
+[238] In Kenya, everyone uses a mobile money system
+[242] called M-Pesa which is on feature phones,
+[245] it's really far advanced.
+[248] 43% of Kenyan GDP flows through M-Pesa and no one really
+[253] uses a credit card or in China everyone uses Alipay,
+[258] the payment arm of Alibaba.
+[260] And so we've erected this kind of Tower of Babel when
+[264] it comes to money on the Internet where we have a bunch
+[267] of different systems none of which interoperates.
+[270] An our idea with Stripe is that by using a Stripe you should just
+[274] not be able to have a system for processing credit cards,
+[277] but a way to accept money from anyone, anywhere.
+[281] And so, neither one of these answers is more correct than the other;
+[286] they are just all different answers at a variety of zoom levels.
+[291] And one phenomenon I think is really interesting
+[293] about start-ups is they tend over time to get higher
+[299] and higher up in how they describe themselves.
+[302] And that's okay, and that makes sense.
+[304] But the sneaky thing they do is they pretend that that's
+[307] how they viewed themselves all along and so you have this
+[310] great Silicon Valley phenomenon of the founding myth that
+[314] we set out to revolutionize app discovery.
+[317] I mean what does that even mean?
+[319] And one of my favorite examples of this
+[324] is I saw an interview with Elon Musk,
+[326] I mean Elon Musk is clearly an incredible entrepreneur
+[329] and he's someone I respect a lot.
+[331] But he was giving this interview and the
+[333] interviewer was asking him - payments,
+[337] electric cars, space travel, what connects these,
+[342] and Elon kind of looked very thoughtful and he was like well,
+[345] when I was in college I thought the three biggest
+[348] opportunities for mankind were the Internet,
+[353] inter-planetary space travel, and clean energy.
+[355] I was like, really?
+[358] That visionary?
+[360] And so what that means is as you're trying to think,
+[368] is this a valid start-up idea, maybe you've identified a problem,
+[374] but it seems very tactical,
+[375] you don't know what the broader vision is.
+[378] One stark contrary example here is I really enjoyed
+[382] Travis Kalanick in describing Uber recently,
+[387] Uber's latest tagline is transportation as reliable
+[391] as running water available to everyone.
+[394] But Travis, I remember in a while ago described in
+[397] an interview someone asked him why he started Uber?
+[401] And he said it was a lifestyle thing,
+[403] me and my co-founder and our hundred friends could roll
+[405] around San Francisco like ballers in Mercedes S classes.
+[409] So that's maybe a little before the transportation
+[413] as reliable as running water.
+[416] So I guess the point I'm trying to make here is that you don't
+[419] always know in the early days what the largest thing is.
+[424] For me and Patrick, when we started Stripe,
+[428] the market research we did was,
+[431] we knew this was something we really wanted as developers
+[435] and we had one or two friends who wanted it and that
+[439] seems like an addressable market right there.
+[441] And over time we have come to realize that this is in fact
+[447] a really large and meaty problem that we can be tackling.
+[456] The other challenge in the early days of start-ups,
+[461] well that sounds kind of trite;
+[462] there are lot of challenges.
+[466] Let's talk about another challenge.
+[468] One of my favorite media tropes is the multi-year overnight success,
+[473] people talking about how quickly start-ups get to scale.
+[477] I mean even in Stripe's case I've seen lot of newspaper articles
+[482] that literally describe it as an overnight success.
+[484] It is like, hey you weren't there.
+[488] In our case we spent a really long time in the early
+[494] days building out the product and trying to figure
+[497] out would it work and what the right thing was.
+[501] And so to give you a sense of scale here we started working on Stripe
+[506] in the fall of 2009 and we launched Stripe in September 2011,
+[512] which was roundabout two years later.
+[514] And I remember right at the beginning when we were starting it,
+[518] I said to Patrick, yes, let's do it.
+[522] How hard can it be which gives you a sense for our mindset?
+[525] And then, the answer was two years of difficulty.
+[530] We had not predicted that.
+[534] And when we launched two years later,
+[536] does anyone want to take a guess how many users Stripe had?
+[544] Close, 50.
+[546] So we had spent two years building out the
+[549] early product and acquiring those 50 users.
+[553] And you know when you're spending two years getting 50 users;
+[559] it doesn't feel like a whole lot of progress,
+[561] like it feels like things are going pretty slow.
+[563] And this is the challenge if you have - if you're
+[567] working on a start-up that's a bad idea,
+[569] it's going to feel like slow going,
+[571] but also if you're working on a start-up that's a good idea,
+[574] it may feel like slow going too.
+[577] I think the thing that really allowed us to take off
+[582] in the subsequent years was the fact that since we were
+[586] spending so much time on each one of those users,
+[588] since we were hyper focused on building out a great product
+[591] and since we weren't dealing with problems of scale yet,
+[594] that allowed us to really build the product that we wanted.
+[600] One of the cultures that set in really early on was taking
+[607] almost abnormally good care of those early users.
+[612] And so, I think someone wrote a blog post about this,
+[617] but we set up the Stripe API to e-mail
+[622] us any time someone ran into a bug.
+[624] So when you run into bug on any site and
+[627] it shows the error message or something, in that case on Stripe,
+[631] it would e-mail us and occasionally phone call us.
+[633] Because we figured when you're there as a developer integrating
+[637] this product that you expect to be reliable,
+[639] running into that bug is a terrible
+[640] experience and we wanted to fix it.
+[642] And so it would alert us,
+[643] we would often, I mean we weren't doing anything else at the time
+[646] we would often open our laptop and start fixing it and send the
+[650] user a friendly e-mail of hey that bug you discovered just there
+[654] it's now fixed and people's minds were blown by this.
+[657] Sometimes they even found it a little bit creepy.
+[661] We set up a Campfire room that any of our customers could come into,
+[667] at really any hour of the day or night.
+[670] We even - if people were based in the Bay Area,
+[673] we'd let them come by the office and we would just sit
+[675] over their shoulder and help them integrate Stripe.
+[677] We had in the bottom right of the Stripe dashboard
+[683] a little prompt that would change on every page load.
+[686] It would say, the thing you guys should improve here or
+[690] a feature I really want is or the worst thing about that -
+[693] this page is and people would fill it out and hit enter.
+[697] And again, because there were so few users,
+[699] we would reply within 10 minutes and people found it a little odd.
+[703] What this meant was that even though the user growth
+[707] was happening quite slowly in the early days,
+[711] it actually had a really surprising viral affect
+[713] where people had a really good experience,
+[716] they told their friends about it and we were able to spread
+[718] entirely through word of mouth even to this day.
+[722] We actually baked viral mechanics into the product and so for
+[728] the longest time it was available in invite only beta mode.
+[732] And I guess you don't really think of payment
+[735] processing as a really viral social thing,
+[739] but the only way for the longest time to get access to Stripe was
+[744] to get invited by someone who knew it and so again you had this
+[748] phenomenon where people were not only signing up for Stripe,
+[751] but being recommended to it by someone who was already using it,
+[755] who knew how to use it and it really
+[758] helped not just with user growth,
+[759] but user engagement.
+[765] The other challenge you'll face as you go through that
+[770] early-stage with those early customers is really figuring
+[776] out what is core to the product and what is not.
+[780] Maybe another way to phrase this is what is - what
+[785] should be part of your vision and what will need
+[787] to change as you hit obstacles with customers,
+[790] you can even probably define vision as the
+[793] things that you're not willing to change.
+[795] There tends to be a lot of debate over the lean start-up
+[802] methodology where you should have a product,
+[805] show it to some customers rapidly iterate based on their usage
+[808] and their feedback versus the very vision driven product of
+[814] I know what this is and I know where it should go.
+[818] And to me that's not really a trade off at all
+[820] in that you need some small set of things,
+[823] the vision that you're not really willing to compromise
+[826] on and then with the remainder I mean if the market
+[831] is telling you that you're wrong,
+[832] you really need to listen to that data.
+[835] In Stripe's case, I think we were really focused
+[841] on an instant on-boarding experience,
+[843] building a developer friendly tool as our path to market and I
+[849] think that was stuff we were really willing to compromise on.
+[852] If that wasn't a valid way to build this company,
+[854] I'm not sure we would have been able to pivot out of that.
+[857] But in every other area we explored the market;
+[862] we just kept running into feedback from customers that ended
+[865] up being really critical to allowing the product to succeed.
+[869] So it's not a vision versus iteration trade-off.
+[873] It's a selection of the things that you really believe in and then
+[876] being willing to contort yourself to make it work around that.
+[882] And related to that in the vision category is that there
+[887] will be things in the early days of a start-up that makes
+[891] sense in the early days that don't scale later on and so
+[896] it's not just a question of - it's more of a continuum,
+[900] there aren't just things that you should not change and things
+[904] like you should be willing to change on a regular basis.
+[906] It's - there will be things that you should not change for the first
+[909] two years and then gradually need to be unwound as you grow.
+[913] And so in the early days of a company,
+[915] it's probably really critical that they focus on the U.S
+[918] market, trying to win all markets is a distraction,
+[921] but clearly over the long-term focusing solely on the U.S
+[924] market is wasteful and they should go international or Facebook for
+[929] the longest time they had the mantra of move fast and break things.
+[933] And this really made sense for them,
+[934] they were trying to have a really fast product cadence.
+[936] But at a certain size you get so big and so interconnected that
+[941] moving fast and breaking things probably isn't your model and
+[943] so they - I mean they recently explicitly acknowledged,
+[946] that they were moving past this.
+[948] Start-ups end up having a really powerful path dependence
+[954] where it's not just a question of arriving at the final
+[961] answer and if you had found that final answer earlier,
+[965] you could have gotten there much quicker,
+[966] it's a question of building a set of assumptions,
+[969] following those and continually revisiting them.
+[971] You're not just trying to arrive at the final form for your product;
+[975] you're trying to get all the intermediate forms
+[978] in the chemical reaction that gets you there.
+[981] A good example of this is Microsoft.
+[984] They started out in the hobbyist markets building basic compilers;
+[990] they couldn't have stayed there,
+[992] and could never become the company they are
+[994] today as a result of building compilers.
+[998] They had to move up stream and they are
+[1000] now basically an enterprise company.
+[1002] But at the same time,
+[1003] they couldn't have started as an enterprise company,
+[1006] because no one would have bought from them -
+[1008] these like two random college kids.
+[1010] And so again there's this path dependence to Microsoft's
+[1013] growth where they had to become each one of their stages
+[1016] to allow them to jump to the next level.
+[1019] Maybe another example of this is going back to Uber.
+[1023] If they had just started out with the Uber X model today,
+[1027] doing ride sharing, they probably would
+[1029] have been shut down pretty quickly.
+[1030] It required them to - to succeed,
+[1035] they needed to start with the limo business,
+[1039] get to such a scale that it was a well-known and well liked
+[1042] service and then they could start doing ride sharing in
+[1044] some cities and prove that it was a popular model.
+[1051] The last thing I briefly wanted to touch on this
+[1054] topic is that of start-up opportunities.
+[1061] People often ask this question of where
+[1064] do I find the idea for a start-up.
+[1066] And I think in Stripe's case it was - in
+[1071] hindsight it makes a lot of sense.
+[1074] Building an online business was really,
+[1076] really hard pre-Stripe and starting a service to make it easier,
+[1081] would seem to make a lot of sense.
+[1083] And that goes for a lot of other companies as well.
+[1088] Anyone who had ever taken a cab in San Francisco should
+[1091] have had the idea for Uber or in the case of Slack;
+[1095] we internally were struggling with the problem of TeamChat.
+[1100] And not only that everyone we knew was struggling with
+[1103] the problem of TeamChat and so the idea to build a company
+[1107] to tackle that seems obvious in hindsight.
+[1112] But that obviousness in hindsight doesn't really help you, right?
+[1117] Because if you only realize these opportunities after they
+[1120] have come along and someone has shown you the path,
+[1123] that doesn't really help you get anywhere.
+[1125] I don't know if any of you guys have read David
+[1131] Foster Wallace's commencement speech,
+[1133] called This Is Water.
+[1135] It's really, really good and you should check it out,
+[1138] if you haven't read it.
+[1139] But in it, he uses the story of a big fish passing two little fish and
+[1146] the big fish says to the little fish hey guys, how is the water?
+[1151] And they swim along and pass and one turns to the
+[1154] other and it's like what the hell is water?
+[1156] And he used this anecdote as to then go on and explain about
+[1163] being mindful in the day-to-day lives that we live.
+[1167] And they're sort of the little bit like that in as you
+[1172] think about opportunities on a day-to-day basis.
+[1175] We live in a world that's completely broken in lots and lots of
+[1181] small or big ways and we have come to just work around them,
+[1186] we have come to take them for granted,
+[1188] and so to spot opportunities requires you to jump out of that
+[1194] mode briefly and question how things work and be unreasonable
+[1199] in suggesting that it's not valid for them to work this way.
+[1202] It should be interesting to note that the companies that are often successful
+[1210] in changing an industry are often not started by insiders,
+[1215] because insiders know too much about that industry
+[1219] they've been swimming in that water for too long.
+[1221] Certainly it was the case in Stripe's case as we came
+[1226] to learn more about how the payments industry worked.
+[1230] We could see the reasons why everything worked the way it did.
+[1235] Before Stripe to get set up with payments online,
+[1238] generally took a few weeks and it was a whole bunch of paper work.
+[1242] As you get more into the banking industry and people say,
+[1246] well, we need to collect that information to run our underwriting
+[1250] checks and fulfill our KYC BSA requirements,
+[1253] you are like yes, yes.
+[1254] And it requires you to stand back and say, no, no wait a second.
+[1257] This is not how the Internet works.
+[1258] And so I think there is a certain practice you get - you
+[1265] have to get into in how you look at the world to stop
+[1269] accepting everything is reasonable in how it works.
+[1272] We are all swimming in opportunity, but it's often really,
+[1276] really hard to see it.
+[1278] And with that, I think we might take
+[1279] a break there and move to questions.
+[1282] Great.
+[1282] Perfect.
+[1284] So, this way it's going to work.
+[1286] I'm going to ask the first couple of questions,
+[1288] but I'm going to open it up to you,
+[1289] so you can be noodling on the type of
+[1292] questions that you want to ask John.
+[1294] You mentioned several times starting this with your brother.
+[1298] Is that a good idea?
+[1301] Tell us about, I mean, obviously it's been very successful,
+[1304] but tell us about what it's like and what the opportunities and
+[1307] the challenges of starting a business with a family member?
+[1312] Yes.
+[1313] So I get this question all the time often from reporters or whatever.
+[1317] And generally my response is to say that yes,
+[1321] we got all our disagreements out of the way when we were
+[1323] five and then try to move the conversation along.
+[1325] But now that I've told you that, so that wouldn't work here.
+[1331] I think starting a company with someone is,
+[1338] I mean, one just on the face of it,
+[1340] it's hard, it's often seven hours - seven-day weeks and 14 hour days
+[1346] again and again and again and going through a lot of uncertainty,
+[1351] a lot of setbacks, but also in the actual
+[1355] work you're doing and the working style,
+[1357] you're probably the group of people starting the company
+[1362] are learning a huge amount as they go along,
+[1366] that they are wrong a lot and discovering they're wrong a lot,
+[1369] and all this adds up to you need to have
+[1372] a really good working connection, if you already know the person,
+[1378] you need to have a really good working connection
+[1380] with them and if you don't know the person,
+[1382] you need to develop that really fast.
+[1384] And so I think we were lucky in that, Patrick and I, I mean,
+[1387] not only had we grown up together,
+[1389] but we had worked on a startup before,
+[1390] we had worked on projects before,
+[1392] and so all the meta issues of working style and how we worked together
+[1395] were out of the way and we could focus squarely on the task in hand.
+[1399] And I think if you look at a lot of successful teams,
+[1404] generally they had a history of working together,
+[1410] you often see people who have worked together for a long
+[1411] time at previous jobs starting a company together.
+[1414] I'm not saying that's a necessary requirement,
+[1417] but I think if you actually look at the data you have this phenomenon
+[1420] where it requires you to either get lucky in finding someone that you
+[1424] work really well with or pick someone where know that's the case.
+[1428] Did you have a very clear division of labor from the
+[1430] beginning or is that something that's evolved?
+[1432] It was totally unclear in the beginning in that there was
+[1435] this huge amount of work and we both just tackled it.
+[1439] Great.
+[1440] And you chose to go to Y Combinator.
+[1441] Can you tell us a little bit about that experience
+[1444] and how it influenced the evolution of the company?
+[1447] Yes.
+[1448] I think YC is really valuable,
+[1456] especially for people like us where we were fairly new to
+[1462] the Valley and we were working in a business that required
+[1468] us to understand how the Valley operated and worked.
+[1474] It would have been very useful to have a network for hiring,
+[1478] for our business development,
+[1479] for raising money things like this and we didn't and most investors
+[1485] will say on their homepage that they don't accept cold pitches.
+[1490] You have to be in that network already to
+[1492] be able to participate in this system.
+[1494] And so YC is quite cool and unusual in the way that there
+[1497] is a standard application form on the site and that's actually
+[1501] the only way that they accept pitches is you - anyone from anywhere
+[1505] in the world can fill that out and get a spot.
+[1508] And so, I think what was valuable for us was
+[1512] the fact that we were pretty new to this;
+[1515] it helped us get into this world.
+[1518] And you know to give you a concrete example,
+[1521] in the early days of Stripe,
+[1523] it was I mean, it was a lot of work convincing people to use it.
+[1528] It was this new unproven tool that you're
+[1532] going to build your whole business on.
+[1534] I mean, that's kind of a scary undertaking.
+[1536] And so, it was - a lot of our early customers
+[1540] were YC companies who we knew through that,
+[1543] they knew we weren't going to disappear in the morning
+[1548] and they were willing to integrate Stripe.
+[1551] Fabulous.
+[1552] So anyone in the room want to start out with the first question?
+[1556] Yes.
+[1556] Okay.
+[1558] What I want to know is your childhood related with entrepreneur.
+[1562] Childhood?
+[1563] Childhood.
+[1563] Yes your days of childhood related with entrepreneur.
+[1570] Was the question asking about his childhood as an entrepreneur?
+[1573] Yes.
+[1575] Childhood as an entrepreneur.
+[1578] Okay.
+[1579] Grew up in the middle of nowhere in Ireland in a small
+[1583] town in County Tipperary and read a lot of books,
+[1589] used the internet a lot,
+[1592] I mean, childhood pre-Internet and post-Internet do seem to
+[1598] be very different in that pre-Internet you're mostly limited
+[1603] to a very local circle and post-Internet you're making friends
+[1607] with people all over the world and learning new things.
+[1610] I first coded when I was 14.
+[1612] I built a website that Patrick subsequently - Patrick is my brother,
+[1618] subsequently comprehensively hacked,
+[1619] which I guess was a good lesson in never try anything.
+[1624] I'm not still bitter about that one.
+[1632] But yes, I think 20 years ago,
+[1637] would it have been as easy for me to come out here from - to come out
+[1643] here from there and do something like Stripe, it seems unlikely.
+[1649] So clearly you are someone who has a lot of ideas, right?
+[1652] Starting at a very young age, you were building things,
+[1655] how did you pick this as the thing that you set I know I'm
+[1659] going to put all my energy behind this problem to solve?
+[1664] Because this was a huge problem for a lot of us, right.
+[1666] It can be an interesting dinner table conversation or hanging
+[1669] out with the friends saying, this is a problem;
+[1671] someone should solve this,
+[1672] which is the one you say this one I'm going to solve?
+[1675] Yes.
+[1675] I think that's a really hard problem.
+[1678] It sort of comes back to the bad ideas take a long
+[1684] time and never quite achieve escape velocity,
+[1686] but good ideas often take a really long
+[1689] time to achieve escape velocity too.
+[1692] In the case of Stripe,
+[1695] it was actually - for the first few months we were
+[1699] also working on the series of iPhone apps,
+[1701] it was one of the projects we were working on,
+[1703] but we were also in college at the time so we were juggling
+[1705] kind of class and these iPhone apps and Stripe,
+[1707] and so it was definitely not our exclusive focus.
+[1710] I think the thing that really convinced us in the early
+[1715] days was and this might be specific to more developer
+[1720] or business focused companies rather than consumer,
+[1722] which can get to scale really quickly,
+[1724] but I think in the - in our case what really convinced us
+[1731] was the fact that the users we had were so passionate.
+[1736] This was not just for them, something marginally better,
+[1739] but they thought that it was life changing and revolutionary
+[1742] and they wanted to tell all their friends and they wanted us
+[1744] to build a way for them to invite their friends to it,
+[1747] that seemed to really get - that got our attention.
+[1752] And so I guess, most of the metrics that people talk
+[1754] about day-to-day like revenue or user numbers,
+[1757] those are all lagging metrics and you as the
+[1759] person actually working on the product,
+[1760] you have access to leading metrics.
+[1762] And so apparently with Snapchat,
+[1768] one of the earliest - one of the most compelling metrics in
+[1771] the early days was the number of times per day each person
+[1777] used it in that even if this wasn't really big yet,
+[1780] it was growing very quickly and it seemed to have a really
+[1782] deep connection with each of its users and similarly
+[1785] for us I think the passion that the early users had about
+[1789] the product was that leading metric that,
+[1791] that indicated to us that something was there.
+[1795] But I think in each case that leading
+[1798] metric is going to be different,
+[1799] but you want to find what that leading metric is to be
+[1801] able to judge whether this is going to take off or not.
+[1804] So this is a space that has become very,
+[1807] very busy with lots of other companies,
+[1809] how do you think about your competition?
+[1811] Is this something that you think of it is a cat and mouse game,
+[1814] with features, do you say I don't pay attention to them;
+[1817] we have got our own path?
+[1818] Talk a little bit about competitors.
+[1821] Yes, it's sort of funny in the early days when we started Stripe,
+[1828] people would say to us like really, payments?
+[1830] Why would you start a payments company and then in 2012 there were
+[1833] like all these payments companies and people would say to us,
+[1836] man payments, that's like a super hot space,
+[1839] that was a great idea you guys starting that and you're just like -
+[1841] the whole time we were like nonplussed by all these reactions.
+[1845] I think there's - it's important to be really
+[1854] clear in your own mind and as time goes on,
+[1857] be good at communicating what is unique about what you're doing.
+[1861] And so in the early days,
+[1863] people would always ask us they were like so,
+[1866] payments and like with a design focus and it starts with S,
+[1869] so it's like sort of like square, right?
+[1871] And actually when you think about it,
+[1874] they are two entirely different businesses
+[1876] in that Stripe is a technology product,
+[1881] using it more or less always involves code,
+[1883] we are interested in what you can build using this toolkit
+[1886] we've developed for you in a really leveraged way online,
+[1889] whereas Square is entirely offline,
+[1892] almost entirely aimed at the small business
+[1894] segment and offer face-to-face transactions.
+[1897] And I think similarly with lots of competitors,
+[1901] people who only have a surface level understanding of your business,
+[1904] will tend to want to lump you into some category and it's very
+[1910] important that you be able to get across what it is that's not
+[1915] just happens to be different today in the feature set,
+[1918] but what's different about where you're going and in the
+[1921] asymptotes of these two companies where they end up.
+[1924] And I think that's not only important to be able to explain it,
+[1928] but it's important in an existential sense in that
+[1931] hopefully you're doing something different.
+[1933] So speaking of doing something different,
+[1935] I understand you now deal in Bitcoin as well.
+[1937] That's obviously something that's very interesting
+[1941] and a little bit controversial.
+[1942] Maybe can talk about what you see is the future
+[1945] of alternative currencies like Bitcoin?
+[1947] Yep.
+[1948] So I mentioned earlier the Tower of Babel effect
+[1961] where online we have all these different payment
+[1963] systems that are completely non-interoperable.
+[1968] And so we in the West happily use our credit cards,
+[1971] people in Africa use a variety of mobile money systems,
+[1973] same in various parts of Asia,
+[1975] people in China use their Alipay accounts,
+[1978] you have this perfectly connected online world and
+[1983] then this perfectly balkanized economic landscape.
+[1987] And it's really harmful because it means then the products
+[1992] we use are artificially limited by you have the U.S
+[1996] Internet, and you have the Chinese Internet as a result.
+[2000] And so I think Bitcoin is - what is most exciting
+[2004] for me about Bitcoin is that global aspect.
+[2008] It's the fact that everyone's Bitcoins are the same,
+[2010] everyone's Bitcoins work together with each other and that no one
+[2015] has to come along and enable the coin for a certain currency,
+[2019] there's new committee that decides that Bitcoin
+[2021] is going to South Africa in 2018.
+[2023] It's just there, that's how it works.
+[2025] And so, we recently added Bitcoin to Stripe and
+[2032] it's one of the instruments you can accept.
+[2035] And from a product point of view,
+[2037] one of the things that we have always thought
+[2038] is really important is moving beyond this,
+[2041] I render a credit card form on my site that works for a very small
+[2044] set of people to being that universal connector for people that you
+[2048] just say I want to accept money and Stripe let's you accept money from
+[2052] anyone no matter what they're doing be it Bitcoin or whatever.
+[2054] The other thing I will say about Bitcoin is I think with
+[2058] that original Bitcoin paper that is phenomenally prescient
+[2063] in retrospect like it is a truly great standalone paper
+[2067] that appeared out of nowhere and still people aren't quite
+[2070] sure who even wrote it and what that's done is: one,
+[2075] it's kicked off a Bitcoin movement,
+[2078] but two it's kicked off a whole crypto currency movement that has
+[2082] got people thinking about this space in a way they weren't before
+[2085] and so people are arguing about what is the perfect consensus algorithm
+[2090] and what are the right constants in the hashing functions,
+[2094] if you are going to use hashing or proof of work or whatever and you
+[2099] have people arguing about every detail and you have some people,
+[2103] bemoaning the fracturing that's happening where you have all these
+[2107] altcoins like Litecoin and Zerocoin and things like this.
+[2110] But to me that's really exciting in that people are not only saying,
+[2116] this is a really cool technology,
+[2117] but this is a really cool technology space and we should
+[2120] explore all the possibilities that are in it.
+[2122] Stripe funded a nonprofit called Stellar,
+[2124] which is developing a crypto currency,
+[2129] it's very interesting it lets you trade not just with Bitcoin,
+[2135] the currency is Bitcoin whereas with Stellar you
+[2137] can actually trade dollars or euros or pounds,
+[2139] things denominated in the actual currency and it doesn't
+[2142] have - it doesn't use hashing for consensus or proof
+[2147] of work it uses kind of a more CA like model.
+[2153] And so I think crypto currencies are totally in
+[2157] line with this general mission we believe in,
+[2160] which is the Internet economy should not be the U.S.,
+[2164] it should be the world and we need to
+[2165] fight really hard to make that happen.
+[2167] Terrific.
+[2168] Who has a question?
+[2170] Yes.
+[2171] So you spoke at how to start a start-up course last quarter and that
+[2175] went into everything that's relevant to startups to a great extent.
+[2179] We have this amazing amount of information now available
+[2181] in the Valley about what we should do.
+[2184] But it seems like some of the best founders out there,
+[2186] the ones who have been most successful
+[2187] didn't have this information at all.
+[2190] So how do you attribute this ability to find out what's
+[2194] the right thing to do in terms of culture and hiring
+[2196] when no one has really told you about it?
+[2198] So I'm going to repeat the question.
+[2199] I'm going to see if I've got it,
+[2200] is that listen, there is all this how to
+[2203] start a company information out there,
+[2205] you didn't have access to it.
+[2207] What's the difference between those people who read all the books,
+[2210] watch all the videos,
+[2211] are listening right now and the people like
+[2214] you who did it by the seat of your pants.
+[2218] Well, I think it's maybe giving us a little bit
+[2225] too much credit to say that we succeeded entirely
+[2233] of our own accord and had no one helping us.
+[2238] There is the old quip about libertarians being
+[2241] mostly rich people and believing in the power of
+[2244] the free market to get them to where they are.
+[2249] But I think in our case we were very lucky to have
+[2256] a lot of advice from people who had done it before,
+[2259] be it people via the YC network,
+[2262] Peter Thiel was a very early investor in Stripe.
+[2266] That was a fun one.
+[2267] He was actually our first significant investor,
+[2270] going into the office of Peter Thiel and saying
+[2273] online payments are totally broken,
+[2275] who caused this mess.
+[2278] But he knows an awful lot about building companies,
+[2283] not just through PayPal,
+[2286] but being the first outside investor in Facebook,
+[2288] a co-founder of Palantir and these other
+[2291] successful companies same with Sequioa,
+[2294] things like this or studying what various
+[2298] companies that emerged in the '70s,
+[2303] '80s, '90s did and trying to draw out the conclusions
+[2307] of what made them successful like I said,
+[2309] if you - if any of you guys want to join
+[2311] my fun startup history reading club,
+[2313] you're welcome too.
+[2314] But I don't think we were on our own at all.
+[2319] There has always being a pretty good source of advice and going
+[2322] back to the point of whitewashing and the corporate history is
+[2328] always tending to be a bit more of an official history.
+[2330] For me the best advice has always been
+[2332] someone who was there first hand,
+[2334] who in a one on one context is willing to tell
+[2337] you not only the official sanitized version,
+[2341] but and here is the time we nearly lost everyone's data,
+[2343] which actually happened for a major consumer Internet company.
+[2347] Great.
+[2348] Yes?
+[2349] What worries you most about Stripe and what challenges
+[2352] is the company trying to overcome today?
+[2357] So the question is what worries you to the most right
+[2359] now and what challenges are you trying to overcome?
+[2367] Probably two things and I think the things we worry
+[2372] about and the challenges are sort of the same,
+[2375] so I will answer them together.
+[2379] I think one is that product strategy, product prioritization,
+[2387] product planning, whatever you want to call it,
+[2390] is always going to be really hard.
+[2392] And I think people think it's going to
+[2396] be hard if things aren't going well,
+[2399] but it's even hard if things are going well,
+[2401] because you're trying to model the future and see the knock
+[2407] on effects of doing things with huge amounts of uncertainty.
+[2411] And so in our case we have a very successful subscription
+[2419] product that we really believe in and we're expanding
+[2423] and we're also expanding internationally.
+[2426] And there is only a finite amount that we can work on and so,
+[2429] you're at a certain point faced with a choice,
+[2432] should we be investing in subscriptions or expanding internationally?
+[2437] The answer is both and you have to always be making these
+[2440] calls and constantly revisiting your calls when it comes
+[2444] to what you should be working on and it's so,
+[2447] so hard to predict up front what actually ends
+[2450] up being kind of a major part of your business.
+[2455] So I just want to build on this,
+[2456] how often do you revisit your strategy?
+[2459] Because you can't do it every day,
+[2461] it's sort of like digging up the seed everyday
+[2463] to see if it's sprouted, okay?
+[2465] But you also can't do it until it's an oak and you go oh my gosh,
+[2468] I really wanted a cherry.
+[2469] Yes.
+[2470] I think the strategy you revisit all the time,
+[2478] I think what companies have to get good at is being willing
+[2482] to let things take the time to - being willing to give
+[2487] them a chance to actually go somewhere or not,
+[2491] because especially as the company grows you have
+[2495] all this pressure and not just externally,
+[2496] but the pressure you all set on yourselves internally
+[2499] and one of the tougher things is saying,
+[2502] look I know that the needle hasn't moved in on this yet,
+[2506] but we said initially that we believe this is going
+[2510] to be really important going forward and we still
+[2512] believe that and it's just going to take time.
+[2517] I think - say Bitcoin is a perfect example.
+[2520] I think if you look at - if you go ask anyone who is accepting Bitcoin
+[2525] is it a significant fraction of their transaction volume,
+[2529] the answer will be no,
+[2529] because the consumer demand isn't there yet and so you're
+[2532] in this chicken and egg situation and so is it irrational
+[2535] for these people to have Bitcoin on their sites?
+[2538] I mean, no.
+[2538] It's just that they want to give it that time and
+[2541] so they are probably constantly revisiting their
+[2543] strategy of should we be investing in Bitcoin,
+[2547] but the secret sauce is in the patience to know when
+[2552] you should be giving things time and that's an art,
+[2555] that's like really an art.
+[2556] So you can be patient when it's your
+[2558] company and there aren't investors,
+[2559] but you now have a lot of investors
+[2561] who probably have a strong opinion.
+[2563] So you've got a board and you meet with them,
+[2566] can you tell us a little bit about your relationship with
+[2569] your board and how - maybe how you manage the board,
+[2573] how the board manages you?
+[2574] You've got to find patient investors.
+[2578] I think the good investors get that this is how this works.
+[2588] And they - the good investors have also seen it some amount
+[2593] before and so in Facebook's case does anyone remember that
+[2603] Facebook in the very early days used to have banner ads?
+[2606] They were just going to sell ad space on Facebook that
+[2608] you could buy the banner at the top of the page.
+[2610] But it took them a few iterations before they found
+[2613] a really good revenue model that's now doing well.
+[2616] And so I think again in that collective amnesia that we all have where
+[2623] there's - we only really remember the successful stuff and it's easy
+[2630] to view it as why can't you just be like Facebook and quickly arrive
+[2633] at the correct answer and it's important that the investors you find
+[2638] be able to understand that part of the creative process.
+[2641] Great.
+[2642] Question, yes.
+[2643] Can you speak to the personal transition you've
+[2646] had going from when you were just an engineer or
+[2649] working in the early days to now being CEO,
+[2652] like do you enjoy being CEO or I don't actually know you're the CEO,
+[2655] but like cofounder like do you enjoy that role more?
+[2659] Do you miss coding?
+[2660] Do you still code sometimes?
+[2662] Yes, I'm not the CEO,
+[2664] I'm the President, but I will take the suggestion to the board.
+[2668] And I agree for what it's worth, no I'm kidding.
+[2674] I mean, you definitely do operate in a different
+[2678] way at every - at every stage of the company,
+[2684] in the early days when it's just two of you,
+[2687] we actually spent the - we spent the very early days in Stripe,
+[2691] the first few weeks working on it from Buenos Aires,
+[2695] it was January break in college and
+[2699] we didn't want to work in the U.S,
+[2701] because we didn't have - we had student visas and not work visas,
+[2704] we didn't want to go home to Ireland,
+[2706] because it'd be super distracting or whatever.
+[2708] So we did the logical thing and we went to Buenos Aires and it was
+[2712] awesome that is like a city that works on a hacker schedule,
+[2715] everything is open till 5 AM and has Wi-Fi and it's great.
+[2718] That's a slightly different experience to a 200 person company now.
+[2725] And I think what you - you need to not get - you hear these stories of
+[2731] people who want to stay coding to the detriment of other things,
+[2736] at a certain point you have to acknowledge that
+[2739] the productive thing for me is not going to be
+[2743] directly doing this myself or directly coding,
+[2746] but working on something different.
+[2751] And you have to get out ahead of that.
+[2753] I think the other thing that you have to get good
+[2756] at is pretty quickly learning new skills,
+[2759] because you're going to be doing things like recruiting or running
+[2762] a board meeting or running a staff meeting or running an all-hands
+[2765] or all this kind of stuff that you probably haven't done before
+[2768] and I think it takes a - it requires you to be willing to be not
+[2775] good at things in front of a large group of people and be pretty
+[2778] open to feedback to actually get good at those things.
+[2781] So on that note, when you look back,
+[2784] imagine you're starting all over again, it's a few years ago,
+[2787] because it's really only a few years,
+[2789] are there any very specific things that you'd go wow,
+[2793] I wish I had really done something differently
+[2795] that would have been really meaningful?
+[2797] I mean, help us understand so that everyone here can learn from that?
+[2800] Yes.
+[2801] I think the reassuring thing and one pattern in lot of the - if
+[2807] you read these histories of companies is just how much stuff they
+[2811] screwed up and that should be a really heartening lesson,
+[2814] it's - you can still screw up that much stuff and get away with it.
+[2818] There is this - they talk about in the early days of Google
+[2822] how they had this one machine I thing it was the script that
+[2827] Sergey wrote doing all the indexing of the entire web and
+[2831] at a certain point they just like couldn't keep up with the
+[2833] growth of the web and everything was slowing down,
+[2835] search results took multiple seconds to actually respond and
+[2841] this was when Google was getting reasonably large and they
+[2846] fixed it and it's now - they are now hyper focused on speed,
+[2850] but it really was quite broken there along the way and the same
+[2855] with Facebook who stumbled through lots of different revenue models
+[2858] before arriving at the one they wanted and things like this.
+[2860] And so, the reassuring thing is that you can screw up a lot of stuff.
+[2864] I think the ... But you didn't right?
+[2867] No, no, no, we were - luckily we got everything right.
+[2871] I think the two things you really can't screw up are product
+[2877] direction where I mean if you go down the wrong road,
+[2882] that's really hard to pull back from and the other thing is hiring,
+[2888] just because a bad mistake when it
+[2892] comes to hiring is so demotivating,
+[2896] it can spread so badly to the rest of the company
+[2898] that you really have to get a lot of hires right.
+[2901] I think the other thing is as you grow,
+[2903] the correct way to view hiring is not I'm filling
+[2906] someone to do this role and fill this slot.
+[2913] It's - the correct way to view hiring is branches of a tree that
+[2916] when you hire this person you're not only bringing them,
+[2919] but you're bringing their effect on the culture and all
+[2921] the other people they're going to bring in with them and
+[2925] the norms and the working style they have that will spread
+[2930] throughout the company and as time goes on,
+[2934] those hires have - you have less and less influence on the company
+[2939] and all the new people you're bringing in have more,
+[2942] and so hiring you can't really screw up.
+[2947] Great.
+[2947] Yes.
+[2951] Can you talk a little bit about how you're going
+[2954] to scale that kind of hiring you're doing now,
+[2956] so you and Patrick still interview everyone sometimes,
+[2959] if people go through projects before you decided to work with them.
+[2962] How do you do that as the company goes from 200 to 500 to 1000?
+[2965] So the question is how do you scale the hiring process
+[2969] to know you've got the right person as you get so big?
+[2973] That's a very relevant question.
+[2975] It's a discussion we are having internally right now.
+[2981] I think a lot of it is as you go from - speaking
+[2990] of these questions of scaling,
+[2994] let's be clear, Stripe is 200 people right now.
+[2996] We are in the process of growing a lot,
+[2998] we will probably grow - we'll add a significant
+[3001] number of people this year.
+[3003] But if we've messed it all up,
+[3004] you won't see the results until a few years down the road and
+[3006] so to take all my advice on scaling with a pinch of salt,
+[3011] but with scaling in particular,
+[3014] I think it's moving from things being at a gut level,
+[3019] this doesn't feel right, I'm not so sure about this,
+[3022] to making things very explicit.
+[3026] And so, in the early days,
+[3028] I think companies spend a lot of time talking about culture fit and
+[3033] hopefully the various people at the company know what that means and
+[3038] know what set of traits that they believe are important in hires,
+[3041] but as the company grows you have to make that explicit
+[3045] and you have to say this is the set of things we
+[3049] believe makes someone succeed at Stripe,
+[3050] this is the set of traits we believe are important,
+[3052] this is the set of skills we think someone needs to come in that
+[3055] role and that feels kind of weirdly artificial in the early days
+[3060] and it's inefficient in the early days because if you're being
+[3063] so explicit about everything in a fast moving environment,
+[3066] you will get weighed down.
+[3067] But as the company grows,
+[3070] it will end up in this complete game of telephone
+[3072] unless you're really explicit about with something
+[3074] like hiring - what is important in a hire?
+[3077] So clearly every single person contributes to the culture,
+[3080] and that's - but that's one of the variables that affects culture.
+[3082] Do you think about the culture of the company and what other things
+[3088] do - levers do you pull to influence the culture at the organization?
+[3094] Yes.
+[3094] So everyone does and I think,
+[3098] some people pitch that as a thing to be
+[3105] kept in check or restrained or whatever,
+[3108] people often ask the question like how do you keep the culture
+[3112] from changing and I guess to me that question suggests a huge
+[3116] amount of hubris in that to suggest that initial kernel of
+[3120] culture that you had is the perfect culture that any company
+[3124] could have and does not deserve any improving,
+[3127] yes, something seems off there.
+[3129] And so, the correct question is not how
+[3132] do you keep the culture from changing?
+[3134] It's what culture do you want to have and how do you get there?
+[3139] And sometimes you will believe that you have that culture
+[3142] already and you want to - you want to teach new hires that.
+[3148] But I think often times it will - if you are being really
+[3151] thoughtful about it is about recognizing a deficiency
+[3154] in your culture and how do we inculcate that.
+[3156] And I think I can identify various points throughout the history
+[3160] of Stripe where the culture actually improved from someone coming
+[3164] in and them bringing in some new culture with them,
+[3167] as an example of this,
+[3169] I think in the early days start-ups tend to be very fly by night,
+[3174] shoot from the hip, not at all metrics driven and maybe that's
+[3178] necessary in that maybe you need to have a clear idea of where
+[3182] you're going and ignore the data to some degree.
+[3184] But it's really important as they grow to become
+[3187] more metrics-oriented and actually look at usage,
+[3189] look at how people are using the products and
+[3191] bake that into future product development.
+[3194] And we've definitely started off,
+[3197] not very metrics driven and we've become
+[3199] much more metrics driven over time.
+[3201] And I think that that was a good example of a concrete
+[3205] place I can identify the culture as having improved.
+[3209] There are other factors that always come
+[3211] into play like the physical space, different rewards, incentives,
+[3215] do you think about that as part of the culture as well?
+[3219] It is though, it's a bit more I think the - hopefully the physical
+[3227] space is a manifestation of something different - sorry a manifestation
+[3233] of something larger rather than the culture itself and that,
+[3239] if your culture is we have foosball,
+[3243] it's a bit like - cool.
+[3246] Okay, great.
+[3247] But if your culture is - at Stripe for example,
+[3252] we serve meals at the company and rather than having
+[3255] cafe style seating with the round table,
+[3257] there will be long dining room tables kind of Hogwart's
+[3260] style and we think that's really valuable because
+[3264] it means that in a fast growing team,
+[3266] people get the chance to meet each other that they don't - that they might
+[3271] not otherwise and we very much don't want Stripe to become these silos
+[3274] where you have the finance people and the marketing people,
+[3277] and the engineers and they're all in their kind of cliques.
+[3279] We want it to be the case that people at Stripe have a lot
+[3282] of empathy for how different parts of the company work and
+[3285] are pretty well rounded and so that's an example I point
+[3288] at as where the space is hopefully an indication of some
+[3292] larger cultural thing rather than a foosball table.
+[3295] Great.
+[3295] That's exactly what I meant.
+[3296] Great.
+[3297] Yes.
+[3297] Please stand up and speak really loud.
+[3301] What would be your advice for working or not with a person or a team?
+[3309] Can you repeat it?
+[3310] Yes.
+[3311] What would be your advice for working or not with a person or a team?
+[3317] not working with a person or a team?
+[3320] You mean as a co-founder or when it comes to hiring?
+[3326] Both.
+[3327] Okay.
+[3333] I guess the two things to think about are - one,
+[3339] I think the quality and tenor of your personal
+[3344] interactions actually matters a lot.
+[3346] There are some things that are absolutely table stakes like
+[3350] honesty and integrity and if you see any bad signs there,
+[3353] you should run away at 100 miles an hour.
+[3357] But then there is deeper things about your interaction,
+[3362] and your working style,
+[3364] I think one interesting question that you should really think about is
+[3367] how much should you argue with someone you're working closely with,
+[3372] because it's not obvious that you want to be in - you clearly just don't
+[3378] want to be the two of the same people that's kind of wasteful,
+[3381] you hopefully have some conflict and some diversity of opinion,
+[3387] such that you're both bringing different perspectives to the table,
+[3389] but at the same time, you probably don't want to be too far,
+[3393] too diverse in opinions where Max Levchin
+[3397] describes how when they merged x.com
+[3400] and PayPal, PayPal were all Unix people and x.com
+[3407] were all Windows Server people and they kind of smushed them together
+[3410] and it was bedlam because you had these two people who had - red team,
+[3414] blue team, two completely different ways of doing things and it's
+[3418] unclear whether one was better than the other in that context,
+[3422] but they certainly didn't work together.
+[3424] And so if it's productive disagreement that's - that let you know,
+[3430] that results in a better product then that's great.
+[3432] If it's kind of stylistic disagreement that you can't get past and
+[3436] you do just have two different approaches for doing something,
+[3438] then that's maybe a sign that you're not going
+[3441] to be able to work that well together.
+[3443] I'm sure that you would agree this was absolutely fascinating.
+[3446] Please join me in thanking John Collison.

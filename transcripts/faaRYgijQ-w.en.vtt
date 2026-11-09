@@ -1,0 +1,3209 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:14.611 --> 00:00:17.910
+Well, thanks so much for being
+here today for Build Day.
+
+00:00:17.910 --> 00:00:21.570
+Build Day's really all
+about turning great ideas
+
+00:00:21.570 --> 00:00:23.100
+into great products,
+
+00:00:23.100 --> 00:00:26.160
+and so when we stepped back
+and asked what that might mean,
+
+00:00:26.160 --> 00:00:29.640
+we thought, well, no better
+company to talk to than Vercel,
+
+00:00:29.640 --> 00:00:32.580
+who's very much at the forefront
+of making that possible,
+
+00:00:32.580 --> 00:00:34.170
+and Guillermo, in particular,
+
+00:00:34.170 --> 00:00:38.760
+who, of course, is the
+genius behind Next.js
+
+00:00:38.760 --> 00:00:40.950
+and Vercel in parallel.
+
+00:00:40.950 --> 00:00:43.511
+So, lots of good conversation
+to be had around open source-
+
+00:00:43.511 --> 00:00:44.880
+Good to be here, thank you.
+-And business.
+
+00:00:44.880 --> 00:00:45.990
+I think earlier this year
+
+00:00:45.990 --> 00:00:48.420
+you guys announced 200 million ARR
+
+00:00:48.420 --> 00:00:51.420
+and a doubling of users year over year.
+
+00:00:51.420 --> 00:00:53.640
+For those of you who are
+reasoning about sort of scale
+
+00:00:53.640 --> 00:00:54.900
+and what might be possible,
+
+00:00:54.900 --> 00:00:58.410
+I heard 4.3 million downloads a week
+
+00:00:58.410 --> 00:00:59.880
+of your AI SDK alone.
+
+00:00:59.880 --> 00:01:02.550
+Yeah, it's hard to keep count of downloads
+
+00:01:02.550 --> 00:01:04.230
+'cause they're growing so fast.
+
+00:01:04.230 --> 00:01:05.610
+Good problem to have.
+
+00:01:05.610 --> 00:01:07.770
+But, yeah, the business has
+been growing really fast,
+
+00:01:07.770 --> 00:01:10.380
+and, as many others I think here,
+
+00:01:10.380 --> 00:01:14.760
+it was born in the cloud
+and it was born on Stripe.
+
+00:01:14.760 --> 00:01:16.050
+Amazing, and, you know, I think
+
+00:01:16.050 --> 00:01:17.580
+with many of today's startups,
+
+00:01:17.580 --> 00:01:19.500
+rather than reasoning about
+year-over-year growth,
+
+00:01:19.500 --> 00:01:21.780
+we're increasingly reasoning
+about month-over-month growth
+
+00:01:21.780 --> 00:01:23.649
+or even week-over-week growth-
+Day.
+
+00:01:23.649 --> 00:01:25.091
+Day.
+Day?
+
+00:01:25.091 --> 00:01:26.670
+You could ship something today
+
+00:01:26.670 --> 00:01:28.020
+that makes a huge difference.
+
+00:01:28.020 --> 00:01:29.820
+Always elevating ambitions, amazing.
+
+00:01:29.820 --> 00:01:30.810
+Well, thank you for being here.
+
+00:01:30.810 --> 00:01:33.780
+I thought we could start maybe
+a bit with your background.
+
+00:01:33.780 --> 00:01:36.330
+Born in Buenos Aires,
+taught yourself how to code?
+
+00:01:36.330 --> 00:01:37.163
+True story?
+
+00:01:37.163 --> 00:01:37.996
+That's right, yeah.
+
+00:01:37.996 --> 00:01:39.720
+Curious about kind of your early journey
+
+00:01:39.720 --> 00:01:41.220
+and what brought you to the US.
+
+00:01:41.220 --> 00:01:42.360
+You know, there are a lot of parallels
+
+00:01:42.360 --> 00:01:46.380
+between what I set out to do
+with Vercel in my early days
+
+00:01:46.380 --> 00:01:50.010
+because teaching myself to code
+
+00:01:50.010 --> 00:01:54.000
+and speak English was
+quite the challenge, but-
+
+00:01:54.000 --> 00:01:55.229
+You taught yourself English?
+
+00:01:55.229 --> 00:01:56.370
+English was not spoken at home?
+
+00:01:56.370 --> 00:01:58.530
+The funny story, no.
+
+00:01:58.530 --> 00:02:00.990
+In fact, my parents were
+really interested in it
+
+00:02:00.990 --> 00:02:03.870
+'cause, in Argentina, like,
+the country was always divided
+
+00:02:03.870 --> 00:02:06.960
+between like capitalism and socialism.
+
+00:02:06.960 --> 00:02:09.600
+And my parents were very much
+like engineers themselves,
+
+00:02:09.600 --> 00:02:12.120
+industrial and chemical engineers,
+
+00:02:12.120 --> 00:02:14.940
+and they had a lot of admiration
+for great engineering.
+
+00:02:14.940 --> 00:02:17.160
+And they knew that the
+cutting edge would be
+
+00:02:17.160 --> 00:02:19.800
+in Silicon Valley in the United States,
+
+00:02:19.800 --> 00:02:22.680
+but you needed to know
+English in order to get there.
+
+00:02:22.680 --> 00:02:25.740
+And so I was interested
+in software engineering,
+
+00:02:25.740 --> 00:02:28.080
+and I noticed that a lot
+of the programming manuals,
+
+00:02:28.080 --> 00:02:30.390
+documentation, readmes, were in English.
+
+00:02:30.390 --> 00:02:32.517
+So I basically had a
+bootstrapping process to do.
+
+00:02:32.517 --> 00:02:34.710
+And I tell people these
+days that, you know,
+
+00:02:34.710 --> 00:02:36.240
+AI is sort of a before and after
+
+00:02:36.240 --> 00:02:37.980
+because, if I go back in time
+
+00:02:37.980 --> 00:02:39.630
+and I'm trying to teach
+myself how to code,
+
+00:02:39.630 --> 00:02:41.310
+I can do it in my native language,
+
+00:02:41.310 --> 00:02:42.360
+and I can do it at every step.
+
+00:02:42.360 --> 00:02:45.690
+I can just ask the LLM to teach me.
+
+00:02:45.690 --> 00:02:47.767
+Like, literally, one of the
+things with LLMs is like,
+
+00:02:47.767 --> 00:02:50.280
+"Explain quantum mechanics like I'm five."
+
+00:02:50.280 --> 00:02:51.360
+I could have done that.
+
+00:02:51.360 --> 00:02:52.369
+I could have-
+When you were five.
+
+00:02:52.369 --> 00:02:54.210
+You could have done that
+when you were five, yeah.
+
+00:02:54.210 --> 00:02:55.260
+So I didn't have that.
+
+00:02:55.260 --> 00:02:58.830
+The next best thing was the internet,
+
+00:02:58.830 --> 00:03:02.520
+and the next, next best
+thing was open source.
+
+00:03:02.520 --> 00:03:05.490
+So, for me, one of the discontinuities
+
+00:03:05.490 --> 00:03:07.680
+in my learning journey
+was when I started getting
+
+00:03:07.680 --> 00:03:09.870
+to know the open-source communities,
+
+00:03:09.870 --> 00:03:11.730
+contributing to open source,
+
+00:03:11.730 --> 00:03:13.170
+spending a lot of time connected
+
+00:03:13.170 --> 00:03:15.570
+with strangers on the
+internet, as one does,
+
+00:03:15.570 --> 00:03:16.710
+and learning together.
+
+00:03:16.710 --> 00:03:20.490
+And so I started contributing
+to a lot of web frameworks.
+
+00:03:20.490 --> 00:03:23.250
+One of the earliest was called MooTools.
+
+00:03:23.250 --> 00:03:24.930
+It was a JavaScript library,
+
+00:03:24.930 --> 00:03:27.240
+and that was actually very formative.
+
+00:03:27.240 --> 00:03:29.010
+You know, if I think of my resume,
+
+00:03:29.010 --> 00:03:31.980
+my resume was a bunch of
+the open-source projects
+
+00:03:31.980 --> 00:03:33.480
+that I contributed to.
+
+00:03:33.480 --> 00:03:36.780
+And the web itself was
+for me sort of the vehicle
+
+00:03:36.780 --> 00:03:39.540
+that allowed me to
+basically leave Argentina
+
+00:03:39.540 --> 00:03:42.600
+and become a worldwide
+figure in programming
+
+00:03:42.600 --> 00:03:45.960
+because the instant that
+I was able to use the web
+
+00:03:45.960 --> 00:03:48.600
+to very quickly ship things,
+
+00:03:48.600 --> 00:03:51.660
+fork something and put it out into URL,
+
+00:03:51.660 --> 00:03:54.420
+now you have a worldwide audience, right?
+
+00:03:54.420 --> 00:03:56.310
+These hyperlinks can travel at the speed
+
+00:03:56.310 --> 00:03:58.470
+of, you know, thought pretty much.
+
+00:03:58.470 --> 00:04:02.310
+So fast-forward to Vercel
+and had the same inspiration.
+
+00:04:02.310 --> 00:04:03.625
+If you wanna start a company,
+
+00:04:03.625 --> 00:04:04.830
+if you wanna start a digital business,
+
+00:04:04.830 --> 00:04:07.800
+if you wanna ship your next big idea,
+
+00:04:07.800 --> 00:04:09.810
+I need to make it extremely easy.
+
+00:04:09.810 --> 00:04:11.610
+I need to remove all of the friction.
+
+00:04:11.610 --> 00:04:13.740
+And, funny enough when I
+was here in Silicon Valley,
+
+00:04:13.740 --> 00:04:17.340
+I had already sold my first
+business to WordPress,
+
+00:04:17.340 --> 00:04:21.360
+I noticed that, you know,
+the cloud was all the rage.
+
+00:04:21.360 --> 00:04:22.620
+I always encourage people to think
+
+00:04:22.620 --> 00:04:25.140
+about platform shifts very closely.
+
+00:04:25.140 --> 00:04:27.840
+Clearly now we have a
+platform shift towards AI.
+
+00:04:27.840 --> 00:04:29.820
+Like 10 years ago when I started Vercel,
+
+00:04:29.820 --> 00:04:32.220
+the platform shift was towards the cloud.
+
+00:04:32.220 --> 00:04:35.250
+I looked at the cloud, and it was so hard,
+
+00:04:35.250 --> 00:04:36.810
+even though I had like 10 years
+
+00:04:36.810 --> 00:04:38.850
+of engineering experience under my belt.
+
+00:04:38.850 --> 00:04:41.970
+And so Vercel set out
+to remove all friction,
+
+00:04:41.970 --> 00:04:45.150
+from idea to global cloud application.
+
+00:04:45.150 --> 00:04:49.830
+And so you're kind of
+developing Next.js and Vercel,
+
+00:04:49.830 --> 00:04:52.440
+one open source, one is
+a business, in parallel.
+
+00:04:52.440 --> 00:04:55.080
+I'm curious like hard
+trade-offs along the way
+
+00:04:55.080 --> 00:04:57.210
+when you had to make a
+call, one versus the other.
+
+00:04:57.210 --> 00:05:01.410
+Yeah, where there was no
+trade-offs was in my vision.
+
+00:05:01.410 --> 00:05:04.200
+I wanna make the web easy,
+
+00:05:04.200 --> 00:05:07.530
+and so when I was thinking
+about it from first principles,
+
+00:05:07.530 --> 00:05:09.270
+something that you guys
+love to do here at Stripe,
+
+00:05:09.270 --> 00:05:13.530
+okay, I sat down, and I needed
+two halves of this equation.
+
+00:05:13.530 --> 00:05:16.260
+I needed the tooling, compilers,
+
+00:05:16.260 --> 00:05:18.840
+programming language, runtime framework,
+
+00:05:18.840 --> 00:05:21.450
+and then I needed the
+cloud infrastructure.
+
+00:05:21.450 --> 00:05:22.890
+And so interestingly enough,
+
+00:05:22.890 --> 00:05:24.300
+I noticed an asymmetry in the market.
+
+00:05:24.300 --> 00:05:27.570
+I noticed an unmet need
+
+00:05:27.570 --> 00:05:30.150
+because most of the platform providers
+
+00:05:30.150 --> 00:05:33.390
+were leaving the framework
+side for you to figure out.
+
+00:05:33.390 --> 00:05:35.490
+So AWS and Google Cloud and whatever,
+
+00:05:35.490 --> 00:05:38.100
+like, here's a bunch of
+like virtual machines
+
+00:05:38.100 --> 00:05:40.860
+and clusters and networking solutions.
+
+00:05:40.860 --> 00:05:42.660
+Right, you do the rest.
+
+00:05:42.660 --> 00:05:44.910
+It's like the meme of
+draw the rest of the owl.
+
+00:05:44.910 --> 00:05:46.680
+They were like, "Here's some primitives.
+
+00:05:46.680 --> 00:05:48.750
+You figure it out how to
+build an application."
+
+00:05:48.750 --> 00:05:50.280
+And so I looked at it
+from first principles.
+
+00:05:50.280 --> 00:05:51.540
+I was like, "Wow, that's strange,"
+
+00:05:51.540 --> 00:05:56.540
+'cause as I'm in the act of
+drawing this proverbial owl,
+
+00:05:56.670 --> 00:05:58.800
+I'm realizing I need tooling.
+
+00:05:58.800 --> 00:06:01.170
+And so that's where the
+idea of Next.js came from.
+
+00:06:01.170 --> 00:06:03.870
+It's like, hey, I wanna
+create an application
+
+00:06:03.870 --> 00:06:07.740
+that is of the
+sophistication, performance,
+
+00:06:07.740 --> 00:06:11.040
+and flexibility of the
+giants of the internet
+
+00:06:11.040 --> 00:06:13.740
+'cause I always caveat my
+little storytelling with,
+
+00:06:13.740 --> 00:06:15.540
+look, there were ways to publish
+
+00:06:15.540 --> 00:06:17.100
+to the internet really easily.
+
+00:06:17.100 --> 00:06:20.190
+You could have, you
+know, go to Squarespace
+
+00:06:20.190 --> 00:06:22.830
+or Wix or Tumblr.
+
+00:06:22.830 --> 00:06:25.530
+Like, there were ways
+to get something online,
+
+00:06:25.530 --> 00:06:28.230
+but my aspiration was
+that you would be born-
+
+00:06:28.230 --> 00:06:31.980
+much like Stripe-like, your
+business is born on Vercel.
+
+00:06:31.980 --> 00:06:33.120
+It never graduates
+
+00:06:33.120 --> 00:06:36.360
+because we give you infinite
+scale and infinite power.
+
+00:06:36.360 --> 00:06:39.390
+And so I solved the Next.js
+side, made it open source,
+
+00:06:39.390 --> 00:06:41.730
+and then I also needed to
+solve the other equation
+
+00:06:41.730 --> 00:06:43.560
+with half of the equation, which is,
+
+00:06:43.560 --> 00:06:45.930
+all right, how do you host and scale this?
+
+00:06:45.930 --> 00:06:47.880
+And I also set a really
+high bar for myself.
+
+00:06:47.880 --> 00:06:50.880
+I wanted to make it
+universally performant.
+
+00:06:50.880 --> 00:06:53.850
+I wanted to make it such that
+without even being an expert
+
+00:06:53.850 --> 00:06:55.620
+in optimization or infrastructure,
+
+00:06:55.620 --> 00:06:58.050
+you could deploy something that scales
+
+00:06:58.050 --> 00:06:59.490
+and performs excellently.
+
+00:06:59.490 --> 00:07:00.810
+And so those were the two things.
+
+00:07:00.810 --> 00:07:02.250
+One is more on the business side,
+
+00:07:02.250 --> 00:07:06.651
+and the other one is sort of
+our presentation to the world.
+
+00:07:06.651 --> 00:07:09.210
+Our cover letter to the
+world is start with Next.js
+
+00:07:09.210 --> 00:07:11.790
+or any other open-source
+frameworks that we contribute to.
+
+00:07:11.790 --> 00:07:14.610
+I mean, awesome that they
+were so hyper-complementary,
+
+00:07:14.610 --> 00:07:16.050
+right, additive.
+
+00:07:16.050 --> 00:07:17.640
+Were there hard trade-offs you made?
+
+00:07:17.640 --> 00:07:19.170
+I mean, even in your own time-
+Yes.
+
+00:07:19.170 --> 00:07:21.120
+Like where you spent
+your own time and energy?
+
+00:07:21.120 --> 00:07:25.920
+Yeah, it's funny because
+I had to overcome a few
+
+00:07:25.920 --> 00:07:30.150
+bad, I guess, intuitions
+in order to get there.
+
+00:07:30.150 --> 00:07:31.950
+One intuition that I
+had at the beginning is:
+
+00:07:31.950 --> 00:07:34.320
+in order to create the world's best
+
+00:07:34.320 --> 00:07:39.320
+and most successful startup, I
+have to make everybody happy,
+
+00:07:39.480 --> 00:07:41.100
+like every single person.
+
+00:07:41.100 --> 00:07:43.080
+I feel like that's just a life lesson.
+
+00:07:43.080 --> 00:07:44.102
+In order to be the best,
+
+00:07:44.102 --> 00:07:45.486
+yeah, you don't have
+to make everyone happy.
+
+00:07:45.486 --> 00:07:46.955
+You have to be somewhat disagreeable.
+
+00:07:46.955 --> 00:07:49.109
+Yeah, so who did you
+agree to disagree with?
+
+00:07:49.109 --> 00:07:50.150
+So, interesting,
+
+00:07:50.150 --> 00:07:52.170
+and this is why like the
+story like seems so simple now
+
+00:07:52.170 --> 00:07:54.510
+that I tell it, it's like,
+"Oh, wow, like, genius.
+
+00:07:54.510 --> 00:07:56.070
+Of course, you created the framework
+
+00:07:56.070 --> 00:07:57.090
+and the infrastructure."
+
+00:07:57.090 --> 00:07:59.910
+In the beginning, the
+infrastructure was so generic
+
+00:07:59.910 --> 00:08:02.010
+that I was trying to appeal to everybody.
+
+00:08:02.010 --> 00:08:03.000
+You liked Java.
+
+00:08:03.000 --> 00:08:05.160
+It's like, "Oh, I can't let Emily down.
+
+00:08:05.160 --> 00:08:06.510
+I'll do some Java over here.
+
+00:08:06.510 --> 00:08:07.830
+Oh, and you like Next?
+
+00:08:07.830 --> 00:08:09.060
+Oh, okay, I'll do some Next.
+
+00:08:09.060 --> 00:08:09.893
+Oh, and you..."
+
+00:08:09.893 --> 00:08:11.730
+And so I really was just beginning
+
+00:08:11.730 --> 00:08:14.310
+to straddle myself like really thin.
+
+00:08:14.310 --> 00:08:17.400
+And so the principle that
+I've now extracted from this
+
+00:08:17.400 --> 00:08:18.870
+that I'm very happy to
+share with the world,
+
+00:08:18.870 --> 00:08:20.070
+because it can save you some pain,
+
+00:08:20.070 --> 00:08:23.490
+is your ambition for a
+venture-backed business
+
+00:08:23.490 --> 00:08:27.210
+that'll reach global scale
+should be pretty much unbounded.
+
+00:08:27.210 --> 00:08:28.800
+Like, we're here today.
+
+00:08:28.800 --> 00:08:32.520
+We're gonna colonize Mars
+someday, sometime in the future.
+
+00:08:32.520 --> 00:08:36.000
+So that's the like long-term
+aspiration and ambition.
+
+00:08:36.000 --> 00:08:38.460
+But you also have to meet it with realism
+
+00:08:38.460 --> 00:08:41.910
+because, if you're just
+pure unmitigated ambition,
+
+00:08:41.910 --> 00:08:44.040
+you're gonna be so up in the clouds-
+
+00:08:44.040 --> 00:08:47.670
+not the actual cloud, but
+the, like, metaphorical cloud-
+
+00:08:47.670 --> 00:08:49.500
+that you're not gonna get anything done.
+
+00:08:49.500 --> 00:08:51.810
+You might get into a situation
+being jack of all trades,
+
+00:08:51.810 --> 00:08:55.770
+master of none-extremely
+dangerous situation to be in.
+
+00:08:55.770 --> 00:08:58.620
+You might get into the situation
+of what some call it like,
+
+00:08:58.620 --> 00:09:01.920
+you know, having a
+million mediocre customers
+
+00:09:01.920 --> 00:09:04.350
+versus 1,000 customers
+that really love you.
+
+00:09:04.350 --> 00:09:08.310
+And so what was obvious in retrospect,
+
+00:09:08.310 --> 00:09:09.667
+and we did end up doing is,
+
+00:09:09.667 --> 00:09:13.200
+"Hey, we'll start by dominating a niche."
+
+00:09:13.200 --> 00:09:14.340
+So the niche was-
+
+00:09:14.340 --> 00:09:16.320
+which is funny because
+I think a lot of things
+
+00:09:16.320 --> 00:09:20.010
+that we believe are
+niches turn out not to be-
+
+00:09:20.010 --> 00:09:22.650
+'cause we've had $250 million of revenue
+
+00:09:22.650 --> 00:09:25.230
+from a niche, which is front end.
+
+00:09:25.230 --> 00:09:27.750
+First chapter of Vercel was front end,
+
+00:09:27.750 --> 00:09:31.650
+hosting the front-end side of
+websites and web applications,
+
+00:09:31.650 --> 00:09:34.320
+and then CDN and security services.
+
+00:09:34.320 --> 00:09:36.840
+Our next step, which has come way later
+
+00:09:36.840 --> 00:09:40.160
+than I would've expected,
+is back-end: agents
+
+00:09:40.160 --> 00:09:42.270
+and the AI cloud, and all those things.
+
+00:09:42.270 --> 00:09:44.940
+In many ways, you have
+to earn the privilege
+
+00:09:44.940 --> 00:09:48.900
+to expand that product lineup
+
+00:09:48.900 --> 00:09:50.250
+or that customer base
+
+00:09:50.250 --> 00:09:52.860
+in order to get to the ultimate
+ambition of your business.
+
+00:09:52.860 --> 00:09:54.870
+Actually, we're seeing that
+in a lot of the companies
+
+00:09:54.870 --> 00:09:55.770
+that are being built now.
+
+00:09:55.770 --> 00:09:58.830
+What feels like a niche with
+like a global user base-
+
+00:09:58.830 --> 00:10:02.250
+and especially sort of like
+ability to reach markets
+
+00:10:02.250 --> 00:10:04.230
+that are well beyond our
+own-are not niches at all.
+
+00:10:04.230 --> 00:10:06.030
+They're like very, very large markets.
+
+00:10:06.030 --> 00:10:08.004
+Okay, but you had to make
+hard trade-offs at the start.
+
+00:10:08.004 --> 00:10:09.390
+100%.
+Had to shoot for the stars
+
+00:10:09.390 --> 00:10:11.220
+and then decide like which
+planet you were gonna land
+
+00:10:11.220 --> 00:10:12.053
+on first.
+100%.
+
+00:10:12.053 --> 00:10:16.680
+You talked about like, you
+know, the new frontier is AI,
+
+00:10:16.680 --> 00:10:18.150
+and we've talked a bunch about open source
+
+00:10:18.150 --> 00:10:19.200
+versus closed source.
+
+00:10:19.200 --> 00:10:21.300
+I'm curious in the context of AI
+
+00:10:21.300 --> 00:10:23.430
+how you think about open-source models
+
+00:10:23.430 --> 00:10:24.660
+versus proprietary models,
+
+00:10:24.660 --> 00:10:27.420
+both in terms of like what
+the industry is building,
+
+00:10:27.420 --> 00:10:28.253
+but also in terms of like
+
+00:10:28.253 --> 00:10:30.810
+how developers should adopt the two.
+
+00:10:30.810 --> 00:10:32.040
+One of the things that I believe
+
+00:10:32.040 --> 00:10:36.660
+is that once your business
+reaches product market fit,
+
+00:10:36.660 --> 00:10:38.700
+you can't get too satisfied, right?
+
+00:10:38.700 --> 00:10:41.160
+Because the world will
+expect you to do more.
+
+00:10:41.160 --> 00:10:43.260
+Your customers will want you to do more.
+
+00:10:43.260 --> 00:10:45.690
+You'll have the people
+and funding to do more.
+
+00:10:45.690 --> 00:10:49.137
+So you can, you know, expand
+into other adjacencies.
+
+00:10:49.137 --> 00:10:50.400
+And one of the rules
+
+00:10:50.400 --> 00:10:54.000
+for when do I expand into my next chapter-
+
+00:10:54.000 --> 00:10:57.330
+there's a bunch of rules
+that I have or principles.
+
+00:10:57.330 --> 00:11:00.480
+One is what I call brand permission,
+
+00:11:00.480 --> 00:11:03.990
+meaning if Vercel
+tomorrow launched a washer
+
+00:11:03.990 --> 00:11:05.718
+and dryer product,
+
+00:11:05.718 --> 00:11:08.490
+even if it's slick and
+black and beautiful,
+
+00:11:08.490 --> 00:11:10.230
+you'd be like, "That's a little strange.
+
+00:11:10.230 --> 00:11:11.550
+I was expecting them to launch
+
+00:11:11.550 --> 00:11:14.250
+maybe like an AI coding tool."
+
+00:11:14.250 --> 00:11:16.770
+Like your brand doesn't
+yet give you permission
+
+00:11:16.770 --> 00:11:17.940
+to launch a washer-dryer.
+
+00:11:17.940 --> 00:11:21.060
+And also you want to
+expand into adjacencies
+
+00:11:21.060 --> 00:11:22.830
+to your core competence.
+
+00:11:22.830 --> 00:11:26.460
+So, if you do payments, you
+can handle billing next.
+
+00:11:26.460 --> 00:11:29.340
+Or, if you do payments,
+you can handle fraud next
+
+00:11:29.340 --> 00:11:30.420
+and things like that.
+
+00:11:30.420 --> 00:11:32.700
+And so, for us, with our new chapter
+
+00:11:32.700 --> 00:11:34.800
+of becoming the AI cloud,
+
+00:11:34.800 --> 00:11:37.140
+what we realized is that
+there is a lot of demand
+
+00:11:37.140 --> 00:11:39.600
+for the same things
+that we did in the past.
+
+00:11:39.600 --> 00:11:42.180
+People want simple frameworks, tools,
+
+00:11:42.180 --> 00:11:44.940
+and solutions for creating agents.
+
+00:11:44.940 --> 00:11:48.360
+There's like a new
+protagonist in this story.
+
+00:11:48.360 --> 00:11:49.920
+I call it, first chapter
+
+00:11:49.920 --> 00:11:53.790
+of the internet was about pages or pixels.
+
+00:11:53.790 --> 00:11:55.650
+In fact, if you've used Next.js,
+
+00:11:55.650 --> 00:11:57.570
+you know that the very
+first thing we asked you
+
+00:11:57.570 --> 00:12:00.030
+to do was create a pages directory
+
+00:12:00.030 --> 00:12:02.070
+and toss your files in there.
+
+00:12:02.070 --> 00:12:04.800
+It's like very much PHP-inspired.
+
+00:12:04.800 --> 00:12:06.300
+The next chapter-
+Pages and pixels
+
+00:12:06.300 --> 00:12:07.290
+replaced by?
+
+00:12:07.290 --> 00:12:08.123
+Agents.
+
+00:12:08.123 --> 00:12:12.270
+And so agents might not even
+have a face, so to speak,
+
+00:12:12.270 --> 00:12:16.440
+intelligence that is sort of
+permeating everything you do,
+
+00:12:16.440 --> 00:12:18.060
+meeting you in every conversation,
+
+00:12:18.060 --> 00:12:20.490
+in every platform integrated into Slack,
+
+00:12:20.490 --> 00:12:24.030
+integrated into Zoom,
+integrated into, you know,
+
+00:12:24.030 --> 00:12:27.450
+parsing your documents while
+you're doing other work.
+
+00:12:27.450 --> 00:12:29.520
+And so this is a completely
+different paradigm
+
+00:12:29.520 --> 00:12:32.730
+of the type of software that
+we've all been building.
+
+00:12:32.730 --> 00:12:35.430
+And this is why it's exciting
+to start a business today
+
+00:12:35.430 --> 00:12:38.040
+because that feels to me
+like a platform shift,
+
+00:12:38.040 --> 00:12:39.540
+and what's interesting
+about platform shifts
+
+00:12:39.540 --> 00:12:43.140
+is that the old thing doesn't disappear.
+
+00:12:43.140 --> 00:12:46.410
+So it's not that tomorrow
+there'll be no pixels
+
+00:12:46.410 --> 00:12:48.930
+or we'll get to a point
+where there is no pixels.
+
+00:12:48.930 --> 00:12:52.140
+Much like today, we still
+have AM and FM radio,
+
+00:12:52.140 --> 00:12:54.750
+so the older technology is still there,
+
+00:12:54.750 --> 00:12:55.583
+and it'll have-
+
+00:12:55.583 --> 00:12:58.170
+I think in the case of the web,
+
+00:12:58.170 --> 00:12:59.940
+pages and URLs and
+links are gonna continue
+
+00:12:59.940 --> 00:13:01.560
+to have a ton of relevance.
+
+00:13:01.560 --> 00:13:02.790
+But clearly there's a new type
+
+00:13:02.790 --> 00:13:04.170
+of software people wanna build,
+
+00:13:04.170 --> 00:13:05.850
+and there's a new opportunity then
+
+00:13:05.850 --> 00:13:07.440
+to provide the
+infrastructure and framework.
+
+00:13:07.440 --> 00:13:11.010
+So just like there was
+Next.js, we created the AI SDK.
+
+00:13:11.010 --> 00:13:14.130
+You called out it has 4.2
+million downloads a week.
+
+00:13:14.130 --> 00:13:17.010
+I think it's actually
+gonna surpass Next.js.
+
+00:13:17.010 --> 00:13:20.370
+Next.js now feels old compared
+to like this new hotness.
+
+00:13:20.370 --> 00:13:22.860
+It's like my new love interest.
+
+00:13:22.860 --> 00:13:24.780
+No, but they're complementary.
+
+00:13:24.780 --> 00:13:26.400
+There's like a foundations cloud,
+
+00:13:26.400 --> 00:13:28.260
+and there's an AI cloud
+that you can build on top.
+
+00:13:28.260 --> 00:13:30.600
+And so whenever you have an idea
+
+00:13:30.600 --> 00:13:33.390
+for an agent or an assistant,
+
+00:13:33.390 --> 00:13:34.740
+you will naturally gravitate
+
+00:13:34.740 --> 00:13:36.810
+towards a platform that
+speaks your language,
+
+00:13:36.810 --> 00:13:37.890
+and that's what we're building now.
+
+00:13:37.890 --> 00:13:40.110
+Yeah, so you guys are
+really at the forefront
+
+00:13:40.110 --> 00:13:42.150
+of helping developers build with AI.
+
+00:13:42.150 --> 00:13:43.440
+We partnered with you
+
+00:13:43.440 --> 00:13:46.710
+to make Stripe sandboxes
+native inside Vercel.
+
+00:13:46.710 --> 00:13:48.600
+And I'm curious sort of how you thought
+
+00:13:48.600 --> 00:13:52.140
+about integrating payments
+
+00:13:52.140 --> 00:13:56.160
+within your stack and why it
+felt sort of worthwhile to you.
+
+00:13:56.160 --> 00:13:58.170
+Yeah, maybe for some context,
+
+00:13:58.170 --> 00:14:00.810
+my original ambition transcended Next
+
+00:14:00.810 --> 00:14:01.940
+or Vercel or the cloud.
+
+00:14:01.940 --> 00:14:04.383
+It was, okay, if I have a great idea,
+
+00:14:05.280 --> 00:14:09.720
+how can I convert it into a
+productive software entity
+
+00:14:09.720 --> 00:14:11.460
+or business or whatever?
+
+00:14:11.460 --> 00:14:15.420
+And so my tool or my inclination was,
+
+00:14:15.420 --> 00:14:18.450
+look, JavaScript, I
+mentioned when I was a kid,
+
+00:14:18.450 --> 00:14:21.180
+I worked really hard to learn English,
+
+00:14:21.180 --> 00:14:23.700
+but I also worked really
+hard to learn JavaScript.
+
+00:14:23.700 --> 00:14:26.020
+And what I really liked
+about JavaScript was
+
+00:14:28.249 --> 00:14:31.680
+it felt like the English of
+the programming universe.
+
+00:14:31.680 --> 00:14:33.930
+Of course, there's lots of languages.
+
+00:14:33.930 --> 00:14:35.550
+Spanish is not too bad,
+
+00:14:35.550 --> 00:14:37.440
+but English, if you just learn English,
+
+00:14:37.440 --> 00:14:38.700
+think about how much you can accomplish.
+
+00:14:38.700 --> 00:14:39.750
+It's awesome.
+
+00:14:39.750 --> 00:14:40.860
+Same with JavaScript.
+
+00:14:40.860 --> 00:14:42.990
+So JavaScript can run on the server side,
+
+00:14:42.990 --> 00:14:46.020
+client side, edge, build time.
+
+00:14:46.020 --> 00:14:48.540
+It can be used to
+provision infrastructure.
+
+00:14:48.540 --> 00:14:51.780
+And now our bet is it's
+gonna be the main language
+
+00:14:51.780 --> 00:14:55.890
+of orchestrating AI services,
+making API calls to models,
+
+00:14:55.890 --> 00:14:58.020
+creating agents and workflows, et cetera.
+
+00:14:58.020 --> 00:14:58.853
+So that was the inclination,
+
+00:14:58.853 --> 00:15:01.980
+is like, "enable the world, broadly."
+
+00:15:01.980 --> 00:15:04.890
+Now, a little bit of a detour has been,
+
+00:15:04.890 --> 00:15:08.790
+well, kind of like ironically, perhaps,
+
+00:15:08.790 --> 00:15:12.450
+English is becoming the next
+hot programming language.
+
+00:15:12.450 --> 00:15:14.910
+So we created this tool v0
+
+00:15:14.910 --> 00:15:19.050
+where it feels like a self-disruption.
+
+00:15:19.050 --> 00:15:21.960
+JavaScript allowed us to
+enable tens of millions
+
+00:15:21.960 --> 00:15:26.160
+of people to create, but that's
+still a very small number.
+
+00:15:26.160 --> 00:15:28.890
+How many people can express ideas?
+
+00:15:28.890 --> 00:15:32.100
+So I'll give you actually
+an actual proxy that I use.
+
+00:15:32.100 --> 00:15:35.700
+Slack and Teams have
+approximately combined
+
+00:15:35.700 --> 00:15:39.240
+half a billion monthly active users.
+
+00:15:39.240 --> 00:15:41.970
+What do those people do
+when they open Slack?
+
+00:15:41.970 --> 00:15:45.870
+They, generally speaking,
+talk about building software
+
+00:15:45.870 --> 00:15:47.730
+or building some kind of business,
+
+00:15:47.730 --> 00:15:48.637
+and they go back and forth.
+
+00:15:48.637 --> 00:15:50.820
+"Hey, Emily, how much money
+did we make yesterday?"
+
+00:15:50.820 --> 00:15:52.680
+And she's like, "Well,
+what do you mean by money?
+
+00:15:52.680 --> 00:15:54.483
+Like, tell me exactly
+what MRR metric you want."
+
+00:15:54.483 --> 00:15:56.820
+It's like, "Okay, see you tomorrow."
+
+00:15:56.820 --> 00:15:58.140
+But we go back and forth
+
+00:15:58.140 --> 00:16:02.010
+in some conversation
+around building a business.
+
+00:16:02.010 --> 00:16:04.530
+Imagine if we could take those words
+
+00:16:04.530 --> 00:16:08.100
+and actually more directly
+and concretely build software.
+
+00:16:08.100 --> 00:16:10.650
+That was the original idea of v0.
+
+00:16:10.650 --> 00:16:13.800
+And so for us, it means that
+we can take that pool of people
+
+00:16:13.800 --> 00:16:17.340
+that are in the creator sort of category
+
+00:16:17.340 --> 00:16:20.100
+from like 20 million to 500 million.
+
+00:16:20.100 --> 00:16:22.800
+And so we recently integrated Stripe
+
+00:16:22.800 --> 00:16:24.660
+because obviously what you learn
+
+00:16:24.660 --> 00:16:25.890
+when people start building software
+
+00:16:25.890 --> 00:16:27.120
+is that they wanna monetize it.
+
+00:16:27.120 --> 00:16:30.600
+So we made an integration
+such that every person
+
+00:16:30.600 --> 00:16:32.940
+that puts a prompt into v0
+
+00:16:32.940 --> 00:16:35.160
+or creates an application into Vercel
+
+00:16:35.160 --> 00:16:38.190
+has a seamless integration with Stripe
+
+00:16:38.190 --> 00:16:39.990
+where you don't even need
+to set up the environment.
+
+00:16:39.990 --> 00:16:42.450
+You just get this sandbox provisioned.
+
+00:16:42.450 --> 00:16:44.700
+And it even surprised me,
+
+00:16:44.700 --> 00:16:48.330
+but it quickly became our
+third-most popular integration
+
+00:16:48.330 --> 00:16:49.710
+in the entire platform.
+
+00:16:49.710 --> 00:16:50.910
+It should not be surprising
+
+00:16:50.910 --> 00:16:52.830
+because anytime you build something,
+
+00:16:52.830 --> 00:16:55.680
+you need that flywheel of:
+is this actually working,
+
+00:16:55.680 --> 00:16:57.000
+and do people want it?
+
+00:16:57.000 --> 00:16:59.010
+And the best thing you
+can do is sell that thing
+
+00:16:59.010 --> 00:17:00.900
+and get feedback from the market.
+
+00:17:00.900 --> 00:17:03.210
+So it's been amazing
+because I think, jointly,
+
+00:17:03.210 --> 00:17:07.080
+we're enabling not just the
+people that know how to code
+
+00:17:07.080 --> 00:17:08.760
+or are proficient in coding,
+
+00:17:08.760 --> 00:17:10.470
+but now the next generation of,
+
+00:17:10.470 --> 00:17:13.650
+whether you call them vibe coders or not,
+
+00:17:13.650 --> 00:17:16.380
+but it goes back to that original mission
+
+00:17:16.380 --> 00:17:17.760
+of enabling everyone to ship.
+
+00:17:17.760 --> 00:17:21.480
+Any sort of surprising businesses
+that you've seen spin up
+
+00:17:21.480 --> 00:17:23.310
+with sandboxes like
+that you didn't expect,
+
+00:17:23.310 --> 00:17:24.720
+you know, just from going through?
+
+00:17:24.720 --> 00:17:27.360
+Well, there's a lot of people
+
+00:17:27.360 --> 00:17:30.360
+that are building, like, ideas.
+
+00:17:30.360 --> 00:17:32.070
+They might have a main job,
+
+00:17:32.070 --> 00:17:33.540
+and then they're like
+building sort of their,
+
+00:17:33.540 --> 00:17:35.910
+like, startup, their dreams on the side.
+
+00:17:35.910 --> 00:17:39.750
+I feel like I've seen an
+amplification of this,
+
+00:17:39.750 --> 00:17:44.023
+where, you know, for me, when
+I was at my previous company,
+
+00:17:44.023 --> 00:17:46.890
+I was dreaming of the company
+I was gonna create next.
+
+00:17:46.890 --> 00:17:48.383
+But I think the barrier-
+
+00:17:48.383 --> 00:17:49.447
+But you weren't building it yet.
+
+00:17:49.447 --> 00:17:50.280
+The barrier felt too high.
+
+00:17:50.280 --> 00:17:51.113
+It was too hard.
+
+00:17:51.113 --> 00:17:51.946
+That's right. That's right.
+
+00:17:51.946 --> 00:17:54.510
+And so I think there are
+a lot of people now that,
+
+00:17:54.510 --> 00:17:56.880
+you know, one thing that's
+been really surprising
+
+00:17:56.880 --> 00:17:58.650
+is younger people.
+
+00:17:58.650 --> 00:18:01.950
+So obviously, I had this
+story-my personal story-of like,
+
+00:18:01.950 --> 00:18:03.480
+I had to learn quite a bit
+
+00:18:03.480 --> 00:18:05.430
+in order to actually become someone
+
+00:18:05.430 --> 00:18:07.500
+that could sell something online,
+
+00:18:07.500 --> 00:18:08.970
+just integrating all the services,
+
+00:18:08.970 --> 00:18:10.560
+programming languages, et cetera.
+
+00:18:10.560 --> 00:18:11.400
+I've been hearing from people
+
+00:18:11.400 --> 00:18:12.817
+that are professional
+engineers that tell me,
+
+00:18:12.817 --> 00:18:17.250
+"Look, my siblings, they're
+like 12, 13 years old,
+
+00:18:17.250 --> 00:18:19.890
+and they're already
+selling products online."
+
+00:18:19.890 --> 00:18:21.630
+So that's also been really surprising.
+
+00:18:21.630 --> 00:18:24.990
+The other one that's even
+more surprising, perhaps, is
+
+00:18:24.990 --> 00:18:26.940
+within enterprises,
+
+00:18:26.940 --> 00:18:30.300
+the same sort of inclinations are in play
+
+00:18:30.300 --> 00:18:32.610
+where people have ideas,
+
+00:18:32.610 --> 00:18:35.400
+but they don't have the
+resources to execute.
+
+00:18:35.400 --> 00:18:37.380
+And so giving them a tool
+
+00:18:37.380 --> 00:18:40.260
+that can enable fast prototyping...
+
+00:18:40.260 --> 00:18:43.950
+One that was maybe not related
+to payments specifically
+
+00:18:43.950 --> 00:18:46.650
+but was bewildering to me
+is we heard about a company
+
+00:18:46.650 --> 00:18:49.750
+that went from v0 to patent filed
+
+00:18:51.000 --> 00:18:54.810
+just through like
+prototyping, trying it out,
+
+00:18:54.810 --> 00:18:56.460
+going back and forth with customers,
+
+00:18:56.460 --> 00:18:58.470
+visualizing the idea, et cetera.
+
+00:18:58.470 --> 00:19:01.080
+Like, okay, this actually
+is a meaningful evolution
+
+00:19:01.080 --> 00:19:02.370
+of our business.
+
+00:19:02.370 --> 00:19:05.340
+Without a tool that allowed
+them to move this fast,
+
+00:19:05.340 --> 00:19:07.560
+they need to like get
+engineering resources.
+
+00:19:07.560 --> 00:19:09.120
+They need to do all these things.
+
+00:19:09.120 --> 00:19:10.950
+So there might be a
+renaissance of, you know,
+
+00:19:10.950 --> 00:19:12.300
+it seemed like the only way
+
+00:19:12.300 --> 00:19:14.640
+that a enterprise scale could innovate
+
+00:19:14.640 --> 00:19:16.980
+is by acquiring a startup
+
+00:19:16.980 --> 00:19:18.570
+or by some people leaving
+
+00:19:18.570 --> 00:19:22.200
+and starting a startup where
+like they were free to innovate
+
+00:19:22.200 --> 00:19:24.510
+and use tools and move really fast.
+
+00:19:24.510 --> 00:19:25.937
+I think there's a version of this
+
+00:19:25.937 --> 00:19:27.450
+that's gonna happen
+within existing companies,
+
+00:19:27.450 --> 00:19:29.700
+and it's been exciting
+to play a role there.
+
+00:19:29.700 --> 00:19:31.140
+I can't get out of my head this vision
+
+00:19:31.140 --> 00:19:33.990
+of like a five-year-old Guillermo,
+
+00:19:33.990 --> 00:19:36.090
+doesn't speak English
+yet, in Buenos Aires,
+
+00:19:36.090 --> 00:19:39.720
+sitting at a v0, you know, computer.
+
+00:19:39.720 --> 00:19:40.920
+What would you build?
+
+00:19:40.920 --> 00:19:42.450
+So it's happening already, right?
+
+00:19:42.450 --> 00:19:44.940
+So one thing I've been struck by
+
+00:19:44.940 --> 00:19:48.060
+is people send us like
+the really cool things
+
+00:19:48.060 --> 00:19:49.710
+they build with v0.
+
+00:19:49.710 --> 00:19:52.620
+They share the chats in
+our community, et cetera.
+
+00:19:52.620 --> 00:19:54.090
+And it's been amazing to see that a lot
+
+00:19:54.090 --> 00:19:56.040
+of these chats are not in English.
+
+00:19:56.040 --> 00:19:58.860
+Japanese, Spanish, Arabic,
+
+00:19:58.860 --> 00:20:00.694
+like, the LLMs just don't care.
+
+00:20:00.694 --> 00:20:02.550
+Is it as performant in non-English?
+
+00:20:02.550 --> 00:20:04.110
+So this is the other thing
+that's been shocking.
+
+00:20:04.110 --> 00:20:06.210
+So I've only had limited exposure,
+
+00:20:06.210 --> 00:20:08.760
+so I haven't done a rigorous analysis,
+
+00:20:08.760 --> 00:20:12.210
+but from my vibe-ometer,
+Spanish is amazing.
+
+00:20:12.210 --> 00:20:15.960
+So that young Guillermo maybe
+would not speak English today
+
+00:20:15.960 --> 00:20:17.340
+'cause he continued-
+
+00:20:17.340 --> 00:20:18.660
+Wouldn't have needed to, yeah.
+
+00:20:18.660 --> 00:20:19.760
+building in Spanish.
+
+00:20:20.760 --> 00:20:23.130
+But the other thing that's fascinating
+
+00:20:23.130 --> 00:20:27.360
+is this is not a one-way door, right?
+
+00:20:27.360 --> 00:20:29.790
+A lot of people are starting with v0
+
+00:20:29.790 --> 00:20:33.090
+and they're becoming
+proficient engineers later.
+
+00:20:33.090 --> 00:20:34.920
+A lot of people ask me
+like, "Do you believe
+
+00:20:34.920 --> 00:20:37.740
+that this tool replaces
+the engineering role?"
+
+00:20:37.740 --> 00:20:40.440
+I don't think so, and I
+already have enough evidence
+
+00:20:40.440 --> 00:20:42.067
+from seeing people telling me, like,
+
+00:20:42.067 --> 00:20:44.070
+"I spent three months in v0.
+
+00:20:44.070 --> 00:20:46.650
+It opened my mind to the different kinds
+
+00:20:46.650 --> 00:20:49.380
+of special skills that
+it could develop later.
+
+00:20:49.380 --> 00:20:51.630
+And now I do this, and I connect to Git,
+
+00:20:51.630 --> 00:20:53.133
+and I use other tools.
+
+00:20:54.475 --> 00:20:57.210
+And I'm going towards that
+journey of proficiency."
+
+00:20:57.210 --> 00:21:00.210
+I don't think people should
+necessarily stop at prompting.
+
+00:21:00.210 --> 00:21:03.840
+In fact, this is how I
+quote, unquote, "code" today.
+
+00:21:03.840 --> 00:21:05.340
+Whenever I have an idea,
+
+00:21:05.340 --> 00:21:08.970
+it's actually way more practical
+for me to put it into v0
+
+00:21:08.970 --> 00:21:10.740
+and send a prototype to my team
+
+00:21:10.740 --> 00:21:14.730
+than try to express the
+same idea either in Slack
+
+00:21:14.730 --> 00:21:17.220
+or text messages or whatever.
+
+00:21:17.220 --> 00:21:19.980
+Or, you know, sometimes
+the friction to coding
+
+00:21:19.980 --> 00:21:23.100
+and creating an environment,
+it's just too high.
+
+00:21:23.100 --> 00:21:25.230
+And so I think these tools
+will continue to coexist
+
+00:21:25.230 --> 00:21:28.647
+in order to help people
+dream up really big things.
+
+00:21:28.647 --> 00:21:30.390
+Okay, so your own developer
+experience- Vercel's
+
+00:21:30.390 --> 00:21:32.610
+obviously known for an
+incredible developer experience.
+
+00:21:32.610 --> 00:21:36.480
+AI is changing what it
+means to be a developer.
+
+00:21:36.480 --> 00:21:38.670
+What do you think good
+developer experience
+
+00:21:38.670 --> 00:21:40.350
+is gonna look like a year out,
+
+00:21:40.350 --> 00:21:41.550
+two years out, three years out?
+
+00:21:41.550 --> 00:21:43.200
+Yeah, one thing that's definitely changed
+
+00:21:43.200 --> 00:21:46.440
+in how we operate
+internally is that we talk
+
+00:21:46.440 --> 00:21:49.530
+of the LLM as our customer.
+
+00:21:49.530 --> 00:21:53.460
+So it used to be that I designed
+Next.js only for people,
+
+00:21:53.460 --> 00:21:57.000
+and the persona that I
+would imagine in my head is,
+
+00:21:57.000 --> 00:21:58.860
+all right, there's this developer.
+
+00:21:58.860 --> 00:22:01.110
+Maybe they've had some exposure to PHP.
+
+00:22:01.110 --> 00:22:03.210
+Maybe they know some HTML.
+
+00:22:03.210 --> 00:22:05.280
+How can I relate to them?
+
+00:22:05.280 --> 00:22:08.070
+In fact, and I haven't
+shared this too broadly,
+
+00:22:08.070 --> 00:22:11.100
+but the very first version of Next.js
+
+00:22:11.100 --> 00:22:13.830
+looked a lot like a templating language
+
+00:22:13.830 --> 00:22:17.670
+'cause I really badly wanted
+to merge the world of React,
+
+00:22:17.670 --> 00:22:19.470
+which seemed a little divorced
+
+00:22:19.470 --> 00:22:22.140
+from the mainstream of
+programming at the time,
+
+00:22:22.140 --> 00:22:24.060
+and I wanted to make it super relatable.
+
+00:22:24.060 --> 00:22:26.100
+I wanted to make it like MySpace codes.
+
+00:22:26.100 --> 00:22:28.470
+I wanted to make it like,
+"Oh, it just looks like HTML
+
+00:22:28.470 --> 00:22:30.840
+with some JavaScript logic on top."
+
+00:22:30.840 --> 00:22:34.680
+Or even Shopify Liquid looks
+a little bit like this.
+
+00:22:34.680 --> 00:22:38.340
+And so my customer was that developer.
+
+00:22:38.340 --> 00:22:40.800
+And, whenever I design something,
+
+00:22:40.800 --> 00:22:44.220
+I try to think of a very
+broad range of skillset.
+
+00:22:44.220 --> 00:22:47.580
+This has been sort of like a
+personal mantra that I have.
+
+00:22:47.580 --> 00:22:51.390
+I call it progressive
+disclosure of complexity,
+
+00:22:51.390 --> 00:22:54.030
+which is actually something
+that's really hard to do.
+
+00:22:54.030 --> 00:22:56.460
+How many years old is Stripe?
+
+00:22:56.460 --> 00:22:58.317
+I mean, it depends when you count from
+
+00:22:58.317 --> 00:23:00.210
+but like slightly over a decade.
+
+00:23:00.210 --> 00:23:03.360
+Okay, so in ten years,
+
+00:23:03.360 --> 00:23:06.690
+a company will add more
+and more complexity
+
+00:23:06.690 --> 00:23:09.210
+commensurate to the customers that come in
+
+00:23:09.210 --> 00:23:10.800
+and the deals that they make.
+
+00:23:10.800 --> 00:23:13.590
+So, if Stripe is supporting Shopify,
+
+00:23:13.590 --> 00:23:16.260
+the needs of Shopify are way more advanced
+
+00:23:16.260 --> 00:23:18.810
+than the needs of a one-person shop.
+
+00:23:18.810 --> 00:23:20.940
+So, how do you maintain the simplicity
+
+00:23:20.940 --> 00:23:22.770
+of the early days, when it was mostly used
+
+00:23:22.770 --> 00:23:25.050
+by one-person shops, ten years in?
+
+00:23:25.050 --> 00:23:28.350
+And so my personal rule
+is, one, it's possible.
+
+00:23:28.350 --> 00:23:30.330
+It requires a ton of work,
+
+00:23:30.330 --> 00:23:32.520
+but the rule is progressive disclosure
+
+00:23:32.520 --> 00:23:34.020
+of complexity or sophistication,
+
+00:23:34.020 --> 00:23:36.390
+meaning you still should present yourself
+
+00:23:36.390 --> 00:23:39.960
+where you meet the needs and complexity
+
+00:23:39.960 --> 00:23:42.000
+and experience of that customer
+
+00:23:42.000 --> 00:23:43.230
+that comes in through the door.
+
+00:23:43.230 --> 00:23:46.230
+And then over time, if needed,
+
+00:23:46.230 --> 00:23:49.500
+you reveal your more complex self.
+
+00:23:49.500 --> 00:23:51.780
+And so I think there's a
+version of that happening now
+
+00:23:51.780 --> 00:23:55.290
+where, in order for me to
+make a product that is good
+
+00:23:55.290 --> 00:23:58.200
+for one person or a one-person team
+
+00:23:58.200 --> 00:24:00.900
+or we now host two of the top 20 websites
+
+00:24:00.900 --> 00:24:02.460
+on the internet by traffic,
+
+00:24:02.460 --> 00:24:04.800
+I need to be very, very cognizant
+
+00:24:04.800 --> 00:24:07.080
+of how do I expose the
+complexity to the end user.
+
+00:24:07.080 --> 00:24:09.870
+But, again, that end user
+is no longer just a human.
+
+00:24:09.870 --> 00:24:12.150
+We think of the agent
+
+00:24:12.150 --> 00:24:15.000
+and how is the agent
+gonna reason through this.
+
+00:24:15.000 --> 00:24:17.040
+Little example from literally last night.
+
+00:24:17.040 --> 00:24:20.370
+One of our framework builders that works
+
+00:24:20.370 --> 00:24:23.850
+on what do we call agentic
+developer experience,
+
+00:24:23.850 --> 00:24:25.920
+he said, "Look, what happens
+
+00:24:25.920 --> 00:24:29.790
+when agents use Next.js
+
+00:24:29.790 --> 00:24:34.110
+is that they will boot up lots
+of dead servers and kill them
+
+00:24:34.110 --> 00:24:36.600
+and boot up lots of dead
+servers and kill them."
+
+00:24:36.600 --> 00:24:39.300
+And this is not a behavior
+that a human does.
+
+00:24:39.300 --> 00:24:41.070
+A human boots up one.
+
+00:24:41.070 --> 00:24:42.567
+They go to work to their
+tech center, that's it.
+
+00:24:42.567 --> 00:24:44.310
+And, in some ways, agents are better
+
+00:24:44.310 --> 00:24:46.170
+because they try lots of
+things really quickly,
+
+00:24:46.170 --> 00:24:47.730
+and if you give them rope,
+
+00:24:47.730 --> 00:24:50.100
+they'll do a lot of stuff in parallel.
+
+00:24:50.100 --> 00:24:51.930
+And so what we realized is that
+
+00:24:51.930 --> 00:24:54.600
+in one error message in Next.js,
+
+00:24:54.600 --> 00:24:57.330
+we had to include the process ID
+
+00:24:57.330 --> 00:25:02.330
+in order to give agent context
+of what process to kill
+
+00:25:02.520 --> 00:25:04.590
+in order to recover the port
+
+00:25:04.590 --> 00:25:06.480
+that the previous process was using.
+
+00:25:06.480 --> 00:25:08.730
+This tiny amount of information-
+
+00:25:08.730 --> 00:25:11.610
+hashtag and then
+identifier of the process-
+
+00:25:11.610 --> 00:25:16.080
+is enough to boost the developer
+experience, not for people,
+
+00:25:16.080 --> 00:25:17.610
+maybe actually marginally for people
+
+00:25:17.610 --> 00:25:19.560
+'cause like what I would do
+if I was an engineer is like,
+
+00:25:19.560 --> 00:25:22.350
+oh, I would run PS and then grab my Next
+
+00:25:22.350 --> 00:25:23.850
+and then find the process and whatever.
+
+00:25:23.850 --> 00:25:25.140
+Like, not a huge difference
+
+00:25:25.140 --> 00:25:28.650
+for people can make a gigantic
+difference for agents.
+
+00:25:28.650 --> 00:25:32.730
+And so, as developer
+tools continue to advance,
+
+00:25:32.730 --> 00:25:36.510
+they will continue to cater
+to this LLM that calls tools
+
+00:25:36.510 --> 00:25:38.670
+and commands rather than people.
+
+00:25:38.670 --> 00:25:43.620
+The people will still be behind
+the agent instructing it.
+
+00:25:43.620 --> 00:25:46.140
+The other metaphor that
+I use is that, you know,
+
+00:25:46.140 --> 00:25:48.990
+instead of thinking of
+yourself as a junior engineer
+
+00:25:48.990 --> 00:25:50.310
+that joins a company,
+
+00:25:50.310 --> 00:25:53.010
+you're basically like a
+junior engineering manager
+
+00:25:53.010 --> 00:25:53.843
+that joins a company,
+
+00:25:53.843 --> 00:25:56.460
+and what you're managing
+is a fleet of agents.
+
+00:25:56.460 --> 00:25:58.230
+I like successively revealing complexity.
+
+00:25:58.230 --> 00:26:00.450
+I'm wondering if that works
+in personal life as well.
+
+00:26:00.450 --> 00:26:01.980
+Yeah, I meet you
+
+00:26:01.980 --> 00:26:05.760
+and we start talking about
+something basic, shared,
+
+00:26:05.760 --> 00:26:08.710
+and then we can end up talking
+about like colonizing Mars.
+
+00:26:08.710 --> 00:26:10.680
+Yeah, yeah, yeah.
+
+00:26:10.680 --> 00:26:12.870
+Let's talk about business models.
+
+00:26:12.870 --> 00:26:15.690
+Business models in the
+AI era are different,
+
+00:26:15.690 --> 00:26:16.770
+unique, complex.
+
+00:26:16.770 --> 00:26:17.850
+I'm curious how you've thought
+
+00:26:17.850 --> 00:26:21.180
+about Vercel's own monetization
+strategy, business model,
+
+00:26:21.180 --> 00:26:22.620
+and kind of what you're
+seeing in the market
+
+00:26:22.620 --> 00:26:24.660
+with all the businesses being built on v0.
+
+00:26:24.660 --> 00:26:27.960
+Yeah, when you engineer platforms,
+
+00:26:27.960 --> 00:26:30.630
+some of the early decisions that you make
+
+00:26:30.630 --> 00:26:33.453
+can be highly regrettable in the future.
+
+00:26:34.440 --> 00:26:36.480
+One of them is how you structure.
+
+00:26:36.480 --> 00:26:37.313
+I think a lot of people
+
+00:26:37.313 --> 00:26:39.300
+that have built products
+might relate to this,
+
+00:26:39.300 --> 00:26:43.230
+for example, how you
+structure users, teams,
+
+00:26:43.230 --> 00:26:47.130
+organizations, workspaces,
+roles, et cetera.
+
+00:26:47.130 --> 00:26:48.570
+You make some decisions,
+
+00:26:48.570 --> 00:26:49.950
+and then you wake up five years later,
+
+00:26:49.950 --> 00:26:52.200
+and you're like, "Oh, I wish
+I'd done it differently."
+
+00:26:52.200 --> 00:26:54.540
+And I think there's a version
+of this with pricing models.
+
+00:26:54.540 --> 00:26:57.450
+So if young, five-year-old Guillermo
+
+00:26:57.450 --> 00:26:58.627
+in Argentina was asking me today like,
+
+00:26:58.627 --> 00:26:59.550
+"What advice do you have
+
+00:26:59.550 --> 00:27:03.450
+for like how I should structure
+my pricing?" I would say-
+
+00:27:03.450 --> 00:27:05.010
+I feel like that's a question
+you might have asked.
+
+00:27:05.010 --> 00:27:06.000
+Yeah, totally,
+
+00:27:06.000 --> 00:27:07.722
+especially because I would
+be chatting with the LLM,
+
+00:27:07.722 --> 00:27:08.555
+and the LLM would be like,
+
+00:27:08.555 --> 00:27:09.720
+"Yeah, you have to think about this."
+
+00:27:09.720 --> 00:27:12.450
+But so, for a couple rules of thumb.
+
+00:27:12.450 --> 00:27:15.930
+So one is optimizing for
+high-iteration velocity,
+
+00:27:15.930 --> 00:27:17.430
+not just of your product,
+
+00:27:17.430 --> 00:27:19.920
+but your pricing and packaging
+and the way you bill.
+
+00:27:19.920 --> 00:27:22.770
+Like, it's gonna undergo constant change.
+
+00:27:22.770 --> 00:27:26.130
+Another one is optimizing
+for transparency.
+
+00:27:26.130 --> 00:27:28.650
+One of the big weapons that
+Vercel has today relative
+
+00:27:28.650 --> 00:27:30.540
+to old incumbents
+
+00:27:30.540 --> 00:27:32.880
+is that you can buy
+anything off the shelf,
+
+00:27:32.880 --> 00:27:35.700
+and then we transparently tell
+you how much it costs down
+
+00:27:35.700 --> 00:27:36.810
+to a very specific unit,
+
+00:27:36.810 --> 00:27:40.170
+request, data transfer unit, token of AI.
+
+00:27:40.170 --> 00:27:44.370
+And the world has very much
+evolved to this way of buying,
+
+00:27:44.370 --> 00:27:47.550
+where you have a session
+with an agent like v0,
+
+00:27:47.550 --> 00:27:49.110
+and then we tell you like,
+
+00:27:49.110 --> 00:27:51.150
+this part of the conversation
+
+00:27:51.150 --> 00:27:53.850
+literally costs you this many credits
+
+00:27:53.850 --> 00:27:57.690
+because you used up this
+much of intelligence.
+
+00:27:57.690 --> 00:28:02.400
+So, we very much live in a world
+where everything is on tap.
+
+00:28:02.400 --> 00:28:05.220
+Intelligence is on tap and power.
+
+00:28:05.220 --> 00:28:07.950
+I think of cloud computing as power.
+
+00:28:07.950 --> 00:28:11.130
+I almost think of what
+Vercel does as a utility.
+
+00:28:11.130 --> 00:28:14.400
+You want us to scale to
+infinite concurrency.
+
+00:28:14.400 --> 00:28:17.400
+So, for example, we host all
+of the prediction markets.
+
+00:28:17.400 --> 00:28:20.930
+We host Polymarket, Kalshi,
+
+00:28:20.930 --> 00:28:22.500
+and a bunch of the crypto ones.
+
+00:28:22.500 --> 00:28:25.020
+Today they're probably
+having a massive day.
+
+00:28:25.020 --> 00:28:26.640
+Why? Because everyone's hitting refresh
+
+00:28:26.640 --> 00:28:28.380
+on the New York election.
+
+00:28:28.380 --> 00:28:30.480
+I'll probably do it
+when I leave this room.
+
+00:28:30.480 --> 00:28:31.740
+Hey, I could see you're antsy.
+
+00:28:31.740 --> 00:28:32.853
+You wanna know what's happening.
+
+00:28:32.853 --> 00:28:35.640
+And so Vercel is
+basically letting you draw
+
+00:28:35.640 --> 00:28:37.680
+as much power as you need.
+
+00:28:37.680 --> 00:28:40.470
+And we do it in a way that
+they didn't need to call 'em
+
+00:28:40.470 --> 00:28:41.850
+and say, "Hey, there's
+an election coming up.
+
+00:28:41.850 --> 00:28:43.500
+Can you just give me a
+little bit more power, bro?"
+
+00:28:43.500 --> 00:28:45.270
+No, it's like on demand,
+
+00:28:45.270 --> 00:28:46.710
+and that means that we need to optimize
+
+00:28:46.710 --> 00:28:49.263
+for a system of enormous transparency,
+
+00:28:50.160 --> 00:28:52.200
+real-time accounting.
+
+00:28:52.200 --> 00:28:53.310
+So you can go to Vercel
+
+00:28:53.310 --> 00:28:55.230
+and-at any time, in real time-see,
+
+00:28:55.230 --> 00:28:57.090
+all right, how many requests,
+
+00:28:57.090 --> 00:29:00.570
+how many compute microseconds.
+
+00:29:00.570 --> 00:29:02.100
+Same for the build process.
+
+00:29:02.100 --> 00:29:04.650
+So, if you have 100
+engineers or one engineer,
+
+00:29:04.650 --> 00:29:08.760
+we can provision one build
+unit or 100 build units.
+
+00:29:08.760 --> 00:29:10.020
+Your team grows.
+
+00:29:10.020 --> 00:29:11.820
+You can draw more compute.
+
+00:29:11.820 --> 00:29:14.100
+The same is happening with tokens, right?
+
+00:29:14.100 --> 00:29:16.020
+There's some engineers at your company
+
+00:29:16.020 --> 00:29:19.830
+that will be having very long
+sessions with the agents.
+
+00:29:19.830 --> 00:29:21.900
+There's some that are
+gonna be more parallel.
+
+00:29:21.900 --> 00:29:24.480
+There's some people
+that, you know, frankly,
+
+00:29:24.480 --> 00:29:26.610
+as much as I am agent-pilled,
+
+00:29:26.610 --> 00:29:29.070
+I have some engineers working
+in some frontier domains
+
+00:29:29.070 --> 00:29:32.670
+where AI gives them no returns today,
+
+00:29:32.670 --> 00:29:35.070
+people working on very advanced compiler
+
+00:29:35.070 --> 00:29:35.970
+or cloud infrastructure
+
+00:29:35.970 --> 00:29:38.370
+that there's just not
+enough data or whatever.
+
+00:29:38.370 --> 00:29:42.780
+And so you need this very
+fluid model of accounting,
+
+00:29:42.780 --> 00:29:43.920
+billing, et cetera.
+
+00:29:43.920 --> 00:29:47.460
+And so what I would be thinking today
+
+00:29:47.460 --> 00:29:48.960
+when you think about your pricing model
+
+00:29:48.960 --> 00:29:51.150
+and how you monetize is-
+
+00:29:51.150 --> 00:29:52.920
+especially if there is
+an intelligence component
+
+00:29:52.920 --> 00:29:54.570
+or a power component-
+
+00:29:54.570 --> 00:29:57.840
+how do you do some of that
+real-time transparency
+
+00:29:57.840 --> 00:29:59.070
+back to your customer?
+
+00:29:59.070 --> 00:30:02.550
+But also, the SaaS models
+are still very relevant.
+
+00:30:02.550 --> 00:30:06.300
+There's a lot that is
+rightfully metered by seat
+
+00:30:06.300 --> 00:30:09.630
+or by project or by
+some other kind of unit.
+
+00:30:09.630 --> 00:30:12.510
+So, where Vercel exists today
+is kind of a hybrid world
+
+00:30:12.510 --> 00:30:14.460
+of this very much on demand
+
+00:30:14.460 --> 00:30:16.470
+and also for some things
+that are more related
+
+00:30:16.470 --> 00:30:19.560
+to collaboration, other
+aspects of building software,
+
+00:30:19.560 --> 00:30:21.240
+more traditional like you would pay
+
+00:30:21.240 --> 00:30:23.820
+for GitHub or Figma or others.
+
+00:30:23.820 --> 00:30:26.940
+And, of course, Stripe has
+evolved to meet this level
+
+00:30:26.940 --> 00:30:28.080
+of complexity.
+Yeah, we do.
+
+00:30:28.080 --> 00:30:30.090
+We see a lot of this hybrid
+billing model, right?
+
+00:30:30.090 --> 00:30:32.130
+You want the sweet, sweet ARR,
+
+00:30:32.130 --> 00:30:33.930
+but you also don't wanna
+charge the same amount
+
+00:30:33.930 --> 00:30:35.070
+to the person who's using, you know,
+
+00:30:35.070 --> 00:30:36.960
+in browser base like
+a couple hours a month
+
+00:30:36.960 --> 00:30:39.000
+as the person who's using
+thousands of hours a month.
+
+00:30:39.000 --> 00:30:41.640
+And, I'll tell you, sometimes
+entrepreneurs can get
+
+00:30:41.640 --> 00:30:43.500
+into a little bit of a cold-start problem
+
+00:30:43.500 --> 00:30:45.360
+because if you do everything on demand,
+
+00:30:45.360 --> 00:30:46.830
+then you might have 100,000 customers
+
+00:30:46.830 --> 00:30:49.140
+that pay you like 3 cents a month.
+
+00:30:49.140 --> 00:30:51.090
+And you have fixed platform costs.
+
+00:30:51.090 --> 00:30:51.930
+You have platform costs
+
+00:30:51.930 --> 00:30:55.140
+because you had to like get
+something up and running
+
+00:30:55.140 --> 00:30:58.470
+in order to just be online
+and serve your user base.
+
+00:30:58.470 --> 00:30:59.870
+And that's why I'm actually,
+
+00:31:01.050 --> 00:31:03.510
+number one, I'm a fan of
+extreme experimentation.
+
+00:31:03.510 --> 00:31:05.130
+I think no one really knows the answer
+
+00:31:05.130 --> 00:31:06.060
+to these hard problems,
+
+00:31:06.060 --> 00:31:08.070
+and so you have to get out
+there and try many things.
+
+00:31:08.070 --> 00:31:10.620
+But the other one is that I
+think I'm quite open-minded
+
+00:31:10.620 --> 00:31:12.370
+about like more of the hybrid ways,
+
+00:31:13.885 --> 00:31:15.600
+and obviously it's great that, you know,
+
+00:31:15.600 --> 00:31:17.460
+you have a lot of the
+infrastructure already built.
+
+00:31:17.460 --> 00:31:21.300
+So doing it for yourself
+I do not recommend.
+
+00:31:21.300 --> 00:31:22.320
+It's quite hard.
+
+00:31:22.320 --> 00:31:23.940
+I wanna jump back to
+something you said earlier
+
+00:31:23.940 --> 00:31:25.680
+about like the web
+today is built on pages.
+
+00:31:25.680 --> 00:31:26.670
+Pages aren't going anywhere,
+
+00:31:26.670 --> 00:31:28.830
+but there's kind of a
+new dominant interface
+
+00:31:28.830 --> 00:31:29.820
+that's popping up.
+
+00:31:29.820 --> 00:31:31.170
+We didn't really talk about...
+
+00:31:31.170 --> 00:31:32.670
+We talked a little bit about
+what that's gonna demand
+
+00:31:32.670 --> 00:31:33.503
+from the infrastructure layer.
+
+00:31:33.503 --> 00:31:34.980
+We didn't really talk about
+what that's gonna demand
+
+00:31:34.980 --> 00:31:36.420
+in terms of new protocols,
+
+00:31:36.420 --> 00:31:38.610
+and I'm curious sort of
+what's top of mind for you.
+
+00:31:38.610 --> 00:31:41.940
+Yeah, one thing I mentioned briefly is
+
+00:31:41.940 --> 00:31:46.940
+if the programming language
+of tomorrow is human,
+
+00:31:47.400 --> 00:31:50.160
+that means that you'll
+likely be integrated
+
+00:31:50.160 --> 00:31:51.360
+into a lot of the places
+
+00:31:51.360 --> 00:31:53.070
+where the conversations
+are already happening.
+
+00:31:53.070 --> 00:31:56.010
+So, if you and I are chatting on WhatsApp,
+
+00:31:56.010 --> 00:31:59.220
+then we might create a group
+
+00:31:59.220 --> 00:32:01.650
+with a bot that is there in WhatsApp,
+
+00:32:01.650 --> 00:32:04.290
+or if we're in Slack, same thing.
+
+00:32:04.290 --> 00:32:06.600
+So, the interface
+
+00:32:06.600 --> 00:32:09.720
+that has been the poster child
+
+00:32:09.720 --> 00:32:12.840
+of this first era of AI is conversation,
+
+00:32:12.840 --> 00:32:15.360
+in talking to these agents, in prompting,
+
+00:32:15.360 --> 00:32:17.220
+and I expect that to continue.
+
+00:32:17.220 --> 00:32:19.650
+What's also true is that a lot
+
+00:32:19.650 --> 00:32:22.200
+of these platforms already exist.
+
+00:32:22.200 --> 00:32:23.910
+So there's already ChatGPT.
+
+00:32:23.910 --> 00:32:25.140
+There's already Grok.
+
+00:32:25.140 --> 00:32:27.030
+There is already v0.
+
+00:32:27.030 --> 00:32:28.740
+There's already Cursor.
+
+00:32:28.740 --> 00:32:31.080
+And so paying attention to the protocols
+
+00:32:31.080 --> 00:32:33.900
+that allow you to meet
+customers where they are.
+
+00:32:33.900 --> 00:32:36.240
+Literally, this morning I
+was getting a really nice-
+
+00:32:36.240 --> 00:32:37.560
+I was telling you about it-
+
+00:32:37.560 --> 00:32:40.740
+pitch about a data AI company.
+
+00:32:40.740 --> 00:32:42.900
+And the founder's making the case
+
+00:32:42.900 --> 00:32:44.820
+that one of the key interfaces
+
+00:32:44.820 --> 00:32:46.890
+for his product is gonna be the MCP server
+
+00:32:46.890 --> 00:32:47.880
+because a lot of companies
+
+00:32:47.880 --> 00:32:50.610
+are building their own AI interfaces.
+
+00:32:50.610 --> 00:32:52.140
+I meet a lot of enterprises
+
+00:32:52.140 --> 00:32:54.960
+that have basically their
+own internal ChatGPTs.
+
+00:32:54.960 --> 00:32:56.490
+We have one at Vercel.
+
+00:32:56.490 --> 00:32:57.750
+You guys have one.
+
+00:32:57.750 --> 00:32:59.220
+Shopify has one.
+
+00:32:59.220 --> 00:33:00.795
+And so your product
+
+00:33:00.795 --> 00:33:03.240
+might not have a pixel interface, per se.
+
+00:33:03.240 --> 00:33:04.627
+You might just come to
+the company and say,
+
+00:33:04.627 --> 00:33:09.060
+"Hey, Stripe, if you connect
+to our MCP server over here,
+
+00:33:09.060 --> 00:33:11.490
+you're gonna get this value from us."
+
+00:33:11.490 --> 00:33:13.893
+So, I'm paying a lot of attention to MCP.
+
+00:33:15.090 --> 00:33:17.160
+We have a lot of customers in e-comm.
+
+00:33:17.160 --> 00:33:19.140
+Black Friday is gonna
+be a huge day for us,
+
+00:33:19.140 --> 00:33:20.880
+also for Stripe, of course.
+
+00:33:20.880 --> 00:33:22.957
+And a lot of the questions that I get are,
+
+00:33:22.957 --> 00:33:25.320
+"How do I survive and thrive
+
+00:33:25.320 --> 00:33:27.960
+in an age of agentic browsers?"
+
+00:33:27.960 --> 00:33:31.567
+Meaning, you know, the
+customers tells it like,
+
+00:33:31.567 --> 00:33:33.570
+"Get me this beautiful black sweater."
+
+00:33:33.570 --> 00:33:34.956
+It's a beautiful black sweater.
+
+00:33:34.956 --> 00:33:37.110
+Do you think agent commerce
+is overrated or underrated?
+
+00:33:37.110 --> 00:33:39.360
+I thought you were gonna ask
+me, "Where do you get it?"
+
+00:33:39.360 --> 00:33:40.801
+No, I don't need one, but it looks-
+
+00:33:40.801 --> 00:33:42.090
+I don't think agent commerce is overrated
+
+00:33:42.090 --> 00:33:44.220
+because I think, at least for myself,
+
+00:33:44.220 --> 00:33:45.210
+I always get the same things,
+
+00:33:45.210 --> 00:33:47.793
+the same black shirts 200 times a year,
+
+00:33:48.667 --> 00:33:51.600
+and so there is a kind
+of purchase that you make
+
+00:33:51.600 --> 00:33:52.850
+that is very predictable.
+
+00:33:54.690 --> 00:33:57.750
+Again, context is king, always has been,
+
+00:33:57.750 --> 00:33:59.700
+even more so now within in the age of AI.
+
+00:33:59.700 --> 00:34:00.990
+That little example that I gave you
+
+00:34:00.990 --> 00:34:03.690
+of like we improved the
+Next.js error message
+
+00:34:03.690 --> 00:34:05.250
+by five characters,
+
+00:34:05.250 --> 00:34:08.040
+and all of a sudden, like,
+the world works way better-
+
+00:34:08.040 --> 00:34:10.230
+the same is true for
+how you bring context.
+
+00:34:10.230 --> 00:34:12.480
+That's just a way of
+doing context engineering.
+
+00:34:12.480 --> 00:34:13.980
+The concept that we put into the agent
+
+00:34:13.980 --> 00:34:15.540
+determines the quality of the outcome.
+
+00:34:15.540 --> 00:34:18.270
+For commerce, I think if
+you have really good context
+
+00:34:18.270 --> 00:34:22.140
+in like what my preferences are
+and my history of purchases,
+
+00:34:22.140 --> 00:34:23.820
+there's a lot that you can automate.
+
+00:34:23.820 --> 00:34:26.910
+I expect it to play a role
+even in the world of pixels
+
+00:34:26.910 --> 00:34:28.890
+because what a lot of merchants-
+
+00:34:28.890 --> 00:34:30.630
+the dragon that they've been chasing
+
+00:34:30.630 --> 00:34:32.400
+and have never quite gotten to-
+
+00:34:32.400 --> 00:34:35.610
+is that you open favoriteshop.com,
+
+00:34:35.610 --> 00:34:37.500
+and it knows exactly what you want
+
+00:34:37.500 --> 00:34:39.840
+instead of a generic static page.
+
+00:34:39.840 --> 00:34:41.460
+This is literally why Vercel like...
+
+00:34:41.460 --> 00:34:43.380
+A lot of our business,
+why it's so successful,
+
+00:34:43.380 --> 00:34:46.770
+is we helped people not ship static pages
+
+00:34:46.770 --> 00:34:49.650
+and dynamically render and personalize.
+
+00:34:49.650 --> 00:34:51.240
+But I think a lot of these pages
+
+00:34:51.240 --> 00:34:53.220
+and interfaces are gonna be LLM-backed.
+
+00:34:53.220 --> 00:34:57.120
+So, imagine behind the
+scenes of producing a page,
+
+00:34:57.120 --> 00:35:00.600
+there's an LLM with a lot of context.
+
+00:35:00.600 --> 00:35:03.060
+And imagine that the tool
+calls that it can make
+
+00:35:03.060 --> 00:35:06.060
+is the orchestration
+of your UI components.
+
+00:35:06.060 --> 00:35:09.000
+So, all of a sudden when I
+go to, you know, keith.com,
+
+00:35:09.000 --> 00:35:10.890
+the LLM is producing the page.
+
+00:35:10.890 --> 00:35:12.180
+That's the mental model that I have.
+
+00:35:12.180 --> 00:35:14.760
+Now, some people are
+gonna go to keith.com.
+
+00:35:14.760 --> 00:35:17.400
+Some people are gonna go to chatgpt.com.
+
+00:35:17.400 --> 00:35:18.870
+And so you need both.
+
+00:35:18.870 --> 00:35:22.140
+You need the protocol to
+integrate it into big chat,
+
+00:35:22.140 --> 00:35:24.930
+and you also need to,
+yourself as a business
+
+00:35:24.930 --> 00:35:26.610
+but also the way that you
+should think about it,
+
+00:35:26.610 --> 00:35:28.860
+is empowering the businesses
+
+00:35:28.860 --> 00:35:31.410
+that also wanna maintain
+their own interfaces
+
+00:35:31.410 --> 00:35:32.250
+with the customer.
+
+00:35:32.250 --> 00:35:33.949
+And with this new customer that's the LLM,
+
+00:35:33.949 --> 00:35:34.782
+both at the same time?
+
+00:35:34.782 --> 00:35:36.087
+Yeah, the customer might be an LLM.
+
+00:35:36.087 --> 00:35:38.130
+The customer might be a traditional user.
+
+00:35:38.130 --> 00:35:40.560
+The way that I think about it
+is when I go to the airport,
+
+00:35:40.560 --> 00:35:43.200
+and I walk past my favorite store,
+
+00:35:43.200 --> 00:35:44.970
+I might still be inclined
+
+00:35:44.970 --> 00:35:46.680
+to have a human-centric experience.
+
+00:35:46.680 --> 00:35:48.630
+So I walk in and I explore,
+
+00:35:48.630 --> 00:35:50.970
+and ideally I would want
+that to be hyper-personalized
+
+00:35:50.970 --> 00:35:52.110
+and tailored to me.
+
+00:35:52.110 --> 00:35:54.090
+Another interface will
+be the agent browser,
+
+00:35:54.090 --> 00:35:56.340
+meaning I tell it like, "Get
+me my black sweater again,"
+
+00:35:56.340 --> 00:35:58.263
+and it just goes off and gets it.
+
+00:35:59.490 --> 00:36:03.840
+And then the other interface
+will just be purely the agent
+
+00:36:03.840 --> 00:36:05.820
+that you're not directly interfacing with
+
+00:36:05.820 --> 00:36:07.080
+but some other agent.
+
+00:36:07.080 --> 00:36:09.210
+So this is kind of the
+agent-to-agent model.
+
+00:36:09.210 --> 00:36:11.400
+There's an e-commerce agent over here,
+
+00:36:11.400 --> 00:36:13.110
+but I'm interfacing with some other agent
+
+00:36:13.110 --> 00:36:14.490
+that in order to fulfill its purpose,
+
+00:36:14.490 --> 00:36:15.810
+it needs to buy something.
+
+00:36:15.810 --> 00:36:16.710
+We did a little demo.
+
+00:36:16.710 --> 00:36:17.970
+I mean, this sounds like science fiction,
+
+00:36:17.970 --> 00:36:21.060
+but we did a little demo
+of this with Stripe,
+
+00:36:21.060 --> 00:36:23.400
+where imagine that you're coding,
+
+00:36:23.400 --> 00:36:25.290
+and you're talking to a coding agent,
+
+00:36:25.290 --> 00:36:27.570
+and you tell it, "Deploy."
+
+00:36:27.570 --> 00:36:30.810
+And the agent-you haven't made
+a deployment decision yet-
+
+00:36:30.810 --> 00:36:32.340
+the agent says, "Well,
+in order to deploy it,
+
+00:36:32.340 --> 00:36:35.047
+I'm gonna use Vercel
+'cause it's the best."
+
+00:36:35.047 --> 00:36:39.510
+How does that agent successfully
+procure a Vercel account
+
+00:36:39.510 --> 00:36:42.270
+and pay for it, so that what it gives you
+
+00:36:42.270 --> 00:36:44.040
+is actually the outcome that you wanted?
+
+00:36:44.040 --> 00:36:46.860
+You wanted a live URL or
+you wanted a deployment,
+
+00:36:46.860 --> 00:36:50.130
+and it just fulfilled the
+commercial transaction
+
+00:36:50.130 --> 00:36:51.870
+as an implementation detail.
+
+00:36:51.870 --> 00:36:54.090
+Obviously, you will want oversight.
+
+00:36:54.090 --> 00:36:57.750
+You want your payment methods
+to be, you know, persisted.
+
+00:36:57.750 --> 00:36:59.250
+You want fraud prevention.
+
+00:36:59.250 --> 00:37:01.440
+You want all the good things of buying,
+
+00:37:01.440 --> 00:37:03.990
+but think of it as like my
+assistant is doing the purchase.
+
+00:37:03.990 --> 00:37:07.230
+I mean, there's disproportionate
+talk of agentic commerce
+
+00:37:07.230 --> 00:37:09.030
+in the B2C context,
+
+00:37:09.030 --> 00:37:12.420
+but I think the B2B is
+far under-discussed,
+
+00:37:12.420 --> 00:37:15.390
+and procurement could look
+very different a year from now.
+
+00:37:15.390 --> 00:37:17.850
+Amazing, that is all
+we have time for today,
+
+00:37:17.850 --> 00:37:20.460
+and a huge thank you to Guillermo
+for the insights shared.
+
+00:37:20.460 --> 00:37:22.440
+I know I'm walking away with a lot
+
+00:37:22.440 --> 00:37:24.213
+and hope you all are too.
+- Thank you all.
+

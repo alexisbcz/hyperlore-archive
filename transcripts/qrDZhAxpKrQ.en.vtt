@@ -1,0 +1,7555 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:05.576 --> 00:00:07.562
+- Okay so this is class number 11.
+
+00:00:07.562 --> 00:00:09.883
+I think this is the
+midpoint, very exciting.
+
+00:00:09.883 --> 00:00:11.776
+So we're talking about scaling from
+
+00:00:11.776 --> 00:00:13.041
+scaling to village.
+
+00:00:13.041 --> 00:00:15.618
+And we're very lucky to
+have Patrick Collison,
+
+00:00:15.618 --> 00:00:17.557
+who I think you'll all
+find super interesting
+
+00:00:17.557 --> 00:00:20.297
+and super thoughtful, so
+just let's welcome Patrick.
+
+00:00:20.297 --> 00:00:23.663
+(applause)
+
+00:00:23.663 --> 00:00:25.474
+- Thank you.
+
+00:00:25.474 --> 00:00:27.261
+- So thanks for coming.
+
+00:00:27.261 --> 00:00:27.981
+- Thanks for having me.
+
+00:00:27.981 --> 00:00:29.537
+- He walked in with a book made of paper,
+
+00:00:29.537 --> 00:00:30.486
+which is always very exciting.
+
+00:00:30.486 --> 00:00:31.451
+(Patrick laughs)
+
+00:00:31.451 --> 00:00:33.681
+So can you just tell the story
+
+00:00:33.681 --> 00:00:36.073
+about starting Stripe,
+tell the founding story?
+
+00:00:36.073 --> 00:00:38.220
+- Yeah, sure.
+
+00:00:38.220 --> 00:00:42.412
+So, and by the way,
+apologies if, you know,
+
+00:00:42.412 --> 00:00:43.781
+suggesting this be off the record,
+
+00:00:43.781 --> 00:00:45.279
+suggest that there'll be all these
+
+00:00:45.279 --> 00:00:46.682
+sort of salacious details or something.
+
+00:00:46.682 --> 00:00:47.367
+- Not a problem.
+
+00:00:47.367 --> 00:00:49.003
+- But mostly just I think it's much better
+
+00:00:49.003 --> 00:00:50.583
+in these to be able to just sort of
+
+00:00:50.583 --> 00:00:51.928
+directly sort of share everything
+
+00:00:51.928 --> 00:00:53.009
+and not have this sort of process
+
+00:00:53.009 --> 00:00:54.181
+where in the back of your mind
+
+00:00:54.181 --> 00:00:56.482
+trying to run the filter
+
+00:00:56.482 --> 00:00:57.909
+on what makes sense
+for public consumption.
+
+00:00:57.909 --> 00:00:59.267
+Because a lot of this stuff is sort of,
+
+00:00:59.267 --> 00:01:01.160
+this is not like a company
+that started ten years ago,
+
+00:01:01.160 --> 00:01:02.925
+this is kind of happening
+kind of week-to-week
+
+00:01:02.925 --> 00:01:04.840
+and month-to-month.
+
+00:01:04.840 --> 00:01:06.779
+But the general story of Stripe
+
+00:01:06.779 --> 00:01:08.566
+is, well, I'm always a
+bit sort of skeptical
+
+00:01:08.566 --> 00:01:10.819
+of kind of founding mythology
+sort of around companies
+
+00:01:10.819 --> 00:01:12.978
+in that I'm pretty sure they
+get sort of heavily edited
+
+00:01:12.978 --> 00:01:14.905
+kind of post-facto.
+
+00:01:14.905 --> 00:01:19.827
+For Stripe at least, it's
+really not that dramatic
+
+00:01:19.827 --> 00:01:23.032
+in the sense that John, my
+co-founder and brother and I
+
+00:01:23.032 --> 00:01:25.307
+were in school together.
+
+00:01:25.307 --> 00:01:26.885
+We were both on the East Coast,
+
+00:01:26.885 --> 00:01:31.646
+and we'd started building
+these iPhone apps together,
+
+00:01:31.646 --> 00:01:33.293
+and we were basically sort of
+
+00:01:33.293 --> 00:01:34.664
+paying our college tuition out of
+
+00:01:34.664 --> 00:01:36.591
+sort of the revenue coming
+from these iPhone apps,
+
+00:01:36.591 --> 00:01:38.030
+and so we'd kind of gotten into the habit
+
+00:01:38.030 --> 00:01:40.306
+of just working on various side projects,
+
+00:01:40.306 --> 00:01:44.369
+and we kind of had realized that sort of
+
+00:01:44.369 --> 00:01:46.470
+it was surprisingly easy to make money
+
+00:01:46.470 --> 00:01:47.886
+out of iPhone apps, right?
+
+00:01:47.886 --> 00:01:48.606
+(Professor laughs)
+
+00:01:48.606 --> 00:01:49.628
+And part of the reason it was so easy
+
+00:01:49.628 --> 00:01:51.568
+was because it was so
+easy to charge for things.
+
+00:01:51.568 --> 00:01:52.913
+And then we were kind of wondering,
+
+00:01:52.913 --> 00:01:54.167
+"Hmm, you know, despite building sort of
+
+00:01:54.167 --> 00:01:55.351
+"all these things for
+the past couple years,
+
+00:01:55.351 --> 00:01:56.814
+"why do we never charge
+for anything online?"
+
+00:01:56.814 --> 00:01:58.473
+And we realized, well,
+it's such a pain in the ass
+
+00:01:58.473 --> 00:01:59.948
+to sort of accept
+payments on the Internet.
+
+00:01:59.948 --> 00:02:01.654
+You have to sort of hop
+through all these hoops
+
+00:02:01.654 --> 00:02:03.350
+and basically get a mortgage.
+
+00:02:03.350 --> 00:02:03.988
+- Right.
+
+00:02:03.988 --> 00:02:05.648
+- Or so it felt kind
+of, in order to sort of
+
+00:02:05.648 --> 00:02:08.492
+literally receive dollars
+from users of your software.
+
+00:02:08.492 --> 00:02:12.010
+And so I remember using, I'm
+not sure if anyone else here
+
+00:02:12.010 --> 00:02:14.343
+has used this, but there's
+a thing called Slicehost,
+
+00:02:14.343 --> 00:02:17.478
+which was kind of the
+first really good sort of
+
+00:02:17.478 --> 00:02:19.020
+virtualized hosting provider.
+
+00:02:19.020 --> 00:02:21.259
+I mean EC2 was maybe around the same time,
+
+00:02:21.259 --> 00:02:22.815
+but EC2 required all this like crazy
+
+00:02:22.815 --> 00:02:24.741
+Java online hackery.
+
+00:02:24.741 --> 00:02:26.775
+It wasn't as easy to use as it is now.
+
+00:02:26.775 --> 00:02:28.236
+Slicehost was really straightforward.
+
+00:02:28.236 --> 00:02:29.699
+You could click like create server,
+
+00:02:29.699 --> 00:02:31.814
+you know, select here the next distro,
+
+00:02:31.814 --> 00:02:32.686
+and sort of 30 seconds later,
+
+00:02:32.686 --> 00:02:34.473
+there's a root password emailed to you.
+
+00:02:34.473 --> 00:02:36.029
+And it was sort of really transformative,
+
+00:02:36.029 --> 00:02:37.654
+because now getting just your own server
+
+00:02:37.654 --> 00:02:38.966
+was just super straightforward,
+
+00:02:38.966 --> 00:02:41.590
+and it meant that I kind of really lowered
+
+00:02:41.590 --> 00:02:43.285
+the activation energy and a better entry
+
+00:02:43.285 --> 00:02:44.910
+for sort of going and building something.
+
+00:02:44.910 --> 00:02:46.291
+And we wondered basically why there wasn't
+
+00:02:46.291 --> 00:02:47.905
+Slicehost for payments.
+
+00:02:47.905 --> 00:02:51.748
+And so I actually remember
+it was in October 2009,
+
+00:02:51.748 --> 00:02:53.372
+John and I were walking
+back from dinner together,
+
+00:02:53.372 --> 00:02:55.404
+and we'd been sort of
+battering around this idea
+
+00:02:55.404 --> 00:02:57.212
+for a while, Slicehost for payments.
+
+00:02:57.212 --> 00:03:00.011
+And I remember him commenting to me
+
+00:03:00.011 --> 00:03:02.657
+that, "Eh, you know, we
+should just build a prototype,
+
+00:03:02.657 --> 00:03:03.355
+(Professor laughs)
+
+00:03:03.355 --> 00:03:04.376
+"it probably won't be that hard." (laughs)
+
+00:03:04.376 --> 00:03:05.398
+- [Professor] That's a simple question
+
+00:03:05.398 --> 00:03:06.836
+leading to 20 years' work.
+
+00:03:06.836 --> 00:03:08.811
+- Right, well so I was gonna,
+
+00:03:08.811 --> 00:03:10.844
+so Avi Bryant who works at Stripe
+
+00:03:10.844 --> 00:03:13.166
+calls Stripe the world's
+biggest ever yak shave.
+
+00:03:13.166 --> 00:03:14.165
+(Professor laughs)
+
+00:03:14.165 --> 00:03:15.349
+And so maybe in another five years
+
+00:03:15.349 --> 00:03:16.788
+we'll get back to building side projects.
+
+00:03:16.788 --> 00:03:18.610
+- Do you guys know what that?
+
+00:03:18.610 --> 00:03:19.946
+Can you explain what yak shaving is?
+
+00:03:19.946 --> 00:03:21.710
+- Oh, wait, god, kids these days.
+
+00:03:21.710 --> 00:03:23.301
+(Professor laughs)
+
+00:03:23.301 --> 00:03:24.903
+So, you know, yak shave is sort of
+
+00:03:24.903 --> 00:03:26.981
+when you're sort of building something
+
+00:03:26.981 --> 00:03:28.188
+or working on some problem,
+
+00:03:28.188 --> 00:03:29.790
+and you realize that kind of some other
+
+00:03:29.790 --> 00:03:31.357
+obstruction is going to be inelegant
+
+00:03:31.357 --> 00:03:32.367
+or you should have some other thing,
+
+00:03:32.367 --> 00:03:33.772
+and so you start going, fixing that,
+
+00:03:33.772 --> 00:03:35.433
+and you realize, well,
+really in order to fix that,
+
+00:03:35.433 --> 00:03:36.976
+this thing has to be this
+other way and whatever,
+
+00:03:36.976 --> 00:03:39.031
+and so you kind of get seven layers down,
+
+00:03:39.031 --> 00:03:40.574
+you kind of forget where you even started,
+
+00:03:40.574 --> 00:03:42.409
+because the stack has gotten so deep.
+
+00:03:42.409 --> 00:03:45.334
+There's actually a great
+XKCD comic about yak shaves.
+
+00:03:45.334 --> 00:03:47.435
+I think he's like surrounded
+by sharks or something,
+
+00:03:47.435 --> 00:03:49.050
+he started to try to fix his tv.
+
+00:03:49.050 --> 00:03:50.106
+I don't know, anyway.
+
+00:03:50.106 --> 00:03:52.706
+If you search XKCD yak
+shave, it illustrates
+
+00:03:52.706 --> 00:03:53.589
+the concept effectively.
+
+00:03:53.589 --> 00:03:55.249
+- It's a bike shedding,
+
+00:03:55.249 --> 00:03:57.049
+but it's a different, slightly different.
+
+00:03:57.049 --> 00:03:57.687
+- Right.
+
+00:03:57.687 --> 00:03:58.452
+Right, right.
+
+00:03:58.452 --> 00:03:59.591
+And I think there's an original parable
+
+00:03:59.591 --> 00:04:00.635
+about sort of shaving the yak,
+
+00:04:00.635 --> 00:04:02.307
+and you have to buy
+scissors and whatever else.
+
+00:04:02.307 --> 00:04:06.209
+But anyway, so we just had
+to build the prototype,
+
+00:04:06.209 --> 00:04:10.027
+and we launched kind of
+the first version of this
+
+00:04:10.027 --> 00:04:13.451
+in January of 2010 to just
+like a couple of friends.
+
+00:04:13.451 --> 00:04:17.932
+It was kind of built with
+sort of duct tape and wire,
+
+00:04:17.932 --> 00:04:20.731
+sort of really the sort
+of foundations upon which
+
+00:04:20.731 --> 00:04:22.843
+it was built were sort of fairly flimsy,
+
+00:04:22.843 --> 00:04:24.283
+but it was enough to
+kind of just get a sense
+
+00:04:24.283 --> 00:04:25.548
+for the basic product experience,
+
+00:04:25.548 --> 00:04:26.651
+sort of what it would be like.
+
+00:04:26.651 --> 00:04:28.346
+You kind of instantly
+start charging credit cards
+
+00:04:28.346 --> 00:04:30.253
+just with a kind of a crawl command.
+
+00:04:30.253 --> 00:04:32.273
+Stripe wasn't called Stripe back then.
+
+00:04:32.273 --> 00:04:34.873
+It was called /dev/payments
+
+00:04:34.873 --> 00:04:37.312
+because we, you can tell we were
+
+00:04:37.312 --> 00:04:38.507
+great binding experts.
+
+00:04:38.507 --> 00:04:42.199
+But we sort of wondered
+what it would be like
+
+00:04:42.199 --> 00:04:43.498
+to have sort of payments API.
+
+00:04:43.498 --> 00:04:44.740
+It was kind of straightforward
+
+00:04:44.740 --> 00:04:46.365
+as just the interface to a node
+
+00:04:46.365 --> 00:04:48.641
+and sort of the device file system,
+
+00:04:48.641 --> 00:04:52.112
+you know, you devmouse
+or devaudio or whatever.
+
+00:04:52.112 --> 00:04:56.651
+And we launched that
+prototype in January 2010,
+
+00:04:56.651 --> 00:04:58.764
+and it just sort of took
+off by word of mouth.
+
+00:04:58.764 --> 00:05:00.481
+It wasn't even launched publicly,
+
+00:05:00.481 --> 00:05:02.978
+but we kind of had this
+ever-accumulating wait list
+
+00:05:02.978 --> 00:05:05.253
+through kind of people
+telling their friends
+
+00:05:05.253 --> 00:05:06.054
+about it or whatever.
+
+00:05:06.054 --> 00:05:07.993
+And like this was kind of
+really surprising to us,
+
+00:05:07.993 --> 00:05:09.559
+because I mean again, it's like an API
+
+00:05:09.559 --> 00:05:10.558
+for charging credit cards.
+
+00:05:10.558 --> 00:05:11.603
+Like it's not a social network,
+
+00:05:11.603 --> 00:05:13.036
+and so the fact that people
+were talking about it
+
+00:05:13.036 --> 00:05:14.209
+and telling others about it
+
+00:05:14.209 --> 00:05:15.590
+was kind of quite surprising to us.
+
+00:05:15.590 --> 00:05:17.367
+And so then that summer we decided to go
+
+00:05:17.367 --> 00:05:18.980
+and work on it for the summer
+
+00:05:18.980 --> 00:05:21.127
+as a sort of bootstrap internship.
+
+00:05:21.127 --> 00:05:23.867
+And we basically been on leave since then.
+
+00:05:23.867 --> 00:05:25.005
+- (laughs)
+
+00:05:25.005 --> 00:05:26.746
+I'm sure you'll go back soon.
+
+00:05:26.746 --> 00:05:31.088
+- That's what my mom
+often tries to ensure.
+
+00:05:31.088 --> 00:05:31.820
+- (laughs)
+
+00:05:31.820 --> 00:05:35.720
+Yeah, so you'd gone through
+starting a company before.
+
+00:05:35.720 --> 00:05:36.906
+you and your brother.
+
+00:05:36.906 --> 00:05:37.462
+- Right.
+
+00:05:37.462 --> 00:05:38.924
+- Shoppa. Shuppa? Shoopa?
+
+00:05:38.924 --> 00:05:39.598
+- (laughs) Right.
+
+00:05:39.598 --> 00:05:40.724
+So Shuppa's the actual.
+
+00:05:40.724 --> 00:05:41.838
+- Another excellent branding.
+
+00:05:41.838 --> 00:05:43.126
+- Yeah. Right. (laughs)
+
+00:05:43.126 --> 00:05:46.806
+So we'll actually get this
+how we found the name Stripe.
+
+00:05:46.806 --> 00:05:47.956
+It was actually literally randomly chosen.
+
+00:05:47.956 --> 00:05:51.161
+But anyway, so we previously started
+
+00:05:51.161 --> 00:05:53.644
+this other kind of company together which,
+
+00:05:53.644 --> 00:05:56.895
+it was basically predicated on the notion
+
+00:05:56.895 --> 00:05:59.298
+that sort there was surprising liquidity
+
+00:05:59.298 --> 00:06:00.386
+in sort of used items
+
+00:06:00.386 --> 00:06:01.907
+that sort of part of what,
+
+00:06:01.907 --> 00:06:03.126
+when you buy something new,
+
+00:06:03.126 --> 00:06:06.005
+kind of part of the service
+that a store provides
+
+00:06:06.005 --> 00:06:07.328
+is kind of to solve
+the information problem
+
+00:06:07.328 --> 00:06:10.939
+of like where can I get a thing, right?
+
+00:06:10.939 --> 00:06:13.202
+And so you can kind of
+think of the Internet
+
+00:06:13.202 --> 00:06:14.920
+as a coordinating force in some way
+
+00:06:14.920 --> 00:06:18.566
+and sort of how can you
+expose all this sort of
+
+00:06:18.566 --> 00:06:21.201
+latent presence of all this stuff
+
+00:06:21.201 --> 00:06:23.500
+in a more effective way.
+
+00:06:23.500 --> 00:06:26.878
+And it didn't really work as we thought.
+
+00:06:26.878 --> 00:06:29.245
+So we went back to school.
+
+00:06:29.245 --> 00:06:29.861
+(laughs)
+
+00:06:29.861 --> 00:06:31.138
+- Well but you kind of teamed up with,
+
+00:06:31.138 --> 00:06:33.797
+that's when you got involved
+in YC the first time,
+
+00:06:33.797 --> 00:06:34.818
+is that right?
+
+00:06:34.818 --> 00:06:36.687
+- Yeah, it's a kind of complicated story
+
+00:06:36.687 --> 00:06:38.405
+and sort of involved merging
+with another company,
+
+00:06:38.405 --> 00:06:39.765
+and then that company got acquired,
+
+00:06:39.765 --> 00:06:41.099
+and so it was actually like a really good
+
+00:06:41.099 --> 00:06:41.737
+learning experience.
+
+00:06:41.737 --> 00:06:43.699
+It was kind of when we
+raised our first investment
+
+00:06:43.699 --> 00:06:45.162
+and hired our first people,
+
+00:06:45.162 --> 00:06:46.741
+and sort of just got a sense for
+
+00:06:46.741 --> 00:06:47.739
+kind of how a startup worked.
+
+00:06:47.739 --> 00:06:49.863
+- I guess I was taking
+the long way around,
+
+00:06:49.863 --> 00:06:51.244
+I should've asked directly, which is
+
+00:06:51.244 --> 00:06:53.718
+you said you created this payments API
+
+00:06:53.718 --> 00:06:55.203
+and then people just
+started talking about it.
+
+00:06:55.203 --> 00:06:57.978
+I guess my question was
+going to be what people,
+
+00:06:57.978 --> 00:06:59.115
+and how did they find out?
+
+00:06:59.115 --> 00:07:00.636
+So I guess what I was implying
+
+00:07:00.636 --> 00:07:02.645
+that you built on top of a community
+
+00:07:02.645 --> 00:07:03.376
+- I see, I see.
+
+00:07:03.376 --> 00:07:05.327
+- was in some part connected to YC.
+
+00:07:05.327 --> 00:07:06.893
+- So that's very true.
+
+00:07:06.893 --> 00:07:11.805
+So I'd been involved in
+sort of Lisp programming
+
+00:07:11.805 --> 00:07:13.998
+for a real long time,
+
+00:07:13.998 --> 00:07:17.725
+and I presume folks here know about Lisp,
+
+00:07:17.725 --> 00:07:20.325
+and its state of morbidity,
+
+00:07:20.325 --> 00:07:22.844
+so it's a pretty small community.
+
+00:07:22.844 --> 00:07:24.621
+And through that I got to know Paul Graham
+
+00:07:24.621 --> 00:07:26.663
+who of course was working on YC
+
+00:07:26.663 --> 00:07:28.045
+and kind of this other
+company we'd started
+
+00:07:28.045 --> 00:07:31.423
+had gone through YC, and so yeah,
+
+00:07:31.423 --> 00:07:34.036
+as a result, when we went and
+we built this payments API
+
+00:07:34.036 --> 00:07:37.902
+for developers, incredibly
+straightforward to get started,
+
+00:07:37.902 --> 00:07:40.421
+we actually, a lot of
+our friends were thinking
+
+00:07:40.421 --> 00:07:42.278
+about starting companies
+or had started companies
+
+00:07:42.278 --> 00:07:44.821
+or things like that,
+sort of we had some sense
+
+00:07:44.821 --> 00:07:46.563
+for that community in general,
+
+00:07:46.563 --> 00:07:48.837
+and that was actually quite powerful,
+
+00:07:48.837 --> 00:07:50.474
+because exactly to your point,
+
+00:07:50.474 --> 00:07:52.239
+there were sort of people
+you just go and show it to
+
+00:07:52.239 --> 00:07:54.631
+and get some feedback
+from, and you kind of knew
+
+00:07:54.631 --> 00:07:56.143
+who was on the cusp of
+need to start charging
+
+00:07:56.143 --> 00:07:58.059
+for their software, who
+was running out of money,
+
+00:07:58.059 --> 00:08:00.949
+they might need some revenue
+or whatever the case might be.
+
+00:08:00.949 --> 00:08:03.526
+And so I think that for the
+first maybe 20 or 30 users
+
+00:08:03.526 --> 00:08:08.321
+or thereabouts, they were
+almost all YC companies
+
+00:08:08.321 --> 00:08:11.003
+or friends of people who
+we knew had gone through YC
+
+00:08:11.003 --> 00:08:12.384
+and things like that.
+
+00:08:12.384 --> 00:08:14.520
+- Yep, so that's one of my rules of thumb
+
+00:08:14.520 --> 00:08:15.948
+is try to put yourself around people
+
+00:08:15.948 --> 00:08:17.643
+who are doing interesting things.
+
+00:08:17.643 --> 00:08:18.827
+And then when you find interesting things,
+
+00:08:18.827 --> 00:08:19.567
+they start talking about them,
+
+00:08:19.567 --> 00:08:21.484
+that's a pretty good signal.
+
+00:08:21.484 --> 00:08:22.621
+- I think that's very true, yeah.
+
+00:08:22.621 --> 00:08:25.757
+- And so I remember, it
+must have been summer
+
+00:08:25.757 --> 00:08:27.813
+of 2010 or 2011 when
+people would start talking
+
+00:08:27.813 --> 00:08:31.574
+about you guys, about
+/dev/payments around here,
+
+00:08:31.574 --> 00:08:33.455
+and I guess you had come
+and done the YC class
+
+00:08:33.455 --> 00:08:34.708
+in 2010 here?
+
+00:08:34.708 --> 00:08:35.451
+Is that what you did?
+
+00:08:35.451 --> 00:08:38.493
+- Yeah, Stripe never actually
+formally went through YC.
+
+00:08:38.493 --> 00:08:39.631
+YC invested.
+
+00:08:39.631 --> 00:08:40.234
+- Is that true?
+
+00:08:40.234 --> 00:08:40.768
+I didn't know that.
+
+00:08:40.768 --> 00:08:42.150
+- But it kind of never went
+through the program itself.
+
+00:08:42.150 --> 00:08:43.834
+- Huh, that's interesting.
+
+00:08:43.834 --> 00:08:44.495
+That's news to me.
+
+00:08:44.495 --> 00:08:48.651
+So okay, so we're gonna go
+into Stripe in a second.
+
+00:08:48.651 --> 00:08:50.508
+Can you tell us what it's
+like to start a company
+
+00:08:50.508 --> 00:08:51.333
+with your brother?
+
+00:08:51.333 --> 00:08:52.470
+- Yeah.
+
+00:08:52.470 --> 00:08:53.434
+- I guess you don't know anything else.
+
+00:08:53.434 --> 00:08:54.815
+- I was gonna say, right.
+
+00:08:54.815 --> 00:08:59.296
+So the kind of trite answer I often give
+
+00:08:59.296 --> 00:09:03.475
+is that it's kind of good
+because we have a chance
+
+00:09:03.475 --> 00:09:06.506
+to really get good at
+resolving our differences
+
+00:09:06.506 --> 00:09:07.608
+from a pretty early stage.
+
+00:09:07.608 --> 00:09:11.648
+We've sort of 20 years of kind of fighting
+
+00:09:11.648 --> 00:09:14.074
+in various ways behind us.
+
+00:09:14.074 --> 00:09:19.074
+And even though that's kind
+of facetious in some way,
+
+00:09:19.613 --> 00:09:21.690
+I do think that's the common
+case for like the really
+
+00:09:21.690 --> 00:09:26.690
+highbrow startup is for
+the co-founder kind of set
+
+00:09:28.192 --> 00:09:30.571
+to break apart, like it
+generally doesn't persist.
+
+00:09:30.571 --> 00:09:32.765
+And so you look at most companies, right?
+
+00:09:32.765 --> 00:09:35.969
+And sort of there's some
+schism or disagreement
+
+00:09:35.969 --> 00:09:38.245
+or whatever that kind of
+proves insurmountable.
+
+00:09:38.245 --> 00:09:42.911
+And I think that sort of
+having a really strong
+
+00:09:42.911 --> 00:09:44.490
+kind of foundational relationship there,
+
+00:09:44.490 --> 00:09:47.531
+you know, a philial
+relationship is I guess
+
+00:09:47.531 --> 00:09:48.948
+one version of that, but even if not that,
+
+00:09:48.948 --> 00:09:51.931
+I think the case is for
+sort of you know the person
+
+00:09:51.931 --> 00:09:54.311
+for upwards of a decade,
+that those in general
+
+00:09:54.311 --> 00:09:56.529
+seem to fare much better.
+
+00:09:56.529 --> 00:09:58.224
+And so in that sense, I
+think it's been basically
+
+00:09:58.224 --> 00:10:00.046
+really helpful where we
+kind of have the kind
+
+00:10:00.046 --> 00:10:01.567
+of relationship where there's kind of no
+
+00:10:01.567 --> 00:10:03.610
+difficulty in telling the other person
+
+00:10:03.610 --> 00:10:05.409
+that you're really
+screwing this up, right?
+
+00:10:05.409 --> 00:10:06.942
+or this is like completely broken
+
+00:10:06.942 --> 00:10:08.126
+or whatever the case might be,
+
+00:10:08.126 --> 00:10:10.506
+because it's a given that
+those sort of situations
+
+00:10:10.506 --> 00:10:11.307
+are going to arise.
+
+00:10:11.307 --> 00:10:13.385
+The question's only how do you,
+
+00:10:13.385 --> 00:10:15.242
+how effectively can you react to them.
+
+00:10:15.242 --> 00:10:16.171
+- We'll come back to that as we
+
+00:10:16.171 --> 00:10:18.121
+talk about growing in a little bit.
+
+00:10:18.121 --> 00:10:18.702
+- Okay.
+
+00:10:18.702 --> 00:10:20.362
+- How you bring other
+management into that.
+
+00:10:20.362 --> 00:10:24.599
+I guess my observation would
+be a lot of founders split,
+
+00:10:24.599 --> 00:10:26.480
+but the really successful
+companies, it doesn't happen.
+
+00:10:26.480 --> 00:10:28.790
+So Larry and Serge, Jerry and Dave,
+
+00:10:28.790 --> 00:10:31.310
+you know Reid and Allen were together,
+
+00:10:31.310 --> 00:10:34.142
+so many, many, many persist.
+
+00:10:34.142 --> 00:10:35.639
+- That's true, that's true.
+
+00:10:35.639 --> 00:10:40.121
+And those cases I think, or at
+least last I went through it,
+
+00:10:40.121 --> 00:10:41.525
+I went through kind of 20 companies,
+
+00:10:41.525 --> 00:10:43.348
+and it seemed that there
+was a fairly striking
+
+00:10:43.348 --> 00:10:45.600
+kind of inverse correlation between
+
+00:10:45.600 --> 00:10:49.105
+duration that they'd known
+each other beforehand
+
+00:10:49.105 --> 00:10:51.277
+and the subsequent outcome.
+
+00:10:51.277 --> 00:10:52.182
+- Yeah, I think that's right.
+
+00:10:52.182 --> 00:10:54.747
+And we'll hear from Nirav on Thursday
+
+00:10:54.747 --> 00:10:56.072
+about his relationship with Sarah Leary
+
+00:10:56.072 --> 00:10:59.137
+that's a decades-long
+relationship as well.
+
+00:10:59.137 --> 00:11:00.635
+Which actually brings up another point,
+
+00:11:00.635 --> 00:11:01.935
+which is you read a ton of history.
+
+00:11:01.935 --> 00:11:03.769
+So Patrick's a very, there are few
+
+00:11:03.769 --> 00:11:05.626
+interesting people I follow on Twitter,
+
+00:11:05.626 --> 00:11:06.486
+and Patrick's one of them,
+
+00:11:06.486 --> 00:11:08.123
+and he'll be embarrassed that I said that,
+
+00:11:08.123 --> 00:11:10.467
+but the most recent thing he tweeted out
+
+00:11:10.467 --> 00:11:12.234
+is history about York's park,
+
+00:11:12.234 --> 00:11:13.326
+which everybody should look at the history
+
+00:11:13.326 --> 00:11:14.951
+York's Park, because holy smokes,
+
+00:11:14.951 --> 00:11:16.554
+a lot of stuff came out of that place,
+
+00:11:16.554 --> 00:11:18.632
+but why do you, you spend more time
+
+00:11:18.632 --> 00:11:21.138
+reading history of everything, really,
+
+00:11:21.138 --> 00:11:23.194
+than almost anybody I follow on Twitter.
+
+00:11:23.194 --> 00:11:23.890
+Why do you do that?
+
+00:11:23.890 --> 00:11:25.295
+- It's just, it's a way to cheat.
+
+00:11:25.295 --> 00:11:28.057
+Everyone else ignores all
+the good ideas from history,
+
+00:11:28.057 --> 00:11:29.416
+and so you can just be much smarter
+
+00:11:29.416 --> 00:11:32.736
+by just, you know, you
+could just try to think
+
+00:11:32.736 --> 00:11:34.153
+all these incredibly original thoughts
+
+00:11:34.153 --> 00:11:35.696
+by sort of sitting down
+and staring at the wall
+
+00:11:35.696 --> 00:11:37.392
+for days on end, or you can sort of cheat
+
+00:11:37.392 --> 00:11:40.248
+by just, you know, I mean they
+are, in fact, written down
+
+00:11:40.248 --> 00:11:41.385
+in books that you can just read.
+
+00:11:41.385 --> 00:11:44.287
+And again, I can mean that
+a little bit facetiously,
+
+00:11:44.287 --> 00:11:46.434
+but I think that Allen Kay has this quote
+
+00:11:46.434 --> 00:11:48.850
+about computer science, where he calls it
+
+00:11:48.850 --> 00:11:52.472
+sort of pop culture, but
+by sort of switching means
+
+00:11:52.472 --> 00:11:55.409
+that sort of for most kind of communities
+
+00:11:55.409 --> 00:11:59.449
+or sort of again, subcultures
+or whatever the case might be,
+
+00:11:59.449 --> 00:12:01.329
+sort of there's a progression, right?
+
+00:12:01.329 --> 00:12:04.266
+Things build upon what came before,
+
+00:12:04.266 --> 00:12:06.751
+whereas in computer science
+and so much of technology,
+
+00:12:06.751 --> 00:12:08.933
+it sort of is just like brownie in motion
+
+00:12:08.933 --> 00:12:10.570
+through the problem space,
+
+00:12:10.570 --> 00:12:13.171
+and sort of with no
+account given to kind of
+
+00:12:13.171 --> 00:12:16.177
+what's come previously.
+
+00:12:16.177 --> 00:12:19.451
+And I think that sort of we
+as an industry do ourselves
+
+00:12:19.451 --> 00:12:22.458
+an enormous disservice by being so blind
+
+00:12:22.458 --> 00:12:24.756
+and kind of blithely ignorant to it,
+
+00:12:24.756 --> 00:12:29.756
+and right from sort of Engelbart doing
+
+00:12:30.177 --> 00:12:31.989
+sort of the first demo,
+I mean we've all kind of
+
+00:12:31.989 --> 00:12:34.102
+heard of Engelbart as inventing the mouse
+
+00:12:34.102 --> 00:12:36.261
+whereas sort of in
+actuality what he invented
+
+00:12:36.261 --> 00:12:37.375
+was so much more than that.
+
+00:12:37.375 --> 00:12:39.023
+He basically invented ether pad
+
+00:12:39.023 --> 00:12:40.382
+or like the first kind of realtime
+
+00:12:40.382 --> 00:12:42.507
+collaborative word processor.
+
+00:12:42.507 --> 00:12:45.513
+He had like video conferencing integrated
+
+00:12:45.513 --> 00:12:46.767
+with the word processor.
+
+00:12:46.767 --> 00:12:48.706
+You could annotate and
+hyperlink documents together
+
+00:12:48.706 --> 00:12:50.726
+in realtime, like he
+basically had a better system
+
+00:12:50.726 --> 00:12:52.305
+than Hangouts, as far as I'm concerned,
+
+00:12:52.305 --> 00:12:55.149
+that he demoed in I
+guess it was '68 or '67.
+
+00:12:55.149 --> 00:12:55.612
+- [Professor] '67.
+
+00:12:55.612 --> 00:12:57.073
+- '67, yeah.
+
+00:12:57.073 --> 00:12:58.815
+And then if you look at
+sort of what came out
+
+00:12:58.815 --> 00:13:01.300
+of Park or I mean so much
+of this kind of early work
+
+00:13:01.300 --> 00:13:03.018
+that I think frankly
+it's better than so much
+
+00:13:03.018 --> 00:13:04.281
+of what we ended up with now.
+
+00:13:04.281 --> 00:13:06.094
+That's not to say there hasn't
+been sort of a lot of value
+
+00:13:06.094 --> 00:13:08.937
+in kind of what's ensued.
+
+00:13:08.937 --> 00:13:10.052
+I mean, we've solved all kinds of sort of
+
+00:13:10.052 --> 00:13:11.538
+deployment problems and
+technological problems
+
+00:13:11.538 --> 00:13:13.000
+and scaling problems and so forth,
+
+00:13:13.000 --> 00:13:14.498
+but in terms of sort of the core ideas
+
+00:13:14.498 --> 00:13:16.078
+behind so much of it, I think that sort of
+
+00:13:16.078 --> 00:13:17.575
+in some ways, there was
+much better thinking
+
+00:13:17.575 --> 00:13:20.698
+among some of the kind of, the creators.
+
+00:13:20.698 --> 00:13:22.658
+And kind of in a substantial
+way, I think that
+
+00:13:22.658 --> 00:13:24.621
+like the kind of, the line of thinking
+
+00:13:24.621 --> 00:13:27.176
+around sort of the early conception
+
+00:13:27.176 --> 00:13:30.297
+of so much of this kind
+of software technology
+
+00:13:30.297 --> 00:13:33.351
+was about kind of empowerment of humans
+
+00:13:33.351 --> 00:13:34.931
+and the kind of phrases
+that were battered around
+
+00:13:34.931 --> 00:13:38.656
+were things like
+"intelligence augmentation"
+
+00:13:38.656 --> 00:13:40.966
+and "intelligence amplification,"
+
+00:13:40.966 --> 00:13:42.778
+"augmenting human
+intellect," things like that.
+
+00:13:42.778 --> 00:13:46.318
+So this is kind of the original
+bicycle-for-the-mind idea,
+
+00:13:46.318 --> 00:13:49.501
+which I think is sort of
+incredibly potent, right?
+
+00:13:49.501 --> 00:13:50.976
+Kind of how can we leverage this software
+
+00:13:50.976 --> 00:13:52.474
+to make us more effective at sort of
+
+00:13:52.474 --> 00:13:54.854
+whatever it is we might be doing?
+
+00:13:54.854 --> 00:13:56.271
+And then I think that sort of so much of
+
+00:13:56.271 --> 00:13:58.605
+kind of what's happened with the Internet
+
+00:13:58.605 --> 00:14:00.288
+or kind of the modern technology industry
+
+00:14:00.288 --> 00:14:02.911
+as we know it is either
+sort of a very kind of
+
+00:14:02.911 --> 00:14:05.408
+basic sort of functionality
+
+00:14:05.408 --> 00:14:07.633
+around sort of utilities, right?
+
+00:14:07.633 --> 00:14:09.901
+So it's not about sort of
+high-level intellectual functions
+
+00:14:09.901 --> 00:14:12.003
+as about just, I mean not
+that it's not valuable,
+
+00:14:12.003 --> 00:14:14.104
+but like how do I get a car come to here?
+
+00:14:14.104 --> 00:14:16.666
+I'm really delighted
+that that service exists,
+
+00:14:16.666 --> 00:14:20.090
+but it's not sort of part of
+that original line of thinking.
+
+00:14:20.090 --> 00:14:22.041
+Or it's about basically entertainment.
+
+00:14:22.041 --> 00:14:23.503
+It's about sort of the Internet
+
+00:14:23.503 --> 00:14:25.802
+as sort of a more interactive
+version of television,
+
+00:14:25.802 --> 00:14:28.146
+which also has some
+merit, I mean it's not,
+
+00:14:28.146 --> 00:14:31.084
+entertainment has merit,
+but I think there's been
+
+00:14:31.084 --> 00:14:33.707
+a significant loss of that,
+and I think that people,
+
+00:14:33.707 --> 00:14:35.159
+I mean this is kind of
+a longer conversation,
+
+00:14:35.159 --> 00:14:36.726
+but basically to answer your question,
+
+00:14:36.726 --> 00:14:39.059
+I think this is kind of
+a systematic undervaluing
+
+00:14:39.059 --> 00:14:42.380
+of tools and sort of undervaluing
+
+00:14:42.380 --> 00:14:44.886
+and lack of appreciation
+for the kind of impact
+
+00:14:44.886 --> 00:14:46.640
+that that can have, because it's harder
+
+00:14:46.640 --> 00:14:50.006
+to perceive and when you
+do something directly,
+
+00:14:50.006 --> 00:14:53.686
+you can see what it is,
+whereas when you're enabling
+
+00:14:53.686 --> 00:14:55.776
+something, you have to kind
+of make that additional leap
+
+00:14:55.776 --> 00:14:57.703
+and the way we often phrase it for Stripe
+
+00:14:57.703 --> 00:14:59.885
+is that most technology
+companies are building cars,
+
+00:14:59.885 --> 00:15:02.404
+whereas Stripe is building roads,
+
+00:15:02.404 --> 00:15:04.285
+that kind of distinction.
+
+00:15:04.285 --> 00:15:05.945
+- I promise I'm going to get to scaling.
+
+00:15:05.945 --> 00:15:07.420
+I just want to spend a
+little more time on this.
+
+00:15:07.420 --> 00:15:09.521
+A lot of things really
+spoke to me on that,
+
+00:15:09.521 --> 00:15:12.099
+so me and Doug Engelbart,
+
+00:15:12.099 --> 00:15:13.899
+so Doug came in, did you
+meet him before he died?
+
+00:15:13.899 --> 00:15:14.861
+- Sadly no.
+
+00:15:14.861 --> 00:15:17.287
+We had Alan Kay stop by and
+speak at Stripe recently,
+
+00:15:17.287 --> 00:15:18.286
+but I never met Doug.
+
+00:15:18.286 --> 00:15:19.749
+- So AlanI want to talk
+about a second too,
+
+00:15:19.749 --> 00:15:21.769
+so Doug came to visit at Apple,
+
+00:15:21.769 --> 00:15:22.907
+so Doug was at Juris Park,
+
+00:15:22.907 --> 00:15:23.812
+and I remember he came in,
+
+00:15:23.812 --> 00:15:26.331
+and we showed him demoes in probably 1999.
+
+00:15:26.331 --> 00:15:28.328
+He's like, "Finally, somebody did this
+
+00:15:28.328 --> 00:15:29.965
+"that I said 30 years ago."
+
+00:15:29.965 --> 00:15:32.240
+And that happened like
+five times during our demo.
+
+00:15:32.240 --> 00:15:33.470
+Like, "Okay, fine."
+
+00:15:33.470 --> 00:15:35.026
+But I think a lot of what happened
+
+00:15:35.026 --> 00:15:37.545
+was it was a quieter
+time, it was less noisy,
+
+00:15:37.545 --> 00:15:40.007
+and so more people were thinking harder.
+
+00:15:40.007 --> 00:15:42.027
+And so I think that
+resulted in better quality
+
+00:15:42.027 --> 00:15:43.327
+of thought overall about
+what was happening,
+
+00:15:43.327 --> 00:15:45.405
+and it's just shocking
+to me that so many things
+
+00:15:45.405 --> 00:15:47.389
+happened in the '60s and '70s and '80s
+
+00:15:47.389 --> 00:15:48.887
+that are echoing now.
+
+00:15:48.887 --> 00:15:51.688
+And even Alan Kay, like his other quote
+
+00:15:51.688 --> 00:15:53.545
+was that point of view
+is worth 80 IQ points,
+
+00:15:53.545 --> 00:15:55.461
+which, what a brilliant quote.
+
+00:15:55.461 --> 00:15:57.468
+It's like try to figure
+out the right problem.
+
+00:15:57.468 --> 00:15:58.410
+And if you look at it from the right
+
+00:15:58.410 --> 00:15:59.860
+point of view, you win, right?
+
+00:15:59.860 --> 00:16:01.161
+- Yeah, and I think it's really easy
+
+00:16:01.161 --> 00:16:04.748
+to have this kind of
+in a historical sense,
+
+00:16:04.748 --> 00:16:08.080
+this rose-tinted view of history,
+
+00:16:08.080 --> 00:16:11.934
+and I think there is kind of occasionally
+
+00:16:11.934 --> 00:16:13.756
+kind of fascio way in which people say
+
+00:16:13.756 --> 00:16:16.240
+x or y has been done previously,
+
+00:16:16.240 --> 00:16:18.399
+and there's nothing
+interesting being done today
+
+00:16:18.399 --> 00:16:20.698
+and so forth, and I
+think that that sort of
+
+00:16:20.698 --> 00:16:22.997
+that misses the fact that so much
+
+00:16:22.997 --> 00:16:26.956
+of sort of the details really matter
+
+00:16:26.956 --> 00:16:27.711
+in software, right?
+
+00:16:27.711 --> 00:16:29.730
+And that you can be
+sort of 90% correct but
+
+00:16:29.730 --> 00:16:30.879
+- [Professor] Completely wrong.
+
+00:16:30.879 --> 00:16:32.769
+- That's like being merely
+90% alive, right? (laughs)
+
+00:16:32.769 --> 00:16:36.383
+And that sort of you don't get a whole lot
+
+00:16:36.383 --> 00:16:40.029
+of partial credit, but
+yeah, I wasn't around,
+
+00:16:40.029 --> 00:16:44.510
+but I'm very curious why it was
+
+00:16:44.510 --> 00:16:49.510
+that why this perspective did differ.
+
+00:16:49.548 --> 00:16:52.891
+And I suspect part of it
+was that it was quieter,
+
+00:16:52.891 --> 00:16:54.505
+I don't know, maybe there was less
+
+00:16:54.505 --> 00:16:56.502
+Facebook and Twitter and Tech Crunch
+
+00:16:56.502 --> 00:16:58.324
+and all the rest, yeah, which maybe
+
+00:16:58.324 --> 00:17:00.121
+speaks to my own way discredit,
+
+00:17:00.121 --> 00:17:01.920
+but I think also part of it
+is just kind of the ambition,
+
+00:17:01.920 --> 00:17:05.321
+honestly, in the sense that, like,
+
+00:17:05.321 --> 00:17:09.163
+there's a great book that
+I recommend you all read
+
+00:17:09.163 --> 00:17:11.439
+called the Dream Machine
+by Mitchell Waldrop,
+
+00:17:11.439 --> 00:17:13.739
+which I think is certainly
+at least the best history
+
+00:17:13.739 --> 00:17:16.619
+that I know of about
+sort of the early days
+
+00:17:16.619 --> 00:17:18.210
+of sort of technology
+and the international
+
+00:17:18.210 --> 00:17:20.101
+kind of the computer revolution.
+
+00:17:20.101 --> 00:17:21.692
+And one thing that it sort of makes clear
+
+00:17:21.692 --> 00:17:25.372
+is how it kind of, it wasn't at least,
+
+00:17:25.372 --> 00:17:27.833
+kind of the book's
+argument and thesis goes,
+
+00:17:27.833 --> 00:17:30.678
+it wasn't inevitable that
+sort of so many of these
+
+00:17:30.678 --> 00:17:32.778
+things happened or so many
+of these kind of ideas
+
+00:17:32.778 --> 00:17:34.961
+were perculating, it was
+sort of particular people
+
+00:17:34.961 --> 00:17:36.818
+who had particular ambitions,
+
+00:17:36.818 --> 00:17:39.196
+folks like Licklider
+sort of originally of MIT
+
+00:17:39.196 --> 00:17:40.592
+who kind of funded a lot of the work
+
+00:17:40.592 --> 00:17:42.952
+that sort of led to the Internet,
+
+00:17:42.952 --> 00:17:44.937
+and sort of I guess his
+intellectual descendents
+
+00:17:44.937 --> 00:17:47.885
+like Engelbart and Kay and so forth.
+
+00:17:47.885 --> 00:17:50.463
+And I guess the optimistic view would be
+
+00:17:50.463 --> 00:17:53.028
+that sort of a lot of that ambition about
+
+00:17:53.028 --> 00:17:55.687
+sort of the power that
+software can have on society
+
+00:17:55.687 --> 00:17:58.008
+sort of can, in fact, be reclaimed
+
+00:17:58.008 --> 00:17:59.425
+or at least that we're not sort of
+
+00:17:59.425 --> 00:18:00.725
+gonna necessarily fall victim
+
+00:18:00.725 --> 00:18:04.126
+to the noise that surrounds us today.
+
+00:18:04.126 --> 00:18:05.206
+- [Professor] The Twitters, yeah.
+
+00:18:05.206 --> 00:18:07.087
+That's why I'm spending a
+little bit extra time on this.
+
+00:18:07.087 --> 00:18:09.362
+- I'm actually, I should just say like
+
+00:18:09.362 --> 00:18:11.010
+I think Twitter is a tremendous
+
+00:18:11.010 --> 00:18:12.536
+sort of force.
+
+00:18:12.536 --> 00:18:13.151
+- Oh, me too.
+
+00:18:13.151 --> 00:18:14.277
+I kind of live on it,
+
+00:18:14.277 --> 00:18:14.997
+so it's like I make fun of it,
+
+00:18:14.997 --> 00:18:16.261
+and I'm a little bit
+self-conscious about it.
+
+00:18:16.261 --> 00:18:17.655
+But then the other thing I was gonna say
+
+00:18:17.655 --> 00:18:19.571
+is that my models of computing
+
+00:18:19.571 --> 00:18:21.557
+are Alan Kay's the Dynabook
+
+00:18:21.557 --> 00:18:22.798
+which was essentially describes
+
+00:18:22.798 --> 00:18:24.215
+Apple and client computing
+
+00:18:24.215 --> 00:18:26.537
+and Xerox PARC, Ubicomp,
+
+00:18:26.537 --> 00:18:29.381
+which essentially describes
+terminals and Google.
+
+00:18:29.381 --> 00:18:30.995
+And these are still
+the two dominant models
+
+00:18:30.995 --> 00:18:33.154
+of computing today, 50 years later.
+
+00:18:33.154 --> 00:18:34.756
+And so when I look at client or server,
+
+00:18:34.756 --> 00:18:38.308
+it's essentially Xerox and Xerox.
+
+00:18:38.308 --> 00:18:38.912
+- Yep.
+
+00:18:38.912 --> 00:18:40.027
+- Actually that's kind of it.
+
+00:18:40.027 --> 00:18:40.734
+Okay.
+
+00:18:40.734 --> 00:18:43.393
+So I was gonna ask you
+what a philobiblist is
+
+00:18:43.393 --> 00:18:45.111
+but I'm gonna wait till the end,
+
+00:18:45.111 --> 00:18:45.958
+because I'm excited about that.
+
+00:18:45.958 --> 00:18:48.490
+He had a word in his
+eight-word Twitter bio
+
+00:18:48.490 --> 00:18:50.533
+that I had to look up, but I like it now.
+
+00:18:50.533 --> 00:18:52.692
+So let's talk about Stripe.
+
+00:18:52.692 --> 00:18:55.815
+So how big is Stripe now today?
+
+00:18:55.815 --> 00:18:57.591
+I think it's around 330 people.
+
+00:18:57.591 --> 00:18:58.555
+- 330, and it's.
+
+00:18:58.555 --> 00:19:00.319
+- As one metric at least.
+
+00:19:00.319 --> 00:19:02.106
+- [Professor] And it's five years old?
+
+00:19:02.106 --> 00:19:04.231
+- Yeah, it's actually getting a bit hard,
+
+00:19:04.231 --> 00:19:05.972
+because do you count from
+basically that dinner
+
+00:19:05.972 --> 00:19:07.644
+when sort of John misled me
+
+00:19:07.644 --> 00:19:10.547
+or from when we first
+launched it or whatever.
+
+00:19:10.547 --> 00:19:12.369
+But generally what I sort of count from
+
+00:19:12.369 --> 00:19:14.842
+is when we launched publicly,
+
+00:19:14.842 --> 00:19:18.151
+because we had fewer than
+100 users at that point,
+
+00:19:18.151 --> 00:19:20.031
+and we launched publicly to the world
+
+00:19:20.031 --> 00:19:22.074
+September 30, 2011,
+
+00:19:22.074 --> 00:19:24.953
+and so we just celebrated our
+fourth birthday post-launch,
+
+00:19:24.953 --> 00:19:27.538
+and so we we're kind of
+effectively on the order
+
+00:19:27.538 --> 00:19:30.080
+of five years from when we
+really worked on it full time,
+
+00:19:30.080 --> 00:19:31.497
+and then four years since public launch.
+
+00:19:31.497 --> 00:19:33.400
+- Okay, so you're 330 people now.
+
+00:19:33.400 --> 00:19:35.896
+A year ago, were you half that size?
+
+00:19:35.896 --> 00:19:36.535
+- Yeah.
+
+00:19:36.535 --> 00:19:39.611
+Probably this time a year
+ago, maybe 160, 70 people.
+
+00:19:39.611 --> 00:19:40.935
+- Yeah, so about doubling every year now.
+
+00:19:40.935 --> 00:19:42.630
+Yeah what was it that Derek Schmidt said?
+
+00:19:42.630 --> 00:19:44.336
+Doubling every year is possible,
+
+00:19:44.336 --> 00:19:46.437
+quadrupling every year is really hard?
+
+00:19:46.437 --> 00:19:48.353
+- Certainly we could not
+quadruple every year.
+
+00:19:48.353 --> 00:19:49.515
+- Yep.
+
+00:19:49.515 --> 00:19:53.472
+So talk about how you're organized.
+
+00:19:53.472 --> 00:19:56.119
+- This might turn into an evening class,
+
+00:19:56.119 --> 00:20:01.119
+but well on what dimension?
+
+00:20:01.634 --> 00:20:02.957
+Just in general how the company works or?
+
+00:20:02.957 --> 00:20:03.897
+- Well, yeah, how you run.
+
+00:20:03.897 --> 00:20:05.639
+Like do you have vice presidents?
+
+00:20:05.639 --> 00:20:06.718
+- That's easy.
+
+00:20:06.718 --> 00:20:07.659
+- Do you have managers?
+
+00:20:07.659 --> 00:20:09.039
+Does everybody do whatever they want
+
+00:20:09.039 --> 00:20:10.340
+like a holacracy?
+
+00:20:10.340 --> 00:20:12.514
+What happens at Stripe?
+
+00:20:12.514 --> 00:20:13.292
+- Yeah.
+
+00:20:13.292 --> 00:20:15.428
+So the like the how
+we're run bit I suppose
+
+00:20:15.428 --> 00:20:17.344
+is that we're wildly
+conventionally organized.
+
+00:20:17.344 --> 00:20:20.606
+And that there's always such a temptation
+
+00:20:20.606 --> 00:20:21.790
+sort of when you're starting out
+
+00:20:21.790 --> 00:20:26.410
+to go and sort of reconceive
+the nature of humanity
+
+00:20:26.410 --> 00:20:29.324
+and how people can
+collaborate and coordinate
+
+00:20:29.324 --> 00:20:33.271
+and so forth, and that
+basically you should really
+
+00:20:33.271 --> 00:20:36.626
+kind of try to discourage
+that inner voice,
+
+00:20:36.626 --> 00:20:38.565
+and I think it sort of
+comes from a good place
+
+00:20:38.565 --> 00:20:39.726
+where you want to kind of reconceive
+
+00:20:39.726 --> 00:20:41.328
+all of these things, right?
+
+00:20:41.328 --> 00:20:44.009
+But there's two problems with that.
+
+00:20:44.009 --> 00:20:49.009
+The first is that you kind of think about
+
+00:20:49.291 --> 00:20:50.591
+what risks you're taking in the business
+
+00:20:50.591 --> 00:20:53.506
+and sort of empirically the
+standard means of organization
+
+00:20:53.506 --> 00:20:56.083
+are sufficiently effective
+to create the Googles
+
+00:20:56.083 --> 00:20:58.463
+and the Facebooks and the Intels
+and so forth of the world,
+
+00:20:58.463 --> 00:21:01.864
+and so I mean even if,
+just posit that sort of
+
+00:21:01.864 --> 00:21:03.780
+you're actually capable of
+conceiving a more effective way
+
+00:21:03.780 --> 00:21:07.402
+of having tens, hundreds,
+thousands people working together,
+
+00:21:07.402 --> 00:21:10.768
+whether you actually need that
+to achieve your actual goals,
+
+00:21:10.768 --> 00:21:13.183
+and the second one is that
+probably all of the problems
+
+00:21:13.183 --> 00:21:15.099
+with any alternative
+that you could conceive
+
+00:21:15.099 --> 00:21:16.260
+are things that you haven't been exposed
+
+00:21:16.260 --> 00:21:18.987
+to today, you just don't
+have the life experience
+
+00:21:18.987 --> 00:21:20.624
+to sort of anticipate.
+
+00:21:20.624 --> 00:21:22.121
+And so basically whatever you think
+
+00:21:22.121 --> 00:21:22.967
+you should probably do instead,
+
+00:21:22.967 --> 00:21:24.082
+you're almost certainly wrong.
+
+00:21:24.082 --> 00:21:26.102
+- So let's stay on that for a second.
+
+00:21:26.102 --> 00:21:26.430
+- Okay.
+
+00:21:26.430 --> 00:21:27.369
+- That's an unusual thing
+
+00:21:27.369 --> 00:21:28.606
+for a Silicon Valley person to say.
+
+00:21:28.606 --> 00:21:29.779
+- Don't innovate, yeah.
+
+00:21:29.779 --> 00:21:31.126
+- Maybe old people know
+what they're doing,
+
+00:21:31.126 --> 00:21:32.484
+because they've done it before
+
+00:21:32.484 --> 00:21:33.343
+or they've lived through it.
+
+00:21:33.343 --> 00:21:35.107
+Can you break that apart a little bit?
+
+00:21:35.107 --> 00:21:35.804
+- Yeah.
+
+00:21:35.804 --> 00:21:37.221
+- As an old person, I'm excited about
+
+00:21:37.221 --> 00:21:38.787
+this line of questioning.
+
+00:21:38.787 --> 00:21:39.937
+- (laughs)
+
+00:21:39.937 --> 00:21:44.937
+I think that, well, technology
+changes a lot, right?
+
+00:21:48.144 --> 00:21:53.144
+And so I think the right
+answer is a function
+
+00:21:53.934 --> 00:21:55.754
+of the current technological
+equilibrium, right?
+
+00:21:55.754 --> 00:21:56.821
+And so if an old person thinks
+
+00:21:56.821 --> 00:21:58.819
+that such-and-such is a bad
+idea or something like that,
+
+00:21:58.819 --> 00:22:00.537
+I mean there's an
+excellent chance that now
+
+00:22:00.537 --> 00:22:02.161
+some period of time later,
+they're wrong, right?
+
+00:22:02.161 --> 00:22:05.854
+Because a dependent
+variable has changed, right?
+
+00:22:05.854 --> 00:22:07.560
+But people aren't changing a whole lot.
+
+00:22:07.560 --> 00:22:09.174
+And so instead of whatever
+the optimal system was
+
+00:22:09.174 --> 00:22:10.671
+kind of some period of time previously
+
+00:22:10.671 --> 00:22:15.396
+is I think your default prior should be
+
+00:22:15.396 --> 00:22:17.286
+still probably a pretty good idea.
+
+00:22:17.286 --> 00:22:18.575
+I caveat that with
+
+00:22:18.575 --> 00:22:20.583
+I think if you look at the
+history of Silicon Valley,
+
+00:22:20.583 --> 00:22:22.139
+things are in fact changing,
+
+00:22:22.139 --> 00:22:23.880
+even though people themselves
+aren't changing that much,
+
+00:22:23.880 --> 00:22:25.335
+because I guess just the environment,
+
+00:22:25.335 --> 00:22:28.376
+people's expectations and
+so forth are changing,
+
+00:22:28.376 --> 00:22:32.173
+and secondly I think that a
+discount factor on how well
+
+00:22:32.173 --> 00:22:35.330
+we do things is that
+people do copy too much
+
+00:22:35.330 --> 00:22:37.478
+kind of this memetic force at play.
+
+00:22:37.478 --> 00:22:40.543
+My favorite example of
+this is kind of standard
+
+00:22:40.543 --> 00:22:42.864
+Silicon Valley interviews.
+
+00:22:42.864 --> 00:22:46.742
+I can't remember his name, Google's HR.
+
+00:22:46.742 --> 00:22:47.606
+- [Professor] Laszlo Bock.
+
+00:22:47.606 --> 00:22:48.686
+- Laszlo Bock, right,
+
+00:22:48.686 --> 00:22:50.462
+wrote this great article
+for the New York Times
+
+00:22:50.462 --> 00:22:53.028
+where, as I recall, he sort of admitted
+
+00:22:53.028 --> 00:22:55.384
+they'd observed almost no correlation
+
+00:22:55.384 --> 00:22:58.089
+between GPA and indeed Google
+
+00:22:58.089 --> 00:23:00.329
+sort of interviews themselves and sort of
+
+00:23:00.329 --> 00:23:02.431
+the subsequent performance
+at Google, right?
+
+00:23:02.431 --> 00:23:03.651
+And that certainly was the case for GPA,
+
+00:23:03.651 --> 00:23:04.927
+I can't remember if it's
+the case for the interviews,
+
+00:23:04.927 --> 00:23:09.152
+but and sort of like
+essentially every company
+
+00:23:09.152 --> 00:23:10.986
+does the same sort of
+algorithm-style interviews
+
+00:23:10.986 --> 00:23:12.937
+and coding on a white board and so forth
+
+00:23:12.937 --> 00:23:15.015
+and essentially everyone, at
+least everyone I've talked to
+
+00:23:15.015 --> 00:23:17.499
+kind of knows that it
+doesn't really work, right?
+
+00:23:17.499 --> 00:23:18.392
+- [Professor] Yes, it doesn't work.
+
+00:23:18.392 --> 00:23:19.612
+- And yet nothing changes.
+
+00:23:19.612 --> 00:23:21.272
+And it just seems so insane, right?
+
+00:23:21.272 --> 00:23:26.272
+And as far as I can tell,
+you want to be successful,
+
+00:23:26.310 --> 00:23:28.284
+you look at what the
+successful company does,
+
+00:23:28.284 --> 00:23:29.967
+they do algorithms and
+interviews on the white board
+
+00:23:29.967 --> 00:23:33.044
+and so forth, and so despite
+the fact that most technology
+
+00:23:33.044 --> 00:23:36.027
+companies are not about writing
+algorithms on white boards,
+
+00:23:36.027 --> 00:23:39.289
+that you sort of want to
+translate and bring across
+
+00:23:39.289 --> 00:23:40.845
+what it is that they do,
+
+00:23:40.845 --> 00:23:43.352
+it's just surprisingly
+robust and resilient,
+
+00:23:43.352 --> 00:23:45.163
+and so we don't do that, we
+just try to think about, well,
+
+00:23:45.163 --> 00:23:46.672
+what it is that people at
+Stripe are actually doing
+
+00:23:46.672 --> 00:23:48.507
+day-to-day, I mean they're
+writing code on laptops,
+
+00:23:48.507 --> 00:23:50.028
+and so our interviews are largely,
+
+00:23:50.028 --> 00:23:51.722
+we've wrote a Quora answer about this,
+
+00:23:51.722 --> 00:23:53.464
+but it's largely writing
+code on your laptop
+
+00:23:53.464 --> 00:23:54.903
+in the environment you're familiar with
+
+00:23:54.903 --> 00:23:56.249
+and experienced with and so forth.
+
+00:23:56.249 --> 00:23:58.269
+And it works really well,
+and then when people join,
+
+00:23:58.269 --> 00:23:59.152
+they're generally pretty good
+
+00:23:59.152 --> 00:24:00.627
+at writing good code on laptops,
+
+00:24:00.627 --> 00:24:05.166
+and there's this, again, discount factor
+
+00:24:05.166 --> 00:24:08.323
+where I think people just,
+there's too much inertia
+
+00:24:08.323 --> 00:24:10.262
+in the existing ideas.
+
+00:24:10.262 --> 00:24:11.922
+But having said that, in
+terms of just the organization
+
+00:24:11.922 --> 00:24:13.443
+of a large group of people,
+
+00:24:13.443 --> 00:24:15.126
+default is to trust the mechanism.
+
+00:24:15.126 --> 00:24:16.809
+- Yeah actually it's a lot of technology
+
+00:24:16.809 --> 00:24:19.769
+which is core processes that run a lot,
+
+00:24:19.769 --> 00:24:22.266
+it's really worth figuring
+out first principles,
+
+00:24:22.266 --> 00:24:24.065
+and for you that's recruiting.
+
+00:24:24.065 --> 00:24:24.727
+- Yep.
+
+00:24:24.727 --> 00:24:27.060
+- But invention is really hard,
+
+00:24:27.060 --> 00:24:29.742
+because it means kind of dealing
+
+00:24:29.742 --> 00:24:30.822
+with unintended consequences.
+
+00:24:30.822 --> 00:24:31.704
+There's a lot of things that happen
+
+00:24:31.704 --> 00:24:33.526
+when you do things differently
+than anybody's done it.
+
+00:24:33.526 --> 00:24:34.060
+- Right.
+
+00:24:34.060 --> 00:24:35.303
+- There's no maps, there's no guidance.
+
+00:24:35.303 --> 00:24:38.182
+- I think there's also kind of a question
+
+00:24:38.182 --> 00:24:39.806
+for the cost benefit, right?
+
+00:24:39.806 --> 00:24:43.243
+In the sense that like
+if you can be sort of
+
+00:24:43.243 --> 00:24:45.565
+somewhat better even
+epsilon better on recruiting
+
+00:24:45.565 --> 00:24:48.757
+sort of maybe that
+actually matters, right?
+
+00:24:48.757 --> 00:24:52.020
+Whereas for a significant fraction
+
+00:24:52.020 --> 00:24:54.399
+of the things that have
+to happen in a company,
+
+00:24:54.399 --> 00:24:56.919
+you can fail if you screw them up,
+
+00:24:56.919 --> 00:24:58.904
+but they're not going to be the things
+
+00:24:58.904 --> 00:25:02.897
+that sort of create outside
+success by themselves,
+
+00:25:02.897 --> 00:25:04.523
+and for those again it's just probably,
+
+00:25:04.523 --> 00:25:06.682
+even if you posit that you're right,
+
+00:25:06.682 --> 00:25:08.063
+that you can do them better
+
+00:25:08.063 --> 00:25:10.257
+than all of your kind of
+mistaken predecessors,
+
+00:25:10.257 --> 00:25:12.184
+is it really worth
+spending your time there?
+
+00:25:12.184 --> 00:25:13.717
+Because fundamentally,
+
+00:25:13.717 --> 00:25:15.517
+that's the most constrained resource.
+
+00:25:15.517 --> 00:25:16.678
+- Right, yep, okay.
+
+00:25:16.678 --> 00:25:18.662
+So you talked about
+your laptop interviews.
+
+00:25:18.662 --> 00:25:20.439
+You guys have a reputation
+that you well-deserve
+
+00:25:20.439 --> 00:25:22.633
+for being excellent at hiring
+
+00:25:22.633 --> 00:25:25.117
+very, very, very good developers.
+
+00:25:25.117 --> 00:25:27.299
+How long did it take before you started
+
+00:25:27.299 --> 00:25:28.438
+doing laptop interviews?
+
+00:25:28.438 --> 00:25:31.838
+And has it changed now
+that you're 300 people?
+
+00:25:31.838 --> 00:25:36.838
+- Yeah, so I think, well,
+it's always so hard to know
+
+00:25:38.479 --> 00:25:40.359
+for anything was good or bad at Stripe.
+
+00:25:40.359 --> 00:25:41.614
+One, it's hard to know
+whether it is actually
+
+00:25:41.614 --> 00:25:44.133
+good or bad or whether
+that's just perception.
+
+00:25:44.133 --> 00:25:45.352
+I mean in the case of
+hiring I actually think
+
+00:25:45.352 --> 00:25:46.350
+we lucked out.
+
+00:25:46.350 --> 00:25:50.332
+You're never sort of entirely sure.
+
+00:25:50.332 --> 00:25:54.499
+But then secondly, how much was kind of,
+
+00:25:54.499 --> 00:25:55.556
+you can never kind of piece apart
+
+00:25:55.556 --> 00:25:58.296
+the attribution of all the
+different factors, right?
+
+00:25:58.296 --> 00:25:59.654
+And so for example one thing
+I think we benefitted from
+
+00:25:59.654 --> 00:26:01.512
+was the fact that Stripe
+builds software and tools
+
+00:26:01.512 --> 00:26:03.218
+for developers, for engineers,
+
+00:26:03.218 --> 00:26:05.935
+and so I think there's
+kind of more of an affinity
+
+00:26:05.935 --> 00:26:09.219
+than, I mean, for some randomly
+selected other product,
+
+00:26:09.219 --> 00:26:11.635
+how much did that factor
+matter, I don't know, right?
+
+00:26:11.635 --> 00:26:13.399
+Potentially, all of it
+can be attributed to that.
+
+00:26:13.399 --> 00:26:16.058
+And in fact the different ways
+in which we did interviews
+
+00:26:16.058 --> 00:26:17.532
+is completely inconsequential,
+
+00:26:17.532 --> 00:26:18.600
+I don't quite think that's true.
+
+00:26:18.600 --> 00:26:20.783
+I think probably the biggest thing,
+
+00:26:20.783 --> 00:26:23.464
+aside from how we interview folks,
+
+00:26:23.464 --> 00:26:27.365
+that we did differently is just being okay
+
+00:26:27.365 --> 00:26:29.605
+taking a really long time to hire people
+
+00:26:29.605 --> 00:26:32.450
+in that, kind of the received wisdom is
+
+00:26:32.450 --> 00:26:34.388
+work really hard to hire the best people,
+
+00:26:34.388 --> 00:26:36.211
+and you're like, "Gee, thanks, I was going
+
+00:26:36.211 --> 00:26:37.488
+"to do the opposite, but
+now that you've said that,
+
+00:26:37.488 --> 00:26:39.554
+"I'll work really hard
+to hire the best people."
+
+00:26:39.554 --> 00:26:40.854
+And so I guess the question is sort of
+
+00:26:40.854 --> 00:26:42.410
+to what lengths should you go
+
+00:26:42.410 --> 00:26:44.569
+and kind of what does that
+actually mean in practice.
+
+00:26:44.569 --> 00:26:47.413
+And in practice it means being okay
+
+00:26:47.413 --> 00:26:50.583
+waiting a really long time to hire people
+
+00:26:50.583 --> 00:26:54.426
+and having to be painfully
+persistent in doing so.
+
+00:26:54.426 --> 00:26:58.070
+And so it took us, let me think,
+
+00:26:58.070 --> 00:27:02.703
+took us a year, well it took me six months
+
+00:27:02.703 --> 00:27:05.083
+to hire the first two people, so.
+
+00:27:05.083 --> 00:27:06.282
+- That's the same story
+that Sam Altman told about
+
+00:27:06.282 --> 00:27:09.034
+about Airbnb I think,
+took maybe nine months.
+
+00:27:09.034 --> 00:27:10.659
+- So a person per quarter
+even though we had
+
+00:27:10.659 --> 00:27:12.679
+this kind of network already
+and knew all these people,
+
+00:27:12.679 --> 00:27:14.745
+we managed like one every three months.
+
+00:27:14.745 --> 00:27:18.541
+And then in I think the
+six months after that,
+
+00:27:18.541 --> 00:27:21.641
+we maybe hired another
+three or four people
+
+00:27:21.641 --> 00:27:23.882
+kind of on that order.
+
+00:27:23.882 --> 00:27:27.318
+We had week-long trials with them,
+
+00:27:27.318 --> 00:27:28.863
+we had some of them kind of network out,
+
+00:27:28.863 --> 00:27:33.064
+in many cases, they sort
+of thought they didn't
+
+00:27:33.064 --> 00:27:34.237
+want to join, and so it was kind of like
+
+00:27:34.237 --> 00:27:37.221
+this three-month life
+conversation about it,
+
+00:27:37.221 --> 00:27:37.824
+- [Professor] (laughs)
+
+00:27:37.824 --> 00:27:39.400
+- I mean therapy session of sort of
+
+00:27:39.400 --> 00:27:41.665
+what the best thing for these
+people to be doing would be.
+
+00:27:41.665 --> 00:27:43.162
+And this is I think what you find
+
+00:27:43.162 --> 00:27:44.985
+when you're trying to
+hire the best people,
+
+00:27:44.985 --> 00:27:45.983
+because you can kind of go either sort of
+
+00:27:45.983 --> 00:27:50.983
+you can filter first by kind
+of, by expressed interest
+
+00:27:52.681 --> 00:27:54.225
+or something, and then you can sort of
+
+00:27:54.225 --> 00:27:56.466
+secondarily filter for okay,
+and which ones are good,
+
+00:27:56.466 --> 00:27:57.766
+or you can first look for the good ones,
+
+00:27:57.766 --> 00:28:01.040
+and then try to sort of convert
+them to expressed interest.
+
+00:28:01.040 --> 00:28:02.886
+And I think that the latter
+is the more effective way
+
+00:28:02.886 --> 00:28:04.104
+to go about it, but then that means
+
+00:28:04.104 --> 00:28:06.043
+you have to sort of turn
+this aircraft carrier,
+
+00:28:06.043 --> 00:28:08.294
+where I mean if you just
+think kind of ex-ante about
+
+00:28:08.294 --> 00:28:09.747
+- The aircraft carrier's the candidate
+
+00:28:09.747 --> 00:28:10.512
+you want to go get.
+
+00:28:10.512 --> 00:28:13.181
+- Exactly, right, yes.
+
+00:28:13.181 --> 00:28:14.354
+Bit of a tortured metaphor,
+
+00:28:14.354 --> 00:28:16.955
+but you just think about the
+smartest people you know,
+
+00:28:16.955 --> 00:28:18.220
+and you want to get them
+to work in your thing,
+
+00:28:18.220 --> 00:28:20.042
+I mean chances are, as
+far as people you know,
+
+00:28:20.042 --> 00:28:20.879
+- Are working already.
+
+00:28:20.879 --> 00:28:22.701
+- Yeah, they have pretty good paths
+
+00:28:22.701 --> 00:28:23.653
+ahead of them, right?
+
+00:28:23.653 --> 00:28:24.234
+- Yep.
+
+00:28:24.234 --> 00:28:25.801
+- And to sort of consistently
+try to rotate these
+
+00:28:25.801 --> 00:28:28.076
+just takes a real long time.
+
+00:28:28.076 --> 00:28:31.373
+And so there are multiple
+people at Stripe now today
+
+00:28:31.373 --> 00:28:34.136
+who took us several years to hire,
+
+00:28:34.136 --> 00:28:38.699
+like, I can think off the top of my head
+
+00:28:38.699 --> 00:28:42.819
+of five people who took
+three plus years to hire.
+
+00:28:42.819 --> 00:28:43.516
+- Yep.
+
+00:28:43.516 --> 00:28:45.734
+- And the idea is sort of
+that when you're so early
+
+00:28:45.734 --> 00:28:47.278
+in the company's history
+that you should be
+
+00:28:47.278 --> 00:28:50.378
+kind of investing in people for whom
+
+00:28:50.378 --> 00:28:51.794
+it might take that length of time to hire.
+
+00:28:51.794 --> 00:28:53.279
+- [Professor] It seems
+a little crazy, yeah.
+
+00:28:53.279 --> 00:28:54.498
+- It seems kind of crazy, right?
+
+00:28:54.498 --> 00:28:55.683
+So I think maybe apart from sort of
+
+00:28:55.683 --> 00:28:56.820
+interviewing people sensibly,
+
+00:28:56.820 --> 00:29:00.419
+I think the big thing that
+people have to keep in mind
+
+00:29:00.419 --> 00:29:02.160
+in sort of early stage company recruiting
+
+00:29:02.160 --> 00:29:03.623
+is just you have to be way more persistent
+
+00:29:03.623 --> 00:29:05.643
+and be okay with it taking way longer
+
+00:29:05.643 --> 00:29:07.141
+than any sane or reasonable person
+
+00:29:07.141 --> 00:29:09.137
+could think it should take.
+
+00:29:09.137 --> 00:29:11.157
+- Yep and that's what Drew
+Houston says about Aditya,
+
+00:29:11.157 --> 00:29:13.238
+he says they tried to
+get Aditya and Ruchi,
+
+00:29:13.238 --> 00:29:15.385
+Aditya runs engineering, for over a year.
+
+00:29:15.385 --> 00:29:17.489
+They had to acquire his
+company to get him to do it.
+
+00:29:17.489 --> 00:29:18.244
+- Yep.
+
+00:29:18.244 --> 00:29:19.776
+- You know, I was reminded, I'm
+involved in a search company
+
+00:29:19.776 --> 00:29:21.692
+in Palo Alto, and it's
+about two years old,
+
+00:29:21.692 --> 00:29:24.908
+but the painful, the vicious cycle
+
+00:29:24.908 --> 00:29:27.532
+is that you're going so
+slowly when it's the first
+
+00:29:27.532 --> 00:29:29.006
+two or three people, and you're like,
+
+00:29:29.006 --> 00:29:32.534
+"Holy smokes, if we could just
+get another set of hands,"
+
+00:29:32.534 --> 00:29:33.928
+but you don't want to do it,
+
+00:29:33.928 --> 00:29:36.169
+but we talk a lot in this
+class about compound interest
+
+00:29:36.169 --> 00:29:37.132
+and the value of compounding interest,
+
+00:29:37.132 --> 00:29:39.012
+like if you get just one great person,
+
+00:29:39.012 --> 00:29:40.812
+that makes it marginally easier
+
+00:29:40.812 --> 00:29:42.553
+to get the next great person.
+
+00:29:42.553 --> 00:29:44.794
+- So I think it's that dynamic in spades,
+
+00:29:44.794 --> 00:29:46.674
+and then secondly I
+think, kind of another way
+
+00:29:46.674 --> 00:29:48.114
+to think about it, maybe
+makes the importance of it
+
+00:29:48.114 --> 00:29:50.111
+and potency kind of clearer,
+
+00:29:50.111 --> 00:29:52.944
+is that you have to imagine the light cone
+
+00:29:52.944 --> 00:29:55.671
+or kind of the tree of all of the people
+
+00:29:55.671 --> 00:29:57.030
+that this person will hire,
+
+00:29:57.030 --> 00:29:58.528
+and so rather than just thinking about it
+
+00:29:58.528 --> 00:30:00.026
+as kind of do I want this person or not,
+
+00:30:00.026 --> 00:30:02.126
+it's like, "Do I want this person
+
+00:30:02.126 --> 00:30:04.982
+"and the 50 people who
+I think they will hire?"
+
+00:30:04.982 --> 00:30:06.630
+Because even if they don't
+literally hire 50 people,
+
+00:30:06.630 --> 00:30:08.546
+they will be kind of so influential
+
+00:30:08.546 --> 00:30:12.029
+in determining the self-selection
+of those 50 people,
+
+00:30:12.029 --> 00:30:17.029
+and so you're really
+picking this giant branch
+
+00:30:17.206 --> 00:30:19.192
+of a potential future organization.
+
+00:30:19.192 --> 00:30:20.492
+- Yep, and then there's something where
+
+00:30:20.492 --> 00:30:22.000
+you get to a critical mass and ultimately
+
+00:30:22.000 --> 00:30:25.124
+you get a new chunk where they all believe
+
+00:30:25.124 --> 00:30:28.142
+that it might not be crazy
+to go work for this startup.
+
+00:30:28.142 --> 00:30:29.199
+- Yes.
+
+00:30:29.199 --> 00:30:30.522
+In our case, it took a long time.
+
+00:30:30.522 --> 00:30:31.660
+- A couple years' struggle.
+
+00:30:31.660 --> 00:30:32.960
+- Right.
+
+00:30:32.960 --> 00:30:34.976
+And that kind of also
+gets into sort of networks
+
+00:30:34.976 --> 00:30:37.738
+and so forth where sometimes you,
+
+00:30:37.738 --> 00:30:41.454
+these things can kind
+of compound more rapidly
+
+00:30:41.454 --> 00:30:43.451
+because they're not completely
+independent variables.
+
+00:30:43.451 --> 00:30:44.054
+- Right.
+
+00:30:44.054 --> 00:30:49.054
+So it sounds like you had the sense
+
+00:30:49.232 --> 00:30:52.169
+that you had product market
+fit at the very beginning.
+
+00:30:52.169 --> 00:30:52.993
+- Right.
+
+00:30:52.993 --> 00:30:54.537
+- You did this thing, and
+people started talking about it.
+
+00:30:54.537 --> 00:30:55.650
+Is that true?
+
+00:30:58.402 --> 00:31:00.067
+- Yes and no.
+
+00:31:00.067 --> 00:31:03.247
+So yes in the sense that
+from the very beginning,
+
+00:31:03.247 --> 00:31:05.964
+sort of shockingly, this
+idea of, I mean, again,
+
+00:31:05.964 --> 00:31:07.647
+it really doesn't sound promising I think
+
+00:31:07.647 --> 00:31:10.480
+certainly a lot of people we talked to
+
+00:31:10.480 --> 00:31:13.464
+didn't think so, sort of a credit card API
+
+00:31:13.464 --> 00:31:15.240
+that was really simple to use over cURL
+
+00:31:15.240 --> 00:31:16.505
+and you could set up instantly,
+
+00:31:16.505 --> 00:31:18.049
+you're not immediately like,
+
+00:31:18.049 --> 00:31:19.628
+"All right, let me invest."
+
+00:31:19.628 --> 00:31:20.266
+- Yeah.
+
+00:31:20.266 --> 00:31:21.670
+- And indeed, most people weren't.
+
+00:31:21.670 --> 00:31:24.771
+But that in fact turned out
+to be a pretty good idea
+
+00:31:24.771 --> 00:31:27.766
+and it ended up playing into
+all these kind of larger
+
+00:31:27.766 --> 00:31:30.507
+secular trends and like the rise of mobile
+
+00:31:30.507 --> 00:31:32.444
+and the shift from
+advertising-based business models
+
+00:31:32.444 --> 00:31:34.162
+to transaction-based business models
+
+00:31:34.162 --> 00:31:35.950
+and things like that.
+
+00:31:35.950 --> 00:31:37.470
+- You know that wasn't that much
+
+00:31:37.470 --> 00:31:39.804
+was really associated with mobile.
+
+00:31:39.804 --> 00:31:41.163
+- No, but I think it was just kind of
+
+00:31:41.163 --> 00:31:43.844
+there was actually, it
+was kind of a period
+
+00:31:43.844 --> 00:31:45.122
+of high turnover in the industry,
+
+00:31:45.122 --> 00:31:46.224
+and so kind of more things were getting
+
+00:31:46.224 --> 00:31:48.221
+rebuilt from scratch and so forth, right?
+
+00:31:48.221 --> 00:31:48.964
+- Yep.
+
+00:31:48.964 --> 00:31:50.845
+- And then, and also product disappearance
+
+00:31:50.845 --> 00:31:51.970
+was becoming more important.
+
+00:31:51.970 --> 00:31:52.644
+- Sure.
+
+00:31:52.644 --> 00:31:54.200
+- And so just bouncing
+people to some other website
+
+00:31:54.200 --> 00:31:55.789
+to pay was just not viable.
+
+00:31:55.789 --> 00:31:57.206
+- Yep.
+
+00:31:57.206 --> 00:31:59.842
+- And so there was kind of that.
+
+00:31:59.842 --> 00:32:02.267
+But then I think kind of the second aspect
+
+00:32:02.267 --> 00:32:05.124
+which kind of, in which
+the product market fit
+
+00:32:05.124 --> 00:32:06.842
+wasn't quite there from the outset
+
+00:32:06.842 --> 00:32:09.523
+is in sort of the additional
+stuff that happens
+
+00:32:09.523 --> 00:32:11.404
+kind of on top, in that for example,
+
+00:32:11.404 --> 00:32:13.087
+one of the most successful
+things we've launched
+
+00:32:13.087 --> 00:32:14.388
+is the thing called Connect,
+
+00:32:14.388 --> 00:32:17.545
+which basically enables people to sort of
+
+00:32:17.545 --> 00:32:19.263
+to pay other people with Stripe,
+
+00:32:19.263 --> 00:32:21.887
+is kind of the verbacial
+way to describe it.
+
+00:32:21.887 --> 00:32:24.232
+And so you think about all
+these new marketplaces, right?
+
+00:32:24.232 --> 00:32:25.915
+And so Instacart and
+Postmates and Doordash
+
+00:32:25.915 --> 00:32:28.527
+and Ship and so forth, right?
+
+00:32:28.527 --> 00:32:29.665
+Are you an investor in Ship?
+
+00:32:29.665 --> 00:32:30.211
+- No.
+
+00:32:30.211 --> 00:32:30.872
+- Okay, sorry.
+
+00:32:30.872 --> 00:32:31.893
+Somebody thought you were.
+
+00:32:31.893 --> 00:32:32.950
+- But I use them all.
+
+00:32:32.950 --> 00:32:34.007
+- Okay, yeah, great.
+
+00:32:34.007 --> 00:32:35.992
+Lift, Uber, Airbnb and so forth, right?
+
+00:32:35.992 --> 00:32:37.559
+And so tons of these companies,
+
+00:32:37.559 --> 00:32:38.859
+in fact I think the vast majority
+
+00:32:38.859 --> 00:32:40.739
+are built on Stripe, right?
+
+00:32:40.739 --> 00:32:42.690
+But that requires this
+additional set of APIs
+
+00:32:42.690 --> 00:32:44.490
+that we call Connect in order to do so
+
+00:32:44.490 --> 00:32:46.032
+and to sort of coordinate
+all these payments
+
+00:32:46.032 --> 00:32:47.377
+and keep track of them
+and sort of help them
+
+00:32:47.377 --> 00:32:52.276
+handle the tax issues
+and the whole ensemble
+
+00:32:52.276 --> 00:32:55.771
+of factors.
+
+00:32:55.771 --> 00:32:59.137
+And so there are a lot of additional APIs
+
+00:32:59.137 --> 00:33:00.671
+we ended up building on top of this really
+
+00:33:00.671 --> 00:33:02.969
+basic transaction processing part.
+
+00:33:02.969 --> 00:33:04.734
+But I think people don't quite,
+
+00:33:04.734 --> 00:33:06.451
+or it's difficult to understand, right?
+
+00:33:06.451 --> 00:33:07.670
+Because it's kind of like AWS
+
+00:33:07.670 --> 00:33:09.133
+in that people kind of know, well,
+
+00:33:09.133 --> 00:33:12.221
+they do kind of the EC2
+thing and the S3 thing
+
+00:33:12.221 --> 00:33:13.196
+and there's a bunch of other things
+
+00:33:13.196 --> 00:33:15.181
+and kind of actually in the details
+
+00:33:15.181 --> 00:33:16.144
+building infrastructure.
+
+00:33:16.144 --> 00:33:18.083
+It's pretty hard to keep
+track of all the other things,
+
+00:33:18.083 --> 00:33:21.729
+and I think Stripe has a similar dynamic
+
+00:33:21.729 --> 00:33:23.191
+where that initial
+component was a very good
+
+00:33:23.191 --> 00:33:24.224
+product market fit to
+
+00:33:24.224 --> 00:33:25.792
+but in order to actually get here,
+
+00:33:25.792 --> 00:33:26.987
+a huge amount of additional work
+
+00:33:26.987 --> 00:33:29.495
+that had to happen and
+invention that had to happen
+
+00:33:29.495 --> 00:33:31.248
+that's just basically hard to understand
+
+00:33:31.248 --> 00:33:32.687
+without a lot of context.
+
+00:33:32.687 --> 00:33:35.869
+I think that's something
+that for better or worse,
+
+00:33:35.869 --> 00:33:37.668
+Stripe has faced for its history,
+
+00:33:37.668 --> 00:33:41.753
+where people kind, well
+because it's kind of hard
+
+00:33:41.753 --> 00:33:43.286
+to assess from the outside unless you know
+
+00:33:43.286 --> 00:33:45.109
+a lot about the domain,
+
+00:33:45.109 --> 00:33:47.430
+kind of the bad part of that
+
+00:33:47.430 --> 00:33:49.277
+is people just kind of don't get
+
+00:33:49.277 --> 00:33:50.658
+what Stripe does or why it matters
+
+00:33:50.658 --> 00:33:52.921
+or in what way it
+manifests the consequence,
+
+00:33:52.921 --> 00:33:55.022
+and the good part is competitors also
+
+00:33:55.022 --> 00:33:56.973
+don't really get it, right?
+
+00:33:56.973 --> 00:33:59.180
+And so Stripe got to this point
+
+00:33:59.180 --> 00:34:04.113
+sort of pretty easily, and
+so it kind of cuts both ways.
+
+00:34:04.113 --> 00:34:08.838
+- That brings up a lot
+of different questions.
+
+00:34:08.838 --> 00:34:10.033
+So one of the things I heard in there
+
+00:34:10.033 --> 00:34:12.658
+is that there are successive
+product market fits.
+
+00:34:12.658 --> 00:34:13.319
+- Yep.
+
+00:34:13.319 --> 00:34:16.638
+- Like your different signs,
+they don't all come together,
+
+00:34:16.638 --> 00:34:18.195
+sometimes are spread out,
+
+00:34:18.195 --> 00:34:19.332
+sometimes you have to get
+
+00:34:19.332 --> 00:34:20.772
+product market fit in one place
+
+00:34:20.772 --> 00:34:21.480
+- Yep.
+
+00:34:21.480 --> 00:34:23.199
+- to let you build to
+realize you don't have it
+
+00:34:23.199 --> 00:34:24.162
+in another place.
+
+00:34:24.162 --> 00:34:24.939
+- Right, yes.
+
+00:34:24.939 --> 00:34:25.799
+- Does that sound right?
+
+00:34:25.799 --> 00:34:27.621
+- I think that's exactly right.
+
+00:34:27.621 --> 00:34:31.104
+- And then so fast-forward to 2015.
+
+00:34:31.104 --> 00:34:33.425
+What scale are you at today?
+
+00:34:33.425 --> 00:34:34.644
+Like how do you talk about scale
+
+00:34:34.644 --> 00:34:36.421
+when you're talking to the public?
+
+00:34:36.421 --> 00:34:39.057
+- We've, well this gets
+to sort of another issue
+
+00:34:39.057 --> 00:34:40.437
+of sort of to what degree
+you should be forthcoming
+
+00:34:40.437 --> 00:34:41.726
+about your business metrics.
+
+00:34:41.726 --> 00:34:42.341
+- Right.
+
+00:34:42.341 --> 00:34:43.223
+- And we've always been in the school
+
+00:34:43.223 --> 00:34:44.779
+of not being.
+
+00:34:44.779 --> 00:34:45.975
+- Yeah, okay.
+
+00:34:45.975 --> 00:34:49.144
+- And so I think the
+current public things we say
+
+00:34:49.144 --> 00:34:51.920
+are we handle billions of dollars a year
+
+00:34:51.920 --> 00:34:54.716
+for, we actually recently started saying
+
+00:34:54.716 --> 00:34:56.864
+hundreds of thousands of businesses.
+
+00:34:56.864 --> 00:34:58.617
+- Okay.
+
+00:34:58.617 --> 00:34:59.314
+- And that's kind of about it.
+
+00:34:59.314 --> 00:35:04.314
+But I mean it's become the default thing
+
+00:35:05.734 --> 00:35:07.103
+that technology companies use
+
+00:35:07.103 --> 00:35:09.703
+when they want to move money
+around on the Internet.
+
+00:35:09.703 --> 00:35:11.363
+- Well that's a somewhat broader thing
+
+00:35:11.363 --> 00:35:12.699
+than saying you have hundreds of thousands
+
+00:35:12.699 --> 00:35:15.915
+and billions, so saying you're the default
+
+00:35:15.915 --> 00:35:19.177
+is a good thing to say, it's
+the thing you want to say.
+
+00:35:19.177 --> 00:35:24.177
+Sorry, I'm trying to
+back out to a different
+
+00:35:26.060 --> 00:35:27.814
+set of questions.
+
+00:35:27.814 --> 00:35:29.137
+So talked about scale.
+
+00:35:29.137 --> 00:35:30.971
+Let's talk about, oh,
+you talked about Connect.
+
+00:35:30.971 --> 00:35:32.772
+I was reading one interview
+
+00:35:32.772 --> 00:35:34.454
+where basically somebody said,
+
+00:35:34.454 --> 00:35:35.534
+"Well, look, don't we have PayPal?"
+
+00:35:35.534 --> 00:35:37.100
+It was in PayPal fine.
+
+00:35:37.100 --> 00:35:37.693
+- Right.
+
+00:35:37.693 --> 00:35:39.098
+- You said, "Well, PayPal's
+not really what we do.
+
+00:35:39.098 --> 00:35:41.153
+"PayPal's for person-to-person transfer,
+
+00:35:41.153 --> 00:35:42.440
+"party-to-party transfer."
+
+00:35:42.440 --> 00:35:43.580
+That's kind of what you describe
+
+00:35:43.580 --> 00:35:45.355
+when you were talking
+about to Connect to me.
+
+00:35:45.355 --> 00:35:47.781
+- Yeah, right, and this is a great example
+
+00:35:47.781 --> 00:35:49.659
+where kind of at a high
+level you're like oh.
+
+00:35:49.659 --> 00:35:51.041
+- But BNC doesn't understand
+at all what you're doing,
+
+00:35:51.041 --> 00:35:52.701
+so we'll ask you to
+explain in small words.
+
+00:35:52.701 --> 00:35:55.068
+- I'm not sure which interview this was,
+
+00:35:55.068 --> 00:35:56.705
+but where it really gets down to details.
+
+00:35:56.705 --> 00:35:59.886
+And so kind of the critical difference is
+
+00:35:59.886 --> 00:36:01.267
+are you building software
+
+00:36:01.267 --> 00:36:03.044
+that sort of coordinates these,
+
+00:36:03.044 --> 00:36:05.087
+this kind of network of
+money flowing, right?
+
+00:36:05.087 --> 00:36:09.243
+I mean like what Lift needs
+or what Instacart needs
+
+00:36:09.243 --> 00:36:10.706
+is very different to the experience of
+
+00:36:10.706 --> 00:36:11.867
+"Oh, I'm gonna pay my friend."
+
+00:36:11.867 --> 00:36:12.564
+- Right.
+
+00:36:12.564 --> 00:36:14.990
+- With Lift, it's I mean
+you're gonna mechanically
+
+00:36:14.990 --> 00:36:16.452
+sort of coordinating this payment
+
+00:36:16.452 --> 00:36:19.390
+between the rider and the driver
+
+00:36:19.390 --> 00:36:22.512
+and that like Lift is
+mediating that payment,
+
+00:36:22.512 --> 00:36:23.987
+and then sort of all these
+additional considerations
+
+00:36:23.987 --> 00:36:26.389
+around it for like "What happens
+if it has to get refunded?"
+
+00:36:26.389 --> 00:36:27.829
+Or like "Actually the
+amount can be different,
+
+00:36:27.829 --> 00:36:29.431
+"because you can give a tip to the driver,
+
+00:36:29.431 --> 00:36:30.674
+"and maybe it'll get charged back later,
+
+00:36:30.674 --> 00:36:31.497
+"and it has to work in
+different countries,"
+
+00:36:31.497 --> 00:36:34.539
+and so in practice,
+completely kind of different
+
+00:36:34.539 --> 00:36:35.012
+problems face us.
+
+00:36:35.012 --> 00:36:36.311
+I mean I guess the problem we face
+
+00:36:36.311 --> 00:36:37.333
+of person-to-person payments
+
+00:36:37.333 --> 00:36:39.226
+is how do I do really
+frictionless onboarding
+
+00:36:39.226 --> 00:36:40.445
+and honestly how do I have people
+
+00:36:40.445 --> 00:36:41.327
+not forget about it,
+
+00:36:41.327 --> 00:36:42.952
+because people don't actually practice
+
+00:36:42.952 --> 00:36:44.322
+paying their friends all
+that often but whatever.
+
+00:36:44.322 --> 00:36:45.065
+- [Professor] (laughs)
+
+00:36:45.065 --> 00:36:46.492
+- There's like super
+different problem spaces,
+
+00:36:46.492 --> 00:36:47.503
+but on a high level, you're right,
+
+00:36:47.503 --> 00:36:48.930
+both involve money going
+from one person to another,
+
+00:36:48.930 --> 00:36:50.765
+and so that really being kind of,
+
+00:36:50.765 --> 00:36:52.750
+basically without kind
+of talking to the people
+
+00:36:52.750 --> 00:36:54.666
+building the app sort
+of hearing their issues
+
+00:36:54.666 --> 00:36:56.268
+directly firsthand, they do kind of sound
+
+00:36:56.268 --> 00:36:57.301
+superficially similar.
+
+00:36:57.301 --> 00:36:59.205
+- And so I guess then you would say
+
+00:36:59.205 --> 00:37:01.271
+your product suite now is a really
+
+00:37:01.271 --> 00:37:02.989
+straightforward authentic expression
+
+00:37:02.989 --> 00:37:05.543
+of your original thing,
+which was people make apps,
+
+00:37:05.543 --> 00:37:08.991
+and they'd like to get paid for them,
+
+00:37:08.991 --> 00:37:11.069
+paid by their customers and sometimes
+
+00:37:11.069 --> 00:37:12.905
+pay their suppliers out, is that?
+
+00:37:12.905 --> 00:37:14.250
+- Yeah, no, I think
+that's basically right.
+
+00:37:14.250 --> 00:37:15.747
+So the way we kind of
+came to think about it
+
+00:37:15.747 --> 00:37:20.747
+was kind of two dimensions
+or maybe three to it.
+
+00:37:23.561 --> 00:37:26.486
+So the reason we decided
+to drop out of school
+
+00:37:26.486 --> 00:37:28.204
+or maybe go and leave.
+
+00:37:28.204 --> 00:37:29.040
+- (laughs)
+
+00:37:29.040 --> 00:37:31.989
+- was because we realized
+that just in general
+
+00:37:31.989 --> 00:37:33.347
+the market as a whole was actually tiny,
+
+00:37:33.347 --> 00:37:34.995
+and so you kind of hear transactions
+
+00:37:34.995 --> 00:37:37.132
+on the Internet, you know,
+that's kind of been done
+
+00:37:37.132 --> 00:37:38.350
+or something, right?
+
+00:37:38.350 --> 00:37:39.906
+But you need to just look at it
+
+00:37:39.906 --> 00:37:41.032
+from a high-level standpoint,
+
+00:37:41.032 --> 00:37:44.190
+and you sort of look at the total figures,
+
+00:37:44.190 --> 00:37:47.127
+and about, certainly
+at the time, 2% of all
+
+00:37:47.127 --> 00:37:49.112
+consumer spending was happening
+
+00:37:49.112 --> 00:37:50.006
+through the Internet, right?
+
+00:37:50.006 --> 00:37:52.455
+And so kind of as a total industry
+
+00:37:52.455 --> 00:37:53.512
+commerce on the Internet,
+
+00:37:53.512 --> 00:37:56.112
+was kind of 2% of the starting block
+
+00:37:56.112 --> 00:37:57.946
+so whatever happened to date
+
+00:37:57.946 --> 00:38:01.359
+was incredibly early in
+terms of the ultimate curve
+
+00:38:01.359 --> 00:38:03.356
+of what's coming.
+
+00:38:03.356 --> 00:38:05.132
+The second one was just kind of
+
+00:38:05.132 --> 00:38:06.478
+more directly looking at
+
+00:38:06.478 --> 00:38:07.454
+sort of the global aspect
+
+00:38:07.454 --> 00:38:08.952
+where the smart phone is kind of how
+
+00:38:08.952 --> 00:38:11.866
+the Internet is reaching
+the rest of the world
+
+00:38:11.866 --> 00:38:13.781
+and again we were really early
+
+00:38:13.781 --> 00:38:14.663
+in that process happening,
+
+00:38:14.663 --> 00:38:16.149
+and so there were all
+these incredibly promising
+
+00:38:16.149 --> 00:38:19.631
+niche end markets and
+China, India, Indonesia,
+
+00:38:19.631 --> 00:38:22.407
+Brazil, et cetera, right?
+
+00:38:22.407 --> 00:38:24.485
+And then the third one kind
+of to your Connect point
+
+00:38:24.485 --> 00:38:26.249
+was that businesses were building these
+
+00:38:26.249 --> 00:38:30.428
+increasingly just complicated
+transaction-oriented services,
+
+00:38:30.428 --> 00:38:31.845
+and I mean Connect is a good example,
+
+00:38:31.845 --> 00:38:33.191
+but Crowd Funding is another, right?
+
+00:38:33.191 --> 00:38:35.327
+They were sort of Kick
+Starter does not monetize
+
+00:38:35.327 --> 00:38:36.744
+or facilitate advertising.
+
+00:38:36.744 --> 00:38:39.066
+They facilitate just this completely new
+
+00:38:39.066 --> 00:38:40.969
+kind of transaction, right?
+
+00:38:40.969 --> 00:38:42.827
+And so realizing this was increasingly
+
+00:38:42.827 --> 00:38:46.043
+at the core, not just
+partially, but at the core
+
+00:38:46.043 --> 00:38:48.004
+of what the next generation
+of companies were doing,
+
+00:38:48.004 --> 00:38:50.590
+like if you think about it, Airbnb, Uber,
+
+00:38:50.590 --> 00:38:52.773
+Kick Starter, Instacart, Lift,
+
+00:38:52.773 --> 00:38:53.852
+- [Professor] Everybody interesting.
+
+00:38:53.852 --> 00:38:57.277
+- Yeah, they're kind of these new kind of
+
+00:38:57.277 --> 00:38:58.681
+real world economic relationships
+
+00:38:58.681 --> 00:39:01.305
+where it's an integral part,
+
+00:39:01.305 --> 00:39:02.518
+and so the belief was that,
+well, there's gonna be
+
+00:39:02.518 --> 00:39:05.588
+a lot of those and sort of the use casers
+
+00:39:05.588 --> 00:39:07.626
+are going to get richer
+and more complex over time,
+
+00:39:07.626 --> 00:39:09.380
+and there needs to be
+a completely integrated
+
+00:39:09.380 --> 00:39:12.025
+set of tools and APIs to
+facilitate the whole thing.
+
+00:39:12.025 --> 00:39:13.465
+- Okay so I'm gonna ask
+a bunch of questions
+
+00:39:13.465 --> 00:39:16.646
+about engineering and staff
+and product definition
+
+00:39:16.646 --> 00:39:18.841
+and organization, but you guys get bored
+
+00:39:18.841 --> 00:39:19.618
+if you don't ask questions.
+
+00:39:19.618 --> 00:39:22.068
+Do people have questions at this point?
+
+00:39:22.068 --> 00:39:26.299
+Or should we keep going?
+
+00:39:26.920 --> 00:39:28.510
+- [Voiceover] How did
+you go about setting up
+
+00:39:28.510 --> 00:39:30.705
+the sort of back-end relationships
+
+00:39:30.705 --> 00:39:33.363
+with the credit card
+processors and all that
+
+00:39:33.363 --> 00:39:34.803
+when you were really small?
+
+00:39:34.803 --> 00:39:35.627
+- Right.
+
+00:39:35.627 --> 00:39:36.823
+Good question.
+
+00:39:36.823 --> 00:39:38.483
+This was one of the hardest parts.
+
+00:39:38.483 --> 00:39:43.483
+In the beginning, we sort of worked with,
+
+00:39:44.044 --> 00:39:46.389
+this part might be partly off the record,
+
+00:39:46.389 --> 00:39:48.327
+but in the beginning we worked with,
+
+00:39:48.327 --> 00:39:49.929
+there was a guy I met at a party,
+
+00:39:49.929 --> 00:39:54.747
+and his friend ran a payments company.
+
+00:39:54.747 --> 00:39:57.244
+It was like a tiny little operation based
+
+00:39:57.244 --> 00:39:58.370
+out of the Midwest,
+
+00:39:58.370 --> 00:40:00.563
+and they agreed to let
+us build a prototype
+
+00:40:00.563 --> 00:40:02.328
+on top of their thing and just didn't ask
+
+00:40:02.328 --> 00:40:04.011
+too many questions.
+
+00:40:04.011 --> 00:40:06.983
+And so when you instantly
+create your Stripe account,
+
+00:40:06.983 --> 00:40:09.003
+John and I got an email,
+and we'd go and like
+
+00:40:09.003 --> 00:40:10.930
+fill out the paperwork and
+submit it to this company,
+
+00:40:10.930 --> 00:40:13.101
+and instantly set up your Stripe account.
+
+00:40:13.101 --> 00:40:14.006
+- [Professor] For real?
+
+00:40:14.006 --> 00:40:14.784
+You put manually?
+
+00:40:14.784 --> 00:40:15.504
+- Manually.
+
+00:40:15.504 --> 00:40:16.363
+- [Professor] Wow.
+
+00:40:16.363 --> 00:40:18.708
+How many did you do it like that?
+
+00:40:18.708 --> 00:40:19.486
+- Dozens.
+
+00:40:19.486 --> 00:40:20.809
+- [Professor] (laughs)
+
+00:40:20.809 --> 00:40:22.248
+- And actually that worked really well,
+
+00:40:22.248 --> 00:40:23.503
+because the salient point was
+
+00:40:23.503 --> 00:40:25.361
+they didn't have to do it,
+the user didn't have to do it,
+
+00:40:25.361 --> 00:40:26.765
+and we were fine doing it for them,
+
+00:40:26.765 --> 00:40:28.924
+and actually, it's a separate
+line of conversation,
+
+00:40:28.924 --> 00:40:29.899
+but there were a lot of things
+
+00:40:29.899 --> 00:40:31.583
+where we just sort of
+manually did it ourselves
+
+00:40:31.583 --> 00:40:34.160
+for a very long time.
+
+00:40:34.160 --> 00:40:39.025
+And then we went and
+we met with Wells Fargo
+
+00:40:39.025 --> 00:40:41.334
+and sort of described what
+we were doing to them,
+
+00:40:41.334 --> 00:40:43.435
+and we'd gotten instruction
+through somebody and so forth
+
+00:40:43.435 --> 00:40:46.942
+and they unequivocally said that they had
+
+00:40:46.942 --> 00:40:48.659
+no interest in working with us,
+
+00:40:48.659 --> 00:40:50.541
+and so it was like hmm.
+
+00:40:50.541 --> 00:40:55.405
+And then, it was getting
+increasingly frustrating,
+
+00:40:55.405 --> 00:40:56.763
+because it was growing,
+
+00:40:56.763 --> 00:40:57.646
+and we were having to fill out
+
+00:40:57.646 --> 00:40:59.306
+more and more of these forms, right?
+
+00:40:59.306 --> 00:41:04.306
+But we sort of had no
+route to something better.
+
+00:41:04.866 --> 00:41:07.618
+And so we asked one of our early investors
+
+00:41:07.618 --> 00:41:08.627
+for advice on this.
+
+00:41:08.627 --> 00:41:10.786
+It was a guy called Geoff Ralston.
+
+00:41:10.786 --> 00:41:12.238
+So Geoff had been a CEO of Lala,
+
+00:41:12.238 --> 00:41:14.712
+which was kind of like an
+early version of Spotify,
+
+00:41:14.712 --> 00:41:16.988
+and they were one of
+the first kind of legit,
+
+00:41:16.988 --> 00:41:18.892
+legal music services,
+
+00:41:18.892 --> 00:41:20.123
+and they'd gotten deals done
+
+00:41:20.123 --> 00:41:21.527
+with all the record lables,
+
+00:41:21.527 --> 00:41:23.269
+and so we kind of thought who do we know
+
+00:41:23.269 --> 00:41:24.987
+to get a deal done with a bank?
+
+00:41:24.987 --> 00:41:26.426
+Well Geoff got a deal done
+with the record labels,
+
+00:41:26.426 --> 00:41:27.065
+- [Professor] (laughs)
+
+00:41:27.065 --> 00:41:28.771
+- I mean, you can deal
+with the record labels,
+
+00:41:28.771 --> 00:41:29.863
+you can deal with anyone.
+
+00:41:29.863 --> 00:41:30.884
+And so we went to Geoff
+
+00:41:30.884 --> 00:41:34.007
+and we basically said, you know, "help."
+
+00:41:34.007 --> 00:41:38.508
+And he's like, "Oh, I
+didn't actually do all these
+
+00:41:38.508 --> 00:41:40.552
+"deals with the record labels."
+
+00:41:40.552 --> 00:41:45.552
+It was actually one of Lala's
+co-founders, Billy Alvarado.
+
+00:41:45.763 --> 00:41:49.769
+And so he pointed us to Billy,
+
+00:41:49.769 --> 00:41:52.415
+and so John and I met with Billy,
+
+00:41:52.415 --> 00:41:56.351
+and he had actually,
+Apple had bought Lala,
+
+00:41:56.351 --> 00:41:59.532
+and Billy had just left,
+and I think, I don't know,
+
+00:41:59.532 --> 00:42:01.853
+maybe Billy was bored, and so he's like,
+
+00:42:01.853 --> 00:42:04.489
+"All right, I'll help you
+kids out a little bit."
+
+00:42:04.489 --> 00:42:08.587
+And so he actually ended up joining Stripe
+
+00:42:08.587 --> 00:42:10.549
+as maybe the fifth or sixth person.
+
+00:42:10.549 --> 00:42:13.324
+And we were like, he wasn't an
+engineer, and so at the time,
+
+00:42:13.324 --> 00:42:14.056
+- [Professor] You had a BD guy
+
+00:42:14.056 --> 00:42:15.773
+as your fifth or sixth person.
+
+00:42:15.773 --> 00:42:17.549
+- Yeah, yeah, and so, and
+we were really torn over it,
+
+00:42:17.549 --> 00:42:18.188
+because it was like.
+
+00:42:18.188 --> 00:42:19.256
+- [Professor] That's super
+surprising for a company
+
+00:42:19.256 --> 00:42:20.463
+that's so engineering.
+
+00:42:20.463 --> 00:42:21.543
+- No, no, no, and we were like,
+
+00:42:21.543 --> 00:42:23.343
+"He doesn't write code, I mean,
+
+00:42:23.343 --> 00:42:24.724
+"should we hire a person
+who doesn't write code?"
+
+00:42:24.724 --> 00:42:25.583
+- [Professor] What does he do?
+
+00:42:25.583 --> 00:42:26.221
+(laughs)
+
+00:42:26.221 --> 00:42:28.381
+- What does one even do
+that's not writing code?
+
+00:42:28.381 --> 00:42:30.958
+And so we were sort of sharing this
+
+00:42:30.958 --> 00:42:33.361
+kind of inner anguish with Geoff,
+
+00:42:33.361 --> 00:42:38.058
+and Geoff, to his credit,
+was commendably patient,
+
+00:42:38.058 --> 00:42:43.058
+and was like, "Patrick,
+one, stop being an idiot."
+
+00:42:43.165 --> 00:42:45.499
+I don't think he said idiot,
+he said something stronger,
+
+00:42:45.499 --> 00:42:46.498
+but for the sake of the record,
+
+00:42:46.498 --> 00:42:47.740
+I'll say he called me an idiot.
+
+00:42:47.740 --> 00:42:49.679
+And he's like, "You
+should just hire Billy."
+
+00:42:49.679 --> 00:42:51.420
+And I remember he promised me
+
+00:42:51.420 --> 00:42:53.602
+that if it didn't work out,
+
+00:42:53.602 --> 00:42:55.959
+he would go back and retroactively
+
+00:42:55.959 --> 00:42:57.619
+pay Billy's salary, so he was like,
+
+00:42:57.619 --> 00:42:59.639
+"So there's no downside for you."
+
+00:42:59.639 --> 00:43:00.556
+And at the time, we didn't have
+
+00:43:00.556 --> 00:43:02.343
+a whole lot of money, and so that's.
+
+00:43:02.343 --> 00:43:03.122
+- [Professor] So that mattered.
+
+00:43:03.122 --> 00:43:04.296
+- Yeah, absolutely.
+
+00:43:04.296 --> 00:43:06.002
+And so then we hired Billy,
+
+00:43:06.002 --> 00:43:10.820
+and Billy is still at Stripe
+and is one of the most
+
+00:43:10.820 --> 00:43:12.074
+important people at the company.
+
+00:43:12.074 --> 00:43:12.933
+- [Professor] How did you?
+
+00:43:12.933 --> 00:43:14.359
+- No actually, just a second,
+and to finish the story,
+
+00:43:14.359 --> 00:43:17.600
+so then basically Billy
+went and solved Wells.
+
+00:43:17.600 --> 00:43:19.736
+And so it, I mean,
+there's a whole separate
+
+00:43:19.736 --> 00:43:20.814
+line of conversation to be had about
+
+00:43:20.814 --> 00:43:22.719
+how to do business development effectively
+
+00:43:22.719 --> 00:43:26.132
+and we were really bad
+at it in the beginning.
+
+00:43:26.132 --> 00:43:27.862
+I think it's actually a
+very interesting question,
+
+00:43:27.862 --> 00:43:30.497
+how should a startup
+partner with other entities,
+
+00:43:30.497 --> 00:43:31.914
+and obviously that's a
+pretty important part
+
+00:43:31.914 --> 00:43:34.200
+of what Stripe has to do.
+
+00:43:34.200 --> 00:43:36.650
+And Billy sort of taught
+us a hell of a lot,
+
+00:43:36.650 --> 00:43:39.982
+but about two months after Billy joined,
+
+00:43:39.982 --> 00:43:42.675
+we had the requisite
+relationship with Wells Fargo.
+
+00:43:42.675 --> 00:43:43.557
+- Wow.
+
+00:43:43.557 --> 00:43:44.939
+I was gonna ask, how do you even
+
+00:43:44.939 --> 00:43:46.541
+evaluate how he's doing?
+
+00:43:46.541 --> 00:43:48.456
+Because he's such a different background
+
+00:43:48.456 --> 00:43:49.675
+situation than you.
+
+00:43:49.675 --> 00:43:50.581
+- Right.
+
+00:43:50.581 --> 00:43:51.579
+- I guess he just did magic things
+
+00:43:51.579 --> 00:43:53.158
+like bring Wells Fargo in so he's probably
+
+00:43:53.158 --> 00:43:53.959
+good enough, yeah?
+
+00:43:53.959 --> 00:43:55.120
+- Yeah, we're kind of at the point where
+
+00:43:55.120 --> 00:43:56.954
+there were fairly discreet things
+
+00:43:56.954 --> 00:43:58.638
+that had to happen or not.
+
+00:43:58.638 --> 00:44:01.861
+And so in that sense, it
+was fairly assessable,
+
+00:44:01.861 --> 00:44:04.979
+but there were also a
+bunch of other things
+
+00:44:04.979 --> 00:44:07.858
+where (laughs) he knew, I
+mean he'd basically been
+
+00:44:07.858 --> 00:44:09.541
+through a real startup before in Lala
+
+00:44:09.541 --> 00:44:11.840
+and so for example, I remember him asking
+
+00:44:11.840 --> 00:44:14.963
+pretty early on how we do payroll,
+
+00:44:14.963 --> 00:44:17.737
+and we're like occasionally we multiply
+
+00:44:17.737 --> 00:44:20.802
+the agreed salary by length of time
+
+00:44:20.802 --> 00:44:23.519
+since people were last paid
+and give them that money.
+
+00:44:23.519 --> 00:44:24.725
+- [Professor] (laughs)
+
+00:44:24.725 --> 00:44:26.479
+- And he's like, "What about deductions
+
+00:44:26.479 --> 00:44:28.197
+"and tax and all these things?"
+
+00:44:28.197 --> 00:44:30.344
+And we're like, umm.
+
+00:44:30.344 --> 00:44:31.424
+- [Professor] Really?
+
+00:44:31.424 --> 00:44:32.156
+- Yeah.
+
+00:44:32.156 --> 00:44:33.143
+- [Professor] Wow.
+
+00:44:33.143 --> 00:44:34.199
+Awesome.
+
+00:44:34.199 --> 00:44:34.883
+- (laughs)
+
+00:44:34.883 --> 00:44:36.184
+And so there's all sorts of cleanup
+
+00:44:36.184 --> 00:44:37.682
+that Billy helped us through.
+
+00:44:37.682 --> 00:44:41.744
+- [Professor] It's good to
+have people who clean up.
+
+00:44:41.744 --> 00:44:42.685
+- (laughs)
+
+00:44:42.685 --> 00:44:44.299
+- Okay so I think I know this question.
+
+00:44:44.299 --> 00:44:47.421
+So I think you guys had such a clear
+
+00:44:47.421 --> 00:44:49.442
+product value proposition, I was gonna ask
+
+00:44:49.442 --> 00:44:54.282
+about how you decided
+what things new to do.
+
+00:44:54.282 --> 00:44:54.956
+- Right.
+
+00:44:54.956 --> 00:44:56.453
+- So I think I have a guess
+now, listening to you talk,
+
+00:44:56.453 --> 00:44:57.719
+but can you talk about it for a second?
+
+00:44:57.719 --> 00:44:58.439
+- Yeah.
+
+00:44:58.439 --> 00:44:59.762
+So I think this is a pretty hard question
+
+00:44:59.762 --> 00:45:00.795
+when you're building a consumer product
+
+00:45:00.795 --> 00:45:02.978
+because consumers don't really
+know what they want, right?
+
+00:45:02.978 --> 00:45:05.903
+I mean in that this is sort
+of the challenge for Facebook
+
+00:45:05.903 --> 00:45:07.737
+where it's, you're dealing with all these
+
+00:45:07.737 --> 00:45:10.512
+mercurial teenagers,
+and the greatest minds
+
+00:45:10.512 --> 00:45:12.636
+of our generation are staring intently
+
+00:45:12.636 --> 00:45:13.901
+at all this data trying to figure out
+
+00:45:13.901 --> 00:45:15.120
+what do the millennials want,
+
+00:45:15.120 --> 00:45:18.336
+but that's very difficult.
+
+00:45:18.336 --> 00:45:19.857
+To be clear, to their credit, they've done
+
+00:45:19.857 --> 00:45:21.679
+a fantastic job of keeping abreast of it
+
+00:45:21.679 --> 00:45:23.735
+with all the acquisitions and so forth.
+
+00:45:23.735 --> 00:45:24.396
+But it's hard.
+
+00:45:24.396 --> 00:45:27.658
+You can't just figure
+it out through analysis.
+
+00:45:27.658 --> 00:45:28.540
+- [Professor] Right.
+
+00:45:28.540 --> 00:45:31.199
+- Or these people haven't
+figured out how to yet.
+
+00:45:31.199 --> 00:45:35.471
+Whereas when you're
+building for developers,
+
+00:45:35.471 --> 00:45:37.073
+you can just cheat again,
+
+00:45:37.073 --> 00:45:38.710
+you can just ask them, right?
+
+00:45:38.710 --> 00:45:40.231
+And in fact even if you don't ask them,
+
+00:45:40.231 --> 00:45:42.099
+- [Professor] They'll
+probably tell you anyway.
+
+00:45:42.099 --> 00:45:43.690
+- they're frequently relatively vocal
+
+00:45:43.690 --> 00:45:45.954
+in their preferences and desires.
+
+00:45:45.954 --> 00:45:48.497
+And so I mean,
+
+00:45:48.497 --> 00:45:50.412
+- But that's a little glib right there.
+
+00:45:50.412 --> 00:45:51.190
+- I was gonna say, right?
+
+00:45:51.190 --> 00:45:53.256
+Because you prioritize
+and which ones, right.
+
+00:45:53.256 --> 00:45:56.112
+And so we pay a lot of attention
+
+00:45:56.112 --> 00:46:00.732
+to who we judge to be the
+ones with good judgment.
+
+00:46:00.732 --> 00:46:02.149
+And you also have to fit the whole thing
+
+00:46:02.149 --> 00:46:04.610
+into a long-term perspective
+of how these pieces
+
+00:46:04.610 --> 00:46:06.734
+fit together, and how the
+product ought to evolve
+
+00:46:06.734 --> 00:46:07.768
+and so forth.
+
+00:46:07.768 --> 00:46:12.768
+One of the, I remember
+Mark Zuckerberg commenting
+
+00:46:12.791 --> 00:46:16.959
+at one point, I think this
+is kind of good advice,
+
+00:46:16.959 --> 00:46:20.477
+that this is, in general,
+I think kind of the value
+
+00:46:20.477 --> 00:46:23.343
+over-mythologizes kind of
+the role of the founder
+
+00:46:23.343 --> 00:46:25.364
+and the criticality of
+that person and so forth,
+
+00:46:25.364 --> 00:46:27.662
+but he commented that it's very important
+
+00:46:27.662 --> 00:46:29.439
+for the CEO to be sort
+of integratively involved
+
+00:46:29.439 --> 00:46:32.085
+in a lot of the micro product decisions,
+
+00:46:32.085 --> 00:46:34.721
+because what's optimal to do
+
+00:46:34.721 --> 00:46:37.147
+on a one-year time horizon is often
+
+00:46:37.147 --> 00:46:38.738
+quite divergent from what's optimal to do
+
+00:46:38.738 --> 00:46:40.293
+in a five-year time horizon,
+
+00:46:40.293 --> 00:46:41.732
+and it's just difficult for anyone
+
+00:46:41.732 --> 00:46:43.474
+other than the CEO and
+especially the CEO founder
+
+00:46:43.474 --> 00:46:46.876
+to have this long time horizon
+
+00:46:46.876 --> 00:46:48.190
+kind of in their optimization function.
+
+00:46:48.190 --> 00:46:48.990
+- [Professor] Yep.
+
+00:46:48.990 --> 00:46:52.358
+- And so I think there's a
+fairly important aspect there.
+
+00:46:52.358 --> 00:46:56.212
+But yeah, for us it's I
+would say 70% listening
+
+00:46:56.212 --> 00:46:57.872
+to the people who we think are
+
+00:46:57.872 --> 00:46:58.870
+either have really good judgment
+
+00:46:58.870 --> 00:47:00.972
+or are themselves likely
+to become really big,
+
+00:47:00.972 --> 00:47:03.351
+because kind of just in and of itself.
+
+00:47:03.351 --> 00:47:04.013
+- [Professor] Ip facto.
+
+00:47:04.013 --> 00:47:04.733
+- Exactly.
+
+00:47:04.733 --> 00:47:08.967
+And then maybe the other 30%
+
+00:47:08.967 --> 00:47:11.707
+sort of doing things we
+think ought to be big
+
+00:47:11.707 --> 00:47:13.982
+but for some reason we're
+not being asked for.
+
+00:47:13.982 --> 00:47:16.525
+And a good example of this is we
+
+00:47:16.525 --> 00:47:18.272
+built this integration with Alipay.
+
+00:47:18.272 --> 00:47:19.956
+Alipay is kind of like
+the PayPal of China.
+
+00:47:19.956 --> 00:47:23.798
+So many of these things in
+China have this kind of.
+
+00:47:23.798 --> 00:47:24.437
+- [Professor] They're pretty big.
+
+00:47:24.437 --> 00:47:26.735
+- Exactly, kind of eye-watering scale.
+
+00:47:26.735 --> 00:47:27.780
+- [Professor] Growing pretty fast.
+
+00:47:27.780 --> 00:47:28.511
+It's gonna be bigger tomorrow.
+
+00:47:28.511 --> 00:47:29.718
+- And we'd have all these conversations
+
+00:47:29.718 --> 00:47:30.636
+with businesses where we're like
+
+00:47:30.636 --> 00:47:31.378
+and we have this Alipay integration
+
+00:47:31.378 --> 00:47:34.316
+so sort of everyone in
+China can now buy from you,
+
+00:47:34.316 --> 00:47:36.034
+and the businesses would say,
+
+00:47:36.034 --> 00:47:37.253
+"Well, I don't know if
+that's relevant to us.
+
+00:47:37.253 --> 00:47:39.319
+"We don't actually sell
+that much in China."
+
+00:47:39.319 --> 00:47:40.457
+And we're like, "Let's just think through
+
+00:47:40.457 --> 00:47:42.698
+"the logic of that statement."
+
+00:47:42.698 --> 00:47:43.440
+- Yeah.
+
+00:47:43.440 --> 00:47:45.275
+- And why it might be that people in China
+
+00:47:45.275 --> 00:47:47.573
+aren't buying from you.
+
+00:47:47.573 --> 00:47:50.650
+And then they'd often be
+like, "Ahh, good point."
+
+00:47:50.650 --> 00:47:54.980
+And add Alipay and so
+things could go well.
+
+00:47:54.980 --> 00:47:57.255
+But 70% I would say being led
+
+00:47:57.255 --> 00:48:00.773
+by the smart companies and developers.
+
+00:48:00.773 --> 00:48:01.260
+- Right.
+
+00:48:01.260 --> 00:48:02.654
+And then how do you,
+
+00:48:02.654 --> 00:48:04.337
+well two different questions.
+
+00:48:04.337 --> 00:48:07.820
+So how's Bitcoin related
+to something like that?
+
+00:48:07.820 --> 00:48:09.582
+So Bitcoin looks like developers
+
+00:48:09.582 --> 00:48:10.650
+get very excited about it.
+
+00:48:10.650 --> 00:48:11.847
+Do you guys get excited about it?
+
+00:48:11.847 --> 00:48:13.749
+How do you think about big clientele?
+
+00:48:13.749 --> 00:48:15.805
+All developers say, "Oh
+my gosh, let's do this."
+
+00:48:15.805 --> 00:48:16.583
+- Right.
+
+00:48:16.583 --> 00:48:19.008
+- Doesn't feel like a
+thing that's huge yet.
+
+00:48:19.008 --> 00:48:21.511
+- Yep.
+
+00:48:22.144 --> 00:48:23.351
+Definitely not huge yet.
+
+00:48:23.351 --> 00:48:26.961
+I think that you have to be somewhat okay
+
+00:48:26.961 --> 00:48:30.548
+with making, I guess multiple people have
+
+00:48:30.548 --> 00:48:32.523
+kind of made the statement
+
+00:48:32.523 --> 00:48:36.747
+that you can't judge
+decisions by their outcomes,
+
+00:48:36.747 --> 00:48:40.103
+and at first blush, that sounds
+like a strange statement,
+
+00:48:40.103 --> 00:48:42.285
+but I think kind of what
+it gets at is this idea
+
+00:48:42.285 --> 00:48:44.246
+that you have to judge
+decisions by their EV
+
+00:48:44.246 --> 00:48:45.966
+rather than by the particular outcome
+
+00:48:45.966 --> 00:48:47.288
+that in fact resulted.
+
+00:48:47.288 --> 00:48:48.299
+- [Professor] Right.
+
+00:48:48.299 --> 00:48:49.378
+EV, expected value.
+
+00:48:49.378 --> 00:48:50.540
+- Sorry, yeah.
+
+00:48:50.540 --> 00:48:54.243
+And so even, I mean certainly at the time
+
+00:48:54.243 --> 00:48:55.624
+and even now, it's not completely clear
+
+00:48:55.624 --> 00:48:57.168
+sort of what happens to Bitcoin,
+
+00:48:57.168 --> 00:48:59.791
+but I think that even if the probability
+
+00:48:59.791 --> 00:49:02.031
+is relatively low, sort of
+the potential significance
+
+00:49:02.031 --> 00:49:03.703
+of some success outcome is large enough
+
+00:49:03.703 --> 00:49:07.011
+that it's probably worth
+keeping abreast of it.
+
+00:49:07.011 --> 00:49:10.471
+And also I guess we felt
+some just general affinity
+
+00:49:10.471 --> 00:49:11.169
+to that community.
+
+00:49:11.169 --> 00:49:13.107
+I mean I don't personally nor I guess
+
+00:49:13.107 --> 00:49:16.859
+does Stripe subscribe to these
+sort of crypto anarchists
+
+00:49:16.859 --> 00:49:20.071
+sort of let's liberate
+ourself from the tyranny
+
+00:49:20.071 --> 00:49:22.637
+of our monetary oppressors
+kind of school of Bitcoin.
+
+00:49:22.637 --> 00:49:23.508
+- [Professor] (laughs)
+
+00:49:23.508 --> 00:49:25.737
+It's bigger than it sounds like.
+
+00:49:25.737 --> 00:49:28.338
+It's bigger than you think.
+
+00:49:28.338 --> 00:49:30.195
+- (laughs) I just realized recently
+
+00:49:30.195 --> 00:49:32.030
+that probably that the
+original PayPal client
+
+00:49:32.030 --> 00:49:34.494
+firm Satoshi, it's
+probably the first paper
+
+00:49:34.494 --> 00:49:36.050
+that sort of you know both the paper
+
+00:49:36.050 --> 00:49:37.908
+and political science and then CS.
+
+00:49:37.908 --> 00:49:38.848
+- [Professor] It's a beautiful,
+
+00:49:38.848 --> 00:49:40.113
+everyone should read at least,
+
+00:49:40.113 --> 00:49:41.889
+it's seven pages long, it's beautiful.
+
+00:49:41.889 --> 00:49:43.026
+- Right, right.
+
+00:49:43.026 --> 00:49:45.453
+- [Professor] And like
+slightly insane but beautiful.
+
+00:49:45.453 --> 00:49:47.752
+- Yeah, yeah.
+
+00:49:47.752 --> 00:49:49.087
+- [Professor] Insane in a good way mostly.
+
+00:49:49.087 --> 00:49:50.630
+- Yeah I mean whatever the first block
+
+00:49:50.630 --> 00:49:52.754
+has the New York Times
+
+00:49:52.754 --> 00:49:54.148
+from the financial crisis and so forth.
+
+00:49:54.148 --> 00:49:55.913
+Anyway, it's definitely
+a strong political agenda
+
+00:49:55.913 --> 00:49:59.096
+but I think the kind of the
+distributed systems aspect
+
+00:49:59.096 --> 00:50:02.022
+and honestly the idea of sort of
+
+00:50:02.022 --> 00:50:03.787
+a decentralized infrastructure
+that sort of can be
+
+00:50:03.787 --> 00:50:05.354
+a system and a ledger and so forth
+
+00:50:05.354 --> 00:50:07.012
+very sort of so much of the substraight,
+
+00:50:07.012 --> 00:50:08.231
+I mean, that's kind of a cool idea, right?
+
+00:50:08.231 --> 00:50:09.311
+- [Professor] It's beautiful, yep.
+
+00:50:09.311 --> 00:50:13.897
+- So we wanted to do a
+bit to help move it along.
+
+00:50:13.897 --> 00:50:16.751
+- [Professor] Okay, so who
+runs product at Stripe?
+
+00:50:16.751 --> 00:50:21.751
+- So, well we have a bunch of different
+
+00:50:21.999 --> 00:50:24.298
+product engineering teams,
+
+00:50:24.298 --> 00:50:26.574
+and some of those teams
+have product managers
+
+00:50:26.574 --> 00:50:29.070
+on them, not all of them do.
+
+00:50:29.070 --> 00:50:31.655
+They are, without actually
+counting maybe five or six
+
+00:50:31.655 --> 00:50:34.336
+of those teams, and not all of them
+
+00:50:34.336 --> 00:50:36.240
+are kind of formally
+broken up and so forth.
+
+00:50:36.240 --> 00:50:37.935
+And then there is a
+single engineering manager
+
+00:50:37.935 --> 00:50:41.859
+who manages all of the
+managers on those teams,
+
+00:50:41.859 --> 00:50:43.123
+and then I manage.
+
+00:50:43.123 --> 00:50:44.273
+- [Professor] The product managers
+
+00:50:44.273 --> 00:50:45.457
+reporting to an engineering manager.
+
+00:50:45.457 --> 00:50:46.399
+- So the product managers report
+
+00:50:46.399 --> 00:50:49.393
+to the single manager for
+each of the product teams,
+
+00:50:49.393 --> 00:50:51.157
+and that person manages
+the product manager.
+
+00:50:51.157 --> 00:50:53.456
+- Cross-functional management.
+
+00:50:53.456 --> 00:50:54.675
+It's a management management engineers
+
+00:50:54.675 --> 00:50:55.882
+and product.
+
+00:50:55.882 --> 00:50:57.960
+- Okay so the problem is that
+
+00:50:57.960 --> 00:51:00.897
+I guess there's product managers
+
+00:51:00.897 --> 00:51:02.976
+and this is like product
+in the engineering
+
+00:51:02.976 --> 00:51:04.681
+sense of the product, but
+just the simplification,
+
+00:51:04.681 --> 00:51:07.875
+oversimplification is that
+there are these products
+
+00:51:07.875 --> 00:51:08.955
+with teams associated with them,
+
+00:51:08.955 --> 00:51:10.300
+there's a single manager who manages
+
+00:51:10.300 --> 00:51:13.551
+all of the product, and
+then I manage that manager.
+
+00:51:13.551 --> 00:51:15.199
+And so kind of who runs product at Stripe?
+
+00:51:15.199 --> 00:51:16.953
+I mean it sort of depends on the product,
+
+00:51:16.953 --> 00:51:19.194
+because the team does first and foremost
+
+00:51:19.194 --> 00:51:20.958
+and then I guess also that manager
+
+00:51:20.958 --> 00:51:22.838
+and then ends up with me.
+
+00:51:22.838 --> 00:51:23.942
+- Yeah I guess the reason I asked
+
+00:51:23.942 --> 00:51:25.810
+is because you just noted
+how important it was
+
+00:51:25.810 --> 00:51:27.854
+to have a CEO and founder in the details
+
+00:51:27.854 --> 00:51:28.911
+- Right, yep.
+
+00:51:28.911 --> 00:51:31.012
+- in a lot of things,
+and that tends to create
+
+00:51:31.012 --> 00:51:33.518
+a structural instability for what
+
+00:51:33.518 --> 00:51:35.771
+you usually call VP of product,
+
+00:51:35.771 --> 00:51:37.110
+that's a brutal role,
+
+00:51:37.110 --> 00:51:37.713
+- Right.
+
+00:51:37.713 --> 00:51:39.687
+- because you're either in a company where
+
+00:51:39.687 --> 00:51:42.147
+the CEO founder is micromanaging product
+
+00:51:42.147 --> 00:51:43.471
+or you're in a company where
+
+00:51:43.471 --> 00:51:45.269
+they totally empower you to run product,
+
+00:51:45.269 --> 00:51:45.851
+- Right.
+
+00:51:45.851 --> 00:51:46.768
+- and then you have the message
+
+00:51:46.768 --> 00:51:48.185
+of the CEO doesn't care about the product.
+
+00:51:48.185 --> 00:51:48.706
+- Right.
+
+00:51:48.706 --> 00:51:50.205
+- And so it's a hard place to be.
+
+00:51:50.205 --> 00:51:50.727
+- Yeah.
+
+00:51:50.727 --> 00:51:54.650
+And so I mean the I guess
+part of what you're getting at
+
+00:51:54.650 --> 00:51:57.066
+is a lot of companies sort
+of there's this separation
+
+00:51:57.066 --> 00:52:00.061
+between, say, the engineering kind of org
+
+00:52:00.061 --> 00:52:01.570
+and the product management function.
+
+00:52:01.570 --> 00:52:02.174
+- Right.
+
+00:52:02.174 --> 00:52:04.124
+- And then sort of the VP product,
+
+00:52:04.124 --> 00:52:06.214
+the person overseeing this
+product management function
+
+00:52:06.214 --> 00:52:08.280
+if the CEO is really closely involved,
+
+00:52:08.280 --> 00:52:10.172
+that becomes of a pretty thin
+
+00:52:10.172 --> 00:52:11.717
+or at least difficult role, right?
+
+00:52:11.717 --> 00:52:12.877
+- [Professor] Mostly use spreadsheets.
+
+00:52:12.877 --> 00:52:15.849
+- Well I've never seen
+one, but okay, yeah.
+
+00:52:15.849 --> 00:52:17.417
+Whereas in our case, we don't
+
+00:52:17.417 --> 00:52:18.752
+have a separate product org,
+
+00:52:18.752 --> 00:52:19.458
+- [Professor] Right.
+
+00:52:19.458 --> 00:52:20.678
+- and so I mean this engineering manager,
+
+00:52:20.678 --> 00:52:23.127
+I mean there's a vast amount in that job
+
+00:52:23.127 --> 00:52:25.311
+even sort of leaving particular
+product decisions aside,
+
+00:52:25.311 --> 00:52:26.807
+because it's all the questions around
+
+00:52:26.807 --> 00:52:29.176
+how do we staff them and build them
+
+00:52:29.176 --> 00:52:30.453
+and execute them and operate them
+
+00:52:30.453 --> 00:52:32.172
+and all these kinds of questions,
+
+00:52:32.172 --> 00:52:34.574
+and so she is sort of fairly involved
+
+00:52:34.574 --> 00:52:38.011
+in the actual product decisions, as am I,
+
+00:52:38.011 --> 00:52:39.508
+but I think it avoids the
+kind of VP product issue,
+
+00:52:39.508 --> 00:52:42.676
+because even if there
+was zero product decision
+
+00:52:42.676 --> 00:52:43.688
+in the role, which there isn't,
+
+00:52:43.688 --> 00:52:44.674
+but even if there was zero,
+
+00:52:44.674 --> 00:52:46.869
+there's still a huge amount
+in all the other parts.
+
+00:52:46.869 --> 00:52:48.074
+- [Professor] Making things work, yeah.
+
+00:52:48.074 --> 00:52:48.655
+- Exactly.
+
+00:52:48.655 --> 00:52:49.247
+- Yeah.
+
+00:52:49.247 --> 00:52:49.875
+That's intersting.
+
+00:52:49.875 --> 00:52:51.733
+I wonder if that will, I wonder
+how long that will scale.
+
+00:52:51.733 --> 00:52:54.552
+It's a little bit unusual
+not to have them separate out
+
+00:52:54.552 --> 00:52:56.608
+some eventually, you get
+to some product scale.
+
+00:52:56.608 --> 00:52:58.687
+- Yeah, well, again, I think part of this
+
+00:52:58.687 --> 00:53:00.392
+comes to the fact, the way
+in which Stripe is different.
+
+00:53:00.392 --> 00:53:04.445
+We're building, not
+solely, but in large part
+
+00:53:04.445 --> 00:53:05.385
+for other engineers.
+
+00:53:05.385 --> 00:53:06.105
+- Right.
+
+00:53:06.105 --> 00:53:07.370
+- And so I think engineers
+can have excellent instincts
+
+00:53:07.370 --> 00:53:09.227
+for sort of what the
+right product to build is.
+
+00:53:09.227 --> 00:53:09.888
+- Yeah, yeah.
+
+00:53:09.888 --> 00:53:11.154
+- Whereas when you're trying to kind of
+
+00:53:11.154 --> 00:53:12.952
+empathize or put yourself in the shoes
+
+00:53:12.952 --> 00:53:14.834
+of some completely different kind of user,
+
+00:53:14.834 --> 00:53:16.727
+then perhaps kind of the impetus
+
+00:53:16.727 --> 00:53:18.571
+for a separate product org is greater.
+
+00:53:18.571 --> 00:53:19.583
+- Interesting.
+
+00:53:19.583 --> 00:53:22.183
+So you've done product exemption,
+
+00:53:22.183 --> 00:53:23.204
+and you've done new things,
+
+00:53:23.204 --> 00:53:24.329
+you did Connect, some other things.
+
+00:53:24.329 --> 00:53:28.533
+Have you launched products
+that you've killed?
+
+00:53:28.533 --> 00:53:30.552
+- I guess this is an availability bias
+
+00:53:30.552 --> 00:53:35.017
+in the ones that
+immediately come to mind but
+
+00:53:38.052 --> 00:53:38.829
+I don't,
+
+00:53:38.829 --> 00:53:42.487
+we haven't launched,
+well actually (laughs)
+
+00:53:42.487 --> 00:53:45.866
+part of what I think what's so difficult
+
+00:53:45.866 --> 00:53:50.090
+and feels so tragic when
+you're in the throes of it
+
+00:53:50.090 --> 00:53:51.949
+of sort of a fast-growing startup
+
+00:53:51.949 --> 00:53:55.362
+is that product innovation slows down.
+
+00:53:55.362 --> 00:53:57.427
+And you're like why would that be?
+
+00:53:57.427 --> 00:54:00.226
+I mean you guys launched with ten people,
+
+00:54:00.226 --> 00:54:03.243
+now we're 330 people, how
+could it possibly slow down?
+
+00:54:03.243 --> 00:54:03.940
+- [Professor] Right.
+
+00:54:03.940 --> 00:54:05.334
+- And I remember observing this
+
+00:54:05.334 --> 00:54:06.574
+even before I was kind of in it myself
+
+00:54:06.574 --> 00:54:09.734
+where for Airbnb and DropBox,
+
+00:54:09.734 --> 00:54:10.569
+and these other companies,
+
+00:54:10.569 --> 00:54:13.377
+it felt to me as a user that basically
+
+00:54:13.377 --> 00:54:14.876
+the product innovation slowed down.
+
+00:54:14.876 --> 00:54:15.550
+- [Professor] It stopped.
+
+00:54:15.550 --> 00:54:18.451
+- And I guess what happens is this kind of
+
+00:54:18.451 --> 00:54:20.135
+there's so much investment
+that's required.
+
+00:54:20.135 --> 00:54:21.853
+So one there's sort of investment required
+
+00:54:21.853 --> 00:54:23.292
+just to keep up with the growth, right?
+
+00:54:23.292 --> 00:54:25.974
+And so I mean the ten people who built
+
+00:54:25.974 --> 00:54:27.657
+kind of the original Stripe,
+
+00:54:27.657 --> 00:54:29.758
+they weren't capable of
+operating current Stripe.
+
+00:54:29.758 --> 00:54:31.292
+Operating current Stripe requires
+
+00:54:31.292 --> 00:54:33.369
+sort of all these resources, right?
+
+00:54:33.369 --> 00:54:34.135
+- [Professor] Yep.
+
+00:54:34.135 --> 00:54:35.817
+- But then additionally,
+you have to sort of,
+
+00:54:35.817 --> 00:54:37.396
+I mean because you're
+looking to do more things
+
+00:54:37.396 --> 00:54:39.592
+and both iteration of what already exists
+
+00:54:39.592 --> 00:54:40.995
+and build new things and so forth
+
+00:54:40.995 --> 00:54:43.027
+until you're learning to
+sort of walk and chew gum
+
+00:54:43.027 --> 00:54:44.815
+and juggle and tap dance
+and all these things
+
+00:54:44.815 --> 00:54:46.184
+kind of in parallel.
+
+00:54:46.184 --> 00:54:48.519
+And that requires hiring a lot of people.
+
+00:54:48.519 --> 00:54:51.003
+And then you have to
+train all those people
+
+00:54:51.003 --> 00:54:52.280
+and just kind of how the company works
+
+00:54:52.280 --> 00:54:53.661
+and the product works and all the rest,
+
+00:54:53.661 --> 00:54:55.507
+then they kind of have to all have learned
+
+00:54:55.507 --> 00:54:56.981
+in this emerging process of
+how to coordinate together,
+
+00:54:56.981 --> 00:54:58.363
+then actually relearn that several times
+
+00:54:58.363 --> 00:54:59.628
+because it sort of constantly shifting,
+
+00:54:59.628 --> 00:55:01.358
+there's this sort of dynamic equilibrium
+
+00:55:01.358 --> 00:55:02.078
+beneath them whatever,
+
+00:55:02.078 --> 00:55:04.365
+and so the net effect is that the product
+
+00:55:04.365 --> 00:55:06.942
+actually advances surprisingly slowly.
+
+00:55:06.942 --> 00:55:08.810
+I think the flip side of it is that
+
+00:55:08.810 --> 00:55:11.387
+when you come out of
+this if you do it well,
+
+00:55:11.387 --> 00:55:13.849
+then it's like stand back, right?
+
+00:55:13.849 --> 00:55:15.741
+Where it can be so fast,
+
+00:55:15.741 --> 00:55:17.123
+and I think Facebook is
+actually a good example
+
+00:55:17.123 --> 00:55:19.549
+of a company that sort
+of went through the slow
+
+00:55:19.549 --> 00:55:20.954
+and then really sped up.
+
+00:55:20.954 --> 00:55:21.580
+- [Professor] Yep.
+
+00:55:21.580 --> 00:55:22.358
+- But sort of the
+
+00:55:22.358 --> 00:55:24.239
+- [Professor] The mobile
+years, early mobile years
+
+00:55:24.239 --> 00:55:25.296
+were pretty hard.
+
+00:55:25.296 --> 00:55:27.873
+- Exactly but the rate
+of product improvement
+
+00:55:27.873 --> 00:55:30.613
+actually has been surprising shape.
+
+00:55:30.613 --> 00:55:31.297
+- [Professor] Yep.
+
+00:55:31.297 --> 00:55:33.398
+- And so and also you can measure
+
+00:55:33.398 --> 00:55:34.374
+in different axis in terms of
+
+00:55:34.374 --> 00:55:35.499
+sort of sustaining and improvement
+
+00:55:35.499 --> 00:55:36.591
+versus kind of new axes
+
+00:55:36.591 --> 00:55:39.075
+and orthotic improvement and so forth.
+
+00:55:39.075 --> 00:55:41.351
+And anyway, all of which to say
+
+00:55:41.351 --> 00:55:43.475
+we haven't launched all that many
+
+00:55:43.475 --> 00:55:45.472
+kind of discreetly new things,
+
+00:55:45.472 --> 00:55:47.360
+things you could conceivably
+then kill, I mean
+
+00:55:47.360 --> 00:55:49.701
+we've built little features
+and things like that
+
+00:55:49.701 --> 00:55:51.105
+that haven't worked out super well.
+
+00:55:51.105 --> 00:55:53.775
+We've tried experiments and
+so forth that haven't worked,
+
+00:55:53.775 --> 00:55:56.612
+but nothing kind of epochly kind of new.
+
+00:55:56.612 --> 00:55:58.295
+Although part of that also gets to I thnk
+
+00:55:58.295 --> 00:56:00.059
+how we build products,
+
+00:56:00.059 --> 00:56:02.776
+which is we, we're pretty, I mean, again,
+
+00:56:02.776 --> 00:56:04.657
+because we work with developers,
+
+00:56:04.657 --> 00:56:06.874
+and because they'll give
+you pretty good feedback,
+
+00:56:06.874 --> 00:56:08.603
+we often run ideas by them,
+
+00:56:08.603 --> 00:56:09.637
+we'll build a little beta,
+
+00:56:09.637 --> 00:56:11.053
+we'll test with them and so forth,
+
+00:56:11.053 --> 00:56:12.319
+then if they don't like it
+
+00:56:12.319 --> 00:56:13.212
+or if they don't think it's a good idea,
+
+00:56:13.212 --> 00:56:14.153
+then we'll kind of just
+stop working on it, right?
+
+00:56:14.153 --> 00:56:16.161
+And so by the time
+something gets to launch,
+
+00:56:16.161 --> 00:56:18.854
+it's generally gone through
+quite a bit of validation.
+
+00:56:18.854 --> 00:56:22.175
+The things that have been
+really launched launched,
+
+00:56:22.175 --> 00:56:23.242
+- [Professor] Pretty useful.
+
+00:56:23.242 --> 00:56:24.334
+- Exactly, yeah.
+
+00:56:24.334 --> 00:56:25.739
+- [Professor] Okay, so
+a couple more things.
+
+00:56:25.739 --> 00:56:26.981
+Oh, sure.
+
+00:56:26.981 --> 00:56:28.176
+- [Voiceover] Can you talk about any
+
+00:56:28.176 --> 00:56:30.278
+early acquisition offers you may have had?
+
+00:56:30.278 --> 00:56:31.578
+- Yeah.
+
+00:56:31.578 --> 00:56:34.457
+So we've always been pretty explicit
+
+00:56:34.457 --> 00:56:37.510
+like in the press and
+any meetings we've had
+
+00:56:37.510 --> 00:56:40.029
+and so forth that we're just
+not that interested in it,
+
+00:56:40.029 --> 00:56:44.220
+and so you can't be somewhat successful
+
+00:56:44.220 --> 00:56:47.900
+or well, to have been successful,
+
+00:56:47.900 --> 00:56:49.676
+sort of for any kind of thing,
+
+00:56:49.676 --> 00:56:51.011
+it's kind of hard for that to happen
+
+00:56:51.011 --> 00:56:52.682
+without all these potential acquirers
+
+00:56:52.682 --> 00:56:55.318
+just kind of I think sniffing around
+
+00:56:55.318 --> 00:56:56.619
+is kind of the right term.
+
+00:56:56.619 --> 00:56:57.756
+They don't necessarily
+have that much interest,
+
+00:56:57.756 --> 00:56:59.857
+but they're kind of interested.
+
+00:56:59.857 --> 00:57:02.678
+And also one tends to think of sort of
+
+00:57:02.678 --> 00:57:04.617
+potential acquirers or
+other companies in general
+
+00:57:04.617 --> 00:57:05.999
+as monolithic entities,
+
+00:57:05.999 --> 00:57:08.122
+and now coming back to the BD point,
+
+00:57:08.122 --> 00:57:10.039
+I think one of the critical realizations
+
+00:57:10.039 --> 00:57:11.641
+is that companies are composed
+
+00:57:11.641 --> 00:57:13.951
+of sort of a pretty diverse
+array of individuals,
+
+00:57:13.951 --> 00:57:14.995
+and you're not talking to a company,
+
+00:57:14.995 --> 00:57:16.655
+you're talking to a person.
+
+00:57:16.655 --> 00:57:20.033
+And you need to kind of
+really piece that apart.
+
+00:57:20.033 --> 00:57:22.552
+And so anyway, we never
+had any serious discussions
+
+00:57:22.552 --> 00:57:24.724
+with any acquirer in
+the history of Stripe,
+
+00:57:24.724 --> 00:57:25.815
+and we were sort of pretty quick
+
+00:57:25.815 --> 00:57:27.870
+to close off any kind of
+sniffing conversations,
+
+00:57:27.870 --> 00:57:30.412
+just because it wasn't
+what we were out to do.
+
+00:57:30.412 --> 00:57:31.968
+Actually there was one place where
+
+00:57:31.968 --> 00:57:34.766
+our prior company had
+kind of gone through this
+
+00:57:34.766 --> 00:57:35.869
+sort of talent acquisition,
+
+00:57:35.869 --> 00:57:38.910
+but we'd gone through
+an acquisition process,
+
+00:57:38.910 --> 00:57:40.744
+and I think that was kind of helpful
+
+00:57:40.744 --> 00:57:42.567
+in showing us kind of
+what that looked like,
+
+00:57:42.567 --> 00:57:44.424
+and it enabled us I think to be much
+
+00:57:44.424 --> 00:57:46.189
+I think clearer ourselves in terms
+
+00:57:46.189 --> 00:57:47.071
+of what we wanted.
+
+00:57:47.071 --> 00:57:48.591
+- Like once you've been
+through the acquisition process
+
+00:57:48.591 --> 00:57:51.343
+for a sort of okay company,
+
+00:57:51.343 --> 00:57:53.630
+it really encourages you
+to notice what's special,
+
+00:57:53.630 --> 00:57:56.149
+what's working in the place you're at,
+
+00:57:56.149 --> 00:57:57.763
+because it never quite
+works out the way you want,
+
+00:57:57.763 --> 00:57:59.632
+and it also just highlights like
+
+00:57:59.632 --> 00:58:01.269
+it's unusual for companies to be
+
+00:58:01.269 --> 00:58:02.929
+as special as Stripe or as special
+
+00:58:02.929 --> 00:58:04.984
+as other things, and when
+you find something like that,
+
+00:58:04.984 --> 00:58:05.924
+you really have it working,
+
+00:58:05.924 --> 00:58:07.445
+you really want to hold onto it.
+
+00:58:07.445 --> 00:58:08.943
+May I ask you a technology question?
+
+00:58:08.943 --> 00:58:11.891
+So I would view, I think you look around
+
+00:58:11.891 --> 00:58:13.842
+and say, well Stripe's
+probably the most modern
+
+00:58:13.842 --> 00:58:15.989
+payment stock today.
+
+00:58:15.989 --> 00:58:17.869
+So how do you, but you're also growing
+
+00:58:17.869 --> 00:58:18.880
+your customer base.
+
+00:58:18.880 --> 00:58:20.180
+Your customers don't necessarily want
+
+00:58:20.180 --> 00:58:21.248
+the most modern payment site,
+
+00:58:21.248 --> 00:58:22.421
+they want the one that's stable
+
+00:58:22.421 --> 00:58:23.187
+and the one that works,
+
+00:58:23.187 --> 00:58:24.069
+doesn't change all the time.
+
+00:58:24.069 --> 00:58:25.126
+And so how are you gonna think about
+
+00:58:25.126 --> 00:58:28.446
+technology change going forward?
+
+00:58:28.446 --> 00:58:30.106
+- (laughs) I think that
+is a great question.
+
+00:58:30.106 --> 00:58:34.645
+And it's something we're mindful of
+
+00:58:34.645 --> 00:58:37.640
+from the beginning in developing Stripe
+
+00:58:37.640 --> 00:58:38.940
+that you sort of have to
+build all these things
+
+00:58:38.940 --> 00:58:42.260
+and sort of invest in different ways
+
+00:58:42.260 --> 00:58:45.882
+to enable you to kind of innovate
+
+00:58:45.882 --> 00:58:49.261
+sort of without being problematic
+
+00:58:49.261 --> 00:58:51.281
+on that kind of other reliability axis.
+
+00:58:51.281 --> 00:58:52.058
+- Yep.
+
+00:58:52.058 --> 00:58:52.964
+- And so for example, we have this
+
+00:58:52.964 --> 00:58:54.380
+kind of really complicated
+versioning system
+
+00:58:54.380 --> 00:58:56.086
+for the Stripe API where sort of
+
+00:58:56.086 --> 00:58:57.665
+there are all these different sort of
+
+00:58:57.665 --> 00:58:59.221
+translation layers composed
+
+00:58:59.221 --> 00:59:01.925
+sort of help turn one API version
+
+00:59:01.925 --> 00:59:03.400
+into the prior one.
+
+00:59:03.400 --> 00:59:04.003
+- Wow.
+
+00:59:04.003 --> 00:59:06.186
+- So basically people can
+be on almost any version
+
+00:59:06.186 --> 00:59:09.785
+that we've had over the
+last couple of years,
+
+00:59:09.785 --> 00:59:11.306
+and everything works just fine.
+
+00:59:11.306 --> 00:59:13.163
+We recently went and depricated
+
+00:59:13.163 --> 00:59:15.300
+a Stripe API version from like 2010.
+
+00:59:15.300 --> 00:59:17.958
+That was kind of like a big deal for us,
+
+00:59:17.958 --> 00:59:19.235
+and we looked through and we're like
+
+00:59:19.235 --> 00:59:21.557
+three people still using it,
+
+00:59:21.557 --> 00:59:23.275
+so we're like, "All right, we
+can reach out to these people
+
+00:59:23.275 --> 00:59:25.422
+"and tell them we're no
+longer going to support it,"
+
+00:59:25.422 --> 00:59:27.002
+but sort of as a default matter,
+
+00:59:27.002 --> 00:59:28.627
+but see anything we ever released
+
+00:59:28.627 --> 00:59:30.751
+we're gonna sort of commit
+to keeping it to work,
+
+00:59:30.751 --> 00:59:32.667
+and that kind of required like.
+
+00:59:32.667 --> 00:59:35.069
+- [Professor] That's easy
+to say and fairly hard to do
+
+00:59:35.069 --> 00:59:35.801
+over a long term.
+
+00:59:35.801 --> 00:59:36.881
+- Well, exactly, it's been hard to do that
+
+00:59:36.881 --> 00:59:38.042
+and also enable you to sort of change
+
+00:59:38.042 --> 00:59:38.819
+lots of things, right?
+
+00:59:38.819 --> 00:59:40.409
+And that's kind of where this translation
+
+00:59:40.409 --> 00:59:41.327
+there kind of comes in,
+
+00:59:41.327 --> 00:59:42.221
+and so that's kind of an example
+
+00:59:42.221 --> 00:59:43.509
+of the kind of thing you have to do
+
+00:59:43.509 --> 00:59:44.659
+in order to enable that.
+
+00:59:44.659 --> 00:59:46.679
+But for us, it's a constant process
+
+00:59:46.679 --> 00:59:50.080
+of sort of of revisiting that, right?
+
+00:59:50.080 --> 00:59:53.388
+Because I mean you can
+have these two axes again
+
+00:59:53.388 --> 00:59:58.388
+of reliability and, I
+hate to say innovation,
+
+00:59:58.578 --> 01:00:03.578
+but innovation, and to, you're
+trying to expand them both,
+
+01:00:04.441 --> 01:00:06.263
+because you atually want to
+get more reliable over time,
+
+01:00:06.263 --> 01:00:07.285
+obviously, right?
+
+01:00:07.285 --> 01:00:09.038
+And also kind of the difficulty in being
+
+01:00:09.038 --> 01:00:11.626
+reliable over time just
+because more stuff increases,
+
+01:00:11.626 --> 01:00:13.565
+and you also want to be
+doing more things over time,
+
+01:00:13.565 --> 01:00:16.317
+and so I think I have a pretty good sense
+
+01:00:16.317 --> 01:00:18.963
+for where the right
+tradeoffs kind of being
+
+01:00:18.963 --> 01:00:22.376
+kind of a year ago but sort
+of in the current state today,
+
+01:00:22.376 --> 01:00:24.816
+it's something we're
+literally, and I was having
+
+01:00:24.816 --> 01:00:27.903
+this discussion last night
+with a group of people.
+
+01:00:27.903 --> 01:00:30.422
+And I will say that the general thing,
+
+01:00:30.422 --> 01:00:32.594
+and I think this is a
+testament to the engineers,
+
+01:00:32.594 --> 01:00:34.498
+I think Stripe is just
+one of the most reliable
+
+01:00:34.498 --> 01:00:37.701
+infrastructure providers
+just period, right,
+
+01:00:37.701 --> 01:00:42.701
+in that the total availability record
+
+01:00:43.054 --> 01:00:48.054
+for the APIs as a whole
+has been remarkably solid.
+
+01:00:48.208 --> 01:00:51.284
+And I don't know, I guess,
+I know I can write code
+
+01:00:51.284 --> 01:00:52.828
+and so this is no credit to me.
+
+01:00:52.828 --> 01:00:53.583
+- (laughs)
+
+01:00:53.583 --> 01:00:55.464
+- I don't know, I'm sort of impressed
+
+01:00:55.464 --> 01:00:57.030
+from a slight distance.
+
+01:00:57.030 --> 01:00:58.881
+- Okay so, I'll ask a
+couple management questions,
+
+01:00:58.881 --> 01:01:00.275
+and then we'll open it up.
+
+01:01:00.275 --> 01:01:02.631
+So you said 330 people,
+
+01:01:02.631 --> 01:01:06.727
+so well the dumb bar number's
+well in the rearview mirror,
+
+01:01:06.727 --> 01:01:09.531
+150 people is over a year ago probably.
+
+01:01:09.531 --> 01:01:11.856
+So what do you do differently now,
+
+01:01:11.856 --> 01:01:14.597
+I mean you hired Claire as COO right?
+
+01:01:14.597 --> 01:01:15.166
+- That's right
+
+01:01:15.166 --> 01:01:18.381
+- What else do you do differently now
+
+01:01:18.381 --> 01:01:19.705
+than you would've done a year ago?
+
+01:01:19.705 --> 01:01:21.725
+And how do you think about this stage?
+
+01:01:21.725 --> 01:01:22.305
+- Yep
+
+01:01:22.305 --> 01:01:25.300
+- From a managing the company standpoint?
+
+01:01:25.300 --> 01:01:30.300
+- I think the big change,
+I'm sure other speakers
+
+01:01:32.138 --> 01:01:34.262
+have said this or well actually first
+
+01:01:34.262 --> 01:01:36.886
+I should preface everything I say here by
+
+01:01:36.886 --> 01:01:39.707
+I mean I guess it's, I
+feel like I'm sort of
+
+01:01:39.707 --> 01:01:40.948
+a bad person to be speaking on this stuff,
+
+01:01:40.948 --> 01:01:43.132
+because you have had or will have
+
+01:01:43.132 --> 01:01:44.328
+all these other speakers who
+
+01:01:44.328 --> 01:01:46.347
+have actually solved all these issues,
+
+01:01:46.347 --> 01:01:49.367
+and so you should
+discount everything I say
+
+01:01:49.367 --> 01:01:51.885
+with the fact that this is somebody
+
+01:01:51.885 --> 01:01:53.743
+who's currently trying
+to figure it all out
+
+01:01:53.743 --> 01:01:56.807
+and probably at least 50% optimistically
+
+01:01:56.807 --> 01:01:58.722
+of what I say is mistaken.
+
+01:01:58.722 --> 01:02:01.428
+But (laughs) at least I can.
+
+01:02:01.428 --> 01:02:02.043
+- [Professor] No comment.
+
+01:02:02.043 --> 01:02:05.247
+Pay close attention to
+what Patrick says though.
+
+01:02:05.247 --> 01:02:07.731
+- At least I can give you some bad ideas,
+
+01:02:07.731 --> 01:02:09.542
+you can kind of benchmark others against,
+
+01:02:09.542 --> 01:02:13.570
+but the big change, and the
+most stricking thing for me
+
+01:02:13.570 --> 01:02:17.341
+and maybe this partially
+comes from my personality,
+
+01:02:17.341 --> 01:02:19.222
+where I am kind of introverted,
+
+01:02:19.222 --> 01:02:24.222
+is the need for just formal
+explicit communication
+
+01:02:24.620 --> 01:02:26.280
+broadcast communication.
+
+01:02:26.280 --> 01:02:31.075
+And it feels sort of, I don't know,
+
+01:02:31.075 --> 01:02:33.118
+I mean it's unnatural, right?
+
+01:02:33.118 --> 01:02:34.975
+And nobody wakes up in the morning
+
+01:02:34.975 --> 01:02:36.554
+and sets out
+
+01:02:36.554 --> 01:02:37.981
+- [Professor] Speaks in bullet points.
+
+01:02:37.981 --> 01:02:39.038
+- Yeah, exactly, right?
+
+01:02:39.038 --> 01:02:40.838
+- [Professor] Three
+priorities for this morning.
+
+01:02:40.838 --> 01:02:42.719
+- Thought I'd give an
+update on our Q5 strategy,
+
+01:02:42.719 --> 01:02:46.399
+and so there's sort of a lot of that
+
+01:02:46.399 --> 01:02:48.976
+that just you have to
+learn to be okay with,
+
+01:02:48.976 --> 01:02:50.717
+and I think part of the
+way to rationalize it
+
+01:02:50.717 --> 01:02:53.735
+is that a startup itself is
+not a natural environment.
+
+01:02:53.735 --> 01:02:54.873
+So you're absolutely correct
+
+01:02:54.873 --> 01:02:56.602
+that sort of your natural instincts
+
+01:02:56.602 --> 01:02:59.099
+are going to, I mean, the optimal things
+
+01:02:59.099 --> 01:03:00.817
+for you to do are going
+to differ from what
+
+01:03:00.817 --> 01:03:02.639
+feels natural, because a
+startup itself is not natural
+
+01:03:02.639 --> 01:03:04.938
+the social groups that you're part of,
+
+01:03:04.938 --> 01:03:07.515
+that you participate in,
+they don't generally grow
+
+01:03:07.515 --> 01:03:09.639
+at 50% or 100% per year
+
+01:03:09.639 --> 01:03:12.937
+and kind of a different set of behaviors
+
+01:03:12.937 --> 01:03:14.191
+are required to enable that,
+
+01:03:14.191 --> 01:03:17.813
+and so that's kind of the primary one.
+
+01:03:17.813 --> 01:03:19.774
+And then
+
+01:03:19.774 --> 01:03:20.715
+- Let me have this again.
+
+01:03:20.715 --> 01:03:21.980
+So half the people at Stripe
+
+01:03:21.980 --> 01:03:24.012
+weren't there 12 months ago.
+
+01:03:24.012 --> 01:03:24.755
+Half.
+
+01:03:24.755 --> 01:03:26.090
+- Yeah, no, it blows my mind too.
+
+01:03:26.090 --> 01:03:27.459
+- So half the people, whatever your last
+
+01:03:27.459 --> 01:03:29.630
+annual offsite was or whatever it does
+
+01:03:29.630 --> 01:03:31.894
+didn't hear anything Patrick said
+
+01:03:31.894 --> 01:03:34.216
+in the dec he wrote a year ago.
+
+01:03:34.216 --> 01:03:36.224
+- Right and every discussion we had
+
+01:03:36.224 --> 01:03:40.902
+and debate and tortured sort of
+
+01:03:40.902 --> 01:03:42.063
+questioning and so forth,
+
+01:03:42.063 --> 01:03:43.457
+like they weren't there for that,
+
+01:03:43.457 --> 01:03:45.674
+and we might have spent months on this
+
+01:03:45.674 --> 01:03:47.241
+and sort of a new person comes and like
+
+01:03:47.241 --> 01:03:49.179
+"oh, I don't think we
+should be doing that,
+
+01:03:49.179 --> 01:03:50.421
+"we should be doing this," right?
+
+01:03:50.421 --> 01:03:51.768
+And of course they do have
+
+01:03:51.768 --> 01:03:53.869
+the very best of intent, and in fact
+
+01:03:53.869 --> 01:03:56.086
+a large part of that is what's good
+
+01:03:56.086 --> 01:03:58.200
+about hiring new people
+is they sort of help
+
+01:03:58.200 --> 01:03:59.000
+- [Professor] They reopen some things.
+
+01:03:59.000 --> 01:03:59.847
+- Exactly, they reopen things,
+
+01:03:59.847 --> 01:04:01.160
+they have a better sense
+for how to do things,
+
+01:04:01.160 --> 01:04:03.784
+they bring you perspective,
+sort of all that stuff, right?
+
+01:04:03.784 --> 01:04:05.188
+But they also just don't have the context,
+
+01:04:05.188 --> 01:04:09.541
+and so it's this very dogged
+sort of balancing act.
+
+01:04:09.541 --> 01:04:11.643
+- This is a profound realization
+
+01:04:11.643 --> 01:04:13.627
+that almost every good CEO goes through,
+
+01:04:13.627 --> 01:04:15.787
+which is they realize that their job
+
+01:04:15.787 --> 01:04:17.900
+is to communicate that you're running
+
+01:04:17.900 --> 01:04:20.037
+on a tighter loop inside your head
+
+01:04:20.037 --> 01:04:21.372
+than anywhere else, so
+you're learning all the time,
+
+01:04:21.372 --> 01:04:24.098
+all the time, all the
+time, and the organization
+
+01:04:24.098 --> 01:04:26.596
+one layer, two layers,
+three layers away from you
+
+01:04:26.596 --> 01:04:28.777
+can't absorb that change,
+
+01:04:28.777 --> 01:04:30.137
+and you can't communicate
+all of what you're thinking
+
+01:04:30.137 --> 01:04:32.470
+all the time, and so it's
+all about consistency,
+
+01:04:32.470 --> 01:04:35.732
+alignment, and so almost
+everybody I talk to
+
+01:04:35.732 --> 01:04:38.913
+values alignment the longer it goes.
+
+01:04:38.913 --> 01:04:40.794
+- Sure, yeah, and also again I think
+
+01:04:40.794 --> 01:04:44.469
+there's sort of a delicate
+sort of superposition of things
+
+01:04:44.469 --> 01:04:45.049
+- [Professor] Sure.
+
+01:04:45.049 --> 01:04:46.692
+- required there where on the one end,
+
+01:04:46.692 --> 01:04:47.952
+yes, you want alignment,
+
+01:04:47.952 --> 01:04:49.774
+on the other hand, you have to consider
+
+01:04:49.774 --> 01:04:51.771
+the company as sort of overly rigid
+
+01:04:51.771 --> 01:04:55.010
+or prescriptive or whatever.
+
+01:04:55.010 --> 01:04:56.914
+That's going to be problematic.
+
+01:04:56.914 --> 01:04:58.039
+That's the kind of thing that makes people
+
+01:04:58.039 --> 01:04:58.898
+want to quit companies,
+
+01:04:58.898 --> 01:05:00.918
+because their particular perspective
+
+01:05:00.918 --> 01:05:02.079
+or the thing that they want to do
+
+01:05:02.079 --> 01:05:05.493
+is divergent from this calcified edifice
+
+01:05:05.493 --> 01:05:07.014
+that is the company, right?
+
+01:05:07.014 --> 01:05:08.256
+And so it's sort of how do you have
+
+01:05:08.256 --> 01:05:12.237
+the right amount of
+structure and flexibility
+
+01:05:12.237 --> 01:05:13.022
+and all those things.
+
+01:05:13.022 --> 01:05:14.833
+- Yep, my two cents are you're trying
+
+01:05:14.833 --> 01:05:16.539
+to teach people how to
+think in the right ways,
+
+01:05:16.539 --> 01:05:17.515
+and you're trying to teach people,
+
+01:05:17.515 --> 01:05:19.314
+you're trying to create a condition
+
+01:05:19.314 --> 01:05:20.812
+so that they would make roughly
+
+01:05:20.812 --> 01:05:24.132
+the same decision whether
+you're in the room or not.
+
+01:05:24.132 --> 01:05:24.875
+- Yeah, well.
+
+01:05:24.875 --> 01:05:26.651
+- That's a little, even
+that's a little stringent.
+
+01:05:26.651 --> 01:05:31.651
+- And caveat with I'm
+definitely not the right person
+
+01:05:31.817 --> 01:05:32.839
+or the optimal person to be making
+
+01:05:32.839 --> 01:05:33.500
+all kinds of decisions.
+
+01:05:33.500 --> 01:05:34.824
+In fact I'm the optimal
+person to be making
+
+01:05:34.824 --> 01:05:37.006
+a decreasing fraction of decisions, right?
+
+01:05:37.006 --> 01:05:39.305
+And so it's not precisely to do
+
+01:05:39.305 --> 01:05:40.559
+what I would do were I in a room,
+
+01:05:40.559 --> 01:05:45.559
+but I don't know, some
+version of like, well, yeah.
+
+01:05:46.224 --> 01:05:47.083
+- [Professor] The Stripe.
+
+01:05:47.083 --> 01:05:52.083
+- Yeah, there is sort of in
+the multi-dimensional space
+
+01:05:53.421 --> 01:05:58.421
+of philosophies and kind of perspectives,
+
+01:05:58.645 --> 01:06:01.965
+there's kind of a Stripe blob basically.
+
+01:06:01.965 --> 01:06:02.603
+- [Professor] Right.
+
+01:06:02.603 --> 01:06:04.472
+- And sort of I maybe am closer
+
+01:06:04.472 --> 01:06:05.204
+to its center of mass than others
+
+01:06:05.204 --> 01:06:06.051
+because I've been around longer
+
+01:06:06.051 --> 01:06:07.190
+and have a bit more influence,
+
+01:06:07.190 --> 01:06:08.733
+but it is distinct, and it's shifting,
+
+01:06:08.733 --> 01:06:10.312
+and it ought to shift
+and that sort of thing.
+
+01:06:10.312 --> 01:06:11.787
+- That's not what you expected him to say.
+
+01:06:11.787 --> 01:06:13.470
+Multi-dimensional philosophical space
+
+01:06:13.470 --> 01:06:15.548
+where Stripe blobs.
+
+01:06:15.548 --> 01:06:16.557
+- The Stripe blob, right.
+
+01:06:16.557 --> 01:06:18.555
+I think it really has a ring to it.
+
+01:06:18.555 --> 01:06:19.275
+- [Professor] It's gonna go far.
+
+01:06:19.275 --> 01:06:21.110
+- Well a corolary of that in terms of just
+
+01:06:21.110 --> 01:06:22.665
+the kind of the explicitness required,
+
+01:06:22.665 --> 01:06:24.743
+I think the kind of more general version
+
+01:06:24.743 --> 01:06:27.379
+of it is that just you
+should generally shift
+
+01:06:27.379 --> 01:06:30.339
+from speaking to writing.
+
+01:06:30.339 --> 01:06:32.278
+- Oh, you think that?
+
+01:06:32.278 --> 01:06:34.635
+- Yes.
+
+01:06:34.635 --> 01:06:35.702
+- Why?
+
+01:06:35.702 --> 01:06:37.200
+- Or rather, it's not that
+you should necessarily
+
+01:06:37.200 --> 01:06:41.217
+speak less, you should
+probably still speak, right?
+
+01:06:41.217 --> 01:06:44.537
+But or at least I think so,
+I don't know if anyone else
+
+01:06:44.537 --> 01:06:49.537
+thinks so, but that you
+need to add writing, right?
+
+01:06:50.574 --> 01:06:53.255
+Because speaking can
+kind of only happen once
+
+01:06:53.255 --> 01:06:55.402
+and generally not to everyone
+
+01:06:55.402 --> 01:06:56.703
+or it probably becomes super boring
+
+01:06:56.703 --> 01:06:57.887
+if it's to everyone, right?
+
+01:06:57.887 --> 01:06:59.234
+It's this giant production.
+
+01:06:59.234 --> 01:07:04.234
+Whereas writing persists
+through time, right?
+
+01:07:04.817 --> 01:07:08.649
+And can be revisited and
+can be updated and so forth
+
+01:07:08.649 --> 01:07:11.609
+and also has a helpful, at
+least in the good cases,
+
+01:07:11.609 --> 01:07:13.269
+sort of rigidity and clarity to it.
+
+01:07:13.269 --> 01:07:18.269
+And so one of my favorite
+things I realized
+
+01:07:18.342 --> 01:07:21.744
+or just ones that have
+the biggest impact on me
+
+01:07:21.744 --> 01:07:23.149
+over the last maybe two years
+
+01:07:23.149 --> 01:07:27.165
+was I think this paper from I think it was
+
+01:07:27.165 --> 01:07:29.533
+Bruno Latour, and he was talking about
+
+01:07:29.533 --> 01:07:32.795
+the scientific revolution, right,
+
+01:07:32.795 --> 01:07:35.245
+and the invention of writing,
+
+01:07:35.245 --> 01:07:37.231
+and we've all heard that sort of
+
+01:07:37.231 --> 01:07:39.911
+that writing and the inventing
+of the printing press
+
+01:07:39.911 --> 01:07:41.769
+was sort of critical in enabling it,
+
+01:07:41.769 --> 01:07:46.192
+basically Gutenburg, scientific
+revolution, job done,
+
+01:07:46.192 --> 01:07:48.804
+and his argument that he
+goes that it was actually
+
+01:07:48.804 --> 01:07:51.033
+more complicated or nuanced than that
+
+01:07:51.033 --> 01:07:54.087
+where it's not that sort of
+writing or the printing press
+
+01:07:54.087 --> 01:07:55.511
+sort of per se enabled more distribution
+
+01:07:55.511 --> 01:07:56.989
+which automatically led to more ideas,
+
+01:07:56.989 --> 01:08:00.910
+because people still
+talked a lot previously,
+
+01:08:00.910 --> 01:08:02.105
+and people had a pretty good sense
+
+01:08:02.105 --> 01:08:03.673
+for the total space of ideas,
+
+01:08:03.673 --> 01:08:07.445
+and so simplistically the printing press
+
+01:08:07.445 --> 01:08:08.328
+could come along,
+
+01:08:08.328 --> 01:08:09.930
+it doesn't substantially change things,
+
+01:08:09.930 --> 01:08:12.275
+but the additional property
+of the printing press
+
+01:08:12.275 --> 01:08:13.750
+beyond just kind of dissemination
+
+01:08:13.750 --> 01:08:17.047
+that it added was concreteness
+
+01:08:17.047 --> 01:08:18.730
+and kind of rigidity.
+
+01:08:18.730 --> 01:08:20.575
+And so when you're hearing something
+
+01:08:20.575 --> 01:08:21.888
+from a friend of a friend of a friend
+
+01:08:21.888 --> 01:08:24.988
+recounting something
+that happened a year ago,
+
+01:08:24.988 --> 01:08:27.588
+God knows how much it's
+shifted and changed.
+
+01:08:27.588 --> 01:08:29.469
+And because it's not really rigid,
+
+01:08:29.469 --> 01:08:32.753
+it's this just, again, amorphous blob.
+
+01:08:32.753 --> 01:08:34.715
+It's hard to disagree with it,
+
+01:08:34.715 --> 01:08:36.248
+because who knows exactly what they said,
+
+01:08:36.248 --> 01:08:37.513
+and so it's hard to weed out
+
+01:08:37.513 --> 01:08:40.393
+and reject the bad ideas,
+whereas when it's writing,
+
+01:08:40.393 --> 01:08:43.086
+you can point to paragraph
+three, sentence two,
+
+01:08:43.086 --> 01:08:45.292
+this is wrong, it does
+not match my data, right?
+
+01:08:45.292 --> 01:08:47.625
+It's actually that aspect
+that was so critical.
+
+01:08:47.625 --> 01:08:50.110
+So anyway, going back to
+sort of the writing version,
+
+01:08:50.110 --> 01:08:53.347
+I think that it's just,
+it's much more clear,
+
+01:08:53.347 --> 01:08:56.344
+and it can be wrong, and it can be updated
+
+01:08:56.344 --> 01:08:58.571
+in a way that I think is really helpful.
+
+01:08:58.571 --> 01:09:00.151
+- That is super interesting.
+
+01:09:00.151 --> 01:09:01.904
+I could talk about that a lot.
+
+01:09:01.904 --> 01:09:03.251
+I feel like the way you communicate
+
+01:09:03.251 --> 01:09:06.606
+really shows through in
+your product a lot of times.
+
+01:09:06.606 --> 01:09:08.185
+Like we communicate in Bugs and
+
+01:09:08.185 --> 01:09:10.830
+Bugzilla and Mozilla, and it created very,
+
+01:09:10.830 --> 01:09:14.686
+well anyway, a lot of
+artifacts get created.
+
+01:09:14.686 --> 01:09:16.346
+So let's do questions.
+
+01:09:16.346 --> 01:09:17.843
+You had a question?
+
+01:09:17.843 --> 01:09:19.050
+- [Voiceover] Sort of related
+
+01:09:19.050 --> 01:09:20.409
+but you could also make the argument
+
+01:09:20.409 --> 01:09:23.017
+that interpretation really
+just as open to change.
+
+01:09:23.017 --> 01:09:24.801
+It's not actually permanent.
+
+01:09:24.801 --> 01:09:27.063
+(inaudible)
+
+01:09:27.063 --> 01:09:28.063
+- What?
+
+01:09:28.063 --> 01:09:29.699
+- [Voiceover] The point that writing is
+
+01:09:29.699 --> 01:09:31.301
+really always open to reinterpretation
+
+01:09:31.301 --> 01:09:32.961
+so it's the same as (inaudible)
+
+01:09:32.961 --> 01:09:37.430
+the fact that its (inaudible)
+
+01:09:37.430 --> 01:09:39.694
+is what makes it so misunderstood.
+
+01:09:39.694 --> 01:09:41.503
+- So the question is just that writing is,
+
+01:09:41.503 --> 01:09:46.014
+like Latour, the guy that
+Patrick quoted, would've said
+
+01:09:46.014 --> 01:09:48.176
+that writing is always
+rife for reinterpretation,
+
+01:09:48.176 --> 01:09:49.107
+but I think Patrick's making the point
+
+01:09:49.107 --> 01:09:50.617
+that it's just simply more rigid
+
+01:09:50.617 --> 01:09:51.754
+than just spoken.
+
+01:09:51.754 --> 01:09:53.274
+- Sure, right, right.
+
+01:09:53.274 --> 01:09:54.668
+- It's on a spectrum, right?
+
+01:09:54.668 --> 01:09:55.622
+- Yes.
+
+01:09:57.953 --> 01:09:59.428
+That sounds like it might be.
+
+01:09:59.428 --> 01:10:01.506
+Next version of the class,
+
+01:10:01.506 --> 01:10:05.511
+I guess we can read the
+Latour, deep, deep dive.
+
+01:10:05.511 --> 01:10:06.610
+- Couple philosophical blob questions.
+
+01:10:06.610 --> 01:10:07.226
+Yeah.
+
+01:10:07.226 --> 01:10:08.954
+- Yeah, you mentioned that
+you picked the name Stripe
+
+01:10:08.954 --> 01:10:10.217
+just by random.
+
+01:10:10.217 --> 01:10:11.275
+Can you talk about that?
+
+01:10:11.275 --> 01:10:16.275
+- Yeah, so this is also
+an embarrassing story.
+
+01:10:16.790 --> 01:10:20.736
+It's kind of a helpful
+exercise in humility,
+
+01:10:20.736 --> 01:10:25.736
+because to just remind you of
+
+01:10:26.332 --> 01:10:28.747
+just how mistaken your past self could be
+
+01:10:28.747 --> 01:10:30.349
+or wrong.
+
+01:10:30.349 --> 01:10:33.274
+So anyway /dev/payments,
+
+01:10:33.274 --> 01:10:36.188
+we thought was a super awesome cool name,
+
+01:10:36.188 --> 01:10:38.588
+the world didn't quite agree,
+
+01:10:38.588 --> 01:10:39.865
+and when we went to incorporate
+
+01:10:39.865 --> 01:10:44.102
+with Delaware, we duly filled out
+
+01:10:44.102 --> 01:10:45.634
+/dev/payments on the paperwork.
+
+01:10:45.634 --> 01:10:48.096
+It was rejected because,
+we had actually checked,
+
+01:10:48.096 --> 01:10:49.837
+can you have a slash in
+the name, and you can,
+
+01:10:49.837 --> 01:10:51.555
+but you can't have a leading slash,
+
+01:10:51.555 --> 01:10:55.154
+and so but of course being
+determined entrepreneurs,
+
+01:10:55.154 --> 01:10:57.058
+we overcame that, and we incorporated it
+
+01:10:57.058 --> 01:11:00.506
+as S-L-A-S-H D-E-V S-L-A-S-H.
+
+01:11:00.506 --> 01:11:01.550
+It was really bad.
+
+01:11:01.550 --> 01:11:03.164
+And then we'd get mail where it was like
+
+01:11:03.164 --> 01:11:07.527
+S-L-A-S-H slash character D-E-V, S, yeah.
+
+01:11:07.527 --> 01:11:09.862
+There were many problems with this name.
+
+01:11:09.862 --> 01:11:10.826
+- (laughs)
+
+01:11:10.826 --> 01:11:13.159
+- And then you'd have to go
+
+01:11:13.159 --> 01:11:14.378
+and have a meeting with a bank,
+
+01:11:14.378 --> 01:11:16.796
+and they're like all right,
+and now, the last question,
+
+01:11:16.796 --> 01:11:18.139
+it's kind of like, "Oh,
+what's the company called?"
+
+01:11:18.139 --> 01:11:19.846
+And basically everything fell to pieces.
+
+01:11:19.846 --> 01:11:21.483
+(laughter)
+
+01:11:21.483 --> 01:11:23.863
+So we, you wonder why we
+couldn't work with Wells,
+
+01:11:23.863 --> 01:11:27.484
+but we kind of eventually came to realize
+
+01:11:27.484 --> 01:11:28.820
+that we needed to change the name,
+
+01:11:28.820 --> 01:11:31.862
+and we just couldn't come up
+with a good name, you know?
+
+01:11:31.862 --> 01:11:33.638
+I guess many people
+have been through this.
+
+01:11:33.638 --> 01:11:35.924
+And it basically resorted to us,
+
+01:11:35.924 --> 01:11:37.364
+we have all these books in the office,
+
+01:11:37.364 --> 01:11:41.043
+and just like opening books
+and being like, you know,
+
+01:11:41.043 --> 01:11:42.878
+actually one of them was a
+motorcycle repair manual,
+
+01:11:42.878 --> 01:11:44.260
+because John was riding motorcycles,
+
+01:11:44.260 --> 01:11:45.980
+and so we were like "Carburetor, hmm,
+
+01:11:45.980 --> 01:11:47.628
+"no, probably too hard to spell,"
+
+01:11:47.628 --> 01:11:49.161
+and so you'd flip another few pages,
+
+01:11:49.161 --> 01:11:51.227
+and just like, "Wheel,
+no that's a bit generic."
+
+01:11:51.227 --> 01:11:52.063
+(laughter)
+
+01:11:52.063 --> 01:11:54.942
+And so we literally reduced to picking
+
+01:11:54.942 --> 01:11:56.288
+random words late at night,
+
+01:11:56.288 --> 01:11:58.982
+and then one of the folks at Stripe
+
+01:11:58.982 --> 01:12:00.387
+had the bright of idea of
+
+01:12:00.387 --> 01:12:01.525
+well why don't we just assemble
+
+01:12:01.525 --> 01:12:03.544
+like a big list of words and email
+
+01:12:03.544 --> 01:12:05.622
+all of the owners of the dot com domains,
+
+01:12:05.622 --> 01:12:06.946
+just kind of see if the words
+
+01:12:06.946 --> 01:12:08.420
+are actually available
+to just kind of reduce
+
+01:12:08.420 --> 01:12:10.104
+our search space a little bit,
+
+01:12:10.104 --> 01:12:11.218
+and so we assembled a list
+
+01:12:11.218 --> 01:12:12.681
+of like 100 words that all seemed like
+
+01:12:12.681 --> 01:12:14.225
+generally cromulent words
+
+01:12:14.225 --> 01:12:18.067
+and just emailed all the owners,
+
+01:12:18.067 --> 01:12:19.947
+and only 10% of them responded,
+
+01:12:19.947 --> 01:12:22.826
+and of those 10%, most of them wanted
+
+01:12:22.826 --> 01:12:24.719
+millions of dollars to have a right.
+
+01:12:24.719 --> 01:12:26.646
+And so we assembled a
+partial list that way,
+
+01:12:26.646 --> 01:12:28.457
+and then we also just kind of continued
+
+01:12:28.457 --> 01:12:30.407
+our own creative process
+
+01:12:30.407 --> 01:12:32.219
+which we already established was awesome,
+
+01:12:32.219 --> 01:12:34.226
+and so we came up with memorable names
+
+01:12:34.226 --> 01:12:37.083
+like Pay Demon.
+
+01:12:37.083 --> 01:12:38.058
+(laughter)
+
+01:12:38.058 --> 01:12:38.986
+And so um.
+
+01:12:38.986 --> 01:12:40.020
+- [Professor] With an A, undoubtedly.
+
+01:12:40.020 --> 01:12:41.320
+- We bought both versions, yeah,
+
+01:12:41.320 --> 01:12:42.760
+we still own both versions actually.
+
+01:12:42.760 --> 01:12:44.896
+(laughter)
+
+01:12:44.896 --> 01:12:46.455
+And you can do a who is on paydemon.com?
+
+01:12:46.455 --> 01:12:47.895
+(laughter)
+
+01:12:47.895 --> 01:12:50.612
+And so we thought it
+was like super clever,
+
+01:12:50.612 --> 01:12:52.388
+because we could have this awesome mascot,
+
+01:12:52.388 --> 01:12:55.580
+although maybe BSD confusion issues,
+
+01:12:55.580 --> 01:12:59.585
+and yeah, well, it was great.
+
+01:12:59.585 --> 01:13:01.315
+Oh and we also had, we really liked
+
+01:13:01.315 --> 01:13:03.683
+the idea of building things,
+
+01:13:03.683 --> 01:13:05.703
+and so the act of creation and so forth,
+
+01:13:05.703 --> 01:13:10.703
+and so we were kind of
+enamored with Pay Forge,
+
+01:13:10.867 --> 01:13:13.166
+this kind of blacksmith idea,
+
+01:13:13.166 --> 01:13:14.500
+and then of course a friend pointed out
+
+01:13:14.500 --> 01:13:16.811
+the other connotations.
+
+01:13:16.811 --> 01:13:17.450
+(laughter)
+
+01:13:17.450 --> 01:13:18.610
+Like ah, good point.
+
+01:13:18.610 --> 01:13:21.129
+And so we were really struggling,
+
+01:13:21.129 --> 01:13:25.994
+and so we, anyway, the owner of stripe.com
+
+01:13:25.994 --> 01:13:27.354
+generously responded to us
+
+01:13:27.354 --> 01:13:31.220
+and had an offer that was at least
+
+01:13:31.220 --> 01:13:33.553
+within our plausible budgetary range,
+
+01:13:33.553 --> 01:13:35.295
+but we couldn't decide
+
+01:13:35.295 --> 01:13:37.721
+between Pay Demon and Stripe.
+
+01:13:37.721 --> 01:13:39.126
+(laughter)
+
+01:13:39.126 --> 01:13:42.027
+I swear I'm not making this up.
+
+01:13:42.027 --> 01:13:44.047
+And this is the part where
+kind of the humility comes in,
+
+01:13:44.047 --> 01:13:45.580
+it's like "Jesus Christ!"
+
+01:13:45.580 --> 01:13:48.154
+So we decided that if we could not
+
+01:13:48.154 --> 01:13:52.635
+settle on a name by I think
+it was December 20, 2011,
+
+01:13:52.635 --> 01:13:57.635
+we would just like, was
+it, no 2010, December 2010,
+
+01:13:58.475 --> 01:14:01.390
+we would just default to Stripe.
+
+01:14:01.390 --> 01:14:04.686
+And we couldn't think of
+a more compelling name
+
+01:14:04.686 --> 01:14:08.169
+by December 20, and so Stripe it became.
+
+01:14:08.169 --> 01:14:11.372
+And then we sort of, the
+second part of the story
+
+01:14:11.372 --> 01:14:15.785
+is we, I mean we hadn't
+launched at this time, right?
+
+01:14:15.785 --> 01:14:18.071
+But we had sort of a
+handful of beta users,
+
+01:14:18.071 --> 01:14:20.032
+and we kind of, we were
+going through the name,
+
+01:14:20.032 --> 01:14:21.580
+the rename checklist, right?
+
+01:14:21.580 --> 01:14:22.741
+And so you had to like
+
+01:14:22.741 --> 01:14:24.563
+buy new SSL certs and
+move all the servers,
+
+01:14:24.563 --> 01:14:27.872
+and rejex gsub over the code base
+
+01:14:27.872 --> 01:14:28.974
+and all this stuff, right?
+
+01:14:28.974 --> 01:14:32.155
+Redo the images, like a lot
+of stuff to change a name,
+
+01:14:32.155 --> 01:14:36.919
+and somehow we neglected
+one of like tell the users,
+
+01:14:36.919 --> 01:14:38.904
+and so all these people,
+I mean all these people
+
+01:14:38.904 --> 01:14:40.901
+being like ten of them,
+but all these people
+
+01:14:40.901 --> 01:14:42.804
+went to log in to their
+/dev/payment accounts
+
+01:14:42.804 --> 01:14:44.728
+one morning and were redirected to Stripe,
+
+01:14:44.728 --> 01:14:45.982
+so we got a few emails like,
+
+01:14:45.982 --> 01:14:47.259
+"Am I being phished?" or whatever,
+
+01:14:47.259 --> 01:14:50.265
+but we reassured them, and that was that.
+
+01:14:50.265 --> 01:14:53.261
+And actually the very last kind of detail
+
+01:14:53.261 --> 01:14:54.027
+in that story is I was reading
+
+01:14:54.027 --> 01:14:56.419
+The Little Kingdom by Mike Moore,
+
+01:14:56.419 --> 01:14:57.707
+it's this kind of history of Apple,
+
+01:14:57.707 --> 01:14:58.786
+and apparently Apple went through
+
+01:14:58.786 --> 01:14:59.518
+sort of a similar thing
+
+01:14:59.518 --> 01:15:00.761
+where they couldn't think of a good name,
+
+01:15:00.761 --> 01:15:02.839
+and so they set out
+sort of a same time-out
+
+01:15:02.839 --> 01:15:03.802
+we haven't found a better name
+
+01:15:03.802 --> 01:15:06.704
+by such and such a date, screw it, Apple.
+
+01:15:06.704 --> 01:15:10.222
+And so we subsequently
+learned of some precedent.
+
+01:15:10.222 --> 01:15:12.637
+- One more question.
+
+01:15:12.637 --> 01:15:14.900
+Yep so here.
+
+01:15:14.900 --> 01:15:16.201
+- [Voiceover] Can you
+talk about your transition
+
+01:15:16.201 --> 01:15:18.395
+from a developer, someone who's technical,
+
+01:15:18.395 --> 01:15:21.590
+someone who's worked on
+the product, to a manager?
+
+01:15:21.590 --> 01:15:23.691
+- Yes.
+
+01:15:23.691 --> 01:15:26.826
+So it still pains me
+a little bit honestly,
+
+01:15:26.826 --> 01:15:28.973
+in that I really miss coding,
+
+01:15:28.973 --> 01:15:30.890
+and so I know, I often get this question
+
+01:15:30.890 --> 01:15:32.352
+of do I miss it or not
+
+01:15:32.352 --> 01:15:33.652
+and what does that feel like
+
+01:15:33.652 --> 01:15:35.986
+and just the short
+answer is yes, I miss it.
+
+01:15:43.056 --> 01:15:45.412
+I guess so many things then to say about
+
+01:15:45.412 --> 01:15:48.697
+the ensuing transition
+to both being a leader
+
+01:15:48.697 --> 01:15:50.022
+and a manager and so forth.
+
+01:15:50.022 --> 01:15:52.110
+And some level it reduces to I guess
+
+01:15:52.110 --> 01:15:53.284
+kind of how do you run a company
+
+01:15:53.284 --> 01:15:55.873
+and a lot of things to be said there.
+
+01:15:58.260 --> 01:16:01.742
+I think just one thing I'll sort of flag
+
+01:16:01.742 --> 01:16:06.742
+is that in general, I think sort of
+
+01:16:06.838 --> 01:16:10.923
+the industry, both kind of overbiases
+
+01:16:10.923 --> 01:16:14.558
+towards founders, but also towards CEOs
+
+01:16:14.558 --> 01:16:18.296
+in that I guess we all sort of have this
+
+01:16:18.296 --> 01:16:20.699
+kind of narrative bias or something
+
+01:16:20.699 --> 01:16:25.699
+where we want to associate
+kind of abstract concepts
+
+01:16:26.097 --> 01:16:28.221
+like a company with particular people,
+
+01:16:28.221 --> 01:16:31.438
+and so kind of like I am
+the shelling point of Stripe
+
+01:16:31.438 --> 01:16:33.074
+in being the CEO,
+
+01:16:33.074 --> 01:16:38.074
+but the degree to which
+I am sort of sitting here
+
+01:16:38.136 --> 01:16:39.575
+representing Stripe, I
+am sort of in general
+
+01:16:39.575 --> 01:16:41.688
+in aggregate sort of
+vastly over-represented
+
+01:16:41.688 --> 01:16:44.369
+relative to everyone else.
+
+01:16:44.369 --> 01:16:49.013
+And so I guess to kind
+of follow that thought,
+
+01:16:49.013 --> 01:16:50.825
+I think that sort of it's not so much
+
+01:16:50.825 --> 01:16:52.485
+my transition to management or whatever,
+
+01:16:52.485 --> 01:16:54.423
+it's kind of a lot of people at Stripe
+
+01:16:54.423 --> 01:16:55.968
+sort of collectively transitioning
+
+01:16:55.968 --> 01:16:57.673
+to running an organization
+
+01:16:57.673 --> 01:17:00.657
+in sort of a pretty large skeleton there.
+
+01:17:00.657 --> 01:17:02.503
+Actually one of the sort of
+
+01:17:02.503 --> 01:17:05.184
+the very clarifying realizations for me
+
+01:17:05.184 --> 01:17:07.738
+was Ali Roghani comment that basically
+
+01:17:07.738 --> 01:17:09.886
+the CEO's job can be reduced
+
+01:17:09.886 --> 01:17:13.311
+to just three things or possibly four
+
+01:17:13.311 --> 01:17:14.588
+and that everything that's not
+
+01:17:14.588 --> 01:17:17.409
+one of those three or
+again it's actually four,
+
+01:17:17.409 --> 01:17:21.217
+is out of scope, and that
+the three that he identified
+
+01:17:21.217 --> 01:17:24.119
+were the strategy and kind of ideally
+
+01:17:24.119 --> 01:17:27.380
+if the strategy is right,
+that doesn't require
+
+01:17:27.380 --> 01:17:28.580
+much well-thought time
+
+01:17:28.580 --> 01:17:32.040
+because you just keep
+doing the same thing.
+
+01:17:32.040 --> 01:17:33.978
+And secondly the culture,
+because there's no
+
+01:17:33.978 --> 01:17:36.671
+other person who can do it.
+
+01:17:36.671 --> 01:17:37.977
+Or there's no person who can do it to
+
+01:17:37.977 --> 01:17:40.101
+the same degree, right,
+
+01:17:40.101 --> 01:17:43.793
+who encompasses the same model authority.
+
+01:17:43.793 --> 01:17:47.717
+And then the third one being
+
+01:17:47.717 --> 01:17:51.639
+sort of selecting the senior
+management of the company,
+
+01:17:51.639 --> 01:17:54.055
+because, again, no one else can do that,
+
+01:17:54.055 --> 01:17:56.736
+and those people will ideally be sort of
+
+01:17:56.736 --> 01:17:59.454
+the main experts who
+know far more than you
+
+01:17:59.454 --> 01:18:00.452
+and are much more effective
+
+01:18:00.452 --> 01:18:01.961
+in sort of particular areas,
+
+01:18:01.961 --> 01:18:04.074
+but you have to hire, select them,
+
+01:18:04.074 --> 01:18:06.140
+ensure that they're effective,
+everything else, right?
+
+01:18:06.140 --> 01:18:09.599
+And so in his kind of
+ontology, like that's it.
+
+01:18:09.599 --> 01:18:10.691
+That's the job.
+
+01:18:10.691 --> 01:18:13.594
+- [Professor] That's pretty close.
+
+01:18:13.594 --> 01:18:15.138
+- It's easy if you get it right.
+
+01:18:15.138 --> 01:18:16.577
+It's obviously incredibly hard,
+
+01:18:16.577 --> 01:18:18.539
+I mean how can you fix a broken culture
+
+01:18:18.539 --> 01:18:20.338
+or how does one sort of in the abstract
+
+01:18:20.338 --> 01:18:21.278
+come up with a good strategy,
+
+01:18:21.278 --> 01:18:22.753
+I mean the really hard sort of
+
+01:18:22.753 --> 01:18:24.238
+when they're not working,
+
+01:18:24.238 --> 01:18:27.989
+but when they're working,
+it can go pretty smoothly.
+
+01:18:27.989 --> 01:18:30.576
+And then the fourth one which he described
+
+01:18:30.576 --> 01:18:33.689
+as being optional, is the product, right,
+
+01:18:33.689 --> 01:18:36.208
+basically the CEO can
+be the head of product.
+
+01:18:36.208 --> 01:18:38.193
+And maybe even that varies
+
+01:18:38.193 --> 01:18:39.714
+depending on the company,
+
+01:18:39.714 --> 01:18:41.478
+that the CEO can also be involved
+
+01:18:41.478 --> 01:18:43.951
+with sort of one specific function, right?
+
+01:18:43.951 --> 01:18:46.250
+And maybe it's some company's CEO
+
+01:18:46.250 --> 01:18:47.189
+is also the head of sales.
+
+01:18:47.189 --> 01:18:48.176
+I think that's probably sort of
+
+01:18:48.176 --> 01:18:49.592
+a little bit kind of simplistic
+
+01:18:49.592 --> 01:18:51.195
+and kind of reductionist and so forth,
+
+01:18:51.195 --> 01:18:52.169
+although maybe I'm just trying
+
+01:18:52.169 --> 01:18:54.677
+to make myself feel better or something,
+
+01:18:54.677 --> 01:18:58.613
+but sort of that was one of the most
+
+01:18:58.613 --> 01:18:59.751
+helpfully clarifying things
+
+01:18:59.751 --> 01:19:01.874
+that I kind of heard
+about that transition.
+
+01:19:01.874 --> 01:19:03.629
+- Okay, I think we're done for the day.
+
+01:19:03.629 --> 01:19:04.627
+I mean maybe Patrick can stay
+
+01:19:04.627 --> 01:19:05.296
+for a couple minutes,
+
+01:19:05.296 --> 01:19:07.119
+but we should let him go too.
+
+01:19:07.119 --> 01:19:08.199
+So anyway, thanks for class,
+
+01:19:08.199 --> 01:19:09.534
+and we'll see you all on Thursday.
+
+01:19:09.534 --> 01:19:10.114
+- Okay, thanks for having me.
+
+01:19:10.114 --> 01:19:11.615
+(applause)
+

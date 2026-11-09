@@ -1,0 +1,2229 @@
+0 So I come from Australia. Parents told
+2 me mainly to do law and actuarial. Every
+4 single day I wanted to change
+9 and that was in fact used by you know
+10 NASA Ptor and also like you know Nvidia.
+14 I think if you if you just give me a
+16 resume I think it's a relatively good
+18 signal. It's much higher probability for
+20 me to like reach out to people if they
+21 solve one issue. So sometimes in the
+24 sometimes in some layers there is like
+26 one number. There's just one number
+28 which you must not quantise and if you
+31 quantize it your whole model will break.
+33 Okay, some people don't like us for
+35 this. We will read Python code on the
+37 fly, edit it, save it to a Python file
+41 and then import from that new file. Um
+44 it it's kind of like a compiler. So my
+46 view is over time yes if you scale RL to
+50 large scales you will see interesting
+53 phenomena. My take is if the probability
+55 of a positive reward is more than zero,
+58 you will get a very powerful model.
+60 &gt;&gt; So hello ladies and gentlemen, welcome
+61 back to another episode of Ground Zero
+64 Eye Talks. And yeah, it's episode 5, I
+66 guess. So today I'm speaking with Daniel
+69 Han, founder of Onslaught where they are
+71 making LLMs fine-tuning faster, cheaper,
+74 and more efficient.
+76 We'll go through his early journey from
+78 studying law, actural science to diving
+80 deep into AI, building opensource
+83 projects and eventually starting his own
+85 company and sloth uh which is pretty
+87 much uh renowned in open source
+89 community.
+91 So hi hi Daniel how are you feeling?
+94 &gt;&gt; Hello hello hello thanks a lot for
+95 inviting me. I'm super excited to talk
+97 about UNSLO and and everything that we
+99 do. Um much appreciated.
+102 &gt;&gt; So yeah let me uh talk but about ground
+104 zero. We do a lot of foundational stuff,
+108 culture and postcards as well here. So
+110 recently we did a part with Samparik,
+113 everyone's favorite founding engineer,
+114 Will Brown, token vendor. So yeah, I
+117 guess uh it's a good source for you all
+119 to actually listen from one of the uh
+122 top minds in the field. So yeah, we can
+124 get started about who is actually Daniel
+128 Han. So so let's start with your
+130 education Dan. You actually begin in law
+133 and actual studies, not the usual
+135 starting point for someone who ends up
+138 building some of the fastest ML tooling
+140 around. What drew you to the this field
+143 actually and what was the pivot point
+144 that led you to AI and engineering? Yep.
+149 &gt;&gt; Yeah. So I come from Australia and
+152 you know like in Australia the top you
+154 know professions are like you know
+156 lawarial
+157 medicine you know the old school type
+160 the highest you know most important
+161 professions. So yeah my parents taught
+163 me mainly to do law and actuarial. So um
+166 yeah so that's probably why I did law
+168 and actuarero. I it's fine it was it was
+171 okay. Um I did it for like one yearish.
+173 Um and then you know like every single
+175 day I wanted to change. Um so you know
+178 after convincing my parents after a long
+181 year of convincing you know finally I
+183 transferred into data science. Um so you
+185 you want to start you so the University
+187 of New South Wales in Australia has like
+189 this new degree called data science. So
+191 I did I did that instead. Um so I
+193 transferred over um and then I majored
+195 in like computer science and maths. Um
+198 yeah so that was kind of like my uni
+200 journey. Um yeah it was a bit weird you
+202 know. So I do know some law I do know
+204 some actuarial science. I know some like
+206 economics and stuff like that. So it's
+207 very like you know diverse um subjects
+211 and stuff. Um you know my favorite is
+213 still maths and computer science.
+216 &gt;&gt; Interesting. Um and I guess you spent a
+218 lot of time at uh University of South
+220 Wales not just studying but teaching uh
+222 running the data science societies
+224 shipping projects. So what was the
+225 period for you? How did courses teaching
+228 and community work shape your thinking
+230 around machine learning and performance?
+231 Yeah.
+233 &gt;&gt; Yeah. Um yes I was a teaching assistant
+235 and I was like an assistant lecturer
+237 type in UNSW. Um so I was teaching like
+240 something called marketing analytics
+241 where you can use data science to like
+243 try to like produce good outcomes for
+245 marketing scenarios. Um it was pretty
+247 fun like you know teaching people how to
+248 use Tableau. Um teaching people how to
+250 do data visualization um very basic
+253 machine learning and stuff. Um it was
+254 mainly to try to educate people how to
+257 use data science um more effectively. Um
+260 this was in the olden days right? So
+262 this is like many years ago when linear
+264 regression, logistic regression, this
+265 was still very popular. Um you know
+267 decision trees and stuff like this. Um
+269 but nowadays you know no one more people
+271 just use you know general language
+273 models and stuff like that. Um but this
+274 was yeah much much long time ago. Um
+276 yeah
+277 &gt;&gt; I guess uh it's been pretty long journey
+279 I guess for uh it will be coming to a
+281 decade in in a while when you passed out
+283 uh grad school for sure. Um next up like
+288 I would like to know about uh more about
+291 hyperl and cyblocks. These are projects
+294 that didn't just live on GitHub and
+296 actually they ended up being used in
+297 place like NASA, Pyot, Sci and even
+299 Nvidia. So what was the core problem you
+302 were trying to solve with these
+303 libraries and how did they evolve into
+306 something that large organizations
+308 started adopting? Yeah.
+311 &gt;&gt; Yeah. Um yes, my first open source
+314 package was in fact Sidelocks. Um it it
+318 was not a very good package. It was
+320 generally just a conglomeration of
+322 random functions. Um very bad. It was
+326 not a very good package, but it was my
+327 first ever package that I released to
+329 the open source community. Um you know,
+332 it was it was okay. It was mainly for
+334 data science, for machine learning. It
+336 was like more like a toolkit of like
+338 easy functions. Um I would not suggest
+340 anyone to use it. I don't maintain it
+342 anymore. Um but yes the second package
+344 was in fact hyperarn. So hyperarn made
+346 machine learning faster. Um many
+348 algorithms you know linear regression,
+350 principal component analysis, PCA, SBD,
+354 um randomized linear algebra mainly the
+356 old style type you know machine learning
+358 algorithms. Um but yes that was a the
+360 goal was to make those algorithms
+362 faster. So the mathematical ones much
+364 faster. Um and that was in fact used by
+366 you know NASA, PyTorch, Scypi. um I
+368 contributed some of the uh things into
+370 like uh larger packages um and also like
+373 you know Nvidia you know other
+375 organizations also use it um there was
+377 quite a few research papers also using
+378 some of hyperarn's methods um but this
+381 is kind of like a precursor to unslo um
+384 but yeah hyperarn still works um but I I
+387 don't maintain it anymore um yeah
+390 &gt;&gt; I guess that was pretty much your
+392 foundational work which you started with
+394 and eventually will
+397 tend up to use by some some really good
+399 organizations and also I would like to
+401 know more about your journey with this
+403 performance engineering which you've
+405 started back then and still doing y
+409 um yes hyperarn is still used by large
+411 organizations um some of the
+412 methodologies are more like integrated
+414 in large packages so if you do like
+417 singular value decomposition principal
+418 component analysis um all of the methods
+421 are like you know they're all integrated
+424 inside of like numpy is kind stuff like
+425 that. Um and also like QML um some of
+428 Nvidia's packages as well. Um I think
+430 the primary it I think the primary like
+435 objective of these packages is just to
+437 increase performance. Um but also to
+439 reduce memory usage um you know like
+440 there's many ways you can reduce memory
+442 usage and also increase performance. So
+444 the goal was to like think about okay
+446 how do we do both at the same time? Um
+448 and also how do we not reduce accuracy
+451 right? So that's actually one of the
+452 biggest issues is like okay you can make
+454 stuff faster but you need to retain
+456 accuracy. Um so that's kind of like the
+458 three thinking ways for performance
+459 engineer.
+462 Very interesting and probably like at
+465 some point it seems like speeding up ML
+468 workloads became your thing. So was
+470 there was there a moment where you
+472 realized that this was a problem you
+474 deeply wanted to solve a metric a
+476 bottleneck maybe a frustrating
+479 experience as well that crystallize your
+480 focus to pivot in the area.
+484 Um yes it was mainly like a problem. It
+488 was a personal problem. Um you know like
+490 we don't really have very good
+491 computers. Um the GPUs are quite bad. Um
+494 some of our computers don't even have
+496 GPUs. Um so it was relatively it was
+499 forced. It was kind of like forced
+501 optimization you know like we had to
+503 make it faster. We had to reduce memory
+505 usage. Um it was mainly for our own use
+507 cases. So it was a necessity for us to
+510 make it faster. And so it kind of like
+512 it was not really a problem that we're
+514 trying to solve for someone else. It was
+515 more a problem we're trying to solve for
+516 ourselves. And then we noticed, oh,
+518 okay, you know, other people have the
+520 same issue. Um, and so like that's kind
+522 of like why these packages exist. Um, it
+524 wasn't it wasn't for like we're trying
+525 to solve other people's problems. It was
+527 just a self problem. Um
+530 &gt;&gt; so you uh didn't have expected like it
+532 will turn out to something like that but
+534 it's it's like it's your problem and you
+536 tried to iterate a lot solving that and
+539 eventually turned out to be a big
+540 problem and actually a big big problem
+543 to be solved for a good use case. Pretty
+546 interesting.
+547 Um
+548 &gt;&gt; yeah yeah I didn't expect it like I I
+550 think like yeah I didn't expect other
+553 people have the same issue. It was
+554 mainly like okay you don't you might
+556 have bad resources but also if you do
+558 have resources like you know if you do
+560 have good GPUs it will still be
+563 beneficial for you. Um so like yeah it
+565 was kind of like a two-sided thing. Um
+567 yeah
+568 interesting and also like I got this
+570 question since you were a bug bounty guy
+572 in LMS what was the most most
+574 interesting one you found and how did
+576 that experience shape your intuition um
+579 as a founder?
+581 Yeah. Um so we do find bugs in open
+584 source language models. Um so for
+585 example there are a few bugs in Jama
+590 um you know even deepseek um kini we we
+593 essentially try to contribute fixes to
+595 the open source community. Um for
+596 example like just a few days few days
+598 ago um you know we helped fix a system
+601 chat prompt issue with Kimi chat you
+603 know the one trillion parameter model.
+604 Um for llama we fixed a few chat
+606 template bugs. Um for jammer we fixed
+608 like implementation details. Um
+610 generally it's relatively it's not
+613 actually that complicated to find these
+614 bugs. Um I think it's more like you need
+616 to understand how a transformer works.
+618 Um you know you have to sit there and
+620 sift through the entire implementation
+622 and find oh okay this is a bug this is
+625 the issue. Um and also like verifying
+627 the bugs actual bugs that is actually a
+630 longer process. So you do need to
+632 communicate with the large model lab
+633 teams like oh okay is this a bug? Um you
+637 know it might not be a bug. Um so like
+640 it takes time and energy to like find
+642 these issues over time. Um but it is
+644 very interesting like you know we try
+646 our best we will communicate as many
+648 issues as possible to the open source
+650 community. Um yeah
+653 &gt;&gt; really interesting and I guess this has
+656 led to some of the interesting problems.
+658 I guess um recent hiring stolo has been
+660 like try this problem you will get this
+662 bounty of $100 and stuff. I guess this
+665 the early journey has pretty much
+666 inspired a lot bringing this noity in
+668 the stuff. Yeah.
+670 &gt;&gt; Yeah. I I think like we yes we did make
+672 a challenge for people to you know
+674 essentially if you have bugs if you find
+676 bugs in open package we will like reward
+678 you for that. Um we do allow like we
+681 provided like a challenge where we like
+683 wrote okay these are some bugs you could
+685 solve. Um and then if you solve them
+687 there is a bounty for it. Um yes we do
+690 value people solving issues and bugs. um
+692 we find that to be the best the best
+694 learning method you know like you don't
+696 you don't you don't need to learn what
+698 AI is or like you know how to code up a
+700 transformer but if you can find bugs
+703 it's like the same teaching methodology
+705 um so we find that to be very effective
+708 &gt;&gt; is this your normal hiring process in
+711 sloth as well like finding bugs and
+713 &gt;&gt; yes it is
+715 &gt;&gt; okay
+715 &gt;&gt; so if you find bugs the more bugs you
+717 find in unsloth higher the chance you I
+720 will reach out to Um yes, correct. Um I
+723 think if you if you just give me a
+726 resume or like you know some sort of a
+727 GitHub package, I don't think it's a
+729 relatively good signal, you know,
+730 whether you can like fix issues in like
+732 language models, it's more
+735 it's much higher probability for me to
+737 like reach out to people if they solve
+738 one issue. Um if you solve two, oh okay,
+742 then you know what you're doing like you
+743 know then you know that that's a very
+745 high probability um of getting accepted.
+748 Um but yes, correct. If you solve bugs,
+750 you will get I will reach out to you.
+752 Yes,
+753 &gt;&gt; pretty interesting. Um I guess this will
+757 give pretty much idea to the people if
+759 you they're working to work on the very
+760 low levels nonslot theme. You need to
+763 find bugs and reach out to Daniel.
+766 Interesting. Um so next is like all the
+770 top labs seem to be like this this
+772 question pretty much stuck to me for a
+774 long time. So all the tap top laps seem
+777 to be converging on the same kind of
+778 thinking model like chain of thought
+781 reasoning focus tool using agents. Is
+784 that because people explored widely and
+786 this was the only thing that actually
+788 worked or is it more of a coordination
+790 trap where everyone just iterating on
+792 each other's paper while ignoring other
+794 viable metrices but beered directions as
+797 well. Yeah,
+800 &gt;&gt; that's a good question. Um
+803 I think
+805 yes and no. I think yes labs do try to
+808 like leverage method methodologies from
+811 each other. So like you know for example
+813 01 01 kind of did show oh okay you know
+816 it was a kind of the first reasoning
+817 type model that was like shown to the
+819 public. Um and then it took like a very
+821 long time for the open source community
+823 to replicate it right that's what was
+825 like deepse R1. Um but it took a very
+828 long time delay and you know currently
+830 now you know there are like models which
+832 do tool calling you know web search you
+834 know we have the reasoning type models
+836 um and there most large model labs will
+839 try to converge into this one system
+841 right there's like canvas type there's
+843 like a canvas there's like web search
+844 there's deep research there's tools you
+847 can search the web you know the model
+848 can do a lot of things um yes my view is
+851 probably similar I think like most large
+853 model try to converge into this one one
+855 specific type like you know everyone's
+857 trying to build like a deep research
+859 everyone's trying to have like agents
+860 everyone's trying to do like you know
+862 reasoning and everyone's trying to do
+864 the same thing um I think maybe this is
+866 just a temporary thing um mainly because
+869 everyone's trying to compete with each
+870 other um but I think once the
+872 competition like you know somewhat like
+875 you know decreases a little bit like in
+878 terms of like oh okay everyone's
+879 capability looks very similar then maybe
+882 companies will try to like venture out
+883 oh okay you know we will focus on
+885 something else and stuff like that. Um I
+887 I do agree like temporarily I think
+888 maybe that for the next maybe one year
+891 everyone will just compete with each
+892 other and all the models will look
+893 similar. Um yeah that's kind of yeah
+898 interesting. Um so like do you see like
+901 what more could be the areas where these
+904 big frontier labs should explore um not
+908 usually the current standard but
+909 something that could be phenomenally
+911 light ahead of time. Yeah,
+914 I think with the so with reinforcement
+916 learning for example um there is like a
+918 approximate it's not a theorem it's like
+920 an approximate it's not a I don't know
+923 how to say it but it's like a conjecture
+924 okay this is my conjecture um
+926 essentially if a if the language model
+929 can answer with some probability right
+931 like not not zero probability like some
+934 probability like more than zero right
+936 and it can get an answer right with more
+938 than zero probability in the limit if
+941 you execute the you know reinforcement
+944 learning algorithm to infinity it will
+946 obviously solve the reward function
+948 right so like I I think that's kind of
+950 where large model language uh large labs
+952 are trying to head for they're
+953 essentially trying to scale RL to like
+955 maximum you know to the maximum limit as
+957 much as possible and think that's their
+960 goal right they the goal of large model
+962 labs is to just to scale RL um to you
+965 know infinite scale okay obviously not
+967 there's no such thing as infinity but
+968 like you know as much as possible and
+970 that is how they're trying to get an
+971 AGI. Um that's from what I understand.
+973 Um so large model labs are just trying
+975 to scale RL to like massive scales. Um
+977 and that that's kind of like where the
+979 majority of like you know most people
+980 are trying to go for. Um in terms of
+982 other ideas, you know, it's still an
+985 active error research. Um my my view is
+988 reinforcement learning does seem to work
+989 very well. Um if you give it like in
+991 multiple robot functions, multiple
+993 environments um and you know you scale
+995 that up, it does seem to work. Um but
+998 we're we're not sure you know how far
+1000 this will go. So that's where all the
+1001 large model labs are trying to go for
+1002 you know it's more it's more like an
+1004 experimentation phase. Um yeah
+1007 &gt;&gt; that that makes sense actually. Um the
+1010 next is about uh before rewriting
+1013 kernels and triton what mental model do
+1016 you use to decide if it's worth the
+1019 effort? Do do different architectures
+1022 meaningfully changed how how memory and
+1024 speed trade-offs play out or is that
+1027 mostly a myth? Yeah,
+1029 &gt;&gt; that's a good question. Um,
+1032 I think there are like two different
+1034 factors. Obviously, the first one is you
+1035 should not optimize just like you know
+1037 every single line. Um, you know that's
+1039 that's probably not a good idea. You
+1041 should use some sort of like
+1042 benchmarking tool to see oh okay you
+1044 know this function seems to be very
+1047 important to optimize so you should
+1048 optimize it. um you know for like small
+1050 little things maybe just ignore it
+1051 you're going to get like a 5% boost it's
+1053 not that important um but I think like
+1056 currently if I had to tell people to
+1057 like optimize stuff you should use torch
+1059 compile first you know see how far you
+1061 can go with torch compile you know
+1063 there's like 100 different turning knobs
+1065 of torch compile so you know please you
+1067 know I I always tell people don't do
+1069 triton first use torch compile first
+1071 right use torch compile see exactly
+1073 where it goes um and then okay write
+1075 your own triton curse write your own you
+1078 know optimized kernels and stuff like
+1079 that. Um, but also sometimes it's not
+1081 the kernels that are the most important
+1083 factor, right? It's actually the
+1084 mathematical algorithms that you have to
+1087 like design and rethink um in order to
+1089 make something more efficient. Um, for
+1091 example, flash attention, right? Flash
+1093 attention wasn't really a it wasn't the
+1095 kernels that was important. It was the
+1097 rethinking of how to do batched tension,
+1100 you know, like small little, you know,
+1102 batches um and not call attention
+1104 mechanism in one go. um that actually
+1106 you know made it faster and also like
+1108 reduce memory usage. Um so it's not I
+1110 wouldn't say you should write tron
+1112 kernels I would say you know you have to
+1114 rethink about the entire archite
+1116 architecture like how do we paralyze
+1118 this function you know how do we like
+1120 how do we make the function more
+1122 effective um you know without reducing
+1124 accuracy so generally I will tell people
+1126 not to do triton um yeah it's kind of
+1129 like opposite to what we do but like
+1131 please use torch compile first that's my
+1133 main um suggestion to people
+1136 &gt;&gt; so you're more interesting on the doing
+1138 more experiments changing parameters and
+1140 get to a point where it actually start
+1142 working in the the optimal direction as
+1145 we want.
+1147 Yes. So for example like torch compile
+1148 has many many different knobs. Um you
+1151 know there's something called coordinate
+1152 descent tuning. You know people want to
+1154 turn that off. There's something called
+1156 multi- kernel. Do you want to turn that
+1157 on? Um there's group fusion. There is
+1160 you know epilog fusion. I don't there's
+1162 like tons of options. Um just selecting
+1164 those options will take a lot of your
+1166 time you know verifying if the output's
+1167 correct you know if the compiler
+1169 actually works and stuff like that. Um
+1171 also you know like I'm not trying to say
+1173 just do torch compile that's just one
+1175 that's just one method in the toolkit.
+1177 If you do want to write tron kernels yes
+1179 please do you know like if you know how
+1181 to write a triton kernel for some
+1182 specific algorithm do that um but I
+1185 don't suggest it you know like I my idea
+1187 is to compile can get site far um and
+1190 then utilize kernels as like the last
+1193 mile um yeah and also obviously
+1195 mathematical algorithms that is the
+1196 hardest you know redesigning
+1200 making the algorithm itself more
+1202 efficient without doing kernels but also
+1205 like actually rethinking the algorithm
+1207 That is probably the most hardest part
+1209 of the you know machine learning job
+1211 like you know that's very complicated.
+1213 Um yeah that will take much more effort.
+1216 Um yeah
+1218 what's your view on um recent
+1220 advancement in one but models and the
+1223 future. Uh also you rewrote several
+1225 attention and rope kernels in return. Um
+1228 how did you decide whether to spend two
+1231 weeks fusing a kernel versus accepting
+1233 pytor stock ops and moving on? Yeah,
+1237 &gt;&gt; that's a good question. Um so generally
+1242 if it takes two generally we can like
+1245 generally when you like start working on
+1246 a kernel you can estimate in the first
+1248 few days when you start writing the
+1250 kernel you can estimate oh okay how long
+1252 does you know how long will this take
+1254 you kind of estimate it um and if if I
+1256 do estimate this will take quite a long
+1258 time I'll probably just ignore it um I
+1261 will have to like think about okay how
+1262 many how much performance benefit are we
+1264 going to get you know how much memory
+1266 reduction are we going to
+1268 If it takes too long and the results are
+1271 not that good, I'll probably just ignore
+1272 it. I will like maybe work on it later.
+1275 Um yeah, so it's not that important to
+1277 do. Um for one bit models, um I think
+1283 yes, we released DeepSync R1, you know,
+1285 dynamic 1.58 bit quants. Um they were
+1288 very popular in terms of running, so you
+1289 can run them on your local device. Um we
+1292 essentially quantize layers, you know,
+1295 dynamically. Some layers are one bit,
+1297 some layers are two bit, some layers are
+1298 three bit. Um, and we show that if you
+1301 can quantize and select layers
+1302 correctly, you can increase accuracy
+1304 without um without like, you know,
+1307 making the model variable. Um, so that
+1309 you still uploading dynamic 1.58 bit
+1311 quants. For example, Ki K2, the largest
+1314 one trillion parameter model. Um, we did
+1316 upload one, you know, 1.8 bits. Um,
+1319 yeah. So, like we do upload these to our
+1321 huggy case page and we try our best to
+1323 like upload as many as possible. Um so
+1325 it's not just one bit pawns but like you
+1326 know two bit three bit four bit the all
+1328 dynamic type pawns.
+1332 &gt;&gt; Um interesting also uh which hard con uh
+1336 constraints like hardware budget or any
+1338 other limitations has improved your
+1340 ability to come up with no type of
+1343 solving problems and how did you do it
+1345 more interested in the ability of to
+1347 manage constraints or it more converges
+1350 to the performance engineering itself.
+1352 Yeah.
+1354 Um I think
+1357 okay specifically on the algorithm side
+1359 like for example for the algorithm side
+1361 um when you have like when you look for
+1362 the transformer right for example when
+1364 you look for the transformer there are
+1366 different modules like for example
+1368 there's a rope kernel you know the
+1369 rotary embeddings part there's the QV
+1372 multiplication part and then there's the
+1373 attention and then there's you know the
+1375 LP part each of these can be modularized
+1378 and your goal is to optimize each of
+1380 these modules separately um try not to
+1383 like you try not to like optimize them
+1385 in tandem. You know, once you like
+1386 optimize each of these segments
+1388 separately, then you can like combine
+1390 them into one system. Um that's how you
+1392 go about the algorithm side for the
+1394 hardware side, it gets more complicated.
+1396 Um for example, blackwell GPUs is very
+1398 different from you know the hopper type
+1400 GPUs. They're very different and the
+1401 hopper GPUs are very different from AMIA
+1404 GPUs. So every single time there's like
+1405 a new architecture for like GPUs for
+1408 example, you do have to rethink about
+1409 how to optimize them. Um but generally
+1412 what I generally like to tell people is
+1414 maybe you know for the GPU type
+1416 optimizations I would rely on Nvidia to
+1418 write you know the kernels um you know
+1421 just call Kublas you know for matrix
+1424 multiplication just call Kublas and then
+1426 try to use as many matrix
+1428 multiplications as possible um and try
+1431 to convert all the algorithms into matri
+1434 matrix multiplications um the more you
+1437 convert the more efficient it will be um
+1439 that's kind that's kind of what I tell
+1441 people um yeah
+1443 &gt;&gt; um on the same line most of these LLM
+1446 code bases are massive and abstracted
+1448 how do you actually go about debugging
+1450 granary logic like what's happening deep
+1453 in the training loop what's your stack
+1455 and mental process for that
+1458 &gt;&gt; um so generally we it's very manual
+1460 labor so like you do have to like inject
+1463 you have to inject print statements you
+1465 have to inject you know torch all closes
+1468 you have to inject you If there was a
+1470 CUDA memory error like out of bounds
+1472 error then you have to like oh okay
+1474 where is it I don't know. Um so there is
+1476 a lot of you know labor and editing of
+1480 the codebase in order to like find a
+1483 bug. Um but once you like I would say
+1487 you have to be patient you have you have
+1489 to be patient to find issues in the
+1491 training codebase. Um it's relatively
+1493 most training code bases are fine. So
+1496 they're relatively fine, but sometimes
+1498 you you will be able to find one bug. Um
+1501 and so like it it will just take
+1502 patience. Um a very good example is a
+1504 gradient gradient accumulation. So for
+1506 example, we fixed a bug in gradient
+1508 accumulation. Um it was it was very hard
+1512 to find. Um you know like instead of
+1514 like when you do gradient accumulation,
+1516 you have to sum all the num you know you
+1519 have to sum the labels and then divide
+1520 at the very end. You can't just do it in
+1522 intermediate steps. um otherwise your
+1524 loss will be different. It was ra it was
+1527 very very hard to find um because like
+1529 people kind of just forgot about it. Um
+1531 and so like I I would say it's it's more
+1533 about patience and
+1536 yeah it's just patience. Yeah, that's
+1538 probably the correct word. Just be
+1540 patient and you will find a bug in the
+1542 end. Um yeah
+1543 &gt;&gt; I'm also curious about uh so while
+1546 finding a bug if you have tried or
+1548 tested any language model if it is able
+1550 to find something for you or how much
+1552 you are using AI models to to come to a
+1555 process that yeah it is actually helping
+1557 me to find a bug or something very
+1559 interesting out of it. Actually,
+1561 that's a good point. Like, yes, language
+1563 models are pretty useful. Um, for
+1564 example, Gemini 2.5 Pro, 03, all of the
+1568 reasoning time models. Um, if you shove
+1570 in the entire implementation, um, and
+1572 ask it like, you know, can you find a
+1574 bug, sometimes it will come up with bad,
+1577 you know, like it will say something
+1579 wrong, like it will think this is a bug.
+1581 Um, try, you know, sometimes it actually
+1583 does find a bug. Um, it's it's
+1585 relatively rare, though. I think like I
+1588 think maybe over time they will get
+1590 better. Um I think the best way for
+1592 language models to find bugs is to
+1594 actually do testing and finding bugs at
+1596 the same time. Um for example like you
+1598 know you find you strip out a specific
+1601 area and test it. Um so like I I think
+1604 like generally if you add testing if you
+1606 do if you do Python code execution in at
+1610 the same time it will probably work. Um
+1612 for example like I was using like 03 for
+1614 example. Um 03 has like Python code
+1616 execution during the reasoning process.
+1619 Um that's that's pretty good. Um so I
+1621 think like if this can be expanded more
+1624 then it can find bugs and language
+1626 models. Um but currently they're they're
+1627 a bit they're not very good. Um yeah.
+1632 &gt;&gt; What's your most go-to model these days
+1633 for anything like at least for finding
+1636 bugs or training stuff? Yeah,
+1639 &gt;&gt; definitely Gemini 2.5 Pro um 03.
+1643 Yeah, those two are probably my go-to
+1645 ones. If Gemini 2.5 Pro can't find it,
+1647 I'll use I would use 03. If 03 can't
+1650 find it, I'll use Gemini 2.5 Pro. Um,
+1652 yeah, those two are my favorites. Um,
+1654 yeah, interesting.
+1658 Um, I got this question from token
+1660 vendor on Twitter. Your blog on dynamic
+1662 quantization claims that um, just by
+1665 using 10% of VRAM, you are getting FP16
+1668 um, accuracy. How does something still
+1670 remains to so accurate? What what is the
+1673 intuition behind being able to compress
+1674 the information to four bits and still
+1676 not losing anything? Yeah.
+1679 &gt;&gt; Yes. So the trick of dynamic
+1680 quantization is you should not quantize
+1683 every single layer to four bits. Um
+1686 because this will reduce your accuracy
+1688 quite a lot. Um however what we show is
+1692 you can select one or two layers to
+1695 upcast to float 60 and this will just
+1698 use 10% extra VRAM. Um and this will not
+1702 this will actually increase the accuracy
+1704 dramatically. Um so we show in a blog
+1706 post like why why this happens. Um so
+1709 sometimes in the sometimes in some
+1711 layers there is like one number there's
+1713 just one number which you must not
+1716 quantize and if you quantize it to four
+1718 bits it will reduce accuracy
+1720 dramatically. Um and these specific
+1722 numbers are called superw wheats. Um so
+1724 there is a paper about it. Um and so
+1726 like for example if you quantize one
+1728 specific small little number out of the
+1730 you know the seven billion parameters or
+1732 the 1.4 trillion parameters your whole
+1734 model will break. Um you know it's not
+1737 we're not sure why just this one number
+1740 um you know you cannot quantise but it
+1742 seems like language models do have this
+1744 one number inside the you know whole
+1746 language model that's very very
+1747 important. Um and so you know the
+1749 question is how do we find this one
+1750 number? And so that's kind of where
+1752 where our dynamic quantization
+1753 methodology comes from. you know like we
+1755 will try to find this one number in the
+1757 model to not quantize um and then we
+1760 will like leave the entire layer in
+1761 float 16. Um but yeah we show that like
+1764 essentially all our uploads you know for
+1766 deepseek R1 for you know other like you
+1768 know llama vision uh jamama and stuff
+1770 like that all of these use our dynamic
+1772 methodology um and you know we verify
+1774 like oh okay this does seem to work um
+1776 yeah
+1778 &gt;&gt; I guess this one number point you're
+1781 also talking about in AMD session as
+1783 well there's a recent paper where
+1785 they're talking about that one parameter
+1787 metric out of billions of parameters
+1788 that is uh enough to like calibrate the
+1791 stuff
+1793 Correct. Yes. Correct. Exactly. Um so
+1794 there is like one sometimes it's not
+1797 just one sometimes there's like two or
+1798 three numbers but in the whole model
+1801 there is like a few numbers which you
+1803 need to identify not to quantize and by
+1806 not quantizing them you will increase
+1808 accuracy. Um if you do quantize them
+1811 then you know your model will decrease
+1812 accuracy from like 80% to like 10%. Um
+1815 so like you know you have to find these
+1817 like small little numbers. Um yeah
+1820 &gt;&gt; interesting. Um so in the next session
+1822 of the pod we are moving more towards RL
+1825 and reasoning kind of questions. So the
+1828 first one is about if a model could re
+1831 uh retroactively undo gradients what
+1834 property of the reward signal would
+1835 cause it to say yeah that was a mistake.
+1838 What might the next generation of RL
+1841 objective learn from that? Yeah.
+1845 Um
+1847 I think in my view currently the RL
+1849 algorithms are generally actually not
+1851 that bad. Um my view is like you know
+1853 the goal of RL is my phrase that I like
+1857 to like tell people is like luck is all
+1859 you need. Um so my view is like you know
+1861 the longer you wait the longer you wait
+1864 the better your algorithm will be. Um so
+1866 over time your algorithm will learn. Um
+1870 so like you know over a very long period
+1871 of time our algorithm will learn over
+1874 time to increase reward. Um so currently
+1876 my view is like most our algorithms
+1878 they're pretty good. Um you know there
+1880 can be some small changes you know maybe
+1882 the K just maybe get rid of that or like
+1884 you know reduce it to 0.01 or something
+1886 you know small changes. Um but overall
+1889 the goal of these changes is just to
+1891 increase the efficiency. Um so like you
+1893 know make the trading process faster um
+1896 stuff like that. Um so my view is like
+1898 you know currently RL is pretty good um
+1900 the algorithms are pretty good what is
+1902 missing you know what is missing is the
+1904 actual reward functions the environments
+1907 um you know the large scale training
+1909 runs these are the things that are
+1911 missing and so like over time you know
+1912 we will be you know large model labs and
+1914 open source community we will work on
+1916 these like smaller other things and
+1918 we'll make RL much better um so my view
+1921 is like the algorithm I don't think so
+1923 we need any more changes um it's
+1925 generally fine Um obviously there are
+1927 like still some extra things like
+1928 multi-turn is still hard. Um multi-turn
+1930 multi- environment stuff like that.
+1932 These are still a little bit more
+1933 complicated. Um but in general I would
+1935 say the algorithms are okay um for now.
+1938 Um yeah
+1940 &gt;&gt; also what are your thoughts on um RL for
+1943 zero pre-train u like not like using RL
+1947 from the pre stages and getting up to it
+1950 like not like how deep V3 was like
+1952 deepse V3 zero at least was from just
+1955 from RL but from data safety and stuff
+1959 but yeah like how do you see just using
+1961 RL and getting this jump from scratch
+1963 and effectively using a good fine mod
+1965 stuff.
+1967 Honestly, I don't think that's a good
+1969 idea. Um, in machine learning,
+1971 everything is about efficiency and every
+1975 single problem in machine learning is
+1976 optimization, right? So like the reason
+1979 why we do pre-training is for
+1981 optimization purposes, right? So like
+1983 you have like a un uninitialized model
+1986 like just random weights and then you
+1988 will like you to move in the 1.4 4
+1990 trillion parameter space to get to a
+1992 pre-trained model and then after the
+1994 pre-training step you do supervised fine
+1996 tuning to make an instruction um
+1998 following and then you would do RL and
+2000 then you would do RLVR right so like all
+2003 of these stages the reason why we have
+2005 these stages is for optimization right
+2007 to like make the process more efficient
+2010 you could as you said you could skip
+2012 from you can remove the pre-training
+2014 stage right remove it and just do RL
+2016 right from the randomized weights yes
+2019 that will work. I will work but it will
+2021 take millennia right I'm not sure if
+2024 someone wants to wait there forever you
+2026 know waiting and waiting and waiting for
+2028 RL to actually you know solve the
+2031 pre-training
+2032 you know like remove pre-training my
+2034 view is you still need pre-training
+2036 primarily because this is to to increase
+2039 efficiency um so my take is not a good
+2043 idea that's that's my view um it's you
+2045 should just do pre-training um first um
+2047 that that is very important So yeah,
+2050 &gt;&gt; also yeah um GRP is expensive many of
+2053 times. Is there a path to scaling uh
+2056 reinforcement learning for massive
+2057 models that doesn't involve burning a
+2060 huge compute? So what you tried or seen
+2062 work in practice usually? Yeah.
+2066 So the trick is for GPO is one of the
+2069 biggest issues is it always seems to
+2072 follow it seems to it seems to
+2075 overreward
+2076 firstly based on format. So like at the
+2079 very beginning it the model doesn't
+2081 actually know how to follow the format
+2083 that you're trying to like uh force it
+2086 to do. For example, when you like try to
+2088 do like uh please put the reasoning
+2090 process between thick and close, it
+2093 first it needs to learn how to do that
+2094 format. Um so it seems like these RL
+2097 algorithms
+2099 they get stuck they get stuck before you
+2101 actually learn how to do RL like you
+2103 know before you have to before you learn
+2104 how to like do add to four it firstly
+2108 tries to optimize for format um so the
+2111 trick is you have to do supervised fine
+2112 tuning first you have to do this priming
+2114 stage or this warm up warm-up phase to
+2118 force the model to learn the format and
+2121 then you can you know do actual RL um so
+2124 those are like some tricks that we show
+2125 oh you need to do warm up you need to do
+2128 priming and stuff like that. Um so this
+2130 will actually reduce compute um by a lot
+2133 like I I would say this will make like
+2135 this will make your reward functions
+2136 much more powerful um you the model will
+2139 learn like maybe five times faster um so
+2141 please you know I always tell people
+2143 please do some supervised fine tuning
+2146 step first um and then do RL um yeah so
+2150 you're more u like pushing to optimizing
+2154 SFT step and doing more experimentation
+2157 or coming to an optimization layer that
+2159 can eventually enhances the safety
+2162 thing.
+2164 &gt;&gt; Yeah. So my view is machine learning is
+2166 just optimization. So like every single
+2168 thing that you try to do is just
+2169 optimization. Um you could right for
+2172 example you could wait you know you
+2174 could don't even pre-train the model
+2178 just go from random weights to the final
+2180 RL model. Right? You could just do that.
+2183 Like why? That's my question. Like why?
+2185 Like my view is like this will take too
+2186 long. there's no point of doing that. I
+2188 mean obviously there are like some there
+2190 is a there there is another school of
+2192 thought for example right there is
+2193 another school of thought which thinks
+2194 you should do that and the reason why
+2196 you should do that is if you do
+2197 pre-training you're already trying to
+2199 like put biases into the model right the
+2201 model is like at a local minima like
+2203 it's it's not it's not a global minima
+2206 it's a local minima so that is kind of
+2208 what they try like you know most people
+2209 try to think like that you know like you
+2211 should go from like a pre-trained model
+2213 no pre-training just skip to RL um I
+2216 think remains to be seen
+2218 Yeah, that's my view. Like maybe a large
+2221 model lab can try it out, you know,
+2222 maybe open air, maybe open air, maybe
+2225 Google, maybe anthropic are doing that.
+2227 I I don't know. Like my view is you
+2229 still need pre-training. Um and my lens
+2231 is like you need to view everything as
+2232 optimization. Um try to reduce resources
+2235 as much as possible and yeah that that's
+2238 my take. Um yeah
+2241 &gt;&gt; on the same line everyone's scaling
+2243 supervised models but can RLB scale so
+2246 aggressively it becomes the uh you know
+2248 transformer moment for decision-m system
+2251 um in enterprises. Yeah.
+2254 &gt;&gt; Yes. I actually my view is yes. Um
+2257 currently currently the RO percentage of
+2260 the whole training run is only like 1 to
+2262 5% right very very less of the full
+2264 training run. Um pretend we can scale
+2267 this to 100%. Right? like double the
+2269 training run. Pretend if it's pretend if
+2272 we could scale this to like 10 times
+2273 more. Um then we will see results. Um
+2277 there is like a re research paper which
+2279 shows that RL all the updates are very
+2282 sparse. Yeah. So like only like very
+2284 small percentage of all the weights are
+2285 updated and the reason why is because
+2288 you only trained it for like one or 5%.
+2290 Right? So like of the total training run
+2292 you haven't really trained it that much.
+2294 So my view is over time, yes, if you
+2296 scale RL to large scales, you will see
+2300 interesting phenomena. You will see the
+2302 model actually learning how to do lots
+2303 of stuff. Um, and yes, but this will
+2306 take more resources and more time. Um,
+2307 my take is if the probability of a
+2310 positive reward, if the probability of a
+2312 pro positive reward is more than zero
+2315 and if you, you know, execute RL to the
+2317 maximum limit, you know, in the limit,
+2320 you will get a very powerful model. Um
+2323 that's kind of what I think that's where
+2324 most larger model large model labs are
+2326 trying to like go for their view is like
+2328 you know if you if you can scale RL to
+2330 like infinity you will get AGI. Um yeah
+2333 that that's kind of what they think. Um
+2335 yeah
+2337 &gt;&gt; also in the same line about this
+2339 transformer thing Google has tried a
+2341 recent work and early work with Titan
+2343 paper to that they have shown that this
+2346 transform architecture can be better be
+2347 optimized with those. So how you look up
+2350 to like is there something that need to
+2352 be yet improved the transform
+2353 architecture and how you see the recent
+2355 progress being done so far um to
+2357 actually overcompensate transformer
+2360 moment and get something new or novel.
+2362 Yeah,
+2364 &gt;&gt; my view on the architecture side things
+2366 is again it's optimization, right? So
+2368 like the goal is to try to get a more
+2370 efficient architecture to move the
+2373 scaling laws, you know, to change the to
+2376 change the multiplier the scaling laws
+2377 or change the like, you know, the
+2378 exponent of the scaling laws. Um, in my
+2382 view, the current transformer
+2383 architecture, okay, see it's a
+2385 transformer architecture, but we say
+2386 it's called the transformers plus+
+2388 architecture, right? So like it has like
+2389 a it's it's more like the llama
+2391 architecture that's pretty good. Um so
+2393 like you know the there's the MLP
+2395 there's the swiggloo activation you know
+2397 there's the attention part um you know
+2400 deepseek I would say deepseek did
+2401 innovate somewhat in the architecture
+2404 type realm right so like they introduced
+2406 um they introduced uh multi you know
+2409 they introduced some changes to like the
+2411 attention path they added
+2414 um MLA so like they did in innovate in
+2417 some areas um but my view was like it's
+2420 there's not that much left to innovate
+2422 That's kind of my take. Um, so like my
+2424 view is like it's better to like in to
+2426 better to innovate on the algorithm side
+2428 things and less so on the like
+2429 architectures architecture side things.
+2431 Um, yeah. So like I I think the
+2433 transform is pretty good. Um yeah in my
+2436 view I I I really like the transformer.
+2438 It's very effective. Um yeah
+2442 &gt;&gt; pretty interesting like you are playing
+2444 around with the most low-level set of
+2445 things getting transformer like seeing
+2447 transformer is actually working well for
+2448 most of the architectural setups pretty
+2451 yeah makes a lot of sense um so how does
+2455 you see this fine-tuning space evolve
+2457 will we see more RL based finetuning
+2459 coming months or days so there's a lot
+2463 of work happening here like art from
+2465 open pipe and stuff so how you do see on
+2468 more high able set of things. Yeah.
+2472 &gt;&gt; Yeah. Um yeah, like highly recommend
+2475 art. Um it uses Unslot under the hood as
+2477 well. Um but like I think I will I am
+2481 very eager to see more RL fine-tuning
+2484 frameworks. Um I think this probably is
+2486 the future. I think SFT you know general
+2489 fine tuning um you can pose the question
+2492 as a RL um question. Um and I tell
+2496 normally people like if you want to
+2497 reduce overfitting um please you know
+2500 try RL. Um RL definitely reduces
+2502 overfitting a lot. Um because you force
+2505 the model to try to learn how to do the
+2507 task. Um and the supervised finetuning
+2510 is more like overfitting to like try to
+2513 do instruction fine-tuning. It's it it
+2516 can sometimes not be that effective. So
+2518 I generally tell people to do RL more.
+2520 Um and yes everything is about
+2522 optimization again. So like there will
+2523 be more about you know how do we make RL
+2525 more efficient? How do we make RL faster
+2528 and stuff like that? So like always
+2529 about efficiency optimization. Um so yes
+2532 I'm very excited for more RL frameworks.
+2534 Um yeah and we also obviously try. Um
+2537 yeah.
+2539 Um so I guess the next section is about
+2542 nlot only. We I've got lot of questions
+2544 about how slot does and many such
+2546 question to be explored. So the first
+2548 one is about uh uh so you were deep in
+2552 the weeds of LLM optimization. So when
+2556 did the idea of actually starting
+2558 unsloth crystallized? When did it came
+2561 to mind to pivot to startup with itself?
+2564 Yeah.
+2566 Um so we we did it in Europe's
+2568 competition. So this was like a few
+2569 years ago. There was a LLM efficiency
+2572 challenge. Um I think this was run by
+2574 Mark Surfam and like some other people
+2576 in the Europe's um one of the workshop
+2579 type things. Um and we we were trying to
+2581 participate in that. Um but in the end
+2583 we you know instead we did h um we did
+2586 something else um on the side. It was
+2588 kind of like a reincarnation of
+2589 hyperarn. Um so hyperarn you know was a
+2592 faster machine learning algorithms. We
+2594 instead what we did is we made you know
+2596 training language models faster. So we
+2598 wrote tron kernels we wrote you know
+2600 reduce memory usage. It was primarily so
+2602 like we could submit submit um within
+2605 the 24-hour window. So the competition
+2607 you have 24 hours to train one model um
+2611 and your goal is to make this the
+2613 fastest um sorry the most accurate as
+2615 well. Um but we went another way. We
+2617 went for we went for the fastest
+2619 training. Um so our view is if you can
+2622 train the model faster um you can get
+2624 higher accuracy. Um and so yeah we
+2626 launched the package um around December
+2629 2023. Um, and yeah, like it was mainly
+2633 just an open source package. Um, and we
+2636 it was just for fun. Um, you know, we
+2639 posted on hack and news. The first day
+2640 it kind of bombed. Um, the second day it
+2643 did pretty well. We went number on hack
+2644 and news. We posted on Reddit. Um, it
+2647 took it took two days for like people to
+2649 notice and stuff. Um, and then yeah, we
+2651 we currently have 40 40 something
+2653 thousand GitHub stars. Um, we have like,
+2655 you know, 10 million downloads on
+2657 hugging page and stuff like that. Um,
+2658 but it was a very long journey. Um yeah
+2660 and you know definitely if you know
+2662 people want to train un you know train
+2664 language models definitely give unsolve
+2666 a try. Um yeah
+2667 &gt;&gt; I guess you pretty much enjoyed the
+2669 summer 2023 to how it has came up so
+2672 far.
+2674 &gt;&gt; Well obviously at the be at the
+2676 beginning it was a very long process of
+2678 you know like at the very beginning when
+2681 you started like a startup like you know
+2682 we we didn't know how to like launch a
+2685 you know a startup. We didn't know how
+2687 to launch open source project that was
+2688 like getting lots of users at the very
+2690 beginning. the very beginning you know
+2693 there was a a very large um of
+2697 popularity for onslaught you know
+2699 normally it will die out right it's
+2700 normal um you know you have to keep
+2703 going at it like we kept uploading star
+2706 we kept making on better you know we
+2708 kept we just kept doing the stuff that
+2711 we liked um and so like over time okay
+2713 we got more got more usage and stuff
+2715 like that um so it was a very long
+2717 process um so obviously I'm very proud
+2719 of um and very proud of the community.
+2722 Um, and you know, I always appreciate to
+2724 the community for like supporting us.
+2726 Um, and yeah, like I yeah, I'm a very
+2730 I'm a very I'm a fan of Unsoft myself,
+2731 right? Obviously. Um, and so like I'm
+2733 very excited for like every single day
+2735 um to like make Unslo much better. Um,
+2738 yeah, but it was a very long process.
+2739 Um, yeah.
+2741 &gt;&gt; Also, I'm curious how you came up to the
+2743 name Unsloaugh. What was the idea behind
+2746 it?
+2746 &gt;&gt; That's my brother. My brother came up
+2748 with the name. Um, so obviously like
+2750 unsloths, the sloth is like a slow
+2752 animal. Um, and then we own it, right?
+2755 The whole goal of unsloth is to make
+2756 faster training. And so like we came up
+2758 with, my brother came up with the name.
+2760 Oh, okay. It's like, you know, not slow
+2763 sloth, but like fast sloth. Um,
+2766 &gt;&gt; yeah, it was just a play on that. Um,
+2768 yeah,
+2768 &gt;&gt; I've got bunch of DMs how when sloth
+2770 came up to to actually naming it. And
+2774 also I'm curious about um how ASAF is
+2777 basically like you're based in SSF. how
+2778 SF is about accepting um open source
+2781 packages more specifically about Enslot
+2785 um not just about Twitter because I
+2787 guess more people talk in the community
+2789 who are actually deep involved in the
+2790 like doing finetuning open source stuff
+2792 but how ASAP is actually as a market
+2795 accepting open source softwares
+2797 and yeah and so as well yeah
+2801 &gt;&gt; yes um so we moved to San Francisco um
+2804 the US um last July so like July 2024
+2808 for um primarily for Y Combinator. So we
+2811 were part of the S24 batch for YC. Um
+2813 and so like you know it was kind of like
+2814 a we had to move to like the US um to do
+2817 YC but it was actually very good. So the
+2820 reason why the US is good and especially
+2823 SF is because everyone is here right so
+2825 like you have you know Gemini is here
+2827 the metro office is here you know
+2829 everyone is here and so if you want to
+2832 get information about models if you want
+2835 to get information about like you know
+2836 what's coming up or like you know what's
+2838 you know what's happening in the AI
+2840 space is the first place where you're
+2842 going to hear this information um so our
+2845 view is like you know if you're if
+2847 you're trying to make a startup um you
+2849 know please come to San Francisco
+2851 obviously apply to YC but like you know
+2852 San Francisco is the heart of AI um and
+2856 yeah that that's kind of our view um and
+2858 yeah everyone in SF is like you know
+2860 very ambitious um they want to like make
+2862 a very large company um so like we fit
+2864 in very well with them as well um that's
+2866 kind of our goal as well so like
+2867 definitely as a startup founder SF is
+2869 very very good um yeah
+2873 also I'm curious about how was the YC
+2875 experience and how exactly YC helped in
+2877 initial stages of unsloth also what was
+2880 the vision for the product and scale
+2882 long ahead
+2884 &gt;&gt; yeah I I think
+2886 I think the primary help for YC is we
+2889 are from Australia and because we're
+2891 from Australia um we don't know how to
+2894 actually run a company that well um and
+2896 YC kind of taught us like how to focus
+2899 on user growth how to focus on running a
+2901 startup correctly how to like connect
+2903 with companies and founders you know how
+2905 to like learn about how to actually run
+2907 a I think that's the main like focus and
+2910 also YC's view was like the biggest
+2913 issue in a when we were in Australia
+2915 most people generally want to run like a
+2917 very large company right they don't want
+2919 to make the startup as big as possible
+2921 they were more like um you know like
+2923 trying to get a good job you know make
+2924 it be stable and stuff like that but you
+2926 know visions were different you know we
+2928 want to make the company as big as
+2930 possible right like our our goal is to
+2932 make AI accessible to everyone that's
+2934 our goal um and we didn't have like a
+2936 peer group we there was no one to talk
+2939 to to have like same to have like you
+2941 know ask them for like you know issues
+2943 how do how do we we don't even know how
+2944 to like open a company and so like YC
+2947 was a very good experience to force
+2948 people to learn how to open up a company
+2952 um so it's yeah I would say why the
+2954 benefit of YC it's forced forced
+2956 learning it was a forcing function for
+2958 you to make a company um and make the
+2960 startup good um so yeah like definitely
+2963 apply to YC that's what I always tell
+2964 people um yeah
+2967 Um also what's the go-to market strategy
+2970 for Enslot? Any consideration to start
+2973 privatized products along with OSS in
+2975 coming years?
+2977 &gt;&gt; Yes. Um we are going to be planning to
+2979 launch products later this year. Um they
+2982 are in production. Um so our view is
+2984 like we were thinking of like doing some
+2986 sort of like inference or training
+2987 platform that might be still on the road
+2989 map but we're not sure yet. Um our view
+2991 is we need to make products. So you will
+2993 see some very cool products released
+2995 from Unsoft. Um I can't say anything
+2997 yet. Um but it is related to reasoning.
+3000 It is related to reinforcement learning.
+3002 Um and this will come out in definitely
+3005 this year. Um yeah but our primary our
+3008 primary objective is still to make the
+3009 open source as big as possible and our
+3012 primary objective is to make AI
+3013 accessible to everyone. That's the
+3015 primary objective. But yes there is a
+3018 but yes you will be seeing many products
+3020 from Anslo. Um yes
+3022 &gt;&gt; pretty much excited. I guess since has
+3024 got the scale and the distribution in
+3026 the community, um I see like it's
+3029 getting adaptably really well.
+3032 &gt;&gt; Okay. Well, thanks a lot. Um obviously
+3034 like our thanks as always to the
+3035 community. I think like you know the
+3037 community definitely um is the reason
+3039 why we're here. Um so like we're always
+3040 going to be we're always thankful
+3043 thankful to the community that like you
+3044 know made unsoft um you know how it has
+3047 become um currently. Um yeah
+3050 &gt;&gt; also I got this question. What are the
+3052 plans for Unsloth to support
+3055 decentralized training?
+3058 &gt;&gt; That's a good question. Um,
+3062 my fundamental view is decentralized
+3065 training is basically decentralized
+3067 training is opposite to what Nvidia
+3069 wants, right? So like and large model
+3070 apps, right? So like this is kind of in
+3072 opposite to large model apps. They want
+3074 all of the training to be done in like
+3076 one large data center, right? So like
+3078 that's kind of their view. The reason
+3080 why you want to do that is you can if
+3082 there was one GPU broken oh you know the
+3084 engineers who fixed the GPUs who like
+3086 broke are already there right so like
+3088 you don't want to like you don't want
+3090 suddenly one GPU to break and then you
+3092 know try to fix it and stuff like that
+3093 so that's why they're all housed in one
+3095 data center so like you can also reduce
+3097 cabling you can reduce wiring you can
+3099 reduce cooling all of the costs are just
+3102 in one are just in one data center um
+3105 and so it is obviously in direct
+3107 contradiction to decentralized training,
+3109 right? So like but my personal take is
+3112 you should probably still do large
+3114 training runs in centralized training
+3116 centers, you know, like this is just to
+3118 reduce cost. Um for decentralized
+3120 training, maybe we might support it in
+3122 the future. Maybe um probably not now.
+3126 Um we have to think about it. Um in my
+3128 view, so the biggest issue for
+3130 decentralized training is the it's not
+3133 the training on each device that's the
+3135 problem. It's the accurate
+3137 synchronization of gradients,
+3138 synchronization of like you know moving
+3141 the weights around that is the biggest
+3143 problem. The communication is the
+3145 problem, right? So the communication
+3146 cost um that's very very very expensive.
+3150 Um so my personal take is if you want to
+3153 do large training runs, I would still do
+3157 um I would still do it in a centralized
+3159 data center. Um yeah, if that that
+3162 answers the question. Um yeah
+3164 &gt;&gt; and I guess pretty much all these big
+3166 front labs are working around that
+3168 direction unless if they are looking up
+3169 to decentralized training also I'm
+3172 curious um just want to get a sneak peek
+3174 what's the next big thing unsloth is
+3176 working on
+3178 so we are working on version two um so
+3180 this will make training much more
+3182 efficient reduce memory usage
+3183 dramatically um make RL very efficient
+3187 um so like that's probably the next big
+3188 thing that we're releasing um we are
+3190 also working on a UI um and so like the
+3193 there are many things in the pipeline.
+3195 Um so there is actually a lot that we
+3197 are going to release. Yes. Including AMD
+3199 support, Intel support. Um so they are
+3202 actually working with us directly to
+3203 make a work inside. Um so maybe in the
+3206 next few weeks and months um you will
+3209 see lots of releases from us. Um but
+3211 yes, there's a lot on the there's a lot
+3213 in the road map. Um yeah,
+3217 interesting. Um this was a nice question
+3220 I got. Unslaw does a lot of clever uh
+3223 monkey patching. Any Python hack you are
+3226 proud of that looks cursed at first
+3228 glance but works if beautifully in
+3230 practice. Uh letter
+3234 yes we some people don't like us for
+3238 this right some people there was like a
+3240 Twitter storm saying you know our monkey
+3242 patching is not very good. Um but in my
+3244 view after
+3247 we had two thinking methods. Okay,
+3249 thinking method one do not do monkey
+3251 patching and copy paste or like you know
+3254 vendor bendor implementations and edit
+3258 in the actual implementation but like
+3260 actually make the implementation like
+3263 efficient and stuff like that right like
+3264 have one Python file for to to do this.
+3266 Um we tried that it does not work. um
+3269 every single time there's a new
+3271 architecture, there's a new bug fix,
+3273 there is a new you know every single
+3274 time the AI field is moving every single
+3276 day and it never worked. So what we did
+3280 instead is we did monkey packaging and
+3283 the most proud thing that you know the
+3285 most proud thing that we did in unsloaf
+3287 is we have something called the
+3288 automatic compiler where we will inspect
+3290 the transformers code and we will edit
+3293 it. we will edit it on the fly, you
+3296 know, like we remove one section of the
+3297 code and we will like replace it with an
+3299 optimized version. Um, so that's kind of
+3302 what we're most proud of. Um, it's very
+3305 hacky. It is very hacky. It's we will
+3308 read Python code on the fly, edit it,
+3311 save it to a Python file, and then
+3313 import from that new file. Um, and it's
+3316 kind of like a compiler. It's like kind
+3318 of like torch compile where there's like
+3320 you know template matching uh you know
+3322 like switching templates out and you
+3324 know switching implementations out. It's
+3326 kind of like that. Um and you know
+3328 Python is very powerful because it
+3330 allows us to do that. Um some people
+3333 don't like you know some people don't
+3334 really like doing that. Um but from our
+3337 view it is the most it is the most
+3340 efficient and the most um effective way
+3343 um to make transformers more efficient.
+3345 Um yeah
+3349 &gt;&gt; interesting. Um what you see is the
+3352 biggest uh differentiator for runs in
+3355 terms of training speed improvements. Um
+3358 so G is guess is reducing memory
+3360 overhead actually leads to bigger batch
+3363 sizes and therefore better util. Can you
+3366 rank or give more specifics on order of
+3369 importance on tricks, kernels, remat
+3371 things they have done you have done for
+3373 custom gradients? Yeah.
+3376 I think in terms of unsoft the biggest
+3379 differentiator is not our speed ups. So
+3381 we are two times faster than hugging
+3383 face plus flash detention too. You know
+3385 we do reduce memory usage by 70%. Um we
+3388 introduced you know gradient
+3390 accumulation bug fixes you know um async
+3393 gradient checkpointing and stuff like
+3394 that. The biggest the biggest thing I
+3397 would say is not actually the faster or
+3400 the memory reduction. It's not um the
+3402 biggest thing is the it's how do we
+3404 combine all the things that we do into
+3406 one package, right? For example, how do
+3409 we do quantized models? How do we load
+3411 in unsoft dynamic once? How do we, you
+3414 know, apply our bug fixes to all the
+3416 models? How do we export to VLM or GGF
+3419 or, you know, Llama CPP or Lama or, you
+3422 know, or LM Studio or something like
+3424 this, right? How do we export the model?
+3425 How do we do chat templates? How do we
+3427 do RL? How do we like there's all these
+3430 like small little things that we try to
+3432 like solve for and I think that's where
+3434 the power of unsoft is. It's not
+3436 actually the optimizations. It's the
+3438 it's the conglomeration of everything
+3440 that we do into one system. Um so I
+3443 think that's where Unsoft shines. Um
+3446 yeah I don't think it's like just the
+3449 memory reduction or the Yeah. Yes.
+3451 People really just like the memory
+3452 reduction, right? Some people really
+3453 just like the memory memory reduction.
+3455 Some people really like the speed ups.
+3457 Some people really like the kernels and
+3459 stuff like that, but my view is like
+3461 it's the entire system the most
+3464 important. Um yeah,
+3467 also um just curious what's the most
+3470 embarrassing way you have broken a model
+3472 or pipeline and what trick made it work
+3475 next if any on the same uh note?
+3480 &gt;&gt; I it's not really I wouldn't say it's
+3483 embarrassing. It's a very this is very
+3485 common issue. Okay, this is a common
+3486 issue where so we solved gradient
+3489 accumulation. So there was a bug fix
+3491 that we did last year where we called uh
+3493 all training frameworks mo nearly all
+3495 training frameworks had this issue of
+3497 gradient accumulation. Um we solved the
+3500 problem in our package and we worked
+3501 with transformers to make it work. Um
+3503 and we you know helped other packages
+3505 solve it. The issue currently is
+3507 sometimes people forget to patch for
+3510 gradient accumulation. Um and so
+3512 sometimes when you like run a model you
+3513 will see very high training loss. Yeah,
+3515 &gt;&gt; you will see the loss as like seven or
+3517 11 or you know 12. It's definitely
+3521 wrong. Um so like I'm always like I'm
+3523 always like I always feel unfortunate
+3526 that I like you know we fixed the bug in
+3528 the gradient accumulation there's more
+3530 bugs. Um so like essentially we fixed
+3532 one it's like a whack-a-ole. We fixed
+3534 one bug and then the moles you know we
+3537 whacked one mole and then the other
+3538 moles came out you know came out. Um and
+3540 so I was I would say it's embarrassing.
+3543 was more like it's an unfortunate
+3546 consequence of us fixing one bug. It
+3548 like results in then more bugs. Um yeah,
+3552 interesting. And the next section of
+3554 this part is about general questions. Um
+3557 it could be some trivia or could be some
+3559 uh doubts or some want to know a hack
+3562 behind insloth. So moving ahead to those
+3565 um
+3568 sec. So yeah uh it is about would you
+3572 would like to clearly know how you are
+3574 using offloading Android to drop memory
+3577 uses during training without reducing
+3579 speed like people know that there are
+3581 some papers but huristics is unsloth
+3583 using something under the hood. Yeah.
+3586 &gt;&gt; Yeah. So we introduced something called
+3587 async gradient checkpointing last year.
+3590 So what you do is when you do um when
+3593 you do training there is a trick called
+3596 um uh activation checkpointing or
+3598 gradient checkpointing where you have to
+3600 recomp compute a layer. Um and the the
+3603 the reason why you want to recmp compute
+3604 the layer is so you don't need to save
+3606 the gradients. You don't need to save
+3607 the intermediate activations. Um but the
+3609 problem is these activations you still
+3612 need to save into layer and so like the
+3614 trick is what we showed is you can
+3616 actually save this to RAM. you don't
+3618 need to actually you don't need to put
+3620 it on the GPU and this will reduce
+3622 memory usage dramatically. Um but the
+3624 trick is you don't need to this will
+3626 reduce speed um because you're like
+3628 transferring the GP you're transferring
+3630 the GPU memory to CPU. Um and what we
+3633 show is you can actually do this async.
+3635 Um so we have in our package um we use
+3638 CUDA streams and we do this very
+3639 effectively and so this will make
+3641 training like 0.5 to 1% slower. It's
+3644 like it's not by much difference but you
+3646 will reduce memory usage dramatically.
+3648 Um maybe like 30% to 50%. Um yeah
+3653 &gt;&gt; also on the ecosystem of GGF, MLX,
+3655 Skoda, etc. Which one you think has the
+3658 most potential for consumer devices?
+3661 &gt;&gt; Definitely GGF. um you know our view was
+3663 like you know llama CPP it's the most
+3667 it's not the best right it's obviously
+3669 not the best in like you know
+3670 optimization you know throughput through
+3672 if you want throughput use VLM right
+3675 llama CPP and GGF is the most universal
+3678 format and the most it's the most stable
+3681 ecosystem um so like my view is this
+3684 llama CPP will always be here to stay um
+3687 and you know whenever there's like a new
+3688 optimization from BLM you know the llama
+3690 CPP folks will added it um you know
+3692 they're working on something called high
+3694 throughput mode where the aim is to
+3695 become vlam. So like I I think my view
+3697 is llama CVP is the most it's it should
+3701 be the ecosystem where everyone's trying
+3703 to go for um and then obviously CUDA you
+3706 know VLM um MLX other systems are also
+3708 very important but my view is llama CBP
+3710 is the go-to framework um for serving
+3713 models um yeah
+3716 interesting um so
+3720 do you like feel for more with respect
+3722 to so much happening in this field your
+3724 work seems to be focused on more
+3726 training inference optimization but
+3728 other areas like exist like modeling
+3731 etc. So example could be it might be
+3733 tempting for you to experiment with
+3734 architectures linear attention
+3736 replacements for training etc. So the
+3738 whole uh point of the question is how do
+3740 you stay focused with so much happening
+3742 around you?
+3744 So the good thing is because we're a
+3746 startup our primary objective is to get
+3749 as many people to use unsoft as
+3751 possible. So like that's the primary
+3752 objective. The objective isn't to make
+3754 training faster. It's to it's to expand
+3758 our goal is to make AI access accessible
+3760 to everyone. Right? So like our primary
+3762 objective is to reach as many people as
+3764 possible. So that is that's how we stay
+3766 focused like for example if we want to
+3768 experiment with linear attention we
+3769 firstly ask the question you know how if
+3771 we make linear if we do linear attention
+3774 or if we like optimize this specific
+3776 area how many people would this you know
+3779 will utilize this method so that's kind
+3781 of our question and if if we we have to
+3784 do like a costbenefit analysis um so you
+3786 know if we I I want to optimize right
+3790 you know my my my
+3792 personality is I will optimize you know
+3794 I will optimize as the hell out of like
+3795 a system, right? But that's my goal. But
+3797 I can't, right? Because everyone only
+3799 has like a few hours in a day. So my
+3802 question I always ask is
+3805 how many how many people can we reach
+3808 right if we do this. Um so that's kind
+3810 of like the question that we always ask.
+3811 Um that's how I stay focused. Um yeah,
+3815 &gt;&gt; this makes a lot of sense. Um the next
+3817 in the line is um is multiGPU coming?
+3822 &gt;&gt; Yes. Um technically it already works. Um
+3824 so if you use accelerator and port run
+3826 unsoft does work on multiGPU. Yes. Um
+3829 however we are working on a more
+3831 efficient and much more easier to use
+3833 system. So this will be part of unsub2.
+3835 Um which we'll be releasing in a few
+3837 weeks through um maybe maybe later this
+3839 year. Um but yes it does work. Um we
+3841 actually have docs for it. Um so if you
+3843 type in unsoft multiGPU it will tell you
+3845 how to run it currently. Um yeah,
+3850 &gt;&gt; interesting pretty much excited about
+3851 the version two. Also, uh I got a lot of
+3854 questions around this. So, what are some
+3856 good stuff to get started optimizing LM
+3858 speeds and efficiency using Twitter on
+3859 any some specific resources you know or
+3861 would you like to recommend or something
+3863 which which actually helped you or made
+3866 and solve better along the way? Yeah.
+3869 &gt;&gt; Yeah. Um so I generally recommend people
+3871 to learn the Triton go through the
+3874 Triton tutorials. So the triton
+3876 tutorials are very effective. Um
+3878 probably skip the flash attention part
+3880 and the you know the other more
+3881 complicated tutorials. They're not that
+3882 important. We skip that and then I would
+3886 then I would turn on Triton interpret is
+3888 equal to one. Write triton kernels. Um
+3891 and essentially just trial and error. Um
+3894 literally try to write write the kernels
+3896 and stuff like that. Um in fact a very
+3898 good trick that I tell people to do is
+3900 do torch compile set torch compile debug
+3903 to be true. Um and then in inspect the
+3907 Triton kernels that are generated by
+3909 torch compile. Um and this is a very
+3911 good learning method. Um so yeah that
+3914 that's kind of how I tell people to
+3915 learn triton. Um literally just take
+3917 Triton to compiles Triton kernels um and
+3920 just read through them. Um the more
+3922 Triton kernels you will read um the
+3925 better you'll become. Um yeah and also
+3927 like another way is like rename all the
+3930 variable names. Um so like in if you do
+3932 torch compile you'll see a lot of like
+3934 temp 11 one temp 13 you know temp temp
+3937 33 try your best to like normalize all
+3939 these names um and yeah but like that's
+3942 how it so do do the try tutorials um and
+3945 then read sport compiles try generated
+3948 um kernels um
+3951 &gt;&gt; also like there was this uh uh this
+3954 agent which writes CUDA kernels for your
+3957 for your own like you don't have to
+3958 actually
+3960 work around it manually. So how you do
+3962 look up to that space and like like it's
+3966 actually a big bottleneck for people to
+3967 understand puda kernels and start
+3969 writing from the scratch. But how do you
+3970 see the space that yeah I've got this
+3972 agent framework which is going to write
+3974 my uh kernels just by manually prompting
+3977 it hey just write this kernel for me.
+3980 Yeah,
+3981 &gt;&gt; my view is I I think my take is these
+3985 systems where you like automatically
+3986 write kernels.
+3988 I'm not sure what's the who are they
+3991 trying to compete with. That's my main
+3992 question. Like I'm not I'm assuming they
+3995 understand that torch compile exists.
+3997 I'm assuming they do and my view is like
+3999 you know they're trying to like make it
+4000 much more efficient than to compile. But
+4002 my view is PyTorch team are very smart
+4006 right? So my view was like the PyTorch
+4007 team is extremely smart and over time
+4010 compile will get better and better and
+4012 better. Um and you must focus on
+4014 mathematical algorithms right so like
+4016 writing like new mathematical
+4018 optimizations um and I think that's the
+4021 automatic crud kernel generators are
+4023 very bad at generating these you know
+4026 new maths algorithms um and that's where
+4028 they suffer dramatically. Um so like I I
+4031 think this will still require some labor
+4032 to make it work. Um but my view is like
+4036 I'm not a really I'm not a very big fan
+4038 of the automatic kernel generators. My
+4040 view is just use torch compile. It's my
+4042 view. Um and then focus on you know
+4045 mathematical algorithms. Um yeah that
+4048 that's kind of my take. Um
+4050 also what were your biggest obstacles in
+4054 your journey and how did you overcome it
+4057 along the way?
+4060 Um the biggest obst obstacles was in
+4062 fact my understanding of maths and
+4065 transformers. I think it's probably a
+4067 very big obstacle for everyone. Um I
+4070 think the deriving gradients like you
+4073 know for example how do we do back
+4075 propagation by hand that is that is the
+4079 most that is the hardest thing you
+4081 should like someone can do. Um so my
+4083 view was like if someone wants to learn
+4085 how to do like you know machine learning
+4087 from scratch how to do tron kernels h
+4090 learn how to do back propagation by hand
+4093 um and then once you learn that oh then
+4095 you can optimize oh okay you know you
+4097 can bracket bracket it this way or like
+4099 you know fuse the operations this way
+4101 and stuff like that. So my my main point
+4104 like you know my main like you know
+4105 learning lesson was like you know
+4107 learning how to do back propagation by
+4109 hand was the most important um and it
+4112 was a very big obstacle right because
+4114 like you need to learn maths you need to
+4115 know how to do you know differentiation
+4118 you need to know how to do mat matrix
+4120 calculus um so it did take a lot of time
+4123 um that's you know that's why I think my
+4125 maths background kind of helped you know
+4126 I did do some mathematics and I did like
+4129 linear algebra statistics so it
+4131 definitely helped Um but that was
+4132 probably the biggest obstacle. Um
+4135 &gt;&gt; I guess you are biggest fan of building
+4137 foundations from scratch coding and
+4140 &gt;&gt; Oh yes the foundation stuff. Yeah.
+4142 &gt;&gt; Oh yes definitely. Um definitely if you
+4145 essentially I I normally advise people
+4147 to like you know learn from scratch
+4149 scratch it needs to be scratched with a
+4151 project like you know like not not just
+4153 like you know learning fundamentals and
+4154 stuff like that but there needs to be a
+4156 project tied with it. Um and seems to be
+4158 very very effective. Um yeah
+4162 &gt;&gt; interesting. Um so like I actually
+4165 missed this question. You have worked at
+4166 N media as well for a couple of years.
+4169 So how was your experience at N media?
+4171 What actually
+4173 you worked on and what excited you more
+4174 about the stuff you you were doing there
+4176 and how how much it has impacted your
+4178 current stuff what you're doing now?
+4180 &gt;&gt; Yeah. Um yes I did used to work at
+4182 Nvidia. Um so I was part of the QML
+4185 rapids team. The goal was to make
+4187 machine learning uh okay to make machine
+4189 learning faster on Nvidia GPUs. So it's
+4192 kind of like what I like really like to
+4194 do. Um so I was part of the QML team. I
+4196 made TSN so a data visualization
+4199 algorithm 2,000 times faster. I made
+4201 like randomized SVD faster, some other
+4203 algorithms faster as well. Um I think
+4205 work invidia was very good. Um because
+4208 the Nvidia folks are like they they
+4211 don't require you to do anything but
+4213 they do want you to do something by
+4216 yourself. Um that can impact a lot of
+4219 people. Um so like they're very they're
+4221 very hands-off. Um so like in my view if
+4224 anyone wants to learn you know work for
+4226 a company you should definitely try
+4227 video out first. um because their way of
+4230 organizing people and you know giving
+4232 projects um to people they are very they
+4235 want you to be self autonomous so you
+4238 know people like yeah I find I find like
+4240 you know when I went for Nvidia it was
+4242 kind of like a precursor to running a
+4244 startup so yeah I I highly value the
+4247 experience of Nvidia um yeah
+4251 &gt;&gt; I'm also curious about u so the current
+4254 stuff we are actually doing we are
+4255 building AI cursor for apps not juggling
+4258 between apps. So I'm just curious about
+4259 what your what is your take on current
+4261 agentic space which most of the startups
+4263 currently working on and how you do see
+4265 because it's been said that 2025 is the
+4267 year year of agents and people are just
+4269 working around tool calls function
+4271 calling and getting stuff done on the
+4272 fly. So how every every other day we see
+4275 tens of startups products launching
+4277 around agents. So how do you see it and
+4280 and what goes beyond it? Yeah.
+4283 &gt;&gt; Yeah. So my view is like for agents
+4285 specifically um definitely the the
+4288 target audience is very interesting. Um
+4291 my view is the majority of the revenue
+4293 and like you know the growth is Google
+4294 to startup founders. You know they want
+4296 to open like some sort of company. So
+4297 they might use lovable they want to use
+4299 you know they they'll use cursor to like
+4301 write code to make like a product. Um so
+4303 my view is the majority of the audience
+4305 is still in the startup ecosystem. You
+4307 know people who like utilize these tools
+4309 are mainly startup founders. That's my
+4311 view. Um however there is the other side
+4314 like you know people who use claude for
+4316 coding use you know chattyp
+4319 for example right everyone seems to use
+4320 my my parents use it right my mom uses
+4322 it my dad uses it like chat is just so
+4325 pervasive everyone uses it and so like
+4327 there are two different two different
+4329 areas um yes I I would say that
+4332 specifically for agents and you know
+4334 like making these systems to like you
+4335 know code up you know like temporary
+4338 demos and stuff like that it can go
+4340 somewhat some like you know some way but
+4342 there is like a very I'm not sure how
+4345 far this can go um you know like there
+4347 are like many different issues generally
+4349 if people utilize these tools you
+4351 definitely can start up a startup right
+4354 so like the whole goal of making a
+4355 startup is to know what people want um
+4357 you know what you know can people will
+4359 something make something that people
+4361 want um and so like definitely these
+4363 tools are very helpful for that um but
+4365 it might not get you to the very end um
+4368 but I do agree these tools are very
+4369 helpful um so for example we use these
+4371 tools as well. So like yeah so my view
+4373 is these tools are very effective. Um
+4375 yeah
+4377 &gt;&gt; interesting and I guess now everyone is
+4379 getting adjusted to the uh to how better
+4382 productive they can be using these
+4383 agents and getting things on the fly.
+4385 Interesting. Um next in the slide is
+4389 um yeah how to become a good
+4391 experimentalist.
+4396 There is no set formula. I think it's
+4397 more like just you need to have
+4399 curiosity
+4401 and patience. That's all. Um just those
+4403 two factors, curiosity and patience and
+4406 just trial and error. Um there is not
+4408 that many there's not that many like
+4410 tricks I can tell you like tell people
+4411 there's it's just patience and exper
+4413 patience and yeah just literally be
+4417 patient and curious. Um yeah
+4420 &gt;&gt; curious um also interesting uh what you
+4423 think of AGI or basically post AGI
+4426 world. Yeah, that should be a bit um
+4428 off. But what what's your vision? What
+4431 your thinking around this?
+4434 &gt;&gt; That is complicated. I think my view is
+4436 firstly we need to define what AGI
+4438 actually means. I think that's the
+4439 question. Um most people when they mean
+4442 AGI like you know the general public
+4444 they mean like you know Terminator you
+4446 know like uh uh you know like something
+4448 that like is very smart um you know X
+4451 machine or something like that you know
+4453 some something like something like that.
+4454 Um I think the definition of AGI is
+4457 complicated. Um my view is like you know
+4460 is it what is actually AGI? Is it is it
+4463 a system that is smarter than all
+4465 humans? It is is it a system that's
+4468 smarter than 99% of humans? Is it is it
+4471 a system that's smarter than most smart
+4472 humans or something like that? Or is it
+4474 a system that's smarter than the average
+4476 human? You know, like there's many
+4478 different like definitions of AGI.
+4479 That's very complicated. Um so like I
+4481 think I think that's the question. Um,
+4484 is is AI smarter than an average human?
+4487 I would say yes. Um, clearly like you
+4490 know TGBT is in fact smarter than an
+4492 average human like it's very smart. Um,
+4496 however, it can't do you know human lab
+4499 you know human tasks you know right? It
+4500 can't like do the laundry. It can't you
+4503 know walk or something like that. Um,
+4505 does an AI have to do that? Um, remember
+4508 it's called AGI as in like with
+4510 intelligence at the very end. It's not
+4511 like a human, you know, we don't it just
+4513 needs to be intelligent, right? It
+4514 doesn't need to do all tasks. Um, but I
+4517 think so my take is like it depends on
+4519 the definition of AGI. Um, yeah, in a
+4523 post post AGI world is very complicated.
+4527 Um, if we're going to be talking about a
+4529 post AGI world, my view is like it's
+4530 kind of like game over. Like what
+4532 exactly can we do? Um, it's my point.
+4536 Um, so my my fundamental view is it's
+4538 going to be very hard to get. Um it's
+4540 it's going to be very very hard to get
+4542 to a post AGI world. Um
+4545 that's my personal take. Um
+4548 yeah, I'm more on like the conservative
+4550 side. Um yeah.
+4552 &gt;&gt; So like do you think something that is
+4554 more fundamentally broken about how we
+4556 are thinking about the progress to the
+4558 GI?
+4560 &gt;&gt; No. Well,
+4562 if I was a large model lab, this is like
+4565 I would think about I would think about
+4567 like you know if if there is a small
+4569 probability of reward functions to be
+4571 positive, I would just try to scale this
+4573 up to infinity and you know over time
+4575 you will get a that's kind of what they
+4577 think. So like their view is the longer
+4580 you run RL for you will get to AGI. Um
+4584 see that's actually what I think as
+4585 well. Like that's my view as well. My
+4587 view is yes, you can get to AGI, you
+4589 just need to scale RL dramatically.
+4592 The timelines are different. So my view
+4594 is like the timelines are much longer.
+4596 Um maybe the AI labs think the timelines
+4598 are smaller like you know maybe like I
+4600 don't know this year or next year. I
+4602 don't know like in a few years. My view
+4604 is this will take much longer. Um there
+4607 are like different jumps of you know
+4609 different jumps in terms of capability.
+4611 When Chachibility was first released we
+4613 had something called the SFT jump. um
+4615 you know chat was just extremely
+4616 powerful because do instruction fine
+4618 tuning very well and then we had 01
+4620 which is the RL jump um so like my view
+4623 was like there's always these types of
+4624 like jumps um maybe there's no more
+4627 jumps there's no more jumps in
+4629 capability and it's just very slow
+4631 improvement um so
+4634 my we my view is we can get to AGI yes
+4638 um but how long um so that's the
+4641 question you know how long would this
+4642 take I I mean I I'm not sure Um
+4645 yeah that's that's my take. Um
+4649 &gt;&gt; um interesting also what you think about
+4654 this benchmark maxing thing by closed
+4656 source models just sitting on benchmark
+4658 improving the model like it has become a
+4660 certain loop for every other clos model
+4661 to um to come into picture um yeah like
+4664 what's the general overview of this?
+4667 Yeah, I'm not a fan of bench bench
+4670 maxing or whatever you want to call it.
+4671 Um, but I think some models actually do
+4674 show some good
+4676 good like you results. For example, like
+4678 Gemini 2.5 Pro um in the IMO challenge
+4681 if you use the public version of Gemini.
+4684 It does get I think it's 33% or
+4686 something. So, it actually does not do
+4687 black. Um, so like sometimes some models
+4690 do benchmaxing and it's I understand
+4694 what they're trying to do, you know,
+4694 they're just trying to go for benchmarks
+4696 and stuff like that. I mean, it makes
+4697 sense. is it's a very human thing to do.
+4699 Um I I forgot what the law was called
+4700 like the um lock arts wait I I forgot
+4703 which one like when you try to optimize
+4705 for the benchmark and the benchmark
+4706 becomes useless. Um God's law or
+4709 something I I don't remember the name
+4710 but like there is a law about that. Um
+4712 my view is like yes um benchmarking
+4715 benchmaxing is probably not very good.
+4717 Um you know it's it's it's like a
+4719 starting point you know it's a starting
+4720 point. That's my view. Um if if your
+4722 model can't even overfit on benchmarks
+4725 then you're definitely not doing
+4727 something right. That's my view. Um so
+4728 if your model does overfitit on
+4730 benchmarks at least you're doing
+4731 something right. Um and then the next
+4733 goal is try to make this more
+4734 generalized. Um yeah this remind me of
+4738 this recent Grog release on this a IMA
+4741 2025 benchmark. the grog for most 100%
+4744 of the accuracy 100% of the on the like
+4748 there just uh I'm just curious like what
+4750 could be the next thing about like if it
+4752 so like do you really see that could be
+4754 a thing a model can get uh if that is
+4757 not benchmaxed so a model can generally
+4759 get the same% of the accuracy on the on
+4762 that particular benchmark or any other
+4763 like I see it is a good hard benchmark
+4766 to to get 100% of the accuracy but
+4768 what's your general take on that like
+4770 getting 10% accuracy
+4772 in any benchmark. Yeah,
+4775 &gt;&gt; my fundamental view is
+4779 my fundamental view is life is just
+4781 bench benchmarks like every single thing
+4784 that you do is a task and this is this
+4787 is how I view it. Assume you can taskify
+4790 like convert everything into a task,
+4792 right? In the whole world, there's like
+4794 billions or like trillions of different
+4796 task combinations. And you make the AI
+4799 do all these tasks with perfect
+4802 accuracy, right? Every single every
+4803 single task gets perfect at all. Right?
+4806 It can do mathematic.
+4808 It can do division. It can make a poem.
+4811 It can do it can make code. It can do
+4813 every single task perfectly. Is that
+4815 AGI? Like you know, is is that the
+4818 definition of AGI? So my point is
+4822 benchmaxing is not good. Yes. Okay.
+4824 Fine. You have to start from somewhere.
+4826 But like my view was like if you can do
+4827 benchmaxing it's not bad but you need to
+4831 be able to update the model continuously
+4834 with new benchmarks. Um so the my view
+4836 was like you need to keep making more
+4839 benchmarks um and make the model learn
+4842 on all the benchmarks. Um and then over
+4844 time you will get AGI maybe. Um yeah. So
+4847 like
+4849 okay I don't know if that's a
+4850 controversial check like you know is is
+4851 like life just benchmark like you know
+4853 benchmarks are like tasks um but you
+4855 know like in my view like if if a model
+4858 if a model can do every single task a
+4860 human can do um I can't distinguish that
+4863 from you know it's very hard to
+4865 distinguish whether this is a human or
+4867 not a human um so yeah I yeah that's
+4871 kind of my view um yeah
+4873 &gt;&gt; interesting um I guess we are pretty
+4875 much into the end of the pod I'm just
+4877 curious about what advice you going to
+4879 give to 20 year olds who are just
+4880 starting out college don't have much
+4882 idea about the current AI space which is
+4884 turning 360 degree after a week and
+4887 advice for young founders as well like
+4889 they're building around ML in France
+4891 very low levels so what should they look
+4893 up to and uh and beyond. Yeah.
+4896 &gt;&gt; Yeah. Um I highly recommend um you know
+4899 lecture videos by Andre Kapathy on
+4901 YouTube. Um Jeremy Howard's videos um
+4903 fast AI videos um CS229, CS231N
+4908 um some other courses on the internet um
+4911 also you know unsluff notebooks. So like
+4913 we do have notebooks um on our docs for
+4915 like continuous pre-training um continue
+4917 pre-training supervised fine-tuning
+4920 reinforcement learning GPO um many many
+4922 notebooks for each model you know llama
+4924 majama all the models um so definitely
+4926 go through that um and yes like I
+4928 generally tell people to like learn some
+4931 algebra it's not that important um but
+4934 you know do learn how to do matrix
+4936 differentials you know how do we do the
+4938 derivative of the weights um you know
+4942 learn how to do back propagation by
+4943 hand. Um so that's very helpful. Um and
+4946 also the most important thing is to code
+4949 a transformer from scratch. You know how
+4951 do we do the llama architecture from
+4953 scratch? Um you know just pietorrch
+4955 code. Um nothing else. Um that's what I
+4958 generally advise people to do. Um yeah.
+4962 &gt;&gt; Um yeah I guess this was pretty much end
+4964 of the pod. Um so I guess this was super
+4967 fun at least for me and you for as well.
+4970 Uh what I found fascinating is um how
+4973 speed wasn't just a technical obsession
+4975 but kind of philosophy you have
+4976 developed running through everything um
+4978 you have built so far curious to see how
+4980 far you can push this both within sloth
+4984 and whatever comes after and looking
+4985 really looking forward to insloth
+4987 version two what's coming um on the
+4989 final note if you have to share some
+4990 notes some thoughts about the current
+4992 space how you are looking up to the
+4994 future the AGI thing and how should
+4996 people look up to anything um you wanted
+4998 to share
+5000 Yeah. So my final thoughts is like I
+5002 would say to people don't be afraid of
+5004 AGI like you know it's not necessary to
+5006 like think about oh you know like when
+5008 is AGI going to come or like you know if
+5010 I do coding you know will my job be
+5012 automated away by AGI to you don't need
+5014 to worry about that. Um my fundamental
+5016 view is if you do something that you
+5017 like um and you know keep doing the
+5019 stuff that you like you'll be fine. Um
+5022 and if you want to keep up with the
+5023 latest research of AI um my suggestion
+5026 is don't keep up with the latest
+5028 research of AI. um it will drown you
+5031 know drown people out you know always
+5033 like if there's a new research paper or
+5034 a new model and stuff like that um but
+5036 if you do you know definitely follow me
+5038 on Twitter follow him on Twitter as well
+5040 for example so like yeah like we will
+5043 you know there is a lot of papers that
+5045 um you know that that are interesting
+5046 that I will share about um but in
+5048 general you know definitely thank you
+5050 for inviting me on the pod um and
+5051 excited for more podcasts as well um
+5053 yeah thanks a lot
+5055 &gt;&gt; appreciate you joining Daniel thanks so

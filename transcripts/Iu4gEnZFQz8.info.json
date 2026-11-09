@@ -1,0 +1,130 @@
+{
+ "id": "Iu4gEnZFQz8",
+ "title": "Retrieval After RAG: Hybrid Search, Agents, and Database Design — Simon Eskildsen of Turbopuffer",
+ "description": "From spending nearly a decade scaling Shopify’s infrastructure to doing “angel engineering” for companies like Readwise and Replicate, Simon Hørup Eskildsen went through the arc of getting haunted by a simple insight: AI search was clearly useful, but the cost structure made it untenable. After a Readwise experiment showed that semantic recommendations worked but would cost 6x the company’s entire infra bill, Simon started doing napkin math on a new kind of system, one built around object storage, NVMe, and the idea that models can’t compress the world’s knowledge into weights alone. That side project became turbopuffer, which went from a scrappy Rust binary to powering workloads for companies like Cursor and Notion, helping Cursor cut costs by 95%, winning Notion by acting like an extension of their team, and building a search engine for unstructured data designed for the age of agents.  \n\nWe discuss:\n• Simon’s path: Denmark → Shopify infra for nearly a decade → “angel engineering” across startups like Readwise, Replicate, and Causal → turbopuffer almost accidentally becoming a company \n• The Readwise origin story: building an early recommendation engine right after the ChatGPT moment, seeing it work, then realizing it would cost ~$30k/month for a company spending ~$5k/month total on infra and getting obsessed with fixing that cost structure \n• Why turbopuffer is “a search engine for unstructured data”: Simon’s belief that models can learn to reason, but can’t compress the world’s knowledge into a few terabytes of weights, so they need to connect to systems that hold truth in full fidelity \n• The three ingredients for building a great database company: a new workload, a new storage architecture, and the ability to eventually support every query plan customers will want on their data \n• The architecture bet behind turbopuffer: going all in on object storage and NVMe, avoiding a traditional consensus layer, and building around the cloud primitives that only became possible in the last few years \n• Why Simon hated operating Elasticsearch at Shopify: years of painful on-call experience shaped his obsession with simplicity, performance, and eliminating state spread across multiple systems \n• The Cursor story: launching turbopuffer as a scrappy side project, getting an email from Cursor the next day, flying out after a 4am call, and helping cut Cursor’s costs by 95% while fixing their per-user economics \n• The Notion story: buying dark fiber, tuning TCP windows, and eating cross-cloud costs because Simon refused to compromise on architecture just to close a deal faster \n• Why AI changes the build-vs-buy equation: it’s less about whether a company can build search infra internally, and more about whether they have time especially if an external team can feel like an extension of their own \n• Why RAG isn’t dead: coding companies still rely heavily on search, and Simon sees hybrid retrieval semantic, text, regex, SQL-style patterns becoming more important, not less \n• How agentic workloads are changing search: the old pattern was one retrieval call up front; the new pattern is one agent firing many parallel queries at once, turning search into a highly concurrent tool call \n• Why turbopuffer is reducing query pricing: agentic systems are dramatically increasing query volume, and Simon expects retrieval infra to adapt to huge bursts of concurrent search rather than a small number of carefully chosen calls \n• The philosophy of “playing with open cards”: Simon’s habit of being radically honest with investors, including telling Lachy Groom he’d return the money if turbopuffer didn’t hit PMF by year-end \n• The “P99 engineer”: Simon’s framework for building a talent-dense company, rejecting by default unless someone on the team feels strongly enough to fight for the candidate \n\nSubstack Article w/Show Notes: https://www.latent.space/p/turbopuffer\n\n—\n\nSimon Hørup Eskildsen\n• LinkedIn: https://www.linkedin.com/in/sirupsen\n• X: https://x.com/Sirupsen\n\nturbopuffer\n• https://turbopuffer.com/\n\nTimestamps\n00:00:00 The PMF promise to Lachy Groom\n00:00:25 Intro and Simon's background\n00:02:19 What turbopuffer actually is\n00:06:26 Shopify, Elasticsearch, and the pain behind the company\n00:10:07 The Readwise experiment that sparked turbopuffer\n00:12:00 The insight Simon couldn’t stop thinking about\n00:17:00 S3 consistency, NVMe, and the architecture bet\n00:20:12 The Notion story: latency, dark fiber, and conviction\n00:25:03 Build vs. buy in the age of AI\n00:26:00 The Cursor story: early launch to breakout customer\n00:29:00 Why code search still matters\n00:32:00 Search in the age of agents\n00:34:22 Pricing turbopuffer in the AI era\n00:38:17 Why Simon chose Lachy Groom\n00:41:28 Becoming a founder on purpose\n00:44:00 The “P99 engineer” philosophy\n00:49:30 Bending software to your will\n00:51:13 The future of turbopuffer\n00:57:05 Simon’s tea obsession\n00:59:03 Tea kits, X Live, and P99 Live",
+ "channel_id": "UCxBcwypKK-W3GHd_RZ9FZrQ",
+ "channel_url": "https://www.youtube.com/channel/UCxBcwypKK-W3GHd_RZ9FZrQ",
+ "duration": 3631,
+ "view_count": 8637,
+ "webpage_url": "https://www.youtube.com/watch?v=Iu4gEnZFQz8",
+ "categories": [
+  "Science & Technology"
+ ],
+ "tags": [],
+ "live_status": "not_live",
+ "comment_count": 12,
+ "chapters": [
+  {
+   "start_time": 0,
+   "title": "The PMF promise to Lachy Groom",
+   "end_time": 25
+  },
+  {
+   "start_time": 25,
+   "title": "Intro and Simon's background",
+   "end_time": 139
+  },
+  {
+   "start_time": 139,
+   "title": "What turbopuffer actually is",
+   "end_time": 386
+  },
+  {
+   "start_time": 386,
+   "title": "Shopify, Elasticsearch, and the pain behind the company",
+   "end_time": 607
+  },
+  {
+   "start_time": 607,
+   "title": "The Readwise experiment that sparked turbopuffer",
+   "end_time": 720
+  },
+  {
+   "start_time": 720,
+   "title": "The insight Simon couldn’t stop thinking about",
+   "end_time": 1020
+  },
+  {
+   "start_time": 1020,
+   "title": "S3 consistency, NVMe, and the architecture bet",
+   "end_time": 1212
+  },
+  {
+   "start_time": 1212,
+   "title": "The Notion story: latency, dark fiber, and conviction",
+   "end_time": 1503
+  },
+  {
+   "start_time": 1503,
+   "title": "Build vs. buy in the age of AI",
+   "end_time": 1560
+  },
+  {
+   "start_time": 1560,
+   "title": "The Cursor story: early launch to breakout customer",
+   "end_time": 1740
+  },
+  {
+   "start_time": 1740,
+   "title": "Why code search still matters",
+   "end_time": 1920
+  },
+  {
+   "start_time": 1920,
+   "title": "Search in the age of agents",
+   "end_time": 2062
+  },
+  {
+   "start_time": 2062,
+   "title": "Pricing turbopuffer in the AI era",
+   "end_time": 2297
+  },
+  {
+   "start_time": 2297,
+   "title": "Why Simon chose Lachy Groom",
+   "end_time": 2488
+  },
+  {
+   "start_time": 2488,
+   "title": "Becoming a founder on purpose",
+   "end_time": 2640
+  },
+  {
+   "start_time": 2640,
+   "title": "The “P99 engineer” philosophy",
+   "end_time": 2970
+  },
+  {
+   "start_time": 2970,
+   "title": "Bending software to your will",
+   "end_time": 3073
+  },
+  {
+   "start_time": 3073,
+   "title": "The future of turbopuffer",
+   "end_time": 3425
+  },
+  {
+   "start_time": 3425,
+   "title": "Simon’s tea obsession",
+   "end_time": 3543
+  },
+  {
+   "start_time": 3543,
+   "title": "Tea kits, X Live, and P99 Live",
+   "end_time": 3631
+  }
+ ],
+ "like_count": 136,
+ "channel": "Latent Space",
+ "uploader": "Latent Space",
+ "uploader_id": "@LatentSpacePod",
+ "uploader_url": "https://www.youtube.com/@LatentSpacePod",
+ "upload_date": "20260312",
+ "timestamp": 1773356136,
+ "fulltitle": "Retrieval After RAG: Hybrid Search, Agents, and Database Design — Simon Eskildsen of Turbopuffer",
+ "duration_string": "1:00:31",
+ "was_live": false,
+ "language": "en",
+ "_type": "video"
+}

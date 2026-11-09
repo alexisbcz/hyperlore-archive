@@ -1,0 +1,1596 @@
+{
+ "success": true,
+ "credits_remaining": 5132,
+ "credits_charged": 1,
+ "type": "video",
+ "url": "https://www.youtube.com/watch?v=dGMRklhjADU",
+ "transcript": [
+  {
+   "text": "Francis, how are you?",
+   "startMs": "80",
+   "endMs": "6160",
+   "startTimeText": "0:00"
+  },
+  {
+   "text": "Hi, Vic. I'm good. And you? Good. Um, so",
+   "startMs": "2639",
+   "endMs": "9360",
+   "startTimeText": "0:02"
+  },
+  {
+   "text": "I am really excited to welcome uh",
+   "startMs": "6160",
+   "endMs": "11599",
+   "startTimeText": "0:06"
+  },
+  {
+   "text": "Francis Bouvier, the co-founder of Light",
+   "startMs": "9360",
+   "endMs": "13599",
+   "startTimeText": "0:09"
+  },
+  {
+   "text": "Panda. Um, which for those of you who",
+   "startMs": "11599",
+   "endMs": "16480",
+   "startTimeText": "0:11"
+  },
+  {
+   "text": "don't know is a headless browser",
+   "startMs": "13599",
+   "endMs": "19600",
+   "startTimeText": "0:13"
+  },
+  {
+   "text": "designed for AI automation and um he's",
+   "startMs": "16480",
+   "endMs": "22080",
+   "startTimeText": "0:16"
+  },
+  {
+   "text": "going to walk us through uh a really",
+   "startMs": "19600",
+   "endMs": "23760",
+   "startTimeText": "0:19"
+  },
+  {
+   "text": "interesting talk. So I'll kick it over",
+   "startMs": "22080",
+   "endMs": "26080",
+   "startTimeText": "0:22"
+  },
+  {
+   "text": "to you and I'll dip out so you can take",
+   "startMs": "23760",
+   "endMs": "28480",
+   "startTimeText": "0:23"
+  },
+  {
+   "text": "over the screen.",
+   "startMs": "26080",
+   "endMs": "31920",
+   "startTimeText": "0:26"
+  },
+  {
+   "text": "Great. Well, thank you very much. Uh, so",
+   "startMs": "28480",
+   "endMs": "34320",
+   "startTimeText": "0:28"
+  },
+  {
+   "text": "today we are going to uh to speak about",
+   "startMs": "31920",
+   "endMs": "37960",
+   "startTimeText": "0:31"
+  },
+  {
+   "text": "how the world is going to evolve uh with",
+   "startMs": "34320",
+   "endMs": "41680",
+   "startTimeText": "0:34"
+  },
+  {
+   "text": "AI. Um, so I'm going to to share some",
+   "startMs": "37960",
+   "endMs": "46239",
+   "startTimeText": "0:37"
+  },
+  {
+   "text": "screens uh right now.",
+   "startMs": "41680",
+   "endMs": "46239",
+   "startTimeText": "0:41"
+  },
+  {
+   "text": "Um, yeah, great. Perfect. So",
+   "startMs": "46920",
+   "endMs": "55840",
+   "startTimeText": "0:46"
+  },
+  {
+   "text": "the uh today 50% of web traffic comes",
+   "startMs": "51640",
+   "endMs": "58800",
+   "startTimeText": "0:51"
+  },
+  {
+   "text": "from from machines but it wasn't always",
+   "startMs": "55840",
+   "endMs": "64479",
+   "startTimeText": "0:55"
+  },
+  {
+   "text": "like this. Um so uh the web uh was",
+   "startMs": "58800",
+   "endMs": "67680",
+   "startTimeText": "0:58"
+  },
+  {
+   "text": "designed uh for humans and it started",
+   "startMs": "64479",
+   "endMs": "72320",
+   "startTimeText": "1:04"
+  },
+  {
+   "text": "with uh simple HTML web pages and uh and",
+   "startMs": "67680",
+   "endMs": "76479",
+   "startTimeText": "1:07"
+  },
+  {
+   "text": "then it evolved uh to what we know we we",
+   "startMs": "72320",
+   "endMs": "80080",
+   "startTimeText": "1:12"
+  },
+  {
+   "text": "know now really complex applications",
+   "startMs": "76479",
+   "endMs": "84720",
+   "startTimeText": "1:16"
+  },
+  {
+   "text": "like Gmail, Figma, Google Meets and um",
+   "startMs": "80080",
+   "endMs": "86439",
+   "startTimeText": "1:20"
+  },
+  {
+   "text": "and to to",
+   "startMs": "84720",
+   "endMs": "89040",
+   "startTimeText": "1:24"
+  },
+  {
+   "text": "evolve towards this kind of complex",
+   "startMs": "86439",
+   "endMs": "90479",
+   "startTimeText": "1:26"
+  },
+  {
+   "text": "applications",
+   "startMs": "89040",
+   "endMs": "94960",
+   "startTimeText": "1:29"
+  },
+  {
+   "text": "uh the the web browser had to uh to",
+   "startMs": "90479",
+   "endMs": "97439",
+   "startTimeText": "1:30"
+  },
+  {
+   "text": "support this transition through a lot of",
+   "startMs": "94960",
+   "endMs": "100720",
+   "startTimeText": "1:34"
+  },
+  {
+   "text": "new web APIs. Uh so there are hundreds",
+   "startMs": "97439",
+   "endMs": "103840",
+   "startTimeText": "1:37"
+  },
+  {
+   "text": "of web APIs right now and new ones",
+   "startMs": "100720",
+   "endMs": "106880",
+   "startTimeText": "1:40"
+  },
+  {
+   "text": "emerge every day to support increas",
+   "startMs": "103840",
+   "endMs": "109240",
+   "startTimeText": "1:43"
+  },
+  {
+   "text": "increasingly complex use case in a",
+   "startMs": "106880",
+   "endMs": "113360",
+   "startTimeText": "1:46"
+  },
+  {
+   "text": "browser. Um and if we take a bit of",
+   "startMs": "109240",
+   "endMs": "116560",
+   "startTimeText": "1:49"
+  },
+  {
+   "text": "history of the web browser, Chrome and",
+   "startMs": "113360",
+   "endMs": "119439",
+   "startTimeText": "1:53"
+  },
+  {
+   "text": "all Chromium based browser out there are",
+   "startMs": "116560",
+   "endMs": "122320",
+   "startTimeText": "1:56"
+  },
+  {
+   "text": "using Blink as a rendering engine which",
+   "startMs": "119439",
+   "endMs": "126240",
+   "startTimeText": "1:59"
+  },
+  {
+   "text": "was which is a fork of WebKit used in",
+   "startMs": "122320",
+   "endMs": "132120",
+   "startTimeText": "2:02"
+  },
+  {
+   "text": "Safari which is itself a fork of Concur",
+   "startMs": "126240",
+   "endMs": "138000",
+   "startTimeText": "2:06"
+  },
+  {
+   "text": "and HTML which was a Linux brower in the",
+   "startMs": "132120",
+   "endMs": "142280",
+   "startTimeText": "2:12"
+  },
+  {
+   "text": "90s. So most of of this infrastructure",
+   "startMs": "138000",
+   "endMs": "146879",
+   "startTimeText": "2:18"
+  },
+  {
+   "text": "today is based on code from two decades",
+   "startMs": "142280",
+   "endMs": "150800",
+   "startTimeText": "2:22"
+  },
+  {
+   "text": "ago um which is not program per se but",
+   "startMs": "146879",
+   "endMs": "155080",
+   "startTimeText": "2:26"
+  },
+  {
+   "text": "of course it was not uh built for for",
+   "startMs": "150800",
+   "endMs": "160239",
+   "startTimeText": "2:30"
+  },
+  {
+   "text": "machines. So what where does the 50% of",
+   "startMs": "155080",
+   "endMs": "163680",
+   "startTimeText": "2:35"
+  },
+  {
+   "text": "web traffic come from? So it's it's",
+   "startMs": "160239",
+   "endMs": "166160",
+   "startTimeText": "2:40"
+  },
+  {
+   "text": "coming from of course indexing search",
+   "startMs": "163680",
+   "endMs": "170319",
+   "startTimeText": "2:43"
+  },
+  {
+   "text": "engine like like Google bots and what we",
+   "startMs": "166160",
+   "endMs": "172800",
+   "startTimeText": "2:46"
+  },
+  {
+   "text": "can call traditional scrapping data",
+   "startMs": "170319",
+   "endMs": "175519",
+   "startTimeText": "2:50"
+  },
+  {
+   "text": "extraction for e-commerce uh for the",
+   "startMs": "172800",
+   "endMs": "177920",
+   "startTimeText": "2:52"
+  },
+  {
+   "text": "generation use aggregator travel all",
+   "startMs": "175519",
+   "endMs": "180239",
+   "startTimeText": "2:55"
+  },
+  {
+   "text": "these kind of use cases and of course",
+   "startMs": "177920",
+   "endMs": "184959",
+   "startTimeText": "2:57"
+  },
+  {
+   "text": "the emerging use cases of AI uh for",
+   "startMs": "180239",
+   "endMs": "188239",
+   "startTimeText": "3:00"
+  },
+  {
+   "text": "training of course but also for uh",
+   "startMs": "184959",
+   "endMs": "191440",
+   "startTimeText": "3:04"
+  },
+  {
+   "text": "chatbot search and uh and and of course",
+   "startMs": "188239",
+   "endMs": "193560",
+   "startTimeText": "3:08"
+  },
+  {
+   "text": "AI I automation",
+   "startMs": "191440",
+   "endMs": "197040",
+   "startTimeText": "3:11"
+  },
+  {
+   "text": "workflows. So web automation in the past",
+   "startMs": "193560",
+   "endMs": "199440",
+   "startTimeText": "3:13"
+  },
+  {
+   "text": "uh was quite simple when the web was",
+   "startMs": "197040",
+   "endMs": "202879",
+   "startTimeText": "3:17"
+  },
+  {
+   "text": "simple. So it was just HTML web pages.",
+   "startMs": "199440",
+   "endMs": "207360",
+   "startTimeText": "3:19"
+  },
+  {
+   "text": "So a simple uh HTTP request through",
+   "startMs": "202879",
+   "endMs": "210760",
+   "startTimeText": "3:22"
+  },
+  {
+   "text": "tools like curl was enough to to to",
+   "startMs": "207360",
+   "endMs": "213760",
+   "startTimeText": "3:27"
+  },
+  {
+   "text": "retrive to retrive data. But now of",
+   "startMs": "210760",
+   "endMs": "216319",
+   "startTimeText": "3:30"
+  },
+  {
+   "text": "course all those complex applications",
+   "startMs": "213760",
+   "endMs": "219440",
+   "startTimeText": "3:33"
+  },
+  {
+   "text": "are using Java JavaScript and JavaScript",
+   "startMs": "216319",
+   "endMs": "222400",
+   "startTimeText": "3:36"
+  },
+  {
+   "text": "is everywhere. So you have to you use",
+   "startMs": "219440",
+   "endMs": "225680",
+   "startTimeText": "3:39"
+  },
+  {
+   "text": "tools like puppeteer, private, selenium",
+   "startMs": "222400",
+   "endMs": "228920",
+   "startTimeText": "3:42"
+  },
+  {
+   "text": "which were uh basically at the beginning",
+   "startMs": "225680",
+   "endMs": "232400",
+   "startTimeText": "3:45"
+  },
+  {
+   "text": "mostly testing frameworks and uh and",
+   "startMs": "228920",
+   "endMs": "234920",
+   "startTimeText": "3:48"
+  },
+  {
+   "text": "they they all use",
+   "startMs": "232400",
+   "endMs": "240400",
+   "startTimeText": "3:52"
+  },
+  {
+   "text": "u mostly chrome underneath uh through",
+   "startMs": "234920",
+   "endMs": "242239",
+   "startTimeText": "3:54"
+  },
+  {
+   "text": "what we call the headless browser. So",
+   "startMs": "240400",
+   "endMs": "244080",
+   "startTimeText": "4:00"
+  },
+  {
+   "text": "headless browser is basically the exact",
+   "startMs": "242239",
+   "endMs": "247760",
+   "startTimeText": "4:02"
+  },
+  {
+   "text": "same thing than the browser that you are",
+   "startMs": "244080",
+   "endMs": "250799",
+   "startTimeText": "4:04"
+  },
+  {
+   "text": "using in your uh computer or smartphone",
+   "startMs": "247760",
+   "endMs": "253920",
+   "startTimeText": "4:07"
+  },
+  {
+   "text": "except it does does not display uh the",
+   "startMs": "250799",
+   "endMs": "257680",
+   "startTimeText": "4:10"
+  },
+  {
+   "text": "the user interface but is it has",
+   "startMs": "253920",
+   "endMs": "260639",
+   "startTimeText": "4:13"
+  },
+  {
+   "text": "everything else including the graphical",
+   "startMs": "257680",
+   "endMs": "263280",
+   "startTimeText": "4:17"
+  },
+  {
+   "text": "uh rendering. So you can ask for for for",
+   "startMs": "260639",
+   "endMs": "265040",
+   "startTimeText": "4:20"
+  },
+  {
+   "text": "a website for a screenshot of the",
+   "startMs": "263280",
+   "endMs": "267120",
+   "startTimeText": "4:23"
+  },
+  {
+   "text": "website.",
+   "startMs": "265040",
+   "endMs": "268520",
+   "startTimeText": "4:25"
+  },
+  {
+   "text": "the of",
+   "startMs": "267120",
+   "endMs": "272000",
+   "startTimeText": "4:27"
+  },
+  {
+   "text": "course those use cases are going to be",
+   "startMs": "268520",
+   "endMs": "276360",
+   "startTimeText": "4:28"
+  },
+  {
+   "text": "more and more important with with AI and",
+   "startMs": "272000",
+   "endMs": "281479",
+   "startTimeText": "4:32"
+  },
+  {
+   "text": "and of the the problem with this kind of",
+   "startMs": "276360",
+   "endMs": "284160",
+   "startTimeText": "4:36"
+  },
+  {
+   "text": "traditional architecture that's doesn't",
+   "startMs": "281479",
+   "endMs": "288560",
+   "startTimeText": "4:41"
+  },
+  {
+   "text": "scale uh very well and uh and that's why",
+   "startMs": "284160",
+   "endMs": "292800",
+   "startTimeText": "4:44"
+  },
+  {
+   "text": "AI crawers for now do not use uh real",
+   "startMs": "288560",
+   "endMs": "296800",
+   "startTimeText": "4:48"
+  },
+  {
+   "text": "web browser then don't use JavaScript",
+   "startMs": "292800",
+   "endMs": "299120",
+   "startTimeText": "4:52"
+  },
+  {
+   "text": "and uh because it does not scale and",
+   "startMs": "296800",
+   "endMs": "302199",
+   "startTimeText": "4:56"
+  },
+  {
+   "text": "it's a lot of requests right now.",
+   "startMs": "299120",
+   "endMs": "305919",
+   "startTimeText": "4:59"
+  },
+  {
+   "text": "It's almost a third of Google B volume",
+   "startMs": "302199",
+   "endMs": "308080",
+   "startTimeText": "5:02"
+  },
+  {
+   "text": "and it's going to be to to to increase a",
+   "startMs": "305919",
+   "endMs": "311759",
+   "startTimeText": "5:05"
+  },
+  {
+   "text": "lot in in the next years of course. And",
+   "startMs": "308080",
+   "endMs": "313080",
+   "startTimeText": "5:08"
+  },
+  {
+   "text": "so so",
+   "startMs": "311759",
+   "endMs": "316800",
+   "startTimeText": "5:11"
+  },
+  {
+   "text": "the the fact that you can uh you can put",
+   "startMs": "313080",
+   "endMs": "321680",
+   "startTimeText": "5:13"
+  },
+  {
+   "text": "AI with a with a with a with a browser",
+   "startMs": "316800",
+   "endMs": "324080",
+   "startTimeText": "5:16"
+  },
+  {
+   "text": "makes a lot of of power of course but it",
+   "startMs": "321680",
+   "endMs": "327120",
+   "startTimeText": "5:21"
+  },
+  {
+   "text": "requires JavaScript execution um to be",
+   "startMs": "324080",
+   "endMs": "329680",
+   "startTimeText": "5:24"
+  },
+  {
+   "text": "to be accessible",
+   "startMs": "327120",
+   "endMs": "333600",
+   "startTimeText": "5:27"
+  },
+  {
+   "text": "um and and um so how how does it sc how",
+   "startMs": "329680",
+   "endMs": "334520",
+   "startTimeText": "5:29"
+  },
+  {
+   "text": "does it",
+   "startMs": "333600",
+   "endMs": "338320",
+   "startTimeText": "5:33"
+  },
+  {
+   "text": "scale? So, LLM have a lot of obstacles",
+   "startMs": "334520",
+   "endMs": "340720",
+   "startTimeText": "5:34"
+  },
+  {
+   "text": "to to scale the the traffic and it's",
+   "startMs": "338320",
+   "endMs": "342960",
+   "startTimeText": "5:38"
+  },
+  {
+   "text": "basically the same obstacles that's",
+   "startMs": "340720",
+   "endMs": "345400",
+   "startTimeText": "5:40"
+  },
+  {
+   "text": "traditional",
+   "startMs": "342960",
+   "endMs": "349600",
+   "startTimeText": "5:42"
+  },
+  {
+   "text": "um scrapping and use cases. So website",
+   "startMs": "345400",
+   "endMs": "352400",
+   "startTimeText": "5:45"
+  },
+  {
+   "text": "can be complex uh and it's difficult for",
+   "startMs": "349600",
+   "endMs": "354960",
+   "startTimeText": "5:49"
+  },
+  {
+   "text": "them to reason on the websites and of",
+   "startMs": "352400",
+   "endMs": "357039",
+   "startTimeText": "5:52"
+  },
+  {
+   "text": "course a lot of them as I was saying",
+   "startMs": "354960",
+   "endMs": "359919",
+   "startTimeText": "5:54"
+  },
+  {
+   "text": "requires a javascript execution and uh",
+   "startMs": "357039",
+   "endMs": "362800",
+   "startTimeText": "5:57"
+  },
+  {
+   "text": "and uh and the agent has to control the",
+   "startMs": "359919",
+   "endMs": "365440",
+   "startTimeText": "5:59"
+  },
+  {
+   "text": "full ber instance which is quite complex",
+   "startMs": "362800",
+   "endMs": "368400",
+   "startTimeText": "6:02"
+  },
+  {
+   "text": "and it of course can be really expensive",
+   "startMs": "365440",
+   "endMs": "372080",
+   "startTimeText": "6:05"
+  },
+  {
+   "text": "uh on on on compute. So should should we",
+   "startMs": "368400",
+   "endMs": "375600",
+   "startTimeText": "6:08"
+  },
+  {
+   "text": "rebuild the web for for AI agents? So",
+   "startMs": "372080",
+   "endMs": "378400",
+   "startTimeText": "6:12"
+  },
+  {
+   "text": "there is really two paths on that. We",
+   "startMs": "375600",
+   "endMs": "382319",
+   "startTimeText": "6:15"
+  },
+  {
+   "text": "websites can can adapt a bit like they",
+   "startMs": "378400",
+   "endMs": "385479",
+   "startTimeText": "6:18"
+  },
+  {
+   "text": "adapt to to to",
+   "startMs": "382319",
+   "endMs": "389120",
+   "startTimeText": "6:22"
+  },
+  {
+   "text": "mobile rendering. So with the better",
+   "startMs": "385479",
+   "endMs": "393199",
+   "startTimeText": "6:25"
+  },
+  {
+   "text": "meta tags and things like that and to be",
+   "startMs": "389120",
+   "endMs": "395600",
+   "startTimeText": "6:29"
+  },
+  {
+   "text": "sure that the content is well rendered",
+   "startMs": "393199",
+   "endMs": "399039",
+   "startTimeText": "6:33"
+  },
+  {
+   "text": "and of course with new uh protocol and",
+   "startMs": "395600",
+   "endMs": "402240",
+   "startTimeText": "6:35"
+  },
+  {
+   "text": "conventions like llm.txt take day. Uh,",
+   "startMs": "399039",
+   "endMs": "405520",
+   "startTimeText": "6:39"
+  },
+  {
+   "text": "and I I think also that some maybe big",
+   "startMs": "402240",
+   "endMs": "407880",
+   "startTimeText": "6:42"
+  },
+  {
+   "text": "websites can also",
+   "startMs": "405520",
+   "endMs": "414440",
+   "startTimeText": "6:45"
+  },
+  {
+   "text": "have AI API versions maybe through MCP",
+   "startMs": "407880",
+   "endMs": "418080",
+   "startTimeText": "6:47"
+  },
+  {
+   "text": "um support. But of course, most of the",
+   "startMs": "414440",
+   "endMs": "420880",
+   "startTimeText": "6:54"
+  },
+  {
+   "text": "web is going to stay as it is. So",
+   "startMs": "418080",
+   "endMs": "424039",
+   "startTimeText": "6:58"
+  },
+  {
+   "text": "browsers has to adapt also and uh and",
+   "startMs": "420880",
+   "endMs": "427840",
+   "startTimeText": "7:00"
+  },
+  {
+   "text": "and can adapt by elim limiting",
+   "startMs": "424039",
+   "endMs": "431840",
+   "startTimeText": "7:04"
+  },
+  {
+   "text": "eliminating all the uh all the elements",
+   "startMs": "427840",
+   "endMs": "436080",
+   "startTimeText": "7:07"
+  },
+  {
+   "text": "that are human facing uh so they can be",
+   "startMs": "431840",
+   "endMs": "439919",
+   "startTimeText": "7:11"
+  },
+  {
+   "text": "easy scalable can be embedded on on",
+   "startMs": "436080",
+   "endMs": "444039",
+   "startTimeText": "7:16"
+  },
+  {
+   "text": "device and optimized for AI uh for",
+   "startMs": "439919",
+   "endMs": "446800",
+   "startTimeText": "7:19"
+  },
+  {
+   "text": "automation for friendly output to put",
+   "startMs": "444039",
+   "endMs": "451199",
+   "startTimeText": "7:24"
+  },
+  {
+   "text": "the content in in a in a prompt uh and",
+   "startMs": "446800",
+   "endMs": "455039",
+   "startTimeText": "7:26"
+  },
+  {
+   "text": "most generally for better control of LLM",
+   "startMs": "451199",
+   "endMs": "457479",
+   "startTimeText": "7:31"
+  },
+  {
+   "text": "and and",
+   "startMs": "455039",
+   "endMs": "460880",
+   "startTimeText": "7:35"
+  },
+  {
+   "text": "agents. So this is what we are doing in",
+   "startMs": "457479",
+   "endMs": "464160",
+   "startTimeText": "7:37"
+  },
+  {
+   "text": "in light panda. So we took the exact",
+   "startMs": "460880",
+   "endMs": "466639",
+   "startTimeText": "7:40"
+  },
+  {
+   "text": "same kind of architecture than than",
+   "startMs": "464160",
+   "endMs": "470080",
+   "startTimeText": "7:44"
+  },
+  {
+   "text": "Chrome building from from scratch and",
+   "startMs": "466639",
+   "endMs": "472560",
+   "startTimeText": "7:46"
+  },
+  {
+   "text": "the main difference with a classic",
+   "startMs": "470080",
+   "endMs": "475280",
+   "startTimeText": "7:50"
+  },
+  {
+   "text": "headless browser is that we we did",
+   "startMs": "472560",
+   "endMs": "478599",
+   "startTimeText": "7:52"
+  },
+  {
+   "text": "remove the graphical rendering engine uh",
+   "startMs": "475280",
+   "endMs": "482240",
+   "startTimeText": "7:55"
+  },
+  {
+   "text": "which allows us to to to have a browser",
+   "startMs": "478599",
+   "endMs": "485360",
+   "startTimeText": "7:58"
+  },
+  {
+   "text": "that is 10 times faster than than",
+   "startMs": "482240",
+   "endMs": "488560",
+   "startTimeText": "8:02"
+  },
+  {
+   "text": "Chromeless and 10 times lighter. So it",
+   "startMs": "485360",
+   "endMs": "490960",
+   "startTimeText": "8:05"
+  },
+  {
+   "text": "means that for the same resource",
+   "startMs": "488560",
+   "endMs": "496199",
+   "startTimeText": "8:08"
+  },
+  {
+   "text": "basically you can have 100 more",
+   "startMs": "490960",
+   "endMs": "500080",
+   "startTimeText": "8:10"
+  },
+  {
+   "text": "um and uh and well this is a an open",
+   "startMs": "496199",
+   "endMs": "504560",
+   "startTimeText": "8:16"
+  },
+  {
+   "text": "source uh web browser uh and it's really",
+   "startMs": "500080",
+   "endMs": "508240",
+   "startTimeText": "8:20"
+  },
+  {
+   "text": "built well from scratch for for this uh",
+   "startMs": "504560",
+   "endMs": "512159",
+   "startTimeText": "8:24"
+  },
+  {
+   "text": "uh for this purpose. So the the the",
+   "startMs": "508240",
+   "endMs": "518599",
+   "startTimeText": "8:28"
+  },
+  {
+   "text": "question of uh of the evolving the web",
+   "startMs": "512159",
+   "endMs": "522320",
+   "startTimeText": "8:32"
+  },
+  {
+   "text": "uh is is not really like we we we are",
+   "startMs": "518599",
+   "endMs": "525360",
+   "startTimeText": "8:38"
+  },
+  {
+   "text": "going to have this adaptation uh and we",
+   "startMs": "522320",
+   "endMs": "528399",
+   "startTimeText": "8:42"
+  },
+  {
+   "text": "need the infrastructure to to be to be",
+   "startMs": "525360",
+   "endMs": "532880",
+   "startTimeText": "8:45"
+  },
+  {
+   "text": "to be built around that and and and to",
+   "startMs": "528399",
+   "endMs": "536279",
+   "startTimeText": "8:48"
+  },
+  {
+   "text": "to let the LM",
+   "startMs": "532880",
+   "endMs": "540000",
+   "startTimeText": "8:52"
+  },
+  {
+   "text": "really drive the the W. Thank you very",
+   "startMs": "536279",
+   "endMs": "543000",
+   "startTimeText": "8:56"
+  },
+  {
+   "text": "much.",
+   "startMs": "540000",
+   "endMs": "543000",
+   "startTimeText": "9:00"
+  },
+  {
+   "text": "Um, sorry. Awesome. Thank you so much,",
+   "startMs": "545360",
+   "endMs": "548800",
+   "startTimeText": "9:05"
+  },
+  {
+   "text": "Francis. That was super interesting. We",
+   "startMs": "547440",
+   "endMs": "553040",
+   "startTimeText": "9:07"
+  },
+  {
+   "text": "have a couple minutes here. Um, so just",
+   "startMs": "548800",
+   "endMs": "556560",
+   "startTimeText": "9:08"
+  },
+  {
+   "text": "wanted to uh do a little bit of of Q&A",
+   "startMs": "553040",
+   "endMs": "559200",
+   "startTimeText": "9:13"
+  },
+  {
+   "text": "and talk about some of the things that",
+   "startMs": "556560",
+   "endMs": "560959",
+   "startTimeText": "9:16"
+  },
+  {
+   "text": "um some of the things you just talked",
+   "startMs": "559200",
+   "endMs": "562800",
+   "startTimeText": "9:19"
+  },
+  {
+   "text": "about. Also to everyone watching feel",
+   "startMs": "560959",
+   "endMs": "565040",
+   "startTimeText": "9:20"
+  },
+  {
+   "text": "free to drop any questions you have uh",
+   "startMs": "562800",
+   "endMs": "566800",
+   "startTimeText": "9:22"
+  },
+  {
+   "text": "for Francis into the chat and we can",
+   "startMs": "565040",
+   "endMs": "569519",
+   "startTimeText": "9:25"
+  },
+  {
+   "text": "answer some before before the the next",
+   "startMs": "566800",
+   "endMs": "572000",
+   "startTimeText": "9:26"
+  },
+  {
+   "text": "session. Um, one of the things I was",
+   "startMs": "569519",
+   "endMs": "575240",
+   "startTimeText": "9:29"
+  },
+  {
+   "text": "curious about",
+   "startMs": "572000",
+   "endMs": "578800",
+   "startTimeText": "9:32"
+  },
+  {
+   "text": "is, you know, given that I think you",
+   "startMs": "575240",
+   "endMs": "581519",
+   "startTimeText": "9:35"
+  },
+  {
+   "text": "said something like roughly 50% of web",
+   "startMs": "578800",
+   "endMs": "585120",
+   "startTimeText": "9:38"
+  },
+  {
+   "text": "traffic is now from machines um or will",
+   "startMs": "581519",
+   "endMs": "591560",
+   "startTimeText": "9:41"
+  },
+  {
+   "text": "be um what timeline do you see for web",
+   "startMs": "585120",
+   "endMs": "594959",
+   "startTimeText": "9:45"
+  },
+  {
+   "text": "infrastructure fundamentally changing um",
+   "startMs": "591560",
+   "endMs": "599920",
+   "startTimeText": "9:51"
+  },
+  {
+   "text": "to kind of accommodate AI needs?",
+   "startMs": "594959",
+   "endMs": "603080",
+   "startTimeText": "9:54"
+  },
+  {
+   "text": "Yeah. So I think of course we have",
+   "startMs": "599920",
+   "endMs": "607279",
+   "startTimeText": "9:59"
+  },
+  {
+   "text": "several steps. Uh so so right now we we",
+   "startMs": "603080",
+   "endMs": "611279",
+   "startTimeText": "10:03"
+  },
+  {
+   "text": "can see the uh the the first step uh",
+   "startMs": "607279",
+   "endMs": "615120",
+   "startTimeText": "10:07"
+  },
+  {
+   "text": "with also with the MCP and and and we",
+   "startMs": "611279",
+   "endMs": "618640",
+   "startTimeText": "10:11"
+  },
+  {
+   "text": "can um we can see the the the the first",
+   "startMs": "615120",
+   "endMs": "621680",
+   "startTimeText": "10:15"
+  },
+  {
+   "text": "step which is really more on the how we",
+   "startMs": "618640",
+   "endMs": "625680",
+   "startTimeText": "10:18"
+  },
+  {
+   "text": "can uh take a website and and and have",
+   "startMs": "621680",
+   "endMs": "630240",
+   "startTimeText": "10:21"
+  },
+  {
+   "text": "the LLM work on on how in our behalf we",
+   "startMs": "625680",
+   "endMs": "633279",
+   "startTimeText": "10:25"
+  },
+  {
+   "text": "have seen a lot of demo uh out there in",
+   "startMs": "630240",
+   "endMs": "636680",
+   "startTimeText": "10:30"
+  },
+  {
+   "text": "the in the past um wigs with the",
+   "startMs": "633279",
+   "endMs": "640240",
+   "startTimeText": "10:33"
+  },
+  {
+   "text": "operator or open source version like a",
+   "startMs": "636680",
+   "endMs": "642959",
+   "startTimeText": "10:36"
+  },
+  {
+   "text": "browser use. Uh so I think this is like",
+   "startMs": "640240",
+   "endMs": "644440",
+   "startTimeText": "10:40"
+  },
+  {
+   "text": "the",
+   "startMs": "642959",
+   "endMs": "647800",
+   "startTimeText": "10:42"
+  },
+  {
+   "text": "um atomic I would say uh",
+   "startMs": "644440",
+   "endMs": "651200",
+   "startTimeText": "10:44"
+  },
+  {
+   "text": "um first step but of course the the",
+   "startMs": "647800",
+   "endMs": "654079",
+   "startTimeText": "10:47"
+  },
+  {
+   "text": "other step right after that is to be",
+   "startMs": "651200",
+   "endMs": "658240",
+   "startTimeText": "10:51"
+  },
+  {
+   "text": "able to scale because we um we will have",
+   "startMs": "654079",
+   "endMs": "661360",
+   "startTimeText": "10:54"
+  },
+  {
+   "text": "billions of requests of that. Uh and",
+   "startMs": "658240",
+   "endMs": "664399",
+   "startTimeText": "10:58"
+  },
+  {
+   "text": "this is something that needs to have a",
+   "startMs": "661360",
+   "endMs": "666399",
+   "startTimeText": "11:01"
+  },
+  {
+   "text": "we really need to have that in mind. So",
+   "startMs": "664399",
+   "endMs": "668959",
+   "startTimeText": "11:04"
+  },
+  {
+   "text": "something that is really high in compute",
+   "startMs": "666399",
+   "endMs": "672079",
+   "startTimeText": "11:06"
+  },
+  {
+   "text": "or really slow to execute will not be",
+   "startMs": "668959",
+   "endMs": "674880",
+   "startTimeText": "11:08"
+  },
+  {
+   "text": "able to scale. So so it's really good to",
+   "startMs": "672079",
+   "endMs": "676959",
+   "startTimeText": "11:12"
+  },
+  {
+   "text": "have this first step just to say okay",
+   "startMs": "674880",
+   "endMs": "679440",
+   "startTimeText": "11:14"
+  },
+  {
+   "text": "this is what we we can do what is",
+   "startMs": "676959",
+   "endMs": "682000",
+   "startTimeText": "11:16"
+  },
+  {
+   "text": "possible and it's just the beginning but",
+   "startMs": "679440",
+   "endMs": "685440",
+   "startTimeText": "11:19"
+  },
+  {
+   "text": "of course we have to see see that in a",
+   "startMs": "682000",
+   "endMs": "688160",
+   "startTimeText": "11:22"
+  },
+  {
+   "text": "more long-term way uh to be able to",
+   "startMs": "685440",
+   "endMs": "690240",
+   "startTimeText": "11:25"
+  },
+  {
+   "text": "scale.",
+   "startMs": "688160",
+   "endMs": "691680",
+   "startTimeText": "11:28"
+  },
+  {
+   "text": "Yeah that's really interesting. That",
+   "startMs": "690240",
+   "endMs": "694640",
+   "startTimeText": "11:30"
+  },
+  {
+   "text": "makes a ton of sense. Um the the other",
+   "startMs": "691680",
+   "endMs": "696360",
+   "startTimeText": "11:31"
+  },
+  {
+   "text": "question I had",
+   "startMs": "694640",
+   "endMs": "699120",
+   "startTimeText": "11:34"
+  },
+  {
+   "text": "was this is a pretty broad question too",
+   "startMs": "696360",
+   "endMs": "701480",
+   "startTimeText": "11:36"
+  },
+  {
+   "text": "but like how do you",
+   "startMs": "699120",
+   "endMs": "706000",
+   "startTimeText": "11:39"
+  },
+  {
+   "text": "see websites adapting to become more",
+   "startMs": "701480",
+   "endMs": "709480",
+   "startTimeText": "11:41"
+  },
+  {
+   "text": "uh let's say AI friendly without",
+   "startMs": "706000",
+   "endMs": "712839",
+   "startTimeText": "11:46"
+  },
+  {
+   "text": "compromising kind of like the human user",
+   "startMs": "709480",
+   "endMs": "714959",
+   "startTimeText": "11:49"
+  },
+  {
+   "text": "experience? Are there any things in",
+   "startMs": "712839",
+   "endMs": "717519",
+   "startTimeText": "11:52"
+  },
+  {
+   "text": "particular that you think are really",
+   "startMs": "714959",
+   "endMs": "721040",
+   "startTimeText": "11:54"
+  },
+  {
+   "text": "important um sort of like frameworks or",
+   "startMs": "717519",
+   "endMs": "723279",
+   "startTimeText": "11:57"
+  },
+  {
+   "text": "just things things that folks really",
+   "startMs": "721040",
+   "endMs": "725760",
+   "startTimeText": "12:01"
+  },
+  {
+   "text": "need to think about when kind of moving",
+   "startMs": "723279",
+   "endMs": "728320",
+   "startTimeText": "12:03"
+  },
+  {
+   "text": "towards that future?",
+   "startMs": "725760",
+   "endMs": "730720",
+   "startTimeText": "12:05"
+  },
+  {
+   "text": "Yes. So I I think one of the big",
+   "startMs": "728320",
+   "endMs": "735200",
+   "startTimeText": "12:08"
+  },
+  {
+   "text": "problems between a web page and and LLN",
+   "startMs": "730720",
+   "endMs": "738480",
+   "startTimeText": "12:10"
+  },
+  {
+   "text": "is the the size and the and the noise of",
+   "startMs": "735200",
+   "endMs": "741279",
+   "startTimeText": "12:15"
+  },
+  {
+   "text": "a web page. So when when you try just to",
+   "startMs": "738480",
+   "endMs": "743160",
+   "startTimeText": "12:18"
+  },
+  {
+   "text": "take what is",
+   "startMs": "741279",
+   "endMs": "746399",
+   "startTimeText": "12:21"
+  },
+  {
+   "text": "the the raw HTML of a web page and you",
+   "startMs": "743160",
+   "endMs": "749440",
+   "startTimeText": "12:23"
+  },
+  {
+   "text": "put that in a in a in a context window",
+   "startMs": "746399",
+   "endMs": "752079",
+   "startTimeText": "12:26"
+  },
+  {
+   "text": "of an LLM, you have a lot of tokens and",
+   "startMs": "749440",
+   "endMs": "754160",
+   "startTimeText": "12:29"
+  },
+  {
+   "text": "you have a lot of noise. So this is one",
+   "startMs": "752079",
+   "endMs": "756880",
+   "startTimeText": "12:32"
+  },
+  {
+   "text": "of the the I think most important",
+   "startMs": "754160",
+   "endMs": "759519",
+   "startTimeText": "12:34"
+  },
+  {
+   "text": "challenge. So of course you can just",
+   "startMs": "756880",
+   "endMs": "762160",
+   "startTimeText": "12:36"
+  },
+  {
+   "text": "some do some kind of cleanup of the",
+   "startMs": "759519",
+   "endMs": "766880",
+   "startTimeText": "12:39"
+  },
+  {
+   "text": "HTML. uh but uh websites can really help",
+   "startMs": "762160",
+   "endMs": "769920",
+   "startTimeText": "12:42"
+  },
+  {
+   "text": "by uh maybe through meta tags or stuff",
+   "startMs": "766880",
+   "endMs": "772639",
+   "startTimeText": "12:46"
+  },
+  {
+   "text": "like metadata but just to say okay this",
+   "startMs": "769920",
+   "endMs": "775200",
+   "startTimeText": "12:49"
+  },
+  {
+   "text": "this part is the part that is relevant",
+   "startMs": "772639",
+   "endMs": "778800",
+   "startTimeText": "12:52"
+  },
+  {
+   "text": "for uh this kind of of use case. So if",
+   "startMs": "775200",
+   "endMs": "782079",
+   "startTimeText": "12:55"
+  },
+  {
+   "text": "if you if you take just a simple uh",
+   "startMs": "778800",
+   "endMs": "784000",
+   "startTimeText": "12:58"
+  },
+  {
+   "text": "e-commerce web page for example, you",
+   "startMs": "782079",
+   "endMs": "786399",
+   "startTimeText": "13:02"
+  },
+  {
+   "text": "have several blocks on on it. You have",
+   "startMs": "784000",
+   "endMs": "788639",
+   "startTimeText": "13:04"
+  },
+  {
+   "text": "the main product and then you have the",
+   "startMs": "786399",
+   "endMs": "791279",
+   "startTimeText": "13:06"
+  },
+  {
+   "text": "um the the other kind of product",
+   "startMs": "788639",
+   "endMs": "793440",
+   "startTimeText": "13:08"
+  },
+  {
+   "text": "lookalike and stuff like that. And and",
+   "startMs": "791279",
+   "endMs": "795279",
+   "startTimeText": "13:11"
+  },
+  {
+   "text": "it's important to reduce all that noise",
+   "startMs": "793440",
+   "endMs": "797920",
+   "startTimeText": "13:13"
+  },
+  {
+   "text": "to just be on the on the main thing that",
+   "startMs": "795279",
+   "endMs": "800160",
+   "startTimeText": "13:15"
+  },
+  {
+   "text": "you want to work on. And it's the same",
+   "startMs": "797920",
+   "endMs": "803360",
+   "startTimeText": "13:17"
+  },
+  {
+   "text": "for different kind of web pages. and the",
+   "startMs": "800160",
+   "endMs": "805839",
+   "startTimeText": "13:20"
+  },
+  {
+   "text": "the the best people to say what is",
+   "startMs": "803360",
+   "endMs": "808480",
+   "startTimeText": "13:23"
+  },
+  {
+   "text": "important or not is a website creator",
+   "startMs": "805839",
+   "endMs": "811120",
+   "startTimeText": "13:25"
+  },
+  {
+   "text": "itself. So I think that with this kind",
+   "startMs": "808480",
+   "endMs": "815120",
+   "startTimeText": "13:28"
+  },
+  {
+   "text": "of just a few metatags uh you can you",
+   "startMs": "811120",
+   "endMs": "820000",
+   "startTimeText": "13:31"
+  },
+  {
+   "text": "can really help the agents to to be more",
+   "startMs": "815120",
+   "endMs": "822839",
+   "startTimeText": "13:35"
+  },
+  {
+   "text": "useful and determinist.",
+   "startMs": "820000",
+   "endMs": "826000",
+   "startTimeText": "13:40"
+  },
+  {
+   "text": "Cool. Um Francis, thank you so much for",
+   "startMs": "822839",
+   "endMs": "827519",
+   "startTimeText": "13:42"
+  },
+  {
+   "text": "for joining. This was really",
+   "startMs": "826000",
+   "endMs": "830000",
+   "startTimeText": "13:46"
+  },
+  {
+   "text": "interesting. Um really appreciate you",
+   "startMs": "827519",
+   "endMs": "833720",
+   "startTimeText": "13:47"
+  },
+  {
+   "text": "being a part of this Glossaic",
+   "startMs": "830000",
+   "endMs": "838160",
+   "startTimeText": "13:50"
+  },
+  {
+   "text": "Hangout. Hope you Thank you very much.",
+   "startMs": "833720",
+   "endMs": "838160",
+   "startTimeText": "13:53"
+  }
+ ],
+ "transcript_only_text": " Francis,  how  are  you? \n Hi,  Vic.  I'm  good.  And  you?  Good.  Um,  so \n I  am  really  excited  to  welcome  uh \n Francis  Bouvier,  the  co-founder  of  Light \n Panda.  Um,  which  for  those  of  you  who \n don't  know  is  a  headless  browser \n designed  for  AI  automation  and  um  he's \n going  to  walk  us  through  uh  a  really \n interesting  talk.  So  I'll  kick  it  over \n to  you  and  I'll  dip  out  so  you  can  take \n over  the  screen. \n Great.  Well,  thank  you  very  much.  Uh,  so \n today  we  are  going  to  uh  to  speak  about \n how  the  world  is  going  to  evolve  uh  with \n AI.  Um,  so  I'm  going  to  to  share  some \n screens  uh  right  now. \n Um,  yeah,  great.  Perfect.  So \n the  uh  today  50%  of  web  traffic  comes \n from  from  machines  but  it  wasn't  always \n like  this.  Um  so  uh  the  web  uh  was \n designed  uh  for  humans  and  it  started \n with  uh  simple  HTML  web  pages  and  uh  and \n then  it  evolved  uh  to  what  we  know  we  we \n know  now  really  complex  applications \n like  Gmail,  Figma,  Google  Meets  and  um \n and  to  to \n evolve  towards  this  kind  of  complex \n applications \n uh  the  the  web  browser  had  to  uh  to \n support  this  transition  through  a  lot  of \n new  web  APIs.  Uh  so  there  are  hundreds \n of  web  APIs  right  now  and  new  ones \n emerge  every  day  to  support  increas \n increasingly  complex  use  case  in  a \n browser.  Um  and  if  we  take  a  bit  of \n history  of  the  web  browser,  Chrome  and \n all  Chromium  based  browser  out  there  are \n using  Blink  as  a  rendering  engine  which \n was  which  is  a  fork  of  WebKit  used  in \n Safari  which  is  itself  a  fork  of  Concur \n and  HTML  which  was  a  Linux  brower  in  the \n 90s.  So  most  of  of  this  infrastructure \n today  is  based  on  code  from  two  decades \n ago  um  which  is  not  program  per  se  but \n of  course  it  was  not  uh  built  for  for \n machines.  So  what  where  does  the  50%  of \n web  traffic  come  from?  So  it's  it's \n coming  from  of  course  indexing  search \n engine  like  like  Google  bots  and  what  we \n can  call  traditional  scrapping  data \n extraction  for  e-commerce  uh  for  the \n generation  use  aggregator  travel  all \n these  kind  of  use  cases  and  of  course \n the  emerging  use  cases  of  AI  uh  for \n training  of  course  but  also  for  uh \n chatbot  search  and  uh  and  and  of  course \n AI  I  automation \n workflows.  So  web  automation  in  the  past \n uh  was  quite  simple  when  the  web  was \n simple.  So  it  was  just  HTML  web  pages. \n So  a  simple  uh  HTTP  request  through \n tools  like  curl  was  enough  to  to to \n retrive  to  retrive  data.  But  now  of \n course  all  those  complex  applications \n are  using  Java  JavaScript  and  JavaScript \n is  everywhere.  So  you  have  to  you  use \n tools  like  puppeteer,  private,  selenium \n which  were  uh  basically  at  the  beginning \n mostly  testing  frameworks  and  uh  and \n they  they  all  use \n u  mostly  chrome  underneath  uh  through \n what  we  call  the  headless  browser.  So \n headless  browser  is  basically  the  exact \n same  thing  than  the  browser  that  you  are \n using  in  your  uh  computer  or  smartphone \n except  it  does  does  not  display  uh  the \n the  user  interface  but  is  it  has \n everything  else  including  the  graphical \n uh  rendering.  So  you  can  ask  for  for  for \n a  website  for  a  screenshot  of  the \n website. \n the  of \n course  those  use  cases  are  going  to  be \n more  and  more  important  with  with  AI  and \n and  of  the  the  problem  with  this  kind  of \n traditional  architecture  that's  doesn't \n scale  uh  very  well  and  uh  and  that's  why \n AI  crawers  for  now  do  not  use  uh  real \n web  browser  then  don't  use  JavaScript \n and  uh  because  it  does  not  scale  and \n it's  a  lot  of  requests  right  now. \n It's  almost  a  third  of  Google  B  volume \n and  it's  going  to  be  to  to  to  increase  a \n lot  in  in  the  next  years  of  course.  And \n so  so \n the  the  fact  that  you  can  uh  you  can  put \n AI  with  a  with  a  with  a  with  a  browser \n makes  a  lot  of  of  power  of  course  but  it \n requires  JavaScript  execution  um  to  be \n to  be  accessible \n um  and  and  um  so  how  how  does  it  sc  how \n does  it \n scale?  So,  LLM  have  a  lot  of  obstacles \n to  to  scale  the  the  traffic  and  it's \n basically  the  same  obstacles  that's \n traditional \n um  scrapping  and  use  cases.  So  website \n can  be  complex  uh  and  it's  difficult  for \n them  to  reason  on  the  websites  and  of \n course  a  lot  of  them  as  I  was  saying \n requires  a  javascript  execution  and  uh \n and  uh  and  the  agent  has  to  control  the \n full  ber  instance  which  is  quite  complex \n and  it  of  course  can  be  really  expensive \n uh  on  on on  compute.  So  should  should  we \n rebuild  the  web  for  for  AI  agents?  So \n there  is  really  two  paths  on  that.  We \n websites  can  can  adapt  a  bit  like  they \n adapt  to  to  to \n mobile  rendering.  So  with  the  better \n meta  tags  and  things  like  that  and  to  be \n sure  that  the  content  is  well  rendered \n and  of  course  with  new  uh  protocol  and \n conventions  like  llm.txt  take  day.  Uh, \n and  I  I  think  also  that  some  maybe  big \n websites  can  also \n have  AI  API  versions  maybe  through  MCP \n um  support.  But  of  course,  most  of  the \n web  is  going  to  stay  as  it  is.  So \n browsers  has  to  adapt  also  and  uh  and \n and  can  adapt  by  elim  limiting \n eliminating  all  the  uh  all  the  elements \n that  are  human  facing  uh  so  they  can  be \n easy  scalable  can  be  embedded  on  on \n device  and  optimized  for  AI  uh  for \n automation  for  friendly  output  to  put \n the  content  in  in  a  in  a  prompt  uh  and \n most  generally  for  better  control  of  LLM \n and  and \n agents.  So  this  is  what  we  are  doing  in \n in  light  panda.  So  we  took  the  exact \n same  kind  of  architecture  than  than \n Chrome  building  from  from  scratch  and \n the  main  difference  with  a  classic \n headless  browser  is  that  we  we  did \n remove  the  graphical  rendering  engine  uh \n which  allows  us  to  to  to  have  a  browser \n that  is  10  times  faster  than  than \n Chromeless  and  10  times  lighter.  So  it \n means  that  for  the  same  resource \n basically  you  can  have  100  more \n um  and  uh  and  well  this  is  a  an  open \n source  uh  web  browser  uh  and  it's  really \n built  well  from  scratch  for  for  this  uh \n uh  for  this  purpose.  So  the  the  the \n question  of  uh  of  the  evolving  the  web \n uh  is  is  not  really  like  we  we  we  are \n going  to  have  this  adaptation  uh  and  we \n need  the  infrastructure  to  to  be  to  be \n to  be  built  around  that  and  and  and  to \n to  let  the  LM \n really  drive  the  the  W.  Thank  you  very \n much. \n Um,  sorry.  Awesome.  Thank  you  so  much, \n Francis.  That  was  super  interesting.  We \n have  a  couple  minutes  here.  Um,  so  just \n wanted  to  uh  do  a  little  bit  of  of  Q&A \n and  talk  about  some  of  the  things  that \n um  some  of  the  things  you  just  talked \n about.  Also  to  everyone  watching  feel \n free  to  drop  any  questions  you  have  uh \n for  Francis  into  the  chat  and  we  can \n answer  some  before  before  the  the  next \n session.  Um,  one  of  the  things  I  was \n curious  about \n is,  you  know,  given  that  I  think  you \n said  something  like  roughly  50%  of  web \n traffic  is  now  from  machines  um  or  will \n be  um  what  timeline  do  you  see  for  web \n infrastructure  fundamentally  changing  um \n to  kind  of  accommodate  AI  needs? \n Yeah.  So  I  think  of  course  we  have \n several  steps.  Uh  so  so  right  now  we  we \n can  see  the  uh  the  the  first  step  uh \n with  also  with  the  MCP  and  and  and  we \n can  um  we  can  see  the  the the  the  first \n step  which  is  really  more  on  the  how  we \n can  uh  take  a  website  and  and  and  have \n the  LLM  work  on  on  how  in  our  behalf  we \n have  seen  a  lot  of  demo  uh  out  there  in \n the  in  the  past  um  wigs  with  the \n operator  or  open  source  version  like  a \n browser  use.  Uh  so  I  think  this  is  like \n the \n um  atomic  I  would  say  uh \n um  first  step  but  of  course  the  the \n other  step  right  after  that  is  to  be \n able  to  scale  because  we  um  we  will  have \n billions  of  requests  of  that.  Uh  and \n this  is  something  that  needs  to  have  a \n we  really  need  to  have  that  in  mind.  So \n something  that  is  really  high  in  compute \n or  really  slow  to  execute  will  not  be \n able  to  scale.  So  so  it's  really  good  to \n have  this  first  step  just  to  say  okay \n this  is  what  we  we  can  do  what  is \n possible  and  it's  just  the  beginning  but \n of  course  we  have  to  see  see  that  in  a \n more  long-term  way  uh  to  be  able  to \n scale. \n Yeah  that's  really  interesting.  That \n makes  a  ton  of  sense.  Um  the  the  other \n question  I  had \n was  this  is  a  pretty  broad  question  too \n but  like  how  do  you \n see  websites  adapting  to  become  more \n uh  let's  say  AI  friendly  without \n compromising  kind  of  like  the  human  user \n experience?  Are  there  any  things  in \n particular  that  you  think  are  really \n important  um  sort  of  like  frameworks  or \n just  things  things  that  folks  really \n need  to  think  about  when  kind  of  moving \n towards  that  future? \n Yes.  So  I  I  think  one  of  the  big \n problems  between  a  web  page  and  and  LLN \n is  the  the  size  and  the  and  the  noise  of \n a  web  page.  So  when  when  you  try  just  to \n take  what  is \n the  the  raw  HTML  of  a  web  page  and  you \n put  that  in  a  in  a  in  a  context  window \n of  an  LLM,  you  have  a  lot  of  tokens  and \n you  have  a  lot  of  noise.  So  this  is  one \n of  the  the  I  think  most  important \n challenge.  So  of  course  you  can  just \n some  do  some  kind  of  cleanup  of  the \n HTML.  uh  but  uh  websites  can  really  help \n by  uh  maybe  through  meta  tags  or  stuff \n like  metadata  but  just  to  say  okay  this \n this  part  is  the  part  that  is  relevant \n for  uh  this  kind  of  of  use  case.  So  if \n if  you  if  you  take  just  a  simple  uh \n e-commerce  web  page  for  example,  you \n have  several  blocks  on  on  it.  You  have \n the  main  product  and  then  you  have  the \n um  the  the  other  kind  of  product \n lookalike  and  stuff  like  that.  And  and \n it's  important  to  reduce  all  that  noise \n to  just  be  on  the  on  the  main  thing  that \n you  want  to  work  on.  And  it's  the  same \n for  different  kind  of  web  pages.  and  the \n the  the  best  people  to  say  what  is \n important  or  not  is  a  website  creator \n itself.  So  I  think  that  with  this  kind \n of  just  a  few  metatags  uh  you  can  you \n can  really  help  the  agents  to  to  be  more \n useful  and  determinist. \n Cool.  Um  Francis,  thank  you  so  much  for \n for  joining.  This  was  really \n interesting.  Um  really  appreciate  you \n being  a  part  of  this  Glossaic \n Hangout.  Hope  you  Thank  you  very  much.",
+ "language": "English",
+ "videoId": "dGMRklhjADU",
+ "captionTracks": [
+  {
+   "name": {
+    "simpleText": "English (auto-generated)"
+   },
+   "vssId": "a.en",
+   "languageCode": "en",
+   "kind": "asr",
+   "isTranslatable": true,
+   "trackName": ""
+  }
+ ]
+}

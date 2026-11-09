@@ -1,0 +1,2738 @@
+[0] This is 2014. That was the year that
+[2] Slack actually launched. I was
+[3] interviewed by MIT Technology Review and
+[5] asked if we were working to improve
+[7] Slack. I said, "I feel like what we have
+[9] right now is just a giant piece of [ __ ]
+[11] It's just terrible and we should be
+[12] humiliated that we offer this to the
+[14] public." To me, that was like, "You
+[16] should be embarrassed. If you can't see
+[19] almost limitless opportunities to
+[21] improve, then you shouldn't be designing
+[23] a product."
+[24] >> Slack was famous for being one of the
+[25] early consumerized B2B SaaS products.
+[29] >> At more than one company all hands, I
+[31] made everyone in the company repeat
+[32] [music] this as a chant. In the long
+[34] run, the measure of our success will be
+[36] the amount of value that we create for
+[38] customers. And you can put effort into
+[40] demonstrating that you have created
+[41] [music] this value and stuff like that,
+[43] but there's no substitute for actually
+[44] having created it.
+[45] >> Something else I heard that you often
+[47] espouse is friction in the product
+[49] experience is actually often a good
+[51] thing.
+[51] >> It It became an assumption that you
+[54] should always be trying to remove
+[55] friction when the challenge is really
+[57] comprehension. If your software kind of
+[58] stops me to and asks me to make a
+[60] decision and I don't really understand
+[61] it, you make me feel stupid. If people
+[63] could get over the idea of reducing
+[65] friction as a number one goal or
+[66] reducing the number of clicks or taps or
+[68] something, [music] and instead focus on,
+[70] "How can I make this simple? How do I
+[72] prevent people from having to think in
+[74] order to use my software?"
+[75] >> You started two companies, both famously
+[77] pivoted. I imagine many people come to
+[78] you for advice on pivoting.
+[79] >> The decision is about like, have you
+[81] exhausted [music] the possibilities?
+[82] Creating the distance so that you can
+[84] make an intellectual, rational decision
+[86] about it rather than an emotional
+[88] decision is essential. And the reason I
+[90] say you have to be coldly rational about
+[91] it is because [music] it's [ __ ]
+[92] humiliating.
+[95] Today my guest is Stewart Butterfield, a
+[98] founder and product legend who rarely
+[100] does podcasts. Stewart founded Flickr
+[102] and then Slack, which he sold to
+[104] Salesforce in one of the biggest
+[105] acquisitions in tech history at the
+[107] time. There is so much product and
+[109] leadership wisdom locked away in his
+[111] head. I feel like our conversation just
+[113] scratched the surface. We chat about
+[114] utility curves, something he calls the
+[116] owner's delusion, a hilarious pattern he
+[119] sees at companies he calls
+[120] hyperrealistic work-like activities.
+[123] What he's learned about product and
+[124] craft and taste and Parkinson's law, why
+[126] you need to obsess with not making your
+[128] users think, [music]
+[129] the backstory on his legendary "We Don't
+[131] Sell Saddles Here" memo, and so much
+[133] more. A huge thank [music] you to Noah
+[135] Weiss, Chris Cordell, Ali Rail, and
+[138] Johnny Rodgers for suggesting [music]
+[139] topics and questions for this
+[140] conversation. This is a really special
+[143] one and I really hope to have Stewart
+[145] back to delve even deeper. If you enjoy
+[147] this podcast, [music] don't forget to
+[148] subscribe and follow it in your favorite
+[149] podcasting app or YouTube. It helps
+[151] tremendously. And if you become an
+[154] annual subscriber of my newsletter, you
+[156] get 17 incredible products for free for
+[159] an entire year, including Devon, lovable
+[162] Repl it Bolt, Linear, Superhuman,
+[164] Dscript, Perplexity, Warp, Granola,
+[166] Magic Patterns, Raycast, and Maven. Head
+[168] on over to lennysnewsletter.com and
+[170] click product pass. With that, I bring
+[172] you Stewart Butterfield after a short
+[175] word from our sponsors.
+[177] Here's a puzzle for you. What do OpenAI,
+[179] Cursor, Perplexity, Vercel, Plaid, and
+[182] hundreds of other winning companies have
+[183] in common? The answer is they're all
+[186] powered by today's sponsor, WorkOS. If
+[189] you're building software for
+[190] enterprises, you've probably felt the
+[191] pain of integrating single sign-on,
+[193] SCIM, RBAC, audit logs, and other
+[196] features required by big customers.
+[198] WorkOS turns those deal blockers into
+[200] drop-in APIs with a modern developer
+[203] platform built specifically for B2B
+[205] SaaS. Whether you're a seed-stage
+[207] startup trying to land your first
+[208] enterprise customer or a unicorn
+[210] expanding globally, WorkOS is the
+[212] fastest path to becoming
+[213] enterprise-ready [music] and unlocking
+[215] growth. They're essentially Stripe for
+[217] enterprise features. Visit workos.com to
+[220] get [music] started or just hit up their
+[221] Slack support where they have real
+[223] engineers in there who answer your
+[224] questions super fast. WorkOS allows you
+[227] to build like the best with delightful
+[229] APIs, comprehensive docs, and a smooth
+[232] developer experience. Go to workos.com
+[234] to make your app enterprise-ready today.
+[237] This episode is brought to you by
+[239] Metronome. You just launched your new
+[241] shiny AI product. The new pricing page
+[244] looks awesome, but behind it,
+[246] >> [music]
+[246] >> last-minute glue code, messy
+[247] spreadsheets, and running ad-hoc queries
+[249] to figure out what to build. Customers
+[252] get invoices they can't understand,
+[253] engineers are chasing billing bugs,
+[255] finance can't close the books. With
+[257] Metronome, you hand it all off to the
+[259] real-time billing infrastructure that
+[261] just works. Reliable, flexible, and
+[264] built to grow with you. Metronome turns
+[266] raw usage events into accurate invoices,
+[268] [music]
+[269] gives customers bills they actually
+[270] understand, and keeps every team in sync
+[273] in real time. Whether you're launching
+[275] usage-based pricing, managing enterprise
+[277] contracts, or rolling out new AI
+[279] services, Metronome does the heavy
+[281] lifting so that you can focus on your
+[282] product, not your billing. That's why
+[284] some of the fastest-growing companies in
+[286] the world, like OpenAI and Anthropic,
+[288] run their billing on Metronome. Visit
+[291] metronome.com to learn more. That's
+[293] metronome.com.
+[298] Stewart, thank you so much for being
+[300] here and welcome to the podcast. Thank
+[303] you for having me. I'm excited. I'm even
+[305] more excited. I'm so honored to have you
+[307] here. I never told you this, but you've
+[308] been towards the very top of my wish
+[311] list of guests to have on this podcast
+[312] ever since I started this podcast a few
+[314] years ago. So, I'm very excited that
+[316] we're finally making this happen. I have
+[318] so many questions for you.
+[320] My first question is just what the heck
+[321] are you up to these days? I feel like
+[323] ever since you left Slack, we haven't
+[325] heard much from Stewart. I'm curious
+[326] what you're up to. Hopefully you're just
+[327] chilling. I'm mostly just chilling. I
+[329] left Salesforce um
+[331] 2 and 1/2 years ago and I have a 2 and
+[333] 1/2 year old. So, she was actually born
+[336] 3 days after my my last day. So, a lot
+[339] of time with family and it's like an
+[340] enormous privilege to be able to spend
+[342] time with young kids while they're while
+[345] they're young. Um
+[346] no new company to announce or anything
+[349] like that. Um
+[351] I do get a lot of emails and texts. Like
+[353] basically like every 3 to 6 weeks
+[356] there's this cycle because Cal
+[358] Henderson, who's the CTO of Slack, and
+[359] who also we worked together on Flickr,
+[362] so have worked together now for 23
+[364] years, have been talking about what we
+[366] want to do next um
+[369] if there is something. But you know,
+[370] honestly, the the big challenge has been
+[373] uh I think these things are kind of
+[376] destroying the world. Um and what we're
+[380] good at is making software. Um so, if
+[381] you find some way to make software that
+[383] helped people use their phones less
+[386] often, then that would be of a a big
+[388] winner, but uh haven't come up with
+[390] anything good. A lot of philanthropic
+[393] work. Uh nothing to announce there yet,
+[395] but there's like some cool um projects
+[397] I'm working on and a lot of like just
+[399] personal creative art projects and
+[402] supporting other artists and and stuff
+[404] like that. To prep for this chat,
+[406] I talked to so many people that have
+[408] worked with you over the years to try to
+[410] figure out what you taught them about
+[412] building product, building teams,
+[413] building companies that most stuck with
+[415] them, that most helped them build
+[416] amazing products. The first is a is a
+[418] concept called utility curves. This came
+[421] up a bunch across so many people that
+[422] have worked with you.
+[423] Talk about what is a utility curve, how
+[425] you think use that to build better
+[427] products. This is pretty easy cuz it's a
+[429] very familiar S-curve where, you know,
+[431] you have uh it's flat, it starts arcing
+[433] up, and then there's a really steep
+[434] part, and then it levels off again.
+[437] And on the horizontal axis,
+[440] uh you can think of cost or effort. And
+[445] on the vertical axis, it's value or
+[448] convenience. It kind of depends exactly
+[450] what you're talking about. But the idea
+[452] is um
+[454] the first bit of effort you put into
+[456] something doesn't result in a huge
+[458] amount of value, and then there's some
+[459] magic threshold where it produces an
+[461] enormous amount of value, and then
+[463] continued investment doesn't really pay
+[465] off. The most basic
+[466] example I can think of is let's say
+[468] you're making a hammer. And on that
+[470] bottom axis, it's now quality. And if
+[473] the hammer uh has a handle that breaks
+[476] with any impact, then it's totally
+[477] useless. And if you make it a little bit
+[479] stronger, it's still pretty useless. And
+[480] it's kind of like junk junk junk junk
+[482] junk, okay, good, great. Then it doesn't
+[485] matter anymore. If you're making an app,
+[487] okay,
+[488] this app's going to have users, and so
+[490] let's make a users table in a database,
+[492] and so far you have generated no value.
+[495] The reason I I felt like this was so
+[497] important is because we would talk about
+[500] like a feature.
+[502] Um and usually features are thought of
+[504] as as binary. Like you you either have
+[506] this feature or you don't.
+[508] And so, the argument I guess was,
+[511] have we just not invested enough in
+[514] this,
+[515] or have we got all the value or
+[517] convenience or, you know, quality or
+[520] whatever that we could get out of this?
+[521] Um and and we could have admitted the
+[523] point of diminishing returns and it just
+[524] doesn't matter. And I I think in many
+[526] cases people will
+[528] add a feature, it's not good enough, um
+[531] and so people don't use it or appreciate
+[533] it, but now you've added some complexity
+[535] to the app, and then people give up or
+[538] take it back or, you know, they tried
+[539] something in in testing and they don't
+[541] get the results they want, and so they
+[542] decide that this is a thing isn't worth
+[543] doing. And so, we would try to really
+[546] investigate and and decide whether we
+[548] were on the first shallow part of the
+[550] curve, the second shallow part of the
+[552] curve, or we were, you know, we're just
+[553] coming up to it.
+[555] So, I think it's a lot easier to
+[557] understand the value of this when you're
+[558] talking about a specific app and a and a
+[560] specific uh
+[562] feature. But um I think it was
+[565] ultimately helpful in getting people to
+[566] like understand whether something was
+[569] was worth it or not. Okay, so just to
+[571] mirror back what I'm hearing, there's
+[572] kind of this if you visualize this
+[573] curve, at the bottom it's like, "I don't
+[575] even know what this is." And then up the
+[576] curve is like, "Okay, I sort of get it."
+[578] And then at the top is, "Okay, I can't
+[580] live without this now that I understand
+[581] what this is for." It feels like it's
+[583] like a really it's a different way of
+[585] thinking about getting to the aha moment
+[587] for someone where they see, "Okay, saved
+[588] items. I get it. I need to use this
+[590] constantly."
+[591] So, it feels like this works both for a
+[592] specific feature and also just for
+[594] Slack. Like getting people to even
+[596] understand, "Here's what Slack can do
+[598] for you and then now I can't live
+[599] without Slack. And essentially this is a
+[601] lens you use to figure out where to
+[604] spend product resources because if you
+[607] don't get up that curve to I get it and
+[609] I can't live without it, nothing else
+[611] matters. Is that the way is that the
+[613] framework? Yeah, yeah. And I think then
+[615] you layer on another concept like the um
+[618] >> [snorts]
+[618] >> Bezos used the term divine discontent.
+[622] Uh
+[624] the line actually moves because once
+[627] people are familiar with a piece of
+[629] software or the way a feature is
+[631] implemented or something like that,
+[633] their standards go up and so the
+[636] there's like this competition. And
+[638] again, this axis can be utility is the
+[640] best general term for it, but it could
+[642] be quality, convenience, um
+[645] speed, it could be any any number of
+[647] things. But as you improve your search
+[650] capability or if as as you improve your
+[653] login experience or your forget
+[656] experience or your checkout experience
+[658] or whatever, everyone else's as well and
+[661] so there's this continued investment.
+[664] And when you know, forget about thinking
+[666] about a new feature, you're looking at
+[667] how the product works overall and
+[669] usually things get kind of implemented
+[671] once and then
+[673] if they're lucky, they get improved upon
+[676] periodically. Most things get improved
+[678] upon very infrequently and some things
+[681] get improved upon never. And
+[685] you know, just I'm going to give an
+[685] example at the absolute extreme cuz I
+[687] don't actually don't know
+[689] how long this has been, but
+[691] I try not to criticize other people's
+[693] software so much because I'm very
+[694] familiar with the tradeoffs and
+[696] prioritization and how hard it can be
+[698] and blah blah blah blah. But okay, so it
+[701] most people have the Gmail calendar app
+[703] on their phone. I travel a fair bit. I'm
+[706] mostly in the Eastern time zone,
+[709] sometimes in Mountain time, sometimes in
+[711] Pacific, sometimes in
+[713] English time and sometimes in
+[715] uh Japan, Central Europe.
+[718] There's like a you know,
+[719] maybe 10 time zones, 12 time zones um
+[723] that I would ever choose.
+[726] When you
+[727] uh hit the option to set the time zone
+[729] on an event in Google Calendar on the
+[731] iOS app, it presents all the time zones
+[734] in the world in alphabetical order. And
+[736] that's like the I mean, there's probably
+[739] worse orderings, but that it doesn't
+[741] there's no value in that. Um and even
+[744] when you start searching,
+[746] um it still presents them in
+[748] alphabetical order by country with that
+[750] term. So, if I'm in California and I'm
+[753] trying to set an appointment for next
+[754] week when I'm back in New York, and I
+[756] type in e a s t,
+[759] then I get a bunch of garbage. Okay,
+[761] East ern e r n. And then the first one
+[763] is Eastern Australia, New South Wales.
+[767] Um and then Eastern Australia,
+[768] Queensland. And then Eastern Australia,
+[771] Daylight Savings and Eastern Australia,
+[773] Standard Time. And then you're like,
+[774] well, [ __ ] What I
+[775] I can't remember which one is Daylight
+[777] Savings and which one is Standard Time
+[778] and we know what.
+[780] I could keep going like this for a
+[781] while. This is an app that's used by at
+[784] least hundreds of millions of people,
+[785] presumably every single Google employee.
+[788] It's bananas how bad it is. There's so
+[790] many like there's all these clever
+[793] things you could do. Like you know me,
+[796] I'm on the West Coast,
+[798] first option should be the East Coast
+[799] and vice versa. But it definitely
+[801] shouldn't be that every time zone is
+[803] presented with equal you know, value.
+[807] There's I don't even know, but like a
+[809] couple hundred time zones. I grew up in
+[811] Canada, there's a Newfoundland has its
+[812] own time zone which is offset by half an
+[814] hour. The population of Newfoundland is
+[816] about half a million people, not that
+[817] many people go to visit Newfoundland,
+[819] maybe a million people in all of
+[821] history. So like a million and a half
+[823] out of 8 billion people. And there's
+[825] Newfoundland, you know, like the same
+[826] with China time which is like 25% of the
+[829] world's population and this stuff.
+[831] Anyway, I
+[833] and that was a little bit longer than I
+[834] intended to go on this example, but it
+[836] is um
+[839] uh it's crazy cuz no one's going to
+[841] switch to Gmail or to to G Suite Google
+[845] Calendar from Outlook Exchange because
+[849] the time zone picker is good. So and
+[851] maybe in some sense, it doesn't matter.
+[853] But at the same time, there's a real
+[855] value in in delighting customers and
+[858] there's an emotional connection that
+[859] they form or don't form. Um
+[861] And in some cases that could be really
+[863] positive like they would recommend it
+[865] and when they switch companies or decide
+[867] to start their own company, they're
+[868] going to choose to use this product or
+[870] advocate for it because of that
+[872] emotional connection. And vice versa,
+[874] they'll also be like, I
+[875] hate this thing, it drives me bananas, I
+[878] really think we should stop using it or
+[880] you know, advocate for the alternative.
+[882] Uh and I I think people just don't
+[884] appreciate or come back to those things
+[886] often enough. And then there's this
+[888] category of like really essential parts
+[891] of the app. Again, like account
+[893] creation, sign up, forgot password, you
+[896] know, things like that that
+[899] for most organizations very infrequently
+[902] get a lot of love and and iteration and
+[905] improvement despite the fact that the
+[907] kind of the quality bar has gone up
+[909] across the board and it continually goes
+[911] up.
+[911] >> Let's go down that rabbit hole a little
+[912] bit more around delight and craft. Slack
+[915] was famous for being one of the early,
+[918] let's say, consumerized B2B SaaS
+[920] products. Slack leaned into delight and
+[923] experience and craft and a great
+[925] experience. And you just as a product
+[927] leader, I'd say is are known as as very
+[930] taste forward, very craft oriented
+[933] leader, which is pretty rare and I think
+[935] continues to be rare. So, there's a few
+[937] things I want to talk about here. One is
+[938] uh taste. I heard at a talk you gave at
+[941] a really unique you gave a talk on taste
+[943] and you have a really unique perspective
+[944] on just what taste is, what product
+[947] taste looks like. Can you share that?
+[948] There is a lot of, you know, going back
+[951] to the utility curves again, people who
+[953] are obsessed with this one little thing
+[955] and you know, keep on adding more and
+[957] more detail improvements beyond the
+[959] point where it makes much of a
+[960] difference.
+[961] But um
+[962] I guess a couple things about taste. So,
+[963] one is can you learn to develop it? I
+[966] think so because like
+[969] the word literally comes from
+[971] experiencing food and putting stuff in
+[972] your mouth. And can people become better
+[974] chefs with training? Yes, absolutely.
+[978] Undoubtedly some people have a natural
+[979] advantage or or you know, born with this
+[983] ability to make discernments that are
+[984] difficult for other people to make and
+[986] stuff like that, but you can definitely
+[987] practice and you can definitely get
+[988] better. The second thing I'd say is um
+[992] you can create a real advantage for
+[995] yourself, for your product, for your
+[997] company um by leaning into it because
+[1001] most people don't have good taste and
+[1003] don't invest. And so, you're probably
+[1005] familiar with the
+[1007] again, Jeff Bezos line, your margin is
+[1010] my opportunity.
+[1011] Um and pretty obvious what he meant by
+[1013] that.
+[1014] I would tell the story at Slack over and
+[1016] over again and actually made it part of
+[1017] the new hire welcome. So, uh I'm I'm
+[1020] going I'm in Vancouver at our Vancouver
+[1022] office and I'm going for a walk with
+[1024] Brandon Velestuk who's our um at the
+[1026] time
+[1027] creative director for product
+[1028] development. I think that was his title.
+[1030] And uh we're in the Yaletown
+[1032] neighborhood in Vancouver. So, there's
+[1034] like really narrow sidewalks cuz it used
+[1035] to be a warehouse district and now it's
+[1037] like, you know, fancy restaurants and
+[1039] nail salons and geeks and stuff.
+[1042] And as it does in Vancouver, it starts
+[1043] to rain. We don't have umbrellas. We're
+[1046] walking back to the office and most
+[1048] people have umbrellas and we're you
+[1051] know, kind of on these narrow sidewalks
+[1053] with people coming towards us with
+[1054] umbrellas. And we noticed how few people
+[1057] would move their umbrella out of the
+[1059] way. And of course, you know, the other
+[1060] person
+[1062] their umbrella, the pokey bits are
+[1063] exactly at eye level for for people
+[1066] walking
+[1067] towards them and we would get like, you
+[1068] know, forced off the sidewalk or like
+[1070] having to duck down or
+[1073] whatever. And we it became a game where
+[1075] we were guessing, is this person going
+[1077] to tilt their umbrella out of the way so
+[1079] we can pass or not? And something like
+[1082] 1/3 of the people would do it. And we
+[1086] had this conversation about it where
+[1087] it's like,
+[1089] okay, I can think of three reasons why
+[1092] people wouldn't do it. One is they have
+[1094] very few avenues in their life to
+[1096] exercise power and this is one of them
+[1098] and they're just like want to get out
+[1100] there and dominate people and cause
+[1103] suffering. So,
+[1105] shouldn't ascribe to malice that which
+[1107] can be ascribed to ignorance. And so,
+[1108] that's probably you know, probably is
+[1110] the explanation for a tiny tiny tiny
+[1112] percentage of people. But the other two
+[1114] explanations aren't that great either.
+[1116] One is that uh they see it's happening,
+[1119] they see they're pushing other people
+[1121] off the sidewalk
+[1122] or poking them in the eye or whatever
+[1124] and they're just like, [ __ ] that's too
+[1125] bad. I you know, I wish there was
+[1127] something I could do about that, but I
+[1129] can't think of anything. And the last
+[1131] reason is they just don't notice at all.
+[1133] But they're just oblivious to their
+[1135] impact on on other people and they're
+[1138] they're so in their head.
+[1139] And I can't really think of any other
+[1140] explanations for it besides that. And so
+[1143] we would say at Slack like
+[1145] tilting your umbrella is our
+[1147] opportunity. You know, that's not a
+[1149] great rephrase of the your margin is my
+[1151] opportunity, but your failure to really
+[1154] be considerate and uh
+[1158] exercise this courtesy and really be
+[1160] empathic about other people's experience
+[1163] is an an advantage you can create a
+[1165] critical advantage. And I think that
+[1168] there's many reasons why Slack was
+[1170] successful at the moment it was
+[1171] successful and I think we had a bunch of
+[1174] really wonderful tailwinds and and all
+[1176] of that stuff, but it wouldn't have
+[1177] grown the way it did without those
+[1180] little conveniences which caused people
+[1182] to form an emotional connection because
+[1185] a lot of our growth came from you know,
+[1187] startup A uses Slack and then someone
+[1190] leaves startup A for startup B and
+[1192] startup B doesn't use Slack yet, and
+[1193] they would be like, "Oh my god, you
+[1195] guys, you really get This is
+[1196] This is so good. You've got to try it."
+[1198] And uh
+[1199] And the the spread was driven by that
+[1202] cross-pollination and and people really
+[1204] genuinely advocating for it. That is an
+[1207] amazing metaphor. I I
+[1209] >> [laughter]
+[1209] >> I love that one moment became like a
+[1211] value of product craftsmanship, but it's
+[1214] like
+[1214] >> totally irrelevant business like is not
+[1216] a very common use case, and on you know,
+[1218] company swag and and stuff like that. Is
+[1220] there an example I mean I imagine there
+[1222] are many, but from the time of building
+[1225] Slack, especially in the early days,
+[1226] where you chose to go big on
+[1228] craftsmanship and experience and and
+[1230] delight versus speed, where you thought
+[1233] looking back that was a really great
+[1234] idea and it worth really core to
+[1236] success? Here's a bunch of little
+[1238] examples.
+[1239] Um so
+[1241] someone else came up with this idea,
+[1243] and I'm
+[1245] I'm trying to remember who it was.
+[1247] Um but I it's a maybe Andrew maybe Ben
+[1251] Brown, something like that, who was
+[1252] like, "Okay, where Why do we ask people
+[1254] for email address and password if um
+[1258] they
+[1259] their ownership of the email address was
+[1261] the thing that allowed them to create
+[1262] the account in the first place? Why
+[1264] don't we just ask them for their email
+[1265] address and then send them a link?" And
+[1267] so when Slack's first version of the
+[1268] mobile app came out, we're like,
+[1271] "Typing your password on your phone, if
+[1273] you have any
+[1275] you know, minimal threshold of of
+[1277] password hygiene is a terrible
+[1279] experience. They have capital H,
+[1281] lowercase Q, 6 correct period.
+[1285] So let's just
+[1286] have them enter the email address. We'll
+[1287] send them a link. The link will
+[1288] automatically open the app and and
+[1290] authenticate them."
+[1291] And so there's one a little example.
+[1293] Wow, so you guys invented the magic link
+[1295] uh experience.
+[1296] >> someone else invented I want to be clear
+[1297] that. Uh I I had seen that idea
+[1299] somewhere else like someone else blog
+[1300] post about it or something like that,
+[1302] but we were the first ones that to my
+[1303] knowledge that that really kind of like
+[1306] scaled that and made it uh a standard.
+[1308] There is another one which we we you
+[1310] know, we really puzzled about in the
+[1311] very early days where people have a long
+[1314] history of using messaging apps from
+[1316] like
+[1317] AOL Instant Messenger to SMS to um
+[1322] WhatsApp, where their expectation is
+[1324] they get a notification for every
+[1326] message that's received. And in the case
+[1328] of Slack, that doesn't make as much
+[1329] sense because you're a a member of many
+[1332] channels, and the messages may not be
+[1334] for you. And so that's why we have that
+[1336] at tagging people and um you know,
+[1340] We certainly didn't invent that. That
+[1341] was that was Twitter.
+[1342] Um
+[1343] but what we realized was people were
+[1345] signing up for Slack to you know, and
+[1348] it's like one engineer on this team
+[1350] inside of this larger organization
+[1351] inside of this larger company, and they
+[1352] would pull in the person next to them,
+[1354] and they would say, "Let's try it out."
+[1355] And then they would send a message, and
+[1356] then the person would be like, "I didn't
+[1358] get a notification. This is this is
+[1360] bullshit."
+[1361] Um
+[1363] so we reluctantly decided that we had to
+[1365] send notifications for every single
+[1367] message as the default for new accounts.
+[1370] But once you had I don't remember what
+[1372] the thresholds were. I think it's what
+[1373] once you had received 10 messages, we
+[1376] would pop up this little thing that
+[1377] says, "Hey, you have our default
+[1379] settings for notifications. We don't
+[1381] want Slack to be noisy for you. Would
+[1382] you like to switch to our recommended
+[1384] settings?" And then they would just
+[1385] click a link, and it would
+[1386] you know, have what should be the
+[1388] default, which is you only get a
+[1390] notification if it's a DM or someone
+[1392] tags you. But we realized it was worth
+[1394] that investment to get people over the
+[1397] hump. A much more uh
+[1400] Well, here's a I'll give you one one
+[1401] more simple one and and then one kind of
+[1403] more complex one.
+[1405] People would
+[1406] just like the I can't remember if it's
+[1408] called urgent or important, but the flag
+[1410] in in Outlook that like you know, set
+[1413] the priority of a message for the
+[1414] recipients, always got abused inside of
+[1416] every company. As as soon as someone
+[1418] does it, like everyone's like, "Okay,
+[1420] I'm going to do that, too, for my
+[1421] message." And so all of your messages
+[1422] have the little flag, and it's becomes
+[1424] useless.
+[1425] We have at everyone, which causes a
+[1427] notification to be sent to every member
+[1429] of the channel when the message is sent.
+[1430] And people would start you know, like
+[1432] someone would find this feature inside
+[1434] of an organization. They would at
+[1435] everyone. Everyone would get a
+[1437] notification. And then the next person
+[1438] to send a message was like, "Well, my
+[1440] thing's more important than um Bob's
+[1442] saying. I'm going to also at everyone."
+[1444] And it became really obnoxious, and
+[1446] people would complain about it, but it
+[1447] was a
+[1449] I don't know.
+[1450] I guess tragedy of the commons is not
+[1452] quite exactly the same thing, but it was
+[1453] a this real dynamic that happened over
+[1455] and over again. So um
+[1457] we came up with what was called the
+[1458] shouty rooster. And internally we said,
+[1461] "Don't be a cock." Um but we didn't
+[1463] obviously say that publicly. When you at
+[1466] everyone, a little rooster would
+[1468] pop up, and it would have like these
+[1469] sound waves coming out of its mouth and
+[1471] being really obnoxious, and say, "Hey,
+[1472] this is going to cause a notification
+[1474] for 147 people in eight different time
+[1477] zones. Are you sure you want to send
+[1479] this message with the at everyone?" Um
+[1482] and of course that worked amazingly, and
+[1484] it dropped off. Um and again, it was
+[1487] really trying to shape people's behavior
+[1489] so that they use We want to Slack to be
+[1491] very flexible, um but we knew that there
+[1493] was ways to use it that would be
+[1495] annoying and and difficult for everyone.
+[1497] And so try to shape the communication
+[1499] culture inside the organization to take
+[1501] best advantage of it. That feature still
+[1502] exists. I see that rooster all the or
+[1504] no, I don't see it all. Well, actually I
+[1505] do at channel cuz I run a big Slack. Uh
+[1508] so I see that rooster and that survived.
+[1511] Yeah.
+[1512] Um yeah, that survived and and good uh
+[1515] because it's
+[1516] Sure. It was a trivially easy thing to
+[1519] implement, and made a really big
+[1521] difference. But it also taught people
+[1522] how the product worked cuz I mean people
+[1523] probably didn't know that at everyone or
+[1525] at channel um
+[1527] Right. Well, didn't think about the cost
+[1530] at least. Genius. Yeah.
+[1532] Here's here's one more.
+[1535] Uh
+[1536] So we decided we're going to do do not
+[1537] disturb as a feature.
+[1539] Um
+[1539] >> [clears throat]
+[1541] >> And we had this not a conundrum, but we
+[1545] you're trying to take into account all
+[1546] the all the different uses of Slack cuz
+[1548] at the time we be implementing this
+[1551] like 2017, there was
+[1554] you know,
+[1555] tens of thousands of of paying
+[1558] customers that organizations, hundreds
+[1560] of them, probably millions of users,
+[1561] maybe hundreds of thousands of
+[1563] organizations. I don't remember how
+[1564] many. Um and everyone had set up stuff
+[1566] the way that they liked it, including
+[1568] things like ops alerts going into
+[1570] channels for on-call engineers for for
+[1573] you know, some of the biggest
+[1576] systems uh and and apps in the world.
+[1579] And so we couldn't just like deploy it
+[1580] right away.
+[1582] We realized that some of the
+[1584] decision-makers, the owners of the
+[1586] organizations, were going to have really
+[1587] strong opinions about this. We also
+[1588] realized that some of the engineers are
+[1590] going to have strong opinions, and we
+[1591] wanted to figure out a way to kind of
+[1593] balance the concerns
+[1595] and give people appropriate means of
+[1596] control. So we came up with this really
+[1599] elaborate system for the rollout, which
+[1600] was
+[1602] we told everyone um
+[1604] I'm sorry, every every Slack
+[1606] administrator that this was coming weeks
+[1607] before it came.
+[1609] And we told them that we were going to
+[1611] set a default for their organization,
+[1614] which I believe was um
+[1616] either 7:00 p.m. to 7:00 a.m. in their
+[1618] local time zone or or 8:00 a.m. to 8:00
+[1620] p.m. I can't remember which was.
+[1622] But also that they could override that
+[1624] default.
+[1625] And also that the individual end users
+[1628] could override that
+[1630] system owner default.
+[1632] And finally that the system owner could,
+[1635] if they changed the default again, would
+[1637] override all of the the end users'
+[1639] preferences.
+[1640] And then the end users could
+[1642] uh
+[1643] override them again.
+[1644] And it it wasn't to create this dynamic
+[1646] where people are who are at war, but so
+[1648] that you could change a policy, and then
+[1649] people could still customize and and
+[1651] stuff like that. But this was
+[1653] you know, a much longer and more
+[1655] convoluted process, but it allowed the
+[1658] millions of people who were using Slack
+[1661] to get the feature without creating a
+[1663] bunch of conflict and without people
+[1665] turning it off automatically. And I
+[1668] think critically, with setting a bunch
+[1669] of defaults um because if we didn't set
+[1672] the default, most people wouldn't turn
+[1674] it on at all. You know, like there
+[1675] wasn't If we didn't default you to do
+[1678] not disturb from 8:00 p.m. to 8:00 a.m.,
+[1680] um you probably
+[1682] if you're the average person, wouldn't
+[1683] ever do it yourself. Um so that's a
+[1687] another elaborate example uh where I
+[1689] think that investment made sense because
+[1691] it was a critical feature for a lot of
+[1693] people, and um
+[1696] if we hadn't done it that way, I think
+[1697] it would have caused a lot of
+[1699] complaints and conflict and and stuff
+[1701] like that. Those are amazing examples. I
+[1703] very much appreciate that do not disturb
+[1704] feature when you guys launched that. I
+[1706] still remember that coming out. I'm sure
+[1707] a lot of people are very thankful for
+[1709] that. Yeah.
+[1711] Something else I heard that you often
+[1713] espouse, which is counterintuitive to a
+[1715] lot of people, is is about friction,
+[1717] friction in the product experience. That
+[1719] friction is actually often a good thing.
+[1721] They actually it's a feature, not a bug
+[1722] a lot of times, if you use it well. Talk
+[1724] about your your experience there. Yeah,
+[1726] well, so yes, um
+[1729] and there's also another um
+[1732] issue around friction, which is
+[1735] it it became
+[1736] like a mantra or just like a kind of uh
+[1739] an assumption that you should always be
+[1741] trying to remove friction.
+[1743] And
+[1744] uh in in some cases, that's true. You
+[1746] know, we would talk about it Slack like
+[1747] it it was hard to market. It's hard to
+[1749] explain what it was if you had never
+[1750] used it before. You could say a
+[1752] messaging app for businesses or or
+[1753] whatever.
+[1754] But you know, like a critical
+[1756] disadvantage to Slack doing out-of-home
+[1758] advertising, putting up a billboard,
+[1760] versus beer or cars, is no one needs to
+[1763] be explained why people would want a car
+[1765] or beer.
+[1766] Um but everyone would have to be
+[1767] explained why they why they want Slack.
+[1770] Um and so the problem there is is
+[1772] comprehension. And this will come up uh
+[1775] an enormous amount. So now imagine you
+[1777] want to get tickets to the Taylor Swift
+[1779] concert in San Francisco. And you go to
+[1781] the Ticketmaster website.
+[1783] If you think about both your
+[1785] your comprehension, it's perfect in this
+[1788] case. And um that translates into the
+[1791] specificity of your intent. And the
+[1793] degree of your intent is also kind of
+[1795] maxed out. So like, I really want to get
+[1797] these tickets. And I know exactly what
+[1798] they are. They're Taylor Swift tickets
+[1800] for this date at this venue.
+[1803] And so in that scenario, it doesn't
+[1806] really matter if Ticketmaster's website
+[1807] is slow. It doesn't really matter if the
+[1809] payments page errors out. Like you're
+[1811] going to persist and and get through it.
+[1813] So obviously they're better to reduce
+[1814] friction.
+[1815] But in some sense it doesn't
+[1818] It's not a huge amount of of value in
+[1819] doing that.
+[1821] Uh for most
+[1823] creators of of products, there are a
+[1826] handful of cases where that really is
+[1828] true for you as well. And they they
+[1829] include things like user registration,
+[1832] um
+[1833] authentication,
+[1834] uh checkout flows for e-commerce. Like
+[1836] I'm I am significantly more likely to
+[1839] buy something if there's Apple Pay or
+[1841] Shop Pay or something like that. I'm
+[1843] significantly less likely to carry
+[1845] through
+[1846] the purchase of something if the I have
+[1849] to manually enter all of the fields of
+[1851] my address one at a time rather than
+[1853] having one of those address pickers.
+[1855] It's It's crazy, but like
+[1856] the issue is my intent isn't always
+[1858] 100%, right? And the specificity of my
+[1861] intent isn't always 100%.
+[1863] So if your
+[1865] thing is direct-to-consumer t-shirts and
+[1868] you acquire customers through Instagram
+[1870] ads, all of them know what t-shirts are.
+[1872] It's like I This looks like a good
+[1874] t-shirt to me.
+[1875] But I'm rarely like 100% intent. I might
+[1878] have like you know, very specific
+[1880] intent. My intent's like 70%. So if
+[1882] you're
+[1883] the amount of friction is uh above that,
+[1886] I just I'm not going to do it. But now
+[1887] okay, people coming to slack.com,
+[1890] they had some
+[1893] uh friend had mentioned Slack and kind
+[1895] of
+[1896] talked their ear off at some point
+[1897] months ago. And then they saw a news
+[1899] article. And then they saw someone's
+[1901] tweet. And then they saw an ad on a
+[1903] website they were visiting. And they
+[1904] finally said, okay, I'm going to go to
+[1906] this website. So their intent is like at
+[1909] the absolute minimum threshold. Like
+[1912] it's just it was before that last event
+[1915] happened, they were below and now
+[1916] they're above. But they're just above.
+[1919] The specificity of their intent, like I
+[1921] need to get Taylor Swift concerts for
+[1922] this date at this venue, um is also very
+[1925] low cuz they're like uh it's a work
+[1927] thing. I'm not sure it's a spreadsheet
+[1929] or like a calendar or do you know
+[1930] exactly what it is? Um
+[1934] So they were coming in at
+[1936] you know, 0.1% over these these critical
+[1940] thresholds.
+[1941] Um
+[1942] >> [clears throat]
+[1942] >> what was the challenge? It wasn't
+[1944] friction, right? Because it's not like
+[1946] they
+[1947] were aiming for something and they knew
+[1949] what they were aiming for and they were
+[1950] just trying to get themselves to that
+[1952] point.
+[1953] What we had to worry about was creating
+[1955] comprehension in in two senses. What is
+[1958] this thing? Um
+[1960] and what am I supposed to do next? And
+[1963] that creation of comprehension
+[1966] in the in the sense of explaining stuff,
+[1968] that creation of comprehension in the
+[1969] sense of the design of the
+[1972] of the UI, of the screen, of the page or
+[1975] whatever and the um
+[1977] the visual hierarchy and the affordances
+[1979] that are there and the and the um
+[1982] indication of things to interact with
+[1984] and and which thing should be the next
+[1986] thing to do and all that stuff. That
+[1988] becomes really critical and I think very
+[1990] very few people recognize that. They're
+[1992] like I want to get people who come to my
+[1994] web page to the sign-up form as quickly
+[1996] as possible. But if they don't know what
+[1998] they're signing up for, they don't know
+[1999] what it's going to do after, is it going
+[2001] to spam them? Um
+[2003] They don't know
+[2004] am I going to have to pay on the next
+[2005] step or or what? Then they're just going
+[2008] to back out.
+[2009] And this was like a a lifelong battle
+[2012] because the remove friction
+[2014] um
+[2016] kind of orientation is so deep in
+[2019] people. Again, it really makes a
+[2021] difference in in those cases where
+[2023] people do have an intent and they do
+[2024] know what they're trying to do.
+[2026] Um
+[2027] It is a a poor approach when the
+[2030] challenge is really comprehension. And I
+[2032] think the secret is
+[2034] most 70%, 80% or whatever of a product
+[2038] design is in that comprehension step
+[2041] because like people if they do ever open
+[2044] the preferences tab and look at all the
+[2046] options, rarely have an idea.
+[2049] And if you can't teach them,
+[2053] you know, or make it possible for them
+[2055] to discover what the capabilities are,
+[2057] then they're not going to take advantage
+[2058] of them and they're not going to get as
+[2059] much out of it. And I think that the
+[2060] trick is for most of the unique parts of
+[2064] any application, most of like the
+[2065] specific things that your app, your
+[2068] product, your software does are areas
+[2071] where the challenge is going to be
+[2072] comprehension instead of friction.
+[2074] It really could be anything. Like
+[2076] Shopify, um
+[2078] the purpose of the of the service for
+[2081] its end users is generally going to be
+[2083] kind of clear. But most people
+[2085] most first-time store openers
+[2089] don't know that they can get reports. Or
+[2092] if they know that they can get reports,
+[2093] they don't know what kinds of reports.
+[2094] And if they know what kinds of reports
+[2095] they can get, they don't know how they
+[2096] can tweak them and how they can um you
+[2098] know, what the timing should be and
+[2100] which
+[2101] things that that are are more important
+[2103] to display. And I could go on and on and
+[2105] on and on. And people just don't
+[2106] recognize that. So like the I want to
+[2108] see if this is still true. I'm just
+[2109] going to open my iPhone
+[2111] and the clock app. And they had the most
+[2115] the the craziest description
+[2117] for alarms.
+[2119] Uh okay, it's still it's a little bit
+[2122] different.
+[2123] Um
+[2124] But people can look at their own phone.
+[2126] Uh so I have
+[2127] It says alarms and then it says sleep
+[2131] and a vertical bar, wake up, and says no
+[2134] alarm and a button that says change.
+[2137] And then if you hit it, it says sleep is
+[2139] off. In order to automatically turn on
+[2141] sleep features and edit your schedule,
+[2142] you need to turn sleep on. So obviously
+[2145] but sleep was a good
+[2147] name for this thing if you already had a
+[2150] way of getting people to understand it.
+[2152] If you don't, it's like ungrammatical
+[2154] and incomprehensible and why would you
+[2156] ever do it? And I
+[2159] got to guess this It's been like this
+[2160] for years.
+[2162] 90 plus percent and and maybe like 98%
+[2165] of people just do what I do, which is
+[2168] that you just create up like I want the
+[2169] alarm on and I'm going to set the time
+[2171] for it. And I don't know what turning
+[2172] sleep on does. Um But it's a just like
+[2176] the the lack of comprehension prevents
+[2178] people from getting the value. And I'm
+[2180] sure that there's a bunch of value
+[2182] behind turning sleep on, whatever that
+[2184] means. And people spend a lot of time on
+[2186] those features and it integrates with
+[2188] like biometrics in your watch or who
+[2191] knows. I I again, I still don't know
+[2193] because turning sleep on is like I don't
+[2196] What does that do? And what is it going
+[2198] to cost me and what impact is it going
+[2199] to have?
+[2201] Those examples are just to me all over
+[2204] the place. And um the reason I don't use
+[2206] most software where there was an actual
+[2209] choice point or the reason I don't use
+[2211] most features where there was a choice
+[2212] point for me is because I didn't
+[2214] understand what they're going to do and
+[2215] I don't give a [ __ ] And if there is one
+[2217] mantra that I would use to replace that,
+[2219] it's don't make me think. I don't know
+[2221] if you remember that that book.
+[2222] >> Absolutely.
+[2224] Yeah. And honestly it's been
+[2226] many more than 10 years since I read it.
+[2228] So I don't even remember all the
+[2230] examples in the book. But as a mantra,
+[2232] that was like up there with utility
+[2234] curves cuz for two reasons. One is it's
+[2236] just like it it
+[2237] it's expensive to make a decision. Like
+[2239] you
+[2240] literally burn glucose. Like there's a
+[2243] metabolic action. There's like ATP
+[2246] created in the mitochondria in your
+[2248] neurons and like a bunch of stuff is
+[2250] happening. And people do get decision
+[2252] fatigue and there is like you know, a
+[2254] cognitive cost of all these things. But
+[2256] also there's an emotional aspect, which
+[2257] is if you if your software kind of stops
+[2260] me as I can and asks me to make a
+[2261] decision and I don't really understand
+[2263] it, you make me feel stupid. Right? I'm
+[2266] like, I don't understand this.
+[2268] I
+[2269] Some people are are
+[2271] you know, maybe their orientation is
+[2272] looking that the software is stupid. But
+[2274] I think most people are like, oh, I'm
+[2276] dumb. And if you ever talk to people who
+[2277] aren't especially technologically savvy,
+[2279] you know, like the canonical example is
+[2281] like people who are under 50 talking to
+[2284] their parents about using some piece of
+[2287] software and what they're supposed to
+[2288] do, the parents almost always feel
+[2290] stupid. They're the ones that are that
+[2292] are wrong.
+[2293] Um and so if you're causing people to
+[2295] think, in the the best case, it's like
+[2298] unnecessary
+[2299] use of their
+[2301] you know, biological resources. And then
+[2304] in the worst case, you've like now made
+[2306] them feel bad. Like emotionally bad. And
+[2308] they're going to associate that with the
+[2309] product forever. And I mean, these are
+[2311] things that are just kind of rolling one
+[2314] into the other. So I'm going to
+[2315] uh
+[2317] keep going with one last thing cuz they
+[2318] just kind of come together, which is
+[2320] along with reduced friction, it's like
+[2323] reduce the number of clicks or taps it
+[2325] takes for someone to accomplish
+[2326] something, which is almost always
+[2329] exactly the wrong thing. Like it's um
+[2332] the easiest way like you could make any
+[2334] action in your app a single click or tap
+[2337] by just exposing every single
+[2339] possibility on one screen that scrolls
+[2342] for thousands and thousands and
+[2343] thousands and thousands of pages. Right?
+[2345] And obviously that's terrible. So why do
+[2348] people think that a little bit of that
+[2351] is good?
+[2352] And
+[2353] here's an example like
+[2355] You open a menu, there's 14 things that
+[2358] people might want to do.
+[2360] Um
+[2361] Okay, level one is group them into like
+[2364] items and put a vertical uh sorry,
+[2366] horizontal divider between them. So at
+[2369] least people can kind of chunk and and
+[2371] see what there is.
+[2372] Step two is present the two or three
+[2375] most common things or the five most
+[2376] common things or whatever and then have
+[2378] some form of other. And you you know,
+[2380] then you go to a sub menu that has more
+[2382] items. And you
+[2384] the decision of like
+[2386] how to tune that becomes incredibly
+[2389] important. Uh I'm going to pick on
+[2391] Google again just because it is
+[2393] I feel like I'm Donald Trump here, but
+[2395] I'm going to interrupt myself again with
+[2396] a story. It's And at some some
+[2398] conference or event, I don't remember
+[2400] what it was, and this is probably 8
+[2402] years ago, and uh it's we're in the bar
+[2405] after the session has ended at this
+[2407] thing, and
+[2409] John Collison from Stripe is there, um
+[2412] and uh Sundar, CEO of Google, is there,
+[2415] and
+[2416] John I I'm sorry, Patrick goes up to the
+[2418] Sundar,
+[2419] uh and they could talk about anything,
+[2421] right? Like, you know,
+[2422] Stripe wasn't at the behemoth it was
+[2425] now at that point, but it was still
+[2426] like, you know, a significant company,
+[2428] it was up-and-coming.
+[2429] And what does uh Patrick want to talk to
+[2431] Sundar about? It's
+[2433] in the Gmail um
+[2436] app, the dragging of people like you
+[2439] when you reply all
+[2441] um to a message, you often want to
+[2443] change so the the two recipient to the
+[2445] CC, and move someone from CC to two or
+[2447] something like that. And just how
+[2450] physically, like the the degree of
+[2451] dexterity that's required to do that
+[2454] inside of the Gmail app is very high. It
+[2456] still hasn't been fixed. But it really
+[2458] struck me that like,
+[2460] you know, Patrick could have asked for
+[2461] anything. It could have been any topic.
+[2463] It could have been a partnership. It was
+[2464] like it was so irritating to him um that
+[2468] it worked like this, and couldn't
+[2470] couldn't get it over it. So, anyway,
+[2472] back to bashing on on Google, who in
+[2475] many respects do an incredible job, and
+[2476] there's all kinds of amazing stuff they
+[2478] do, and blah blah blah.
+[2479] But,
+[2480] the
+[2481] the Gmail actions on an individual email
+[2485] are broken into two very long menu items
+[2487] that are different.
+[2489] And
+[2490] one of them doesn't exist on either
+[2492] menu. There is an unlabeled icon is the
+[2495] only way to do it, and that's the to
+[2497] mark something as unread once it's read.
+[2499] Um
+[2500] I have no idea why some of the actions
+[2505] are in one menu, and some of the actions
+[2506] are in another menu. I I think it's
+[2508] because some of them have to do with the
+[2510] individual email, some of them have to
+[2512] do with the whole thread, but it doesn't
+[2513] seem very consistent. Every possible
+[2515] thing is listed there in one place, and
+[2517] so it becomes incredibly difficult to
+[2520] use because sometimes you have to tap
+[2523] and bur
+[2524] Tell me what it means read all of the
+[2525] options and say, "Okay, that I've used
+[2527] the process of elimination, and it's not
+[2528] here, so it must be it must be there."
+[2531] The Uber doesn't work like this anymore,
+[2533] but when I first brought this up to
+[2535] people inside of Slack,
+[2537] there was a moment when the Uber app,
+[2539] when you opened it, was just "Where
+[2541] would you like to go?"
+[2543] and other.
+[2544] And other was everything. Like, change
+[2546] your payment method, uh set your
+[2549] location for your vehicle, any anything
+[2550] you could do in Uber.
+[2551] And that was perfect because
+[2553] almost all of the time people just
+[2555] wanted to choose where they wanted to
+[2557] go. Sometimes you wanted to change where
+[2559] your pick up was cuz you weren't there
+[2560] yet, or or whatever. And that was just
+[2562] like, what could be simpler than I'm
+[2565] going to tell you where I want to go, or
+[2566] I'm going to choose something else. I
+[2567] really tried to push people to
+[2570] what is the thing that people, or what
+[2571] is the two things, what is it, maybe
+[2573] three things that people could want to
+[2574] do here, and then put everything behind
+[2576] other, and then um
+[2580] if it takes them eight clicks or taps to
+[2582] do something, but every single one is
+[2584] trivially easy, that's great. If it, you
+[2588] know, you reduce that to two clicks or
+[2590] taps, but every part of it is this
+[2592] fraught decision where I'm opening all
+[2594] of the menus and trying to figure out
+[2595] like which thing is the right thing, and
+[2598] and like, the more comparing three
+[2600] things to each other is
+[2602] this difficult, four things it's kind of
+[2604] like geometrically more expensive to
+[2605] compare 15 different options all to the
+[2607] other to see if this is the one that you
+[2609] might want. Um
+[2611] they you know, just becomes impossibly
+[2612] expensive. So,
+[2614] to me those are all really um
+[2616] connected, and if we if people could get
+[2618] over the idea of reducing friction as a
+[2620] number one goal, or reducing the number
+[2622] of clicks or taps to do something, and
+[2623] instead focus on how can I make this
+[2626] simple? How how do I prevent people from
+[2628] having to think in order to use my
+[2630] software? How can I make this trivially
+[2631] easy? One one last example uh because
+[2634] this this was what really influential
+[2635] for me. So, I was going back and forth
+[2637] between Vancouver and San Francisco at
+[2638] the time when we were talking about all
+[2639] this inside of Slack, and I was behind a
+[2641] teenager in line to board the plane, and
+[2643] it was like, you know, we're on the jet
+[2644] way, it took a long time. And I was
+[2646] watching her use Snapchat, and it was
+[2649] insane. Like, she was tapping
+[2652] at least four times a second, sometimes
+[2655] like six or seven times a second. It was
+[2657] like dismissing stories and doing stuff,
+[2659] but there was a fluidity to it because
+[2660] everything was like a dent. Do I want to
+[2663] see this again? Do I want to see the
+[2663] next story from this person? Do I want
+[2664] to ask her to a different person? Do I
+[2665] want to
+[2667] like instead she she um
+[2669] a notification came up, she answered
+[2670] someone's thing, she took a selfie of
+[2672] herself. And everything was just like
+[2675] So, she was
+[2676] you know, tapping four times a second
+[2679] for 6 minutes. I mean, probably there
+[2681] were some some breaks in there. And that
+[2683] was like the highest and best use of
+[2685] Snapchat for a 15-year-old girl in 2016
+[2690] or whatever that was.
+[2692] Um
+[2693] And imagine if the goal was to try to
+[2695] make her
+[2696] tap less. You know, like how
+[2700] how much of an impediment it would have
+[2701] been to the experience that
+[2703] both her and Snapchat wanted to create.
+[2706] It's so fun to listen to this and the
+[2707] examples you gave of it gives us a lot
+[2709] of insight into the way your mind works
+[2711] of just constantly unsatisfied with the
+[2714] way other products work, with your
+[2715] products. And I think that's core, like
+[2718] Patrick is a good example of Stripe. I
+[2719] feel like that's a recurring theme with
+[2721] very successful product leaders is just
+[2723] constantly unsatisfied and unhappy with
+[2725] how things work.
+[2727] Yeah.
+[2727] I love just even the way you summarized
+[2729] this, just like a really good reframing
+[2731] of instead of obsessing with reducing
+[2733] friction and reducing steps, instead
+[2735] think, "How do I
+[2737] how do I uh reduce the amount of
+[2740] thinking the user has to do?" Uh I love
+[2743] I've never heard of it described as like
+[2744] you have to think about the ATP and
+[2745] glucose being used to actually think,
+[2748] and your goal is to reduce that versus
+[2750] let's just reduce friction, reduce
+[2751] clicks.
+[2752] Yeah, I I think um
+[2754] in my more cynical examples, I would I
+[2757] would say to people like,
+[2760] "Stop Stop what you're doing for a
+[2762] second. Close your eyes, take a couple
+[2764] deep breaths, and then pretend that
+[2766] you're a natural human being,
+[2768] and open your eyes again, and then look
+[2770] at this thing and see can you figure out
+[2771] what it's supposed to do or say, or what
+[2774] your what action you're supposed to
+[2775] take, or what the impact will be if you
+[2778] take that action?"
+[2779] There's a whole another related cycle,
+[2782] but before I get into it cuz I know that
+[2784] I'm
+[2785] verbose, um I want to wrap up your your
+[2788] last example of people being
+[2790] unsatisfied. So, here's the quote that I
+[2792] was trying to find. This is um
+[2795] >> [snorts]
+[2795] >> 2014, so like that that was the year
+[2798] that Slack actually launched officially
+[2800] uh in February, and this is now like
+[2802] near the end of the year. I was
+[2804] interviewed by uh MIT Technology Review
+[2807] and asked if we were working to improve
+[2809] Slack.
+[2810] Uh I said,
+[2812] "Oh god, yeah.
+[2813] I try to instill this into the rest of
+[2815] the team, but certainly I feel like what
+[2816] we have right now is just a giant piece
+[2818] of [ __ ] Like, it's just terrible, and
+[2820] we should be humiliated that we offered
+[2822] this to the public."
+[2823] Not everyone finds that motivational,
+[2825] though.
+[2825] So, I came into the office the next day,
+[2827] and people had printed out on like 40
+[2830] pieces of 8 and 1/2 by 11 paper that
+[2832] quote, and like and pasted it up on the
+[2834] wall. But to me that was like,
+[2838] "You should be embarrassed by it." Like,
+[2841] it should be a perpetual desire to
+[2844] improve. You shouldn't have to be like,
+[2845] "Oh, this is great." And you could be
+[2846] proud of individual pieces of work, but
+[2849] in the aggregate, if you can't see
+[2852] almost limitless opportunities to
+[2854] improve, then you shouldn't be designing
+[2857] the product, or you shouldn't be in
+[2858] charge of the company, or you shouldn't
+[2860] um
+[2863] almost nothing,
+[2864] you know, again, you could reduce it
+[2866] down to a tiny feature, is anywhere
+[2868] close to to perfect. And if A, that's
+[2872] acknowledged freely inside the
+[2873] organization,
+[2875] and B, people think about like
+[2876] continually improving as the goal, and
+[2878] that could be like Six Sigma, Toyota
+[2881] Kaizen, like that kind of side of thing,
+[2885] or it could be that story that um
+[2887] I can't remember his name right now, but
+[2888] the guy who started Bridgewater tells
+[2890] about um Ray Dalio. Yeah, Ray Dalio. Uh
+[2893] in his book talks about
+[2895] um Michael Jordan learning to ski. Every
+[2898] time he messed up, he wanted the ski
+[2900] instructor to tell him exactly what he
+[2901] was doing wrong because to him every one
+[2904] of those was like a gem that he could
+[2906] collect, and and he could, you know,
+[2908] actually become a good skier, and what
+[2909] he wanted to do was become a good skier.
+[2911] That requires a lot of trust inside the
+[2913] organization. Um
+[2915] but if you can get to the point where
+[2917] like, "Hey, we're all trying to
+[2919] to find improvements, we're trying to be
+[2920] critical of each other, we're trying to
+[2922] make this as great as it can possibly
+[2923] be."
+[2924] Um
+[2926] Not always, not with every person, but
+[2928] most of the time with most people you
+[2930] can get them to the point where that
+[2932] like really direct criticism is actually
+[2935] motivational. It is like, you know,
+[2937] people are
+[2938] uh
+[2939] grateful to have like the feedback,
+[2941] whether that's coming from their peers
+[2943] inside the company or from end users of
+[2944] the product cuz you realize, "Oh yeah,
+[2946] that is
+[2947] that is bad, and we should fix it."
+[2950] This episode is brought to you by
+[2951] Lovable. Not only are they the fastest
+[2954] growing company in history. I use it
+[2956] regularly, and I could not recommend it
+[2958] more highly. If you've ever had an idea
+[2960] for an app, but didn't know where to
+[2962] start, Lovable is for you. Lovable lets
+[2965] you build working apps and websites by
+[2966] simply chatting with AI. Then you can
+[2968] customize it, add automations, and
+[2970] deploy it to a live domain. It's perfect
+[2972] for marketers spinning up tools, product
+[2974] managers prototyping new ideas, and
+[2977] founders launching their next business.
+[2979] Unlike no-code tools, Lovable isn't
+[2981] about static pages. It builds full apps
+[2984] with real functionality, and it's fast.
+[2987] What used to take weeks, months, or
+[2989] years, you can now do over a weekend.
+[2991] So, if you've been sitting on an idea,
+[2993] now is [music] the time to bring it to
+[2994] life. Get started for free at
+[2996] lovable.dev.
+[2998] That's lovable.dev.
+[3001] This makes me think about a Let's call
+[3002] it a rant that you have about how it
+[3005] takes a lot of work to make anything
+[3007] work at all. That just the default state
+[3009] is not working. You just share Share
+[3012] what you share there.
+[3013] Yeah. Um I mean, so this is a lot to do
+[3016] with um
+[3019] And maybe this is more recent than other
+[3020] shows I've been in politics a lot for a
+[3023] um
+[3024] But uh By the way, if any of your Anyone
+[3026] listening to this can help me find this
+[3028] tweet storm from somewhere between 2016
+[3032] and 2020. I don't have a precise idea,
+[3034] and it was this guy's thread about how
+[3036] hard it was to get um
+[3039] a stop sign set up. And I think it I
+[3040] believe it was in response to someone
+[3042] claiming that Bitcoin is going to
+[3044] replace US dollars. Uh
+[3046] It was something something about crypto.
+[3048] And his point was like, "Here's what
+[3050] happened when we tried to get a stop
+[3051] sign put up on a residential street in
+[3053] my neighborhood." And the literal years
+[3056] it took and the number of agencies that
+[3058] were involved, like the engineering
+[3060] department, traffic planners, the HOA,
+[3062] and the
+[3063] I don't remember all of the
+[3064] organizations um because I think if I
+[3066] did, then I could search better and find
+[3068] this again cuz it was truly a
+[3069] masterpiece of how difficult it is to
+[3073] get a stop sign put up in in most
+[3075] places.
+[3077] The message that I hear from most
+[3078] politicians, and unfortunately this
+[3079] works really well, is
+[3081] you know, things should be good, but
+[3083] they're not because someone is doing
+[3086] something bad, which is preventing the
+[3088] goodness. So,
+[3090] um
+[3091] billionaires are making things
+[3093] unaffordable, or immigrants are taking
+[3096] your jobs, or um
+[3098] lazy freeloaders are sucking off the
+[3101] government teat and causing us all have
+[3103] to pay more taxes or something like
+[3105] that. The reality is like almost nothing
+[3107] works. It's It's actually another call I
+[3110] sent This case John has a great
+[3112] encapsulation of this, and I'm sure
+[3114] you've you're familiar with it, like
+[3115] that It ends with the world is a museum
+[3118] of passion projects because for anything
+[3120] to get done at all requires like
+[3124] not just the resources and and effort
+[3127] you know, required to instantiate that
+[3130] thing in the in the real world, but all
+[3132] of the politicking and the sociology and
+[3134] the convincing and um
+[3137] There's a book called Why Nothing Works
+[3139] recently, which is like
+[3142] It's not an
+[3143] I'm sorry to the author if they
+[3145] They doubt they're listening, but just
+[3146] give It's not like an amazingly written
+[3148] book. I I found it like um
+[3151] a little bit repetitive, uh but the the
+[3154] content was really incredible. It's just
+[3156] explaining why it's so hard and how
+[3159] there's this progressive increase in the
+[3161] number of of vetoes that are available
+[3164] for any kind of course of action and how
+[3167] difficult it is. And this shows up in
+[3168] like, you know,
+[3169] in permitting for new construction and
+[3171] stuff like that. But it also shows up
+[3173] obviously inside of organizations. And
+[3175] the challenge is that people
+[3178] A, I think this is
+[3180] evolutionary, biological.
+[3183] Uh it's hard for us to understand the
+[3184] world except by anthropomorphizing it.
+[3188] And so it like if it didn't rain this
+[3190] year, it's because a god is mad, and
+[3194] probably because we didn't sacrifice
+[3195] enough goats something last last year.
+[3198] It's hard for people to understand just
+[3200] that
+[3201] well, weather is incredibly complex and
+[3203] chaotic and ecosystems and climatology
+[3205] and all that.
+[3206] Same thing with the world. Like if if I
+[3209] uh am struggling to
+[3211] uh
+[3211] you know, pay all of my bills and be
+[3214] able to afford me a little bit of
+[3217] luxury in the sense of like a vacation
+[3219] or a present for my kids or whatever,
+[3221] it's got to be somebody's fault. Like
+[3222] there has to be a decision that's made
+[3224] somewhere.
+[3225] And the reality is everything is so
+[3228] complicated. Everything is so
+[3230] multivariate. Uh it's not satisfying.
+[3233] It's a terrible political message. Um
+[3235] it's much easier to say that there is
+[3237] like
+[3238] uh
+[3239] Well, we understand why things are bad
+[3241] in the way that you're concerned about,
+[3242] and it's turns out that it's someone's
+[3244] decision. Um
+[3246] and because of them, it's bad. And it so
+[3248] if we got rid of them or
+[3251] you know, were able to overcome their
+[3253] decision, overturn it, um and institute
+[3256] our own thing, then things would be good
+[3258] for you.
+[3258] Uh
+[3259] And this really to me shows up inside of
+[3262] organizations as well. You know, I'll
+[3264] pause there. Uh I know kind of along
+[3266] those lines you're a
+[3267] a big uh believer in something called
+[3269] Parkinson's Law. Yeah, so that the
+[3272] original of that is I think it's 1956.
+[3274] It's an article in The Economist
+[3277] by Parkinson. Um
+[3279] And uh
+[3281] the maxim is work expands to fill the
+[3284] time available for its completion.
+[3287] And
+[3289] the way that shows up This is a little
+[3291] bit subtle. So, like um one of the
+[3293] things I found since I don't have a job
+[3296] is there's much less time pressure, and
+[3298] and that maxim like uh if you want
+[3300] something done, give it to a busy
+[3301] person,
+[3302] the inverse is also true that like if
+[3305] you're not that busy, wow, basic things
+[3308] take a really long time. And so
+[3309] Parkinson actually starts off with his
+[3310] example of like, you know, writing and
+[3313] posting a letter.
+[3314] Um and I I don't remember who he used
+[3316] for the first example, but someone who's
+[3317] like, you know, incredibly busy and has
+[3318] all these things they have to respond
+[3319] to. And then another case, like a
+[3321] retired woman who has all the time in
+[3322] the world, and it takes her a long time
+[3323] to write the letter. It takes her a long
+[3324] time to put it in the envelope and then
+[3326] go to the post office and post it.
+[3328] But the real meat of it is um
+[3333] for me later, when he talks about the
+[3336] size of the organization. He uses a
+[3338] bunch of examples. This is again 1950s,
+[3340] so
+[3341] uh and he's British. Um
+[3343] So, he's looking at the the Royal Navy,
+[3345] and specifically he's looking at a chart
+[3348] that shows the relationship between the
+[3349] number of capital ships in the Navy, the
+[3351] number of sailors, uh and the number of
+[3353] administrators. And very familiar graph
+[3355] for for people looking at like
+[3358] any part of government, any part of like
+[3361] the relationship between the number of
+[3362] administrators at a university and the
+[3364] number of students and faculty, the
+[3366] teaching faculty. Where it's like, okay,
+[3368] the number of ships goes like this, and
+[3369] the number of sailors is like right
+[3370] along with it, and the number of
+[3371] administrators goes like this.
+[3373] And the reason this this ties into the
+[3376] work expands to fill the time available
+[3378] for its completion is um
+[3382] people hire, and they train, and uh
+[3386] Here's the
+[3388] kind of sad truth for anyone running a
+[3390] company
+[3392] is there are exceptions. There's like
+[3394] certain types of engineers that are
+[3395] exceptional to this, but the
+[3397] overwhelming majority of people you hire
+[3399] want to hire more people who report to
+[3402] them. And it's not because they're evil.
+[3405] It's not because they're stupid. In
+[3406] fact, they're smart because everyone
+[3407] knows that the number of people report
+[3408] to you correlates with like your career
+[3411] trajectory, your the the amount of money
+[3413] that you're paid, the the amount of
+[3414] authority you have inside the
+[3416] organization, and on and on and on. So,
+[3417] like we would hire 27 year old product
+[3419] managers in Slack who immediately want
+[3421] to hire someone. It's like, "What the
+[3422] hell What would that person do?" And
+[3424] they're like,
+[3425] They articulate it this way, but
+[3426] essentially it's like, "Well, that
+[3427] person would do the product management,
+[3429] and then I would do strategy."
+[3431] Classic. It's It's really
+[3434] I think the essential thing to
+[3435] understand about this is it's not
+[3437] because people are evil, and it's not
+[3439] because they're stupid. And it's to me
+[3441] very related to the everything is
+[3443] complex. Um
+[3445] and uh if you
+[3447] I maybe this is my
+[3450] Butterfield's Law. I haven't thought
+[3451] about this before, but I I tweeted this
+[3453] a very very long time ago. Like if you
+[3455] um
+[3457] Everything is simple if you have no idea
+[3458] what you're talking about.
+[3460] Um
+[3461] So,
+[3463] the the other side of that is like if
+[3464] something seems simple, probably you
+[3467] don't understand it.
+[3469] And
+[3470] you know, there's obvious exceptions to
+[3472] that, but for anything that involves a
+[3475] large organization or a lot of human
+[3477] beings, if
+[3478] the problem seems simple, you don't get
+[3480] it. So, every budget process
+[3483] no head of engineering, no head of
+[3486] sales, no CFO, no GC is ever going to
+[3489] come back and say like, "Oh, I actually
+[3491] think like next year we can just hire
+[3493] fewer people, or we're going to keep it
+[3494] flat, or we're going to like shrink
+[3495] through attrition cuz we don't need any
+[3497] more people to do what we're doing." Not
+[3499] because they're evil, not because
+[3500] they're stupid. Uh but it's an almost
+[3503] overpowering impulse inside the
+[3505] organization that often leads to
+[3507] disastrous results. And so, there's a
+[3510] I'll give one example from Slack's
+[3512] history, and I
+[3513] you know, I have tried in the past to
+[3515] disguise this example so that no one
+[3518] feels bad about it, but I
+[3520] Fortunately, the specifics are so
+[3522] important to the example that it's not
+[3524] disguised, and so I'll just reiterate
+[3526] that the people involved aren't stupid
+[3528] or or evil. Um and one example that's um
+[3532] This is from the outside. So, the
+[3533] example inside of Slack was um
+[3537] We introduced threads, which is the
+[3539] ability to reply to a message inside of
+[3541] a channel. And let's say you, Lenny,
+[3544] post a message. I, Stewart, replied to
+[3547] it. You will automatically get a
+[3548] notification. And now Sarah, later on,
+[3552] replies to the same message. Both you
+[3554] and I,
+[3555] um as people who have posted in that
+[3556] thread, will receive a notification that
+[3558] there's been more activity. And so what?
+[3560] So, like, you know, every single time
+[3562] anyone replies to it.
+[3563] So, when the feature
+[3565] first was um
+[3566] released or like when we did the final
+[3568] product review before it was released,
+[3570] the input box was pre-populated with at
+[3574] the person before you in the thread.
+[3577] And I you know, I was using the feature
+[3580] and I would like
+[3581] put the insertion point there, select
+[3583] all, delete, and then start writing my
+[3584] message.
+[3585] And it's
+[3586] even if I wanted to at someone
+[3589] specifically, I almost never remember to
+[3591] start my sentence with at I cuz it just
+[3593] made it hard to
+[3595] you know, reference what they were
+[3596] saying before.
+[3597] So, I said get rid of this because A, I
+[3600] think most people
+[3601] won't use it or if they
+[3603] uh if they did want to at someone,
+[3605] they're not going to want to do it at
+[3606] the beginning of the sentence. And by
+[3607] the way, you're teaching them to use the
+[3609] product wrong because it's important
+[3611] that everyone understand that every
+[3613] previous poster in this thread will
+[3615] automatically receive a notification
+[3617] unless they've muted it.
+[3619] So, okay, we release it, 6 months goes
+[3622] by, and suddenly the at thing comes
+[3625] back. And so, I messaged someone on the
+[3626] team and I said, "Hey, there's been a
+[3627] regression at this super weird I don't
+[3629] know what happened, but like the
+[3631] at thing came back." And they said, "Oh,
+[3633] no, this is on purpose.
+[3634] We did a bunch of research." And so, I
+[3636] was like, "What?"
+[3638] And I went through this and it was
+[3641] if I recall correctly, it wasn't even
+[3643] like P95
+[3645] certainty on this analysis, but it was
+[3648] something like
+[3650] when we do this, threads are 2.17
+[3654] messages long versus 2.14 messages long
+[3657] on average for when we don't do it.
+[3659] And so, first of all,
+[3662] why is a longer thread better? Like
+[3664] maybe a maybe a shorter thread is
+[3666] better. Like it's
+[3667] fewer messages that people have to go
+[3668] back and forth.
+[3670] Also,
+[3671] that's such a tiny difference. Also,
+[3673] again, I don't remember the actual
+[3676] statistical analysis, so I'm not going
+[3677] to claim that it was um
+[3679] in correct me, I pretty sure this was
+[3680] outside the the bounds of certainty that
+[3683] they could have But the real thing was
+[3685] Oh my god. So, you guys
+[3688] put flags in the product, you AB tested
+[3691] it, you did the instrumentation, you
+[3693] created tables in the in the database or
+[3696] whatever you're using to record all of
+[3698] that, you wrote queries to pull that,
+[3701] you created charts based on that data,
+[3703] you had meetings to discuss it.
+[3705] And just like kind of unpacking
+[3707] all of the things that would have had to
+[3709] happen for this to come back. And it's
+[3710] like, you know,
+[3712] thousands of person hours kind of at a
+[3714] minimum cuz any feature change at at
+[3717] that scale decision is involving like a
+[3719] dozen people,
+[3721] engineering, QA, uh analytics teams,
+[3724] product managers, user research, and
+[3727] stuff like that.
+[3728] The problem with that was So, I think it
+[3731] was a bad idea, right? But the problem
+[3733] with that was
+[3735] the difference that you could possibly
+[3737] achieve between having this feature and
+[3740] not having this feature is like
+[3742] this much, whatever units you want. The
+[3745] cost of doing the analysis was this
+[3746] much. So, it's guaranteed to be a loser.
+[3749] Like there's just there's no world in
+[3751] which anyone could imagine putting the
+[3754] at previous respondent in the thread at
+[3756] the beginning of the message could
+[3758] possibly make that much of a difference
+[3759] to
+[3760] the quality of Slack and how how much
+[3763] utility it provides to people and and
+[3765] all of that.
+[3766] But you know that
+[3768] to to like put the feature flags in, to
+[3770] ship new versions of the product, to put
+[3773] the instrumentation in, to have it all
+[3775] the API calls to record every action
+[3777] that people take, to to do all the
+[3779] analytics, to create the dashboard, to
+[3781] put that, you know, paste the screenshot
+[3783] of that into a Google Slides
+[3785] presentation, to send the invitations to
+[3787] the meeting, to schedule the meeting cuz
+[3788] someone couldn't make it, to have
+[3790] everyone sit down and look at the thing.
+[3792] Like, you know, guaranteed loser. And
+[3795] I know that you that Farid told you to
+[3798] ask me about this um
+[3800] hyperrealistic work-like activities. And
+[3802] so, here's my my my grand theory.
+[3806] Um hyperrealistic work-like activities
+[3808] is goes along with this other concept
+[3811] called known valuable work to do.
+[3814] And when I say known, I mean both you
+[3817] know what it is and you know that it's
+[3819] valuable. And the problem with almost
+[3822] every organization
+[3823] at the very beginning, you have an
+[3825] enormous amount of work that you know
+[3827] what to do and you know that it's going
+[3829] to be valuable. So, like starting a
+[3831] business, open a bank account because
+[3833] like there's almost infinite generative
+[3835] value of opening a bank account. You you
+[3838] have to do it. You it's very simple to
+[3840] do. And so, at the very beginning of of
+[3843] any startup, they're like, "I'm like
+[3845] creating a user's table and I'm like
+[3847] doing salting passwords and like you're
+[3850] doing all the things that are kind of
+[3852] absolutely necessary and everyone knows
+[3853] exactly what they are. And so, that's
+[3854] like everyone's going to work in the
+[3856] morning and they're like, "Right on."
+[3857] And like I have 10 things to do and
+[3859] every single one of them is like
+[3860] something I know how to do and it's like
+[3862] definitely going to be valuable. Time
+[3864] goes on and the relationship between the
+[3867] supply of work to do and the demand for
+[3870] doing work just starts to change. More
+[3872] and more people get hired. Every product
+[3874] manager wants to hire a junior product
+[3876] manager. Every new person, you know, the
+[3878] first person you bring in on the risk
+[3880] and compliance team is like, "Oh my god,
+[3882] we have there's so many risks and things
+[3884] we have to be compliant with. We better
+[3885] hire more people on my team to do more
+[3887] risk and compliance work." Which
+[3888] probably, you know, to some degree is
+[3889] right, but we're going to have more and
+[3891] more of those people and they're going
+[3892] to call meetings with each other.
+[3893] Um and now suddenly you have all these
+[3895] people with work to do and you've done
+[3897] all the easy, obvious stuff. And now
+[3899] your questions are like, "God, should we
+[3901] do FedRAMP High and make a GovSlack
+[3903] version?" Which is going to require us
+[3905] to have wholly separate physical
+[3907] infrastructure for the hardware that
+[3910] runs the the software and also a whole
+[3913] different operations team which has only
+[3915] US citizens on it. What is the possible
+[3917] number of of dollars that we could make
+[3920] from doing this and how much complexity
+[3922] is going to be when we want to do
+[3923] updates to the software? Should we
+[3924] update two totally separate, independent
+[3926] systems? And we're
+[3927] it just gets out of whack. And so,
+[3929] people end up like if you hire 17
+[3932] product marketers, you're going to have
+[3934] 17 product marketers worth of demand for
+[3936] work to do. And if you don't have
+[3938] sufficient supply of product marketing
+[3940] work to do, they're just going to do
+[3941] other stuff. Again, very important, not
+[3944] because they're stupid, not because
+[3946] they're evil, but because they're like,
+[3948] "I'm a product marketer and I want to
+[3949] like be recognized for my work and my
+[3952] spouse is like has um
+[3955] uh criticized me because they think like
+[3957] I should have already got promoted in
+[3958] the last cycle and I really got to
+[3959] demonstrate some wins here and whatever
+[3961] it is." And so, people are like calling
+[3964] meetings with their colleagues to
+[3965] preview the deck that they're going to
+[3966] show in the big meeting to get feedback
+[3968] on whether they should like improve some
+[3969] of the slides.
+[3971] And that hyperrealistic work-like
+[3973] activity is
+[3975] superficially identical to work. Like we
+[3977] are sitting in a conference room and you
+[3980] are there's something being projected up
+[3982] there and we're all talking about it.
+[3984] And that's exactly what work is.
+[3987] Now, hopefully not all of work in for
+[3989] everyone inside of your company, but you
+[3991] know, that's uh exactly what we do when
+[3994] we're working, but this is actually a
+[3996] fake bit of work and it's so subtle that
+[3999] I I'll do it.
+[4001] You know, our board members will do it.
+[4002] Every exact will do it. And the further
+[4004] you are from like having all of the
+[4006] context and all of the information and
+[4010] the decision-making authority and stuff
+[4011] like that, the easier it is to get
+[4013] trapped in this stuff and people will
+[4015] just perform enormous amounts of
+[4016] hyperrealistic work-like activities and
+[4018] have no idea that that's what they're
+[4019] doing. And
+[4021] the
+[4022] you know, the result of that I guess is
+[4023] that if you are a leader, if you're a
+[4025] manager, director, an executive, you're
+[4028] the CEO, it's on you to ensure that
+[4031] there is sufficient supply of known
+[4033] valuable to do.
+[4034] Um and there almost always is, but you
+[4038] know, it's creating the clarity around
+[4040] that, creating the alignment, making
+[4042] sure everyone understands it that that's
+[4043] what they're supposed to be doing. And
+[4044] and then obviously doing it. Amazing. I
+[4047] could listen to uh Stewart Rants all
+[4048] day.
+[4049] Hyperrealistic work-like activities. We
+[4052] need a coin this.
+[4053] Uh and the
+[4054] >> it doesn't make a good acronym. It's
+[4055] pretty ugly. So, we're not even going to
+[4057] try.
+[4058] And just to close the loop on that, the
+[4060] the solution is uh the leader
+[4062] recognizing this is happening and
+[4063] stopping it. Telling people, "Why are we
+[4065] spending time on this thing that is not
+[4066] going to get us anywhere?" Yeah. And and
+[4068] and that what you just said probably
+[4071] isn't the best way because that sounds
+[4073] like they're you know, you're chiding
+[4075] them and they're dumb when it's actually
+[4076] your responsibility to make sure that
+[4077] there's, you know, sufficient clarity
+[4080] around what the priorities are and you
+[4083] know, explicitly saying no to things up
+[4085] front and stuff like that. Rather than
+[4086] being rude and saying like, "Hey, you
+[4088] guys are bunch of idiots wasting your
+[4089] time on this thing that doesn't matter."
+[4091] Whose fault is it? You know, it's it's
+[4094] the manager's fault, it's the VP of
+[4095] whatever's fault, it's the
+[4097] CX whatever. It's the Hopefully it's
+[4100] like it's the the leader of the
+[4102] organization that has the responsibility
+[4103] to make sure that there is sufficient
+[4106] known valuable work to do.
+[4108] Um
+[4109] and this that's actually harder than it
+[4111] might appear.
+[4112] Okay. Uh before we run out of time, I
+[4114] want to touch on two other topics. One
+[4116] is
+[4117] when people think of Stewart
+[4118] Butterfield, I think a lot of people
+[4120] think of we don't sell saddles here.
+[4122] Your legendary medium post that uh is
+[4125] just I don't know, it's become a
+[4127] historic piece of literature in the in
+[4129] the annals of product building and in
+[4130] startups. I haven't heard people ask you
+[4132] much about this recently, so let me just
+[4134] ask a couple questions. One is just what
+[4136] was the what was the reason you put that
+[4137] out? Why what what was the backstory on
+[4139] writing that memo? Why was it necessary?
+[4141] Well, it really was an internal memo and
+[4146] as a bit of a digression,
+[4148] um
+[4149] one of the the crappy things about Slack
+[4152] um is if all your corporate
+[4154] communication is on email, depending on
+[4157] exactly how it works and what system you
+[4158] use, you probably walk away with an
+[4160] archive of everything you said at
+[4162] company X. Um if it's Slack, once you're
+[4164] turned off, you like you lose access to
+[4166] all that history. And so it's kind of
+[4168] like, "Oh man, if I had only exported
+[4171] all of my messages before I left, I
+[4173] would have all this stuff." But that was
+[4174] it was absolutely
+[4176] verbatim. I did not change a word of
+[4178] what I said inside the company. When I
+[4180] think we were still eight people, maybe
+[4183] you know, at most 10, but I I think it
+[4184] was eight people. It was before Slack
+[4186] launched even. Yeah, it was before Slack
+[4188] launched. It was like when we were doing
+[4189] a private beta and the point of it was
+[4191] to like to start to
+[4193] instill those
+[4195] ideas as early as possible and really
+[4198] create this alignment inside of that
+[4200] small team so that it could process to
+[4203] survive as we grew and and scaled. Um
+[4208] and yeah, that that was the that was the
+[4210] idea. And the gist just for people that
+[4212] aren't super familiar with it, but we'll
+[4214] link to it is just it's not enough just
+[4216] to build a great product. You just as
+[4219] much have to put it effort into
+[4220] communicating what this does for them,
+[4222] the problem this is solving for them,
+[4224] the outcome this is going to achieve for
+[4225] them. Is that a a good way to think
+[4227] about it? Yeah, and again, you know,
+[4228] like comparing it to beer or cars, um
+[4234] beer is
+[4235] goes back to pre-civilization. Cars are
+[4237] obviously invented and but you know, so
+[4238] at some point you had to convince people
+[4240] why they would want a car instead of a
+[4241] horse. Um
+[4243] for your new um
+[4248] AI-based recruiting tool or your
+[4251] calendar app or whatever, there's some
+[4253] reason why people you think that people
+[4255] should use yours instead of the thing
+[4257] that they're using now, which might be
+[4258] like a wholesale one-for-one replacement
+[4260] or more often is like a change in the
+[4263] way that you're working that has a bunch
+[4264] of other adjacencies and you want to
+[4266] expand into these other categories and
+[4267] while you're not just responsible for
+[4270] creating the product, but also to a
+[4272] certain degree creating the market and
+[4273] and creating you know, this is book
+[4275] positioning
+[4277] um which is an absolute classic. It's
+[4278] very short. I would recommend everyone
+[4279] read it.
+[4280] Where the the point of it is from my
+[4283] perspective it's
+[4285] almost impossible to create a net new
+[4287] idea in someone's head. It's much easier
+[4290] to take a couple of existing ideas and
+[4292] and put them together. So it's much
+[4294] easier to say it's like Jaws meets Star
+[4296] Wars Star Wars or it's Uber for pets or
+[4299] something like that than to come up with
+[4301] like an
+[4302] actual new idea, but you you have to do
+[4304] that cuz you like
+[4307] if your thing is different in any
+[4309] significant way from the alternatives,
+[4312] um you're not just creating the product,
+[4313] you're creating the market. They're
+[4314] really kind of one in the same. The
+[4316] reason I wanted to touch on it is I
+[4317] think still people continue to not
+[4320] listen to this advice and can continue
+[4322] to over-invest in more features, more
+[4324] more products, things like that. Just
+[4326] the the specific example of we don't
+[4328] sell saddles here just to quickly
+[4330] communicate this to folks and correct me
+[4331] if I'm missing anything is just instead
+[4332] of, "Hey, look at this amazing saddle we
+[4334] bought." what you want to communicate is
+[4336] here, "Go horseback riding. Look at this
+[4338] incredible experience you can have." and
+[4339] and then they
+[4341] decide, "Oh [ __ ] I need to go buy a
+[4342] saddle to do that."
+[4343] >> Yeah. And and
+[4345] 100% um that aspect of it is is not
+[4348] original cuz I think that's something
+[4349] that marketers have done for a long
+[4350] time, surely in the in marcom and and
+[4353] advertising. Like if you want to sell
+[4355] Harley-Davidsons, there are people who
+[4356] are going to geek out on the engines and
+[4358] stuff like that and like the quality of
+[4359] the leather and stuff like that. But
+[4360] what you're selling is not the
+[4361] motorcycle, you're selling like the open
+[4363] road and freedom and the wind in your
+[4364] hair. And if you're
+[4366] Lululemon, you are obviously selling
+[4368] yoga pants, but you're also selling like
+[4370] health and aspiration and being the best
+[4372] version of yourself and you know, a
+[4374] bunch of other stuff. So selling that.
+[4377] Oh my god, I forgot the classic version
+[4378] of it. You know, like There's the ship
+[4381] >> There's the instead of the the
+[4382] screwdriver Oh. Oh yeah, the nail. Yeah,
+[4385] the nail. Anyway. Yeah, what is that
+[4387] one?
+[4389] >> [laughter]
+[4389] >> There's the Well, there's the one I
+[4390] think about is instead of trying to
+[4391] convince men to build a ship, uh instill
+[4394] a yearning for the sea. Yes, exactly.
+[4397] You know, it's a something that goes
+[4398] back in in history. Mhm. Okay, let me
+[4401] ask you about pivoting. Uh you are
+[4404] potentially the king of pivots. You
+[4406] started two companies, both famously
+[4408] pivoted, both from video games, which is
+[4409] why I asked you about that at the
+[4410] beginning. Into very successful
+[4412] companies.
+[4414] I imagine many people come to you for
+[4415] advice on pivoting. I I let me just ask
+[4417] when folks come to you asking, "Should I
+[4419] stick with my idea? Should I pivot?"
+[4421] What sort of advice do you find most
+[4422] helps them? Yeah, I mean, I think it's
+[4425] um
+[4426] partly
+[4428] uh
+[4431] it an intuition because like obviously
+[4433] the decision is about like have you
+[4434] exhausted of the possibilities?
+[4436] Um
+[4437] and in the case where you know, we were
+[4439] working on Glitch, this game where we
+[4441] used IRC for internal communication and
+[4443] we added a bunch of IRC, which became
+[4445] the proto-Slack. And I think Slack
+[4448] had an enormous advantage in the fact
+[4450] that we were working on this for several
+[4451] years without actually explicitly
+[4453] working on it and only doing the minimum
+[4455] number of
+[4457] features that were you know, absolutely
+[4460] guaranteed to be successful in the sense
+[4462] that it was so irritating that we
+[4464] couldn't stand it anymore or such an
+[4466] obvious improvement that we couldn't
+[4467] help but take advantage of it.
+[4468] We still had a like $9 million left and
+[4471] everyone still liked the game and we
+[4473] were all happy working on it, but it
+[4474] would I think by that point I had
+[4477] exhausted every
+[4479] non-ridiculous
+[4481] long shot idea to make it commercially
+[4485] successful.
+[4487] And so decided to um
+[4490] to abandon it.
+[4492] But, you know, the
+[4494] default advice for anyone in anything is
+[4498] persevere. It's like you know, kitten
+[4499] hanging off the branch and the poster
+[4501] says, "Hang in there." And you know, and
+[4503] I think there's a idea that you just
+[4505] like And then there's so many stories of
+[4507] like
+[4509] so-and-so started out going door-to-door
+[4511] and was rejected by everyone and then
+[4513] suddenly there was Nike or or something
+[4515] like that. And like just if you stick
+[4517] out stick it with it long enough, you'll
+[4519] eventually be successful. I think you
+[4520] have to really be
+[4522] coldly rational and Now
+[4526] you know, some of this shows up in the
+[4527] book um thinking about Some of it's in
+[4529] Andy second book.
+[4531] The title of which I'm forgetting right
+[4533] now, but I'm someone will will know it.
+[4535] Yeah, Thinking Backwards and then yeah,
+[4536] it was the last second one I forget. Uh
+[4539] she actually uses Glitch and and Slack
+[4541] as an example of like a smart fold
+[4544] basically. Like I
+[4546] my expected value here has diminished to
+[4549] the point where
+[4551] this alternative looks more attractive.
+[4554] And the reason is say you have to be
+[4555] coldly rational about it is because it's
+[4557] [ __ ] humiliating. You know, like like
+[4560] we I convinced so many and you have to
+[4563] convince so many people to get a company
+[4564] off the ground. You have to go to
+[4566] investors, you have to go to early
+[4567] employees and say like you should leave
+[4568] your other job and come work for this
+[4570] because you know, here's the the
+[4572] incredible future we're imagining. You
+[4574] have to go to the press and you have to
+[4575] make all these promises and you have
+[4576] users and you feel like committed things
+[4577] to the users and you've convinced them
+[4579] to give up their time for this thing.
+[4580] And so it's I I think for a lot of
+[4583] people
+[4584] it feels better to just keep doing it
+[4587] until it dies
+[4589] um of suffocation
+[4592] due to lack of capital or something like
+[4594] that uh than to to admit like, "Okay,
+[4599] I was wrong. This didn't this didn't
+[4600] work." And it's it's humiliating, it's
+[4602] painful, it's like it's wrenching. It
+[4605] has a bad impact. You know, like there's
+[4606] when we shut down Glitch, there's a lot
+[4607] of people who loved it and who spent all
+[4610] of their free time and couldn't wait to
+[4611] get home from work to go play it more
+[4613] and that was their community and that
+[4614] community just like disappeared. All
+[4616] these people and all these identities
+[4617] have been created. And obviously people
+[4619] lost their jobs and and people who had
+[4621] like moved their families to a different
+[4623] city in order to take this job now
+[4625] weren't going to have a job anymore. So
+[4627] pivots aren't something I take lightly
+[4629] and you shouldn't be um
+[4633] I think it's very different to be like
+[4635] there's three of us and we started
+[4637] making this app and then we pivoted to a
+[4640] different app. That doesn't really
+[4641] count. You know, like if you're six
+[4643] months into something, you're just
+[4645] you're still messing around. You're
+[4646] trying to figure out what it is that
+[4647] you're you're building. It's not really
+[4649] a pivot.
+[4650] Obviously, in this case it worked out
+[4652] great and there's survivorship bias and
+[4655] it doesn't mean that everyone should
+[4656] pivot all the time. Um
+[4658] but I think it is creating the distance
+[4661] so that you can
+[4663] make an intellectual
+[4665] rational decision about it rather than
+[4667] an emotional decision is is essential.
+[4670] I love all three pieces of advice of
+[4671] just exhaust. Once you've exhausted all
+[4673] the ideas, that's a really good time to
+[4675] see what else is out there. Yeah,
+[4676] exhaust all the all the good ideas. All
+[4679] the good ideas. All the realistic, yeah.
+[4681] Yeah. The
+[4682] the point you made about just kind of
+[4684] persevering, I just had Melanie Perkins,
+[4686] CEO of Canva on the podcast. They went
+[4688] through a hundred investors rejected her
+[4690] before somebody finally decided to
+[4692] invest and she just kept pushing. Yeah,
+[4694] but I think that's a slightly different
+[4696] example, right? Cuz like the she
+[4697] believed in the Yeah, then she then she
+[4700] believed in the in the concept of the in
+[4702] the product and like in the in the
+[4703] vision. They were just trying to figure
+[4705] out the right articulation to get
+[4707] investors who ended up being obviously
+[4709] very very happy. Yeah,
+[4710] extremely happy. Oh jeez.
+[4713] Okay, maybe a final topic depending on
+[4715] how time goes. I want to talk about
+[4717] generosity.
+[4719] I talked to a bunch of people, as I
+[4721] said, that have worked with you and the
+[4722] number one theme that came up again and
+[4724] again and again when I asked them about
+[4726] you and what they what has stuck most
+[4728] with them is is just generosity. So I'm
+[4731] going to read a few examples that I
+[4732] heard from folks that are examples of
+[4734] your generosity over the years.
+[4737] So one person shared that
+[4739] he needed a little money before
+[4740] Christmas and you
+[4742] he said, "Stewart literally walked me
+[4744] out of the building, went to the cash
+[4745] machine, handed me $500, told me to go
+[4748] home to my family."
+[4750] Other folks shared that when you you
+[4752] talked about Glitch just recently when
+[4753] you had to lay people off that you cried
+[4755] real tears when you were laying people
+[4757] off and then you spent an incredible
+[4758] amount of time helping them find new
+[4760] jobs and extending their severance pay,
+[4762] and just taking it extremely extremely
+[4764] seriously, much more than I think most
+[4766] people feel like CEOs do.
+[4769] Someone else shared that you paid 100%
+[4770] of employees' health insurance to give
+[4772] them just fewer things to think about.
+[4774] Uh when you went public, you did a you
+[4776] basically created the best possible
+[4779] situation for employees. No lockup,
+[4781] direct listing.
+[4782] Also, with the structure of the Slack
+[4784] deal, people said the acquisition is
+[4785] very employee-friendly.
+[4788] There's also just a bunch of ex- That's
+[4789] employees. There's also just the way you
+[4790] thought about customers. A few examples.
+[4793] You gave free credits to businesses who
+[4794] were struggling to pay the bills during
+[4795] COVID. You released this fair billing,
+[4799] which I think was very innovative at the
+[4800] time, where you didn't charge you
+[4801] stopped charging people for seats they
+[4803] weren't using, even though they signed a
+[4805] deal to charge for those seats. A lot of
+[4807] times just you slipped release schedules
+[4809] because you just wanted to make features
+[4810] better and better for people.
+[4812] So and I'll end with this quote. Stewart
+[4814] is a leader who takes the responsibility
+[4816] he feels for his employees personally,
+[4818] and to which he extends the most
+[4819] generous circumstances he can muster.
+[4822] That feels worth celebrating.
+[4825] So first of all, let me I just want to
+[4826] celebrate you. I think it's really rare
+[4829] and inspiring to
+[4830] meet a leader like that. Clearly, you've
+[4832] had a lot of impact on a lot of people.
+[4835] I don't know exactly the question I want
+[4836] to ask, but I guess was this is this
+[4838] like an In what part is this
+[4840] intentional? Just like this is how we
+[4841] win. I'm going to be very generous and
+[4844] help people because I know this will
+[4845] help long term. How much of this is just
+[4846] innate? This is just the way you are as
+[4848] a person.
+[4849] I I think a lot of it is just the way I
+[4851] am as a person, and uh I had wonderful
+[4854] parents who raised me right. But I think
+[4856] there's also um
+[4858] there is a little bit of a lesson there,
+[4860] and I'm just going to assume people's
+[4862] familiarity with the the prisoner's
+[4863] dilemma.
+[4864] Um
+[4865] the
+[4866] you know, acts of generosity to me are a
+[4868] way of demonstrating that I am going to
+[4870] cooperate as we iterate in this game.
+[4873] Um and if you do that, then people will
+[4876] also cooperate, and you both benefit.
+[4879] Whereas if you never really know if the
+[4881] other person is going to defect at the
+[4882] first opportunity, um then your best bet
+[4885] is to defect. And so, you know, there is
+[4887] a game theoretic aspect.
+[4889] Usually in games that are much much much
+[4892] more complicated than uh the prisoner's
+[4893] dilemma.
+[4895] Um
+[4896] I think another thing you know, one
+[4897] thing we
+[4899] uh
+[4899] I didn't touch on before, but to me it
+[4902] was important enough that at more than
+[4904] one company all-hands, I made everyone
+[4907] in the company like repeat this as a
+[4909] chant. Um
+[4911] it was in the long run, the measure of
+[4914] of our success will be the amount of
+[4916] value that we create for customers.
+[4918] Um and then I wanted to be super clear
+[4921] and explicit about that because it
+[4923] should be if anything you're doing feels
+[4925] like a little bit shady, a little bit
+[4927] cheating, a little bit like um
+[4931] maximizing
+[4933] um
+[4935] in the in the at the wrong moment, or
+[4937] taking advantage of a customer, or
+[4939] anything like that, we definitely
+[4940] shouldn't do it because to me it was
+[4942] just like I mean I think it's
+[4944] uh
+[4945] literally true, but it's also like an
+[4949] uh an ethical way to run a business, and
+[4952] and um it's not just that the ethics are
+[4954] good. It's like there's advantages for
+[4956] you. Like you're able to attract a
+[4957] better class of employee. Like if all
+[4958] your employees are are ethical, then
+[4961] it's going to be a better place for
+[4962] everyone to work, and you're going to be
+[4963] happier, and you're going to have fewer
+[4964] internal problems, and and all that
+[4966] stuff.
+[4967] Um
+[4968] but I think it really is true that
+[4970] there's no like especially in the long
+[4972] run,
+[4974] you can't like destroy value for your
+[4976] customers and expect to be successful.
+[4979] You have to actually make their lives
+[4981] better. Um
+[4983] and you can put effort into like
+[4984] pointing it out to them, and and
+[4986] demonstrating that you have created this
+[4987] value, and stuff like that. But there's
+[4988] no substitute for actually having
+[4991] created it. And I think that
+[4992] um
+[4994] is incredibly important, and that
+[4995] implies a real generosity, whether
+[4998] that's in
+[5000] negotiating terms with an an enterprise
+[5003] deal, or that's like policy decisions.
+[5006] You sometimes
+[5008] So one one
+[5010] time that it blew up in our face was our
+[5012] SLA was like for any downtime, you get
+[5015] 100 times your money back.
+[5017] Um which was like cuz it from my
+[5019] perspective, it's like you know, if
+[5020] we're down for 2 minutes, it doesn't it
+[5022] it's like pennies. It doesn't really
+[5023] make any difference. If we're down for
+[5024] like 10 hours or something like that,
+[5026] then we have bigger problems than paying
+[5028] back people.
+[5029] Okay.
+[5030] Okay. Fast forward, we you know, we now
+[5033] have hundreds of millions of dollars in
+[5034] revenue, and we've gone public. And like
+[5036] shortly after we go public, we have like
+[5039] one of the biggest outages we've ever
+[5040] had. I don't remember how long it was,
+[5041] but it was like many hours. But by the
+[5044] time we got to that scale, 100 times the
+[5046] money back for like the third of a day
+[5049] that we were down
+[5051] was like
+[5053] $8 million
+[5054] or some something like that, which had
+[5057] to be um
+[5059] it didn't cost us any money because we
+[5060] just gave it to people as forward
+[5062] credits, but it meant that a bunch of
+[5064] revenue that we had already anticipated
+[5066] for the next quarter wasn't going to
+[5067] show up because people's credits were
+[5069] going to offset what they would have
+[5070] otherwise paid us.
+[5072] And so, uh we we definitely changed the
+[5075] terms of service after that because
+[5077] being a public company is a little bit
+[5078] different. But uh you know, in every
+[5080] other respect, I think you know, they
+[5081] were all really important decisions that
+[5083] were helpful in um in us becoming
+[5086] successful.
+[5087] And was that policy was automatic? Like
+[5089] you didn't even have to claim it. It was
+[5090] just automatically get this credit.
+[5092] >> And and the default is you don't have to
+[5093] pay if you let us know. And this was we
+[5096] will automatically like proactively,
+[5098] preemptively, without any input from
+[5100] you, apply this credit to your account,
+[5102] and just like send you a message that it
+[5103] happened. And by the way, we will do it
+[5106] on the aggregate
+[5107] for downtime, even if the issue didn't
+[5110] affect you as a as a customer.
+[5116] >> [laughter]
+[5116] >> Yeah.
+[5117] What was that mantra again that you uh
+[5119] had the company chant? I think this is a
+[5121] really nice way to end it.
+[5122] In the long run, the measure of our
+[5124] success will be the amount of value we
+[5126] create for customers.
+[5128] Incredible. I'm just trying to picture
+[5130] the entire team at Slack
+[5132] Hundreds of people. It felt very like
+[5134] Kim Jong or like Stalin or something
+[5137] like that.
+[5137] >> [laughter]
+[5138] >> Well, on that note, most people don't
+[5140] know this about you, but your
+[5141] uh your actual name when you were born
+[5143] is not Stewart. It was Dharma. Yeah. And
+[5146] this all makes sense as you learn that.
+[5149] Yeah, it's like I had My name is Dharma
+[5151] Jeremy Butterfield. So my parents named
+[5152] me, and when I was 12, I changed it
+[5154] because I just like really wanted to be
+[5155] normal, and for some reason I thought
+[5156] Stewart was a normal name. And by the
+[5158] way,
+[5159] you'll notice this now that I said it.
+[5161] Any character except for Stuart Little,
+[5164] the mouse, um anytime you see a
+[5165] character in in a movie, a novel, TV
+[5169] show, whatever,
+[5170] there's only the loser Stewart, and the
+[5173] [ __ ] Stewart. It's it's like it's
+[5176] obviously in the collective
+[5177] consciousness, a terrible name, and I
+[5178] shouldn't have chosen it, and I regret
+[5180] it. But by the time I realized that
+[5182] Dharma and Greg had already come out, it
+[5184] would have seemed like I was like, you
+[5186] know, bandwagon jumping, and
+[5188] people thought it was a girl's name,
+[5189] even though in India, it's obviously
+[5190] only a boy's name. I'm going to add just
+[5192] one last little tidbit because I forgot
+[5195] about this earlier on, and I think it
+[5196] helps tie things together.
+[5198] And it's called the owner's delusion.
+[5200] And this is basically something I posted
+[5201] on Twitter.
+[5202] The person who came up with the name
+[5205] later deleted their account, and so I
+[5206] have no idea who it was or who to credit
+[5209] for this. But what I had posted was and
+[5211] this is a long time ago, before when
+[5213] restaurant websites have gotten better,
+[5214] and it doesn't really matter because
+[5216] Google Local has taken over everything.
+[5218] But this is like let's say 10 years ago.
+[5220] There's five things you could possibly
+[5222] want when you go to a restaurant's
+[5223] website, and is their street address,
+[5227] their phone number, the menu, the hours
+[5230] of operation. Oh my god, I'm forgetting
+[5231] the fifth thing.
+[5233] Oh, and and making a reservation. How to
+[5235] make a reservation.
+[5237] Um
+[5238] and again, this problem has like to some
+[5241] extent taken care of. It's actually
+[5242] really improved. But what you would get
+[5244] was like this super slow loading photo,
+[5247] the Ken Burns effect as it
+[5249] and like and then like fading in, and
+[5252] then some music starts playing, and then
+[5254] if they show you the phone number, it's
+[5256] not uh clickable, and it turns out it's
+[5258] not even text that you can copy because
+[5260] it's yes, it's an image. Um and they
+[5262] don't have the hours, they don't put the
+[5264] address or whatever. And it's just like,
+[5266] I mean what?
+[5267] For sure, whoever made this website for
+[5269] the restaurant owner, and the restaurant
+[5270] owner themselves have
+[5272] definitely been in the position where
+[5273] they went to somebody else's restaurant
+[5275] website because they wanted to get the
+[5276] address or the opening hours or the
+[5277] phone number or whatever. So how why
+[5279] does it end up like this? And what
+[5280] should we call this? And the whoever
+[5282] replied to the tweet, um she said
+[5285] we should call it owner's delusion. And
+[5286] I was like, oh my god, that's perfect.
+[5288] And I think that
+[5290] um
+[5291] is incredibly powerful, and it what ends
+[5294] up with the result like Apple naming
+[5297] whatever that feature is called sleep,
+[5299] which is like
+[5300] it's too hard to understand what could
+[5302] that can possibly mean. And that's why
+[5304] like people anticipate
+[5306] um despite the fact that
+[5308] when they get to their web your website
+[5310] for the first time, their their intent
+[5312] is absolutely
+[5315] the minimum number of micro points above
+[5317] the threshold required for them to
+[5319] actually take that action. You're like,
+[5322] all right. Like welcome to my website,
+[5324] and there's
+[5325] >> [laughter]
+[5326] >> there's a bunch of like BS, and there's
+[5329] a bunch of like stuff that doesn't make
+[5330] any sense, and the buttons aren't
+[5331] clickable. It's unclear what to do next
+[5333] because I think that my thing is so
+[5335] important, and I don't recognize that
+[5338] you
+[5339] are at work, and you were late this
+[5341] morning, and you have to go to the
+[5342] bathroom, and you're just like you're
+[5343] just like a regular human being who has
+[5346] like
+[5347] stuff going on. You're concerned that
+[5349] your kids will [ __ ] up, and they're
+[5350] getting in trouble at school, and stuff
+[5352] like that. They don't
+[5354] they're not like subjects who paid money
+[5356] to go to your play, and are sitting in
+[5358] the audience and waiting for the curtain
+[5360] to go up. They're like people who are
+[5361] going to bounce in a fraction of a
+[5363] second. And so everyone should always be
+[5365] conscious of the audience's illusion. I
+[5367] love that. What's the solution? Is it
+[5369] have other people look at and give you
+[5370] feedback? Is it And and like recognize
+[5373] it. And unfortunately it's one of those
+[5374] things like Murphy's law, like even
+[5376] you're going wrong when you even when
+[5377] you take into account Murphy's law.
+[5380] But if you if you don't name it and
+[5382] recognize it and discuss it and train
+[5385] yourself to think in that way that
+[5388] you know, take a breath, pretend you're
+[5389] a regular person, and then look at this
+[5391] again and see if it makes sense. I love
+[5394] You're screwed. I love that you threw
+[5395] this in here. I have a billion other
+[5397] questions I I'm going to ask you in part
+[5399] two when we do this someday. Uh Stewart,
+[5401] thank you so much for doing this. Thank
+[5402] you so much for being here.
+[5404] Yeah, thank you for having me, Lenny. I
+[5405] really enjoyed it. Same same here.
+[5408] Bye, everyone.
+[5410] Thank you so much for listening. If you
+[5412] found this valuable, you can subscribe
+[5413] to the show on Apple Podcast, Spotify,
+[5416] or your favorite [music] podcast app.
+[5418] Also, please consider giving us a rating
+[5420] or leaving a review as that really helps
+[5422] other listeners find the podcast. You
+[5424] can find all past episodes or learn more
+[5427] about the show at lennyspodcast.com.
+[5430] >> [music]
+[5430] >> See you in the next episode.

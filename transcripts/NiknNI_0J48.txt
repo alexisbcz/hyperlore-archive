@@ -1,0 +1,1776 @@
+[3] [applause]
+[5] Welcome,
+[6] welcome, welcome to Nex.js Conf 2022.
+[11] I'm excited you could join us today to
+[12] hear updates across three major areas of
+[16] web development.
+[18] It's amazing how much NexJS has grown
+[20] since our start in 2016 with over 2400
+[24] contributors, over 200 million
+[27] downloads, and a global community of
+[29] developers, including those viewing next
+[32] right now from London, New York, San
+[35] Francisco, [cheering]
+[37] [applause]
+[38] and the tens of thousands watching
+[40] online. The NexJS community is stronger
+[44] and bolder than ever. Each year more of
+[48] the top applications on the web are
+[50] built with Nex.js, particularly in
+[54] retail,
+[55] SAS, media, drawn by its balance between
+[60] great developer experience and great end
+[62] user performance.
+[64] Nex.js had its origins as a React
+[67] framework for dynamic server render
+[70] sites. Instead of optimizing for single
+[73] page applications, we designed X.js JS
+[76] for teams building ambitious complex
+[80] applications.
+[81] But being dynamic has always come with a
+[84] lot of limits.
+[86] You've wanted to be dynamic but it's
+[88] meant at at the expense of costly always
+[92] on infrastructure requiring manual
+[94] provisioning and extensive operations.
+[97] You've wanted to be dynamic but it's
+[99] meant juggling two sets of runtime APIs.
+[101] Noode.js in the server and web centered
+[104] APIs in the browser.
+[106] You've wanted to be dynamic, but often
+[109] only in a single region origin
+[112] depending on legacy static CDN caching
+[116] to try to perform and scale.
+[120] Let that sink in. Unless you were one of
+[123] the giants of the web like Google or
+[126] Facebook.com,
+[128] the only way to scale a dynamic global
+[131] application was to downgrade a static
+[135] The downsides of static become apparent
+[137] when faced with dynamic requirements.
+[140] Your cached or static generated page is
+[143] at odds with granular user
+[145] personalization
+[147] experimentation
+[149] or even showing the number of items in a
+[152] shopping cart. So you turn to shipping
+[155] massive amounts of client side
+[157] JavaScript.
+[159] We knew that the answer was never in
+[161] optimizing within those constraints.
+[164] We're ready for a new paradigm.
+[166] Today, we're releasing Nex.js 13 to
+[171] enable you to be dynamic without limits.
+[179] Nex.js 13 ships innovations across three
+[183] major categories.
+[185] First, compiler infrastructure.
+[188] Originally, way back in my day, we built
+[191] Nex.js JS on top of Webpack, an open-
+[194] source bundler that revolutionized
+[196] front-end development.
+[198] While Webpack has allowed JavaScript to
+[200] go from sprinkling interactivity on a
+[202] page to building entire web applications
+[205] with just JS or TypeScript, it's time
+[209] for a major upgrade, the successor to
+[212] Webpack.
+[214] Second, routing and rendering
+[216] infrastructure.
+[218] will introduce a redesigned approach to
+[221] layouts, data fetching, and server
+[224] rendering.
+[225] Building on React's multi-year
+[228] investments, we're delivering on the
+[230] dream of shipping dramatically less
+[233] clientside JavaScript while making the
+[235] most ambitious applications not just
+[238] possible, but easy.
+[241] Everything you love about React and
+[243] X.js, absolutely everything gets simpler
+[246] today.
+[248] Third, our component toolkit.
+[252] A true web SDK would not be complete if
+[255] it didn't address the most common
+[257] artifacts that you see on the web like
+[260] images, fonts, scripts, and even social
+[265] cards.
+[266] So pushing the web forward requires this
+[269] comprehensive investment across tooling,
+[272] runtime, cloud, infra, the ecosystem,
+[276] and our community as a whole. That's
+[278] been the journey of our cell for the
+[280] past six years to enable developers to
+[284] create at the moment of inspiration.
+[287] Let's watch how NexJS 13 is making this
+[290] vision a reality with Lee Robinson.
+[296] [applause]
+[306] Today is a new beginning for compiler
+[309] infrastructure in Nex.js and for the
+[312] entire web ecosystem. Nex.js provides
+[315] the right defaults for your app with
+[318] zero configuration. Our job is to curate
+[321] the best tools for you so your team can
+[325] iterate faster and ship better products.
+[328] In 2016, the natural thing to do was to
+[331] write JavaScript tooling in JavaScript.
+[335] That meant tools like Babel, Turser, and
+[338] Webpack. As front-end applications grew
+[341] in size and complexity, this tooling
+[344] struggled to keep up. We hit the limits
+[348] of what was possible with the
+[350] performance of JavaScriptbased
+[352] compilation.
+[353] At our last conference, we began our
+[356] transition to native RustPowered
+[358] tooling. We started by migrating away
+[362] from Babel which resulted in 17 times
+[365] faster transpolation.
+[367] Then we replaced Turser which resulted
+[370] in six times faster minification. But
+[373] what about bundling? Webpack has been
+[376] downloaded over three billion times.
+[380] It's become an integral part of building
+[383] for the web. But just like Babel and
+[385] Turser, it's time to go allin on native.
+[390] Tobias, the creator of Webpack, joined
+[392] Verscell and assembled a team of
+[394] worldclass engineers to build the web's
+[397] next generation bundler. This team has
+[401] taken the lessons from 10 years of
+[403] Webpack combined with the innovations in
+[406] incremental computation from Turbo Repo
+[409] and Google's Basil and invented an
+[412] architecture ready to withstand the next
+[415] 10 years. We're excited to introduce
+[418] Turopac, our Rustbased successor to
+[422] Webpack. On large applications, Turboac
+[425] shows updates 10 times faster than Vit
+[428] and 700 times faster than Webpack. For a
+[432] really large application, the difference
+[434] is even greater. 20 times faster updates
+[438] than Vit. These speed boost aren't just
+[441] for code updates, but also for starting
+[444] up your local dev server. Let's take a
+[446] look at an example.
+[448] As you'll see, Turboax starts up in 1.8
+[452] 8 seconds when handling a large
+[454] application with 3000 modules. This is
+[457] faster than both previous versions of
+[459] Nex.js and other popular tools.
+[462] Turboac's performance comes from its
+[465] highly optimized machine code and
+[467] low-level incremental engine built with
+[470] Rust. Once Turac performs a task, it
+[474] never does it again. To start, Turboac
+[478] is focused on your local development
+[480] experience, including React fast
+[483] refresh. Eventually, Turopac will also
+[486] power Nex.js production builds both
+[489] locally and in the cloud. Just like with
+[492] Turbo Repo, we can share the work that's
+[495] already been done, not just on your
+[497] local machine, but also from teams
+[499] across your entire organization. Try out
+[502] the TurboAC alpha today by upgrading to
+[505] Nex.js JS 13 and running NextDev-
+[509] Turbo.
+[511] While optimized for React and Next.js
+[513] code bases, TurboAC is the new
+[516] foundation of high performance bare
+[519] metal tooling and is now open source.
+[523] Check it out on turbo.build to see the
+[525] benchmarks and supported features. With
+[529] Turboac, we're continuing to reimagine
+[532] the foundations of Nex.js. Let's go back
+[535] to GMO to hear more about Nex.js 13.
+[541] [cheering]
+[541] [applause]
+[546] [applause]
+[547] Thanks, Lee. With TurboAC, we're
+[550] creating the fastest compiler
+[552] infrastructure for JS and TypeScript
+[554] projects. We're moving to a world where
+[557] running your app locally and making an
+[560] incremental change can happen in as
+[562] little as 10 milliseconds.
+[565] Building for production, even for large
+[567] code bases, will happen in singledigit
+[570] seconds.
+[571] These instant updates are not just for
+[574] you, but thanks to Verscell remote cache
+[576] and our build infrastructure for your
+[578] entire team as well by ensuring
+[581] automatically that we don't do the same
+[584] work twice.
+[586] This remote cache has already saved
+[588] development teams at companies of all
+[591] sizes decades of buildtime. Decades.
+[596] Our mission doesn't stop at a better
+[598] developer experience to push the web
+[601] forward. Nex.js 13 is also reimagining
+[605] how pages are structured, rendered, and
+[608] delivered at the edge.
+[615] One of the most loved features of Nex.js
+[618] is our file systembased router. Drop a
+[621] file inside a folder and you're able to
+[623] instantly create routes in your
+[624] application. No configuration required.
+[628] Over the past six years, our router has
+[631] helped build some of the largest web
+[633] applications in the world, spending
+[635] billions of daily page views. This has
+[638] helped us identify some incredible
+[640] opportunities to continue delivering on
+[642] the best possible router. We can make it
+[645] easier to colllocate data fetching
+[647] inside components, enabling global data
+[650] fetching in your application. For
+[652] example, when you have dynamic data
+[654] requirements that are shared across
+[656] pages, we can make it easier to
+[659] collocate your application code with
+[661] your routes like components, tests, and
+[663] styles so that you and your team don't
+[666] have to come up with your own
+[667] conventions and configuration. We can
+[670] make it easier to lay out complex
+[672] interfaces that maintain state across
+[674] navigations and avoid expensive
+[677] rerenders and re-triggering of
+[679] animations.
+[680] These opportunities for improvement in
+[683] combination with React's multi-year
+[684] architectural investment into concurrent
+[687] features created the perfect environment
+[689] to upgrade the web's most popular file
+[692] systembased router. That is why today
+[695] we're introducing a new Nex.js router
+[698] that we know you're going to love. Our
+[700] new router starts with the introduction
+[702] of the app directory which can coexist
+[705] with the existing pages directory for
+[707] incremental adoption. Let's take a look
+[709] at an example. It's still just one file,
+[713] page.js, to create my homepage. My
+[717] product has a list of dynamic popular
+[719] topics tailored to my interest in a
+[721] sidebar on the left hand side. Let's
+[724] create the individual topic page that
+[727] the sidebar links to. This uses the same
+[730] syntax you're already familiar with for
+[733] nesting and dynamic routes.
+[736] I want to reuse the sidebar and the
+[739] navigation from my homepage on the topic
+[741] page. So I can refactor my component
+[744] into a layout.js file that shares UI
+[748] between the two pages.
+[750] Not only is this more convenient for me,
+[752] but as I navigate, only a small portion
+[755] of the screen rers, streamlining the
+[758] work both on the client and the server.
+[761] Notice how the search field preserves
+[764] state and the animations continue
+[766] despite the route changes. This product
+[769] has dynamic requirements. The topics in
+[772] the layout are user personalized. This
+[775] isn't a static page. So, how do you
+[778] fetch and stream data from the server
+[780] while preventing large amounts of
+[782] JavaScript and waterfalls on the client?
+[785] We've worked with the React core team to
+[788] deliver a new solution to simplify
+[790] fetching for all of React and Nex.js and
+[793] you can try it today.
+[796] This is what my data fetching code looks
+[798] like for the sidebar using the brand new
+[800] data fetching API. It's extremely simple
+[804] and inlined right inside my application
+[806] code. The best part, I can sprinkle
+[809] streaming data fetching throughout my
+[811] entire app. Layouts, pages, components,
+[814] and even hooks. Our shared UI between
+[817] the home and the topic page can now
+[819] fetch and reuse data. Let's now define a
+[822] new loading state for our topic page
+[824] with loading.js.
+[826] Notice how when I transition between
+[829] pages, we server render an instant
+[832] loading state while we're streaming the
+[834] rest of our content.
+[836] Similarly, we allow custom error
+[838] handling with the error.js convention.
+[841] To preserve the flexibility and
+[844] scalability that you've come to love
+[846] about Nex.js data fetching, we're
+[848] extending the runtime with additions
+[850] like buting caching, dduplication of
+[853] requests, programmatic revalidations,
+[856] and granular purging of data. Let that
+[859] sink in.
+[861] This means that all the benefits of ISR,
+[865] static data fetching, serverside data
+[868] fetching, and even SWR are now all in
+[872] one hybrid solution. Because our router
+[875] builds on React server components,
+[878] everything we just defined for this
+[879] product is now server first. You can
+[882] maintain rich interactive clientside
+[885] experiences all while shipping
+[887] dramatically less JavaScript by default.
+[891] Thanks to the new React primitives,
+[893] we're enabling ergonomic ways to handle
+[896] loading and error states, streaming UI
+[899] as it's rendered, and in the future,
+[902] even mutate data. This new API is made
+[905] possible by years of investment into the
+[907] React ecosystem. Incrementally adopt the
+[910] app directory available in beta today.
+[913] Go to nexjs.org/13
+[916] to learn more.
+[921] [cheering and applause]
+[926] [applause]
+[927] Mu delba. I'm so excited about this
+[931] innovations in routing and the power of
+[934] both dynamic and static data fetching
+[937] coming to every component thanks to
+[939] react server components in one unified
+[943] experience.
+[944] You can start adopting these features by
+[946] introducing the app directory into your
+[949] new or existing code bases. This
+[952] transition can be done incrementally,
+[954] even one page at a time, while the pages
+[957] directory remains fully supported and
+[960] maintained. And thanks to TurboAC,
+[963] developing on both the pages and app
+[966] directories can be turbocharged.
+[969] NextJS 13 doesn't stop there. Let's hear
+[972] from Lydia about what other innovations
+[974] are coming to our toolkit.
+[981] Making a site fast is complex. We tend
+[985] to think it's just about how you render
+[987] your own components, but it's also about
+[989] getting third-party assets right, like
+[992] fonts, images, and scripts. When you
+[995] don't get these right, you'll suffer
+[997] from jarring layout shifts, frustrating
+[999] input delays, and confusing content
+[1001] delays. This is why Nex.js isn't just
+[1004] stopping at building better compiler and
+[1006] rendering infrastructure. We're also
+[1009] giving you solutions to these common
+[1011] higher level problems. Let's start with
+[1014] images. A huge chunk of the web is made
+[1017] up of images. They account for 44% of a
+[1021] page's weight on average. Getting images
+[1024] right is critical. The introduction of
+[1026] the Nex.js image components in version
+[1028] 10 was a crucial step in the right
+[1031] direction. When we surveyed the NexJS
+[1033] community, 70% of respondents told us
+[1036] that they use the Next.js image
+[1038] component in production and in turn saw
+[1040] improved core web vitals. Since Versell
+[1043] augments this image component with our
+[1045] global edge infrastructure, we can
+[1047] optimize images on demand for even
+[1050] better performance. This cooperation
+[1052] between framework and cloud
+[1054] infrastructure has now delivered
+[1056] billions of optimized images on the web
+[1059] with no developer effort. But our work
+[1062] is never done. Nex.js13 brings
+[1066] substantial improvements to the image
+[1068] components both in performance and
+[1071] developer experience. The value of the
+[1074] React component abstraction is its
+[1076] ability to encapsulate complexity while
+[1078] still providing a simple HTML-like
+[1081] interface. With improvements on the web
+[1084] platform available across all major
+[1086] browsers like native image lazy loading
+[1088] and CSS aspect ratios, Nex.js 13 is
+[1092] shipping a better image components that
+[1095] uses less clientside JavaScript that
+[1097] performs better and maintains its
+[1099] familiar interface. Try out next image
+[1102] in nextg 13. We're excited to see the
+[1105] next billion images you ship. The
+[1108] strength of the web is its diversity of
+[1111] design and ability to personalize. The
+[1114] web at its best is a hackable, malleable
+[1117] medium for anyone to build on. Using
+[1120] custom fonts is a huge part of that
+[1122] story. Custom fonts are great, but
+[1125] extremely hard to get right. You're
+[1127] probably used to seeing fallback fonts
+[1129] causing layout shifts or even long
+[1131] delays from invisible text before the
+[1134] right font is painted to the screen.
+[1136] With Nex.js 13, we're going to prove
+[1139] that customizing your brand's type faces
+[1141] can be easy while your site stays fast.
+[1145] Last year, we added font optimization to
+[1147] Nex.js. This improved performance by
+[1150] automatically inlining font CSS during
+[1152] the build, reducing the total number of
+[1154] network requests. This was a small step
+[1157] to making fonts easier. Today, we're
+[1160] reimagining how developers use fonts
+[1163] with a brand new font system developed
+[1166] in collaboration with the Chrome team.
+[1168] This built-in module not only optimizes
+[1171] your fonts, but also removes any
+[1173] external network requests for improved
+[1176] privacy and performance by eliminating
+[1178] connection setup times to third party
+[1180] hosts. This means you could import a
+[1182] font from a registry like Google Fonts
+[1185] or your own custom font files and Nex.js
+[1188] can automatically deliver it for you.
+[1190] Your custom brand identity all on your
+[1193] own domain. We've also eliminated layout
+[1196] shift by building on the web platform
+[1198] size adjust CSS property. The new font
+[1201] module can automatically avoid 99% of
+[1205] layout shift caused by custom fonts and
+[1207] a 100% of visual disruption from missing
+[1210] fonts. Try out next spawn today in nextg
+[1213] 13. Every time your link gets shared
+[1216] across the internet, you have a unique
+[1218] opportunity to make an impression with
+[1220] social cards. Social cards, also known
+[1223] as open graph images, can massively
+[1226] increase the engagement rate of clicks
+[1227] on your content with some experiments
+[1229] showing up to 40% better conversions.
+[1233] Static social cards are timeconuming,
+[1236] errorprone, and hard to maintain.
+[1238] Because of this, social cards are often
+[1240] lacking or even skipped. Once again,
+[1243] it's time to go dynamic. Until today,
+[1247] dynamic social cards that need to be
+[1249] personalized and computed on the fly
+[1251] were difficult and expensive. Today,
+[1254] we're announcing Versel OG image
+[1256] generation, a new solution for
+[1258] instantaneously generating dynamic
+[1260] social cards. This approach is five
+[1263] times faster than existing solutions by
+[1266] using Verscell edge functions, web
+[1268] assembly and a brand new core library
+[1271] for converting HTML and CSS into images
+[1274] and leverage the React component
+[1276] abstraction. No headless web browsers,
+[1279] no costly infrastructure, and no more
+[1281] cold boots. Once again, the combination
+[1284] of simple components with global edge
+[1286] infrastructure enables amazing
+[1289] experiences on the web. We're so excited
+[1292] that we're making things easier while
+[1294] also saving so much compute time and
+[1296] freeing up developer and designer hours.
+[1299] Try out Versel OG image generation
+[1301] today. We're committed to continuously
+[1304] improving the toolkit developers have
+[1306] for working with reusable React
+[1308] components and integrations for the most
+[1310] common building blocks of the web,
+[1312] images, fonts, scripts, links, and even
+[1316] social cards.
+[1321] [applause]
+[1328] Dubel, Lydia, Nex.js 13 ushers in a new
+[1333] era of web development with major
+[1336] announcements across three categories.
+[1340] First, we introduce Turopac, the
+[1343] successor to Webpack. Making incremental
+[1346] changes during development can happen in
+[1348] as little as 10 milliseconds as we push
+[1351] towards a future of singledigit second
+[1354] production builds on Verscell. This is a
+[1357] compounding investment as teams
+[1360] collectively save literally decades of
+[1363] build time thanks to Verscell remote
+[1365] cache.
+[1367] Second, routing, data fetching, and
+[1370] rendering. Next.js JS13 introduces a new
+[1373] app directory with built-in support for
+[1375] layouts and powerful new conventions,
+[1379] all of which you can adopt incrementally
+[1382] alongside your pages directory. When
+[1384] deployed over cell, your React pages
+[1387] become optimal serverless and edge
+[1390] infrastructure which delivers dynamic at
+[1393] the speed, availability, and cost
+[1396] effectiveness of static.
+[1399] Finally, we continue to expand our
+[1401] toolkit, which reaffirms our bet in web
+[1405] platform fundamentals. By partnering
+[1407] with the Google Chrome team, we're
+[1409] giving you the best of both worlds.
+[1412] Simple abstractions that unlock powerful
+[1416] personalization for your brands.
+[1419] Everything we've shown today is possible
+[1421] by upgrading to Next.js 13. Head to
+[1424] nexj.org/13
+[1425] /13 to learn more and try it out. Now,
+[1430] before the Q&A with the team that we're
+[1432] all looking forward to, let's hear from
+[1434] Bloom about how they are going dynamic
+[1436] without limits on Versel.
+[1442] Hi, I am Tatiana Mack and I'm a software
+[1445] engineer at Loom.
+[1450] Loom is a video communication platform
+[1454] that really helps us to work more
+[1457] seamlessly, collaboratively and
+[1460] asynchronously. [music] My ideal
+[1463] developer experience is one that removes
+[1466] barriers for me [music] to create not at
+[1469] the sacrifice of our users. Sometimes
+[1473] good developer experience sacrifices
+[1475] user experience [music] and tools like
+[1478] Nex.js and Loom make sure that we're not
+[1481] sacrificing the user experience for the
+[1483] developer but that we're also not
+[1485] leaving them out. Forcel and Loom have
+[1487] this really symbiotic relationship
+[1489] [music] where we both want to make sure
+[1491] that we're able to provide new features
+[1494] to our users with a lot of velocity and
+[1496] speed but ultimately empowering them to
+[1500] create where they want to at the [music]
+[1502] point of inspiration. Our entire
+[1504] marketing site is backed by Versel and
+[1508] Nex.js JS. And the reason we're such big
+[1510] fans of [music] having it all in one
+[1512] ecosystem is that we're able to focus on
+[1516] a lot of experimentation and iteration.
+[1519] Being able to use tooling that
+[1520] prioritizes some of my personal ethos as
+[1523] an engineer of accessibility and
+[1526] performance is so important to me,
+[1528] especially when it's integrated into the
+[1531] tooling. so that at moments where I
+[1533] forget or there's something I don't know
+[1535] that I [music] can find the resources to
+[1537] make those accessibility and per
+[1539] performance fixes. At Loom, we had this
+[1542] project called Learn to Loom [music]
+[1544] which was pretty open-ended in brief.
+[1547] Essentially, we wanted to create a
+[1549] product that [music] could help people
+[1551] understand the many ways that you can
+[1553] use Loom across your day in work and in
+[1556] life. Versel was critical in making it
+[1560] so that we could [music]
+[1561] ship iteratively and to show key
+[1564] stakeholders our progress throughout and
+[1568] to just really take tooling out of
+[1570] consideration and allow us to focus on
+[1572] ideiation and experimentation within
+[1574] this project. We reached for Nex.js GS
+[1577] for learn to loom because we trusted
+[1579] that we didn't have to think about all
+[1581] of the technicalities of the build
+[1582] process that with a project with such a
+[1585] large scope with such important eyes
+[1587] [music] on it we could really focus on
+[1589] coming up with great ideas testing them
+[1591] and taking them to market quickly.
+[1593] Next.js is one of the few tools that's
+[1595] at that sweet spot for the amount of
+[1597] scaling that we want to do. a lot of
+[1599] tooling becomes outdated so quickly
+[1601] because technology is [music] changing
+[1602] and I think that's something you've all
+[1604] done a fantastic job of maintaining and
+[1606] I would love to see that continue
+[1608] [music] caring about our users who are
+[1610] the most marginalized and at the fringes
+[1612] creating [music] great experiences for
+[1614] them and building an amazing future web.
+[1617] One of Loom's missions is to allow
+[1620] people [music] to work anywhere in the
+[1622] way that they want to. And Versell's
+[1625] mission of making that easy and seamless
+[1627] and efficient ties perfectly together.
+[1630] Because [music] together, what we are
+[1631] able to do is allow people to work as
+[1634] seamlessly and efficiently as they want
+[1636] anywhere. Let's [music] continue to
+[1638] build a faster, more performant, and
+[1640] accessible web together.
+[1661] How about that keynote? That was great.
+[1663] All right, I hope you are all as excited
+[1665] as I am about the future of Nex.js.
+[1668] We're now going to kick off the ke the
+[1670] Q&A and bring out members of the Nex.js
+[1672] and Reacts team. So, why don't why don't
+[1674] you all come on out and we're going to
+[1676] be answering some questions here live in
+[1677] San Francisco as well as in London, in
+[1680] New York, and online for all the
+[1681] developers tuning in on the Next.js
+[1684] Discord. So, please ask some questions
+[1686] in the Discord. We'd love to answer them
+[1688] right now and get some some questions
+[1690] answered from the team. So, bring them
+[1691] on out. Woo! Welcome the team.
+[1697] [applause]
+[1703] All right, let's kick things off here
+[1705] with a question here in person in San
+[1707] Francisco. Don't be shy. Raise your hand
+[1710] and we have some mic runners who will
+[1712] come over, hand you a mic, and ask you
+[1714] some questions. So, why don't we start
+[1717] with
+[1718] a very excited person right here.
+[1721] [laughter]
+[1722] Uh, we have Sam who can bring the mic
+[1724] over. Thank you, Sam.
+[1725] Hey, thank you so much. Uh this is Jan
+[1727] from the storebook team and I'm really
+[1729] wondering about all of the new things
+[1731] you're bringing and how it will impact
+[1733] the integrator tools such as testing and
+[1736] storybook.
+[1737] So do you have any thoughts on that?
+[1740] Yeah, da do you want to talk about how
+[1742] we're going to grow the ecosystem of
+[1744] tooling around
+[1746] I actually think Tim would be better for
+[1748] this question because he's got the whole
+[1750] road map in his mind.
+[1752] He does. [laughter] He does.
+[1753] Yeah. So um yeah at this point like
+[1756] storybook and other tools are obviously
+[1758] not integrated yet uh like for an alpha
+[1760] state for uh for turbo pack um for
+[1764] server components uh there will be need
+[1766] to be some changes to to these tools um
+[1769] same for like uh tools like just uh like
+[1772] test runners that kind of thing. Uh but
+[1774] the the plan is to have everything like
+[1776] deeply integrated uh so that the whole
+[1779] ecosystem can uh leverage uh server
+[1782] components and uh and turbo under the
+[1785] hood as well.
+[1787] Any other commentary?
+[1790] All right, we'll do another question.
+[1792] Anyone else here in the crowd want to
+[1794] take one up here in the top right?
+[1800] And then we'll take one from Discord
+[1801] next. Thank you Sam.
+[1803] Hi this is Reika. Um I so if with the
+[1807] turbo pack it says the API is not uh
+[1811] onetoone with webpack and we use webpack
+[1815] heavily also this uh the storybook
+[1818] question we storybook use webpack and we
+[1822] using mono and micro front end
+[1826] everything uses webpack. [laughter]
+[1827] Yeah. And yeah, it's like you're running
+[1830] feels like a rug being pulled out under
+[1833] [laughter]
+[1834] from my feet when you're saying like,
+[1836] "Oh, the Webpack is out of the door."
+[1838] What are your thoughts on compatibility
+[1841] moving forward when we migrate all the
+[1843] infrastructure we have to Webpack from
+[1845] Webpack?
+[1846] Yeah, I'm happy to take this from the DX
+[1847] perspective and then I'd love to hear
+[1848] Maya's thoughts. But from a from a DX
+[1851] perspective, we want to make sure that
+[1852] we can make this incrementally adoptable
+[1854] for everybody and not make it a a
+[1856] jarring transition over. But may can add
+[1858] some more flavor.
+[1859] Uh yeah, I would say I mean we are
+[1861] selling it as the successor to Webpack.
+[1863] So a big goal is bringing the community
+[1865] along. We don't want to leave this huge
+[1868] ecosystem behind. So we do plan to, you
+[1872] know, have some sort of migration path.
+[1874] We might not be able to use the plugins
+[1876] that you're already using, but there
+[1878] will be replacements that you can
+[1879] migrate over to.
+[1882] And one of the things to add there as
+[1884] well is that uh from the next side of
+[1886] things like we're not switching from
+[1888] Webpack to turbo pack today or or
+[1890] anything like that. So we're still
+[1891] maintaining Webpack as well. Um we're
+[1894] we're still using that in like if you
+[1896] upgrade to next 13 today, you don't add
+[1898] the Turbo tag uh or the Turbo flag to uh
+[1901] to Nex, then it will not boot into
+[1903] Turboac and it will just use like what
+[1905] you had before basically. Um it's like
+[1908] backed by Webpack and SWC. Um,
+[1912] yeah,
+[1912] right. Yeah, it's going to be a long
+[1914] road.
+[1914] Nice. It looks like we have a question
+[1916] from Discord. So, thank you for folks
+[1918] tuning in online asking questions. I
+[1920] think this might be a good one for for
+[1921] Andrew to talk a little about with these
+[1924] uh new ways to fetch data thanks to some
+[1928] upstream innovations in React. What does
+[1930] that look like for the future of the
+[1931] React ecosystem?
+[1933] Um, so yeah, this is a long time coming
+[1935] for React, not just Next. We've been
+[1938] looking into uh things like suspense and
+[1940] some of the concurrent features we
+[1941] talked about uh last year with React 18.
+[1944] I've been thinking of Next.js 13 is
+[1947] really like this is the real React 18
+[1949] release. Um because even though we have
+[1952] a lot of primitives in React 18, you
+[1953] can't really take advantage of them
+[1955] unless you have a framework that takes
+[1958] Yeah.
+[1958] that that is builds on top of those
+[1959] architectural primitives. Um so on
+[1963] facebook.com you know Facebook has an
+[1965] infrastructure that's based on relay and
+[1967] some other um routing concepts that um I
+[1971] mean one way to think of it is that
+[1972] Nex.js is an open source implementation
+[1974] of that. In some ways it even goes a
+[1976] step further now with server components.
+[1978] Um so that's I'm really just excited for
+[1980] for the rest of the React community to
+[1982] now be able to take advantage of all of
+[1984] these improvements that we spent so many
+[1986] years researching and building. Um so
+[1988] that that's one thing. Then looking
+[1990] forward, I think once everyone can get
+[1992] onto this suspense driven, you know,
+[1994] server components driven architecture,
+[1996] there's so many things that we can build
+[1998] on top of that stuff. Um, one like just
+[2001] a few of them we've announced already
+[2002] like on our blog is we're working on
+[2003] ways to do kind of background
+[2005] pre-rendering of content. You know, if
+[2007] you go to like a website, um, I'll use
+[2009] facebook.com as an example, um, and you
+[2012] tab away, you navigate away, um, from
+[2014] newsfeed for example, and then navigate
+[2016] back and newsfeed is still loaded on
+[2018] that screen. Um that should just it
+[2020] should be one component that lets you do
+[2022] patterns like that. Yeah.
+[2023] Um and when you build on top of things
+[2024] like server components that level of
+[2026] abstraction of really rich functionality
+[2029] um with just a drop in component um that
+[2032] becomes possible. Other things like
+[2034] animations there I could go on and on.
+[2036] Um uh it's it's like this is a really
+[2039] exciting milestone because it lets us
+[2040] move on to that to that next level of of
+[2043] polish.
+[2044] Yeah, I'm super excited. in the early
+[2046] testing I've done, it's been fantastic
+[2047] to use for the new app directory and the
+[2049] new upstream React changes. So, very
+[2051] excited for that for everyone. Another
+[2053] question from Discord here.
+[2054] How are the docs looking? When can we
+[2056] expect docs to try out all this stuff? I
+[2058] think Dela knows a couple things about
+[2060] the docs.
+[2060] Yeah. Yeah. So, the docs are live. You
+[2064] can definitely go and check them out at
+[2066] beta.netjs.org.
+[2068] Yay.
+[2068] Um, and yeah, we have dark mode.
+[2071] Yeah, we I know that's a community
+[2073] request. Dark mode. Yeah.
+[2077] [laughter]
+[2078] And yeah, they're looking really great.
+[2079] They they're not finished. Let's set the
+[2082] expectations. But uh over the past few
+[2084] weeks, we had a lot of help from our
+[2086] engineers and from our writers and it's
+[2089] shaping up. It's looking really good. I
+[2091] I do hope that, you know, people will
+[2093] give us feedback. Oh, do you want to
+[2095] talk about that?
+[2096] Sure.
+[2096] Yeah.
+[2097] Yeah. Yeah. Yeah, Delva's been doing a
+[2098] great job writing a lot of these docs,
+[2100] but we made it really easy for everyone
+[2102] in the community to give feedback on
+[2103] these beta docs. The beta docs
+[2105] specifically are for the app directory.
+[2106] If you want to try out all these new
+[2108] changes we talked about, um, if you go
+[2110] to beta.nextgjs.org
+[2113] and you try to leave a comment, we have
+[2114] this new functionality in versell called
+[2116] preview comments. It allows you to
+[2118] comment on the screen. You can log in,
+[2120] leave comments on specific pieces of
+[2121] text, you can, you know, put emojis on
+[2123] there, you can leave screenshots. So, I
+[2125] think this will hopefully make the
+[2126] process of streamlining feedback for the
+[2128] community, giving uh input on the docs
+[2130] really seamless. So, definitely do that.
+[2132] Please give us give us all your feedback
+[2134] and we'll be furiously making docs
+[2136] changes. Um, let's do another question
+[2138] here in person, why don't we? We got one
+[2140] right here in the front row in the
+[2141] middle if if Sam wants to take that.
+[2148] Hi. So, I had a question about routing.
+[2151] Okay. uh in the past whenever I had a
+[2154] complex modular page I had to
+[2156] predetermine what components were
+[2158] available and in get serverside props I
+[2161] had to collect data for all of them and
+[2163] then pass it down to the modular
+[2165] components. Has anything changed in that
+[2168] with the new router that I can actually
+[2171] have each one of the modules on the page
+[2173] fetch their own data?
+[2175] Yeah, absolutely. Tim, you want to talk
+[2177] about this one?
+[2178] Exactly as you said. uh you can now
+[2181] fetch data in the uh in server
+[2183] components um which uh means that you
+[2186] can do uh like more complex uh UI as
+[2189] well like deciding what to render uh
+[2192] based on props for example so um like
+[2195] fetching some data uh comes back from
+[2198] like a CMS for example that's deciding
+[2199] like what layout uh to to render like
+[2202] what UI components to use um and because
+[2206] of leveraging server components you can
+[2208] now decide to like sprinkle
+[2211] interactivity on the page um based on
+[2214] what that data fetch uh like decided um
+[2218] should be rendered. Uh and at that point
+[2221] basically means like you you can now
+[2222] create like a really large like say a
+[2225] page that is uh that has an object
+[2227] holding like hundreds of components that
+[2229] that could be decided by by props. Uh
+[2232] and if you don't render them, they don't
+[2234] get shipped to the browser. So like
+[2235] there's no extra client side JavaScript
+[2237] for that. Server components is the key
+[2240] to kind of getting that feature.
+[2243] Yeah. Yeah.
+[2244] Okay. Thank you so much.
+[2245] Yeah. Thank you. Yeah. When you use the
+[2247] app directory, it uses server components
+[2249] by default. So, it's definitely worth
+[2251] checking out and giving us your
+[2252] feedback. Thanks for the question. I I
+[2254] see a question here. What does it look
+[2256] like to upgrade an existing app to
+[2257] Next.js 13? Are there breaking changes?
+[2259] What can we expect? I'm happy to take
+[2261] this one. So if you go to the NexJS
+[2264] docs, we have both an upgrade guide for
+[2266] folks on the stable documentation just
+[2268] on nexjs.org as well as in the beta
+[2271] documentation which is specifically if
+[2273] you need to move things or you want to
+[2275] try out things in the app directory. So
+[2277] you can upgrade to nextg 13. You don't
+[2279] have to use the app directory. You can
+[2280] use images, fonts, all the new things we
+[2282] talked about and kind of incrementally
+[2284] try out these new features as as you're
+[2286] ready. So definitely check that out.
+[2288] Another question from Discord here. what
+[2290] is possible with TurboAC today and what
+[2293] is still coming.
+[2295] Uh yeah, so it is definitely an alpha
+[2298] release. We wanted to, you know,
+[2300] announce this at next comp so everyone
+[2301] could follow along with what we're
+[2302] doing. Um so yeah, immediately just
+[2306] stabilizing,
+[2307] you know, adding support for all the
+[2309] features for next. Uh we will move into
+[2312] next build production builds. Um and you
+[2316] know, we're building it inside of Nex.js
+[2318] JS to sort of prototype it, but uh it it
+[2321] will be more than just an X.js bundler.
+[2322] So again, it's the successor to Webpack.
+[2324] You should be able to build, you know,
+[2326] anything you want that you could build
+[2328] on Webpack on TurboAC. Um so looking at
+[2331] getting that into more frameworks and um
+[2333] yeah, more more people.
+[2335] Nice. Let's do another question here in
+[2338] the crowd. Maybe somebody from up top.
+[2340] Anyone excited wants to raise their
+[2341] hand?
+[2343] We got one over here. Come on.
+[2350] Hello uh amos VP de at rep API pretty
+[2354] excited about all the uh you know new
+[2355] announcements.
+[2356] Yeah.
+[2357] Um if you remember I gave a talk at you
+[2359] know ISR SSR and whatnot and WTF
+[2362] absolutely what's going on with there.
+[2364] Uh so with next layouts my question is
+[2367] uh I think it's it's a good improvement
+[2370] but my question is around are we
+[2372] simplifying things uh based on just one
+[2375] function versus doing you know ISR SSR
+[2378] SSC OSR and where wherever it leads
+[2382] what does that look like? Are we going
+[2384] to still uh consider all of these uh
+[2386] acronyms or what not or is it going to
+[2389] be just one function that simplifies
+[2391] everything?
+[2393] Anyone want to take this one?
+[2394] Yeah, I can take it. So, um, ISRS, SSG,
+[2399] SSR, what they did is they provided an
+[2402] abstraction for people to do data
+[2404] fetching and rendering. The it was good
+[2409] and it worked. Um, however, I feel like
+[2413] the abstraction took away from a lot of
+[2416] developers having the opportunity to
+[2418] learn how the web actually works, how
+[2421] caching works, how revalidate works. So,
+[2424] with the new React RFC, uh, which if you
+[2426] haven't had a chance to see it yet, I
+[2428] would recommend reading it. Um, it
+[2431] really does bring it down back to the
+[2434] foundations of the web, right? So we we
+[2438] want to teach developers about caching,
+[2441] revalidating, fetching um but in a way
+[2444] that aligns with the web and also that
+[2446] it's also simple for them to understand
+[2448] without the additional acrements.
+[2450] Yeah. Yeah. And I think like to your
+[2452] question about the patterns like if you
+[2454] still want to have some static data, you
+[2456] can absolutely still have some static
+[2458] data. If you want to have some dynamic
+[2459] data, you can absolutely still have some
+[2461] dynamic data. We're still allowing the
+[2463] same functionality. We're just
+[2464] streamlining the developer experience of
+[2466] how you write that and enabling you to
+[2467] do it at the component level, especially
+[2469] when paired with layouts, it's it's a
+[2471] very powerful way. I mean, I know just
+[2473] ingesting all of the community's
+[2475] feedback for, you know, many years now.
+[2477] I know that people have been looking
+[2478] forward to this for a long time. And I
+[2480] think there's probably 50 GitHub
+[2482] discussions asking for things like this.
+[2484] So, I know everyone's very excited for
+[2485] all this stuff. Uh, we'll take we'll
+[2488] take another question from Discord here.
+[2492] Um, how would the new caching and
+[2495] fetching changes? How does this work
+[2497] with the NexJS ecosystem with the React
+[2500] ecosystem? How can we work with those
+[2503] library authors to help bring the entire
+[2506] ecosystem along? Maybe we can talk about
+[2508] it from the React side and also from the
+[2509] next.js side.
+[2512] You want to go first?
+[2513] Yeah. Yeah. So, um, yeah, there there's
+[2517] a few things uh new APIs that are being
+[2520] added. Um uh you might have seen use um
+[2523] and async uh components. So like async
+[2527] function uh compon and then like that
+[2530] that returns jsx that works uh in server
+[2532] components. Um and that is like
+[2536] fundamentally for like being able to
+[2537] await uh a certain fetch. Um however
+[2541] then like at a point you get this
+[2542] problem where uh say you have the same
+[2545] data at at two points in the the react
+[2548] tree. It's like you want to render um in
+[2549] your layout uh the current user and then
+[2552] like in your page you want to render the
+[2554] current user as well or like some
+[2556] variation of that. Uh that requires you
+[2559] to get like logged in state or something
+[2560] like that. Um
+[2563] like traditionally like that would be
+[2564] really hard to do because uh the moment
+[2567] you call like get user for example you
+[2570] would do a fetch uh and the fetch would
+[2572] then return uh some JSON uh that's
+[2575] parsed and and you can use that in tree.
+[2578] However um if you do a second time
+[2581] there's like two fetches on the page. So
+[2583] you get waterfall of sorts. Um and the
+[2587] the the new thing in uh in React and
+[2589] Next is that um like fetch automatically
+[2593] does this dduping. So like if you do the
+[2594] same fetch twice um and Andrew will talk
+[2597] about more about that uh it will ddup
+[2600] that in the same tree. So like if the
+[2602] same react server components page is
+[2604] being rendered if you call uh like fetch
+[2607] uh api.forell.com forcell.com uh with
+[2610] the same URL and then you do that a
+[2612] second time like somewhere deeper in the
+[2614] trees like in your page for example then
+[2617] uh it will just give the same result so
+[2619] you don't get like two fetches uh that's
+[2621] one part of it and then the other part
+[2623] is uh there's a new cache API which is
+[2626] uh literally called cache you import it
+[2628] from react um and uh it's kind of like
+[2632] it works a bit like memo so uh if you
+[2635] used that before like you basically
+[2636] passed in a function you get uh a
+[2639] component back. Uh caches, you pass in a
+[2642] function and you get a memoized function
+[2644] uh back that if you uh call that in the
+[2647] tree, it will automatically dup if the
+[2650] same u like parameters are passed in. Uh
+[2653] and now this will allow you to like
+[2655] outside of fetch which automatically
+[2657] does this. um to have like uh external
+[2660] like data fetching libraries that do
+[2663] like database queries or anything like
+[2664] that to also have that uh duping logic.
+[2668] Uh but you might be thinking like okay
+[2670] that's like a lot of extra work. Um
+[2673] basically like what we expect is that
+[2674] the broader ecosystem will adopt the the
+[2677] cache um uh automatically like as part
+[2681] of the SDK so that you don't have to do
+[2683] that and it will work automatically. at
+[2685] this point obviously uh it's just out uh
+[2688] so you'll you'll still have to add cache
+[2691] yourself.
+[2693] Yeah. And on the React side that that
+[2695] was a great explanation. Um in terms of
+[2697] like what place u like open source
+[2700] libraries uh fit into this. I'll just
+[2703] say that for the like the last year,
+[2706] every React developer that I talked to
+[2710] um has expressed in some form like how
+[2712] hard it is to do data fetching in React.
+[2714] If you're using Next, it's obviously a
+[2716] lot easier. If you use something like
+[2717] use SJWR, um it's a lot easier, but um
+[2720] everyone's kind of wondering when is
+[2721] React going to have like built-in data
+[2723] fetching solution. One way to think of
+[2725] this uh next.js release and server
+[2727] components in general is this is the
+[2729] data fetching solution. Um it's not a
+[2732] complete one necessarily. Like there's a
+[2734] lot of other things that React doesn't
+[2735] offer out of the box. Um Nex.js layers
+[2738] those on top. Um but I imagine things
+[2740] like you know React Query are still
+[2742] going to be incredibly important. Um
+[2745] there's a lot there's been a lot of
+[2746] innovation in in the open source
+[2748] ecosystem and that's actually one of the
+[2749] reasons we've been reluctant um on the
+[2751] React team to to offer a built-in
+[2754] solution because if we had done that
+[2755] like 5 years ago it would have been
+[2756] based on classes or something or it
+[2758] would have been based on use effect or
+[2760] whatever. So we've been like very
+[2762] diligent like if we can't offer
+[2764] something that is u good enough then we
+[2768] we don't want to lock u people into a
+[2771] subpar architecture. Um, so the fact
+[2774] that we're that we're coming out with
+[2775] server components now and we're
+[2776] partnering with Next, I think that's our
+[2778] endorsement that this is the data
+[2780] fetching solution um for React that
+[2782] everyone I think has been been waiting
+[2784] for. Doesn't mean that it, you know, is
+[2786] going to snuff out all of the innovation
+[2787] that that's still happening in the
+[2789] ecosystem, but you can think of them as
+[2791] like the primitives that we think unlock
+[2792] the next the next layer of innovation
+[2794] that can happen um for everyone's React
+[2797] apps. Yeah, I'm extremely excited to see
+[2799] this next wave of community and
+[2802] ecosystem libraries that are built for
+[2804] server components in mind with client
+[2805] components in mind and just are enabling
+[2808] all of the the existing library authors
+[2810] to kind of upgrade and provide these new
+[2812] solutions. It's going to be it's going
+[2813] to be really fun. Uh we have a question
+[2816] from London uh from London. Will Turbo
+[2819] repo be part of Turboac? What is that
+[2821] relationship between all of these Turbo
+[2824] things?
+[2825] Right. Well, an exciting piece of
+[2827] Turboac is this incremental build
+[2830] engine. It's reusable. Um, it's written
+[2832] in Rust since Turboac is written in Rust
+[2834] and and Turbo Repos written at Go. But
+[2836] we are looking at like incrementally
+[2838] moving that onto, you know, the same
+[2840] core architecture. Um, so yeah, sharing
+[2843] that core architecture, we're also
+[2845] looking at like how they can work better
+[2846] together. Again, with that incremental
+[2849] build engine, there's a bit of an
+[2850] inversion of control where, you know,
+[2852] instead of the build system kind of
+[2854] controlling the tools with CLI commands,
+[2858] the tools are controlling the build
+[2859] system with these like with a library.
+[2862] Um, so I think that'll help a lot with
+[2864] the DevX. We're excited for the future
+[2866] and um where that will go.
+[2869] Nice. Another question from London, then
+[2871] we'll come back and do a question here.
+[2873] do layouts in the app directory, how
+[2876] does that work with context or state?
+[2878] And I think it could be a good time to
+[2880] talk a little bit about just, you know,
+[2881] if I have a nested layout and I I go to
+[2883] another page, does that state, you know,
+[2885] does the page rerender? How does that
+[2887] work?
+[2887] Yeah. Yeah, that's a good question. And
+[2890] um one way to think about it, it's not
+[2892] so much in terms of layouts, but what
+[2895] type of component it is. Is it a server
+[2898] component or a client component? And in
+[2901] the app directory, by default, layouts
+[2903] are server components because there's
+[2905] lots of optimizations that we can do
+[2907] with server components like shipping
+[2909] dramatically less JavaScript to the
+[2911] client.
+[2913] So,
+[2916] one thing that you need to like be aware
+[2918] when you're thinking about layouts is
+[2920] okay, how do server components work and
+[2923] how do client components work? And
+[2925] server components, you can't really use
+[2927] state inside them.
+[2928] Yep. So how would you tackle this if you
+[2930] have a layout that is interactive for
+[2932] example
+[2934] and what we would recommend in this case
+[2936] is to extract out the component that is
+[2939] interactive like for example it could be
+[2941] a search bar and then make it into a
+[2943] client component that you pass into your
+[2945] layouts.
+[2946] Um so that's kind of like how you can
+[2948] handle state in your layouts.
+[2950] Uh and then of course you can always opt
+[2952] into client components with the uh
+[2955] directive use client. And then for
+[2957] context, context is a little bit more
+[2959] complex. [laughter]
+[2962] And to be honest, I'm still trying to
+[2964] kind of like wrap my head around it. So
+[2966] maybe Andrew can help us with with that.
+[2969] Yeah. Um, so there is a feature called
+[2971] server context um that exists. Uh, it
+[2974] has some limitations. You can't just
+[2976] freely willy-nilly um mix and match
+[2978] client context with server context. And
+[2980] there's a text technical explanation for
+[2981] why that um that you can read. I'm not
+[2984] going to try and uh spill it out right
+[2985] now.
+[2986] [laughter]
+[2986] Um, but I think in practice, um, what
+[2989] we're expecting is that a lot of, um,
+[2991] the things that you would use context
+[2993] for on the server, um, don't necessarily
+[2996] need to be contextual, like per subree.
+[2998] Um, and that instead, uh, they can be
+[3000] per request. Um, and so those don't need
+[3002] to come in the form of a hook. So I
+[3004] think in Nex.js, y'all can correct me if
+[3006] I'm wrong, there's a a way to get like
+[3008] the current request parameters, and it's
+[3010] not a hook, right? It's just like a
+[3012] function that you can call anywhere. uh
+[3014] and it gives you which is quite nice
+[3016] because you can you don't have to obey
+[3018] the hook rules for example. Um but I was
+[3021] going to mention a little bit about the
+[3022] I I do think there's going to be maybe a
+[3025] period of like a learning curve for
+[3027] people to get used to this server client
+[3028] distinction. Um so I'm really curious to
+[3030] see how that shakes out over the next
+[3032] few months as people start playing with
+[3033] this. um one of my colleagues uh who
+[3036] used to work on React named Sophie, she
+[3037] had a really great way of explaining
+[3039] this in a tweet once. And I'm sorry
+[3040] Sophie that I'm not going to express it
+[3042] as eloquently as you did in that tweet,
+[3044] but um when you're thinking about server
+[3046] components, uh just imagine if if you do
+[3050] like a mental audit of your existing
+[3052] React application, think of all the
+[3054] components that only ever update when
+[3056] you do a navigation or when you do like
+[3058] a a server like form mutation or or
+[3061] submission or something like that. It's
+[3063] a shocking number of components that
+[3064] exist just that only ever update in
+[3067] those scenarios when you're already
+[3069] doing a server roundtrip. And if you can
+[3070] just move all of that code to the to the
+[3073] server, um it's obviously way better.
+[3075] You don't have to download all of that
+[3077] um all of that client code. Uh again, I
+[3079] I sorry Sophie, go look at her tweet.
+[3081] It's it's a lot better. It's like 140
+[3082] characters instead of that uh giant
+[3084] spiel I just gave. Um, but that I think
+[3086] that really crystallizes at least for me
+[3088] like forms a good mental model of why
+[3090] server components is so exciting and why
+[3091] it makes so much sense for Nex.js to
+[3094] default to server components until you
+[3096] need to add an extra layer of
+[3097] interactivity.
+[3099] Yeah. And I think too if people go try
+[3100] out the app directory, they try out
+[3102] server components and they're feeling
+[3103] like, oh, these are new concepts. I'm
+[3104] still trying to figure all this stuff
+[3105] out. Rest assured that there's going to
+[3107] be plenty of of documentation, education
+[3110] materials from us trying to help
+[3111] everyone kind of just bring the
+[3112] community along because, you know, it's
+[3114] new. Everyone's going to be learning it
+[3115] at their own pace, trying to gro these
+[3117] new concepts, and it's something we kind
+[3119] of want to incrementally move the the
+[3120] ecosystem forward towards. Let's let's
+[3123] answer another question here in San
+[3126] Francisco. We have one in the top
+[3129] middle. I haven't I haven't answered
+[3131] anybody on the side, so we'll take your
+[3132] question. I've taken a couple from the
+[3134] middle. If we want to have one of our
+[3136] mic runners hop over there. Don't worry,
+[3138] people in the middle. I'll also grab
+[3139] your questions as well, too. But want to
+[3141] make sure you got your question in.
+[3144] Yeah, I've I've heard a lot about
+[3147] servers and I've heard a lot about
+[3153] the web, right? Yep.
+[3155] Keep mentioning Webpack replacement
+[3157] successor eventually.
+[3161] I'm curious about how you're thinking of
+[3166] of the mobile form factor and the React
+[3170] Native ecosystem and lots of uh
+[3173] innovations and things happening there
+[3176] as a part of all of these advancements
+[3178] and this progress.
+[3180] Yeah,
+[3180] that's a great question.
+[3181] By the way, I'm Marcus at MongoDB. If
+[3183] anybody needs a database, [laughter]
+[3186] I'm in product Great shout out. Yeah,
+[3190] I'm sure Andrew can talk a bit more
+[3191] about the React Native side. That's a
+[3192] great question.
+[3193] Yeah, I'm I'm really glad someone asked
+[3195] that question. I have had many
+[3196] conversations um even among my
+[3198] colleagues uh at Meta where people seem
+[3200] to think that server components is just
+[3202] oh that's a web only concern but um you
+[3205] know although next is is a web framework
+[3207] um they don't have a a react native
+[3209] story like really I don't think of it as
+[3212] being
+[3214] like not relevant to native platforms. I
+[3217] I saw Evan is here today from um from
+[3220] Expo and uh I would love to see Expo
+[3222] adopt server components one day. Like we
+[3224] should really have server components for
+[3226] React Native as well. There's no reason
+[3228] that architecture doesn't make any sense
+[3230] um in that environment too. Um so that's
+[3232] what I'm hoping is is the future of of
+[3234] React Native. It's this all of these
+[3236] improvements we're talking about like
+[3237] they're starting with Next, but I'm
+[3239] hoping that in the future any React app
+[3241] like it's it's not oh does it implement
+[3243] server components or not? It's just
+[3244] that's going to be a given. um for for
+[3247] anyone writing React. Um so that's a
+[3248] really great question. We're not there
+[3250] today obviously, but uh hopefully that's
+[3252] the direction that we're moving in.
+[3255] There's a Yeah, thanks. There's a
+[3257] question on Discord about Tailwind CSS
+[3259] support. I'm assuming this question is
+[3261] in relation to TurboAC, so we can
+[3263] probably talk about that.
+[3265] Yeah, so we know Tailwind CSS is very
+[3267] popular. Um so that's going to be top of
+[3270] the list of of things that we're trying
+[3272] to support very soon. Um, so I can't I
+[3274] don't have an ex exact answer, but we
+[3276] are looking at supporting like some
+[3278] layer of JS plugins that would allow you
+[3279] to use other tools. And I guess right
+[3281] now like you can kind of there are
+[3283] workarounds um where I think you can
+[3285] just like add a script tag. Um, so yeah,
+[3288] in our layouts playground that I think
+[3291] should be public now. Um,
+[3293] you know, you'll see that that it is
+[3295] using Tailwind. It's not the most
+[3296] optimal, but uh that should work for now
+[3298] and we're working on a better solution.
+[3301] Nice. Another question from Discord here
+[3304] just around how we can use this new
+[3306] architecture in the app directory which
+[3308] uses server components to do AB testing
+[3310] or experimentation. How does that help
+[3312] make my application faster by running
+[3314] these things on the server? Tim or Dela,
+[3317] do you want to talk about that?
+[3318] Yeah, it's similar to uh uh what we
+[3321] talked about in uh the previous question
+[3323] uh which uh was about like can I now do
+[3326] data fetching in like any place
+[3328] basically?
+[3329] Yeah. uh and like what compon like
+[3332] basically deciding what component to
+[3333] render in a server component allows you
+[3335] to do uh like AB testing of like
+[3338] separate trees or uh or anything like
+[3340] that. Um there's also like more advanced
+[3343] like routing cases that we're working on
+[3345] uh namely parallel routes which allows
+[3348] you to like basically create two uh
+[3351] trees that fall under the same router
+[3352] and then you can switch between them. Uh
+[3355] so they can still create like pages in
+[3357] the file system that that map to a
+[3360] certain spot on your page basically. Um
+[3363] so yeah, it's definitely possible. Uh
+[3365] we'll be creating like more examples and
+[3368] like uh best practices around uh what
+[3372] you can do here uh very soon. Awesome.
+[3375] Let's do another question here. I'll
+[3377] come back to the question in the middle
+[3378] that I missed if if uh Sam potentially
+[3381] wants to run it over or Kylie wants to
+[3383] run Oh, Sam's got it. Thank you. Anyway,
+[3386] Kylie. [laughter]
+[3387] Hi, I'm Adam from Spotify. Uh question
+[3389] for Andrew between the data fetching
+[3391] that you were talking about and the RFC,
+[3392] which looks cool. Like what are the big
+[3394] missing pieces that you're most excited
+[3395] about that's coming to React if you care
+[3398] to talk about it?
+[3398] Yeah. Um, so in that RFC, uh, I really
+[3402] apologize for people who maybe haven't
+[3403] read that because we keep alluding to
+[3404] it, but, um, uh, I think Tim gave a good
+[3407] overview. Uh, in that RFC, uh, the
+[3410] biggest thing we mentioned was not quite
+[3412] hasn't quite worked out yet is the cache
+[3413] API, um, that Tim talked about. Um, we
+[3416] have like,
+[3418] uh, a general sense for how that should
+[3420] work. Um, and I, I think on the server,
+[3422] it just works without very many caveats
+[3424] at all. It's really like how should that
+[3426] work on the client where once you start
+[3429] doing things on the client things like
+[3430] cache invalidation become a real issue
+[3433] um that you need to solve. Nowadays
+[3435] libraries like react query um uh or use
+[3438] fr implement patterns like that but uh
+[3442] there may be room for like react to have
+[3443] some level of of caching built in. I'm
+[3446] not sure yet how it will layer with with
+[3448] uh these other solutions. Um, but I
+[3450] think it's like a common enough use case
+[3453] uh that even even on the clients um
+[3455] React should probably have some built-in
+[3456] solution for this. Um, we uh
+[3462] I'm not too worried about it right now
+[3463] though, like I don't think it's uh a
+[3465] blocker for us to start using um these
+[3467] APIs on the server because even even in
+[3469] the future like it's really best to do
+[3471] as much data fingering as possible in
+[3472] your in your server components. And
+[3474] another thing is I think people are
+[3475] going to want to anyway because it's a
+[3476] lot more convenient if you can just
+[3477] access your data sources directly
+[3479] without having to go through this extra
+[3481] uh API layer.
+[3483] Um but yeah, I think that's probably the
+[3484] big biggest missing piece. We're also
+[3486] looking at um like how do we make it
+[3488] just ergonomic and uh avoid like some
+[3491] foot guns where people are doing you
+[3493] know you can do a a cacheed get request
+[3495] in your component but you shouldn't be
+[3497] like sending off server mutations
+[3499] directly inside your component. So,
+[3501] we're try still trying to figure out
+[3502] like what are the the right um patterns
+[3504] and guardrails we can put in place to
+[3506] prevent those those common mistakes. Um
+[3509] and then also I I guess I'll just say uh
+[3512] about the the use stuff. Um
+[3515] I think people are going to find it very
+[3516] exciting, but to me the the much more
+[3518] exciting thing is that you can just use
+[3520] async await and server components.
+[3521] Yeah.
+[3522] Like that that is that is what I think
+[3524] is is really cool. Use is um it's neat
+[3527] but it's it's honestly it's a
+[3528] compromise, right? we would like to just
+[3530] use asyn8 everywhere and I don't think
+[3532] it's out of the question that maybe one
+[3533] day you will just be able to do asyno8
+[3536] directly inside your your client
+[3538] components as well. Um and that could be
+[3540] that could be quite nice. Um but in the
+[3541] meantime I think use is pretty nifty as
+[3543] a as a way to bridge those two worlds.
+[3546] Um and that's if if you're scared by the
+[3548] concept of a of a hook called use that's
+[3550] really how I encourage you to think of
+[3551] it. Just in your head sub out the word
+[3553] await every time you see a use and
+[3555] that's basically what it is.
+[3556] Nice. That's helpful. Another question
+[3559] here in SF. We got one right here on the
+[3562] end. Sam's putting in great work.
+[3565] Hey, I'm Adam from uh Wonderman
+[3566] Thompson. Um the previous video um
+[3571] referred to accessibility on the web a
+[3573] number of times and I don't know if that
+[3575] is um KAG or core vitals which is
+[3579] probably still predicated on KAG or
+[3582] something different. Can you just talk
+[3583] about what that means for for the tool
+[3587] set?
+[3588] Yeah, so I'm happy to take this on the
+[3590] accessibility side. So in the pages
+[3592] directory in in the NexJS router right
+[3594] now, we've added some accessibility
+[3595] features to help with route
+[3597] announcements for screen readers as well
+[3599] as just trying to build in, you know,
+[3601] common foot guns that people might have
+[3602] building web apps directly into the
+[3604] framework. So for NexJS 13, for example,
+[3607] the image component now requires an alt
+[3609] tag, which I think is just a good a good
+[3610] move for the web in general. So we like
+[3613] to talk a lot about trying to make the
+[3614] framework more accessible in terms of
+[3616] you know people who can use it with a
+[3618] screen reader or other uh assisted
+[3619] technology but then to your also to your
+[3621] point about like core web vitals we kind
+[3623] of look at that as a way of just helping
+[3625] uplift the performance of all NexJS apps
+[3628] on the web. We want to understand the
+[3630] real impact of these sites on you know
+[3633] potentially multiple different types of
+[3634] devices multiple different types of
+[3636] internet speeds and how that actually is
+[3637] impacting page loads in the in the real
+[3640] world in the field. So that's another
+[3642] thing that we care about a lot as well
+[3643] too. Thank you for the question. We'll
+[3645] take another one here in the in the row.
+[3647] Dan, thank you.
+[3650] Thanks. Hey Fouad from Indent and
+[3652] curious for the teams who already have
+[3654] very complex next apps, maybe one CSS
+[3657] and JS bingo and have a lot of different
+[3659] things going on in their apps. What
+[3661] would be some of the features or pages
+[3663] of their app they should look to to
+[3664] migrate first to next 13?
+[3667] That's a good question. Anyone
+[3670] particularly want to take it?
+[3671] I'll take it. Um,
+[3673] yeah. So, uh, the the important thing to
+[3675] know is that like you can just upgrade
+[3676] to next 13. There's a few breaking
+[3678] changes. You'll want to check the
+[3679] upgrade guide. Um, that that all relates
+[3682] to pages as well, but also uh app if you
+[3686] enable it. So, example of that is uh
+[3688] we're upgrading the the default browser
+[3691] target which is now east modules. Um the
+[3696] uh link component uh much requested uh
+[3699] feature was uh not having to add the a
+[3702] tag uh as part of a link. Um that is no
+[3706] longer required. Um it's very uh
+[3709] important that you run the code mod
+[3710] though if you have an existing app. Uh
+[3712] so definitely look at that. It throws an
+[3714] error if you don't. So should be fine.
+[3716] But in general like that code mod will
+[3718] fix every single case. it will opt all
+[3720] your links into the uh the old uh
+[3724] behavior. So it's like called legacy
+[3725] behavior basically as a prop. Uh and
+[3728] that allows you to incrementally like
+[3729] move all those links over. Um and then
+[3732] like from the for the story for like how
+[3733] you go from pages to app which is
+[3736] something that a lot of people want to
+[3738] do uh I assume. Um that is uh a a much
+[3743] larger migration overall. Uh we we've
+[3746] started this for uh versel.com and uh
+[3749] like the versel dashboard uh bunch of
+[3751] other apps. Uh and what we've seen work
+[3754] the best is basically like starting page
+[3756] by page. Um one of the benefits right
+[3759] now is that you don't really have a
+[3760] layout system in pages. So like you can
+[3763] just copy over the the the page that you
+[3766] have today into the uh app directory. Um
+[3770] just put in all the components. Uh maybe
+[3773] you have an underscore app and you have
+[3775] to like add a like you always have to
+[3776] add a root layout which runs HTML. Um
+[3780] and that can just like live there as a a
+[3781] client component and then at that point
+[3785] the app will just run basically. Um and
+[3789] you get some like additional features
+[3790] from that as well like being able to
+[3792] import global CSS like anywhere in uh in
+[3795] pages or layouts. Um which right now is
+[3798] only in uh in underscore app. Uh so you
+[3800] can like move some of those into the
+[3802] page if it's uh page specific. Um
+[3806] yeah it's like there there's bunch of
+[3808] other things as well like use writer is
+[3810] no longer uh next slider. Um it's called
+[3814] next navigation. We'll have like an
+[3815] interrupt story there where like you get
+[3817] the same uh same object back from use
+[3820] writer that you get in the app directory
+[3822] uh in pages as well but it's like just
+[3824] using the old router uh instead. U and
+[3827] that's mostly so that you can just like
+[3828] upgrade individual components as well uh
+[3831] while still like maintaining
+[3832] functionality in the the the the pages
+[3835] app. Um really like the way to see it or
+[3838] the way that I see it is that pages and
+[3840] app are like two separate apps. They'll
+[3842] have they don't have client side
+[3843] navigation between them as well. Um
+[3846] they'll just like do a full page
+[3847] navigation because like everything under
+[3849] the hood is different for uh for app. Um
+[3853] so yeah and there's like besides that
+[3856] there's like some other like behaviors
+[3858] in the new router that were not in the
+[3860] old router. So uh yeah definitely the
+[3863] recommendation is to go like page by
+[3864] page so that you can like solidly verify
+[3868] that uh that it works. Yeah. And uh you
+[3870] brought up a very good point which is
+[3872] client component right so the page when
+[3875] you migrate is a component as we have
+[3877] now it's a client component and then
+[3879] from there you can decide okay what are
+[3881] you going to pull out for your layouts
+[3883] and the use router how does the behavior
+[3886] change from pages to app so that you can
+[3888] migrate those features as well.
+[3890] Yeah. So it like the the way to think
+[3894] about is like client components are the
+[3895] components that you have today like
+[3897] there's almost no difference there. Um
+[3900] it's just that there's now a new concept
+[3901] of server component. So the thing that
+[3903] we had before is now a named thing uh
+[3906] which is called client components. Um
+[3909] and because of that if you add use
+[3911] client to uh an import or to uh to the
+[3915] the component uh that was like a page
+[3917] component for example uh that will like
+[3920] mostly render in the same way.
+[3922] Yeah. For for those who are more curious
+[3925] about the upgrade path and the code
+[3927] mods, we have documentation on code mod
+[3930] for the link component, code mod for the
+[3932] image component just to automate the
+[3933] whole process of upgrading as well as
+[3934] some documentation on the the breaking
+[3937] changes in 13. It's like you know we
+[3938] updated the node version I think the
+[3940] supported browsers. Just some couple
+[3942] things there to check out as you're
+[3943] moving your your applications over. Um
+[3946] two questions on Discord here. one um
+[3950] some some folks have asked about another
+[3952] announcement Verscell made today. I'll
+[3953] just quickly mention that and we can get
+[3955] on back to next.js but Verscell acquired
+[3957] a company today called SplitB which is a
+[3959] privacy focused firstparty analytics
+[3961] company and you can start using that
+[3963] today on Verscell if you want. So check
+[3965] that out on our blog if you're curious
+[3966] more about that. But we'll get back to
+[3968] Nex.js. There's a question about using
+[3971] API routes with Nex.js and how we feel
+[3973] about the breakdown between the front
+[3975] end and the back end. I know that Delma
+[3978] and I have talked to a lot of developers
+[3979] about this. They wonder, should I use
+[3981] API route? Should I not use API route?
+[3983] Should I put my entire backend in an XJS
+[3986] app? Like what's what's the right
+[3988] architecture? And I think the answer is
+[3990] it depends. [laughter]
+[3992] Depends what you want to do. Yeah.
+[3994] Yeah. Yeah. I think it depends. It
+[3996] depends on whether you're kind of like
+[3998] fetching directly from your API or
+[4000] you're using an ORM like Prisma, right?
+[4003] Yeah. And that's where react comes in
+[4005] where you have to choose okay am I going
+[4006] to use fetch or am I going to use cache
+[4009] and maybe perhaps an API route. So I
+[4013] would actually love to hear more from
+[4015] team in regards to like what are we
+[4017] thinking in terms of API routes because
+[4020] people will probably have a lot of
+[4022] questions about that.
+[4023] Yeah there's uh something coming. Uh
+[4026] it's not app doesn't have API routes
+[4028] right now. Uh the main reason for that
+[4030] is that we want to carefully consider
+[4031] like what what the API for that is no
+[4034] pun intended. Um and uh it it will be
+[4039] like a mix between like what you can do
+[4041] today and like some new features. Uh
+[4043] like there's some like stuff that like
+[4046] server components also unlocks which is
+[4048] uh for example like what if you want to
+[4051] like individually rerender like a single
+[4054] uh like component on the page that is
+[4056] backed by a server component. Um, and
+[4059] that's like still things that we're
+[4060] looking into. Uh, and we we still want
+[4063] to make sure that that all like ties in
+[4065] well with uh the uh like layouts and
+[4069] what we announced today. Um, and uh like
+[4072] a part of that is also like how do you
+[4074] handle mutations and like forms and
+[4076] things like that. Um, so we're looking
+[4078] at uh the total package for how to do
+[4081] that.
+[4081] Exciting. That's a big update. We'll
+[4084] take uh we'll take one more question
+[4085] here in in the crowd. Um anyone anyone a
+[4089] question? [laughter]
+[4092] We have a question over here. Okay, so
+[4095] let's take that one.
+[4100] Sorry. [laughter]
+[4101] Hey. Um as there's a lot of excitement
+[4104] about ser Oh, I'm Brian.
+[4106] Hey Brian. a lot of excitement about
+[4107] server components and a lot of talk
+[4109] about ergonomics and stuff and I'm
+[4110] wondering like what's the experience at
+[4112] Nexen so far for early adopters and
+[4114] folks playing with server components for
+[4116] things like debugging or or Perf
+[4118] profiling or things like that and like
+[4120] what are your thoughts about tooling
+[4121] around that?
+[4122] Yeah, I'm I'm happy to talk about this a
+[4124] little bit. Dela and I have been in the
+[4125] weeds kind of building some examples,
+[4127] trying things out and we've you know
+[4128] we've had some some amazing community
+[4130] members also give us some feedback on
+[4132] some of the early stuff. So, thank you
+[4133] to everybody who's helped out with that.
+[4134] I think the the kind of blunt answer is
+[4136] it's still pretty early. There's still
+[4138] things we're trying to figure out. We
+[4139] really want to have a great debugging
+[4140] story and make it easy for people, not
+[4142] only when it's the good path, but also
+[4144] when it's on the unhappy path. So, I
+[4146] think working with our our community and
+[4148] other tools that are in the community to
+[4150] help make that process easier, I think
+[4151] will will really simplify things. But,
+[4153] I'm I'm excited to see that progress
+[4155] further because as we move into this new
+[4157] world, we want to make sure the the
+[4159] tooling and the debugging tools come
+[4162] along for the journey. That's it's a
+[4163] critical part of of building your app.
+[4165] Yeah.
+[4167] Any other comments on that?
+[4168] Well, for folks who don't know, that's
+[4170] that's Brian. He uh created the React
+[4171] Dev Tools and now he works on Replay.
+[4173] So, uh we will also be adding it to
+[4175] React Dev Tools support for server
+[4177] components React DevTools at some point
+[4178] and maybe Replay will have [laughter]
+[4180] will have integration as well.
+[4182] He knows a thing or two about
+[4183] Yeah, he knows he knows what he's
+[4184] talking about. [laughter]
+[4186] Yeah. Um, so we've got uh about a minute
+[4189] left before we will go and cut over to
+[4192] the community talks for everyone tuning
+[4194] in, but just want to quickly also do a
+[4196] shout out to check out the Verscell
+[4198] Twitter today for a special swag drop
+[4201] from Kids Super. You saw them before and
+[4204] uh you you'll want to check that out.
+[4205] There's some really cool cool gear
+[4207] dropping there. Um, thank you all for
+[4208] asking the questions here today in
+[4210] person in London and New York and
+[4212] online. Um, with that we can we can wrap
+[4214] things up here for the Q&A and we can
+[4216] head back to the community talks and
+[4220] thank you all for joining. Everyone
+[4222] please give it up for your speakers.
+[4224] [applause]

@@ -1,0 +1,1966 @@
+[0] Hey everyone, before we start the
+[1] episode, I just want to give you a real
+[2] quick update about some changes to the
+[4] podcast coming up. This month, the month
+[6] of April, we are starting to edit the
+[8] podcast ourselves, which means we're not
+[10] really doing much editing at all because
+[12] we don't have time to do that. We really
+[15] appreciate the editors that we've been
+[16] paying to do this, but it's not
+[18] financially possible for us to keep
+[20] going with it. I am not a professional.
+[23] There are a lot of tools that help here,
+[25] but it still takes a lot of time to do
+[27] this. So, starting April, like I said,
+[29] we are going to finish out the month
+[31] with weekly episodes that we are going
+[33] to edit and hopefully everything sounds
+[36] okay or at least good enough. After
+[38] April, we're actually going to be
+[39] shifting to a monthly cadence for the
+[41] podcast. That's just to save on the
+[43] time. We are already shifting to save on
+[45] finances, but doing editing and
+[48] recording every week is not possible for
+[50] Autumn or myself. And the biggest
+[53] downside to that is just we have so many
+[55] fantastic guests that we want to talk to
+[57] and it's not going to happen at a weekly
+[59] cadence anymore. So it's not to say that
+[61] we're not going to ever change it back.
+[63] If we do start getting sponsors or do
+[65] start getting ability to do weekly
+[67] episodes again, we would love to do
+[68] that. But for now, we're finishing out
+[71] the month of April weekly episodes and
+[74] then going forward, we're going to have
+[75] monthly episodes. Uh we haven't really
+[77] decided which day of the month we're
+[79] going to be doing that. That's uh but
+[80] we're going to switch to like a
+[81] waterfall method of deployment. That
+[84] also means we won't be doing the live
+[85] episodes at the end of the month, which
+[87] were really fun for us. We liked having
+[89] the games and sort of a a news episode,
+[92] but in this case, it's just not going to
+[94] work out if we're only putting out one
+[95] episode a month. So, for now, we are
+[97] just going to split to one standard
+[100] interview every month. We have them all
+[102] planned out for the rest of the year.
+[103] It's going to be great. We are still
+[105] excited about the people we get to talk
+[106] to and the things we get to talk about,
+[108] but that's just a change that's coming
+[110] up. So, I want to let everyone know
+[112] again, thank you everyone who's donated
+[114] to the show. Thank you to our sponsors.
+[116] Thank you everyone who's listened. It's
+[118] really been a lot of fun. We didn't want
+[119] to put the show on hiatus and stop doing
+[122] it. We just knew that we couldn't
+[123] maintain what we were doing for the
+[125] first 3 months for the rest of the year.
+[128] So, those are a couple changes. We're
+[130] really looking forward to this show. It
+[132] was a great episode with Jake all about
+[134] different things than I thought. Let's
+[135] go ahead and just jump into the episode
+[136] with
+[138] [Music]
+[142] Jake. Welcome to Fork Around and Find
+[145] Out, the podcast about building,
+[147] running, and maintaining software and
+[149] systems.
+[150] [Music]
+[164] Hello and welcome back to Fork Around
+[166] and Find Out. I am your host Justin
+[168] Garrison and with me is Autumn Nash and
+[170] today on the show we have Jake Cooper,
+[173] founder of railway.com. How's it going,
+[175] Jake? It's good. It's good. Just getting
+[177] over a cold and uh we've got a launch
+[178] week next week, so it's just like kind
+[180] of chaos internally. I just realized
+[182] Discord was still going and I was
+[183] getting pinged. So I was like, "All
+[184] right, let's let's close that down." Um,
+[186] so I'm really happy to just like take a
+[188] second, take an hour, you know, chat
+[190] about this and then back to the
+[191] Thunderdome basically. Um, so it's a lot
+[193] of exciting stuff. How old is Railway?
+[197] Uh, Railway is about four and a half
+[199] almost five years. It'll be five years
+[200] old in June. Yeah. And why why did you
+[204] start it? Um, I just thought like I was
+[208] consistently kind of a little bit
+[209] disappointed with most cloud
+[210] infrastructure and I thought it could be
+[212] like significantly better. Um, and so
+[214] the goal was to just make significantly
+[216] better cloud infrastructure, right? Like
+[218] infrastructure that just kind of works
+[219] with you instead of you know you
+[220] constantly having to go back and
+[221] reconcile it and you know just try and
+[224] really really scale through it. Um, it
+[226] should kind of just like move really
+[227] really seamlessly. Um, and so that's
+[229] what we wanted to build and that's what
+[230] we've been trying to build for the last
+[231] five years. Um, yeah. And you picked GCP
+[235] for Yeah, I know, right? Um, I was like,
+[237] it was one of those things where it was
+[238] like kind of new AWS and we were like,
+[240] ah, we could we could do that, etc. Um,
+[243] we had a few calls with the GCP reps
+[244] originally. Um, and you know, it was
+[247] well sold, etc. They gave us the best
+[248] pricing. We were like, okay, well, we're
+[250] going to use we're going to use a lot of
+[251] compute in in general, like if we're
+[252] going to start a cloud. Um, so we we did
+[255] go with them. Um, and then, you know,
+[257] we've slowly gone with our own bare
+[259] metal infrastructure as we've kind of
+[260] like moved a bunch of stuff off of them.
+[262] So, um, yeah, it's been a very very
+[264] interesting journey for sure.
+[267] I was just mentioning I I just read
+[269] reread the, uh, so you want to build a
+[271] data center blog post. We'll link it in
+[272] the show notes all about, uh, some of
+[274] your trials there and and multiple
+[276] outages and various things at that you
+[279] had problems with with GCP, not only
+[280] just the standard of like you're
+[282] reselling cloud infrastructure and so
+[284] your pricing is based on their pricing
+[286] uh, and any margin you can get from
+[288] that, including egress fees. Yeah.
+[291] uh why why do you think that you had
+[295] these problems in in people folks like
+[297] Heroku are on AWS and have been for a
+[300] very long time? So I think we we're
+[304] trying to jam a lot of instances like
+[306] thousands of instances onto these onto
+[308] these VMs, right? Um and so at a certain
+[310] point like we end up running into like
+[312] reasonably sharp edges uh that exist in
+[314] kind of like either the virtualization
+[316] or like actually just like the
+[318] underlying like cloud platform itself.
+[320] Um, so I think at some point whenever
+[321] you try and push the edges on a lot of
+[323] this stuff, you like things just tend to
+[326] break, right? That's that's kind of like
+[327] the the nature of stuff, right? Like if
+[329] people are giving you standard kind of
+[330] like off-the-shelf stuff and you you try
+[331] and go do non-standard off-the-shelf
+[334] things, um, you're going to kind of run
+[336] into these edges, right? Um, and Heroku,
+[338] I think, historically, has used mostly
+[339] AWS, so maybe this is not a kind of a
+[341] non-issue in general for them. Um, but
+[343] at least for us, we kind of ran into
+[345] like a few of these various different
+[347] issues. And like there's probably ways
+[349] to like get around them on on these
+[351] machines, but at some point it just ends
+[352] up being you're spending a lot of your
+[354] time trying to like build these
+[356] workarounds or kind of like uh build
+[358] resilience into the the cloud platform.
+[359] And at a certain point, you might as
+[361] well just like actually take advantage
+[362] of the fact that most hardware uh like
+[365] that that comes out recently is actually
+[366] like higher order reli like reliable,
+[369] right? It's got, you know, dual
+[371] redundance say everything. Um it's way
+[373] more reliable uh recently. um like
+[376] statistical failure of like machines is
+[377] actually like significantly lower now.
+[380] Um so at a certain point it actually
+[381] makes sense if you want to like take
+[382] that leap and kind of like as you
+[384] mentioned previously there's a lot of
+[386] different um kind of things that you are
+[388] beholden to when you were like building
+[390] a cloud on top of another cloud, right?
+[392] Um obviously the margins um but even
+[394] something as simple as like the the
+[396] egress, right? Like we we just kind of
+[398] have to pass that on to to our users,
+[400] right? and we have to charge them the
+[401] like kind of cloud uh you know twist my
+[405] wrist level of like egress charging
+[406] right I know that cloudflare is that
+[408] like awesome like bandwidth alliance
+[409] right and so now that we're off of kind
+[411] of GCP generally um then we can we can
+[413] now go and do things like that so I
+[415] think it'll be really really awesome we
+[416] can do a lot of really really cool stuff
+[417] with like lowering the price of uh
+[420] special egress storage maybe compute in
+[422] the future um you know we have a few
+[424] announcements on that uh next week so
+[427] yeah I think that one of
+[430] One of the things that the cloud did is
+[431] just they started charging for things
+[433] that people didn't get charged for
+[434] before, especially egress, right? It's
+[435] just like, oh, egress was this thing
+[436] that was like, yeah, you have to set up
+[438] the connects, but after that, like the
+[440] bandwidth is is free essentially. Like I
+[441] guess I pay for the uptime. I'm not
+[443] being charged from my ISP or something
+[445] on how much bandwidth I'm consuming.
+[446] Yeah, the link is there whether you use
+[448] it or not, right? Um, so yeah, it just
+[451] ends up when you know you have
+[451] multi-tenants, etc. You got to meter it.
+[453] You got to you got to figure out some
+[454] way to go and do it and charge charting
+[456] ends up being a really really good way
+[457] to go and do that. Um and then on top of
+[459] that, you know, people want to keep
+[461] their data, you know, cloud providers
+[462] want to keep your their data within
+[463] their their walls, right? Like data is
+[465] kind of the the kind of uh like
+[468] gravitational well that kind of like
+[470] keeps your application around it, right?
+[471] So that it kind of just makes sense from
+[473] their perspective to charge for it. But
+[474] it's really really nice now that we just
+[476] don't have to go in and do that.
+[479] in keeping the data within the walls
+[480] like you mentioned. I mean you are now a
+[482] cloud provider and you may also want to
+[485] keep data within your walls but I feel
+[487] like you are competing on on different
+[490] level like you're just like oh you know
+[491] what we're just going to make it better
+[492] to do some of these things than than
+[494] what you and and better in in a sense of
+[497] for developers in certain scenarios
+[499] you're not doing some of the crazy you
+[502] know multi-pering hundreds of accounts
+[504] sort of like enterprise enterprise needs
+[507] weird things and they need all the
+[508] flexibility in the world they just want
+[509] a virtual switch and you're like no
+[511] we're not giving you a virtual switch,
+[512] we're giving you infrastructure
+[513] applications, right? Yep. Yeah. Um, so
+[516] there's
+[517] like there's a there's a couple of
+[519] things there, right? Because like I
+[521] think we want to compete on on different
+[522] merits, if that makes sense, right? And
+[524] so if you have data gravity and you have
+[525] like egress fees and all these other
+[527] things, you're almost like competing on
+[528] the fact that it's like, oh, we already
+[529] have this and so we have this kind of
+[530] like moat advantage of just already
+[532] being there, right? Um, and for us, we
+[534] think about the fact that if we make
+[536] things trivially easy to deploy and move
+[538] and all those other things, then like we
+[540] can actually have people ship quicker,
+[542] right? And that's kind of our mode in
+[544] general, right? It's like we just make
+[545] the software way more easy to use. Um,
+[547] and then you will use it, right? And if
+[549] we do our job correctly, you'll want to
+[550] move to towards it. And if we do our job
+[553] incorrectly, you will want to move to
+[554] away from it, right? And there's no lag
+[556] in terms of that information, right?
+[557] Because it's it's re it's reasonably
+[559] easy to migrate uh after a certain
+[560] point, right? Um, so that's that's kind
+[563] of like a double-edged sword that we
+[564] have. Um, but we really kind of like
+[566] lean into it because we want that
+[568] information as quick as possible because
+[569] if we're not doing right by the users,
+[571] we want to know, right? We don't want
+[572] you to be there and like be beholdened
+[574] and like super pissed about your cloud
+[575] provider, but you can't move because of
+[577] you know, egregious uh, you know,
+[578] complexity or cost or or any of those
+[581] other things, right? We want us to tell
+[582] us and then you know, at some point we
+[584] want to actually see like, oh, there's
+[586] smoke over there. Like, let's go fix
+[587] that.
+[589] How do you keep it sustainable?
+[593] Do you mean from a uh like workload and
+[596] sanity perspective or do you mean from
+[597] like a cost and both kind of you know
+[599] because I mean at some
+[602] point there has to be a way for you to
+[605] run all this and employ people at that
+[608] scale to do it right. Yeah. So that to a
+[611] certain extent more enterprise like at
+[614] some point they're trying to make more
+[616] money but also like it's running the
+[619] technology. So like how do you keep it
+[621] this as you scale sustainable without
+[624] charging for egress and all these
+[625] things? Yeah. So um the way that we work
+[628] uh is we actually like will pack you
+[630] know thousands of these instances
+[631] together um and you only pay for your
+[633] usage right. Um, so instead of like
+[635] going in and acquiring those like kind
+[637] of massive margins where AWS is kind of
+[639] like overs subscribing their instances
+[640] and and like you know selling uh
+[643] multiple 4 gig boxes on top of each
+[645] other, um we're actually just going to
+[647] to go to our users and say like you just
+[649] pay us what you're actually using. Um we
+[651] will only charge you that fairly. we
+[653] we'll charge you more per like um like
+[657] vcp or per dollar but we will actually
+[659] go and optimize uh your your on top of
+[662] your usage to only bill you for those
+[664] things right so the sticker price might
+[666] look might look higher but in reality it
+[668] ends up being about 30% cheaper right
+[669] and then in terms of like actual margins
+[671] this is why it becomes very very
+[672] difficult to like build a cloud on top
+[674] of a cloud um because there's only two
+[676] options right you either you either uh
+[677] shaft your users by basically putting
+[679] everything behind an enterprise pay wall
+[681] or you go and figure out how to solve
+[683] these like hard technical problems and
+[685] then go and pass those uh savings on on
+[687] to the users, right? Um and we've
+[689] decided to go and do the ladder. Um and
+[691] that just means that we get to like
+[692] solve really really hard engineering
+[693] problems which are like you know they're
+[695] they're interesting, they're difficult
+[697] uh but they're like ultimately like
+[698] quite rewarding and and quite fun um you
+[700] know for engineers to go in and solve.
+[702] So that works quite well for us, right?
+[704] And then we have uh a fully remote
+[706] distributed team. Um, so that works
+[708] really really well from like a on call
+[711] perspective, uh, delegating work, right?
+[714] Like I work with a person in Thailand
+[716] and you know I'll I'll like wake up and
+[719] they'll be going to sleep and they'll be
+[720] like, "Hey, can you do this?" I'm like,
+[721] "Yeah, sure." Right? Um, and then you
+[723] know, they'll go to bed and then they'll
+[724] wake up and in the morning I'll have
+[725] done the thing, right? So you almost get
+[727] like twice as many hours in your day if
+[729] that makes sense. If you can kind of
+[730] like sequence the work really really
+[731] well. Um, and then it's, you know, I
+[733] call that it's uh following the sun on
+[735] call or Yeah, exactly. Right. Um, so we
+[738] can do follow the sun on call really
+[739] really um I don't say easily because
+[742] it's never easy or whatever. Um, but
+[744] like not impossibly, right? Because we
+[746] have a fully distributed team, right? So
+[748] there's there's a few different things
+[749] that that we do that make it reasonably
+[751] tenable. You mentioned Go ahead. It's
+[755] just nice to hear someone saying the the
+[758] positives of a distributed team because
+[760] that's always what you know like there's
+[763] some like I remember looking at teams
+[765] within AWS and the people that would
+[767] have one team in the US and one team in
+[770] another country and they would do follow
+[771] the sun. I was automatically like yes
+[774] because you know that your on call is
+[775] not gonna suck you know like and it just
+[777] it's so interesting to see that people
+[779] are so against like remote work and
+[780] stuff and I'm like this is it it makes
+[783] things so much better with we're going
+[785] to pretend like not having people in
+[787] different time zones doesn't make your
+[788] life so much easier because it does.
+[791] Yeah. I mean it does in so many ways and
+[793] then it doesn't in so many other ways,
+[794] right? like we have a we have an entire
+[796] class of people that are like very um I
+[798] would say difficult to hire at Railway
+[800] because we're fully fully remote early
+[803] stage like 25 people um and like people
+[807] who are going to be successful in that
+[809] environment are like you know high
+[810] agency high autonomy kind of archetypes
+[812] right and so if you have people that
+[813] like you know you'd love to mentor them
+[815] because they they seem like awesome
+[816] junior talent but like if you're not
+[817] like there to like you know unstick them
+[819] or or anything else like that it means
+[821] that like they're they're sitting there
+[823] they're waiting right um and so that
+[824] ends up being a kind of very very
+[826] difficult uh thing for us to like
+[827] potentially go on and do. So we
+[828] basically said like we're really only
+[830] going to hire like senior staff like
+[832] talent um as of right now until we get
+[834] like you know everything kind of off the
+[836] ground and then maybe in the future we
+[837] can kind of like do more mentoring and
+[839] stuff like that. So there's obviously
+[841] massive benefit uh but there's also kind
+[842] of like a massive um you know I don't
+[845] want to say cost but like you got to you
+[847] got to you got design for it
+[848] organizationally right. I I put a blog
+[851] post out the other I think that that I
+[852] was saying that like you know despite
+[854] running a remote company I think like
+[855] 90% of companies are probably better off
+[856] in person because they're not willing to
+[857] like put in the organizational effort to
+[860] like make the organization work in the
+[862] way that it would need to to work well
+[863] remotely. I think it depends, right?
+[866] Like I think people were working
+[867] remotely for years and it's definitely
+[870] harder when you're a junior, but there's
+[872] whole schools that teach like
+[874] development and there's whole
+[876] apprenticeship programs and like
+[879] nonprofits that do that and can wrap
+[881] people up remotely. So I think it's more
+[883] of figuring out a good way to onboard
+[886] people remotely and kind
+[888] of champion that and making mentorship
+[891] help helping yeah the mentorship like
+[893] the ongoing relationship with people on
+[895] the team because I mean
+[897] 50% of the people are below average
+[899] right like just like the how that works
+[901] is like uh yeah like those that 50%
+[903] might need help with things and that
+[904] includes your managers right like your
+[906] managers also half of them are going to
+[907] be below average and if you're saying
+[909] like we only hire the top quality tier
+[911] like Well, 50% of those people are still
+[913] below average in your group, right? And
+[916] so you have to just like how how much do
+[918] I need to mentor some people? How much
+[919] do I need to uh let people just go and
+[922] do their own thing? And I think what
+[923] you're mentioning like the the follow
+[924] the sun sort of like handoff work
+[926] handoff works really well as long as the
+[929] team are kind of aligned on the same
+[930] goals and they are they can unstuck
+[933] unblock themselves for things and they
+[934] communicate well because a lot of people
+[936] that work great in the same time zone
+[939] need to work well by communicating in
+[941] person. and they need to talk to someone
+[942] and say, "Hey, how are we going to fix
+[943] this? And we need to brainstorm it. They
+[945] can't go off and think on their not that
+[947] they can't think on their own, but maybe
+[948] they can't get around a problem without
+[950] having someone to rubber duck with them,
+[952] right? Like that is a problem." Which I
+[953] mean, like I love a good whiteboarding
+[955] session in person, but in reality, I
+[958] don't even think a lot of
+[960] that work gets done in the office. If
+[963] you look at all the time that you spend
+[965] distracted and it's noisy and all of the
+[968] other parts like honestly I think it's
+[970] because we have gone so many years kind
+[973] of developing the process in which that
+[975] we do that mentoring in real life and we
+[979] went into co and to a lot of companies
+[982] went into remote work kind of like the
+[984] in out of necessity you know and it
+[987] wasn't something that we planned for and
+[989] we weren't thinking about how you get
+[991] like you know an engineer
+[993] from new to senior, right? So, it's like
+[996] really easy to just hire seniors, but
+[998] we're not going to have enough seniors
+[1000] left over if we juniors. So, I think
+[1003] we've got like I think a lot it's going
+[1005] to be very telling like going forward
+[1008] who ends up figuring out that piece of
+[1011] how to onboard and grow junior engineers
+[1014] remotely because that's going to set a
+[1016] lot of startups apart. Yeah, I think
+[1019] remote is kind of like there's a lot of
+[1021] really good like ARB, you know,
+[1022] arbitrage um in inside of remote, right?
+[1024] And so if you can do things like if you
+[1025] can run a, you know, high performance
+[1027] team uh leanly and remotely, excellent.
+[1029] If you can onboard people like really
+[1031] really well, get them up to speed
+[1032] really, really quickly, excellent. Uh if
+[1034] you can mentor and grow junior talent
+[1035] remotely, excellent, right? Um because a
+[1037] lot of like you know most companies are
+[1039] just getting in person, right? they have
+[1040] the kind of standard operating pro
+[1042] procedure like the kind of like almost
+[1043] McKenzie derivative playbook of like
+[1045] this is how you manage and this is how
+[1047] you on board and this is how you do X
+[1049] right um and they're kind of like almost
+[1051] benefited to to doing that right because
+[1053] like they know it works right um and so
+[1056] you know what's funny is I don't even
+[1057] know if it works for most people though
+[1058] with the amount of neurospicy people in
+[1061] engineering and in tech being on an
+[1063] engineering floor and all that noise
+[1065] like I think it works for some people
+[1068] but those are just the people that have
+[1069] survived for a really long time, you
+[1071] know? Yep. And I think it's so the
+[1072] people that made the training. Exactly.
+[1074] And I think it's like very actually
+[1076] counterproductive to the
+[1079] like overall masses and those just
+[1082] happened to be the people that designed
+[1084] it. It worked for them and they kept
+[1086] going. Yeah. I mean, I I fully agree. I
+[1088] I worked remote for like uh probably
+[1091] like the last 10 years uh total. Like I
+[1093] think Uber was uh uh pretty much the
+[1095] only company I worked not remotely at
+[1097] and I lived beside the office. Like I
+[1099] love Uber. Uh yeah, I liked Uber a lot.
+[1102] It was great. Um I lived right beside
+[1104] the office though, right? Um and so
+[1105] people be like, "Oh, you're not at your
+[1106] desk." I'm like, "Yeah, I just went
+[1107] home. It was two blocks away. If you
+[1109] join me, I'll come back, you know." Uh
+[1110] but but I'm going to go work in in here.
+[1112] I went I went to the bathroom. In my
+[1113] bathroom. Okay. In my bathroom.
+[1117] Yeah. Going back to what you said
+[1118] earlier about uh giving like competing
+[1122] with with clouds and stuff and and
+[1124] handing off the value that you get to
+[1126] your customers, was there things that
+[1128] you could do now that you moved to your
+[1130] own hardware and your own coloss that
+[1132] you couldn't do on on Google that you or
+[1134] in e-cloud that you're like, "Hey, we're
+[1136] we're just letting customers do this
+[1137] now." Yeah. Um, so I mean good example
+[1141] is that like the egress stuff like uh I
+[1144] guess whenever this this podcast like
+[1145] it'll be announced. Um, like we're
+[1146] slashing the egress pricing next week,
+[1148] right? So like that's getting cut
+[1149] immediately in half. Um, right. So
+[1151] there'll be other things that we can go
+[1152] in and do. Uh, storage is getting cut
+[1154] cut by like 40%. That's also coming out
+[1156] next week. We're knocking all of the
+[1158] seat costs off of um, you know, compute.
+[1160] Basically like pretty much anything that
+[1162] is not like raw compute now. Like that's
+[1164] really the only thing we need to go in
+[1165] and charge for, right? because now we
+[1167] actually have like cheaper raw compute,
+[1168] right? It ends up being cheaper when you
+[1170] go and buy the the hardware yourself um
+[1172] to actually go and and and and build
+[1174] this out, right? Obviously, you got to
+[1176] build the software and and the the goal
+[1178] and all these these other things, right?
+[1179] But um you know, dollar for dollar, it
+[1181] ends up being cheaper that we can pass
+[1182] on to the the users. So, that'll be like
+[1184] some start of it. Um and then we'll have
+[1186] like um like terabit level like uh lines
+[1190] to be able to replicate data across
+[1191] these instances and like 100 gig plus
+[1193] lines between between these instances
+[1195] that already exist. So people are going
+[1196] to get like ultra fast network, ultra
+[1198] fast processing. They're going to get
+[1200] like better better compute uh for a
+[1202] cheaper price, right? And and like I
+[1204] don't know who who does that, right?
+[1205] Like that's what we're trying to do,
+[1206] right? Like we're trying to go in and
+[1207] push those like boundaries on on those
+[1209] edges and just remove any kind of like
+[1212] additional cost that we would you know
+[1213] say like hey you know like let's let's
+[1215] charge you an arm and a leg for our
+[1217] back. Let's like charge you an arm and a
+[1218] leg for all these other things, right?
+[1220] Let's just say like, well, we are
+[1221] benefited by the fact that if you just
+[1223] consume more compute and we are the most
+[1226] reasonable compute price on the block
+[1228] and and the fastest way to go and do it,
+[1229] then we're going to be successful and
+[1230] you're going to be su successful. So,
+[1232] let's like take away all the other
+[1233] Let's stop charging for any of
+[1234] that and let's just try and figure out
+[1236] how you can deploy more compute, right?
+[1238] Because then we're both going to win.
+[1240] And you mentioned in the blog post about
+[1242] building your own data center like this
+[1244] was like a January 2024 and then five
+[1245] months later you had your first
+[1246] computers turned on and it was like it
+[1248] was like eight or nine months you had
+[1249] customers using it. That had to be a big
+[1252] decision going into it, right? Like you
+[1253] you were you building and running stuff
+[1255] for a while and you're like we have to
+[1256] move and do this thing that's going to
+[1258] take a lot of time at a at a 25 person
+[1261] team. Maybe even then you were you were
+[1263] less than 20 people like you were
+[1265] dedicating I think 18 people or
+[1266] something like that. Yeah, you you're
+[1268] dedicating a lot of a good percentage of
+[1270] your company to say this is important
+[1272] for us to do which is just take a step
+[1274] back and do this like what was the
+[1275] actual driver in push to like say we
+[1278] have to make this this decision now. Um,
+[1281] I think there's a margin component and
+[1282] there's also just like a um almost
+[1285] like I would say like I don't know
+[1288] psychology of the org. Like we we look
+[1291] at like what is the next hardest problem
+[1292] that we have to go in and solve and then
+[1294] we try and figure out how to solve it
+[1296] just like as quick as possible, right?
+[1297] We're like are we going to run out of
+[1299] money if we if we go in and solve this
+[1300] and like what's the unlock if if we go
+[1302] in and and and make this solution,
+[1304] right? So for us, we had a bunch of
+[1306] runway um because we're reasonably
+[1308] capital efficient, small team. Um you
+[1311] know, we weren't like running we don't
+[1313] do any like marketing or or anything
+[1314] else like that, any like paid marketing
+[1316] and acquisition, right? So like we have
+[1318] reasonable runway. So we were like,
+[1320] well, if this is the number one thing
+[1321] getting in our way, right? And we just
+[1322] like at the drop of a hat and we like
+[1324] get paged because uh you know some
+[1326] something happens on on the other side
+[1327] that we can't control, like we have to
+[1329] be we have to be able to control those
+[1331] things, right? So we just knew that it
+[1332] was a thing that we were going to go in
+[1333] and do. Uh, candidly, I I knew like
+[1336] basically since the start that we were
+[1337] not going to be like on top of another
+[1339] cloud because again like the margins
+[1340] don't work, the incentives don't work,
+[1342] right? Because at some point AWS's
+[1344] margin function kicks in and they say
+[1346] it's a really nice market you have over
+[1347] there. I'd really like to take that. Um,
+[1349] and then like I've always wondered how
+[1351] Heroku did it cuz
+[1355] I mean Heroku is expensive, right? Like
+[1357] expensive and they're like only doing
+[1360] about a billion dollars in revenue as of
+[1361] right now. Um and so like you know the
+[1364] the margin function may kick in, right?
+[1366] Um so it's it's tough there, right? But
+[1369] at a certain point that that function
+[1370] does kick in and they will want to like
+[1372] produce something in that area, right?
+[1374] So you you have to kind of go in and do
+[1376] it for margin incentive reasons and then
+[1378] also the experience that we wanted to
+[1379] offer, right? Like we just knew that
+[1380] like we needed faster hardware and and
+[1384] higher order control to be able to make
+[1385] these experiences that we wanted, right?
+[1387] Like even something as uh I don't want
+[1388] to say as simple as because it's like
+[1389] very very hard to go in and do. Um but
+[1392] doing like PR environments with your
+[1394] data. So if you fork into a new into a
+[1396] new environment like you may actually
+[1398] want to just like use your production
+[1400] data but with copy on write versions
+[1401] right like we can't do that on a public
+[1402] cloud but we can do that on a on our
+[1405] like block storage instance that we we
+[1407] have gone out and built right and that's
+[1408] like a uh differentiated experience that
+[1410] we can now offer because we are now on
+[1411] top of our own instances right um so
+[1414] stuff like that it means that we can go
+[1416] in and push those experiences onto the
+[1418] customer to be like hey this is
+[1419] differentiated and if anybody else wants
+[1420] to go in and copy that they have to go
+[1422] build all this stuff
+[1425] What would you say to the the classic
+[1427] line of undifferiated heavy lifting?
+[1430] What do you mean the the the tagline
+[1433] that Amazon says you shouldn't have to
+[1435] do this yourself. We will build we will
+[1437] run your data center for you. Uh don't
+[1439] do the undifferiated stuff.
+[1442] Yeah. Stacking network whatever. I I
+[1445] think that that's it's an interesting
+[1446] line. Uh but like most of DevOps is
+[1449] undifferentiated lifting. you know,
+[1451] you're you're doing a lot of stuff to
+[1453] just like get things off the ground,
+[1454] right? In just various different ways,
+[1456] right? So, I think it it something that
+[1458] sounds reasonably solid, but you end up
+[1459] having to reinvent a lot of these things
+[1461] anyways, right? Um, so they may be able
+[1464] to offer it. Um, but the thing is is if
+[1465] we offer it in a way that's like easier
+[1468] easier to use, uh, faster and and
+[1470] cheaper, then like we do have a shot at
+[1472] at being able to give that experience to
+[1474] customers where they can just say, "All
+[1475] right, cool. I'll just use this." a
+[1477] after spending, you know, nine months or
+[1479] whatever to shift to to your own
+[1482] hardware, did you did you find that you
+[1484] had other time that you were getting
+[1485] back that you weren't doing that you're
+[1486] like, "Oh, we used to do, you know,
+[1488] these five people did all Terraform all
+[1490] the time or they had to do this stuff to
+[1491] like manage GCP spend or some cloud
+[1495] environment and now they just don't have
+[1496] to because it's it's just hardware and
+[1497] we know how to manage that side of it."
+[1499] Was there any savings there time? Well,
+[1501] the the savings are basically like we
+[1502] we've made capital expenditures and like
+[1504] those capital expenditures are now on
+[1505] the table, right? And so like so long as
+[1507] we we have those things there, like
+[1509] we're not going to turn around and be
+[1510] like, "Oh my god, like where did this
+[1512] $50,000 GCP bill come from, right? It's
+[1514] because it's well, we have the hardware,
+[1516] right? Like we're going to run out of
+[1517] hardware or we're not going to run out
+[1518] of hardware, right? So the the like
+[1519] projections of your margin, it makes it
+[1521] significantly I would say easier on on
+[1523] that side. Um obviously you have to do
+[1524] the the upfront planning, but on the
+[1526] back side of it, right? um like it's a
+[1529] lot more controlled which is awesome. Um
+[1531] and then just in terms of like
+[1532] operational overhead uh so far it's been
+[1535] lower operational overhead to like run
+[1536] these instances because everything has
+[1537] dual redundancy and and and we have
+[1539] monitoring and alerting so if a drive
+[1541] goes out etc. Um we have like smart
+[1543] hands that will go and and uh replace
+[1546] one of those drives within like I think
+[1548] it's like 6 hours or something like
+[1549] that. So it's like super quick and then
+[1551] we have somebody within about an hour of
+[1552] every single data center in case like
+[1554] something really hits the fan. But
+[1555] everything is dual redundancy right? So
+[1557] that's that's why we've built everything
+[1558] out. So are you actually running your
+[1561] own data centers or are you running a
+[1563] hardware inside of someone else's data
+[1565] center? So we're running coloss. We got
+[1567] in trouble for this on on hackernews
+[1568] where we like have our own coloss. Um
+[1570] was like so you want to build a data
+[1571] center and the first company was like
+[1572] this isn't a real data center. We're
+[1573] like ah fine, you know, right? But it's
+[1575] like can you explain to people what a
+[1576] colo is just because some people have
+[1578] only worked in the cloud, right? So like
+[1581] I think cuz like I think abstraction is
+[1583] getting to the point where
+[1585] like it's
+[1587] really hurting how people look at
+[1589] things, right? Just because you don't
+[1592] have to put something into a or just
+[1594] because you've never done this like the
+[1595] fact that we don't all understand those
+[1598] things like you know like there's a lot
+[1600] of people who may have never even worked
+[1603] in um you know like with data centers
+[1606] and on hardware. So just explaining that
+[1608] might help. Yeah. Um so the data center
+[1612] you can consider the data center as like
+[1613] the big building with all the power and
+[1615] all the Ethernet etc. And then a colo is
+[1617] essentially like some amount of racks
+[1619] inside of that building right. So um you
+[1621] know Equinex uh is a kind of data center
+[1624] provider. They will handle um your power
+[1626] running into there. They will handle
+[1627] like ether like internet hookup lines,
+[1630] right? So if you want to go to like
+[1631] Aurelion for like internet or anything
+[1632] else like that, they like they will
+[1633] handle the plugging in of those things.
+[1635] Um, and they will handle like things
+[1637] like routing cables to a cage, giving
+[1639] you biometric, you know, stuff like
+[1640] that. So, it gives you kind of like your
+[1642] own mini data center inside of a data
+[1644] center. And that's ends up being like a
+[1646] a colloccated rack or what people call a
+[1648] colo for short. Do you ever worry though
+[1651] because cloud was cheaper at first
+[1654] because they were trying to get more
+[1655] people there and it was this new thing,
+[1657] right? And then they had all of this
+[1659] like you don't have to worry about
+[1660] hardware, you don't have to replace it,
+[1662] we'll do that, right? And then like
+[1664] drives and just hardware and doing that
+[1668] got cheaper because people weren't doing
+[1669] it anymore. And then people were like
+[1671] you can have your own data center and
+[1672] we'll run it for you. But what happens
+[1674] when those services become more
+[1676] expensive? You know what I mean? Because
+[1677] it's also like what's popular, what
+[1679] people are using, right? So that also
+[1683] has some play. Do you worry that if the
+[1685] fees for that like cuz I mean if you had
+[1687] to run these data centers and you had to
+[1689] hire the people that would be more
+[1691] expensive, right? and if you have to
+[1694] actually go and have DBAs or have people
+[1697] running your servers and replacing racks
+[1699] and stuff.
+[1701] Um, so I think there's like there's two
+[1703] things there, right? Like there's uh
+[1704] almost like technological prowess to
+[1706] like go in and manage the instance
+[1707] itself and then there's the almost like
+[1709] manufacturing prowess to like go in and
+[1711] make sure that you have enough like
+[1712] drives like showing up at at some point,
+[1714] right? Because it's like oh okay cool.
+[1715] if we don't if we don't produce if we
+[1718] don't consume drives then we won't
+[1719] produce them in such capacity that like
+[1721] they will get more and more expensive
+[1722] over time right it's just the the
+[1723] opposite of economies of scale or
+[1725] whatever um so I think the the thing
+[1728] that I sort of worry about but I don't
+[1730] worry about it so much as I think it is
+[1732] like actually another pretty good like
+[1734] uh art point of arbitrage is almost like
+[1735] the skills to manage those data centers
+[1737] right that's what I've defin it's like
+[1740] it's kind of like a dying art right it's
+[1741] like it's like people who commit like
+[1743] Linux kernel code or stuff like that
+[1744] it's like it's like those people are,
+[1746] you know, you you don't have like 21
+[1748] year olds, right? Or at least those the
+[1749] exception, right? Um so it's it's like
+[1751] people who've kind of like accumulated
+[1752] this knowledge over time, right? And so
+[1754] for me, I almost I almost think about it
+[1756] as like oh like we got to preserve this
+[1758] like we we we need people to understand
+[1760] like how we can actually like go and
+[1762] manage these things and if we can go and
+[1764] do that and we can make advances in that
+[1766] field that's like potentially getting
+[1767] more and more sparse as like you know
+[1769] AWS or GCP or whatever just scoops up
+[1771] every single person, right? And like we
+[1773] have a a potential advantage of the fact
+[1775] that like this this field is almost like
+[1777] not getting as many reps in as possible.
+[1780] Um and so we can potentially find and we
+[1782] have found uh pretty like higher order
+[1784] efficiency gains just by doing things a
+[1786] little bit differently. Right. Being
+[1788] differentiated helps your business.
+[1790] Well, it I think that I totally get like
+[1793] the way you made your decision like the
+[1794] fact that people try to write build
+[1796] clouds on clouds just drive just blows
+[1798] my mind knowing how much cloud costs,
+[1800] right? But it's just interesting because
+[1803] everybody was like all in on the cloud
+[1805] and they like loved it and then they
+[1807] were now everybody's all in on onrem but
+[1809] it's just like look at how um it es and
+[1813] flows when it's like with how much
+[1815] cheaper storage got at one point you
+[1817] know and just it's because people aren't
+[1819] using it as much and like DBAs were
+[1822] having to get jobs working as essays for
+[1824] databases because nobody was using DBAs
+[1826] because they wanted to get like manage
+[1828] databases. So it's like this weird flow,
+[1830] you know, and it got to the point where
+[1832] the big companies were having
+[1833] apprenticeships because they couldn't
+[1835] find people to manage their data
+[1836] centers, you know. So it's just it's
+[1839] interesting to see how it all es and
+[1841] flows and how I with railways
+[1844] specifically, you're in a colo, you
+[1845] don't have hand, you don't hire the
+[1847] hands that replace the drives, you have
+[1849] someone at that works at the colo
+[1850] facility that you pay for it, whatever.
+[1852] It's like it's an outsource sort of
+[1853] thing. Like oh yeah, I don't have to
+[1855] worry about hardware. It just happens
+[1856] for me, right? like the day-to-day sort
+[1858] of things. I I've been calling this
+[1860] instead of cloud computing ground
+[1861] computing where instead of being on prem
+[1864] or saying it's edge or whatever like no
+[1865] it's just like stay grounded to like
+[1866] what you need what your business
+[1868] requires and then know what it is that
+[1870] you're trying to build against right
+[1871] because right now you were you were in a
+[1873] cloud and you're like hey we can get
+[1874] started here knowing that eventually our
+[1877] economics are just going to have to be
+[1879] probably on hardware that we own because
+[1881] it's just cheaper for us in the long
+[1882] term and at some point you're you're in
+[1884] a colo right now some point you might
+[1885] need to build an actual data center like
+[1887] you might actually have to scale to a
+[1888] size of like, hey, we own a data center
+[1890] now, right? Like that's if if we are
+[1892] that big, it's going to be cheaper for
+[1893] us to own the data center than to rent
+[1895] the power, right? And and that just is
+[1897] how some businesses grow, some of them
+[1899] don't, and it's fine. Like, you're
+[1900] somewhere in the middle, but like try to
+[1901] stay at the point of like, this is where
+[1903] we're at or this what we know we need.
+[1904] And so many people just said the cloud's
+[1906] going to solve all those problems. The
+[1907] cloud's going to be the end all beall.
+[1909] I'll never have to run this again. Let
+[1911] me forget all how to plug in an Ethernet
+[1913] cable. But isn't that like just the
+[1915] levels of abstraction at this point,
+[1917] though? That's why people think about
+[1918] AI. AI is going to be developers and
+[1920] they're going to do all this stuff like
+[1922] it's going to take over like
+[1924] people like and then people didn't like
+[1926] when assembly when we got higher than
+[1929] assembly then people didn't like the
+[1930] next language that was another
+[1932] abstraction. They're different levels of
+[1933] abstraction. Do you want to run your own
+[1935] hardware? Do you want to just buy your
+[1937] own hardware? Do you want to have no
+[1939] idea what hardware is going on and live
+[1940] in the cloud? Like there are different
+[1942] levels of abstraction, right? And it's
+[1944] like people want to do this, this is
+[1946] better, and that. And I think we're
+[1947] finally going to get to the point where
+[1949] people are going to learn to build what
+[1951] they need and not what's cool. Right.
+[1953] You start in the cloud. I don't know if
+[1954] that's
+[1957] ever so too. I hope so, too. I would
+[1959] hope so because like there's too many
+[1961] incentives. Like a lot of marketing.
+[1963] It's not just the incentive, it's the
+[1964] hype. Like I don't even think that they
+[1966] like think about it. Yes. cuz it's like
+[1968] dude like you can figure out how what
+[1970] you're building in the cloud, get your
+[1971] traffic, go to Okola or onrem and all of
+[1974] these things are just picking the right
+[1976] tool for the job but people want to be
+[1978] like they have to write these like
+[1980] catchy blogs about like onrem and all
+[1982] this stuff like I mean I like hype. I
+[1985] enjoy hype. Like hype is fun. Like being
+[1987] part of the hype train is fun, right?
+[1989] It's just like oh cool we're learning
+[1990] something new. I love learning new
+[1992] things. I think one of the dangerous
+[1993] things is when the hype becomes like you
+[1995] have to defend yourself for the hype of
+[1997] like I chose serverless and serless is
+[1999] the only way to do everything now and
+[2001] and you're like wow serless is really
+[2003] expensive and like yeah but serless is
+[2004] the best. I think that's different
+[2006] though that's not hype that's excitement
+[2007] like genuine excitement over learning is
+[2010] fun hype is when everything is a hammer
+[2013] and you've lost your whole mind because
+[2015] you've drunk the Kool-Aid and you are so
+[2017] deep in that it's just you want to use
+[2020] the hammer for everything. Well, and if
+[2021] you know how to use a hammer, like I've
+[2022] I've used the wrong tool for a lot of
+[2024] things. I used Anible way too long, but
+[2025] sometimes you kind of but sometimes like
+[2027] I still use Anible, right? Like it's
+[2029] good for some things, but like just
+[2031] think Bash is horrible, but sometimes
+[2034] you have to use it because it's the
+[2036] simplest way to do it. Like, but it
+[2037] that's not always bad, right? Like if
+[2039] it's there's multiple tools to do jobs.
+[2041] There's multiple ways that you can get
+[2042] compute power and sometimes you're
+[2044] picking what you know best because
+[2046] that's what you know and you don't have
+[2047] to spend the time to do it. And then
+[2048] there's using a completely different
+[2050] tool that should be used for that. Oh
+[2052] yeah, you not only how many people like
+[2054] reached out to me and they're like, "Oh
+[2055] my god, like should we build a colo?"
+[2057] And I was like, "Do you have 5 or 10
+[2059] million a year of infrastructure spend
+[2061] that you have to like optimize and like
+[2063] you know, you have the like you got to
+[2065] pack all these things really." And
+[2066] they're like, "No." And then I was like,
+[2067] "Probably not then." Like why would you
+[2070] want to go? And they're like, "Well, it
+[2071] just seems like we could save a bunch of
+[2072] money." And I was like, if you if you're
+[2074] not willing to like, you know, build all
+[2076] this stuff out and and make this massive
+[2077] investment and like wrangle all of that
+[2079] complexity, like it is not free. Like
+[2081] it's not free. You're just paying in
+[2082] different ways. You know, like I've
+[2085] heard people like they're just like and
+[2086] we're going to pay upfront for all this
+[2088] hardware and it's going to be like
+[2090] practically free after. And I'm like,
+[2091] you know, at some point you have to
+[2092] replace it. Like that's not how this
+[2095] none of this is free. Like it's just
+[2097] picking your evil at that point and what
+[2098] is more sustainable for your business.
+[2100] It's like if you heard I think John
+[2102] Carmarmac has like a rant on like
+[2104] architectural he calls this like
+[2105] architectural astronomy where people
+[2106] just like start making like things and
+[2108] this and they're like oh then we could
+[2110] do this and then AI is going to do this
+[2111] and then you're like but how and they're
+[2113] like but isn't it funny because it's the
+[2115] exact same thing with AI. AI is probably
+[2117] going to make things more efficient. I
+[2118] love when it writes an email for me and
+[2120] it takes a bunch of like cliff notes and
+[2122] it makes it sound like a not neurospicy
+[2124] like over all over the place engineer
+[2126] but it does like it's not going to solve
+[2128] the world's problems. Let's just use it
+[2130] for what it's for. Like it's not that
+[2132] hard. Have you have you shared at all
+[2134] how much money you've saved going to
+[2136] your post or No, because like it's still
+[2139] TBD, I guess. Like we we still don't
+[2141] know. We only have like rough estimates.
+[2142] I would I would This is only I mean you
+[2144] were onboarding customers I think by the
+[2146] time we recorded this maybe three or
+[2147] four months ago. So it's not like a full
+[2149] year cycle to know. Are you tracking
+[2151] pretty closely to your expectations?
+[2153] like you know like are you Yeah, I would
+[2155] say we're within about maybe 10% of our
+[2159] expectations. So like the math the math
+[2161] is still mathing which is cool. I love
+[2163] that you said the math is still that
+[2165] right. So that's good. Um so real like
+[2169] it's funny because like you know um
+[2171] that's like an engineer you're like oh
+[2173] you know my business is special and like
+[2174] all these other things and then you like
+[2176] you look at like this uh you know the
+[2177] Excel sheet where the you know somebody
+[2179] has worked out your business on an Excel
+[2180] sheet they're like this is this is your
+[2182] business and you're like no but it's so
+[2183] much more and then you're like oh no but
+[2185] you can actually you can actually just
+[2186] value a business off like a P&amp;L sheet
+[2188] and like go and do that and and it's not
+[2189] even like hard calculations. It's it's
+[2192] just like you plug it all in and then
+[2194] it's it goes like this and then and then
+[2196] you'll do this and you're like But isn't
+[2198] that so true though cuz you like fall in
+[2200] love with this baby that you made and
+[2202] like you're just like and I love it so
+[2204] much and it's so special. But like but I
+[2207] think you should be proud though cuz you
+[2209] made like
+[2210] your business out of like smart plans.
+[2213] Like I it sounds like you've really done
+[2215] such a good job like thinking it
+[2217] through, you know, and I mean with the
+[2220] things that get funded. We're still
+[2221] really early, but I VC
+[2224] land before we switch before I switch
+[2226] top is completely duty, I want to ask
+[2227] one more thing. Have you was there any
+[2229] surprises along the way? Now, you like
+[2230] you have you haven't really done a full
+[2232] year of of sell cycle, but like you also
+[2235] hinted in the blog post that you you're
+[2237] building like bare metal provisioning,
+[2238] right? Like you're doing Pixie services
+[2240] and and doing that sort of stuff. Like
+[2242] those are all things that are kind of
+[2244] solved problems if you look into the
+[2246] world, but never in a specific way where
+[2248] there surprises along the way that
+[2249] you're like, "Oh, you know what? This is
+[2251] going to take us two months of
+[2252] engineering time that we didn't plan on.
+[2255] Uh find some wood because like so far
+[2258] not so much. There's there's we
+[2260] up the specs on something and I think it
+[2263] cost us $45,000 for like we bought the
+[2265] wrong drives. Uh and then you know one
+[2267] of our engineers was you know guy who
+[2268] spec he's like oh my god I'm like you
+[2270] know this is a horrible like how are we
+[2271] gonna figure out and I was like I was
+[2272] like we just spent $4 million like the
+[2274] 45 grand is like just just leave it.
+[2276] It's fine. Um, so like stuff like that I
+[2278] I would say is like the main thing. Um,
+[2281] we've actually figured out um and and we
+[2283] ended up having to buy more of the right
+[2286] drives. Um, because uh the machines
+[2289] ended up working a little bit more
+[2290] efficiently um with some of the code we
+[2292] had some code that was like um I guess
+[2295] we like one of our dependencies um was
+[2297] was highly dependent on like file system
+[2299] write speeds. Um, and when you go from
+[2301] like cloud like EBS right speeds uh to
+[2304] like bare MVME MVME speeds, turns out
+[2307] you get like a thousandx improvement,
+[2309] right? So we're like, oh cool. Um, I
+[2311] guess we can pack even more of these
+[2314] things on this instance. So that'll be
+[2315] really really cool. I love laughing at
+[2316] every BBS like enhancement of like look
+[2319] how much throughut we have now. I'm like
+[2321] what? Like hold on a second. I was going
+[2323] to ask if anything worked out better
+[2325] than you thought it would because it's
+[2326] interesting. Yeah, I would say anything
+[2328] anything to do with storage. uh so far
+[2330] has worked out better. Um and like just
+[2332] I don't want to say like long-term
+[2334] storage because we're still like working
+[2335] on that and it's also like you know
+[2336] storage is hard. Um but mostly like uh
+[2338] just like actual like drive storage and
+[2340] and like local storage.
+[2343] Shifting gears a little bit here now.
+[2344] The the reason we originally I asked you
+[2346] to come on show is we talked about uh
+[2348] you built your own orchestrator for your
+[2350] applications for customers are running
+[2351] applications on top and and I I forget
+[2354] where I even heard where I saw that
+[2356] you're not using Kubernetes. You built
+[2357] something else. Can you describe what
+[2359] that is and why? Yeah. Um, so the reason
+[2361] we built uh the orchestrator, right? Um,
+[2364] and it's it follows a reasonably simple
+[2366] simple premise. Um, if you use cube and
+[2369] you had 150,000 pods or whatever that
+[2371] limit is that that you're going to that
+[2373] that cube is is available up to, um,
+[2376] you're going to have to write a
+[2378] multicluster orchestrator, right? So
+[2380] you're going to have to write an
+[2381] orchestrator for that orchestrator
+[2382] anyways, right? So we figured um since
+[2386] we wanted the higher order control and
+[2387] we didn't want to be like beholden to
+[2389] like uh the cube synchronization loop,
+[2391] we figured we would just like start from
+[2393] scratch and write our own orchestrator
+[2394] if we knew at some point we would just
+[2396] have to write a multicourse cluster
+[2398] orchestrator anyways, right? So that's
+[2400] the reason why we ended up going and and
+[2401] doing that. Um the original orchestrator
+[2405] um it was it's literally just like a go
+[2407] binary that runs on a bunch of these
+[2408] instances um and it like backs onto this
+[2410] massive like Reddus instance. Um, and
+[2412] that worked until it like wouldn't scale
+[2415] anymore. And so now we've built it on
+[2416] top of uh I believe Sila uh is is is the
+[2420] uh kind of like backing storage for all
+[2421] of this stuff now. Um
+[2423] and we're currently in the middle of
+[2425] transitioning between the like
+[2426] orchestrator v1 to the orchestrator v2
+[2429] um to like go and manage all the like
+[2431] bare metal and uh cloud instances. Uh
+[2433] but that's like the main reason we wrote
+[2435] it, right? Um, we want to like build a
+[2438] like want to build a really really quick
+[2440] like because we have to do failover,
+[2441] right? For instances like if they go and
+[2443] like disappear like that, right? And so
+[2444] like we can't actually wait for like you
+[2446] know uh like cube to essentially say oh
+[2449] like we have to replace all these
+[2450] instances and all that other stuff,
+[2451] right? Cuz that's going to mean downtime
+[2452] for users, right? Um we also want to be
+[2454] able to do like dynamic scaling and
+[2455] orchestration, right? So like as
+[2457] instances grow bigger, if you have a
+[2458] database instances, we should shift off
+[2461] everything off of those machines for you
+[2463] so that you don't actually have to like
+[2464] say, "Oh, okay, cool. It's going to go
+[2466] to 8 gigs and then what do I do now when
+[2468] I like want to move my database?" Like
+[2469] your database should be able to just
+[2470] expand linearly until it like runs into
+[2474] something else that we like have to live
+[2475] migrate across those boxes. And by
+[2478] building our own orchestrator, we just
+[2479] get like a higher order of control. Like
+[2480] we understand the run times. We've we've
+[2483] gone through like three different run
+[2484] times right now. like we went through
+[2486] like the like actual container d runtime
+[2488] podman uh now we're on to like cloud
+[2490] hypervisor um so like we now really
+[2493] understand like how to move these
+[2494] instances around really really well and
+[2496] I think like most companies don't really
+[2499] know or they kind of know but they don't
+[2501] they don't really know what their core
+[2503] businesses right and our core business
+[2506] if we are going to be a business that
+[2507] like manages containers is to manage
+[2509] containers right and so we should take
+[2511] that extremely extremely seriously right
+[2512] if we are using cube then what's our
+[2515] core differentiated advantage between
+[2517] another company that is just going to
+[2519] use Q, right? So, we figured that we
+[2521] would invest really really heavily in
+[2522] there. Um, and that's worked out well so
+[2524] far. A lot of what you said reminds me
+[2526] of our conversation with Jazz about Blue
+[2528] Sky architecture where they're like a
+[2530] bunch of PDS's are running on instances.
+[2533] They use NVME storage. Everyone's a SQL
+[2535] light and they can just pack a thousand
+[2536] thousands of them on a on a box because
+[2538] right speeds on NVMe are are really big
+[2541] or really fast. And I think they're
+[2542] using the same database in there
+[2544] somewhere if I remember correctly. Yeah,
+[2546] it's funny. We like we we would talked
+[2547] about it. I was like I was like, "Oh,
+[2548] isn't this thing great?" And he's like,
+[2549] "Yeah, they just made license changes."
+[2551] I was like, "Oh, how did I miss that?"
+[2552] Like, "God damn it." And he was like,
+[2554] "Don't worry, we've got a year to figure
+[2555] this out." I was like, "All right,
+[2556] fine." But also, it's interesting
+[2557] because they're doing just straight up
+[2559] like Docker Compose, right? It's like no
+[2561] no orchestration. It's like we just have
+[2562] a bunch of boxes. We know how to spin up
+[2564] a user basically for every every
+[2566] person's a database in a website. And
+[2568] and in your case and and that means
+[2570] they're a container, but they're not
+[2572] live migrating them. They're not moving
+[2573] the data. They have hot failovers for a
+[2575] lot of that stuff. Uh versus in your
+[2577] case where this is a customer's
+[2579] container, they hand it to you, you
+[2580] don't know what the code is, you don't
+[2582] know how it's going to run or what it's
+[2584] going to do. So you just have to isolate
+[2585] it as much as possible. And at that
+[2586] point, you're using cloud hypervisor,
+[2588] which does isolation at the CPU, right?
+[2591] Yep. Is there is there a notion of like
+[2594] mixed workload types if you want to go
+[2596] something like a web assembly route
+[2598] which has you know a different type of
+[2600] isolation and runtime or are you only
+[2602] ever going to do we do containers from
+[2605] customers in this way? I think our our
+[2607] kind of view as of right now is that
+[2609] like containers are a really really good
+[2610] primitive for like I have the stuff that
+[2612] I want to run in this place. Um web
+[2614] assembly is like still kind of like
+[2615] materializing like you can you can take
+[2617] it and stuff like that but I think it's
+[2618] a different it's almost a different
+[2620] orchestration problem. uh for like web
+[2622] assembly than than it is for containers.
+[2624] Like maybe not entirely, but at least at
+[2626] like in some facets. So at least for
+[2628] now, we're going to like focus on just
+[2629] containers and and figure out how we can
+[2631] like dynamically expand and collapse
+[2633] those like down really really really
+[2635] quickly with zero downtime, right? Like
+[2637] this is also the point of like writing
+[2638] your own proxy. Like if you write a
+[2640] bunch of these things, then you can
+[2640] actually integrate them kind of all
+[2642] together, right? And so you can kind of
+[2643] use the like TCP as like a one big
+[2646] buffer if like something's failing over
+[2647] and you just like shove stuff through
+[2649] your network and then you just like
+[2650] drain it into the new instance. Um you
+[2652] can do that because you have control
+[2653] over your network, your compute and your
+[2654] storage, right? Um and so like diving
+[2657] into all of that means that like you can
+[2658] make those things happen that you
+[2660] wouldn't be able to otherwise if you
+[2661] didn't have control over that
+[2663] stack. It sounds like a lot of what
+[2665] you're doing is to some degree
+[2668] recreating Lambda, right? Right? It's
+[2669] like you you want to be able to collapse
+[2670] something like if it's if no customer is
+[2672] using it, we want it to cost us zero uh
+[2676] on on system resources, right? We're
+[2678] going to checkpoint to disk. We're going
+[2679] to say just, you know, I we want that
+[2681] RAM back for someone else right now, and
+[2683] we're going to assume that not everyone
+[2684] on this box is using 100% of their
+[2686] allocation all the time. Yep.
+[2690] How has that impacted what technologies
+[2693] you use or decide to use next? Right.
+[2696] like you said mentioned you wrote your
+[2697] own hypervisor uh but you're taking
+[2700] packages of containers and saying we're
+[2701] always going to run a container. Yeah.
+[2703] Um so I think for us like mostly the
+[2705] technology is like whatever almost like
+[2707] gets the job done if that makes sense.
+[2709] Uh so we like we've used a lot of ebpf
+[2711] on our our networking layer because
+[2713] that's what's kind of got the job done
+[2714] right. Um so it's kind of been a a more
+[2717] kind of holistic team decision to say
+[2719] like which things should we adopt in
+[2720] general like where are we going to get
+[2721] outsiz returns? uh you know sure we
+[2724] could bring Rust into our stack but only
+[2725] if only one person knows how to like go
+[2727] in and do that like you're not going to
+[2728] get a ton of benefit right so like we
+[2730] made a few bets on technologies right
+[2732] like ebpf uh wire guard um those are two
+[2736] big ones that I think have been really
+[2737] really good so far um and so that's kind
+[2739] of more of what informs it is like what
+[2741] experience do we want to drive like
+[2743] deliver to the customer how can we get
+[2744] something that's like close enough to
+[2746] that experience that we can go in and
+[2747] sell and then like drive demand through
+[2749] and then how do we push to from close
+[2751] enough to That's the experience, you
+[2754] know.
+[2755] I know that sounds like very handwavy in
+[2757] terms I'm actually curious. I I learned
+[2759] something this last week that
+[2760] WireGuard's encryption routine is single
+[2763] threaded. And so when you're actually
+[2765] encapsulating packets and you're you're
+[2766] encrypting them, that is using one core
+[2769] of your box uh to do that encryption.
+[2772] And so you your throughput is going to
+[2773] be limited by as fast as a single core
+[2776] can be. And so you actually want a
+[2777] faster CPU, not more cores. Uh which is
+[2780] I I have seen it in multiple places. I
+[2782] actually was was reading other people
+[2783] people that had a similar problem where
+[2784] their network throughputs was
+[2787] drastically reduced. They had, you know,
+[2788] 100 gigabit nicks, but they couldn't get
+[2790] more than like 10 gigabit throughput on
+[2792] wire guard. Have you run into any of
+[2794] those edge cases with
+[2796] I don't know if we have just yet. Um, we
+[2799] probably will. Um, we're very kind of
+[2801] fly by wire in terms of like thing we
+[2803] run into uh versus thing we resolve. So
+[2806] the moment we run into it, we're
+[2807] basically like okay like how do we solve
+[2808] this next problem, right? like we'll run
+[2810] into like uh registry scale issues,
+[2812] right? And so now we have to build our
+[2813] own like actual internal custom
+[2815] registry, right? Because like it's just
+[2816] not fast enough. Um so container
+[2818] registry. Yes, container registry. Um so
+[2821] that's that's kind of how we've been
+[2822] operating there. Um and yeah, that's I
+[2826] haven't run into that one actually just
+[2828] yet. Maybe somebody on our team did and
+[2829] they they've kind of like resolved it.
+[2831] Uh but I don't think so because then
+[2832] you'd have to fork acquire guard, right?
+[2834] Or Yeah. Or commit upstream or
+[2836] something, right? Yeah. stuff. Uh, I
+[2838] probably should have done this earlier.
+[2839] Can you describe what it's like if I'm
+[2841] running an application on railway? Like
+[2843] what if I make a call to that, what does
+[2845] it go through and what does it run on?
+[2847] Like go go go from outside in and then
+[2849] from top to bottom. Ah, yes. The uh what
+[2851] happens when you type cat into your
+[2852] browser uh of of the railway networking
+[2854] stack. Yeah. Um, this is funny because
+[2857] uh I'm probably I'm probably the worst
+[2859] networking engineer on our team. Uh, and
+[2861] I'm I'm not ashamed to like admit that,
+[2862] but I will try. Um, so what happens here
+[2865] is that we have a bunch of edge network
+[2867] uh like kind of edge nodes. Um, so we
+[2870] broadcast an IP on on GCP and now we
+[2872] broadcast uh we just bought the IP. It's
+[2874] like 6633 2211. Um, so we now broadcast
+[2879] an anycast edge. Those vanity IPs are
+[2882] going quick. Yeah, I know, right? Um, so
+[2884] we broadcast like anycast on on the edge
+[2887] there. Um, and then whenever you make a
+[2889] connection to it, that will uh land to
+[2891] an L4 load balancer uh which I believe
+[2894] goes and uh runs either some ebpf code
+[2897] if it's ours or on the GCP uh like L4 uh
+[2901] edge that they've got. Um and then that
+[2903] backs onto an L7 uh proxy that we've
+[2906] got. Um so we've got both a TCP proxy as
+[2908] well as the L7 HTTP proxy. Uh we will go
+[2912] and terminate TLS at the edge. we'll go
+[2914] and dump you onto the wire guard network
+[2916] and then there's a wire guard uh like
+[2918] node for each node I guess on on the
+[2921] network. Um that's that's paired
+[2922] together. Um we go and do some ebpf
+[2925] transform. Uh we've got like essentially
+[2927] like a IPv6 uh uh like cider block uh or
+[2932] that we've got. Um and then we do a
+[2934] transform based on um it's like host to
+[2937] container or container to host depending
+[2939] on like whether it's going in or out.
+[2940] Um, and that'll tell us how to like
+[2942] route the packets to like the relevant
+[2944] uh instance, right? Those will go to the
+[2945] relevant instance. It'll go inside of
+[2947] your your container. Uh, your action
+[2949] will complete and then it'll get shot
+[2951] back out. Uh, do the reverse. Uh,
+[2953] transformer ebpf. Um, shout out to
+[2955] Charles who's written a blog post. We
+[2957] can link it at some point here on how
+[2958] this works. Um, and then it'll get shot
+[2960] back all through all through that pip
+[2962] out to the internet. So everything
+[2964] internal from your HTTP layer 7 proxy is
+[2968] IPv6. Uh, yeah. So like everything past
+[2970] the like the the edge network is it's
+[2972] all IPv6. Yeah, that's that's a good
+[2974] move for scaling for sure. Yeah. Uh and
+[2976] then what's then what's below that like
+[2978] my my code got executed somewhere in a
+[2980] container. I ran Engine X and and that
+[2983] is running in a container on top of a
+[2985] cloud hypervisor on top of Auntu on top
+[2988] of Metal or pretty much.
+[2991] Cool. Like a super simple you should
+[2994] build you should build one.
+[2997] Don't tell him that. He will really go
+[2998] build one. You don't like Did you see
+[3001] what happened when Blue Sky? No, I
+[3004] didn't. I didn't. What happened? He
+[3006] decided Yeah, he decided I'll self post
+[3009] anything if I think it's iPhone weekend.
+[3011] Then I couldn't like reply to him for
+[3014] two months. I was running my Oh, cuz you
+[3015] ran your own blue sky. Then you back up
+[3017] all your traffic. Yeah, I got a PDF.
+[3019] It's fine. It's fine. Happens, you know.
+[3022] Um yeah, like um all the things together
+[3025] like you can you can build them, right?
+[3027] And but as we know like things that
+[3029] scale and like you know edge cases and
+[3031] stuff like that that's that's a lot of
+[3032] the the battle in general right so which
+[3034] the funny thing the interesting thing to
+[3036] me right now is the fact that like that
+[3038] all that network stack is pretty simple
+[3040] and yet it was still difficult to do on
+[3043] top of like you could do that with EC2
+[3044] instances right and a lot of people do
+[3046] that essentially with EC2 instance they
+[3048] have their own proxy they're like oh
+[3049] yeah we just run you know well I guess
+[3051] you can't nest the uh hypervisor on AWS
+[3055] but you could on GCP and you can say
+[3056] like oh I just so much this stuff, but
+[3059] you're you're mentioning that like
+[3060] performance of the hardware is so much
+[3061] better. Like just the the power you get
+[3064] when you try and jam 5,000 instances on
+[3067] a single box so you can get the density
+[3069] that you want to like get that like
+[3071] lambda-esque experiences where you can
+[3072] like move everything around very very
+[3074] quickly. That's where you end up with
+[3076] problems. Like at this point like I
+[3078] think our our next bottle act is like
+[3079] system D. So we like have to go to like
+[3081] Leonard Pottering and be like, "Hey, can
+[3082] you make these changes uh to like go and
+[3084] make this like part faster?" Um, that's
+[3086] a joke, but it probably won't be a joke.
+[3088] It's I mean, like the company I'm at, we
+[3090] don't have systemd. Like we took systemd
+[3091] out. We're just like, no, like that's
+[3093] not it's not happening. So, totally
+[3095] understand. You start seeing more and
+[3097] more uh like these different um Linux
+[3101] distributions actually taking pieces of
+[3104] the dish out. And it's just interesting
+[3106] to see how that's going to continue to
+[3108] like move. It's super It's super
+[3109] interesting. I feel like there's a whole
+[3110] kind of like thing happening with Linux,
+[3112] right, where some people are like really
+[3114] really pro systemd where it's just like,
+[3116] okay, this is the new kind of which like
+[3118] is on brand cuz I feel like people that
+[3119] run Linux like to just they wanted all
+[3123] the buttons and all. Yeah. So it's like
+[3127] I mean it's almost like the Linux
+[3129] religion. Everybody's got their own
+[3132] denomination. No, it's just wild. Like
+[3134] it's like on brand like we saw it
+[3137] coming. Yep.
+[3140] I I was going to go so many different
+[3142] directions with them. I'm not going to
+[3143] uh what
+[3145] which is like you know it's bad because
+[3147] the things he normally says are very
+[3149] spicy. So when he doesn't say like I
+[3151] kind of want you to tell me but I'm
+[3153] scared like I really want boring like I
+[3156] I really like systemd for a general
+[3158] purpose Linux system. Like I run Linux
+[3160] on my desktop. I want systemd here.
+[3162] System D is great. I think it's
+[3163] fantastic. It it lets me do all the
+[3165] things easier than the old in it systems
+[3168] could and and I did not like manually
+[3171] numbering and writing bash scripts to
+[3174] give me give me the anible hammer and
+[3175] the systemd hammer. I'm a very happy
+[3177] man, you know, like I can do a lot with
+[3179] that. Yeah. But then in the in the
+[3181] single use case purpose, I don't want a
+[3184] general purpose thing because it has all
+[3185] the knobs, right? Like that's the point
+[3186] of like ripping out Kubernetes, right?
+[3188] Like Kubernetes is a very general
+[3189] purpose. You can run anything you want.
+[3190] The most general purpose, right? like
+[3192] whatever you want to run it will run the
+[3194] thing you know. Yeah. But it's not going
+[3195] to be good for a single purpose like hey
+[3197] we just we only need these four bits we
+[3199] don't want the rest of it like we're
+[3200] just going to write those pieces
+[3201] ourselves and and that exactly like as
+[3203] you go lower in the stack you're like oh
+[3205] you know I don't want the general
+[3206] purpose thing here let me get a single
+[3208] purpose thing and you move up the stack
+[3209] and I you single purpose thing on top
+[3211] too. uh what do you think is is next
+[3214] like what are you what are you going
+[3215] towards or what's you mentioned you have
+[3217] like maybe a systemd bottleneck but like
+[3218] what's the next architectural thing is
+[3220] that a storage benefit is that a
+[3222] networking benefit is that I don't think
+[3223] you can get more compute out of uh you
+[3226] know I think it's mostly going to be
+[3227] storage I think it's it's the storage
+[3229] will be the interesting stuff right uh
+[3231] because right now we're running like
+[3233] some reasonably chunky like seph
+[3234] clusters um right as to to manage most
+[3237] of our storage right um and I think at
+[3238] some point like we will probably want to
+[3240] go and build our own storage. I don't
+[3243] know why, but it's it's like where my
+[3245] brain is going next in terms of like I
+[3247] think this will be the thing, right? Um
+[3248] and so probably networking bottleneck
+[3251] wise, uh we'll probably run into a few
+[3253] like random things. We'll probably even
+[3254] run into that um wire guard, um you
+[3257] know, single threadedness thing you're
+[3259] talking about. Um but in terms of like
+[3262] actual like really really strong meaty
+[3263] problems, I would say that and then just
+[3265] continued like problems on the
+[3267] orchestration engine, right? uh in terms
+[3268] of like building basically a real-time
+[3270] operating system, right? Yeah. And you
+[3272] mentioned you're still migrating from
+[3274] from the old to the new currently. So
+[3276] you're still going through that. What
+[3278] what are your plans for like scaling up?
+[3280] I mean again people also say like the
+[3282] cloud is great because you can just call
+[3283] an API and get more instances. Are you
+[3285] const I know you're opening more and
+[3287] more coloss or more locations. Are you
+[3290] on this like continual train of like
+[3291] yeah we just every quarter we have to
+[3293] order more hardware or Yeah. So it's
+[3294] it's almost like a continuum right. So,
+[3296] like if you really want to burst up,
+[3297] right? Like we're we're going through
+[3298] kind of like a reasonably solid uh
+[3300] traffic spurt right now. Um like we're I
+[3302] think we two and a halfxed over the last
+[3304] two weeks are just like uh signups. So
+[3307] like I think we're going to pull in like
+[3309] 100,000 people this month or something
+[3311] like that. It's kind of nuts. Um but
+[3313] like if we get into these situations
+[3316] where we have to scale rapidly, the nice
+[3317] thing is like we can still take
+[3318] advantage of the cloud like primitives,
+[3321] right? Like they still they still exist,
+[3322] right? Um, so the the way that we kind
+[3325] of want to operate is we do want to kind
+[3327] of like have like one maybe two etc kind
+[3329] of cloud partners that we can kind of
+[3330] like almost like burst into um and then
+[3333] order more hardware to kind of like get
+[3335] those like it's almost like committed
+[3336] use discounts but like with your own
+[3338] hardware we're just like oh we have that
+[3339] much capacity and so how do we move that
+[3342] that over right so that'll be kind of
+[3344] the the almost like capacity planning
+[3346] that'll go into it. Um, but yeah.
+[3350] Do you feel like your capacity planning
+[3352] so far has been successful? Cuz it's
+[3354] such a
+[3355] hard kind of equation to figure out. I'm
+[3359] so glad my desk is wood. I'm just keep
+[3360] knocking it. Um, yeah, I think so far
+[3363] our capacity planning has been pretty
+[3364] good. Um, the way you
+[3367] like Wait. Yeah. Um, so I think it's
+[3370] been solid, right? Um and and we also um
+[3372] we now have a relationship directly with
+[3374] super micro so we can order stuff uh
+[3376] directly from them which is great. Uh so
+[3378] that's solid. Um and we've got a lot of
+[3380] space in both our colo from power
+[3382] perspective as well as racks etc. So
+[3384] it's it's mostly about like get thing to
+[3387] colo put the pizza box in rack um you
+[3391] know right and we've we've built our own
+[3392] kind of
+[3394] um like provisioning and bootstrapping
+[3396] uh system for a lot of these things. So
+[3398] at this point it's basically like
+[3399] turnkey in terms of like getting these
+[3400] machines online. So um that's quite
+[3403] nice.
+[3405] I I I love the difference here with
+[3408] we've talked to blue sky scaled
+[3410] incredibly last year on prem. You're
+[3413] you're kind of like a constant hey we're
+[3415] we're we have some predictions. We know
+[3417] where it's going. Obviously when this
+[3419] episode comes out everyone sign up for
+[3420] railway and just blow those numbers out
+[3422] of the water and you're just like oh
+[3423] great now now now we're in trouble. Oh
+[3425] no. But then we also look at like other
+[3427] people like uh hey.com, right? They're
+[3429] like, "Oh, you know, we're moving all on
+[3430] prem, but like they're also like their
+[3432] their growth isn't astronomical. There's
+[3434] it's not they're like, "Yeah, no, we
+[3435] just it's an easy prediction. We run an
+[3437] email service. Uh we don't have like
+[3440] hundreds of thousands of people coming
+[3442] all of the time that we need to
+[3444] constantly scale up." They're like,
+[3444] "Yeah, no, we just bought a bunch of
+[3446] hardware once and it probably last us
+[3447] for running a big MySQL database right
+[3450] here and it's going to stay there."
+[3451] Yeah. and and that and like in in all
+[3453] those aspects of like one is just like a
+[3455] steady thing, one is like a continual
+[3456] growth and the other one was like, "Oh
+[3457] my gosh, we're we're growing way too
+[3458] fast." And in every case, it's
+[3460] interesting just seeing
+[3462] how doing a little math up up front,
+[3464] doing a little more planning up front
+[3465] and making sure that you understand like
+[3467] where the constraints are and and where
+[3470] like where you're going to have to scale
+[3471] up. Like some people are like, "I don't
+[3472] know anything about my business, so
+[3474] we're just going to do everything in
+[3476] something that's super flexible and just
+[3477] pay for it as we go and maybe we'll
+[3479] figure out later." and then they they
+[3481] kind of get stuck and it's all
+[3482] understanding the constraints. So it's
+[3484] the constraints of the cloud, it's the
+[3485] constraints of hardware, it's
+[3487] constraints of growth, you know what I
+[3489] mean? Yeah. Yeah. So many different ways
+[3491] to skin it. Um I was really really
+[3493] surprised with the the like fact that I
+[3495] didn't realize that Blue Sky was running
+[3497] their own hardware. Um but then when I
+[3498] talked to Jazz, I was like, "Oh, this
+[3499] makes a ton of sense, right?" Because it
+[3500] is like just so much networking traffic,
+[3503] right? Like especially if you're doing
+[3504] video and stuff like that, right? It's
+[3505] like obviously Netflix runs their own
+[3507] hardware for these reasons. Um, so like
+[3510] it makes sense, right? But yeah, it is
+[3512] it is just like it's benefits and
+[3513] trade-offs, right? Um, so you just got
+[3515] to and and knowing which parts, right?
+[3516] Cuz like this guy runs a bunch of pieces
+[3518] in the cloud. Netflix is a huge AWS.
+[3520] Yeah, I was going to say Netflix that
+[3522] that's what I'm saying like people are
+[3523] they're so everything was in the cloud
+[3526] and now they're like everything on prem
+[3527] and neither is right like the most and
+[3530] that's where I keep saying that the most
+[3532] the best thing about the cloud is the
+[3534] marketing department, right? Like they
+[3535] will tell you everyone's in the cloud
+[3536] because everyone has a piece of
+[3537] something. Have you ever heard any
+[3539] business like not try to sell more? I
+[3543] think it's just JP Morgan. The only
+[3544] example I hear is all of JP Morgan's
+[3546] like old data centers that they've got.
+[3547] They're just like that's the example.
+[3549] Who just moved uh Geico just moved on
+[3551] prem. Like they just like a
+[3553] multi-million, you know, deal that
+[3555] they're like, "Yeah, no, we're going all
+[3556] on prem and they moved to their own data
+[3557] centers." But a lot of these places have
+[3559] always had one foot in the cloud and one
+[3561] foot out, you know. And most the most
+[3563] successful of like tech companies are
+[3566] always the ones that know what to use in
+[3569] cloud and know what to use on thread.
+[3571] Like some of the stuff that Netflix uses
+[3572] is very interesting and just the way
+[3574] like I mean even Disney Plus the way
+[3577] that they use Dynamob for bookmarks like
+[3580] I would have never pulled that out of my
+[3582] like you know like it's just the service
+[3584] the service that went down at launch
+[3585] time. You mean? Yeah. But still,
+[3587] nonetheless, like, you know what I mean?
+[3589] Like, it's just the I was there. That
+[3591] was a That was a fun day. The different
+[3593] ways that you can do the same thing, you
+[3598] know? Yeah. It's just crazy. Like I
+[3600] Netflix is not what I would have picked
+[3601] for using that many cloud services, but
+[3603] they I mean, they have a huge their
+[3605] their data distribution is all their own
+[3608] hardware that they put out. That's what
+[3609] I'm saying. And they also are one of the
+[3612] most fire technical like blog writers
+[3614] ever. like they do amazing
+[3617] Java is actually Netflix is really good
+[3621] at hiring people that are good at what
+[3623] they do and making them write blog posts
+[3626] more coming a shitload of cash but they
+[3628] have to but but they work so well on
+[3632] figuring out like just the way that they
+[3634] made the platform engineering team and
+[3636] like they do a really good job at hiring
+[3639] really smart people and then letting
+[3641] them do their job well and empowering
+[3643] them to do that job you One of one of
+[3645] our favorite books internally is the uh
+[3647] No Rules Rules Netflix book. It's just
+[3649] it's it's excellent. It's just like I
+[3651] think everybody should read that book,
+[3652] right? Um because it really is just kind
+[3653] of like a master class in terms of like
+[3655] treat people like adults, give them a
+[3657] lot of autonomy. Um hold them
+[3658] accountable if they mess up, but like
+[3660] make sure that there's an environment
+[3661] where you can make those mistakes,
+[3663] right? Because that's that's where
+[3664] you're going to get most of your
+[3664] returns, right? Like you know, again,
+[3666] example guy who built our data centers,
+[3668] right? It's like yeah, sure you mess up
+[3670] and you you blow $50,000 worth of
+[3672] drives, right? It's like in comparison
+[3673] to like where it goes, it's like it's
+[3675] inconsequential, right? And and and you
+[3677] should do that and that's excellent,
+[3678] right? And you should talk about how
+[3679] excellent of a job, you know, they did
+[3682] on on that, you know? So,
+[3684] yeah, for sure. Jake, thank you so much
+[3687] for coming on the show. Uh, where should
+[3688] people find you online? Uh, you can find
+[3690] me on uh Twitter, I guess it's called X
+[3693] now. Um, I'm just Jake, so J and then
+[3697] Jake.
+[3699] And uh we again we'll link out to the
+[3702] blog posts in the show notes so people
+[3704] can check that out. I do think that
+[3705] Railway's been doing some good blog
+[3707] posts just explaining kind of your your
+[3709] growth over time and what you've been
+[3710] doing and kind of those struggles that
+[3712] you've been having which has been a lot
+[3713] of fun to follow along with because uh
+[3715] it's it's fun hearing from from startups
+[3718] doing stuff and just saying like hey
+[3719] we're doing something different right
+[3721] it's not here's how we manage Terraform
+[3723] with Terror Grunt in a different way
+[3725] than you thought we should right it's
+[3726] like no like we I the fact that you
+[3728] called out that like Excel is the best
+[3730] programming or development tool that in
+[3733] existence is like yep this is exactly
+[3735] how you should start. Yeah. Funny cuz
+[3737] like it's just it's like it just works
+[3739] so well. You're just like was Excel
+[3741] designed for like racks, right? Or were
+[3743] racks designed for Excel? Like which
+[3744] came first? Uh yeah. Um you got to put
+[3747] that on a t-shirt somewhere. Like it
+[3750] needs Excel was my first IDE. So I mean
+[3752] it is it is long times. It does
+[3754] everything. Yeah. Did you just say I you
+[3756] just hurt my soul, but Oh, it was 100%.
+[3758] Oh my god. My
+[3761] Thank you everyone for listening and we
+[3763] will talk to you again soon. Thank you
+[3764] so much. This is
+[3767] [Music]
+[3781] great. Thank you for listening to this
+[3783] episode of Fork Around and Find Out. If
+[3786] you like this show, please consider
+[3787] sharing it with a friend, a co-orker, a
+[3789] family member, or even an enemy.
+[3791] However, we get the word out about this
+[3793] show helps it to become sustainable for
+[3795] the long term. If you want to sponsor
+[3797] this show, please go to
+[3800] fafo.fm/sponsor and reach out to us
+[3802] there about what you're interested in
+[3804] sponsoring and how we can help. We hope
+[3807] your systems stay available and your
+[3808] pages stay quiet. We'll see you again
+[3811] next time.
+[3815] [Music]

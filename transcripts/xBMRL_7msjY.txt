@@ -1,0 +1,2215 @@
+[0] we did not raise 1.5 billion that's
+[2] Revenue that's actually about 30% of the
+[4] revenue of open AI your job is not to
+[6] follow the wave your job is to get
+[8] positioned for the wave you can almost
+[10] say we're one of the best things that
+[11] ever happened to Nvidia because they can
+[13] make every single GPU that they were
+[15] going to make and they can sell it for
+[17] training high margin gets advertised
+[20] across deployment you know we'll take
+[21] the low margin high volume inference
+[23] business off their hands and they won't
+[24] have to sell either margin we are
+[26] growing faster than exponential and when
+[29] you are growing FAS faster than
+[30] exponential there is no amount of profit
+[32] that you can make that matters what
+[34] matters is getting a toe hold in the
+[37] market and becoming relevant ready to
+[39] [Music]
+[50] go Jonathan thank you so much for
+[52] agreeing to do this imparis you look
+[54] fantastic by the way I feel so
+[56] underdressed but you look great thank
+[58] you I I could take the tie off if you
+[59] want I'll never be able to tie it again
+[61] I don't know how to tie a TI No
+[62] literally my chief of staff has to tie
+[64] it for me it's and it's like a struggle
+[66] cuz like he's putting it on himself he's
+[68] tying it I I literally only bought this
+[71] suit recently well I mean you look
+[72] fantastic I don't I think have a suit so
+[74] you one up on me I want to split the
+[76] show into two parts there I want to talk
+[78] about the landscape where we're at and
+[79] then I want to dive specifically into
+[81] Gro where you're at you've announced a
+[82] massive new deal that I think everyone's
+[85] slightly misunderstanding what we're
+[86] just talking about um I just want to
+[88] start on where we're at in terms of like
+[90] scaling laws everyone says we are at the
+[92] limits of scaling laws and then there
+[94] seems to be exponential Innovation
+[96] happening with the likes of deep seek
+[98] and others where are we at in terms of
+[100] the limits of scaling laws so scaling
+[102] laws is a paper that was published by
+[104] open Ai and what it does is it
+[106] effectively says the more parameters
+[108] your model has basically the better it
+[110] can absorb information so you'll you'll
+[113] see these curves that they draw and
+[114] they're they're amazing you should show
+[116] it if you can but effectively um you
+[119] have these sort of ASM totic drop offs
+[122] where you keep getting better and better
+[125] but you get a logarithmic Improvement
+[127] when you put a linear number of tokens
+[129] in this is why you see people doing 15 M
+[132] trillion tokens of training and whatnot
+[134] but they're misunderstood because um the
+[137] assumption is that all of the all of the
+[140] data is the same quality so you have a
+[143] kid now right So eventually you're going
+[145] to be training your kid and you're going
+[147] to say and play along with me here
+[149] what's 1 + 1 two what's 2 * 3 six what's
+[153] the second derivative of the square of
+[155] the hyperbolic
+[157] tangent yeah yeah good question but but
+[160] that's how we train these models we give
+[162] them really simple problems to solve and
+[165] then we give them these really hard ones
+[166] we we don't really train them up we
+[168] don't do it smart so what some people do
+[171] is they will train on the drgs of the
+[174] internet and then they'll save some high
+[176] quality data for the end to make them
+[178] better but what you can do and this is
+[180] where I think everyone's getting
+[181] confused is it's sort of like with Alpha
+[185] go zero where it generated its own data
+[188] and trained you could have an llm
+[190] generate synthetic data and when it
+[191] generates the synthetic data the data is
+[194] better you then train on that synthetic
+[196] data so what you do is is you you train
+[199] why is synthetic data better than real
+[201] data because the model is smarter so you
+[205] know Reddit is great but not necessarily
+[209] high quality as talking to someone with
+[211] a PhD in a topic sure and so just like
+[215] with um more expert people who are more
+[217] knowledgeable and more capable if you
+[219] have a better model it generates better
+[221] data so you train the model it gets
+[223] better you you produce better data and
+[225] you produce a a range of data here and
+[227] you get rid of all the parts that are
+[228] wrong so now it's the best part so it's
+[230] a little better than the model is
+[231] because you're pruning it because you
+[233] get to do this offline right and then
+[234] you train the model and the model comes
+[236] up here and then you do this again and
+[237] then you keep the better data you train
+[239] it again you just keep moving up so when
+[242] you do that the actual scaling laws
+[244] don't look like these astics they
+[246] actually but they has to be a ceiling on
+[248] efficiency no does there so there's a
+[251] mathematical limit so if you if you
+[255] study computer science you probably
+[256] heard of something called bigo
+[258] complexity bigo complexity is um you
+[262] know if I I'm solving a problem and I
+[267] look at how I solve it I might need to
+[269] take more steps if I solve it with one
+[271] algorithm versus another so for example
+[273] quick sort versus bubble sort quick sort
+[276] I need n log n steps bubble sort I need
+[278] n squ what's the difference if I'm
+[281] sorting 1,000 numbers n log n that's
+[284] 10,000 steps but with um n SAR that's a
+[288] million steps because it's either 10 * a
+[290] TH or th time a th000 one of the reasons
+[293] that these llms struggle to multiply
+[296] large numbers is because um multiply is
+[300] not linear these llms can do anything
+[302] linear without you know needing to think
+[306] but just like on a piece of paper how
+[307] you need to write out all those
+[308] intermediate steps these llms need that
+[311] intermediate space in in order in in
+[314] those steps in order to compute these
+[316] things it's a mathematical requirement
+[319] there's nothing you cannot train a model
+[321] enough so that it'll see any arbitrarily
+[323] large number just be able to multiply it
+[325] but you can choose bigger and bigger
+[328] groupings of numbers for to memorize in
+[331] which casee it can do it in fewer steps
+[333] and effectively as you are training the
+[336] model on more and more data it's seeing
+[338] more and more examples so now it just
+[341] has the answer for more specific
+[343] situations so it doesn't need to do as
+[345] much reasoning but it still needs to do
+[347] reasoning for some of these problems so
+[349] what does that mean for the next step in
+[352] terms of what happens now if we have no
+[354] efficien like if we have no efficiency
+[356] ceiling what does that actually mean you
+[358] need both so the the the training of the
+[360] model makes it more intuitive it means
+[363] that it can sort of just come up with
+[364] the answer like that more stream of
+[366] Consciousness the reasoning part is
+[368] different the reasoning is the algorithm
+[370] on top right the the Big O complexity
+[372] portion so it's system one system two
+[374] thinking or thinking fast thinking slow
+[376] like Daniel Conan's book and so when you
+[380] pair them together when you make it more
+[382] intuitive you know you get you get
+[384] better this way right but when you start
+[386] adding in the system 2 portion
+[390] you start to get this right you you hear
+[394] the volume is very little but when you
+[395] do this and so you get this um
+[397] polylinear is the term but you could
+[399] think of it as geometrically increasing
+[401] Improvement in the model when you
+[402] combine it with that improved training
+[405] but also the improve what they call test
+[407] time Compu or runtime compute totally
+[409] get that so just so I understand so when
+[411] we think about bottlenecks if we have
+[413] synthetic dat that powers of training it
+[416] gets more intuitive it get it gets to
+[418] the answer more quickly sort of like a
+[419] grand master in chess just seeing the
+[421] Right Moves sure but synthetic data is
+[423] not constrained in terms of its supply
+[426] side if we think if we think about the
+[428] other bottl legs there is Hardware
+[431] there's Energy Efficiency there's
+[433] algorithmic limits what is the but but
+[436] if I'm telling if if your job is to get
+[438] better at multiplying numbers and I tell
+[441] you that I want you to be able to do it
+[442] with fewer steps more
+[443] intuitively for you to be able to
+[446] multiply three-digit numbers versus
+[448] two-digit you need 10x the data and you
+[451] need 10x the examples right and so as
+[454] you get better on the intuitive part you
+[456] need more examples to train on makes
+[458] sense totally and so what is the bottl
+[461] net then is it the hardware quality is
+[464] it compute is it algorithms because it's
+[467] not data it is the compute it is the
+[470] data it is the algorithms it's all three
+[471] of them but so people misunderstand the
+[475] concept of a bottleneck compute has been
+[477] more of a a less of a Bott neck and more
+[480] of a a sort of a you know soft neck or
+[483] something right where when you provide
+[485] even more compute you can sort of
+[487] overpower the lack of data the lack of
+[489] improvement in algorithms so it's not a
+[492] hard bottleneck it's a soft bottleneck
+[494] but ideally you would improve all three
+[497] you would be getting better data you
+[499] would be getting better algorithms and
+[502] the algorithm improvements are going to
+[504] be there the the data improvements are
+[506] going to be there but compute has always
+[509] been the easiest lever because it's so
+[511] fungible if I just give you more compute
+[513] it works better has deep seat not
+[515] showing you that actually we don't need
+[517] the compute and you can do more with
+[518] less not exactly there was an
+[520] algorithmic improvement on that and the
+[522] algorithmic Improvement as I explained
+[524] you know is this seemingly silly thing
+[527] where they just wrote the answer in a
+[529] box and then they knew what to look for
+[531] rather than having to have a human being
+[532] check it or something like that right it
+[534] was very simple um but that was an
+[536] algorithmic improvement and it made it
+[537] easier to generate the data That Was
+[539] Then trained on can I ask I think
+[541] there's misconceptions around compute
+[544] data uh especially kind of synthe
+[547] synthetic data as you said there
+[548] algorithms when you think about the
+[550] biggest misconceptions that people have
+[552] around Ai and specifically kind of
+[554] inference what do you think they are
+[556] when we started the first misconception
+[559] which people don't hold anymore is that
+[561] training was more expensive than
+[563] inference um at at Google anytime we
+[566] would train a new model we would end up
+[568] using 10 to 20 times as much compute on
+[571] the inference as the training so we
+[573] always ended up inference was always the
+[576] the critical infrastructure piece that
+[578] we needed um but then after getting you
+[583] know past that now everyone understands
+[585] inference is important um I think one of
+[588] the do you think they fully do because
+[590] when you look at nvidia's stock price
+[592] post deepsea it was down 15% if you
+[595] understood the value of inference
+[597] shouldn't be down 15% and jeans's
+[599] Paradox and all that and yeah I I don't
+[602] agree that Nvidia stock should have gone
+[603] down for that I think that was a a misum
+[606] understanding on most people's part but
+[608] it also shows I think that shows more
+[610] like everyone keeps saying Nvidia stock
+[612] can't possibly go higher right and they
+[615] were looking for an excuse for oh now
+[617] that's it that's why we were wrong and
+[619] we need to sell now but that has nothing
+[622] to do with the that that's just a sort
+[624] of popularity contest side of the market
+[626] that had nothing to do with the weighing
+[627] machine of the market so sh found is
+[629] building stage should they build with
+[630] the assumption that scaling laws will
+[633] continue should they build with what we
+[634] have today how do you advise them on
+[636] that I would advise you to build based
+[640] on things getting better but I would
+[644] also focus a little more on the the sort
+[646] of big Quantum steps so the analogy that
+[651] I like is if you look at the information
+[653] age we went through we had the printing
+[656] press we had the telephone we had the
+[658] telegram we had the um internet and we
+[661] had smartphones right and if you had
+[664] built Uber back when we had um uh
+[668] internet it wouldn't have worked because
+[670] you'd book a ride you'd go somewhere how
+[672] do you get home exactly right and uh
+[676] we're in the same sort of space now so
+[679] we don't the models hallucinate so it
+[682] would be hard to build a medical
+[683] diagnosis company it would be hard to
+[685] build a legal company right however if
+[688] you were doing that and the algorithmic
+[691] enhancements happen that get the
+[693] hallucination rate down you were
+[695] perfectly positioned just like grock we
+[696] were around for seven years before we
+[698] had product Market fit right we were
+[700] around we our bet was scaled inference
+[703] that inference was going to be the
+[704] bottleneck that we were going to need to
+[705] run really big heavy models like
+[708] everyone was assuming you would have a
+[709] single pcie card running inference
+[711] because training was the complicated
+[712] part right the the reality was we made
+[715] the right bet ahead of time and then we
+[717] were perfectly positioned your job is
+[719] not to follow the wave your job is to
+[722] get positioned for the wave and that's
+[724] the hardest thing to do because everyone
+[726] is trying to talk you into coming on
+[728] Shore again right almost everyone was
+[731] telling us don't do llms they're going
+[733] to be terrible for you we're like this
+[734] is literally what we built for did you
+[737] ever doubt yourself seven years is an
+[739] incredibly long wait time well it just
+[743] doubt there was doubt but there was
+[744] never a pause and the reason was so even
+[747] back before before starting the TPU I
+[751] was concerned that AI was going to be a
+[754] technology that would allow some people
+[756] to have outsized control outsized
+[760] influence if you allow that to just
+[763] happen in potentially not the best hands
+[768] it doesn't really matter how rich you
+[769] are it doesn't matter nothing matters it
+[772] it's the most important
+[773] technology so it didn't matter how hard
+[776] it got there was no choice but to be
+[778] successful and our goal is to preserve
+[780] human agency in the age of AI right if
+[784] if we don't do that we have failed and
+[786] so it wouldn't matter whether there was
+[789] doubt or not and yes there was plenty of
+[790] Doubt there was a point where we were so
+[793] close to running out of money we did
+[796] this thing that we called grock bonds so
+[798] you know um um war bonds from World War
+[800] II of course but for anyone that doesn't
+[802] what as a war bond so war bond World War
+[805] II was funded with bonds the US
+[807] government they had these posters it was
+[809] like fund your troops and and whatever
+[811] and you'd buy them and and they would
+[813] pay you a return and that funded the war
+[816] effort we were very close to running out
+[819] of money at one point rather than trying
+[821] to pretend to be strong you know we were
+[824] vulnerable with our employees and we
+[827] said we're going to run out of money we
+[830] need you to trade Equity salary for
+[833] Equity we literally took pictures of the
+[836] the war bonds and we put grock Bonds on
+[838] it instead and we had an all hands where
+[840] we we said this and we were worried
+[843] everyone was going to leave uh instead
+[845] of leaving about 80% of the employees
+[849] participated 50% I think went to the
+[851] statutory minimum salary by law when we
+[854] finally raised um the first bit of our
+[856] $300 million round we had uh so little
+[860] money in the bank left that it was less
+[863] money than we saved doing Rock bonds so
+[866] had we not done that we would have
+[868] literally run out of money so there were
+[870] some really hard times and I know every
+[873] founder has these and from the outside
+[874] it's so hard to understand it's like
+[877] watching a TV show you're not in it but
+[879] you mult you know it's like when you are
+[882] there everything is 10 to 100 times more
+[886] intense because people left their jobs
+[888] they left their careers their families
+[891] are banking on this and you have to make
+[894] decisions like go out there what hap
+[896] what would have happened if we went out
+[898] there and asked everyone to do grock
+[900] bonds and everyone
+[902] quit then the shareholders would have
+[904] been like you have all of these people
+[906] depending on you but if you lean towards
+[909] that vulnerability people are often
+[911] going to go with you on it so what is a
+[913] world where inference is so crucial and
+[916] 20 times more important than training
+[918] what does that world look like I think
+[921] the simplest way to understand it is
+[924] equate an lpu or a GPU to an employee
+[928] right if if you you have enough of them
+[932] the lpus or gpus you can do work just
+[934] like with an employee but it's it's a
+[937] little different in the sense that uh
+[939] they can't quit and take another job uh
+[942] you don't have to retrain once you get a
+[944] model to a certain capability it'll
+[946] always be at least that capability right
+[948] it's not going to regress you you you
+[950] know um so you get the consistency out
+[953] of it but now imagine that you're a
+[956] startup and rather than having to go out
+[958] and hire 100 people you hire 10 and you
+[961] buy the amount of compute equivalent to
+[964] 90 employees worth that's a very
+[966] different way of thinking about the
+[967] world because now capex or in some cases
+[971] different types of Opex can can be used
+[974] instead of just employees and so that
+[977] and in terms of inference just to give
+[978] you a sense of our scaling we started
+[982] 2024 with about 640 chips in
+[985] production we ended with over 40,000
+[989] this year we want to be at over 2
+[991] million and next year the number is much
+[994] much much larger so are we seeing
+[996] constraints on chip Supply I mean that
+[998] is an unbelievable scating story yeah
+[1001] so for us to hit our numbers next year
+[1004] which I'm not sharing publicly we're
+[1006] going to need almost all of the capacity
+[1009] of the Fab that we're we're using the
+[1012] the biggest issue so seven Powers we
+[1014] love seven Powers right Hamilton Helmer
+[1017] okay um you don't normally think tech
+[1019] companies as having a cornered resource
+[1022] but Nvidia has a cornered resource
+[1024] they're a monopsony the opposite of a
+[1025] monopoly a single buyer for
+[1028] hbm and and the interposer the Coos so
+[1031] what is hbm so hbm is high band with
+[1033] memory okay
+[1035] and what gpus and who produces hbm I'm
+[1039] sorry for the dumb questions there's
+[1041] three companies in the world that do
+[1042] this um SK hyx Samsung and Micron okay
+[1046] and it's a specialty memory it's only
+[1049] used in high-end servers so there's a
+[1051] limited quantity that's built it's very
+[1054] expensive to ramp up it's a very
+[1056] technically challenging type of memory
+[1058] to build more so than others so there's
+[1060] a very limited Supply and gpus are so
+[1064] fast
+[1066] computationally that if you were using
+[1067] regular memory it'd be like drinking out
+[1069] of a martini straw it would just take
+[1071] forever this is why you see people
+[1074] preferring to do um even inference but
+[1077] especially training on um gpus rather
+[1080] than CPUs because the memory bandwidth
+[1082] is too limited and CPUs rarely use hbm
+[1085] they're mostly regular memory um our
+[1088] architecture so the observation that we
+[1091] had when we started grock everyone knows
+[1093] More's law every 18 to 24 months like
+[1096] clockwork double the transistors means
+[1098] double the compute but we noticed that
+[1101] AI was getting better faster and it it
+[1103] clearly wasn't the algorithms because
+[1104] algorithms have sort of discontinuous
+[1106] jump it also uh didn't seem to be um the
+[1111] data cuz there wasn't that much more
+[1112] data and the transistors were only
+[1114] doubling every 18 to 24 months so where
+[1116] was all of this capability coming from
+[1118] turns out the number of chips was also
+[1121] doubling every 18 to 24 months so rather
+[1124] than 2x it was
+[1126] 4X so the question we asked was if
+[1129] you're effectively going to have an
+[1130] unlimited number of chips do you do
+[1133] something architecturally different the
+[1135] answer is absolutely so rather than
+[1137] using external memory we just use a
+[1139] large number of chips and keep all of
+[1141] the parameters of the model in the chips
+[1143] live and then we just have this pipeline
+[1146] where the computation flows through it
+[1148] sort of like an assembly line right so
+[1151] imagine if you were trying to build a
+[1153] factory and the factory was only 1/1
+[1156] 100th of the size needed for the
+[1158] assembly line so you'd run a bunch of
+[1160] cars through 1/1 100th tear it down set
+[1163] up the next 1 100 ass line you just do
+[1165] this over and over again that's the way
+[1166] a GPU works lpus very different we
+[1169] actually just have the the computation
+[1171] flow through a whole bunch of chips so
+[1174] rather than using um eight chips we'll
+[1177] use 600 or 3,000 for a model how does
+[1180] that change Energy Efficiency it it
+[1182] improves at about 3x and the reason is
+[1185] how does it improve it when you use more
+[1187] so cuz you use less for more per token
+[1191] so the footprint is higher think of it
+[1193] as the difference between a factory or a
+[1197] backyard um sort of garage the backyard
+[1200] garage is not going to be as efficient
+[1202] however it has a lower energy footprint
+[1204] or another example would be if you're
+[1206] were trying to transport a ton of coal
+[1208] from one side of the city to the other
+[1210] and you did it on mopeds or you did it
+[1212] with freight trains which one would be
+[1214] more efficient the moped would use less
+[1217] energy per trip but it would need more
+[1219] trips and therefore it would use more
+[1220] energy overall in fact this is one of
+[1222] the things most people misunderstand
+[1224] they think that edge Computing is lower
+[1225] energy actually Edge Computing is less
+[1228] energy efficient than Computing in the
+[1230] data center why is that when you're
+[1233] Computing in the data center it's a
+[1235] little bit like that freight train
+[1236] you're actually getting to do a whole
+[1238] bunch of jobs simultaneously so the fact
+[1240] that we don't have to read from that
+[1241] external memory means that um we don't
+[1244] have to spend the energy doing that even
+[1245] with gpus you get to batch but going
+[1248] back to why it's so energy efficient the
+[1251] amount of energy used in a chip there's
+[1253] there's these physical wires and the
+[1255] physical wires have a width and when you
+[1258] look at the WID width and you look at
+[1259] the length you charge that wire up to
+[1262] set it to a one and then you discharge
+[1265] it to set it to a zero which means it's
+[1268] sort of like charging a capacitor and
+[1269] discharging a capacitor you're using
+[1271] energy the longer that wire the more
+[1274] charge when you have HPM here and
+[1276] another chip here you're actually having
+[1278] to charge a wire between the chips and
+[1281] then discharge it every time you send a
+[1283] bit and so that's a long distance to
+[1286] travel but also the wires are wider than
+[1288] the wires that are inside the chips so
+[1290] you just use a lot more energy when we
+[1293] keep that um memory in the chip it's
+[1296] only traveling a little distance using
+[1298] much thinner wires and therefore it uses
+[1300] a lot less energy so do we see a world
+[1302] of lpu and GPU GPU usage in combin like
+[1307] how how does that distribution look
+[1309] between lpu usage and GPU usage there's
+[1312] a couple of things the first is um
+[1314] training should be done on
+[1316] gpus and actually I think Nvidia will
+[1319] sell every single GPU they make for
+[1321] training right now about 40% of their
+[1323] you know Market is
+[1325] inference um I think if we were to to
+[1328] deploy a lot of much lower cost
+[1330] inference chips um what you would see is
+[1335] that same number of gpus would be sold
+[1337] but the demand for training would
+[1338] increase because the more inference you
+[1339] have the more training you need and vice
+[1341] versa um the other use case is we're
+[1344] actually so crazy fast compared to gpus
+[1349] that we've actually experimented a
+[1350] little bit with taking some portions of
+[1352] the model and running it on our lpus and
+[1354] letting the rest run on GPU and it
+[1357] actually speeds up and makes the the GPU
+[1359] more economical so since people already
+[1362] have a bunch of gpus they've deployed
+[1363] one use case we've uh contemplated is
+[1366] selling some of our lpus to sort of
+[1368] nitro boost those gpus this is my
+[1370] question which is that you know people
+[1371] have bought gpus so far ahead of time
+[1373] that by the time you get them they're
+[1375] deployed and installed they're almost
+[1376] out of date actually we've we've spoken
+[1378] with some customers that put orders in
+[1380] over a year in advance they paid a year
+[1382] in advance and still haven't gotten them
+[1385] uh the the recent deployment we did in
+[1387] in Saudi Arabia uh 51 days from contract
+[1392] to the first tokens being served in
+[1394] production in country how are you able
+[1396] to do it so quickly 51 days is
+[1398] astonishing yeah um part of it is
+[1401] architecturally things are much simpler
+[1403] for us we don't have a bunch of other
+[1406] Hardware components we actually don't
+[1408] use switches to communicate between our
+[1410] chips we just plug our chips into our
+[1411] chips our chips are the switch and we
+[1415] don't have all of this network tuning
+[1417] think about it this way when you're
+[1418] going across town in uh
+[1421] France how long does it take to get from
+[1423] one side to the other a long time a long
+[1425] time but a variable amount of long time
+[1428] for sure if you do it in the middle of
+[1429] the night it might be fast if you do it
+[1431] in you know middle of the day during an
+[1433] event like we've got going on with AI
+[1434] Summit slow Terri exactly but it's
+[1437] unpredictable MH however certaines of
+[1441] Transportation Like Trains can be
+[1444] predictable with what we're doing it is
+[1447] uh 100% predictable given the Energy
+[1450] Efficiency given the predictability why
+[1452] is NVIDIA not being more proactive on
+[1456] lpus um what makes you think that they
+[1459] don't want to be more proactive on it
+[1461] it's they don't talk about it well why
+[1463] would they talk about it that would be
+[1465] like talking about something you don't
+[1466] have when you're trying to project
+[1467] strength rather than vulnerability well
+[1470] I think if you wanted to protect
+[1471] shareholder value and wanted to protect
+[1473] a Wall Street image of dominance and
+[1475] being ahead of the game you'd at least
+[1477] say oh we are of course working on lpus
+[1479] as well but then until they had that
+[1483] ability until they had lpus they would
+[1486] effectively be exposing that there's
+[1487] something missing like if you look at
+[1489] the last GTC there was an announcement
+[1492] that the latest gpus were 30X faster
+[1494] than the previous
+[1495] generation and when you look at how it
+[1498] was done there was this curve that
+[1500] looked kind of like this and then it
+[1503] basically ended here and then there was
+[1505] another curve that was kind of like this
+[1508] now that 30X was from the end of this
+[1510] curve to this curve if you moved it here
+[1513] it would have been less than 30X if you
+[1515] moved it here it would have been
+[1517] infinite so their chip is infinitely
+[1519] faster than the previous one but that
+[1520] wouldn't have sounded reasonable right
+[1522] there's a history in this market of
+[1526] speckmans ship because it's it's so hard
+[1529] to like get access to Chip and this is a
+[1531] a lesson on Enterprise sales I think in
+[1534] Enterprise sales people rely on
+[1540] specmar better than your specs my chip
+[1542] is faster than your chip I get more ter
+[1544] flops per second than you do right but
+[1546] who cares like just tell me what the the
+[1548] tokens per dollar is and tell me what
+[1550] the tokens per watt is nothing else
+[1551] really matters but people will find all
+[1554] of these other weird things to measure
+[1556] that they might be better on sort of
+[1557] like I'll sell you a car with better
+[1559] RPMs RPMs don't matter right what
+[1562] matters is miles per gallon and maybe
+[1565] the speed that you can drive that
+[1566] although speed limits kind of render
+[1567] that you know moot right but in the case
+[1571] of um uh Enterprise sales people
+[1575] often well there there was a time when
+[1578] the way that you would buy
+[1581] soap or you would Market soap the
+[1584] Billboards would say our soap has more
+[1587] bubbles than this other brand soap who
+[1590] cares and what they figured out was
+[1593] let's put really happy people up on a
+[1595] billboard after they use the soap and
+[1597] then maybe people associate that
+[1599] happiness right lifestyle marketing sure
+[1602] for some reason Enterprise still hasn't
+[1603] learned this lesson it's still we have
+[1606] more bubbles we have more ter Ops we
+[1609] have more whatever things that people
+[1610] just literally don't care about so you
+[1612] think Invidia is hey with 30 times
+[1614] faster is not good marketing I think it
+[1617] worked because it's what people are used
+[1618] to but our counter was we we did a press
+[1621] release to that that said um grock still
+[1626] faster that was it and and people went
+[1630] Gaga over it right because it was just
+[1632] we are we're still faster so who
+[1636] cares I I totally get that do you think
+[1638] Wall Street up us down that way I think
+[1640] they're starting to yeah but again I I I
+[1644] don't think there's real competition
+[1646] here I think if you are competing you
+[1649] have done something seriously wrong if
+[1652] you're competing it means that you
+[1654] haven't found an unsolved customer
+[1657] problem because if you're competing
+[1658] someone else has already solved the
+[1660] problem so why are you spending time on
+[1661] it so you don't view Nvidia as a
+[1663] comestor no they they don't offer fast
+[1665] tokens and they don't offer lowc cost
+[1667] tokens it's a very different product but
+[1669] what they do very very well is training
+[1672] they do it better than anyone else and
+[1674] by such a wide degree it's a solved
+[1676] problem why would we bother trying to
+[1677] solve a problem that's already been
+[1678] solved so you like seed the training
+[1680] Market to them we'll own the inference
+[1682] Market yeah and they're saying that
+[1685] we also want the inference Market of
+[1687] course it's the way it always works so
+[1689] what do we do now so now we are
+[1690] competing in the influence Market but
+[1693] are we yeah so we don't really have
+[1698] people saying you know we're going to
+[1700] buy gpus instead of you we do have
+[1701] people saying we're going to buy both
+[1704] that happens but we don't care because
+[1707] we all like I showed a demo to someone
+[1709] and he's like should we just not buy any
+[1710] more gpus I'm like no you should buy
+[1711] every single GPU you can get your hands
+[1713] on and he's looking at me very perplexed
+[1715] and I'm like well how are you going to
+[1717] do training we don't do training buy the
+[1719] gpus get every single one you can
+[1721] because I want your models running on us
+[1723] to be really good but for inference they
+[1725] don't need to buy Nvidia anymore they
+[1727] don't need to buy gpus for inference but
+[1732] if you can get them I mean they're a
+[1734] little expensive but if you're used to
+[1736] it why not plenty people still sell main
+[1738] frames but if you want lower cost and
+[1741] faster then you want an lpu how much
+[1743] lower cost is it more than 5x lower more
+[1747] than 5x lower just the memory alone in
+[1749] the latest gpus cost more than our fully
+[1752] loaded capex per chip deployed and and
+[1755] on top of that so we talked about the
+[1757] Energy Efficiency so we use about a
+[1758] third of the energy per token about over
+[1761] threee period onethird of our cost is
+[1764] the Opex which is mostly energy and data
+[1765] center rent and 2/3 is the capex
+[1768] which means that since we're one3 of the
+[1771] energy the cost to run that GPU to
+[1773] produce the same number of tokens for
+[1775] inference is the same as our total cost
+[1778] just the Opex for the GPU is the same as
+[1780] our capex plus our Opex why is 40% of
+[1783] their revenue inference then and what
+[1786] why have you not taken so much more of
+[1787] that at the beginning of 2024 we only
+[1790] had 640 chips at the end we had 40,000
+[1793] we're not at that scale yet so you have
+[1796] to you have to provide quality you have
+[1798] to provide low cost you have to provide
+[1800] speed but you also have to provide
+[1801] capacity and so this is where that that
+[1804] um most important part of not using hbm
+[1806] came in it means that we effectively
+[1808] have no scale limits so the GPU itself
+[1811] is actually um manufactured using the
+[1814] same process that um you use for your
+[1816] mobile phone right so the same silicon
+[1819] that's in your mobile phone is the same
+[1821] silicon for the GPU in fact they build
+[1823] the mobile phones first uh the mobile
+[1825] phone chips first because they're
+[1826] smaller so they better so the Nvidia
+[1830] actually gets it after
+[1832] Apple the the difference is that memory
+[1835] that's the only difference but that
+[1836] memory is the hard part to manufacture
+[1839] that's that's Limited in scale so by us
+[1841] avoiding that we effectively have almost
+[1845] no limit on how much we can scale up and
+[1847] that's important for inference what is
+[1849] nvidia's
+[1851] margin 70 to 80% 70 to 80% so they can
+[1854] take 70 to 80% off and be radically more
+[1858] yeah comparatively cost effective
+[1861] compared to you like you could destroy
+[1862] their margin but why would so I in that
+[1867] same vein you can almost say we're one
+[1868] of the best things ever happened to
+[1869] Nvidia because they can make every
+[1871] single GPU that they were going to make
+[1874] and they can sell it for training high
+[1876] margin right gets amortised across the
+[1879] deployment and you know we'll take the
+[1881] low margin high volume inference
+[1883] business off their hands and they won't
+[1884] have to sell either margin what's low
+[1886] margin anywhere from um depending on the
+[1888] deal um we do get some on the the back
+[1891] side but up front it's about 20% about
+[1893] 20% yeah okay so there's his 80 yours is
+[1896] 20 but then you're looking at a 20 x but
+[1898] then we get more later off of it so we
+[1900] take some of the risk what do you mean
+[1901] you get more later sorry so the deals
+[1903] that we do um the partner will off
+[1907] because we don't deploy we don't spend
+[1909] money for our own capex the partner will
+[1911] put up the money for us to deploy we pay
+[1913] back with a you know decent irr and but
+[1917] we split and most of it goes to the
+[1918] partner and then once we hit the irr it
+[1920] flips the other way so others are
+[1922] putting the capex up for us what does it
+[1924] look like at the end then it's a little
+[1926] it's not like other business models so
+[1928] we we didn't just innovate on the chip
+[1930] we also innovated on the business model
+[1932] and um we're Limited in how much money
+[1936] we can make based on how much we can
+[1938] deploy not how much money we have
+[1940] because the partners are putting that
+[1941] money up so when I'm looking at what we
+[1944] can do it's all about how much we can
+[1945] scale what are the limits to your
+[1947] deployment is it purely Chi constraints
+[1949] mostly so you're asking about
+[1952] misconceptions in AI I think one of them
+[1954] is about power so it is true that there
+[1957] is a mismatch in the market between
+[1960] people with chips and people with power
+[1962] but that's partially because you need a
+[1963] data center in the middle and there
+[1964] aren't enough data centers those aren't
+[1965] the hardest thing in the world to build
+[1967] they're not easy but they're not the
+[1968] hardest thing it's harder to build up
+[1969] the power um however because of that
+[1973] mismatch you have big hyperscalers going
+[1975] around and saying I need a gwatt of
+[1977] power
+[1978] and they'll say this to to 60 different
+[1980] potential data center Builders and then
+[1982] all of a sudden you hear this Echo well
+[1984] I heard that you know there's a gwatt
+[1986] here and a gwatt here and a gwatt here
+[1987] and all of a sudden there's like 60
+[1988] gwatt of demand and it's this Echo from
+[1990] that first
+[1992] gwatt the thing
+[1995] is I am aware of about 20 GW of power
+[2000] that people want to make available for
+[2001] data centers now right now there's about
+[2003] 15 gaws of data centers worldwide so
+[2005] more than double the current capacity
+[2007] concern that I have is that people are
+[2010] now building up more power and what's
+[2013] going to happen in the next 3 to four
+[2015] years is people are going to be like I
+[2017] built up all this power and no one's
+[2018] using it and this was like a complete
+[2021] waste and we're never going to do this
+[2022] again then what's going to happen
+[2024] remember that doubling of chips every 18
+[2027] to 24
+[2028] months while 3 to four years you double
+[2031] that 15 gws twice and now you're talking
+[2035] about what 120 gws there isn't that much
+[2038] power available and then another one
+[2040] after that now you're at 240 and so
+[2042] what's going to happen is we're going to
+[2044] overbuild slightly right now just
+[2046] because of that mismatch and the
+[2047] miscommunication that's going on right
+[2049] now and then we're going to dampen our
+[2051] building and we're going to you know
+[2053] close down on that and then we're going
+[2054] to have the real need for the power
+[2056] that's my big concern right now because
+[2058] that that power will become a hard
+[2060] bottleneck in three to four years okay
+[2062] just so I understand why will we have
+[2065] that data over data sent to over Supply
+[2068] when we are moving into world of
+[2069] inference which will be 20x larger than
+[2071] training so the problem with data
+[2073] centers is everyone thinks that data
+[2076] centers are real estate and a lot of
+[2079] people do real estate data centers are
+[2081] not real estate um the common joke in
+[2084] the industry now is someone says I'm
+[2087] going to have you know 100 megawatts of
+[2089] capacity for you and I'm going to have
+[2090] it in three months are you willing to
+[2092] sign and then you ask a question like
+[2095] well um what's your up time and they're
+[2098] like I don't know whatever the the you
+[2100] know power grid is you're like wait what
+[2103] where are your generators oh I haven't
+[2105] ordered those I'll order them now you
+[2106] know that there's a 90 Monon lead time
+[2107] on generators right now oh really and
+[2110] then the next 90 90
+[2114] 90 mhm and then the next question is so
+[2119] where are you getting the water from
+[2120] wait data centers need water I thought
+[2121] it was a bunch of chips what do you mean
+[2124] water so there's a bunch of people who
+[2125] have no idea what they're doing going
+[2127] into it because they think it's real
+[2128] estate and so those people are now
+[2132] building an over supply of data centers
+[2135] but they're not really building them so
+[2136] they're they're fake data centers that
+[2138] people think are real what happens to
+[2141] those data centers because they're not
+[2142] going to be utilized are they Amazon is
+[2144] not going to pay for a data center that
+[2145] doesn't well Amazon doesn't fall for
+[2147] this Amazon has really good people
+[2149] whoever the the buyer is is not going to
+[2151] pay for a data s it's got no water or
+[2154] got no power yeah and so is it just
+[2156] wasted from your these projects will
+[2158] never be developed will we build them
+[2160] fast enough you said about the data like
+[2162] the over Supply it t it does take time
+[2164] to build the data center and it's it's
+[2166] so it's almost okay if you train a model
+[2170] you really want to amortise it for about
+[2171] six months if you um if you deploy chips
+[2177] you really want to amortise it for three
+[2178] to five years right we're more on the
+[2180] threeyear side others are more on the
+[2181] fiveyear side uh if you build a um data
+[2186] center you're probably talking 10 to 15
+[2188] years in a power plant you're talking
+[2190] like 15 20 years so the the problem we
+[2194] have in the industry is not on on this
+[2198] and there's this mismatch between the
+[2199] the sort of financing and the the needs
+[2203] here so you have someone who wants to
+[2205] train a
+[2206] model they're going to be doing this for
+[2208] six months and they don't understand why
+[2210] people want 3 to 5 year commitments on
+[2212] the chips and then the people deploying
+[2214] the chips don't understand why someone
+[2215] wants a 15 to 20 year commitment on the
+[2218] data C right it's at seven years now on
+[2220] the data centers and then the people
+[2222] building the data centers then need a
+[2223] long seven years commitment yeah that's
+[2225] the kind of thing they're asking
+[2227] for so you've got this complete mismatch
+[2230] throughout the ecosystem but the funny
+[2232] part about it is while they all want to
+[2235] take zero risk and have a committed um
+[2238] you know Sovereign wealth level um uh
+[2242] sort of credit rating on the other side
+[2244] of it with long commits the longer the
+[2248] payoff time the more generic the
+[2250] infrastructure is a model has a pretty
+[2254] specific use but accelerators like lpus
+[2257] and gpus can be used for other things
+[2259] besides generative AI or
+[2261] llms um the data center can be used for
+[2264] other things besides the accelerators
+[2266] the power can be used for anything so
+[2269] while they're looking for the least risk
+[2271] over here it's the place where there is
+[2273] the least risk because if if we don't
+[2275] use it for for AI we'll use it to power
+[2277] all of the electric cars so is this a
+[2279] case where incumbents SN because they're
+[2281] one of the only ones who are able to
+[2282] match the durations required by data
+[2284] center providers well and and this is
+[2286] why we've partnered with um aramco and
+[2289] this new uh entity in Saudi Arabia
+[2292] because they have an enormous um ability
+[2295] to fund this over the long term they
+[2297] have a very long-term perspective um and
+[2300] they have an amazing credit rating I
+[2303] mean listen the So when you say they
+[2305] have an ability to fund it they and this
+[2307] is why the misconception was people
+[2309] think it's a funding round of a billion
+[2310] and a half it's not a funding round of a
+[2312] billion no we we did not raise 1.5
+[2314] billion that's Revenue that's that's
+[2316] actually about 30% of the revenue of
+[2318] open AI can you just walk me through how
+[2320] that deal is structured yeah so we
+[2323] started off last year right and and we
+[2325] got to um 19,000 of our chips deployed
+[2329] we did that in about 51 days and the
+[2333] question was what could we do this year
+[2336] so they've gone off they've collected up
+[2338] a bunch of power in in the country and
+[2341] the deal is structured so that they will
+[2343] put up the capex for us to deploy our
+[2346] our chips in that data center or those
+[2348] data centers and we pay back based on
+[2352] the money that we make so it's it's sort
+[2354] of um it's a little bit different than
+[2356] debt in that they participate in the
+[2360] upside um but it it's similar in nature
+[2365] but it is revenue because we actually
+[2367] make profit upfront how does that change
+[2369] what you can do well we are not limited
+[2372] by Capital anymore and one of the unique
+[2375] reasons we can do this there's a there
+[2377] is one misconception around grock um
+[2380] there was a paper that was written that
+[2381] said that um we couldn't be profitable
+[2384] while being lowest price we could charge
+[2385] more but actually we have a very
+[2388] positive contribution margin right now
+[2390] um and so as far as we know we're the
+[2393] only ones that are actually making money
+[2396] running these open source models because
+[2398] with the open source models everyone's
+[2399] sort of competing with VC dollars trying
+[2402] to take market share Uber style right
+[2404] and Meanwhile we're sitting here going
+[2407] we could do this all day long because
+[2408] we're making money and we're we're able
+[2411] to even pay off an irr and and and make
+[2414] our partners money so the the difference
+[2418] here is there's another part of the
+[2420] model so we're also working with some
+[2422] proprietary model providers so we um uh
+[2426] actually showed off the first first one
+[2427] at leap on Sunday um where uh we did a
+[2432] voice model with play AI that one is
+[2433] also a REV share but the thing is they
+[2436] get to make money off of that whereas
+[2438] most others in the industry are losing
+[2441] money because of the commoditization of
+[2444] the models so do you have cheaper
+[2447] pricing over time as you bluntly have uh
+[2452] less Monopoly power or do you have
+[2454] higher prices as your Monopoly increases
+[2457] well well we want the we want the margin
+[2460] to stay about the same but we want the
+[2461] prices to go down because then we get
+[2463] into jeevan's Paradox and and life gets
+[2465] great because we're going to scale and
+[2466] our focus is on getting to scale right
+[2468] to preserve human agents in the age of
+[2470] AI we need to be one of the most
+[2473] important Compu providers in the world
+[2475] and our goal by the end of 2027 is to be
+[2478] providing at least half of the world's
+[2480] AI inference compute we think we could
+[2482] be further than 2x um given that we
+[2485] don't have all the constraints but in
+[2488] order to get there we do need to be very
+[2490] aggressively building out and we need to
+[2493] give people no excuse for not running
+[2495] their models on us and and using the
+[2497] models that are on us by charging extra
+[2500] and and what I keep telling the team
+[2501] over and over again because you have to
+[2502] remind them sometimes is we are growing
+[2505] faster than exponential and when you are
+[2507] growing faster than exponential there is
+[2510] no amount of profit that you can make
+[2512] that matters what matters is you know
+[2515] getting a toe hold in the market and
+[2516] becoming relevant what would prevent
+[2519] that we used to be worried that someone
+[2521] would try and price below us and then we
+[2524] realized that wasn't a concern because
+[2527] there's so much money going into this
+[2529] that people are going to want to lose
+[2531] less money by running on us so that
+[2534] isn't a concern but that was the big one
+[2536] early on until we realized that when we
+[2538] see Zuck investing $65 billion in data
+[2540] centers what does that actually mean
+[2543] that means he's internalizing all of the
+[2545] margins that he would have had to have
+[2546] spend on data centers with the providers
+[2548] that we mentioned earlier and Facebook
+[2549] is doing full stack what does that mean
+[2552] so met is doing 65 billion a year um I
+[2555] think Google said 70 or 75 and Sacha
+[2559] said Microsoft's doing 80 and then
+[2561] you've also got Stargate right yeah
+[2563] these are crazy sums of money and this
+[2565] is all for data center Builder no it
+[2567] also includes the stuff that goes in
+[2569] includes the chips as well the systems
+[2571] everything okay we've never seen money
+[2574] like this no no there's never been
+[2576] anything like this but there's never
+[2577] been a case where it was so clear that
+[2579] there was going to be value at the end
+[2581] right if if you knew how
+[2584] successful um search was going to be
+[2587] right remember Google stayed private as
+[2589] long as they did because they were
+[2590] afraid that Microsoft would figure out
+[2592] how much money search was making and
+[2594] then would try and replicate in the
+[2595] moment that they went public Bing right
+[2598] they they called that perfectly everyone
+[2600] knows how much money there is in AI so
+[2603] everyone's going after it do you think
+[2604] that value is distributed amongst many
+[2607] players or concentrated towards one or
+[2609] two I completely agree with you in terms
+[2610] of the clear value when assigned but is
+[2613] it distributed to some levels evenly or
+[2616] concentrated it's a power law and the
+[2619] more value there is in the economy the
+[2622] more risk there is of a single entity
+[2626] being so far on one end that they just
+[2630] Dominate and you see this with the mag s
+[2633] right and it's predict just the bigger
+[2635] the economy gets the more you will have
+[2639] you know big swings in in the economic
+[2643] outcomes right now the hyperscalers are
+[2646] all sort of even in their market caps
+[2649] it's strange you would expect one of
+[2651] them to just be killing it and taking it
+[2654] much further and so I don't understand
+[2656] why they're so closely grouped so when
+[2658] we think about that distribution like
+[2660] how do we think about changing that then
+[2663] like obviously with a Gro you know you
+[2664] want to be one of the mag 7 you want to
+[2666] be one of the most important compan in
+[2667] the world how do you see that there's so
+[2671] the way that you get there and the way
+[2672] that you stay there are two very
+[2673] different things and the there's a
+[2677] there's sort of a circle of life that
+[2679] happens in startups the first Circle the
+[2681] first stage is solve an unsolved problem
+[2684] right that's how you go viral that's how
+[2687] you do well the second stage is the
+[2689] marketing stage which is now other
+[2691] people are trying to copy what you've
+[2692] done right because they can't think of
+[2694] something themselves and now you have to
+[2696] fight it out in in advertising and
+[2699] marketing and whatnot and you see cpg
+[2703] companies often get stuck there right
+[2705] and it becomes more about where on the
+[2706] Shelf they are than than anything else
+[2709] and then the final stage is the seven
+[2710] Powers it's once You' found some of
+[2712] those and you've really started
+[2713] improving it and you have you know sort
+[2715] of systemic advantages and then what
+[2717] happens is someone solves an unsolved
+[2720] customer problem and the whole cycle of
+[2721] Life continues right now Google uh has
+[2724] to redo this because llms are better
+[2726] than search right so the way that you
+[2729] start off to become a MAG 7 is you solve
+[2732] that unsolved problem the way that you
+[2734] stay there is first you find one of
+[2736] those seven powers or or multiple but
+[2739] then you have to be ready for when you
+[2741] get disrupted to continue fighting back
+[2744] and and solving customer problems can we
+[2746] mentioned the different huge amounts of
+[2749] money that's being spent here is this a
+[2751] good bubble that bluntly lays the
+[2753] foundations for an incredible next 10 to
+[2756] 20 years where bluntly the capital
+[2758] actually turns out to be productive but
+[2760] not seemingly so on paper or is it where
+[2763] actually just a huge amount of money is
+[2764] incinerated on depreciating assets I can
+[2766] guarantee you that a huge amount of
+[2768] money will be
+[2769] incinerated but I also bet that in total
+[2772] more money will be made than will be put
+[2775] in and so this is the problem you you
+[2777] have to look at it either in aggregate
+[2779] or individual bets right when everyone
+[2782] is making investments in the market some
+[2785] people are going to lose money because
+[2786] not every company's going to be
+[2787] successful so what you always see is
+[2790] when there is some real Tech
+[2792] improvements or things coming you've got
+[2795] the things that were early that people
+[2796] are investing in heavily that are super
+[2799] successful and then everyone else wants
+[2801] to get in on it and you know it goes
+[2804] from you have ai chips and AI models to
+[2809] now you've got AI you know t-shirts and
+[2813] next thing you know you've got AI
+[2814] thermal grease right it it just like
+[2817] people just start applying AI to
+[2818] everything next thing you know you'll
+[2820] have an AI condo sure yeah and so the
+[2824] trick
+[2825] is Discerning what is real and what
+[2828] isn't you're always going to have all of
+[2831] these really obnoxious charlatans coming
+[2833] in whenever there's something real and
+[2835] that's unfortunate but eventually they
+[2837] get cleared away once people start to
+[2839] understand the technology and what's
+[2841] real and what isn't and so the job is to
+[2845] start educating and the more educated
+[2847] people are the less they'll invest in AI
+[2850] thermal grease what is the largest
+[2853] individual bat that will lead to the
+[2855] largest incineration of cash I'm not
+[2857] going to call anyone out in particular
+[2860] but I actually think it will happen
+[2861] across every single discipline the are
+[2865] you aware of the Keeny and Bea Contest
+[2867] no okay so um John Maynard ke The
+[2870] Economist he has this great um this will
+[2873] explain everything you need to know
+[2875] about VC
+[2877] so I'm nervous but keep going so um take
+[2881] a magazine full of models human models
+[2884] like you know good-looking models and
+[2887] have a whole bunch of VCS in the room
+[2890] and they're allowed to make bets on who
+[2892] the the most beautiful model is and in
+[2895] the end Whoever has the most money on
+[2898] them is the winner and based on the
+[2900] proportion that you put on that
+[2902] particular model's face you get the
+[2905] share of all of the money
+[2907] so if you if you put money on one that
+[2909] isn't the most beautiful by dollars then
+[2911] you lose your money to the the people
+[2913] who bet on that one and that was sort of
+[2916] the the bet that SoftBank was making
+[2917] which was they could win the kenian
+[2919] beauty contest I'm just going to put
+[2920] more money in and I'm going to win that
+[2922] is problematic when you have true
+[2926] technological advantages as opposed to
+[2929] marketing when you're solving customer
+[2930] problems it's a weighing machine once
+[2933] the customer problem has been solved you
+[2936] then get into this sort of popularity
+[2938] contest of
+[2939] marketing now something unusual has
+[2942] happened this time around which I don't
+[2944] think has ever happened in in VC before
+[2948] which is you see people raising billions
+[2951] of dollars who who have competitors
+[2954] whove raised billions of dollars it
+[2957] usually there is a clear winner in the
+[2959] keny and beauty contest you don't have
+[2962] this like fight where you know it's it's
+[2965] sort of like well I I got to put a
+[2967] little more money in I got to put a
+[2968] little more I got to you know put 10
+[2969] billion in I'm going to put 20 billion
+[2970] I'm going to put 500 billion in right
+[2973] because the kinyan beauty contest has
+[2975] gone completely a muck and um this has
+[2979] never happened before and so now people
+[2981] don't even understand how to react
+[2983] because it used to be if someone had
+[2984] raised a billion dollars you're like oh
+[2985] they're the winner now it's like there's
+[2987] three or four competitors who have a
+[2988] billion dollars so who wins and who
+[2990] loses like is Masa going to incinerate
+[2992] the largest amount of cash ever I think
+[2994] the Keeny and beauty contest no longer
+[2996] app here because there's so much money
+[2998] available being spread out and and I
+[3000] think you're you're going to see that
+[3003] the people who have the best products
+[3005] are actually going to be the winners
+[3006] because everyone can be capitalized but
+[3009] there will be problems for the winners
+[3011] because of this the problems are going
+[3013] to be of the sort you you had this
+[3016] employee that you were going to hire and
+[3017] someone offered them a ridiculous amount
+[3019] of money yeah you see this all the time
+[3021] now and they could have gone and
+[3023] contributed to the winner but now
+[3024] they're contributing to a competitor
+[3026] that shouldn't exist right or is equally
+[3029] likely to win and now you're splitting
+[3030] the talent what do you also do when you
+[3032] have such high salaries we've seen a
+[3034] million 2 million for kind of Junior to
+[3036] mid level in some of these companies and
+[3039] they are living an amazing life actually
+[3041] in great places you think they're living
+[3043] that amazing life in Guangdong when
+[3046] they're working for deep seek or any
+[3047] other Chinese alternative I don't think
+[3049] so I think they're actually getting paid
+[3051] much less working their ass off
+[3053] 20 hours a day and not getting Kucha and
+[3056] being paid 2 million a year fair not
+[3059] only fair we have a policy that we never
+[3062] offer the highest because we want people
+[3065] to choose us not choose the salary if we
+[3069] win in a bidding war then that means the
+[3071] next time someone comes along with a
+[3073] higher salary that's it they're just
+[3075] going to go take that other job there's
+[3076] no loyalty they don't believe in the
+[3078] mission instead we focus on look we're
+[3081] going to build this this is your
+[3082] opportunity you're going to get to work
+[3083] with amazing people um spend some time
+[3086] with the team are these the people you
+[3087] want to be working with because frankly
+[3088] you're going to make so much cash it
+[3090] doesn't matter but bet on the equity the
+[3093] outcome right help us make this thing
+[3096] valuable and people who buy into that
+[3099] they're so much easier to manage because
+[3101] they're Mission oriented they all want
+[3102] to do the same thing they're not there
+[3104] because they want the kombucha and
+[3106] they're not going to complain because
+[3107] the the cappuccino machine is broken
+[3110] they'll just go and buy their coffee
+[3111] next door will you and Nvidia move into
+[3114] the model A everyone talks about model
+[3116] ERS becoming application providers will
+[3118] infrastructure providers become model
+[3120] providers we have decided that we're not
+[3122] going to train our own models we'll do a
+[3123] little fine-tuning for specific cases or
+[3125] whatnot but we don't want to compete and
+[3128] that's really important because people
+[3131] are putting their models with their
+[3133] weights on us right and they don't want
+[3137] us to to learn from and take that stuff
+[3140] for our own benefit this is the problem
+[3142] you have when you work with a
+[3142] hyperscaler because you know they're
+[3144] also doing everything that you are doing
+[3146] so we've decided model
+[3148] providers you make the model we don't do
+[3151] that I think there's also the data side
+[3154] of the users in the queries so the other
+[3157] thing that we could do that we do not do
+[3159] is log the queries and then we've got
+[3161] data if we want to train we don't train
+[3164] we have no reason to hold the data so we
+[3166] we only temporarily store things in the
+[3169] Damm so there's no persistent storage if
+[3171] the power went out everything's gone and
+[3173] Dam is limited so we can't hold things
+[3175] for a long time so you know that we
+[3176] don't have your data now people who are
+[3179] building businesses on top of us you can
+[3182] obviously keep the data from your
+[3183] customers if you want we have no control
+[3186] over that that's fine but we don't take
+[3188] any data do you think Invidia move into
+[3190] the Mel providing it's possible but I
+[3195] think I mean if I was them I would avoid
+[3197] it because I wouldn't want to give the
+[3199] customers of mine I mean Nvidia is great
+[3201] at training right it it's crazy it would
+[3204] be like you know um being a um
+[3209] Automotive a car company and then
+[3211] creating your own taxi service you're
+[3212] now competing directly with your
+[3213] customer right and I think tech
+[3215] companies love to do this we we have a
+[3218] management philosophy and it's based on
+[3221] bigo
+[3222] complexity and we only do things that
+[3225] require a sublinear number of employees
+[3228] so what I mean by that is if someone
+[3230] comes to me and says I need 10 people to
+[3233] go do this thing a lot of people would
+[3235] say well why can't you do it with five
+[3237] I would say okay you're supporting
+[3238] customers if we double the number of
+[3240] customers do you need 20 or do you need
+[3243] 11 because I want to know what's that
+[3245] growth rate are they automating
+[3246] everything right we completely automated
+[3247] our compiler we completely automated
+[3249] everything that you know large portions
+[3251] of our cloud and that means that we can
+[3253] scale with a small team we have 300
+[3255] people we have 300 people we built our
+[3257] own chip we built our own networking
+[3259] hardware and software we built our own
+[3261] runtime we built our own orchestration
+[3263] layer um we built our own compiler we
+[3265] built our own Cloud we built all this
+[3268] with 300 people now we would only be
+[3270] able to do this with a small number of
+[3271] people because you don't have the
+[3272] communication overhead but if we if you
+[3275] have to decide what your constants and
+[3277] variables are what are the things that
+[3278] you want to preserve and one of the
+[3281] constants is Talent
+[3283] density we want to stay small we want to
+[3285] stay Nimble and the the other side of
+[3289] this is growth is a problem so we
+[3292] measure our growth in what I call
+[3295] problem units so a problem unit every
+[3298] time you triple something you have about
+[3300] the same number of problems as the last
+[3302] time you tripled going from 100
+[3304] employees to 300 300 to 1,000 1,000 to
+[3307] 3,000 each one of those has the same
+[3309] number of
+[3310] problems we scaled from
+[3313] 620 uh or 640 lpus last year at the
+[3317] beginning to 40,000 that's four problem
+[3320] units that's four triplings of the
+[3323] number of
+[3323] chips if we were also tripling the
+[3326] number of employees that would be
+[3328] another problem unit management
+[3330] bandwidth is limited you can only solve
+[3331] so many problems so you have to decide
+[3334] where you're going to allocate them if
+[3335] you build things really well from the
+[3337] beginning and you can scale up with the
+[3340] number of employees you have then you
+[3341] can scale over here if you want to
+[3342] Triple the number of customers there's
+[3344] another problem unit that you have to
+[3345] solve what's the biggest challenge when
+[3347] you are scaling at that rate but then
+[3350] the team is not scaling in conjunction
+[3351] with it there's this common belief that
+[3353] the people that you have early on are
+[3355] right for the job and the people that
+[3356] you get later maybe they're better in a
+[3360] sort of more corporate environment I
+[3362] don't think that's the case I think you
+[3363] should always try and get generalists um
+[3366] otherwise you you get stuck and aifi in
+[3369] a particular way of doing things because
+[3371] that's what that one person knew how to
+[3373] do but there there are people who burn
+[3377] out in a being in a startup is hard like
+[3380] there are people who just literally burn
+[3382] out there's also people who were the
+[3385] best that you you get at the time and
+[3387] then there are people who are just
+[3390] unmanageable wild children and they
+[3392] should go off and start another startup
+[3394] and they shouldn't be you know scaling
+[3395] with you that's that happens but it's
+[3397] the rarer of them I think saying that
+[3400] you're you're going to hire B players
+[3401] because you've gotten large enough is is
+[3403] laziness and an excuse and it it's a
+[3406] lack of creativity in your business
+[3408] model and how you're going the algorithm
+[3410] of how you're going to scale think of it
+[3412] this way Walmart versus Amazon Walmart
+[3416] Walmart wants to double the number of
+[3417] customers they have to double the number
+[3419] of stores and employees Amazon does not
+[3421] need to double the number of websites
+[3423] that's a fundamental Advantage but
+[3425] Amazon still has to double and improve
+[3428] the logistics right they don't have as
+[3430] many problems where they have to scale
+[3432] linearly but they have some you wanted
+[3434] to disrupt Amazon what you would do is
+[3436] you'd build a completely robotic
+[3437] logistic system and bring the comp the
+[3440] the overhead and complexity of that down
+[3442] and then you can outmaneuver them right
+[3444] that's how you need to imp don't just
+[3446] say I need more people focus on the
+[3449] algorithm of your business the last time
+[3451] we spoke we discussed deep seek I think
+[3453] more has come out over the last few
+[3454] weeks about buny their Innovations some
+[3457] of the distillation that they used where
+[3459] is China better than us today well as we
+[3462] discussed they're more willing to use
+[3465] things that maybe they shouldn't be
+[3466] using um you know they they distilled
+[3469] the open AI Model A lot of people have
+[3471] the opinion well open eye was scraping
+[3473] the internet so you know good for deep
+[3476] seek but whether that's right or wrong
+[3480] most of the model providers had
+[3482] considered that a red line they didn't
+[3483] want to cross I don't know if that's
+[3485] going to change but but it might but the
+[3488] other the open source nature of deep
+[3489] seek open AI now benefit from the
+[3491] innovations that they did also have well
+[3493] and they also probably have all the data
+[3495] that deep seek paid them to
+[3498] generate
+[3500] so yeah I but but they also were clever
+[3504] they they innovated I think the big
+[3506] biggest thing is this is a shot in the
+[3507] arm for morale in China and it gives
+[3511] them a sense but but again this you know
+[3513] as I said Sputnik 2.0 it's also woken up
+[3515] the US totally has how do you compare
+[3518] Stargate to the $128 billion that China
+[3521] have now committed so China has a more
+[3525] complicated situation and a simpler one
+[3528] at the same time the the this problem is
+[3533] they don't have the technology that we
+[3534] have in terms of the chip
+[3536] efficiency on the other hand they have
+[3539] scale if they wanted to deploy 150
+[3542] nuclear reactors is I think the plan is
+[3545] no big deal they just do it so if the
+[3547] chips aren't as efficient they can just
+[3548] deploy more of them on the other hand if
+[3551] they want to go out into the world and
+[3554] deploy chips like they did with Huawei
+[3556] and networking gear that's going to be
+[3558] complicated because people aren't going
+[3560] to have the power around the world to
+[3562] run more expensive accelerators the home
+[3566] I don't think anything is a problem I
+[3568] only think as they're trying to expand
+[3569] it's going to be an issue China is quite
+[3571] opaque in everything what do we not know
+[3574] about China that we would like to know I
+[3576] think the most important thing to
+[3578] understand is where they're going to end
+[3580] up on the the censorship and privacy of
+[3583] these models we come from democratic
+[3587] countries we have an
+[3590] expectation that companies can build
+[3592] something that says
+[3593] anything are they going to be
+[3596] permissive and allow models to make
+[3599] mistakes and hallucinate or they going
+[3600] to shut it down because I think if you
+[3603] know that you know whether or not China
+[3605] has a shot one of the biggest nightmares
+[3608] that they have is Free Speech it's the
+[3611] exact opposite of that vulnerability we
+[3613] talked about earlier can you imagine XII
+[3616] ping going out and saying
+[3618] country we've lost our advantage in AI I
+[3621] need your help never ever it's always
+[3625] going to be we're the greatest we're the
+[3627] best everyone's going to know
+[3628] differently but they're all going to
+[3629] have to tow the party line right now
+[3632] because of that I think it's really hard
+[3634] for them to just allow these models to
+[3638] to say anything say you know the US is
+[3641] great and better at that that's a bad
+[3642] thing for them and so that's going to
+[3644] really tell you a lot about the AI story
+[3646] in China and so if they aren't
+[3648] permissive of uh more open truthful
+[3651] models then they're inherently
+[3653] disadvantaged you're saying well look
+[3656] what um I I forget if it was was it Jack
+[3659] ma who got in trouble with the CCP yeah
+[3662] yeah um if they aren't more permissive
+[3666] than if you are running a Chinese tech
+[3668] company your fear is that you become
+[3670] Jack ma that's really going to stifle
+[3673] Innovation if I was in China right now
+[3676] I'd be looking for the exit for how I
+[3678] could do like if if you're craft is AI I
+[3681] would want to do that someplace that's
+[3682] supportive do you really buy that they
+[3684] don't have access to Blackwell this is
+[3686] China I think XI jinping's like well
+[3688] sorry no
+[3690] Blackwell well I I don't I don't think
+[3692] it matters on whether not they
+[3694] physically have it because right now
+[3696] most of the cloud providers are happy if
+[3697] you swipe a credit card to rent it to
+[3699] you but there is limits to renting no I
+[3702] I'm na I I think if you so um one of the
+[3706] concerns right now is about um uh
+[3709] Malaysia or Singapore that region over
+[3711] there being a place where people are
+[3713] deploying gpus with the wink wink like
+[3716] we're not going to rent it to China
+[3718] right um but that's that's a belief that
+[3722] a lot of people are doing that otherwise
+[3724] that's a lot of gpus for that region
+[3726] that feels like it's even more of a
+[3728] safety net just in case the tap ever
+[3730] gets turned off at the hyperscalers
+[3732] because right now um you could just
+[3734] write a check to any of the hyperscalers
+[3736] and say I need these chips they'll
+[3738] deploy them and you can run on them
+[3739] doesn't really matter where you're
+[3741] coming from I mean if you're a
+[3742] sanctioned country no China's not
+[3744] sanctioned okay so we have China where
+[3747] China is obviously in terms of
+[3748] innovation and actually proving that
+[3750] they they are in the race we have the US
+[3752] and then we have Europe which feels like
+[3755] it's languishing yeah is this the
+[3757] ultimate na in Europe's coffin we talked
+[3759] about how grock almost
+[3760] died but we had the right technology all
+[3764] along we're just waiting for the thing
+[3766] for for the llms to arrive and I think
+[3769] Europe's very similar I think Europe has
+[3773] amazing talent amazing Talent um but
+[3778] that Talent leaves and goes to the US or
+[3780] other
+[3781] places so the question is how do you
+[3784] have Europe's llm moment how how do you
+[3788] position yourselves and it's it's not
+[3790] that complicated the problem is when you
+[3792] surround yourself you become the average
+[3795] of your five closest friends right if
+[3797] your five closest friends are like
+[3800] that'll never succeed ah you should just
+[3802] keep your job ah startups they're
+[3804] terrible then you're going to be risk
+[3806] averse but if your five closest friends
+[3808] say you should do it that's great I
+[3811] support you then you're going to be more
+[3813] likely to do a startup and even in
+[3815] Silicon Valley people make that
+[3818] transition from the big tech company to
+[3821] the startup and it's hard right they're
+[3824] you know comfortable right they're
+[3826] making those crazy salaries the the big
+[3829] companies take care of them and they
+[3832] have a fiduciary obligation to their
+[3834] family how do they make that that leap
+[3837] and it's because you've got tons of
+[3839] entrepreneurs trying to hire them and
+[3841] they hear the pitch all the time and
+[3843] they get used to it right they also see
+[3845] the success around them and then VCS
+[3848] come in and try and close some of the
+[3850] candidates in the early stage too right
+[3852] Europe needs the same thing you need a
+[3854] place where people are surrounded just
+[3857] surrounded by entrepreneurial people who
+[3860] are risk on and who aren't going to try
+[3862] and talk people out of joining a startup
+[3865] from regulation perspective Europe is
+[3868] you know unbelievably efficient in the
+[3870] Masters of Regulation you know I was
+[3872] speaking someone the other day in the EU
+[3873] has supposedly hired 1500 people for AI
+[3875] safety and policing um what would you do
+[3879] if I put you in charge of European AI
+[3882] regulation well I wouldn't waste my time
+[3884] regulating something that doesn't exist
+[3886] instead of regulating what are you going
+[3888] to
+[3889] promote you want to promote risk-taking
+[3891] you want to promote that onclave of
+[3893] people are risk on so I was just
+[3895] visiting station F yesterday amazing
+[3898] macron was there it was like full of
+[3900] people right vibrant you feel it I would
+[3903] and I was talking to the the person who
+[3904] runs station f roxan um and Xavier Neil
+[3908] and with roxan we were talking about
+[3910] what about a city F what about a place
+[3913] where there's you start off with like
+[3915] 10,000 people in in the center right a
+[3917] little radius and then once that's full
+[3920] you expand it once it's full you expand
+[3921] it and so on to get to like a million
+[3924] people in Europe
+[3926] who are all risk on the little Silicon
+[3929] Valley here and I would give it special
+[3932] economic dispensations I would allow
+[3935] everything that employers need I would
+[3938] make it simple and I would say you know
+[3939] what if you don't want to buy into that
+[3940] that's fine go to other regions in
+[3942] France go to other regions in Europe but
+[3945] if you want to participate in what is
+[3947] going to be the biggest technological
+[3949] revolution in human
+[3951] history this is the city for you you
+[3953] know inherently punishing incumbents
+[3956] then and what I mean by that is if we
+[3958] are talking about uh I'm just using this
+[3960] as an example uh AI Insurance
+[3962] Underwriters startups yeah there's many
+[3965] companies that are going after insurance
+[3966] underw writing in an AI and you are
+[3968] giving them benefits like that you are
+[3970] inherently punishing some of the biggest
+[3972] providers of insurance in your region
+[3974] you're inherently punishing people who
+[3976] hire 200,000 people that feels unfair so
+[3979] there is no right to be an incumbent
+[3982] especially a slothful incumbent that is
+[3984] not reacting to
+[3986] disruption and you want to encourage
+[3989] disruption and this is one of the things
+[3991] in Silicon Valley you can move from one
+[3993] place to another there there are no I
+[3995] mean we had non-s solicits when I
+[3997] started but even that's gone right so
+[3999] that free movement of people is very
+[4002] important are you allowed to start work
+[4004] straight away straight away but not
+[4006] before if you start before that's we
+[4009] have months months six months there's no
+[4011] such thing and so in that region I would
+[4013] say you can immediately start like
+[4015] literally the next day that is so good
+[4017] we have to wait 6 months it's not good
+[4019] if you are a company right now it it
+[4022] feels like okay well it's harder to
+[4023] poach but what does that do it
+[4025] suppresses wages it's harder to hire
+[4027] someone they're less likely to move
+[4029] there's less competition it suppresses
+[4031] wages and by the way the company has to
+[4032] pay for the six months
+[4034] anyway it makes no sense at all I so I I
+[4038] totally get you and understand that um
+[4040] can I ask you you know you mentioned
+[4041] like what would you promote a lot of
+[4043] people would promote I love the way you
+[4045] said risk gone um being a European I
+[4047] actually thought first safety and
+[4049] regulation uh but specifically safety so
+[4052] uh sticking with that all that Dario
+[4054] will talk about these days is
+[4057] safety is he losing a step by being so
+[4061] focused on safety when bluntly his
+[4063] competitors are talking about product so
+[4066] safety matters in AI it's a little bit
+[4068] like nuclear power lots of Pros lots of
+[4072] cons I'm worried about different things
+[4075] than I think um than Dario is is worried
+[4080] about I'm more worried about people
+[4081] voluntarily giving up their
+[4083] decision-making Authority because it's
+[4085] so easy and this is what I mean by
+[4086] preserving human agency in the age of AI
+[4089] good analogy is you you probably know
+[4092] plenty of wealthy people and the
+[4094] struggles they have bringing up children
+[4097] with wealth I refer to it as Financial
+[4099] diabetes right you you have children who
+[4104] aren't in ented to to they're not
+[4107] they're not going to strive to succeed I
+[4110] was very fortunate when I was growing up
+[4112] and so I I actually just told this story
+[4114] for the first time today so no one's
+[4116] heard it but um I was fortunate because
+[4119] my father lost all of his money multiple
+[4121] times just and I've heard you say the
+[4122] same thing yeah and he would sell a
+[4126] billion dollar life insurance policy and
+[4128] he would get all the commissions from
+[4130] that and you would have tons of money
+[4131] and then you would spend it all and so
+[4133] there was one time we were living in a
+[4135] $20 million
+[4137] mansion and there was a couple of times
+[4140] where we ordered food he would talk to
+[4142] the delivery guy and he would convince
+[4144] him to to give us the food and he would
+[4145] pay him back later because we'd get
+[4146] money later but um this time he was like
+[4151] so despondent he sort of locked himself
+[4153] in his office and wouldn't come out my
+[4155] little brother came to me and said I had
+[4156] to go and talk to the Chinese food
+[4158] delivery guy and convince him to uh to
+[4160] give us the food and I was like mentally
+[4164] preparing how to convince him to do it
+[4166] and I I walk out and I walk up to him
+[4168] and I'm like getting ready to do my
+[4170] whole Spiel and he hands it to me and
+[4171] I'm like I don't have the money right
+[4173] now he's like oh yeah pay me later I
+[4174] didn't have to I fortunately didn't have
+[4176] to do anything he just trusted because
+[4177] we're living in a $20 million mansion
+[4179] but that happened multiple times and
+[4181] when that happens multiple times like I
+[4183] have a friend who was homeless once for
+[4185] a couple of weeks and he'd almost been
+[4187] homeless a couple of times and he said
+[4189] the best thing that ever happened to him
+[4191] was that he was homeless for a couple of
+[4192] weeks because he survived it and he's
+[4194] like I've been through it I always
+[4195] viewed this as the worst thing that
+[4197] could ever happen in the world but now
+[4199] that I've been through it I can survive
+[4200] it I'm not worried anymore I think we
+[4203] live incredibly comfortable lives way
+[4206] too comfortable most people don't have
+[4208] to go through that and so we have the
+[4211] sort of financial diabetes as a society
+[4214] and I think it's going to get worse with
+[4215] AI I think we're really going into an
+[4219] age of abundance very few people have to
+[4221] worry about food security now but what
+[4224] happens if you don't need to worry wor
+[4225] about home security or ending what
+[4227] happens if you can just live a life
+[4229] without
+[4230] working and what is that going to do to
+[4233] your psychology and so as we enter an
+[4235] age of abundance how do we get people to
+[4237] still be making their own decisions and
+[4239] have a fulfilled life do we get better
+[4242] or do we get accepting of good enough
+[4245] and what I mean by that is you know now
+[4247] bluntly with with the majority of
+[4249] schedules we will start with open Ai and
+[4252] we will do deep research and then we
+[4254] will kind of use different prompts
+[4256] depending on different guests and then
+[4258] we supplement it with a huge amount of
+[4260] research from speaking to chath and
+[4262] speaking to scooter and speaking to
+[4263] every in between we care about it being
+[4265] good enough first and then great
+[4268] later with all the references most
+[4270] people will actually just be happy with
+[4271] good enough and get away with it do we
+[4274] as a human society get happy with good
+[4276] enough when we hire we hire for
+[4281] something that we call booking the win
+[4283] early so one of the most important
+[4287] driving forces for people is loss bias
+[4290] when you have something you don't want
+[4292] to lose it people are less likely to go
+[4295] after something that they they've
+[4296] already had and you you did grow up in a
+[4299] in a family that was well off and then
+[4301] you lost that that might be part of the
+[4302] drive because you want to get back to it
+[4305] when we have an engineer that we're
+[4307] hiring and there's a room full of people
+[4309] who are saying you know if we do this
+[4311] thing we could be twice as fast I want
+[4314] that engineer to to hear wait if we
+[4316] don't do that we're going to be half the
+[4317] speed we could have been the loss bias
+[4320] right book The Win early because it's
+[4322] possible it must be done I think that's
+[4325] a smaller segment of the population
+[4328] those are the people who deliver amazing
+[4330] things that no one else is going to do
+[4332] because everyone else is like that's
+[4333] good enough however I think with AI it's
+[4336] so easy to create a prototype to stand
+[4338] out you're going to need to do that and
+[4340] one of the things that's happened with
+[4342] the ability to communicate more freely
+[4344] and see what other people are doing like
+[4347] can you think back to what the
+[4349] restaurant experience was 20 years ago
+[4351] versus what it is now the average
+[4353] restaurant is better than what high-end
+[4355] restaurants were 20 years ago because
+[4358] people see all of the the stuff that
+[4361] others are doing the best and they start
+[4362] to expect that and you have less
+[4365] localization more globalization you have
+[4367] to compete at the highest ends and AI is
+[4370] no exception there's going to be 40
+[4373] people creating that app you know that
+[4375] you have to polish it in order to stand
+[4377] out listen dude I could talk to you all
+[4379] day I do want to do a quick five what do
+[4381] you believe that most around you
+[4382] disbelief I'm going to go with anti-f
+[4385] founder mode here I'm anti-f founder
+[4387] mode I believe in delegation I think
+[4390] when you are telling people how to do
+[4392] their
+[4393] job that is an indication that it's not
+[4396] not necessarily a problem with you it
+[4398] could just be that that person is not
+[4400] right for that job and it's much easier
+[4403] to just direct them than to go find
+[4404] someone else competent but it also means
+[4407] you probably haven't aligned them so we
+[4410] we align people through this challenge
+[4412] coin um so everyone at grock carries
+[4416] this um 25 million token per second
+[4418] challenge coin and what this is is it
+[4422] tells everyone what we're doing it's an
+[4424] alignment and I can't tell you how many
+[4427] people have showed that to who are like
+[4428] that's awesome and yet no one else is
+[4431] making them and it's heavy it's heavy
+[4433] but but also you know you you you like
+[4436] to say you know the greatest things in
+[4438] life um you know the heaviest things
+[4440] aren't gold or whatever yeah I know gold
+[4442] but I'm made decisions exactly well this
+[4444] was a very made decision because I had
+[4447] to consolidate everything we were doing
+[4450] into one very simple message of we're
+[4452] going to get to 25 million tokens per
+[4454] second and then engraved it on a coin on
+[4457] this tiny amount of space right here and
+[4459] gave it to everyone at grock and now
+[4461] whenever we're in a meeting and
+[4462] something doesn't help with this they
+[4464] can just tap their coin on the table and
+[4467] be like no no no that's not the way this
+[4468] is going to go so is everyone wrong on
+[4470] Founder mode then I think that's what
+[4472] you do when you don't have the quality
+[4474] of people working for you you need a you
+[4475] need the right gearing ratio between you
+[4478] and your direct reports it's a really
+[4480] unfair question but I have to ask it how
+[4482] do you analyze elon's attempt to buy
+[4484] Twitter uh not buy Twitter to buy open
+[4487] AI so I was sitting at the Elise Palace
+[4492] or however I pronounce it um at the
+[4495] dinner with mcon and Sam mman so it was
+[4500] it was mcon it was JD Vance and it was
+[4502] Sam Alman and frankly I think um I think
+[4507] Elon was a little jealous that Sam Alman
+[4509] was sitting next to JD Vance and it
+[4512] wasn't him and because it was right
+[4514] around the time that Sam Alman was
+[4516] speaking that he announced it and
+[4518] frankly I thought Sam's tweet response
+[4520] part of it was pretty good I would have
+[4522] probably said instead of whatever he
+[4524] said about 9 billion I would have said
+[4526] yeah I'm going to take Twitter public at
+[4528] $420 a share it was just it was
+[4531] attention grabbing right some people
+[4533] can't stand to not be getting attention
+[4536] and so my revenge on this is to give as
+[4538] little attention as possible so let's
+[4540] move
+[4541] on what would you do if you knew you
+[4544] couldn't fail I would put
+[4546] in 100% of the orders for every single
+[4551] chip we could possibly manufacture
+[4553] because right now the demand is
+[4556] unlimited but every time you triple you
+[4559] find the same number of problems and so
+[4560] you got to keep you got to do it a
+[4562] little judiciously but if I knew that no
+[4565] matter what problem was going to come up
+[4567] that we didn't need to be safe at all I
+[4568] would just go great we're going to go
+[4570] build 20 million chips done in 10 years
+[4574] time is NVIDIA 3x bigger 10x bigger or
+[4578] 50x bigger I I think they will be bigger
+[4581] I couldn't tell you a number training
+[4584] will become more important I wouldn't be
+[4586] surprised if they were 3x bigger I also
+[4589] wouldn't be surprised if they stayed
+[4591] around the same wow it's it's so hard to
+[4594] to tell where things are going because
+[4596] remember a lot of assumptions in in the
+[4598] investment in Nvidia were that they were
+[4601] going to run away with the entire Market
+[4604] including the inference Market including
+[4605] the inference market and they just
+[4606] haven't built the right thing for
+[4607] inference I do think that as a weighing
+[4612] machine they should increase in value
+[4614] but so much popularity contest applied
+[4617] to it that I don't know if if they're
+[4620] they might need to grow to get to to the
+[4622] where they
+[4623] are you know they might need to grow
+[4625] their revenue to get to where they are
+[4626] but it's a pretty fair multiple given
+[4628] everything going on so I couldn't tell
+[4630] you like the popularity contest skews
+[4633] everything what's a crazy AI prediction
+[4635] you have that everyone else think is
+[4637] science fiction I would assume that in
+[4639] the next 10
+[4641] years and I know this is going to be
+[4643] crazy but you you you saw that picture
+[4646] of me and my weight loss right
+[4647] unbelievable dude 70 pound 70 pounds
+[4650] yeah but I was on monjaro so if you know
+[4654] anyone is overweight and it's hurting
+[4656] their health get them on Manjaro as soon
+[4658] as you can it works what is mjar it's
+[4660] one of those uh glp Inhibitors one of
+[4662] the the weight loss drugs that have
+[4664] become popular recently it works but my
+[4667] crazy AI belief is that if it is
+[4670] possible if it is possible to
+[4674] significant ly slow or stop
+[4676] aging I think that you will have a mjo
+[4679] moment in maybe the next 10 years it
+[4682] because that came out of nowhere all of
+[4684] a sudden you know you you could just
+[4686] lose weight something finally worked and
+[4689] it's worked for a bunch of people you
+[4691] probably know a bunch of people who've
+[4692] lost weight yeah exactly and I don't
+[4695] know if it is possible to slow or stop
+[4697] aging right some some wear and terror is
+[4699] a real thing and it might just be
+[4701] impossible but if it is impossible to
+[4704] slow or stop a
+[4705] if then I think in the next 10 years we
+[4707] will do it and it will be sudden it'll
+[4709] be like the monjaro um um and the other
+[4712] one as well the other it'll be like that
+[4714] moment I don't see how it is not
+[4717] possible like when you look at the
+[4719] advances that will come in medical
+[4721] research I don't see how it's not
+[4723] possible that we will at least extend
+[4725] you know longevity by 60 years I mean
+[4729] diary have will live to 150 I don't see
+[4731] why that's impossible I don't either but
+[4734] I also don't know that it is possible
+[4736] and and until I know that I'm going to
+[4738] I'm going to stick that conditional in
+[4740] there and say if possible uh what have
+[4743] you changed your mind on in the last 12
+[4745] months and and this is less of a a
+[4747] mental one and more of an emotional one
+[4750] we didn't have product Market fit for
+[4751] seven years yeah like that is terrible
+[4757] like the morale like when you find
+[4759] product Market fit the world is brighter
+[4763] the birds sing like I feel like hugging
+[4766] people you sleep I sleep life is better
+[4770] and you know I forget if it was you or
+[4772] someone else someone was talking about
+[4773] type one and type two happiness yeah and
+[4776] I think there's a I think there's a
+[4777] third so as a Founder The only type of
+[4781] happiness you get is this third type
+[4784] which is future happiness the other two
+[4786] the common ones
+[4788] are um the present is happy right and
+[4792] the the other one is you went through
+[4794] some real crappy stuff but the memories
+[4798] are make you happy right so there's past
+[4800] there's present and there's future as a
+[4803] Founder you're living 100% in future
+[4806] happiness when you get product Market
+[4808] fit you start to get um you start to get
+[4812] that past happiness and when you start
+[4813] to get that revenue and everything then
+[4815] you end up getting the the the present
+[4818] happiness and it it changes everything I
+[4821] love that if you had to bet on one
+[4823] company other than grow to define the AI
+[4825] era who would it be I would probably
+[4829] focus more on the companies that that
+[4832] you haven't heard
+[4834] about um and I don't know what the
+[4836] companies are but I can tell you what
+[4837] they're going to do and I can tell you
+[4839] what each one of them will be Co the
+[4841] first one will be the one that solves
+[4842] the hallucination problem the second one
+[4845] will be the one who is best able to
+[4849] break down sub goals for agentic I think
+[4851] agentic comes after you solve the
+[4854] hallucination problem because otherwise
+[4856] you got these long chains where you can
+[4857] introduce hallucinations it'll kind of
+[4859] work but it'll work much better after I
+[4861] think the next one is what I what I call
+[4864] the invent stage so right now the way
+[4867] LMS work they make the most probable
+[4870] prediction it's actually kind of amazing
+[4872] it's like I'm going to take an entire
+[4874] novel I'm going to delete you and you've
+[4876] got um a detective you know Murder
+[4879] Mystery and you get to the point where
+[4882] the detective says and the murderer is
+[4885] and it can actually predict it it had to
+[4887] understand everything right but it's
+[4889] going to give you the most probable
+[4892] answer and that's not good for invention
+[4894] it's not good for you know art writing
+[4898] the reason that the writing from llms is
+[4900] terrible is because it's predictable so
+[4902] how do you actually say something that's
+[4904] nonobvious but is obvious when you see
+[4908] it we don't even have the right word for
+[4910] it right non obvious but
+[4912] obvious and that is going to unlock
+[4916] invention and then the final one is what
+[4919] I call the proxy stage when someone
+[4921] makes it so that models can just make
+[4923] decisions for you you can proxy your
+[4925] decisions like the decision to do do
+[4927] this interview right like other things
+[4929] had to be canceled the flight had to be
+[4931] booked we had to get a ride over
+[4934] right you would trust an EA or a chief
+[4937] of staff to make that decision you
+[4938] wouldn't trust in llm and that's the
+[4940] final stage I think before you get to
+[4941] gener of AI but each company that does
+[4944] that is going to be a defining company
+[4946] can I ask you you said that we're going
+[4947] to have to fix hallucination before we
+[4949] get like efficient agentes does that
+[4951] mean that money going into a g say will
+[4953] be burned no I I let's take an example
+[4956] on hallucination so the examples I gave
+[4958] you were medal medical diagnosis and law
+[4960] were two areas that will be unlocked
+[4963] once we get rid of the hallucinations
+[4965] but there are um startups like
+[4967] perplexity that are doing just fine
+[4969] right now even though there's
+[4970] hallucinations because it's not high
+[4972] risk and it you know it's for
+[4975] entertainment only but but if you click
+[4976] those links you can check them and and
+[4978] it works kind of okay it depends on how
+[4981] risky the industry is that you're in on
+[4983] whether or not you can get started
+[4985] trying to position for the wave early
+[4987] and generating um but if you're in the
+[4990] right position we were in the right
+[4993] position for seven years and the wave
+[4995] came so that money isn't incinerated in
+[4998] fact that recent deal we just announced
+[5000] is more Revenue than the money we've
+[5002] raised so does that how does that cash
+[5006] hit I know it's a ner throughout the
+[5008] year throughout the year yeah but it's
+[5009] this year there potentially more next
+[5011] year lot more what is that contract in
+[5014] three years if we sell everything that
+[5017] we possibly can this year it is many
+[5020] billions but just from the capacity
+[5022] alone there's there's tens of billions
+[5025] of capacity of of Hardware that we could
+[5027] build next year in these sort of deals
+[5029] but we're also doing it at you know high
+[5033] volume low margin so if we were talking
+[5035] about GPU sales and and GPU prices I
+[5038] mean we'd be talking about hundreds of
+[5039] billions we're just not charging that
+[5041] much final one for you the thing that
+[5043] I'm singly most excited for is actually
+[5046] like um disease Discovery in terms of
+[5048] drugs you obviously my mother has Ms and
+[5051] that's incred it was always taught to me
+[5052] that it was incurable and actually like
+[5054] now it's like actually maybe not what
+[5057] are you singly most excited for we went
+[5061] from a phase where people were Hardware
+[5063] Engineers to they were software
+[5065] Engineers to be a hardware engineer is
+[5068] ridiculously difficult the the training
+[5070] you have to get things right there's a
+[5071] real expense if you get it wrong
+[5073] becoming a software engineer so much
+[5076] easier all you have to do is get a
+[5077] little bit of time on a machine and you
+[5078] can teach
+[5080] yourself nowadays you can just download
+[5083] um manuals from the internet um or or
+[5086] tutorials from the Internet or or
+[5088] whatever I think prompt engineering is
+[5090] going to unlock a huge swap of human
+[5093] society there's 1.3 1.4 billion people
+[5096] in Africa who know how to who know how
+[5100] to speak and if you were to give them
+[5102] access to a tool that they could create
+[5107] applications live just by speaking to it
+[5110] that would be another 1.3 1.4 billion
+[5113] potential entrepreneurs there's 8
+[5115] billion people on the planet and the
+[5117] difference is Hardware was just
+[5119] ridiculously difficult to it was Arcane
+[5122] knowledge that's hard to get software
+[5124] was plentiful language you already know
+[5126] it you don't have to learn a thing
+[5129] what's that going to do for Venture
+[5130] what's that going to do for
+[5132] entrepreneurialism Jonathan I love
+[5133] talking to you it's always such a broad
+[5135] and wide ranging discussion thank you so
+[5137] much for putting up with me in person
+[5139] and I've loved it awesome so glad to be
+[5141] here

@@ -1,0 +1,1322 @@
+[0] I really think that human effort is
+[3] still incredibly underrated. All of the
+[5] success that I've gotten is by obsessing
+[8] over simple ideas and just pushing them
+[12] way harder and further than it would
+[15] seem reasonable or possible. And
+[17] occasionally having to go against the
+[21] grain and having to go against common
+[23] wisdom. So there's an element of
+[26] being a rebel.
+[28] >> First of kind is a story of design and
+[30] [music] tech told by its pioneers.
+[32] Powered by Framer, Noon, Rockbot, Ramp,
+[35] Vercel, Granola, and Profound.
+[38] All of whom believe the future belongs
+[41] to designers who build.
+[45] We're kicking off season 3 [music] with
+[47] Guillermo Rauch, the founder CEO of
+[49] Vercel. And most people who hear about
+[52] this are going to be like, well,
+[54] wait. I thought this is a show about
+[56] designers, right? But in practice, you
+[58] know, we've always been very consistent.
+[60] We said first of kind is a story of
+[61] design and tech told by its pioneers.
+[64] And so I feel like there's an argument
+[66] to be made that you are not just chief
+[69] executive, you're also chief designer.
+[71] Yeah, yeah, yeah. And and so I kind of I
+[74] know I know my answer for for that
+[76] question.
+[77] I want to start off just like, what is
+[79] your answer for why G is a first of
+[82] kind?
+[82] >> I think more so than a lot of my
+[84] engineering peers I've always looked at
+[87] building a product or engineering itself
+[89] as a design problem. I've always worked
+[91] backwards from what is the interface of
+[94] this thing to the world using design
+[96] tools to model my thinking. So even when
+[99] I designed the first command line
+[101] interface CLI for Vercel to deploy, I
+[105] started out with laying out artboards on
+[109] Sketch
+[110] of the application saying like okay,
+[111] when you run VC deploy, this is what you
+[115] get and this is what happens when this
+[116] other thing happens. But I've also liked
+[119] the engineering-centric approach of you
+[122] can't just
+[124] design perfect things in a vacuum.
+[126] Your little design tool needs to
+[128] confront reality as soon as possible,
+[130] which is kind of like the mission of
+[131] Versel if you think about it is kind of
+[133] a Polish so quickly
+[135] that some other human agent some system
+[140] will give me feedback that will inform
+[142] that next step. And so I think it is
+[145] about the convergence in many ways of
+[147] design and engineering.
+[149] I dreamt of a platform that will bring
+[152] both closer together. I think another
+[154] important bit about my past is
+[157] when I was a kid in Argentina
+[160] my dad bought us computers
+[162] and he brought a vision to my brother
+[164] and I of software will eat the world. He
+[167] didn't have the language of Andreessen
+[169] yet, but that was his whole thing.
+[172] He didn't know how to write software,
+[173] but he knew that people that could would
+[176] have some kind of advantage. That was
+[178] kind of his contribution. My mom's
+[179] contribution was people that know
+[181] English, speak English fluently will
+[184] have an advantage. And you learn those
+[185] two things simultaneously. Yeah, so
+[187] funny enough as fate would have it I
+[190] needed to master English to teach myself
+[193] programming. The courses, the manuals,
+[195] the documentation was only available in
+[197] English. And the software bit was they
+[200] also a very interesting challenge for
+[202] us. We didn't have the money to purchase
+[204] software licenses. We leaned into open
+[206] source. We leaned into hacking. Can I
+[208] download something, fork it, make it my
+[211] own? And so it really pushed that
+[214] entrepreneurial bit, significant bit
+[217] into into our mindset. But when my dad
+[219] offered up all of this potential
+[220] programming languages, he would come
+[222] home and say like, I heard from someone
+[223] at the office or so and so about Java or
+[226] about C++.
+[228] I tried a lot of them.
+[230] It's like I had a little bit of a taste
+[232] of everything.
+[233] >> Yeah.
+[233] >> And what I really fell in love with was
+[235] things that leaned towards the user
+[237] interface.
+[239] So, one of the critical moments in my
+[241] upbringing was when I realized one,
+[244] the web is this universal platform. The
+[248] web is more hackable. The web browser is
+[251] also an IDE and a design environment of
+[254] sorts. I think a lot of people might
+[256] have the experience of like, "Oh, you
+[257] can inspect element. You can view
+[260] source. You can even change some text."
+[262] That's kind of wild that every web page,
+[265] even the ones you haven't made, are
+[267] modifiable by you. You can redesign
+[269] them. You can change the colors. Because
+[271] I leaned heavy into front-end
+[274] engineering, I think you know, I kind of
+[277] was a person that could bring these
+[279] worlds closer together.
+[281] Designers
+[282] would love to see their ideas take shape
+[286] and and become alive. And the easiest,
+[289] least friction way to do that is through
+[291] the web browser and through the
+[293] introduction of front-end engineering
+[294] concepts.
+[295] >> Do you remember the first time you did
+[296] view source? Because I feel like that
+[298] was like a voice from on high. This idea
+[301] that like you can see something go
+[303] anywhere on the web, click view source,
+[305] and then be able to reverse engineer
+[308] what's in front of you.
+[309] >> Yeah.
+[310] I remember now I haven't thought about
+[312] this in such a long time, but I I like
+[314] visions are flashing back. What really
+[316] got me excited about the web was that it
+[319] was not for static documents. Contrary
+[322] to the deepest wishes of Safari and
+[326] Apple. I think when they designed
+[328] Safari, you see it even in the gesture
+[330] when you when you go back, they think of
+[333] this as a digital book. That gesture,
+[336] that pain that you drag, oh, you're
+[337] dragging a page.
+[339] >> Yes.
+[339] >> And I remember when Google came out with
+[341] Gmail, this was literally the most
+[344] important breakthrough in in this
+[346] history of dynamic HTML. Because they
+[349] they said, "Well, you could download
+[351] Microsoft Outlook and check your mail,
+[354] or you can just go to gmail.com or run
+[356] the whole application there." And most
+[358] people think of it as like, "Oh, it was
+[360] infinite storage that made Gmail
+[361] magical." Yeah. But for me, Gmail was my
+[363] siren call.
+[364] >> Yeah.
+[364] >> When that came out, it was this
+[366] convergence of like Ajax.
+[367] >> Yeah.
+[368] >> It was this realization that you can
+[369] create desktop software-like experiences
+[371] inside the browser. And therefore,
+[373] anybody with a browser could use your
+[376] software. And it felt like overnight,
+[378] the CD-ROM was done.
+[379] >> Yeah.
+[380] >> It's like we are no longer shipping
+[381] software physically. This is how we're
+[383] going to be shipping software.
+[384] >> that convergence of two things. Because
+[386] on one hand, you have the idea of
+[388] unlimited storage that comes from the
+[391] cloud.
+[392] So, if you say my emails interface the
+[396] web browser, and that goes to a server,
+[398] and that server is in the cloud, all of
+[401] these elements are connected, which lead
+[402] to such a better user experience, right?
+[404] You have You don't have to worry about
+[405] backups. You don't have to worry about
+[406] storage. But the idea that the web page
+[409] would come alive with JavaScript, that's
+[412] what really got me into this world. And
+[414] I remember taking jobs as a freelancer,
+[416] because when I was in high school, I had
+[418] these two competing priorities. I had to
+[420] like, you know, get good grades at
+[422] school, and I was literally was just
+[424] working almost every night with my
+[427] clients in Europe as my, you know,
+[429] second life. And I remember I would take
+[431] jobs specifically where I could go
+[435] deeper into this interests. They never
+[437] asked for Ajax to make the CRM interface
+[441] faster. I wanted to create a
+[443] higher-quality product that was more
+[445] responsive. And then the other thing
+[447] that it was kind of like a domino
+[449] reaction, because that also led me to
+[450] the world of real time. Gmail at one
+[452] point said, "Well, why are we stopping
+[454] at page refreshes? Why are we stopping
+[457] at pulling emails on a list and clicking
+[460] them? Can we enable real-time
+[462] communication between people? And they
+[464] launched Gchat almost at the same time,
+[466] perhaps some overlap with Facebook chat.
+[469] >> Mhm.
+[469] >> And so the browser becoming now the
+[471] medium by which people can connect in
+[474] real-time also blew my mind. And once
+[477] again, it brought focus to a certain set
+[480] of engineering skills
+[482] that would enable that kind of
+[483] experience. So, if I was already excited
+[486] about JavaScript and front-end, I got to
+[489] even more excited because in order to
+[491] create this real-time client-server
+[494] communication, I realized I'm going to
+[496] have to run a lot of overlapping code.
+[499] I'm going to have to run some code on
+[500] the server. I'm going to have to write
+[502] some code on the client and I can use
+[504] JavaScript as a lingua franca of this
+[506] communications.
+[508] And that led me to the world of Node.js,
+[510] socket.io. I created a lot of
+[512] foundational technology for the web to
+[515] enable this kind of like real-time
+[516] communication experience. And again,
+[518] you're only interested in this if you're
+[520] sort of dreaming up what the product
+[522] experience is going to be.
+[524] I got excited about real-time document
+[526] collaboration, real-time and drawing,
+[528] real-time chat what would eventually
+[531] become, you know, one of the most
+[533] important generations of software. I
+[534] think Web 2.0 was underlined by let's
+[538] make things more real-time,
+[539] collaborative, notifications, Facebook,
+[541] all these things.
+[542] >> And then when when you think about like
+[544] your own honing of your design sense,
+[547] how much was reverse engineering a part
+[549] of it? Because I feel like one of the
+[550] things that comes to mind when I think
+[552] about the genesis of Vercel, it it it
+[554] really started from this impulse to
+[556] dogfood. This it is this this bias
+[558] towards building infrastructure that you
+[560] kind of need first and foremost, but
+[562] then probably every other developer that
+[565] encounters this problem needs. Like, how
+[567] does that kind of roll into the design
+[568] philosophy of of Vercel and of of of
+[571] you?
+[571] >> Yeah, there are a lot of elements of
+[573] Vercel which are about can I disseminate
+[576] this power as broadly as I can? That's
+[579] why I got into open source. You know, it
+[580] was kind of possible to create a
+[582] real-time communication system, but only
+[583] Google and Facebook could do it,
+[585] especially at that scale. So, that's why
+[587] I created Socket.IO. And then I realized
+[590] if you're someone that maybe doesn't
+[593] have a strict title, you're not a
+[596] designer, you're not
+[598] a front engineer, you're not a back-end
+[599] engineer, you're not a DevOps engineer,
+[601] you're a person with an idea,
+[604] and you want to ship.
+[606] What is the tooling and infrastructure
+[608] for those people?
+[609] And you could argue, well,
+[611] there were things before Vercel like
+[613] Squarespace. They allowed someone to put
+[616] up a website online. And there were
+[618] things like Kubernetes and very, you
+[620] know, deep tech like infrastructure
+[622] systems. But there was no system for
+[625] everybody. And that could scale up to
+[628] the largest and most ambitious ideas and
+[630] scale down to just make it magical. Make
+[634] the experience of deploying an
+[635] application one command. So,
+[639] there was an overlapping interest there
+[641] of I wanted to democratize this to as
+[642] many people as possible. And I also want
+[645] to take on the engineering and cognitive
+[647] challenge of simplifying something that
+[650] takes weeks or months.
+[652] Can I bring it down almost
+[654] mathematically to its like physical
+[657] limit in on latency and its simplest
+[661] design from interface perspective, which
+[663] ended up being for us one command
+[665] deploy.
+[666] >> So much of like what you focused on was
+[669] around this end user experience. Even
+[671] the way that you talk about feedback and
+[673] the qualities of products that really
+[675] resonate with you, it's always with a
+[677] designer's eye. You're an aesthete
+[679] through and through.
+[680] Like what advice do you give founders
+[682] when you talk to them about how they
+[683] develop their taste, their sense of
+[685] discernment, how to essentially start to
+[687] become
+[688] the chief designer of their own
+[689] businesses?
+[690] >> Yeah, I think there's something
+[691] tactical,
+[692] which is
+[694] I call it exposure hours.
+[696] There's something about absorbing a lot
+[698] of information about the field that
+[700] you're interested in
+[702] and creating a huge amount of empathy
+[704] with the end user.
+[706] And so, to your point, I think there's
+[708] something about you are the end user of
+[709] your product and having a
+[712] dissatisfaction
+[713] with the status quo. And so, I had that
+[716] ability to actually know how to assemble
+[720] five different systems to deploy a
+[723] production-grade application.
+[725] But, I also had that oh my god, like it
+[728] could be so much better. It could be so
+[730] much faster. This is not a good
+[731] experience. And so, I had my own
+[733] exposure hours, but I also had a huge
+[736] amount of empathy for every developer in
+[738] the world, and I still do. People praise
+[740] us for our developer experience, and
+[742] every time I see a developer head even
+[745] one minor edge case, I go and sweat the
+[747] details. Even today, someone sent me a
+[750] DM saying, "Hey, I added this
+[752] collaborator to this project, hit
+[754] deployed, and in this particular PR,
+[757] because of this edge case, the check
+[758] didn't trigger." And I was like, "This
+[761] is the end of the world." You know, for
+[763] I think for a lot of other companies,
+[764] they don't have that pain empathy.
+[767] They're like, "Well, just turn your
+[768] computer off and on again."
+[770] >> Yeah.
+[770] >> And so, I created a set of values
+[771] internally at Vercel to create almost
+[773] like an immune system against that
+[775] status quo or that,
+[777] you know, giving up attitude that I
+[779] think permeates a lot of systems.
+[781] >> Yeah.
+[781] >> And so, I think that design-led mantra
+[785] is not just something that was
+[787] instituted 10 years ago. It's something
+[788] that you fight for every day.
+[790] But, there's also this, I think,
+[791] higher-level concept beyond the exposure
+[794] hours, and I think it's the authenticity
+[796] of the mission. It's about founder
+[800] mission fit.
+[801] I'm not saying that, you know, every
+[803] problem in the world that people are
+[805] going to go out and solve has a deep
+[807] story back to when they were 10 years
+[809] old, but I am very grateful that for me
+[811] it is the case because when I was 10 had
+[814] a Hyper cell, I'd have gotten to where I
+[816] wanted to go faster.
+[818] I always I always tell people a
+[819] hyperlink will travel the world. Your
+[822] brightest ideas one hyperlink away from
+[824] impressing a prospect, getting you
+[827] connected to your next business
+[829] associate, whatever. The The web sets
+[832] your ideas free. I would encourage
+[834] entrepreneurs to try to find that
+[836] authentic thing about their journey that
+[838] cannot be easily replicated, especially
+[840] in the age of AI, right? There's There's
+[843] no substitute for that
+[845] deeply ingrained desire that comes from
+[847] your personal experience.
+[849] >> And what what I hear people talk about
+[850] working with you, the one thing that
+[851] always circles back is how close you
+[853] stay to the metal, right? It There's a
+[855] quality of dog fooding, which I always
+[857] feel like is very like Facebook native.
+[859] It's like we really cared about dog
+[860] fooding. It's like it's got to be good
+[862] enough for me from for us to ship this
+[864] out the door.
+[865] But then they also talk quite a bit
+[867] about you're just relentless about the
+[870] quality. You're right? The details don't
+[872] slip through.
+[873] As a consequence, people then sort of
+[875] learn by osmosis. It's like, "Okay, he's
+[877] always going to focus on this kind of
+[879] visual detail. I need to write a skill
+[881] file to catch that next time we
+[883] actually, you know, deploy a change of
+[884] that nature."
+[885] >> The classic one there is layout shift.
+[887] >> Yes. Yeah.
+[888] >> Which is that, you know, actually this
+[889] is a good example of the overlap between
+[891] design and engineering. Okay. So, layout
+[893] shift is this concept of when you're
+[895] loading an application interface a
+[897] website, things should have a
+[899] predictable paint path. You should have
+[902] a predictable layout. If Imagine the
+[905] classic example I give business people
+[907] is I'm I'm going to go purchase your
+[909] product and I'm about to press buy now,
+[912] and some engineer made a mistake, the
+[913] page shifts down, instead of buy now, I
+[916] click on an ad or I go out of the
+[918] website or I go back. And so, you lost
+[920] my sale.
+[921] And so, this is bad because now when you
+[924] start really paying attention, you
+[925] realize that a product that janks and
+[928] jitters around when you load it just
+[930] doesn't feel good or doesn't look good.
+[932] >> Right.
+[932] >> It also has the business element of
+[934] like, we know from the data that if you
+[937] are not doing your layout work well,
+[940] you will your conversions will decrease
+[942] or whatever. It also has the engineering
+[945] side of it because you're making the
+[947] machine do so many recalculations.
+[951] >> The poor web browser, which is a marvel
+[953] of engineering, is like, oh, okay, I
+[954] have to do all of this. I did all the
+[955] math and ready to go. I'm ready to
+[957] paint.
+[957] >> And it's like, no, no, no, sorry, sorry,
+[958] sorry. So, we have to do it all over
+[960] again. I sometimes give people the
+[961] metaphor of imagine that instead of
+[964] loading an app once, you wrote code that
+[967] made the app load five times. Cuz you're
+[969] wasting all of this time and compute.
+[972] You're wasting energy. I can go on and
+[974] on to speak of the downsides. And
+[975] obviously, there's times where you break
+[977] the rules. It's not that I want people
+[979] to also be free to make their own
+[981] choices and and and not be guided by
+[983] dogma, right? But like the the layout
+[986] shift like it erodes trust. It feels
+[988] unreliable.
+[989] >> Yeah.
+[989] >> It feels shifty, right? Like like a
+[991] shifty person is not a trustworthy
+[992] person.
+[993] >> That's right.
+[993] >> So, you want to make sure that every
+[994] single web experience you deliver is
+[996] like a
+[997] highly honed video game.
+[998] >> It's where like as sprites like emerge,
+[1000] as things kind of like appear on a
+[1002] horizon, they're not sort of jumping
+[1004] around, right? We want to have a stable
+[1005] world.
+[1006] >> even knew this. There's an art in Japan
+[1008] where they painted dragon in one stroke.
+[1011] Like they they load up the brush
+[1013] >> Yeah.
+[1013] >> and they've predicted how you can draw
+[1016] this beautiful dragon in one paintbrush,
+[1019] in one stroke. And I've given people
+[1021] that metaphor of like a really
+[1024] awesome application or website will have
+[1027] that intentionality. It's not shifty. Of
+[1029] course.
+[1030] >> Yeah.
+[1030] >> When I look back on on on, you know,
+[1033] your success, one of the key inputs in
+[1036] my mind.
+[1038] Clarity of vision. I look at, you know,
+[1040] Pure UI.
+[1041] Re- I reread it like 2 days ago. Like,
+[1043] Pure UI was such a pristine articulation
+[1047] of what React would enable the web to be
+[1049] able to do, what the web could be like.
+[1051] And I feel as though right now, the
+[1053] industry is kind of fumbling around
+[1055] trying to figure out what is that vision
+[1057] for how we incorporate agents into
+[1060] making software, into designing
+[1062] experiences, into just working in this
+[1065] big paradigm shift that we're going
+[1067] through.
+[1068] How are you currently incorporating it
+[1070] into the work that you do, into how
+[1071] Vercel thinks about work internally?
+[1074] And then how should people be thinking
+[1077] about the way in which they have to
+[1079] re-architect their own work to infuse
+[1082] agents? I mean, overall, I'm extremely
+[1086] bullish, optimistic, and excited about
+[1089] AI because I've always believed that the
+[1091] best technologies are the ones that
+[1094] brought in an access.
+[1096] From the pencil to the printing press to
+[1100] open source to JavaScript, Next.js, all
+[1103] of these things are just
+[1105] enabling more people to join in on the
+[1108] fun.
+[1109] I it's very basic. AI is fun.
+[1112] It's not just bringing a new class of
+[1114] workers in the form of agents, it's
+[1115] bringing a new class of builders.
+[1117] People that couldn't design, build,
+[1119] create, ship before can now do it. And
+[1122] this is why Vercel leaned in so hard
+[1124] because I saw in the premise of AI for
+[1127] software engineering an acceleration of
+[1130] our mission. Everyone should be able to
+[1132] ship. Everyone should be able to cook.
+[1133] Now, it's I think crucial that we infuse
+[1138] this point of view of quality into
+[1141] everything that we do with AI.
+[1142] Cuz I I love that we have now the term
+[1145] slop. I tell people, "Look, slop is
+[1148] awesome." Four-letter word that speaks
+[1150] to the negative things that AI can do,
+[1153] just like spam was for the internet.
+[1156] >> You have your own email inbox.
+[1158] >> Well, it can get spam. Oh, you have AI,
+[1160] it can produce slop.
+[1162] And so, I first introduced the pillar of
+[1165] AI focus for the company. I said,
+[1168] everything that we'll do is in the
+[1169] interest of quality, and we won't do any
+[1171] random acts of AI.
+[1173] >> [laughter]
+[1174] >> That's what I call them.
+[1175] >> And going back to like how I This is
+[1177] like where you sort of stick a button
+[1178] somewhere that says like AFI this or AI
+[1180] this or like add AI to this or
+[1182] something.
+[1183] >> you ship something that you're just
+[1184] you're only excited about it because you
+[1186] built it with AI, but you look at it
+[1188] objectively as a piece of junk.
+[1189] >> Right.
+[1190] >> So, I wanted to basically create an
+[1192] immune system around it, and you know,
+[1194] we're just talking about how I guide the
+[1196] company, and sometimes it's through
+[1197] memes.
+[1198] >> I see.
+[1199] >> So, when I said layout shift or when I
+[1200] say random acts of AI, it kind of, you
+[1203] know, aligns people towards like, "Well,
+[1205] how are we going to approach this
+[1206] problem?"
+[1208] I've now formalized my thinking into the
+[1210] statement of that which I cannot create,
+[1213] I don't understand, which is a famous
+[1215] Feynman saying.
+[1217] It seems very essential to intelligence
+[1220] that you deeply understand how things
+[1221] are built. A good programmer is just a
+[1225] extremely competent computer user.
+[1227] One of the biggest surprises for me has
+[1229] been this idea that a coding agent
+[1232] is going to be the foundation of every
+[1235] agent. Of course, not only from the
+[1237] knowledge point of view, but because of
+[1238] its ability
+[1240] to fix, correct, hack, right? And what
+[1244] do we want out of knowledge work these
+[1245] days? So, what makes you good accountant
+[1248] these days? Well, when I studied
+[1249] accounting in my school in my high
+[1251] school in Argentina, it was about like
+[1253] balancing sheets of paper. Now, of
+[1257] course, you would want Excel competence
+[1259] for an accountant that you hire today,
+[1261] or Python, or R, etc., etc. So, So very
+[1265] clear to me now that every agent that
+[1267] helps shape the future of a knowledge
+[1270] task will embed within it the
+[1273] capabilities of writing its own
+[1274] programs, of modifying them,
+[1277] of understanding what its own
+[1279] limitations are, and proposing changes
+[1281] to the underlying skill set,
+[1283] instructions, prompts, etc. I also
+[1286] thought
+[1287] a narrative here in the value was
+[1290] in order for an agent to be possible, it
+[1292] needs to be perfect at every step.
+[1295] Because it's going to be the combination
+[1296] of a set of probabilities, and we can't
+[1298] have it mess up at any step.
+[1300] But turns out, that's actually not how
+[1302] programmers deal with the world, let
+[1304] alone these agentic programmers. We read
+[1307] feedback, and we adapt. And in the
+[1309] feedback, whether it's a compiler error,
+[1311] or some kind of exit code, or whatever,
+[1314] we know how to repair and make progress.
+[1317] And so I think there was a perspective
+[1319] perhaps that agents had to be flawless,
+[1321] but it's the opposite. It's they will
+[1322] keep trying. And and I guess
+[1325] >> That's maybe the thing I want to dive
+[1326] into is like part of the design
+[1327] philosophy that you've expressed to
+[1329] Vercel is one where rather than ideating
+[1333] in isolation, you put work out there in
+[1335] the world, you iterate in the wild, you
+[1337] gather feedback.
+[1338] >> Yes.
+[1338] >> There is a huge chunk of the design
+[1340] industry that's very reluctant to do
+[1341] that. They don't want to impose an
+[1343] inferior user experience to an end
+[1346] customer. They want to think through all
+[1348] the edge cases. And you recently talked
+[1350] about how important it is culturally to
+[1353] land your software.
+[1354] >> Yeah.
+[1355] >> landing. And as I understand it, you
+[1357] describe landing not as shipping
+[1358] something.
+[1359] Landing means having an actual business
+[1362] outcome that you set out from the onset.
+[1364] And I love this, because in my mind it's
+[1366] like if that's a lesson I can teach to
+[1368] every single designer on the planet.
+[1371] Like the importance of landing,
+[1372] that's the lesson I would choose. When
+[1374] you talk about landing internally, what
+[1376] does that mean?
+[1377] >> One of the consequences of AI and agents
+[1380] is that every person is becoming more
+[1382] and more full stack.
+[1384] I think it used to be that perhaps you
+[1386] would say like I need someone to help my
+[1387] team, they're going to be a CSS expert.
+[1390] They're going to be an accessibility,
+[1391] they're going to be a front end expert.
+[1393] Nowadays, I'm thinking of people as
+[1395] the renaissance people of the prophecy,
+[1398] right? Like they know and they have
+[1400] every skill, all around athletes. All
+[1402] around athletes because the age they can
+[1404] delegate works to agents and I think
+[1406] it's going to this is going to emphasize
+[1407] and fuel this focus on landing. Because
+[1410] you're going to be thinking backwards
+[1411] from the business outcomes, from the
+[1413] experience that you want to create, from
+[1415] the data that you want to produce, from
+[1416] the traction that you want to see in the
+[1418] world and work backwards to your design,
+[1420] implementation, etc. We we used to
+[1424] mention this other meme internally a
+[1425] lot, we still use it, called iteration
+[1428] velocity.
+[1429] So, velocity is a distinct concept from
+[1432] speed.
+[1433] And I've seen in my career, I've done it
+[1435] my made the mistake myself of thinking
+[1438] that confusing speed for velocity. So,
+[1440] speed is you move really really fast,
+[1442] you type a lot, you spend a lot of
+[1444] tokens, you're token maxing, but for
+[1446] what outcome?
+[1447] Velocity is a speed with a direction, a
+[1450] vector. So, for me it's about are we
+[1453] actually getting to the destination?
+[1456] And this is ultimately why
+[1459] the same agent given to two different
+[1461] people will never produce the same
+[1462] results. I'm actually quite a big fan of
+[1464] this idea of Ralph Wiggum.
+[1466] >> Yeah.
+[1467] >> If you've heard it, which is that you
+[1468] throw off an agent or several
+[1471] with no almost no guidance other than
+[1474] exit criteria.
+[1476] >> Make no mistakes.
+[1477] >> Exactly. It's like
+[1479] it's like I want to convert this code
+[1482] into Rust.
+[1484] Make no mistakes. All right, here's the
+[1486] token budget, go off, right? And because
+[1490] agents are getting better at longer
+[1492] horizon tasks, combined with a very
+[1494] clear exit criteria they can work yes,
+[1496] which is like pass tests or produce this
+[1499] code or ship this.
+[1502] I think sometimes I've seen people try
+[1504] to infuse too much of their own
+[1506] perspective into the process and
+[1508] sometimes they don't get as much from
+[1510] agents as they could.
+[1512] >> Because they're prescribing the
+[1512] solution.
+[1513] >> You're being too prescriptive of the
+[1514] solution and the methodology. I think
+[1516] sometimes the beauty of an agent is that
+[1518] it can explore the world on your behalf.
+[1521] Explore the state space. Explore the
+[1524] latent space and and it might be things
+[1526] that are not yet in your brain.
+[1528] >> So, let's talk about that a little bit
+[1529] because I'm I'm a little bit sick of
+[1532] hearing people opine on taste.
+[1534] And I think in large part, I think it's
+[1536] because it often comes from this reflex,
+[1539] this belief that taste is strictly
+[1542] something that humans will monopolize.
+[1544] That machines will never have access to
+[1545] this. And to me, taste is very much a
+[1548] function of your vocabulary, like what
+[1550] grammar you assign to all of the
+[1553] experiences you've inputted.
+[1555] And it's also your intuition built
+[1558] around experimentation, around taking
+[1559] that vocabulary, recombining it,
+[1561] changing it, and then seeing what it
+[1563] does out in the world.
+[1565] Everything that I just described is
+[1567] something that I feel like you can brute
+[1569] force with armies of agents. Agents
+[1572] should be able to run experiments for
+[1574] you. Take frameworks, right? And be able
+[1577] to experiment within those and sort of
+[1579] grow experiences and at least feed them
+[1581] back. You will still need the human
+[1582] operator to ultimately opine on the
+[1585] results of those experiments. But in my
+[1587] mind, this regime of sort of going out
+[1590] there, experimenting, exploring, driving
+[1592] towards some end results, if that's
+[1595] taste cultivation, how are agents unable
+[1598] to ultimately start to express their own
+[1600] taste and ability to to explore the
+[1602] opportunity space alongside people?
+[1605] >> Yeah.
+[1605] >> One of the things that I always think
+[1606] about is we're still in the domain of
+[1609] humans making decisions for products and
+[1612] services and associations that want to
+[1614] make in relationship to other humans.
+[1617] So, when when we present the brand
+[1620] Vercel to the world, we are we are
+[1622] signing off on this is what the best
+[1625] version of Vercel looks like to the
+[1626] outside world. I think that's never
+[1628] going to change. I think the human as
+[1630] the editor of the product that agents
+[1633] create,
+[1634] I want that a world to continue to
+[1636] exist. And I want to I when I when I
+[1639] interact with the products of our brand,
+[1641] I want to feel a connection to the team,
+[1643] not a connection to the a team's tools.
+[1647] I don't care that they used Claude,
+[1649] Codex, V0, whatever. I I want to know
+[1653] that's what another human did for me.
+[1655] And I think it's relevant because I'm a
+[1657] starting to perceive that people confuse
+[1660] something as aesthetically pleasant,
+[1662] which
+[1663] of course AIs are capable of producing.
+[1666] I see it all the time. Like you you tell
+[1668] V0 build something, it's going to create
+[1670] something beautiful. Like, you wouldn't
+[1672] you wouldn't have imagined a couple of
+[1673] years ago that a machine could produce
+[1676] this arbitrary permutations.
+[1678] It's almost like a an infinite template
+[1680] generator. We used to go to websites and
+[1683] navigate their template marketplace,
+[1685] right? And say, "Oh, this looks good.
+[1686] This looks good."
+[1688] And they were fixed in time and space.
+[1690] AI has now given us infinite good
+[1692] designs, if you will.
+[1694] But I think there's something still
+[1695] about adding your element of humanity
+[1699] and and the value that you bring on top.
+[1702] And the reason that I say this is I I
+[1704] can already kind of perceive that you've
+[1705] done very light editing on top of the
+[1707] model. Models are producing a
+[1710] representation of the world. They're
+[1712] compressing all of its available data.
+[1715] It's like they have a style,
+[1716] >> They have a style. They have a smell.
+[1718] >> Yeah, yeah. Yeah, yeah, yeah. Yeah.
+[1719] >> And uh and that in itself is like you
+[1721] didn't pass the test. And I remember
+[1723] being able to perceive this about
+[1725] templates, like free templates that
+[1727] people could get. I would see Y
+[1728] Combinator startups launch and I said,
+[1730] "Mhm, yeah, that kind of reminds me of a
+[1733] template that I've already seen before."
+[1735] And so, there's so much value to pushing
+[1738] the model past the average. You've
+[1742] infused it with something else. You've
+[1743] completed it. Because it's in it's by
+[1746] definition a model, it's incomplete.
+[1749] I think the people that are going to win
+[1751] are the ones that fully embrace agents
+[1753] and push them past their limitations.
+[1755] >> So, they're kind of going off-piste.
+[1757] They're going outside of the training
+[1758] wheels, outside of what's exist within
+[1760] culture.
+[1761] >> Yes. There's a There's this meme of like
+[1762] never ship the org chart. I've always
+[1765] respected that about Facebook because
+[1767] when people when when engineering teams
+[1769] get bigger, you have this temptation of
+[1772] okay, each team is going to ship
+[1775] something to the world directly and it
+[1777] even manifests into the interface. Like
+[1780] the URL changes. Yeah. Because you're
+[1782] going to the product of some team .some
+[1785] team. .facebook.com.
+[1787] >> directory, right? Yeah.
+[1788] >> Or even worse, yeah, right? And I think
+[1790] Facebook for the longest time fought
+[1792] back against that. Whereas other
+[1794] companies were like, we just need to
+[1795] like we're like an an economic
+[1797] value-producing machine. Let's just
+[1799] start shipping whatever. You have a risk
+[1801] with AI of just you're just shipping the
+[1804] unmodified output of the model and
+[1806] you're not really adding value to the
+[1808] world. I can also use the model
+[1809] directly. If you're just going to like
+[1811] proxy the model, you're just adding a
+[1813] tax, right?
+[1814] >> And then what would you say is important
+[1816] for us to then teach
+[1818] aspiring designers, builders, creatives?
+[1821] You know, we now exist in a world where
+[1823] I would argue this this false boundary
+[1826] between design and engineering seems
+[1828] even more like a mirage more so than
+[1830] ever before, especially as we're
+[1832] creating the full-stack builder
+[1834] archetype in real-time with these tools.
+[1837] When you think about what design is
+[1839] missing
+[1840] in the world today, what designers need
+[1841] to really be thinking about, caring
+[1843] about, learning?
+[1845] What is the hole, the gap that you see
+[1847] right now?
+[1848] >> Well, I'll tell you one thing that I
+[1849] think people really want is they want
+[1852] great software experiences.
+[1854] And even within enterprises, no one
+[1857] wants software that's clunky,
+[1860] that's slow,
+[1861] that's insecure, that doesn't have the
+[1863] data that they wanted. And this is the
+[1866] frustration of a lot of people in their
+[1867] everyday lives is, you know, they have
+[1869] the experience of using their iPhone and
+[1872] have and enjoying an app and then they
+[1874] go to work
+[1875] and the expensing app sucks and and
+[1879] sucks at sucks their soul out of them.
+[1881] And so, you see the punishment on
+[1884] traditional SaaS a lot in the markets
+[1887] because AI is really an answer to that.
+[1890] You don't have to put up with the world
+[1892] as it is.
+[1893] >> Mhm.
+[1893] >> You can recreate it, modify it, migrate
+[1896] it. And so, agents will do the things
+[1900] that people want. And so, I think a lot
+[1903] of people are going to are going to say
+[1904] now, well, I have two possible solutions
+[1908] here. I continue to fight this piece of
+[1911] software and I beg the creators to
+[1914] improve it or I just build and create my
+[1916] own. And so, there's something so
+[1918] awesome there about when I think about
+[1920] it, my ideal future is one where I've
+[1923] created my favorite tools
+[1925] that are just for me. I actually think
+[1928] there's an economic incentive for people
+[1930] to create their own tools.
+[1932] And I used the metaphor of the software
+[1934] factory and the design factory.
+[1936] Now that everybody can prompt and
+[1938] produce code, the interesting thing is
+[1940] not the code output,
+[1942] is the machinery that enabled it. And
+[1944] going back to that metaphor of like, are
+[1945] you just proxying tokens or are you
+[1947] infusing them with your value added? So,
+[1949] the metaphor there is like, let's work
+[1951] on that factory. Let's perfect it. Let's
+[1954] make it use the best materials, the
+[1956] instructions, the best frameworks.
+[1958] And so, I think there's something to be
+[1959] said about
+[1960] the companies with the best software
+[1962] factories that embrace AI and agents are
+[1964] are the ones that are going to going to
+[1966] win. And so, we're learning what it
+[1968] means to build the best possible agentic
+[1971] developer experience,
+[1973] the best possible agentic
+[1974] infrastructure.
+[1975] What are the best ways to communicate
+[1977] with these agents? A lot of the web has
+[1979] already shifted towards markdown instead
+[1982] of HTML. Well, it turns out agents don't
+[1985] need all of that fluff that was designed
+[1988] for human consumption. They don't need a
+[1990] layout. That's why it's not layout
+[1991] shift. It just need the structure.
+[1993] >> need the signal. They just need the pure
+[1995] data and content.
+[1997] >> And I think what's awesome is that you
+[1999] can create a world that maximizes the
+[2001] human experience element and maximizes
+[2004] the agent experience element and they
+[2006] can live in parallel.
+[2008] >> And they can live in parallel. I think
+[2009] this is what every company's going to
+[2010] have to do.
+[2011] Because there's it's also true that
+[2013] we're seeing agents make infrastructure
+[2015] choices.
+[2016] The agent says, "I'm you I'm going to
+[2018] use Vercel for this."
+[2019] Sometimes the agent might be like,
+[2021] "Here's why." or "Here's a comparison
+[2024] with other solutions." but a lot of
+[2025] people are saying, "Okay, agent, I trust
+[2027] you." right? Because you're basically
+[2029] delegating work. And so, we're also
+[2032] dealing with, "Okay, what does it mean
+[2034] to have been purchased by an agent?" So,
+[2037] I've been noticing this experience with
+[2039] people that's similar where like they
+[2041] come to us and here Yeah, yeah, 3 months
+[2044] ago my agent chose you guys.
+[2046] And what I need from you is different
+[2049] from what you would have expected
+[2050] another customer would need.
+[2052] Maybe maybe they're debugging something
+[2054] and their expectation's already that we
+[2056] are an agent as well.
+[2058] So, they don't want to talk to humans.
+[2060] They don't want to click around.
+[2063] People need to think about this, too,
+[2064] right?
+[2065] The person that grows up in this world
+[2068] and what they know is interactions with
+[2071] agents will have that UX expectation
+[2075] when they also come through the
+[2077] you know proverbial.com. They'll come to
+[2079] vercel.com and they'll say they want
+[2081] they mostly want like a continuity of
+[2083] their their experience. And so this is
+[2085] how I think the web becomes ultimately
+[2087] agentic in itself is that no matter
+[2090] where you go you have this
+[2093] conversational experiences are highly
+[2094] adaptive. They carry context and it
+[2097] conforms to you perfectly.
+[2098] >> Yes. Yeah.
+[2099] >> I want to talk a little bit about
+[2100] evolution. When I think back on the
+[2103] whole journey of of of Vercel
+[2105] it started off as Zeit. You as an
+[2107] entrepreneur
+[2109] wasn't your first rodeo.
+[2110] But it felt like this was the company
+[2112] this is the planet you were going to
+[2113] build and you were going to stay on for
+[2115] a long time.
+[2116] I think back to long-haired
+[2119] >> [laughter]
+[2121] >> samba-wearing
+[2122] >> I've looks maxed since then.
+[2124] >> So what are you saying?
+[2125] Well, you've evolved and your company
+[2127] [clears throat] has evolved with you.
+[2129] I want to talk a little bit about how
+[2130] your design philosophy has changed
+[2133] through this evolution. Like when you
+[2135] look back on oh yeah this these are
+[2137] where I made the most meaningful strides
+[2140] what would they be? What what were some
+[2141] of the lessons along the way?
+[2143] >> So much of what I do is communicate.
+[2146] And for me everything is communication
+[2149] and every communication can be
+[2150] intentionally designed.
+[2152] Whether it's this beautiful space that
+[2154] we've chosen for this conversation or
+[2156] the words that I choose. Or you know
+[2158] people may be surprised about how much I
+[2160] pay attention to
+[2162] even how the words flow
+[2164] on a blog post or a tweet. Everything
+[2167] has intention behind it. I think I've
+[2169] only grown more radicalized about the
+[2172] power of storytelling.
+[2174] And everything
+[2176] the world is made up of stories. And we
+[2180] remember the best stories. And
+[2183] everything we ship
+[2185] that makes sense that people love it's
+[2187] because it was part of a story. And you
+[2190] can connect deeply with its creators.
+[2193] I've become even more
+[2195] neurotic in some ways about the quality
+[2198] of of language and the the words that I
+[2200] choose. I've told I've told people,
+[2202] "Look, you'll get out a lot more out of
+[2205] AI systems the stronger your language
+[2208] gets." In some ways it's a true calling
+[2210] for me because when I
+[2213] when I got into my high school in in
+[2214] Argentina, which had this sort of exams
+[2216] and competitions, I was good at math,
+[2219] which is what my parents knew, but I
+[2221] actually ended up getting a lot of
+[2223] points from literature and the Spanish
+[2226] basically like side of the of the exams.
+[2229] I've always looked up to an Argentinian
+[2231] writer called Borges.
+[2232] >> Yes, of course.
+[2234] >> He's
+[2235] uh written a number of stories that are
+[2236] about physics and the universe and
+[2239] concepts like recursion. He was almost
+[2242] like a proto programming expert.
+[2244] But also the importance of language and
+[2248] vocabulary. And he, like me, was a uh
+[2253] obviously like uh native Spanish speaker
+[2256] but had tremendous respect for the
+[2259] breadth and flexibility and physicality
+[2263] of the English language. And so I, you
+[2265] know, what I do at Versel as the CEO is
+[2267] I communicate with my employees. I try
+[2269] to motivate and inspire. I communicate
+[2271] with the world. Now I communicate to
+[2274] computers very correctly cuz I talk to
+[2275] agents a lot. And so I think uh a big
+[2279] part of my evolution has been this
+[2281] non-stop refinement of how I communicate
+[2284] with the world.
+[2284] >> I love that you talked about the
+[2286] importance of story because to me one of
+[2288] the things that I feel as though leaders
+[2290] in technology,
+[2292] leaders and pioneers, is we have to
+[2294] pioneer a new American story. Yeah,
+[2296] there's so much reluctance and and fear
+[2301] around AI that I think technologists
+[2304] believe deep down is unfounded. Right?
+[2306] And yet, it's very real. And I think a
+[2308] lot of it boils down to storytelling.
+[2310] That we're very good at storytelling
+[2313] within our own industry,
+[2316] but it doesn't seem to kind of permeate
+[2317] out into the broader American public.
+[2320] And I think Vercel is fundamentally an
+[2323] American story.
+[2324] Like deep down, right? It's an American
+[2327] immigrant story. And so, I want to know
+[2330] what do you think we need to be doing
+[2332] from a storytelling perspective that can
+[2334] at least help people understand that
+[2336] they can in fact just build this. That
+[2339] they have tools at their disposal that
+[2341] not only give them far greater powers
+[2343] than anything you or I grew up with.
+[2345] Yeah.
+[2346] But these tools can explain themselves
+[2348] to you. They can give you very granular
+[2350] answers to every question that your
+[2353] heart desires have an answer for.
+[2356] What is it that we're failing to do as
+[2357] an industry from a storytelling
+[2359] perspective?
+[2360] >> Yeah, I think sometimes the sheer
+[2363] optimism that I feel here in the city of
+[2366] San Francisco and that I share with so
+[2368] many of my peers and colleagues,
+[2371] it doesn't permeate all the way through
+[2372] to the rest of society.
+[2374] There is a level of a skepticism
+[2377] or
+[2378] that the optimism is unfounded because
+[2381] something went wrong in the past that I
+[2384] think it can be quite toxic because I've
+[2387] seen it first hand when I grew up. It
+[2390] was this constant
+[2392] everyone that creates something has a
+[2393] hidden agenda.
+[2395] No one creates something because they
+[2396] want to see something better in the
+[2398] world or see a or create a more
+[2400] beautiful world. Argentina that says
+[2403] it's a lot worse because people would
+[2405] think that anyone that succeeds had some
+[2407] kind of arrangement. It's always going
+[2409] to like the paranoid conspiracy world.
+[2412] >> The corruption is the only reason why
+[2413] you're there, right?
+[2414] >> Yes, it's so funny because at one point
+[2416] I I started to go more viral in
+[2418] Argentina whenever news of our funding
+[2420] would come out and whatnot. And there
+[2423] was an Instagram story that my wife I
+[2425] tried to not to read the comments
+[2426] because like they can be demoralizing
+[2428] sometimes and my wife was telling me
+[2429] about like there was this story that
+[2431] went viral where everyone is convinced I
+[2433] was a rich kid from Argentina. And now
+[2437] people are realizing it was I came from
+[2438] a very poor neighborhood in Argentina
+[2440] where like my dad one time got
+[2442] kidnapped. Uh they tried to rob his car
+[2445] and steal his car and whatnot. Gosh.
+[2447] Yeah, it's like a bad neighborhood. Also
+[2448] some decent like good people
+[2450] neighborhood vibes like it wasn't all
+[2452] bad but it was a pretty bad place. And
+[2454] now people in Argentina I think the
+[2456] tides are changing a lot culturally
+[2457] there for the better.
+[2459] Uh like I understand more of my original
+[2460] story but I think this just is so easy
+[2463] for people sometimes to just like I
+[2465] don't know expect the worst or try to
+[2468] poke holes cuz they cannot believe just
+[2470] the magic that can happen obviously with
+[2473] 10 years of work and relentless
+[2476] dedication. But I think there's a an
+[2479] element of suspension of disbelief that
+[2481] is necessary that of optimism positivity
+[2484] that you put into your interpretation of
+[2487] the story. There's only so much words
+[2489] can do. They get to combine with your
+[2491] system prompt. Right? Right? Your system
+[2494] prompt what does it say about the world?
+[2495] The world is a dark place only the rich
+[2497] get ahead and no one can you know make
+[2500] these leaps of of progress and I think
+[2502] we have to work really hard on on
+[2505] detoxing that system prompts from from
+[2507] our heads. We have to have this very
+[2509] open minds
+[2510] and and positive outlook.
+[2513] >> We can't leave this room without talking
+[2515] about life maxing.
+[2517] You have five beautiful children. You're
+[2519] expecting a sixth. Congratulations.
+[2522] You're operating a high stakes business
+[2525] as CEO. You're an athlete. You're an
+[2527] aesthete. When we were filming B-roll I
+[2530] was sweating watching you stand out in
+[2532] broad daylight wearing a black sweater.
+[2534] >> [laughter]
+[2535] >> And and to me it's like a it feels as
+[2537] though something to do with your work in
+[2540] infrastructure and and durability and
+[2543] the road that you've taken this far is
+[2545] like some expression of the way that you
+[2548] open your eyes into the world every
+[2550] single day.
+[2551] How do you do it, G? What it What is the
+[2553] secret? Like am I on to something here?
+[2554] >> Oh, you're
+[2556] >> [laughter]
+[2556] >> most certainly into something. I hadn't
+[2558] realized until you pointed out how much
+[2560] of fitness work that I do is about
+[2562] hardening. Is about hardening my mind
+[2565] and my body and so much of what we do
+[2567] every day when we protect the world from
+[2570] cyber attacks, from DDoS attacks, from
+[2572] like making the infrastructure robust.
+[2575] It's It's hard work. It requires
+[2577] tenacity.
+[2579] I mean, I've spoken at length about the
+[2581] work of an engineer has never been easy.
+[2583] Like even even though you're just
+[2585] sitting at a computer and it doesn't
+[2587] look like you're physically like lifting
+[2589] boulders, your mind is doing that and
+[2592] your mind is dealing with the pressure
+[2594] and stress and sometimes the negative
+[2597] feedback. And so
+[2599] these things have always been connected,
+[2601] you know, from the moment that I had an
+[2603] idea about Vercel, I would just leave
+[2605] the house,
+[2606] run for an hour, come back, keep
+[2609] working. And that
+[2611] I would it would give me the adrenaline
+[2613] rush. I started realizing how much of a
+[2615] prerequisite it was to clear out my
+[2618] head.
+[2619] You know, for many years here in in the
+[2621] Bay Area,
+[2622] I uh I did boxing every morning. 6:00
+[2625] a.m. to 7:30.
+[2627] >> Yes, sir.
+[2628] >> I would do a boot camp. And I would then
+[2630] sign up for the next boot camp. And then
+[2632] so I was probably the only person that
+[2633] was a perpetual boot camp attendee. And
+[2637] those were formative times, you know,
+[2639] getting punched or just like dealing
+[2642] with a non-stop combination of cardio
+[2644] and strength training.
+[2645] And it gave me a foundation that never
+[2649] leaves you.
+[2650] >> Yeah, it's a mental engine, right?
+[2651] >> there's no magic pill that you can take
+[2654] that'll give you that foundation of pain
+[2657] that you've overcome. I love that
+[2660] thought experiment of like, do you leave
+[2663] it all in the field?
+[2665] If you judge yourself from your last day
+[2668] and looking back, did you squeeze as
+[2671] much juice of opportunity and effort and
+[2674] intention that you could?
+[2677] I also think a lot about
+[2679] the days and the the relativity of time
+[2682] and how the day in itself is a universe.
+[2686] And then we look back and a decade was a
+[2688] blink of an eye and I love to ponder
+[2691] that
+[2692] paradox.
+[2694] And that's why I'm a huge believer that
+[2697] it doesn't matter what you've done up
+[2700] until this point. It you're only as good
+[2702] as your next game. You're only as good
+[2705] as your next day. And so every day
+[2709] is an opportunity to reset the clock.
+[2712] You have to prove yourself out every
+[2714] single day. You know, if you're if
+[2715] you're into fitness, you know this
+[2717] because
+[2718] you're as good as your last lift and
+[2719] like if you don't keep pushing,
+[2721] your body just doesn't get doesn't
+[2724] improve or it deteriorates. And so I
+[2726] think about my children and how much we
+[2729] absorb from what others do. We're all
+[2732] looking for references in the world.
+[2735] >> What's possible?
+[2736] >> How hard does that person work? And how
+[2738] does that compare to me, right? So
+[2740] you're always setting the standard if
+[2742] you can. You know, you might not be able
+[2743] to do it across every aspect of your
+[2744] life, but
+[2746] I like the idea of can I set the
+[2748] standard? Can I set the pace? I remember
+[2750] reading this book running with the
+[2752] Kenyans. The Kenyans were all were all
+[2754] about at the time front running.
+[2756] They start out a marathon running faster
+[2759] than is even conceivable because they
+[2762] send that message
+[2764] that all right, this is the new pace.
+[2766] And in that process
+[2769] teach their brains that they could have
+[2771] gone faster.
+[2772] So I there's elements of of fitness that
+[2774] I try to bring in into my work and this
+[2776] standard that I try to set for others.
+[2777] >> Well, I definitely see it in the work
+[2779] [music] that Vercel produces. This is
+[2782] why you are a first of kind. You are
+[2783] truly at the front of the pack.
+[2786] >> Thank you. Thank you.
+[2788] >> First of kind is a story of design and
+[2789] tech told by its pioneers. Powered by
+[2792] Framer, Noon, Rockbot, Ramp, Vercel,
+[2796] Granola, and Profound.
+[2798] Follow us on X, YouTube, Threads,
+[2800] Spotify, and Apple Podcasts.
+[2803] The future belongs to designers who
+[2805] build.

@@ -1,0 +1,1601 @@
+[0] Oh, Jake, I appreciate you coming. So,
+[1] Jake is a founder of Railway.
+[4] You guys use Railway? You guys know what
+[5] it is? All right. Who uses Railway?
+[8] &gt;&gt; All right. Okay. Pretty good. Pretty
+[9] good. Didn't raise their hand here. All
+[12] right. We got a few. We're going to
+[12] convince you guys by the end, you know.
+[14] So.
+[14] &gt;&gt; Nice. Yeah, no. Appreciate you coming
+[16] out. I think one of the things in the
+[19] different programs we do here, we love
+[20] to get founders that are in the space
+[21] now, that have built something that
+[23] people enjoy and use, and that have
+[25] scaled to come out tell some of their
+[26] stories. You all are kind of in that
+[28] same journey, building something,
+[30] getting it to scale, getting it to grow.
+[32] We'll try to touch on some things from
+[33] Jake's experience and from building
+[35] Railway on hopefully things that you can
+[37] kind of like, you know, learn from or
+[40] have some entertainment from as a kind
+[41] of founder story. And then we'll leave
+[42] some kind of time at the end for some
+[43] questions. But before we get going, you
+[45] want to just give some background on
+[46] yourself and kind of how you guys
+[47] started with Railway? Yeah.
+[49] Um so, I'm from Canada originally. And
+[52] yeah, worked at a few different
+[53] companies and then at some point
+[54] realized that I wanted to build
+[57] something in infrastructure and that
+[58] infrastructure had to be like way, way
+[60] easier because I was not going to spend
+[61] my life stitching together Terraform
+[62] files.
+[63] Um and so, yeah. That's kind of the
+[65] impetus for it.
+[67] Um
+[68] messed around a little bit to try and
+[69] figure out what to go on and do, but
+[70] just kind of kept coming back to this
+[71] and then, you know, added more stuff to
+[73] it and it just naturally is kind of
+[75] progressed. Um so, that's the like TLDR
+[79] of the story. Yeah, I mean, touching
+[80] Terraform files is a good inspiration to
+[82] go figure out how to make it better. I
+[84] think if you've been there, you know
+[85] it's tedious. You kind of get it going.
+[87] You get excited the first time, then you
+[88] got to make a change. It's like,
+[90] Like, I got to kind of go to Well, it
+[91] just it just grows over time, right?
+[92] It's like this living, breathing thing.
+[94] And especially as like
+[95] tools get a lot faster to grow, like
+[97] that context, like continually loading
+[99] it into your brain and then like
+[100] unloading it and all those other things,
+[102] right? Like it was and it's always
+[104] disjoint from the actual thing you're
+[105] doing cuz you're like, okay, now I have
+[106] to switch to infrastructure, right? So,
+[108] wanted to like pull a lot of that
+[110] together and make it like really, really
+[111] trivial so that the context for
+[113] yourself, and which ultimately is funny
+[115] it benefits deeply for the agents, like
+[118] it's easier for you to kind of digest
+[119] roughly. That makes sense. And so you
+[121] had this kind of moment like, "Hey, like
+[123] this is a problem. Let me go solve it."
+[124] It was probably first like, "Let me
+[125] solve it for myself." But at some point
+[127] you're like, "Wait a minute. I think
+[128] this is actually pretty valuable
+[129] company." What What was that spark? And
+[131] what did you do right after that? Um
+[134] yeah, so
+[135] I like
+[137] I left Uber basically and I was like,
+[139] "I'm going to start something." I think
+[140] like
+[142] um wanted to do it, figured it was kind
+[143] of the right time.
+[145] Um and I just started building stuff,
+[147] you know, like a couple things in
+[148] crypto, couple things in like random
+[150] places. I always needed a database and
+[152] it was like annoying to go and get a
+[154] database. And so I just added like, you
+[157] know, Postgres to this shitty VM that I
+[159] could curl and get, you know, an
+[161] instance, right? Um and at the start it
+[163] was literally just like a user in a
+[165] Postgres database. And I was like, "All
+[166] right, well, that's fine. I don't need
+[167] like anything crazy." Um
+[170] and then I was like using it and and
+[171] then I was like, "All right, okay, I
+[172] need a Redis instance." So I'm going to
+[174] go and add Redis. Right? And then I was
+[175] like adding stuff to this over time. Um
+[177] and I was working with a few friends and
+[178] they're like, "Oh this is actually
+[179] like really cool in general. Like, you
+[181] know, can I have access to this?" And I
+[183] was like, "Not really cuz like you'll
+[185] just delete all of my data." But um you
+[187] know, "Okay, let's let's go and like
+[188] chat with some people and like figure
+[190] out is this interesting or not?" So I
+[192] actually just posted on like Twitter and
+[193] I was like, "I'm working on something
+[194] interesting. Like, who should I talk to
+[196] or whatever?" And then it just kind of
+[197] like exploded from there. Uh like random
+[199] people were like, "Are you raising
+[201] money?" And I was like, "What? Like, no.
+[203] Like, I'm trying to build this thing."
+[205] Um and I just ended up talking with a
+[206] bunch of different people and um I was
+[208] like, "Are you all building this?" I
+[210] went to like the CTO of GitHub at the
+[211] time and a few other places cuz like I
+[213] just wanted to build this thing, right?
+[214] Like, I didn't even really want to like
+[216] take it anywhere crazy. I was like, "I'm
+[217] going to start something and like build
+[219] that and see where it goes." Um anyways,
+[222] I chatted with a bunch of people and at
+[223] the end there was like I had no job
+[224] offers, but I had a bunch of angel
+[225] checks and I was like, "All right, cool.
+[227] Well, like I guess I'll I'll just go
+[228] with it, right?" And a lot of this is
+[229] just like well, it. Like, in for a
+[231] penny, in for a pound. Let's like keep
+[233] going and like you can always go back.
+[235] Um basically is I think a a reasonably
+[237] solid piece of advice. Like, take some
+[238] amount of risk and if it doesn't work
+[240] out, you can always go back.
+[242] No, I mean, I think that chasing the
+[244] damn, this is cool. Do I have access to
+[246] it? Like, that's a good feeling. So, if
+[247] you know, you're you're building
+[248] something early on, you're really
+[250] hunting for that. And uh a lot of people
+[252] would tell you it's cool, but like
+[253] they're like, no, no, no. Like, let me
+[255] like, give it to me now, kind of
+[256] feeling, you know?
+[257] &gt;&gt; Like, your first like user or your first
+[259] I think your goal as a founder initially
+[261] should be to get your first 100 users.
+[263] Like, try and get like people to use
+[265] something. It can be a family friend. It
+[266] can be like whatever. So long as you get
+[268] a bit of like running water almost over
+[270] that thing, um you're going to get
+[272] feedback. Like, originally like our help
+[274] was literally just it was a link to a
+[276] Discord channel and I just had Discord
+[277] open on my uh side screen and then it
+[279] was like
+[280] user has joined the channel and it was
+[282] like, hey, how's it going? You know,
+[283] like,
+[284] why are you here? Basically. Um and I
+[285] would just help these people. Um and
+[287] then yeah, that's kind of how it just
+[289] kept rolling.
+[290] Love that. And so, got a little
+[292] inspiration. Friends are like, how do I
+[293] get access to this? You go try to get a
+[296] job somewhere else to do this. Get a
+[297] bunch of angel checks. Okay, cool. Now
+[299] you got your own job.
+[301] You fast forward many years now and you
+[303] guys I think I saw a tweet from you just
+[304] like this past week like numbers so big
+[307] I can't even screenshot it fast enough.
+[309] Yeah. And it's just probably been
+[311] ridiculous. Yeah.
+[312] &gt;&gt; uh how does it feel kind of on this end
+[314] and we'll probably dial into the you
+[315] know, different parts of the journey,
+[316] but curious how you look back at it
+[318] like, you know, did you think it was
+[320] going to get this big? Did you think it
+[321] was going to grow this fast? Like, what
+[322] what was the kind of When did that kind
+[323] of like click for you? Um I guess like
+[326] yes and no. I was like, oh, I think
+[328] it'll be big at some point. But I think
+[329] big is always like a an aperture at that
+[331] point in time and you're like, oh, this
+[332] feels really, really big. And then you
+[334] go and look back and you're like, holy
+[335] that was like that was really
+[336] small. Uh you know, right? Like, um so,
+[339] it's it's really just about that,
+[340] honestly. Like,
+[342] where are we right now? What do we need
+[343] to do to get that next phase? And then
+[345] kind of moving directly towards it,
+[347] right? Um so.
+[349] When you look back at the journey, what
+[351] you know, you know, it's I think easier
+[352] to kind of look at milestones reverse,
+[354] right? So, when I look back at the
+[355] history, so you start, you probably have
+[357] a small crew with you, maybe at the
+[359] start, maybe it's just you. Yeah, it was
+[361] it was like just me and then like a
+[362] month or two later um there's a friend
+[364] from college I like recruited and I was
+[366] like, "Hey, do you want to like work on
+[367] this thing?" Uh I think they they just
+[369] left their job in general. So, we were
+[371] just hacking on it and then trying to
+[373] like pull in more people roughly. We
+[375] like, "Oh, we got to build all this
+[375] stuff, you know?" And then what was the
+[377] first kind of like for you the milestone
+[379] of like, I think we have something
+[381] critical for other people. You're
+[382] building a dev tool, right? So, dev
+[383] tools critical I think is an important
+[385] word. So, what what was that moment of
+[386] like, "Damn, like if this is down, like
+[388] people will yell at me and this is a
+[390] problem." What when did you first feel
+[391] that? Um I think I like you
+[395] I don't know if I I even have a moment.
+[396] It just like it gets more important if
+[398] that makes sense. It's like a one big
+[400] kind of continuum of like, "Oh
+[402] more people are using this thing and
+[403] it's really really important, right?" Um
+[405] at some point, you know, we had to build
+[407] like support to make sure that we're
+[408] getting back to users uh in any
+[410] reasonable frequency of time.
+[412] Um I guess maybe the the moment would
+[413] probably be like we had to move off
+[415] Discord for support, right? cuz we were
+[416] just like, "Oh, we can't even track any
+[418] of these like requests that we have
+[420] roughly." Um and we want to get get back
+[423] to those users, right? So, yeah.
+[425] That makes sense. And then Railway, um
+[427] one thing I've always loved about it, I
+[428] like opinionated products. Um you know,
+[430] I like products that you know, when it's
+[432] a tool, it's like how you would have
+[434] built the tool for yourself and you have
+[435] a certain perspective.
+[437] Um you know, like what made you want to
+[439] build it in a particular way? Like I
+[440] think a lot of other cloud platforms
+[442] were do anything, do everything, do
+[444] however you want. Terraform is the most
+[446] version of that, right? You were like,
+[448] "No, no, no, this is actually a good way
+[449] to do it." Probably for this segment of
+[451] people, but like what what made you lean
+[452] into that and then how have you
+[453] maintained that over the course of time?
+[455] Cuz I'm sure you get every feature
+[456] request in the world, but you know, how
+[458] do you guys keep that going? Um well, I
+[460] think first of all, um
+[463] it does actually help to think about
+[464] your competitors over time. In my mind,
+[466] it's like what what can you do that is
+[468] like markedly better than them roughly,
+[471] right? And if you look at like an AWS or
+[472] GCP or anything else like that, you open
+[473] the dashboard and you're like, "Oh my
+[475] god, there's all this stuff. Like what
+[476] do I even do here, right?" And so for
+[478] us, the value prop was like, "Well, we
+[480] have to keep it simple. Like we have to
+[482] keep it trivial, but we also have to
+[483] like make sure that it's powerful." So
+[484] that was like always a thing for us of
+[486] if we give you really, really solid
+[488] structured primitives and we make like
+[491] really, really great kind of like
+[492] volumes that you can use anywhere,
+[494] right? That like are adaptive to the the
+[496] way that you're scaling, then you don't
+[498] necessarily even need to manage a lot of
+[500] these things. And so deciding kind of
+[502] that through line of like what does it
+[504] look like up front kind of helps you
+[507] make those design decisions to say,
+[509] "This is in the vision or this is like
+[511] out like I don't know if this is in the
+[513] vision." Um, I think a good product
+[515] principle as a side note is like say no
+[517] a lot. Just like wait until users are
+[519] really, really begging you for that
+[520] feature. Maybe not initially, maybe
+[522] build whatever the thing is that gets
+[524] you your first 100 users. But once you
+[525] have something that is almost like
+[526] malleable or like tacit, like start
+[529] being very deliberate about those things
+[530] and and trying to figure out how you can
+[532] get 100 activated users. Like users that
+[534] are coming back, right? Because if if
+[536] people like like the product, they'll
+[537] use it and then they'll disappear,
+[539] right? But if people love the product,
+[540] they'll pull it into their workflows and
+[541] they'll they'll use a lot and they'll
+[544] like the compounding over time is just
+[546] it's it's crazy. Especially with a lot
+[548] of the agentic stuff that's like not on
+[550] on an exponential, but it's like on a
+[551] super exponential right now, right? And
+[553] so I think being able to go and build
+[555] like that allows you to say no to a lot
+[558] of things initially via your taste and
+[560] then after a while, it's just like we
+[562] just can't do that. Like we just don't
+[564] have enough cycles to like even do that,
+[566] you know?
+[567] I mean, when you're starting and it's
+[569] you and a small group, everyone kind of
+[570] listens to you, you're the founder. As
+[572] you build a team, this kind of grows
+[574] beyond it. And so this philosophy of
+[576] like actually say no a lot, like be kind
+[578] of lean with it what we want to kind of
+[579] do, keep it simple yet powerful. What
+[581] kind of org stuff have you learned? I'm
+[583] sure this is trial and error and then
+[584] definitely not everything has worked it
+[586] probably as expected, but what have you
+[588] kind of like, you know, synthesized over
+[590] time of like, "Hey, I bring in these
+[591] kinds of people and I give them this
+[592] kind of direction so that we can
+[594] maintain these things knowing that you
+[596] can't be in every corner of the company
+[597] now?" Yeah. Um so, as a side note, we're
+[600] like remote fully um and so we're very
+[602] very aggressive on the like agency
+[604] autonomy. Like we're not going to be
+[606] around. Like you know, we'll hire people
+[608] like in Thailand or something and it's
+[610] like, "Well, I don't have enough waking
+[611] hours to be online that period of time."
+[613] So, there's almost a good forcing
+[614] function in terms of you have to kind of
+[616] roughly be autonomous and I think that
+[619] that's something you should definitely
+[620] definitely definitely look for in in any
+[622] early hires is if you feel like you have
+[624] to manage the crap out of this person,
+[627] imagine managing 10 or 100 of these
+[629] people, right? Um and because the the
+[632] people that you end up hiring like you
+[633] are going to get 10 or 100 more of those
+[635] individuals, right? And so, if those
+[637] people are not aligned with your vision
+[640] or like not understanding it or you have
+[641] to consistently come back to them, that
+[643] might be a hard decision that you have
+[644] to make in terms of like, "Hey, it's not
+[646] you know, we're not jiving here, right?"
+[648] Um and it's no fault of your like your
+[650] own or anything else. Like not every
+[651] person, not every startup, not every
+[653] point in time, you know?
+[655] Yeah, that makes a lot of sense. Um
+[657] coming back to the early days for you.
+[659] So, when you guys started I remember,
+[661] you know, DevOps was kind of like uh
+[663] leaving the fan fear of being something
+[665] that people wanted to invest in. There
+[667] was kind of this philosophy of like,
+[668] "Well, you got to be cloud. It's all
+[670] kind of done. The consensus window has
+[672] kind of like left." Yet somehow you
+[674] guys, you know, first didn't waver
+[676] against that. You guys kept going and
+[678] second you found a way and a pathway
+[679] through it. You know, there's only a few
+[681] companies I think that make it like
+[682] that. One like how was it navigating
+[684] that early days where you're probably
+[686] running into more people that are
+[687] skeptical about your business and how
+[689] you can grow and how you can fight the
+[690] giants.
+[691] You had belief. So, what was that early
+[693] kind of moment like for you guys? Um I
+[696] think you you have to have like a deep
+[697] conviction in the thing you're building.
+[699] Um I think a lot of people go out and
+[701] like I want to start a company or like
+[703] do something, right? And you almost kind
+[705] of want to avoid a little bit of that.
+[706] Like do the exploratory phase, but like
+[708] wait until an idea really really pulls
+[710] you, right? Because there's going to be
+[711] plenty of those times. There's going to
+[712] be times when you like, you know, we
+[714] pitched like hundreds of investors,
+[715] right? And like
+[717] hundreds of investors have told us like
+[718] no. Um
+[720] and like that is roughly demoralizing.
+[722] Um but if you care about the thing that
+[724] you're building so much and you're like
+[725] listen, I actually genuinely believe
+[727] that
+[728] all of you are wrong. Um
+[730] we're going to go and build this. It's
+[731] going to be deeply excellent. Then you
+[732] kind of have that conviction to go and
+[734] build through those things. But I think
+[735] if you're kind of like oh I want to
+[736] start this
+[737] and then, you know, the times get really
+[739] really tough. Like
+[741] push like the best comp times at the
+[743] company have always been after we pushed
+[745] through a period where it it just sucked
+[747] ass. Like it was horrible, right? Um and
+[750] I think that you need that deep
+[751] conviction to get to those like next
+[753] milestones. Generally because the the
+[755] journey is so long and there's there's
+[757] various different things that are are
+[758] going to be like ups and and deep downs,
+[760] you know?
+[762] And then um
+[763] you know, like now so you you know,
+[765] early on maybe you're going against the
+[767] grain of the trend of the investment
+[768] market. You still go raise. Now as that
+[771] shifts and your company kind of shows a
+[772] lot more evidence, you actually have
+[774] your pick a little bit more as you go
+[776] down. And and you guys have been able to
+[777] raise a good amount of money.
+[779] You know, how's your philosophy now of
+[780] like picking investors? Who do you want
+[781] to partner with? Like, you know, as
+[783] you've now worked with different kinds
+[784] of folks or talked with people, like you
+[786] know, has that opinion changed? Early on
+[787] you might need any money, but now you
+[789] could be a little bit more selective
+[790] about like who to bring on and maybe
+[792] even be cheaper on the price or
+[793] whatever, but like curious like if your
+[795] philosophy has changed as you've guys
+[796] have now on the success side of the
+[798] puzzle, you know? Yeah. Um I don't think
+[800] my philosophy has changed. I was just
+[801] like almost like lucked into it by
+[803] accident, you know? And it was just like
+[805] oh hey, you know, like these angels seem
+[807] really great. Um, okay, maybe we'll like
+[809] take money and and and work with them or
+[811] whatever. And then, you know, a few of
+[813] them have ultimately been like so so
+[815] beyond deeply helpful and deeply
+[817] generous.
+[818] Um, and then, you know, we our first
+[820] institutional investor, they were like,
+[821] yeah, you seem to know what you're
+[823] doing. Uh, we're just going to leave you
+[825] alone. Like, you can let us know if you
+[827] like need something or whatever. And I
+[828] was like, all right, cool. That sounds
+[829] great. Um,
+[830] second institutional investor, um, I was
+[832] actually more deliberate on this one. I
+[834] was like, I have no idea how to run a
+[835] business. Like, I am an engineer. Um,
+[838] you know, you hand me a spreadsheet and
+[840] I would just like remember it and we'll
+[841] shut down. Um,
+[842] so, I was like, we need somebody who's
+[845] going to teach us how to be like deeply
+[846] operational, right? Um, so, our well,
+[849] one of our board members, uh, Erica from
+[850] Redpoint, she's wonderful. Um,
+[852] deeply operational, right? Um, and so, I
+[854] think my the way that we pick investors
+[857] is
+[859] almost like, how do you exchange some
+[861] part of your company which will
+[862] ultimately become, if it's deeply
+[864] successful, the cheapest option call on
+[867] that company at that point in time for
+[869] an unfair advantage. And I think that
+[871] this is something that people don't 100%
+[874] like think about when they're kind of
+[875] like rolling through fundraising.
+[877] They're just like, how do I get the the
+[878] hottest partner or like the biggest
+[880] valuation or all of this other stuff,
+[883] right? And I don't know if that's 100%
+[884] correct, but it's definitely not the way
+[885] that we think about it, right? Like,
+[887] I look for people who actually care a
+[890] lot about the space. Like, are they
+[891] going to show up and have really really
+[892] good advice? Are they going to think
+[894] about these things? I can can they help
+[896] us in something that like functionally
+[898] like no idea, right? And so, like, you
+[900] know, Erica on the operation side and
+[902] then this new investor we've got on like
+[904] enterprise sales, right? Um,
+[906] cuz those are kind of opportunities for
+[907] us to go and almost like exchange that
+[909] uh that equity for um the almost like
+[912] expertise. So, it's a, you know,
+[914] exchanging the equity for an unfair
+[916] advantage, right? So,
+[917] and you know, I think startups are about
+[919] leverage. Obviously, when you're
+[921] starting, you don't have more money than
+[923] your competition, right? So, if you're
+[924] building something and AWS is your
+[926] competitor, GCP, you can't outbid them.
+[929] You can't out, you know, spend them. So,
+[931] you got to find some other creative
+[932] function and you kind of leaned on that.
+[934] Yeah, 100%, right?
+[936] It's like, I mean, if anybody's ever
+[937] watched the movie like Moneyball, it's
+[939] like it's a lot of that early where
+[940] you're just like, "Ah, listen, you know,
+[941] like
+[942] this, like, I think individual is going
+[944] to have an outside impact in in here.
+[946] There might be like a quirk where
+[947] they're like a little bit kind of like
+[949] whatever,
+[952] and you kind of turn those like quirks
+[954] into almost like superpowers, right? So,
+[956] I think you just have to be very, very
+[957] deliberate and and also quite savvy in
+[959] terms of
+[961] your initial expectations because it is
+[964] like a lot of almost arbitrage.
+[966] Yeah, love it. Also love that Moneyball
+[968] movie. I was a die-hard A's fan, so I'm
+[969] one of the guys in the bleachers in that
+[971] movie, you know, so like
+[972] the good time, good time.
+[974] So, you guys have exploded. I mean, the
+[976] agentic world is probably a big part of
+[978] that. You talked about being a kind of
+[981] simple, fitting in the human context as
+[983] a product probably give you an unfair
+[984] advantage into the agentic context in
+[986] problem space.
+[987] &gt;&gt; Yep. Um, you know, as this is growing,
+[989] like you're now seeing probably all
+[991] kinds of stuff happening. What's your
+[993] worldview both with your company and
+[995] kind of the external side? Like, what's
+[997] happening here? I mean, we all see
+[998] what's going on in the world, but you
+[1000] have a unique perspective here, so I'm
+[1001] curious what you what you're seeing,
+[1003] what you're excited about, what you're
+[1004] not excited about. Um, I think it's such
+[1007] an interesting
+[1008] uh the exponential curve is no longer an
+[1010] exponential curve, it's now a super
+[1011] exponential curve. And humans are very,
+[1013] very, very bad at understanding
+[1015] exponentials.
+[1016] Um, and so they have no basis to
+[1018] understand what a super exponential is,
+[1020] right? Um, so one thing that we're
+[1021] seeing right now is is
+[1023] it's almost like if Claude or chat can't
+[1027] see you, your product is not going to
+[1029] hit any of these curves, right? Um,
+[1031] because those agents are doing thousands
+[1033] of actions per second, because they're
+[1035] getting better at being long-running,
+[1037] and you can pipe them into those
+[1038] workflows. If you can hook into that,
+[1040] then your flywheel turns over a lot
+[1042] better. Otherwise, it's very, very
+[1043] difficult for those kind of almost like
+[1045] curves to really, really play out. So, I
+[1047] sort of understand the investor thesis
+[1048] of like, if your chart looks like this,
+[1050] you know, great, awesome, set your price
+[1052] or whatever. But, if your chart doesn't
+[1054] look like that, then, you know, we'll
+[1056] we'll wait until there's more
+[1057] information, even if it's deeply more
+[1058] expensive later. Yeah, I mean, I think
+[1060] over time, you know, a little bit older
+[1062] than most of the folks here, but like
+[1063] seeing kind of cloud happen, seeing the
+[1065] internet form, it gave a lot of leverage
+[1067] to startups where you could start kind
+[1069] of cheap and quick, but then the scale
+[1071] could grow. I think now we have not only
+[1073] agents that have good contacts and can
+[1075] run long, but we have this like
+[1076] hyper-connected social networks where
+[1078] like, you know, you guys have probably
+[1080] noticed this project that it has now
+[1082] changed names three times over the last
+[1084] 5 days, right? So, you had ClaudeBot,
+[1085] MoldBot. Yep.
+[1086] &gt;&gt; It probably changed right now as well.
+[1087] Who knows what it's called. Um, you
+[1089] know, I think OpenClaude was right
+[1090] before this talk, but who knows what
+[1091] it's called now. But, like it you know,
+[1093] the hyper-connected nature of the
+[1094] networks has created this like, you
+[1096] know, super exponential opportunity. And
+[1099] um, you know, you guys are at kind of at
+[1100] the center of that. And so, you know,
+[1102] when you see this as a founder, like
+[1104] you're like, hey, I'm in a unique
+[1105] position. These agents can see my
+[1107] product. They can leverage my product.
+[1109] You guys are probably unlocking more
+[1111] ways for agents to use it. But, then how
+[1113] are you like, like are you changing your
+[1114] company operations as well? Like these
+[1116] agents are probably useful inside the
+[1118] companies. I'm curious how you're using
+[1119] agents yourself. Yeah, uh I mean, I'm
+[1121] using a lot of like Claude code either
+[1123] to author code or build um almost like
+[1125] processes or workflows internally. Um,
+[1128] and so, the way that the company roughly
+[1129] works right now is we built our own
+[1131] support tooling, which gives us all the
+[1132] telemetry for many users who have issues
+[1134] in general. Um, that goes and gets piped
+[1137] into uh now basically just a version of
+[1140] Claude that has all of that context with
+[1141] all those MCPs. And then, if you want to
+[1143] build a feature, you can essentially
+[1145] start working with Claude in terms of
+[1147] like moving that into shape. And then we
+[1149] have a tool internally uh to to build
+[1151] almost a document that other people can
+[1152] go to review and say like, oh, is this
+[1154] like does this actually make sense? And
+[1156] then you can kind of work alongside it.
+[1157] So, that's like one way that we're kind
+[1159] of like building with those. Um and then
+[1162] internally I've basically just said that
+[1163] um I think if you are writing code by
+[1165] hand, uh you're making a deep deep
+[1168] mistake. Um and like I've been writing
+[1170] code for probably 15, 20 years now. Um
+[1173] and it's gone and it's like probably not
+[1175] going back. And so, I think that you
+[1177] should really really kind of leverage
+[1179] these agents to move deeply deeply
+[1181] quickly um so that you can actually even
+[1183] think it about things at a higher level.
+[1185] Like think about your architecture,
+[1186] think about your product, think about
+[1188] all of this other stuff, right? The
+[1190] implementation doesn't really matter
+[1192] anymore so long as you're not just like
+[1194] massively creating a
+[1195] an absurd amount of tech debt, you know?
+[1197] Yeah, don't just yellow anything, but
+[1199] like, you know, I think it's a huge
+[1200] opportunity. Uh one thing I love to do
+[1202] is like there's a bunch of ideas on how
+[1204] the product should work and sometimes
+[1205] you go and convince other people in your
+[1207] team. It's probably the easiest moment
+[1208] in time to like whip up an iteration.
+[1211] And by the way, half the times you whip
+[1212] it up with the agent, you hid it
+[1213] yourself, so you never tell anybody you
+[1214] did it. And so, you know, you can
+[1216] quickly get out of that habit of like
+[1217] convince other people of feature, just
+[1219] try it. Much much easier to do that. So,
+[1221] support was that you know, outside of
+[1223] the product engineering world, is that
+[1225] kind of like the number one problem area
+[1227] that you guys had? I mean, you know,
+[1229] because you pointed agents as it it
+[1231] sounds like that was like a big need.
+[1232] &gt;&gt; Yeah, I mean, so we have 2 million users
+[1235] now and we're adding about 250,000 users
+[1238] a month.
+[1239] Um and so, it's growing reasonably
+[1241] quickly and each of those users has
+[1244] friction points, pain points, etc. And
+[1246] we're like a really small team. We're
+[1248] like 35 people. Um and so, we have uh
+[1252] about five
+[1254] No, I'm probably six people in like
+[1256] running support roughly. Uh so, we have
+[1258] like four support engineers now and then
+[1261] two
+[1262] uh customer success engineers.
+[1264] Um
+[1265] and yeah, we we had to build a lot of
+[1267] this leverage and tooling initially
+[1268] because we only had one support engineer
+[1270] and then we had two support engineers,
+[1272] right?
+[1273] And yeah, it's just there's a lot more
+[1276] volume now, especially with a bunch of
+[1277] the agenda stuff that that's kind of a
+[1279] massive massive point because we want we
+[1281] want the like we don't want to just
+[1283] basically be like, oh, here's here's
+[1284] Claude. Like Claude will solve most of
+[1285] your things cuz one I think that's a
+[1286] poor experience and two we actually want
+[1288] all the signal from that in terms of if
+[1290] you're asking us about why custom
+[1293] domains suck to set up, like we can
+[1295] probably make that experience better and
+[1296] so we want to know all of that
+[1298] information, too, you know? Yeah, I mean
+[1300] if you just point Claude at it, everyone
+[1301] else could do the same thing. Yeah,
+[1302] exactly.
+[1303] &gt;&gt; If you craft an experience with Claude,
+[1305] then you can, you know, again get more
+[1306] exponential value out of the same thing.
+[1308] Yeah, 100%. So, that was a that was one
+[1310] initially where we were like, we're
+[1311] going to go in on this. And then I think
+[1313] to the earlier point of like think about
+[1314] where your competitors are not good at,
+[1315] like
+[1316] support's pretty up there with AWS and
+[1318] other platforms, so. Yeah, I mean just
+[1320] you can't get past the console. Where's
+[1321] the support button, you know?
+[1322] &gt;&gt; Yeah, right. 100%. Yeah.
+[1325] Um yeah, very very interesting times.
+[1327] So, 2 million users at 250,000 per
+[1329] month. Pretty crazy. Yeah, it's I mean
+[1331] it's it's nutty.
+[1333] There's there's a lot of stuff that's
+[1334] pending and stuff, so. You know, I think
+[1335] a lot of the things that we talk about
+[1337] here with the early founders are like
+[1338] growth, distribution, you know, we we
+[1341] we're all technical, many of us here
+[1342] we're builders, like we know we can
+[1344] build stuff, but how do you grow it? In
+[1346] the early days, what did you use to get
+[1347] off the ground? I think you talked a
+[1348] little bit about Twitter, but like was
+[1349] there something specific that you did?
+[1351] And now that you're seeing this crazy
+[1352] growth trajectory, like are you doing
+[1354] something different now to kind of
+[1355] enhance that? Yeah. Um so, initially
+[1358] like
+[1359] we just basically found or I found an
+[1361] entry point in a vertical which was I'm
+[1363] going to post on Twitter and I'm going
+[1365] to show up here and anybody if anybody
+[1367] has any issues or anything else like
+[1368] that, I can respond there and then I'm
+[1370] just going to do my distribution through
+[1372] that one channel cuz I had like a
+[1373] Twitter account for shitposting
+[1375] basically and I was like, all right,
+[1376] well, like we'll build that as a
+[1377] channel.
+[1379] Um and then once that flywheel really
+[1380] started to go, then we got to the point
+[1382] where uh there was actually like
+[1383] positive yield on like word of mouth.
+[1385] And then I think that's when you kind of
+[1387] know like you have something is like if
+[1388] you get positive K factor. So like
+[1390] friends will tell friends basically.
+[1393] Then you can know that like oh that's
+[1394] working, right? And so the initial
+[1396] channel that I wanted to get off the
+[1397] ground was that word of mouth and and
+[1400] just figure out how we could get to the
+[1401] almost like iteration of the product
+[1403] initially. And then once you have that
+[1404] flywheel initially, you can figure out
+[1406] if there's other channels you want to go
+[1407] and crack, right? And so now we're like
+[1410] we're posting on like LinkedIn and stuff
+[1411] like that, which is like not a channel
+[1413] that I'm like okay cool we want to do
+[1415] that, but like we have
+[1417] like enterprise people that are like oh
+[1418] we like want to we want you to show up
+[1420] in like appear in the places in which we
+[1422] go and appear, right? So I think you
+[1423] should pick a channel, try and figure
+[1425] out how you can get it to to almost like
+[1428] self-sustaining so to speak where it's
+[1430] like very very low energy, and then try
+[1432] and figure out what your other channels
+[1433] might be, right? Like you can do maybe a
+[1434] gentic SEO for growth later, you can do
+[1436] regular SEO, you can do all those other
+[1438] things. But every time you try and build
+[1440] a new channel, it's essentially energy
+[1441] that you could take away from an
+[1442] existing compounding channel. So you
+[1444] have to believe that there is a good
+[1446] thesis there, right? Like any amount of
+[1447] energy we could take to go and and craft
+[1449] things on LinkedIn could be used for a
+[1452] gentic SEO, or it could be used for all
+[1454] this other stuff. And thankfully a bunch
+[1455] of that feeds into there, right? But it
+[1457] all depends on your goals, right? And
+[1459] so, you know, if you're building a
+[1461] consumer app and you're just starting
+[1463] out, you might not want to just like
+[1465] build your brand on LinkedIn or
+[1466] anything, right? But if you happen to
+[1467] already have one and it's kind of in
+[1469] line with your your product, then I
+[1470] think you can find a really really solid
+[1472] entry point. So I'd figure what is is
+[1474] aligned with yourself, your business,
+[1476] etc.
+[1478] And then especially early like don't do
+[1479] anything you wouldn't really want to go
+[1481] and do.
+[1482] There's a kind of I'll butcher the
+[1483] quote, but there's like an adage that
+[1485] it's like it's really difficult to like
+[1486] compete with somebody who's having fun.
+[1488] And so if you just start from like a
+[1489] slugfest of like okay I'm going to you
+[1492] know I hate LinkedIn, but I'm going to
+[1494] get up and I'm going to post on LinkedIn
+[1495] every single day, right? Like
+[1498] that's a pretty hard flywheel to keep
+[1500] like turning over, right? Versus if
+[1501] you're like, "Oh, cool. Like I do this
+[1503] thing by default cuz I like like it. Um
+[1505] I'm just going to keep going and doing
+[1506] it and figure out how I can incorporate
+[1507] in it." Then you can start your
+[1508] flywheels in a really, really solid way.
+[1510] Yeah, make work feel like play and you
+[1512] can do it every day and it's hard to
+[1513] compete with that. Um
+[1516] Well, uh I think one of the things as a
+[1517] founder when you look back at it, you
+[1519] know, we develop a lot of battle scars,
+[1520] right? You learn a lot of stuff. You
+[1522] don't even know when you're learning it.
+[1523] And later you realize, "Oh, I was doing
+[1524] that. I'm such an idiot."
+[1526] Um if you're going to go back and look
+[1527] at your journey here at Railway and
+[1528] maybe other things that you've built,
+[1530] what are like a few things that you
+[1531] would pick up and say like you're
+[1532] speaking to an audience of founders that
+[1534] are kind of at the start of that
+[1535] journey? Like, you know, not advice, but
+[1537] just like, "Hey, I went through some of
+[1538] these." Like anything you know, come to
+[1540] mind on that front?
+[1541] Um
+[1544] I'm trying to figure out which ones are
+[1545] good pieces of advice.
+[1546] &gt;&gt; Just throw them out, you know. Well, I I
+[1548] mean like I would I wouldn't try Okay,
+[1550] so
+[1552] at in the early days I would I would
+[1553] spend a lot of time or energy trying to
+[1555] like debate things. And I was like, "I
+[1556] don't think that's a good idea or
+[1557] anything else like that." Right? And
+[1558] I've mostly switched my um thesis now
+[1561] where I think I'm like, "That's dumb. Uh
+[1563] how do we do that immediately so that we
+[1565] get some answer out of it?" Right?
+[1566] Because sometimes I'm even wrong and
+[1568] we're like, "Oh, That like
+[1569] actually worked really well." Right? Um
+[1571] but it it kind of removes any of that
+[1573] energy of of having to like go and waste
+[1575] it on like words versus like action,
+[1577] right? And so I think action is one of
+[1579] the best things you can take because
+[1580] either you get like sweet success or
+[1583] bitter failure and both of those things
+[1585] actually will ultimately form some basis
+[1587] for experience, something you can pull
+[1588] on, something you can learn on, right?
+[1590] But if you spend that time debating, you
+[1591] don't actually get anything out of it,
+[1593] you know? Um so I would say the action.
+[1596] Um
+[1596] and then yeah, just do the things that
+[1598] roughly feel right to you, you know?
+[1600] That makes sense. I love that approach.
+[1602] It just helps you get your kind of
+[1604] answer super quick. Um
+[1607] you know, what's your, you know, last
+[1609] one here for you and then we'll kind of
+[1610] open it up to some questions from the
+[1611] folks here, but like Railway is growing
+[1614] fast. You told us some of the numbers.
+[1616] You're starting to become I would say
+[1617] the premier platform for startups and
+[1619] agents and enterprise now to kind of
+[1621] use. Like where do you want to take this
+[1623] to? You know, what's the you know, is it
+[1624] well what's the you know, I don't want
+[1625] to say what's the top end goal, but like
+[1627] if we look at the next milestone now,
+[1629] like is it I want you know, like what
+[1631] what do you want out of this?
+[1632] Um well, I mean
+[1634] I have I'm a big believer that like
+[1636] every single person has like a thing
+[1638] that they should be working on it. Like
+[1639] a for lack of better words sounds harsh,
+[1641] but like purpose. Like there's a thing
+[1642] that you should be doing at this
+[1644] specific time, right? And I think the
+[1645] thing that we are are doing and that we
+[1647] should be doing at this specific time is
+[1649] making it easier for people to create
+[1650] things, like good things, you know? Um
+[1653] and so for us that's what we think about
+[1655] a lot, right? Um how do we make it just
+[1657] trivially easy for you to just unburden
+[1659] yourself of any amount of software that
+[1661] you have to go in and produce and and
+[1663] start pushing your creative endeavors
+[1664] into the world, right? And we're
+[1666] starting to do that on the software
+[1667] side, right? But in an ideal sense like
+[1670] we should be able to go in and do it in
+[1671] the physical like world or anything else
+[1673] like that. Like we've started getting to
+[1674] a point where uh we run our own data
+[1676] centers. Um and so we've built this
+[1678] system for we've virtualized all the
+[1680] racks. And so you can now actually start
+[1682] like dragging and dropping like servers
+[1684] into these racks and it will start
+[1686] cutting like POs for like
+[1688] server hardware, right? Um so you can
+[1690] get to a point be like I have this much
+[1691] power, I have this much ethernet, I have
+[1692] this much whatever. How do we go in and
+[1694] kind of like
+[1695] push that into the world, right? And so
+[1697] I think that making it easy for people
+[1699] to create anything is what we want to go
+[1701] in and do and I think that
+[1703] um you know, in terms of like a
+[1704] financial outcome or an impact outcome,
+[1706] like I think the the score almost takes
+[1708] care of itself in that sense of like if
+[1710] you build that, it's so deeply valuable
+[1712] to people and it's also such a force for
+[1713] good that like
+[1715] sky's the limit in terms of what we can
+[1716] do.
+[1717] Makes a ton of sense. Appreciate you
+[1718] sharing uh your part of your story here
+[1720] and you know, kind of sharing some of
+[1721] your wisdom and you know, let's get to
+[1722] some questions. I think
+[1724] you know, do you want to just just stand
+[1726] up here or do you want to pull a side
+[1727] Aiden?
+[1728] Um so something I wanted to kind of
+[1730] understand was you mentioned that some
+[1732] of your best times were after like a
+[1734] string of shitty times, right?
+[1737] Can you kind of elaborate a little bit
+[1739] on what those shitty times look like and
+[1741] how did you actually get out of it
+[1742] because I think as founders we spend
+[1744] more shitty times than the good ones. So
+[1746] curious to hear that. I think I think
+[1748] it's always it's like very very hard to
+[1750] like know in general. I think if you if
+[1752] you end up in what I would call like
+[1754] these loops essentially where you're
+[1755] doing a lot of the same thing over and
+[1757] over again.
+[1759] Like I'm a big believer in uh the the
+[1761] the thing which is like a lesson is
+[1763] taught to you exactly however many times
+[1765] is required to learn that lesson. And so
+[1767] if you are kind of repeating those
+[1768] things and you're noticing any of those
+[1770] like patterns or repetitions or anything
+[1772] else like that, try to figure out how
+[1773] you can switch it up, right? Like and
+[1774] just add a little bit of kind of like
+[1776] almost like jitter to the system. And I
+[1778] think you'll figure out pretty pretty
+[1779] like pretty quickly of like oh cool, I
+[1781] have to like manage the crap out of this
+[1783] person and like we're not aligned or
+[1785] whatever. So what happens if I let go a
+[1787] little bit? Like do those things get
+[1789] better? Do they get worse, right?
+[1790] Ultimately they change a little bit. So
+[1792] I'd figure out how to inject a little
+[1793] bit of change into the system so that
+[1795] you can go in and do that. Um and with
+[1797] the asterisk being there are potentially
+[1799] periods of time where you may even know
+[1802] that it's going to suck. Like there's
+[1804] just like and if you have a very very
+[1806] clear thesis and goal, I think you can
+[1809] rally people around you and say like
+[1811] listen, it's actually going to suck for
+[1812] the next like 6 months, right? But after
+[1815] that I think if we nail these things,
+[1816] you're going to start seeing this stuff,
+[1818] right? And I think if you can make that
+[1819] clear to the people that you're working
+[1820] with, um they they'll they'll back you,
+[1823] right? Like they've they've backed me in
+[1825] in general um because they can see that,
+[1827] right? They they
+[1829] I I don't think people just want these
+[1830] things to be like rosy all the time.
+[1831] Like people actually, you know, maybe a
+[1833] hot take, like people actually like
+[1834] working hard and they like working on
+[1835] something that they feel they can move
+[1837] forward, right? So I would say probably
+[1839] try and just like switch it up in
+[1840] general, but hard times are
+[1843] like very unavoidable. Uh Uh, so
+[1846] I did Thank you.
+[1847] Cheers. Thanks.
+[1850] Hello. Thanks for coming. I use Railway
+[1852] every day. Oh, thank you. Um, so my
+[1855] question is I'm I'm building an infra
+[1857] product. Um, it's useful when my
+[1860] customers are in somewhat of a scale.
+[1862] So, my question to you from your early
+[1864] day
+[1865] How do you validate things quickly and
+[1867] move fast
+[1869] when
+[1870] everything you do should work well and
+[1872] should work well all the time because
+[1874] your reliability is number one for your
+[1876] customers.
+[1877] Um, so I guess I would I would almost
+[1879] try and judo the question a little bit,
+[1882] which is Okay, so assume that we run a
+[1885] bunch of production infrastructure
+[1886] because we do. Um, and it has to be
+[1888] reliable because it like people depend
+[1891] on it, right? Um, there's actually a
+[1892] deep continuum of uh, what constitutes
+[1895] like production useful infrastructure,
+[1897] right? Like internal tools as an
+[1899] example, like could good avenue, right?
+[1901] You can start kind of there and say,
+[1902] "Hey, listen, this doesn't have to be
+[1903] 100% reliable if the value is so high,
+[1906] right?" And I think that that almost
+[1907] helps you kind of almost zero in on a
+[1910] spot where you can say, "Hey, the
+[1912] value's actually so good that um, if it
+[1914] doesn't have to be 100% reliable and
+[1916] this smaller section can like work, then
+[1918] I can know and have a proof point to
+[1920] build towards those reliable systems." I
+[1922] think the the problem of saying, "Oh, it
+[1923] has to be 100% reliable on all these
+[1925] other things" is you're going to spend a
+[1926] lot of time building this thing and then
+[1928] you might you might be like wrong about
+[1931] some stuff, right? And you might have to
+[1932] go and twist it, right? And I think
+[1933] especially with like software
+[1934] architecture, like we there's there
+[1936] there were services that held together
+[1938] for like thousands of requests per
+[1940] second with like one shitty Redis
+[1942] instance. Um, and I think you can get a
+[1943] lot out of those things if you're
+[1945] deliberate about the insertion points of
+[1947] of
+[1948] how people will go and use them, right?
+[1951] Um, so yeah.
+[1952] It would basically double it down on
+[1954] what he was saying earlier is like
+[1955] you're better off just getting an answer
+[1956] faster. So, you know, if your goal is to
+[1959] help somebody with with a lot of scale
+[1961] and and take a long time to get this for
+[1963] the end use case you're trying to get
+[1965] to, if you find an internal use tool use
+[1967] case or something else that's again very
+[1969] critical and has a lot of scale, but
+[1971] yeah, if it's down for a few minutes a
+[1973] day or an hour like it's not the end of
+[1974] the world. It's not like the main
+[1975] website's down. It allows you to get
+[1977] your answer faster of do they even want
+[1979] it? Do they even need it? Does your
+[1980] solution kind of help? And so, you're
+[1983] better off picking this corner. Don't
+[1984] and you know, you don't have to say
+[1985] like, "I'm only in this corner forever."
+[1987] But it it allows you to get going and
+[1989] validate that and then you earn you
+[1991] basically have to buy
+[1993] the future time from yourself. Like you
+[1995] need to earn that kind of time, right?
+[1997] And so like, "Oh, it's going to take me
+[1998] a year to make it perfect." Well, how do
+[1999] we earn the year? We got to go prove
+[2001] something. And so finding another pocket
+[2002] there is pretty useful. Yep. And and
+[2004] people will tolerate a lot of that,
+[2005] right? Like I mean, look at the like
+[2007] Cloud Bot stuff. Like it they it breaks
+[2010] in various different ways where you're
+[2011] just like, "No, like you can't be
+[2013] possibly using this for like 100%
+[2015] reliable like use cases, right?" But
+[2017] people are like, "I want a virtual
+[2019] assistant. I want this thing." And they
+[2021] and they they they have this like desire
+[2023] to like go towards that thing so much
+[2025] that it doesn't matter actually like the
+[2027] the quality or the craft or all of those
+[2030] other things if the there's a deep
+[2032] enough utility, right? Like those things
+[2033] can also come later, right? And I do
+[2035] argue that that they matter especially
+[2037] when you get into um
+[2039] a lot of these kind of like larger
+[2040] arenas where there's many people and and
+[2042] products like brand matters a lot and
+[2044] quality matters a lot and a lot of those
+[2046] things
+[2047] but they don't matter initially when
+[2048] you're starting the thing. You just have
+[2049] to find that initial wedge where people
+[2050] give give enough of a crap to be like,
+[2052] "I want that thing and I will keep using
+[2054] it." Um and I'll give you feedback so
+[2056] that you can go and iterate and that
+[2057] starts the flywheels.
+[2059] Okay, so
+[2061] um getting a Redis within an API call
+[2063] even if it's down
+[2064] is a sign. Yeah. Yeah, yeah. And then
+[2067] like people will just be like, "Hey,
+[2068] listen, this thing is down." Right? Like
+[2070] if they're telling you it's down, like
+[2071] that's good. They want to use it, right?
+[2074] Okay. Yeah, the worst thing is if, you
+[2076] know, you're down and nobody knows
+[2077] you're down. You don't want that.
+[2078] But But yeah, we I mean we've we've had
+[2080] had that some of the early days where
+[2081] we're like, "Oh like everything's
+[2082] down.
+[2083] We're probably not building the right
+[2084] thing there." Yeah, I've built plenty of
+[2085] stuff where, you know, yeah, oh, this
+[2087] was down for two hours, nobody yelled at
+[2089] me. Well, that nobody wants it.
+[2091] &gt;&gt; Yeah, right? So, to your earlier
+[2092] question like, how do you know? It's
+[2093] like people start yelling at you. Like
+[2095] they just like are very angry. And
+[2096] that's how you know that you've actually
+[2098] built a really good product cuz like
+[2099] they're pissed cuz like they're relying
+[2101] on it deeply. And then they're like, "Oh
+[2102] my god, this should work." And you're
+[2103] like, "Oh, I know it should work, but
+[2106] this part sucks. We'll fix it."
+[2108] Okay.
+[2109] I'll hope for that.
+[2112] Um I'm Kaylin. I'm building company
+[2115] memory for teams. And
+[2117] I'm a solo founder right now. And in the
+[2119] early stages, you have limited
+[2120] resources. And I have my first like 100
+[2123] users. And it's really hard to know like
+[2125] what the right next decision is
+[2127] when the resources are limited. So, when
+[2129] there's like people asking for feature
+[2131] requests or fixing bugs, you need to
+[2133] also
+[2134] keep track of like the competitors. How
+[2136] do you know like what the right decision
+[2137] is when there's like limited resources?
+[2140] Um I think
+[2142] I would argue that you probably don't
+[2144] need to keep track of the competitors
+[2145] initially. You can look at them and say
+[2147] like, "Does this fit my vision of like
+[2150] what this thing should be?" And I think
+[2152] that
+[2153] it's funny I like I've listened to like
+[2156] some other founders and they're like
+[2157] talking about like, "Oh yeah, like my
+[2158] job is like to set vision or whatever."
+[2160] And like as I was like growing up I was
+[2161] like, "That's kind of a job.
+[2162] Like can't you just like know or
+[2164] whatever, right? Like don't people just
+[2165] know?" But over time actually I've
+[2167] realized that it is actually very
+[2168] important and you should be very, very
+[2170] clear about what your vision is because
+[2171] it will help you make these decisions
+[2173] and it will help you decide what parts
+[2175] you should bring into your product. It
+[2176] will help you communicate to the people
+[2177] that you're going to go and ultimately
+[2178] recruit and be like, "Hey listen, this
+[2180] is what we want to go and build." And so
+[2182] I think when there's like a lot of that
+[2183] kind of like noise, Um, always try and
+[2186] kind of gravitate a little bit more
+[2187] towards like peace a bit. So, like I
+[2189] journal a lot, right? Every Every Sunday
+[2190] I journal. I think I like try and slow
+[2192] things down and I try and figure out
+[2194] like what are the things that are kind
+[2195] of roughly emerging that like we need to
+[2197] be working on this specific week. And
+[2199] then I figure out what we need to do
+[2200] that specific week to move those things
+[2202] forward, right? And kind of refine on
+[2204] that vision. So,
+[2205] um I think that that's kind of what I
+[2207] would roughly recommend. And I think a
+[2210] lot of that
+[2211] um
+[2212] intuition actually comes from making
+[2214] good and bad decisions, right? And so,
+[2216] if you make a bad decision, you build
+[2217] something that like actually people
+[2218] don't want, it gives you a lot of
+[2220] information about like, "Oh, like people
+[2221] really like that and then they didn't
+[2223] like that other thing, right?" And so,
+[2225] almost keeping that like iteration loop
+[2227] kind of rolling, I would say is is a big
+[2228] one.
+[2230] Yeah, I love the phrase I used to use
+[2232] "slow down to speed up."
+[2233] You know, you just have to take a lot of
+[2235] it and condense it down into something
+[2237] that makes sense. Yeah.
+[2238] &gt;&gt; Um, and I love the weekly framing,
+[2239] right? We talk a lot about A+ problems
+[2241] here every week. And there's usually one
+[2243] thing that matters and most things
+[2245] don't. Yeah, right? Um, and and when
+[2247] there's so much noise and like so much
+[2248] bandwidth and so much all these other
+[2250] things it can be really really difficult
+[2251] to go and do that, but that's where I
+[2253] would argue the arbitrage is right now,
+[2255] right? Like everybody is trying to like
+[2256] move towards like whatever that specific
+[2258] thing is of the week. And if you can
+[2259] kind of almost try and make those like
+[2261] contrarian bets and be like, "This is
+[2263] the thing I genuinely believe that we
+[2264] should be building." Um,
+[2266] like way way better for you if there's
+[2269] actually people not building that thing,
+[2271] right? Because then you're a kind of
+[2272] unique uh you know, thing in in that
+[2274] market. People can be like, "Okay,
+[2276] actually I really want that at a
+[2277] specific point, right?" Um, and it might
+[2279] take a long while of like you know,
+[2281] pawing in the darkness or like crawling
+[2283] around this void or whatever, right? But
+[2284] if your intuition is good and you want
+[2286] to build this thing specifically, I
+[2288] believe that at some point you'll kind
+[2289] of like go and and hit that, right? Um,
+[2292] but that's also why I would I would
+[2293] recommend trying to get those first 100
+[2294] users as quickly as possible because
+[2296] that period sucks. Um 100% and I think
+[2299] the last thing I would add is uh you're
+[2301] going to be resource constrained for a
+[2302] long time. Like, you know, as a startup
+[2303] like you know Like probably ever. Yeah,
+[2306] like you know, like for example, he's
+[2307] going after AWS and GCP. Like you know,
+[2309] he's resource constrained no matter how
+[2311] much money he has, right? But like so I
+[2312] don't think resource constraint is a
+[2314] problem. Actually it helps you cuz you
+[2315] can't do all the other BS. You can only
+[2318] do one or two things and so you're
+[2319] better off deciding doing it if it's the
+[2321] wrong thing to take a step back and go
+[2323] to the right thing and you know, I would
+[2325] use the constraint as an advantage.
+[2326] Yeah, and it's it's like that kind of
+[2328] like earlier thing of like
+[2329] if things are repeating themselves, like
+[2331] if you're doing this stuff and it's not
+[2332] working or what not working, it's like
+[2334] some part of that action loop is not
+[2336] working to move you towards something,
+[2338] right?
+[2339] And it could move you like you could use
+[2341] it to move yourself towards something
+[2342] bad or something good, but at a certain
+[2344] point it's actually better if you're not
+[2345] getting any information to get negative
+[2347] signal than it is to to get no more
+[2349] information, you know?
+[2352] 100%.
+[2353] Hey, I'm Trans.
+[2354] &gt;&gt; Hello.
+[2355] Uh so I'm building an agent that
+[2358] performs actions on your users' behalf
+[2360] instead of just telling them how to do
+[2361] something. Okay. Um so it's a product
+[2364] for developers. So they are developer
+[2365] integrated into their app. So um like
+[2367] Railway at the core is um like a
+[2370] developer experience company, right? And
+[2372] so it's similar for me too. Like if it's
+[2374] easy for developers to add it, that's
+[2376] when they're added. Um
+[2378] where do you think um developer
+[2380] experience as a whole category of
+[2383] companies is going um
+[2385] with agents doing more and more of the
+[2387] development?
+[2389] Um okay, so for agents and I think this
+[2392] goes back to the the bandwidth thing
+[2394] earlier. I think developer experience is
+[2396] about um
+[2398] taking advantage of the human context
+[2400] window. And so now that the agents are
+[2402] so good and that I expect them to be so
+[2403] much better, um
+[2405] these agents are making thousands of
+[2407] decisions in the time period that you
+[2408] can make one, right? Um and so I think
+[2410] that experience is two things. It is can
+[2414] the agent see it and can they action on
+[2415] it and get the information that they
+[2417] need to close their iteration loops? And
+[2419] could you get the information as a
+[2421] developer that you need to kind of go
+[2422] and make the informed decision about how
+[2424] to go and orchestrate these agents,
+[2426] right? And so, good experience is
+[2428] actually good observability in in my
+[2430] mind where you can just see and
+[2431] understand what is the agent doing,
+[2433] etc., right? Like and if you think about
+[2435] a lot of the experiences that are either
+[2437] agentic or not even agentic, like one of
+[2439] the recent things they released and I
+[2440] guess it's not recent anymore, but like
+[2442] you can see the agent thinking, right?
+[2443] You can see you can see that and you can
+[2445] introspect it and be like, is it on the
+[2446] right track, right? And that's part of
+[2448] the experience, right? Like um
+[2450] I'm a big fan of uh
+[2452] Don Norman, uh
+[2453] like the design of everyday things, uh
+[2455] visibility, feedback, and mapping. Um
+[2457] and I think that having those
+[2459] experiences um is really really solid
+[2461] for humans and now we're just kind of in
+[2463] an era where the agent experience
+[2465] matters as well, um but you still have
+[2467] to bring the human along for the ride,
+[2469] you know?
+[2470] Um so, like a lot of developer
+[2472] experience traditionally was about um
+[2475] you know, how many steps, like what's
+[2477] the lowest number of steps you could
+[2478] have to getting someone started.
+[2480] &gt;&gt; Yep.
+[2481] Do you think that is going away to some
+[2483] extent because as you said, like agents
+[2485] can do uh significantly higher number of
+[2487] tasks to get something done? I I I think
+[2490] the the throughline for me is always
+[2492] like time to aha. So, like getting to
+[2493] that magic moment as quickly as
+[2495] possible. And so, if the agent can
+[2497] autonomously navigate this thing in like
+[2499] 30 seconds, like that might be good
+[2501] enough for your time to aha, right? Um
+[2503] but if you have to kind of intervene all
+[2505] the time or you have to like whatever
+[2507] and like nudge them, you're not going to
+[2509] get that oh this thing is done,
+[2510] like that's crazy, like oh my god, what
+[2512] else can this do, right? experience. And
+[2513] that to me is always the crux of if you
+[2516] can um
+[2517] if you can give somebody more than than
+[2519] they put in, you're winning on the
+[2520] experience, right? Um so, if they put in
+[2522] a little and they get a lot, they'll
+[2524] they'll want to go and do it, right? Um
+[2526] and so, that's kind of how I think about
+[2527] a lot of the experiences whether they're
+[2529] agentic or whether they are kind of
+[2530] human in the loop or or anything else
+[2532] like that.
+[2533] You know, a a lot of the LLMs are
+[2535] trained on human data. Yeah, so they can
+[2538] operate.
+[2539] &gt;&gt; Once we saw the thinking show up,
+[2541] actually it revealed, wait a minute, it
+[2543] actually does perform like, you know,
+[2545] when it started it was like, oh, there's
+[2546] like a junior engineer thinking. Like,
+[2548] they have some flaws, they have some
+[2549] good stuff, but you could kind of see
+[2550] it, you can kind of optimize for it.
+[2552] &gt;&gt; Yep. And you know, so now if you can
+[2554] build the experiences where an agent can
+[2555] read my docs and understand it better,
+[2558] that's huge, you know.
+[2559] &gt;&gt; Yeah, 100% and it helps even like slow
+[2561] down time a little bit for yourself
+[2562] because you can see it's like the agent
+[2564] is calling this MCP server, the agent is
+[2566] whatever, right? And then if you go and
+[2567] and you read the bottom, it's like, uh,
+[2569] was working for like 3 minutes or
+[2571] something else like that. And if you
+[2572] just sat there and you had no
+[2573] information, like that's not a very good
+[2575] experience, right? And so almost like
+[2577] taking the human along for the ride and
+[2579] and understanding that so that you as a
+[2582] human who's interacting with this thing
+[2584] can say, oh that's what it did.
+[2585] Okay, that makes total sense. That was
+[2586] that was what I was going to go and do
+[2588] and so we should go here next. Right?
+[2590] But if you don't have any of that
+[2590] information, you're like, where where am
+[2592] I, you know? Like, what are we doing?
+[2595] I saw a cool trick. There was this
+[2596] engineer that was working on docs for a
+[2598] dev tool product and they were like,
+[2600] hey, can you give me like, uh, keys for
+[2602] OpenAI, Anthropic, Gemini? I'm like,
+[2604] okay, cool. What what are you doing, you
+[2606] know? And he's like, well, I made the
+[2608] docs. I just want to test like an agent
+[2609] with all of these LLMs. Like, how long
+[2611] does it take and does it succeed?
+[2613] &gt;&gt; Yeah. And then he ran it like hundreds
+[2615] of times, optimized itself, and he was
+[2616] like, look, I got it to the point where
+[2618] the agents, like two were failing and
+[2620] one was taking 10 minutes and 50
+[2621] iterations, and now like within like,
+[2624] you know, one or two shots it kind of
+[2625] gets it and, you know, you just use the
+[2627] same tools against itself, you know.
+[2628] &gt;&gt; Yeah, 100%, right? Um, and you can also
+[2630] build content for the agents inside of
+[2632] your docs and figure out like hang
+[2633] points or or anything else like that to
+[2635] just nudge them towards it, right? Um,
+[2637] so there's a bunch of different avenues
+[2638] you can use to kind of make that
+[2639] experience like better.
+[2641] Yeah.
+[2642] Hey, I'm Mishon.
+[2644] So, I'm building a guidance system and
+[2647] why I built it was because like AWS UI
+[2650] sucks, right? It's like UI built by
+[2652] engineers. So, I was like, okay, I wish
+[2654] there was something that could just help
+[2656] me in AWS itself cuz Amazon Q sucks. Um
+[2660] so
+[2662] but the thing is the amount of
+[2664] abstraction now is increasing similar to
+[2666] Railway like not clocking just execute
+[2669] scripts in the CLI.
+[2671] It can just execute scripts in the CLI
+[2673] itself. Like um
+[2677] even Terraform and things
+[2679] it's like a middle layer that you can
+[2681] kind of ignore now because Cloud can
+[2684] just in the CLI itself execute commands,
+[2687] right? So, how fast are you seeing big
+[2690] companies adopting things like Railway
+[2692] and like moving further and further away
+[2695] from the like source itself?
+[2698] Um I I would say that um
+[2702] this is kind of why figuring out what
+[2704] product and what entry point matters a
+[2705] lot um because what we do is you know,
+[2709] we I think it would be Railway would be
+[2711] a lot different story if we only hosted
+[2712] like stateless stuff, right? So, if we
+[2714] only host web servers or anything else
+[2715] that they're kind of easy to like move
+[2716] around or whatever, right? Um but since
+[2718] we host databases and all those other
+[2719] things, there's almost an amount of like
+[2721] gravity is harder to kind of move a
+[2722] database. So, I think if you pick a good
+[2724] entry point where people will start
+[2726] using that um and there's a good reason
+[2728] for somebody not to kind of almost like
+[2730] come into your turf, um then I think
+[2732] those are good avenues in terms of
+[2734] selecting that. Um but I'm seeing a lot
+[2736] of these companies like move really
+[2738] really quickly on these agentic
+[2739] experiences. So, if you ultimately end
+[2741] up creating something that has deep
+[2743] value and is is easy to replicate, then
+[2746] I would say that those are probably
+[2747] areas that you should try and figure out
+[2749] if you can get what VCs would call a
+[2751] moat um so that you can be more
+[2753] difficult to remove from from that
+[2755] experience and you can build kind of a
+[2757] compound uh like advantage.
+[2760] So, just follow up question. How fast
+[2763] are you seeing people moving into like
+[2765] live infra?
+[2767] Yeah, really fast. Like like very very
+[2770] fast.
+[2771] And and it's
+[2773] I was telling somebody that the like the
+[2774] world I went to sleep asleep to in the
+[2777] winter is not the world I woke up to
+[2778] because it's completely different.
+[2780] There was interest and we had some
+[2782] amount of people like looking to go in
+[2784] and do this and it feels like pretty
+[2786] much over over like winter break
+[2788] everybody discovered this kind of avenue
+[2790] and now there's so many buyers at
+[2792] basically any price for any of these
+[2794] experiences that are going to solve
+[2795] these problems because people end up
+[2797] being stuck on stuff
+[2799] that you know, they need to get around
+[2802] or or they're going to get out shipped,
+[2803] you know?
+[2804] 100% yeah.
+[2806] Well, appreciate the time today. This is
+[2807] awesome.
+[2808] You know, give it up for Jake everyone.
+[2811] Thank you.
+[2815] Hello.

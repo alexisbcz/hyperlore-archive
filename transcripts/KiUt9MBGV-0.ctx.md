@@ -1,0 +1,32 @@
+# CEO of Reddit Steve Huffman on Y Combinator, Paul Graham, and the Beginnings of Reddit
+
+**Channel**: hudsonunionsociety
+**Duration**: 4:55
+**Views**: 312
+**Keywords**: Joe Pascal, Hudson Union, Steve Huffman, Redit, Alexis Ohanian, Y Combinator, Paul Graham
+
+## Description
+
+The Hudson Union www.hudsonunionsociety.com is where everyone comes to be inspired, to change our world.Check us out on Twitter @ActualJoePascal Steve Huffman is the co-founder and CEO of Reddit, the "front page of the internet" and fourth most visited site in the U.S. He is also the co-founder and former CEO of Hipmunk, the popular online travel company. Raised in northern Virginia, Huffman pursued his passion for programming from an early age and followed it through a computer science degree at the University of Virginia. In 2005, he and his college roommate Alexis Ohanian pitched their first start-up to then-new incubator Y Combinator. While the pair's initial idea for a food-ordering mobile app called My Mobile Menu was rejected, Y Combinator founder Paul Graham invited them to build a new startup, which soon led to their creation of Reddit. After selling the company in 2006, Huffman launched Hipmunk and was named to Inc. Magazine's “30 Under 30” list in 2011 and the Forbes “30 Under 30” list in 2012. A few years later, Huffman returned as CEO of Reddit, where he has led the company's development of native image and video hosting, a new mobile app, and a full site redesign while growing the Reddit community to over 330 million monthly users. In addition to his work at Reddit, Huffman is a mentor at Hackbright Academy, a San Francisco-based coding school for women. In his free time, he enjoys skiing, dancing, and browsing r/WholesomeMemes.
+
+## Transcript
+
+**[0:00]** why did you and Alexis drive to Boston to attend the lecture by 12-round so and how'd you find out about program I'm Alice a big Paul Graham fan well how do you come across program sure so I remember when I was a kid so I internet in my bedroom so this is I'm probably like you know late middle school high school finally we have local dial-up internet in Virginia which remember
+
+**[0:30]** searching on Alta Vista or how to be a hacker good by the way when did that happen - off the basically because they had one of the best search engines did they just like go by the way Steiger they were acquired by somebody they were actually in that era people thought search was dead like search was a solved problem nobody ever build a search company and I'm a federal public will
+
+**[1:01]** actually had trouble raising money correct and then they just so I searched my hobby hacker because I wanted to learn how to break into into stuff which was like another hobby of mine and I stumble across this essay by this guy Eric Reed called how to be a hacker and this was how to be a hacker in the sense of how to be a really good program and there was a line in there that I still remember and I still I spent time with with like newbie engineers people are
+
+**[1:31]** letting cut program I have to tell the story there's a line in there that says you should learn how to program in Lisp because even if you never use lists professionally it'll forever change the way you think about programming so that was a pretty biggest statement and so I started learning less and if you're learning less all roads lead to poorer because he was a prolific writer but before that like an essayist about startups and program in hacking culture and lists he started
+
+**[2:01]** a company called vom which was one of the first ecommerce platforms online and he wrote all on let's I read a lot of essays evangelizing this and so his essays I mean one of the formative ones I remember reading was called line nerds are unpopular but his essays ones would come out every called a month or two were always really popular in that community in kind of an online hacker community so you and Alexis basically see that he is giving a lecture up in
+
+**[2:31]** Boston and you're thinking at the time to pitch him my mobile menu so that's the reason why you went up or combination yeah so the combination there's one I want to meet this guy that I really look up to and then so I was looking around the slash stock which was the website I hung out at the time before right it was cool it's late lashed out okay it's still around slash spot that or okay the tagline is news for nerds stuff that matters it's one of the inspirations for rent so I saw Paul had a new message coming out and so when
+
+**[3:02]** he haven't you I say one of the things you do is read it and so then he was reading it over our spring break and so I thinking out loud I mentioned this in the presence of my girlfriend was okay you should go talk and at this point Alexis and I had already been planning on starting my mobile menu so it all kind of came together and happened to be over a spring break so he took the I became a training of the Boston got to see Paul talk I brought my like dog your copy of his Lisp programming book Alexis
+
+**[3:33]** did what Alexis is really good at which was get pulse attention and not either he just ran up to the front room with Susan talk was over it's like oh this kid loves your books you should size book and a minute Paul agreed to have dinner with us but when he rejects me the story gets even more interesting and I hope he do he rejects my mobile menu the incubator rejects it and then he invites you then he invites you know he rejects it but
+
+**[4:04]** then he invites you that yes but there's a critical part of the story which is before he rejected us he spent like two hours with us telling us why this was the greatest idea ever and then he rejects you after it and then he rejects us after and because so we had this meeting within dinner like after his talk with dr. Virginia were super jazzed they announced they're gonna start investing companies this is what comedy ortho just like premieres see stage investment firm anybody expect for interviews we have the interviews
+
+**[4:35]** and then eventually yes they reject us Alexis might get on another train this was like a few months later back to Virginia halfway to Virginia he calls us and was like we really like you guys we just don't like bad idea if you want to be like how many to come back

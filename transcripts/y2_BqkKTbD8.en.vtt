@@ -1,0 +1,4032 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.480 --> 00:00:03.190 align:start position:0%
+ 
+What<00:00:00.720><c> is</c><00:00:00.880><c> scale?</c><00:00:02.000><c> And</c><00:00:02.240><c> what</c><00:00:02.360><c> does</c><00:00:02.520><c> it</c><00:00:02.640><c> mean</c><00:00:03.080><c> to</c>
+
+00:00:03.190 --> 00:00:03.200 align:start position:0%
+What is scale? And what does it mean to
+ 
+
+00:00:03.200 --> 00:00:04.750 align:start position:0%
+What is scale? And what does it mean to
+be<00:00:03.360><c> scalable?</c>
+
+00:00:04.750 --> 00:00:04.760 align:start position:0%
+be scalable?
+ 
+
+00:00:04.760 --> 00:00:07.070 align:start position:0%
+be scalable?
+We<00:00:04.920><c> often</c><00:00:05.200><c> talk</c><00:00:05.400><c> about</c><00:00:05.720><c> throughput</c><00:00:06.840><c> and</c>
+
+00:00:07.070 --> 00:00:07.080 align:start position:0%
+We often talk about throughput and
+ 
+
+00:00:07.080 --> 00:00:10.390 align:start position:0%
+We often talk about throughput and
+latency<00:00:08.320><c> or</c><00:00:08.640><c> adding</c><00:00:08.880><c> more</c><00:00:09.080><c> machines,</c><00:00:10.160><c> more</c>
+
+00:00:10.390 --> 00:00:10.400 align:start position:0%
+latency or adding more machines, more
+ 
+
+00:00:10.400 --> 00:00:14.830 align:start position:0%
+latency or adding more machines, more
+cores,<00:00:11.360><c> cheaper</c><00:00:11.760><c> disks,</c><00:00:12.920><c> bigger</c><00:00:13.200><c> pipes.</c>
+
+00:00:14.830 --> 00:00:14.840 align:start position:0%
+cores, cheaper disks, bigger pipes.
+ 
+
+00:00:14.840 --> 00:00:17.430 align:start position:0%
+cores, cheaper disks, bigger pipes.
+And<00:00:15.120><c> yet</c><00:00:15.360><c> systems</c><00:00:15.920><c> still</c><00:00:16.240><c> fail</c>
+
+00:00:17.430 --> 00:00:17.440 align:start position:0%
+And yet systems still fail
+ 
+
+00:00:17.440 --> 00:00:18.910 align:start position:0%
+And yet systems still fail
+at<00:00:17.680><c> scale.</c>
+
+00:00:18.910 --> 00:00:18.920 align:start position:0%
+at scale.
+ 
+
+00:00:18.920 --> 00:00:21.670 align:start position:0%
+at scale.
+So,<00:00:19.560><c> what's</c><00:00:19.920><c> missing?</c>
+
+00:00:21.670 --> 00:00:21.680 align:start position:0%
+So, what's missing?
+ 
+
+00:00:21.680 --> 00:00:23.830 align:start position:0%
+So, what's missing?
+We<00:00:21.880><c> know</c><00:00:22.080><c> this</c><00:00:22.320><c> intuitively,</c>
+
+00:00:23.830 --> 00:00:23.840 align:start position:0%
+We know this intuitively,
+ 
+
+00:00:23.840 --> 00:00:26.350 align:start position:0%
+We know this intuitively,
+but<00:00:24.040><c> scale</c><00:00:24.520><c> isn't</c><00:00:24.960><c> just</c><00:00:25.520><c> performance</c><00:00:26.200><c> and</c>
+
+00:00:26.350 --> 00:00:26.360 align:start position:0%
+but scale isn't just performance and
+ 
+
+00:00:26.360 --> 00:00:27.910 align:start position:0%
+but scale isn't just performance and
+distribution.
+
+00:00:27.910 --> 00:00:27.920 align:start position:0%
+distribution.
+ 
+
+00:00:27.920 --> 00:00:30.430 align:start position:0%
+distribution.
+Scale<00:00:28.440><c> is</c><00:00:28.600><c> survivability.</c>
+
+00:00:30.430 --> 00:00:30.440 align:start position:0%
+Scale is survivability.
+ 
+
+00:00:30.440 --> 00:00:32.670 align:start position:0%
+Scale is survivability.
+Because<00:00:30.840><c> the</c><00:00:31.040><c> hardest</c><00:00:31.520><c> part</c><00:00:31.760><c> of</c><00:00:31.880><c> scale</c><00:00:32.320><c> isn't</c>
+
+00:00:32.670 --> 00:00:32.680 align:start position:0%
+Because the hardest part of scale isn't
+ 
+
+00:00:32.680 --> 00:00:35.670 align:start position:0%
+Because the hardest part of scale isn't
+how<00:00:32.840><c> much</c><00:00:33.160><c> work</c><00:00:33.440><c> you</c><00:00:33.560><c> can</c><00:00:33.800><c> do</c><00:00:34.800><c> when</c><00:00:35.160><c> everything</c>
+
+00:00:35.670 --> 00:00:35.680 align:start position:0%
+how much work you can do when everything
+ 
+
+00:00:35.680 --> 00:00:36.950 align:start position:0%
+how much work you can do when everything
+works,
+
+00:00:36.950 --> 00:00:36.960 align:start position:0%
+works,
+ 
+
+00:00:36.960 --> 00:00:39.710 align:start position:0%
+works,
+it's<00:00:37.480><c> staying</c><00:00:37.960><c> alive</c><00:00:38.920><c> when</c><00:00:39.120><c> everything</c><00:00:39.560><c> that</c>
+
+00:00:39.710 --> 00:00:39.720 align:start position:0%
+it's staying alive when everything that
+ 
+
+00:00:39.720 --> 00:00:43.550 align:start position:0%
+it's staying alive when everything that
+can<00:00:40.000><c> break</c><00:00:40.800><c> does.</c><00:00:41.720><c> You</c><00:00:41.880><c> can't</c><00:00:42.280><c> scale</c><00:00:43.320><c> when</c>
+
+00:00:43.550 --> 00:00:43.560 align:start position:0%
+can break does. You can't scale when
+ 
+
+00:00:43.560 --> 00:00:45.870 align:start position:0%
+can break does. You can't scale when
+you're<00:00:43.720><c> dead.</c>
+
+00:00:45.870 --> 00:00:45.880 align:start position:0%
+you're dead.
+ 
+
+00:00:45.880 --> 00:00:48.190 align:start position:0%
+you're dead.
+So,<00:00:46.200><c> how</c><00:00:46.320><c> do</c><00:00:46.440><c> we</c><00:00:46.560><c> stay</c><00:00:46.800><c> alive</c><00:00:47.800><c> with</c><00:00:48.000><c> this</c>
+
+00:00:48.190 --> 00:00:48.200 align:start position:0%
+So, how do we stay alive with this
+ 
+
+00:00:48.200 --> 00:00:51.670 align:start position:0%
+So, how do we stay alive with this
+definition<00:00:48.840><c> of</c><00:00:49.000><c> scale</c><00:00:49.720><c> as</c><00:00:49.960><c> survivability?</c>
+
+00:00:51.670 --> 00:00:51.680 align:start position:0%
+definition of scale as survivability?
+ 
+
+00:00:51.680 --> 00:00:54.350 align:start position:0%
+definition of scale as survivability?
+How<00:00:51.920><c> can</c><00:00:52.160><c> we</c><00:00:52.280><c> design</c><00:00:52.880><c> an</c><00:00:53.120><c> architecture</c><00:00:54.000><c> from</c>
+
+00:00:54.350 --> 00:00:54.360 align:start position:0%
+How can we design an architecture from
+ 
+
+00:00:54.360 --> 00:00:58.190 align:start position:0%
+How can we design an architecture from
+first<00:00:54.920><c> principles?</c><00:00:56.320><c> Not</c><00:00:56.640><c> for</c><00:00:56.800><c> analytics,</c>
+
+00:00:58.190 --> 00:00:58.200 align:start position:0%
+first principles? Not for analytics,
+ 
+
+00:00:58.200 --> 00:01:00.590 align:start position:0%
+first principles? Not for analytics,
+nor<00:00:58.560><c> general</c><00:00:58.960><c> purpose,</c>
+
+00:01:00.590 --> 00:01:00.600 align:start position:0%
+nor general purpose,
+ 
+
+00:01:00.600 --> 00:01:03.190 align:start position:0%
+nor general purpose,
+but<00:01:00.840><c> for</c><00:01:00.960><c> the</c><00:01:01.080><c> hardest</c><00:01:01.760><c> workload</c><00:01:02.680><c> of</c><00:01:02.920><c> them</c>
+
+00:01:03.190 --> 00:01:03.200 align:start position:0%
+but for the hardest workload of them
+ 
+
+00:01:03.200 --> 00:01:04.390 align:start position:0%
+but for the hardest workload of them
+all,
+
+00:01:04.390 --> 00:01:04.400 align:start position:0%
+all,
+ 
+
+00:01:04.400 --> 00:01:07.590 align:start position:0%
+all,
+transaction<00:01:05.120><c> processing.</c>
+
+00:01:07.590 --> 00:01:07.600 align:start position:0%
+transaction processing.
+ 
+
+00:01:07.600 --> 00:01:11.310 align:start position:0%
+transaction processing.
+Low<00:01:07.920><c> latency,</c><00:01:09.320><c> right</c><00:01:09.680><c> heavy,</c><00:01:10.640><c> Black</c><00:01:10.960><c> Friday</c>
+
+00:01:11.310 --> 00:01:11.320 align:start position:0%
+Low latency, right heavy, Black Friday
+ 
+
+00:01:11.320 --> 00:01:14.150 align:start position:0%
+Low latency, right heavy, Black Friday
+throughput,<00:01:12.320><c> parallel</c><00:01:12.800><c> contention,</c><00:01:13.720><c> shared</c>
+
+00:01:14.150 --> 00:01:14.160 align:start position:0%
+throughput, parallel contention, shared
+ 
+
+00:01:14.160 --> 00:01:16.710 align:start position:0%
+throughput, parallel contention, shared
+hot<00:01:14.400><c> keys,</c><00:01:15.400><c> and</c><00:01:15.600><c> coordination</c><00:01:16.440><c> through</c>
+
+00:01:16.710 --> 00:01:16.720 align:start position:0%
+hot keys, and coordination through
+ 
+
+00:01:16.720 --> 00:01:19.270 align:start position:0%
+hot keys, and coordination through
+strict<00:01:17.480><c> serializability.</c>
+
+00:01:19.270 --> 00:01:19.280 align:start position:0%
+strict serializability.
+ 
+
+00:01:19.280 --> 00:01:21.030 align:start position:0%
+strict serializability.
+Because<00:01:19.600><c> you're</c><00:01:19.720><c> in</c><00:01:19.840><c> the</c><00:01:19.920><c> money-making</c><00:01:20.760><c> hot</c>
+
+00:01:21.030 --> 00:01:21.040 align:start position:0%
+Because you're in the money-making hot
+ 
+
+00:01:21.040 --> 00:01:23.670 align:start position:0%
+Because you're in the money-making hot
+path.
+
+00:01:23.670 --> 00:01:23.680 align:start position:0%
+ 
+ 
+
+00:01:23.680 --> 00:01:25.110 align:start position:0%
+ 
+Of<00:01:23.880><c> course,</c>
+
+00:01:25.110 --> 00:01:25.120 align:start position:0%
+Of course,
+ 
+
+00:01:25.120 --> 00:01:27.510 align:start position:0%
+Of course,
+some<00:01:25.680><c> would</c><00:01:25.920><c> relax</c><00:01:26.600><c> isolation</c><00:01:27.320><c> for</c>
+
+00:01:27.510 --> 00:01:27.520 align:start position:0%
+some would relax isolation for
+ 
+
+00:01:27.520 --> 00:01:29.030 align:start position:0%
+some would relax isolation for
+performance,
+
+00:01:29.030 --> 00:01:29.040 align:start position:0%
+performance,
+ 
+
+00:01:29.040 --> 00:01:31.630 align:start position:0%
+performance,
+but<00:01:29.200><c> give</c><00:01:29.440><c> me</c><00:01:29.600><c> strict</c><00:01:30.080><c> serializability</c><00:01:31.520><c> or</c>
+
+00:01:31.630 --> 00:01:31.640 align:start position:0%
+but give me strict serializability or
+ 
+
+00:01:31.640 --> 00:01:35.270 align:start position:0%
+but give me strict serializability or
+give<00:01:31.880><c> me</c><00:01:32.040><c> death.</c><00:01:33.040><c> As</c><00:01:33.240><c> the</c><00:01:33.360><c> saying</c><00:01:33.800><c> goes,</c><00:01:34.840><c> those</c>
+
+00:01:35.270 --> 00:01:35.280 align:start position:0%
+give me death. As the saying goes, those
+ 
+
+00:01:35.280 --> 00:01:37.670 align:start position:0%
+give me death. As the saying goes, those
+who<00:01:35.440><c> would</c><00:01:35.600><c> trade</c><00:01:36.000><c> a</c><00:01:36.080><c> little</c><00:01:36.400><c> safety</c><00:01:37.440><c> for</c>
+
+00:01:37.670 --> 00:01:37.680 align:start position:0%
+who would trade a little safety for
+ 
+
+00:01:37.680 --> 00:01:39.590 align:start position:0%
+who would trade a little safety for
+performance
+
+00:01:39.590 --> 00:01:39.600 align:start position:0%
+performance
+ 
+
+00:01:39.600 --> 00:01:43.350 align:start position:0%
+performance
+deserve<00:01:40.200><c> neither</c><00:01:40.680><c> safety</c><00:01:41.640><c> nor</c><00:01:41.960><c> performance.</c>
+
+00:01:43.350 --> 00:01:43.360 align:start position:0%
+deserve neither safety nor performance.
+ 
+
+00:01:43.360 --> 00:01:46.030 align:start position:0%
+deserve neither safety nor performance.
+And<00:01:43.600><c> this</c><00:01:43.840><c> is</c><00:01:44.040><c> the</c><00:01:44.160><c> challenge</c><00:01:44.920><c> of</c><00:01:45.240><c> transaction</c>
+
+00:01:46.030 --> 00:01:46.040 align:start position:0%
+And this is the challenge of transaction
+ 
+
+00:01:46.040 --> 00:01:47.470 align:start position:0%
+And this is the challenge of transaction
+processing.
+
+00:01:47.470 --> 00:01:47.480 align:start position:0%
+processing.
+ 
+
+00:01:47.480 --> 00:01:50.790 align:start position:0%
+processing.
+There's<00:01:47.800><c> no</c><00:01:48.040><c> way</c><00:01:48.160><c> to</c><00:01:48.360><c> hide.</c><00:01:49.160><c> It's</c><00:01:49.480><c> live.</c>
+
+00:01:50.790 --> 00:01:50.800 align:start position:0%
+There's no way to hide. It's live.
+ 
+
+00:01:50.800 --> 00:01:54.230 align:start position:0%
+There's no way to hide. It's live.
+You<00:01:50.960><c> have</c><00:01:51.200><c> to</c><00:01:51.320><c> be</c><00:01:51.480><c> correct</c><00:01:52.360><c> and</c><00:01:52.640><c> fast.</c>
+
+00:01:54.230 --> 00:01:54.240 align:start position:0%
+You have to be correct and fast.
+ 
+
+00:01:54.240 --> 00:01:56.550 align:start position:0%
+You have to be correct and fast.
+Jim<00:01:54.560><c> Gray,</c><00:01:55.080><c> the</c><00:01:55.280><c> Turing</c><00:01:55.680><c> Award</c><00:01:56.040><c> winner</c><00:01:56.360><c> who</c>
+
+00:01:56.550 --> 00:01:56.560 align:start position:0%
+Jim Gray, the Turing Award winner who
+ 
+
+00:01:56.560 --> 00:01:59.310 align:start position:0%
+Jim Gray, the Turing Award winner who
+coined<00:01:57.080><c> ACID</c><00:01:58.160><c> and</c><00:01:58.360><c> wrote</c><00:01:58.600><c> the</c><00:01:58.720><c> book</c><00:01:59.120><c> on</c>
+
+00:01:59.310 --> 00:01:59.320 align:start position:0%
+coined ACID and wrote the book on
+ 
+
+00:01:59.320 --> 00:02:01.910 align:start position:0%
+coined ACID and wrote the book on
+transaction<00:02:00.000><c> processing</c><00:02:01.320><c> defined</c><00:02:01.800><c> the</c>
+
+00:02:01.910 --> 00:02:01.920 align:start position:0%
+transaction processing defined the
+ 
+
+00:02:01.920 --> 00:02:04.870 align:start position:0%
+transaction processing defined the
+measure<00:02:02.280><c> of</c><00:02:02.440><c> transaction</c><00:02:03.120><c> processing</c><00:02:03.760><c> power</c>
+
+00:02:04.870 --> 00:02:04.880 align:start position:0%
+measure of transaction processing power
+ 
+
+00:02:04.880 --> 00:02:06.790 align:start position:0%
+measure of transaction processing power
+as<00:02:05.640><c> debit</c>
+
+00:02:06.790 --> 00:02:06.800 align:start position:0%
+as debit
+ 
+
+00:02:06.800 --> 00:02:08.469 align:start position:0%
+as debit
+credit.
+
+00:02:08.469 --> 00:02:08.479 align:start position:0%
+credit.
+ 
+
+00:02:08.479 --> 00:02:10.910 align:start position:0%
+credit.
+Simple,<00:02:09.280><c> yet</c><00:02:09.520><c> powerful.</c>
+
+00:02:10.910 --> 00:02:10.920 align:start position:0%
+Simple, yet powerful.
+ 
+
+00:02:10.920 --> 00:02:12.470 align:start position:0%
+Simple, yet powerful.
+Uh<00:02:11.160><c> simple</c>
+
+00:02:12.470 --> 00:02:12.480 align:start position:0%
+Uh simple
+ 
+
+00:02:12.480 --> 00:02:15.990 align:start position:0%
+Uh simple
+debit<00:02:12.840><c> one</c><00:02:13.000><c> account</c><00:02:13.640><c> and</c><00:02:13.920><c> credit</c><00:02:14.280><c> another.</c>
+
+00:02:15.990 --> 00:02:16.000 align:start position:0%
+debit one account and credit another.
+ 
+
+00:02:16.000 --> 00:02:17.949 align:start position:0%
+debit one account and credit another.
+Powerful<00:02:16.560><c> because</c><00:02:16.920><c> you</c><00:02:17.040><c> can</c><00:02:17.200><c> express</c><00:02:17.840><c> the</c>
+
+00:02:17.949 --> 00:02:17.959 align:start position:0%
+Powerful because you can express the
+ 
+
+00:02:17.959 --> 00:02:20.630 align:start position:0%
+Powerful because you can express the
+exchange<00:02:19.040><c> of</c><00:02:19.480><c> anything</c>
+
+00:02:20.630 --> 00:02:20.640 align:start position:0%
+exchange of anything
+ 
+
+00:02:20.640 --> 00:02:23.270 align:start position:0%
+exchange of anything
+from<00:02:20.959><c> one</c><00:02:21.200><c> entity</c><00:02:21.720><c> to</c><00:02:21.880><c> another,</c><00:02:22.520><c> the</c><00:02:22.760><c> essence</c>
+
+00:02:23.270 --> 00:02:23.280 align:start position:0%
+from one entity to another, the essence
+ 
+
+00:02:23.280 --> 00:02:25.630 align:start position:0%
+from one entity to another, the essence
+of<00:02:23.400><c> a</c><00:02:23.480><c> transaction.</c><00:02:24.640><c> Transactions</c><00:02:25.320><c> are</c><00:02:25.440><c> all</c>
+
+00:02:25.630 --> 00:02:25.640 align:start position:0%
+of a transaction. Transactions are all
+ 
+
+00:02:25.640 --> 00:02:28.390 align:start position:0%
+of a transaction. Transactions are all
+around<00:02:26.120><c> us</c><00:02:26.400><c> and</c><00:02:26.560><c> indeed</c><00:02:27.520><c> if</c><00:02:27.720><c> we</c><00:02:27.840><c> trace</c><00:02:28.240><c> the</c>
+
+00:02:28.390 --> 00:02:28.400 align:start position:0%
+around us and indeed if we trace the
+ 
+
+00:02:28.400 --> 00:02:31.470 align:start position:0%
+around us and indeed if we trace the
+family<00:02:28.760><c> tree</c><00:02:29.000><c> of</c><00:02:29.160><c> databases,</c><00:02:30.040><c> they</c><00:02:30.200><c> go</c><00:02:30.440><c> back</c>
+
+00:02:31.470 --> 00:02:31.480 align:start position:0%
+family tree of databases, they go back
+ 
+
+00:02:31.480 --> 00:02:33.550 align:start position:0%
+family tree of databases, they go back
+to<00:02:31.600><c> the</c><00:02:31.720><c> banking,</c><00:02:32.400><c> brokerage,</c><00:02:33.080><c> airline,</c>
+
+00:02:33.550 --> 00:02:33.560 align:start position:0%
+to the banking, brokerage, airline,
+ 
+
+00:02:33.560 --> 00:02:35.710 align:start position:0%
+to the banking, brokerage, airline,
+manufacturing,<00:02:34.360><c> inventory,</c><00:02:34.959><c> ordering,</c><00:02:35.520><c> and</c>
+
+00:02:35.710 --> 00:02:35.720 align:start position:0%
+manufacturing, inventory, ordering, and
+ 
+
+00:02:35.720 --> 00:02:38.630 align:start position:0%
+manufacturing, inventory, ordering, and
+shipping<00:02:36.080><c> systems</c><00:02:37.320><c> that</c><00:02:37.600><c> do</c><00:02:37.840><c> the</c><00:02:37.959><c> equivalent</c>
+
+00:02:38.630 --> 00:02:38.640 align:start position:0%
+shipping systems that do the equivalent
+ 
+
+00:02:38.640 --> 00:02:40.430 align:start position:0%
+shipping systems that do the equivalent
+of<00:02:38.880><c> debit</c><00:02:39.240><c> credit.</c>
+
+00:02:40.430 --> 00:02:40.440 align:start position:0%
+of debit credit.
+ 
+
+00:02:40.440 --> 00:02:43.350 align:start position:0%
+of debit credit.
+And<00:02:40.640><c> this</c><00:02:40.880><c> is</c><00:02:41.080><c> hard</c><00:02:42.000><c> because</c><00:02:42.360><c> it's</c><00:02:42.560><c> not</c><00:02:42.959><c> only</c>
+
+00:02:43.350 --> 00:02:43.360 align:start position:0%
+And this is hard because it's not only
+ 
+
+00:02:43.360 --> 00:02:44.990 align:start position:0%
+And this is hard because it's not only
+people's<00:02:43.920><c> money</c>
+
+00:02:44.990 --> 00:02:45.000 align:start position:0%
+people's money
+ 
+
+00:02:45.000 --> 00:02:47.550 align:start position:0%
+people's money
+it's<00:02:45.360><c> all</c><00:02:45.680><c> the</c><00:02:45.800><c> goods</c><00:02:46.240><c> and</c><00:02:46.480><c> services.</c><00:02:47.160><c> If</c><00:02:47.320><c> your</c>
+
+00:02:47.550 --> 00:02:47.560 align:start position:0%
+it's all the goods and services. If your
+ 
+
+00:02:47.560 --> 00:02:49.590 align:start position:0%
+it's all the goods and services. If your
+OLTP<00:02:48.280><c> breaks</c>
+
+00:02:49.590 --> 00:02:49.600 align:start position:0%
+OLTP breaks
+ 
+
+00:02:49.600 --> 00:02:51.790 align:start position:0%
+OLTP breaks
+you<00:02:49.680><c> don't</c><00:02:50.000><c> just</c><00:02:50.240><c> lose</c><00:02:50.480><c> your</c><00:02:50.600><c> money</c>
+
+00:02:51.790 --> 00:02:51.800 align:start position:0%
+you don't just lose your money
+ 
+
+00:02:51.800 --> 00:02:53.790 align:start position:0%
+you don't just lose your money
+uh<00:02:52.200><c> but</c><00:02:52.400><c> your</c><00:02:52.560><c> customer</c><00:02:53.160><c> loses</c><00:02:53.600><c> their</c>
+
+00:02:53.790 --> 00:02:53.800 align:start position:0%
+uh but your customer loses their
+ 
+
+00:02:53.800 --> 00:02:56.230 align:start position:0%
+uh but your customer loses their
+delivery,<00:02:54.760><c> their</c><00:02:55.040><c> flight.</c>
+
+00:02:56.230 --> 00:02:56.240 align:start position:0%
+delivery, their flight.
+ 
+
+00:02:56.240 --> 00:02:57.670 align:start position:0%
+delivery, their flight.
+And<00:02:56.440><c> so</c><00:02:56.640><c> we're</c><00:02:56.800><c> going</c><00:02:56.959><c> to</c><00:02:57.040><c> design</c><00:02:57.520><c> an</c>
+
+00:02:57.670 --> 00:02:57.680 align:start position:0%
+And so we're going to design an
+ 
+
+00:02:57.680 --> 00:03:00.229 align:start position:0%
+And so we're going to design an
+architecture<00:02:58.400><c> for</c><00:02:58.640><c> OLTP</c>
+
+00:03:00.229 --> 00:03:00.239 align:start position:0%
+architecture for OLTP
+ 
+
+00:03:00.239 --> 00:03:02.590 align:start position:0%
+architecture for OLTP
+and<00:03:00.560><c> see</c><00:03:00.800><c> how</c><00:03:00.959><c> it</c><00:03:01.120><c> survives</c>
+
+00:03:02.590 --> 00:03:02.600 align:start position:0%
+and see how it survives
+ 
+
+00:03:02.600 --> 00:03:07.190 align:start position:0%
+and see how it survives
+uh<00:03:02.840><c> even</c><00:03:03.200><c> through</c><00:03:03.519><c> a</c><00:03:03.600><c> trillion</c><00:03:04.480><c> transactions.</c>
+
+00:03:07.190 --> 00:03:07.200 align:start position:0%
+uh even through a trillion transactions.
+ 
+
+00:03:07.200 --> 00:03:08.990 align:start position:0%
+uh even through a trillion transactions.
+Why<00:03:07.400><c> a</c><00:03:07.480><c> trillion?</c>
+
+00:03:08.990 --> 00:03:09.000 align:start position:0%
+Why a trillion?
+ 
+
+00:03:09.000 --> 00:03:12.229 align:start position:0%
+Why a trillion?
+Because<00:03:09.239><c> that's</c><00:03:09.600><c> where</c><00:03:09.760><c> scale</c><00:03:10.800><c> goes</c><00:03:11.080><c> to</c><00:03:11.200><c> die.</c>
+
+00:03:12.229 --> 00:03:12.239 align:start position:0%
+Because that's where scale goes to die.
+ 
+
+00:03:12.239 --> 00:03:14.509 align:start position:0%
+Because that's where scale goes to die.
+So<00:03:12.360><c> let's</c><00:03:12.640><c> start</c><00:03:12.959><c> with</c><00:03:13.120><c> the</c><00:03:13.239><c> physics.</c>
+
+00:03:14.509 --> 00:03:14.519 align:start position:0%
+So let's start with the physics.
+ 
+
+00:03:14.519 --> 00:03:16.990 align:start position:0%
+So let's start with the physics.
+If<00:03:14.760><c> each</c><00:03:15.000><c> transaction</c><00:03:15.680><c> inserts</c><00:03:16.280><c> on</c><00:03:16.440><c> the</c><00:03:16.600><c> order</c>
+
+00:03:16.990 --> 00:03:17.000 align:start position:0%
+If each transaction inserts on the order
+ 
+
+00:03:17.000 --> 00:03:21.070 align:start position:0%
+If each transaction inserts on the order
+of<00:03:17.360><c> 128</c><00:03:18.360><c> bytes</c><00:03:18.800><c> of</c><00:03:19.120><c> primary</c><00:03:19.600><c> information</c>
+
+00:03:21.070 --> 00:03:21.080 align:start position:0%
+of 128 bytes of primary information
+ 
+
+00:03:21.080 --> 00:03:23.310 align:start position:0%
+of 128 bytes of primary information
+the<00:03:21.160><c> essential</c><00:03:22.080><c> who,</c><00:03:22.400><c> what,</c><00:03:22.760><c> when,</c><00:03:23.000><c> where,</c>
+
+00:03:23.310 --> 00:03:23.320 align:start position:0%
+the essential who, what, when, where,
+ 
+
+00:03:23.320 --> 00:03:25.030 align:start position:0%
+the essential who, what, when, where,
+why,<00:03:23.640><c> and</c><00:03:23.840><c> how</c><00:03:23.959><c> much</c><00:03:24.280><c> of</c><00:03:24.400><c> transaction</c>
+
+00:03:25.030 --> 00:03:25.040 align:start position:0%
+why, and how much of transaction
+ 
+
+00:03:25.040 --> 00:03:26.470 align:start position:0%
+why, and how much of transaction
+processing
+
+00:03:26.470 --> 00:03:26.480 align:start position:0%
+processing
+ 
+
+00:03:26.480 --> 00:03:29.110 align:start position:0%
+processing
+then<00:03:26.720><c> a</c><00:03:26.760><c> trillion</c><00:03:27.200><c> transactions</c><00:03:28.560><c> is</c><00:03:28.760><c> about</c>
+
+00:03:29.110 --> 00:03:29.120 align:start position:0%
+then a trillion transactions is about
+ 
+
+00:03:29.120 --> 00:03:32.949 align:start position:0%
+then a trillion transactions is about
+128<00:03:30.239><c> terabytes</c><00:03:31.040><c> just</c><00:03:31.480><c> in</c><00:03:31.640><c> storage</c>
+
+00:03:32.949 --> 00:03:32.959 align:start position:0%
+128 terabytes just in storage
+ 
+
+00:03:32.959 --> 00:03:36.910 align:start position:0%
+128 terabytes just in storage
+before<00:03:33.480><c> indexing,</c><00:03:34.680><c> before</c><00:03:35.200><c> replication.</c>
+
+00:03:36.910 --> 00:03:36.920 align:start position:0%
+before indexing, before replication.
+ 
+
+00:03:36.920 --> 00:03:40.390 align:start position:0%
+before indexing, before replication.
+But<00:03:37.280><c> 128</c><00:03:38.280><c> terabytes</c><00:03:39.040><c> is</c><00:03:39.320><c> also</c><00:03:39.720><c> the</c><00:03:39.840><c> breaking</c>
+
+00:03:40.390 --> 00:03:40.400 align:start position:0%
+But 128 terabytes is also the breaking
+ 
+
+00:03:40.400 --> 00:03:43.470 align:start position:0%
+But 128 terabytes is also the breaking
+point<00:03:41.040><c> for</c><00:03:41.519><c> many</c><00:03:41.920><c> architectures.</c>
+
+00:03:43.470 --> 00:03:43.480 align:start position:0%
+point for many architectures.
+ 
+
+00:03:43.480 --> 00:03:45.670 align:start position:0%
+point for many architectures.
+And<00:03:43.720><c> this</c><00:03:43.920><c> is</c><00:03:44.080><c> true</c><00:03:44.519><c> whether</c><00:03:44.760><c> that</c><00:03:45.040><c> data</c><00:03:45.360><c> lives</c>
+
+00:03:45.670 --> 00:03:45.680 align:start position:0%
+And this is true whether that data lives
+ 
+
+00:03:45.680 --> 00:03:47.470 align:start position:0%
+And this is true whether that data lives
+on<00:03:45.920><c> one</c><00:03:46.120><c> machine</c>
+
+00:03:47.470 --> 00:03:47.480 align:start position:0%
+on one machine
+ 
+
+00:03:47.480 --> 00:03:49.710 align:start position:0%
+on one machine
+or<00:03:47.720><c> a</c><00:03:47.760><c> thousand.</c>
+
+00:03:49.710 --> 00:03:49.720 align:start position:0%
+or a thousand.
+ 
+
+00:03:49.720 --> 00:03:51.990 align:start position:0%
+or a thousand.
+Uh<00:03:49.920><c> for</c><00:03:50.120><c> example,</c><00:03:50.680><c> most</c><00:03:50.959><c> cloud</c><00:03:51.320><c> databases</c>
+
+00:03:51.990 --> 00:03:52.000 align:start position:0%
+Uh for example, most cloud databases
+ 
+
+00:03:52.000 --> 00:03:55.790 align:start position:0%
+Uh for example, most cloud databases
+promise<00:03:52.760><c> unlimited</c><00:03:54.200><c> infinite</c><00:03:54.760><c> scale.</c>
+
+00:03:55.790 --> 00:03:55.800 align:start position:0%
+promise unlimited infinite scale.
+ 
+
+00:03:55.800 --> 00:03:58.230 align:start position:0%
+promise unlimited infinite scale.
+And<00:03:56.080><c> I've</c><00:03:56.200><c> anonymized</c><00:03:56.840><c> these</c><00:03:57.080><c> vendors,</c><00:03:58.000><c> so</c>
+
+00:03:58.230 --> 00:03:58.240 align:start position:0%
+And I've anonymized these vendors, so
+ 
+
+00:03:58.240 --> 00:04:00.550 align:start position:0%
+And I've anonymized these vendors, so
+you<00:03:58.360><c> will</c><00:03:58.480><c> never</c><00:03:58.800><c> guess</c><00:03:59.160><c> who</c><00:03:59.320><c> they</c><00:03:59.560><c> are.</c>
+
+00:04:00.550 --> 00:04:00.560 align:start position:0%
+you will never guess who they are.
+ 
+
+00:04:00.560 --> 00:04:03.790 align:start position:0%
+you will never guess who they are.
+But<00:04:00.920><c> if</c><00:04:01.120><c> you</c><00:04:01.240><c> look</c><00:04:01.400><c> at</c><00:04:01.520><c> the</c><00:04:01.640><c> fine</c><00:04:02.080><c> print,</c><00:04:03.080><c> most</c>
+
+00:04:03.790 --> 00:04:03.800 align:start position:0%
+But if you look at the fine print, most
+ 
+
+00:04:03.800 --> 00:04:06.910 align:start position:0%
+But if you look at the fine print, most
+set<00:04:04.120><c> hard</c><00:04:04.400><c> limits</c><00:04:04.840><c> of</c><00:04:05.080><c> either</c><00:04:05.400><c> 64</c>
+
+00:04:06.910 --> 00:04:06.920 align:start position:0%
+set hard limits of either 64
+ 
+
+00:04:06.920 --> 00:04:10.790 align:start position:0%
+set hard limits of either 64
+128<00:04:07.959><c> or</c><00:04:08.080><c> 256</c><00:04:08.920><c> terabytes</c><00:04:09.560><c> in</c><00:04:09.680><c> the</c><00:04:09.760><c> docs.</c>
+
+00:04:10.790 --> 00:04:10.800 align:start position:0%
+128 or 256 terabytes in the docs.
+ 
+
+00:04:10.800 --> 00:04:12.190 align:start position:0%
+128 or 256 terabytes in the docs.
+It's<00:04:11.080><c> rare</c>
+
+00:04:12.190 --> 00:04:12.200 align:start position:0%
+It's rare
+ 
+
+00:04:12.200 --> 00:04:15.949 align:start position:0%
+It's rare
+that<00:04:12.640><c> any</c><00:04:13.000><c> cloud</c><00:04:13.360><c> database</c><00:04:14.320><c> can</c><00:04:14.640><c> scale</c><00:04:15.160><c> beyond</c>
+
+00:04:15.949 --> 00:04:15.959 align:start position:0%
+that any cloud database can scale beyond
+ 
+
+00:04:15.959 --> 00:04:18.710 align:start position:0%
+that any cloud database can scale beyond
+a<00:04:16.040><c> few</c><00:04:16.519><c> hundred</c><00:04:17.200><c> terabytes.</c>
+
+00:04:18.710 --> 00:04:18.720 align:start position:0%
+a few hundred terabytes.
+ 
+
+00:04:18.720 --> 00:04:21.670 align:start position:0%
+a few hundred terabytes.
+To<00:04:19.200><c> be</c><00:04:19.359><c> fair,</c><00:04:19.680><c> these</c><00:04:19.959><c> limits</c><00:04:20.359><c> are</c><00:04:20.560><c> public.</c>
+
+00:04:21.670 --> 00:04:21.680 align:start position:0%
+To be fair, these limits are public.
+ 
+
+00:04:21.680 --> 00:04:23.710 align:start position:0%
+To be fair, these limits are public.
+And<00:04:21.880><c> I</c><00:04:21.959><c> want</c><00:04:22.200><c> to</c><00:04:22.280><c> be</c><00:04:22.400><c> clear</c><00:04:22.720><c> that</c><00:04:23.000><c> documenting</c>
+
+00:04:23.710 --> 00:04:23.720 align:start position:0%
+And I want to be clear that documenting
+ 
+
+00:04:23.720 --> 00:04:26.310 align:start position:0%
+And I want to be clear that documenting
+limits<00:04:24.200><c> up</c><00:04:24.440><c> front</c><00:04:25.080><c> is</c><00:04:25.280><c> a</c><00:04:25.360><c> hallmark</c><00:04:25.880><c> of</c><00:04:26.040><c> great</c>
+
+00:04:26.310 --> 00:04:26.320 align:start position:0%
+limits up front is a hallmark of great
+ 
+
+00:04:26.320 --> 00:04:27.710 align:start position:0%
+limits up front is a hallmark of great
+design.
+
+00:04:27.710 --> 00:04:27.720 align:start position:0%
+design.
+ 
+
+00:04:27.720 --> 00:04:28.950 align:start position:0%
+design.
+But<00:04:28.000><c> still,</c>
+
+00:04:28.950 --> 00:04:28.960 align:start position:0%
+But still,
+ 
+
+00:04:28.960 --> 00:04:32.270 align:start position:0%
+But still,
+a<00:04:29.160><c> few</c><00:04:29.520><c> architectures</c><00:04:30.440><c> operate</c><00:04:30.960><c> comfortably</c>
+
+00:04:32.270 --> 00:04:32.280 align:start position:0%
+a few architectures operate comfortably
+ 
+
+00:04:32.280 --> 00:04:35.310 align:start position:0%
+a few architectures operate comfortably
+at<00:04:32.600><c> petabyte</c><00:04:33.160><c> scale.</c><00:04:33.560><c> Why</c><00:04:33.840><c> is</c><00:04:34.080><c> that?</c>
+
+00:04:35.310 --> 00:04:35.320 align:start position:0%
+at petabyte scale. Why is that?
+ 
+
+00:04:35.320 --> 00:04:37.990 align:start position:0%
+at petabyte scale. Why is that?
+And<00:04:35.600><c> the</c><00:04:35.720><c> answer</c><00:04:36.080><c> is</c><00:04:36.840><c> disks</c><00:04:37.320><c> are</c><00:04:37.560><c> easy</c><00:04:37.800><c> to</c>
+
+00:04:37.990 --> 00:04:38.000 align:start position:0%
+And the answer is disks are easy to
+ 
+
+00:04:38.000 --> 00:04:39.270 align:start position:0%
+And the answer is disks are easy to
+fill,
+
+00:04:39.270 --> 00:04:39.280 align:start position:0%
+fill,
+ 
+
+00:04:39.280 --> 00:04:41.590 align:start position:0%
+fill,
+but<00:04:39.720><c> recovery</c><00:04:40.400><c> from</c><00:04:40.680><c> disk</c><00:04:41.080><c> and</c><00:04:41.200><c> machine</c>
+
+00:04:41.590 --> 00:04:41.600 align:start position:0%
+but recovery from disk and machine
+ 
+
+00:04:41.600 --> 00:04:44.070 align:start position:0%
+but recovery from disk and machine
+failure<00:04:41.960><c> takes</c><00:04:42.240><c> a</c><00:04:42.320><c> bit</c><00:04:42.600><c> more</c><00:04:42.800><c> thought.</c><00:04:43.760><c> For</c>
+
+00:04:44.070 --> 00:04:44.080 align:start position:0%
+failure takes a bit more thought. For
+ 
+
+00:04:44.080 --> 00:04:46.470 align:start position:0%
+failure takes a bit more thought. For
+example,<00:04:44.600><c> to</c><00:04:44.800><c> rebuild</c><00:04:45.280><c> a</c><00:04:45.360><c> 128</c><00:04:46.000><c> terabyte</c>
+
+00:04:46.470 --> 00:04:46.480 align:start position:0%
+example, to rebuild a 128 terabyte
+ 
+
+00:04:46.480 --> 00:04:47.670 align:start position:0%
+example, to rebuild a 128 terabyte
+machine
+
+00:04:47.670 --> 00:04:47.680 align:start position:0%
+machine
+ 
+
+00:04:47.680 --> 00:04:49.990 align:start position:0%
+machine
+might<00:04:48.040><c> take</c><00:04:48.280><c> 3</c><00:04:48.560><c> hours</c><00:04:48.880><c> across</c><00:04:49.320><c> the</c><00:04:49.400><c> network,</c>
+
+00:04:49.990 --> 00:04:50.000 align:start position:0%
+might take 3 hours across the network,
+ 
+
+00:04:50.000 --> 00:04:52.990 align:start position:0%
+might take 3 hours across the network,
+assuming<00:04:50.440><c> 100</c><00:04:50.760><c> gigabit</c><00:04:51.200><c> NIC,</c><00:04:52.080><c> perfect</c><00:04:52.640><c> packet</c>
+
+00:04:52.990 --> 00:04:53.000 align:start position:0%
+assuming 100 gigabit NIC, perfect packet
+ 
+
+00:04:53.000 --> 00:04:54.909 align:start position:0%
+assuming 100 gigabit NIC, perfect packet
+transmission,<00:04:53.720><c> but</c><00:04:54.040><c> add</c><00:04:54.400><c> index</c>
+
+00:04:54.909 --> 00:04:54.919 align:start position:0%
+transmission, but add index
+ 
+
+00:04:54.919 --> 00:04:57.909 align:start position:0%
+transmission, but add index
+reconstruction<00:04:55.800><c> and</c><00:04:55.960><c> you're</c><00:04:56.120><c> near</c><00:04:56.440><c> a</c><00:04:56.520><c> 6</c><00:04:56.919><c> hours</c>
+
+00:04:57.909 --> 00:04:57.919 align:start position:0%
+reconstruction and you're near a 6 hours
+ 
+
+00:04:57.919 --> 00:05:01.430 align:start position:0%
+reconstruction and you're near a 6 hours
+as<00:04:58.200><c> your</c><00:04:58.440><c> mean</c><00:04:58.720><c> time</c><00:04:59.000><c> to</c><00:04:59.120><c> recovery</c><00:04:59.640><c> or</c><00:04:59.840><c> MTTR.</c>
+
+00:05:01.430 --> 00:05:01.440 align:start position:0%
+as your mean time to recovery or MTTR.
+ 
+
+00:05:01.440 --> 00:05:03.390 align:start position:0%
+as your mean time to recovery or MTTR.
+But<00:05:01.560><c> if</c><00:05:01.720><c> this</c><00:05:01.960><c> exceeds</c><00:05:02.640><c> your</c><00:05:02.800><c> mean</c><00:05:03.080><c> time</c>
+
+00:05:03.390 --> 00:05:03.400 align:start position:0%
+But if this exceeds your mean time
+ 
+
+00:05:03.400 --> 00:05:05.030 align:start position:0%
+But if this exceeds your mean time
+between<00:05:03.800><c> failure,</c>
+
+00:05:05.030 --> 00:05:05.040 align:start position:0%
+between failure,
+ 
+
+00:05:05.040 --> 00:05:07.430 align:start position:0%
+between failure,
+you're<00:05:05.200><c> in</c><00:05:05.320><c> a</c><00:05:05.400><c> death</c><00:05:05.880><c> spiral.</c><00:05:06.919><c> While</c><00:05:07.320><c> you're</c>
+
+00:05:07.430 --> 00:05:07.440 align:start position:0%
+you're in a death spiral. While you're
+ 
+
+00:05:07.440 --> 00:05:10.030 align:start position:0%
+you're in a death spiral. While you're
+recovering,<00:05:08.120><c> another</c><00:05:08.440><c> machine</c><00:05:08.880><c> fails.</c><00:05:09.960><c> The</c>
+
+00:05:10.030 --> 00:05:10.040 align:start position:0%
+recovering, another machine fails. The
+ 
+
+00:05:10.040 --> 00:05:13.150 align:start position:0%
+recovering, another machine fails. The
+system<00:05:10.520><c> scales</c><00:05:11.200><c> and</c><00:05:11.480><c> fails</c><00:05:12.240><c> faster</c><00:05:12.840><c> than</c><00:05:13.000><c> it</c>
+
+00:05:13.150 --> 00:05:13.160 align:start position:0%
+system scales and fails faster than it
+ 
+
+00:05:13.160 --> 00:05:14.390 align:start position:0%
+system scales and fails faster than it
+recovers.
+
+00:05:14.390 --> 00:05:14.400 align:start position:0%
+recovers.
+ 
+
+00:05:14.400 --> 00:05:17.350 align:start position:0%
+recovers.
+Of<00:05:14.560><c> course,</c><00:05:14.960><c> this</c><00:05:15.160><c> is</c><00:05:15.320><c> a</c><00:05:15.360><c> naive</c><00:05:15.760><c> example.</c>
+
+00:05:17.350 --> 00:05:17.360 align:start position:0%
+Of course, this is a naive example.
+ 
+
+00:05:17.360 --> 00:05:19.150 align:start position:0%
+Of course, this is a naive example.
+You<00:05:17.520><c> can</c><00:05:17.720><c> multiplex</c><00:05:18.360><c> recovery</c><00:05:18.760><c> across</c>
+
+00:05:19.150 --> 00:05:19.160 align:start position:0%
+You can multiplex recovery across
+ 
+
+00:05:19.160 --> 00:05:20.590 align:start position:0%
+You can multiplex recovery across
+machines,
+
+00:05:20.590 --> 00:05:20.600 align:start position:0%
+machines,
+ 
+
+00:05:20.600 --> 00:05:22.790 align:start position:0%
+machines,
+but<00:05:20.960><c> the</c><00:05:21.080><c> point</c><00:05:21.400><c> is</c><00:05:21.520><c> that</c><00:05:21.760><c> scalability</c><00:05:22.600><c> is</c>
+
+00:05:22.790 --> 00:05:22.800 align:start position:0%
+but the point is that scalability is
+ 
+
+00:05:22.800 --> 00:05:26.150 align:start position:0%
+but the point is that scalability is
+hard<00:05:23.280><c> because</c><00:05:23.680><c> survivability</c><00:05:24.800><c> is</c><00:05:25.000><c> hard.</c>
+
+00:05:26.150 --> 00:05:26.160 align:start position:0%
+hard because survivability is hard.
+ 
+
+00:05:26.160 --> 00:05:28.710 align:start position:0%
+hard because survivability is hard.
+Yet<00:05:26.440><c> without</c><00:05:26.960><c> survivability,</c>
+
+00:05:28.710 --> 00:05:28.720 align:start position:0%
+Yet without survivability,
+ 
+
+00:05:28.720 --> 00:05:31.350 align:start position:0%
+Yet without survivability,
+the<00:05:28.840><c> system</c><00:05:29.320><c> becomes</c><00:05:30.160><c> too</c><00:05:30.360><c> big</c><00:05:30.600><c> to</c><00:05:30.760><c> fail</c>
+
+00:05:31.350 --> 00:05:31.360 align:start position:0%
+the system becomes too big to fail
+ 
+
+00:05:31.360 --> 00:05:34.750 align:start position:0%
+the system becomes too big to fail
+because<00:05:31.680><c> it's</c><00:05:31.919><c> really</c><00:05:32.960><c> too</c><00:05:33.120><c> big</c><00:05:33.360><c> to</c><00:05:33.520><c> recover.</c>
+
+00:05:34.750 --> 00:05:34.760 align:start position:0%
+because it's really too big to recover.
+ 
+
+00:05:34.760 --> 00:05:37.750 align:start position:0%
+because it's really too big to recover.
+And<00:05:34.960><c> when</c><00:05:35.120><c> you</c><00:05:35.280><c> cannot</c><00:05:35.720><c> recover</c><00:05:36.240><c> a</c><00:05:36.320><c> system,</c>
+
+00:05:37.750 --> 00:05:37.760 align:start position:0%
+And when you cannot recover a system,
+ 
+
+00:05:37.760 --> 00:05:40.750 align:start position:0%
+And when you cannot recover a system,
+you<00:05:37.840><c> no</c><00:05:38.040><c> longer</c><00:05:38.720><c> own</c><00:05:39.000><c> the</c><00:05:39.120><c> system.</c>
+
+00:05:40.750 --> 00:05:40.760 align:start position:0%
+you no longer own the system.
+ 
+
+00:05:40.760 --> 00:05:43.750 align:start position:0%
+you no longer own the system.
+The<00:05:40.840><c> system</c><00:05:41.480><c> owns</c><00:05:41.840><c> you.</c>
+
+00:05:43.750 --> 00:05:43.760 align:start position:0%
+The system owns you.
+ 
+
+00:05:43.760 --> 00:05:45.670 align:start position:0%
+The system owns you.
+In<00:05:43.880><c> other</c><00:05:44.040><c> words,</c><00:05:44.400><c> the</c><00:05:44.520><c> maximum</c><00:05:45.120><c> size</c><00:05:45.520><c> of</c><00:05:45.640><c> a</c>
+
+00:05:45.670 --> 00:05:45.680 align:start position:0%
+In other words, the maximum size of a
+ 
+
+00:05:45.680 --> 00:05:49.030 align:start position:0%
+In other words, the maximum size of a
+database<00:05:46.280><c> is</c><00:05:46.520><c> dictated</c><00:05:47.120><c> not</c><00:05:47.360><c> by</c><00:05:47.560><c> disk,</c><00:05:48.680><c> but</c><00:05:48.840><c> by</c>
+
+00:05:49.030 --> 00:05:49.040 align:start position:0%
+database is dictated not by disk, but by
+ 
+
+00:05:49.040 --> 00:05:51.990 align:start position:0%
+database is dictated not by disk, but by
+architecture,<00:05:50.240><c> where</c><00:05:50.440><c> the</c><00:05:50.680><c> every</c><00:05:51.360><c> algorithm</c>
+
+00:05:51.990 --> 00:05:52.000 align:start position:0%
+architecture, where the every algorithm
+ 
+
+00:05:52.000 --> 00:05:54.230 align:start position:0%
+architecture, where the every algorithm
+is<00:05:52.120><c> designed</c><00:05:52.680><c> with</c><00:05:52.840><c> explicit</c><00:05:53.640><c> limits</c><00:05:54.080><c> for</c>
+
+00:05:54.230 --> 00:05:54.240 align:start position:0%
+is designed with explicit limits for
+ 
+
+00:05:54.240 --> 00:05:57.430 align:start position:0%
+is designed with explicit limits for
+scale,<00:05:55.360><c> and</c><00:05:55.720><c> crucially</c><00:05:56.400><c> to</c><00:05:56.680><c> recover</c><00:05:57.160><c> that</c>
+
+00:05:57.430 --> 00:05:57.440 align:start position:0%
+scale, and crucially to recover that
+ 
+
+00:05:57.440 --> 00:06:00.350 align:start position:0%
+scale, and crucially to recover that
+scale<00:05:57.880><c> in</c><00:05:58.040><c> a</c><00:05:58.120><c> paradox</c><00:05:58.720><c> of</c><00:05:58.840><c> composition,</c>
+
+00:06:00.350 --> 00:06:00.360 align:start position:0%
+scale in a paradox of composition,
+ 
+
+00:06:00.360 --> 00:06:03.670 align:start position:0%
+scale in a paradox of composition,
+to<00:06:00.560><c> have</c><00:06:01.000><c> unbounded</c><00:06:01.720><c> scale,</c><00:06:02.480><c> every</c><00:06:02.920><c> component</c>
+
+00:06:03.670 --> 00:06:03.680 align:start position:0%
+to have unbounded scale, every component
+ 
+
+00:06:03.680 --> 00:06:06.310 align:start position:0%
+to have unbounded scale, every component
+must<00:06:04.120><c> be</c><00:06:04.360><c> bounded.</c><00:06:04.960><c> You</c><00:06:05.120><c> start</c><00:06:05.640><c> to</c><00:06:05.760><c> move</c><00:06:06.080><c> from</c>
+
+00:06:06.310 --> 00:06:06.320 align:start position:0%
+must be bounded. You start to move from
+ 
+
+00:06:06.320 --> 00:06:09.790 align:start position:0%
+must be bounded. You start to move from
+dynamic<00:06:06.880><c> allocation</c><00:06:07.640><c> to</c><00:06:07.840><c> static</c><00:06:08.320><c> allocation,</c>
+
+00:06:09.790 --> 00:06:09.800 align:start position:0%
+dynamic allocation to static allocation,
+ 
+
+00:06:09.800 --> 00:06:12.390 align:start position:0%
+dynamic allocation to static allocation,
+but<00:06:09.960><c> this</c><00:06:10.240><c> focus</c><00:06:10.800><c> on</c><00:06:11.000><c> worst-case</c><00:06:11.600><c> behavior</c><00:06:12.160><c> is</c>
+
+00:06:12.390 --> 00:06:12.400 align:start position:0%
+but this focus on worst-case behavior is
+ 
+
+00:06:12.400 --> 00:06:13.750 align:start position:0%
+but this focus on worst-case behavior is
+rare
+
+00:06:13.750 --> 00:06:13.760 align:start position:0%
+rare
+ 
+
+00:06:13.760 --> 00:06:15.710 align:start position:0%
+rare
+where<00:06:14.080><c> systems</c><00:06:14.600><c> use</c><00:06:14.920><c> off-the-shelf</c>
+
+00:06:15.710 --> 00:06:15.720 align:start position:0%
+where systems use off-the-shelf
+ 
+
+00:06:15.720 --> 00:06:17.550 align:start position:0%
+where systems use off-the-shelf
+dependencies.
+
+00:06:17.550 --> 00:06:17.560 align:start position:0%
+dependencies.
+ 
+
+00:06:17.560 --> 00:06:19.470 align:start position:0%
+dependencies.
+And<00:06:17.880><c> systems</c><00:06:18.360><c> tend</c><00:06:18.560><c> to</c><00:06:18.680><c> fail</c><00:06:18.960><c> in</c><00:06:19.080><c> a</c><00:06:19.120><c> much</c>
+
+00:06:19.470 --> 00:06:19.480 align:start position:0%
+And systems tend to fail in a much
+ 
+
+00:06:19.480 --> 00:06:21.510 align:start position:0%
+And systems tend to fail in a much
+simpler<00:06:19.880><c> way,</c><00:06:20.320><c> time.</c>
+
+00:06:21.510 --> 00:06:21.520 align:start position:0%
+simpler way, time.
+ 
+
+00:06:21.520 --> 00:06:23.470 align:start position:0%
+simpler way, time.
+Uh<00:06:21.760><c> let's</c><00:06:22.080><c> estimate</c><00:06:22.640><c> that</c><00:06:22.760><c> an</c><00:06:22.960><c> average</c>
+
+00:06:23.470 --> 00:06:23.480 align:start position:0%
+Uh let's estimate that an average
+ 
+
+00:06:23.480 --> 00:06:25.590 align:start position:0%
+Uh let's estimate that an average
+general-purpose<00:06:24.240><c> database</c><00:06:24.800><c> can</c><00:06:25.000><c> sustain</c>
+
+00:06:25.590 --> 00:06:25.600 align:start position:0%
+general-purpose database can sustain
+ 
+
+00:06:25.600 --> 00:06:29.670 align:start position:0%
+general-purpose database can sustain
+between<00:06:26.720><c> 10,000</c><00:06:27.760><c> and</c><00:06:28.000><c> 100,000</c><00:06:28.960><c> transactions</c>
+
+00:06:29.670 --> 00:06:29.680 align:start position:0%
+between 10,000 and 100,000 transactions
+ 
+
+00:06:29.680 --> 00:06:34.310 align:start position:0%
+between 10,000 and 100,000 transactions
+per<00:06:29.880><c> second</c><00:06:30.520><c> with</c><00:06:30.840><c> strict</c><00:06:31.480><c> serializability.</c>
+
+00:06:34.310 --> 00:06:34.320 align:start position:0%
+per second with strict serializability.
+ 
+
+00:06:34.320 --> 00:06:36.390 align:start position:0%
+per second with strict serializability.
+Depending<00:06:34.760><c> on</c><00:06:34.880><c> the</c><00:06:35.000><c> rate,</c><00:06:35.840><c> a</c><00:06:35.960><c> trillion</c>
+
+00:06:36.390 --> 00:06:36.400 align:start position:0%
+Depending on the rate, a trillion
+ 
+
+00:06:36.400 --> 00:06:39.190 align:start position:0%
+Depending on the rate, a trillion
+transactions<00:06:37.080><c> would</c><00:06:37.240><c> take</c><00:06:37.480><c> us</c><00:06:37.680><c> from</c><00:06:37.919><c> 100</c><00:06:39.040><c> to</c>
+
+00:06:39.190 --> 00:06:39.200 align:start position:0%
+transactions would take us from 100 to
+ 
+
+00:06:39.200 --> 00:06:42.510 align:start position:0%
+transactions would take us from 100 to
+1,000<00:06:39.960><c> days</c><00:06:40.560><c> or</c><00:06:40.760><c> 3</c><00:06:41.040><c> months</c><00:06:41.440><c> to</c><00:06:41.600><c> 3</c><00:06:41.880><c> years,</c><00:06:42.360><c> but</c>
+
+00:06:42.510 --> 00:06:42.520 align:start position:0%
+1,000 days or 3 months to 3 years, but
+ 
+
+00:06:42.520 --> 00:06:44.230 align:start position:0%
+1,000 days or 3 months to 3 years, but
+if<00:06:42.640><c> we're</c><00:06:42.760><c> going</c><00:06:42.880><c> to</c><00:06:43.000><c> do</c><00:06:43.120><c> a</c><00:06:43.200><c> demo,</c>
+
+00:06:44.230 --> 00:06:44.240 align:start position:0%
+if we're going to do a demo,
+ 
+
+00:06:44.240 --> 00:06:46.150 align:start position:0%
+if we're going to do a demo,
+uh<00:06:44.440><c> we</c><00:06:44.560><c> didn't</c><00:06:44.800><c> want</c><00:06:44.919><c> to</c><00:06:45.000><c> finish</c><00:06:45.360><c> this</c><00:06:45.560><c> talk</c><00:06:45.919><c> in</c>
+
+00:06:46.150 --> 00:06:46.160 align:start position:0%
+uh we didn't want to finish this talk in
+ 
+
+00:06:46.160 --> 00:06:47.670 align:start position:0%
+uh we didn't want to finish this talk in
+2029,
+
+00:06:47.670 --> 00:06:47.680 align:start position:0%
+2029,
+ 
+
+00:06:47.680 --> 00:06:49.430 align:start position:0%
+2029,
+uh<00:06:47.880><c> because</c><00:06:48.200><c> the</c><00:06:48.320><c> world</c><00:06:48.680><c> is</c><00:06:48.840><c> becoming</c><00:06:49.240><c> more</c>
+
+00:06:49.430 --> 00:06:49.440 align:start position:0%
+uh because the world is becoming more
+ 
+
+00:06:49.440 --> 00:06:51.630 align:start position:0%
+uh because the world is becoming more
+transactional.<00:06:50.320><c> For</c><00:06:50.520><c> example,</c><00:06:51.040><c> in</c><00:06:51.160><c> the</c><00:06:51.240><c> last</c>
+
+00:06:51.630 --> 00:06:51.640 align:start position:0%
+transactional. For example, in the last
+ 
+
+00:06:51.640 --> 00:06:54.830 align:start position:0%
+transactional. For example, in the last
+decade,<00:06:52.720><c> India's</c><00:06:53.360><c> national</c><00:06:53.840><c> payment</c><00:06:54.280><c> system,</c>
+
+00:06:54.830 --> 00:06:54.840 align:start position:0%
+decade, India's national payment system,
+ 
+
+00:06:54.840 --> 00:06:56.230 align:start position:0%
+decade, India's national payment system,
+UPI,
+
+00:06:56.230 --> 00:06:56.240 align:start position:0%
+UPI,
+ 
+
+00:06:56.240 --> 00:06:58.990 align:start position:0%
+UPI,
+grew<00:06:56.520><c> 10,000</c><00:06:57.640><c> times,</c>
+
+00:06:58.990 --> 00:06:59.000 align:start position:0%
+grew 10,000 times,
+ 
+
+00:06:59.000 --> 00:07:01.909 align:start position:0%
+grew 10,000 times,
+processing<00:06:59.760><c> tens</c><00:07:00.600><c> of</c><00:07:01.040><c> billions</c><00:07:01.720><c> of</c>
+
+00:07:01.909 --> 00:07:01.919 align:start position:0%
+processing tens of billions of
+ 
+
+00:07:01.919 --> 00:07:04.590 align:start position:0%
+processing tens of billions of
+transactions<00:07:02.560><c> a</c><00:07:02.640><c> month.</c><00:07:03.480><c> There's</c><00:07:03.760><c> almost</c><00:07:04.240><c> no</c>
+
+00:07:04.590 --> 00:07:04.600 align:start position:0%
+transactions a month. There's almost no
+ 
+
+00:07:04.600 --> 00:07:07.430 align:start position:0%
+transactions a month. There's almost no
+transaction<00:07:05.240><c> database</c><00:07:05.800><c> on</c><00:07:06.080><c> Earth</c><00:07:07.040><c> that</c><00:07:07.240><c> can</c>
+
+00:07:07.430 --> 00:07:07.440 align:start position:0%
+transaction database on Earth that can
+ 
+
+00:07:07.440 --> 00:07:10.070 align:start position:0%
+transaction database on Earth that can
+survive<00:07:08.000><c> this</c><00:07:08.240><c> kind</c><00:07:08.520><c> of</c><00:07:08.680><c> increase.</c>
+
+00:07:10.070 --> 00:07:10.080 align:start position:0%
+survive this kind of increase.
+ 
+
+00:07:10.080 --> 00:07:12.630 align:start position:0%
+survive this kind of increase.
+Uh<00:07:10.280><c> but</c><00:07:10.480><c> when</c><00:07:10.640><c> economies</c><00:07:11.360><c> move</c><00:07:11.640><c> to</c><00:07:11.800><c> real</c><00:07:12.120><c> time,</c>
+
+00:07:12.630 --> 00:07:12.640 align:start position:0%
+Uh but when economies move to real time,
+ 
+
+00:07:12.640 --> 00:07:14.590 align:start position:0%
+Uh but when economies move to real time,
+everything<00:07:13.080><c> becomes</c><00:07:13.600><c> instant.</c><00:07:14.160><c> Volumes</c>
+
+00:07:14.590 --> 00:07:14.600 align:start position:0%
+everything becomes instant. Volumes
+ 
+
+00:07:14.600 --> 00:07:17.790 align:start position:0%
+everything becomes instant. Volumes
+explode,<00:07:15.840><c> and</c><00:07:16.080><c> not</c><00:07:16.360><c> just</c><00:07:16.760><c> payments,</c><00:07:17.440><c> all</c>
+
+00:07:17.790 --> 00:07:17.800 align:start position:0%
+explode, and not just payments, all
+ 
+
+00:07:17.800 --> 00:07:20.470 align:start position:0%
+explode, and not just payments, all
+sectors<00:07:18.400><c> everywhere</c><00:07:19.040><c> from</c><00:07:19.320><c> gaming</c><00:07:20.320><c> to</c>
+
+00:07:20.470 --> 00:07:20.480 align:start position:0%
+sectors everywhere from gaming to
+ 
+
+00:07:20.480 --> 00:07:21.750 align:start position:0%
+sectors everywhere from gaming to
+billing.
+
+00:07:21.750 --> 00:07:21.760 align:start position:0%
+billing.
+ 
+
+00:07:21.760 --> 00:07:24.310 align:start position:0%
+billing.
+This<00:07:21.919><c> is</c><00:07:22.160><c> Jevons'</c><00:07:22.720><c> paradox.</c><00:07:23.400><c> Efficiency</c>
+
+00:07:24.310 --> 00:07:24.320 align:start position:0%
+This is Jevons' paradox. Efficiency
+ 
+
+00:07:24.320 --> 00:07:26.630 align:start position:0%
+This is Jevons' paradox. Efficiency
+increases<00:07:25.240><c> consumption.</c>
+
+00:07:26.630 --> 00:07:26.640 align:start position:0%
+increases consumption.
+ 
+
+00:07:26.640 --> 00:07:29.030 align:start position:0%
+increases consumption.
+Uh<00:07:26.800><c> the</c><00:07:26.960><c> faster</c><00:07:27.560><c> your</c><00:07:27.800><c> OLTP,</c><00:07:28.520><c> the</c><00:07:28.680><c> more</c>
+
+00:07:29.030 --> 00:07:29.040 align:start position:0%
+Uh the faster your OLTP, the more
+ 
+
+00:07:29.040 --> 00:07:30.870 align:start position:0%
+Uh the faster your OLTP, the more
+transactions<00:07:29.720><c> you</c><00:07:29.800><c> want</c><00:07:30.000><c> to</c><00:07:30.120><c> process,</c><00:07:30.720><c> the</c>
+
+00:07:30.870 --> 00:07:30.880 align:start position:0%
+transactions you want to process, the
+ 
+
+00:07:30.880 --> 00:07:33.110 align:start position:0%
+transactions you want to process, the
+faster<00:07:31.480><c> you'll</c><00:07:31.680><c> need</c><00:07:31.880><c> to</c><00:07:32.000><c> recover.</c>
+
+00:07:33.110 --> 00:07:33.120 align:start position:0%
+faster you'll need to recover.
+ 
+
+00:07:33.120 --> 00:07:34.909 align:start position:0%
+faster you'll need to recover.
+So,<00:07:33.280><c> the</c><00:07:33.440><c> need</c><00:07:33.960><c> for</c><00:07:34.120><c> more</c><00:07:34.400><c> scalable</c>
+
+00:07:34.909 --> 00:07:34.919 align:start position:0%
+So, the need for more scalable
+ 
+
+00:07:34.919 --> 00:07:38.070 align:start position:0%
+So, the need for more scalable
+transaction<00:07:35.560><c> processing</c><00:07:36.160><c> is</c><00:07:36.320><c> not</c><00:07:36.600><c> going</c><00:07:36.840><c> away</c>
+
+00:07:38.070 --> 00:07:38.080 align:start position:0%
+transaction processing is not going away
+ 
+
+00:07:38.080 --> 00:07:39.510 align:start position:0%
+transaction processing is not going away
+when<00:07:38.360><c> we</c><00:07:38.480><c> look</c><00:07:38.720><c> at</c><00:07:38.840><c> where</c><00:07:39.000><c> the</c><00:07:39.080><c> world</c><00:07:39.360><c> is</c>
+
+00:07:39.510 --> 00:07:39.520 align:start position:0%
+when we look at where the world is
+ 
+
+00:07:39.520 --> 00:07:40.710 align:start position:0%
+when we look at where the world is
+going.
+
+00:07:40.710 --> 00:07:40.720 align:start position:0%
+going.
+ 
+
+00:07:40.720 --> 00:07:43.710 align:start position:0%
+going.
+Uh<00:07:40.919><c> but</c><00:07:41.120><c> the</c><00:07:41.280><c> systems</c><00:07:41.880><c> we</c><00:07:42.000><c> design</c><00:07:42.520><c> today</c>
+
+00:07:43.710 --> 00:07:43.720 align:start position:0%
+Uh but the systems we design today
+ 
+
+00:07:43.720 --> 00:07:46.230 align:start position:0%
+Uh but the systems we design today
+will<00:07:43.920><c> decide</c><00:07:44.560><c> whether</c><00:07:44.760><c> this</c><00:07:45.040><c> future</c>
+
+00:07:46.230 --> 00:07:46.240 align:start position:0%
+will decide whether this future
+ 
+
+00:07:46.240 --> 00:07:48.150 align:start position:0%
+will decide whether this future
+is<00:07:46.640><c> scalable,</c>
+
+00:07:48.150 --> 00:07:48.160 align:start position:0%
+is scalable,
+ 
+
+00:07:48.160 --> 00:07:49.910 align:start position:0%
+is scalable,
+survivable,
+
+00:07:49.910 --> 00:07:49.920 align:start position:0%
+survivable,
+ 
+
+00:07:49.920 --> 00:07:53.110 align:start position:0%
+survivable,
+or<00:07:50.200><c> impossible.</c>
+
+00:07:53.110 --> 00:07:53.120 align:start position:0%
+or impossible.
+ 
+
+00:07:53.120 --> 00:07:55.790 align:start position:0%
+or impossible.
+To<00:07:53.280><c> survive</c><00:07:53.760><c> a</c><00:07:53.800><c> trillion</c><00:07:54.240><c> transactions</c><00:07:54.960><c> then,</c>
+
+00:07:55.790 --> 00:07:55.800 align:start position:0%
+To survive a trillion transactions then,
+ 
+
+00:07:55.800 --> 00:07:58.350 align:start position:0%
+To survive a trillion transactions then,
+before<00:07:56.280><c> we</c><00:07:56.440><c> build</c><00:07:56.720><c> something</c><00:07:57.160><c> better,</c>
+
+00:07:58.350 --> 00:07:58.360 align:start position:0%
+before we build something better,
+ 
+
+00:07:58.360 --> 00:08:00.350 align:start position:0%
+before we build something better,
+we<00:07:58.560><c> first</c><00:07:59.000><c> need</c><00:07:59.200><c> to</c><00:07:59.320><c> understand</c><00:08:00.120><c> where</c>
+
+00:08:00.350 --> 00:08:00.360 align:start position:0%
+we first need to understand where
+ 
+
+00:08:00.360 --> 00:08:03.110 align:start position:0%
+we first need to understand where
+existing<00:08:01.040><c> architectures</c><00:08:01.840><c> break.</c>
+
+00:08:03.110 --> 00:08:03.120 align:start position:0%
+existing architectures break.
+ 
+
+00:08:03.120 --> 00:08:07.350 align:start position:0%
+existing architectures break.
+And<00:08:03.360><c> here,</c><00:08:04.280><c> OLTP</c><00:08:04.960><c> tends</c><00:08:05.480><c> to</c><00:08:05.680><c> evolve</c><00:08:06.920><c> through</c>
+
+00:08:07.350 --> 00:08:07.360 align:start position:0%
+And here, OLTP tends to evolve through
+ 
+
+00:08:07.360 --> 00:08:10.150 align:start position:0%
+And here, OLTP tends to evolve through
+seven<00:08:07.920><c> predictable</c><00:08:08.720><c> stages.</c>
+
+00:08:10.150 --> 00:08:10.160 align:start position:0%
+seven predictable stages.
+ 
+
+00:08:10.160 --> 00:08:12.750 align:start position:0%
+seven predictable stages.
+Each<00:08:10.480><c> stage</c><00:08:11.000><c> solving</c><00:08:11.480><c> one</c><00:08:11.720><c> problem</c><00:08:12.520><c> while</c>
+
+00:08:12.750 --> 00:08:12.760 align:start position:0%
+Each stage solving one problem while
+ 
+
+00:08:12.760 --> 00:08:15.070 align:start position:0%
+Each stage solving one problem while
+creating<00:08:13.640><c> another.</c>
+
+00:08:15.070 --> 00:08:15.080 align:start position:0%
+creating another.
+ 
+
+00:08:15.080 --> 00:08:17.710 align:start position:0%
+creating another.
+In<00:08:15.240><c> the</c><00:08:15.320><c> beginning</c><00:08:16.200><c> was</c><00:08:16.480><c> the</c><00:08:16.600><c> log.</c><00:08:17.600><c> The</c>
+
+00:08:17.710 --> 00:08:17.720 align:start position:0%
+In the beginning was the log. The
+ 
+
+00:08:17.720 --> 00:08:20.830 align:start position:0%
+In the beginning was the log. The
+database<00:08:18.280><c> is</c><00:08:18.440><c> the</c><00:08:18.560><c> log,</c><00:08:19.280><c> and</c><00:08:19.440><c> the</c><00:08:19.560><c> rest</c><00:08:20.520><c> just</c>
+
+00:08:20.830 --> 00:08:20.840 align:start position:0%
+database is the log, and the rest just
+ 
+
+00:08:20.840 --> 00:08:24.190 align:start position:0%
+database is the log, and the rest just
+an<00:08:20.960><c> in-memory</c><00:08:21.480><c> cache.</c><00:08:22.520><c> The</c><00:08:22.600><c> log</c><00:08:22.840><c> gives</c><00:08:23.240><c> order,</c>
+
+00:08:24.190 --> 00:08:24.200 align:start position:0%
+an in-memory cache. The log gives order,
+ 
+
+00:08:24.200 --> 00:08:26.870 align:start position:0%
+an in-memory cache. The log gives order,
+durability,<00:08:25.320><c> and</c><00:08:25.560><c> recovery</c><00:08:26.240><c> from</c><00:08:26.520><c> power</c>
+
+00:08:26.870 --> 00:08:26.880 align:start position:0%
+durability, and recovery from power
+ 
+
+00:08:26.880 --> 00:08:28.110 align:start position:0%
+durability, and recovery from power
+loss.
+
+00:08:28.110 --> 00:08:28.120 align:start position:0%
+loss.
+ 
+
+00:08:28.120 --> 00:08:30.909 align:start position:0%
+loss.
+And<00:08:28.320><c> many</c><00:08:28.560><c> systems</c><00:08:29.200><c> are</c><00:08:29.400><c> stage</c><00:08:29.840><c> one,</c><00:08:30.480><c> so</c><00:08:30.680><c> they</c>
+
+00:08:30.909 --> 00:08:30.919 align:start position:0%
+And many systems are stage one, so they
+ 
+
+00:08:30.919 --> 00:08:33.950 align:start position:0%
+And many systems are stage one, so they
+have<00:08:31.120><c> a</c><00:08:31.200><c> log,</c><00:08:32.200><c> uh,</c><00:08:32.320><c> they're</c><00:08:32.520><c> in</c><00:08:32.680><c> memory,</c><00:08:33.840><c> but</c>
+
+00:08:33.950 --> 00:08:33.960 align:start position:0%
+have a log, uh, they're in memory, but
+ 
+
+00:08:33.960 --> 00:08:35.830 align:start position:0%
+have a log, uh, they're in memory, but
+the<00:08:34.080><c> longer</c><00:08:34.520><c> the</c><00:08:34.640><c> log,</c><00:08:35.280><c> the</c><00:08:35.400><c> longer</c><00:08:35.719><c> the</c>
+
+00:08:35.830 --> 00:08:35.840 align:start position:0%
+the longer the log, the longer the
+ 
+
+00:08:35.840 --> 00:08:38.709 align:start position:0%
+the longer the log, the longer the
+replay.<00:08:36.719><c> And</c><00:08:36.880><c> so</c><00:08:37.039><c> in</c><00:08:37.159><c> stage</c><00:08:37.640><c> two,</c>
+
+00:08:38.709 --> 00:08:38.719 align:start position:0%
+replay. And so in stage two,
+ 
+
+00:08:38.719 --> 00:08:40.909 align:start position:0%
+replay. And so in stage two,
+uh,<00:08:38.880><c> you</c><00:08:39.039><c> start</c><00:08:39.400><c> to</c><00:08:39.560><c> snapshot</c><00:08:40.200><c> the</c><00:08:40.360><c> log</c><00:08:40.719><c> to</c>
+
+00:08:40.909 --> 00:08:40.919 align:start position:0%
+uh, you start to snapshot the log to
+ 
+
+00:08:40.919 --> 00:08:43.870 align:start position:0%
+uh, you start to snapshot the log to
+speed<00:08:41.320><c> up</c><00:08:41.479><c> restarts.</c><00:08:42.800><c> This</c><00:08:43.000><c> works</c><00:08:43.360><c> for</c><00:08:43.520><c> small</c>
+
+00:08:43.870 --> 00:08:43.880 align:start position:0%
+speed up restarts. This works for small
+ 
+
+00:08:43.880 --> 00:08:45.670 align:start position:0%
+speed up restarts. This works for small
+scale,<00:08:44.360><c> but</c><00:08:44.600><c> snapshotting</c><00:08:45.240><c> more</c><00:08:45.440><c> than</c><00:08:45.600><c> a</c>
+
+00:08:45.670 --> 00:08:45.680 align:start position:0%
+scale, but snapshotting more than a
+ 
+
+00:08:45.680 --> 00:08:48.230 align:start position:0%
+scale, but snapshotting more than a
+terabyte<00:08:46.400><c> takes</c><00:08:46.800><c> minutes,</c>
+
+00:08:48.230 --> 00:08:48.240 align:start position:0%
+terabyte takes minutes,
+ 
+
+00:08:48.240 --> 00:08:51.270 align:start position:0%
+terabyte takes minutes,
+and<00:08:48.520><c> you</c><00:08:48.640><c> can't</c><00:08:49.000><c> scale</c><00:08:49.440><c> beyond</c><00:08:50.040><c> memory.</c>
+
+00:08:51.270 --> 00:08:51.280 align:start position:0%
+and you can't scale beyond memory.
+ 
+
+00:08:51.280 --> 00:08:53.190 align:start position:0%
+and you can't scale beyond memory.
+So<00:08:51.440><c> a</c><00:08:51.520><c> stage</c><00:08:52.000><c> three,</c>
+
+00:08:53.190 --> 00:08:53.200 align:start position:0%
+So a stage three,
+ 
+
+00:08:53.200 --> 00:08:56.310 align:start position:0%
+So a stage three,
+um,<00:08:53.600><c> adds</c><00:08:54.040><c> an</c><00:08:54.280><c> LSM</c><00:08:54.839><c> tree</c><00:08:55.120><c> storage</c><00:08:55.640><c> engine</c><00:08:56.080><c> for</c>
+
+00:08:56.310 --> 00:08:56.320 align:start position:0%
+um, adds an LSM tree storage engine for
+ 
+
+00:08:56.320 --> 00:08:59.230 align:start position:0%
+um, adds an LSM tree storage engine for
+incremental<00:08:57.160><c> snapshotting</c><00:08:57.880><c> across</c><00:08:58.360><c> L1,</c><00:08:58.800><c> L2,</c>
+
+00:08:59.230 --> 00:08:59.240 align:start position:0%
+incremental snapshotting across L1, L2,
+ 
+
+00:08:59.240 --> 00:09:03.310 align:start position:0%
+incremental snapshotting across L1, L2,
+L3,<00:08:59.680><c> main</c><00:08:59.920><c> memory,</c><00:09:00.760><c> and</c><00:09:01.040><c> NVMe.</c>
+
+00:09:03.310 --> 00:09:03.320 align:start position:0%
+L3, main memory, and NVMe.
+ 
+
+00:09:03.320 --> 00:09:05.630 align:start position:0%
+L3, main memory, and NVMe.
+LSMs<00:09:03.800><c> are</c><00:09:03.920><c> also</c><00:09:04.200><c> beautiful</c><00:09:04.760><c> from</c><00:09:05.000><c> a</c><00:09:05.040><c> systems</c>
+
+00:09:05.630 --> 00:09:05.640 align:start position:0%
+LSMs are also beautiful from a systems
+ 
+
+00:09:05.640 --> 00:09:08.470 align:start position:0%
+LSMs are also beautiful from a systems
+perspective.<00:09:07.080><c> They</c><00:09:07.320><c> match</c><00:09:07.880><c> the</c><00:09:08.040><c> memory</c>
+
+00:09:08.470 --> 00:09:08.480 align:start position:0%
+perspective. They match the memory
+ 
+
+00:09:08.480 --> 00:09:11.110 align:start position:0%
+perspective. They match the memory
+hierarchy.<00:09:09.520><c> You</c><00:09:09.680><c> get</c><00:09:09.880><c> a</c><00:09:09.920><c> natural</c><00:09:10.480><c> separation</c>
+
+00:09:11.110 --> 00:09:11.120 align:start position:0%
+hierarchy. You get a natural separation
+ 
+
+00:09:11.120 --> 00:09:13.870 align:start position:0%
+hierarchy. You get a natural separation
+of<00:09:11.280><c> hot</c><00:09:11.839><c> and</c><00:09:12.080><c> cold</c><00:09:12.600><c> data.</c>
+
+00:09:13.870 --> 00:09:13.880 align:start position:0%
+of hot and cold data.
+ 
+
+00:09:13.880 --> 00:09:16.350 align:start position:0%
+of hot and cold data.
+But<00:09:14.160><c> everything</c><00:09:14.560><c> is</c><00:09:14.680><c> on</c><00:09:14.839><c> one</c><00:09:15.040><c> machine.</c><00:09:15.960><c> If</c><00:09:16.200><c> you</c>
+
+00:09:16.350 --> 00:09:16.360 align:start position:0%
+But everything is on one machine. If you
+ 
+
+00:09:16.360 --> 00:09:18.070 align:start position:0%
+But everything is on one machine. If you
+lose<00:09:16.680><c> the</c><00:09:16.800><c> machine,</c>
+
+00:09:18.070 --> 00:09:18.080 align:start position:0%
+lose the machine,
+ 
+
+00:09:18.080 --> 00:09:20.510 align:start position:0%
+lose the machine,
+uh,<00:09:18.280><c> you</c><00:09:18.400><c> need</c><00:09:18.600><c> to</c><00:09:18.720><c> recover</c><00:09:19.160><c> from</c><00:09:19.440><c> backup.</c><00:09:20.240><c> And</c>
+
+00:09:20.510 --> 00:09:20.520 align:start position:0%
+uh, you need to recover from backup. And
+ 
+
+00:09:20.520 --> 00:09:23.630 align:start position:0%
+uh, you need to recover from backup. And
+as<00:09:20.760><c> you</c><00:09:20.839><c> approach</c><00:09:21.360><c> 128</c><00:09:22.240><c> terabytes,</c>
+
+00:09:23.630 --> 00:09:23.640 align:start position:0%
+as you approach 128 terabytes,
+ 
+
+00:09:23.640 --> 00:09:25.950 align:start position:0%
+as you approach 128 terabytes,
+the<00:09:23.800><c> time</c><00:09:24.200><c> this</c><00:09:24.440><c> takes</c><00:09:24.920><c> limits</c><00:09:25.320><c> the</c><00:09:25.400><c> scale</c><00:09:25.800><c> you</c>
+
+00:09:25.950 --> 00:09:25.960 align:start position:0%
+the time this takes limits the scale you
+ 
+
+00:09:25.960 --> 00:09:28.230 align:start position:0%
+the time this takes limits the scale you
+can<00:09:26.120><c> address.</c><00:09:26.600><c> So</c><00:09:26.760><c> what</c><00:09:26.920><c> do</c><00:09:27.000><c> we</c><00:09:27.120><c> do?</c>
+
+00:09:28.230 --> 00:09:28.240 align:start position:0%
+can address. So what do we do?
+ 
+
+00:09:28.240 --> 00:09:31.190 align:start position:0%
+can address. So what do we do?
+Uh,<00:09:28.480><c> we</c><00:09:28.680><c> add</c><00:09:29.040><c> redundancy</c><00:09:29.960><c> to</c><00:09:30.160><c> mask</c><00:09:30.760><c> machine</c>
+
+00:09:31.190 --> 00:09:31.200 align:start position:0%
+Uh, we add redundancy to mask machine
+ 
+
+00:09:31.200 --> 00:09:32.230 align:start position:0%
+Uh, we add redundancy to mask machine
+failure.
+
+00:09:32.230 --> 00:09:32.240 align:start position:0%
+failure.
+ 
+
+00:09:32.240 --> 00:09:34.270 align:start position:0%
+failure.
+The<00:09:32.400><c> fourth</c><00:09:32.760><c> stage</c><00:09:33.200><c> replicates</c><00:09:33.760><c> the</c><00:09:33.880><c> log</c><00:09:34.120><c> and</c>
+
+00:09:34.270 --> 00:09:34.280 align:start position:0%
+The fourth stage replicates the log and
+ 
+
+00:09:34.280 --> 00:09:37.190 align:start position:0%
+The fourth stage replicates the log and
+state<00:09:34.600><c> across</c><00:09:34.960><c> machines</c><00:09:36.080><c> with</c><00:09:36.320><c> a</c><00:09:36.440><c> replicated</c>
+
+00:09:37.190 --> 00:09:37.200 align:start position:0%
+state across machines with a replicated
+ 
+
+00:09:37.200 --> 00:09:39.230 align:start position:0%
+state across machines with a replicated
+state<00:09:37.600><c> machine</c><00:09:38.080><c> architecture,</c><00:09:38.880><c> which</c><00:09:39.120><c> I</c>
+
+00:09:39.230 --> 00:09:39.240 align:start position:0%
+state machine architecture, which I
+ 
+
+00:09:39.240 --> 00:09:41.230 align:start position:0%
+state machine architecture, which I
+always<00:09:39.520><c> think</c><00:09:39.800><c> makes</c><00:09:40.040><c> sense</c>
+
+00:09:41.230 --> 00:09:41.240 align:start position:0%
+always think makes sense
+ 
+
+00:09:41.240 --> 00:09:44.150 align:start position:0%
+always think makes sense
+if<00:09:41.440><c> you</c><00:09:41.560><c> say</c><00:09:41.680><c> it</c><00:09:41.840><c> backwards,</c><00:09:42.760><c> a</c><00:09:42.800><c> machine</c><00:09:43.880><c> with</c>
+
+00:09:44.150 --> 00:09:44.160 align:start position:0%
+if you say it backwards, a machine with
+ 
+
+00:09:44.160 --> 00:09:47.390 align:start position:0%
+if you say it backwards, a machine with
+state<00:09:45.080><c> that</c><00:09:45.320><c> you</c><00:09:45.480><c> replicate.</c>
+
+00:09:47.390 --> 00:09:47.400 align:start position:0%
+state that you replicate.
+ 
+
+00:09:47.400 --> 00:09:49.670 align:start position:0%
+state that you replicate.
+The<00:09:47.600><c> Viewstamped</c><00:09:48.240><c> Replication</c><00:09:48.960><c> consensus</c>
+
+00:09:49.670 --> 00:09:49.680 align:start position:0%
+The Viewstamped Replication consensus
+ 
+
+00:09:49.680 --> 00:09:50.910 align:start position:0%
+The Viewstamped Replication consensus
+protocol
+
+00:09:50.910 --> 00:09:50.920 align:start position:0%
+protocol
+ 
+
+00:09:50.920 --> 00:09:52.630 align:start position:0%
+protocol
+from<00:09:51.200><c> MIT</c>
+
+00:09:52.630 --> 00:09:52.640 align:start position:0%
+from MIT
+ 
+
+00:09:52.640 --> 00:09:56.470 align:start position:0%
+from MIT
+pioneered<00:09:53.640><c> this</c><00:09:53.840><c> approach</c><00:09:54.400><c> in</c><00:09:54.600><c> 1988,</c>
+
+00:09:56.470 --> 00:09:56.480 align:start position:0%
+pioneered this approach in 1988,
+ 
+
+00:09:56.480 --> 00:10:00.430 align:start position:0%
+pioneered this approach in 1988,
+a<00:09:56.560><c> year</c><00:09:56.880><c> before</c><00:09:57.240><c> Paxos,</c><00:09:58.440><c> and</c><00:09:58.680><c> inspiring</c><00:09:59.600><c> Raft</c>
+
+00:10:00.430 --> 00:10:00.440 align:start position:0%
+a year before Paxos, and inspiring Raft
+ 
+
+00:10:00.440 --> 00:10:02.190 align:start position:0%
+a year before Paxos, and inspiring Raft
+years<00:10:01.040><c> later.</c>
+
+00:10:02.190 --> 00:10:02.200 align:start position:0%
+years later.
+ 
+
+00:10:02.200 --> 00:10:05.670 align:start position:0%
+years later.
+A<00:10:02.320><c> VSR</c><00:10:02.960><c> provides</c><00:10:03.440><c> recovery</c><00:10:04.640><c> to</c><00:10:04.800><c> a</c><00:10:04.880><c> new</c><00:10:05.200><c> primary</c>
+
+00:10:05.670 --> 00:10:05.680 align:start position:0%
+A VSR provides recovery to a new primary
+ 
+
+00:10:05.680 --> 00:10:07.990 align:start position:0%
+A VSR provides recovery to a new primary
+if<00:10:05.800><c> the</c><00:10:05.960><c> old</c><00:10:06.240><c> primary</c><00:10:06.680><c> fails</c>
+
+00:10:07.990 --> 00:10:08.000 align:start position:0%
+if the old primary fails
+ 
+
+00:10:08.000 --> 00:10:10.430 align:start position:0%
+if the old primary fails
+with<00:10:08.400><c> no</c><00:10:08.720><c> durability</c><00:10:09.400><c> loss,</c>
+
+00:10:10.430 --> 00:10:10.440 align:start position:0%
+with no durability loss,
+ 
+
+00:10:10.440 --> 00:10:12.710 align:start position:0%
+with no durability loss,
+no<00:10:10.760><c> consistency</c><00:10:11.640><c> loss,</c>
+
+00:10:12.710 --> 00:10:12.720 align:start position:0%
+no consistency loss,
+ 
+
+00:10:12.720 --> 00:10:14.870 align:start position:0%
+no consistency loss,
+and<00:10:12.960><c> this</c><00:10:13.160><c> is</c><00:10:13.320><c> a</c><00:10:13.400><c> massive</c><00:10:14.000><c> improvement</c><00:10:14.720><c> for</c>
+
+00:10:14.870 --> 00:10:14.880 align:start position:0%
+and this is a massive improvement for
+ 
+
+00:10:14.880 --> 00:10:16.470 align:start position:0%
+and this is a massive improvement for
+availability.
+
+00:10:16.470 --> 00:10:16.480 align:start position:0%
+availability.
+ 
+
+00:10:16.480 --> 00:10:19.550 align:start position:0%
+availability.
+You<00:10:16.640><c> can't</c><00:10:17.000><c> scale</c><00:10:17.720><c> when</c><00:10:17.920><c> you're</c><00:10:18.080><c> down.</c>
+
+00:10:19.550 --> 00:10:19.560 align:start position:0%
+You can't scale when you're down.
+ 
+
+00:10:19.560 --> 00:10:21.550 align:start position:0%
+You can't scale when you're down.
+At<00:10:19.880><c> this</c><00:10:20.080><c> stage,</c><00:10:20.520><c> we're</c><00:10:20.640><c> surviving</c><00:10:21.200><c> most</c>
+
+00:10:21.550 --> 00:10:21.560 align:start position:0%
+At this stage, we're surviving most
+ 
+
+00:10:21.560 --> 00:10:24.830 align:start position:0%
+At this stage, we're surviving most
+failures,<00:10:22.680><c> but</c><00:10:22.880><c> if</c><00:10:23.040><c> you</c><00:10:23.200><c> lose</c><00:10:23.520><c> a</c><00:10:23.600><c> replica,</c>
+
+00:10:24.830 --> 00:10:24.840 align:start position:0%
+failures, but if you lose a replica,
+ 
+
+00:10:24.840 --> 00:10:27.150 align:start position:0%
+failures, but if you lose a replica,
+bringing<00:10:25.200><c> in</c><00:10:25.320><c> a</c><00:10:25.360><c> new</c><00:10:25.640><c> machine</c><00:10:26.200><c> can</c><00:10:26.400><c> still</c><00:10:26.800><c> take</c>
+
+00:10:27.150 --> 00:10:27.160 align:start position:0%
+bringing in a new machine can still take
+ 
+
+00:10:27.160 --> 00:10:29.710 align:start position:0%
+bringing in a new machine can still take
+hours,<00:10:27.760><c> even</c><00:10:28.160><c> with</c><00:10:28.360><c> the</c><00:10:28.480><c> cluster.</c>
+
+00:10:29.710 --> 00:10:29.720 align:start position:0%
+hours, even with the cluster.
+ 
+
+00:10:29.720 --> 00:10:31.990 align:start position:0%
+hours, even with the cluster.
+If<00:10:29.920><c> another</c><00:10:30.360><c> machine</c><00:10:30.760><c> fails</c><00:10:31.480><c> before</c><00:10:31.880><c> you</c>
+
+00:10:31.990 --> 00:10:32.000 align:start position:0%
+If another machine fails before you
+ 
+
+00:10:32.000 --> 00:10:34.950 align:start position:0%
+If another machine fails before you
+recover,<00:10:32.520><c> you</c><00:10:32.680><c> start</c><00:10:33.040><c> to</c><00:10:33.160><c> lose</c><00:10:33.480><c> quorum</c><00:10:34.640><c> and</c>
+
+00:10:34.950 --> 00:10:34.960 align:start position:0%
+recover, you start to lose quorum and
+ 
+
+00:10:34.960 --> 00:10:38.150 align:start position:0%
+recover, you start to lose quorum and
+risk<00:10:35.240><c> the</c><00:10:35.360><c> cluster.</c><00:10:35.840><c> Again,</c><00:10:36.880><c> survivability</c>
+
+00:10:38.150 --> 00:10:38.160 align:start position:0%
+risk the cluster. Again, survivability
+ 
+
+00:10:38.160 --> 00:10:40.590 align:start position:0%
+risk the cluster. Again, survivability
+limits<00:10:38.880><c> scalability.</c>
+
+00:10:40.590 --> 00:10:40.600 align:start position:0%
+limits scalability.
+ 
+
+00:10:40.600 --> 00:10:42.790 align:start position:0%
+limits scalability.
+So,<00:10:40.920><c> around</c><00:10:41.320><c> 10</c><00:10:41.560><c> years</c><00:10:41.800><c> ago,</c><00:10:42.160><c> we</c><00:10:42.280><c> saw</c><00:10:42.480><c> a</c><00:10:42.520><c> fifth</c>
+
+00:10:42.790 --> 00:10:42.800 align:start position:0%
+So, around 10 years ago, we saw a fifth
+ 
+
+00:10:42.800 --> 00:10:45.310 align:start position:0%
+So, around 10 years ago, we saw a fifth
+stage<00:10:43.160><c> emerge,</c><00:10:43.880><c> which</c><00:10:44.120><c> was</c><00:10:44.400><c> to</c><00:10:44.560><c> shard</c><00:10:44.960><c> across</c>
+
+00:10:45.310 --> 00:10:45.320 align:start position:0%
+stage emerge, which was to shard across
+ 
+
+00:10:45.320 --> 00:10:48.150 align:start position:0%
+stage emerge, which was to shard across
+multiple<00:10:45.839><c> replicated</c><00:10:46.400><c> state</c><00:10:46.720><c> machines.</c><00:10:47.760><c> Now,</c>
+
+00:10:48.150 --> 00:10:48.160 align:start position:0%
+multiple replicated state machines. Now,
+ 
+
+00:10:48.160 --> 00:10:49.990 align:start position:0%
+multiple replicated state machines. Now,
+each<00:10:48.480><c> machine</c><00:10:48.839><c> isn't</c><00:10:49.160><c> storing</c><00:10:49.680><c> all</c><00:10:49.880><c> the</c>
+
+00:10:49.990 --> 00:10:50.000 align:start position:0%
+each machine isn't storing all the
+ 
+
+00:10:50.000 --> 00:10:52.670 align:start position:0%
+each machine isn't storing all the
+state,<00:10:50.400><c> but</c><00:10:50.560><c> only</c><00:10:50.800><c> a</c><00:10:50.880><c> shard</c><00:10:51.280><c> of</c><00:10:51.360><c> the</c><00:10:51.480><c> state.</c>
+
+00:10:52.670 --> 00:10:52.680 align:start position:0%
+state, but only a shard of the state.
+ 
+
+00:10:52.680 --> 00:10:54.590 align:start position:0%
+state, but only a shard of the state.
+Uh<00:10:52.800><c> this</c><00:10:53.000><c> seemed</c><00:10:53.360><c> like</c><00:10:53.560><c> an</c><00:10:53.680><c> obvious</c><00:10:54.040><c> step</c><00:10:54.440><c> at</c>
+
+00:10:54.590 --> 00:10:54.600 align:start position:0%
+Uh this seemed like an obvious step at
+ 
+
+00:10:54.600 --> 00:10:57.829 align:start position:0%
+Uh this seemed like an obvious step at
+the<00:10:54.720><c> time,</c><00:10:55.280><c> and</c><00:10:55.600><c> for</c><00:10:55.760><c> a</c><00:10:55.839><c> while</c><00:10:56.520><c> it</c><00:10:56.720><c> was.</c>
+
+00:10:57.829 --> 00:10:57.839 align:start position:0%
+the time, and for a while it was.
+ 
+
+00:10:57.839 --> 00:10:59.829 align:start position:0%
+the time, and for a while it was.
+Horizontal<00:10:58.560><c> scaling,</c><00:10:59.320><c> infinite</c>
+
+00:10:59.829 --> 00:10:59.839 align:start position:0%
+Horizontal scaling, infinite
+ 
+
+00:10:59.839 --> 00:11:02.990 align:start position:0%
+Horizontal scaling, infinite
+scalability,<00:11:01.160><c> uh</c><00:11:01.400><c> but</c><00:11:01.560><c> there's</c><00:11:01.760><c> a</c><00:11:01.839><c> problem,</c>
+
+00:11:02.990 --> 00:11:03.000 align:start position:0%
+scalability, uh but there's a problem,
+ 
+
+00:11:03.000 --> 00:11:05.390 align:start position:0%
+scalability, uh but there's a problem,
+and<00:11:03.160><c> it's</c><00:11:03.320><c> fundamental.</c><00:11:04.560><c> Sharding</c><00:11:05.040><c> takes</c>
+
+00:11:05.390 --> 00:11:05.400 align:start position:0%
+and it's fundamental. Sharding takes
+ 
+
+00:11:05.400 --> 00:11:07.510 align:start position:0%
+and it's fundamental. Sharding takes
+what<00:11:05.560><c> we</c><00:11:05.680><c> call</c><00:11:06.000><c> the</c><00:11:06.120><c> four</c><00:11:06.560><c> primary</c><00:11:07.040><c> colors</c><00:11:07.400><c> of</c>
+
+00:11:07.510 --> 00:11:07.520 align:start position:0%
+what we call the four primary colors of
+ 
+
+00:11:07.520 --> 00:11:09.590 align:start position:0%
+what we call the four primary colors of
+computer<00:11:07.960><c> science,</c><00:11:08.800><c> network,</c><00:11:09.160><c> storage,</c>
+
+00:11:09.590 --> 00:11:09.600 align:start position:0%
+computer science, network, storage,
+ 
+
+00:11:09.600 --> 00:11:13.430 align:start position:0%
+computer science, network, storage,
+memory,<00:11:09.880><c> compute,</c><00:11:11.080><c> couples</c><00:11:11.640><c> them,</c>
+
+00:11:13.430 --> 00:11:13.440 align:start position:0%
+memory, compute, couples them,
+ 
+
+00:11:13.440 --> 00:11:15.270 align:start position:0%
+memory, compute, couples them,
+and<00:11:13.680><c> scales</c><00:11:14.120><c> them</c><00:11:14.360><c> all</c><00:11:14.600><c> with</c><00:11:14.800><c> the</c><00:11:14.880><c> same</c>
+
+00:11:15.270 --> 00:11:15.280 align:start position:0%
+and scales them all with the same
+ 
+
+00:11:15.280 --> 00:11:17.790 align:start position:0%
+and scales them all with the same
+horizontal<00:11:15.880><c> brush</c><00:11:16.200><c> stroke.</c><00:11:17.000><c> This</c><00:11:17.280><c> works</c><00:11:17.640><c> for</c>
+
+00:11:17.790 --> 00:11:17.800 align:start position:0%
+horizontal brush stroke. This works for
+ 
+
+00:11:17.800 --> 00:11:20.350 align:start position:0%
+horizontal brush stroke. This works for
+storage,<00:11:18.480><c> but</c><00:11:18.680><c> for</c><00:11:18.839><c> compute,</c><00:11:19.960><c> you</c><00:11:20.080><c> need</c><00:11:20.240><c> to</c>
+
+00:11:20.350 --> 00:11:20.360 align:start position:0%
+storage, but for compute, you need to
+ 
+
+00:11:20.360 --> 00:11:23.070 align:start position:0%
+storage, but for compute, you need to
+transact<00:11:20.960><c> across</c><00:11:21.400><c> keys,</c><00:11:22.080><c> and</c><00:11:22.320><c> so</c><00:11:22.520><c> sharding</c>
+
+00:11:23.070 --> 00:11:23.080 align:start position:0%
+transact across keys, and so sharding
+ 
+
+00:11:23.080 --> 00:11:26.310 align:start position:0%
+transact across keys, and so sharding
+destroys<00:11:23.839><c> what</c><00:11:24.040><c> OLTP</c><00:11:24.560><c> needs</c><00:11:24.880><c> most,</c>
+
+00:11:26.310 --> 00:11:26.320 align:start position:0%
+destroys what OLTP needs most,
+ 
+
+00:11:26.320 --> 00:11:28.030 align:start position:0%
+destroys what OLTP needs most,
+cache<00:11:26.640><c> locality.</c>
+
+00:11:28.030 --> 00:11:28.040 align:start position:0%
+cache locality.
+ 
+
+00:11:28.040 --> 00:11:30.990 align:start position:0%
+cache locality.
+Uh<00:11:28.200><c> imagine</c><00:11:28.720><c> taking</c><00:11:29.080><c> your</c><00:11:29.200><c> CPU's</c><00:11:29.800><c> L1</c><00:11:30.200><c> cache,</c>
+
+00:11:30.990 --> 00:11:31.000 align:start position:0%
+Uh imagine taking your CPU's L1 cache,
+ 
+
+00:11:31.000 --> 00:11:33.190 align:start position:0%
+Uh imagine taking your CPU's L1 cache,
+splitting<00:11:31.520><c> your</c><00:11:31.720><c> L1</c><00:11:32.040><c> cache</c><00:11:32.320><c> across</c><00:11:32.720><c> machines</c>
+
+00:11:33.190 --> 00:11:33.200 align:start position:0%
+splitting your L1 cache across machines
+ 
+
+00:11:33.200 --> 00:11:35.190 align:start position:0%
+splitting your L1 cache across machines
+and<00:11:33.320><c> then</c><00:11:33.440><c> making</c><00:11:33.800><c> your</c><00:11:33.920><c> CPU</c><00:11:34.400><c> wait</c><00:11:34.680><c> across</c><00:11:35.120><c> the</c>
+
+00:11:35.190 --> 00:11:35.200 align:start position:0%
+and then making your CPU wait across the
+ 
+
+00:11:35.200 --> 00:11:38.470 align:start position:0%
+and then making your CPU wait across the
+network.<00:11:36.240><c> Uh</c><00:11:36.400><c> forget</c><00:11:36.920><c> cache</c><00:11:37.320><c> misses.</c>
+
+00:11:38.470 --> 00:11:38.480 align:start position:0%
+network. Uh forget cache misses.
+ 
+
+00:11:38.480 --> 00:11:40.830 align:start position:0%
+network. Uh forget cache misses.
+Uh<00:11:38.600><c> contention</c><00:11:39.400><c> kills</c><00:11:39.920><c> throughput</c><00:11:40.480><c> because</c>
+
+00:11:40.830 --> 00:11:40.840 align:start position:0%
+Uh contention kills throughput because
+ 
+
+00:11:40.840 --> 00:11:42.590 align:start position:0%
+Uh contention kills throughput because
+you<00:11:40.960><c> hit</c><00:11:41.280><c> Amdahl's</c><00:11:41.840><c> law</c><00:11:42.080><c> on</c><00:11:42.280><c> every</c>
+
+00:11:42.590 --> 00:11:42.600 align:start position:0%
+you hit Amdahl's law on every
+ 
+
+00:11:42.600 --> 00:11:43.990 align:start position:0%
+you hit Amdahl's law on every
+transaction.
+
+00:11:43.990 --> 00:11:44.000 align:start position:0%
+transaction.
+ 
+
+00:11:44.000 --> 00:11:46.230 align:start position:0%
+transaction.
+Throughput<00:11:44.400><c> is</c><00:11:44.560><c> always</c><00:11:45.120><c> limited</c><00:11:45.800><c> by</c><00:11:46.040><c> the</c>
+
+00:11:46.230 --> 00:11:46.240 align:start position:0%
+Throughput is always limited by the
+ 
+
+00:11:46.240 --> 00:11:49.590 align:start position:0%
+Throughput is always limited by the
+serialized<00:11:47.080><c> portion</c><00:11:47.680><c> of</c><00:11:47.880><c> the</c><00:11:48.000><c> workload.</c>
+
+00:11:49.590 --> 00:11:49.600 align:start position:0%
+serialized portion of the workload.
+ 
+
+00:11:49.600 --> 00:11:51.390 align:start position:0%
+serialized portion of the workload.
+Even<00:11:49.880><c> if</c><00:11:50.040><c> you</c><00:11:50.160><c> subdivide</c><00:11:50.760><c> your</c><00:11:50.880><c> keys</c><00:11:51.160><c> on</c><00:11:51.280><c> the</c>
+
+00:11:51.390 --> 00:11:51.400 align:start position:0%
+Even if you subdivide your keys on the
+ 
+
+00:11:51.400 --> 00:11:53.990 align:start position:0%
+Even if you subdivide your keys on the
+right<00:11:51.720><c> path</c><00:11:52.560><c> to</c><00:11:52.800><c> split</c><00:11:53.240><c> your</c><00:11:53.400><c> counters</c><00:11:53.880><c> or</c>
+
+00:11:53.990 --> 00:11:54.000 align:start position:0%
+right path to split your counters or
+ 
+
+00:11:54.000 --> 00:11:56.670 align:start position:0%
+right path to split your counters or
+balances,<00:11:55.240><c> it's</c><00:11:55.480><c> a</c><00:11:55.640><c> hack</c>
+
+00:11:56.670 --> 00:11:56.680 align:start position:0%
+balances, it's a hack
+ 
+
+00:11:56.680 --> 00:11:58.350 align:start position:0%
+balances, it's a hack
+because<00:11:57.000><c> you</c><00:11:57.120><c> still</c><00:11:57.480><c> have</c><00:11:57.680><c> to</c><00:11:57.800><c> join</c><00:11:58.040><c> them</c><00:11:58.240><c> on</c>
+
+00:11:58.350 --> 00:11:58.360 align:start position:0%
+because you still have to join them on
+ 
+
+00:11:58.360 --> 00:11:59.950 align:start position:0%
+because you still have to join them on
+the<00:11:58.440><c> read</c><00:11:58.640><c> path</c><00:11:58.960><c> if</c><00:11:59.120><c> you</c><00:11:59.240><c> want</c><00:11:59.360><c> to</c><00:11:59.440><c> have</c><00:11:59.680><c> any</c>
+
+00:11:59.950 --> 00:11:59.960 align:start position:0%
+the read path if you want to have any
+ 
+
+00:11:59.960 --> 00:12:02.950 align:start position:0%
+the read path if you want to have any
+kind<00:12:00.200><c> of</c><00:12:00.280><c> business</c><00:12:00.720><c> logic.</c><00:12:01.680><c> Of</c><00:12:01.840><c> course,</c>
+
+00:12:02.950 --> 00:12:02.960 align:start position:0%
+kind of business logic. Of course,
+ 
+
+00:12:02.960 --> 00:12:05.390 align:start position:0%
+kind of business logic. Of course,
+uh<00:12:03.040><c> there</c><00:12:03.160><c> will</c><00:12:03.400><c> always</c><00:12:03.880><c> be</c><00:12:04.080><c> people</c><00:12:04.840><c> who</c><00:12:05.080><c> think</c>
+
+00:12:05.390 --> 00:12:05.400 align:start position:0%
+uh there will always be people who think
+ 
+
+00:12:05.400 --> 00:12:08.510 align:start position:0%
+uh there will always be people who think
+they<00:12:05.520><c> can</c><00:12:05.800><c> outspend</c><00:12:07.160><c> Gene</c><00:12:07.480><c> Amdahl.</c><00:12:08.160><c> And</c><00:12:08.400><c> in</c>
+
+00:12:08.510 --> 00:12:08.520 align:start position:0%
+they can outspend Gene Amdahl. And in
+ 
+
+00:12:08.520 --> 00:12:11.110 align:start position:0%
+they can outspend Gene Amdahl. And in
+fact,<00:12:09.320><c> we</c><00:12:09.480><c> spun</c><00:12:09.800><c> up</c><00:12:09.960><c> a</c><00:12:10.040><c> horizontally</c><00:12:10.680><c> scaled</c>
+
+00:12:11.110 --> 00:12:11.120 align:start position:0%
+fact, we spun up a horizontally scaled
+ 
+
+00:12:11.120 --> 00:12:12.670 align:start position:0%
+fact, we spun up a horizontally scaled
+cluster<00:12:11.520><c> last</c><00:12:11.880><c> year.</c>
+
+00:12:12.670 --> 00:12:12.680 align:start position:0%
+cluster last year.
+ 
+
+00:12:12.680 --> 00:12:14.830 align:start position:0%
+cluster last year.
+Would<00:12:12.760><c> have</c><00:12:12.920><c> cost</c><00:12:13.440><c> a</c><00:12:13.480><c> million</c><00:12:14.080><c> dollars</c><00:12:14.520><c> a</c><00:12:14.560><c> year</c>
+
+00:12:14.830 --> 00:12:14.840 align:start position:0%
+Would have cost a million dollars a year
+ 
+
+00:12:14.840 --> 00:12:16.270 align:start position:0%
+Would have cost a million dollars a year
+to<00:12:15.080><c> run.</c>
+
+00:12:16.270 --> 00:12:16.280 align:start position:0%
+to run.
+ 
+
+00:12:16.280 --> 00:12:18.990 align:start position:0%
+to run.
+Uh<00:12:16.640><c> as</c><00:12:16.840><c> much</c><00:12:17.080><c> as</c><00:12:17.200><c> a</c><00:12:17.280><c> McLaren.</c>
+
+00:12:18.990 --> 00:12:19.000 align:start position:0%
+Uh as much as a McLaren.
+ 
+
+00:12:19.000 --> 00:12:21.750 align:start position:0%
+Uh as much as a McLaren.
+And<00:12:19.200><c> we</c><00:12:19.320><c> spun</c><00:12:19.640><c> it</c><00:12:19.760><c> up</c><00:12:20.520><c> and</c><00:12:20.720><c> we</c><00:12:20.840><c> found</c><00:12:21.240><c> that</c><00:12:21.480><c> with</c>
+
+00:12:21.750 --> 00:12:21.760 align:start position:0%
+And we spun it up and we found that with
+ 
+
+00:12:21.760 --> 00:12:24.870 align:start position:0%
+And we spun it up and we found that with
+as<00:12:21.960><c> little</c><00:12:22.240><c> as</c><00:12:22.520><c> 10%</c><00:12:23.360><c> contention,</c>
+
+00:12:24.870 --> 00:12:24.880 align:start position:0%
+as little as 10% contention,
+ 
+
+00:12:24.880 --> 00:12:27.870 align:start position:0%
+as little as 10% contention,
+even<00:12:25.480><c> 1%</c><00:12:26.280><c> contention,</c>
+
+00:12:27.870 --> 00:12:27.880 align:start position:0%
+even 1% contention,
+ 
+
+00:12:27.880 --> 00:12:32.590 align:start position:0%
+even 1% contention,
+even<00:12:28.560><c> 0%</c><00:12:30.040><c> contention,</c><00:12:31.320><c> you're</c><00:12:31.560><c> still</c><00:12:32.120><c> better</c>
+
+00:12:32.590 --> 00:12:32.600 align:start position:0%
+even 0% contention, you're still better
+ 
+
+00:12:32.600 --> 00:12:35.310 align:start position:0%
+even 0% contention, you're still better
+off<00:12:32.880><c> running</c><00:12:33.280><c> single</c><00:12:33.720><c> node</c><00:12:34.240><c> open</c><00:12:34.560><c> source</c>
+
+00:12:35.310 --> 00:12:35.320 align:start position:0%
+off running single node open source
+ 
+
+00:12:35.320 --> 00:12:38.030 align:start position:0%
+off running single node open source
+Postgres<00:12:36.560><c> as</c><00:12:36.800><c> your</c><00:12:37.000><c> general</c><00:12:37.440><c> purpose</c>
+
+00:12:38.030 --> 00:12:38.040 align:start position:0%
+Postgres as your general purpose
+ 
+
+00:12:38.040 --> 00:12:41.390 align:start position:0%
+Postgres as your general purpose
+database,<00:12:39.120><c> which</c><00:12:39.440><c> also</c><00:12:39.720><c> costs</c><00:12:40.240><c> less.</c>
+
+00:12:41.390 --> 00:12:41.400 align:start position:0%
+database, which also costs less.
+ 
+
+00:12:41.400 --> 00:12:44.550 align:start position:0%
+database, which also costs less.
+Um<00:12:41.680><c> so,</c><00:12:41.920><c> how</c><00:12:42.080><c> do</c><00:12:42.240><c> we</c><00:12:42.440><c> scale</c><00:12:43.040><c> compute</c><00:12:44.200><c> and</c>
+
+00:12:44.550 --> 00:12:44.560 align:start position:0%
+Um so, how do we scale compute and
+ 
+
+00:12:44.560 --> 00:12:47.510 align:start position:0%
+Um so, how do we scale compute and
+storage<00:12:45.440><c> for</c><00:12:45.839><c> OLTP?</c>
+
+00:12:47.510 --> 00:12:47.520 align:start position:0%
+storage for OLTP?
+ 
+
+00:12:47.520 --> 00:12:50.110 align:start position:0%
+storage for OLTP?
+Uh<00:12:47.720><c> clearly</c><00:12:48.200><c> we</c><00:12:48.360><c> can't</c><00:12:48.920><c> couple</c><00:12:49.280><c> them.</c>
+
+00:12:50.110 --> 00:12:50.120 align:start position:0%
+Uh clearly we can't couple them.
+ 
+
+00:12:50.120 --> 00:12:52.430 align:start position:0%
+Uh clearly we can't couple them.
+Uh<00:12:50.200><c> the</c><00:12:50.320><c> industry's</c><00:12:50.880><c> latest</c><00:12:51.360><c> answer,</c>
+
+00:12:52.430 --> 00:12:52.440 align:start position:0%
+Uh the industry's latest answer,
+ 
+
+00:12:52.440 --> 00:12:54.910 align:start position:0%
+Uh the industry's latest answer,
+decouple<00:12:53.280><c> everything.</c><00:12:54.000><c> Separate</c><00:12:54.520><c> storage</c>
+
+00:12:54.910 --> 00:12:54.920 align:start position:0%
+decouple everything. Separate storage
+ 
+
+00:12:54.920 --> 00:12:57.150 align:start position:0%
+decouple everything. Separate storage
+from<00:12:55.120><c> compute,</c><00:12:56.040><c> push</c><00:12:56.320><c> everything</c><00:12:56.720><c> to</c><00:12:56.839><c> object</c>
+
+00:12:57.150 --> 00:12:57.160 align:start position:0%
+from compute, push everything to object
+ 
+
+00:12:57.160 --> 00:12:59.829 align:start position:0%
+from compute, push everything to object
+storage,<00:12:58.000><c> run</c><00:12:58.280><c> queries</c><00:12:58.880><c> directly</c><00:12:59.440><c> against</c>
+
+00:12:59.829 --> 00:12:59.839 align:start position:0%
+storage, run queries directly against
+ 
+
+00:12:59.839 --> 00:13:02.550 align:start position:0%
+storage, run queries directly against
+object<00:13:00.160><c> storage.</c><00:13:01.280><c> This</c><00:13:01.600><c> solves</c><00:13:02.040><c> storage</c>
+
+00:13:02.550 --> 00:13:02.560 align:start position:0%
+object storage. This solves storage
+ 
+
+00:13:02.560 --> 00:13:05.310 align:start position:0%
+object storage. This solves storage
+scaling.<00:13:03.600><c> Object</c><00:13:03.960><c> storage</c><00:13:04.320><c> has</c><00:13:04.560><c> no</c><00:13:04.720><c> practical</c>
+
+00:13:05.310 --> 00:13:05.320 align:start position:0%
+scaling. Object storage has no practical
+ 
+
+00:13:05.320 --> 00:13:06.470 align:start position:0%
+scaling. Object storage has no practical
+limits,
+
+00:13:06.470 --> 00:13:06.480 align:start position:0%
+limits,
+ 
+
+00:13:06.480 --> 00:13:08.710 align:start position:0%
+limits,
+but<00:13:06.640><c> there's</c><00:13:06.920><c> high</c><00:13:07.240><c> latency.</c><00:13:08.120><c> You</c><00:13:08.280><c> can't</c>
+
+00:13:08.710 --> 00:13:08.720 align:start position:0%
+but there's high latency. You can't
+ 
+
+00:13:08.720 --> 00:13:10.870 align:start position:0%
+but there's high latency. You can't
+process<00:13:09.320><c> transactions</c><00:13:10.160><c> from</c><00:13:10.480><c> object</c>
+
+00:13:10.870 --> 00:13:10.880 align:start position:0%
+process transactions from object
+ 
+
+00:13:10.880 --> 00:13:13.470 align:start position:0%
+process transactions from object
+storage.<00:13:11.960><c> It's</c><00:13:12.240><c> one</c><00:13:12.480><c> thing</c><00:13:12.720><c> to</c><00:13:12.880><c> partition</c>
+
+00:13:13.470 --> 00:13:13.480 align:start position:0%
+storage. It's one thing to partition
+ 
+
+00:13:13.480 --> 00:13:16.390 align:start position:0%
+storage. It's one thing to partition
+your<00:13:13.680><c> L1</c><00:13:14.040><c> cache</c><00:13:14.360><c> across</c><00:13:14.680><c> the</c><00:13:14.800><c> network</c><00:13:15.960><c> and</c>
+
+00:13:16.390 --> 00:13:16.400 align:start position:0%
+your L1 cache across the network and
+ 
+
+00:13:16.400 --> 00:13:18.790 align:start position:0%
+your L1 cache across the network and
+another<00:13:16.960><c> to</c><00:13:17.120><c> replace</c><00:13:17.640><c> your</c><00:13:17.800><c> memory</c><00:13:18.200><c> hierarchy</c>
+
+00:13:18.790 --> 00:13:18.800 align:start position:0%
+another to replace your memory hierarchy
+ 
+
+00:13:18.800 --> 00:13:21.190 align:start position:0%
+another to replace your memory hierarchy
+entirely<00:13:19.600><c> with</c><00:13:19.839><c> cold</c><00:13:20.080><c> storage.</c>
+
+00:13:21.190 --> 00:13:21.200 align:start position:0%
+entirely with cold storage.
+ 
+
+00:13:21.200 --> 00:13:24.630 align:start position:0%
+entirely with cold storage.
+Uh<00:13:21.280><c> we</c><00:13:21.440><c> need</c><00:13:21.880><c> horizontal</c><00:13:22.520><c> storage,</c><00:13:23.400><c> sure,</c>
+
+00:13:24.630 --> 00:13:24.640 align:start position:0%
+Uh we need horizontal storage, sure,
+ 
+
+00:13:24.640 --> 00:13:28.230 align:start position:0%
+Uh we need horizontal storage, sure,
+but<00:13:25.000><c> also</c><00:13:25.320><c> vertical</c><00:13:25.960><c> compute</c><00:13:26.839><c> so</c><00:13:27.120><c> we</c><00:13:27.240><c> can</c><00:13:27.480><c> keep</c>
+
+00:13:28.230 --> 00:13:28.240 align:start position:0%
+but also vertical compute so we can keep
+ 
+
+00:13:28.240 --> 00:13:31.550 align:start position:0%
+but also vertical compute so we can keep
+hot<00:13:28.560><c> data</c><00:13:28.960><c> close</c><00:13:29.360><c> to</c><00:13:29.520><c> the</c><00:13:29.640><c> CPU,</c><00:13:30.920><c> cold</c><00:13:31.160><c> data</c>
+
+00:13:31.550 --> 00:13:31.560 align:start position:0%
+hot data close to the CPU, cold data
+ 
+
+00:13:31.560 --> 00:13:34.590 align:start position:0%
+hot data close to the CPU, cold data
+cheap,<00:13:32.120><c> and</c><00:13:32.440><c> recovery</c><00:13:32.920><c> time</c><00:13:33.240><c> bounded.</c>
+
+00:13:34.590 --> 00:13:34.600 align:start position:0%
+cheap, and recovery time bounded.
+ 
+
+00:13:34.600 --> 00:13:37.790 align:start position:0%
+cheap, and recovery time bounded.
+In<00:13:34.680><c> other</c><00:13:34.880><c> words,</c><00:13:35.560><c> an</c><00:13:35.680><c> LSM</c><00:13:36.120><c> tree,</c><00:13:36.760><c> or</c><00:13:37.480><c> an</c>
+
+00:13:37.790 --> 00:13:37.800 align:start position:0%
+In other words, an LSM tree, or an
+ 
+
+00:13:37.800 --> 00:13:40.990 align:start position:0%
+In other words, an LSM tree, or an
+iceberg<00:13:39.000><c> that</c><00:13:39.240><c> doesn't</c><00:13:39.640><c> submerge</c><00:13:40.680><c> all</c><00:13:40.880><c> the</c>
+
+00:13:40.990 --> 00:13:41.000 align:start position:0%
+iceberg that doesn't submerge all the
+ 
+
+00:13:41.000 --> 00:13:41.870 align:start position:0%
+iceberg that doesn't submerge all the
+way.
+
+00:13:41.870 --> 00:13:41.880 align:start position:0%
+way.
+ 
+
+00:13:41.880 --> 00:13:44.150 align:start position:0%
+way.
+This<00:13:42.080><c> is</c><00:13:42.280><c> diagonal</c><00:13:42.840><c> scaling</c><00:13:43.440><c> to</c><00:13:43.600><c> put</c><00:13:43.840><c> a</c><00:13:43.880><c> new</c>
+
+00:13:44.150 --> 00:13:44.160 align:start position:0%
+This is diagonal scaling to put a new
+ 
+
+00:13:44.160 --> 00:13:46.710 align:start position:0%
+This is diagonal scaling to put a new
+name<00:13:44.440><c> on</c><00:13:44.560><c> a</c><00:13:44.600><c> classic</c><00:13:45.080><c> architecture,</c><00:13:46.320><c> which</c><00:13:46.560><c> is</c>
+
+00:13:46.710 --> 00:13:46.720 align:start position:0%
+name on a classic architecture, which is
+ 
+
+00:13:46.720 --> 00:13:49.470 align:start position:0%
+name on a classic architecture, which is
+really<00:13:47.040><c> just</c><00:13:47.520><c> the</c><00:13:47.640><c> memory</c><00:13:48.120><c> hierarchy.</c>
+
+00:13:49.470 --> 00:13:49.480 align:start position:0%
+really just the memory hierarchy.
+ 
+
+00:13:49.480 --> 00:13:51.190 align:start position:0%
+really just the memory hierarchy.
+Keep<00:13:49.720><c> your</c><00:13:49.960><c> hot</c><00:13:50.280><c> working</c><00:13:50.680><c> set</c><00:13:51.000><c> in</c><00:13:51.160><c> a</c>
+
+00:13:51.190 --> 00:13:51.200 align:start position:0%
+Keep your hot working set in a
+ 
+
+00:13:51.200 --> 00:13:54.350 align:start position:0%
+Keep your hot working set in a
+non-sharded<00:13:52.680><c> replicated</c><00:13:53.400><c> state</c><00:13:53.720><c> machine</c><00:13:54.160><c> for</c>
+
+00:13:54.350 --> 00:13:54.360 align:start position:0%
+non-sharded replicated state machine for
+ 
+
+00:13:54.360 --> 00:13:57.830 align:start position:0%
+non-sharded replicated state machine for
+microsecond<00:13:55.160><c> performance,</c><00:13:56.560><c> and</c><00:13:56.800><c> then</c><00:13:57.040><c> tier</c>
+
+00:13:57.830 --> 00:13:57.840 align:start position:0%
+microsecond performance, and then tier
+ 
+
+00:13:57.840 --> 00:13:59.750 align:start position:0%
+microsecond performance, and then tier
+not<00:13:58.080><c> 100%,</c>
+
+00:13:59.750 --> 00:13:59.760 align:start position:0%
+not 100%,
+ 
+
+00:13:59.760 --> 00:14:03.470 align:start position:0%
+not 100%,
+but<00:14:00.080><c> 90%</c><00:14:01.320><c> of</c><00:14:01.520><c> your</c><00:14:01.760><c> historical</c><00:14:02.560><c> transactions,</c>
+
+00:14:03.470 --> 00:14:03.480 align:start position:0%
+but 90% of your historical transactions,
+ 
+
+00:14:03.480 --> 00:14:05.670 align:start position:0%
+but 90% of your historical transactions,
+the<00:14:03.640><c> lower</c><00:14:03.960><c> levels</c><00:14:04.360><c> of</c><00:14:04.480><c> your</c><00:14:04.640><c> LSM</c><00:14:05.120><c> tree,</c><00:14:05.480><c> to</c>
+
+00:14:05.670 --> 00:14:05.680 align:start position:0%
+the lower levels of your LSM tree, to
+ 
+
+00:14:05.680 --> 00:14:08.990 align:start position:0%
+the lower levels of your LSM tree, to
+object<00:14:06.000><c> storage.</c><00:14:07.000><c> The</c><00:14:07.120><c> insight</c><00:14:08.240><c> in</c><00:14:08.440><c> terms</c><00:14:08.840><c> of</c>
+
+00:14:08.990 --> 00:14:09.000 align:start position:0%
+object storage. The insight in terms of
+ 
+
+00:14:09.000 --> 00:14:11.590 align:start position:0%
+object storage. The insight in terms of
+survivability<00:14:09.960><c> is</c><00:14:10.120><c> that</c><00:14:10.360><c> you</c><00:14:10.480><c> can</c><00:14:10.720><c> cap</c><00:14:11.320><c> your</c>
+
+00:14:11.590 --> 00:14:11.600 align:start position:0%
+survivability is that you can cap your
+ 
+
+00:14:11.600 --> 00:14:14.430 align:start position:0%
+survivability is that you can cap your
+replicated<00:14:12.280><c> state</c><00:14:12.600><c> machine</c><00:14:13.560><c> to</c><00:14:13.800><c> bound</c>
+
+00:14:14.430 --> 00:14:14.440 align:start position:0%
+replicated state machine to bound
+ 
+
+00:14:14.440 --> 00:14:16.070 align:start position:0%
+replicated state machine to bound
+recovery<00:14:14.960><c> time</c>
+
+00:14:16.070 --> 00:14:16.080 align:start position:0%
+recovery time
+ 
+
+00:14:16.080 --> 00:14:18.510 align:start position:0%
+recovery time
+while<00:14:16.400><c> scaling</c><00:14:16.840><c> out</c><00:14:17.040><c> indefinitely.</c>
+
+00:14:18.510 --> 00:14:18.520 align:start position:0%
+while scaling out indefinitely.
+ 
+
+00:14:18.520 --> 00:14:20.790 align:start position:0%
+while scaling out indefinitely.
+Diagonal<00:14:18.960><c> scaling</c><00:14:19.440><c> is</c><00:14:19.640><c> simple,</c>
+
+00:14:20.790 --> 00:14:20.800 align:start position:0%
+Diagonal scaling is simple,
+ 
+
+00:14:20.800 --> 00:14:25.670 align:start position:0%
+Diagonal scaling is simple,
+object<00:14:21.200><c> storage</c><00:14:21.920><c> plus</c><00:14:22.360><c> LSM</c><00:14:23.360><c> plus</c><00:14:23.840><c> RSM.</c>
+
+00:14:25.670 --> 00:14:25.680 align:start position:0%
+object storage plus LSM plus RSM.
+ 
+
+00:14:25.680 --> 00:14:27.790 align:start position:0%
+object storage plus LSM plus RSM.
+Uh<00:14:25.880><c> you</c><00:14:26.040><c> know,</c><00:14:26.680><c> uh</c><00:14:26.800><c> someone</c><00:14:27.320><c> will</c><00:14:27.480><c> always</c>
+
+00:14:27.790 --> 00:14:27.800 align:start position:0%
+Uh you know, uh someone will always
+ 
+
+00:14:27.800 --> 00:14:31.110 align:start position:0%
+Uh you know, uh someone will always
+object<00:14:29.000><c> uh</c><00:14:29.200><c> that</c><00:14:29.400><c> you</c><00:14:29.480><c> can</c><00:14:29.800><c> archive</c><00:14:30.400><c> data</c><00:14:30.839><c> to</c><00:14:31.040><c> a</c>
+
+00:14:31.110 --> 00:14:31.120 align:start position:0%
+object uh that you can archive data to a
+ 
+
+00:14:31.120 --> 00:14:32.790 align:start position:0%
+object uh that you can archive data to a
+separate<00:14:31.520><c> system,</c>
+
+00:14:32.790 --> 00:14:32.800 align:start position:0%
+separate system,
+ 
+
+00:14:32.800 --> 00:14:35.310 align:start position:0%
+separate system,
+but<00:14:33.000><c> if</c><00:14:33.160><c> we</c><00:14:33.320><c> think</c><00:14:33.640><c> for</c><00:14:33.839><c> a</c><00:14:33.880><c> second,</c><00:14:34.839><c> what's</c><00:14:35.200><c> the</c>
+
+00:14:35.310 --> 00:14:35.320 align:start position:0%
+but if we think for a second, what's the
+ 
+
+00:14:35.320 --> 00:14:36.630 align:start position:0%
+but if we think for a second, what's the
+difference?
+
+00:14:36.630 --> 00:14:36.640 align:start position:0%
+difference?
+ 
+
+00:14:36.640 --> 00:14:39.910 align:start position:0%
+difference?
+Uh<00:14:37.080><c> object</c><00:14:37.520><c> storage</c><00:14:38.000><c> plus</c><00:14:38.320><c> LSM</c><00:14:38.880><c> plus</c><00:14:39.200><c> RSM,</c><00:14:39.800><c> and</c>
+
+00:14:39.910 --> 00:14:39.920 align:start position:0%
+Uh object storage plus LSM plus RSM, and
+ 
+
+00:14:39.920 --> 00:14:42.150 align:start position:0%
+Uh object storage plus LSM plus RSM, and
+now<00:14:40.040><c> you</c><00:14:40.200><c> have</c><00:14:40.480><c> everything</c><00:14:41.000><c> in</c><00:14:41.120><c> a</c><00:14:41.160><c> single,</c>
+
+00:14:42.150 --> 00:14:42.160 align:start position:0%
+now you have everything in a single,
+ 
+
+00:14:42.160 --> 00:14:45.190 align:start position:0%
+now you have everything in a single,
+logically<00:14:43.120><c> integrated</c><00:14:43.839><c> system.</c>
+
+00:14:45.190 --> 00:14:45.200 align:start position:0%
+logically integrated system.
+ 
+
+00:14:45.200 --> 00:14:47.350 align:start position:0%
+logically integrated system.
+Much<00:14:45.560><c> better</c><00:14:45.839><c> operating</c><00:14:46.320><c> experience,</c><00:14:47.040><c> much</c>
+
+00:14:47.350 --> 00:14:47.360 align:start position:0%
+Much better operating experience, much
+ 
+
+00:14:47.360 --> 00:14:49.750 align:start position:0%
+Much better operating experience, much
+simpler<00:14:47.760><c> architecture.</c><00:14:48.520><c> And</c><00:14:48.720><c> again,</c>
+
+00:14:49.750 --> 00:14:49.760 align:start position:0%
+simpler architecture. And again,
+ 
+
+00:14:49.760 --> 00:14:51.470 align:start position:0%
+simpler architecture. And again,
+it's<00:14:49.960><c> nothing</c><00:14:50.440><c> new,</c>
+
+00:14:51.470 --> 00:14:51.480 align:start position:0%
+it's nothing new,
+ 
+
+00:14:51.480 --> 00:14:54.070 align:start position:0%
+it's nothing new,
+um<00:14:51.760><c> but</c><00:14:52.040><c> most</c><00:14:52.440><c> implementations</c>
+
+00:14:54.070 --> 00:14:54.080 align:start position:0%
+um but most implementations
+ 
+
+00:14:54.080 --> 00:14:56.990 align:start position:0%
+um but most implementations
+tier<00:14:54.400><c> for</c><00:14:54.640><c> cost,</c><00:14:55.400><c> not</c><00:14:55.720><c> recovery</c><00:14:56.839><c> or</c>
+
+00:14:56.990 --> 00:14:57.000 align:start position:0%
+tier for cost, not recovery or
+ 
+
+00:14:57.000 --> 00:14:59.750 align:start position:0%
+tier for cost, not recovery or
+performance.<00:14:57.920><c> We've</c><00:14:58.320><c> decoupled</c><00:14:59.120><c> recovery</c>
+
+00:14:59.750 --> 00:14:59.760 align:start position:0%
+performance. We've decoupled recovery
+ 
+
+00:14:59.760 --> 00:15:02.030 align:start position:0%
+performance. We've decoupled recovery
+time<00:15:00.200><c> from</c><00:15:00.440><c> storage</c><00:15:00.920><c> size</c>
+
+00:15:02.030 --> 00:15:02.040 align:start position:0%
+time from storage size
+ 
+
+00:15:02.040 --> 00:15:04.750 align:start position:0%
+time from storage size
+uh<00:15:02.160><c> without</c><00:15:02.760><c> sacrificing</c><00:15:03.600><c> performance</c><00:15:04.520><c> or</c>
+
+00:15:04.750 --> 00:15:04.760 align:start position:0%
+uh without sacrificing performance or
+ 
+
+00:15:04.760 --> 00:15:07.550 align:start position:0%
+uh without sacrificing performance or
+strict<00:15:05.520><c> serializability.</c>
+
+00:15:07.550 --> 00:15:07.560 align:start position:0%
+strict serializability.
+ 
+
+00:15:07.560 --> 00:15:09.829 align:start position:0%
+strict serializability.
+The<00:15:07.680><c> replicated</c><00:15:08.280><c> state</c><00:15:08.560><c> machine</c><00:15:08.920><c> stays</c><00:15:09.320><c> small</c>
+
+00:15:09.829 --> 00:15:09.839 align:start position:0%
+The replicated state machine stays small
+ 
+
+00:15:09.839 --> 00:15:12.630 align:start position:0%
+The replicated state machine stays small
+and<00:15:10.040><c> fast,</c><00:15:11.120><c> the</c><00:15:11.280><c> object</c><00:15:11.640><c> storage</c><00:15:12.080><c> scales</c>
+
+00:15:12.630 --> 00:15:12.640 align:start position:0%
+and fast, the object storage scales
+ 
+
+00:15:12.640 --> 00:15:14.230 align:start position:0%
+and fast, the object storage scales
+infinitely.
+
+00:15:14.230 --> 00:15:14.240 align:start position:0%
+infinitely.
+ 
+
+00:15:14.240 --> 00:15:16.710 align:start position:0%
+infinitely.
+This<00:15:14.520><c> is</c><00:15:14.720><c> how</c><00:15:14.920><c> you</c><00:15:15.160><c> survive</c><00:15:16.040><c> a</c><00:15:16.120><c> trillion</c>
+
+00:15:16.710 --> 00:15:16.720 align:start position:0%
+This is how you survive a trillion
+ 
+
+00:15:16.720 --> 00:15:18.430 align:start position:0%
+This is how you survive a trillion
+transactions.
+
+00:15:18.430 --> 00:15:18.440 align:start position:0%
+transactions.
+ 
+
+00:15:18.440 --> 00:15:20.110 align:start position:0%
+transactions.
+In<00:15:18.640><c> theory.</c>
+
+00:15:20.110 --> 00:15:20.120 align:start position:0%
+In theory.
+ 
+
+00:15:20.120 --> 00:15:23.750 align:start position:0%
+In theory.
+Now,<00:15:20.720><c> let's</c><00:15:21.080><c> see</c><00:15:21.200><c> it</c><00:15:22.040><c> in</c><00:15:22.240><c> practice.</c>
+
+00:15:23.750 --> 00:15:23.760 align:start position:0%
+Now, let's see it in practice.
+ 
+
+00:15:23.760 --> 00:15:26.550 align:start position:0%
+Now, let's see it in practice.
+And<00:15:24.080><c> to</c><00:15:24.200><c> do</c><00:15:24.440><c> this,</c><00:15:24.840><c> we</c><00:15:25.000><c> took</c><00:15:25.320><c> TigerBeetle,</c><00:15:26.480><c> a</c>
+
+00:15:26.550 --> 00:15:26.560 align:start position:0%
+And to do this, we took TigerBeetle, a
+ 
+
+00:15:26.560 --> 00:15:29.430 align:start position:0%
+And to do this, we took TigerBeetle, a
+financial<00:15:27.320><c> transactions</c><00:15:28.120><c> database</c>
+
+00:15:29.430 --> 00:15:29.440 align:start position:0%
+financial transactions database
+ 
+
+00:15:29.440 --> 00:15:32.150 align:start position:0%
+financial transactions database
+designed<00:15:30.080><c> for</c><00:15:30.320><c> OLTP</c>
+
+00:15:32.150 --> 00:15:32.160 align:start position:0%
+designed for OLTP
+ 
+
+00:15:32.160 --> 00:15:35.790 align:start position:0%
+designed for OLTP
+and<00:15:32.880><c> only</c><00:15:33.760><c> OLTP.</c>
+
+00:15:35.790 --> 00:15:35.800 align:start position:0%
+and only OLTP.
+ 
+
+00:15:35.800 --> 00:15:38.190 align:start position:0%
+and only OLTP.
+Uh<00:15:36.080><c> where</c><00:15:36.360><c> analytics</c><00:15:37.240><c> or</c><00:15:37.440><c> general-purpose</c>
+
+00:15:38.190 --> 00:15:38.200 align:start position:0%
+Uh where analytics or general-purpose
+ 
+
+00:15:38.200 --> 00:15:41.910 align:start position:0%
+Uh where analytics or general-purpose
+databases<00:15:38.920><c> designed</c><00:15:39.440><c> for</c><00:15:39.600><c> strings</c>
+
+00:15:41.910 --> 00:15:41.920 align:start position:0%
+databases designed for strings
+ 
+
+00:15:41.920 --> 00:15:44.470 align:start position:0%
+databases designed for strings
+TigerBeetle<00:15:42.560><c> designs</c><00:15:43.120><c> for</c><00:15:43.360><c> integers</c><00:15:44.200><c> and</c>
+
+00:15:44.470 --> 00:15:44.480 align:start position:0%
+TigerBeetle designs for integers and
+ 
+
+00:15:44.480 --> 00:15:46.030 align:start position:0%
+TigerBeetle designs for integers and
+counting.
+
+00:15:46.030 --> 00:15:46.040 align:start position:0%
+counting.
+ 
+
+00:15:46.040 --> 00:15:48.350 align:start position:0%
+counting.
+It's<00:15:46.400><c> obvious</c><00:15:46.760><c> in</c><00:15:46.880><c> hindsight,</c>
+
+00:15:48.350 --> 00:15:48.360 align:start position:0%
+It's obvious in hindsight,
+ 
+
+00:15:48.360 --> 00:15:51.310 align:start position:0%
+It's obvious in hindsight,
+but<00:15:48.560><c> the</c><00:15:48.760><c> reason</c><00:15:49.200><c> that</c><00:15:49.440><c> TigerBeetle</c><00:15:50.200><c> is</c><00:15:50.560><c> not</c><00:15:51.240><c> a</c>
+
+00:15:51.310 --> 00:15:51.320 align:start position:0%
+but the reason that TigerBeetle is not a
+ 
+
+00:15:51.320 --> 00:15:52.950 align:start position:0%
+but the reason that TigerBeetle is not a
+string<00:15:51.680><c> database</c>
+
+00:15:52.950 --> 00:15:52.960 align:start position:0%
+string database
+ 
+
+00:15:52.960 --> 00:15:55.950 align:start position:0%
+string database
+is<00:15:53.320><c> because</c><00:15:53.840><c> transaction</c><00:15:54.720><c> processing</c><00:15:55.600><c> in</c><00:15:55.800><c> the</c>
+
+00:15:55.950 --> 00:15:55.960 align:start position:0%
+is because transaction processing in the
+ 
+
+00:15:55.960 --> 00:16:00.030 align:start position:0%
+is because transaction processing in the
+Jim<00:15:56.360><c> Gray</c><00:15:56.640><c> tradition</c><00:15:57.840><c> is</c><00:15:58.320><c> debit-credit.</c>
+
+00:16:00.030 --> 00:16:00.040 align:start position:0%
+Jim Gray tradition is debit-credit.
+ 
+
+00:16:00.040 --> 00:16:02.390 align:start position:0%
+Jim Gray tradition is debit-credit.
+At<00:16:00.200><c> the</c><00:16:00.320><c> end</c><00:16:00.560><c> of</c><00:16:00.680><c> the</c><00:16:00.800><c> day,</c><00:16:01.800><c> it's</c><00:16:02.080><c> just</c>
+
+00:16:02.390 --> 00:16:02.400 align:start position:0%
+At the end of the day, it's just
+ 
+
+00:16:02.400 --> 00:16:03.950 align:start position:0%
+At the end of the day, it's just
+numbers.
+
+00:16:03.950 --> 00:16:03.960 align:start position:0%
+numbers.
+ 
+
+00:16:03.960 --> 00:16:05.750 align:start position:0%
+numbers.
+TigerBeetle<00:16:04.520><c> has</c><00:16:04.720><c> a</c><00:16:04.800><c> replicated</c><00:16:05.480><c> state</c>
+
+00:16:05.750 --> 00:16:05.760 align:start position:0%
+TigerBeetle has a replicated state
+ 
+
+00:16:05.760 --> 00:16:08.710 align:start position:0%
+TigerBeetle has a replicated state
+machine<00:16:06.160><c> architecture</c><00:16:07.440><c> and</c><00:16:07.720><c> we</c><00:16:07.840><c> extended</c>
+
+00:16:08.710 --> 00:16:08.720 align:start position:0%
+machine architecture and we extended
+ 
+
+00:16:08.720 --> 00:16:12.070 align:start position:0%
+machine architecture and we extended
+TigerBeetle's<00:16:09.640><c> LSM</c><00:16:10.920><c> uh</c><00:16:11.120><c> with</c><00:16:11.400><c> diagonal</c>
+
+00:16:12.070 --> 00:16:12.080 align:start position:0%
+TigerBeetle's LSM uh with diagonal
+ 
+
+00:16:12.080 --> 00:16:15.430 align:start position:0%
+TigerBeetle's LSM uh with diagonal
+scaling<00:16:12.600><c> to</c><00:16:13.000><c> object</c><00:16:13.360><c> storage</c><00:16:14.400><c> for</c><00:16:14.760><c> petabyte</c>
+
+00:16:15.430 --> 00:16:15.440 align:start position:0%
+scaling to object storage for petabyte
+ 
+
+00:16:15.440 --> 00:16:16.630 align:start position:0%
+scaling to object storage for petabyte
+scale,
+
+00:16:16.630 --> 00:16:16.640 align:start position:0%
+scale,
+ 
+
+00:16:16.640 --> 00:16:19.630 align:start position:0%
+scale,
+fast<00:16:17.160><c> recovery,</c><00:16:18.280><c> and</c><00:16:18.640><c> strict</c>
+
+00:16:19.630 --> 00:16:19.640 align:start position:0%
+fast recovery, and strict
+ 
+
+00:16:19.640 --> 00:16:28.390 align:start position:0%
+fast recovery, and strict
+serializability.
+
+00:16:28.390 --> 00:16:28.400 align:start position:0%
+ 
+ 
+
+00:16:28.400 --> 00:16:30.310 align:start position:0%
+ 
+Then<00:16:28.640><c> we</c><00:16:28.760><c> spun</c><00:16:29.040><c> up</c><00:16:29.200><c> a</c><00:16:29.280><c> TigerBeetle</c><00:16:29.800><c> cluster</c>
+
+00:16:30.310 --> 00:16:30.320 align:start position:0%
+Then we spun up a TigerBeetle cluster
+ 
+
+00:16:30.320 --> 00:16:34.390 align:start position:0%
+Then we spun up a TigerBeetle cluster
+with<00:16:30.600><c> local</c><00:16:30.920><c> NVMe,</c><00:16:32.120><c> primary</c><00:16:32.600><c> indexes</c><00:16:33.360><c> only,</c>
+
+00:16:34.390 --> 00:16:34.400 align:start position:0%
+with local NVMe, primary indexes only,
+ 
+
+00:16:34.400 --> 00:16:37.270 align:start position:0%
+with local NVMe, primary indexes only,
+plus<00:16:34.880><c> object</c><00:16:35.280><c> storage</c><00:16:35.960><c> and</c><00:16:36.240><c> half</c><00:16:36.640><c> a</c><00:16:36.720><c> petabyte</c>
+
+00:16:37.270 --> 00:16:37.280 align:start position:0%
+plus object storage and half a petabyte
+ 
+
+00:16:37.280 --> 00:16:38.510 align:start position:0%
+plus object storage and half a petabyte
+of<00:16:37.400><c> flash.</c>
+
+00:16:38.510 --> 00:16:38.520 align:start position:0%
+of flash.
+ 
+
+00:16:38.520 --> 00:16:40.710 align:start position:0%
+of flash.
+Uh<00:16:38.839><c> and</c><00:16:39.040><c> we</c><00:16:39.160><c> started</c><00:16:39.640><c> sending</c><00:16:40.000><c> transactions</c>
+
+00:16:40.710 --> 00:16:40.720 align:start position:0%
+Uh and we started sending transactions
+ 
+
+00:16:40.720 --> 00:16:43.070 align:start position:0%
+Uh and we started sending transactions
+in<00:16:41.040><c> and</c><00:16:41.280><c> traced</c><00:16:41.800><c> how</c><00:16:41.920><c> many</c><00:16:42.200><c> transactions</c><00:16:42.920><c> per</c>
+
+00:16:43.070 --> 00:16:43.080 align:start position:0%
+in and traced how many transactions per
+ 
+
+00:16:43.080 --> 00:16:45.590 align:start position:0%
+in and traced how many transactions per
+second<00:16:43.520><c> the</c><00:16:43.600><c> system</c><00:16:44.000><c> could</c><00:16:44.200><c> process</c><00:16:45.320><c> and</c><00:16:45.480><c> the</c>
+
+00:16:45.590 --> 00:16:45.600 align:start position:0%
+second the system could process and the
+ 
+
+00:16:45.600 --> 00:16:49.070 align:start position:0%
+second the system could process and the
+P99<00:16:46.360><c> latency</c><00:16:46.960><c> writing</c><00:16:47.320><c> the</c><00:16:47.480><c> trace</c><00:16:47.839><c> to</c><00:16:48.000><c> a</c><00:16:48.080><c> file.</c>
+
+00:16:49.070 --> 00:16:49.080 align:start position:0%
+P99 latency writing the trace to a file.
+ 
+
+00:16:49.080 --> 00:16:51.350 align:start position:0%
+P99 latency writing the trace to a file.
+So,<00:16:49.400><c> here</c><00:16:49.760><c> you</c><00:16:49.920><c> can</c><00:16:50.120><c> see</c><00:16:50.320><c> the</c><00:16:50.480><c> real</c><00:16:50.760><c> trace</c><00:16:51.080><c> file</c>
+
+00:16:51.350 --> 00:16:51.360 align:start position:0%
+So, here you can see the real trace file
+ 
+
+00:16:51.360 --> 00:16:53.550 align:start position:0%
+So, here you can see the real trace file
+running.<00:16:52.120><c> This</c><00:16:52.320><c> is</c><00:16:52.480><c> running</c><00:16:52.720><c> on</c><00:16:52.839><c> a</c><00:16:52.920><c> cluster</c><00:16:53.400><c> of</c>
+
+00:16:53.550 --> 00:16:53.560 align:start position:0%
+running. This is running on a cluster of
+ 
+
+00:16:53.560 --> 00:16:55.870 align:start position:0%
+running. This is running on a cluster of
+three<00:16:54.000><c> replicated</c><00:16:54.720><c> state</c><00:16:55.000><c> machines,</c><00:16:55.560><c> 100</c>
+
+00:16:55.870 --> 00:16:55.880 align:start position:0%
+three replicated state machines, 100
+ 
+
+00:16:55.880 --> 00:16:58.950 align:start position:0%
+three replicated state machines, 100
+gigabit<00:16:56.360><c> NIC,</c><00:16:56.680><c> 4</c><00:16:56.920><c> terabytes</c><00:16:57.480><c> local</c><00:16:57.760><c> NVMe,</c><00:16:58.800><c> and</c>
+
+00:16:58.950 --> 00:16:58.960 align:start position:0%
+gigabit NIC, 4 terabytes local NVMe, and
+ 
+
+00:16:58.960 --> 00:17:01.150 align:start position:0%
+gigabit NIC, 4 terabytes local NVMe, and
+a<00:16:59.000><c> terabyte</c><00:16:59.600><c> of</c><00:16:59.760><c> RAM</c><00:17:00.080><c> each.</c>
+
+00:17:01.150 --> 00:17:01.160 align:start position:0%
+a terabyte of RAM each.
+ 
+
+00:17:01.160 --> 00:17:03.310 align:start position:0%
+a terabyte of RAM each.
+We're<00:17:01.320><c> giving</c><00:17:01.680><c> each</c><00:17:02.000><c> replica</c><00:17:02.440><c> just</c><00:17:02.800><c> a</c><00:17:02.880><c> single</c>
+
+00:17:03.310 --> 00:17:03.320 align:start position:0%
+We're giving each replica just a single
+ 
+
+00:17:03.320 --> 00:17:05.750 align:start position:0%
+We're giving each replica just a single
+core<00:17:04.240><c> and</c><00:17:04.520><c> TigerBeetle</c><00:17:05.000><c> is</c><00:17:05.160><c> processing</c>
+
+00:17:05.750 --> 00:17:05.760 align:start position:0%
+core and TigerBeetle is processing
+ 
+
+00:17:05.760 --> 00:17:08.670 align:start position:0%
+core and TigerBeetle is processing
+around<00:17:06.160><c> 400,000</c><00:17:07.280><c> transactions</c><00:17:07.959><c> per</c><00:17:08.120><c> second</c>
+
+00:17:08.670 --> 00:17:08.680 align:start position:0%
+around 400,000 transactions per second
+ 
+
+00:17:08.680 --> 00:17:11.710 align:start position:0%
+around 400,000 transactions per second
+with<00:17:08.839><c> a</c><00:17:08.920><c> P99</c><00:17:09.839><c> of</c><00:17:10.000><c> 30</c><00:17:10.360><c> milliseconds</c><00:17:11.120><c> per</c><00:17:11.319><c> batch</c>
+
+00:17:11.710 --> 00:17:11.720 align:start position:0%
+with a P99 of 30 milliseconds per batch
+ 
+
+00:17:11.720 --> 00:17:14.910 align:start position:0%
+with a P99 of 30 milliseconds per batch
+of<00:17:11.839><c> 8,000.</c>
+
+00:17:14.910 --> 00:17:14.920 align:start position:0%
+ 
+ 
+
+00:17:14.920 --> 00:17:16.870 align:start position:0%
+ 
+We've<00:17:15.160><c> done</c><00:17:15.360><c> a</c><00:17:15.400><c> few</c><00:17:15.720><c> million</c><00:17:16.040><c> transactions</c><00:17:16.720><c> in</c>
+
+00:17:16.870 --> 00:17:16.880 align:start position:0%
+We've done a few million transactions in
+ 
+
+00:17:16.880 --> 00:17:19.750 align:start position:0%
+We've done a few million transactions in
+a<00:17:16.920><c> few</c><00:17:17.160><c> seconds</c><00:17:18.280><c> using</c><00:17:18.680><c> only</c><00:17:18.920><c> local</c><00:17:19.280><c> storage</c>
+
+00:17:19.750 --> 00:17:19.760 align:start position:0%
+a few seconds using only local storage
+ 
+
+00:17:19.760 --> 00:17:21.790 align:start position:0%
+a few seconds using only local storage
+so<00:17:19.920><c> far.</c>
+
+00:17:21.790 --> 00:17:21.800 align:start position:0%
+so far.
+ 
+
+00:17:21.800 --> 00:17:23.910 align:start position:0%
+so far.
+We've<00:17:22.000><c> got</c><00:17:22.160><c> a</c><00:17:22.199><c> journey</c><00:17:22.600><c> to</c><00:17:22.760><c> go,</c><00:17:23.480><c> but</c><00:17:23.640><c> you</c><00:17:23.760><c> can</c>
+
+00:17:23.910 --> 00:17:23.920 align:start position:0%
+We've got a journey to go, but you can
+ 
+
+00:17:23.920 --> 00:17:25.910 align:start position:0%
+We've got a journey to go, but you can
+almost<00:17:24.319><c> see</c><00:17:24.520><c> TigerBeetle</c><00:17:25.160><c> racing</c><00:17:25.560><c> now,</c><00:17:25.800><c> the</c>
+
+00:17:25.910 --> 00:17:25.920 align:start position:0%
+almost see TigerBeetle racing now, the
+ 
+
+00:17:25.920 --> 00:17:28.550 align:start position:0%
+almost see TigerBeetle racing now, the
+slopes<00:17:26.439><c> of</c><00:17:26.560><c> the</c><00:17:26.640><c> mountain,</c><00:17:27.560><c> the</c><00:17:27.680><c> summit</c><00:17:28.360><c> of</c><00:17:28.480><c> a</c>
+
+00:17:28.550 --> 00:17:28.560 align:start position:0%
+slopes of the mountain, the summit of a
+ 
+
+00:17:28.560 --> 00:17:34.190 align:start position:0%
+slopes of the mountain, the summit of a
+trillion<00:17:29.480><c> transactions.</c>
+
+00:17:34.190 --> 00:17:34.200 align:start position:0%
+ 
+ 
+
+00:17:34.200 --> 00:17:36.230 align:start position:0%
+ 
+What<00:17:34.440><c> you're</c><00:17:34.560><c> seeing</c><00:17:35.000><c> here,</c>
+
+00:17:36.230 --> 00:17:36.240 align:start position:0%
+What you're seeing here,
+ 
+
+00:17:36.240 --> 00:17:39.110 align:start position:0%
+What you're seeing here,
+everything<00:17:36.760><c> is</c><00:17:36.960><c> made</c><00:17:37.560><c> by</c><00:17:37.760><c> Joey,</c><00:17:38.400><c> Fabi,</c><00:17:38.920><c> and</c>
+
+00:17:39.110 --> 00:17:39.120 align:start position:0%
+everything is made by Joey, Fabi, and
+ 
+
+00:17:39.120 --> 00:17:41.870 align:start position:0%
+everything is made by Joey, Fabi, and
+Fabio<00:17:39.560><c> on</c><00:17:39.720><c> our</c><00:17:39.880><c> team.</c><00:17:40.600><c> It's</c><00:17:40.840><c> all</c><00:17:41.080><c> crafted</c><00:17:41.720><c> in</c>
+
+00:17:41.870 --> 00:17:41.880 align:start position:0%
+Fabio on our team. It's all crafted in
+ 
+
+00:17:41.880 --> 00:17:44.470 align:start position:0%
+Fabio on our team. It's all crafted in
+Zig,<00:17:42.800><c> sculpted</c><00:17:43.360><c> in</c><00:17:43.480><c> Blender,</c><00:17:43.920><c> and</c><00:17:44.120><c> rendered</c>
+
+00:17:44.470 --> 00:17:44.480 align:start position:0%
+Zig, sculpted in Blender, and rendered
+ 
+
+00:17:44.480 --> 00:17:47.390 align:start position:0%
+Zig, sculpted in Blender, and rendered
+in<00:17:44.640><c> real</c><00:17:44.960><c> time</c><00:17:45.240><c> with</c><00:17:45.440><c> WebAssembly</c><00:17:45.920><c> and</c><00:17:46.040><c> WebGL.</c>
+
+00:17:47.390 --> 00:17:47.400 align:start position:0%
+in real time with WebAssembly and WebGL.
+ 
+
+00:17:47.400 --> 00:17:48.990 align:start position:0%
+in real time with WebAssembly and WebGL.
+The<00:17:47.560><c> architecture</c><00:17:48.160><c> of</c><00:17:48.240><c> a</c><00:17:48.280><c> database</c><00:17:48.840><c> is</c>
+
+00:17:48.990 --> 00:17:49.000 align:start position:0%
+The architecture of a database is
+ 
+
+00:17:49.000 --> 00:17:51.670 align:start position:0%
+The architecture of a database is
+invisible,<00:17:49.880><c> so</c><00:17:50.080><c> this</c><00:17:50.320><c> is</c><00:17:50.600><c> our</c><00:17:50.840><c> way</c><00:17:51.080><c> of</c><00:17:51.280><c> making</c>
+
+00:17:51.670 --> 00:17:51.680 align:start position:0%
+invisible, so this is our way of making
+ 
+
+00:17:51.680 --> 00:17:54.390 align:start position:0%
+invisible, so this is our way of making
+the<00:17:51.800><c> invisible</c><00:17:52.480><c> visible.</c><00:17:53.600><c> So,</c><00:17:53.760><c> you</c><00:17:53.840><c> can</c><00:17:54.040><c> see</c>
+
+00:17:54.390 --> 00:17:54.400 align:start position:0%
+the invisible visible. So, you can see
+ 
+
+00:17:54.400 --> 00:17:57.150 align:start position:0%
+the invisible visible. So, you can see
+the<00:17:54.520><c> quality</c><00:17:55.120><c> of</c><00:17:55.240><c> the</c><00:17:55.360><c> engineering,</c><00:17:56.040><c> the</c><00:17:56.360><c> art</c>
+
+00:17:57.150 --> 00:17:57.160 align:start position:0%
+the quality of the engineering, the art
+ 
+
+00:17:57.160 --> 00:17:59.590 align:start position:0%
+the quality of the engineering, the art
+that<00:17:57.400><c> goes</c><00:17:57.720><c> into</c><00:17:58.040><c> TigerBeetle.</c>
+
+00:17:59.590 --> 00:17:59.600 align:start position:0%
+that goes into TigerBeetle.
+ 
+
+00:17:59.600 --> 00:18:01.870 align:start position:0%
+that goes into TigerBeetle.
+The<00:17:59.720><c> scale</c><00:18:00.240><c> is</c><00:18:00.440><c> stunning.</c>
+
+00:18:01.870 --> 00:18:01.880 align:start position:0%
+The scale is stunning.
+ 
+
+00:18:01.880 --> 00:18:05.150 align:start position:0%
+The scale is stunning.
+TigerBeetle<00:18:02.440><c> is</c><00:18:02.600><c> racing</c><00:18:03.040><c> here</c><00:18:03.400><c> at</c><00:18:03.560><c> around</c><00:18:04.200><c> 270</c>
+
+00:18:05.150 --> 00:18:05.160 align:start position:0%
+TigerBeetle is racing here at around 270
+ 
+
+00:18:05.160 --> 00:18:06.710 align:start position:0%
+TigerBeetle is racing here at around 270
+mph.
+
+00:18:06.710 --> 00:18:06.720 align:start position:0%
+mph.
+ 
+
+00:18:06.720 --> 00:18:08.350 align:start position:0%
+mph.
+For<00:18:06.920><c> a</c><00:18:06.960><c> trillion</c><00:18:07.400><c> transactions,</c><00:18:08.120><c> that's</c>
+
+00:18:08.350 --> 00:18:08.360 align:start position:0%
+For a trillion transactions, that's
+ 
+
+00:18:08.360 --> 00:18:10.910 align:start position:0%
+For a trillion transactions, that's
+about<00:18:08.720><c> 1</c><00:18:08.920><c> and</c><00:18:09.040><c> 1/2</c><00:18:09.360><c> times</c><00:18:09.760><c> around</c><00:18:09.960><c> the</c><00:18:10.120><c> Earth,</c>
+
+00:18:10.910 --> 00:18:10.920 align:start position:0%
+about 1 and 1/2 times around the Earth,
+ 
+
+00:18:10.920 --> 00:18:13.670 align:start position:0%
+about 1 and 1/2 times around the Earth,
+1/10<00:18:11.280><c> of</c><00:18:11.400><c> the</c><00:18:11.480><c> way</c><00:18:11.680><c> to</c><00:18:11.840><c> the</c><00:18:11.920><c> moon.</c>
+
+00:18:13.670 --> 00:18:13.680 align:start position:0%
+1/10 of the way to the moon.
+ 
+
+00:18:13.680 --> 00:18:15.790 align:start position:0%
+1/10 of the way to the moon.
+The<00:18:13.800><c> trace</c><00:18:14.200><c> file</c><00:18:14.520><c> is</c><00:18:14.680><c> massive,</c><00:18:15.320><c> so</c><00:18:15.400><c> we</c><00:18:15.520><c> had</c><00:18:15.680><c> to</c>
+
+00:18:15.790 --> 00:18:15.800 align:start position:0%
+The trace file is massive, so we had to
+ 
+
+00:18:15.800 --> 00:18:18.350 align:start position:0%
+The trace file is massive, so we had to
+compress<00:18:16.320><c> it,</c><00:18:17.040><c> and</c><00:18:17.280><c> then</c><00:18:17.520><c> render</c><00:18:17.920><c> half</c><00:18:18.320><c> a</c>
+
+00:18:18.350 --> 00:18:18.360 align:start position:0%
+compress it, and then render half a
+ 
+
+00:18:18.360 --> 00:18:20.910 align:start position:0%
+compress it, and then render half a
+million<00:18:18.760><c> triangles</c><00:18:19.400><c> per</c><00:18:19.600><c> frame</c>
+
+00:18:20.910 --> 00:18:20.920 align:start position:0%
+million triangles per frame
+ 
+
+00:18:20.920 --> 00:18:24.030 align:start position:0%
+million triangles per frame
+at<00:18:21.120><c> 120</c><00:18:21.880><c> frames</c><00:18:22.280><c> per</c><00:18:22.440><c> second,</c><00:18:23.280><c> so</c><00:18:23.440><c> you</c><00:18:23.600><c> can</c><00:18:23.760><c> see</c>
+
+00:18:24.030 --> 00:18:24.040 align:start position:0%
+at 120 frames per second, so you can see
+ 
+
+00:18:24.040 --> 00:18:27.510 align:start position:0%
+at 120 frames per second, so you can see
+the<00:18:24.200><c> trace</c><00:18:24.800><c> in</c><00:18:24.960><c> real</c><00:18:25.200><c> time.</c>
+
+00:18:27.510 --> 00:18:27.520 align:start position:0%
+the trace in real time.
+ 
+
+00:18:27.520 --> 00:18:28.870 align:start position:0%
+the trace in real time.
+As<00:18:27.760><c> you</c><00:18:27.880><c> head</c><00:18:28.120><c> through</c><00:18:28.360><c> 4</c><00:18:28.560><c> billion</c>
+
+00:18:28.870 --> 00:18:28.880 align:start position:0%
+As you head through 4 billion
+ 
+
+00:18:28.880 --> 00:18:31.110 align:start position:0%
+As you head through 4 billion
+transactions,<00:18:29.680><c> you</c><00:18:29.800><c> can't</c><00:18:30.160><c> use</c><00:18:30.400><c> 32-bit</c>
+
+00:18:31.110 --> 00:18:31.120 align:start position:0%
+transactions, you can't use 32-bit
+ 
+
+00:18:31.120 --> 00:18:33.830 align:start position:0%
+transactions, you can't use 32-bit
+transaction<00:18:31.720><c> IDs</c><00:18:32.240><c> or</c><00:18:32.360><c> block</c><00:18:32.640><c> addresses.</c>
+
+00:18:33.830 --> 00:18:33.840 align:start position:0%
+transaction IDs or block addresses.
+ 
+
+00:18:33.840 --> 00:18:36.670 align:start position:0%
+transaction IDs or block addresses.
+You<00:18:34.000><c> need</c><00:18:34.280><c> 64-bit</c><00:18:35.200><c> counters</c><00:18:35.840><c> just</c><00:18:36.080><c> to</c><00:18:36.200><c> count</c>
+
+00:18:36.670 --> 00:18:36.680 align:start position:0%
+You need 64-bit counters just to count
+ 
+
+00:18:36.680 --> 00:18:41.270 align:start position:0%
+You need 64-bit counters just to count
+the<00:18:36.800><c> sheer</c><00:18:37.080><c> number</c><00:18:37.800><c> of</c><00:18:37.960><c> transactions.</c>
+
+00:18:41.270 --> 00:18:41.280 align:start position:0%
+ 
+ 
+
+00:18:41.280 --> 00:18:43.270 align:start position:0%
+ 
+To<00:18:41.440><c> be</c><00:18:41.600><c> clear,</c><00:18:41.960><c> what</c><00:18:42.200><c> you're</c><00:18:42.320><c> seeing</c><00:18:42.720><c> here</c><00:18:43.000><c> is</c>
+
+00:18:43.270 --> 00:18:43.280 align:start position:0%
+To be clear, what you're seeing here is
+ 
+
+00:18:43.280 --> 00:18:46.190 align:start position:0%
+To be clear, what you're seeing here is
+full<00:18:43.560><c> safety,</c><00:18:44.640><c> strict</c><00:18:45.120><c> serializability,</c>
+
+00:18:46.190 --> 00:18:46.200 align:start position:0%
+full safety, strict serializability,
+ 
+
+00:18:46.200 --> 00:18:47.790 align:start position:0%
+full safety, strict serializability,
+durability.
+
+00:18:47.790 --> 00:18:47.800 align:start position:0%
+durability.
+ 
+
+00:18:47.800 --> 00:18:49.630 align:start position:0%
+durability.
+The<00:18:47.920><c> trade-off</c><00:18:48.480><c> is</c><00:18:48.640><c> that</c><00:18:48.840><c> TigerBeetle</c><00:18:49.400><c> is</c><00:18:49.560><c> a</c>
+
+00:18:49.630 --> 00:18:49.640 align:start position:0%
+The trade-off is that TigerBeetle is a
+ 
+
+00:18:49.640 --> 00:18:52.670 align:start position:0%
+The trade-off is that TigerBeetle is a
+new<00:18:49.960><c> database</c><00:18:50.600><c> for</c><00:18:50.840><c> OLTP,</c><00:18:51.640><c> a</c><00:18:51.720><c> new</c><00:18:52.080><c> storage</c>
+
+00:18:52.670 --> 00:18:52.680 align:start position:0%
+new database for OLTP, a new storage
+ 
+
+00:18:52.680 --> 00:18:55.350 align:start position:0%
+new database for OLTP, a new storage
+engine<00:18:53.080><c> from</c><00:18:53.320><c> the</c><00:18:53.400><c> ground</c><00:18:53.960><c> up.</c><00:18:54.800><c> We</c><00:18:54.960><c> couldn't</c>
+
+00:18:55.350 --> 00:18:55.360 align:start position:0%
+engine from the ground up. We couldn't
+ 
+
+00:18:55.360 --> 00:18:57.630 align:start position:0%
+engine from the ground up. We couldn't
+use<00:18:55.680><c> anything</c><00:18:56.200><c> off</c><00:18:56.440><c> the</c><00:18:56.560><c> shelf.</c><00:18:57.000><c> It's</c><00:18:57.280><c> all</c>
+
+00:18:57.630 --> 00:18:57.640 align:start position:0%
+use anything off the shelf. It's all
+ 
+
+00:18:57.640 --> 00:19:00.870 align:start position:0%
+use anything off the shelf. It's all
+static<00:18:58.360><c> allocation</c><00:18:59.520><c> with</c><00:18:59.720><c> explicit</c><00:19:00.400><c> limits</c>
+
+00:19:00.870 --> 00:19:00.880 align:start position:0%
+static allocation with explicit limits
+ 
+
+00:19:00.880 --> 00:19:02.270 align:start position:0%
+static allocation with explicit limits
+for<00:19:01.000><c> scale.</c>
+
+00:19:02.270 --> 00:19:02.280 align:start position:0%
+for scale.
+ 
+
+00:19:02.280 --> 00:19:05.310 align:start position:0%
+for scale.
+We<00:19:02.440><c> took</c><00:19:02.680><c> no</c><00:19:02.840><c> shortcuts.</c><00:19:04.200><c> Some</c><00:19:04.480><c> systems</c><00:19:05.080><c> cut</c>
+
+00:19:05.310 --> 00:19:05.320 align:start position:0%
+We took no shortcuts. Some systems cut
+ 
+
+00:19:05.320 --> 00:19:07.390 align:start position:0%
+We took no shortcuts. Some systems cut
+corners<00:19:05.680><c> on</c><00:19:05.800><c> isolation,</c><00:19:06.520><c> but</c><00:19:06.760><c> TigerBeetle</c>
+
+00:19:07.390 --> 00:19:07.400 align:start position:0%
+corners on isolation, but TigerBeetle
+ 
+
+00:19:07.400 --> 00:19:09.590 align:start position:0%
+corners on isolation, but TigerBeetle
+only<00:19:07.800><c> ships</c><00:19:08.240><c> with</c><00:19:08.440><c> strict</c><00:19:08.880><c> serializability.</c>
+
+00:19:09.590 --> 00:19:09.600 align:start position:0%
+only ships with strict serializability.
+ 
+
+00:19:09.600 --> 00:19:11.990 align:start position:0%
+only ships with strict serializability.
+There's<00:19:09.880><c> no</c><00:19:10.120><c> way</c><00:19:10.360><c> to</c><00:19:10.520><c> disable</c><00:19:11.120><c> acid</c><00:19:11.600><c> or</c><00:19:11.880><c> if</c>
+
+00:19:11.990 --> 00:19:12.000 align:start position:0%
+There's no way to disable acid or if
+ 
+
+00:19:12.000 --> 00:19:13.030 align:start position:0%
+There's no way to disable acid or if
+sync.
+
+00:19:13.030 --> 00:19:13.040 align:start position:0%
+sync.
+ 
+
+00:19:13.040 --> 00:19:15.870 align:start position:0%
+sync.
+At<00:19:13.200><c> scale,</c><00:19:13.640><c> you</c><00:19:13.800><c> can't</c><00:19:14.120><c> sacrifice</c><00:19:14.880><c> safety.</c>
+
+00:19:15.870 --> 00:19:15.880 align:start position:0%
+At scale, you can't sacrifice safety.
+ 
+
+00:19:15.880 --> 00:19:18.070 align:start position:0%
+At scale, you can't sacrifice safety.
+You<00:19:16.040><c> have</c><00:19:16.240><c> to</c><00:19:16.360><c> design</c><00:19:16.800><c> for</c><00:19:16.960><c> more</c><00:19:17.240><c> faults,</c><00:19:17.840><c> not</c>
+
+00:19:18.070 --> 00:19:18.080 align:start position:0%
+You have to design for more faults, not
+ 
+
+00:19:18.080 --> 00:19:38.230 align:start position:0%
+You have to design for more faults, not
+less.
+
+00:19:38.230 --> 00:19:38.240 align:start position:0%
+ 
+ 
+
+00:19:38.240 --> 00:19:40.430 align:start position:0%
+ 
+We're<00:19:38.440><c> further</c><00:19:38.840><c> than</c><00:19:39.160><c> any</c><00:19:39.480><c> Tiger</c><00:19:40.000><c> Beetle</c><00:19:40.240><c> has</c>
+
+00:19:40.430 --> 00:19:40.440 align:start position:0%
+We're further than any Tiger Beetle has
+ 
+
+00:19:40.440 --> 00:19:42.110 align:start position:0%
+We're further than any Tiger Beetle has
+gone<00:19:40.720><c> before.</c>
+
+00:19:42.110 --> 00:19:42.120 align:start position:0%
+gone before.
+ 
+
+00:19:42.120 --> 00:19:44.590 align:start position:0%
+gone before.
+100<00:19:42.720><c> billion</c><00:19:43.120><c> transactions.</c><00:19:43.960><c> This</c><00:19:44.120><c> is</c><00:19:44.280><c> only</c>
+
+00:19:44.590 --> 00:19:44.600 align:start position:0%
+100 billion transactions. This is only
+ 
+
+00:19:44.600 --> 00:19:47.230 align:start position:0%
+100 billion transactions. This is only
+possible<00:19:45.240><c> with</c><00:19:45.480><c> diagonal</c><00:19:46.040><c> scaling.</c>
+
+00:19:47.230 --> 00:19:47.240 align:start position:0%
+possible with diagonal scaling.
+ 
+
+00:19:47.240 --> 00:19:49.590 align:start position:0%
+possible with diagonal scaling.
+Moving<00:19:47.600><c> cold</c><00:19:47.920><c> data</c><00:19:48.320><c> to</c><00:19:48.520><c> object</c><00:19:48.880><c> storage</c><00:19:49.400><c> to</c>
+
+00:19:49.590 --> 00:19:49.600 align:start position:0%
+Moving cold data to object storage to
+ 
+
+00:19:49.600 --> 00:19:52.830 align:start position:0%
+Moving cold data to object storage to
+bound<00:19:50.000><c> recovery</c><00:19:50.600><c> for</c><00:19:50.960><c> unbounded</c><00:19:51.720><c> scale.</c>
+
+00:19:52.830 --> 00:19:52.840 align:start position:0%
+bound recovery for unbounded scale.
+ 
+
+00:19:52.840 --> 00:19:54.950 align:start position:0%
+bound recovery for unbounded scale.
+The<00:19:52.920><c> only</c><00:19:53.160><c> problem</c><00:19:53.600><c> is</c><00:19:53.760><c> we're</c><00:19:53.920><c> 5</c><00:19:54.320><c> days</c><00:19:54.640><c> in</c><00:19:54.800><c> and</c>
+
+00:19:54.950 --> 00:19:54.960 align:start position:0%
+The only problem is we're 5 days in and
+ 
+
+00:19:54.960 --> 00:19:58.510 align:start position:0%
+The only problem is we're 5 days in and
+we<00:19:55.080><c> started</c><00:19:55.560><c> 20</c><00:19:55.840><c> days</c><00:19:56.120><c> ago.</c><00:19:57.040><c> Even</c><00:19:57.320><c> at</c><00:19:57.520><c> 400,000</c>
+
+00:19:58.510 --> 00:19:58.520 align:start position:0%
+we started 20 days ago. Even at 400,000
+ 
+
+00:19:58.520 --> 00:20:01.630 align:start position:0%
+we started 20 days ago. Even at 400,000
+per<00:19:58.720><c> second,</c><00:19:59.280><c> we'd</c><00:19:59.440><c> need</c><00:19:59.680><c> another</c><00:20:00.120><c> 23</c><00:20:00.680><c> days.</c>
+
+00:20:01.630 --> 00:20:01.640 align:start position:0%
+per second, we'd need another 23 days.
+ 
+
+00:20:01.640 --> 00:20:06.430 align:start position:0%
+per second, we'd need another 23 days.
+We<00:20:01.840><c> only</c><00:20:02.200><c> have</c><00:20:02.480><c> 15.</c>
+
+00:20:06.430 --> 00:20:06.440 align:start position:0%
+ 
+ 
+
+00:20:06.440 --> 00:20:08.310 align:start position:0%
+ 
+But<00:20:06.640><c> so</c><00:20:06.880><c> far,</c><00:20:07.160><c> we're</c><00:20:07.280><c> running</c><00:20:07.640><c> only</c><00:20:07.920><c> one</c>
+
+00:20:08.310 --> 00:20:08.320 align:start position:0%
+But so far, we're running only one
+ 
+
+00:20:08.320 --> 00:20:10.390 align:start position:0%
+But so far, we're running only one
+client<00:20:08.720><c> against</c><00:20:09.080><c> the</c><00:20:09.160><c> cluster.</c>
+
+00:20:10.390 --> 00:20:10.400 align:start position:0%
+client against the cluster.
+ 
+
+00:20:10.400 --> 00:20:15.110 align:start position:0%
+client against the cluster.
+What<00:20:10.560><c> happens</c><00:20:10.960><c> if</c><00:20:11.080><c> we</c><00:20:11.200><c> run</c><00:20:11.560><c> eight</c><00:20:11.800><c> clients?</c>
+
+00:20:15.110 --> 00:20:15.120 align:start position:0%
+ 
+ 
+
+00:20:15.120 --> 00:20:17.350 align:start position:0%
+ 
+With<00:20:15.360><c> more</c><00:20:15.600><c> concurrency,</c><00:20:16.440><c> we've</c><00:20:16.800><c> doubled</c>
+
+00:20:17.350 --> 00:20:17.360 align:start position:0%
+With more concurrency, we've doubled
+ 
+
+00:20:17.360 --> 00:20:20.270 align:start position:0%
+With more concurrency, we've doubled
+performance<00:20:18.000><c> to</c><00:20:18.240><c> 800,000</c><00:20:19.320><c> transactions</c><00:20:20.080><c> per</c>
+
+00:20:20.270 --> 00:20:20.280 align:start position:0%
+performance to 800,000 transactions per
+ 
+
+00:20:20.280 --> 00:20:23.910 align:start position:0%
+performance to 800,000 transactions per
+second.<00:20:21.400><c> With</c><00:20:21.600><c> 15</c><00:20:22.120><c> days</c><00:20:22.480><c> to</c><00:20:22.640><c> go,</c><00:20:23.400><c> we</c><00:20:23.560><c> just</c>
+
+00:20:23.910 --> 00:20:23.920 align:start position:0%
+second. With 15 days to go, we just
+ 
+
+00:20:23.920 --> 00:20:26.590 align:start position:0%
+second. With 15 days to go, we just
+might<00:20:24.240><c> make</c><00:20:24.480><c> it.</c>
+
+00:20:26.590 --> 00:20:26.600 align:start position:0%
+might make it.
+ 
+
+00:20:26.600 --> 00:20:27.950 align:start position:0%
+might make it.
+Normally,<00:20:27.040><c> if</c><00:20:27.200><c> your</c><00:20:27.360><c> workload</c><00:20:27.800><c> has</c>
+
+00:20:27.950 --> 00:20:27.960 align:start position:0%
+Normally, if your workload has
+ 
+
+00:20:27.960 --> 00:20:29.390 align:start position:0%
+Normally, if your workload has
+contention,
+
+00:20:29.390 --> 00:20:29.400 align:start position:0%
+contention,
+ 
+
+00:20:29.400 --> 00:20:31.750 align:start position:0%
+contention,
+then<00:20:29.640><c> adding</c><00:20:29.960><c> clients</c><00:20:30.480><c> coordination</c><00:20:31.360><c> kills</c>
+
+00:20:31.750 --> 00:20:31.760 align:start position:0%
+then adding clients coordination kills
+ 
+
+00:20:31.760 --> 00:20:33.270 align:start position:0%
+then adding clients coordination kills
+performance.
+
+00:20:33.270 --> 00:20:33.280 align:start position:0%
+performance.
+ 
+
+00:20:33.280 --> 00:20:35.310 align:start position:0%
+performance.
+But<00:20:33.440><c> Tiger</c><00:20:33.760><c> Beetle's</c><00:20:34.080><c> concurrency</c><00:20:34.760><c> control</c>
+
+00:20:35.310 --> 00:20:35.320 align:start position:0%
+But Tiger Beetle's concurrency control
+ 
+
+00:20:35.320 --> 00:20:38.270 align:start position:0%
+But Tiger Beetle's concurrency control
+was<00:20:35.520><c> designed</c><00:20:36.240><c> for</c><00:20:36.560><c> contention</c><00:20:37.320><c> with</c><00:20:37.600><c> massive</c>
+
+00:20:38.270 --> 00:20:38.280 align:start position:0%
+was designed for contention with massive
+ 
+
+00:20:38.280 --> 00:20:40.870 align:start position:0%
+was designed for contention with massive
+group<00:20:38.560><c> commit</c><00:20:39.480><c> compared</c><00:20:39.840><c> to</c><00:20:40.000><c> general</c><00:20:40.440><c> purpose</c>
+
+00:20:40.870 --> 00:20:40.880 align:start position:0%
+group commit compared to general purpose
+ 
+
+00:20:40.880 --> 00:20:45.350 align:start position:0%
+group commit compared to general purpose
+databases<00:20:41.560><c> such</c><00:20:41.800><c> as</c><00:20:41.960><c> MySQL</c><00:20:42.640><c> or</c><00:20:42.720><c> Postgres.</c>
+
+00:20:45.350 --> 00:20:45.360 align:start position:0%
+databases such as MySQL or Postgres.
+ 
+
+00:20:45.360 --> 00:20:48.990 align:start position:0%
+databases such as MySQL or Postgres.
+This<00:20:45.600><c> is</c><00:20:45.840><c> 40</c><00:20:46.360><c> times</c><00:20:47.040><c> the</c><00:20:47.160><c> scale</c><00:20:47.880><c> of</c><00:20:48.080><c> what</c><00:20:48.400><c> UPI</c>
+
+00:20:48.990 --> 00:20:49.000 align:start position:0%
+This is 40 times the scale of what UPI
+ 
+
+00:20:49.000 --> 00:20:50.870 align:start position:0%
+This is 40 times the scale of what UPI
+does<00:20:49.480><c> in</c><00:20:49.600><c> a</c><00:20:49.640><c> month.</c>
+
+00:20:50.870 --> 00:20:50.880 align:start position:0%
+does in a month.
+ 
+
+00:20:50.880 --> 00:20:55.350 align:start position:0%
+does in a month.
+Days<00:20:51.800><c> and</c><00:20:52.040><c> days</c><00:20:52.840><c> of</c><00:20:53.000><c> scale</c><00:20:53.400><c> test.</c>
+
+00:20:55.350 --> 00:20:55.360 align:start position:0%
+Days and days of scale test.
+ 
+
+00:20:55.360 --> 00:20:57.270 align:start position:0%
+Days and days of scale test.
+Scale<00:20:55.840><c> is</c><00:20:56.000><c> survivability,</c><00:20:56.960><c> and</c><00:20:57.120><c> for</c>
+
+00:20:57.270 --> 00:20:57.280 align:start position:0%
+Scale is survivability, and for
+ 
+
+00:20:57.280 --> 00:21:00.030 align:start position:0%
+Scale is survivability, and for
+transaction<00:20:57.960><c> processing,</c><00:20:59.200><c> you</c><00:20:59.360><c> have</c><00:20:59.680><c> to</c><00:20:59.840><c> be</c>
+
+00:21:00.030 --> 00:21:00.040 align:start position:0%
+transaction processing, you have to be
+ 
+
+00:21:00.040 --> 00:21:02.830 align:start position:0%
+transaction processing, you have to be
+correct<00:21:01.000><c> and</c><00:21:01.360><c> fast.</c>
+
+00:21:02.830 --> 00:21:02.840 align:start position:0%
+correct and fast.
+ 
+
+00:21:02.840 --> 00:21:05.150 align:start position:0%
+correct and fast.
+To<00:21:02.920><c> design</c><00:21:03.520><c> for</c><00:21:03.720><c> trillion</c><00:21:04.240><c> transactions,</c><00:21:05.000><c> you</c>
+
+00:21:05.150 --> 00:21:05.160 align:start position:0%
+To design for trillion transactions, you
+ 
+
+00:21:05.160 --> 00:21:07.550 align:start position:0%
+To design for trillion transactions, you
+have<00:21:05.400><c> to</c><00:21:05.520><c> go</c><00:21:05.760><c> through</c><00:21:06.120><c> the</c><00:21:06.280><c> seven</c><00:21:06.800><c> stages</c><00:21:07.400><c> of</c>
+
+00:21:07.550 --> 00:21:07.560 align:start position:0%
+have to go through the seven stages of
+ 
+
+00:21:07.560 --> 00:21:09.390 align:start position:0%
+have to go through the seven stages of
+survivability.
+
+00:21:09.390 --> 00:21:09.400 align:start position:0%
+survivability.
+ 
+
+00:21:09.400 --> 00:21:11.670 align:start position:0%
+survivability.
+Past<00:21:09.840><c> horizontal</c><00:21:10.480><c> scaling</c><00:21:10.920><c> to</c><00:21:11.080><c> diagonal</c>
+
+00:21:11.670 --> 00:21:11.680 align:start position:0%
+Past horizontal scaling to diagonal
+ 
+
+00:21:11.680 --> 00:21:14.870 align:start position:0%
+Past horizontal scaling to diagonal
+scaling,<00:21:12.680><c> RSM</c><00:21:13.320><c> plus</c><00:21:13.680><c> LSM</c><00:21:14.240><c> plus</c><00:21:14.560><c> object</c>
+
+00:21:14.870 --> 00:21:14.880 align:start position:0%
+scaling, RSM plus LSM plus object
+ 
+
+00:21:14.880 --> 00:21:17.190 align:start position:0%
+scaling, RSM plus LSM plus object
+storage<00:21:15.400><c> to</c><00:21:15.560><c> scale</c><00:21:15.920><c> past</c><00:21:16.560><c> hundreds</c><00:21:17.080><c> of</c>
+
+00:21:17.190 --> 00:21:17.200 align:start position:0%
+storage to scale past hundreds of
+ 
+
+00:21:17.200 --> 00:21:20.110 align:start position:0%
+storage to scale past hundreds of
+terabytes<00:21:18.400><c> are</c><00:21:18.600><c> some</c><00:21:18.800><c> of</c><00:21:18.920><c> the</c><00:21:19.040><c> most</c><00:21:19.520><c> scalable</c>
+
+00:21:20.110 --> 00:21:20.120 align:start position:0%
+terabytes are some of the most scalable
+ 
+
+00:21:20.120 --> 00:21:23.910 align:start position:0%
+terabytes are some of the most scalable
+databases<00:21:21.000><c> on</c><00:21:21.240><c> Earth.</c>
+
+00:21:23.910 --> 00:21:23.920 align:start position:0%
+ 
+ 
+
+00:21:23.920 --> 00:21:26.070 align:start position:0%
+ 
+We've<00:21:24.160><c> traveled</c><00:21:24.720><c> 1</c><00:21:24.920><c> and</c><00:21:25.040><c> 1/2</c><00:21:25.440><c> times</c><00:21:25.880><c> around</c>
+
+00:21:26.070 --> 00:21:26.080 align:start position:0%
+We've traveled 1 and 1/2 times around
+ 
+
+00:21:26.080 --> 00:21:27.270 align:start position:0%
+We've traveled 1 and 1/2 times around
+the<00:21:26.200><c> world.</c>
+
+00:21:27.270 --> 00:21:27.280 align:start position:0%
+the world.
+ 
+
+00:21:27.280 --> 00:21:29.430 align:start position:0%
+the world.
+What<00:21:27.480><c> we</c><00:21:27.640><c> learned</c><00:21:28.040><c> is</c><00:21:28.200><c> that</c><00:21:28.440><c> survivability</c>
+
+00:21:29.430 --> 00:21:29.440 align:start position:0%
+What we learned is that survivability
+ 
+
+00:21:29.440 --> 00:21:31.590 align:start position:0%
+What we learned is that survivability
+isn't<00:21:29.760><c> something</c><00:21:30.200><c> you</c><00:21:30.360><c> add,</c>
+
+00:21:31.590 --> 00:21:31.600 align:start position:0%
+isn't something you add,
+ 
+
+00:21:31.600 --> 00:21:33.390 align:start position:0%
+isn't something you add,
+but<00:21:31.800><c> something</c><00:21:32.240><c> you</c><00:21:32.320><c> design</c><00:21:32.840><c> for</c><00:21:33.080><c> from</c><00:21:33.280><c> the</c>
+
+00:21:33.390 --> 00:21:33.400 align:start position:0%
+but something you design for from the
+ 
+
+00:21:33.400 --> 00:21:35.310 align:start position:0%
+but something you design for from the
+very<00:21:33.760><c> beginning.</c>
+
+00:21:35.310 --> 00:21:35.320 align:start position:0%
+very beginning.
+ 
+
+00:21:35.320 --> 00:21:37.510 align:start position:0%
+very beginning.
+Because<00:21:35.680><c> when</c><00:21:35.840><c> you</c><00:21:35.960><c> design</c><00:21:36.520><c> for</c><00:21:36.760><c> recovery</c>
+
+00:21:37.510 --> 00:21:37.520 align:start position:0%
+Because when you design for recovery
+ 
+
+00:21:37.520 --> 00:21:41.670 align:start position:0%
+Because when you design for recovery
+first,<00:21:38.840><c> scale</c><00:21:39.440><c> becomes</c><00:21:39.960><c> a</c><00:21:40.040><c> side</c><00:21:40.400><c> effect.</c>
+
+00:21:41.670 --> 00:21:41.680 align:start position:0%
+first, scale becomes a side effect.
+ 
+
+00:21:41.680 --> 00:21:43.670 align:start position:0%
+first, scale becomes a side effect.
+You<00:21:41.800><c> don't</c><00:21:42.040><c> just</c><00:21:42.360><c> survive</c><00:21:43.440><c> through</c><00:21:43.640><c> a</c>
+
+00:21:43.670 --> 00:21:43.680 align:start position:0%
+You don't just survive through a
+ 
+
+00:21:43.680 --> 00:21:45.110 align:start position:0%
+You don't just survive through a
+trillion.
+
+00:21:45.110 --> 00:21:45.120 align:start position:0%
+trillion.
+ 
+
+00:21:45.120 --> 00:21:48.000 align:start position:0%
+trillion.
+You<00:21:45.280><c> thrive.</c>
+

@@ -1,0 +1,545 @@
+[0] Thanks everyone for coming. Um, to clear
+[3] the air, yes, I'm the guy who pauses
+[6] your databases
+[8] and I have no regrets.
+[12] Um, welcome to the first Superbase
+[15] conference. This is crazy for us. This
+[17] is the first time we're doing something
+[19] this big. So, thank you all for coming.
+[21] Thanks for everyone watching online. Um,
+[24] and thanks to YC for hosting us in this
+[26] incredible space.
+[29] So yeah, round of applause for YC.
+[37] So the Superbase tagline is building a
+[40] weekend scale to millions. And today
+[43] we're going to talk about both of these
+[45] things. And we're going to start with
+[47] our very own founding story.
+[51] So Coppel and I met in Singapore. We
+[54] lived in a hacker house with seven
+[56] entrepreneurs and people were building
+[59] all kinds of crazy stuff
+[62] and most of us were building with
+[64] Firebase. We love Firebase. You go to
+[67] the website, you click a few buttons,
+[69] you get a backend and then you drop one
+[73] line of JavaScript in your application
+[75] and you can start streaming data.
+[78] But there was another database that we
+[80] loved and that's Postgress.
+[82] three decades of development, fully open
+[85] source, used at scale by pretty much
+[88] every major enterprise on Earth. And so
+[91] we thought, why don't we take all the
+[94] cool bits of Firebase and put it on top
+[96] of Postgress?
+[98] And the more we thought about it, it was
+[101] one of those things that seems like this
+[104] should obviously exist in the world
+[106] already. Um, and it didn't. So we went
+[109] and we built it. But we had one big
+[112] problem.
+[115] We didn't have any users outside of the
+[117] people who lived in our apartment.
+[120] And so here's the story of the first
+[122] real Superbase user.
+[125] YC companies are famous for being great
+[127] early adopters,
+[130] but there wasn't a ton of YC companies
+[132] in Southeast Asia at the time, but there
+[135] was one.
+[139] Zenit. Think Stripe for Southeast Asia.
+[144] Actually, if you speak to Patrick later
+[147] from Stripe, he'll probably tell you
+[149] that Stripe is the Stripe of Southeast
+[150] Asia. Um, but we'll leave that up to
+[154] those guys to discuss. Um, and Coppel
+[156] happened to know a couple of the guys
+[158] from Zenith. And so we went to the
+[161] Zendes office to do a Collison install.
+[165] So, Collison install named after the
+[167] Collison brothers from Stripe is when
+[169] you drive to the office of the people
+[172] you want to sell to and you manually
+[174] write the integration code for them. And
+[177] so we drove to the Zendit office.
+[181] And we get there and we say, "We want
+[182] you guys to use Superbase as your main
+[185] transactional database." And they
+[187] politely said, "No."
+[190] But they did have a new project that
+[192] they were planning to build.
+[194] There's a list of known money launderers
+[197] that they needed in a database and when
+[200] a new customer comes in for them, they
+[202] want to compare against this list of
+[204] known money launderers to know whether
+[206] they should ban the account or not. And
+[208] so Coppel went away and he spent the
+[211] next two days building this application.
+[214] I think people now call this the uh
+[216] forward deployed engineer.
+[219] Um, and so the next step for us was to
+[222] apply for YC.
+[224] And Jared, our YC partner, called us up
+[228] and his first question was, "Uh, guys,
+[231] have you got any users?"
+[235] As a matter of fact, Jared,
+[239] we do.
+[243] So Jared invites us for an interview and
+[246] we do a remote Zoom interview from
+[248] Singapore to SF
+[250] and apparently we heard this story years
+[253] later. Uh what happened was they would
+[255] ask us a question and then there would
+[258] be a huge lag and an outage and they
+[260] would miss the entire answer. And Jared
+[263] was in the room like no no no these guys
+[266] are great. Trust me these guys are
+[267] great. And so thanks to Jared, um he got
+[270] us into the batch, but we would do the
+[273] whole batch remotely from Singapore
+[276] because of CO. Uh so it was summer 2020
+[281] and we were in a strict lockdown in
+[283] Singapore at the time and we could only
+[285] leave the apartment to do groceries and
+[288] the rest of the time in the flat. But it
+[291] was really great for starting a company
+[294] because we would wake up at 9:00, build
+[297] all day. The YC batch would start at
+[300] midnight Singapore time. We'd do YC
+[303] midnight until 3:00 a.m. And then we'd
+[305] wake up the next day and do it all
+[306] again. And we got so much done in this
+[310] first 3 month period. I think the kids
+[312] are now calling it 996.
+[316] Um and so after a couple of weeks of
+[318] this
+[320] we had more users.
+[323] Uh but our website at the time looked
+[325] like this is the original superbase
+[329] website designed by couple. Um and our
+[332] tagline was real time Postgress
+[336] but people didn't really know what that
+[338] meant.
+[339] And on a whim one day, we said, "Let's
+[343] call it the open- source Firebase
+[345] alternative." And then everything
+[347] changed. It became clear to people what
+[350] we were trying to do. And it got picked
+[353] up on Hacken News. And it went crazy. We
+[356] went from 80 to 800 databases in one
+[360] pretty much one day. And then that's
+[363] when things really started moving for
+[365] us.
+[368] And over the next four years between
+[370] 2020 and 2024, we'd go to a million
+[374] developers on the platform.
+[378] Over a thousand YC companies now
+[380] building with Superbase
+[383] and the community grew and grew. In
+[386] fact, this year we did a round of
+[388] community meetups and there were
+[390] Superbase events in 130 cities around
+[393] the world, which is crazy for us. Um,
+[397] but then at the end of last year,
+[400] something even more crazy happened.
+[406] &gt;&gt; I'm Eric Simons. I'm the co-founder and
+[408] CEO of Bolt.do.
+[410] &gt;&gt; My name is Anon. I'm building Lovable
+[413] Jared Palmer and the creator of Ezero.
+[415] When we were deciding on how to build
+[417] backup functionality for our users, what
+[420] we saw is that many of them absolutely
+[422] love the superbase. Almost half of all
+[425] white combinator startups, they build on
+[427] top of Superbase. Vzero integrates with
+[429] Superbase pretty seamlessly. If you ask
+[431] Vzero to generate some sort of
+[434] application and it needs Superbase,
+[436] you'll be prompted to generate in the
+[438] application. It's the best product in in
+[440] the world for building authentication
+[442] and actually storing and retrieving
+[444] data, you know.
+[446] [Applause]
+[446] [Music]
+[449] So, we started getting integrated into
+[452] these AI developer platforms, Lovable
+[454] Cloud, V0, Bolt V2, and now Figma make
+[460] who are going to be in the other
+[461] building. So, if you want to see Figma
+[463] and the Make product, definitely go and
+[464] speak to those guys.
+[467] And this has led to an additional 3.5
+[471] million developers building with
+[473] Superbase this year. Um, and so that
+[476] brings us to
+[478] today.
+[481] We're lucky enough to hear the stories
+[483] of these amazing people. We have Patrick
+[485] from Stripe, Dylan from Figma, James
+[487] from Firebase is going to be here who's
+[490] been a huge inspiration for Superbase
+[492] and a fan of ours since since the since
+[494] the start. We'll have a great
+[495] conversation with James later.
+[498] Um, and so I've talked about our build
+[501] in a weekend story and now I'm going to
+[503] invite CoppP to the stage to talk about
+[506] how we scale to millions and what's next
+[508] for Superbase. Thank you.
+[526] Thanks. And is this working? Can you
+[530] hear me? Yep. Great. Okay. So, today I
+[533] want to focus on Superbase, where we've
+[535] come from and where we're going.
+[538] Since we started Superbase, our goal has
+[541] been to create the platform that's both
+[544] simple and scalable. This year we've
+[546] grown the platform to meet the demands
+[548] of some of our largest customers.
+[551] We've expanded the possibility of
+[554] Postgress adding modules like cron jobs
+[557] and cues for handling background
+[560] workers.
+[563] We made it really simple to get started
+[565] by releasing a UI library uh backed by
+[568] Shadzen.
+[572] We've pioneered the use of AI to make,
+[576] build, and query your database. Uh
+[578] especially for those who don't know how
+[579] to use SQL or just learning. And we've
+[583] introduced
+[585] declarative schemas. So you your
+[587] database structure is always stored in
+[591] um in code defined in code and synced
+[594] automatically using git.
+[599] But the Superbase philosophy is less
+[601] about features and it's more about
+[604] standards and ecosystems.
+[607] Today we're releasing support for two
+[609] new standards for two new ecosystems.
+[613] First is web 3.
+[616] Some of the world's largest web 3
+[618] businesses run on Superbase
+[620] using our platform as a bridge between
+[623] applications and blockchains. Today,
+[625] we're making it even more seamless by
+[628] releasing SignIn with Web 3.
+[640] So, you can now use Superbase or to sign
+[642] in with either Salana or Ethereum.
+[646] This has been one of our most demanded
+[648] features. It was developed in
+[650] collaboration with the Salana Foundation
+[652] and a member of our superbase community.
+[656] Maintaining our focus on standards, it's
+[659] implemented using the open standard
+[661] EIP4361.
+[665] Let's shift our focus to the AI
+[668] ecosystem.
+[669] This year, Superbase has become
+[671] incredibly popular with AI builders like
+[674] Lovable, Vzero, Figma, and Bolt on
+[680] as well as local tools like Cursor and
+[682] Claude Code.
+[685] One of the emerging protocols for this
+[687] wave is MCP.
+[689] And today we're releasing support for
+[691] the remote MCP server for Superbase.
+[703] Remote MCP for development and branching
+[706] opens our platform up to new tools
+[709] including chat GPT which just last month
+[712] added MCP support for developers. We
+[715] want to keep security top of mind. So um
+[718] we're encou encouraging everyone to use
+[720] MCP for all of their development needs
+[723] and especially in branching. To
+[725] facilitate this, we're also adding MCP
+[728] to the local Superbase stack, so you get
+[730] a fully sandboxed development
+[733] environment.
+[736] We have a lot more to say uh about MCP
+[739] and the new features and security uh
+[742] recommendations. So, if you want to hear
+[743] more, go to Greg's talk later on this
+[746] afternoon at the build stage.
+[751] So now let's look a bit to the future
+[754] and what we're going to do in the
+[755] Postgress ecosystem.
+[763] Since this is our first conference, I
+[765] want to spend some time talking about
+[767] where we're going. Postgress is already
+[769] the heart of everything we do. It's
+[772] really powerful. It's reliable. It's the
+[775] most loved and actually the most popular
+[777] database in the world.
+[779] But as good as Postgress is, any
+[781] database can be better. After 5 years of
+[784] running over 9 million databases, we've
+[788] become intimately familiar with some of
+[790] the scaling challenges that you can face
+[792] running Postgress.
+[794] We've run into challenges with storage,
+[797] with the Postgress engine itself, and
+[800] with orchestration.
+[803] Let's look at how Superbase will solve
+[805] these challenges. Starting with storage.
+[809] Three years ago, we started funding a
+[812] Postgress extension called Oriel.
+[815] Oriel is developed by a Postgress core
+[818] contributor called Alexander Cordov. The
+[821] goal of Oriel is quite ambitious. It's
+[823] to solve some of the wicked problems of
+[826] Postgress storage. To name a few of
+[828] them, the features
+[830] Oriel adds indexed organized tables. It
+[834] doesn't require vacuum which I'm sure
+[836] many of you operating Postgress at scale
+[838] are pretty familiar with some of the
+[840] challenges of vacuum. It solves the
+[843] infamous wraparound problem of Postgress
+[846] for large tables. And finally, it adds
+[849] pluggable storage so that anyone in the
+[852] world can add alternative storage
+[854] engines to Postgress, not just the ones
+[856] that we want for our platform.
+[858] And the results speak for themselves.
+[861] Oriel benchmarks are up to five and a
+[864] half times faster than the default
+[866] storage engine for Postgress.
+[869] So at this point you're probably
+[870] thinking couple that all sounds great.
+[873] So what's the catch?
+[875] The catch is that pluggable storage has
+[878] actually been attempted a few times in
+[880] the Postgress ecosystem and it didn't
+[883] work because quite frankly it's a lot of
+[886] work
+[887] and more work than most companies are
+[889] willing to commit to. But luckily,
+[892] Superbase is not most companies. Oriel
+[895] started as an open-source project and
+[897] the goal has been to upstream everything
+[900] that is developed to the Postgress core.
+[903] But there's one small fly in the
+[905] ointment and that is that the oral
+[908] technology was backed by a patent.
+[911] And so we acquired Oral and for the past
+[914] one and a half years we've been working
+[916] to acquire that patent. And I'm proud to
+[919] announce that just last month we
+[921] finalized the process and we're making
+[923] the patent freely available to the open
+[925] source community.
+[934] That's not all for oral and Postgress.
+[937] An additional goal of Oriel is to use S3
+[941] as a first class citizen for tiered
+[944] storage. This allows you to split your
+[946] storage between Postgress and S3.
+[950] Oreo enabgress to store and retrieve
+[952] that data especially if it's less
+[954] frequently used. And this got us
+[956] thinking a lot about the future about
+[959] the future of the superbase platform.
+[962] As you all know, Postgress isn't a
+[965] onetrick pony.
+[967] It can also be used for vectors and
+[969] embeddings.
+[970] In 2023, Superbase was one of the first
+[974] to champion Postgress as a vector
+[975] database using PG vector.
+[979] And two years later, Superbase users are
+[982] storing pabytes of embeddings across the
+[984] platform.
+[987] But AI is eating the world and as AI
+[990] becomes cheaper, generating, storing,
+[992] and using those embeddings needs to
+[994] become cheaper, too.
+[997] This year, we'll be introducing vector
+[999] buckets for bottomless embeddings. Users
+[1002] will be able to start with PG Vector and
+[1005] then move less frequently used
+[1006] embeddings directly into S3.
+[1010] But developers on Superbase shouldn't
+[1012] have to think about different storage
+[1014] platforms. For Superbase developers, we
+[1017] always want to everything to feel like
+[1019] it's just Postgress.
+[1022] So later this year, we're going to
+[1024] release Superbase ETL, an open-source
+[1027] Rust server that can stream Postgress
+[1029] data directly into S3. And we're not
+[1033] stopping at vectors.
+[1042] Some of our largest customers have huge
+[1044] data warehouses.
+[1047] These customers often ask me what's the
+[1049] best way to use these data warehouses
+[1051] with superbase.
+[1053] For a long time, I actually didn't
+[1055] really know the idea to this uh the
+[1057] answer to this question. We didn't feel
+[1060] that Postgress is up for the job. It's
+[1061] not really designed as a data warehouse.
+[1064] However, something changed within the
+[1066] ecosystem in the past year.
+[1069] A new standard emerged called iceberg.
+[1073] This is an open format that allows
+[1075] companies to store their data in a
+[1078] standard format and then they can query
+[1080] it using any popular database or
+[1083] anything that supports iceberg. Popular
+[1085] databases like click or duct DB for
+[1088] example.
+[1089] to support this emerging format. Two
+[1092] months ago, we added analytics buckets
+[1095] to superbase storage, but we weren't
+[1097] 100% satisfied with the implementation
+[1102] because Postgress doesn't have support
+[1104] for iceberg. So, we asked ourselves
+[1108] if companies are storing their warehouse
+[1111] data with superbase, how can we make it
+[1114] accessible within Postgress?
+[1117] And fortunately, Postgress has a native
+[1119] feature called a foreign data wrapper.
+[1123] You can use these uh use the foreign
+[1125] data wrappers to query uh external data
+[1127] sources like native Postgress tables.
+[1130] They can map your your other Postgress
+[1133] databases directly into your own and you
+[1136] can write SQL like it's running locally.
+[1139] And for 2 years, we've been running uh
+[1141] we've been building a Rust library that
+[1143] extends this feature and makes it more
+[1146] robust.
+[1148] And just this week we added read and
+[1150] write support for iceberg inside
+[1152] Postgress.
+[1157] Okay.
+[1159] So scaling Postgress storage is one
+[1162] thing but operating really is another
+[1164] thing.
+[1167] A worldclass Postgress platform also
+[1170] needs to solve more than just storage.
+[1173] We also need to think about connection
+[1176] pooling for serverless workloads,
+[1180] HA and automated failover,
+[1183] zero downtime migrations and upgrades,
+[1187] observability and self-healing
+[1191] and growing to pabyte scale using
+[1193] sharding.
+[1201] To solve these problems, we started our
+[1204] most ambitious project yet,
+[1207] Multigress.
+[1209] If you're familiar with Vitest for my
+[1211] SQL, you can think of Multigrass like
+[1213] Vitest for Postgress. Multigrass will
+[1216] scale indefinitely using Kubernetes and
+[1219] cloud native tooling. This project will
+[1222] be no walk in the park. So, how do we
+[1225] know that we are going to be able to
+[1226] pull it off? To do that and to lead
+[1229] multigress, we brought on Sugu, the
+[1231] co-creator of Vitess, Sugu is joining uh
+[1235] with an exceptional group of people
+[1236] including Vitz maintainers and Postgress
+[1239] engineers who have run sharded Postgress
+[1242] at massive scale at companies like
+[1244] Figma. And the best thing is Multigress
+[1248] will be 100% open-source.
+[1251] Just after this talk, Sugu is going to
+[1254] be talking about how we're building
+[1255] multigrass and uh the progress so far.
+[1257] So make sure you stick around and hear
+[1259] what he has to say.
+[1261] So let's assess the opportunities we see
+[1264] with Postgress one more time. For
+[1268] storage, we're le leveraging S3.
+[1272] We're investing in state-of-the-art
+[1273] Postgress engine with oral. We're
+[1276] creating ETL tools to replicate
+[1278] Postgress data into S3 buckets. And
+[1281] we've spent years develop developing
+[1284] foreign data wrappers to read and write
+[1286] data to S3.
+[1290] And for orchestration, we're building
+[1291] multigrass, a cloudnative orchestration
+[1294] engine for Postgress.
+[1297] The future of Postgress is more than a
+[1299] database. It's an operating system. But
+[1302] this is no small task. To do this, we're
+[1306] going to need to build one of the
+[1307] world's most talented teams. That's why
+[1310] today we're announcing the Superbase
+[1313] Series E.
+[1325] We're raising over $100 million at a $5
+[1328] billion valuation. That brings our total
+[1331] funding to about $500 million.
+[1334] So, how will we use these funds?
+[1337] First, we're committed to the future of
+[1339] Postgress as I've explained so far in
+[1342] this talk. The second thing is we're
+[1345] committed to our community, you the
+[1347] users and developers. We're committing
+[1350] to our free plan.
+[1352] This round will be led by Excel and Peak
+[1355] and all of our insiders. And joining
+[1358] this round are our friends at Figma, uh,
+[1360] who have been incredible partners to
+[1361] Superbase this year.
+[1364] But that's not really the most important
+[1367] thing to announce today. Normally
+[1369] fundraising rounds are reserved for big
+[1372] investors and insiders, but Superbase
+[1375] was never really built that way. It was
+[1378] built by you, the community, and the
+[1380] open-source developers who have helped
+[1382] us for the past 5 and a half years.
+[1385] We care about open source, and we
+[1387] really, really care about our community.
+[1389] And so, we're reserving 1 million of
+[1392] this round for the community.
+[1403] There's one caveat.
+[1405] It's only open for developers who have
+[1407] committed to open source the superbase
+[1410] or the Postgress ecosystem before today.
+[1413] So
+[1416] there might be a no guarantees there
+[1418] might be something in the next 12
+[1419] months. So if you want to get involved
+[1420] in the open source ecosystem, then it's
+[1423] a good nudge.
+[1426] Um Ant and I have actually talked about
+[1428] this for many years. So this makes me
+[1430] personally very proud that we can
+[1431] actually pull this off and we're in a
+[1433] position to make this happen.
+[1436] Okay, I'm excited to have you all here
+[1438] today and tuning in online from around
+[1441] the world. We have a bunch more exciting
+[1444] content from the Superbase team and some
+[1447] legendary speakers. Um, up next we'll
+[1450] have Sugu uh here on stage to talk about
+[1454] Multigress and I'll join him at the end
+[1455] for a bit of a Q&amp;A. So stick around. I
+[1458] had one request for the Superbase team
+[1461] and that was to make this less like a
+[1463] conference and more like a festival. And
+[1466] so at I think around 5:30 or 6 p.m.
+[1469] we'll be having an afterparty here where
+[1471] I'll be mingling and the team will be
+[1473] mingling and we'll be hanging out. I
+[1475] think there's DJs and everything there.
+[1477] So make sure you stick around all day.
+[1479] It's a beautiful day here and hopefully
+[1481] the weather continues. Um so make sure
+[1483] you mingle. We were really curated with
+[1486] this crowd. We only wanted people uh who
+[1489] were builders uh open source
+[1491] contributors. And so if you turn to the
+[1493] people around you, much like our
+[1495] meetups, we wanted you to be able to
+[1497] chat to other builders, learn from them,
+[1499] and just generally get connected with
+[1502] others in the startup ecosystem. So um
+[1507] yeah, I'm looking forward to meeting you
+[1508] all, and thank you all for coming.

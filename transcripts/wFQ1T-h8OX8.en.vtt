@@ -1,0 +1,1020 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:00.080 --> 00:00:04.960
+We're not just an AI cloud. We're an&nbsp;
+application cloud. You have 4.5 million&nbsp;&nbsp;
+
+00:00:04.960 --> 00:00:10.480
+developers on the platform now. Now over five. Oh&nbsp;
+wow. Five. We're still hiring. We're continuing&nbsp;&nbsp;
+
+00:00:10.480 --> 00:00:14.880
+to hire. Continuing. Yeah. It's we have a&nbsp;
+lot to do. So we want to make sure we can&nbsp;&nbsp;
+
+00:00:14.880 --> 00:00:19.040
+grow the team to do everything that we want to&nbsp;
+do this year. We'll likely double in size this&nbsp;&nbsp;
+
+00:00:19.040 --> 00:00:23.600
+year. It is all about making sure that we're all&nbsp;
+moving in the same direction. As a founder who&nbsp;&nbsp;
+
+00:00:23.600 --> 00:00:28.800
+just raised at $1.5 billion, are you worried&nbsp;
+about the environment you're operating in?
+
+00:00:33.280 --> 00:00:37.760
+Every few months, a company comes across my desk&nbsp;
+where I look at the numbers and I just don't&nbsp;&nbsp;
+
+00:00:37.760 --> 00:00:44.000
+fully believe them. 4.5 million developers,&nbsp;
+revenue growing over 100% year-over-year,&nbsp;&nbsp;
+
+00:00:44.000 --> 00:00:51.680
+a zero marketing team for most of that growth,&nbsp;
+$157 million raised, $1.5 billion valuation, and&nbsp;&nbsp;
+
+00:00:51.680 --> 00:00:57.280
+the product, a cloud platform competing directly&nbsp;
+with Amazon and Google. That company is Render and&nbsp;&nbsp;
+
+00:00:57.280 --> 00:01:01.280
+the person who built it is sitting across from me&nbsp;
+right now. Anurag, I've been waiting to have this&nbsp;&nbsp;
+
+00:01:01.280 --> 00:01:06.480
+conversation for a while. Thanks for the time.&nbsp;
+Thank you for having me. Render was started in&nbsp;&nbsp;
+
+00:01:06.480 --> 00:01:14.400
+2018. The same year Kubernetes became instream.&nbsp;
+Same year AWS already had 30% of global cloud&nbsp;&nbsp;
+
+00:01:14.400 --> 00:01:20.000
+market. Every smart investor I know would have&nbsp;
+said the market is closed. The big players already&nbsp;&nbsp;
+
+00:01:20.000 --> 00:01:24.880
+won. How did you convince yourself and then&nbsp;
+your investors that this was not already over?&nbsp;&nbsp;
+
+00:01:26.320 --> 00:01:33.680
+Yeah, the fact that people thought the market&nbsp;
+was closed was the primary reason I started&nbsp;&nbsp;
+
+00:01:33.680 --> 00:01:44.240
+the company. uh when um I knew from my own&nbsp;
+personal experience that uh building uh any sort&nbsp;&nbsp;
+
+00:01:44.240 --> 00:01:51.920
+of application and then running it on the cloud&nbsp;
+remained inaccessible to most people unless you&nbsp;&nbsp;
+
+00:01:51.920 --> 00:01:59.760
+had built up a lot of experience with uh how to&nbsp;
+work with AWS or GCP or one of the hyperscalers.&nbsp;&nbsp;
+
+00:01:59.760 --> 00:02:07.680
+And I saw that every company was building large&nbsp;
+teams of DevOps engineers just to manage um a lot&nbsp;&nbsp;
+
+00:02:07.680 --> 00:02:15.440
+of the same kind of things on AWS. And that&nbsp;
+experience from both from stripe where I joined&nbsp;&nbsp;
+
+00:02:15.440 --> 00:02:23.680
+as the fifth engineer and and was there through&nbsp;2016 as well as my own experience and then&nbsp;&nbsp;
+
+00:02:23.680 --> 00:02:32.080
+building things after stripe led me to very&nbsp;
+confidently believe that uh there's a huge&nbsp;&nbsp;
+
+00:02:32.080 --> 00:02:37.840
+opportunity in serving application developers&nbsp;
+and that's still what render is in general.&nbsp;&nbsp;
+
+00:02:37.840 --> 00:02:42.560
+We're serving the people who are writing the code,&nbsp;
+the people who are building the applications as&nbsp;&nbsp;
+
+00:02:42.560 --> 00:02:49.600
+opposed to say the people who understand AWS. That&nbsp;
+makes sense. Thank you. Yeah. You spent 2 years&nbsp;&nbsp;
+
+00:02:49.600 --> 00:02:56.320
+after Stripe trying different ideas, healthcare,&nbsp;
+GPU, notebooks, other things. You had money, you&nbsp;&nbsp;
+
+00:02:56.320 --> 00:03:02.320
+had freedom, you could have picked anything. Why&nbsp;
+did you end up solving infrastructure? Most people&nbsp;&nbsp;
+
+00:03:02.320 --> 00:03:08.000
+I talked to who can pick anything go toward AI or&nbsp;
+consumer. infrastructure is not glamorous. What&nbsp;&nbsp;
+
+00:03:08.000 --> 00:03:16.640
+pulled you here? Yeah. Well, you know, often&nbsp;
+the biggest problems are the least glamorous ones.&nbsp;&nbsp;
+
+00:03:16.640 --> 00:03:23.120
+And you could say the same thing about Stripe&nbsp;
+back in the day. Payments are not glamorous.&nbsp;&nbsp;
+
+00:03:23.120 --> 00:03:33.200
+The interesting thing about render was that it&nbsp;
+was an idea that I kept coming back to because of&nbsp;&nbsp;
+
+00:03:33.200 --> 00:03:40.400
+my own personal affinity with making life easier,&nbsp;
+much easier and faster for application development&nbsp;&nbsp;
+
+00:03:40.400 --> 00:03:47.680
+teams. I am an application developer myself.&nbsp;
+I I also built infrastructure and at the time it&nbsp;&nbsp;
+
+00:03:47.680 --> 00:03:54.080
+was very clear to me that this whole system was&nbsp;
+broken and I actually built something for data&nbsp;&nbsp;
+
+00:03:54.080 --> 00:04:00.320
+scientists uh a company called Crestle uh which&nbsp;
+was one of the first uh companies to offer GPU&nbsp;&nbsp;
+
+00:04:00.320 --> 00:04:10.000
+back notebooks on the web. But that was not&nbsp;
+my long-term idea. I always wanted something&nbsp;&nbsp;
+
+00:04:10.000 --> 00:04:16.240
+that I could work on for several decades.&nbsp;Having gone through the Stripe experience and&nbsp;&nbsp;
+
+00:04:16.240 --> 00:04:23.600
+having had that fortunate freedom. And I&nbsp;
+knew that infrastructure solving this problem&nbsp;&nbsp;
+
+00:04:23.600 --> 00:04:30.240
+of infrastructure and application development on&nbsp;
+the cloud was not going to be a 5-year journey or a&nbsp;&nbsp;
+
+00:04:30.240 --> 00:04:36.640
+10-year journey. And that I could eventually&nbsp;
+build a generational company in the space.&nbsp;&nbsp;
+
+00:04:36.640 --> 00:04:37.140
+uh but it would take time and that was exactly&nbsp;
+the kind of problem I was looking for.
+
+00:04:37.140 --> 00:04:44.140
+Thank you. Very interesting. The classic pitch for&nbsp;
+render is easier than AWS, more scalable
+
+00:04:44.140 --> 00:04:52.480
+than Heroku. But that's a position in statement. I&nbsp;
+want to understand the product decision that&nbsp;&nbsp;
+
+00:04:52.480 --> 00:04:57.680
+actually makes developers stay not just sign up&nbsp;
+but actually migrate the whole ST to you and not&nbsp;&nbsp;
+
+00:04:57.680 --> 00:05:05.760
+go back. Yeah. There are a lot of decisions&nbsp;
+that we've made along the way. And I don't&nbsp;&nbsp;
+
+00:05:05.760 --> 00:05:13.760
+think render is successful because of a single&nbsp;
+thing. We make decisions every day and it&nbsp;&nbsp;
+
+00:05:13.760 --> 00:05:22.000
+started from the basic principle of providing the&nbsp;
+best experience for application developers who are&nbsp;&nbsp;
+
+00:05:22.000 --> 00:05:28.240
+simply trying to get their applications online and&nbsp;
+run them reliably, scalably and confidently. 
+
+00:05:28.240 --> 00:05:36.880
+And it's easy to build something that makes it&nbsp;
+very easy to get started. Especially now with&nbsp;AI.
+
+00:05:36.880 --> 00:05:42.960
+It's much harder to build some something&nbsp;
+that scales. It's much harder to build something&nbsp;&nbsp;
+
+00:05:42.960 --> 00:05:50.800
+that is reliable, that is secure. And that is the&nbsp;
+hard work that you do that makes people stay.&nbsp;&nbsp;
+
+00:05:50.800 --> 00:05:55.920
+When they see that they can continue to scale&nbsp;
+with you. So, we've continued to add features and&nbsp;&nbsp;
+
+00:05:55.920 --> 00:06:00.960
+capabilities to our platform that allow companies&nbsp;
+to grow bigger and bigger and bigger. And so,&nbsp;&nbsp;
+
+00:06:00.960 --> 00:06:06.000
+we have companies that spend millions of dollars&nbsp;
+on render every year. But these companies started&nbsp;&nbsp;
+
+00:06:06.000 --> 00:06:11.360
+out spending, you know, $7 a month on the&nbsp;
+platform. But it's the product decisions,&nbsp;&nbsp;
+
+00:06:11.360 --> 00:06:16.720
+it's the infrastructure maturity, the reliability,&nbsp;
+the security, everything that we obsess about&nbsp;&nbsp;
+
+00:06:16.720 --> 00:06:22.160
+every day. Those are the things that I&nbsp;
+think help people trust us over the long term.&nbsp;&nbsp;
+
+00:06:22.160 --> 00:06:27.920
+I love that approach. Thank you. You have 4.5&nbsp;
+million developers on the platform now. Now&nbsp;&nbsp;
+
+00:06:27.920 --> 00:06:33.200
+over five. Oh wow. Five five million developers.&nbsp;
+Congratulations. Thank you. Zero came from made&nbsp;&nbsp;
+
+00:06:33.200 --> 00:06:38.480
+marketing or sales. It's all word of mouth. I've&nbsp;
+seen developer tool companies try and replicate&nbsp;&nbsp;
+
+00:06:38.480 --> 00:06:43.840
+this and fail completely. What specifically are&nbsp;
+you doing or not doing to make developers talk&nbsp;&nbsp;
+
+00:06:43.840 --> 00:06:49.920
+about render? It goes back to really focusing&nbsp;
+on building the best product. Uh the good thing&nbsp;&nbsp;
+
+00:06:49.920 --> 00:06:59.600
+about developers is that they really appreciate&nbsp;
+it when they see a great product and especially&nbsp;&nbsp;
+
+00:06:59.600 --> 00:07:06.080
+something that helps them get their jobs done&nbsp;
+and they're very vocal online and they want to&nbsp;&nbsp;
+
+00:07:06.080 --> 00:07:11.760
+tell other developers about it. So that's really&nbsp;
+what led to the growth of render and continues&nbsp;&nbsp;
+
+00:07:11.760 --> 00:07:18.320
+to be the major source of our growth even now.&nbsp;There have been other moments for example&nbsp;&nbsp;
+
+00:07:18.320 --> 00:07:26.480
+back in 2022 Heruku shut down their free&nbsp;
+tier and that was actually the first time a&nbsp;&nbsp;
+
+00:07:26.480 --> 00:07:31.840
+lot of companies heard about render and then&nbsp;
+they realized that uh render wasn't just good&nbsp;&nbsp;
+
+00:07:31.840 --> 00:07:36.640
+enough for the free tier uh it had much better&nbsp;
+functionality was much more scalable and flexible&nbsp;&nbsp;
+
+00:07:36.640 --> 00:07:44.320
+than Heroku and you didn't really need to graduate&nbsp;
+to AWS uh if you were on render. Um, and again,&nbsp;&nbsp;
+
+00:07:44.320 --> 00:07:52.400
+moments like that tend to help increase&nbsp;
+our um, awareness um, as a step function,&nbsp;&nbsp;
+
+00:07:52.400 --> 00:07:56.560
+but at the end of the day, it's still about&nbsp;
+the product and about people telling other&nbsp;&nbsp;
+
+00:07:56.560 --> 00:08:01.200
+people about how great the product is. Great&nbsp;
+approach. Thank you. Chat GPT recommends render&nbsp;&nbsp;
+
+00:08:01.200 --> 00:08:07.040
+when developer ask where to deploy their apps. You&nbsp;
+didn't pay for that. You didn't do SEO for it. It&nbsp;&nbsp;
+
+00:08:07.040 --> 00:08:12.560
+just happened. From a business perspective, how do&nbsp;
+you think about this? Is this distribution you can&nbsp;&nbsp;
+
+00:08:12.560 --> 00:08:23.840
+count on or is it fragile? I don't know if this is&nbsp;
+something that we count on necessarily. However,&nbsp;&nbsp;
+
+00:08:23.840 --> 00:08:32.240
+I'd say that at least today chat bots make&nbsp;
+recommendations based on what they're seeing&nbsp;&nbsp;
+
+00:08:32.240 --> 00:08:39.120
+developers are already saying about a&nbsp;
+product online. And so I think if we stay true&nbsp;&nbsp;
+
+00:08:39.120 --> 00:08:44.560
+true to the principle of making sure that we&nbsp;
+focus on the product, focus on making it the&nbsp;&nbsp;
+
+00:08:44.560 --> 00:08:49.440
+best place for application developers to spin up&nbsp;
+any kind of application whether it's an AI native&nbsp;&nbsp;
+
+00:08:49.440 --> 00:08:56.000
+app or not. Then developers will continue&nbsp;
+to talk positively about render which I think&nbsp;&nbsp;
+
+00:08:56.000 --> 00:09:04.560
+will continue to uh make us appear in the&nbsp;
+recommendations uh by chatpt and claude.&nbsp;
+
+00:09:04.560 --> 00:09:09.760
+So yeah, I don't know if you can influence those&nbsp;
+things, but you can influence your product&nbsp;&nbsp;
+
+00:09:09.760 --> 00:09:16.960
+and you can influence what people say about&nbsp;
+it by making sure that you're serving their&nbsp;&nbsp;
+
+00:09:16.960 --> 00:09:22.080
+needs better than anyone else. Nice. Thank you.&nbsp;
+Right now, more than half of your top customers&nbsp;&nbsp;
+
+00:09:22.080 --> 00:09:28.240
+are building AI applications, but Render was not&nbsp;
+originally built for AI workloads. You build it&nbsp;&nbsp;
+
+00:09:28.240 --> 00:09:35.200
+for regular web applications. what changed in the&nbsp;
+product to make it the right fit for AI or was it&nbsp;&nbsp;
+
+00:09:35.200 --> 00:09:42.320
+already right and you just didn't know it yet?&nbsp;
+Yeah, we realized that our architecture and the&nbsp;&nbsp;
+
+00:09:42.320 --> 00:09:50.160
+way we built render was already really well suited&nbsp;
+to AI applications and that's because you know&nbsp;&nbsp;
+
+00:09:50.160 --> 00:09:55.520
+there there are providers that are more front-end&nbsp;
+focused like Verscell with Nex.js JS or you know&nbsp;&nbsp;
+
+00:09:55.520 --> 00:10:04.240
+even Cloudflare with their CDN and workers. Um and&nbsp;
+people building AI native apps realize that what&nbsp;&nbsp;
+
+00:10:04.240 --> 00:10:10.880
+they actually want is longunning backends. What&nbsp;
+they want is stateful applications. And that&nbsp;&nbsp;
+
+00:10:10.880 --> 00:10:19.040
+is what render was already doing production grade&nbsp;
+reliable scalable stateful applications. And so&nbsp;&nbsp;
+
+00:10:19.040 --> 00:10:26.160
+we just naturally saw a lot of people migrate&nbsp;
+over to us from these front-end platforms and&nbsp;&nbsp;
+
+00:10:26.160 --> 00:10:34.160
+um and they started using us for the core parts of&nbsp;
+their AI applications. Now they're interested&nbsp;&nbsp;
+
+00:10:34.160 --> 00:10:42.000
+in having render build uh the newer parts of&nbsp;
+their stack that are pure AI native. For example,&nbsp;&nbsp;
+
+00:10:42.000 --> 00:10:48.480
+we just launched a workflows product that&nbsp;
+allows people to coordinate agent tasks really&nbsp;&nbsp;
+
+00:10:48.480 --> 00:10:54.320
+easily. We're going to be launching&nbsp;
+sandboxes and an AI gateway. But the all of&nbsp;&nbsp;
+
+00:10:54.320 --> 00:11:01.360
+these things came later after the core uh basis of&nbsp;
+the platform uh turned out to be really suitable&nbsp;&nbsp;
+
+00:11:01.360 --> 00:11:08.240
+for AI native applications and then the users who&nbsp;
+are using us uh for those things uh they want they&nbsp;&nbsp;
+
+00:11:08.240 --> 00:11:12.880
+don't want five different platforms uh for each&nbsp;
+individual feature they want everything to be on&nbsp;&nbsp;
+
+00:11:12.880 --> 00:11:19.600
+render and so now that's making us go into u this&nbsp;
+new direction and expand our platform to make it&nbsp;&nbsp;
+
+00:11:19.600 --> 00:11:26.400
+work even better uh for additional AI use cases.&nbsp;
+Thank you. There is a real argument that the AI&nbsp;&nbsp;
+
+00:11:26.400 --> 00:11:32.720
+infrastructure market agentic runtimes longunning&nbsp;
+compute workflow orchestration is exactly where&nbsp;&nbsp;
+
+00:11:32.720 --> 00:11:37.840
+AWS, Google and Microsoft are putting their&nbsp;
+biggest bets right now. They have more employees,&nbsp;&nbsp;
+
+00:11:37.840 --> 00:11:44.080
+more data centers, more capital than you. Why&nbsp;
+does render will win this specific fight? Yeah,&nbsp;&nbsp;
+
+00:11:44.080 --> 00:11:51.120
+while all of those things might be true, uh the&nbsp;
+focus of Render versus the focus of AWS and&nbsp;&nbsp;
+
+00:11:51.120 --> 00:11:58.000
+others is very different. We focus always on&nbsp;
+application developers and more recently on&nbsp;&nbsp;
+
+00:11:58.000 --> 00:12:06.800
+agents building infrastructure and applications&nbsp;
+and uh the hyperscalers have always focused on&nbsp;&nbsp;
+
+00:12:06.800 --> 00:12:12.320
+uh the people who understand how to spin up&nbsp;
+Kubernetes clusters and VMs right that's who they&nbsp;&nbsp;
+
+00:12:12.320 --> 00:12:21.120
+build for. We think that Render wins this in&nbsp;
+this new era because more and more companies want&nbsp;&nbsp;
+
+00:12:21.120 --> 00:12:30.160
+to move really fast. They're able to write&nbsp;
+code much faster. And they cannot wait on this&nbsp;&nbsp;
+
+00:12:30.160 --> 00:12:37.200
+bottleneck that DevOps teams tend to create in any&nbsp;
+larger company. And so they want to be able to use&nbsp;&nbsp;
+
+00:12:37.200 --> 00:12:42.960
+Render and products like it to get 
+their&nbsp;applications to production as quickly as possible.&nbsp;&nbsp;
+
+00:12:42.960 --> 00:12:49.040
+in a way that is stable and secure and&nbsp;
+reliable. So that's how we're seeing&nbsp;&nbsp;
+
+00:12:49.040 --> 00:12:56.480
+workloads migrate to render from say AWS or&nbsp;
+Google or other places uh because of the ability&nbsp;&nbsp;
+
+00:12:56.480 --> 00:13:02.240
+of application teams to move really fast and&nbsp;
+because they have no patience anymore for all the&nbsp;&nbsp;
+
+00:13:02.240 --> 00:13:08.400
+additional undifferiated work that they have to&nbsp;
+do on AWS and others. Makes sense. Thank you. You&nbsp;&nbsp;
+
+00:13:08.400 --> 00:13:14.560
+said publicly that the AI bubble, if it is one, is&nbsp;
+still different from crypto because real value is&nbsp;&nbsp;
+
+00:13:14.560 --> 00:13:21.120
+being created. I want to push on that. Right now,&nbsp;
+we seeing companies raise 100x revenue multiples&nbsp;&nbsp;
+
+00:13:21.120 --> 00:13:27.520
+on AI products that are 6 months old. As a founder&nbsp;
+who just raised at $1.5 billion, are you worried&nbsp;&nbsp;
+
+00:13:27.520 --> 00:13:32.480
+about the environment you're operating in? Well,&nbsp;
+I'd be worried about Render if we had raised at&nbsp;&nbsp;
+
+00:13:32.480 --> 00:13:39.920
+100x revenue, but we didn't. It was much lower&nbsp;
+than that. I don't worry about the environment&nbsp;&nbsp;
+
+00:13:39.920 --> 00:13:46.960
+from a Render standpoint because again,&nbsp;
+Render is not just an AI platform. There are&nbsp;&nbsp;
+
+00:13:46.960 --> 00:13:52.000
+companies out there that are calling themselves&nbsp;
+the AI cloud. And some of the companies I've&nbsp;&nbsp;
+
+00:13:52.000 --> 00:13:58.800
+mentioned so far definitely do that. And in many&nbsp;
+ways, we are not calling ourselves AI native or&nbsp;&nbsp;
+
+00:13:58.800 --> 00:14:04.880
+AI cloud. For us, we're again, we're focused&nbsp;
+on application developers and the things they're&nbsp;&nbsp;
+
+00:14:04.880 --> 00:14:10.560
+building and whether that's AI or not. Uh we're&nbsp;
+always going to be there and we're helping them&nbsp;&nbsp;
+
+00:14:10.560 --> 00:14:15.120
+with AI applications because that's what a lot of&nbsp;
+them are building now. But let's say the bubble&nbsp;&nbsp;
+
+00:14:15.120 --> 00:14:19.920
+burst, people will still be building other kinds&nbsp;
+of applications and render will still be there&nbsp;&nbsp;
+
+00:14:19.920 --> 00:14:25.120
+to help them put those applications in the cloud&nbsp;
+easily, quickly because again, we're not just an&nbsp;&nbsp;
+
+00:14:25.120 --> 00:14:31.520
+AI cloud. We're an application cloud. Nice.&nbsp;
+Thank you. Uh for the investors watching this,&nbsp;&nbsp;
+
+00:14:31.520 --> 00:14:37.120
+walk me through render business model. You&nbsp;
+charge based on compute usage. Yes. As AI&nbsp;&nbsp;
+
+00:14:37.120 --> 00:14:42.640
+applications need more compute, your revenue grows&nbsp;
+automatically with your customers. Yes. Is it the&nbsp;&nbsp;
+
+00:14:42.640 --> 00:14:47.920
+right way to think about it and what does it&nbsp;
+mean for margin as you scale? Yeah. Yeah. Great&nbsp;&nbsp;
+
+00:14:47.920 --> 00:14:55.280
+question. So yes, so the fact that render has&nbsp;
+grown revenue so quickly uh is because of two&nbsp;&nbsp;
+
+00:14:55.280 --> 00:15:03.520
+things one certainly um AI applications often&nbsp;
+need a lot more compute and they need long-running&nbsp;&nbsp;
+
+00:15:03.520 --> 00:15:08.880
+stateful compute and that's what render does&nbsp;
+really well so we're really well suited and more&nbsp;&nbsp;
+
+00:15:08.880 --> 00:15:14.000
+people are building those kinds of applications&nbsp;
+on render the second thing is that a lot of our&nbsp;&nbsp;
+
+00:15:14.000 --> 00:15:21.520
+customers and a lot of newer customers or even a a&nbsp;
+lot of large enterprises they're all now building&nbsp;&nbsp;
+
+00:15:21.520 --> 00:15:31.680
+a lot more software um thankfully uh you Cloud&nbsp;
+code and codecs and um other uh coding agents have&nbsp;&nbsp;
+
+00:15:31.680 --> 00:15:38.960
+become quite good at this point and so they allow&nbsp;
+companies uh to build a lot of bespoke software&nbsp;&nbsp;
+
+00:15:38.960 --> 00:15:44.960
+faster. So there's just much more software in the&nbsp;
+world and as a result of that a lot of it is being&nbsp;&nbsp;
+
+00:15:44.960 --> 00:15:51.200
+deployed in the cloud and uh when you have&nbsp;
+to deploy so much software in the cloud you just&nbsp;&nbsp;
+
+00:15:51.200 --> 00:15:59.120
+don't have the patience to wait for AWS DevOps um&nbsp;
+you go for the fastest way to do it in a way that&nbsp;&nbsp;
+
+00:15:59.120 --> 00:16:04.160
+is still reliable that is still secure that&nbsp;
+can scale with you over time and that's where&nbsp;&nbsp;
+
+00:16:04.160 --> 00:16:12.080
+Render tends to be the best fit. So we think&nbsp;
+that Render is benefiting obviously in general&nbsp;&nbsp;
+
+00:16:12.080 --> 00:16:19.040
+from this but the usagebased model uh is what's&nbsp;
+really driving our growth and um we we believe&nbsp;&nbsp;
+
+00:16:19.040 --> 00:16:25.440
+that then the amount of software in the world will&nbsp;
+continue to grow um exponentially which puts us in&nbsp;&nbsp;
+
+00:16:25.440 --> 00:16:31.920
+a pretty good position I'd say. Great. Thank you.&nbsp;
+Yeah. General Catalyst, Bessemer, Addition - there's a&nbsp;&nbsp;
+
+00:16:31.920 --> 00:16:38.000
+serious institutional investors at $1.5 billion&nbsp;
+valuation. They're expecting a very specific return.
+
+00:16:38.000 --> 00:16:42.800
+How does the exit path look like for Render and&nbsp;
+what do you tell investors when they ask about&nbsp;&nbsp;
+
+00:16:42.800 --> 00:16:51.200
+timeline? Yeah, look - I think all of these&nbsp;
+investors have invested with the long-term&nbsp;&nbsp;
+
+00:16:51.200 --> 00:17:02.240
+expectation of a uh uh public listing for vendor&nbsp;
+And um I think that makes sense. I think given&nbsp;&nbsp;
+
+00:17:02.240 --> 00:17:08.960
+our plans, given our goals of becoming a&nbsp;
+generational company, uh being public is&nbsp;&nbsp;
+
+00:17:08.960 --> 00:17:16.960
+certainly something that uh we aspire to. However,&nbsp;
+we're still a few years away from that. And&nbsp;&nbsp;
+
+00:17:16.960 --> 00:17:24.800
+in terms of timelines though our investors um when&nbsp;
+they invested in vendor they believed in the core&nbsp;&nbsp;
+
+00:17:24.800 --> 00:17:30.320
+thesis behind the company and they knew that I&nbsp;
+was doing this for the very long term. So we&nbsp;&nbsp;
+
+00:17:30.320 --> 00:17:37.280
+chose investors who were uh much more likely to be&nbsp;
+patient uh and they are and they have been and so&nbsp;&nbsp;
+
+00:17:37.280 --> 00:17:44.080
+they're not pushing us to uh you know uh go public&nbsp;
+next year because they want to make sure that when&nbsp;&nbsp;
+
+00:17:44.080 --> 00:17:49.840
+the company does go public that we're really well&nbsp;
+positioned for it. And that doesn't mean&nbsp;&nbsp;
+
+00:17:49.840 --> 00:17:57.920
+that they don't raise urgency as any good investor&nbsp;
+should. And and we take that very seriously.&nbsp;&nbsp;
+
+00:17:57.920 --> 00:18:03.920
+So we're going as fast as we can but as far&nbsp;
+as going public is concerned I tend to say a&nbsp;&nbsp;
+
+00:18:03.920 --> 00:18:10.160
+few years and you know we'll see um how quickly we&nbsp;
+get there. Nice. Thank you. You mentioned that you&nbsp;&nbsp;
+
+00:18:10.160 --> 00:18:15.920
+want Render to be what you called a generational&nbsp;
+company something that overlasts you that is a&nbsp;&nbsp;
+
+00:18:15.920 --> 00:18:22.320
+very different mindset from most founders who&nbsp;
+think about exit in 5 years. Where does it come&nbsp;&nbsp;
+
+00:18:22.320 --> 00:18:30.000
+from and does it ever create tension with your&nbsp;
+investors? Yeah, it comes from uh the original&nbsp;&nbsp;
+
+00:18:30.000 --> 00:18:35.360
+motivation which is you know after Skype I could&nbsp;
+have done anything and I chose this problem&nbsp;&nbsp;
+
+00:18:35.360 --> 00:18:40.640
+because it really spoke to me and because I really&nbsp;
+wanted to solve it and it's been 8 years and I'm&nbsp;&nbsp;
+
+00:18:40.640 --> 00:18:46.160
+more excited than I was at the start to solve this&nbsp;
+problem partly because we've been able to build a&nbsp;&nbsp;
+
+00:18:46.160 --> 00:18:51.920
+really strong foundation of you know over&nbsp;
+5 million developers on the platform um and just&nbsp;&nbsp;
+
+00:18:51.920 --> 00:19:00.320
+really, really strong revenue growth. I don't&nbsp;
+think that doing this over the long term and&nbsp;&nbsp;
+
+00:19:00.320 --> 00:19:08.240
+being a generational company is at odds with&nbsp;
+the sense of urgency that we have day-to-day. And&nbsp;&nbsp;
+
+00:19:08.240 --> 00:19:15.600
+so we still operate with a level of urgency that&nbsp;
+that I think any great any good founder would&nbsp;&nbsp;
+
+00:19:15.600 --> 00:19:21.040
+want their company to have because there's so much&nbsp;
+to do and um you always have certain opportunities&nbsp;&nbsp;
+
+00:19:21.040 --> 00:19:25.520
+in the market that you want to take when they&nbsp;
+arise and we're going through one such period&nbsp;&nbsp;
+
+00:19:25.520 --> 00:19:30.960
+where we have to capture the market and there's&nbsp;
+an there's a time component to it and so we're&nbsp;&nbsp;
+
+00:19:30.960 --> 00:19:38.240
+still trying to hire really quickly. We're still&nbsp;
+trying to grow really quickly. But yes,&nbsp;&nbsp;
+
+00:19:38.240 --> 00:19:44.160
+it's a generational company because the market&nbsp;
+is so massive and because the broad scale of what&nbsp;&nbsp;
+
+00:19:44.160 --> 00:19:53.680
+we're trying to do uh is so ambitious. Nice. Thank&nbsp;
+you. Versel just raised at $9.3 billion. Fly.io,&nbsp;&nbsp;
+
+00:19:53.680 --> 00:19:59.760
+Railway, and a dozen others are all going&nbsp;
+after the same developer infrastructure market.&nbsp;&nbsp;
+
+00:19:59.760 --> 00:20:06.640
+when you look at that competitive landscape,&nbsp;
+who do you actually worry about and why? Yeah,&nbsp;&nbsp;
+
+00:20:06.640 --> 00:20:18.640
+I don't actually worry about anyone uh in that&nbsp;
+list. Partly because we've seen people&nbsp;&nbsp;
+
+00:20:18.640 --> 00:20:23.520
+migrate to us from all of those providers for&nbsp;
+different reasons. I think when it comes to&nbsp;&nbsp;
+
+00:20:23.520 --> 00:20:29.360
+say Verscell again much more of a front-end&nbsp;
+focused cloud um all kinds of limitations in&nbsp;&nbsp;
+
+00:20:29.360 --> 00:20:35.200
+their architecture that they're trying to change&nbsp;
+but uh render already built for this new moment&nbsp;&nbsp;
+
+00:20:35.200 --> 00:20:40.000
+and for long-running stateful workloads and so&nbsp;
+we see a lot of migrations from them to us for&nbsp;&nbsp;
+
+00:20:40.000 --> 00:20:45.840
+that reason. And then for the other providers&nbsp;
+you mentioned a lot of people migrate to us&nbsp;&nbsp;
+
+00:20:45.840 --> 00:20:51.200
+because render has proven to be the most reliable&nbsp;
+scalable platform that scales with you as you&nbsp;&nbsp;
+
+00:20:51.200 --> 00:20:58.080
+grow without any kind of availability issues&nbsp;
+or bugs or the other things that these platforms&nbsp;&nbsp;
+
+00:20:58.080 --> 00:21:07.120
+tend to run into. Um, the company I still think&nbsp;
+about uh is AWS because I think that for render&nbsp;&nbsp;
+
+00:21:07.120 --> 00:21:18.000
+we want to make sure that people change their&nbsp;
+defaults and AWS is the default for any serious&nbsp;&nbsp;
+
+00:21:18.000 --> 00:21:23.760
+successful large company and it'll take a while&nbsp;
+for us to change that default. But I think the&nbsp;&nbsp;
+
+00:21:23.760 --> 00:21:30.080
+the current situation is helping us because a lot&nbsp;
+of people are realizing that again to move fast&nbsp;&nbsp;
+
+00:21:30.080 --> 00:21:39.920
+and to really um succeed in the market and to out&nbsp;
+compete u other uh companies you need a cloud that&nbsp;&nbsp;
+
+00:21:39.920 --> 00:21:46.640
+can move fast with you and that can help you scale&nbsp;
+uh and you really don't have the time to spend&nbsp;&nbsp;
+
+00:21:46.640 --> 00:21:53.440
+building up very large DevOps teams and having&nbsp;
+every application be managed by them on AWS. 
+
+00:21:53.440 --> 00:21:59.280
+And so in from that standpoint, I'm hoping&nbsp;
+that over time the defaults change. And you know,&nbsp;&nbsp;
+
+00:21:59.280 --> 00:22:05.520
+I'm already some people are calling AWS the&nbsp;
+boomer cloud. And with generational change,&nbsp;&nbsp;
+
+00:22:05.520 --> 00:22:10.000
+these these defaults do tend to change and&nbsp;
+I'm that's what I'm hoping for. Fair enough.&nbsp;&nbsp;
+
+00:22:10.000 --> 00:22:17.440
+Thank you. You have been running Render for 7&nbsp;
+years. In 2018, you were writing code alone.&nbsp;&nbsp;
+
+00:22:17.440 --> 00:22:24.400
+Now we have 60+ people, institutional investors,&nbsp;
+OpenEye as a partner. What is the hardest thing&nbsp;&nbsp;
+
+00:22:24.400 --> 00:22:31.360
+about running render today that had nothing to do&nbsp;
+with technology? Yeah. Well, most things that I&nbsp;&nbsp;
+
+00:22:31.360 --> 00:22:41.840
+do these days have to do with people instead of&nbsp;
+technology. And when I was uh starting the company&nbsp;&nbsp;
+
+00:22:41.840 --> 00:22:49.680
+I could solve every problem myself and I could&nbsp;
+write the code, I could fix it, I could talk to&nbsp;&nbsp;
+
+00:22:49.680 --> 00:22:55.920
+the customers, um keep iterating. We didn't&nbsp;
+even have AI coding back then. I wish we did,&nbsp;&nbsp;
+
+00:22:55.920 --> 00:23:04.800
+but uh but whatever. But now as we&nbsp;
+grow to now we're actually more than 100 people&nbsp;&nbsp;
+
+00:23:04.800 --> 00:23:10.400
+and beyond we will likely double in size&nbsp;
+this year. It is all about making sure that we're&nbsp;&nbsp;
+
+00:23:10.400 --> 00:23:17.360
+all moving in the same direction. That why we're&nbsp;
+here and how we're going to achieve our goals&nbsp;&nbsp;
+
+00:23:17.360 --> 00:23:23.840
+even what our goals are that that is clear to&nbsp;
+every single person in the company. At a very&nbsp;&nbsp;
+
+00:23:23.840 --> 00:23:28.960
+basic fundamental level because that's the only&nbsp;
+way you can move you can move the entire company&nbsp;&nbsp;
+
+00:23:28.960 --> 00:23:34.960
+in the right direction and that's the only way you&nbsp;
+can move fast. Where people make the decisions&nbsp;&nbsp;
+
+00:23:34.960 --> 00:23:41.120
+that you would make or they make better decisions.&nbsp;
+But to in order to do that, they need the&nbsp;&nbsp;
+
+00:23:41.120 --> 00:23:47.200
+context that you have as CEO. And so a lot of my&nbsp;
+job is about making sure that everyone has the&nbsp;&nbsp;
+
+00:23:47.200 --> 00:23:51.920
+context that they need to do their jobs. And then&nbsp;
+a lot of it is about continuing to hire amazing&nbsp;&nbsp;
+
+00:23:51.920 --> 00:23:59.280
+people and build Render into the kind of place&nbsp;
+that people want to work at over the very very&nbsp;&nbsp;
+
+00:23:59.280 --> 00:24:04.480
+long term. And so the first engineer I hired in&nbsp;
+2018, he still works here because he's very&nbsp;&nbsp;
+
+00:24:04.480 --> 00:24:12.080
+excited about Render's opportunity and he's he&nbsp;
+sees that we have so much more ahead of us. Nice.&nbsp;&nbsp;
+
+00:24:12.080 --> 00:24:17.280
+Very interesting. And very cool that the person&nbsp;
+you hired in 2018 is still working. How many&nbsp;&nbsp;
+
+00:24:17.280 --> 00:24:22.320
+people are now working? I think 110 people now.&nbsp;
+Oh wow. That's a lot. Yeah. And then we're still&nbsp;&nbsp;
+
+00:24:22.320 --> 00:24:27.280
+hiring. We're continuing to hire. Continuing.&nbsp;
+Yeah. It's we have a lot to do. So we want to make&nbsp;&nbsp;
+
+00:24:27.280 --> 00:24:32.240
+sure we can grow the team to do everything that we&nbsp;
+want to do this year. How does your hiring process&nbsp;&nbsp;
+
+00:24:32.240 --> 00:24:39.040
+is working? Yeah, we we've got a really strong&nbsp;
+uh team of recruiters. Okay. Um and then a lot&nbsp;&nbsp;
+
+00:24:39.040 --> 00:24:46.400
+of people at Render also refer their friends and&nbsp;
+um they they enjoy working here and so referrals&nbsp;&nbsp;
+
+00:24:46.400 --> 00:24:51.840
+often end up being still a great source for us to&nbsp;
+hire. Okay. And all people work in San Francisco&nbsp;&nbsp;
+
+00:24:51.840 --> 00:24:59.280
+or in No, it we're actually uh only about 40% in&nbsp;
+SF. Um and the rest of the company is distributed&nbsp;&nbsp;
+
+00:24:59.280 --> 00:25:05.200
+mostly across the US. Yeah. Yeah. One moment I&nbsp;
+found very interesting in your story. You built&nbsp;&nbsp;
+
+00:25:05.200 --> 00:25:13.440
+Jupiter notebook product got 10,000 users and then&nbsp;
+you sold it through a tweet. Yes. Most founders&nbsp;&nbsp;
+
+00:25:13.440 --> 00:25:19.120
+would have kept going. What made it easy for you&nbsp;
+to walk away from something that was working?
+
+00:25:21.200 --> 00:25:36.480
+So it was all about what else I was interested&nbsp;
+in at the time. And while I built Jupiter Crestle&nbsp;&nbsp;
+
+00:25:36.480 --> 00:25:42.080
+which was the name of the company uh built that&nbsp;
+Jupyter notebook company for data scientists.&nbsp;&nbsp;
+
+00:25:42.080 --> 00:25:51.440
+I still identified more deeply with application&nbsp;
+developers and and I also knew that the problem&nbsp;&nbsp;
+
+00:25:51.440 --> 00:25:58.240
+that application developers were facing&nbsp;
+that problem was much bigger in scope and&nbsp;&nbsp;
+
+00:25:58.240 --> 00:26:06.800
+it was more ambitious and it would have it would&nbsp;
+take longer to solve. So because I had that&nbsp;&nbsp;
+
+00:26:06.800 --> 00:26:14.080
+I kept coming back to wanting to solve that&nbsp;
+problem instead. And that made it easy&nbsp;&nbsp;
+
+00:26:14.080 --> 00:26:20.560
+for me to say okay you know what while this&nbsp;
+is working I would rather spend all my time on&nbsp;&nbsp;
+
+00:26:20.560 --> 00:26:25.280
+this other thing which I find which I know I'm&nbsp;
+going to find personally much more fulfilling&nbsp;&nbsp;
+
+00:26:25.280 --> 00:26:32.080
+for the next 20, 30,40,50 years. So that was&nbsp;
+an actually that was one of the easier decisions&nbsp;&nbsp;
+
+00:26:32.080 --> 00:26:37.920
+I've made. Nice. Thank you. Last question. three&nbsp;
+years from now, if Render is everything you want&nbsp;&nbsp;
+
+00:26:37.920 --> 00:26:44.560
+it to be, how does that company look like?&nbsp;
+Revenue, product, market position. I'd love to&nbsp;&nbsp;
+
+00:26:44.560 --> 00:26:50.640
+hear your vision. Absolutely. We were just&nbsp;
+talking about defaults. 3 years from now,&nbsp;&nbsp;
+
+00:26:50.640 --> 00:26:57.760
+I would love for Render to be one of the defaults&nbsp;
+that every company looks at, not just startups,&nbsp;&nbsp;
+
+00:26:57.760 --> 00:27:03.600
+but also larger companies. And AWS&nbsp;
+being the default is no longer true. 
+
+00:27:03.600 --> 00:27:08.000
+In terms of revenue, of course, you know, we're&nbsp;
+likely doing hundreds of millions of dollars&nbsp;&nbsp;
+
+00:27:08.000 --> 00:27:15.680
+and are making sure that we're&nbsp;
+growing at a really healthy uh rate still.&nbsp;&nbsp;
+
+00:27:15.680 --> 00:27:21.920
+And we're probably hundreds of people at this&nbsp;
+company because there's just so much to do. And&nbsp;&nbsp;
+
+00:27:21.920 --> 00:27:28.960
+we're still building and this is really&nbsp;
+important. We're still building the best product&nbsp;&nbsp;
+
+00:27:28.960 --> 00:27:34.640
+in the market for application developers uh to&nbsp;
+grow and scale their applications. And at that&nbsp;&nbsp;
+
+00:27:34.640 --> 00:27:39.680
+point I think you could also include agents in the&nbsp;
+mix um as we have started doing now. So not just&nbsp;&nbsp;
+
+00:27:39.680 --> 00:27:46.960
+for application developers but also for agentic&nbsp;
+software uh to deploy and run in the cloud. 
+
+00:27:46.960 --> 00:27:54.080
+All of those things, if they're true, I'd be pretty happy at the three-year mark. Anurag,&nbsp;&nbsp;
+
+00:27:54.080 --> 00:27:59.840
+this was a really good conversation. Render is one&nbsp;
+of those companies where business fundamentals,&nbsp;&nbsp;
+
+00:27:59.840 --> 00:28:05.280
+the market timeline, and the product all in&nbsp;
+line in a way you don't see very often. Thank&nbsp;&nbsp;
+
+00:28:05.280 --> 00:28:09.360
+you for your time and for having us here&nbsp;
+at your office. Thank you. This is great.
+

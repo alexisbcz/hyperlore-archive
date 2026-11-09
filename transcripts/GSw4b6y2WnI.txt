@@ -1,0 +1,1029 @@
+[0] We really have to weed out
+[0] people they you either love our
+[3] culture or you don't. And so the
+[3] easiest thing to do is not to
+[7] teach people, oh, this is the
+[7] way to operate. It's just to
+[10] hire people that love to operate
+[10] that way. Hello, hello, welcome
+[14] to the term sheet Podcast. I'm
+[14] Allie Garfinkel, senior writer
+[17] here at Fortune, and every week
+[17] on the term sheet podcast, we go
+[20] over the latest news insights in
+[20] venture capital, private equity
+[24] and startups every week. This is
+[24] where you can listen to what
+[28] makes some of the most exciting
+[28] figures in the private markets
+[31] tick. We did actually have some
+[31] really big tech news this week.
+[35] Open AI and Nvidia struck $100
+[35] billion deal that essentially
+[39] amounts to building data centers
+[39] together every time I think the
+[42] open AI numbers can't get
+[42] bigger. Lo and behold, they do.
+[45] And it's important to say that,
+[45] as much as Microsoft has been a
+[48] key supporter of open AI, if
+[48] sometimes a complicated one,
+[52] this, as much as anything, is a
+[52] very, very key endorsement of
+[56] open AI's trajectory. In my
+[56] view, 100 billion dollars coming
+[60] out of Nvidia that's on the top
+[60] of the world that is pretty,
+[63] pretty affirming. It also makes
+[63] a lot of sense right open AI
+[68] needs this infrastructure if
+[68] they're trying to sort of meet
+[70] the demand for chat GPT and
+[70] Nvidia needs this infrastructure
+[73] too.
+[75] Now, in a turn of events that
+[75] I'm sure will not surprise you
+[78] at all, we are going to continue
+[78] talking about AI, and I'm very
+[82] excited about this week's guest.
+[82] He is the CEO of one of the most
+[86] read term sheets of this past
+[86] year, Paul cobblestone, CEO and
+[89] co founder of supabase. Now, for
+[89] those not in the know, supabase
+[94] is an open source database
+[94] infrastructure built on
+[97] Postgres. Now what all that
+[97] means, in short, is that it
+[99] allows users to more easily
+[99] build a back end for apps. Now
+[104] the company is actually, in
+[104] certain ways, at least named
+[107] after the Nicki Minaj song Supa
+[107] bass, but don't let that fool
+[111] you. The last time I talked to
+[111] Paul, he had just raised $200
+[114] million in a series D led by
+[114] Excel, and Currently he is
+[119] rumored to perhaps be raising
+[119] another round that values the
+[122] company at $5 billion
+[125] now, I know what you're
+[125] thinking. You're like Allie.
+[127] You're bringing on more and more
+[127] of these AI people, but I
+[130] promise you, Paul is not what
+[130] you expect. Paul is from New
+[133] Zealand, among other things, but
+[133] he is also a person with a
+[136] genuinely global perspective
+[136] that I found really compelling
+[139] and learned a lot from and I
+[139] think he will, too. Here's Paul.
+[144] Paul, welcome to the term sheet
+[144] Podcast. I'm so excited you're
+[148] here because I get to ask you a
+[148] question that is going to
+[152] facilitate. I know one of my
+[152] favorite answers because I've
+[155] asked it to you before. Paul,
+[155] why is your company called
+[157] supabase
+[160] Just starting with the important
+[160] ones. Well, yeah, that one was a
+[164] mistake that stuck. Basically,
+[164] we were trying to find a name, a
+[169] domain name, which is hard. And
+[169] of course, I had a base where
+[173] that database company
+[176] and I was looking for some sort
+[176] of superlative base, ultra base,
+[179] or one of these, and Super Bass
+[179] was taken.
+[184] So I saw super bass, and it kind
+[184] of sounded like the Nicki Minaj
+[189] song,
+[191] which I thought was funny at the
+[191] time, because we could make a
+[194] bunch of memes about it. My co
+[194] founder and I, so I bought it,
+[198] and then it just we put the
+[198] website on it. And
+[202] unfortunately, there was no
+[202] opportunity to change it after I
+[205] kind of went to the front page
+[205] of hack and use so we stuck with
+[208] it. So basically, what you're
+[208] telling me is you came up with
+[213] the name and thought, Oh, this
+[213] is kind of fun. And then, and
+[217] then, and then it was the name.
+[217] And I mean, have you ever
+[219] considered changing it, or is
+[219] it? It's super bass, it's Nicki
+[222] Minaj related, for in
+[222] perpetuity, I consider changing
+[226] it very often. Unfortunately,
+[226] it's going to be very hard to do
+[230] that at this stage. But I don't
+[230] know if Super Bass inspires a
+[233] lot of kind of enterprise ready
+[233] confidence, like I can't imagine
+[238] in board meetings of fortune 100
+[241] how supabase gets pitched but,
+[244] but we'll worry about that, I
+[244] guess when we get to IPO, well,
+[249] it seems to well. It seems to be
+[249] working out. It seems to be
+[252] working out pretty well so far.
+[252] Tell us. You know, before we
+[256] started recording you and I were
+[256] talking about how there's
+[258] actually never been a better
+[258] time for database nerds. What
+[260] exactly does supabase do, and
+[260] why is it sort of ripping in
+[264] this environment? Yeah, so
+[264] supabase is a Postgres developer
+[268] platform. Basically, we host
+[268] databases. So we host data for
+[272] people. You can imagine, if
+[272] you're going to build an
+[275] application, maybe like
+[275] Instagram, you need somewhere to
+[278] store all your users, store
+[278] their friends and all these sort
+[281] of things. So you can put it in
+[281] a database. And the world's most
+[284] popular database is called
+[284] Postgres, and that's what we
+[288] host. We host this open source
+[288] database for people and so, so
+[293] yeah, that's pretty, pretty much
+[293] what we we offer. Supabase is
+[297] much like other technology we've
+[297] covered on this podcast.
+[300] Podcast underpinning so many
+[300] different things that people
+[303] don't even know about. And
+[303] Postgres is actually something
+[306] that is underpins so many, so
+[306] many of our lives. And we just
+[309] we for if you're not a technical
+[309] person. So like to the most non
+[312] technical person you can
+[312] imagine, Paul, yeah. Why does
+[315] Postgres matter? Why do
+[315] databases matter?
+[318] Yeah, okay, so easiest to start
+[318] with databases. If you imagine a
+[322] business, right, what you see is
+[322] kind of like the tip of the
+[325] iceberg. That's the website.
+[325] Imagine Twitter, right? There's
+[329] this website and there's an app
+[329] that you interact with, but
+[332] underneath that is this, like
+[332] whole infrastructure, and as you
+[335] go down, it gets kind of deeper
+[335] and more technical. That's the
+[339] bottom of the iceberg. And right
+[339] at the bottom of this is a
+[342] database where everything is
+[342] stored, and all the connections
+[345] are made, and a lot of the heavy
+[345] logic that's going on and the
+[348] engineering goes into that. So
+[348] that's the database. Basically
+[353] every business in the world
+[353] needs a database to operate.
+[357] There's very few that can
+[357] operate without it, without
+[360] data.
+[361] The reason why Postgres is kind
+[361] of the leader now is because of
+[366] this thing in technology called
+[366] open source. It's a bit unique.
+[370] I remember I described it to my
+[370] wife, who's not a
+[374] technical person, and she was
+[374] fascinated by it, because it's
+[377] kind of a weird thing within
+[377] technology, where a bunch of
+[381] geeks like to contribute their
+[381] free time to things for free,
+[386] like they'll build things for
+[386] free, and there's a whole
+[390] ecosystem of technology that
+[390] people are spending time
+[393] building, putting it out on the
+[393] world. Anyone can see the code,
+[397] they can take the code, and it's
+[397] kind of like the sharing economy
+[400] within the technical space. So
+[400] the world's most popular
+[404] database is an open source one
+[404] now, and it's been around for
+[408] about 40 years in various
+[408] variations and and now it's kind
+[415] of having a moment. And that's
+[415] where we were super lucky around
+[418] 2020, we could see that it was
+[418] kind of becoming very popular,
+[423] and we thought, well, we want to
+[423] build a database company. How
+[425] can we get back? And so we
+[425] wanted to build our company
+[428] around Postgres. So a lot of our
+[428] success has been really trying
+[433] to contribute back to the
+[433] postgres ecosystem, and then the
+[436] success of Postgres giving us a
+[436] really good tailwind. Paul,
+[441] I want to go back to the
+[441] beginning. When were you first
+[445] aware of open source software,
+[445] and did it coincide with the
+[448] desire to be an entrepreneur, or
+[448] did they happen separately?
+[452] Oh, well, that's a good
+[452] question.
+[456] I can't remember. Well, I've
+[456] been a techie for kind of my
+[459] whole life. Well, since I left
+[459] school, I learned, like, kind of
+[465] self taught, and did it
+[465] throughout my college
+[469] while I was studying. So I guess
+[469] I learned about
+[474] open source. Then I can't
+[474] actually remember. It's just
+[476] kind of quite prolific. The one
+[476] thing, the one story I can give
+[481] back from those days is I
+[481] actually started with databases.
+[485] It was a different one. It's one
+[485] that's created by Microsoft, and
+[491] I loved the idea of these kind
+[491] of real time databases. And I
+[494] thought, Oh, I'm my father's an
+[494] entrepreneur. And I thought, I'm
+[497] going to build a business about
+[497] databases. This is when I
+[500] probably was about 20 years old,
+[500] and we don't have, I'm from New
+[505] Zealand, we don't really have
+[505] the concept of startups, or at
+[507] least we didn't when I was
+[507] growing up, and so I just kind
+[512] of pitched this idea, wrote in
+[512] an email and sent it off to a
+[516] millionaire that I knew, saying,
+[516] Hey, can I he was a tech
+[519] millionaire, And I didn't really
+[519] know him that well, but I
+[523] pitched him the idea, and he
+[523] promptly said it was a terrible
+[526] idea, because it's kind of
+[526] already been done so, so that's
+[530] kind of funny, because now 15
+[530] years later, or 20 years later,
+[535] I'm basically doing that. I went
+[535] back and read it, and it's
+[538] essentially what I was pitching
+[538] as kind of this real time
+[541] database system with a good
+[541] dashboard and everything. So
+[545] it's completely full circle. And
+[545] also, I love you sending it off
+[548] to a random tech millionaire
+[548] that you know. Just saying, you
+[553] seem to know something about
+[553] this. I didn't know what else to
+[556] do. You know, how do you go
+[556] about starting a company. There
+[560] was no sort of Y Combinator or
+[560] anything at at in New Zealand,
+[565] so definitely, no, no. It took
+[565] me a long time to even realize
+[569] what the term startup was. The
+[569] Super base story I wrote last
+[573] year was among our most read
+[573] term sheets of of the last 12
+[577] months.
+[578] Yeah, cool, right.
+[581] But since our story in April, I
+[581] know supabase has grown quite a
+[583] bit. Many attribute that a
+[583] growth to vibe coding walk us
+[586] through the kind of growth
+[586] you've seen since, since
+[589] raising, since raising $200
+[589] million yeah, so that kicked off
+[593] in December.
+[596] Believe it or not, we only
+[596] talked, I think what, not even.
+[600] Six months ago, so it's pretty
+[600] wild
+[604] since December. Like
+[604] everything's just been a bit of
+[608] a rocket ship internally.
+[611] The kind of vibe coding, we
+[611] classify them as AI builder
+[613] platforms, and they have. They
+[613] started with bold, lovable v
+[617] zero, these ones, and then
+[617] they've proliferated. And
+[620] throughout many of them, they've
+[620] chosen supabase to be the back
+[623] end of the tool. And largely
+[623] because we provide this ease of
+[628] use, but we also provide a bunch
+[628] of tools that you need, logins
+[631] and everything. So it's very
+[631] easy to put a generate an app on
+[635] top of supabase the the entire
+[635] back end for you. And this has
+[640] meant that even as more pop up,
+[640] they've started to use supabase.
+[645] And because of this, there's
+[645] this halo effect where people
+[648] just sign up. They hear about
+[648] it. We've kind of become more
+[651] popular, even for non developers
+[651] today, I think the ratio of sign
+[656] ups, direct sign ups to AI
+[656] builders, maybe there's about
+[660] 30%
+[662] directly attributable to AI
+[662] builders. So it's kind of had a
+[666] growth effect, but our sign up
+[666] rate has just skyrocketed. I
+[669] think we're nearly at 4 million
+[669] developers now, up from in
+[674] September, 1 million developers.
+[674] So it's, it's just, yeah, it
+[678] feels like a bit of a rocket
+[678] ship. I was going to say, how do
+[681] you handle that level of, that
+[681] level of good chaos, because
+[686] that kind of growth has to be,
+[686] has to be a vortex, yeah. Well,
+[693] that's not easy. That's been the
+[693] thing. Everything's going great,
+[697] like the numbers all look good.
+[697] The main thing that breaks is,
+[701] like, you know, for us, a really
+[701] good customer experience. We,
+[709] for example, we never used to,
+[709] we have never said that we will
+[713] support the free tier. We have a
+[713] very generous free free plan,
+[717] and we said we won't do support
+[717] for the free plan. Well, we
+[719] actually did. We always
+[719] supported the customers. If
+[722] anyone was blocked, we'd jump
+[722] in. Unfortunately, we can barely
+[725] keep up with the paid customers.
+[725] Now you just can't. You know,
+[728] the number of customers this
+[728] year will go up maybe 6x paying
+[733] customers or 7x and you can't
+[733] ramp your own team that fast.
+[738] And so our head count, the
+[738] number of people inside supabase
+[741] will go from 95 to about 200
+[744] that's already going to break a
+[744] lot of things, you know. So
+[748] largely it's just trying to
+[748] figure out the cultural shifts,
+[751] how the team shifts, and we're
+[751] trying to do that very well with
+[756] we have very low attrition. We
+[756] have very we kind of hire people
+[760] who are very high skilled. We
+[760] don't do interns or anything,
+[763] because we're an async culture,
+[763] it's too hard. So we keep our
+[767] bar really high. But just
+[767] growing that fast internally
+[770] causes a lot of breakages. And
+[770] how do you manage those
+[774] breakages? Well,
+[777] you kind of have to let them
+[777] break to be honest. You expect
+[781] them to break in certain ways,
+[781] and you you know it's going to
+[785] be the case. You can't really
+[785] resist it. You have to preempt
+[788] it. A lot of it's actually not
+[788] so much. I think we've got so
+[793] many experienced people. They
+[793] understand things break, things
+[797] are a problem. The hardest thing
+[797] is the culture.
+[801] Because people come in, you
+[801] can't really teach culture, you
+[804] know, you you have a way of
+[804] operating like we're very flat.
+[808] We're almost like an open source
+[808] community ourselves internally.
+[812] We don't have much management
+[812] structure, and so the way we
+[815] operate is very trust based. And
+[815] you figure things out, we'll
+[819] throw you a bunch of problems,
+[819] we'll give you as much rope as
+[821] you can take. And people come in
+[821] and they're being at other
+[824] companies that they bring their
+[824] own culture and no fault of
+[828] their own, but they know a way
+[828] of operating that is not the
+[832] super base way. And so a lot of
+[832] my time this year is just making
+[836] sure that they understand this
+[836] is how we do it. We're low ego.
+[839] We'll give you a bunch of work,
+[839] work hard. We're not going to
+[842] check in. You're on your own.
+[842] Tell us if you're getting
+[845] swamped these type of problems.
+[845] Yeah, a lot of people kind of
+[849] getting close to burnout, but
+[849] but managing. And we just jump
+[853] in where, where we can walk us
+[853] through how you're thinking
+[856] about hiring, how you tend to
+[856] think about hiring generally,
+[859] and how that might be evolving
+[859] right now in this environment.
+[863] Yeah, well, the first thing is,
+[863] because I said we're remote,
+[869] we're actually completely async.
+[869] We, like each team might have
+[874] one meeting per week. So for an
+[874] engineer in a team, they might
+[877] have 30 minutes face time with
+[877] someone, and all the rest of
+[881] their time throughout the week
+[881] is just working on their own.
+[884] Now that's amazing for some
+[884] people, and it's horrific for
+[887] others. We learned that pretty
+[887] early on, and we had people who
+[891] thought, Oh, I've done remote
+[891] work, and what they meant was,
+[895] throughout covid, I worked in a
+[895] company where we're all in the
+[898] same time zone, and we learned.
+[900] Into that. No, we really have to
+[900] weed out people they you either
+[903] love our culture or you don't.
+[903] And so the easiest thing to do
+[907] is not to teach people, oh, this
+[907] is the way to operate. It's just
+[910] to hire people that love to
+[910] operate that way. So you either
+[914] fit our culture to start off
+[914] with, or you don't. The other
+[917] really important thing in the
+[917] culture is this, kind of egoless
+[923] and meritocratic like
+[923] environment or way of operating,
+[927] the way that manifests, usually
+[927] is because we're async, like,
+[932] for example, you might
+[935] suggest something, and it could
+[935] be a day or two before someone
+[940] comes and reads your message,
+[940] and then they'll push back.
+[942] They'll have another idea. And
+[942] in that moment, of course, like
+[946] you have had a day to brew on
+[946] your idea, which seems amazing
+[950] because you've probably not
+[950] thought too much about other
+[953] ways of doing it. So you need to
+[953] basically be quite egoless that,
+[957] oh, we're looking for the truth,
+[957] the best solutions. We're not
+[961] looking for my solution, and
+[961] there's always so many ways to
+[964] solve technical problems. So a
+[964] lot of it's finding people who
+[967] really fit that type of egoless
+[967] truth seeking mentality. One of
+[971] the things I found really
+[971] interesting the first time we
+[973] met was this sort of very clear
+[973] hiring philosophy. You had that,
+[977] for instance, you were
+[977] interested in hiring other
+[979] founders. Where does that come
+[979] from, and why has it stuck?
+[984] Founders are great because they
+[984] kind of, you can leave them to
+[988] their own devices, so we'll just
+[988] give them whole problems, and
+[992] then we just don't need to check
+[992] in with them. The other thing
+[996] is, they're really low ego. So,
+[996] yeah, I talked about being low
+[1000] ego. One of the things that we
+[1000] really commonly see is that we
+[1004] have to interview for it. It's
+[1004] very hard to figure out, but the
+[1006] place where you see it the most
+[1006] is right at the end, when you're
+[1009] making the offer. So when they
+[1009] start negotiating for their
+[1012] contract, and you think mostly
+[1012] it's because of the numbers, but
+[1016] actually the thing that happens
+[1016] is they go from talking to a
+[1019] founder right at the end and
+[1019] being very nice to talking to
+[1022] someone from the people team.
+[1022] But little do they know that the
+[1025] person that they're talking to
+[1025] is on the people team, is my
+[1028] sister. So, so I'm going to
+[1028] learn about, you know, how
+[1032] they're negotiating and what
+[1032] type of person they are at their
+[1035] final stage. And the tendency
+[1035] has always been, you know, we've
+[1038] gone all the way through this
+[1038] journey. You know, they seemed
+[1043] good up until now. Should we
+[1043] take them now? It's just a hard
+[1046] no. We're so good at saying no
+[1046] at that stage, that's awesome. I
+[1049] just love the idea too, of
+[1049] because so many people act
+[1053] poorly in thinking they're going
+[1053] to get away with it. But I love
+[1056] the idea of being like,
+[1056] actually, that was my sister and
+[1059] she and I were having dinner the
+[1059] other night. And no, actually,
+[1062] it does matter how you treat
+[1062] other people, especially when
+[1065] nobody's looking Yeah, yeah,
+[1065] it's like that saying, what's
+[1069] the one like? You want to know
+[1069] what a person's like, see how
+[1072] they treat the waiter. There's
+[1072] pretty much the same analogy. Is
+[1076] a no assholes policy, especially
+[1076] important when you're dealing
+[1080] with developer communities. I
+[1080] No, I don't know like for
+[1087] hiring, maybe, but there's a lot
+[1087] of companies like we this
+[1090] filters out into our social
+[1090] media. There's a lot of
+[1093] competitors in our space. And
+[1093] you'll see often, actually, in
+[1097] the early days, we counter
+[1097] position it against another
+[1100] company called Firebase, which
+[1100] is was acquired by Google.
+[1104] They're kind of a full back end
+[1104] as a service as well. We counter
+[1107] position against them because it
+[1107] was very good for our growth. We
+[1110] became part of the
+[1113] the the narrative when you're
+[1113] getting started, should I choose
+[1116] Firebase? Should I do super
+[1116] base? This one's open source.
+[1118] This one's not so it became a
+[1118] very good mechanism. And what we
+[1122] had is a lot of
+[1125] our community were saying, hey,
+[1125] you know, super base is amazing.
+[1130] Firebase sucks. And we were
+[1130] jumping in and saying, Hey, no,
+[1134] actually, Firebase is actually
+[1134] pretty awesome. I love it, which
+[1137] is true you we don't need to be
+[1137] an asshole. We got a lot of
+[1141] inspiration from Firebase, and
+[1141] we just want to make something
+[1143] better. And I think there's a
+[1143] lot of companies, especially in
+[1148] the tech, tech Twitter world,
+[1148] that take the opposite approach.
+[1151] They'll shit on any competitor,
+[1154] which I think is a bit low
+[1154] integrity. Most of our
+[1157] competitors are actually pretty
+[1157] good. We've got differences,
+[1161] but,
+[1163] but, you know, like, it's kind
+[1163] of obvious that that person's
+[1167] one sided. And I think you fall
+[1167] into a little bit of audience
+[1170] capture, if you know the term on
+[1170] social media, where, if you're
+[1174] an asshole, then you get a lot
+[1174] of views, and you continue being
+[1177] an asshole. We just haven't done
+[1177] that throughout our journey.
+[1180] It's popular. It's actually
+[1180] popular. Yeah, it's sort of in
+[1184] vogue right now. I think a lot
+[1184] of people would even argue. But
+[1187] the reason I ask about it, in
+[1187] terms of developer community
+[1190] specifically, is because there's
+[1190] sort of no hiding developers are
+[1193] either devoted fans or your
+[1193] worst critics. And I think a lot
+[1197] of people other side of tech
+[1197] don't know. I mean, do you think
+[1199] people have.
+[1200] Out of tech are sort of aware of
+[1200] the power of developer
+[1202] communities?
+[1205] I don't know. I think I live in
+[1205] a bubble. I live in the tech
+[1208] bubble. Are you aware? I didn't.
+[1208] I wasn't before I was covering
+[1213] this, really not, no, no, not at
+[1213] all. I was. I was sort of
+[1216] floored by not only the kind of
+[1216] fandom, but the the
+[1222] level of the level of
+[1222] commitment, sort of to a
+[1225] specific tool, or even a
+[1225] specific entrepreneur, I think
+[1228] it's really interesting from a
+[1228] from a socio cultural lens, but
+[1232] it's also, it also means that
+[1232] there's a lot of responsibility
+[1235] in a weird way, kind of like a
+[1235] journalist, you're beholden to
+[1238] an audience, for sure, for sure.
+[1238] Yeah, you, you know, like, this
+[1243] week, I'm kind of backing off
+[1243] Twitter, but I know in the back
+[1246] of my mind, like that's to the
+[1246] detriment of the company, like I
+[1250] need to be the voice of Super
+[1250] Bass, I definitely think, like,
+[1254] yes, it's prolific in tech. You
+[1254] have to have these
+[1257] personalities, the culture
+[1257] personality, and you kind of
+[1261] have a vibe. Every company has a
+[1261] vibe. I do see it in some other
+[1264] companies I went to, like the
+[1264] figma conference and seeing all
+[1268] the like design people turn up
+[1268] that was like a cult, like
+[1272] following, I was impressed.
+[1272] They're actually now my North
+[1275] Star of how to be as a company.
+[1275] Getting that level of fandom as
+[1280] we continue to grow, would be
+[1280] amazing. The goal is to be figma
+[1283] esque. It sounds like for
+[1283] developers, yeah, which I think
+[1287] Stripe has done pretty well. But
+[1287] like the people that I when I
+[1291] went to the figma conference, it
+[1291] was like a festival. People were
+[1295] flying in from all over the
+[1295] world, and like they, I don't
+[1299] know, it felt very, very fun. If
+[1299] you could sort of look to the
+[1304] future, what is one question you
+[1304] would really want the answer to,
+[1309] what is the AI trend in 2026 I
+[1309] think,
+[1313] you know, we're a company that
+[1313] rides every wave that's pretty
+[1316] much our vibe. So, you know, I'm
+[1316] always trying to build for the
+[1321] next wave. That's pretty much
+[1321] it. So I don't want to log too
+[1325] far ahead in the future. I know
+[1325] databases will be around in 50
+[1328] years, that's for sure, and I'm
+[1328] pretty confident it'll be
+[1332] Postgres. So our intent is to
+[1332] build a generational company.
+[1336] The steps to get there are just
+[1336] year on year, writing the next
+[1340] wave. That's pretty much it. And
+[1340] we've done it so far for five
+[1343] years, we've had
+[1344] cycles, and I think vibe coding
+[1344] is here to stay. There's
+[1349] definitely a new mechanism for
+[1349] getting started,
+[1352] and it's this, AI is kind of a
+[1352] super cycle this wave, but
+[1356] there'll be so many more like
+[1356] this throughout the next five
+[1359] years. I just, I actually don't
+[1359] know what they are, and I have
+[1363] no clue how to pick them. I
+[1363] think there's stuff in memory,
+[1366] in voice that's still emerging,
+[1366] so something in there. And I
+[1370] think a lot of the stuff around
+[1370] glasses, lenses, geospatial
+[1374] mapping, which I spent a lot of
+[1374] time actually doing in another
+[1377] startup, I'm pretty excited for
+[1377] that work. So yeah, I think
+[1381] mostly I want to know where the
+[1381] technical, tech, technological
+[1384] trends are going. And we and
+[1384] you've mentioned vibe coding.
+[1388] What has most surprised you
+[1388] about the rise of vibe coding,
+[1392] particularly the way it's sort
+[1392] of, it's sort of crushed it over
+[1396] the last six months. I'm pretty
+[1396] surprised at how successful
+[1400] people are able to be and by the
+[1400] numbers as well, actually, the
+[1405] retention rates for people who
+[1405] are in that classification of AI
+[1409] builder are the same as our non
+[1409] AI builder, like our traditional
+[1413] developer community and so so
+[1413] they're coming in, and they're
+[1417] using it, and they're becoming
+[1417] successful. And like the nice
+[1421] thing, you know, we were
+[1421] discussing this before, is, for
+[1424] a long time, five years, I've
+[1424] been hanging out with my friends
+[1427] and and I just talk about
+[1427] startups or whatever. And now,
+[1431] like, I was just in Zurich, and
+[1431] I was catching up with a friend
+[1434] who I haven't seen in three
+[1434] years, and I was telling him,
+[1436] you know, business is going
+[1436] good. He said, Oh, what's the
+[1439] name of your startup? And I
+[1439] said, Ah, supabase. And he said,
+[1442] Oh, I'm a customer, and he had
+[1442] built an app, and he was showing
+[1444] me he's not a techie. So it's
+[1444] quite cool. The surprising thing
+[1448] is how successful people are
+[1448] becoming, yeah. And I think, you
+[1453] know, the common saying is, you
+[1453] know, only get better from here.
+[1457] I think this is, you know, the
+[1457] case, of course, like this is
+[1461] just the first year of vibe
+[1461] coding where it's going to
+[1465] evolve, and the kind of audience
+[1465] that's going to grow from this,
+[1468] the tooling, as it gets better
+[1468] and better around traditional
+[1472] developer workflows, I think, is
+[1472] going to enable a lot of new
+[1475] builders in the world. Well,
+[1475] it's sort of to this end. It
+[1477] sounds like part of what's
+[1477] happening is it's sticky, both
+[1481] if you're someone who's very
+[1481] technically savvy and if you're
+[1484] not, do you? Do you worry about
+[1484] how it affects programming jobs?
+[1490] No, not at all. I think, like
+[1490] what we see is most of the time
+[1496] it's actually
+[1498] like, for example, our API.
+[1500] AI engineers will come in and
+[1500] they might do a little prototype
+[1502] on, like, lovable or V zero or
+[1502] something like that, and then
+[1505] they'll kick it over to the
+[1505] design team. And what we're
+[1508] seeing from like enterprise
+[1508] customers is they're running
+[1511] these huge hackathons, but it's
+[1511] not for their engineers. It's
+[1514] actually just for, like, the
+[1514] product managers. So what they
+[1516] want to do is kind of help the
+[1516] engineers, like they want to,
+[1521] they've got a ton of ideas that
+[1521] they want to brainstorm on, and
+[1524] then they still need all the
+[1524] engineers to like build out all
+[1529] of these things. So
+[1531] I imagine it's just going to
+[1531] mean that there are more things
+[1535] for engineers to build later on,
+[1535] thinking about your experiences
+[1539] in past startups. And in this
+[1539] one, if there's one piece of
+[1542] advice for founders listening,
+[1542] what is it, I think, like the
+[1546] number one thing as a founder,
+[1546] which is one of our principles,
+[1550] is Kaizen, which is the Toyota
+[1550] Production System principle. It
+[1555] means continuous improvement
+[1555] from the CEO to the factory line
+[1559] worker. And it just means, like,
+[1559] iterate, iterate, iterate,
+[1562] that's pretty much it. So we do
+[1562] that everything in supabase is
+[1567] an iteration. I can't remember
+[1567] any time we've done like a big
+[1571] bang change. Everything is like
+[1571] some small process, improvement,
+[1575] some iteration that went well.
+[1575] We try things. They don't really
+[1579] go well. We stick with them. We
+[1579] do a small improvement. And a
+[1582] lot of our most successful
+[1582] things like launch weeks, for
+[1585] example. Now everyone does
+[1585] launch weeks in the developer
+[1589] community. Well, they were from
+[1589] some small idea that we had five
+[1594] years ago, and they kind of
+[1594] proliferated out, and they're
+[1597] being one of our most successful
+[1597] ways of marketing to the
+[1600] developer community. But you
+[1600] know, if we had just done one
+[1604] and seen the how it was kind of
+[1604] not that great, it wouldn't we
+[1609] could have dropped it at that
+[1609] point. But we always have this
+[1611] idea, well, how can we improve
+[1611] it? And that's, that's the
+[1615] mentality that you have to bring
+[1615] to a startup, because if you try
+[1618] to do too much too soon, you'll
+[1618] just have a failure to launch
+[1623] well. And it's one of the things
+[1623] that's very interesting about it
+[1626] is because a lot of the time the
+[1626] discourse around startups is the
+[1628] goal is to be a unicorn. The
+[1628] goal is to be a multi billion
+[1631] dollar company, but the only way
+[1631] to get there is through small,
+[1634] iterative choices every single
+[1634] day, 100%
+[1639] now I have to ask you a New
+[1639] Zealand question as being, How
+[1642] has being from New Zealand
+[1642] informed your perspective as a
+[1645] founder? Because I think it has.
+[1645] I think if you say it, I don't
+[1648] know if I'm going to believe
+[1648] you, but I don't,
+[1652] I don't know because, like,
+[1652] that's kind of like, you know,
+[1655] asking someone or telling, like,
+[1655] an American, you know, you've
+[1658] got an accent, and the Americans
+[1658] like, No, I don't have an
+[1661] accent. You've got an accent. So
+[1661] I don't know, but I do hear all
+[1665] the time from the from the
+[1665] people that I'm fundraising
+[1669] from, they always say, You're a
+[1669] really unconventional founder. I
+[1673] don't know if that's a
+[1673] compliment or not, but I've
+[1675] heard it every single
+[1675] fundraising. So so I must be
+[1680] doing something different. Well,
+[1680] also, I mean, to be fair, what
+[1683] can you tell the story of how
+[1683] you of how Excel, Excel pursued
+[1687] you really quickly, because it
+[1687] is a great story that is New
+[1689] Zealand centric. That was a fun
+[1689] one. We had raised in, I think,
+[1694] September last year, and then
+[1694] we, like, I just wanted to put
+[1698] my head down, get to work. So I
+[1698] went to New Zealand, and I was
+[1702] working, and then kind of Excel,
+[1702] one of the guys at Excel, Gonzo
+[1708] was messaging me, and he said,
+[1708] you know, we're pretty keen on
+[1711] Super pace. And I said, well,
+[1711] sorry, but you adapt to flight
+[1714] in New Zealand. I'm busy
+[1714] working. And he said, All right,
+[1716] I'm booking my next flight. And
+[1716] I was like, What do you mean?
+[1720] And he so he literally sent the
+[1720] message, and
+[1724] I promptly tweeted that, so that
+[1724] the world knew. And then he came
+[1730] and I was trying to work, and I
+[1730] just said, you know, here are
+[1733] kind of our terms. We're not
+[1733] planning to raise for it yet, so
+[1736] you've got to, like, meet the
+[1736] terms. And so after a while, he
+[1740] went away, and he then kind of
+[1740] called in the big guns, Arun,
+[1745] the partner had on the growth
+[1745] team. And then Arun said, Well,
+[1748] I'm coming to New Zealand too.
+[1748] So I went to Queenstown. We
+[1752] spent the night, had dinner
+[1752] together, and then, yeah, we met
+[1756] the next day, and they, they
+[1756] gave me a term sheet. So it was
+[1759] pretty, pretty cool, actually
+[1759] getting a tip sheet in New
+[1762] Zealand, then flying all the way
+[1762] to New Zealand. I thought that
+[1764] was pretty cool, and I promised
+[1764] them that probably the next
+[1768] board meeting, next year, we'll,
+[1768] we'll do that in New Zealand, so
+[1771] it will repeat, repeat the
+[1771] process. Well, the thing I was
+[1775] floored by when I heard this
+[1775] story is getting to New Zealand
+[1778] is actually not easy from
+[1778] California or from anywhere. And
+[1782] it's not just getting to New
+[1782] Zealand. This is not Auckland. I
+[1785] live in a place called Wanaka,
+[1785] and it's this mountain town.
+[1788] You're gonna fly to Queenstown,
+[1788] and you gotta drive over these
+[1791] mountains. It's it's not easy.
+[1791] So and Gonzo did it twice, so I
+[1796] knew they were committed. That's
+[1796] why I knew I could drive the
+[1799] price up. I.
+[1800] Yeah, well, and I know I also
+[1800] I'd forgotten that you tweeted
+[1804] it out, but that also does make
+[1804] sense, you live a lot of life
+[1808] online. So my final question for
+[1808] you, Paul, what meme describes
+[1811] your life right now?
+[1814] Yeah, it's probably that the
+[1814] guy's sitting in the fire.
+[1817] Everything's on fire. This is
+[1817] okay, you know, I think that's
+[1822] kind of how it feels within a
+[1822] startup. But the nice thing
+[1825] about being async is you can
+[1825] kind of turn your computer off
+[1827] and you would just pretend like
+[1827] all of that's not happening. So,
+[1831] so yeah, it's all going good.
+[1831] It's all going like it's all
+[1836] breaking, but in a good way. So
+[1836] this is okay. This is okay,
+[1838] okay. This is okay. Okay, okay.
+[1838] This is okay, Paul. Thank you so
+[1842] so much. Thanks, Ally. I
+[1842] appreciate it.
+[1845] a lot about a lot of things.
+[1845] There's some of the obvious
+[1851] ones, the future of programming,
+[1851] vibe, coding, AI, but it also
+[1855] made me think a lot about work,
+[1855] about company culture. Paul has
+[1859] clearly built a unique company
+[1859] culture at supabase that is
+[1862] definitionally remote. And I
+[1862] think there is something to be
+[1865] learned from that. I actually
+[1865] think perhaps there is nothing
+[1869] more quietly radical in this
+[1869] moment, especially in the midst
+[1872] of this sort of wider return to
+[1872] Office push, than saying no, we
+[1875] are a global, remote company
+[1875] where everyone finds ways to
+[1879] come together. Thanks so much
+[1879] for listening. We'll see you
+[1881] soon. Term sheet is a Fortune
+[1881] magazine podcast. Our producer
+[1885] editors are Hélène Estèves and
+[1885] Allison Rodgers. Our executive
+[1888] producer is Lydia Randall. Our
+[1888] production manager is Sam
+[1891] Freund. Fortune's head of video
+[1891] is Adam Banicki.

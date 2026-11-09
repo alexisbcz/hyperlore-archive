@@ -1,0 +1,970 @@
+[0] all right uh thanks a lot for uh being
+[3] here guys I understand this is the last
+[4] Talk of the day um we just witnessed the
+[7] repr provisioning in real time of a new
+[9] projector so that was pretty cool that
+[12] held us back for a little bit but no
+[14] more so what I'm going to talk about
+[16] today is essentially some of the
+[19] fundamental realizations that I've made
+[21] about real time systems after working on
+[23] them for a long time um and some of the
+[27] things that I've noticed that can help
+[30] bu guys turn existing Legacy systems
+[32] that are not real time uh into more
+[35] modern faster self-updating
+[38] systems so um You probably usually hear
+[43] uh real time being thrown around a lot
+[45] and it's usually conflated with the
+[48] technologies that we use for
+[49] implementing that so you think of socket
+[52] AO and you think oh it's a real-time
+[54] framework and then you think of uh maybe
+[57] a restful API and you think oh maybe
+[59] that's not not real time so I I think
+[63] it's hard to debate the merits of a
+[65] real-time system or how to implement
+[66] them without specifically that just
+[69] turned blue uh without specifically
+[72] talking about what it is uh and and what
+[74] are the defining characteristics of that
+[76] system so I've come to the conclusion uh
+[80] that it has to do with two fundamental
+[82] things so one is uh showing data updates
+[85] to the user with minimal latency this
+[88] has to do with the network networks that
+[90] are in place and the communication
+[91] channel that is established between a
+[94] user and the server so the user has to
+[97] think that the application is alive that
+[99] the data that they're looking at is not
+[100] stale uh sometimes you might be chatting
+[104] with someone in the same room um it
+[106] happens a lot of at offices these days
+[108] where everyone is in a system like slack
+[110] or or IRC and as soon as you are done
+[114] typing you're expecting that that
+[115] information will be conveyed to someone
+[117] else with minimal
+[118] latency um the second aspect of a
+[121] real-time system is that you will
+[123] usually find is that not only is it fast
+[126] at retrieving data in the sense that if
+[128] you take a specific message and you
+[130] measure how long it takes to get
+[131] delivered it's not enough to look at
+[133] just the delivery of that message and
+[135] measure its latency you also need to
+[137] take into account that the system that
+[140] presents the information has to get the
+[143] data on behalf of the user so if I'm
+[146] just looking at uh the data source if
+[148] I'm just looking at your web application
+[150] it should be able to absorb data updates
+[153] without the user being involved so this
+[156] basically means the elimination of
+[159] things like pull to refresh so if I'm
+[161] looking at a news feed I shouldn't be I
+[163] shouldn't have to press a refresh button
+[166] I shouldn't even have to think about
+[168] whether there is a synchronization
+[170] problem uh between my data set and that
+[173] of the server so once these two
+[176] conditions are um satisfied we can think
+[178] of a realtime system is something that's
+[180] fast and self- updating so this is a
+[184] very good guideline to go by when you're
+[186] designing your own systems even when it
+[188] comes to designing your UI it doesn't
+[190] matter if you're uh working the network
+[192] architecture or the topologies if you or
+[195] if you're thinking about what the
+[197] application looks like or how it behaves
+[200] um it's useful to go by these two
+[202] premises it has to be fast and
+[203] self-updating an example that I'd like
+[206] to give uh in terms of how this reflect
+[210] in a day-to-day programming task it
+[212] would be implementing a very simple
+[214] stock ticker uh the most naive
+[216] implementation that we can think of um
+[219] is starting with some basic markup that
+[222] would uh represent a widget and then we
+[225] create a JavaScript function that is in
+[227] charge of getting the data from some
+[228] restful
+[230] API and it'll do this by basically
+[233] setting a timer to get the data every 15
+[235] seconds um and on the right hand side
+[238] I'm going to present a log of what would
+[240] happen over time if we consider every
+[243] second uh after the user has loaded this
+[245] page what would happen so let's say that
+[248] we get the information about the price
+[250] um it's initially 500 um then we request
+[255] uh the stock again we render that price
+[259] we know that we know that the source of
+[261] truth of the server in this case is
+[262] saying the price is 500 that's what the
+[265] Apple stock is today um after we get it
+[268] we're going to wait 15 seconds seconds
+[270] so every second that goes by after this
+[274] the price could have changed at any
+[275] point the user meanwhile is waiting
+[279] until the next cycle of refresh so in
+[282] this case there's going to be an added
+[284] artificial latency of let's say about 10
+[287] seconds because we know that from the
+[290] perspective of the server the price had
+[292] already
+[293] changed so the user just Waits
+[296] needlessly until the request happens
+[299] again
+[300] and the uh and the price is surrendered
+[303] so this is an example of actually a
+[306] self-updating UI and in a lot of cases
+[309] whenever we're evolving a legacy system
+[311] to make it real time the most naive
+[313] approach is to do this just make it pull
+[316] on the background and try to update some
+[318] UI as soon as that response comes back
+[321] and then schedule it for sometime in the
+[324] future but obviously it's not fast
+[326] enough and that that'll make most users
+[330] or real-time gigs like ourselves are
+[332] pretty sad so we can think of a naive
+[335] optimization to uh to handle this
+[337] scenario which is why not just schedule
+[340] the update right away in fact a lot of
+[342] systems that to the user look real time
+[345] are actually executing some sort of
+[347] polling cycle uh if we examine how most
+[349] of the architectures in our current
+[351] systems
+[352] work and that would satisfy both
+[355] premises now so like if if we schedule
+[357] it right after it would be fast is
+[360] because we're also accounting for an
+[362] extra roundt trip so we're accounting
+[365] for the user having to ask so it needs
+[368] to send a message to the server to get
+[370] the latest
+[371] information but it it does become fast
+[374] somewhat fast and self-
+[375] updating the problem here is that the
+[378] server is is a source of truth of this
+[381] information in that example the stock
+[384] API or the servers or Brokers will know
+[389] about the price before the user actually
+[391] thinks of asking and we know that the
+[393] user had the intent of knowing or was
+[396] interested in that um information we can
+[398] consider it a subscription of sorts so
+[403] basically we can eliminate that extra
+[407] step of having to ask because the server
+[409] is the one in charge of basically
+[411] managing the
+[413] information and the other downside of
+[416] this approach is that by by basically
+[418] making a lot of getto requests of over
+[419] time we're increasing the load
+[421] significantly because we're creating a
+[423] lot of messages that servers need to
+[425] handle so your load on the server will
+[427] look artificially higher because you're
+[429] just asking and asking and asking again
+[432] and it's much better to actually have
+[435] the server push data to us with a
+[437] technology like what I created or any
+[439] other um mechanism for essentially
+[442] establishing a by directional socket and
+[444] that essentially solves uh the problem
+[447] of making a a a system that's fast
+[451] that's self-updating and that minimizes
+[454] rures between server and
+[456] client an analogy that I like to give uh
+[459] to discuss this sort of system is that
+[461] um if we focus on the language of what
+[464] we're discussing uh when we talk about
+[467] servers when we talk about clients when
+[469] we talk about requests when we talk
+[471] about fulfilling
+[472] requests um an example that comes to
+[475] mind is that of for example a restaurant
+[478] so let's assume
+[481] that
+[482] the let's see there's some latency in
+[486] the presentation here you can see it on
+[488] this side um so let's think about uh
+[492] someone going to a restaurant and
+[494] performing a
+[497] request in um in the case of for
+[502] example a cafe you go you sit down and
+[505] you ask for the menu so we can
+[509] essentially establish that as a get
+[512] request from the client to the server
+[514] saying get me the
+[516] menu so that's the first step of how
+[518] most of our applications are architected
+[520] these days and usually there is a some
+[524] sort of handshake process by which the
+[526] server says okay 200 response here's the
+[529] options that you can subscribe to The
+[532] Next Step would be the actual request of
+[535] an item so in this case I'm going to
+[537] Ping a uh let's say a get Bagel
+[541] endpoint and the server will say Okay
+[544] accepted please wait while it goes to
+[547] the back end and talks to other services
+[550] in this case let's consider the kitchen
+[552] a backend web
+[555] service and let's say uh in this in the
+[558] sense of like most of your day-to-day
+[560] systems this would mean implementing
+[562] some sort of job queue and the petition
+[564] goes in and eventually that work is
+[567] going to be done and we're expecting
+[568] some sort of result later on
+[571] so between that handshake of web
+[574] services internally there's it could
+[576] also be restful it could be based on
+[578] some other protocol but essentially the
+[581] work is scheduled to be done and
+[583] fulfilled at some point in the
+[585] future so what this means is that the
+[588] user is now in a waiting State and needs
+[590] to find out about the progress of the
+[593] action so what what's happening to that
+[596] order SL description that just happened
+[599] and this is where um usually we find
+[602] that most apis implements in sort of
+[604] status endpoint that is meant to be
+[607] queried over
+[608] time and for this example it would mean
+[611] for going to uh the server and the
+[615] server asking its internal service
+[617] what's the status of the order and this
+[620] would happen again and again obviously
+[622] over time and the frequency with which
+[625] the client requests can increase so it
+[629] can result in a lot of bottlenecks it
+[632] can result obviously in a poor quality
+[634] of
+[635] service um
+[638] and essentially basically you're not
+[642] designing the ideal services to uh
+[645] convey information as fast as possible
+[648] uh the problem becomes worse as more
+[651] clients join uh this service so they
+[655] will start uh queuing up uh status
+[659] requests with higher rates of frequency
+[662] that actually the server can keep up and
+[665] this results in server congestion so
+[667] this is the basically the uh main
+[669] downfall or main fall back or sorry or
+[672] main uh disadvantage of trying to evolve
+[675] a restful type API into a real-time
+[678] system usually it's going to result in
+[680] non-ideal levels of speed and increases
+[683] in server congestion which may will make
+[685] scaling
+[687] slower the the most trivial solution to
+[689] this problem is
+[691] actually one obviously push to the
+[694] clients without asking so refactoring
+[696] your entire back end to perform data
+[699] push but an alternative um to this which
+[704] would be the the kitchen says okay
+[707] here's the food and emits a message that
+[709] gets directed all the way to the client
+[711] aware of that
+[713] subscription so we can think of a system
+[715] like events uh or sakio to fix this
+[719] but if we if we look at our previous
+[722] characteristics that we defined that the
+[724] system has to be fast and self- updating
+[727] we actually find that if we reduce the
+[730] latency between the client and the
+[734] server so for example in the in in our
+[737] analogy would mean that the cl the
+[738] server is actually very very physically
+[740] close to the to the person that's asking
+[743] and therefore even if the client is
+[745] asking very frequently the responses
+[748] will be fulfilled very
+[751] fast
+[753] or in order to avoid server congestion
+[757] we can also increase the server capacity
+[759] so we're also addressing our second
+[761] problem which is if we have a lot of
+[763] people asking we actually have a lot of
+[765] nodes in their proximity this is the
+[768] most traditional and most effective
+[771] workaround that there is in order to
+[773] make a system and and you'll find that
+[775] in the real world a lot of web
+[776] applications have actually evolved in in
+[779] this way they haven't
+[781] necessarily uh completely revamped their
+[783] architectures but they have made sure
+[786] that congestion and proximity SL latency
+[790] is a a solved
+[792] problem so although not ideal um this
+[796] would make our secondary factoring
+[798] actually work in practice and it's worth
+[801] reminding ourselves that real time
+[802] becomes about the user experience uh and
+[805] not so much about the underlying
+[808] implementation
+[811] and the implications of this are
+[812] actually quite profound when it comes to
+[814] designing our
+[816] systems the speed of how frequently the
+[819] data updates so the the speed of that
+[821] first fast um point that we made will
+[825] actually determine a gradient of how
+[827] real time your system is an example that
+[829] i' like to give is when Google Docs
+[832] first came out it was their
+[834] implementation was quite different from
+[835] what it is
+[836] today and ether pad an alternative to it
+[840] came out in 2009 saying we're actually
+[843] really real time and that's our main
+[845] differentiator from Google Docs it
+[847] wasn't that they were contesting the
+[849] definition of real time they were just
+[850] saying that they were more real time
+[852] than Google Docs and they went on to
+[855] describe that Google Docs was actually
+[857] implementing a a a polling cycle of 5 to
+[860] 15 seconds so this meant that character
+[862] by character synchronization was
+[864] actually impossible because you actually
+[866] had to wait 15 seconds
+[869] so uh Google Docs violated our um
+[873] basically two principles in the sense
+[874] that it was self-updating but it was not
+[877] fast enough and they actually had to
+[879] revamp and reconsider uh their
+[881] architecture by actually reimplementing
+[884] uh their uh synchronization mechanism
+[888] and their concurrency
+[892] algorithm they also uh in ter in terms
+[895] of um minimizing the latency implemented
+[898] uh long polling when it was actually
+[899] used to be polling so today we can think
+[902] of the equivalent as web
+[904] sockets so if we try to approach a
+[906] definition I think it's it's a really
+[909] good idea to stick with the language of
+[912] what we're discussing so uh it took me a
+[916] while to realize this but thinking about
+[918] the actual words that we're discussing
+[920] or mentioning was really helpful in me
+[923] understanding how to simplify this
+[924] problem so we're talking about real time
+[928] real as in staying stick staying
+[931] truthful to the source of truth of our
+[933] application and time means being aware
+[937] that there is different steps at which
+[940] the data is changing at different um
+[942] clients and servers at the same time and
+[945] we have to reason about how to uh make
+[948] the timelines merge so that we give the
+[952] results that the user expects in the
+[954] fastest possible way so implementing a
+[957] real-time system becomes a
+[959] synchronization problem as opposed to uh
+[962] how it's usually thought of which is a
+[964] messaging problem it becomes a lot use
+[967] more useful to think about synchronizing
+[969] data and what are the challenges as far
+[971] as concurrency and fall tolerance as
+[975] opposed to thinking about what transport
+[977] I'm going to utilize to transport uh to
+[979] essentially deliver those messages back
+[982] and forth so a trivial example that I
+[985] came across recently was while I was at
+[988] a Internet of Things conference uh we
+[991] were discussing how for example the
+[993] world will become connected through the
+[996] internet even in its most fundamental
+[999] ways of your everyday life so using a
+[1002] light bulb uh can actually be um a
+[1005] switch to a light bulb can actually work
+[1007] over the internet as opposed to the
+[1009] traditional wiring that we think of
+[1011] today when we utilize it um and there's
+[1014] actually been a lot of examples of
+[1016] systems like this recently that you can
+[1018] control fromer phones
+[1020] Etc and I I try to stick with this
+[1023] example because it um marks a
+[1026] fundamental challenge that we have with
+[1028] our internet systems today that we
+[1030] actually don't have in the real world so
+[1033] let's assume that a user wants to turn
+[1035] on a light bulb that and this light bulb
+[1037] is actually an Internet connected light
+[1039] bulb it's not wired directly uh it's
+[1042] going over your Wi-Fi connection and uh
+[1047] it costs you 100 bucks on
+[1050] Kickstarter so um let's now consider a
+[1053] switch which is going to be how the user
+[1055] interacts with this
+[1057] system the first approach that we can
+[1059] think of is we connect this switch to
+[1061] the internet and we use something like
+[1063] socket AO to send an on event uh when
+[1066] the user flips it or we can think of
+[1069] sending a post request that says just
+[1071] turn it on um or any sort of transport
+[1075] mechanism that you can imagine as a
+[1077] matter of fact like I mentioned earlier
+[1078] transports are not as interesting to
+[1080] reason about as opposed to a
+[1082] synchronization problem now let's assume
+[1085] that and this happens often that message
+[1088] fails to be delivered to the source to
+[1091] the other side so there's a failure and
+[1094] the user still is not aware about
+[1097] it but one thing that we had to keep in
+[1100] mind is the flip of that switch happened
+[1104] whether that failure occurred or not it
+[1107] would be really weird for the user to
+[1108] have to be stuck in moving that switch
+[1111] until the server responds in fact if you
+[1113] guys um or gals remember about the early
+[1116] internet this used to be the case for
+[1118] uis like starring or uh or voting or any
+[1122] sort of thing that uh meant uh making a
+[1125] quick binary switch that the user had to
+[1128] get immediate feedback on meant
+[1129] refreshing the entire page so that
+[1131] transition was not fast enough nowadays
+[1134] we're thinking about optimistic changes
+[1136] of UI which means if if you actually
+[1138] flip that switch the even even if that
+[1142] message gets delivered or not you want
+[1143] an immediate response to your intent so
+[1147] in in the in the sense of uh common web
+[1150] applications you will find that they've
+[1152] evolved to update the state of their UI
+[1155] immediately in an optimistic way so that
+[1159] if the data arrives later to the server
+[1162] the response has been given to the user
+[1165] immediately so a better way to think
+[1167] about this problem is actually about
+[1169] synchronizing state so the flip became
+[1172] on at a faster rate that that uh light
+[1175] bulb is going to become on and the
+[1179] approach to solving this problem is over
+[1182] time ensuring that that sort of truth
+[1185] that becomes the switch is synchronized
+[1188] with the liel and the liel is faithful
+[1190] to it um if in the event of Errors what
+[1193] you're going to want to do is retry over
+[1196] time until you get an acknowledgement
+[1198] that uh the intent of the user has been
+[1202] fulfilled another example maybe less
+[1204] trivial that is uh helpful to think
+[1206] about is realtime text
+[1209] collaboration so uh when it comes down
+[1212] to when it comes um down to implementing
+[1214] a system like Google Docs
+[1220] or excuse me
+[1222] this my switch is not
+[1227] working
+[1241] so um in order to implement A system
+[1243] that basically exchanges characters in
+[1245] real time we Face a similar issue in the
+[1248] sense that we have to synchronize data
+[1251] that gets optimistically changed which
+[1253] means you're allowed to type in and
+[1255] nothing is blocking you from typing in
+[1257] your you're not waiting until the server
+[1259] gets your character until you see it on
+[1261] the screen but we're dealing with a u
+[1264] problem of higher complexity because we
+[1265] have simultaneously different sources of
+[1268] Truth so we have different people that
+[1270] could be editing on the the same um data
+[1274] source and they're having the same
+[1276] expectations simultaneously so for them
+[1280] the collaboration has to be low latency
+[1283] it has to be convergent which means your
+[1285] changes and the changes of everyone else
+[1287] is that is editing simultaneously need
+[1289] to end up in the same
+[1291] consistent uh
+[1294] worldview uh the uh intention has to be
+[1297] preserved so for example if you decide
+[1298] to erase a portion of the text it cannot
+[1301] show up later because someone else made
+[1303] a change to that paragraph and that
+[1306] paragraph is somehow restored or
+[1308] flickers back to
+[1309] you and the and cality has be preserved
+[1314] uh which means if you're making a series
+[1316] of changes that depend on each other
+[1319] they have to be carried all the
+[1322] preserved and carried all the way
+[1323] through to the eventual state of the um
+[1327] document in order to uh guarantee low
+[1330] latency we can think of the last two
+[1333] points that we mentioned in in order to
+[1336] make sure that um we have an accurate
+[1339] list of everything that happened we have
+[1341] to make sure that every single change
+[1343] every single character every single
+[1345] movement that the user does every part
+[1347] of the Imp put needs to be
+[1350] preserved and we have to do the best
+[1352] that we can to make sure that all those
+[1355] changes no matter how small are carried
+[1357] all the way through and preserved on the
+[1359] server
+[1361] side so these three aspects of the
+[1365] implementation actually are end up being
+[1367] related because in order to minimize
+[1371] latency which means also minimizing
+[1373] bandwidth and also preserving every
+[1375] single little change that happens to a
+[1377] Grove of t text we have to
+[1380] ensure that we capture changes in a very
+[1385] minimalistic way so let's say for this
+[1387] example I'm going to change I'm going to
+[1389] edit this text and I'm going to change
+[1391] the city from San Francisco to New York
+[1393] City the most minimalistic way to
+[1395] express this change would be saying that
+[1397] there is a remove
+[1399] operation from position 7 to position 20
+[1402] so we'll express it in some sort of
+[1404] encoding we'll say d is 7 to
+[1406] 20
+[1408] and we and we're going to insert New
+[1410] York City in its um in its place so
+[1413] we're going to create another operation
+[1416] uh i7 New York City obviously this could
+[1418] also be merged into a replace operation
+[1420] to make it even smaller um but this is
+[1423] sufficient to preserve an entire log of
+[1427] everything that occurred uh from the
+[1428] user stand standpoint and also ensuring
+[1432] that these changes are as atomic and
+[1435] little as possible in fact those of you
+[1438] that use VI might have noticed that the
+[1441] way that we can encode changes that
+[1443] happen to a document happen to be very
+[1445] similar to what how we interact with our
+[1448] editor every day uh in the sense that we
+[1451] have
+[1452] commands that are very or um I I would
+[1457] say at least very small compared to
+[1459] other editors so very precise so that
+[1462] you're in charge of saying how the text
+[1465] is
+[1466] edited
+[1468] it's sort of a low-level way of editing
+[1470] text and actually there's an editor that
+[1472] takes this one step further which is
+[1474] called Ed but unsurprisingly we have
+[1477] this uh approach even today even though
+[1480] uh VI was created in
+[1481] 1976 because it was created at a time
+[1485] when bandwidth and latency was actually
+[1489] very um essential to think about so um
+[1493] from an interview to the vi Creator uh
+[1496] there's an interesting excerpt that talk
+[1497] talks about how um the the shells that
+[1501] he was working on that led to the
+[1503] creation of this editor were so slow
+[1506] that he was thinking faster than the
+[1508] computer was reacting so in in a sense
+[1512] uh since when you're uh logged into a
+[1514] remote shell none of the changes are
+[1516] ever optimistic so you have you want to
+[1519] make sure that the commands that you're
+[1520] writing over the wire are so small that
+[1523] when the the response can come back as
+[1525] soon as possible so that you can resume
+[1529] thinking and and basically this is the
+[1532] reason that today we have this commands
+[1534] it wasn't so much that they were trying
+[1535] to create the best user experience it
+[1537] was that it came from a from the
+[1540] standpoint of minimizing latency and
+[1543] [Applause]
+[1545] bandwidth so in in our effort to address
+[1550] the other two points which are
+[1552] convergence and intention
+[1556] preservation we have to think about how
+[1558] can we take things that happen
+[1561] simultaneously in as an example a user
+[1563] might be editing at the same exact
+[1565] moment that another user is eding and
+[1567] they don't know about each other's
+[1568] changes but we always want to converge
+[1571] into an unified state of the world so I
+[1576] let's consider a document that starts uh
+[1578] as hello world and one of the users
+[1581] wants to say hello JS world and
+[1585] simultaneously the other user wants to
+[1586] say hello big world uh again the changes
+[1590] in their data sources were made
+[1591] optimistically they were allowed to type
+[1594] and on the screen they're getting the
+[1596] result of that input
+[1598] immediately but when it comes down to
+[1601] conciliating these changes this is
+[1603] fundamentally an undecidable Problem by
+[1606] the conversion models that we usually
+[1608] work with so if they happen at the exact
+[1611] same time how can we make an a sentence
+[1615] that both people are happy with uh in
+[1617] terms of convergence the problem is
+[1620] actually quite easy because we can just
+[1622] say we're gonna have both um words in
+[1626] the Ser in the order that the server
+[1627] receives them the server doesn't
+[1629] actually care about who typed first um
+[1631] whoever had the fastest internet
+[1633] connection was closest to the server uh
+[1635] would win so it'd be a convergence
+[1638] approach of whoever types fastest uh
+[1643] wins so in this case we're actually
+[1646] sacrificing intention uh a little bit in
+[1649] the um Spirit of making sure that
+[1651] everyone that loads the document later
+[1654] including those users see Hello JS world
+[1657] or hello uh hello big JS World in
+[1661] whatever order is decided it just has to
+[1663] be consistent a long
+[1665] time um and finally the other aspect
+[1669] that we want to consider is preserving
+[1671] cality so it's helpful to think about
+[1674] people that go offline and this becomes
+[1677] really important in in text editors but
+[1679] actually it's also important in any sort
+[1681] of web application because users even
+[1684] when they have a websocket connection
+[1686] established they that connection might
+[1688] actually fail data might have changed
+[1690] and then a connection has to be resumed
+[1692] later so an example of violating cality
+[1697] would be um user a and user B start
+[1700] typing then user
+[1704] B types something that depends on the
+[1707] prev sentence and that individual packet
+[1710] gets broadcasted to all the other um
+[1713] members which apply them to their own um
+[1716] editors immediately so in the case of
+[1719] user C it's not enough to get the latest
+[1722] message as soon as soon as you reconnect
+[1724] it's also important to make sure that
+[1726] when you get that message you verify
+[1729] that the state that you were in at that
+[1731] moment uh is perfect to apply that new
+[1734] message on
+[1736] so
+[1738] in this example user C should have
+[1740] waited to get the messages that you that
+[1743] new line depended on that user a and
+[1746] user B actually
+[1748] had the way that this is usually
+[1750] implemented is by considering a revision
+[1754] number so both every user starts with a
+[1757] document and an integer so usually this
+[1760] is a retriev from the server and they
+[1762] say we'll start from revision number one
+[1765] now if we consider the example where
+[1768] both users were competing to insert JS
+[1771] and big in between hello
+[1773] world we can think of them emitting two
+[1776] operations
+[1778] simultaneously when those operations are
+[1780] sent to the server we can attach that
+[1783] clock um that says okay I'm this is my
+[1787] message but also attaching the
+[1789] information of what's the state of my
+[1791] world when I'm creating this operation
+[1794] so both would send their insert
+[1796] operations but but also would attach
+[1798] what what version of the data set
+[1800] they're looking at by the time the
+[1803] server receives them it now becomes
+[1805] trivial for the server to say okay those
+[1807] two operations actually happen
+[1809] simultaneously for their for they have
+[1812] matching revision numbers and what the
+[1814] server can do now is apply a
+[1816] transformation
+[1818] function return new operations back to
+[1821] the users that will result in a
+[1823] consistent and convergent view of the
+[1825] world for them and then everyone
+[1827] is now at revision number two but since
+[1830] they got the operations back from the
+[1832] server that decided on an order they now
+[1835] all have a consistent view so they would
+[1837] have hello JS big world uh there's a
+[1839] typo in my slide I
+[1842] apologize so it's worth um now coming
+[1846] back to the idea of time and how we can
+[1850] think of synchronizing the clocks of the
+[1852] different users as as they start making
+[1855] changes to the data
+[1859] we can think of a real-time system as
+[1861] one that is actually rapidly
+[1863] synchronized in this uh sources of truth
+[1866] that are actually separated across
+[1868] distance and
+[1870] time but in order to implement this
+[1874] effectively we have to consider some
+[1880] caveats the expectation is that the data
+[1883] is always coming through and in the in
+[1886] the example for for example a rich a r
+[1888] Tex editor uh operations are always
+[1890] being um uninterruptedly coming through
+[1894] the
+[1895] wire but the reality shows that it's
+[1898] actually likely that for example the
+[1900] user can go can go on a disconnected
+[1902] state for a very long period of
+[1904] time so something that applications need
+[1907] to be really mindful of is what I I'll
+[1909] call State
+[1911] reconciliation a quick test that you can
+[1913] do on your own applications to verify
+[1916] this is what what happens to your
+[1917] application if you decide to close the
+[1919] lid um on whatever state your
+[1921] application was in you close the lid of
+[1923] your laptop and then a week later you
+[1926] resume that session so what happens to
+[1928] your application does it stay in the
+[1930] state that it was at by the time it was
+[1931] closed does it try to refresh itself
+[1934] completely uh does it try to notify the
+[1937] user that he's been disconnected or
+[1939] she's been disconnected for a very long
+[1941] period of time so it's very important to
+[1944] recognize that the approach has to vary
+[1947] in the in the in the example of a rich
+[1950] text
+[1951] editor we can't just synchronize every
+[1954] single operation that happened because
+[1956] it could have been tens of thousands for
+[1958] example and then by the time you try to
+[1960] reconnect you're getting a you're
+[1962] basically synchronizing a very large
+[1963] data set State reconciliation means that
+[1965] for example we would get a new starting
+[1967] point and we would get only a portion of
+[1970] the operations in the past that led to
+[1973] that new starting point so it's very
+[1975] important to think about the time time
+[1977] that the user spends offline not just
+[1980] about the idea that a message uh doesn't
+[1982] make it to the other end which would can
+[1984] be thought of as a as a short
+[1986] disconnection we can we also have to
+[1988] think about what happens if there's been
+[1990] a disconnection for a very long period
+[1991] of time so that the application would
+[1995] have a very hard time uh reconcilia or
+[1999] it would spend a lot of time getting the
+[2000] new uh data
+[2003] in the front end also has to handle
+[2007] scenarios related to obtaining that data
+[2010] if we now consider again that it's been
+[2012] it's been a week that you've been
+[2013] disconnected what happens by the time
+[2015] you try to get the data again maybe your
+[2019] session had already expired and you need
+[2021] to make sure that you uh handle the
+[2023] scenario of a complete UI change for
+[2027] example in this case it would be a
+[2028] logout state from you go from an Editor
+[2031] to a scenario where you no longer have
+[2033] even permission to write on the
+[2035] data
+[2037] um a different user actually could have
+[2040] been logged in so this would happen the
+[2042] in the cases of you've actually started
+[2044] a new session on a different tab uh
+[2047] again uh we have to be mindful that a
+[2049] single user can also post a concurrency
+[2052] problem even when interacting with their
+[2054] own data set and this is becoming more
+[2056] and more true as you start interacting a
+[2058] lot uh with data sets from multiple
+[2061] devices so you have one piece of data
+[2064] that belongs to you and there is not
+[2066] other collaboration like in the example
+[2068] of in the example of a multi-user rich
+[2070] text collaboration application but even
+[2074] in the case of a single user application
+[2076] it can happen that you've edited your
+[2078] own data set from a phone uh from your
+[2080] watch or other users have so it's
+[2084] important to consider um concurrency
+[2087] problems even in a single user
+[2089] application um and again for example if
+[2092] you're looking at a news feed the Delta
+[2094] between a disconnection and a subsequent
+[2096] connection can be so big that the
+[2099] approach to getting the new items has to
+[2101] has an impact on the UI um and the user
+[2105] has to be notified
+[2108] accordingly the main conclusion to
+[2111] derive from this is that you can never
+[2112] make your front and uh assume that
+[2115] you're going to have a complete uh
+[2118] understanding of every single operation
+[2120] that happened or every single event that
+[2121] happened to determine the current state
+[2123] of the application and this ties into a
+[2126] final concept that I'm going to talk
+[2128] about today which is uh rendering your
+[2131] applications on the server and then
+[2133] having the client side pick up we can
+[2135] think of that scenario in a very similar
+[2139] way um in order to think about
+[2142] synchronizing data sets we cannot only
+[2146] consider uh the application once it's
+[2149] been loaded we also have to consider the
+[2151] user's initial intent which is basically
+[2153] getting some sort of data going to a URL
+[2157] and downloading some information how is
+[2159] how long is it taking you to download
+[2161] that initial state of the uh of the
+[2164] application with the Advent of single
+[2167] page apps that promise fast and
+[2169] self-updating front ends we've
+[2171] sacrificed the that initial time that
+[2175] gets to uh to get the initial data
+[2178] set so in the case of most applications
+[2181] you're going to find that you might have
+[2184] implemented a stack like rea JS and
+[2187] socket AO and um in addition to your app
+[2191] code and styles and and JavaScript code
+[2194] uh so in an effort to guarantee fast and
+[2197] self-updating applications you've
+[2198] written a large client side application
+[2201] that actually doesn't give you the data
+[2202] right away as soon as you go to the URL
+[2204] and several round trips are spent
+[2206] downloading that code if we think about
+[2209] how the TCP connection Works underlying
+[2211] that you're going to find that it's
+[2214] actually very very bad to to download
+[2217] really large uh code bases right away
+[2220] because TCP connections work but in a
+[2223] sliding window they they're only going
+[2225] to absorb information progressively so
+[2229] in the beginning uh the first few
+[2231] segments that are allowed to be sent
+[2232] over at TCP connection mean means that
+[2234] in a single round trip the user can get
+[2236] only 5 kilobytes of uh your application
+[2239] over time um maybe with the first uh
+[2243] eight segments that most servers are
+[2245] configured to send now
+[2247] nowadays you you will find that you only
+[2249] have a 14 kiloby window to send that
+[2253] initial State back to the user so that
+[2255] they can start processing the
+[2256] information that they were interested
+[2260] in it turns out that the most optimal
+[2262] way to create uh a real-time application
+[2266] starts from the very second that the
+[2269] user has the idea of requesting the
+[2272] information and going to a certain URL
+[2274] or opening an application and a a very
+[2277] important caveat is the stage that we
+[2281] the stage and the time spent down
+[2283] downloading that initial code base um
+[2289] so you will find that one of the main
+[2293] ADV advantages to this model
+[2296] is if we if you render server if you
+[2299] render data on the server and then you
+[2301] have the client take over now you have a
+[2304] disconnection situation once again
+[2307] so by the time the client loads the
+[2309] JavaScript code of the data that's been
+[2311] dumped by the server by the time a
+[2314] websocket connection for example is
+[2315] established data might have
+[2319] changed the other um important idea is
+[2323] the client is allowed to edit uh the
+[2325] application optimistically this is why
+[2327] you don't want to just do server side um
+[2330] rendering you also want client side
+[2332] rendering because that way you'll you're
+[2333] going to be able to respond immediately
+[2335] to the user changes so the solution to
+[2338] this problem means dumping the state uh
+[2342] initially and then having a a codebase
+[2345] that L that loads lazily that is able to
+[2348] reconciliate changes and then enable
+[2351] subsequent changes to the state without
+[2355] um the connection necessarily working at
+[2357] a very fast pace so for example uh once
+[2360] your text editor loads uh changes can be
+[2363] made immediately and maybe the
+[2365] connection is really slow and syn
+[2366] ganizations will happen over time but
+[2368] that shouldn't hold the user
+[2371] back in summary reconnection and
+[2374] Reconciliation become two very important
+[2376] aspects to think about once we want to
+[2378] create this ideal real-time
+[2384] system it's it's useful to consider that
+[2386] initial page load download as the total
+[2390] time that you're considering when you
+[2392] measure your latency uh a problem that I
+[2394] see usually is that when you're you're
+[2396] measuring latency you considered it in
+[2398] isolation so you think about for example
+[2400] how long is it taking me to uh get the
+[2404] in the case of an API get the Apple
+[2406] stock information oh it takes me 200
+[2408] milliseconds but it's actually way more
+[2410] useful to think about how long did it
+[2413] take uh from the moment the user was
+[2415] interested in the information of getting
+[2416] that stock which meant which means for
+[2418] example loading your website or making a
+[2421] search to when the information is
+[2423] actually uh uh given to them and
+[2426] subsequently how long is it taken to
+[2428] deliver updates to that uh information
+[2431] that the user has just
+[2434] acquired the main conclusion is then
+[2437] that we have to focus on accelerating
+[2439] the synchronization of ideas and intents
+[2443] we have to make sure that the user uh is
+[2445] able to get an immediate response to
+[2447] their input and the subsequent reaction
+[2451] from all the other data sources are
+[2453] applied to that um user's State as soon
+[2456] as as we can and for that we have to
+[2458] take a global view of our architecture
+[2461] uh optimizing everything from the
+[2463] network in stack making sure that push
+[2465] is enabled through a technology like
+[2467] socket AO uh but also considering the
+[2471] problems that occur related to
+[2474] synchronizing data uh Network
+[2477] disconnections um problems Rel related
+[2480] to Long latency that can potentially be
+[2482] masked and so on um so hopefully you
+[2486] guys have uh gotten a few important
+[2489] lessons uh and uh you can apply them to
+[2492] the Des sign of your own realtime
+[2493] systems thanks a
+[2495] [Applause]
+[2500] lot

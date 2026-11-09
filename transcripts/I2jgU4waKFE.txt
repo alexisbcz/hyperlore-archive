@@ -1,0 +1,1742 @@
+[0] Heat. Hey, Heat.
+[7] [Music]
+[50] Hey everyone, thank you so much for
+[51] watching another episode of the WEVA
+[53] podcast. I'm super excited to welcome
+[55] Anan Kanopon, co-founder of Petronis AI.
+[58] Petronis AI is one of the most
+[59] innovative companies out there working
+[60] on observability and evaluation for
+[62] agents and AI systems. They have an
+[64] amazing platform. They've created two
+[66] custom LMS judge models, links and
+[68] glider. And I couldn't be more excited
+[69] about the launch of Perlan. Thank you so
+[71] much for joining the podcast. Thanks so
+[73] much for having me, Connor. Super
+[75] excited. Awesome. So, I'd love to just
+[77] dive into what's new. the launch of
+[79] Perl. Uh could you describe what it is
+[81] and how it's changing the game for
+[82] developing agents?
+[85] Yeah, so uh Perl is a highly intelligent
+[88] AI companion of Petronis. Uh it can
+[89] actually detect 60 different kinds of
+[92] failure modes, especially with agent
+[94] native failures like tool calling
+[95] failures, uh context misunderstanding,
+[97] agent planning errors. Uh and there's a
+[100] whole taxonomy that that that really uh
+[102] describes this in much more depth. You
+[104] could think of persal as your best AI
+[106] debugger that has spent thousands of
+[108] hours uh uh understanding your domain
+[111] and uh and uh processing millions of
+[113] tokens uh through that. And so really
+[115] really excited about what PRLE really
+[117] means for uh not just the future of uh
+[120] evaluation but really the the future of
+[122] uh of of agentic supervision. Uh and so
+[125] agentic supervision is this concept that
+[127] we're really really excited about uh and
+[129] really see as a big part of uh not just
+[131] our vision but really where we see the
+[133] world going.
+[134] Yeah, I want to give a huge thank you to
+[136] the Petronis team for letting me test
+[137] out Perl before diving in. And yeah,
+[140] it's such a cool thing. It kind of
+[141] reminds me of the first time I want to
+[142] compare it to the first time I used
+[143] cursor and how it can edit your code for
+[146] you. The way that I can uh develop an
+[148] agent and have it debug the trace and
+[150] then suggest all these different reasons
+[152] it went wrong. I love the prompt fix.
+[154] Yeah, just so many cool things. So I the
+[157] first thing I really just want to dive
+[158] into this like agent debugging co-pilot
+[161] and maybe just touch on the state of how
+[163] people are developing agents. I know
+[165] with how I'm personally working I'm
+[167] doing a lot of stitching together some
+[168] concept of an agent workflow I I think
+[171] might work. Uh yeah, how do you think
+[173] about the current state of developing
+[175] agents? Yeah, absolutely. I'd say it's
+[177] uh it's been really exciting what's been
+[178] happening uh over the last few months
+[180] especially since last fall in terms of
+[182] the pace of which a lot of new companies
+[184] are building agents and we're seeing
+[185] that happen not just with uh new AI
+[188] startups but even with large enterprises
+[190] in the world where even their own
+[192] architectures and their own stack is
+[193] evolving so that they are starting to
+[196] think about how they build more
+[197] autonomous systems from day one. uh and
+[200] so uh of course we've seen a lot of
+[202] different kinds of frameworks that
+[203] evolved over time whether it's crewi or
+[205] langraph or or predentic and so really
+[208] excited about uh what the future holds
+[211] for how people will build agents uh but
+[214] we're also seeing that you know apart
+[215] from just the framework itself it's even
+[216] just the the the the problems that
+[218] they're really trying to solve with
+[219] agents is in many cases fundamentally
+[222] new and fundamentally they're rethinking
+[224] uh companies are rethinking what it
+[226] means to solve a problem for their own
+[229] customers what it means you know for the
+[231] structure of their own team in terms of
+[233] u uh uh who focuses on what and what
+[236] areas can productivity really be
+[238] accelerated and so really really
+[240] thrilled about uh uh all of that uh in
+[243] general and I'd say especially with the
+[245] advent of agents there's a number of
+[246] different new challenges in terms of
+[248] what that means for the world and those
+[250] are exactly the kinds of things that you
+[251] know would love to be able to double
+[252] click into and and share more about how
+[254] we think about them and where we see the
+[256] world going uh across
+[259] Yeah, awesome. So, so yeah, I think uh
+[261] definitely a lot that we can unpack with
+[262] that like kind of domain expertise and
+[264] come back to that topic, but I think
+[266] there's maybe we could start with like
+[268] understanding the common failure modes
+[269] and maybe kind of the domain expertise
+[271] that maybe like we have so to say is
+[273] kind of like AI engineers, you know, AI
+[276] entrepreneur like you you more so than
+[277] me, but like like building these AI
+[280] companies and like kind of we have this
+[282] expertise of how to build agents and I
+[284] think that's kind of what is built into
+[285] Perl is you have this knowledge of like
+[289] Yeah, common failure modes like whether
+[291] it's a failure in the tool call, the LM
+[293] isn't picking the right tool and just
+[295] yeah, if we could maybe break into like
+[298] the priors that you've cooked into Perl
+[299] on understanding the common ways that
+[301] agents fail. Yeah, absolutely. Okay. So,
+[304] I'd say uh to take a step back, I'd say
+[305] there's actually three. So, so when we
+[308] when we first when we first kind of
+[310] mapped out where where where the world
+[312] is going, what are our customers doing
+[313] today, and where do we think they'll be
+[314] in the future, we really identified
+[316] three really big problems in terms of
+[318] how AI workflows are evolving, and why
+[321] why is it becoming almost near
+[323] impossible to evaluate them? Uh and so
+[326] uh the first problem is context
+[327] explosion where we're starting to see uh
+[330] AI systems essentially agentic systems
+[332] process up to tens of millions of tokens
+[334] that are spanning uh lots of internal
+[336] documents external API uh tools and
+[339] different kinds of tools in general lots
+[341] of user interactions and so all of this
+[342] put together is just far exceeding uh
+[345] the length of alum context windows in
+[347] addition to that agent actions are
+[348] sequential and order dependent and so
+[350] you know this idea of long range
+[352] temporal data is just really introducing
+[353] another lay of complex lexity and then
+[355] there's the second problem which you
+[357] mentioned which is really around domain
+[358] adaptation and so I'd say uh generally
+[362] everyone uh agrees that human in the
+[364] loop is really important uh and subject
+[367] matter experts really play a big role in
+[369] how AI products really turn out uh and
+[372] uh especially at the same time when we
+[374] understand that systems are becoming
+[375] increasingly autonomous it it does mean
+[378] that now agents might actually have to
+[380] become subject matter experts as much as
+[382] possible themselves uh and So, uh, we
+[385] want to make sure that the the problem
+[386] of of evaluation and oversight, uh, is
+[390] one where it's not a one-sizefits-all
+[392] problem, but it's one that is very
+[393] domain adaptive. Um, and so that kind of
+[395] leads me to the third and final problem,
+[396] which I'd say is the biggest problem,
+[398] which is related to, uh, uh, multi- aent
+[401] orchestration. And so this is really key
+[404] because uh uh when when when when let's
+[408] say the the general era really started
+[410] to um to take off in 2023, we were
+[413] talking about just LMS in isolation.
+[415] Then it was about LM systems uh like rag
+[417] applications. Then it was uh uh agentic
+[420] systems which you know could still be of
+[422] course uh with with rag in in in
+[424] perspective but generally just a more
+[427] complex system and now the future is
+[429] about multi- aent systems. And so in
+[431] that world, agents are calling other
+[432] agents u and uh we're really uh uh
+[436] starting to see that uh it's really hard
+[439] to predict what agent trajectories or
+[441] what systems will actually look like.
+[443] And so it means that the the traditional
+[445] way of defining an evaluation or
+[447] defining a unit test um in a very kind
+[449] of static approach or static data set is
+[451] just uh practically impossible and
+[453] doesn't make sense for the future. And
+[454] so we just strongly believe that the
+[456] right way to evaluate is to do it
+[458] dynamically in the future especially
+[460] where we're dealing with multi- aent
+[462] systems. And so that's why uh what we
+[465] talk about is the next phase of
+[467] evaluation observability is actually
+[469] supervision and oversight. It's more of
+[471] a hands-on approach towards more of a
+[473] slightly hands-off approach. uh but
+[475] that's really how we feel in terms of uh
+[478] the evolution of multi-agent systems and
+[480] that's you know of course a completely
+[482] new challenge that you know requires a
+[483] completely new way of of approaching the
+[485] problem. Uh and so those are the three
+[488] big things that led to why we started to
+[490] uh develop persal. Uh and so persal is
+[493] extremely good at being able to identify
+[496] uh different kinds of failures uh that
+[498] that fall into those kinds of
+[499] categories. Uh it's also really good at
+[501] dealing with really long context and
+[503] it's also domain adaptive. Uh and so we
+[505] can dive into a bit more on how it's
+[506] remain adaptive, especially with how
+[507] we've thought through memory
+[508] infrastructure and things like that. But
+[510] our goal with Priscol is really to solve
+[511] those three big problems for all AI
+[514] workflows for the future.
+[517] Yeah, I think with picking my next
+[519] question, if I'm trying to appeal the
+[520] most to the kind of most the AI
+[522] developers, I think I'd go for sort of
+[523] how you think about the context window.
+[525] Maybe like points one and two, but just
+[527] as more of an AI researcher, I just have
+[529] to pick my own interest. And this last
+[531] concept about uh dynamic evaluation, can
+[535] you just maybe open up that further what
+[537] what you mean by that and the vision
+[539] there? Absolutely. So I'd say the uh the
+[542] the contrast that I make is actually
+[544] with uh what I would describe as static
+[546] evaluation where static evaluation is is
+[549] one where you know how I'd say most
+[552] companies uh whether it's software or uh
+[555] more specifically AI products most
+[556] companies are approaching where you
+[558] develop uh you create some kind of a
+[560] data set you come up with uh examples in
+[562] the data set it could be examples you've
+[564] generated or you know a human has
+[566] constructed them in some way uh and this
+[569] could be a set of 50, 100, a thousand,
+[571] tens of thousands of examples. Um, and
+[574] and uh uh if it's something that is very
+[576] domain specific, something developed
+[578] internally, maybe it's a voucher data
+[579] set or perhaps some kind of a benchmark
+[580] that you're using just to understand how
+[582] to perform just to understand how the
+[584] system actually performs. Um, but
+[586] anytime you have like a a single kind of
+[589] data set or benchmark, by definition,
+[591] it's it's static. It's one it's it's a
+[593] one one-time way to really approach how
+[596] to measure performance of a system. uh
+[599] and uh and uh you know that might that
+[602] might work you know obviously that works
+[603] well for you know software that is you
+[606] know rigid and stable and it's you know
+[607] something that customers interact with.
+[609] It can also potentially work well with
+[611] language models that have been trained
+[612] and you know they're they're available
+[614] to use out of the box whether it's
+[616] through an API or or through open
+[617] source. Uh but the moment we start uh
+[620] talking about um agentic systems it
+[622] means that you know now these are to
+[624] some level uh you know living breathing
+[626] organisms that are actually dynamically
+[628] evolving. Uh they are interacting with
+[630] other agents or interacting with other
+[632] stimuli. They are uh living in
+[634] environments that are you know in some
+[636] ways hard to potentially predict what
+[638] what might happen in a particular
+[639] trajectory. And I'd say the more complex
+[642] these systems become where we're dealing
+[643] with teams of agents or you know
+[645] organizations of agents it starts to
+[647] become you know more challenging to uh
+[650] really you know even be able to
+[651] predefine or even you know define uh a a
+[654] static type of data set uh that that
+[657] that even makes sense uh because there's
+[660] no way to properly really think about
+[661] what the trajectory looks like. So uh
+[663] what dynamic evaluation really means
+[665] here is uh is there a way for uh a
+[668] separate equally capable highly
+[670] intelligent system or agent or set of
+[673] agents that can uh themselves evaluate
+[676] the the agents in question. Uh and so
+[680] that means that uh the ways that we
+[681] evaluate actually has to also evolve uh
+[683] in the same kinds of ways. They also
+[685] have to move. Uh and so that's really
+[688] what we believe uh uh at Petronis is is
+[691] really the the future of scalable
+[692] oversight is this idea that we will in
+[695] the future live in a world where humans
+[696] can no longer scalably have oversight
+[699] over AI. And so we need to live in a
+[700] world where equally capable intelligent
+[703] AI uh oversee AI. Uh and so that's
+[706] that's that's really uh how we you know
+[708] believe demic evaluation is going to
+[709] play a really big role. If we talk more
+[711] concretely about agentic systems and how
+[714] that falls into evaluation, I would say
+[716] at paternis we think about it in two
+[718] types of ways. There's this idea of
+[720] process rewards and then this idea of
+[721] outcome rewards. And so with process
+[723] rewards, you're really looking at what
+[725] are agents doing step by step uh in the
+[727] trajectory uh within the system. Uh and
+[730] uh how do we make sure that uh that that
+[733] those kinds of things have the right
+[734] kind of supervision. And then there's
+[736] outcome rewards, which is did the kind
+[738] of overall agent or system actually
+[741] perform in the way that it that you
+[742] wanted by the end of it. What was the
+[744] outcome? Um, and so ultimately we
+[745] believe that both of those things really
+[747] matter. Uh, and so those are the kinds
+[749] of things that, you know, play into how
+[750] we think about dynamic evaluation
+[752] methods and and where the future of this
+[753] really stands over time.
+[756] Yeah, I I think maybe this I really like
+[759] this delineation of process rewards
+[761] verse outcome rewards. I think um maybe
+[764] it depends a little bit on your
+[765] perspective of agents and how sort of
+[767] like autonomously you're building your
+[768] agents like with wevate with some of our
+[771] agents that we've released, we kind of
+[773] we kind of evaluate them maybe as like a
+[775] process reward in the sense that we like
+[778] decompose it into several inferences in
+[780] the kind of like compound AI system view
+[781] of thinking about it. Um and so we have
+[784] like kind of yeah static eval sets for
+[786] each of the steps of this but but it but
+[789] already our static eval sets are taking
+[791] this like generative approach where a
+[793] lot of a agents are helping us design
+[795] our sets and that and so we're already
+[797] pretty mature on that one but then this
+[799] kind of outcome rewards and I I guess
+[802] like um I'm still kind of trying to
+[804] imagine these systems I guess like if
+[806] it's an open-ended autonomous agent and
+[809] it does like yeah I guess really
+[811] open-ended tasks Now you've got this
+[813] dynamic
+[815] environment. Yeah. Yeah. So I I think
+[818] I'm starting to wrap my head around it.
+[820] This kind of idea of having like an
+[821] environment to evaluate an agent, but it
+[824] still definitely seems like Yeah. I'm
+[827] trying to just understand like if this
+[828] matters on how open-ended you're
+[830] defining your agent. And maybe we could
+[832] maybe maybe we could zoom into an
+[833] example like let's say we have an agent
+[834] that writes Oh, okay. So I think this is
+[837] the example I'd want to zoom into. Is is
+[839] it an agent that say writes a blog post?
+[842] It's going to take this podcast
+[843] transcription and it's going to turn
+[844] into a blog post and that's sort of
+[846] something that's maybe a little would
+[848] you see that as like a traditional agent
+[850] whereas something that's more like it's
+[852] just like a podcast marketering agent
+[854] like it broadly does tasks maybe it
+[857] maybe it turns this into a blog post
+[859] whatever it thinks is going to spread
+[860] the podcast the most is that maybe the
+[862] right way of thinking about it is like
+[863] what kind of agent are you building?
+[865] Yeah. Yeah, absolutely. Yeah, I'd say I
+[867] think the the uh the degree to which
+[869] it's open-ended certainly plays a role
+[871] in you know how let's say how hard it is
+[874] to like uh statically evaluate something
+[877] and so I think with a much more simpler
+[878] system a more simpler agent where maybe
+[881] you have a few different LM calls and
+[883] maybe it has to make fewer decisions and
+[885] and the decisions are much more simple
+[887] then in those kinds of cases it may be
+[889] you know very well possible to evaluate
+[891] something statically uh I'd say the
+[893] outcome reward space or sort of like the
+[895] the endto-end type type of uh evaluation
+[897] specifically u especially in those kinds
+[900] of scenarios can be you know done more
+[902] simply and so you know for example let's
+[903] just say um you know the outcome is
+[905] let's just say that you want to make
+[906] sure that the out that the agent let's
+[908] say you know books a flight I think the
+[910] quintessential example of of a of an
+[911] agent is uh can you get it to like you
+[914] know book a flight for you uh and if it
+[916] actually books a flight by the end of it
+[918] uh and it you know falls within the
+[920] parameters of what the initial uh query
+[923] was then you know you could say that
+[924] that's that's great Um but uh you know
+[928] if let's say it's a bit more open-ended
+[930] you know like you said let's say we ask
+[932] an agent to um you know market uh the uh
+[936] like a product launch uh and you know we
+[938] don't really give it any other specific
+[940] kinds of of requests. you know, you
+[942] don't really say, you know, go write a
+[943] blog or go, you know, interview someone
+[945] on a podcast or or talk to the talk to
+[948] the media. But you know if you just let
+[949] it kind of approach you know and make
+[952] its own decisions and and you know in
+[953] its own kind of autonomous way uh then
+[956] I'd say those are scenarios where you
+[958] know becomes pretty hard to to to
+[960] statically define something statically
+[962] define evaluation beforehand because uh
+[966] you may not be able to for example
+[967] understand you know what whether whether
+[969] it it it used the right tools or talked
+[971] to the right people or um approached you
+[975] know something in the right kind of
+[976] format just because there's just so many
+[978] the the there's so many possible uh
+[981] avenues or possible paths that the agent
+[983] could actually take to accomplish
+[984] something. And so I think especially for
+[987] uh especially for areas where
+[988] trajectories are hard to predict ahead
+[990] of time, it's really hard to be able to
+[991] optimize for process rewards uh unless
+[994] you you know potentially have uh have a
+[997] d a dynamic way to actually evaluate.
+[1001] Yeah, super cool. Um yeah, I guess
+[1003] there's something about the dynamic
+[1004] thing that reminds me of like these
+[1006] environments like obviously like there
+[1008] was like reinforce and learning's early
+[1009] days with open AI's bipedal walking
+[1011] agent and you had this whole like
+[1013] physics simulator of controlling a robot
+[1015] to walk and that's where you kind of
+[1017] like have this like environment or maybe
+[1018] like you're tuning a database system and
+[1020] there papers like database gym and
+[1022] that's kind of maybe one way I think
+[1023] about these things is you build this
+[1025] like constrained world for the agent to
+[1027] operate in. Um yeah kind of kind of
+[1030] maybe coming back to patronis another
+[1031] question I wanted to have ask about the
+[1033] kind of use of pival that this kind of
+[1035] like uh static versus dynamic evaluation
+[1038] is inspiring me to think about is like
+[1040] coupling persal with kind of the traces
+[1042] like we have like with these
+[1043] observability platforms is a lot of it
+[1046] is you're logging all your calls in
+[1048] production or development and so on into
+[1050] like you know uh these these
+[1052] observability platforms compared to kind
+[1054] of this other thing that's emerging
+[1056] which is you have your static eval
+[1058] and you run your inferences and the
+[1060] observability platform is kind of
+[1062] helping you that way. Um, so I guess
+[1064] maybe my question is which which of
+[1066] those two do you see is the most common
+[1068] use of pible like production traces or
+[1071] maybe like eval? Uh, yeah.
+[1074] Yeah, absolutely. So I'd say uh for for
+[1077] the the first version of uh of Perl, I'd
+[1081] say it's it's more useful as a as an
+[1083] ability to actually understand uh traces
+[1086] that were actually run and those traces
+[1088] could be from uh runs in in development
+[1092] and testing or you could be in
+[1093] production as well. But as soon as you
+[1095] actually have let's say run your agent
+[1097] uh against you know a particular kind of
+[1099] workflow against uh potentially a set of
+[1102] documents uh or you know whatever the
+[1104] the kind of setup might be you then uh
+[1107] uh you know suddenly might have a ton of
+[1109] data in terms of what the agent actually
+[1112] did and what happened but uh this might
+[1114] be uh really long context might be
+[1117] different kinds of data structures might
+[1119] be dealing with different kinds of tools
+[1120] and so trying to step through every
+[1122] single uh piece of that kind
+[1125] trajectory could be really challenging.
+[1126] And we've seen as we've worked with
+[1128] customers that in some cases they spend
+[1130] hours trying to just interpret a few
+[1132] different traces. Uh and in order for
+[1133] them to even create their own eval sets,
+[1136] they spend the additional hour per trace
+[1138] uh that they create in order for them to
+[1140] understand uh you know how how well that
+[1142] an Asia might actually do in a
+[1144] particular scenario. Uh and so we're
+[1146] starting to see that dealing with the
+[1148] evaluation problem is becoming near
+[1149] impossible when you're talking about
+[1150] agentic systems. And we're continue to
+[1152] hear that this is an extremely unsolved
+[1154] problem. And if anything, it potentially
+[1156] is making it very challenging for uh uh
+[1159] agent native companies to actually, you
+[1161] know, succeed with the products that
+[1162] they're building. Uh and so it's
+[1164] starting to become a really big blocker
+[1166] for uh the success that we're hoping
+[1168] companies, agent companies can really
+[1169] achieve. Um and so the the the ways that
+[1173] we've really approached this is to
+[1174] really help companies be able to
+[1176] understand interpret uh explain uh
+[1179] understand and and and be able to even
+[1181] you know communicate the severity of the
+[1183] impact uh and of the failures that were
+[1185] actually caught and to do this in a very
+[1187] very comprehensive research first type
+[1189] of way. Uh and so uh you know given the
+[1192] taxonomy of what we've developed across
+[1194] these different kinds of failure modes,
+[1196] we're starting to see that uh different
+[1198] kinds of customers are starting to catch
+[1199] issues that they didn't even realize
+[1200] were issues. For example, this might be
+[1203] uh resource abuse issues or uh
+[1205] instruction non-compliance with agents
+[1206] or context handling issues. And uh
+[1209] sometimes these tend to be very
+[1210] nitty-gritty details. uh and uh and so
+[1214] given the the explosion of context and
+[1216] the amount of data companies are dealing
+[1217] with, it's no longer a problem of hey,
+[1218] can I just track my data, but it's
+[1220] really what can I do with it so I can uh
+[1223] ultimately understand where failures
+[1224] happen and how can I automatically and
+[1226] systematically optimize and fix those
+[1228] issues uh as soon as possible. Uh and so
+[1231] that's that's really what our our vision
+[1234] is with PRFL, especially as we start out
+[1236] here.
+[1237] Yeah, that that that really helped a lot
+[1239] of it click for me. Like my kind of what
+[1241] I called my cursor moment with Perl was
+[1243] um I put together a function calling
+[1245] agent that's using WV8's query agent as
+[1247] well as our async transformation agent
+[1250] and and I just kind of let it run and it
+[1253] runs for a while. It does like 20 steps
+[1255] of function calls. is like managing the
+[1257] data and I I can't be bothered to like
+[1259] look through it step by step but I can
+[1262] just click generate insights with persal
+[1264] and and now and now I I think I just
+[1266] gained that insight into how the multi-
+[1268] aent system because I can only imagine a
+[1270] group chat of all these agents and it's
+[1271] just like I can't I can't look through
+[1273] what just happened yeah and and yeah it
+[1277] it really is like maybe maybe I want to
+[1280] explore this concept of like scaling
+[1282] test time compute because now you have
+[1284] this tool to like Okay, I just scaled my
+[1286] test time compute like crazy. What
+[1288] happened with all that? Yeah, right.
+[1291] Exactly. Yeah. Uh well, so so yeah, so
+[1294] I'd say uh uh the the the interesting
+[1297] thing about agents in particular uh
+[1299] especially from a product or customer
+[1301] perspective is we've seen that uh
+[1303] companies are generally okay with agent
+[1305] workflows, you know, running for for
+[1307] longer. Uh and we haven't seen latency
+[1309] actually become a big problem. uh mainly
+[1313] because uh we're seeing that the market
+[1315] is already or kind of orienting itself
+[1317] around the idea that like agents are
+[1319] really good at being able to to
+[1321] accomplish specific workflows. Uh and so
+[1323] it's not really about uh can I have some
+[1326] kind of a lightning fast answer but
+[1327] rather can I get something done uh and
+[1329] so because of that we're seeing that uh
+[1331] you know the latency piece is not too
+[1333] challenging. Of course it means you know
+[1335] there the test net is larger certainly
+[1338] uh and that might mean you know more
+[1339] from a resourcing perspective uh whether
+[1342] it's you know uh memory or other kinds
+[1345] of infrastructure whether it's you know
+[1346] model specific infrastructure or
+[1347] whatever it is uh but apart from the
+[1350] let's say the the the resource
+[1352] consumption and and the cost we're
+[1354] seeing that at least from a market
+[1354] perspective it's not not too challenging
+[1356] which means that um in the world in
+[1359] which you you you do want to have let's
+[1361] say real time oversight and supervision
+[1363] it's very much fine to introduce extra
+[1366] latency if it means that you can get the
+[1368] right kind of outcomes at the end of it.
+[1370] Uh so I'd actually say that being able
+[1372] to leverage really uh powerful tools
+[1375] like pal for real time supervision and
+[1378] oversight um wouldn't necessarily be a
+[1381] blocker for how companies orient
+[1382] themselves around what agents are really
+[1383] meant to accomplish today.
+[1386] it that's that's another question I
+[1387] wanted to ask you about pival is how you
+[1389] think about like with generate insights
+[1391] if I just want like give me the quickest
+[1392] insight you compared to like do this
+[1394] deep research about all my agent traces
+[1397] and maybe that's how you think yeah
+[1400] yeah absolutely so I'd say the the the
+[1402] the way that we kind of evolved our our
+[1404] road map for persul was to start with
+[1406] the ability for you to uh have a
+[1409] one-click kind of experience to actually
+[1411] understand your trace especially uh
+[1413] starting with single trace and then We
+[1416] uh have also uh uh have also launched
+[1418] multi-trace analysis internally as well.
+[1421] And so that's something that we're
+[1422] really excited to be able to uh roll out
+[1424] very soon. Um and then the next version
+[1426] of this which will also be introducing
+[1429] soon is actually very uh conversational
+[1430] experience through personal chat. Uh and
+[1432] so being able to bring all of this into
+[1434] a super engaging and a very
+[1436] user-friendly way uh for developers to
+[1439] be able to really just ask questions
+[1441] about all their traces, understand all
+[1443] the different kinds of failures that
+[1444] have happened, understand quick uh
+[1447] suggested prompt fixes, immediate fixes
+[1449] that they can make. Uh be able to
+[1451] cluster the different kinds of
+[1452] categories of of the of the impact of of
+[1455] these kinds of failures. Maybe even the
+[1457] ability to compare trace number one
+[1459] versus two versus three. There's uh uh a
+[1462] ton of flexibility that we want to
+[1463] really offer through a very
+[1464] conversational experience and that's the
+[1466] kind of uh uh that's the kind of uh uh
+[1469] vision that we've had for Perl since we
+[1471] got started uh because it really goes
+[1473] beyond uh it really goes beyond just you
+[1475] know being able to see uh your data but
+[1478] it's it's it's really to the next level
+[1479] of having an incredibly AI infused
+[1481] experience just like you said a cursor-l
+[1483] like experience to how you deal with
+[1485] building agentic systems. Yeah. And I
+[1488] especially talking about the multi-trace
+[1490] version of P per pip that I definitely
+[1492] am super excited about that like it it
+[1495] kind of makes me think about this work
+[1496] around like AI scientists and I mean
+[1499] it's kind of like automating the job of
+[1501] like the agent engineer like maybe even
+[1504] we could take a step back and talk about
+[1506] one of the features of PCL which is
+[1507] doing the um prompt suggested prompt fix
+[1511] and so that's already kind of here is
+[1513] the intervention for how you're going to
+[1514] fix your agent. you can update the
+[1516] prompt and now it's going multi-race.
+[1519] It's analyzing all these things and so I
+[1521] I I really feel like it's kind of
+[1522] evolving into the optimization platform
+[1525] as well like this will be how you tweak
+[1527] your agent as well.
+[1530] Right. Exactly. Yeah. I'd say that's uh
+[1532] that's that's that's also been a big
+[1534] part of our roadmap is to be able to
+[1536] really have a really strong let's say
+[1538] flywheel uh to help companies be able to
+[1540] really close the whole feedback loop
+[1542] around uh what they're learning from how
+[1544] their systems perform and what they can
+[1546] do about it next. Uh and so what we've
+[1549] seen uh some of our early customers do
+[1551] with Persful is they will uh they will
+[1554] uh they'll be able to generate a lot of
+[1556] these insights and they'll see the
+[1557] examples of of of suggested uh fixes to
+[1560] their system based on the failures that
+[1562] were caught. they'll actually take those
+[1563] suggestions and they'll put it uh back
+[1566] into windsurf or or into cursor to then
+[1569] say hey like can you fix this particular
+[1571] prompt based on the suggestion uh and
+[1573] then they uh they fix the prompt and
+[1575] then they uh run it again through
+[1577] personal and then they you know see
+[1579] pretty quickly that okay actually this
+[1580] time it it worked and that this failure
+[1582] wasn't there anymore and so uh that's
+[1585] you know a loop that we're really
+[1586] excited about you know companies being
+[1587] able to to to to really figure out ways
+[1589] to to streamline more quickly um
+[1592] Especially as you're dealing with, you
+[1593] know, much more complex systems like you
+[1595] mentioned, compound systems and and any
+[1597] kind of system with with with uh larger
+[1600] or more complex trajectories. Uh we we
+[1603] understand that the failure the surface
+[1605] area failures is only increasing which
+[1607] means that uh the having this kind of
+[1610] very very powerful fast feedback loop is
+[1612] extremely important. Uh and so that's
+[1614] exactly want to be able to enable uh
+[1616] over time with uh with with things like
+[1618] pal.
+[1620] Yeah, that's so cool. And I I guess I
+[1622] really just want to pick your brain
+[1623] further about the suggested prompt fix
+[1625] and maybe just like um yeah like um
+[1629] because because you mentioned um the
+[1630] idea of like uh you you have your prompt
+[1633] and you're going to like edit it with
+[1635] the suggestion. So it it doesn't
+[1637] necessarily just pop in a new sentence
+[1639] of the of the some line to add to the
+[1642] prompt. Rather, it's going to try to
+[1643] like edit the whole thing whether this
+[1645] is like a three paragraph prompt. Um
+[1648] yeah. So maybe I just want to kind of
+[1649] zoom further into maybe like prompt
+[1652] versioning maybe overall your state on
+[1654] that kind of prompt engineering
+[1656] perspective because personally I will
+[1658] say my sentiment is I still think prompt
+[1659] engineering is sort of the pro I think
+[1661] RL is hot right now and it's had a great
+[1664] like last couple weeks but I still think
+[1666] probably it's like a series of prompts.
+[1668] So yeah I guess I just want to know
+[1670] about how you think about that like
+[1671] prompt engineering and the state of
+[1672] that. Yeah absolutely. I'd say uh I'd
+[1675] say I I think when when when things when
+[1678] when the generative AI era really uh
+[1680] started in 2023, I remember there were
+[1683] there was a ton of um a ton of
+[1686] conversation around uh uh why prompt
+[1690] engineering is important and you know
+[1691] there's this new prompt engineer job
+[1694] description uh in terms of uh it was
+[1697] sort of like an art as much as it is
+[1699] science and so I'd say it's certainly
+[1701] still the case for for for every company
+[1704] that we work with which is the challenge
+[1706] of uh the whole reason why one of the
+[1709] biggest reasons why you even need to
+[1710] think about evals at all is anytime you
+[1712] change a particular prompt that just
+[1714] might result in something that uh that
+[1716] uh it's sort of like a whack-a-ole
+[1718] problem where something else fails and
+[1719] it's just you know you fix something
+[1721] here and then it fails somewhere else
+[1722] and so how do you really make sure that
+[1724] you can comprehensively cover all the
+[1726] the the the cases is you know still a
+[1729] hard problem uh and so so I'd say you
+[1732] know certainly agree that that is uh
+[1733] that is something that you know we're
+[1735] we're also very cognizant of and so in
+[1737] our product uh you know apart from
+[1739] personal we have very different kinds of
+[1741] of capabilities related to prompt
+[1744] versioning and experimentation and being
+[1746] able to really manage um this entire
+[1748] process from end to end because we see
+[1750] you know evaluation is is really not a
+[1751] one-sizefits-all problem and and it is
+[1753] it is very much a workflow. It's not a
+[1756] point in time uh type of solution
+[1758] either. And so uh we uh want to make
+[1761] sure that uh all those kinds of uh uh uh
+[1765] problems are are really solvable through
+[1768] our product. And so persul is
+[1770] interesting in that it actually fits
+[1771] into that whole workflow because it
+[1773] actually helps you be able to identify
+[1775] possible suggestions to the fixes
+[1778] themselves. Um and so uh the reason why
+[1781] it's also a suggestion is uh in some
+[1784] cases there's potentially a larger space
+[1787] of possible things you can do to address
+[1789] a potential suggestion. And so kind of
+[1792] also depends on the domain uh ultimately
+[1794] of of what the developer or the team
+[1796] might have you know the most information
+[1798] on. uh and so uh wanted to start off by
+[1802] testing this in a way where uh
+[1804] developers have a lot more flexibility
+[1805] to to approach the suggestion in
+[1807] whichever way they prefer as opposed to
+[1810] getting kind of let's say an immediate
+[1813] prompt fix that may not actually work
+[1815] and they have to kind of keep redoing it
+[1816] over and over. Uh so that's the that's a
+[1818] kind of a part experience that we we we
+[1820] may iterate on over time uh especially
+[1822] as we get more feedback from customers
+[1823] as they use PCL. But that's how we
+[1826] wanted to start off in terms of the the
+[1827] first version.
+[1828] Yeah, it's so cool. And um it really
+[1831] inspires me like one thing I learned
+[1832] from studying Petronis was I really like
+[1834] how you present uh links the
+[1836] hallucination detection model. And you
+[1838] you point out these like kind of uh like
+[1841] model features. I think it's like eight
+[1843] or so features. You kind of break down
+[1844] like the features of like what do you
+[1846] expect a hallucination detection model
+[1848] to do? What are the particular kinds of
+[1849] things that it does? And this is also
+[1851] something that we've already started to
+[1853] use at WBA take the inspiration is you
+[1856] break down our inferences into yeah like
+[1859] the different capabilities of it and
+[1861] then yeah you might fix this one feature
+[1864] but you've cost the other ones and
+[1866] that's kind of I guess the tricky thing
+[1867] about that multi-dimensional um like
+[1870] radar plot of model capability. Um yeah
+[1873] definitely a cool thing. It it maybe
+[1875] inspires me like maybe even just broadly
+[1878] talking about LLM as judge and if we
+[1880] could just maybe transition a little bit
+[1883] into this broad topic around LLM as
+[1885] judge. Um yeah, I think there's just
+[1888] it's just evolved so much. Obviously
+[1889] Pival this kind of like agentic LLM as
+[1892] judge is like maybe it's the most
+[1893] advanced version I've seen of it. I've
+[1895] seen also some really cool ideas from
+[1897] like Haze Labs and Verdict. They have
+[1898] these like compound AI systems for
+[1901] judges. And yeah, I guess we could just
+[1902] maybe talk about things like uh rubrics
+[1906] and just ensembled inferences, maybe
+[1908] debates between LM judges. That's my
+[1910] favorite idea is where the LM judges
+[1912] like will argue like if you're rating an
+[1914] answer on a scale of one to five and
+[1916] they'll each take a position of one,
+[1918] two, three, four, five, and it's like
+[1919] group chat to have some decision on what
+[1922] the rating is going to be. Um, yeah. I
+[1924] guess maybe I just want to kind of
+[1926] transitioning before I want to talk
+[1927] about links and a glider. I just want to
+[1929] kind of maybe ask broadly about what
+[1931] your experience has been just being in
+[1933] the space of like kind of like LM as
+[1935] judge and Yeah. And I love that scalable
+[1937] oversight phrase by the way. That's a
+[1939] that's awesome.
+[1941] Yeah, definitely. Yeah. So I'd say uh so
+[1943] I'd say LMS as a judge is uh has been a
+[1945] really big part of our product uh for
+[1947] for some time and I'd say we were the
+[1949] the first company to actually really
+[1950] productionize an LMS as a judge approach
+[1953] uh and of course supporting that through
+[1955] our API and and as a part of as a part
+[1957] of a lot of this work like you mentioned
+[1959] we've also published research in these
+[1960] areas and so uh so one example of uh of
+[1963] an LM judge that we had open sourced
+[1965] like you mentioned was links from from
+[1967] the end of last summer and uh this was a
+[1969] state-of-the-art rag rag evaluation
+[1971] model for uh measuring groundedness in
+[1975] and outputs. Uh and what was neat about
+[1977] how we actually approached links was uh
+[1979] it was the very first time that someone
+[1981] had trained an evaluation model with
+[1982] train of thought data. Uh and so uh in
+[1986] particular was train of thought uh
+[1988] reasoning data that was semantically
+[1989] perturbed across vary different kinds of
+[1992] practical domains and use cases. And so
+[1993] we wanted to make sure that it worked
+[1994] really well especially on real world use
+[1997] cases like medicine and financial
+[1998] services. Uh and so uh when when we
+[2002] developed that a lot of that was in
+[2004] response to the fact that a lot of
+[2006] companies uh you know whether it was
+[2008] that point in 2024 or today uh they're
+[2010] all developing uh rag applications and
+[2013] we've continued to see that rag is is
+[2014] really the biggest uh use case that
+[2017] enterprises are developing because
+[2019] everyone wants to make sure that uh that
+[2021] the AI products and and systems they're
+[2024] building have uh the right kind of uh uh
+[2027] context from internal
+[2029] uh from internal teams and and uh and
+[2032] how they approach uh the their own
+[2034] particular domain. Um and so uh what we
+[2038] continue to hear was that uh uh Elma as
+[2040] a judge is is really really important
+[2042] and some companies have started to try
+[2043] to use models like even GPD4 to be like
+[2046] a general purpose evaluator. We kept
+[2048] hearing a lot of different concerns
+[2050] around cost and scalability but really
+[2051] around the performance of the LM the
+[2054] performance of using GPT4 as a judge.
+[2056] And so we thought why don't we actually
+[2058] design a new model that is in particular
+[2060] specifically uh designed to be a an LM
+[2064] judge. That's what really started uh
+[2066] everything that we did with with links
+[2068] for rack systems and then we continued
+[2070] that with glider as well later in the
+[2071] year where Glider was the um the first
+[2074] SLM judge to be GPD40 mini and uh the
+[2078] the keyword there is SLM because we
+[2080] wanted to enable even more scalable use
+[2082] cases for uh for things like this so
+[2084] they can really effectively u be used as
+[2088] uh as as as guardrails uh for real-time
+[2092] applications. Um and so so both of those
+[2096] u were things that we really excited
+[2097] about and really enjoyed the the open
+[2100] source traction that that both of them
+[2101] got. Um and uh and and now of course you
+[2104] know in our next phase of of of uh of
+[2107] scalable oversight pal is is what we uh
+[2110] continue to believe is really uh a
+[2112] really big part of how we enable this
+[2114] especially for uh companies that are
+[2116] building aic systems.
+[2118] And so I know I know you also had some
+[2120] other questions uh around how we
+[2122] approach different kinds of um uh let's
+[2125] say newer kind of innovative evaluation
+[2128] concepts like different types of scoring
+[2130] and um and judge debates uh and so uh so
+[2134] yeah so I'd say I have a lot of thoughts
+[2135] uh on this uh and can certainly share um
+[2138] and can certainly talk a lot about where
+[2140] we see um the the most happening and
+[2143] where are you know some of the areas
+[2145] where I don't really believe it's there
+[2146] today but perhaps also be there in the
+[2148] future. So I'd say maybe to start with
+[2150] rubric scoring. So actually Glider in
+[2152] particular was actually actually has
+[2154] rubric scoring and multimetric
+[2156] evaluation. Uh and um and I'd say that
+[2159] you know generally I'd say it's really
+[2160] difficult for models to do ranking tasks
+[2163] and fine grain scoring. And so um it's
+[2166] pretty valuable for users to be able to
+[2167] really specify detailed criteria. Uh and
+[2171] so that's really how rubric scoring can
+[2173] really work. And so we have methods like
+[2175] that that we support in pronis as well.
+[2177] Um and uh and then also you know there's
+[2179] this question around you know what is um
+[2182] how do we think about like static
+[2183] scoring versus you know preference
+[2185] ranking for example. And so I'd say uh
+[2188] what we what we've typically seen as
+[2189] pair-wise preferences are more helpful
+[2192] in either development or more open
+[2194] domain or or or generative generative
+[2197] types of use cases where there's no kind
+[2199] of specific task outcome to really
+[2201] achieve. But I'd say for more task
+[2203] oriented settings like let's say you
+[2205] know booking a flight like the example
+[2206] we talked about earlier I'd say static
+[2208] scoring tends to be a lot better. Um and
+[2210] the other problem with pair wise
+[2211] preferences is is that it sometimes is
+[2213] not really reproducible and also can be
+[2216] actually sometimes pretty expensive for
+[2218] a team to do with you know batch human
+[2220] annotations and the flip side static
+[2222] scoring can sometimes be cheaper. uh and
+[2224] so you know then I think in lie of that
+[2226] of course you know there's LM judges
+[2228] which although uh sometimes the downside
+[2230] is sometimes they can be
+[2231] nondeterministic depending on how you're
+[2232] using the LM judges and things like
+[2234] that. Uh and so so I'd say that the
+[2236] space of the different kinds of
+[2238] approaches have really evolved and I'd
+[2239] say it's not a one-sizefits-all problem
+[2241] but we've seen some of the best uh
+[2243] serious and ambitious AI teams do really
+[2246] really well with uh even some of these
+[2248] newer methods uh especially even some of
+[2250] the most new methods around LM as a
+[2252] judge. Um, and then I'd say with LM
+[2254] judge debates, uh, I'd say I haven't
+[2255] seen, uh, these in production yet or
+[2258] teams kind of really using it. I think
+[2259] it's certainly more of an academic
+[2261] concept at this point, but a really
+[2263] interesting one. Uh, I'd say it's
+[2265] certainly one uh, especially in in let's
+[2267] say higher latency use cases can be
+[2269] really important and also really
+[2271] important for highly regulated use cases
+[2273] where the cost of of an error is really
+[2276] high. uh and so so I'm really excited
+[2280] about the potential for where this can
+[2282] where this can play a role in practical
+[2283] applications in the future. The
+[2285] challenge today is that uh there is a
+[2288] lot of of course there's also bias with
+[2290] using uh foundation models as judges and
+[2294] so uh sometimes we've seen uh folks try
+[2297] to use u foundation models uh in debates
+[2300] as kind of LM judges uh and the problem
+[2303] is that if all of those judges if all
+[2305] those uh foundation models are all uh
+[2307] coming from the same training
+[2309] distribution which you know is the case
+[2311] most of the time uh it means that they
+[2313] are all biased toward each Uh and so in
+[2316] order for LM judge debates to really
+[2318] work well, my belief is that we it has
+[2321] to be among judges that were trained and
+[2324] designed in nature to be LM judges. Uh
+[2327] and so uh ideally those judges don't
+[2330] have overlapping training distribution.
+[2332] Uh and so I expect over time as more
+[2335] more companies invest uh in this area
+[2338] that that's you know where the field
+[2339] will head.
+[2342] Yeah. Amazing. So many interesting
+[2344] ideas. I guess maybe just like parsing
+[2346] out some quick takeaways for me. I
+[2348] really like this kind of separation of
+[2350] like LM is judge or using it to develop
+[2353] a system or version systems or measure
+[2355] your interventions like changing the
+[2356] prompt or you've did the latest gpo to
+[2359] your model and how's it working and then
+[2361] there's kind of like using it in guard
+[2363] rails like if I'm if the AI system is to
+[2366] give me a medical diagnosis I would like
+[2368] them to debate all like please take as
+[2370] much time as you need for the inference
+[2372] and have this extra layer on assessing
+[2374] candidate output. So yeah, I I really
+[2377] like that angle to it. Yeah, the the
+[2379] rubric scoring different dimensions and
+[2381] then mentioning ranking is hard. I come
+[2383] at weevate, we come from the world of
+[2385] search and there's a lot about how like
+[2387] oh you know and DCG trying to optimize
+[2389] that ranking thing. It's so much harder
+[2390] than you realize, so much harder than
+[2392] just kind of like recall testing. So
+[2394] definitely a deep thing to like uh train
+[2397] models for ranking compared to like
+[2399] maybe like classification accuracy. It's
+[2401] just a much deeper task. Um yeah, so I
+[2404] guess um maybe I wanted to I guess there
+[2407] was I guess maybe just to finish out
+[2408] this like just all of the LM judge
+[2411] topics I've kind of come across. There's
+[2412] one other called LM unit which is kind
+[2414] of like instead of having eval like a
+[2417] fixed set of evals like kind of like a
+[2418] task perspective, it's like per
+[2420] instance. So like you take your instance
+[2422] like maybe your question is like uh how
+[2425] what how does HNSW work and then the
+[2427] judge generates all these different
+[2428] criteria like per instance that maybe
+[2431] just be like the last little topic just
+[2432] just if I can pick your brain about like
+[2434] every LM is judge topic I've come
+[2436] across. Right. Exactly. Yeah. Uh yeah
+[2439] I'd say that's uh I'd say it's a it's a
+[2441] it's a it's a it's a great uh approach
+[2443] and and really like what uh what what
+[2445] contextual AI did with LMUnit. Um and uh
+[2449] and uh and I'd say that uh uh that's
+[2453] also generally what we've started to see
+[2456] uh especially as we work the market uh
+[2458] started to hear about which is in a lot
+[2460] of cases uh AI teams are not even sure
+[2463] how to even really define the criteria
+[2465] how to even really set up the eval to
+[2467] begin with because they're not really
+[2468] sure what they're really optimizing for
+[2470] what goals are they really trying to
+[2471] achieve and so being able to leverage
+[2474] techniques where uh that process is is
+[2476] easier uh to understand and and easier
+[2479] to define upfront can be a pretty good
+[2481] way of of approaching it from a
+[2484] framework perspective. And so I actually
+[2486] expect that as we you know shift into uh
+[2490] like we talked about earlier around
+[2491] dynamic evaluation that this is going to
+[2493] be a key part of that entire system
+[2495] which is agents are actually defining on
+[2497] the fly what specific kinds of metrics
+[2499] and criteria um are really necessary to
+[2502] be uh evaluated um while an environment
+[2506] or you know a system is is live let's
+[2508] say um and that could be something that
+[2511] uh like you mentioned uh is really
+[2513] important for an instance by bas because
+[2516] in a lot of cases perhaps you may have
+[2518] very very different kinds of users or
+[2520] customers and they may have different
+[2522] kinds of needs and so being able to to
+[2523] define that um much more in in real time
+[2527] and having an intelligent solution to be
+[2529] able to do that is is a very important
+[2530] uh approach and so we we at PUR really
+[2533] liked what they've done uh with with
+[2535] being able to to innovate in that area
+[2537] as well.
+[2539] Yeah. And uh sorry if this is a bit
+[2542] random just like something that popped
+[2543] into my head as I'm listening and like
+[2546] you know learning about all these things
+[2547] is um something that I recently like
+[2549] Sequoia just put together a bunch of AI
+[2551] talks and I really like Harrison Chase
+[2553] from Langchain. He's always had a lot of
+[2555] great ideas and his latest one is about
+[2557] the agent inbox and sorry this is
+[2560] pivoting a bit but I'm just I'm just
+[2562] trying to like digest all these ideas.
+[2563] one an old topic I guess I'm just
+[2565] popping it back up but um I think about
+[2567] like pival as it's going through the
+[2569] trace and it's trying to learn about the
+[2571] domain and it's maybe doing this offline
+[2573] like the multitrace pal and then maybe
+[2575] it's doing this agent inbox like like to
+[2577] me like hey Connor developer of the
+[2578] query agent I have these questions for
+[2581] you about what you're trying to do um
+[2583] yeah sorry it's a bit pivoting topics
+[2585] but yeah what do you think about that
+[2586] kind of interface yeah definitely
+[2588] definitely uh uh your question is uh uh
+[2591] h how how would a query agent to be able
+[2594] to um to to deal with with a problem
+[2597] like this. Oh. Oh, sorry. So, my
+[2599] question is like um Yeah. So, so my
+[2601] question is like about per so back to
+[2603] coming back to Perl the agent that's
+[2605] kind of helping me build my agent and
+[2608] and then also that kind of like
+[2609] multi-race perspective where it's like
+[2611] looking at a bunch of logs offline. It's
+[2613] like really looking through a ton of my
+[2614] inferences learning and then and now
+[2616] it's trying to like learn about it. And
+[2618] so I'm curious if like how you might
+[2620] interface interactions between like
+[2623] pible and then me in that offline sense
+[2625] where it's like going human in the loop
+[2627] like okay time to interrupt Connor I
+[2629] have these questions for you about the
+[2630] query agent. Right. Right. Right.
+[2633] Definitely. Yeah. I'd say that's uh
+[2635] that's a great uh that's a great idea in
+[2637] terms of how uh how a developer and AI
+[2640] team can ultimately interact with pers
+[2642] because in a lot of cases especially if
+[2643] pulful is let's say dealing with really
+[2645] long trace data and potentially even in
+[2647] a real-time setting you may want to
+[2648] interrupt the the flow and be able to
+[2650] guide in a particular direction. Uh and
+[2653] I'd say the human in the loop aspect is
+[2655] a really important piece of of all of
+[2657] this. Uh and so one of the things that
+[2659] uh that uh Rebecca and I Rebecca and I
+[2662] Rebecca my co-founder when we first
+[2664] started the company uh what's
+[2665] interesting is that what what we had
+[2667] been brainstorming and what we were
+[2668] really excited about was this concept of
+[2670] critique assistance. Critique assistant
+[2672] models uh and so I'd say that's what
+[2675] ultimately LM judges to some level
+[2677] became in terms of how we how we
+[2678] evolved. But critique assistant models
+[2681] are a really great way of uh being able
+[2684] to do exactly this but also uh loop in
+[2687] humans uh to be able to to guide uh to
+[2690] guide them as as as they go through the
+[2692] process. Uh and so uh ultimately the the
+[2696] end outcome is what uh we really want to
+[2698] achieve. Uh and so if PR first can can
+[2701] collaborate with humans in the right way
+[2702] at the right points in time uh to be
+[2704] able to to accomplish the the that end
+[2706] outcome then uh then that's the that's
+[2709] that's that's ultimately optimal for how
+[2711] we see scalable oversight because
+[2712] scalable oversight is is not it's not
+[2714] really about uh uh you know will AI
+[2717] replace humans but it's really about how
+[2719] can we live in a world where where
+[2720] humans coexist with AI uh but at the
+[2723] same time uh you know are not able to
+[2726] scale in the same way that AI can scale.
+[2728] when it comes to oversight over AI. Uh
+[2730] and so that's why we just fundamentally
+[2732] believe that human in the loop
+[2734] regardless of where it fits in is really
+[2736] important to our vision here. Yeah,
+[2740] that's so cool. Really interesting ideas
+[2743] and um yeah, I think this is a
+[2745] transition a bit into um so on. As I was
+[2747] kind of studying your background a bit
+[2748] and researching for the podcast, I saw
+[2750] that you had this background in causal
+[2751] inference. And so I really do want to
+[2753] talk about this a bit because causal
+[2754] inference to me is just one of these
+[2756] like really interesting areas of
+[2758] statistics that I feel like has like
+[2760] just so much potential and I think
+[2762] especially this kind of thing of like
+[2764] like intervention control. How do I fix
+[2766] the agent? I wanted to kind of uh zoom
+[2768] into this a bit and ask you about like
+[2770] your experience with that and how that
+[2772] guides your thinking. Yeah, absolutely.
+[2774] I'd say uh causal inference was um uh
+[2778] one of the one of my most favorite
+[2779] subjects in statistics, especially
+[2781] because it was u uh I've always thought
+[2784] it's it's a great way to really estimate
+[2787] uh or predict why something really
+[2789] happened. Uh especially in scenarios
+[2791] where it's really hard or very
+[2793] impractical to actually run a real uh
+[2796] randomized control trial or a real
+[2798] experiment like an AB test. Uh, and so
+[2801] this is actually one of the main things
+[2802] that I really helped to push forward at
+[2804] Meta, especially specifically
+[2806] observational causal inference,
+[2807] including things like propensity score
+[2809] matching to be able to uh to to predict
+[2812] different kinds of impacts and effects
+[2814] that are really hard to predict in in in
+[2817] or impossible to predict in in typical
+[2819] types of experimental scenarios. Um, and
+[2822] so the challenge with co inference
+[2824] sometimes is that there's a lot of
+[2825] assumptions that you're really making.
+[2826] And so sometimes you can't really trust
+[2827] the results you see with causal
+[2828] inference. Um, and so what what really
+[2831] got me excited about the kinds of things
+[2832] that we were doing with Petronis is of
+[2834] course the the fact that you can really
+[2836] see the impact of the ability to
+[2839] pinpoint failures and to really be able
+[2841] to explain the failures that that that's
+[2844] happening with AI products. Um, and uh,
+[2846] because it's it's it's a real uh uh, you
+[2849] know, kind of like real ground truth uh,
+[2852] uh, evidence of of something happening,
+[2855] it's very easy to to to to at least be
+[2857] able to to help uh, uh, companies be
+[2860] able to scale their products in a much
+[2861] more rigorous and and and more accurate
+[2864] way. Uh and so the way that I see causal
+[2866] inference playing into, you know, what
+[2867] we do in the future is to continue to
+[2869] make uh all of the methods uh that we
+[2872] bring to customers be a ton more
+[2874] rigorous, quantitative, uh explanatory,
+[2877] uh and uh and and and most of all
+[2879] truthful to to what's actually
+[2881] happening. Uh and so that's what I'm
+[2883] really excited about, you know, where
+[2884] this, you know, may go uh just in terms
+[2886] of uh this next phase of valuation
+[2889] observability toward uh supervision and
+[2891] oversight. Yeah, it's amazing. That's
+[2894] definitely something that makes me
+[2894] excited about the future of patronis is
+[2896] I think yeah unifying these kind of
+[2898] ideas can make for such an interesting
+[2899] thing. I mean I guess my question would
+[2901] be um these elements judge models that
+[2904] produce reasoning traces. Um how do you
+[2907] think about kind of like reasoning and
+[2909] then like a structured causal graph like
+[2912] because my I I have a poor understanding
+[2914] of causal inference. I should set it up
+[2916] by by saying that but like I understand
+[2918] it's like you have an interaction effect
+[2921] between variables like if you're saying
+[2923] this prompt like say this one sentence
+[2925] of the prompt you think it causes this
+[2927] particular model feature like if we're
+[2929] we have like eight sentences of prompts
+[2931] and we think each one is creating one of
+[2932] our eight model features something like
+[2934] that and then we're saying like if we
+[2936] tweak it we expect it to lose this
+[2939] feature by this much or is that maybe
+[2941] the right way of thinking about it or
+[2942] yeah yeah absolutely I think That's uh
+[2945] that's a great way of thinking about it.
+[2946] I'd say that in some ways actually
+[2948] extends more into model interpretability
+[2950] uh and less let's say kind of the
+[2952] empirical approach to uh being able to
+[2955] test models. And I'd say both are
+[2957] ultimately very very important. I'd say
+[2959] from a customer perspective we see more
+[2961] companies struggle with this problem
+[2963] space around the system layer uh like on
+[2965] the let's say the the the rag layer or
+[2967] the Atlantic layer um and less on the
+[2969] model uh specific layer itself. But I
+[2972] would certainly say that it's a an
+[2974] important piece of even how we think
+[2976] about for example evaluation models that
+[2978] we've trained like links. So for
+[2979] example, one way to approach this
+[2981] problem is to actually train uh sape
+[2984] sparse autoenccoders on guardrail models
+[2986] like links. Uh and uh what what you can
+[2989] then do is you can then get of course
+[2991] like a set of human interpretable
+[2993] features on on the model itself. uh and
+[2996] then you can actually give customers the
+[2998] tools to address the sensitivity of uh
+[3001] of these models and this is actually
+[3003] something that I expect the the space to
+[3005] evolve in over the next several months
+[3007] just across the industry uh in that
+[3009] today not a single company and maybe
+[3011] this is an idea for someone out there
+[3012] but no one has actually ever trained so
+[3014] Barcode encoders on evaluation or
+[3016] guardrail models uh and this would
+[3018] actually be a very important thing to do
+[3020] especially if you're planning to uh to
+[3022] run these kinds of models in production
+[3024] that you know happen to be and and
+[3026] should be very domain specific. Uh so
+[3028] I'd say uh using sparse autocoders is
+[3031] one way of being able to really pinpoint
+[3033] interpretable features that can then
+[3034] actually give you real uh uh uh real
+[3038] tools to be able to adjust sensitivity
+[3040] in the right way. Oh, it's amazing. And
+[3042] I I'm almost like I don't want to give
+[3044] up too much of what we're working on at
+[3045] Wev8, but that we are kind of
+[3047] researching this idea of like
+[3048] interpretable embeddings and
+[3050] particularly kind of taking like like a
+[3052] classification perspective where we have
+[3053] all these different axes of
+[3055] classification labels to come up with
+[3057] like say a fivedimensional vector each
+[3059] with cardality say 10 and then you have
+[3061] like this really interpretable uh
+[3063] retrieval through classification is I
+[3066] think that that role of like classifiers
+[3068] integrated with document labeling. Yeah.
+[3071] and creating this interpretability
+[3073] aspect of it. Yeah. All that is really
+[3075] amazing. So awesome. Anand, I'd love to
+[3077] kind of maybe pivot back into the
+[3078] Petronis platform and kind of the
+[3080] product that you're developing as well
+[3082] as our partnership with Wevier and maybe
+[3084] discuss some things about like the data
+[3086] infrastructure requirements maybe how
+[3088] you're how vector search can help and
+[3090] all these kind of things. Yeah,
+[3092] absolutely. Well, I'd say the one of the
+[3094] key parts of how we built persul was
+[3096] with we at its core, especially because
+[3099] of the memory component. Uh I mentioned
+[3101] earlier that one of the big problems uh
+[3103] that we continue to be uh very focused
+[3105] on is how do we really make uh
+[3108] evaluation and oversight uh very domain
+[3110] adaptive uh and so uh one of the things
+[3113] that uh we've started to see a lot of AI
+[3115] teams do is to of course predefine their
+[3117] own eval and write their own unit tests.
+[3119] Sometimes it's quality check, sometimes
+[3121] they try to use LLM as a judge or or
+[3122] something else that can work. Uh but
+[3124] especially as we enter into a world
+[3127] where things are a lot more dynamic and
+[3129] a lot and and and scale scalable
+[3132] evaluation is very much necessary, that
+[3134] means that the ability for evaluation to
+[3137] be very domain adaptive is uh is is is
+[3140] really necessary. Uh and so uh and so in
+[3144] order for that to be possible, of
+[3145] course, how we how we approach memory is
+[3147] a is a key part of that. Uh and so we
+[3150] were able to to work with uh WVA to be
+[3152] able to do exactly this in terms of
+[3153] implementing things like episodic memory
+[3155] and semantic memory uh to help make sure
+[3158] that PIAL is actually very domain
+[3159] adaptive to uh how customers uh are are
+[3162] are developing their own AI systems. uh
+[3165] and so uh the smarter and the more
+[3168] intelligent personal is to your own
+[3169] domain of course the more effective it
+[3171] will be and so you know without being
+[3174] able to approach memory in a in a very
+[3177] rigorous way uh person would not be
+[3179] possible uh and so so so that's how I
+[3181] describe you know what what what uh uh
+[3185] how how how what this means for us and
+[3187] where we see that going for the future
+[3189] amazing so I'd love to just immediately
+[3190] double click on uh how you separate
+[3192] memory into yeah episodic and semantic
+[3195] memory. Can we just kind of zoom further
+[3197] into into that? Yeah. Yeah, definitely.
+[3200] So, episodic memory is uh referring to
+[3203] memory about past instances. It could be
+[3206] past user interactions. It could be um
+[3209] uh any kind of information or context
+[3212] about things during the lifetime of
+[3214] let's say in this case PL. Uh and then
+[3217] uh semantic memory is more about the
+[3218] baseline. it's more about the ground
+[3220] truth, facts, knowledge, evidence about
+[3222] that particular domain that you're
+[3223] really seating the information with. Uh,
+[3225] and so ultimately both kinds of memory
+[3227] are really important. Uh, and uh, and
+[3230] I'd say that ultimately it's important
+[3232] not just for the lifetime of an overall
+[3234] AI product, but even even within a
+[3236] particular trace. Uh, and so uh, so both
+[3239] those kinds of things are the kinds of
+[3240] things that we're going to continue to
+[3241] to to develop over time. Yeah. Amazing.
+[3245] If if I could just kind of be like a
+[3246] database nerd a little bit, when you
+[3248] think about the the database schema for
+[3251] designing this memory, do you just have
+[3253] say like one collection with two
+[3256] properties each with a vector index or
+[3258] like you know full search full vector
+[3260] and full text search for like episodic
+[3263] and semantic memory and is that just and
+[3265] then you just kind of like scale that
+[3266] out like per tenant is that kind of like
+[3268] the database view of that particular
+[3270] memory design? Yeah, I'd say so. Yeah,
+[3273] I'd say the the way that we for example
+[3275] approached it is we uh we we uh we we
+[3279] had a WVA collection and within that we
+[3282] would be for example saving memory as as
+[3284] in separate objects as as vectors um
+[3287] using u you know I think the the text
+[3290] vectorzer and then we'd be saving you
+[3292] know additional properties related to
+[3294] those entries and then um when for
+[3296] example there are specific runs we'd be
+[3298] thinking about you know how do we really
+[3299] search for the the the closest ones in
+[3302] that space. Um, and so that's generally
+[3305] how you know at a high level we really
+[3307] approach memory itself. And of course
+[3309] all of this is you know especially
+[3310] possible because of how we were
+[3312] leveraging weate for this. That's so
+[3314] cool. And I think I don't want to ask
+[3316] too many questions about how the secret
+[3317] sauce is made. But I I'm so curious
+[3319] about like metadata in the kind of
+[3322] vector database schemas and kind of a
+[3324] lot of talk about things like you know
+[3326] the lack of the kind of because like
+[3328] vector database are kind of designed for
+[3329] like the first case of it like when the
+[3332] original rag paper came out I think a
+[3334] lot of researchers was like yeah we're
+[3336] going to vector search with a billion
+[3337] doc we're going to put all the
+[3338] scientific papers in one big index and
+[3340] then as it evolved it had more of this
+[3342] like multi-tenant pattern where it's
+[3344] like no we have a million users each one
+[3346] with like a variable amount of documents
+[3347] and And now I think we're seeing more
+[3349] metadata in the kind of like vector data
+[3352] model if you will. And yeah, so I think
+[3354] definitely something for us to talk
+[3355] about later, but I'd love to anchor the
+[3356] podcast on on with this topic of uh what
+[3358] future directions for AI excite you the
+[3360] most. Yeah, absolutely. Well, I'd say
+[3362] I'm I'm really excited about a lot of
+[3364] things uh that are coming up uh in
+[3366] general in terms of what a lot of
+[3368] different kinds of folks are working on
+[3369] apart from of course what we have coming
+[3371] out in the next several months. I'm
+[3372] really excited about emerging
+[3374] architectures uh of course beyond auto
+[3376] reggressive models uh like for example
+[3378] state space models has been something
+[3379] I've been excited about for some time
+[3381] and uh and and generally the ability to
+[3384] be able to um uh to to leverage
+[3388] different and new kinds of information
+[3389] something we're really excited about.
+[3390] I'm also really excited about different
+[3391] kinds of uh synthetic data generation
+[3394] capabilities especially in the ways that
+[3396] it can help not just train new models
+[3398] but even help to uh understand how
+[3401] models work both from interpretability
+[3403] perspective and also from an evaluation
+[3404] perspective and so uh so really really
+[3407] excited about that. uh and then you know
+[3409] on that note really also generally uh
+[3412] very excited about uh model editing as a
+[3414] as a subset of things uh around model
+[3417] interpretability uh and I'd say uh it
+[3420] goes handinhand kind of adjacently with
+[3422] scalable oversight uh and so really
+[3425] excited about you know where all of that
+[3427] is going into the future and just
+[3429] fundamentally believe that these are
+[3430] some of the the most urgent problems to
+[3432] be solved especially on the path toward
+[3433] AGI.
+[3435] Yeah, I guess I the model editing one to
+[3437] me is I guess I'm so like trying to hold
+[3439] out on the prompt engineering because I
+[3443] feel like the operational overhead of
+[3445] changing the weights of the model is
+[3446] such a is such a pain that if I could
+[3449] instead just if there's just a way to
+[3451] instead get all the domain information,
+[3453] everything we need into the prompt. Um
+[3455] and and then also kind of like the
+[3457] decomposition of inferences if if that's
+[3459] the approach. So those those three are
+[3462] each great topics, but maybe we could
+[3463] start with that one. Then I do want to
+[3464] ask you one more question about
+[3465] synthetic data generation, but you're
+[3467] talking about model editing just um
+[3469] yeah, what's your sentiment on that kind
+[3470] of operational overhead of actually
+[3472] changing the neural network itself.
+[3474] Yeah, absolutely. I'd say it's uh I
+[3476] think I'd say it's very much still an
+[3478] unsolved problem but a very important
+[3480] problem in generally mechanistic
+[3482] interpability uh to understand exactly
+[3485] how that can can can work. And I'd say
+[3487] things like sparse mode coders are are
+[3489] really great in being able to help us
+[3490] really solve that problem. But uh it's
+[3492] also very finicky and very hard to to
+[3494] get these right ultimately. And so uh I
+[3498] I'd say the the probably the biggest uh
+[3501] conundrum or contradiction of today's
+[3502] day and age is we have extremely
+[3504] powerful uh large very very large
+[3507] proistic machines that we don't really
+[3509] fully understand in terms of how they
+[3511] work. Uh and so it very much in many
+[3514] ways is sort of like the human brain.
+[3515] And so uh really excited about you know
+[3517] where what where where where the
+[3519] research around model editing and
+[3521] interpretability will will really lead
+[3522] to uh and very excited about companies
+[3525] like Goodfire that are paving the path
+[3526] for things like this.
+[3528] That's awesome. I'll definitely be
+[3529] looking at Goodfire later. That's just
+[3532] really loved it just to know what was
+[3534] happen remember there was like um like
+[3536] Rome and like um mett uh oh I've already
+[3540] I've already forgotten the names of the
+[3541] papers but yeah definitely like
+[3543] parametric knowledge conflicts is
+[3545] something that I think is big for people
+[3546] working in the rag space um awesome so
+[3548] so so then I also want to click on that
+[3550] second one about synthetic data
+[3551] generation because um the kind of like
+[3553] we're researching new agents we might
+[3555] develop at weave and something that's
+[3556] really interesting is maybe something
+[3558] that helps you create objects and
+[3560] particularly I think about creating
+[3561] synthetic e creating eval sets and I
+[3564] think about maybe this like dduplication
+[3566] is the interesting thing. So you start
+[3568] off with the same prompt like this is
+[3570] the agent. These are the inputs and
+[3572] outputs. This is its prompt. You're
+[3573] supposed to be testing it and it's just
+[3575] like generating cases and now like the
+[3577] system thing is to like dduplicate it uh
+[3580] or explore new directions. There's a lot
+[3582] of interesting work from like Jeff Cloon
+[3583] and Kenneth Stanley about like uh
+[3585] quality diversity algorithms and yeah
+[3587] maybe just like yeah synthetic data
+[3589] generation. What kind of interesting
+[3590] things are you seeing around that? Yeah
+[3592] absolutely. Well, I'd say uh what's
+[3594] what's becoming more interesting,
+[3595] especially with synthetic data
+[3596] generation, is the is the ability to
+[3598] actually leverage agents to actually uh
+[3601] to do this. Uh initially, it started
+[3603] with let's use an LLM, let's prompt an
+[3604] LLM to create some new data. But now
+[3606] with agents, you can actually of course
+[3609] uh uh add in a number of different kind
+[3611] of steps to that workflow. Whether
+[3612] you're calling different tools or APIs,
+[3614] whether you are dealing with internal
+[3616] documents, you want to be able to ingest
+[3617] in a rag workflow. and all of a sudden
+[3619] you can now generate some really really
+[3621] high quality very specific very uh data
+[3624] that's very specific to your domain that
+[3626] also contains a lot of diversity in the
+[3627] information. uh and so uh that's you
+[3630] know from one perspective that's just
+[3632] about how can we just generate data a
+[3634] lot a lot more quickly but then there's
+[3636] this idea of there's our ability to to
+[3638] to to generate adversarial data sets as
+[3640] well uh with agents and so I'd say
+[3642] adversarial data generation is also
+[3644] another area that is similar but also
+[3646] one that I'm very excited about
+[3648] especially because it allows us to uh
+[3650] make it more systematically possible to
+[3653] actually comprehensively test different
+[3655] kinds of systems uh and uh ultimately
+[3658] when it comes to valuation, the data
+[3660] piece is half the equation. And so, uh,
+[3663] any new research in that area that
+[3664] involves, uh, doing this in a much more
+[3666] systematic but more high quality way is
+[3668] something I'm very excited about. Yeah.
+[3671] Amazing. I like that that like
+[3672] adversarial like I I'm really interested
+[3674] in it for creativity. Like something I
+[3676] lost a ton of time in is when Chat GBT
+[3678] got really good at images. I was
+[3680] creating these like gorillas that would
+[3682] have like a weev8 branding on them. I
+[3684] just became fascinated with the question
+[3685] of like how many of these gorillas can
+[3687] chache come up with. Yeah. And yeah,
+[3690] that's how I kind of lost myself in in
+[3693] that in that type of thinking. Anan,
+[3695] thank you so much for joining the Wevate
+[3696] podcast. It's been incredible learning
+[3698] all about all these things from you and
+[3699] your team at Petronis. I'm so excited
+[3700] about our partnership with Patronis and
+[3702] Weevate. And to everyone listening, I
+[3704] highly recommend checking out Perl. It
+[3706] is such a cool experience. It's so much
+[3708] fun and I mean, I really enjoyed it and
+[3710] I just couldn't recommend it enough.
+[3712] Thank you so much. Thanks so much for
+[3713] having me, Connor. This was an amazing
+[3715] conversation.

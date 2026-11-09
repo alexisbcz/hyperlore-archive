@@ -1,0 +1,1019 @@
+[0] and this was the first local model I
+[2] ever used that I was like Wow clearly we
+[4] can actually get within shooting
+[7] distance of the closed models and there
+[9] is a way for Indie developers to look
+[12] like a company spending $100 million
+[14] trading a model but with way less money
+[17] and with just one computer you know
+[18] you're not really showing what the best
+[20] model is but more so like what model has
+[22] the most traction how representative do
+[24] you think some of those numbers are
+[26] we've experimented with a couple
+[27] different complicated ways ranking
+[30] models we figured to start with we would
+[33] just do raw tokens in and tokens out and
+[37] that has a big
+[43] con Alex do you want to take us back um
+[46] and I'm curious what the what the
+[48] inspiration was to start open router
+[50] sort of what the conviction was what was
+[53] happening at the moment when you when
+[55] you decided to to create the
+[58] project yeah so
+[61] it
+[62] started back in February or March when I
+[66] was thinking about uh llama had just
+[69] come out and this was the first time we
+[74] were kind of getting exposure to local
+[76] models this was llama 1 and it was
+[78] surprising how like useful it was though
+[83] it wasn't really like a great chatbot
+[86] and it wasn't reliable as for knowledge
+[88] retrieval but it
+[90] there was something there that was worth
+[92] exploring and I couldn't I didn't quite
+[94] fig know what it was so um first project
+[99] was that I started was a uh Chrome
+[101] extension very much following the
+[103] pattern of like my current Paradigm and
+[107] and seeing like what about AI um could
+[110] benefit from it my current Paradigm was
+[112] crypto because I was wrapping up my time
+[114] at openc um I was the co-founder and and
+[117] CTO still on the board but I like um I
+[121] figured I was I wanted to look for
+[123] something Z to one again and try to
+[126] explore the AI space and figure out what
+[129] sort of interesting intersections would
+[131] appear so I worked on a project similar
+[134] to a web 3 wallet but for bringing
+[136] language models to the
+[138] browser and it was a standard for
+[141] front-end developers to just build API
+[144] and model agnostic apps and that was the
+[147] experiment and what became clear is that
+[151] there weren't that many Clos models at
+[153] the time it was really just like
+[156] gpt3 gb4 had just come out and
+[160] cohere and uh and there were a few open-
+[163] Source models that were really tough to
+[165] use and then llama came out and after
+[170] llama uh a group a research group took
+[174] llama and generated a bunch of synthetic
+[177] data and then uh fine-tuned llama on
+[181] that data and spent about $600 in the
+[184] whole process this was a group at
+[186] Stanford and they created alpaca and
+[189] this was the first local model I ever
+[191] used that I was like wow this is this is
+[194] huge this is something I like clearly we
+[197] can actually get within shooting
+[200] distance uh of the uh closed models and
+[204] there is a way for like Indie developers
+[207] to look like a company SP $100 million
+[211] training a model but with way less money
+[214] and with just one computer and I thought
+[216] that was huge it meant that maybe we'd
+[218] have a world with thousands or tens of
+[221] thousands or hundreds of thousands of
+[223] models and uh another takeaway from this
+[226] is that the data becomes more of the
+[230] moat and data becomes like a more
+[232] critical part of what makes a new model
+[235] unique and a new model useful where a
+[238] closed or centralized model wouldn't be
+[241] as good you know even if a new model is
+[243] just not as smart even if we have like
+[245] you know take a person who's not as
+[247] smart as somebody else but that one
+[249] person just knows a whole bunch of stuff
+[252] they just have all of these secrets
+[253] locked in them um that they've been
+[256] exposed to like they know how something
+[258] works the the smart person is not going
+[260] to be able to just figure it out there's
+[261] just knowledge they're missing and that
+[263] is something that like you know empowers
+[267] the like or or allows people to take d
+[269] data that's there's no way of selling
+[271] this data and find a way to monetize it
+[275] so it creates a new economy and I
+[277] thought well you know we might need a
+[279] Marketplace then for models and the
+[282] closest thing at the time was hugging
+[284] face U but you couldn't really use the
+[286] models and inference was tricky and and
+[289] often left up to the developer and it
+[291] was very hard to find the models to like
+[294] figure out which ones would be good at
+[295] different things so that's why I started
+[299] open rout actually the one of the guys
+[301] who was building like the one of the top
+[304] browser extension Frameworks called
+[306] plasmo which I used to build window AI
+[310] the Chrome extension um for local models
+[313] he ended up joining as a co-founder and
+[317] we started open router together I love
+[319] that story and how for folks who haven't
+[322] used open router um like what's the
+[326] basic pitch of like why as a as a
+[328] developer do I want to use open router
+[330] um and also like who is the does it tend
+[332] to be skew more Indie developer Persona
+[337] today or is it like you know you also
+[339] have large Fortune 500 companies or
+[341] whatever like larger companies um who
+[344] are building on an open router so today
+[347] we it it skews Indie developer for sure
+[350] um and there there are a couple
+[351] companies that use open router to do
+[355] like benchmarking where they run a whole
+[359] bunch of tests against new models that
+[361] just emerge and open router is the
+[363] easiest API for doing that the primary
+[365] like in like developer use cases that we
+[368] see are people building BTO c apps the
+[373] top ones are either games or roleplaying
+[377] apps um or like novel writing assistance
+[380] they involve like probably the very top
+[383] one involves mostly generating code and
+[386] that code like gets you know rendered
+[388] into top experiences and then we have
+[391] some that just help users generate code
+[393] they're more programming assistant so
+[394] it's really a big mix of lots of stuff
+[397] and we try to like developers can opt
+[402] into sharing their their data with us
+[405] and uh and we give them a discount um if
+[409] they do and that data we just use to
+[412] classify prompts coming in and figure
+[414] out which models are good at what and
+[417] we'll do you know we we're working on
+[419] router and some ideas for for creating a
+[422] router to help people find the best
+[424] model and we're sort of shipping new
+[426] experiments all the time but the primary
+[428] use that people have for open router is
+[430] they know what model they want to use
+[432] but they don't know where to get it from
+[434] or they you know they want to explore
+[437] models and they want to figure out which
+[439] model is really good at Finance or
+[440] really good at roleplay or really good
+[442] at programming or really good at trans
+[444] machine translation and we just help
+[446] them find the models that people are
+[447] really using a lot for those cases it's
+[450] not really an eval it's more of a you
+[454] know app Annie style like engagement
+[457] metric that we try to show for every
+[459] model I have I have so many random
+[461] follow-up questions to this but I I'll
+[463] just I'll just ask one of them right now
+[465] which is how um based on that metric of
+[468] you know you're not really showing what
+[470] the best model is but more so like what
+[472] model has the most traction across a
+[474] specific domain similar to that like how
+[477] representative and I was looking through
+[478] some of the leader boards um before we
+[481] jumped on this call just to see where
+[483] some of the models were how
+[484] representative do you think some of
+[486] those numbers are like with actual
+[489] production usage or maybe maybe more
+[491] broadly like developer mind share like
+[493] and and the part of for folks who
+[495] haven't seen the leaderboards they
+[496] should go look because it's interesting
+[497] to see what what's showing up at the top
+[499] and right now showing up at the top are
+[501] some of the Claud models um and I'm
+[503] curious if that's you know obviously
+[504] we've seen more people using Claud
+[506] models uh because of the recent releases
+[509] but do you think it's like actually
+[510] representative of Mind share or some
+[512] some other metrics or proxies yeah it's
+[515] a good question we've experimented with
+[516] a couple different complicated ways of
+[520] ranking models and we're zeroing in on
+[523] one that'll come in the future but we
+[525] figured to start with we would just do
+[528] raw tokens in and tokens out and that
+[534] has a big con the big con uh the
+[538] disadvantage is that that one developer
+[541] who's just going bananas can uh skew the
+[546] the data for some model um and they do
+[549] have to pay a lot to skew that data so
+[551] it's not like I'm not aware of anyone
+[553] trying to game a model or trying to like
+[555] game the rankings but it it's not ideal
+[558] I think like a closer ideal would be
+[562] something like
+[563] retention where of all the people who
+[566] like test a model how often are they
+[568] coming back with that same kind of
+[571] prompt um that I mean that's kind of
+[573] what we look for in just you know
+[575] analyzing websites you don't look at
+[577] like raw traffic you do sometimes it's
+[580] the simple metric but um but what really
+[584] matters is like are people sticking and
+[587] and and like coming back so we're gonna
+[591] experiment with some of those other ways
+[593] of ranking model soon Alex I guess kind
+[595] of hitting on the creation of open
+[597] router curious to hear kind of from a
+[598] techn technical perspective what issues
+[601] or roadblocks you faced when you know
+[602] creating the platform itself and then
+[604] you know how you're able to kind of
+[605] combat some of
+[607] those there have been a couple one was
+[611] routing speed and we wanted to build
+[614] something that ideally would have almost
+[618] zero latency impact on the process of
+[622] routing through open router to the
+[625] language model that you want to use and
+[629] to do that we we ended up moving more
+[633] and more of our logic and infrastructure
+[636] to the edge and Cloud flare is just huge
+[639] here I I don't think people realize how
+[642] many things Cloud flare offers and I'm
+[644] not you know really familiar with Cloud
+[647] flares
+[648] competitors but we we ended up like
+[651] leveraging a lot of cloud flares newer
+[654] features to to like reduce the latency
+[657] of our our routing process down as small
+[659] as we could and really sort of like
+[662] Advanced types of caching that we put in
+[664] place and we like I'll give an example
+[669] Cloud flare has a cool feature called
+[671] hyperdrive that lets you execute SQL
+[675] that is
+[676] cached in the edge region of the user
+[680] executing the
+[681] SQL and uh you can kind of connect
+[684] hyperdrive to your database and ideally
+[686] you locate your database as close to the
+[688] edge Center as possible but we found
+[691] hyperdrive to be really really effective
+[693] in reducing routing latency and just any
+[696] sort of database work that we have to do
+[699] is like almost zero zero latency um
+[703] because of of things like hard drive in
+[706] combination with a couple other uh
+[708] components so that was one um and we've
+[710] been spent I mean it's kind of a
+[712] continuous project it's never going to
+[713] be fully over um there's all kinds of
+[716] like caching that we're moving closer
+[719] and closer to users um but I haven't
+[722] heard anybody complain about routing
+[724] latency in like many many many months
+[727] another technical challenge has been
+[730] making analytics that
+[733] scale and we've uh and like the first
+[739] thing we did wasn't terrible but
+[742] definitely is not going to scale and
+[744] that was building our own sort of in
+[747] postgress uh analy ICS tooling to do all
+[751] of our analytics in postgress and just
+[753] move as much into postgress as possible
+[755] the postgress ecosystem similar to Cloud
+[758] flare uh seems to be a bit underrated
+[762] there's just there are a lot of amazing
+[764] postgress
+[765] extensions and having a lot of our like
+[770] very stateful logic um in the postgress
+[774] ecosystem has been pretty interesting
+[777] and like allows us to to feel like
+[780] there's just a lot of Integrity in our
+[783] data um also allows us to leverage
+[788] triggers um which have scaled very well
+[791] for us actually so when things happen in
+[794] open router postgress triggers like
+[797] update a lot of the analytics tables
+[798] that we have or update a lot of our
+[800] analytics logic and we still have we
+[804] currently have cron jobs doing analytics
+[806] that are going to go away eventually
+[808] we're looking at time scale DB as one
+[811] like as like the next gen of all of our
+[813] analytics which will unlock tons of
+[815] other cool ways of ranking models and is
+[818] also just a lot more scalable for
+[820] managing a really massive uh data set
+[824] like we have now so um those have been
+[827] exciting and in the more like
+[831] AI sector of technical challenges we we
+[835] we integrate a lot of different apis and
+[838] we we host a few mod
+[839] ourselves like every time a new like llm
+[843] provider comes up it's API is never the
+[846] same as all the others uh there's always
+[850] some kind of like weird Edge case that
+[853] we see pop up at some point we have a
+[856] like I think one thing that's worked to
+[858] our advantage bit is that we have this
+[860] community of power users they're not
+[862] developers they're not um companies
+[866] they're just normal users who love
+[869] llms and they they like have an open
+[872] router account that they connect to apps
+[876] that let you bring your own key um
+[878] there's also a way of using o Open
+[881] router to sign in with open router like
+[883] to do an oof into some apps I'm not
+[885] familiar with like another way of doing
+[887] ooth with llms so the the this community
+[890] of power users has been really good for
+[892] just teaching us things um when you know
+[895] when new models pop up or when we start
+[898] in you know when we like post a new
+[900] model or when we start integrating a new
+[902] API they'll discover these like very
+[904] Niche finish
+[906] reasons that come out or like um you
+[910] know strange errors that will emerge
+[913] that we we get immediate alerts for and
+[915] then we can fix and then I think like a
+[917] last answer that I would have that that
+[920] just reminded me of since we're
+[921] aggregating so many models and so many
+[924] apis we decided early on to get really
+[927] crazy about type safety
+[929] so we have extremely strict type
+[932] checking across the whole code
+[934] base and we sort of believe that as like
+[938] a foundational um engineering principle
+[942] which is new we you know I haven't done
+[944] that at another company before and I
+[945] haven't uh seen it really thought
+[949] through as like an engineering principle
+[953] but by making it really serious for us
+[956] we just catch a lot of Errors before
+[958] they ever happen and it's like for us
+[960] it's almost an imperative because there
+[962] are just so many different schemas that
+[964] we're working with all the time and
+[966] there's so many apis and so many
+[968] different like formats for models and uh
+[972] getting like really really good alerts
+[973] and really good error reporting kind of
+[975] necessitates us knowing exactly the date
+[978] the shape of the data going in and out
+[980] of every pipe in the machine Alex I love
+[984] that a couple of a couple of quick
+[985] reactions one the Finish reason uh p TSD
+[989] thing I was just having flashbacks of
+[991] all the of all the horrible um finish
+[994] reasons that are possible that are
+[995] oftentimes not fully documented um so a
+[999] lot of empathy for that I also think
+[1000] your comment about solving I I think
+[1003] that it's a very underappreciated
+[1005] problem space this like analytics
+[1008] problem for llms because of the volume
+[1011] of queries that you're often working
+[1013] with and like the size of the data it's
+[1014] like a another order of magnitude we're
+[1016] like trying to deal with these problems
+[1018] at open Ai and it's really hard and like
+[1019] most of the off-the-shelf analytics
+[1021] tools like don't scale up to the the
+[1024] order of magnitude that you might
+[1026] actually see with um with some of these
+[1028] analex things I'm curious though like
+[1030] your your comment about this
+[1031] standardization or lack of
+[1033] standardization it does seem that
+[1034] there's some amount of
+[1036] momentum around people standardizing on
+[1039] the way that open AI has built their API
+[1042] and use actually see this like even more
+[1044] so with the sdks where like together Ai
+[1047] and a bunch of other providers don't
+[1048] even make their own sdks they just wrap
+[1050] them directly as part of open ai's SDK
+[1053] I'm curious to get your reaction to this
+[1055] um where you think that's going shout
+[1058] out to the folks at uh stainless who
+[1060] make the open AI SDK um and obviously in
+[1064] conjunction with the team at open Ai and
+[1066] have done an incredible job they also do
+[1067] anthropics um SDK and and actually the
+[1070] cloudflare SDK as well so they're
+[1072] they're they're sort of helping some of
+[1074] this but um it's been interesting to see
+[1076] how and and maybe just as one another
+[1079] comment to get your perspective on like
+[1082] the how potentially conversely things
+[1085] happened in um in like the nft
+[1087] blockchain ecosystem where it seems like
+[1089] like all the different chains have like
+[1090] completely independent tool chains and
+[1092] like everything is um hard to do hard to
+[1097] deploy projects to multiple chains like
+[1099] none of that really works super well I'm
+[1101] curious yeah why people have been so
+[1104] willing to standardize around openai
+[1105] which seems like an interesting decision
+[1108] at a high level I think
+[1110] there's there there's a healthy du in
+[1113] both spaces there's a healthy Duality
+[1115] between standards and standard Breakers
+[1120] or you know you might call it like
+[1123] Innovation uh generously and standard
+[1127] Breakers less
+[1128] generously um the standards in either
+[1132] space uh they can be good for consumers
+[1135] because they make it easier for new
+[1137] entrance to get adoption and they lower
+[1140] the barrier of entry for them so it
+[1143] makes it easier for developers to to
+[1145] switch their code over to a new language
+[1148] model or new API and that that increases
+[1151] competition um which increases quality
+[1154] and and reduces cost for consumers
+[1157] standards can also be bad for the
+[1159] consumer too if nobody tries to like
+[1162] improve upon the standard and everyone
+[1164] just like locks in to the way things are
+[1167] it becomes really hard like like for a
+[1169] company to get any kind of
+[1171] traction uh from like deviating or
+[1174] making a breaking change open AI had the
+[1179] first attempt that I'm aware of at
+[1184] standardizing something about the
+[1187] language model communication process
+[1190] with chat ml which for uh anyone
+[1194] listening is a way of structuring a
+[1197] multi-turn conversation with an AI where
+[1200] a user says something where AI responds
+[1203] back the user responds with something
+[1205] else and maybe there's a you know
+[1207] overall context for the whole
+[1210] conversation called a system the system
+[1212] prompt and it's really a simple standard
+[1215] um and it's it's very
+[1217] extensible and it was the start of
+[1221] something like easy to set up and I mean
+[1225] correct me if I'm wrong I'm not aware of
+[1227] like an like an earlier attempt at
+[1229] standardizing something about the like
+[1232] about the prompt so chat ml was really
+[1236] interesting to to us and and it was part
+[1238] of the reason we decided that our API
+[1242] was going to look very similar to
+[1244] opening eyes and just be a a super set
+[1248] and I think you know some of that
+[1250] mentality probably meant a lot of other
+[1252] companies thought the same thing and
+[1255] started implementing things that looked
+[1256] like open AI standard and this is like I
+[1259] think a really healthy standard because
+[1261] if you want to deviate you can still
+[1264] just send a raw prompt there's like
+[1266] basically an easy opt out for people who
+[1269] are trying to innovate on their prompt
+[1271] format and there's tons of people who do
+[1273] there's basically like a really clear
+[1275] pathway for a developer to make a model
+[1277] with like a really unique interesting
+[1279] promp format an example is a open
+[1283] chat which um I believe at some point I
+[1289] think they were training on this was a a
+[1291] research model they were training on um
+[1295] synthetic data and they found that the
+[1298] model performed better uh if these if
+[1301] the assistant's name was like gbt for
+[1305] response like if the assistant thought
+[1307] it was gp4 this researcher found that
+[1311] the per performance improved so
+[1313] basically like doing these little tweaks
+[1315] to The Prompt format was one way the
+[1320] model developer Community has chosen to
+[1322] like innovate and deviate from the
+[1324] standard and they're not hosed they can
+[1328] still plug in to a lot of the existing
+[1330] tools and hugging face now has like a
+[1332] really flexible standard for
+[1334] tokenizer in the tokenizer config for
+[1338] the chat format um that lets you use
+[1342] Ginga uh which is a templating language
+[1344] for really really complex chatl formats
+[1348] so back to the overall picture I think
+[1351] like crypto crypto is just very
+[1353] different the and part because it's
+[1355] Financial
+[1357] fundamentally within like the ethereum
+[1360] ecosystem and all the layer twos on top
+[1362] of it conforming to the same RPC
+[1368] standard as all the other miners just
+[1370] allows you to participate and earn
+[1372] mining rewards so there's like direct
+[1374] Financial incentive to adhere to The
+[1377] Standard and there's direct there
+[1380] there's direct Financial disincentive to
+[1382] deviate which is really tough if you
+[1384] want to like deviate from the standard
+[1387] in crypto at that level you kind of have
+[1389] to create a new blockchain and that's
+[1391] why every new blockchain not everyone
+[1394] but a lot of them have very different
+[1396] apis for interacting with them as as
+[1399] clients or as Miners and I think that's
+[1403] just why things work differently in that
+[1405] space yeah just a quick reaction noan
+[1408] I'll kick a you for a question which is
+[1410] when Chad ml was coming out Greg
+[1412] Brockman um was incredibly gung-ho about
+[1415] Chad ML and was like you know we're
+[1416] going to build this standard it's I
+[1418] think the original blog post when we
+[1420] released the chat completions API was
+[1422] accompanied by us saying like you know I
+[1424] actually think the original iteration of
+[1425] that blog post was more of like we're
+[1427] building this open standard yada yada
+[1430] yada um and I think it got sort of
+[1432] tampered down to like you know we're
+[1434] putting out this product and we're also
+[1435] releasing the spec of of chat ml so that
+[1437] people can understand
+[1439] um and then sort of almost almost
+[1441] immediately the uh sort of even we
+[1444] diverged from what the standard was and
+[1446] like we sort of had this reference
+[1448] implementation that was available to the
+[1450] world with Chad ml um and you know what
+[1453] what the path that we were on was like
+[1455] not actually keeping that you know quote
+[1457] unquote standard up to date so I think
+[1459] this is a good reminder I'm sure Greg's
+[1461] not listening to the podcast but Greg
+[1463] someone needs to Ping Greg Greg's coding
+[1465] somewhere and putting out tweets about
+[1467] fixing machine learning optimization
+[1469] problem uh code issues um somebody's got
+[1473] to Ping Greg and remind him that uh they
+[1476] need to openi should should do some
+[1478] active work to like actually keep that
+[1480] standard like somewhat up to date
+[1481] because it it hasn't been maintained and
+[1483] it was actually like removed from a
+[1485] bunch of the stuff that that they had
+[1487] put out um so it's a it's a good
+[1489] reminder I'm curious are there other
+[1491] parts of the the API standard that drive
+[1495] more adoption of it in your eyes I I
+[1497] think it's
+[1499] part of my mental model is it was less
+[1502] that like open AI sort of figured out
+[1504] the right level of abstraction which
+[1505] they might have and like I don't know if
+[1507] I actually have the intuition to know if
+[1509] that's true or not because I think
+[1511] people just became it became so clear
+[1514] that open AI was so far ahead that like
+[1516] essentially if you wanted it uh any of
+[1519] those users to be on your platform you
+[1521] were required basically to um especially
+[1525] in the world where like everyone is
+[1527] experimenting always way like you were
+[1528] essentially required to use that spec um
+[1531] and the spec specifically of the sdks uh
+[1534] so that developers didn't have to switch
+[1536] um over to something else and it just
+[1538] from my perspective like I think it's
+[1540] obviously good for for open AI but it's
+[1542] it's interesting how it really was like
+[1544] the first like the first iteration and
+[1547] it seems like to a certain extent like
+[1549] the first iteration without any level of
+[1552] incremental Innovation is like the thing
+[1554] that people are sticking with as like oh
+[1556] no you know don't make a different thing
+[1557] like let's stick with the one that open
+[1559] AI came up with like literally on the
+[1561] first shot and that just seems um yeah
+[1565] it'll be interesting to see like how how
+[1567] much that plays out over time yeah we I
+[1569] mean our view at open router has
+[1573] been like make every model work with the
+[1576] open AI API
+[1578] format um but provide extensibility and
+[1583] advanced features that deviate from the
+[1586] standard but aren't breaking changes for
+[1589] example like our mod you know normally
+[1592] the model field in your request is just
+[1595] one single string with the model that
+[1597] you want to request for open router it
+[1600] can be an array of models and uh and we
+[1604] have like different kinds of like prompt
+[1606] transforms that you can configure one of
+[1608] them we call middle out which allows you
+[1612] to a little a little bit of a play on
+[1615] the on the Silicon Valley TV show joke
+[1618] take your prompt and there's research
+[1622] that like llms mostly pay attention to
+[1624] the beginning and end of very very large
+[1627] texts and pay less attention to the text
+[1629] in the middle so you can have if you
+[1632] know if your prompt is too large for a
+[1634] model open router can like squeeze it
+[1637] and remove parts from the middle in like
+[1640] a a strategic way so we we add different
+[1644] things like that to our API but but but
+[1647] try to like our our overall goal is to
+[1649] reduce switching costs between models so
+[1651] it has to you know we we try to make it
+[1655] really really easy to let developers
+[1657] like experiment with new ones Alex my
+[1659] question kind of ties back to your
+[1661] statement around the power users um that
+[1663] you have currently I guess kind of
+[1664] curious as far as use cases as far as
+[1666] what those power user are using this
+[1668] tool for and then kind of you know
+[1671] higher level question too when you're
+[1672] originally rolling out with open router
+[1674] you know your thesis as far as who would
+[1676] be the end users did that stay true or
+[1678] your kind of a shift in personas um as
+[1680] you kind of gradually rolled it out and
+[1681] got more and more feedback kind of
+[1683] curious to see where that stands and
+[1684] again kind of how it changed throughout
+[1686] the evolution of open router itself we
+[1688] have seen more of our usage in terms of
+[1694] tokens and dollar volume move towards
+[1697] developers over time um and it's a
+[1700] little bit hard to know this question
+[1702] for sure but we still have a good chunk
+[1705] probably more than half of our users are
+[1709] are are just prosumers or power users or
+[1712] people using um open router directly um
+[1716] and yeah we also have like a playground
+[1719] where you where people can experiment
+[1720] with models and Test new ones out and uh
+[1724] the playground is often used or it's
+[1726] used by some people as just like a
+[1728] consumer experience for directly
+[1731] chatting with models and uh and saving
+[1735] your history with all of them in one
+[1737] place but locally and privately on your
+[1739] on your device so we've been seeing the
+[1743] ratio we think roughly not change for
+[1745] you know in terms of users versus
+[1747] developers over time but developers have
+[1749] been getting more serious and um more
+[1753] active and spending more over time yeah
+[1755] Alex I have a follow up on this um and
+[1757] I'm even more grateful that we're having
+[1759] this conversation because I think like
+[1761] this is to a large extent some of the
+[1765] almost the exact situation that the
+[1767] product that I wor work on you know many
+[1770] hours a day is is sort of in the
+[1772] position of of Google AI Studio like
+[1774] there's a large consumer footprint for
+[1776] Google a studio because it's an easy way
+[1777] for folks to sort of get access to the
+[1779] models for free and try out what's
+[1781] latest but like the core Market that
+[1783] we're going after as developers and I'm
+[1785] I'm curious like how you've sort of
+[1787] navigated the world of like you can't do
+[1789] everything um and you ultimately have to
+[1791] make those tradeoffs and like how you've
+[1793] made how you've thought about the
+[1795] tradeoffs between like we want this
+[1796] thing to be for develop potentially or
+[1799] um but we also still like don't want to
+[1801] actively make a bad product for for the
+[1803] sort of consumer oriented uh user
+[1806] Persona we struggle with this question
+[1809] all the time honestly it is like uh uh
+[1813] or I I at least like think about it all
+[1815] the time I think the what it the biggest
+[1818] source of the tension
+[1822] between uh building for users and
+[1824] building for developers uh at least to
+[1826] me is differentiation just being
+[1828] different than everything else out there
+[1831] or different in a way that really like
+[1833] works for us and feels like the open
+[1836] router thing to do the answer to this
+[1840] question for us right now is building a
+[1845] platform that works for
+[1847] developers and building a Marketplace
+[1852] that allows people to discover and
+[1854] explore new models with ease and and the
+[1858] people doing that are not just
+[1860] developers um but we we've been we just
+[1864] we launched like a new marketpl UI last
+[1867] week um that lets you you know see all
+[1871] the language models that we have but
+[1872] figure out which ones are free which
+[1874] ones are really popular on finance or
+[1877] legal topics which ones support Json
+[1880] output which ones support tool calling
+[1883] and uh and then sorting all them by
+[1885] Price or looking at which ones are new
+[1888] um sorting them all by token usage in
+[1890] the last week giving people like really
+[1892] powerful tools for looking up models
+[1895] that they want to use um and for
+[1898] exploring like how models Rank and
+[1900] compare with each other is is sort of
+[1903] like the big you know not purely
+[1907] developer product that we spend a lot of
+[1909] time on um the playground which we're
+[1912] going to be uh which we've been
+[1914] upgrading a lot recently is like a
+[1916] really easy to use use developer tool
+[1919] for for models and and it looks a little
+[1923] consumer um but I think
+[1926] like the Developers for language models
+[1929] are like bringing a lot of value that
+[1932] just the you know the chat room or
+[1934] playground is is not going to bring and
+[1938] we want them to feel like they're
+[1940] welcome so we we've been we've been sort
+[1943] of building a lot of developer platform
+[1946] and performance
+[1948] improvements uh
+[1950] recently this is kind of a high level
+[1952] question too but I'm curious and again
+[1954] kind of over the past I mean close to a
+[1956] year and a half not two years now again
+[1957] we got kind of go back to all of this AI
+[1959] hype and Alex I'd love to get your
+[1961] feedback or perspective you know being
+[1963] at openc when nft and crypto was kind of
+[1965] on that bull run as well you know what
+[1967] similarities you see between the AI hype
+[1969] and kind of those nft crypto hype um and
+[1972] you know kind of where do you see that
+[1974] space going as we continue to move
+[1975] further and further up that kind of
+[1977] chart and and maybe as an additional
+[1979] addon to this like anything that you
+[1982] have thought about doing differently
+[1983] with open SE to like or with open router
+[1986] this time um to sort of make it
+[1988] resilient to like more resilient perhaps
+[1991] to like you know assume if we are in
+[1993] some crazy hype bull run with AI right
+[1995] now um and it sort of flatlines in the
+[1998] future like is there still a feasible
+[2001] way to to make you know the business or
+[2003] the project where however you want to
+[2004] frame it with open router we haven't
+[2007] really been
+[2008] building that many Hedges against like
+[2012] the AI Market into the product like you
+[2015] know the AI Market flat lines or
+[2018] declines I expect we will
+[2021] too and I think that's just part of the
+[2024] bet it it is a bet that like when some
+[2030] part of the language model space is
+[2032] growing a rising tide lifts all boats
+[2036] and I expect other parts of language
+[2038] model space or the the model space to
+[2039] grow to we just focus on language models
+[2041] today but uh others will come in the
+[2045] future so and examples of this and this
+[2049] is similar to this part I'll I'll draw
+[2051] similarity to crypto in a second if you
+[2054] look at the rankings page on open router
+[2057] today um there are a couple moments
+[2060] where it just jumps up significantly you
+[2063] know a recent moment like that was the
+[2066] launch of Claude
+[2068] or actually a better example is the
+[2070] launch of cloud 3 which happened in
+[2073] early March of this
+[2076] year and you see a lot of people trying
+[2080] out clot 3 just tons of tokens
+[2083] processed um and then you start to see
+[2087] open- Source models grow a lot as well
+[2089] like they follow it up yeah it's kind of
+[2092] one of the mysteries of Life why that
+[2094] that happens I think like one theory is
+[2097] that the uh like interest that Claude
+[2102] brought to the ecosystem um from
+[2105] developers who just weren't getting
+[2107] something out of it before or for
+[2108] developers who wanted to achieve
+[2110] something and now could achieve it in a
+[2111] lowcost way um it just made people look
+[2115] at the other things available it just it
+[2118] made people look around to see wow I
+[2120] like I I thought I knew AI but then this
+[2123] new thing came out what if there's
+[2125] something else new that I don't know
+[2127] about
+[2128] that is also underrated or you know
+[2131] undiscovered and there's just some kind
+[2133] of there's something about like
+[2135] developers everywhere not just in AI um
+[2140] or I think this just happens all the
+[2141] time like if a new thing emerges you
+[2144] start to wonder if you were overlooking
+[2147] the whole space and if there are other
+[2149] new things that are just hiding in
+[2152] corners and uh and just need a light
+[2155] shown on them and this happens in crypto
+[2159] too like um there's very and and we made
+[2165] a lot of a lot of like inside jokes at
+[2167] Open Sea about Rising tide lifts all
+[2169] boats um because you every everything is
+[2172] sea themed and we spent uh you know we
+[2176] would look at like the analytics of the
+[2178] space and um every time a new project
+[2182] emerged on maybe it was like a new
+[2184] blockchain like polygon um you could
+[2187] just see a ton of other projects like
+[2190] kind of similar to that project um or
+[2193] other creators um or apps start to just
+[2196] get more interest and get more traction
+[2199] and um and and sort of follow the lead
+[2203] of the breakout project um additionally
+[2207] when you know crypto like when prices
+[2210] are going up um just fungible tokens
+[2214] like Bitcoin and and eth when the prices
+[2217] are going up uh nfts values go up too
+[2221] and like they lag a bit and they're not
+[2224] as they're not super correlated but um
+[2228] but I think it's it's partly because you
+[2230] know people like have more li like
+[2233] crypto liquidity and are you know
+[2235] looking for things to do with them and
+[2238] nfts are one of the ways that you can
+[2241] use your crypto that's like easiest and
+[2243] most like visually and uh you know a
+[2247] digit Al exciting so just like the whole
+[2250] Rising tide lifts all boats phenomenon I
+[2252] I love like seeing it happen and I just
+[2256] started to follow it around everywhere
+[2257] and think about what it means and I I
+[2260] guess that's the like one of the the
+[2263] biggest commonalities between the two
+[2265] spaces too yeah I love that I know we're
+[2268] we're almost coming up on the end of
+[2270] time so want to be respectful of of your
+[2272] time Alex um the two questions that we
+[2275] always close with and I'll I'll ask the
+[2277] first one and then I'll kick it to Nolan
+[2279] um just curious like what your personal
+[2282] AI text like teex stack looks like and
+[2284] this could be you know from a tool
+[2286] perspective um like what are you using
+[2288] what's getting you excited from like an
+[2290] actual uh tool consumer tool
+[2293] perspective yeah I've recently started
+[2296] to get more into Super Maven as my um
+[2300] like tool for code generation uh I've
+[2304] just found it to be so much faster than
+[2308] uh competitors I've been kind of like
+[2310] blown away it's really hard to know but
+[2313] it feels like it has more of my code in
+[2315] context when it generates code um and uh
+[2321] like Creator seems really smart and and
+[2325] uh they it's also a New York based team
+[2327] I'm in New York and uh and then and they
+[2331] just launched the ability to chat with
+[2333] models uh with you know different kinds
+[2335] of models with with your code and I've
+[2339] started sort of like a new workflow
+[2341] where I'll write the code that I want
+[2344] and then I just ask open AI or Claud or
+[2348] Gemini to generate tests that you know
+[2352] just like show me which tests it thinks
+[2355] I should write which unit tests would be
+[2357] good for the code I just wrote and I you
+[2360] know I accept most of them like they
+[2363] they've been getting better over time
+[2364] and if enough code is in context they
+[2367] they improve exponentially so um I like
+[2371] write more tests now than I ever have in
+[2374] my life and because I'm not actually
+[2376] writing
+[2377] them and uh and the tests I like read it
+[2379] and check over and I mean the end result
+[2381] is so much better so uh that's been
+[2385] exciting another one that I've been
+[2387] using is I mean I'm an um angel investor
+[2390] in Devon by cognition and we've hooked
+[2393] Devon up to our code base and slack and
+[2396] it's it's improving um and and
+[2399] particularly good at like uh at sort of
+[2404] research driven tasks that really really
+[2406] need to you like you know explore things
+[2409] on the internet Devon is like most
+[2412] powerful scraper I've ever seen and
+[2414] consumer wise I mean I switch I switch
+[2416] back and forth between like for just
+[2419] knowledge retrieval um I I sort of
+[2422] Bounce Around to everything partly
+[2425] because I enjoy bouncing around
+[2428] um I bounc between like open routers
+[2431] playground and and CLA and perplexity
+[2435] and chat GPT
+[2437] directly uh as my primary like knowledge
+[2440] R retrieval places I think there's
+[2443] definitely in the future like it feels
+[2445] like there's going to be some more UI
+[2447] differentiation that every platform does
+[2450] um the UI all started the same and have
+[2454] gradually diverged and tried to like
+[2458] keep users locked in with some unique
+[2461] thing I'm guessing that's going to
+[2463] continue and Alex our final question we
+[2465] like to end it on is uh already six and
+[2468] a half months into 2024 we like to get
+[2470] the perspective of our our folks we
+[2472] speak with as far as you know something
+[2474] that you're looking forward to or hope
+[2475] that happens within the next six to
+[2477] seven months maybe early into 2025 and
+[2479] then on the flip side uh you know kind
+[2481] of given everything that's going on
+[2483] something that you hope does not happen
+[2484] whether it has a negative effect on you
+[2486] know personally Society Politics as a
+[2489] whole Etc uh kind of the two-sided
+[2491] questions uh as far as again what you're
+[2493] looking forward to in something that
+[2494] maybe you're
+[2495] not starting with something that I'm not
+[2498] or something that I'm worried about uh
+[2501] I'm really worried about Taiwan it
+[2503] doesn't feel
+[2504] like the AI industry or even the
+[2507] computer industry has a great plan
+[2511] for removing the
+[2514] dependency on all kinds of Industry
+[2517] going on there um but primarily tsmc
+[2522] like it it like that kind of that kind
+[2525] of like critical
+[2528] component basically not having an
+[2530] alternative or not having like a a great
+[2534] plan for what happens if if Taiwan you
+[2537] know if we can no longer depend on our
+[2541] uh uh supply chain in
+[2543] Taiwan um it it would be so dis ous and
+[2548] uh it's literally being verbally
+[2550] threatened all the time um I I I just
+[2554] haven't seen like something that's
+[2555] calmed me down about
+[2557] it um so that's one one thing I think
+[2560] about and worry about and uh in terms of
+[2563] like things I'm looking forward to I
+[2566] there's a lot of stuff I'm I'm you know
+[2569] I I first thing that pops into my mind
+[2573] is a new architecture
+[2578] for language models and uh particularly
+[2581] one that can do
+[2583] search um maybe maybe that's yeah
+[2586] reasoning would be maybe a subset or
+[2590] maybe I'm misunderstanding how some
+[2592] language mods are are trying to approach
+[2594] reason but it seems kind of odd that the
+[2598] search process just like like doing
+[2601] inference and then revising your answer
+[2603] over and over again is being handled by
+[2606] apps and agents today uh you get like a
+[2610] huge performance Boost from generating
+[2613] code with any of the language models and
+[2615] then saying do it better or like you
+[2618] know prompting the model to like revise
+[2621] the code they wrote and improve it in
+[2622] some way you don't even have to explain
+[2624] how you want to improve just or think
+[2626] twice not just once give me your best
+[2629] answer not just the first answer that
+[2631] you thought of and uh moving this sort
+[2634] of search process or multiple inference
+[2637] passes inside the model itself I expect
+[2641] would be wild wild Improvement um so I'm
+[2645] excited for that to happen somehow or or
+[2648] some kind of new architecture that
+[2650] allows for the model to like actually
+[2652] think a bit I love that I completely
+[2655] agree on on both of those fronts um Alex
+[2658] this was a ton of fun I I wish that we
+[2661] uh that we had another hour to chat to
+[2663] chat about stuff um super excited about
+[2665] open router it was awesome to hear your
+[2667] your perspective um and yeah looking
+[2670] forward to to hopefully all of the the
+[2673] cool new improvements that yall are
+[2674] working on

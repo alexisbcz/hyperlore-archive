@@ -1,0 +1,414 @@
+[0] There's so many problems with how people
+[1] are doing evolves today. When you think
+[4] about uh an environment, it is
+[7] fundamentally a simulation of a world.
+[11] So a simulated world needs to have
+[13] several components and this is how
+[15] humans learn. This is how agents [music]
+[17] learn. You need a way to actually take
+[19] action and receive feedback. How do we
+[22] systematically evaluate and improve
+[24] increasingly autonomous AI systems?
+[28] Rebecca Chan is [music] the co-founder
+[29] and CTO of Petronis AI, a former NLP
+[34] researcher at Facebook AI, Rebecca and
+[36] her team are building millions [music]
+[38] of adaptive simulated environments or
+[41] intelligent worlds that teach [music] AI
+[44] agents to reason, plan, and make
+[47] decisions like humans.
+[49] We'll explore the eval problem, the
+[51] reality of simulations, the stakes of
+[54] reward [music] hacking, and the factory
+[56] behind general intelligence. This is the
+[58] story about a founder who turned years
+[60] of AI research [music] into a world of
+[62] its own. Hey there, it's Glenn Solomon,
+[64] and today on the podcast, I'm excited to
+[66] have my notable capital colleague Dan
+[69] Kahana joining me. Hey Dan,
+[70] &gt;&gt; great to be here Glenn. We're thrilled
+[72] to have Rebecca Chan, co-founder and CTO
+[75] of Patronis AI with us today. Here at
+[78] Notable, we were incredibly privileged
+[80] to lead Patronis' series A back in 2024.
+[83] We've been super impressed watching
+[84] Rebecca and her co-founder Anand and
+[87] team navigate the rapidly shifting AI
+[89] landscape. So, we're excited to dive
+[91] into all of this with you today.
+[92] Rebecca, thanks for joining us.
+[94] &gt;&gt; Of course, I'm excited to dive in, too.
+[96] You spent years at Facebook AI research
+[98] and you were working on fundamental NLP
+[101] problems. Uh then the chat GPT moment
+[104] happened. Uh and you and your co-founder
+[107] Anan decided to found Petronis. Um
+[109] &gt;&gt; that's right.
+[110] &gt;&gt; Was there like an aha moment?
+[112] &gt;&gt; Oh, absolutely. I remember so clearly uh
+[115] when Chhatbt was released and everyone
+[118] was talking to Chachib asking all kinds
+[120] of questions and Anin's brother who was
+[123] an investment banker at the time
+[126] submitted a question that it could not
+[127] solve
+[128] &gt;&gt; and it was a finance problem
+[131] and immediately and I hopped on a call
+[135] and we were like this is it we felt we
+[138] were at the cusps of largecale societal
+[141] deployment AI And we saw a future where
+[144] AI systems would be automating
+[146] enterprise workflows.
+[148] &gt;&gt; What were the hardest problems you were
+[149] seeing initially that you and your
+[151] customers were trying to solve?
+[152] &gt;&gt; Problems that um wanted to reason over
+[157] um human workflows, the way that humans
+[159] would actually reason uh over documents
+[162] u make decisions. uh and it is
+[165] fundamentally this um problem of
+[168] alignment which is how do we distill
+[170] human preferences into AI decision-m
+[173] &gt;&gt; because we were no longer just asking uh
+[176] AI systems to um generate text we're
+[179] actually asking AI uh agents to make
+[182] decisions because when we think about
+[184] real world work it's messy it's
+[186] unpredictable and it involves managing
+[188] large contexts that's the kind of work
+[191] that we want to replicate and we define
+[196] intelligence as reasoning over
+[198] uncertainty across a wide diversity of
+[200] scenarios. Um, and that's why evolves
+[203] are so important.
+[204] &gt;&gt; Where do you see the disconnect in the
+[205] market?
+[206] &gt;&gt; There's so many problems with how people
+[207] are doing evolves today. And there is no
+[210] such thing as too many evals. We need to
+[213] on the path to building general
+[215] intelligence be running millions of
+[218] different environments, you know,
+[219] simulated simulations of reality. We
+[223] need to be training and evaluating these
+[225] systems on such rich and diverse
+[227] scenarios uh including scenarios that
+[230] would be unsafe to experiment with in
+[232] the real world uh in order to actually
+[235] um create systems that we have
+[238] confidence in deploying and that can
+[240] actually mimic uh human reasoning. the
+[243] way that current uh industry evolves are
+[245] happening which is benchmark maxing. Um
+[248] we have a benchmark and then
+[250] leaderboards where people are trying to
+[252] gamify the leaderboard. Um that is the
+[255] incentive is like completely misaligned
+[257] with what we actually need for model
+[259] behavior. Uh because whatever is
+[262] contained in that leaderboard is such a
+[263] tiny tiny fraction of the actual
+[266] scenarios that real world AI systems
+[268] encounter day-to-day. It seems like
+[271] [clears throat] especially over the past
+[272] 6 to 12 months, simulations,
+[275] environments broadly like post- training
+[277] has become a much bigger buzzword in San
+[279] Francisco. Could you maybe walk us
+[280] through sort of why this has taken on so
+[284] much importance and kind of the maybe
+[286] what simulations actually mean
+[288] practically and what their role is in
+[290] kind of this next phase of AGI
+[292] development. When you think about uh an
+[296] environment, it is fundamentally a
+[299] simulation of a world.
+[306] humans learn. This is how agents learn.
+[308] Uh and the components broadly speaking
+[311] being you need a way to actually take
+[313] action and receive feedback.
+[316] So I take an action and then I observe
+[319] what happened. uh and that becomes part
+[321] of the trajectory and then I can
+[322] actually score and get some feedback.
+[324] And so right now and and actually there
+[326] are some people who think that we live
+[328] in a simulation. So we could be in a
+[329] simulation [laughter] right now. There's
+[332] a 50-50 chance. Um but even right now
+[334] when we're talking like Glenn just
+[336] nodded that is I'm registering that as
+[339] positive feedback, right? I can also
+[341] receive penalties. Uh and so we when we
+[344] go through the world dayto-day, we get
+[347] so much rich signal from our
+[349] environment. this is like built into the
+[350] world naturally, right? Um I pick up an
+[354] object, I drop it. Oh, need to change my
+[356] grasp. Um and we we don't get that
+[359] naturally. And that's why it's so
+[360] important to build these um simulated
+[363] worlds because they allow for
+[366] experimentation, including safe
+[368] experimentation over scenarios that
+[370] might be unsafe to in the real world.
+[372] And if we want to build general
+[373] intelligence, we basically need to have
+[374] make sure these systems can reason and
+[377] think through scenarios under
+[379] uncertainty. Why this has been a really
+[381] critical pivot and evolution from static
+[384] data sets and benchmarks is because uh
+[387] you know a couple years ago when we saw
+[389] uh LM production systems mostly um
+[392] single turn systems there's like largely
+[394] a lot of classification systems like
+[396] relatively simplistic. Now when you talk
+[399] to fortune 100s there's agents that are
+[401] taking sequential actions right so you
+[405] know now we need to build uh evaluative
+[408] uh worlds that actually allow for this
+[411] um concept of time like there's like
+[413] some temporal aspect to it um you can
+[416] actually interact with the system and
+[418] get feedback um and you basically are
+[420] shifting away from okay can I actually
+[423] classify some kind of input or output um
+[425] to can I actually um have AI make
+[429] decisions that can replicate human
+[432] reasoning and decision-m we have built
+[434] our entire careers in evaluation. Like I
+[438] have been thinking about evaluation my
+[441] entire career. Uh it's something that um
+[444] I think is um it's it's very very
+[448] important and actually I think the most
+[449] important problem for us to solve right
+[452] now to ensure the path towards safe and
+[454] aligned AGM. So, it was a no-brainer for
+[458] us to work on simulations and developing
+[460] environments that allow for uh
+[462] interactive um evaluative uh feedback
+[466] for for training and developing
+[469] intelligence um because we also see the
+[472] risks of not doing so. For example,
+[475] there's a lot of talk about reward
+[477] hacking right now.
+[478] &gt;&gt; Yep.
+[479] &gt;&gt; And that is equivalent to cheating on an
+[481] exam. And the scary thing is um when you
+[485] build a simulated world um what the
+[488] current predominant architecture and I
+[490] would really separate the learning
+[491] algorithm from the actual simulation uh
+[494] environment uh because you know when we
+[497] say environment it's not just RL like
+[499] this actually extends beyond RL u but
+[502] you know currently predominantly the
+[503] architecture um the paradigm is uh GRPO
+[508] and also with verifiable rewards uh RLVR
+[512] and So when you have verifiable rewards
+[514] like the systems automatically scoring
+[516] say based on unit tests or some kind of
+[518] metric um it's very easy to gamify this
+[523] like because the agent can learn to
+[524] cheat and produce um you know tests that
+[527] like fake passing the test right uh And
+[546] obviously there's a lot of demand for
+[548] these products right now. Um and you
+[551] know the labs have very ambitious road
+[553] mapaps. How do you guys think about sort
+[556] of deciding which simulations to
+[558] prioritize and where best to spend kind
+[561] of your resources?
+[562] &gt;&gt; It is uh fundamentally what is actually
+[566] going to be the most impactful from the
+[569] real world perspective which is people
+[572] who are using agents. When we take a
+[575] step back and you know we we're able to
+[577] see the whole landscape like there's
+[579] basically patterns that emerge right. Um
+[582] so capabilities um like for example
+[585] conflict resolution that's something
+[587] that um people working in different like
+[591] serviceoriented jobs all have even if
+[593] one person might be working at Walmart
+[595] and another person might be working at a
+[597] hotel. When we think about what
+[599] simulations to prioritize, we think,
+[601] okay, it would be great if the next
+[603] generation of models could resolve
+[605] conflicts and save like tens of
+[608] thousands of hours of time for these
+[610] people who work at these call centers um
+[612] and just have to spend all their time
+[615] trying to get to the bottom of like a
+[617] customer complaint. And that can and and
+[620] you know it's not I think the wrong way
+[622] to think about this is from like a
+[623] domain perspective which is um a lot of
+[625] like human data companies historically
+[627] been like oh we have like networks of
+[628] like subject matter experts and so we
+[630] need like someone at Walmart who
+[632] understands retail and we need some
+[634] hotel um receptionists uh for
+[637] hospitality industry. uh uh we actually
+[640] don't uh think that's the right approach
+[642] because we're just we're not going to
+[643] get to general intelligence by just
+[645] picking apart like each individual role
+[647] and domain like we actually need to be
+[649] thinking in terms of uh generalizations
+[652] and capabilities like Dario actually
+[654] recently wrote this article like the
+[656] adolescence of technology there was this
+[658] quote where he says like we need to
+[659] generalize across millions of
+[661] environments
+[662] because like we are actually currently
+[664] um in the era of there are um a few
+[668] generalist models, right? Like you know
+[671] early 2000s we had like bespoke models
+[674] like every company was training their
+[675] own models, right? Now it's like we have
+[677] these generalist models. So the model is
+[679] not going to be an expert um
+[681] receptionist or an expert um you know
+[684] Walmart worker. It needs to actually
+[686] learn to generalize. So it is much more
+[688] powerful for us to think about okay like
+[691] we want to learn conflict resolution. We
+[693] want to build simulations that soul for
+[695] that. you guys are bringing something
+[697] very unique to the table. What is it and
+[699] why are you so good at what you're
+[700] doing?
+[702] &gt;&gt; So, we take a researchbacked approach to
+[705] building simulations. When you have
+[708] static environments, it tends to
+[710] saturate, right? And we actually want to
+[713] make sure we are building simulated
+[716] worlds that are long living, that are
+[718] adaptive. Let's say there were five
+[720] subjects and you didn't do well on
+[722] chemistry. I'm going to actually give
+[724] you more chemistry questions. So this is
+[727] uh called um curriculum
+[730] learning and we actually adjust the
+[732] curriculum like the we have a difficulty
+[735] filtering mechanism and this is just one
+[737] of many approaches we have to actually
+[740] building worlds that are adaptive and
+[743] that we can extend so that we actually
+[745] grow with the model provider so that
+[750] when their models are at the next stage
+[753] we're there with them. We're not just
+[754] teaching first grade. We're going to
+[756] teach second, third, all the way through
+[758] PhD level.
+[759] &gt;&gt; Wow. And if you're reward hacking, we
+[760] can detect that, too.
+[762] &gt;&gt; Love it. I feel like one thing that you
+[764] guys have pioneered is really not just
+[766] building the product, but building the
+[768] factory that creates the product. So,
+[770] &gt;&gt; I'd love to hear a bit about sort of how
+[772] you think about the moat that you're
+[773] building into Petronis and how you think
+[775] about kind of the scalability um of this
+[777] platform.
+[779] &gt;&gt; The factory is a good way to put it. So,
+[781] we're focused on building the factory
+[783] that creates these simulated worlds. Um,
+[786] as opposed to not just creating these
+[788] worlds in and of itself. Um, and I I
+[791] think that's really important because uh
+[794] we need millions and millions of these,
+[797] right? Um, and actually even the labs
+[799] that we're working with are telling us
+[802] like, hey, we actually um we need to
+[804] move fast and we don't think it's
+[806] scalable to do everything with a human
+[809] either. So I think perspectives have um
+[813] really shifted u and and just realizing
+[816] just the the volume um like say for one
+[819] single trajectory there can be a
+[821] thousand steps. It's very difficult for
+[824] a human to go and annotate every single
+[826] span and actually humans make mistakes
+[829] too. Uh and actually there's advantages
+[832] to doing this with um with AI systems as
+[836] well because there's so many scenarios
+[839] um that we need to create in order to
+[843] properly simulate every edge case.
+[845] &gt;&gt; If you continue on that trajectory and
+[846] you're as successful as as you and Anand
+[849] and team want to be. Um tell us what you
+[852] know what Petronis looks like a few
+[854] years down the road, what the world
+[855] looks like. We want to environmentalize
+[858] the world
+[860] which looks like every single possible
+[864] scenario that humans can go through in
+[867] the world. We want to en turn that into
+[870] environment.
+[874] There's a lot of environments then that
+[876] you're going to have to [laughter]
+[878] simulate. Uh that sounds like a a very
+[882] large opportunity in front of you.
+[883] Rebecca, being a founder at all is very
+[886] difficult. I think being a founder at
+[887] the cutting edge or you need to keep up
+[889] with everything that's happening in AI
+[891] is uh extraordinarily difficult. How do
+[893] you sort of build the confidence to kind
+[895] of continue forward and also you know
+[897] ground your decisions at Petronis?
+[900] &gt;&gt; I'm you know fundamentally motivated by
+[903] um just in by understanding intelligence
+[906] and human intelligence. I think the work
+[908] that we do at Petronis has a lot of
+[910] parallels uh to how I have learned about
+[914] my brain and the brains of our teammates
+[917] and customers and just um human society,
+[921] right? Um and I I think that has been
+[924] super uh helpful for me in grounding
+[927] myself in day-to-day and um it's helped
+[930] me be more resilient. what makes a good
+[933] agent um for learning is just um always
+[937] being open to receiving information and
+[940] with the AI landscape and being a
+[942] founder just every single day looks
+[944] different right there's constantly
+[946] something new that happens and um so
+[948] that's why why the best thing I think
+[950] for um for any intelligence system is to
+[955] always default to receiving observations
+[958] like there is no information that you
+[960] receive that is
+[962] um not useful.
+[966] And in practice that means constantly
+[970] reading up on new literature, running
+[972] code, um reading about what's happening
+[977] um within the company and outside of the
+[979] company and and really gathering as much
+[981] intelligence as we can before making
+[984] decisions. Um because ultimately agents
+[987] um and and founders and operators are
+[990] decision-making machines
+[992] and really the quality of the outcome is
+[995] just the quality of the decisions. So
+[997] &gt;&gt; here at Notable we're uh as we mentioned
+[1000] earlier just incredibly uh uh grateful
+[1003] for the work that you and team are doing
+[1005] and really excited about your future.
+[1008] Thank you.
+[1008] &gt;&gt; Thank you Glenn and Dan for having me.
+[1010] &gt;&gt; Yeah, thank you for joining.
+[1012] &gt;&gt; Thanks for listening to today's episode.
+[1013] If you enjoyed this conversation and
+[1015] want to stay on top of the latest in AI
+[1017] and the future of intelligent systems,
+[1019] subscribe to Notable Perspectives
+[1021] wherever you listen to podcasts.

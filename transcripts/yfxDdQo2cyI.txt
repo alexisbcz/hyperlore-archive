@@ -1,0 +1,1148 @@
+00:00:00 Today's video is going to be a bit
+00:00:01 different, because I wasn't actually
+00:00:02 filming this video when I filmed most of
+00:00:04 this video. I know it sounds crazy, but
+00:00:06 just hear me out for a sec. I was just
+00:00:08 filming a video about the death of
+00:00:09 Heroku. You might have even seen it
+00:00:10 already. And that video ended up with a
+00:00:12 long tangent about various other
+00:00:14 alternatives that you might consider
+00:00:15 moving to. Everything from AWS to
+00:00:18 Vercel, Railway, Netlify, Render,
+00:00:21 Cloudflare, DigitalOcean, Hetzner, Fly,
+00:00:23 and more. I wanted to do my best to
+00:00:25 break all of these options down and
+00:00:27 share how I think about them and how I
+00:00:29 choose where I deploy my applications.
+00:00:31 While I have been sponsored by many of
+00:00:33 these companies in the past, none of
+00:00:34 them are sponsoring this video. The
+00:00:36 point of this was to give you my honest
+00:00:38 take on how I choose where I deploy my
+00:00:40 services. It can feel a little
+00:00:42 overwhelming to choose, and a lot of the
+00:00:44 advice I see around the internet feels
+00:00:46 like it's coming a little bit too much
+00:00:48 out of the perspective of the user in
+00:00:50 the specific thing they are working on
+00:00:51 in that moment. Where all of these
+00:00:53 platforms, okay, most of these platforms
+00:00:56 have real benefits that are worth
+00:00:57 considering. There are at least three
+00:00:59 options on each side here that are worth
+00:01:02 thinking about [snorts] and evaluating
+00:01:03 before making a decision. And this video
+00:01:05 isn't just like, "This one's good and
+00:01:07 this one's bad." I'm trying to help you
+00:01:09 make a mental mapping and model for how
+00:01:11 to choose the right place to host your
+00:01:13 code. And in a world where we're
+00:01:14 deploying more and more services, making
+00:01:16 all these micro apps, and vibe coding
+00:01:17 all sorts of stuff, no one's helping you
+00:01:20 figure out where to put it. And if I
+00:01:22 keep seeing these crazy Vercel bills or
+00:01:24 people getting stuck trying to deploy on
+00:01:26 AWS, I'm going to go mad. I really want
+00:01:28 to help you guys understand how I pick
+00:01:30 solutions, and it's not based on who's
+00:01:32 paying me. None of these companies are
+00:01:33 paying me today. The only one who is is
+00:01:36 today's sponsor. I have a confession to
+00:01:37 make. I've stopped using GitHub for CI,
+00:01:40 because today's sponsor Blacksmith has
+00:01:41 made my CI so much better. Actions just
+00:01:43 aren't reliable, and I've had so many
+00:01:45 problems with them. And they all
+00:01:47 vanished as soon as I set up Blacksmith
+00:01:48 for all of our repos. And yes, I mean
+00:01:50 all of them. Looks like we even have
+00:01:51 jobs running right now. Honestly, all of
+00:01:53 the observability stuff would be worth
+00:01:54 it by itself. Actually seeing what
+00:01:56 failed and why, and having a log search
+00:01:58 that like works. If you've ever had to
+00:02:00 debug weird actions, you know how
+00:02:02 absurdly useful this is by itself. It is
+00:02:04 not just for individual projects, you
+00:02:06 can scan all of your projects as well,
+00:02:08 which is huge. But, the real key is the
+00:02:10 fastest part, because they really are
+00:02:11 the fastest. The secret to how they're
+00:02:13 so fast isn't really that secret.
+00:02:15 They're using better hardware with
+00:02:16 gaming CPUs as well as NVMe drives that
+00:02:18 store all of your layers for things like
+00:02:20 Docker, which allows the restoration
+00:02:21 process to be instantaneous instead of
+00:02:23 taking forever. I just moved for a Rust
+00:02:26 project I'm working on, and they went
+00:02:27 from 5 minutes to under 30 seconds.
+00:02:29 We've seen similar speed-ups across all
+00:02:30 of the projects that we're working on.
+00:02:32 Other companies like Ashby doubled their
+00:02:34 deployment speeds while also cutting
+00:02:35 their spend by 75% because, yes,
+00:02:38 Blacksmith is cheaper, too. Don't
+00:02:39 believe me? Try it yourself. It's free
+00:02:41 to get started, and it's one line of
+00:02:43 code changed. Yes, really. You swap the
+00:02:45 action once you're set up, it's good to
+00:02:46 go. Stop wasting your time and speed up
+00:02:48 your builds at soydev.link/blacksmith.
+00:02:50 I'll break this into servers and
+00:02:52 serverless. You know, we'll call it VPSs
+00:02:54 and serverless. There's a lot of good
+00:02:56 options for both. In the serverless
+00:02:58 side, obviously, Vercel is still
+00:03:00 inarguably king. The balance of DX and
+00:03:03 capability of the platform is pretty
+00:03:05 hard to beat. Netlify is not a bad
+00:03:07 option, especially with their recent
+00:03:09 embrace of Vibe coding and supporting
+00:03:10 all of the platforms that build all the
+00:03:12 fancy Vibe coding tools. Scales great. I
+00:03:14 love the CEO. Really good. Has its
+00:03:16 negatives, we'll get there. And then, we
+00:03:17 have Cloudflare. A lot of things to say
+00:03:19 about that. On the VPS side, we have a
+00:03:21 ton of options. Obviously, we can go AWS
+00:03:24 with EC2 or EKS. Lots of options there.
+00:03:28 Railway, which we've already talked
+00:03:29 about. You have Render, Fly.io. You have
+00:03:32 DigitalOcean. Another crazy throwback.
+00:03:34 Man, I have DigitalOcean, I have a
+00:03:37 long-ass history. Oh, yeah, Hetzner. The
+00:03:39 classic. That's the one I was
+00:03:40 forgetting. Obviously, there's other
+00:03:42 traditional clouds like GCP, Azure. The
+00:03:44 reality is that if either of these are
+00:03:46 the right solution to your problem, you
+00:03:47 already know that, and you're not here
+00:03:49 for me to tell you about different
+00:03:50 options. There's also OVH. None of the
+00:03:53 rest are things I care about enough to
+00:03:55 put in the list. I think this is a good
+00:03:56 enough list of the VPSs. I'm going to
+00:03:58 start by diving into the serverless list
+00:04:00 here. If you don't know which of these
+00:04:02 you fit under, you should almost
+00:04:04 certainly start with the serverless
+00:04:05 options. And if they have issues because
+00:04:08 you actually do end up needing a server,
+00:04:09 you'll figure that out pretty fast, and
+00:04:11 then you'll move over accordingly. But
+00:04:13 generally speaking, 98 plus percent of
+00:04:15 applications can be served totally fine
+00:04:17 in a serverless deployment solution. I
+00:04:19 would lean in that direction. Just being
+00:04:20 a fair point that AWS Lambda should also
+00:04:23 be in here. You're not wrong, but we're
+00:04:26 not going to be talking about that one
+00:04:27 too much. Let's break down all these
+00:04:29 options and how I pick between them. I
+00:04:31 honestly think this will be easier if we
+00:04:32 go backwards. So, let's start with AWS
+00:04:34 Lambda. Lambda is not trivial to set up.
+00:04:38 There are lots of tools to help like
+00:04:39 SST, Pulumi, Terraform, things like
+00:04:42 that. It still sucks. Concurrency is not
+00:04:45 viable. They are starting to introduce
+00:04:47 their concept of doing concurrent Lambda
+00:04:49 stuff. They're not there yet. I don't
+00:04:50 know anyone who's actually using it or
+00:04:51 relying on it. Then there's stuff like
+00:04:53 Amplify, which is a total joke. Yeah.
+00:04:56 CDN Gateway is your problem. Get push
+00:05:00 pipeline, GLHF. Costs are fine, but
+00:05:04 concurrency sucks. Yeah. It's hard to
+00:05:07 recommend Lambda to most people. At
+00:05:09 least it's Node though, or anything
+00:05:10 else. If you can put in a Docker image,
+00:05:12 you can put it on Lambda, but a lot of
+00:05:14 technologies that people like tends to
+00:05:16 be slow to spin up. So, don't think you
+00:05:19 can just rewrite your Lambda in Rust and
+00:05:21 it's magically super fast. Sometimes
+00:05:23 those things take a bit to boot,
+00:05:24 especially if your wait time isn't on
+00:05:25 the startup of your code, it's actually
+00:05:27 on the connection to your database. Good
+00:05:29 luck, have fun. There's also a lot of
+00:05:30 other little things like streaming was
+00:05:32 super broken in Lambda. I think it might
+00:05:33 be fixed now, I'm not sure. But if
+00:05:35 you're using a server component style
+00:05:36 framework that does HTTP streaming, like
+00:05:38 you know, Next.js, not fun. And next we
+00:05:41 have everyone's favorite, Cloudflare.
+00:05:44 First thing I want to say is that they
+00:05:45 have one-of-a-kind infra, and that one
+00:05:47 of a kind infra allows them to be
+00:05:48 significantly cheaper than almost
+00:05:50 anything else because Cloudflare isn't
+00:05:52 using traditional servers or Docker
+00:05:54 images. You can't send a Docker image to
+00:05:57 Cloudflare and run it. Well, you kind of
+00:05:59 can now, but their whole like Docker
+00:06:01 image server thing's a different product
+00:06:02 and it sucks. I don't know anyone using
+00:06:03 it. It's super overpriced and slow.
+00:06:05 Cloudflare's strength is you give them a
+00:06:06 JavaScript file and they run it on their
+00:06:08 edge network that has a different layer
+00:06:11 of abstraction. Instead of handing them
+00:06:12 a box with a kernel in it and expecting
+00:06:14 them to run it for you, you're handing
+00:06:15 them a JS file and three layers above
+00:06:18 the kernel in their custom version of V8
+00:06:20 called WorkerD, they run your code
+00:06:22 safely in an isolate that doesn't have
+00:06:24 to spin up a whole server the way that
+00:06:26 things like Lambda do. That means that
+00:06:28 cold starts are near zero. It means that
+00:06:29 their pricing model's fundamentally
+00:06:31 different cuz they only charge on CPU
+00:06:32 time. Other platforms charge wall clock
+00:06:35 time because the server's up, it doesn't
+00:06:37 matter how many people are using it, it
+00:06:38 costs them money, it costs you money,
+00:06:40 too. With Cloudflare, if your request
+00:06:42 isn't doing anything, like it's idling
+00:06:45 waiting for more data to come in, the
+00:06:46 computer on that box can be used for
+00:06:47 someone else's request because lots of
+00:06:50 people are running their code at the
+00:06:52 same time on the same box. On Vercel,
+00:06:54 every developer's deployment has its own
+00:06:56 kernel. On Cloudflare, every single
+00:06:57 deployment is just a JavaScript file
+00:06:59 running in the same VM. It also gives
+00:07:01 the performance profile meaningly. Check
+00:07:03 out the Vercel versus Cloudflare video
+00:07:04 if you want more info on that. They've
+00:07:05 made improvements since, but it's still
+00:07:07 not as fast as dedicated box can be, but
+00:07:09 there's a much bigger catch. Not Node.
+00:07:12 Every time I use Cloudflare, I run into
+00:07:15 something because of this. It's not
+00:07:17 running Node.js, it's running their
+00:07:18 JavaScript engine. And because of that,
+00:07:20 a lot of things don't work. Things like
+00:07:23 reading and writing files. Things like
+00:07:25 many of the methods you use to connect
+00:07:27 to databases. Things like any package
+00:07:30 that runs any native code, you know,
+00:07:31 like image optimizers, PDF parsing, all
+00:07:35 the fun things we like to do in our
+00:07:36 servers with our Node apps. There's a
+00:07:38 lot of issues when you can't use Node.
+00:07:41 They've done their best to patch in
+00:07:43 support for a lot of node stuff. None of
+00:07:46 the things I just mentioned have been
+00:07:47 fixed. All of those are still problems,
+00:07:49 but most packages have shims around the
+00:07:50 node functions now built in where they
+00:07:52 can mostly work. Things like crypto were
+00:07:55 entirely broken and now mostly work. The
+00:07:57 compat layer is fine, but you're almost
+00:08:00 certainly going to run into some issues.
+00:08:01 Like one of the biggest ones I have is
+00:08:03 stuff like sharp and ffmpeg. You're not
+00:08:05 running anything that is written in a
+00:08:06 language other than JavaScript in
+00:08:08 Cloudflare. And anyone saying otherwise,
+00:08:10 like, "Oh, you can just wasm your
+00:08:12 stuff." has not tried it seriously. I
+00:08:14 have been to hell and back for many
+00:08:16 projects trying to get Cloudflare to let
+00:08:18 me do something that involves any code
+00:08:20 that isn't in JavaScript, and every
+00:08:21 single time I gave up and moved to one
+00:08:23 of the other options. Speaking of other
+00:08:24 options, Netlify. Netlify's another
+00:08:27 lambda wrapper, but they include all the
+00:08:29 other fun things like the CDN that make
+00:08:31 the platform so nice. Everything from
+00:08:33 here down effectively has those pieces.
+00:08:35 Really good GitHub integrations.
+00:08:38 Honestly, really good integrations in
+00:08:39 general. They have an awesome team. They
+00:08:41 support the hell out of open source.
+00:08:42 They're pretty good. I've never
+00:08:44 regretted my use of Netlify in a
+00:08:46 meaningful way. They've been a sponsor
+00:08:47 in the past. I wouldn't be surprised if
+00:08:48 they are again in the future. Netlify's
+00:08:50 solid platform. They handle CDN and
+00:08:53 distribution stuff, but they don't have
+00:08:56 everything. The biggest thing I miss
+00:08:58 when I use Netlify is concurrency.
+00:09:01 Because again, the concurrency model for
+00:09:02 a lot of these things, including AWS
+00:09:04 Lambda, is each request gets its own
+00:09:07 instance. And for the modern way that
+00:09:09 things work, that is not pleasant. Their
+00:09:11 solution for this is some really cool
+00:09:14 background jobs and queue type stuff.
+00:09:16 The work they have done for their
+00:09:17 queuing things is actually really,
+00:09:19 really cool. The bit I played with it
+00:09:21 for was awesome. They were way ahead of
+00:09:23 Vercel with the workspace thing. They
+00:09:24 had it figured out early, and it was
+00:09:26 surprisingly cheap. I should also
+00:09:27 mention for the Cloudflare stuff before
+00:09:29 I forget, GitHub integration. GLHF.
+00:09:31 Getting your Cloudflare stuff integrated
+00:09:33 with modern tools is still your problem,
+00:09:35 not theirs. The dashboard is absolute
+00:09:38 garbage. I I actually think that the
+00:09:40 entire dashboard code base should be
+00:09:42 deleted and restarted from scratch.
+00:09:44 There is no recovery at this point.
+00:09:46 They've had multiple massive global
+00:09:48 outages because of bad code for fetching
+00:09:51 data in the dashboard. It's pretty
+00:09:53 pathetic. Addy just jumped in saying
+00:09:54 Cloudflare Pages has native GitHub
+00:09:56 integration. Awesome. Cloudflare Pages
+00:09:58 is also dead. They are merging it with
+00:10:01 Cloudflare Workers now and they've done
+00:10:03 a terrible job documenting those changes
+00:10:05 and I never know where I'm going when
+00:10:07 I'm trying to deploy on Cloudflare
+00:10:08 anymore. I had so many problems the last
+00:10:09 time I tried to deploy on Cloudflare
+00:10:11 that I sent to the team. The poor exec
+00:10:13 who was in the room with me when I did
+00:10:14 this wrote over seven pages of notes at
+00:10:16 a 10-point single-spaced font that she
+00:10:19 then presented to the entire org and got
+00:10:21 like half or so of the things fixed.
+00:10:23 They are trying. Cloudflare does care a
+00:10:25 lot, but the experience is just so far
+00:10:28 behind any of the competition that's at
+00:10:30 all more modern. Just go try to deploy a
+00:10:33 random Vite React app on Cloudflare and
+00:10:36 on Vercel and then make a change and see
+00:10:38 how hard it is to deploy on those two
+00:10:39 things. It's just not pleasant. But what
+00:10:42 you're getting for that cost of your
+00:10:44 sanity is way cheaper overall. There are
+00:10:48 issues with the cost side though because
+00:10:50 they're not very transparent about what
+00:10:51 free things stay free. They don't charge
+00:10:54 for egress in a bunch of cases, which is
+00:10:56 huge cuz it means if you're doing a lot
+00:10:57 of data transfer, it is cheap or free.
+00:11:00 But at a certain point, they might
+00:11:01 strong-arm you into the enterprise plans
+00:11:03 where those things suddenly do cost
+00:11:05 money. So, if it's free on the free tier
+00:11:07 or free on the base tier, that does not
+00:11:09 guarantee it stays free in the
+00:11:10 enterprise tiers. So, know that cuz it's
+00:11:12 very important. One last really great
+00:11:13 thing they did though, they hired Dylan.
+00:11:15 If you're not familiar, Dylan Mulroy is
+00:11:17 one of the like wizard TypeScript devs
+00:11:19 powering all sorts of tools in the
+00:11:20 background. One of the people that's
+00:11:22 really pushed Effect-TS to where it is
+00:11:24 today. Fellow JJ nerd. Great developer
+00:11:26 overall. Love Dylan to death. He was at
+00:11:29 Vercel and cared a lot about DX there.
+00:11:30 He's now at Cloudflare and he's pushing
+00:11:32 the limits of DX there as well, trying
+00:11:34 to fix a ton of stuff. In his first week
+00:11:36 he filed like 20 PRs to the Wrangler CLI
+00:11:39 and all these other random things.
+00:11:40 There's a good chance that Dylan will be
+00:11:42 able to fix a handful of the things in
+00:11:43 this list, but right now Cloudflare has
+00:11:45 the second worst DX compared to AWS. In
+00:11:48 many ways I would argue it's worse than
+00:11:50 AWS because it changes all the time and
+00:11:52 is never well documented and nothing
+00:11:54 ever makes sense. It's actually so
+00:11:56 unclear what you can and can't do on
+00:11:58 Cloudflare because the docs are just
+00:12:00 wrong and lie a lot. It's it's rough.
+00:12:02 And now for the exact opposite
+00:12:04 experience, Vercel. I have my issues
+00:12:06 with Vercel, everyone does. Watch my
+00:12:08 breaking up with Vercel video if you
+00:12:10 want to see some of them. There's a lot
+00:12:11 of them, but they are still by far the
+00:12:14 easiest and most consistent way to
+00:12:15 deploy most apps. Basically everything I
+00:12:18 have shipped to the web over the last
+00:12:20 few years has been on Vercel at the very
+00:12:22 least for the web app for it cuz it's
+00:12:24 just a really easy way to do that. The
+00:12:26 GitHub integration's great, the free
+00:12:27 tier is great, the billing model makes
+00:12:28 sense, the integrations with everything
+00:12:30 are awesome. Honestly, I can just copy
+00:12:33 this part as well as this part.
+00:12:35 Obviously it's the best place for
+00:12:37 Next.js Regardless of how you feel about
+00:12:38 Next, even I'm coming around to not
+00:12:40 liking Next too much nowadays. Obviously
+00:12:43 they handle the CDN distribution stuff.
+00:12:45 And the parts where we start to really
+00:12:47 differ from the competition, Fluid
+00:12:48 Compute. This is the thing I talked
+00:12:50 about before. It's their attempt to do
+00:12:52 similar pricing to what Cloudflare does
+00:12:54 with the CPU time pricing. It has helped
+00:12:56 a ton. They also consistently introduce
+00:12:58 cool primitives to the infrastructure to
+00:13:00 take advantage of these things like the
+00:13:02 workflows stuff. I know you guys don't
+00:13:04 love the whole syntax of directives with
+00:13:07 use workflow and whatnot, but it is
+00:13:09 really cool what it can do. It's a good
+00:13:11 way to get started with that type of
+00:13:13 building if you want more reliable
+00:13:14 services. It is what it is. There are
+00:13:16 negatives though. Cost is still an
+00:13:18 issue. Not just CPU cost. I would
+00:13:21 actually argue for most apps the cost
+00:13:23 difference between Vercel and Lambda is
+00:13:26 in favor of Vercel for the compute side
+00:13:29 because of the concurrency stuff in
+00:13:30 particular. That just knocks costs down
+00:13:33 a shitload. But they do things with the
+00:13:35 costs that still aren't great. Things
+00:13:37 like the $20 per month seat pricing,
+00:13:39 very annoying. Every time I have to add
+00:13:41 a new dev to the team, I'm just
+00:13:42 increasing my Vercel bill. Don't love
+00:13:44 that. But the biggest cost when you're
+00:13:46 shipping real software is almost never
+00:13:48 going to be the compute or the seat
+00:13:50 pricing on Vercel. Bandwidth. Every time
+00:13:53 I see one of those viral bills where
+00:13:55 it's like, "Oh my god, Vercel cost me
+00:13:56 $5,000." All but one of those instances,
+00:14:00 it was bandwidth. Because Vercel has a
+00:14:02 very aggressively positioned CDN that
+00:14:04 has the goal of making everything as
+00:14:06 fast as possible. All of the code that
+00:14:08 Vercel ships for you, the things that go
+00:14:10 to the users, like your HTML pages, your
+00:14:12 JS bundles, your SVGs, all the things
+00:14:15 that are coming out of your code base
+00:14:17 that are going to the user, those are
+00:14:18 all on Vercel's CDN. It is obviously
+00:14:21 meant for things that are small and need
+00:14:23 to be loaded quick. Like, you know,
+00:14:24 JavaScript files that power your site.
+00:14:26 But if you're filling up your public
+00:14:27 folder in your project with a ton of big
+00:14:30 assets, like 50 MB video files or 10 MB
+00:14:33 PNGs or 5 to 10 MB MP3s, that's going to
+00:14:36 cost a lot. It's almost like you're
+00:14:38 trying to use a race car to pick up
+00:14:39 groceries. Not only is it going to fit
+00:14:41 fewer groceries, it's going to use more
+00:14:43 gas and probably cost you more in
+00:14:45 maintenance. It is not the right
+00:14:47 solution for any static asset that is
+00:14:50 bigger than like 400 KB. They do offer
+00:14:52 their own file storage solution called
+00:14:54 Blob that is built on top of R2, funny
+00:14:56 enough, the Cloudflare product. I don't
+00:14:58 know how hard they're focused on it now.
+00:15:00 It doesn't really seem like a thing they
+00:15:01 care a lot about. Thankfully, you can
+00:15:02 use UploadThing, a weird file upload
+00:15:05 service some random YouTuber made. Don't
+00:15:06 think about that part too much, but uh
+00:15:08 it's a lot cheaper.
+00:15:10 Doesn't charge for egress. Worth
+00:15:11 considering. So, that's why I default to
+00:15:14 Vercel. As long as you're careful about
+00:15:15 the bandwidth and where you're putting
+00:15:16 it, it ends up being really good. The
+00:15:18 GitHub integrations are best in class.
+00:15:19 The CLI is really good. It's easy to set
+00:15:21 up. It works with everything. It's real
+00:15:23 Node, so you can do anything you can do
+00:15:24 in Node.js. It's pretty good. Generally
+00:15:26 speaking, if it doesn't work on Vercel,
+00:15:28 it's probably because it's a bad
+00:15:29 workload for serverless in general. It
+00:15:32 is very rare that I find it worthwhile
+00:15:34 to move off of Vercel to another
+00:15:36 serverless provider, unless it is some
+00:15:38 crazy weird compute thing that
+00:15:40 Cloudflare happens to be cheaper for.
+00:15:42 But even that's getting rarer now with
+00:15:44 the fluid compute pricing. Cool.
+00:15:46 So, let's say you're one of those people
+00:15:48 that just cannot use serverless. There
+00:15:50 are a lot of people that that is the
+00:15:52 case for, and there are even more people
+00:15:54 that that isn't the case for, but
+00:15:55 occasionally have a project that
+00:15:57 benefits from traditional servers. Let's
+00:15:59 look at our options for that. Let's
+00:16:01 start with the easy ones to make fun of.
+00:16:04 Hetzner and OVH. Benefits: really cheap.
+00:16:07 People on Twitter will think you're
+00:16:08 cool. Negatives: uh
+00:16:10 your account can get canceled at any
+00:16:13 time, especially with Hetzner. I've even
+00:16:15 experienced this. They didn't like that
+00:16:17 I signed up with a Gmail account, so I
+00:16:18 got auto-flagged and my account couldn't
+00:16:20 deploy for a long ass time.
+00:16:22 It was bad. And I've seen that story so
+00:16:25 many times. I've even seen people's
+00:16:26 production environments getting taken
+00:16:27 down because some random policy change
+00:16:29 resulted in their account not having
+00:16:31 some checkbox hit. They are known for
+00:16:33 banning. They are known for flagging. A
+00:16:35 lot of people have had a lot of
+00:16:36 problems. Immediately I get [&nbsp;__&nbsp;] for
+00:16:38 talking [&nbsp;__&nbsp;] on Hetzner, but I don't
+00:16:39 care. I've exclusively had bad
+00:16:41 experiences with Hetzner, and I need
+00:16:42 y'all to know that. OVH is some amount
+00:16:44 better, but honestly they're also
+00:16:45 slightly more expensive, so I rarely
+00:16:47 find it is worth it. The product
+00:16:49 offerings also lacking. Like no
+00:16:51 integrations with anything.
+00:16:53 &gt;&gt; [snorts]
+00:16:53 &gt;&gt; If you're using Hetzner, you're managing
+00:16:55 your deployment pipelines, you're
+00:16:57 managing your methods for allocation,
+00:16:59 you're managing your hierarchy for like
+00:17:01 what servers are being routed to and
+00:17:02 from, your gateways, your CDNs,
+00:17:04 everything. They're not doing [&nbsp;__&nbsp;] for
+00:17:05 you. They're giving you a VPS in a box
+00:17:07 that they own somewhere random. Also of
+00:17:09 note, uh locations kind of suck. The
+00:17:11 best prices are for the EU servers, but
+00:17:13 even the EU servers aren't co-located
+00:17:16 with other important things. Like if
+00:17:18 you're using, I don't know, PlanetScale
+00:17:19 for your database, the likelihood that
+00:17:21 the PlanetScale database in the Hetzner
+00:17:23 database are on the same network is
+00:17:26 basically zero, which means you're
+00:17:27 adding a shitload of latency and making
+00:17:29 your service significantly slower and
+00:17:31 worse, so that you can look cool on
+00:17:33 Twitter for paying five bucks a month
+00:17:34 instead of six. It's just not worth it.
+00:17:36 I I don't know any serious people who
+00:17:38 are building on top of Hetzner. I just
+00:17:40 don't. It's all hobbyists. And that's
+00:17:41 fine if you want to just be a hobbyist
+00:17:43 and really micro optimize your costs. I
+00:17:46 don't believe that you're real. I just
+00:17:48 don't. Not a Hetzner fan. I'm sure my
+00:17:51 comment section is going to be wonderful
+00:17:53 now that I've said that. Next, we'll
+00:17:55 talk about DigitalOcean. This is one I
+00:17:57 have a ton of experience with. First
+00:18:00 benefit is the docs, best in class. I In
+00:18:04 chat, tell me if you're old enough to
+00:18:05 have been there with me. Ones in the
+00:18:07 chat if you've also relied on the docs
+00:18:10 for DigitalOcean for deploying Minecraft
+00:18:12 servers places other than DigitalOcean.
+00:18:15 I know that's been the case for me. I
+00:18:16 would not be the dev I am today if it
+00:18:18 wasn't for the DigitalOcean
+00:18:19 documentation on how to host Minecraft
+00:18:21 servers. Look at that, chat. A lot of us
+00:18:24 have been there. Crazy throwback, but
+00:18:25 man, the amount of quality documentation
+00:18:28 that they have had forever now is just
+00:18:31 unbelievable. Like to this day, I'll
+00:18:33 Google search some weird thing I want to
+00:18:34 do with SSH or GNU screen or some thing
+00:18:37 I want to deploy. There's a 50% chance
+00:18:39 that DigitalOcean is one of the first
+00:18:40 results, and not even how to do this on
+00:18:43 DigitalOcean, just how to do this. And
+00:18:45 if you choose to use DigitalOcean, you
+00:18:47 can. They really took that angle
+00:18:49 seriously of just being a good resource
+00:18:50 for developers. They have since laid off
+00:18:52 a lot of the staff that wrote those
+00:18:53 docs, but god damn were they useful for
+00:18:55 a long long ass time. Even like
+00:18:58 pre-Stack Overflow days. Other benefits
+00:19:00 of DigitalOcean, they've been around
+00:19:02 forever, so they're probably not going
+00:19:03 anywhere. They have good integrations,
+00:19:05 not great, but good integrations to
+00:19:06 things like GitHub. I'll call it decent
+00:19:09 integrations. And a lot of companies
+00:19:11 that we use things from here are using
+00:19:13 them. From Bright Data to Falt,
+00:19:15 Character AI and more. Like they're
+00:19:16 they're a real legit company that's
+00:19:18 being used by a lot of real legit
+00:19:19 products, unlike some of the other
+00:19:21 options here. We need to take a look at
+00:19:22 the pricing though, cuz it's not cheap.
+00:19:25 They're immediately starting with their
+00:19:26 GPU boxes, which is cool that they offer
+00:19:28 those, but the compute less great. They
+00:19:31 do still have a free tier, but droplets
+00:19:34 Oh, they're now per second pricing.
+00:19:36 Their base tier at 512 meg, 500 gigs of
+00:19:39 transfer, 10 gig drive is four bucks a
+00:19:41 month. One gig is up to six. And just
+00:19:44 for comparison sake, we'll look at
+00:19:46 Hetzner's pricing. They got boxes with
+00:19:48 four gigs of RAM and 40 gig SSDs and up
+00:19:51 to 20 terabytes of traffic for four
+00:19:53 bucks a month. This is why people choose
+00:19:55 Hetzner. It is also worth noting that
+00:19:57 it's in Germany or Finland, and I don't
+00:20:00 think the US locations are even visible
+00:20:02 in the pricing charts. Or is it regular
+00:20:04 performance? That's Okay, cool. Regular
+00:20:06 performance at different tab than the
+00:20:08 cost-optimized ones. And those ones have
+00:20:10 US locations. And now we're up to six
+00:20:13 bucks for the two gig 40 gig plan.
+00:20:14 That's a lot closer to what we were
+00:20:16 seeing over here.
+00:20:18 So it as crazy as it seems, do you
+00:20:21 understand how hard Hetzner works to
+00:20:23 make the price look incredible, even
+00:20:26 though there are catches? Like again, we
+00:20:29 have to hit this button to get real
+00:20:30 locations, and immediately the price
+00:20:32 skyrockets. Turns out that the two vCPU
+00:20:35 4 gig boxes in Germany in regular
+00:20:38 performance mode, not cost-optimized
+00:20:40 mode, is more expensive than Digital
+00:20:42 Ocean. And if you want a dedicated box
+00:20:45 so that you never have to worry about
+00:20:47 performance degrading, you're now at 14
+00:20:49 bucks a month minimum for again, rather
+00:20:51 small Okay, it's 8 gigs of RAM, so a
+00:20:52 little bit better. But 28 bucks for 16
+00:20:54 gigs a month, meh, not great.
+00:20:56 Regardless, pricing is reasonable across
+00:20:59 these options so far. We have not gotten
+00:21:00 into the things that are massively
+00:21:01 overpriced. Okay, admittedly, two gigs
+00:21:03 of RAM and one vCPU for 12 bucks is a
+00:21:05 little expensive. Digital Ocean is not
+00:21:08 the cheap option. It never was. If
+00:21:10 you're optimizing on that level, it's
+00:21:12 hard for me to take the work you're
+00:21:13 doing seriously. Like a $2 a month
+00:21:16 difference across servers is not
+00:21:17 something I care about cuz the time it
+00:21:19 takes to build those things is a lot
+00:21:20 more. Hell, the inference I use to build
+00:21:22 those things is a lot more. I'm paying
+00:21:23 200 bucks a month for Claude and for
+00:21:25 Codex right now. 5 bucks a month is
+00:21:26 whatever. So, what are the negatives?
+00:21:28 How do I put this? Digital Ocean feels a
+00:21:31 little lost right now. They don't really
+00:21:33 know what their core offering is. You
+00:21:35 can even tell from the home page. The
+00:21:37 inference cloud built for scale. What?
+00:21:40 That's not what I've I don't know anyone
+00:21:42 using Digital Ocean for inference right
+00:21:43 now. I've never met a person who does
+00:21:45 that. Oh, look at that. They have an
+00:21:46 open cloud shoutout on the home page
+00:21:48 now. They're leaning so hard and they're
+00:21:50 trying to find new customers, which
+00:21:52 suggests, and this is the scary part,
+00:21:55 they may be circling the drain. Of the
+00:21:58 options I have in this list, they are in
+00:22:00 the top section of most likely to have
+00:22:02 the same problem that we're talking
+00:22:04 about here right now. So, yeah, if your
+00:22:06 goal is to not have to deal with this
+00:22:08 type of migration because of the Heroku
+00:22:09 death, I can't guarantee with Digital
+00:22:12 Ocean that you won't have to experience
+00:22:13 that again. So, know that going in.
+00:22:15 Definitely feels a tad dated and it
+00:22:16 feels like the compute isn't their focus
+00:22:18 anymore. They really seem to be leaning
+00:22:20 into the inference side, which good for
+00:22:22 them, but there's way more competition
+00:22:24 there and I'm not confident that they
+00:22:25 can have a meaningful impact. What do we
+00:22:27 have next? We covered these ones. Let's
+00:22:30 hop into Fly.io next. Fly.io is dope.
+00:22:32 They were a sponsor in the past. I hope
+00:22:34 they might be in the future, but they
+00:22:36 did recently have to do layoffs and I
+00:22:37 chose to cut them off as a sponsor at
+00:22:39 that point because it felt really bad
+00:22:40 taking money from a company that just
+00:22:42 laid off a bunch of the staff that I was
+00:22:43 working with. Really good stuff overall
+00:22:45 and they're also a huge member of like
+00:22:47 the Elixir community, which is obviously
+00:22:48 near and dear to my heart. So, benefits.
+00:22:51 Elixir native, which I absolutely love.
+00:22:53 World-class DX. For deploying servers,
+00:22:56 they have some of the best DX in the
+00:22:57 world. Things like the way it integrates
+00:22:59 with GitHub, how you manage things in
+00:23:00 the dashboard, the clarity in what's
+00:23:02 going on where, the tools for linking
+00:23:04 different things together, preview
+00:23:05 environments, sleeping servers, all of
+00:23:07 those types of things, great. They're
+00:23:09 also huge OSS supporters. They help
+00:23:12 sponsor everything from like the Elixir
+00:23:14 ecosystem in Gleam, Rails, and many
+00:23:16 other things I'm almost certainly going
+00:23:17 to forget if I try to list them off.
+00:23:19 They are just a good player in the
+00:23:21 space. More so than anyone else we've
+00:23:23 talked about so far, I would argue, they
+00:23:25 are actively, meaningfully contributing
+00:23:27 to the development of important
+00:23:29 open-source technologies to the point
+00:23:31 where it is hurting the business. Okay,
+00:23:33 people are saying they might not sponsor
+00:23:35 Gleam.
+00:23:37 Maybe they're not sponsoring Gleam
+00:23:38 anymore. I'm pretty sure they did in the
+00:23:39 past, but they are not necessarily doing
+00:23:42 great financially. Again, layoffs, and I
+00:23:44 haven't heard anything about them
+00:23:45 raising anytime soon, which means they
+00:23:47 probably haven't. They also have their
+00:23:48 Sprite stuff, which I've heard really
+00:23:50 good things about. It's meant to be VMs
+00:23:53 and sandboxes that you can safely run
+00:23:55 agents in that have their own primitives
+00:23:57 that will let them be powerful. And then
+00:23:59 there's a bunch of other random things
+00:24:00 that they've built that are just way
+00:24:02 cooler than what you can do on other
+00:24:04 clouds. I did a video a while back about
+00:24:07 Flame, which is an alternative way of
+00:24:09 doing serverless where you are
+00:24:10 encapsulating processes in your code
+00:24:13 base to spin them up on different
+00:24:14 servers for specific needs. Like if you
+00:24:16 want to sometimes have a GPU for doing,
+00:24:18 I don't know, FFmpeg stuff, but you
+00:24:20 usually don't need it, having your stuff
+00:24:22 always run on the GPU box would be way
+00:24:25 too expensive if the GPU's not being
+00:24:27 used. But if you could have one function
+00:24:28 in your code base that runs on the GPU
+00:24:30 box and spins it up and handles it, then
+00:24:32 awesome. In this example, I'm sorry if
+00:24:34 you're not familiar with Elixir syntax,
+00:24:35 my beloved. You take this process that
+00:24:38 is defined here for generating
+00:24:39 thumbnails, which runs in FFmpeg, which
+00:24:41 could lock up the main server or just
+00:24:43 not be performed if it doesn't have a
+00:24:45 GPU, you can wrap it with a flame call,
+00:24:47 exact same stub that function here, and
+00:24:49 it will return the result as though you
+00:24:51 just called this on the same box. It's
+00:24:54 so cool. It's just so far ahead of
+00:24:57 anything else I've seen for this type of
+00:24:59 stuff, but we need to be realistic. The
+00:25:01 negatives. The database reliability just
+00:25:03 isn't there. Even when I was doing my
+00:25:05 tutorials and work with them, I had my
+00:25:07 database just die and fail multiple
+00:25:10 times throughout. I learned to just not
+00:25:12 trust the database as many other Fly
+00:25:13 customers have. They often move their
+00:25:15 databases off of Fly to their own other
+00:25:17 alternative services like, you know,
+00:25:18 PlanetScale. But, during dev it's so
+00:25:20 convenient. Like, the way that setting
+00:25:22 things up on Fly is so nice. It hurts,
+00:25:24 but the reality is that the database
+00:25:26 stuff isn't there. It in general,
+00:25:27 reliability just isn't quite where we
+00:25:29 need it to be. They had a huge outage
+00:25:31 recently. They likely will again in the
+00:25:32 future. They have built a lot of their
+00:25:34 own things, and a lot of those things
+00:25:36 are really, really cool. It's why they
+00:25:37 can do all this cool stuff, but it also
+00:25:39 means they're not as tried by the
+00:25:40 industry, and as a result, they're not
+00:25:42 as reliable. I also know with the DB
+00:25:43 thing, not managed. They don't do
+00:25:46 managed databases. They just give you an
+00:25:48 image that is running Postgres.
+00:25:51 Apparently, they now do have managed
+00:25:52 databases. I did not know that. That's
+00:25:54 good to hear. But, uh
+00:25:55 last time I tried it, they didn't. That
+00:25:57 is a relief. I'm still going to say the
+00:25:59 reliability isn't good, but the fact
+00:26:00 they have managed DBs is a cool change.
+00:26:02 And I would also argue that within these
+00:26:04 options, Fly might be the highest risk
+00:26:07 of death. I would put them slightly
+00:26:09 higher than Digital Ocean in terms of
+00:26:12 this company might run out of money and
+00:26:13 die. I just have not seen a lot of big
+00:26:16 customers or revenue numbers or
+00:26:17 investments or any of the things that
+00:26:19 would make me confident Fly will still
+00:26:20 be here at the end of the year or even
+00:26:22 early next year. Even when I was working
+00:26:24 with them, the rate at which the people
+00:26:26 I was talking to suddenly worked at the
+00:26:28 company anymore was a bit terrifying. I
+00:26:30 even went to ElixirConf 2024 and was
+00:26:32 sitting at a table with a bunch of
+00:26:33 Elixir nerds, including a few that
+00:26:35 worked at Fly, and watched as they
+00:26:36 checked their phones and got laid off.
+00:26:38 That does not inspire confidence. They
+00:26:40 also deprecate things, not a lot, but
+00:26:42 enough to be concerned. Somebody in chat
+00:26:44 just mentioned that they used to have a
+00:26:45 managed DB Superbase integration, but
+00:26:47 that got discontinued. Not the thing I
+00:26:49 would bet my whole business on right
+00:26:50 now, personally. One of the most fun
+00:26:52 platforms I've ever built on, not
+00:26:54 confident that they will still be here
+00:26:55 next year. Take that as you will.
+00:26:58 And next we have Render,
+00:27:00 who has this big migrate from Heroku
+00:27:02 with near zero downtime banner on top.
+00:27:04 They know exactly what they're doing.
+00:27:05 Render is used by a ton of big
+00:27:08 companies. Their revenue is really
+00:27:09 solid. They've had no issues raising
+00:27:11 money. They understand modern tech and
+00:27:13 PHP. Even the founder of HashiCorp has
+00:27:16 had nice things to say about Render.
+00:27:17 Mitchell's a legend. Cool to see. They
+00:27:19 have a decent free tier. You have to
+00:27:21 immediately bump to their monthly tier
+00:27:23 if you want to do more though. They
+00:27:24 don't have like boxes you're renting the
+00:27:26 same way. But they're pretty generous
+00:27:27 overall. Relatively modern, supports
+00:27:30 everything, generous free tier, likely
+00:27:32 staying around. They make enough revenue
+00:27:34 that I'm not worried about them
+00:27:35 disappearing anytime soon. Negatives,
+00:27:37 you pay a sub instead of server pricing.
+00:27:42 A lot of that pricing is hidden under
+00:27:43 the enterprise custom tier. They charge
+00:27:46 a separate monthly fee for setting up
+00:27:48 cron jobs. That's kind of funny. Oh,
+00:27:50 look at that. Their GitHub integration
+00:27:52 is still in a very good state. Last time
+00:27:53 I used it it was pretty good, so that's
+00:27:54 good to hear. I'll put that in here.
+00:27:56 Good GitHub integration.
+00:27:58 Plus preview environments, which is not
+00:28:00 guaranteed across these different
+00:28:01 providers. Apparently the egress is
+00:28:03 super expensive as well. Definitely
+00:28:06 worth noting. Good call out, chat. The
+00:28:07 $20 tier comes with 500 gigs of
+00:28:09 bandwidth. 15 bucks per additional 100
+00:28:10 gigs. Inbound bandwidth is free. Okay,
+00:28:12 that's cool. So uploading to it is free.
+00:28:15 Sending data from it costs money. That's
+00:28:16 actually a really nice call out. Good
+00:28:18 [&nbsp;__&nbsp;] I would never fault anyone for
+00:28:20 going with Render. Seems like a really
+00:28:21 good option. Honestly, like one of the
+00:28:22 most reliable out of all of these. Like
+00:28:24 I would say like other than AWS, least
+00:28:26 flight risk, too. But now we need to
+00:28:28 talk about Railway. Obviously, more than
+00:28:31 any point in here, account for bias
+00:28:33 here. Jake and I have a long history. I
+00:28:35 was almost hired as engineer number four
+00:28:36 at Railway all the way back in 2021.
+00:28:39 I've watched this company's ups and
+00:28:41 downs. I've used them for that entire
+00:28:43 five-year window. I love Railway to
+00:28:45 death. I have my issues with them. For
+00:28:47 the most part, it's a great platform.
+00:28:48 It's a phenomenal team and I'm very
+00:28:50 excited for them and all the success
+00:28:51 that they've been having. Benefits.
+00:28:53 Truly modern. It's just you'll feel the
+00:28:56 difference when you use it. It just
+00:28:58 works great with everything. The CLI is
+00:29:00 awesome. The docs are awesome. The
+00:29:01 GitHub integration's great. It just
+00:29:03 behaves. It also is one of the best
+00:29:05 dashboards for actually seeing what's
+00:29:07 going on and how parts are linked. You
+00:29:09 can clearly see the different services,
+00:29:10 how they're linked to each other, the
+00:29:12 domain setup, all of that. Really good.
+00:29:14 There's availability is awesome, too. I
+00:29:15 haven't even bothered setting it up yet
+00:29:16 cuz this project hasn't needed it. The
+00:29:18 way they handle different environments
+00:29:19 is great. You can set up preview
+00:29:20 environments and things like that
+00:29:21 relatively well. It does not, as far as
+00:29:23 I know, have good automatic preview
+00:29:25 environment creation when you do PRs and
+00:29:27 things like that. It might be able to be
+00:29:28 set up, but it's good. I honestly really
+00:29:31 like the way Adi put it here. Railway
+00:29:32 makes me smile every time I use it. The
+00:29:34 pricing's relatively transparent and
+00:29:36 clear. They drop hard numbers for what
+00:29:38 each thing costs. There's a little
+00:29:40 confusion around various different
+00:29:42 things like the relationship between
+00:29:44 like how these parts are measured. It's
+00:29:45 sometimes confusing to figure out what
+00:29:47 usage you're actually going to get. And
+00:29:49 then there are interesting things that
+00:29:51 are free that I'm not confident are
+00:29:53 going to stay free. So, like in the
+00:29:54 benefits section, egress from their
+00:29:57 object store is free. But then in the
+00:30:00 negatives, object store is private only.
+00:30:03 You cannot do a public bucket. That
+00:30:04 burned me real bad on a project that I'm
+00:30:06 now migrating off of Railway storage.
+00:30:08 Free egress is a ticking timer in my
+00:30:10 opinion. No one offering egress for free
+00:30:12 can maintain that forever. Like there's
+00:30:14 always a catch. And I am a little scared
+00:30:15 of what that catch will be with Railway.
+00:30:17 This is the type of complaint that I
+00:30:18 might have for other things if I used
+00:30:20 them more, but as a pretty heavy Railway
+00:30:22 user, I see the flaws more. And the
+00:30:23 dashboard can get into some weird
+00:30:25 states, especially around DNS and SSL
+00:30:27 stuff. You don't buy domains on Railway.
+00:30:29 I bought mine on Vercel, but then I set
+00:30:31 it up on Railway and SSL was broken
+00:30:33 forever. The dashboard just wouldn't
+00:30:35 verify the CNAME. It just It took a
+00:30:36 while to get that working and I didn't
+00:30:38 know if I was doing it right last time
+00:30:40 because the UI didn't really indicate
+00:30:41 what the current state was very well.
+00:30:43 Thankfully, I just left it alone for
+00:30:45 half an hour, went back and it was good.
+00:30:47 Not clear that was happening though or
+00:30:48 if it would or wouldn't work. Oh, and
+00:30:50 the egress does cost 5 cents per gig for
+00:30:53 services, but the object storage has
+00:30:56 free egress. But you are paying 1.5
+00:30:58 cents per gig per month for the storage.
+00:31:00 So, know that. I got the previous
+00:31:02 storage price from Jake. He might have
+00:31:03 just typo'd it, but 1.5 cents per gig is
+00:31:05 a pretty good price for the storage. I
+00:31:07 might rethink some things based on that.
+00:31:09 There's a lot more benefits to them
+00:31:10 though than we've gotten to here.
+00:31:12 Supports everything. Best DB setup I've
+00:31:14 ever had. Like the the way that you link
+00:31:16 services together and all of that is
+00:31:17 just so pleasant. Config is generally
+00:31:20 great. Perf is insane. They're rocking
+00:31:22 their own servers and they're good
+00:31:24 servers. I also think that the server
+00:31:25 farm I'm using for US West is pretty
+00:31:27 close to me which makes it feel just
+00:31:29 absurdly fast. I'm just very happy with
+00:31:31 Railway. I'll call pricing fair overall.
+00:31:35 There are very few things on Railway
+00:31:36 where I'm like, "That's too expensive."
+00:31:37 And the one that I thought was, I was
+00:31:38 just wrong about. Oh, they do have
+00:31:40 previews and one-click rollbacks. That's
+00:31:41 good to know. The one-click rollbacks is
+00:31:42 huge and it saved me a ton of times.
+00:31:44 Depending on how you use the platform,
+00:31:46 it might even save you a shitload of
+00:31:47 money. Some customers who were on AWS
+00:31:49 before were able to cut their cost by
+00:31:50 90% by moving to Railway and also get
+00:31:52 better experience. It's it's really
+00:31:54 good. I'm super happy with Railway. I
+00:31:56 bet you will be too. They are probably
+00:31:58 my top pick here. One last thing on
+00:31:59 Railway before we get to EC2. They just
+00:32:01 raised $100 million. They're not going
+00:32:03 anywhere. They were already nearly
+00:32:05 profitable before. They might have
+00:32:06 actually been profitable for a bit. They
+00:32:08 are not going anywhere. AWS also never
+00:32:11 going anywhere. Super reliable.
+00:32:14 Like disgustingly reliable. Supported by
+00:32:16 everything. Great locations, so you know
+00:32:19 that they'll network with everything
+00:32:21 fast. Like every service tries to get
+00:32:24 themselves into AWS server farms so that
+00:32:26 you can have low latency with AWS EC2.
+00:32:29 The amount of integration that they have
+00:32:30 with like everything is nuts cuz
+00:32:33 everyone's built it. Platforms like
+00:32:35 Terraform and Pulumi are largely built
+00:32:36 around EC2 and EKS and help Kubernetes
+00:32:39 is largely designed around how EKS works
+00:32:42 at this point. Like everything is
+00:32:44 building for EC2. Like if it doesn't
+00:32:46 support EC2, I am sus as hell.
+00:32:48 Guaranteed SLAs, reliability, all the
+00:32:50 things you need there. Fargate's dope.
+00:32:51 [snorts] There's tons of other services
+00:32:53 you can integrate alongside EC2 within
+00:32:55 AWS and externally that are insane. And
+00:32:57 most importantly, no one's ever been
+00:32:58 fired for picking AWS. It's the default
+00:33:00 and it's the default for a reason. It is
+00:33:02 good. But there are negatives. Cost is
+00:33:04 surprisingly higher than competition.
+00:33:06 Their pricing is so annoying that
+00:33:08 usually you go use another service to
+00:33:11 look at it because it's just their
+00:33:13 pricing is
+00:33:14 God, they hide all this info so deep.
+00:33:16 Here we go. Sadly, this chart is doing
+00:33:19 hourly pricing, not monthly. Times 24 *
+00:33:22 30. And there's a reason why. A 2 gig 1
+00:33:25 vCPU box with just EBS storage is $22 a
+00:33:30 month.
+00:33:31 &gt;&gt; [sighs]
+00:33:32 &gt;&gt; If we're talking EKS, you're going to
+00:33:33 want the beefiest nodes you can
+00:33:34 reasonably fit. So you can choose a 190
+00:33:37 core Graviton box. Yeah, it's it's
+00:33:39 pretty nuts. AWS not only charges a
+00:33:43 significantly higher price than what I
+00:33:45 would expect for the tier of hardware,
+00:33:47 they don't really lower those prices. So
+00:33:50 it's kind of just like a fee you're
+00:33:51 paying forever on a box that's probably
+00:33:53 6 plus years old and you're paying as
+00:33:55 though it's brand new. It's bad. It's
+00:33:57 crazy everybody always advertises like
+00:33:59 AWS is the cheap option. It's not. In
+00:34:02 many cases, Vercel is actually cheaper
+00:34:04 than AWS. Just depends on how you're
+00:34:05 using them and if you're doing stupid
+00:34:06 things on either, you can screw
+00:34:08 yourself. It's no surprise Railway comes
+00:34:09 out cheaper as often as they do. So
+00:34:11 yeah, cost is not the thing you are
+00:34:13 saving. Setup isn't the thing you're
+00:34:15 saving either. You basically have to
+00:34:17 build a solution to handle your
+00:34:19 deployments on AWS. There have been
+00:34:21 multiple billion-plus dollar companies
+00:34:23 built just because setting up on AWS is
+00:34:26 too hard. Everything from Terraform to
+00:34:28 Vercel is arguably because AWS sucks to
+00:34:31 config. Dashboard is Cloudflare tier UX.
+00:34:35 It at least works though. It's rare I'm
+00:34:37 on the AWS dashboard and things are just
+00:34:38 outright broken like they are on
+00:34:39 Cloudflare, but getting around it is
+00:34:42 hellish. Oh god, the permissions. I uh
+00:34:45 god, that's so many throwbacks. I I have
+00:34:48 been to hell with IAM. It's so bad. It's
+00:34:51 so [&nbsp;__&nbsp;] bad. I I put this in the same
+00:34:53 bucket honestly as I put GCP and Azure
+00:34:56 now. If you're coming to me or a channel
+00:34:58 or video like this for advice on where
+00:35:00 to deploy, don't deploy to AWS.
+00:35:03 Seriously, don't. We've went over all of
+00:35:05 these options. You hopefully understand
+00:35:08 what the values are for each of them. If
+00:35:10 I was to tier these, I'm going to ignore
+00:35:12 the ones I wouldn't recommend. I'll say
+00:35:14 top wrecks, the ones that I would
+00:35:16 absolutely recommend I think everyone
+00:35:17 should at least consider. Railway,
+00:35:19 Vercel, and Render. All easy S tier,
+00:35:22 you're good. I have a specific need
+00:35:24 tier, I would put Netlify if they have
+00:35:27 some specific integration or their
+00:35:28 queuing stuff works really well for you.
+00:35:30 Cloudflare, if you're willing to deal
+00:35:32 with the compromises around not having a
+00:35:33 proper node environment, very
+00:35:35 beneficial. Or you're just trying to
+00:35:37 micro-optimize for costs at crazy
+00:35:39 scales, really good option as well.
+00:35:41 Maybe Hetzner. It hurts to put it here,
+00:35:43 but if your goal is to have the cheapest
+00:35:45 possible thing with insane free egress
+00:35:49 that's just hosted and you're okay with
+00:35:50 it being slow and unreliable, it can be
+00:35:52 fine. I wouldn't confidently tell you
+00:35:53 like, "Oh, go move that to Hetzner." but
+00:35:55 it is an option worth considering. Oh,
+00:35:57 and Fly. Absolutely fly.io. While it
+00:36:00 might not still exist in a year or two,
+00:36:02 it has some really compelling offerings
+00:36:04 that nothing else does. There's a good
+00:36:05 chance you run into a problem Fly
+00:36:06 uniquely solves, worth considering if
+00:36:08 you do. And then I have the you won't
+00:36:10 listen anyways tier.
+00:36:12 This is for people who watch these
+00:36:14 videos for fun, but can't realistically
+00:36:16 take my recommendations for all sorts of
+00:36:19 different reasons. This is where I put
+00:36:21 most of the AWS offerings like Lambda
+00:36:23 and EC2. I'd also put GCP in here,
+00:36:26 Azure, IBM Cloud, things like that. Like
+00:36:29 if your employer already chose it for
+00:36:31 you, it's fine. And pretty much
+00:36:34 everything else,
+00:36:35 I don't think I can recommend it now.
+00:36:38 If you pick anything here, you're
+00:36:39 probably well set. If you pick anything
+00:36:41 here, I hope you have a good reason. If
+00:36:43 you pick anything here, I hope it was
+00:36:44 your boss that picked it, not you. Now
+00:36:46 you know how I think about these things,
+00:36:48 and hopefully you can now better
+00:36:49 understand why almost everything I
+00:36:50 deploy is on Vercel and Railway, and
+00:36:53 maybe in the future Render as well.
+00:36:55 Yeah.
+00:36:56 And we barely even talked about CDNs.
+00:36:58 What a video. I hope this helps you
+00:36:59 better understand what these platforms
+00:37:01 are, what benefits and negatives each
+00:37:02 have, and maybe just maybe you'll have
+00:37:04 more confidence when you pick the next
+00:37:06 place you host. Let me know how y'all
+00:37:07 feel, and until next time,
+00:37:09 please stop flaming me about Hetzner. I
+00:37:11 really don't care about your $5 VPS.

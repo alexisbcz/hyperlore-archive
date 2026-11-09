@@ -1,0 +1,1509 @@
+[0] Aujourd'hui, on reçoit une légende de la
+[1] tech française. Arthur Mench, cfondateur
+[4] de Mistral AI, la seule entreprise
+[6] d'Europe capable de tenir tête à Open AI
+[9] et au G femme dans leur course à
+[10] l'intelligence artificielle. En à peine
+[12] 1 an, lui et ses deux associés ont
+[14] réussi l'impossible : lever plus d'un
+[16] milliard d'euros, développer des modèles
+[18] d'IA qui rivalisent avec Chagipt et
+[20] transformer leur start-up parisienne en
+[22] une entreprise valorisée 6 milliards
+[24] d'euros. Dans cet épisode exceptionnel,
+[26] Arthur va nous dévoiler les secrets de
+[28] cette success story. Comment trois
+[30] Français ont quitté leur job en or chez
+[33] Google et Meta pour se lancer dans cette
+[35] aventure folle. comment il rivalise avec
+[37] des géants qui ont 100 fois plus de
+[39] puissance de calcul que et surtout la
+[41] guerre des talents qui fait rage en
+[43] colisse entre Mistral et les gars femmes
+[45] pour attirer les meilleurs ingénieurs.
+[47] On va aussi lui demander si d'après lui
+[49] les modèles d'IA ont atteint un plafond
+[51] et qu'est-ce qui nous réserve pour la
+[53] suite. Je suis très excité et honoré de
+[55] pouvoir vous partager cette conversation
+[57] avec Arthur Mench. Mais juste avant,
+[59] j'ai un message pour tous ceux qui
+[60] hésitent à prendre un abonnement chat
+[62] GPT. Notre partenaire du jour, Mammouth
+[64] AI, a eu une idée assez brillante.
+[66] Rassembler tous les meilleurs modèles
+[67] DIAD dans une seule interface et
+[69] derrière un unique abonnement. Pour 10 €
+[71] par mois, vous avez accès aux modèles de
+[72] langage les plus récents O1 Grock dipsic
+[75] et même des modèles de génération
+[77] d'images comme midjourné ou Flux. Quand
+[79] on sait que cumuler tous ces
+[80] abonnements, ça coûterait dans les 80
+[82] 100 € c'est assez imbattable. Si vous
+[84] avez besoin de générer beaucoup d'images
+[85] par mois, ils ont aussi des plans un peu
+[87] plus chers. Le truc cool, c'est que ils
+[88] sont toujours à l'affu des nouvelles
+[89] sorties. Par exemple, ils ont déjà flux
+[91] pour la génération d'images et
+[92] globalement, c'est juste agréable de pas
+[94] avoir à changer d'interface tout le
+[95] temps. Je vous mets le lien vers leurs
+[96] différentes formules en description et
+[98] on reprend. C'est quoi l'élément
+[99] déclencheur déjà pour se dire on va
+[101] créer notre propre société face à ces
+[103] géants quand on est déjà bien installé,
+[105] confortable ? Je pense que il y a il y a
+[107] deux conversations, une en septembre
+[109] 2022 avec Timothé et une en novembre
+[111] 2022 à NIPS qui est la grosse conférence
+[113] euh de machine learning avec euh
+[115] Guillaume où on s'est rendu compte qu'on
+[117] avait des aspirations similaires au fait
+[119] de lancer une entreprise en France et
+[121] que on connaissait pas mal de gens que
+[123] ça intéresserait. Et donc à partir de
+[125] là, c'est un peu le début de l'engrenage
+[127] tout à l'au début, tu te dis : "Cre et
+[130] puis au fur et à mesure chaque jour qui
+[131] passe, tu t'impliques de plus en plus
+[133] émotionnellement dans cette idée. Puis à
+[135] un moment donné, tu es un peu un point
+[136] de non retour parce que en fait, tu es
+[137] plus dans l'idée que dans le travail
+[139] dans ton entreprise actuelle. Mais à
+[141] partir de février, c'est vrai qu'on
+[143] s'est dit bah là, on peut avoir 15
+[144] personnes, on peut aller vite, on sait
+[146] le faire, on peut démontrer que l'Europe
+[148] peut faire des choses intéressantes dans
+[149] le domaine et peut reprendre une
+[151] position de leadership. OK. Et donc
+[153] c'est comme ça que ça s'est fait et à
+[154] partir d'avril on s'est lancé quoi. Donc
+[156] tôt il y a déjà cette idée que le projet
+[158] c'est de faire de lia très performante
+[160] européenne plus ça que juste on se sent
+[164] un petit peu peut-être ralenti par une
+[166] grosse structure au-dessus de nous donc
+[167] MTA Google et on on pense aller plus
+[169] vite tout seul. C'était quoi ? Bon, tu
+[171] avais les deux hein. En fait, on est
+[173] Guillaume Timothé et moi, on travaillait
+[175] sur ce sujet depuis un peu près 2020 et
+[177] on a vu ce qu'on pouvait faire avec des
+[179] petites équipes très concentrées. C'est
+[181] vrai qu'en 2022, ces équipes sont
+[183] devenues moins concentrées parce que
+[185] c'est le moment où le monde a réalisé
+[187] qu'il y avait une opportunité économique
+[189] autour des modèles de langue. Et donc,
+[190] on s'est dit qu'on pouvait bénéficier
+[193] aussi de cet aspect de désorganisation
+[195] pour nous être mieux organisé et fournir
+[197] des choses plus rapidement. Ça se passe
+[199] comment le tout début ? Alors, vous avez
+[202] chacun peut une spécialité. Comment vous
+[204] vous organisez au tout début de la boîte
+[205] ? On vient tous les trois du même de la
+[208] même formation. On a fait la même chose.
+[209] On a tous les trois des tests dans
+[210] machine learning. Donc c'est vrai qu'on
+[212] s'est rapidement spécialisé avec
+[214] Guillaume qui est le scientifique le
+[216] plus fort d'entre nous qui a pris la
+[217] partie scientifique. Timothé qui est
+[219] plus un ingénieur et qui s'est occupé de
+[221] faire toute l'infrastructure et de
+[223] monter l'équipe d'ingénieur produit
+[226] aussi. Et euh moi, j'ai assez vite fait
+[228] l'aspect euh levé de fond, euh l'aspect
+[231] parler avec des clients. Bon, c'est des
+[233] choses que j'aimais bien faire. Donc, je
+[234] me suis voilà, c'est les on s'est
+[236] réparti comme ça assez vite. Et pour
+[238] revenir à comment ça démarre, bah ça
+[240] démarre par une levée de fond en fait
+[241] parce qu'il faut la capacité de calcul
+[243] et il faut la capacité humaine pour
+[245] avancer assez vite et donc on a fait une
+[248] levée de fond en quelques semaines et à
+[250] partir de là, on était parti pour faire
+[252] le premier modèle en septembre.
+[253] C'est-à-dire qu'il y a pas une seule
+[254] ligne de code en fait avant même de
+[256] savoir que c'est bon, il y a une levée
+[257] de fond qui va se faire. C'est un
+[259] domaine où il faut forcément attendre la
+[260] levée de fond si on veut commencer la
+[262] première. Euh tu peux un peu
+[263] paralléliser, commencer à faire du code,
+[265] mais à TR, tu as pas beaucoup de
+[267] leviers, hein. Il vaut mieux avoir une
+[268] petite équipe de d'une dizaine de
+[270] personnes pour aller plus vite. On a
+[271] commencé par la data parce qu'il faut la
+[273] la donner pour entraîner les modèles.
+[274] Donc, il y a beaucoup de travail aussi
+[276] manuel là-dessus à faire et et Guillaume
+[278] Timothé essentiellement avait commencé
+[280] pendant qu'on finissait la levée. Voilà.
+[282] OK. On parlait des des levées de fond.
+[284] Toi, tu as fait Polytechnique, Centrale
+[286] de Paris, l'UNS et un doctorat. Est-ce
+[288] que ça aide quand même à lever des fonds
+[289] alors que vous êtes que trois ou alors
+[292] est-ce que c'est encore plus le le nom
+[294] méta Google ? Tu tu dirais que c'est
+[295] quoi qui aide le plus ? Je pense que ce
+[297] qui a aidé au démarrage, c'est qu'on
+[299] était crédible sur le domaine le plus
+[301] chaud du moment en 2023 et que on avait
+[304] plutôt des papiers qui étaient liés à ce
+[307] domaineel. C'està-dire que moi j'étais
+[309] dans l'équipe qui travaillait à Deepm
+[310] là-dessus. Euh Guillaume Timoté, ils
+[312] étaient à MTA, c'est eux qui ont fait
+[313] lama le premier. Euh et donc cette
+[315] crédibilitélà, elle c'est pas euh ce
+[317] qu'on a fait dans notre jeunesse à
+[318] l'école, hein. C'est plutôt une
+[319] crédibilité scientifique qu'on a
+[321] construit dans notre première partie de
+[322] carrière, on va dire. Et un alignement
+[324] de planète avec euh bah ce qui intéresse
+[326] le plus et les meilleures personnes pour
+[328] le développer en fait. Oui, c'est pas
+[330] effectivement notre crédibilité venait
+[331] aussi du fait qu'on avait une excellente
+[333] équipe de démarrage et qu'on pouvait
+[336] démontrer qu'on qu'on saurait la
+[338] recruter. Et il y a ce jour qui arrive,
+[340] c'est le 27 septembre 2023 où vous
+[342] postez un lien sur votre compte Twitter
+[345] parfaitement inactif et c'est votre
+[347] premier modèle en fait. Donc Mistral 7B.
+[350] Le tweet est vu plus d'un million de
+[351] fois. Vous êtes repris par tous les
+[353] médias américains, tout le monde de LIA
+[355] et en effervescence et s'amuse avec le
+[357] modèle. Il était chargé un million de
+[358] fois mais super vite. Nous, on a vu ça
+[360] de l'extérieur, on a vu cet engouement.
+[362] Vous de l'intérieur c'était comment ?
+[364] Alors déjà c'est le tweet, c'était une
+[366] idée de Guillaume, hein, donc le chief
+[367] scientist pour rendre à César ce qui
+[369] appartient à César. Euh parce que vous
+[372] vous le publiez pas comme les autres. On
+[374] le publie pas comme les autres.
+[374] Effectivement, on a mis à disposition un
+[376] Magnet Link qui permet de le télécharger
+[378] en bit toren. C'est comme ça qu'on a
+[379] parlé la première fois et c'était une
+[381] excellente idée. C'était une journée où
+[384] on avait aussi prévu de faire de la
+[386] communication plus habituelle. Donc moi
+[388] j'étais allé parler au journalistes du
+[389] Figaro et cetera et donc il fallait
+[392] mettre le torrent à une de le matin et
+[395] puis l'embargo était vers 16h. Donc il y
+[398] avait cette période où en fait on avait
+[399] rompu l'embargo mais bon les
+[400] journalistes a priori allaient pas
+[401] comprendre ce qui se passait. Donc ça se
+[403] passait bien. Moi c'est moi qui a posté,
+[405] je crois c'était à 5h du mat. Donc
+[406] j'avais mis un petit réveil parce que
+[407] j'étais pas sûr du schedule scè de de
+[409] Twitter qui s'appel encore Twitter à
+[411] l'époque. Et je l'ai mis et après je
+[413] suis allé me recoucher et ensuite on a
+[414] vu que ça avait bien démarré au
+[415] démarrage. C'est un truc où vous vous y
+[417] attendiez un petit peu ou quand même on
+[419] savait que le modèle était bon. On
+[421] savait que on était largement au-dessus
+[423] de des meilleurs modèles open source que
+[426] on avait visé explicitement cette taille
+[429] là parce qu'on savait que ça tournait
+[430] sur des laptops aussi. Donc donc ça
+[432] voulait dire que tous les hobbyistes
+[433] allaient pouvoir jouer avec et ça n'a
+[435] pas manqué, ça a fonctionné. Donc on se
+[437] doutait que les qu'on allait être
+[438] remarqué. Ce qu'on ne se doutait pas
+[440] c'est que les gens allaient le mettre
+[441] dans des perroquets en peluche et ce
+[442] genre de choses en quelques en un mois.
+[444] Et bah la réception était plus grande
+[446] que ce qu'on espérait. On était très
+[447] content. Il y a un autre truc qui s'est
+[448] passé nécessairement en publiant des
+[450] modèles avec des poids ouverts comme ça,
+[452] c'est que ça laisse la porte à tout ce
+[454] qui est entraînement fine tuning et tout
+[457] le monde s'en est donné à cœur jouis. Je
+[458] pense que c'est un c'était déjà un peu
+[459] le cas sur les modèles de Liama, mais je
+[461] me souviens que c'est un modèle qui a
+[462] été beaucoup réentraîné. C'est quoi les
+[465] les fine tuning que un peu étonnant ou
+[468] curieux dont tu te souviens de ce modèle
+[469] là ou d'autres ? Il y a quelqu'un qui
+[470] s'appelle Technium qui nous avait
+[472] entraîné ce modèle pour parler aux
+[473] morts.
+[475] Je sais plus comment ça s'appelait mais
+[477] il avait fait un fine tuning un petit
+[478] peu ésotérique et le truc marchait
+[482] relativement bien. Donc c'était assez
+[484] marrant. C'est vrai que le cette taille
+[486] là, c'est aussi une taille où tu peux
+[488] fer, même sur des gros PC de gaming
+[490] éventuellement et puis ça coûte pas très
+[492] cher et ça permet de rentrer du style,
+[494] ça permet de faire du roleplay et donc
+[496] les gens se sont donnés à cœur de jouis
+[498] effectivement parce que du coup pour
+[499] expliquer il y a le modèle de fondation
+[501] qui est lui le plus coûteux et le plus
+[502] compliqué et j'imagine qu'il contient en
+[504] gros l'information et après le fine
+[506] tuning c'est conversationnel quoi. C'est
+[508] en fait un bon agent de discussion.
+[510] Ouais, c'est il faut voir la première
+[511] phase comme une compression de la
+[512] connaissance humaine et la deuxième
+[514] phase comme une manière d'instruire le
+[516] modèle à suivre ce qu'on lui demande de
+[518] faire. Donc on le rend contrôlable et
+[519] une manière de le contrôler c'est de le
+[521] rendre de le rendre conversationnel.
+[523] Donc ces deux phases là sont assez
+[523] distinctes effectivement. Et est-ce que
+[525] sur cette deuxième phase, il y a des
+[526] trucs d'indépendants tout seul qui ont
+[528] testé des choses de sur du fine tuning
+[531] et on et voilà ont découvert des bons
+[532] des bonnes techniques ? Ouais, on a
+[534] appris des trucs. Alors je veux pas
+[535] rentrer dans les détails mais il y avait
+[537] de direct preference optimization. C'est
+[539] un peu du jargon mais qu'on avait pas
+[541] fait sur le premier modèle et on a vu
+[544] des gens le faire. On s'est dit ça
+[545] devrait bien marcher sur le deuxième
+[546] modèle et ça a bien marché sur le
+[547] deuxème modèle. Maintenant on fait
+[548] d'autres choses. Mais effectivement une
+[551] des raisons pour lesquelles on a lancé
+[552] la boîte au-delà de l'Europe et cetera,
+[553] c'est aussi l'aspect ouvert et l'aspect
+[556] contribution de la communauté. En fait,
+[558] le les ail entre 20122, ça s'est
+[561] construit les uns par-dessus les autres
+[563] pendant les conférences, les grosses
+[565] boîtes par-dessus les grosses boîtes.
+[566] Puis soudain, quand c'est devenu un
+[568] modèle économique intéressant, les gens
+[570] ont arrêté, les grosses entreprises ont
+[572] arrêté. Et donc, on a essayé de
+[574] prolonger ça un peu avec ce qu'on a
+[576] fait. Oui, aujourd'hui c'est un tu as
+[578] vraiment des deux camps distincts, c'est
+[580] assez particulier sur les d'un côté les
+[583] anthropiques, les Open AI et compagnie
+[585] qui ne publie plus grand-chose. Google
+[586] aussi j'ai l'impression a beaucoup
+[588] ralenti les publications et de l'autre
+[590] côté les Chinois. Bizarrement pourquoi
+[592] les Chinois ils ils sont autant à fond
+[594] dans les modèles open source ? C'est
+[595] quand même curieux non ? Je pense qu'ils
+[596] sont en position de challenger. Ce qui
+[598] est donc l'open source c'est une bonne
+[600] stratégie de challenger. C'est on en est
+[602] je pense la bonne la bonne illustration.
+[604] Je pense qu'ils ont des bonnes
+[605] techniques, ils ont des des bons
+[607] renseignements aussi. Vraiment mais euh
+[609] ils ont beaucoup fait avancer euh la
+[611] science, les nouvelles techniques. C'est
+[612] clairement ceux qui publie le plus
+[613] effectivement. Et tu parlais de la
+[614] position de challenger. Est-ce que Meta
+[615] quand il publie Yama pour la première
+[616] fois, ils sont en position de challenger
+[618] à ce moment-là ? Bah c'est les Timothé
+[619] et Guillaume. Je pense que oui, ils sont
+[621] en position challenger parce qu'ils ont
+[622] pas encore parlé et je pense que avec le
+[624] mouvement que qu'on a perpétué euh avec
+[627] nos modèles en septembre et euh et en
+[630] décembre en particulier, donc euh
+[631] Mistral 7B, Mistral 8X 7B, je pense
+[634] qu'on a lancé cette roue de l'open
+[635] source et donc il y a aussi euh un peu
+[637] une concurrence sur qui fait les
+[639] meilleurs modèles open source et je
+[640] pense que ça bénéficié à tout le monde
+[641] et donc on est ravi d'avoir bien
+[642] participé à ça.
+[644] Régalade. Et qu'est-ce qui fait tu
+[646] penses qu'à ce moment-là, vous avez
+[647] autant d'avance vous ? Après, il y a il
+[649] y a un yoyo avec tout le monde qui qui
+[650] se produit, mais là, il y a un un vrai
+[653] une vraie avance indiscutable, quoi. Je
+[655] pense qu'on connaissait l'importance de
+[656] la donnée euh et on a beaucoup travaillé
+[659] là-dessus. On savait aussi comment
+[663] entraîner le modèle de manière efficace
+[666] parce que on avait 3 ans d'expérience
+[667] chacun dans ce domaine. Donc donc il y
+[670] avait euh des bonnes connaissances et on
+[672] a insisté sur les aspects de
+[674] l'entraînement qui ont le plus de
+[675] leviers, c'estàd la qualité de la
+[676] donnée. Effectivement bah c'est derrière
+[678] un peu tout l'évolution de la recherche,
+[680] j'ai l'impression de temps vert en fait
+[682] il y a que la donnée qui compte grosse
+[684] partie la donnée et la quantité de
+[686] calcul. Mais oui effectivement, il y a
+[687] aussi donc le compute et c'est lié à un
+[689] autre sujet très important, c'est les
+[691] fonds tout simplement. En un an, vous
+[693] avez en tout levé quand même un milliard
+[694] d'euros, ce qui est vertigineux. Vous
+[697] avez aussi sorti plein de nouveaux
+[698] modèles, des Pixral par exemple, des
+[701] modèles un peu différents, multimodo et
+[702] cetera. Comment vous approchez le fait
+[703] que justement en terme de quantité de
+[705] compute par rapport à un méta par
+[707] exemple qui a qui aura la fin de l'année
+[709] 350000 H 100, c'est ça ? Ouais, si je
+[712] dis pas de bêtises. GPU, est-ce que
+[714] justement il y a pas le choix que de
+[715] passer par des très grosses levées de
+[716] fond ? Mais après, comme on pérénise le
+[718] truc, c'est quoi un peu ta ta vision du
+[720] compute quoi ? Nous, notre vision, c'est
+[722] qu'on a besoin de compute mais on a pas
+[723] besoin de 350000 achats. Euh et donc ça
+[726] a été toujours notre test qui qu'on
+[728] pouvait être plus efficace, qu'on
+[730] pouvait en étant focalisé sur le fait de
+[732] faire des des excellents produits et ne
+[734] pas faire plein d'autres choses à côté
+[735] parce que nos concurrents américains,
+[738] ils ont tendance à faire beaucoup de
+[739] choses à côté. La location de
+[740] ressources, c'est une question euh c'est
+[742] une question euh constante chez nous.
+[743] C'est un peu le nerf de la guerre, quoi.
+[744] C'est est-ce arriver à tenir
+[746] l'amélioration des modèles dans le temps
+[748] versus l' cramage de du compute. Ouais,
+[751] il faut euh il faut gérer le budget, il
+[753] faut être intelligent pour pas dépenser
+[755] trop euh et euh tout est une question de
+[758] mettre le curseur au bon endroit et de
+[760] choisir d'avoir les bons compromis. Donc
+[761] c'est pas facile mais je pense que pour
+[763] le moment on a bien réussi on a réussi à
+[764] avoir des modèles qui sont très
+[765] performants avec un niveau de dépense de
+[768] capital qui est quand même très très
+[769] contrôlé. Ouais. Et est-ce que ben
+[771] justement j'ai vu que parmi les vos
+[773] investisseurs dans les derniers rounds,
+[776] je crois, il y a Nvidia. Est-ce que je
+[778] demande ça passe par comme ça des
+[779] acteurs qui eux ont le un peu le le
+[781] contrôle sur le le hardware ou le le
+[784] l'infrastructure ou les data centers ?
+[786] Il y a Microsoft aussi je crois avec qui
+[787] vous a bossé. Est-ce que ça passe aussi
+[788] par ça justement s'entourer des bonnes
+[790] personnes ? Il faut les bons
+[791] partenaires. Il faut les bons
+[792] partenaires de distribution en
+[794] particulier parce que en fait la le
+[797] calcul ça passe souvent par le cloud et
+[799] donc on a comme partenaire tous les les
+[801] fournisseurs de cloud américains parce
+[803] que c'est quand même les plus gros. On a
+[804] aussi des fournisseurs français. On a
+[806] Outscale qui on travaille et puis Nvidia
+[808] c'est un fournisseur quasiment de cloud
+[810] aussi donc à ce titre on travaille avec
+[811] eux. On a aussi faire, on a fait de la
+[813] RED avec eux avec un modèle qui
+[814] s'appelle Mistral Nemo. Imagine, il y a
+[816] des gens qui nous écoutent qui ont pas
+[817] su Est-ce que tu peux nous expliquer
+[818] c'est un c'est quoi un peu aujourd'hui
+[819] la gamme euh les modèles qui sont à jour
+[821] ? Moi j'ai vu que dans les derniers
+[823] mises à jour récent, il y a le large 2.
+[825] Ouais. Alors maintenant, on les numérot
+[826] comme Ubuntu, donc 24.11. OK. OK. Et
+[830] donc celui-là, Mistral Large 24.11, 11,
+[833] il est très fort pour appeler des
+[835] fonctions, orchestrer des choses parce
+[836] qu'en fait les modèles ça génère du
+[838] texte, c'est le l'utilisation de base.
+[840] Mais ce qui est intéressant c'est quand
+[841] il génère des appels à des outils et
+[843] qu'on les utilise comme des
+[844] orchestrateurs comme un peu des systèmes
+[846] d' operating system. Et donc on
+[848] travaille beaucoup sur le sur le fait
+[850] d'avoir des modèles qui puissent être
+[851] connectés à plein d'outils différents
+[853] auquels on peut poser des questions,
+[854] auquels on peut donner des tâches et qui
+[856] vont réfléchir de même aux outils qui
+[857] vont appeler. Et donc on insiste
+[859] beaucoup là-dessus et donc la nouvelle
+[860] version de Mistral large, elle est
+[861] particulièrement forte là-dessus. OK.
+[863] Après il y a il y a eu des mixstral
+[864] aussi. Ça pour comprendre, c'est plutôt
+[867] pour servir pour une entreprise par
+[868] exemple pour servir beaucoup
+[869] d'utilisateurs en même temps. C'est un
+[870] autre type d'architecture qui est
+[872] particulièrement pertinent quand on a
+[874] une forte charge. Donc beaucoup
+[876] d'utilisateurs, donc c'est des choses
+[877] que nous on utilise par exemple. C'est
+[879] mixral parce qu'en fait une sorte de
+[882] serber à h tête quoi. C'est ça. Ouais,
+[883] c'est plusieurs modèles en même temps et
+[886] chaque mot passe sur le modèle le plus
+[889] adapté. Pour plusieurs raisons, ça
+[890] permet de mieux utiliser les GPU. Et
+[892] derrière, il y a les plus petits, il y a
+[894] les petits modèles qui qui passent sur
+[895] les laptops, qui passent sur les
+[897] smartphones et ceux-là, ils sont bah
+[899] particulièrement adapté à des usages de
+[901] hobbyist parce que il y a pas besoin
+[903] d'aller dans le cloud, on peut le
+[904] modifier facilement et puis ils vont
+[905] très vite. C'est aussi pas mal focalisé
+[907] sur cet aspect petit et rapide parce que
+[909] c'est vraiment l'ADN de l'entreprise.
+[911] Nous aujourd'hui, le produit c'est pas
+[913] le modèle. Le produit, c'est la
+[914] plateforme pour les développeurs et donc
+[917] ils choisissent s'ils veulent aller vite
+[919] et être moins intelligents ou aller
+[920] lentement être plus intelligent
+[921] essentiellement. Et puis l'autre produit
+[923] c'est le chat. Donc c'est une solution
+[926] plus front-end qui permet aux
+[927] entreprises de gérer leurs
+[928] connaissances, d'automatiser des choses,
+[930] euh qui permet au à tous les
+[932] utilisateurs, pouvez le tester
+[933] aujourd'hui, d'accéder au web, euh de
+[935] discuter de l'information, euh de de
+[938] générer du code, de générer des images,
+[940] de créer des documents. On a un mode où
+[943] l'interface évolue en fonctionintention
+[945] de l'utilisateur. Donc ça c'est une
+[946] nouvelle interface Home Machine et on
+[948] investit beaucoup là-dessus. Donc le
+[949] produit, c'est euh la plateforme pour
+[951] construire des applications en tant que
+[952] développeur et là-dedans, il y a des
+[953] modèles et puis euh un ensemble
+[955] d'applications euh qui permettent de
+[957] gagner en productivité. C'est un milieu
+[959] qui est super compétitif évidemment euh
+[961] que ce soit, on l'a dit comme sur les
+[963] modèles mais aussi sur tout ce qu'il y a
+[964] autour, sur le comment améliorer
+[966] l'expérience, c'est les interfaces de
+[968] chat et cetera. On a vu les systèmes
+[970] d'interface qui se qui se bougent. Tout
+[971] le monde est un peu en train d'essayer
+[972] de trouver les meilleures solutions à ça
+[974] enropique open et vous évidemment en
+[977] tant que outsider. C'est quoi votre
+[979] cible précise à vous en terme de de
+[981] possibilité d'évolution quand on a des
+[984] des aussi gros acteurs à côté ? C'est
+[985] quoi toi tu penses la direction où vous
+[987] avez un edge quoi ? Nous on a un fort
+[989] edge dans le fait de découpler la
+[991] question de l'infrastructure de la
+[992] question de l'interface. Donc notre
+[994] solution, elle peut être déployée
+[995] partout. Donc elle peut être déployée
+[997] dans le cloud mais elle peut être
+[998] déployée chez les entreprises qui sont
+[999] pas dans le cloud. euh elle peut être
+[1001] déployée sur euh sur des laptops. Donc
+[1004] ça c'est le edge qu'on a construit aussi
+[1006] au-dessus de de l'aspect open source que
+[1007] ça va assez bien avec que les poids des
+[1009] modèles soient accessibles, c'est ça
+[1011] rend facile leur déploiement n'importe
+[1013] où. Donc on a cet aspect portabilité qui
+[1014] est très important. Donc c'est notre
+[1016] première différenciation qu'on a
+[1017] beaucoup utilisé euh cette cette année
+[1019] et puis la la différenciation que on
+[1021] cherche tous, c'est d'avoir la meilleure
+[1023] interface utilisateur. Et en fait, il y
+[1024] a plein de sujets qui sont pas résolus.
+[1026] Euh le fait de d'utiliser plein d'outils
+[1028] en même temps, le fait d'avoir des des
+[1029] agents qui tournent pendant longtemps
+[1031] euh et qui euh prennent euh le feedback
+[1033] des utilisateurs, c'est-à-dire qu'on
+[1035] peut les voir comme des euh des
+[1036] stagiaires, voilà, plutôt des stagiaires
+[1038] auquel il faut faire du feedback pour
+[1039] qu'ils deviennent euh de plus en plus
+[1041] performants. Et donc, on va aller vers
+[1042] ce genre de système de plus en plus
+[1044] autonome qui vont avoir besoin de plus
+[1046] en plus de feedback pour passer de 80 %
+[1049] de performance à 100 % de performance.
+[1050] tout commences à dire tu restes pas
+[1051] constamment derrière lui, attendre qu'il
+[1053] avance quoi. Non, tu lui donnes une
+[1054] tâche, tu regardes ce qu'il a fait, tu
+[1056] lui donnes, tu lui dis euh ce qu'il n'a
+[1057] pas bien fait et puis ensuite euh
+[1059] j'espère que la prochaine fois il le
+[1061] fasse mieux. Mais en fait, c'est plein
+[1062] de questions scientifiques qu'il faut
+[1063] résoudre pour que ça fonctionne et
+[1064] d'interface. Et d'interface. Ouais. Et
+[1066] parce qu'il faut pas du mail en fait,
+[1067] est-ce que on va pas pour l'instant
+[1069] c'est du chat en mode temps réel et tout
+[1070] ça, est-ce que à terme on va envoyer un
+[1072] mail à notre assistant et juste il nous
+[1075] il nous ping quand il a fini quoi. C'est
+[1077] une des formes. Je pense que c'est
+[1078] plutôt l'assistant qui t'envoie un mail
+[1079] en fait. à un moment donné, tu
+[1081] travailles et puis toutes les 2 heures
+[1083] il dit "J'ai" et cetera. Donc oui, il y
+[1085] a il y a un aspect passé de de du
+[1087] synchrone à la synchrone qui est très
+[1089] important et qui pose plein plein de
+[1090] questions de d'interface parce que bon,
+[1092] le mail c'est peut-être pas la meilleure
+[1093] interface mais il y en a certainement
+[1094] d'autres qui sont plus intelligentes. La
+[1096] question de quelle est l'interface pour
+[1098] donner le feedback ? Quelle est
+[1099] l'interface pour sélectionner ce qui est
+[1100] préférable pour l'humain ? Ça c'est on y
+[1103] travaille. Voilà. Ouais. J'allais me
+[1104] dire je suis persuadé que enfin je sais
+[1106] pas mais quand on regarde le le chat la
+[1109] discussion c'est pas forcément
+[1111] l'interface du tout ultime pour
+[1112] dialoguer avec un un LM quoi. Ça a
+[1114] beaucoup évolué. Maintenant c'est tu
+[1116] vois tu peux chatter avec le chat et
+[1117] puis il peut décider de te mettre dans
+[1118] un document et là tu travailles avec lui
+[1120] sur la construction d'un document. Tu
+[1121] peux lui demander d'aller chercher des
+[1122] sources et tu vois les sources. Tu peux
+[1124] retourner tu peux aller regarder ce que
+[1126] des humains ont écrit et demander des
+[1128] résumés par exemple. Et donc en fait ce
+[1130] que ça crée ce que ça permet les
+[1132] génératifs c'est une espèce de liquidité
+[1134] de ta manière d'accéder à la
+[1135] connaissance. Donc tu peux regarder euh
+[1137] tout un site web et tu tu peux dire
+[1139] condense-moi ce site web en en deux
+[1141] phrases. Et je pense qu'il reste encore
+[1143] beaucoup de choses à faire pour que le
+[1144] modèle te permette d'apprendre beaucoup
+[1146] plus vite et de charger de la
+[1147] connaissance beaucoup plus vite. Je sais
+[1148] pas si tu as vu mais je crois que c'est
+[1149] Versal qui avait fait des démos assez
+[1150] marrantes de composants web qui se
+[1153] construisaient en fonction de la
+[1156] nécessité. tu te posais une question et
+[1158] il te générait sur la météo par exemple,
+[1160] il te générait un composant du enfin de
+[1162] d'interface graphique à la volée quoi.
+[1164] Il voit le vuljet. Ouais, c'est ça. En
+[1165] fait, la question c'est une question en
+[1167] backend et en fontaine. En backend,
+[1168] c'est quel outil appelé euh pour aller
+[1170] chercher de l'information ou pour
+[1171] actionner des choses. Et en frontine,
+[1173] c'est quelle interface il faut montrer à
+[1174] l'utilisateur étant donné son intention
+[1176] actuelle. Et donc ce que ça veut dire
+[1177] c'est que les gros logiciels avec 50000
+[1179] boutons, je pense notamment au montage,
+[1181] ça va progressivement disparaître parce
+[1182] que tu peux identifier son état d'esprit
+[1185] au moment où il est en train de créer et
+[1187] adapter les boutons, lui donner
+[1188] exactement ce dont il a besoin. Et donc
+[1190] ça change vraiment complètement la
+[1192] manière dont les interfaces vont se
+[1193] comporter dans les années qui viennent.
+[1194] Ouais. Justement, on parlait de de cette
+[1196] interface et de comment on y accède. Tu
+[1199] parlais du fait que vous êtes déployable
+[1200] un peu n'importe où. Il y a un truc que
+[1202] moi je constate en parlant avec gens
+[1203] autour de moi, c'est que on on a un peu
+[1205] une génération de d'employés
+[1207] d'entreprises frustrés actuellement
+[1209] parce que chez eux, ils peuvent utiliser
+[1211] des trucs incroyables, genre voilà, les
+[1213] meilleurs modèles disponibles, ils vont
+[1215] sur Open AI et cetera. Une fois au
+[1217] travail, on leur interdit souvent
+[1218] l'utilisation de des meilleurs outils et
+[1221] ils doivent parfois ils se retrouvent
+[1222] avec des versions un peu bridées ou des
+[1224] copilotes un peu ou avec la pl du temps
+[1227] rien du tout. Ça vient d'où ça ? Ah, ça
+[1229] vient du fait que les systèmes des euh
+[1232] génératifs, ça touche beaucoup aux
+[1233] données et les données de nos
+[1234] entreprises, c'est quand même assez
+[1235] important. Et donc, c'est euh là-dessus
+[1238] que nous, on a cherché à trouver des
+[1239] solutions, c'est faire en sorte que les
+[1241] données, elles restent dans
+[1241] l'entreprise, euh que nous, en tant que
+[1243] fournisseur DI, on n'est pas avoir ces
+[1245] données-là. Ça permet bah justement
+[1248] d'avoir le niveau de sécurité, le niveau
+[1250] de gouvernance dont tu as besoin sur les
+[1251] données. Et donc progressivement, on va
+[1254] résoudre ce problème et nous, je dirais
+[1256] que c'est un des problèmes essentiels
+[1257] qu'on cherche à résoudre. Faire en sorte
+[1258] que l'IT dans les entreprises soit
+[1260] confortable pour amener le chat à tous
+[1262] leurs employés et qu'ils arrêtent d'être
+[1264] frustrés. dans les exemples de d'outils
+[1265] que tu donnais, il y a un truc qui
+[1268] revient enfin dont on qu'on a pas
+[1269] explicité mais qui est en fait super
+[1271] important, c'est le la notion d'objectif
+[1273] d'avoir un mode des modèles qui sont
+[1275] capables d'effectuer des tâches et sur
+[1277] la route d'arriver à créer euh des
+[1280] étapes et à appeler les bons outils
+[1282] comme le frais, un bon stagiaire, tu as
+[1284] pas nécessairement à lui expliquer
+[1286] l'ensemble des étapes qu'il doit faire.
+[1287] Tu lui dis "Regarde les prochains vols
+[1289] pour New York et prends-en un."
+[1291] tu as pas besoin de lui expliquer étape
+[1293] par étape, seconde par seconde ce qui ce
+[1295] qu'il doit effectuer. Aujourd'hui, on a
+[1298] des modèles qui peuvent commencer
+[1299] appeler des outils mais qu'on sent un
+[1301] peu limité dans leur capacité à en
+[1303] utiliser plus plusieurs d'affilés
+[1304] notamment, enfin les trucs vraiment
+[1306] utiles, vraiment stylés. Comment tu
+[1307] penses que ça va évoluer ? Est-ce que
+[1309] c'est une une frontière qui va qui peut
+[1312] être bientôt franchie ? Est-ce que
+[1313] l'année prochaine on aura résolu ce
+[1314] problème et on pourra faire 20 étapes
+[1316] avec beaucoup de fiabilité ou est-ce
+[1317] qu'on est encore loin d'y arriver ? Je
+[1319] pense que c'est la frontière euh tout le
+[1321] monde euh essaie de la pousser, ça va
+[1323] pas se débloquer d'un coup parce que en
+[1324] fait euh maîtriser un outil prend du
+[1327] temps à un humain, ça prend aussi du
+[1328] temps à un modèle. Il faut il faut des
+[1330] démonstrations, il faut du feedback
+[1332] parce que la première fois il va se
+[1333] tromper et une notion d'expertise qu'il
+[1336] faut disyer de l'entreprise vers les
+[1337] systèmes des et ça va pas prendre ça va
+[1340] pas se faire de manière magique. Il faut
+[1341] il faut tous les systèmes en place, il
+[1343] faut les métasystèmes. C'estàd qu'il
+[1344] faut que les les employés dans les
+[1346] entreprises soient capables de fournir
+[1348] du signal supplémentaire au système des
+[1350] pour qu'il s'améliore. Donc ça va
+[1352] progresser. On va avoir de plus en plus
+[1353] d'outils utilisables en même temps et
+[1355] des modèles qui peuvent raisonner de
+[1356] plus en plus. Mais ça va être progressif
+[1360] et pour que ça marche vraiment très
+[1361] bien, il faut y mettre du sien. Il faut
+[1363] investir dès maintenant pour illustrer
+[1364] ça. On voit que Open AI dans leur
+[1366] dernier modèle dans les O1 et compagnie,
+[1369] c'est plus des améliorations
+[1370] significatives sur le modèle en
+[1372] lui-même, mais il tente des trucs de le
+[1374] faire boucler sur lui-même, faire des
+[1375] chaînes de pensées, je sais pas comment
+[1376] on dit en français. Chaînes de pensées.
+[1378] Ouais, c'est pas mal. Non,
+[1380] est-ce que selon toi, c'est un peu un
+[1382] signe que on a atteint une sorte de
+[1384] plafond ? C'estàd que sur justement sur
+[1387] cette évolution exponentielle, on a bien
+[1389] optimisé par rapport à leur taille la
+[1392] manière dont marchent les modèles.
+[1393] Maintenant justement, il faut trouver
+[1394] autre chose. Tu as un paradigme qui est
+[1396] de plus en plus saturé. Je pense qu'il
+[1398] est pas encore saturé qui est le ce
+[1399] qu'on appelle le pré-entraînement, donc
+[1400] la compression de la connaissance
+[1401] humaine. Certaines manière, tu es une
+[1403] connaissance disponible humaine qui est
+[1406] qui a une certaine taille et à un moment
+[1407] tu as fini de la compresser. Et c'est là
+[1408] où il faut aller chercher du signal
+[1410] supplémentaire. Donc du coup chaîne de
+[1413] pensée, utilisation de plusieurs outils,
+[1415] utilisation de signal expert par dans
+[1417] les entreprises. Donc il y a pas de
+[1419] saturation du système, on sait comment
+[1420] aller à l'étape suivante mais sur
+[1422] l'aspect pré-entraînement
+[1424] oui, on commence à savoir bien le faire
+[1426] collectivement. Tout le monde sait à peu
+[1427] près faire la même chose et donc c'est
+[1429] plus tellement là où est la compétition.
+[1431] La compétition, elle est sur les
+[1432] interfaces. La compétition, elle est sur
+[1434] avoir des des modèles qui tournent
+[1436] pendant plus longtemps. Ouais. OK. Moi
+[1437] je trouve c'est un peu dur de se faire
+[1439] un avessus justement quand on est on ne
+[1441] maîtrise pas le la stack euh
+[1443] scientifique entre guillemets derrière
+[1444] le les Transformers et compagnie mais
+[1446] j'ai l'impression qu'il y a un peu ce
+[1447] débat entre est-ce que justement c'est
+[1449] juste une question de compute de données
+[1452] qui va repousser cette cette barrière
+[1454] d'autonomie ou est-ce que c'est vraiment
+[1457] un problème intrinsèque à la manière
+[1459] dont le modèle est designé et que juste
+[1461] le fait que ce soit de la prédiction du
+[1463] prochain token qui peut avoir une petite
+[1465] un petit pourcentage de partir en quelqu
+[1467] cahette à chaque fois, ça rend
+[1468] nécessairement trop compliqué, trop
+[1470] difficile la planification long terme.
+[1472] Je sais que par exemple, il y a des gens
+[1474] comme Yan Loquel, on en parle souvent
+[1475] qui sont un peu défenseurs de cette
+[1476] vision là que l'I ou je sais pas comment
+[1478] on l'appelle, elle est cachée encore
+[1479] derrière des découvertes scientifiques,
+[1481] quoi. Ouais, c'est une bonne question.
+[1483] Ce qui est vrai, c'est que travailler
+[1486] sur des architectures qui induisent des
+[1488] biais de réflexion humaine, c'est
+[1490] souvent utile. Ça a été utile pendant
+[1492] les 12 dernières années de se dire
+[1494] comment nous on réfléchit, essayons de
+[1496] d'écrire ça en mathématiques et de faire
+[1499] en sorte que les modèles copient un peu
+[1500] ce qu'on sache, ce qu'on sait faire. Ce
+[1502] qu'on observe aussi, c'est que toute
+[1504] l'intelligence qu'on peut mettre dans
+[1505] les architectures, il suffit de mettre
+[1508] deux fois plus de comput et ça
+[1509] disparaît. Donc en fait le paradigme
+[1511] qu'on a suivi dans les cinq dernières
+[1512] années, c'est plutôt de se dire prenons
+[1514] une architecture extrêmement simple qui
+[1516] prédit des séquences et passons là à
+[1518] l'échelle. Allons chercher le plus de
+[1519] données possibles. Allons chercher les
+[1521] données multimodales, allons chercher de
+[1522] l'audio, ce genre de choses. Et euh et
+[1525] passons là à l'échelle et voyons ce que
+[1526] ça donne. Et en fait ce que ça donne,
+[1527] c'est que c'était en tout cas plus
+[1529] intelligent en terme d'allocation de
+[1531] ressources de de travailler sur le
+[1532] passage à l'échelle que de travailler
+[1533] sur des architectures subtiles. Alors
+[1535] est-ce que c'est toujours le cas
+[1537] maintenant commence à avoir saturé la la
+[1539] quantité de données qu'on s'est
+[1540] compressé ? Je pense que la question est
+[1541] ouverte. Le sujet, c'est plus tellement
+[1543] une question d'architecture, c'est
+[1544] plutôt une question d'orchestration.
+[1546] C'est-à-dire comment on fait
+[1547] effectivement pour que les modèles se
+[1548] rappellent eux-mêmes, qu'ils
+[1550] interagissent avec des outils qui durent
+[1551] longtemps, qui qui fassent du
+[1554] raisonnement en plusieurs étapes. Et ça
+[1557] bah ça reste les mêmes modèles. Au fond,
+[1559] c'est la brique de base mais le système
+[1561] complet, c'est pas juste le modèle.
+[1562] C'est le modèle qui sait se rappeler
+[1563] lui-même, qui sait réfléchir, qui sait
+[1565] interagir avec tout son environnement,
+[1567] qui sait interagir avec les humains.
+[1568] Donc la complexité des systèmes, elle
+[1570] devient beaucoup plus grande que juste
+[1572] un simple modèle de génération de
+[1573] séquence. Ça reste le moteur mais c'est
+[1576] pas du toute la voiture quoi. OK. Mais
+[1578] donc tu es plutôt optimiste sur le fait
+[1579] que ce soit le bon moteur quoi. C'est le
+[1581] bon moteur. Après ce qu'on il y a une
+[1583] règle en machine learning qui dit
+[1585] essentiellement augmenter la capacité de
+[1586] calcul ça augmente la qualité des des
+[1589] systèmes et tu as deux solutions pour le
+[1591] faire. Soit tu compresses de la donnée,
+[1593] soit tu fais de la recherche. C'estàd tu
+[1594] vas échantillonner, tu vas demander au
+[1596] modèle de tester 1000 trucs et de
+[1598] sélectionner l'échantillon qui marche le
+[1600] mieux et tu vas le renforcer renforcer
+[1601] là-dessus. Et donc là, on commence de
+[1603] plus en plus à basculer dans le mode
+[1605] recherche plutôt que dans le mode
+[1606] compression. La personne qui a dit ça,
+[1608] c'est Richard Sutton dans un blog post
+[1611] que je vous invite à lire qui s'appelle
+[1612] The Beater Leon. Est-ce que toi il y a
+[1614] une démo un peu de bout en bout euh d'un
+[1617] truc qui a même si parfois ça ça marche
+[1620] pas et cetera, mais d'un d'un truc où tu
+[1621] as été impressionné où ça a vraiment
+[1623] très bien marché d'une suite d'étape. Tu
+[1625] vois, un truc où qui t'a fait un peu
+[1627] sentir comme Iron Man quoi avec Jarvis ?
+[1629] Ouais, avec le chat, on a connecté euh
+[1631] les IPI ouvertes de Spotify là et donc
+[1633] tu peux lui parler, lui demander des
+[1634] playlist et euh et décrire ta playlist,
+[1636] ça te crée ta playlist et ça la joue
+[1638] pour toi. Donc euh fait des choses
+[1639] intéressantes. Alors, c'est juste un
+[1640] seul outil ça. Euh non, là on a vu des
+[1642] choses très intéressantes, c'est une
+[1644] fois qu'on a connecté le web, ça te
+[1645] permet d'avoir toutes les informations
+[1647] en live et très vite, tu peux te créer
+[1649] tes mémo pour savoir qu'est-ce qu'il
+[1650] faut aller dire à tel client en fonction
+[1651] des informations qu'il a eu. Et donc la
+[1653] combinaison des outils ensemble, ça fait
+[1656] émerger des cas d'usage que tu avais pas
+[1657] forcément prévu quoi. Si tu as connecté
+[1659] le web, si tu connectes ton mail, tu
+[1661] peux faire plein de choses en même
+[1662] temps. Et si tu connectes ta
+[1664] connaissance interne et le web, tu peux
+[1666] combiner ces information de manière un
+[1668] peu imprévisible et donc la quantité de
+[1671] cas d'usage que tu couvres est un peu
+[1673] près assez exponentielle avec au nombre
+[1675] au nombre d'outils et donc ça c'est
+[1676] assez magique, je veux dire. OK. Moi
+[1678] effectivement, je trouve qu'il y a un
+[1679] côté un peu vertigé où tu tu te dis mais
+[1681] on va pouvoir construire des trucs de
+[1682] fou et mais du coup ça fait que c'est un
+[1684] peu dur de s'imaginer quoi, de se dire
+[1687] ça va ressembler à quoi concrètement
+[1688] genre le métier de développeur de
+[1690] quelqu'un qui doit faire des scénarios
+[1692] de de LLM justement ça ressemble à quoi
+[1694] ? Je dirais que de plus enfin c'est un
+[1696] outil euh qui augmente le niveau
+[1698] d'abstraction requis par les humains.
+[1699] Donc euh en tant que développeur et tu
+[1701] vas continuer à réfléchir au problème
+[1702] que tu cherches à résoudre pour les pour
+[1704] euh tes utilisateurs, tu vas continuer à
+[1706] réfléchir aux architectures, au niveau
+[1708] euh qui euh remplissent euh ton tes
+[1711] contraintes, ton cahier des charges.
+[1713] Après, est-ce que tu vas continuer à
+[1715] coder tes applications en JavaScript ?
+[1717] vraisemblablement non parce que les
+[1718] modèles ils arrivent bien à générer des
+[1720] applications simples et des applications
+[1722] de plus en plus compliquées. Donc tous
+[1724] les sujets très abstraits qui vont
+[1726] nécessiter de la communication avec des
+[1727] humains. Le métier d'ingénieur c'est
+[1728] aussi un métier de communication. Faut
+[1729] aussi comprendre quelles sont les
+[1730] contraintes de chacun. Ça ça va pas être
+[1733] facilement remplaçable mais en revanche
+[1735] tout l'aspect je t'aide à faire tes tes
+[1738] tests unitaires, je te fais ton
+[1740] application Pixel Perfect à partir d'un
+[1742] design. Euh ça je pense que ça devait
+[1744] devenir de plus en plus automatiser
+[1747] euh au au développeurs. Mais c'est c'est
+[1749] le cas pour tous les métiers. Ouais.
+[1751] Est-ce qu'on a une intuition de comment
+[1752] ça se fait que les modèles ils sont
+[1753] aussi sensibles au code ? Parce qu'on
+[1756] pourrait se dire par exemple, je veux un
+[1757] modèle qui est super fort en français,
+[1758] en anglais. Bon, qui sache le Python et
+[1761] le JavaScript, a priori ça n'est pas
+[1762] utile. Or, c'est pas du tout ce qu'on
+[1764] observe de ce que j'ai compris. Alors,
+[1766] c'est une très bonne question. Euh et
+[1768] c'est vrai que on observe un genre de
+[1769] transfert, c'est-à-dire que entraîner
+[1771] son modèle sur beaucoup de codes, ça lui
+[1772] permet de raisonner mieux. Alors, je
+[1774] suis pas le mieux placé pour en parler,
+[1775] faudrait que ça soit plutôt Guillaume,
+[1777] mais la réalité, c'est que le code c'est
+[1779] plus ça a plus d'information que le
+[1781] langage. Il y a il y a plus de réflexion
+[1782] qui qui est passée dans le langage,
+[1783] c'est plus structuré et donc s'entraîner
+[1786] à générer du code, ça force le modèle à
+[1788] à raisonner à plus haut niveau que
+[1792] l'entraîner à générer du texte. Euh et
+[1794] donc il sait raisonner sur du code et
+[1796] donc quand il voit du texte, c'est aussi
+[1797] raisonner sur du texte. Et c'est vrai
+[1799] qu'il y a ce transfert un peu magique
+[1801] qui je pense une des raisons pour
+[1802] lesquelles les modèles sont devenus
+[1803] largement meilleurs dans les deux
+[1804] dernières années. Ça sert aussi parce
+[1806] que en fait le tuas tu as beaucoup plus
+[1808] de de code base qui sont plus longs
+[1811] qu'un qu'un livre. Comprendre une code
+[1813] base, c'est plus long que lié un livre.
+[1814] Et donc un peu le maximum sur lequel tu
+[1816] peux t'entraîner euh pour faire un
+[1819] modèle qui comprend le le contexte long,
+[1821] c'est euh bah des livres du 19e siècle.
+[1823] Et le maximum sur lequel tu peux
+[1825] t'entraîner pour faire du code, c'est
+[1828] millions de lignes de c'est des millions
+[1829] de lignes de Ouais, c'est ça. de projet
+[1831] open source, quoi. Et donc c'est plus
+[1833] long et ton modèle, il peut raisonner
+[1835] plus longtemps. Je pense que c'est une
+[1836] des intuitions. Je te propose de parler
+[1838] maintenant un petit peu de talent et de
+[1841] des gens qui font que justement vous
+[1843] faites ce que vous faites déjà. Pourquoi
+[1844] est-ce que vous avez décidé à la base de
+[1846] mettre Mistral à Paris ? Aujourd'hui, ça
+[1848] peut paraître un peu plus évident entre
+[1850] guillemets. On sait que voilà,
+[1851] l'écosystème est super vivant.
+[1852] Justement, on va on va en parler, mais
+[1854] est-ce que c'était une décision à cette
+[1857] époque- làà une décision évidente entre
+[1858] se mettre là ou à San Francisco même
+[1860] avec une une boîte française entre
+[1862] guillemets ? Je pense que c'est on s'est
+[1864] même pas posé la question en réalité.
+[1865] Moi j'avais aucune envie de de partir de
+[1867] Paris. Ma compagne est fonctionnaire
+[1869] donc elle a elle a quelques contraintes.
+[1871] Timothé il avait aucune envie de partir
+[1873] de France aussi et Guillaume non plus.
+[1875] Donc je pense que en réalité si j'ai
+[1878] réfléchis je crois qu'on s'est jamais
+[1879] posé la question. On savait aussi que
+[1881] les gens dans notre réseau en fait, c
+[1882] des Parisiens hein euh des Parisiens des
+[1884] gens à Londres aussi ces personnes qu'on
+[1885] pouvait recolter c'était des gens euh
+[1887] locaux. Donc euh c'était une évidence de
+[1889] démarrer à Paris. Comment ça fait ça que
+[1891] Paris en particulièrement fourmis autant
+[1894] de bons ingers et scientifiques ? Je
+[1896] pense parce qu'il y a un écosystème en
+[1898] machine learning. Il y a un écosystème
+[1899] avec l'INRIA, avec l'académique d'un
+[1903] côté et puis les les laboratoires privés
+[1905] que Yankin a contribué à créer. Un
+[1907] laboratoire fer historiquement qui avait
+[1909] été créé en 2015 je pense. Tu as
+[1913] Deepmind qui en réaction s'était
+[1915] installé là-bas et qui avait un énorme
+[1917] centre et un énorme centre de compétence
+[1918] à Londres grâce à Deep Mine. Et donc en
+[1921] fait ce qui fait les talents euh dans la
+[1923] tech, c'est le fait que tu es une
+[1924] entreprise qui soit déjà passée par là
+[1925] avant qui a grossit et que tu as des
+[1928] gens qui qui ont qui ont appris dans
+[1929] cette entreprise là qui ensuite SM. Et
+[1931] donc on a bénéficié de ça. On a
+[1932] bénéficié des des entrepreneurs euh qui
+[1935] voulaient bien nous rejoindre et qui se
+[1937] sont formés là-bas. Très bon écosystème
+[1939] privé et très bon écosystème public
+[1941] aussi parce que il y a beaucoup de nos
+[1943] chercheurs de nos chercheurs qui ont
+[1945] fait des tests dans l'académique en
+[1946] France aussi. Le résultat est assez
+[1947] dingue quand même parce que dans les
+[1948] rien que les conventions di les trucs
+[1950] j'ai vu Oliama par exemple qui a
+[1951] organisé un meetup ou un truc comme ça
+[1953] et tu vois les images on se dit pas que
+[1955] ça enfin je sais pas tu dis pas que ça
+[1956] apparaît quoi et en fait ça bouge de fou
+[1958] quoi. Il y a plein de gens dans ce
+[1960] domaine en particulier qui sont des
+[1961] français. Yan Lequin est un français
+[1963] mais en dessous des gens plus jeunes que
+[1965] lui il y a beaucoup de gens qui ont fait
+[1968] Thomas Sialom par exemple. Ouais. Bah
+[1970] par exemple à MTA Paris aussi des gens
+[1973] très forts. À Deepm Paris, il y a des
+[1975] J'ai plein d'amis à débaucher pour
+[1976] l'instant. J'ai plein d'amis. Je pense
+[1978] qu'on a débauché les gens qu'on pouvait.
+[1980] Euh mais c'est terminé assez. J'ai plein
+[1982] d'amis qui sont français qui sont encore
+[1984] là-bas. Ils finiront peut-être par créer
+[1985] leur boîte. De manière générale,
+[1987] l'Europe et la France en particulier a
+[1989] les bonnes compétences. Il y a les
+[1991] bonnes écoles. Il faut être fort en math
+[1993] et fort en informatique pour faire
+[1995] scientifique en intelligence
+[1996] artificielle. Et de fait, on a les les
+[1998] bons tuyaux de formation. Et c'est quoi
+[2000] les arguments aujourd'hui ? Moi, je
+[2001] viens de sortir de ma thèse en en ML.
+[2004] Euh qu'est-ce qui fait d'après toi que
+[2006] je vais plutôt décider d'avenir chez
+[2007] Mistral versus chez Meta ou chez Deep
+[2011] Mind ? En sortant de master à Paris, je
+[2013] pense qu'on est de loin le meilleur
+[2014] centre de formation pour faire le cœur
+[2017] de la science en intelligence
+[2018] artificielle. Il y a pas de structure
+[2020] équivalente même en Europe sur ce qu'on
+[2022] fait. Il y a 50 60 scientifiques chez
+[2025] nous euh qui sont tous euh extrêmement
+[2027] bien formés. Et donc euh en sortant de
+[2029] master, je pense c'est le meilleur
+[2030] endroit parce que en 6 mois euh ils sont
+[2033] formés. C'est aussi un excellent endroit
+[2034] pour nous parce qu'on va récupérer des
+[2036] gens juniors, on a une bonne marque avec
+[2038] eux, on leur propose une excellente
+[2040] formation, ils nous rejoignent et en
+[2041] fait ils sont très très performants au
+[2042] bout de 6 mois et euh ils ont plein
+[2044] d'idées, ils sont extrêmement créatifs,
+[2045] ils ont 23 ans, ils ont toute l'énergie
+[2046] qu'il faut et donc on les euh on les
+[2049] utilise, on doit beaucoup de ce qu'on a
+[2051] proposé à des gens qui sont très jeunes
+[2053] et donc on encourage tous les gens en
+[2055] master à venir nous rejoindre. On a
+[2056] plein de place et on adore les former.
+[2058] J'ai appris tout à l'heure d'ailleurs
+[2060] que après notre émission qu'on avait
+[2062] fait sur Mistral, il y a eu une une
+[2063] recrue. Tu te souviens ? Tu sais pas
+[2065] quel genre de profil ? Si si, c'est un
+[2066] ingénieur, c'est pas un scientifique,
+[2068] c'est un tout va bien. On n pas très
+[2070] content. OK, parfait. Tu consaillerais
+[2072] quoi toi à des gens qui sont peut-être
+[2074] moins avancés ou qui voilà qui
+[2076] réfléchissent à à ce qu'ils veulent
+[2077] faire, qui voi bien qu'il y a quelque
+[2078] chose qui se passe dans l'IA. Euh est-ce
+[2080] que d'après toi, c'est trop tard entre
+[2082] guillemets dans le sens où ça va être un
+[2084] un écosystème très saturé où est-ce que
+[2086] tu penses que c'est encore possible et
+[2087] qu'est-ce que tu conseillerais comme
+[2089] ouais comme choix de d'étude de trucs à
+[2091] aller explorer ? Est-ce qu'il faut faire
+[2092] des modèles de langage comme tout le
+[2093] monde ou est-ce que justement il faut
+[2095] essayer de sortir un petit peu de de la
+[2097] bulle ? C'est quoi ton ton conseil ?
+[2099] Non, je pense qu'il faut réfléchir au
+[2100] système qu'on crée avec. Nous, on crée
+[2102] des systèmes de gestion de la
+[2103] connaissance, mais il y a plein de
+[2104] systèmes verticalisés dans les sciences
+[2106] de la vie, dans je sais pas
+[2108] l'architecture, dans la conception
+[2111] prordinateur qui ne demande qu'à être
+[2113] pris avec des nouveaux systèmes. Le
+[2115] montage vidéo aussi. Et donc se dire que
+[2118] la technologie, elle va continuer à
+[2119] avancer. les technologies horizontales,
+[2121] elles vont être de plus en plus
+[2121] performantes. Euh ça ouvre de nouvelles
+[2124] opportunités d'automatisation, de
+[2126] nouvelles opportunités de création de
+[2128] logiciel intéressant, de création de
+[2130] services complètement différents pour
+[2132] les utilisateurs. Et donc partir des
+[2133] besoins utilisateurs, partir de de un
+[2136] peu du rêve logiciel de demain auquel on
+[2139] la machine auquelle on va parler et qui
+[2141] va faire tout ce qu'on veut à sa place,
+[2143] je pense c'est un bon point de départ.
+[2144] Euh on choisit sa verticale et puis on
+[2147] se dit est-ce que les modèles
+[2148] aujourd'hui peuvent résoudre ce problème
+[2149] ? S'ils peuvent pas résoudre ce
+[2150] problème, peut-être qu'il faut les
+[2151] personnaliser, peut-être qu'il faut
+[2152] aller un petit peu plus profondément et
+[2154] là-dessus, on peut aider, on peut les
+[2155] aider à le faire. On a tous les outils
+[2157] qui permettent de faire les
+[2158] personnalisations verticalisées. Nous,
+[2159] on a parlé avec Microsoft des
+[2161] conséquences que ça avait dans la
+[2162] recherche de matériaux, par exemple.
+[2163] Ouais. Et tu te dis "Mais c'est quoi le
+[2165] à la base ? On parle de modèles qui
+[2166] génère des images du texte et cetera et
+[2168] en fait on découvre des grâce à ça entre
+[2170] autres, on découvre des matériaux.
+[2171] Est-ce qu'il y a des toi des trucs comme
+[2172] ça soit dans vos partenaires actuels ou
+[2174] dans les trucs que toi tu as vu qui qui
+[2176] t'ont aussi frappé ? Voilà, la
+[2177] découverte de matériaux. Alors, c'est
+[2178] les mêmes techniques, c'est pas les
+[2179] mêmes modèles. Parce que en fait, ce
+[2181] qu'on fait, c'est qu'on séquence de
+[2182] manière générale, il y a plein de
+[2183] problèmes qui se résolvent en séquençant
+[2185] en on sérialise de manière générale le
+[2188] problème et les la découverte de
+[2190] matériaux, c'est de la chimie. Donc, on
+[2192] peut séraliser les les molécules
+[2193] chimiques et demander au modèle de les
+[2195] prédire. Après, le paradigme, je prédis
+[2198] des séquences et j'ai plein de séquences
+[2199] sous la main euh de données
+[2201] particulières. Il marche en chimie, euh
+[2204] il marche en médecine, il marche
+[2206] certainement en sciences de la vie
+[2207] aussi. Nous, on travaille pas là-dessus,
+[2208] mais on est ravi de travailler de d'être
+[2210] partenaire avec des start-ups qui font
+[2212] ça. Ouais. Et là où peut-être comme tu
+[2214] disais, on arrive à à une fin de
+[2216] d'exponentiel éventuellement sur le
+[2217] texte, il y a peut-être plein d'autres
+[2219] domaines où en fait le transfert euh est
+[2222] fait que commencer quoi. Sur le texte,
+[2224] on n'est pas du tout à saturation en
+[2226] fait parce que la la prochaine étape,
+[2228] c'est d'avoir des modèles qui appellent
+[2229] plein d'outils et donc du coup, ils
+[2230] deviennent beaucoup plus intelligents
+[2232] que juste des générateurs de texte. Et
+[2234] un des outils qui peuvent appeler, c'est
+[2235] des simulateurs par exemple. Donc la
+[2237] boucle de travail du concepteur de
+[2239] turbine du de la personne qui travaille
+[2242] sur un nouveau médicament, elle va
+[2243] complètement changer dans les années qui
+[2244] viennent. Et ça vient de à la fois des
+[2246] modèles spécialisés de prédiction de
+[2248] molécules par exemple, mais ça vient
+[2250] aussi de l'interface avec la
+[2251] connaissance que qu'on est en train de
+[2252] recréer. Tu tu vas pouvoir parler avec
+[2254] ton ordinateur et dire est-ce que tu
+[2256] peux me simuler une turbine qui
+[2257] ressemble à celle-là mais un peu plus
+[2258] grande et fais-moi plusieurs essais et
+[2260] dis-moi celle qui marcherait la mieux.
+[2262] Et donc la manière d'itérer le
+[2264] l'ingénierie finalement ça va aussi
+[2266] beaucoup changer de nature dans les
+[2267] années qui viennent. Ah c'est hyper
+[2268] intéressant parce que effectivement les
+[2269] trucs auquel on pense rapidement c'est
+[2271] tu parlais de simulateur bah le
+[2272] simulateur de code tout simplement. Ça
+[2273] c'est des trucs qui se font un peu déjà
+[2274] c'est le plus facile à simuler parce que
+[2275] c'est ça reste au sein de la la machine
+[2277] ça il y a pas de monde extérieur et donc
+[2279] on voit déjà un peu le une soundbox par
+[2281] exemple qui peut exécuter un bout de
+[2282] code et on voit si ça marche si ça
+[2284] marche pas. Ça c'est des trucs qui
+[2285] existent. Le raisonnement et le fait
+[2287] d'avoir un modèle qui génère du code qui
+[2288] est ensuite exécuté. on y travaille pour
+[2290] prochainement. Et donc c'est une grosse
+[2293] porte d'entrée vers des des cas d'usage
+[2294] complexe. Tu as un espace ouvert de
+[2296] d'outils à appeler maintenant parce que
+[2298] tes outils, c'est tes librairie. Le
+[2299] niveau de contrôle aussi que tu dois
+[2300] mettre sur les modèles qui qui ça
+[2302] devient plus compliqué à à évaluer parce
+[2304] que c'est plus ouvert, plus le monde est
+[2305] ouvert, plus c'est difficile à évaluer.
+[2307] Mais clairement, on va vers ça. Un
+[2308] modèle avec un exécuteur de code, c'est
+[2311] beaucoup plus performant qu'un modèle
+[2312] sans exécuteur de code. dès qu'on
+[2313] commence à parler d'outils d'ut
+[2315] d'exécuter des trucs du code, euh moi je
+[2317] j'entends tout de suite des d'autres
+[2319] profils dans l'écosystème de Lia qui
+[2321] sont euh dans la frange très euh très un
+[2324] peu alarmiste de comment on pourrait
+[2326] évoluer l'éolia et euh des possibilités
+[2329] que Nia devienne rogue et prennent son
+[2331] indépendance. Tu parles de exécuter du
+[2333] code, elle sortirait, on l'imagine
+[2335] sortir de la boîte. C'est quoi toi ton
+[2337] avis là-dessus ? Est-ce que euh pour
+[2339] être caricatural, c'est un peu un moyen
+[2341] de de mettre en place des régulations
+[2343] pour pour canasser tout ça ou est-ce
+[2345] qu'il y a vraiment une de des questions
+[2347] à se poser ? Il y a des questions à se
+[2349] poser sur comment on fait du nouveau
+[2350] logiciel avec des modèles qui sont
+[2352] fondamentalement
+[2354] imprévisibles. C'est-à-dire que par
+[2356] essence ce qui génère c'est aléatoire.
+[2359] Euh ça dépend de l'entrée. Tu peux pas
+[2361] en tant qu'humain prédire ce que le
+[2362] modèle va sortir. Tu veux quand même
+[2364] faire du logiciel avec euh et un
+[2365] logiciel par essence euh avant de le
+[2367] mettre à disposition du marché, tu peux
+[2368] vérifier que il couvre tous tes cas euh
+[2371] et qu'il y a pas de bug. Et donc la
+[2373] question de faire en sorte que ton
+[2374] système qui est repose sur des LLM est
+[2376] pas de bug, c'est une question
+[2377] difficile. C'est une question de
+[2378] contrôle, c'est une question
+[2379] d'évaluation et finalement pour nous la
+[2382] question de sûreté en anglais ça dit
+[2384] safety. C'est d'abord une question
+[2385] d'évaluation. C'est d'abord une question
+[2387] d'avoir les bons outils pour regarder
+[2388] que vérifier que ça fonctionne et si ça
+[2390] fonctionne pas, avoir les bons outils
+[2391] pour pour corriger ça. Un des outils
+[2393] qu'on met à dispo euh et qui est utile
+[2395] pour ça, c'est si tu veux contraindre
+[2398] l'espace des possibles de ton modèle et
+[2400] de ton système, tu veux tu contraints
+[2402] l'espace des entrées. Donc tu mets une
+[2403] modération sur le type de question que
+[2405] le l'utilisateur peut poser et comme ça
+[2407] soudain, tu passes deun système qui peut
+[2409] répondre à toutes les questions à un
+[2410] système qui peut répondre que aux
+[2411] questions qui sont intéressantes pour le
+[2412] logiciel que tu crées. Et donc pour
+[2414] nous, on voit vraiment l'aspect sûreté
+[2416] au niveau du système lui-même et comme
+[2418] un problème d'intégration continue,
+[2420] comme un problème de test. Enfin, il
+[2421] faut répondre à la question comment on
+[2422] construit les logiciels déterministes
+[2425] qui tournent sur des sur des systèmes
+[2427] fondamentalement stocastiques. Ça c'est
+[2428] la première chose. Ensuite, oui, il y a
+[2430] de la science-fiction euh et puis euh tu
+[2433] as quelques entreprises aux États-Unis
+[2435] qui ont un intérêt à dire au régulateur
+[2438] euh écoutez cette technologie, elle est
+[2439] quand même un peu trop compliquée, un
+[2441] peu trop difficile à comprendre, un
+[2442] petit peu trop dangereuse. Imaginez que
+[2443] le truc s'indépent indépendant. Bon, tu
+[2446] vas dire ça à les gens qui comprennent
+[2447] pas forcément exactement ce qui se passe
+[2449] peut se dire "Ah oui, peut-être que si
+[2451] on donnait ça à trois personnes euh ou à
+[2454] deux personnes euh aux États-Unis, bah
+[2456] on contrôlerait euh tout ce qui se passe
+[2457] et puis il y a pas de problème, quoi."
+[2459] Mais nous, on pense que c'est faux.
+[2460] C'est-à-dire que avoir deux entités ou
+[2462] encore pire une entité qui contrôle tout
+[2465] euh tous les systèmes et qui ouvre sa
+[2468] porte à des auditeurs auxquels ils
+[2470] montent ce qu'ils veulent, on pense que
+[2471] c'est pas la bonne solution. La bonne
+[2472] solution en sûreté logiciel, c'est
+[2475] l'open source de manière générale. On
+[2477] l'a montré en cyber, on l'a montré sur
+[2479] les systèmes les plus fiables
+[2480] aujourd'hui, les operating systèmes les
+[2481] plus fiables, c'est Linux. Le fait
+[2483] d'avoir le plus d'eux possible sur une
+[2485] technologie, le fait de la distribuer le
+[2486] plus possible, c'est une manière de
+[2488] faire en sorte que le contrôle de cette
+[2489] technologie soit sous un contrôle
+[2490] démocratique. Et donc voilà, nous c'est
+[2493] ce qu'on dit. Et puis quand on entend
+[2495] euh les Doomers euh raconter autre
+[2497] chose, alors il y a des gens qui sont de
+[2498] bonne foi. Euh il faut le reconnaître
+[2500] qu' qu'ils ont vraiment peur que c'est
+[2502] des choses qui vont se passer et puis il
+[2503] y a surtout beaucoup de gens qui sont
+[2504] pas du tout de bonne foi. Je pense qu'
+[2506] il est important de de vérifier d'où ils
+[2509] viennent quand ils parlent. Ça doit pas
+[2510] être simple parce que en face l'argument
+[2512] il est super facile à comprendre
+[2513] justement quand tu disais pour quelqu'un
+[2514] qui ne n'est pas forcément adepte du
+[2516] sujet, on te dit voilà un outil
+[2518] dangereux. Est-ce que il faudrait pas
+[2520] éviter qu'on le mette dans trop de main
+[2521] ? tu pars déjà avec un truc un peu un
+[2523] peu dur à défendre quoi. L'atout, on a
+[2526] un atout historique c'està-dire que
+[2527] c'est pas la première fois qu'on a ce
+[2528] débat. On a eu ce débat pour l'internet.
+[2530] L'internet ça aurait pu être un truc
+[2531] contrôlé par trois entreprises qui
+[2533] auront qui auraient fait leur propre
+[2534] net, qui auraient refusé de standardiser
+[2536] les choses et en fait finalement il y a
+[2538] eu suffisamment de pression. À un moment
+[2540] donné le régulateur s'est dit "Ouais, on
+[2542] va on va faire en sorte que ça soit
+[2543] standardisé." Et donc internet, ça
+[2545] appartient à tout le monde maintenant.
+[2546] Il aurait suffi que des personnes
+[2547] différentes fassent des choix
+[2548] différents, quelques personnes et on
+[2550] serait dans une situation où euh en fait
+[2553] il y a il y a trois trois W garden non
+[2556] interopérables. Ça aurait pu être la
+[2558] même chose pour le end toend encryption.
+[2560] Ça c'est un autre exemple. À une époque,
+[2562] c'était considéré comme une arme et
+[2564] c'était sous il y avait un contrôle des
+[2565] exports de des États-Unis en fait. Ce
+[2568] qui est fou maintenant et en fait on se
+[2569] pose la question maintenant des sur les
+[2570] poids. Euh il y a les les parfois
+[2572] certains régulateurs qui se posent cette
+[2574] questionlà mais ça paraît fou pour le N2
+[2577] Encryption. nous ce qu'on pense c'est
+[2578] que dans 10 ans, ça paraîtrait
+[2579] complètement fou pour des poids d'un
+[2580] modèle parce que c'est tellement
+[2581] infrastructurel, c'est tellement une
+[2583] ressource qui doit être partagée par
+[2584] tout le monde, cette compression de la
+[2586] connaissance et cette intelligence que
+[2588] c'est pour nous c'est criminel de la
+[2590] laisser entre les mains de deux entités
+[2592] qui sont pas du tout sous contrôle
+[2593] démocratique. Et pour donc défendre
+[2595] cette vision-là, que du coup le contrôle
+[2596] doit avoir lieu un peu plus tard dans la
+[2598] chaîne en fait au moment de l'interface
+[2599] par exemple ou par l'entreprise
+[2601] vis-à-vis de son de son client, tu vas
+[2603] notamment au Sénat, on t'a vu euh on t'a
+[2606] vu sur YouTube parler au Sénat. Euh ça
+[2608] fait quoi de parler d'essayer
+[2609] d'expliquer ce que c'est un modèle, un
+[2611] dataset, un LM à des sénateurs ? C
+[2614] intéressant euh c'est il y avait des
+[2617] bonnes questions peut-être posé par des
+[2619] gens qui comprenaient un peu moins la
+[2620] technologie, on va dire, mais je pense
+[2623] que c'est important de manière générale,
+[2625] c'est des représentants des citoyens et
+[2628] il faut qu'ils comprennent que c'est une
+[2629] technologie qui va affecter les
+[2630] citoyens. Donc nous, on est prêt à
+[2632] investir du temps parce que mieux c'est
+[2634] compris, plus on comprend que c'est
+[2636] aussi un enjeu de souveraineté, c'est
+[2637] aussi un enjeu culturel, c'est un enjeu
+[2638] d'avoir des acteurs comme nous et pas
+[2640] que nous he mais des acteurs comme nous
+[2641] sur le sol européen. Parce que si c'est
+[2642] pas le cas en fait le sujet c'est que on
+[2645] a une dépendance économique énorme aux
+[2647] États-Unis et ça elle est très très
+[2650] dommageable à long terme. Et donc le
+[2651] fait d'aller parler aux gens qui font
+[2653] les lois, aux gens qui derrière vont
+[2654] aussi parler avec leurs citoyens,
+[2655] comprennent leur leurs angoisses et
+[2657] cetera, c'est une manière de
+[2660] dédramatiser cette technologie. C'est
+[2662] une technologie qui qui va apporter
+[2663] beaucoup de bénéfices dans l'éducation,
+[2665] dans la santé, dans la manière dont on
+[2667] travaille. Et il faut que les
+[2669] représentants de la démocratie
+[2671] française, de la démocratie européenne,
+[2672] de la démocratie américaine et
+[2674] conscience de de savent de quoi il
+[2676] s'agit. Moi, je dois dire que
+[2677] personnellement, j'avais pas tellement
+[2678] prévu de faire ça en démarrant la boîte,
+[2680] mais il faut faire entendre savoir parce
+[2682] que sinon le vide le vide est comblé euh
+[2685] par des gens qui ont pas forcément des
+[2686] intérêts euh alignés avec euh la
+[2689] démocratie et certainement pas aligné
+[2690] avec ce que nous on essaie de faire. Si
+[2692] vous avez pas suivi l'histoire du Visus
+[2694] Challenge ou comment un papyrus a été
+[2696] décrypté par un étudiant en IA, allez
+[2698] voir cette vidéo, c'était vraiment
+[2700] passionnant.

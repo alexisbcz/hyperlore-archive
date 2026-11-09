@@ -1,0 +1,2308 @@
+[0] You have to remember that open source is
+[2] extremely expensive, extremely hard to
+[4] do. We really try to do our best. We
+[6] work with other vendors in making all
+[8] these projects better. But I do get a
+[10] lot of delight from knowing that one day
+[13] some competitor
+[14] will take all of this
+[16] and that's great. It's so much better
+[18] for humanity and so much better for
+[19] civilization than
+[21] if they had to start from scratch again
+[23] and again and again and again.
+[25] Today on the Eric Reese show, I'm joined
+[27] by Guillermo Rauch, CEO and founder of
+[30] Vercel, the company powering some of the
+[32] biggest names on the internet from
+[34] OpenAI to Nintendo.
+[36] Under his leadership, Vercel has grown
+[37] to over $200 million in annual revenue
+[40] and become a cornerstone of modern web
+[42] infrastructure.
+[43] They've got their fingerprints all over
+[45] the AI revolution.
+[47] In this conversation, Guillermo shares
+[49] how growing up in Argentina with limited
+[51] access to technology led him to discover
+[53] the world-changing power of open source,
+[56] how that obsession helped him break into
+[57] Silicon Valley, and why building in
+[59] public has been Vercel's ultimate
+[61] retention.
+[62] We also dive into his vision for the AI
+[64] cloud, the future of software powered by
+[67] agents, and even vibe coding. Plus his
+[69] philosophy of recursive founder mode,
+[71] empowering every team member to think
+[73] and act like a founder.
+[75] If you've ever wondered how open source,
+[77] cloud, and AI converge to create
+[79] generational companies,
+[81] this episode is for you.
+[82] Here's my conversation with Guillermo
+[84] Rauch. All right, Guillermo, thank you
+[86] for taking the time to have this
+[87] conversation.
+[89] I'm so glad to be here.
+[91] Okay, I want to jump right in because
+[93] one of the things I've been obsessed
+[94] with lately is the way that people are
+[96] taught to build companies um leaves them
+[99] blind to all kinds of externalities. So,
+[102] you know, obviously we've heard about
+[103] plenty of examples of companies that do
+[105] pollution or they do something bad for
+[106] their customers and they don't have to
+[108] pay the consequences of that. And so,
+[110] we've a lot of company building is
+[111] focused on that. But the thing I've been
+[112] obsessed with lately is it also leaves
+[114] us blind to positive externalities. That
+[117] is things that we do that don't have any
+[119] apparent like immediate profit-making uh
+[122] purpose for the company and yet enable a
+[124] huge company to be built on the trust
+[127] that that creates. And of course, open
+[129] source to me is the number one thing
+[131] that people are blind to. They don't see
+[133] how powerful it can be. I feel like you
+[135] have been obsessed with open source for
+[137] a lot of years. And I just I wonder like
+[139] you didn't have since you didn't come to
+[141] this from a traditional like business
+[143] building background, I wonder if you
+[145] feel like that is part of why you were
+[147] able to see this possibility. And maybe
+[149] just like give us a sense of like how
+[150] did you first discover open source? How
+[152] did you figure out that that was going
+[153] to be, you know, such a big part of the
+[155] future of technology? Yeah, I'm glad
+[157] you're pointing this out because it's
+[158] something I think about a lot. Open
+[159] source is this really powerful and it
+[162] still feel kind of underrated
+[165] >> Underrated, absolutely.
+[166] >> kind of effect almost of capitalism like
+[168] the way that companies are cooperating
+[169] at scale. So, I'll give you a bit about
+[172] my story.
+[173] When I was trying to learn how to
+[175] program,
+[176] I had a hard time getting started with
+[178] tools that were considered to be
+[180] advanced, but the barrier to entry was
+[182] like really really really high.
+[185] Uh the compilers, the tools, the IDEs,
+[188] everything was proprietary. Yeah.
+[190] >> And I was growing up in Argentina
+[192] in a very humble, you know, household in
+[195] a very humble neighborhood in the in the
+[197] outskirts of Buenos Aires.
+[199] And obviously, I mean, we we had just
+[201] barely been able to buy a computer,
+[203] buying tools to program the computer was
+[205] like from American companies who in the
+[208] you might have heard of the dollar to
+[209] Argentinian peso problems like
+[211] completely
+[213] intractable.
+[214] Uh and when I discovered open source, I
+[217] but my dad and I like were obsessed with
+[219] this idea of like how can we hack this
+[221] computer? How can we do more with it?
+[224] And what kind of computer was it? I got
+[225] to know. It was um basically like the
+[228] the the you know, when you had like the
+[230] the the CPU tower and the and the CRT
+[233] monitor and uh Pentium Pentium era or
+[237] 486?
+[237] >> Pentium. Pentium era, yeah. I had you
+[239] pegged. Had you pegged. And Windows 95.
+[242] So, that that places me I was born in
+[244] 1990. So, like I think it was like seven
+[247] or eight years old when we first got
+[249] that computer. And that was So, the
+[251] first problem was
+[253] getting software running on it. Yeah.
+[255] >> And then building software.
+[257] So, my dad had this awesome idea of like
+[258] could you build your own software? And
+[260] then
+[261] so the idea was very very like impactful
+[264] in my mind, but the how
+[266] really difficult. What was your dad's
+[268] background? How did he come to
+[270] >> an industrial engineer. So, he he would
+[272] always like to think in terms of like
+[273] systems. And then he kind of fell in
+[275] love with the idea that software was
+[277] going to eat the world and replace He
+[279] would make jokes about my degree's
+[281] useless and this software thing is going
+[282] to be way bigger. Like my mom was a
+[284] chemical engineer. She wasn't like
+[287] drinking that Kool-Aid yet, but my dad
+[289] would always also tell her Engineering
+[291] in the house, definitely.
+[294] >> background in the house and get your
+[297] degree as a way of which is actually
+[299] kind of ironic given my
+[301] dropping out of high school later story,
+[303] but the the idea in the household was
+[305] their parents were even from a lower
+[308] class family,
+[309] very challenged economically. And so,
+[312] their, you know, way to escape that was
+[314] getting the degree in the public
+[316] university, becoming an engineer. But
+[318] then for me, it was software.
+[321] And so, getting to program the computer
+[323] was so freaking difficult. Even just to
+[325] get a hello world I know. I remember.
+[328] And uh I fell in love with platforms and
+[331] operating systems that made programming
+[334] a first-class citizen. Meaning this is
+[336] not just a thing for consuming, this is
+[339] also a platform for building. Yeah. And
+[341] Windows was not that.
+[343] Linux was that. And so, when I installed
+[346] Linux onto the computer,
+[348] I well, now now the tools are not only
+[350] free and open source, they come with a
+[353] computer. Riddle me that. Like how cool
+[355] is that? Oh, yeah. And so, for me open
+[358] source
+[358] >> Red Hat Red Hat Linux on a CD, probably.
+[361] >> Hat Linux on a CD was kind of the thing
+[363] that made Linux palatable enough that we
+[365] could even get it installed. How did you
+[368] get the CD? I want to know how you got
+[369] the CD. The CD came from a
+[372] um
+[373] magazine. I still remember So, if you go
+[376] to Argentina, there is a maybe there's
+[377] not there anymore, but they they had a
+[379] good life. There would be all these like
+[380] magazine kiosks on the streets. They
+[383] actually look really cool. Kind of like,
+[385] you know, you sometimes see a telephone
+[386] booth and you're like, "Oh, that's so
+[388] like cute. That's so iconic."
+[390] Uh this was Argentina with the magazine
+[392] stands. And we saw one that had the
+[395] Linux penguin. I I remember it like it
+[398] was yesterday. And
+[399] >> Wow.
+[399] it came with a CD to install. The the
+[402] hotness of the time was graphical user
+[405] interfaces to Linux because Linux grew
+[407] being basically low-level system, a
+[409] kernel, right? And the and the the
+[412] pedantic thing that people always point
+[414] out is, "Oh, it's not just Linux, it's
+[415] GNU Linux."
+[417] It's the kernel plus tools. Yeah.
+[421] And so, this is all very bare-bones. And
+[423] what people really wanted was a turnkey
+[425] solution.
+[426] And so, Red Hat came out. It was the
+[428] first thing we tried. I actually could
+[430] not find my footing on it.
+[433] It almost felt like I was
+[435] dealing with like easy mode Linux. And
+[437] there was something in the Linux
+[438] communities that I started to join which
+[440] is it was an elitism to like what
+[443] distribution do you use?
+[444] >> Oh, yeah. Yeah, yeah.
+[446] But Red Hat did get me more into this
+[448] hacker mindset
+[450] in tinkering more with the computer in
+[452] dual-booting operating systems so that
+[454] you get a computer.
+[456] How cool would it be if it can run Linux
+[458] and run Windows so that my mom can still
+[460] find some utility in the computer that
+[462] we just spent a lot of money on. And so,
+[464] I got into dual-booting Windows and
+[466] Linux.
+[467] But the Debian distribution of Linux was
+[470] when I kind of really became like a
+[472] full-time hacker and I fell in love with
+[474] it. Yeah. But um open source really was
+[477] about opening up this new world of
+[479] creation,
+[481] having the ability to fork other
+[483] people's work. So, one of the my most
+[485] successful early programming ventures
+[488] was the fact not that I started a
+[489] project entirely from scratch. You can't
+[491] do that realistically when you're like
+[493] 10 years old. But it's the fact that I
+[495] was able to copy
+[497] and download source that already existed
+[500] and work on top of it. That was
+[502] revolutionary for me.
+[503] Yeah. And so, the combination of tools
+[505] that were there and free and available
+[507] plus the fact that there was all there
+[510] was all of this examples and templates
+[514] and projects that I could just download
+[516] and run
+[517] was was really what opened a lot of
+[519] possibilities for me. So, a lot of
+[522] people in the tech industry have an
+[524] origin story like this. You know, maybe
+[526] on a different not everyone would wind
+[527] up on Debian, you know, people some
+[529] people were free BSD or whatever it was.
+[531] Um so so, you know, of course people
+[532] come from different eras and on
+[534] different hardware and different
+[535] software, but this open source was the
+[536] pathway into technology for so many
+[538] people. And yet, frankly, very few of
+[541] them have contributed anything
+[542] meaningfully back
+[544] to that community. And what I've seen
+[546] over the course of my career is, you
+[548] know, there was a time when using open
+[550] source was controversial in business.
+[552] You know, cuz what about the licensing?
+[553] What about this? What about that? And
+[555] people felt the need to own and operate
+[556] their own software.
+[558] And there was kind of a
+[559] a recognition that that doesn't make
+[560] sense. Of course, you should take
+[561] advantage of this incredible commons.
+[564] But I feel like the idea that you should
+[565] then be a steward of that and give back
+[567] to it has not really penetrated into
+[570] most tech companies. And so, I wonder
+[572] how did you like
+[574] At what point did you get the idea that
+[575] one day you would have a chance to
+[576] contribute back into that community?
+[579] Yeah, contributing was very natural to
+[581] me because
+[582] the the amazing thing about open source
+[584] is that you're you're always learning.
+[588] You're always improving the software.
+[590] Anything that you don't like, you can
+[593] customize yourself. So, it's a really
+[594] powerful thing. And when you use
+[596] open-source software,
+[598] you have this natural gravitas to get
+[600] closer to the people that build that
+[602] software.
+[603] You can send a patch, you can go and ask
+[605] a question. The The how it works is not
+[609] just fixed manuals and documentation. In
+[612] fact, the very first thing that people
+[614] can contribute to open-source with is
+[616] making a documentation fix.
+[619] So, if you're using a project and you
+[621] look up something and it's not quite
+[623] perfect, go and open a pull request,
+[627] which is sort of how you send a a
+[629] proposal of a fix
+[631] to that maintainer, and then that starts
+[634] building community. Mhm. So, that's how
+[636] I got started contributing. So, I I My
+[640] my journey was that I started out trying
+[642] a lot of different back-end programming
+[644] languages, low-level programming
+[646] languages, but I fell in love with the
+[648] web,
+[649] and I fell in love with the presentation
+[651] layer. So, I've always been sort of a
+[653] design-centric person. Like, I I love
+[656] software that looks and feels good.
+[659] Uh and the the ironic thing about this
+[662] is that I actually ended up migrating
+[663] from Linux to Mac OS
+[665] when I was a teenager because Mac OS
+[668] found this balance between that
+[669] hackability that we talked about and
+[672] being able to install compilers and
+[673] developer tools, etc. It builds on
+[676] Darwin, which is a Unix-like operating
+[678] system, but it had this beauty of the
+[681] I mean, perfect user experience and
+[684] everything is well integrated and I'm
+[686] not fighting the drive the kernel
+[688] modules. In fact, one of the
+[691] one of my biggest points of pride
+[693] growing up was when I finally were was
+[695] able to compile the right module
+[698] for the kernel
+[699] to support our internet connection at
+[701] home. This is like a big Like, I finally
+[704] was able to
+[705] >> Finally, yeah, exactly.
+[706] >> I upgraded from dial-up to DSL and I
+[708] needed to
+[709] dynamically load a Linux kernel module
+[713] with a utility called modprobe.
+[716] Um and so, going through that journey, I
+[719] learned a lot, but at one point, I was
+[721] starting to build products for people. I
+[723] was starting to do freelance work for
+[725] people. I was starting to help my family
+[727] financially with all the things that I
+[728] learned.
+[729] And I find myself always fighting this
+[731] like user experience layer. I just need
+[733] things to be more ergonomic and
+[734] streamlined. Yeah. And so, I migrated to
+[737] the Mac. At about that time, I started
+[739] contributing to this project called
+[741] MooTools, which was building a library
+[745] for better user interfaces
+[747] that happened to have a lot of
+[749] influence. And so, this is the beautiful
+[750] thing about open-source. So, you create
+[752] a project, and then, lo and behold,
+[754] tomorrow it's becoming foundational to
+[757] some great new company.
+[759] And so, MooTools was that for Facebook.
+[762] I was 17, actually, when I started
+[764] contributing to this thing, I was 15, 16
+[766] years old. Wow. And I was starting to
+[768] have impact
+[770] in source that would inspire and find
+[773] its way into companies like Facebook,
+[775] who ended up becoming one of the largest
+[776] companies in the world.
+[778] And I was just some random guy in
+[779] Argentina. And so, contributing to
+[781] open-source opens up all the all of
+[783] these doors. Obviously, you have to
+[784] select the right project. You have to
+[786] make meaningful contributions. This
+[788] little group of
+[789] JavaScript people were a little like
+[791] hard to access. Like, the bar to
+[793] contribution was pretty high. Like, you
+[795] had to like This is not my first rodeo
+[797] even contributing to open-source,
+[800] but that was an example of how
+[802] open-source for me started blending into
+[805] business, started blending into having
+[808] like commercial outcomes, it started
+[810] building into hey, this is not just a
+[812] toy project, this is something that
+[813] could be on the on the critical path of
+[815] the future of the internet. So, how did
+[817] you wind up in Silicon Valley from
+[819] Argentina?
+[821] Yeah, so that project really was
+[823] pivotal.
+[824] Uh not just because of the Facebook
+[826] outreach. I was like super flattered
+[827] that a recruiter from Facebook in the
+[829] early days reached out, and then they
+[830] found out, oh, never mind, you're 17 and
+[832] you're not
+[833] and you're not even in the United
+[834] States.
+[835] Yeah.
+[836] >> And
+[837] uh but then, a startup based out of
+[838] Switzerland said, oh, I'm also going all
+[840] in on MooTools,
+[842] and we need to recruit experts.
+[844] So, let's go find out where the experts
+[846] are. And so, the what you do, which by
+[848] the way, Vercel even still does. Like,
+[850] when we want to recruit talent, we look
+[853] for open-source contributions. Of
+[855] course.
+[855] >> And so, they went to the, you know,
+[857] about page of the open-source project,
+[859] they went to the Git commit history, the
+[862] sort of logs of who's contributing to
+[865] this project. They found me.
+[867] And they did take a bet.
+[868] Uh some people from the MooTools team
+[870] helped me, but like, they were like,
+[871] yeah, this guy, never mind his age, he
+[873] really knows his stuff. And so, this
+[876] company from Switzerland hired me. I I
+[879] had a lot of influence and impact over
+[881] their front end. So, I kind of rewrote
+[884] it from scratch. I was super productive.
+[886] They were really happy with me. They
+[888] opened an office here in Silicon Valley,
+[890] and that led to me not just realizing
+[893] that my open-source code could have a
+[896] lot of influence in like building my own
+[898] personal reputation, but when I came to
+[900] Silicon Valley at the right time and
+[902] right place, I discovered that
+[904] open-source could also be the fuel for
+[906] building startups. Mhm. So, I started my
+[909] first startup, and that's when like my
+[911] biggest open-source projects started
+[913] coming out. One was called socket.io,
+[917] which for example, when Notion
+[920] launched, when Perplexity launched, when
+[922] even Microsoft on the Office on the web
+[925] launched, they all used socket.io as one
+[926] of the critical components.
+[929] >> And Mongoose, and we made really big
+[931] bets into this emerging project called
+[933] Node.js. So, that's when like
+[936] open-source and startups
+[938] that that world started coming together
+[941] for me.
+[942] When did you think that you could become
+[943] an entrepreneur? Like, how did the idea
+[945] come into your mind? Yeah, that's All
+[947] credit goes to San Francisco. You know,
+[950] you could find
+[952] breadcrumbs of the idea even in my early
+[955] days. Like, I had business ideas a lot.
+[958] Like, in middle school, I was burning
+[961] CD-ROMs. I was like selling in the
+[964] literally in the playground, I remember.
+[966] I was like making
+[967] CDs of music that people liked, and then
+[971] selling the CDs to my to my
+[974] I was actually selling it to the
+[975] parents.
+[976] I was using my fellow students as a
+[979] conduit.
+[980] >> They would bring They would bring the
+[982] the pesos, the the little bills to the
+[985] playground, and I would give them It was
+[986] almost like a like a drug deal
+[988] transaction. You were their CD-ROM
+[989] dealer. That's hilarious. Just
+[991] Don't don't let the teacher see it.
+[992] Here's the CD.
+[994] Uh actually, I would have gotten in
+[995] trouble for things like that.
+[997] So, always had like, if I if I really
+[999] spent a lot of time thinking to my past,
+[1000] I would have all these like little
+[1001] business ideas. I was very
+[1003] entrepreneurial. I had sold even webs I
+[1006] remember I sold a website on eBay one
+[1007] time.
+[1008] I I built that whole website on top of
+[1010] open-source technologies. It was really
+[1013] cool, and then I sold it for like, I
+[1015] don't know, like $600. How did you get
+[1016] the idea to put it on eBay?
+[1018] So, I think it was because It might have
+[1021] been the Justin.tv thing. At some point,
+[1023] someone said like, we sold a website.
+[1026] Oh, no. Before Justin.tv, I think the
+[1029] founders had sold So, the story is
+[1032] Twitch
+[1034] was previously Justin.tv, was
+[1036] previously, I think, a calendar app or
+[1038] something like that.
+[1039] >> Yeah. That's right. And they'd sold it
+[1041] on eBay. That might have been too late,
+[1042] but this is the thing. At one point,
+[1044] people were selling websites on eBay.
+[1046] Yeah. I was like, I should I could sell
+[1047] a website.
+[1047] >> that. You would have heard of that on
+[1048] the internet, basically, and you thought
+[1049] you would try.
+[1050] That's amazing. A lot of this was
+[1052] basically because of those communities
+[1053] that I was building. So,
+[1055] you need to find yourself in the right,
+[1057] you know, the business adage of like,
+[1059] you have to find yourself in the right
+[1060] room.
+[1062] On the internet, you have to find
+[1063] yourself in the right chat room.
+[1065] The right Discord, the right IRC server,
+[1068] the right Slack. A lot of cool things
+[1070] happen when you're in the right chat
+[1072] room, essentially.
+[1073] >> create tremendous value. And again,
+[1075] we're completely blind to that. Or in
+[1078] the right forum. So, I was I was a big
+[1080] into like Linux forums, and there was a
+[1081] Linux forum for Argentina,
+[1083] and I built great relationships there.
+[1086] People would give me tips.
+[1088] Oh, there's this new platform you should
+[1089] try out. There's this new website you
+[1091] should try out. And so, someone at some
+[1092] point, I think, pointed out the eBay
+[1094] thing. It was actually I didn't go deep
+[1096] into it. It was actually quite prolific.
+[1097] I like built the website, uh sold it,
+[1099] moved on to the next thing. So, I was
+[1101] always kind of entrepreneurial, but
+[1103] Silicon Valley
+[1104] and San Francisco is like that
+[1107] inspiration for like, you can do things
+[1110] and you can start a companies on
+[1111] steroids. It's hard for me to explain
+[1113] just how different it was. And I had
+[1115] this interesting contrast. So, I think
+[1118] I'm a I'm an interesting page in Zero to
+[1120] Startup because I'd never left Argentina
+[1122] before. Uh I'd never other than Brazil,
+[1125] I'd never left the country.
+[1127] And then, I quickly went from Argentina
+[1130] to Switzerland to the US. I started
+[1133] getting invited to conferences
+[1135] throughout the world, and I went I flew
+[1138] to Berlin for JS Conf. I started getting
+[1141] a lot of this exposure. And so, I had
+[1143] this rapid-fire AB test of the different
+[1146] cultures as it pertains to
+[1148] entrepreneurship and technology.
+[1150] And comparing the US to Europe was like
+[1153] crazy to me cuz
+[1155] growing up in Argentina, I almost had
+[1156] the opposite belief that, you know,
+[1158] Argentina looks up to Europe Europe a
+[1160] lot. Mhm. And so, my family looked up to
+[1163] America because my parents were
+[1164] engineers, and they had, you know, they
+[1167] had seen what it was like to work with
+[1169] the American engineering companies, and
+[1170] they were they'd already fallen in love.
+[1172] But the Argentinian culture was more
+[1174] leaning towards like, Europe's super
+[1175] cool. But then, I saw them back-to-back,
+[1177] and it was like, okay, if I need to move
+[1179] fast, I need to build a technology
+[1180] company, this San Francisco thing is
+[1182] like a drug.
+[1183] And so, that's kind of what It was just
+[1185] the culture and the environment that
+[1187] opened up my eyes to like, oh, I can
+[1188] start my own company. Is that why you
+[1190] went to San Francisco in the first
+[1191] place? Or was that serendipity?
+[1193] Serendipity. I remember one high school
+[1196] lesson on Silicon Valley from a cracked
+[1199] geography professor. The class was
+[1201] geography. Uh-huh.
+[1202] >> And she used it as a proxy to like kind
+[1204] of expose us to like more of the
+[1207] anthropology or other like adjacent
+[1209] fields of study. And so we studied
+[1211] Silicon Valley. But you know what? My my
+[1214] understanding of it was that it was more
+[1215] on the hardware side. Yeah. My
+[1217] perception was that this is more like
+[1220] this is not here in the city. And so
+[1222] that transition it was happening at the
+[1224] time that I arrived.
+[1226] Naval says, you know, I my all of my
+[1228] alpha investing happened when I left the
+[1231] outskirts, the neighborhoods, and I went
+[1234] to the city. And then Twitter was being
+[1236] born in the city.
+[1237] >> Yeah.
+[1239] I even have a fun fact. So, my first
+[1241] startup office, once I graduated from
+[1243] our co-working space, which is where the
+[1246] idea of even starting a company was
+[1247] born, was in a building at 300 Brannan.
+[1251] Sure, I know that building. And by
+[1254] by coincidence, we ended up in the
+[1256] little office space that had previously
+[1258] been used to host Odeo. Mhm. Odeo was
+[1262] the podcast app ahead of its time,
+[1265] arguably,
+[1267] that pivoted into Twitter. And so this
+[1270] is the magic of Silicon Valley in the
+[1272] San Francisco shape that you were just
+[1274] right there when all of these new
+[1276] companies were being born in the web 2.0
+[1279] {slash} cloud
+[1281] >> uh era. There's something magical about
+[1284] being in a company town where the
+[1286] industry is innovation and where those
+[1289] companies are demystified because Odeo
+[1292] to you all of a sudden it's no longer
+[1293] this legendary story, it's an office.
+[1295] It's a place. You can you can walk right
+[1297] into the place that used to be
+[1298] >> holding parties and the CEO is there
+[1300] hanging out. He'll answer any question
+[1302] you have. And obviously people have
+[1304] limited time, but I think everyone's
+[1306] almost pretty much open to just meeting
+[1308] with anybody. In fact, if anything, I
+[1311] prefer to meet with the people that are
+[1313] having the fresh ideas, not the people
+[1315] that are having the ancient ideas.
+[1316] >> Oh my god. That's so true.
+[1317] >> So, you would think, oh, as a CEO, I'm
+[1319] excited to like
+[1321] meet the Pope. Maybe I am, actually. But
+[1325] you're actually way more excited to meet
+[1327] the two-person company that has this
+[1329] revolutionary new idea, and you want to
+[1332] partner with them, or you want to invest
+[1333] in them, and you want to learn from
+[1334] them, et cetera. Yeah, that openness,
+[1336] that tolerance is like such a critical
+[1338] part of the culture of Silicon Valley,
+[1340] and it's been well-researched. I'll
+[1342] I don't know if you've ever read the
+[1342] book Regional Advantage, but one of one
+[1344] of the all all old old classic book
+[1346] about how in the hardware era Silicon
+[1348] Valley became that way. There's a lot of
+[1350] good research that shows that those
+[1351] softer cultural attributes are why
+[1353] Silicon Valley is where it is, and why
+[1356] it was able to outcompete other other
+[1358] regions. And that Yeah. Yeah, and by the
+[1360] way, that's something I've spent a lot
+[1362] of time thinking about because being
+[1363] from Argentina and being extremely
+[1366] bullish, optimistic, and supportive of
+[1367] the startup ecosystem,
+[1369] I do always go back to culture.
+[1372] There is a lot that you can copy that is
+[1375] tactical. So, you can say, look, we in
+[1378] order to have a Silicon Valley, you need
+[1380] to have a bunch of angel investors.
+[1382] And so you I actually literally just
+[1384] invested in an angel investor in Europe.
+[1386] So, that I want to
+[1387] you know, try and infuse some of that
+[1390] uh some of the things that I've seen
+[1392] work here in other places in the world.
+[1394] But there's something cultural
+[1396] about speed, velocity, openness,
+[1399] risk-taking
+[1401] that it's just really hard to even
+[1403] pinpoint. What is it? Where do you come
+[1405] from? How do you How do you you know,
+[1407] translate it to another environment, et
+[1409] cetera. So, let's talk about the
+[1410] founding of Vercel.
+[1413] You were you were in the co-working
+[1414] space, you were in San Francisco, you
+[1415] kind of had this idea that you could be
+[1417] an entrepreneur. Like how did it come
+[1418] about?
+[1419] Yeah, one of the key things that
+[1420] happened, since we were just speaking of
+[1422] open source, was in my previous startup,
+[1426] before Vercel,
+[1427] I started noticing that by launching the
+[1430] open source projects of the technology
+[1433] that I was using to build my startup.
+[1435] So, to be clear, I was building a
+[1436] startup initially in ad tech.
+[1439] And I was building it with open source
+[1440] technology. Mhm. And I created open
+[1443] source technology of my own, like
+[1444] Socket.IO.
+[1445] And then I I we this is actually quite
+[1448] surprising to us.
+[1450] Because we're open sourcing,
+[1452] there was this gravitas that built
+[1454] around our startup. We're getting access
+[1456] to better talent.
+[1458] We're getting a lot of attention. We're
+[1460] getting the thing that people actually
+[1462] always fight for
+[1463] is attention is all you need, right?
+[1465] Like how can I get eyeballs, interest,
+[1468] hype, buzz,
+[1470] hiring talent, whatever. How can I How
+[1473] can I become a talent magnet?
+[1475] And I do think there I mean
+[1477] this is all very hard to do, but if
+[1478] there was a cheat code, I would say it's
+[1479] open source.
+[1481] And And it's not that we did it because
+[1483] we were seeking those things. We did it
+[1486] for open source. And then those were the
+[1487] consequences or the outputs.
+[1489] And so the thing that really stood out
+[1492] was that I started noticing that
+[1494] investors were pointing that out.
+[1497] Investors saying like I remember getting
+[1498] this email from an investor saying like,
+[1500] oh, I saw that thing you guys just
+[1501] launched. That's super interesting. And
+[1504] so they were not reaching out as
+[1505] specifically about the other things that
+[1507] we were building. They were reaching out
+[1508] about like this open source thing has
+[1509] seems to have pretty extraordinary
+[1511] traction.
+[1513] And so going back to like giving credit
+[1515] to Silicon Valley, investors were
+[1517] open-minded
+[1519] that you could put venture dollars into
+[1523] open source
+[1524] and then build another business that's
+[1526] separate from that. Mhm. And so I ended
+[1529] up pivoting that business. I sold it to
+[1532] the perennial open source success story,
+[1534] which was WordPress and wordpress.com at
+[1536] the time.
+[1538] And then I was like extremely convinced
+[1540] when I was there, okay, you can totally
+[1543] build a business with open source. I
+[1545] wanted to do it a bit differently from
+[1547] WordPress because WordPress built an
+[1549] open source project, and then they built
+[1551] another product, wordpress.com.
+[1554] What I wanted to do,
+[1556] I was obsessed with this idea of the
+[1559] cloud is the future of the internet.
+[1563] WordPress is not using the cloud, which
+[1564] is really interesting. They were They
+[1566] had their own data centers.
+[1567] And I felt the pain of that.
+[1570] Things were more difficult when you
+[1573] wanted to have a new idea
+[1575] because you didn't have this snappiness
+[1577] of converting idea into live infra.
+[1580] And so when I left, I decided, okay, I'm
+[1584] going to create open source again.
+[1585] I want to I want to create a framework
+[1588] that ended up calling be called Next.js
+[1591] Mhm. to make it really easy to create
+[1592] web applications.
+[1594] But also, I want to simplify the cloud
+[1597] infrastructure problem.
+[1598] So, AWS, Google Cloud, Azure, awesome
+[1602] platforms.
+[1603] But if you were like me, even a seasoned
+[1606] engineer that had an idea and wanted to
+[1608] deploy it,
+[1609] it would take weeks, months.
+[1611] >> pain, yeah. It was a real pain, and by
+[1613] the way, like there were like 200
+[1615] different ways of doing it. Yeah.
+[1617] >> So, it was almost like a myth. Like
+[1620] somebody has the sacred chant that you
+[1624] can invoke. And if you say it and hold
+[1627] it the right way, then the cloud really
+[1630] bestows you with its full power.
+[1633] And I rejected that notion. I was like,
+[1634] no, no, no, no. It It can be just one
+[1637] command.
+[1638] That was my obsession as an engineer, as
+[1641] that Linux background of mine,
+[1643] of I loved commands.
+[1646] I loved terminals.
+[1648] And so imagine that you could just say
+[1650] one word, enter,
+[1652] and then your application is live,
+[1654] worldwide, fast, reliable, secure, et
+[1657] cetera. And so
+[1660] it's so funny. It's a small idea,
+[1662] and it's a an infinitely sized idea.
+[1665] Mhm. Right? It's a small idea because
+[1667] it's like I'm just saying that I'm going
+[1668] to build one command. Relax. Like I'm
+[1671] just going to give it to a developer and
+[1672] I'm going to make their lives easy.
+[1674] And it's an infinitely sized idea
+[1675] because our ambition is to simplify all
+[1678] of the cloud. It's to simplify building
+[1680] applications so that everybody in the
+[1681] world can do it.
+[1683] It's It's so that now this command can
+[1685] be given to agents.
+[1687] And so anybody with an idea can vibe
+[1689] code it, and then they'll deploy it in
+[1691] the world's most reliable and fastest
+[1692] infrastructure.
+[1694] And so these days I'm so excited about
+[1695] AI and vibe coding
+[1697] because my original idea was
+[1700] And And so much of this was given to
+[1702] this exposure that I had because like I
+[1704] I didn't work at Facebook.
+[1706] But I was working very closely with them
+[1707] because of open source. Yeah.
+[1709] >> And I I was noticing that the gap
+[1711] between how Facebook was building
+[1714] and how the rest of the world was
+[1715] building kept getting like wider and
+[1718] wider and wider.
+[1720] And there was even almost like a risk
+[1722] >> Explain Explain what you mean. What was
+[1724] the What was the gap? The gap was that
+[1726] number one, Facebook was deploying
+[1728] thousands of times per day. Yeah.
+[1731] And you would go to the average company
+[1732] was trying to launch something online,
+[1735] and they were like, oh, yeah, I deploy
+[1737] once a year.
+[1738] No, you already said it. Windows 95.
+[1741] Remember when we used to put the year
+[1742] that a product came out in the name
+[1744] of the name of the product. That's such
+[1746] a wonderful observation.
+[1747] >> Yeah. In fact, we some companies still
+[1749] inherit that, right? Like they call
+[1751] their versions and their releases, they
+[1753] put dates into it.
+[1755] And now Facebook is like, no, no, no,
+[1756] no, we're experimenting. We have
+[1758] branches of experiments. Like it's
+[1761] almost like they have a quantum
+[1762] superposition of software
+[1765] where some users get some version, and
+[1767] then some users get some other version.
+[1769] Oh, yeah.
+[1770] >> And then And then their teams get to
+[1772] make business decisions. Their engineers
+[1774] actually not just like quote unquote
+[1777] code code monkeys.
+[1779] They're making They're making business
+[1781] optimization decisions. They're saying,
+[1783] oh, a user that does this and is in this
+[1787] branch of the experiment
+[1790] performs better.
+[1792] And I was realizing that even that
+[1794] language was completely absent even in
+[1797] the customers of the cloud because they
+[1799] were operating at such a low level of
+[1801] abstraction.
+[1803] The the cloud emerged as almost like
+[1806] being the data center, but in the cloud,
+[1809] like the virtual data center. And then
+[1811] what I saw as an opportunity is that I
+[1812] don't want people to manage data
+[1813] centers.
+[1814] Right.
+[1815] >> I want them to build products. I want
+[1817] them to be successful on the web. I want
+[1819] them to iterate very quickly. And so
+[1821] that was the gap that I identified. And
+[1823] there were there were so many other
+[1824] things like onboarding time.
+[1826] The the thing that these companies like
+[1828] Facebook and Google optimized for is
+[1831] if you join their company
+[1833] how quickly could you actually ship
+[1835] something? Mhm. So even something small
+[1838] that gives you a taste for what
+[1839] productivity is like. What our culture
+[1842] is like. Mhm. And so you join
+[1846] how how long does it take you to get the
+[1848] tools and set up the development
+[1850] environment?
+[1851] It's almost like a throwback to those
+[1853] days of me getting a computer and being
+[1855] like Oh, yeah. How do I program this
+[1857] thing?
+[1858] If you have a company that's happening
+[1860] to your engineers today and you probably
+[1861] don't notice it. That you hire them
+[1864] and then the time from batch access
+[1868] to live deployment, yeah.
+[1871] >> value added to the world it's probably
+[1874] measured in breaking news sad news
+[1877] potentially. It's probably measured in
+[1879] weeks. Oh, no. It's probably measured in
+[1881] days.
+[1883] By the way, I'm saying this even
+[1884] optimistically. Maybe even measured in
+[1886] months. Uh and it could be seconds. It
+[1889] could be minutes. In fact, with
+[1891] companies like Vercel because so much of
+[1892] what we build is open source
+[1894] people that join Vercel already have a
+[1896] sense of how to contribute to Vercel
+[1898] before they join.
+[1900] I remember I astonished another CEO one
+[1903] day because I told them yeah, man, I'm
+[1905] super piled.
+[1906] We just hired this incredible engineer
+[1908] from Israel. And he just shipped one of
+[1910] the most exciting things in the company
+[1912] 2 weeks in.
+[1914] He's like, "No, no, that's not
+[1914] possible." He literally This is a hot
+[1916] company that Sequoia had just invested
+[1918] in.
+[1919] He's like, "No, no, that's not
+[1919] possible." I'm saying, "No, no, what do
+[1921] you mean that's not possible?" Well,
+[1922] like And by the way, he he came from a
+[1924] really good place because he was saying
+[1926] if he's shipping something on the
+[1927] critical infrastructure path
+[1929] it would almost sound irresponsible to
+[1932] ship something to every user of a
+[1934] platform with millions of customers in 2
+[1938] weeks. But the the cheat code here was
+[1941] that this person had been exposed to
+[1943] Vercel's culture, source code,
+[1946] engineering, you know, bar for months or
+[1950] years prior to that moment. And so
+[1952] that's another You were talking about
+[1954] those externality positive externalities
+[1956] >> Exactly. Exactly.
+[1957] >> of the world. A positive externality of
+[1960] corporations
+[1962] and {quote} big tech, which sounds like
+[1965] a scary word, like Google, Facebook,
+[1966] etc. is that they they contribute a lot
+[1969] to open source.
+[1971] Um in fact, I really believe that they
+[1973] do this because of that emergent uh
+[1976] positive externality, not not because
+[1978] there is pressure to.
+[1980] So a good example would be Next.js was
+[1983] built on an open source technology that
+[1985] Facebook open source called React. Mhm.
+[1988] If React had not existed, Vercel would
+[1990] not exist.
+[1991] Right.
+[1992] >> And so and and they did that because
+[1994] they there were so many positive
+[1995] externalities to open sourcing React.
+[1997] They wanted to attract more talent.
+[1999] Yeah. They wanted to build an ecosystem
+[2001] around it.
+[2002] They wanted the talent that they would
+[2004] hire to already be familiar with the
+[2005] tools. That's such an underrated
+[2008] consequence. And and it's interesting
+[2010] you're like laying out step-by-step this
+[2012] principle that I've talked about a
+[2013] couple times in the podcast. And you
+[2014] know, we we talked to Sid from GitLab
+[2016] and and Matt Mullenweg. So you know,
+[2017] we've had a few open source companies on
+[2020] on the podcast and this comes up every
+[2021] time.
+[2023] And the principle I call is harder is
+[2024] easier.
+[2025] Because when I counsel people to start a
+[2027] company
+[2028] and I love the way you talked about the
+[2029] simple idea that is like infinitely deep
+[2032] you know, it's it's so much easier to
+[2034] push the complexity onto the user. But
+[2036] it's like, "No, we're going to do the
+[2037] harder work to make it as simple as
+[2039] possible." It'd be a lot easier {quote}
+[2041] to
+[2042] keep your all your technology to
+[2043] yourself and make sure that you capture
+[2045] all the value that you create. But no,
+[2046] we're going to take the harder thing and
+[2048] It's so much harder to build with open
+[2050] source. And for us Not for the users.
+[2052] For the users so delightful.
+[2055] Yeah. For us, we have to keep in mind so
+[2057] many environments and constraints and we
+[2061] collaborate with other vendors because
+[2063] Next.js can be deployed to every cloud
+[2065] platform in the world. Right. And when
+[2067] you when you release a new version of
+[2069] Next.js, you make you're potentially
+[2071] making your competitors stronger, too.
+[2072] We do. It's like
+[2074] How can you remember How can you do
+[2075] that? I remember the first time that I
+[2077] was immensely proud of a customer of
+[2079] Next.js that was not on Vercel and I
+[2081] realized this customer will never be on
+[2084] Vercel.
+[2085] It was one of the largest news site I
+[2087] was actually one of the largest websites
+[2088] in the world.
+[2089] It was the largest news site in China.
+[2092] It was the mobile version of They were
+[2095] re- rebuilding their front end. It was I
+[2098] think it was like m.qq.net
+[2100] or something like this.
+[2103] And I remember thinking, "Wow, I'm so
+[2104] proud." And also they're never they're
+[2106] never going to be my customer because
+[2108] they're in China, because, you know,
+[2110] there's geopolitical things and that I
+[2112] have only got it. My prediction was
+[2114] you know, it's going to take us maybe
+[2116] decades to get into that market. And and
+[2119] that ended up being true because there's
+[2120] so many geopolitical concerns and
+[2122] the cloud infrastructure works
+[2123] differently and there's, you know
+[2126] there's just so much for Vercel to do in
+[2128] in in in North America and in in Europe
+[2132] and the Middle East and South America
+[2134] and we just haven't gotten there yet.
+[2136] And so
+[2138] you get so much value still from
+[2140] collaborating with these people, from
+[2142] building an ecosystem around these
+[2144] projects, from getting more partners and
+[2146] vendors invested. But to your point,
+[2148] it's it's hard mode. For me, the
+[2150] builder, it's hard mode.
+[2152] >> It's hard mode. And and yet so but
+[2154] people don't seem to connect these two
+[2156] things together because I I love that
+[2158] story you told about the person who told
+[2159] you that what you were actually doing
+[2161] was impossible.
+[2162] I I get that all the time. I've been
+[2163] told the thing I'm already done is
+[2165] impossible. I'm like, "Well, if it's
+[2166] already been done, it's obviously
+[2168] possible. Like what are you talking
+[2169] about?" People react that way when they
+[2172] when they experience something that
+[2173] violates their ideal priors. So here we
+[2176] know business has to be cutthroat. We
+[2178] know exploitability is straight. We know
+[2180] right, right? And yet you're getting all
+[2182] these counterintuitive benefits and
+[2184] people think like, "Oh, it's just some
+[2185] weird one-off." No, it's a principle.
+[2187] There are so many weird ideological
+[2191] like inertia
+[2193] that in people's minds. So
+[2196] there are so many things that Apple and
+[2198] Google and Facebook get wrong in my
+[2200] mind.
+[2202] But I'll give you an example of
+[2203] something that Google has done that is
+[2204] amazing.
+[2205] Google Chrome
+[2207] is a project that if I had to recruit
+[2209] and pay the engineers that built it
+[2212] would cost billions of dollars.
+[2215] It's an engineering marvel.
+[2217] It's a JavaScript revolutionary
+[2219] JavaScript engine V8.
+[2222] A new virtual machine written from
+[2223] scratch.
+[2224] A rendering engine written from scratch.
+[2227] A font rendering engine written from
+[2228] scratch. A um uh
+[2231] 3D engine or like a Skia their 2D 3D
+[2235] rendering surface written from scratch.
+[2237] It's like an operating system almost.
+[2239] Yeah. The network stack written from
+[2241] scratch.
+[2242] And all of this is open sourced and
+[2244] packaged in a way where all of the
+[2247] competitors of Google Chrome can
+[2249] literally just copy paste it. Mhm. So
+[2252] you see new web browsers these days
+[2254] like Dia
+[2256] like Brave like Perplexity's Comet. All
+[2260] of these browsers just copy pasted the
+[2263] infinite engineering work of the hardest
+[2266] to recruit engineerings engineers on the
+[2268] planet. Anybody can build their own web
+[2270] browser now.
+[2271] It's freaking amazing. And so obviously
+[2274] there's a lot of regulatory concerns
+[2276] about when you have a such a strong
+[2279] market position like they have with
+[2280] Google search and Chrome, etc. And we
+[2283] should study what are the right you
+[2286] know, boundaries around that.
+[2288] But the open source element of this
+[2291] company is so underrated.
+[2293] And this is true of Vercel as well
+[2294] because as we grow
+[2296] people do get that perception of like,
+[2297] "Oh, I thought like I thought this
+[2299] company was like 10,000 engineers and
+[2303] uh you know, you're in like some dark
+[2305] cave like like there's we sometimes get
+[2309] from from time to time, which is like I
+[2310] don't know if it's a right of passage or
+[2311] whatnot. We get we get the big tech
+[2314] stamp on
+[2316] us.
+[2316] >> get treated like that. And and so you
+[2318] have to remember that open source is
+[2320] extremely expensive, extremely hard to
+[2322] do.
+[2324] We really try to do our best. We work
+[2325] with other vendors in making all these
+[2327] projects better.
+[2328] Uh but I do get a lot of delight from
+[2331] knowing that one day some competitor of
+[2333] Vercel will take all of this
+[2336] and that's great. Uh it's so much better
+[2338] for humanity and so much better for
+[2339] civilization than
+[2341] if they had to start from scratch again
+[2343] and again and again and again. In fact,
+[2345] you know, a funny thing about Next.js is
+[2346] that it was competing
+[2349] with Facebook's own flavor of what a
+[2352] framework on top of React would look
+[2353] like. Mhm.
+[2354] >> They created something called Create
+[2356] React App, CRA. Mhm.
+[2359] And in some ways we outcompeted CRA.
+[2362] Obviously
+[2363] they
+[2364] knocked it out of the park with React.
+[2366] So kudos to them. And so the fact that
+[2369] you can like cooperate and compete with
+[2371] these companies is just amazing.
+[2374] Yeah, it's a much more sophisticated
+[2375] understanding of where business value
+[2377] actually comes from.
+[2379] Tell So so but I I there's some some
+[2381] listeners probably are not that familiar
+[2382] with Next.js and probably not that
+[2384] familiar with Vercel. So, just tell us a
+[2385] little bit about the success of Vercel,
+[2387] like you know, you obviously you were
+[2388] able to raise money, the company's
+[2390] gotten pretty big. Just give us a sense
+[2391] of what that trajectory has been like.
+[2393] Yeah, it was started with the customers,
+[2395] right? Vercel
+[2397] ultimately is a means to an end. It's
+[2399] you have an idea
+[2401] and you want to create a successful
+[2402] product. And you want to make it that as
+[2404] easy as possible. So, I was you know,
+[2406] try to work backwards from like, what
+[2407] are customers doing with this platform?
+[2409] So, you have OpenAI. Anytime you go to
+[2411] openai.com, which is now one of the top
+[2413] 20 websites on the internet, you're
+[2415] touching a Vercel.
+[2416] Their engineers chose Vercel because the
+[2418] frameworks are easy to use, the cloud
+[2420] deployment story is easy to use, and
+[2423] they have massive scale.
+[2424] Yeah. So, when they did their Super Bowl
+[2426] ad or you know, when things go viral or
+[2429] GPT-7 gets released,
+[2432] you need to bank on rock-solid
+[2434] infrastructure. And so, that's what
+[2436] Vercel provides, not just the ease of
+[2437] use.
+[2439] Is the ease of use plus the best
+[2441] practices on how to build for the web.
+[2443] And so, these best practices are
+[2444] downstream from you know, in some cases
+[2446] I'll again keep giving credit where
+[2448] credit is due. We borrowed a lot of the
+[2450] homework from Google, Facebook, Amazon
+[2454] that dictated in many ways, like
+[2457] they invented the principles of how to
+[2459] build software at scale, that gap that I
+[2460] talked about, right?
+[2462] And bridging it. Now, the bad news for
+[2464] them is that that used to be their
+[2466] competitive advantage.
+[2468] Vercel is making such that that ease of
+[2470] deployment is no longer a competitive
+[2472] advantage of like, oh, I need to You
+[2474] want to bring it to everybody. I really
+[2475] want to bring it to everybody hardcore.
+[2477] And so, companies like OpenAI or
+[2480] Nintendo or Porsche, Chick-fil-A, the
+[2484] what's interesting is sometimes it's
+[2485] user-facing. So, like you go to a dot
+[2487] com and Vercel is powering that.
+[2488] Sometimes it's behind the scenes. So,
+[2490] you know, for Chick-fil-A, we powered
+[2492] the systems in logistics and
+[2494] optimizations that make it so that their
+[2496] sandwiches are yummier and delivered on
+[2499] time and they can scale their business
+[2501] to thousands of stores. We help
+[2503] companies to scale internationally,
+[2505] right? So, we power Under Armour. And
+[2507] so, Under Armour is
+[2509] a an amazing brand that you know, their
+[2512] possibly when they had the idea for it,
+[2514] the way that people would buy the
+[2515] product was you go to a mall.
+[2517] Oh, sure. It's a totally different world
+[2519] now, yeah. And you choose the sneaker
+[2520] that you want
+[2521] in in real life, in the physical world.
+[2524] The battleground now is
+[2527] AI built on the internet.
+[2529] Is AI built for agents. You know, how do
+[2531] how can I help companies like
+[2533] weather.com,
+[2535] not only they do they run weather.com on
+[2538] Vercel, but also as agents to start
+[2541] consuming their data. Mhm. You know,
+[2543] there's a lot of talk about the new
+[2544] protocol of the internet, MCP.
+[2547] Yeah. Every URL on the internet until
+[2549] today starts with HTTP.
+[2552] You know, most people don't know what
+[2553] the hell that is.
+[2555] Maybe they know dot com, but the other
+[2557] part of the URL is HTTP. That is the
+[2559] protocol of the internet for humans.
+[2562] The internet of agents is gaining this
+[2563] new protocol called MCP. And so, what
+[2565] I'm helping companies these days is by
+[2568] leveraging what we call the AI cloud.
+[2571] The AI cloud is where you build the new
+[2573] kinds of applications that are going to
+[2574] help your company stay relevant and
+[2576] thrive in the next 100 years. You're
+[2579] going to be able to create agents.
+[2580] You're going to be able to create your
+[2581] own ChatGPT. You're going to be able to
+[2583] create your own Midjourney. So, I think
+[2587] the world of the internet belongs to
+[2590] agents.
+[2591] Humans always seek the easy way. You
+[2594] know, take my problem off my plate. And
+[2598] so, Vercel is evolving to be the place
+[2600] where
+[2601] companies like uh OpenAI and and all
+[2605] these AI juggernauts, but not just the
+[2607] juggernauts, the newcomers,
+[2609] the AI startups and the and the
+[2611] companies like weather that need to
+[2614] get their new next step of the of their
+[2617] evolution in the internet deployed very
+[2619] easily as well. I think this is really
+[2621] interesting because Vercel is very much
+[2623] associated with in people's minds with
+[2625] AI. And yet, the company predates AI,
+[2628] right? You didn't start it to be an AI
+[2630] company. Tell us a bit about how did
+[2633] Vercel and AI like I feel like there was
+[2634] this convergence where this became the
+[2637] preferred tool of AI vendors and it kind
+[2639] of became associated with with the AI
+[2641] revolution so much so that I've had
+[2643] people mistakenly call Vercel an AI
+[2646] model company to me.
+[2648] Yeah. They like they actually got
+[2650] It's so integrated that people actually
+[2652] have gotten confused about what it is.
+[2653] Like, how did that happen and what's
+[2654] that been like to be part of this just
+[2656] incredible tornado of activity? Yeah, so
+[2659] there's been a couple things. One is
+[2660] that idea that I that I mentioned in the
+[2662] beginning, which is like idea to life,
+[2664] idea to life. That was the thing we were
+[2666] optimizing for.
+[2667] We're trying to not get too stuck in one
+[2670] technology. You know, people
+[2672] investors at the time were very puzzled
+[2674] about why I was not calling the company
+[2676] next.js.com.
+[2678] Oh, sure, yeah. Because the workable
+[2680] pattern here is you create a cool open
+[2681] source project, next.js.org,
+[2684] and then you create the dot com.
+[2686] But I always saw Next.js almost like as
+[2688] as a means to an end.
+[2690] If tomorrow I could come up with
+[2692] something better, you would be the first
+[2693] to hear it because I'm more invested in
+[2695] the end user outcome.
+[2698] And that's kind of how I was I was
+[2699] blessed that I found that path when I
+[2702] was learning software engineering. I I I
+[2704] I found that way of building that was
+[2706] more like user-centric rather than
+[2708] technology-centric.
+[2710] So, I think part of that is in the DNA
+[2711] of the company.
+[2713] Another thing that happened is
+[2715] I think it was our Series B investor.
+[2719] I think it was GV. So, Google Ventures.
+[2722] So, the partner from GV reached out to
+[2724] us. We weren't even raising money. They
+[2726] reached out to us and they were like,
+[2727] look, every single pitch that's coming
+[2729] through our door
+[2731] is a URL that ends in dot vercel.app.
+[2736] What the hell is going on here?
+[2738] Why are all these startups building on
+[2741] dot vercel.app?
+[2743] So, for context for the listeners,
+[2745] when you haven't even shipped your final
+[2747] project, maybe you haven't even named
+[2750] the thing. It doesn't even have a dot
+[2752] com or dot io or dot ai yet.
+[2755] We give you a temporary URL called dot
+[2757] vercel.app.
+[2758] And Google was noticing that in their
+[2760] venture arm,
+[2762] people were coming and and obviously the
+[2765] catnip for investors is early stage
+[2767] companies, right? Like you want to find
+[2769] it as early as possible. It's like
+[2771] finding gold.
+[2772] And so, all these early stage
+[2773] entrepreneurs were coming with these
+[2774] Vercel URLs.
+[2776] And then,
+[2777] you know, kudos to the investor that was
+[2778] like,
+[2780] they didn't need data.
+[2782] Or or the data itself was the fact that
+[2784] everyone's building on this platform.
+[2785] And so, what ended up happening was that
+[2787] any new wave of technology, this is what
+[2789] they pointed out to me and I was very
+[2791] happy because it was like, thanks for
+[2793] giving me that nugget. They were saying
+[2795] that every time there's a new wave of
+[2798] innovation, we're noticing it's being
+[2799] built on Vercel.
+[2800] So, the time a lot of it was Web3 and
+[2803] crypto.
+[2804] And so, this there we live in
+[2807] accelerating times.
+[2809] Anytime there's new alpha in the market,
+[2812] software companies chase it immediately.
+[2815] It's happened to me that I see
+[2817] ideas get posted on Twitter
+[2819] and literally 2 hours later there's a
+[2821] startup.
+[2822] Usually built on Vercel. I one time took
+[2825] a screenshot of someone had the idea and
+[2828] the Twitter algorithm gave me both the
+[2829] idea and the startup.
+[2831] Right.
+[2832] >> to that idea in a gap of 2 hours.
+[2835] And so, we created the platform where
+[2838] whenever there is something new to
+[2839] build,
+[2840] people are gravitating towards this
+[2842] thing.
+[2843] And so, we were very early in noticing
+[2845] that the new thing that people were
+[2847] building
+[2848] was not just, you know, SaaS, UIs, and
+[2852] dashboards, and like and the the
+[2854] traditional like we people call it CRUD,
+[2857] create, read, update, delete type of
+[2859] applications where
+[2861] you have a database
+[2862] and you build the interface.
+[2864] We're starting to notice that people had
+[2866] the model
+[2867] and they were building the interfaces
+[2869] and they were building the plumbing and
+[2870] The AI model, you mean? That's right.
+[2872] That's right. It was the it was what
+[2874] Karpathy calls the transition from
+[2875] software 1.0 to software 2.0.
+[2878] Software 1.0 is algorithms, data
+[2880] structures, determinism,
+[2883] predictability. Software 2.0 is
+[2886] Pandora's Box, training, neural
+[2888] networks, weights, probability
+[2891] distributions.
+[2892] Yeah. And so, we were we're paying
+[2894] attention, right? And because also,
+[2897] we're very customer-centric. I I'm an
+[2899] idea guy.
+[2901] I come up with a lot of ideas because I
+[2903] I still write code myself and whatever.
+[2905] But when you see all these startups, all
+[2907] these creators, all these innovators hit
+[2909] the rough edges of your platform, you
+[2911] pay attention.
+[2912] Mhm. I actually get more value from
+[2914] someone breaking something in Vercel.
+[2917] Yeah. If a listener here ever runs into
+[2919] an error on Vercel or finds
+[2923] a quirky edge, you know who to email,
+[2925] ceo@vercel.com.
+[2927] So, we'll bump that to the top priority
+[2929] of my list. And so, I started noticing
+[2931] AI companies running into a few rough
+[2933] edges.
+[2935] They needed compute to work a slightly
+[2937] differently. Uh I'll give you a very
+[2940] concrete example. When Vercel was born,
+[2942] the hotness was that
+[2945] the fastest you make your application,
+[2948] like amazon.com was the was the poster
+[2951] child of this.
+[2952] If you make amazon.com really, really
+[2954] fast, you make a lot of money.
+[2957] And there's almost like a perfect
+[2958] correlation between loading performance
+[2961] and money.
+[2962] And by the way, this is still a winning
+[2963] formula.
+[2964] I just posted some insane statistics of
+[2967] a major household name in the US that
+[2970] it's it's a company that's over 100
+[2972] years old.
+[2973] They moved to Vercel to reinvent
+[2975] themselves online and the numbers are
+[2977] astronomical in terms of conversion
+[2979] improvements, in terms of Average
+[2982] latency improvement. average order
+[2983] value, bounce rate, the numbers just
+[2986] speak for themselves. It's like at this
+[2988] point it's almost like actuarial math.
+[2991] It's performance goes in, money goes
+[2993] out.
+[2994] And that's what That's the thesis under
+[2996] which Amazon Web Services was born.
+[2998] We need to give this superpower to the
+[3000] rest of the world.
+[3001] But with AI things are changing.
+[3004] So, of course you want the fast things,
+[3007] but also have you noticed that you
+[3008] actually sometimes get more value from
+[3010] the AI thinking for longer?
+[3012] Right. It's different.
+[3013] >> It's super counterintuitive. You You You
+[3015] go to ChatGPT and you tell it deep
+[3018] research
+[3020] as long as you want, man. Like I just
+[3022] need the right answer.
+[3023] >> give me the right answer. Give me the
+[3024] right answer.
+[3024] >> that is the compute paradigm that Vercel
+[3026] was private to. We noticed the demand
+[3030] for that
+[3031] because people were hitting all the
+[3033] limits of our platform.
+[3034] Mhm. And so that's why you associate it
+[3036] now with, you know, all these AI
+[3038] companies are born here because they
+[3039] don't even notice that it just works
+[3040] better for the use case. But we're
+[3042] constantly optimizing behind the scenes.
+[3044] We call this the AI cloud because AI
+[3047] cloud has almost like a perfect
+[3049] metaphor.
+[3050] Every service that we're building has a
+[3052] perfect metaphor to the cloud 1.0.
+[3055] Mhm.
+[3055] >> It's It's kind of like the cloud version
+[3056] of that capacity software 1.0 to
+[3058] software 2.0 movement of Yes, software
+[3062] 1.0 or cloud 1.0 had a CDN.
+[3065] But it was a CDN for web pages. Great.
+[3068] I have the fastest horse for you.
+[3071] Please come use it at Vercel.
+[3073] But now there is a rocket instead of the
+[3076] horse. We have the CDN for models. We
+[3079] have the CDN for tokens. We call it the
+[3081] Vercel AI gateway. So now we have the
+[3083] easiest way on the planet to infuse
+[3085] intelligence into your applications.
+[3088] So, if you're Under Armour or if you're
+[3091] Weather,
+[3092] now you're not just rendering pixels.
+[3095] You're infusing intelligence into your
+[3096] applications.
+[3098] Talk a little bit about the company
+[3099] building philosophy as you've as you've
+[3101] grown cuz Vercel, you know, it's not a
+[3102] not a tiny company anymore and you've
+[3104] gotten to some pretty significant scale.
+[3106] Um I I heard you talk about recursive
+[3108] founder mode. Can you explain what is
+[3110] recursive founder mode? So, for the
+[3113] uninitiated, founder mode is the meme
+[3116] that went viral from a Paul Graham
+[3118] article
+[3120] that recognized that founders can be
+[3122] quirky.
+[3124] Too quirky and some bad thing, but
+[3125] founders can be impatient, anxious,
+[3129] somewhat like disruptive to their own
+[3132] processes, and
+[3134] they have this energy to them that is
+[3136] actually good.
+[3138] So, thanks Paul Graham for writing that
+[3140] article from position of authority
+[3142] because
+[3143] it was a
+[3145] recognition
+[3146] that that founder mode energy is
+[3150] actually an engine of progress. Mhm.
+[3154] And that sometimes you can build so much
+[3158] support so many support functions around
+[3161] this founder,
+[3162] so much infrastructure around this
+[3165] founder.
+[3166] I can even draw a parallel to the world
+[3168] of when you go hard mode into building
+[3171] infra in the low-level clouds like AWS
+[3174] and Google,
+[3175] you might actually fall victim to this.
+[3179] You created so much ossified infra that
+[3182] you cannot innovate anymore. Yeah. Oh,
+[3185] that configuration of Kubernetes and
+[3188] whatever, that's not what works for the
+[3190] AI application that we need to build
+[3191] now.
+[3193] And so there's an equivalent to that in
+[3194] companies
+[3195] where there's so much rigor, process,
+[3199] functions, SVPs, VPs that report to the
+[3202] EVPs or the regional SVP that reports to
+[3204] the regional VP. Yeah.
+[3206] >> founder says, "Hey, by the way, guys, I
+[3210] tested out the app,
+[3212] and it doesn't work."
+[3214] Like, "Hello, it doesn't work."
+[3217] >> not have a meeting about which managers
+[3219] to put on having a meeting schedule the
+[3220] meeting. Let's actually fix the problem.
+[3222] By the way, like um Bill Gates has a
+[3226] famous email that he sent to like
+[3229] everyone at Microsoft, and this is
+[3231] founder mode before it was called
+[3232] founder mode. I think it was about him
+[3235] not being able to play a video.
+[3239] So, he was testing People should look
+[3241] this up, by the way. It's It's glorious.
+[3242] >> We'll put a We'll put a link in the show
+[3243] notes. He was testing Windows Media
+[3246] Player.
+[3247] Mhm. But he Here's the magic thing that
+[3249] he did. He wasn't just testing me
+[3251] Windows Media Player. He was testing the
+[3253] end-to-end thing.
+[3255] He just He put himself in the in the
+[3257] shoes of a user of computers.
+[3260] The user of computer wants to play a
+[3262] video.
+[3263] But what do they need to do first? Well,
+[3265] they need to turn the computer on.
+[3267] Remember when computers had this
+[3269] bootstrapping process? Like this loading
+[3272] screen that involved this text, gray
+[3275] text in a black screen, and whatever.
+[3277] Yeah. And then the computer comes in.
+[3280] But it's not ready yet. Yeah.
+[3282] >> It's You have to log in to the computer.
+[3285] And then you have to find the
+[3286] application.
+[3288] And then you have And so what what Bill
+[3290] finds is oh, the computer wants to
+[3293] auto-update itself.
+[3295] Oh,
+[3296] the the auto-update just asked me to
+[3298] restart the computer.
+[3300] But But I was just going to watch a
+[3302] video. No, no, no, no, no. Right. Relax.
+[3304] >> No, after restart. Sorry. You have to
+[3306] install the service pack three
+[3310] 2018.3.4,
+[3313] and you have to restart the computer
+[3315] three times, and oh, now you have to
+[3318] upgrade your Windows Media Player.
+[3321] And this and this and And so founder
+[3323] mode is really the antidote to that is
+[3325] that someone says, "This is nonsense."
+[3328] And gets the wheels of the company
+[3330] turning.
+[3332] But my iteration on this is that
+[3336] if you rely solely on that,
+[3339] and my my response to this was almost
+[3341] instant after the article comes out
+[3343] because I had been doing that for so
+[3344] long that I already also hit the
+[3346] diminishing returns of this. Mhm. Is
+[3349] that you can't just piggyback on founder
+[3351] alone,
+[3352] especially if you want to build a
+[3353] generational company, a company that
+[3355] will, you know, stand the test of time.
+[3356] You can't just rely on like cracked
+[3358] founder
+[3360] online 24/7, whatever. So,
+[3363] what I call nested founder mode or
+[3365] recursive founder mode is that could you
+[3367] empower people to act like founders
+[3370] within the company? Yeah.
+[3372] >> And so what what Vercel has done is that
+[3374] we've acquired founders. Sometimes it's
+[3376] like literally one-person companies Mhm.
+[3378] >> or two-person companies.
+[3380] And we don't just acquire them and then
+[3381] we tell them get in line with everyone
+[3384] else that wants to ship. Or, you know,
+[3386] get in line and fit into this process or
+[3389] report to this VP of SVP of regional VP
+[3392] of EVP. We actually give them the space
+[3396] to be CEO
+[3398] of that unit and product within Vercel.
+[3402] And I as founder mode,
+[3405] I try to not make it such so that
+[3407] they're shipping the org chart.
+[3410] So, this is the counter-balance that I
+[3411] need to put in.
+[3413] I want people to ship, but they need to
+[3415] ship a congruent product.
+[3418] So, you can't ship Windows Media Player
+[3420] over here and the kernel over here and
+[3423] the operating system over here. I I
+[3425] think this is what Steve Jobs nailed.
+[3427] That was kind of the in the armor
+[3429] for Bill Gates is that
+[3431] yeah, at the end of the day this need to
+[3433] be highly cohesive, Yeah.
+[3436] >> integrated products. Most people think
+[3438] that's incompatible with the level of
+[3440] edge empowerment that you're talking
+[3442] about.
+[3443] >> And it absolutely is not. It's just It's
+[3445] hard work, for sure. It's what you were
+[3446] talking about earlier like because
+[3448] Next.js not the only open source project
+[3450] that we support. And so you have to find
+[3452] a way to delight
+[3454] in that Apple way, but not create a
+[3457] walled garden.
+[3459] And so that is the next frontier.
+[3461] Can you deliver
+[3463] on the promise of user experience
+[3467] and ease of use without also
+[3471] inheriting all the bad parts. The part
+[3473] where Apple tells you
+[3475] that you have to have, you know, all
+[3477] these requirements in order to publish
+[3479] to the App Store, and they can cut you
+[3481] off at any time, and their Yeah. the
+[3485] APIs are limited and all of these
+[3487] things. So, how do you decide I I call
+[3490] it having the moral authority. To me,
+[3491] the key part of the founder mode story
+[3493] is there's somebody in the organization
+[3494] who has the power, the moral authority,
+[3497] to violate the company's own processes
+[3499] in pursuit of some higher goal.
+[3501] So, recursive founder mode means
+[3503] delegating that power to other people in
+[3507] the organization. So, how do you decide
+[3508] who's worthy
+[3510] of holding the the golden sword? You
+[3512] know, I try to find people that have all
+[3515] those cultural traits embedded in them
+[3518] before they join Vercel.
+[3520] I really I don't So, this was given to
+[3522] me as a incredible piece of wisdom
+[3526] by one of the earliest designers at
+[3529] Facebook, Soleio,
+[3531] who
+[3533] among other things designed the like
+[3535] button and many of the things that, you
+[3537] know, people interact with like
+[3538] trillions of times a day. Mhm. And one
+[3540] of the things he said was like, "Look,
+[3542] values of a company are not things that
+[3545] you write on a tablet, and then when
+[3548] someone joins you're like, 'All right,
+[3550] erase all of your previous values.
+[3551] Here's our values.
+[3553] Install them into your operating system,
+[3555] please.'" Yeah. And so so much of what
+[3557] we do is not just screening for like
+[3559] you're really cracked at algorithms.
+[3562] In fact, arguably there's so much so
+[3564] much diminishing value to that, right?
+[3566] Like AI and
+[3569] uh people are, you know, finding all of
+[3572] these different ways of just enhancing
+[3574] the way that they develop that like you
+[3575] can just like be like, oh, write me this
+[3577] program.
+[3578] And so, it's screening for value
+[3581] compatibility. Typically, people that
+[3583] really believe in open source.
+[3585] People that really believe in the web.
+[3587] So, they already come with that
+[3588] background.
+[3590] The other thing is to not have these
+[3592] people get lost in the organizational
+[3594] shuffle. So, I spend a lot of time with,
+[3597] you know, people that just joined the
+[3599] company and and are
+[3601] almost, you know, ICs relative to the
+[3603] seniority that other people have in the
+[3604] company.
+[3607] The other antidote to almost every
+[3608] problem at a company is exposure hours
+[3611] to customer pain.
+[3613] So, literally today, before this call, I
+[3615] interviewed
+[3617] one of my exciting AI customers.
+[3620] And I didn't interview the CEO so that
+[3622] we could have a fireside chat and talk,
+[3625] you know, MBA. I interviewed a line,
+[3628] quote unquote, line worker, actually
+[3630] extremely high reputation engineer
+[3631] within the company. But, from the
+[3633] perception of like the org chart, it
+[3635] could look like I'm interviewing the
+[3636] intern. And so, I interviewed that
+[3638] person that is actually using Vercel day
+[3641] in and day out to build the future of
+[3642] this AI product.
+[3644] And I told them, all right, show us all
+[3646] the nastiness. Show us all their dirty
+[3648] laundry.
+[3649] Upset me,
+[3651] please.
+[3652] And
+[3653] oh my god, people were so thankful.
+[3656] People today, I mean, sometimes people
+[3657] must think I'm at the worst CEO in
+[3659] history, the best CEO in history. Today,
+[3661] I earned a lot of points.
+[3663] Just because I I showed the engineers
+[3665] working on one of our products
+[3668] that engineer was experiencing. And
+[3670] instead of them being upset,
+[3672] they literally were like, goat emoji,
+[3674] like, greatest of all time. Goat emoji,
+[3676] goat emoji, cuz like,
+[3678] yes, I I showed you the reality of
+[3680] what's happening.
+[3681] I took you out of your cloud nine of,
+[3685] you know, illusions, imagined
+[3689] perfection. And we got to the
+[3691] nitty-gritty. And that is a centering
+[3694] force. Were you working on some new
+[3696] feature? Were you working on some new
+[3698] dream of yours?
+[3700] Let's go back to like
+[3702] ground zero reality. I want to ask you
+[3705] about the future of AI and just kind of
+[3706] you're so close to all these emerging
+[3709] trends. You mentioned vibe coding. Um,
+[3711] one of the paradoxes I see with all this
+[3713] talk of agents and vibe coding is like
+[3715] people are excited about it, but they're
+[3716] not actually using it themselves. Like,
+[3718] are are your engineers vibe coding
+[3720] Vercel or is it still being developed in
+[3722] a traditional way?
+[3724] So, vibe coding is on the opposite end
+[3727] of what I could consider
+[3729] AI assisted engineering or agentic
+[3731] engineering.
+[3733] Everybody at Vercel or nearly everybody
+[3735] at Vercel uses AI.
+[3737] I would say probably like in the upper
+[3738] 90s. Yeah.
+[3740] To your point, it was natural because of
+[3742] our customer base.
+[3744] We've had the fortune to be invited as
+[3746] early beta testers of some of the most
+[3748] successful AI products on the planet.
+[3750] So, like the AI usage within the company
+[3752] has been super natural, right? Super
+[3755] emergent.
+[3756] You know, one of the things that I'm
+[3757] really proud of, I didn't have to do an
+[3759] AI mandate at Vercel.
+[3760] Right. We're already there.
+[3763] And the other interesting end of this
+[3766] spectrum is vibe coding, which is
+[3769] everybody can cook.
+[3770] Everybody can write software. Everybody
+[3772] can build.
+[3774] So, the usage of vibe coding in
+[3776] non-engineering functions at Vercel is
+[3778] also nearly 100%.
+[3781] Best example, literally yesterday,
+[3784] our VP of people said, I want this
+[3788] feature
+[3789] in one of our HR platforms,
+[3792] but it doesn't exist.
+[3794] You know what she should have
+[3796] You know what the alternative was in
+[3797] that world?
+[3798] She goes and petitions to the vendor.
+[3801] Right. Please, oh please, almighty
+[3802] vendor, will you add this feature for
+[3804] me? Yeah. I met an amazing Argentinian
+[3806] CEO recently who's killing it.
+[3809] And
+[3810] um, he never used Vercel, but he was
+[3813] telling me that all his engineers wanted
+[3814] to move to Vercel. This is how how our
+[3816] our platform usually like spreads. PLG,
+[3819] product-led growth.
+[3820] But, sometimes they do have to face the
+[3822] final boss. And you have to do the
+[3824] I need to meet with the CEO, CIO to They
+[3827] want to know that this thing is real,
+[3829] that, you know, I'm going to be there
+[3831] for them, that they can call me, that's
+[3832] still real. You know, people that are
+[3834] scared of agents taking their jobs,
+[3836] well, people still want a phone number
+[3838] to a human
+[3840] that they can call when
+[3842] SHID hits the fan.
+[3844] So, he he tells me during the call,
+[3848] you know, what you're saying sounds
+[3850] really good about Vercel because I feel
+[3853] like changing something about my product
+[3856] is like petitioning the government.
+[3860] He said that asking He's the CEO, quote
+[3862] unquote, the most powerful person in the
+[3864] company. And yet
+[3866] having something changed on the product
+[3868] is like petitioning
+[3870] Yeah, his own product, which is super
+[3871] successful, by the way.
+[3874] And this goes back to
+[3876] as companies get bigger,
+[3878] as infrastructure ossifies, you get
+[3881] slower.
+[3883] You get, you know, gatekeepers.
+[3886] Uh, the DevOps team can be the
+[3888] gatekeeper of a company. Like,
+[3890] literally, there's one guy or gal
+[3893] that says no to everything
+[3895] Yeah. uh, that the company wants to do.
+[3897] People who have never been around
+[3898] companies can't understand this. It's
+[3900] like, if the CEO's not in charge, who's
+[3902] in charge?
+[3903] Yeah. 100%. This is why companies
+[3905] eventually, this is what Jeff Bezos
+[3907] called day two.
+[3908] If you cannot ship product, you're in
+[3910] day two. Welcome.
+[3912] And his insight that's so brilliant
+[3915] is that very successful companies can
+[3917] prolong day two
+[3919] for a very long time, so it looks like
+[3921] they're still successful.
+[3923] They have brand power. They have market
+[3925] power. But, because they're not
+[3927] shipping,
+[3929] they're actually
+[3930] in their deathbed. Right. They're
+[3932] already dead. You just you don't They're
+[3933] just stumbling on without you realizing
+[3935] it. Yeah.
+[3937] And so, Vercel is like a day one
+[3938] invigoration machine and it really
+[3940] resonates. So, let's go back to my VP of
+[3942] people.
+[3943] She would in in an alternative universe,
+[3946] she was going to petition to the
+[3947] government. Right. But, worse. Like, the
+[3950] almost like the real government.
+[3952] Like, she was going to go to the vendor
+[3954] that has a lot of customers.
+[3956] And they were going to say, hey, vendor,
+[3957] I really need this thing.
+[3960] And a very good vendor
+[3962] will ship really fast. And that exists
+[3964] still, right? And, you know, I I hold a
+[3967] really high bar of our vendors. Like, if
+[3969] our vendors do not ship fast, they do
+[3971] not become vendors of Vercel.
+[3973] But, what she was able to do, and I
+[3975] think this is a little bit of the canary
+[3976] in the coal mine,
+[3978] because this lady is highly intelligent,
+[3980] but not software engineering technical,
+[3983] she was able to use V0
+[3985] to build the software herself.
+[3988] She built the internal tool, the data
+[3990] visualization, the org chart tool
+[3993] that she would otherwise And by the way,
+[3994] this has two positive externalities. One
+[3997] is, she solved her problem, moves on to
+[3998] the next thing.
+[4000] Right.
+[4001] Keeps the company really efficient. Dog
+[4003] foods our products, thank you.
+[4005] But, the other one is that maybe she
+[4007] still wants the vendor to get better.
+[4009] Maybe there's something about that
+[4010] feature capability that the vendor can
+[4012] learn from.
+[4013] So, V0 becomes a communication tool.
+[4016] Right. You can show the vendor exactly
+[4017] So, now she can show the vendor exactly
+[4018] what she wanted.
+[4020] And this is why companies like
+[4022] Midjourney and Black Forest Labs, who
+[4025] create Flux,
+[4027] and companies like Runway for video,
+[4030] they're such a big threat
+[4032] to the Adobes of the world.
+[4035] Because
+[4036] when when you build graphics software,
+[4040] like Photoshop,
+[4042] you the barrier to entry to even telling
+[4044] your idea
+[4046] is insane.
+[4047] Like, imagine I give you an empty canvas
+[4050] in Photoshop or Figma or whatever,
+[4054] and I say, all right, Eric,
+[4056] your vision. I need to see it so I can
+[4058] build it. Yeah.
+[4060] You can't. It's a non-starter. So, where
+[4063] do you go?
+[4064] Well, you go to Flux.
+[4066] Or you go to
+[4067] Midjourney.
+[4068] And that's the disruption. It's not that
+[4071] they built pixel by pixel what Photoshop
+[4074] had. Is that they get massively
+[4076] disintermediated.
+[4078] Yeah. Well, cuz so much of what pixels
+[4079] are used for is just to communicate an
+[4081] idea. And if you can communicate in a
+[4082] different, more efficient way,
+[4084] you don't need the pixel-perfect graphic
+[4086] anymore. And in a way that is so much
+[4087] more imaginative. So, V0 completes your
+[4090] idea as well.
+[4091] Because I think what,
+[4094] what this
+[4095] this person probably had in mind was a
+[4098] rough requirement.
+[4101] It was a business pain point.
+[4103] And so, she can massively reduce the
+[4106] friction from downloading her brain into
+[4109] I mean, I don't want to overstate the
+[4111] potential of this technology, but like
+[4113] today, it almost feels like Neuralink.
+[4115] The promise of
+[4117] brain-computer interfaces is that they
+[4119] massively increase the throughput of
+[4123] information that
+[4124] goes from your brain into the computer.
+[4127] Yeah. This is what AI is doing today
+[4129] because Yeah, because language is
+[4131] already Neuralink, so you don't
+[4132] necessarily need a wire. Language is
+[4134] already a very high-bandwidth
+[4135] communication tool. There is a And there
+[4136] is a there is a tool
+[4139] called prompt enhancer within V0.
+[4142] Meaning like, some people might not just
+[4144] be able to even get enough words out of
+[4146] their mouth Yeah. Yeah. Yeah. to really
+[4149] complete their idea.
+[4151] And so, the fact that you always get
+[4153] this like like coach for thinking
+[4157] uh, is just kind of insane. It's very,
+[4159] very empowering.
+[4161] And that By the way, so maybe to
+[4163] even wrap up that other point that you
+[4166] that you were asking about, that's what
+[4168] vibe coding is.
+[4170] Vibe coding is not, you know, just like
+[4173] I I YOLO into my code base and I replace
+[4176] my engineers and now we vibe code.
+[4179] Right.
+[4179] >> In fact, that's dangerous.
+[4182] No, I know too many companies that are
+[4183] jumping on that bandwagon and they'll be
+[4184] jumping off shortly, don't worry. And so
+[4187] we're also working on making that really
+[4189] safe. So we're creating agents on the
+[4191] Vercel AI cloud side so that
+[4194] people real engineers can, you know,
+[4197] make proposed changes
+[4200] and AI can review
+[4202] and give you that safety layer, that
+[4204] conviction
+[4206] that you can actually review the code
+[4208] and it's good code. Cuz basically what's
+[4210] happening literally as of this week in
+[4212] the industry
+[4213] is that we could and could have solved
+[4216] coding.
+[4217] The amount of code production that's
+[4220] coming out of these models
+[4223] It's unbelievable.
+[4223] >> It's just hard to even picture.
+[4227] And so the new bottleneck has become
+[4228] reviewing the code so that we make sure
+[4231] that it's high-quality code.
+[4234] Yes, so almost it's like a water
+[4235] filtration problem cuz we're drowning in
+[4237] sludge. I I love that metaphor. I love
+[4240] that metaphor. So you can make the case
+[4242] that AI continues to get better and
+[4245] better and better. And for example, the
+[4247] V0 model
+[4249] is
+[4250] downloading the brains of the Vercel
+[4252] knowledge base.
+[4253] The people that have built Google and
+[4256] Facebook, etc., that work here, they're
+[4257] downloading their best practices.
+[4259] They're coaching you through these
+[4260] models.
+[4262] And so they continue to get better, but
+[4264] without the water filtration system at
+[4266] the point of convergence, at the point
+[4268] of merging that proposal that the agent
+[4271] just made into your code base, you do
+[4273] need that safety net. Yeah.
+[4275] >> And you need that water filtration
+[4277] system. We're coming to the end here and
+[4279] I just I wanted to ask you one kind of
+[4281] unrelated question, if you will.
+[4283] Just, you know, if you don't feel like
+[4284] talking about this, I understand. But I
+[4285] was just really thinking about
+[4287] coming from Argentina and, you know, the
+[4290] political turmoil that you must have
+[4292] witnessed, uh especially as a child, and
+[4294] what was happening there. You know, I
+[4296] think I read that you recently became a
+[4298] US citizen, is that right?
+[4299] >> Yeah.
+[4299] Yeah, first of all, congratulations and
+[4301] welcome.
+[4302] >> And to me, it's like such a critical
+[4304] part of my own sense of identity as an
+[4306] American that we be a country that would
+[4308] welcome someone like you. It just makes
+[4310] me really happy when someone chooses to
+[4312] to bring their energy and to to join
+[4314] this project and to become part of it. I
+[4316] thought that's really cool. Um that was
+[4318] a few years ago. I wonder just, yeah,
+[4319] how do you feel about being in this
+[4322] country at a time when we're going
+[4323] through our own set of our own turmoil
+[4325] that I guess you know has its resonance
+[4327] with things that happened in Argentina,
+[4328] like
+[4329] what what's that been like for you?
+[4331] Yeah, immigrating into the US was
+[4333] extremely hard.
+[4336] When I hear that someone cheated their
+[4338] way into the US, it is heartbreaking for
+[4340] me.
+[4341] Because either we needed to have made it
+[4344] easier for me
+[4345] or we need to make it equally hard for
+[4346] everybody, right? And so there's
+[4349] somewhere in between.
+[4351] I love the idea that we have such a
+[4353] successful country and economy that we
+[4356] can we built such good infrastructure as
+[4358] a Vercel. We built such good
+[4360] infrastructure, we can support more and
+[4361] more and more and more people,
+[4362] applications, etc., into it and more
+[4364] innovation, more more more more more.
+[4367] And so I have that conflict of the I
+[4370] want the two things. And I do think we
+[4372] have to continue to improve the system
+[4374] so that those things are true.
+[4376] Yeah.
+[4376] >> And I feel a lot of pride over the
+[4379] hurdles that I jumped.
+[4381] Mhm. You know, the the criteria that I
+[4383] had to meet because I've always loved
+[4384] competition, number one.
+[4386] You know, one of the things that I'm
+[4387] extremely grateful for in Argentina is
+[4389] that I went to a high school that had an
+[4391] entry exam.
+[4393] I
+[4394] I entered position number 10.
+[4397] Uh I hate the other nine that beat me,
+[4400] but like made friends with a lot of
+[4401] them.
+[4403] By the way, razor-thin margins, but they
+[4404] beat me so bad. Anyways, I I love
+[4407] competition.
+[4408] I love entry exams. I love merit. I love
+[4412] to grind and then overcome.
+[4414] And so that was true for my entry exam.
+[4417] It was true for qualifying for the
+[4419] criteria that gave me my O-1 visa.
+[4422] Yeah.
+[4422] >> And it feels good. It feels good to if
+[4424] if if the if the
+[4426] gold pot is at the end of the rainbow,
+[4428] right? And this is what I think is so
+[4430] amazing about America because imagine a
+[4432] system that had hurdles and promise and
+[4435] didn't deliver
+[4437] on giving you the freedom, tools,
+[4438] access, capital, connections to build.
+[4441] And that's the beauty of America. Like I
+[4443] truly believe that anybody can do
+[4445] anything. In fact, going back to the
+[4446] point of pride over citizenship, I
+[4448] really believe that you could erase
+[4452] all everything that I've done.
+[4454] You could You could bring my bank
+[4455] account to zero.
+[4457] You could delete every line of code I
+[4459] have in my computer as a backup of my
+[4461] projects and whatever. I could have
+[4463] started over and on a long enough
+[4464] timeline, I could accomplish the same
+[4466] things or even greater
+[4467] because of that infrastructure.
+[4470] And so I want that to be the North Star
+[4473] for everybody that they can come in
+[4475] here, they can innovate. I also have so
+[4478] many metaphors that I've learned because
+[4479] Vercel
+[4481] has over 100,000 paying teams on its
+[4483] platform.
+[4485] It's a really high number. Like if you
+[4486] compare other cloud infrastructure
+[4488] companies in the public markets, it's an
+[4489] astonishingly large number of paying
+[4491] customers for a cloud platform company.
+[4494] But still, this is a tiny number
+[4496] compared to the millions of people that
+[4497] use the platform, especially in our free
+[4499] tier.
+[4500] I'm going to drive a weird comparison
+[4502] here. Our free tier constantly gets
+[4505] abused.
+[4506] If you knew the the amount of time that
+[4509] I personally put into maintaining that
+[4511] freedom of access
+[4512] >> Oh, I can I've done freemium before, I
+[4514] know.
+[4515] And this is freemium in a way in which
+[4517] you get access. So this is actually a
+[4519] thing that's worth underlining.
+[4521] You know how like in in Silicon Valley,
+[4524] you can walk into the same grocery store
+[4525] at a as a billionaire. You're surrounded
+[4528] by I think we have the highest
+[4529] concentration of high-net-worth
+[4531] individuals on the planet.
+[4533] >> The same happens at Vercel because the
+[4535] free tier customers are getting access
+[4538] to the same quality of infrastructure
+[4540] as the as the juggernauts of the
+[4542] internet. We give you the same computing
+[4545] power. We give you the same high-quality
+[4548] data transfer network.
+[4550] The same hyper fiber that you're sharing
+[4554] fiber space with the
+[4556] largest companies in the world. And so I
+[4559] need to balance freedom of access to not
+[4562] having this beautiful resource that I
+[4564] put every
+[4565] energy of my every ounce of energy of my
+[4567] soul and hundreds of millions of dollars
+[4569] of venture capital and all of my
+[4571] colleagues at Vercel,
+[4573] how do we maintain
+[4574] fairness?
+[4576] How do we
+[4577] fend off bad actors? People that are
+[4580] trying to put things on the internet
+[4583] that are damaging.
+[4585] They're are trying to misuse the
+[4586] resources for crypto mining a meme coin
+[4590] instead of building a so- software
+[4592] project. The curse of our time, yeah, I
+[4595] know. And so there is a parallel to
+[4597] these two countries.
+[4599] There's so many well-intentioned people
+[4601] for which I want free access, zero
+[4604] friction.
+[4605] You can just uh print a a card or
+[4609] whatever to like if you're worthy of
+[4611] your merit and whatever, get it.
+[4614] But people will abuse every system.
+[4616] Every system will it will be abused,
+[4618] extorted. They'll find the edge cases.
+[4621] There are bad people on the planet. And
+[4623] so how do you perfect that? You need a
+[4627] lot of great judgment. You need a lot
+[4629] You need to work hard on this problems
+[4631] because you need to work hard on making
+[4632] your system available. Yeah. And and is
+[4635] is that that parallel that I drew with
+[4638] you know, how easy is it to get a
+[4640] developer license? Like it should be
+[4642] available for everybody.
+[4644] I'm very proud that, you know, we're a
+[4646] law-abiding company that follows the
+[4649] regulatory landscape of all of the
+[4650] company of all of the countries where we
+[4652] operate in.
+[4653] And recently, OFAC guidance
+[4656] and SEC guidance changed in the US
+[4660] in that we could allow business
+[4663] affairs to happen with the country of
+[4665] Syria.
+[4666] So almost overnight, we moved really
+[4669] fast to restore access to Syria so that
+[4672] Syrian developers could use our
+[4674] platform.
+[4675] And I'm highly optimistic that if we
+[4677] empower developers in all of these
+[4679] countries, you know, they could they
+[4680] could be
+[4682] an effort and an a a
+[4685] force of peace
+[4687] in all of these parts of the world.
+[4689] And so that's my point of view. It's
+[4691] like, you know, we have to follow the
+[4692] law and we have to be open-minded and we
+[4695] have to be open to letting people in and
+[4699] and figuring out these hard problems.
+[4701] Well, I think peace is an excellent
+[4703] place to wrap up. I think, you know, I
+[4705] just I I appreciate you sharing just
+[4707] that little glimpse of your larger
+[4709] vision of what this could mean, not just
+[4711] for open source, not just for technology
+[4713] companies doing deployment, but really
+[4715] about the connections that are possible
+[4717] between people when you open up the
+[4718] access to the same opportunities that
+[4721] you and I had as kids
+[4723] when we first encountered open source.
+[4724] So I just wanted to say thank you.
+[4726] >> Thank you, Eric. This is amazing.
+[4727] >> very humanistic vision and and bringing
+[4728] it into the world. And thanks for taking
+[4730] the time to have this conversation.
+[4731] >> super fun.
+[4733] You've been listening to the Eric Ries
+[4734] Show.
+[4735] The Eric Ries Show is produced by Jordan
+[4737] Bornstein and Kiki Garthwaite.
+[4739] Researched by Tom White and Melanie
+[4741] Beha. Visual design by Reform
+[4743] Collective. Title theme by DP Music.
+[4747] I'm your host, Eric Ries. Thanks for
+[4749] listening and watching.
+[4751] See you next time.

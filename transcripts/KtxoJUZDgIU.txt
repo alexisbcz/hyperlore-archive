@@ -1,0 +1,1332 @@
+[0] welcome to syntax today CJ and I sat
+[4] down with Paul Cobblestone the
+[6] co-founder of superbase we dive deep
+[10] into the tech that powers superbase we
+[13] talk all about Paul's outlook on open
+[15] source and the origins of Supa base
+[18] including why it's Supa and not super so
+[22] without further Ado here's Paul
+[30] so welcome to syntax Paul if you want to
+[33] give us a quick introduction about maybe
+[36] who you are and what you do at superbas
+[38] and then we can get into some of the
+[40] things a little bit deeper about super
+[41] base as a product yeah thanks for the um
+[45] yeah thanks for inviting me um my name
+[47] is Paul Cobblestone I'm the CEO and one
+[49] of the co-founders of super base we're
+[52] basically a open source Firebase
+[54] alternative is how we position ourselves
+[56] early on but you can think of us really
+[58] as a postgress hosting
+[60] nice yeah and um you know as a as a post
+[64] gross hosting company or even an
+[66] alternative there I've always been
+[68] impressed with UI of super bay how it
+[71] makes things feel nice and easy for uh
+[74] the user to get up and running it's not
+[75] like you're managing a database right so
+[78] I with that said here's a quick question
+[80] for my my 5-year-old why Supa and not
+[85] super yeah because it's very hard to
+[88] purchase the domain Nam
+[90] super there was yeah domain driven
+[94] naming that's pretty much how I do all
+[97] my side projects yeah nice which turns
+[99] out to be both by the way a blessing and
+[102] a curse the blessing is that it's very
+[104] easy to find mentions of super base uh
+[108] across the internet and people have
+[110] started putting super on everything the
+[113] curse is that it doesn't feel that
+[116] enterpris uh it's kind of like a bit of
+[118] a meme which is also so by the way where
+[121] the name came from like an and myself
+[124] like to meme a lot and so super Bas
+[127] obviously is a Nicki Minaj song and we
+[130] thought it was funny that it was called
+[131] super Bas and uh that's somehow stuck
+[135] yeah but here we are it's working yeah
+[139] yeah I always thought I always think of
+[141] that there's an MF Doom song where he
+[142] says he's super in it and I always think
+[144] about that when I hear super Bas so do
+[146] you want to maybe give a a some
+[148] background into you know how did super
+[150] base start um even from like technical
+[153] foundations to you know why mhm yeah so
+[157] timeline first is um we started in
+[160] January 2020 so really just four four
+[164] years old four and a half years old now
+[166] uh we went to ycn that summer batch as
+[168] well and have just kind of been building
+[170] fully remotely so started during Co and
+[173] building the company remotely the sort
+[175] of Genesis was that in my previous
+[177] startup I was building using postgress
+[180] but one part of the tool was a chat
+[182] application and I was using Firebase I
+[184] actually really love Firebase I think
+[186] the developer experience is amazing but
+[189] we hit some technical issues in terms of
+[191] like the performance around sending the
+[195] messages and so I looked at migrating it
+[197] to postgress and I did it quite naively
+[200] at the start postgress has this listen
+[202] notify system where you can push
+[204] messages out of it and I thought that
+[206] was good until I run ran into another
+[209] tech technical limitation there um on
+[211] the postgress side and so I had to build
+[214] a realtime engine kind of on top of
+[217] postgress and I did that with um Phoenix
+[219] Elixir um which kind of was the right
+[222] tool for the job you can connect lots of
+[223] clients to it it's good for websockets
+[226] and we did it by kind of listening to
+[228] the database replication stream you know
+[231] and then you convert those messages into
+[234] yeah literally adjacent payloads and you
+[237] can blast them out to the websockets so
+[239] is a cool technical solution and uh I'm
+[242] a big hack and news reader and I put it
+[244] on show hack news and they got a lot of
+[246] interest at that point and so I knew I
+[250] was going to do a Dev tool startup after
+[252] my last startup and so that seemed like
+[254] the right time and I tapped my
+[256] co-founder on the shoulder and said this
+[258] is what I want to do I want to go to YC
+[261] um should we do it and um yeah somehow
+[264] convinced him to leave his startup for
+[266] to to help me build super base wow so
+[269] how long after like you know first lines
+[272] are written did you end up joining
+[275] YC oh yeah so probably I think the hack
+[278] news launch that I did that one was on
+[281] for just that real time engine was maybe
+[283] in like September 2019 we started the
+[287] company January 2020 and then we sort of
+[290] got accepted maybe I think it was March
+[292] or April of 20120 yeah and we didn't
+[295] have much pretty fast quite
+[297] honestly but we're both three time
+[300] Founders we were shipping fast we tried
+[304] to check off all the things that YC like
+[308] like to like yeah yeah that makes sense
+[310] so yeah I like I like the fact that
+[312] superbase is open source and can be
+[314] self-hosted was that a decision you made
+[316] early on that you were going to make
+[318] this thing and keep it open source yeah
+[320] honestly it wasn't even really a
+[322] conversation at the start I think just
+[324] ant and I kind of philosophically love
+[327] open source I wouldn't want to work on a
+[329] Dev to if it was close Source that's
+[332] kind of the truth so um yeah that's
+[336] that's about all the thinking that went
+[337] into it and then we try to support like
+[340] our philosophy on open source I think is
+[342] a little bit unique in that you know a
+[345] lot of the tools that make up the super
+[347] base stack um are all existing open
+[350] source tools and that was really
+[352] important to us as well it fells like
+[354] open sources a lot of like you know I'm
+[356] going to do some new way of doing this
+[359] and it's got to be my own but we
+[361] actually like the model where you can
+[363] try to support the tools that exist they
+[366] might not be perfect but we can help to
+[368] try make them perfect is the idea so
+[371] that's kind of our philosophy around
+[373] open source one of the key philosophies
+[376] yeah it's it's one of the things that
+[377] first drew me to superbase I've built a
+[378] few a few projects with it and the
+[381] simple fact that it's built on top of
+[382] postgress like I know a lot of times
+[384] when you're choosing a new tech for a
+[385] project you worry about like vendor lock
+[388] in or like am I going to have to keep
+[390] using this if uh if I don't like it or
+[392] something like that but to me it was
+[393] super cool to see that it's built on top
+[395] of postgress I can use everything I know
+[397] about postgress and if I really ever
+[399] wanted to stop using super base I could
+[401] I could just literally take my database
+[403] with me which was nice which is happened
+[406] in the past we have we have like in our
+[409] docs one of the core principles is
+[411] portability you should be able to take
+[413] anything you build um just basically PG
+[415] dump and take it to your favorite
+[417] postgress provider and there might be
+[419] some things depending on how far you
+[421] lean into like some of the tooling that
+[423] we've got but in theory like you can
+[425] extract that so we try to make
+[427] everything very composable so even
+[429] though it's like a full back end you can
+[431] just use the database and stack other
+[434] tools Clerk's very common you can use
+[436] super base or or you can use clerk with
+[439] super base that's kind of how we want it
+[441] to be do you have any stats on like how
+[443] many people self host do you keep track
+[445] of that kind of thing no we have no
+[447] Telemetry and other thing that we think
+[449] is like if you want to self host that's
+[451] that's great um anecdotally I see a lot
+[453] of people do it so we're happy and
+[456] actually yeah um some of the larger
+[458] customers do it as well so that's nice
+[461] but because I'm a developer and I don't
+[463] like tracking then I can't give you any
+[465] stats yeah same that's awesome I think
+[469] it fits very well into you know I don't
+[471] want to talk too much about sentury
+[472] because this isn't an ad for Century but
+[474] it fits very well in with what we're
+[476] doing here at centry as well you know
+[478] open source tool M it is uh you can just
+[482] spin it up you can take it with you you
+[483] don't have to worry about handing out
+[486] cash to to use this tool but you know
+[487] it's it's your data it's your
+[488] information if you want it that way you
+[490] know not tracking people and such uh it
+[493] also shows that you can build a
+[494] legitimate business on open source
+[496] software which it feels like that is a a
+[498] thing people feel like you can't do
+[500] these days for some reason y yeah I've
+[502] been a long time fan of Sentry by the
+[505] way and like the the developer Focus as
+[508] well is one of the things that you know
+[510] we get inspiration from from centry um
+[513] the way they build the product the
+[515] designs of it and the Simplicity I think
+[518] yeah it's influenced our thinking a lot
+[522] yeah and and I'm glad you mentioned the
+[524] Simplicity piece because that's what
+[525] drew me to um superbase I I you know
+[529] really got my start in in full stack
+[531] JavaScript in meteor world where you had
+[534] real time you had your database it was
+[536] all you had your oth it was all very
+[538] connected right Simplicity was a major
+[539] source in there and and super base was
+[541] the first product that I saw that really
+[544] had that same feeling Au is baked in you
+[547] want the magic link you got the magic
+[548] link you don't have to worry you you can
+[550] expand upon that later if you want it uh
+[552] but just getting up and running 0 to 60
+[555] is very fast so I I guess like what was
+[559] your Inspirations for the Simplicity of
+[561] that was it just I want a tool that
+[563] makes getting up and running very fast
+[566] or what was the the inspiration there
+[568] well with five I think is really one of
+[571] those it's incredible for that and yeah
+[574] I think a lot of people are like you
+[577] know super base is great uh Firebase Is
+[580] Not Great which is not true fire base is
+[582] a phenomenal tool for getting started
+[585] it's just really incredible and I think
+[588] if there were you know open source I've
+[590] actually chatted to the founder um if
+[593] they open source like they would have
+[595] probably the same vibe that we've got
+[596] today um it's just that wasn't their
+[599] past in 20 2012 um the world was
+[602] different then right so I think like you
+[605] know we literally kind of benchmarked
+[608] how fast you could launch a database on
+[610] Firebase and insert a document and then
+[612] we went to RDS and we benchmarked like
+[615] how long it would took and it was like 1
+[617] minute on Firebase and it was like 8
+[619] minutes on RDS because you got to set up
+[622] your own separate application and
+[624] everything so that was like just our
+[626] first test can we insert a document like
+[628] a r into postgress as fast as Firebase
+[632] wow yeah Firebase is one of those I
+[634] almost called it fire base now like
+[637] stuck in uh Firebase is one of those
+[639] tools I kind of always avoided just
+[641] because of it's you know you never know
+[643] which products Googles are going to kill
+[644] or whatever and I didn't want to build
+[646] you know my information on something
+[647] like that but uh superbase to me never
+[649] had that same feeling obviously because
+[651] of the the nature of it so okay so you
+[656] you want to make a better open open
+[658] source Firebase and I think it
+[659] definitely fits that Vibe M but going
+[663] forward like how do you take it further
+[665] than Firebase now that you are you know
+[668] you have a different Mission now
+[670] probably yeah exactly I
+[673] mean you have to solve think of a
+[675] database problem right you're going to
+[677] launch a a database company what you
+[680] want to do is like build the world's
+[682] best database platform so you go to a
+[684] big company and you say hey you should
+[686] host your databases with us and all of
+[688] them say no like who are you we can't
+[691] trust you with your data so there's only
+[693] one way to build a great database
+[695] company it's to become the database that
+[698] developers love on day one they kind of
+[700] choose their stack before they they even
+[704] think about their side project that
+[705] they're going to build and then a lot of
+[707] them start scaling up and because it's
+[710] databases they don't churn you know you
+[712] just make sure that your product is
+[714] amazing for them and you can support
+[716] them all the way through the IPO and
+[718] over the next 10 10 years we build our
+[720] credibility around postgress we build a
+[722] lot of tooling for postgress we build a
+[725] lot of scalability into postgress and
+[727] we're having to do this um contributing
+[730] up uh employing open source maintainers
+[732] making sure that you know the tool will
+[736] go beyond anything that they'll even see
+[738] on say AWS or you know on one of the big
+[742] three clouds we want to make sure that
+[744] we can re really fit that Vision so that
+[746] when we go to Enterprises we've got 10
+[749] years of credibility and scalability and
+[752] logos to prove
+[754] it so looking at the docs I see that
+[757] there are quite a few Cent libraries uh
+[759] not just JavaScript so I see things for
+[761] like flutter and then in in the recent
+[762] GA announcement uh you announce the
+[764] Swift client but then there are
+[766] Community packages for like Python and c
+[768] and cotlin so how do you decide which
+[770] client libraries are going to be
+[771] official versus like keeping them more
+[773] like Community
+[775] maintained yeah not easily yeah um so we
+[780] developed first our JavaScript uh
+[783] libraries and typescript libraries um
+[785] because that was the thing the thing
+[787] that was really missing when we started
+[789] was there was no back end for the likes
+[791] for the jam stack um ver and NFI and so
+[795] we really focused in on that use case
+[798] first so JavaScript was the natural
+[800] thing how do
+[801] you as well like um this type of
+[804] front-end developer I would say is not
+[807] so familiar with the nuts and bolts of
+[809] postgress and so it's a really easy win
+[812] we can just uh abstract that away and
+[814] make it incredibly easy for you versus
+[817] say maybe like a PHP developer um
+[821] popular now probably know a bit more of
+[824] the nuts and bolts sitting up OMS and
+[826] things and they're going to use their
+[827] laravel and it might handle it for you
+[829] so so that was the use case that we
+[831] focused on then over time just of course
+[835] a lot of people started piling in and um
+[838] requesting all sorts mobile became very
+[841] popular because of Firebase was very
+[843] popular and people wanted to migrate to
+[846] superbase and so they wanted mobile we
+[849] ended up doing um flutter first because
+[852] it was kind of like a new new system and
+[855] and that actually came from the
+[856] community this is like kind of our
+[857] hiring strategy we had this person
+[860] contributing they did the o Open Source
+[863] flutter uh Libs it started getting
+[865] popularity and um so we just hired him
+[868] uh work on full time and he's
+[871] a yep yep you might see him Tyler he a
+[877] Japanese devro actually so he was based
+[879] in Japan funnny enough working at
+[881] HubSpot as a like a just an engineer at
+[884] HubSpot and nothing to do with Devo but
+[886] turns out he's also just very good at
+[889] this type of stuff so um so it's cool
+[892] we've done a lot of that by the way like
+[893] people who contribute to our our
+[896] community and they're kind of too good
+[897] to ignore that we're just got to hire
+[899] them yeah nice yeah so so I think that's
+[902] kind of how it happens like we just have
+[905] people contributing and then eventually
+[908] as something becomes popular enough that
+[910] the community are kind of shouting that
+[911] hey can you make this official then we
+[914] pull the TW that's probably a good
+[916] strategy yeah I guess I should also
+[918] mention for anyone else that's listening
+[919] that isn't familiar uh you don't
+[921] necessarily need a client library though
+[922] I think that's one thing about superas
+[924] is you could connect directly to the
+[925] database and just use your preferred omm
+[928] um or you could just use your favorite
+[930] uh rest API client and talk to the rest
+[932] API uh so it's important to not you
+[934] don't need these client libraries but it
+[935] is cool that you have that support as
+[937] well yeah thanks for shouting that out
+[939] because like yeah it's actually one
+[942] thing that we did too well at the start
+[944] was positioning like some of the super
+[946] based tools the additional tools that at
+[949] the start now we're having to change the
+[952] narrative that you don't actually have
+[953] to use all those tools you can just use
+[956] the database and like I'm a big fan of
+[959] for example becoming very popular um
+[961] with with super Bas but yeah prisma's
+[964] popular um keyle all of these like
+[967] whatever you want you can plug yeah your
+[970] your Ruby and anything you want on top
+[973] of the postrest database and and we're
+[975] happy like that's what where we want to
+[977] be yeah and you could still take
+[979] advantage of the superbase platform
+[981] itself yeah that I me to worry about the
+[983] the client we' got a ton of cool
+[985] database stuff like index advisor
+[987] security advisors and yeah scaling out
+[990] reap replicas like just making sure that
+[992] it yeah is easy on the database side so
+[995] the additional stuff is there if you
+[997] need to reach for it great for
+[999] prototyping and the postgress Maxis like
+[1002] myself love the additional tools um but
+[1005] yeah if they're not for you then that's
+[1007] that's kind of fine so you guys also
+[1009] have Edge functions right is the idea
+[1012] with Edge functions there to kind of
+[1014] remove the the need for any kind of
+[1017] backend server component to your like
+[1019] super base completely would become the
+[1022] the back end of your your application
+[1024] you can just use an edge function when
+[1025] you need serers side
+[1027] functionality
+[1028] actually the the reason so we started
+[1032] doing these things launch week so I
+[1033] think they're pretty popular now and
+[1035] every single launch week would say yeah
+[1038] guess what we're shipping and people
+[1040] would be like functions we' be like no
+[1043] no we're not and then after like four
+[1046] launch weeks people like win the air for
+[1048] shipping functions so um we had to scout
+[1052] around to find like an open source
+[1053] runtime for for running functions and
+[1057] Dino of course um sort of made the cut
+[1060] but actually the way I like to position
+[1063] our functions is uh because they serve a
+[1065] very important Purpose with databases is
+[1068] not to like for example if you're using
+[1070] nextjs I actually recommend you just
+[1072] bake all of that sort of routing logic
+[1074] in there but where it's useful on the
+[1076] database side I like to refer to them
+[1079] more as like background workers so as an
+[1082] example we're becoming very popular for
+[1084] AI applications because of PG Vector you
+[1086] can store your embeddings in postgress
+[1088] do rag all these sort of things but
+[1091] creating the embeddings itself um you
+[1094] wouldn't really want to do it inside the
+[1096] database CU it's a lot of compute and
+[1098] you choose your compute size so what you
+[1100] want to do is maybe someone insert some
+[1103] content and then you need to shove out
+[1105] this workload to somewhere else like a
+[1107] background worker and now we're starting
+[1109] to bake a lot of this embeddings AI
+[1112] tooling into the edge functions itself
+[1114] so you can now like insert a million
+[1117] rows of content and it'll trigger out a
+[1120] million of these workers Edge functions
+[1123] they'll create the embeddings and stuff
+[1124] them back into the database we call them
+[1126] database web hooks that's the way to
+[1128] offload the
+[1130] computer gotcha I was going to just
+[1132] bring up now now that you you mentioned
+[1135] uh PG vector and and um and that
+[1138] technical bit is that nice because
+[1141] you're built on postgress that you can
+[1142] just utilize something like PG vector
+[1145] and and likewise like was that a tough
+[1147] technical challenge to implement into an
+[1149] existing
+[1151] product yeah actually no there's another
+[1154] funny open source story that I just want
+[1156] to touch on here so the way that PG
+[1159] Vector came about was because this guy
+[1161] came in he emailed me directly and he's
+[1163] like ah you know I'm building this this
+[1165] is probably February 2023 free or
+[1169] something like that he's like I'm
+[1170] building this tool and I need a store in
+[1172] biddings and there's this extension
+[1174] called PG vector and no one's using it
+[1177] like none of the postgress host can you
+[1179] please uh merge it I've created a PR
+[1181] here and I looked at the pr is just very
+[1183] well structured and everything and I
+[1186] jumped on a call with him and I said uh
+[1189] you know what are you doing and he
+[1190] talked me through it and I said okay
+[1192] I'll merge it as long as you create like
+[1196] a like a chat with your Docs inside our
+[1199] docks which had actually not not been
+[1203] done before and so we called it clippy
+[1205] you can like search for super base
+[1207] clippy as a joke because we were really
+[1209] worried that it would be so that it
+[1212] would give the wrong answers and
+[1213] everything like that and clippy was of
+[1215] course terrible like that so anyway the
+[1218] guy the guy did it on a contract and
+[1220] like it was so awesome that of course we
+[1223] hired him and that's the Genesis of py
+[1227] vctor we were the first postgress
+[1229] hosting company to offer PG vector and
+[1232] we've been working on it now now it's
+[1234] we're not the main creators it's a guy
+[1237] called Andrew C but we support him along
+[1239] with a few other companies that you
+[1242] we're really grateful for as well
+[1243] because the performance of PG Vector in
+[1245] the past year has rapidly increased
+[1249] which is pretty cool to see and um now
+[1252] the thing that you asked like is also a
+[1255] really interesting Insight like how hard
+[1257] was it to offer this new product and
+[1260] this is like where I think our product
+[1262] strategy is a little bit unique you can
+[1265] think of postgress as like a really
+[1267] common substrate and we think of almost
+[1270] everything like a postgress problem and
+[1272] we have a couple of other Primitives
+[1274] that make postgress really easy to use
+[1276] or yeah the background workers Edge
+[1279] functions um storage for file storage
+[1282] and um yeah like a few extensions that
+[1285] can trigger things but if you like these
+[1287] are what I call like the sort of uh
+[1290] first order Primitives that you need to
+[1292] build almost anything but then we can
+[1294] mix and match all of these to create
+[1297] these second order Primitives and our
+[1299] first foray into like this product was
+[1302] actually the vectors like we've got a
+[1305] whole section of our docs called super
+[1307] base Vector but actually it wasn't
+[1309] really a new product it literally was
+[1311] hey turn on this extension and here has
+[1313] a bunch of docs on how to use it and it
+[1315] turns out that postgress is so
+[1317] extensible that we could do this with
+[1319] several things and probably will
+[1321] eventually like search you can use
+[1323] postgress for searching cues you can use
+[1325] it for workflows so they're kind of like
+[1328] more solutions here's how to use our
+[1331] Primitives to achieve a certain solution
+[1334] and so yeah that's what I really liked
+[1336] the most about postest it's
+[1338] extensibility gives us that that option
+[1340] we can just think of everything as a
+[1342] postgress problem definitely on that
+[1345] note about documentation though like
+[1347] superbase has some of the best best
+[1348] documentation like even before you added
+[1350] the AI stuff so I'm just curious did you
+[1353] have a strategy with that to like make
+[1354] sure you had good docs and then also I
+[1357] mean it was cool to see like superbase
+[1358] did the clippy thing and now almost
+[1360] every docs you go to have like AI so you
+[1363] can you can uh free form search and the
+[1365] docs will like give you an answer for it
+[1367] so yeah so like who worked on that
+[1368] what's what's your secret uh it's super
+[1370] cool yeah very much uh shared effort
+[1373] over the years I remember docs were
+[1376] extremely important at the start I
+[1378] remember spent a a week and my my goal
+[1380] at the start was like you should be able
+[1382] to consume from start to finish
+[1385] everything in a couple of hours so that
+[1386] you kind of understand what you need to
+[1389] um so the conciseness was really
+[1391] important and yeah we were using
+[1393] docusaurus eventually we kind of outgrew
+[1395] it we wanted to make it like more of a
+[1398] product like docs as a product the guy
+[1401] Greg who merged PG Vector was really
+[1403] responsible for a lot of that um sort of
+[1406] early the AI type productizing and then
+[1409] we hired hired someone Caris who has
+[1413] just focused really on this not only the
+[1415] development of the docs but the
+[1418] information architecture of like making
+[1420] it really concise and also like our goal
+[1424] as like docs as a product is somehow to
+[1426] bleed docs into the dashboard and the
+[1429] dashboard into the docs so you'll start
+[1431] seeing like you know the keys appearing
+[1434] and everything yeah that's that's kind
+[1436] of the goal that's super cool to see
+[1438] though cuz in in the dashboard like
+[1440] you're saying like there's documentation
+[1441] but it has my endpoints my my keys in it
+[1444] as well so that's super cool to see yeah
+[1446] we have also like because yeah you
+[1448] touched on the restful interface that
+[1451] you get free of charge it auto scaffolds
+[1453] out of your database so it's kind of
+[1455] cool like we can it just has an open uh
+[1458] open API spec and we can literally
+[1461] generate like an entire like
+[1463] documentation page for you like here's
+[1465] the endpoint that you can click and
+[1467] here's the um super based JS query that
+[1470] you can run and like we can embed that
+[1473] everywhere and that concept actually
+[1475] came from Air table I really like air
+[1477] table as a tool and I I actually I think
+[1481] a lot of their DX like imagine air table
+[1485] but it was postgress then you would have
+[1487] kind of this killer product right um cuz
+[1490] they had this Auto or have this
+[1492] autogenerated API as well but their docs
+[1495] would also autogenerate as you change
+[1497] the the scheme so yeah that initial
+[1500] version of like autogenerating docks um
+[1502] came from my use of air T nice nice yeah
+[1506] and and I I suppose that helps keep
+[1508] everything up to date I would imagine
+[1510] once your product continues to grow and
+[1512] grow and grow uh it's pretty easy for
+[1514] docs to get out of sync next thing you
+[1516] know user having issues yeah yeah man
+[1520] that it's it's a big challenge uh with
+[1522] such a large project so yeah kudos for
+[1524] executing on it on it so well I I want
+[1526] to talk about the the product again in
+[1528] terms of like the underlying Tech behind
+[1530] it so when you when you first started it
+[1534] uh vers
+[1535] today like May let's talk about first
+[1538] the UI Tech so what's the UI built on
+[1541] and then how has that changed over time
+[1543] is it same same initial code base or is
+[1547] it evolved into different platforms or
+[1549] what's the story there um
+[1552] so yeah I think what we had at the start
+[1556] was a next shares for our dashboard and
+[1561] docusaurus for our landing page and docs
+[1564] mhm then we moved everything to nextjs
+[1568] and we started using yeah a mono repo so
+[1572] we could do shared components moved out
+[1574] docks in uh yeah and that was the goal
+[1578] like the goal was to get this really
+[1580] consistent feel so like you can almost
+[1583] feel like the whole dashboard becomes
+[1586] yeah one product is kind of the the goal
+[1590] and make sure we've got consistency so
+[1592] that's where like nextjs and and I think
+[1595] um yeah turbo repo was we're early
+[1598] adopter there just to make sure that we
+[1600] could get this very consistent feel and
+[1603] uh UI and we've got Johnny you might see
+[1606] him on our Twitter he shares Sometimes
+[1608] some of the Design Systems and things
+[1610] and he's phenomenal at coming up with
+[1612] yeah some great components and things so
+[1614] we've also got this very Kaizen approach
+[1617] to everything so like sometimes you'll
+[1619] see that things are a bit inconsistent
+[1621] uh in our dashboard is because like he's
+[1623] trying out some new component that we're
+[1626] going like or a pattern that we're going
+[1627] to spread out throughout everything and
+[1629] it might just get tested in one area or
+[1632] he's fixing my poor design decision from
+[1634] from 2020 probably is the other the
+[1637] other thing that he's doing so yeah
+[1639] we've leaned really heavily into nextjs
+[1642] um which has been great yeah of course
+[1644] um you mentioned starting
+[1646] naively so uh that that fits in well
+[1649] with that I think that's the best way to
+[1650] start though right you just get going
+[1651] and worry about it later um you
+[1654] mentioned Kaizen as well do you want to
+[1656] just give a a quick quick couple second
+[1659] what that is and and what it applies
+[1661] here yeah it comes from the Toyota
+[1663] production system um Kaizen means um uh
+[1668] continuous improvement from the CEO to
+[1671] the assembly line worker is kind of the
+[1673] the term so it doesn't matter what
+[1676] you're doing everything is a process
+[1679] that can be improved and importantly
+[1682] incrementally improved is one of the
+[1684] things that we put a lot of emphasis on
+[1686] like if people come out with big bang
+[1688] projects we just say no it's got to be
+[1690] done like in a very small way chunk it
+[1693] down to a couple of weeks at most and do
+[1696] increments everywhere so even like our
+[1699] branding and you know people like to
+[1701] Rebrand their website or something like
+[1703] that we haven't done that we've just
+[1704] like evolved The Branding of the website
+[1707] yeah yeah yeah yeah it's kind of like
+[1709] iOS does that too right like yeah little
+[1712] components change here and there next
+[1713] thing you know it's uh very different
+[1715] over time does that come from you the
+[1717] Kaizen uh philosophy or or did that is
+[1720] that is that something that you brought
+[1721] to the table Yeah I think that one's
+[1723] kind of one of my like core life values
+[1726] actually I think that everything should
+[1728] be approached in this small Improvement
+[1731] type way I love it nice so talking about
+[1735] internals we talked about the UI Tech
+[1736] it's built with xjs can you talk a bit
+[1738] about like the open- source super base
+[1740] stack so you mentioned the initial thing
+[1743] was kind of like a plug-in for postgress
+[1746] uh what else is involved in in that
+[1748] stack yeah um the total stack is a few
+[1753] servers each one of them is open source
+[1755] so postgress we don't run a fork or
+[1757] anything like that we have a postgress
+[1760] bundle so our bundle has a bunch of
+[1762] extensions that's all we do so we bake
+[1764] the extensions in but that same one that
+[1767] you see in our open source is the one
+[1769] that you can self host and everything
+[1771] yeah um so that's the key component and
+[1774] then like the other components are for
+[1776] example as one that you mentioned
+[1779] postgress um which is an autogenerating
+[1781] API on top of postgress and um what
+[1785] you're going to find as I go through the
+[1787] tools is every single one is written in
+[1789] a different language unfortunately for
+[1792] us but you know usually they're the
+[1794] right tool for the job for a particular
+[1796] reason so post rest um actually I had
+[1799] used it this stack um in my previous
+[1803] startup which is why I was so confident
+[1805] on it and it became the early stag but I
+[1808] had also like written a blog post about
+[1810] it and had reached out to the maintainer
+[1814] to make sure everything was okay to say
+[1815] in the blog post so I kind of knew him
+[1818] and then when we were starting super
+[1819] base I reached out to him to say uh you
+[1822] know is it all right if we use it and
+[1823] super base and promote it and uh
+[1825] anything that we can help with and he
+[1827] said ah you know we're looking for some
+[1828] sponsorship and I need $200 a month or
+[1832] something like this to keep maintaining
+[1834] it and I said like what are you doing
+[1837] and he literally was not working on
+[1840] anything and I was like well there's no
+[1842] way you can maintain this for $200 so we
+[1845] just employed them immediately um to
+[1848] work on that full time yeah so this is
+[1851] like the best reoccurring story here is
+[1852] that you needed something so you
+[1855] employed them that's great yeah well and
+[1858] just such a good common good for the
+[1860] world you know like so many people use
+[1862] postgress and it's it's so hard as a
+[1865] open source maintainer to make money
+[1868] from sponsorships I mean like $250 a
+[1872] month the poor guy I mean he lives in
+[1874] Peru but still the it's for the value
+[1878] that the world gets it just seemed
+[1880] completely uh unfair so anyway um we
+[1883] have maintained uh he has maintained
+[1886] that um for us but for everyone else for
+[1889] for the past few years but that's been
+[1891] really helpful for for the super based
+[1893] Community too because we've had it to
+[1896] patch a lot of things that are important
+[1898] for our customers as well but we try to
+[1901] make sure that nothing's super Bas
+[1903] specific he makes choices only for the
+[1906] community um or actually came from NFI
+[1909] um they had an or tool which they I
+[1912] guess we didn't have or when we launched
+[1915] which was kind of funny because your
+[1916] database wasn't safe but everyone was
+[1919] asking for it and our promise to the YC
+[1921] Community because we got launched on
+[1923] hack use um was that we'll build or but
+[1926] we'll do it in a very postgress native
+[1928] way and they're like well good luck and
+[1930] we spend all of our weissy badge trying
+[1932] to figure out how to do this and we
+[1934] ended up yeah finding go through by by
+[1938] NFI integrating that with postgress Road
+[1941] level security which was quite a bit of
+[1943] work but we ended up getting there and
+[1945] in the end that one we actually had to
+[1947] for because um yeah it diverged so much
+[1951] that we couldn't Upstream some of the
+[1953] stuff um so yeah storage we have a
+[1956] storage engine for large files um that
+[1959] one as well we had to create ourselves
+[1961] it just sits on top of S3 so it's a very
+[1965] simple ingestion engine um can stream
+[1969] can do Transformations things like that
+[1971] but we do integrate with um image proxy
+[1974] and support and Upstream a lot of
+[1976] tooling there to integrate with
+[1978] postgress so doing things like
+[1980] distributor locking um so that's been a
+[1983] lot of fun working with the evil Martian
+[1985] team on that side yeah oh they're great
+[1988] aren't they yeah yeah I'm a huge fan of
+[1990] their their blog in general um and for
+[1993] the S3 thing for self hosters you just
+[1997] give give the uh config a S3 bucket or a
+[2001] location and it super base does the rest
+[2004] is that the the scoop uh yeah so on that
+[2006] one so our self hosting if you want the
+[2009] entire stack is just a Docker compos so
+[2011] you put Docker compose up and inside the
+[2014] dock compose you put your S3 uh access
+[2018] key and um secret and so that will route
+[2021] it to your to your bucket you can
+[2023] actually just each one of the components
+[2025] because of the way we designed it can
+[2026] also be selfhosted individually so you
+[2029] could take the storage engine for
+[2031] example Chuck it on fly and then use it
+[2033] with tigas or something like that or
+[2036] wherever you want I I don't see a lot of
+[2038] that funn enough I thought there would
+[2039] be a lot more like oh I want this
+[2041] individual tool our or server for
+[2043] example is in go and it's very simple I
+[2046] thought a lot of people would use it but
+[2048] but they don't really they just want to
+[2050] use the entire stack together rather
+[2052] than one individual
+[2053] tool yeah I guess that makes sense
+[2055] though yeah and personally I've self
+[2057] hosted it and I I think it's because
+[2059] ease of use it's literally a Docker
+[2060] compose up so I didn't have to worry
+[2062] about like swapping out the pieces and
+[2064] then for the S3 storage I just
+[2065] self-hosted minio so all of that kind of
+[2067] just works together nice I think overall
+[2069] it's really cool to hear that even
+[2071] though super base is built on top of all
+[2072] this open source stuff it's you're
+[2074] you're basically giving back to the
+[2076] community you're making sure that all of
+[2077] those open source libraries stay
+[2078] maintained and superbase isn't going to
+[2081] fail if one of these libraries fail
+[2082] because you're you're heavily invested
+[2083] in in them as well so that that's really
+[2084] cool to hear yeah over overall I think
+[2086] that that seems to be like a one of the
+[2088] very positive messages you know one one
+[2090] trap that you can get into hosting a
+[2092] podcast like this is uh people come on
+[2094] to pitch their product and it's just
+[2096] like here here's my product and here's
+[2098] why my product is so great and why you
+[2100] should be locked into my product forever
+[2102] um but like that it feels so much uh um
+[2106] I don't know it feels great to be able
+[2107] to talk about a project like this that
+[2110] doesn't lock you in that enhances your
+[2112] workflow you can host yourself if you
+[2114] want it and and I'm the opposite from CJ
+[2116] CJ have you always hosted your own super
+[2118] base whenever you gave it a try okay no
+[2121] when I first tried it the the self host
+[2123] option wasn't available just yet okay
+[2126] more recently when I was trying like
+[2127] coolify and some of the self-host server
+[2130] stuff that's that's finally when I spun
+[2131] on my own instance yeah I I'm I'm the
+[2134] type of person that I will look at the
+[2135] fact that you can host it yourself and
+[2137] just say I'll sign up for the service
+[2138] anyways and uh and for the most part you
+[2141] know I I've had just uh nothing but ease
+[2145] when getting into it and so when you're
+[2147] designing this as a as a product on top
+[2150] of an open source
+[2152] project how much of a consideration is
+[2154] that to make like I I know you don't
+[2157] want to make the the selfhosted version
+[2159] any worse but how do you how do you like
+[2161] make this into a viable business so
+[2163] people aren't just taking your your code
+[2164] and running with it yeah it's actually
+[2167] one of the hardest things of Open Source
+[2170] what I've realized is no matter how open
+[2173] source you are you can never be open
+[2175] source enough for some people so I I
+[2178] have this like yes blog post in my brain
+[2182] which i' be meaning to post and like
+[2184] there's several spectrums on upon which
+[2186] they'll judge you so the first is like
+[2188] your license how open source is your
+[2191] license and so we actually check all
+[2193] those boxes cuz we have only MIT uh
+[2196] postgress and Apache License the second
+[2199] is how self- hostable you are is
+[2202] actually it's actually unrelated to open
+[2205] source by the technical definition but
+[2207] people will judge you by that then the
+[2210] third is actually are you a commercial
+[2212] entity and if you make money people just
+[2217] not think you're open source enough
+[2218] that's what I've come to realize and so
+[2221] it's a tricky like I just that third one
+[2224] I think is unfair and I just
+[2226] categorically remove them from my my
+[2228] brain now if I'm talking to those people
+[2231] I know that we can't satisfy them which
+[2233] I think they do such a disservice to the
+[2235] open source Community because of course
+[2238] then open source maintainers feel bad
+[2241] asking for money and of course then they
+[2243] stop maintaining things which I wish
+[2247] that all the money's all the money in
+[2249] the world poured back into open source
+[2251] that's would be the ideal situation in
+[2254] society yeah yeah we do a a big open
+[2256] source uh donation here where Chad from
+[2259] Sentry has wrote an app that scans our
+[2262] our repo so even the syntax repo and
+[2264] then donates an allocated amount to all
+[2266] the projects on a on a consistent basis
+[2269] and it's like that was so simple for him
+[2272] to set up it's a small allotment we're
+[2273] getting so much benefit out of these
+[2275] projects like it would be trivial for
+[2278] many companies to set this up yet
+[2280] they're more satisfied with you know
+[2282] just taking the code and running really
+[2284] yeah yeah I think on the self-hosting
+[2288] side I get this question a lot like uh
+[2291] do you hobble it so that people have to
+[2292] use your Cloud hosted service the answer
+[2296] is no not at all like we don't like
+[2298] intentionally try to do anything but we
+[2301] have a lot of work to do even on our
+[2304] platform right and these people are kind
+[2306] of paying for it they're the ones who
+[2308] will jump up and down rightfully so like
+[2310] if things are not working they like oh
+[2312] I'm paying you $25 a month can you fix
+[2315] this thing versus the ones who are
+[2318] saying you know I'm paying you nothing
+[2319] can you fix this thing you of course
+[2322] have to focus on the person who's giving
+[2324] you money I mean that's just out of
+[2327] fairness to them so we try like it's
+[2330] very hard to balance these two because I
+[2333] quite obviously I hope demonstrate to
+[2336] the world that we are open source and
+[2338] focused on open source but it doesn't
+[2340] mean that we can spend all of our time
+[2342] focusing on on customers who who want to
+[2346] sell for it's just not the way that we
+[2348] can operate a good business maybe as we
+[2350] grow and we make more Revenue we'll be
+[2352] able to allocate a lot more of that
+[2354] Revenue towards that but we're not at
+[2356] that stage yet yeah but you know you
+[2360] mentioned that the you can never be open
+[2362] source enough and that is true you could
+[2364] be as open source as possible there's
+[2367] still going to be someone on the
+[2369] internet complaining uh no matter what
+[2371] so you know I think like you mentioned
+[2374] optimizing for the paid customers is
+[2376] great giving the open source options
+[2377] self-hosting options those are all great
+[2380] so it feels very like I don't know it
+[2382] feels very open and transparent so it
+[2384] would be surprising that anybody and
+[2387] sure enough I I can imagine someone's
+[2388] going to leave a comment on this like oh
+[2390] this is a great ad for super base it's
+[2391] like okay somebody did that with our
+[2393] pocket base episode we talked about
+[2395] pocket base for like 20 minutes somebody
+[2397] was like this is an ad and like it's not
+[2398] an ad what are you talking about yeah I
+[2401] mean poka base is a yeah amazing open
+[2404] source tool like and I yeah the good
+[2407] thing is like you know like they don't
+[2409] have a hosted option so like they can
+[2411] check all of those boxes you know like
+[2414] they truly are an open- Source um
+[2417] product so like you know if they bring
+[2419] out uh a host option then they will fall
+[2422] into that last category but yeah I I
+[2425] think it's like it's kind of fair like
+[2427] it keeps you keeps you focused on your
+[2430] community at the end of the day like we
+[2432] also want to serve them and people
+[2434] jumping up and down gets the you know
+[2437] gets our attention that's the truth and
+[2439] like we want to solve all those problems
+[2441] if we had infinite resources we we
+[2444] really would so you know it it does
+[2446] serve a purpose when people complain out
+[2448] loud and it's one of those things that
+[2450] we learned to manage um especially me
+[2454] personally they would make personal
+[2456] attacks and things say that you know
+[2459] we're devious or whatever but there was
+[2461] a kernel of Truth in what they were
+[2463] saying like we weren't as you said CJ
+[2466] maybe you used it when the like in 2020
+[2469] we didn't have the dashboard open
+[2470] sourced yet it's literally because I was
+[2473] too afraid to open source for security
+[2476] reasons they had had billing code and
+[2478] things like that so the exercise to move
+[2480] it to nextjs and turn it into a turbo a
+[2484] monor repo was actually quite an
+[2486] exercise to get it into the open source
+[2489] um and we spent a good couple of months
+[2491] but largely because of a personal attack
+[2494] and now I've I've um become a lot better
+[2498] at I think as you said Scott like you
+[2500] kind of just need to be clear well
+[2502] here's the contract that we have with
+[2504] you like we're not trying like here's
+[2507] our commitment to you in the open source
+[2511] this and not much more like we just need
+[2513] to make sure it's very clear and we're
+[2516] not trying to pulling the will over
+[2518] anyone's eyes in terms of how open
+[2520] source we are yeah it seems like you
+[2522] know you guys have definitely popular
+[2524] popularized the uh the whole launch week
+[2527] thing I I think you were really even
+[2528] some of the first ones that I saw do
+[2530] that if not the first and and seems like
+[2533] you guys just launch a lot and I know
+[2535] that goes along with your incremental
+[2537] updates but what is the the future of
+[2540] super base look like like what's the
+[2542] next step here because it it's a really
+[2545] well-developed product it does a lot of
+[2548] things like what what what even what
+[2551] else can you even do here you're asking
+[2553] for for me to reveal our next launch
+[2556] week is
+[2557] that oh does not have to be anything
+[2561] nonpublic it can be anything yeah no
+[2564] actually like we haven't really gotten
+[2566] to the bottom of the laundry list on
+[2569] almost all of the products so like o
+[2571] still has a few like really key features
+[2574] storage has a lot of key features like
+[2576] each one them the way that launch weeks
+[2579] work actually is kind of more internal
+[2581] at this stage where we need to organize
+[2584] the team they we're very asynchronous so
+[2586] we don't have meetings or anything like
+[2588] that so we just say well here's the date
+[2590] of the next launch week tell us what
+[2592] your like big project you're going to
+[2593] ship and they come and tell us oh this
+[2596] is what we're going to ship so yeah I
+[2599] actually don't even know what is in
+[2601] laundry I have some ideas of some things
+[2603] that are kind of new and exciting but
+[2606] you know the the next stages like are
+[2610] really around scale and types of data
+[2612] that people want to store people want to
+[2614] store a lot of their like um people are
+[2618] storing logs inside their postgress
+[2620] database which is just not a good idea
+[2622] they shouldn't be doing that so we need
+[2624] to solve that um but we do want them to
+[2626] store their data with us and their logs
+[2628] and all that sort of data so like you
+[2630] know we've got enough problems and as
+[2632] well people aren't using branching well
+[2635] enough they're not using
+[2637] the migrations well enough um we want
+[2640] better Integrations with all the you
+[2642] know the drizzles and things like this
+[2645] so so there's a a ton of stuff for us to
+[2648] to still solve in the database space
+[2652] yeah speaking of uh like branching and
+[2653] stuff like that congrats on the ga I
+[2655] know it was like two months ago at this
+[2656] point but if you didn't know superbase
+[2658] was in beta for like four years until
+[2660] two months ago can you talk about maybe
+[2663] some of those features because I I
+[2664] didn't even realize you all had
+[2665] branching now so that's super cool
+[2667] um and maybe what are some of the other
+[2668] recent things that you launched that
+[2670] people should be excited about that's a
+[2671] good question now that we're got to let
+[2675] me see what we did for
+[2678] GA we I will say I'm also looking at a
+[2680] blog post on super based it's called a
+[2682] top 10 launches from superbas G GA week
+[2684] so that's definitely something to check
+[2685] out what is our top I even wrote that
+[2688] and I can't remember
+[2690] all yeah I love it just a bit of
+[2693] something for everyone yeah yeah and I
+[2696] haven't I hadn't used that one yet
+[2697] either I mean there's there's so much
+[2699] new stuff that I need to explore in
+[2701] super base but the first one is
+[2702] bootstrap so you literally have a CLI
+[2703] that will create a new projects that's
+[2705] pretty sweet yeah that one's actually
+[2707] cool like we're going to do a bunch of
+[2709] these templates to like launch a project
+[2712] very fast so you can bootstrap with next
+[2715] Shar or spelt or you know whatever it is
+[2718] yeah as you said actually yeah these
+[2720] ones were like very cool the security
+[2723] performance and index advisor this one's
+[2725] cool because you know talked about you
+[2727] can use anything with um superbase this
+[2729] is one of those tools that like uh
+[2732] really fits into that category in that
+[2736] like I saw someone was like uh when we
+[2739] released our index advisor it actually
+[2742] gives you this hypothetical index if you
+[2744] add this index it will reduce the um
+[2747] latency on your query by 90% or
+[2751] something like that and so I literally
+[2753] saw like one day after we released it
+[2756] someone said oh I turn this on and my um
+[2759] my query is 98.5% faster so it like an
+[2763] media win yeah and that's cool because
+[2766] security as well on databases is is
+[2769] incredibly hard so and we lean into roow
+[2772] level security which can be a bit Niche
+[2774] so you know we want to build out a lot
+[2776] of this advisory stuff which you don't
+[2779] think about when you're like you don't
+[2781] want to have to learn if you think about
+[2783] a development life cycle you want to get
+[2786] started really fast and then you want
+[2788] information exposed to you only at
+[2791] certain points you don't want to have to
+[2792] be thinking about is it secure is it
+[2795] fast you just want to be thinking does
+[2797] it work then after you get it working
+[2799] you want to think oh is it safe is it
+[2802] secure is it uh fast and that's where
+[2805] the advisor is kind of the right
+[2807] information at the right time after
+[2809] you've done prototyping it even on your
+[2811] local machine uh you can then go to the
+[2813] advisor have a scan through like all the
+[2817] um B the recommendations and like enable
+[2820] this index or do that and so it's kind
+[2823] of like a nice workflow pattern where
+[2825] you focus on building and then focus on
+[2827] the secondary
+[2829] steps yeah and that work that tracks too
+[2831] with what you were saying about maybe
+[2832] even initial some of those first
+[2834] customers being jamstack or even
+[2837] primarily non backend developers right
+[2839] like those people are the the prime
+[2841] candidate for somebody who's not going
+[2842] to write an index when they should and
+[2845] they're going to see potentially slow
+[2847] queries because of it so having any kind
+[2849] of adviser there is a a great way to not
+[2851] only like help them but to like educate
+[2854] them you know I think that that's kind
+[2856] of like a step most people have to go
+[2857] through when they're learning about
+[2859] performant database uh queries or any of
+[2861] that stuff MH one thing on the advisers
+[2863] I think like credit really goes to
+[2866] Planet scale on this one because I think
+[2867] they do a phenomenal job on on database
+[2871] performance and really exposing like for
+[2874] a developer how to make the queries
+[2876] faster so yeah I think like we look up
+[2879] to them in that respect and terms of
+[2881] building a really good product for for
+[2884] performance that's cool to hear we we
+[2885] host on planet scale and have used their
+[2888] branching have used their yeah their
+[2890] indexing features like that so yeah uh
+[2892] that's cool to hear yeah it sounds to me
+[2894] like you could even take your postgress
+[2896] database to superbase and all of a
+[2897] sudden get a bunch of really good info
+[2898] even if you're not using the rest of the
+[2900] product just all of a sudden you have
+[2902] bunch of insight into your database
+[2903] which is pretty cool uh so one last like
+[2906] light-hearted question the superbase
+[2907] account on X is uh uh really good at
+[2911] posting uh memes and stuff like that so
+[2914] you mentioned at the start of the the
+[2916] the interview that you like memes do you
+[2918] run that account or is it like do you
+[2919] have like a slack where people like
+[2921] Workshop meme
+[2923] ideas that's my co-founder um who funny
+[2926] enough is our CTO uh who spends a lot of
+[2930] time on our on our Twitter we we also
+[2933] have an internal memes Channel which is
+[2935] great for hiring around um we literally
+[2938] sometimes hire people because they like
+[2940] the reason why they get a ahead is
+[2942] because they're good at memes on
+[2944] Twitter so yeah I I think like our
+[2948] strategy there no one wants to see a
+[2950] boring corporate Twitter account we
+[2952] actually had never used Twitter before
+[2955] this really like I think we had accounts
+[2957] but had never really done developer
+[2960] marketing but the one thing that we did
+[2962] think is like no one just wants to read
+[2964] about super base this product that
+[2967] they've never heard of they just want to
+[2968] hear about like shipping cool and
+[2970] doing memes and so we were already
+[2971] sending memes to each other and he just
+[2973] started posting them on on uh on Twitter
+[2977] so yeah it's worked very well for us if
+[2979] you can do it right it works I mean
+[2981] sometimes like for certain companies
+[2983] it'll come off as cringe but super B is
+[2984] doing it right for sure I always have a
+[2986] a chuckle every morning that's the other
+[2988] funny thing we realize that we actually
+[2991] realized this by trying to hire someone
+[2994] to do this for us instead of ant doing
+[2996] it
+[2997] and we realized that actually it's very
+[2999] hard to find someone who can do it right
+[3002] and so now we're like well and that's
+[3005] clearly the only thing you should be
+[3006] focused on and um and other companies
+[3010] kind of just can't pull it off I see
+[3012] sometimes like our competitors have
+[3014] clearly looked at our Twitter and
+[3015] they're like ah let's do what they're
+[3017] doing they got a lot of followers now we
+[3020] need to do and I look at what they done
+[3023] and it's just very cringe just really
+[3025] off theark you kind of get memes or you
+[3028] don't it seems so um yeah a lot of them
+[3032] a lot of them don't but yeah get a good
+[3035] uh Chief meme officer on your on your
+[3037] team and you're good yeah all right so
+[3039] now's the part of the show where we talk
+[3041] about sick pcks and Shameless plugs Paul
+[3043] do you have a sick pick for us today
+[3046] yeah so I just arrived in the US two
+[3050] weeks ago and I bought to try it out the
+[3055] like an apple Vision Pro so I've been
+[3058] testing it because I fly a lot I travel
+[3060] a lot so the idea is then I can work on
+[3062] a plane I work in a hotel room so I've
+[3066] been trying it out so far I think I'm
+[3068] still in the honeymoon phase of this I
+[3071] don't know whether it's going to be a
+[3073] regular feature in my life but I'm very
+[3075] impressed with the technical aspects of
+[3079] yeah the Vision Pro Software a little
+[3082] bit to be not many things to download on
+[3085] it at this stage but yeah for usefulness
+[3088] as a as a like monitor second monitor or
+[3092] multiple monitors has been good so far
+[3095] yeah I I have one too I use mine a lot
+[3097] like if I'm working outside like I'm
+[3100] working at a um like a table outside I
+[3102] no longer I'm constrained to my little
+[3103] laptop blow it up there's an app that if
+[3106] you don't have yet split screen okay it
+[3109] allows you to do multiple monitors so
+[3112] you could have several monitors and so
+[3114] that that's a must have for me I use
+[3116] that one a lot
+[3117] uh but I I agree there's not a ton ton
+[3119] to use right now but the experience is
+[3120] really pretty incredible huh yeah yeah
+[3123] it's crazy like I I
+[3126] actually uh in another startup life
+[3129] worked on like kind of metaverse and AR
+[3132] VR and I like went deep on a lot of the
+[3136] things that could be solved and I
+[3138] thought well the technology the hardware
+[3141] just isn't going to be there until like
+[3143] 2026 2028 um 10 years ahead and what
+[3147] they've delivered now is kind of just
+[3149] pulled forward five years it's crazy
+[3152] yeah it's crazy yeah it feels like the
+[3153] software is what's lagging which is the
+[3156] the the crazy bit yeah yeah um in
+[3160] Shameless plugs is there anything you
+[3161] would like to plug yeah I mean of course
+[3165] like if um if people want to use super
+[3168] base I would love them to use it but I I
+[3170] guess the real plug um from my point of
+[3173] view goes to postgress I think it's just
+[3176] such a good tool it's really becom
+[3179] better all the time it's one of the most
+[3181] unique open source communities that I've
+[3184] ever seen and I can see it becoming kind
+[3187] of just a staple to the world so I think
+[3191] it would be hard to plug super base
+[3194] without just directly giving a lot of
+[3196] the credit to postgress itself nice
+[3199] awesome well Paul it's been amazing
+[3201] having you on um it's really great to
+[3203] learn about internals tools all that
+[3206] sort of stuff and uh man I I can't wait
+[3208] to see uh where super base goes from
+[3209] here so um thank you so much thank you
+[3213] peace peace

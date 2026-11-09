@@ -1,0 +1,234 @@
+[0] yuffie seesup you see okay yeah what the
+[3] heck is this okay this is bad and no no
+[7] don't read it all I'm gonna I'm gonna
+[8] read it out too because it starts bad
+[10] and then gets hilariously bad okay
+[13] yuffie a sub brand of charger slash
+[16] Battery Giant anchor has been caught
+[19] sending pictures to their Cloud servers
+[21] without user consent oh to which you
+[24] might say yeah surprise surprise but
+[27] wait there's more Paul Moore a security
+[30] consultant was reviewing the yuffie
+[32] doorbell duel a camera equipped smart
+[34] doorbell that claims that recorded
+[36] footage will be kept private and stored
+[38] locally with military-grade encryption
+[41] what does that mean that means AES 256.
+[44] okay as far as I can tell nice
+[46] but upon some snooping it turned out
+[49] that yuffie was sending user data to the
+[51] cloud including full resolution images
+[53] from the camera despite claiming in
+[55] their marketing materials that the files
+[56] are stored locally and there's no Cloud
+[58] integration oh oh there's a link we can
+[60] actually check their website now
+[62] ready have they updated no clouds or
+[65] costs
+[66] whoopsie daisies
+[69] no cost because you're the product
+[70] anyway sorry
+[72] um
+[73] the files are not only uploaded to the
+[75] cloud but also tagged with facial
+[77] recognition that ties the images that
+[80] ties the images to a user whoa okay it
+[85] also takes a snapshot of the feed before
+[87] a face was recognized and uploads that
+[90] to the cloud as well
+[91] and it's not like Mr Moore is just
+[94] making things up you know going on Mr
+[97] Moore's story time to make yuffie look
+[99] bad other users have tested the same
+[101] thing and found that the files were
+[103] uploaded even when they had never used
+[105] the web UI wow but wait it gets even
+[109] better
+[111] you might think that Mr Moore might have
+[114] reached out to yuffie and been ignored
+[116] yeah
+[118] not so
+[120] he reached out and they replied saying
+[123] that they were aware the photos were
+[125] being uploaded and that it was for
+[128] notification purposes no and that the
+[131] pictures were deleted afterward
+[134] oh
+[136] they also said that they plan to encrypt
+[139] the API messages no way you plan on
+[141] doing this meaning well no no this is
+[144] I'm sure they do because that will make
+[146] it harder for users to detect that their
+[148] images are being I said that
+[151] well no they didn't say the quiet part
+[153] out loud okay but they said that they
+[155] will be encrypting the API messages
+[157] further testing by Paul showed that this
+[160] wasn't the case as after he deleted his
+[162] pictures and notifications from the app
+[163] he was still able to access the images
+[165] hosted online
+[171] oh no
+[173] another user discovered that you can
+[175] remotely start a stream and watch the
+[178] unencrypted live camera feeds without
+[180] authentication using VLC
+[185] this is this is junk we used to do when
+[188] I was in high school you can if you can
+[190] remotely start a stream and watch their
+[192] cameras live no authentication no
+[195] encryption
+[199] hey hey what's up Paul hey I actually
+[202] didn't know that we were specific that
+[205] was Paul I believe so on Twitter
+[207] um well great work Paul yeah yeah great
+[210] work indeed
+[212] um this is a massive
+[215] massive this is disgusting not just user
+[218] data you know mishandling Scandal this
+[222] is a legal problem
+[225] um apparently yuffie did initially deny
+[227] to Paul M what was going on
+[230] um there's another thing in here where
+[232] he deleted his ER yeah which I thought
+[236] he said yeah yeah yeah uh oh so that's
+[238] next oh wait he deleted his account
+[240] altogether never mind just deleting yeah
+[243] so he deleted the pictures first oh no
+[245] off his Local app or whatever and then
+[247] later uh he found out that after
+[249] deleting his account he could still
+[251] access his photos
+[254] wow so their whole like we're we're
+[257] getting rid of these we're recycling
+[258] these things he was also able to access
+[260] the aes128 that's slightly less military
+[264] grade encryption yeah the key in plain
+[267] text by looking at the API calls neat so
+[270] to recap it appears that yuffie is
+[272] storing images of faces with usernames
+[275] attached to them on public-facing
+[277] servers without encryption they expose
+[280] their own encryption keys and their API
+[282] calls and allow users to access
+[284] unencrypted streams without
+[285] Authentication
+[287] our discussion question compared to
+[289] previous breaches how bad is it
+[293] bad yeah well it depends which breach
+[295] you're talking about because we've had
+[297] like there's the Australian breach where
+[298] everyone's like passports leaked out
+[301] um but then there's been leaks breeches
+[304] that aren't as bad so I yeah I don't
+[305] know it's really bad though
+[308] um how do we stop companies from being
+[309] so uh
+[314] by suing them in ways that are actually
+[316] meaningful yeah like not just cost of
+[319] doing business fines like when something
+[321] this bad happens you actually it needs
+[324] to turn into Oblivion one of the biggest
+[326] everyone else is afraid you make an
+[328] example out of them we've talked about
+[330] this on One show actually a bunch one of
+[331] the biggest problems with tech lawsuits
+[334] is it's often
+[336] unimpactful amounts of money that they
+[338] have to pay well it's not just that it's
+[340] unimpactful it's that it takes so long
+[342] to reach a verdict and with all the
+[345] appeals and all the legal processes that
+[347] you have to go through in order to
+[349] actually reach the point where they pay
+[351] a fine that the amount that they have
+[354] probably made on that bad behavior
+[357] during that time dwarfs the cost of the
+[361] fine it's not even it's just not matter
+[363] it's not even just how much of a
+[365] percentage of their overall Revenue it
+[367] is it's on a per illegal action basis
+[370] that we're telling them
+[372] it's worth it go for it yeah absolutely
+[375] uh Cassandra asked are you guys going to
+[377] continue working with anchor over this
+[379] absolutely not you heard it here first
+[381] we're done with anchor and that sucks
+[383] because I really liked anchor yeah I've
+[385] liked a lot of their products over the
+[386] years that blows that is absolutely what
+[388] we should be doing but it just sucks
+[390] yeah yeah
+[394] if yuffie smart scale is sending
+[397] pictures of my balls and taint
+[400] okay
+[402] is that a bad thing
+[404] um sorry is that one of our discussions
+[405] that's a discussion question yeah
+[408] um I started reading that before I uh is
+[412] I have
+[414] this okay who wrote this topic this is
+[418] the discussion question completely
+[420] unaltered okay I have a yuffie smart
+[423] scale is sending pictures of my balls
+[425] and taint to the Chinese government
+[428] that's what's written on the dock
+[430] Justice is I should have read the whole
+[432] thing before I started actually reading
+[434] it out loud
+[446] is this one of those situations where
+[448] they went on a walk with their cousins
+[451] um uh wow um I don't know if the smart
+[453] scale has a camera pointed up I probably
+[455] doubt it I know I think it does what I I
+[458] think so
+[460] I thought it did
+[463] hold on well let's look it up this is
+[465] talking about like a smart doorbell not
+[467] a scale hold on maybe it has a camera
+[473] but I I don't know I don't know maybe it
+[476] does
+[477] maybe it does visceral fat like maybe it
+[479] like looks at your your tummy four
+[482] sensors I don't know Luke
+[486] I'm guessing
+[488] ah blah blah blah blah blah blah blah in
+[492] the shower you need to spend more time
+[494] scrubbing your nether regions
+[496] I mean that's a notification some people
+[498] can use this notification brought to you
+[500] by the
+[502] the UV smart scan
+[507] check on what's going out front going on
+[510] outside your friend's Doors by checking
+[511] out our our unencrypted door cam I mean
+[514] it might have a camera just because oh
+[517] yeah they're doing all kinds of things
+[519] they didn't say they were doing yeah
+[520] there you go it's not like a little tiny
+[522] pinhole camera costs anything pretty
+[524] much it could easily have one yeah they
+[527] you know even 1080p
+[530] wouldn't be that expensive
+[533] yeah that was a creepy one right
+[535] yeah we figured so so I have that Robot
+[538] vacuum thing now and my girlfriend was
+[540] showing me this super cool new feature
+[542] of how you can call it
+[546] and you can see out the front
+[548] and you can talk through it and stuff
+[550] and she was like oh yeah I think it's I
+[552] think it's cool I think it's just so
+[553] like people can like talk to their pets
+[555] and stuff and I'm like this is
+[556] horrifying I hate this we're taping over
+[559] this
+[562] it's not happening
+[567] not cool and a big problem there's no
+[569] reason why my my admittedly quite
+[572] awesome and very happy with it yeah
+[574] Robot vacuum needs a camera that is
+[577] accessible through like the internet and
+[580] stuff
+[581] um so

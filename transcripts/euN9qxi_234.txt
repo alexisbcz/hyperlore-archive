@@ -1,0 +1,2679 @@
+[0] [Applause]
+[7] [Music]
+[24] you're listening to the change log
+[26] conversations with the hackers the
+[28] leaders and the innovators of the
+[30] software world this week we are talking
+[33] with Burke jernstrom about polar his new
+[37] Creator platform for developers with big
+[39] Ambitions Burke hopes to take Indie devs
+[43] from their very first donation all the
+[44] way to IPO if that's what they want of
+[47] course we hear all about it the
+[49] backstory how it works why it works how
+[52] it works what the future looks like and
+[55] even give Burke some super deep user
+[57] experienced feedback live on the air we
+[60] hope you enjoy it as much as we did
+[62] quick mention of our partners at fly.io
+[65] the home of Chang log.com fly is a
+[68] platform that helps you launch your app
+[70] as close to your users as possible for
+[72] Peak Performance that's usually pretty
+[75] hard but fly makes it easy learn more at
+[78] fly.io okay Burke darstrom and polar on
+[82] the change log let's do it
+[90] [Music]
+[94] hey friends you know how much I love
+[96] tail scale and I also am a big fan of
+[100] Alex ketchner he does an amazing job for
+[102] tail scale showing off all the cool
+[104] things you can do with it and recently
+[106] he did a video on remotely accessing a
+[110] home assistant instance via tail scale
+[113] and you can do it totally free take a
+[114] listen under home assistant we're going
+[116] to go ahead now and install another
+[118] add-on so I'm going to go ahead and
+[120] install the visual studio code server
+[123] add-on whilst that's doing that I'm
+[125] going to go ahead and go back to the
+[126] tail scale add-on that we installed
+[128] earlier and just grab the piece of
+[130] configuration that we're going to need
+[131] from the documentation in the
+[133] documentation page do a command F or
+[135] control F and search the page for
+[138] 127.0 and there you go we just need
+[140] these four lines of code here home
+[142] assistant by default blocks connections
+[145] from untrusted proxies such as the tail
+[147] scale proxy in this case we're going to
+[149] add the 127.0.0.1 as a trusted proxy in
+[153] the list here so I'm going to go ahead
+[155] and copy this to my clipboard I'm going
+[157] to go ahead and click on start and then
+[158] also show in the sidebar and you can see
+[161] we're basically in Visual Studio code
+[163] but in a browser this is running
+[165] directly on home assistant and has
+[166] access to your configuration files and
+[168] what have you underneath all we need to
+[169] do is paste those four lines into our
+[172] configuration. yaml file and restart
+[174] home assistant so I've pasted the four
+[176] lines I'm going to go to the hamburger
+[178] menu up here click save
+[180] and then settings and restart home
+[183] assistant we want to go back to the
+[185] add-on section and under tail scale
+[187] we're going to have to go to the
+[188] configuration tab for the add-on and
+[191] click on tail scale proxy this is going
+[194] to turn on tail scale serve this is what
+[196] will automatically generate you a TLS
+[198] certificate using let encrypt for your
+[200] tail net. ts.net tailet name so if I
+[204] click on Save here it will take a moment
+[205] but it's going to restart the tail scale
+[207] add-on and so now I should be able to go
+[209] to HTT PS home assistant
+[212] Velociraptor and it's going to load my
+[215] entire home assistant instance over tail
+[217] scale with a TLS certificate using the
+[220] name from my tailet and I can log in
+[222] just as if I was using the IP address
+[224] and port number that I was before and
+[225] you can use this name from anywhere on
+[228] your tailet so any device that's
+[229] connected to your tailet such as a phone
+[231] for example that can now connect to home
+[233] assistant whether you're in the house or
+[235] whether you're at the coffee shop or
+[237] whether you're in Iceland looking at
+[238] volcanoes it doesn't really matter where
+[240] you are if you're one of the few out
+[242] there who have not tried out Tails yet
+[244] for free you can do so today up to 100
+[247] devices and three users totally free at
+[251] Tails scale.com no credit card required
+[253] just go there sign up get 100 devices
+[257] three users totally free that's where
+[259] I'm at I use tail scills totally free
+[261] and you can too I'll link up Alex's
+[263] tutorial in the show notes check that
+[265] out Tails scale.com do it now
+[276] [Music]
+[291] all right we are here with Burke from
+[292] Polar which is an all-in-one funding and
+[295] monetization platform for open source
+[298] and indie devel velers that's built
+[301] entirely open source itself Burke
+[304] welcome to the show thank you so much
+[305] happy to be here Jared and Adam excited
+[307] to chat about open source and end polar
+[310] today as are we he said it's slightly
+[312] different than you J you said polar he
+[314] says polar oh well what do you think J
+[316] we're on different parts of the
+[318] different parts of Earth you know you
+[319] tend to say things slightly differently
+[321] I also say polar not polar did I say it
+[323] weird or who said it weird that's you
+[325] Jared it's you I'm calling you okay I'm
+[327] the weird one out I don't mind I'll be
+[328] different I'm not even here in the
+[330] difference I didn't hear Polar Polar
+[333] it's a slight Nuance listen back listen
+[335] back okay right it's it's a Swedish for
+[337] those listening at 2x they'll have no
+[339] idea what we're talking about because it
+[340] was just way too fast to Nick is like
+[341] what are they talking about yeah nah
+[343] well this is cool first donation to iplo
+[346] I'm jumping the gun a bit but what's the
+[348] backstory Jared what's how do we get
+[350] here to to have this conversation well I
+[353] would love to hear burk's backstory of
+[354] course the backstory for this
+[356] conversation was pretty much Mitchell
+[358] Hashimoto who who we've known for a very
+[360] long time yeah announced that he was
+[363] becoming an adviser to Polar and anytime
+[367] I see somebody trying to help open-
+[370] source maintainers and developers make a
+[372] living doing what they love I think this
+[375] is awesome so I basically just reached
+[376] out to Burke and said let's do a show
+[378] and he said yes and that's that's pretty
+[381] I don't know was there more to it I
+[382] think that was pretty much it yeah and
+[384] I'm really excited to be on I I love the
+[386] podcast so I know you guys have covered
+[388] a lot on the open source topic before as
+[390] well so yeah excited to just have like
+[393] an organic conversation about open
+[395] source and how we can help the ecosystem
+[397] get more funding and for more people to
+[399] do it hopefully full-time so you're a
+[401] listener to the show too that's awesome
+[403] yeah I can't say I've listened to all
+[405] the episodes of course but you're not
+[408] you're out of here get out of here kid
+[409] just kiding so how then if you're we're
+[413] trying to get to how you began with this
+[416] why do you care about open source and
+[418] why do you care about
+[420] specifically funding open source cuz
+[423] there's different angles to sustain and
+[425] I imagine party restore is a
+[427] sustainability factor of Open Source why
+[430] do you care okay so I think the reason
+[433] why I care has goes back to like why I
+[436] fell in love with computers to begin
+[437] with so a bit of a personal story but my
+[440] mom was an entrepreneur when I was a
+[442] very very young kid and she ran a
+[443] business and we we actually lived in San
+[445] Diego for a few years when I was 6 to 9
+[447] years old un unfortunately that business
+[450] ended up going bankrupt and my mom took
+[452] it pretty hard and became like depressed
+[455] and had a rough time so it was a bit
+[458] hard at home when I was about 10 years
+[460] old so I kind of reud it into my own own
+[464] room as much as I possibly could and
+[466] Sweden had this great program at the
+[468] time where they subsidized computers so
+[470] I was fortunate to have a computer in in
+[473] my room and I was playing this online
+[475] video game basically every single second
+[477] I got and then one day I accidentally
+[478] right clicked view page source and
+[480] that's when my future presented itself
+[483] it looked like gibberish but I
+[484] understood you know I saw some sentence
+[487] here or there they recognized from the
+[488] site and my first thought was actually
+[490] that I accidentally kind of hacked this
+[493] game I've broken it so yeah so I just
+[495] hit like save this file shut down the
+[498] computer and expected the cops to just
+[500] come like racing in any given second
+[502] right but then I double clicked that
+[504] file again and I saw a website locally
+[507] and then I just started to Tinker right
+[509] and breaking the site and just fell in
+[512] love with programming very very early
+[515] and uh I was fortunate my stepdad was a
+[517] software engineer and he saw this and he
+[519] came home with some books but very early
+[522] on right like I didn't have the notion
+[524] of Open Source I don't think we really
+[526] called it that back then this was like
+[529] 98 but there were a lot of these forums
+[531] right where people were sharing code
+[533] snippits and like these different
+[535] libraries uh Source Forge and all of
+[538] these kind of services right and through
+[540] that that's basically how I become a
+[543] self-taught developer and so I really
+[545] feel that I owe my entire career and my
+[549] passion of coding to open source it's
+[553] the way that I've learned and become
+[555] selftaught uh so it's always been like
+[558] very near and dear to my heart so what
+[560] about this particular platform you're
+[562] building now was there a trigger moment
+[564] was there a story that's more modern
+[566] that leads to Polar itself yeah
+[568] definitely so so quick background on me
+[571] so I started a company called tikel that
+[573] was an e-commerce platform that was
+[574] acquired by Shopify in
+[576] 2017 18 sorry and so 2022 I was
+[581] tinkering on this project on the side
+[584] and long story short I need to build
+[586] like an uov provider in Python and this
+[588] is something that I had actually done
+[589] myself like 10 years earlier at tikil
+[592] the company that I started there was no
+[594] open source library at the time so it
+[595] took me about two weeks to build my own
+[597] solution for it this time I went to
+[600] GitHub and I searched again and I found
+[602] this Library called aib and an hour
+[604] later I had solved that same problem
+[606] that took me two weeks to solve 10 years
+[608] earlier and I just you know this happens
+[610] sometimes right you stumble upon a
+[612] library uh that solves a problem that
+[614] you've solved yourself sometime in in
+[617] the past and you just recognize the
+[620] effort and craftsmanship that went into
+[622] this Library I went through the code it
+[625] was much better than the one that I had
+[627] implemented so I felt fell in love with
+[629] this Library I was super grateful and so
+[631] I raised to GitHub sponsors to show my
+[634] gratitude and I see that this library
+[636] has you know thousands of dependence
+[637] thousands of commits but it's getting
+[639] like $5 a month in sponsorship and I've
+[643] always known you know the disconnect
+[644] between the value given of Open Source
+[647] versus the value received from its
+[649] creators but I guess this time it just
+[651] like really rubbed me the wrong way and
+[654] I just remember like getting upset that
+[657] they were getting like $5 and just
+[659] thinking that how can this still be the
+[661] status quo and why isn't more being done
+[665] to kind of just stir the pot and I don't
+[667] know experiment more to see how we can
+[669] change this and and create a pathway
+[672] where independent open source developers
+[674] can actually get decent funding so that
+[676] was sort of what the trigger moment and
+[679] the thought of just like how would you
+[681] go about solving this that threw me down
+[683] the rabbit hole that I haven't been able
+[685] to leave since M and that was about a
+[688] year and a half ago what caused you to
+[690] execute cuz uh being impressed and being
+[693] inspired and having a feeling is one
+[695] thing but then literally doing something
+[698] forming a team and executing is just
+[701] like that's kind of part of it but not
+[703] really so what made you actually do it I
+[705] think there were two things so the
+[707] project that I started with the reason
+[709] why I need to build an O provider in the
+[711] first place like that was so I was I had
+[714] quit Shopify and I was thinking about
+[716] what I want to do next and I wanted to
+[717] build something from from scratch again
+[720] and the idea I had at the time was
+[722] fairly just like logical it was just my
+[725] brain trying to come up with an idea and
+[728] so I could always explain it and Pitch
+[730] it but I always felt that my heart was
+[732] never like truly in it and then this
+[736] like moment came right where I just
+[739] thought why can't we fix this problem of
+[742] Open Source funding and it was the
+[744] opposite it made zero
+[747] sense but I just felt like in my heart
+[750] that this was a problem that I just got
+[752] really riled up about and so I just
+[756] immediately started just thinking and
+[758] exploring like how would you go about
+[760] this like how could you solve this and
+[763] you know started getting some principles
+[765] on how I thought that I would go about
+[767] it and then I started communicating that
+[770] talking to some open source developers
+[772] and the more and more I thought about it
+[775] the more convinced I became that this
+[778] was something that I just had to do and
+[780] was excited to do so there's lots of
+[782] different ways that people can bring in
+[786] money around or with their open source
+[790] work and we've covered many of them over
+[792] the years I think even in one of your
+[794] blog posts you were talking about Caleb
+[795] porio sponsor Weare I remember talking
+[797] with Caleb when he first kind of
+[798] invented the thing and realized it might
+[800] work for certain things and that was
+[802] very exciting because it's like okay
+[803] here's a new Avenue but there's no great
+[808] one where it's like everyone should just
+[809] do this right and it seems like your
+[813] strategy with polar is we're going to
+[816] provide tooling for all of them and you
+[818] just pick and choose which one you want
+[820] to do because you got newsletters you
+[821] got private stuff you got what looks
+[824] like sponsor Weare perhaps there's just
+[825] a lot of different ways that you can
+[827] execute currently inside polar maybe
+[830] talk about the current ways people can
+[832] make money with polar and then we can
+[833] talk about the strategy that you're
+[834] employing there to build it out so to
+[836] start the way you can get money on Polar
+[838] today is uh we have donations we have
+[841] classical sponsorships so basically
+[843] subscription tiers for people who just
+[845] want to sponsor you without any quid pro
+[846] qu whatsoever then we have membership
+[849] benefits so sort of imagine you know
+[851] patreon but explicitly for developers
+[854] and the open source ecosystem so this is
+[856] subscriptions but where we build native
+[859] builtin benefits that you can offer and
+[861] those benefits are things like
+[863] invitations to your Discord Channel with
+[865] a premium status for instance access to
+[867] some premium posts and newsletter
+[870] uh where you can provide content and
+[871] updates or deep dives into your library
+[874] and the next phase which then brings
+[876] membership benefits into pure sponsor
+[879] Weare is access to private GitHub
+[882] repositories as well however many you
+[883] want to set up and then the last one is
+[886] issue funding so you can very seamlessly
+[889] just embed the funding badge that we
+[891] offer on select GitHub issues so imagine
+[895] you have a backlog or a road map of
+[897] maybe 10 ideas that you would want to
+[899] pursue for your projects you could badge
+[901] them with our funding badge and
+[902] basically invite your community to help
+[905] out fund those efforts specifically uh
+[908] so those are the ways you can get
+[910] funding on Polar with today the next
+[912] step for us is more like pure
+[915] commercialization so I see it like two
+[917] kind of chapters or two buckets of
+[921] monetization tools basically so one is
+[923] like patronage which is all the ones
+[924] that I talked about and the next phase
+[926] for us is like commercialization so this
+[929] is the ability to sell products whether
+[930] that's like digital downloads and
+[932] digital files to ebooks and courses to
+[936] full-fledged SAS as well and like access
+[939] to private packages or license keys and
+[942] things of that nature as well so those
+[944] are the things that we're actively
+[945] working on right now and hope to launch
+[947] in the next you know three four months
+[949] or so it's pretty quick yeah we we're
+[952] very small team but we have a very just
+[956] clear idea on the road map and backlog
+[958] ahead and just you know yeah ship early
+[960] and listen to our customers and iterate
+[962] quickly as fast as we can well as Jared
+[965] mentioned there's many ways to fund and
+[967] I would say the Goliath potentially in
+[969] the room is GitHub sponsors and it tends
+[972] to be the centerpiece when it comes to
+[973] open source because most a large
+[976] majority of Open Source happens on
+[978] github.com doesn't mean they own it but
+[980] they've definitely captured the the
+[983] heart and ecosystem of Open Source and
+[986] we've we've mostly been happily hosting
+[988] open source Source there as a
+[990] community uh we think that you know
+[992] Microsoft has done a pretty good job of
+[994] it stewardship of GitHub obviously we're
+[995] fans of GitHub we got a lots of friends
+[997] inside a GitHub so nothing against them
+[998] whatsoever but I think the one challenge
+[1001] they've all they've also had with
+[1002] sponsors is how to grow it how to get it
+[1005] to even bigger there's great stories
+[1007] from Caleb what's his last name Jared
+[1009] you talked to him I wasn't on that
+[1010] podcast poro poro poro like that story
+[1013] is a you know a breakout hit obviously
+[1015] for get up sponsors what's challenging
+[1018] for that is that it doesn't do what
+[1020] you've done which is provide like way
+[1022] points in GI up sponsor is like a
+[1024] surface level and you got to find out
+[1027] how the value permeates down into the
+[1030] person or projects now we just had a
+[1032] great conversation with the creative
+[1034] gleam Jared again help me with the name
+[1036] gosh Louis pfold Louis pfold sorry Lou
+[1039] you're my best friend and he has getting
+[1042] great sponsorship on there gleam is very
+[1044] popular he's getting great support there
+[1047] but what I like about what you just said
+[1049] at least phase one or part one or
+[1052] product one I don't know how you want
+[1053] how you phrased it is that it kind of
+[1055] gives you way points in let you let the
+[1057] developers or the creators dream about
+[1060] where this project could go and just tag
+[1063] the issue or tag the whatever it might
+[1065] be with here's how we can use your
+[1067] support with donations or you know
+[1070] waypoints into funding the thing that's
+[1072] uniquely different than get sponsors or
+[1074] even open Collective so my my principles
+[1077] or my thought process on this this is uh
+[1080] this is to your point Jared like no
+[1083] project is the same as the other right
+[1085] like everyone's unique and so Caleb has
+[1088] been very successful in coin the term
+[1090] around sponsor and those success stories
+[1093] are amazing and there's a lot more that
+[1095] could deploy that model but not all open
+[1099] source projects can deploy that model
+[1101] successfully right and so I think with
+[1104] polar we're basically giving you the
+[1106] toolkit and trying to op optimize and
+[1109] build the best possible experience
+[1110] around all of these different ways so
+[1113] that you as a open source developer or
+[1115] India developer can sort of cherry pick
+[1117] and pick and choose what makes sense for
+[1119] your initiative but also what stage you
+[1121] are in your journey because I think
+[1123] that's key like most like if you take
+[1126] Hashi Corp or Sentry or a lot of these
+[1129] commercial open source projects that
+[1131] have become very very successful I think
+[1133] a lot of them just starts out right as
+[1136] someone scratching their own it itch as
+[1138] like this p passion project and so you
+[1140] can start at like the far end of the
+[1142] spectrum of just getting that initial
+[1144] donation and a token of like what you're
+[1147] doing is awesome and I want to see this
+[1150] succeed or like I want to help push this
+[1152] forward and growing from donations to
+[1155] sponsorship to like membership benefits
+[1158] issue funding sponsor Weare and then if
+[1161] you want to go full on like adding that
+[1163] commercial layer as well one of your
+[1165] many methods includes something that
+[1168] gave me pause which is automated
+[1171] sponsorship inside of readmy yeah and I
+[1175] wonder if you know the story of code
+[1177] sponsor are you familiar with that
+[1178] platform no okay so Eric Barry began
+[1182] code sponsor which was very much that
+[1185] yes as a feature and nothing else Adam I
+[1188] think it was specifically that it was
+[1190] that in some display ads eventually but
+[1192] it was mostly display ads outside but
+[1194] like his the nut that he cracked was
+[1197] which was a brilliant idea for about 6
+[1199] months was let's put ads inside of your
+[1202] read me cuz that's where all the eyes
+[1203] are already and there are people who
+[1206] embed sponsorships inside the readmes
+[1208] like you can do that but GitHub took
+[1211] issue with the way the code sponsor did
+[1212] it yes and basically shut it down and
+[1215] I'm curious I don't I mean I realize
+[1217] that polar has a suite of tools and so
+[1219] that's just one thing you're offering
+[1220] and so you're not exactly you know your
+[1222] hedged more than he was with that
+[1224] platform but that makes me think like
+[1226] well what if GitHub to Ides that polar
+[1229] isn't cool because it's duplicating some
+[1232] stuff the sponsors does maybe it's doing
+[1234] stuff like readme ad insertions that it
+[1236] doesn't like you're I'm sure you are
+[1239] highly tied into GitHub apis and
+[1242] everything else is that something that
+[1243] concerns you no not not at all so I like
+[1247] it okay I thought I laid out a pretty
+[1249] good concerning case but tell me why he
+[1251] did you did I was like no you absolutely
+[1253] did so I didn't know the name but I did
+[1256] I know of that story and so so I know
+[1259] that Gib closed that down because it was
+[1261] like essentially pure ads on one side of
+[1264] it right where people would just buy
+[1266] display property on the readmes for it
+[1269] was pure ad it was developer ads it
+[1272] wasn't like Google uh double double
+[1275] click ad click I don't know it wasn't
+[1277] that where like you could just put
+[1279] whatever it was vetted developer tooling
+[1281] a lot like carbon or what is now ethical
+[1284] ads run by like the read the doc folks
+[1287] so it was targeted but it was ad
+[1289] insertion Dynamic ad insertion into read
+[1291] means so yes yeah exactly and I think to
+[1294] your point right that still happens
+[1296] today but I think the Nuance which is a
+[1298] very subtle one is that it's you're a
+[1301] sponsor and so you have your logo type
+[1303] represented as a sponsor versus you're
+[1306] buying that advertisement placement like
+[1309] real estate uh with a pure intent of
+[1311] like reaching a broader audience right
+[1312] even though that might still be the
+[1314] underlying reason why they're sponsoring
+[1316] and so to your point like we have many
+[1319] different features that we offer and so
+[1321] yeah would it come to that you know we
+[1323] don't stand on that Hill alone but on
+[1325] the second more important piece like we
+[1327] have very close relationships with the
+[1329] folks at GitHub there's no like
+[1332] competition or animosity there
+[1334] whatsoever in fact I would say it's the
+[1336] opposite where both of us want open
+[1340] source to get more money at the end of
+[1342] the day and the difference right is that
+[1344] it's our singular Focus to like equip
+[1347] Developers to get more funding where you
+[1349] can commercialize the projects and so
+[1352] we're an official funding partner so you
+[1354] can use polar and the funding. yaml to
+[1357] make sure that it shows up nice on
+[1359] GitHub and you know I've talked to them
+[1361] many many times and very transparently
+[1364] about our road map and the way we
+[1366] position this readme automation is that
+[1369] it's automating like the sponsors and
+[1371] the subscribers for your project versus
+[1375] you buying in for that advertisement so
+[1378] to speak that is slightly different very
+[1381] nuanced different is nuanced a word yeah
+[1384] very nuanced to be different yeah do you
+[1387] think H just cuz we're on the topic here
+[1388] I'm going to ask this question but do
+[1389] you think it's a possibility considering
+[1392] that you've got this this head knot
+[1394] let's just say from GitHub do you think
+[1397] that because GitHub sponsors has
+[1399] struggled I mean it's still doing
+[1401] amazing I'm not saying it's bad at all
+[1403] but there has been gross struggles that
+[1405] I'm aware of with with get GI up
+[1407] sponsors is it possible that the m to
+[1410] acquire polar and just like turn your
+[1414] loose I mean I wouldn't say it's
+[1416] impossible uh we haven't discussed it um
+[1419] and I'm in full transparency like I
+[1422] wouldn't entertain that today like I am
+[1426] super bullish and excited about the
+[1428] platform that we're building and
+[1429] especially this next chapter on just
+[1431] continuing the path and like offering
+[1433] commercialization tool for developers as
+[1435] well so I think what we're building has
+[1438] legs and I hope it can be a platform
+[1440] that has significant impact and I think
+[1444] from github's side the right strategic
+[1447] approach is to just double down on their
+[1449] app strategy I think historically they
+[1452] risk like spreading themselves too thin
+[1454] trying to do too much within one core
+[1457] platform versus just like doubling down
+[1459] on what's core and then offering great
+[1461] apis and great entry points for
+[1464] dedicated companies to go deep on other
+[1467] verticals which is not their core focus
+[1470] and I think that's the difference
+[1471] between GitHub sponsors and polar where
+[1474] GitHub sponsors is great because it
+[1475] offers donations and sponsorship which
+[1478] is the most accessible and like broadest
+[1481] applicable type for all developers on
+[1484] GitHub but I think it would be
+[1486] challenging for them to like really go
+[1488] deep on like products and SAS and like
+[1490] these commercialization tools without
+[1492] spreading themselves too thin or like
+[1495] potentially even upsetting their
+[1497] customer base as well that's why polar
+[1499] is a great like add-on for those who
+[1501] choose and you can cherry pick amongst
+[1504] the tools that we offer as
+[1505] [Music]
+[1521] well what's up friends I'm here in the
+[1524] breaks with s Alam nailor from Sentry
+[1526] senior developer Advocate let's talk
+[1528] about about the levels of error
+[1530] monitoring so let's talk about error
+[1532] monitoring with medium to large-ish
+[1535] teams and I don't even know how to
+[1536] quantify that necessarily to say maybe
+[1538] it's a team of five or eight maybe
+[1540] that's a medium team maybe a largest
+[1542] medium to largest is like 20 plus 50
+[1545] plus Engineers you got multiple teams
+[1546] you got multiple Services you got
+[1548] multiple disciplines within the engineer
+[1551] organization how does Sentry go from
+[1554] Indie Dev solo application developer or
+[1556] a small team to scale to support larger
+[1560] to midsize teams what changes so it's
+[1562] interesting that you mentioned
+[1564] microservices and often these days when
+[1567] you have larger teams or you have
+[1569] multiple teams in an organization
+[1572] working on a product you will have your
+[1574] application split out into little
+[1577] projects different repos microservices
+[1580] and sometimes it can be difficult to
+[1583] know where an error is coming from for
+[1586] example if you just send all your errors
+[1589] to one place and sometimes it might be
+[1592] difficult to know where the error
+[1594] started and where the error finished up
+[1596] uh but what's really good with Sentry is
+[1598] that we have this concept called tracing
+[1600] with Sentry tracing you essentially
+[1603] connect your back and front ends
+[1605] together if you want to know the the
+[1606] details about it it's through a an HTTP
+[1609] header and that's how Sentry will trace
+[1611] your requests from one service to the
+[1613] next from the back end to the front end
+[1615] and so in the Sentry app itself you can
+[1617] physically Trace what happened from
+[1620] where the request originated on the
+[1621] front end then all the different
+[1623] services that the request passes through
+[1625] to and then back to the front end and
+[1627] then be able to identify exactly where
+[1630] the problem happened and exactly what in
+[1633] the front end triggered it or what in
+[1635] the backend triggered it you can view
+[1636] the source codes and the stack traces
+[1638] all related to it and then what you can
+[1640] do is based on where the error came from
+[1643] you can then automatically assign those
+[1645] issues to particular members of
+[1648] particular teams using things like maybe
+[1651] custom tags or other kind of identifiers
+[1654] on the issue itself and uh so it helps
+[1657] you triage like essentially gives you
+[1659] that separation yet also brings it all
+[1661] together to help you understand the
+[1663] bigger picture the smaller things about
+[1666] what went wrong in like a fine grained
+[1668] way and then allows you to configure the
+[1670] app itself to perform particular actions
+[1673] depending on what happened you know like
+[1675] a lot of the time large teams can
+[1677] actually get in on with a lot of noise I
+[1679] remember working for a a company where
+[1682] we had two teams a back end and front
+[1683] end team but everyone was getting every
+[1686] single error from everywhere and so what
+[1688] happens eventually is you ignore all of
+[1690] the errors oh it's failing as expected
+[1693] it's just noise it's getting in the way
+[1695] of my day-to-day coding but if you are
+[1697] more selective about the types of alerts
+[1699] that you send and that you receive as
+[1702] someone who is doing a particular job
+[1704] you'll be less likely to ignore them
+[1706] more likely to address the root cause
+[1708] and then eventually you will have no
+[1710] alerts and no bugs and your application
+[1712] will be perfect okay get Sentry go fix
+[1715] it too easy check them out at
+[1718] sentry.io that's s n t
+[1722] y. and make sure you use our code change
+[1725] log and you'll get $100 off the team
+[1726] plan which is super awesome again use
+[1729] the code change log get 100 bucks off
+[1731] the team plan sentry.io
+[1736] [Music]
+[1749] so I love the tagline Adam started with
+[1751] it from first donation to IPO y Is that
+[1755] real like is that I love the way it
+[1757] sounds and so grandiose and awesome but
+[1760] like do you expect to ever take somebody
+[1763] from first donation to IPO cuz those are
+[1765] radically different things yes so as I
+[1768] mentioned I worked at Shopify for three
+[1771] years when our former company tikl was
+[1773] acquired Shopify is an insanely
+[1776] inspiring company and Toby lit in
+[1779] particular and one of the most inspiring
+[1782] things with Shopify is that they've
+[1784] always internally talked about them
+[1786] being a 100y year company so they
+[1788] operate on a very long time Horizon and
+[1792] one of the most inspiring stories when I
+[1794] worked there was this company called Al
+[1796] Birds which was you know a small company
+[1799] that started out and then eventually
+[1800] ipoed and saw that journey by building
+[1804] on Shopify and so I don't think you know
+[1806] from first I from first donation to IPO
+[1808] is going to happen this year or next
+[1810] year I think it's going to be let give
+[1813] me maybe 15 years because I think the
+[1815] rule of T is like 10 years for a company
+[1817] at least before they can IPO so MH
+[1820] within a 15E time Horizon that's the
+[1823] ambition of polar and it goes back again
+[1826] right to most of these fantastic
+[1829] companies that are built just start out
+[1831] with someone scratching their own itch
+[1833] maybe just launching it as a sort of
+[1836] small gimmick right on GitHub uh it gets
+[1838] some traction get some donations and
+[1840] sponsorship and now all of a sudden like
+[1842] you have that validation and so you're
+[1844] excited to continue pushing forward and
+[1847] we want to be the platform that just
+[1848] continuously like breaks ceilings for
+[1851] you so that you can easily just expand
+[1854] with polar and that we're the only
+[1856] platform that like just builds
+[1859] monetization tools for developers and
+[1861] make it as seamless as possible to go
+[1864] the Step Beyond just stripe or other
+[1867] payment platforms out there I love it I
+[1869] hope you get there I hope someday I
+[1871] guess you'd probably would IPO before
+[1873] anybody else would IPO uh that would be
+[1875] a massive win of course but if somebody
+[1877] else could IPO on polar and you realize
+[1880] that dream that would be a good very
+[1883] good day yes I would definitely cheer me
+[1885] too I mean yeah I I think that is
+[1889] definitely the most exciting carrot and
+[1892] ambition that I can imagine to wake up
+[1894] in the morning and can just continue
+[1896] yeah iterating on the products well
+[1898] let's zoom out and then Zoom right back
+[1900] in because to zoom out would be where
+[1903] would this apply or how would it apply
+[1905] and to zoom in would be to talk about
+[1907] Mitchell Hashimoto being one of your
+[1909] advisers also launched vagrant I mean he
+[1912] talked about vagrant on this podcast
+[1914] legit before Hashi Corp was a company
+[1917] like when it is just an open source
+[1919] project yeah like that's how long we go
+[1921] back w we go from uh first guest
+[1923] appearance to IPO it's true so here you
+[1925] go Burke you could that's a nice
+[1927] tagline we've never ipoed but you know
+[1930] other people have after not because of
+[1932] our show but after our show so you know
+[1933] correlation causation you do the math
+[1936] that's right that's right so zoom out
+[1937] zoom in but let's apply it Mitchell
+[1941] obviously is bullish of you all he's an
+[1944] advisor but he also created vagrant
+[1946] which spawned the the company called
+[1949] Hashi Corp which did IPO was largely
+[1952] built on an open cor model open source
+[1955] there was a recent acquisition that's
+[1957] not the point of this piece here
+[1959] necessarily but the fact they did go
+[1961] from a developer with an idea solving
+[1964] problems open source to finding a
+[1966] company finding product Market fit
+[1968] getting market share adoption Etc open
+[1970] source open source to IPO how would you
+[1974] apply polar to something like or does
+[1976] that even make sense to apply it to a
+[1978] vagrant like story to say to kind of
+[1980] quantify truly the dream of first
+[1984] donation to an IPO yes I think we we
+[1987] certainly still have work to do to
+[1989] support that entire Journey dream with
+[1991] us don't don't imagine what's there now
+[1992] imagine what could be there yeah exactly
+[1994] yeah so let's imagine and not I'm not
+[1997] speaking for Mitchell Hashimoto here but
+[1999] to play out this case right um Mitchel
+[2002] builds vagrant as this side project he's
+[2004] scratching his own itch and he launches
+[2006] it on get up one day
+[2008] and I know the story right like he
+[2010] launched it on GitHub like this is what
+[2012] is it 10 years ago 12 years ago now
+[2014] right more so it was a entirely
+[2016] different ecosystem at the time like
+[2018] there was not the same amount of GitHub
+[2020] stars there was not GitHub
+[2022] sponsorships so I don't think he had
+[2024] that validation at the time but
+[2026] hopefully today right he would have
+[2027] started to be able to receive donations
+[2029] and sponsors and people showing
+[2032] gratitude towards vagrants and for him
+[2034] to explore offering like membership Ben
+[2037] benefits issue funding or even sponsor
+[2040] where for Early Access to The Cutting
+[2042] Edge of the vagrant development itself
+[2045] to expand on the patronage model to the
+[2049] point where hopefully like a Caleb he
+[2051] could reach a point where you know it's
+[2054] plausible that he himself as an indie
+[2057] could do this full-time but then there's
+[2059] a obviously a second part to the story
+[2063] right which is that Mitchell and his
+[2065] co-founder they decided to like
+[2068] commercialize the project to build the
+[2070] company and to raise Venture Capital
+[2073] behind that company and I think if you
+[2075] look at all those businesses starting
+[2077] out from open source there are a lot of
+[2080] challenges that they face and like how
+[2082] they can build monetization which the
+[2084] monetization tools themselves like how
+[2085] you can charge for subscriptions or sell
+[2088] products or sell licenses they are all
+[2091] sort of the same mechanics but like
+[2094] operating those and operating them in a
+[2096] way that makes sense andad
+[2098] connects to the open source ecosystem
+[2101] and the open source codebase that you
+[2103] have requires a lot of infrastructure
+[2105] and a lot of these companies today are
+[2107] building that like inhouse themselves
+[2109] and their Venture back so they can do it
+[2111] but that is the next phase for Polar
+[2113] right where how can we provide those
+[2115] tools so that Mitchell Beyond just like
+[2118] now I can work on this full-time myself
+[2121] with my patrons basically how can I
+[2124] commercialize this how can I sell
+[2126] licenses How can I offer subscriptions
+[2128] where polar is the merchant record
+[2131] handles like vat and sales tax
+[2133] internationally and all of that like
+[2136] headache where I'm you know chatting
+[2138] with lawyers and accountants and like
+[2140] dealing with these boring stuffs so that
+[2143] developers hopefully can just focus on
+[2145] what they do best and code the product
+[2147] and just plug and play with polar
+[2150] without any sealing whatsoever and I
+[2153] think that I think the analogy you can
+[2155] make there is like you can still do like
+[2158] you can have Venture backing I'm not at
+[2160] all opposed to that uh in any means
+[2163] whatsoever but then when you're
+[2165] commercializing I think you could
+[2167] imagine what we're building with polar
+[2168] as the next phase is more like say
+[2171] paddle or even Stripe Right but how can
+[2174] we take that a step further and just
+[2176] make our apis and our tooling that much
+[2179] more seamless uh efficient and developer
+[2181] focused and focused on like open source
+[2184] and Indies than those platforms have
+[2187] historically so that we're the best
+[2188] choice to build out monetization with
+[2191] very good paddle is the I've used paddle
+[2193] a couple times I think I have a couple
+[2195] pieces of software Mac OS apps that I
+[2198] purchase via the paddle platform uh
+[2201] there's not a lot of value to me as a
+[2203] consumer though in that in that regard
+[2205] it's certainly helpful to the developer
+[2206] and the company to not have to build yet
+[2209] one more thing and manage yet one more
+[2211] thing but as a consumer of that software
+[2213] it's been generally like me whatever
+[2216] it's just a processor not just but like
+[2218] bad but there's no value truly to me
+[2221] aside from like knowing my Indie Mac
+[2223] devs can make their apps and keep moving
+[2226] fast and not build things they shouldn't
+[2228] have to mhm yeah I think that's right
+[2231] like paddle Lama squeezy stripe like
+[2233] it's mostly value it's B2B right right I
+[2237] think the difference is especially when
+[2239] you're the merchant record like you are
+[2241] managing that end relationship that
+[2244] invoicing uh billing and so forth so I
+[2247] do think there's a layer a good analogy
+[2249] is probably like Shopify and Shop
+[2252] originally where Shopify is the platform
+[2254] right for merchants and then you had
+[2256] shop which we were building uh which is
+[2259] sort of the consumer layer and it starts
+[2261] with just being that sort of
+[2263] authentication for consumers where they
+[2265] can track all of their orders across the
+[2267] Shopify ecosystem and how that
+[2269] eventually then expands into its own
+[2272] sort of marketplace as well I think
+[2275] that's a future for Polar but that much
+[2278] further out far future yeah well I was
+[2281] just going to mention it because I can't
+[2282] think of the name of it but I know I
+[2284] can't even remember the person's name
+[2285] but before there was Shopify oh store
+[2288] Envy does anybody here remember store
+[2290] Envy I okay so store Envy predated
+[2293] Shopify yep and really try to unify that
+[2296] whole thing you just said which was
+[2297] Shopify and Shop that whole story was
+[2299] played out once before did not have
+[2302] obviously the success that Shopify has
+[2303] otherwise Shopify would not be Shopify
+[2305] and good friend of mine remember his
+[2307] name in the moment cuz you know old
+[2309] brain and whatnot and that's just how it
+[2311] works but story Envy was really cool
+[2313] where it where it had you could be an
+[2315] indie maker similar to like the Etsy way
+[2317] you could be what Shopify is today just
+[2319] be someone who wants to build a store
+[2321] they would give you the storefront they
+[2323] would give you all the tooling and you
+[2324] all that stuff but they would allow the
+[2326] customer experience to have this unified
+[2327] cart to say everybody gets the the
+[2330] creators gets this platform but we UniFi
+[2332] the creators on the platform with a a
+[2334] major storefront that says if you want
+[2336] to shop shoes you can go shop all the
+[2338] shoes that are on our platform Etc and
+[2341] have one unified cart one unified
+[2343] checkout and that was a hard nut to
+[2345] crack I mean that was they didn't fully
+[2347] crack it it didn't event it was
+[2349] successful but what a capital intensive
+[2351] business you had to like ramp up
+[2353] engineering this is maybe slightly ahead
+[2355] of its time in terms of even leadership
+[2357] but you mentioned store of record at
+[2360] least twice now and you mentioned I
+[2362] don't think so yet but three people in
+[2365] the company now store of record for a
+[2368] global developer Community who wants to
+[2370] build on sustainable funded open source
+[2372] and all the ways you said you could do
+[2374] sounds daunting when it comes to
+[2376] Merchant of record can you explain
+[2379] what's required to scale that to do that
+[2382] so so being Merchant of record it what
+[2384] that basically means right is that we're
+[2386] integrating stripe and stripe connect
+[2388] specifically and so we're the platform
+[2390] account that all transactions go through
+[2393] and then our customers or developers
+[2395] using polar they can connect open
+[2397] Collective or their own stripe accounts
+[2399] that we then transfer that funding to
+[2401] through payouts once it's ready to be
+[2404] paid out essentially right and so
+[2406] legally speaking as well as in terms of
+[2409] money flow customers are buying these
+[2412] products or Services through polar and
+[2415] so they're getting the receipts from us
+[2417] uh like we're in charge of managing like
+[2420] vat in case the sale happens in Europe
+[2423] from say a Swedish customer and these
+[2425] are things that are like massive
+[2427] headaches takes for individuals right
+[2429] especially when I talked to a lot of
+[2431] Open Source developers people who wanted
+[2433] to explore sort of Caleb porio models
+[2436] like they have been concerned doing that
+[2438] with GitHub sponsorship because they
+[2439] know that if you offer value ads as part
+[2442] of your sponsorship package technically
+[2445] speaking you're offering a service which
+[2447] makes you liable and required to capture
+[2450] sales tax or vat for those transactions
+[2454] right and this is not something that
+[2456] GitHub handles so you face some risk
+[2459] there as a developer and so we take that
+[2461] on which means we get all of the
+[2463] payments process through polar we
+[2466] capture V on a quarterly basis you know
+[2468] I work with accountants and do all the
+[2470] reporting and accounting work to make
+[2473] sure that that's filed appropriately and
+[2474] work with lawyers to make sure we're
+[2477] compliant uh so yeah it it is a lot of
+[2479] work and I would not want any individual
+[2483] to have to bear that burden and so
+[2486] that's why we're doing it instead I
+[2489] think open Collective did a similar
+[2491] thing when it came to like fiscal
+[2493] sponsor right that's that's a thing in
+[2495] the nonprofit where when you donate you
+[2497] have to have an entity that can take the
+[2499] donation and deal with a similar thing
+[2502] essentially this fiscal sponsor yeah how
+[2504] long will you bear that burden how long
+[2506] will bear that burden yeah like if it's
+[2508] such a pain in the butt are you excit I
+[2510] mean can you are you excited about that
+[2512] burden yes and no so yes as excited
+[2516] about it as the as a no but as a CEO and
+[2519] like sort of as a strategy I'm very
+[2522] excited about it because I think I've
+[2525] talked to so many open source developers
+[2527] where the risk they face offering
+[2530] Services through GitHub sponsorship is
+[2532] too scary for them to try and that
+[2535] they're grateful that we're doing it and
+[2537] that has opened the door for them to
+[2539] actually try these models and so I am
+[2543] 100% convinced that the world is sort of
+[2546] broken in that way in terms of
+[2548] legislation have hasn't followed up with
+[2551] how the internet works right we're just
+[2553] Distributing software and selling to
+[2555] everyone globally from day one but now
+[2559] you need to deal with vat across Europe
+[2561] GST and like Australia no single
+[2566] individual can ever do that themselves
+[2569] and stay sane on the side of a full-time
+[2572] job and so from that point I'm really
+[2574] excited then personally do I enjoy
+[2577] the work of you know chatting with
+[2579] lawyers and accountants and all that is
+[2581] required to offer this not
+[2585] always but it's it's an awesome value ad
+[2589] to provide as a platform and so that's
+[2592] that's why I'm excited have you reached
+[2594] fit yet is this worth it product Market
+[2598] fits yeah are you still kind of getting
+[2600] there yeah I would say we're we're
+[2602] getting there I would say we've reached
+[2605] Community fit if that's a good word like
+[2607] we're getting a lot of excitement and
+[2609] buyin and developers who I look up to
+[2613] and that are amazing that are like on
+[2615] the platform and loving what we do and I
+[2617] think the challenge which has always
+[2620] been the case right is for us to just
+[2623] build out this suite and just help more
+[2625] and more of these developers like really
+[2627] become successful and be able to work on
+[2628] this full-time there are developers on
+[2630] Polar now that are making more than they
+[2632] did with like other offerings in the
+[2635] past but we still have a long road ahead
+[2638] before we completely pave that path but
+[2641] I think this next chapter is very very
+[2644] exciting to open up more doors and more
+[2647] Capital to flow in for developers how do
+[2650] you guys make money so we take uh 5%
+[2653] Revenue share of all the transactions
+[2656] that happen on Polar that's our cut and
+[2659] that's how we make money no monthly fees
+[2661] no hidden no month fees uh no stripe is
+[2664] required though so you're you're still
+[2667] paying stripe fees yes so it's it's 5%
+[2671] plus it's Payment Processing fees so now
+[2673] we have stripe so it's it's their fees
+[2676] uh in the future we'll offer PayPal and
+[2677] others as well in full transparency like
+[2681] I am evaluating like how we can you know
+[2685] offer a model where I want to make it
+[2687] completely free so that there's no risk
+[2690] for independent and open source
+[2692] developers to try this out so that's the
+[2694] 5% commission piece but I think if
+[2697] you're going to offer commercialization
+[2699] and for companies to IPO on this one day
+[2701] you need to be flexible here as well and
+[2703] so taking Shopify is the analogy again I
+[2707] do see a future where we could offer SAS
+[2709] tiers where you can pay a SAS fee and
+[2713] transaction fees go down along with it
+[2716] as well uh those are things that we're
+[2718] exploring for the future but key for me
+[2721] is that it's accessible and available
+[2723] without any upfront payment required
+[2727] for people that are just starting out
+[2730] well you could tell you worked at
+[2731] Shopify because it uh it's like a not so
+[2734] much a negative to say copy and paste
+[2736] but it's you know like let's look at
+[2738] this model that worked here and let's
+[2740] apply this model to another place I care
+[2741] about which is not the negative copy and
+[2743] paste but it is a lot of in Inspiration
+[2746] in terms of you're not there with the
+[2748] SAS models yet but they're possibly
+[2750] right around the corner and the 5% post
+[2753] fees is similar to the way that Shopify
+[2756] makes money
+[2757] and the way that the purchaser I suppose
+[2760] the in this case open source developer
+[2762] can curb that number down or up is to
+[2765] kind of offset it with a a monthly fee
+[2768] or even a yearly fee yeah so Adam you
+[2771] mentioned store on me like I'm very
+[2774] familiar with store eny so as I
+[2775] mentioned I started tikil right which
+[2777] was an e-commerce platform and we also
+[2779] built a Marketplace so very similar to
+[2782] Storey and we were acquired by Shopify
+[2785] to basically lead like the consumer
+[2787] efforts at Shopify which became Shop app
+[2791] as we know it today one of the key
+[2793] learnings for me as part of the tictail
+[2795] journey was we were very young when we
+[2798] started that and we basically tried to
+[2801] innovate everything we touched so
+[2805] everything we try to have a unique
+[2806] approach to or like how do we want to do
+[2809] this whether it's like hiring or perks
+[2812] and benefits for employees to the
+[2814] product as well and one of the learnings
+[2816] for me is just like you just have to be
+[2818] focused especially because we are three
+[2820] people right of just being ruthless
+[2822] about what's the core thing uh for our
+[2826] mission which is to you know allow
+[2828] developers to get paid building their
+[2829] passion and for all of the rest to just
+[2832] like copy what's working in the market
+[2835] there's no point for us to like innovate
+[2838] in these regards when others have proven
+[2841] a pathway uh that has been successful in
+[2843] other verticals then we can steal for
+[2847] lack of better words right uh great
+[2849] ideas from others so that we can just
+[2851] focus our thought process on the unique
+[2855] things about polar and how we build
+[2857] these Services specifically for this
+[2859] audience which is open source and India
+[2861] developers so yeah proudly you know
+[2864] having worked at Shopify seeing how they
+[2868] work with a very long time Horizon in
+[2870] mind is how I approach it with polar as
+[2872] well like we're not going to do the
+[2874] marketplace thing and being very very
+[2876] mind mindful about like not trying to do
+[2879] everything in a short time frame but
+[2881] rather build something really amazing as
+[2883] a platform first solve that and then
+[2886] that opens up doors later on in the
+[2888] future and copy business models that
+[2892] have been proven in in similar markets
+[2895] have you taken any funding yet is this
+[2896] Venture backed uh yes so we did raise a
+[2899] preed about yeah a year ago preed huh
+[2902] it's like before the seed yeah exactly I
+[2904] love fun raising these days is like
+[2905] there was just you an a round or a seed
+[2907] round or Angels now it's like preed yeah
+[2910] you didn't raise a pre preed this time
+[2912] you decided not to go for the pre preed
+[2915] no no no no pre PR seed okay um maybe
+[2918] next time yeah exactly who was in that c
+[2921] round can you share numbers what can you
+[2923] share about the I suppose the starting
+[2925] Capital that to make this possible so um
+[2929] we raised $ 1.8 million from abstract
+[2933] Ventures and Mischief Ventures as well
+[2935] along with about a dozen angels as well
+[2939] that has been with us now for a little
+[2941] over a year since we raised that round
+[2944] uh so company of three people we have
+[2947] decent amount of Runway left which is a
+[2949] great position to be in and you know we
+[2953] built out a lot of the foundations but
+[2955] the big next step is the
+[2957] commercialization piece which we are
+[2960] excited to like start gradually
+[2962] unveiling in the coming months and
+[2964] expect to have more flushed out out
+[2967] within four months say so really excited
+[2970] about that and getting that out and then
+[2972] being able to support a lot of different
+[2973] cases coming this fall basically I think
+[2975] we're we're going to launch like
+[2977] products I think maybe next month
+[2979] already like hosted downloads the
+[2981] ability to sell files or programming
+[2984] books or what have you uh next month as
+[2988] well so a lot of the building blocks
+[2991] will happen gradually and incrementally
+[2994] but I'm really excited like three or
+[2997] four months from now basically what
+[2998] we've done over the past few weeks is
+[3001] taking a step back in just a blank
+[3002] canvas on if you would like
+[3005] commercialize these things like forget
+[3007] about all the platforms that exist today
+[3009] how can we do that so that you can do it
+[3011] like 10 times faster than any offering
+[3013] out there today and that is just like so
+[3016] much more enjoyable and designed for
+[3020] this ecosystem and the things that we've
+[3023] come up with and how we're shaping that
+[3026] are super super exciting that we have
+[3028] internal prototypes for and I think
+[3030] those pieces sort of the packaging is
+[3033] something we'll launch in three months
+[3035] can you wet our palette yeah
+[3037] intentionally I I don't want to get it a
+[3040] little get a little bit more wet well I
+[3041] mean like give us a little bit of for
+[3043] instance what was an Insight that you
+[3044] had that not saying you're building
+[3047] exactly this or whatever but like what
+[3048] are some of these insights that would be
+[3050] so much faster so much better to
+[3052] commercialize software today so one is
+[3054] just if you look okay so yeah I'll share
+[3056] one which is if you look at all of these
+[3058] different platforms for
+[3059] commercialization or monetization uh and
+[3062] charging it's designed very much from
+[3065] their product in mind so you sign up for
+[3067] the service you go through this
+[3068] dashboard you need to learn how the
+[3069] dashboard works and like you're setting
+[3071] up these products and eventually you get
+[3074] to the point of like okay how do you
+[3076] actually package this and sell this to
+[3077] your end customers right and we've taken
+[3082] the complete opposite approach of like
+[3085] developers first and foremost like we
+[3087] just want to get our hands dirty and
+[3088] write some code and like build the
+[3090] product that is our product that we're
+[3092] shipping to our end consumers and sort
+[3094] of inspired by you know how we're
+[3096] forking repositories on GitHub like how
+[3099] you can just immediately dive into code
+[3101] and coding your service that you're
+[3104] selling to your customers with all the
+[3107] monetization pieces like readily
+[3109] available to enable directly in your
+[3111] development environments and for like
+[3114] the dashboard and all of that jazz sort
+[3116] of be secondary and something that you
+[3119] done manage that through rather than
+[3121] like having to set it up and do a lot of
+[3125] housekeeping up front sounds cool yeah
+[3129] it is uh yeah it is I love that response
+[3133] well I think fli in the perspective
+[3134] changes a lot of things I mean obviously
+[3136] you're just teasing here you're not
+[3138] giving us full details but I do know
+[3140] what a mind shift it was for GitHub to
+[3144] put the source code right on the
+[3146] homepage page versus Source Forge which
+[3148] I had used previously which was like
+[3150] where you go to download your software
+[3152] not to build it and collaborate on it
+[3154] and so as an open source consumer back
+[3157] then of people's cool projects I knew
+[3159] that you could like click around and
+[3161] find discussion forums and people like
+[3163] behind the scenes building the downloads
+[3165] but all I knew was you go here for the
+[3167] downloads and then GitHub which was very
+[3169] similar in function took a completely
+[3172] opposite approach I was like no you land
+[3174] on the homepage you see source code and
+[3176] read me and that was like just the
+[3180] different angle of of the same thing
+[3182] completely changed it in my mind I was
+[3184] like wait a second I can actually
+[3185] contribute to this I can read it I can
+[3188] understand it and that's so I think
+[3189] likewise perhaps taking a opposite
+[3191] approach that you're describing although
+[3193] as vague as you're being about it I can
+[3195] only
+[3196] guess hopefully have that profound
+[3198] change and really I think spark a lot of
+[3201] productivity and hopefully some
+[3203] monetization as well yeah I think I
+[3207] heard Mitchell this was not in a
+[3208] conversation Mitchell and I had but I
+[3211] heard him chat with someone else about
+[3212] it but like the story around terraform
+[3215] and how they were designing the products
+[3217] that they were building in
+[3218] hashicorp where Mitchell would basically
+[3222] on a plane without Wi-Fi just build like
+[3225] a dummy CLI on what's like a great
+[3228] developer experience and the API that
+[3231] the CLI should have and that's what they
+[3234] defined first and then work their way
+[3236] back from their there right and very
+[3238] much that's the approach we're taking
+[3239] here which is just forget about what the
+[3242] product looks like today like just
+[3245] what's the intent that we're building
+[3246] here for developers to commercialize
+[3248] like how would they want to do that in
+[3251] their own projects and from there like
+[3254] what do we need to shape our products
+[3256] and apis to be able to support that I
+[3258] can't wait till you ship a so second can
+[3259] see what you're talking about it's going
+[3260] to be so exciting it's the best
+[3262] vaporware of all time it's like uh I
+[3263] want to be excited I want to be excited
+[3265] with you and I'm trying so hard to be
+[3267] following you but it's so unclear that's
+[3270] all right but I'm feeling it I'm feeling
+[3271] you and I'm feeling it oh there's some
+[3273] um I'm being vague because there's some
+[3277] very critical pieces for this to work
+[3279] that I would say has not really I
+[3283] haven't seen any other player do it out
+[3285] there in the market today and so we have
+[3287] some internal prototypes where we have
+[3289] like sold some of these pieces but we
+[3293] still need to make sure like all these
+[3295] pieces can be glued together for
+[3297] something that's compelling as a total
+[3299] package it's like uh it's like middle
+[3301] out you can't explain that to people
+[3303] then everybody else would just start
+[3304] doing a middle compression algorithm and
+[3305] and try to be in for him and beat you to
+[3307] the marketplace no thank
+[3308] you yeah exactly don't want to Hulu on
+[3312] my yeah on my back that's right don't
+[3314] want hulie on her back that's for sure
+[3316] yeah so it might go one layer too deep
+[3319] but this States my personal thoughts cuz
+[3322] there's developers out there eventually
+[3323] going to be doing something like
+[3325] following their dream like you did and
+[3327] you pitched you got 1.8 million you got
+[3330] two Venture backed or you know Venture
+[3332] funds to buy into your idea 12 angels
+[3336] you're telling us this story but what
+[3338] was it that clicked for them to say okay
+[3340] let's fund one more platform out there
+[3343] and I don't say that negatively because
+[3344] we're asking you questions to help
+[3345] differentiate you between and what the
+[3348] Market's going to do how do you differ
+[3349] from GitHub sponsors how do you
+[3350] differenter open Collective or ethical
+[3354] advertising or ads or whatever it might
+[3356] be what how do you differentiate how
+[3357] you're going to help developers sustain
+[3359] and create funding models what did you
+[3361] say to them what was it that was like
+[3363] yeah here's here's Mills I mean the true
+[3367] story is that I said a lot of things
+[3369] right uh but I would say the
+[3371] core the core thing is the way I saw it
+[3375] was so I'm Swedish right and so one of
+[3377] our one of the companies that we're very
+[3379] proud of here is obviously Spotify uh
+[3381] huge success story right uh but before
+[3384] then we had Pirate Bay which also came
+[3385] from Sweden right complete opposite
+[3388] that's right and music was in this phas
+[3390] right where everyone thought music was
+[3392] dying like everyone just expected it to
+[3394] be free no one's going to pay anything
+[3397] for it and here came Spotify along right
+[3399] and just like there's a new way and that
+[3403] became a success story and they flipped
+[3405] that narrative all the way around like I
+[3407] think Shopify now is like doing more
+[3411] than like the entire music industry was
+[3413] doing back when when they were
+[3416] originated and started out right and I
+[3419] think Venture Capital fundamentally
+[3422] right is taking these moonshot bets that
+[3425] be can become something like
+[3427] game-changing and like Define a new
+[3430] market and I think that's what polar
+[3432] really had going for it there's a lot of
+[3434] players out there that are I think
+[3436] pitching great ideas but probably great
+[3439] like Indie ideas uh at the end of the
+[3441] day and and for us it was just you have
+[3445] the developer EOS system and the open
+[3447] source ecosystem which are immense and
+[3450] Incredibly valuable to the entire
+[3453] ecosystem of Technology but we haven't
+[3455] cracked like funding and monetization
+[3457] yet and like I want to build a platform
+[3460] that can crack that code and if you're
+[3461] able to do that I think that can have a
+[3464] really meaningful impact for those
+[3467] individuals as well as for Polar as a
+[3469] business and I think that's
+[3471] fundamentally what excited VC's about
+[3474] polar and what we're building
+[3476] and then there was you know slides about
+[3479] all the things that we talked about like
+[3481] these different monetization tactics
+[3482] that we would offer eventually andh but
+[3484] we launched and we just started out with
+[3486] issue funding and so we've been just
+[3488] iterating like one funding tool and now
+[3490] soon one monetization tool at a time to
+[3494] just continuously learn from from users
+[3496] and continuously adapt uh to hopefully
+[3500] solve it for as many people as possible
+[3511] if you're anything like me friends then
+[3513] you are the kind of person that puts
+[3514] things off until you have to do it until
+[3517] you're ready to do it or something makes
+[3519] you need to do it right now it's normal
+[3523] okay it's called procrastination or it's
+[3525] called being prepared whatever you want
+[3527] to call it it's normal to put things off
+[3530] until you have to do it seeing the
+[3531] dentist going to the doctor that
+[3534] NeverEnding chor list and while most of
+[3536] the time it works out just fine the one
+[3538] thing in life that you really cannot
+[3540] afford to wait on is setting up term
+[3542] coverage life insurance you've probably
+[3545] seen life insurance commercials on TV
+[3547] and thought yeah I'll look into that
+[3549] later no later doesn't come this really
+[3552] isn't something you can wait on choose
+[3554] life insurance through ladder today
+[3556] here's what we love about ladder and why
+[3559] we allow them as a sponsor they are 100%
+[3561] digital no doctors no needles no
+[3564] paperwork when you apply for $3 million
+[3566] in coverage or less just answer a few
+[3568] questions about your health in an
+[3570] application ladder's customers rate them
+[3572] 4.8 out of five stars on trust pilot and
+[3575] they made Forbes best life insurance
+[3577] 2021 list you just need a few minutes in
+[3579] a phone or laptop to apply laders smart
+[3582] algorithm Works in real time so you'll
+[3584] find out if you're instantly approved no
+[3586] hidden fees you can can to any time get
+[3589] a full refund if you change your mind in
+[3591] the first 30 days latter policies are
+[3594] issued by insurers with long proven
+[3597] histories of paying claims they're rated
+[3600] a and A+ by am best finally since life
+[3604] insurance costs more as you age now yeah
+[3608] right now now is the time to cross it
+[3609] off your list so go to L
+[3613] life.com changelog right now to see if
+[3616] you're instantly approved that's l a d d
+[3619] e r
+[3620] [Music]
+[3621] life.com changelog
+[3627] so the polar platform itself is open
+[3631] source it looks like Apache 2.0 license
+[3635] building on top of the GitHub platform
+[3637] which itself is not open source and
+[3640] polar backed by Mitchell Hashimoto whose
+[3642] company was open source in a sense say
+[3645] that's simplifying but recently
+[3647] relicensed to business source or
+[3650] functional Source I can't remember which
+[3651] one they used curious your thoughts on
+[3654] Polar itself being open source are you
+[3656] afraid of somebody coming and just copy
+[3660] pasting polar and renaming it and
+[3662] competing with you what are your
+[3663] thoughts around that so my my thoughts
+[3665] around that is we're operating very much
+[3669] in you know like a blue ocean in the
+[3671] sense there's there's not a lot of
+[3673] competition in our Market because there
+[3675] hasn't been a market that's the one
+[3677] we're trying to create and so I
+[3680] definitely foresee that once polar
+[3682] becomes successful like certainly we'll
+[3684] have more competitors and maybe we're
+[3687] competitors with paddle or lemon squeezy
+[3689] in a couple of months as well right but
+[3692] I'm a big believer in like if we get the
+[3695] community like that's the
+[3697] differentiation like the code itself is
+[3700] not the secret sauce of polar it's like
+[3704] the Innovation that we have what we're
+[3706] building out the vision for the future
+[3709] uh so even if copycat comes along like
+[3711] that wouldn't concern me in the short
+[3713] term having said that I mean you
+[3716] mentioned Hashi Corp I think there's a
+[3717] lot of cases right where they've changed
+[3719] licenses and I know there's been huge
+[3722] debates about this in the
+[3724] ecosystem I think it's really healthy
+[3727] and good for our ecosystem that we're
+[3729] starting to have these debates and that
+[3732] we're starting to experiment a lot more
+[3734] like in any given industry like it's not
+[3737] going to be perfect and it's going to be
+[3739] rough and like we're going to be upset
+[3741] and like will happen but I think the key
+[3744] thing is that experimenting happens
+[3746] because I think it's been quite stale
+[3748] for a long time where it's just been
+[3750] donations and sponsorship and I think
+[3753] you have like free open source and uh
+[3755] everyone who's like free in all senses
+[3758] of the word right and then you have
+[3759] commercial open source and I think we
+[3762] need to see this as a spectrum and allow
+[3764] for people to operate within that
+[3766] Spectrum without animosity on either
+[3769] side and I think it's really really
+[3771] important that we can experiment to
+[3773] figure out commercial open source and
+[3775] like celebrate when open source
+[3777] developers get paid to do what they do
+[3780] rather than holding them back like I
+[3782] think that's a old concept from the old
+[3785] like Microsoft versus Linux days from
+[3788] the '90s that in my opinion it would
+[3792] just hold us back for the future of Open
+[3794] Source do you think this is a winner
+[3796] take most Market meaning like similar to
+[3799] Shopify you know there's Amazon and
+[3801] there's Shopify and is there anything
+[3803] else I don't think there's pretty much
+[3804] anything else Shopify is very much the
+[3806] platform for people who are selling
+[3808] online I guess you could say well
+[3809] there's Wix and there's other things
+[3811] that are kind of multi-purpose that also
+[3813] have the e-commerce component but it's
+[3815] kind of Shopify is the winner of that
+[3818] particular game and Amazon's a winner a
+[3820] bigger winner of a bigger game and
+[3821] that's about it and I think in in many
+[3824] ways GitHub and GitHub sponsors is kind
+[3826] of well GitHub is definitely the winner
+[3827] take most of the developer world of
+[3831] course gitlab also doing very well more
+[3834] on the Enterprise side of things less on
+[3836] the Indie side of things but what about
+[3840] this I mean I guess you have patreon you
+[3843] have I guess twitch is a different thing
+[3845] I'm trying to think of like Creator
+[3846] platforms you have patreon then you have
+[3848] the big social media platforms
+[3850] themselves I don't know your thoughts
+[3852] into that place of like do you think
+[3853] polar has to get because if it was and
+[3856] had Network effects that would guard
+[3858] against clones right that would guard
+[3859] against copycats if you had the the
+[3861] actual Network effects going for you
+[3863] yeah exactly yeah I think for a lot of
+[3865] those businesses you have those Network
+[3866] effects that eventually leads to like
+[3869] there's just one winner in the market
+[3871] right um and I think that Canon is
+[3874] likely to play out here as well in the
+[3877] future what I also just believe in is in
+[3881] terms of how we're just shaping products
+[3883] these days like historically there's
+[3885] been this you build a generic solution
+[3888] eventually that just works for the
+[3889] broadest possible Market as possible and
+[3893] now with the advances in AI like I'm
+[3895] very bullish and believe in like more
+[3898] verticalized software and that's like
+[3901] very very personalized so I think
+[3904] there's a win or take all but I think
+[3906] like those markets are going to be a lot
+[3909] more verticalized and specialized in the
+[3911] future uh than generalized as they've
+[3913] been in the past and maybe that's a
+[3915] copout answer because it's sort of like
+[3917] standing in both camps but I I do
+[3920] believe in the notion of just like the
+[3923] pies themselves growing larger
+[3926] rather than fighting over a zero sum
+[3928] game MH at the end of the day when it
+[3931] comes to like the creater economy and
+[3932] just helping more people make a living
+[3935] off of their passions are there sub
+[3937] verticals inside software that would
+[3940] Niche you down even Beyond developer I'm
+[3942] thinking like infosec
+[3944] researchers I'm honestly asking I don't
+[3946] know the answer to this but like is
+[3948] there a point where polar becomes the
+[3950] generic one and there's also verticals
+[3952] that get carved out from there yeah like
+[3955] you know Game Dev for instance um like
+[3958] how how do you build like it's actually
+[3961] a question that I'm thinking about right
+[3962] but I could certainly see that if if
+[3965] polar becomes a Shopify for this genre
+[3968] which is obviously uh I would love I I
+[3973] could certainly see that's another Burke
+[3975] right would be like well I want to do
+[3977] this that polar did but specifically for
+[3980] like game devs yeah that's a good
+[3982] example and here's other ways that like
+[3985] I think there's two types of innovation
+[3986] fundamentally either it's a complete
+[3989] technical Innovation right which is a
+[3991] game changer like take advances in AI
+[3994] now or it's just about making existing
+[3996] things a lot faster and more seamless
+[3999] and you had like payment service
+[4001] providers back before right and now you
+[4004] have these Merchant of record like lemon
+[4005] squeezy and paddle which is just again a
+[4008] way to make it faster for the end user
+[4011] and now you have polar which is sort of
+[4013] this vertical version of that and so
+[4015] there might be a vertical of polar
+[4018] vertical in the future as well to just
+[4020] make it even more seamless and even more
+[4022] faster I saw authorized.net for the
+[4024] first time in like a long time in an
+[4027] email oh yeah I remember authorized.net
+[4028] yeah yeah that's an old one I was like
+[4031] this is back in the day when you used to
+[4032] have to call your bank this is pre-
+[4034] stripe you know that was 90s wasn't it
+[4036] may early 2000s oh was such a mess such
+[4038] a mess we've come a long way yeah and it
+[4040] was probably the be SES back then right
+[4042] because it had like an XML API or oh it
+[4044] was it was innovation you didn't have to
+[4046] call your actual bank it was certainly
+[4048] XML I remember using it it was and so
+[4050] maybe even but it was enabling in so far
+[4053] as it took you from zero to one it was a
+[4055] painful progress but you could actually
+[4057] do e-commerce where you couldn't
+[4058] otherwise I mean yeah exactly it let it
+[4061] happen it made it happen just so painful
+[4064] I was on uh your homepage I guess maybe
+[4067] your only page aside from maybe subd
+[4069] docs and stuff like that but the section
+[4072] was on uh the headline said serving
+[4074] world class to developers and I couldn't
+[4076] help but notice our friend Andre's cing
+[4081] Serenity OS and so as we're in this
+[4083] conversation I'm sort of digging around
+[4085] can we can we use this project and
+[4089] Andreas as an example of how a success I
+[4092] mean it's on your it's on your homepage
+[4093] they're there for a reason uh can you
+[4095] share more of that story your
+[4098] relationship with Andreas and uh serenio
+[4101] s and how because I I went to serenio s
+[4104] and click the sponsor button on GitHub
+[4107] and it pops up and says you know hey go
+[4109] over to Polar so what you mentioned with
+[4112] being I forget what you call it like a
+[4114] funding source with GitHub is is
+[4116] obviously true because you said so but
+[4117] it does work yeah yeah help me
+[4120] understand what I'm seeing here when I
+[4120] go to po. sh serenityos and what their
+[4124] story is what is it what are we seeing
+[4127] here what is the story for someone like
+[4129] them yeah absolutely so for those
+[4131] listening that might not know uh just a
+[4133] quick like Serenity OS uh is this
+[4136] project run by Andreas a Swedish guy
+[4139] who's building his own Operating System
+[4141] since like four years ago five years ago
+[4143] and now also ladybird which is his own
+[4146] browser as well and to be fair there's
+[4148] it's a community now thousands of
+[4150] developers contributing to the project
+[4152] but it's this absolutely wonderfully
+[4155] ambitious and insane project that one
+[4158] person took on that just is one of the
+[4160] best examples of where open source
+[4162] shines and what's possible so that's
+[4165] Andre and seren O and so September of
+[4168] last year I came in contact with Andreas
+[4171] and we had issue funding that was the
+[4172] only feature we had at polar at the time
+[4175] and the next chapter that we were in was
+[4177] what we called rewards which is how can
+[4179] you take the funding that you're getting
+[4181] for these issues and easily split it
+[4184] with contributors that are helping out
+[4185] solve that specific feature or whatever
+[4187] it might be and Andreas had I think
+[4191] about around the same time just received
+[4194] like $300,000 in sponsorship 100,000
+[4197] from Shopify amongst others and so he
+[4201] was in this phase where now he had like
+[4204] a larger pool of capital and like he
+[4207] brought on two Engineers full-time to
+[4209] work on serenity with him but he just
+[4211] started thinking about how can he
+[4213] distribute the funding that he's
+[4214] starting to get more and more of to more
+[4216] of the contributors that are helping out
+[4218] with Serenity and so we sort of met at
+[4220] this perfect timing and so Andreas was
+[4222] actually part like I shared figma
+[4224] designs with him on how rewards would
+[4226] work and got his feedback and we sort of
+[4228] designed that feature together in many
+[4230] ways and that's how Serenity is
+[4232] primarily using po so they have select
+[4235] issues for serenity and ladybird where
+[4238] contributors can help out and they would
+[4240] get 100% of the funding that the
+[4242] community funds those particular issues
+[4245] and it's been working really really well
+[4247] for serenity and and the team and the
+[4250] reason why they switched so that it
+[4252] points now to Polar from GitHub is
+[4255] because of that as well like Andreas
+[4257] loved the idea that with polar he can
+[4260] highlight more developers that are part
+[4261] of the project and help distribute that
+[4264] funding versus centralize that funding
+[4266] to him alone and I can share that idea
+[4269] which is something we're working on now
+[4271] but we're taking that concept of rewards
+[4273] and like really centralizing it
+[4275] throughout everything we're doing at
+[4276] polar so inspired by you know the one%
+[4279] climate program that stripe launched
+[4281] we're going to introduce like a 1% OSS
+[4284] program where the idea is if you're
+[4286] building commercialization and you're
+[4288] like building or wanting to build a hash
+[4290] Corp or a Sentry whatever it is that you
+[4292] can automate and recognize like here's
+[4294] the upstreams and here's my dependencies
+[4296] that I'm dependent on and that
+[4298] automatically that gets distributed to
+[4300] them you can set it at 1% you can set it
+[4302] at 10% 20 50 whatever you want but
+[4306] that's a I think very key distinguisher
+[4309] from other platforms as well where
+[4311] hopefully that will open up the door
+[4313] that like commercialization
+[4315] can push even more Capital through like
+[4318] as part of the model being set up to
+[4320] distribute the income from that to your
+[4323] Transit inde dependencies that's super
+[4325] cool I also like your your issue
+[4327] splitting feature which seems similar
+[4329] where you're actually taking the funding
+[4331] for an issue and you're Distributing it
+[4333] amongst participants to multiple people
+[4336] because the maintainer may not be the
+[4337] one doing the work etc and so I think
+[4340] that's all really cool that's the kind
+[4342] of stuff you can build when you are
+[4343] focused right on Developers versus
+[4345] genericism yeah exact spot on and so
+[4349] we've also integrated that feature quite
+[4351] deeply so the issue funding embeds very
+[4354] seamlessly on the GitHub issue itself to
+[4357] make that a delightful experience uh
+[4360] rewards works by you know we're polling
+[4362] and looking up all the contributions
+[4364] that are referenced to Any Given issue
+[4366] so that when the issue is closed out
+[4368] like we can suggest here's the people
+[4370] that contributed to this effort uh for
+[4373] the maintainers very very easily just
+[4375] split it out with them so do they have
+[4377] to be signed up for Polar in able for
+[4379] that to work or how does it work if a
+[4381] person just happens to contribute to SOS
+[4384] and Andreas says split this with them
+[4385] but they're not on Polar yeah so that
+[4387] works so basically Andreas badge is an
+[4390] issue and maybe sets a funding goal for
+[4392] it and himself and others they
+[4395] contribute funding towards it uh let's
+[4397] say Adam you you chime in and you open
+[4399] up a pull request you close it out and
+[4401] solve it so now Andrea see sees that
+[4404] like Adam closed this and soled it and
+[4407] he can just confirm that it's completed
+[4409] and Adam you don't have a polar account
+[4411] by this stage but Andreas rewards you
+[4415] 100% of it and creates a giup comment
+[4418] seamlessly through our uh dashboard that
+[4421] basically just pings you at them and
+[4422] says hey you now have this reward
+[4424] waiting for you on Polar sign up and
+[4427] automatically once you signed up with
+[4428] your get up login we automatically
+[4430] obviously verify the identities and just
+[4433] top up your account with that board so
+[4436] it sits in an account can you explain
+[4438] where this money sits at then cuz you
+[4439] mentioned a lot of money that Andreas
+[4442] got
+[4444] $300,000 how did that can you walk me
+[4446] through the flow of money and accounts
+[4449] it sat in and how that money was added
+[4452] to my account or topped up my account
+[4454] explain to me where the money sits yes
+[4457] uh so just very very important to make
+[4459] clear now I'm not talking about like
+[4461] Andreas 300,000 because that is
+[4464] something he receive know uh where
+[4466] that's house okay that was outside the
+[4468] model okay tell us exactly where the
+[4469] money is BKE we want to know where the
+[4470] money is it's under this pill no I'll
+[4473] definitely tell you uh but I just want
+[4475] to make clear that I'm not in this case
+[4477] speaking about where Andreas keeps his
+[4479] money so to speak but so on Polar on the
+[4482] scenario that I painted right let's say
+[4484] Jared you're funding an issue $500 as I
+[4487] mentioned polar is a merch record so
+[4489] that $500 is paid to Polar and arrives
+[4493] into our platform account account on
+[4495] stripe that's where it sits and that's a
+[4498] liability on our books rights and for
+[4500] you as a maintainer and any eventual
+[4502] contributors like once that issue is
+[4504] closed out and you can that money
+[4506] becomes something that you can get and
+[4507] withdraw we have our like own Ledger
+[4511] internally where we keep track of like
+[4514] who do we owe money from this liability
+[4516] that we have right uh so the moment when
+[4519] you say this issue is completed I want
+[4521] to split the funding then in our Ledger
+[4524] we basically say jar like if you said
+[4525] 50/50 splits like Jared you're going to
+[4528] get $250 Adam you're going to get $250
+[4531] minus our 5% fees and that then is
+[4534] showed up in your Finance tab on Polar
+[4537] where you at any given point can just
+[4539] hit withdraw and that's when we issue a
+[4542] payout or a transfer and payout to your
+[4545] connected stripe account so to accept
+[4547] the money from a reward you mentioned
+[4550] stripe is stripe the only way currently
+[4551] is there is that the way it is now so we
+[4554] do have have uh like a partnership with
+[4557] open Collective so you can point to a
+[4560] fiscal host on open Collective instead
+[4562] of a stripe account um it's like a
+[4564] donation basically yeah so most of our
+[4566] users are doing stripe uh even though we
+[4570] like we do offer the open Collective
+[4572] route in complete transparency this is
+[4575] on our GitHub as well but I definitely
+[4578] foresee and I'm excited about expanding
+[4580] our payout possibilities in the future
+[4583] like PayPal you know direct a payouts as
+[4587] well to your bank to just scale that
+[4589] more internationally and to make it more
+[4591] convenient as well for developers yeah
+[4595] that's awesome so I'm uh I went to S on
+[4598] Polar pulled the first I think they're
+[4601] called top issues just pulled the first
+[4604] one that's uh lib web it says add
+[4606] support for Border radius in GP painter
+[4609] it goes on to explain who opened the
+[4611] issue how much has been funded it's got
+[4614] some avatars there kind of explains some
+[4617] things mentions that contributors get
+[4619] 100% of the received funds after fees
+[4622] and then on the right hand side is the
+[4623] option to go ahead and fund you've got
+[4625] fund you got contribute I'm not sure
+[4627] what the difference is between those two
+[4629] but I guess probably contributes code
+[4631] that makes sense now I clicked the
+[4633] button I didn't reveal what it said I do
+[4635] understand what it means to be
+[4636] contributor thank you very much uh but I
+[4639] can go and fund this uh I think when you
+[4640] put in funds you're kind of are
+[4641] contributing aren't you well that's why
+[4642] I couldn't understand like what's the
+[4643] difference between funding and
+[4645] contributing but yeah yeah yeah that's
+[4647] good feedback yeah sorry go ahead but it
+[4650] gives me the chance to choose my my
+[4652] funding amount it it defaults to 20
+[4654] because the minimum is 20 but I can
+[4655] certainly you know change that to couple
+[4658] hundred bucks what I can't understand so
+[4660] far looking at this UI is if it's been I
+[4664] think that means it's been 500 funded
+[4667] there's no request on a certain amount
+[4669] so I could just be throwing money onto
+[4671] the bucket whoever eventually does this
+[4674] just gets this pull of money I don't
+[4675] know what the value is necessarily of it
+[4678] not even sure what my question is but
+[4679] like I'm just looking through what the
+[4681] user experience is I'm like real time
+[4683] analyzing in a way and and to some
+[4685] degree not doing a great job but it's
+[4687] it's not a bad UI you know but you're
+[4689] giving this on rent to folks they
+[4691] understand what the issue is they
+[4692] understand how much it's been funded and
+[4694] they can give money or as we just
+[4696] mentioned to be confusing they could
+[4698] also contribute that is not funding it's
+[4700] actually code potentially to give Burke
+[4702] a little bit of credit here next to the
+[4705] fund button there's a heart icon and
+[4708] next to the contribute button there's a
+[4710] terminal there is and so they are
+[4712] different they are saying like this they
+[4714] give you some more affordances to know
+[4716] which one is which so I hear you and I
+[4719] mean I think it I think this is awesome
+[4721] like by no means have we you know
+[4723] perfectly solved everything so I really
+[4725] just enjoy like hearing your first
+[4728] impressions here uh even though it's
+[4731] somewhat painful sorry about that no no
+[4733] not at all and so yeah I think as you
+[4736] mentioned or kind of refer to just
+[4738] quickly there so if you set up polar for
+[4742] your project as a
+[4743] maintainer uh you can select on our
+[4745] compete control on like which issues do
+[4747] you want to badge so that people can
+[4749] fund towards it right now you can have
+[4751] it open-ended so that anyone can like
+[4753] fund anything and there's no specific
+[4755] goal or anything like that in mind but
+[4758] you can set a funding goal as well which
+[4760] is very compelling and helps with some
+[4763] conversion as well like we've seen mhm
+[4766] we've seen people set like $500 as a
+[4768] funding goal and then you get maybe like
+[4770] 320 say from three backers and then
+[4774] someone swoops in and like donates 180
+[4777] specifically MH just to sort of like
+[4779] let's get there yeah so that's certainly
+[4782] a helpful tactic but you don't have to
+[4784] deploy it and I think this goes back
+[4786] again to like it's just a key principle
+[4789] of ours like this is not issue bounties
+[4791] for open source like I'm very much
+[4793] against them like we've designed issue
+[4796] funding and rewards with maintainers in
+[4798] mind and putting them in the driver seat
+[4801] and so some
+[4802] maintainers they don't want a funding
+[4804] goal because they don't want to
+[4807] necessarily say that by x amount like I
+[4810] promise to do it or they want to leave
+[4812] it open-ended and so we give them that
+[4814] complete control and flexibility that
+[4816] makes sense Let's uh let's dig into this
+[4818] UI one more layer and then I want to get
+[4819] your opinion on why you're so against
+[4821] bug bug bounties CU I think that's let's
+[4823] go so far that you actually funded I'm
+[4826] that's where I'm going that's where I'm
+[4827] going honestly a nice take money I took
+[4830] it I was it 100 bucks I took it back
+[4831] down to 20 cuz you're explanation just
+[4833] now just scared me so now I'm scared a
+[4835] little bit so it's down to 20 bucks I
+[4836] don't really care about this I want to
+[4838] put some money on it but I'm not
+[4839] whatever I'm just kidding around at
+[4841] $10,000 there's a golden ticket right oh
+[4843] that's a cool feature the fund this
+[4845] issue button which is big and blue
+[4847] doesn't become really the the blue it
+[4850] can become until I put my email there
+[4852] which then sort of unlocked this new UI
+[4855] down below which lets me choose how to
+[4857] give the money not just how much in the
+[4860] button it it gives me the chance to say
+[4862] how much what is my contact details and
+[4864] the primary way to do that is my email
+[4866] address and then it unlocks card Apple
+[4869] pay Bank you can even affirm this so if
+[4872] you want a Forin free payment 50 bucks
+[4875] to this thing you can certainly do that
+[4878] it seems cash app pay is an option which
+[4881] I do love cash app big fan of square and
+[4883] cash app uh Clara clarina I believe is
+[4886] also for interest free payments of
+[4889] $12.50 to fund this I lied I I put 50
+[4893] bucks in so you're probably doing the
+[4894] math uh and then afterpay which is you
+[4897] know another Square slash app ecosystem
+[4901] world for more interest free payments of
+[4903] $11.50 so I could on credit fund this
+[4907] thing and go into debt if I wanted to
+[4909] let me just go on record and say don't
+[4910] do that people don't do that you know if
+[4912] you can't afford it don't fund it yeah
+[4915] you know they're go buy some groceries
+[4917] or pay your pay your rent yeah I was
+[4919] going to point that out because like
+[4920] that's why I brought that up was like
+[4921] the I want to go through the funding
+[4923] methods but I was surprised to see that
+[4925] I can unedit you know fund this thing 50
+[4928] bucks so let's break all that down I
+[4930] guess yeah let's break all that down
+[4933] take that and run with it Burke yes so I
+[4935] think like ideally a lot of that would
+[4938] just be shown up front so that like I'm
+[4940] a big believer that just give people the
+[4942] entire form so that they know what to
+[4944] expect and like what's required to
+[4946] complete it right there's a unique
+[4947] challenge here which is as I mentioned
+[4949] we're integrating with stripe we use
+[4951] like payment elements as an integration
+[4954] there and to create payment intents and
+[4957] so we need to capture your email to
+[4959] basically create a complete payment
+[4962] intent and like process that payment uh
+[4965] because you're coming in from GitHub and
+[4967] you're unknown to us at this stage like
+[4970] we obviously don't have your email or
+[4972] anything of that nature so we need to
+[4974] capture that before we can then generate
+[4976] that payment intent and as a result show
+[4978] the checkout flow essentially with the
+[4981] payment details and I think that's
+[4983] something we can and will optimize even
+[4986] further down the road but if you paid
+[4988] once on polar and you have a customer
+[4990] account with polar as a result of that
+[4992] like immediately all of that will be
+[4993] filled out so it will be even smoother
+[4996] in the future as well gotcha you mention
+[4998] you mentioned a lot of different payment
+[5000] options more than I'd like actually but
+[5002] I'm okay with that for for the moment
+[5004] expl hey that's good yeah I understand
+[5006] that feedback as well I think as
+[5008] developers like we love choice and we
+[5012] initially launched just with like credit
+[5015] cards like Visa Mastercard like the
+[5017] standard right very very quickly the
+[5019] feedback we've got was like Hey can you
+[5021] add you Clara can you add cash app can
+[5025] you add XY and yeah yeah and so we did
+[5028] so we've expanded to all of the requests
+[5030] that people had but I will be honest and
+[5033] say I think the way that's presented
+[5035] could be a bit nicer that's the standard
+[5037] like payment elements from stripe where
+[5040] all of those are shown it's supposed to
+[5042] have some intelligence behind it as well
+[5044] based on where you're located to show
+[5046] you the most commonly chosen options but
+[5048] yeah it can get a little bit busy that's
+[5051] not necessarily a bad thing though when
+[5053] it comes to payment options like a lot
+[5055] of customers see this as a good thing
+[5059] and it helps with conversion we've
+[5061] certainly seen you know people do use
+[5063] cash app and all the like not so much
+[5066] the clarus of the world which to your
+[5069] point Jared is is good so we don't hope
+[5072] people I concur with Jared too I think I
+[5073] was I was surprised which is why I
+[5075] walked through it I really wanted to
+[5076] walk through it to explain that part but
+[5078] not so much to say this is bad
+[5080] necessarily but like it was unexpected
+[5082] to be to have an option to pay this
+[5086] generosity I want to give to the world
+[5089] via
+[5091] credit you know via interest repayments
+[5095] to a behemoth like a firm which is just
+[5098] basically everywhere I don't disagree
+[5100] with the options I I do disagree with
+[5104] just one more way to go in debt gosh you
+[5107] know I mean cuz I mean honestly there's
+[5109] some people out there that would would
+[5110] have like deep heartstrings because of
+[5113] whatever reason and give more than they
+[5115] might be able to if it's an option now
+[5118] that's their choice you can't change
+[5119] what their choice is right as an
+[5121] individual and a human but at the same
+[5123] time I I do think that that there's a
+[5126] there's a line that you can draw there
+[5127] morally to be like ah you know maybe
+[5129] this doesn't really make sense for our
+[5131] purpose and you you can sort of dice
+[5133] that tomato if you like but I do like
+[5136] choice I do like Apple pay when I'm you
+[5138] know since you're from the land of of
+[5140] Shopify I'm a big fan of shopify's
+[5142] checkout process you know I almost
+[5145] elevate my trust for the merchant or the
+[5147] place I'm buying it from if they've made
+[5148] a good choice which I believe Shopify is
+[5150] a pretty good choice and if they
+[5152] especially enable payment type like
+[5154] Apple pay which I'm a not a fanboy but
+[5157] I'm a user and so if I can pay with
+[5159] Apple pay I prefer it online just cuz
+[5161] it's just so simple my finger does the
+[5164] does the pushing on this biometric key
+[5166] they gave me and I'm going to use it
+[5168] okay it's it's just too easy so I would
+[5171] I would definitely lean on that side as
+[5175] you explore this uh this UI more yeah I
+[5179] hear you and I think the way I want to
+[5180] approach it is um to give maintainers
+[5184] the option and more control again like
+[5186] true which options do they want to show
+[5188] up in the context of their real estate
+[5191] which is how I see this but I wouldn't
+[5193] go so far as to say like we're actively
+[5196] going to take the decision of like not
+[5198] allowing the claras or the affirms of
+[5199] the world yeah like Clara is a Swedish
+[5201] company I know I don't know what the
+[5203] experience is in the US but in Sweden
+[5206] there's certainly that criticism against
+[5209] Clara as well right there's people that
+[5211] should not be spending with Clara and
+[5213] getting in depth with it and that's as
+[5215] Jared said like do not do that never
+[5220] right he was pretty he was pretty St
+[5222] with his response he's like straight on
+[5223] it don't do it no don't not like never
+[5225] never ever ever ever ever that's just my
+[5227] advice but I understand that you give it
+[5229] as an option you know yeah exactly
+[5231] because in like for me in Sweden like I
+[5234] always buy with clarina if I can just to
+[5237] support the company no no I don't
+[5239] understand not at all okay it's it's
+[5241] just for the convenience I think it's
+[5243] beyond the interest free pay right is a
+[5244] platform for like shopping right it's
+[5246] similar to the way you might use Apple
+[5248] pay right you put your payments there
+[5250] and you leverage them it's different I
+[5253] just I just know they have like a whole
+[5255] different beyond the interest free
+[5256] payments yeah so for me in Sweden it's
+[5258] at least that like when I buy stuff
+[5261] online uh this could be like grocery
+[5264] shopping to clothes whatever it is right
+[5266] it's that I can pay and manage payments
+[5269] through Clara centrally and that I have
+[5271] all my receipts and everything that I
+[5273] need through CLA I much rather prefer
+[5276] that versus like my credit card which is
+[5280] then just like kind of anonymized
+[5282] transactions on my bank and I need to go
+[5285] to my email to dig out these receipts
+[5287] like it's just not as convenience as
+[5291] Clara is for me in Sweden but to be
+[5293] clear like again I would never use Clara
+[5296] to like pay off something that I
+[5298] wouldn't be able to afford so buy now
+[5301] pay later is just one of the things it
+[5302] offers it's not the entire deal right
+[5306] like even there's a learn more spot
+[5308] there which comes with a modal and it
+[5309] says there's four payments of 1250 at
+[5311] least a miner where I put 50 bucks into
+[5313] the $50 into the input and the other
+[5317] option is pay now in full so I think in
+[5320] different parts Clara is a platform for
+[5322] payments not just for interest
+[5324] repayments whereas I only know a firm to
+[5326] be their only option to me that I'm
+[5328] aware of is just simply legit credit
+[5331] it's I mean it's a version of it's It's
+[5333] Buy pay later it's four interest repe
+[5335] payments of 1250 but I've created a debt
+[5338] right that I've got to pay over multiple
+[5339] months I may miss there may be fees
+[5342] there may be goons coming to get my
+[5345] kneecaps or whatever who the heck knows
+[5346] how deep a firm goes I know they're
+[5349] everywhere but it's it's just not sure
+[5351] hey here's the cash I have I'm being
+[5353] generous I want to fund this lib web ad
+[5355] support for Border radius and GPU
+[5357] painter issue there you go it's it's a
+[5359] little bit more hairy and I we're
+[5362] camping out here I think a little
+[5363] slightly too long but I maybe a little
+[5365] bit too long a little too long now just
+[5366] to go a little bit longer long this
+[5369] particular feature you know enables your
+[5372] business to finally turn a profit and
+[5375] you need it to be done but you don't
+[5376] have any cash right now and if this
+[5379] feature lands then you're about to take
+[5381] off like a rocket ship and all you if
+[5383] you could just buy now pay later your
+[5385] life might be saved from utter
+[5387] destruction 1250 later per
+[5389] month no I think yeah my my I guess the
+[5393] tldr from my
+[5394] stance is like I think give the
+[5397] maintainers the control so that they can
+[5398] offer all the things that we can offer
+[5400] through stripe so they have the complete
+[5403] flexibility uh I think it's always a bit
+[5405] dangerous when you like make these
+[5408] decisions on behalf of all of your
+[5410] customers because I agree you can use
+[5413] these services and they are used in ways
+[5415] that are not beneficial or great
+[5417] whatsoever that's true uh but like CL
+[5420] like clarina it's a great service that a
+[5422] lot of our like swedes at least are
+[5424] using to pay for stuff like immediately
+[5427] just do so in a convenient way and so
+[5429] this is where it gets like super tricky
+[5431] for me I think it's like give
+[5432] maintainers the tools to make the
+[5434] decisions they're comfortable with but
+[5436] I'm not comfortable saying like I will
+[5438] block these payment methods because of
+[5440] my own like political opinions well it's
+[5442] not politics but it's a it's a it's a
+[5445] personal opinion it's not politics yeah
+[5447] that's yeah I mean I guess it's personal
+[5448] politics sure blur the lines a bit but
+[5451] so here's a here's a maybe a vote for
+[5454] you know and just me playing you know
+[5455] the advocate for this we're not moving
+[5457] on okay is what if uh you know I'm
+[5459] willing to take on that as a responsible
+[5461] human this four-month payment and I want
+[5464] to I I don't have the cash but I want to
+[5466] fund this thing because I'm in the
+[5468] community and I'm talking to these
+[5469] people in slack or in Discord or some
+[5471] other realtime Channel and this is just
+[5473] simply the interface I go through to
+[5475] enable I guess that's okay you know
+[5477] that's up that's up to that human to
+[5479] make their own decision I may have an
+[5481] allergy and Jeremy as well to Leverage
+[5484] credit or a debt in this way and that
+[5486] may be my choice that's not everybody
+[5488] else's choice I do think there is some
+[5490] danger in there but if you're doing a
+[5491] responsibly then you know if it's the
+[5493] maintainer choice too then so be it yeah
+[5497] ex so be it yeah yeah and make if you
+[5499] makes more comfortable Adam we have yet
+[5501] to have that case where someone actually
+[5503] like leverages something well let's not
+[5505] have any horror stories about somebody
+[5506] overfunding open source and having major
+[5508] troubles let's move on to your issue
+[5511] with bug bounties how how deep does this
+[5513] go
+[5514] is are you you going to pound your fists
+[5516] you going to get red in the face I can
+[5517] yeah I can for sure okay do what you got
+[5519] to do tell me okay okay so there are two
+[5523] core issues with Bounties in open source
+[5527] at least how they've been historically
+[5529] executed so one thing is just like
+[5531] bounties as a concept is great but
+[5534] bounties only really work when there's
+[5536] like two parties involved there's the
+[5538] person setting up the Bounty who is also
+[5540] the person in charge of like the quality
+[5541] assurance of the deliverable and
+[5544] obviously the person that you know
+[5545] delivers the goods that the Bounty set
+[5547] up for so like a classical example is
+[5550] the western movies right you set up a
+[5551] bounty like capture this bad guy $10,000
+[5555] that's the US government that says like
+[5557] we'll verify that you did the right
+[5558] thing and then pay out $10,000 in open
+[5561] source the way bounties has always
+[5563] worked is that someone just puts up
+[5565] money for any issue without the
+[5568] maintainers involvement awareness or
+[5571] approval typically on a marketplace
+[5573] where where others can then like work on
+[5576] those issues for that Bounty right and
+[5579] this always leads to the same thing
+[5580] where you see these GitHub issues where
+[5584] this maintainer the poor maintainer who
+[5586] is already suffering from not having
+[5588] enough time and just getting you know
+[5590] constant streams of issues coming in now
+[5593] he has like a lot of different
+[5595] contributors coming in that are just
+[5596] there for the incentive of getting the
+[5598] money and if you look at those issues
+[5601] it's always the same case where it's
+[5602] like it's a raise towards that cash and
+[5606] so the contributions are of like fairly
+[5609] low quality in comparison to like
+[5611] someone being there for the right
+[5613] incentives and it's a competition and a
+[5617] race amongst the contributors I think
+[5619] that's the second problem which is it's
+[5622] often a Marketplace approach where it's
+[5624] these directories where you can sort of
+[5625] sort issues by the amount that you can
+[5629] get which again just like as soon as
+[5631] someone then funds it $1,000 you're
+[5633] going to have have like five to 10
+[5635] developers swooping in there to try to
+[5638] get to this
+[5639] price and I don't think that that is
+[5643] what like open source maintainers need
+[5645] and historically what we've seen is just
+[5647] that they hate this and they turn it off
+[5649] and so we took a very drastically
+[5651] different approach which is just let's
+[5653] put the maintainers in the driving seat
+[5655] here and let's rather make it about how
+[5657] can we fund their efforts with the
+[5660] backlog and all of the issues that we're
+[5662] like pouring onto them and then give
+[5664] them the tools to then distribute that
+[5666] funding with their existing community of
+[5670] contributors rather than setting a
+[5672] Marketplace that attracts people just
+[5674] for the sake of that money it's kind of
+[5676] like uh I don't know how it is in Sweden
+[5677] but it's it's kind of like garage sales
+[5681] right there's a certain type of person
+[5683] and I go to garage sales so I'm not
+[5684] saying like socio economically type of
+[5687] person but just generally it brings
+[5688] people into a neighborhood that don't
+[5690] otherwise belong there and sometimes
+[5692] they're not there with the best
+[5692] incentives
+[5694] sometimes they there to get a deal
+[5695] sometimes they're there to like look at
+[5697] the neighborhood cuz now they're able to
+[5699] be there in a way that gives them less
+[5702] side eye less shade I don't know
+[5704] whatever it might be and you and we've
+[5706] had some bad things happen in different
+[5707] neighborhoods over time with garage
+[5709] sales it's like it's an invitation to
+[5711] people who generally don't belong there
+[5713] because they don't live there they're
+[5715] not of the community they're not there
+[5717] contributing and giving and supporting
+[5718] and all the things they're there simply
+[5720] to sort of take away or be there in a
+[5722] sneaky way and do something something
+[5723] that's not that's nefarious it's not
+[5726] cool yeah it's kind of like that kind of
+[5728] reminds me of that I mean this is
+[5730] something that I very strongly believe
+[5732] in I chatted with hundreds of
+[5734] maintainers in building polar and like
+[5737] designing what it should be and so far
+[5740] it seems that this has resonated a lot
+[5742] like we get a lot of credit for going
+[5745] that different route and that's why
+[5747] there's a lot of developers that are
+[5748] using issue funding that wouldn't and
+[5751] have opted out of other like Bounty
+[5753] programs in the past even though you
+[5756] know there might be like it would
+[5757] probably be like a quick Buck to do it
+[5759] right like maybe but I just
+[5762] fundamentally believe in like building
+[5764] for that developer and the maintainers
+[5766] for the long term rather than yeah doing
+[5770] some short-term optimization gotcha
+[5773] let's give a prescription to some folks
+[5775] that we got lots of types of folks who
+[5778] listen to this from people who
+[5780] contribute people who want to fund open
+[5782] source maintainers
+[5784] folks who were looking at this thinking
+[5785] oh my gosh I'm so glad this conversation
+[5787] happened they went that deep into that
+[5789] UI holy molies thank you so much made it
+[5793] past the bu now pay later part right
+[5796] give some direction to the folks who
+[5798] want to look at the platform You're
+[5800] Building as a Creator or a maintainer or
+[5803] whatever terminology you leverage to to
+[5806] Define that person what's a good first
+[5808] step for maybe three different people
+[5811] the the Creator maintainer who wants to
+[5813] support support their project and do
+[5814] what Serenity OS has done and Andreas
+[5817] has done to somebody who wants to look
+[5819] for the projects that might be on there
+[5822] because they like the way they can be a
+[5824] part of the community and give and maybe
+[5826] the other one I don't know who it might
+[5827] be so two maybe or three if if you can
+[5830] give me some give me some Direction so
+[5831] for all of the maintainers out there I
+[5834] think the key thing is like i' I spoken
+[5837] to hundreds of different companies as
+[5838] well of how we can get more companies to
+[5840] invest in open source like I'm very
+[5843] bullish and we can get into that as well
+[5845] but I believe that the route to open
+[5847] source sustainability for individual
+[5849] maintainers is to look at all the things
+[5852] that they're doing beyond the free code
+[5854] that they're giving that is value ads
+[5856] that they're already giving today such
+[5858] as like support like issues that they're
+[5862] crushing uh to like Discord that they're
+[5864] creating and managing and that's where I
+[5866] think you can take like a step back and
+[5868] think about how can you package this in
+[5870] an offering where you can actually get
+[5872] people to like sponsor you to get these
+[5875] additional benefits to also benefit you
+[5878] as well uh so I would start small like
+[5881] sign up to Polar like start using issue
+[5884] funding if that floats your boats start
+[5886] using donations and sponsorship uh but I
+[5889] would encourage you to like start
+[5891] offering some membership benefits and
+[5893] we' designed them to make them really
+[5895] compelling without breaking the
+[5897] principles of Open Source in the sense
+[5898] that like you can have paid memberships
+[5901] where you can offer premium posts like
+[5904] premium content and insights to what
+[5906] you're building and your projects and
+[5907] progress what have you but you can also
+[5909] set it up to be early access so that
+[5912] automatically those newsletters become
+[5914] publicly available after say a week and
+[5917] so if you're offering a disc score today
+[5920] and you're writing some updates like set
+[5922] that up as a tier where you're giving
+[5923] early access to those updates like
+[5926] create some roles on discords where
+[5928] there might be a channel where those
+[5930] people that are sponsoring you they can
+[5932] you know you can chat with them and
+[5934] maybe hear pick their brains earlier and
+[5937] so forth just give those types of
+[5938] benefits because the truth is like the
+[5942] the Paradox of Open Source is that it's
+[5943] immensely valuable but like the value is
+[5946] also in like commoditizing the value and
+[5948] it's really really hard right to like
+[5950] get money from something that has been
+[5951] offered for free but recognize that
+[5953] you're giving a lot more on top and like
+[5956] experiment with polar how you can
+[5959] capture that into more funding with our
+[5962] tools while still you know being in the
+[5965] best interest of your community without
+[5967] you know completely going proprietary of
+[5969] course striking that balance uh the
+[5972] other audience who was that that was
+[5973] like people who wanted to contribute and
+[5975] more on like the mar site they want to
+[5977] they want to support open source and
+[5979] they they see this as an example like
+[5981] hey I can't go easily and just like look
+[5983] at all the options for GitHub sponsor
+[5985] for example there's no index of GitHub
+[5988] is the index right same with with polar
+[5991] I can't go to an index either and say
+[5993] okay who's on Polar you know who's on
+[5995] first kind of thing I don't know I can't
+[5997] F I can't figure it out but I want to
+[5999] give some money or I want to support
+[6000] open source or maybe even that
+[6002] contributor might be an OSS fund or
+[6005] something like that where they're like
+[6006] wanting to divvy out some things like
+[6007] give some examples of like those people
+[6009] they're not creators and maintainers
+[6011] that need support but those who want to
+[6012] give support so that was one of those
+[6015] things that when we started out with
+[6016] polar like I put an equal emphasis on
+[6020] that side of things so you know the the
+[6023] whole Holy Grail when I chat with a
+[6025] bunch of Open Source maintainers right
+[6026] is how do we get businesses to fund our
+[6029] efforts and so I spent a lot of time
+[6031] like how can we build tooling for
+[6033] businesses and individuals to like see
+[6036] their dependencies and fund across it
+[6038] and don't get me wrong I think there's a
+[6041] lot that can be done there in the future
+[6043] but that is where we've like made a
+[6045] deliberate choice of like let's stay
+[6047] focused on building that platform first
+[6050] and foremost of just equipping the
+[6053] developers with all the tools to improve
+[6056] the funding and monetization for their
+[6058] own efforts because they can already
+[6060] reach Their audience through GitHub and
+[6062] these other networks where we can expose
+[6065] that tooling uh because like if we would
+[6068] get stuck sort of in Discovery like I
+[6070] think the drawback of that would be that
+[6073] we wouldn't offer as compelling and
+[6075] value ad services that you can upsell
+[6077] and that would put a cap on what the
+[6080] potential could be for you as a
+[6081] developer so this this is where like I
+[6083] think you know the partnership with
+[6085] GitHub and just recognizing that
+[6087] everyone is on GitHub like how can we
+[6090] surface those value ads that we help
+[6092] developers easily offer through there
+[6095] rather than trying to compete and build
+[6096] our own network today what's left Jared
+[6100] just take over the world I think that's
+[6102] the only thing left to do that's
+[6105] it IPO baby IPO I love it I'm very
+[6109] excited I've been trying to get I was
+[6110] every time we talk about GitHub sponsors
+[6112] with folks from GitHub sponsors I say
+[6114] what about issue funding and they always
+[6116] say for whatever reason they're not
+[6118] doing issue funding and so I'm just
+[6120] excited that you've tackled that
+[6122] particular aspect and that there it
+[6125] seems like as other ways to fund come
+[6128] out and are invented and proven polar
+[6132] just adds that to the suite of options
+[6133] and I think that's like just going to be
+[6135] great for so many
+[6136] people yeah so I'm excited I'm wishing
+[6139] you the best I hope that you uh become
+[6142] the Shopify of Open Source developer mon
+[6146] monetization tooling me too word salad
+[6149] there I like that excit about the future
+[6150] this was a fantastic fantastic
+[6153] conversation uh and Adam really
+[6155] appreciated the ux uh roast kind of
+[6160] anytime like I yeah I don't expect a
+[6162] deep dive yeah yeah yeah jokes aside I
+[6165] genuinely appreciate it it's nice to
+[6167] hear People's First Impressions and
+[6169] there were a few things in there that
+[6171] I'll take back to the to the Woodshed
+[6173] and you know polish up the product
+[6175] further gotcha well it came from a good
+[6177] heart you know I want to see the best
+[6179] for you we obviously have been in the
+[6180] trenches with Developers for so long and
+[6183] we love them obviously we are them and
+[6185] anything like you're doing the way you
+[6187] begin with your mom and your initial
+[6189] story to loving open source and now
+[6191] executing to support ways for open
+[6194] source developers to maintain and
+[6196] sustain I mean I just want the best for
+[6198] you so obviously I'm gonna I'm going to
+[6199] go deep and share what I do and don't
+[6202] like and I liked a lot of it I liked a
+[6203] lot of it so nice I can see you
+[6205] iterating we're fans of iteration too
+[6206] we're software developers our first show
+[6209] sucked okay I mean it was a good content
+[6211] but the show sucked and look at us now
+[6214] still just slightly better G to say just
+[6216] slightly better still completely subject
+[6220] to rabbit holes that last for hours and
+[6222] always mentioning Silicon
+[6224] Valley all right Burke well thank you so
+[6226] much good uh good on you po. sh
+[6230] everybody check it out yeah of course
+[6232] thank you guys that's it bye y'all yep
+[6235] thanks B thanks
+[6240] [Music]
+[6252] guys plus plus people stick around for a
+[6255] 10-minute post show with even more talk
+[6258] of buy now pay later options I don't
+[6260] know maybe that's more of a minus minus
+[6262] give to listen and decide for yourself
+[6265] then let us know what you think in the
+[6266] comments or in our community slack which
+[6269] by the way is one of the internet's
+[6271] remaining oases of Awesomeness and at
+[6274] zero bucks The Price is Right too get in
+[6277] on it and come say hi at
+[6285] changelog.md one and only break master
+[6288] cylinder and to our friends at Sentry
+[6291] don't forget to use code Chang law log
+[6293] when you sign up for a Sentry team plan
+[6295] save some cash give us some credit and
+[6298] get a great service why not right well
+[6302] that's all from me but we'll talk to you
+[6304] again on change loging friends on Friday
+[6313] [Music]
+[6350] I was joking about how deep that we had
+[6352] gone on and I made that stupid joke
+[6354] about I can't remember what it was but
+[6355] it was basically like let's stop talking
+[6357] about this and then Adam's like and then
+[6360] he went a whole another step de deeper
+[6361] and I was like are you seriously still
+[6365] going I thought it was you went a layer
+[6368] deeper well I mine was a joke though I
+[6370] was like what if
+[6371] somebody yeah that's when I gave the
+[6373] hypothetical the person who just needed
+[6374] to buy now pay later just to make their
+[6376] business take off oh I did and I had to
+[6378] advocate for and I thought that was
+[6379] going to be the last word I was like
+[6380] let's move on I thought about a way that
+[6382] it's actually useful I was like well you
+[6383] know maybe this it was very convincing
+[6385] to you you're like you know what maybe
+[6387] somebody could I mean
+[6389] [Music]
+[6391] like it's better

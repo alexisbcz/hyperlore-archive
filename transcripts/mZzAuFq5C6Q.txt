@@ -1,0 +1,1175 @@
+[5] [Music]
+[11] [Applause]
+[12] Heat. Heat.
+[15] [Music]
+[38] Please welcome to the stage Purcell
+[41] founder and CEO Giermo Roush.
+[51] Thank you. Thank you. Good morning
+[53] everybody. Hello San Francisco. Welcome
+[56] to Ship AI 2025. Look, we didn't even
+[61] have the idea for this conference until
+[63] yesterday. We hosted NextJS Conf here in
+[67] this very room. We talked about pages,
+[69] but the world is moving from pages to
+[72] agents. The industry is moving so fast.
+[75] It felt obvious we needed this
+[77] conference because we've seen this movie
+[79] before. It's 2014. You're sitting down
+[82] to make your website on astrophysics,
+[85] your favorite subject. You've got this
+[87] great idea. You start coding locally, as
+[90] one does, but then you hit wall after
+[92] wall after wall. Suddenly, you're
+[95] spending more time wiring up routing,
+[97] compilers, clusters, and more, wrestling
+[100] with complexity rather than working on
+[103] the idea itself.
+[105] Then the React and NextJS ecosystems
+[107] emerged and everything accelerated.
+[111] The same thing is now happening with AI.
+[115] Our apps are going to the next level.
+[117] We're adding intelligence. At first,
+[121] this felt simple. Drop in a specific
+[123] models API, give it a prompt, get a
+[126] response.
+[128] But you aren't making oneoff model calls
+[131] anymore. Suddenly, you're switching
+[133] models, juggling each provider's unique
+[136] SDK, managing rate limits,
+[140] reconciling billing systems. Who doesn't
+[143] love a good billing system
+[144] reconciliation? Am I right? Verscell is
+[147] no stranger to this problem because we
+[150] experienced it ourselves. At Verscell,
+[153] we use Verscell to build Verscell,
+[156] right? And we're going through the same
+[158] AI transformation as every team here.
+[161] but maybe a tad faster because when we
+[164] started building Vzero, we felt the pain
+[166] of building agents ourselves.
+[169] It was all harder than it should have
+[171] been. That's why we created the AIS SDK.
+[175] It unifies providers APIs in a nonlossy
+[179] way, not as a leaky abstraction without
+[182] reducing providers to their lowest
+[184] common denominator. You get the full
+[187] capabilities of the underlying models so
+[190] that you can build agents with the
+[191] latest and greatest tech. And through
+[194] the power of open source, we were able
+[196] to make this available to everyone.
+[199] Now with nearly 4 million downloads per
+[203] week, AISDK is becoming the standard way
+[206] for developers to build with AI. By the
+[209] way, we can hardly keep this slide up to
+[211] date. That's how fast the AI SDK is
+[213] accelerating.
+[215] But really, it's it's it's a piece of a
+[218] much larger puzzle. Every company like
+[221] ours needs to run what they build at
+[224] scale in production with enterprisegrade
+[227] reliability and security. And you need
+[230] to do this moving fast. So we need one
+[233] platform that combines AI first tools,
+[238] security,
+[240] observability,
+[242] compute, and more. so that teams can
+[245] build and run with AI.
+[248] That's what the Verscell AI cloud
+[250] provides. A developer experience built
+[253] for simplicity so that it can quickly
+[255] ship intelligent applications and agents
+[258] without the burden of fighting your own
+[261] infrastructure.
+[263] And ship AI isn't an event for us to
+[266] just talk theory of models and
+[269] benchmarks. Otherwise, we'd have called
+[271] it YAP AI, but we didn't. This is about
+[275] applied AI and the things that you can
+[278] actually build today with the Verscell
+[280] AI cloud.
+[282] If you already know TypeScript, raise
+[284] your hand if you already know
+[285] TypeScript.
+[287] Awesome. Raise your hands at home as
+[290] well. You can start building your apps
+[292] using the AI SDK today. And if you know
+[295] Python, raise your hands if you know
+[297] Python. Get out of the room.
+[300] Just kidding. We also have amazing
+[302] Python support on the Verscell AI cloud.
+[305] So, Verscell is ready for your AI apps,
+[308] too. This is all in service of enabling
+[312] you to iterate quickly and streamline
+[314] your business. But iteration velocity
+[318] alone is not enough. Our goal is to
+[321] leverage AI to unlock the fastest
+[323] possible iteration velocity with the
+[327] highest possible quality for your team
+[330] and your products and your customers.
+[333] And we're doing this at scale already.
+[336] Versel has already seen nearly a billion
+[339] deployments and processes trillions of
+[343] requests per year. And with the rise of
+[346] AI, we now power over a 100red billion
+[348] AI calls every month and process over
+[352] two trillion tokens. So we know what
+[356] we're talking about. We've seen this in
+[358] action. And today I want to leave you
+[361] with two things. What you should build
+[365] with AI
+[367] and how you should build with AI. So
+[370] let's start with some examples right of
+[374] the agents that we've built internally
+[376] at Verscell to give you an idea of the
+[378] what
+[379] first our support agent that our
+[382] customer experience team built which
+[384] immediately and drastically reduce our
+[387] support ticket volume. Now this team
+[390] gets to focus on the tickets that
+[391] actually require human expertise
+[396] or our deal review agent. Our gotom
+[399] market team is particularly cracked.
+[401] They're building their own agents. They
+[404] wanted to get insights into the deals
+[405] that they've won and lost, which until
+[408] this it was a really manual process. Now
+[411] they have an agent that reviews data
+[413] across Salesforce, Slack conversations,
+[416] sales calls, transcripts, and other data
+[418] sources and infuses it with our
+[420] institutional knowledge.
+[423] And last, our creative coding agent. I
+[426] want to announce that we've recently
+[428] achieved bun support, the fastest
+[431] JavaScript runtime. And so in order to
+[433] announce it, sometimes the bottleneck is
+[435] just talking about it and writing blog
+[438] posts and change logs. So we created a
+[441] agent to help us write that first draft
+[444] from the context of the conversations
+[446] that we're having in Slack. And that's
+[448] what gives Versel this shipping
+[449] velocity.
+[452] So, we covered the what, but we also
+[455] need to talk about the how because this
+[457] all sounds a little amazing and
+[460] theoretical.
+[461] So, there's not one way to do this. And
+[464] to be honest, you might not even need to
+[467] build anything yourself.
+[470] Think of agent as a service. It's like
+[475] SAS or AS if you will. But this is real,
+[480] right? Chad GBT enterprise, Claude
+[483] Enterprise, Verscell agent for code
+[485] review, Vzero for Vibe coding. These are
+[489] having a lot of enterprise success
+[490] because they're so easy to adopt.
+[492] They're off the shelf. You sign up and
+[494] you're off to the races.
+[497] But at least for us, pre-built
+[499] off-the-shelf agents didn't solve all of
+[502] our problems or capture all of the
+[504] opportunities that we have with AI. So
+[506] we had to build
+[508] agents you build will generally be
+[510] bespoke to your organization to your
+[512] products to your data to your customers.
+[515] But to get a little philosophical what
+[518] does it mean to actually be an agent? At
+[521] its core my personal definition is it's
+[524] just an AI model that calls tools in a
+[528] loop in the pursuit of an outcome. So
+[531] I'll give you a very clear example. Take
+[534] Google AI overview. Before Google AI
+[538] overview, you were searching the web,
+[539] opening a bunch of tabs, doing all the
+[542] reading yourself, summarizing,
+[543] extracting concepts. But this does it
+[546] all for you. It's calling tools for you.
+[547] It's doing and it's giving you an
+[549] outcome behind the scenes. This is just
+[552] good old technology, right? Cues, cron
+[555] jobs, workflows, web servers.
+[559] But the problem is that agents are a
+[560] very specific kind of workflow. And so
+[564] no matter what they do, they generally
+[566] follow a life cycle when running that we
+[568] can describe as follows. First, an agent
+[572] accepts prompts.
+[575] Then it intelligently reasons with
+[577] context and plans to some extent.
+[581] Then it acts through tools, repeating
+[584] steps as needed. Sometimes this is an
+[587] actually fixed sequence of events which
+[591] is desirable for areas like finance or
+[594] other places where structure and guard
+[596] rails and predictability are essential.
+[600] And if you look at this workflow, it
+[602] kind of looks like you could design this
+[604] visually, right? It looks like a bunch
+[607] of nodes that are connected. And there's
+[611] there's tools today to do this, right?
+[612] There's low code, no code tools to do
+[614] this. And that might be good for
+[617] prototyping, but it can also be brittle.
+[620] It doesn't have CI/CD attached to it.
+[624] Doesn't have deployment previews. It
+[625] doesn't It's hard to think about how it
+[628] scales. It's hard to observe. There's no
+[630] version control. It's a pretty big one.
+[633] But ostensively, right, this is the next
+[635] generation of software. This is what
+[637] your entire businesses are going to run
+[639] on. It needs production grade
+[642] infrastructure and engineering.
+[646] So I believe that engineering is what's
+[648] going to make the difference because
+[650] great engineering gives you both the
+[652] structure and flexibility, the
+[655] discipline to scale and the freedom to
+[658] adapt to your customers needs.
+[661] So just like NexJS did with the
+[664] front-end cloud for developing and
+[666] shipping frontends,
+[668] AISDK and the Verscell AI cloud are
+[671] doing for developing agents and
+[673] backends.
+[675] The front end however was deterministic
+[678] much like the web itself, right? So you
+[679] type in a URL and you know what you'll
+[681] get back even if it's dynamic or
+[684] hyperpersonalized. There's a predictable
+[686] set of code paths that are running. So
+[689] this flow was consistent and repeatable.
+[693] Agents on the other hand, they don't
+[695] follow a single fixed path. They
+[699] autonomously reason and plan and act and
+[703] adapt. So the challenge is building with
+[706] the right foundation to handle that
+[708] variability while still giving
+[710] developers speed and reliability.
+[714] So, Verscell's AI cloud gives you
+[717] exactly that, the foundation and the
+[720] tools
+[721] and the entry point into the AI cloud is
+[725] the AI SDK.
+[727] So, to tell you all about how to get
+[730] started with the ASDK, I'd like to
+[732] invite my favorite Italian Nikico
+[735] Albaness to the stage.
+[739] [Applause]
+[740] [Music]
+[746] [Applause]
+[748] Thanks.
+[750] Two years ago, we started building V0, a
+[753] state-of-the-art coding agent which
+[754] takes you from natural language to full
+[756] stack application in seconds. But in
+[760] building Vzero, we ran into a number of
+[762] challenges.
+[764] First, we were building our application
+[766] on a specific model provider SDK. While
+[770] this was great, new and improved models
+[772] were coming out every few weeks, and we
+[774] wanted to test them out without having
+[776] to completely rewrite our application.
+[779] Additionally, we started to notice
+[781] different models excelling at different
+[783] tasks. Some were great at design while
+[786] others were great at writing React
+[788] components. We wanted to take advantage
+[790] of this without having to maintain
+[792] multiple different SDKs.
+[796] Finally, and the most nuanced point of
+[798] all, building on top of language models
+[801] presents fundamentally new challenges
+[803] for building both reliable and type-
+[805] safe UIs. We don't know exactly what
+[808] they're going to generate, and with
+[809] streaming, we're only getting small
+[811] chunks of that at a time. So, we built
+[814] the AI SDK, a TypeScript toolkit for
+[817] building AI applications.
+[819] With the AI SDK's unified API, we
+[822] decouple your AI logic from your
+[824] provider. In that way, you can switch by
+[826] changing just a few lines of code.
+[830] Back in July, we shipped AI SDK 5. This
+[833] was the most comprehensive update we
+[835] have ever made. We didn't just add
+[838] features, we rebuilt the entire library
+[840] from the ground up.
+[842] For the first time, you get endto-end
+[844] type safety from your LLM to your UI. No
+[848] matter what the model generates, whether
+[850] it's text, reasoning, or tool calls, you
+[853] can build types safe UIs on top of it.
+[857] We also gave you more control over your
+[859] context. We now explicitly decouple your
+[862] application state from what you send to
+[864] the model in each request. This makes it
+[867] easy to control every single token you
+[869] send.
+[871] Finally, we ship primitives to give you
+[873] control over the agentic loop itself.
+[877] As G said, agents are LLM using a loop
+[880] to solve a task. But how do you control
+[883] when it should stop? And what about the
+[885] behavior at each of those steps?
+[888] That's where stop when and prepare step
+[891] comes in. These primitives give you full
+[893] control over your agents loop. You can
+[896] define exactly when your agent should
+[898] stop. And at each step, you can adjust
+[902] context, switch models, and enable,
+[904] disable, or even force a tool call, all
+[908] dynamically.
+[920] SDK 5 in July users
+[925] are shipping agents to production with
+[926] it every single day.
+[929] And today I'm excited to give you an
+[931] early SDK 6 beta. This update represents
+[935] a continued refinement of what it means
+[938] to build agents with the AI SDK. We'll
+[940] be shipping a number of awesome new
+[942] features, but today I want to highlight
+[944] two in particular.
+[947] First, we're introducing the agent
+[949] abstraction. You define your agent once,
+[951] your model, your tools, your behavior,
+[954] and then regardless of how your agent is
+[956] consumed, whether it's an interactive UI
+[958] or a background agent, it's simple to
+[960] call and reuse. We're shipping a default
+[963] implementation that calls tools in a
+[965] loop, but the abstraction is completely
+[967] extensible, so you can build anything
+[969] you want on top of it.
+[972] Second, we're introducing tool execution
+[974] approval,
+[978] but they're not always
+[982] guards. That's where tool execution
+[985] approval comes in. This feature allows
+[987] you to implement human in the loop
+[988] patterns natively. The agent asks to use
+[991] a tool and you can approve, deny, no
+[994] hacking required, no workarounds. It
+[996] just works.
+[999] Now, enough talking. Let's build a real
+[1002] agent that solves a real problem. And
+[1004] since this is my section, I decided to
+[1006] solve one of mine. But one
+[1009] time we ship a new feature, and this
+[1011] happens a lot. Thank you, team. We need
+[1013] to tell our users what good is a feature
+[1015] if it
+[1019] typically approach. I read the pull
+[1021] request. I understand the feature, why
+[1023] we built it, and importantly, what it
+[1025] unlocks for our users. Then I draft a
+[1028] tweet, something po punchy, focused on
+[1030] the why. Then I create a code snippet.
+[1034] This should be minimal while still
+[1035] communicating the features full power.
+[1038] Then I iterate. I refine. And once I'm
+[1041] happy with it, it's ready to schedule
+[1047] this process that can take a while.
+[1052] depending on how busy the team has been.
+[1054] So, we've got a problem and we've
+[1056] defined the steps to solve it. What's
+[1058] next?
+[1060] First, we initialize our agent and
+[1062] specify the model we want to power it.
+[1064] Here, we're using Anthropic's latest
+[1066] Haiku model via the Verscell AI gateway.
+[1069] The AI gateway allows you to use
+[1070] hundreds of models across a wide range
+[1072] of providers with just a single API key.
+[1076] And it even has fallback routing built
+[1078] right in. Next, let's give our agent a
+[1081] way to act with tools. What we're doing
+[1083] here is simple mapping
+[1087] tool
+[1091] and returns the key information.
+[1094] Next, we'll add one to get our recent
+[1095] tweets so the agent can learn our voice.
+[1099] And we'll keep doing this until we've
+[1100] covered all the steps of the process.
+[1102] I've also added web search here just in
+[1104] case our agent needs any more
+[1106] information.
+[1108] The last step is to tell our agent
+[1110] exactly how it should plan and act.
+[1112] Importantly, it can use any tool at any
+[1115] time.
+[1116] So that's it. Our agent is ready to run.
+[1118] Let's give it a pull request and test it
+[1120] out.
+[1122] So our agent begins to reason. The first
+[1125] step is context curation.
+[1130] It's using available tools to retrieve
+[1132] the right information and then it
+[1135] generates a draft.
+[1137] It reviews its work against the style
+[1139] guide and agrees that it's not quite
+[1141] there yet. So, it tries again. And with
+[1144] the added feedback and more context from
+[1146] web search, it's good to go. So the
+[1149] agent thread
+[1156] and it looks pretty good. Pretty much in
+[1158] line with how I would have done it, but
+[1159] it's a little scary that it can just
+[1161] publish without
+[1166] it.
+[1168] So let's see how we can add tool
+[1170] execution approval.
+[1172] In my tool declaration, I can simply
+[1174] flag that this tool needs approval
+[1176] before executing.
+[1179] And that's it. One line and we're ready
+[1180] to go. So this time when it runs and
+[1183] we'll jump right to when the model wants
+[1184] to publish
+[1187] the agents, shows me the tweet and waits
+[1190] for my approval. I'll see the intended
+[1193] thread and assum
+[1202] in the loop built right in.
+[1205] So, in just a few minutes, we've gone
+[1207] from a problem to a fully functional
+[1209] agent that solves it. Our agent runs in
+[1211] a loop, uses multiple tools, adapts
+[1214] based on feedback, and asks for human
+[1216] approval when it matters. AISDK 6 is in
+[1220] active development and in available in
+[1222] beta today. We'll be going stable later
+[1225] this year. And to learn more, you can
+[1227] visit v6.dk.dev.
+[1230] And now to tell you more about how to
+[1232] bring your agent to production with the
+[1233] AI cloud, I'd like to invite Aparna to
+[1236] the stage.
+[1239] [Applause]
+[1240] [Music]
+[1241] [Applause]
+[1245] Thanks, Nico.
+[1247] Versel is the AI cloud for everyone.
+[1250] Experts, noviceses, all of us. We build
+[1254] Verscell with Verscell so that you get a
+[1256] platform that's taste tested that's
+[1259] production ready but also has the right
+[1262] abstractions that make it easy for you
+[1264] to ship AI.
+[1266] You heard that the AI SDK came from our
+[1268] own pain in building Vzero. And when we
+[1271] made Vzero agentic, we needed additional
+[1273] infrastructure that then became the AI
+[1276] cloud.
+[1278] And to exercise the AI cloud, we've
+[1280] created Verscell agent.
+[1283] Verscell agent is your intelligence
+[1285] layer for shipping on Verscell and its
+[1288] first skill is AI code reviews.
+[1292] It reviews your PR and determines fixes
+[1296] and then it uses sandbox environments to
+[1299] f fully validate those fixes before
+[1301] suggesting them to you. And because it
+[1303] validates those fixes, they're higher
+[1306] quality. They're more signal and less
+[1309] noise and measurably more likely to be
+[1311] accepted by developers.
+[1313] It's used in production by Verscell
+[1315] engineers and also by our customers. You
+[1317] can enable it in the agent tab of the
+[1319] Verscell dashboard. This is a great way
+[1322] of improving engineering productivity
+[1324] while also improving code quality. But
+[1327] code quality is just the first step.
+[1330] Versel agent can also now improve sleep
+[1333] quality. That's right, sleep quality.
+[1336] So, say it's 2 a.m. and your site is
+[1339] suddenly getting a flood of traffic. You
+[1341] could set an anomaly alert to always let
+[1343] you know when this happens, even at 2
+[1346] a.m. Or you could set Verscell to take
+[1350] an anomalous in event, run a full
+[1352] investigation, and then based on the
+[1354] outcome, determine if you should be
+[1356] woken up or not.
+[1364] So today, we're introducing Verscell
+[1366] agents newest skill, AI investigations.
+[1369] These are triggered by anomalous events
+[1371] in your Verscell environment and they
+[1373] come with full investigations that run
+[1375] in the background and synthesize the
+[1378] context of what might have led up to
+[1379] that event and what might be its root
+[1381] root cause. That's anomalous events the
+[1384] Verscell way saving time for our
+[1387] customers so that you can sleep better.
+[1392] Now, Verscell agent is an atscale
+[1394] production agent that's running on the
+[1396] AI cloud. And in creating it, we created
+[1399] the necessary primitives to build any
+[1401] agent so that you can just ship agents.
+[1406] When you deploy your agent to Verscell,
+[1408] we use framework defined infrastructure
+[1411] to find and provision the right cloud
+[1413] resources. You don't have to configure
+[1415] servers. You don't have to worry about
+[1417] scaling them for the underlying
+[1419] primitives that your agent needs.
+[1422] Your app is, of course, automatically
+[1424] built and deployed and protected by a
+[1426] multi-layer firewall that comes with
+[1429] built-in bot protection. And if there's
+[1431] a front end, it's served by our global
+[1434] CDN as a pre-rendered page
+[1438] um with dynamic caching for optimal
+[1441] performance.
+[1443] So we've been serving frontend and full
+[1445] stack apps for 10 years and now we ship
+[1448] more than a million deployments every
+[1450] single day with awesome customers like
+[1453] ramp openai and more
+[1456] now. A big part of completing the AI
+[1458] cloud is also supporting backends on
+[1461] Verscell. Our customers use Verscell to
+[1464] host backends like background agents,
+[1467] MCP servers and more. That's why
+[1469] Verscell now offers zero config
+[1472] deployments for JavaScript serverside
+[1474] frameworks like Express, Nitro, and
+[1477] Hano.
+[1479] And I know that at least some of you are
+[1482] interested in shipping in Python, my
+[1486] favorite language.
+[1488] So if you're implementing AI backends in
+[1490] Python, Verscell now supports fast API
+[1494] and Flask Python frameworks with that
+[1496] same zero config deployment experience.
+[1500] And today we're introducing holding FL
+[1504] for this one. Uh today we're introducing
+[1506] a native Python SDK and this makes it
+[1510] easy to integrate Verscell into Python
+[1513] code bases. You can use it for running
+[1515] untrusted code in a Verscell sandbox or
+[1517] uploading and downloading data to the
+[1520] runtime cache or Verscell blob. And this
+[1522] is just the beginning of our work with
+[1524] Python. I am really excited about the
+[1526] agents that you'll be able to build in
+[1528] Python using Verscell's foundational
+[1530] developer experience.
+[1532] So we of course built Verscell agent on
+[1535] this foundation to exercise the AI cloud
+[1538] primitives. Now I'd like to take you
+[1540] under the hood to look at each of those
+[1542] primitives.
+[1543] So in building an agent some of the
+[1545] basic primitives that you need you need
+[1547] an AI gateway you need fluid compute you
+[1551] need sandboxes
+[1553] MCP servers and more.
+[1557] So let's remember the life cycle of
+[1559] versell agent. It triggers when a PR
+[1561] opens and then in a loop it reasons
+[1564] about that initial PR. It calls tools to
+[1567] inspect the diff in the context of the
+[1569] repository. It has to call models and it
+[1572] continues to reason about potential
+[1574] issues and then it acts. It generates
+[1577] and validates the candidate fixes and if
+[1581] the fix works it outputs the proposed
+[1583] fix as an inline suggestion for human
+[1586] approval. So these are the steps. Now
+[1589] under the hood the agent trigger or the
+[1591] prompt starts a versell function that
+[1594] then needs to call a model. But the
+[1596] first question is which model should it
+[1598] call? And what if your model provider
+[1600] isn't working at that time? Or if
+[1603] there's a new model that shows up
+[1605] tomorrow or even later today that's 10
+[1607] times better for your particular use
+[1609] case. This is where the first primitive
+[1612] of the AI cloud comes in. The AI
+[1614] gateway. The gateway provides access to
+[1617] the latest and greatest models so that
+[1620] you can connect to it. You don't need to
+[1623] have a provider account. You can use a
+[1625] single Verscell API key to access over a
+[1628] 100 models.
+[1630] These could be your own fine-tuned
+[1631] models that you run on Bedrock or Grock
+[1634] or OpenAI, Claude, etc. and many other
+[1637] providers. And of course, if you prefer,
+[1640] you can if you prefer uh you can swap
+[1644] your model at any time and get support
+[1646] for new models within hours, usually
+[1649] actually minutes of release. sometimes
+[1652] even before release because we support
+[1654] stealth models in the gateway. So this
+[1656] is really a gateway that connects you to
+[1659] the future of AI.
+[1661] Now at any time you can go to the AI
+[1664] gateway leaderboard and see which model
+[1666] is trending and test it out in its own
+[1669] dedicated playground.
+[1671] With AI gateway, you get higher rate
+[1673] limits than you would as a single user
+[1675] because Verscell has higher rate limits
+[1677] with the providers. And the gateway has
+[1679] automatic failover between providers.
+[1681] Like for claude, for example, it can
+[1684] fail over between bedrock, Vertex and
+[1686] Enthropic itself. So your applications
+[1688] always have a steady performance in
+[1690] production even if one provider is slow.
+[1693] Of course, it comes with unified billing
+[1695] and observability into your usage and
+[1697] your performance. The best of all, with
+[1700] Verscell's AI gateway, there is zero
+[1702] upcharge on tokens. So, you just pay
+[1706] what you would pay to a provider for the
+[1708] tokens.
+[1710] Since GA in August, the AI gateway now
+[1713] processes more than 20 billion tokens
+[1715] per day with over 30,000 unique
+[1718] customers.
+[1720] So now that we have this basic sturdy
+[1723] primitive for accessing and calling
+[1726] LLMs, our agents next steps like
+[1729] reasoning, tool calling and of course
+[1731] taking actions, they all require dynamic
+[1734] compute, a different kind of compute
+[1736] because typically during LLM calls,
+[1739] agent associated compute is sitting
+[1741] idle. It's waiting and waiting and with
+[1743] reasoning it's waiting some more. And so
+[1746] for this we've invented the next
+[1748] primitive of the AI cloud. And this one
+[1750] is really unique to Verscell.
+[1752] This is Verscell's fluid compute. This
+[1755] is serverless compute that's available
+[1757] all of the time, but only charges you
+[1760] when the CPU is actually used with a low
+[1763] flat memory charge. You don't pay for
+[1766] the idle time waiting for models or
+[1768] tools or humans. And regardless of how
+[1770] long your LLM thinks and reasons, you
+[1773] pay only for active CPU and a flat
+[1776] memory charge. This is true serverless
+[1779] compute for the AI era.
+[1782] Now, let's look further at tool calling.
+[1784] It's 2025 and our agent is a highly
+[1787] capable agent that uses the model
+[1789] context protocol to call relevant tools.
+[1792] Fluid compute is also ideal for hosting
+[1795] those remote MCP servers. And that means
+[1797] that you can create and host efficient
+[1800] MCP servers that are not only easy to
+[1802] deploy, they benefit also from that
+[1804] elastic, lowcost, efficient, fluid
+[1807] compute. And that's why companies like
+[1811] to host MCP servers on Versell,
+[1813] companies like Upstash, Salana,
+[1815] Smithery, and many others.
+[1820] So now let's talk about actions. Next,
+[1822] agents often generate code and that code
+[1825] takes a variety of actions. It can
+[1827] create artifacts and you of course want
+[1830] to execute the code and see what it
+[1832] does. But LLM generated code is
+[1835] obviously untrusted. You don't want to
+[1837] give it access to your production
+[1839] environment and so it needs to run
+[1841] somewhere isolated and secure. This is
+[1844] the next primitive of the AI cloud
+[1847] versel sandbox. Sandbox runs workloads
+[1851] inside microVMs
+[1853] and that gives you the ability to
+[1855] execute untrusted code or resource
+[1857] intensive code safely without risking
+[1860] the rest of your system. So now the act
+[1863] step can be fast and secure and
+[1866] production ready.
+[1868] Now perhaps the best feature of Verscell
+[1871] sandboxes is that they run on fluid
+[1873] compute. This is really nice because you
+[1875] can scale them up and down on demand and
+[1877] yet pay only for the active CPU. That
+[1880] means again if the sandbox is waiting
+[1883] there is no cost for that idle time.
+[1885] That's pretty unique and our customers
+[1887] really love it.
+[1890] All right, so we've covered reasoning,
+[1892] we've covered tool calling and we've
+[1894] covered actions. You might think that
+[1896] we're done. We've got an agent, but
+[1898] really this was just one iteration of an
+[1900] agentic execution.
+[1903] And this agent could have many loops and
+[1905] many steps that run across multiple
+[1908] branches. It could be a deterministic
+[1910] agent or a dynamic set of steps. Uh it
+[1913] may need to think and work for minutes
+[1915] or days or if there's humans in the
+[1917] loop, it might even take weeks or
+[1919] longer. Um agents obviously need to
+[1921] pause, they need to wait for input, they
+[1923] need to retry on errors and then resume.
+[1926] So what we really need is a durable
+[1928] primitive durability over time and that
+[1932] does not come that easily with
+[1933] serverless functions because serverless
+[1936] functions are short duration event
+[1938] driven compute. So to solve this problem
+[1942] today we're combining the world of
+[1944] serverless functions with durability.
+[1947] We're introducing a new framework for
+[1950] building workflows. And to tell you all
+[1952] about it, please welcome to the stage
+[1954] Prash.
+[1956] [Applause]
+[1966] Thank you so much, Aerna.
+[1970] Yeah, it used to be that you would just
+[1972] make one request to an LLM and kind of
+[1974] hope for the best. But like Aarta said,
+[1978] agents are starting to get smarter. You
+[1980] now have to reason and make tool calls,
+[1982] talk to an MCP server, maybe respond to
+[1985] external events, and wait for human
+[1987] approval. But as agents are getting
+[1990] smarter and run for longer, the
+[1992] infrastructure to put them into
+[1994] production is getting really complex.
+[1996] You've got to manually wire up all of
+[1998] these cues and add a database, add up
+[2002] resiliency, and maintain observability.
+[2007] But like G said, we've seen this movie
+[2009] before.
+[2012] Companies that we love have faced
+[2014] challenges scaling into production. So
+[2016] take a company like Uber for example.
+[2019] When you request a ride, you've got to
+[2022] find a driver and calculate pricing,
+[2025] talk to a data warehouse and a payment
+[2027] processor. So companies like Uber put
+[2031] each of those steps into their own
+[2034] microser.
+[2036] Great. But what's next? You now have to
+[2039] wire up all of these cues and add a
+[2041] database, add resiliency, and maintain
+[2045] observability. Once again, these
+[2048] challenges aren't unique to agents.
+[2050] We've seen this before.
+[2052] And managing all of the infra is just a
+[2055] lot of code, a lot of very brittle code.
+[2059] But what if it wasn't? What if all of
+[2062] that complexity of orchestrating
+[2064] microservices across the internet to
+[2067] request a ride
+[2070] or the complexity of running an AI agent
+[2072] that's got tool calls and MCP servers
+[2074] and responding to external events? What
+[2076] if all of that was just a single
+[2078] function?
+[2080] We've managed to compress all of the
+[2082] complexity of durable execution into a
+[2084] single line of code.
+[2088] I'm really excited to announce the
+[2090] workflow development kit.
+[2095] It's a new open-source framework for
+[2097] building durable, reliable, and
+[2099] observable apps and AI agents in
+[2101] Typescript.
+[2103] And to show you how it works, I'm going
+[2105] to take the same agent that Nico built
+[2107] earlier and we're going to wrap it with
+[2109] user workflow.
+[2111] This effectively lets uh the entire
+[2113] function be durable. And so
+[2116] we were inspired by Nex.js's directives
+[2118] with uh use workflow, but we've built
+[2121] this to work across every framework.
+[2134] Right? I can now write a function that
+[2136] splits work across multiple different
+[2138] processes and you're not tied to a
+[2139] single process. It's effectively what
+[2142] microservices are. Now to split up the
+[2145] work, I'll need to define steps. And as
+[2149] you can probably guess, we have another
+[2150] directive. Ustep
+[2154] lets you mark functions in
+[2157] let you mark functions in your workflow
+[2158] that need to run in the background. And
+[2160] for AI agents, most of the work of
+[2163] making is making requests to LLM and
+[2165] executing tools. So I'll start by making
+[2169] each tool a step. I do that using
+[2173] simple.
+[2175] Now the workflow devkit compiles every
+[2178] single step into its own API route so it
+[2180] can run in the background.
+[2184] Back in my workflow, I'm going to update
+[2186] the tool call to use my new steps.
+[2190] This way when the agent calls a step,
+[2192] the tool gets run on a separate API
+[2194] route in the background and uses a queue
+[2196] in the middle for resiliency.
+[2199] Cool. Now my workflow is all set up and
+[2201] I want to execute this. During
+[2204] execution,
+[2205] every time the workflow encounters a
+[2207] step, it's going to suspend the workflow
+[2209] and run the step in the background over
+[2211] a queue. If the step fails, it
+[2213] automatically gets retried so it
+[2215] inevitably succeeds. And when the step
+[2218] is done, the framework can resume right
+[2220] where it left off, rehydrating state
+[2222] from the event log. This means you can
+[2225] just write one single function and you
+[2227] don't have a long server. Um, there's no
+[2229] longunning servers and you don't lose
+[2231] all of your tokens if a single step
+[2232] broke.
+[2234] This is what orchestrating complex
+[2236] microservices wishes it could be.
+[2241] Also, thanks to the same event log, all
+[2244] your workflows are observable by
+[2245] default, which means you can now inspect
+[2248] every run, every step, every LLM call
+[2251] with worldclass observability. And
+[2254] there's no extra code. This just comes
+[2255] built in. This is what LM tracing really
+[2258] should have been.
+[2261] The workflow development kit is open
+[2263] source and we're building it to work on
+[2265] any cloud platform. If you do deploy to
+[2268] Verscell, Verscell will automatically
+[2270] provision the right resources needed to
+[2271] run your workflows with zero
+[2273] configuration.
+[2276] On the AI cloud, your workflows run on
+[2279] scalable functions made efficient with
+[2281] fluid compute.
+[2283] Also, since everywhere deployment is
+[2285] atomic, you get versioning for free out
+[2287] of the box. This means you don't have to
+[2290] worry about breaking workflows, some of
+[2292] which might be running for months. you
+[2295] can just keep shipping.
+[2297] Also, Verscell provides visibility into
+[2300] the event log, so you get incredible
+[2302] tracing and workflow management on the
+[2305] Versell dashboard.
+[2309] At Verscell, we're already running over
+[2311] a million workflows a day for products
+[2313] like Vzero, our own Versell agent, and
+[2316] for a few early adopting customers like
+[2318] Mandolin who are shipping healthcare
+[2321] workflows with the AI SDK and the
+[2323] workflow devkit.
+[2326] So with workflows, you can now just ship
+[2327] agents
+[2329] and you can get started today on npm by
+[2331] installing workflow. We're shipping with
+[2334] support for Nitro, Nex.js, JS and Hono
+[2338] with a lot more frameworks coming very
+[2339] very soon.
+[2342] Awesome. That's the workflow dev kit.
+[2344] And to bring it all together to run real
+[2346] world AI agents on the AI cloud, let me
+[2349] invite Malta.
+[2351] [Applause]
+[2360] &gt;&gt; Good morning, San Francisco.
+[2362] And thanks for I literally saw him push
+[2365] commits to this repository like during a
+[2368] partner's talk right before the session.
+[2370] Incredible.
+[2371] And I definitely cannot wait to use
+[2373] workflow all over my codebase. All
+[2376] right. Now you've heard how the AI SDK
+[2379] builds a foundation for agents. How the
+[2381] new open-source use workflow makes your
+[2384] code durable and more robust. And it's
+[2386] being the perfect baseline for building
+[2388] agents. And we've seen these come
+[2390] together with the Versell AI cloud, a
+[2392] unified platform for running those
+[2393] agents in production with with
+[2395] reliability and scale built in. Now, not
+[2399] every agent must be built from scratch.
+[2402] Sometimes there's an agent as a service
+[2404] that is perfect for what you need.
+[2407] That's why we're introducing the agent
+[2409] marketplace for AI agents and tools
+[2411] built for the Versell ecosystem. This is
+[2414] where developers can discover, install,
+[2416] and connect to pre-built agents and
+[2418] tools that run natively on the AI cloud.
+[2422] We're partnering for this with for the
+[2424] agents, Code Rabbit, Corid and Sorcery,
+[2427] AI services, Autonom, Brain, Trust,
+[2429] Browser, Use, Chatbas, Dcope, Kernel,
+[2432] Cubix, and Mixat to bring these agentic
+[2434] experiences to your teams.
+[2437] All right, that is it for the agent
+[2440] marketplace. Let's get back to actually
+[2442] building agents.
+[2445] We now know how to build agents with the
+[2447] AI SDK and use workflow. We even know
+[2451] where to deploy them with the AI cloud.
+[2454] But what agents should you actually
+[2456] build?
+[2460] In many cases, your biggest
+[2461] opportunities come from custom agents
+[2463] that solve the exact problems unique to
+[2466] your business. I think of agents as a
+[2469] new kind of software. And with new
+[2471] software, we need to rebuild our
+[2473] intuition for what can be automated.
+[2477] Here's a tactic that works incredibly
+[2479] well to find out what to build. Go and
+[2483] interview your employees and ask them
+[2485] two simple questions.
+[2488] What do you hate most about your job?
+[2492] And what busy work would you love to
+[2494] never do again?
+[2496] And then you build exactly that. For the
+[2499] employees, it means more fulfilling
+[2501] work. And for the company, it means that
+[2503] large chunk of repetitive tasks are
+[2505] replaced by agents that cost less to run
+[2506] and often produce higher quality results
+[2508] because they do not get bored.
+[2512] We did exactly that inside of our cell.
+[2515] We went department by department and
+[2517] wowed at folks of stories. I guarantee
+[2520] that you can do the same at your
+[2521] company. It'll be eye opening. And if
+[2523] you're a startup, I know there's many in
+[2525] the audience. This is also a powerful
+[2527] powerful way to discover what agent as a
+[2530] service to ship next.
+[2532] All right. The first stop we made as we
+[2534] were going to the company, we went to
+[2536] our go to market department. They told
+[2538] us whenever a lead comes in through the
+[2541] contact sales form, we spend up to 50
+[2543] minutes enriching the data before we can
+[2545] even follow up. And how do you do that?
+[2548] Well, I look up their LinkedIn. Sure. I
+[2552] Google the company obviously and then I
+[2554] copy paste because it's 255 and you use
+[2556] copy paste that stuff in the spreadsheet
+[2559] easily 15 minutes of busy work for every
+[2561] single lead.
+[2564] So we built a lead processing agent.
+[2566] Here's how it works. It all starts again
+[2568] with a contact sales form. Appreciate if
+[2570] anyone in the audience has already
+[2572] filled this out. Thank you very much.
+[2574] Then when Elite hits submit that
+[2577] triggers the workflow. Let's take a
+[2578] closer look what happens. First we kick
+[2581] off the main agent which perfor which
+[2582] which performs the core of the
+[2584] reasoning.
+[2585] It starts with initial checks to easily
+[2587] filter out spam messages, lowquality
+[2589] submissions and support requests. Turns
+[2591] out people love submitting support
+[2592] requests to this form. Now they get much
+[2594] faster responses because we can easily
+[2596] identify it and actually guide those
+[2598] contacts to the right support folks.
+[2601] Then it independently researches the
+[2602] context of the company. you know, Google
+[2604] them, check the LinkedIn, exactly what
+[2606] the human would have done.
+[2608] That is actually implemented by
+[2610] triggering a sub agent under the hood.
+[2612] But what is a sub agent? Just a tool
+[2614] that happens to call an LLM, right?
+[2616] Very, very simple stuff.
+[2618] All right. Now, let's assume the agent
+[2620] has made it this far. The lead is a
+[2622] qualified lead. What it does, it it
+[2623] generates a draft followup for the sales
+[2625] rep to then take and make their own
+[2626] because we still want the human touch,
+[2628] right? And then go and send it to the
+[2630] customer. And finally, it returns the
+[2633] results back to our internal dashboards
+[2634] in Salesforce. Everyone loving
+[2637] All right, cool. So, this agent has been
+[2640] live at for months. It already saved us
+[2643] hundreds of patient person days of work
+[2646] and got our frontline sales team a more
+[2647] fulfilling job and want you guys all to
+[2650] be able to do the same as well. So,
+[2651] we're open sourcing it today.
+[2654] The whole point is that you very much
+[2656] have to adapt it to your own internal
+[2657] pip pipelines, right? It's for custom
+[2660] agent, but we think it's a great basis
+[2663] to kind of get started and know how to
+[2665] build an agent. All right, so this was
+[2668] the making money GTM agent, but not
+[2670] every agent must be protecting growth,
+[2672] right? Some protected.
+[2675] Turns out that the Versell platform has
+[2677] processed over 400 million deployments
+[2680] in the last year. And with that scale,
+[2682] sometimes bad apples try to slip through
+[2686] with stuff like fishing agent, scams, or
+[2688] impersonations.
+[2691] That's where our abuse agent comes in.
+[2693] It helps our trust and safety team
+[2694] review reports automatically and make
+[2696] faster, more consistent decision. Here's
+[2699] what it does.
+[2701] Once again, there's an abuse form on the
+[2703] website where you can report potential
+[2705] malicious illegal activity. For large
+[2707] scale reporters, we al also have an API.
+[2709] In both cases, same thing happens. It
+[2711] triggers the agent on every new entry
+[2714] that once again there's a pattern here
+[2716] kicks off the main agent processing loop
+[2720] which gathers context about the reported
+[2722] project obviously looks at the deployed
+[2724] assets checks the team data which
+[2727] domains are registered the payment and
+[2728] so that type of stuff and then it
+[2731] identifies signals of abuse like known
+[2733] visual indicators probably not a meta
+[2737] Facebook fishing site on our on our
+[2739] website or suspicious patterns Besides
+[2741] that, and then finally, it summarizes
+[2744] the findings with a confident score and
+[2746] recommends an action like blocking.
+[2748] Okay. Where the agent doesn't quite know
+[2751] what to do or it says it's a false
+[2753] positive. Nothing to do here.
+[2755] Then it writes that structured output
+[2757] straight into Salesforce where the team
+[2759] can see it instantly. Now, as a hosting
+[2761] provider, our main responsibility
+[2763] obviously to keep your site up. So, we
+[2765] don't trust this agent to make the final
+[2766] block decision. We always have a human
+[2768] in the loop.
+[2771] The abuse agent shows you how agents can
+[2773] scale not just workflows but actually
+[2775] decision- making since we deployed it.
+[2777] We've seen a 59% reduction in time per
+[2780] case. And now because there's a bit of a
+[2783] cat and mouse game happening with the
+[2785] bad folks, right? We're not actually
+[2786] open sourcing it today, but this is
+[2788] interesting. Just come talk us and we
+[2790] are super happy to help you get started
+[2792] with similar stuff.
+[2795] All right. Again, we're walking
+[2796] department by department. Let's talk
+[2798] about data because every company has
+[2800] data, right? And you've probably been in
+[2803] this place where like you're looking for
+[2804] this dashboard, you know it exists, but
+[2805] you can't find it or you actually know
+[2807] that the data has never been retrieved.
+[2809] What do you do in that case? Right? Now,
+[2812] if you're in this room, maybe you you're
+[2814] comfortable writing some SQL yourself.
+[2816] But what really happens in a real
+[2817] company is that you ask some centralized
+[2819] data team, right, to gather the data.
+[2822] Now, maybe that takes a few days, but
+[2824] maybe it never happens because they
+[2826] don't have capacity. We're constantly
+[2827] busy. So we were wondering, can we just
+[2831] fully automate it? Can I just go into
+[2832] Slack, for example, and ask for data?
+[2834] And yeah, so we built a Slack agent for
+[2837] business intelligent.
+[2839] It's actually really good at turning
+[2841] natural semantic understanding of your
+[2843] business into SQL queries and answering
+[2845] questions about it. Now, you might
+[2847] wonder why how is this better than like
+[2850] a more generic text of SQL tool? The
+[2852] whole point is that this is a custom
+[2853] agent. We taught about our business, the
+[2855] semantic of our business and that makes
+[2858] it substantially better than something
+[2860] uh more generic that only has senior
+[2862] schema. So here what here's what it
+[2863] means. You ask the question and the bot
+[2866] replies. There's no more waiting on the
+[2868] data team, right? So again, you start
+[2871] with a data query prompt from Slack.
+[2874] Agent does the reasoning, plans which
+[2876] data to look at, and then builds a query
+[2878] with the right tables and columns. Now
+[2880] again we actually custom built this so
+[2883] that the agent knows the curated
+[2884] semantic catalog of the about the schema
+[2887] of our business.
+[2889] Then it executes the query obviously and
+[2892] finally summarize the results to human
+[2894] readable format.
+[2898] Afterwards it just goes back to the
+[2900] original Slack thread with the answer to
+[2902] the question. I previously mentioned
+[2904] that we have 400 million deployments in
+[2906] a year. I actually used it on Saturday
+[2908] to exactly answer that question.
+[2913] And just like the elite agent earlier,
+[2914] we are open sourcing this agent. And
+[2916] once again, we're making available so
+[2918] that you can build your own custom
+[2919] agent. It will absolutely require
+[2922] adapting to your internal pipeline. And
+[2924] the whole point is that you require it
+[2926] requires documenting the semantics of
+[2928] your own data model, but it should form
+[2930] a great reference architecture for how
+[2932] to design an agentic loop for business
+[2934] intelligent tools.
+[2938] These are just a few examples. There's a
+[2940] whole universe of agent waiting to be
+[2942] built. Our goal today was to show you
+[2944] what's possible and inspire you to think
+[2946] about what agents to move your business
+[2948] forward.
+[2951] To recap the question, what do you hate
+[2954] most about your job? It's incredibly
+[2956] powerful to find out what agents to
+[2957] build because it leads to the lowhanging
+[2960] fruit of agents.
+[2962] It gives you problems that form the
+[2965] sweet spot of current geni which
+[2967] actually isn't that smart and it's high
+[2969] business impact.
+[2971] All right,
+[2973] with that we know especially large
+[2976] enterprise that building that first
+[2978] successful agent can still feel
+[2981] daunting.
+[2983] That's why we're launching a new program
+[2985] called an agent on every desk. Our
+[2988] mission is simple. help your company
+[2990] build its first successful agent. We'll
+[2993] work with you directly to identify the
+[2995] right agent to build, share the
+[2997] templates from our own internal agents,
+[3000] and forward deploy our engineers to your
+[3002] company to get that first agent shipped.
+[3006] That's all from me today. Thank you very
+[3007] much.
+[3012] [Music]

@@ -1,0 +1,658 @@
+[0] Reviewer: Anny Chung
+[16] Ok, so I want to start
+[16] by asking a question:
+[18] How many of you have had
+[18] to fill out some sort of web form
+[20] or even has to read a distorted
+[20] sequence of characters like this?
+[23] How many of you found it
+[23] really annoying?
+[26] Ok, I understand.
+[27] I invented that.
+[28] (Laughter)
+[29] Well, I was one of the people who did it.
+[31] That thing is called a captcha.
+[33] And the reason it's there
+[33] is to make sure that you,
+[35] the entity filling out the form,
+[35] are actually a human,
+[37] and not a computer program
+[39] written to submit
+[39] the form millions of times.
+[41] The reason it works
+[41] is because humans,
+[43] at least, non-visually-impaired humans,
+[45] have no trouble reading
+[45] these distorted characters,
+[47] whereas computer programs
+[47] simply can't do it as well yet.
+[49] For example,
+[49] in the case of Ticket Master
+[51] the reason you have to type
+[51] these distorted characters
+[54] is to prevent scalpers to write
+[54] a program that can buy
+[56] millions of ticket at a time.
+[58] Captchas are used all over the Internet
+[59] and they are used so often
+[59] that a lot of times
+[61] the precise sequence of random characters
+[61] that are shown to the user
+[65] is not so fortunate.
+[66] This is an example from
+[66] the Yahoo registration page.
+[68] [W A I T]
+[69] Random characters
+[69] that happen to be shown to the user
+[72] were W, A, I, T,
+[72] which of course spell a word.
+[74] But the best part is the message
+[76] that the Yahoo Help got
+[76] about 20 minutes later.
+[78] ["Help! I've been waiting
+[78] for 20 minutes, and nothing happens!"]
+[87] This of course is not as bad
+[87] as this poor person who...
+[90] [R E S T A R T]
+[93] Ok, now, this Captcha project
+[93] was something that we did
+[96] here at Carnegie Mellon
+[97] about ten years ago
+[97] and is used everywhere.
+[99] Let me now tell you about a project
+[99] that we did a few years later,
+[102] which is sort of the next evolution
+[102] of captchas.
+[104] This is the project
+[104] that we called Recaptcha,
+[106] which is something that we started
+[106] here at Carnegie Melon,
+[109] then we turned it into a startup company,
+[111] and then about a year and a half ago
+[112] Google actually acquired this company.
+[114] So, let me tell you
+[114] [how] this project started.
+[117] So this project started
+[117] from the following realization:
+[119] it turns out that approximately
+[119] 200 million captchas
+[122] are typed every day
+[122] by people around the world.
+[124] When I first heard this
+[124] I was quite proud of myself
+[127] I thought, "Look at the impact
+[127] that my research has had."
+[130] But then I started feeling bad,
+[131] see here is the thing:
+[131] each time you type a captcha,
+[133] essentially, you waste
+[133] ten seconds of your time.
+[136] Because it takes
+[136] ten seconds to type a captcha --
+[138] and if you multiply that by 200 million
+[138] you get that humanity as a whole
+[142] is wasting about 500
+[142] thousand hours every day
+[144] typing these annoying captchas.
+[146] So then I started feeling bad,
+[148] and I started thinking,
+[148] "Well, of course we can't just
+[151] get rid of captchas,
+[151] because the security of the Web
+[153] sort of depends on them,
+[153] but then I started thinking,
+[156] "Is there any way we can use this effort
+[158] for something that is good for humanity?"
+[160] Here is the thing,
+[160] while you're typing a captcha,
+[162] during those ten seconds,
+[163] your brain is doing something amazing.
+[165] It is doing something
+[165] that computers cannot yet do.
+[168] So, can we get you to do useful work
+[168] for those ten seconds?
+[171] Another way of putting it is:
+[172] Is there some humongous problem
+[172] that we cannot get yet computers to solve,
+[176] that somehow we can split
+[176] into tiny ten second chunks
+[178] such that each time
+[178] somebody solves a captcha
+[180] they solve a little bit of this problem?
+[182] The answer is yes,
+[182] and this is what we are doing now.
+[184] What you may not know
+[184] is that nowadays,
+[186] while you're typing a captcha
+[187] not only are you
+[187] authenticating yourself as a human
+[190] but in addition you are actually
+[190] helping us to digitize books.
+[193] Let me explain how it works.
+[194] A lot of projects
+[194] are trying to digitize books.
+[196] Google has one,
+[196] the Internet Archive has one,
+[198] Amazon, with the Kindle,
+[198] is trying to digitize books.
+[201] The way is works is, you start
+[201] with an old book, a physical thing,
+[203] you've seen those things right?
+[203] Like a... book...
+[207] So, you start with a book,
+[207] and then you scan it.
+[210] Scanning a book is like
+[210] taking a digital photograph
+[212] of every page of the book.
+[214] It gives you an image
+[214] for every page of the book.
+[216] This is an image with text
+[218] The next step in the process
+[218] is that the computer needs to be able
+[221] to decipher all of the words
+[221] in this image.
+[223] That is done using a tecnology called OCR,
+[225] Optical Character Recognition,
+[226] which takes a picture of text
+[228] and tries to figure out
+[228] what text is in there.
+[230] Now, the problem is
+[230] that OCR is not perfect,
+[233] especially for older books,
+[233] where the ink has faded,
+[235] and the pages have turned yellow,
+[237] OCR cannot recognize a lot of the words.
+[239] For things that were written
+[239] more than fifty years ago,
+[241] the computer cannot recognize about
+[241] thirty percent of the words.
+[245] We are now taking all of the words
+[245] that the computer cannot recognize
+[248] and we are getting people
+[248] to read them for us,
+[250] while they are typing
+[250] a captcha on the Internet.
+[252] So next time you type a captcha,
+[254] these words that you're typing
+[254] are actually words
+[256] that are coming from
+[256] books that are being digitized
+[259] that the computer could not recognize.
+[260] The reason we have two words nowadays
+[260] instead of one,
+[263] is because one of the words
+[265] is a word that the system
+[265] just got out of a book,
+[267] it didn't know what it was
+[268] and it's going to present it to you,
+[270] but since it doesn't know
+[270] the answer for it,
+[272] it cannot grade it for you,
+[273] so we give you another word,
+[274] one for which the system
+[274] does know the answer,
+[277] we don't tell you which one is which,
+[277] and we say, please type both.
+[280] If you type the correct word
+[281] for the one which the system
+[281] already knows,
+[283] it assumes you are a human,
+[285] and it also gets some confidence
+[285] that you typed the other word correctly.
+[288] And if we repeat this process
+[288] to ten different people,
+[290] and all of them
+[290] agree on what the new word is,
+[292] then we have one more word
+[292] digitized accurately.
+[294] This is how the system works,
+[296] and since we released it
+[296] about 3 or 4 years ago,
+[298] a lot of websites started switching from
+[300] the old captcha,
+[300] where people wasted their time,
+[302] to the new captcha, where people
+[302] are helping to digitize books.
+[306] So every time you
+[306] buy tickets on Ticket Master,
+[308] you help to digitize a book.
+[309] Facebook, every time you add a friend,
+[311] or poke somebody,
+[311] you help digitize a book.
+[313] Twitter, and about
+[313] 350 thousand other sites
+[315] are all using recaptcha.
+[315] And in fact, the number of sites
+[317] that are using recaptcha is so high
+[319] that the number of words
+[319] that we're digitizing per day
+[321] is really large.
+[321] It's about 100 million a day
+[323] which is the equivalent of about
+[325] 2.5 million books a year.
+[327] And this is all being done
+[327] one word at a time
+[329] by just people typing captchas
+[329] on the Internet.
+[331] (Applause)
+[340] Of course, since we are doing
+[340] so many words per day
+[343] funny things can happen,
+[343] and this is especially true
+[346] because now we're giving people
+[347] two randomly-chosen
+[347] English words next to each other.
+[350] So funny things can happen,
+[350] for example,
+[352] we presented this word,
+[352] it's the word "christians",
+[354] there's nothing wrong with it,
+[356] but if you present it along
+[356] with another randomly chosen word,
+[359] bad things can happen:
+[360] ["bad christians"]
+[362] But it's even worse
+[362] because the particular website
+[364] where we showed this
+[364] actually happened to be called
+[367] The Embassy of the Kingdom of God.
+[376] Here is another really bad one:
+[378] johnedwards.com
+[379] ["damn liberal"]
+[385] So we keep on insulting people
+[385] left and right every day.
+[387] Of course we are not just
+[387] insulting people,
+[389] see, here is the thing,
+[389] since we're presenting
+[391] two randomly chosen words,
+[393] just interesting things can happen.
+[394] So this actually has given rise to
+[396] a really big Internet meme
+[399] that tens of thousands of people
+[399] have participated in,
+[402] which is called Captcha Art.
+[403] I'm sure some of you have heard about it,
+[405] here's how it works:
+[405] imagine you're using the Internet
+[408] and you see a captcha that you think
+[410] is somewhat peculiar.
+[411] Like this captcha:
+[411] ["invisible toaster"]
+[413] Then you take a screenshot of it,
+[415] -- of course you fill out the captcha
+[417] because it helps us digitize a book --
+[419] but then, first you take a screenshot
+[421] and then you draw something
+[421] that is related to it.
+[425] That's how it works.
+[428] There are tens of thousands of these,
+[431] some of them are very cute,
+[434] [clenched it]
+[436] some of them are funnier,
+[438] [stoned founders]
+[444] and some of them,
+[444] like "paleontological shvisle",
+[449] they contain Snoop Dog.
+[453] Ok, so this is my
+[453] favorite number of recaptchas
+[456] this is the favorite thing that I like
+[456] about this whole project.
+[459] This is the number
+[459] of distinct people
+[461] that have helped us digitize
+[461] at least one word out of a book
+[463] through recaptcha:
+[463] 750 million, which is a little over
+[466] than ten percent of the world's population
+[468] has helped us digitize human knowledge.
+[470] And it is numbers like these that motivate
+[470] my research agenda.
+[473] The question that motivates
+[473] my research is the following:
+[476] if you look at humanity's
+[476] large scale achievements
+[478] these really big things that humanity
+[480] has gotten together and done historically,
+[482] like for example,
+[482] building the pyramids of Egypt,
+[485] or the Panama canal,
+[485] or putting a man on the moon,
+[488] there's a curious fact about them.
+[490] And it is that they were all done
+[492] with about the same number of people.
+[493] It's weird. They were all done with about
+[493] 100 thousand people
+[496] And the reason for that is because
+[498] before the Internet, coordinating
+[500] more than 100 thousand people
+[502] let alone paying them,
+[502] was essentially impossible.
+[504] But see now with the Internet,
+[506] I've just shown you a project
+[506] where we've gotten
+[508] 750 million people
+[508] to help us digitize human knowledge.
+[510] So the question that
+[510] motivates my research is
+[512] if we can put a man on the moon
+[512] with 100 thousand
+[514] what can we do with 100 million?
+[517] So based on this question
+[517] we've had a lot
+[519] of different projects
+[519] that we've been working on,
+[521] let me tell you about one
+[521] that I'm most excited about
+[523] this is something that we've been
+[523] sort of semi-quietly working on
+[526] for the last year and a half or so.
+[528] It hasn't yet been launched,
+[528] it's called Duolingo,
+[530] since it hasn't been launched, shhh!
+[534] Ah, yeah, I can trust you....
+[536] Ok, so here is how it started:
+[538] it started with me posing a question
+[538] to my graduate student,
+[541] Severin Hacker
+[541] -- this clicker is not working so well --
+[544] ok that's Severin Hacker,
+[546] so I posed a question
+[546] to my graduate student
+[548] by the way, you did hear me correctly,
+[551] his last name is Hacker,
+[552] so I posed this question to him:
+[554] how can we get 100 million people
+[557] translating the Web
+[557] into every major language for free?
+[560] There's a lot of things to say
+[560] about this question.
+[562] First of all, translating the Web.
+[564] So, right now the Web is partitioned
+[564] into multiple languages,
+[567] a large fraction of it is in English,
+[569] if you don't know any English
+[569] you can't access it,
+[571] but there's large fractions
+[571] in other different languages,
+[573] and if you don't know those languages
+[573] you can't access it.
+[576] So I would like to translate
+[576] all of the web
+[578] or at least, most of it
+[578] into every major language.
+[580] So that's what I would like to do.
+[583] Now, some of you may say,
+[584] why can't we use
+[584] computers to translate,
+[586] why can't we use machine translation,
+[588] which nowadays is starting to translate
+[588] some sentences here and there,
+[591] why can't we use it
+[591] to translate the whole Web?
+[593] Well, the problem is,
+[593] it's not yet good enough,
+[595] and it probably won't be
+[595] for the next 15 to 20 years.
+[597] It makes a lot of mistakes,
+[597] and even when it doesn't
+[600] since it makes so many mistakes
+[600] you don't know whether to trust it or not.
+[603] Let me show you an example
+[605] of something that was
+[605] translated with a machine,
+[607] it was actually a forum post with someone
+[609] who was trying to ask
+[609] a question about Javascript.
+[612] It was translated
+[612] from Japanese into English.
+[615] Let's see if this works.
+[616] I'll just let you read,
+[616] this person starts apologizing
+[619] for the fact that it's translated
+[619] with the computer.
+[621] [This is question, English is faulty.
+[621] Thank computer to translate. Sorry!]
+[625] The next sentence is going to be
+[625] the preamble to the question
+[627] he's just explaining something,
+[629] remember, it's a question
+[629] about Javascript:
+[631] [At often, the goat-time
+[631] install a error is vomit.]
+[638] Then comes the first part of the question:
+[642] [How many times like the wind,
+[642] a pole, and the dragon?]
+[649] Then comes my favorite
+[649] part of the question:
+[652] [This insult to father's stones?]
+[658] And then comes the ending,
+[659] which is my favorite part
+[659] of the whole thing:
+[662] [Please apologize for your stupidity.
+[662] There are a many thank you.]
+[667] Ok, so computer translation,
+[667] not yet good enough.
+[670] Ok? So back to the question,
+[670] we need people to translate the whole Web.
+[675] Now the next question you may have is
+[677] "Why can't we just
+[677] pay people to do this,
+[679] we could pay professional
+[679] language translators
+[681] to translate the whole Web".
+[683] We could do that.
+[684] Unfortunately,
+[684] it'd be extremely expensive.
+[686] translating a tiny tiny fraction
+[688] of the whole Web, Wikipedia,
+[689] into one other language, Spanish.
+[692] You know, Wikipedia exists in Spanish,
+[694] but it is very small
+[694] compared to the size of English,
+[696] it's about 20% the size of English.
+[698] If you want to translate
+[698] the other 80% into Spanish
+[700] it would cost at least 50 million dollars.
+[703] This is even at the most exploited
+[703] outsourcing country out there.
+[707] So, it'd very expensive.
+[707] What we want to do
+[709] is to get 100 million people
+[711] into every major language for free.
+[713] Now, if this is what you want to do
+[715] you pretty quickly realize
+[715] you're going to run into
+[717] two pretty big hurdles, two big obstacles.
+[720] The first one is a lack of bilinguals.
+[724] I don't even know if there exists
+[724] 100 million people out there
+[727] using the Web who are bilingual enough
+[727] to help us translate.
+[730] That's a big problem.
+[731] The other problem
+[731] that you're going to run into
+[733] is the lack of motivation.
+[735] How are we going to motivate people
+[736] to actually translate the Web for free?
+[738] Normally, you have to pay people
+[738] to do this,
+[740] so how are you going to motivate them
+[740] to do it for free?
+[743] Now, when we were
+[743] starting to think about this
+[745] we were blocked by these two things
+[747] but then we realized
+[747] that there's actually a way
+[749] to solve both these problems
+[749] with the same solution.
+[751] There's a way to kill two birds
+[751] with one stone.
+[753] And that is to transform
+[753] language translation into
+[755] something that millions
+[755] of people want to do
+[758] and that also helps with the problem
+[760] of a lack of bilinguals.
+[761] And that is language education.
+[763] So, it turns out that, today,
+[763] there are over 1.2 billion people
+[767] learning a foreign language.
+[769] People really want to learn
+[769] a foreign language,
+[771] and it's not just because they're being
+[771] forced to do so in school.
+[774] For example, in the United States alone
+[776] there are 5 million people
+[776] who have paid over 500 dollars
+[778] for software to learn a new language.
+[780] So people really want
+[780] to learn a new language.
+[782] What we've been working on
+[782] for the last year and half
+[784] is a new website.
+[786] It's called Duolingo.
+[787] Where the basic idea is
+[788] as people use Duolingo,
+[788] people learn a new language for free
+[793] while simultaneously translating the Web.
+[797] Basically they are learning by doing.
+[800] The way this works is
+[801] whenever you're just a beginner
+[801] we give you very simple sentences,
+[804] there's of course a lot of
+[804] very simple sentences on the Web.
+[807] We give you very simple sentences
+[809] along with what each word means.
+[810] And as you translate them,
+[812] and as you see how
+[812] other people translate them,
+[814] you start learning the language,
+[814] as you get more advanced,
+[817] we give you more
+[817] complex sentences to translate.
+[819] But at all times,
+[819] you are learning by doing.
+[821] The crazy thing about this method
+[822] is that it actually really works.
+[825] First of all, people are
+[825] really learning a language
+[827] we're mostly done building,
+[827] and we are now testing it
+[829] people really can learn
+[829] a language with it.
+[832] And they learn it about as well as
+[832] the leading language learning software.
+[835] So people really do learn a language.
+[836] And not only do they learn it as well,
+[836] but actually it's way more interesting.
+[839] Because, you see, with Duolingo
+[841] people are actually learning
+[841] with real content.
+[843] As opposed to learning
+[843] with made-up sentences
+[845] people are learning with real content,
+[847] which is inherently interesting.
+[848] So people really do learn a language,
+[850] but perhaps, more surprisingly,
+[852] the translations that we get from people
+[854] using the site,
+[854] even though they're just beginners,
+[857] the translations that we get
+[857] are as accurate
+[859] as those of professional
+[859] language translators,
+[861] which is very surprising.
+[863] Let me show you one example,
+[863] this is a sentence
+[864] that was translated
+[864] from German into English
+[866] the top is the German,
+[868] the middle is an English translation
+[870] that was done by somebody who was
+[870] a professional language translator,
+[873] who we've paid 20 cents a word
+[873] for this translation,
+[875] and the bottom is a translation
+[875] by users of Duolingo,
+[877] none of whom knew any German
+[879] before they started using the site.
+[881] As you can see, it's pretty much perfect.
+[883] Now, of course we played a trick here
+[885] to make the translations as good as
+[887] professional language translators.
+[889] We combined the translations
+[889] of multiple beginners
+[891] to get the quality
+[891] of a single professional translator.
+[894] Even though we're
+[894] combining the translations
+[898] the site actually
+[898] can translate pretty fast.
+[901] Let me show you, these are estimates
+[903] of how fast we could translate Wikipedia
+[905] from English into Spanish.
+[907] Remember, this is
+[907] 50 million dollars worth of value.
+[910] If we wanted to
+[910] translate Wikipedia into Spanish
+[912] we can do it in five weeks
+[912] with 100 thousand active users,
+[915] and we can do it in about 80 hours
+[915] with 1 million active users.
+[918] Since all of the projects
+[918] my group has worked on so far
+[920] have gotten millions of users,
+[922] we're hopeful that we would be able
+[923] to translate extremely fast
+[923] with this project.
+[926] Now, the thing that
+[926] I am most excited about Duolingo
+[929] is that I think this provides
+[929] a fair business model
+[931] for language education.
+[932] So here's the thing:
+[933] the current business model
+[933] for language education is:
+[936] the student pays.
+[937] And, particularly, the student
+[937] pays Rosetta Stone 500 dollars.
+[941] That's the current business model.
+[944] The problem with this business model
+[946] is that 95% of the world's population
+[948] doesn't have 500 dollars.
+[949] So it's extremely unfair towards the poor,
+[952] this is totally biased towards the rich.
+[954] In Duolingo, because while you learn
+[958] you're actually creating value,
+[960] you are translating stuff
+[960] which, for example,
+[962] we could charge somebody for translation
+[964] -- this is how we could monetize this.
+[966] Since people are
+[966] creating value while learning,
+[968] they don't have to pay with their money,
+[968] they pay with their time.
+[971] But the magical thing here is that
+[971] they're paying with their time
+[974] but that is time that would
+[974] have to be spent anyway,
+[976] learning the language.
+[978] The nice thing about Duolingo is
+[979] I think it provides a fair business model,
+[982] one that doesn't discriminate
+[982] against the poor people.
+[984] So, here is the site:
+[984] [www.duolingo.com]
+[987] Thank you.
+[995] Here's the site.
+[995] We haven't yet launched
+[997] but if you go there you can sign up
+[997] to be part of our private beta
+[1000] which we're probably going to start
+[1000] in about three or four weeks.
+[1004] By the way, I'm the one talking here,
+[1006] but actually Duolingo is the work
+[1006] of a really awesome team
+[1009] some of whom are here.
+[1010] So, thank you.

@@ -1,0 +1,1858 @@
+[0] You've been coding for hours and hours,
+[2] and he didn't even know what the output
+[3] was. He was just impressed by the fact
+[5] that someone could be so locked in. And
+[6] so, I think programming taught me that.
+[9] It taught me how to focus. It taught me
+[11] to be disciplined. It taught me to
+[13] receive this negative feedback from the
+[14] compiler and overcome it. I do think,
+[16] you know, we'll need to find what the
+[18] next version of that is cuz I don't
+[20] think it's going to be programming
+[21] necessarily.
+[23] All right, Guillermo. Thank you so much
+[24] for making the time for this. I'm really
+[25] excited to chat with you today.
+[26] >> Same. People are excited on X as well,
+[27] so.
+[29] So, I want to get into CodeGen, uh but
+[31] before we go there, can you talk about
+[33] what you worked on before Vercel, you
+[35] know, with Next.js, other projects, and
+[37] maybe how that fed into what you built
+[39] at Vercel?
+[40] >> I had a startup before Vercel that I
+[42] exited to Automattic, the parent company
+[44] of wordpress.com.
+[46] And it was quite a successful journey
+[47] for me because it was my first startup.
+[49] It's nice to have an exit. But also, one
+[51] of the meta things that I learned I was
+[52] a CTO. One of the meta things that I
+[54] learned is
+[56] as a CTO, how can you, you know,
+[57] influence your team in the best possible
+[58] way? Like they're going to engineer the
+[60] right things. They're going to have the
+[61] best tools. The one thing I did that was
+[63] revolutionary for my team was spending a
+[66] lot of time in getting the CI/CD
+[69] process, meaning continuous integration
+[71] and continuous deployment of the code
+[73] that they would write, get it as
+[75] efficient as possible.
+[77] Meaning you write a little feature, you
+[79] push code to get, you get a URL back.
+[82] I built a real-time system. My
+[84] background was in writing real-time
+[86] frameworks, so I was obsessed with
+[88] real-time streaming of data. And so,
+[90] people would push to get, and then I
+[93] would give them this URL that had a
+[94] commit ID.
+[96] . My company was called LearnBoost. I
+[99] think it was like learnboostdemo.com.
+[101] And so, imagine that you're almost
+[103] editing
+[104] the internet in real-time. That was the
+[107] feeling that I wanted to give my
+[109] employees.
+[110] And obviously, did a lot of other
+[111] things. I chose technology stacks and
+[113] whatever, but when I would ask my
+[115] colleagues, like what was the thing
+[116] that, you know, was most impactful to
+[118] your in your time here, it was that
+[120] iteration velocity, the the deployment
+[122] velocity, the tooling being really
+[125] neatly configured. I always do the
+[127] exercise in my head of you show up to a
+[128] new company. Isn't it nice that Apple
+[130] kind of figured out operating system and
+[132] hardware? And I give you a new laptop.
+[135] Actually, you look You probably I don't
+[136] know about you, but I look forward to
+[137] having a new laptop. It's so It's so new
+[139] and nice.
+[140] And that's only because they figured out
+[142] this bootstrapping problem of like
+[144] everything's ready to be used. I wanted
+[146] to give that feeling, but for your
+[149] development tools. Versus you get a new
+[152] You know, you're setting up a whole
+[153] environment and it takes hours.
+[154] >> these 20 million things, fight the
+[157] tools, and then maybe you get to work on
+[160] something.
+[161] >> Yeah. And so, that was by far the most
+[163] impactful thing that I did, and I wanted
+[164] to You know, it was sort of subconscious
+[167] at the time, but essentially, I wanted
+[168] to turn that into a company. I couldn't
+[170] wait to You know, you have that insight
+[173] because then I kind of saw that not
+[174] every company had that.
+[176] WordPress was really good at deploying
+[178] wordpress.com,
+[179] but I noticed that if you had a new idea
+[181] and you needed to bring it to life, and
+[183] and it kind of makes sense like they
+[184] evolved to host this really
+[185] important.com. And so, they hadn't
+[187] thought about that zero-to-one
+[189] experience for any new idea that a
+[190] developer would have. And so, when I
+[192] realized that, it dawned on me I
+[194] couldn't wait to leave and and say, this
+[196] could be a huge business opportunity
+[198] because the cloud was starting to take
+[200] off, and the cloud was known also for
+[202] its reliability, robustness, and scale,
+[205] etc., but it felt like the opposite of
+[207] using your computer. That is like just
+[209] point and click. It was this process of
+[212] configuring and figuring out instances
+[214] and
+[215] And so, sort of in parallel, it was this
+[217] convergence of ideas. Make developers
+[219] really productive and happy. Give them
+[221] the best possible tools. I built
+[223] Next.js. But also, figure out that cloud
+[225] part that a lot of companies would put
+[227] off until too too long. Like you get to
+[229] the point where, you know, I meet
+[231] companies that are operating at massive
+[232] scale that are afraid of deploying. Mhm.
+[235] Companies that deploy once a quarter.
+[237] Companies that do code freezes for
+[238] weeks, months around Black Friday and
+[240] things like that. So, this is not
+[242] obvious to me. I kind of discovered that
+[243] when I started Vercel, but
+[245] I thought it was all going to be about
+[246] the instant feeling for developers,
+[248] which is a big part. But then as I
+[250] started talking to enterprises, who's
+[251] this idea that as they become bigger,
+[253] they become stagnant. They become
+[256] ossified in their old infrastructure
+[258] choices. And you could imagine now with
+[260] AI, that problem is 10x in in terms of
+[263] importance. Like we have models coming
+[265] out every day. There's just like two new
+[266] open-source models last week. Imagine a
+[268] company that is ossified in its
+[270] deployment and infrastructure choices.
+[272] When you started Vercel because you had
+[274] this background, did you have most of
+[277] the insights that turned out to be true
+[279] about what Vercel was, or was it much
+[281] more of you know the problem area, you
+[283] know some of these customers, but you
+[285] figured it out as you went?
+[286] I had a lot of things that were based on
+[288] first principles thinking. So, literally
+[290] measuring the speed of light and how
+[293] fast can you shuttle
+[295] files on a laptop to a container in the
+[298] cloud that starts a build process, and
+[300] how fast is that build process going to
+[302] be? It's funny. I was listening to DHH
+[304] on Lex Friedman, and he was saying the
+[306] gold standard of the X was set in the
+[308] '90s by PHP. PHP is a technology that
+[310] only required of you to modify files in
+[313] a folder. Imagine Dropbox if Dropbox is
+[316] a live deployment. You go into the magic
+[318] folder, you edit a file, and it's live
+[320] on the internet.
+[321] And so, that was from first principles,
+[323] I was chasing that dragon. Mhm. There
+[326] were a bunch of things that I didn't
+[327] know. I think Vercel ended up focusing a
+[329] lot on
+[331] the front end side in the beginning of
+[333] our journey. Uh I realized that the
+[334] biggest gap was, or the biggest
+[336] opportunity I would say, was back end
+[339] code was really important, but the
+[341] differentiating experiences of the
+[342] internet were more front end heavy.
+[345] So, when you look at something like
+[346] ChatGPT today,
+[348] a lot of what it's doing is happening
+[349] right in front of your eyes in
+[350] real-time. It's thinking. It's
+[353] streaming. It You you start working on
+[355] document, and it splits the application
+[358] in two, and there's a live document
+[359] here. You cannot do those things without
+[362] powerful frameworks that are focused on
+[364] the front end. And that was the alpha in
+[366] the market. Like if I had come to market
+[368] with like, again, another runtime like
+[370] PHP, people would be like, "Ugh, I have
+[372] to learn a new language, and what's in
+[374] it for me?"
+[375] And so, anytime you bring a new tool,
+[377] it's like a big ask of the world. You
+[379] have to learn a new thing. You might
+[381] have to migrate. This is like It's the M
+[383] word. It's like It's like you tell an
+[385] enterprise you have to migrate. So, what
+[386] what's in it for me? Yeah. And what
+[389] we're realizing actually posted some
+[390] stats today that were bewildering
+[392] about a really large retail chain that
+[395] moved on to Vercel recently. I realized
+[397] that by giving people the great
+[400] developer experience,
+[402] but without business outcomes, it would
+[404] also going to be an incomplete equation.
+[406] So, when you move to Vercel, you now
+[407] realize business outcomes. Your stuff
+[409] gets faster. Your stuff gets more
+[410] dynamic. You're able to iterate faster
+[412] and like build AI products. So, that
+[415] didn't come like overnight, obviously,
+[418] and it's very hard to bootstrap the
+[419] zero-to-one, but the idea that I can
+[421] give you receipts, I think it's pretty
+[423] novel in the cloud itself. The cloud, in
+[425] fact, in its initial conception has a
+[428] really bad financial equation because
+[431] companies have data centers. They've
+[433] spent tons of money in buildings, in
+[436] racks, in servers, in storage
+[439] appliances, in people. And then you ask
+[441] them, okay, begin the journey to migrate
+[443] to the cloud. Yeah. Okay, cool. So, now
+[444] I'm going to pay for all of that, and
+[446] concurrently, I'm going to pay for the
+[447] cloud bill. Cool. And what do I get at
+[450] the end of it? What am I going to see?
+[451] >> Right. And so, I think what's benefited
+[453] me is I've always been a really visual
+[456] design person. So, if there's not if
+[458] there's nothing I can see or feel at the
+[462] end of that rainbow, then the software
+[464] engineering project was just, you know,
+[466] kind of pointless to me. And so, we
+[468] focus a lot on actually working
+[469] backwards from your resulting URL that
+[472] you deploy on Vercel. Even if you didn't
+[474] do big AB test studies and whatever,
+[476] it's just going to feel better.
+[478] And then we're going to teach you how to
+[479] work backwards into the technology so
+[481] that you start from that strong starting
+[483] point of user experience. I think it's
+[485] totally novel in the cloud. Like the
+[486] cloud has always been about
+[488] implementation details and primitives,
+[490] and Vercel made it about
+[492] products and experience. I think that's
+[494] a good transition moment because what
+[496] you talk about here is, you know,
+[497] starting from the end and then working
+[499] backwards. And I think a lot of CodeGen
+[501] is in some ways, you know, there's maybe
+[503] some analogies there. That was a lot
+[505] about the beginnings. Now, let's sort of
+[507] fast forward all the way to today, where
+[509] I think CodeGen, you're kind of at the
+[511] center of both the thinking and sort of
+[514] where the technology will be. Two things
+[516] are true. One is there are a lot of
+[518] people that sort of have shared
+[520] information about how, you know, you go
+[522] out and you test what developers are
+[524] actually doing with the products today,
+[526] and it's not working in such bewildering
+[529] ways quite yet. You know, like there was
+[531] a study recently sharing that like
+[533] people thought they were 20% faster.
+[535] Turns out they were actually 20% slower,
+[537] which seems like, you know, very
+[539] surprising in some ways, but you know,
+[541] we talked about this, and it actually
+[542] wasn't that surprising to you. But on
+[544] the other hand, there's, you know,
+[546] probably never been a market, at least
+[547] that I've seen, that has more
+[549] excitement, more market pull. Companies
+[551] are scaling revenue probably faster than
+[553] anything in this space. And so, um
+[557] how do you see the state of affairs like
+[559] today? Like, you know, like what's going
+[561] on out of the offices in here like this
+[563] exact hour? This is a super hot topic
+[565] because at Vercel, we monitor the idea
+[567] of landing something very closely. Like
+[570] to us, it's not just about writing the
+[572] code. Is that you land it. And in fact,
+[574] your higher
+[576] the bar for what you consider be
+[578] landing, the better for you. Landed
+[579] means fully deployed and usable? Even
+[581] better. Like landing it means that
+[583] you've seen some business outcome. Okay,
+[585] so all the way through the funnel.
+[587] >> Right. And again, this is not always
+[588] easy to do because you also have to
+[589] balance it with like a healthy dose of
+[591] like shots on goal, but you have to be
+[593] disciplined about what it means to land
+[596] your software. And again, this is just
+[598] from that principle of always be working
+[600] backwards from like there's some pixels
+[602] on someone's screen that also will
+[604] result in some kind of business outcome,
+[605] you know, conversions, sign-ups, new
+[608] information, vibes, whatever you want to
+[609] call it, but I do encourage people to
+[611] think about the idea of like landing.
+[614] And I do think one of the emergent
+[616] things that we're seeing is there's
+[618] almost like a bottleneck in landing
+[619] today.
+[620] It's almost like code generation has
+[622] been solved. Everyone's sharing their
+[624] stats about percent of my company, the
+[627] code is coming from AI's, 80%, 90%. So I
+[630] do think we have to be rigorous about
+[632] well, do you just have a bunch of PRs
+[634] that nobody is reviewing? Do you feel
+[636] that way? Do you feel that code
+[637] generation is roughly speaking solved at
+[639] this point? So let me give you a
+[640] framework of how I think about it. I
+[642] think on one extreme of the equation, we
+[644] have vibe coding
+[646] and tools that cater to a very broad set
+[650] of users. That's where V 0 our, you
+[653] know, agent lives in you see products in
+[655] this category that are saying you don't
+[657] need to know how to code.
+[659] Everybody can cook is kind of our motto,
+[661] right? So you go to V 0, you put in a
+[663] text prompt and we create an
+[665] application.
+[666] On the other end of the spectrum, you
+[668] have an engineer that's been working at
+[670] 20-year-old codebase and they want to
+[673] quote-unquote write code faster.
+[675] They have a solid mental model of how
+[677] the code works. Obviously, there's gaps
+[680] in their knowledge. They might be more
+[682] new to the team, you know, they might be
+[684] more senior.
+[685] They might forget certain things. So
+[687] there's a lot of gaps that AI, I call
+[690] this AI-assisted engineering or agentic
+[692] engineering. There's an engineer that's
+[694] sitting on that chair that's being
+[696] augmented by AI.
+[698] And so when you look at it from this
+[700] perspective, I think, you know, you hear
+[702] this a statistic of more and more of
+[705] this codebases that people are working
+[707] on, the code review, the patch
+[710] is increasingly coming from AI rather
+[713] than the human. And so the reason I
+[714] think code is I I can see the line of
+[717] sight of when code gets fully solved
+[720] is that we will continue to make the
+[722] models better. They'll get a
+[724] statistically more aware of all of the
+[726] patterns in the world. This is almost
+[727] like a self-fulfilling prophecy, right?
+[729] The models are learning from all the
+[731] code that we're writing, from the code
+[733] that gets rejected, from the code that
+[735] gets accepted.
+[736] And so more and more of this code, I
+[738] think, will straight-up come from the
+[740] agent.
+[741] The problem that I'm seeing today is
+[742] that for the most mature
+[744] engineer projects,
+[747] it's unclear that the human can fully
+[750] trust
+[751] the outcome of the AI. Meaning that yes,
+[754] we're generating a lot of PRs, we're
+[755] generating a lot of code. The bottleneck
+[758] has shifted to reviewing that code.
+[760] I've been sharing an anecdote that I
+[761] heard a couple weeks ago
+[763] from a company in the ecosystem where,
+[766] you know, the agent generated a PR.
+[769] It did exactly what the engineer wanted
+[771] to do. So this is the mode of thinking
+[773] where like the AI is just reading your
+[775] mind, but you're giving it a little bit
+[776] of direction. And so you're like as an
+[778] engineer you're like, thank god.
+[780] But the AI deleted a crucial line of
+[783] code. This happens a lot with models, by
+[785] the way. You take saw in it and you
+[786] realize that it's good at instruction
+[789] following, but it's not perfect.
+[791] It kind of goes off the rails just a
+[793] little bit.
+[794] In a
+[795] very heavy-duty, mission-critical
+[798] production codebase, one line of code
+[801] can literally mean the distinction
+[803] between like the whole internet goes
+[804] offline or everything works perfectly.
+[807] One line of code could be a cloud
+[809] infrastructure file that deletes a
+[811] critical resource or a line of
+[813] authentication code. You've been seeing
+[815] some vibes shift a little bit on the is
+[818] the code that gets generated by AI's
+[819] secure on X and so on.
+[822] And so
+[823] when that PR went to review,
+[825] I think this is what we where I think a
+[827] lot of the the focus will shift and and
+[829] and we're certainly making a lot of
+[831] investments here. We need to have agents
+[834] give you a higher baseline of confidence
+[836] that the code change is actually good,
+[839] that it's safe, that it follows best
+[842] practices.
+[843] And so we have agents producing the
+[845] code. I think now we're going to have
+[846] agents reviewing the code. And again,
+[849] the the the human being needs to be
+[851] there still in the loop. Does this
+[852] problem have anything to do with who
+[854] wrote the code in the first place or is
+[855] this merely just a problem that exists
+[857] for a large codebase? In other words,
+[859] like a a a 30-year-old company that's
+[861] now trying to use AI that is, you know,
+[864] making mistakes as it's trying to
+[865] navigate the codebase. Is that a
+[867] different thing than a large new
+[869] codebase today that was generated by AI
+[871] code or is it not related?
+[872] >> I think so. I think so. One of the
+[874] things that we do with V 0 and again,
+[875] because we cater to everybody and not
+[877] just developers is we're more
+[879] opinionated.
+[880] So I think the way that this world is
+[882] going to split is that when you're
+[883] building a vibe coding platform, you're
+[886] more vertically integrated. Because if
+[888] you're more vertically integrated, I'll
+[889] make it this really concrete. V 0
+[891] produces Next.js code. Vercel builds
+[895] Next.js.
+[896] We have integrations into a particular
+[899] set of database partners. So we can
+[901] continue to work very, very, very
+[903] closely on monitoring these known
+[905] quantities. And actually, I think that
+[907] if you take that more constrained
+[909] approach, you could actually exceed what
+[911] a human being is capable of.
+[913] Because I can take all of the best
+[915] practices of security in the world and
+[917] it can embed them into the model. And
+[920] the model can now say, okay, like I will
+[922] refuse to do something that's really
+[923] dumb from a security perspective. Now,
+[926] consider this world where you need the
+[927] model to be almost like beyond super
+[930] intelligence. You need it to know the
+[932] entire history of your business,
+[934] all of the semantics of the code.
+[936] It needs to know what runtime
+[938] interactions of that code cuz keep in
+[940] mind that just working on the codebase
+[943] is a very incomplete model to go off of.
+[945] The human is thinking about all of the
+[947] known data that happens at runtime.
+[951] Obviously, you kind of it's kind of
+[952] sloppy realistically cuz like you kind
+[954] of know about it in your brain, you
+[956] know, oh, our baseline throughput is a
+[959] thousand requests per second. So I have
+[961] to be really careful in the algorithm
+[963] I'm writing in this hot path. How does
+[965] the LM know about that? The LM would
+[967] actually have to ingest
+[970] all of the runtime data.
+[972] Think of it as like piping all of the
+[974] logs and metrics, etc. into the into its
+[976] brain. And then it also has to know
+[978] about every possible programming
+[980] language, cloud platform, deployment
+[983] tool, etc. etc. And so you also asked
+[985] something that I thought was really
+[986] interesting. You said, is this different
+[988] for companies that are adopting AI today
+[991] and, you know, they've been writing code
+[992] for decades? I do think there's also a
+[995] a human habit delta. I think there's
+[999] people right now that are being born
+[1000] into this world. Yeah.
+[1002] And so they will learn the ins and outs
+[1005] of how to be careful and wield this tool
+[1007] correctly or not. But I do think that
+[1009] we're all learning as we go, you know,
+[1011] like the jury is still out in like what
+[1013] is exactly, you know, AI engineering one
+[1016] on one. Like there's almost like you
+[1018] still need a curriculum which kind of
+[1019] defeats the point of the ideal of like,
+[1021] oh, you don't need humans.
+[1022] >> Totally. It just seems like if there's
+[1023] like a whole new way to build a house
+[1025] and you have new people going in and
+[1027] they get to start from scratch and they
+[1028] all know the new way versus an old, you
+[1031] know, house that you need to go
+[1033] completely retrofit and the people
+[1034] working on are learning the new tactics.
+[1036] That's right. Seems like it could be
+[1037] very different. Totally. And I think
+[1038] what we're seeing from the Next.js side,
+[1040] I actually literally tweeted earlier
+[1041] this morning like there should be a
+[1043] convention for
+[1046] uh agents to advertise to tools that
+[1048] their agents and not humans wielding the
+[1050] tool.
+[1051] So that the tool itself can be
+[1053] polymorphic. It can work, it can adapt
+[1056] itself a little bit differently when
+[1058] it's being wielded by the agent. So if
+[1060] if you're building a house and you're a
+[1062] human, I give you the hammer that is
+[1063] adapted for, you know, your motor skills
+[1066] and the shape of your hand. But if
+[1068] you're an agent, you're like, you know,
+[1069] awesome and you're like from a motor
+[1072] skills perspective, you can hold 20
+[1073] hammers at the same time. Yeah. So I I
+[1076] will expose a different interface. And
+[1078] this really uncovers it an enormous
+[1080] potential that exists today, which is
+[1082] the idea that you can create a whole new
+[1085] set of languages,
+[1088] runtimes, and frameworks that are
+[1090] custom-tailored for agentic engineering.
+[1092] And so that goes back to like our vision
+[1094] with V 0 is that it actually could be
+[1096] the case where almost like a
+[1098] self-driving car, the self-driving car,
+[1101] you know, in its
+[1102] uh version today has some limitations.
+[1105] Waymo is not cannot go on the freeway
+[1107] still today, right? And
+[1109] uh is not in New York, whereas Uber just
+[1112] like took over the whole planet
+[1113] immediately.
+[1114] But
+[1116] Waymo has a lot of fewer incidents.
+[1119] It literally does does not make a lot of
+[1121] the mistakes that humans make. So I want
+[1123] the tools like V 0 to go in that
+[1126] direction where you're almost
+[1127] constraining in a realistic way what it
+[1130] can do. You're not, you know,
+[1131] overselling its potential, but the
+[1133] things that it does do, it can even
+[1136] exceed what a human would do otherwise
+[1138] by hand. Yeah. So that that's the
+[1140] spectrum of flexibility. If you're
+[1141] using, you know, cloud code or cursor,
+[1144] anything is possible. Like you're going
+[1146] to work on any codebase. If you're using
+[1148] things like V 0, it's more opinionated.
+[1151] It opens the top of funnel to everybody
+[1153] in the planet. And hopefully we can
+[1156] continue to steer it to a place where
+[1157] the output quality is almost more of a
+[1160] guarantee. And this is actually also
+[1163] what I would encourage everyone to think
+[1164] about with regards to AI.
+[1166] We need to raise the bar where AI is not
+[1168] just a slop generation machine, right?
+[1170] Like we should be thinking kind of like
+[1172] a Waymo. Like, oh, look at that in this
+[1174] dimensions, it's way better than what a
+[1176] human would do. Is your read right now
+[1178] that the overall advantages coming from
+[1182] cloud code and cursor and things like
+[1183] that are more self-perceived than
+[1185] genuine? There's a lot to unpack there.
+[1188] I I was speaking recently to a CIO of a
+[1190] very, very large engineering workforce,
+[1192] maybe one of the largest in the world.
+[1194] You know, there is obviously the
+[1195] cultural resistance to new things. So,
+[1197] like, obviously, you know, there's
+[1198] always that caveat and whatnot,
+[1200] especially at this scale. But, one of
+[1201] the things that he pointed out that
+[1203] resonated was they spent a lot of time
+[1207] evaluating the perceived versus realized
+[1211] productivity gains of AI tools. And he
+[1214] mentioned that the gap between perceived
+[1216] and realized was extremely significant.
+[1219] Meaning that in order to finally roll
+[1221] out the assistance, which they did,
+[1223] people would thought this is the second
+[1224] coming of Jesus. This is the is like
+[1227] best thing that's happened since sliced
+[1228] bread when you would ask them from like
+[1230] anecdo- anecdotal perspective. But, then
+[1232] when you measure what actually gets
+[1234] landed, Yes. not so much.
+[1236] >> And I bet it's because there's like a
+[1237] multi-step process. And in some of the
+[1240] parts, now all of a sudden you're going
+[1242] like turbocharged. In other ways, you're
+[1244] going slower than you used to. And you
+[1246] just focus on the parts where you
+[1247] started flying. That's right. But,
+[1248] >> also there's the vibes that are
+[1250] changing, right? And this is where I'll
+[1251] make the anti case of that. I'll say,
+[1254] "Look, one of the hardest things about
+[1256] software engineering,
+[1258] and I've always, you know, when people
+[1260] would make the joke of like, "Ha,
+[1262] developers have it so good. They go to
+[1264] the Google and they have their lunches
+[1266] made and whatever." That's like a
+[1268] perception that built out with like the
+[1269] HBO series and like maybe maybe the
+[1271] people that have never engineered could
+[1273] be, you know, persuaded to think that
+[1275] way cuz you sit on a table, you have
+[1277] your nice laptop, you're drinking your
+[1279] smoothie or whatever. There's also the
+[1282] day in the life series, you know, those
+[1284] those little videos of people sharing
+[1285] like their
+[1285] >> Yeah, yeah, exactly. That's exactly what
+[1287] people I think would picture, right?
+[1288] >> like I show up to the office. I make my
+[1291] tea and Think about that engineer that
+[1293] you just described that feels the weight
+[1295] of the world on their shoulders because
+[1297] that line got deleted. And literally
+[1299] what happened as a result of that is one
+[1301] of the world's most recognizable brands
+[1303] in the world .com gets taken down. Yep.
+[1306] And that that pressure, that weight, and
+[1310] it's not just even on the runtime and
+[1312] operational aspects, right? It's also,
+[1314] and this is why Vercel, by the way, we
+[1315] we worked so hard to eliminate those
+[1318] failure modes because of my own
+[1319] experience of like what it's like to
+[1321] hold a pager. Totally. It's one of the
+[1323] worst feelings in the world.
+[1324] >> It's a bit like when uh I mean, it's not
+[1326] exactly the same thing, but it's um you
+[1328] know, when somebody does some task and
+[1330] gets paid a huge amount for a small
+[1332] amount of time and they're like, "That's
+[1333] right. You didn't pay me for that hour.
+[1334] You paid me for like the 10 years that I
+[1336] got ready to do that hour." This is so
+[1337] true. The operational aspect is it's
+[1339] just so underrated and overlooked. And
+[1342] but there's also another one, which is
+[1344] the build time aspect, which is, yeah,
+[1346] you are looking at a laptop, but your
+[1348] brain is like literally in pain. Just
+[1351] like the hyperfocus like, you know,
+[1354] aspie style of like I I can only do one
+[1357] thing at a time and it's a lot of
+[1360] negative feedback loops,
+[1361] error error error error error error, and
+[1363] then maybe you get it right. Maybe. You
+[1366] could go hours and hours and hours. I
+[1368] sometimes read Slack messages from
+[1370] engineers like, "Holy crap, man. I just
+[1372] spent 3 days just struggling with this
+[1374] problem. And it was this little thing
+[1376] over here like it's just it's an
+[1378] emotional roller coaster."
+[1380] And now you're
+[1383] in this new world of like agent, do that
+[1386] thing. And now the agent swallows all
+[1388] that nastiness.
+[1390] Cuz there's a very important thing that
+[1392] has also happened,
+[1393] which is the world has now hardcore
+[1396] upgraded from assistants to agents.
+[1400] One of my internal
+[1401] things that I repeat is like agent is
+[1403] the new model. If you pay attention,
+[1405] you know, Vercel launched a platform
+[1407] API, which is basically like a very
+[1409] high-level agent that you can automate.
+[1412] You can if you if you're Squarespace and
+[1414] you wanted to reinvent yourself, you
+[1416] could use the Vercel platform API to
+[1417] create your own website building agent.
+[1421] If you look at Cloud Code, they launch
+[1422] an SDK. And people are integrating in
+[1424] various ways.
+[1426] So, what an agent is is that it's the
+[1428] LLM on steroids.
+[1429] Is the LLM
+[1431] focused on an output. Mhm. Because the
+[1433] LLM, when it first appeared, it was
+[1435] focused on request-response.
+[1437] Write me a poem. Translate this to to
+[1440] Spanish. Translate it back to English.
+[1442] Make it funnier. Explain it like I'm
+[1443] five. So, it was all about, you know,
+[1446] you ask for something, you get it back.
+[1447] >> Now it's get me an outcome. Now it's get
+[1449] me an outcome. And that is absolutely
+[1451] phenomenal because that's how we went
+[1453] from ChatGPT replace the Stack Overflow
+[1456] for asking programming questions to now
+[1458] it's like,
+[1459] build me an awesome website.
+[1462] There's a there's a really funny meme of
+[1463] a really jacked Chad type, which is
+[1466] build me something. Don't make mistakes.
+[1469] And so, going back to the psychology of
+[1470] a developer, think about what that does
+[1472] to you. You went from struggling,
+[1475] the silent struggle that most normies
+[1477] would not know about, to you're just
+[1479] completely in control. And then so, we
+[1481] added a sound to Vercel when the
+[1484] generation is completed. People have
+[1486] have said it's almost like hitting a
+[1487] jackpot. Because the sound only happens
+[1490] when the agent went through all those
+[1492] errors, all those intermediate states
+[1494] that a human would have suffered with.
+[1497] And now, okay, once we've rendered
+[1499] successfully,
+[1500] we give you the sound. And so, now I do
+[1502] think we have to study the psychological
+[1505] and emotional implications of that and
+[1507] also put them into the pile of like
+[1508] productivity. Because maybe now you feel
+[1510] better
+[1512] and the productivity outcome is unknown.
+[1514] This is sort of a goofy question, but
+[1516] and I'm not, you know, an engineer, but
+[1518] my
+[1519] my co-founder was and a lot of good
+[1521] friends obviously have been. What's been
+[1523] described to me is that struggle, that
+[1525] multi-day struggle results in the most
+[1528] like, you know, satisfying, happy moment
+[1531] at the end. And that that's like a big
+[1533] part of the love of the game. Yes. Oh,
+[1535] absolutely. Will we lose some
+[1537] >> out? Will we lose some of that sort of
+[1539] like hunt that some people find
+[1541] satisfying?
+[1542] >> it depends on the
+[1543] it depends on the individual. So, Vercel
+[1545] can be used by my kids. Vercel can be
+[1547] used by PMs, designers, people that are
+[1549] focused on building products. And so,
+[1550] they didn't have that feedback loop of
+[1552] like I'm writing code. I'm I'm analyzing
+[1555] the error. There's a still a sense of
+[1557] like gratification when you get
+[1559] something that matches your vision,
+[1560] which is really powerful. Oh, now I got
+[1563] Oh, okay. Now I was able to dump my idea
+[1566] into the right prompt and I steered
+[1569] agent into the right outcome. And and
+[1571] there is a huge amount of satisfaction
+[1573] from that. But, there is a meta problem
+[1574] here that I do think about, which is
+[1576] that
+[1577] Have you watched Wall-E? Yeah. And like
+[1579] we're floating like the the future is
+[1581] like fat blobs floating and we're
+[1584] slurping.
+[1584] >> some point in the in you know, we're a
+[1586] long ways away. We can talk about it,
+[1587] but like, you know, if all the hard
+[1588] problems take away, do we become that
+[1590] guy? It's like sitting back Yeah, I do
+[1592] think about that. And I think everybody
+[1594] enjoying leisure constantly would be a
+[1596] huge problem. I don't think we're
+[1597] I don't think we're going there
+[1598] personally. I'm curious if you do, but I
+[1600] think that would be a huge problem if
+[1601] that happened. Some people have brought
+[1602] this up, right? Like
+[1604] uh when you're solving all of those
+[1606] programming problems,
+[1608] you are building a stronger mental model
+[1611] of the world. You are discovering
+[1614] patterns, acquiring knowledge. You're
+[1617] testing your discipline. I I think the
+[1618] discipline part is underrated. Like I
+[1620] remember my dad, I always remember this
+[1621] one afternoon. I had just gotten my new
+[1624] developer setup. I was super motivated.
+[1627] My bedroom was next to a hallway, and so
+[1628] people would walk past all the time.
+[1631] And I was so locked in. I probably had
+[1633] spent like 7 hours coding non-stop.
+[1635] And I remember two things. My dad walked
+[1637] in one direction, and then he walked
+[1639] back. And to me it was like 10 minutes
+[1641] had passed. And he's like, "Dude, like
+[1643] how do you do this?
+[1645] You just you've been coding for hours
+[1647] and hours." And he didn't even know what
+[1649] the output was. He was just impressed by
+[1650] the fact that someone could be so locked
+[1652] in. And so, I think programming taught
+[1654] me that. It taught me how to focus. It
+[1656] taught me to be disciplined. It taught
+[1658] me to receive this negative feedback
+[1660] from the compiler and overcome it. And I
+[1662] do think, you know, we'll need to find
+[1664] what the next version of that is cuz I
+[1666] don't think it's going to be programming
+[1667] necessarily. Again, like all of I it it
+[1670] was so funny. I still I'm in the game of
+[1672] like I try to read every user problem,
+[1675] every error message, everything gets
+[1677] reported on X I read. And yesterday got
+[1679] an escalation from a startup. It's like,
+[1681] "I think Vercel is broken."
+[1683] And they escalated through the VCs
+[1685] because they wanted to bypass any
+[1686] support mechanism, whatever.
+[1688] And I read the message and I see the
+[1690] error right there in the message. So, it
+[1692] was a complicated stack trace.
+[1694] For for nerds, it was a it was a three
+[1697] uh linked error objects. So, like, the
+[1699] stack trace was it's error error error.
+[1702] But, the error was right there.
+[1703] The explanation was right there for why
+[1705] it happened. There was no problem in our
+[1706] runtime. And again, my posture here is
+[1709] that every problem that customer has is
+[1711] my problem. Mhm. In fact, every problem
+[1712] the internet has I see as my problem. I
+[1714] try to like absorb the whole weight of
+[1716] responsibility. But, very concretely
+[1718] here, you know, I told the customer like
+[1720] it's right there. It's this. And and in
+[1722] this case it was another vendor
+[1724] that was down re- re- returning a 502
+[1726] error.
+[1728] And so, my lesson from there is that I
+[1729] do think the vibes are shifting. I don't
+[1732] think people are going to read anymore.
+[1734] >> won't even read a single error line.
+[1736] >> So, again, going back to my model of
+[1738] like I'll solve the problem. And then if
+[1740] if there's another problem, I'll
+[1741] redefine the problem to be bigger.
+[1744] We are working on an agent that will
+[1746] compress
+[1747] any metric anomaly. And so, the the PM
+[1750] working on this was super happy to get
+[1752] my forward because we're we're work
+[1754] we're working on basically, I call it
+[1756] going from problems to solutions.
+[1758] The old cloud was problem problem
+[1760] problem.
+[1761] CloudWatch data data data
+[1763] The new world is here's the solution.
+[1765] Here's the PR. Or here's the insight.
+[1767] So, it was a kind of epiphany for me of
+[1769] like we need to double down on that.
+[1772] Because this complex error message stack
+[1775] was for machines. I can make the case
+[1777] that we should have never given that to
+[1779] a user. Should have shown me
+[1781] like a natural language error in some
+[1783] way. Correct. Yeah.
+[1784] >> Uh and in fact, probably what this
+[1786] customer wanted was any, mean, this is
+[1788] kind of like maybe too hardcore for
+[1789] today. But here's the email that I
+[1792] should write the CEO of that other
+[1793] company. Like go and complain with that
+[1797] vendor because it's not us. But by the
+[1799] way, I think this is going to resonate
+[1800] strongly with a lot of people that built
+[1801] platforms and infrastructure.
+[1803] Fault attribution.
+[1805] Correct, precise fault attribution
+[1808] is one of the hardest problems in
+[1809] platforms. One thing that would always
+[1811] frustrate me about the internet was
+[1813] people would give a lot of to the
+[1815] Google Chrome team.
+[1817] They would say that it consumes too much
+[1819] memory.
+[1821] And that makes absolutely no sense
+[1822] because it's the web pages that consume
+[1824] the memory. How does that nuance not get
+[1826] lost to an end user? People just think
+[1829] they started memifying it. Like if
+[1830] you've ever seen this guy that eats a
+[1832] lot of things, it's Chrome eating all
+[1835] the available memory in your machine.
+[1837] And there's things that Google Chrome
+[1839] can do. Like they can evict tabs more
+[1841] aggressively, which has its own set of
+[1843] downsides because it's like oh, I shut
+[1845] down this app for you. Huh? Because I
+[1847] wanted to save memory. And there's of
+[1849] course the amount of engineering that it
+[1850] takes to like do really good memory
+[1852] compression. I don't even want to get
+[1853] into. But fault attribution, so what
+[1856] they ended up doing, I think they still
+[1858] have it is that if you hover the tab,
+[1860] they say how much that website is
+[1862] consuming. And you should take it up to
+[1863] that website. And there's also this
+[1866] really interesting question of like I
+[1868] love a web that's extremely powerful.
+[1871] The vision of the web put forth by Apple
+[1873] is that the web should only render like
+[1874] it should all look like Wikipedia. It's
+[1876] like it's like a glorified ebook reader.
+[1878] I love the fact that the web is this
+[1879] insanely powerful platform. But when you
+[1881] give people more power, you get into
+[1883] this fault attribution problem. And the
+[1886] cloud has it in spades because your
+[1889] visitor only cares about the fact that
+[1891] if you go to like, you know, hot
+[1893] website.com and they're going to buy
+[1894] something, it works end to end.
+[1896] But if you have a lot of vendors in the
+[1898] pipeline,
+[1899] then how do I tell you the developer,
+[1902] oh, it was this company that let you
+[1904] down. It was not Vercel. And so agents
+[1906] can solve this for us. And by the way,
+[1907] it seems like something small and I'm
+[1908] like nitpicking over like this House of
+[1911] Cards, but like
+[1913] just telling people concretely what went
+[1914] wrong, it can make a huge difference.
+[1916] >> Hearing you talk about it, sometimes I'm
+[1918] just like amazed that the internet goes
+[1919] down as infrequently as it does.
+[1922] When when you think about like this
+[1923] whole um It's a huge House of Cards.
+[1925] Yeah.
+[1926] >> seems like it. Is that what it really
+[1927] is? Cuz that's what it seems like to me
+[1929] as a non-technical person, but that's
+[1930] what it appears like.
+[1931] >> It really is. So I'll give you an
+[1932] example from 2 days ago.
+[1934] Someone compromised a very popular
+[1937] JavaScript package in in a in a public
+[1939] registry. That package was a dependency
+[1941] of a dependency of a dependency of
+[1942] millions of things.
+[1944] And because someone managed to claim
+[1947] that account, hack that person, and then
+[1949] publish the package,
+[1950] for a short burst of time, a lot of
+[1953] people had a hard rotate into patching
+[1956] that vulnerability. This has happened
+[1957] many times. We had Log4Shell.
+[1960] Log4Shell is one of the craziest
+[1962] vulnerabilities in the history of the
+[1963] internet. So the logging library
+[1966] used by almost every mainstream Java
+[1968] application
+[1969] had a remote code execution
+[1971] vulnerability. That all it required is
+[1973] for you to send someone a URL.
+[1976] And then if that URL happened to be
+[1978] logged, you would take over a remote
+[1980] machine.
+[1981] So imagine I send you a URL. Someone
+[1983] visit It might not even involve sending
+[1986] it to anybody. I go to the URL. Let's
+[1988] say I go to google.com/query
+[1990] equals
+[1992] bad something, something nefarious.
+[1995] That gets logged
+[1996] by Log4j,
+[1998] and all of Google's servers are
+[2000] compromised by me. By just one line of
+[2002] code.
+[2002] >> That seems insane. That happens. That
+[2004] happened and the whole security industry
+[2006] and infrastructure industry hard rotated
+[2009] into that for like an entire month. The
+[2011] cleanup of that might still not be done.
+[2013] I think we sometimes ignore the
+[2015] adversarial AI game is one of the things
+[2017] that we're heavily investing into. It's
+[2019] like how do we get ahead of the fact
+[2020] that people can now misuse all of these
+[2023] LLMs. But a worse underlying problem is
+[2025] that if code gen, as you said, continues
+[2027] to grow at the rate that it's going in
+[2030] our we continue to rely more and more
+[2032] and more on code gen, and code gen
+[2033] continues to get better and better and
+[2034] better and better. As a bad actor, all
+[2036] you have to do is say GPT-6,
+[2039] build me the best possible attack
+[2042] for google.com. Okay, if I'm an
+[2044] experienced security engineer, what do
+[2046] you do? Well, so first of all, what very
+[2048] good security engineers do is they write
+[2049] their own tools.
+[2051] There's a lot of tools on GitHub for
+[2052] like scanners that you can use. Uh and
+[2055] for example, they know about known
+[2056] vulnerabilities. They will look for like
+[2058] an old version of Log4Shell and
+[2060] whatever.
+[2062] But actually the best people in the
+[2063] industry write their own tools and keep
+[2065] them secret. And they get them better
+[2067] and better and better over time and they
+[2068] make them very specialized. So you could
+[2070] see in a world where GPT-6 builds its
+[2071] own tool just to attack a given target.
+[2074] >> Yeah. And so it's going to be a
+[2076] multi-industry
+[2077] or multi-company effort to to combat
+[2079] this. I think you can do some things on
+[2081] like refusing prompts, but I think it's
+[2083] going to give us diminishing returns
+[2085] because people very quickly realize they
+[2086] could say you know, you can say imagine
+[2089] that you're attacking google.com. And
+[2091] And so there's diminishing returns on
+[2092] like modifying system prompts and like
+[2094] blocking things. And prompt leaks,
+[2096] everyone's given up on. I don't know if
+[2098] you noticed this. Like the V 0 prompt is
+[2100] somewhere in on GitHub and people were
+[2101] like trying to like
+[2103] provoke me. It's like, oh, did you
+[2104] realize the V 0 prompt is on GitHub? I'm
+[2106] like, there's no value to the prompt. Go
+[2108] at it. Like the Grok prompt is there.
+[2110] The Claude code prompt is there. The
+[2112] Gemini prompt is there. Protecting the
+[2114] prompt, diminishing returns. Mhm.
+[2116] Blocking, diminishing returns. So what
+[2117] do you need to do is you need we need to
+[2119] make the world more secure
+[2122] faster than attackers will build, you
+[2125] know, cyber threats and scanners and and
+[2129] attacking tools and so on. So that's one
+[2131] of the things that feels very brittle
+[2132] about the internet today. When you think
+[2134] about where code gen is right now and
+[2137] you maybe analogize it to self-driving
+[2140] cars, which, you know, 10 years ago like
+[2142] worked a little bit, you know, now they
+[2144] work pretty well, but like it took
+[2145] longer than everybody thought. How much
+[2147] time do you is your sense that we have
+[2149] before people are prompting whole like,
+[2152] you know, robust commercial-grade web
+[2155] apps into existence? A lot of people are
+[2156] excited today about building personal
+[2159] software. So this is very real. Like
+[2161] people people can now prompt
+[2164] >> thing that they wanted personally. So
+[2166] for example, the design team at Vercel
+[2168] has a bunch of tools that they built
+[2170] so that they can take an asset,
+[2172] post-process it so that they can ship it
+[2174] in the way that they want it and thus
+[2176] simplifying a process that could have
+[2177] taken like days, weeks, etc.
+[2180] There's now a very precise software tool
+[2183] that can do it. There's also the And
+[2184] this kind of dovetails into like there's
+[2187] internal tools, dashboarding tools. One
+[2189] of the things that has been an emergent
+[2191] learning from using V 0 is that
+[2194] we use the classic business intelligence
+[2197] tools a lot less. We used to have this
+[2200] and it kind of seems crazy in
+[2201] retrospect. We used to have this like
+[2203] fixed dashboards
+[2205] that over time no one opens.
+[2208] So of course you have the top-line
+[2210] company metrics and that like you have
+[2211] your master dashboard that people, you
+[2213] know, you have to come back to. You're
+[2215] working on your board deck presentations
+[2216] and you have an authoritative one
+[2217] dashboard maybe. But then all these BI
+[2220] tools evolved to have this huge list of
+[2221] things that get unmaintained and people
+[2224] don't look at.
+[2225] Because in reality what people want is
+[2226] generative UI. Mhm. People want to have
+[2229] a question and to produce the perfect
+[2232] visualization for that question just in
+[2234] time.
+[2235] And that's something that agents
+[2237] have already taken over from any other
+[2239] category of software.
+[2240] Meaning if you were to say, can you
+[2242] replicate, I don't know, name your
+[2244] favorite BI like Microsoft Power BI. Can
+[2247] you replicate it with vibe coding? I
+[2249] would say absolutely freaking no. If I
+[2251] have to create a platform that supports
+[2254] 10 million enterprise-grade customers
+[2256] and whatever, it's very hard to compete
+[2259] one on one to the entire platform.
+[2262] But the way that they're going to get
+[2263] defeated
+[2265] is more sneaky. Is I don't I no longer
+[2267] go to that big bloated platform because
+[2271] I can just in time generate exactly what
+[2274] I needed.
+[2275] And so it's a different conception of
+[2276] software.
+[2278] It's not that it was replicating what
+[2279] existed. Is I'm shifting the way that I
+[2281] build altogether. Yeah, it's not that
+[2283] somebody's going to build a new company
+[2285] competing directly with that. It's that
+[2286] each of those customers will just make
+[2288] their own little thing.
+[2289] >> And that's already happening. Yeah. And
+[2290] that's And And again, the the rigor of
+[2293] that is even arguably higher. The
+[2296] quality of the visualizations, the
+[2297] component system that it fetches for
+[2299] rendering the data, like all of that
+[2300] looks better, is faster. They can change
+[2303] it if they want to. If they want some
+[2304] new features, they add it same day.
+[2306] >> Yes. I had an anecdote. So I presented
+[2308] yesterday So to give you an idea of how
+[2310] V 0 is expanding. So a lot of it is PLG
+[2312] just like Vercel. They you start using V
+[2314] 0, etc.
+[2316] But this CTO at a company basically
+[2319] started vibe coding in his own personal
+[2321] account
+[2323] when he was talking to a customer. This
+[2324] is CTO, not a PM, etc. A person that
+[2327] would have never written a UI, a front
+[2329] front-end code in their life.
+[2331] And so what happened is the their
+[2333] customer was saying, you know, if you
+[2335] don't give me this feature, we're
+[2336] basically going to churn over time.
+[2338] Classic conversation that you get into
+[2339] with your customers. What he did is
+[2341] during the conversation, he vibe coded,
+[2343] okay, let me understand exactly what you
+[2345] want. So he vibe coded a version of that
+[2348] feature. The guy in that same
+[2350] conversation, 30-minute conversation,
+[2351] said, that's exactly what I want.
+[2353] So this is the other emergent use case
+[2355] is you basically built an end-to-end
+[2358] version of what the customer wanted,
+[2359] plugged into your data source. And now
+[2362] it can be, if necessary, it can be
+[2364] merged into the main line platform. So
+[2366] what the what the guy told me, and this
+[2368] is what he had me present V 0 to the
+[2370] rest of their entire field
+[2371] field city organization is I want
+[2373] everyone to build this way.
+[2376] I want our data to be exposed into this
+[2378] vibe coding platform so we're not left
+[2380] behind. And the announcement was this
+[2383] feature is going live in Q4. And now
+[2385] this is important, right? He did vibe
+[2387] code it in 30 minutes, but to be merged
+[2389] into the main line monster is not so
+[2392] easy. You don't just vibe code, you
+[2394] know, the the production system and
+[2396] whatever. And this is why I was arguing
+[2398] that
+[2399] to merge things into monsters, monster
+[2401] code bases, things with like millions of
+[2403] customers, etc.,
+[2405] you need a slightly different tools,
+[2407] slightly different techniques.
+[2409] And I think that's why the world will
+[2411] continue to partition further into like
+[2413] this highly specialized tools for each
+[2415] kind of problem. Yep. Agents, basically.
+[2418] What do you think a a kid who wants to
+[2421] create software in the future should be
+[2423] doing right now? Because in the past it
+[2425] was more clear like learn to program
+[2427] and, you know, now let's say you're 16
+[2430] or 13 or 10 and, you know, you're
+[2432] starting to want to think about these
+[2434] kinds of products. What would you spend
+[2436] your time on now?
+[2437] >> advice I've ever gotten on how to
+[2440] improve my software engineering was have
+[2443] a product idea in mind. If I tell you go
+[2445] and master programming
+[2448] like it's topology in math,
+[2451] it's weird. Like it's
+[2453] Where do you focus your efforts on? What
+[2455] language do you learn? It's like
+[2457] everything is a problem and nothing is a
+[2459] problem.
+[2460] And so what I would say is
+[2463] if you start with something like
+[2464] Vizzero,
+[2465] you're starting to build that muscle of
+[2468] what do I really want? What do I want to
+[2470] build? What am I visualizing in my head?
+[2473] And I do know that this is kind of a
+[2474] somewhat controversial topic because
+[2477] there's a whole line of thinking in
+[2478] psychology that some people can
+[2479] visualize and some people can Have you
+[2480] heard about that? Like the visualization
+[2482] power of people is like different kinds
+[2484] of eyes in Naruto, like the amount that
+[2487] you can picture in your head varies by
+[2489] person. Yep. But I do think that we have
+[2491] to exercise that muscle.
+[2494] It very well might be that what we call
+[2495] taste
+[2497] is actually that ability to refine
+[2500] that idea that you loosely have in your
+[2502] head
+[2503] and refine it and refine it and refine
+[2505] it and visualize that next state.
+[2507] It's like instead of next token
+[2508] prediction is like next refinement
+[2511] prediction that you're doing in your
+[2512] head of like this is what needs to look
+[2514] like
+[2515] >> That's interesting. for people to absorb
+[2516] it positively.
+[2517] >> That was something I was going to ask
+[2518] you about was because um, you know,
+[2520] taste became a buzzword and, you know, I
+[2521] think it can it can have meaning, but it
+[2523] can also be kind of meaningless, but it
+[2525] feels like there's something there. And
+[2526] that that's actually a pretty good It's
+[2528] like the best attempt at a working
+[2529] definition I've heard that it's your
+[2531] ability to sort of like visualize a
+[2533] future and you can actually see how that
+[2535] would explain some people's ability to
+[2537] see a trend early or to see a talented
+[2539] person when they meet one or those kinds
+[2541] of things. I also think it's people
+[2543] focusing on that end of the rainbow that
+[2545] we talked about. Like how much are you
+[2548] are you getting distracted by the side
+[2550] quest that went into building the thing
+[2552] versus okay, what is it going to do when
+[2553] it lands? What does it look like? And I
+[2556] think this is why we created Vercel is
+[2558] that we thought
+[2559] you know, the world has to change its
+[2562] focus a little bit.
+[2563] The cloud has been all about like that
+[2565] low level like it's like material
+[2567] science.
+[2568] And yeah, materials are extremely
+[2570] important and I think Vercel can do a
+[2572] good job at curating some of those for
+[2573] you so that you can actually put your
+[2575] focus on the sky. Like what is that next
+[2578] thing that you're going to give the
+[2578] world? And this by the way applies to
+[2580] everything. It applies to like how you
+[2582] talk about your thing, the words on the
+[2583] screen, the way what you attach to your
+[2586] tweet when you get that thing out, how
+[2589] the what the blog post that announces
+[2591] your product looks like, and I do I I do
+[2594] want to build a world where people are
+[2595] are are are looking at that. And um, it
+[2598] was really interesting by the way. So a
+[2599] couple weekends ago
+[2601] uh, I had my You said 13-year-old. I
+[2603] said to my uh, 6-year-old, he walked
+[2605] into my office and he said, "What do you
+[2607] do? Like what are you doing?" I said cuz
+[2610] I I that very time I was vibe coding. I
+[2612] was like, "Well, I'm creating software.
+[2613] I'm creating something." And then we got
+[2614] into this conversation like could he
+[2616] create a game?
+[2617] And I said, "Well, what game idea do you
+[2619] have?"
+[2620] And he said, "A soccer game."
+[2622] And so we built a soccer game. I'm going
+[2623] to share it in a next cuz this is dope.
+[2625] But the hardest thing for in that
+[2627] process of back and forth with him was
+[2629] he had the idea of the soccer game. That
+[2631] was legitimately his own idea. It was
+[2633] really hard to get him to
+[2635] ask me what the next thing, what the
+[2637] refinement of his idea would be. And
+[2640] that didn't come naturally.
+[2642] So when in the end what we ended up
+[2644] building is a game where you dribble the
+[2645] ball and we count and we make it harder
+[2648] as it goes and it looks really pretty.
+[2651] The pretty part probably came from me
+[2652] inside my own personal being. My lesson
+[2654] there was that
+[2656] again, you have to build this muscle of
+[2658] understanding there's an audience out
+[2660] there.
+[2661] There's something that technology is
+[2662] capable of
+[2664] and there's an interest in his who's
+[2666] interested in like focusing on soccer.
+[2668] And how do you bring all those things
+[2669] together into prompts? Into asking the
+[2672] machine what you want to see in the
+[2674] world. I almost think this is the new
+[2677] because we've quote unquote
+[2678] provocatively have solved code
+[2680] generation. Cuz keep in mind, you can go
+[2682] on Vizzero and you can also ask it to
+[2684] build this data visualization that
+[2685] prevented the churn of a customer for a
+[2687] for a security company.
+[2689] And so because the platforms can now do
+[2691] all of these things, it boils down to
+[2693] ideas.
+[2695] It boils down to capital allocation.
+[2698] Tokens have a cost. So if anything is
+[2700] possible,
+[2701] you know, may the best idea win
+[2703] and it'll get enough tokens behind it
+[2706] that it can
+[2707] that we can keep developing it, right?
+[2709] And so I think that's going to be the
+[2710] skill of the future. I hope my kids
+[2712] learn it. I hope my kids are able to
+[2713] like do that idea translation really
+[2715] quickly and and that mapping. Does
+[2717] someone still need to understand the
+[2719] lower levels of the code underneath it
+[2721] all? You know, we didn't get into that
+[2722] at all and and we could build a pretty
+[2724] banger game and we could keep going
+[2725] going going and I don't think we would
+[2727] ever look again as the as the world
+[2729] becomes more agentic. But like 50 years
+[2732] from now, you know, when all the people
+[2733] who know the deeper levels of code today
+[2736] are no longer in the game, could we have
+[2738] a world where you have the billion
+[2739] people who only know how to vibe code,
+[2741] but nobody knows the stuff underneath?
+[2742] Well, I mean, we're kind of in that
+[2744] world already, right? Like a lot of
+[2746] people have it no clue how their garbage
+[2749] collector of their programming language
+[2752] works. I mean, a lot of people are
+[2754] pouring effort into interpretability of
+[2755] LLMs because we do not know how they
+[2757] arrived to the answers they do. Right.
+[2759] We will need frameworks. We will need
+[2762] guardrails. We would need ways to
+[2765] interpret and define the semantics. I do
+[2767] think it will always boils down not to
+[2769] how the instructions in the processor
+[2772] get written out and executed. It boils
+[2776] down to that relationship between
+[2779] investment,
+[2781] you know, how much are you willing to
+[2783] pay for a certain level of performance,
+[2785] for example,
+[2786] and
+[2788] outcomes. Like what do you want out of
+[2790] this system?
+[2791] >> It's just a crazy thought that there's
+[2792] just layers of abstraction and in the
+[2794] future people just won't need to know
+[2797] the like ancient layers, but they'll
+[2799] they'll be driving it all, but nobody
+[2801] needs to know it. The world may just be
+[2802] driven by economics, you know, energy
+[2805] allocation. You know, this There might
+[2807] be a world in which we've perfectly
+[2808] solved this transmutation of energy
+[2812] source to intelligence. Because if this
+[2814] is scaling loss of test time compute,
+[2816] etc., continue, then we pour more effort
+[2819] into the task and we get the outcome
+[2821] that we wanted. Now the question will be
+[2822] not everyone will have the same token
+[2825] budget as everybody else. So it really
+[2827] boils down to like who crafts the most
+[2830] compelling vision of the future.
+[2832] And the storytelling By the way, this is
+[2834] a human This is where Herm I have just
+[2836] nailed it.
+[2837] The storytelling is
+[2839] how you persuade the world that your
+[2842] idea is the one that is worth allocating
+[2843] tokens into. Maybe there's a world where
+[2845] like your seed round just gets dumped
+[2847] 100% into tokens.
+[2848] >> Uh-huh. And all you're doing is like
+[2849] going around the world is like, "I have
+[2851] this vision of the future. Here's a
+[2852] quick vibe code that I did in Vizzero,
+[2854] but if you really want to to see it at
+[2855] like planet scale, we have to pour a lot
+[2857] more tokens into this thing." And that's
+[2859] how you get to like the one person
+[2860] billion company and so on. At the
+[2862] beginning of the conversation you used a
+[2863] term I really liked like chasing a
+[2865] dragon and I think there's like a
+[2868] there's an interesting debate among
+[2870] founders where some founders believe
+[2871] that you should just have a super clear
+[2874] vision and will it into existence like
+[2876] creating a movie. There are some
+[2877] founders who are much more iterative and
+[2880] talk to customers and see what it is and
+[2882] there's pivots and you get there that
+[2883] way. What I observe about you is that
+[2885] you talk a ton to your users. You seem
+[2887] extremely flexible of mind, but then you
+[2889] also use this term chasing a dragon.
+[2891] >> And so it seems like you've got both of
+[2892] those sometimes.
+[2893] >> the hardest things to do. Is that how
+[2894] you think about even now as you think
+[2897] about a new product or evolving? Is it
+[2899] this combination of chase the dragon and
+[2901] then listen to get your way there?
+[2903] >> 100%. This is the magic of how you build
+[2905] a PLG and enterprise business. The
+[2907] enterprise way of building product has
+[2909] to be extremely that conversation that I
+[2910] just talked about is like what do you
+[2912] need? What is your concrete pain points
+[2915] with this technology? And like let's
+[2917] build it together and let's evolve it.
+[2919] But it has to be mixed with the vision
+[2922] of the future.
+[2923] Cuz otherwise you're not going to see
+[2924] the next platform shift. You're not
+[2926] going to see the next what the next
+[2927] generation of coders and builders are
+[2929] excited about. So you have to have that
+[2932] first principle thinking that I
+[2934] sometimes call it internally work
+[2935] backwards from science fiction with a
+[2937] healthy dose of like, well, we're also
+[2940] supporting some of the largest dot coms
+[2941] on the planet and we have to build
+[2943] things that are very concrete to their
+[2944] problems today in this in the current
+[2946] world today, right? That is the magic of
+[2949] That's something that can bring success
+[2950] to a lot of people. Now, I'll make the
+[2951] counter case of that. Agents can do
+[2954] their own research.
+[2956] So as Vizzero becomes more agentic, one
+[2958] of the things that it can do is search
+[2959] the web.
+[2961] So it used to be that humans would say,
+[2963] "Okay, my boss is asking me to create
+[2966] this really cool animation that does
+[2969] this and that." And so you start
+[2970] Sometimes you know a lot of things
+[2972] and that's why we hire experts, but But
+[2975] also go on go off and do research. And
+[2977] so now think about how agents are just
+[2981] LLM calls in a loop. So an agent is just
+[2983] something that's calling ChatGPT
+[2984] repeatedly in quote unquote.
+[2987] Now think about deep research.
+[2989] Definitely to me one of the killer apps
+[2991] of AI in recent times.
+[2993] You can the the AI can go off and search
+[2996] 300 different websites and read them for
+[2998] you and then digest them.
+[3000] That'll be wielded by the programming
+[3002] agent.
+[3003] And so in that world, the programming
+[3006] agent can do the user research.
+[3008] And so if you said, "Okay, I want to
+[3010] build a soccer game." Okay, go off and
+[3013] do research about what are users saying
+[3016] in your community forums.
+[3018] What are people saying on X? I can have
+[3021] the PM agent essentially as part of this
+[3024] multi-agent architecture. And by the
+[3026] way, a lot of what I do is talk to
+[3028] users. So I talk to users and say,
+[3030] "Okay, like search for my keyword." And
+[3032] you know, okay, there's this 10
+[3033] complaints. Let's stack rank them.
+[3035] Let's also research what like Salesforce
+[3037] is saying about like pipeline and
+[3039] opportunities, etc. So I do think the
+[3041] world will become more and more agentic,
+[3043] but I don't believe there's going to be
+[3044] one agent to rule them all. This is the
+[3046] promise of what I call the next
+[3048] internet.
+[3049] The transition from HTTP to MCP.
+[3052] If MCP
+[3053] allows us to deploy agents that are
+[3056] highly specialized, then the world
+[3058] becomes a collaboration between agents
+[3061] as opposed to one agent to rule them
+[3062] all.
+[3063] And that is true to my taste for what
+[3066] the web and the internet should be like.
+[3069] I always loved the web because I
+[3070] rejected the idea there's going to be a
+[3072] platform keeper that decides what gets
+[3074] on their platform and what gets off
+[3076] their platform and controls everything.
+[3078] This is the example of like people
+[3080] literally were just regurgitating what
+[3081] happened when Elon bought X.
+[3084] And then Apple wanted to take X off the
+[3087] App Store.
+[3088] And so we cannot allow that. We cannot
+[3090] allow a world where like people can
+[3091] arbitrarily take you off the internet,
+[3093] right?
+[3094] And so I want a world where MCP wins
+[3097] because that would mean that there's all
+[3099] kinds of agent choices.
+[3100] There's all the companies can rethink
+[3102] themselves as
+[3104] instead of just having a front end of
+[3107] pixels, I have a front end of tools and
+[3110] a front end to my data.
+[3112] And MCP is emerging as the new front end
+[3116] instead of for humans, for agents.
+[3118] Particularly when I was, you know,
+[3119] running Lattice, but just in general
+[3121] now, one of the things I most look up to
+[3123] in companies is extreme coherence when
+[3127] the product and the customers and the
+[3129] culture and the employees all sort of
+[3131] make sense together. Yeah, like Apple is
+[3134] always like an example to me where I'm
+[3135] just like it's so different, you know,
+[3137] it's secretive, it's got all these
+[3138] different things about it, but it all
+[3140] makes sense together. It seems to me
+[3142] like you with an open source background,
+[3144] with the sort of way you're thinking
+[3146] about the future being so developer
+[3147] focused, it seems like there would be a
+[3151] culture and a type of person and, you
+[3154] know, the way you run the company that
+[3155] must match that? Yeah. Does that just
+[3157] emerge naturally or is there a way like
+[3160] how do you think about making that all?
+[3161] >> It emerges naturally, but you have to
+[3163] pay attention because sometimes you just
+[3165] take it for granted. And encourage
+[3167] everyone who runs a business to think
+[3168] about this. Like I call it reverse
+[3169] engineering your success. Do you know
+[3171] that you can be successful and not fully
+[3172] understand why? I think people don't
+[3174] talk about this enough.
+[3175] >> All the time. Like
+[3176] >> I think many of the most successful
+[3177] people are like that. And like, "Oh,
+[3179] it's because I did A, B, and C." You
+[3181] might have succeeded in spite of A, B,
+[3182] and C in some cases.
+[3183] >> Yeah, and so reverse engineering your
+[3185] success is actually something I devote a
+[3187] lot. It's like there was a there was a
+[3188] quote about like it's harder to predict
+[3190] the past than predict in the future.
+[3192] Predicting the past means you actually
+[3193] understand Actually came from one of the
+[3196] creators of quantum physics. It's really
+[3198] good. Um reversing the past means that
+[3200] you understood the sequence of tokens or
+[3203] like reasoning traces that led you to
+[3204] where you are and you leave out all the
+[3206] noise. And I think for us that actually
+[3209] the culture that we built of openness
+[3211] and transparency, I tweeted the other
+[3212] day that I love working behind the
+[3215] scenes to help our engineers present
+[3218] their own work.
+[3220] Meaning I help them hey like I learned
+[3222] these things from X or like if you say
+[3223] this, maybe you're just being too
+[3225] verbose and like uh it would look better
+[3228] if you give this example and whatever.
+[3230] So that I coach them in how I think
+[3232] about presenting my work. But I want
+[3233] them to own that storytelling.
+[3236] I want them to
+[3237] learn the oh, this is how I talk to
+[3239] customers. This is how I engage with the
+[3241] community. This is how I receive
+[3242] feedback. As opposed to the traditional
+[3244] thing which is like you're sheltered and
+[3246] shielded by layers and layers and layers
+[3248] of obfuscation. And you don't get as an
+[3251] engineer the direct signal.
+[3253] But now to your question, is I mean this
+[3254] is amazing, at least to me. Was it
+[3256] something natural? It was emergent. But
+[3259] now it got it had it had to get reified
+[3262] into our culture. We need to say that's
+[3264] who we are and that's what we believe in
+[3267] and that's behind our success. But it
+[3269] didn't that understanding of oh, there's
+[3271] the all these little things that made
+[3272] you successful
+[3274] because some of them are are second
+[3276] order effects. Like you said, what I
+[3277] always loved was open source.
+[3280] Well, it turns out that if you love open
+[3281] source
+[3282] it leads to this open contribution
+[3285] culture.
+[3286] It leads to a higher level of
+[3287] transparency. I got feedback from one of
+[3289] our colleagues that
+[3291] comparing there's this idea of compare
+[3294] Slack workspaces. How was the Slack that
+[3297] you joined different from the Slack of
+[3299] the company you just left? It's a very
+[3301] important exercise to do.
+[3302] >> Mhm. And he was saying, "Well, the the
+[3304] Slack at Vercel is purely information.
+[3306] There's no direct message thread group
+[3309] what It's just so much information."
+[3311] People learned how to digest what they
+[3315] were working on and
+[3316] in a way it almost feels like an
+[3318] internal Twitter.
+[3319] And of course companies need a separate
+[3320] healthy separation between internal and
+[3322] external. And at Vercel because we're
+[3324] responsible for so many critical
+[3326] workloads, privacy and compliance are
+[3329] extremely top of mind for us. But there
+[3331] is there is a vibe of like it's like an
+[3333] internal Twitter in the sense of like
+[3335] insight, insight, summary of something
+[3337] that I just learned by working with a
+[3339] customer, screenshot. And that is an
+[3341] emergent culture that then you have to
+[3343] say, "That's working for us. That's who
+[3345] we are. Let's keep doing it so that when
+[3347] people join, it's not by accident.
+[3350] That's how we work." One of the things
+[3351] that strikes me about you is not only
+[3353] are you running a big company, you're
+[3355] also deep in the technology, which is
+[3357] amazing to be able to both run the org
+[3358] and know all the technology.
+[3360] I thought I have a lot of kids and they
+[3361] take a lot of time. You really you
+[3363] really have a lot of kids. I know you're
+[3364] a runner. I'm not like trying to ask
+[3366] like what's your secret, but like how do
+[3367] you make it all work? Like how do you
+[3370] Is there anything that you've picked up
+[3372] over the years through parenthood,
+[3374] through building a company as time
+[3376] pressure has gotten heavy on you? Is
+[3378] there anything that you've
+[3379] picked up or adapted that you think is
+[3381] broadly useful? Yeah, I think there was
+[3383] actually a tweet by your brother Sam
+[3385] that I always loved which was, you know,
+[3387] it doesn't matter what ladder of success
+[3389] you've achieved, working out is it's
+[3391] still hard for everybody day in and day
+[3393] out. I do not want to go to the gym,
+[3395] confronting that thing that I do not
+[3397] want to do every single day. This is why
+[3400] I don't care about what type of
+[3402] exercise, what's hot, CrossFit. I think
+[3405] that's something that's been different
+[3406] about me is like I've never followed any
+[3408] fitness trend. I'm so anti-fitness
+[3410] trend.
+[3411] I have done things that were falling off
+[3414] the popularity cliff. I boxed for many
+[3416] years.
+[3417] I would go every every day to the gym
+[3419] from 6:00 a.m. or 7:30 a.m. to a boxing
+[3421] gym in the Dogpatch that like the the
+[3424] owner would tell me like, "I don't know
+[3425] why like classic Western boxing is not
+[3428] as exciting anymore to people." Because
+[3430] I think it's because MMA has been
+[3432] growing and whatever. I love classical
+[3433] boxing.
+[3434] And same with I love calisthenics. And
+[3437] so I I do things that are like off
+[3439] pattern, but it doesn't matter what you
+[3441] do because what you're doing is that
+[3443] confrontation of the thing that you
+[3444] didn't want to do that hardens your
+[3446] mind, stabilizes your mental health,
+[3448] teaches discipline to my kids. My kids
+[3450] love walking to my office. I'm in the
+[3452] Peloton and they're like, "Holy
+[3454] why are you doing this?" They ask they
+[3455] ask me why a lot. Like why are you doing
+[3457] this? And I explain it and I they're not
+[3459] going to get it for a long time, but
+[3460] they need to learn and I think everybody
+[3462] needs to learn that like there's
+[3463] something about our own
+[3464] individual personal development that has
+[3466] to do with that confrontation of things
+[3468] that are hard. And that's why I was
+[3469] giving the caveat to like make sure that
+[3471] whatever relationship you have with that
+[3472] coding agent is one that challenges you
+[3475] and you're learning and you're better
+[3476] for it at the end, right? Is it is it's
+[3479] expanding? Is it it gives you more
+[3480] capabilities? It's you're taking
+[3482] something away from it. You're just
+[3483] going to become the Wall-E guy. So my
+[3486] recommendation is like avoid the Wall-E
+[3488] future of like you're just like a blob
+[3490] floating in the sky and work hard. And
+[3492] so there's no more secret to that. The
+[3495] last question I wanted to ask you
+[3497] back to the taste question and sort of,
+[3499] you know, you described it as this
+[3501] ability to sort of visualize something
+[3504] that hasn't come true yet and how it
+[3506] might iterate and sort of see the path
+[3507] there.
+[3508] Is that something that can be learned or
+[3511] improved upon and if so, how do you do
+[3513] it? You know, it it really links to this
+[3515] idea. I also do a lot of fitness for the
+[3517] meditation benefits. Like I remember
+[3520] someone I don't know who told me this,
+[3521] but they said, "Look, there's passive
+[3522] meditation, there's active meditation.
+[3523] Passive is you're at the bottom of the
+[3525] tree and you're like
+[3527] you say your dharmas and whatever and
+[3528] you go into the nothingness." I see my,
+[3531] you know, really hard work out this
+[3532] morning for 30 minutes of high intensity
+[3534] interval training as a meditation of
+[3536] sorts.
+[3537] Meditation confers a particular
+[3538] attribute which is presence.
+[3540] Presence gives you clarity of mind and
+[3542] allows you to capture nuances,
+[3544] reactions, little things about the
+[3546] world. You're just more tuned in.
+[3548] And I do think that one way that you can
+[3550] improve your taste and your product
+[3552] building skills is being more attuned to
+[3555] the actual reaction from people. Because
+[3557] you might say like, "Here's my thing."
+[3558] And people say, "Awesome."
+[3560] It's like is that an awesome of like
+[3562] true joy? Can you be present in a way
+[3565] that reads the world
+[3567] more precisely? Very hard to have high
+[3570] taste if your brain's off thinking about
+[3572] the next email or the next meeting you
+[3573] got to go to or whatever. All of those
+[3575] things, focus, presence, self-honesty.
+[3578] And I think this also comes from that
+[3580] place of confidence and like that made
+[3582] it almost like meditative state of like
+[3585] can you actually confront the negative
+[3587] reaction or are you running away from
+[3589] it?
+[3590] Because the best thing you could do for
+[3591] your product is to read all of the
+[3593] negative feedback about it. Can you do
+[3594] it? It's like it's almost like running
+[3596] on a treadmill and be like, "Oh, shit."
+[3597] Like my boxing trainer would do this
+[3600] cruel thing. So, this is in the dog
+[3602] patch for those who don't know, not too
+[3603] far away,
+[3604] maybe like a couple miles away from the
+[3606] or a mile away from um the Giants
+[3608] stadium, the baseball stadium. And we
+[3611] would work out for an hour and 29
+[3613] minutes. And then on the last minute he
+[3614] would say, "Lap to the Giants stadium
+[3617] and back." And I was like, "You just
+[3619] pushed us to a world of pain that is
+[3621] unbelievable and then you threw another
+[3624] crazy thing on top."
+[3626] And so that was the process of like
+[3628] there's just always more than you can
+[3630] do.
+[3631] And I I do think that there's a level of
+[3633] tolerance of pain that we can always
+[3635] work on and and get to greater greater
+[3637] heights. And you can link this to
+[3639] product building that you have to face
+[3641] and seek that negative feedback from the
+[3643] world. And by the way, a lot of people
+[3645] want to help you. This is actually the
+[3646] nice thing about it. Like so many people
+[3648] want to help you and and want you to
+[3650] build the right thing. And and you call
+[3651] this out when when we talk about
+[3652] enterprises. People really want they're
+[3654] invested in your success.
+[3655] >> Yeah. Just don't get in in the way of
+[3657] your own success.
+[3658] >> Yeah. It's a great place to end it.
+[3659] Guillermo, thanks for your time today.
+[3660] This was great. Thank you.

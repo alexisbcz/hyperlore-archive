@@ -1,0 +1,405 @@
+[0] [Music]
+[8] stable
+[9] diffusion Del mid Journey those are all
+[14] image generation models you've heard
+[17] of but have you ever wondered how those
+[21] models are
+[22] trained what it takes to generate
+[25] beautiful
+[27] images it is in fact a fascinating
+[32] topic during the first few hours of
+[34] training the model only knows how to
+[38] generate splashes of
+[41] color add 1,000 hours and you can
+[44] already see
+[47] shapes add a bit more training and you
+[50] can already discern the shape of
+[54] objects 40,000 hours later you get this
+[59] beautiful image of a bottle of wine on a
+[62] marble table and you even get the
+[65] reflection for
+[67] free you might be wondering how I know
+[71] that well this is because at photo room
+[75] we have trained an image generation
+[77] model from scratch with a custom
+[81] architecture and a custom data
+[84] set photo room is a French company with
+[88] employees all around Europe
+[90] and users all around the
+[92] world we help Sellers and e-commerce
+[96] shop generate images that
+[100] sell well you might be asking why did we
+[104] need to train a model from scratch why
+[108] didn't we use an image generation model
+[111] of the
+[112] Shelf the first reason was to prevent us
+[116] from any form of nudity and violence in
+[119] the model
+[120] this is a big issue for our users and we
+[123] make sure the model doesn't see any
+[125] images like this so it doesn't
+[128] learn ambition of course we aim to be
+[132] the world leader in image generation for
+[134] e-commerce and we didn't think we could
+[137] do that without a custom
+[141] model and the main and more most
+[144] important criteria was to be able to
+[147] control the speed quality tradeoff
+[150] this was only possible with a custom
+[154] architecture all
+[156] right this might seem a little bit
+[159] abstract so I'm going to show you this
+[162] model in
+[166] action it is time for a
+[170] demo all right so I'm going to take this
+[172] image of a chair and I'm going to drop
+[175] it in our app grab it here put it right
+[179] there and there you go we immediately
+[182] remove the
+[183] background then I'm going to select a
+[185] feature called AI background and
+[188] instantly is going to put my chair in an
+[191] Studio realistic
+[194] environment I heard that Halloween is
+[197] around the corner so how about we put
+[199] the chair in a
+[201] spooky background just wait a few
+[204] seconds and there you go you get this
+[206] beautiful image generated as if it was
+[210] shot in a photo
+[212] studio and if you're not happy with that
+[214] results if this is a little bit too much
+[216] for you well you can just erase the
+[218] background put one of your brand colors
+[221] like this one and ask a model to
+[224] generate a realistic 3D Shadow let me
+[228] show you there you go in just one click
+[231] we get this Shadow as if it was shot in
+[234] a photo studio
+[240] so how do we train models like this this
+[243] is what I'm going to teach you today the
+[247] first part of this talk is about
+[248] training what it takes to train a model
+[252] and the second part is about how to
+[253] deploy it to millions of users around
+[256] the
+[257] world but first how does the diffusion
+[260] model Works actually I'm wondering does
+[263] anyone of you know how diffusion works
+[265] please raise your
+[266] hand okay quite a few people interesting
+[270] um my my next question is um do you
+[275] know uh have you ever trained sorry a
+[277] diffusion model anyone in the room okay
+[281] bitless people well in one minute here
+[284] my one minute primary on how those
+[286] models are working it all starts from
+[290] noise random pixels that are generated
+[294] purely with a random
+[296] generator and then the diffusion process
+[299] is
+[300] iterative it means it takes several step
+[303] to go from this noise pattern to a
+[306] beautiful image so you tell the model
+[310] take the noise pattern and move a little
+[312] bit in the direction of the image you
+[315] pass it text in order to orient it in
+[317] the right direction this was the first
+[320] step and then you iterate you move on to
+[323] the next step a little bit less noisy
+[326] and then on to the last step your beauti
+[331] image this process takes from 20 to 50
+[336] steps for most
+[339] models but this is how the image is
+[341] generated but how do we train a model
+[344] well you go the other way around you
+[347] start from an image you noise it just a
+[350] tiny bit and then you tell the model
+[352] here's the original image here's the
+[354] same one with a little bit of noise now
+[357] you can learn how to go back to the
+[358] image
+[360] and you do this in an iterative manner
+[363] until the model the model learns how to
+[366] generate the image so there you go you
+[370] now know how diffusion model generate
+[374] images well in practice it's a little
+[377] bit more complicated than that and
+[379] that's what we're going to cover in this
+[382] first
+[383] part the very
+[386] interesting advantage of this technique
+[388] is that you only need images and text so
+[392] if you manage to collect millions of
+[393] images and annotate them with text you
+[396] can train your own
+[399] model in this first part we are going to
+[402] cover the three key ingredients to
+[405] training a diffusion
+[407] model the first one is compute the chips
+[411] and the computing power you are going to
+[413] need to train it the second ingredient
+[417] is algorithms what is the architecture
+[420] of your model how big is
+[422] it and the third ingredient and maybe
+[425] the most important is
+[428] data all right let's start with compute
+[432] does anyone has an idea of what is in
+[435] this huge
+[436] box taking
+[441] guesses Nvidia gpus anything
+[445] else all right I heard a100 this is in
+[448] fact an h100 100 so it's an dgx h100 it
+[453] contains eight of those Mighty
+[457] chips those are power hungry the h100
+[461] consumes 700 watt of power per
+[465] chip they're quite expensive too from 30
+[469] to
+[470] $40,000 and they come in those machines
+[473] 8 by8 so eight chips per
+[477] machine to train a diffusion model we
+[481] have used quite a lot of those not eight
+[485] but
+[486] 256
+[489] h100 you can imagine this amount of
+[492] chips is quite po
+[496] hungry this is the PO usage of our
+[499] training cluster you can see that most
+[502] of the time it's at 100% this is from
+[505] the past week we've had a few issues
+[507] with training sometimes they crash
+[509] sometimes were changing the architecture
+[511] and this is why you see the curve going
+[513] down a
+[514] little but this is still a lot of power
+[518] when running at full power this is as
+[521] much as 600 French households if you
+[525] compare the energy usage during the full
+[529] year for this reason we have located our
+[533] data center in Europe near an
+[535] hydroelectrical plant so that the CO2
+[538] impact CO2 emission impact is
+[542] limited all right so we have covered
+[546] computes we're now going to move on to
+[549] algorithms how do you pick your
+[552] model well when it comes to picking your
+[555] model the first decision you have to
+[557] make is the
+[559] size if we look back at the previous
+[563] diffusion models the first one was
+[566] stable diffusion it was around 1 billion
+[571] parameters the second one that they
+[573] released was stable diffusion V3 bit
+[575] bigger at around 7 to 8 billion
+[579] parameters flux released recently was at
+[583] 12
+[585] billion at fot we optimized for Speed
+[589] that's why our first model was quite
+[591] small in order to generate almost
+[594] instantly our next iteration of the
+[597] model is 8 billion
+[600] and you will notice that many models are
+[603] around 7 to 8
+[605] billions this is because this size is
+[608] almost perfect for training on h100 gpus
+[612] you do less data exchange between gpus
+[615] and this is why models like Lama or
+[618] diffusion models are around this
+[621] size why wouldn't we pick the busiest
+[624] model possible well it's because there's
+[626] a trade-off the faster the model is is
+[630] the lower the quality of the image
+[631] generated the bigger it is the more
+[633] beautiful your images are but the longer
+[636] your users have to wait so it's really a
+[638] compromise between those
+[641] two all right so you've picked the size
+[644] of your model now you have to decide on
+[649] architecture well historically diffusion
+[652] models we're using the unet
+[655] architecture it's quite old by Machine
+[657] learning standards it's from
+[661] 2015 yet St diffusion was using this in
+[664] their first
+[665] iteration since then more modern
+[669] architecture have popped up in fact
+[672] you've probably all heard of them they
+[674] are called
+[675] Transformers who in this room has
+[677] trained
+[679] Transformers please raise your hand all
+[682] right quite a few people interesting
+[684] well Transformers are mostly applied to
+[687] large language models but they can also
+[690] be used for image and in fact that was
+[693] the point of this paper applying the
+[696] Transformers to image models and it's
+[699] been one year now that most diffusion
+[702] models are using the vision
+[705] Transformer and they get much better
+[707] results because the Transformer has a
+[710] full visibility on the whole image so
+[712] generate more consistent
+[715] images all right so you have the size of
+[717] your model you know how to pick the
+[718] architecture sure we now move on to the
+[721] most important ingredient
+[725] data there's a saying in machine
+[727] learning it goes garbage in
+[731] garbage okay you got it garbage in
+[733] garbage out exactly if you put bad data
+[737] as an input of your model you will get
+[740] bad data out this is why filtering your
+[746] content is extremely important
+[750] this is how we do it at phot
+[752] room the first step is to collect the
+[756] images but there's a lot of them in fact
+[759] if you were to download the data set
+[762] that was used to train stable diffusion
+[765] it's called lion you would end up with
+[768] 50 GB of data just for the URLs of the
+[772] images so no images yet just the URLs if
+[776] you want to download all the images you
+[778] would end up with
+[781] 250 terab of data quite a lot and that's
+[785] not easy to
+[787] manage so this is why we've put together
+[791] a system an architecture in order to
+[793] manage and filter all of this
+[796] data the first step is collecting we
+[800] partners with stock Image Photography
+[804] companies and we collect as much data as
+[807] possible the the next step is filtering
+[811] we remove any form of violence nudity as
+[815] well as images that are not
+[817] aesthetically
+[819] pleasing we then store the collected and
+[823] filtered images in a vector
+[826] database if you have ever worked with
+[829] CSV files where you didn't know what
+[831] columns were in if you ever lost data
+[835] when training a model if you ever
+[837] wondered why your data is all over the
+[839] place having it in one single location
+[843] is a God send it has been extremely
+[845] helpful in our Quest To Train a
+[848] model this Vector database allows us to
+[851] have all of our data in one single
+[853] location and also annotate data that is
+[856] not annotated yet so we ask the database
+[860] please give me all the images missing a
+[862] description a caption and then we
+[865] process it with GPU processors models
+[867] running on GPU
+[869] and we put it back in our database we
+[872] can compute statistics on the amount of
+[874] images the categories the tags this is
+[877] extremely
+[879] powerful and then when it comes to
+[881] training we need to export the data when
+[885] training a diffusion model they are
+[887] quite data hungry they can intake up to
+[892] 10,000 images per second this is why you
+[896] need to compress all of your data and
+[898] put it in one one single location it's a
+[901] little bit like a zip file if you will
+[904] and so we are exporting on data with a
+[907] custom software written in go that
+[910] allows us to bypass Python's performance
+[915] limitations the great news is that most
+[918] of this stack is open source or about to
+[920] be open source we have already open
+[923] source data go our data exporting
+[926] framework and we are about to open
+[928] source data room which is our Vector
+[930] database to manage images so they are
+[934] already on GitHub feel free to add a
+[937] star all right you now know the three
+[940] key ingredients to training a diffusion
+[944] model we can now move on to how to
+[946] deploy it to millions of
+[950] users the most important part is your
+[953] infrastructure serving those model
+[956] requires gpus to give you an example
+[960] this is the amount of requests that are
+[962] received by one of our
+[963] models the amount at the bottom on the
+[966] right is the amount of images received
+[970] every second from 300 to 400 and it
+[974] varies throughout the
+[976] day so we have to adapt so if we have a
+[979] user or many many users sending us
+[982] request we need to Al alterate the
+[985] amount of gpus that are available to
+[987] receive those requests
+[990] to give you an analogy it's a little bit
+[993] like cash desks in a
+[995] supermarket if you have not enough cash
+[998] desk open well your clients will wait in
+[1001] the Q if you have too many well the
+[1004] cashes will be idle and that's not good
+[1007] for your business well that's the same
+[1009] thing here except that the laws vary
+[1011] intensely throughout the day and so you
+[1015] might be wondering why don't you add GPU
+[1018] on the go when the demand is too high
+[1021] well this is because adding GPU can take
+[1024] time it's not instant so you cannot
+[1027] precisely follow the load and on top of
+[1030] that gpus are quite rare it's a scarce
+[1033] resource at the moment especially at
+[1035] large Cloud providers so you really have
+[1038] to strike u a trade-off between those
+[1041] two constraints the speed for your users
+[1044] and the amount that you spend on gpus
+[1049] and for us the speed is the most
+[1052] important factor this is why we are
+[1056] always always optimizing our models to
+[1058] be as fast as possible we are doing two
+[1062] things we are doing step
+[1066] distillation step distillation is a bit
+[1068] different from the classic distillation
+[1070] in machine learning you teach the model
+[1073] to generate images in less steps so it's
+[1077] not a smaller model it's just that it's
+[1078] fast faster at generating we are using a
+[1081] technique called LCM to do this
+[1084] distillation and the second important
+[1087] technique that we're using is called
+[1090] compilation compilation allows us to run
+[1093] the model sometimes as fast as 2x faster
+[1097] how does it work well we are fusing the
+[1101] operations of the mod using a framework
+[1104] called tensor RT to give you an example
+[1107] if you had to run oparation like a * C
+[1110] plus b * C you would fuse it into a plus
+[1114] b * C saving one multiplication and
+[1118] therefore making your model faster this
+[1121] framework is essential to making our
+[1124] models
+[1125] fast all right so you now know how to
+[1128] train a mod you now know how to deploy
+[1131] it you are ready to ship your first
+[1133] diffusion
+[1135] model what is next for photo room well
+[1139] we want to train an even larger faster
+[1141] and more realistic model for our users
+[1145] while maintaining the
+[1147] speed thankfully we have received the
+[1149] help of FR 2030 for this project and
+[1154] we're incredibly excited on what is
+[1156] coming next what is next for you well
+[1160] you can go on GitHub and start our
+[1162] repositories if you're interested in
+[1164] data sets at a large
+[1167] scale and as a conclusion I would like
+[1170] to thank the machine learning team at
+[1172] fot room this is their work nothing
+[1176] about this would have been possible
+[1177] without them so it's really a team
+[1180] effort thank you for listening and if
+[1182] you have any questions don't say to come
+[1184] talk to me after the talk thank
+[1187] [Applause]
+[1192] you
+[1197] hey hey he

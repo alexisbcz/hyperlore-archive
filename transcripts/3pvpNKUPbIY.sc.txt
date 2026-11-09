@@ -1,0 +1,4894 @@
+[0] the following is a conversation with
+[1] kevin systrom co-founder and long-time
+[4] ceo of instagram including for six years
+[7] after facebook's acquisition of
+[9] instagram
+[10] this is the lex friedman podcast to
+[13] support it please check out our sponsors
+[15] in the description
+[16] and now here's my conversation with
+[19] kevin
+[20] systrom
+[21] at the risk of uh asking the rolling
+[23] stones to play satisfaction let me ask
+[26] you about the origin story of instagram
+[28] sure
+[29] so maybe some context you
+[31] like we were talking about offline grew
+[32] up in massachusetts
+[34] learned computer programming there liked
+[36] to play doom two
+[38] uh worked at a vinyl record store then
+[40] you went to stanford
+[42] turned down mr uh
+[44] mark zuckerberg and facebook
+[47] went to florence to study photography
+[48] those are just some random beautiful
+[51] impossibly brief glimpses into a life so
+[54] let me ask again can you take me through
+[56] the origin story of instagram giving
+[58] that context you basically set it up um
+[61] all right so uh we have a fair amount of
+[64] time so i'll go into some detail but
+[66] basically what i'll say is
+[67] um
+[69] instagram started out of a company
+[71] actually called bourbon
+[73] and it was spelled b-u-r-b-n
+[76] and uh
+[77] a couple things were happening at the
+[78] time so if we zoom back to 2010 not a
+[81] lot of people remember what was
+[82] happening in the dot-com world then uh
+[86] but
+[87] check-in apps were all the rage
+[89] so what's this checking out uh gowalla
+[91] four square hot potato
+[94] so i'm at a place i'm gonna tell the
+[96] world that i'm at this place that's
+[97] right what's what's the idea behind this
+[99] kind of app by the way you know what i'm
+[101] gonna answer that but through
+[104] what instagram became and why i believe
+[105] instagram replaced them
+[107] so the whole idea was to share with the
+[109] world what you were doing specifically
+[110] with your friends right
+[112] um
+[113] but they were all the rage and
+[114] foursquare was getting all the press and
+[116] i remember sitting around saying hey i
+[117] want to build something but i don't know
+[119] what i want to build what if i built a
+[121] better
+[122] version of foursquare
+[124] and i asked myself
+[126] why don't i like foursquare or how could
+[128] it be improved
+[129] um
+[130] and basically i sat down and i said i
+[133] think that if you have a few extra
+[135] features it might be enough one of which
+[137] happened to be posting a photo of where
+[139] you were
+[140] there were some others it turns out that
+[142] wasn't enough my co-founder joined we
+[144] were going to attack uh you know
+[146] foursquare and the likes and and try to
+[148] build something interesting
+[149] um and no one used it no one cared
+[151] because it wasn't enough it wasn't it
+[153] wasn't different enough right
+[155] so one day we were sitting down and we
+[157] asked ourselves okay let's come to jesus
+[159] moment
+[160] are we going to do this startup
+[162] and if we're going to we can't do what
+[165] we're currently doing we have to switch
+[166] it up so what do people love the most so
+[168] we sat down and we wrote out
+[170] three things that we thought people
+[172] uniquely loved about our product that
+[175] weren't in other products
+[177] photos happened to be the top one so
+[179] sharing a photo of what you were doing
+[181] where you were at the moment was not
+[183] something
+[184] products let you do really facebook was
+[187] like post an album of your vacation from
+[189] two weeks ago right twitter allowed you
+[192] to post a photo but their feed was
+[194] primarily text and they didn't show the
+[196] photo in line or at least i don't think
+[198] they did at the time
+[199] so
+[200] even though it seems totally
+[202] stupid and obvious to us now at the
+[205] moment then
+[207] posting a photo of what you were doing
+[208] at the moment was like not a thing
+[212] so
+[212] we decided to go after that because we
+[214] noticed that people who used our service
+[216] the one thing they happened to like the
+[217] most was posting a photo
+[220] so that was the beginning of instagram
+[221] and yes like we went through and we
+[223] added filters and there's a bunch of
+[225] stories around that but the origin of
+[227] this was that we were trying to be a
+[228] checking app realized that no one wanted
+[230] another checking app
+[232] it became a photo sharing app but one
+[234] that was much more about what you're
+[235] doing and where you are
+[237] and that's why when i say i think we've
+[238] replaced checkin apps
+[240] it became a check-in via a photo rather
+[243] than
+[244] saying your location and then optionally
+[247] adding a photo when you were thinking
+[249] about what people like
+[251] from where did you get a sense that this
+[253] is what people like you you said we sat
+[255] down we wrote some stuff down on paper
+[258] where is that intuition that seems
+[261] fundamental to the success
+[263] of
+[264] an app like instagram what is that idea
+[267] where's that list of three things come
+[269] from exactly
+[271] only after having studied machine
+[272] learning now for a couple of years
+[275] i like i have a you have understood
+[277] yourself
+[279] i've started to make connections like we
+[282] can go into this later but
+[284] obviously the the um
+[287] the connections between
+[290] machine learning and the human brain i
+[291] think are stretched sometimes right
+[293] at the same time
+[295] being able to backprop and being able to
+[298] like look at the world try something
+[300] figure out how you're wrong how wrong
+[303] you are
+[304] and then nudge your company in the right
+[306] direction
+[307] based on how wrong you are is like a
+[310] fascinating concept right and i don't we
+[313] didn't know we were doing it at the time
+[314] but that's basically what we were doing
+[315] right
+[316] we put it out to call it a hundred
+[318] people
+[320] and you would look at their data you
+[322] would say what are they sharing
+[324] what like what resonates what doesn't
+[326] resonate we think they're going to
+[327] resonate with x but turns out they
+[329] resonate with y
+[330] okay shift the company towards y
+[333] and it turns out if you do that enough
+[335] quickly enough you can get to a solution
+[338] that has product market fit most
+[340] companies fail
+[341] because they sit there and they don't
+[343] either their learning rate's too slow
+[345] they sit there and they're just they're
+[346] adamant that they're right even though
+[348] the data is telling them they're not
+[349] right
+[350] or
+[351] they their learning rate's too high and
+[353] they wildly chase different ideas and
+[355] they never actually set on on one where
+[357] where they don't groove right and i
+[359] think when we sat down and we wrote out
+[361] those three ideas what we were saying is
+[363] what are the three possible
+[365] whether they're local or global maxima
+[368] in our world right
+[370] that users are telling us they like
+[372] because they're using the product that
+[373] way
+[374] it was clear people liked the photos
+[376] because that was the thing they were
+[377] doing
+[378] and we just said okay like what if we
+[380] just cut out most of the other stuff and
+[382] focus on that thing
+[384] um and then it happened to be a
+[386] multi-billion dollar business and
+[388] it's that easy by the way yeah i guess
+[391] so um well nobody ever writes about
+[393] neural networks that
+[394] miserably failed so this this particular
+[397] neural network succeeded this is the
+[398] sound all the time right yeah but nobody
+[401] right default state is failing yes
+[403] um when you said the way people are
+[406] using the app
+[408] is that the lost function for this
+[410] neural network or is it also self-report
+[412] like do you ever ask people what they
+[414] like or do you have to
+[416] track exactly what they're doing not
+[418] what they're saying
+[419] i once made a thanksgiving dinner okay
+[423] and
+[424] uh it was for
+[425] relatives and i like to cook a lot okay
+[428] and i worked really hard on picking the
+[430] specific
+[432] uh dishes and
+[434] and i was really proud because i had
+[436] planned it out using a gantt chart and
+[438] like it was ready on time and everything
+[440] was hot nice like i don't know if you're
+[442] a big thanksgiving guy but like the
+[443] worst thing about thanksgiving
+[445] is when the turkey is cold and some
+[447] things are hot and something anyway you
+[449] got a gantt chart you actually have a
+[450] chart oh yeah yeah omni plan fairly
+[453] expensive like gantt chart thing that i
+[456] think maybe 10 people have purchased
+[458] in the world but i'm one of them and i
+[460] use it for recipe planning only around
+[462] big holidays that's brilliant by the way
+[465] do people do this kind of uh over
+[468] engineering it's not overdue it's just
+[470] engineering it's planning thanksgiving
+[472] is a complicated uh
+[473] set of events with some uncertainty with
+[475] a lot of things going on you should be
+[477] able you should be planning in this way
+[479] there should be a chart it's not over i
+[481] mean so what's funny is um
+[483] brief aside yes uh brilliant i love
+[486] cooking i love food i love coffee and
+[488] i've spent some time with some chefs who
+[490] like know their stuff and
+[493] they always just take out a piece of
+[494] paper and just work backwards in rough
+[497] order like it's never perfect but rough
+[499] order it's just like oh that makes sense
+[501] why not just work backwards from from
+[503] the end goal right and put in some
+[505] buffer time and
+[506] so i probably overspecified it a bit
+[508] using a gantt chart but the fact that
+[511] you can do it it's what professional
+[513] kitchens roughly do
+[515] they just don't call it a gantt chart or
+[516] at least i don't think they do um anyway
+[518] i was telling a story about thanksgiving
+[520] so here's uh here's the thing
+[522] i'm sitting down we have the meal and
+[524] then i'm
+[526] you know i got to know ray dalio
+[528] fairly well over maybe the last year of
+[530] instagram um
+[532] and one thing that he kept saying was
+[534] like feedback is really hard to get
+[537] honestly from people
+[539] and i sat down at
+[541] after dinner i said guys i want feedback
+[543] what was good and what was bad yes and
+[546] what's funny is like literally everyone
+[548] just said everything was great
+[550] and i like personally knew i had screwed
+[553] up a handful of things
+[554] um but no one would say it
+[557] and can you imagine now
+[559] not something as high stakes as
+[560] thanksgiving dinner okay thanksgiving
+[562] dinner it's not that high stakes
+[564] but you're trying to build a product and
+[566] everyone knows you left your job for it
+[568] you're trying to build it out and you're
+[569] trying to make something wonderful
+[571] and it's yours right you designed it
+[575] now try asking for feedback
+[577] and know that you're giving this to your
+[579] friends and your family
+[582] people have trouble giving hard feedback
+[585] people have trouble saying
+[587] i don't like this or this isn't great or
+[590] this is how it's failed me
+[591] in fact
+[593] um
+[594] you usually have two classes of people
+[596] people who just won't say bad things you
+[598] can literally say to them please tell me
+[601] what you hate most about this and they
+[602] won't do it they'll try but they won't
+[605] and then the other class of people are
+[606] just negative period about everything
+[609] and it's hard to parse out
+[612] like what is true and what isn't
+[614] so my rule of thumb with this
+[616] is you should always ask people
+[619] but at the end of the day it's amazing
+[621] what data will tell you
+[623] and that's why with whatever project i
+[624] work on even now
+[627] collecting data from the beginning on
+[628] usage patterns so engagement how many
+[631] days of the week do they use it
+[634] how many i don't know if we were to go
+[635] back to instagram how many impressions
+[637] per day
+[638] right is that growing is that shrinking
+[640] and don't be like overly
+[643] scientific about it right because maybe
+[645] you have 50 beta users or something
+[648] but what's fascinating is that
+[650] data doesn't lie
+[652] people are very
+[654] uh defensive about their time
+[657] they'll say oh i'm so busy i'm sorry i
+[659] didn't get to use the app like i'm just
+[661] you know um
+[663] but i don't know you're posting on
+[664] instagram the whole time
+[667] so
+[668] i don't know at the end of the day like
+[669] at facebook there was
+[671] you know before time spent became
+[673] kind of this loaded
+[674] term there
+[676] the idea that people
+[678] people's currency in their lives is time
+[680] and they only have a certain amount of
+[682] time to give things whether it's friends
+[684] or family or apps or tv shows or
+[686] whatever it's
+[687] there's no way of inventing more of it
+[688] at least not that i know of
+[692] if they don't use it it's because it's
+[694] not great
+[695] so
+[696] the moral of the story is you can ask
+[698] all you want but you just have to look
+[700] at the data
+[701] and
+[703] data doesn't lie right i mean there's
+[705] metrics there's uh
+[709] data can obscure the key insight if
+[712] you're not careful so
+[715] so time spent in the app that's ones
+[717] there's so many metrics you can put at
+[719] this and they will give you totally
+[720] different insights
+[722] especially when you're trying to create
+[723] something that doesn't obviously exist
+[726] yet
+[727] so
+[729] you know
+[730] measuring maybe
+[732] why you left the app or measuring
+[735] special moments
+[736] of happiness that will make sure you
+[738] return to the app or moments of
+[740] happiness that are long lasting versus
+[742] like dopamine short term
+[744] all of those things but i think i
+[747] suppose in the beginning
+[749] you can just get away with just asking
+[751] the question
+[753] which features are used a lot let's do
+[755] more of that
+[757] and how hard was the decision
+[760] and uh i mean maybe you can tell me what
+[762] instagram looked in the beginning but
+[764] how hard was it to make
+[766] pictures the first class citizen that's
+[768] a revolutionary idea
+[770] like um at whatever point instagram
+[773] became this feed
+[774] of
+[775] photos
+[776] that's quite brilliant
+[778] plus
+[780] i also don't know when this happened but
+[782] they're all shaped the same
+[785] it's like uh i have to tell you why
+[787] that's the interesting part
+[790] why is that so a couple of things one is
+[794] data data like you're right you can over
+[797] interpret data like imagine trying to
+[799] fly a plane
+[800] by staring at
+[802] i don't know a single metric like
+[804] airspeed
+[805] you don't know if you're going up or
+[806] down i mean it correlates with up or
+[808] down but you don't actually know it will
+[810] never help you land the plane
+[812] so don't stare at one metric like it
+[814] turns out you have to synthesize a bunch
+[816] of metrics to know where to go
+[818] um but it doesn't lie like if your air
+[820] speed is zero unless it's not working
+[822] right if if it's zero
+[824] you're probably going to fall out of the
+[825] sky so
+[827] generally you look around and you have
+[828] the scan going yes
+[831] and you're just asking yourself is this
+[833] working or is this not working
+[835] um
+[836] but people have trouble explaining
+[840] how they actually feel
+[842] so just it's about synthesizing both of
+[844] them so then instagram right uh we were
+[847] talking about revolutionary moment where
+[850] where the feed became
+[852] square photos basically and photos first
+[855] and then square footage yeah um
+[858] it was clear to me that the biggest so
+[863] i believe the biggest companies are
+[865] founded
+[866] when
+[867] enormous technical shifts happen and the
+[870] biggest technical shift that happened
+[872] right before instagram was founded was
+[875] the advent of a phone that didn't suck
+[877] the iphone right like in retrospect
+[879] we're like oh my god the first iphone
+[881] that almost had
+[882] like it wasn't that good
+[884] but compared to everything else at the
+[886] time it was
+[887] amazing
+[888] and by the way the first
+[891] phone that had an incredible camera
+[894] that could that could like do as well as
+[896] the point and shoot you might carry
+[898] around
+[899] was the iphone 4 and that was right when
+[902] instagram launched and we looked around
+[903] and we said what will change because
+[906] everyone has a camera in their pocket
+[908] and it was so clear to me that the the
+[911] world of
+[912] social networks before
+[914] it was based in the desktop and sitting
+[917] there and having a link you could share
+[919] right
+[920] and that wasn't going to be the case so
+[921] the question is what would you share if
+[923] you were out and about in the world
+[926] if not only did you have a camera that's
+[928] in your pocket but by the way that
+[930] camera had a network attached to it that
+[932] allowed you to share instantly
+[934] that seemed revolutionary and a bunch of
+[936] people saw it at the same time it wasn't
+[938] just instagram there were a bunch of
+[939] competitors
+[941] the thing we did
+[942] i think was not only well we focused on
+[944] two things so we wrote down those things
+[946] we circled photos and we said i think we
+[948] should invest in this
+[949] but then we said what sucks about photos
+[952] one they look like crap right they just
+[956] at least back then now
+[958] my phone takes pretty great photos right
+[960] um back then they were blurry not so
+[963] great compressed right
+[966] two
+[966] uh it was really slow
+[968] like really slow to upload a photo
+[972] and i'll tell a fun story about that and
+[973] explain to you why they're all the same
+[975] size and square as well
+[977] um and three
+[980] man if you wanted to share a photo on
+[981] different networks you had to go to each
+[983] of the individual apps and select all of
+[986] them and upload individually and
+[988] so we're like all right those are the
+[989] pain points we're gonna focus on that so
+[992] one instead of
+[993] because they weren't beautiful um we
+[995] were like why don't we lean into the
+[997] fact that they're not beautiful and i
+[998] remember studying in florence my
+[1000] photography teacher gave me this whole
+[1002] gay camera and i'm not sure everyone
+[1003] knows what a whole gay camera is but
+[1004] they're these old-school plastic cameras
+[1008] i think they're produced in china at the
+[1010] time
+[1011] and they're i want to say the original
+[1013] ones like from the 70s or the 80s or
+[1015] something they're supposed to be like
+[1016] three dollar cameras for the every
+[1018] person
+[1019] they took nice medium format films large
+[1023] large
+[1023] negatives
+[1025] but they kind of blurred the the the
+[1027] light and they kind of like light leaked
+[1029] into the side and there was this whole
+[1031] resurgence where people looked at that
+[1033] and said oh my god this is a style right
+[1036] and i remember using that in florence
+[1038] and just saying well why don't we just
+[1039] like lean into the fact that these
+[1041] photos suck and make them suck more
+[1044] but in an artistic way
+[1046] and it turns out that had product market
+[1047] fit people really liked that they were
+[1049] willing to share their not so great
+[1051] photos if they
+[1052] looked
+[1053] not so great on purpose okay
+[1055] it's the second part
+[1057] that's the where the filters come into
+[1059] the picture yeah so computational
+[1061] modification of photos to make them look
+[1063] extra crappy to where it becomes art
+[1066] yeah yeah and
+[1067] i mean
+[1068] add light leaks add like an overlay
+[1071] filter make them more contrasty than
+[1072] they should be uh the first
+[1075] filter we ever produced was called x-pro
+[1077] 2. and i designed it while i was in this
+[1080] small little bed and breakfast room in
+[1082] total santos mexico i was trying to take
+[1084] a break from the
+[1085] the bourbon days and i i remember saying
+[1088] to my co-founder i just need like a week
+[1089] to reset
+[1090] and that was
+[1092] on that trip worked on the first filter
+[1094] because i said you know i think i can do
+[1096] this and i literally iterated
+[1099] one by one over the rgb values in the
+[1102] array that was the photo
+[1104] and just slightly shifted basically
+[1106] there was a function of our function of
+[1108] g function of b
+[1110] that just shifted them slightly it
+[1112] wasn't rocket science um and it turns
+[1114] out that actually made your photo look
+[1117] pretty cool
+[1118] it just mapped from one color space to
+[1120] another color space
+[1122] it was simple but it was really slow i
+[1124] mean if you applied a filter
+[1127] i think it used to take two or three
+[1128] seconds to render
+[1130] only eventually would i figure out how
+[1131] to do it on the gpu and i'm not even
+[1134] sure it was gpu but was using opengl but
+[1136] anyway um i would eventually figure that
+[1139] out and then it would be instant but it
+[1141] used to be really slow by the way anyone
+[1143] who's watching or listening
+[1145] it's amazing what you can get away with
+[1148] in a startup as long as the product
+[1152] outcome is right for the user like you
+[1154] can be slow you can be terrible you can
+[1156] be
+[1157] as long as you have product market fit
+[1160] people will put up with a lot and then
+[1162] the question is just about compressing
+[1165] making it more performant over time so
+[1167] that they get that product market fit
+[1169] instantly
+[1170] so fascinating because there's some
+[1172] things where
+[1173] those three seconds would
+[1175] make or break the app
+[1177] but some things you're saying not it's
+[1179] hard to know when you know it's what
+[1181] it's the problem spotify solved
+[1184] making streaming like
+[1186] work
+[1188] and
+[1189] like delays in listening to music is a
+[1191] huge negative
+[1192] even like slight delays
+[1195] but here you're saying i mean how do you
+[1197] know
+[1198] when those three seconds are okay are
+[1200] you just gonna have to
+[1202] try it out because to me my intuition
+[1206] would be
+[1207] those three seconds would kill the app
+[1209] like i would try to do the opengl thing
+[1212] right
+[1213] so i wish i were that smart at the time
+[1216] um
+[1217] i wasn't i just knew how to do what i
+[1219] knew how to do right
+[1221] and i decided okay like why don't i just
+[1225] iterate over the values and change them
+[1227] and what's interesting
+[1228] is that um
+[1231] compared to the alternatives no one else
+[1233] used opengl
+[1234] right so everyone else was doing that
+[1236] the dumb way and in fact they were doing
+[1238] it at a high resolution now comes in the
+[1241] small resolution that we'll talk about
+[1242] for a second
+[1244] um
+[1244] by choosing 512 pixels by 512 pixels
+[1248] which i believe it was at the time
+[1250] we iterated over a lot fewer pixels than
+[1253] our competitors who were trying to do
+[1254] these enormous output like images yeah
+[1258] so instead of taking 20 seconds i mean
+[1261] three seconds feels pretty good right
+[1263] so on a relative basis we were winning
+[1264] like a lot
+[1266] okay so that's answer number one answer
+[1268] number two is uh
+[1270] we actually focused on latency in the
+[1272] right places so we did this really
+[1273] wonderful thing um
+[1276] when you uploaded so uh the way it would
+[1278] work is you know you'd take your phone
+[1280] you'd take the photo and then you'd go
+[1283] to the um
+[1284] you'd go the edit screen where you would
+[1286] caption it
+[1288] and on that caption screen you start
+[1290] typing you think okay like what's a
+[1292] clever caption and and i said to mike
+[1294] hey when i worked on the gmail team you
+[1296] know what they did when you typed in
+[1298] your username or your email address
+[1300] even before you've entered in your
+[1302] password like the chat probability once
+[1305] you enter in your username that you're
+[1307] going to actually sign in is extremely
+[1309] high
+[1310] so why not just start loading your
+[1312] account in the background not not like
+[1313] sending it down to the desktop that
+[1315] would be a security uh uh
+[1318] issue but like load it into memory on
+[1320] the server like get it ready prepare it
+[1323] i always thought that was so fascinating
+[1325] and unintuitive i was like mike why
+[1327] don't we just do that but like we'll
+[1329] just upload the photo and like assume
+[1332] you're gonna upload the photo and if you
+[1334] don't
+[1335] forget about it we'll delete it right
+[1337] so what ended up happening
+[1339] was people would caption their uh photo
+[1342] they'd press done or upload
+[1344] and you'd see this little progress bar
+[1346] just go
+[1347] it was lightning fast okay
+[1350] we were no faster than anyone else at
+[1352] the time but by choosing 512 by 512 and
+[1355] doing in the background it almost
+[1357] guaranteed that it was done by the time
+[1360] you captioned
+[1361] and everyone when they used it was like
+[1364] how the hell is this thing so fast
+[1366] but we were slow we just hid the the
+[1368] slowness it wasn't like
+[1370] these things are just like it's a shelly
+[1371] game you're just hiding the latency
+[1375] that
+[1376] that mattered to people like a lot and i
+[1378] think that so you were willing to put up
+[1380] with a slow filter if it meant you could
+[1383] share it immediately and of course we
+[1385] added sharing options which let you
+[1387] distribute it really quickly that was
+[1388] the third part
+[1390] um
+[1391] so latency matters but relative to what
+[1394] and then
+[1396] there's some like tricks you can get
+[1398] around to just hiding the latency um
+[1400] like i don't know if spotify starts
+[1402] downloading the next song eagerly i'm
+[1404] assuming they do
+[1405] there are a bunch of ideas here that are
+[1408] not rocket science that
+[1410] that really help
+[1411] and all of that was
+[1413] stuff you were explicitly having a
+[1415] discussion about like
+[1416] those designs and argument you were
+[1418] having like arguments discussions
+[1421] uh i'm sure it was arguments i mean
+[1423] i'm not sure if you've met my co-founder
+[1425] mike but he's a pretty nice guy and he's
+[1427] very reasonable and uh
+[1429] and we both just saw eye to eye and
+[1430] we're like yeah just like
+[1432] make this fast early seem fast
+[1436] it'll be great i mean honestly i think
+[1438] the most contentious thing and he would
+[1439] say this too initially
+[1442] was um i was on an iphone 3g so like the
+[1446] the not so fast one and he had a brand
+[1449] new iphone 4. i was cheap nice um
+[1452] and his feed loaded super smoothly like
+[1455] when he would scroll from photo to photo
+[1458] buttery smooth right but on my phone
+[1461] every time you got to a new photo it was
+[1462] like
+[1463] a chunk allocate memory like all this
+[1465] stuff right
+[1467] i was like mike that's unacceptable he's
+[1469] like oh come on man just like upgrade
+[1470] your phone basically you didn't actually
+[1472] say that it's nicer than that um
+[1475] but i could tell he wished like i would
+[1476] just stop being cheap and just get a new
+[1478] phone
+[1479] but what's funny is we actually sat
+[1480] there working on that little detail for
+[1483] a few days before launch and
+[1486] that polished experience plus the fact
+[1489] that uploading seemed fast for all these
+[1491] people who didn't have nice phones
+[1494] i think meant a lot
+[1495] because
+[1496] far too often you see teams focus not on
+[1499] performance
+[1500] they focus on
+[1502] what's the cool computer science problem
+[1503] they can solve
+[1505] right can we scale this thing to a
+[1507] billion users and they've got like 100
+[1509] right
+[1510] yeah
+[1512] you talked about loss function so i want
+[1514] to come back to that
+[1515] but like the loss function is like do
+[1518] you provide a great happy magical
+[1520] whatever experience for the consumer
+[1522] and listen if it happens to involve
+[1524] something complex and technical then
+[1526] great
+[1527] but it turns out i think most of the
+[1530] time
+[1532] those experiences are just sitting there
+[1533] waiting to be built with like not that
+[1535] complex solutions
+[1538] uh but everyone is just like so stuck in
+[1540] their own head that they have to over
+[1541] engineer everything and then they forget
+[1543] about the easy stuff
+[1544] i mean also maybe to flip the lost
+[1547] function there is you're trying to
+[1548] minimize the number of times
+[1551] you there's unpleasant experience right
+[1553] like uh the one you mention where when
+[1555] you go to the next photo it freezes for
+[1557] a little bit so it's almost as opposed
+[1559] to maximizing pleasure it's probably
+[1561] easier to minimize
+[1563] the number of like
+[1564] the friction
+[1565] yeah and as we all know you just you
+[1567] just uh you just make the pleasure
+[1569] negative and then minimize everything so
+[1572] we're mapping this all back to neural
+[1574] networks but actually can i say one
+[1575] thing on that which is
+[1577] i don't know a lot about machine
+[1579] learning but i feel like i've i've tried
+[1581] studying a bunch that whole idea of
+[1584] reinforcement learning
+[1586] and planning out more than the greedy
+[1589] single experience i think is
+[1592] is the closest you can get to
+[1595] like ideal product design thinking
+[1598] where you're not saying hey like can we
+[1600] have a great experience just this one
+[1602] time
+[1603] but like what is the right way to
+[1605] onboard someone what series of
+[1607] experiences correlate most with them
+[1609] hanging on long term right so not just
+[1613] saying oh did the photo load slowly a
+[1615] couple times or did they get a great
+[1617] photo at the top of their feed
+[1619] but like what are the things that are
+[1621] going to make this person come back
+[1623] over the next week over the next month
+[1626] and as a product designer asking
+[1627] yourself okay i want to optimize not
+[1630] just minimize bad experiences in the
+[1631] short run but like
+[1634] how do i get someone to engage over the
+[1636] next month
+[1637] and i'm not going to claim at all that i
+[1640] thought that way at all at the time
+[1641] because i certainly didn't but if i were
+[1643] going back and giving myself any advice
+[1645] it would be thinking what are those what
+[1647] are those second order effects that you
+[1648] can create
+[1650] and it turns out having your friends on
+[1651] the service
+[1653] it's an enormous win so starting with a
+[1655] very small group of people that produce
+[1658] content that you wanted to see which we
+[1660] did we seeded the community very well i
+[1662] think
+[1663] ended up mattering and
+[1665] so
+[1666] yeah you said that community is one of
+[1668] the most important things so it's from a
+[1670] metrics perspective from uh maybe a
+[1673] philosophy perspective
+[1675] building a certain kind of community
+[1676] within the app see i wasn't sure what
+[1678] exactly you meant by that when when i've
+[1680] heard you say that maybe you can
+[1682] elaborate but as i understand now it's
+[1685] can literally mean
+[1687] get your friends onto the app
+[1689] yeah
+[1690] think of it this way
+[1692] you can build an amazing restaurant or
+[1695] bar or whatever right
+[1697] but if you show up and you're the only
+[1699] one there is it like does it matter how
+[1701] good the food is
+[1703] the drinks whatever um no um these are
+[1707] inherently social experiences that we
+[1709] were working on
+[1710] so
+[1711] the idea of having people there
+[1715] like you needed to have that otherwise
+[1718] it was just to filter out but by the way
+[1719] part of the genius
+[1721] i'm going to say genius even though i
+[1722] wasn't really genius was starting to be
+[1726] marauding as a filter app
+[1728] was awesome
+[1730] the fact that you could so we talk about
+[1731] single player mode a lot which is like
+[1733] can you play the game alone
+[1736] and instagram you could totally play
+[1737] alone you could filter your photos and a
+[1739] lot of people would tell me i didn't
+[1740] even realize that this thing was a
+[1743] social network
+[1744] until my friend showed up it totally
+[1746] worked as a single player
+[1748] game and then when your friend showed up
+[1750] all of a sudden it was like oh
+[1752] not only was this great alone but now i
+[1754] actually have this trove of photos that
+[1756] people can look at and start liking and
+[1759] then i can like theirs and
+[1761] so it was this bootstrap method of how
+[1763] do you make the thing not suck when the
+[1765] restaurant is empty
+[1766] yeah but the thing is when you say
+[1768] friends i mean we're not necessarily
+[1770] referring to friends in the physical
+[1772] space so you're not bringing your
+[1773] physical friends with you you're also
+[1775] making new friends so you're finding new
+[1777] community so it's not immediately
+[1779] obvious to me that
+[1781] it's like it's almost like building any
+[1783] kind of community
+[1784] it was it was both and what we learned
+[1787] very early on was what made instagram
+[1789] special and the reason why you would
+[1791] sign up for it versus say just sit on
+[1792] facebook and look at your friends photos
+[1795] of course we were live and of course it
+[1797] was interesting to see what your friends
+[1798] were doing now
+[1800] but the fact that you could connect with
+[1801] people who like took really beautiful
+[1804] photos in a certain style all around the
+[1805] world whether they were travelers it was
+[1807] the beginning or beginning of the
+[1809] influencer economy there's these people
+[1811] who became professional instagramers way
+[1814] back when right
+[1815] um
+[1816] but they took these amazing photos and
+[1818] some of them were photographers right um
+[1822] like professionally
+[1823] and all of a sudden you had this moment
+[1825] in the day when you could open up this
+[1826] app and sure you could see what your
+[1828] friends were doing but also it was like
+[1829] oh my god that's a beautiful beautiful
+[1831] waterfall or oh my god i didn't realize
+[1833] there was that corner of england or like
+[1836] really cool stuff
+[1837] um
+[1838] and the beauty about instagram early on
+[1840] was that it was
+[1842] international by default you didn't have
+[1844] to speak english to use it right you
+[1846] could just look at the photos
+[1848] worked great
+[1849] we did translate we had some pretty bad
+[1851] translations but we did translate the
+[1853] app
+[1854] and uh
+[1855] you know even if our translations were
+[1857] pretty poor the the idea that you could
+[1858] just connect with other people through
+[1860] their images was pretty powerful
+[1863] how much uh technical difficulties there
+[1865] with the programming like what
+[1867] programming language you were talking
+[1868] about what was zero i'd like maybe it
+[1870] was hard for us but um i mean we
+[1875] there was nothing the only thing that
+[1877] was complex about instagram at the
+[1878] beginning
+[1880] technically was making it scale and we
+[1883] were
+[1884] just plain old objective c for the
+[1886] client uh so it was iphone only
+[1890] yep as an android person i'm deeply
+[1892] offended but go ahead again come on this
+[1894] was 2010. oh sure sure sorry android's
+[1897] getting a lot better yeah yeah so
+[1900] um i take it back you're right if i were
+[1902] to do something today i think it would
+[1903] be very different in terms of launch
+[1905] strategy right android's enormous too uh
+[1908] but anyway um back to that moment it was
+[1911] objective c uh and then
+[1914] we were python based uh which is just
+[1917] like this is before python was really
+[1919] cool like now it's cool because it's all
+[1921] these machine learning libraries like
+[1923] support python and right
+[1925] now it's super
+[1926] now it's like cool to be by the back
+[1928] then it was like oh google uses python
+[1930] like maybe you should use python
+[1932] facebook was php like
+[1935] i had worked at a small startup of some
+[1937] ex-googlers that used python so we used
+[1939] it and we used a framework called django
+[1941] uh still exists and people use for
+[1945] basically
+[1946] the back end and then you threw a couple
+[1948] interesting things in there i mean we
+[1950] used postgres which was kind of fun it
+[1952] was a little bit like hipster database
+[1954] at the time right
+[1955] my sequel my sequel like everyone used
+[1957] my sequel so like using postcards was
+[1959] like an interesting decision right uh
+[1961] but we used it because it had a bunch of
+[1964] uh geo features built in because we
+[1966] thought we were going to be a checking
+[1967] out pretty much it's also super cool now
+[1969] so you were into python before it was
+[1970] cool and you were into postgres before
+[1973] it was cool yeah we were basically like
+[1975] not only hipster
+[1976] hipster photo company hipster tech
+[1978] company right uh we also adopted redis
+[1981] early and like loved it i mean it solved
+[1984] so many problems for us
+[1986] and turns out that's still pretty cool
+[1989] but the programming was very easy it was
+[1991] like sign up a user have a feed there
+[1993] was nothing
+[1994] no machine learning at all zero can you
+[1997] get some context how many users at each
+[1999] of these stages are we talking about 100
+[2001] users a thousand users so the stage i
+[2004] just described i mean that technical
+[2006] stack lasted through
+[2008] probably 50 million users
+[2011] um
+[2012] i mean seriously like you can get away
+[2014] with a lot with with a pretty basic
+[2017] stack um like i think a lot of startups
+[2019] try to over engineer their solutions
+[2021] from the beginning to like really scale
+[2023] and you can get away with a lot
+[2025] that being said most of the first two
+[2027] years of instagram was literally just
+[2029] trying to make that stack scale and it
+[2031] wasn't it was it was not a python
+[2033] problem it was like
+[2035] literally just like where do we put the
+[2037] data like it's all coming in too fast
+[2039] like how do we store it how do we make
+[2041] sure to be up how do we like
+[2044] how do we make sure we're on the right
+[2046] side of boxes that they have enough
+[2047] memory um those were the issues but can
+[2051] you speak to the choices you make at
+[2053] that stage when you're growing so
+[2055] quickly
+[2056] do you use something like somebody
+[2058] else's computer infrastructure or do you
+[2060] build in-house
+[2062] i'm only laughing because we when we
+[2065] launched we had a single
+[2067] computer that we had rented
+[2070] in some colo space in la i don't even
+[2072] remember what it was called
+[2074] because i thought that's what you did
+[2075] when i worked at a company called odio
+[2077] that became twitter i remember visiting
+[2079] our space in san francisco you walked in
+[2081] you had to wear the ear things and it
+[2083] was
+[2084] cold and fans everywhere right
+[2086] and we had to you know plug one out
+[2088] replace one and i was the intern so i
+[2091] just like held things
+[2092] but i thought to myself oh this is how
+[2094] it goes and then i remember being in a
+[2096] vc's office
+[2098] i think it was benchmark's office and i
+[2100] think we ran into another entrepreneur
+[2102] and they were like oh how are things
+[2103] going we're like uh you know trying to
+[2105] scale this thing
+[2106] and they were like well i mean can't you
+[2108] just add more instances and i was like
+[2110] what do you mean
+[2111] and they're like instances on amazon i
+[2113] was like what are those
+[2115] and it was this moment where we realized
+[2117] how deep in it we were because we had no
+[2119] idea that aw aws existed nor should we
+[2123] be using it anyway
+[2125] that night we went back to the office
+[2126] and we got on aws but we we did this
+[2128] really dumb thing we're
+[2131] i'm so sorry to people listening but um
+[2134] we brought up an instance which was our
+[2136] our database it's going to be a
+[2138] replacement for our database
+[2140] but we had it talking over the public
+[2143] internet to our little box in la that
+[2145] was our app server very nice yeah um
+[2148] that's how sophisticated we were and
+[2150] obviously that was very very slow
+[2152] didn't work at all i mean it worked but
+[2154] didn't work did we only like later that
+[2157] night did we realize we had to have it
+[2158] all together
+[2160] but at least like if you're listening
+[2161] right now and you're thinking you know i
+[2163] have no chance i'm going to start to
+[2165] start i have no chance
+[2166] i don't know we did it and we made a
+[2168] bunch of really dumb mistakes initially
+[2170] i think the question is how quickly do
+[2172] you learn that you're making a mistake
+[2173] and do you do the right thing
+[2174] immediately right after so you didn't
+[2176] pay for those mistakes by you know by
+[2179] failure so
+[2181] yeah how quickly did you fix it
+[2183] i guess there's a lot of ways to sneak
+[2185] up to this question of how the hell do
+[2187] you scale the thing
+[2188] other startups if you have an idea how
+[2190] do you scale the thing is this is just
+[2192] aws
+[2194] and uh
+[2195] you try to write the kind of code that's
+[2198] easy to spread across a large number of
+[2200] instances and then
+[2202] the rest is just put money into it
+[2206] basically i would say a couple things
+[2208] first off
+[2209] don't even ask the question just find
+[2212] product market fit
+[2213] duct tape it together right like if you
+[2215] have to i think there's a big caveat
+[2218] here which i want to get to
+[2220] but generally all that matters is
+[2222] product market fit that's all that
+[2224] matters if people like your product
+[2226] do not worry about when 50 000 people
+[2229] use your product because you will be
+[2231] happy that you have that problem when
+[2232] you get there i actually can't name
+[2236] many
+[2237] startups
+[2238] where they go from
+[2240] nothing to something overnight and they
+[2242] can't figure out how to scale it there
+[2244] are some
+[2245] but i think nowadays it's a when i say a
+[2248] solved problem like
+[2250] there are ways of solving it
+[2253] the base case is typically that startups
+[2254] worry way too much about
+[2256] scaling way too early and forget that
+[2258] they actually have to make something
+[2259] that people like that's the that's the
+[2261] default mistake case
+[2263] but what i'll say is um
+[2265] once you start scaling
+[2267] i mean hiring quickly people who have
+[2270] seen the game before and just know how
+[2271] to do it it it becomes um
+[2274] it becomes a bit of like yeah just throw
+[2277] instances of the problem right
+[2279] but the last thing i'll say on this that
+[2280] i think did save us um
+[2283] we were pretty rigorous about writing
+[2285] tests uh from the beginning
+[2288] that helped us
+[2290] move very very quickly when we wanted to
+[2292] rewrite parts of the product
+[2294] and know that we weren't breaking
+[2295] something else
+[2297] tests are one of those things where it's
+[2298] like you go slow to go fast
+[2300] and they suck when you have to write
+[2302] them because you have to figure it out
+[2304] and
+[2305] they're always those ones that break
+[2306] when you don't want them to break and
+[2308] they're annoying and it feels like you
+[2309] spent all this time but
+[2311] looking back i think that like long-term
+[2313] optimal even with the team of four
+[2316] it allowed us to move very very quickly
+[2318] because anyone could touch any part of
+[2320] the the the product and know that they
+[2322] weren't going to bring down the site or
+[2324] at least in general at which point do
+[2326] you know product market fit how many
+[2328] users would you say what is it all it
+[2331] takes is like 10 people or is it a
+[2333] thousand is it 50 000
+[2335] i don't think it is
+[2337] generally a question of absolute numbers
+[2339] i think it's a question of cohorts and i
+[2341] think it's a question of trends so
+[2345] you know it depends how big
+[2347] your business is trying to be right but
+[2349] if i were signing up a thousand people a
+[2351] week and they all retain like the
+[2354] retention curves for those cohorts
+[2356] looked good healthy
+[2358] and even like
+[2359] as you started getting more people on
+[2361] the service maybe those earlier cohorts
+[2363] started curving up again because now
+[2364] there are network effects and their
+[2366] friends are on the service or totally
+[2368] depends what type of business you're in
+[2369] but i'm talking purely social right
+[2372] um
+[2373] i don't think it's an absolute
+[2376] number i think it is a i guess you could
+[2378] call it a marginal number so i spend a
+[2380] lot of time when i work with startups
+[2382] asking them like okay have you looked at
+[2384] that cohort versus this cohort whether
+[2387] it's your clients or whether it's people
+[2389] signing up for uh the service
+[2392] but a lot of people think you just have
+[2394] to hit some mark like 10 000 people or
+[2396] 50 000 people
+[2397] but really
+[2399] seven-ish billion people in the world
+[2401] most people forever will not know about
+[2404] your product there are always more
+[2406] people out there to sign up it's just a
+[2408] question of how you turn on the spigot
+[2410] so
+[2411] at that stage early stage
+[2414] yourself but also by way of advice
+[2416] should you worry about money at all how
+[2418] this thing is going to make money or do
+[2420] you just try to find product market fit
+[2424] and get a lot of users to enjoy using
+[2426] your thing
+[2428] i think it totally depends and that's an
+[2430] unsatisfying answer um i was talking
+[2432] with a friend today
+[2434] who
+[2436] he was one of our earlier investors and
+[2438] he was saying hey like have you been
+[2439] doing any angel investing lately i said
+[2441] not really i'm just like focused on what
+[2443] i want to do next and
+[2446] he said the number of financings have
+[2448] just gone bonkers like just bonk
+[2451] like people are throwing money
+[2453] everywhere right now um
+[2456] and
+[2457] i think the question is
+[2460] do you have an inkling of how you're
+[2462] gonna make money
+[2464] or are you really just like waving your
+[2466] hands i would not like to be an
+[2468] entrepreneur in the position of
+[2471] well i have no idea how this will
+[2473] eventually make money that's not fun um
+[2476] if you are in an area like let's say you
+[2479] wanted to start a social network right
+[2482] not saying this is a good idea but if
+[2484] you did
+[2485] they're only a handful of ways they've
+[2487] made money and really only one way
+[2488] they've made money in the past and
+[2489] that's ads
+[2491] so
+[2492] you know
+[2493] if you
+[2494] have a service that's amenable to that
+[2497] and
+[2497] then i wouldn't worry too much about
+[2499] that because if you get to the scale you
+[2500] can hire some smart people and figure
+[2502] that out
+[2504] i
+[2505] do think that is really healthy for a
+[2507] lot of startups these days especially
+[2509] the ones doing like
+[2511] enterprise software
+[2512] slacks of the world etc to be worried
+[2515] about money from the beginning but
+[2516] mostly as a way of winning over clients
+[2520] and having stickiness um
+[2524] i think i like of course you need to be
+[2526] worried about money but i'm going to
+[2527] also say this again which is
+[2529] it's like long-term profitability
+[2532] if you have a roadmap to that then
+[2534] that's great
+[2535] but if you're just like i don't know
+[2537] maybe never like we're working on this
+[2539] meta first thing i think maybe someday
+[2542] i don't know like that seems harder to
+[2543] me um so you have to be as big as
+[2546] facebook to like finance that bet right
+[2549] do you think it's possible you said
+[2551] you're not saying it's necessarily a
+[2552] good idea to launch a social network
+[2555] do you think it's possible
+[2557] today
+[2558] maybe you can put yourself in those
+[2560] shoes
+[2561] to launch a social network that achieves
+[2564] the scale of a facebook
+[2566] or a twitter or an instagram and maybe
+[2569] even greater scale absolutely
+[2573] how do you do it
+[2575] asking for a friend yeah if i knew i i'd
+[2577] probably be doing it right now and not
+[2579] sitting here so
+[2581] i mean there's a lot of ways to ask this
+[2583] question one is create a totally new
+[2585] product market fit create a new market
+[2588] create something like instagram did
+[2590] which is like create something kind of
+[2591] new
+[2593] or
+[2594] literally out compete facebook at its
+[2596] own thing or i'll compete twitter at its
+[2598] own thing
+[2599] the only way to compete now if you want
+[2601] to build a large social network is to
+[2604] look for the cracks look for the
+[2605] openings
+[2607] um
+[2608] you know
+[2608] no one competed
+[2610] i mean no one competed with the core
+[2612] business of google no one competed with
+[2614] the core business of microsoft
+[2616] you don't go at
+[2618] the big guys doing exactly what they're
+[2620] doing
+[2621] instagram didn't win quote unquote
+[2623] because it tried to be
+[2625] a visual twitter like
+[2627] we spotted things that either twitter
+[2629] wasn't going to do or refused to do
+[2632] images and feed for the longest time
+[2634] right
+[2635] or that facebook wasn't doing or not
+[2637] paying attention to because they were
+[2638] mostly desktop at the time and we were
+[2640] purely mobile
+[2642] purely visual
+[2644] often there are opportunities sitting
+[2646] there you just have to you have to
+[2650] you have to figure out like uh i think
+[2652] like there's a strategy book i can't
+[2653] remember the name but talk about moats
+[2656] and just like the best place to play
+[2659] is where your competitor like literally
+[2661] can't pivot because structurally they're
+[2663] set up not to be there
+[2665] and that's where you win um
+[2668] and what's fascinating is like do you
+[2670] know how many people are like images
+[2673] facebook does that twitter does that i
+[2675] mean how wrong were they really wrong
+[2677] these are some of the smartest people in
+[2678] silicon valley right
+[2680] but now instagram exists for a while
+[2682] how is it that snapchat could then exist
+[2685] makes no sense
+[2687] like plenty of people would say well
+[2688] there's facebook no images okay okay i
+[2690] mean instagram i'll give you that one
+[2692] but wait now another image based social
+[2694] network's gonna get really big
+[2696] and then tick tock comes along
+[2699] like
+[2700] the prior so you asked me is it possible
+[2703] the only answer and reason i'm answering
+[2705] yes is because
+[2706] my prior is that it's happened once
+[2708] every i don't know three four or five
+[2710] years
+[2711] consistently and i can't imagine there's
+[2714] anything structurally that would change
+[2716] that
+[2717] so that's why i answer that way not
+[2719] because i know how i just
+[2721] when you see a pattern you see a pattern
+[2722] and there's no reason to believe that's
+[2724] going to stop and it's subtle too
+[2726] because like you said snapchat and tick
+[2728] tock they're all doing the same space of
+[2731] things but there's something
+[2733] fundamentally different about
+[2736] like a three second video and a five
+[2737] second video and a 15 second video in a
+[2740] one minute video and a one hour video
+[2742] right like fundamentally different
+[2743] fundamentally different i mean i think
+[2746] one of the reasons snapchat exists is
+[2748] because instagram was so focused on
+[2750] posting great beautiful manicured
+[2754] versions of yourself throughout time
+[2757] and there was this enormous demand of
+[2758] like hey i really like this behavior i
+[2760] love using instagram but
+[2762] man i just like wish i could share
+[2765] something going on in my day like
+[2767] do i really have to put it on my profile
+[2769] do i really have to make it last forever
+[2771] do i really
+[2772] um and that opened up a door it created
+[2775] a market right and then what's
+[2777] fascinating is
+[2778] instagram had an explore page for the
+[2780] longest time it was image driven right
+[2782] um
+[2783] but there's absolutely a behavior where
+[2785] you open up instagram and you sit on the
+[2787] explore page all day that is effectively
+[2789] tick tock but obviously focused on
+[2791] videos and it's not like you could just
+[2794] put the explore page in tik tok form and
+[2796] it works it had to be video it had to
+[2798] have music
+[2799] these are the hard parts about product
+[2801] development that are very hard to
+[2803] predict
+[2804] but um
+[2806] they're all versions of the same thing
+[2807] with varying
+[2810] if you line them up in a bunch of
+[2811] dimensions they're just like
+[2813] kind of on
+[2815] they're different values of the same
+[2816] dimensions which is like i guess easy to
+[2818] say in retrospect but like if i were an
+[2820] entrepreneur going after that area i'd
+[2822] ask myself like where's the opening
+[2825] what needs to exist because tiktok
+[2826] exists now
+[2828] so i wonder how much
+[2831] things that don't yet exist and can
+[2833] exist is in the space of algorithms in
+[2835] the space of recommender systems
+[2838] so
+[2838] in the space of how the feed is
+[2840] generated so we kind of talk about the
+[2842] actual elements of the um
+[2845] the content that's what we've been
+[2847] talking the difference between photos
+[2849] between uh short videos longer videos i
+[2852] wonder how much disruption is possible
+[2855] in the way the algorithms work
+[2857] because a lot of the criticism towards
+[2858] social media is in the way the
+[2860] algorithms work currently and it feels
+[2862] like
+[2863] first of all talking about
+[2866] product market fit there's certainly a
+[2868] hunger
+[2869] for
+[2870] um social media
+[2873] algorithms that do something different i
+[2876] don't think anyone everyone said
+[2878] complaining this is not doing this is
+[2881] this is hurting me and this is hurting
+[2882] society but i keep doing it because i'm
+[2885] addicted to it
+[2887] and they say we want something different
+[2889] but we don't know what it feels like a
+[2892] uh
+[2893] just different uh it feels like there's
+[2895] a hunger for that
+[2897] but that's in the space of algorithms i
+[2899] wonder if it's possible to disrupt in
+[2900] that space absolutely
+[2903] um
+[2904] i have this thesis that
+[2907] the worst part about social networks is
+[2908] that they're uh
+[2911] is the people
+[2913] it's it's
+[2914] it's a line that sounds funny right
+[2916] because like that's why you call it a
+[2917] social network um but what does social
+[2920] networks actually do for you like just
+[2922] think you know like
+[2924] imagine you were an alien and you landed
+[2926] and someone says hey there's this site
+[2928] it's a social network we're not going to
+[2929] tell you what it is but just what does
+[2931] it do and you have to explain it to them
+[2932] it does two things one is that
+[2936] people you know and have social ties
+[2938] with
+[2939] uh distribute updates through whether
+[2942] it's uh you know photos or videos
+[2945] about their lives so that you don't have
+[2947] to physically be with them but you can
+[2948] keep in touch with them that's one
+[2950] that's like a big part of instagram
+[2952] that's a big part of snap
+[2953] it is not part of tick tock at all so
+[2956] there's another big part which is
+[2958] there's all this content out in the
+[2960] world that's entertaining
+[2962] whether you want to watch it or you want
+[2964] to read it
+[2965] um
+[2966] and matchmaking between content that
+[2968] exists in the world and
+[2971] uh people that want that content turns
+[2973] out to be like a really big business
+[2975] right search and discovery would you
+[2977] search and discovery but my point is it
+[2979] could be video it could be text it could
+[2980] be websites it could be i mean think
+[2982] back to um
+[2984] think back to like dig right or stumble
+[2987] upon or
+[2988] right
+[2989] nice
+[2990] yeah but like what did those do like
+[2991] they basically distributed interesting
+[2993] content to you right
+[2995] um
+[2997] i think the most interesting part or the
+[3000] future of social networks is going to be
+[3002] making them less social because i think
+[3004] people are part of the root cause of the
+[3006] problem so for instance
+[3008] um often in recommender systems we talk
+[3010] about two stages there's a candidate
+[3012] generation step
+[3013] which is just like of our vast trove of
+[3015] stuff that you might want to see
+[3018] what small subset
+[3020] should we pick for you
+[3022] okay
+[3023] typically that is grabbed from things
+[3025] your friends have shared
+[3027] right
+[3028] then there's a ranking step which says
+[3030] okay now given these hundred 200 things
+[3032] depends on the network right let's like
+[3034] be really good about ranking them and
+[3037] generally rank the things up higher that
+[3038] get the most engagement right so what's
+[3041] the problem with that
+[3042] step one is we've limited everything you
+[3045] could possibly see to things that your
+[3047] friends have chosen to share
+[3049] or maybe not friends but influencers
+[3052] what things do people generally want to
+[3054] share they want to share things that are
+[3055] going to get likes that are going to
+[3056] show up broadly
+[3058] so they tend to be more emotionally
+[3060] driven they tend to be more risque or
+[3062] whatever so why do we have this problem
+[3065] it's because
+[3066] we show people things people have
+[3068] decided to share and those things
+[3070] self-select to being the things that are
+[3072] most divisive
+[3074] so how do you fix that
+[3076] well
+[3077] what if you just
+[3078] imagine for a second that why do you
+[3080] have to grab things from things your
+[3082] friends have shared why not just like
+[3083] grab things
+[3085] that's really fascinating to me and
+[3087] that's something i've been thinking a
+[3088] lot about and just like
+[3090] you know why is it that when you log on
+[3093] to twitter
+[3094] you're just sitting there looking at
+[3097] things from accounts that you've
+[3099] followed for whatever reason
+[3102] and tick tock i think has done a
+[3103] wonderful job here which is like you can
+[3105] literally be anyone
+[3107] and if you produce something
+[3108] fascinating it'll go viral
+[3111] but like
+[3112] you don't have to be someone that anyone
+[3114] knows you don't have to have built up a
+[3116] giant following you don't have to have
+[3118] paid for followers
+[3119] you don't have to try to maintain those
+[3121] followers you literally just have to
+[3122] produce something interesting
+[3124] that is i think the future of social
+[3126] networking that's the that's the
+[3128] direction things will head and i think
+[3130] what you'll find is it's far less about
+[3133] people manipulating distribution and far
+[3136] more about what is like is this content
+[3138] good
+[3139] and good is obviously a vague definition
+[3142] that we spend hours on but
+[3145] different networks i think will decide
+[3147] different value functions to decide what
+[3148] is good and what isn't good and i i
+[3150] think that's a fascinating direction so
+[3152] that's almost like creating an internet
+[3153] i mean that's what google did for web
+[3155] pages
+[3156] they did the
+[3157] you know page rank search
+[3159] so discovery you don't you don't follow
+[3161] anybody on google when you use a search
+[3163] engine you just discover web pages and
+[3166] so what tick tock does
+[3168] is saying let's start from scratch
+[3171] let's like like start a new internet and
+[3174] have people discover stuff on that new
+[3176] internet within a particular kind of
+[3178] pool of people well what's so
+[3180] fascinating about this is like the
+[3182] the um field of information retrieval
+[3184] like i always talked about and as i was
+[3187] studying this stuff they would always
+[3188] use the word query and document so i was
+[3190] like why are they saying query
+[3192] undocuments like they're literally
+[3194] imagine like
+[3195] if you just stop thinking about query as
+[3197] like literally a search query and a
+[3198] query could be a person i mean a lot of
+[3200] the way
+[3201] i'm not going to claim to know how
+[3203] instagram or facebook machine learning
+[3204] works today
+[3206] but
+[3207] you know if you want to find a match for
+[3209] a query the query is actually the
+[3211] attributes of the person
+[3213] their age their gender where they're
+[3215] from
+[3216] maybe some kind of summarization of
+[3218] their interests and and that's a query
+[3221] right and that matches against documents
+[3223] and by the way documents don't have to
+[3224] be text they can be
+[3226] videos they're however long i don't know
+[3228] what the limit is on tick tock these
+[3229] days they keep changing it my point is
+[3231] just
+[3232] you've got a query which is someone in
+[3234] search of something that they want to
+[3236] match and you've got the document it
+[3238] doesn't have to be text it could be
+[3239] anything and how do you match make and
+[3242] that's one of these like i mean i've
+[3243] spent a lot of time thinking about this
+[3246] and i don't claim to have mastered it at
+[3247] all
+[3248] but i think it's so fascinating about
+[3250] where that will go with new social
+[3252] networks see what i'm also fascinated by
+[3254] is metrics that are different than
+[3256] engagement
+[3258] so the other thing from an alien
+[3259] perspective
+[3260] what social networks are doing
+[3262] is they
+[3265] they in the short term bring out
+[3268] different aspects of each human being so
+[3270] first let me say
+[3272] that
+[3275] an algorithm or a social network
+[3278] for each individual can bring out
+[3280] the best of that person or the worst of
+[3282] that person or there's a bunch of
+[3284] different parts to us parts we're proud
+[3286] of
+[3287] that
+[3288] that we are parts we're not so proud of
+[3290] when we look at the big picture of our
+[3292] lives when we look back 30 days from now
+[3295] am i proud that i said those things or
+[3296] not am i proud that i felt those things
+[3299] am i proud that i experienced or read
+[3302] those things or thought about those
+[3304] things just in that kind of
+[3306] self-reflective kind of way
+[3308] and so coupled with that i wonder if
+[3310] it's possible to have different metrics
+[3312] they're not just about engagement
+[3314] but are about
+[3316] long-term happiness
+[3318] growth of a human being well they look
+[3320] back and say
+[3322] i am a better human being for having
+[3324] spent 100 hours on that app
+[3326] and
+[3327] that feels like it's actually strongly
+[3329] correlated with engagement
+[3331] in the long term in the short term it
+[3334] might not be but in long term it's like
+[3336] the same kind of thing where you really
+[3338] fall in love with the product
+[3340] you fall in love with an iphone you fall
+[3342] in love with a car
+[3343] that's what makes you fall in love is
+[3345] like
+[3346] really
+[3347] being proud
+[3349] and just
+[3350] in a self-reflective way understanding
+[3352] that you're a better human being for
+[3353] having used the thing and that's like
+[3355] where the f
+[3356] that's what great relationships are made
+[3358] from it's not just like you're hot
+[3361] and we like being together or something
+[3363] like that it's more like i'm a better
+[3365] human being because i'm with you
+[3367] and that feels like a metric that could
+[3369] be optimized for by the algorithms
+[3372] um but you know anytime i kind of talk
+[3375] about this with anybody they seem to say
+[3377] yeah okay that's going to get out
+[3379] competed immediately by the engagement
+[3382] if it's ad driven especially
+[3384] i just don't think so
+[3386] i don't i mean
+[3388] a lot of is just implementation
+[3390] i'll say a couple things one is to
+[3393] pull back the curtain on daily meetings
+[3396] inside of these large social media
+[3398] companies
+[3400] a lot of what
+[3402] management or at least the people that
+[3404] are are tweaking these algorithms spend
+[3405] their time on our trade-offs
+[3407] and there's these things called value
+[3409] functions which are like okay
+[3411] we can predict the probability that
+[3414] you'll click on this thing or the
+[3415] probability that you'll share it or the
+[3418] probability that you will leave a
+[3420] comment on it or the probability
+[3422] you'll dwell on it
+[3424] individual actions right
+[3427] and you've got this neural network that
+[3429] basically has a bunch of heads at the
+[3431] end and all of them are between zero and
+[3433] one and
+[3434] great they all have values right or
+[3436] or they all have probabilities
+[3438] um
+[3439] and then in these meetings what they
+[3440] will do is say well uh
+[3443] how much do we value a comment versus a
+[3446] click versus a share versus a
+[3449] and then maybe even some downstream
+[3450] thing right that has nothing to do with
+[3452] the item there but like
+[3455] driving follows or something
+[3457] and what typically happens is they will
+[3459] say well what are our goals for this
+[3461] quarter at the company oh we want to
+[3463] drive sharing up okay well let's uh turn
+[3465] down these metrics and turn up these
+[3467] metrics
+[3468] and and they blend them right into a
+[3470] single scaler with which they're trying
+[3472] to optimize
+[3475] that is really hard because invariably
+[3478] you think you're solving for i don't
+[3479] know something called meaningful
+[3480] interactions right
+[3482] this was the big facebook pivot and i i
+[3484] don't actually have any internal
+[3486] knowledge like i wasn't in those
+[3487] meetings
+[3488] but at least from from what we've seen
+[3491] over the last month or so it seems by
+[3494] actually trying to trying to optimize
+[3496] for meaningful interactions it had all
+[3498] these side effects of optimizing for
+[3500] these other things
+[3501] and i don't claim to fully understand
+[3504] them but what i will say
+[3506] is that trade-offs abound
+[3508] and as much as you'd like to solve for
+[3510] one thing if you have a network of over
+[3512] a billion people
+[3514] you're gonna have unintended
+[3515] consequences either way and it gets
+[3517] really hard
+[3518] so what you're describing is effectively
+[3520] a value model that says like can we
+[3522] capture this is the thing that i spent a
+[3524] lot of time thinking about like can you
+[3526] capture
+[3527] utility
+[3529] in a way that like actually measures
+[3531] someone's happiness
+[3533] that isn't just a um
+[3535] what do they call it a surrogate problem
+[3537] where you say well i kind of think like
+[3539] the more you use the product
+[3541] the happier you are that was always the
+[3543] argument at facebook by the way it was
+[3544] like well
+[3546] people use it more so they must be more
+[3548] happy yeah turns out they're like a lot
+[3550] of things you use more that make you
+[3551] less happy in the world not talking
+[3553] about facebook just you know let's think
+[3555] about
+[3556] whether it's gambling or whatever like
+[3557] that you can do more of but doesn't
+[3559] necessarily make you happier so the idea
+[3561] that time equals happiness obviously
+[3563] you can't map utility and time together
+[3566] easily there are a lot of edge cases
+[3568] so when you look around the world and
+[3570] you say well what are all the ways we
+[3571] can model utility that is like one of
+[3573] the
+[3574] please if you know someone smart doing
+[3575] this introduce me because i'm fascinated
+[3577] by it and it seems really tough
+[3580] but the idea that reinforcement learning
+[3582] like everyone interesting i know in
+[3585] machine learning like i was really
+[3587] interested in recommender systems and
+[3588] supervised learning and
+[3591] and the more i dug into it i was like oh
+[3592] literally everyone smart is working on
+[3594] reinforcement learning
+[3596] like literally everyone you just made
+[3598] people at open ai and deep mind very
+[3599] happy yes but i mean but what's
+[3601] interesting is like it's one thing to
+[3603] train a game and like
+[3606] i mean that paper that where they just
+[3608] took atari and they used a convnet to
+[3610] basically just like train simple actions
+[3613] mind-blowing right absolutely
+[3615] mind-blowing but it's a game great
+[3618] so now what if you're constructing
+[3621] a feed for a person right
+[3624] like
+[3625] how can you
+[3626] construct that feed in such a way
+[3629] that optimizes for a diversity of
+[3631] experience a
+[3633] a long term happiness right
+[3636] but that reward function it turns out in
+[3639] reinforcement learning again
+[3641] as i've learned
+[3642] like reward design is really hard
+[3645] and
+[3646] i don't know like how do you design a
+[3648] scalar reward for someone's happiness
+[3650] over time i mean do you have to measure
+[3652] dopamine levels like do you have to well
+[3654] you have to have a lot of
+[3656] a lot more signals from the human being
+[3659] currently it feels like there's not
+[3660] enough signals coming from the human
+[3662] being users of uh
+[3664] of this algorithm so for reinforcement
+[3666] learning to work well
+[3668] it needs to have a lot more data
+[3670] needs to have a lot of data and that
+[3672] actually is a challenge for anyone who
+[3673] wants to start something which is you
+[3675] don't have a lot of data so how do you
+[3676] compete but i do think back to your
+[3679] original point rethinking the algorithm
+[3681] rethinking reward functions rethinking
+[3684] utility
+[3686] that's fascinating that's cool and i
+[3688] think that's an open opportunity for
+[3691] for a company that figures it out
+[3694] i have to ask about april 2012
+[3697] when instagram
+[3699] along with its massive
+[3702] employee base of 13 people was sold to
+[3705] facebook for 1 billion dollars
+[3707] what was the process like on a business
+[3709] level engineering level human level what
+[3712] was that process of selling to facebook
+[3714] like what did it feel like
+[3716] so i want to provide some context which
+[3718] is i worked in corporate development at
+[3719] google
+[3720] which not a lot of people know but
+[3722] corporate development is effectively the
+[3724] group that buys companies right you sit
+[3726] there and you acquire companies and i
+[3728] had sat through so many of these
+[3730] meetings with entrepreneurs we actually
+[3732] fun fact we never acquired a single
+[3734] company when i worked in corporate
+[3735] development so i can't claim that
+[3737] um i had like a lot of experience
+[3740] but i had enough experience to
+[3742] understand okay like what prices are
+[3744] people getting and what's the process
+[3747] and
+[3748] and as we started to grow
+[3750] you know
+[3752] we were trying to keep this thing
+[3753] running and we were exhausted and we
+[3755] were 13 people and i mean we were trying
+[3757] to think back he was probably 27
+[3761] 37 now um
+[3763] so
+[3764] young
+[3765] and on a relative basis right and uh
+[3768] we're trying to keep the thing running
+[3770] and then you know we go out to raise
+[3772] money and
+[3774] we're kind of like the hot startup at
+[3776] the time
+[3777] and i remember going into a specific vc
+[3779] and saying our terms we're looking for
+[3781] are we're looking for a 500 million
+[3783] valuation
+[3785] and i've never seen so many jaws drop
+[3788] all in unison right
+[3790] and i was like thanked and walked out
+[3791] the door very kindly after
+[3794] um and then i got a call the next day uh
+[3796] from someone who was connected to them
+[3798] and said they said
+[3799] we just want to let you know that like
+[3801] uh it was pretty offensive that you
+[3803] asked for a 500 billion dollar
+[3804] evaluation and i i can't tell if that
+[3806] was um
+[3808] like just negotiating or what but it's
+[3810] true like no one offered us more right
+[3812] so we were so can you clarify the the
+[3815] number again you said how many million
+[3817] 500 500 million 500 million yeah half a
+[3820] billion yeah um
+[3822] so in my mind i'm anchored like okay
+[3824] well literally no one's biting at 500
+[3826] million and eventually we would get
+[3829] sequoia and greylock and others together
+[3831] at 500 million basically uh post uh it
+[3834] was 450 pre i think we raised 50 million
+[3836] dollars but just like no one was used to
+[3839] seeing 500 million dollar
+[3841] companies then like i don't know if it
+[3843] was because we were just coming out of
+[3846] the hangover 2008 and things were still
+[3848] on recovery
+[3849] mode
+[3851] but then along comes facebook and
+[3855] after some negotiation
+[3857] we've 2xed the number from a half a
+[3859] billion to a billion
+[3861] yeah it seems pretty good
+[3863] you know
+[3864] and uh i think mark and i really saw eye
+[3867] to eye that this thing could be big um
+[3870] we thought we could
+[3871] their resources would help us scale it
+[3873] and in a lot of ways it de-risks
+[3875] i mean it degrees a lot of the employees
+[3877] lives for the rest of their lives
+[3879] including me including mike right
+[3881] um i think i might have had like 10
+[3883] grand in my bank account at the time
+[3885] right like
+[3886] we're working hard we had nothing um
+[3889] so on a relative basis it seemed
+[3891] very high and then i think the last
+[3893] company to exit for anywhere close to a
+[3895] billion was youtube that i could think
+[3897] of
+[3898] and uh and thus began the giant long
+[3901] bull run of 2012 to all the way all the
+[3904] way to where we are now where um i saw
+[3906] some stat yesterday about like how many
+[3908] unicorns exist and it's absurd
+[3911] but then again never underestimate
+[3913] technology and like the value
+[3915] it can provide and man costs have
+[3917] dropped and man scale has increased and
+[3921] you can make businesses make a lot of
+[3922] money now but on a on a fundamental
+[3925] level
+[3926] i don't know like how do you describe
+[3928] the decision to sell a company with 13
+[3931] people for a billion dollars so first of
+[3933] all like how
+[3935] did it take a lot of guts to set a table
+[3938] and say 500 million or 1 billion with
+[3940] mark zuckerberg
+[3942] it seems like a very large number with
+[3943] 13. like especially like it doesn't seem
+[3946] it is it is they're all larger
+[3949] especially like you said before
+[3952] the unicorn
+[3954] parade
+[3955] i like that i'm going to use that
+[3956] unicorn
+[3957] yeah the uh the the you are at the head
+[3960] of the unicorn parade it's the uh yeah
+[3962] it's a massive unicorn parade um okay so
+[3968] no i mean we knew we were worth
+[3970] quote-unquote a lot but we didn't i mean
+[3972] there was no market for instagram i mean
+[3974] it's not you could mark you couldn't
+[3976] mark to market this thing in the public
+[3977] markets you didn't quite understand what
+[3979] it would be worth or it was worth at the
+[3981] time
+[3982] so in a market an illiquid market where
+[3984] you have one buyer and one seller and
+[3986] you're going back and forth and
+[3988] well i guess there were
+[3990] like vc firms who are willing to
+[3992] you know invest at a certain valuation
+[3994] so
+[3996] i don't know you just go with your gut
+[3998] and uh and at the end of the day i would
+[4000] say um
+[4003] the hardest part
+[4005] of it was not realizing uh
+[4009] like when we sold it was tough because
+[4012] like literally everywhere i go
+[4014] restaurants whatever like
+[4017] for a good six months after there was a
+[4019] lot of attention on the deal a lot of
+[4021] attention on the product a lot of
+[4023] attention it was kind of miserable right
+[4026] and you're like wait like i made a lot
+[4027] of money but like why is this not great
+[4030] and it's because it turns out you know
+[4033] and i don't i don't know like i don't
+[4035] really keep in touch with mark but i've
+[4036] got to assume his job right now is not
+[4038] exactly the most happy job in the world
+[4039] it's really tough when you're on top and
+[4041] it's really tough when you're in the
+[4043] limelight
+[4044] so the decision itself was like oh cool
+[4046] this is great how lucky are we right so
+[4049] okay there's a million questions yeah go
+[4051] first of all first of all
+[4053] why
+[4056] why is it hard to be on top why did you
+[4057] not feel good
+[4059] like can you dig into that it always um
+[4063] i've heard like olympic athletes say
+[4064] after what they win gold they they get
+[4067] depressed
+[4069] is it something like that where
+[4071] it feels like
+[4073] it was kind of like a thing you were
+[4075] working towards yeah some some loose
+[4077] definition of success and this sure
+[4079] psych feels like
+[4081] uh at least according to other startups
+[4083] this is what success looks like and now
+[4085] why don't i feel any
+[4088] better i'm still human i still have all
+[4089] the same problems is that the nature or
+[4091] is it just like negative attention or
+[4093] some kind what i think it's all of the
+[4095] above um but to be clear there was a lot
+[4097] of happiness in terms of like oh my god
+[4099] this is great like we
+[4102] like won the super bowl of startups
+[4104] right um anyone who
+[4107] can get to a liquidity event of anything
+[4109] meaningful feels like wow this is what
+[4111] we started out to do of course we want
+[4113] to create great things that people love
+[4115] but
+[4116] um
+[4117] like we won in a big way but yeah
+[4118] there's this big like oh if we won what
+[4121] is like what's next i don't so
+[4124] they call it the we have arrived
+[4126] syndrome
+[4127] um
+[4129] which i i need to go back and look where
+[4131] i can quote that from but i remember
+[4133] reading about it at the time i was like
+[4134] oh yeah that's that
+[4135] i remember we had a product manager
+[4137] leave very early on when we got to
+[4139] facebook and he said to me um i just
+[4142] don't believe i can learn anything at
+[4143] this company anymore it's like it's hit
+[4146] its
+[4146] apex we sold it great i just don't have
+[4150] anything else to learn
+[4152] so from 2012 all the way to the day i
+[4154] left in 2018 like the amount i learned
+[4157] and the humility with which i realized
+[4159] oh we thought we won
+[4162] billion dollars is cool but like there
+[4164] are a hundred billion dollar companies
+[4166] and by the way on top of that
+[4168] we had no revenue we had i mean we had a
+[4170] cool product but we didn't scale it yet
+[4172] and
+[4173] there's so much to learn and then
+[4175] competitors and how fun was it to fight
+[4177] snapchat oh my god like it was
+[4180] it's like yankees red sox it's great
+[4182] like that's what you live for um
+[4185] you know you win some you lose some but
+[4188] uh the amount you can learn through that
+[4190] process uh
+[4192] what i've realized
+[4194] in life is that there is no end there's
+[4197] always someone who has more there's
+[4198] always more challenge just at different
+[4200] scales and uh it sounds like a little
+[4204] buddhist but um
+[4207] everything is super challenging whether
+[4209] you're like a small business or an
+[4211] enormous business
+[4212] i say like choose the game you like to
+[4215] play right you've got to imagine that if
+[4218] you're an amazing basketball player you
+[4219] enjoy to some extent practicing
+[4221] basketball it's got to be something you
+[4223] love it's going to suck it's going to be
+[4225] hard
+[4226] you're going to have injuries right but
+[4227] you got to love it and the same thing
+[4229] with instagram which is
+[4231] um
+[4232] we might have sold but it was like great
+[4235] there's one super bowl title can we win
+[4237] five what else can we do
+[4240] now i imagine you didn't ask this but
+[4241] okay so i left
+[4243] there's a little bit of like what do you
+[4245] do next right like what do you how do
+[4247] you top that thing it's the wrong
+[4249] question
+[4250] the question is like when you wake up
+[4251] every day
+[4252] what is the hardest most interesting
+[4254] thing you can go work on
+[4256] because like at the end of the day we
+[4258] all turn into dirt doesn't matter right
+[4260] but what does matter is like can we
+[4263] really enjoy this life not in a
+[4265] hedonistic way because that's those
+[4268] it's like the reinforcement learning
+[4269] learning like short term versus
+[4271] long-term objectives
+[4273] can you wake up every day and truly
+[4275] enjoy what you're doing
+[4277] um
+[4279] knowing that it's going to be painful
+[4282] knowing that like no matter what you
+[4283] choose it's going to be painful um
+[4285] whether you sit on a beach or whether
+[4287] you manage a thousand people or ten
+[4289] thousand it's gonna be painful so choose
+[4291] something that's fun
+[4293] to have pain
+[4294] um but yes there was uh there was a lot
+[4296] of we have arrived and um
+[4301] it's a maturation process you just have
+[4303] to go through so no matter how much
+[4305] success is there is how much money you
+[4307] make you have to wake up the next day
+[4310] and choose the hard life whatever that
+[4311] means next that's fun the fun slash hard
+[4314] life
+[4315] hard life that's fun i guess
+[4318] what i'm trying to say is slightly
+[4319] different which is just that no one
+[4321] realizes
+[4322] everything's gonna be hard
+[4325] even chilling out
+[4327] is hard and then you just start worrying
+[4328] about stupid stuff like i don't know
+[4330] like
+[4331] did so and so forget to paint the house
+[4333] today or like did the gardener come or
+[4335] whatever like yeah or oh i'm so angry
+[4338] and my shipment of wine didn't show up
+[4340] and i'm sitting here on the beach
+[4341] without my wine i don't know i'm making
+[4342] shit up now but like it turns out that
+[4344] even chilling aka meditation is hard
+[4347] work yeah i and at least meditation is
+[4349] like productive chilling where you're
+[4351] like actually training yourself to calm
+[4352] down and be but
+[4354] backing up for a moment everything's
+[4356] hard you might as well be like
+[4359] playing in the game you love to play i
+[4361] just like playing and winning and
+[4364] and i'm i'm on the on the i'm still on
+[4368] the i think the first half of life knock
+[4369] on wood um
+[4372] and i've got a lot of years what am i
+[4373] going to do sit around and the other way
+[4375] of looking at this by the way
+[4377] um
+[4379] imagine you made one movie it was great
+[4382] would you just like stop making movies
+[4385] no generally you're like wow i really
+[4387] like making movies let's make another
+[4388] one a lot of times by the way the second
+[4390] one or the third one not that great but
+[4392] the fourth one awesome
+[4393] and no one forgets the sec everyone
+[4395] forgets the second and the third one so
+[4397] there's just this constant process of
+[4400] like can i produce
+[4402] and is that fun is that exciting what
+[4404] else can i learn so this machine
+[4405] learning stuff for me has been this
+[4407] awesome new chapter
+[4409] of being like
+[4411] man that's something i didn't understand
+[4413] at all and now i feel like i'm one-tenth
+[4415] of the way there
+[4417] and that feels like a big mountain to
+[4418] climb uh
+[4420] so i distracted us from the original
+[4422] question no
+[4423] return to machine learning because i'd
+[4424] love to explore your interest there but
+[4426] i mean speaking of sort of challenges
+[4429] and hard things is there a possible
+[4430] world
+[4432] where sitting in a room with mark
+[4434] zuckerberg
+[4436] with a one billion dollar deal
+[4438] you turn it down yeah of course
+[4441] what does that world
+[4442] look like why would you turn it down why
+[4444] did you take it what was the calculation
+[4446] that you were making ah thus enters the
+[4449] world of
+[4450] counterfactuals and not really knowing
+[4453] and if only we could run that experiment
+[4454] well the universe exists it's just
+[4457] running in parallel to our own yeah
+[4459] it's so fascinating right um
+[4462] i mean we're talking a lot about money
+[4464] but the real question was
+[4466] um
+[4468] i'm not sure you'll believe me when i
+[4470] say this but
+[4471] could we strap our little company onto
+[4473] the side of a rocket ship
+[4476] and like get out to a lot of people
+[4478] really really quickly with the support
+[4480] with the
+[4481] the talent
+[4483] of a place like facebook i mean people
+[4485] often ask me what i would do differently
+[4487] um at instagram today and i say well i
+[4489] probably hire more carefully because we
+[4491] showed up
+[4492] just like before i knew it we had like
+[4494] 100 people on the team and 200 and 300 i
+[4497] don't know where all these people were
+[4498] coming from i never had to recruit them
+[4500] i never had to screen them they were
+[4502] just like internal transfers right
+[4504] so it's like relying on the facebook
+[4506] hiring machine which is quite sort of
+[4509] i mean it's an elaborate machine it's
+[4511] and it's great by the way they have
+[4513] really talented people there
+[4515] but my point is um
+[4519] the choice was like take this thing put
+[4521] it on the side of a rocket ship that you
+[4523] know is growing very quickly
+[4525] like i had seen what had happened when
+[4527] ev sold blogger to google and then
+[4529] google went public remember we sold
+[4531] before facebook went public
+[4534] there was a moment at which the stock
+[4536] price was 17 by the way the facebook
+[4538] stock price was 17 i remember thinking
+[4540] what the f did i just do right
+[4543] uh now at
+[4545] 320-ish i don't know where we are today
+[4548] but like
+[4549] okay like
+[4551] the best thing by the way is like
+[4554] when the stock is down everyone calls
+[4555] you dope and then when it's up they also
+[4557] call you a dope but just for a different
+[4559] reason
+[4560] right like you can't win lesson in there
+[4563] somewhere yeah so but you know the
+[4565] choice is to stripe yourself to a rocket
+[4567] ship or to build your own you know mr
+[4569] elon built his own
+[4571] literally with the rocket ship
+[4573] that's a difficult choice because um
+[4576] there's a world
+[4578] actually i would say something different
+[4579] which is elon and others decided to sell
+[4582] paypal
+[4583] for
+[4584] not that much i mean how much was it
+[4585] about a billion dollars i can't remember
+[4587] something like that yeah i mean it was
+[4588] early and um but it's worth a lot more
+[4591] an hour and then build a new rocket ship
+[4593] so this is the cool part right if you
+[4595] are
+[4596] an entrepreneur and you own a
+[4597] controlling stake in the company
+[4600] not only is it really hard to do
+[4602] something else with your life because
+[4603] all of the
+[4605] you know value is tied up in you as a
+[4607] personality attached to this company
+[4609] right
+[4610] but if you sell it and you get yourself
+[4612] enough capital and you like have enough
+[4614] energy
+[4615] you could do another thing or 10 other
+[4617] things or in elon's case like a bunch of
+[4619] other things i don't know like i lost
+[4620] count at this point um
+[4623] and it might have seemed silly at the
+[4625] time and sure like if you look back man
+[4627] paypal's worth a lot now right
+[4630] but i don't know like do you think elon
+[4632] like cares about like are we gonna buy
+[4634] pinterest or not like i just he is
+[4637] he created a a a massive capital that
+[4640] allowed him to do what he wants to do
+[4643] and that's awesome that's more freeing
+[4644] than anything because when you are an
+[4646] entrepreneur attached to a company you
+[4648] gotta stay at that company for a really
+[4649] long time it's really hard to remove
+[4652] yourself but i'm not sure how much he
+[4654] loved paypal versus spacex and tesla
+[4657] i have a sense that you love
+[4660] instagram
+[4661] yeah i loved enough to like
+[4663] work for six years beyond that which is
+[4665] rare which is very rare you chose but
+[4667] can i tell you why sure it's um
+[4669] please
+[4671] there are not a lot of companies that
+[4673] you can be part of where
+[4676] the pope's like i would like to sign up
+[4678] for your product like i'm not a
+[4679] religious person at all
+[4681] i'm really not um yeah but when you go
+[4683] to the vatican and you're like walking
+[4685] among the giant columns and you're
+[4687] hearing the music and everything and
+[4688] like
+[4689] the pope walks in and he wants to press
+[4691] the sign up button on your product like
+[4692] it's a moment in life okay um no matter
+[4695] what your persuasion okay
+[4699] the number of doors and experiences that
+[4701] that opened up was it was incredible i
+[4703] mean the people i got to meet the places
+[4705] i got to go
+[4707] um i assume maybe like a payments
+[4709] company is slightly different right
+[4711] but that's why like it was so fun and
+[4714] plus i truly believed we were building
+[4717] such a great product and i loved loved
+[4719] the game it wasn't about the money it
+[4722] was about the game
+[4723] do you think do you think you had the
+[4725] guts to say no
+[4726] is that so his i often think about this
+[4729] like
+[4730] how hard is it for entrepreneur to say
+[4732] no because
+[4733] the peer pressure so every like
+[4736] basically the sea of entrepreneurs in
+[4737] silicon valley are going to tell you
+[4739] this is their dream
+[4741] the the the thing you were sitting
+[4743] before was is a dream to walk away from
+[4745] that is really
+[4747] it seems like nearly impossible
+[4750] because instagram
+[4752] could in 10 years
+[4754] be you know you could talk about google
+[4757] you could be making self-driving cars
+[4760] and building rockets that go to mars and
+[4761] compete with spacex totally and so
+[4764] that's an interesting decision to say
+[4768] am i willing
+[4770] to risk it and the reason i also say
+[4773] it's an interesting decision because
+[4775] it feels like per previous discussion if
+[4777] you're launching a social
+[4779] uh social network company
+[4782] there's there's going to be that meeting
+[4783] whatever that number is if you're
+[4785] successful if if you're on this rocket
+[4787] ship of success there's going to be a
+[4789] meeting
+[4790] with one of the social media
+[4792] social network companies
+[4794] that want to buy you
+[4796] uh whether it's facebook or twitter but
+[4798] it could also very well be google who
+[4800] seems to
+[4802] have like a graveyard of failed social
+[4805] networks
+[4806] and it's
+[4808] i mean i don't know i i i think about
+[4809] that how difficult it is for the
+[4811] entrepreneur to make that decision
+[4813] how many have successfully made that
+[4815] decision i guess this is a big question
+[4818] it's sad to me to be honest that too
+[4820] many make that decision perhaps for the
+[4822] wrong reason to to so when you say make
+[4824] the decision you mean to the affirmative
+[4826] affirmative you got it yeah there are
+[4828] also companies that don't sell right and
+[4832] take the path and say we're going to be
+[4834] independent and then you've never heard
+[4836] of them again
+[4837] like i remember uh path right was one of
+[4840] our competitors early on
+[4842] uh there's a big moment when they had i
+[4845] can't remember what it was like 110
+[4847] million offer from google or something
+[4850] it might have been larger i don't know
+[4852] um
+[4854] and i remember there was like this big
+[4855] techcrunch article that was like they
+[4857] turned it down after talking deeply
+[4859] about their values and everything and
+[4863] i don't i don't know the inner workings
+[4864] of foursquare but like i'm certain there
+[4866] were many conversations over time where
+[4869] there were companies that wanted
+[4870] foursquare as well um recently
+[4872] like i mean what other companies
+[4875] there's clubhouse right like i don't
+[4877] know maybe people were really interested
+[4879] in them too
+[4880] like
+[4881] there are plenty of moments
+[4883] where people say no
+[4886] and we just forget that those things
+[4888] happen we only focus on the ones where
+[4890] like
+[4891] uh uh they said yes and like wow like
+[4894] what if they had stayed independent so i
+[4896] don't know i like i used to think a lot
+[4898] about this and now i just don't because
+[4899] i'm like whatever i you know like things
+[4902] have gone pretty well yeah
+[4904] i'm ready for the next game i mean think
+[4906] about um an athlete
+[4908] where
+[4910] i don't know maybe they they they do
+[4912] something wrong in the world series or
+[4913] whatever and like if you let it haunt
+[4915] you for the rest of your career like
+[4918] why not just be like i don't know it was
+[4919] a game next game next shot right and if
+[4923] if you just move to that world like at
+[4925] least i have a next shot right no that's
+[4928] that's beautiful but i mean just in
+[4929] insights uh and it's funny you brought
+[4931] up clubhouse it is very true it seems
+[4934] like clubhouse is uh
+[4936] you know
+[4937] on the downward path and it's very
+[4939] possible to see
+[4941] a billion plus dollar deal at some stage
+[4945] maybe like a year ago or half a year ago
+[4947] from facebook from google i think
+[4948] facebook was flirting with that idea too
+[4951] and i think a lot of companies probably
+[4953] were
+[4954] i wish it was more public
+[4957] you know what there's not like a badass
+[4960] public story about them making the
+[4962] decision to walk away we just don't hear
+[4964] about it and then we get to see the the
+[4966] results of that success or the failure
+[4968] more often failure
+[4970] so a couple things one is i would not
+[4972] assume clubhouse is down for the count
+[4974] at all they're young they have plenty of
+[4976] money they're run by really smart people
+[4979] i'd give them like a very fighting
+[4981] chance to figure it out there are a lot
+[4982] of times when people call twitter down
+[4984] for the count and they figure it out and
+[4985] they seem to be doing well right yeah um
+[4988] so just backing up like and not knowing
+[4990] anything about their internals like
+[4992] there's a strong chance they will figure
+[4995] it out and that people are just down
+[4996] because they like being down about
+[4997] companies they like assuming that
+[4999] they're going to fail so who knows right
+[5001] but let's take the ones in the past
+[5002] where like we know how it played out
+[5004] there are plenty of examples where
+[5006] people have turned down big offers and
+[5008] then you've just never heard from them
+[5010] again but we never focus on the
+[5011] companies because you just forget that
+[5013] those were big but inside your psyche
+[5018] i think they're um
+[5019] it's easy for someone with enough money
+[5022] to say money doesn't matter which i
+[5023] think is like it's bullshit of course
+[5026] money matters to people um
+[5029] but at the moment you just can't even
+[5030] grasp like the number of zeros that
+[5033] you're talking about it just doesn't
+[5034] make sense
+[5035] right
+[5036] so to think rationally in that moment is
+[5038] not something many people are equipped
+[5040] to do especially not people where i
+[5043] think we had founded the company a year
+[5044] earlier maybe two years earlier like a
+[5046] year and a half we were 13 people
+[5049] but um i will say
+[5051] i still don't know if it was the right
+[5053] decision because i don't have that
+[5055] counterfactual i don't know that other
+[5056] world
+[5058] i'm just thankful that
+[5060] by and large most people love instagram
+[5062] still do
+[5063] by and large people are very happy with
+[5066] like the time we had there
+[5068] um and i'm proud of what we built so
+[5069] like
+[5070] i'm cool like we're you know now now
+[5073] it's it's next shot right
+[5075] well if we could just linger on this
+[5078] yankees versus red sox the fun of it the
+[5081] competition over i would say over the
+[5083] space of features
+[5085] so um
+[5086] there are a bunch of features
+[5089] like there's
+[5090] photos
+[5092] there's one minute videos on instagram
+[5094] there's igtv there's stories there's
+[5096] reels there's live
+[5098] so that sounds like it's like a long
+[5101] list of too much stuff but it's it's not
+[5104] because it feels like they're
+[5106] they're close together but they're
+[5107] somehow like what we're saying
+[5109] fundamentally distinct like each of the
+[5111] things i mentioned
+[5113] maybe can you describe the philosophies
+[5115] the design philosophies behind some of
+[5117] these how you were thinking about it
+[5119] during the uh
+[5121] the historic war between snapchat and
+[5124] instagram or just in general like
+[5127] this space of features that was
+[5129] discovered there's this um
+[5131] great book by clay christensen called
+[5134] competing against luck it's like a
+[5136] terrible uh title
+[5139] but within it there's uh effectively an
+[5142] expression of this thing called jobs to
+[5144] be done theory
+[5146] and it's unclear if like he came up with
+[5148] it or some of his colleagues but
+[5150] everyone there are a bunch of places you
+[5151] can find with people claiming to have
+[5152] come up with this jobs to be done theory
+[5154] but the idea is if you if you like
+[5157] zoom out and you look at your product
+[5160] you ask yourself why are people hiring
+[5163] your product
+[5164] like imagine every product in your life
+[5166] is effectively an employee
+[5169] you know your ceo of your life and you
+[5171] hire products to be employees
+[5173] effectively they all have roles and jobs
+[5175] right
+[5176] why are you hiring a product why do you
+[5178] want that product to perform something
+[5180] in your life and what like what are the
+[5181] hidden reasons why uh you're you're in
+[5184] love with this product
+[5186] instagram was about sharing your life
+[5188] with others visually period right
+[5191] why because you feel connected with them
+[5194] you get to show off
+[5196] you get to feel good and and cared about
+[5199] right with likes and
+[5201] um and it turns out that
+[5203] that will i think forever define
+[5206] instagram and any product that serves
+[5209] that job is going to do very well
+[5212] okay
+[5213] stories let's take it as an example
+[5216] is very much serving that job in fact it
+[5219] serves it better than the original
+[5221] product because when you're large and
+[5223] have an enormous audience
+[5226] you're worried about people seeing your
+[5227] stuff or you're worried about being
+[5228] permanent so that a college admissions
+[5231] person is going to see your photo of you
+[5232] doing something and
+[5234] so it turns out that that is a more
+[5235] efficient way of performing that job
+[5238] than the original product was the
+[5239] original product still has its value
+[5242] but at scale these two things together
+[5244] work really really well
+[5246] now
+[5247] i will claim that other parts of the
+[5249] product over time
+[5250] didn't perform that job as well i think
+[5252] igtv probably didn't right
+[5255] shopping is like completely unrelated to
+[5258] what i just described but it might work
+[5260] i don't know right um
+[5263] products i think
+[5264] products that succeed
+[5266] are products that all share this parent
+[5268] node
+[5269] of like this job to be done that is in
+[5271] common and then they're just like
+[5272] different ways of doing it right
+[5275] apple i think does a great job with this
+[5277] right it's like managing your digital
+[5278] life and all the products just work
+[5281] together they sink they like it's
+[5284] beautiful right
+[5286] even if they require like silly specific
+[5288] cords to work
+[5290] but they're all part of a system
+[5292] it's when you leave that system and you
+[5294] start doing something weird that people
+[5295] start scratching their head
+[5297] and i think you are less successful so i
+[5299] think one of the challenges facebook has
+[5300] had throughout its life
+[5302] is that it has never fully i think
+[5304] appreciated the job to be done of the
+[5306] main product and what it's done is said
+[5309] oh there's a shiny object over there
+[5311] that starts getting some traction let's
+[5312] go copy that thing and then they're
+[5314] confused why it doesn't work like why
+[5317] doesn't it work it's because the people
+[5318] who show up for this don't want that
+[5321] it's different what's the purpose of
+[5323] facebook i remember i was a very early
+[5325] facebook user i was the reason i was
+[5328] personally excited about facebook
+[5330] is um
+[5332] because you can first of all use your
+[5334] real name
+[5335] like i i can exist in this world it can
+[5338] be like
+[5339] formally exist there's i i like
+[5341] anonymity for certain things reddit and
+[5344] so on but i want it to also exist
+[5347] uh
+[5347] not anonymously so that that can connect
+[5350] with other friends of mine
+[5352] not anonymously and there's a reliable
+[5354] way to know
+[5355] that i'm real and they're real and that
+[5358] we're connecting and though it's kind of
+[5360] like um i liked it for the for the
+[5364] reasons that people like linkedin i
+[5366] guess
+[5367] but like without the form like not
+[5369] everybody is dressed up and being super
+[5371] polite like more like with friends
+[5374] but then it became something much bigger
+[5376] than that i suppose there's a feed it
+[5380] it became this um
+[5382] i mean it became a place to
+[5385] get
+[5386] discover content
+[5388] to share content that's not just about
+[5392] connecting directly with friends i mean
+[5393] it becomes something else i don't even
+[5395] know what it is really so you said
+[5397] instagram is a place where you visually
+[5399] share your
+[5400] life
+[5402] what is facebook
+[5403] well let's go back to the founding of
+[5405] facebook and why it worked really well
+[5407] initially at harvard and then dartmouth
+[5410] and stanford and i can't remember
+[5412] probably mit there were like a handful
+[5414] of schools in that first tranche right
+[5416] um
+[5417] it worked because there are communities
+[5419] that exist in the world
+[5421] that want to transact and when i say
+[5423] transact i don't mean commercially i
+[5425] just mean
+[5426] they want to share they want to
+[5427] coordinate they want to communicate they
+[5429] want a space for themselves
+[5431] and facebook at its best i think
+[5435] is that and if actually you look at the
+[5437] most popular products that facebook has
+[5439] built over time
+[5441] if you look at things that like groups
+[5444] marketplace groups is enormous yeah and
+[5447] groups is effectively like everyone can
+[5450] found their own little stanford or
+[5451] dartmouth or mit right and and find each
+[5454] other and and
+[5455] and share and communicate about
+[5457] something that matters deeply to them
+[5460] that is the core of what facebook was
+[5463] built around and i think today
+[5465] is where it stands most uh most strongly
+[5468] yeah it's brilliant the groups i wish um
+[5472] i wish groups were done better it feels
+[5473] like it's not a first-class citizen i
+[5476] know
+[5477] i may be saying something without much
+[5479] knowledge but
+[5480] it feels like it's uh it's kind of
+[5482] bolted on
+[5484] while being used a lot it feels like
+[5486] there needs to be a little bit more
+[5488] structure in terms of discovery
+[5490] in terms of
+[5492] yeah like i mean look at reddit like red
+[5494] is basically groups yeah public and open
+[5496] and a little bit a little bit crazy
+[5498] right in a good way yeah um but there's
+[5501] clear product market fit for that
+[5503] specific use case and it doesn't have to
+[5505] be a college it can be anything it can
+[5507] be a small group big group it can be
+[5508] group messaging
+[5510] facebook shines i think when it leans
+[5512] into that i think when there are other
+[5514] companies
+[5516] that just seem exciting and now all of a
+[5519] sudden the product shifts in some
+[5521] fundamental way to go
+[5523] try to compete with that other thing
+[5525] that's when i think consumers get
+[5527] confused
+[5528] um even if you can be successful like
+[5530] even if you can compete with that other
+[5532] company even if you can
+[5534] figure out how to bolt it on eventually
+[5536] you come back and you look at the app
+[5537] and you're like i just don't know why i
+[5539] opened this app like why like too many
+[5542] things going on and that was always a
+[5544] worry i mean you listed all the things
+[5545] at instagram and it almost gave me a
+[5546] heart attack like
+[5549] way too many things but i don't know
+[5550] entrepreneurs get bored they want to add
+[5552] things they want to like right um
+[5555] i don't have a good answer for it except
+[5557] for that um
+[5559] i think being true to your original use
+[5561] case and not even original use case but
+[5563] sorry actually not use case original job
+[5566] there are many use cases under that job
+[5569] being true to that and like being really
+[5571] good at it over time and and morphing as
+[5574] as needs change
+[5577] i think that's how to make a company
+[5578] last forever and
+[5580] i mean honestly i like
+[5582] my main thesis about why facebook is in
+[5585] the position it is today
+[5587] is
+[5588] if if they have had a series of product
+[5591] launches that delighted people over time
+[5596] i think they'd be in a totally different
+[5597] world so just like imagine for a moment
+[5600] and by the way apple's entering this but
+[5601] like
+[5602] apple for so long just like product
+[5604] after product you couldn't wait for it
+[5606] you stood in line for it you talked
+[5608] about it you got excited
+[5609] amazon makes your life so easy it's like
+[5612] wow
+[5613] i needed this thing and it showed up at
+[5614] my door two days later and like
+[5617] both of these companies by the way
+[5619] amazon apple have issues right there are
+[5621] labor issues
+[5623] whether it's here in the us or in china
+[5625] there are environmental issues there are
+[5628] but like when's the last time you heard
+[5629] like a large chorus being like
+[5632] these companies better pay for what
+[5634] they're doing on these things right
+[5636] i think facebook's main issue today is
+[5638] like i
+[5639] you need to produce a hit if you don't
+[5642] produce hits
+[5643] it's really hard to keep consumers on
+[5645] your side then people just start picking
+[5647] on you and for a variety of reasons
+[5649] whether it's right or wrong i'm not even
+[5651] going to place a judgment right here
+[5652] right now i'm just going to say that
+[5656] it is way better to be in a world where
+[5657] you are producing hits and consumers
+[5660] love what you're doing
+[5661] because then they're on your side and i
+[5663] i think that's it's
+[5665] the past 10 years for facebook has been
+[5668] fairly hard on this dimension so and by
+[5670] hits it doesn't necessarily mean
+[5672] financial hits it feels like to me what
+[5674] you're saying is something that brings a
+[5676] joy yeah a product that brings joy to
+[5678] some fraction of the population yeah i
+[5680] mean
+[5681] tick tock isn't just literally an
+[5683] algorithm
+[5685] in some ways tick tock's content uh and
+[5688] algorithm have more sway now over the
+[5691] american psyche than facebook's
+[5693] algorithm right it's visual it's video
+[5696] by the way it's not defined by who you
+[5698] follow it's defined by some magical
+[5700] thing that by the way if someone wanted
+[5702] to tweak to show you a certain type of
+[5703] content for some reason they could right
+[5707] um
+[5708] but people love it
+[5710] so as a ceo let me ask you a question
+[5713] because leadership matters
+[5717] it's a complicated question
+[5719] why is mark zuckerberg distrusted
+[5722] disliked and sometimes even hated by
+[5725] many people in public
+[5728] right that is a complicated question um
+[5730] well the premise
+[5732] i'm not sure i agree with the premise um
+[5734] and i can i can expand that to include
+[5738] even a more mysterious question for me
+[5740] bill gates hmm
+[5744] what is the bill gates version of the
+[5746] question
+[5747] do you think people hate bill gates
+[5749] no distrust ah
+[5752] so uh take away one it's a checklist uh
+[5756] there's
+[5758] i think mark zuckerberg's distrust is
+[5760] the primary one but there's also like a
+[5762] like a dislike maybe hate is too strong
+[5765] award but just if you look at like
+[5768] the articles that are being written and
+[5769] so on
+[5772] there's a dislike and it makes it's
+[5774] confusing to me because it's like the
+[5776] public picks certain individuals and
+[5778] they
+[5779] and they attach certain kinds of
+[5781] emotions to those individuals yeah so
+[5783] someone once uh
+[5785] just recently said
+[5787] there's a strong case that founder-led
+[5789] companies have this problem and that a
+[5791] lot of mark's issues um come today come
+[5795] from the fact that he is a visible
+[5797] founder with this
+[5799] story
+[5800] that people have watched in both a movie
+[5802] and they followed along and he's this
+[5804] boy wonder kid who became one of the
+[5806] world's richest people and
+[5808] and he's no longer mark the person he's
+[5810] marked this this image of of a person
+[5813] with enormous wealth and power
+[5815] and in today's world we we have issues
+[5818] with enormous wealth and power for a
+[5821] variety of reasons one of which is we've
+[5822] been stuck inside
+[5824] you know for a year and a half two years
+[5827] uh one of which is a lot of people were
+[5829] really unhappy about not the last
+[5831] election but the last last election
+[5833] and where do you take out that anger who
+[5835] do you blame but the people in charge
+[5838] that's one example or one reason why i
+[5840] think
+[5841] um a lot of people
+[5844] uh express anger or resentment or
+[5846] unhappiness with
+[5848] with mark at the same time
+[5851] i don't know i pointed out to that
+[5852] person i was like well i don't know like
+[5854] i think a lot of people really like elon
+[5857] like
+[5858] ilana arguably like he kept his you know
+[5860] factory open here throughout covet
+[5861] protocols which arguably a lot of people
+[5865] would be against um
+[5867] while saying a bunch of uh
+[5869] crazy offensive things on the internet
+[5871] they still like basically you know
+[5874] gives the middle finger to the sec like
+[5876] on twitter and like
+[5878] i don't know i'm like well there's a
+[5879] founder and like people kind of like him
+[5882] i so i do think that
+[5884] the so like the the founder and slash
+[5888] ceo of a company that's a social network
+[5890] company is like an extra level of
+[5892] difficulty if if life is a video game
+[5895] you just chose the harder video game
+[5897] so i mean that's why it's interesting to
+[5899] ask you because you were the
+[5901] founder and the ceo oh yeah of a social
+[5903] network right challenge because exactly
+[5906] so but you're one of the rare
+[5910] even jack dorsey's disliked
+[5913] not to the degree but it just seems
+[5915] harder when you're running a social
+[5917] media company it's interesting i i never
+[5920] thought of jack as just like i think
+[5921] generally he's well respected um
+[5924] yeah i think so i i think you're right
+[5926] but like he's
+[5928] but he's not loved
+[5930] yeah
+[5931] and i feel like you i mean to me twitter
+[5933] is an incredible thing yeah
+[5935] again can i just come back to this point
+[5937] which seems over simplistic but like i
+[5940] really do think
+[5941] how a product makes someone feel yeah
+[5944] they ascribe that feeling to the founder
+[5947] yep
+[5948] uh
+[5949] so so make people feel good so think
+[5952] about it like let's just go with this
+[5953] thesis for a second sure i like it
+[5955] though um
+[5956] amazon's pretty utilitarian right it
+[5959] delivers brown boxes to your front door
+[5961] sure you can have alexa and you can have
+[5963] all these things right
+[5965] but in general it delivers stuff quickly
+[5968] to you at a reasonable price right
+[5971] i think jeff bezos is wonderfully
+[5973] wealthy thoughtful smart guy right but
+[5976] like people kind of feel that way about
+[5978] them they're like wow this is really big
+[5980] we're impressed that this is really big
+[5981] and
+[5982] but they he's doing the same space stuff
+[5985] elon's doing but they don't necessarily
+[5986] describe the same sense of wonder right
+[5989] um now let's take elon uh and again this
+[5991] is pet theory i don't have much proof
+[5993] other than my own intuition um
+[5996] he is literally about living the future
+[5999] mars space it's about wonder it's about
+[6002] going back to that feeling as a kid when
+[6004] you looked up to the stars and asked is
+[6006] there life out there people get behind
+[6009] that because it's a sense of hope and
+[6011] excitement and and innovation and like
+[6014] you can say whatever you want but we
+[6016] ascribe that emotion to that person
+[6018] now let's say you're on a social network
+[6021] and people make you kind of angry
+[6023] because they disagree with you or they
+[6024] say something ridiculous or they're
+[6026] living
+[6027] a fomo type life where you're like wow i
+[6028] wish i was doing that thing
+[6031] i think instagram if i were to think
+[6033] back by and large when i was there was
+[6036] not about fomo was not about this
+[6038] influence or economy although it
+[6040] certainly became that way closer to the
+[6042] end
+[6043] it was about the sense of wonder and
+[6045] happiness and beautiful things in the
+[6046] world and
+[6048] i don't know i mean like i don't want to
+[6049] have a blind spot but i don't think
+[6050] anyone had a strong opinion about one
+[6052] way or the other for the longest time
+[6054] the way people explain to me i mean if
+[6055] you want to go for toxicity you go to
+[6057] facebook or twitter if you want to go to
+[6060] make feel good about life you go to
+[6062] instagram to enjoy celebrate life though
+[6064] and my experience when talking to people
+[6065] is they gave me the benefit of the doubt
+[6067] because that but if your experience of
+[6069] the product is kind of makes you angry
+[6071] it's where you argue
+[6073] i mean a big part of jack might be that
+[6075] he wasn't actually the ceo for a very
+[6077] long time and only became recently so
+[6079] i'm not sure how much of the connection
+[6081] got made
+[6082] um
+[6083] but in general i mean if you hate you
+[6086] know
+[6088] i'm just thinking about other companies
+[6089] that aren't tech companies if you hate
+[6091] like what a company is doing or it makes
+[6093] you not feel happy
+[6096] i don't know like people are really
+[6097] angry about comcast or whatever are they
+[6099] even called comcast anymore it's like
+[6100] xfinity or something right they had to
+[6102] rebrand they they became meta right um
+[6106] it's like uh but my point is if it makes
+[6108] you that's beautiful yeah
+[6110] but the thing is
+[6113] this is me saying this i think your
+[6115] thesis is very
+[6117] strong and correct
+[6118] has elements of correctness but i still
+[6121] personally
+[6123] put some blame on individuals of course
+[6126] i think uh
+[6127] you said
+[6128] elon looking up there's something about
+[6131] childlike wander to him
+[6133] like to to his personality his character
+[6136] something about
+[6137] i think more so than others where people
+[6140] can trust them and there's uh i don't
+[6142] know santa pachai is an example of
+[6144] somebody who's like
+[6146] there's some kind
+[6147] it's it's hard to put into words but
+[6149] there's something about the human being
+[6152] where he's trustworthy yeah he's he's
+[6154] human
+[6156] in a way that uh connects to us and the
+[6158] same with uh
+[6159] sadji nadella i mean some of these folks
+[6163] um something about
+[6166] us is drawn to them even when they're
+[6167] flawed even like um so like your thesis
+[6171] really holds up for steve jobs because i
+[6173] think people didn't like steve jobs but
+[6175] like he delivered products
+[6177] that and then they fell in love every
+[6178] time
+[6181] i guess you could say that the ceo the
+[6183] leader is also a product
+[6185] and if they keep delivering a product
+[6187] that people like
+[6188] by being in public and saying things
+[6190] that people like that's also a way to
+[6193] make people happy
+[6194] but from a social network perspective it
+[6196] makes me
+[6197] wonder how difficult it is
+[6199] to explain to people why certain things
+[6201] happen like how to explain machine
+[6203] learning to explain why
+[6206] certain
+[6207] uh
+[6208] the
+[6210] the woke mob effect happens or the
+[6213] certain kinds of like bullying happens
+[6216] which is like
+[6217] it's human nature combined with
+[6219] algorithm and it's very difficult to
+[6221] control for how the spread of
+[6223] quote-unquote misinformation happens
+[6225] it's very difficult to control for that
+[6227] and to you so you try to decelerate
+[6229] certain parts and you create more
+[6231] problems then you solve and anything
+[6234] that looks at all like censorship can
+[6235] create huge amounts of problems that's
+[6237] the slippery slope and then you have to
+[6239] inject humans to oversee the machine
+[6242] learning algorithms and anytime you
+[6243] inject humans into the system it's gonna
+[6245] create a huge number of problems and i
+[6247] feel like it's up to the leader to
+[6248] communicate that effectively to be
+[6250] transparent
+[6252] uh first of all design products that
+[6254] don't have those problems and second of
+[6255] all when they have those problems to be
+[6257] able to communicate with them i guess
+[6259] that's all going to
+[6260] when you run a social network company
+[6263] your job is hard
+[6265] yeah
+[6265] i will say the one element that you
+[6267] haven't named that i think you're
+[6269] getting at is just bedside manner
+[6271] which steve jobs
+[6274] i never worked for him i never met him
+[6276] in person um
+[6278] had an enor like
+[6280] an uncanny ability in public to have
+[6282] bedside manner i mean some of the best
+[6284] clips of steve jobs
+[6286] are from like i would say
+[6288] maybe the 80s when he's on these stage
+[6290] and getting questions from the audience
+[6292] about life or
+[6294] and he'll take this question that is
+[6296] like how are you going to compete with
+[6297] blah and it's super boring and i don't
+[6299] even know the name of the coming and his
+[6301] answer is is if you just asked like your
+[6304] grandfather the meaning of life yeah
+[6307] yeah and you sit there and you're just
+[6308] like what like yeah and there's that
+[6310] bedside manner um
+[6313] and if you lack that or if that's just
+[6314] not intuitive to you
+[6316] uh i think that
+[6318] it can be a lot harder to gain the trust
+[6321] of people and then add on top of that
+[6323] missteps of companies right
+[6326] it's i don't know if you have any
+[6328] friends from the past where like maybe
+[6330] they crossed you once or like
+[6332] maybe you get back together and you're
+[6333] friends again but you just never really
+[6335] forget that thing it's human nature not
+[6337] to forget i'm russian you cost me one
+[6341] we solve the problem
+[6343] so my point is
+[6345] it there's
+[6347] humans don't forget and if there are
+[6349] times in the past where they feel like
+[6350] they don't trust the company or the
+[6352] company hasn't had their back
+[6355] that is really hard to earn back
+[6356] especially if you don't have that
+[6358] bedside manner um and again like i'm not
+[6361] attributing this specifically to mark
+[6362] because i think a lot of companies
+[6365] have this issue where
+[6368] one you have to be trustworthy as a
+[6370] company and live by it and live by those
+[6372] actions and then two i think you need to
+[6374] be able to be really relatable in a way
+[6376] that's very difficult if you're worth
+[6378] like what these people are it's really
+[6380] hard
+[6382] yeah
+[6383] jack does a pretty good job of this
+[6385] by being a monk but i also like jack
+[6388] issues attention like he's not out there
+[6390] almost on purpose he's just working hard
+[6393] doing square right like
+[6395] i literally shared a desk like this with
+[6397] him at audio i mean just normal guy who
+[6399] likes painting i like i remember he
+[6401] would leave early on like wednesdays or
+[6403] something to go to like a painting class
+[6406] yeah and he's creative he's thoughtful i
+[6409] mean
+[6410] money makes people like more creative
+[6412] and more thoughtful like extreme
+[6413] versions of themselves right um and this
+[6416] was a long long time ago
+[6417] uh you mentioned that he uh he asked you
+[6420] to do some kind of javascript thing
+[6422] we were working on some javascript
+[6424] together i like that's hilarious like
+[6426] pre-twitter early twitter days you and
+[6428] jack dorsey are in a room together
+[6431] talking about javascript solving some
+[6433] kind of menial problem terrible problems
+[6435] yeah i mean not terrible just like
+[6436] boring boring widget probably i think it
+[6438] was the odo widget we were working on at
+[6440] the time
+[6441] i'm surprised anyone paid me to be in
+[6443] the room as an intern because i didn't
+[6445] really provide any value i'm very
+[6446] thankful
+[6448] to anyone who included me back in the
+[6450] day uh it was very helpful so thank you
+[6452] for listening i mean is there uh
+[6455] odia that's a precursor to twitter
+[6458] first of all did you have any
+[6459] anticipation that this jack dorsey guy
+[6462] could be
+[6463] also a head of a major social network
+[6466] and um second did you learn anything
+[6468] from the guy that like did do do you
+[6470] think it's a coincidence that you two
+[6472] were in the room together
+[6475] and it's
+[6476] the coincidence meaning like
+[6478] why does the world play its game in a
+[6481] certain way were these two founders of
+[6483] social networks i don't know it's so
+[6485] weird right like i i mean it's also
+[6487] weird that
+[6490] mark showed up
+[6491] you know in our fraternity my sophomore
+[6493] year and
+[6494] we got to know each other then like long
+[6496] before instagram it's
+[6498] it's a small world but
+[6501] let me tell a fun story about jack um
+[6504] we're at odio and i don't know i think
+[6507] ev was feeling like people weren't
+[6509] working hard enough or something
+[6511] nice and
+[6513] i can't remember exactly what he he
+[6515] created this thing where every friday
+[6518] i don't know if it was every friday i
+[6520] only remember this happening once
+[6522] but he had us like a statuette it's like
+[6526] of mary and in the bottom it's it's
+[6529] hollow right and
+[6532] i remember on a friday he decided
+[6534] decided he was going to let everyone
+[6536] vote for who had worked the hardest that
+[6538] week
+[6539] we all voted closed ballot right we all
+[6541] put in a bucket and he tallied the votes
+[6544] and then whoever got the most votes as i
+[6547] recall got the statuette
+[6549] and in the statue it was a thousand
+[6551] bucks whereas i recall there was a
+[6553] thousand bucks tonight it might have
+[6554] been a hundred bucks but let's call it a
+[6555] thousand it's more exciting that way it
+[6556] felt like a thousand yeah it did to me
+[6558] for sure i actually got two votes i was
+[6560] very happy we were a small company but i
+[6562] as the intern i got at least two votes
+[6563] so everybody knew how many votes they
+[6565] got individually yeah yeah i think it
+[6567] was one of these self-accountability
+[6568] things anyway i remember jack just
+[6571] getting like the vast majority of votes
+[6573] from everyone
+[6574] and i remember just thinking like
+[6576] like i couldn't imagine he would become
+[6578] what he'd become and do what he would do
+[6580] but i had a profound respect that
+[6584] the new guy
+[6585] who i really liked
+[6587] worked that hard and you could see his
+[6589] dedication even then and that people
+[6592] respected him
+[6593] that's the one story that i remember of
+[6595] him like working with him specifically
+[6597] from that summer can take a small
+[6598] tangent on that of course there's kind
+[6600] of a push back in silicon valley a
+[6602] little bit against hard work
+[6604] can you speak to the sort of
+[6607] the thing you admire to see the new guy
+[6609] working so hard that thing
+[6611] what is the value of that thing in a
+[6612] company see this is i like just to be
+[6615] very frank it drives me nuts like
+[6619] i saw this really funny video on tick
+[6621] tock was it on tick tock it was like i'm
+[6623] taking a break from my mental health to
+[6624] work on my career i thought that was
+[6626] funny
+[6627] um
+[6628] [Laughter]
+[6629] yeah so it's like oh it is kind of
+[6630] phrased that way the opposite often
+[6632] right yeah um okay so a couple things
+[6635] uh
+[6637] i uh
+[6639] i have worked so hard
+[6642] to do the things that i did like
+[6644] mike and i lost years off of our lives
+[6647] staying up late figuring things out
+[6650] the stress that comes with the job i
+[6651] have a lot more gray hair now than i did
+[6653] back then
+[6654] it requires an enormous amount of work
+[6656] and most people aren't successful right
+[6659] but even the ones that do don't skate by
+[6662] um
+[6664] i am okay if people choose not to work
+[6666] hard because i don't actually think
+[6668] there's anything in this world that says
+[6669] you have to work hard um
+[6672] but i do think that great things require
+[6675] a lot of hard work so there's no way you
+[6677] can expect to change the world without
+[6678] working really hard and by the way
+[6680] even changing the world
+[6682] you know the folks that i respect the
+[6683] most have nudged the world in like a
+[6685] slight direction
+[6687] slight
+[6688] very very slight
+[6690] like
+[6691] even if elon accomplishes all the things
+[6693] he wants to accomplish we will have uh
+[6695] have nudged the world in a slight
+[6697] direction but it requires enormous
+[6699] amount there was an interview with him
+[6701] where he was just like
+[6703] he was interviewed i think at the tesla
+[6704] factory and he was like
+[6706] work is really hard this is actually
+[6708] unhealthy
+[6709] and i can't recall the exact but he was
+[6711] like visibly shaken about how hard he
+[6713] had been working and he was like this is
+[6714] bad
+[6715] and unfortunately i think to have great
+[6717] outcomes you actually do need to work at
+[6718] like three standard deviations above the
+[6720] mean
+[6721] but there's nothing saying that people
+[6723] have to go for this the thing is but
+[6725] what i would argue this is my personal
+[6727] opinion is nobody has to do anything
+[6729] first of all exactly they certainly
+[6730] don't have to work hard exactly but
+[6733] i think
+[6735] hard work in a company should be admired
+[6739] i do too and you should not feel
+[6742] like
+[6744] you shouldn't feel good about yourself
+[6746] for not working hard
+[6749] like
+[6749] so for example i don't have to work out
+[6752] i don't have to run
+[6754] i hate running
+[6755] but like i certainly don't feel good if
+[6758] i don't run because i know for my health
+[6759] like there's certain values i guess is
+[6761] what i'm trying to get right the the
+[6763] certain values that you have in life it
+[6764] feels like there's certain values that
+[6766] companies should have and hard work is
+[6767] one of the things um
+[6769] i think that should be admired i often
+[6771] ask this kind of silly question
+[6774] uh just just to get a sense of people
+[6776] one that like if i'm hiring and so on i
+[6778] just ask if they uh think it's better to
+[6780] work hard or work smart
+[6782] it was helpful for me to
+[6784] get a sense of people from that
+[6787] because you think like the right both
+[6789] was that the answer was the answer's
+[6791] both i usually try not to give them that
+[6793] but sometimes i'll say both if that's an
+[6796] option but a lot of people kind of
+[6799] a surprising number will say work smart
+[6801] and they're usually people who don't
+[6804] know how to work smart
+[6806] and uh they're they're literally just
+[6808] lazy
+[6809] not just there's two there's two effects
+[6811] behind that it's one is laziness and the
+[6813] other
+[6814] is
+[6815] ego
+[6817] when you're younger and you say it's
+[6818] better to work smart it means
+[6821] you think you know what it means to work
+[6824] smart at this early stage
+[6826] to me people that say work hard or both
+[6829] they have the humility to understand
+[6831] like i'm going to have to work my ass
+[6834] off because i'm too dumb to know how to
+[6835] work smart and people who are
+[6837] self-critical in this way in some small
+[6839] amount you have to have some confidence
+[6841] but
+[6842] you have if you have humility that means
+[6844] you're going to actually eventually
+[6845] figure out what it means to work smart
+[6847] and then to actually be successful you
+[6849] should do both
+[6851] so
+[6851] i have a very particular take on this
+[6853] which is that um
+[6857] no one's forcing you to do anything all
+[6860] choices have consequences
+[6862] so
+[6863] if you major in
+[6864] i don't know theoretical literature i i
+[6867] don't even know if that's a major i'm
+[6868] just making something up as opposed to
+[6870] regular literature like if but like
+[6872] literature yeah think about like like
+[6874] theoretical yeah
+[6876] spanish lit from the 14th century like
+[6879] just make make up your esoteric thing
+[6881] and then the number of people i went to
+[6883] stanford with who get out in the world
+[6884] are like wait what i can't find a job
+[6887] like no one wants a theoretical like
+[6890] there are plenty of counter examples of
+[6891] people have majored in esoteric things
+[6893] and gone on to be very successful so i
+[6894] just want to be clear it's not about the
+[6896] major but
+[6897] every choice you make
+[6899] whether it's to have kids like
+[6901] i love my children it's so awesome to
+[6903] have two kids and it is so hard to work
+[6906] really hard and also have kids it's
+[6908] really hard and there's a reason why
+[6910] certain very successful people like
+[6912] don't have are not successful but people
+[6914] who run very very large companies or
+[6916] startups have chosen not to have kids
+[6918] for a while or chosen not to like
+[6920] prioritize them
+[6921] everything's a choice and like i choose
+[6923] to prioritize my children because like i
+[6925] want to do that right
+[6927] so everything's a choice
+[6930] now once you've made that choice
+[6932] i think it's important that the contract
+[6935] is clear which is to say let's imagine
+[6937] you were joining a new startup
+[6940] it's important that that startup
+[6942] communicate that like the expectation is
+[6944] like we're all working really really
+[6945] hard right now you don't have to join
+[6947] the startup
+[6948] but like if you do just know like you're
+[6951] it's almost as if you join i don't know
+[6953] pick your uh
+[6955] pick your pick your like sports team
+[6957] like let's go back to the yankees for a
+[6959] second
+[6960] you want to join the yankees but you
+[6962] don't really want to work that hard you
+[6963] don't really want to do batting practice
+[6965] or pitching practice or whatever for
+[6967] your position right
+[6968] um
+[6969] that to me is wacko and that's actually
+[6972] the world that it feels like we live in
+[6973] in tech sometimes where people both want
+[6976] to work for the yankees because it pays
+[6977] a lot but like don't actually want to
+[6979] work that hard
+[6981] that i don't fully understand because if
+[6983] you sign up for some of these things
+[6985] just sign up for it but it's okay if you
+[6987] don't want to sign up for it there's so
+[6989] many wonderful careers in this world
+[6991] that don't require 80 hours a week but
+[6993] when i read about companies going to
+[6994] like four day work weeks and stuff i
+[6996] just like i chuckle because i can't get
+[6999] enough done with a seven day week i
+[7001] don't know how
+[7002] and people will say oh you're just not
+[7004] working smart and it's like no i i work
+[7006] pretty smart i think in general like i
+[7008] would have gotten to this point if i
+[7009] hadn't like some amount of working smart
+[7012] and there is balance though so i used to
+[7014] be like a pretty big cyclist i don't do
+[7016] it much anymore just because of kids and
+[7018] like prioritizing other things right
+[7021] but one of the most important things to
+[7022] learn as a cyclist is to take a rest day
+[7026] but to me and to cyclists like resting
+[7028] is a function of optimizing for the long
+[7031] run
+[7032] it's not like a thing that you do for
+[7034] its own merits
+[7036] it's actually like if you don't rest
+[7037] your muscles don't recover and then
+[7038] you're just not as like you're not
+[7040] training as efficiently you should
+[7041] probably the the successful people i've
+[7044] known in terms of athletes they hate
+[7045] rest days
+[7046] but they know they have to do it for the
+[7048] long term like absolutely they think
+[7050] their opposition is getting stronger and
+[7052] stronger and that's the feeling but you
+[7054] know it's the right thing and usually
+[7056] you need a coach to help you yeah
+[7058] totally so i mean i use this thing
+[7060] called training peaks and it's
+[7061] interesting because it actually
+[7062] mathematically shows like where you are
+[7064] on the curve and all this stuff
+[7066] yeah but you have to re like you have to
+[7068] have that rest but it it's a function of
+[7070] going harder for longer again it's this
+[7072] reinforcement learning like planning the
+[7075] aggregate and long but a lot of people
+[7077] will hide behind laziness by saying that
+[7079] they're trying to optimize for the long
+[7080] run and they're not they're just not
+[7081] working very hard but again you don't
+[7083] have to sign up for it it's totally cool
+[7085] like i don't think less of people for
+[7087] like not working super hard just like
+[7089] don't sign up for things that require
+[7090] working super hard and some of that
+[7092] requires for the leadership to have the
+[7094] guts the boldness to communicate
+[7096] effectively at the very beginning i mean
+[7098] sometimes i think
+[7099] most of the problems arise from the fact
+[7101] that the
+[7102] leadership is kind of hesitant
+[7104] to to communicate this the socially
+[7108] um difficult
+[7110] truth of what it takes to be
+[7112] at this company so they kind of
+[7114] say hey come come with us there's we
+[7116] have snacks you know
+[7118] but unlimited vacation and yeah you know
+[7121] uh ray at bridgewater is always
+[7123] fascinating because you know people
+[7125] it's been called like a cult on the
+[7127] outside or cultish and
+[7129] but what's fascinating is like they just
+[7131] don't give on their principles they're
+[7132] like listen this is what it's like to
+[7134] work here we record every meeting
+[7137] we're like brutally honest
+[7139] and that's not gonna feel right to
+[7140] everyone and if it doesn't feel regular
+[7142] totally cool
+[7143] just go work somewhere else but if you
+[7145] work here you are signing up for this
+[7147] and that's that's been fascinating to me
+[7150] because it's honesty up front it's a
+[7152] system in which you
+[7154] operate
+[7155] um and if it's not for you like no one's
+[7157] forcing you to work there right
+[7159] i i actually did so i i did a
+[7161] conversation with him and uh
+[7163] kind of got stuck in a funny moment
+[7165] which is uh
+[7166] at the end i asked him you know to give
+[7168] me honest feedback of how i did on the
+[7170] interview
+[7171] and um
+[7173] i don't think so he was super nice
+[7176] he asked me
+[7177] he's like well tell me did you
+[7179] accomplish what you were hoping to
+[7180] accomplish i was like that's not that's
+[7183] not
+[7184] i'm asking you as an objective observer
+[7187] of two people talking how do we do today
+[7192] and then he's like well um he gave me
+[7194] this politician answer well i feel like
+[7196] we've accomplished successful
+[7197] communication of like ideas which is i'd
+[7200] like i've loved to spread some of the
+[7202] ideas
+[7203] in that like in principles and so on
+[7207] back to my original point it's really
+[7209] hard to get even for ray
+[7211] it's really hard to give feedback
+[7213] and one of the other things i learned
+[7214] from him and and
+[7216] just people in that world is like
+[7219] man humans really like to pretend like
+[7222] they've come to
+[7223] uh
+[7224] that they've come to some kind of
+[7226] meeting of the minds like if there's
+[7227] conflict if you and i have conflict
+[7229] it's always better to meet face to face
+[7231] right we're on the phone slack is not
+[7234] great right email's not great but face
+[7236] to face what's crazy is you and i get
+[7238] together and we actively try to even if
+[7240] we're not actually solving the conflict
+[7242] we actively try to paper over the
+[7244] conflict oh yeah it didn't really bother
+[7247] bothering me that much oh yeah i'm sure
+[7249] you didn't mean it i'm sure but like
+[7251] no in our minds we're still there yeah
+[7253] um so this is one of the things that as
+[7255] a leader you always have to be digging
+[7258] especially as you straight to the
+[7260] conflict yeah but as you ascend no one
+[7262] wants to tell you you're crazy no one
+[7263] wants to tell you your idea is bad
+[7266] and you can you're like oh oh i'm going
+[7268] to be a leader and the idea is well i'm
+[7270] just going to ask people no one tells
+[7272] you
+[7273] so like you have to look for the markers
+[7276] knowing that literally just people
+[7278] aren't going to tell you along the way
+[7280] and be paranoid i mean you asked about
+[7282] selling you know the company i think one
+[7284] of the biggest differences between me
+[7285] and a lot of other entrepreneurs is like
+[7288] i wasn't completely confident we could
+[7289] do it like we could be
+[7292] alone and and
+[7294] and actually be great and if any
+[7296] entrepreneur is honest with you they
+[7297] also feel that way but a lot of people
+[7299] are like well i have to be cocky and
+[7301] just say
+[7302] i can do this on my own we're going to
+[7304] be fine we're going to crush everyone
+[7306] some people do say that and then it's
+[7308] not right and they and they fail
+[7310] but um
+[7312] being honest in that moment
+[7314] with yourself with the those close to
+[7316] you and also uh you talked about the
+[7319] personality of leaders and and who
+[7321] resonates and who doesn't
+[7324] it's rare that i see
+[7326] leaders be vulnerable
+[7328] rare
+[7329] and
+[7330] one thing i tried to do at instagram at
+[7332] least internally
+[7334] was like say when i screwed up
+[7336] and like point out how i was wrong about
+[7338] things and point out where my judgment
+[7340] was off
+[7342] everyone thinks they have to bat a
+[7343] thousand
+[7345] right like
+[7346] that's crazy the best quant hedge funds
+[7348] in the world bat
+[7349] 50.001 percent they just take a lot of
+[7352] bets right renaissance
+[7355] they might they might bat fifty one
+[7356] percent right but
+[7359] holy hell like the question isn't are
+[7361] you right every single time and you have
+[7363] to seem invincible
+[7366] the question is how many at-bats do you
+[7367] get and on average are you are you
+[7370] better on average
+[7372] right
+[7373] with enough bets and enough at bats that
+[7375] your aggregate can be very high
+[7378] i mean steve jobs was wrong at a lot of
+[7380] stuff
+[7381] the newton was too early right next not
+[7384] quite right
+[7385] um there was even a time when he said
+[7387] like no one will ever want to watch
+[7389] video
+[7390] on the ipod
+[7393] totally wrong
+[7394] but who cares if you come around and
+[7396] realize your mistake and fix it
+[7398] it becomes just like you said harder and
+[7399] harder when your ego grows and the
+[7401] number of people around you that say
+[7403] positive things towards you
+[7405] grows and i actually think it's really
+[7407] valuable that
+[7409] like let's manage and a counter factual
+[7411] where instagram became worth like 300
+[7413] billion or something crazy right
+[7416] um
+[7417] i kind of like that my life is
+[7418] relatively normal now when i say
+[7420] relatively you get what i mean i'm not
+[7422] making a claim that i live a normal life
+[7424] but like i certainly don't live in a
+[7425] world where there are like 15 sherpas
+[7428] following me like fetching me water or
+[7430] whatever like that's not how it works i
+[7432] actually like that i
+[7434] have a sense of humility of like i may
+[7436] not found another thing that's nearly as
+[7438] big so i have to work twice as hard
+[7441] or i have to like learn twice as much i
+[7444] have to re
+[7445] my we haven't talked about machine
+[7446] learning yet but my favorite thing is
+[7448] all these like famous
+[7451] you know uh tech guys who have worked in
+[7454] the industry pontificating about the
+[7456] future of machine learning and how it's
+[7457] gonna kill us all and right like
+[7459] and like i'm pretty sure they've never
+[7461] tried to build anything with machine
+[7463] learning themselves yes
+[7465] so there's a nice line between people
+[7467] that actually built stuff with the
+[7469] machine like actually program something
+[7471] or at least understand some of those
+[7472] fundamentals and the people they're just
+[7475] saying philosophical stuff for
+[7476] journalists and so on it's it's a it's
+[7479] an interesting line to walk because the
+[7481] people who program
+[7482] are often not philosophers
+[7484] or don't have the attention they can't
+[7486] write an op-ed for the wall street
+[7487] journal like it doesn't work so like
+[7489] it's nice to be both a little bit like
+[7491] to have elements of both my point is the
+[7494] fact that i have to learn stuff from
+[7495] scratch or or that i choose to are like
+[7498] it's humbling uh
+[7499] yeah i mean again
+[7501] i have a lot of advantages i like
+[7504] but my point is it's awesome to be
+[7508] back in a game where you have to fight
+[7511] that is that's fun so being humble being
+[7514] vulnerable
+[7516] it's an important aspect of leader and i
+[7518] hope it serves me well but like i can't
+[7520] fast forward 10 years to now i'm just
+[7522] that's my game plan
+[7523] before i forget i have to ask you one
+[7525] last thing on instagram
+[7528] what do you think about the
+[7529] whistleblower francis
+[7531] hogan recently coming out and saying
+[7533] that facebook is aware for instagram's
+[7536] harmful effect on teenage girls
+[7539] as per their own internal research
+[7542] studies and the matter what do you think
+[7543] about this
+[7545] baby of yours instagram being under fire
+[7547] now as we've been talking about
+[7550] under the leadership of facebook
+[7554] you know i often question
+[7557] where does the blame lie
+[7559] is the blame at the people
+[7562] that originated the network me
+[7565] right
+[7566] uh is the blame
+[7568] at like the decision to combine the
+[7569] network with
+[7571] another network with a certain set of
+[7573] values
+[7575] is the blame
+[7577] at how it gets run after i left like is
+[7580] is it the driver or is it the car
+[7582] right
+[7583] um
+[7585] is it that someone enabled these devices
+[7587] in the first place if you go to an
+[7590] extreme right
+[7591] or is it the
+[7593] users themselves just human nature is it
+[7596] is it just the way of human nature sure
+[7597] and like the idea that we're gonna find
+[7599] a mutually exclusive answer here is
+[7601] crazy there's not one place it's a
+[7603] combination of a lot of these things
+[7605] and then the question is like is it true
+[7607] at all right like i'm not actually
+[7609] saying that's not true or that it's true
+[7612] but
+[7613] there's always more nuance here
+[7615] do i believe that social media has an
+[7618] effect on young people well it's got it
+[7620] they use it a lot
+[7622] and i bet you there are a lot of
+[7623] positive effects and i bet you there are
+[7624] negative effects just like any
+[7626] technology
+[7627] and where i've come to in my thinking on
+[7629] this is that i think any technology has
+[7632] negative side effects the question is as
+[7634] a leader what do you do about them and
+[7636] are you actively working on them or do
+[7638] you just like not really believe in them
+[7640] if you're a leader that sits there and
+[7642] says well we're going to put an enormous
+[7643] amount of resources against this we're
+[7646] going to acknowledge when there are
+[7648] true criticisms we're going to be
+[7650] vulnerable that we're not perfect
+[7652] and we're going to go fix them and we're
+[7653] going to be held accountable along the
+[7655] way
+[7657] i think that people generally really
+[7658] respect that
+[7661] but i think that where facebook i think
+[7663] has had issues in the past is where they
+[7665] say things like i can't remember what
+[7667] mark said about misinformation during
+[7669] the election there was that like famous
+[7670] quote where he's like
+[7672] it's pretty crazy to think that facebook
+[7674] had anything to do with this election
+[7675] like that was something like that quote
+[7676] and i don't remember what stage he was
+[7678] on and yeah yeah
+[7680] but ooh that did not age well right like
+[7684] you have to be willing to say well maybe
+[7686] there's there's there's something there
+[7688] and and wow like i want to go look into
+[7690] it and truly believe it in your gut but
+[7692] if people look at you and how you act
+[7694] and what you say and don't believe
+[7696] you truly feel that way
+[7698] it's not just the words you say about
+[7699] how you say them and that people believe
+[7701] that you actually feel the pain of
+[7703] having caused any suffering so to me
+[7705] it's um it's much more about your
+[7708] actions
+[7709] and your posture post event than it is
+[7711] about debugging the why because i don't
+[7713] know is it
+[7715] like i don't know this research it was
+[7716] written well after i left right like
+[7719] is it the algorithm is it the explorer
+[7721] page is it the people you might know
+[7724] unit connecting you to you know ideas
+[7726] that are dangerous like i i really don't
+[7728] know yeah um
+[7731] so we'd have to have a much deeper
+[7733] i think dive to understand where the
+[7735] blame lies what's very unpleasant to me
+[7737] to consider now i don't know if this is
+[7739] true but to consider the very fact that
+[7742] there might be some complicated games
+[7745] being played here for example you know
+[7747] as somebody i really love psychology
+[7750] and
+[7751] i love it enough to know that the field
+[7753] is pretty broken in the following way
+[7755] it's very difficult to study human
+[7757] beings well at scale because the
+[7760] questions you ask affect the results you
+[7762] can you can basically get any results
+[7764] you want and so you have an internal
+[7766] facebook study that asks some question
+[7768] of which we don't know the full details
+[7770] there's some kind of analysis
+[7772] but that's just the one little tiny
+[7774] slice into a some much bigger picture
+[7776] and so you can have
+[7778] thousands of employees of facebook one
+[7781] of them comes out and picks whatever
+[7783] narrative knowing that they become
+[7785] famous coupled with the other really
+[7787] uncomfortable thing i see in the world
+[7790] which is journalists seem to understand
+[7793] they get a lot of click-bait attention
+[7795] from saying something negative about
+[7797] social networks certain companies like
+[7799] they even get some
+[7801] some click-bait stuff
+[7803] about tesla or about
+[7806] especially when it's like when there's a
+[7808] public famous ceo type of person if they
+[7811] get a lot of views on the negative not
+[7813] the positive the positive they'll get i
+[7816] mean it actually goes to the thing you
+[7817] were saying before if there's a hot sexy
+[7819] new product
+[7820] that's great to look forward to they get
+[7822] positive on that but absent the product
+[7825] it's nice to have
+[7826] uh like the ceo messing up with some
+[7829] kind of way and so
+[7831] couple that with the whistleblower and
+[7833] with the
+[7834] uh
+[7835] this whole dynamic of journalism and so
+[7837] on you know uh with social dilemma being
+[7840] a really popular documentary it's like
+[7843] all right
+[7844] my concern is there's deep
+[7846] flaws in human nature here in terms of
+[7849] things we need to deal with like the
+[7851] nature of hate yeah of bullying all
+[7854] those kinds of things and then there's
+[7856] people who are trying to use that
+[7859] potentially to become famous and make
+[7862] money off of
+[7864] off of blaming others for causing more
+[7866] of the problem as opposed to helping
+[7867] solve the problem so i don't know what
+[7869] to think i'm not saying this is like i'm
+[7871] just uncomfortable with i guess not
+[7874] knowing what to think about any of this
+[7876] because a bunch of folks i know that
+[7877] work at facebook
+[7879] on the machine learning side so young
+[7880] lacoon i mean they they're quite upset
+[7883] by what's happening because there's a
+[7885] lot of really brilliant good people
+[7887] inside facebook they're trying to yeah
+[7890] do good and so like all of us impressed
+[7892] jan is one of them and he has an amazing
+[7894] team of the machine learning researchers
+[7895] like
+[7896] he's really upset with the fact that
+[7898] people don't seem to understand
+[7900] that this this is not the portrayal does
+[7902] not represent the the full nature of
+[7904] efforts that's going on facebook so i
+[7906] don't know what to think about that well
+[7908] you just i think
+[7910] very helpfully explained the nuance of
+[7913] the situation and why it's so hard to
+[7914] understand
+[7916] but a couple things one is um
+[7920] i think i i have been surprised at
+[7924] the scale with which
+[7928] some
+[7929] product manager
+[7931] can do an enormous amount of harm to a
+[7934] very very large company
+[7937] by releasing a trove of documents like i
+[7939] i think i read a couple of them when
+[7941] they got published i haven't even spent
+[7942] any time going deep part of it's like i
+[7944] don't really feel like reliving a
+[7946] previous life but um
+[7949] wow
+[7950] like talk about
+[7952] challenging the idea of open culture and
+[7954] like what that does to facebook
+[7956] internally if facebook was built like i
+[7958] remember um
+[7960] like my office
+[7962] uh
+[7963] we had this like no visitors rule around
+[7965] my office because we always had like
+[7966] confidential stuff up on the walls and
+[7968] never was super angry because they're
+[7970] like that goes against our culture of
+[7972] transparency and like mark's in the fish
+[7974] cube or whatever they call it the
+[7975] aquarium i think they called it um where
+[7977] like literally anyone could see what he
+[7979] was doing at any point and
+[7981] um
+[7982] and i don't know i mean other companies
+[7984] like apple have been
+[7985] quiet slash lockdown snapchats the same
+[7988] way for
+[7989] a reason and
+[7992] i don't know what this does to
+[7993] transparency on the inside of startups
+[7995] that value that i think that it's a
+[7997] seminal moment
+[7999] and you can say well you should have
+[8000] nothing to hide right but to your point
+[8003] you can pick out documents that show
+[8005] anything right
+[8006] um but i don't know so
+[8008] what happens to transparency inside of
+[8010] startups and the culture that
+[8012] will have
+[8013] that that startups or companies in the
+[8015] future will grow like the startup of the
+[8017] future that becomes the next facebook
+[8019] will be locked down and what does that
+[8020] do
+[8021] right so that's part one part two
+[8026] like i i don't think that you could
+[8028] design
+[8029] a more like
+[8030] uh uh
+[8032] well-orchestrated
+[8034] handful of events from the like 16
+[8036] minutes to
+[8038] um releasing the documents in the way
+[8041] that they were released at the right
+[8042] time
+[8044] that takes a lot of planning and
+[8045] partnership and it seems like she has a
+[8047] partner at some firm right that probably
+[8050] uh helped a lot with this but
+[8053] man as at a personal level if you're her
+[8056] you'd have to really believe in what you
+[8059] are doing
+[8060] really believe in it because you are
+[8062] personally putting your ass on the line
+[8064] right like you've got a
+[8067] very large company
+[8068] that that doesn't like enemies right um
+[8073] it takes a lot of guts
+[8075] uh and
+[8077] i don't love these conspiracy theories
+[8079] about like oh she's being financed from
+[8080] some person or people like i don't love
+[8082] them because that's like the easy thing
+[8084] to say
+[8085] i think the the the occam's razor here
+[8088] is like someone thought they were doing
+[8089] something wrong
+[8091] and was like very very courageous in in
+[8095] i don't know if courageous is the word
+[8097] but like so
+[8099] without getting into like is she a
+[8101] martyr is she courageous is she right
+[8103] like let's put that aside for a second
+[8104] yeah
+[8105] then there are the documents themselves
+[8107] they say what they say
+[8109] to your point
+[8110] a lot of the things that like people
+[8112] have been worried about
+[8113] already in the documents are or they're
+[8115] already been said externally and
+[8118] um
+[8119] i don't know i'm just like i'm i'm
+[8121] thankful that i am focused on new things
+[8123] with my life
+[8125] well let me just say i just think it's a
+[8127] really hard problem that probably
+[8129] facebook and twitter are trying to solve
+[8132] i'm actually just fascinated by how hard
+[8134] this problem is there are fundamental
+[8136] issues at facebook in tone and in an
+[8139] approach of how product gets built and
+[8141] the objective functions and
+[8143] um
+[8144] and since people uh uh organizations are
+[8147] not people so yawn and fair right like
+[8150] there are a lot of really great people
+[8151] who like literally just want to push
+[8153] reinforcement learning forward they
+[8155] literally just want to teach a robot to
+[8157] touch feel lift right like
+[8160] they're not thinking about political
+[8162] misinformation right yeah but there's a
+[8164] there's a strong connection between what
+[8166] funds that research and an enormously
+[8169] profitable machine
+[8171] uh that has trade-offs and
+[8174] uh one cannot
+[8176] one cannot separate the two you are not
+[8178] completely separate from the system
+[8181] so
+[8182] i agree it can feel really frustrating
+[8184] to feel if you're internally internal
+[8186] there that you're working on something
+[8188] completely unrelated and you feel like
+[8190] your group's good i can understand that
+[8192] but there's some responsibility still
+[8194] you have to acknowledge it's like the
+[8195] ray dalio thing you have to look in the
+[8197] mirror and see if there's problems and
+[8198] you have to fix those problems
+[8203] you mentioned machine learning
+[8204] reinforcement quite a bit i mean to me
+[8207] social networks is one of the exciting
+[8209] places
+[8210] recommender systems where machine
+[8211] learning is applied where else in the
+[8213] world
+[8215] in space of possibilities over the next
+[8216] 5 10 20 years do you think we're going
+[8218] to see impact of machine learning
+[8222] when you try on the philosophical level
+[8224] on a technical level what do you think
+[8227] or or within social networks themselves
+[8231] well i think the obvious answers are
+[8235] climate change right like think about
+[8237] how much fuel
+[8239] or or just waste there is in energy
+[8242] consumption
+[8243] today because
+[8245] we don't plan accordingly because we
+[8248] take the least efficient route or the
+[8250] logistics and stuff the supply chain all
+[8252] that kind of stuff yeah i mean
+[8254] listen if we're going to fight climate
+[8256] change like
+[8257] one really way
+[8258] one awesome way to do it is figure out
+[8260] how to optimize how we operate as a
+[8262] species and
+[8264] and minimize the amount of energy we
+[8266] consume to maximize whatever economic
+[8269] impact we want to have
+[8270] because right now those two are very
+[8272] much tied together and
+[8274] i don't believe that has to be the case
+[8276] there's this really interesting you've
+[8278] read it um
+[8279] for people who are listening there's
+[8281] this really interesting paper on
+[8282] reinforcement learning and energy
+[8284] consumption inside buildings it's like
+[8286] one of the seminal ones right um but
+[8288] imagine that at massive scale that's
+[8290] super interesting i mean they've done
+[8293] like resource planning for servers for
+[8295] peak load using reinforcement learning i
+[8297] don't know if that was at google or
+[8298] somewhere else but like okay great you
+[8300] do it for servers but what if you could
+[8302] do it for just capacity and general
+[8304] energy capacity for cities and planning
+[8306] for traffic and of course there's all
+[8308] the um self-driving cars and
+[8312] i don't know like i'm not going to
+[8313] pontificate like crazy ideas
+[8317] using reinforcement learning or machine
+[8319] learning it's just so clear to me that
+[8321] humans don't think quickly enough so
+[8323] it's interesting to think about machine
+[8325] learning
+[8326] helping a little bit
+[8328] at scale so a little bit to a large
+[8331] number of people that has a huge impact
+[8333] so if you optimize
+[8335] say google maps something like that
+[8337] trajectory planning or would it map
+[8339] quest first
+[8340] uh yeah getting here i looked and it was
+[8342] like here's the most energy efficient
+[8344] route i was like i'm gonna be late i
+[8345] need to take the fastest route as
+[8347] opposed to unrolling the map yeah yeah
+[8350] like and that's going to be very
+[8352] inefficient no matter what i was
+[8353] definitely the other day like part of
+[8355] the epsilon of epsilon greedy with waze
+[8358] where like i was sent on like a weird
+[8361] route that i could tell they're like we
+[8362] just need to collect data of this road
+[8365] like we just kevin's the ant they sent
+[8367] out kevin's definitely gonna be the
+[8369] guinea pig and great now we have did you
+[8372] at least feel pride oh going through it
+[8374] i was like oh this is fun like now they
+[8376] get data about this weird shortcut and
+[8378] actually i hit all the green lights and
+[8379] it worked and i'm like this is a problem
+[8382] data bad data they're just going to
+[8383] imagine i could see you slowing down and
+[8386] stopping in a green light just to give
+[8387] them the right kind of data yeah
+[8389] um but to answer your question like i
+[8391] feel like that was fairly unsatisfying
+[8393] and it's easy to say climate change but
+[8395] what i would say is
+[8397] at instagram everything we applied
+[8399] machining learning to uh got better for
+[8402] users and it got better better for the
+[8404] company i saw the power i didn't fully
+[8406] understand it as an executive and i
+[8408] think that's actually one of the issues
+[8410] that uh
+[8411] and when i say understand i mean the
+[8413] mathematics of it like i understand what
+[8414] it does i understand that it helps
+[8416] but um there are a lot of executives now
+[8420] that
+[8420] talk about it and the way that they talk
+[8422] about the internet or they talked about
+[8424] the internet like 10 years ago they're
+[8425] like we're gonna build mobile and you're
+[8427] like what does that mean they're like
+[8428] we're just gonna do mobile and you're
+[8429] like okay
+[8430] um so my sense is the next generation of
+[8433] leaders will have grown up having had
+[8435] classes
+[8436] in reinforcement learning supervised
+[8438] learning whatever
+[8440] and they will be able to thoughtfully
+[8442] apply it to their companies and the
+[8443] places it it is needed most
+[8446] and that's really cool because i mean
+[8448] talk about efficiency gains
+[8451] i it's
+[8452] that that's what excites me the most
+[8454] about it yeah so there's it's
+[8455] interesting just to get a fundamental
+[8458] first principles understanding of
+[8459] certain concepts of machine learning so
+[8461] supervised learning from an executive
+[8463] perspective supervised learning you have
+[8465] to have a lot of humans label a lot of
+[8467] data so the question there is okay can
+[8470] we gather
+[8471] a large amount of data that can be
+[8472] labeled well
+[8474] and that's the question tesla asks like
+[8476] can we create a data engine that keeps
+[8478] um
+[8480] sending an imperfect machine learning
+[8481] system out there whenever it fails it
+[8483] gives us data back we label it by human
+[8486] and we send it back and forth so this
+[8487] way then there is uh yamaha coons
+[8490] excited about this self-supervised
+[8491] learning where
+[8493] you do much less human labeling and
+[8496] there's some kind of mechanism for the
+[8498] system to learn it by itself on the on
+[8501] the human generated data and then
+[8503] there's the reinforcement learning which
+[8504] is like
+[8506] basically allowing it's it's applying
+[8508] the alpha zero uh technology that uh
+[8512] allowed through self-play
+[8514] to learn how to solve the game of go and
+[8517] and
+[8518] achieve incredible levels at the game of
+[8520] chess
+[8522] it can you formulate the problem you're
+[8524] trying to solve in a way that's amenable
+[8526] to reinforcement learning and can you
+[8528] get the right kind of signal at scale
+[8529] because you need a lot a lot of signal
+[8531] and that that's that's kind of
+[8533] fascinating to see which part of a
+[8535] social network can you convert into a
+[8537] reinforcement learning problem the
+[8539] fascinating thing about reinforcement
+[8541] learning i think
+[8543] is that we now have learned to apply
+[8547] uh neural networks to guess
+[8550] uh
+[8551] you know q func like the q function
+[8554] basically the values for any state in
+[8556] action
+[8557] and that is fascinating because we used
+[8559] to just like i don't know have like a
+[8561] linear regression like hope it worked
+[8562] and that was the fanciest version of it
+[8565] but now you look at it i'm like trying
+[8566] to learn this stuff and i look at it i'm
+[8568] like there are like 17 different
+[8570] acronyms of different ways you can try
+[8572] to apply this no one quite agrees like
+[8574] what's the best generally if you're
+[8576] trying to like build a neural network
+[8578] they're pretty well-trodden ways of
+[8580] doing that
+[8581] you use atom you use relu you use like
+[8585] there's just like general good ideas and
+[8587] in in reinforcement learning i feel like
+[8589] the consensus is like it totally depends
+[8593] and by the way it's really hard to get
+[8595] it to converge and it's noisy and it
+[8597] like
+[8598] so there are all these really
+[8599] interesting ideas around building
+[8601] simulators um
+[8603] you know like for instance in
+[8604] self-driving right like you
+[8606] don't want to like actually have someone
+[8609] get in an accident to learn that an
+[8610] accident is bad so you start simulating
+[8613] accidents simulating aggressive drivers
+[8615] they're simulating crazy dogs that run
+[8616] into the street and
+[8619] wow fascinating right like that my mind
+[8622] starts racing and then the question is
+[8623] okay forget about uh self-driving cars
+[8625] let's talk about uh social networks
+[8629] um how can you produce a better more
+[8631] thoughtful experience using these types
+[8634] of of algorithms and
+[8636] honestly in talking to some of the
+[8637] people that work at facebook and and old
+[8640] instagramers
+[8641] most people are like yeah we tried a lot
+[8643] of things didn't quite ever make it work
+[8645] i mean for the longest time facebook ads
+[8647] was effectively a logistic regression
+[8649] okay i don't know what it is now but
+[8651] like if you look at this paper they
+[8653] published back in the day it was
+[8654] literally just a logistic regression
+[8655] made a lot of money um
+[8658] so even at these like extremely large
+[8661] scales if we are not yet touching what
+[8663] reinforcement learning can truly do
+[8665] imagine what the next 10 years looks
+[8666] like yeah how cool is that it's amazing
+[8669] so i really like the use of
+[8671] reinforcement learning as part of the
+[8672] simulation for example
+[8674] like with self-driving cars it's
+[8676] modeling pedestrians so the nice thing
+[8678] about reinforcement learning
+[8680] it can be used to
+[8682] learn agents within the world
+[8684] so they can learn to behave properly
+[8686] like you can teach pedestrians to
+[8689] like you don't hard code the way they
+[8690] behave they learn how to behave in that
+[8693] same way i do have a hope was it jack
+[8695] dorsey talks about healthy conversations
+[8698] you talked about uh meaningful
+[8700] interactions i believe yeah
+[8703] like
+[8704] simulating interactions
+[8706] so you can learn how to manage that it's
+[8708] fascinating so where most of your
+[8710] algorithm development happens on in
+[8713] virtual worlds
+[8714] and then you can really learn how to
+[8716] design the interface how you design much
+[8719] of aspects of the experience
+[8721] in terms of the how you select what's
+[8723] shown in the feed all those kinds of
+[8724] things that
+[8726] it feels like if you can connect
+[8727] reinforce some learning to that that's
+[8728] super exciting yep and uh
+[8731] i think if you have if you have a
+[8733] company and leadership that believe in
+[8735] doing the right things and can apply
+[8736] this technology in the right way some
+[8739] really special stuff can happen
+[8741] it is mostly like
+[8742] likely going to be a group of people
+[8744] we've never heard about startup from
+[8746] scratch
+[8747] right um
+[8749] and and you asked if like new social
+[8750] networks could be built i
+[8752] i've got to imagine they will be and
+[8755] whoever starts it it might be some kids
+[8757] in a garage that took these classes from
+[8759] these people you right like
+[8762] and they're building
+[8763] all of these things with this tech at
+[8764] the core so i'm trying not to be someone
+[8767] who just like throws around
+[8769] reinforcement learning as a buzzword i
+[8772] truly believe that it is
+[8774] the most cutting edge
+[8776] in what can happen in social networks
+[8778] and i also believe it's super hard
+[8780] like it's super hard to make it work
+[8782] it's super hard to do it at scale it's
+[8784] super hard to find people that truly
+[8785] understand it
+[8786] so i'm not gonna say that like
+[8789] i think it'll be applied in social
+[8791] networks before we have true
+[8792] self-driving
+[8793] yeah
+[8794] let me put it that way we could argue
+[8795] about this for a long time but yes i
+[8797] agree with you so i think self-driving
+[8798] is way harder than people realize oh
+[8800] absolutely uh let me ask you in terms of
+[8802] that kid in the garage or those couple
+[8804] of kids in the garage what advice would
+[8806] you give to them if they want to start a
+[8807] new social network or
+[8809] a business what advice would you give to
+[8811] somebody with a big dream and a young
+[8814] startup
+[8816] to me you have to choose to do something
+[8819] that even if it fails like you you it
+[8822] was so fun right like
+[8825] we never started instagram knowing it
+[8826] was going to be big we started instagram
+[8828] because we loved photography we loved
+[8831] social networks i had seen what other
+[8833] social networks had done and i thought
+[8834] hmm maybe we did a spin on this but like
+[8838] nowhere was our feet predestined like it
+[8840] wasn't like
+[8841] it wasn't written out anywhere that
+[8843] everything was going to go great and i
+[8845] often think the counterfactual like what
+[8847] if it had not gone well i would've been
+[8849] like i don't know that was fun we raised
+[8850] some money we learned some stuff and
+[8853] and does it position you well for the
+[8855] next experience
+[8857] that's the advice that i would give to
+[8859] anyone wanting to start something today
+[8861] which is like
+[8862] does this meet with your ultimate goals
+[8865] not wealth not fame none of that because
+[8867] all of that by the way is bullshit like
+[8869] you can get super famous and super
+[8871] wealthy and
+[8873] i like i think generally those are not
+[8875] things that
+[8877] again it's easy to say with like a lot
+[8878] of money that somehow like it's not good
+[8880] to have a lot of money it's just
+[8882] i think that complicates life enormously
+[8884] in a way that people don't fully
+[8886] comprehend so i think it's way more
+[8887] interesting to shoot for can i make
+[8889] something that people love
+[8891] that provides value in the world that i
+[8893] love building that i love working on
+[8896] that i write that's um
+[8899] that's what i would do if i were
+[8900] starting from scratch and by the way
+[8902] like in some ways that i will do that
+[8904] personally which is like choose the
+[8906] thing that you get up every morning
+[8907] you're like i
+[8909] love this
+[8911] even when it's painful
+[8912] even when it's painful what about a
+[8915] social network specifically if you were
+[8917] to imagine
+[8918] put yourself in the mind of someone
+[8920] compete against myself i can't give out
+[8922] ideas okay i gotcha
+[8924] no but it's like high level you like
+[8926] focus on community yeah
+[8928] and yeah
+[8930] i i said that as a as a half joke um in
+[8934] all honesty i think these things are so
+[8936] hard to build that like ideas are a dime
+[8938] a dozen but um
+[8940] you have to i talked about keeping it
+[8941] simple
+[8942] can i tell you which is a liberating
+[8944] idea that model is yes it's three
+[8946] circles and they overlap one circle is
+[8949] uh what do i have experience at slash
+[8951] what am i good at i don't like saying
+[8953] what am i good at because it just like
+[8954] seems like
+[8955] what do i have experience in right what
+[8958] can i bring to the table what am i
+[8959] excited about is the other circle what
+[8962] gets what's just super cool right that i
+[8964] want to work on because even when this
+[8966] is hard
+[8967] um
+[8969] i think it's so cool i want to stick
+[8970] with it
+[8971] and the last circle is like what does
+[8973] the world need
+[8974] and if that circle ain't there it
+[8976] doesn't matter what you work on because
+[8977] there are a lot of startups that exist
+[8979] that just no one needs
+[8980] or very small markets need
+[8983] but if you want to be successful i think
+[8985] if you're like if you're good at it you
+[8987] have it sorry if you're good at it if
+[8989] you're passionate about it and the world
+[8991] needs it i mean this sounds simple but
+[8992] not enough people sit down and just
+[8994] think about those circles and think
+[8997] do these things overlapping can i get
+[8998] that middle section it's small but can i
+[9000] get that middle section
+[9001] um i think a lot about that personally
+[9005] and then you have to be really honest
+[9007] about the circle that you're good at
+[9011] and really honest about the circle
+[9014] that uh the world needs
+[9016] and i suppose really honest about the
+[9019] passion like what you actually love yeah
+[9022] as opposed to like some kind of dream of
+[9023] making money all those kind of stuff
+[9025] like literally love i had a former
+[9027] engineer who decided to start a startup
+[9029] and i was like are you sure you want to
+[9031] start a company versus like join
+[9032] something else
+[9034] because um
+[9036] being a coach of an nba team and playing
+[9039] basketball are two very very different
+[9040] things
+[9042] and like not everyone fully understands
+[9044] the difference
+[9045] i think you can kind of do it both
+[9047] um
+[9050] and i don't know jury's out on that one
+[9051] because like they're in the middle of it
+[9053] now so but it's really important to
+[9056] figure out what you're good at not be
+[9058] full of yourself like truly look at your
+[9060] track record
+[9062] um what's the saying like it ain't
+[9064] bragging if you could if if you can do
+[9066] it um
+[9069] but too many people
+[9071] are delusional and like think they're
+[9073] better at things than they actually are
+[9075] or think there's a bigger market than
+[9076] there actually is just
+[9078] when you confuse your passion for things
+[9080] with a big market that's really scary
+[9083] right like just because you think it's
+[9084] cool doesn't mean that it's a big
+[9086] business opportunity so like what
+[9087] evidence do you have again i'm a fairly
+[9089] like i'm a strict rationalist on this
+[9092] and like sometimes people don't like
+[9094] working with me because i'm pretty
+[9095] pragmatic about things like i'm not
+[9098] i'm not elon like i don't sit and make
+[9101] bold proclamations about visiting mars
+[9104] like that's just not how i work
+[9106] i'm like okay i want to build this
+[9107] really cool thing that's fairly
+[9108] practical and i think we could do it and
+[9111] it's in this way and what's cool though
+[9113] is like that's just my sweet spot i'm
+[9115] not like
+[9116] i just i can't i can't with a straight
+[9118] face talk about the metaverse i can't i
+[9120] just it's not me
+[9121] uh what do you think about the the
+[9124] facebook renaming it
+[9125] and that is a dick i just literally know
+[9127] like i'm i'm fairly
+[9129] i like to live in the next five years
+[9131] and like what what things can i get out
+[9133] in a year that people will use at scale
+[9134] and
+[9136] um
+[9137] so it's just again those circles i think
+[9139] are different for different people but
+[9141] it's important to realize that like
+[9143] market matters you being good at it
+[9145] matters and having passion for it
+[9146] matters uh your question sorry
+[9149] well unless
+[9151] on this topic in terms of funding
+[9153] is there
+[9154] by way of advice
+[9159] was funding in your own journey helpful
+[9163] unhelpful
+[9164] like is there a right time to get
+[9166] funding for funding venture funding or
+[9168] anything borrow some money from your
+[9170] parents i don't know
+[9172] like is money get in the way does it
+[9175] help is the timing important is there
+[9177] some kind of wisdom you can
+[9179] give there because you were
+[9180] exceptionally successful very quickly
+[9186] funding helps as long as it's from the
+[9188] right people
+[9189] that includes yourself and i'll talk
+[9190] about myself funding myself in in a
+[9193] second which is like because i can fund
+[9195] myself doing whatever projects i can do
+[9197] i don't really have another person
+[9199] putting pressure on me except for myself
+[9201] and that creates
+[9202] strange dynamics right but let's like
+[9205] talk about people getting funding from a
+[9207] venture capitalist initially
+[9209] uh we raised money from matt kohler at
+[9211] benchmark he's brilliant
+[9214] amazing guy very thoughtful
+[9216] and he was very helpful early on but i
+[9219] have stories from entrepreneurs where
+[9221] they raise money from the wrong person
+[9222] or the wrong firm where incentives
+[9224] weren't aligned
+[9226] they didn't think in the same way
+[9228] um
+[9229] and bad things happened because of that
+[9231] the border room was always noisy
+[9233] there were fights like we just never had
+[9235] that matt was great
+[9237] i think usu like capital these days is
+[9239] kind of a dime a dozen right like as
+[9241] long as you're fundable like it seems
+[9243] like there's money out there this is
+[9245] what i'm hearing
+[9246] um
+[9248] it's really important that you are
+[9249] aligned and that you think of raising
+[9251] money as hiring someone for your team
+[9253] rather than taking money
+[9255] if capital is plentiful right
+[9258] it provides a certain amount of pressure
+[9260] to do the right thing that i think is
+[9262] healthy for any startup and it keeps you
+[9264] real and honest because they don't want
+[9266] to lose their money they're paid to not
+[9268] lose their money
+[9269] the problem you know
+[9271] maybe i could de-personalize it but like
+[9273] i remember having lunch with elon it's
+[9275] only happened once
+[9277] and i asked him
+[9278] like i was trying to figure out what i
+[9280] was doing after instagram right
+[9282] and i asked him something about like
+[9283] angel investing and he looked at me with
+[9285] a straight face and was like why the f
+[9287] would i do that like why like i was like
+[9290] i don't know like you're connected like
+[9291] seems like he's like i only invested
+[9294] myself i was like
+[9296] okay you know like not the confidence i
+[9299] was just like what a novel idea it's
+[9300] like
+[9301] yeah if you have money like why not just
+[9304] put it against your bag and like yeah
+[9306] enable
+[9308] you
+[9309] visiting mars or something right like
+[9311] that's awesome great but i had never
+[9313] really thought of it that way
+[9314] but also with that comes an interesting
+[9316] dynamic where
+[9318] um
+[9319] you don't actually have
+[9321] people who are gonna lose that money
+[9323] telling you hey don't do this or hey you
+[9325] need to face this reality so you need to
+[9327] create other versions
+[9329] of that truth teller
+[9332] and i
+[9333] whatever i do next that's going to be
+[9334] one of the interesting challenges is how
+[9336] do you create that truth-telling
+[9338] situation um and that's part of why by
+[9341] the way i think someone like jack when
+[9343] you start square you have money but you
+[9344] still
+[9345] you bring on partners because i think it
+[9347] creates
+[9348] a truth-telling type environment um i'm
+[9351] still trying to figure this out like i
+[9352] like
+[9353] it's an interesting
+[9354] it's an interesting diamond so you're
+[9356] thinking of
+[9357] perhaps launching some kind of venture
+[9359] where you're investing in yourself
+[9361] i mean
+[9362] is there in the books potentially i'm 37
+[9364] going on 38 next month i have a long
+[9367] life to live i'm not definitely not
+[9368] gonna sit on the beach right
+[9370] so
+[9371] i'm gonna do something at some point and
+[9374] i gotta imagine i will i will like help
+[9377] fund it right so the other way of
+[9379] thinking about this is you could park
+[9380] your money in the smp and this is bad
+[9382] because the smp has done wonderfully
+[9383] well in the last year right
+[9385] or you can invest in yourself and um
+[9389] if you're not going to invest in
+[9390] yourself you probably shouldn't do a
+[9391] startup it's kind of the way of thinking
+[9393] about it
+[9395] and you can invest in yourself in the
+[9396] way elon does which is basically uh go
+[9399] all in on this investment maybe that's
+[9401] one way to achieve accountability is
+[9403] like you're kind of screwed if you're if
+[9405] you fail
+[9406] yeah that's
+[9408] yeah i i personally like that i like
+[9411] burning bridges behind me so that i'm
+[9413] fucked if it fails
+[9415] yeah yeah yeah
+[9417] it's really important though
+[9420] one of the things i think mark said to
+[9421] me early on
+[9423] that that sticks with me that i think is
+[9425] true uh we were talking about people who
+[9428] had left like operating roles and
+[9430] started doing venture or something it
+[9431] was like a lot of people convinced
+[9432] themselves they work really hard like
+[9434] they think they work really hard and
+[9435] they they put on the show and in their
+[9437] minds they work really hard but they
+[9439] don't work very hard
+[9442] there is something about lighting a fire
+[9443] underneath you and burning bridges such
+[9446] that you can't turn back yeah that i
+[9448] think
+[9449] you know we didn't talk about this
+[9450] specifically but i think you're right
+[9452] there is
+[9453] you need to have that because there's
+[9456] this self-delusion at a certain scale
+[9459] oh i have so many board calls oh like we
+[9461] have all these things to figure out it's
+[9463] like
+[9463] [Music]
+[9464] this is one of the hard parts about it
+[9466] being an operator is like
+[9468] there are so many people that have made
+[9470] a lot of money not operating
+[9472] but operating is just one of the hardest
+[9474] things on earth it is just so effing
+[9476] hard
+[9478] it is stressful it is you're dealing
+[9480] with real humans you're not just like
+[9482] throwing capital in and hoping it grows
+[9484] i'm not undermining the vc mindset i
+[9486] think it's a wonderful thing and needed
+[9488] and and so many wonderful vcs i've
+[9490] worked with
+[9491] but um
+[9492] yeah like when your ass is on the line
+[9494] and it's your money it's
+[9498] talk to me in 10 years we'll see how it
+[9500] goes
+[9501] yeah but like you're saying that is a
+[9503] source when you wake up in the morning
+[9504] as uh
+[9506] you look forward to the day full of
+[9508] challenges that's also where you can
+[9509] find happiness let me ask you about love
+[9511] and friendship sure what's the role
+[9514] in this heck of a difficult journey
+[9516] you've been on
+[9518] of love
+[9519] of uh friendship what's the role of love
+[9522] in the human condition
+[9525] well first things first the woman i
+[9527] married my wife nicole
+[9529] no way i could do what i do
+[9532] if we weren't together she had the
+[9534] filter idea yeah yeah exactly we didn't
+[9536] go over that story
+[9538] um
+[9539] everything is a partnership right and
+[9542] to achieve great things it's not about
+[9544] like someone pulling their weight in
+[9545] places like it's not like someone's
+[9547] supporting you
+[9548] so that you could do this other thing
+[9551] it's literally like
+[9553] you know i mike and i and our
+[9555] partnership
+[9556] as co-founders
+[9558] is fascinating because i don't think
+[9559] instagram would have happened without
+[9560] that partnership like
+[9562] either him or me alone no way
+[9565] we pushed and pulled each other in a way
+[9568] that
+[9569] allowed us to build a better thing
+[9571] because of it
+[9572] nicole sure like she pushed me to work
+[9574] on the filters early on and yes that's
+[9576] exciting it's a fun story right
+[9578] but the truth of it is
+[9580] being able to like level with someone
+[9582] about how hard the process is and have
+[9584] someone see you for who you are before
+[9587] instagram
+[9589] and know that there's a constant you
+[9591] throughout all of this
+[9593] and be able to call you when you're
+[9594] drifting from that
+[9595] but also support you when you're trying
+[9597] to stick with that that's
+[9599] i mean that's that's true
+[9601] friendship slash love whatever you want
+[9603] to call it um
+[9605] but also for someone not to care i
+[9607] remember nicole saying hey like i know
+[9609] you're gonna do this instagram thing you
+[9610] should
+[9611] i guess it was bourbon at the time you
+[9612] should do it because um
+[9615] you know even if it doesn't work we can
+[9616] move to like a smaller apartment and
+[9618] it'll be fine like we'll make it work
+[9622] how beautiful is that right yeah that's
+[9624] almost like a superpower it gives you
+[9626] permission to fail and somehow that
+[9628] actually leads to success but also she's
+[9630] like the least impressed about instagram
+[9632] of anyone she's like yeah it's great but
+[9634] like i love you for you like i like that
+[9636] you're like a decent cock beautiful
+[9639] it's beautiful
+[9640] with the uh with the gantt chart and
+[9642] thanksgiving which i still think is a
+[9643] brilliant effing idea thank you um big
+[9646] ridiculous question
+[9648] have you uh
+[9649] you're you're old and wise at this stage
+[9652] so have you discovered meaning to this
+[9654] whole thing why the hell are we
+[9656] descendants of um
+[9658] apes here on earth what's the meaning of
+[9660] it what's the meaning of life i haven't
+[9662] and it and i i am inco so the crazy so
+[9666] the best learning
+[9667] for me has been like no matter what
+[9669] level of success you achieve
+[9672] you're still worried about similar
+[9674] things maybe on a slightly different
+[9675] scale you're still
+[9677] concerned about the same thing you're
+[9678] still self-conscious about the same
+[9680] things it's like
+[9682] and
+[9683] actually that moment going through that
+[9686] is what makes you believe there's got to
+[9688] be like more machinery to life or
+[9690] purpose to life and that that we're all
+[9692] chasing these materialistic things but
+[9695] you start
+[9696] start realizing like um it's almost like
+[9698] you know the truman show when he gets
+[9700] the edge and he like knocks against it
+[9702] he's like what like there's this
+[9704] awakening that happens when you get to
+[9706] that edge that you realize oh
+[9708] like sure it's great it's great that we
+[9710] all chase money and fame and and success
+[9713] but you hit the edge and and i'm not
+[9715] even claiming i hit an edge like like
+[9717] elon's hit an edge like there's clearly
+[9718] larger scales
+[9720] but what's cool is you learn that like
+[9722] it doesn't actually matter and that
+[9724] there are all these other things that
+[9725] truly matter
+[9726] um that's not a case for working less
+[9728] hard that's not a case for taking it
+[9730] easy that's not a case for the four day
+[9732] work week
+[9733] what that is a case for is designing
+[9736] your life exactly the way you want to
+[9738] design it because
+[9739] i don't know i i think we go around the
+[9742] or you know the sun a certain number of
+[9744] times and then we die and then that's it
+[9747] that's me are you afraid of that moment
+[9749] no not at all in fact
+[9751] at least not yet
+[9756] listen i'm like a pilot like i do
+[9758] crazy things and i like
+[9760] um no i like if anything i'm like oh
+[9765] i gotta choose uh uh mindfully and
+[9768] purposefully the thing i am doing right
+[9770] now
+[9772] and not just fall into it because you're
+[9774] gonna wake up one day and ask yourself
+[9775] why the hell you spent the last 10 years
+[9777] doing x y or z yeah so i guess
+[9780] my like shorter answer to this is
+[9783] doing things on purpose
+[9786] because you choose to do them
+[9788] so important in life
+[9790] and not just like floating down the
+[9791] river of life hitting branches along the
+[9794] way because you will hit branches right
+[9796] but rather like literally plotting a
+[9799] course and not having a 10-year plan but
+[9801] just choosing every day to opt in
+[9804] that i think has been more
+[9808] like i haven't figured out the meaning
+[9809] of life by any stretch of the
+[9810] imagination but it certainly isn't money
+[9812] and it certainly isn't fame and it
+[9813] certainly isn't travel and it's like and
+[9816] it's way more of like opting into the
+[9818] game you love playing
+[9820] every day opting in just opting in and
+[9823] like it's don't let it happen you opt in
+[9826] kevin uh it's great to end on the
+[9830] love
+[9831] and the meaning of life this is an
+[9832] amazing conversation a lot of fun thank
+[9834] you you gave me like a light into some
+[9836] fascinating aspects of this of the
+[9838] technical world and i can't honestly
+[9841] wait
+[9842] to see what you do next thank you so
+[9844] much thanks for having me
+[9847] thanks for listening to this
+[9848] conversation with kevin systrom
+[9850] to support this podcast please check out
+[9852] our sponsors in the description
+[9854] and now let me leave you with some words
+[9856] from kevin systrom himself
+[9859] focusing on one thing
+[9861] and doing it really really well can get
+[9864] you very far
+[9866] thank you for listening and hope to see
+[9868] you next time
+[9877] you

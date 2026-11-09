@@ -1,0 +1,1483 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:01.001 --> 00:00:07.873
+[Music]
+
+00:00:09.208 --> 00:00:09.875
+[Horn honking] 
+
+00:00:10.876 --> 00:00:12.877
+[Dog barking]
+
+00:00:13.878 --> 00:00:15.880
+[Music]
+
+00:00:16.881 --> 00:00:23.886
+[Clicking and typing]
+
+00:00:33.894 --> 00:00:35.228
+[City sounds] 
+
+00:00:37.230 --> 00:00:38.698
+[Beep]
+
+00:00:42.701 --> 00:00:48.739
+[Clicking and typing] 
+
+00:01:00.749 --> 00:01:02.517
+[Keyboard sounds]
+
+00:01:04.518 --> 00:01:07.487
+[Music]
+
+00:01:34.640 --> 00:01:40.413
+please welcome to the stage&nbsp;
+Vercel CEO Guillermo Rauch
+
+00:01:40.413 --> 00:01:46.151
+[Music and clapping]
+
+00:01:46.160 --> 00:01:55.520
+hello New York City have we all melted already&nbsp;
+I mean it's like 900° out there for those of you&nbsp;&nbsp;
+
+00:01:55.520 --> 00:02:05.440
+watching at home we're cooking welcome to Vercel&nbsp;
+Ship 2025 for the last 10 years we've been focused&nbsp;&nbsp;
+
+00:02:05.440 --> 00:02:12.400
+on building the Frontend Cloud we wanted a&nbsp;
+world where you didn't have to spend months weeks&nbsp;&nbsp;
+
+00:02:12.400 --> 00:02:23.680
+orchestrating 14 different services to build a B2B&nbsp;
+SaaS a world where you can just ship things because&nbsp;&nbsp;
+
+00:02:23.680 --> 00:02:31.120
+to us shipping is what it's all about right I just&nbsp;
+want to ship products we all just want to ship&nbsp;&nbsp;
+
+00:02:31.120 --> 00:02:39.440
+products and it turns out a lot of people want&nbsp;
+to ship products companies like DoorDash Peloton&nbsp;&nbsp;
+
+00:02:39.440 --> 00:02:46.480
+Notion have transformed their workflows and built&nbsp;
+teams that can just ship the products their users&nbsp;&nbsp;
+
+00:02:46.480 --> 00:02:52.000
+want to see the Frontend Cloud was designed&nbsp;
+to help teams fundamentally change how they&nbsp;&nbsp;
+
+00:02:52.000 --> 00:02:59.200
+build and ship apps it's three ways of building&nbsp;
+that I recommend to everybody that I talk to&nbsp;&nbsp;
+
+00:03:00.080 --> 00:03:08.720
+be flexible build with the tools you want and&nbsp;
+change them out when you need to move fast who&nbsp;&nbsp;
+
+00:03:08.720 --> 00:03:16.400
+doesn't like fast spend time shipping experiments&nbsp;
+and features instead of configuring CDNs god&nbsp;&nbsp;
+
+00:03:16.400 --> 00:03:26.320
+forbid and stay secure your apps should be secure&nbsp;
+by default without a bolted on firewall this has&nbsp;&nbsp;
+
+00:03:26.320 --> 00:03:34.737
+become the standard for web development today&nbsp;
+Vercel serves over 32 million active domains&nbsp;&nbsp;
+
+00:03:34.737 --> 00:03:46.240
+140 billion weekly requests and now we've crossed&nbsp;
+a trillion invocations on Fluid alone a trillion&nbsp;&nbsp;
+
+00:03:46.240 --> 00:03:51.600
+but if you look around the stuff that we're&nbsp;
+talking about these days like realistically we're&nbsp;&nbsp;
+
+00:03:51.600 --> 00:04:00.160
+talking about in boardrooms on the X platform the&nbsp;
+everything app it's becoming very clear the bar&nbsp;&nbsp;
+
+00:04:00.160 --> 00:04:09.920
+has raised AI is now redefining what shipping&nbsp;
+looks like it's changing what we ship we have&nbsp;&nbsp;
+
+00:04:09.920 --> 00:04:19.600
+to optimize for human to agent and agent to agent&nbsp;
+interactions it's changing who can ship we're seeing&nbsp;&nbsp;
+
+00:04:19.600 --> 00:04:25.920
+more and more people contribute meaningfully&nbsp;
+to code bases or developing hyper specific&nbsp;&nbsp;
+
+00:04:25.920 --> 00:04:33.280
+personal apps to solve their problems and it's&nbsp;
+changing how fast we ship products that didn't&nbsp;&nbsp;
+
+00:04:33.280 --> 00:04:43.200
+exist yesterday now have a trillion dollars in&nbsp;
+ARR so we used to talk about exponential growth&nbsp;&nbsp;
+
+00:04:43.200 --> 00:04:52.240
+now it's vertical and this doesn't mean that we're&nbsp;
+entering a world of AI slop please or that the UIs&nbsp;&nbsp;
+
+00:04:52.240 --> 00:05:02.000
+we know are melting we're getting back to a really&nbsp;
+cool web autonomous infrastructure new modalities&nbsp;&nbsp;
+
+00:05:02.000 --> 00:05:08.880
+that meet you where you are interfaces that learn&nbsp;
+how you work and the implications are massive&nbsp;&nbsp;
+
+00:05:09.520 --> 00:05:17.440
+we used to only have to worry about Time to First &nbsp;
+Byte or cache hit ratios now we optimize for Time&nbsp;&nbsp;
+
+00:05:17.440 --> 00:05:28.400
+to First Token in tokens per second teams used to&nbsp;
+release every few weeks here and there now agents&nbsp;&nbsp;
+
+00:05:28.400 --> 00:05:36.000
+release for us continuously on our every thought&nbsp;
+we've actually gotten to see this firsthand with&nbsp;&nbsp;
+
+00:05:36.000 --> 00:05:46.800
+our own AI agent v0 millions of users a 100&nbsp;
+million completions the v0 team has been&nbsp;&nbsp;
+
+00:05:46.800 --> 00:05:56.800
+cooking they have the freedom to build where how&nbsp;
+what they want and guess what v0 is a full&nbsp;&nbsp;
+
+00:05:56.800 --> 00:06:07.760
+stack Vercel app frontend backend everything in&nbsp;
+between so polling the room why do you think that&nbsp;&nbsp;
+
+00:06:07.760 --> 00:06:17.280
+team used Vercel for everything it's because&nbsp;
+I made them of course I told them like you have&nbsp;&nbsp;
+
+00:06:17.280 --> 00:06:25.360
+to use Vercel no it's because they chose it&nbsp;
+they needed to move really fast they needed&nbsp;&nbsp;
+
+00:06:25.360 --> 00:06:32.400
+infrastructure that's flexible that's fast they&nbsp;
+need to stay secure in a world of very fast-paced&nbsp;&nbsp;
+
+00:06:32.400 --> 00:06:40.080
+model changes and updates so the team today&nbsp;
+frankly would be in config hell instead of what's&nbsp;&nbsp;
+
+00:06:40.080 --> 00:06:49.360
+basically like 300 days straight of shipping&nbsp;
+features shipping bug fixes shipping model updates&nbsp;&nbsp;
+
+00:06:49.360 --> 00:06:56.160
+and on the Vercel side working with v0 and&nbsp;
+other amazing customers building fullstack AI&nbsp;&nbsp;
+
+00:06:56.160 --> 00:07:02.880
+applications has given Vercel a glimpse of that&nbsp;
+future we're previewing where the platform needs&nbsp;&nbsp;
+
+00:07:02.880 --> 00:07:12.160
+to go so we needed for example better building&nbsp;
+blocks for chat and streaming UIs so just like&nbsp;&nbsp;
+
+00:07:12.160 --> 00:07:20.080
+we did with Next.js we turned to open source we&nbsp;
+turned to developer experience and we created the&nbsp;&nbsp;
+
+00:07:20.080 --> 00:07:30.480
+AI SDK our open-source framework for building AI&nbsp;
+apps and agents and just like we did with Vercel&nbsp;&nbsp;
+
+00:07:30.480 --> 00:07:40.240
+CDN which provides global failover performance&nbsp;
+and routing for the web and API workloads&nbsp;&nbsp;
+
+00:07:40.240 --> 00:07:50.240
+now with the AI Gateway we can provide the same&nbsp;
+connectivity benefits but for models and again&nbsp;&nbsp;
+
+00:07:50.240 --> 00:07:58.160
+Vercel Functions powered by Fluid compute run&nbsp;
+your application code seamlessly and securely&nbsp;&nbsp;
+
+00:07:58.160 --> 00:08:06.640
+so we're making Fluid an even better experience&nbsp;
+and even more cost efficient for AI workloads and&nbsp;&nbsp;
+
+00:08:06.640 --> 00:08:16.080
+are introducing new products today specifically&nbsp;
+designed for building agents and backends that's&nbsp;&nbsp;
+
+00:08:16.080 --> 00:08:25.440
+right backends yes you've been asking there's&nbsp;
+backends today so Vercel's security layer on the&nbsp;&nbsp;
+
+00:08:25.440 --> 00:08:32.320
+other hand has been protecting you from modern web&nbsp;
+applications and website threats it's been keeping&nbsp;&nbsp;
+
+00:08:32.320 --> 00:08:40.480
+you secure by default but as workloads become&nbsp;
+AI-native and agentic and the threats become more&nbsp;&nbsp;
+
+00:08:40.480 --> 00:08:48.480
+sophisticated we're leveling up our bot management&nbsp;
+our observability and our protections and giving&nbsp;&nbsp;
+
+00:08:48.480 --> 00:08:55.280
+you the AI tools to interpret to actually make&nbsp;
+sense of it all and to take action against a&nbsp;&nbsp;
+
+00:08:55.280 --> 00:09:05.440
+new generation of threats all of this work adds&nbsp;
+up to a cloud purpose-built for AI with the same&nbsp;&nbsp;
+
+00:09:05.440 --> 00:09:18.000
+developer first focus we've always had at Vercel&nbsp;
+this is the AI Cloud and it's so freaking exciting&nbsp;&nbsp;
+
+00:09:18.000 --> 00:09:24.240
+so thank you all for being here today as we&nbsp;
+introduce the future of the Vercel platform&nbsp;&nbsp;
+
+00:09:24.240 --> 00:09:31.440
+this is already the foundation for some of the&nbsp;
+most ambitious platforms in production today&nbsp;&nbsp;
+
+00:09:31.440 --> 00:09:39.440
+so it's not only powering AI apps it's also&nbsp;
+powering the act of building those apps with&nbsp;&nbsp;
+
+00:09:39.440 --> 00:09:47.440
+AI a platform for both developers and agents&nbsp;
+and it brings together everything we've built&nbsp;&nbsp;
+
+00:09:47.440 --> 00:09:54.400
+in a world again where the bar has moved where&nbsp;
+you don't just need to be flexible you need a&nbsp;&nbsp;
+
+00:09:54.400 --> 00:10:01.920
+toolkit that assumes that the world is changing&nbsp;
+constantly and the tools don't get in the way a&nbsp;&nbsp;
+
+00:10:01.920 --> 00:10:07.280
+world where you don't just need to move fast&nbsp;
+you need infrastructure that lets you move at&nbsp;&nbsp;
+
+00:10:07.280 --> 00:10:13.280
+the speed of new ideas there's probably three&nbsp;
+model releases in the time of this presentation&nbsp;&nbsp;
+
+00:10:13.840 --> 00:10:19.520
+and you don't need just to say secure you need&nbsp;
+to be resilient by default because we're dealing&nbsp;&nbsp;
+
+00:10:19.520 --> 00:10:27.360
+with fundamentally different traffic patterns and&nbsp;
+new kinds of workloads so today we'll dig into the&nbsp;&nbsp;
+
+00:10:27.360 --> 00:10:35.440
+core principles of our AI Cloud and introduce&nbsp;
+new capabilities across a Vercel platform so&nbsp;&nbsp;
+
+00:10:35.440 --> 00:10:40.960
+in order to build this AI Cloud together and&nbsp;
+find out what's next for the web let's get&nbsp;&nbsp;
+
+00:10:40.960 --> 00:10:49.748
+started with Lee E Robinson the most flexible&nbsp;
+man alive yes to tell you how to stay flexible
+
+00:10:49.748 --> 00:10:57.754
+[Music and clapping]
+
+00:10:57.754 --> 00:11:01.591
+I'm not sure about most flexible I feel&nbsp;
+like I need to do some stretches here to warm&nbsp;&nbsp;
+
+00:11:01.600 --> 00:11:07.680
+up but thank you G and thank you everyone who's&nbsp;
+here live in New York and tuning in online special&nbsp;&nbsp;
+
+00:11:07.680 --> 00:11:13.840
+shout out to my nine-month old daughter tuning&nbsp;
+in hi yeah I'm really excited to chat with you&nbsp;&nbsp;
+
+00:11:13.840 --> 00:11:19.120
+all today AI is changing how we build software&nbsp;
+and we've been navigating this platform shift&nbsp;&nbsp;
+
+00:11:19.120 --> 00:11:25.200
+ourselves at Vercel so I want to talk about&nbsp;
+what we've learned and why flexibility is so&nbsp;&nbsp;
+
+00:11:25.200 --> 00:11:33.360
+important right now like G mentioned the type of&nbsp;
+UIs we're building are changing really everyone is&nbsp;&nbsp;
+
+00:11:33.360 --> 00:11:42.400
+rethinking best practices features or maybe entire&nbsp;
+products might be totally rethought as an AI agent&nbsp;&nbsp;
+
+00:11:42.400 --> 00:11:49.520
+before in places where we used to have more&nbsp;
+complicated pixels now we can stream tokens but&nbsp;&nbsp;
+
+00:11:49.520 --> 00:11:56.080
+figuring out exactly how to navigate this platform&nbsp;
+shift is maybe not obvious how do you build an&nbsp;&nbsp;
+
+00:11:56.080 --> 00:12:03.120
+agent do you partner with one specific API or&nbsp;
+one AI company and build around their platform&nbsp;&nbsp;
+
+00:12:03.680 --> 00:12:08.960
+you don't want to spend a lot of time and&nbsp;
+money building your own model and then watch&nbsp;&nbsp;
+
+00:12:08.960 --> 00:12:15.280
+the state of the art get redefined overnight&nbsp;
+you need flexibility it would be incredibly&nbsp;&nbsp;
+
+00:12:15.280 --> 00:12:20.160
+hard to list all of the model launches in&nbsp;
+just the past six months on this slide I&nbsp;&nbsp;
+
+00:12:20.160 --> 00:12:27.200
+mean the state of the art gets redefined&nbsp;
+every day we started Vercel by making it&nbsp;
+
+00:12:27.200 --> 00:12:33.920
+easy to deploy any framework now no one has&nbsp;
+to think about provisioning infrastructure&nbsp;&nbsp;
+
+00:12:33.920 --> 00:12:40.102
+or configuring their DNS to get their site&nbsp;
+online you just push your code and it's done
+
+00:12:40.102 --> 00:12:45.773
+it's kind of like self-driving infrastructure 
+but we knew that we need to support 
+
+00:12:45.773 --> 00:12:49.509
+more types of workloads and 
+some of these required a lot of
+
+00:12:49.509 --> 00:12:57.120
+integrations maybe a year ago I wasn't trying to&nbsp;
+integrate an AI model but I definitely needed a&nbsp;&nbsp;
+
+00:12:57.120 --> 00:13:03.760
+database so we built the Vercel Marketplace&nbsp;
+to give you flexibility to adapt you don't&nbsp;&nbsp;
+
+00:13:03.760 --> 00:13:09.760
+have to replatform you can just grab the next&nbsp;
+integration which is pretty nice we took our&nbsp;&nbsp;
+
+00:13:09.760 --> 00:13:15.200
+managed infrastructure and we enhanced it&nbsp;
+with integrations from our Marketplace but&nbsp;&nbsp;
+
+00:13:15.200 --> 00:13:21.920
+we weren't done yet what you all told us and&nbsp;
+your biggest ask was the ability to talk to&nbsp;&nbsp;
+
+00:13:21.920 --> 00:13:28.320
+and integrate with any large language model but&nbsp;
+how do you know which one to use right there's&nbsp;&nbsp;
+
+00:13:28.320 --> 00:13:33.840
+so many that's where our AI Gateway comes&nbsp;
+in the AI Gateway lets you switch between&nbsp;&nbsp;
+
+00:13:33.840 --> 00:13:41.350
+almost any model without having to manage&nbsp;
+API keys or rate limits or provider accounts&nbsp;
+
+00:13:41.350 --> 00:13:49.280
+and as you can see we've simplified the AI SDK&nbsp;
+interface with the v5 beta just came out yesterday&nbsp;&nbsp;
+
+00:13:49.280 --> 00:13:55.440
+and now you can use a single string to define&nbsp;
+both the model and the provider this supports&nbsp;&nbsp;
+
+00:13:55.440 --> 00:14:02.560
+the Vercel AI Gateway and in the future OpenRouter 
+and others through our adapter interface&nbsp;&nbsp;
+
+00:14:02.560 --> 00:14:11.120
+so you can just use AI anytime any model over&nbsp;
+the last year we've been building a new compute&nbsp;&nbsp;
+
+00:14:11.120 --> 00:14:18.960
+platform Fluid compute Fluid always keeps one&nbsp;
+instance active kind of like a server and it&nbsp;&nbsp;
+
+00:14:18.960 --> 00:14:25.280
+can manage thousands of connections again kind of&nbsp;
+like a server but the best part is that there's&nbsp;&nbsp;
+
+00:14:25.280 --> 00:14:33.520
+no proprietary runtime or APIs that you need to&nbsp;
+use it's standard Node.js Python and soon custom&nbsp;&nbsp;
+
+00:14:33.520 --> 00:14:39.496
+runtimes but there was one final challenge&nbsp;
+this was a tricky one almost all compute
+
+00:14:39.496 --> 00:14:45.234
+infrastructure today is not 
+designed for running AI apps
+
+00:14:45.234 --> 00:14:49.104
+for example if you see all of 
+this idle time where we're waiting
+
+00:14:49.120 --> 00:14:55.840
+for an AI model to respond most providers are&nbsp;
+going to charge you for that full 30 seconds it&nbsp;&nbsp;
+
+00:14:55.840 --> 00:15:01.360
+could take for you know a thinking or reasoning&nbsp;
+model to respond when in reality maybe it only&nbsp;&nbsp;
+
+00:15:01.360 --> 00:15:10.000
+took about 30 milliseconds of active CPU time&nbsp;
+everything else is just idle so what if unlike&nbsp;&nbsp;
+
+00:15:10.000 --> 00:15:18.480
+a server and unlike serverless you're only charged&nbsp;
+for the CPU that you use that seems like it&nbsp;&nbsp;
+
+00:15:18.480 --> 00:15:26.960
+would be pretty difficult it would probably&nbsp;
+take our team over a year of R&amp;D to build hmm&nbsp;&nbsp;
+
+00:15:26.960 --> 00:15:35.120
+well I'm very excited to announce that today&nbsp;
+Fluid compute now has Active CPU pricing yes
+
+00:15:35.120 --> 00:15:37.509
+[Clapping]
+
+00:15:37.520 --> 00:15:43.520
+I'm very excited for this this is an&nbsp;
+across-the-board price reduction for all customers&nbsp;&nbsp;
+
+00:15:43.520 --> 00:15:53.520
+on Fluid compute very big Fluid can now power&nbsp;
+backends API servers MCP servers backends did I&nbsp;&nbsp;
+
+00:15:53.520 --> 00:16:01.600
+say backends backends some of our customers are&nbsp;
+seeing dramatic cost savings by moving to Fluid&nbsp;&nbsp;
+
+00:16:01.600 --> 00:16:07.120
+this builds on 15 plus price improvements&nbsp;
+that we've made over the past year I mean&nbsp;&nbsp;
+
+00:16:07.120 --> 00:16:15.600
+50% off Data Transfer half off Domains 80% off&nbsp;
+Web Analytics 75% off Log Drains we're really&nbsp;&nbsp;
+
+00:16:15.600 --> 00:16:21.840
+excited to continue optimizing our infrastructure&nbsp;
+and then passing those cost savings back to you&nbsp;&nbsp;
+
+00:16:21.840 --> 00:16:28.320
+all now let's say you're convinced by my talk&nbsp;
+so far you right now or in a few minutes&nbsp;&nbsp;
+
+00:16:28.320 --> 00:16:32.480
+you go and you want to build an AI agent so of&nbsp;
+course you're going to build your backend on&nbsp;&nbsp;
+
+00:16:32.480 --> 00:16:37.280
+Vercel you're going to have your logic you're&nbsp;
+going to talk to a large language model maybe&nbsp;&nbsp;
+
+00:16:37.280 --> 00:16:43.920
+through the AI gateway but you need to generate&nbsp;
+some code in your agent well you probably don't&nbsp;&nbsp;
+
+00:16:43.920 --> 00:16:49.920
+want to run that code in a Vercel Function&nbsp;
+that function has access to secrets or other&nbsp;&nbsp;
+
+00:16:49.920 --> 00:16:58.400
+privileged information you need a way to&nbsp;
+isolate that code something like a sandbox hmm&nbsp;&nbsp;
+
+00:16:58.400 --> 00:17:04.560
+well that's why we're also today releasing the&nbsp;
+Vercel Sandbox as part of our AI Cloud to help&nbsp;&nbsp;
+
+00:17:04.560 --> 00:17:12.560
+you more easily build AI agents Vercel Sandbox&nbsp;
+makes it very easy to quickly spin up VMs and&nbsp;&nbsp;
+
+00:17:12.560 --> 00:17:20.160
+run any long-live code with the same pricing&nbsp;
+as Fluid this is the first VM platform with&nbsp;&nbsp;
+
+00:17:20.160 --> 00:17:28.000
+Active CPU pricing and it makes it dramatically&nbsp;
+more cost-effective and flexible for your needs&nbsp;&nbsp;
+
+00:17:28.000 --> 00:17:34.240
+now I want to show you all a demo of all of these&nbsp;
+primitives I've just talked about for the AI Cloud&nbsp;&nbsp;
+
+00:17:34.240 --> 00:17:40.160
+and what better than our own product v0.dev now&nbsp;
+I don't know about you all but I use Slack all the&nbsp;&nbsp;
+
+00:17:40.160 --> 00:17:47.520
+time I love Slack and I thought what if I could do&nbsp;
+even more on Slack what if I could file my taxes&nbsp;&nbsp;
+
+00:17:47.520 --> 00:17:55.760
+in Slack kind of fun idea so I said let's open&nbsp;
+up Slack in v0 I rebuilt a little UI with a design&nbsp;&nbsp;
+
+00:17:55.760 --> 00:18:03.360
+system that looks like Slack's beautiful design&nbsp;
+and I gave it a prompt and I said as I always do&nbsp;&nbsp;
+
+00:18:03.360 --> 00:18:13.120
+well hey chief there we go I want to add support&nbsp;
+for a minimal sleek tax filing in the main part&nbsp;&nbsp;
+
+00:18:13.120 --> 00:18:18.800
+of Slack in the main part of v0 here so now&nbsp;
+I'm going to submit this generation and v0&nbsp;&nbsp;
+
+00:18:18.800 --> 00:18:23.520
+is going to go cook so we get to see some of the&nbsp;
+reasoning it's thinking about what it wants to do&nbsp;&nbsp;
+
+00:18:23.520 --> 00:18:28.880
+and it's going to start generating code now on&nbsp;
+the right I see it's making the new files it's&nbsp;&nbsp;
+
+00:18:28.880 --> 00:18:33.840
+going and talking to the IRS it's connecting to&nbsp;
+my TurboTax account right like we're figuring all&nbsp;&nbsp;
+
+00:18:33.840 --> 00:18:40.000
+this out and I can go look at the code and see&nbsp;
+this is a fullstack app we've got routes we've&nbsp;&nbsp;
+
+00:18:40.000 --> 00:18:46.960
+got components we've got reusable logic inside of&nbsp;
+hooks it's all here now while this is generating&nbsp;&nbsp;
+
+00:18:46.960 --> 00:18:52.960
+I want to also talk about Supabase UI which is&nbsp;
+built on the same primitives like shadcn where&nbsp;&nbsp;
+
+00:18:52.960 --> 00:19:00.320
+I can open up these reusable blocks in v0 and&nbsp;
+I can have frontend backend authentication logic&nbsp;&nbsp;
+
+00:19:00.320 --> 00:19:06.800
+all built together and just easily reopened and&nbsp;
+reused then I can just integrate with Supabase or&nbsp;&nbsp;
+
+00:19:06.800 --> 00:19:11.920
+other providers and very quickly get a Postgres&nbsp;
+database built on the Vercel Marketplace now it&nbsp;&nbsp;
+
+00:19:11.920 --> 00:19:17.360
+looks like we're done this looks pretty good but&nbsp;
+I think the padding is a little off it's a little&nbsp;&nbsp;
+
+00:19:17.360 --> 00:19:22.800
+crammed I want to give it some more breathing&nbsp;
+room so we can use design mode and I can select&nbsp;&nbsp;
+
+00:19:22.800 --> 00:19:29.600
+that outer container and let's do let's do 20&nbsp;
+pixels yeah 20 pixels of padding and I'll save&nbsp;&nbsp;
+
+00:19:29.600 --> 00:19:34.480
+that change so that looks that looks quite a&nbsp;
+bit better I think our app is now ready for me&nbsp;&nbsp;
+
+00:19:34.480 --> 00:19:43.280
+to do my my tax filing inside of Slack which is&nbsp;
+revolutionary so it's pretty good v0 is built&nbsp;&nbsp;
+
+00:19:43.280 --> 00:19:50.720
+end-to-end on our AI Cloud we use the AI SDK&nbsp;
+to stream responses back we use the AI Gateway&nbsp;&nbsp;
+
+00:19:50.720 --> 00:19:56.880
+to switch between models and most importantly we&nbsp;
+use Fluid compute to run all of the compute in our&nbsp;&nbsp;
+
+00:19:56.880 --> 00:20:04.480
+functions this helps us stay very flexible but the&nbsp;
+best part is that all of these AI Cloud primitives&nbsp;&nbsp;
+
+00:20:04.480 --> 00:20:11.520
+work with any cloud provider even if your backend&nbsp;
+is not yet on Vercel now I'm going to do my best&nbsp;&nbsp;
+
+00:20:11.520 --> 00:20:21.033
+G impression here and let's welcome the fastest&nbsp;
+man in the universe the F1 driver Mr Tomo
+
+00:20:21.033 --> 00:20:28.773
+[Music and clapping]
+
+00:20:28.800 --> 00:20:33.200
+thank you everyone he just added that this morning&nbsp;
+not only am I not a fast driver I drive the speed&nbsp;&nbsp;
+
+00:20:33.200 --> 00:20:39.360
+limit and I get motion sick but I love that&nbsp;
+it's so great to be back in New York City&nbsp;&nbsp;
+
+00:20:39.360 --> 00:20:44.640
+hello everyone my name is Tomo I lead&nbsp;
+engineering product and design at Vercel and&nbsp;&nbsp;
+
+00:20:44.640 --> 00:20:49.440
+I want to talk to you all today about something&nbsp;
+that is very important to me is very important to&nbsp;&nbsp;
+
+00:20:49.440 --> 00:20:55.680
+every team I talk to and that's moving fast before&nbsp;
+Vercel I spent over a decade at Facebook where&nbsp;&nbsp;
+
+00:20:55.680 --> 00:21:01.520
+we had this fairly famous mantra move fast&nbsp;
+and break things we eventually transitioned&nbsp;&nbsp;
+
+00:21:01.520 --> 00:21:08.400
+to move fast on stable infra but it doesn't have&nbsp;
+the same ring to it and we also at Vercel&nbsp;&nbsp;
+
+00:21:08.400 --> 00:21:14.320
+value moving fast on stable infrastructure but we&nbsp;
+accept that stable infrastructure is table stakes&nbsp;&nbsp;
+
+00:21:14.320 --> 00:21:20.320
+so we just say move fast there's a reason that&nbsp;
+this move fast mantra is so sticky it's because&nbsp;&nbsp;
+
+00:21:20.320 --> 00:21:27.040
+at the end of the day this is what we all want&nbsp;
+to do every developer wants to just ship things&nbsp;&nbsp;
+
+00:21:27.040 --> 00:21:34.240
+and this is even more true in an age of AI with&nbsp;
+software being developed by agents and agents&nbsp;&nbsp;
+
+00:21:34.240 --> 00:21:40.960
+deploying on our behalf and more and more software&nbsp;
+being created all the time so that's what today is&nbsp;&nbsp;
+
+00:21:40.960 --> 00:21:46.880
+all about removing blockers and enabling you&nbsp;
+to move faster with confidence but how do we&nbsp;&nbsp;
+
+00:21:46.880 --> 00:21:55.920
+get there when I break down the development&nbsp;
+process I see three main sources of slowdowns
+
+00:21:55.920 --> 00:22:02.480
+waiting for builds waiting for releases&nbsp;
+and working in large codebases first up&nbsp;&nbsp;
+
+00:22:02.480 --> 00:22:09.280
+I want to talk about builds a slow build&nbsp;
+is attacks on productivity I'm sure many&nbsp;&nbsp;
+
+00:22:09.280 --> 00:22:17.040
+of you have seen the famous xkcd comic&nbsp;
+from Randall Munroe one of my favorites
+
+00:22:17.040 --> 00:22:23.920
+but while this comic makes compiling look fun &nbsp;
+because you can do other stuff waiting for a&nbsp;&nbsp;
+
+00:22:23.920 --> 00:22:29.200
+build actually completely sucks I don't want&nbsp;
+to wait for my build like it's some present&nbsp;&nbsp;
+
+00:22:29.200 --> 00:22:36.160
+I can't open until Christmas I want to be in&nbsp;
+production now so how do we get to production&nbsp;&nbsp;
+
+00:22:36.160 --> 00:22:44.160
+faster we had to rearchitect how builds work at&nbsp;
+Vercel on top of a completely new foundation&nbsp;&nbsp;
+
+00:22:44.160 --> 00:22:50.720
+from the ground up on Fluid compute as Lee&nbsp;
+mentioned Fluid is the compute primitive&nbsp;&nbsp;
+
+00:22:50.720 --> 00:22:57.760
+that powers Functions now Sandbox and also&nbsp;
+it powers builds in an isolated environment&nbsp;&nbsp;
+
+00:22:57.760 --> 00:23:05.280
+at scale this new foundation is efficient&nbsp;
+reliable and fast but more importantly it's&nbsp;&nbsp;
+
+00:23:05.280 --> 00:23:11.840
+a foundation on top of which we can continue&nbsp;
+to make future performance optimizations
+
+00:23:11.840 --> 00:23:15.520
+this will help bring in a new era where&nbsp;
+builds are no longer triggered by just a&nbsp;&nbsp;
+
+00:23:15.520 --> 00:23:20.000
+handful of developers but where they're also&nbsp;
+triggered by fleets of coding agents that&nbsp;&nbsp;
+
+00:23:20.000 --> 00:23:26.240
+we're collaborating with since rolling it out&nbsp;
+teams have seen up to 30% faster build speeds&nbsp;&nbsp;
+
+00:23:26.240 --> 00:23:32.240
+without needing to make any other changes&nbsp;
+but even with faster builds if members of&nbsp;&nbsp;
+
+00:23:32.240 --> 00:23:36.800
+your team are pushing code at the same time&nbsp;
+as you it's still possible that your build&nbsp;&nbsp;
+
+00:23:36.800 --> 00:23:43.840
+will get queued we have massive teams using&nbsp;
+Vercel deploying hundreds of times per&nbsp;&nbsp;
+
+00:23:43.840 --> 00:23:50.400
+day so unfortunately build queues have become&nbsp;
+a common occurrence for many teams and as&nbsp;&nbsp;
+
+00:23:50.400 --> 00:23:55.520
+our teams are increasingly staffed with agentic&nbsp;
+colleagues this was only going to become more&nbsp;&nbsp;
+
+00:23:55.520 --> 00:24:06.720
+and more painful which is why I'm excited that&nbsp;
+we've finally killed the build queue thank you
+
+00:24:06.720 --> 00:24:11.120
+thank you yeah you your team and an&nbsp;
+army of agents can now push as much&nbsp;&nbsp;
+
+00:24:11.120 --> 00:24:17.040
+code as you want as often as you want and&nbsp;
+run your builds in parallel with on-demand&nbsp;&nbsp;
+
+00:24:17.040 --> 00:24:21.520
+concurrent builds just like our managed&nbsp;
+infrastructure scales to meet production&nbsp;&nbsp;
+
+00:24:21.520 --> 00:24:27.920
+demand our build pipeline based on Fluid&nbsp;
+compute scales exactly the same way no more&nbsp;&nbsp;
+
+00:24:27.920 --> 00:24:34.960
+waiting in line no more dreaded build queues&nbsp;
+and as our CEO would say nature is healing
+
+00:24:36.240 --> 00:24:40.000
+okay so we've got our builds fast and&nbsp;
+we've got them running in parallel the&nbsp;&nbsp;
+
+00:24:40.000 --> 00:24:44.960
+next slowdown I want to talk about is the&nbsp;
+release process but to do that we've got&nbsp;&nbsp;
+
+00:24:44.960 --> 00:24:50.080
+to talk about deployments deployments&nbsp;
+are one of the most fundamental atoms&nbsp;&nbsp;
+
+00:24:50.080 --> 00:24:57.920
+of the Vercel platform they are immutable&nbsp;
+infrastructure snapshots that are backed by Git&nbsp;&nbsp;
+
+00:24:59.120 --> 00:25:06.320
+every time you push code you get a unique URL&nbsp;
+with a brand new globally available production&nbsp;&nbsp;
+
+00:25:06.320 --> 00:25:13.520
+ready environment this primitive unlocks some&nbsp;
+really powerful capabilities and workflows on the&nbsp;&nbsp;
+
+00:25:13.520 --> 00:25:20.880
+platform for example preview deployments&nbsp;
+whenever you push code to a branch a new staging&nbsp;&nbsp;
+
+00:25:20.880 --> 00:25:26.480
+environment is created with a preview of your&nbsp;
+changes these allow you to collaborate and test&nbsp;&nbsp;
+
+00:25:26.480 --> 00:25:31.680
+your changes in production in a production&nbsp;
+setting without actually affecting your live&nbsp;&nbsp;
+
+00:25:31.680 --> 00:25:40.486
+production deployment another capability our&nbsp;
+immutable deployments unlock is Instant Rollback&nbsp;&nbsp;
+
+00:25:40.486 --> 00:25:45.840
+because Vercel deployments are immutable&nbsp;
+infrastructure snapshots if you accidentally&nbsp;&nbsp;
+
+00:25:45.840 --> 00:25:51.120
+push a bad change you can safely roll back&nbsp;
+to a previous deployment instantly no new&nbsp;&nbsp;
+
+00:25:51.120 --> 00:26:00.640
+build required and reverts happen globally in 300&nbsp;
+milliseconds I really wish this was so easy back&nbsp;&nbsp;
+
+00:26:00.640 --> 00:26:07.600
+in 2009 the first time I took down facebook.com&nbsp;
+we didn't have Instant Rollback back then we had&nbsp;&nbsp;
+
+00:26:07.600 --> 00:26:14.240
+to revert my change wait for a build then wait for&nbsp;
+it to be deployed and it was agonizing if we had&nbsp;&nbsp;
+
+00:26:14.240 --> 00:26:20.480
+Instant Rollback back then I wouldn't have sweat it&nbsp;
+at all another capability immutable deployments&nbsp;&nbsp;
+
+00:26:20.480 --> 00:26:26.720
+unlock is something we call Skew Protection one&nbsp;
+of the problems with deploying frequently is that&nbsp;&nbsp;
+
+00:26:26.720 --> 00:26:30.480
+it becomes more and more common for the version of&nbsp;
+your app running on the server and the version of&nbsp;&nbsp;
+
+00:26:30.480 --> 00:26:35.520
+your app running on the client to fall out of sync&nbsp;
+and this can cause pretty catastrophic errors for&nbsp;&nbsp;
+
+00:26:35.520 --> 00:26:41.600
+your users and since we deploy hundreds of times&nbsp;
+per day it's really critical that we get this&nbsp;&nbsp;
+
+00:26:41.600 --> 00:26:48.640
+right but Vercel can prevent version mismatches&nbsp;
+at the infrastructure layer this means you don't&nbsp;&nbsp;
+
+00:26:48.640 --> 00:26:53.920
+have to trade off between release velocity and&nbsp;
+customer experience you can deploy as frequently&nbsp;&nbsp;
+
+00:26:53.920 --> 00:27:00.000
+as you like and Vercel will handle the rest&nbsp;
+and lastly I'm excited to finally introduce a&nbsp;&nbsp;
+
+00:27:00.000 --> 00:27:09.360
+feature many of you have been asking for many of&nbsp;
+you I've talked to directly about this Rolling Releases
+
+00:27:09.360 --> 00:27:14.160
+Rolling Releases allow you to gradually roll out changes&nbsp;
+to production users and so you know whether you&nbsp;&nbsp;
+
+00:27:14.160 --> 00:27:19.040
+call this progressive delivery or blue green&nbsp;
+deployments the objective is the same we want&nbsp;&nbsp;
+
+00:27:19.040 --> 00:27:25.440
+to minimize risk we want to catch issues early&nbsp;
+and we want to keep shipping with confidence&nbsp;&nbsp;
+
+00:27:25.440 --> 00:27:29.840
+with Rolling Releases enabled when you push a&nbsp;
+new deployment we start sending a small amount&nbsp;&nbsp;
+
+00:27:29.840 --> 00:27:35.680
+of traffic to the new version in this case&nbsp;
+Deployment B the rest continues to go to the&nbsp;&nbsp;
+
+00:27:35.680 --> 00:27:42.000
+current production deployment and then you can&nbsp;
+choose how the rollout advances at every step&nbsp;&nbsp;
+
+00:27:42.000 --> 00:27:46.800
+you get a side-by-side metrics comparison for&nbsp;
+the current and canary deployments including&nbsp;&nbsp;
+
+00:27:46.800 --> 00:27:52.240
+error rates Core Web Vitals and more and all&nbsp;
+telemetry and logs are version labeled making&nbsp;&nbsp;
+
+00:27:52.240 --> 00:27:58.960
+it easy to identify regressions if the canary&nbsp;
+underperforms or breaks key flows in any way you&nbsp;&nbsp;
+
+00:27:58.960 --> 00:28:05.600
+can stop the rollout with one click this pairs&nbsp;
+really well with our Vercel flags so now you&nbsp;&nbsp;
+
+00:28:05.600 --> 00:28:10.640
+can capture regressions in both the correctness&nbsp;
+of your application and the performance of your&nbsp;&nbsp;
+
+00:28:10.640 --> 00:28:17.920
+user experience Rolling Releases help you move&nbsp;
+fast but as teams grow so do their codebases&nbsp;&nbsp;
+
+00:28:17.920 --> 00:28:23.920
+and when that happens even the fastest builds and&nbsp;
+the best release processes things can start to&nbsp;&nbsp;
+
+00:28:23.920 --> 00:28:31.760
+feel heavy so this is the final slowdown I want&nbsp;
+to talk about working in large codebases a common&nbsp;&nbsp;
+
+00:28:31.760 --> 00:28:35.760
+solution and something that we do ourselves at&nbsp;
+Vercel is to split your app up into what are&nbsp;&nbsp;
+
+00:28:35.760 --> 00:28:42.320
+called microfrontends now as a big fan of monorepos&nbsp;
+I've historically been pretty skeptical about&nbsp;&nbsp;
+
+00:28:42.320 --> 00:28:48.240
+microfrontends it felt like they sacrifice user&nbsp;
+experience in service of achieving a better&nbsp;&nbsp;
+
+00:28:48.240 --> 00:28:54.240
+developer experience but thanks to advancements in&nbsp;
+web standards like speculation rules with better&nbsp;&nbsp;
+
+00:28:54.240 --> 00:28:59.840
+platform support we can now split applications&nbsp;
+without the trade-offs so today I'm also excited&nbsp;&nbsp;
+
+00:28:59.840 --> 00:29:09.280
+to announce first class support for Microfrontends 
+on Vercel thank you this means&nbsp;
+
+00:29:09.280 --> 00:29:14.480
+native support for parent child relationships&nbsp;
+between apps since our routing system knows which&nbsp;&nbsp;
+
+00:29:14.480 --> 00:29:19.600
+app owns which route we can provide a seamless&nbsp;
+cohesive user experience even across application&nbsp;&nbsp;
+
+00:29:19.600 --> 00:29:26.720
+boundaries and that same context powers a better&nbsp;
+DX throughout in the dashboard you can manage the&nbsp;&nbsp;
+
+00:29:26.720 --> 00:29:31.200
+relationship between Microfrontends across&nbsp;
+projects the Vercel Toolbar shows you where&nbsp;&nbsp;
+
+00:29:31.200 --> 00:29:37.280
+you are and lets you easily switch between apps&nbsp;
+and with a local-to-live workflow you can run&nbsp;&nbsp;
+
+00:29:37.280 --> 00:29:44.240
+just one Microfrontend locally while the rest of your&nbsp;
+app streams in from live production deployments&nbsp;&nbsp;
+
+00:29:44.240 --> 00:29:48.960
+Microfrontends come in several different shapes from&nbsp;
+multi-zones and vertical Microfrontends like I've been&nbsp;&nbsp;
+
+00:29:48.960 --> 00:29:54.800
+talking about here to horizontal Microfrontends&nbsp;
+like Module Federation our goal is to support&nbsp;&nbsp;
+
+00:29:54.800 --> 00:30:01.440
+all established microfrontend frameworks on the&nbsp;
+market the result is faster development cleaner&nbsp;&nbsp;
+
+00:30:01.440 --> 00:30:08.240
+separation of concerns and a unified experience&nbsp;
+for users we're just getting started here and&nbsp;&nbsp;
+
+00:30:08.240 --> 00:30:12.800
+we'll be continuing to find ways to help you and&nbsp;
+your teams move fast but while being flexible&nbsp;&nbsp;
+
+00:30:12.800 --> 00:30:16.960
+and moving fast are values that we hold dear&nbsp;
+at Vercel there's another principle that's&nbsp;&nbsp;
+
+00:30:16.960 --> 00:30:22.640
+perhaps even more important and that's staying&nbsp;
+secure I'm excited to welcome my favorite new&nbsp;&nbsp;
+
+00:30:22.640 --> 00:30:29.748
+Vercelian Aparna to tell us how we can keep&nbsp;
+your sites protected and stay secure thank you
+
+00:30:29.748 --> 00:30:38.155
+[Music and clapping]
+
+00:30:38.160 --> 00:30:45.600
+hi everyone I'm Aparna Sinha and I am going to talk&nbsp;
+to you today about how Vercel secures the AI&nbsp;&nbsp;
+
+00:30:45.600 --> 00:30:53.520
+Cloud I recently joined Vercel in a prior life&nbsp;
+I was at Google and I helped to scale Kubernetes&nbsp;&nbsp;
+
+00:30:53.520 --> 00:31:00.560
+to the Fortune 500 enterprises I've also worked&nbsp;
+at one of the largest banks in the United States&nbsp;&nbsp;
+
+00:31:00.560 --> 00:31:09.120
+Capital One building out the internal generative&nbsp;
+AI platform today every bank every company has&nbsp;&nbsp;
+
+00:31:09.120 --> 00:31:16.880
+an AI mandate and its success depends on&nbsp;
+security developers are shipping faster&nbsp;&nbsp;
+
+00:31:16.880 --> 00:31:23.120
+they're releasing AI generated code and they're&nbsp;
+using more open-source software than ever before&nbsp;&nbsp;
+
+00:31:23.120 --> 00:31:31.040
+and at the same time there are new threat vectors&nbsp;
+emerging and the attack surface is growing so&nbsp;&nbsp;
+
+00:31:31.040 --> 00:31:42.720
+to harness the productivity and speed benefits&nbsp;
+of AI requires that each of us can stay secure
+
+00:31:42.720 --> 00:31:49.520
+here's the good news on Vercel we've got&nbsp;
+you every time you deploy your application&nbsp;&nbsp;
+
+00:31:49.520 --> 00:31:56.880
+to Vercel whether you notice it or not it's&nbsp;
+protected by multiple layers of security your&nbsp;&nbsp;
+
+00:31:56.880 --> 00:32:04.720
+workspace is secured with SSO and roll-based&nbsp;
+access controls your application is secured&nbsp;&nbsp;
+
+00:32:04.720 --> 00:32:12.320
+through our network defenses that allow only&nbsp;
+legitimate traffic to reach your application&nbsp;&nbsp;
+
+00:32:12.320 --> 00:32:21.120
+and block the latest threats in real time and&nbsp;
+your infrastructure is secured through hardened&nbsp;&nbsp;
+
+00:32:21.120 --> 00:32:30.800
+environments secure by design practices and&nbsp;
+new AI primitives like the Vercel Sandbox
+
+00:32:30.800 --> 00:32:36.880
+Vercel's Firewall sits at each of our Points&nbsp;
+of Presence across the globe and it protects&nbsp;&nbsp;
+
+00:32:36.880 --> 00:32:45.520
+every application by default regardless of which&nbsp;
+plan you're on our platform Firewall provides&nbsp;&nbsp;
+
+00:32:45.520 --> 00:32:52.400
+Layer 3 and Layer 4 protection to stop&nbsp;
+volumetric attacks like SYN floods and&nbsp;&nbsp;
+
+00:32:52.400 --> 00:33:01.280
+our Web Application Firewall protects against&nbsp;
+sophisticated Layer 7 attacks here we recently&nbsp;&nbsp;
+
+00:33:01.280 --> 00:33:09.760
+introduced a proprietary real-time DDoS mitigation&nbsp;
+engine this engine it continuously ingests and&nbsp;&nbsp;
+
+00:33:09.760 --> 00:33:17.680
+analyzes traffic live signals mapping complex&nbsp;
+relationships between fingerprints user agents&nbsp;&nbsp;
+
+00:33:17.680 --> 00:33:27.520
+IPs ASNs and user behavior and it pushes these&nbsp;
+mitigations directly to the regions at the Edge&nbsp;&nbsp;
+
+00:33:27.520 --> 00:33:36.000
+for instant enforcement and this has cut the&nbsp;
+median time to mitigation from 20 seconds to&nbsp;&nbsp;
+
+00:33:36.000 --> 00:33:44.720
+1.5 seconds and this real time DDoS mitigation&nbsp;
+is on by default again on every application&nbsp;&nbsp;
+
+00:33:44.720 --> 00:33:53.440
+it operates transparently and immediately&nbsp;
+benefits all deployments without any configuration
+
+00:33:53.440 --> 00:34:00.000
+so far this year Vercel's Firewall&nbsp;
+has mitigated over 260 billion threats&nbsp;&nbsp;
+
+00:34:00.000 --> 00:34:07.360
+and those were coming from over 180&nbsp;
+million unique IPs distributed globally&nbsp;&nbsp;
+
+00:34:07.360 --> 00:34:14.800
+we've seen a real increase in globally&nbsp;
+distributed threats and many of these&nbsp;&nbsp;
+
+00:34:14.800 --> 00:34:24.160
+threats were missed by the traditional CDNs&nbsp;
+that's the power of Vercel's innovation
+
+00:34:24.160 --> 00:34:30.160
+so in addition to the always on mitigation our&nbsp;
+Web Application Firewall is configurable by you&nbsp;&nbsp;
+
+00:34:30.160 --> 00:34:37.600
+the user and it comes with deep observability so&nbsp;
+your teams can implement your own business logic&nbsp;&nbsp;
+
+00:34:37.600 --> 00:34:46.051
+you can use custom rules you can do rate limiting&nbsp;
+rollback protections you can use the managed rulesets&nbsp;&nbsp;
+
+00:34:46.051 --> 00:34:51.840
+of course these days it's not just about&nbsp;traditional 
+threats increasingly teams are turning&nbsp;&nbsp;
+
+00:34:51.840 --> 00:35:02.480
+to Vercel for one of the most gnarly problems on&nbsp;
+the modern web bots some bots like search engines&nbsp;&nbsp;
+
+00:35:02.480 --> 00:35:13.120
+or internal agents are beneficial but many are&nbsp;
+harmful scrapers scanners credential stuffers&nbsp;&nbsp;
+
+00:35:13.120 --> 00:35:19.680
+all those stolen passwords that these bots can&nbsp;
+use on your site they can be very malicious and&nbsp;&nbsp;
+
+00:35:19.680 --> 00:35:26.000
+they can do a lot of damage to your business so at&nbsp;
+Vercel we're focused on helping you stop the bad&nbsp;&nbsp;
+
+00:35:26.000 --> 00:35:35.680
+bots whether you're a large bank or you're just an&nbsp;
+emerging AI startup we're building a comprehensive&nbsp;&nbsp;
+
+00:35:35.680 --> 00:35:42.640
+bot management suite and our focus here is on&nbsp;
+separating the signal from the noise doing it&nbsp;&nbsp;
+
+00:35:42.640 --> 00:35:52.320
+at scale the first part of our bot management&nbsp;
+system is two managed rulesets bot protection bot&nbsp;&nbsp;
+
+00:35:52.320 --> 00:35:59.600
+protection intelligently challenges non-browser&nbsp;
+requests and there are a lot of non-browser&nbsp;&nbsp;
+
+00:35:59.600 --> 00:36:06.480
+requests on the internet today we're finding that&nbsp;
+in just a few weeks bot protection that ruleset&nbsp;&nbsp;
+
+00:36:06.480 --> 00:36:15.760
+has blocked nearly a billion undesired requests&nbsp;
+the second piece is AI bot the AI bot filter&nbsp;&nbsp;
+
+00:36:15.760 --> 00:36:21.200
+allows you to optionally block any unwanted&nbsp;
+AI crawlers that may be coming to your site&nbsp;&nbsp;
+
+00:36:22.560 --> 00:36:29.760
+and the third part is Attack Challenge Mode this&nbsp;
+is a hammer Attack Challenge Mode allows you to&nbsp;&nbsp;
+
+00:36:29.760 --> 00:36:35.200
+challenge every new session so that you can ensure&nbsp;
+that only humans access your site under critical&nbsp;&nbsp;
+
+00:36:35.200 --> 00:36:46.160
+threat scenarios now that's not all did you&nbsp;
+know that not all bots on the internet are noisy
+
+00:36:46.160 --> 00:36:56.000
+while most bad bots aim for scale advanced&nbsp;
+bots aim for stealth they mimic human behavior&nbsp;&nbsp;
+
+00:36:56.000 --> 00:37:02.320
+they use headless browsers and they keep their&nbsp;
+traffic hidden amongst your real users to avoid&nbsp;&nbsp;
+
+00:37:02.320 --> 00:37:09.200
+detection these are really difficult to detect and&nbsp;
+they're very real they often target the highest&nbsp;&nbsp;
+
+00:37:09.200 --> 00:37:19.360
+value parts of your applications so think about&nbsp;
+your login your auth your checkout flow and some&nbsp;&nbsp;
+
+00:37:19.360 --> 00:37:25.760
+of the actions that trigger expensive backend&nbsp;
+operations like LLM API calls these aren't the&nbsp;&nbsp;
+
+00:37:25.760 --> 00:37:33.120
+bots that'll trip a rate limit they're the ones&nbsp;
+that slip by unnoticed so don't let these bots&nbsp;&nbsp;
+
+00:37:33.120 --> 00:37:41.040
+get you especially for your high-value workloads&nbsp;
+you need sophisticated client and server-time real&nbsp;&nbsp;
+
+00:37:41.040 --> 00:37:47.200
+server-side real-time threat detection some of&nbsp;
+you might be thinking that well maybe a CAPTCHA&nbsp;&nbsp;
+
+00:37:47.200 --> 00:37:55.040
+could help yeah I'm not so sure with CAPTCHAs&nbsp;
+these days it's not clear that even a human&nbsp;&nbsp;
+
+00:37:55.040 --> 00:38:01.600
+could solve that and our team actually did some&nbsp;
+research here we ask the world to come up with&nbsp;&nbsp;
+
+00:38:01.600 --> 00:38:08.480
+the most advanced the most ridiculous sometimes&nbsp;
+the most hilarious CAPTCHAs that actually capture&nbsp;&nbsp;
+
+00:38:08.480 --> 00:38:17.280
+a human and here's some of our favorites&nbsp;
+so G came up with the Doom CAPTCHA Dan has&nbsp;&nbsp;
+
+00:38:17.280 --> 00:38:24.640
+us drawing little fishies and the winner Edwin&nbsp;
+is asking are you a bot or are you a dancer&nbsp;&nbsp;
+
+00:38:26.000 --> 00:38:30.240
+well personally I love to dance but that's&nbsp;
+probably not what you want when I'm on your&nbsp;&nbsp;
+
+00:38:30.240 --> 00:38:36.560
+checkout page yeah we don't really want&nbsp;
+humans to pay this increasing cognitive&nbsp;&nbsp;
+
+00:38:36.560 --> 00:38:43.520
+tax when they're trying to use your app and so&nbsp;
+what these hilarious submissions have shown us&nbsp;&nbsp;
+
+00:38:43.520 --> 00:38:53.600
+is the absurdity of the CAPTCHA and also&nbsp;
+that the best CAPTCHA is invisible
+
+00:38:57.520 --> 00:39:02.960
+the truth is that the same AI that helped our&nbsp;
+community build those CAPTCHAs well it can also&nbsp;&nbsp;
+
+00:39:02.960 --> 00:39:09.360
+solve them so if you're relying on a CAPTCHA&nbsp;
+to secure your site it's now an open door for&nbsp;&nbsp;
+
+00:39:09.360 --> 00:39:17.920
+bots so we've got a better solution we have&nbsp;
+partnered with Kasada Kasada is a world-class&nbsp;&nbsp;
+
+00:39:17.920 --> 00:39:24.320
+bot security company that protects billions of&nbsp;
+user interactions every day across sites like&nbsp;&nbsp;
+
+00:39:24.320 --> 00:39:31.760
+Hyatt Nike and Twitch and they deeply understand&nbsp;
+the adversary I am really excited to bring this&nbsp;&nbsp;
+
+00:39:31.760 --> 00:39:39.680
+solution to you Kasada's enterprise-grade defenses&nbsp;
+they are already protecting v0 and vercel.com&nbsp;&nbsp;
+
+00:39:39.680 --> 00:39:47.920
+and now we're enabling the same protection for&nbsp;
+you so today we're introducing BotID this is&nbsp;&nbsp;
+
+00:39:47.920 --> 00:39:53.840
+an invisible bot detection engine and it's now&nbsp;
+generally available on Vercel and coming soon to&nbsp;&nbsp;
+
+00:39:53.840 --> 00:40:01.760
+other clouds BotID is a lightweight solution and&nbsp;
+it combines Vercel's Edge defenses with Kasada's&nbsp;&nbsp;
+
+00:40:01.760 --> 00:40:09.520
+machine learning tools it's a drop-in code&nbsp;
+that developers can use to run the advanced bot&nbsp;&nbsp;
+
+00:40:09.520 --> 00:40:17.200
+filtering on any endpoint and escalate suspicious&nbsp;
+traffic to Kasada for deeper analysis under the&nbsp;&nbsp;
+
+00:40:17.200 --> 00:40:24.560
+hood BotID counters the most advanced bots by&nbsp;
+silently collecting thousands of signals that&nbsp;&nbsp;
+
+00:40:24.560 --> 00:40:32.400
+distinguish human users from bots and it mutates&nbsp;
+these detections on every page load to evade&nbsp;&nbsp;
+
+00:40:32.400 --> 00:40:39.440
+reverse engineering and sophisticated bypasses&nbsp;
+and then it streams all of this attack data into&nbsp;&nbsp;
+
+00:40:39.440 --> 00:40:45.680
+a global machine learning mesh that collectively&nbsp;
+strengthens protection for all customers
+
+00:40:48.000 --> 00:40:53.040
+Vercel's security suite works well&nbsp;
+together and it's holistic so we've&nbsp;&nbsp;
+
+00:40:53.040 --> 00:40:59.520
+got the L3 L4 platform Firewall that&nbsp;
+protects against volutric attacks and&nbsp;&nbsp;
+
+00:40:59.520 --> 00:41:06.080
+then our proprietary Web Application Firewall&nbsp;
+that mitigates against sophisticated L7 DDoS&nbsp;&nbsp;
+
+00:41:06.080 --> 00:41:13.858
+attacks in real time and is configurable&nbsp;
+by users the bot protection managed ruleset&nbsp;
+
+00:41:13.858 --> 00:41:21.200
+that catches shady scrapers and&nbsp;
+lets good actors through and now BotID that&nbsp;&nbsp;
+
+00:41:21.200 --> 00:41:30.960
+runs quietly behind the scenes to verify that&nbsp;
+traffic is authentic no friction no CAPTCHA
+
+00:41:30.960 --> 00:41:38.240
+and there's one more thing we've always provided&nbsp;
+observability of bot traffic so that you can dig&nbsp;&nbsp;
+
+00:41:38.240 --> 00:41:44.400
+deep and see what's being challenged what's&nbsp;
+being allowed in real time and understand its&nbsp;&nbsp;
+
+00:41:44.400 --> 00:41:50.400
+impact before enforcement but sometimes all&nbsp;
+of this data it requires finding the needle&nbsp;&nbsp;
+
+00:41:50.400 --> 00:41:56.800
+in the haststack and can take a long time and&nbsp;
+we really want to reduce the manual burden on&nbsp;&nbsp;
+
+00:41:56.800 --> 00:42:01.360
+developers and security teams to sift through&nbsp;
+those logs and identify those patterns and&nbsp;&nbsp;
+
+00:42:01.360 --> 00:42:08.400
+figure out you know what's the fine grain rule&nbsp;
+to write that won't block legitimate traffic&nbsp;&nbsp;
+
+00:42:08.400 --> 00:42:15.280
+introducing Vercel Agent this is a new kind of&nbsp;
+intelligent assistant for you and your team to&nbsp;&nbsp;
+
+00:42:15.280 --> 00:42:23.920
+go beyond just monitoring the situation and it's&nbsp;
+now in Limited Beta as an example Vercel Agent&nbsp;&nbsp;
+
+00:42:23.920 --> 00:42:30.480
+can run investigations for you it can help you&nbsp;
+weed out the signal from the noise using natural&nbsp;&nbsp;
+
+00:42:30.480 --> 00:42:37.600
+language you can look at a point in time and let&nbsp;
+the AI dig into the haystack behind the scenes&nbsp;&nbsp;
+
+00:42:37.600 --> 00:42:45.440
+Vercel launches an agentic workflow and that's&nbsp;
+using Vercel's AI SDK our Gateway and various&nbsp;&nbsp;
+
+00:42:45.440 --> 00:42:52.320
+LLMs this process analyzes traffic it identifies&nbsp;
+the meaningful issues and then it recommends&nbsp;&nbsp;
+
+00:42:52.320 --> 00:42:58.800
+the right course of action collaborating with&nbsp;
+your team and giving them superpowers so let's&nbsp;&nbsp;
+
+00:42:58.800 --> 00:43:06.880
+look at a demo now as a user I'm here inside the&nbsp;
+Firewall dashboard and I see that there's a spike&nbsp;&nbsp;
+
+00:43:06.880 --> 00:43:13.840
+so I can select an area and then kick off an&nbsp;
+investigation and Vercel Agent opens this&nbsp;&nbsp;
+
+00:43:13.840 --> 00:43:19.280
+interactive notebook where I can type back and&nbsp;
+forth with the agent and it's going to start an&nbsp;&nbsp;
+
+00:43:19.280 --> 00:43:25.440
+initial analysis and we can see that it's already&nbsp;
+identified the anomaly in our traffic and then it&nbsp;&nbsp;
+
+00:43:25.440 --> 00:43:30.560
+starts to reason through the root causes this&nbsp;
+is the LLM reasoning through the root causes&nbsp;&nbsp;
+
+00:43:30.560 --> 00:43:38.240
+it's breaking down the traffic now by ASN and IP&nbsp;
+address and it's trying to find the root cause&nbsp;&nbsp;
+
+00:43:38.240 --> 00:43:44.880
+and digging further into the traffic from that&nbsp;
+ASN we see that it's picked up the source and&nbsp;&nbsp;
+
+00:43:44.880 --> 00:43:51.760
+now it's going to recommend a mitigation&nbsp;
+and there we have it it's recommending a&nbsp;&nbsp;
+
+00:43:51.760 --> 00:43:58.160
+new firewall rule so Vercel Agent gives us a&nbsp;
+really nice concise summary of what's going on&nbsp;&nbsp;
+
+00:43:58.160 --> 00:44:03.520
+it explains the root causes in plain language&nbsp;
+and then it proposes new defenses like firewall&nbsp;&nbsp;
+
+00:44:03.520 --> 00:44:10.800
+rules or managed rulesets Vercel Agent brings&nbsp;
+the power of AI to your suite of defenses making&nbsp;&nbsp;
+
+00:44:10.800 --> 00:44:18.320
+security even easier by default so that&nbsp;
+you can accelerate your AI transformation
+
+00:44:18.320 --> 00:44:22.000
+this is just the start later today our CTO Malte&nbsp;&nbsp;
+
+00:44:22.000 --> 00:44:26.210
+will share how you can start building&nbsp;
+your own custom agents on Vercel
+
+00:44:26.210 --> 00:44:30.013
+[Music]
+

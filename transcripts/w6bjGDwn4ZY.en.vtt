@@ -1,0 +1,1913 @@
+WEBVTT
+Kind: captions
+Language: en
+
+00:00:08.720 --> 00:00:15.360
+Hi everyone. It's so great to be here. Since&nbsp;
+Ship last year, the world has changed a lot.&nbsp;&nbsp;
+
+00:00:15.360 --> 00:00:22.320
+We're writing less code by hand, but more ideas&nbsp;
+are coming to life than ever before. In fact, six&nbsp;&nbsp;
+
+00:00:22.320 --> 00:00:29.440
+months ago, less than 3% of Vercel's deployments&nbsp;
+were triggered by coding agents or clankers.&nbsp;&nbsp;
+
+00:00:30.160 --> 00:00:36.640
+Since then, the number has grown 17 times.&nbsp;
+Over half of deployments on Vercel now come&nbsp;&nbsp;
+
+00:00:36.640 --> 00:00:44.400
+from agents. It's wild. But the bigger shift&nbsp;
+is what those agents are deploying. Since the&nbsp;&nbsp;
+
+00:00:44.400 --> 00:00:51.840
+beginning of the year, agentic workloads on Vercel&nbsp;
+have doubled. Volume on AI gateway grew from two&nbsp;&nbsp;
+
+00:00:51.840 --> 00:00:59.040
+trillion to 20 trillion tokens per month. And&nbsp;
+the shift we're seeing is that we're using&nbsp;&nbsp;
+
+00:00:59.040 --> 00:01:07.120
+agents to deploy software that can think. We're&nbsp;
+shipping agentic sites and apps, but we're using&nbsp;&nbsp;
+
+00:01:07.120 --> 00:01:14.320
+agents to ship agents. It's a really profound&nbsp;
+change. So, I want to go back in time and show&nbsp;&nbsp;
+
+00:01:14.320 --> 00:01:21.360
+you how we got here because our new world is&nbsp;
+agentic, but it all started with websites.&nbsp;&nbsp;
+
+00:01:22.240 --> 00:01:28.480
+Look at that little G back in Argentina&nbsp;
+building simple sites with HTML, CSS,&nbsp;&nbsp;
+
+00:01:28.480 --> 00:01:34.240
+and JavaScript. I was so excited to put my&nbsp;
+creations online. And that's what the web is&nbsp;&nbsp;
+
+00:01:34.240 --> 00:01:42.240
+all about. Sharing our ideas with the world. In&nbsp;
+fact, we built that first version of Vercel to&nbsp;&nbsp;
+
+00:01:42.240 --> 00:01:50.560
+make that easy for anyone. It was infrastructure&nbsp;
+for pages, caching, and global content delivery.&nbsp;&nbsp;
+
+00:01:50.560 --> 00:01:57.280
+Today we serve the fastest, most beautiful&nbsp;
+websites in the world for companies like the Met,&nbsp;&nbsp;
+
+00:01:57.280 --> 00:02:07.520
+Supreme and Warby Parker. But the web is no longer&nbsp;
+static. It's dynamic. Sites became datapowered&nbsp;&nbsp;
+
+00:02:07.520 --> 00:02:16.320
+applications. So Vercel built infrastructure&nbsp;
+for servers, APIs, and databases. Now, Zapier,&nbsp;&nbsp;
+
+00:02:16.320 --> 00:02:25.840
+Stripe, and the New York's own TodayTix run apps&nbsp;
+at scale on Vercel. For over a decade, we've been&nbsp;&nbsp;
+
+00:02:25.840 --> 00:02:31.920
+building Vercel into a cloud where you can run&nbsp;
+everything. And in the last year, we've shipped&nbsp;&nbsp;
+
+00:02:31.920 --> 00:02:39.120
+some huge steps towards that vision. We brought on&nbsp;
+some of the finest Python developers in the world&nbsp;&nbsp;
+
+00:02:39.120 --> 00:02:45.280
+to extend our core infrastructure for back-end&nbsp;
+frameworks. So now you can run backends like fast&nbsp;&nbsp;
+
+00:02:45.280 --> 00:02:58.640
+API, Flask, ExpressJS and Hono at scale on Vercel.&nbsp;
+We built out a complete Agent layer so you can run&nbsp;&nbsp;
+
+00:02:58.640 --> 00:03:04.800
+long running functions on fluid compute. You can&nbsp;
+make workflows durable. You can spin up secure&nbsp;&nbsp;
+
+00:03:04.800 --> 00:03:11.920
+sandboxes and you can host your MCP servers.&nbsp;
+So you make your app available to any agent.&nbsp;&nbsp;
+
+00:03:13.360 --> 00:03:20.880
+And we brought everything else your app needs&nbsp;
+right into Vercel from databases to commerce. So&nbsp;&nbsp;
+
+00:03:20.880 --> 00:03:28.960
+you can manage Amazon Aurora Postgres and MySQL&nbsp;
+auth providers like Auth0 CMS platforms like&nbsp;&nbsp;
+
+00:03:28.960 --> 00:03:38.320
+sanity and checkout from Shopify all within&nbsp;
+Vercel. So this means that you can run any&nbsp;&nbsp;
+
+00:03:38.320 --> 00:03:47.120
+architecture you want on our infrastructure.&nbsp;
+For example, OpenAI, a little AI lab you may&nbsp;&nbsp;
+
+00:03:47.120 --> 00:03:55.200
+have heard of. That's right. They run Next.js&nbsp;
+frontends on Vercel, Python backends on Vercel,&nbsp;&nbsp;
+
+00:03:55.200 --> 00:04:02.080
+reaching over a gazillion users every&nbsp;
+day. And so in addition to front ends,&nbsp;&nbsp;
+
+00:04:02.080 --> 00:04:09.760
+you can host backend only services like REST APIs,&nbsp;
+GraphQL, remember GraphQL written in Yes, that's&nbsp;&nbsp;
+
+00:04:09.760 --> 00:04:16.960
+right. Uh written in Typescript or Python. And&nbsp;
+so you can deploy workflows and cues that handle&nbsp;&nbsp;
+
+00:04:16.960 --> 00:04:24.160
+longunning asynchronous jobs, billions of messages&nbsp;
+every day. You can bring your entire application&nbsp;&nbsp;
+
+00:04:24.160 --> 00:04:30.960
+and Vercel will run all of it. Which reminds me,&nbsp;
+people keep asking me when I'm in San Francisco,&nbsp;&nbsp;
+
+00:04:30.960 --> 00:04:36.800
+they stop me on the streets and they say, "What&nbsp;
+is the Vercel for backends?" And I tell them,&nbsp;&nbsp;
+
+00:04:36.800 --> 00:04:44.160
+"Vercel [clears throat] is the Vercel for back&nbsp;
+ends." Of course, and today we'll prove it. Um,&nbsp;&nbsp;
+
+00:04:44.160 --> 00:04:50.560
+the reality is that all of this software is&nbsp;
+becoming autonomous. It's very, very exciting.&nbsp;&nbsp;
+
+00:04:50.560 --> 00:04:57.200
+Websites and apps used to respond to user input&nbsp;
+with logic, but now they have agents inside that&nbsp;&nbsp;
+
+00:04:57.200 --> 00:05:06.000
+can understand intent and perform autonomous&nbsp;
+work. Every new generation of software demands a&nbsp;&nbsp;
+
+00:05:06.000 --> 00:05:14.320
+new generation of infrastructure. So it's natural&nbsp;
+that agentic software needs agentic infrastructure&nbsp;&nbsp;
+
+00:05:14.320 --> 00:05:19.760
+and that's exactly what we're building out&nbsp;
+at Vercel. Agentic infra has three parts.&nbsp;&nbsp;
+
+00:05:21.120 --> 00:05:28.880
+Number one, Vercel is where coding agents deploy&nbsp;
+software. So when you ask Claude Code or Codex&nbsp;&nbsp;
+
+00:05:28.880 --> 00:05:36.400
+where to deploy, you get Vercel because Vercel&nbsp;
+is built for the way that agents think and work.&nbsp;&nbsp;
+
+00:05:36.400 --> 00:05:44.080
+Second, Vercel is where you build and deploy your&nbsp;
+own agents. So we give you every tool you need to&nbsp;&nbsp;
+
+00:05:44.080 --> 00:05:52.880
+build and run apps and agents in production&nbsp;
+securely at scale in one platform. And third,&nbsp;&nbsp;
+
+00:05:52.880 --> 00:06:02.160
+Vercel itself is automated by agents. So Vercel&nbsp;
+runs your apps in production. We handle traffic,&nbsp;&nbsp;
+
+00:06:02.160 --> 00:06:09.120
+observability, traces, anomalies, and so that&nbsp;
+data gives our agents the context they need to&nbsp;&nbsp;
+
+00:06:09.120 --> 00:06:18.000
+investigate autonomously and give you PRs, not&nbsp;
+just alerts. And so for context, teams using&nbsp;&nbsp;
+
+00:06:18.000 --> 00:06:24.720
+Claude Code deploy to Vercel five times more&nbsp;
+frequently than teams who don't. That's because&nbsp;&nbsp;
+
+00:06:24.720 --> 00:06:30.720
+we set the standard for developer experience&nbsp;
+and now we're doing the same for the experience&nbsp;&nbsp;
+
+00:06:30.720 --> 00:06:37.520
+of the agents that those developers use. Coding&nbsp;
+agents love deployment to Vercel because we give&nbsp;&nbsp;
+
+00:06:37.520 --> 00:06:46.080
+them everything they need. When an agent needs to&nbsp;
+verify the work, it needs a live test. So, Vercel&nbsp;&nbsp;
+
+00:06:46.080 --> 00:06:54.320
+gives every deployment a dedicated secure preview&nbsp;
+environment. When you ask your agent to ship an&nbsp;&nbsp;
+
+00:06:54.320 --> 00:07:00.320
+experiment, it needs to roll out that experiment&nbsp;
+safely. So, Vercel gives every experiment a&nbsp;&nbsp;
+
+00:07:00.320 --> 00:07:06.320
+feature flag, the infrastructure to control and&nbsp;
+and roll out that change with confidence with&nbsp;&nbsp;
+
+00:07:06.320 --> 00:07:12.720
+instant roll back and other capabilities. And you&nbsp;
+don't want your agent wasting time clicking around&nbsp;&nbsp;
+
+00:07:12.720 --> 00:07:21.840
+a dashboard like it's 1955. That's right. An agent&nbsp;
+is most efficient when every part of the platform&nbsp;&nbsp;
+
+00:07:21.840 --> 00:07:33.200
+is available in its own language. And so Vercel&nbsp;
+gives the agent a CLI, APIs, MCPs. So this year,&nbsp;&nbsp;
+
+00:07:33.200 --> 00:07:40.800
+as an example, an engineer at Meta opened Claude&nbsp;
+Code and asked it to build an internal tool. When&nbsp;&nbsp;
+
+00:07:40.800 --> 00:07:46.080
+it was time to test it, he asked Claude, "Where&nbsp;
+do I deploy this internal tool?" and push it to&nbsp;&nbsp;
+
+00:07:46.080 --> 00:07:53.920
+Vercel. A week later, everyone on his team was&nbsp;
+deployed to Vercel. Within a month, Vercel was the&nbsp;&nbsp;
+
+00:07:53.920 --> 00:08:02.800
+go-to platform for all of Meta Super Intelligence&nbsp;
+Labs. Meta.ai, Meta's frontier AI product, was&nbsp;&nbsp;
+
+00:08:02.800 --> 00:08:09.760
+born on Vercel. And this happened even though Meta&nbsp;
+had already spent a bazillion gazillion trillion&nbsp;&nbsp;
+
+00:08:09.760 --> 00:08:15.200
+dollars building their own deployment platform,&nbsp;
+building their own infrastructure, but even the&nbsp;&nbsp;
+
+00:08:15.200 --> 00:08:21.440
+most powerful infrastructure in the world doesn't&nbsp;
+natively speak the language of agents. Vercel&nbsp;&nbsp;
+
+00:08:21.440 --> 00:08:32.640
+does. And so agentic infrastructure is where you&nbsp;
+deploy your websites, apps, and agents. Thank you.
+
+00:08:45.120 --> 00:08:51.440
+G just told you that our compute layer powers&nbsp;
+everything on Vercel. I want to tell you about it&nbsp;&nbsp;
+
+00:08:51.440 --> 00:08:58.160
+because for years running serverless compute meant&nbsp;
+living with tradeoffs. Serverless was supposed&nbsp;&nbsp;
+
+00:08:58.160 --> 00:09:05.920
+to free you from managing servers and it did. But&nbsp;
+every one of you who shipped a serverless function&nbsp;&nbsp;
+
+00:09:05.920 --> 00:09:14.160
+knows that it came with a catch. Actually, a&nbsp;
+whole list of them depending on the vendor. Your&nbsp;&nbsp;
+
+00:09:14.160 --> 00:09:22.880
+function can only run for so long. There are rules&nbsp;
+on how big your function could be. Network access&nbsp;&nbsp;
+
+00:09:22.880 --> 00:09:30.080
+was often wide open. [clears throat] Good luck&nbsp;
+getting FFmpeg to work. Trust me, I've been there.&nbsp;&nbsp;
+
+00:09:30.880 --> 00:09:37.680
+you get one operating system or in some cases&nbsp;
+none. Take it or leave it. There are vendors&nbsp;&nbsp;
+
+00:09:37.680 --> 00:09:43.760
+out there who don't give you real NodeJS or&nbsp;
+Python. The limitations on how much you can&nbsp;&nbsp;
+
+00:09:43.760 --> 00:09:50.000
+upload to that function and forget about holding&nbsp;
+long connections open. No websockets, no long live&nbsp;&nbsp;
+
+00:09:50.000 --> 00:10:00.800
+streams. Every one of those is a place where the&nbsp;
+platform just said no. I'm happy to announce that&nbsp;&nbsp;
+
+00:10:00.800 --> 00:10:08.720
+with Fluid Compute 2.0, that list is gone. You&nbsp;
+can run functions for up to 30 minutes. Functions&nbsp;&nbsp;
+
+00:10:08.720 --> 00:10:18.080
+can be up to 5 GB in size. You get private secure&nbsp;
+connections to your own backends. You can install&nbsp;&nbsp;
+
+00:10:18.080 --> 00:10:24.320
+any package. You can pick your operating system.&nbsp;
+Still, as always, on Vercel, you get, you know,&nbsp;&nbsp;
+
+00:10:24.320 --> 00:10:35.280
+real Node and real Python. Large uploads are&nbsp;
+no problem. And there's full websocket support.
+
+00:10:35.280 --> 00:10:39.040
+[applause]
+
+00:10:39.040 --> 00:10:43.920
+And of course, you keep everything you always&nbsp;
+liked about serverless. Automatic security&nbsp;&nbsp;
+
+00:10:43.920 --> 00:10:49.760
+updates and automated scaling. This is 10 years&nbsp;
+of innovation building the compute stack of the&nbsp;&nbsp;
+
+00:10:49.760 --> 00:10:56.240
+future. I'm so proud of the hard work our team&nbsp;
+has done to give you a world free from trade-offs.&nbsp;&nbsp;
+
+00:10:57.760 --> 00:11:06.640
+So, how do we do it? How do we flip every one&nbsp;
+of those nos to a yes? Most platforms stitch&nbsp;&nbsp;
+
+00:11:06.640 --> 00:11:14.720
+together a zoo of primitives, bare metal, VMs,&nbsp;
+containers, WASM, process isolation, V8 isolates,&nbsp;&nbsp;
+
+00:11:14.720 --> 00:11:21.360
+each with their own rules and trade-offs.&nbsp;
+We made one bet instead. We bet everything&nbsp;&nbsp;
+
+00:11:21.360 --> 00:11:30.800
+on micro microVMs and build a platform we call&nbsp;
+hive. A microVM gives you a strong no compromise&nbsp;&nbsp;
+
+00:11:30.800 --> 00:11:37.360
+kernel level isolation between tenants. There&nbsp;
+are no shortcuts on security. Our bet was that&nbsp;&nbsp;
+
+00:11:37.360 --> 00:11:43.840
+microVMs could model every kind of compute Vercel&nbsp;
+runs. Now that journey started with builds a few&nbsp;&nbsp;
+
+00:11:43.840 --> 00:11:50.960
+years ago. Actually today every compute primitive&nbsp;
+on Vercel runs on that one unified stack that's&nbsp;&nbsp;
+
+00:11:50.960 --> 00:12:03.680
+built sandboxes and functions. Now a few weeks&nbsp;
+ago we brought Docker and OCI images to sandbox.&nbsp;&nbsp;
+
+00:12:03.680 --> 00:12:09.760
+But I just mentioned how functions and sandboxes&nbsp;
+are now run on one unified stack. So could I run&nbsp;&nbsp;
+
+00:12:09.760 --> 00:12:16.160
+Docker on Vercel functions? Yes, you can.&nbsp;
+Today we're bringing Docker images to the&nbsp;&nbsp;
+
+00:12:16.160 --> 00:12:26.800
+whole platform with Vercel container registry and&nbsp;
+flexible runtime for fluid compute. [applause]
+
+00:12:26.800 --> 00:12:31.040
+Thank you. You heard that right. You can now run&nbsp;
+Docker images on Vercel and truly ship anything&nbsp;&nbsp;
+
+00:12:31.040 --> 00:12:41.280
+you want. Ruby on Rails, PHP, Java, even Net all&nbsp;
+work natively on Vercel. And like G said earlier,&nbsp;&nbsp;
+
+00:12:41.280 --> 00:12:46.640
+you can run anything on our infrastructure, front&nbsp;
+ends, backends, and backend only services. And now&nbsp;&nbsp;
+
+00:12:46.640 --> 00:12:54.000
+you can run your own containers. But developers&nbsp;
+also tell us it's too hard to wire all these&nbsp;&nbsp;
+
+00:12:54.000 --> 00:13:00.960
+place pieces together. And so we fixed it. Today,&nbsp;
+I'm excited to announce Vercel services. It's the&nbsp;&nbsp;
+
+00:13:00.960 --> 00:13:06.800
+developer experience you know and love for your&nbsp;
+full stack applications. You can now develop&nbsp;&nbsp;
+
+00:13:06.800 --> 00:13:14.160
+your front end and back end together with one&nbsp;
+command vc dev and everything spins up locally.&nbsp;&nbsp;
+
+00:13:14.160 --> 00:13:20.720
+When you push a commit, you get a preview for&nbsp;
+your entire app, not just the front end. Even&nbsp;&nbsp;
+
+00:13:20.720 --> 00:13:27.680
+backend only commits generate a full preview you&nbsp;
+can test before you ship. And all services deploy&nbsp;&nbsp;
+
+00:13:27.680 --> 00:13:33.680
+you deploy can talk to each other privately&nbsp;
+without ever touching the public internet.&nbsp;&nbsp;
+
+00:13:33.680 --> 00:13:41.840
+You can now run all your microservices on Vercel&nbsp;
+and everything just works. All right, now let's&nbsp;&nbsp;
+
+00:13:41.840 --> 00:13:51.280
+talk about the elephant in the room. What might&nbsp;
+it be? This is all great, but what does it cost?
+
+00:13:51.280 --> 00:14:00.480
+You could throw all of this on a $5 VPS, right?&nbsp;
+Or as they call it, postinflation the $25 VPS. Uh&nbsp;&nbsp;
+
+00:14:00.480 --> 00:14:08.080
+jokes aside, here's the real model. Fluid compute&nbsp;
+uses active CPU pricing. You pay the CPU price&nbsp;&nbsp;
+
+00:14:08.080 --> 00:14:13.520
+only when you're actually computing. So when&nbsp;
+your agent is sitting there waiting on an LLM,&nbsp;&nbsp;
+
+00:14:13.520 --> 00:14:23.680
+that is zero CPU cost. This is a compute primitive&nbsp;
+and pricing model that was designed for agents.&nbsp;&nbsp;
+
+00:14:23.680 --> 00:14:27.760
+Now I know what some of you are thinking, but I&nbsp;
+can run my [clears throat] own server cheaper.&nbsp;&nbsp;
+
+00:14:27.760 --> 00:14:34.160
+And to be honest, I was kind of thinking that&nbsp;
+myself. But can you actually do this? Let's&nbsp;&nbsp;
+
+00:14:34.160 --> 00:14:42.320
+go through this model. Start with us. Fluid is&nbsp;
+one flat price. It's about 15 cents per active&nbsp;&nbsp;
+
+00:14:42.320 --> 00:14:50.960
+CPU hour. Again, you only pay for the CPU you&nbsp;
+actually burn. A server you rent is the opposite,&nbsp;&nbsp;
+
+00:14:50.960 --> 00:14:58.240
+right? You pay for the whole machine every hour&nbsp;
+whether you use it or not. So math in our head,&nbsp;&nbsp;
+
+00:14:58.240 --> 00:15:06.880
+renting only wins if you keep that machine very&nbsp;
+busy. Just just to match our price on raw EC2,&nbsp;&nbsp;
+
+00:15:06.880 --> 00:15:15.360
+you'd have to run it at 35% utilization every hour&nbsp;
+all year. That's your production systems possible&nbsp;&nbsp;
+
+00:15:15.360 --> 00:15:21.840
+for sure. It's your staging systems and the&nbsp;
+developer sandboxes. Everything together must must&nbsp;&nbsp;
+
+00:15:21.840 --> 00:15:31.120
+be above 35% to match fluid. In practice, almost&nbsp;
+nobody runs that hot data for real world average&nbsp;&nbsp;
+
+00:15:31.120 --> 00:15:38.480
+utilization kubernetes in 2026 is that companies&nbsp;
+on average achieve 8% utilization when considering&nbsp;&nbsp;
+
+00:15:38.480 --> 00:15:46.880
+all those systems. That means you actually use it&nbsp;
+about 1 hour in every 12 hours. So that 15 cents&nbsp;&nbsp;
+
+00:15:46.880 --> 00:15:55.200
+CPU hour in fluid compute on EC2 it cost you 58&nbsp;
+cents. And if you add Fargate or EKS it's even&nbsp;&nbsp;
+
+00:15:55.200 --> 00:16:01.760
+more. It's the same compute three to four times&nbsp;
+the price and you get the privilege of running it&nbsp;&nbsp;
+
+00:16:01.760 --> 00:16:13.680
+yourself. With active CPU pricing you never manage&nbsp;
+any of this. You pay for the CPUs and that's it.
+
+00:16:13.680 --> 00:16:21.840
+Cool. that summarize Fluid Compute 2.0 Up to&nbsp;
+30 minutes of function duration, up to 5 GB&nbsp;&nbsp;
+
+00:16:21.840 --> 00:16:29.280
+of code per function, continued support for VPC&nbsp;
+peering, VPCs, VPNs and and static egress IPs,&nbsp;&nbsp;
+
+00:16:29.280 --> 00:16:37.280
+full Docker image support, great DX for Vercel&nbsp;
+services and choose your own with continued real&nbsp;&nbsp;
+
+00:16:37.280 --> 00:16:45.280
+support for Node.js, JS, Python, and even up to&nbsp;
+100 megabytes of uploads, full websocket support,&nbsp;&nbsp;
+
+00:16:45.280 --> 00:16:52.640
+and active CPU pricing that beats renting servers&nbsp;
+in most real world situations. Vercel is now the&nbsp;&nbsp;
+
+00:16:52.640 --> 00:16:59.520
+most capable compute platform for every type of&nbsp;
+workload, front ends, backends, and agents. Let&nbsp;&nbsp;
+
+00:16:59.520 --> 00:17:06.160
+me bring up Tomo, our chief product officer, to&nbsp;
+show you what you can build and run on top of it.
+
+00:17:12.840 --> 00:17:13.840
+[music]
+
+00:17:13.840 --> 00:17:20.480
+Hello everyone. Malte, thank you so much. I'm so&nbsp;
+happy to be back in New York with all of you. With&nbsp;&nbsp;
+
+00:17:20.480 --> 00:17:25.600
+the latest compute innovations Malte just walked&nbsp;
+us through, Vercel is now the ideal platform for&nbsp;&nbsp;
+
+00:17:25.600 --> 00:17:32.800
+deploying any type of full stack application that&nbsp;
+includes backends. It's also the ideal platform&nbsp;&nbsp;
+
+00:17:32.800 --> 00:17:40.480
+for building and deploying agents. Agents need&nbsp;
+to connect to models, execute complex workflows,&nbsp;&nbsp;
+
+00:17:40.480 --> 00:17:45.600
+and connect to data and apps. And Vercel's agent&nbsp;
+stack provides all the tools you need to build&nbsp;&nbsp;
+
+00:17:45.600 --> 00:17:51.520
+and ship truly capable agents. Let me walk you&nbsp;
+through these tools now. Starting with how we&nbsp;&nbsp;
+
+00:17:51.520 --> 00:17:59.920
+connect to LLMs using the AI SDK. AI SDK was&nbsp;
+initially released 3 years ago last week and&nbsp;&nbsp;
+
+00:17:59.920 --> 00:18:06.160
+has been in active development ever since. It's&nbsp;
+a universal toolkit for building AI applications,&nbsp;&nbsp;
+
+00:18:06.160 --> 00:18:12.320
+frameworks, and agents across any model provider.&nbsp;
+It's platform agnostic, and it allows you to&nbsp;&nbsp;
+
+00:18:12.320 --> 00:18:19.920
+generate text, images, audio, and more. With&nbsp;
+over 16 million npm downloads every week,&nbsp;&nbsp;
+
+00:18:19.920 --> 00:18:25.600
+it's become the standard TypeScript SDK&nbsp;
+for accessing any model from any provider.&nbsp;&nbsp;
+
+00:18:25.600 --> 00:18:32.720
+And we also re recently released the AI SDK for&nbsp;
+Python. AI SDK is being used at massive scale&nbsp;&nbsp;
+
+00:18:32.720 --> 00:18:39.280
+by companies all over the world like Brex. Brex&nbsp;
+helps businesses with spend management, expenses,&nbsp;&nbsp;
+
+00:18:39.280 --> 00:18:44.320
+corporate cards, and things like that. They've&nbsp;
+built agents that review thousands of transactions&nbsp;&nbsp;
+
+00:18:44.320 --> 00:18:51.920
+at uh uh in order to audit expenses. Those&nbsp;
+agents call models, invoke tools, stream results,&nbsp;&nbsp;
+
+00:18:51.920 --> 00:18:58.480
+and parse structured financial data to identify&nbsp;
+anomalies. And the AI SDK simplifies all of this&nbsp;&nbsp;
+
+00:18:58.480 --> 00:19:03.920
+with a standard abstraction layer. The best part&nbsp;
+is that you can experiment with different models&nbsp;&nbsp;
+
+00:19:03.920 --> 00:19:08.320
+for different parts of your application.&nbsp;
+And you can try out new models as soon as&nbsp;&nbsp;
+
+00:19:08.320 --> 00:19:13.200
+they're released, all without needing to make&nbsp;
+any changes to your product code. Last week,&nbsp;&nbsp;
+
+00:19:13.200 --> 00:19:20.720
+we released our latest major version, AI SDK 7. It&nbsp;
+adds a ton of new capabilities for working across&nbsp;&nbsp;
+
+00:19:20.720 --> 00:19:27.280
+the entire agent life cycle. It adds a unified&nbsp;
+API for reasoning, strongly typed tool and runtime&nbsp;&nbsp;
+
+00:19:27.280 --> 00:19:33.680
+context, support for tool approvals, durability,&nbsp;
+timeouts, and so much more. But it also enables&nbsp;&nbsp;
+
+00:19:33.680 --> 00:19:42.000
+you to generate videos and build real time voice&nbsp;
+apps and agents. Okay, so AI SDK makes building&nbsp;&nbsp;
+
+00:19:42.000 --> 00:19:47.360
+with AI easy, but you still need to manage the&nbsp;
+connection to the underlying models and providers.&nbsp;&nbsp;
+
+00:19:47.360 --> 00:19:53.360
+That's where our next agent stack primitive comes&nbsp;
+in, which is the AI gateway. AI gateway provides&nbsp;&nbsp;
+
+00:19:53.360 --> 00:19:58.720
+a unified interface for accessing AI models, but&nbsp;
+it's actually so much more than that. Internally,&nbsp;&nbsp;
+
+00:19:58.720 --> 00:20:03.680
+I've been calling the AI gateway a token delivery&nbsp;
+network. And I want to explain what I mean by&nbsp;&nbsp;
+
+00:20:03.680 --> 00:20:09.280
+that. In the early days of the web, there was&nbsp;
+something called the hot origin problem. Does&nbsp;&nbsp;
+
+00:20:09.280 --> 00:20:14.080
+anyone remember this? It was actually called the&nbsp;
+hot origin problem. Guillermo doesn't agree with&nbsp;&nbsp;
+
+00:20:14.080 --> 00:20:19.440
+me about the the naming here, but this is a real&nbsp;
+thing. Popular sites would suddenly receive spikes&nbsp;&nbsp;
+
+00:20:19.440 --> 00:20:25.680
+in traffic from everywhere, but content lived&nbsp;
+in only one or a few origin locations. This&nbsp;&nbsp;
+
+00:20:25.680 --> 00:20:30.800
+created overloaded servers, slow downloads,&nbsp;
+and a pretty unpredictable user experience.&nbsp;&nbsp;
+
+00:20:30.800 --> 00:20:37.280
+The web sort of outgrew the idea that every user&nbsp;
+should fetch every asset directly from the origin.&nbsp;&nbsp;
+
+00:20:37.280 --> 00:20:44.240
+And so the CDN was born. The CDN became the&nbsp;
+internet's performance and reliability fabric,&nbsp;&nbsp;
+
+00:20:44.240 --> 00:20:51.280
+providing intelligent routing, distributed edges,&nbsp;
+observability, and so so much more. Similarly,&nbsp;&nbsp;
+
+00:20:51.280 --> 00:20:56.560
+AI use cases have now sort of outgrown the idea&nbsp;
+that every token should be fetched directly from&nbsp;&nbsp;
+
+00:20:56.560 --> 00:21:01.920
+the model provider. Tokens have actually become&nbsp;
+a production dependency now. We don't just use&nbsp;&nbsp;
+
+00:21:01.920 --> 00:21:08.160
+them during dev. We use them all the time. And&nbsp;
+the model labs are becoming the new origins.&nbsp;&nbsp;
+
+00:21:08.160 --> 00:21:15.280
+They're powerful, but they're also expensive, rate&nbsp;
+limited, and both geographically and operationally&nbsp;&nbsp;
+
+00:21:15.280 --> 00:21:24.320
+variable. As our friends at the model labs&nbsp;
+know, this is a really hard problem at scale.
+
+00:21:24.320 --> 00:21:30.720
+And so that's why we built the AI gateway. It&nbsp;
+routes around failures. It serves tokens reliably&nbsp;&nbsp;
+
+00:21:30.720 --> 00:21:37.280
+through the same global network that Vercel has&nbsp;
+run for over a decade. It also simplifies auth,&nbsp;&nbsp;
+
+00:21:37.280 --> 00:21:43.120
+centralizes usage and spend tracking with&nbsp;
+granular observability and offers zero data&nbsp;&nbsp;
+
+00:21:43.120 --> 00:21:49.360
+retention. But there's another important problem&nbsp;
+that the AI gateway solves, which is model choice.&nbsp;&nbsp;
+
+00:21:49.360 --> 00:21:54.720
+Today's agents don't actually use a single model&nbsp;
+architecture anymore. They use many models from&nbsp;&nbsp;
+
+00:21:54.720 --> 00:22:00.080
+many providers. Our AI gateway production index&nbsp;
+recently showed that teams running agents at&nbsp;&nbsp;
+
+00:22:00.080 --> 00:22:05.360
+scale route across 35 different models. So model&nbsp;
+choice isn't just about experimentation anymore.&nbsp;&nbsp;
+
+00:22:05.360 --> 00:22:12.400
+It's how you actually run AI in production at&nbsp;
+scale. Serhant is one of the most recognized&nbsp;&nbsp;
+
+00:22:12.400 --> 00:22:17.520
+names in real estate. And they use Vercel's AI&nbsp;
+gateway to build an AI app that helps their team&nbsp;&nbsp;
+
+00:22:17.520 --> 00:22:23.600
+with property valuation, marketing, and client&nbsp;
+communication. They use different models for&nbsp;&nbsp;
+
+00:22:23.600 --> 00:22:30.400
+different tasks based on uh the need for power or&nbsp;
+if they're trying to watch cost. Claude performs&nbsp;&nbsp;
+
+00:22:30.400 --> 00:22:37.280
+complex market analysis. GPT is used to create&nbsp;
+marketing copy and Gemini generates images. And&nbsp;&nbsp;
+
+00:22:37.280 --> 00:22:45.040
+all of this happens with a single AI gateway API&nbsp;
+key. AI gateway is already serving over 1 trillion&nbsp;&nbsp;
+
+00:22:45.040 --> 00:22:51.280
+tokens per day across hundreds of models from&nbsp;
+dozens of providers. It's a huge part of what&nbsp;&nbsp;
+
+00:22:51.280 --> 00:22:59.840
+makes Vercel the open platform for AI. Okay, so&nbsp;
+Vercel now serves pixels and tokens instantly&nbsp;&nbsp;
+
+00:22:59.840 --> 00:23:06.800
+and reliably, but modern software doesn't really&nbsp;
+follow a simple request response model anymore.&nbsp;&nbsp;
+
+00:23:06.800 --> 00:23:13.760
+Agents may need to run for minutes, hours, or&nbsp;
+even days and across many, many complex tasks.&nbsp;&nbsp;
+
+00:23:13.760 --> 00:23:19.120
+So that's where the next tool in the agent&nbsp;
+stack comes in, which is the workflow SDK.&nbsp;&nbsp;
+
+00:23:20.160 --> 00:23:23.920
+Longrunning workflows and back-end&nbsp;
+jobs are nothing new in software,&nbsp;&nbsp;
+
+00:23:23.920 --> 00:23:30.000
+but they're one of the most challenging things&nbsp;
+to build. Things can go wrong, and they do. And&nbsp;&nbsp;
+
+00:23:30.000 --> 00:23:36.160
+I'm sure many of you have experienced timeouts,&nbsp;
+dropped state, dropped connections, and more.&nbsp;&nbsp;
+
+00:23:36.160 --> 00:23:41.520
+Without a primitive for durability, you have to&nbsp;
+kind of handstitch together things like retries,&nbsp;&nbsp;
+
+00:23:41.520 --> 00:23:47.760
+state persistence, and this can get really&nbsp;
+ugly. This is why we built the workflow SDK.&nbsp;&nbsp;
+
+00:23:47.760 --> 00:23:52.880
+We like to say it provides infinite compute&nbsp;
+durability. It enables you to build longrunning&nbsp;&nbsp;
+
+00:23:52.880 --> 00:24:00.160
+apps and agents that automatically suspend,&nbsp;
+resume, retry, and maintain state with ease.&nbsp;&nbsp;
+
+00:24:00.160 --> 00:24:06.480
+DoorDash uses the workflow SDK to run traditional&nbsp;
+ETL jobs, keeping data in their app up to date.&nbsp;&nbsp;
+
+00:24:06.480 --> 00:24:12.800
+And our customer Flora built an entire AI design&nbsp;
+platform on the workflow SDK to help designers&nbsp;&nbsp;
+
+00:24:12.800 --> 00:24:19.440
+generate visual content at scale. Inside their&nbsp;
+platform, agents fan out across 50 different&nbsp;&nbsp;
+
+00:24:19.440 --> 00:24:26.320
+image models to generate visual directions from&nbsp;
+a single creative brief. Workflow SDK checkpoints&nbsp;&nbsp;
+
+00:24:26.320 --> 00:24:32.400
+every step of every agent and pauses when the job&nbsp;
+needs human input. And because every failure is&nbsp;&nbsp;
+
+00:24:32.400 --> 00:24:39.760
+automatically retried, the designer never needs to&nbsp;
+start over. The whole idea behind agents is that&nbsp;&nbsp;
+
+00:24:39.760 --> 00:24:44.960
+they can solve complex tasks across multi-step&nbsp;
+workflows. And what we found is that one of the&nbsp;&nbsp;
+
+00:24:44.960 --> 00:24:51.600
+primary ways agents want to accomplish tasks&nbsp;
+these days is by writing and executing code.&nbsp;&nbsp;
+
+00:24:51.600 --> 00:24:57.760
+That's where our next agent stack primitive comes&nbsp;
+in Vercel sandbox. LLMs have gotten really good at&nbsp;&nbsp;
+
+00:24:57.760 --> 00:25:03.920
+producing working code to accomplish a task. But&nbsp;
+that code is still untrusted and it can't be run&nbsp;&nbsp;
+
+00:25:03.920 --> 00:25:08.800
+inside the same environment that has access&nbsp;
+to our production systems. We need a special&nbsp;&nbsp;
+
+00:25:08.800 --> 00:25:14.000
+production grade environment that's designed&nbsp;
+for executing untrusted code in a secure and&nbsp;&nbsp;
+
+00:25:14.000 --> 00:25:20.480
+isolated way. Vercel is actually no stranger to&nbsp;
+this problem of untrusted code execution because&nbsp;&nbsp;
+
+00:25:20.480 --> 00:25:26.240
+of preview deployments and builds. We host over a&nbsp;
+billion production grade preview deployments and&nbsp;&nbsp;
+
+00:25:26.240 --> 00:25:32.800
+run over 6 million builds every single day. Every&nbsp;
+one of those builds happens inside an isolated&nbsp;&nbsp;
+
+00:25:32.800 --> 00:25:38.720
+microVM compute environment. With Vercel Sandbox,&nbsp;
+that same isolated compute environment is now&nbsp;&nbsp;
+
+00:25:38.720 --> 00:25:44.960
+available to you and your agents. It's the safest&nbsp;
+way to write code, run code you didn't write,&nbsp;&nbsp;
+
+00:25:44.960 --> 00:25:50.400
+and it's perfect for agents. Each sandbox is a&nbsp;
+fully functional computer with a file system,&nbsp;&nbsp;
+
+00:25:50.400 --> 00:25:56.160
+security boundary, and even full Docker&nbsp;
+support as Malte just mentioned. And of course,&nbsp;&nbsp;
+
+00:25:56.160 --> 00:26:01.360
+it's all built on top of fluid compute. Vercel&nbsp;
+sandbox is already being used in production at&nbsp;&nbsp;
+
+00:26:01.360 --> 00:26:06.320
+scale by the best companies in the world,&nbsp;
+including notion. Millions of teams use&nbsp;&nbsp;
+
+00:26:06.320 --> 00:26:13.120
+Notion as their AI workspace, capturing knowledge,&nbsp;
+answering questions, and moving projects forward.&nbsp;&nbsp;
+
+00:26:13.120 --> 00:26:19.840
+And now you can extend Notion with custom agents.&nbsp;
+This enables you to do things like sync CRM data,&nbsp;&nbsp;
+
+00:26:19.840 --> 00:26:27.120
+turn Slack threads into content, and connect to&nbsp;
+external workflows. But custom agents need code,&nbsp;&nbsp;
+
+00:26:27.120 --> 00:26:34.480
+and that code has to run safely, which is why&nbsp;
+Notion runs custom agents on Vercel sandbox. Since&nbsp;&nbsp;
+
+00:26:34.480 --> 00:26:39.360
+each agent gets its own general purpose compute&nbsp;
+environment, everything outside the sandbox stays&nbsp;&nbsp;
+
+00:26:39.360 --> 00:26:46.080
+protected. Okay, so now we can execute code&nbsp;
+securely inside long running workflows. But&nbsp;&nbsp;
+
+00:26:46.080 --> 00:26:51.920
+in order to do anything useful, our agents need to&nbsp;
+access data and tools. And that's where the next&nbsp;&nbsp;
+
+00:26:51.920 --> 00:26:57.600
+layer of the agent stack comes in. Starting with&nbsp;
+Vercel connect. Vercel connect is a brand new&nbsp;&nbsp;
+
+00:26:57.600 --> 00:27:02.240
+building block that allows you, your agents, to&nbsp;
+securely connect to all the data and systems they&nbsp;&nbsp;
+
+00:27:02.240 --> 00:27:08.560
+need. With Connect, your agents can access tools&nbsp;
+like Slack, GitHub, Salesforce, Snowflake, and so&nbsp;&nbsp;
+
+00:27:08.560 --> 00:27:15.360
+many more. And you can even create your own custom&nbsp;
+connectors with OAuth and API keys. But here's&nbsp;&nbsp;
+
+00:27:15.360 --> 00:27:22.000
+the most important part. Instead of longived&nbsp;
+secrets, every connection uses a short-lived,&nbsp;&nbsp;
+
+00:27:22.000 --> 00:27:28.400
+minimally scoped access token. So an agent never&nbsp;
+has standing access to your systems and it never&nbsp;&nbsp;
+
+00:27:28.400 --> 00:27:34.960
+touches data it shouldn't. This short-lived&nbsp;
+access token point is really really important&nbsp;&nbsp;
+
+00:27:34.960 --> 00:27:41.200
+and minimal minimal scoped access. Zapier makes&nbsp;
+it easy for people to build AI automations and&nbsp;&nbsp;
+
+00:27:41.200 --> 00:27:46.400
+workflows. They use Vercel connect to give their&nbsp;
+apps private IP stable network access to internal&nbsp;&nbsp;
+
+00:27:46.400 --> 00:27:54.480
+AWS resources like RDS, EKS and more via private&nbsp;
+link and VPC peering. That means their apps can&nbsp;&nbsp;
+
+00:27:54.480 --> 00:28:02.160
+use real live business data, not just whatever is&nbsp;
+reachable via a public API. With Vercel Connect,&nbsp;&nbsp;
+
+00:28:02.160 --> 00:28:08.320
+your agents can securely connect to your full&nbsp;
+range of internal systems. Your CRM, your ERP,&nbsp;&nbsp;
+
+00:28:08.320 --> 00:28:13.920
+your HRIS, data warehouses, and more. But one&nbsp;
+of the most important connections your agents&nbsp;&nbsp;
+
+00:28:13.920 --> 00:28:19.200
+need is to the tools we use to interact with them.&nbsp;
+And that's where the next primitive in the agent&nbsp;&nbsp;
+
+00:28:19.200 --> 00:28:25.360
+stack comes in, which is the chat SDK. Chat SDK&nbsp;
+provides an elegant abstraction layer enabling&nbsp;&nbsp;
+
+00:28:25.360 --> 00:28:31.120
+you to interact with agents across dozens of apps.&nbsp;
+The most powerful agents we've built at Vercel are&nbsp;&nbsp;
+
+00:28:31.120 --> 00:28:37.520
+effectively our co-workers and we interact with&nbsp;
+them where work is happening as it's happening.&nbsp;&nbsp;
+
+00:28:37.520 --> 00:28:41.680
+With just a single line of code, chat SDK enables&nbsp;
+your users to interact with agents across tools&nbsp;&nbsp;
+
+00:28:41.680 --> 00:28:51.280
+like Slack, Teams, Google Chat, Discord, GitHub,&nbsp;
+Linear, Telegram, WhatsApp, and so many more. Nano&nbsp;&nbsp;
+
+00:28:51.280 --> 00:28:56.000
+Claw helps companies run AI agents, and they&nbsp;
+built their platform on top of the chat SDK.&nbsp;&nbsp;
+
+00:28:56.000 --> 00:29:03.280
+It's a single codebase, but it delivers agents&nbsp;
+across 15 messaging apps. So that's the Vercel&nbsp;&nbsp;
+
+00:29:03.280 --> 00:29:08.480
+agent stack. It's a singular set of endto-end&nbsp;
+capabilities covering everything needed to&nbsp;&nbsp;
+
+00:29:08.480 --> 00:29:13.280
+build and ship agents to production. We've taken&nbsp;
+everything we've learned building agents over the&nbsp;&nbsp;
+
+00:29:13.280 --> 00:29:18.320
+past few years and turned those learnings into&nbsp;
+best-in-class primitives that work at Vercel&nbsp;&nbsp;
+
+00:29:18.320 --> 00:29:25.280
+scale. We love this stack and our customers do&nbsp;
+too. It's a powerful stack that fills a real gap&nbsp;&nbsp;
+
+00:29:25.280 --> 00:29:30.880
+in the ecosystem, but there's still quite a bit of&nbsp;
+complexity. Each of these primitives still needs&nbsp;&nbsp;
+
+00:29:30.880 --> 00:29:38.800
+to be wired up into a single cohesive agent. What&nbsp;
+if they didn't? At Vercel, we don't want to just&nbsp;&nbsp;
+
+00:29:38.800 --> 00:29:43.760
+build the world's most powerful agents or enable&nbsp;
+you to build the world's most powerful agents. We&nbsp;&nbsp;
+
+00:29:43.760 --> 00:29:49.120
+want those agents to have craft. We want building&nbsp;
+them to be simple. And that means we also have to&nbsp;&nbsp;
+
+00:29:49.120 --> 00:29:54.720
+provide you with the fastest and easiest way to&nbsp;
+stitch all of those primitives together. To make&nbsp;&nbsp;
+
+00:29:54.720 --> 00:30:05.360
+that possible, we built the newest member of the&nbsp;
+agent stack family, Eve. Thank you. [applause]
+
+00:30:05.360 --> 00:30:11.840
+Eve is our platform agnostic framework for&nbsp;
+building complete endtoend production agents.&nbsp;&nbsp;
+
+00:30:11.840 --> 00:30:17.200
+It's opinionated based on everything we've learned&nbsp;
+over the past two years, but critically it's also&nbsp;&nbsp;
+
+00:30:17.200 --> 00:30:23.680
+completely open- source and modular. It's built&nbsp;
+to work seamlessly with uh our infrastructure&nbsp;&nbsp;
+
+00:30:23.680 --> 00:30:29.600
+with high cohesion between Vercel and Eve, but&nbsp;
+it's completely customizable, so you can make it&nbsp;&nbsp;
+
+00:30:29.600 --> 00:30:34.800
+your own and run it anywhere you'd like. With&nbsp;
+Eve, every agent is just a directory laid out&nbsp;&nbsp;
+
+00:30:34.800 --> 00:30:41.200
+in a truly intuitive way. We like to call it&nbsp;
+the Next.js for agents. I have a lot more to&nbsp;&nbsp;
+
+00:30:41.200 --> 00:30:49.880
+share about Eve, but first I want to welcome&nbsp;
+Char to the stage to walk us through a demo.
+
+00:30:49.880 --> 00:30:54.560
+[music]
+
+00:30:54.560 --> 00:30:59.840
+Thanks, Tomo. Over the last year, we've taken&nbsp;
+everything we've learned about building agents&nbsp;&nbsp;
+
+00:30:59.840 --> 00:31:06.240
+and we packaged it into Eve. Let me show you how&nbsp;
+it works. I'll get started with a single command&nbsp;&nbsp;
+
+00:31:06.240 --> 00:31:12.400
+in my terminal. This command will scaffold&nbsp;
+an agent directory, install dependencies,&nbsp;&nbsp;
+
+00:31:12.400 --> 00:31:18.960
+and start an interactive chat session with the&nbsp;
+agent. Next, I'll configure a model provider.&nbsp;&nbsp;
+
+00:31:18.960 --> 00:31:30.400
+I'll select Vercel AI gateway, select the&nbsp;
+Vercel team, links to a project in that team,
+
+00:31:30.400 --> 00:31:35.840
+and we're done. Now, let's&nbsp;
+test the agent. Who are you?
+
+00:31:37.840 --> 00:31:44.160
+Okay, that was fast. I just built a fully&nbsp;
+functional agent in less than a minute. Now,&nbsp;&nbsp;
+
+00:31:44.160 --> 00:31:50.880
+this agent runs with just two files.&nbsp;
+Agent.ts, which configures the agents model,&nbsp;&nbsp;
+
+00:31:50.880 --> 00:31:56.480
+and instruction.md that defines the agent's&nbsp;
+identity. [clears throat] And that simplicity&nbsp;&nbsp;
+
+00:31:56.480 --> 00:32:01.680
+is what makes it so easy to build an agent&nbsp;
+with Eve. Now let's build a real use case,&nbsp;&nbsp;
+
+00:32:01.680 --> 00:32:07.440
+a go to market sales agent that processes call&nbsp;
+transcripts and updates Salesforce and linear.&nbsp;&nbsp;
+
+00:32:07.440 --> 00:32:13.200
+Let's build that agent with Eve. And first I'll&nbsp;
+give the agent an identity. [clears throat] In&nbsp;&nbsp;
+
+00:32:13.200 --> 00:32:17.280
+the instructions markdown, I'll describe&nbsp;
+a go to market assistant that can create&nbsp;&nbsp;
+
+00:32:17.280 --> 00:32:23.680
+linear issues and update Salesforce&nbsp;
+opportunities based on call transcripts.
+
+00:32:23.680 --> 00:32:28.960
+And just like that, the&nbsp;
+agents have a updated charter.&nbsp;&nbsp;
+
+00:32:29.680 --> 00:32:34.480
+Next, the agent needs to create issues. So,&nbsp;
+I'll connect it to Linear. And connections&nbsp;&nbsp;
+
+00:32:34.480 --> 00:32:46.080
+are how Eve plugs into external MCP and Open API&nbsp;
+servers, and they go in the connections folder.
+
+00:32:46.080 --> 00:32:52.640
+I'll define a MCP client connection and&nbsp;
+use the linear connector in my Vercel.&nbsp;&nbsp;
+
+00:32:52.640 --> 00:32:56.960
+And I can limit the linear&nbsp;
+MCP tools the agent can use.
+
+00:32:58.400 --> 00:33:00.960
+I also want the agent to know how to create linear&nbsp;&nbsp;
+
+00:33:00.960 --> 00:33:08.800
+issues. So I'll add a skill and&nbsp;
+skills go to the skills folder.
+
+00:33:08.800 --> 00:33:14.000
+This skill will tell the agent it should look for&nbsp;
+feature requests in the transcript and separate&nbsp;&nbsp;
+
+00:33:14.000 --> 00:33:23.760
+linear issues by topic. Now let's test the&nbsp;
+agent. It should be able to create linear issues.
+
+00:33:26.720 --> 00:33:36.080
+Great issue was created and we&nbsp;
+should also see it in linear.
+
+00:33:36.080 --> 00:33:40.000
+Next, the agent needs to update Salesforce&nbsp;
+opportunities. We want to use the Salesforce&nbsp;&nbsp;
+
+00:33:40.000 --> 00:33:45.440
+CLI to make updates and the commands to be&nbsp;
+executed safely in isolation. I'll configure&nbsp;&nbsp;
+
+00:33:45.440 --> 00:33:53.440
+a sandbox.ts. This sets up a private VM for the&nbsp;
+agent to work in. And the sandbox is only allowed&nbsp;&nbsp;
+
+00:33:53.440 --> 00:34:04.320
+to talk to Salesforce and nothing else. I'll give&nbsp;
+the agent a Salesforce tool in the tools folder.
+
+00:34:04.320 --> 00:34:08.640
+This will run the Salesforce&nbsp;
+CLI inside that sandbox. And&nbsp;&nbsp;
+
+00:34:08.640 --> 00:34:11.840
+Salesforce updates need approval from&nbsp;
+someone on the team. So I'll also give&nbsp;&nbsp;
+
+00:34:11.840 --> 00:34:16.000
+it human in the loop. So it always&nbsp;
+requires an approval from a human.&nbsp;&nbsp;
+
+00:34:16.800 --> 00:34:23.760
+And lastly, the tool execution function that will&nbsp;
+only update Salesforce opportunity. Now, let's&nbsp;&nbsp;
+
+00:34:23.760 --> 00:34:33.760
+test the Salesforce step. I'll ask it to update&nbsp;
+Salesforce opportunity. That's human in the loop.
+
+00:34:33.760 --> 00:34:41.680
+And it's updated. And if you go to Salesforce&nbsp;
+refresh, we should see the updated status.&nbsp;&nbsp;
+
+00:34:41.680 --> 00:34:47.280
+Great. Eve also comes with eval support out&nbsp;
+of the box. So I can run the agent against&nbsp;&nbsp;
+
+00:34:47.280 --> 00:35:00.560
+real real sessions and grade the results.&nbsp;
+Eve discovers eval under the evals folder.
+
+00:35:00.560 --> 00:35:06.880
+I'll set a config and specify a model to&nbsp;
+judge the evals. Then create a transcript&nbsp;&nbsp;
+
+00:35:06.880 --> 00:35:10.800
+with two different requests and check&nbsp;
+that the agent opened two issues,&nbsp;&nbsp;
+
+00:35:10.800 --> 00:35:14.400
+split them by topic, and didn't&nbsp;
+touch Salesforce on its own.
+
+00:35:16.640 --> 00:35:25.760
+Now let's run the eval.
+
+00:35:25.760 --> 00:35:31.680
+Great. It passed. Now a prompt change can&nbsp;
+quietly break the agent. We are now ready&nbsp;&nbsp;
+
+00:35:31.680 --> 00:35:38.240
+to make the agent available in Slack&nbsp;
+for the sales team. So back to the TUI.
+
+00:35:38.240 --> 00:35:43.120
+I'll run slash channels.
+
+00:35:43.120 --> 00:35:50.160
+Add Slack. Yes, I want a Slackbot.
+
+00:35:50.160 --> 00:35:59.360
+Create a Slack connector. This will&nbsp;
+install the Slackbot in the workspace
+
+00:35:59.360 --> 00:36:04.720
+and deploy to Vercel.
+
+00:36:04.720 --> 00:36:16.640
+Let's test it end to end. I'll give it an&nbsp;
+example transcript in Slack. Tag the agent.
+
+00:36:16.640 --> 00:36:21.360
+It'll ask me to approve the change.
+
+00:36:21.360 --> 00:36:27.680
+And that's it. We built a production ready agent&nbsp;
+that our team can use. But we're not done yet.&nbsp;&nbsp;
+
+00:36:27.680 --> 00:36:32.080
+This agent is also fully observable. So let's&nbsp;
+take a look at that conversation we just had&nbsp;&nbsp;
+
+00:36:32.080 --> 00:36:38.800
+with it. In the Vercel dashboard or click&nbsp;
+on observability agent runs and here's the&nbsp;&nbsp;
+
+00:36:38.800 --> 00:36:45.920
+conversation. I can see the entire conversation&nbsp;
+history. The token usage, the length of run,&nbsp;&nbsp;
+
+00:36:45.920 --> 00:36:51.920
+the inputs, outputs and the agent reasoning. I&nbsp;
+can even drill down into each of the tool call&nbsp;&nbsp;
+
+00:36:51.920 --> 00:37:00.560
+the agent made. And lastly, Eve is open source.&nbsp;
+You own your code. You can swap the primitives.&nbsp;&nbsp;
+
+00:37:00.560 --> 00:37:04.800
+And Vercel is the fastest way to deploy&nbsp;
+it, but it's not the only way. And that's&nbsp;&nbsp;
+
+00:37:04.800 --> 00:37:13.280
+it. We just build a production ready agent&nbsp;
+in five minutes. Back [applause] to you.
+
+00:37:13.280 --> 00:37:17.280
+[applause]
+
+00:37:17.280 --> 00:37:23.360
+We launched Eve two weeks ago at Ship in London&nbsp;
+and it's been incredible to see what everyone has&nbsp;&nbsp;
+
+00:37:23.360 --> 00:37:31.760
+built already. Over 1,500 teams have deployed&nbsp;
+over 40,000 agents on Eve and it's got over&nbsp;&nbsp;
+
+00:37:31.760 --> 00:37:39.600
+250,000 npm downloads in the last week. But&nbsp;
+developers aren't just experimenting with Eve,&nbsp;&nbsp;
+
+00:37:39.600 --> 00:37:46.800
+they're running agents in production at scale.&nbsp;
+Clay built a data analyst agent on Eve. Solomon&nbsp;&nbsp;
+
+00:37:46.800 --> 00:37:52.480
+built an incident response agent on Eve. And Bask&nbsp;
+Health built an agent that lets non-technical&nbsp;&nbsp;
+
+00:37:52.480 --> 00:37:57.440
+users design and preview product features.&nbsp;
+Here's a quote from the team at Bask Health&nbsp;&nbsp;
+
+00:37:57.440 --> 00:38:01.440
+that I'm really proud of. We've gone through a&nbsp;
+few different iterations over the last 6 months,&nbsp;&nbsp;
+
+00:38:01.440 --> 00:38:06.560
+but Eve has been the most batteriesinccluded&nbsp;
+experience. I can't believe how quickly we got&nbsp;&nbsp;
+
+00:38:06.560 --> 00:38:15.040
+up and running. This was exactly our goal.&nbsp;
+Now, we've built a ton of agents ourselves,&nbsp;&nbsp;
+
+00:38:15.040 --> 00:38:21.040
+as we've mentioned a few times, but one that I'm&nbsp;
+particularly proud of, we gave the Vercel name.&nbsp;&nbsp;
+
+00:38:21.040 --> 00:38:27.280
+We just call it Vercel agent. I like to describe&nbsp;
+it as an intelligence layer for Vercel because it&nbsp;&nbsp;
+
+00:38:27.280 --> 00:38:33.520
+can help you do almost anything on the platform.&nbsp;
+We built a beautiful web UI so you can chat with&nbsp;&nbsp;
+
+00:38:33.520 --> 00:38:39.680
+Vercel agent directly from the dashboard and ask&nbsp;
+it almost anything. For example, you can ask it to&nbsp;&nbsp;
+
+00:38:39.680 --> 00:38:45.680
+fix the 500s that are showing up in your logs and&nbsp;
+it'll perform an investigation. You can ask it to&nbsp;&nbsp;
+
+00:38:45.680 --> 00:38:51.520
+find accessibility issues in your project and&nbsp;
+it'll run a review and open a pull request. Or&nbsp;&nbsp;
+
+00:38:51.520 --> 00:38:57.520
+you can simply ask it to fix your build and it'll&nbsp;
+read the deployment logs, find the failing config,&nbsp;&nbsp;
+
+00:38:57.520 --> 00:39:03.680
+validate the fix in a sandbox, and redeploy with&nbsp;
+your approval. But what I love most is that the&nbsp;&nbsp;
+
+00:39:03.680 --> 00:39:09.120
+Vercel agent is not just another chatbot. It sees&nbsp;
+your app running in production and proactively&nbsp;&nbsp;
+
+00:39:09.120 --> 00:39:14.800
+monitors your infrastructure on your behalf. Let&nbsp;
+me give you an example. Let's say you get an alert&nbsp;&nbsp;
+
+00:39:14.800 --> 00:39:19.600
+about a partial outage. When you log into the&nbsp;
+dashboard and click on the alert, Vercel agent&nbsp;&nbsp;
+
+00:39:19.600 --> 00:39:25.920
+will have already run an investigation on the&nbsp;
+anomaly. Here we can see it found that the API key&nbsp;&nbsp;
+
+00:39:25.920 --> 00:39:32.880
+object is undefined at runtime and errors appeared&nbsp;
+after the last deployment a few minutes ago. It&nbsp;&nbsp;
+
+00:39:32.880 --> 00:39:37.040
+recommended an instant roll back to the previous&nbsp;
+release, which when in doubt is always the right&nbsp;&nbsp;
+
+00:39:37.040 --> 00:39:43.440
+action to take. Um, so this one's an easy one to&nbsp;
+approve. With permission, Vercel agent rolled back&nbsp;&nbsp;
+
+00:39:43.440 --> 00:39:49.360
+to the last production deployment before the 500s&nbsp;
+showed up. And after the roll back was successful,&nbsp;&nbsp;
+
+00:39:49.360 --> 00:39:56.160
+our app is back online and Vercel agent can kick&nbsp;
+off work on a proper fix for the error. Now,&nbsp;&nbsp;
+
+00:39:56.160 --> 00:40:03.280
+the first question every CTO asks is, is it&nbsp;
+safe to let the agent do that? And this is the&nbsp;&nbsp;
+
+00:40:03.280 --> 00:40:10.080
+right question because most agents inherit their&nbsp;
+users permissions. They run as you do and can do&nbsp;&nbsp;
+
+00:40:10.080 --> 00:40:17.520
+everything you can do. So, a single bad prompt can&nbsp;
+have extremely wide blast radius. But Vercel agent&nbsp;&nbsp;
+
+00:40:17.520 --> 00:40:23.120
+has a first of its kind permission model. It has&nbsp;
+its own identity and it's read only by default.&nbsp;&nbsp;
+
+00:40:23.680 --> 00:40:29.600
+First, Vercel agent presents you with a plan,&nbsp;
+not an unknown number of approvals. And instead&nbsp;&nbsp;
+
+00:40:29.600 --> 00:40:35.440
+of asking, can I do this? Can I do this? You&nbsp;
+approve the entire plan upfront. So you know&nbsp;&nbsp;
+
+00:40:35.440 --> 00:40:40.480
+what the outcome is going to be before Vercel&nbsp;
+agent does any work. Then it's granted permission&nbsp;&nbsp;
+
+00:40:40.480 --> 00:40:46.480
+scoped exactly to that plan and nothing more.&nbsp;
+Every agent runs in a sandbox before it touches&nbsp;&nbsp;
+
+00:40:46.480 --> 00:40:52.400
+production and anything that changes your&nbsp;
+production apps for your approval. So it never&nbsp;&nbsp;
+
+00:40:52.400 --> 00:40:59.280
+has more access than the task needs and it never&nbsp;
+stops to ask you again. Vercel agent is just one&nbsp;&nbsp;
+
+00:40:59.280 --> 00:41:04.320
+of the many agents that we've built. Uh and I'm&nbsp;
+excited to welcome Jeanne, our COO, to the stage&nbsp;&nbsp;
+
+00:41:04.320 --> 00:41:19.120
+to tell you about all of the agents we've built&nbsp;
+to transform our go to market motion. Thank you.
+
+00:41:19.120 --> 00:41:25.760
+Thanks Tomo. Vercel agent shows you what what's&nbsp;
+possible when you build agents the right way. And&nbsp;&nbsp;
+
+00:41:25.760 --> 00:41:31.120
+every company in this room is going to build&nbsp;
+an agent just like it. There are two types of&nbsp;&nbsp;
+
+00:41:31.120 --> 00:41:36.880
+people in this room hearing that. Some of you are&nbsp;
+sitting there thinking, "Let's go. I am shipping&nbsp;&nbsp;
+
+00:41:36.880 --> 00:41:44.400
+tonight." And then there are the CIOS and the&nbsp;
+CTO's in the room who are thinking, "Oh no."&nbsp;&nbsp;
+
+00:41:44.400 --> 00:41:50.000
+Because you can already feel what's coming. Shadow&nbsp;
+agents writing to systems with no audit trail.&nbsp;&nbsp;
+
+00:41:50.000 --> 00:41:58.080
+AI bot user closing your tickets spend you can't&nbsp;
+explain. Both of you are right. Building agents&nbsp;&nbsp;
+
+00:41:58.080 --> 00:42:04.320
+is easier than you think and way harder than&nbsp;
+you think. I'm going to tell you about that&nbsp;&nbsp;
+
+00:42:04.320 --> 00:42:10.880
+tension and what we've learned at Vercel from&nbsp;
+living it. Drew Bredvick, who works for me,&nbsp;&nbsp;
+
+00:42:10.880 --> 00:42:17.680
+is head of go to market engineering. In June of&nbsp;
+2025, he had the sexiest job in the world. His&nbsp;&nbsp;
+
+00:42:17.680 --> 00:42:25.280
+mandate, build the agents that would transform how&nbsp;
+Vercel goes to market. It worked. A year later,&nbsp;&nbsp;
+
+00:42:25.280 --> 00:42:31.920
+agents are part of our daily workflow running at&nbsp;
+scale across our entire go to market organization.&nbsp;&nbsp;
+
+00:42:31.920 --> 00:42:40.640
+You did a great job, Drew. So today, I'm handing&nbsp;
+you a pager. Let me tell you why. What we learned&nbsp;&nbsp;
+
+00:42:40.640 --> 00:42:47.680
+was that agents are free. As in free puppies.&nbsp;
+Everyone loves puppies, but they pee on your&nbsp;&nbsp;
+
+00:42:47.680 --> 00:42:54.720
+floor. They eat your furniture, and you can't go&nbsp;
+on vacation. Agents are free because anyone can&nbsp;&nbsp;
+
+00:42:54.720 --> 00:43:00.880
+prompt Claude. But agents are also software, and&nbsp;
+we all know that software is never done. Someone&nbsp;&nbsp;
+
+00:43:00.880 --> 00:43:06.960
+has to maintain them, update models, and build&nbsp;
+new features. Building hundreds of agents taught&nbsp;&nbsp;
+
+00:43:06.960 --> 00:43:15.040
+us hard lessons. First, we saw the same problem&nbsp;
+solved over and over. Multiple agents needed to&nbsp;&nbsp;
+
+00:43:15.040 --> 00:43:22.640
+connect to the same internal systems. Each team&nbsp;
+built their own integrations from Slack. Second,&nbsp;&nbsp;
+
+00:43:22.640 --> 00:43:27.200
+each agent was reading from different knowledge&nbsp;
+bases. Our team would ask the same question&nbsp;&nbsp;
+
+00:43:27.200 --> 00:43:34.640
+and get different answers. Third, we had no&nbsp;
+visibility. No one knew how many agents existed,&nbsp;&nbsp;
+
+00:43:34.640 --> 00:43:41.600
+who built them, or what data they touched.&nbsp;
+Fourth, that lack of data of visibility also&nbsp;&nbsp;
+
+00:43:41.600 --> 00:43:49.840
+meant adoption chaos. I'm on Slack, I type at 500&nbsp;
+agents pop up. I don't know what any of them do.&nbsp;&nbsp;
+
+00:43:49.840 --> 00:43:56.000
+And last, we also learned that chat isn't all that&nbsp;
+you need. We started with the idea that Slack was&nbsp;&nbsp;
+
+00:43:56.000 --> 00:44:03.040
+the universal interface, and that was wrong. The&nbsp;
+agents that actually got used also had frontends&nbsp;&nbsp;
+
+00:44:03.040 --> 00:44:09.440
+for permissions, for visualizing data, for&nbsp;
+workflows, and for keeping humans in the loop. We&nbsp;&nbsp;
+
+00:44:09.440 --> 00:44:18.400
+learned that our agents had to work on day one and&nbsp;
+day 100. And I'm happy to tell you that they do.&nbsp;&nbsp;
+
+00:44:18.400 --> 00:44:25.920
+We run over 100 agents in production at Vercel and&nbsp;
+they're part of how we operate every single day.&nbsp;&nbsp;
+
+00:44:26.480 --> 00:44:32.640
+I want to tell you about 10 of the most important&nbsp;
+ones and the order matters. We started with the&nbsp;&nbsp;
+
+00:44:32.640 --> 00:44:38.880
+most obvious use cases and worked our way towards&nbsp;
+the agents that changed our internal processes and&nbsp;&nbsp;
+
+00:44:38.880 --> 00:44:47.600
+transformed how we operate the goto market team.&nbsp;
+First, Vert.Ex is our customer support agent. It&nbsp;&nbsp;
+
+00:44:47.600 --> 00:44:57.040
+resolves over 91% of support tickets across the&nbsp;
+help center, Slack, and Docs chat. Second, deal&nbsp;&nbsp;
+
+00:44:57.040 --> 00:45:03.520
+one is our deal intelligence agent. It listens to&nbsp;
+every sales call, coaches our sales reps in Slack,&nbsp;&nbsp;
+
+00:45:03.520 --> 00:45:11.600
+and runs a post-mortem on every lost deal. The&nbsp;
+Deal One MCP has been called 17,000 times in the&nbsp;&nbsp;
+
+00:45:11.600 --> 00:45:19.840
+last month. Next, draft zero is our content agent.&nbsp;
+It writes the first draft of every blog post,&nbsp;&nbsp;
+
+00:45:19.840 --> 00:45:28.000
+change log, and customer story we publish. A Z is&nbsp;
+our AEO agent. It tracks how Vercel's brand and&nbsp;&nbsp;
+
+00:45:28.000 --> 00:45:34.640
+content shows up across AI search. Every day it&nbsp;
+runs hundreds of prompts across dozens of coding&nbsp;&nbsp;
+
+00:45:34.640 --> 00:45:42.320
+agents. Ravoa is our Salesforce update agent.&nbsp;
+It publishes crit critical record changes to&nbsp;&nbsp;
+
+00:45:42.320 --> 00:45:48.720
+Salesforce with a human in the loop. It saves nine&nbsp;
+hours of time for our RevOps team every single&nbsp;&nbsp;
+
+00:45:48.720 --> 00:45:55.760
+day. [clears throat] And Penny is our finance and&nbsp;
+ops agent. It has access to our billing platform,&nbsp;&nbsp;
+
+00:45:55.760 --> 00:46:01.920
+payment provider, and monitoring systems. It saves&nbsp;
+our finance and on call engineering teams hours&nbsp;&nbsp;
+
+00:46:01.920 --> 00:46:10.480
+of answering billing questions. And then there's&nbsp;
+V. V is our routing agent. It routes requests to&nbsp;&nbsp;
+
+00:46:10.480 --> 00:46:16.560
+all of our other internal agents. Remember that&nbsp;
+adoption problem? We still have 100 agents, but&nbsp;&nbsp;
+
+00:46:16.560 --> 00:46:23.440
+V is a front door to all of them. ask V a question&nbsp;
+and it picks the right agent for the job. The last&nbsp;&nbsp;
+
+00:46:23.440 --> 00:46:28.800
+three I'm going to show you are the ones I want&nbsp;
+to spend real time on because every one of you is&nbsp;&nbsp;
+
+00:46:28.800 --> 00:46:38.320
+going to want to build them. First, D0, our data&nbsp;
+agent. D0 gives the entire company 247 ondemand&nbsp;&nbsp;
+
+00:46:38.320 --> 00:46:45.520
+analytics and data science. Anyone at Vercel,&nbsp;
+engineers, AEs, finance, support can run analytics&nbsp;&nbsp;
+
+00:46:45.520 --> 00:46:51.920
+on data from our warehouse without filing a ticket&nbsp;
+or waiting on the data team. Users can ask simple&nbsp;&nbsp;
+
+00:46:51.920 --> 00:46:59.360
+questions like how many leads we got from this&nbsp;
+campaign. And D0 writes and runs SQL. But D0 is&nbsp;&nbsp;
+
+00:46:59.360 --> 00:47:06.880
+also a data scientist. If users need statistical&nbsp;
+analysis done, it spins up a sandbox and runs&nbsp;&nbsp;
+
+00:47:06.880 --> 00:47:14.960
+Python to generate reports. D0 is the most&nbsp;
+used internal tool at Vercel. It handles 30,000&nbsp;&nbsp;
+
+00:47:14.960 --> 00:47:22.560
+questions per month and it's safe at scale. D0&nbsp;
+doesn't run in god mode. Every query is scoped to&nbsp;&nbsp;
+
+00:47:22.560 --> 00:47:28.640
+the user's permissions. If you can't see a table&nbsp;
+in Snowflake, D0 can't show it to you either.&nbsp;&nbsp;
+
+00:47:28.640 --> 00:47:34.240
+Under the hood, D0 needed a semantic layer.&nbsp;
+And even though you can ask questions in Slack,&nbsp;&nbsp;
+
+00:47:34.240 --> 00:47:43.440
+it needed a UI so people could explore charts and&nbsp;
+drill into data. Next, Athena, our sales cockpit.&nbsp;&nbsp;
+
+00:47:43.440 --> 00:47:49.200
+Salesforce announced headless. We've been running&nbsp;
+on it for months. Athena picks accounts, plans&nbsp;&nbsp;
+
+00:47:49.200 --> 00:47:55.680
+outreach, tracks signals, and runs the weekly&nbsp;
+motion for every AE at Vercel. Shortly after&nbsp;&nbsp;
+
+00:47:55.680 --> 00:48:04.400
+we went live, pipeline coverage nearly doubled.&nbsp;
+Every AE uses it every single day. Under the hood,&nbsp;&nbsp;
+
+00:48:04.400 --> 00:48:10.960
+Athena needed the same semantic layer D0 needed,&nbsp;
+plus durable workflows and secure connections,&nbsp;&nbsp;
+
+00:48:10.960 --> 00:48:18.560
+plus a UI because GTM agents are more effective&nbsp;
+with pixels and buttons than just a Slack channel.&nbsp;&nbsp;
+
+00:48:18.560 --> 00:48:25.280
+Third, our lead agent, an autonomous SDR. We&nbsp;
+trained lead agent on the playbook of our best&nbsp;&nbsp;
+
+00:48:25.280 --> 00:48:32.720
+SDR, and now it runs that playbook 247. You may&nbsp;
+have seen the headline last year. We took 10 SDRs&nbsp;&nbsp;
+
+00:48:32.720 --> 00:48:39.280
+down to one. That was lead agent. We redeployed&nbsp;
+those nine reps into bigger roles and raised our&nbsp;&nbsp;
+
+00:48:39.280 --> 00:48:49.840
+quota. We've seen a 32x ROI and it costs $5,000 a&nbsp;
+year to run. It performs at the 90th percentile of&nbsp;&nbsp;
+
+00:48:49.840 --> 00:48:57.440
+our reps and one engineer maintains it part-time.&nbsp;
+Under the hood, lead agent runs on the stack Tomo&nbsp;&nbsp;
+
+00:48:57.440 --> 00:49:05.920
+just showed you. AI SDK, Workflows SDK, Chat SDK,&nbsp;
+and it's open source, so you can go build your own&nbsp;&nbsp;
+
+00:49:05.920 --> 00:49:13.840
+today. Building these agents was easy because&nbsp;
+we use Next.js and our agent framework, Eve,&nbsp;&nbsp;
+
+00:49:13.840 --> 00:49:19.440
+and running them was never a problem because they&nbsp;
+run on Vercel. Remember when I said that building&nbsp;&nbsp;
+
+00:49:19.440 --> 00:49:27.200
+agents is way harder than you think? The hard part&nbsp;
+is everything around them. who can access them,&nbsp;&nbsp;
+
+00:49:27.200 --> 00:49:32.960
+how they authenticate, what data they can touch,&nbsp;
+and providing all of this to your security team.&nbsp;&nbsp;
+
+00:49:32.960 --> 00:49:38.320
+So, we spent the last year building the&nbsp;
+platform that makes that easy. And today,&nbsp;&nbsp;
+
+00:49:38.320 --> 00:49:46.080
+we're making it available to you. I'm excited to&nbsp;
+announce Vercel for enterprise apps and agents.&nbsp;&nbsp;
+
+00:49:46.720 --> 00:49:52.240
+It's the Vercel developer experience you&nbsp;
+love for everyone at your company with&nbsp;&nbsp;
+
+00:49:52.240 --> 00:50:00.240
+identity and access builtin and option to run it&nbsp;
+in your own AWS tenant. Like all of our products,&nbsp;&nbsp;
+
+00:50:00.240 --> 00:50:06.160
+it's portable because it's framework and model&nbsp;
+agnostic. We built it for ourselves first and now&nbsp;&nbsp;
+
+00:50:06.160 --> 00:50:14.720
+it's the platform you can build on. Let me show&nbsp;
+you the most important pieces. I said earlier that&nbsp;&nbsp;
+
+00:50:14.720 --> 00:50:20.160
+anyone can prompt Claude. The reality is that&nbsp;
+your employees are already doing this whether&nbsp;&nbsp;
+
+00:50:20.160 --> 00:50:26.480
+you know it or not. That's called shadow IT and&nbsp;
+AI has already caused major data breaches in the&nbsp;&nbsp;
+
+00:50:26.480 --> 00:50:33.040
+enterprise. So even if you control who builds AI,&nbsp;
+you still have to limit access to the apps and&nbsp;&nbsp;
+
+00:50:33.040 --> 00:50:41.360
+agents they build. That's where Vercel Passport&nbsp;
+comes in. Whether you're using v0, Claude Code,&nbsp;&nbsp;
+
+00:50:41.360 --> 00:50:48.320
+Codex, everything your team builds stays internal,&nbsp;
+governed by the identity pro provider you already&nbsp;&nbsp;
+
+00:50:48.320 --> 00:50:55.520
+run like Okta or Microsoft Entra. And it goes&nbsp;
+deeper than the front door. Passport issues a&nbsp;&nbsp;
+
+00:50:55.520 --> 00:51:02.000
+token tied to each user's identity and carries it&nbsp;
+through to the backends and systems your apps and&nbsp;&nbsp;
+
+00:51:02.000 --> 00:51:09.040
+ages agents connect to. At Vercel, we use v0&nbsp;
+to build data apps and reports powered by our&nbsp;&nbsp;
+
+00:51:09.040 --> 00:51:14.240
+native Snowflake integration. This allows us&nbsp;
+to build apps that have direct access to our&nbsp;&nbsp;
+
+00:51:14.240 --> 00:51:20.560
+Snowflake data. But Passport doesn't just protect&nbsp;
+access to the application, it also limits the&nbsp;&nbsp;
+
+00:51:20.560 --> 00:51:27.840
+data users can see in the application based&nbsp;
+on permissions provided by our IDP. I'll give&nbsp;&nbsp;
+
+00:51:27.840 --> 00:51:32.480
+you another example from our customer Mercor.&nbsp;
+Their security team built an internal agent&nbsp;&nbsp;
+
+00:51:32.480 --> 00:51:38.560
+that understands their entire codebase. You can&nbsp;
+ask it questions like which of our public routes&nbsp;&nbsp;
+
+00:51:38.560 --> 00:51:43.600
+uh connect to a database and it will pull&nbsp;
+answers across every repository. It'll even&nbsp;&nbsp;
+
+00:51:43.600 --> 00:51:50.320
+kick off fixes. But what makes it interesting is&nbsp;
+not just people asking the agent questions. Other&nbsp;&nbsp;
+
+00:51:50.320 --> 00:51:56.240
+agents query it too. So they had a hard problem.&nbsp;
+They wanted employees and agents to be able to&nbsp;&nbsp;
+
+00:51:56.240 --> 00:52:03.440
+use it and they wanted to control access but they&nbsp;
+didn't want to hand and manage authentication for&nbsp;&nbsp;
+
+00:52:03.440 --> 00:52:09.520
+it. They implemented passport and connect in&nbsp;
+under a week and now the agent runs on Vercel&nbsp;&nbsp;
+
+00:52:09.520 --> 00:52:17.040
+behind Okta the IDP they already use. The right&nbsp;
+people and agents get in scoped automatically with&nbsp;&nbsp;
+
+00:52:17.040 --> 00:52:24.000
+no homegrown auth. Passport controls who gets&nbsp;
+into your apps. But when everyone is shipping,&nbsp;&nbsp;
+
+00:52:24.000 --> 00:52:29.760
+you also need the ability to look across&nbsp;
+deployments and see if there are security risks.&nbsp;&nbsp;
+
+00:52:29.760 --> 00:52:35.840
+That's why we built the security dashboard. It's&nbsp;
+one place to see every secure see the security&nbsp;&nbsp;
+
+00:52:35.840 --> 00:52:42.400
+posture of every account and project on Vercel. It&nbsp;
+flags misconfigurations that can lead to breaches,&nbsp;&nbsp;
+
+00:52:42.400 --> 00:52:48.160
+shows you members without MFA, alerts you&nbsp;
+about secrets shared across projects, and&nbsp;&nbsp;
+
+00:52:48.160 --> 00:52:54.080
+identified long lived credentials when short ones&nbsp;
+will do. The best part is that it actually shows&nbsp;&nbsp;
+
+00:52:54.080 --> 00:53:01.200
+you how to fix each problem. I'm an excited to&nbsp;
+tell you that today all of those deployments&nbsp;&nbsp;
+
+00:53:01.200 --> 00:53:09.200
+can run in your own AWS tenant. You heard that&nbsp;
+right. You can run Vercel functions in your own&nbsp;&nbsp;
+
+00:53:09.200 --> 00:53:17.120
+AWS account. Whatever you build with agents stays&nbsp;
+inside your cloud. Everything I've shown you today&nbsp;&nbsp;
+
+00:53:17.120 --> 00:53:22.720
+runs on Vercel's core platform. It's the same&nbsp;
+platform the world's best teams have trusted&nbsp;&nbsp;
+
+00:53:22.720 --> 00:53:28.400
+for over a decade for our developer experience,&nbsp;
+previews, firewall, end-to-end observability,&nbsp;&nbsp;
+
+00:53:28.400 --> 00:53:34.080
+and features like instant roll back. These new&nbsp;
+capabilities aren't bolted on. They're part of&nbsp;&nbsp;
+
+00:53:34.080 --> 00:53:41.840
+the Vercel you already trust. The teams who ship&nbsp;
+fast, securely at scale are the teams who will&nbsp;&nbsp;
+
+00:53:41.840 --> 00:53:52.880
+win. We built enterprise apps and agents so&nbsp;
+that can be you. G, back to you to wrap up.
+
+00:53:52.880 --> 00:53:57.600
+[music]
+
+00:53:57.600 --> 00:54:05.760
+Thanks, Jeanne. Today we showed you that Vercel is&nbsp;
+a platform where you can build and run everything&nbsp;&nbsp;
+
+00:54:05.760 --> 00:54:14.800
+any kind of website, app or agent. Your backend&nbsp;
+frameworks can run at scale. With Vercel services,&nbsp;&nbsp;
+
+00:54:14.800 --> 00:54:22.960
+you can develop, preview and ship backends&nbsp;
+and front ends together. Fluid compute,&nbsp;&nbsp;
+
+00:54:22.960 --> 00:54:29.200
+as Malte showed us, lets you run any type of&nbsp;
+workload from instant serverless functions&nbsp;&nbsp;
+
+00:54:29.200 --> 00:54:37.280
+to back-end agent jobs that take hours, days,&nbsp;
+months to complete. And you can even bring your&nbsp;&nbsp;
+
+00:54:37.280 --> 00:54:47.280
+own container. With Eve, your team can build&nbsp;
+a production agent in minutes. Vercel Passport&nbsp;&nbsp;
+
+00:54:47.280 --> 00:54:56.400
+makes sure your internal agents and apps stay&nbsp;
+internal behind your IDP. And you can run all of&nbsp;&nbsp;
+
+00:54:56.400 --> 00:55:06.640
+this in the security boundary of your AWS account.&nbsp;
+It's beautiful. And you can start today. Ask your&nbsp;&nbsp;
+
+00:55:06.640 --> 00:55:15.760
+coding agent to install the Vercel plug-in. Then&nbsp;
+you can build anything a website, an app, an agent&nbsp;&nbsp;
+
+00:55:15.760 --> 00:55:24.480
+and ship it at global scale. And Vercel agent of&nbsp;
+course will keep an eye on production. This is&nbsp;&nbsp;
+
+00:55:24.480 --> 00:55:35.056
+Agentic infrastructure. We can't wait to see what&nbsp;
+you all ship next. Thank you very much. [applause]
+

@@ -1,0 +1,125 @@
+{
+ "id": "00AQjBDM46Q",
+ "title": "LLM Evaluation with Arize AI's Aparna Dhinakaran // MLOps Podcast #210",
+ "description": "Large Language Models have taken the world by storm. But what are the real use cases? What are the challenges in productionizing them? In this event, you will hear from practitioners about how they are dealing with things such as cost optimization, latency requirements, trust of output, and debugging. You will also get the opportunity to join workshops that will teach you how to set up your use cases and skip over all the headaches.\n\nJoin the AI in Production Conference on February 15 and 22 here: https://home.mlops.community/home/events/ai-in-production-2024-02-15\n\n________________________________________________________________________________________\n\nMLOps podcast #210 with Aparna Dhinakaran, Co-Founder and Chief Product Officer of Arize AI, LLM Evaluation with Arize AI's Aparna Dhinakaran.\n\n// Abstract\nDive into the complexities of Language Model (LLM) evaluation, the role of the Phoenix evaluations library, and the importance of highly customized evaluations in software application. The discourse delves into the nuances of fine-tuning in AI, the debate between the use of open-source versus private models, and the urgency of getting models into production for early identification of bottlenecks. Then examine the relevance of retrieved information, output legitimacy, and the operational advantages of Phoenix in supporting LLM evaluations.\n\n// Bio\nAparna Dhinakaran is the Co-Founder and Chief Product Officer at Arize AI, a pioneer and early leader in AI observability and LLM evaluation. A frequent speaker at top conferences and thought leader in the space, Dhinakaran is a Forbes 30 Under 30 honoree. Before Arize, Dhinakaran was an ML engineer and leader at Uber, Apple, and TubeMogul (acquired by Adobe). During her time at Uber, she built several core ML Infrastructure platforms, including Michelangelo. She has a bachelor’s from Berkeley's Electrical Engineering and Computer Science program, where she published research with Berkeley's AI Research group. She is on a leave of absence from the Computer Vision Ph.D. program at Cornell University.\n\n// MLOps Jobs board \nhttps://mlops.pallet.xyz/jobs\n\n// MLOps Swag/Merch\nhttps://mlops-community.myshopify.com/\n\n// Related Links\nArize-Phoenix: https://phoenix.arize.com/\nPhoenix LLM task eval library: https://docs.arize.com/phoenix/llm-evals/running-pre-tested-evals\nAparna's recent piece on LLM evaluation: https://arize.com/blog-course/llm-evaluation-the-definitive-guide/\nThread on the difference between model and task LLM evals: https://twitter.com/aparnadhinak/status/1752763354320404488\nResearch thread on why numeric score evals are broken: https://twitter.com/aparnadhinak/status/1748368364395721128\n                \n--------------- ✌️Connect With Us ✌️ -------------\nJoin our slack community: https://go.mlops.community/slack\nFollow us on Twitter: @mlopscommunity\nSign up for the next meetup: https://go.mlops.community/register\nCatch all episodes, blogs, newsletters, and more: https://mlops.community/\n\nConnect with Demetrios on LinkedIn: https://www.linkedin.com/in/dpbrinkm/\nConnect with Aparna on LinkedIn: https://www.linkedin.com/in/aparnadhinakaran/\n\nTimestamps:\n[00:00] AI in Production Conference\n[02:12] Aparna preferred coffee\n[02:26] Takeaways\n[04:40] Shout out to Arize team for being a sponsor of the MLOps Community since 2020!\n[05:30] Please like, share, and subscribe to our MLOps channels!\n[08:23] Evaluation space\n[12:23] Chatbots Prevent Misinformation\n[14:54] Evaluating AI response based on factual retrieval\n[18:48] Balancing eval response and impact on speed\n[24:21] Context length, placement, and information recall study\n[26:16] GPT-4 excels, prompt iterations affect outcomes\n[31:28] Multiple sub-steps and requiring visibility on Application calls\n[32:36] Evaluate calls, breakdown, score, and application evaluation\n[37:43] Rata classification for effective evaluation Research\n[41:08] Benchmarks on Huggingface and Twitter reliability\n[44:19]  Power of observability and retrieval embeddings\n[48:02] Tweaking data points\n[50:28] Hot take\n[53:35] Bottlenecks and errors from rapid production",
+ "channel_id": "UCG6qpjVnBTTT8wLGBygANOQ",
+ "channel_url": "https://www.youtube.com/channel/UCG6qpjVnBTTT8wLGBygANOQ",
+ "duration": 3347,
+ "view_count": 1563,
+ "webpage_url": "https://www.youtube.com/watch?v=00AQjBDM46Q",
+ "categories": [
+  "Science & Technology"
+ ],
+ "tags": [],
+ "live_status": "not_live",
+ "comment_count": 4,
+ "chapters": [
+  {
+   "start_time": 0,
+   "title": "AI in Production Conference",
+   "end_time": 132
+  },
+  {
+   "start_time": 132,
+   "title": "Aparna preferred coffee",
+   "end_time": 146
+  },
+  {
+   "start_time": 146,
+   "title": "Takeaways",
+   "end_time": 280
+  },
+  {
+   "start_time": 280,
+   "title": "Shout out to Arize team for being a sponsor of the MLOps Community since 2020!",
+   "end_time": 330
+  },
+  {
+   "start_time": 330,
+   "title": "Please like, share, and subscribe to our MLOps channels!",
+   "end_time": 503
+  },
+  {
+   "start_time": 503,
+   "title": "Evaluation space",
+   "end_time": 743
+  },
+  {
+   "start_time": 743,
+   "title": "Chatbots Prevent Misinformation",
+   "end_time": 894
+  },
+  {
+   "start_time": 894,
+   "title": "Evaluating AI response based on factual retrieval",
+   "end_time": 1128
+  },
+  {
+   "start_time": 1128,
+   "title": "Balancing eval response and impact on speed",
+   "end_time": 1461
+  },
+  {
+   "start_time": 1461,
+   "title": "Context length, placement, and information recall study",
+   "end_time": 1576
+  },
+  {
+   "start_time": 1576,
+   "title": "GPT-4 excels, prompt iterations affect outcomes",
+   "end_time": 1888
+  },
+  {
+   "start_time": 1888,
+   "title": "Multiple sub-steps and requiring visibility on Application calls",
+   "end_time": 1956
+  },
+  {
+   "start_time": 1956,
+   "title": "Evaluate calls, breakdown, score, and application evaluation",
+   "end_time": 2263
+  },
+  {
+   "start_time": 2263,
+   "title": "Rata classification for effective evaluation Research",
+   "end_time": 2468
+  },
+  {
+   "start_time": 2468,
+   "title": "Benchmarks on Huggingface and Twitter reliability",
+   "end_time": 2659
+  },
+  {
+   "start_time": 2659,
+   "title": "Power of observability and retrieval embeddings",
+   "end_time": 2882
+  },
+  {
+   "start_time": 2882,
+   "title": "Tweaking data points",
+   "end_time": 3028
+  },
+  {
+   "start_time": 3028,
+   "title": "Hot take",
+   "end_time": 3215
+  },
+  {
+   "start_time": 3215,
+   "title": "Bottlenecks and errors from rapid production",
+   "end_time": 3347
+  }
+ ],
+ "like_count": 21,
+ "channel": "AAIF Live",
+ "uploader": "AAIF Live",
+ "uploader_id": "@AAIFLive-x1r",
+ "uploader_url": "https://www.youtube.com/@AAIFLive-x1r",
+ "upload_date": "20240209",
+ "timestamp": 1707483622,
+ "fulltitle": "LLM Evaluation with Arize AI's Aparna Dhinakaran // MLOps Podcast #210",
+ "duration_string": "55:47",
+ "was_live": false,
+ "language": "en",
+ "_type": "video"
+}

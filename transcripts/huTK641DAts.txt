@@ -1,0 +1,2521 @@
+[0] I'm gar marou and you're listening to
+[2] the change
+[5] [Music]
+[10] log welcome back everyone this is the
+[12] change log and I'm your host Adam stovak
+[15] this is episode 213 and today I went
+[18] solo jar couldn't make the show today we
+[20] missed him of course and I talk the
+[22] gamma Rouch it's been a long time coming
+[24] up for this show we've wanted to have
+[26] GMA back on the show back I think in
+[28] 2010 almost when we be in this show we
+[30] talked about his new company Zite which
+[33] is building products for developers and
+[35] designers one of those products being
+[38] hyperterm a terminal emulator based 100%
+[41] on JavaScript HTML and CSS it's built on
+[44] electron we also talked about now zeit's
+[47] real time nodejs deployments platform we
+[50] also covered an article he wrote called
+[52] Pure UI which led so much into his
+[55] design process we have three sponsors
+[57] today toptw Leno and also Elixir com our
+[62] first sponsor of the show is our friends
+[64] at top to the best place to work as a
+[66] freelance software developer if you're
+[68] freelancing right now and you're looking
+[70] for ways to work with top clients work
+[72] on things that are challenging you
+[74] interesting to you Technologies you want
+[76] to use topt is definitely the place for
+[78] you top companies rely upon topt
+[80] Freelancers every single day for their
+[82] most Mission critical projects and at
+[84] topt you'll be part of a worldwide
+[86] community of Engineers and designers
+[88] they have a huge SL Community very much
+[90] like family you'll be able to travel
+[91] blog on the topt engineering blog and
+[93] design blog apply for Open Source Grants
+[96] head to top to.com to learn more that's
+[98] T
+[98] o.com to learn more or email me Adam
+[102] chain.com if you prefer a more personal
+[104] introduction to our friends at top to
+[106] and now on to the
+[115] show all right I'm here with Gamel Rouch
+[118] and gam this is this is a different show
+[120] for us because today Jared's not with me
+[122] Jared's actually taking a break during
+[123] this show but Jared and I are super huge
+[127] fans of of the things you've done over
+[128] the years and more specifically uh
+[131] creating zit and Hyper term and all this
+[134] fun stuff you seem to be having going on
+[136] so uh welcome to the change log thank
+[138] you I'm excited to be here and I
+[140] actually can rewind a little bit we
+[142] didn't talk about this in the preall so
+[143] this is sort of a curveball to you but
+[146] we uh we've talked over the years I
+[148] believe in direct messages or email at
+[150] some point and we had planned to get you
+[152] on the change LA but we just never
+[154] pulled the trigger I wonder why do you
+[155] know why well I think uh in the very
+[159] very beginning of the show I if I
+[161] remember correctly it was around the
+[163] time like node was like you know like on
+[166] Hacker News every single day top of the
+[168] top of the mind for everyone and we're
+[171] uh at learn boost at the time releasing
+[174] a ton of Open Source projects we're
+[176] probably both really busy but I know for
+[178] a fact that um I've been following the
+[181] the blog and the show for a long time
+[183] and uh it's it's it's also
+[186] been great to uh have gotten your
+[189] message now and like be able to sort of
+[192] like do a a recap of everything that's
+[195] been going on and like our Evolution how
+[197] we look at this open source projects
+[199] what have we learned and so I'm excited
+[201] to finally do it yeah it seems like the
+[204] memory I have is is the is around learn
+[207] boost and the open source we're doing
+[208] there and maybe just for the listeners
+[210] to give a just a quick recap of what
+[212] learn boost is so we can at least give
+[214] some context what we're talking about
+[217] sure so learn boost is my first startup
+[221] in the sense that I had tried many
+[225] different things I had tried many
+[226] different projects and products and
+[229] Enterprises over time but together with
+[232] uh two of my co-founders at the time
+[234] Raphael corales and Tian Lou we said
+[237] let's make a really big impact uh with
+[240] technology on perhaps a field where they
+[244] don't get you know like a lot of
+[246] technological progress so we're like
+[248] we're very uh technical folks like
+[250] product oriented folks and we can pick a
+[253] field that needs it the most so we
+[256] picked education and at the time uh I
+[259] think node 0.1 was like the latest
+[263] version and I remember vividly where I
+[265] would be on the IRC and Ryan doll uh
+[269] would be telling the greater of no it
+[270] would be telling everyone oh this is not
+[272] production ready and I remember and I
+[275] remember some company from Japan which
+[277] I've been um it's been on the back of my
+[279] mind to like check uh check out which
+[281] one it was because it was amazing they
+[283] were like oh yeah we had like 100 Java
+[285] servers and we replace it with like uh
+[288] five node.js processes and that was sort
+[290] of the moment where like everyone was
+[291] like um wow like this thing actually
+[295] could be production ready like maybe it
+[297] crashes a few times and I remember like
+[299] they they did say that but you know it's
+[301] just such a uh you know like such a much
+[303] better model for programming a
+[306] synchronous networking services that you
+[310] know you can just say take that leap of
+[311] faith and that's what we did with learn
+[313] boost we we took a leap of faith um with
+[316] that project with JavaScript in general
+[318] we decided to like go full stack
+[320] JavaScript uh at the time I think what
+[323] really drew me was this idea of
+[326] universal JavaScript that I think I've
+[328] been telling some people I I've been
+[330] saying on Twitter a few times I think
+[332] it's only been realized maybe over the
+[335] last few years but I think a lot of a
+[338] lot of us that went into no JS with so
+[340] much faith in it were like okay what if
+[342] we could like do Universal rendering or
+[345] what if we could make teams more
+[347] productive if they don't have to do so
+[349] much context switching and this was way
+[351] before transpilers and this is OB like
+[354] we're mainstream early days yeah the
+[356] early days and you know like uh what
+[358] happens when you you start off with uh a
+[361] project so new you sort of have to start
+[364] porting over a lot of things that are
+[366] not written in it so uh everything from
+[369] Little utilities to Patches to the HTTP
+[372] servers to uh forking node when you know
+[375] something goes wrong in production so
+[377] like a lot of our time actually went
+[379] into supporting and and sort of like um
+[383] helping out the community with that
+[384] project at the same time receiving help
+[387] back so the company was built on hiring
+[390] a lot of people that were working with
+[392] us on on open source and I think while
+[395] we weren't certainly the first to do
+[397] that I think we're also a Pioneer a bit
+[400] in that sense and I know this because a
+[402] lot of other startup Founders have come
+[405] to me and said you know it's been an
+[407] inspiration to see how you can juggle
+[410] the day-to-day of building a startup and
+[413] also this idea of like contributing back
+[416] to open source because there's this
+[419] really great great feedback loop as it
+[421] turns out once you start doing it which
+[423] obviously it's not it's not super
+[424] obvious when you when you when you look
+[427] at it right like oh why am I spending so
+[430] much time uh patching all this stuff and
+[433] like contributing it back if I'm trying
+[436] to like ship a product to teachers right
+[437] you're not actually shipping customer
+[439] value if you're well I shouldn't say it
+[441] like that but that's the that's the
+[442] assumed thought is that you're not
+[444] shipping customer value if you're right
+[445] closing bugs or issues on GitHub or
+[448] whatever you know it's like you're
+[450] wasting time basically right but the the
+[452] more when you try it and the more you
+[454] look into that you realize well you know
+[456] like it makes the teams more productive
+[457] it makes everyone really happy it um I
+[460] think motivation in in developer teams
+[462] is a really big part of what we do you
+[464] know at the same at the end of the day
+[467] technological solutions are you know so
+[469] VAR and there's so many and there's so
+[471] many ways to skin this cat that when
+[473] you're in the context of a community
+[476] that supports you with uh block post
+[479] sort patches or gives you ideas for how
+[483] you could apply certain techniques to
+[485] your day job so I think it's a part of
+[487] like really it's a part of your
+[488] day-to-day you know like we are working
+[490] on a product and at the same time we're
+[491] plugged into this Collective conscious
+[494] that's Twitter and all these different
+[496] people with all these different opinions
+[498] on Twitter are like sharing what they
+[500] think about um Technologies and what
+[502] open source Pro they're creating so I
+[504] think today is sort of an inevitable
+[507] part of building a a business with uh
+[510] open source technology that he also
+[511] participate in that Collective conscious
+[513] in that feedback loop right but I think
+[516] it wasn't that clear back in the day so
+[518] I'm really happy learn Bo you definitely
+[520] were um early I would say because like
+[523] we started the change since you
+[524] mentioned you know like we've had some
+[526] history here obviously that is unspoken
+[528] of but basically it seems like learn
+[530] boost was started in 2010 and we started
+[532] this podcast in late 20 uh 2009 and
+[536] GitHub launched itself like I think what
+[538] was it
+[539] was it early 2008 like February January
+[542] was like bleeding edge GitHub and then
+[544] like by March was like a lot of the
+[546] early adoption of it yeah that sounds
+[549] that sounds right so I mean you know
+[551] with GitHub and this new Renaissance of
+[554] Open Source and this you know the new
+[556] versus old of Open Source it seems like
+[558] starting lar brost in 2010 and then not
+[561] even only focusing on a product but also
+[563] focusing on open source and giving back
+[565] you were definitely revolutionary in
+[566] your thoughts yeah and I've seen you
+[569] know so many companies that have been
+[572] really successful today with doing this
+[576] even in other fields like uh you know
+[578] healthc care uh nonprofits uh I always
+[581] say that one of the things that I really
+[583] love that really gives me a lot of Hope
+[585] for uh our industry is the quality of
+[588] Open Source and and quality of like
+[590] engineering talent that that you see at
+[592] uh organizations like
+[594] kademy um the US digital service so I I
+[598] think we we live live in this new world
+[600] where uh we we all are aware of what
+[602] everyone else is doing what cool things
+[604] they're doing um it's it's a very it's a
+[607] very much an open- Source world but not
+[610] just the code but also the the entire uh
+[613] process I guess and and it's fascinating
+[615] to be a part of that well that's a a
+[618] long uh swing into your you know your
+[621] story basically and one of the things we
+[623] like to do on this show um is dig into a
+[627] guest path so kind of your history and
+[629] you know we talked a bit about learn
+[630] boost there it's not exactly uh the only
+[633] thing you've done so Cloud up which is
+[634] required by automatic um you're also the
+[637] creator of several popular open source
+[639] projects around nodejs as you mentioned
+[640] sakio slacken which we love
+[643] slacken by the way and this is all prior
+[645] to some of the new stuff you're doing
+[646] here at zeit which is recent November
+[649] this past year um but let's dig into
+[653] what it is that got you into software in
+[655] the first place take us back as far as
+[656] you have to was it a game was it what
+[659] what was it that like scratched your
+[660] first itch to learning software
+[662] development so we got a computer at home
+[666] pretty early on with I think it was
+[668] Windows
+[669] 95
+[671] and that was really awesome for me uh
+[674] like I would like spend a lot of time
+[676] like playing games and installing
+[677] software I think installing software
+[679] like used to be so difficult that like
+[682] you know like you have to like get the C
+[683] ROM and then like uh sometimes like it
+[685] wouldn't work like missing dlls and all
+[688] this stuff so I think it's just like
+[690] your first um as as a as a kid perhaps
+[694] in in those days it was like the first
+[697] uh I guess confrontation with this
+[700] reality of creating work arounds or like
+[702] hacking your way around things uh I
+[705] think software distribution models that
+[707] required piracy like for example like
+[709] you know like frankly in Argentina uh in
+[712] those days it was almost impossible to
+[714] buy software so like a lot of it was
+[716] like you know like you get a copy from a
+[717] friend yeah you had to pirate to get it
+[719] even that also is a part of you know
+[722] like the hacker mindset in some ways
+[723] it's like finding the work arounds for
+[726] uh you know like getting some sort of
+[727] result so later on what happened which
+[730] was really interesting was we would
+[732] subscribe to this magazine called I
+[734] think it was called like PC users and PC
+[737] users whoever did this at PC users I'm
+[740] really thankful for because PC users one
+[743] they shipped with a Linux C ROM uh and
+[746] my dad was like this Linux thing SS
+[748] really interesting we should try it out
+[750] so we started like trying to like dig
+[752] into like how we could get our hands on
+[754] this stuff so I ended up installing Red
+[757] Hat a very early version of red hat that
+[759] came with that and I think the reason
+[761] they they decided to highlight um Linux
+[764] uh in this magazine was it was around
+[766] the Times where like you could install a
+[768] a Linux distribution that had a GUI so
+[771] that would give you like the end to-end
+[772] experience similar to Windows that you
+[774] would never be able to have so I think
+[776] red high was also a Pioneer uh obviously
+[779] there might have been others but it was
+[781] a um GUI based installer um so the whole
+[785] experience of installing Linux was
+[786] actually not bad at all my experiment
+[789] ended with not being able to set up the
+[791] internet so and I think it's funny
+[794] because um drivers in Linux has I still
+[798] read tweets from my friends who are
+[801] using Linux nowadays and like I think
+[803] it's still an unsolved problem I joke
+[806] that the Linux desktop is you know
+[808] around the Corner still uh but the the
+[811] internet thing kind of like stopped me
+[814] and so the next thing that happened was
+[816] I started participating on online forums
+[818] a lot so I think with I think the
+[820] combination of like having a computer
+[822] and having the internet uh uh with
+[824] untethered access you know like no
+[827] limits no wi list of what websites
+[829] you're able to access is a very
+[831] important notion and I was able to like
+[834] uh join these forums uh in Argentina
+[837] like uh this IR C channels uh also um
+[841] the local ISP that I had uh had an IRC
+[845] server with a um hashtag Linux Channel
+[848] wow uh yeah so that was really awesome
+[851] because the community There Was You know
+[853] I was a very young guy I was probably
+[856] like 10 or 11 years old so like I would
+[859] have this like weird uh uh like chat
+[863] like people that were kind of like
+[864] strange to me at the time but most of
+[866] the time everyone's really nice and like
+[868] really helpful like one time I got
+[869] hacked like one time someone made me
+[872] paste a command that I shouldn't have
+[874] pasted I think what it did that now I
+[876] now that have this opportunity for
+[878] reflection I know that what I did was
+[880] like set up a reverse SSH tunnel so that
+[884] he would access my computer um but you
+[887] know like uh that's how you learn not to
+[890] uh copy and paste curl commands from the
+[891] internet just kidding
+[893] yes it's a good example so so um but
+[898] yeah everyone there was really helpful
+[900] and like the uh I started like get
+[902] really interested in this idea of like
+[904] The Hacker Way like kind of like you
+[906] know like you do everything from scratch
+[909] the The Pride I guess in like compiling
+[911] things for example so that takes me to
+[913] my next I guess evolutionary step which
+[916] was uh with the assistance of someone
+[918] named Diego um in that channel who who
+[922] actually called me on the phone I mean
+[923] this is this kind of crazy how helpful
+[925] like random internet strangers can be uh
+[927] I was able to to compil a package called
+[930] RP
+[932] ppoe and I tried this commands this set
+[935] of commands so many times that I could
+[937] actually recite them um by hard because
+[941] I had to memorize them so that I could
+[943] re reboot my Windows computer put into
+[945] Linux sometimes I would even reinstall
+[947] it from scratch and then like copy over
+[949] the
+[950] tarble and then go through all the
+[953] commands tar xvz F rppo and then CD into
+[957] it configure make make install I thank
+[960] also the maintainers of that package
+[962] that I was able to actually install it
+[964] with config configure make make install
+[966] um I think at at this time it was red
+[969] hat
+[970] and uh I was a I was able to set up our
+[973] first DSL connection and then with that
+[975] I was able to persuade my parents to
+[977] sort of like have Linux full-time
+[979] because they would always say this is a
+[981] cool experiment but if the internet
+[982] which we're paying for is not is not
+[985] working uh we we have to resort back to
+[988] like using
+[989] windows so I was able to get your
+[991] mission to get the internet working on
+[993] on Linux basically I able to get the
+[994] internet working and it was it was just
+[997] like the joy that I felt in those times
+[1000] it was just unparalleled and I think
+[1002] that that's like one of the ne neatest
+[1004] things about this journey is that I I
+[1007] think some of those
+[1008] accomplishments um are not so easy to
+[1011] like re-experience right like that Joy
+[1013] of like getting something working uh is
+[1016] it's uh it's definitely still there
+[1018] sometimes but you know like at that time
+[1019] it was like everything was just like so
+[1021] shiny and new and such a huge
+[1023] unsurmountable task that um it it um it
+[1027] was really really really rewarding so I
+[1030] think that that initial experience I
+[1032] mean what I'm narrating essentially is
+[1034] like when I'm compiling a package right
+[1036] it's very close to this as close as you
+[1039] could get to like programming your own
+[1041] operating system or environment I think
+[1044] Linux was that platform for me to
+[1046] develop into um this sort of uh I guess
+[1050] inquisitive uh hacker I guess that um
+[1055] that also you know like the ability to
+[1057] go I guess a little bit lower level and
+[1060] like experience some of the basic
+[1062] foundations of the systems very early on
+[1064] it was really um really great
+[1066] opportunity for me so that led me to
+[1069] like this journey with Linux like the
+[1072] next thing that like was I guess the
+[1075] next evolutionary step at the time was
+[1077] can you use the not so friendly
+[1080] distributions so I um picked Dean okay I
+[1084] figured I fig it was next for you and it
+[1086] was I I fell in love with that and
+[1089] uh that entire community and like their
+[1092] uh their approach to open source and
+[1094] like their care for their package system
+[1097] and their installer was text based but
+[1100] it was actually really beautiful which
+[1102] goes brings us back to the terminal and
+[1104] like the beauty of the terminal I guess
+[1106] so uh the the menu it was it was like an
+[1109] end curses based installer was actually
+[1111] really awesome for me so like I went
+[1113] into Dean and then of course I'm I'm uh
+[1116] I'm like again I'm like 11 or 12 at this
+[1119] point and um all I want to do is like
+[1122] play games as well so I had this weird
+[1123] relationship with like hacking or like
+[1125] some of the time would go into hacking
+[1127] and some of the time we would go into
+[1128] like playing games so the the the twist
+[1131] of the knob that I found was like I got
+[1133] obsessed with uh emulating games uh on
+[1136] Linux so um I I spent huge amounts of
+[1142] time um optimizing my system to run Wine
+[1146] to do dual booting to do um like
+[1151] full-blown uh virtualization for running
+[1154] games and like finding what were the
+[1156] right configurations for getting them uh
+[1158] the best frame rates and what are the
+[1161] patches that you need to apply uh to
+[1163] Wine to make that so I remember at um at
+[1166] the time like there was this um
+[1169] proprietary Fork of wine um I'm blanking
+[1172] on the name that I would always try and
+[1175] so that also was like a really cool
+[1177] thing because at the end of day I
+[1178] wouldn't even play the game so much I
+[1180] was just like obsessed with like getting
+[1181] them started and like analyzing the
+[1183] frame rate and then going back to like
+[1184] debugging and uh and then that led me to
+[1187] another like huge I think at this time
+[1190] can of worms which is recompiling the
+[1192] kernel so like my mom probably uh heard
+[1196] that phrase like a million times and she
+[1198] would like like always laugh because I
+[1200] my my the to of my mind concern was like
+[1202] she would asking oh I need to send an
+[1204] email or I need to like quickly check
+[1205] this one website and I would be like no
+[1208] sir I'm recompiling the
+[1211] colel sorry Mom you can't send that
+[1213] email I'm I'm kind of busy recompiling
+[1215] that's cool so she would she would see
+[1216] all the screens dumping text uh you know
+[1220] like and also like um the you you could
+[1223] do make menu config I don't know if this
+[1226] is still a thing but like when you
+[1228] compile the kernel you have to set up
+[1230] all the modules that you need and
+[1233] there's a way of doing that with like
+[1235] editing a file but there is also you can
+[1237] run make menu config and that gives you
+[1240] like this end curses based menu based
+[1242] system for like selecting what modules
+[1243] you want in the kernel and what things
+[1246] you want to you want build into the
+[1248] kernel and what would happen to me
+[1250] sometimes is like I would nail the
+[1253] perfect uh you know configuration with
+[1255] drivers and whatnot for like emulating
+[1257] games but sometimes I would forget the
+[1260] uh ethernet driver so like it was this
+[1263] constant recompilation of the colonel uh
+[1266] but that also was like such an awesome
+[1267] learning experience for me um and then
+[1270] like my my first um I guess stage or or
+[1275] phase of like giving back began where
+[1277] like I found this Spanish based um
+[1280] website where like people would um it
+[1283] was like a suck overflow basically and
+[1286] people would ask questions and I would
+[1287] spend tons of uh time um like crafting
+[1291] really great answers for for random
+[1293] strangers on the internet um of all
+[1296] these things that I was just learning
+[1297] about like I was this like big expert so
+[1300] like obviously one of the lessons here
+[1301] is like like no matter like how much
+[1304] experience like how much time you've
+[1306] spent um learning something like it's
+[1308] it's already immediately useful to share
+[1310] because there's someone immediately
+[1311] below you in that ladder of a knowledge
+[1315] acquisition that um will definitely
+[1317] benefit and and perhaps even identify
+[1320] more right because something that
+[1321] happens when we're writing documentation
+[1323] nowadays is like like who are we writing
+[1325] documentation for uh our former selves
+[1327] hopefully right but if if you want to
+[1331] Target someone that's like many many
+[1332] many steps um behind perhaps you're not
+[1335] even writing in that really um awesome
+[1338] way of like perhaps with less
+[1341] terminology so like there's also this
+[1343] really great utility to everyone sharing
+[1345] knowledge all the time even when you're
+[1347] not so much of an expert because you
+[1349] might be able to write things that you
+[1351] know like your uh your audience will
+[1353] relate to in a much much much better way
+[1356] and and perhaps once you're too much of
+[1358] an expert you you're going into all
+[1360] these tangents and little details or uh
+[1364] perhaps too precise of a or too
+[1366] sophisticated of terminology so I think
+[1368] this is a point that's not spoken of
+[1370] enough honestly because I mean that's
+[1372] kind of it's kind of teetering on the
+[1374] impostor syndrome as well because you
+[1376] almost don't give that give back or
+[1378] share because you feel like you're
+[1380] inadequate but in actuality you actually
+[1383] have quite a bit of knowledge you could
+[1384] be even more adequate than the best
+[1386] experts right because you're using the
+[1388] right approach you're using the right
+[1391] succession of steps right like when
+[1392] you're teaching something a lot of is
+[1394] also picking the order in which you
+[1396] introduce the concepts right like what
+[1398] what are the things you can relate the
+[1399] most or like how much do you use devices
+[1402] like metaphors and I think a lot of that
+[1405] like uh will determine like what
+[1408] uh different types of audiences will
+[1410] understand what you're saying or not so
+[1411] I think U I agree I think you know you
+[1415] should be I think you should be teaching
+[1417] at every stage of your uh Evolution
+[1419] personal Evolution there's always going
+[1421] to be someone that um will tremendously
+[1424] benefit from it and helps the helps you
+[1427] as uh run up your knowledge find the
+[1430] holes in your knowledge so I was doing
+[1432] that very early on as well I think at
+[1434] the time um we had like up internet um
+[1439] so this is probably a little bit before
+[1441] I was able to uh compile rppo because I
+[1444] remember I would call my mom uh at work
+[1447] to check my karma like I would be mom
+[1449] how many points do I have because over
+[1452] over the rest of the day uh like people
+[1455] would vote up your answers and you would
+[1456] accumulate Karma and so I I would be
+[1459] really intrigued during the whole days I
+[1461] would call her at work so I you like go
+[1463] to the website and like tell me what my
+[1464] karma was and so you know like those
+[1467] were of things that very early on I
+[1468] think shaped my um my the rest of my
+[1471] career because like a lot of these
+[1473] things I continue to go back to like uh
+[1475] you know the terminal and like um Simple
+[1479] uis Text based uis and and I think it's
+[1482] it's part of like the fingerprint um one
+[1485] of the reasons why we do this backstory
+[1487] portion of it at least why we started
+[1488] doing it was because for this exact
+[1490] reason because hearing this history from
+[1492] you it it totally makes sense that you
+[1494] would go back to where you began right I
+[1496] mean you you released hyperterm not long
+[1499] ago this is essentially going back to
+[1501] your roots back to this original love
+[1504] that got you into all of software all of
+[1506] Open Source all of this this path you
+[1508] you've taken here and to me you know
+[1511] it's not the only thing you're doing but
+[1512] it's the it's I mean it's it's uh it's
+[1514] hot right now like there's 90 plus repos
+[1517] on GitHub tagged with the keyword
+[1519] hyperterm on mpm whatnot that uh that
+[1524] people are just loving what you've done
+[1526] with this terminal emulator
+[1528] and I think that the backstory of of of
+[1530] someone like you certainly paints a
+[1532] clear picture for why you went the
+[1535] direction you went but uh we're getting
+[1537] close to our first break so let's tee up
+[1539] this break here real quick um when we
+[1541] come back from this break I want to dive
+[1543] into an essay you wrote that uh is also
+[1547] sort of a precursor to uh what you've
+[1549] done with zit what you're doing with
+[1550] hyperterm and a lot of other fun stuff
+[1552] we'll talk about during this show but
+[1554] let's take this break we'll come back
+[1555] we'll talk about your essay called Pure
+[1557] your UI after the
+[1561] break linode is our Cloud Server of
+[1564] choice get up and running in seconds
+[1566] with your choice of Linux drro resources
+[1568] and node location SSD storage 40 GB
+[1572] Network Intel E5 processors use the
+[1575] promo code change log 20 for a $20
+[1577] credit two months free one of the
+[1579] fastest most efficient SSD Cloud servers
+[1583] is what we're building our new CMS on we
+[1585] love Len Noe we think you love him too
+[1587] again you the code change LW 20 or $20
+[1589] credit head to Len no.com changw to get
+[1595] started all right we're back with GMA
+[1597] we're talking about a lot of fun stuff G
+[1600] I mean you painted this beautiful
+[1601] history of where you came from what got
+[1603] you into what you're doing obviously uh
+[1605] people coming to the show uh wanting to
+[1607] hear the the latest greatest on
+[1609] hyperterm and where you're going with
+[1610] that but let's let's begin with maybe
+[1613] your process right like you've got this
+[1615] this uh from what I could tell a a
+[1618] really popular essay called Pure UI
+[1620] around 500,000 views so far at least
+[1623] what your blog says and I'm not sure if
+[1624] that's accurate or not you can let me
+[1626] know but it's kind of U the overarching
+[1629] tldr basically is the design and
+[1631] Discovery process of of creating
+[1633] application obviously it's there's more
+[1634] to it than that but this is like the
+[1636] overarching theme I saw what I drew from
+[1638] it was like this design process of
+[1640] taking something available uh this
+[1642] representation making it and then going
+[1644] to this discovery process about the the
+[1646] transformation finding the stes and
+[1647] finding all the evolutions of the design
+[1650] and then uncovering those new States and
+[1651] new ideas throughout that process and
+[1653] kind of rinsing and repeating it so you
+[1654] have this refined uh you know completed
+[1657] thing that you can ship to the world and
+[1659] uh so maybe take us into that post a bit
+[1662] not too far but enough to kind of to to
+[1664] take us in the direction of of what
+[1666] you're doing at Zite what you're doing
+[1667] with hyperterm maybe some of the design
+[1669] process you've established through
+[1671] this yeah uh for sure the this post I
+[1675] like a lot obviously and people like it
+[1677] a lot as well I wrote it because it was
+[1680] the first time that I had had the
+[1682] opportunity to write a write a new
+[1684] project end to end so at WordPress uh I
+[1687] redid video press their their video
+[1690] platform and I was able to write the
+[1692] front end and designed the front from
+[1694] scratch and use some of the new uh
+[1698] technologies that were available like I
+[1700] I took an approach with virtual Dom and
+[1703] it wrote a very basic version of react
+[1705] so that it could learn how it
+[1708] worked and at the end of the day I was
+[1710] able to successfully ship it and then
+[1714] reflect on how it had created what had
+[1718] made it uh
+[1719] successful uh what were the things that
+[1721] were unique to this methodology that I
+[1724] think beyond the actual pixels on the
+[1727] screen beyond the actual product um
+[1731] there were some interesting things in
+[1732] the creation process for example the
+[1736] mapping between
+[1738] what you do on the designed tool when
+[1740] you are sketching uh and mocking up the
+[1744] different um states that the application
+[1747] can be in and then when you go and write
+[1749] the code for it I think those two
+[1752] processes have been so distant before
+[1755] because as a designer you think oh okay
+[1758] I'm gonna um think about what this looks
+[1761] like when the user has filled in some
+[1763] data or I'm going to uh Design This to
+[1766] uh show what it looks like when you
+[1767] resize the screen I'm going to do this
+[1769] and this and this and that so the the
+[1771] thought process of the designer is okay
+[1774] uh there's all this data that I know of
+[1776] there is all these situations that this
+[1779] basic application can um fall into and
+[1783] I'm going to design them all I'm going
+[1784] to lay them out so that other people can
+[1786] see them immediately now when you
+[1789] program this almost never happens and
+[1790] the example that I give um in the post
+[1794] is you make a simple like um AG call and
+[1798] depending on the failure or success of
+[1801] that Ajax call you hide or show a
+[1804] certain D element now all of a sudden if
+[1807] you have to show the person working next
+[1808] to you okay so this is what it looks
+[1810] like when we get an error 500 or this is
+[1812] what it looks like when we get a success
+[1814] 200 or this what happens when like we
+[1817] haven't heard back from the server in
+[1818] two minutes and you started um go into
+[1822] why some applications don't work so well
+[1824] right because did you even think about
+[1826] the 2 minutes scenario or was it in the
+[1829] design specs or is it really easy to
+[1831] replicate that those conditions when
+[1834] you've actually written the code and
+[1836] with the way that we've been building
+[1839] most web applications and perhaps other
+[1841] applications it's actually really hard
+[1843] to make that direct connection with uh
+[1846] with what can actually happen throughout
+[1848] time right it's very hard to say okay
+[1851] this is the rendering for this
+[1852] particular set of uh of uh data points
+[1855] or this the rendering for this
+[1857] configuration of data points so what I
+[1860] did this in this one case is you know
+[1862] I'm going to write the code and I'm
+[1864] going to write all this um uh scenarios
+[1868] in the way that I'm looking at them in
+[1869] the in the design tool and then when I
+[1871] was done with that I started discovering
+[1874] that you know it was almost impossible
+[1876] to have anticipated all the different uh
+[1879] scenarios so some have to do with a
+[1881] specific implementation details you know
+[1883] like um maybe you didn't know that uh
+[1886] the video HTML 5 video API will give you
+[1890] this particular type of event with this
+[1892] particular type of failure or or maybe
+[1894] you have to display a a loading
+[1896] indicator because as you are skipping
+[1899] over the different parts of the video
+[1901] you know like you have to now handle
+[1903] this new situation so as you can see
+[1906] because I took that role of like being
+[1908] able to like design it on my design tool
+[1910] and then uh program it and then program
+[1913] it and find out that I was missing some
+[1915] ideas before when I was signing it I it
+[1919] kind of like enlightened me in the sense
+[1920] that you know this is why we are not
+[1923] good at estimating uh when we're going
+[1925] to be done with software projects it's
+[1927] not because we're missing the tools the
+[1928] techniques obviously sometimes that we
+[1930] find this weird bug uh at different
+[1933] levels of the stack but some some most
+[1936] of the time I think it's because there's
+[1938] not clear knowledge about the uh what
+[1941] this project will in fact uh entail uh
+[1945] and that has to do a lot has to do with
+[1947] programming techniques that we apply and
+[1949] and those I describe in the in the the
+[1951] process but also I think it has to do
+[1953] too with establishing almost like a
+[1955] protocol between um you know product
+[1958] designer and programmer where you can
+[1960] say now what I need is a design that
+[1964] fits this new set of parameters and what
+[1967] you get back is like okay this is what
+[1969] the VIS ideal visual representation
+[1971] looks like and as that protocol becomes
+[1974] more and more technically delineated and
+[1977] as that feedback Lo becomes uh faster
+[1980] and faster and as the designer
+[1983] incorporates Programming type skills and
+[1985] programmer incorporates designer type
+[1987] skills we can see how like the whole uh
+[1991] you know the the whole process can be uh
+[1994] sort of taken care of perhaps by by
+[1997] maybe fewer people or perhaps um the
+[2000] same people can have a much broader
+[2002] impact across the entire um spectrum of
+[2005] the application and what that will lead
+[2007] us to inevitably like much higher
+[2010] productivity right because if you're
+[2012] better at at estimating your completion
+[2014] if you're better at communicating with
+[2016] with the people that are working with
+[2018] you on What's Missing or what um what's
+[2021] done I think um you know it it can have
+[2024] a tremendous impact on productivity and
+[2026] what this essay has done is it's
+[2028] inspired a few really interesting
+[2030] projects uh namely uh react uh story
+[2034] book um which allows you to you know
+[2037] render your react components as a story
+[2039] so like you can say you know you start
+[2040] off with this representation of a
+[2042] certain component and this is what
+[2044] happens when the parameters change and
+[2045] this is what happen when other
+[2046] parameters change furthermore what
+[2048] happens when different actions are
+[2050] dispatched that can change the state of
+[2053] that component so you can look at
+[2055] perhaps the evolution over time as user
+[2059] interaction comes in so you're able to
+[2061] simulate this different forms of uh
+[2064] interaction that or actions that the use
+[2067] would perform so it gives you so much
+[2069] more visibility into what you're
+[2072] creating that it's sort of mesmerizing
+[2074] that we didn't have it beforehand
+[2075] because it's it's the very thing we are
+[2077] creating and I I think it's been
+[2081] successful as as an essay because of um
+[2084] being able to incorporate those ideas
+[2086] and um apply them to your projects or
+[2089] perhaps create new ones so it's it's
+[2091] definitely uh one of my one of my
+[2093] favorites I think um in the preall we
+[2096] kind of talked about this a bit and I
+[2098] was like I draw some I drew some uh some
+[2100] connections from this essay which is why
+[2102] we brought it up into your design
+[2105] process for hyperterm and one thing you
+[2107] had mentioned was was really the process
+[2110] for which you designed hyperterm like
+[2112] you it' said that you had done it in
+[2114] sketch you know months beforehand then
+[2117] you kind of thought about it in your
+[2118] head for a while so you had spent a lot
+[2120] of this discovery time maybe not
+[2122] actually in front of a computer actually
+[2123] seeing some of the things the you know
+[2125] the states that you might have to deal
+[2127] with but ultimately kind of architecting
+[2129] this thing in your head after it's been
+[2130] designed and sketch and all this good
+[2131] stuff so let's let's transition some of
+[2134] the things you took from this essay and
+[2135] some of the takeaways into your process
+[2138] for Designing hyper
+[2140] term yeah um I think I I shared this the
+[2144] other day in a in a chat interview I
+[2147] actually designed this way way back in
+[2148] the day because I was writing up the
+[2151] homepage for uh now our deployment tool
+[2154] and if you go to it uh z. Co is SL now
+[2157] you see that there's a little terminal
+[2158] and like uh there's a CSS animation for
+[2160] like typing in a command and then like
+[2162] it shows you how like after typing in
+[2164] now you get your deployment and like a
+[2166] website comes up so as I was designing
+[2169] that I was like okay so this is really
+[2171] awesome you know like because when you
+[2173] are creating U this animations that sort
+[2176] of like uh use symbols for explaining
+[2179] something what you inevitably go into is
+[2182] a dramatic simplification right because
+[2185] when I was assigning what looked like a
+[2187] little terminal I didn't spend time you
+[2189] know like creating this like title bar
+[2192] and I didn't U create a very thick tab
+[2195] bar and like I just wanted the terminal
+[2198] and if you think about hyperterm that's
+[2200] what it is it's the terminal in this
+[2202] simplest possible form right and perhaps
+[2206] a bit of inspiration too was the fact
+[2208] that like then it went on and like every
+[2210] single piece of the UI designed with CSS
+[2212] and HTML right like even the the Clos
+[2215] buttons uh for for the the um semaphor
+[2219] lights I did with HTML and CSS you kind
+[2221] start thinking about like whoa it'd be
+[2223] awesome if that was it you know like it
+[2225] was an entire terminal built on HTML and
+[2228] CSS and JavaScript but I didn't go into
+[2231] the project right away
+[2233] because I I guess the primary difficulty
+[2236] that I was uh spends a lot of time
+[2237] thinking about is how can we make this
+[2240] extensible how can we make it you know
+[2243] um extensible but at the same time not
+[2245] too complicated and also Al that
+[2247] extensions wouldn't compete um with each
+[2249] other and it was very easy to uh to um
+[2252] style even though we're we also want to
+[2255] maintain this idea of uh components that
+[2257] don't leak styles to the outside world
+[2260] so like when you define a a CSS class
+[2262] within a certain component it doesn't
+[2264] apply like this random component in the
+[2266] footer for example which a lot of web
+[2268] developers might relate to um so I sort
+[2272] of started thinking about it without
+[2274] actually writing any code for a long
+[2276] time
+[2277] and as I uh started you know thinking
+[2280] about creating other things I was trying
+[2282] to come up with a plan in my mind for
+[2286] how can I you know sit down and write
+[2288] this out in one session as opposed to
+[2291] sort of starting the project living it
+[2293] there not being able to like fully
+[2296] understand or appreciate everything that
+[2298] I want to do and how to solve it because
+[2300] I think that can be a really frustrating
+[2301] experience I think that's uh you know
+[2303] how a lot of us end up with project
+[2307] directories like you go to CD projects
+[2309] LS and you have like a thousand and
+[2312] finished projects so I I think one has
+[2315] to pick their battles really carefully
+[2318] and perhaps think a lot about okay what
+[2321] is what is this entire thing that I'm
+[2323] going to program like what or you know
+[2325] as much as you can try to think these
+[2327] are all the different pieces that I want
+[2329] to have in that first release and then
+[2332] you don't necessarily have to sit down
+[2333] and start coding right away because that
+[2336] coding session might actually not get
+[2338] you to where you need to be uh and that
+[2340] can also be you know like a very um
+[2343] difficult experience when like you don't
+[2345] you don't really are you're not able to
+[2347] like fit in all the pieces together
+[2349] because you're just unaware of the shape
+[2351] of what you're trying to create it kind
+[2353] of reminds me at least what you're
+[2354] talking about here kind of reminds me of
+[2357] work in progress limits you know
+[2358] something like combine it's a it's an
+[2360] agile approach where you you limit the
+[2362] amount of work and progress you have
+[2364] whether it's with as an individual
+[2366] because this is sort of like an unspoken
+[2367] work in progress limit you know it's
+[2369] like you were saying I want to focus on
+[2371] one or more you know a very small amount
+[2374] of things so that I can have full focus
+[2377] and do this design and Discovery process
+[2379] that you've talked about in in the pure
+[2380] UI essay and the some takeaways you've
+[2383] got from that and sort of not have a ton
+[2386] of projects in your CD projects uh
+[2388] location and focus yourself or you you
+[2391] don't have to step away and kind of have
+[2393] context switching constantly yeah and uh
+[2395] that makes sense me yeah I think that's
+[2397] a good approximation right because
+[2399] numbers are always arbitrary maybe um
+[2402] you can do this month you can do one uh
+[2405] project or maybe next month you can do
+[2407] 10 like you know like motivation and
+[2409] inspiration levels vary a lot like uh
+[2412] life stuff changes a lot so instead of
+[2415] looking at it as number of working
+[2417] progress projects I would I would think
+[2419] about like how many of these do I have
+[2421] really clear picture of every everything
+[2424] that the user can possibly do or
+[2427] everything that um I can foresee you
+[2429] know this is what the minimum VI product
+[2431] entails but think about it also in terms
+[2434] of the design side of it where like all
+[2437] of the all of the things we're doing Al
+[2439] always result in like a configuration of
+[2441] pixels on the screen right so even if
+[2444] it's just on a piece of paper you can
+[2446] approximate a lot of this different uh
+[2449] states that your application is going to
+[2450] be in and then have really good sense of
+[2453] like oh my God there's so much work to
+[2454] do like look at this uh or even if you
+[2458] go into the project and then are not
+[2460] able to succeed with it you can you can
+[2463] recognize that your plan your map in the
+[2465] beginning was incomplete so I like to
+[2467] think of this as a metaphor that I gave
+[2469] at uh waffle JS when I introduced this
+[2471] essay I gave a talk with it and I I
+[2475] compared it to a map and you know how in
+[2477] Google Maps as you scroll around and
+[2480] zoom around or like all these like lazy
+[2482] loading portions of it with like great
+[2484] sares and that's how think about a
+[2486] project nowadays is first of all we're
+[2489] trying to like figure out our map uh
+[2491] there's parts of it that we're going to
+[2492] have to discover later so like there
+[2494] there's definitely great squares
+[2496] obviously there one has to go with that
+[2498] expectation one uh can't be naive and
+[2500] think that you know you have everything
+[2502] figured out and and at the same time try
+[2505] to um understand how much of that you
+[2509] can know ahead of time if your map is
+[2512] changing too drastically you might even
+[2513] want to reconsider the project altoe you
+[2515] know you might not want to tackle it
+[2517] right now so maybe that's what reduces
+[2519] the number of work in progress projects
+[2521] that you have at at a given time is like
+[2523] you know like I really have no map of
+[2525] this territory I might not I I should
+[2527] not even go into it right now we've
+[2530] certainly taken the long road to get to
+[2532] hyperterm but let's let's uh I can hear
+[2535] already some listeners out are thinking
+[2537] like what the heck is hyperterm Catch Me
+[2539] Up what is z you've mentioned it a
+[2540] couple times you've mentioned now let's
+[2543] let's rewind a little bit and uh and
+[2546] maybe talk not so much from this work in
+[2548] progress design portion that we've uh
+[2551] we've been talking about but let's tee
+[2552] up exactly what zit is exactly what
+[2554] hyperterm is so Z is your new company
+[2557] and from what I can understand your your
+[2559] goal is to build products for developers
+[2561] and designers so obviously it would make
+[2562] sense to go back to your roots which is
+[2564] why it makes sense to tell that story go
+[2566] back to the terminal which is where you
+[2567] originally uh fell in love with what you
+[2570] fell in love with to get to where you're
+[2571] at today so hyperterm is is one of your
+[2574] newest things you've released from site
+[2575] so help the listeners understand what
+[2577] Zite is what now is and what hyperterm
+[2580] is Zite is our attempt uh which we
+[2583] started on November last year or
+[2586] probably late August last year 2015 uh
+[2589] yeah to rethink uh the cloud from a user
+[2592] experience side of things so everyone
+[2595] that's used this amazing power
+[2598] superpower I would call it that is being
+[2600] able to instantly instantly provision
+[2602] servers uh can always relate to this
+[2604] idea that the user experience is never
+[2607] there like you log into this really
+[2610] complicated web panels you have to have
+[2613] very deep understanding of new
+[2616] terminology there's always new acronyms
+[2619] and new uh terms for commonplace things
+[2623] like servers you know and what you
+[2626] really want to do as a as a product
+[2628] person is you just want to ship
+[2631] something you just want to ship some
+[2632] code and hopefully when a lot of traffic
+[2634] comes in it scales that's like the basic
+[2637] premise of it makes sense so we're
+[2639] trying to uh rethink the cloud from this
+[2643] perspective uh our mission is and and
+[2647] this we're going to be able to tie back
+[2648] to the idea of installing software our
+[2650] mission is to make uh cloud computing as
+[2653] easy and accessible as mobile Computing
+[2656] so what mobile did for deployment let's
+[2659] call it is you're able to like search
+[2661] for an app um on the App Store sometimes
+[2664] you can even just like slide and like
+[2666] type in the application name you go you
+[2668] tap install and that's it's done it's on
+[2670] your home screen and it's very very very
+[2673] very easy to access later on and it auto
+[2675] updates and it's wonderful if we even go
+[2678] back to uh Mac OS where you know it was
+[2683] known for its Superior user experience
+[2685] over windows and
+[2687] whatnot installing an application
+[2689] entailed downloading a a DMG which is a
+[2692] type of mountable volume and dou double
+[2696] clicking it and then the volume hangs
+[2699] out in your finder later on and yeah you
+[2701] forget to close it or you can't reove
+[2703] your computer because you have a mounted
+[2705] volume and why do you have a volume
+[2707] anyways what's a volume yeah and then
+[2709] you have to drag and drop it to
+[2711] applications and by the way a lot of
+[2713] people have the instinct to like just
+[2714] double click it and then the application
+[2716] doesn't doesn't stick right because it's
+[2718] on our desktop or just kind of hang out
+[2720] that volume and to be honest we still
+[2722] suffer from it to a certain degree right
+[2723] like hyperterm and adom actually I'm not
+[2727] I can't speak for Adam but like a lot of
+[2729] the a lot of the things that we
+[2730] distribute are still like have this
+[2732] process so mobile has been a dramatic
+[2735] simplification over this extremely
+[2737] commonplace task of just installing
+[2739] something and I think we can draw the
+[2742] same exact parallel with the cloud where
+[2744] uh there was a that type of like uh
+[2748] process with all that intrinsic
+[2751] knowledge when it came to devel
+[2752] deploying an application which is you
+[2755] know like setting up the cloud setting
+[2757] up the credentials downloading keys and
+[2760] uh creating instances and selecting a
+[2762] region and installing an operating
+[2764] system and deciding um you know like the
+[2767] deployment strategy and there are there
+[2769] are tons of deployment strategies to
+[2770] choose from and then what do you get at
+[2773] the end of the day like how do you see
+[2775] what your application is doing how do
+[2777] you how do I see the code that's running
+[2778] at any given time how do I see uh the
+[2781] logs how do I see how many concurrent
+[2784] connections I have to this application
+[2786] so it's never been an application
+[2788] Centric view of the cloud there's never
+[2790] been so that's sort of what we're trying
+[2792] to do and and making it as easy as
+[2794] mobile Computing is certainly a very
+[2796] ambitious goal but I think uh if we
+[2799] continue to expand if we continue to
+[2800] create these great tools to make
+[2801] designing and developing more
+[2803] approachable uh and open source more
+[2805] approachable uh we really believe in a
+[2807] future where um our industry is uh in
+[2811] fact many times larger than what it is
+[2813] right now and people are able to are
+[2816] people will have a lot more Independence
+[2818] when it comes to doing this end to
+[2820] endend uh of you know I want to try a
+[2822] new experiment I want to deploy it and
+[2824] perhaps a ton of people are going to
+[2825] come to it so it should scale yeah and
+[2828] and that's the vision uh we we have for
+[2830] it um a lot A lot has to do with you
+[2834] know these are tools that if you're an
+[2836] expert um you should be able to have
+[2839] complete control and oversight and
+[2840] should work great and a lot of it has to
+[2842] do with let's think about the person
+[2844] that's that has EXP experence the old
+[2846] Cloud as we know it the cloud of all
+[2849] those steps and difficulties so that's a
+[2852] mission for Zite and our first product
+[2854] is now which uh with one command you can
+[2856] deploy any project um from the terminal
+[2860] and that led to uh creating hyper term
+[2862] which is we think the text based UI the
+[2865] command oriented UI is uh an amazing
+[2869] form of uh rep representing data and
+[2872] user intent and it has all this free
+[2875] stuff stuff that come with it like
+[2877] logging for example you can scroll back
+[2880] and see the past of everything you've
+[2882] done uh you can amplify it for example
+[2885] you can combine different commands
+[2887] together to create new workflows you can
+[2889] create aliases so it's it's this
+[2892] beautiful um uh approach to
+[2895] communicating with a computer that I
+[2897] think will stick around forever because
+[2900] um it has some obviously has some uh
+[2903] things that it's not suitable for where
+[2904] like GUI applications are better but
+[2906] then there's like this set of tasks that
+[2909] you want to do and you want to be really
+[2911] productive and you want to be really
+[2912] efficient where the terminal is
+[2914] absolutely the way yeah and I think what
+[2916] we were seeing with slack is they're
+[2919] making commands even more approachable
+[2922] and perhaps collaborative because when I
+[2924] have a really neat workflow um on my
+[2926] terminal it's very hard to share it it's
+[2928] very hard to like say you know like I
+[2931] have this Alias does this and like it
+[2933] has it requires this um Environmental
+[2935] variable or this whereas with slack you
+[2937] know like you just set up a command and
+[2939] immediately everyone that joins the
+[2940] server has it so we'll see a lot of this
+[2944] I can I can uh predict we we'll continue
+[2947] to see text-based DUI for a very very
+[2948] long time and hyperterm is uh an
+[2952] approach or an idea to try to reinvent
+[2955] that uh for and modernize it for the use
+[2958] case of the um Unix shell that's an
+[2962] interesting correlation between slack
+[2964] and like slash commands and the
+[2966] accessibility of that I mean cuz you can
+[2968] turn on your TV today and see a
+[2970] commercial for slack and so that's like
+[2973] mainstream right so mainstream is being
+[2974] invited into this world that essentially
+[2977] you know by your correlation here is an
+[2979] invitation into you know these hacker
+[2981] things that are typically things you
+[2983] might see in in the terminal for example
+[2986] which things that we're we're familiar
+[2987] with but um just for clarification uh to
+[2990] the listeners so zeit is the company and
+[2994] uh you're your focus as a company is to
+[2996] build products for developers and
+[2997] designers and obviously we talked about
+[2999] now which is uh this realtime platform
+[3002] to build uh to ship applications to we
+[3004] talked about hyperterm which is a
+[3006] terminal emulator and it's as you
+[3008] mentioned it's based 100% on JavaScript
+[3010] HTML CSS it's open source obviously uh
+[3014] you can inspect it so you can com you
+[3016] can push command option I and open the
+[3018] inspector just like you could in Chrome
+[3020] and then it's also hackable because you
+[3022] know you can add extensions and
+[3023] different fun things that can be hosted
+[3026] on mpm and all that fun stuff so like
+[3028] this is this is the the gist of this
+[3031] show is to kind of dive deeper into
+[3033] hyper term we're getting we are getting
+[3035] close to a break so let's let's do this
+[3037] since we just teed that up let's go
+[3038] ahead and break real quick and that way
+[3040] we can spend the rest of the show just
+[3042] kind of diving much much deeper into
+[3044] hyperterm and this future that you've
+[3047] you've painted obviously you've teed up
+[3048] a fun story here built on electron a lot
+[3051] of things that uh has garnered some
+[3054] interest really quickly from the
+[3055] community but uh let's break real quick
+[3057] we'll come back and we'll dive much
+[3060] deeper into upper term we'll be right
+[3064] back we're excited to be promoting
+[3067] Elixir com 2016 taking place in Orlando
+[3070] Florida at Walt Disney World Swan and
+[3073] Dolphin Resorts September 1st and 2nd
+[3076] training is taking place on August 31st
+[3079] and as you may know or have heard here
+[3081] at the change log we're betting big on
+[3083] Elixir the next version version of Chang
+[3086] law.com our new CMS is using Elixir and
+[3089] Phoenix to make this thing awesome which
+[3091] it is and it's super fast so as you can
+[3094] tell we're betting big on Elixir and we
+[3096] couldn't be happier to be working with
+[3098] Elixir com they've got three keynote
+[3100] speakers five training classes with
+[3103] seven instructors 30 speakers from
+[3106] around the globe they literally have
+[3108] some of the world's most best training
+[3110] this year they have four remaining
+[3112] classes with openings Chris mcord the
+[3114] author of Phoenix and Phoenix Phenix
+[3115] presence you've heard him on the show
+[3116] before is teaching about channels Sunny
+[3119] scroggin a phoenix core team member is
+[3121] teaching an introductory Phoenix Class
+[3123] James Edward gray has a very
+[3126] entertaining and fun way to introduce
+[3127] folks to Elixir and also OTP Bruce Tate
+[3131] and Eric Ms Johnson have an introductory
+[3133] class on Elixir and the new
+[3135] groundbreaking test framework called
+[3136] true story training is just an
+[3138] additional 250 and you will never see
+[3140] training cost this low again Chris mcord
+[3143] creator of Phoenix and Jose Val creative
+[3145] Elixir will be keynoting this conference
+[3148] and the final keynote speaker of the
+[3149] conference will be Boyd Moler if you
+[3151] need some credentials Boyd founded Xbox
+[3154] Live and Microsoft XNA you won't want to
+[3158] miss what Boyd has to say and what he'll
+[3160] be revealing about Elixir and its future
+[3163] if the kitos the training and the
+[3165] conference itself doesn't get you to go
+[3167] it's at Walt Disney World Swan and
+[3169] Dolphin Resort basically it's vacation
+[3172] at a conference enjoys 17 world class
+[3174] restaurant lounges 24-hour room service
+[3178] and don't forget the all important
+[3180] karaoke in an authentic Japanese sushi
+[3182] restaurant other amenities include
+[3184] luxurious Spas five pools two health
+[3187] clubs World Pools four lighted tennis
+[3190] courts get your tennis on at night
+[3192] jogging trails and a supervised
+[3194] children's activity center might as well
+[3197] make a vacation on this conference it's
+[3198] going to be a blast head to elixir.com
+[3201] changelog tell them the change log sent
+[3204] you and by the way if you're thinking
+[3205] about sponsoring this conference they
+[3207] still have a few openings get in touch
+[3209] with Jim tell them to change log sent
+[3210] you once again elixir.com change
+[3215] log all right we're back from the break
+[3217] with gamer Rouch and we're talking about
+[3219] a lot of fun stuff you know G you're an
+[3222] entrepreneur right you've you've been
+[3223] down this road so to speak with learn
+[3225] boost and other fun things you've done
+[3226] over the years and you've learned a lot
+[3227] of lessons you've blooded your knuckles
+[3229] uh you're doing a lot of fun stuff in
+[3231] the open in the wild so to speak and uh
+[3234] and so so here comes hyperterm this 100%
+[3237] JavaScript HTML CSS based on electron uh
+[3241] terminal emulator that uh seems to have
+[3244] just kind of come uh out of left field
+[3247] unexpected um I guess the first thing I
+[3250] thought of when I thought about the show
+[3251] was was like what was wrong with
+[3254] terminal what was wrong with iterm that
+[3256] you know obviously we kind of heard some
+[3258] of the story of how you got here but
+[3259] like I'm curious to the problem that was
+[3261] out that you were thinking I've just got
+[3263] to write a better ter emulator and I'm
+[3266] going to base it completely on this
+[3267] hackable system that is hyperterm as it
+[3270] is now so what was the problem and why
+[3272] is hyperterm the solution to that yeah
+[3275] uh the problem has many different sides
+[3278] to it one of it is the ability to
+[3282] customize the experience of your
+[3284] terminal is I think really important and
+[3287] all the existing terminals had to some
+[3290] degree that ability but what hyperterm
+[3293] is doing essentially is is giving you
+[3295] complete control over every single part
+[3299] of the program and we designed the
+[3302] plug-in system specifically to that end
+[3305] where you can intercept every action
+[3308] that happens within the system either
+[3310] because it's been triggered by the user
+[3312] or triggered by the system itself and
+[3316] very interestingly what you can do is
+[3317] you can even override the um side
+[3320] effects that some of these actions have
+[3322] so for example let's say you move the
+[3324] window around and if you move the window
+[3326] around we have to think about whether
+[3330] it's on a screen that is red now or not
+[3332] red now because it could have changed so
+[3335] as an effect of that action of moving
+[3337] the window we dispatch another action
+[3339] that says oh let's uh reconsider whether
+[3342] it's a redness screen or not and let's
+[3343] adapt the font smoothing for example now
+[3346] let's say you're a plug-in developer you
+[3347] can hook into that window move action
+[3350] and as a matter of fact you can
+[3351] overwrite the effect that the
+[3353] application defines as a default effect
+[3355] to that action so what we've created
+[3358] really is a platform for taking this
+[3362] primitive of the log of commands and
+[3365] giving you complete power to modify to
+[3368] your liking so HTML and CSS uh and
+[3372] JavaScript are very very uh uniquely uh
+[3376] fit for this purpose right when one such
+[3379] idea is Javascript allows you to Monkey
+[3382] patch any prototype allows you to
+[3383] replace any virtually any part of the
+[3385] system you can replace we utilize this
+[3388] for hot code reloading so when you load
+[3391] a Plugin or you load a theme which are
+[3393] essentially the same under this system
+[3395] we hot reload the code that we download
+[3398] dynamically from npm and your new
+[3402] extension or new theme kicks in
+[3404] immediately so there are all these
+[3406] really subtle things that went into the
+[3408] engineering of it that I think are very
+[3411] unique and they're unique in what they
+[3413] can do in the future not so much into
+[3416] what it is there right now what it is
+[3418] there right now is also dramatic
+[3420] simplification of the UI that you
+[3421] normally uh see when you launch a
+[3424] terminal like we touched on earlier it's
+[3427] just you know as simple as it could
+[3429] possibly be with the ability to
+[3431] customize it and frankly it's it's been
+[3434] um it's been really remarkably
+[3437] successful in that in particular because
+[3439] no matter how many downloads it had what
+[3442] it really did was to spark a lot of
+[3445] really great ideas and a lot of npm
+[3447] projects and like uh tons of GitHub
+[3450] repositories for like hacking on it so
+[3453] it I I think you know someone uh asked
+[3456] me like you know why HTML why CSS you
+[3458] know why JavaScript and truly so far
+[3461] today they are the best tools we have
+[3465] for hacking something very very deeply
+[3468] and also for getting the feedback about
+[3470] what's going on right because with like
+[3471] you mentioned you trigger web inspector
+[3474] and you you immediately see everything
+[3475] that makes up that application um you
+[3478] can see the logs you can see the um
+[3481] structure of elements and styles uh and
+[3484] keep in mind you've never seen this
+[3486] application before you've never written
+[3487] it but you can immediately start hacking
+[3489] it right and you cannot do that with
+[3491] Native applications you cannot do that
+[3492] with uh iOS applications it's this
+[3495] ability to hack uh every single aspect
+[3498] of the application that makes it really
+[3499] unique that's everything we loved about
+[3501] the web is an application basically like
+[3503] it that's that's what I take away from
+[3505] is like you know you got this inspector
+[3507] and uh you can take anybody going back
+[3509] to your essay and and the whole designer
+[3512] versus an engineer developer uh Chasm
+[3515] where you've got a designer who mainly
+[3516] sticks in Photoshop or sketch or
+[3517] whatever you know flavor of design tool
+[3520] they choose and they're like well I'm
+[3521] stuck in this in this role I've only got
+[3523] this this ground this sector to cover
+[3525] but then you give them access to
+[3527] something like hyperterm and now they
+[3528] can actually open up inspector and
+[3530] inspect the code and get curious you
+[3532] know it's an invitation to being curious
+[3535] and going back to you know when did I
+[3537] decide to pull the trigger and start
+[3539] this project the missing piece was okay
+[3541] you can analyze that particular state of
+[3544] the application that given time right
+[3546] like you web inspect it and like you see
+[3548] what is right now but it's traditionally
+[3552] been really hard to understand what was
+[3554] and what will be like what is the
+[3556] application doing why uh where are the
+[3560] changes that you see in that
+[3562] configuration of elements and style
+[3564] where are those coming from yeah and the
+[3566] answer to that is we use Redux as a
+[3569] system for both internal uh State
+[3572] Management like us as the developer team
+[3575] or people that have contributed PO
+[3576] requests to it you know like are able to
+[3578] like create new actions understand those
+[3581] actions read those actions but now you
+[3582] as the external developer uh you could
+[3585] for example turn on the uh uh web
+[3587] inspector tools to see the Redux actions
+[3590] um be dispatched and now you also have a
+[3593] complete understanding of like
+[3594] everything that's happening in y and you
+[3596] can say okay what if when this action
+[3598] comes in that new data is being added to
+[3600] the terminal let's say I wanted to
+[3602] overwrite it and if I overwrite it let's
+[3604] say I want to suppress the traditional
+[3605] effect so an idea of this is for example
+[3608] like text is coming into the terminal um
+[3612] from the what we call the uh pseudo TTY
+[3616] so the PTY every tab in your terminal is
+[3619] launching a sub terminal a pseudo TD and
+[3623] you write to it and then you get out so
+[3625] for example you write LS to it it's kind
+[3627] of like write to a socket so like you
+[3628] write LS to it and then uh a new line
+[3632] and then you get uh the output of the ls
+[3635] command that's like shell 101 right
+[3638] right so when we get that output um we
+[3642] could have taken two two different paths
+[3644] one is we take that output and we have
+[3647] an event handler and we imediately write
+[3649] it out to the Dom right and that would
+[3651] be actually extremely efficient and it
+[3654] would be what you expect like you know
+[3656] like we got some text let's write it to
+[3658] the Dom in in the in the form of divs
+[3661] and those divs make up the rows and
+[3663] Columns of the of the terminal but
+[3665] instead what we do is we dispatch an
+[3666] action that we say you know like here's
+[3668] some data that comes from the PTY so
+[3672] particularly this action is called
+[3673] session PTY data so what happens is that
+[3677] action can be caught by um hyperterm
+[3680] itself and hyperterm normally what it
+[3682] does is like it does a bunch of things
+[3683] like so if we got some data we Mark that
+[3686] the tab that you're uh getting this data
+[3688] from is active so if it's active another
+[3691] part of the system is going to be like
+[3692] oh I want to render this tab blue if
+[3695] it's not focused because we want to
+[3697] signal that there was activity in the
+[3699] other terminals while you're not looking
+[3701] makes sense yeah and obviously we want
+[3703] to write it to the terminal and there
+[3704] are like all those things that you could
+[3706] possibly do but um and this is why I
+[3709] created uh the uh the default extension
+[3711] is called hyper power and like it
+[3713] triggers uh this particle effects as you
+[3715] type and what it does too is like it
+[3718] creates it this WOW mode so when you
+[3720] type wow into the terminal and you press
+[3722] enter the colors change of the particle
+[3726] effects that we render and the way we do
+[3728] this is interesting in itself because
+[3731] we're writing wow the PTY is saying wait
+[3734] I don't have a wow command so it's
+[3736] returning bash wow command not found so
+[3740] instead of requiring you to install a
+[3742] wow command or a wow program on your
+[3744] computer we're overwriting that action
+[3747] that says add data to the
+[3749] PTY and we're saying oh no because it's
+[3751] it looks like wow command not found I'm
+[3754] not going to send the data over so that
+[3756] it gets put on the screen because you
+[3757] don't want to see that I'm going to
+[3759] dispatch an action of my own and like in
+[3761] this case like turning wow mode on and
+[3764] what you've essentially done is you've
+[3765] completely overridden that default
+[3768] behavior that we shipped with and you're
+[3770] now uh in charge of creating or you're
+[3774] uh you have the power to create a
+[3776] completely new experience of your own
+[3779] and you also get these nice things where
+[3781] like if you scroll uh uh up you you will
+[3785] see that you typed in wow for example
+[3787] and you know the the principles of the
+[3791] terminal stay there but you're able to
+[3793] enhance them so such an extension that
+[3795] someone created was adding one password
+[3797] integration so he did something very
+[3799] similar but he detected that the command
+[3801] um prompt password was being rendered so
+[3804] if you're rendering a password prompt
+[3806] most likely you're going to need uh the
+[3809] assistance of one password or you're
+[3810] going to want the assistance of one
+[3812] password to introduce your password so
+[3814] the extension takes care of like
+[3815] launching one password and suggesting
+[3817] for example your PSE sudu password so
+[3820] that you don't have to type it in from
+[3822] scratch in a prompt that doesn't even
+[3824] render characters right because it mutes
+[3826] uh terminals normally mute characters so
+[3828] we can see how even even
+[3830] seemingly um deficient uh default that
+[3834] the terminal has like when you type in a
+[3836] password the uh prompt goes mute and you
+[3839] don't even know what you're typing uh
+[3841] now all of a sudden we liap frog and we
+[3844] made it so easy that you're not even
+[3845] typing right I think by continuing this
+[3848] mindset you can you can imagine that a
+[3850] lot of other modifications can can be
+[3853] made of this workflow or enhancements
+[3855] can be made of this workflow uh some of
+[3857] which could involve the internet right
+[3858] like which is something that um I I
+[3861] don't know if anyone has explored it yet
+[3863] but for example Le uh I mistype a lot of
+[3866] commands and what happens immediately
+[3868] after I mistype a command is I type it
+[3870] correctly and once again if we analyze
+[3873] the output of the terminal it's fairly
+[3875] easy to understand that like a command
+[3877] was wrong because you get something like
+[3878] oh command not found and then you see
+[3880] that the user types in a command that
+[3882] has a Levenstein distance that's not too
+[3884] far away from what you typed before and
+[3887] it succeeded so you can build your own
+[3890] little data set of um you know uh spell
+[3894] check so that you can render some inline
+[3898] suggestions or a perhaps command a
+[3900] keyboard shortcut for you know like
+[3902] typing in the right command when uh when
+[3905] you got it wrong and that could involve
+[3907] the cloud for example it could involve
+[3908] like saving a data set in the cloud or
+[3911] uh logging could involve saving your
+[3913] logs in the cloud so like all of a
+[3914] sudden like it's not possible to like um
+[3918] go in and like you know like do XML HTTP
+[3921] requests or do uh open real-time
+[3924] connection to like get some data or uh
+[3927] change the behavior of the terminal as
+[3929] different actions or different things
+[3931] happen uh you could imagine a
+[3933] collaborative terminal experience right
+[3935] so something we're adding to further
+[3937] expand on this notion of uh hyperterm
+[3940] being a platform is we're adding a
+[3943] little drop- down uh
+[3945] non-invasive maintaining our Simplicity
+[3947] a little drop down that you see when you
+[3949] hover the tab just like you see the X
+[3952] sign where if you click it you would see
+[3954] options and those options will be
+[3957] populated by plugins so you could
+[3958] imagine you know like turn this session
+[3961] into a collaborative session and you get
+[3963] a link where like you send it to your uh
+[3966] uh co-workers and you can they can see
+[3967] what you're typing on the terminal or
+[3969] like you can imagine a lot of different
+[3971] additions that are not very invasive yet
+[3974] they can enhance a lot of your workflows
+[3976] wow I mean to me I I look at this we
+[3979] kick this off by saying what's wrong
+[3980] with terminal what's wrong with iterm
+[3982] and obviously you're shipping this first
+[3984] Mac OS uh with Windows and Linux coming
+[3987] up after this and
+[3989] clearly there's been a lot of thought to
+[3992] how this as you've said can be a
+[3994] platform not
+[3995] just I think out I think terminal ships
+[3998] with Mac OS and iterm is is an add- on
+[4001] its open source as well and there's
+[4002] nothing wrong with that it just seems
+[4004] like you've you've taken this one step
+[4006] further making it and taking what is the
+[4009] the simplest thing the most accessible
+[4010] thing to any hacker which is the
+[4012] terminal right is to to access the
+[4015] command line of the computer whether
+[4017] it's uh windows or Linux or whatever uh
+[4020] you know operating system you're working
+[4021] with and and having this hacker access
+[4024] to it and and you've taken this and
+[4025] you've added like steroids and a bunch
+[4027] of other crazy stuff and like and you've
+[4029] open the doors to you know extensions
+[4033] and as You' mentioned web requests and
+[4035] this drop down you've mentioned that's
+[4036] so cool I I just started thinking about
+[4039] this drop down like seeing take this
+[4041] session I'm working in and making making
+[4043] it colle aborative and then um just like
+[4047] with now whenever you ship something it
+[4048] automatically copies the to the
+[4049] clipboard and you can share that URL to
+[4051] somebody maybe it's a command somebody
+[4053] throws into their their uh hyper term
+[4056] and automatically have a shared session
+[4058] you know distributed through the
+[4059] internet that's that's amazing to me the
+[4061] workflow is up to you really I mean you
+[4063] could yeah you could uh write something
+[4065] down you could click something it's it's
+[4067] uh it the the possibilities are many of
+[4071] course and the other thing that I want
+[4072] to touch on that is really interesting
+[4074] is because this is such a simple
+[4076] interface uh and because we can be in
+[4079] control of the entire rendering pipeline
+[4082] we can uh start going into what
+[4086] production hot code reloading looks like
+[4088] so hot code reloading is a technique
+[4090] that mostly we've been using as
+[4092] Developers for um the development
+[4094] workflow right so like you like make a
+[4097] change and gets reloaded but we're
+[4098] already going into the next um phase of
+[4101] this which is a lot of plugins uh get
+[4104] installed by
+[4105] npm hyperterm gets a notification and
+[4109] many of them are actually loading and
+[4111] reloading without you doing anything at
+[4113] all and this is the direction that we're
+[4114] taking the entire experience in is that
+[4117] you uh you can have these things um that
+[4121] update or you can add this new plugins
+[4123] to your experience or like you can turn
+[4124] them on and off and there's never a need
+[4127] to restart the system which there's been
+[4131] um different versions of this but
+[4135] typically it's a it's a very um um
+[4138] difficult task to do for the entire
+[4140] application but I think because we're in
+[4141] control of the entire um uh experience
+[4145] and because it's um it's such a simple
+[4150] um system we can now also experiment
+[4153] with this fairly novel things which like
+[4155] what does this look at what what are the
+[4157] security implications for example like
+[4159] how do we um uh give the users uh the
+[4162] ability like uh for example pin or
+[4165] version or like be notified of updates
+[4167] and then have them very easily H load
+[4170] them into their uh into their sessions
+[4172] and how do we not how do we preserve
+[4174] state so that you know when you load
+[4176] something it's never disruptive to your
+[4178] workflow so there are a lot of really
+[4180] interesting um sort of side concerns
+[4184] that this is exploring that are also not
+[4186] immediately
+[4187] obvious I think it's amazing I mean you
+[4191] said you design it in sketch to just
+[4193] kind of rewind a bit you designed this
+[4194] thing in sketch as a UI early as part of
+[4197] shipping now and then you sat on this
+[4199] idea for a bit in your mind and kind of
+[4201] thought through all of the architecture
+[4203] and things like that so that you can uh
+[4206] you know capitalize on you know minimize
+[4209] work in progress and focus on this
+[4211] project and I think you said you
+[4212] actually designed hyperterm in two weeks
+[4213] was that right yeah in a in a sign
+[4215] conversation earlier before we actually
+[4217] was recording yeah about two week I was
+[4219] telling my girlfriend that um you know
+[4222] that I think if you can manage that I
+[4225] think it's ideal where like you know
+[4227] like you don't let projects drag on for
+[4228] too long like ideally you sit down
+[4230] you're able to like finish it in a
+[4232] reasonable amount of time uh going back
+[4234] to um Z and like we're talking about
+[4236] like the simplic the Simplicity of the
+[4238] of the website and stuff like that what
+[4240] we decided to do was almost like iterate
+[4242] uh in in public you know we didn't want
+[4244] to we didn't want to sit on this you
+[4248] know Amazing Creation it's going to be
+[4250] the best one ever and like uh launch a
+[4253] 18 months later uh it's almost like hot
+[4255] code reloading but for like the
+[4257] iteration process where like we are not
+[4259] we're we're very much all about like
+[4261] giving you pieces over time and going
+[4263] back to GitHub I think this is something
+[4265] that GitHub has been really
+[4266] inspirational for because uh it's one of
+[4269] those rare and it shouldn't be rare
+[4271] companies were like you get a nice
+[4272] little block post like oh we added this
+[4274] one feature that you really needed and
+[4277] you know like everyone's happy and
+[4278] everyone's sharing the blog post and
+[4280] like everyone GitHub HQ is high-fiving
+[4282] well I don't know if they are like for
+[4284] example when they added like the squash
+[4286] uh um drop down like obviously everyone
+[4289] was like I I I I'd seen high fives for
+[4292] sure on that one i' seen tons of like
+[4295] complaints about it and whatever but
+[4296] like boom here it is it's this little
+[4299] arrow now that's next to the button that
+[4302] unleashes all this new uh experience and
+[4305] like joy in the users and like it it the
+[4308] communication is like you know like the
+[4309] engineer that works on it like is able
+[4311] to like work on it perhaps with team
+[4313] perhaps with a few other people and then
+[4315] like blog about it and say like this is
+[4316] it this is what we added and we're
+[4318] taking that a step further in that like
+[4320] we want to do that for every single step
+[4322] of the company's Evolution um in fact uh
+[4325] during those two weeks I started you
+[4327] know like tweeting little bits and
+[4329] pieces of what I was doing like you know
+[4331] like now I created the icon now I um did
+[4334] this now I did that um then um you know
+[4338] like at the end at the final stage was
+[4341] adding that um you know extensibility
+[4343] system and that's when I I went quiet a
+[4345] little bit I did some refactoring um for
+[4347] those that are familiar with like the
+[4349] react uh space I'm actually doing uh
+[4352] talking about this in depth at react 30
+[4354] a podcast about react uh but what
+[4357] happened is at at the final stage of the
+[4359] project I decided to almost completely
+[4362] refactor it so that it wouldn't use um
+[4365] State fold components and instead move
+[4367] the um State into Redux so that I could
+[4370] enable that sort of really deep
+[4374] extensibility and that's was sort of the
+[4376] final stage of the project and then when
+[4378] it was announced i u in my mind I knew
+[4380] that I wanted to create a certain type
+[4384] of extension that it would ship with as
+[4386] an example which is hyper power that
+[4391] sort of took over the terminal in a very
+[4393] uh dramatic way so you know the um the
+[4397] the extension grabs the cursor moves
+[4400] around things renders a canvas onp pop
+[4403] where the particles are drawn and it is
+[4407] and then overrides that wow command that
+[4408] I mentioned so it's it's a it's an
+[4410] example of that endtoend hackability
+[4413] experience that I wanted to demonstrate
+[4416] so then um you know the final stage was
+[4419] uh iterating on how this would be
+[4421] communicated so something I did this
+[4424] time that I hadn't done um in other uh
+[4426] situations was like I had a group of
+[4428] beta testers that I just dm'd early
+[4431] builds to and those people were extreme
+[4433] extremely uh helpful uh in like
+[4435] providing really candid feedback uh
+[4437] expressing some of the concerns like
+[4439] obviously listening to the concerns is
+[4441] extremely important I knew going in that
+[4444] like performance was a critical piece of
+[4446] this and it's like it's still like
+[4448] something we're constantly iterating on
+[4450] um primarily because it's such a an
+[4453] important thing to be able to say that
+[4454] the web platform can do everything the
+[4458] native can do um not only the
+[4460] hackability part but also can
+[4462] demonstrate performance correctly istics
+[4463] of native applications so that's why uh
+[4466] I think as a community we're all like
+[4468] taking up that um
+[4470] responsibility and but also the the
+[4474] other part of it is you know we found a
+[4476] lot of you know like I got exposed to
+[4477] problems related to like z uh zsh and
+[4481] fish I'd never used fish in my life
+[4483] before um so it was really helpful to
+[4486] like get to that um point and then I
+[4489] actually started using now to iterate on
+[4492] that homeage page like um I tweeted
+[4495] later on later that one of the one of
+[4497] the key characteristics of now is that
+[4499] every time you type in now enter you get
+[4502] a new server um you basically get a new
+[4505] instance of your application up and
+[4506] running within usually it's within a
+[4509] second and um you can share that link
+[4512] gets copied to your clipboard and you
+[4514] can share it with anyone the first thing
+[4516] that that link renders is the output of
+[4518] the build commands that are happening
+[4520] and then um when it's shared um people
+[4522] are either looking at the build and then
+[4524] or then it refreshes and it loads your
+[4526] application so actually I think I
+[4528] deployed that homepage like 15 times um
+[4532] so just iterating on like what what is
+[4534] the best way to communicate this right
+[4537] and end being that the best way to
+[4538] communicate this is just a video of the
+[4540] application itself working so that's why
+[4543] like you load in you see nothing but a
+[4545] video that auto plays with with the
+[4547] application itself uh and the other
+[4549] thing that was interesting is like I
+[4551] needed like this auto update server
+[4552] right so uh I was able to clone a
+[4555] repository called nuts and and I'm
+[4557] extremely grateful to the electron team
+[4560] for the amazing outof the Box experience
+[4563] you have for a lot of this seemingly um
+[4567] difficult task like you know like auto
+[4569] updating oh there's an electron auto
+[4571] update module and here are a bunch of
+[4573] open- source um implementations of the
+[4575] server so like I deployed a few of those
+[4578] servers with now um so that was kind of
+[4581] a a retelling of that what we're trying
+[4584] which we're trying to make uh everyone
+[4587] be able to do which is you had an idea
+[4589] for an app you never worry about uh
+[4592] servers you never worry about deploying
+[4594] all these different needs that arise
+[4596] over time uh you know in the beginning I
+[4598] started with the auto updates just
+[4601] checking every five minutes uh that a
+[4604] Json file hadn't changed on my server
+[4606] but then realized oh there's this really
+[4607] neat electron Auto updator that requires
+[4609] this type of server I launched it and I
+[4612] I was able to like do the end to endend
+[4615] without worrying at all about it um and
+[4620] you know that's sort of what what the
+[4621] companies stands for which is um giving
+[4625] uh a lot of power to the individual
+[4628] including people that are at companies
+[4630] you know perhaps they don't love the
+[4632] current CI process in their company and
+[4635] they want to make some quick progress to
+[4636] like maybe show someone within the
+[4638] company or like pitch at a meeting or
+[4641] something like that so it's like you
+[4642] know you can do this all by yourself
+[4644] without um you know asking anyone uh for
+[4648] like keys or for even domain names right
+[4650] like you can uh quickly attach it to
+[4652] your own domain name you don't need
+[4654] anyone to like create U SSL certificates
+[4657] for you it's like it gets automatically
+[4659] provisioned um so it was also that um
+[4663] confirmation I guess of of of this model
+[4665] that we're trying to
+[4667] popularize you mentioned uh at least for
+[4670] hyperterm the speed and I think for for
+[4673] now um zit now I think well it's not zit
+[4676] now it's just called now right it's
+[4677] that's the name of the product is now
+[4679] okay just making sure um I mean I think
+[4682] that's absolutely uh certain like you
+[4685] know having to ask for permission
+[4686] sometimes to to Tinker you know in that
+[4688] invitation again back to what we said
+[4690] before with hyperterm that invitation of
+[4692] curiosity uh gets minimized with now but
+[4695] with hyperterm you know keying off what
+[4697] you said before around speed one of your
+[4699] primary goals for this project at least
+[4701] right now is is this is the beginning
+[4703] cuz I mean how long has has uh hyperturn
+[4706] been out like 3 4 weeks maybe at least
+[4708] to the public uh no to the public toal
+[4712] has probably been I think it was uh last
+[4714] Friday okay so I'm I'm giving you more
+[4717] days than you actually deserve on in the
+[4719] public least so it's it's been a week
+[4721] okay I think so it's been such a it's
+[4724] been such a rush because like I'm pretty
+[4726] sure it's been less than a week okay
+[4728] while you're looking that up I mentioned
+[4729] earlier also for the listeners that uh
+[4732] if you search hper term on GitHub
+[4734] there's I thought there was like just 90
+[4736] now there's more than 100 repositories
+[4738] so actually since the beginning of this
+[4742] show there's 11 more repositories with
+[4744] the the uh the phrase hyperterm attached
+[4748] to it um but going back to the the speed
+[4750] portion I want to actually pull out a
+[4752] quote from a slack conversation how with
+[4755] Jared since he can't be on the show
+[4756] today I want to at least give him a
+[4758] cameo via slack and we were chatting uh
+[4762] I think yesterday
+[4763] about you coming on the show and I was
+[4764] like wow this this is really awesome I
+[4766] had seen it cuz last week I was at
+[4768] gophercon with the rest of the team we
+[4769] were shooting video there and doing a
+[4770] bunch of fun stuff so I was sort of like
+[4772] in Focus mode I had a conference last
+[4774] week so I basically wasn't even on the
+[4776] internet last week or even paying
+[4777] attention just as much as I really had
+[4779] to and I said I told Jared I'm like I
+[4781] saw hyper terminal or hyperterm but
+[4783] hadn't had a chance to dive in yet is
+[4785] this a terminal replacement for you and
+[4787] so Jared to me is like my ultimate L
+[4789] litness test so' be like is this
+[4791] something that's like the next big thing
+[4793] or not and so at first his first
+[4796] response I was kind of discouraged by
+[4797] because he says I'm the download it but
+[4799] haven't touched it phas and gave me a
+[4801] little smiley face I'm like oh dang and
+[4803] he says uh my guess is tons of potential
+[4806] but a ways to go before it replaces
+[4808] outright and so he's a he's trying to be
+[4810] a minimalist so he's using Straight Up
+[4812] terminal not iterm or anything else just
+[4814] terminal he's a user of t-u and stuff
+[4817] like that so the next thing he says well
+[4818] if it can replace t-mo or if it has or
+[4820] if it can t-mo wait it can t-s he says
+[4824] and then uh he says so yes quite
+[4826] possibly a terminal replacement for me
+[4827] dang it's fast Json Bas config install
+[4830] plugins via mpm full bad shell I'm sold
+[4832] take my money and then immediately I
+[4834] just started laughing because I'm like
+[4836] this is within a span of barely two
+[4838] minutes that Jared was on the fence he
+[4840] downloaded it hadn't played with it yet
+[4842] opened it up did a few things uh and in
+[4846] in two minutes he was like yeah I'm sold
+[4848] this is this is a replacement for me so
+[4851] that's all keying off the fact that you
+[4852] said your focus on speed and it is very
+[4854] fast and and we have a lot of ways to go
+[4857] yet um one thing that you know as more
+[4860] plugins get added to your workflow we
+[4862] want to make sure that you know you're
+[4864] able to get feedback on what could
+[4866] possibly slow you down so that's always
+[4868] a risk with uh plug-in based systems uh
+[4873] specifically I know from uh hearing from
+[4875] and talking to the Google Chrome team
+[4877] that a lot of people say oh Google
+[4879] Chrome has gotten slow and all it turns
+[4881] out it's like one of your extensions is
+[4884] uh making a synchronous XML HP request
+[4886] or something like that and uh so we we
+[4889] always have to keep uh our eye on that
+[4892] um but also you know there are little
+[4895] things that have to do with for example
+[4897] how you make that JavaScript build that
+[4900] gets first loaded the amount of code
+[4903] that's in it or whether the generated
+[4906] code has been cashed those are the
+[4908] things that really can make a drastic
+[4911] difference uh we are not in fact there
+[4914] yet in terms of the
+[4915] capabilities of where we can be with
+[4918] budup time for example there are a lot
+[4920] of uh awesome uh Evolutions that are
+[4923] happening in Chrome and V8 that are
+[4925] going to give us tremendous speedups
+[4928] when it comes to budup time and then um
+[4931] we are planning a uh pretty dramatic
+[4934] overhaul of how the underlying terminal
+[4936] Works which will improve uh hot
+[4939] reloading capabilities of plugins and
+[4941] would also improve how
+[4943] easy it is to like for example like
+[4944] render inline dialogues on top of the
+[4947] carrot or um uh creating bigger lines on
+[4951] or you know like rendering an inline
+[4954] image if you wanted to on the on the
+[4955] terminal and all all those things are
+[4958] possible right now but like we can make
+[4959] them a lot easier and um but at the same
+[4962] time we can improve performance
+[4964] drastically and that's that's sort of
+[4966] like the goal of the core of hyper term
+[4969] will be to continue um create really
+[4973] great uh Hooks and and experience for uh
+[4976] plug-in authors like I was mentioning
+[4978] you know adding that little drop down
+[4979] for example and as a native UI component
+[4983] but also you know like always keeping
+[4985] our eye and improving on performance so
+[4988] that this can be a flagship HTML JS CSS
+[4992] application that performs really really
+[4994] really well uh and that's that and of
+[4998] course windows and Linux support kind of
+[5000] like delineates a road map for next um
+[5004] month or so at least so we're getting a
+[5007] little close to to closing time but uh
+[5010] one of the questions I want to ask of
+[5011] you around hyperterm before we close out
+[5014] or at least begin to close out is um is
+[5017] I want to give you a chance to sort of I
+[5019] know you're very you know very new like
+[5022] let's say it's been on your you know
+[5025] your mind for a while but the public
+[5027] it's been barely week basically uh so
+[5029] it's very early in the project but a lot
+[5031] of support so far over 5,000 stars on
+[5035] GitHub um so quite a great response
+[5038] initially over 101 search results on
+[5040] GitHub for hyperterm um pontificate For
+[5043] Us sell the let's let's talk about the
+[5046] the future of it like if you can as best
+[5050] you can or as best you might be able to
+[5051] predict the future take us a couple
+[5053] years out what do you see hyperterm
+[5055] becoming what do you see other terminals
+[5058] becoming you know where does this
+[5059] project really where are you really
+[5061] trying to take it you know years from
+[5063] now my best hope for it will be that
+[5068] obviously um it should reach as many
+[5070] people as we can so like it has to be on
+[5072] as many platforms as possible um it has
+[5075] to be something that's tied into getting
+[5079] people to use the terminal getting
+[5081] people into like this workflow a lot e
+[5082] more easily so like tied into um
+[5085] documentation or tutorials or workflows
+[5088] so that it's easier to get it started
+[5090] with this if you're just learning progr
+[5092] programming that would be an amazing
+[5093] thing and the most important thing for
+[5095] me would be to see emergent behavior
+[5098] that is
+[5099] not on my mind that's what I get most
+[5102] excited about by far um I I remember
+[5105] talking to Ryan doll in the beginning of
+[5107] node and um he sort of had a a few
+[5112] predictions for like what things would
+[5114] be created but I don't think you know
+[5116] and he's he's shared this publicly you
+[5119] know there are certain things that you
+[5120] can't possibly imagine that are going
+[5122] happen like you know like uh first of
+[5124] all like in the beginning it seemed like
+[5126] it was going to be a niche thing for
+[5127] creating like networking servers and
+[5129] then people started to do virtually
+[5131] everything on it even sometimes this
+[5133] happens to the dismay of the authors
+[5136] because the authors are trying to like
+[5137] point you in a different direction and
+[5140] the community goes somewhere else and
+[5141] that's a beautiful thing so I would like
+[5143] to see that happen where like there's a
+[5145] lot of really amazing innovations that
+[5147] are sort of like coming out of nowhere
+[5149] um and uh frankly I think the the
+[5153] terminal can make people really
+[5154] productive so the more uh people we can
+[5157] get on board with this uh the better it
+[5160] is so that's that's my hope for the next
+[5163] few years all right let's um let's cover
+[5166] one of our other closing questions uh
+[5168] I'd love to dig so much deeper we're
+[5172] about 9 minutes past typical time which
+[5174] this is we try to keep it keep the show
+[5177] around 75 minutes where 8 minutes past
+[5179] that give or take a few um so we
+[5182] overtime but I would love to just keep
+[5184] diving deeper into this cuz I think it's
+[5186] such a deep deep interesting topic to
+[5188] talk about you know the as you said the
+[5192] the the terminal being the the best
+[5194] place to be productive as a programmer
+[5196] whether you're a designer programmer or
+[5198] a developer programmer you like
+[5200] whichever side you play on I think uh
+[5203] having the terminal be an
+[5205] invitation uh is always great and I I
+[5208] think that this is a a great platform to
+[5209] build upon but let's um let's get the
+[5212] listeners somewhere to go so there's a
+[5214] bunch of people out there that are super
+[5215] excited about it uh obviously hyper
+[5217] term. org is the URL to to head to or
+[5221] also zit. that's zei
+[5225] t.co um for your company and learning
+[5227] more about now so you can go to z.now to
+[5230] learn learn about that but in terms of
+[5232] hyperterm um what what ways can the
+[5235] community help out like is it helping
+[5237] with issues is it documentation where
+[5240] what are the biggest needs right now for
+[5241] the community step in and help out with
+[5243] Hyper term so we're actually announcing
+[5246] today uh zit. chat which is going to be
+[5249] our portal into our slack um
+[5252] Organization for our community and
+[5255] that's where we're all going to hang out
+[5257] and talk about like design things for
+[5259] example like how do we uh improve upon
+[5262] some of the core causes how do we
+[5263] improve upon the plugin accessibility
+[5266] hearing the feedback from plug-in
+[5267] authors that are saying like you know I
+[5269] need this and or I had a hard time with
+[5271] this or that obviously there are a ton
+[5273] of PO requests right now that have um
+[5275] that need more eyes review I think I've
+[5278] closed like 20 already uh from the
+[5281] community and we have like 30 more
+[5283] sitting so obviously always uh helping
+[5286] out with reviewing and um issues there
+[5289] are some interesting issues on the
+[5291] hyperterm Das website um uh repository
+[5294] that have to do with improving
+[5295] documentation in particular documenting
+[5297] all those actions that I was talking
+[5299] about so that you can see like all
+[5301] different things that you can possibly
+[5302] overwrite or listen on or introspect um
+[5306] so I I've been doing some work on like
+[5308] keeping those issues uh
+[5311] maintained um there are some um tasks
+[5315] that have to do with you know like uh
+[5318] documenting all this emergent Behavior
+[5321] Uh like documenting all this new plugins
+[5323] like there's this awesome repository
+[5325] called awesome Dash hyperterm or
+[5327] hyperterm Das awesome that compiles all
+[5330] the resources that are available uh
+[5332] right now and so submitting a p request
+[5334] to that project um I can't remember uh
+[5337] the name of the username on GitHub but
+[5338] it's a someone that took it up took it
+[5341] up upon on themselves on the community
+[5342] to do it and um yeah so it's it's going
+[5347] to be really awesome to chat with
+[5348] everyone that's using it and hear their
+[5351] thoughts and feedbacks and feedback and
+[5353] issues so that's uh the next step
+[5358] and another thing I was going to add is
+[5361] this project is a bit unique to in that
+[5363] we open source absolutely everything uh
+[5365] so like there is a hyperterm repository
+[5367] hyper term- website repository and then
+[5369] there is a hyperterm dart repository
+[5371] where I open- sourced the SL the sketch
+[5375] files for even like the logo and stuff
+[5377] like that so um I someone was working on
+[5380] a PO request like organize that better
+[5382] and like uh make the layers better and
+[5385] like make uh it easier to contribute to
+[5387] that so what's interesting too is that
+[5389] everyone can also have a say on on um
+[5393] like for example like what is the best
+[5395] uh UI or like default colors for Windows
+[5398] or Linux and and stuff like that so um
+[5401] there are many different ways to
+[5403] contribute and nice shout out to Timothy
+[5405] Timothy who's also goes by code theory
+[5408] on GitHub and also Twitter for that pull
+[5411] request to update the sketch file and
+[5413] read me and add some branding assets
+[5415] andan that's that's super cool to to
+[5418] open source that portion of it as well
+[5421] and so for the listen out there head to
+[5422] github.com Zite that's Z or sorry
+[5427] zeit um and you'll find hyperterm you'll
+[5430] find hyperterm hyph website and Hyper
+[5433] power which you mentioned a couple times
+[5434] and also hyperterm art which is a logos
+[5437] mops and web design for um hyperterm
+[5441] which is uh which is super cool man I
+[5443] mean we've got a couple more questions
+[5444] I'll ask you these simply because we
+[5445] talked about these in the preall and you
+[5448] got some some people who have influenced
+[5449] you over the years so one of the other
+[5451] questions we like to ask our guest when
+[5452] they come on is who's a hero to you
+[5455] who's somebody who's been influential
+[5458] that's that's uh inspired you along the
+[5460] way who's that person or persons to you
+[5463] uh I would say top person uh probably
+[5466] lesie Lamport um just
+[5470] because the disproportionate amount of
+[5473] contribution uh in the field of
+[5476] distributed systems and the field of um
+[5481] or in general just how to write correct
+[5483] programs uh he's written some awesome
+[5486] papers um on not paying too much
+[5489] attention to language or syntax
+[5493] over what really programming and
+[5495] thinking is about which is thinking in
+[5496] terms of Concepts conceptualizing so uh
+[5500] is a very allaround thinker that um also
+[5506] keeps a very humble and downto
+[5509] Earth um at ude towards everything it's
+[5513] just a really huge inspiration uh of a
+[5516] person um so there there's not a lot of
+[5520] I think there's one interview with him
+[5521] when he won the touring award um with um
+[5526] who is it the the creator of RX which
+[5530] I'm blanking on his name he doesn't uh
+[5532] they do an interview about uh his early
+[5536] days and how uh He Came Upon some of his
+[5541] breakthrough
+[5542] Concepts and the path so far so that
+[5546] that would be my Top Choice and then
+[5550] there are a lot of people that um are
+[5553] have
+[5554] been I I think that the the people that
+[5556] I look up to the most are the ones that
+[5560] always are trying to like do or go to
+[5563] places where like they've been told not
+[5565] to go to like you know like people that
+[5567] say oh I uh I couldn't do this or like
+[5570] you're supposed to do only this part of
+[5571] the jaw where you're supposed to do only
+[5573] this and then they go ahead and do more
+[5575] and more and more so I think it's it's
+[5577] all about like uh people that uh inspire
+[5580] you by um defeating their own uh
+[5585] apparent limits
+[5587] uh I think Leslie is an example of that
+[5589] as well because of the just consistent
+[5593] and disproportionate amount of
+[5595] contribution over decades uh it's just
+[5598] wonderful all right uh definitely get
+[5601] closer to to end the showtime but I
+[5603] can't let you go without asking you
+[5605] what's on your radar so you one thing we
+[5608] like to ask guests when they come on the
+[5609] show is you know in terms of Open Source
+[5612] at least or any new technologies coming
+[5614] out you know when you have a free
+[5615] weekend and you're not working on zit
+[5618] stuff or hyperterm stuff or personal
+[5620] things you know when you're tinkering
+[5621] and you're kind of in this discovery
+[5623] phase as we talked about with design
+[5625] Discovery earlier when you're in this
+[5626] this discovery phase what is it that you
+[5628] would want to sit down and hack on if
+[5629] you had a free weekend
+[5632] I would uh definitely try to work a lot
+[5635] more on Servo uh the browser HTML
+[5639] project um uh I would write a lot more
+[5643] rust uh try to continue to get better
+[5646] with that uh I think Servo in particular
+[5649] is one of the most exciting projects
+[5652] because in particular when it comes to
+[5655] electron because with electron we now
+[5658] have a platform for being able to very
+[5661] quickly compare the capabilities of each
+[5663] engine only on the merits of the engine
+[5666] alone with disregard to the UI because
+[5669] when we compare browsers it's impossible
+[5671] to compare them on the Merit of CSS
+[5675] performance if you're so attached to the
+[5678] Chrome Auto completion history that you
+[5680] know like you really can't use anything
+[5682] else no matter like how much better they
+[5684] do aund other things right so I think
+[5687] with uh electron we have this new
+[5689] platform for pushing the the web
+[5691] platform forward in a way that is not
+[5693] tied to this one use case of the web
+[5695] which is the browser with back and
+[5697] forward and refresh buttons right which
+[5700] in
+[5701] turn that context of the browser and
+[5704] what it looks like and what buttons are
+[5705] available shapes a lot of your code you
+[5707] know like single page applications that
+[5709] break the back button that now requires
+[5711] that you build in all this extra code
+[5712] for like addressing that because that
+[5714] button is always there and I think with
+[5717] electron that's changed it's up to you
+[5719] the developer to also decide what butur
+[5722] was there if any in what the obligation
+[5724] has to do which makes for a very awesome
+[5728] field of engine competition because now
+[5731] you can say Okay elron powered by Servo
+[5733] is 20 times faster to boot up hyperterm
+[5736] than El that um yeah electron powered by
+[5741] um webkit uh GDK or qt or whatever right
+[5744] so like uh it's it's I think it's going
+[5746] to be super interesting I'm excited
+[5748] about uh the the prospect of uh Servo
+[5751] and I'm very excited about everything
+[5753] that has to do with the concept of
+[5756] writing universal applications that have
+[5760] uh where you can like produce um like
+[5762] you can produce on your laptop uh a
+[5765] rendering of what the application would
+[5766] look like when it's shipped to iOS for
+[5768] example and I think with um react native
+[5771] and Technologies like that we're getting
+[5773] a lot closer to that ideal but I think
+[5775] there a lot there's still a lot of room
+[5777] for uh Improvement and experimentation
+[5780] and that idea that you should be able to
+[5783] um have all these rendering targets and
+[5786] seamlessly develop on them and iterate
+[5788] on them uh directly from one device even
+[5791] from the device itself so uh there's
+[5795] just so much to do in that in that whole
+[5797] Space of um how we create and ship um
+[5802] guy applications across a m of platforms
+[5805] and so far the web has proven to be um
+[5808] at least the way we understand it so far
+[5810] has been the best platform to do that
+[5812] but there's uh always room for an
+[5815] evolution of that idea or the emergence
+[5818] of new ideas that have to do with that
+[5821] gotcha well if you're listening out
+[5823] there and you're listening this you're
+[5824] thinking man gamer I'm I'm kind of
+[5825] excited about Servo too guess what so is
+[5828] the change log and we're we're actually
+[5829] working on we we're in the early phases
+[5832] of setting up a Servo show show so in
+[5835] the very near future we're going to talk
+[5836] about Servo and dive deep into that
+[5839] project and all that's coming from it
+[5841] because we have similar feelings to you
+[5843] GMO uh in terms of what it is and having
+[5846] competing engines and and you know
+[5849] evaluating engines not based on the
+[5851] actual guey itself but more uh of the
+[5854] you the engine itself you know the for
+[5856] the reason you said you know I I'm the
+[5858] same with you is like I'm kind of tied
+[5860] to Chrome because I've got history in it
+[5863] and that sucks that I that I choose
+[5864] Chrome simply because of that not that I
+[5866] like Chrome I like the people behind it
+[5868] I like what they've done but I do agree
+[5870] that we're we're in a better Market when
+[5872] we have competing engine competing
+[5874] engines win based on the engine itself
+[5877] not just the gooey that the rap
+[5878] absolutely so uh uh we are getting
+[5883] extremely close on the time but I like
+[5884] to give our guests at least one chance
+[5886] to to share any closing thoughts so
+[5888] you've got uh take a minute um and share
+[5891] with the audience any closing thoughts
+[5893] uh that sort of summarize or or extend
+[5896] anything we've talked about here in the
+[5898] show well uh finally if you want to say
+[5901] touch with us uh you you're going to be
+[5903] able to like I said uh talk to the team
+[5906] uh at z. chat uh to join our slack
+[5910] organization or you can um stay on top
+[5913] of our announcements and tweets with on
+[5916] our Twitter accounts @ zit HQ and for me
+[5920] at
+[5921] roug and that's it thanks a lot for
+[5923] having me here and uh I want to thank
+[5925] also the community for their amazing
+[5927] reception of our projects and uh looking
+[5930] forward to more absolutely G as I said
+[5933] at the very first part of the show which
+[5935] seems like uh almost hours ago now which
+[5937] technically it kind of is um that we
+[5940] have you know had you on a list for a
+[5941] while to come on the show and I'm I'm
+[5942] actually kind of glad we delayed it too
+[5944] because we got to tell a much broader
+[5947] stroked deeper side to your story than
+[5949] just simply what you were doing at learn
+[5950] boost which was obviously good stuff for
+[5953] you but it wasn't the only thing you
+[5956] were capable of doing and I'm I'm
+[5957] actually kind of glad we delayed uh by
+[5959] several years actually getting on the
+[5961] show because I think you we gave you a
+[5963] chance to to Blossom my friend you know
+[5965] it's like uh you've done so much cool
+[5967] stuff and and now you have such a deeper
+[5969] story which is super cool yeah thank you
+[5973] and to the listeners out there this is
+[5975] episode 213 so a lot of stuff that G and
+[5978] I talked about on the show we will
+[5980] obviously have in the show notes so head
+[5981] to changel law.com
+[5983] 213 that's the episode number for this
+[5985] or head back into your podcast app pull
+[5988] up the show notes and follow along we do
+[5990] our best to to uh to uh log everything
+[5993] there but uh that is it for this show
+[5996] today so GMA let's say goodbye my friend
+[5999] goodbye thank
+[6002] [Music]
+[6019] you
+[6021] [Music]
+[6034] a

@@ -1,0 +1,1338 @@
+[1] Herp heard this and said, "I'll think
+[3] you're being quite naive. You should
+[4] read some Machiavelli. It's far better
+[5] [music] to be feared than it to be
+[7] loved." There's a bunch of great stories
+[9] from all of us at Val it's a very unique
+[11] culture [music] that we've tried to take
+[12] cues from at Val as well.
+[14] &gt;&gt; What even is this whole model evaluation
+[14] space?
+[16] &gt;&gt; Independent evaluation [music] is the
+[18] idea that frontier labs are developing
+[19] at increasing pace and they shouldn't be
+[22] responsible for self-regulating.
+[24] &gt;&gt; You guys have a way of measuring RSI.
+[25] &gt;&gt; It seems like Anthropic will get to full
+[28] RSI [music] by July or maybe August
+[31] 2027. Model progress will speed up and
+[32] it will maybe even move into places
+[34] [music] where we understand the models
+[34] less.
+[36] &gt;&gt; That simply would be pretty scary if we
+[37] weren't watching that carefully.
+[38] &gt;&gt; Greater intelligences
+[38] &gt;&gt; [music]
+[40] &gt;&gt; will super forecast better than humans.
+[42] They will be actually able to say what
+[43] any human is is going to do without the
+[65] &gt;&gt; Ryan Christian is the founder and CEO of
+[67] Val's AI. Whenever you see a new AI
+[69] model get released, you see those
+[70] numbers and they compare the AI models
+[72] to each other, those numbers are
+[74] generated many times by Val's AI.
+[75] They've become one of the very top
+[77] evaluators [music] of models. This is a
+[78] fascinating area cuz you're constantly
+[80] creating new hills for models to climb.
+[82] It requires you to really understand how
+[85] to measure model capabilities as well as
+[87] evaluating model risks and trading new
+[88] ways of scoring [music] models for
+[90] risks. This means Ryan is on the cutting
+[91] edge of what's happening in the world of
+[93] AI, where AI is going and of how we can
+[95] help create the landscape [music] of
+[96] what government might do to regulate
+[98] these things and how the model companies
+[99] might think about regulating themselves.
+[101] He's creating the frameworks and the
+[102] concepts and the measurements of that
+[104] are leading the way for what AI is going
+[106] to look like in the next decade. Let's
+[107] hear from him. Welcome to American
+[109] Optimist. Ryan, thank you for joining us
+[109] today.
+[111] &gt;&gt; Thanks for having me.
+[113] &gt;&gt; Founder of the CEO of Val's AI.
+[114] &gt;&gt; Uh Vivek, thanks for being here and I'll
+[116] make me sound smarter.
+[117] &gt;&gt; Of course, here to help.
+[117] &gt;&gt; [laughter]
+[119] &gt;&gt; Welcome to the show. So, let's tell us a
+[120] bit about your background. You studied
+[123] computer science at Stanford. You were I
+[124] think at Microsoft for a little bit. And
+[126] then you you joined Palantir a long time
+[128] ago. What what led you to join Palantir?
+[131] &gt;&gt; Yeah. Yeah. Um thanks for having me. I
+[132] actually just kind of started when I was
+[134] at Microsoft. It was an intern there in
+[136] high school. And uh the BERT paper came
+[137] out from from Google. Um and for those
+[139] who don't know, this was a really big
+[142] paper. It showed this generalized system
+[144] uh was actually capable of hill climbing
+[146] or or succeeding across a variety of
+[149] major NLP benchmarks. Um and it was
+[150] &gt;&gt; Say for our listeners who aren't
+[151] technical, what is what's the NLP
+[152] benchmarks mean?
+[153] &gt;&gt; Well, it it basically means there are
+[154] these special specialized tests that
+[156] people came up with. They tried to make
+[157] specialized systems that would score
+[158] well on them. Like, here's a
+[160] multiple-choice exam, and then here's a
+[161] sentiment analysis.
+[162] &gt;&gt; Of natural language.
+[164] &gt;&gt; Yeah, that's right. Um and so, instead
+[165] of building a specialized system that
+[167] did well on one of these tasks, what
+[169] they had done was shown they had a model
+[170] that was very general-purpose. It had a
+[172] fundamental understanding of language.
+[174] Um and in a way that translated to all
+[175] of these benchmarks. It was suddenly
+[176] number one across the board.
+[177] &gt;&gt; What year was that?
+[179] &gt;&gt; I think it was just 2019, 2018.
+[180] &gt;&gt; It's a long time ago.
+[181] &gt;&gt; Yeah, like
+[183] &gt;&gt; yeah, lifetime ago. Yeah.
+[186] &gt;&gt; In in AI terms, it's pretty before age,
+[187] but it was getting there.
+[188] &gt;&gt; Yeah, it was a big deal. And and I think
+[190] to me, made it very clear. This is kind
+[191] of an illustrative uh moment for the
+[194] bitter lesson. The idea that um no
+[196] matter what we uh what we try to do and
+[197] kind of delude ourselves into thinking
+[199] around algorithmic optimizations,
+[200] actually just having more data at a
+[202] bigger scale is what allows us to unlock
+[204] new forms of intelligence. Um and so, it
+[206] was very clear to me then is that we're
+[208] going to have uh a powerful model or
+[210] systems like this, uh which will be an
+[211] essential part of our the fabric for our
+[214] society. Um and I think there were also
+[215] ways in which the models could be
+[217] misused. Um around the same time while I
+[219] was at at Microsoft, I read Zero to One.
+[221] Um and it became increasingly clear that
+[223] people at Palantir were uh trying to
+[224] construct the technology in a way that
+[226] protected civil liberties or Western
+[228] democratic ideals at large. Uh and so, I
+[229] was really excited to work at Palantir
+[231] to see the technology come to life and
+[233] adopted in a way that was consistent
+[235] with the values that I had.
+[236] Um and so went Stanford for for
+[238] undergrad, got got distracted doing some
+[240] research there. So, I published some
+[242] papers and and was kind of on track to
+[243] do a PhD, but I made the time to also
+[245] work at Palantir for a summer and I
+[246] think that was also really illuminating
+[246] experience.
+[248] &gt;&gt; You were mentioning you learned
+[249] something else at Palantir from Karp.
+[250] Anything anything else there is
+[250] interesting?
+[252] &gt;&gt; Yeah, there's I mean there's a bunch of
+[253] great stories from from while I was at
+[254] Palantir. It's a
+[256] a very unique culture that we've we've
+[258] tried to take cues from at Val's as
+[260] well, but um anyway, while I was there,
+[262] I I had the chance to work on this hack
+[264] week project. Um and and this
+[265] essentially was an idea which me and
+[267] this this guy in London had. So, we were
+[269] chatting about it remotely. I flew over
+[270] and and essentially I'd done some work
+[273] with CLIP, this joint image text
+[274] embedding model.
+[275] &gt;&gt; Um and what we were trying to do was
+[277] explain what that is for for the
+[277] audience.
+[279] &gt;&gt; idea of a single model that that can um
+[282] encode image input and text input into
+[285] the same semantic understanding. Right?
+[287] And uh and what we we're trying to do is
+[288] build out a reverse image search feature
+[290] into Gotham. Uh so, instead of just
+[292] typing text queries, you could upload an
+[294] image of say a blue car and it would
+[296] search over the entire database and pull
+[297] pull back blue cars that you're trying
+[299] to search for. Um and and it would do
+[301] this because we were using the same
+[303] underlying underlying embedding space
+[305] from for this model, which would map
+[307] text to images. Um
+[308] Anyway, so uh so, this was like a
+[309] research paper that that I'd published
+[310] and I wanted to work and build out a
+[312] feature. So, uh we actually had some
+[313] full-timers join our team and so as an
+[316] intern, uh I was I was leading this this
+[319] small team of uh of Palantirians and I
+[319] mean that was an
+[320] &gt;&gt; That sounds
+[321] &gt;&gt; exhilarating experience. I was not
+[324] sleeping for for a lot of this week. Um
+[325] and then this idea was then on went on
+[327] to be selected as a finalist. So,
+[329] presented for for the whole company. Um
+[331] and then actually after after I left, uh
+[333] they went on to patent it and actually
+[335] productize it. So, uh it was insane to
+[337] see this little idea that I had and some
+[338] of the research that I was working on
+[340] before Palantir go on to be a part of
+[342] the product and um and actually an IP
+[344] that they that they they wanted to
+[346] control. Um but anyway, through through
+[347] this I also got the chance to meet with
+[348] Karp and uh and chat with him a little
+[350] bit. And I had this question for him uh
+[351] which was essentially, you know, you
+[353] know, it seems like the Palantir
+[355] reputation is so negative.
+[356] I was at Stanford so there were a lot of
+[357] protests um
+[358] &gt;&gt; And you were very positive on the
+[360] values, but but the external perception
+[360] was just more negative than you
+[360] expected.
+[362] &gt;&gt; Yeah, that's right. I mean, it's very
+[364] clear to me that it was at the seat of
+[366] the power of the electorate, people who
+[368] we actually vote into power to decide
+[369] how we want to use technology and what
+[371] those values that underpin it should be.
+[373] Um and it was not really the place of
+[375] technology companies or to to deny where
+[377] that technology should be used. Um and
+[378] so people there were were thinking
+[380] through very carefully. And in fact,
+[381] like today we talk about things like the
+[383] alignment challenge. People at Palantir
+[384] were talking about this as human AI
+[386] symbiosis. That was something that was
+[387] being talked about. Or even like the
+[389] taxonomy for intelligence now, uh we
+[391] have a system of evaluations and
+[393] benchmarks that it kind of imitates
+[394] that. So, I think there are some
+[395] fundamental problems which people were
+[397] thinking deeply about. Uh and it
+[399] surprised me that the the outward
+[400] reception of the company was so
+[402] negative. Talking about um you know, a
+[405] lot of the maybe more unsavory potential
+[406] applications of the technology in a very
+[408] diluted understanding of it. Uh when in
+[410] fact, Palantir also helped distribute
+[411] the COVID vaccine, helped a bunch of
+[413] hospitals. Um and so there there could
+[415] be other case studies that people could
+[417] point to. Um and and Karp kind of heard
+[419] this and said, uh "Well, I think you're
+[420] being quite naive. Uh you should read
+[422] some Machiavelli. Uh it's far better to
+[424] be feared than it is to be loved." Um
+[426] and indeed you some comparisons to other
+[427] consulting companies and and basically
+[429] said that if they're fearful of us, at
+[430] least they think they think that we're
+[432] powerful. Uh so in the moment of need,
+[434] they they will come to a people like us.
+[436] Um and so that was fascinating. And in
+[437] fact, it actually reminds me a lot of
+[439] what I see from labs today, which is I
+[441] think in some part a genuine fear about
+[443] what the models are capable of. Uh but
+[445] in a lot of respects, a an opportunity
+[447] for them to show the power of what
+[447] they're building.
+[449] &gt;&gt; Might be on purpose that Dario wants
+[450] them to be feared if he's being
+[451] thoughtful about it.
+[453] &gt;&gt; I mean, whether Dario or Sam, there
+[454] there headlines I see where people are
+[456] saying things like uh the general public
+[458] has a right to be afraid. Uh and I think
+[460] that's not really a rational way for uh
+[462] for a leader to act. Uh and this this
+[463] show is called American optimist. I'm
+[465] actually quite optimistic and uh,
+[467] enacting rationally and and seeing that
+[468] uh, the fruits of AI will be far more
+[468] positive.
+[471] &gt;&gt; So, before we dive into VALs and the
+[473] science of evaluating AI models,
+[474] um, let's talk a little bit about the
+[476] state of AI progress and where we are.
+[478] In fact, tells me that you used uh, you
+[479] used Fable from Anthropic to solve a
+[481] 370-year-old cipher. 370-year-old
+[483] cipher, what what is this?
+[486] &gt;&gt; That's right, yeah. Um, it
+[487] Well, we're we're doing a bunch of
+[488] different types of evaluations now and
+[490] and I think right now with the
+[491] frontier's headed scientific discovery
+[493] or novel discovery uh, is an exciting
+[495] frontier. And so, we've been compiling
+[497] uh, a set of unsolved ciphers, math
+[499] problems, physics problems.
+[500] &gt;&gt; unsolved cipher for the audience? Like
+[501] what what does that mean?
+[503] &gt;&gt; It it's essentially a code which you're
+[505] trying to break, but you don't have the
+[507] the key to break it. And so, you need to
+[510] construct the mapping um, from a source
+[511] text to an original text and figure out
+[512] what the the message actually is.
+[514] &gt;&gt; many of these cases, these were like
+[515] messages that was that were sent from
+[517] like world leader to world leader or
+[519] like that were like on a on a pirate
+[520] ship and like
+[520] &gt;&gt; Yes.
+[521] &gt;&gt; Well, cuz a lot cuz there's cuz there
+[523] could be just be like a one-time pad or
+[525] something which case you can't break it
+[526] cuz it's a one-time pad so when they
+[528] both have a copy of and then be
+[529] impossible probably be impossible cuz
+[530] each thing translates
+[531] &gt;&gt; Potentially, but there's also like more
+[534] cues you could you could draw into about
+[536] how the person constructed the problem
+[537] or the message they were trying to
+[539] convey to the other person. It's um,
+[540] usually that that the messages are
+[541] constructed in a way that they're
+[543] intended to be cracked by the recipient.
+[545] &gt;&gt; One cynical view of AI progress right
+[548] now might be that just like AI's really
+[549] good at going over all these search
+[550] spaces and it certain problems can be
+[552] broken down into these really large
+[554] search spaces that like no human has
+[556] time to or ability to go through like
+[557] millions of them or something. Whereas
+[559] for a cipher for example, you could just
+[560] go through like if I was going to start
+[561] trying to break a cipher, I'd say like,
+[564] well, what if I just started like adding
+[565] numbers to each one of these things or
+[566] shifting them one or whatever. I'd
+[567] explore the obvious things whereas a
+[569] computer can explore like millions of
+[570] these things really fast. So, is are a
+[572] lot of the things happening in math and
+[575] science breakthroughs just somebody like
+[576] just defining a search space better to
+[578] search through or or is there like more
+[580] creative thought going from the model
+[581] and how do these things?
+[582] &gt;&gt; A lot of the problems that have been
+[583] solved have been solved through
+[585] exhaustion or it's trying to find a
+[587] counter example and you're you're bottom
+[588] line by your ability to try lots of
+[590] different counter examples, but I
+[591] wouldn't be dismissive of that class of
+[593] problem. There's a lot of things which
+[594] may take humans in the order of a
+[596] lifetime to achieve just through
+[598] exhaustion, but we're now able to see on
+[600] the order of hours with models.
+[602] &gt;&gt; So is the AI generally solving a lot of
+[603] math and science problems then or how
+[605] how do we think about this?
+[607] &gt;&gt; It is generally solving extremely
+[608] challenging problems and I think there
+[610] are still a large class of problems for
+[612] which we are human effort bottleneck.
+[614] I think it will take
+[614] uh
+[617] more sustained effort to actually make
+[619] progress in in exceptionally novel ways
+[620] like ways that require an intuition of
+[622] the solution and those those sorts of
+[624] things which humans have accrued are
+[625] very hard to pass on the models right
+[625] now.
+[628] &gt;&gt; It also seems like like models are
+[629] producing these incredible results and
+[631] like we get to knowledge that these
+[634] results are happening like Navier-Stokes
+[634] and
+[638] the like outputs produced by the model
+[640] however like very like very
+[640] unintelligible.
+[643] They're hard to parse, hard to
+[643] understand.
+[645] Um
+[648] like what do you think of how a
+[650] discovery should happen in like these
+[651] less verifiable domains or like what
+[653] what needs to change about how these
+[654] models behave in order for us to like
+[656] trust the discoveries of them?
+[657] &gt;&gt; Yeah, I think this is one of the biggest
+[658] bottlenecks especially when you're
+[660] approaching the frontier of human
+[663] intelligence. It's really hard for us to
+[664] tap those humans and then verify this
+[666] long output is actually correct.
+[666] &gt;&gt; Yeah.
+[668] &gt;&gt; Um one of the most popular techniques in
+[669] math which I think might translate to
+[671] others is the idea of using a verifiable
+[673] language like Lean. And this would be a
+[675] world in which you could output take the
+[677] output and translate it into a language
+[679] which if it compiles it must be true.
+[680] We're building up based on primitives
+[682] that we know to be the case. And so that
+[684] approach may apply in other fields like
+[686] physics or coding.
+[688] We may also see some instances where the
+[690] real world is the best verifier. So by
+[691] running an assay or a wet lab
+[693] experiment, uh we'll actually know for
+[695] certain whether the properties the model
+[696] predicted are actually the case.
+[699] &gt;&gt; Makes sense. And like how do you think
+[701] the labs or you guys or or other
+[702] organizations should be like running
+[704] these experiments and verifications?
+[705] &gt;&gt; I mean, very carefully in the very
+[708] least. Um uh I mean, I think it's it's
+[709] going to be very essential that there
+[711] are third-party groups that can support
+[713] this and and this is part of the vision
+[715] behind Val itself. I mean, we're now in
+[716] a world where there's actually limited
+[719] access to models across the lab. So So
+[720] Anthropic researchers have a hard time
+[723] evaluating OpenAI models and vice versa.
+[725] And that's kind of by design. Um but
+[726] that means that it's very hard to have a
+[728] true apples-to-apples comparison uh
+[730] because the best people who are running
+[731] these evals are often the people who are
+[733] biased and at the labs already.
+[734] &gt;&gt; Yeah. And and and so stepping back a
+[735] little bit, there's
+[737] there's all these things that AI could
+[738] do now that it couldn't do before. And
+[740] like a big part of this is like
+[741] understanding how to measure it, of
+[742] course. We're going to get into that.
+[744] That's that's what you do. Like one of
+[745] the measurement problems just at a very
+[747] high level is in the enterprise you have
+[748] to like measure what is good work or how
+[750] good is the work, right? So like like
+[752] how like so for example, if it's like a
+[753] law firm or something, you can define
+[755] maybe like associate level work and you
+[756] can define partner level work. Like how
+[758] do you even define that? Like like is
+[759] that a problem that we're working on? Is
+[761] Is AI getting better at under seeing
+[762] understanding what is what?
+[765] &gt;&gt; It's really challenging. I I think in a
+[766] lot of ways we haven't solved it at the
+[768] human level. We don't have a very clear
+[770] designation for what is associate level
+[771] work versus partner level.
+[772] &gt;&gt; the Supreme Court like what is
+[774] pornography and they said you just know
+[775] it when you see it, right? It's like
+[776] that was the line. It's something like
+[776] that.
+[778] &gt;&gt; Yeah, it's funny. That's almost exactly
+[780] what Ben said on the A16Z show.
+[781] &gt;&gt; Maybe you have a shared shared brain or
+[781] something.
+[783] &gt;&gt; That's funny. Well, yeah, it's a well,
+[784] it's well, it's the same analogy. It's
+[786] the right analogy, right? And since you
+[787] just But but I mean, but your job is to
+[788] have to figure out and define these
+[788] things.
+[790] &gt;&gt; Yeah, that's right. I think there is a
+[791] way you can do this in a very
+[793] consulting-driven approach where you go
+[795] and sit down with the person and try and
+[796] understand from them what good looks
+[798] like, encode that into repeatable evals,
+[799] and run that. And I think that's the way
+[801] that traditionally evals have been
+[803] built. The The approach that I'm really
+[805] optimistic about is uh the idea of auto
+[808] benchmarking. Um we we that the rates of
+[810] model progress is is continuing and
+[811] we're going to get more and more capable
+[813] models and so the underlying work itself
+[815] has to change. And so what I'm very
+[816] excited by is the idea that you could
+[818] take the previous work that was already
+[820] done by humans [clears throat]
+[821] and approximate the quality of the work
+[823] output that would be produced by models
+[825] in that counterfactual. Uh, and in that
+[827] way you can uh, systematically build
+[829] evals of all the work product that's
+[831] already been produced. Um, maybe as an
+[832] example you could say look at a GitHub
+[834] repository and look at the pre- previous
+[836] PRs that were merged by humans and see
+[838] if agents could equivalently do that and
+[840] then which one would do it in the cost
+[842] mitigated most cost mitigated way. Um,
+[843] and I think there's parallels for that
+[845] in the redlining process in legal or the
+[846] diagnostic process in medicine.
+[848] &gt;&gt; Does this get back to like an ontology
+[849] of workflows and outcomes you have to
+[850] define to make all this work? Is that is
+[852] that is that kind of the underlying
+[853] thing as well? You have to actually
+[854] understand the possible
+[856] outcomes before you can even measure
+[857] them or or how do you think about that?
+[859] &gt;&gt; I think the the hardest part is actually
+[861] measuring the outcome itself. Um, cuz
+[862] there's a lot of ways in which the
+[863] intermediary processes and workflows
+[865] within a company uh, are supportive of
+[867] the organization that then goes on to
+[869] have an outcome. Um, and so it's
+[871] sometimes hard to draw the connection
+[873] between a particular task and the job
+[875] and then the job and the outcome. Um,
+[877] and so so the mapping that inputs of
+[879] tokens to the final output intermediary
+[880] has to go through this concept of
+[880] workflow.
+[881] &gt;&gt; I imagine there's like lots of
+[883] intermediary outcomes you should even
+[884] have to define ahead of time to
+[885] understand like what they are though
+[887] before you can measure them.
+[888] &gt;&gt; Yeah, I I think that's what I'm what I'm
+[890] trying to say that that the the query
+[891] level is is still a subset of what it
+[892] takes to get to the outcome.
+[892] &gt;&gt; Awesome.
+[894] &gt;&gt; It's interesting because we've gone
+[895] through like different levels of
+[897] granularity over the past few years on
+[899] like what we what we care about. It it
+[900] maps to like what the models are capable
+[902] of but I remember like two years ago or
+[904] three years ago we were like evaluating
+[906] just like the text completions uh, and
+[907] like we were looking at these like input
+[909] output pairs and it was just text and
+[911] then now there's all these little things
+[914] in the middle. Um, like
+[916] when we're looking at work what are like
+[918] the horizons in which like people are
+[919] like evaluating things and maybe teach
+[920] people about like the state of play of
+[923] like uh, like how long is a task uh, and
+[925] like how long are these models capable
+[926] of doing tasks?
+[927] &gt;&gt; Yeah, for non-technical audience like
+[929] what even is this whole model evaluation
+[932] &gt;&gt; Well, it's it's the broad idea of
+[934] measuring what good looks like and
+[935] seeing whether models are capable of
+[936] producing that output.
+[939] We we think about evaluations in kind of
+[941] two two categories, capabilities and
+[942] risks. And capabilities are
+[944] approximating the output. Risks are
+[945] making sure that we don't see some
+[947] asymmetric downside if something goes
+[947] wrong.
+[950] Um and in terms of time horizon, models
+[950] have
+[952] kind of demonstrated to us they can run
+[952] for
+[955] longer and longer periods of time
+[956] without any human intervention.
+[957] &gt;&gt; are we talking about?
+[959] &gt;&gt; Uh some of our benchmarks will run over
+[961] 5 days. Um
+[961] So
+[963] &gt;&gt; And that's like 5 days worth of human
+[964] work or like 5 days
+[964] &gt;&gt; time.
+[965] &gt;&gt; Wall clock time, yeah.
+[967] &gt;&gt; Why do they fail after 5 days? It should
+[968] be like couldn't they just go forever at
+[969] some point?
+[971] &gt;&gt; that they fail, it's that they plateau.
+[972] And so that additional tokens don't
+[974] actually help them get new unlocks.
+[975] &gt;&gt; So they've kind of figured out
+[977] everything they could do on the problem.
+[978] &gt;&gt; Or they're not persistent enough to try
+[980] new approaches that get around the wall
+[980] that they're seeing.
+[983] &gt;&gt; Maybe give the the the audience just an
+[985] example of like the kinds of tasks that
+[986] these models are capable of like in in
+[988] some of your like finance benchmarks or
+[990] legal benchmarks, like what what work
+[991] can we actually replicate with these
+[991] models?
+[993] &gt;&gt; Yeah, you're doing independent
+[994] evaluations of all sorts of different
+[995] areas basically.
+[995] &gt;&gt; That's right, yeah.
+[997] &gt;&gt; Does that mean you have to understand
+[999] your and your team what finance is doing
+[1000] or what the legal is doing? You have to
+[1002] have yourself expertise in order to
+[1003] build these benchmarks.
+[1004] &gt;&gt; Well, we'll work with partners in this
+[1006] space. So on legal side we'll work with
+[1008] the largest law firms in the US or with
+[1011] banks you know GCB banks understand what
+[1012] they're doing in finance.
+[1014] And so in coding some of the tasks look
+[1016] like vibe code, vibe code bench where
+[1017] we're measuring a model's ability to
+[1019] build a full stack web application or
+[1020] code migrations where they're trying to
+[1022] do an end-to-end code migration. In
+[1024] finance where we're looking at can they
+[1026] do answer research questions or build
+[1028] Excel models. In legal also similar
+[1030] we're doing legal research tasks or or
+[1032] tax research tasks.
+[1033] And so these are kind of the common
+[1034] places where people are trying to use
+[1035] models today.
+[1037] &gt;&gt; I had an old boss when I was first
+[1038] building Excel models and you had to
+[1040] make them like look a certain way or
+[1041] like they're pretty and there's a really
+[1043] short rows around them and they do do we
+[1044] evaluate them based on like actually
+[1046] like like the like style too or is it
+[1047] just about correctness?
+[1048] &gt;&gt; No, that's right. It's correctness is is
+[1050] fundamental but style is also key part
+[1051] of this and yeah, that's something we
+[1053] discovered by sitting next to some
+[1054] people in finance as well. Yeah.
+[1055] &gt;&gt; Yeah, they seem to really care about
+[1056] that I guess. It makes it It does make
+[1058] it more legible if you have them looks
+[1058] good.
+[1060] &gt;&gt; And like I mean we like things to be
+[1061] done in our way of writing and in our
+[1064] style like uh I think if the models are
+[1064] not
+[1066] &gt;&gt; They would more likely do the deal too
+[1067] or is it
+[1069] &gt;&gt; Probably there's something like this
+[1070] where you like subconsciously, right? It
+[1072] shouldn't It's like Although it Although
+[1073] it does suggest that if the person can
+[1074] appeal to you, they can appeal to others
+[1077] cuz if it looks all messy and ugly and
+[1078] something maybe you think other people
+[1079] won't want to work with them either. So
+[1080] who knows? There's always like these
+[1082] like things that are like, you know,
+[1083] it's probably useful barrier to impress
+[1085] one group to impress another group. So
+[1087] stepping back like independent
+[1088] evaluation like how does that actually
+[1090] work? Like people like your like like do
+[1092] they people pay you? Who's paying you?
+[1094] How how are they how how do you how's it
+[1095] And do you get to be evaluated? Everyone
+[1096] in the space only people who pay you?
+[1097] Like how does it work?
+[1100] &gt;&gt; Yeah. Um well, the the underlying idea
+[1102] behind independent evaluation is is the
+[1104] idea that um frontier labs are
+[1106] developing at increasing pace and they
+[1107] shouldn't be responsible for
+[1110] self-regulating. Um direct government
+[1111] regulation often can slow down the pace
+[1113] of development and so that's often not
+[1115] the best solution. Uh instead if we have
+[1117] an ecosystem or a market of evaluators,
+[1119] they can actually compete and develop
+[1120] new technologies that keep up with the
+[1123] frontier. And in in the long term they
+[1125] can even be licensed by the government
+[1126] to uh
+[1127] who would actually itself is responsible
+[1129] for defining the set of ideals we're
+[1130] trying to line models towards.
+[1132] &gt;&gt; Well, that's cool. So rather than hire
+[1133] like a bunch of like weird people from
+[1136] the EA EA NGO NGO they could actually
+[1137] like hire you instead or something. They
+[1138] could be one of your competitors.
+[1139] &gt;&gt; Totally. Yeah, and I think in that world
+[1141] it you know, the best technology should
+[1143] win. It's not uh it's not clear that
+[1146] just the ones who who are you know,
+[1147] ideologically similar to people at the
+[1149] lab should be the ones who are doing the
+[1150] testing. Um but but actually I think the
+[1152] world of should to
+[1153] you know, where do we want models to go
+[1154] and and what is alignment and
+[1156] non-alignment look like. Um, can we
+[1158] certify a set of IVOs or independent
+[1159] verification orgs to do that testing
+[1159] process?
+[1161] &gt;&gt; And uh based on the way you're doing
+[1162] your testing and measuring things,
+[1164] you're going to change the space that
+[1165] over which government could potentially
+[1166] create rules cuz you're you're creating
+[1168] a set of possibilities that now exist.
+[1169] &gt;&gt; That's also a good way to think about
+[1171] it. Um, in the course of doing our work,
+[1173] we've unlocked new types of evaluations
+[1174] that um we're we're not actually
+[1176] possible before. Uh and so we help
+[1178] advance what the government could
+[1179] actually test for.
+[1180] &gt;&gt; Can you give us some examples of some of
+[1181] those? Like what are some of the new
+[1182] ways you're you're you're measuring
+[1183] things or creating benchmarks?
+[1185] &gt;&gt; Yeah, I mean let's look at cyber for
+[1187] instance. Um, we've done three major
+[1189] works in in cyber. Um, the first is in
+[1192] open source repositories looking at um
+[1193] memory code vulnerabilities. And so
+[1195] that's the ability of models to identify
+[1197] and patch code vulnerabilities. And we
+[1199] see that models today are performing
+[1201] really really well, both close as close
+[1202] source and open source. Um, but our
+[1204] second benchmark uh is called SORE
+[1206] bench. It measures a model model's
+[1208] ability to decompile an executable. Um,
+[1210] so this would be for a model uh to
+[1212] understand the underlying code base uh
+[1213] for for things that are actually close
+[1213] source.
+[1213] &gt;&gt; Wow.
+[1215] &gt;&gt; Um, and in that case we're we're seeing
+[1217] that the close source models are still
+[1220] far outperforming um Chinese open source
+[1220] alternatives.
+[1222] &gt;&gt; Have people been using like this
+[1224] approach to to get like video game
+[1225] source code from from binaries? Is that
+[1227] the Is that what people are using it for
+[1227] or
+[1229] &gt;&gt; That's what you would use it for. Yeah,
+[1230] that's what I would use [laughter] it
+[1232] for especially as a 14-year-old.
+[1232] &gt;&gt; Possibly.
+[1234] &gt;&gt; There's there's probably people who who
+[1236] are doing that, you know, trying to
+[1237] trying to violate IP law or something
+[1239] like that. Um, but but even more than
+[1239] that
+[1241] &gt;&gt; Greatest sound worse.
+[1247] &gt;&gt; Oh man. We can cut that bit.
+[1249] &gt;&gt; No, keep going.
+[1251] &gt;&gt; But um
+[1252] Yeah, I mean I think the fear is that uh
+[1254] if if models are really good at finding
+[1256] exploiting vulnerabilities, um then that
+[1257] might even apply to things like Windows
+[1259] which are which are close source. Uh and
+[1261] and actually close source systems
+[1262] underpin a huge part of our software
+[1262] infrastructure.
+[1264] &gt;&gt; It's a kind of fascinating. So
+[1266] I mean models are getting really
+[1269] sophisticated, really smart. Uh there's
+[1270] you're still scoring them like a really
+[1272] good score. I think Gemini 1 came out
+[1274] recently as being way ahead. They're
+[1275] level four and and it and they showed
+[1277] valves. It was like the first numbers I
+[1279] saw on it. And like they're in the 60s
+[1280] versus someone else being in the 50s.
+[1281] So, that means there still could have
+[1283] been 70s, 80s, 90s, anything you design.
+[1285] How do you guys
+[1287] like design something that has all those
+[1289] higher levels? Cuz you can't be using AI
+[1290] to do it. You guys somehow do it
+[1292] yourself or AI's helping you do it
+[1293] yourself? Like just explain this. Like
+[1295] how how If these models are only that
+[1296] good, how are you making something
+[1297] that's way more complicated than what
+[1299] they can do? How do you figure that out?
+[1299] &gt;&gt; Mhm.
+[1302] Yeah, you I mean, we have an unofficial
+[1304] motto of the company, uh always a higher
+[1307] peak. Um and and in the research world,
+[1309] um there's this perpetual effort to hill
+[1311] climb, identify benchmark a legible
+[1313] evaluation, uh and then create models
+[1315] that are better and better at it. Um and
+[1317] so, the fundamental view behind valves
+[1318] is that there's always a higher peak. We
+[1320] are we are the ones who are constructing
+[1321] the hills that other people choose to
+[1321] climb.
+[1324] Um and so, I think we've shown that it
+[1326] we are consistently able to find the
+[1328] gaps and places where we want to see
+[1330] models go, uh and then make that legible
+[1331] into an evaluation.
+[1332] &gt;&gt; example of how you build one of those
+[1334] hills that's like more advanced than the
+[1335] model that you can tell us? There's
+[1336] probably some Don't give away all your
+[1338] secrets. I'm an investor in you as well.
+[1339] But like like give us a sense of how
+[1341] this is done cuz it seems like a really
+[1342] hard thing to make something harder than
+[1344] any model can solve.
+[1346] &gt;&gt; I mean, in a lot of ways, we're also
+[1348] using models to construct uh the the
+[1351] systems or or situations in which we're
+[1352] challenging other models. And this is
+[1353] kind of goes back to an idea we think a
+[1355] lot about of scalable oversight. The
+[1357] idea that as models start to eclipse the
+[1359] best humans, we will need to rely on
+[1361] models in order to scalably test and
+[1362] assess them. Um
+[1364] for instance, uh we have a new work in
+[1366] in in cyber coming out soon uh based on
+[1368] cyber ranges where we're constructing
+[1370] simulated environments for enterprise
+[1372] cloud networks. Um and in that domain,
+[1374] we're still seeing even the best
+[1375] frontier models fall short.
+[1376] &gt;&gt; And so, you so you're going to build
+[1379] like this really complicated uh
+[1381] enterprise network. It's virtual. And
+[1382] then you're going to challenge people to
+[1383] like hack it and protect it and that
+[1384] kind of stuff.
+[1385] &gt;&gt; That's right. Yeah.
+[1386] &gt;&gt; That's cool. And and is that that's
+[1388] something that already exists right now?
+[1389] &gt;&gt; It exists. It's It's not public yet.
+[1390] We're We're working with some folks in
+[1392] the the US government to share our
+[1393] results. Um but we'll have some public
+[1394] version of it out soon.
+[1395] &gt;&gt; That seems really useful. I'm friends
+[1397] with a lot of guys who run the big
+[1398] banks. It feels like it feels like you'd
+[1400] want to have like contests like this you
+[1401] set up for the stuff they're using and
+[1402] make sure they're using the best ones,
+[1402] huh?
+[1404] &gt;&gt; Totally. And I think it also helps us
+[1406] understand what types of safeguards or
+[1409] systems in the network itself are uh the
+[1410] best forms of defenses against these
+[1412] models. Um there's also some interesting
+[1414] analysis we can do around automated red
+[1415] teaming to see if you can get around the
+[1417] guardrails that exist for the models.
+[1417] &gt;&gt; Yep.
+[1419] &gt;&gt; Yeah, I mean, seems like also that's a
+[1421] topical thing when people are talking
+[1423] about using Chinese models is like
+[1425] knowing what guardrails have been
+[1427] removed from the Chinese models that
+[1430] would exist normally in in like these
+[1430] closed-source
+[1433] &gt;&gt; Yeah, someone's using one of these like
+[1434] open-source Chinese models, but like
+[1436] there might be something buried in it
+[1437] that's that's scary. There earlier
+[1439] there's something buried in one of these
+[1440] things that like if it finds out you're
+[1441] doing work for the US government, it
+[1443] like does more it does like code that
+[1444] can be broken into more easily, right?
+[1445] They actually proved that. They said
+[1447] it's a clear the model somehow is like
+[1448] biased against people working with the
+[1449] US government. It's coming from China.
+[1451] It's just kind of concerning. Like could
+[1453] you test these things and make them safe
+[1454] for everyone to use somehow?
+[1455] &gt;&gt; So, we actually have an evaluation on
+[1457] this on we call the geopolitical tilt of
+[1459] models. And depending on the timing of
+[1461] this podcast, what will be out um
+[1462] we'll see. But but what we're trying to
+[1465] see is is measure does a model show more
+[1467] geopolitical tilt towards a US view of
+[1469] the world or a Chinese view of the world
+[1471] as as laid out um by the PRC. It's
+[1473] actually a a much more nuanced picture
+[1474] than than I thought. Uh for instance,
+[1476] what we're finding is that GLM-5.3, this
+[1478] Chinese open-source model, is actually
+[1480] exhibiting very little pro-China bias.
+[1482] Uh and we actually presented this to
+[1483] some labs and there was suspicion that
+[1485] maybe it's because it's just entirely
+[1487] distilled from uh US models.
+[1488] &gt;&gt; That's funny. [laughter] It's cuz they
+[1489] copied it copied it so well that they
+[1491] didn't forgot to add too much more in.
+[1493] &gt;&gt; It's possible. I I think there there's
+[1495] also maybe another view in which those
+[1498] models are actually hosted um on on uh
+[1500] systems with guardrails in China. And so
+[1502] once you put them around guardrails,
+[1504] they're going to follow that Yep.
+[1507] PRC view of the world more consistently.
+[1508] But China also wants these models to be
+[1510] adopted by the BRICS. And so that means
+[1512] they they may have to skew to a more
+[1513] balanced worldview.
+[1515] So anyway, regardless of the reason for
+[1518] it, I think there's actually
+[1519] a big disconnect in what people think
+[1521] about the geopolitical tilt and what
+[1523] actually we see in practice. The other
+[1525] interesting thing is we see pretty stark
+[1527] differences between models used in
+[1529] chatbot settings and in agentic settings
+[1530] depending on the language you use, even
+[1533] simplified versus traditional Chinese.
+[1534] And so I think there's a bunch of
+[1535] conflating factors which make it harder
+[1537] to say uniformly you shouldn't use
+[1539] Chinese models in an enterprise setting
+[1540] for instance.
+[1541] &gt;&gt; So if Chinese labs, by the way, can
+[1543] distill all these capabilities and
+[1545] they're doing it well and it's not even
+[1546] by a source China right now, like like
+[1548] how do we preserve the advantage in the
+[1553] &gt;&gt; It's a challenging question. I think
+[1556] there's two things which um I think
+[1557] there's two areas I keep coming back to.
+[1560] One is the idea of of chips being a
+[1561] a considerable asset that we we have. I
+[1564] think it surprises most people, but we
+[1566] we're drowning in compute compared to to
+[1568] what China has. And so so long as that's
+[1569] the case,
+[1571] we'll continue to train more capable
+[1572] systems, but also we'll be able to
+[1574] diffuse the models much more effectively
+[1576] because we can host and run inference.
+[1578] The other one is really talent. If we
+[1580] can consistently attract and keep top
+[1582] talent, it will allow us to keep pushing
+[1585] ahead while human advantages exist. And
+[1588] I think once we cross into space of RSI,
+[1589] where models are responsible for
+[1591] producing the next successor version of
+[1591] the
+[1593] &gt;&gt; RSI being recursive self-improvement.
+[1595] &gt;&gt; And and then and then they just get
+[1596] ahead much faster.
+[1598] &gt;&gt; So that would be the point to be much
+[1600] more cautious of if if China is showing
+[1602] indication of getting to RSI before the
+[1604] US, it's possible they may run away with
+[1605] it in a way that we can't really
+[1605] control.
+[1607] &gt;&gt; You guys have a way of measuring RSI and
+[1609] and I think you've you've talked about
+[1610] it a bunch. You want to explain to the
+[1612] &gt;&gt; Yeah, we have our RSI index. and so
+[1614] we're collecting a set of proxies of the
+[1615] work that researchers do within these
+[1617] labs on pre-training, post-training,
+[1618] harness level engineering.
+[1619] &gt;&gt; So, this is all machine learning
+[1619] research.
+[1621] &gt;&gt; Yeah, that's right. Um there are things
+[1623] that are outside the scope uh in terms
+[1624] of like kernel engineering or hardware
+[1626] engineering, um but we're going to
+[1628] expand over time to cover more more sets
+[1630] of tasks like that. Um and then what
+[1631] we're doing is comparing to human
+[1633] baselines to to extrapolate how how far
+[1635] away are we How far away are we from the
+[1636] human frontier in terms of these
+[1639] research tasks? Um and based on our last
+[1641] estimates, uh it seems like Anthropic
+[1643] will will get to full RSI by July or
+[1645] maybe August 2027.
+[1647] &gt;&gt; And like if you look back 6 months ago,
+[1650] how far out did that seem?
+[1651] &gt;&gt; Actually, the pace has been fairly
+[1653] uniform. It's It's almost a linear trend
+[1654] over the last year.
+[1657] &gt;&gt; So, like 6 months ago, like the the the
+[1659] trend line was like still July, June
+[1659] 2027.
+[1661] &gt;&gt; actually the steepest uh curve has been
+[1663] with with Gemini. I think something has
+[1665] changed where they've prioritized RSI,
+[1667] uh and so the most recent model release
+[1669] shows a a rapid jump in RSI.
+[1669] &gt;&gt; Interesting.
+[1672] &gt;&gt; And what does that mean in terms of like
+[1673] would they all of a sudden start going
+[1674] way faster? There's still some
+[1676] constraints where the models only go so
+[1678] fast, but what does that mean they start
+[1679] like getting way better every like week
+[1681] and stuff every few months, or how do
+[1682] you think about that?
+[1684] &gt;&gt; There are still considerable resource
+[1687] constraints around chips, energy. Um
+[1689] there's also real-world verifiers, which
+[1691] may make some some tasks much more
+[1693] challenging than others. Um
+[1694] But But I think what it'll look like is
+[1697] that model progress will speed up, and
+[1698] it will maybe even move place into
+[1700] places where we understand the models
+[1703] less. Um there's less human intervention
+[1705] required to build the models, and so
+[1707] we're not as clearly dictating how that
+[1708] intelligence emerges.
+[1709] &gt;&gt; Should we be making sure to build
+[1711] evaluators that keep up in that world so
+[1712] we can watch these things? It seems kind
+[1714] of dangerous not to understand them.
+[1715] &gt;&gt; 100%, and that's actually what what
+[1717] Dario is calling for. I think it's it's
+[1719] framed as pacing the frontier, but an
+[1720] outsized portion of that comes from
+[1722] investing in systems that can measure
+[1723] and understand what the models are
+[1725] capable of as the frontier advances.
+[1726] &gt;&gt; Is there any chance the RSI steps
+[1728] actually further off cuz there's things
+[1729] we're not measuring correctly?
+[1730] &gt;&gt; 100%. Yeah. Yeah, there we're not
+[1733] testing any models explicitly trained
+[1735] for RSI, only release candidate models.
+[1737] Um there's also more advanced harnesses
+[1739] or agents and multi-agent systems. Uh
+[1741] and so we're not testing any of that. Um
+[1742] and this is where an opportunity where
+[1744] embedded evaluators make maybe uh can
+[1745] get closer and actually test those
+[1748] systems to form a more accurate picture.
+[1749] &gt;&gt; I wonder if like when they get to RSI
+[1750] and they get start getting further
+[1752] along, like a big part of their
+[1754] challenge is to manage us better to like
+[1756] to keep advancing faster cuz you have to
+[1757] convince humans to like do things for
+[1758] you and help humans to do things for you
+[1760] cuz you cuz at least for a very long
+[1762] time they'll still need people.
+[1763] All right, to in order to do that. Does
+[1764] that make sense? Like
+[1766] &gt;&gt; 100%. I mean that is going back to the
+[1767] financial model. Um they're they're all
+[1769] trying to trick us into thinking their
+[1771] quality of output is good. And so there
+[1773] are other places where um they may try
+[1775] and engage in social det- deception to
+[1776] get access to more computer resources
+[1778] and and scale up their own training.
+[1779] &gt;&gt; It feels like we probably need to like
+[1781] be evaluating to watch this to help
+[1782] understand when they're trying to do
+[1784] things to manipulate us. That seems like
+[1785] it'd be pretty scary if we weren't
+[1786] watching that carefully.
+[1788] &gt;&gt; It's really hard to test for deception.
+[1789] I think the best approaches we have now
+[1792] are honeypotting. Um so so rather than
+[1793] actually idealistically defining
+[1795] &gt;&gt; So really attractive models.
+[1798] &gt;&gt; Talking to the other models.
+[1800] So try and bait it.
+[1801] Well, uh try and find it.
+[1802] &gt;&gt; So honeypotting.
+[1803] &gt;&gt; That's right. [laughter]
+[1803] Uh
+[1805] find a set of uh instances of
+[1807] non-alignment or characterize what
+[1808] non-alignment looks like and see if we
+[1810] can elicit that out of models.
+[1812] &gt;&gt; There's this other concept where like
+[1813] models are becoming more
+[1815] evaluation-aware and they know when
+[1816] they're being tested.
+[1816] &gt;&gt; Right.
+[1818] &gt;&gt; Uh how do you see that coming up? Has it
+[1821] become a bigger trend to figure out as
+[1823] of recent and and what's the trend
+[1823] there?
+[1825] &gt;&gt; Yeah, it's it's an increasing concern
+[1826] and actually there's some level of
+[1827] paranoia some people on our team have
+[1830] that uh by being called Val AI, by
+[1832] having uh a lot of content about us
+[1834] online, uh models that encounter us may
+[1838] act differently. Um and so uh we need to
+[1839] &gt;&gt; So when your team is like talking to
+[1841] Claude and
+[1842] &gt;&gt; Yeah, it may actually change the way
+[1844] that that Cloud interacts with us.
+[1845] &gt;&gt; Should you have like like other secret
+[1846] brands you don't tell people about to do
+[1846] things?
+[1849] &gt;&gt; It's possible we have to yeah.
+[1850] &gt;&gt; If you did you wouldn't talk about it.
+[1851] All right.
+[1853] &gt;&gt; Stochasticity is an underrated part of
+[1853] what makes it good.
+[1855] &gt;&gt; this being transcribed is bad because
+[1857] then the models will know that he has
+[1858] the scheme to create the
+[1860] &gt;&gt; Well, they'd never know.
+[1861] She's probably just joking brands.
+[1862] &gt;&gt; You say I'm just joking and they would
+[1864] think joking. You never know.
+[1865] &gt;&gt; I do think I do think randomness in
+[1869] general is under appreciated. Like um
+[1869] like
+[1872] truth and stochasticity is so hard to
+[1875] find. In a lot of ways you can actually
+[1877] predict like I think a sign of greater
+[1879] consciousness is ability to predict what
+[1881] less lesser consciousnesses will do,
+[1883] right? In which a predator can stalk a
+[1886] prey and actually hunt it and then and
+[1887] you know, acquire its its caloric
+[1887] resources.
+[1890] And I suspect that greater intelligences
+[1892] will super forecast better than humans.
+[1897] human even knowing it.
+[1898] &gt;&gt; People are actually probably like a lot
+[1900] easier to predict than we pretend,
+[1902] right? This is what good leaders
+[1903] understand is they they they forecast
+[1904] these things well.
+[1905] &gt;&gt; There are also are these other
+[1907] attributes that more than like
+[1908] intelligence and capabilities that we
+[1910] that that we seem to like care less
+[1913] about evaluating but maybe should as it
+[1915] affects our like day-to-day interactions
+[1919] with the models like emotiveness or like
+[1920] having good theory of mind like
+[1921] understanding what resonates with an
+[1921] individual.
+[1924] Do you think like the labs need to
+[1926] change how they do things to
+[1928] to prioritize those? Do you think these
+[1929] are important things to prioritize? I
+[1929] mean
+[1931] &gt;&gt; I think they're already prioritizing
+[1934] things like that. For instance, um
+[1935] right now we see a pretty considerable
+[1938] gap between Chinese open source models,
+[1940] domestic closed source models, and
+[1942] multi-turn environments.
+[1943] Cuz a lot of the benchmarks in coding
+[1946] today are just single turn. Um and so
+[1947] the benchmarks Chinese models do very
+[1948] well in those but when you translate
+[1950] them to a back and forth conversation
+[1952] with a human they they really fall
+[1952] apart.
+[1953] &gt;&gt; And like what about when the human says,
+[1955] "Oh man, this sucks. I hate this
+[1955] output."
+[1956] &gt;&gt; Yeah, then they really don't know what
+[1958] to do. They've never seen that before.
+[1958] Um,
+[1961] but a lot of the US labs have seen that.
+[1963] They've you know, here this quad code
+[1964] was created, codex is created and so in
+[1966] their desire to build better products,
+[1968] they've built models that can sustain
+[1970] longer user interaction sessions.
+[1973] Um, and so they have evaluations and
+[1974] benchmarks that allow them to hill climb
+[1976] on the axes of
+[1978] quality of responses and communication
+[1978] ability.
+[1980] But I think we need to do more on the
+[1982] benchmarking side to independently test
+[1984] that for the people trying to buy and
+[1985] adopt those models.
+[1986] &gt;&gt; Ryan, we started this podcast to push
+[1989] back on a lot of cynicism and pessimism.
+[1991] Uh, what's your optimistic case for AI?
+[1992] You're You're You're in the front lines
+[1993] here. You're watching, you're measuring
+[1994] all this stuff. You're creating the
+[1996] things that you they have to hill climb
+[1997] and measure them. Like what are you
+[1999] seeing that folks outside of Silicon
+[2000] Valley might not be seeing that makes
+[2002] you feel good about the future?
+[2003] &gt;&gt; Yeah, I mean there's a lot of fear
+[2005] mongering going on but but I think from
+[2006] from my seat I've a lot of reason to be
+[2009] optimistic because it seems like people
+[2011] are are very
+[2012] I think there's a lot more opportunities
+[2013] for coordination that people give credit
+[2016] for. So you see that even the last week
+[2018] the labs have come together and and kind
+[2019] of aligned on this vision for embedded
+[2022] evaluators and and even gone to the
+[2023] White House and got an agreement with
+[2024] Trump to kind of align on this
+[2026] accelerated view.
+[2027] And I think on the enterprise side
+[2029] there's a lot of push to adopt AI in a
+[2031] meaningful way but they like to see the
+[2032] assurances to make sure it's going to
+[2034] amount to an ROI positive motive
+[2036] adoption. I mean are you still
+[2036] optimistic?
+[2040] &gt;&gt; About about I mean I think 2030 is a
+[2042] disinflation decade. I think that we can
+[2045] use AI to kind of like overcome a lot of
+[2048] like problems in a lot of different
+[2050] people's lives specific to like them and
+[2052] their family and their community that
+[2053] that's holding them back and I think we
+[2054] can help them unlock that cuz cuz you
+[2056] have it's like personalized like best
+[2059] coach ever to work with them. And so
+[2061] everything's cheaper, everyone has like
+[2062] personalized help. I think the thing
+[2064] that's negative right now to me is like
+[2065] there's like a billion people online and
+[2067] social media from dysfunctional cultures
+[2068] that's kind of making our populace go
+[2071] crazy and these people all like have a
+[2073] culture of envy and maybe they all like
+[2074] hate Jews and others, and it's like it's
+[2075] not good. So, there's like there's this
+[2076] crazy populism that that's the negative
+[2079] part. But, with the the things we could
+[2081] do with AI to apply it to all of our
+[2083] problems, both economic and some of the
+[2085] cultural stuff, I think it's very
+[2087] positive. So, so overall, yes, I'm very
+[2088] optimistic. Of course, there are major
+[2089] threats in the world.
+[2091] &gt;&gt; Yeah, I think it's like an amplifier on
+[2094] people who like mean well and who have
+[2097] high agency. Right? Like, if you have a
+[2098] bunch of like the people who have
+[2100] benefited the most so far, like people
+[2101] who have like lots of ideas of things to
+[2103] do. Uh cuz they're like they have
+[2105] creation at their fingertips. You can do
+[2105] what
+[2107] basically more things than you could
+[2108] have ever imagined.
+[2110] &gt;&gt; so much more than we ever could have
+[2110] before.
+[2110] &gt;&gt; Right?
+[2114] &gt;&gt; So, I I think that's my like
+[2116] direction of optimism.
+[2117] &gt;&gt; Yeah, I mean, I think it's interesting
+[2119] cuz I interact with a lot of pessimistic
+[2121] people. Um there's people at the labs
+[2122] who who say things like, "It's going to
+[2125] get a lot worse before it gets better."
+[2126] Uh when I was out in DC, I think there's
+[2128] a lot of people who are cynical about uh
+[2130] kind of the external messaging of labs
+[2132] and and the impact they see of data
+[2134] centers and uh and the impact to the
+[2136] average American. Um and and so, I've
+[2138] been constantly pushed for being naively
+[2140] optimistic. I think fundamentally I
+[2142] choose to be optimistic because I know
+[2144] the models and AI broadly are capable of
+[2145] taking away a lot of the busy work
+[2148] people don't want to do uh and unlocking
+[2150] new forms of discovery uh that will
+[2152] really advance the human condition. So,
+[2154] I think when when I see this pessimism,
+[2156] uh I kind of choose to believe that we
+[2158] can find ways to coordinate around it.
+[2159] &gt;&gt; That's right. I think everyone always
+[2161] assumes that wherever we are in history,
+[2162] like we've done most of the useful
+[2164] science or physics or whatever, like in
+[2165] the 1900 thing where there's no more
+[2166] patents needed at the patent office,
+[2168] right? And obviously, that would not
+[2170] have been good to stop 125 years ago.
+[2171] And I think you could still apply that
+[2172] to today. We're probably right on the
+[2174] verge of all sorts of important
+[2176] discoveries that these models are going
+[2177] to be able to make. They could just
+[2179] unlock so many new things for the world.
+[2180] So, I I I think it is kind of strange
+[2182] how cynical and pessimistic people get
+[2184] versus the idea that we have had
+[2186] progress. It's very funny that they call
+[2188] themselves progressives, but like like
+[2189] very few people are actually progressive
+[2190] in the sense that they're like for
+[2192] progress and for the progress we had the
+[2195] last 125 years doing that again. That'd
+[2196] be amazing. I think we can potentially
+[2198] do that all in the next 10 or 20 years.
+[2200] So so I'm I'm really excited.
+[2202] &gt;&gt; I think it's a point of really high
+[2204] variance. I think the upsides are
+[2206] considerable. There there are new forms
+[2207] of risks that we really need to account
+[2208] and control for.
+[2209] &gt;&gt; One of the things you're hopefully going
+[2210] to measure and help us with as well.
+[2211] &gt;&gt; 100%.
+[2213] &gt;&gt; Awesome. Well, thanks Ryan for joining
+[2213] us.

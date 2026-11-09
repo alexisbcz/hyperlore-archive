@@ -1,0 +1,1086 @@
+[0] AutoGBT was like the first hyped agent
+[2] framework. It was going super viral on
+[4] GitHub and on Twitter. I made a front
+[5] end because I realized people wanted a
+[7] way to use it without needing to know
+[8] what GitHub was or how to deploy
+[9] something locally. And then I would get
+[11] angry DMs like every day because the
+[13] agent wasn't delivering.
+[13] >> And what was your insight that like made
+[15] you realize the autog wasn't working.
+[17] >> There was no answer. So I had to kind of
+[19] build an answer as an alternative.
+[20] >> Many steps back. How did you get up into
+[21] startups in the first place?
+[22] >> So I quit Microsoft to just explore. I'm
+[24] just going to for a year just take a
+[26] chance to build stuff and and see what
+[28] happens. When I was visiting the US like
+[30] a couple months after that, they asked
+[31] like, "Where do you work? Where are you
+[32] living? What do you do?" Ultimately,
+[34] they turned me around at the border,
+[35] which is like called an expedited
+[36] removal, and I was banned for 5 years
+[38] from the United States. Max, welcome to
+[41] the podcast.
+[41] >> Thanks for having me.
+[42] >> This is going to be exciting. You're the
+[43] founder of Gum Loop and Gumloop has some
+[46] really interesting stats around you guys
+[49] have went from zero to series A with two
+[53] people and you've built an AI
+[55] automations platform that like can be
+[58] used by anyone but also happens to be
+[60] used by like the biggest companies in
+[62] the world and I think it'll be really
+[64] interesting to talk about how you guys
+[65] went from like you know YC startup to
+[70] probably one of the main like AI
+[71] automation tools in the space right So,
+[73] I'm excited.
+[74] >> Sweet. I'm excited.
+[75] >> Let's start kind of like five months
+[77] before your YC batch kicked off, right?
+[79] You guys got into the program and you
+[81] had just finished building the front end
+[84] for one of like the first, you know,
+[86] attempts at like AGI basically, right?
+[89] >> Yeah. So, AutoGBT was like the first
+[92] hyped agent framework. Um, it was going
+[95] super viral on GitHub and on Twitter. It
+[97] was the first like promise of AI
+[99] actually doing work for you because it
+[100] was basically the GPT API on a loop and
+[103] it would give itself goals and give you
+[104] the illusion that it was thinking kind
+[106] of like reasoning agents do right now,
+[107] but it was all a little fake. Uh I made
+[110] a front end front end for it because I
+[112] realized people wanted a way to use it
+[114] without needing to know what GitHub was
+[115] or how to deploy something locally. And
+[117] then I would get angry DMs like every
+[119] day. Uh not because my front end sucked
+[120] but because the agent wasn't delivering.
+[122] So, I realized like if I just give them
+[124] a way to actually get their job done
+[125] without needing to cross their fingers
+[127] and hope the agent did it right, um I
+[129] would actually solve a problem. And Gun
+[130] Loop was kind of born out of that.
+[132] >> And what was your insight that like made
+[133] you realize the autog wasn't working.
+[136] >> I couldn't explain to users how to fix
+[138] it because there was no way there. They
+[140] prompted it with something pretty basic
+[142] and to explain why the agent fell over
+[144] and confused itself and Googled itself
+[145] 80 times and charged them $40 was really
+[148] difficult. Like you actually just there
+[149] was no answer. So I had to kind of build
+[151] an answer as an alternative being like
+[152] if the agent's not working try this.
+[154] >> Interesting. What was so different about
+[155] your solution that worked?
+[157] >> It was just deterministic. Basically
+[159] like the the insight we had was AI
+[161] doesn't have to be involved in every
+[162] step of the way. A lot of the the
+[164] actions are really deterministic like
+[166] editing a notion table and deleting a
+[168] file from Google Drive. Um and you only
+[170] need AI at certain kind of key decision
+[172] moments when you like categorize
+[173] something or generate text. So if you
+[175] kind of don't rely on AI for everything,
+[177] you get something really reliable that
+[178] is also magical because AI is doing
+[180] something.
+[180] >> And that's interesting because it's like
+[181] you've taken the from a developer
+[183] experience like the coolest parts of
+[184] stage hand from browser base which I
+[186] started playing around with a while ago
+[187] and you've turned it into a product that
+[188] like people can use without necessarily
+[191] knowing how to code.
+[192] >> Yeah, ideally a lot of our customers
+[193] have never coded before. Um, but uh the
+[197] gum loop is the approachable tool that
+[199] they are not only like excited or not
+[201] only like able to use but excited to use
+[203] because the the UX and UI is supposed to
+[204] be very pleasant and it's a tool they
+[206] want to spend time in and build things
+[207] on.
+[208] >> And I want to talk about like you know
+[209] how you went from YC to getting your
+[211] first actual like proper customers. But
+[213] you mentioned it's like the um what was
+[215] the word you use approachable like tool.
+[217] How did you come up with the name Gum
+[218] Loop? So, we were called AgentHub uh
+[221] during YC,
+[221] >> which is like what most AI agents are
+[224] usually named after.
+[225] >> Yeah. Uh so, I thought we were going to
+[226] be GitHub for agents originally. That
+[228] was like the autog concept. Um I thought
+[231] I would host all these agents and then
+[232] and then you could like fork someone
+[233] else's agent and we could lease them out
+[235] and cool concept. It's contingent on the
+[237] fact that agents are useful, which they
+[239] weren't at the time. So, like the idea
+[240] was terrible. So, we were building
+[242] workflows, but people thought we were
+[244] building agents because of our name. Uh
+[245] which is very confusing. And then um it
+[248] also sounded like I was saying AsianHub,
+[250] which is like a not a great website you
+[252] want to Google. Uh so that confusion was
+[255] actually like a huge motivating factor
+[256] for switching the name up.
+[258] >> Got it. That makes sense. And when it
+[260] actually comes to like deciding on like
+[262] Gum before we filmed the podcast, I was
+[264] telling you how the first time I saw Gum
+[266] Loop, I thought it was associated with
+[267] like Gumroad.
+[267] >> I took every one word like single
+[270] syllable word that I liked um and then I
+[273] paired them together. So if you like a
+[275] single syllable word with a do is
+[276] impossible to get. But if you take two
+[278] of them stitched together and it's not
+[279] something notable, those are pretty easy
+[281] to get. So gum is sticky and we're
+[283] connecting a bunch of your data which
+[284] felt like the right direction. And then
+[286] you can loop over data which is one of
+[287] the main features of the platform. So
+[289] gum loop made sense.
+[291] >> Uh and the.com was like 100 bucks. So
+[293] >> great
+[294] >> nob brainer.
+[294] >> So how did you now you have the brand
+[296] you have like a new direction after you
+[297] went through YC. How did you get your
+[299] first customers?
+[299] >> It was all Twitter basically.
+[301] >> What kind of like DMs?
+[303] >> Uh no. So I would uh I basically got
+[306] just really good at taking a use case um
+[309] that was motivated by talking to
+[310] customers. So I did 1100 customer calls
+[312] in in that year which was like top 1% of
+[315] cal.com users. I don't think they I
+[317] think that I was actually like top 0.1%
+[319] but they don't give that stat. Uh and I
+[322] was basically like farming ideas by
+[324] talking to customers all day. So they
+[325] would come to me with I wish I could
+[326] automate X Y or Z. We'd build it live on
+[328] the call and then I would take a version
+[330] of that, get their consent obviously
+[332] with for the use case to like post about
+[334] it and then I would make a really short
+[335] form post that encapsulated the entire
+[337] idea um but in like the Twitter
+[339] character limit with a really short form
+[341] GIF so people's attention was kind of
+[342] captured and they most of the posts went
+[344] viral during that period.
+[345] >> Wait, before we talk about the posts,
+[347] you talked to,00 customers.
+[349] >> Mhm.
+[350] >> How did you convince that many people to
+[351] get on the phone with you?
+[352] >> Uh I just had a my calendar link on the
+[354] website. So like the more it started
+[356] small but the more I would post the more
+[357] people would come inbound the more demos
+[359] I would book. So some days I had like
+[360] nine hours back toback of demos.
+[362] >> And how long is each each call like 10
+[363] minutes?
+[364] >> It would change like 15 to 30.
+[366] >> Damn.
+[366] >> Yeah.
+[368] >> Yeah.
+[368] >> Usually when people are saying, "Oh, I
+[370] outbounded a thousand people." It's like
+[371] five minute phone call. They said, "Hey,
+[372] yes, I'm not interested in."
+[373] >> No, I didn't do any outbound. It was all
+[375] inbound. So they they would book on my
+[377] calendar and then uh I would like you
+[379] can I mean I could introduce you to a
+[381] thousand people who are on that call
+[382] where I'm just like in a wei work being
+[383] me like what do you want to automate and
+[384] then I'd share my screen we'd build it
+[385] together.
+[386] >> Oh you'd build it with them on the on
+[387] the call.
+[387] >> Ideally by the end of the call I would
+[390] because the product back then was so
+[391] hard to use because it was just early.
+[393] Um I had to kind of like get the wheels
+[395] moving. Uh so on the call I would share
+[397] my screen we'd start building it and
+[398] then I would send them the workflow at
+[399] the end of the call. Um and that kind of
+[401] planted the seed at like customers like
+[402] Instacart and uh yeah it kind of like
+[406] our entire list of customers right now
+[407] was born that way generally.
+[408] >> What are like the public customers that
+[410] you can talk about?
+[410] >> Um like all of Shopify uses us. Um Door
+[413] Dash uses us. Uh Gusto Ramp um Samsara
+[419] >> and they found you from your tweets.
+[421] >> Yeah. I I cross on LinkedIn too. So
+[424] oftentimes it would be like, "Oh, our
+[426] CEO sent me your tweet and asked me to
+[428] like ask about it or to book a call with
+[430] you or I saw this on LinkedIn and
+[432] someone shared it in our company Slack
+[433] and then they started talking about it."
+[435] >> So do you get more actual paying
+[437] outbound or inbound from LinkedIn or
+[439] from Twitter?
+[440] >> It's hard to tell. Sometimes people
+[441] forget where they heard about us from.
+[442] >> This is so true and this is so annoying.
+[444] But um I think what's really interesting
+[446] is you've figured out this format that
+[448] works across both platforms and you just
+[451] continued doing it for how long? I think
+[453] my I had kind of a heyday where my
+[455] format really worked. Like every post
+[457] would go viral. Um that was probably
+[459] like six months.
+[460] >> What's viral? Like how many people
+[462] >> between like 300,000 views and a million
+[464] views on every post
+[465] >> of 500,000 views is like an average. How
+[468] many calls can you expect to book from
+[469] that?
+[469] >> I started qualifying a lot harder as I
+[471] got bigger. Uh but I don't know
+[474] hundreds.
+[474] >> Hundreds.
+[475] >> Yeah.
+[475] >> With qualif like qualified.
+[477] >> Yeah.
+[477] >> Oh wow. and you're able to convert them
+[479] into paying customers on the call or do
+[480] you give them a free account that then
+[482] has some usage limit?
+[483] >> Uh it was we we've experimented with a
+[486] bunch of different approaches. Some
+[487] customers were like I'm already paying.
+[488] I just wanted your help with this uh
+[490] because I I got started with the use
+[492] case because it was self-s serve. Some
+[493] customers would take a lot more effort
+[495] to get through the door. Some customers
+[497] like at the time couldn't use us because
+[498] we weren't sock 2 compliant or GDPR
+[500] compliant. Now we are. Um so it was kind
+[503] of just a like hand to hand combat on
+[505] every call just like trying to figure
+[506] out if they could be customers.
+[507] Interesting. And it was still self-s
+[509] serve at this point it was free or was
+[510] like
+[510] >> No, you could uh sign up for I think the
+[512] tiers were like $100 a month and $300 a
+[514] month.
+[515] >> Yeah.
+[516] >> And how did you then go or at what stage
+[518] were you at when you were able to go and
+[520] raise proper funding after YC?
+[522] >> Uh we raised
+[524] uh I guess one fun fact is like a lot of
+[527] YC companies raised before demo day. Um,
+[530] so like I think the standard mantra or
+[533] like the standard information or context
+[535] people have is on demo day you you demo
+[537] and then people invest. Um, but the best
+[539] VCs are actually like pinging you months
+[541] in advance trying to get calls weeks
+[544] before demo day. Um, so a lot of the
+[546] companies have fully closed their rounds
+[547] by demo day. So we raised like a week
+[549] and a half before demo day I think. Um,
+[551] it took like three days.
+[553] >> Oh wow.
+[553] >> Who came in?
+[554] >> Uh, first round capital.
+[555] >> Nice. Very cool.
+[556] >> Yeah, they're great. And then what was
+[557] the space between that like seed round
+[559] out of YC and your series A?
+[560] >> Uh I think that was like five months.
+[562] >> And so you were still at two two people
+[564] on the team, just your co-founder and
+[565] you.
+[565] >> We had two interns as well.
+[567] >> And two interns.
+[567] >> Yeah.
+[568] >> Five people after or five months after
+[570] YC.
+[571] >> Yeah. We were uh we were like rock
+[573] climbing basically. And uh we got a call
+[575] from one of the investors who's been
+[577] like flying to Vancouver a lot. Uh and
+[579] he was just like he preempted around
+[581] basically. We weren't at series A
+[582] metrics back then, but he just took a
+[584] super early bet on us. And I think that
+[586] gave us a lot of the momentum to kind of
+[588] like launch us forward in uh this like
+[590] timeline of growth.
+[591] >> Why so? Why do you think that him
+[592] preempting gave you momentum?
+[594] >> I I think a lot of building a company is
+[596] like the credibility that you have. Like
+[598] why you over someone else?
+[599] >> I have $24 million.
+[601] >> Yeah. Like we're not going anywhere.
+[602] That's another big question that
+[603] customers will ask you when you're
+[604] really early. They're like, "How much
+[605] have you raised to make sure that if we
+[607] invest our time in this platform, it's
+[609] not just going to disappear in two
+[610] weeks." Uh so that was like a good
+[612] amount. It was like a vote of confidence
+[613] from the market that we
+[614] >> because you had all this money in your
+[615] bank.
+[616] >> Yeah.
+[616] >> I see. And so when you now think about
+[618] like what it was like to go from people
+[620] are using us, Twitter's working, we have
+[622] a growth engine, we have some revenue,
+[624] we have funding. How does that turn
+[626] into, you know, some of the biggest
+[627] companies in the world use us?
+[629] >> Uh the first big company to start using
+[631] us was Instacart. Um and there was a guy
+[634] there, Luis, who just started using us.
+[636] He works at Gum Loop now, actually. So
+[638] >> he works at Gum Loop. Oh, amazing.
+[640] >> I guess that's part of the the lore. But
+[641] uh he started using every automation
+[644] tool cuz he had just he was the guy like
+[646] teaching everyone internally how to use
+[647] AI like what cursor was what all these
+[649] AI tools were. Um and then he booked a
+[652] demo with us. I thought Instacart was
+[653] like too big at that point. I'm like no
+[655] way they use us. Um but then he he
+[657] started like teaching everyone
+[658] internally how to use the tool. They got
+[660] excited about it. It just kind of spread
+[661] naturally. And then he ended up joining
+[663] Gum Loop as one of our first hires. Um
+[666] and then kept that support up just from
+[668] our side. So like he was helping them on
+[669] board exploring the use cases and their
+[672] usage just kind of grew like laterally
+[674] across the company.
+[675] >> So interesting. It's like one day
+[675] there's this guy in your Slack saying,
+[677] "Hey, we should all use this tool." And
+[678] then a month later he's like, "Bye guys,
+[680] I'm going to work at the tool."
+[681] >> Yeah, it was more than a one month, but
+[682] yeah.
+[683] >> What was that story? How'd you convince
+[684] him to join? Did you know early on that
+[686] you wanted him to like join the team?
+[687] >> Um I knew I did, but I I would never
+[690] want to steal a customer of course or
+[692] like an employee from a customer, but he
+[694] wanted to leave to do his own thing. So
+[696] like there was a lucky kind of overlap
+[698] where we were looking for people to
+[699] join. We knew each other well. He left
+[701] Instacart and then he joined the team
+[703] like a couple weeks after that.
+[704] >> Awesome. That makes sense.
+[705] >> Yeah. That's happened three times now
+[707] actually.
+[707] >> Three times. How big is the team now?
+[709] >> Uh we're 15 now.
+[710] >> Have you ever run a like a a company
+[712] that's like
+[712] >> No.
+[713] >> has employees before?
+[714] >> No. No.
+[714] >> So what was that like? Cuz now you're
+[715] now you've got a lot of employees or
+[716] you've got real employees. You've got
+[718] real big companies.
+[720] >> Yeah. Uh it all just kind of creeps up
+[722] on you and then you're like, "Oh crap."
+[723] like people actually depend on my
+[725] decisions and stuff, but uh it as long
+[728] as it doesn't all happen at once, like
+[729] it's pretty gradual. You get used to it
+[731] over time. I think like as long as you
+[733] build a good team around you, like I'm
+[734] not the only decision maker in the room.
+[735] I'm not like I don't think I could uh
+[738] I'm not like a loadbearing piece as much
+[740] anymore. I think like the team around me
+[741] is actually exceptional and uh we're
+[743] more of just like a group collective.
+[745] >> So, what was it like for you to make
+[746] those first hires?
+[748] >> Really? uh fun because I hire people
+[750] that I like spending time with. So, it's
+[753] like a culture fit almost like as a
+[755] first criteria. Like I have to like
+[756] spending I could spend 10 hours with you
+[758] and not get annoyed. Like that's what
+[760] the first criteria and then making sure
+[762] they're exceptional. It's something that
+[763] we need. Um but when you find the right
+[765] person, it's it's like almost like
+[767] dating. When you're like, you know, when
+[768] you know, you know, you get that feeling
+[770] and then you give an offer and having
+[771] money in the bank to be able to give a
+[773] good offer and like get someone on the
+[774] team is is really fun.
+[775] >> That makes sense. Can you talk about
+[777] some of the first people you hired like
+[778] what their skill sets were?
+[779] >> Um, first hire was my co-founder's old
+[783] co-founder.
+[784] >> Okay.
+[785] >> So, uh,
+[785] >> that's a good sign.
+[786] >> Yeah. Uh, he he was at Amazon working on
+[789] like their infrastructure for AWS and he
+[791] joined us as our founding engineer. Luis
+[793] joined after that. Um, kind of as a
+[796] generalist. We didn't really have a role
+[797] speced out. Uh, I just knew he was
+[799] really good at everything. So, he's been
+[802] leading a lot of like our customer
+[803] success and our sales processes. He's
+[806] the one who like flies to customers and
+[807] sits in their office and helps them on
+[809] board and um teaches them how to roll
+[810] out AI across their entire company.
+[813] Our next hire after that was
+[816] um Aaron. He's our head of education. So
+[819] he was at Webflow.
+[820] >> You hired a head of educ head of
+[822] education pretty early.
+[823] >> Yeah. Uh it was just the right time like
+[825] I mean the right fit. Maybe not the
+[826] right time but it was like absolutely
+[828] this was the guy to do it. He had made a
+[830] Zap year course before. He um did
+[832] education at Air Table before and then
+[834] he did education at Webflow and then he
+[836] was a power user of Gum Loop at Webflow.
+[838] So he DM'd us being like I have all this
+[840] feedback. I have all these feature
+[841] requests. Um he we shipped all the
+[843] feature requests that he had and then I
+[845] flew to New York. We got lunch. He ended
+[847] up joining like two weeks after that.
+[848] >> That's sweet. Are you pitching them at
+[850] these dinners or these lunches?
+[851] >> Subtly.
+[852] >> Subtly. So, you know, in your head,
+[853] you're like, "This this is what
+[855] >> I'm actually just trying to like immerse
+[856] myself in spending time with them to
+[858] figure out if I like it or not and if
+[860] we're a good fit because I've done this
+[862] many time where times where I'll like
+[863] fly to someone like we don't really
+[865] click as well or I'm not like this is
+[867] the person." Um, so we don't extend it
+[869] enough.
+[869] >> Do you have like a set of questions that
+[870] you're asking these people?
+[871] >> No, it's always like really just vibes
+[874] based
+[874] >> like what like tell me about your life
+[876] >> kind of like we'll have a long like
+[877] couple hour dinner. We'll like hang out.
+[879] Uh it's kind of like when when you're
+[880] evaluating a friend, you're not like
+[881] asking them a series of questions.
+[883] You're just spending time with them and
+[884] seeing how you feel.
+[885] >> Evaluating a friend. Oh, like when
+[886] you're
+[887] >> if you were gonna meet a friend, like
+[888] some like a friend of a friend, you
+[889] know?
+[890] >> Oh, it's not like, "Hey, you need to
+[891] meet this person." You're like, "Okay."
+[893] >> Yeah. There's no there's no science to
+[894] it. I think it's just an art.
+[896] >> Do you feel like you got anything wrong
+[897] about hiring?
+[898] >> No.
+[899] >> Really?
+[900] >> Yeah. Uh
+[901] >> a fast no.
+[902] >> Yeah. I mean, I think if I had if I had
+[904] any doubt, then I would have I should
+[905] have let go of that person or like not
+[908] had them on the team. Um, maybe like I
+[910] guess mistakes we've made are we've done
+[912] so many work trials because we we're
+[913] like insistent on bringing people in for
+[915] two days and experiencing what it's like
+[916] to work together.
+[917] >> That's what Cursor does too, right? They
+[918] do a two-day work trial.
+[919] >> Yeah, that's I think that's the way like
+[920] that's the best way to evaluate if
+[922] they're good technically and also if you
+[924] like spending time with them.
+[926] >> Um, we've done a lot of those. Maybe we
+[927] could have skipped a couple, but they're
+[929] all like they had a chance of working so
+[931] might as well. And so you're saying you
+[932] should have skipped it because you knew
+[934] they were good enough to join or because
+[935] it was like probably not going to work
+[936] out anymore.
+[937] >> We've done so many that we said no to.
+[938] Yeah. That maybe I could have avoided a
+[940] few of them, but I don't think we have
+[941] any regrets. They're all kind of
+[942] learning moments.
+[943] >> I think it's interesting because
+[943] especially on on Twitter, but also in
+[945] generally there's obviously the advice
+[946] that everyone gives of your co-founder
+[949] matters a lot. Most companies fail
+[950] because of co-founder breakup. I think
+[952] equally as important, it's becoming more
+[954] and more obvious that like the first
+[956] like five or 10 people you hire after
+[958] are like just as if not more important.
+[960] Totally. Um I don't know if they're more
+[962] important, but they're equally as
+[964] important. Um yeah, if you have to enjoy
+[969] spending all your time with these
+[970] people, you have to have enough
+[972] conviction and who they are to like
+[974] trust them with a bunch of decisions
+[975] because if you don't trust them, then
+[976] you're just going to like be spread thin
+[978] h like hovering over all their work. Uh
+[980] it is really critical.
+[981] >> And when you were signing these first
+[982] like larger enterprise contracts, did
+[984] you have the support of people on your
+[985] team or was this still you and your
+[986] co-founder? Um, so it was my co-founder
+[989] is not involved in any sales at all.
+[991] >> He just builds it, sell it.
+[992] >> Mainly Luis, [laughter]
+[994] it was him
+[996] >> figuring out how to do enterprise sales
+[997] as we were going. Um, and then First
+[999] Round has a lot of really awesome
+[1000] resources. So like they would give us
+[1002] sales support like they have embedded
+[1004] sales experts within First Round that
+[1006] will like listen to your calls and help
+[1007] you like guide you through the
+[1009] enterprise sales processes. Yeah.
+[1010] >> Okay. I want to talk about that in a
+[1012] second, but right before that, so what
+[1013] were some of the things you figured out
+[1015] about these like sales processes like
+[1017] with Louise?
+[1018] >> Um, that it's not that deep for the most
+[1021] part. Like people just want their uh
+[1024] you're kind of like just speaking to
+[1025] like their inner needs and desires. Like
+[1027] they want to get promoted. They want
+[1029] their project that they're spearheading
+[1031] to do well and they want to be
+[1032] recognized for impact. Um, we're kind of
+[1034] just trying to address those concerns
+[1036] and make it easy. So I think Gum Loop
+[1037] does a lot of that. Like most of our
+[1039] customers are like AI champions. They're
+[1041] like people in a company that have been
+[1042] tasked with figuring out how to roll out
+[1044] AI in an efficient way, not just like
+[1046] having people use chatb like extra hard.
+[1048] >> Uh and Gun Loop kind of answers a lot of
+[1051] their their questions and like addresses
+[1052] their needs. So if you're actually
+[1055] giving them a service, the sale isn't
+[1056] there's no like tricks. There's no magic
+[1058] or like way to convince them. It's just
+[1059] like make a good product and address
+[1061] their concerns.
+[1062] >> How do you think about pricing when it's
+[1063] your first time selling an enterprise
+[1064] deal?
+[1065] >> I would underell like crazy. like we
+[1068] would underpric um
+[1069] >> cuz you want the contract, you want the
+[1070] deal, you want
+[1070] >> I just didn't know what I was doing.
+[1072] >> Oh, okay.
+[1072] >> I probably should have just said a
+[1073] bigger number, but at the at the time it
+[1076] was just like whatever. I couldn't
+[1077] imagine paying that much money myself
+[1079] for a software tool, but to them it was
+[1081] like a drop in the bucket, like
+[1082] negligible, like a rounding error.
+[1084] >> Uh and then over time, we got to
+[1086] understand like the dynamics of pricing
+[1088] and like how we're actually providing
+[1090] still 30x more value than we're
+[1091] charging, but it's a substantial amount
+[1093] that we're charging. And so now when
+[1094] you're talking to First Round and
+[1096] they're kind of helping you with a lot
+[1097] of the sales process, what are like the
+[1098] tactical things that they're doing?
+[1099] >> They listen to sales calls, uh, if you
+[1102] have them recorded to give you feedback,
+[1104] just like unbiased third party listener
+[1106] feedback. Um, they'll review like our
+[1110] pricing sheets and like our proposals.
+[1112] Uh, I'll like talk them through the
+[1114] situation and like what we're thinking
+[1116] about and how we're going to approach
+[1117] things and just have them critique it.
+[1119] Um, yeah, they're they're kind of just
+[1121] like an adviser that is you can access
+[1123] whenever. They're super helpful, really
+[1125] responsive.
+[1126] >> What are some of the things that you
+[1127] learned that might be helpful for
+[1128] someone else that's listening to this
+[1130] and hasn't done enterprise sales before?
+[1131] >> I think highlighting the ROI is huge.
+[1134] Uh, like you're kind of just throwing
+[1136] money into the wind if you don't know
+[1137] how it's going to be returned or what
+[1139] impact it's going to have. So, as much
+[1141] of the uh like chewing of the problem
+[1143] you can do for them, the better. Um, so
+[1145] like in the proposal you're like, "We're
+[1147] doing this, but here's the impact it'll
+[1148] have, assuming this and this go this
+[1150] way." Or in like a worst case scenario,
+[1152] you'll still be making your money back
+[1153] twofold. Um, it's like pretty easy to
+[1155] justify if you're able to get that into
+[1157] the proposal. Um, become friends with
+[1160] them. Like they're just real people who
+[1163] have jobs and are trying to do it well
+[1165] and you're trying to help them. So, um,
+[1167] I'm like pretty good friends with a lot
+[1168] of our customers. I think that's like
+[1170] the best way to do business. And then
+[1171] they're also the closer you get to your
+[1173] customer, the more feedback they can
+[1174] give you, the more they'll vouch for you
+[1176] internally. Um, it's a lot better than
+[1178] just like a cold sales process.
+[1179] >> Yeah, absolutely. And if we were to now
+[1181] shift to talking about what happens
+[1182] before they get on the call, are you
+[1184] still today getting a lot of your
+[1186] inbound from like Twitter and LinkedIn?
+[1188] >> Yeah.
+[1189] >> So, it's very like founder driven, like
+[1191] founder profile driven.
+[1193] >> Yeah. I mean, I think our biggest growth
+[1195] motion in the last like five months has
+[1196] been word of mouth. So, like a customer
+[1199] at Shopify will rave about Gum Loop to
+[1201] their wife and their wife works at
+[1204] another startup in Canada and then
+[1205] they'll start using it and then they'll
+[1207] show their co-orker who works at or who
+[1209] leaves to another big company. Like it's
+[1211] it these kind of trails of connections
+[1213] are spreading Gum Loop throughout
+[1214] companies. Um, and then a lot of our
+[1216] customers just happen to like just have
+[1219] friends at other companies who they chat
+[1221] like they're go to market people who
+[1222] have like a Slack channel together for
+[1224] example.
+[1224] >> They'll be recommending tools and then
+[1226] they'll hear about it through their
+[1226] friend. It's all like customer love
+[1228] driven.
+[1229] >> How do you do attribution right now?
+[1230] >> That's a good question. Uh I ask them
+[1233] often like I I normally take the bigger
+[1234] calls now like a thousand people and
+[1236] larger uh kind of enterprises. Um but I
+[1240] often just ask them on the call like how
+[1241] did you hear about us and it's always
+[1242] like an interesting tale.
+[1244] >> What are some of the what are some of
+[1245] the stories?
+[1245] >> Uh like today I asked someone they used
+[1248] to use us when they worked on the growth
+[1251] team at Wealth Simple. They were like
+[1252] just paying they're now at a a different
+[1255] like big clothing brand. Um, yeah, they
+[1257] switched, but uh, they had a personal
+[1260] account when they were there doing like
+[1261] growth things. Uh, and then they brought
+[1263] us with them to this other account and,
+[1265] uh, I think they heard about us through
+[1266] Twitter originally, but they can't
+[1267] remember.
+[1268] >> Um, another guy just looked up, um,
+[1271] agent builder and that was he Gum Loop
+[1273] was like one of the top results. So,
+[1274] like our working I I we have a a
+[1277] contractor who's really good at making
+[1280] like really thoughtful blog posts about
+[1281] what we're building.
+[1282] >> How many blog posts do you do in a
+[1283] month?
+[1283] >> Eight. Maybe like 10. eight to 10 and
+[1286] you already have SEO for agent builder.
+[1288] >> I that's what he said on the call. Yeah.
+[1290] But he's at like a public health tech
+[1291] company. Um and it was just like he said
+[1293] they were doing a AI hack day where
+[1295] everyone's tasked with like building use
+[1297] cases and Gum Loop was the one he found
+[1299] through search.
+[1300] >> That's pretty cool. That's pretty cool.
+[1302] And now if we like take many steps back,
+[1304] how did you get up into startups in the
+[1305] first place?
+[1306] >> So I was at Microsoft working on uh
+[1308] their Linux distribution which was like
+[1311] a cool job but I it wasn't like exciting
+[1313] me. So, I was building VR games every
+[1315] day.
+[1316] >> After work, which ones? Any any of that
+[1318] I would know?
+[1318] >> No, you wouldn't. They were all like
+[1319] free on the Oculus Quest Lab. Um,
+[1323] >> so it was just like projects I was
+[1324] making. It was uh like I made a VR
+[1326] dating game and a VR I made Omega in VR.
+[1328] Like a bunch of terrible ideas.
+[1330] >> Oh, nice.
+[1330] >> Um, and then
+[1331] >> Did you ever play Echo VR?
+[1332] >> Yeah.
+[1333] >> I broke the window at my parents house,
+[1334] but that was really great game.
+[1335] >> Yeah, it's a good game.
+[1336] >> I wish they didn't shut it down. Um,
+[1338] yeah, I think that all the games were
+[1339] struggling now. But, uh, at the time I
+[1342] was obsessed with VR and I was just
+[1343] building things. So, I quit Microsoft to
+[1345] just explore. I was like, I'm just going
+[1348] to for a year just take a chance to
+[1350] build stuff and and see what happens.
+[1352] >> Um, I moved back to Vancouver from
+[1354] Seattle. So, I'm Canadian originally.
+[1356] Okay.
+[1356] >> Moved back to Vancouver um with my
+[1357] girlfriend at the time. And, um, when I
+[1359] was visiting the US like a couple months
+[1361] after that, they asked like, "Where do
+[1363] you work? Where are you living? Um, what
+[1365] do you do?" And I was like, I don't have
+[1366] a I don't have a lease in Canada after
+[1368] we like talked about it because I was
+[1370] just living with my girlfriend. I didn't
+[1371] have a job
+[1372] >> and I was working on a free game. So
+[1374] even though it was free, I was still
+[1375] like working on an idea. So there was a
+[1378] six hours of conversation and then uh
+[1380] ultimately they turned me around at the
+[1382] border which is like called an expedited
+[1384] removal
+[1384] >> and I was banned for 5 years from the
+[1386] United States. That was two years ago.
+[1389] >> Wow. Wait, how are you here? You can get
+[1390] it, you can file an appeal and then get
+[1392] it reversed if you have a a strong
+[1394] enough reason to be the
+[1395] >> Okay, great. So So it's not like you
+[1397] just spent five years without coming to
+[1398] the US.
+[1398] >> No, no, but I missed all of YC for
+[1400] example. Like I was in my bedroom in
+[1401] Canada during YC.
+[1403] >> Oh man.
+[1403] >> Yeah, it kind of sucked. And they didn't
+[1405] have any like Zoom option, you know,
+[1406] everything was very like close-knit in
+[1408] person. So I just like would hear about
+[1410] what YC was doing from my co-founder who
+[1413] was in person.
+[1414] >> Ah,
+[1414] >> yeah. But that motivated starting the
+[1416] company because I had to ditch stupid
+[1418] ideas and actually focus on a way to
+[1420] make money because I had no fallback
+[1421] plan. My original plan was to like go
+[1423] work at Google or something in the US
+[1425] and just after a year of tinkering see
+[1427] what I wanted to which company I wanted
+[1428] to join. But after that I was like oh I
+[1430] actually have to make a business make
+[1432] money.
+[1432] >> Got to know why.
+[1433] >> Yeah. I wasn't even planning really on
+[1435] the visa thing. I'm just like I need to
+[1436] make a company that will like generate
+[1438] revenue uh for me. So, I I built like
+[1441] six months of terrible ideas and then
+[1443] the autog pivot was like a uh one of my
+[1446] side projects.
+[1448] >> That's that's a great story.
+[1449] >> Yeah, it was a like looking back it's a
+[1452] it's a good story. At the time I was
+[1453] like I'm screwed
+[1454] >> and it's great that it happened then and
+[1456] not now.
+[1456] >> Yeah, for sure.
+[1457] >> So much harder now.
+[1458] >> No, now u Yeah, I mean it was the same
+[1460] administration's doing that that
+[1461] resulted in that. But um yeah, I would
+[1464] visa issues now are even worse.
+[1466] >> Yeah. No, it's silly. Yeah, but I'm uh
+[1468] contributing to the American economy and
+[1469] hiring Americans and just for the
+[1471] record, you know.
+[1472] >> Just for the record, so they know.
+[1474] >> So, are you saying you would never set
+[1475] up an office outside of America, outside
+[1477] of San Francisco?
+[1478] >> I think to start the company, we needed
+[1480] to be an SF, but now we're opening an
+[1482] office in Vancouver.
+[1483] >> Oh, why?
+[1484] >> I think a lot of the people we want to
+[1486] hire just love Vancouver. Like Canada, I
+[1487] don't know if you've been to Canada, but
+[1488] >> I've been in Vancouver. I've been to BC.
+[1490] >> Okay. Yeah, Vancouver is beautiful. Um,
+[1492] when I'm trying to convince someone to
+[1493] move to SF from Vancouver, it's kind of
+[1494] hard to justify sometimes when they have
+[1496] like a family, they like they love
+[1498] skiing, they love
+[1499] >> they got three bedrooms for four grand a
+[1501] month.
+[1501] >> Four grand Canadian, too, which is uh
+[1503] like Yeah. two grand two grand USD. Um,
+[1507] they I think the the choice was just we
+[1510] want to build more kind of traction in
+[1512] Canada. we want to go back to where
+[1514] we're from a little bit and open up like
+[1515] an actual tech hub uh in Canada because
+[1518] I think most of companies will just
+[1520] immediately leave Vancouver when they
+[1521] get traction, but if we can go back and
+[1523] give people a reason to stay there, then
+[1525] we can get Canadian talent, not force
+[1527] them to leave the country. Um, and also
+[1529] I love Canada. I'm like super excited to
+[1531] go visit the office and work from there
+[1533] sometimes.
+[1534] >> I one of our companies actually had a
+[1536] similar story where he had a he built a
+[1538] really good founding team. He himself
+[1539] was from Canada and he got like an L1
+[1540] visa or whatever and he couldn't get any
+[1543] of his other team into America because
+[1545] they all kept getting like visa issues
+[1547] especially now this is in the last few
+[1548] months and so what he's going to do is
+[1550] he's going to stay here and he's opening
+[1552] an office back up in Toronto um for
+[1554] those people because he's like yeah it's
+[1555] easier to get someone a visa from like
+[1557] Switzerland or whatever or Norway or
+[1559] wherever like into Toronto than it is to
+[1561] get them into San Francisco and he's
+[1563] just going to go back and forth and make
+[1564] make that jump. So, it's interesting to
+[1565] see a lot more people. Another one of
+[1566] our our our our friends who actually
+[1569] just came on the podcast before you,
+[1570] same story. He was like, "Am I really
+[1572] going to try to compete with OpenAI
+[1573] salaries for a good engineer in San
+[1574] Francisco, or am I just going to pay
+[1576] someone 150k a year, which would make
+[1579] them extremely happy in Toronto and they
+[1580] don't have to leave their family behind
+[1581] and relocate their entire like life into
+[1584] a country that won't even let them in.
+[1587] Yeah, I think there's a a lot of benefit
+[1590] just like if you were to to live in
+[1592] Toronto, have family there, um reasons
+[1594] to stay. It's pretty hard to justify
+[1597] completely dropping everything. But
+[1598] there's like a million amazing engineers
+[1600] in Canada across all these cities who
+[1602] are just looking for a company to come
+[1603] to them instead of being forced to
+[1604] leave.
+[1605] >> Yeah, absolutely.
+[1606] >> Yeah. The only other option is fully
+[1607] remote, but I'm not
+[1608] >> That's hard.
+[1609] >> Yeah. I'm not a huge fan of
+[1610] >> I mean, there are a lot of people who
+[1611] are really like putting on for Toronto
+[1613] right now. Even like Shopify, right?
+[1614] Like they're based in Toronto if I'm not
+[1616] mistaken or like they have a big office
+[1618] >> officially but their office in Toronto
+[1619] is huge and beautiful. Yeah. They have
+[1621] lots of people there
+[1622] >> and you guys work with them, right?
+[1623] >> Yeah.
+[1623] >> What's that like?
+[1624] >> It's awesome. Uh they're like the most
+[1626] AI native company I've ever met other
+[1627] than like a lab, you know. Really? Yeah.
+[1630] They're so
+[1630] >> using AI for everything. Like they were
+[1633] some of the first adopters of cursor.
+[1635] They were like one of the first adopters
+[1637] of Gun Loop Wall to Wall. Um they use us
+[1640] >> everywhere and they use AI internally. I
+[1642] think it's Toby's memo was one of the
+[1644] big one. Yeah. Yeah. Uh like the leaked
+[1647] memo where he's saying like
+[1648] >> basically your performance is now
+[1650] actually contingent on your AI usage.
+[1651] It's not just a nice to have um your
+[1653] performance reviews. I mean
+[1655] >> so they they have MCPs for everything
+[1658] internally. They actually like walk the
+[1660] walk. They don't just like talk about AI
+[1661] usage. So yeah, we've flown to their
+[1664] office in Toronto with like half the
+[1665] team. Did a hackathon with like hundreds
+[1667] of people at the company.
+[1668] >> What was that like?
+[1669] >> Um their office is so nice. Like I
+[1671] highly recommend visiting. Yeah, it's
+[1672] beautiful. Uh they
+[1674] >> What makes it so nice?
+[1676] >> Just the nicest view of the CN Tower
+[1678] I've ever seen. And everything is just
+[1680] aesthetically kind of put together. We
+[1684] were we're kind of like workshopping
+[1685] with a lot of the people doing all these
+[1687] sessions and watching how they were
+[1688] using AI tools. And a lot of them were
+[1690] using uh these agent frameworks with MCP
+[1693] in really like roundabout ways to
+[1695] automate really simple things in their
+[1697] day-to-day life. And we we actually
+[1699] shipped like our newest release like our
+[1701] gum loop agents were completely inspired
+[1703] by watching them use uh I believe at the
+[1706] time it was like they were using cursor
+[1708] and like one person was using was using
+[1710] cursor agent another person was using
+[1712] cursor agent um but they were using it
+[1713] in totally different ways. One person
+[1714] had like a couple MCP servers connected.
+[1716] One person didn't know what MCP was.
+[1718] They're all like disjointed kind of like
+[1720] you need like a workshop or something in
+[1722] order to connect them and teach them how
+[1723] to use these tools. Uh we built agents
+[1726] natively. So you can connect any MCP
+[1728] server and they live natively in Slack.
+[1730] Um so within threads you can actually
+[1732] interact with agents like one
+[1733] salesperson can make a sales agent and
+[1735] then the 150 people in that sales
+[1737] channel can actually see how they're
+[1739] using it interact with it in their
+[1740] threads. It's like multiplayer secure by
+[1742] default. Um so like watching how they
+[1744] were using AI tools actually inspired
+[1746] like most of the features we've been
+[1747] shipping in the last three months.
+[1748] >> What are you shipping now? uh agents and
+[1750] all like all infrastructure around
+[1752] observability and control and security
+[1755] on top of like giving 8,000 people
+[1758] access to building agents with all their
+[1759] data is like a pretty monumental task.
+[1761] So all of the tooling built into the
+[1762] product to make that like secure make
+[1764] the IT team okay with it uh with with
+[1766] rolling this out to thousands of people.
+[1768] But yeah, that's what we've been
+[1769] focusing on. Like Gum Loop has been kind
+[1770] of evolving into this like enterprise um
+[1773] operating system for AI automation more
+[1775] so than just like a workflow builder.
+[1777] >> Nice. That's new oneliner right there.
+[1778] Yeah,
+[1779] >> we're we're workshopping it.
+[1780] >> And so if we were to do this podcast
+[1781] again in a year, what would you have
+[1782] want to accomplish by then to consider
+[1784] the past year a success?
+[1785] >> Uh I think we're a year ago I would have
+[1788] said I want to be like a core piece of
+[1790] infrastructure for like thousands of
+[1792] companies around the world. I think
+[1794] we're approaching that but I think in a
+[1796] year from now I would want like tens of
+[1798] thousands of companies like relying on
+[1799] Gum Loop dayto-day with like this
+[1801] hardcore kind of power user love. the
+[1804] the sort of love that like takes a
+[1805] product from one company to another when
+[1807] someone joins another company and the
+[1808] first thing they do is get them a
+[1810] subscription to like notion for example
+[1811] I think has a lot of that customer love.
+[1813] Um getting that sort of like cult
+[1814] following by building an amazing product
+[1816] is like our focus for the next year for
+[1818] sure.
+[1818] >> Oh yeah, dude. Thanks for coming on the
+[1819] podcast.
+[1820] >> Thanks for having me.

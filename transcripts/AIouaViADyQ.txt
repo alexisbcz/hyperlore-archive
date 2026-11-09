@@ -1,0 +1,951 @@
+[0] you can still have lots of great
+[2] Upstream open-source Technologies and
+[5] you will have a early adopter community
+[6] that loves those use those gets a lot of
+[9] progress running fast and far with those
+[11] but we found the vast majority of the
+[13] market doesn't want to spend its time
+[15] cobbling together bits and bites of
+[17] open- source Tech and maintaining it and
+[19] patching it and and and and
+[25] and welcome to screaming in the cloud
+[28] I'm Corey quinnn once upon a time I
+[31] started my public speaking career as a
+[34] traveling contract trainer for puppet
+[36] I've talked about this before and during
+[39] that time I encountered someone who
+[41] worked there as an exec Scott Johnston
+[44] who sat down talked to me about how I
+[46] viewed things and then almost
+[48] immediately went to go work at Docker
+[50] instead today's promoted episode brings
+[53] Scott onto the show Scott you fled to
+[55] get away from me became the CEO of
+[57] Docker over the past what is it 7 years
+[60] now you're still standing there and I'm
+[62] not making fun of Docker quite the way
+[64] that I used to First thanks for joining
+[66] me great to be here Corey thanks for the
+[68] invitation I'm not sure I was fleeing
+[70] you but uh we can recover that one at
+[73] another time oh absolutely this episode
+[76] is sponsored in part by my day job the
+[78] duck bill group do you have a horrifying
+[81] AWS bill that can mean a lot of things
+[84] predicting what it's going to be
+[85] determining what it should be
+[87] negotiating your next long-term contract
+[90] with AWS or just figuring out why it
+[93] increasingly resembles a phone number
+[95] but nobody seems to quite know why that
+[98] is to learn more visit duckbill
+[101] group.com remember you can't duck the
+[103] duck bill bill and my CEO informs me
+[106] that is absolutely not our slogan in
+[109] that era one of my first talks that I
+[110] started giving that anyone really paid
+[112] any attention to was called heresy in
+[114] the Church of Docker where I listed
+[117] about 10 to 13 different things that
+[120] Docker didn't seem to have answers for
+[122] like Network separation security audit
+[125] logging etc etc and it was a fun talk
+[128] that I used to basically learn how to
+[130] speak publicly without crying before and
+[132] after the talk and in time it wound up
+[135] aging out as these problems got
+[137] addressed but what surprised me at the
+[139] time was how receptive the docker
+[141] Community was to the idea of a talk that
+[144] wound up effectively criticizing
+[146] something that for well a number of them
+[148] it felt a lot of the time like wasn't
+[150] that far from a religion it was very
+[151] hype driven Docker Docker Docker was a
+[153] recurring joke Docker has changed a lot
+[157] the burning question that I think I want
+[159] to start this off with is that it's 2021
+[163] what is Docker is it a technology is it
+[166] a company is it a religion is it a
+[169] community what is Docker yes I mean that
+[172] sincerely often the first awareness or
+[176] the first introduction that newcomers
+[178] have is in fact the Community before
+[181] they get their hands on the product
+[183] before they learn that there's a company
+[184] behind the product is they have a
+[187] colleague who is either through a zoom
+[190] or sitting next to them in some places
+[192] or in a coffee shop and says hey you got
+[195] to try this thing called Docker and they
+[197] lean over either virtually or physically
+[200] and look at the laptop of their friend
+[201] who's promoting Docker and they see a
+[204] magical experience and that is the
+[207] introduction of so many of our community
+[208] members having spoken with them and her
+[210] their own kind of Journeys and so that
+[212] leads to like okay so why the excitement
+[214] why did the friend lean over to the
+[216] other friend and introduce it's because
+[219] the tools that dacka provides just helps
+[222] devs get their app built and shipping
+[226] faster more securely with Choice without
+[229] being tied into any particular runtime
+[231] any particular infrastructure and that
+[233] combination has proven to be a
+[236] breakthrough dopamine hit to develop
+[240] since the very beginning since 2013 when
+[242] Docker was open sourced it feels like
+[244] originally the the Breakthrough of
+[246] Docker of that people will say oh
+[248] containers aren't new we've had that
+[249] going back to Lars on Main frames yes
+[252] I'm aware but suddenly it became easy to
+[255] work with and didn't take tremendous
+[258] effort to get unified environments it
+[260] was cynically observed at the time by
+[262] lots of folks smarter than I am that the
+[264] big breakthrough Docker had was how to
+[266] make my MacBook look a lot more like a
+[268] Linux server in produ ction and we talk
+[271] about breaking down silos between Ops
+[273] and Dev but in many ways this just meant
+[275] that The Silo became increasingly
+[277] irrelevant because works on my machine
+[279] was no longer a problem well you better
+[281] back up your email because your laptop's
+[283] about to go to production in that case
+[284] containers made it easier and that was a
+[287] big deal it seems on some level like
+[290] there was a fora where Docker the
+[292] company was moving into the world of
+[294] okay now we're going to run a lot of
+[296] these containers in production for you
+[298] Etc it really feels like recently the
+[301] company as a whole and the strategy has
+[303] turned towards getting back to its roots
+[305] of solving developer problems and
+[307] positioning itself as a developer tool
+[309] is that a fair characterization 100%
+[312] that's very intentional as well we
+[314] certainly had good products and great
+[316] customers and we're solving problems for
+[318] customers on the oppos side I'll call it
+[320] but when we stood back this is around
+[322] 2019 and said where's the real joy for
+[326] lack of a better word where's the real
+[327] Joy from a community standpoint from a
+[329] experience standpoint from a what do we
+[332] do different and better and more capable
+[336] than than anyone else in the ecosystem
+[338] it was that developer experience and so
+[340] the the reset that you're referring to
+[342] in November 2019 was to give us the
+[344] freedom to go back and just focus the
+[348] entire company's efforts on the needs of
+[350] developers without any other
+[353] distractions from a revenue customer
+[355] channel so on and so forth so we knew
+[357] this was going to come up in the
+[359] conversation but as of a couple of weeks
+[361] ago as of the time of this recording you
+[364] announced a somewhat well let's say
+[366] controversial change in how the pricing
+[369] and Licensing worked now as of we're
+[371] taking effect at the end of this year
+[373] the end of January rather of next year
+[375] Docker desktop is free for folks to use
+[377] for individual use and that's fine and
+[380] for corporate use Docker desktop also
+[382] remains free until you are a large
+[384] company defined by 10 million in Revenue
+[387] a year and or 200 50 employees or more
+[392] and that was interesting I don't think
+[393] I'd seen that type of requirement placed
+[397] before on what was largely an open
+[399] source project was is now a developer
+[402] tool I believe there are close Source
+[403] aspects of it as well for the desktop
+[405] experience but please don't quote me on
+[407] that I'm not here to play internet
+[408] lawyer engineer but at at that point the
+[411] internet was predictably upset about
+[412] this because it is easy to yell about
+[415] any change that is coming regardless I
+[417] was less interested in that than I am in
+[420] what the reception has been from your
+[422] corporate customers because let's be
+[424] clear users are important Community is
+[427] important but Goodwill will not put food
+[429] on the table past a certain point there
+[432] has to be a way to make a company
+[434] sustainable there has to be a recurring
+[436] Revenue model I realize that you know
+[438] this but I'm sure there are people
+[439] listening to this who are working in
+[441] development somewhere who are wait you
+[443] mean I need to add more value than I
+[445] cost it was a hard Revelation for me
+[447] back when I had been in the industry a
+[448] few years sure and I'm still struggling
+[450] with that some days sure you and me both
+[452] yeah so what has the reaction been from
+[455] folks who have better channels of
+[457] communicating with you folks than angry
+[459] Twitter threats yeah great surface area
+[461] for discussion Cory let's back up and
+[463] talk on a couple points that you you hit
+[465] along the way there one is what is
+[467] Docker desktop Docker desktop is not
+[469] just Docker engine right Docker desktop
+[472] is a way in which we take Docker engine
+[475] compose kubernetes all important tools
+[477] for developers building modern apps
+[479] Docker build so on and so forth and we
+[482] provide an integrated engineered product
+[485] that is engineered for the native
+[487] environments of mac and windows and soon
+[489] Linux and so we make it super easy to
+[492] get the container runtime kubernetes
+[494] stack the networking the cly compos we
+[498] make it super easy just to get that up
+[499] and running and configured with smart
+[501] defaults secured hardened and
+[504] importantly updated so any vulnerability
+[506] is patched and so on so forth the point
+[508] is like it's a product that is based on
+[510] to your comments Upstream open- Source
+[512] Technologies but it is an engineered
+[514] commercial product Docker desktop is
+[516] Docker desktop is a fantastic tool I use
+[519] it myself I could make a bunch of snide
+[521] comments and on Mac it's basically there
+[522] to make sure the fans are still working
+[523] on the laptop but again computers are
+[525] hard I get that it's incredibly handy to
+[529] have a graphical control panel it turns
+[531] out that I don't pretend to understand
+[533] those people but some folks apparently
+[535] believe that there are better user
+[537] interfaces than text and an 80 character
+[540] wide terminal window I don't pretend to
+[542] get those people but not everyone has
+[544] the joy of being a Linux admin for far
+[546] too long so I get it making it more
+[549] accessible making it easier is
+[551] absolutely worth using that's right it's
+[553] not a hard requirement to run it on a
+[555] laptop style environment or developer
+[557] workstation but it makes it really
+[558] convenient before Dr dustkop one had to
+[561] install a hypervisor install a Linux VM
+[563] install Docker engine on that Linux VM
+[566] bridge between the VM and the local Cly
+[569] on the native desktop like lots of setup
+[571] and maintenance and tricky stuff that
+[574] can go wrong trust me how many times I
+[576] stub my own toes on putting that
+[578] together and so Docker desktop is
+[580] designed to take all of that setup
+[583] nonsense overhead away and just let let
+[585] the developer focus on their app that's
+[587] what the product is and just talking
+[588] about where it came from and how it uses
+[589] these other Upstream Technologies yes
+[592] and so we we made a move on August 31st
+[595] as you noted and the motivation was the
+[597] following one is we started seeing large
+[600] organizations using Docker desktop at
+[602] scale when I say at scale not not one or
+[604] two or 10 developers like hundreds and
+[606] thousands of developers and they were
+[608] clamoring for capabilities to help them
+[611] manage those developer environments at
+[613] scale second is we saw them getting a
+[617] lot of benefit in terms of productivity
+[619] and choice and security from using
+[621] Docker desktop and so we stood back and
+[623] said look for us to scale our business
+[626] we're at 10 plus million monthly active
+[628] developers today we know there's 45
+[630] million developers coming in this decade
+[632] like how do we keep scaling while giving
+[634] a free experience but still making sure
+[636] we can fund our engineers and deliver
+[638] features and additional value we looked
+[642] at other projects Corey the first thing
+[643] we did is we looked outside our four
+[645] walls said how have other projects with
+[647] free and open source components
+[649] navigated these Waters and so the
+[651] thresholds that you just mentioned the
+[652] 250 employees and the 10 million Revenue
+[655] were actually thresholds that we saw
+[657] others put in place to draw lines
+[659] between what is available completely for
+[662] free and what is available for those
+[664] users that now need to purchase a
+[666] subscription if they're using it to
+[667] create value for their organizations and
+[669] we're very explicit about that you could
+[670] be using Docker for training you could
+[673] be using Docker for eval in those large
+[675] organizations we're not going to chase
+[678] you or be looking to you to step up to a
+[680] subscription however if you're using
+[682] Docker desktop in those environments to
+[684] build applications that run your
+[686] business or that are creating value for
+[688] your customers
+[689] then purchasing a subscription is a way
+[692] for us to continue to invest in a
+[694] product that the ecosystem clearly loves
+[696] and is getting a lot of value out of and
+[698] so that was again the premise of this
+[700] change so now to root of your question
+[701] is like so what's the reaction we're
+[703] very very pleased first off yes there
+[705] were some angry voices out there yeah
+[707] and I I want to be clear I'm not
+[708] trivializing people who feel upset when
+[711] you're suddenly using a thing that is
+[712] free and discovering that well now you
+[714] have to pay money for it people are not
+[716] generally going to be happy about that
+[718] when when people view themselves as part
+[719] of the community of contributing to what
+[721] they saw as a technical Revolution or a
+[723] scrappy Underdog and suddenly they find
+[725] themselves not being included in some
+[727] way shape or form it's natural to be
+[729] upset I don't want to trivialize
+[731] people's warm feelings toward Docker it
+[733] was a big part of a lot of folks
+[735] personality For Better or Worse for a
+[736] few years in there but the company needs
+[739] to be sustainable so what I'm really
+[741] interested in is what has that reaction
+[743] been from folks who are for better worth
+[746] yes yes we love Docker but I don't get
+[748] to sign $11,000 deals because I just
+[751] really like the company I'm paying the
+[752] money to there has to be business value
+[755] attached to that that's right that's
+[757] right and to your point we're not
+[759] trivializing either the reaction by the
+[761] community it was encouraging to see many
+[764] community members got right away what
+[766] we're doing they saw that still a
+[767] majority of them can continue using
+[769] Docker for free under the docker
+[770] personal subscription and that was also
+[773] intentional and you saw on the on the
+[775] internet on Twitter and other social
+[776] media you saw them come and support the
+[779] company's moves and despite some angry
+[781] voices in there there was overwhelmingly
+[783] positive so to your question though
+[786] since August 31st we've been overwhelmed
+[789] actually by the positive response from
+[791] businesses that use Docker desktop to
+[794] build applications and run their
+[796] businesses and when I say overwhelmed we
+[798] were tracking because Docker desktop has
+[800] a phone home capability we had a rough
+[803] idea of what the Baseline usage of
+[805] Docker desktops were out there Well
+[807] turns out in some cases there are 10
+[809] times as many Docker desktops inside
+[812] organizations and the average seems to
+[813] be settling in around three times or
+[815] four times as many and we are already
+[818] closing business Corey in 12 business
+[820] days we have companies come through say
+[822] yes our developers use this product yes
+[824] it's a valuable product we're happy to
+[826] talk to a salesperson and give you over
+[828] to procurement and here we go so you and
+[830] I both been around long enough to know
+[831] like 12 working days to have a a signed
+[834] agreement with an Enterprise agreement
+[835] is unheard of yeah let's be very clear
+[838] here the duck bill group side of things
+[839] where I do Consulting projects I sell
+[842] projects to companies that are great
+[843] this project will take I don't know four
+[845] to six weeks whatever it happens to be
+[847] and yeah you're going to turn a profit
+[849] on this project in about the first four
+[851] hours of the engagement it is basically
+[854] push button and you will receive more
+[856] money in your budget than you had when
+[858] you started and that is probably the
+[860] easiest possible Enterprise sale and it
+[863] still takes 60 to 90 days most of the
+[865] time to close deals that's right trying
+[868] to get a procurement deal for software
+[871] through Enterprise procurement processes
+[874] is one of those things when people say
+[876] okay we're going to have a signature and
+[877] Q3 you have to clarify what year they're
+[880] talking about so 12 days is unheard of
+[884] yep so we've been very encouraged by
+[885] that and I'll I'll just give you rough
+[887] numbers like the overall response is 10
+[889] times our Baseline expectations which is
+[891] why maybe unanticipated question or
+[893] you're going to ask it soon we came back
+[896] within two weeks CU we could see this
+[897] curve hit right away on on the 31st of
+[899] August we came back and said great now
+[902] that we have the confidence that the
+[904] community and businesses are willing to
+[906] support us and invest in our
+[909] sustainability invest in the sustainable
+[910] scalable Docker we came and we
+[913] accelerated pulled forward items in our
+[915] roadmap for developers using Docker
+[917] desktop both for Docker personal for
+[920] free in the community as well as the
+[922] subscribers so things like Docker
+[924] desktop for Linux right Docker desktop
+[926] for Mac Docker desktop for Windows been
+[927] out there about 5 years as I said we've
+[929] heard Docker desktop for Linux rise in
+[932] demand over those years because if
+[934] you're managing a large number of
+[935] developers you want a consistent
+[936] environment across all the developers
+[938] whether they're using Linux Mac or or
+[939] Windows desktops so Docker desktop for
+[941] Linux will give them that consistency
+[944] across their entire development
+[945] environment that was the number two most
+[948] requested feature on our public road map
+[950] in the last year and again with the
+[953] positive response we're now able to
+[955] confidently invest in that we're hiring
+[956] more Engineers than plan we're pulling
+[958] that forward the road map to show that
+[960] yes we are about growing and growing
+[962] sustainably and now that the environment
+[965] and businesses are supporting us we're
+[966] we're happy to double down and create
+[968] more value my big fear when the change
+[970] was announced was the uncertainty
+[972] inherent to it because there's one thing
+[974] that big companies don't like it's
+[976] uncertainty because uncertainty equates
+[978] to risk in their mind and a lot of other
+[982] software out there and yes Oracle
+[984] databases I am looking at you have a
+[986] historical track record of okay great we
+[989] have audit rights to inspect your
+[990] environment and then when we wind up
+[991] coming in we always find that there have
+[993] been licensing shortfalls because people
+[996] don't know how far things spread
+[998] internally as well as honestly it's
+[1001] accounting for this stuff in large
+[1002] complex organizations is a difficult
+[1004] thing and then there are massive fines
+[1006] at stake and then there's this whole
+[1008] debate back and forth companies view
+[1011] contracts as if every company behaved
+[1013] like that when it comes down to per seat
+[1015] licensing and the rest my fear was that
+[1018] that risk of voidance in large companies
+[1022] would have potentially made installing
+[1024] Docker desktop in their environment
+[1026] suddenly a nonstarter across the board
+[1028] almost to the point of being something
+[1030] that you would discipline employees for
+[1032] which is not great and it seems from
+[1035] your response that that has not been a
+[1037] widespread reaction yes of course
+[1039] there's always going to be some weird
+[1040] company somewhere that does draconian
+[1042] things that we don't see but the fact
+[1044] that you're not sitting here telling me
+[1046] that you've been taking a beating from
+[1048] this from your enter pris buyers tells
+[1050] me you're on to something I think that's
+[1052] right Corey and as you might expect the
+[1054] folks that don't reach out are silent
+[1056] and so we don't see folks who don't
+[1058] reach out to us but because so many have
+[1060] reached out to us so positively and
+[1063] basically quickly gone right to a
+[1065] conversation with procurement versus
+[1067] versus any sort of back and forth or
+[1068] questions and such tells us we are on
+[1070] the right track the other thing just to
+[1071] be really clear is we did work on this
+[1073] before the August 31st announcement as
+[1075] well this being how do we approach
+[1078] licensing and in compliance and such and
+[1080] we found that 80% of organizations 80%
+[1082] of businesses want to be in compliance
+[1084] they have not just want to be in
+[1085] compliance but they have a history being
+[1087] in compliance regardless of the
+[1088] enforcement mechanism and whatnot and so
+[1091] that gave us confidence to say hey we're
+[1092] going to trust our users we're going to
+[1094] say grace period ends on January 31st
+[1096] but we're not shutting down
+[1097] functionality we're not sending in legal
+[1101] activity we're not putting any sort of
+[1103] strictures on the product functionality
+[1106] because we have found most people love
+[1108] the product love what it does for them
+[1111] and want to see the company continue to
+[1113] innovate and deliver great features and
+[1115] so okay you might say like well isn't
+[1117] that 20% represent opportunity like yeah
+[1119] you know it does but it's a big
+[1121] ecosystem the 80% is giving us a a great
+[1124] boost and we know we're already starting
+[1126] to plow that into new investment and
+[1129] let's just start there right let's start
+[1130] there and grow from there here at the
+[1132] duck bill group one of the things we do
+[1134] with you know my day job is we help
+[1137] negotiate a us contracts we just
+[1140] recently crossed $5 billion of contract
+[1143] value negotiated it solves for fun
+[1146] problems such as how do you know that
+[1148] your contract that you have with AWS is
+[1150] the best deal you can get how do you
+[1153] know you're not leaving money on the
+[1155] table how do you know that you're not
+[1156] doing what I do on this podcast and on
+[1159] Twitter constantly and sticking your
+[1161] foot in your mouth to learn more come
+[1165] chat at duckbill
+[1166] group.com optionally I will also do
+[1169] podcast voice when we talk about it
+[1172] again that's duckbill
+[1175] group.com I as have a hard time
+[1177] imagining that you and your leadership
+[1179] team would be shortsighted enough to say
+[1182] okay that even 20% of companies that are
+[1185] willing to act dishonestly around stuff
+[1187] like that seems awfully High to me but
+[1188] assuming it's accurate would tracking
+[1191] down that that missing 20% be worth
+[1193] setting fire to the tremendous amount of
+[1196] Goodwill the docker still very much
+[1197] enjoys I have a hard time picturing any
+[1200] analysis where that's even a question
+[1202] other than something you set up to make
+[1204] fun of no that's exactly right Cory it
+[1207] wouldn't be worth it which is why again
+[1209] we came out of the gate with like we're
+[1210] going to trust our users they love the
+[1212] community they love the product they
+[1214] want to support us most of them want to
+[1216] support us and you know when you have
+[1218] most you're never going to get 100% so
+[1219] we got most and we're off to a good
+[1221] start by all accounts and look a lot of
+[1224] folks too sometimes will be right in
+[1226] that gray middle where you let them know
+[1228] that they're getting away with something
+[1229] they're like all right you caught me
+[1231] we've seen that behavior before and so
+[1233] we can see all this activity out there
+[1236] and we can see if folks are and have a
+[1238] license or compliance or not and
+[1239] sometimes just a little tap on the
+[1240] shoulder said hey did you know that you
+[1242] might might be paying for that we've
+[1244] seen most Folks at the time say ah okay
+[1246] you caught me happy to talk to
+[1247] procurement so this does not have to be
+[1249] heavy-handed as you said it does not
+[1250] have to put at risk the Goodwill the 80%
+[1253] and we don't have to get 100% to have a
+[1254] great successful business and continuing
+[1256] successful Community yeah I'll also
+[1258] point out that by my reading of your
+[1260] terms and conditions and how you've
+[1261] specified this I mean this is not
+[1263] something I've asked you about so this
+[1264] could turn into a really awkward
+[1265] conversation but I'm going to roll with
+[1266] it anyway it explicitly states that it
+[1269] is and will remain free for personal
+[1271] development that is correct when you're
+[1272] looking at employees who work at Giant
+[1274] companies and have Sloppy bring your own
+[1276] device uh controls around these things
+[1278] all right they have it installed on
+[1279] their work machine because in their
+[1280] spare time they're building an app
+[1282] somewhere they're not going to get a
+[1283] nasty gram and they're not exposing
+[1285] their company to liability by doing that
+[1287] that is exactly correct and moreover
+[1289] just keep looking at those use cases
+[1291] right if the company is using it for
+[1292] internal training right or if the
+[1294] company is using it to evaluate someone
+[1296] else's technology someone else's
+[1297] software all those cases are outside the
+[1300] pay for subscription and so we believe
+[1303] it's quite generous and allowing of
+[1305] Trials and tests and use cases that make
+[1308] it accessible and easy to try easy to
+[1310] use and it's just in the case where if
+[1312] you're a large organization and your
+[1313] developers are using it to build
+[1315] applications for your business and for
+[1317] your customers thus you're getting a lot
+[1319] of value using the product we're asking
+[1321] you to share that value with us so we
+[1322] can continue to invest in the product
+[1324] and I think that's a reasonable
+[1325] expectation the challenge a Docker seems
+[1327] to have had for a while has been that
+[1329] the interesting breakthrough
+[1332] revelatory stuff that you folks did was
+[1335] all open source it was a technology that
+[1337] was incredibly inspired in a bunch of
+[1340] different ways I I am I guess mature
+[1343] enough to admit that my take that oh
+[1345] Docker is terrible which was never
+[1346] actually my take was a little short
+[1348] excited I'm very good at getting things
+[1349] wrong across the board and that is no
+[1351] exception I also said virtualization was
+[1353] a flash in the pan and look how that
+[1354] worked out I was very antil Cloud etc
+[1357] etc times change people change and
+[1359] doubling down on being wrong gains you
+[1361] nothing but the question that was always
+[1363] afterwards what is the monetization
+[1366] strategy because it's not something you
+[1368] can give away for free and make it up in
+[1370] volume even VC money doesn't quite work
+[1372] like that forever so there's a the
+[1374] question is what is the monetization
+[1376] strategy that doesn't leave people
+[1379] either resenting you because remember
+[1381] that thing that used to be free isn't
+[1383] anymore doesn't it suck to be you and is
+[1385] still accessible as broadly as you are
+[1387] given the sheer breath and diversity of
+[1389] your community like I can make bones
+[1391] about the fact that 10 million in
+[1393] revenue and 250 employees are either
+[1395] Worlds Apart or the wrong numbers or
+[1397] whatever it is but it's not going to be
+[1399] some student somewhere sitting someplace
+[1401] where their Ramen budget is at risk
+[1402] because they have to spend $5 doar a
+[1404] month or whatever it is to to have this
+[1406] thing it doesn't apply to them and this
+[1409] feels like unorthodox though it
+[1411] certainly is it's not something to be
+[1414] upset about in any meaningful sense the
+[1416] people that I think would actually be
+[1418] upset and have standing to be upset
+[1420] about this are the Enterprise buyers and
+[1422] you're hearing from them in what is
+[1425] certainly because I will I will hear it
+[1427] if not that this is something they're
+[1428] happy about they are thrilled to work
+[1430] with you going forward and I think it
+[1432] makes sense even when I was doing stuff
+[1434] as an independent consultant before I
+[1436] formalized the creation of the duck bill
+[1437] group and started hiring people my
+[1439] policy was always to not use the free
+[1441] cheer of things even if I fit into them
+[1443] because I would much rather personally
+[1445] be a paying customer which elevates the
+[1448] I guess how well my complaints are
+[1450] received because if I'm a free user I'm
+[1452] just another voice on Twitter I'll be at
+[1454] a loud one and Incredibly sarcastic one
+[1456] at times but if I'm a paying customer
+[1458] suddenly the entire Tanner of that
+[1459] conversation changes and I think there's
+[1462] value to that I've always had the
+[1464] philosophy of you pay for the things you
+[1466] use to make money and that again that is
+[1469] something that's easy for me to say now
+[1470] back when I was in crippling debt in my
+[1472] 20s I assure you it was not but I still
+[1474] made the effort for things that I use to
+[1477] make a living yeah and I think that
+[1479] philosophy is directionally correct no I
+[1481] I appreciate that Cory there's lot lot
+[1483] of good threads in there maybe just
+[1484] going way back Docker stands on the
+[1485] shoulders of giants right there was a
+[1487] lot of work with container Tech in the
+[1489] Linux kernel you know you and I are
+[1490] talking before about it goes back to
+[1492] elpar on ibms and you know BS ber jails
+[1495] and chuts on Linux you know chero right
+[1497] I mean Bill Joy putting topper parties
+[1499] I'm sure yeah right and all credit to
+[1501] Solomon hikes docker's founder who took
+[1504] a lot of good up andc coming Tech
+[1506] largely on the opsy in Linux kernel Took
+[1510] The Primitives from git and combined
+[1512] that with a mutable copy on right file
+[1514] system and put those three together into
+[1516] a really magical combination that that
+[1518] simplified all this complexity of
+[1520] dependency management and portability of
+[1522] images across different systems and so
+[1524] in some sense that was the the magic of
+[1526] standing on the giant shoulders but
+[1527] seeing how these three different waves
+[1530] of innovation or three different flows
+[1531] of innovation could come together into a
+[1532] great user experience so also then
+[1535] moving forward I wouldn't say they're
+[1537] they're happy just to make sure you you
+[1538] don't get inbound angry emails the
+[1540] Enterprise buyers but they do recognize
+[1543] the value of the product they think the
+[1545] economics are fair and straight ahead
+[1547] and to your point about having a
+[1549] commercial relationship versus a free or
+[1551] non non-existing relationship they're
+[1552] seeing that oh okay now I have insight
+[1555] into the road map now I can prioritize
+[1557] my requirements that my devs have been
+[1559] asking for now I can double down on the
+[1562] secure supply chain issues which I've
+[1564] been trying to get in front of for years
+[1566] right so it gives them an Avenue that
+[1568] now much different than a free user as
+[1570] as you observed it's a commercial
+[1572] relationship where it's two-way street
+[1574] versus okay we're just going to use this
+[1575] free stuff and we don't have much of a
+[1576] say because it's free and and so on and
+[1578] so forth so I think it's been an
+[1580] eyeopener for both the company but also
+[1582] for the businesses there is a lot of
+[1584] value in a commercial relationship
+[1586] Beyond just okay we're going to invest
+[1588] and new features and and new value for
+[1590] your developers the challenge has always
+[1592] been how do you turn something that is
+[1593] widely beloved that is effectively an
+[1595] open source company into money there
+[1597] have been a whole bunch of questions
+[1600] about this and it seems that the
+[1602] consensus that has emerged is that a
+[1603] number of people for a long time mistook
+[1605] open source for a business model instead
+[1608] of a strategy and it's very much not and
+[1611] a lot of companies are attempting to
+[1612] rectify that with weird license changes
+[1614] where oh you're not allowed to take our
+[1616] code and build a service out of it if
+[1617] you're a cloud provider Amazon's product
+[1619] strategy is of course yes so of course
+[1622] there's always going to be something
+[1623] coming out of AWS that is poorly
+[1625] documented has a ridiculous name and
+[1627] purports to do the same thing for way
+[1629] less money except magically you pay them
+[1631] by the hour I digress no it's a great
+[1633] surface are you're right I completely
+[1634] didn't answer that question no it's fair
+[1637] it's glad you brought it's a hard
+[1638] problem it's easy to sit here and say
+[1639] well what I think they should do but all
+[1641] of those Solutions fall apart under 10
+[1643] seconds of scrutiny super super hard
+[1645] problem which to be fair we as a team
+[1648] and a community wrestled with for years
+[1650] but here's here's where we landed Cory
+[1652] the short version is that you can still
+[1654] have lots of great Upstream open-source
+[1657] Technologies and you will have a early
+[1659] adopter community that loves those use
+[1661] those getss a lot of progress running
+[1663] fast and far with those but we found the
+[1666] vast majority of the market doesn't want
+[1668] to spend its time cobbling together bits
+[1670] and bites of Open Source Tech and
+[1672] maintaining it and patching it and and
+[1674] and and and and so what we're offering
+[1677] is a engineered product that takes the
+[1679] Upstream but then adds a lot of value we
+[1681] would say to make it an engineered easy
+[1684] to use Easy to configure upgrade secure
+[1686] so on and so forth and the convenience
+[1689] of that versus having to Cobble together
+[1691] your own environment from Upstream has
+[1694] proved to be what folks are willing to
+[1696] pay for so it's the classic kind of
+[1698] paying for time and convenience versus
+[1700] not and so that is one dimension and the
+[1703] other dimension which you already
+[1704] referenced a little bit with AWS is that
+[1706] we have SAS right we have a SAS product
+[1708] in Docker Hub which is providing a
+[1710] hosted registry with quality content
+[1713] that users know is updated not less than
+[1716] every 30 days that is patched and
+[1718] maintained by us and so those are
+[1721] examples of in some sense consumption of
+[1723] ample so we're using open source to
+[1725] build this SAS service but the service
+[1727] that users receive they're willing to
+[1729] pay for because they're not having to
+[1730] patch the Upstream they're not
+[1733] having to roll the image themselves
+[1734] they're not having to watch the cve and
+[1736] scramble when everything comes out when
+[1738] there's a cve out in our Upstream our
+[1741] official images are patched no less than
+[1743] 24 hours later and typically within
+[1744] hours that's an example of a service but
+[1747] all based on Upstream open source Tech
+[1749] that for the vast majority of users are
+[1751] free if you're consuming a lot of that
+[1753] then there's a there's a subscription
+[1754] that kicks in there as well but we're
+[1756] giving you value in exchange for you
+[1758] having to spend your time your engineers
+[1760] managing all that that I just walked
+[1761] through so those are the two avenues
+[1763] that we found that are working well that
+[1764] seem to be a fair trade and fair balance
+[1766] with the community and the rest of the e
+[1768] system I think the hardest part for a
+[1771] lot of folks is embracing change and
+[1772] I've I've encountered this my entire
+[1774] career where I started off doing large
+[1776] scale email systems Administration and
+[1777] hey turns out that's not really a thing
+[1779] anymore and I used to be deep in the
+[1782] bowels of postfix for example I'm
+[1783] referenced in the SVN history of postfix
+[1786] Once Upon a Time just for helping with
+[1788] documentation and finding weird Corner
+[1790] cases because I'm really good at
+[1791] breaking things by accident anded as
+[1794] part of my identity and times have
+[1796] changed and moved on I don't run post
+[1798] fixed myself or anything anymore I
+[1799] haven't touched it in years docker's
+[1801] still there and it's still something
+[1803] that people are actively using basically
+[1805] everywhere and there's a sense of
+[1807] ownership and identity from especially
+[1809] early adopters who glom on to it because
+[1811] it it is such a better way of doing some
+[1813] things that it is almost
+[1815] incomprehensible that we used to do it
+[1816] any other way that's transformation
+[1818] that's something awesome but people want
+[1820] to pretend that we're still living in
+[1821] that era where technology has not
+[1824] Advanced the miraculous breakthrough in
+[1826] 2013 is today's Durer type of
+[1830] environment where this is just oh yeah
+[1832] of course you're using Docker you're not
+[1833] people look at you somewhat strangely
+[1835] it's like oh I'm using serverless okay
+[1837] but you can still build that in Docker
+[1838] containers why aren't you doing that
+[1840] it's like oh I don't believe in running
+[1841] anything that doesn't make me pay AWS by
+[1844] the second so okay great people are
+[1846] going to have opinions on this stuff but
+[1848] Time Marches on and whatever we wish the
+[1851] industry would do it's going to make its
+[1853] own decisions and March forward there's
+[1856] very little any of us can do to change
+[1857] that that's right look it was a single
+[1859] container back in 2013 2014 right and
+[1863] now what we're seeing and you kind of
+[1864] went there is um we're separating the
+[1867] implementation of the service from the
+[1868] service right so the service could be
+[1870] implemented with a container could be a
+[1871] serverless function could be a hosted
+[1874] XYZ as a service on some Cloud but what
+[1876] developers want to do is where they're
+[1878] moving towards is assemble your
+[1880] application based on Services regardless
+[1883] of the how you know is that how a local
+[1885] container to your point you can roll
+[1887] roll a local serverless function now in
+[1891] an oci image and push it to Amazon oh
+[1893] it's one of the now 34 ways I found to
+[1895] run containers on AWS you can also in
+[1898] compose abstract all that complexity
+[1900] away compose could have three services
+[1902] in it one of those Services is a local
+[1904] container one of those Services might be
+[1906] a local server list function that you're
+[1907] running to test and one of those
+[1909] Services could be a mock to a database
+[1911] as a service on a cloud right and so
+[1913] that's where we are we've gone beyond
+[1914] the single container Docker run which is
+[1916] still incredibly powerful but now we're
+[1917] starting to up level to like
+[1919] applications that consist of multiple
+[1921] services and where do those Services run
+[1923] increasingly developers do not need to
+[1925] care and we see that as our mission is
+[1927] continue to give that type of power to
+[1930] developers to abstract out the how
+[1932] extract out the infrastructure so they
+[1935] can just focus on building their app
+[1936] Scott I want to thank you so much for
+[1938] taking the time to speak with me if
+[1939] people want to learn more and that could
+[1941] mean finding out your opinions on things
+[1944] potentially yelling at you about pricing
+[1945] changes more interestingly buying
+[1947] licenses for their large companies to
+[1949] run this stuff and even theoretically
+[1952] since you alluded to it a few minutes
+[1953] ago look into working at Docker where
+[1956] can they find you no thanks Corey and
+[1958] thank you for the time to discuss and
+[1960] and look back over both years but also
+[1962] zoom in on the present day so dubdub
+[1964] duub do.com you can find any and all
+[1967] what we just walked through they're more
+[1968] than happy to yell at me on Twitter's at
+[1971] scottc Johnston and we have a public
+[1974] road map that is in GitHub I'm not going
+[1976] to put the URL here but uh you can find
+[1978] her very easily so we love hearing from
+[1981] our community we love engaging with them
+[1983] we love going back and forth and it's a
+[1985] big Community jump in the water's warm
+[1988] very welcoming love to have you and
+[1990] we'll of course put links to that in the
+[1991] show notes thank you so much for your
+[1993] time I really do appreciate it thank you
+[1995] Corey right back at you Scott Johnston
+[1998] CEO of Docker I'm Cloud Economist Corey
+[2001] Quinn and this is screaming in the cloud
+[2003] if you've enjoyed this podcast please
+[2005] leave have a five-star review on your
+[2006] podcast platform of Choice whereas if
+[2008] you hated this podcast please leave a
+[2010] five-star review on your podcast
+[2011] platform of choice along with a comment
+[2013] telling me that Docker isn't interested
+[2015] it at all because here's how to do
+[2018] exactly what Docker does in elars on
+[2021] your Mainframe until the AWS 400 comes
+[2024] to CR

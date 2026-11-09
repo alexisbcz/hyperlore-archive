@@ -1,0 +1,421 @@
+[0] [Music]
+[15] [Music]
+[19] [Applause]
+[25] All right. When I started open router
+[28] the beginning of 2023,
+[30] I had one major question in mind. I was
+[34] looking at this new market that was
+[36] coming online and and it was incredible.
+[38] Like at the very end of uh 2022, we all
+[42] saw chat GPT and I got bitten by the AI
+[45] bug. Um and I decided to look into
+[48] answering this question. Will this
+[50] market be winner take all? inference
+[52] might be the largest market ever in
+[54] software and this seemed like a critical
+[58] thing that everybody was assuming the
+[60] answer to the answer to it would be yes.
+[62] Um open AI was just far and away the
+[65] leading model. There were a few others
+[68] that were coming up on its tail and I I
+[72] built a couple prototypes to look into
+[75] what they could be used for and also
+[77] wanted to investigate open source. So in
+[80] this talk which Swix named um I'm going
+[83] to talk about the founding story of open
+[85] router and uh and go through a little
+[88] bit of the hoops that we jumped through
+[90] and sort of the investigation that we
+[92] did as we we put together this product
+[95] that started as an experiment and kind
+[97] of evolved into a marketplace over time.
+[102] In January,
+[104] we saw the first signs of people wanting
+[109] other types of models. And the the first
+[113] evidence was moderation. This this was
+[115] like a very clear interest from users in
+[119] looking for models where they could
+[121] understand why whether they'd be
+[122] deplatformed or what the the moderation
+[125] policy of the company was. And and we
+[128] saw some people like generating novels
+[130] where like it would be a detective story
+[133] and in chapter 4 um the detective would
+[136] find someone who like commits a murder
+[139] and shoots the victim and and opening at
+[141] the time sometimes refused to generate
+[144] that output or it was like questionably
+[146] against the terms of service. And of
+[148] course, we saw role play and and
+[150] basically a big gray area emerge around
+[153] what models were willing to generate.
+[158] So, uh, in and the next month, we saw
+[162] the open- source race begin. And that,
+[167] uh, I'm going to do a little bit of an
+[168] OG test here. Uh, raise your hand if you
+[172] ever used Balloon 176B.
+[176] There's a there's like 10 hands raised
+[180] um or opt by Facebook. This was like one
+[183] of the earliest open- source language
+[185] models about five hands raised. Uh there
+[188] were a couple of these emerging and
+[190] there were some very interesting
+[191] projects to help people access them and
+[194] uh and and early days they weren't
+[197] really useful for very much. So, uh, we
+[200] kept digging and, uh, and eventually
+[204] like the open source community, um,
+[207] round like ran into Meta's first launch,
+[211] which was Llama 1 in in February. And
+[215] Llama 1 in their abstract advertised
+[218] that it outperformed GPT3 on most
+[220] benchmarks. You can see the highlighted
+[222] part here, which blew everyone away.
+[225] This was huge. an open weights model
+[228] better than GBT3
+[230] and uh and especially a smaller model.
+[233] This was the 13 billion parameter
+[235] version, one that you could run on your
+[237] laptop um outperforming a large server
+[241] only like you know tons of money
+[244] required to run inference companies
+[247] model it and it was beating it on some
+[249] benchmarks. Everyone lost their minds
+[251] and Llama kicked off a huge storm. It
+[255] still was not very useful. I have to say
+[258] it was like a text completion model for
+[260] the most part and it was very difficult
+[263] to run locally. The infrastructure just
+[265] wasn't there. Um and people were
+[267] struggling to figure out what to do with
+[268] it which is when we found when we had
+[271] the greatest moment of all I think for
+[275] the birth of the long tale of language
+[277] models which was the first successful
+[281] distillation in March of 2023. Alpaca.
+[285] Uh, a group at Stanford took Llama 1,
+[288] generated a bunch of outputs on GPT3 and
+[291] fine-tuned Llama 1 on those outputs and
+[295] created Alpaca for less than $600 in to
+[298] like total. And this was an incredible
+[301] moment. It was the first time I saw the
+[304] transference of both style and knowledge
+[307] from a large model onto a small one. And
+[310] this me this was a huge unlock because
+[312] it meant that not only do you not need a
+[314] $10 million training budget to create
+[316] your own models, but you could also for
+[319] the first time make unique data
+[321] available as a service in the form of a
+[324] language model.
+[326] And
+[328] I immediately began to wonder like what
+[330] are there there's going to be tens of
+[332] thousands of these maybe hundreds of
+[333] thousands. Um and they seem incredibly
+[336] important. This is knowledge finally
+[339] being distilled into software. Uh there
+[342] needs to be a place on the internet to
+[343] discover these and understand what they
+[345] do because even this open weights model
+[348] was still closed in a way. It's a black
+[350] box. You get 7 billion floatingoint
+[352] numbers. You don't know what it's good
+[354] at or what to do with it. Very few
+[356] people used alpaca. Raise your hands if
+[359] you used alpaca.
+[362] I see about maybe 12. So it's like only
+[366] double the number of people who used the
+[369] like almost unusable open source models
+[372] on the previous slide.
+[375] So
+[376] open router initially started as a place
+[378] to collect all these things. Um but
+[381] before we got there I wanted to check
+[384] out people's willingness to bring their
+[386] own model to generic websites. Like what
+[390] if the developer didn't even know which
+[392] model a user wanted to use? How would a
+[395] user bring their choice of model to the
+[398] software that they want?
+[400] And uh in April, I launched window AI,
+[405] which was a an open- source Chrome
+[407] extension
+[408] that let a user choose their model and
+[412] let a web app just kind of suck it in.
+[414] And so you can see from the Chrome
+[417] extension here, if you look really
+[418] closely, um, this user is using
+[421] together's
+[422] open-source deployment of GPT next.
+[427] I can't I can't read it from here, but
+[429] like an open source model that um swaps
+[432] out OpenAI directly inside the web page.
+[437] So the next month, open router launched
+[441] and uh I uh co-ounded it with the
+[445] founder of the framework that that
+[448] window was built on, plasmo
+[450] um Lewis and we started open router
+[453] first a place to collect all the models
+[456] in one spot and and help people figure
+[458] out what to do with them. And it
+[460] eventually grew into a place that gives
+[462] you the like better prices, better
+[464] uptime, no subscription, and uh and the
+[468] most choice for figuring out which
+[470] intelligence your your uh software
+[472] should run.
+[475] So let's talk a little bit about what it
+[477] is because not everyone here might be
+[479] familiar with it. Um, we we have been
+[483] growing 10 to 100% month over month for
+[487] the last two years. It is an API that
+[491] lets you access all language models and
+[494] uh and it's also become kind of the
+[496] go-to place for data about who's using
+[499] which model um and how that is changing
+[502] over time, which you can see on our
+[503] public rankings page here.
+[506] It's a single API that you pay for once.
+[508] you get near zero switching costs to go
+[511] from model to model. Uh and we have
+[514] about 400 over 400 models over 60 active
+[517] providers and uh you can buy with lots
+[520] of different payment methods including
+[521] crypto and and we basically do all the
+[525] the tricky work of normalizing tool
+[527] calls and caching for you so that you
+[529] get the best prices and the most
+[531] features uh and you don't have to worry
+[534] about what the provider supports.
+[537] Another story. Initially, open router
+[540] was not a marketplace really. It was
+[542] just kind of a collection of all the
+[543] models and a way to explore data about
+[545] who was using each one. So, how did we
+[548] get here?
+[550] Initially, when the first open source
+[552] models emerged, uh we only had like one
+[555] or two providers for each one. And so,
+[557] we had like a primary provider and a
+[559] fallback provider. And initially that
+[563] was it. And and we didn't even name the
+[565] providers. Um, but it became clear that
+[568] there were going to be a bunch of
+[570] companies that wanted to host these prov
+[572] these models and at very different
+[575] prices and performances.
+[577] The number of features ballooned. Um,
+[580] there were companies that supported the
+[581] minp sampler and most didn't. There were
+[584] some that supported caching, some that
+[586] supported tool calling and structured
+[587] outputs and others that didn't. And
+[590] suddenly the ecosystem was just
+[591] ballooning into this kind of
+[593] outofcontrol heterogeneous
+[596] monster and we wanted to tame the
+[598] monster. So we aggregated all providers
+[602] in one spot and at different price
+[604] points it became a marketplace and you
+[606] can see like this model Llama 3.370B
+[610] instruct um has one one of the models
+[612] with the most providers on the platform
+[615] um and it has like 23
+[620] um closed source models also had
+[622] something interesting happened to them
+[624] which is that they just they couldn't
+[625] keep up with the demand and uh and and
+[628] so We help developers basically get
+[631] uptime boosting and you can see like the
+[633] delta uh and how much we can boost
+[636] uptime just by aggregating lots of
+[639] different providers for a model and this
+[641] became really helpful for people using
+[643] open source or closed source and we
+[645] became a marketplace for both um showing
+[648] graphs about latency and throughput and
+[650] helping people figure out using real
+[652] world data what the latency and
+[654] throughput is on each model.
+[657] Um and that's how open router became a
+[659] marketplace and a one optimized for
+[661] language models which I thought would be
+[664] proper for for inference potentially the
+[668] biggest market in software.
+[671] Uh you can obviously a couple other
+[673] things that we support comparing models
+[675] we using your own prompts with the ease
+[676] of just texting and iMessage. um fine
+[680] grain privacy controls with API level
+[682] overrides, the ability to see like your
+[686] usage of all models in one place and
+[688] have great observability.
+[690] And back to the original question here
+[692] of whether will intelligence be winner
+[694] or take all. Uh I I we've come to the
+[699] most likely bet that that is not the
+[701] case. Um here's our data broken down by
+[705] model author. um how much how many
+[707] tokens have been processed by each one.
+[710] And you can see Google Gemini started
+[714] pretty low like roughly two 3% in June
+[717] of last year and just has grown to 34
+[721] 35%
+[723] uh pretty steadily over the last 12
+[726] months. Um uh Enthropic
+[730] uh is is like one of the most popular
+[733] models on our platform. Open AAI is a
+[735] little bit under reppresented in this
+[736] data um because a lot of developers use
+[739] us to get open AI like behavior for all
+[741] of their models. But OpenAI as has grown
+[744] a lot here as well.
+[747] So
+[749] here's what we believe about the market
+[751] after all of the
+[753] you know backstory that I just gave you.
+[756] Um the future is going to be multimodel.
+[758] Ton all of our customers, tons of
+[760] customers use different models for
+[762] different purposes and realize they can
+[764] unlock huge gains by doing so. Inference
+[767] is also a commodity. Claude from bedrock
+[770] we want to make look exactly the same as
+[772] Cloud from Vert.ex. And we do that
+[774] because like the two hyperscalers have
+[777] fundamentally uh you know the same
+[781] commodity being delivered at different
+[783] rates, different performances and for a
+[785] developer you just want to be able to
+[787] like select that without worrying about
+[789] who's serving it. Um we think inference
+[792] will be like a dominant operating
+[794] expense and selecting and routing will
+[797] be crucial. Um you can see the number of
+[800] active models on open router has just
+[802] steadily grown. It's not the case that
+[804] people just hop from model to model.
+[807] Like it tends to be sticky and uh and we
+[811] tr we're trying to just make this wild
+[814] ecosystem a lot more homogeneous and
+[816] easier to work with as a developer.
+[820] Um to honor Swix's title for this
+[823] presentation, uh let's give a technical
+[827] story. um something that we worked on in
+[830] the process of building the company and
+[832] that was our own idea for how to do an
+[837] MCP within open router. So we don't have
+[840] MCPS, we don't have an MCP marketplace.
+[843] Um but we did run into the need to
+[848] expand inference with new features and
+[851] new abilities. for example, searching
+[853] the web for all models, PDF parsing for
+[856] all models. Um, you know, other
+[860] interesting things coming soon. And what
+[863] we really wanted to do was give these
+[864] abilities to all models. But that
+[866] involves not just the pre-flight work
+[870] that MCPs do today where you can kind of
+[873] get in like call another API, get a
+[877] bunch of behaviors and then have the
+[879] inference process access those behaviors
+[881] as it goes. We also needed the ability
+[884] to transform the outputs on the way to
+[886] the user. And so what we really really
+[888] needed was something more like
+[891] middleware. Middleware um is kind of a
+[894] common concept in web development. You
+[897] set up middleware when you're setting up
+[899] authentication for example or or or
+[902] caching for a web app. And so we came up
+[906] with a type of middleware that's sort of
+[908] that's AI native and optimized for
+[909] inference. Um and that looks not totally
+[912] dissimilar from the way middleware it
+[915] looks in in Nex.js JS or web
+[917] development. Yeah. So, pardon the code
+[919] on the screen, but this is a little bit
+[922] about how our our plug-in system looks
+[924] and it, you know, it can call MCPS from
+[926] inside a plugin, but importantly, it can
+[929] also augment the results on the way back
+[932] to the user. So, here's an example of
+[934] our web search plugin, which augments
+[936] every language model with the ability to
+[938] search the web. um every language model
+[941] can just kind of tap in to this plugin
+[944] and get web annotations as results are
+[947] being fed back to users in real time.
+[950] And this all happens in a stream. So
+[953] there's no kind of like you know
+[955] requirement that you get all of the
+[957] tokens at once. It can just happen in
+[960] live in the stream.
+[962] We we solved a bunch of other tricky
+[964] problems
+[966] uh while building open router. We we
+[969] really wanted to get extremely low
+[971] latency. Um and we got it down to about
+[974] 30 milliseconds uh the best in the
+[976] industry I believe. Um using a lot of
+[978] custom cache work and we also need to
+[982] make streams canceable. All these
+[983] different providers have completely
+[985] different stream cancellation policies.
+[988] Sometimes if you just drop a stream the
+[991] the the the inference provider will bill
+[993] you for the entire thing. Sometimes it
+[996] won't. Sometimes it'll bill you for the
+[998] next 20 tokens that you never got. And
+[1002] um we kind we we work a lot to try to
+[1004] figure out these edge cases and
+[1006] understand when developers are going to
+[1008] care about them too. And standardizing
+[1011] all these providers and models uh became
+[1014] like a big tricky architecture problem
+[1016] that we spent a while working on. So
+[1018] here's where all this is going. Uh we're
+[1020] going to add more modalities to open
+[1022] router and I think this is like a big
+[1024] change in the industry as well. We're
+[1026] going to start seeing LLMs generate
+[1029] images. We already have uh a few
+[1032] examples on the market, but like some
+[1035] people call it transfusion models, a
+[1037] transformer mixed with stable diffusion.
+[1040] Um these are going to give images way
+[1043] more world knowledge and the ability to
+[1045] have a conversation with the image,
+[1047] which we think is just critical for
+[1049] growing that industry, making it really
+[1050] work. Imagine I just ran into somebody
+[1053] today who is using a transfusion model
+[1056] uh or who told me about their customer
+[1058] using a transfusion model to generate
+[1060] menus. Imagine doing that like a whole
+[1063] menu like in a delivery app generated by
+[1066] transfusion model. Um it's going to be
+[1069] really exciting and and a big deal in
+[1071] the coming year.
+[1074] We're also going to work on much more
+[1075] powerful routing like routing is our
+[1077] bread and butter and so doing
+[1079] geographical routing. Right now we it's
+[1081] pretty minimal but routing people to the
+[1083] right GPU in the right place and doing
+[1085] enterprise level optimization is coming
+[1088] um better prompt observability better
+[1091] discovery of models like really fine
+[1093] grain categorization you know imagine
+[1095] being able to see like the best models
+[1097] that take Japanese and and create Python
+[1099] code
+[1101] and of course even better prices coming
+[1103] soon. So, you know, we we believe in in
+[1107] collaboration um and and building an
+[1110] ecosystem that's durable and with low
+[1112] vendor lock in. So, you know,
+[1115] collaborate with us. Um here's our email
+[1118] and if you're interested, join us, too.
+[1124] [Music]
